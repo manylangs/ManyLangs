@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Chapter Template Schema",
+  "description": "Defines the structure of a ManyLangs grammar chapter",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string", "description": "chapter id (001~120)" },
+    "title_en": { "type": "string" },
+    "title_kr": { "type": "string" },
+    "level": { "type": "string", "enum": ["A1", "A2", "B1", "B2", "C1"] },
+    "language": {
+      "type": "string",
+      "description": "language code (en, fr, es...)"
+    },
+    "sections": {
+      "type": "object",
+      "properties": {
+        "grammar_point": {
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "explanation": { "type": "string" }
+          },
+          "required": ["title", "explanation"]
+        },
+        "examples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sentence_native": { "type": "string" },
+              "sentence_en": { "type": "string" },
+              "tts_voice": { "type": "string" }
+            },
+            "required": ["sentence_native", "sentence_en"]
+          }
+        },
+        "practice": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "question": { "type": "string" },
+              "answer": { "type": "string" },
+              "difficulty": {
+                "type": "string",
+                "enum": ["easy", "medium", "hard"]
+              }
+            },
+            "required": ["question", "answer"]
+          }
+        }
+      },
+      "required": ["grammar_point", "examples", "practice"]
+    }
+  },
+  "required": ["id", "title_en", "title_kr", "level", "language", "sections"]
+}
