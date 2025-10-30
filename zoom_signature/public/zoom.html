@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Zoom Web SDK 필수 라이브러리 -->
+    <link
+      rel="stylesheet"
+      href="https://source.zoom.us/2.18.2/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://source.zoom.us/2.18.2/css/react-select.css"
+    />
+
+    <script src="https://source.zoom.us/2.18.2/lib/vendor/lodash.min.js"></script>
+    <script src="https://source.zoom.us/2.18.2/lib/vendor/react.min.js"></script>
+    <script src="https://source.zoom.us/2.18.2/lib/vendor/react-dom.min.js"></script>
+    <script src="https://source.zoom.us/2.18.2/lib/vendor/redux.min.js"></script>
+    <script src="https://source.zoom.us/2.18.2/lib/vendor/redux-thunk.min.js"></script>
+  </head>
+  <body>
+    <script>
+      const meetingNumber =
+        new URLSearchParams(window.location.search).get("mn") || "123456789";
+      const userName =
+        new URLSearchParams(window.location.search).get("name") ||
+        "ManyLangs Teacher";
+      const userEmail =
+        new URLSearchParams(window.location.search).get("email") ||
+        "teacher@example.com";
+      const passWord =
+        new URLSearchParams(window.location.search).get("pwd") || "";
+      const role = Number(
+        new URLSearchParams(window.location.search).get("role") || 1
+      ); // 1=host,0=participant
+
+      // ✅ SDK가 완전히 로드된 뒤 실행
+      window.addEventListener("load", async () => {
+        if (!window.ZoomMtg) {
+          console.error("ZoomMtg not yet defined.");
+          return;
+        }
+        ZoomMtg.preLoadWasm();
+        ZoomMtg.prepareWebSDK();
+        ZoomMtg.i18n.load("en-US");
+        ZoomMtg.i18n.reload("en-US");
+
+        try {
+          const resp = await fetch("/zoom-signature", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ meetingNumber, role }),
+          });
+          const { signature, sdkKey } = await resp.json();
+
+          ZoomMtg.init({
+            leaveUrl: window.location.origin + "/leave.html",
+            success: () => {
+              ZoomMtg.join({
+                signature,
+                sdkKey,
+                meetingNumber,
+                userName,
+                userEmail,
+                passWord,
+                success: () => console.log("✅ Zoom joined"),
+                error: (err) => console.error("❌ join error", err),
+              });
+            },
+            error: (err) => console.error("❌ init error", err),
+          });
+        } catch (e) {
+          console.error("Signature fetch error", e);
+        }
+      });
+    </script>
+    <script src="https://source.zoom.us/zoom-meeting-2.18.2.min.js"></script>
+  </body>
+</html>
