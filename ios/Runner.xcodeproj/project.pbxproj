@@ -1,20 +1,23 @@
 // =====================================================
-//  Runner.xcodeproj/project.pbxproj (핵심 부분 요약)
+//  Runner.xcodeproj/project.pbxproj (수정 완료 버전)
 // =====================================================
+
+objectVersion = 54;
+
 /* Begin PBXProject section */
 	97C146E61CF9000F007C117D /* Project object */ = {
 		isa = PBXProject;
 		attributes = {
-			LastUpgradeCheck = 1430;
+			LastUpgradeCheck = 1540;
 			ORGANIZATIONNAME = "ManyLangs";
 			TargetAttributes = {
 				97C146ED1CF9000F007C117D = {
-					CreatedOnToolsVersion = 14.3;
+					CreatedOnToolsVersion = 15.4;
 				};
 			};
 		};
 		buildConfigurationList = 97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */;
-		compatibilityVersion = "Xcode 14.0";
+		compatibilityVersion = "Xcode 15.0";
 		developmentRegion = en;
 		hasScannedForEncodings = 0;
 		knownRegions = (en, Base);
