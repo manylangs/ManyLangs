@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "b1",
+    "id": "010"
+  },
+  "topic": "A student presenting in class",
+  "keywords": [
+    "student",
+    "presenting",
+    "classroom",
+    "project",
+    "audience",
+    "notes",
+    "whiteboard"
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "010.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "target": "한 학생이 교실 앞에 서서 발표를 하고 있다.",
+          "en": "A student stands at the front of the classroom giving a presentation.",
+          "es": "Una estudiante está de pie al frente del aula haciendo una presentación.",
+          "fr": "Une élève se tient devant la classe en train de faire une présentation.",
+          "pt": "Uma estudante está em pé na frente da sala fazendo uma apresentação."
+        },
+        {
+          "target": "그녀는 몇 장의 메모 카드를 들고 반 친구들에게 말하고 있다.",
+          "en": "She holds a few note cards while speaking to her classmates.",
+          "es": "Ella sostiene unas tarjetas mientras habla con sus compañeros.",
+          "fr": "Elle tient quelques fiches tout en s'adressant à ses camarades.",
+          "pt": "Ela segura alguns cartões de anotações enquanto fala com os colegas."
+        },
+        {
+          "target": "뒤쪽의 큰 화이트보드에는 프로젝트를 위한 간단한 도표가 표시되어 있다.",
+          "en": "A large whiteboard behind her displays a simple diagram for the project.",
+          "es": "Una pizarra grande detrás de ella muestra un diagrama sencillo del proyecto.",
+          "fr": "Un grand tableau blanc derrière elle affiche un schéma simple du projet.",
+          "pt": "Um grande quadro branco atrás dela exibe um diagrama simples do projeto."
+        },
+        {
+          "target": "여러 학생들이 책상에 앉아 집중해서 바라보고 듣고 있다.",
+          "en": "Several students sit at their desks watching and listening attentively.",
+          "es": "Varios estudiantes están sentados en sus escritorios mirando y escuchando con atención.",
+          "fr": "Plusieurs élèves sont assis à leurs bureaux, regardant et écoutant attentivement.",
+          "pt": "Vários alunos estão sentados em suas carteiras observando e ouvindo atentamente."
+        },
+        {
+          "target": "발표자는 주요 내용을 설명하며 한 손으로 제스처를 취한다.",
+          "en": "The presenter gestures with one hand as she explains her main points.",
+          "es": "La presentadora hace un gesto con una mano mientras explica sus puntos principales.",
+          "fr": "La présentatrice fait un geste de la main en expliquant ses points principaux.",
+          "pt": "A apresentadora gesticula com uma das mãos enquanto explica seus pontos principais."
+        },
+        {
+          "target": "교사 책상 위의 노트북에는 그녀의 프로젝트 슬라이드가 표시되어 있다.",
+          "en": "A laptop on the teacher's desk shows the slides for her project.",
+          "es": "Un portátil sobre el escritorio del profesor muestra las diapositivas de su proyecto.",
+          "fr": "Un ordinateur portable sur le bureau du professeur affiche les diapositives de son projet.",
+          "pt": "Um laptop na mesa do professor mostra os slides do seu projeto."
+        }
+      ]
+    }
+  ],
+  "tts": {
+    "en": [],
+    "fr": [],
+    "es": [],
+    "pt": [],
+    "kr": []
+  }
+}

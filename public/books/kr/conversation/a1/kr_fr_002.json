@@ -1,0 +1,175 @@
+{
+  "chapter_id": "002",
+  "cefr": "A1",
+  "title_fr": "Présentation_personnelle",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Je suis ~.",
+    "Ravi(e) de te rencontrer.",
+    "Tu viens d’où ?",
+    "Qu’est-ce que tu fais dans la vie ?",
+    "Quel est ton hobby ?"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Salut ! Je m’appelle Minseo.",
+          "Oui ! Je viens de Corée.",
+          "Ravi(e) de te rencontrer aussi !"
+        ],
+        "B": [
+          "Salut ! Moi, c’est Jihun.",
+          "Ah vraiment ? Enchanté(e).",
+          "J’espère qu’on se verra souvent !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Je suis étudiant(e) à l’université. Et toi, tu fais quoi ?",
+          "Wow, ça a l’air génial !",
+          "On devrait en parler plus un jour !"
+        ],
+        "B": [
+          "Je travaille dans une entreprise.",
+          "J’ai encore beaucoup à apprendre.",
+          "Bien sûr ! Tu peux me parler quand tu veux."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "C’est quoi ton hobby ?",
+          "Oh, moi aussi j’aime bien marcher !",
+          "On devrait marcher ensemble un jour !"
+        ],
+        "B": [
+          "J’aime écouter de la musique ou me promener.",
+          "C’est drôle qu’on ait le même hobby !",
+          "Oui ! Ça me plairait."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Tu habites où ?",
+          "Ah oui, ce quartier est sympa !",
+          "Préviens-moi si je passe dans le coin !"
+        ],
+        "B": [
+          "J’habite près de l’université.",
+          "Oui, c’est calme et agréable.",
+          "Bien sûr ! Ce serait sympa de se voir."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "J’apprends le coréen en ce moment.",
+          "Oui, la prononciation est vraiment difficile.",
+          "Si tu as des conseils, dis-le-moi !"
+        ],
+        "B": [
+          "Oh, tu apprends le coréen !",
+          "C’est normal au début. Tu vas t’améliorer vite.",
+          "Bien sûr ! Je t’aiderai avec plaisir."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Tu as des frères ou sœurs ?",
+          "Oh, pareil pour moi !",
+          "J’aimerais bien entendre parler de ta famille !"
+        ],
+        "B": [
+          "Oui, j’ai un grand frère.",
+          "Ah super, on se ressemble un peu alors !",
+          "Moi aussi ! On en reparlera."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "J’adore vraiment voyager.",
+          "Oh wow, l’Europe ? Trop bien !",
+          "Tu devras me recommander des endroits un jour !"
+        ],
+        "B": [
+          "Moi aussi ! J’adore surtout voyager en Europe.",
+          "J’ai plein de bons souvenirs.",
+          "Bien sûr ! Je te recommanderai des endroits."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Tu as un plat préféré ?",
+          "Oh, moi aussi j’adore les pâtes !",
+          "Allons manger quelque part un jour !"
+        ],
+        "B": [
+          "J’adore les pâtes, c’est mon plat préféré.",
+          "On a les mêmes goûts !",
+          "Oui ! Allons-y ensemble."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Tu apprends quelque chose en ce moment ?",
+          "Oh, ça a l’air amusant !",
+          "Ça me donne envie d’essayer aussi !"
+        ],
+        "B": [
+          "J’apprends la photographie en ce moment.",
+          "C’est plus difficile que je pensais, mais j’aime bien.",
+          "On pourrait prendre des photos ensemble !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "C’est quoi ton MBTI ?",
+          "Oh ! Moi, je suis plutôt extraverti(e).",
+          "Je pense qu’on s’entendra bien !"
+        ],
+        "B": [
+          "Je suis plutôt introverti(e).",
+          "Mais je m’entends bien avec les gens extravertis !",
+          "Oui, je pense aussi !"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "a1",
+    "id": "018"
+  },
+  "topic": "A woman holding groceries",
+  "keywords": [
+    "woman",
+    "groceries",
+    "shopping bags",
+    "casual clothing",
+    "simple background"
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "018.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "target": "한 여성이 두 개의 장바구니를 손에 들고 있다.",
+          "en": "A woman is holding two grocery bags in her hands.",
+          "es": "Una mujer sostiene dos bolsas de compras en sus manos.",
+          "fr": "Une femme tient deux sacs de courses dans ses mains.",
+          "pt": "Uma mulher segura duas sacolas de compras nas mãos."
+        },
+        {
+          "target": "장바구니 안에는 과일과 채소가 살짝 보인다.",
+          "en": "The bags contain fruits and vegetables that are slightly visible.",
+          "es": "Las bolsas contienen frutas y verduras que se ven ligeramente.",
+          "fr": "Les sacs contiennent des fruits et des légumes légèrement visibles.",
+          "pt": "As sacolas contêm frutas e legumes que ficam levemente visíveis."
+        },
+        {
+          "target": "그녀는 일상적인 장보기에 알맞은 편안한 옷을 입고 있다.",
+          "en": "She wears casual clothes suitable for everyday shopping.",
+          "es": "Lleva ropa informal adecuada para las compras diarias.",
+          "fr": "Elle porte des vêtements décontractés adaptés aux courses quotidiennes.",
+          "pt": "Ela usa roupas casuais adequadas para as compras do dia a dia."
+        },
+        {
+          "target": "옆에서 비치는 부드러운 빛이 장바구니를 돋보이게 한다.",
+          "en": "A soft light shines from the side, highlighting the bags.",
+          "es": "Una luz suave desde un lado resalta las bolsas.",
+          "fr": "Une lumière douce venant du côté met les sacs en valeur.",
+          "pt": "Uma luz suave vinda do lado destaca as sacolas."
+        },
+        {
+          "target": "그녀는 검정색 가디건과 청바지를 입고 있다.",
+          "en": "She is wearing a black cardigan and blue jeans.",
+          "es": "Lleva un cárdigan negro y vaqueros.",
+          "fr": "Elle porte un cardigan noir et un jean.",
+          "pt": "Ela está a usar um cardigan preto e jeans."
+        },
+        {
+          "target": "배경은 방해 요소 없이 깔끔하고 단순하다.",
+          "en": "The background is clean and minimal with no distractions.",
+          "es": "El fondo es limpio y minimalista, sin distracciones.",
+          "fr": "L’arrière-plan est propre et minimal, sans distractions.",
+          "pt": "O fundo é limpo e minimalista, sem distrações."
+        }
+      ]
+    }
+  ],
+  "tts": {
+    "en": [],
+    "fr": [],
+    "es": [],
+    "pt": [],
+    "kr": []
+  }
+}

@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "010",
+  "cefr": "C1",
+  "title_es": "Preparación de viaje de negocios",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Por favor, comparta el estado de preparación,",
+    "Revise nuevamente los documentos necesarios,",
+    "Avíseme de inmediato si hay algún cambio,",
+    "Coordinaré con el equipo local,",
+    "Prepararé una lista de verificación antes del viaje,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "¿Cómo va la preparación del viaje de negocios?",
+          "Parece que el horario del vuelo cambió un poco.",
+          "Le enviaré la hora confirmada en cuanto la tenga."
+        ],
+        "B": [
+          "Sí, yo también recibí una notificación hace un momento.",
+          "Parece que adelantaron la hora de salida.",
+          "Cuando me comparta la actualización, la incluiré en el calendario."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "¿Terminó de preparar el material para la reunión en destino?",
+          "Algunas partes necesitan actualizarse con información reciente.",
+          "Si quiere, puedo ayudarle a revisar esas secciones."
+        ],
+        "B": [
+          "Sí, también pensé que varias partes necesitan una actualización.",
+          "Hay bastante contenido que ajustar.",
+          "Si puede, organice primero los puntos esenciales."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "¿Ya imprimió todos los documentos necesarios para el viaje?",
+          "La carta de invitación y el itinerario son imprescindibles.",
+          "Si necesita copias adicionales, puedo imprimirlas."
+        ],
+        "B": [
+          "Tengo lista la carta de invitación, pero aún no el itinerario.",
+          "Si pudiera imprimirlo, me ayudaría mucho.",
+          "Yo me encargaré de preparar los vales del hotel."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "¿Ha avanzado con el equipaje?",
+          "Escuché que el clima allí es bastante impredecible.",
+          "Sería prudente llevar una chaqueta ligera."
+        ],
+        "B": [
+          "Sí, también escuché que ha hecho más frío de repente.",
+          "Aún no incluí una chaqueta, pero voy a añadirla.",
+          "Gracias por recordármelo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "¿Confirmó la hora de la primera reunión con el equipo local?",
+          "Me comentaron que podría requerir algunos ajustes.",
+          "Si hace falta, puedo contactarlos directamente."
+        ],
+        "B": [
+          "Todavía no recibí la hora exacta.",
+          "Si hay que ajustar algo, agradecería su ayuda.",
+          "Le avisaré en cuanto me confirmen el horario."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "¿Ya resolvió todos los gastos del viaje?",
+          "Avíseme si algo debe pagarse por adelantado.",
+          "Puedo enviar la solicitud de aprobación de inmediato."
+        ],
+        "B": [
+          "Aún quedan algunos elementos pendientes.",
+          "Sobre todo los gastos de transporte requieren otra revisión.",
+          "Organizaré todo y le enviaré una actualización."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "El itinerario del viaje está bastante ajustado, ¿cree que será manejable?",
+          "Algunos desplazamientos parecen tener poco margen.",
+          "Si es necesario, puedo revisar toda la ruta."
+        ],
+        "B": [
+          "Yo también noté que varias transiciones están muy apretadas.",
+          "Podría ser un problema si alguna reunión se extiende más de lo previsto.",
+          "Una revisión de la ruta sería muy útil."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "¿Preparó ya la lista de lo que necesitará en destino?",
+          "Me preocupa que olvidemos algo relacionado con el equipo para las reuniones.",
+          "¿Quiere que prepare una lista de verificación y se la envíe?"
+        ],
+        "B": [
+          "Aún no la terminé — también tenía miedo de olvidar algo.",
+          "Una lista de verificación facilitaría mucho las cosas.",
+          "Sí, envíemela cuando esté lista."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Parece que el check-in del hotel será más tarde de lo previsto.",
+          "¿Cree que eso afectará el itinerario?",
+          "Si es necesario, puedo avisar al equipo local con antelación."
+        ],
+        "B": [
+          "Oh, eso significa que tendremos menos tiempo para preparar la primera reunión.",
+          "Será un poco ajustado, pero creo que manejable.",
+          "Aun así, sería buena idea informar al equipo local."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "¿Revisamos el itinerario completo una última vez antes de salir?",
+          "Parece que la mayor parte de la preparación ya está hecha.",
+          "También le enviaré la lista final de verificación."
+        ],
+        "B": [
+          "Perfecto — creo que estamos casi listos.",
+          "Tener una lista final me dará más tranquilidad.",
+          "Envíela cuando pueda, la revisaré de inmediato."
+        ]
+      }
+    }
+  ]
+}
+

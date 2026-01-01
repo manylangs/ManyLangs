@@ -1,0 +1,127 @@
+﻿{
+  "chapter_id": "001",
+  "cefr": "A2",
+  "title_kr": "쇼핑하기",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "이거 얼마예요?,",
+    "다른 색 있어요?,",
+    "좀 더 큰 사이즈 있나요?,",
+    "착용해 봐도 될까요?,",
+    "할인 가능해요?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": ["안녕하세요! 이 옷 좀 봐도 될까요?", "오, 재질이 좋네요! 혹시 다른 색도 있어요?", "그럼 이 색으로 하나 살게요!"],
+        "B": ["네, 천천히 보세요!", "네! 검정색이랑 파란색도 있어요.", "좋은 선택이세요! 포장해 드릴게요."]
+      },
+      "tts_layer": {
+        "A": { "tts_voice": "ko-KR-Standard-A" },
+        "B": { "tts_voice": "ko-KR-Standard-B" }
+      }
+    },
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": ["이 신발 예쁘네요! 가격이 어떻게 되나요?", "생각보다 괜찮네요! 혹시 할인도 되나요?", "그럼 지금 결제할게요!"],
+        "B": ["아, 그 제품은 5만 원입니다.", "오늘은 10% 할인 가능해요!", "네! 여기로 오시면 됩니다."]
+      },
+      "tts_layer": {
+        "A": { "tts_voice": "ko-KR-Standard-A" },
+        "B": { "tts_voice": "ko-KR-Standard-B" }
+      }
+    },
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": ["이 가방 사이즈가 좀 작은 것 같은데, 더 큰 사이즈 있어요?", "오, 이게 더 잘 맞네요!", "네, 이걸로 할게요!"],
+        "B": ["네! 큰 사이즈도 있어요. 이걸 한번 보세요.", "다행이네요! 요즘 이 사이즈가 인기예요.", "바로 계산 도와드릴게요."]
+      },
+      "tts_layer": {
+        "A": { "tts_voice": "ko-KR-Standard-A" },
+        "B": { "tts_voice": "ko-KKR-Standard-B" }
+      }
+    },
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": ["이 모자 써봐도 될까요?", "오, 괜찮은데요! 다른 스타일도 있을까요?", "좋아요! 이걸로 할게요!"],
+        "B": ["물론이죠! 거울 앞에서 써보세요.", "네, 여기 옆에 있는 것도 인기 많아요.", "멋지게 잘 어울리세요! 바로 포장해드릴게요."]
+      },
+      "tts_layer": {
+        "A": { "tts_voice": "ko-KR-Standard-A" },
+        "B": { "tts_voice": "ko-KR-Standard-B" }
+      }
+    },
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": ["이 바지 소재가 부드럽네요! 세일 중인가요?", "오, 반값이면 괜찮네요!", "그럼 두 개 사도 되죠?"],
+        "B": ["네! 지금 50% 세일이에요.", "맞아요! 오늘 마지막 날이에요.", "물론이죠! 더 담아드릴까요?"]
+      },
+      "tts_layer": {
+        "A": { "tts_voice": "ko-KR-Standard-A" },
+        "B": { "tts_voice": "ko-KR-Standard-B" }
+      }
+    },
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": ["혹시 이 제품 새로 들어온 거예요?", "오, 그래서 디자인이 신선했군요!", "그럼 새 제품으로 하나 주세요!"],
+        "B": ["네! 이번 주에 들어온 신상이에요.", "맞아요! 이번 시즌에서 가장 인기 많아요.", "네! 바로 준비해드릴게요."]
+      },
+      "tts_layer": {
+        "A": { "tts_voice": "ko-KR-Standard-A" },
+        "B": { "tts_voice": "ko-KR-Standard-B" }
+      }
+    },
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": ["혹시 교환도 가능할까요?", "오, 7일이면 충분해요!", "좋아요! 그럼 구매할게요."],
+        "B": ["네, 택만 그대로면 7일 이내 교환 가능합니다.", "네! 혹시 선물하시는 건가요?", "감사합니다! 깔끔하게 포장해드릴게요."]
+      },
+      "tts_layer": {
+        "A": { "tts_voice": "ko-KR-Standard-A" },
+        "B": { "tts_voice": "ko-KR-Standard-B" }
+      }
+    },
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": ["이 향수 시향해도 될까요?", "오, 향이 꽤 은은하네요!", "그럼 작은 사이즈로 하나 주세요!"],
+        "B": ["네! 여기 테스트용 사용해보세요.", "네! 데일리로 쓰기 좋아요.", "네, 준비해드릴게요."]
+      },
+      "tts_layer": {
+        "A": { "tts_voice": "ko-KR-Standard-A" },
+        "B": { "tts_voice": "ko-KR-Standard-B" }
+      }
+    },
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": ["이거 선물용으로 괜찮을까요?", "오, 반응 좋을 것 같아요!", "좋아요! 선물 포장 부탁드려요!"],
+        "B": ["네! 선물용으로 제일 잘 나가는 제품이에요.", "요즘 생일 선물로 많이 사가세요!", "네! 예쁘게 포장해드릴게요."]
+      },
+      "tts_layer": {
+        "A": { "tts_voice": "ko-KR-Standard-A" },
+        "B": { "tts_voice": "ko-KR-Standard-B" }
+      }
+    },
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": ["혹시 이 카드로 결제 가능할까요?", "오, 다행이네요!", "그럼 영수증도 같이 주세요!"],
+        "B": ["네, 모든 카드 가능해요!", "네! 포인트 적립도 되세요.", "네! 영수증 함께 드릴게요."]
+      },
+      "tts_layer": {
+        "A": { "tts_voice": "ko-KR-Standard-A" },
+        "B": { "tts_voice": "ko-KR-Standard-B" }
+      }
+    }
+  ]
+}
+

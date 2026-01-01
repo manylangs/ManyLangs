@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "010",
+  "cefr": "B1",
+  "title_es": "Eventos escolares",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "¿Estás listo para el evento escolar?,",
+    "¿Qué te parece el evento de este año?,",
+    "¿Hay buen ambiente?,",
+    "¿Vas a participar?,",
+    "¡Vamos juntos la próxima vez!,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "¿Va bien la preparación del evento escolar?",
+          "¿Ah sí? Parece que todo fluye mejor de lo que pensaba. ¿Cómo es el ambiente?",
+          "Genial, pasaré por allí el día del evento."
+        ],
+        "B": [
+          "Sí, esta vez todo va bastante bien.",
+          "El ambiente es animado y muy positivo.",
+          "Perfecto, seguro que lo disfrutas si vienes."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "¿Tienes algún papel en el evento?",
+          "Vaya, dar una pequeña introducción debe poner un poco nervioso.",
+          "Pero seguro que te saldrá muy bien. ¿Has practicado mucho?"
+        ],
+        "B": [
+          "Sí, voy a hacer una breve presentación al inicio.",
+          "Sí, me da un poco de nervios.",
+          "He practicado bastante, así que ya me siento más cómodo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "¿Crees que vendrá mucha gente al evento?",
+          "¿En serio? ¡Entonces el ambiente estará súper animado!",
+          "Perfecto, los eventos concurridos tienen su encanto."
+        ],
+        "B": [
+          "Sí, probablemente más que el año pasado.",
+          "Hicimos mucha promoción y hay bastante interés.",
+          "Yo también estoy emocionado."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "¿Hubo algo difícil durante la preparación?",
+          "Ah, sí, cuando los horarios se cruzan, se complica todo.",
+          "Aun así lo estás haciendo muy bien. Si necesitas ayuda, dímelo."
+        ],
+        "B": [
+          "Sí, especialmente cuando coinciden varias tareas.",
+          "Pero trabajar en equipo lo hace más llevadero.",
+          "Gracias, te avisaré si necesito algo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "¿Qué parte del programa te emociona más?",
+          "¿El grupo de presentaciones? ¡Suena muy divertido!",
+          "Cuéntame después qué tal estuvo."
+        ],
+        "B": [
+          "Estoy esperando sobre todo la actuación de los estudiantes.",
+          "Los vi ensayar un poco y estaban genial.",
+          "Sí, te cuento todo cuando termine."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "¿Vas con alguien al evento?",
+          "Bueno, incluso solo se disfruta. Siempre hay mucha gente.",
+          "Pero si quieres, puedo acompañarte."
+        ],
+        "B": [
+          "Todavía no he quedado con nadie.",
+          "Sí, creo que será divertido incluso si voy solo.",
+          "Gracias, me gustaría ir contigo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "¿Vas a ayudar en algún puesto del evento?",
+          "¿Un puesto de actividades manuales? Seguro que atrae a mucha gente.",
+          "Perfecto, pasaré a saludar."
+        ],
+        "B": [
+          "Sí, me pidieron ayudar en un puesto interactivo.",
+          "Dicen que es uno de los más populares.",
+          "Me haría ilusión que pasaras por allí."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "¿Hiciste nuevos amigos preparando el evento?",
+          "Claro, trabajar juntos hace que uno conecte más rápido.",
+          "Genial, preséntamelos algún día."
+        ],
+        "B": [
+          "Sí, me hice amigo de alguien durante los preparativos.",
+          "Como trabajamos mucho juntos, la comunicación fue muy fluida.",
+          "Sí, te lo presentaré cuando se pueda."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "¿Habrá una reunión o cena después del evento?",
+          "¡Qué bien! Seguro que será divertido relajarse con todos.",
+          "Cuéntame después cómo te fue."
+        ],
+        "B": [
+          "Sí, vamos a cenar juntos después del evento.",
+          "Todos quieren relajarse un poco cuando termine.",
+          "Claro, te cuento todo luego."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "¿Quieres que recorramos el evento juntos ese día?",
+          "Genial, cuando hay mucha gente es mejor ir acompañado.",
+          "Te escribiré ese día si todo va bien."
+        ],
+        "B": [
+          "Sí, sería más divertido ir juntos.",
+          "Claro, así será menos agobiante con tanta gente.",
+          "Perfecto, te aviso por la mañana."
+        ]
+      }
+    }
+  ]
+}
+

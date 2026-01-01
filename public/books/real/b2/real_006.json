@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "b2",
+    "id": "006"
+  },
+  "topic": "A family watching news on TV",
+  "keywords": [
+    "family",
+    "watching news",
+    "television",
+    "living room",
+    "sofa",
+    "home"
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "006.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "target": "가족이 소파에 함께 앉아 TV에서 뉴스 프로그램을 보고 있다.",
+          "en": "A family sits together on a sofa while a news program plays on the television.",
+          "es": "Una familia está sentada junta en un sofá mientras un programa de noticias se transmite por la televisión.",
+          "fr": "Une famille est assise ensemble sur un canapé pendant qu'un programme d'information passe à la télévision.",
+          "pt": "Uma família está sentada junta no sofá enquanto um programa de notícias passa na televisão."
+        },
+        {
+          "target": "부모는 화면을 향해 앉아 방송을 시청한다.",
+          "en": "The parents sit facing the screen, watching the broadcast.",
+          "es": "Los padres están sentados frente a la pantalla viendo la emisión.",
+          "fr": "Les parents sont assis face à l'écran et regardent la diffusion.",
+          "pt": "Os pais estão sentados de frente para o ecrã a ver a transmissão."
+        },
+        {
+          "target": "아이 한 명은 옆에 앉아 쿠션을 들고 있다.",
+          "en": "One child sits beside them holding a cushion.",
+          "es": "Un niño está sentado a su lado sosteniendo un cojín.",
+          "fr": "Un enfant est assis à côté d'eux en tenant un coussin.",
+          "pt": "Uma criança está sentada ao lado deles segurando uma almofada."
+        },
+        {
+          "target": "부드러운 조명이 뉴스 방송 중인 거실을 채운다.",
+          "en": "Soft lighting fills the living room during the broadcast.",
+          "es": "Una luz suave llena la sala durante la transmisión.",
+          "fr": "Un éclairage doux remplit le salon pendant la diffusion.",
+          "pt": "Uma iluminação suave preenche a sala durante a transmissão."
+        },
+        {
+          "target": "리모컨은 소파 앞 테이블 위에 놓여 있다.",
+          "en": "A remote control lies on the table in front of the sofa.",
+          "es": "Un control remoto está sobre la mesa frente al sofá.",
+          "fr": "Une télécommande se trouve sur la table devant le canapé.",
+          "pt": "Um comando remoto está sobre a mesa em frente ao sofá."
+        },
+        {
+          "target": "이 장면은 집에서 함께 뉴스를 보는 가족의 모습을 보여 준다.",
+          "en": "The scene shows a family watching the news together at home.",
+          "es": "La escena muestra a una familia viendo las noticias junta en casa.",
+          "fr": "La scène montre une famille regardant les informations ensemble à la maison.",
+          "pt": "A cena mostra uma família a ver as notícias junta em casa."
+        }
+      ]
+    }
+  ],
+  "tts": {
+    "en": [],
+    "fr": [],
+    "es": [],
+    "pt": [],
+    "kr": []
+  }
+}

@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "007",
+  "cefr": "B1",
+  "title_fr": "Préparation aux examens",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Comment avance ta préparation pour l’examen?,",
+    "Tu as décidé par où commencer à étudier?,",
+    "On révise les parties importantes?,",
+    "La gestion du temps est la plus difficile.,",
+    "On révise ensemble!,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Ta préparation pour l’examen se passe bien ?",
+          "Ah vraiment ? Alors tu as déjà préparé ton planning d’étude ?",
+          "Super ! Je peux t’aider à le vérifier si tu veux."
+        ],
+        "B": [
+          "J’étudie un peu chaque jour, mais c’est plus dur que je pensais.",
+          "Pas complètement, j’ai seulement fait un plan général.",
+          "Ah oui ? Ça m’aiderait énormément !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Tu as décidé par où commencer à étudier ?",
+          "Cet ordre me paraît bien ! Ça t’aidera à mieux comprendre.",
+          "Oui, commencer par les points essentiels, c’est toujours bien."
+        ],
+        "B": [
+          "Oui, je commence par les notions de base.",
+          "Ensuite je veux essayer quelques exercices.",
+          "Je devrais sûrement faire pareil !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Tu comprends bien les notions pour l’instant ?",
+          "Oui, quand quelque chose n’est pas clair, mieux vaut le revoir.",
+          "Exactement ! Révisons encore une fois avant les exercices."
+        ],
+        "B": [
+          "J’en comprends environ la moitié, mais certaines choses me mêlent.",
+          "Oui, c’est pour ça que je veux tout réorganiser.",
+          "D’accord, faisons ça maintenant !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Tu as essayé de faire les questions de l’examen de l’an dernier ?",
+          "Oh wow, ça avait l’air plus difficile que prévu !",
+          "On peut en résoudre quelques-unes ensemble, ça aide beaucoup."
+        ],
+        "B": [
+          "Oui, mais certaines étaient vraiment dures.",
+          "Il y en avait que je ne comprenais pas du tout.",
+          "Ah oui ? Alors voyons-les maintenant."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Il y a un chapitre qui t’inquiète plus que les autres ?",
+          "Ah oui, beaucoup disent que cette partie est compliquée.",
+          "On peut l’organiser séparément et la revoir ensemble."
+        ],
+        "B": [
+          "La partie avec les exercices d’application me fait un peu peur.",
+          "Oui, et les explications sont assez complexes.",
+          "La réorganiser m’aiderait vraiment !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Tu arrives bien à gérer ton temps d’étude ?",
+          "Oui, c’est souvent difficile à équilibrer.",
+          "Essaie de diviser ton temps en petites sessions, ça aide beaucoup."
+        ],
+        "B": [
+          "Pas vraiment. Je manque toujours de temps.",
+          "Tout prend plus de temps que prévu.",
+          "D’accord, je vais essayer cette méthode !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Tu arrives à mémoriser les points importants ?",
+          "Oh mince, alors on peut essayer une autre méthode.",
+          "Par exemple créer des images ou des associations !"
+        ],
+        "B": [
+          "Non, j’oublie tout le temps.",
+          "Même en répétant, ça ne reste pas.",
+          "Je n’ai jamais essayé ça, ça a l’air utile !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Tu as étudié combien de chapitres jusqu’ici ?",
+          "Oh, c’est déjà une très bonne avancée !",
+          "Super, je peux t’aider pour ce qu’il reste."
+        ],
+        "B": [
+          "J’ai étudié environ la moitié.",
+          "Mais les derniers chapitres me stressent un peu.",
+          "Ton aide serait vraiment géniale !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Tu penses pouvoir finir ton objectif d’aujourd’hui ?",
+          "Wow, tu avances encore mieux que prévu !",
+          "Génial, tu es presque prêt—il reste juste une dernière vérification."
+        ],
+        "B": [
+          "Oui, je pense pouvoir finir avec un petit effort.",
+          "Je vais même plus vite que ce que j’imaginais.",
+          "Entendre ça me motive encore plus !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "On révise une dernière fois ensemble ?",
+          "Oh, tu sembles beaucoup plus confiant maintenant !",
+          "Parfait ! Tu es presque totalement prêt."
+        ],
+        "B": [
+          "Oui, faisons ça maintenant !",
+          "Oui, je crois que je commence enfin à comprendre.",
+          "Merci pour ton soutien, ça m’aide vraiment."
+        ]
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "a1",
+    "id": "017"
+  },
+  "topic": "A student writing",
+  "keywords": [
+    "student",
+    "writing",
+    "desk",
+    "notebook",
+    "pen",
+    "study"
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "017.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "target": "한 학생이 책상에 앉아 공책에 글을 쓰고 있다.",
+          "en": "A student is sitting at a desk while writing in a notebook.",
+          "es": "Un estudiante está sentado en un escritorio escribiendo en un cuaderno.",
+          "fr": "Un étudiant est assis à un bureau en train d’écrire dans un cahier.",
+          "pt": "Um estudante está sentado à mesa escrevendo em um caderno."
+        },
+        {
+          "target": "그는 한 손에 펜을 단단히 쥐고 있다.",
+          "en": "He holds a pen firmly in one hand.",
+          "es": "Él sostiene un bolígrafo firmemente con una mano.",
+          "fr": "Il tient un stylo fermement dans une main.",
+          "pt": "Ele segura uma caneta firmemente com uma das mãos."
+        },
+        {
+          "target": "학생은 집중한 표정으로 종이를 내려다보고 있다.",
+          "en": "The student looks down at the paper with focus.",
+          "es": "El estudiante mira el papel con concentración.",
+          "fr": "L’étudiant regarde la feuille avec concentration.",
+          "pt": "O estudante olha para o papel com concentração."
+        },
+        {
+          "target": "공책 옆에는 몇 권의 책이 가지런히 쌓여 있다.",
+          "en": "A few books are stacked neatly beside the notebook.",
+          "es": "Algunos libros están apilados ordenadamente junto al cuaderno.",
+          "fr": "Quelques livres sont empilés soigneusement à côté du cahier.",
+          "pt": "Alguns livros estão empilhados ordenadamente ao lado do caderno."
+        },
+        {
+          "target": "그의 자세는 편안하지만 집중되어 있다.",
+          "en": "His posture is relaxed but attentive.",
+          "es": "Su postura es relajada pero atenta.",
+          "fr": "Sa posture est détendue mais attentive.",
+          "pt": "A sua postura é relaxada, porém atenta."
+        },
+        {
+          "target": "책상 모서리에는 작은 펜꽂이가 놓여 있다.",
+          "en": "A small cup for pens sits at the corner of the desk.",
+          "es": "Un pequeño vaso para bolígrafos está en la esquina del escritorio.",
+          "fr": "Un petit pot à stylos est posé dans un coin du bureau.",
+          "pt": "Um pequeno copo para canetas fica no canto da mesa."
+        }
+      ]
+    }
+  ],
+  "tts": {
+    "en": [],
+    "fr": [],
+    "es": [],
+    "pt": [],
+    "kr": []
+  }
+}

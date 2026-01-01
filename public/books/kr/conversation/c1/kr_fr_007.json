@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "007",
+  "cefr": "C1",
+  "title_fr": "Communication par e-mail",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Merci de vérifier l’e-mail lorsque vous en aurez l’occasion,",
+    "Veuillez consulter le fichier joint,",
+    "Je m’en occuperai dès que vous répondrez,",
+    "Auriez-vous quelque chose à ajouter?,",
+    "Merci de me répondre après votre relecture,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Je viens de vous envoyer un e-mail. Pourriez-vous y jeter un œil quand vous aurez un moment ?",
+          "J’ai organisé les documents que vous aviez demandés et les ai joints au message.",
+          "S’il manque quelque chose, n’hésitez pas à me le signaler."
+        ],
+        "B": [
+          "Ah, je viens de voir la notification ! Je l’ouvre tout de suite.",
+          "Oh, tout est vraiment bien structuré.",
+          "D’accord, je vais vérifier et vous informer si quelque chose doit être ajouté."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Je n’ai pas encore reçu de réponse à l’e-mail d’hier.",
+          "Je me suis dit que vous étiez peut-être trop occupé pour le consulter, alors je voulais faire un petit suivi.",
+          "Répondez simplement quand cela vous conviendra."
+        ],
+        "B": [
+          "Oh, désolé ! Je viens justement de le lire.",
+          "Il y avait plus de contenu que je ne pensais, donc je l’ai passé en revue avec attention.",
+          "Je vais rassembler mes remarques et vous répondre sous peu."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Je vous ai envoyé plus tôt les comptes rendus de la réunion.",
+          "J’ai résumé uniquement les points essentiels pour faciliter la lecture.",
+          "Si vous souhaitez une version détaillée, je peux vous l’envoyer également."
+        ],
+        "B": [
+          "Parfait ! Ce résumé est beaucoup plus facile à parcourir.",
+          "Grâce à cela, j’ai pu saisir l’essentiel immédiatement.",
+          "Oui, je veux bien recevoir la version détaillée aussi."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Je me suis rendu compte que l’horaire indiqué dans l’e-mail pouvait prêter à confusion.",
+          "L’horaire définitif est bien confirmé à 15 h aujourd’hui.",
+          "Désolé si mon précédent message a causé une ambiguïté."
+        ],
+        "B": [
+          "Ah, merci pour la précision !",
+          "J’étais aussi un peu hésitant concernant l’horaire.",
+          "Très bien, je serai prêt pour 15 h."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Pourriez-vous vérifier que la pièce jointe s’ouvre correctement ?",
+          "Le fichier est un peu lourd, j’avais peur qu’il pose problème.",
+          "Si vous préférez un autre format, je peux vous le convertir."
+        ],
+        "B": [
+          "Je viens de l’ouvrir — aucun problème !",
+          "Merci d’avoir anticipé cette question.",
+          "Si j’ai besoin d’un autre format plus tard, je vous le dirai."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "J’ai également joint le brouillon de l’ordre du jour.",
+          "C’est juste une première ébauche, donc c’est entièrement ajustable.",
+          "N’hésitez pas à partager vos suggestions ou modifications."
+        ],
+        "B": [
+          "Super, ce brouillon est clair. La structure générale ressort bien.",
+          "Avec quelques retouches, il sera prêt à être utilisé.",
+          "Je vais préparer mes suggestions et vous les envoyer par e-mail."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "L’objet du mail n’était-il pas trop long ?",
+          "Je l’ai rédigé un peu long pour clarifier l’intention.",
+          "Si vous préférez, je peux le rendre plus concis."
+        ],
+        "B": [
+          "Non, au contraire, c’était très utile !",
+          "Rien qu’avec l’objet, je comprenais déjà le contenu.",
+          "La version actuelle me convient très bien."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Je craignais d’avoir répondu un peu trop lentement dernièrement.",
+          "Je vérifiais un point important, ce qui a légèrement retardé ma réponse.",
+          "Mais je fais de mon mieux pour traiter les choses rapidement."
+        ],
+        "B": [
+          "Oh, pas de souci ! Je sais que vous êtes très sollicité en ce moment.",
+          "Attendre n’est pas un problème. L’essentiel est que tout soit exact.",
+          "Si vous avez besoin de quelque chose, dites-le-moi."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Avez-vous eu le temps de relire la version mise à jour du document que je vous ai envoyée hier ?",
+          "J’ai beaucoup modifié la structure de la deuxième page.",
+          "Si vous souhaitez une autre approche, je peux la retravailler."
+        ],
+        "B": [
+          "Oui, je viens de l’examiner attentivement !",
+          "La nouvelle mise en page de la deuxième page est excellente.",
+          "Je pense que la version actuelle fonctionne très bien."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Je prévois d’envoyer l’e-mail final dans la journée.",
+          "Dès que la relecture interne sera terminée, je vous l’enverrai immédiatement.",
+          "Faites-moi savoir si nous devons ajuster la date limite."
+        ],
+        "B": [
+          "Merci pour l’information !",
+          "On dirait que nous sommes presque arrivés au bout.",
+          "S’il y a un changement dans le planning, je vous tiendrai informé."
+        ]
+      }
+    }
+  ]
+}
+

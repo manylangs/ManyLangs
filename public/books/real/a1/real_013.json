@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "a1",
+    "id": "013"
+  },
+  "topic": "A person holding a phone",
+  "keywords": [
+    "person",
+    "holding phone",
+    "smartphone",
+    "hand",
+    "neutral expression",
+    "simple action"
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "013.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "target": "한 사람이 한 손에 휴대폰을 들고 있다.",
+          "en": "A person holds a phone in one hand.",
+          "es": "Una persona sostiene un teléfono en una mano.",
+          "fr": "Une personne tient un téléphone dans une main.",
+          "pt": "Uma pessoa segura um telefone numa das mãos."
+        },
+        {
+          "target": "그는 차분하고 무표정한 얼굴로 화면을 내려다본다.",
+          "en": "He looks down at the screen with a calm, neutral expression.",
+          "es": "Él mira la pantalla con una expresión tranquila y neutra.",
+          "fr": "Il regarde l’écran avec une expression calme et neutre.",
+          "pt": "Ele olha para a tela com uma expressão calma e neutra."
+        },
+        {
+          "target": "한 손가락이 화면을 누르기 직전인 듯 살짝 떠 있다.",
+          "en": "One finger hovers slightly, ready to tap the screen.",
+          "es": "Un dedo queda suspendido, listo para tocar la pantalla.",
+          "fr": "Un doigt reste légèrement en suspens, prêt à toucher l’écran.",
+          "pt": "Um dedo fica ligeiramente suspenso, pronto para tocar na tela."
+        },
+        {
+          "target": "휴대폰은 얇고 현대적인 디자인을 하고 있다.",
+          "en": "The phone has a slim, modern design.",
+          "es": "El teléfono tiene un diseño delgado y moderno.",
+          "fr": "Le téléphone présente un design fin et moderne.",
+          "pt": "O telefone tem um design fino e moderno."
+        },
+        {
+          "target": "주변에는 방해가 될 만한 요소가 없다.",
+          "en": "There are no distractions around him.",
+          "es": "No hay distracciones a su alrededor.",
+          "fr": "Il n’y a aucune distraction autour de lui.",
+          "pt": "Não há distrações ao seu redor."
+        },
+        {
+          "target": "이 장면은 휴대폰을 확인하는 조용한 순간을 담고 있다.",
+          "en": "The scene captures a quiet moment of checking a phone.",
+          "es": "La escena capta un momento tranquilo al revisar el teléfono.",
+          "fr": "La scène capture un moment calme où il consulte son téléphone.",
+          "pt": "A cena capta um momento calmo de verificar o telefone."
+        }
+      ]
+    }
+  ],
+  "tts": {
+    "en": [],
+    "fr": [],
+    "es": [],
+    "pt": [],
+    "kr": []
+  }
+}

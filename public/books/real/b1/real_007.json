@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "b1",
+    "id": "007"
+  },
+  "topic": "A cyclist repairing a tire",
+  "keywords": [
+    "cyclist",
+    "repairing",
+    "tire",
+    "bicycle",
+    "tools",
+    "roadside",
+    "maintenance"
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "007.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "target": "한 사이클리스트가 조용한 도로 옆에서 자전거 옆에 무릎을 꿇고 있다.",
+          "en": "A cyclist kneels beside his bicycle on the side of a quiet road.",
+          "es": "Un ciclista se arrodilla junto a su bicicleta al costado de una carretera tranquila.",
+          "fr": "Un cycliste est agenouillé à côté de son vélo sur le bord d'une route tranquille.",
+          "pt": "Um ciclista está ajoelhado ao lado de sua bicicleta à beira de uma estrada tranquila."
+        },
+        {
+          "target": "그는 펑크 난 타이어를 확인하기 위해 앞바퀴를 조심스럽게 분리한다.",
+          "en": "He removes the front wheel carefully to check the flat tire.",
+          "es": "Quita con cuidado la rueda delantera para revisar el neumático pinchado.",
+          "fr": "Il retire soigneusement la roue avant pour vérifier le pneu crevé.",
+          "pt": "Ele remove cuidadosamente a roda dianteira para verificar o pneu furado."
+        },
+        {
+          "target": "작은 수리 키트가 그의 옆 바닥에 펼쳐져 있다.",
+          "en": "A small repair kit lies open on the ground next to him.",
+          "es": "Un pequeño kit de reparación está abierto en el suelo a su lado.",
+          "fr": "Un petit kit de réparation est ouvert au sol juste à côté de lui.",
+          "pt": "Um pequeno kit de reparo está aberto no chão ao seu lado."
+        },
+        {
+          "target": "사이클리스트는 바람이 빠진 원인을 찾기 위해 튜브에 난 구멍을 살펴본다.",
+          "en": "The cyclist examines the inner tube, looking for the hole that caused the leak.",
+          "es": "El ciclista examina la cámara de aire buscando el agujero que causó la fuga.",
+          "fr": "Le cycliste examine la chambre à air, cherchant le trou qui a causé la fuite.",
+          "pt": "O ciclista examina a câmara de ar, procurando o furo que causou o vazamento."
+        },
+        {
+          "target": "사이클리스트는 수리를 계속하기 전에 이마의 땀을 닦아낸다.",
+          "en": "The cyclist wipes sweat from his forehead before continuing the repair.",
+          "es": "El ciclista se seca el sudor de la frente antes de continuar con la reparación.",
+          "fr": "Le cycliste essuie la sueur de son front avant de reprendre la réparation.",
+          "pt": "O ciclista enxuga o suor da testa antes de continuar o conserto."
+        },
+        {
+          "target": "그는 튜브에 패치를 붙이고 단단히 눌러 고정한다.",
+          "en": "He applies a patch to the tube and presses it firmly into place.",
+          "es": "Coloca un parche en la cámara y lo presiona firmemente.",
+          "fr": "Il applique une rustine sur la chambre à air et la presse fermement.",
+          "pt": "Ele coloca um remendo na câmara e o pressiona firmemente."
+        }
+      ]
+    }
+  ],
+  "tts": {
+    "en": [],
+    "fr": [],
+    "es": [],
+    "pt": [],
+    "kr": []
+  }
+}

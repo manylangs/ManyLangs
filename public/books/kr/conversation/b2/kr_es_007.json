@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "007",
+  "cefr": "B2",
+  "title_es": "Encontrar restaurantes",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "¿Hay buenos restaurantes cerca?,",
+    "¿Tienes alguna recomendación?,",
+    "¿Necesitamos reservar?,",
+    "¿La espera es larga?,",
+    "¿Cuál es el rango de precios?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Oye, ¿conoces algún buen sitio para comer por aquí?",
+          "Oh, genial, me encantan los lugares con buena vibra.",
+          "Entonces, ¿vamos a ese?"
+        ],
+        "B": [
+          "Sí, hay un sitio bastante popular justo enfrente.",
+          "El ambiente es muy agradable y la comida está buenísima.",
+          "Perfecto, veamos el menú mientras vamos."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "¿Hay algún plato que recomiendes?",
+          "¡Guau, eso ya suena delicioso!",
+          "Vale, pediré eso."
+        ],
+        "B": [
+          "Sí, la pasta de ese lugar está realmente buena.",
+          "Ya verás, es tan bonita que dan ganas de hacer una foto.",
+          "Genial, las porciones son grandes, te va a encantar."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "¿Tenemos que reservar mesa allí?",
+          "Ah, vale, no está tan mal.",
+          "Entonces podemos ir a la hora que planeamos."
+        ],
+        "B": [
+          "Entre semana está bien, pero los fines de semana mejor reservar.",
+          "Sí, aunque normalmente la espera no es muy larga.",
+          "Exacto, si no llegamos muy tarde, entraremos rápido."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "¿La espera suele ser larga?",
+          "Oh, pensaba que sería peor.",
+          "Entonces esperemos."
+        ],
+        "B": [
+          "Depende de la hora, pero al mediodía es cuando más gente hay.",
+          "Sí, la mayoría entra en 10 a 15 minutos.",
+          "Perfecto, podemos elegir lo que queremos mientras esperamos."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "¿Cuál es el rango de precios?",
+          "Oh, es bastante razonable para un sitio agradable.",
+          "Entonces no es tan caro."
+        ],
+        "B": [
+          "Depende del plato, pero en general es de precio medio.",
+          "Sí, mucha gente dice que tiene muy buena relación calidad-precio.",
+          "Totalmente, y las porciones son generosas."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "¿También tienen buenos postres?",
+          "¡Guau, me encantan ese tipo de postres!",
+          "Entonces tenemos que probarlo después de comer."
+        ],
+        "B": [
+          "Sí, su tiramisú es muy popular.",
+          "No es muy dulce y es súper cremoso.",
+          "Claro, siempre hay espacio para el postre."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "¿Se puede ir solo sin problema?",
+          "Ah, ese ambiente acogedor suena perfecto.",
+          "Entonces no sería incómodo comer allí solo."
+        ],
+        "B": [
+          "Sí, incluso tienen asientos individuales.",
+          "En general es tranquilo y cálido.",
+          "Exacto, nadie se siente fuera de lugar comiendo allí solo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "¿Tienen opciones vegetarianas?",
+          "Oh, ya con eso hay varias opciones.",
+          "Entonces sería ideal llevar a mi amiga."
+        ],
+        "B": [
+          "Sí, tienen algunas ensaladas y pastas vegetarianas.",
+          "No es totalmente vegano, pero hay alternativas.",
+          "Exacto, funciona incluso si todos tienen gustos diferentes."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "¿Hay un restaurante tranquilo cerca?",
+          "Oh, ese tipo de ambiente me gusta.",
+          "Entonces comamos ahí tranquilamente."
+        ],
+        "B": [
+          "Sí, hay un sitio bastante calmado a pocos minutos de aquí.",
+          "No suele estar lleno, así que es cómodo para comer.",
+          "Sí, las mesas son amplias y se puede estar allí bastante tiempo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Bueno, ¿decidimos a dónde ir?",
+          "Oh, ¡los dos sitios se ven muy bien!",
+          "Entonces vamos al que prefieras tú."
+        ],
+        "B": [
+          "Vale, con dos opciones es fácil decidir.",
+          "Sí, el ambiente y los menús son diferentes.",
+          "Perfecto, elegiré uno y te guiaré."
+        ]
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,175 @@
+{
+  "chapter_id": "002",
+  "cefr": "A1",
+  "title_en": "Self_Introduction",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "I am ~.",
+    "Nice to meet you.",
+    "Where are you from?",
+    "What do you do?",
+    "What’s your hobby?"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Hi! I'm Minseo.",
+          "Yes! I'm from Korea.",
+          "Nice to meet you too!"
+        ],
+        "B": [
+          "Hi! I'm Jihun.",
+          "Oh really? Nice to meet you.",
+          "Hope we see each other often!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "I'm a university student. What do you do?",
+          "Wow, that sounds cool!",
+          "I'd love to hear more someday!"
+        ],
+        "B": [
+          "I work at a company.",
+          "I still have a lot to learn though.",
+          "Sure! Feel free to talk to me anytime."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "What's your hobby?",
+          "Oh, I like walking too!",
+          "We should walk together sometime!"
+        ],
+        "B": [
+          "I like listening to music or taking walks.",
+          "Funny we have the same hobby!",
+          "Yeah! That would be nice."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Where do you live?",
+          "Ah, that area has a nice vibe!",
+          "Let me know if I'm around there!"
+        ],
+        "B": [
+          "I live near the university.",
+          "Yeah, it's quiet and nice.",
+          "Sure! I'd be happy to meet."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "I'm studying Korean these days.",
+          "Yeah, the pronunciation is really hard.",
+          "Let me know if you have any tips!"
+        ],
+        "B": [
+          "Oh, you're studying Korean!",
+          "Everyone struggles at first. You'll get better soon.",
+          "Of course! I'll help anytime."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Do you have any siblings?",
+          "Oh, that's similar to me!",
+          "I'd love to hear more about your family!"
+        ],
+        "B": [
+          "Yes, I have an older brother.",
+          "Cool that we're similar!",
+          "Me too! Let's talk more later."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "I really love traveling.",
+          "Oh wow, Europe? I'm jealous!",
+          "Please recommend some places someday!"
+        ],
+        "B": [
+          "Me too! I especially love traveling in Europe.",
+          "I have a lot of great memories.",
+          "Sure! I'd be happy to recommend some."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Do you have a favorite food?",
+          "Oh, I like pasta too!",
+          "Let's go to a good restaurant someday!"
+        ],
+        "B": [
+          "I love pasta the most.",
+          "Looks like we have similar tastes!",
+          "Yeah! Let's go together."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "What are you learning these days?",
+          "Oh, that sounds fun!",
+          "Now I'm interested too!"
+        ],
+        "B": [
+          "I'm learning photography lately.",
+          "It's harder than I expected but fun.",
+          "We should go take photos together!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "What's your MBTI?",
+          "Oh! I'm more outgoing.",
+          "I think we'll get along well!"
+        ],
+        "B": [
+          "I'm more introverted.",
+          "But I get along well with outgoing people!",
+          "Yeah, I think so too!"
+        ]
+      }
+    }
+  ]
+}

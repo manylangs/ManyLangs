@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a1",
+    "id": "036"
+  },
+  "title": {
+    "target": "A1 — 일상 어휘",
+    "en": "A1 — Everyday Vocabulary",
+    "es": "A1 — Vocabulario cotidiano",
+    "fr": "A1 — Vocabulaire quotidien",
+    "pt": "A1 — Vocabulário do dia a dia"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "휴지",
+        "en": "tissue / paper",
+        "es": "pañuelo / papel",
+        "fr": "mouchoir / papier",
+        "pt": "lenço / papel"
+      },
+      "examples": [
+        {
+          "target": "휴지를 하나 주세요.",
+          "en": "Please give me a tissue.",
+          "es": "Dame un pañuelo, por favor.",
+          "fr": "Donnez-moi un mouchoir, s’il vous plaît.",
+          "pt": "Dê-me um lenço, por favor."
+        },
+        {
+          "target": "휴지가 다 떨어졌어요.",
+          "en": "We ran out of tissue paper.",
+          "es": "Nos quedamos sin pañuelos.",
+          "fr": "Nous n’avons plus de mouchoirs.",
+          "pt": "Acabaram-se os lenços."
+        },
+        {
+          "target": "휴지로 테이블을 닦았어요.",
+          "en": "I wiped the table with tissue.",
+          "es": "Limpié la mesa con un pañuelo.",
+          "fr": "J’ai essuyé la table avec un mouchoir.",
+          "pt": "Limpei a mesa com um lenço."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "빨래",
+        "en": "laundry",
+        "es": "lavandería / ropa lavada",
+        "fr": "linge / lessive",
+        "pt": "lavanderia / roupa lavada"
+      },
+      "examples": [
+        {
+          "target": "오늘 빨래를 해야 해요.",
+          "en": "I need to do the laundry today.",
+          "es": "Tengo que hacer la colada hoy.",
+          "fr": "Je dois faire la lessive aujourd’hui.",
+          "pt": "Preciso lavar roupa hoje."
+        },
+        {
+          "target": "빨래가 아직 안 말랐어요.",
+          "en": "The laundry is not dry yet.",
+          "es": "La ropa todavía no está seca.",
+          "fr": "Le linge n’est pas encore sec.",
+          "pt": "A roupa ainda não secou."
+        },
+        {
+          "target": "빨래를 밖에 널었어요.",
+          "en": "I hung the laundry outside.",
+          "es": "Tendí la ropa afuera.",
+          "fr": "J’ai étendu le linge dehors.",
+          "pt": "Estendi a roupa lá fora."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "세제",
+        "en": "detergent",
+        "es": "detergente",
+        "fr": "détergent",
+        "pt": "detergente"
+      },
+      "examples": [
+        {
+          "target": "세제가 너무 많이 들어갔어요.",
+          "en": "Too much detergent went in.",
+          "es": "Entró demasiado detergente.",
+          "fr": "Il y a trop de détergent.",
+          "pt": "Entrou detergente demais."
+        },
+        {
+          "target": "세제를 조금만 넣어도 돼요.",
+          "en": "You only need to add a little detergent.",
+          "es": "Solo necesitas añadir un poco de detergente.",
+          "fr": "Vous n’avez besoin d’ajouter qu’un peu de détergent.",
+          "pt": "Você só precisa colocar um pouco de detergente."
+        },
+        {
+          "target": "세제가 어디에 있나요?",
+          "en": "Where is the detergent?",
+          "es": "¿Dónde está el detergente?",
+          "fr": "Où est le détergent ?",
+          "pt": "Onde está o detergente?"
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "청소기",
+        "en": "vacuum cleaner",
+        "es": "aspiradora",
+        "fr": "aspirateur",
+        "pt": "aspirador de pó"
+      },
+      "examples": [
+        {
+          "target": "청소기가 잘 빨리지 않아요.",
+          "en": "The vacuum cleaner is not sucking well.",
+          "es": "La aspiradora no está aspirando bien.",
+          "fr": "L’aspirateur n’aspire pas bien.",
+          "pt": "O aspirador não está puxando bem."
+        },
+        {
+          "target": "청소기 필터를 갈아야 해요.",
+          "en": "You need to replace the vacuum filter.",
+          "es": "Debes cambiar el filtro de la aspiradora.",
+          "fr": "Vous devez changer le filtre de l’aspirateur.",
+          "pt": "Você precisa trocar o filtro do aspirador."
+        },
+        {
+          "target": "새 청소기를 샀어요.",
+          "en": "I bought a new vacuum cleaner.",
+          "es": "Compré una aspiradora nueva.",
+          "fr": "J’ai acheté un nouvel aspirateur.",
+          "pt": "Comprei um aspirador novo."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "설거지",
+        "en": "dishwashing",
+        "es": "lavado de platos",
+        "fr": "vaisselle",
+        "pt": "lavar a loiça"
+      },
+      "examples": [
+        {
+          "target": "설거지를 제가 할게요.",
+          "en": "I will do the dishes.",
+          "es": "Yo lavaré los platos.",
+          "fr": "Je vais faire la vaisselle.",
+          "pt": "Eu lavo a loiça."
+        },
+        {
+          "target": "설거지가 쌓였어요.",
+          "en": "The dishes have piled up.",
+          "es": "Los platos se han acumulado.",
+          "fr": "La vaisselle s’est accumulée.",
+          "pt": "A loiça se acumulou."
+        },
+        {
+          "target": "설거지를 끝내고 쉬고 있어요.",
+          "en": "I finished washing the dishes and I'm resting.",
+          "es": "Terminé de lavar los platos y estoy descansando.",
+          "fr": "J’ai fini la vaisselle et je me repose.",
+          "pt": "Terminei de lavar a loiça e estou a descansar."
+        }
+      ]
+    }
+  ]
+}

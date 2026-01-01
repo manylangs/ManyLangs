@@ -1,0 +1,167 @@
+﻿{
+  "chapter_id": "006",
+  "cefr": "C2",
+  "title_es": "Datos y análisis",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "identificar patrones de datos,",
+    "analizar cambios en los indicadores,",
+    "aumentar el tamaño de la muestra,",
+    "predecir tendencias,",
+    "validar la precisión del modelo,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "¿Tuviste oportunidad de revisar el conjunto de datos que envié ayer?",
+          "Entonces seguro que viste la gran fluctuación en el gráfico, ¿verdad?",
+          "Creo que esa parte estuvo influenciada por la campaña."
+        ],
+        "B": [
+          "¡Sí, lo vi! La fluctuación era bastante marcada.",
+          "Sí, ese punto destacaba mucho.",
+          "Perfecto, analizaré esa parte con más detalle."
+        ]
+      }
+    },
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "El error de predicción disminuyó un poco esta vez.",
+          "Parece que el ajuste de los hiperparámetros realmente funcionó.",
+          "¿Probamos reducir un poco más el rango óptimo?"
+        ],
+        "B": [
+          "Yo también lo noté. El gráfico se ve mucho más estable.",
+          "Sí, el modelo está mucho más limpio que antes.",
+          "Bien, hagamos otra prueba con ese rango más afinado."
+        ]
+      }
+    },
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "¿No te parece que los datos están un poco ruidosos?",
+          "Quizás deberíamos endurecer las condiciones de filtrado.",
+          "Eso debería hacer más claros los patrones."
+        ],
+        "B": [
+          "Estoy de acuerdo, el gráfico se veía algo borroso.",
+          "De acuerdo, aplicaré esas condiciones.",
+          "Perfecto, volveré a muestrear los datos y te los enviaré."
+        ]
+      }
+    },
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "¿Incluiste también los indicadores de correlación esta vez?",
+          "Tenía curiosidad especialmente por las variables 2 y 5.",
+          "Si la correlación es alta, podríamos incorporarlas al modelo."
+        ],
+        "B": [
+          "Sí, los incluí. Estaban fuertemente relacionados.",
+          "Exacto, esas dos variables eran especialmente interesantes.",
+          "Bien, las integraré en la próxima versión."
+        ]
+      }
+    },
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "¿Ya terminaste de unificar el formato de los datos?",
+          "Entonces deberíamos poder cargarlo en el modelo sin problemas.",
+          "Perfecto, pasaré al siguiente paso."
+        ],
+        "B": [
+          "Sí, todos los formatos de columna están alineados.",
+          "Sí, el preprocesamiento ya no será un problema.",
+          "Perfecto, activar é también el registro de ejecución."
+        ]
+      }
+    },
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "¿Qué te parece usar un conjunto de prueba más grande esta vez?",
+          "Una muestra más grande aumentará la fiabilidad.",
+          "¿Qué tal si duplicamos el tamaño?"
+        ],
+        "B": [
+          "Buena idea, necesitábamos más datos.",
+          "Sí, eso mejorará la confianza en los resultados.",
+          "Duplicarlo suena bien. Me encargo de eso."
+        ]
+      }
+    },
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Viendo la línea de tendencia, parece que habrá un cambio fuerte la próxima semana.",
+          "Parece caer bruscamente después del fin de semana.",
+          "Deberíamos preparar una estrategia antes de que eso pase."
+        ],
+        "B": [
+          "Eso fue lo que más me llamó la atención.",
+          "Sí, la curva de predicción cambia drásticamente allí.",
+          "Bien, prepararé un primer borrador de estrategia para mañana."
+        ]
+      }
+    },
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "¿Salió bien la verificación de precisión del modelo esta vez?",
+          "Ojalá que el margen de error haya disminuido respecto a la última vez.",
+          "¿Pasamos a la verificación final?"
+        ],
+        "B": [
+          "Sí, estuvo mucho más estable.",
+          "El error bajó bastante, así que el modelo parece más confiable.",
+          "De acuerdo, yo me encargo del resto de verificaciones."
+        ]
+      }
+    },
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "¿Actualizaste también la visualización del panel de control?",
+          "Sería bueno añadir un flujo de usuarios esta vez.",
+          "Revisaré la versión actualizada en cuanto esté lista."
+        ],
+        "B": [
+          "¡Sí! Todos los indicadores principales ya están incluidos.",
+          "Perfecto, añadiré de inmediato la vista del flujo de usuarios.",
+          "Te la compartiré en cuanto esté terminada."
+        ]
+      }
+    },
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Solo falta realizar la verificación final de la calidad de los datos.",
+          "Mientras se gestionen los valores faltantes, no habrá problemas.",
+          "Te avisaré cuando termine la verificación."
+        ],
+        "B": [
+          "Exacto, ¡ya casi terminamos!",
+          "Sí, cuando resolvamos los valores faltantes, quedará todo sólido.",
+          "Perfecto, esperaré tus resultados."
+        ]
+      }
+    }
+  ]
+}
+

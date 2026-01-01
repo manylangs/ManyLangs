@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "a2",
+    "id": "005"
+  },
+  "title": {
+    "target": "-고 (연결)",
+    "en": "-고 (And / Linking)",
+    "es": "-고 (Y / Conexión)",
+    "fr": "-고 (Et / Liaison)",
+    "pt": "-고 (E / Ligação)"
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "-고는 두 가지 이상의 행동이나 상태를 자연스럽게 이어 줄 때 사용합니다.",
+        "en": "The form -고 is used to naturally connect two or more actions or states.",
+        "es": "La forma -고 se usa para conectar de manera natural dos o más acciones o estados.",
+        "fr": "La forme -고 est utilisée pour relier naturellement deux actions ou états.",
+        "pt": "A forma -고 é usada para ligar naturalmente duas ou mais ações ou estados."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "앞 문장과 뒤 문장이 같은 주제로 연결될 때 자주 사용됩니다.",
+        "en": "It is often used when the first and second clauses are related to the same topic.",
+        "es": "Se usa a menudo cuando las dos oraciones están relacionadas con el mismo tema.",
+        "fr": "Elle est souvent employée lorsque les deux propositions concernent le même sujet.",
+        "pt": "É usada quando as duas orações estão relacionadas com o mesmo tema."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "시간의 흐름에 따라 순서대로 일어난 행동을 말할 때 쓰입니다.",
+        "en": "It is used to describe actions that happened in order over time.",
+        "es": "Se utiliza para describir acciones que ocurrieron en orden con el paso del tiempo.",
+        "fr": "Elle permet de décrire des actions qui se sont déroulées dans un ordre temporel.",
+        "pt": "Descreve ações que aconteceram por ordem no tempo."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "사람의 감정이나 상태가 이어질 때도 사용할 수 있습니다.",
+        "en": "It can also be used when emotions or conditions continue.",
+        "es": "También puede usarse cuando continúan emociones o estados.",
+        "fr": "Elle peut également être utilisée lorsque des émotions ou des états se poursuivent.",
+        "pt": "Também pode ser usada quando emoções ou estados continuam."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "형용사와 동사 모두에 붙여 사용할 수 있습니다.",
+        "en": "It can be attached to both verbs and adjectives.",
+        "es": "Puede unirse tanto a verbos como a adjetivos.",
+        "fr": "Elle peut s’attacher aussi bien aux verbes qu’aux adjectifs.",
+        "pt": "Pode ser anexada a verbos e a adjectivos."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "간단한 나열이나 정보 연결에도 적합합니다.",
+        "en": "It is suitable for simple listing or connecting information.",
+        "es": "Es adecuada para enumeraciones simples o para conectar información.",
+        "fr": "Elle convient pour des énumérations simples ou pour relier des informations.",
+        "pt": "É adequada para enumerações simples ou para ligar informações."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "반복적인 행동을 나열할 때 자연스럽습니다.",
+        "en": "It is natural when listing repeated actions.",
+        "es": "Es natural al enumerar acciones repetidas.",
+        "fr": "Elle est naturelle pour l’énumération d’actions répétées.",
+        "pt": "É natural ao enumerar ações repetidas."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "비슷한 성격의 문장을 이어 말할 때 자주 쓰입니다.",
+        "en": "It is often used to connect sentences with similar meanings.",
+        "es": "Se utiliza a menudo para unir oraciones con significados similares.",
+        "fr": "Elle est souvent utilisée pour relier des phrases ayant des significations similaires.",
+        "pt": "É frequentemente usada para ligar frases com significados semelhantes."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "앞 문장의 결과가 뒤 문장 내용에 영향을 줄 때 쓰이기도 합니다.",
+        "en": "It can be used when the first clause influences the situation in the next clause.",
+        "es": "Puede usarse cuando la primera oración influye en la situación de la siguiente.",
+        "fr": "Elle peut être utilisée lorsque la première proposition influence la situation de la suivante.",
+        "pt": "Pode ser usada quando a primeira oração influencia a situação da seguinte."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "구어체와 문어체 모두에서 가장 널리 쓰이는 연결 표현입니다.",
+        "en": "It is one of the most commonly used linking forms in both spoken and written language.",
+        "es": "Es una de las formas de conexión más comunes tanto en el lenguaje hablado como en el escrito.",
+        "fr": "C’est l’une des formes de liaison les plus courantes, tant à l’oral qu’à l’écrit.",
+        "pt": "É uma das formas de ligação mais comuns tanto na fala como na escrita."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "학교에 가고 친구를 만났어요.",
+        "en": "I went to school and met a friend.",
+        "es": "Fui a la escuela y me encontré con un amigo.",
+        "fr": "Je suis allé à l’école et j’ai rencontré un ami.",
+        "pt": "Fui à escola e encontrei um amigo."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "밥을 먹고 산책했어요.",
+        "en": "I ate and took a walk.",
+        "es": "Comí y di un paseo.",
+        "fr": "J’ai mangé et j’ai fait une promenade.",
+        "pt": "Comi e dei um passeio."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "샤워하고 잠을 잤어요.",
+        "en": "I took a shower and went to sleep.",
+        "es": "Me duché y me fui a dormir.",
+        "fr": "J’ai pris une douche et je me suis couché.",
+        "pt": "Tomei um duche e fui dormir."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "책을 읽고 메모를 했어요.",
+        "en": "I read a book and took notes.",
+        "es": "Leí un libro y tomé notas.",
+        "fr": "J’ai lu un livre et j’ai pris des notes.",
+        "pt": "Li um livro e tirei apontamentos."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "빵을 사고 우유도 샀어요.",
+        "en": "I bought bread and also bought milk.",
+        "es": "Compré pan y también compré leche.",
+        "fr": "J’ai acheté du pain et aussi du lait.",
+        "pt": "Comprei pão e também comprei leite."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "버스를 타고 회사에 갔어요.",
+        "en": "I took the bus and went to work.",
+        "es": "Tomé el autobús y fui al trabajo.",
+        "fr": "J’ai pris le bus et je suis allé au travail.",
+        "pt": "Apanhei o autocarro e fui para o trabalho."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "청소하고 빨래했어요.",
+        "en": "I cleaned and did the laundry.",
+        "es": "Limpié y lavé la ropa.",
+        "fr": "J’ai fait le ménage et la lessive.",
+        "pt": "Limpei a casa e lavei a roupa."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "공부하고 쉬었어요.",
+        "en": "I studied and took a rest.",
+        "es": "Estudié y descansé.",
+        "fr": "J’ai étudié et je me suis reposé.",
+        "pt": "Estudei e descansei."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "영화를 보고 집에 갔어요.",
+        "en": "I watched a movie and went home.",
+        "es": "Vi una película y me fui a casa.",
+        "fr": "J’ai regardé un film et je suis rentré chez moi.",
+        "pt": "Vi um filme e fui para casa."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "식사하고 바로 나왔어요.",
+        "en": "I ate and went out right away.",
+        "es": "Comí y salí enseguida.",
+        "fr": "J’ai mangé et je suis sorti tout de suite.",
+        "pt": "Comi e saí logo de seguida."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "운동하고 씻었어요.",
+        "en": "I exercised and washed up.",
+        "es": "Hice ejercicio y me lavé.",
+        "fr": "Je me suis entraîné et je me suis lavé.",
+        "pt": "Fiz exercício e tomei banho."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "산책하고 사진을 찍었어요.",
+        "en": "I took a walk and took some photos.",
+        "es": "Di un paseo y saqué algunas fotos.",
+        "fr": "J’ai fait une promenade et j’ai pris quelques photos.",
+        "pt": "Dei um passeio e tirei algumas fotos."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "아침에 일어나고 창문을 열었어요.",
+        "en": "I woke up in the morning and opened the window.",
+        "es": "Me desperté por la mañana y abrí la ventana.",
+        "fr": "Je me suis réveillé le matin et j’ai ouvert la fenêtre.",
+        "pt": "Acordei de manhã e abri a janela."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "커피를 마시고 컴퓨터를 켰어요.",
+        "en": "I drank coffee and turned on the computer.",
+        "es": "Tomé café y encendí el ordenador.",
+        "fr": "J’ai bu un café et j’ai allumé l’ordinateur.",
+        "pt": "Bebi café e liguei o computador."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "회의를 하고 점심을 먹었어요.",
+        "en": "I had a meeting and then ate lunch.",
+        "es": "Tuve una reunión y luego almorcé.",
+        "fr": "J’ai eu une réunion puis j’ai déjeuné.",
+        "pt": "Tive uma reunião e depois almocei."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "버스를 타고 강을 건넜어요.",
+        "en": "I took the bus and crossed the river.",
+        "es": "Tomé el autobús y crucé el río.",
+        "fr": "J’ai pris le bus et j’ai traversé la rivière.",
+        "pt": "Apanhei o autocarro e atravessei o rio."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "옷을 사고 선물을 골랐어요.",
+        "en": "I bought clothes and picked a gift.",
+        "es": "Compré ropa y elegí un regalo.",
+        "fr": "J’ai acheté des vêtements et choisi un cadeau.",
+        "pt": "Comprei roupa e escolhi um presente."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "밥을 먹고 잠깐 쉬었어요.",
+        "en": "I ate and rested for a moment.",
+        "es": "Comí y descansé un momento.",
+        "fr": "J’ai mangé puis je me suis reposé un moment.",
+        "pt": "Comi e descansei um momento."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "가방을 찾고 택시에 탔어요.",
+        "en": "I found my bag and got in a taxi.",
+        "es": "Encontré mi bolso y cogí un taxi.",
+        "fr": "J’ai trouvé mon sac et j’ai pris un taxi.",
+        "pt": "Encontrei a minha mala e apanhei um táxi."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "수업 듣고 도서관에서 공부했어요.",
+        "en": "I attended class and studied in the library.",
+        "es": "Asistí a clase y estudié en la biblioteca.",
+        "fr": "J’ai assisté au cours et j’ai étudié à la bibliothèque.",
+        "pt": "Assisti à aula e estudei na biblioteca."
+      }
+    }
+  ]
+}

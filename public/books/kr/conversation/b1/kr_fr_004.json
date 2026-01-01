@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "004",
+  "cefr": "B1",
+  "title_fr": "Devoirs et remise",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Tu as rendu le devoir ?,",
+    "Quelle est la date limite ?,",
+    "Le fichier s’est bien chargé ?,",
+    "Faut-il un format particulier ?,",
+    "Puis-je le soumettre à nouveau ?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Tu as rendu le devoir ?",
+          "J’ai téléchargé le mien, mais je ne suis pas sûre qu’il se soit envoyé correctement.",
+          "Je me demande aussi si j’ai bien nommé le fichier."
+        ],
+        "B": [
+          "Oui, je l’ai rendu tout à l’heure.",
+          "Si le fichier s’est chargé sans erreur, cela devrait aller.",
+          "Mais si tu hésites, ouvre-le encore une fois pour vérifier — ça évite les surprises."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "La date limite, c’est bien ce soir à 23h59 ?",
+          "J’ai l’impression que le professeur a dit autre chose en cours.",
+          "Tu as revu l’annonce ?"
+        ],
+        "B": [
+          "Oui, l’annonce indique clairement 23h59.",
+          "L’explication en cours était peut-être un peu confuse.",
+          "Mais c’est l’annonce officielle qu’il faut suivre, donc respecte cette heure-là."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "On doit bien rendre le fichier en PDF, n’est-ce pas ?",
+          "Je l’ai d’abord fait sous Word, puis converti.",
+          "J’espère que rien ne s’est déformé pendant la conversion."
+        ],
+        "B": [
+          "Oui, le format demandé est le PDF.",
+          "En général, c’est correct, mais les tableaux ou images peuvent parfois bouger.",
+          "Le mieux est d’ouvrir le PDF avant de le rendre pour être sûre."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Comment as-tu formaté ta bibliographie ?",
+          "Je n’étais pas certaine s’il fallait du APA ou du MLA.",
+          "Le professeur avait précisé quelque chose ?"
+        ],
+        "B": [
+          "Oui, il a demandé d’utiliser le style APA.",
+          "Je me souviens que c’était mentionné dans les diapositives de la première semaine.",
+          "Si tu veux, je peux t’envoyer l’exemple que j’ai rédigé."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Faut-il aussi téléverser un brouillon ?",
+          "La formulation dans l’annonce n’était pas très claire.",
+          "Pour l’instant, je n’ai mis en ligne que la version finale."
+        ],
+        "B": [
+          "Le brouillon est optionnel, donc tu n’as pas besoin de le rendre.",
+          "La version finale suffit pour répondre aux consignes.",
+          "Mais si tu veux être certaine, tu peux toujours envoyer un message au professeur."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Tu sais si on peut renvoyer le devoir ?",
+          "J’ai vu une faute juste après l’avoir soumis.",
+          "Je devrais le supprimer et remettre une version corrigée ?"
+        ],
+        "B": [
+          "Oui, la nouvelle soumission est autorisée.",
+          "Le système garde uniquement le dernier fichier envoyé, donc aucun souci.",
+          "Si tu as repéré une faute, c’est mieux de corriger et de renvoyer."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Doit-on aussi téléverser les diapositives de présentation ?",
+          "L’annonce disait seulement de rendre la partie écrite.",
+          "Mais il faudra bien préparer des diapositives pour l’oral, non ?"
+        ],
+        "B": [
+          "Non, les diapositives ne sont pas à remettre à l’avance.",
+          "Le professeur a précisé qu’il suffit de les montrer le jour de la présentation.",
+          "Mais les préparer tôt rendra le travail plus facile ensuite."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Tu as vu la grille d’évaluation que le professeur a publiée ?",
+          "Elle semble plus détaillée que la précédente.",
+          "Tu crois que cela changera beaucoup la note ?"
+        ],
+        "B": [
+          "Oui, je l’ai regardée tout à l’heure.",
+          "Les critères sont plus précis, mais la pondération n’a presque pas changé.",
+          "Le professeur a insisté sur l’importance de la clarté du contenu."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Qui devait s’occuper de rendre le devoir de groupe ?",
+          "On n’a pas encore fini d’assembler notre partie du fichier.",
+          "Tu penses que ce sera rendu ce soir ?"
+        ],
+        "B": [
+          "C’est Minji qui doit le soumettre.",
+          "J’ai entendu dire qu’elle finalisait le fichier en ce moment.",
+          "Elle a dit qu’elle l’enverrait avant ce soir, donc on devrait être tranquilles."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Ouf… j’ai enfin terminé le devoir !",
+          "Quand j’ai cliqué sur ‘soumettre’, j’ai senti tout le stress disparaître.",
+          "Je pense que j’ai bien mérité une pause maintenant."
+        ],
+        "B": [
+          "Bravo, tu as vraiment bien travaillé.",
+          "Je comprends tout à fait ce soulagement après une grosse remise.",
+          "Repose-toi bien aujourd’hui et reprends tranquillement demain."
+        ]
+      }
+    }
+  ]
+}
+

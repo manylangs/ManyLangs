@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "b1",
+    "id": "005"
+  },
+  "title": {
+    "target": "B1 — 사회•학교•기술 어휘",
+    "en": "B1 — Social, School, and Technology Vocabulary",
+    "es": "B1 — Vocabulario social, escolar y tecnológico",
+    "fr": "B1 — Vocabulaire social, scolaire et technologique",
+    "pt": "B1 — Vocabulário social, escolar e tecnológico"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "전공",
+        "en": "major",
+        "es": "especialidad",
+        "fr": "spécialité",
+        "pt": "curso / área de especialização"
+      },
+      "examples": [
+        {
+          "target": "저는 심리학을 전공하고 있어요.",
+          "en": "I am majoring in psychology.",
+          "es": "Me estoy especializando en psicología.",
+          "fr": "Je me spécialise en psychologie.",
+          "pt": "Estou me especializando em psicologia."
+        },
+        {
+          "target": "전공을 바꿀까 고민 중이에요.",
+          "en": "I am thinking about changing my major.",
+          "es": "Estoy pensando en cambiar de especialidad.",
+          "fr": "J'envisage de changer de spécialité.",
+          "pt": "Estou pensando em mudar de curso."
+        },
+        {
+          "target": "전공 수업이 너무 많아요.",
+          "en": "There are too many major-related classes.",
+          "es": "Tengo demasiadas clases de la especialidad.",
+          "fr": "J'ai trop de cours liés à ma spécialité.",
+          "pt": "Tenho muitas aulas relacionadas ao meu curso."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "학과",
+        "en": "department (academic)",
+        "es": "departamento académico",
+        "fr": "département universitaire",
+        "pt": "departamento acadêmico"
+      },
+      "examples": [
+        {
+          "target": "우리 학과는 학생 수가 많아요.",
+          "en": "Our department has many students.",
+          "es": "Nuestro departamento tiene muchos estudiantes.",
+          "fr": "Notre département universitaire compte beaucoup d'étudiants.",
+          "pt": "Nosso departamento tem muitos estudantes."
+        },
+        {
+          "target": "학과 대표가 회의를 준비하고 있어요.",
+          "en": "The department representative is preparing a meeting.",
+          "es": "El representante del departamento está preparando una reunión.",
+          "fr": "Le représentant du département prépare une réunion.",
+          "pt": "O representante do departamento está preparando uma reunião."
+        },
+        {
+          "target": "학과 사무실에 서류를 제출해야 해요.",
+          "en": "You need to submit the documents to the department office.",
+          "es": "Debes entregar los documentos en la oficina del departamento.",
+          "fr": "Vous devez soumettre les documents au bureau du département.",
+          "pt": "Você deve entregar os documentos na secretaria do departamento."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "등록금",
+        "en": "tuition fee",
+        "es": "matrícula",
+        "fr": "frais de scolarité",
+        "pt": "mensalidade / taxa de matrícula"
+      },
+      "examples": [
+        {
+          "target": "등록금 납부 기간이 시작됐어요.",
+          "en": "The tuition payment period has started.",
+          "es": "El período de pago de la matrícula ha comenzado.",
+          "fr": "La période de paiement des frais de scolarité a commencé.",
+          "pt": "O período de pagamento da mensalidade começou."
+        },
+        {
+          "target": "등록금이 많이 올라서 고민이에요.",
+          "en": "I’m worried because the tuition fee increased a lot.",
+          "es": "Estoy preocupado porque la matrícula subió mucho.",
+          "fr": "Je suis inquiet car les frais de scolarité ont beaucoup augmenté.",
+          "pt": "Estou preocupado porque a taxa de matrícula aumentou muito."
+        },
+        {
+          "target": "등록금을 분할 납부할 수 있어요.",
+          "en": "You can pay the tuition fee in installments.",
+          "es": "Puedes pagar la matrícula en cuotas.",
+          "fr": "Vous pouvez payer les frais de scolarité en plusieurs fois.",
+          "pt": "Você pode pagar a mensalidade em parcelas."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "서류",
+        "en": "document",
+        "es": "documento",
+        "fr": "document",
+        "pt": "documento"
+      },
+      "examples": [
+        {
+          "target": "서류를 제출해야 해요.",
+          "en": "You need to submit the documents.",
+          "es": "Debes entregar los documentos.",
+          "fr": "Vous devez soumettre les documents.",
+          "pt": "Você deve entregar os documentos."
+        },
+        {
+          "target": "필요한 서류가 아직 준비되지 않았어요.",
+          "en": "The required documents are not ready yet.",
+          "es": "Los documentos necesarios aún no están listos.",
+          "fr": "Les documents requis ne sont pas encore prêts.",
+          "pt": "Os documentos necessários ainda não estão prontos."
+        },
+        {
+          "target": "서류를 다시 출력했어요.",
+          "en": "I reprinted the documents.",
+          "es": "Reimprimí los documentos.",
+          "fr": "J'ai réimprimé les documents.",
+          "pt": "Reimprimi os documentos."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "장학금",
+        "en": "scholarship",
+        "es": "beca",
+        "fr": "bourse",
+        "pt": "bolsa de estudos"
+      },
+      "examples": [
+        {
+          "target": "장학금을 신청했어요.",
+          "en": "I applied for a scholarship.",
+          "es": "Solicité una beca.",
+          "fr": "J'ai demandé une bourse.",
+          "pt": "Eu pedi uma bolsa de estudos."
+        },
+        {
+          "target": "장학금을 받게 되었어요.",
+          "en": "I received a scholarship.",
+          "es": "Recibí una beca.",
+          "fr": "J'ai obtenu une bourse.",
+          "pt": "Eu recebi uma bolsa de estudos."
+        },
+        {
+          "target": "장학금 기준이 까다로워요.",
+          "en": "The scholarship requirements are strict.",
+          "es": "Los requisitos de la beca son estrictos.",
+          "fr": "Les critères de la bourse sont stricts.",
+          "pt": "Os critérios da bolsa são rigorosos."
+        }
+      ]
+    }
+  ]
+}

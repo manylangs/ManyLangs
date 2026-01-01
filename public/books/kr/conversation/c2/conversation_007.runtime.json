@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "c2",
+    "id": "007"
+  },
+  "title": {
+    "target": "회사 규정",
+    "en": "Company Policies",
+    "es": "Políticas de la empresa",
+    "fr": "Politiques de l’entreprise",
+    "pt": "Políticas da empresa"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 새로 올라온 회사 규정 공지 보셨어요?",
+            "en": "Did you see the new company policy notice that was posted?",
+            "es": "¿Viste el nuevo aviso sobre las políticas de la empresa?",
+            "fr": "Tu as vu l’avis de mise à jour des politiques de l’entreprise ?",
+            "pt": "Viste o novo aviso sobre as políticas da empresa?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "봤어요! 내용이 꽤 많이 업데이트됐더라고요.",
+            "en": "Yeah, I saw it! A lot of things were updated.",
+            "es": "Sí, lo vi. Se actualizaron muchas cosas.",
+            "fr": "Oui, je l’ai vu ! Il y a eu beaucoup de mises à jour.",
+            "pt": "Sim, vi! Foram feitas muitas atualizações."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "특히 근무시간 관련 부분이 좀 바뀌었더라고요.",
+            "en": "The section on working hours changed quite a bit.",
+            "es": "La parte sobre el horario laboral cambió bastante.",
+            "fr": "La partie sur les horaires de travail a pas mal changé.",
+            "pt": "A parte sobre o horário de trabalho mudou bastante."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 그 부분이 제일 눈에 띄었어요.",
+            "en": "Right, that part stood out the most.",
+            "es": "Sí, esa sección fue la que más llamó la atención.",
+            "fr": "Oui, cette section était vraiment la plus remarquable.",
+            "pt": "Pois, essa secção foi a que mais chamou a atenção."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 적용 시점만 다시 확인하면 될 것 같아요.",
+            "en": "I just need to double-check the effective date.",
+            "es": "Solo necesito confirmar la fecha de aplicación.",
+            "fr": "Je dois juste vérifier la date d’application.",
+            "pt": "Só preciso confirmar a data de entrada em vigor."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요, 적용 시점 정리해서 다시 공유드릴게요.",
+            "en": "Okay, I’ll整理the effective dates and share them with you.",
+            "es": "De acuerdo, recopilaré las fechas de aplicación y te las enviaré.",
+            "fr": "D’accord, je vais rassembler les dates d’application et te les envoyer.",
+            "pt": "Certo, vou organizar as datas e partilhá-las contigo."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이번 보안 규정 강화된 거 확인하셨어요?",
+            "en": "Did you notice the strengthened security policy?",
+            "es": "¿Notaste que reforzaron la política de seguridad?",
+            "fr": "Tu as remarqué le renforcement de la politique de sécurité ?",
+            "pt": "Notaste que reforçaram a política de segurança?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 저도 아침에 보고 알았어요.",
+            "en": "Yes, I saw the announcement this morning.",
+            "es": "Sí, vi el anuncio esta mañana.",
+            "fr": "Oui, j’ai vu l’annonce ce matin.",
+            "pt": "Sim, vi o anúncio esta manhã."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "암호 변경 주기가 더 짧아졌더라고요.",
+            "en": "The password update cycle got even shorter.",
+            "es": "El ciclo de cambio de contraseña ahora es más corto.",
+            "fr": "Le cycle de changement de mot de passe est devenu encore plus court.",
+            "pt": "O ciclo de alteração de palavra-passe ficou ainda mais curto."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 보안 요구 수준이 전체적으로 올라갔어요.",
+            "en": "Yeah, the overall security requirements went up.",
+            "es": "Sí, los requisitos de seguridad aumentaron en general.",
+            "fr": "Oui, les exigences de sécurité ont augmenté globalement.",
+            "pt": "Sim, os requisitos de segurança aumentaram no geral."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 팀원들한테도 오늘 중으로 안내할게요.",
+            "en": "I’ll notify the team about it later today.",
+            "es": "Avisaré al equipo sobre esto hoy mismo.",
+            "fr": "Je vais prévenir l’équipe aujourd’hui.",
+            "pt": "Vou avisar a equipa sobre isso ainda hoje."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요, 안내 자료도 같이 보내드릴게요.",
+            "en": "Great, I’ll send you the guidance materials too.",
+            "es": "Perfecto, te enviaré también el material de orientación.",
+            "fr": "Très bien, je t’enverrai aussi les documents de consignes.",
+            "pt": "Perfeito, envio-te também o material de orientação."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "출장 규정이 조금 바뀌었다고 들었어요.",
+            "en": "I heard the business trip policy changed a little.",
+            "es": "Me dijeron que la política de viajes cambió un poco.",
+            "fr": "On m’a dit que la politique de déplacement a changé un peu.",
+            "pt": "Ouvi dizer que a política de deslocações mudou um pouco."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 새 기준이 이번 달부터 적용돼요.",
+            "en": "That’s right. The new standard applies starting this month.",
+            "es": "Exacto, el nuevo estándar entra en vigor este mes.",
+            "fr": "C’est exact. Le nouveau standard s’applique dès ce mois-ci.",
+            "pt": "É verdade. O novo padrão aplica-se já este mês."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "특히 숙박비 기준이 달라졌다고 하더라고요.",
+            "en": "Apparently the accommodation rates were updated.",
+            "es": "Parece que actualizaron las tarifas de alojamiento.",
+            "fr": "Les tarifs d’hébergement auraient été mis à jour.",
+            "pt": "Parece que atualizaram as tarifas de alojamento."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 숙박비 항목이 제일 크게 바뀌었어요.",
+            "en": "Yes, the accommodation part changed the most.",
+            "es": "Sí, la parte de alojamiento fue la que más cambió.",
+            "fr": "Oui, la partie sur l’hébergement est celle qui a le plus évolué.",
+            "pt": "Sim, a parte do alojamento foi a que mais mudou."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그 기준표만 다시 확인하면 문제 없을 것 같아요.",
+            "en": "I just need to check the new rate table.",
+            "es": "Solo necesito revisar la nueva tabla de tarifas.",
+            "fr": "Je dois juste vérifier le nouveau tableau des tarifs.",
+            "pt": "Só preciso rever a nova tabela de valores."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "제가 최신 기준표 바로 공유해드릴게요.",
+            "en": "I’ll share the updated rate table with you.",
+            "es": "Te compartiré la tabla actualizada.",
+            "fr": "Je vais te partager le tableau mis à jour.",
+            "pt": "Eu partilho contigo a tabela atualizada."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "휴가 규정 다시 읽어보셨나요?",
+            "en": "Did you review the revised leave policy?",
+            "es": "¿Revisaste la política de permisos actualizada?",
+            "fr": "Tu as relu la politique de congés révisée ?",
+            "pt": "Revisaste a política de licenças atualizada?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "읽어봤어요! 설명이 더 깔끔해졌더라고요.",
+            "en": "Yeah, I read it! The explanations are much cleaner now.",
+            "es": "Sí, la revisé. Las explicaciones están mucho más claras.",
+            "fr": "Oui, je l’ai lue ! Les explications sont bien plus nettes maintenant.",
+            "pt": "Sim, revisei! As explicações estão muito mais objetivas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "특별휴가 사용 조건이 조금 더 명확해진 것 같아요.",
+            "en": "The eligibility for special leave seems a lot clearer now.",
+            "es": "Las condiciones para permisos especiales son mucho más claras.",
+            "fr": "Les conditions du congé spécial sont beaucoup plus claires.",
+            "pt": "As condições para licença especial estão muito mais claras agora."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 조건이 예전보다 이해하기 쉬워졌어요.",
+            "en": "Right, the conditions are easier to understand than before.",
+            "es": "Sí, ahora es más fácil entender las condiciones.",
+            "fr": "Oui, les conditions sont plus simples à comprendre qu’avant.",
+            "pt": "Pois, agora as condições são mais fáceis de perceber."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그 부분만 팀에 설명해주면 좋을 것 같아요.",
+            "en": "It’d be good to explain that part to the team.",
+            "es": "Sería bueno explicárselo al equipo.",
+            "fr": "Ce serait bien de l’expliquer à l’équipe.",
+            "pt": "Acho que devíamos explicar isso à equipa."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그럼 제가 정리해서 팀 채널에 올릴게요.",
+            "en": "I’ll整理that section and post it in the team channel.",
+            "es": "De acuerdo, prepararé un resumen y lo publicaré en el canal del equipo.",
+            "fr": "D’accord, je préparerai un résumé pour le canal de l’équipe.",
+            "pt": "Certo, preparo um resumo e coloco no canal da equipa."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "문서 보존 규정이 강화됐다는 말 들으셨어요?",
+            "en": "Did you hear that the document retention policy got stricter?",
+            "es": "¿Escuchaste que la política de conservación de documentos es ahora más estricta?",
+            "fr": "Tu as entendu que la politique de conservation des documents est devenue plus stricte ?",
+            "pt": "Ouviste que a política de retenção de documentos ficou mais rígida?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 관련해서 안내 메일도 왔어요.",
+            "en": "Yeah, we even received a separate reminder email.",
+            "es": "Sí, incluso recibimos un correo recordatorio.",
+            "fr": "Oui, on a même reçu un e-mail de rappel.",
+            "pt": "Sim, até recebemos um e-mail de lembrete sobre isso."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "특히 외부 공유 관련 내용이 강조됐더라고요.",
+            "en": "The external-sharing section was emphasized a lot.",
+            "es": "La sección sobre compartir información externamente fue muy enfatizada.",
+            "fr": "La section sur le partage externe a été fortement mise en avant.",
+            "pt": "A parte sobre partilha externa foi bastante destacada."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 외부 공유는 더 엄격해졌어요.",
+            "en": "Right, external sharing is regulated more tightly now.",
+            "es": "Exacto, compartir información externa está mucho más regulado.",
+            "fr": "Exact, le partage externe est beaucoup plus réglementé maintenant.",
+            "pt": "Exato, a partilha externa está muito mais regulada agora."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 우리 프로젝트도 점검해봐야겠네요.",
+            "en": "Maybe we should review our project files as well.",
+            "es": "Tal vez deberíamos revisar también los archivos de nuestro proyecto.",
+            "fr": "On devrait peut-être revoir les fichiers de notre projet.",
+            "pt": "Talvez devêssemos rever também os ficheiros do projeto."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요, 관련 자료 모아서 같이 점검해봐요.",
+            "en": "Okay, let’s gather the related files and review them together.",
+            "es": "Perfecto, reunamos los documentos y revisémoslos juntos.",
+            "fr": "Très bien, rassemblons les documents et faisons une vérification ensemble.",
+            "pt": "Ótimo, vamos reunir os documentos e fazer a revisão juntos."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "사내 메신저 사용 규정이 업데이트됐다고 하던데요.",
+            "en": "I heard the internal messenger policy was updated too.",
+            "es": "Escuché que también actualizaron la política del mensajero interno.",
+            "fr": "J’ai entendu que la politique d’utilisation du messager interne a été mise à jour.",
+            "pt": "Ouvi que atualizaram também a política do mensageiro interno."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 이번 주부터 적용된대요.",
+            "en": "Yes, it takes effect starting this week.",
+            "es": "Sí, entra en vigor esta semana.",
+            "fr": "Oui, ça entre en vigueur cette semaine.",
+            "pt": "Sim, entra em vigor já esta semana."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "업무 외 사용이 조금 더 제한된다고 들었어요.",
+            "en": "Non-work usage is going to be more restricted.",
+            "es": "El uso no laboral estará más restringido.",
+            "fr": "L’usage non professionnel va être davantage limité.",
+            "pt": "O uso não profissional vai ser mais limitado."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "음, 사용 목적 기준이 좀 더 명확해졌어요.",
+            "en": "Yeah, the usage guidelines are much clearer now.",
+            "es": "Sí, las directrices de uso ahora están mucho más claras.",
+            "fr": "Oui, les lignes directrices sont beaucoup plus claires maintenant.",
+            "pt": "Pois, as diretrizes de utilização ficaram muito mais claras."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 사용하는 채널도 한번 정리해볼까요?",
+            "en": "Maybe we should整理the channels we use.",
+            "es": "Quizás deberíamos reorganizar los canales que usamos.",
+            "fr": "On devrait peut-être réorganiser les canaux qu’on utilise.",
+            "pt": "Talvez devêssemos reorganizar os canais que usamos."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요, 정리해서 팀에 안내할게요.",
+            "en": "Alright, I’ll整理them and notify the team.",
+            "es": "Perfecto, reorganizaré los canales y se lo comunicaré al equipo.",
+            "fr": "Parfait, je vais réorganiser tout ça et en informer l’équipe.",
+            "pt": "Perfeito, eu reorganizo os canais e aviso a equipa."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "복장 규정도 살짝 바뀌었다고 하더라고요.",
+            "en": "I heard the dress code changed a bit as well.",
+            "es": "También escuché que el código de vestimenta cambió un poco.",
+            "fr": "J’ai aussi entendu que le code vestimentaire a légèrement changé.",
+            "pt": "Ouvi dizer que o código de vestuário também mudou um pouco."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 직원들 의견 반영해서 바뀐 거래요.",
+            "en": "Same here — they said it was adjusted based on employee feedback.",
+            "es": "A mí también. Dijeron que lo ajustaron según comentarios de los empleados.",
+            "fr": "Moi aussi — apparemment, ils ont pris en compte les avis des employés.",
+            "pt": "Eu também. Disseram que foi ajustado com base no feedback dos funcionários."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "특히 금요일 캐주얼 규정이 더 유연해졌대요.",
+            "en": "Friday casual rules became more flexible.",
+            "es": "Las reglas de casual friday ahora son más flexibles.",
+            "fr": "Les règles du vendredi décontracté sont devenues plus souples.",
+            "pt": "As regras de sexta-feira casual ficaram mais flexíveis."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 금요일은 훨씬 자유로워졌죠.",
+            "en": "Yeah, Fridays feel a lot freer now.",
+            "es": "Sí, los viernes ahora se sienten mucho más relajados.",
+            "fr": "Oui, les vendredis sont bien plus détendus maintenant.",
+            "pt": "Sim, as sextas-feiras estão bem mais descontraídas agora."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 이번 변화가 꽤 괜찮은 것 같아요.",
+            "en": "Honestly, I like this change.",
+            "es": "La verdad, me gusta este cambio.",
+            "fr": "Franchement, je trouve que c’est une bonne évolution.",
+            "pt": "Sinceramente, acho esta mudança positiva."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그럼 이번 주 회의 때 간단히 안내할게요.",
+            "en": "I’ll mention it briefly in this week’s meeting.",
+            "es": "Lo mencionaré brevemente en la reunión de esta semana.",
+            "fr": "Je l’annoncerai rapidement lors de la réunion de cette semaine.",
+            "pt": "Vou mencionar isso rapidamente na reunião desta semana."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "개발팀 업무 프로세스 규정도 바뀐 거 아시죠?",
+            "en": "Did you hear the development workflow guidelines changed too?",
+            "es": "¿Viste que cambiaron las directrices del flujo de trabajo de desarrollo?",
+            "fr": "Tu as vu que les directives du flux de travail développement ont changé ?",
+            "pt": "Viste que as diretrizes do fluxo de trabalho de desenvolvimento mudaram?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 아침 회의에서 공지 나왔어요.",
+            "en": "Yes, they announced it in the morning meeting.",
+            "es": "Sí, lo anunciaron en la reunión de la mañana.",
+            "fr": "Oui, ça a été annoncé à la réunion du matin.",
+            "pt": "Sim, anunciaram isso na reunião da manhã."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "코드 리뷰 기준이 좀 더 상세해졌더라고요.",
+            "en": "The code-review standards got more detailed.",
+            "es": "Los criterios de revisión de código ahora son más detallados.",
+            "fr": "Les critères de revue de code sont devenus plus détaillés.",
+            "pt": "Os critérios de revisão de código ficaram mais detalhados."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 리뷰 기준이 훨씬 구체적이에요.",
+            "en": "Right, the review criteria are much more specific now.",
+            "es": "Sí, los criterios son mucho más específicos ahora.",
+            "fr": "Oui, les critères sont beaucoup plus précis maintenant.",
+            "pt": "Pois, os critérios agora estão muito mais específicos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그 기준대로 문서도 다시 맞춰볼게요.",
+            "en": "I’ll update our documents to match the new standards.",
+            "es": "Actualizaré nuestra documentación según las nuevas directrices.",
+            "fr": "Je vais mettre nos documents à jour selon les nouvelles directives.",
+            "pt": "Vou atualizar a nossa documentação de acordo com as novas diretrizes."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요, 문서 정리되면 바로 공유해주세요.",
+            "en": "Great, share the updated docs with me once you’re done.",
+            "es": "Perfecto, compárteme la versión actualizada cuando la tengas lista.",
+            "fr": "Très bien, partage-moi la version mise à jour quand tu auras fini.",
+            "pt": "Perfeito, partilha comigo a versão atualizada quando estiver pronta."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "교육 참여 규정이 새롭게 정비됐다고 들었어요.",
+            "en": "I heard the training-participation policy was reorganized.",
+            "es": "Me dijeron que reorganizaron la política de participación en capacitaciones.",
+            "fr": "On m’a dit que la politique de participation aux formations a été réorganisée.",
+            "pt": "Ouvi dizer que reorganizaram a política de participação em formações."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 올해부터 적용된대요.",
+            "en": "Yes, the new rule applies starting this year.",
+            "es": "Sí, la nueva regla se aplica desde este año.",
+            "fr": "Oui, la nouvelle règle s’applique dès cette année.",
+            "pt": "Sim, a nova regra aplica-se já este ano."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "특히 필수 교육 시간이 조금 늘어난 것 같아요.",
+            "en": "It seems the required training hours increased a bit.",
+            "es": "Parece que aumentaron un poco las horas obligatorias.",
+            "fr": "Le nombre d’heures obligatoires aurait augmenté.",
+            "pt": "Parece que o número de horas obrigatórias aumentou um pouco."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "필수 시간이 늘긴 했지만 내용이 더 좋아졌어요.",
+            "en": "The required hours did increase, but the content improved too.",
+            "es": "Las horas aumentaron, pero el contenido ahora es mejor.",
+            "fr": "Les heures ont augmenté mais le contenu est meilleur maintenant.",
+            "pt": "As horas aumentaram, mas o conteúdo está bastante melhor."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 저도 이번 주 안에 신청해야겠네요.",
+            "en": "I guess I should sign up sometime this week.",
+            "es": "Supongo que debería inscribirme esta semana.",
+            "fr": "Je devrais probablement m’inscrire cette semaine.",
+            "pt": "Acho que devo inscrever-me ainda esta semana."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요, 신청 방법도 같이 보내드릴게요.",
+            "en": "Sure, I’ll send you the sign-up instructions as well.",
+            "es": "Perfecto, te enviaré también las instrucciones de inscripción.",
+            "fr": "D’accord, je t’enverrai aussi les instructions d’inscription.",
+            "pt": "Perfeito, envio-te também as instruções de inscrição."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "마지막으로 평가 규정만 확인하면 될 것 같아요.",
+            "en": "I think the last thing we need to check is the evaluation policy.",
+            "es": "Creo que lo último que debemos revisar es la política de evaluación.",
+            "fr": "Je crois que la dernière chose à vérifier est la politique d’évaluation.",
+            "pt": "Acho que a última coisa a rever é a política de avaliação."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 그 부분도 이번에 크게 바뀌었어요.",
+            "en": "Yes, that section changed quite a bit as well.",
+            "es": "Sí, esa sección también cambió bastante.",
+            "fr": "Oui, cette section a beaucoup changé aussi.",
+            "pt": "Sim, essa secção também mudou bastante."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "성과 기준이 좀 더 세분화된 느낌이에요.",
+            "en": "The performance criteria look more detailed now.",
+            "es": "Los criterios de rendimiento ahora son mucho más detallados.",
+            "fr": "Les critères de performance sont bien plus détaillés.",
+            "pt": "Os critérios de desempenho parecem muito mais detalhados agora."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 항목이 구체적이라 평가도 더 명확해질 거예요.",
+            "en": "Right, the detailed criteria should make evaluations clearer.",
+            "es": "Exacto, con criterios más específicos, la evaluación será más clara.",
+            "fr": "Exact, avec des critères plus précis, l’évaluation sera plus claire.",
+            "pt": "Pois, com critérios mais específicos a avaliação será mais clara."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 정리해서 내일까지 제출할게요.",
+            "en": "I’ll整理everything and submit my part by tomorrow.",
+            "es": "Organizaré todo y entregaré mi parte para mañana.",
+            "fr": "Je vais tout organiser et soumettre mon dossier d’ici demain.",
+            "pt": "Vou organizar tudo e entregar a minha parte até amanhã."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요, 내일까지 제출해주시면 됩니다!",
+            "en": "Great, please submit it by tomorrow!",
+            "es": "Perfecto, entrégalo para mañana.",
+            "fr": "Parfait, envoie-moi ton dossier d’ici demain !",
+            "pt": "Ótimo, entrega-a até amanhã, por favor."
+          }
+        }
+      ]
+    }
+  ]
+}

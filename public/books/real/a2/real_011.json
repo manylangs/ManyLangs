@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "a2",
+    "id": "011"
+  },
+  "topic": "A woman brushing her hair",
+  "keywords": [
+    "woman",
+    "brushing hair",
+    "bathroom routine",
+    "mirror",
+    "morning"
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "011.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "target": "한 여성이 아침에 준비를 하기 위해 욕실에 서 있다.",
+          "en": "A woman is standing in a bathroom getting ready for the morning.",
+          "es": "Una mujer está de pie en el baño preparándose para la mañana.",
+          "fr": "Une femme se tient dans une salle de bain pour se préparer le matin.",
+          "pt": "Uma mulher está em pé no banheiro se preparando para a manhã."
+        },
+        {
+          "target": "그녀는 거울을 자세히 보며 긴 머리를 빗고 있다.",
+          "en": "She brushes her long hair while looking closely into the mirror.",
+          "es": "Se cepilla el cabello largo mientras se mira de cerca en el espejo.",
+          "fr": "Elle brosse ses longs cheveux tout en regardant attentivement le miroir.",
+          "pt": "Ela penteia o cabelo comprido enquanto olha atentamente para o espelho."
+        },
+        {
+          "target": "거울 위의 따뜻한 조명이 그녀의 얼굴과 세면대 주변을 밝게 비춘다.",
+          "en": "A warm light above the mirror brightens her face and the sink area.",
+          "es": "Una luz cálida sobre el espejo ilumina su rostro y el área del lavabo.",
+          "fr": "Une lumière chaude au-dessus du miroir éclaire son visage et le lavabo.",
+          "pt": "Uma luz quente acima do espelho ilumina seu rosto e a área da pia."
+        },
+        {
+          "target": "그녀는 머리 양쪽을 확인하며 매끈한지 살펴본다.",
+          "en": "The woman checks the sides of her hair to make sure it looks smooth.",
+          "es": "La mujer revisa los lados de su cabello para asegurarse de que esté liso.",
+          "fr": "La femme vérifie les côtés de ses cheveux pour s’assurer qu’ils sont lisses.",
+          "pt": "A mulher verifica as laterais do cabelo para garantir que estejam lisas."
+        },
+        {
+          "target": "빗질할 때마다 머리카락이 부드럽게 움직인다.",
+          "en": "Her hair moves softly each time she pulls the brush through it.",
+          "es": "Su cabello se mueve suavemente cada vez que pasa el cepillo.",
+          "fr": "Ses cheveux bougent doucement chaque fois qu’elle passe la brosse.",
+          "pt": "Seu cabelo se move suavemente cada vez que passa a escova."
+        },
+        {
+          "target": "그녀가 루틴을 이어가는 동안 욕실은 깨끗하고 정돈된 느낌이다.",
+          "en": "The bathroom feels clean and organized as she continues her routine.",
+          "es": "El baño se siente limpio y organizado mientras continúa su rutina.",
+          "fr": "La salle de bain semble propre et bien organisée pendant qu’elle continue sa routine.",
+          "pt": "O banheiro parece limpo e organizado enquanto ela continua sua rotina."
+        }
+      ]
+    }
+  ],
+  "tts": {
+    "en": [],
+    "fr": [],
+    "es": [],
+    "pt": [],
+    "kr": []
+  }
+}

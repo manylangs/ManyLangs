@@ -1,0 +1,167 @@
+﻿{
+  "chapter_id": "001",
+  "cefr": "C1",
+  "title_en": "Job Interview",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Could you tell me a bit more about that?",
+    "Could you explain your experience in detail?",
+    "I believe I can contribute in this role,",
+    "Is there anything else you would like to know?",
+    "I look forward to hearing from you,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Hi, thanks for taking the time to meet with me today.",
+          "Sure, I can walk you through the project I worked on.",
+          "Yes, I can take on that kind of responsibility right away."
+        ],
+        "B": [
+          "Nice to meet you! Let's have a relaxed conversation.",
+          "Sounds good. What exactly was your role in that project?",
+          "Great. It sounds like we can trust your experience in that area."
+        ]
+      }
+    },
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Could you explain the main responsibilities of this role?",
+          "I see, that structure makes collaboration much clearer.",
+          "Yes, I can manage that schedule without any problems."
+        ],
+        "B": [
+          "Of course! This position involves a lot of project coordination.",
+          "Right, communication across teams is crucial here.",
+          "Good to hear. Strong time-management skills are important."
+        ]
+      }
+    },
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Could you tell me a bit about the company culture?",
+          "Wow, it sounds like a really positive environment.",
+          "Yes, I think I'd work well in a flexible atmosphere like that."
+        ],
+        "B": [
+          "Sure! We value autonomy and responsibility.",
+          "Exactly, people here really respect each other.",
+          "Great. It seems like your style would fit well."
+        ]
+      }
+    },
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "I'm also curious about the growth path for this position.",
+          "Oh, so the scope of responsibility expands over time!",
+          "Yes, I'm ready to take on a role at that level."
+        ],
+        "B": [
+          "Good question! This position can grow into a lead role.",
+          "Right, and the size of the projects increases as well.",
+          "Nice. I can see you have strong motivation to grow."
+        ]
+      }
+    },
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Would you like to take a look at my portfolio?",
+          "This part is a case where I improved the user experience.",
+          "Yes, that’s how I approached and solved the problem."
+        ],
+        "B": [
+          "Sure, let's take a look.",
+          "Oh, the improvement results are impressive!",
+          "Excellent. Your approach looks very structured."
+        ]
+      }
+    },
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Could you tell me a bit about the team structure?",
+          "I see, that kind of role distribution sounds efficient.",
+          "Yes, I think I’d collaborate well in that setting."
+        ],
+        "B": [
+          "We currently have a six-member team with clear roles.",
+          "Right, it helps maintain both efficiency and accountability.",
+          "And the team atmosphere is quite stable."
+        ]
+      }
+    },
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "How challenging is the work at the beginning?",
+          "Oh, so there’s enough time to adjust and learn.",
+          "Yes, then I should be able to contribute quickly."
+        ],
+        "B": [
+          "At first it’s moderate, but it becomes more complex.",
+          "Right, our onboarding process is well-organized.",
+          "Great attitude. That’s always a good sign."
+        ]
+      }
+    },
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Could I ask a bit about the working conditions?",
+          "Yes, a flexible schedule works well for me too.",
+          "Sure, I have no issues coordinating my time with that system."
+        ],
+        "B": [
+          "Of course! We use a flexible working system.",
+          "Right, it's one of the reasons satisfaction is high here.",
+          "Great. It seems like the conditions would work fine for you."
+        ]
+      }
+    },
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "What should I focus on most when preparing for this role?",
+          "Yes, I’ve already been preparing in that direction.",
+          "Thank you. I’ll use your advice to improve further."
+        ],
+        "B": [
+          "Great question! Problem-solving skills are the key.",
+          "Oh, it sounds like you're already well-prepared!",
+          "Exactly. With that attitude, you’ll grow quickly here."
+        ]
+      }
+    },
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Please let me know if there’s anything else you’d like to ask.",
+          "Oh, the process is very clear. Thanks for explaining.",
+          "Thank you for giving me the opportunity to interview today."
+        ],
+        "B": [
+          "Sure! Let me briefly explain the next steps.",
+          "We’ll review everything and get back to you soon.",
+          "We also appreciate your time. Expect good news soon!"
+        ]
+      }
+    }
+  ]
+}
+

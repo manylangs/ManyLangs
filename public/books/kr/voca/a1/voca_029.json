@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a1",
+    "id": "029"
+  },
+  "title": {
+    "target": "A1 — 일상 어휘",
+    "en": "A1 — Everyday Vocabulary",
+    "es": "A1 — Vocabulario cotidiano",
+    "fr": "A1 — Vocabulaire quotidien",
+    "pt": "A1 — Vocabulário do dia a dia"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "경기",
+        "en": "game / match",
+        "es": "partido",
+        "fr": "match",
+        "pt": "jogo / partida"
+      },
+      "examples": [
+        {
+          "target": "오늘 축구 경기가 있어요.",
+          "en": "There is a soccer match today.",
+          "es": "Hoy hay un partido de fútbol.",
+          "fr": "Il y a un match de football aujourd'hui.",
+          "pt": "Hoje há um jogo de futebol."
+        },
+        {
+          "target": "경기가 정말 재미있었어요.",
+          "en": "The match was really fun.",
+          "es": "El partido fue muy divertido.",
+          "fr": "Le match était vraiment amusant.",
+          "pt": "O jogo foi muito divertido."
+        },
+        {
+          "target": "경기를 보고 응원했어요.",
+          "en": "I watched the game and cheered.",
+          "es": "Vi el partido y animé al equipo.",
+          "fr": "J'ai regardé le match et encouragé.",
+          "pt": "Assisti ao jogo e torci."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "뉴스",
+        "en": "news",
+        "es": "noticias",
+        "fr": "nouvelles",
+        "pt": "notícias"
+      },
+      "examples": [
+        {
+          "target": "아침에 뉴스를 봤어요.",
+          "en": "I watched the news in the morning.",
+          "es": "Vi las noticias por la mañana.",
+          "fr": "J'ai regardé les nouvelles ce matin.",
+          "pt": "Eu vi as notícias de manhã."
+        },
+        {
+          "target": "오늘 뉴스가 많아요.",
+          "en": "There is a lot of news today.",
+          "es": "Hoy hay muchas noticias.",
+          "fr": "Il y a beaucoup de nouvelles aujourd'hui.",
+          "pt": "Hoje há muitas notícias."
+        },
+        {
+          "target": "뉴스에서 좋은 소식을 들었어요.",
+          "en": "I heard good news on the broadcast.",
+          "es": "Escuché buenas noticias en las noticias.",
+          "fr": "J'ai entendu une bonne nouvelle aux infos.",
+          "pt": "Ouvi boas notícias no noticiário."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "사진",
+        "en": "photo",
+        "es": "foto",
+        "fr": "photo",
+        "pt": "foto"
+      },
+      "examples": [
+        {
+          "target": "사진을 찍었어요.",
+          "en": "I took a photo.",
+          "es": "Tomé una foto.",
+          "fr": "J'ai pris une photo.",
+          "pt": "Tirei uma foto."
+        },
+        {
+          "target": "이 사진이 정말 예뻐요.",
+          "en": "This photo is really beautiful.",
+          "es": "Esta foto es muy bonita.",
+          "fr": "Cette photo est vraiment jolie.",
+          "pt": "Esta foto é muito bonita."
+        },
+        {
+          "target": "친구와 사진을 찍었어요.",
+          "en": "I took a picture with my friend.",
+          "es": "Me saqué una foto con mi amigo.",
+          "fr": "J'ai pris une photo avec mon ami.",
+          "pt": "Tirei uma foto com o meu amigo."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "카메라",
+        "en": "camera",
+        "es": "cámara",
+        "fr": "caméra / appareil photo",
+        "pt": "câmera"
+      },
+      "examples": [
+        {
+          "target": "새 카메라를 샀어요.",
+          "en": "I bought a new camera.",
+          "es": "Compré una cámara nueva.",
+          "fr": "J'ai acheté une nouvelle caméra.",
+          "pt": "Comprei uma câmera nova."
+        },
+        {
+          "target": "카메라로 사진을 찍고 있어요.",
+          "en": "I am taking photos with the camera.",
+          "es": "Estoy tomando fotos con la cámara.",
+          "fr": "Je prends des photos avec la caméra.",
+          "pt": "Estou a tirar fotos com a câmera."
+        },
+        {
+          "target": "카메라가 고장났어요.",
+          "en": "The camera is broken.",
+          "es": "La cámara está rota.",
+          "fr": "La caméra est cassée.",
+          "pt": "A câmera está estragada."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "컴퓨터",
+        "en": "computer",
+        "es": "computadora",
+        "fr": "ordinateur",
+        "pt": "computador"
+      },
+      "examples": [
+        {
+          "target": "컴퓨터를 켰어요.",
+          "en": "I turned on the computer.",
+          "es": "Encendí la computadora.",
+          "fr": "J'ai allumé l'ordinateur.",
+          "pt": "Liguei o computador."
+        },
+        {
+          "target": "컴퓨터가 너무 느려요.",
+          "en": "The computer is too slow.",
+          "es": "La computadora está muy lenta.",
+          "fr": "L'ordinateur est trop lent.",
+          "pt": "O computador está muito lento."
+        },
+        {
+          "target": "컴퓨터로 작업을 하고 있어요.",
+          "en": "I am working on the computer.",
+          "es": "Estoy trabajando en la computadora.",
+          "fr": "Je travaille sur l'ordinateur.",
+          "pt": "Estou a trabalhar no computador."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "a1",
+    "id": "007"
+  },
+  "title": {
+    "target": "있다/없다",
+    "en": "",
+    "es": "",
+    "fr": "Avoir / Ne pas avoir (있다/없다)",
+    "pt": ""
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'있다'는 존재하거나 가지고 있음을 나타낸다.",
+        "en": "",
+        "es": "",
+        "fr": "«있다» signifie que quelque chose existe ou que quelqu’un possède quelque chose.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'없다'는 존재하지 않거나 가지고 있지 않음을 나타낸다.",
+        "en": "",
+        "es": "",
+        "fr": "«없다» signifie que quelque chose n’existe pas ou que quelqu’un ne possède pas quelque chose.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "사람·사물·장소 등 다양한 명사와 함께 쓸 수 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Cela peut s’utiliser avec de nombreux noms comme des personnes, des objets ou des lieux.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "장소 앞에 '에'를 붙여 '어디에 있다/없다'를 표현한다.",
+        "en": "",
+        "es": "",
+        "fr": "On utilise «à» ou «il y a» pour exprimer «il y a / il n’y a pas» dans un lieu.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "소유를 말할 때는 주어 뒤에 '은/는'과 함께 자주 쓰인다.",
+        "en": "",
+        "es": "",
+        "fr": "C’est souvent utilisé avec «은/는» lorsqu’on parle de possession.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "상태나 상황 설명에서도 자주 등장한다.",
+        "en": "",
+        "es": "",
+        "fr": "C’est aussi très utilisé pour décrire des états ou des situations.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'있다/없다'는 기본적인 사실을 전달할 때 가장 많이 쓰인다.",
+        "en": "",
+        "es": "",
+        "fr": "C’est l’un des moyens les plus courants d’exprimer des faits simples.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "감정이나 생각처럼 추상적인 대상에도 사용할 수 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Cela peut aussi s’utiliser avec des notions abstraites comme des émotions ou des pensées.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "부정문은 항상 '없다'로 표현한다.",
+        "en": "",
+        "es": "",
+        "fr": "Les phrases négatives se forment toujours avec «없다».",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "한국어 기초 의사소통에서 필수적으로 사용되는 문형이다.",
+        "en": "",
+        "es": "",
+        "fr": "Ce schéma est essentiel pour la communication de base en coréen.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "나는 시간이 있다.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai du temps.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그녀는 돈이 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle a de l’argent.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "여기에는 사람이 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Il y a quelqu’un ici.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "방 안에 고양이가 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Il y a un chat dans la chambre.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "책상 위에 책이 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Il y a un livre sur le bureau.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그는 친구가 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Il a un ami.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "나는 시간이 없다.",
+        "en": "",
+        "es": "",
+        "fr": "Je n’ai pas de temps.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그녀는 돈이 없다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle n’a pas d’argent.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "여기에는 사람이 없다.",
+        "en": "",
+        "es": "",
+        "fr": "Il n’y a personne ici.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "방 안에 고양이가 없다.",
+        "en": "",
+        "es": "",
+        "fr": "Il n’y a pas de chat dans la chambre.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "책상 위에 책이 없다.",
+        "en": "",
+        "es": "",
+        "fr": "Il n’y a pas de livre sur le bureau.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그는 친구가 없다.",
+        "en": "",
+        "es": "",
+        "fr": "Il n’a pas d’amis.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "나는 계획이 있다.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai un plan.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그녀는 숙제가 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle a des devoirs.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "우리는 걱정이 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Nous avons des inquiétudes.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그는 중요한 일이 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Il a quelque chose d’important à faire.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "오늘은 약속이 있다.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai un rendez-vous aujourd’hui.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "나는 도움이 필요하다.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai besoin d’aide.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그녀는 시간이 정말 없다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle n’a vraiment pas de temps.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "방에는 소리가 전혀 없다.",
+        "en": "",
+        "es": "",
+        "fr": "Il n’y a aucun bruit dans la chambre.",
+        "pt": ""
+      }
+    }
+  ]
+}

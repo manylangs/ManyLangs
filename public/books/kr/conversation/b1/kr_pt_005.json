@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "005",
+  "cefr": "B1",
+  "title_pt": "Projeto em equipa",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Quando fazemos a reunião da equipa?,",
+    "A divisão de tarefas está bem para ti?,",
+    "Como está a pesquisa?,",
+    "Vou organizar os ficheiros,",
+    "Devemos começar a apresentação,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Quando seria uma boa altura para a reunião da equipa esta semana?",
+          "Amanhã à tarde estou livre, mas não sei se todos conseguem.",
+          "Se outro horário for melhor, avisem-me, por favor."
+        ],
+        "B": [
+          "Amanhã à tarde também funciona para mim.",
+          "Acho que os outros membros também conseguem ajustar-se.",
+          "Podemos sugerir o horário no grupo e confirmar com todos."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Como devemos dividir as tarefas do projeto?",
+          "Posso tratar da organização ou preparar os diapositivos.",
+          "Há alguma parte que preferes fazer?"
+        ],
+        "B": [
+          "Ótimo, ter alguém organizado ajuda imenso.",
+          "Eu sinto-me mais confortável com a pesquisa e a análise.",
+          "Se cada um assumir o que faz melhor, avançaremos de forma mais eficiente."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Em que ponto estamos com a recolha de fontes?",
+          "Já reuni alguns artigos relacionados.",
+          "Posso partilhá-los agora mesmo, se precisares."
+        ],
+        "B": [
+          "Sério? Já encontraste tantos? Obrigado(a)!",
+          "Eu estava a ver sobretudo dados estatísticos.",
+          "Se juntarmos tudo, o projeto ficará muito mais completo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "A pasta partilhada está um pouco desorganizada.",
+          "Posso reorganizá-la e criar uma estrutura mais clara.",
+          "Também posso renomear os ficheiros para serem mais fáceis de identificar."
+        ],
+        "B": [
+          "Isso ajudaria imenso, obrigado(a).",
+          "Neste momento, é difícil encontrar as coisas porque está tudo espalhado.",
+          "Com uma boa organização, vamos conseguir trabalhar com mais facilidade."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Quando devemos começar a preparar a apresentação?",
+          "Acho que começar a meio da semana será tranquilo.",
+          "Queres que prepare um esquema básico dos diapositivos?"
+        ],
+        "B": [
+          "Sim, esse ritmo parece-me adequado.",
+          "Com um esquema feito, será mais fácil acrescentarmos o conteúdo.",
+          "Um simples rascunho já será suficiente para começarmos."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Já resumiste os pontos da reunião de hoje?",
+          "Só escrevi algumas notas e acho que me faltam detalhes.",
+          "Se tiveres algo mais organizado, podes partilhar?"
+        ],
+        "B": [
+          "Sim, fiz um resumo logo depois da reunião.",
+          "Anotei as decisões principais para ficar claro.",
+          "Vou enviar agora mesmo no grupo para todos verem."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Vi que há vários critérios de avaliação.",
+          "A parte da apresentação tem mais peso do que eu esperava e isso deixa-me um pouco preocupado(a).",
+          "Talvez devêssemos praticar a apresentação algumas vezes."
+        ],
+        "B": [
+          "Concordo, a apresentação conta bastante.",
+          "Mas, se praticarmos com antecedência, vai correr bem.",
+          "Podemos fazer dois ou três ensaios juntos."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Parece que cada equipa está a avançar a ritmos diferentes.",
+          "Talvez devêssemos dividir o nosso calendário em etapas mais pequenas.",
+          "Começamos por definir os objetivos desta semana?"
+        ],
+        "B": [
+          "Boa ideia. Metas claras ajudam muito a manter o foco.",
+          "Vamos listar as tarefas principais que precisamos de concluir esta semana.",
+          "Já tenho uma pequena lista, posso partilhá-la contigo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Acham que devemos marcar um momento para rever o trabalho uns dos outros?",
+          "Com algum feedback, a qualidade final vai melhorar bastante.",
+          "O fim de semana seria uma boa altura?"
+        ],
+        "B": [
+          "Sim, uma sessão de revisão seria muito útil.",
+          "Este fim de semana estou disponível tanto de manhã como à tarde.",
+          "Diz-me apenas a hora que te convém e eu ajusto-me."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Estamos finalmente a chegar ao fim do projeto!",
+          "Fico contente por tudo ter corrido bem graças ao trabalho em equipa.",
+          "Se concluirmos tudo com cuidado, a entrega não será um problema."
+        ],
+        "B": [
+          "Concordo plenamente — o bom trabalho em equipa facilitou muito o processo.",
+          "Vamos rever tudo uma última vez antes de entregar.",
+          "Uma revisão final em conjunto vai garantir um ótimo resultado."
+        ]
+      }
+    }
+  ]
+}
+

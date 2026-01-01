@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "a1",
+    "id": "006"
+  },
+  "topic": "A child drawing",
+  "keywords": [
+    "child",
+    "drawing",
+    "crayons",
+    "paper",
+    "table",
+    "indoors"
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "006.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "target": "어린아이가 실내의 작은 책상 앞 바닥에 앉아 있다.",
+          "en": "A young child is sitting on the floor at a small table indoors.",
+          "es": "Un niño pequeño está sentado en el suelo frente a una mesa pequeña dentro de la casa.",
+          "fr": "Un jeune enfant est assis par terre devant une petite table à l’intérieur.",
+          "pt": "Uma criança pequena está sentada no chão diante de uma mesinha dentro de casa."
+        },
+        {
+          "target": "아이는 밝은 색 크레용을 들고 큰 흰 종이에 그림을 그린다.",
+          "en": "The child holds a bright crayon and draws on a large white sheet of paper.",
+          "es": "El niño sostiene un crayón brillante y dibuja en una hoja grande de papel blanco.",
+          "fr": "L’enfant tient un crayon de couleur vif et dessine sur une grande feuille de papier blanc.",
+          "pt": "A criança segura um lápis de cor brilhante e desenha em uma grande folha de papel branco."
+        },
+        {
+          "target": "알록달록한 크레용들이 책상 주변에 흩어져 있다.",
+          "en": "Colorful crayons are scattered around the table.",
+          "es": "Crayones de colores están esparcidos alrededor de la mesa.",
+          "fr": "Des crayons colorés sont éparpillés autour de la table.",
+          "pt": "Lápis de cor coloridos estão espalhados ao redor da mesa."
+        },
+        {
+          "target": "아이는 그림에 선을 더하며 몸을 약간 앞으로 숙인다.",
+          "en": "The child leans slightly forward while adding more lines to the drawing.",
+          "es": "El niño se inclina un poco hacia adelante mientras añade más líneas al dibujo.",
+          "fr": "L’enfant se penche légèrement en avant en ajoutant des lignes au dessin.",
+          "pt": "A criança inclina-se levemente para a frente enquanto adiciona mais linhas ao desenho."
+        },
+        {
+          "target": "크레용이 담긴 작은 컵이 종이 옆에 놓여 있다.",
+          "en": "A small cup filled with crayons sits beside the paper.",
+          "es": "Un vaso pequeño lleno de crayones está al lado del papel.",
+          "fr": "Un petit pot rempli de crayons est posé à côté de la feuille.",
+          "pt": "Um pequeno copo cheio de lápis de cor está ao lado do papel."
+        },
+        {
+          "target": "완성된 몇몇 그림이 아이 옆 바닥에 놓여 있다.",
+          "en": "Some finished drawings are placed on the floor next to them.",
+          "es": "Algunos dibujos terminados están colocados en el suelo junto a él.",
+          "fr": "Quelques dessins terminés sont posés sur le sol près de lui.",
+          "pt": "Alguns desenhos prontos estão colocados no chão ao lado dela."
+        }
+      ]
+    }
+  ],
+  "tts": {
+    "en": [],
+    "fr": [],
+    "es": [],
+    "pt": [],
+    "kr": []
+  }
+}

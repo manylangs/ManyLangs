@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "a1",
+    "id": "001"
+  },
+  "title": {
+    "target": "한글 자음·모음",
+    "en": "",
+    "es": "Consonantes y vocales del hangul",
+    "fr": "",
+    "pt": ""
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "한글은 자음과 모음이 결합해 하나의 음절을 만든다.",
+        "en": "",
+        "es": "Las sílabas del hangul se forman combinando consonantes y vocales.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "자음은 소리를 막거나 좁혀서 내는 소리이다.",
+        "en": "",
+        "es": "Las consonantes son sonidos creados bloqueando o estrechando el aire.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "모음은 입을 열어 공기를 막지 않고 내는 소리이다.",
+        "en": "",
+        "es": "Las vocales son sonidos producidos sin bloquear el aire.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "기본 자음에는 ㄱ, ㄴ, ㄷ, ㄹ 등이 있다.",
+        "en": "",
+        "es": "Las consonantes básicas incluyen ㄱ, ㄴ, ㄷ y ㄹ.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "기본 모음에는 ㅏ, ㅓ, ㅗ, ㅜ 등이 있다.",
+        "en": "",
+        "es": "Las vocales básicas incluyen ㅏ, ㅓ, ㅗ y ㅜ.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "자음과 모음은 일정한 규칙에 따라 결합한다.",
+        "en": "",
+        "es": "Las consonantes y vocales se combinan según reglas fijas.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "모음은 ㅣ와 결합하여 이중 모음으로 확장되기도 한다.",
+        "en": "",
+        "es": "Las vocales pueden combinarse con ㅣ para formar diptongos.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "자음은 단독으로는 음절을 만들 수 없다.",
+        "en": "",
+        "es": "Las consonantes no pueden formar una sílaba por sí solas.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "모음이 먼저 오면 'ㅇ'이 자리를 채워 준다.",
+        "en": "",
+        "es": "Si una vocal aparece primero, ㅇ ocupa la posición inicial.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "한글 음절은 초성, 중성, 종성 순서로 구성된다.",
+        "en": "",
+        "es": "Una sílaba en hangul consiste en inicial, medial y final.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "나는 가방을 본다.",
+        "en": "",
+        "es": "Veo una bolsa.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그는 나무를 만진다.",
+        "en": "",
+        "es": "Él toca un árbol.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "나는 단어를 읽는다.",
+        "en": "",
+        "es": "Leo una palabra.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "우리는 라디오를 듣는다.",
+        "en": "",
+        "es": "Escuchamos la radio.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "나는 말을 적는다.",
+        "en": "",
+        "es": "Escribo una palabra.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그녀는 버스를 기다린다.",
+        "en": "",
+        "es": "Ella espera un autobús.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "나는 고양이를 본다.",
+        "en": "",
+        "es": "Veo un gato.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그는 누이를 부른다.",
+        "en": "",
+        "es": "Él llama a su hermana.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "나는 디저트를 먹는다.",
+        "en": "",
+        "es": "Como un postre.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "우리는 레몬을 산다.",
+        "en": "",
+        "es": "Compramos un limón.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그는 미소를 지었다.",
+        "en": "",
+        "es": "Él sonrió.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "나는 볼펜을 잡았다.",
+        "en": "",
+        "es": "Sostuve un bolígrafo.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "나는 사과를 먹는다.",
+        "en": "",
+        "es": "Como una manzana.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그는 학교에 간다.",
+        "en": "",
+        "es": "Él va a la escuela.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "우리는 바다를 본다.",
+        "en": "",
+        "es": "Vemos el mar.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "나는 노래를 듣는다.",
+        "en": "",
+        "es": "Escucho una canción.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그녀는 기차를 탄다.",
+        "en": "",
+        "es": "Ella toma un tren.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그는 우유를 마신다.",
+        "en": "",
+        "es": "Él bebe leche.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "우리는 야구를 본다.",
+        "en": "",
+        "es": "Vemos béisbol.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "나는 지도를 펼친다.",
+        "en": "",
+        "es": "Abro un mapa.",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  ]
+}

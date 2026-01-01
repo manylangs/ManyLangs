@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a1",
+    "id": "033"
+  },
+  "title": {
+    "target": "A1 — 일상 어휘",
+    "en": "A1 — Everyday Vocabulary",
+    "es": "A1 — Vocabulario cotidiano",
+    "fr": "A1 — Vocabulaire quotidien",
+    "pt": "A1 — Vocabulário do dia a dia"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "가을",
+        "en": "autumn",
+        "es": "otoño",
+        "fr": "automne",
+        "pt": "outono"
+      },
+      "examples": [
+        {
+          "target": "가을에는 단풍이 아름다워요.",
+          "en": "In autumn, the foliage is beautiful.",
+          "es": "En otoño, las hojas son hermosas.",
+          "fr": "En automne, les feuilles sont magnifiques.",
+          "pt": "No outono, as folhas são lindas."
+        },
+        {
+          "target": "가을 날씨는 시원하고 좋아요.",
+          "en": "The autumn weather is cool and nice.",
+          "es": "El clima de otoño es fresco y agradable.",
+          "fr": "Le temps d'automne est frais et agréable.",
+          "pt": "O clima de outono é fresco e agradável."
+        },
+        {
+          "target": "저는 가을 산책을 좋아해요.",
+          "en": "I enjoy autumn walks.",
+          "es": "Disfruto los paseos de otoño.",
+          "fr": "J'aime me promener en automne.",
+          "pt": "Gosto de caminhar no outono."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "겨울",
+        "en": "winter",
+        "es": "invierno",
+        "fr": "hiver",
+        "pt": "inverno"
+      },
+      "examples": [
+        {
+          "target": "겨울에는 눈이 많이 와요.",
+          "en": "It snows a lot in winter.",
+          "es": "Nieva mucho en invierno.",
+          "fr": "Il neige beaucoup en hiver.",
+          "pt": "Neva muito no inverno."
+        },
+        {
+          "target": "겨울이 되면 아주 추워요.",
+          "en": "It gets very cold in winter.",
+          "es": "Hace mucho frío en invierno.",
+          "fr": "Il fait très froid en hiver.",
+          "pt": "Faz muito frio no inverno."
+        },
+        {
+          "target": "저는 겨울 스포츠를 좋아해요.",
+          "en": "I like winter sports.",
+          "es": "Me gustan los deportes de invierno.",
+          "fr": "J'aime les sports d'hiver.",
+          "pt": "Gosto de esportes de inverno."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "시계",
+        "en": "clock",
+        "es": "reloj",
+        "fr": "horloge",
+        "pt": "relógio"
+      },
+      "examples": [
+        {
+          "target": "시계가 멈췄어요.",
+          "en": "The clock stopped.",
+          "es": "El reloj se detuvo.",
+          "fr": "L'horloge s'est arrêtée.",
+          "pt": "O relógio parou."
+        },
+        {
+          "target": "시계를 맞춰 주세요.",
+          "en": "Please set the clock.",
+          "es": "Ajusta el reloj, por favor.",
+          "fr": "Veuillez régler l'horloge.",
+          "pt": "Ajuste o relógio, por favor."
+        },
+        {
+          "target": "새 시계를 하나 사고 싶어요.",
+          "en": "I want to buy a new clock.",
+          "es": "Quiero comprar un reloj nuevo.",
+          "fr": "Je veux acheter une nouvelle horloge.",
+          "pt": "Quero comprar um relógio novo."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "달력",
+        "en": "calendar",
+        "es": "calendario",
+        "fr": "calendrier",
+        "pt": "calendário"
+      },
+      "examples": [
+        {
+          "target": "달력에서 날짜를 확인하세요.",
+          "en": "Check the date on the calendar.",
+          "es": "Revisa la fecha en el calendario.",
+          "fr": "Vérifiez la date sur le calendrier.",
+          "pt": "Verifique a data no calendário."
+        },
+        {
+          "target": "새해 달력을 샀어요.",
+          "en": "I bought a new-year calendar.",
+          "es": "Compré un calendario de año nuevo.",
+          "fr": "J'ai acheté un calendrier de la nouvelle année.",
+          "pt": "Comprei um calendário de ano novo."
+        },
+        {
+          "target": "달력에 중요한 일을 적어 두었어요.",
+          "en": "I wrote important events on the calendar.",
+          "es": "Anoté eventos importantes en el calendario.",
+          "fr": "J'ai noté des événements importants sur le calendrier.",
+          "pt": "Anotei eventos importantes no calendário."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "휴대폰",
+        "en": "mobile phone",
+        "es": "teléfono móvil",
+        "fr": "téléphone portable",
+        "pt": "telemóvel"
+      },
+      "examples": [
+        {
+          "target": "휴대폰이 어디 있는지 모르겠어요.",
+          "en": "I don’t know where my mobile phone is.",
+          "es": "No sé dónde está mi móvil.",
+          "fr": "Je ne sais pas où est mon téléphone portable.",
+          "pt": "Não sei onde está o meu telemóvel."
+        },
+        {
+          "target": "휴대폰을 집에 두고 왔어요.",
+          "en": "I left my mobile phone at home.",
+          "es": "Dejé mi móvil en casa.",
+          "fr": "J'ai laissé mon téléphone portable à la maison.",
+          "pt": "Deixei o meu telemóvel em casa."
+        },
+        {
+          "target": "새 휴대폰을 샀어요.",
+          "en": "I bought a new mobile phone.",
+          "es": "Compré un móvil nuevo.",
+          "fr": "J'ai acheté un nouveau téléphone portable.",
+          "pt": "Comprei um telemóvel novo."
+        }
+      ]
+    }
+  ]
+}

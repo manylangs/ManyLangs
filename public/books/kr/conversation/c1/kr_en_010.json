@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "010",
+  "cefr": "C1",
+  "title_en": "Business Trip Preparation",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Please share your preparation status,",
+    "Double-check the required documents,",
+    "Let me know immediately if the schedule changes,",
+    "I will coordinate with the local team,",
+    "I’ll prepare a pre-departure checklist,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "How far along are you with the business trip preparations?",
+          "It looks like the flight schedule has changed a bit.",
+          "I’ll share the confirmed time shortly."
+        ],
+        "B": [
+          "Oh, yes. I also received a notification a moment ago.",
+          "It seems the departure time was moved up slightly.",
+          "Once you share the update, I’ll reflect it in the schedule."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Have you finished preparing the materials for the onsite meeting?",
+          "Some parts seemed to require updates with more recent information.",
+          "Would you like me to help revise those sections?"
+        ],
+        "B": [
+          "Yes, I thought the same — a few areas definitely need updates.",
+          "There’s actually quite a bit to revise.",
+          "If possible, could you summarize the key items first?"
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Have you printed all the required travel documents?",
+          "The invitation letter and itinerary are essential to bring.",
+          "If you need extra copies, I can print them for you."
+        ],
+        "B": [
+          "I have the invitation letter ready, but not the itinerary yet.",
+          "If you could print it, that would help a lot.",
+          "In return, I’ll take care of preparing the hotel vouchers."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "How much packing have you done so far?",
+          "I heard the weather there has been unpredictable.",
+          "It might be good to bring a light jacket just in case."
+        ],
+        "B": [
+          "Yes, I heard that too — apparently it suddenly got colder.",
+          "I haven’t packed a jacket yet, but I should add one.",
+          "Thanks for the reminder!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Have you confirmed the time for the first meeting with the local team?",
+          "I heard there might be some adjustments needed.",
+          "If necessary, I can reach out to them directly."
+        ],
+        "B": [
+          "I haven’t received the exact time yet.",
+          "But yes, if adjustments are needed, your help would be great.",
+          "I’ll let you know as soon as the time is confirmed."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Have you settled all the travel expenses?",
+          "Let me know if anything needs to be prepaid.",
+          "I can submit the approval request right away."
+        ],
+        "B": [
+          "Not everything yet — a few items are still pending.",
+          "The transportation expenses in particular need another review.",
+          "I’ll整理everything and share an update soon."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "This trip’s schedule looks quite tight — are you okay with it?",
+          "Some segments may not have enough travel time between them.",
+          "If needed, I can review the route again."
+        ],
+        "B": [
+          "I noticed that too — a few transitions look too close.",
+          "It might become an issue if meetings run long.",
+          "A review of the route would be very helpful."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Have you created a list of things you'll need onsite?",
+          "I’m a bit worried we might miss something related to meeting equipment.",
+          "Would you like me to prepare a checklist and send it to you?"
+        ],
+        "B": [
+          "I haven’t completed it yet — I was also worried something might be missing.",
+          "A checklist would make things much easier.",
+          "Yes, please send it when it’s ready!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "It seems the hotel check-in may be later than expected.",
+          "Do you think this will affect the schedule?",
+          "If needed, I can inform the local team in advance."
+        ],
+        "B": [
+          "Oh, then we might have less time to prepare for the first meeting.",
+          "It could be a bit tight, but I think it’s manageable.",
+          "Still, informing the local team would be a good idea."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Shall we go through the full itinerary one last time before departure?",
+          "It looks like most preparations are complete now.",
+          "I’ll send you the final checklist as well."
+        ],
+        "B": [
+          "Sounds good — I think we’re almost ready.",
+          "Having a checklist will give me peace of mind.",
+          "Send it over when you can; I’ll check it right away."
+        ]
+      }
+    }
+  ]
+}
+

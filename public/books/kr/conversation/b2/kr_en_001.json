@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "001",
+  "cefr": "B2",
+  "title_en": "Bank Services",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "I'm here to open a new account,",
+    "Let me show you my ID,",
+    "Could you tell me about the fees?,",
+    "Can I apply for online banking as well?,",
+    "How do I make an international transfer?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Hi, I'd like to open a new account.",
+          "Sure, what documents do I need?",
+          "Great, then I’ll go ahead and open one now."
+        ],
+        "B": [
+          "Hello! You want to open an account? I can help you with that.",
+          "You only need your ID. That’s all.",
+          "Perfect. Please wait just a moment."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Can I apply for online banking at the same time?",
+          "Oh, that’s simpler than I expected.",
+          "Then I'd also like to set up automatic payments."
+        ],
+        "B": [
+          "Yes, you can apply for it while opening your account.",
+          "All you need to do is fill out this form.",
+          "Sure. I'll guide you through the auto-payment options too."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Does this account support international transfers?",
+          "I see, so the transfer limit is restricted.",
+          "Then can I request a higher limit later?"
+        ],
+        "B": [
+          "Yes, international transfers are available, but there's a default limit.",
+          "If needed, you can complete extra verification steps.",
+          "Absolutely. You can request it anytime."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Can I also get a debit card issued today?",
+          "Oh, so it gets delivered to my address.",
+          "Alright, please submit the application for me."
+        ],
+        "B": [
+          "Sure. You can apply for a debit card right after opening your account.",
+          "Yes, delivery usually takes about five days.",
+          "I'll process that for you now."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "How much are the service fees?",
+          "Oh, so the fees are waived if I maintain a certain balance.",
+          "Then I guess I should keep that minimum balance."
+        ],
+        "B": [
+          "Standard accounts have basic transfer fees.",
+          "Yes, but they’re waived if you maintain the required balance.",
+          "Exactly. That’s the most convenient option."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Can I get the passbook issued right away?",
+          "Wow, that’s fast!",
+          "Alright, I'll wait just a bit."
+        ],
+        "B": [
+          "Yes, we can print it for you on the spot.",
+          "It only takes one or two minutes.",
+          "I’ll call your name shortly."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Can I check my automatic payment history?",
+          "Oh, I didn’t notice that menu.",
+          "Got it. I’ll check it again at home."
+        ],
+        "B": [
+          "Yes, you can view it on the banking app.",
+          "You'll find it under the ‘Account Management’ section.",
+          "If you have trouble, feel free to ask again!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "I’d like to print my recent transaction history.",
+          "Yes, one month of records is enough.",
+          "Perfect. Thanks for your help!"
+        ],
+        "B": [
+          "Sure, how many months do you need?",
+          "Alright, I’ll print your last month's transactions.",
+          "Please wait just a moment."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Can I switch to a mobile OTP?",
+          "Wow, that sounds so much more convenient.",
+          "Great. I’ll apply for it now."
+        ],
+        "B": [
+          "Yes, most customers use mobile OTP these days.",
+          "Once you install the app, the verification completes quickly.",
+          "Let me walk you through the setup steps."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Will the waiting time be long?",
+          "Oh, that’s good. I’m on a tight schedule today.",
+          "Alright. I’ll wait over there."
+        ],
+        "B": [
+          "Right now, things are moving pretty quickly.",
+          "I should be able to assist you soon.",
+          "Please have a seat and wait comfortably."
+        ]
+      }
+    }
+  ]
+}
+

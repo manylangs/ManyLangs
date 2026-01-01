@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "b1",
+    "id": "020"
+  },
+  "topic": "A vendor arranging goods",
+  "keywords": [
+    "vendor",
+    "market stall",
+    "arranging goods",
+    "display",
+    "products",
+    "selling"
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "020.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "target": "한 상인이 이른 아침 나무로 된 시장 좌판에서 상품을 정리하고 있다.",
+          "en": "A vendor is arranging goods on a wooden market stall early in the morning.",
+          "es": "Un vendedor está organizando productos en un puesto de madera temprano por la mañana.",
+          "fr": "Un vendeur organise des marchandises sur un étal en bois tôt le matin.",
+          "pt": "Um vendedor está organizando produtos em uma barraca de madeira no início da manhã."
+        },
+        {
+          "target": "그는 진열대 앞쪽에 형형색색의 과일을 가지런히 놓고 있다.",
+          "en": "He carefully places colorful fruits into neat rows at the front of the display.",
+          "es": "Coloca cuidadosamente frutas coloridas en filas ordenadas al frente de la exhibición.",
+          "fr": "Il place soigneusement des fruits colorés en rangées ordonnées à l'avant de l'étal.",
+          "pt": "Ele coloca cuidadosamente frutas coloridas em fileiras organizadas na frente da exposição."
+        },
+        {
+          "target": "여러 개의 채소 바구니가 좌판 한쪽에 층층이 쌓여 있다.",
+          "en": "Several baskets filled with vegetables are stacked on the side of the stall.",
+          "es": "Varias canastas llenas de verduras están apiladas al costado del puesto.",
+          "fr": "Plusieurs paniers remplis de légumes sont empilés sur le côté de l'étal.",
+          "pt": "Vários cestos cheios de legumes estão empilhados ao lado da barraca."
+        },
+        {
+          "target": "상인은 모든 물건이 신선해 보이는지 하나씩 점검한다.",
+          "en": "The vendor checks each item to make sure everything looks fresh.",
+          "es": "El vendedor revisa cada artículo para asegurarse de que todo se vea fresco.",
+          "fr": "Le vendeur vérifie chaque article pour s'assurer que tout semble frais.",
+          "pt": "O vendedor verifica cada item para garantir que tudo pareça fresco."
+        },
+        {
+          "target": "손글씨로 적힌 가격표가 좌판 위쪽에 걸려 있다.",
+          "en": "A handwritten price sign hangs from the top of the stall.",
+          "es": "Un cartel de precios escrito a mano cuelga de la parte superior del puesto.",
+          "fr": "Une étiquette de prix écrite à la main est suspendue en haut de l'étal.",
+          "pt": "Um cartaz de preço escrito à mão está pendurado na parte superior da barraca."
+        },
+        {
+          "target": "상인은 천으로 카운터를 닦아 깨끗하게 유지한다.",
+          "en": "The vendor wipes the counter with a cloth to keep it clean.",
+          "es": "El vendedor limpia el mostrador con un paño para mantenerlo limpio.",
+          "fr": "Le vendeur essuie le comptoir avec un chiffon pour le garder propre.",
+          "pt": "O vendedor limpa o balcão com um pano para mantê-lo limpo."
+        }
+      ]
+    }
+  ],
+  "tts": {
+    "en": [],
+    "fr": [],
+    "es": [],
+    "pt": [],
+    "kr": []
+  }
+}

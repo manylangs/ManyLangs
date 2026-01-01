@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "a2",
+    "id": "016"
+  },
+  "title": {
+    "target": "받침 활용 규칙 (문법적 기능)",
+    "en": "",
+    "es": "",
+    "fr": "Règles du Batchim (Fonction grammaticale)",
+    "pt": ""
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침은 음절의 끝에 오는 자음을 말하며 다양한 문법적 기능에 영향을 줍니다.",
+        "en": "",
+        "es": "",
+        "fr": "Le batchim désigne la consonne finale placée à la fin d’une syllabe et influence plusieurs fonctions grammaticales.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침 유무에 따라 조사의 형태가 달라집니다. (예: 이/가, 은/는, 을/를)",
+        "en": "",
+        "es": "",
+        "fr": "Selon la présence ou l’absence de batchim, la forme des particules change. (ex : 이/가, 은/는, 을/를)",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침 뒤에 오는 어미가 바뀌며 발음도 달라질 수 있습니다.",
+        "en": "",
+        "es": "",
+        "fr": "Les terminaisons qui suivent un batchim peuvent changer de forme et de prononciation.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침이 있으면 '-으'가 붙는 경우가 많습니다. (예: 먹습니다)",
+        "en": "",
+        "es": "",
+        "fr": "Lorsqu’il y a un batchim, ‘-으’ est souvent ajouté. (ex : 먹습니다)",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침 'ㄹ'은 특수 규칙이 있어 종종 탈락하기도 합니다.",
+        "en": "",
+        "es": "",
+        "fr": "Le batchim ‘ㄹ’ suit des règles particulières et disparaît souvent.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "겹받침은 상황에 따라 하나만 발음되는 경우가 많습니다.",
+        "en": "",
+        "es": "",
+        "fr": "Les doubles batchim ne prononcent généralement qu’une seule consonne selon la situation.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침 뒤에서 다음 소리로 이어질 때 연음 현상이 일어납니다.",
+        "en": "",
+        "es": "",
+        "fr": "Lorsqu’un son suit un batchim, un phénomène de liaison peut se produire.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침은 과거형, 현재형, 연결형 등 여러 어미 선택에 영향을 줍니다.",
+        "en": "",
+        "es": "",
+        "fr": "Le batchim influence le choix des terminaisons verbales et adjectivales, comme le passé, le présent ou les formes connectées.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "동사와 형용사의 활용 시 받침 유무는 어미 변화를 결정하는 중요한 요소입니다.",
+        "en": "",
+        "es": "",
+        "fr": "La présence ou l’absence de batchim est un facteur important dans la conjugaison.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "일상 대화에서도 자연스럽게 적용되며 발음과 문법을 동시에 익혀야 합니다.",
+        "en": "",
+        "es": "",
+        "fr": "Les règles du batchim s’appliquent naturellement dans la langue quotidienne, d’où l’importance d’apprendre la grammaire et la prononciation ensemble.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "책이 있어요. (받침 → '이')",
+        "en": "",
+        "es": "",
+        "fr": "Il y a un livre. (batchim → ‘이’)",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "연필을 샀어요. (받침 → '을')",
+        "en": "",
+        "es": "",
+        "fr": "J’ai acheté un crayon. (batchim → ‘을’)",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "고양이는 귀여워요. (무받침 → '는')",
+        "en": "",
+        "es": "",
+        "fr": "Le chat est mignon. (sans batchim → ‘는’)",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "물을 마셔요. (받침 → '을')",
+        "en": "",
+        "es": "",
+        "fr": "Je bois de l’eau. (batchim → ‘을’)",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "먹습니다. (받침 → '-습니다')",
+        "en": "",
+        "es": "",
+        "fr": "Je mange. (batchim → ‘-습니다’)",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "길이 막혀요. (받침 ㄹ → 특수 용법)",
+        "en": "",
+        "es": "",
+        "fr": "La route est bloquée. (batchim ㄹ → règle spéciale)",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "사람이 많아요.",
+        "en": "",
+        "es": "",
+        "fr": "Il y a beaucoup de gens.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "버스를 타요.",
+        "en": "",
+        "es": "",
+        "fr": "Je prends le bus.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "음식을 만들어요.",
+        "en": "",
+        "es": "",
+        "fr": "Je prépare de la nourriture.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "옷을 입어요.",
+        "en": "",
+        "es": "",
+        "fr": "Je mets des vêtements.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "날씨는 좋아요.",
+        "en": "",
+        "es": "",
+        "fr": "Il fait beau.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "문을 닫아요.",
+        "en": "",
+        "es": "",
+        "fr": "Je ferme la porte.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "밤에 길이 조용해요.",
+        "en": "",
+        "es": "",
+        "fr": "La rue est calme la nuit.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "사진을 찍었어요.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai pris une photo.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "집에 불이 켜져 있어요.",
+        "en": "",
+        "es": "",
+        "fr": "Les lumières sont allumées à la maison.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "친구를 기다렸어요.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai attendu mon ami.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "물건이 많이 있어요.",
+        "en": "",
+        "es": "",
+        "fr": "Il y a beaucoup d’objets.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "준비를 다 했어요.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai terminé les préparatifs.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "가방을 잃어버렸어요.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai perdu mon sac.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "집이 학교보다 가까워요.",
+        "en": "",
+        "es": "",
+        "fr": "Ma maison est plus proche que l’école.",
+        "pt": ""
+      }
+    }
+  ]
+}

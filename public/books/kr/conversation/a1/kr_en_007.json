@@ -1,0 +1,175 @@
+{
+  "chapter_id": "007",
+  "cefr": "A1",
+  "title_en": "Asking for Directions",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Is it close from here?,",
+    "How do I get there?,",
+    "Is this the right way?,",
+    "How long does it take on foot?,",
+    "Is it in that direction?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Excuse me, how can I get to the subway station?",
+          "Oh, so it’s not that far! I just walk straight that way?",
+          "Great, thank you! I’ll head there now."
+        ],
+        "B": [
+          "The subway station? Yes, just go straight on this road.",
+          "Right, keep going until you see a big building, then turn left.",
+          "Sure, have a good trip!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Does this bus go to City Hall?",
+          "Oh, good! Where should I get off?",
+          "Great, thank you!"
+        ],
+        "B": [
+          "Yes, it does! This bus goes to City Hall.",
+          "Get off at the stop right in front of it. The announcement will tell you.",
+          "You're welcome!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Is there a bank near here?",
+          "Oh, down that way? Will I see it easily?",
+          "Alright! I’ll go check it out."
+        ],
+        "B": [
+          "Yes, when this alley ends, it’s on your right.",
+          "You’ll see a big blue sign.",
+          "Go ahead!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Is the museum far from here?",
+          "Oh, that’s good to hear! It’s closer than I thought.",
+          "Thanks so much for the directions!"
+        ],
+        "B": [
+          "Not really. It’s about a 10-minute walk.",
+          "Cross the street and go left—you’ll see it right away.",
+          "Enjoy your visit!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Is this the right way if I keep going?",
+          "Oh, so I’m almost there?",
+          "Okay, I’ll keep walking a bit more."
+        ],
+        "B": [
+          "Yes, this road leads to the main gate.",
+          "You’ll see it after about three more minutes.",
+          "You’re almost there—good luck!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Is there a pharmacy nearby?",
+          "Down that alley? I think I can find it!",
+          "Thank you, I’ll go right away."
+        ],
+        "B": [
+          "Yes, go into that alley and it’s right there.",
+          "Look for a blue cross sign—you can’t miss it.",
+          "Take your time!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Um… how do I get to the park from here?",
+          "Oh! So I can take a bus?",
+          "Great, thanks for explaining!"
+        ],
+        "B": [
+          "The park is a bit far. Taking the bus is easier.",
+          "Yes, it’s just two stops away.",
+          "No problem at all!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Is there a restroom nearby?",
+          "Ah, inside the café? I should be able to find it!",
+          "Thanks a lot!"
+        ],
+        "B": [
+          "Yes, go inside that café.",
+          "It’s next to the stairs, so it’s easy to spot.",
+          "Go ahead!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Could you look at this map? I’m not sure where I am.",
+          "Oh! I was going the wrong way?",
+          "Thanks, now I know where to go."
+        ],
+        "B": [
+          "Sure, where are you trying to go?",
+          "Yes, your destination is actually the opposite direction.",
+          "Hope you find it easily!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Is it easy to catch a taxi from here?",
+          "Ah! So I should go out to the main road?",
+          "Alright, I’ll head there now!"
+        ],
+        "B": [
+          "It’s a bit tough right here. It’s easier on the main road.",
+          "Yes, once you cross the street, lots of taxis pass by.",
+          "Have a great day!"
+        ]
+      }
+    }
+  ]
+}

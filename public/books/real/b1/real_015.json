@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "b1",
+    "id": "015"
+  },
+  "topic": "A customer comparing products",
+  "keywords": [
+    "customer",
+    "shopping",
+    "comparing products",
+    "store aisle",
+    "decision making",
+    "price tags"
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "015.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "target": "한 고객이 정돈된 제품들로 가득한 매장 통로에 서 있다.",
+          "en": "A customer is standing in a store aisle filled with neatly arranged products.",
+          "es": "Una clienta está de pie en un pasillo de tienda lleno de productos bien organizados.",
+          "fr": "Une cliente se tient dans une allée de magasin remplie de produits soigneusement rangés.",
+          "pt": "Uma cliente está parada em um corredor de loja cheio de produtos organizados."
+        },
+        {
+          "target": "그녀는 두 개의 상품을 손에 들고 라벨을 비교하고 있다.",
+          "en": "She is holding two items in her hands and comparing the labels.",
+          "es": "Tiene dos artículos en las manos y está comparando las etiquetas.",
+          "fr": "Elle tient deux articles dans ses mains et compare les étiquettes.",
+          "pt": "Ela segura dois itens nas mãos e compara os rótulos."
+        },
+        {
+          "target": "뒤쪽 선반에는 다양한 색상과 크기의 여러 브랜드가 진열되어 있다.",
+          "en": "A shelf behind her displays various brands in different colors and sizes.",
+          "es": "Un estante detrás de ella muestra varias marcas en distintos colores y tamaños.",
+          "fr": "Une étagère derrière elle présente diverses marques de différentes couleurs et tailles.",
+          "pt": "Uma prateleira atrás dela exibe várias marcas em diferentes cores e tamanhos."
+        },
+        {
+          "target": "팔에는 몇 가지 물건만 담긴 작은 장바구니가 걸려 있다.",
+          "en": "A small shopping basket hangs from her arm, containing only a few items.",
+          "es": "Una pequeña cesta de compras cuelga de su brazo con solo unos pocos artículos dentro.",
+          "fr": "Un petit panier suspendu à son bras contient seulement quelques articles.",
+          "pt": "Uma pequena cesta de compras pendurada em seu braço contém apenas alguns itens."
+        },
+        {
+          "target": "그녀는 어떤 선택이 더 저렴한지 확인하기 위해 가격표를 꼼꼼히 살핀다.",
+          "en": "She checks the price tags carefully to see which option is more affordable.",
+          "es": "Ella revisa cuidadosamente las etiquetas de precio para ver cuál opción es más económica.",
+          "fr": "Elle vérifie attentivement les étiquettes de prix pour voir quelle option est la plus abordable.",
+          "pt": "Ela verifica cuidadosamente as etiquetas de preço para ver qual opção é mais acessível."
+        },
+        {
+          "target": "밝은 천장 조명이 통로를 깔끔하고 정돈되어 보이게 한다.",
+          "en": "Bright overhead lighting makes the aisle look clear and organized.",
+          "es": "La luz brillante del techo hace que el pasillo se vea claro y ordenado.",
+          "fr": "Un éclairage vif au plafond rend l'allée claire et bien organisée.",
+          "pt": "A iluminação forte do teto deixa o corredor claro e organizado."
+        }
+      ]
+    }
+  ],
+  "tts": {
+    "en": [],
+    "fr": [],
+    "es": [],
+    "pt": [],
+    "kr": []
+  }
+}

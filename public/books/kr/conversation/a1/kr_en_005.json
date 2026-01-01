@@ -1,0 +1,175 @@
+{
+  "chapter_id": "005",
+  "cefr": "A1",
+  "title_en": "Family_Introduction",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "How is your family?",
+    "Do you have siblings?",
+    "What do your parents do?",
+    "Where does your family live?",
+    "Do you see your family often?"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "How is your family?",
+          "Oh, sounds like a warm family!",
+          "Tell me more about them someday!"
+        ],
+        "B": [
+          "I live with my parents and an older sister.",
+          "Everyone gets along well.",
+          "Sure, I can share more later!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Do you have any siblings?",
+          "Oh, that’s similar to me!",
+          "Your family seems really close!"
+        ],
+        "B": [
+          "Yes, I have a younger brother.",
+          "We play games together and get along well.",
+          "Yeah, we’re pretty close."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "What do your parents do?",
+          "Oh, they must work really hard!",
+          "I really respect that."
+        ],
+        "B": [
+          "My dad works at a company, and my mom runs a small shop.",
+          "They’re busy but enjoy what they do.",
+          "Thanks for saying that!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Where does your family live?",
+          "Oh, your hometown must feel nice!",
+          "I’d love to visit someday."
+        ],
+        "B": [
+          "My family lives outside the city.",
+          "It’s quiet and comfortable there.",
+          "You’re welcome anytime!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Do you see your family often?",
+          "Oh, that must make you closer.",
+          "Makes me want to visit my family too."
+        ],
+        "B": [
+          "Yes, I try to see them every weekend.",
+          "Talking and eating together makes me feel better.",
+          "Yeah, family gives a lot of strength."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Who are you closest to in your family?",
+          "Oh, sounds like you two get along great!",
+          "You must spend lots of time together."
+        ],
+        "B": [
+          "I’m closest to my sister.",
+          "We have similar personalities and talk a lot.",
+          "Yes, we chat often."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Do you travel with your family often?",
+          "Oh, must be lots of memories!",
+          "I bet you took many photos!"
+        ],
+        "B": [
+          "We used to travel often, but not recently.",
+          "Still, the memories are special.",
+          "Yes, looking at photos makes me miss it."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "How do you celebrate birthdays in your family?",
+          "Oh, that sounds warm and cozy!",
+          "I like simple birthdays like that too."
+        ],
+        "B": [
+          "We usually celebrate quietly at home.",
+          "Just cake and talking together is enough.",
+          "Yeah, simple feels better."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Do you share similar personalities with your family?",
+          "Oh, that makes things easier!",
+          "No wonder you get along well!"
+        ],
+        "B": [
+          "Yes, I’m a bit like my dad.",
+          "I’m pretty calm, like him.",
+          "Hearing that makes me happy."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "How is it living away from your family?",
+          "Oh, I understand that feeling.",
+          "But staying in touch helps a lot!"
+        ],
+        "B": [
+          "Sometimes I miss them and feel lonely.",
+          "But I call them often, so it’s okay.",
+          "Yeah, calls make a big difference."
+        ]
+      }
+    }
+  ]
+}

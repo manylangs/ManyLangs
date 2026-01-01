@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "a1",
+    "id": "002"
+  },
+  "title": {
+    "target": "받침 기본",
+    "en": "",
+    "es": "",
+    "fr": "",
+    "pt": "Consoantes finais básicas (Batchim)"
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침은 음절의 끝에 오는 자음을 말한다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Uma consoante final é uma consoante colocada no fim de uma sílaba."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침은 소리를 막아 주거나 짧게 끊어 주는 역할을 한다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "As consoantes finais bloqueiam ou interrompem o som por um momento."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침으로 올 수 있는 자음은 정해져 있다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Apenas algumas consoantes podem aparecer como consoantes finais."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "기본 받침은 ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅇ 일곱 가지이다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "As consoantes finais básicas são ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ e ㅇ."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침 ㄱ은 짧게 막히는 소리로 발음된다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "A consoante final ㄱ é pronunciada como um som curto e fechado."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침 ㄴ은 혀끝을 윗잇몸에 대고 내는 소리이다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "A consoante final ㄴ é produzida com a língua a tocar nas gengivas superiores."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침 ㅇ은 입을 열고 코로 울리는 소리이다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "A consoante final ㅇ é um som nasal feito com a boca aberta."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침이 있으면 그 음절은 닫힌 느낌으로 발음된다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Uma sílaba com consoante final soa mais fechada."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침이 다음 음절의 초성과 이어질 때 소리가 변하기도 한다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Uma consoante final pode alterar o som quando ligada à sílaba seguinte."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침은 한국어 발음의 기본적인 구조를 만든다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "As consoantes finais são uma parte fundamental da pronúncia coreana."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "나는 집에 있다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Estou em casa."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그는 공을 잡는다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Ele apanha uma bola."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "나는 밥을 먹는다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Eu como uma refeição."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "우리는 산에 간다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Vamos a uma montanha."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그녀는 길을 걷는다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Ela caminha na estrada."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "나는 밤을 좋아한다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Eu gosto da noite."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "나는 책을 읽는다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Eu leio um livro."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그는 꽃을 본다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Ele vê uma flor."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "나는 손을 씻는다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Eu lavo as mãos."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "우리는 빛을 본다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Vemos a luz."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그녀는 물을 받는다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Ela recebe água."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "나는 꿈을 꾼다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Eu tenho um sonho."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "나는 산책을 한다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Eu dou um passeio."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그는 책상에 앉는다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Ele senta-se à secretária."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "우리는 공원에 간다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Vamos ao parque."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "나는 연필을 든다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Eu seguro um lápis."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그녀는 음악을 듣는다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Ela ouve música."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그는 방에 들어간다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Ele entra no quarto."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "우리는 물건을 샀다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Comprámos um objeto."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "나는 길에서 기다린다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Eu espero na rua."
+      }
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a2",
+    "id": "015"
+  },
+  "title": {
+    "target": "A2 — 확장 일상 어휘",
+    "en": "A2 — Expanded Everyday Vocabulary",
+    "es": "A2 — Vocabulario cotidiano ampliado",
+    "fr": "A2 — Vocabulaire quotidien élargi",
+    "pt": "A2 — Vocabulário do dia a dia ampliado"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "할인",
+        "en": "discount",
+        "es": "descuento",
+        "fr": "réduction",
+        "pt": "desconto"
+      },
+      "examples": [
+        {
+          "target": "이번 주에는 큰 할인이 있어요.",
+          "en": "There is a big discount this week.",
+          "es": "Hay un gran descuento esta semana.",
+          "fr": "Il y a une grande réduction cette semaine.",
+          "pt": "Há um grande desconto esta semana."
+        },
+        {
+          "target": "할인 기간이 언제 끝나요?",
+          "en": "When does the discount period end?",
+          "es": "¿Cuándo termina el período de descuento?",
+          "fr": "Quand se termine la période de réduction ?",
+          "pt": "Quando termina o período de desconto?"
+        },
+        {
+          "target": "학생은 추가 할인이 가능해요.",
+          "en": "Students can get an additional discount.",
+          "es": "Los estudiantes pueden obtener un descuento adicional.",
+          "fr": "Les étudiants peuvent obtenir une réduction supplémentaire.",
+          "pt": "Estudantes podem receber um desconto adicional."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "쿠폰",
+        "en": "coupon",
+        "es": "cupón",
+        "fr": "coupon",
+        "pt": "cupom"
+      },
+      "examples": [
+        {
+          "target": "쿠폰을 사용하면 더 저렴해요.",
+          "en": "It's cheaper if you use a coupon.",
+          "es": "Es más barato si usas un cupón.",
+          "fr": "C’est moins cher si vous utilisez un coupon.",
+          "pt": "Fica mais barato se você usar um cupom."
+        },
+        {
+          "target": "쿠폰 유효 기간을 확인하세요.",
+          "en": "Check the coupon expiration date.",
+          "es": "Verifica la fecha de vencimiento del cupón.",
+          "fr": "Vérifiez la date d’expiration du coupon.",
+          "pt": "Verifique a data de validade do cupom."
+        },
+        {
+          "target": "쿠폰이 적용되지 않았어요.",
+          "en": "The coupon was not applied.",
+          "es": "El cupón no se aplicó.",
+          "fr": "Le coupon n’a pas été appliqué.",
+          "pt": "O cupom não foi aplicado."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "적립금",
+        "en": "reward points",
+        "es": "puntos acumulados",
+        "fr": "points de fidélité",
+        "pt": "pontos acumulados"
+      },
+      "examples": [
+        {
+          "target": "적립금을 사용할 수 있어요.",
+          "en": "You can use your reward points.",
+          "es": "Puedes usar tus puntos acumulados.",
+          "fr": "Vous pouvez utiliser vos points de fidélité.",
+          "pt": "Você pode usar seus pontos acumulados."
+        },
+        {
+          "target": "이번 구매로 적립금이 쌓였어요.",
+          "en": "You earned reward points with this purchase.",
+          "es": "Ganaste puntos con esta compra.",
+          "fr": "Vous avez gagné des points avec cet achat.",
+          "pt": "Você ganhou pontos com esta compra."
+        },
+        {
+          "target": "적립금 사용 조건을 확인해 주세요.",
+          "en": "Please check the conditions for using reward points.",
+          "es": "Verifica las condiciones para usar los puntos.",
+          "fr": "Veuillez vérifier les conditions d’utilisation des points.",
+          "pt": "Verifique as condições de uso dos pontos."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "서비스",
+        "en": "service",
+        "es": "servicio",
+        "fr": "service",
+        "pt": "serviço"
+      },
+      "examples": [
+        {
+          "target": "이 가게는 서비스가 좋아요.",
+          "en": "This store has good service.",
+          "es": "Esta tienda tiene buen servicio.",
+          "fr": "Ce magasin a un bon service.",
+          "pt": "Esta loja tem um bom serviço."
+        },
+        {
+          "target": "서비스 요청은 저쪽에서 해 주세요.",
+          "en": "Please make your service request over there.",
+          "es": "Para solicitudes de servicio, dirígete por allí.",
+          "fr": "Pour une demande de service, veuillez vous adresser là-bas.",
+          "pt": "Para solicitações de serviço, vá até ali."
+        },
+        {
+          "target": "서비스가 지연되고 있어요.",
+          "en": "The service is delayed.",
+          "es": "El servicio está retrasado.",
+          "fr": "Le service est retardé.",
+          "pt": "O serviço está atrasado."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "안내문",
+        "en": "information notice",
+        "es": "aviso informativo",
+        "fr": "avis d’information",
+        "pt": "aviso informativo"
+      },
+      "examples": [
+        {
+          "target": "안내문을 자세히 읽어 주세요.",
+          "en": "Please read the information notice carefully.",
+          "es": "Por favor, lea cuidadosamente el aviso informativo.",
+          "fr": "Veuillez lire attentivement l’avis d’information.",
+          "pt": "Por favor, leia atentamente o aviso informativo."
+        },
+        {
+          "target": "입구에 안내문이 붙어 있어요.",
+          "en": "There is an information notice posted at the entrance.",
+          "es": "Hay un aviso informativo en la entrada.",
+          "fr": "Un avis d’information est affiché à l’entrée.",
+          "pt": "Há um aviso informativo na entrada."
+        },
+        {
+          "target": "안내문 내용을 확인했습니다.",
+          "en": "I checked the information in the notice.",
+          "es": "Revisé la información del aviso.",
+          "fr": "J’ai vérifié les informations dans l’avis.",
+          "pt": "Verifiquei as informações do aviso."
+        }
+      ]
+    }
+  ]
+}

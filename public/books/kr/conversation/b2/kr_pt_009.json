@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "009",
+  "cefr": "B2",
+  "title_pt": "Smartphones e aplicações",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "A aplicação não abre.,",
+    "Tenho de a atualizar?,",
+    "A internet está a funcionar?,",
+    "O armazenamento está cheio?,",
+    "Onde altero esta definição?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Esta aplicação deixou de abrir de repente. Sabe porquê?",
+          "Ah, é? Então pode ser um problema da própria aplicação.",
+          "Certo, vou verificar se há alguma atualização."
+        ],
+        "B": [
+          "Ouvi dizer que saiu uma atualização hoje. Talvez a sua ainda não esteja atualizada.",
+          "Sim, versões antigas às vezes deixam de funcionar.",
+          "Atualizar a aplicação provavelmente resolverá o problema."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "A ligação à internet está a funcionar bem agora?",
+          "Ah, então o problema não deve ser do meu lado.",
+          "Está bem, vou limpar a cache da aplicação."
+        ],
+        "B": [
+          "Sim, o Wi-Fi está estável e a velocidade está boa.",
+          "Exacto, não parece ser um problema de ligação.",
+          "Limpar a cache costuma resolver estes problemas na hora."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Isto pode estar a acontecer porque o meu armazenamento está cheio?",
+          "Ah, parece que realmente acumulei ficheiros a mais!",
+          "Então vou apagar algumas fotos e vídeos."
+        ],
+        "B": [
+          "Sim, é possível. Quando o armazenamento está quase cheio, as aplicações podem falhar.",
+          "Os vídeos, sobretudo, ocupam bastante espaço.",
+          "Mesmo libertar um pouco já pode melhorar o desempenho do telemóvel."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Não estou a conseguir encontrar onde alterar esta definição.",
+          "Uau, o menu é mais complicado do que eu pensava.",
+          "Ah, já encontrei. É aqui que faço o ajuste."
+        ],
+        "B": [
+          "Se abrir as Definições e tocar em «Funcionalidades avançadas», deverá aparecer logo.",
+          "Sim, é normal ficar um pouco perdido da primeira vez.",
+          "Assim que ativar essa opção, a mudança entra em vigor imediatamente."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "A bateria não se está a esgotar demasiado depressa ultimamente?",
+          "Uau, então deve mesmo haver algum problema.",
+          "Acho que devo ativar o modo de poupança de energia."
+        ],
+        "B": [
+          "Sim, antes durava-lhe o dia inteiro.",
+          "Exacto, esgotar-se assim tão rápido não é normal.",
+          "O modo de poupança costuma ajudar um pouco."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Porque é que as notificações das aplicações chegam tão tarde?",
+          "Exactamente! Às vezes chegam todas de uma vez.",
+          "Vou desativar a restrição em segundo plano."
+        ],
+        "B": [
+          "Pode ser devido à otimização de bateria.",
+          "Sim, até notificações importantes podem sofrer atraso.",
+          "Depois de desativar essa definição, devem chegar quase de imediato."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "As minhas chamadas estão sempre a cair. Será do telemóvel?",
+          "Ah, se o sinal está tão instável, isso explica bastante.",
+          "Então vou retirar e voltar a inserir o cartão SIM."
+        ],
+        "B": [
+          "Há zonas com sinal fraco, mas ultimamente tem estado pior que o normal.",
+          "Sim, quando o sinal é fraco as chamadas caem logo.",
+          "Reinserir o SIM muitas vezes resolve o problema."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Já experimentou algumas das novas aplicações que saíram recentemente?",
+          "Ah, parece divertido receber recomendações personalizadas.",
+          "Então vou descarregá-la para experimentar eu própria."
+        ],
+        "B": [
+          "Sim, há muitas aplicações baseadas em IA hoje em dia.",
+          "Exacto, a que eu uso até analisa as minhas preferências.",
+          "Experimente e diga-me se gostar!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "O ecrã do meu telemóvel às vezes pisca. É algo grave?",
+          "Ainda bem… Pensei que estivesse avariado.",
+          "Então vou instalar as atualizações assim que a notificação aparecer."
+        ],
+        "B": [
+          "Normalmente é uma falha de software, por isso uma atualização deve resolver.",
+          "Sim, raramente é um problema físico do ecrã.",
+          "Manter o dispositivo atualizado é sempre a opção mais segura."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Transferir dados ao mudar de telemóvel não é muito difícil, pois não?",
+          "Ah, se tudo for transferido automaticamente, é muito prático.",
+          "Então vou mudar para o novo telemóvel este fim de semana."
+        ],
+        "B": [
+          "Hoje em dia, a maioria das aplicações faz quase tudo automaticamente.",
+          "Sim, até as fotos e conversas são transferidas tal como estão.",
+          "Ótimo! Mas mesmo assim recomendo fazer uma cópia de segurança."
+        ]
+      }
+    }
+  ]
+}
+

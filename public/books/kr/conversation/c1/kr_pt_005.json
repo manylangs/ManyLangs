@@ -1,0 +1,167 @@
+﻿{
+  "chapter_id": "005",
+  "cefr": "C1",
+  "title_pt": "Conduzir reuniões",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Comecemos por clarificar a agenda de hoje,",
+    "É um bom momento para partilhar a sua opinião?",
+    "Esta direção funciona para todos?",
+    "Posso coordenar os pontos, se necessário,",
+    "Vou整理 tudo e fechar a ata da reunião,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Antes de começarmos, vou resumir brevemente os pontos do dia.",
+          "Ótimo, atualizarei o rascunho com base nessa sugestão.",
+          "Certo, deixemos isto como uma decisão provisória."
+        ],
+        "B": [
+          "Perfeito! Que ordem prefere seguir?",
+          "Boa ideia — assim o fluxo ficará muito mais claro.",
+          "Combinado. Podemos ajustar mais tarde, se necessário."
+        ]
+      }
+    },
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Conseguem ver o ecrã partilhado sem problemas?",
+          "Então talvez devêssemos condensar um pouco esta explicação.",
+          "Certo, assumo a revisão deste parágrafo."
+        ],
+        "B": [
+          "Sim, vê-se perfeitamente. A formatação está muito limpa também.",
+          "Exato, por agora o texto parece um pouco longo.",
+          "Ótimo, volto a rever assim que fizerem a atualização."
+        ]
+      }
+    },
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Alguém quer comentar esta direção antes de avançarmos?",
+          "Boa observação — não tinha pensado nessa perspetiva.",
+          "Perfeito, integrarei esse ponto e整理 algumas alternativas."
+        ],
+        "B": [
+          "Acho que seria útil falar também dos riscos potenciais.",
+          "Sim, com isso em mente, devemos ajustar um pouco a abordagem.",
+          "Ótimo, depois podemos comparar as alternativas lado a lado."
+        ]
+      }
+    },
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Todos estão confortáveis com este calendário?",
+          "Entendo — então devemos acrescentar uma revisão intermédia.",
+          "Certo, vou atualizar o cronograma e partilhar a nova versão."
+        ],
+        "B": [
+          "Por mim está bem, apesar de a data limite parecer um pouco apertada.",
+          "Exato, um ponto de verificação a meio tornaria tudo mais seguro.",
+          "Perfeito, darei mais comentários depois de analisar a atualização."
+        ]
+      }
+    },
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Acho que devemos rever a lista de prioridades.",
+          "Ótimo, esse critério tornará a distribuição de tarefas mais clara.",
+          "Certo, vou整理 as prioridades e enviar uma versão revista."
+        ],
+        "B": [
+          "É verdade — a lista está um pouco confusa tal como está.",
+          "Sim, classificá-la por impacto e urgência ajudará bastante.",
+          "Perfeito, avise-me quando tiver a versão整理."
+        ]
+      }
+    },
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Podemos passar ao ponto seguinte da agenda?",
+          "Muito bem, prolongarei um pouco o tempo de discussão para este tema.",
+          "Perfeito, quando tudo estiver整理, pedirei a opinião final da equipa."
+        ],
+        "B": [
+          "Sim, podemos avançar — o ponto anterior está praticamente resolvido.",
+          "Exato, este tópico precisa de um pouco mais de debate.",
+          "Claro, envie-me a versão整理 quando estiver pronta."
+        ]
+      }
+    },
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "O que acham da estrutura atual do documento?",
+          "Entendido — reorganizar um pouco a estrutura melhorará a clareza.",
+          "Certo, reordenarei o conteúdo segundo essa sugestão."
+        ],
+        "B": [
+          "No geral está bom, mas a conclusão aparece demasiado cedo.",
+          "Sim, colocá-la mais adiante tornará a leitura mais natural.",
+          "Perfeito, voltarei a rever quando atualizarem a estrutura."
+        ]
+      }
+    },
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Acha que pode assumir esta parte?",
+          "Ah, ajustar o calendário tornará a tarefa mais viável.",
+          "Perfeito, então avance segundo o plano atualizado."
+        ],
+        "B": [
+          "Posso assumir, mas hoje o meu dia está bastante cheio.",
+          "Sim, com um dia adicional consigo fazê-lo com mais rigor.",
+          "Combinado, partilhe a sua disponibilidade e eu coordenarei o resto."
+        ]
+      }
+    },
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Mais algum comentário sobre o que vimos até agora?",
+          "Certo — isso resolve-se facilmente ajustando um ponto mais cedo.",
+          "Perfeito, prepararei uma proposta e apresentá-la-ei à equipa."
+        ],
+        "B": [
+          "Sim, um ponto: pode sobrepor-se a um calendário externo.",
+          "Certo, mas não deverá causar um problema sério.",
+          "Ótimo, revemos tudo em conjunto quando a proposta estiver pronta."
+        ]
+      }
+    },
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Muito bem,整理 a discussão de hoje fica por aqui.",
+          "Certo, prepararei materiais adicionais para a próxima reunião.",
+          "Obrigado(a) a todos pela colaboração!"
+        ],
+        "B": [
+          "Sim, ficou tudo muito bem estruturado.",
+          "Perfeito, analisaremos os documentos juntos na próxima sessão.",
+          "Obrigado(a) pela condução da reunião — ótimo trabalho!"
+        ]
+      }
+    }
+  ]
+}
+

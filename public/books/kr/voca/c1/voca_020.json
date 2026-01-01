@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "c1",
+    "id": "020"
+  },
+  "title": {
+    "target": "C1 — 학술•전문 개념 어휘",
+    "en": "C1 — Academic and Specialized Concept Vocabulary",
+    "es": "C1 — Vocabulario de conceptos académicos y especializados",
+    "fr": "C1 — Vocabulaire de concepts académiques et spécialisés",
+    "pt": "C1 — Vocabulário de conceitos acadêmicos e especializados"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "독자",
+        "en": "reader",
+        "es": "lector",
+        "fr": "lecteur",
+        "pt": "leitor"
+      },
+      "examples": [
+        {
+          "target": "독자의 배경지식은 텍스트 이해도에 영향을 준다.",
+          "en": "The reader’s background knowledge influences text comprehension.",
+          "es": "El conocimiento previo del lector influye en la comprensión del texto.",
+          "fr": "Les connaissances préalables du lecteur influencent la compréhension du texte.",
+          "pt": "O conhecimento prévio do leitor influencia a compreensão do texto."
+        },
+        {
+          "target": "독자의 관점에 따라 해석 결과가 달라질 수 있다.",
+          "en": "Interpretation results may differ depending on the reader’s perspective.",
+          "es": "La interpretación puede variar según la perspectiva del lector.",
+          "fr": "L’interprétation peut varier selon la perspective du lecteur.",
+          "pt": "A interpretação pode variar conforme a perspectiva do leitor."
+        },
+        {
+          "target": "작가는 독자의 반응을 고려하여 표현을 조정한다.",
+          "en": "Authors adjust their expression considering the reader’s reaction.",
+          "es": "El autor ajusta su expresión considerando la reacción del lector.",
+          "fr": "L’auteur ajuste son expression en tenant compte de la réaction du lecteur.",
+          "pt": "O autor ajusta sua expressão considerando a reação do leitor."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "청자",
+        "en": "listener",
+        "es": "oyente",
+        "fr": "auditeur",
+        "pt": "ouvinte"
+      },
+      "examples": [
+        {
+          "target": "청자의 이해도를 고려해 설명 방식을 조정해야 한다.",
+          "en": "The explanation style must be adjusted considering the listener’s level of understanding.",
+          "es": "El estilo de explicación debe ajustarse al nivel de comprensión del oyente.",
+          "fr": "Le style d’explication doit être ajusté selon le niveau de compréhension de l’auditeur.",
+          "pt": "O estilo de explicação deve ser ajustado considerando o nível de compreensão do ouvinte."
+        },
+        {
+          "target": "연설자는 청자의 반응을 확인하며 내용을 전개했다.",
+          "en": "The speaker developed the content while monitoring the listener’s reaction.",
+          "es": "El orador desarrolló su discurso observando la reacción del oyente.",
+          "fr": "L’orateur a développé son discours en observant les réactions de l’auditeur.",
+          "pt": "O orador desenvolveu o conteúdo observando a reação do ouvinte."
+        },
+        {
+          "target": "청자의 관심을 끄는 전략이 필요하다.",
+          "en": "Strategies are needed to capture the listener’s interest.",
+          "es": "Se necesitan estrategias para captar el interés del oyente.",
+          "fr": "Des stratégies sont nécessaires pour capter l’attention de l’auditeur.",
+          "pt": "São necessárias estratégias para captar o interesse do ouvinte."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "발화자",
+        "en": "speaker",
+        "es": "hablante",
+        "fr": "locuteur",
+        "pt": "falante"
+      },
+      "examples": [
+        {
+          "target": "발화자의 의도는 문맥 분석을 통해 파악할 수 있다.",
+          "en": "The speaker’s intention can be identified through context analysis.",
+          "es": "La intención del hablante puede identificarse mediante el análisis del contexto.",
+          "fr": "L’intention du locuteur peut être identifiée par l’analyse du contexte.",
+          "pt": "A intenção do falante pode ser identificada por meio da análise do contexto."
+        },
+        {
+          "target": "발화자의 감정은 억양과 표현 방식에서 드러난다.",
+          "en": "The speaker’s emotions are revealed through intonation and expression.",
+          "es": "Las emociones del hablante se revelan a través de la entonación y las expresiones.",
+          "fr": "Les émotions du locuteur se révèlent dans l’intonation et la manière d’exprimer.",
+          "pt": "As emoções do falante aparecem na entonação e na forma de expressão."
+        },
+        {
+          "target": "발화자의 배경은 메시지의 의미 형성에 영향을 준다.",
+          "en": "The speaker’s background affects the formation of meaning in the message.",
+          "es": "El trasfondo del hablante influye en la formación de significado del mensaje.",
+          "fr": "Le bagage du locuteur influence la formation du sens dans le message.",
+          "pt": "O contexto do falante influencia a formação do significado da mensagem."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "표기법",
+        "en": "notation",
+        "es": "notación",
+        "fr": "notation",
+        "pt": "notação"
+      },
+      "examples": [
+        {
+          "target": "표기법은 학문 분야에 따라 서로 다르게 사용된다.",
+          "en": "Notation is used differently depending on the academic field.",
+          "es": "La notación se utiliza de manera diferente según el campo académico.",
+          "fr": "La notation est utilisée différemment selon le domaine académique.",
+          "pt": "A notação é usada de maneiras diferentes dependendo do campo acadêmico."
+        },
+        {
+          "target": "정확한 표기법은 개념 전달의 명확성을 높인다.",
+          "en": "Accurate notation improves the clarity of concept delivery.",
+          "es": "Una notación precisa mejora la claridad en la transmisión de los conceptos.",
+          "fr": "Une notation précise améliore la clarté de la transmission des concepts.",
+          "pt": "Uma notação precisa melhora a clareza na transmissão de conceitos."
+        },
+        {
+          "target": "표기법의 차이는 해석의 차이를 가져올 수 있다.",
+          "en": "Differences in notation can lead to differences in interpretation.",
+          "es": "Las diferencias en la notación pueden generar diferencias en la interpretación.",
+          "fr": "Les différences de notation peuvent entraîner des différences d’interprétation.",
+          "pt": "Diferenças na notação podem gerar diferenças de interpretação."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "음운체계",
+        "en": "phonological system",
+        "es": "sistema fonológico",
+        "fr": "système phonologique",
+        "pt": "sistema fonológico"
+      },
+      "examples": [
+        {
+          "target": "음운체계는 언어의 발음 구조를 이루는 기본 요소이다.",
+          "en": "The phonological system is a fundamental component of a language’s sound structure.",
+          "es": "El sistema fonológico es un componente fundamental de la estructura sonora de una lengua.",
+          "fr": "Le système phonologique est un élément fondamental de la structure sonore d’une langue.",
+          "pt": "O sistema fonológico é um componente fundamental da estrutura sonora de uma língua."
+        },
+        {
+          "target": "언어마다 음운체계가 달라 다양한 발음 차이가 나타난다.",
+          "en": "Each language has a different phonological system, resulting in pronunciation differences.",
+          "es": "Cada lengua tiene un sistema fonológico diferente, lo que genera diferencias de pronunciación.",
+          "fr": "Chaque langue possède un système phonologique différent, ce qui entraîne des différences de prononciation.",
+          "pt": "Cada língua possui um sistema fonológico diferente, o que resulta em diferenças de pronúncia."
+        },
+        {
+          "target": "음운체계 분석은 언어학 연구의 핵심 영역 중 하나이다.",
+          "en": "Analyzing phonological systems is one of the core areas of linguistic research.",
+          "es": "El análisis de sistemas fonológicos es uno de los campos centrales de la investigación lingüística.",
+          "fr": "L’analyse des systèmes phonologiques est l’un des domaines centraux de la recherche linguistique.",
+          "pt": "A análise dos sistemas fonológicos é uma das áreas centrais da pesquisa linguística."
+        }
+      ]
+    }
+  ]
+}

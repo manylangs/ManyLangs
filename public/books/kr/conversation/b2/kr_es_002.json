@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "002",
+  "cefr": "B2",
+  "title_es": "Hospital y farmacia",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Quisiera pedir una cita médica,",
+    "Mis síntomas continúan,",
+    "¿Cómo saldrán los resultados del examen?,",
+    "¿Podría obtener una receta?,",
+    "¿Cómo debo tomar el medicamento?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Hola, quisiera pedir una cita. ¿Es posible?",
+          "Entonces, ¿cuál es el horario más temprano disponible?",
+          "Perfecto, reserve ese horario para mí."
+        ],
+        "B": [
+          "¡Hola! Sí, puedo ayudarle con eso.",
+          "El horario más temprano es hoy a las 3 p. m.",
+          "Muy bien, su cita está confirmada."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "He estado tosiendo mucho últimamente y estoy un poco preocupado.",
+          "Sí, los síntomas han empeorado estos últimos días.",
+          "De acuerdo, me haré el examen."
+        ],
+        "B": [
+          "Entiendo. ¿Cuándo comenzó la tos?",
+          "En ese caso podría ser un resfriado o bronquitis.",
+          "Le acompañaré a la sala de exámenes."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "¿Los resultados estarán listos pronto?",
+          "Vaya, es más rápido de lo que pensaba.",
+          "Bien, avíseme en cuanto estén listos."
+        ],
+        "B": [
+          "Sí, normalmente se obtienen en unos veinte minutos.",
+          "Deberíamos poder informarle enseguida.",
+          "Le llamaré en cuanto tengamos los resultados."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "¿Podría obtener una receta?",
+          "Mis síntomas son bastante fuertes, así que creo que necesito medicación.",
+          "Perfecto, gracias. Iré a la farmacia."
+        ],
+        "B": [
+          "Sí, por sus síntomas, un tratamiento le vendrá bien.",
+          "Le recetaré un jarabe para la tos y un antiinflamatorio.",
+          "La receta ya está impresa."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "¿Debo tomar el medicamento después de las comidas?",
+          "Ah, entonces solo debo seguir bien los horarios.",
+          "De acuerdo, tendré cuidado."
+        ],
+        "B": [
+          "Sí, lo ideal es tomarlo treinta minutos después de comer.",
+          "Mantener un horario constante ayuda a que funcione mejor.",
+          "Avíseme si necesita más explicaciones."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "¿Podría comprobar si tengo fiebre?",
+          "Oh, es más alta de lo que pensaba…",
+          "Entonces, ¿necesito una inyección?"
+        ],
+        "B": [
+          "Claro, voy a tomarle la temperatura.",
+          "Está por encima de 38 grados, así que necesita algo para la fiebre.",
+          "Sí, una inyección ayudará a bajarla."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "¿El tratamiento incluye también algo para las alergias?",
+          "Ah, qué bien. Mis alergias han estado fuertes estos días.",
+          "Muy bien, tendré cuidado."
+        ],
+        "B": [
+          "Sí, también he añadido un antihistamínico.",
+          "Eso debería aliviar sus síntomas.",
+          "Puede causar somnolencia, así que evite conducir."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "¿Hay una farmacia en este edificio?",
+          "Qué bien, ¡justo al lado es muy conveniente!",
+          "Perfecto, iré ahora mismo."
+        ],
+        "B": [
+          "Sí, hay una farmacia en la planta baja.",
+          "Por lo general, casi no hay tiempo de espera.",
+          "Una vez tenga sus medicamentos, ya estará todo listo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "¿Puedo recibir también los resultados por correo electrónico?",
+          "Genial, así será más fácil guardarlos.",
+          "De acuerdo, envíemelos por favor."
+        ],
+        "B": [
+          "Sí, podemos enviárselos por correo electrónico.",
+          "Los recibirá en PDF para que pueda revisarlos cuando quiera.",
+          "Confírmeme su dirección y se los envío enseguida."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "¿Cómo debo pagar la consulta hoy?",
+          "Perfecto, ¡puedo pagar con tarjeta!",
+          "Muy bien, pagaré ahora y me marcho."
+        ],
+        "B": [
+          "Puede pagar en la recepción.",
+          "Sí, aceptamos tarjeta y efectivo.",
+          "Aquí tiene su recibo. ¡Le deseo una pronta recuperación!"
+        ]
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,167 @@
+﻿{
+  "chapter_id": "001",
+  "cefr": "C1",
+  "title_fr": "Entretien d’embauche",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Pourriez-vous m’en dire un peu plus ?",
+    "Pourriez-vous expliquer votre expérience en détail ?",
+    "Je pense pouvoir apporter une réelle contribution dans ce rôle,",
+    "Y a-t-il autre chose que vous aimeriez savoir ?",
+    "J’attends votre retour avec impatience,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Bonjour, merci d’avoir pris le temps de me rencontrer aujourd’hui.",
+          "Bien sûr, je peux vous présenter le projet sur lequel j’ai travaillé.",
+          "Oui, je peux assumer ce type de responsabilité immédiatement."
+        ],
+        "B": [
+          "Enchanté ! Parlons-en librement.",
+          "D’accord. Quel était exactement votre rôle dans ce projet ?",
+          "Très bien. On peut donc compter sur votre expérience dans ce domaine."
+        ]
+      }
+    },
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Pourriez-vous m’expliquer les principales responsabilités de ce poste ?",
+          "Je vois, cette structure rend la collaboration plus claire.",
+          "Oui, je peux gérer ce planning sans aucun problème."
+        ],
+        "B": [
+          "Bien sûr ! Ce poste implique beaucoup de coordination de projets.",
+          "Exact, la communication entre équipes est essentielle.",
+          "Parfait. Une bonne gestion du temps est vraiment importante ici."
+        ]
+      }
+    },
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Pourriez-vous me parler un peu de la culture d’entreprise ?",
+          "Ah, ça semble vraiment être un environnement positif.",
+          "Oui, je pense que je travaillerais bien dans un cadre flexible."
+        ],
+        "B": [
+          "Bien sûr ! Nous valorisons l’autonomie et la responsabilité.",
+          "Exactement, il y a beaucoup de respect mutuel dans l’équipe.",
+          "Super. Votre style semble bien correspondre au nôtre."
+        ]
+      }
+    },
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Je suis aussi curieux de connaître la trajectoire d’évolution de ce poste.",
+          "Ah, donc les responsabilités s’élargissent progressivement !",
+          "Oui, je suis prêt à assumer un rôle de ce niveau."
+        ],
+        "B": [
+          "Très bonne question ! Ce poste peut évoluer vers un rôle de lead.",
+          "Exact, et les projets deviennent plus importants également.",
+          "Je vois que vous avez une réelle motivation pour progresser."
+        ]
+      }
+    },
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Souhaitez-vous jeter un œil à mon portfolio ?",
+          "Cette section montre comment j’ai amélioré l’expérience utilisateur.",
+          "Oui, c’est ainsi que j’ai analysé puis résolu le problème."
+        ],
+        "B": [
+          "Avec plaisir, voyons cela.",
+          "Oh, les résultats d’amélioration sont impressionnants !",
+          "Excellent. Votre approche est très structurée."
+        ]
+      }
+    },
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Pourriez-vous me parler de la structure de l’équipe ?",
+          "D’accord, cette répartition des rôles semble efficace.",
+          "Oui, je pense que je collaborerais bien dans ce cadre."
+        ],
+        "B": [
+          "Nous avons actuellement une équipe de six personnes avec des rôles bien définis.",
+          "Exact, cela permet d’assurer efficacité et responsabilité.",
+          "Et l’ambiance dans l’équipe est très stable."
+        ]
+      }
+    },
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Quelle est la difficulté du travail au début ?",
+          "Ah, donc il y a suffisamment de temps pour s’adapter.",
+          "Oui, dans ce cas je pourrai contribuer rapidement."
+        ],
+        "B": [
+          "Au début c’est modéré, puis cela devient plus complexe.",
+          "Exact, notre processus d’intégration est très bien organisé.",
+          "Super attitude. C’est toujours bon signe."
+        ]
+      }
+    },
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Puis-je vous poser quelques questions sur les conditions de travail ?",
+          "Oui, un emploi du temps flexible me convient parfaitement.",
+          "D’accord, je n’aurai aucun problème à m’adapter à ce système."
+        ],
+        "B": [
+          "Bien sûr ! Nous utilisons un système d’horaires flexibles.",
+          "Exact, c’est l’une des raisons du haut niveau de satisfaction ici.",
+          "Très bien. Les conditions semblent vous convenir aussi."
+        ]
+      }
+    },
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Sur quoi devrais-je me concentrer le plus en préparant ce poste ?",
+          "Oui, je me prépare déjà dans ce sens.",
+          "Merci. J’utiliserai vos conseils pour m’améliorer encore."
+        ],
+        "B": [
+          "Très bonne question ! La résolution de problèmes est la clé.",
+          "Oh, on dirait que vous êtes déjà bien préparé !",
+          "Exact. Avec cette attitude, vous progresserez rapidement ici."
+        ]
+      }
+    },
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "N’hésitez pas à me dire si vous avez d’autres questions.",
+          "Ah, le processus est très clair. Merci pour l’explication.",
+          "Merci de m’avoir donné l’occasion de passer cet entretien."
+        ],
+        "B": [
+          "Bien sûr ! Je vous explique brièvement les prochaines étapes.",
+          "Nous examinerons tout et reviendrons vers vous rapidement.",
+          "Merci à vous aussi. Attendez-vous à de bonnes nouvelles bientôt !"
+        ]
+      }
+    }
+  ]
+}
+

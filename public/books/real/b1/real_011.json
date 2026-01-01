@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "b1",
+    "id": "011"
+  },
+  "topic": "A mechanic inspecting a car",
+  "keywords": [
+    "mechanic",
+    "car inspection",
+    "garage",
+    "engine check",
+    "tools",
+    "flashlight"
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "011.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "target": "한 정비사가 차고 안에서 은색 자동차 옆에 서 있다.",
+          "en": "A mechanic is standing beside a silver car inside a garage.",
+          "es": "Un mecánico está de pie junto a un coche plateado dentro de un taller.",
+          "fr": "Un mécanicien se tient à côté d'une voiture argentée dans un garage.",
+          "pt": "Um mecânico está parado ao lado de um carro prateado dentro de uma garagem."
+        },
+        {
+          "target": "그는 열린 엔진룸을 살펴보기 위해 몸을 앞으로 숙이고 있다.",
+          "en": "He is leaning forward to examine the open engine compartment.",
+          "es": "Se inclina hacia adelante para examinar el compartimento del motor abierto.",
+          "fr": "Il se penche en avant pour examiner le compartiment moteur ouvert.",
+          "pt": "Ele se inclina para a frente para examinar o compartimento do motor aberto."
+        },
+        {
+          "target": "정비사는 엔진 깊은 부분을 확인하려 작은 손전등을 들고 있다.",
+          "en": "The mechanic holds a small flashlight to check deeper parts of the motor.",
+          "es": "El mecánico sostiene una pequeña linterna para revisar las partes más profundas del motor.",
+          "fr": "Le mécanicien tient une petite lampe de poche pour vérifier les parties plus profondes du moteur.",
+          "pt": "O mecânico segura uma pequena lanterna para verificar partes mais profundas do motor."
+        },
+        {
+          "target": "그의 뒤 작업대에는 여러 도구가 가지런히 놓여 있다.",
+          "en": "Several tools are arranged neatly on a workbench behind him.",
+          "es": "Varias herramientas están ordenadas cuidadosamente en una mesa de trabajo detrás de él.",
+          "fr": "Plusieurs outils sont soigneusement disposés sur un établi derrière lui.",
+          "pt": "Várias ferramentas estão organizadas cuidadosamente em uma bancada atrás dele."
+        },
+        {
+          "target": "정비사는 엔진을 살피며 깊이 집중한 표정을 짓고 있다.",
+          "en": "His expression shows strong concentration as he studies the engine.",
+          "es": "Su expresión muestra una fuerte concentración mientras observa el motor.",
+          "fr": "Son expression montre une forte concentration tandis qu'il étudie le moteur.",
+          "pt": "Sua expressão mostra forte concentração enquanto observa o motor."
+        },
+        {
+          "target": "빨간 공구함이 자동차 앞바퀴 옆에 놓여 있다.",
+          "en": "A red toolbox is placed beside the car's front tire.",
+          "es": "Una caja de herramientas roja está colocada junto al neumático delantero del coche.",
+          "fr": "Une boîte à outils rouge est placée à côté du pneu avant de la voiture.",
+          "pt": "Uma caixa de ferramentas vermelha está colocada ao lado do pneu dianteiro do carro."
+        }
+      ]
+    }
+  ],
+  "tts": {
+    "en": [],
+    "fr": [],
+    "es": [],
+    "pt": [],
+    "kr": []
+  }
+}

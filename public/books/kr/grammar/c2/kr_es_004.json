@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "c2",
+    "id": "004"
+  },
+  "title": {
+    "target": "-(으)ㄹ락 말락 하다",
+    "en": "",
+    "es": "Estar a punto de / Casi (ocurrir)",
+    "fr": "",
+    "pt": ""
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'-(으)ㄹ락 말락 하다'는 어떤 사건이 일어날 듯 말 듯한 아슬아슬한 상황을 표현한다.",
+        "en": "",
+        "es": "Esta forma describe una situación en la que un evento está a punto de ocurrir, pero finalmente no sucede.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "실제로 일어나지 않았거나, 일어나는 순간에 가까웠음을 강조한다.",
+        "en": "",
+        "es": "Enfatiza que el evento casi ocurrió o alcanzó el punto de realización.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "물리적 상황뿐 아니라 감정·결정·변화 등 추상적 상황에도 사용된다.",
+        "en": "",
+        "es": "Se aplica no solo a situaciones físicas, sino también a emociones, decisiones o cambios abstractos.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "두 가능성이 공존하나, 실제로는 '거의 일어날 뻔함'에 무게가 실린다.",
+        "en": "",
+        "es": "Coexisten dos posibilidades, pero el matiz se inclina hacia ‘casi ocurrió’.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문어·구어 모두 사용되지만, 분석적·서술적 글에서 더 자연스럽다.",
+        "en": "",
+        "es": "Aparece tanto en lenguaje hablado como escrito, pero es más natural en textos analíticos o descriptivos.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "위험·실수·손실 등 부정적 맥락에서 자주 등장한다.",
+        "en": "",
+        "es": "Se usa con frecuencia en contextos que implican riesgo, errores o posibles pérdidas.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "사건의 경계선에서 일어난 긴장감이나 불확실성을 효과적으로 드러낸다.",
+        "en": "",
+        "es": "Transmite eficazmente la tensión o incertidumbre en el límite de un evento.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "시간적 여유가 거의 없는 급박한 상황을 서술할 때 적합하다.",
+        "en": "",
+        "es": "Es adecuada para describir situaciones urgentes con muy poco margen de tiempo.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "결과가 성립되기 직전의 미세한 차이를 강조하는 표현이다.",
+        "en": "",
+        "es": "Resalta el pequeño margen que faltó para que el resultado ocurriera.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "주관적 판단이 개입될 수 있으나, 객관적인 서술에서도 널리 쓰인다.",
+        "en": "",
+        "es": "Aunque puede incluir juicio subjetivo, también se utiliza ampliamente en descripciones objetivas.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "기록이 삭제될락 말락 해서 즉시 백업을 진행했다.",
+        "en": "",
+        "es": "El registro estaba a punto de ser eliminado, así que se realizó una copia de seguridad inmediata.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "서류가 사라질락 말락 해 모두가 긴장했다.",
+        "en": "",
+        "es": "Los documentos estaban a punto de desaparecer, lo que puso a todos tensos.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "전원이 꺼질락 말락 해 장비 점검이 서둘러 진행되었다.",
+        "en": "",
+        "es": "La electricidad estaba a punto de cortarse, así que se realizaron comprobaciones rápidas del equipo.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "차가 미끄러질락 말락 해 운전자가 급히 방향을 잡았다.",
+        "en": "",
+        "es": "El coche casi se deslizó, así que el conductor corrigió la dirección rápidamente.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "회의가 취소될락 말락 했지만 결국 예정대로 진행되었다.",
+        "en": "",
+        "es": "La reunión estuvo a punto de cancelarse, pero finalmente se llevó a cabo según lo previsto.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "데이터가 손상될락 말락 해 긴급 복구가 필요했다.",
+        "en": "",
+        "es": "Los datos estuvieron a punto de dañarse, por lo que fue necesaria una recuperación de emergencia.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "연결이 끊어질락 말락 해서 통신팀이 즉각 조치를 취했다.",
+        "en": "",
+        "es": "La conexión estuvo a punto de caerse, así que el equipo de comunicaciones actuó de inmediato.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "보고가 누락될락 말락 해 검토 과정이 강화되었다.",
+        "en": "",
+        "es": "El informe estuvo a punto de omitirse, por lo que se reforzó el proceso de revisión.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "계약이 무산될락 말락 했으나 마지막 협상에서 합의가 이루어졌다.",
+        "en": "",
+        "es": "El contrato estuvo a punto de fracasar, pero se logró un acuerdo en la última negociación.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "규모가 축소될락 말락 해 대안 마련이 시급했다.",
+        "en": "",
+        "es": "La escala estuvo a punto de reducirse, así que preparar alternativas se volvió urgente.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "예약이 취소될락 말락 해 대응팀이 빠르게 확인했다.",
+        "en": "",
+        "es": "La reserva estuvo a punto de cancelarse, así que el equipo de respuesta la verificó rápidamente.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "마감이 안 지켜질락 말락 해 작업이 밤까지 이어졌다.",
+        "en": "",
+        "es": "El plazo estuvo a punto de incumplirse, así que el trabajo continuó hasta tarde en la noche.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "설계 오류가 드러날락 말락 해 전체 검토가 다시 이루어졌다.",
+        "en": "",
+        "es": "Un error de diseño estuvo a punto de revelarse, por lo que se realizó una revisión completa nuevamente.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "안전 기준에 미달할락 말락 해 추가 점검이 요구되었다.",
+        "en": "",
+        "es": "El proyecto estuvo a punto de no cumplir las normas de seguridad, así que se exigieron inspecciones adicionales.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "성과가 뒤집힐락 말락 해 보고 절차가 더욱 엄격해졌다.",
+        "en": "",
+        "es": "El resultado estuvo a punto de revertirse, por lo que el proceso de reporte se volvió más estricto.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "투자 결정이 철회될락 말락 해 분석 보고서가 긴급히 제출되었다.",
+        "en": "",
+        "es": "La decisión de inversión estuvo a punto de retirarse, así que se presentó un informe de análisis urgentemente.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "지표가 기준선을 벗어날락 말락 해 조정이 반복되었다.",
+        "en": "",
+        "es": "El indicador estuvo a punto de caer por debajo del nivel base, así que se realizaron ajustes repetidos.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "결과가 바뀔락 말락 해 관련 부서가 지속적으로 협의했다.",
+        "en": "",
+        "es": "El resultado estuvo a punto de cambiar, por lo que los departamentos relacionados continuaron sus discusiones.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "혼선이 생길락 말락 해 안내 체계가 강화되었다.",
+        "en": "",
+        "es": "La confusión estuvo a punto de producirse, así que se reforzó el sistema de orientación.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "문제가 재발할락 말락 해 대책 회의가 즉시 소집되었다.",
+        "en": "",
+        "es": "El problema estuvo a punto de repetirse, así que se convocó inmediatamente una reunión de emergencia.",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  ]
+}

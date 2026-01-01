@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "b1",
+    "id": "006"
+  },
+  "topic": "Friends planning a trip with a map",
+  "keywords": [
+    "friends",
+    "planning",
+    "trip",
+    "map",
+    "discussion",
+    "table",
+    "pointing",
+    "notes"
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "006.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "target": "두 친구가 큰 접힌 지도를 보며 테이블에 앉아 있다.",
+          "en": "Two friends sit at a table looking over a large folded map.",
+          "es": "Dos amigos están sentados a una mesa revisando un mapa grande y doblado.",
+          "fr": "Deux amis sont assis à une table en train de regarder une grande carte pliée.",
+          "pt": "Dois amigos estão sentados a uma mesa olhando um grande mapa dobrado."
+        },
+        {
+          "target": "한 명은 지도의 한 위치를 가리키고 다른 한 명은 작은 노트에 메모를 한다.",
+          "en": "One friend points to a location while the other takes notes in a small notebook.",
+          "es": "Uno de los amigos señala un lugar mientras el otro toma notas en una libreta pequeña.",
+          "fr": "L'un des amis pointe un endroit tandis que l'autre prend des notes dans un petit carnet.",
+          "pt": "Um dos amigos aponta para um local enquanto o outro faz anotações em um caderno pequeno."
+        },
+        {
+          "target": "두 사람은 몸을 앞으로 기울이며 가능한 경로와 목적지에 대해 이야기한다.",
+          "en": "Both friends lean forward, discussing possible routes and destinations.",
+          "es": "Ambos se inclinan hacia adelante, hablando sobre posibles rutas y destinos.",
+          "fr": "Les deux amis se penchent en avant, discutant des itinéraires et destinations possibles.",
+          "pt": "Ambos se inclinam para frente, discutindo possíveis rotas e destinos."
+        },
+        {
+          "target": "한 명은 휴대폰으로 교통편 시간표를 확인한다.",
+          "en": "One friend checks their phone for transportation schedules.",
+          "es": "Uno de los amigos revisa su teléfono para ver los horarios de transporte.",
+          "fr": "L'un des amis vérifie son téléphone pour consulter les horaires de transport.",
+          "pt": "Um dos amigos verifica o telefone para ver horários de transporte."
+        },
+        {
+          "target": "그들은 지도를 표시해 가며 다양한 여행 옵션을 비교한다.",
+          "en": "They compare different travel options while marking places on the map.",
+          "es": "Comparan diferentes opciones de viaje mientras marcan lugares en el mapa.",
+          "fr": "Ils comparent différentes options de voyage tout en marquant des lieux sur la carte.",
+          "pt": "Eles comparam diferentes opções de viagem enquanto marcam lugares no mapa."
+        },
+        {
+          "target": "다가올 여행을 계획하며 분위기는 설레면서도 집중되어 있다.",
+          "en": "The atmosphere feels excited and focused as they plan their upcoming trip.",
+          "es": "El ambiente se siente emocionante y enfocado mientras planean su próximo viaje.",
+          "fr": "L'atmosphère est à la fois enthousiaste et concentrée alors qu'ils préparent leur prochain voyage.",
+          "pt": "O ambiente parece animado e concentrado enquanto planejam a próxima viagem."
+        }
+      ]
+    }
+  ],
+  "tts": {
+    "en": [],
+    "fr": [],
+    "es": [],
+    "pt": [],
+    "kr": []
+  }
+}

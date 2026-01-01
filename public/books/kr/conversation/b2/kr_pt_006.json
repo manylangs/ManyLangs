@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "006",
+  "cefr": "B2",
+  "title_pt": "Reserva de alojamento",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Têm quartos disponíveis?,",
+    "A que horas é o check-in?,",
+    "Gostaria de um quarto duplo.,",
+    "O pequeno-almoço está incluído?,",
+    "Qual é a tarifa?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Olá, têm quartos disponíveis para este fim de semana?",
+          "Estou a pensar fazer o check-in no sábado à tarde.",
+          "Têm um quarto duplo onde eu possa ficar confortavelmente?"
+        ],
+        "B": [
+          "Olá! Claro, diga-me as datas e eu verifico.",
+          "Sim, esse horário funciona bem! Também pode escolher o tipo de cama.",
+          "Sim, há um quarto duplo disponível. Quer que o reserve?"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Também têm quartos com pequeno-almoço incluído?",
+          "Ótimo! Seria mais prático com o pequeno-almoço.",
+          "Pode dizer-me qual é a tarifa?"
+        ],
+        "B": [
+          "Sim, temos essa opção. É bastante popular.",
+          "Exacto, e o horário do pequeno-almoço é flexível.",
+          "Para um quarto duplo, a tarifa é de 90 000 won por noite."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "A partir de que horas é possível fazer o check-in?",
+          "Perfeito, isso combina bem com a minha hora de chegada.",
+          "Há algum problema se eu chegar um pouco mais tarde?"
+        ],
+        "B": [
+          "O check-in começa às 15h.",
+          "Ótimo, assim pode vir sem pressa.",
+          "Claro, basta avisar-nos com antecedência."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Têm parque de estacionamento que eu possa usar?",
+          "Que bom! É ótimo que seja gratuito.",
+          "Então é só perguntar na receção, certo?"
+        ],
+        "B": [
+          "Sim, o estacionamento é gratuito para os hóspedes.",
+          "Exactamente! A maioria acha muito prático.",
+          "Sim, a receção dará todas as indicações quando chegar."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Têm quartos com janelas grandes?",
+          "Ah, perfeito! A luz natural é importante para mim.",
+          "Gostaria de reservar esse quarto, por favor."
+        ],
+        "B": [
+          "Sim, temos um quarto com boa vista disponível.",
+          "Sim, tem muita luz. Os hóspedes gostam imenso.",
+          "Muito bem, vou reservar esse quarto para si."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Têm quartos para fumadores?",
+          "Ah, percebo. Um quarto para não fumadores serve perfeitamente!",
+          "Se possível, um quarto junto à janela seria ainda melhor."
+        ],
+        "B": [
+          "Atualmente, todo o alojamento é para não fumadores.",
+          "Sim! Muitos preferem esses quartos por serem mais limpos.",
+          "Claro, farei o possível dentro das opções disponíveis."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "É possível ficar hospedado com um animal de estimação?",
+          "Ah, então só aceitam cães de pequeno porte!",
+          "Então, desde que eu siga as regras, está tudo bem?"
+        ],
+        "B": [
+          "Sim, cães de pequeno porte são permitidos.",
+          "Exacto, e a taxa adicional não é elevada.",
+          "Sim, basta seguir as orientações que damos no check-in."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Posso pagar no local também?",
+          "Perfeito! Então pagarei no check-in.",
+          "Pode dizer-me qual é a vossa política de cancelamento?"
+        ],
+        "B": [
+          "Sim, pode pagar no local ou antecipadamente.",
+          "Sim! Normalmente é a opção mais prática.",
+          "Pode cancelar gratuitamente até um dia antes da estadia."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Cada quarto tem casa de banho privada?",
+          "Perfeito, uma casa de banho privada é suficiente.",
+          "Os produtos de higiene também estão incluídos, certo?"
+        ],
+        "B": [
+          "Sim, todos os quartos têm casa de banho privada.",
+          "Sim! A maioria dos hóspedes acha isso muito confortável.",
+          "Sim, os produtos essenciais estão incluídos."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Pode confirmar a reserva para mim?",
+          "Ótimo! Receber a confirmação por mensagem seria muito útil.",
+          "Muito obrigada! Estou ansiosa pela estadia."
+        ],
+        "B": [
+          "Sim, vou confirmá-la agora mesmo.",
+          "Enviarei uma mensagem. Avise-nos quando chegar!",
+          "Desejo-lhe uma excelente viagem!"
+        ]
+      }
+    }
+  ]
+}
+

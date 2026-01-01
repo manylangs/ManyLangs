@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "007",
+  "cefr": "C1",
+  "title_en": "Email Communication",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Please check the email when you can,",
+    "Please refer to the attached file,",
+    "I’ll take care of it as soon as you reply,",
+    "Do you have anything to add?,",
+    "Please get back to me after reviewing,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "I just sent you an email. Could you take a look when you have a moment?",
+          "I organized the materials you requested and attached them to the message.",
+          "If anything seems missing, please let me know."
+        ],
+        "B": [
+          "Oh, I just saw the notification! Opening it now.",
+          "Wow, everything is organized really well.",
+          "Sure, I’ll review it and let you know if anything else is needed."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "I still haven’t heard back from the email I sent yesterday.",
+          "I thought you might have been too busy to check it, so I wanted to follow up.",
+          "Feel free to reply whenever it’s convenient for you."
+        ],
+        "B": [
+          "Ah, sorry! I just checked it.",
+          "There was more content than I expected, so I’ve been reviewing it carefully.",
+          "I’ll整理my thoughts and send a reply shortly."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "I emailed you the meeting minutes a little earlier.",
+          "I summarized only the key points so it’s easier to read.",
+          "If you need a full version with details, I can send that too."
+        ],
+        "B": [
+          "Great! The summary is much easier to go through.",
+          "Thanks to that, I could grasp the main points right away.",
+          "Yes, please share the detailed version as well."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "I realized the meeting time in the email could be confusing.",
+          "The final time is confirmed for 3 p.m. today.",
+          "Sorry if the earlier message caused any confusion."
+        ],
+        "B": [
+          "Oh, thanks for clarifying!",
+          "I was actually a bit unsure about the time too.",
+          "Got it — I’ll be ready at 3 p.m."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Could you check if the attachment opens properly?",
+          "The file size is a bit large, so I was worried it might cause issues.",
+          "If you prefer another format, I can convert it for you."
+        ],
+        "B": [
+          "I just opened it — no problems at all!",
+          "Thanks for checking proactively.",
+          "If I need a different format later, I’ll let you know."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "I also included the draft agenda in the email.",
+          "It’s just a simple outline for now, so it’s flexible.",
+          "Please share any opinions or adjustments you’d like to make."
+        ],
+        "B": [
+          "Nice, the draft looks good. The overall structure is clear.",
+          "With a few small tweaks, it should be ready to use.",
+          "I’ll整理my suggestions and email them to you soon."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Was the email subject too long by any chance?",
+          "I made it a bit lengthy to make the purpose clear.",
+          "If you'd like, I can simplify it."
+        ],
+        "B": [
+          "No, actually it was helpful!",
+          "I could guess the content right away from the subject line.",
+          "The current style works well — no need to change it."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "I was worried my email responses might be too slow lately.",
+          "I was checking an issue, so my reply was a bit delayed.",
+          "But I’m doing my best to handle things quickly."
+        ],
+        "B": [
+          "Oh, I totally understand! Things have been busy for you.",
+          "I don’t mind waiting. Accuracy matters more than speed.",
+          "If you need anything from me, just let me know."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Have you reviewed the updated document I shared yesterday?",
+          "I made significant changes to the structure of page two.",
+          "If you'd prefer a different direction, I can revise it again."
+        ],
+        "B": [
+          "Yes, I just reviewed it thoroughly!",
+          "The updated layout on page two looks fantastic.",
+          "I think the current version works very well."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "I’m planning to send the final email later today.",
+          "Once the internal review is done, I’ll forward it immediately.",
+          "Please let me know if we need to adjust the deadline."
+        ],
+        "B": [
+          "Thanks for letting me know!",
+          "It sounds like we’re nearly finished.",
+          "If anything changes with the schedule, I’ll update you right away."
+        ]
+      }
+    }
+  ]
+}
+

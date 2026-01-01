@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "b1",
+    "id": "006"
+  },
+  "title": {
+    "target": "-(으)ㄴ 지 (경과)",
+    "en": "",
+    "es": "",
+    "fr": "Exprimer le temps écoulé avec -(으)ㄴ 지",
+    "pt": ""
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "동사 뒤에 -(으)ㄴ 지를 붙이면 어떤 행동이 시작된 후 '얼마의 시간이 지났는지'를 표현한다.",
+        "en": "",
+        "es": "",
+        "fr": "La terminaison -(으)ㄴ 지 sert à exprimer le temps écoulé depuis le début d’une action.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "주로 '-(으)ㄴ 지 ~ 되다' 형태로 함께 쓰여 시간 경과를 나타낸다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle apparaît souvent avec ‘-(으)ㄴ 지 ~ 되다’ pour indiquer le passage du temps.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "과거에 시작된 행동이 현재까지 이어지고 있다는 느낌을 포함한다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle implique généralement qu’une action a commencé dans le passé et reste liée au présent.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "보통 생활 습관, 경험, 상태 변화 등을 말할 때 사용한다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle est couramment utilisée pour parler d’habitudes, d’expériences ou de changements d’état.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "사람·장소·상황 등에 대해 '~한 지 오래되다', '~한 지 얼마 안 되다'처럼 자연스럽게 쓴다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle s’emploie naturellement dans des expressions telles que « Ça fait longtemps que ~ » ou « Ça ne fait pas longtemps que ~ ».",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "부정형은 '-지 않은 지', '-지 못한 지'처럼 사용된다.",
+        "en": "",
+        "es": "",
+        "fr": "Les formes négatives incluent « depuis que je n’ai pas ~ » ou « depuis que je n’ai pas pu ~ ».",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "과거 시점과 현재 상황을 자연스럽게 연결하는 데 유용하다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle permet de relier facilement des actions passées à des situations actuelles.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "감정 변화나 관계 변화에도 자주 쓰이는 패턴이다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle est aussi utilisée pour décrire des changements émotionnels ou relationnels.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문장에 기간(1년, 오래, 얼마 안 되어 등)이 함께 오는 경우가 많다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle est souvent accompagnée d’une expression temporelle (un an, longtemps, quelques jours, etc.).",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "일상 대화에서 매우 자주 쓰이는 표현이다.",
+        "en": "",
+        "es": "",
+        "fr": "C’est une structure très fréquente dans les conversations quotidiennes.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "한국에 온 지 1년 됐어.",
+        "en": "",
+        "es": "",
+        "fr": "Ça fait un an que je suis venu(e) en Corée.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그 친구를 만난 지 오래됐어.",
+        "en": "",
+        "es": "",
+        "fr": "Ça fait longtemps que je n’ai pas vu cet ami.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "운동을 시작한 지 한 달 됐어.",
+        "en": "",
+        "es": "",
+        "fr": "Ça fait un mois que j’ai commencé à faire du sport.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "이 일을 한 지 벌써 3년이 넘었어.",
+        "en": "",
+        "es": "",
+        "fr": "Je fais ce travail depuis plus de trois ans.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "이사 온 지 얼마 안 됐어.",
+        "en": "",
+        "es": "",
+        "fr": "Ça ne fait pas longtemps que j’ai déménagé ici.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그 영화를 본 지 꽤 됐어.",
+        "en": "",
+        "es": "",
+        "fr": "Ça fait un bon moment que j’ai vu ce film.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그 문제를 해결한 지 오래되지 않았어.",
+        "en": "",
+        "es": "",
+        "fr": "Ça ne fait pas longtemps que j’ai résolu ce problème.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "여행을 다녀온 지 며칠 안 됐어.",
+        "en": "",
+        "es": "",
+        "fr": "Seulement quelques jours se sont écoulés depuis mon retour du voyage.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "새로운 취미를 시작한 지 얼마 안 됐어.",
+        "en": "",
+        "es": "",
+        "fr": "Ça ne fait pas longtemps que j’ai commencé un nouveau passe-temps.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "마지막으로 연락한 지 꽤 오래됐어.",
+        "en": "",
+        "es": "",
+        "fr": "Ça fait un bon moment que je n’ai pas pris contact avec eux.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "한국어를 배우기 시작한 지 벌써 시간이 많이 지났어.",
+        "en": "",
+        "es": "",
+        "fr": "Beaucoup de temps est passé depuis que j’ai commencé à apprendre le coréen.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "이 카페에 온 지 열흘 정도 됐어.",
+        "en": "",
+        "es": "",
+        "fr": "Ça fait environ dix jours que je suis venu(e) dans ce café.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "운동을 쉬고 지낸 지 너무 오래됐어.",
+        "en": "",
+        "es": "",
+        "fr": "Ça fait trop longtemps que je n’ai pas fait de sport.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그 소식을 들은 지 하루밖에 안 됐어.",
+        "en": "",
+        "es": "",
+        "fr": "Seulement un jour s’est écoulé depuis que j’ai entendu la nouvelle.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "새 직장에 다닌 지 두 달쯤 됐어.",
+        "en": "",
+        "es": "",
+        "fr": "Ça fait environ deux mois que j’ai commencé mon nouveau travail.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "마지막으로 여행한 지 꽤 시간이 흘렀어.",
+        "en": "",
+        "es": "",
+        "fr": "Ça fait longtemps que je n’ai pas voyagé.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그 결정을 내린 지 시간이 좀 지났어.",
+        "en": "",
+        "es": "",
+        "fr": "Un certain temps s’est écoulé depuis que j’ai pris cette décision.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "우리가 처음 만난 지 벌써 몇 년이야?",
+        "en": "",
+        "es": "",
+        "fr": "Ça fait combien d’années depuis notre première rencontre ?",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "이 책을 읽기 시작한 지 며칠 됐어.",
+        "en": "",
+        "es": "",
+        "fr": "Ça fait quelques jours que j’ai commencé à lire ce livre.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "",
+        "en": "",
+        "es": "",
+        "fr": "Ça fait tellement longtemps que je n’ai pas fait ça que je ne m’en souviens presque plus.",
+        "pt": ""
+      }
+    }
+  ]
+}

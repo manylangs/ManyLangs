@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a2",
+    "id": "001"
+  },
+  "title": {
+    "target": "쇼핑하기",
+    "en": "Shopping",
+    "es": "Ir de compras",
+    "fr": "Faire du shopping",
+    "pt": "Fazer compras"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "안녕하세요! 이 옷 좀 봐도 될까요?",
+            "en": "Hi! Can I take a look at this?",
+            "es": "¡Hola! ¿Puedo ver este?",
+            "fr": "Bonjour ! Je peux regarder celui-ci ?",
+            "pt": "Olá! Posso ver este artigo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 천천히 보세요!",
+            "en": "Sure, take your time!",
+            "es": "Claro, tómese su tiempo.",
+            "fr": "Bien sûr, prenez votre temps !",
+            "pt": "Claro, esteja à vontade!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 재질이 좋네요! 혹시 다른 색도 있어요?",
+            "en": "Oh, the fabric feels nice! Do you have it in another color?",
+            "es": "Ah, ¡la tela se siente muy bien! ¿Lo tiene en otro color?",
+            "fr": "Ah, le tissu est sympa ! Vous l’avez dans une autre couleur ?",
+            "pt": "Ah, o tecido é mesmo agradável! Tem noutra cor?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 검정색이랑 파란색도 있어요.",
+            "en": "Yes! We have it in black and blue as well.",
+            "es": "Sí, lo tenemos en negro y en azul también.",
+            "fr": "Oui ! Nous l’avons aussi en noir et en bleu.",
+            "pt": "Sim! Também temos em preto e azul."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 이 색으로 하나 살게요!",
+            "en": "Great! Then I'll take this one.",
+            "es": "Perfecto, me llevo este.",
+            "fr": "Super ! Je vais prendre celui-ci.",
+            "pt": "Ótimo, fico com este."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋은 선택이세요! 포장해 드릴게요.",
+            "en": "Good choice! I'll wrap it up for you.",
+            "es": "¡Buena elección! Se lo preparo.",
+            "fr": "Très bon choix ! Je vous l’emballe.",
+            "pt": "Boa escolha! Vou embrulhá-lo para si."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이 신발 예쁘네요! 가격이 어떻게 되나요?",
+            "en": "These shoes look nice! How much are they?",
+            "es": "¡Estos zapatos se ven bonitos! ¿Cuánto cuestan?",
+            "fr": "Ces chaussures sont jolies ! Elles coûtent combien ?",
+            "pt": "Estes sapatos são giros! Quanto custam?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아, 그 제품은 5만 원입니다.",
+            "en": "That pair is fifty thousand won.",
+            "es": "Ese par cuesta cincuenta mil wons.",
+            "fr": "Cette paire est à cinquante mille wons.",
+            "pt": "Este par custa cinquenta mil wons."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "생각보다 괜찮네요! 혹시 할인도 되나요?",
+            "en": "Not bad! Do you offer any discounts?",
+            "es": "¡No está mal! ¿Ofrecen algún descuento?",
+            "fr": "Pas mal ! Vous faites une réduction ?",
+            "pt": "Nada mal! Há algum desconto?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오늘은 10% 할인 가능해요!",
+            "en": "We’re offering a 10% discount today!",
+            "es": "Hoy tenemos un 10% de descuento.",
+            "fr": "Aujourd’hui on fait 10 % de réduction !",
+            "pt": "Hoje temos 10% de desconto!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 지금 결제할게요!",
+            "en": "Perfect. I'll pay now!",
+            "es": "Perfecto, pago ahora.",
+            "fr": "Parfait. Je vais payer maintenant !",
+            "pt": "Perfeito, pago já."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 여기로 오시면 됩니다.",
+            "en": "Sure! You can pay over here.",
+            "es": "Muy bien, puede pagar por aquí.",
+            "fr": "Très bien ! Vous pouvez payer ici.",
+            "pt": "Muito bem, pode pagar aqui."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이 가방 사이즈가 좀 작은 것 같은데, 더 큰 사이즈 있어요?",
+            "en": "This bag seems a bit small. Do you have a bigger size?",
+            "es": "Este bolso me parece un poco pequeño. ¿Tiene una talla más grande?",
+            "fr": "Ce sac me paraît un peu petit. Vous avez une taille plus grande ?",
+            "pt": "Esta mala parece um pouco pequena. Tem um tamanho maior?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 큰 사이즈도 있어요. 이걸 한번 보세요.",
+            "en": "Yes! We have a larger size. Try this one.",
+            "es": "Sí, tenemos una talla más grande. Pruebe este.",
+            "fr": "Oui ! Nous avons une taille plus grande. Essayez celui-ci.",
+            "pt": "Sim! Temos um tamanho maior. Experimente este."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 이게 더 잘 맞네요!",
+            "en": "Oh, this one fits me better!",
+            "es": "Ah, sí, ¡este me queda mejor!",
+            "fr": "Ah oui, celui-ci me va mieux !",
+            "pt": "Ah, sim, este fica-me melhor!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "다행이네요! 요즘 이 사이즈가 인기예요.",
+            "en": "Great! This size is actually very popular.",
+            "es": "¡Genial! Esa talla es muy popular ahora.",
+            "fr": "Génial ! Cette taille est très populaire en ce moment.",
+            "pt": "Ótimo! Este tamanho está muito popular agora."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 이걸로 할게요!",
+            "en": "Okay, I'll take it!",
+            "es": "Bien, me lo llevo.",
+            "fr": "D’accord, je le prends !",
+            "pt": "Está bem, levo este."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "바로 계산 도와드릴게요.",
+            "en": "I'll help you with the checkout.",
+            "es": "Le acompaño a la caja.",
+            "fr": "Je vous accompagne à la caisse.",
+            "pt": "Acompanho-a à caixa."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이 모자 써봐도 될까요?",
+            "en": "Can I try this hat on?",
+            "es": "¿Puedo probarme este sombrero?",
+            "fr": "Je peux essayer ce chapeau ?",
+            "pt": "Posso experimentar este chapéu?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "물론이죠! 거울 앞에서 써보세요.",
+            "en": "Of course! Try it in front of the mirror.",
+            "es": "Por supuesto, pruébeselo frente al espejo.",
+            "fr": "Bien sûr ! Essayez-le devant le miroir.",
+            "pt": "Claro! Experimente em frente ao espelho."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 괜찮은데요! 다른 스타일도 있을까요?",
+            "en": "Oh, it looks good! Do you have other styles too?",
+            "es": "Oh, ¡queda bien! ¿Tiene otros estilos?",
+            "fr": "Oh, pas mal ! Vous avez d’autres modèles ?",
+            "pt": "Oh, fica mesmo bem! Tem outros estilos?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 여기 옆에 있는 것도 인기 많아요.",
+            "en": "Yes, the one next to it is also popular.",
+            "es": "Sí, el que está al lado también gusta mucho.",
+            "fr": "Oui, celui juste à côté plaît beaucoup aussi.",
+            "pt": "Sim, o que está ao lado também é muito procurado."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요! 이걸로 할게요!",
+            "en": "Nice! I'll choose this one.",
+            "es": "Genial, me quedo con este.",
+            "fr": "Super ! Je vais prendre celui-ci.",
+            "pt": "Perfeito, fico com este."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "멋지게 잘 어울리세요! 바로 포장해드릴게요.",
+            "en": "It really suits you! I'll wrap it up.",
+            "es": "¡Le queda muy bien! Se lo preparo.",
+            "fr": "Il vous va vraiment bien ! Je vous l’emballe.",
+            "pt": "Fica-lhe muito bem! Vou embrulhá-lo."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이 바지 소재가 부드럽네요! 세일 중인가요?",
+            "en": "This fabric feels soft! Is it on sale?",
+            "es": "¡Esta tela es muy suave! ¿Está en oferta?",
+            "fr": "Ce tissu est tout doux ! C’est en promotion ?",
+            "pt": "Este tecido é tão macio! Está em promoção?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 지금 50% 세일이에요.",
+            "en": "Yes! It’s 50% off right now.",
+            "es": "Sí, está al 50% ahora mismo.",
+            "fr": "Oui ! C’est à –50 % en ce moment.",
+            "pt": "Sim, está com 50% de desconto agora."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 반값이면 괜찮네요!",
+            "en": "Wow, half price? That’s great!",
+            "es": "¿Mitad de precio? ¡Genial!",
+            "fr": "Wow, moitié prix ? C’est super !",
+            "pt": "Uau, metade do preço? Excelente!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요! 오늘 마지막 날이에요.",
+            "en": "Right! Today is the last day.",
+            "es": "Exacto, hoy es el último día.",
+            "fr": "Exact ! Aujourd’hui est le dernier jour.",
+            "pt": "Exato, hoje é o último dia."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 두 개 사도 되죠?",
+            "en": "Then can I get two of them?",
+            "es": "Entonces, ¿puedo llevar dos?",
+            "fr": "Alors je peux en prendre deux ?",
+            "pt": "Então posso levar dois?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "물론이죠! 더 담아드릴까요?",
+            "en": "Of course! Should I add more?",
+            "es": "Claro, ¿quiere añadir algo más?",
+            "fr": "Bien sûr ! Vous voulez en ajouter d’autres ?",
+            "pt": "Claro! Quer adicionar mais algum?"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 이 제품 새로 들어온 거예요?",
+            "en": "Is this a new arrival?",
+            "es": "¿Esto es un producto nuevo?",
+            "fr": "C’est une nouveauté ?",
+            "pt": "Este é um produto novo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 이번 주에 들어온 신상이에요.",
+            "en": "Yes! It arrived this week.",
+            "es": "Sí, llegó esta semana.",
+            "fr": "Oui ! C’est arrivé cette semaine.",
+            "pt": "Sim, chegou esta semana."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 그래서 디자인이 신선했군요!",
+            "en": "Oh, no wonder the design feels fresh!",
+            "es": "Ah, con razón el diseño se ve tan fresco.",
+            "fr": "Ah, pas étonnant que le design soit si frais !",
+            "pt": "Ah, faz sentido que o design pareça tão moderno!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요! 이번 시즌에서 가장 인기 많아요.",
+            "en": "Exactly! It’s one of the most popular items this season.",
+            "es": "Exacto, es uno de los productos más populares de esta temporada.",
+            "fr": "Exactement ! C’est l’un de nos articles les plus demandés.",
+            "pt": "Exatamente! É um dos produtos mais populares desta estação."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 새 제품으로 하나 주세요!",
+            "en": "Then I'd like a new one, please!",
+            "es": "Entonces, ¡quisiera uno nuevo, por favor!",
+            "fr": "Alors j’aimerais un article neuf, s’il vous plaît !",
+            "pt": "Então gostaria de um novo, por favor!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 바로 준비해드릴게요.",
+            "en": "Sure! I’ll prepare a new piece for you.",
+            "es": "Muy bien, le traigo uno nuevo.",
+            "fr": "Très bien ! Je vous en apporte un neuf.",
+            "pt": "Muito bem, trago-lhe um novo."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 교환도 가능할까요?",
+            "en": "Can I exchange this later?",
+            "es": "¿Puedo cambiarlo más tarde?",
+            "fr": "Je pourrai l’échanger plus tard ?",
+            "pt": "Posso trocar isto mais tarde?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 택만 그대로면 7일 이내 교환 가능합니다.",
+            "en": "Yes, as long as the tag stays on, you can exchange it within seven days.",
+            "es": "Sí, mientras la etiqueta esté intacta, puede cambiarlo dentro de siete días.",
+            "fr": "Oui, tant que l’étiquette reste intacte, vous pouvez l’échanger sous sept jours.",
+            "pt": "Sim, desde que a etiqueta esteja intacta, pode trocar dentro de sete dias."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 7일이면 충분해요!",
+            "en": "Ah, seven days is fine for me!",
+            "es": "Ah, siete días está bien.",
+            "fr": "Ah, sept jours ça me va !",
+            "pt": "Ah, sete dias é ótimo para mim!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 혹시 선물하시는 건가요?",
+            "en": "Sure! Is it for a gift?",
+            "es": "Muy bien, ¿es para regalo?",
+            "fr": "Très bien ! C’est pour offrir ?",
+            "pt": "Muito bem! É para oferecer?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요! 그럼 구매할게요.",
+            "en": "Great! Then I'll buy it.",
+            "es": "Genial, entonces lo compro.",
+            "fr": "Super ! Je vais l’acheter.",
+            "pt": "Perfeito, vou comprá-lo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "감사합니다! 깔끔하게 포장해드릴게요.",
+            "en": "Thank you! I’ll wrap it nicely.",
+            "es": "Muchas gracias, se lo envuelvo bonito.",
+            "fr": "Merci beaucoup ! Je vous fais un joli paquet.",
+            "pt": "Obrigado! Faço um embrulho bonito."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이 향수 시향해도 될까요?",
+            "en": "Can I try this perfume sample?",
+            "es": "¿Puedo probar esta fragancia?",
+            "fr": "Je peux essayer ce parfum ?",
+            "pt": "Posso experimentar este perfume?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 여기 테스트용 사용해보세요.",
+            "en": "Yes! Here’s the tester.",
+            "es": "Sí, aquí tiene el probador.",
+            "fr": "Oui ! Voici le testeur.",
+            "pt": "Sim! Aqui tem o tester."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 향이 꽤 은은하네요!",
+            "en": "Wow, it smells really gentle!",
+            "es": "Oh, ¡huele muy suave!",
+            "fr": "Oh, il est vraiment doux !",
+            "pt": "Oh, o cheiro é mesmo suave!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 데일리로 쓰기 좋아요.",
+            "en": "Right! It’s great for daily use.",
+            "es": "Sí, es perfecta para usar a diario.",
+            "fr": "Oui ! Il est parfait pour un usage quotidien.",
+            "pt": "Sim, é ótimo para usar no dia a dia."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 작은 사이즈로 하나 주세요!",
+            "en": "Then I'll take the small size!",
+            "es": "Entonces me llevo el tamaño pequeño.",
+            "fr": "Alors je vais prendre le petit format !",
+            "pt": "Então levo o tamanho pequeno."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 준비해드릴게요.",
+            "en": "Sure, I’ll prepare it for you.",
+            "es": "Muy bien, se lo preparo.",
+            "fr": "Très bien, je vous le prépare.",
+            "pt": "Muito bem, preparo-o para si."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이거 선물용으로 괜찮을까요?",
+            "en": "Do you think this is good as a gift?",
+            "es": "¿Cree que esto sirve como regalo?",
+            "fr": "Vous pensez que c’est bien comme cadeau ?",
+            "pt": "Acha que isto dá para oferecer?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 선물용으로 제일 잘 나가는 제품이에요.",
+            "en": "Yes! It’s one of our best-selling gift items.",
+            "es": "Sí, es uno de nuestros artículos más vendidos para regalos.",
+            "fr": "Oui ! C’est l’un de nos articles les plus vendus pour les cadeaux.",
+            "pt": "Sim! É um dos nossos artigos mais vendidos para presentes."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 반응 좋을 것 같아요!",
+            "en": "Oh, that sounds perfect!",
+            "es": "Oh, ¡suena perfecto!",
+            "fr": "Ah oui, ça a l’air parfait !",
+            "pt": "Ah, parece perfeito!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "요즘 생일 선물로 많이 사가세요!",
+            "en": "People often buy it for birthdays these days!",
+            "es": "Mucha gente lo compra para cumpleaños últimamente.",
+            "fr": "En ce moment, beaucoup de gens l’achètent pour les anniversaires !",
+            "pt": "Muita gente compra isto para aniversários ultimamente!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요! 선물 포장 부탁드려요!",
+            "en": "Great! Please wrap it as a gift.",
+            "es": "Genial, ¿puede envolverlo para regalo?",
+            "fr": "Génial ! Vous pouvez me le mettre en paquet cadeau ?",
+            "pt": "Ótimo, pode embrulhar para presente?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 예쁘게 포장해드릴게요.",
+            "en": "Sure! I’ll wrap it nicely for you.",
+            "es": "Claro, se lo envuelvo bonito.",
+            "fr": "Bien sûr ! Je vous fais un bel emballage.",
+            "pt": "Claro, faço um embrulho bonito."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 이 카드로 결제 가능할까요?",
+            "en": "Can I pay with this card?",
+            "es": "¿Puedo pagar con esta tarjeta?",
+            "fr": "Je peux payer avec cette carte ?",
+            "pt": "Posso pagar com este cartão?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 모든 카드 가능해요!",
+            "en": "Yes, all cards are accepted!",
+            "es": "Sí, aceptamos todas las tarjetas.",
+            "fr": "Oui, nous acceptons toutes les cartes !",
+            "pt": "Sim, aceitamos todos os cartões!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 다행이네요!",
+            "en": "Oh, great!",
+            "es": "¡Ah, perfecto!",
+            "fr": "Ah, super !",
+            "pt": "Ah, ótimo!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 포인트 적립도 되세요.",
+            "en": "Sure! You can also earn points.",
+            "es": "Muy bien, también puede acumular puntos.",
+            "fr": "Très bien ! Vous pouvez aussi cumuler des points.",
+            "pt": "Muito bem, também pode acumular pontos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 영수증도 같이 주세요!",
+            "en": "Then please give me the receipt too!",
+            "es": "Entonces, ¿puede darme el recibo también?",
+            "fr": "Alors j’aimerais aussi le reçu, s’il vous plaît !",
+            "pt": "Então, pode dar-me também o recibo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 영수증 함께 드릴게요.",
+            "en": "Here you go! Here's your receipt.",
+            "es": "Aquí tiene, y aquí está su recibo.",
+            "fr": "Voici ! Et voici votre reçu.",
+            "pt": "Aqui tem — e aqui está o seu recibo."
+          }
+        }
+      ]
+    }
+  ]
+}
