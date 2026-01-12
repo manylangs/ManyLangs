@@ -24,7 +24,6 @@ type Props = {
 const STUDY_LANGS = ["en", "es", "fr", "pt"] as const;
 type StudyLang = (typeof STUDY_LANGS)[number];
 
-/* ✅ 버튼 디자인 – 사용자 제공 그대로 */
 const buttonStyle = (active: boolean) => ({
   padding: "4px 8px",
   borderRadius: 4,
@@ -68,7 +67,6 @@ export default function GrammarViewer({
   const renderLine = (b: GrammarBlock, i: number) => {
     const target = b.sentences?.target;
     const study = b.sentences?.[lang];
-
     if (!target) return null;
 
     return (
@@ -85,7 +83,7 @@ export default function GrammarViewer({
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
-      {/* 학습 언어 선택 */}
+      {/* ===== 학습 언어 선택 ===== */}
       <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
         {STUDY_LANGS.map((l) => (
           <button
@@ -98,7 +96,7 @@ export default function GrammarViewer({
         ))}
       </div>
 
-      {/* Prev / Next */}
+      {/* ===== Prev / Next ===== */}
       <div
         style={{
           display: "flex",
@@ -120,7 +118,7 @@ export default function GrammarViewer({
         </Link>
       </div>
 
-      {/* 챕터 버튼 */}
+      {/* ===== 챕터 네비 ===== */}
       <div
         style={{
           display: "flex",
@@ -143,7 +141,7 @@ export default function GrammarViewer({
         })}
       </div>
 
-      {/* 제목 */}
+      {/* ===== 제목 ===== */}
       <section style={{ marginBottom: 28 }}>
         <div style={{ fontSize: 24, fontWeight: 700 }}>
           {grammarData.title?.target}
@@ -162,13 +160,13 @@ export default function GrammarViewer({
         )}
       </section>
 
-      {/* 설명 */}
+      {/* ===== 설명 ===== */}
       <section style={{ marginBottom: 32 }}>
         <h3>설명</h3>
         {explanations.map(renderLine)}
       </section>
 
-      {/* 예문 */}
+      {/* ===== 예문 ===== */}
       <section>
         <h3>예문</h3>
 

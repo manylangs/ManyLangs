@@ -17,18 +17,14 @@
       "dialogue_layer": {
         "A": [
           "오늘 몇 시에 만날까요?",
-          "그럼 3시는 어때요?",
+          "그럼 세 시는 어때요?",
           "좋아요! 그때 봐요!"
         ],
         "B": [
           "음… 오후가 더 괜찮아요!",
-          "오, 3시 딱 좋아요!",
+          "오, 세 시 딱 좋아요!",
           "네, 약속해요!"
         ]
-      },
-      "tts_layer": {
-        "A": {"tts_voice": "ko-KR-Standard-A"},
-        "B": {"tts_voice": "ko-KR-Standard-B"}
       }
     },
 
@@ -38,17 +34,13 @@
         "A": [
           "오늘 일정 있어요?",
           "오, 그렇군요! 그럼 점심은 가능해요?",
-          "그럼 12시에 봬요!"
+          "그럼 열두 시에 봬요!"
         ],
         "B": [
           "네, 오전에 조금 바빠요.",
           "점심은 괜찮아요!",
-          "좋아요, 12시에 만나요!"
+          "좋아요, 열두 시에 만나요!"
         ]
-      },
-      "tts_layer": {
-        "A": {"tts_voice": "ko-KR-Standard-A"},
-        "B": {"tts_voice": "ko-KR-Standard-B"}
       }
     },
 
@@ -65,10 +57,6 @@
           "그 시간 좋아요!",
           "좋아요, 기대할게요!"
         ]
-      },
-      "tts_layer": {
-        "A": {"tts_voice": "ko-KR-Standard-A"},
-        "B": {"tts_voice": "ko-KR-Standard-B"}
       }
     },
 
@@ -82,13 +70,9 @@
         ],
         "B": [
           "네, 지금은 조금 괜찮아요.",
-          "한 10분 정도는 괜찮아요.",
+          "한 십 분 정도는 괜찮아요.",
           "네, 기다릴게요!"
         ]
-      },
-      "tts_layer": {
-        "A": {"tts_voice": "ko-KR-Standard-A"},
-        "B": {"tts_voice": "ko-KR-Standard-B"}
       }
     },
 
@@ -105,10 +89,6 @@
           "좋아요, 오후 시간 비워둘게요!",
           "좋아요, 그때 봬요!"
         ]
-      },
-      "tts_layer": {
-        "A": {"tts_voice": "ko-KR-Standard-A"},
-        "B": {"tts_voice": "ko-KR-Standard-B"}
       }
     },
 
@@ -125,10 +105,6 @@
           "내일 저녁은 괜찮아요!",
           "네, 내일 봬요!"
         ]
-      },
-      "tts_layer": {
-        "A": {"tts_voice": "ko-KR-Standard-A"},
-        "B": {"tts_voice": "ko-KR-Standard-B"}
       }
     },
 
@@ -145,10 +121,6 @@
           "오후는 비어 있어요!",
           "도움 돼요! 그때 봬요."
         ]
-      },
-      "tts_layer": {
-        "A": {"tts_voice": "ko-KR-Standard-A"},
-        "B": {"tts_voice": "ko-KR-Standard-B"}
       }
     },
 
@@ -161,14 +133,10 @@
           "네! 최대한 빨리 갈게요!"
         ],
         "B": [
-          "3시에 시작해요.",
-          "그래도 5분은 괜찮아요!",
+          "세시에 시작해요.",
+          "그래도 오 분은 괜찮아요!",
           "알겠어요! 곧 봬요."
         ]
-      },
-      "tts_layer": {
-        "A": {"tts_voice": "ko-KR-Standard-A"},
-        "B": {"tts_voice": "ko-KR-Standard-B"}
       }
     },
 
@@ -185,10 +153,6 @@
           "좋아요! 그때 봐요!",
           "네, 산책 좋아요!"
         ]
-      },
-      "tts_layer": {
-        "A": {"tts_voice": "ko-KR-Standard-A"},
-        "B": {"tts_voice": "ko-KR-Standard-B"}
       }
     },
 
@@ -205,10 +169,6 @@
           "맞아요, 그래도 괜찮아요!",
           "고마워요! 내일 더 힘낼게요!"
         ]
-      },
-      "tts_layer": {
-        "A": {"tts_voice": "ko-KR-Standard-A"},
-        "B": {"tts_voice": "ko-KR-Standard-B"}
       }
     }
   ]

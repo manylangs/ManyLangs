@@ -1,51 +1,117 @@
 "use client";
 
-import { playTTS } from "@/lib/playTTS";
+import { useEffect, useRef, useState } from "react";
 
-export default function IdiomRenderer({ data }) {
-  // 안전 처리
-  const idioms = Array.isArray(data.idioms) ? data.idioms : [];
+type CuesData = {
+  setStartsMs?: number[];
+};
+
+type Props = {
+  lang: string;    // "kr"
+  level: string;   // "a1"
+  chapter: string; // "001"
+};
+
+export default function IdiomAudioController({
+  lang,
+  level,
+  chapter,
+}: Props) {
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [cues, setCues] = useState<CuesData | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  // ✅ idiom 전용 경로 (확정)
+  const audioSrc =
+    `/audio/idiom/${lang}/${level}/idiom_${level}_${chapter}.wav`;
+
+  const cuesSrc =
+    `/audio/idiom/${lang}/${level}/idiom_${level}_${chapter}.cues.json`;
+
+  /* cues.json 로드 + 구조 검증 */
+  useEffect(() => {
+    fetch(cuesSrc)
+      .then((res) => {
+        if (!res.ok) throw new Error("cues fetch failed");
+        return res.json();
+      })
+      .then((data) => {
+        if (data && Array.isArray(data.setStartsMs)) {
+          setCues({ setStartsMs: data.setStartsMs });
+        } else {
+          setCues(null);
+        }
+      })
+      .catch(() => setCues(null));
+  }, [cuesSrc]);
+
+  const togglePlay = () => {
+    if (!audioRef.current) return;
+
+    if (audioRef.current.paused) {
+      audioRef.current.play();
+      setIsPlaying(true);
+    } else {
+      audioRef.current.pause();
+      setIsPlaying(false);
+    }
+  };
+
+  const reset = () => {
+    if (!audioRef.current) return;
+
+    audioRef.current.pause();
+    audioRef.current.currentTime = 0;
+    audioRef.current.play();
+    setIsPlaying(true);
+  };
+
+  const jumpTo = (index: number) => {
+    if (
+      !audioRef.current ||
+      !cues ||
+      !Array.isArray(cues.setStartsMs)
+    )
+      return;
+
+    const ms = cues.setStartsMs[index];
+    if (typeof ms !== "number") return;
+
+    audioRef.current.currentTime = ms / 1000;
+    audioRef.current.play();
+    setIsPlaying(true);
+  };
 
   return (
-    <main className="p-6">
-      {/* 제목 */}
-      <h1 className="text-3xl font-bold mb-8">{data.title || "Idioms"}</h1>
+    <div
+      style={{
+        padding: 12,
+        border: "1px solid #ddd",
+        borderRadius: 8,
+      }}
+    >
+      <audio
+        ref={audioRef}
+        src={audioSrc}
+        onEnded={() => setIsPlaying(false)}
+      />
 
-      {/* 각 idiom 출력 */}
-      <ul className="space-y-8">
-        {idioms.map((idiom, idx) => {
-          const examples = Array.isArray(idiom.examples) ? idiom.examples : [];
+      <div style={{ display: "flex", gap: 8, marginBottom: 8 }}>
+        <button onClick={togglePlay}>
+          {isPlaying ? "⏸ Pause" : "▶ Play"}
+        </button>
+        <button onClick={reset}>⟲ Reset</button>
+      </div>
 
-          return (
-            <li key={idx} className="border p-5 rounded bg-gray-50">
-              {/* Idiom 제목 */}
-              <h2 className="text-xl font-bold mb-2">{idiom.target}</h2>
-
-              {/* Idiom 설명 */}
-              <div className="text-gray-700 mb-4">{idiom.learning}</div>
-
-              {/* 예문 5개 */}
-              <ul className="space-y-3">
-                {examples.map((ex, i) => (
-                  <li key={i} className="border p-3 rounded bg-white">
-                    <div className="font-semibold">{ex.target}</div>
-                    <div className="text-gray-500 text-sm">{ex.learning}</div>
-
-                    {ex.tts && (
-                      <button
-                        onClick={() => playTTS(ex.tts)}
-                        className="mt-2 text-xs bg-blue-500 text-white px-2 py-1 rounded"
-                      >
-                        🔊 듣기
-                      </button>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </li>
-          );
-        })}
-      </ul>
-    </main>
+      {Array.isArray(cues?.setStartsMs) && (
+        <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+          {cues!.setStartsMs!.map((_, idx) => (
+            <button key={idx} onClick={() => jumpTo(idx)}>
+              {idx + 1}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }

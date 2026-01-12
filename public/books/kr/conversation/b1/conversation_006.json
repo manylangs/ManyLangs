@@ -1,10 +1,9 @@
-﻿{
+{
   "chapter_id": "006",
   "cefr": "B1",
   "title_kr": "발표 준비",
   "speaker_label_removed": true,
   "voice_validation_required": true,
-
   "key_expressions": [
     "발표 준비는 잘 되고 있어요?,",
     "자료 정리는 끝났어요?,",
@@ -12,7 +11,6 @@
     "예시를 하나 더 넣어볼까요?,",
     "발표 연습 같이 해요!,"
   ],
-
   "sets": [
     {
       "set_id": 1,
@@ -27,13 +25,8 @@
           "거의 다 했는데 예시를 좀 더 넣을까 고민 중이에요.",
           "와, 감사해요! 그러면 조금만 봐주실래요?"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 2,
       "dialogue_layer": {
@@ -43,17 +36,12 @@
           "맞아요, 중간 설명을 조금 줄이면 괜찮을 것 같아요."
         ],
         "B": [
-          "10분 정도로 맞추려고 해요.",
+          "십분 정도로 맞추려고 해요.",
           "그러게요, 말하다 보면 자꾸 길어져서요.",
           "좋은 생각이에요! 한번 줄여볼게요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 3,
       "dialogue_layer": {
@@ -63,17 +51,12 @@
           "좋아요! 그 흐름 그냥 유지해도 충분히 좋아요."
         ],
         "B": [
-          "한 12장 정도요.",
+          "한 열두장 정도요.",
           "네, 도입부터 결론까지 자연스럽게 이어지긴 해요.",
           "그렇다면 더 다듬기만 하면 될 것 같아요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 4,
       "dialogue_layer": {
@@ -87,13 +70,8 @@
           "아, 그래요? 그 정도면 충분히 자연스러울 것 같아요!",
           "네, 조언 고마워요! 한번 연습해볼게요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 5,
       "dialogue_layer": {
@@ -107,13 +85,8 @@
           "오, 그거 좋은 아이디어네요!",
           "바로 하나 추가해볼게요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 6,
       "dialogue_layer": {
@@ -127,13 +100,8 @@
           "네, 말할 때 크게 막히진 않았어요.",
           "좋아요! 지금 한번 해볼게요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 7,
       "dialogue_layer": {
@@ -147,13 +115,8 @@
           "감사합니다 멘트도 넣으면 괜찮겠죠?",
           "오, 그렇네요! 추가해볼게요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 8,
       "dialogue_layer": {
@@ -167,13 +130,8 @@
           "답변도 미리 짧게 정리해놨어요.",
           "덕분에 좀 마음이 놓여요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 9,
       "dialogue_layer": {
@@ -187,13 +145,8 @@
           "슬라이드도 거의 다 정리됐어요.",
           "마지막 체크 리스트만 보면 끝이에요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 10,
       "dialogue_layer": {
@@ -207,13 +160,7 @@
           "오늘은 왠지 잘할 수 있을 것 같아요.",
           "응원 고마워요! 큰 힘 돼요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     }
-
   ]
 }
-

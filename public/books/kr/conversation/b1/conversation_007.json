@@ -1,10 +1,9 @@
-﻿{
+{
   "chapter_id": "007",
   "cefr": "B1",
   "title_kr": "시험 준비",
   "speaker_label_removed": true,
   "voice_validation_required": true,
-
   "key_expressions": [
     "시험 준비 잘 되고 있어요?,",
     "어디부터 공부할지 정했어요?,",
@@ -12,7 +11,6 @@
     "시간 관리가 제일 어려워요.,",
     "우리 같이 복습해봐요!,"
   ],
-
   "sets": [
     {
       "set_id": 1,
@@ -27,13 +25,8 @@
           "아직 완전히는 아니고 대략적인 흐름만 잡았어요.",
           "오, 정말요? 그러면 너무 도움이 될 것 같아요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 2,
       "dialogue_layer": {
@@ -47,13 +40,8 @@
           "그 다음에 예제를 풀어보려고요.",
           "저도 그렇게 해야겠네요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 3,
       "dialogue_layer": {
@@ -67,13 +55,8 @@
           "네, 그래서 다시 정리하려고요.",
           "좋아요! 지금 바로 해볼게요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 4,
       "dialogue_layer": {
@@ -87,13 +70,8 @@
           "아예 감도 안 잡히는 게 있었어요.",
           "헉, 정말요? 그럼 지금부터 같이 봐요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 5,
       "dialogue_layer": {
@@ -107,13 +85,8 @@
           "맞아요, 설명도 복잡하고요.",
           "좋아요! 정리하면 좀 나을 것 같아요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 6,
       "dialogue_layer": {
@@ -127,13 +100,8 @@
           "계획보다 오래 걸리는 게 많아요.",
           "그 방법 한번 해볼게요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 7,
       "dialogue_layer": {
@@ -147,13 +115,8 @@
           "아무리 반복해도 기억이 잘 안 나요.",
           "오, 그런 방법은 해본 적 없어요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 8,
       "dialogue_layer": {
@@ -167,13 +130,8 @@
           "근데 뒤쪽 단원이 조금 부담돼요.",
           "도와주시면 정말 감사해요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 9,
       "dialogue_layer": {
@@ -187,13 +145,8 @@
           "예상보다 속도가 잘 나고 있어요.",
           "그 말 들으니까 더 힘나네요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 10,
       "dialogue_layer": {
@@ -207,13 +160,7 @@
           "네, 조금씩 감이 잡히는 것 같아요.",
           "응원 고마워요! 정말 도움 돼요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     }
-
   ]
 }
-

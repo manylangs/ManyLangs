@@ -1,4 +1,4 @@
-﻿{
+{
   "chapter_id": "004",
   "cefr": "B1",
   "title_kr": "과제 및 제출",
@@ -25,33 +25,23 @@
           "업로드만 정상적으로 되면 보통 문제는 없더라고요.",
           "불안하시면 제출한 파일을 한 번 더 열어서 확인해보시는 게 좋을 것 같아요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 2,
       "dialogue_layer": {
         "A": [
-          "마감일이 오늘 밤 11시 59분 맞죠?",
+          "마감일이 오늘 밤 열한시 오십구분 맞죠?",
           "교수님이 수업 때는 다르게 말씀하셨던 것 같아서요.",
           "혹시 공지 다시 봤나요?"
         ],
         "B": [
-          "네, 공지에는 정확히 11시 59분이라고 적혀 있었어요.",
+          "네, 공지에는 정확히 열한시 오십구분이라고 적혀 있었어요.",
           "수업 중에는 살짝 혼동될 만한 표현이 있었던 것 같아요.",
           "그래도 공식 공지가 기준이니 그 시간 맞춰 제출하시면 돼요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 3,
       "dialogue_layer": {
@@ -65,13 +55,8 @@
           "대부분 문제는 없는데 표나 이미지가 있을 때는 간혹 깨지는 경우도 있더라고요.",
           "제출 전에 PDF 미리보기로 한 번 확인해보시면 안전해요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 4,
       "dialogue_layer": {
@@ -85,13 +70,8 @@
           "수업 첫 주 자료에 관련 안내가 있었던 걸로 기억해요.",
           "필요하시면 제가 정리해둔 예시를 보내드릴게요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 5,
       "dialogue_layer": {
@@ -105,13 +85,8 @@
           "최종본만 업로드하시면 요구 조건은 충족돼요.",
           "그래도 확실히 하시려면 교수님께 간단히 메일로 문의해보셔도 좋아요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 6,
       "dialogue_layer": {
@@ -125,13 +100,8 @@
           "시스템이 최신 제출본만 반영하기 때문에 큰 문제는 없어요.",
           "오타가 있다면 수정해서 다시 업로드하는 게 더 좋을 것 같아요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 7,
       "dialogue_layer": {
@@ -145,13 +115,8 @@
           "발표 시간에만 준비해서 보여드리면 된다고 하셨어요.",
           "그래도 미리 제작해두면 나중에 훨씬 수월하긴 해요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 8,
       "dialogue_layer": {
@@ -165,13 +130,8 @@
           "항목이 세분화되긴 했지만 점수 비중 자체는 크게 달라지지 않았어요.",
           "교수님 말씀으로는 내용의 명확성이 가장 중요하다고 하셨어요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 9,
       "dialogue_layer": {
@@ -185,13 +145,8 @@
           "지금 최종 파일을 정리 중이라고 들었어요.",
           "오늘 밤 안에는 제출하겠다고 했으니 걱정하지 않으셔도 될 것 같아요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 10,
       "dialogue_layer": {
@@ -205,12 +160,7 @@
           "제출하고 나면 힘이 빠지는 느낌 이해해요.",
           "오늘은 충분히 쉬시고 내일부터 다시 시작해도 괜찮을 것 같아요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     }
   ]
 }
-

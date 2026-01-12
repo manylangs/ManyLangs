@@ -1,9 +1,4 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "ManyLangs",
-  description: "ManyLangs Viewer",
-};
+import { ClerkProvider } from "@clerk/nextjs";
 
 export default function RootLayout({
   children,
@@ -11,8 +6,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="kr">
-      <body>{children}</body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body>{children}</body>
+      </html>
+    </ClerkProvider>
   );
 }

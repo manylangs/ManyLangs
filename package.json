@@ -3,15 +3,23 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-      "dev": "next dev",
-      "build": "next build",
-      "start": "next start",
-      "lint": "next lint"
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
     },
     "dependencies": {
-      "next": "14.2.5",
-      "react": "18.3.1",
-      "react-dom": "18.3.1"
+        "@clerk/nextjs": "^6.36.5",
+        "@opentelemetry/api": "^1.9.0",
+        "firebase-admin": "^13.6.0",
+        "next": "^16.1.1",
+        "react": "18.3.1",
+        "react-dom": "18.3.1",
+        "stripe": "^20.1.0"
+    },
+    "devDependencies": {
+        "@types/node": "25.0.3",
+        "@types/react": "19.2.7",
+        "typescript": "5.9.3"
     }
-  }
-  
+}

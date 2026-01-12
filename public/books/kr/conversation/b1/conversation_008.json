@@ -1,10 +1,9 @@
-﻿{
+{
   "chapter_id": "008",
   "cefr": "B1",
   "title_kr": "대학 친구들",
   "speaker_label_removed": true,
   "voice_validation_required": true,
-
   "key_expressions": [
     "대학 친구들은 잘 지내요?,",
     "친해진 친구 있어요?,",
@@ -12,7 +11,6 @@
     "수업 스타일이 잘 맞아요?,",
     "다음에 같이 만나봐요!,"
   ],
-
   "sets": [
     {
       "set_id": 1,
@@ -27,13 +25,8 @@
           "같은 과 친구인데 분위기가 정말 편해요.",
           "그래요! 같이 만나면 좋을 것 같아요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 2,
       "dialogue_layer": {
@@ -47,13 +40,8 @@
           "네, 같이 하다 보니 금방 가까워졌어요.",
           "맞아요! 점점 더 편해지고 있어요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 3,
       "dialogue_layer": {
@@ -67,13 +55,8 @@
           "네, 식당에서 자주 마주치다 보니 자연스럽게 같이 먹게 됐어요.",
           "맞아요, 소소한 이야기도 잘 통해요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 4,
       "dialogue_layer": {
@@ -87,13 +70,8 @@
           "궁금한 점도 서로 많이 물어봐요.",
           "네, 진짜 공부할 때 큰 도움이 돼요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 5,
       "dialogue_layer": {
@@ -107,13 +85,8 @@
           "맞아요, 시간도 안 맞을 텐데 자꾸 보이더라고요.",
           "다음에 보이면 먼저 말을 걸어볼게요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 6,
       "dialogue_layer": {
@@ -127,13 +100,8 @@
           "맞아요, 서로 비슷한 부분에서 고민하고 있더라고요.",
           "응, 그래서 더 가까워진 것 같아요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 7,
       "dialogue_layer": {
@@ -147,13 +115,8 @@
           "서로 부족한 부분을 알려주면서 공부해요.",
           "응, 덕분에 혼자 할 때보다 훨씬 편해요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 8,
       "dialogue_layer": {
@@ -167,13 +130,8 @@
           "네, 취향도 비슷하고 성격도 잘 맞아요.",
           "맞아요! 편하게 얘기할 수 있는 친구라서 좋아요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 9,
       "dialogue_layer": {
@@ -187,13 +145,8 @@
           "아마 새로 생긴 식당 갈 것 같아요.",
           "다녀와서 바로 얘기할게요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 10,
       "dialogue_layer": {
@@ -207,13 +160,7 @@
           "네, 분위기도 좋아서 아마 금방 친해지실 거예요.",
           "좋아요, 다음에 약속 잡히면 바로 말씀드릴게요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     }
-
   ]
 }
-

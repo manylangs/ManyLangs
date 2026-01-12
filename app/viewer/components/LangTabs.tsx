@@ -1,42 +1,38 @@
 "use client";
 
-export type LangKey = "en" | "es" | "fr" | "pt" | "kr";
+import Link from "next/link";
+import { UI_TARGET_LABELS, UiLangKey } from "../uiLabels";
 
-type Props = {
-  value: LangKey;
-  onChange: (lang: LangKey) => void;
-  available?: LangKey[];
-};
+const ORDERED_LANGS: UiLangKey[] = ["en", "es", "pt", "fr", "kr"];
 
-const LABELS: Record<LangKey, string> = {
-  en: "English",
-  es: "Spanish",
-  fr: "French",
-  pt: "Portuguese",
-  kr: "Korean",
-};
-
-export default function LangTabs({
-  value,
-  onChange,
-  available = ["en", "es", "fr", "pt"],
-}: Props) {
+export default function LangTabs({ currentLang }: { currentLang: UiLangKey }) {
   return (
-    <div style={{ display: "flex", gap: 8 }}>
-      {available.map(lang => (
-        <button
-          key={lang}
-          onClick={() => onChange(lang)}
-          style={{
-            padding: "4px 10px",
-            borderRadius: 6,
-            border: "1px solid #ccc",
-            background: value === lang ? "#ddd" : "#fff",
-          }}
-        >
-          {LABELS[lang]}
-        </button>
-      ))}
+    <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
+      {ORDERED_LANGS.map((code) => {
+        const label = UI_TARGET_LABELS[code]; // ✅ 무조건 string 구조
+
+        const text =
+          code === "en" ? "English" : `${label.native} (${label.en})`;
+
+        return (
+          <Link
+            key={code}
+            href={`/viewer/${code}`}
+            style={{
+              padding: "4px 8px",
+              borderRadius: 4,
+              fontSize: 14,
+              background: currentLang === code ? "#333" : "#eee",
+              color: currentLang === code ? "#fff" : "#333",
+              border: "none",
+              cursor: currentLang === code ? "default" : "pointer",
+              textDecoration: "none",
+            }}
+          >
+            {text}
+          </Link>
+        );
+      })}
     </div>
   );
 }

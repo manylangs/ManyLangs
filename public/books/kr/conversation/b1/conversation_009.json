@@ -1,10 +1,9 @@
-﻿{
+{
   "chapter_id": "009",
   "cefr": "B1",
   "title_kr": "동아리 활동",
   "speaker_label_removed": true,
   "voice_validation_required": true,
-
   "key_expressions": [
     "동아리 들어갔어요?,",
     "분위기는 어때요?,",
@@ -12,7 +11,6 @@
     "활동이 잘 맞아요?,",
     "다음에 같이 가봐요!,"
   ],
-
   "sets": [
     {
       "set_id": 1,
@@ -27,13 +25,8 @@
           "편하고 밝은 분위기라서 금방 적응됐어요.",
           "좋아요! 다음에 일정 나오면 알려드릴게요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 2,
       "dialogue_layer": {
@@ -47,13 +40,8 @@
           "활동하면서 계속 얘기하다 보니 가까워졌어요.",
           "맞아요! 같이 하니까 더 재밌더라고요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 3,
       "dialogue_layer": {
@@ -67,13 +55,8 @@
           "네, 매주 조금씩 다른 활동을 해서 지루하지 않아요.",
           "맞아요, 계속 배울 게 있어서 좋아요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 4,
       "dialogue_layer": {
@@ -87,13 +70,8 @@
           "네, 선배들이 먼저 말 걸어줘서 도움이 많이 됐어요.",
           "맞아요, 이제는 편하게 참여하고 있어요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 5,
       "dialogue_layer": {
@@ -107,13 +85,8 @@
           "맞아요, 시간 관리가 제일 어렵더라고요.",
           "네, 필요하면 활동도 조금 줄일 생각이에요."
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 6,
       "dialogue_layer": {
@@ -127,13 +100,8 @@
           "처음이라 조심스러웠는데 다들 도와줘서 괜찮았어요.",
           "응, 점점 익숙해지고 있어요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 7,
       "dialogue_layer": {
@@ -147,13 +115,8 @@
           "맞아요, 이번엔 색다른 활동이라 기대돼요.",
           "응, 잘 준비해서 멋지게 해보고 싶어요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 8,
       "dialogue_layer": {
@@ -167,13 +130,8 @@
           "체력도 좀 필요해서 더 신경 써야겠더라고요.",
           "응, 필요할 때 잠깐 쉬면 괜찮아져요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 9,
       "dialogue_layer": {
@@ -187,13 +145,8 @@
           "다들 편해서 모이면 정말 재밌어요.",
           "응, 갔다 와서 바로 알려줄게요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     },
-
     {
       "set_id": 10,
       "dialogue_layer": {
@@ -207,13 +160,7 @@
           "응, 다들 편해서 금방 친해질 거예요.",
           "좋아요! 일정 나오면 바로 말씀드릴게요!"
         ]
-      },
-      "tts_layer": {
-        "A": { "tts_voice": "ko-KR-Standard-A" },
-        "B": { "tts_voice": "ko-KR-Standard-B" }
       }
     }
-
   ]
 }
-
