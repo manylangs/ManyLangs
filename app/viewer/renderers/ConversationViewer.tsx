@@ -79,7 +79,7 @@ export default function ConversationViewer({
             zIndex: 50,
             background: "#fff",
             padding: "12px 0",
-            marginBottom: 24,
+            marginBottom: 16,
             borderBottom: "1px solid #eee",
           }}
         >
@@ -88,6 +88,32 @@ export default function ConversationViewer({
             level={level}
             chapter={chapter}
           />
+        </section>
+      )}
+
+      {/* ✅ 제목 (목표언어 / 학습언어 동일 크기) */}
+      {data.title && (
+        <section style={{ marginBottom: 20 }}>
+          <div
+            style={{
+              fontSize: 22,
+              fontWeight: 700,
+              marginBottom: 4,
+            }}
+          >
+            {data.title.target}
+          </div>
+          {data.title[lang] && (
+            <div
+              style={{
+                fontSize: 22,
+                fontWeight: 700,
+                color: "#555",
+              }}
+            >
+              {data.title[lang]}
+            </div>
+          )}
         </section>
       )}
 
