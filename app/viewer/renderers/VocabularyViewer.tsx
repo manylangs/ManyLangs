@@ -42,15 +42,28 @@ export default function VocabularyViewer({
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto" }}>
-      {/* 🔒 오디오 컨트롤러 — 이디엄과 동일 위치 */}
-      <VocaAudioController
-        lang="kr"
-        level={level}
-        chapter={chapter}
-      />
+      {/* ===============================
+          🔒 상단 고정 재생 컨트롤러
+          (IdiomViewer와 100% 동일)
+         =============================== */}
+      <div
+        style={{
+          position: "sticky",
+          top: 0,
+          zIndex: 100,
+          background: "#fff",
+          padding: "16px 24px 12px",
+        }}
+      >
+        <VocaAudioController
+          lang="kr"
+          level={level}
+          chapter={chapter}
+        />
+      </div>
 
       <div style={{ padding: 24 }}>
-        {/* Prev / Next */}
+        {/* ===== 챕터 네비 ===== */}
         <div
           style={{
             display: "flex",
@@ -62,7 +75,10 @@ export default function VocabularyViewer({
             style={buttonStyle(false)}
             disabled={!prev}
             onClick={() =>
-              prev && router.push(`/viewer/kr/voca/${level}/${prev}`)
+              prev &&
+              router.push(
+                `/viewer/kr/vocabulary/${level}/${prev}`
+              )
             }
           >
             ← Prev
@@ -72,20 +88,23 @@ export default function VocabularyViewer({
             style={buttonStyle(false)}
             disabled={!next}
             onClick={() =>
-              next && router.push(`/viewer/kr/voca/${level}/${next}`)
+              next &&
+              router.push(
+                `/viewer/kr/vocabulary/${level}/${next}`
+              )
             }
           >
             Next →
           </button>
         </div>
 
-        {/* 챕터 버튼 (많으면 자동 줄바꿈) */}
+        {/* ===== 챕터 버튼 ===== */}
         <div
           style={{
             display: "flex",
-            flexWrap: "wrap",
             gap: 6,
             marginBottom: 20,
+            flexWrap: "wrap",
           }}
         >
           {chapters.map((c) => (
@@ -93,7 +112,9 @@ export default function VocabularyViewer({
               key={c}
               style={buttonStyle(c === chapter)}
               onClick={() =>
-                router.push(`/viewer/kr/voca/${level}/${c}`)
+                router.push(
+                  `/viewer/kr/vocabulary/${level}/${c}`
+                )
               }
             >
               {c}
@@ -101,7 +122,7 @@ export default function VocabularyViewer({
           ))}
         </div>
 
-        {/* 학습 언어 */}
+        {/* ===== 학습 언어 ===== */}
         <div style={{ display: "flex", gap: 8, marginBottom: 32 }}>
           {STUDY_LANGS.map((l) => (
             <button
@@ -114,43 +135,81 @@ export default function VocabularyViewer({
           ))}
         </div>
 
-        {/* 제목 */}
-        <h1>{data.title?.target}</h1>
-
-        {/* ===== 세트 렌더링 ===== */}
-        {data.blocks.map((block: any, idx: number) => (
-          <section
-            key={idx}
+        {/* ===== 제목 (목표언어 + 학습언어) ===== */}
+        {/* ===== 제목 (목표언어 + 학습언어, 동일 크기) ===== */}
+        <div style={{ marginBottom: 24 }}>
+          {/* 목표언어 */}
+          <div
             style={{
-              marginBottom: 48,
-              paddingBottom: 24,
-              borderBottom: "1px solid #eee",
+              fontSize: 22,
+              fontWeight: 700,
             }}
           >
-            <div style={{ fontWeight: 700 }}>
+            {data.title?.target}
+          </div>
+
+          {/* 학습언어 */}
+          {data.title?.[lang] && (
+            <div
+              style={{
+                fontSize: 22,          // ✅ 동일 크기
+                fontWeight: 400,       // 굵기만 차이
+                color: "#555",
+                marginTop: 4,
+              }}
+            >
+              {data.title[lang]}
+            </div>
+          )}
+        </div>
+
+
+        {/* ===== Vocabulary Sets ===== */}
+        {data.blocks.map((block: any, idx: number) => (
+          <section key={idx} style={{ marginBottom: 56 }}>
+            {/* Set 라벨 */}
+            <div
+              style={{
+                fontSize: 16,
+                fontWeight: 700,
+                marginBottom: 8,
+              }}
+            >
               Set {idx + 1}
             </div>
 
+            {/* 단어 */}
             <div style={{ fontSize: 22, fontWeight: 700 }}>
               {block.word.target}
             </div>
 
             {block.word[lang] && (
-              <div style={{ color: "#555", marginBottom: 12 }}>
+              <div style={{ fontSize: 18, color: "#555" }}>
                 {block.word[lang]}
               </div>
             )}
 
-            {block.examples.map((ex: any, i: number) => (
-              <div key={i} style={{ marginBottom: 8 }}>
-                <div>{ex.target}</div>
-                {ex[lang] && (
-                  <div style={{ color: "#666" }}>
-                    {ex[lang]}
-                  </div>
-                )}
-              </div>
-            ))}
+            {/* 예문 */}
+            <div style={{ marginTop: 16 }}>
+              {block.examples.map((ex: any, i: number) => (
+                <div
+                  key={i}
+                  style={{
+                    borderBottom: "1px solid #eee",
+                    marginBottom: 12,
+                    paddingBottom: 12,
+                  }}
+                >
+                  <div>{ex.target}</div>
+
+                  {ex[lang] && (
+                    <div style={{ color: "#555" }}>
+                      {ex[lang]}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </section>
         ))}
       </div>

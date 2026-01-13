@@ -20,8 +20,12 @@ export default function ConversationAudioController({
   const [index, setIndex] = useState(0);
   const [ready, setReady] = useState(false);
 
-  const audioSrc = `/audio/conversation/${lang}/${level}/conversation_${level}_${chapter}.wav`;
-  const cuesSrc  = `/audio/conversation/${lang}/${level}/conversation_${level}_${chapter}.cues.json`;
+  /* =========================
+     ✅ Idiom과 동일한 규칙
+     (경로만 conversation)
+     ========================= */
+  const audioSrc = `/audio/${lang}/conversation/${level}/conversation_${level}_${chapter}.wav`;
+  const cuesSrc  = `/audio/${lang}/conversation/${level}/conversation_${level}_${chapter}.cues.json`;
 
   /* =========================
      cues.json 로드
@@ -36,12 +40,14 @@ export default function ConversationAudioController({
       try {
         const res = await fetch(cuesSrc);
         const json = await res.json();
+
         if (!cancelled) {
           setCues(json.setStartMs || []);
           setReady(true);
         }
-      } catch {
+      } catch (e) {
         if (!cancelled) {
+          console.error("Failed to load cues:", e);
           setCues([]);
           setReady(false);
         }
@@ -56,6 +62,7 @@ export default function ConversationAudioController({
 
   /* =========================
      오디오 완전 리셋
+     (Idiom과 완전 동일)
      ========================= */
   useEffect(() => {
     const el = audioRef.current;
@@ -67,27 +74,28 @@ export default function ConversationAudioController({
   }, [audioSrc]);
 
   /* =========================
-     정확한 set 이동
+     정확한 세트 이동
      ========================= */
-  const seekTo = (nextIndex: number) => {
+  const seekTo = (next: number) => {
     const el = audioRef.current;
     if (!el) return;
-    if (nextIndex < 0 || nextIndex >= cues.length) return;
+    if (next < 0 || next >= cues.length) return;
 
-    el.currentTime = cues[nextIndex] / 1000;
+    el.currentTime = cues[next] / 1000;
     el.play().catch(() => {});
-    setIndex(nextIndex);
+    setIndex(next);
   };
 
   return (
     <section>
+      {/* 🔊 AudioPlayer — Idiom과 100% 동일 */}
       <AudioPlayer
         key={audioSrc}
         ref={audioRef}
         src={audioSrc}
-        title="Conversation Audio"
       />
 
+      {/* ▶ 컨트롤 */}
       <div
         style={{
           display: "flex",
@@ -96,7 +104,7 @@ export default function ConversationAudioController({
           marginTop: 8,
         }}
       >
-        {/* ◀ 이전 */}
+        {/* 이전 */}
         <button
           disabled={!ready || index === 0}
           onClick={() => seekTo(index - 1)}
@@ -104,14 +112,14 @@ export default function ConversationAudioController({
           ◀ Previous Dialogue
         </button>
 
-        {/* 📊 현재 / 전체 */}
+        {/* 현재 / 전체 */}
         {ready && cues.length > 0 && (
           <div style={{ fontWeight: 600 }}>
             Dialogue {index + 1} / {cues.length}
           </div>
         )}
 
-        {/* ▶ 다음 */}
+        {/* 다음 */}
         <button
           disabled={!ready || index >= cues.length - 1}
           onClick={() => seekTo(index + 1)}

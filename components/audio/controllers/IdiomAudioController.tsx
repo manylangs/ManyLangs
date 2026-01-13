@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import AudioPlayer from "@/components/audio/AudioPlayer";
 
 type Props = {
   lang: string;
@@ -8,84 +9,70 @@ type Props = {
   chapter: string;
 };
 
-export default function IdiomAudioController({ lang, level, chapter }: Props) {
+export default function IdiomAudioController({
+  lang,
+  level,
+  chapter,
+}: Props) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const prevAudioSrc = useRef<string | null>(null);
 
   const [cues, setCues] = useState<number[]>([]);
   const [index, setIndex] = useState(0);
+  const [ready, setReady] = useState(false);
 
-  const base = `idiom_${level}_${chapter}`;
-  const audioSrc = `/audio/${lang}/idiom/${level}/${base}.wav`;
-  const cuesSrc = `/audio/${lang}/idiom/${level}/${base}.cues.json`;
+  const audioSrc = `/audio/${lang}/idiom/${level}/idiom_${level}_${chapter}.wav`;
+  const cuesSrc  = `/audio/${lang}/idiom/${level}/idiom_${level}_${chapter}.cues.json`;
 
-  /* cues.json 로드 (Idiom 전용, 세트 기준) */
+  /* =========================
+     cues.json 로드 (세트 전용)
+     ========================= */
   useEffect(() => {
     let cancelled = false;
 
-    (async () => {
+    async function loadCues() {
+      setReady(false);
+      setIndex(0);
+
       try {
         const res = await fetch(cuesSrc);
-        const text = await res.text();
-
-        if (text.trim().startsWith("<")) {
-          throw new Error("Idiom cues not found");
-        }
-
-        const json = JSON.parse(text);
-
-        let list: number[] = [];
-
-        // ✅ Idiom 실제 패턴 대응
-        if (Array.isArray(json.setStartMs)) {
-          list = json.setStartMs;
-        } else if (
-          json.setStartMs &&
-          typeof json.setStartMs === "object"
-        ) {
-          list = Object.values(json.setStartMs);
-        } else if (Array.isArray(json.sets)) {
-          // 🔥 핵심 추가
-          list = json.sets
-            .map((s: any) => s.setStartMs)
-            .filter((v: any) => typeof v === "number");
-        }
-
+        const json = await res.json();
         if (!cancelled) {
-          setCues(list);
-          setIndex(0);
+          setCues(json.setStartMs || []);
+          setReady(true);
         }
-      } catch (e) {
-        console.error("❌ Idiom cues load failed:", cuesSrc, e);
-        if (!cancelled) setCues([]);
+      } catch {
+        if (!cancelled) {
+          setCues([]);
+          setReady(false);
+        }
       }
-    })();
+    }
 
+    loadCues();
     return () => {
       cancelled = true;
     };
   }, [cuesSrc]);
 
-  /* 파일 변경 시에만 reset */
+  /* =========================
+     오디오 리셋
+     ========================= */
   useEffect(() => {
     const el = audioRef.current;
     if (!el) return;
 
-    if (prevAudioSrc.current !== audioSrc) {
-      el.pause();
-      el.currentTime = 0;
-      el.load();
-      prevAudioSrc.current = audioSrc;
-    }
+    el.pause();
+    el.currentTime = 0;
+    el.load();
   }, [audioSrc]);
 
-  const total = cues.length;
-
+  /* =========================
+     세트 이동
+     ========================= */
   const seekTo = (next: number) => {
     const el = audioRef.current;
     if (!el) return;
-    if (!total) return;
-    if (next < 0 || next >= total) return;
+    if (next < 0 || next >= cues.length) return;
 
     el.currentTime = cues[next] / 1000;
     el.play().catch(() => {});
@@ -93,31 +80,32 @@ export default function IdiomAudioController({ lang, level, chapter }: Props) {
   };
 
   return (
-    <section style={{ marginTop: 12 }}>
-      <audio
+    <section>
+      <AudioPlayer
+        key={audioSrc}
         ref={audioRef}
         src={audioSrc}
-        controls
-        style={{ width: "100%", marginBottom: 8 }}
       />
 
-      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+      <div style={{ display: "flex", gap: 16, marginTop: 8 }}>
         <button
-          disabled={index === 0 || !total}
+          disabled={!ready || index === 0}
           onClick={() => seekTo(index - 1)}
         >
-          ◀
+          ◀ Previous Set
         </button>
 
-        <span style={{ fontWeight: 600 }}>
-          {total ? `${index + 1} / ${total}` : "- / -"}
-        </span>
+        {ready && cues.length > 0 && (
+          <div style={{ fontWeight: 600 }}>
+            Set {index + 1} / {cues.length}
+          </div>
+        )}
 
         <button
-          disabled={!total || index >= total - 1}
+          disabled={!ready || index >= cues.length - 1}
           onClick={() => seekTo(index + 1)}
         >
-          ▶
+          Next Set ▶
         </button>
       </div>
     </section>

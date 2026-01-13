@@ -1,11 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-
-type Cue = {
-  set: number;
-  start_ms: number;
-};
+import AudioPlayer from "@/components/audio/AudioPlayer";
 
 type Props = {
   lang: string;
@@ -19,60 +15,110 @@ export default function VocaAudioController({
   chapter,
 }: Props) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const [cues, setCues] = useState<Cue[]>([]);
-  const [currentSet, setCurrentSet] = useState(0);
 
+  const [cues, setCues] = useState<number[]>([]);
+  const [index, setIndex] = useState(0);
+  const [ready, setReady] = useState(false);
+
+  // 🔁 Idiom → voca 경로만 변경
   const audioSrc = `/audio/${lang}/voca/${level}/voca_${level}_${chapter}.wav`;
-  const cueSrc = `/audio/${lang}/voca/${level}/voca_${level}_${chapter}.cues.json`;
+  const cuesSrc = `/audio/${lang}/voca/${level}/voca_${level}_${chapter}.cues.json`;
 
+  /* =========================
+     cues.json 로드 (세트 전용)
+     ========================= */
   useEffect(() => {
-    fetch(cueSrc)
-      .then((r) => r.json())
-      .then((json) => setCues(json.sets ?? []))
-      .catch(() => setCues([]));
-  }, [cueSrc]);
+    let cancelled = false;
 
-  const playSet = (index: number) => {
-    if (!audioRef.current) return;
-    const cue = cues[index];
-    if (!cue) return;
+    async function loadCues() {
+      setReady(false);
+      setIndex(0);
 
-    audioRef.current.currentTime = cue.start_ms / 1000;
-    audioRef.current.play();
-    setCurrentSet(index);
+      try {
+        const res = await fetch(cuesSrc);
+        const json = await res.json();
+        if (!cancelled) {
+          // Idiom과 동일한 필드명 사용
+          setCues(
+            Array.isArray(json.setStartMs)
+              ? json.setStartMs
+              : Array.isArray(json.sets)
+                ? json.sets.map((s: any) => s.start_ms)
+                : []
+          );
+
+          setReady(true);
+        }
+      } catch {
+        if (!cancelled) {
+          setCues([]);
+          setReady(false);
+        }
+      }
+    }
+
+    loadCues();
+    return () => {
+      cancelled = true;
+    };
+  }, [cuesSrc]);
+
+  /* =========================
+     오디오 리셋
+     ========================= */
+  useEffect(() => {
+    const el = audioRef.current;
+    if (!el) return;
+
+    el.pause();
+    el.currentTime = 0;
+    el.load();
+  }, [audioSrc]);
+
+  /* =========================
+     세트 이동
+     ========================= */
+  const seekTo = (next: number) => {
+    const el = audioRef.current;
+    if (!el) return;
+    if (next < 0 || next >= cues.length) return;
+
+    el.currentTime = cues[next] / 1000;
+    el.play().catch(() => { });
+    setIndex(next);
   };
 
   return (
-    <div
-      style={{
-        position: "sticky",
-        top: 0,
-        zIndex: 100,
-        background: "#fff",
-        borderBottom: "1px solid #eee",
-        padding: "12px 24px",
-      }}
-    >
-      <audio ref={audioRef} src={audioSrc} />
+    <section>
+      {/* 🔊 오디오 플레이어 (Idiom과 동일) */}
+      <AudioPlayer
+        key={audioSrc}
+        ref={audioRef}
+        src={audioSrc}
+      />
 
-      <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
-        <button onClick={() => playSet(currentSet - 1)} disabled={currentSet <= 0}>
-          ◀ Prev
+      {/* 🎛 컨트롤 UI (Idiom과 100% 동일) */}
+      <div style={{ display: "flex", gap: 16, marginTop: 8 }}>
+        <button
+          disabled={!ready || index === 0}
+          onClick={() => seekTo(index - 1)}
+        >
+          ◀ Previous Set
         </button>
 
-        <button onClick={() => playSet(currentSet)}>▶ Play</button>
+        {ready && cues.length > 0 && (
+          <div style={{ fontWeight: 600 }}>
+            Set {index + 1} / {cues.length}
+          </div>
+        )}
 
         <button
-          onClick={() => playSet(currentSet + 1)}
-          disabled={currentSet >= cues.length - 1}
+          disabled={!ready || index >= cues.length - 1}
+          onClick={() => seekTo(index + 1)}
         >
-          Next ▶
+          Next Set ▶
         </button>
-
-        <span>
-          Set {currentSet + 1} / {cues.length}
-        </span>
       </div>
-    </div>
+    </section>
   );
 }
