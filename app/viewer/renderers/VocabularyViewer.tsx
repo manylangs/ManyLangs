@@ -1,52 +1,12 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import Link from "next/link";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import VocaAudioController from "@/components/audio/controllers/VocaAudioController";
 
-type StudyLang = "en" | "es" | "fr" | "pt";
+const STUDY_LANGS = ["en", "es", "fr", "pt"] as const;
+type StudyLang = (typeof STUDY_LANGS)[number];
 
-type VocabBlock = {
-  type: "vocab_item";
-  word: {
-    target: string;
-    en: string;
-    es: string;
-    fr: string;
-    pt: string;
-  };
-  examples?: Array<{
-    target: string;
-    en: string;
-    es: string;
-    fr: string;
-    pt: string;
-  }>;
-};
-
-type VocabData = {
-  meta: {
-    series: string;
-    level: string;
-    id: string;
-  };
-  title: {
-    target: string;
-    en: string;
-    es: string;
-    fr: string;
-    pt: string;
-  };
-  blocks: VocabBlock[];
-};
-
-type Props = {
-  level: string;
-  chapter: string;
-  chapters?: string[];
-  data: VocabData;
-};
-
-/* ✅ 버튼 디자인 – 사용자 제공 그대로 */
 const buttonStyle = (active: boolean) => ({
   padding: "4px 8px",
   borderRadius: 4,
@@ -54,130 +14,146 @@ const buttonStyle = (active: boolean) => ({
   background: active ? "#333" : "#eee",
   color: active ? "#fff" : "#333",
   border: "none",
-  cursor: active ? "default" : "pointer",
-  textDecoration: "none",
+  cursor: "pointer",
 });
 
+type Props = {
+  data: any;
+  level: string;
+  chapter: string;
+  chapters: string[];
+};
+
 export default function VocabularyViewer({
+  data,
   level,
   chapter,
-  chapters = [],
-  data,
+  chapters,
 }: Props) {
+  const router = useRouter();
   const [lang, setLang] = useState<StudyLang>("en");
 
-  const currentIndex = useMemo(() => {
-    if (!Array.isArray(chapters)) return -1;
-    return chapters.indexOf(chapter);
-  }, [chapters, chapter]);
-
-  const prev =
-    currentIndex > 0 ? chapters[currentIndex - 1] : chapter;
+  const currentIndex = chapters.indexOf(chapter);
+  const prev = currentIndex > 0 ? chapters[currentIndex - 1] : null;
   const next =
-    currentIndex >= 0 && currentIndex < chapters.length - 1
+    currentIndex < chapters.length - 1
       ? chapters[currentIndex + 1]
-      : chapter;
+      : null;
 
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
-      {/* 언어 선택 */}
-      <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
-        {(["en", "es", "fr", "pt"] as StudyLang[]).map((l) => (
+    <div style={{ maxWidth: 720, margin: "0 auto" }}>
+      {/* 🔒 오디오 컨트롤러 — 이디엄과 동일 위치 */}
+      <VocaAudioController
+        lang="kr"
+        level={level}
+        chapter={chapter}
+      />
+
+      <div style={{ padding: 24 }}>
+        {/* Prev / Next */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            marginBottom: 12,
+          }}
+        >
           <button
-            key={l}
-            onClick={() => setLang(l)}
-            style={buttonStyle(lang === l)}
+            style={buttonStyle(false)}
+            disabled={!prev}
+            onClick={() =>
+              prev && router.push(`/viewer/kr/voca/${level}/${prev}`)
+            }
           >
-            {l.toUpperCase()}
+            ← Prev
           </button>
-        ))}
-      </div>
 
-      {/* Prev / Next */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginBottom: 12,
-        }}
-      >
-        <Link
-          href={`/viewer/kr/voca/${level}/${prev}`}
-          style={buttonStyle(false)}
-        >
-          ← Prev
-        </Link>
-        <Link
-          href={`/viewer/kr/voca/${level}/${next}`}
-          style={buttonStyle(false)}
-        >
-          Next →
-        </Link>
-      </div>
+          <button
+            style={buttonStyle(false)}
+            disabled={!next}
+            onClick={() =>
+              next && router.push(`/viewer/kr/voca/${level}/${next}`)
+            }
+          >
+            Next →
+          </button>
+        </div>
 
-      {/* 챕터 버튼 */}
-      {chapters.length > 0 && (
+        {/* 챕터 버튼 (많으면 자동 줄바꿈) */}
         <div
           style={{
             display: "flex",
             flexWrap: "wrap",
             gap: 6,
-            marginBottom: 24,
+            marginBottom: 20,
           }}
         >
-          {chapters.map((ch) => {
-            const active = ch === chapter;
-            return (
-              <Link
-                key={ch}
-                href={`/viewer/kr/voca/${level}/${ch}`}
-                style={buttonStyle(active)}
-              >
-                {ch}
-              </Link>
-            );
-          })}
+          {chapters.map((c) => (
+            <button
+              key={c}
+              style={buttonStyle(c === chapter)}
+              onClick={() =>
+                router.push(`/viewer/kr/voca/${level}/${c}`)
+              }
+            >
+              {c}
+            </button>
+          ))}
         </div>
-      )}
 
-      {/* 제목 */}
-      <section style={{ marginBottom: 32 }}>
-        <div style={{ fontSize: 24, fontWeight: 700 }}>
-          {data.title.target}
+        {/* 학습 언어 */}
+        <div style={{ display: "flex", gap: 8, marginBottom: 32 }}>
+          {STUDY_LANGS.map((l) => (
+            <button
+              key={l}
+              style={buttonStyle(lang === l)}
+              onClick={() => setLang(l)}
+            >
+              {l.toUpperCase()}
+            </button>
+          ))}
         </div>
-        <div style={{ fontSize: 18, color: "#444", marginTop: 6 }}>
-          {data.title[lang]}
-        </div>
-      </section>
 
-      {/* 단어 목록 */}
-      <section>
-        {data.blocks.map((b, idx) => (
-          <div key={idx} style={{ marginBottom: 32 }}>
-            {/* 단어 */}
-            <div style={{ fontSize: 18, fontWeight: 700 }}>
-              {b.word.target}
+        {/* 제목 */}
+        <h1>{data.title?.target}</h1>
+
+        {/* ===== 세트 렌더링 ===== */}
+        {data.blocks.map((block: any, idx: number) => (
+          <section
+            key={idx}
+            style={{
+              marginBottom: 48,
+              paddingBottom: 24,
+              borderBottom: "1px solid #eee",
+            }}
+          >
+            <div style={{ fontWeight: 700 }}>
+              Set {idx + 1}
             </div>
-            <div style={{ fontSize: 16, color: "#444", marginTop: 4 }}>
-              {b.word[lang]}
+
+            <div style={{ fontSize: 22, fontWeight: 700 }}>
+              {block.word.target}
             </div>
 
-            {/* 예문 */}
-            {b.examples && (
-              <div style={{ marginTop: 10 }}>
-                {b.examples.map((ex, j) => (
-                  <div key={j} style={{ marginBottom: 6 }}>
-                    <div>{ex.target}</div>
-                    <div style={{ color: "#444" }}>
-                      {ex[lang]}
-                    </div>
-                  </div>
-                ))}
+            {block.word[lang] && (
+              <div style={{ color: "#555", marginBottom: 12 }}>
+                {block.word[lang]}
               </div>
             )}
-          </div>
+
+            {block.examples.map((ex: any, i: number) => (
+              <div key={i} style={{ marginBottom: 8 }}>
+                <div>{ex.target}</div>
+                {ex[lang] && (
+                  <div style={{ color: "#666" }}>
+                    {ex[lang]}
+                  </div>
+                )}
+              </div>
+            ))}
+          </section>
         ))}
-      </section>
+      </div>
     </div>
   );
 }
