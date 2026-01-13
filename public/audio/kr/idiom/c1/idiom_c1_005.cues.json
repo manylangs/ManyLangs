@@ -1,22 +1,9 @@
-[
-  {
-    "setIndex": 0,
-    "setStartMs": 0
-  },
-  {
-    "setIndex": 1,
-    "setStartMs": 31023
-  },
-  {
-    "setIndex": 2,
-    "setStartMs": 60822
-  },
-  {
-    "setIndex": 3,
-    "setStartMs": 89661
-  },
-  {
-    "setIndex": 4,
-    "setStartMs": 118596
-  }
-]
+{
+  "setStartMs": [
+    0,
+    31023,
+    60822,
+    89661,
+    118596
+  ]
+}
