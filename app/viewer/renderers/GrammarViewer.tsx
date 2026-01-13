@@ -83,7 +83,7 @@ export default function GrammarViewer({
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
-      {/* ===== 학습 언어 선택 ===== */}
+      {/* ===== Study Language ===== */}
       <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
         {STUDY_LANGS.map((l) => (
           <button
@@ -118,7 +118,7 @@ export default function GrammarViewer({
         </Link>
       </div>
 
-      {/* ===== 챕터 네비 ===== */}
+      {/* ===== Chapter Navigation ===== */}
       <div
         style={{
           display: "flex",
@@ -141,7 +141,7 @@ export default function GrammarViewer({
         })}
       </div>
 
-      {/* ===== 제목 ===== */}
+      {/* ===== Title ===== */}
       <section style={{ marginBottom: 28 }}>
         <div style={{ fontSize: 24, fontWeight: 700 }}>
           {grammarData.title?.target}
@@ -160,23 +160,23 @@ export default function GrammarViewer({
         )}
       </section>
 
-      {/* ===== 설명 ===== */}
+      {/* ===== Explanation ===== */}
       <section style={{ marginBottom: 32 }}>
-        <h3>설명</h3>
+        <h3>Explanation</h3>
         {explanations.map(renderLine)}
       </section>
 
-      {/* ===== 예문 ===== */}
+      {/* ===== Examples ===== */}
       <section>
-        <h3>예문</h3>
+        <h3>Examples</h3>
 
-        <h4>기본 패턴</h4>
+        <h4>Core Patterns</h4>
         {byVariant("core_patterns").map(renderLine)}
 
-        <h4>변형 패턴</h4>
+        <h4>Variations</h4>
         {byVariant("variations").map(renderLine)}
 
-        <h4>확장 예문</h4>
+        <h4>Extended Examples</h4>
         {byVariant("extended_usage").map(renderLine)}
       </section>
     </div>
