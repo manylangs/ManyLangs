@@ -1,76 +1,77 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import AudioPlayer from "@/components/audio/AudioPlayer";
 
 type Props = {
   lang: string;
   level: string;
   chapter: string;
-  dialogueCount?: number;
 };
 
 export default function ConversationAudioController({
   lang,
   level,
   chapter,
-  dialogueCount,
 }: Props) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const [cues, setCues] = useState<number[]>([]);
   const [index, setIndex] = useState(0);
+  const [ready, setReady] = useState(false);
 
-  // ✅ conversation 파일명: conversation_001.wav / conversation_001.cues.json
-  const audioSrc = `/audio/conversation/${lang}/${level}/conversation_${chapter}.wav`;
-  const cuesSrc = `/audio/conversation/${lang}/${level}/conversation_${chapter}.cues.json`;
+  const audioSrc = `/audio/conversation/${lang}/${level}/conversation_${level}_${chapter}.wav`;
+  const cuesSrc  = `/audio/conversation/${lang}/${level}/conversation_${level}_${chapter}.cues.json`;
 
+  /* =========================
+     cues.json 로드
+     ========================= */
   useEffect(() => {
     let cancelled = false;
 
-    (async () => {
+    async function loadCues() {
+      setReady(false);
       setIndex(0);
+
       try {
         const res = await fetch(cuesSrc);
         const json = await res.json();
-
-        // ✅ 가능한 모든 키 대응
-        const list =
-          json.cues ||
-          json.setStartMs ||
-          json.startsMs ||
-          json.startMs ||
-          json.times ||
-          [];
-
-        if (!cancelled) setCues(Array.isArray(list) ? list : []);
+        if (!cancelled) {
+          setCues(json.setStartMs || []);
+          setReady(true);
+        }
       } catch {
-        if (!cancelled) setCues([]);
+        if (!cancelled) {
+          setCues([]);
+          setReady(false);
+        }
       }
-    })();
+    }
 
+    loadCues();
     return () => {
       cancelled = true;
     };
   }, [cuesSrc]);
 
+  /* =========================
+     오디오 완전 리셋
+     ========================= */
   useEffect(() => {
     const el = audioRef.current;
     if (!el) return;
+
     el.pause();
     el.currentTime = 0;
     el.load();
   }, [audioSrc]);
 
-  const total = (typeof dialogueCount === "number" && dialogueCount > 0)
-    ? dialogueCount
-    : cues.length;
-
+  /* =========================
+     정확한 set 이동
+     ========================= */
   const seekTo = (nextIndex: number) => {
     const el = audioRef.current;
     if (!el) return;
-
-    // cues가 없으면 이동 불가
-    if (!cues.length) return;
     if (nextIndex < 0 || nextIndex >= cues.length) return;
 
     el.currentTime = cues[nextIndex] / 1000;
@@ -79,28 +80,43 @@ export default function ConversationAudioController({
   };
 
   return (
-    <section style={{ marginTop: 12 }}>
-      <audio
+    <section>
+      <AudioPlayer
+        key={audioSrc}
         ref={audioRef}
         src={audioSrc}
-        controls
-        style={{ width: "100%", marginBottom: 8 }}
+        title="Conversation Audio"
       />
 
-      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-        <button disabled={index === 0 || !cues.length} onClick={() => seekTo(index - 1)}>
-          ◀
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: 16,
+          marginTop: 8,
+        }}
+      >
+        {/* ◀ 이전 */}
+        <button
+          disabled={!ready || index === 0}
+          onClick={() => seekTo(index - 1)}
+        >
+          ◀ Previous Dialogue
         </button>
 
-        <span style={{ fontWeight: 600 }}>
-          {index + 1} / {total || "—"}
-        </span>
+        {/* 📊 현재 / 전체 */}
+        {ready && cues.length > 0 && (
+          <div style={{ fontWeight: 600 }}>
+            Dialogue {index + 1} / {cues.length}
+          </div>
+        )}
 
+        {/* ▶ 다음 */}
         <button
-          disabled={!cues.length || index >= cues.length - 1}
+          disabled={!ready || index >= cues.length - 1}
           onClick={() => seekTo(index + 1)}
         >
-          ▶
+          Next Dialogue ▶
         </button>
       </div>
     </section>
