@@ -4,7 +4,11 @@ import { useEffect } from "react";
 import { useAuth } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 
-export default function ViewerEntryPage() {
+export default function ViewerGuard({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const { userId, isLoaded } = useAuth();
   const router = useRouter();
 
@@ -17,16 +21,16 @@ export default function ViewerEntryPage() {
       return;
     }
 
-    // 2️⃣ 라이선스 차단
+    // 2️⃣ 라이선스 차단 (localStorage)
     const licensed = localStorage.getItem("licensed");
     if (licensed !== "true") {
       router.replace("/select-books");
       return;
     }
-
-    // 3️⃣ 라이선스 OK → 교재 선택 화면으로
-    router.replace("/select-books");
   }, [isLoaded, userId, router]);
 
-  return null;
+  // 판정 중 렌더 차단
+  if (!isLoaded || !userId) return null;
+
+  return <>{children}</>;
 }
