@@ -1,18 +1,16 @@
-export default function Home() {
-  return (
-    <main style={{ padding: 40 }}>
-      <h1>ManyLangs Viewer (Recovery Mode)</h1>
+import Link from "next/link";
 
-      <ul>
+export default function HomePage() {
+  return (
+    <main style={{ padding: 24 }}>
+      <h1>ManyLangs</h1>
+
+      <ul style={{ marginTop: 20 }}>
         <li>
-          <a href="/viewer/kr/conversation/a1/001">
-            ▶ Conversation A1-001
-          </a>
+          <Link href="/login">로그인</Link>
         </li>
         <li>
-          <a href="/viewer/kr/idiom/a1/001">
-            ▶ Idiom A1-001
-          </a>
+          <Link href="/signup">회원가입</Link>
         </li>
       </ul>
     </main>
