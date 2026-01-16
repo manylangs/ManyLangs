@@ -32,6 +32,8 @@ export default function SelectBooksPage() {
   if (!isLoaded || !userId) return null;
 
   async function activateCoupon() {
+    if (loading) return;
+
     setError("");
     setLoading(true);
 
@@ -80,6 +82,7 @@ export default function SelectBooksPage() {
         <select
           value={book}
           onChange={e => setBook(e.target.value)}
+          disabled={loading}
           style={{ display: "block", width: "100%", marginTop: 4 }}
         >
           <option value="grammar">Grammar</option>
@@ -92,6 +95,7 @@ export default function SelectBooksPage() {
         <select
           value={level}
           onChange={e => setLevel(e.target.value)}
+          disabled={loading}
           style={{ display: "block", width: "100%", marginTop: 4 }}
         >
           <option value="a1">A1</option>
@@ -105,6 +109,7 @@ export default function SelectBooksPage() {
         <input
           value={coupon}
           onChange={e => setCoupon(e.target.value)}
+          disabled={loading}
           placeholder="Enter your coupon code"
           style={{
             display: "block",
@@ -116,7 +121,9 @@ export default function SelectBooksPage() {
       </div>
 
       {error && (
-        <p style={{ color: "red", marginTop: 8 }}>{error}</p>
+        <p style={{ color: "red", marginTop: 8 }}>
+          {error}
+        </p>
       )}
 
       <button
@@ -126,7 +133,7 @@ export default function SelectBooksPage() {
           marginTop: 24,
           padding: "10px 16px",
           width: "100%",
-          cursor: loading ? "default" : "pointer",
+          cursor: loading ? "not-allowed" : "pointer",
           opacity: loading ? 0.6 : 1,
         }}
       >

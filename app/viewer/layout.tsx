@@ -22,7 +22,7 @@ export default function ViewerLayout({
     }
 
     if (!storedExpiresAt) {
-      router.replace("/activate");
+      router.replace("/login");
       return;
     }
 
@@ -30,12 +30,24 @@ export default function ViewerLayout({
     setExpiresAt(exp);
 
     if (Date.now() > exp) {
-      router.replace("/activate");
+      router.replace("/login");
     }
   }, [router]);
 
-  // expiresAt 로딩 전 깜빡임 방지
-  if (expiresAt === null) return null;
+  // ⏳ expiresAt 로딩 중 UX (추가됨)
+  if (expiresAt === null) {
+    return (
+      <div
+        style={{
+          padding: 24,
+          textAlign: "center",
+          color: "#666",
+        }}
+      >
+        Loading textbook...
+      </div>
+    );
+  }
 
   return (
     <>
