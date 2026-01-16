@@ -1,6 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import {
+  Card,
+  CardHeader,
+  CardContent,
+} from "../../../components/ui/card";
+import { Badge } from "../../../components/ui/badge";
 
 type Coupon = {
   code: string;
@@ -25,60 +31,72 @@ export default function MyCouponsPage() {
   }
 
   return (
-    <main style={{ padding: 24 }}>
-      <h1>My Coupons</h1>
+    <main className="flex justify-center px-4 py-8">
+      <div className="w-full max-w-2xl">
+        <h1 className="text-xl font-semibold">My Coupons</h1>
 
-      {/* 🔔 상단 고정 안내 */}
-      <p style={{ marginTop: 12, color: "#555" }}>
-        Tap a coupon to copy the code.
-      </p>
+        {/* 🔔 상단 고정 안내 */}
+        <p className="mt-3 text-sm text-gray-500">
+          Tap a coupon to copy the code.
+        </p>
 
-      {coupons.length === 0 && <p>No coupons available.</p>}
+        <p className="mt-2 text-sm text-gray-500">
+          Coupons may be shared or transferred to others. ManyLangs is not responsible
+          for any issues arising from coupon sharing or transfer.
+        </p>
 
-      <ul style={{ marginTop: 16, padding: 0, listStyle: "none" }}>
-        {coupons.map(c => {
-          const isCopied = copiedCode === c.code;
+        {coupons.length === 0 && (
+          <p className="mt-6 text-sm text-gray-500">
+            No coupons available.
+          </p>
+        )}
 
-          return (
-            <li
-              key={c.code}
-              onClick={() => copyCoupon(c.code)}
-              style={{
-                marginBottom: 12,
-                padding: 12,
-                border: "1px solid #ccc",
-                borderRadius: 6,
-                cursor: "pointer",
-                background: "#fff",
-              }}
-            >
-              <strong>{c.code}</strong>
+        <div className="mt-6 space-y-3">
+          {coupons.map(c => {
+            const isCopied = copiedCode === c.code;
 
-              <div style={{ marginTop: 4 }}>
-                Status:{" "}
-                {c.status === "Unused"
-                  ? "Unused"
-                  : "Used"}
-              </div>
+            return (
+              <Card
+                key={c.code}
+                onClick={() => copyCoupon(c.code)}
+                className="cursor-pointer hover:shadow-sm transition-shadow"
+              >
+                <CardHeader className="flex flex-row items-center justify-between pb-2">
+                  <code className="font-mono font-semibold text-base">
+                    {c.code}
+                  </code>
 
-              {/* ✅ 터치(복사)했을 때만 보이는 핵심 문구 */}
-              {c.status === "Unused" && isCopied && (
-                <div style={{ marginTop: 6, fontSize: 13, color: "#333" }}>
-                  Enter this coupon code when selecting a textbook to get
-                  30 days of access.
-                </div>
-              )}
+                  {c.status === "Unused" ? (
+                    <Badge className="bg-green-600 text-white">
+                      Unused
+                    </Badge>
+                  ) : (
+                    <Badge variant="secondary">
+                      Used
+                    </Badge>
+                  )}
+                </CardHeader>
 
-              <div style={{ fontSize: 13, color: "#666", marginTop: 4 }}>
-                Issued:{" "}
-                {c.issuedAt
-                  ? new Date(c.issuedAt).toLocaleDateString()
-                  : "—"}
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+                <CardContent className="pt-0">
+                  {c.status === "Unused" && isCopied && (
+                    <p className="mt-1 text-sm text-gray-700">
+                      Enter this coupon code when selecting a textbook to get
+                      30 days of access.
+                    </p>
+                  )}
+
+                  <p className="mt-2 text-xs text-gray-500">
+                    Issued:{" "}
+                    {c.issuedAt
+                      ? new Date(c.issuedAt).toLocaleDateString()
+                      : "—"}
+                  </p>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
+      </div>
     </main>
   );
 }

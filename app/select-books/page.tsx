@@ -3,6 +3,13 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
+import { Button } from "../../components/ui/button";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+} from "../../components/ui/card";
 
 export default function SelectBooksPage() {
   const { userId, isLoaded } = useAuth();
@@ -61,11 +68,9 @@ export default function SelectBooksPage() {
         return;
       }
 
-      // ✅ 라이선스 저장 (클라이언트 가드용)
       localStorage.setItem("licensed", "true");
       localStorage.setItem("expiresAt", String(data.expiresAt));
 
-      // ✅ Viewer 이동
       router.replace(`/viewer/kr/${book}/${level}/001`);
     } catch (e) {
       setError("Network error. Please try again.");
@@ -74,71 +79,66 @@ export default function SelectBooksPage() {
   }
 
   return (
-    <main style={{ padding: 24, maxWidth: 420 }}>
-      <h2>Select a textbook</h2>
+    <main className="flex justify-center px-4 py-8">
+      <Card className="w-full max-w-md hover:shadow-sm transition-shadow">
+        <CardHeader>
+          <CardTitle>Select a textbook</CardTitle>
+        </CardHeader>
 
-      <div style={{ marginTop: 16 }}>
-        <label>Textbook</label>
-        <select
-          value={book}
-          onChange={e => setBook(e.target.value)}
-          disabled={loading}
-          style={{ display: "block", width: "100%", marginTop: 4 }}
-        >
-          <option value="grammar">Grammar</option>
-          <option value="conversation">Conversation</option>
-        </select>
-      </div>
+        <CardContent className="space-y-4">
+          <div>
+            <label>Textbook</label>
+            <select
+              value={book}
+              onChange={e => setBook(e.target.value)}
+              disabled={loading}
+              className="mt-1 block w-full rounded border px-2 py-1"
+            >
+              <option value="grammar">Grammar</option>
+              <option value="conversation">Conversation</option>
+            </select>
+          </div>
 
-      <div style={{ marginTop: 16 }}>
-        <label>Level</label>
-        <select
-          value={level}
-          onChange={e => setLevel(e.target.value)}
-          disabled={loading}
-          style={{ display: "block", width: "100%", marginTop: 4 }}
-        >
-          <option value="a1">A1</option>
-          <option value="a2">A2</option>
-          <option value="b1">B1</option>
-        </select>
-      </div>
+          <div>
+            <label>Level</label>
+            <select
+              value={level}
+              onChange={e => setLevel(e.target.value)}
+              disabled={loading}
+              className="mt-1 block w-full rounded border px-2 py-1"
+            >
+              <option value="a1">A1</option>
+              <option value="a2">A2</option>
+              <option value="b1">B1</option>
+            </select>
+          </div>
 
-      <div style={{ marginTop: 20 }}>
-        <label>Coupon code</label>
-        <input
-          value={coupon}
-          onChange={e => setCoupon(e.target.value)}
-          disabled={loading}
-          placeholder="Enter your coupon code"
-          style={{
-            display: "block",
-            width: "100%",
-            marginTop: 4,
-            padding: 8,
-          }}
-        />
-      </div>
+          <div>
+            <label>Coupon code</label>
+            <input
+              value={coupon}
+              onChange={e => setCoupon(e.target.value)}
+              disabled={loading}
+              placeholder="Enter your coupon code"
+              className="mt-1 block w-full rounded border px-2 py-1"
+            />
+          </div>
 
-      {error && (
-        <p style={{ color: "red", marginTop: 8 }}>
-          {error}
-        </p>
-      )}
+          {error && (
+            <p className="text-sm text-red-600">
+              {error}
+            </p>
+          )}
 
-      <button
-        onClick={activateCoupon}
-        disabled={loading}
-        style={{
-          marginTop: 24,
-          padding: "10px 16px",
-          width: "100%",
-          cursor: loading ? "not-allowed" : "pointer",
-          opacity: loading ? 0.6 : 1,
-        }}
-      >
-        {loading ? "Activating..." : "Activate & Start Learning"}
-      </button>
+          <Button
+            onClick={activateCoupon}
+            disabled={loading}
+            className={`w-full ${loading ? "opacity-60 cursor-not-allowed" : ""}`}
+          >
+            {loading ? "Activating..." : "Activate & Start Learning"}
+          </Button>
+        </CardContent>
+      </Card>
     </main>
   );
 }

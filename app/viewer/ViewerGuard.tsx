@@ -21,10 +21,17 @@ export default function ViewerGuard({
       return;
     }
 
-    // 2️⃣ 라이선스 차단 (localStorage)
+    // 2️⃣ 라이선스 존재 여부
     const licensed = localStorage.getItem("licensed");
     if (licensed !== "true") {
       router.replace("/select-books");
+      return;
+    }
+
+    // 3️⃣ 라이선스 만료 체크 (추가)
+    const expiresAt = localStorage.getItem("expiresAt");
+    if (!expiresAt || Date.now() > Number(expiresAt)) {
+      router.replace("/login");
       return;
     }
   }, [isLoaded, userId, router]);
