@@ -23,11 +23,11 @@ export default function LicenseHeader({ expiresAt }: Props) {
         alignItems: "center",
       }}
     >
+      {/* 🔒 라이선스 정보만 표시 */}
       <span>
         License valid until{" "}
         <strong>{new Date(expiresAt).toLocaleDateString()}</strong>
-      </span>
-      <span>
+        {" · "}
         {daysLeft > 0 ? `${daysLeft} days left` : "Expired"}
       </span>
     </div>

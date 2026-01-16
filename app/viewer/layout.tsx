@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import LicenseHeader from "@/app/viewer/components/LicenseHeader";
+import ViewerHeader from "@/app/viewer/components/ViewerHeader";
 
 export default function ViewerLayout({
   children,
@@ -16,12 +17,7 @@ export default function ViewerLayout({
     const licensed = localStorage.getItem("licensed") === "true";
     const storedExpiresAt = localStorage.getItem("expiresAt");
 
-    if (!licensed) {
-      router.replace("/checkout");
-      return;
-    }
-
-    if (!storedExpiresAt) {
+    if (!licensed || !storedExpiresAt) {
       router.replace("/login");
       return;
     }
@@ -34,24 +30,14 @@ export default function ViewerLayout({
     }
   }, [router]);
 
-  // ⏳ expiresAt 로딩 중 UX (추가됨)
   if (expiresAt === null) {
-    return (
-      <div
-        style={{
-          padding: 24,
-          textAlign: "center",
-          color: "#666",
-        }}
-      >
-        Loading textbook...
-      </div>
-    );
+    return <div style={{ padding: 24 }}>Loading textbook...</div>;
   }
 
   return (
     <>
       <LicenseHeader expiresAt={expiresAt} />
+      <ViewerHeader />   {/* ✅ 토글은 여기 하나만 */}
       {children}
     </>
   );
