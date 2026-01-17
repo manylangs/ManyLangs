@@ -44,10 +44,7 @@ export default function GrammarViewer({
   const [lang, setLang] = useState<StudyLang>("en");
 
   const currentIndex = chapters.indexOf(chapter);
-
-  const prev =
-    currentIndex > 0 ? chapters[currentIndex - 1] : chapter;
-
+  const prev = currentIndex > 0 ? chapters[currentIndex - 1] : chapter;
   const next =
     currentIndex < chapters.length - 1
       ? chapters[currentIndex + 1]
@@ -161,22 +158,62 @@ export default function GrammarViewer({
       </section>
 
       {/* ===== Explanation ===== */}
-      <section style={{ marginBottom: 32 }}>
-        <h3>Explanation</h3>
+      <section style={{ marginBottom: 36 }}>
+        <div
+          style={{
+            fontSize: 18,
+            fontWeight: 700,
+            marginBottom: 12,
+          }}
+        >
+          Explanation
+        </div>
         {explanations.map(renderLine)}
       </section>
 
       {/* ===== Examples ===== */}
       <section>
-        <h3>Examples</h3>
+        <div
+          style={{
+            fontSize: 18,
+            fontWeight: 700,
+            marginBottom: 16,
+          }}
+        >
+          Examples
+        </div>
 
-        <h4>Core Patterns</h4>
+        <div
+          style={{
+            fontSize: 15,
+            fontWeight: 600,
+            marginBottom: 8,
+          }}
+        >
+          Core Patterns
+        </div>
         {byVariant("core_patterns").map(renderLine)}
 
-        <h4>Variations</h4>
+        <div
+          style={{
+            fontSize: 15,
+            fontWeight: 600,
+            margin: "20px 0 8px",
+          }}
+        >
+          Variations
+        </div>
         {byVariant("variations").map(renderLine)}
 
-        <h4>Extended Examples</h4>
+        <div
+          style={{
+            fontSize: 15,
+            fontWeight: 600,
+            margin: "20px 0 8px",
+          }}
+        >
+          Extended Examples
+        </div>
         {byVariant("extended_usage").map(renderLine)}
       </section>
     </div>

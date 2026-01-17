@@ -1,32 +1,64 @@
-"use client";
+import Link from "next/link";
 
-import { useEffect } from "react";
-import { useAuth } from "@clerk/nextjs";
-import { useRouter } from "next/navigation";
+export default function HomePage() {
+  return (
+    <main
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <section style={{ maxWidth: 480, width: "100%", padding: 24 }}>
+        <h1 style={{ fontSize: 32, marginBottom: 12 }}>ManyLangs</h1>
 
-export default function ViewerEntryPage() {
-  const { userId, isLoaded } = useAuth();
-  const router = useRouter();
+        <p
+          style={{
+            fontSize: 16,
+            lineHeight: 1.6,
+            marginBottom: 24,
+            whiteSpace: "nowrap",
+          }}
+        >
+          Learn languages through structured textbooks.
+          <br />
+          Grammar · Conversation · Vocabulary · Pronunciation · Idioms
+        </p>
 
-  useEffect(() => {
-    if (!isLoaded) return;
+        <div style={{ display: "flex", gap: 12 }}>
+          <Link href="/login">
+            <button type="button" style={btnPrimary}>
+              Log in
+            </button>
+          </Link>
 
-    // 1️⃣ 비로그인 차단
-    if (!userId) {
-      router.replace("/login");
-      return;
-    }
-
-    // 2️⃣ 라이선스 차단
-    const licensed = localStorage.getItem("licensed");
-    if (licensed !== "true") {
-      router.replace("/select-books");
-      return;
-    }
-
-    // 3️⃣ 라이선스 OK → 교재 선택 화면으로
-    router.replace("/select-books");
-  }, [isLoaded, userId, router]);
-
-  return null;
+          <Link href="/signup">
+            <button type="button" style={btnSecondary}>
+              Sign up
+            </button>
+          </Link>
+        </div>
+      </section>
+    </main>
+  );
 }
+
+const btnPrimary = {
+  padding: "10px 16px",
+  fontSize: 14,
+  borderRadius: 6,
+  border: "none",
+  background: "#111",
+  color: "#fff",
+  cursor: "pointer",
+};
+
+const btnSecondary = {
+  padding: "10px 16px",
+  fontSize: 14,
+  borderRadius: 6,
+  border: "1px solid #ccc",
+  background: "#fff",
+  cursor: "pointer",
+};
