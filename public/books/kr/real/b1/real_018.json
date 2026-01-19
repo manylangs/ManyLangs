@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "b1",
+    "id": "018",
+    "targetLang": null
+  },
+  "topic": "A gardener planting flowers",
+  "keywords": [
+    "gardener",
+    "planting",
+    "flowers",
+    "garden",
+    "soil",
+    "gardening tools"
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "018.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "texts": {
+            "kr": "한 정원사가 꽃이 피어 있는 식물들로 둘러싸인 작은 정원에서 무릎을 꿇고 있다.",
+            "en": "A gardener is kneeling in a small garden surrounded by blooming plants.",
+            "es": "Una jardinera está arrodillada en un pequeño jardín rodeado de plantas en flor.",
+            "fr": "Une jardinière est agenouillée dans un petit jardin entouré de plantes en fleurs.",
+            "pt": "Uma jardineira está ajoelhada em um pequeno jardim cercado por plantas floridas."
+          }
+        },
+        {
+          "texts": {
+            "kr": "그녀는 막 파낸 흙 구멍에 어린 꽃을 심고 있다.",
+            "en": "She is placing a young flower into a hole she has just dug in the soil.",
+            "es": "Está colocando una flor joven en un agujero que acaba de cavar en la tierra.",
+            "fr": "Elle place une jeune fleur dans un trou qu'elle vient de creuser dans la terre.",
+            "pt": "Ela está colocando uma flor jovem em um buraco que acabou de cavar na terra."
+          }
+        },
+        {
+          "texts": {
+            "kr": "그녀의 장갑은 뿌리 주변 흙을 부드럽게 누르느라 흙으로 더러워져 있다.",
+            "en": "Her gloves are covered with dirt as she presses the earth gently around the roots.",
+            "es": "Sus guantes están cubiertos de tierra mientras presiona suavemente la tierra alrededor de las raíces.",
+            "fr": "Ses gants sont couverts de terre tandis qu'elle presse doucement le sol autour des racines.",
+            "pt": "Suas luvas estão cobertas de terra enquanto ela pressiona suavemente o solo ao redor das raízes."
+          }
+        },
+        {
+          "texts": {
+            "kr": "옆에는 심은 뒤 사용할 물조리개가 놓여 있다.",
+            "en": "A watering can rests beside her, ready to be used after planting.",
+            "es": "Una regadera descansa a su lado, lista para usarse después de plantar.",
+            "fr": "Un arrosoir repose à côté d'elle, prêt à être utilisé après la plantation.",
+            "pt": "Um regador está ao seu lado, pronto para ser usado após o plantio."
+          }
+        },
+        {
+          "texts": {
+            "kr": "근처에는 심기를 기다리는 다양한 색깔의 화분 꽃들이 놓여 있다.",
+            "en": "Colorful flowers in pots are arranged nearby, waiting to be planted.",
+            "es": "Flores coloridas en macetas están ordenadas cerca, esperando ser plantadas.",
+            "fr": "Des fleurs colorées en pots sont disposées à proximité, en attente d'être plantées.",
+            "pt": "Flores coloridas em vasos estão organizadas por perto, esperando para serem plantadas."
+          }
+        },
+        {
+          "texts": {
+            "kr": "배경에는 초록색 덤불과 나무 울타리가 보인다.",
+            "en": "Green bushes and a wooden fence appear in the background.",
+            "es": "Arbustos verdes y una cerca de madera aparecen al fondo.",
+            "fr": "Des buissons verts et une clôture en bois apparaissent en arrière-plan.",
+            "pt": "Arbustos verdes e uma cerca de madeira aparecem ao fundo."
+          }
+        }
+      ]
+    }
+  ],
+  "tts": {
+    "kr": [],
+    "en": [],
+    "es": [],
+    "fr": [],
+    "pt": []
+  }
+}

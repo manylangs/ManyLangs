@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "a2",
+    "id": "006",
+    "targetLang": null
+  },
+  "topic": "A person buying a bus ticket",
+  "keywords": [
+    "person",
+    "bus station",
+    "ticket counter",
+    "buying ticket",
+    "travel"
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "006.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "texts": {
+            "kr": "한 사람이 작은 지갑을 들고 버스 정류장 매표소 앞에 서 있다.",
+            "en": "A person stands at a bus station ticket counter holding a small wallet.",
+            "es": "Una persona está en el mostrador de boletos de una estación de autobuses sosteniendo una pequeña billetera.",
+            "fr": "Une personne se tient au guichet de la gare routière en tenant un petit portefeuille.",
+            "pt": "Uma pessoa está no guichê de passagens da rodoviária segurando uma pequena carteira."
+          }
+        },
+        {
+          "texts": {
+            "kr": "매표 직원은 유리창 뒤에 앉아 손님을 바라보고 있다.",
+            "en": "The ticket agent sits behind a glass window and looks at the customer.",
+            "es": "El agente de boletos está sentado detrás de una ventana de vidrio y observa al cliente.",
+            "fr": "L’agent de billetterie est assis derrière une vitre et regarde le client.",
+            "pt": "O atendente de bilhetes está sentado atrás de uma janela de vidro e observa o cliente."
+          }
+        },
+        {
+          "texts": {
+            "kr": "카운터 위 전자표지판에는 버스 노선과 출발 시간이 표시되어 있다.",
+            "en": "A digital display above the counter shows bus routes and departure times.",
+            "es": "Una pantalla digital sobre el mostrador muestra las rutas de autobús y los horarios de salida.",
+            "fr": "Un écran numérique au-dessus du guichet affiche les lignes de bus et les horaires de départ.",
+            "pt": "Um painel digital acima do balcão mostra as rotas de ônibus e os horários de partida."
+          }
+        },
+        {
+          "texts": {
+            "kr": "그 사람은 근처에 게시된 시간표에서 특정 노선을 가리키고 있다.",
+            "en": "The person points at a specific route on the schedule posted nearby.",
+            "es": "La persona señala una ruta específica en el horario colocado cerca.",
+            "fr": "La personne pointe une ligne spécifique sur l’horaire affiché à proximité.",
+            "pt": "A pessoa aponta para uma rota específica no horário exposto ali perto."
+          }
+        },
+        {
+          "texts": {
+            "kr": "매표 직원은 카운터의 컴퓨터에 정보를 입력하고 있다.",
+            "en": "The ticket agent types information into a computer at the counter.",
+            "es": "El agente de boletos ingresa información en una computadora del mostrador.",
+            "fr": "L’agent de billetterie saisit des informations dans un ordinateur au guichet.",
+            "pt": "O atendente digita informações em um computador no balcão."
+          }
+        },
+        {
+          "texts": {
+            "kr": "직원 뒤 벽에는 도시 버스 노선이 인쇄된 지도가 걸려 있다.",
+            "en": "A printed map of the city’s bus lines hangs on the wall behind the agent.",
+            "es": "Un mapa impreso de las rutas de la ciudad cuelga en la pared detrás del agente.",
+            "fr": "Une carte imprimée des lignes de bus de la ville est accrochée au mur derrière l’agent.",
+            "pt": "Um mapa impresso das linhas de ônibus da cidade está pendurado na parede atrás do atendente."
+          }
+        }
+      ]
+    }
+  ],
+  "tts": {
+    "kr": [],
+    "en": [],
+    "es": [],
+    "fr": [],
+    "pt": []
+  }
+}
