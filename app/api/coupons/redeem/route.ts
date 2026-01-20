@@ -16,7 +16,10 @@ export async function POST(req: Request) {
   const coupon = COUPONS.find(c => c.code === code);
 
   if (!coupon) {
-    return NextResponse.json({ error: "invalid coupon" }, { status: 404 });
+    return NextResponse.json(
+      { error: "invalid coupon" },
+      { status: 404 }
+    );
   }
 
   if (coupon.used) {
@@ -26,14 +29,14 @@ export async function POST(req: Request) {
     );
   }
 
-  // ✅ 사용 처리 (입력 시점)
+  // ✅ 쿠폰 사용 처리
   coupon.used = true;
   coupon.usedBy = userId;
   coupon.usedAt = Date.now();
 
-  // ✅ 라이선스 생성 (30일)
+  // ⏱ TEST용: 라이선스 10분
   const licenseExpiresAt =
-    Date.now() + 1000 * 60 * 60 * 24 * 30;
+    Date.now() + 1000 * 60 * 10;
 
   return NextResponse.json({
     success: true,

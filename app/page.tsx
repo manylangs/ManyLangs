@@ -1,7 +1,14 @@
+"use client";
+
 import Link from "next/link";
+import { useAuth } from "@clerk/nextjs";
 import Logo from "@/app/components/Logo";
 
 export default function HomePage() {
+  const { userId, isLoaded } = useAuth();
+
+  if (!isLoaded) return null;
+
   return (
     <main
       style={{
@@ -22,21 +29,42 @@ export default function HomePage() {
             whiteSpace: "nowrap",
           }}
         >
-
           Learn languages through structured textbooks.
           <br />
           Grammar · Conversation · Vocabulary · Pronunciation · Idioms
         </p>
 
-        <div style={{ display: "flex", gap: 12 }}>
-          <Link href="/login">
-            <button style={btnPrimary}>Log in</button>
-          </Link>
+        {/* 🔐 로그인 상태 */}
+        {userId ? (
+          <div style={{ display: "flex", gap: 12 }}>
+            <Link href="/logout">
+              <button style={btnSecondary}>Logout</button>
+            </Link>
 
-          <Link href="/signup">
-            <button style={btnSecondary}>Sign up</button>
-          </Link>
-        </div>
+            <Link href="/delete-account">
+              <button
+                style={{
+                  ...btnSecondary,
+                  color: "#dc2626",
+                  borderColor: "#dc2626",
+                }}
+              >
+                Delete account
+              </button>
+            </Link>
+          </div>
+        ) : (
+          /* 🔓 비로그인 상태 */
+          <div style={{ display: "flex", gap: 12 }}>
+            <Link href="/login">
+              <button style={btnPrimary}>Log in</button>
+            </Link>
+
+            <Link href="/signup">
+              <button style={btnSecondary}>Sign up</button>
+            </Link>
+          </div>
+        )}
       </section>
     </main>
   );

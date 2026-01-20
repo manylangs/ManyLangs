@@ -11,67 +11,153 @@ import {
   CardContent,
 } from "../../components/ui/card";
 
+/* ================= types ================= */
+
 type LibraryItem = {
   lang: string;
   series: string;
   level: string;
   expiresAt: number;
+  source: "coupon" | "payment";
 };
+
+type UsedCoupon = {
+  code: string;
+  usedAt: number;
+};
+
+type CouponItem = {
+  code: string;
+  used: boolean;
+  expiresAt: number;
+};
+
+/* ================= constants ================= */
 
 const LANGUAGE_OPTIONS = [
   { value: "kr", label: "Korean" },
   { value: "en", label: "English" },
-  { value: "ja", label: "Japanese" },
 ];
+
+const SERIES_CONFIG: Record<
+  string,
+  { label: string; hasLevel: boolean }
+> = {
+  grammar: { label: "Grammar", hasLevel: true },
+  conversation: { label: "Conversation", hasLevel: true },
+  real: { label: "Real", hasLevel: true },
+  voca: { label: "Vocabulary", hasLevel: false },
+  idiom: { label: "Idiom", hasLevel: false },
+};
+
+const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
+const PAGE_SIZE = 10;
+
+/* ================= page ================= */
 
 export default function SelectBooksPage() {
   const { userId, isLoaded } = useAuth();
   const router = useRouter();
 
   const [library, setLibrary] = useState<LibraryItem[]>([]);
-  const [targetLang, setTargetLang] = useState("kr");
+  const [usedCoupons, setUsedCoupons] = useState<UsedCoupon[]>([]);
+  const [couponBox, setCouponBox] = useState<CouponItem[]>([]);
+  const [couponPage, setCouponPage] = useState(0);
 
-  const [book, setBook] = useState("grammar");
-  const [level, setLevel] = useState("a1");
+  const [targetLang, setTargetLang] = useState("kr");
+  const [book, setBook] = useState("");
+  const [level, setLevel] = useState("");
   const [coupon, setCoupon] = useState("");
+
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // 🔒 로그인 가드 + 라이브러리 로드
+  /* ---------- load local data ---------- */
   useEffect(() => {
     if (!isLoaded) return;
-
     if (!userId) {
       router.replace("/login");
       return;
     }
 
-    const raw = localStorage.getItem("library");
-    if (raw) {
-      try {
-        const parsed: LibraryItem[] = JSON.parse(raw);
-        setLibrary(parsed);
+    try {
+      setLibrary(JSON.parse(localStorage.getItem("library") || "[]"));
+      setUsedCoupons(
+        JSON.parse(localStorage.getItem("usedCoupons") || "[]")
+      );
+      setCouponBox(
+        JSON.parse(localStorage.getItem("couponBox") || "[]")
+      );
+    } catch {
+      setLibrary([]);
+      setUsedCoupons([]);
+      setCouponBox([]);
+    }
 
-        // 기본 언어 설정: 라이브러리에 있으면 첫 언어
-        if (parsed.length > 0) {
-          setTargetLang(parsed[0].lang);
-        }
-      } catch {
-        setLibrary([]);
+    // ✅ 결제 성공 콜백 처리
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("success") === "1") {
+      const lang = params.get("lang")!;
+      const series = params.get("series")!;
+      const level = params.get("level")!;
+
+      const next = JSON.parse(
+        localStorage.getItem("library") || "[]"
+      ) as LibraryItem[];
+
+      const exists = next.find(
+        i =>
+          i.lang === lang &&
+          i.series === series &&
+          i.level === level
+      );
+
+      if (!exists) {
+        next.push({
+          lang,
+          series,
+          level,
+          expiresAt: Date.now() + 1000 * 60 * 60 * 24 * 30,
+          source: "payment",
+        });
+        localStorage.setItem("library", JSON.stringify(next));
+        setLibrary(next);
       }
+
+      window.history.replaceState({}, "", "/select-books");
     }
   }, [isLoaded, userId, router]);
 
+  /* ---------- reset on language change ---------- */
+  useEffect(() => {
+    setBook("");
+    setLevel("");
+    setError("");
+  }, [targetLang]);
+
   if (!isLoaded || !userId) return null;
+
+  /* ---------- helpers ---------- */
 
   function saveLibrary(next: LibraryItem[]) {
     setLibrary(next);
     localStorage.setItem("library", JSON.stringify(next));
   }
 
+  function saveUsedCoupons(next: UsedCoupon[]) {
+    setUsedCoupons(next);
+    localStorage.setItem("usedCoupons", JSON.stringify(next));
+  }
+
+  function saveCouponBox(next: CouponItem[]) {
+    setCouponBox(next);
+    localStorage.setItem("couponBox", JSON.stringify(next));
+  }
+
+  /* ---------- coupon redeem ---------- */
+
   async function activateCoupon() {
     if (loading) return;
-
     setError("");
     setLoading(true);
 
@@ -80,21 +166,27 @@ export default function SelectBooksPage() {
       setLoading(false);
       return;
     }
+    if (!book) {
+      setError("Please select a textbook.");
+      setLoading(false);
+      return;
+    }
+    if (SERIES_CONFIG[book].hasLevel && !level) {
+      setError("Please select a level.");
+      setLoading(false);
+      return;
+    }
 
-    // 🔍 중복 교재 체크 (언어 포함)
-    const existing = library.find(
-      item =>
-        item.lang === targetLang &&
-        item.series === book &&
-        item.level === level
+    const finalLevel = SERIES_CONFIG[book].hasLevel ? level : "all";
+
+    const exists = library.find(
+      i =>
+        i.lang === targetLang &&
+        i.series === book &&
+        i.level === finalLevel
     );
-
-    if (existing) {
-      setError(
-        `You already have this textbook. It expires on ${new Date(
-          existing.expiresAt
-        ).toLocaleDateString()}.`
-      );
+    if (exists) {
+      setError("You already have this textbook.");
       setLoading(false);
       return;
     }
@@ -103,79 +195,125 @@ export default function SelectBooksPage() {
       const res = await fetch("/api/coupons/redeem", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          code: coupon.trim(),
-          userId,
-        }),
+        body: JSON.stringify({ code: coupon.trim(), userId }),
       });
 
       const data = await res.json();
-
       if (!res.ok) {
         setError(data.error || "Failed to redeem coupon.");
         setLoading(false);
         return;
       }
 
-      const newItem: LibraryItem = {
-        lang: targetLang,
-        series: book,
-        level,
-        expiresAt: data.expiresAt,
-      };
+      saveLibrary([
+        ...library,
+        {
+          lang: targetLang,
+          series: book,
+          level: finalLevel,
+          expiresAt: data.expiresAt,
+          source: "coupon",
+        },
+      ]);
 
-      saveLibrary([...library, newItem]);
+      saveUsedCoupons([
+        ...usedCoupons,
+        { code: coupon.trim(), usedAt: Date.now() },
+      ]);
 
-      // legacy (7-2-1에서 제거 예정)
-      localStorage.setItem("licensed", "true");
-      localStorage.setItem("expiresAt", String(data.expiresAt));
+      saveCouponBox([
+        ...couponBox,
+        {
+          code: coupon.trim(),
+          used: true,
+          expiresAt: data.expiresAt,
+        },
+      ]);
 
       setCoupon("");
     } catch {
-      setError("Network error. Please try again.");
+      setError("Network error.");
     } finally {
       setLoading(false);
     }
   }
 
+  /* ---------- stripe payment ---------- */
+
+  async function startPayment() {
+    if (!book) {
+      setError("Please select a textbook.");
+      return;
+    }
+    if (SERIES_CONFIG[book].hasLevel && !level) {
+      setError("Please select a level.");
+      return;
+    }
+
+    const finalLevel = SERIES_CONFIG[book].hasLevel ? level : "all";
+
+    const res = await fetch("/api/checkout", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        lang: targetLang,
+        series: book,
+        level: finalLevel,
+      }),
+    });
+
+    const data = await res.json();
+    if (data.url) {
+      window.location.href = data.url;
+    }
+  }
+
+  /* ---------- viewer ---------- */
+
   function openBook(item: LibraryItem) {
+    const levelPath = item.level === "all" ? "" : `/${item.level}`;
     router.push(
-      `/viewer/${item.lang}/${item.series}/${item.level}/001`
+      `/viewer/${item.lang}/${item.series}${levelPath}/001`
     );
   }
 
-  const filteredLibrary = library.filter(
-    item => item.lang === targetLang
+  /* ---------- pagination ---------- */
+
+  const pageCoupons = couponBox.slice(
+    couponPage * PAGE_SIZE,
+    (couponPage + 1) * PAGE_SIZE
   );
+
+  const filteredLibrary = library.filter(
+    i => i.lang === targetLang
+  );
+
+  /* ================= render ================= */
 
   return (
     <main className="flex justify-center px-4 py-8">
       <div className="w-full max-w-md space-y-6">
-        {/* 🌐 Language to Study */}
+        {/* Language */}
         <Card>
-          <CardContent className="space-y-2 pt-6">
+          <CardContent className="pt-6">
             <label className="text-sm font-medium">
               Language to Study
             </label>
             <select
               value={targetLang}
-              onChange={e => {
-                setTargetLang(e.target.value);
-                setError("");
-              }}
-              disabled={loading}
-              className="block w-full rounded border px-2 py-1"
+              onChange={e => setTargetLang(e.target.value)}
+              className="mt-1 block w-full rounded border px-2 py-1"
             >
-              {LANGUAGE_OPTIONS.map(lang => (
-                <option key={lang.value} value={lang.value}>
-                  {lang.label}
+              {LANGUAGE_OPTIONS.map(l => (
+                <option key={l.value} value={l.value}>
+                  {l.label}
                 </option>
               ))}
             </select>
           </CardContent>
         </Card>
 
-        {/* 📚 My Library */}
+        {/* Library */}
         <Card>
           <CardHeader>
             <CardTitle>My Library</CardTitle>
@@ -186,23 +324,16 @@ export default function SelectBooksPage() {
                 No textbooks for this language.
               </p>
             )}
-
             {filteredLibrary.map((item, idx) => (
               <div
                 key={idx}
-                className="flex items-center justify-between rounded border px-3 py-2"
+                className="flex justify-between rounded border px-3 py-2"
               >
                 <div className="text-sm">
-                  <div>
-                    {item.series.toUpperCase()} ·{" "}
-                    {item.level.toUpperCase()}
-                  </div>
-                  <div className="text-xs text-muted-foreground">
-                    Expires:{" "}
-                    {new Date(item.expiresAt).toLocaleDateString()}
-                  </div>
+                  {item.series.toUpperCase()}
+                  {item.level !== "all" &&
+                    ` · ${item.level.toUpperCase()}`}
                 </div>
-
                 <Button size="sm" onClick={() => openBook(item)}>
                   Open
                 </Button>
@@ -211,49 +342,105 @@ export default function SelectBooksPage() {
           </CardContent>
         </Card>
 
-        {/* ➕ Add a textbook */}
+        {/* Add textbook */}
         <Card>
           <CardHeader>
             <CardTitle>Add a textbook</CardTitle>
           </CardHeader>
 
           <CardContent className="space-y-4">
-            <div>
-              <label>Textbook</label>
-              <select
-                value={book}
-                onChange={e => setBook(e.target.value)}
-                disabled={loading}
-                className="mt-1 block w-full rounded border px-2 py-1"
-              >
-                <option value="grammar">Grammar</option>
-                <option value="conversation">Conversation</option>
-              </select>
-            </div>
+            <select
+              value={book}
+              onChange={e => setBook(e.target.value)}
+              className="block w-full rounded border px-2 py-1"
+            >
+              <option value="">Select textbook</option>
+              {Object.entries(SERIES_CONFIG).map(([k, v]) => (
+                <option key={k} value={k}>
+                  {v.label}
+                </option>
+              ))}
+            </select>
 
-            <div>
-              <label>Level</label>
+            {book && SERIES_CONFIG[book].hasLevel && (
               <select
                 value={level}
                 onChange={e => setLevel(e.target.value)}
-                disabled={loading}
-                className="mt-1 block w-full rounded border px-2 py-1"
+                className="block w-full rounded border px-2 py-1"
               >
-                <option value="a1">A1</option>
-                <option value="a2">A2</option>
-                <option value="b1">B1</option>
+                <option value="">Select level</option>
+                {LEVELS.map(l => (
+                  <option key={l} value={l.toLowerCase()}>
+                    {l}
+                  </option>
+                ))}
               </select>
-            </div>
+            )}
 
-            <div>
-              <label>Coupon code</label>
-              <input
-                value={coupon}
-                onChange={e => setCoupon(e.target.value)}
-                disabled={loading}
-                placeholder="Enter your coupon code"
-                className="mt-1 block w-full rounded border px-2 py-1"
-              />
+            <input
+              value={coupon}
+              onChange={e => setCoupon(e.target.value)}
+              placeholder="Coupon code"
+              className="block w-full rounded border px-2 py-1"
+            />
+
+            {/* Coupon Box */}
+            <div className="rounded border p-3 space-y-2">
+              <div className="text-sm font-medium">Coupon Box</div>
+
+              {pageCoupons.length === 0 && (
+                <p className="text-sm text-muted-foreground">
+                  No coupons.
+                </p>
+              )}
+
+              {pageCoupons.map((c, idx) => (
+                <div
+                  key={idx}
+                  className="flex justify-between text-sm"
+                >
+                  <span
+                    className={
+                      c.used
+                        ? "line-through text-muted-foreground"
+                        : ""
+                    }
+                  >
+                    {c.code}
+                  </span>
+                  <span className="text-muted-foreground">
+                    {new Date(c.expiresAt).toLocaleDateString()}
+                  </span>
+                </div>
+              ))}
+
+              {couponBox.length > PAGE_SIZE && (
+                <div className="flex justify-between pt-2">
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    disabled={couponPage === 0}
+                    onClick={() =>
+                      setCouponPage(p => Math.max(0, p - 1))
+                    }
+                  >
+                    Prev
+                  </Button>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    disabled={
+                      (couponPage + 1) * PAGE_SIZE >=
+                      couponBox.length
+                    }
+                    onClick={() =>
+                      setCouponPage(p => p + 1)
+                    }
+                  >
+                    Next
+                  </Button>
+                </div>
+              )}
             </div>
 
             {error && (
@@ -265,7 +452,15 @@ export default function SelectBooksPage() {
               disabled={loading}
               className="w-full"
             >
-              {loading ? "Activating..." : "Add to Library"}
+              Add with Coupon
+            </Button>
+
+            <Button
+              variant="outline"
+              onClick={startPayment}
+              className="w-full"
+            >
+              Buy with Card
             </Button>
           </CardContent>
         </Card>
