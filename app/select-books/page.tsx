@@ -39,10 +39,7 @@ const LANGUAGE_OPTIONS = [
   { value: "en", label: "English" },
 ];
 
-const SERIES_CONFIG: Record<
-  string,
-  { label: string; hasLevel: boolean }
-> = {
+const SERIES_CONFIG: Record<string, { label: string; hasLevel: boolean }> = {
   grammar: { label: "Grammar", hasLevel: true },
   conversation: { label: "Conversation", hasLevel: true },
   real: { label: "Real", hasLevel: true },
@@ -94,65 +91,38 @@ export default function SelectBooksPage() {
       setCouponBox([]);
     }
 
-    // ✅ 결제 성공 콜백 처리
+    // 결제 성공 콜백
     const params = new URLSearchParams(window.location.search);
     if (params.get("success") === "1") {
       const lang = params.get("lang")!;
       const series = params.get("series")!;
       const level = params.get("level")!;
 
-      const next = JSON.parse(
-        localStorage.getItem("library") || "[]"
-      ) as LibraryItem[];
+      setLibrary(prev => {
+        const exists = prev.find(
+          i => i.lang === lang && i.series === series && i.level === level
+        );
+        if (exists) return prev;
 
-      const exists = next.find(
-        i =>
-          i.lang === lang &&
-          i.series === series &&
-          i.level === level
-      );
-
-      if (!exists) {
-        next.push({
-          lang,
-          series,
-          level,
-          expiresAt: Date.now() + 1000 * 60 * 60 * 24 * 30,
-          source: "payment",
-        });
+        const next: LibraryItem[] = [
+          ...prev,
+          {
+            lang,
+            series,
+            level,
+            expiresAt: Date.now() + 1000 * 60 * 60 * 24 * 30,
+            source: "payment",
+          },
+        ];
         localStorage.setItem("library", JSON.stringify(next));
-        setLibrary(next);
-      }
+        return next;
+      });
 
       window.history.replaceState({}, "", "/select-books");
     }
   }, [isLoaded, userId, router]);
 
-  /* ---------- reset on language change ---------- */
-  useEffect(() => {
-    setBook("");
-    setLevel("");
-    setError("");
-  }, [targetLang]);
-
   if (!isLoaded || !userId) return null;
-
-  /* ---------- helpers ---------- */
-
-  function saveLibrary(next: LibraryItem[]) {
-    setLibrary(next);
-    localStorage.setItem("library", JSON.stringify(next));
-  }
-
-  function saveUsedCoupons(next: UsedCoupon[]) {
-    setUsedCoupons(next);
-    localStorage.setItem("usedCoupons", JSON.stringify(next));
-  }
-
-  function saveCouponBox(next: CouponItem[]) {
-    setCouponBox(next);
-    localStorage.setItem("couponBox", JSON.stringify(next));
-  }
 
   /* ---------- coupon redeem ---------- */
 
@@ -161,37 +131,16 @@ export default function SelectBooksPage() {
     setError("");
     setLoading(true);
 
-    if (!coupon.trim()) {
-      setError("Please enter a coupon code.");
-      setLoading(false);
-      return;
-    }
-    if (!book) {
-      setError("Please select a textbook.");
-      setLoading(false);
-      return;
-    }
-    if (SERIES_CONFIG[book].hasLevel && !level) {
-      setError("Please select a level.");
+    if (!coupon.trim() || !book || (SERIES_CONFIG[book].hasLevel && !level)) {
+      setError("Please complete all fields.");
       setLoading(false);
       return;
     }
 
     const finalLevel = SERIES_CONFIG[book].hasLevel ? level : "all";
 
-    const exists = library.find(
-      i =>
-        i.lang === targetLang &&
-        i.series === book &&
-        i.level === finalLevel
-    );
-    if (exists) {
-      setError("You already have this textbook.");
-      setLoading(false);
-      return;
-    }
-
     try {
+      // 1️⃣ 서버에서 쿠폰 검증
       const res = await fetch("/api/coupons/redeem", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -200,35 +149,54 @@ export default function SelectBooksPage() {
 
       const data = await res.json();
       if (!res.ok) {
-        setError(data.error || "Failed to redeem coupon.");
+        setError(data.error || "Invalid coupon.");
         setLoading(false);
         return;
       }
 
-      saveLibrary([
-        ...library,
-        {
-          lang: targetLang,
-          series: book,
-          level: finalLevel,
-          expiresAt: data.expiresAt,
-          source: "coupon",
-        },
-      ]);
+      // 2️⃣ 중복 교재 체크
+      const already = library.find(
+        i =>
+          i.lang === targetLang &&
+          i.series === book &&
+          i.level === finalLevel
+      );
+      if (already) {
+        setError("You already have this textbook.");
+        setLoading(false);
+        return;
+      }
 
-      saveUsedCoupons([
-        ...usedCoupons,
-        { code: coupon.trim(), usedAt: Date.now() },
-      ]);
+      // ✅ 안전한 상태 업데이트
+      setLibrary(prev => {
+        const next: LibraryItem[] = [
+          ...prev,
+          {
+            lang: targetLang,
+            series: book,
+            level: finalLevel,
+            expiresAt: data.expiresAt,
+            source: "coupon",
+          },
+        ];
+        localStorage.setItem("library", JSON.stringify(next));
+        return next;
+      });
 
-      saveCouponBox([
-        ...couponBox,
-        {
-          code: coupon.trim(),
-          used: true,
-          expiresAt: data.expiresAt,
-        },
-      ]);
+      setUsedCoupons(prev => {
+        const next = [...prev, { code: coupon.trim(), usedAt: Date.now() }];
+        localStorage.setItem("usedCoupons", JSON.stringify(next));
+        return next;
+      });
+
+      setCouponBox(prev => {
+        const next = [
+          ...prev,
+          { code: coupon.trim(), used: true, expiresAt: data.expiresAt },
+        ];
+        localStorage.setItem("couponBox", JSON.stringify(next));
+        return next;
+      });
 
       setCoupon("");
     } catch {
@@ -241,12 +209,8 @@ export default function SelectBooksPage() {
   /* ---------- stripe payment ---------- */
 
   async function startPayment() {
-    if (!book) {
-      setError("Please select a textbook.");
-      return;
-    }
-    if (SERIES_CONFIG[book].hasLevel && !level) {
-      setError("Please select a level.");
+    if (!book || (SERIES_CONFIG[book].hasLevel && !level)) {
+      setError("Please select textbook and level.");
       return;
     }
 
@@ -263,46 +227,31 @@ export default function SelectBooksPage() {
     });
 
     const data = await res.json();
-    if (data.url) {
-      window.location.href = data.url;
-    }
+    if (data.url) window.location.href = data.url;
   }
 
   /* ---------- viewer ---------- */
 
   function openBook(item: LibraryItem) {
     const levelPath = item.level === "all" ? "" : `/${item.level}`;
-    router.push(
-      `/viewer/${item.lang}/${item.series}${levelPath}/001`
-    );
+    router.push(`/viewer/${item.lang}/${item.series}${levelPath}/001`);
   }
 
-  /* ---------- pagination ---------- */
-
-  const pageCoupons = couponBox.slice(
-    couponPage * PAGE_SIZE,
-    (couponPage + 1) * PAGE_SIZE
-  );
-
-  const filteredLibrary = library.filter(
-    i => i.lang === targetLang
-  );
+  const filteredLibrary = library.filter(i => i.lang === targetLang);
 
   /* ================= render ================= */
 
   return (
     <main className="flex justify-center px-4 py-8">
       <div className="w-full max-w-md space-y-6">
+
         {/* Language */}
         <Card>
           <CardContent className="pt-6">
-            <label className="text-sm font-medium">
-              Language to Study
-            </label>
             <select
               value={targetLang}
               onChange={e => setTargetLang(e.target.value)}
-              className="mt-1 block w-full rounded border px-2 py-1"
+              className="w-full rounded border px-2 py-1"
             >
               {LANGUAGE_OPTIONS.map(l => (
                 <option key={l.value} value={l.value}>
@@ -313,26 +262,17 @@ export default function SelectBooksPage() {
           </CardContent>
         </Card>
 
-        {/* Library */}
+        {/* My Library */}
         <Card>
           <CardHeader>
             <CardTitle>My Library</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
-            {filteredLibrary.length === 0 && (
-              <p className="text-sm text-muted-foreground">
-                No textbooks for this language.
-              </p>
-            )}
             {filteredLibrary.map((item, idx) => (
-              <div
-                key={idx}
-                className="flex justify-between rounded border px-3 py-2"
-              >
+              <div key={idx} className="flex justify-between rounded border px-3 py-2">
                 <div className="text-sm">
                   {item.series.toUpperCase()}
-                  {item.level !== "all" &&
-                    ` · ${item.level.toUpperCase()}`}
+                  {item.level !== "all" && ` · ${item.level.toUpperCase()}`}
                 </div>
                 <Button size="sm" onClick={() => openBook(item)}>
                   Open
@@ -347,11 +287,14 @@ export default function SelectBooksPage() {
           <CardHeader>
             <CardTitle>Add a textbook</CardTitle>
           </CardHeader>
-
           <CardContent className="space-y-4">
             <select
               value={book}
-              onChange={e => setBook(e.target.value)}
+              onChange={e => {
+                const next = e.target.value;
+                setBook(next);
+                setLevel(SERIES_CONFIG[next]?.hasLevel ? "a1" : "");
+              }}
               className="block w-full rounded border px-2 py-1"
             >
               <option value="">Select textbook</option>
@@ -368,7 +311,6 @@ export default function SelectBooksPage() {
                 onChange={e => setLevel(e.target.value)}
                 className="block w-full rounded border px-2 py-1"
               >
-                <option value="">Select level</option>
                 {LEVELS.map(l => (
                   <option key={l} value={l.toLowerCase()}>
                     {l}
@@ -384,86 +326,18 @@ export default function SelectBooksPage() {
               className="block w-full rounded border px-2 py-1"
             />
 
-            {/* Coupon Box */}
-            <div className="rounded border p-3 space-y-2">
-              <div className="text-sm font-medium">Coupon Box</div>
+            {error && <p className="text-sm text-red-600">{error}</p>}
 
-              {pageCoupons.length === 0 && (
-                <p className="text-sm text-muted-foreground">
-                  No coupons.
-                </p>
-              )}
-
-              {pageCoupons.map((c, idx) => (
-                <div
-                  key={idx}
-                  className="flex justify-between text-sm"
-                >
-                  <span
-                    className={
-                      c.used
-                        ? "line-through text-muted-foreground"
-                        : ""
-                    }
-                  >
-                    {c.code}
-                  </span>
-                  <span className="text-muted-foreground">
-                    {new Date(c.expiresAt).toLocaleDateString()}
-                  </span>
-                </div>
-              ))}
-
-              {couponBox.length > PAGE_SIZE && (
-                <div className="flex justify-between pt-2">
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    disabled={couponPage === 0}
-                    onClick={() =>
-                      setCouponPage(p => Math.max(0, p - 1))
-                    }
-                  >
-                    Prev
-                  </Button>
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    disabled={
-                      (couponPage + 1) * PAGE_SIZE >=
-                      couponBox.length
-                    }
-                    onClick={() =>
-                      setCouponPage(p => p + 1)
-                    }
-                  >
-                    Next
-                  </Button>
-                </div>
-              )}
-            </div>
-
-            {error && (
-              <p className="text-sm text-red-600">{error}</p>
-            )}
-
-            <Button
-              onClick={activateCoupon}
-              disabled={loading}
-              className="w-full"
-            >
+            <Button onClick={activateCoupon} disabled={loading} className="w-full">
               Add with Coupon
             </Button>
 
-            <Button
-              variant="outline"
-              onClick={startPayment}
-              className="w-full"
-            >
+            <Button variant="outline" onClick={startPayment} className="w-full">
               Buy with Card
             </Button>
           </CardContent>
         </Card>
+
       </div>
     </main>
   );
