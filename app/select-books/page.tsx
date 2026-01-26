@@ -21,11 +21,6 @@ type LibraryItem = {
   source: "coupon" | "payment";
 };
 
-type UsedCoupon = {
-  code: string;
-  usedAt: number;
-};
-
 type CouponItem = {
   code: string;
   used: boolean;
@@ -48,7 +43,57 @@ const SERIES_CONFIG: Record<string, { label: string; hasLevel: boolean }> = {
 };
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
-const PAGE_SIZE = 10;
+
+/* ================= utils ================= */
+
+// 🔧 핵심: expiresAt 단위 보정 (초 → ms)
+function normalizeExpiresAt(expiresAt: number) {
+  if (expiresAt < 1e12) {
+    return expiresAt * 1000;
+  }
+  return expiresAt;
+}
+
+function getExpireLabel(expiresAt: number) {
+  const normalized = normalizeExpiresAt(expiresAt);
+  const remaining = normalized - Date.now();
+
+  if (remaining <= 0) {
+    return { text: "Expired", color: "#d00" };
+  }
+
+  const hours = Math.floor(remaining / (1000 * 60 * 60));
+  const days = Math.floor(hours / 24);
+
+  if (days >= 1) {
+    return { text: `D-${days}`, color: "#555" };
+  }
+
+  return { text: `${hours}h`, color: "#c60" };
+}
+
+function getCouponStatus(c: CouponItem) {
+  const now = Date.now();
+  const normalized = normalizeExpiresAt(c.expiresAt);
+
+  if (c.used) return { text: "Used", color: "#999" };
+  if (normalized <= now) return { text: "Expired", color: "#d00" };
+  return { text: "Available", color: "#090" };
+}
+
+function getExpireText(expiresAt: number) {
+  const diff = normalizeExpiresAt(expiresAt) - Date.now();
+  if (diff <= 0) return "Expired";
+
+  const hours = Math.floor(diff / (1000 * 60 * 60));
+  const days = Math.floor(hours / 24);
+
+  if (days >= 1) return `D-${days}`;
+
+  const h = hours;
+  const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  return `D-0 ${h}h ${m}m`;
+}
 
 /* ================= page ================= */
 
@@ -57,9 +102,7 @@ export default function SelectBooksPage() {
   const router = useRouter();
 
   const [library, setLibrary] = useState<LibraryItem[]>([]);
-  const [usedCoupons, setUsedCoupons] = useState<UsedCoupon[]>([]);
   const [couponBox, setCouponBox] = useState<CouponItem[]>([]);
-  const [couponPage, setCouponPage] = useState(0);
 
   const [targetLang, setTargetLang] = useState("kr");
   const [book, setBook] = useState("");
@@ -79,19 +122,12 @@ export default function SelectBooksPage() {
 
     try {
       setLibrary(JSON.parse(localStorage.getItem("library") || "[]"));
-      setUsedCoupons(
-        JSON.parse(localStorage.getItem("usedCoupons") || "[]")
-      );
-      setCouponBox(
-        JSON.parse(localStorage.getItem("couponBox") || "[]")
-      );
+      setCouponBox(JSON.parse(localStorage.getItem("couponBox") || "[]"));
     } catch {
       setLibrary([]);
-      setUsedCoupons([]);
       setCouponBox([]);
     }
 
-    // 결제 성공 콜백
     const params = new URLSearchParams(window.location.search);
     if (params.get("success") === "1") {
       const lang = params.get("lang")!;
@@ -140,7 +176,6 @@ export default function SelectBooksPage() {
     const finalLevel = SERIES_CONFIG[book].hasLevel ? level : "all";
 
     try {
-      // 1️⃣ 서버에서 쿠폰 검증
       const res = await fetch("/api/coupons/redeem", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -154,20 +189,6 @@ export default function SelectBooksPage() {
         return;
       }
 
-      // 2️⃣ 중복 교재 체크
-      const already = library.find(
-        i =>
-          i.lang === targetLang &&
-          i.series === book &&
-          i.level === finalLevel
-      );
-      if (already) {
-        setError("You already have this textbook.");
-        setLoading(false);
-        return;
-      }
-
-      // ✅ 안전한 상태 업데이트
       setLibrary(prev => {
         const next: LibraryItem[] = [
           ...prev,
@@ -180,12 +201,6 @@ export default function SelectBooksPage() {
           },
         ];
         localStorage.setItem("library", JSON.stringify(next));
-        return next;
-      });
-
-      setUsedCoupons(prev => {
-        const next = [...prev, { code: coupon.trim(), usedAt: Date.now() }];
-        localStorage.setItem("usedCoupons", JSON.stringify(next));
         return next;
       });
 
@@ -268,17 +283,54 @@ export default function SelectBooksPage() {
             <CardTitle>My Library</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
-            {filteredLibrary.map((item, idx) => (
-              <div key={idx} className="flex justify-between rounded border px-3 py-2">
-                <div className="text-sm">
-                  {item.series.toUpperCase()}
-                  {item.level !== "all" && ` · ${item.level.toUpperCase()}`}
+            {filteredLibrary.map((item, idx) => {
+              const expire = getExpireLabel(item.expiresAt);
+              return (
+                <div
+                  key={idx}
+                  className="flex items-center justify-between rounded border px-3 py-2"
+                >
+                  <div className="text-sm">
+                    {item.series.toUpperCase()}
+                    {item.level !== "all" && ` · ${item.level.toUpperCase()}`}
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <span style={{ fontSize: 12, color: expire.color }}>
+                      {expire.text}
+                    </span>
+                    <Button size="sm" onClick={() => openBook(item)}>
+                      Open
+                    </Button>
+                  </div>
                 </div>
-                <Button size="sm" onClick={() => openBook(item)}>
-                  Open
-                </Button>
-              </div>
-            ))}
+              );
+            })}
+          </CardContent>
+        </Card>
+
+        {/* My Coupons */}
+        <Card>
+          <CardHeader>
+            <CardTitle>My Coupons</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            {couponBox.length === 0 && (
+              <p className="text-sm text-gray-500">No coupons available.</p>
+            )}
+            {couponBox.map((c, idx) => {
+              const status = getCouponStatus(c);
+              return (
+                <div
+                  key={idx}
+                  className="flex justify-between rounded border px-3 py-2 text-sm"
+                >
+                  <div>{c.code}</div>
+                  <div style={{ color: status.color }}>
+                    {status.text} · {getExpireText(c.expiresAt)}
+                  </div>
+                </div>
+              );
+            })}
           </CardContent>
         </Card>
 
@@ -325,6 +377,11 @@ export default function SelectBooksPage() {
               placeholder="Coupon code"
               className="block w-full rounded border px-2 py-1"
             />
+
+            <p className="text-xs text-gray-500">
+              Coupons can be shared with others. However, ManyLangs cannot individually track
+              whether a shared coupon has been used.
+            </p>
 
             {error && <p className="text-sm text-red-600">{error}</p>}
 
