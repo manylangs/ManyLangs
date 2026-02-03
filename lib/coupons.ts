@@ -8,7 +8,6 @@ export type Coupon = {
   code: string;
   ownerId: string;
   issuedAt: number;
-  expiresAt: number;
   used: boolean;
 
   // redeem 시점에 채워짐
@@ -35,10 +34,7 @@ export const PRICE_TO_COUPON_QTY: Record<number, number> = {
 
 /* ================= create ================= */
 
-export function createCouponsByPrice(
-  ownerId: string,
-  price: number
-) {
+export function createCouponsByPrice(ownerId: string, price: number) {
   const qty = PRICE_TO_COUPON_QTY[price];
   if (!qty) {
     throw new Error(`Unsupported price: ${price}`);
@@ -49,24 +45,15 @@ export function createCouponsByPrice(
 export function createCoupons(ownerId: string, qty: number) {
   const now = Date.now();
 
-  // ⏱ 쿠폰 자체 유효기간: 6개월
-  const expiresAt =
-    now + 1000 * 60 * 60 * 24 * 30 * 6;
-
-  const list: Coupon[] = Array.from({ length: qty }).map(
-    () => ({
-      code:
-        "ML-" +
-        Math.random()
-          .toString(36)
-          .slice(2, 10)
-          .toUpperCase(),
-      ownerId,
-      issuedAt: now,
-      expiresAt,
-      used: false,
-    })
-  );
+  // ✅ 쿠폰은 영구 소유 (expiresAt 없음)
+  const list: Coupon[] = Array.from({ length: qty }).map(() => ({
+    code:
+      "ML-" +
+      Math.random().toString(36).slice(2, 10).toUpperCase(),
+    ownerId,
+    issuedAt: now,
+    used: false,
+  }));
 
   COUPONS.push(...list);
   return list;
@@ -90,7 +77,7 @@ export function redeemCoupon(params: {
 }): License {
   const { code, userId, lang, series, level, durationMs } = params;
 
-  const coupon = COUPONS.find(c => c.code === code);
+  const coupon = COUPONS.find((c) => c.code === code);
   if (!coupon) {
     throw new Error("Invalid coupon code");
   }
@@ -99,9 +86,7 @@ export function redeemCoupon(params: {
     throw new Error("Coupon already used");
   }
 
-  if (Date.now() > coupon.expiresAt) {
-    throw new Error("Coupon expired");
-  }
+  // ✅ 쿠폰 만료 없음 (Coupon expired 체크 제거)
 
   // 쿠폰 사용 처리
   coupon.used = true;
@@ -111,10 +96,7 @@ export function redeemCoupon(params: {
   const license: License = {
     lang,
     series,
-    level:
-      series === "voca" || series === "idiom"
-        ? "all"
-        : level,
+    level: series === "voca" || series === "idiom" ? "all" : level,
     expiresAt: Date.now() + durationMs,
     source: "coupon",
     code,
