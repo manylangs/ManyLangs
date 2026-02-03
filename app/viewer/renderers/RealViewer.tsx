@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import RealAudioController from "@/components/audio/controllers/RealAudioController";
+import { useViewerTarget } from "../context/ViewerTargetContext";
 
 type StudyLang = "en" | "es" | "fr" | "pt";
 
@@ -48,6 +49,9 @@ const buttonStyle = (active = false) => ({
 
 export default function RealViewer({ level, chapter, data }: Props) {
   const [lang, setLang] = useState<StudyLang>("en");
+
+  // ✅ Target 토글 상태
+  const { showTargetText } = useViewerTarget();
 
   const chapters = useMemo(
     () => Array.from({ length: 20 }, (_, i) => String(i + 1).padStart(3, "0")),
@@ -145,8 +149,14 @@ export default function RealViewer({ level, chapter, data }: Props) {
           <div style={{ flex: "1 1 320px" }}>
             {descBlock.sentences.map((s, i) => (
               <div key={i} style={{ marginBottom: 14 }}>
-                <div>{s.target}</div>
-                <div style={{ color: "#444", marginTop: 2 }}>
+                {showTargetText && <div>{s.target}</div>}
+
+                <div
+                  style={{
+                    color: "#444",
+                    marginTop: showTargetText ? 2 : 0,
+                  }}
+                >
                   {s[lang]}
                 </div>
               </div>

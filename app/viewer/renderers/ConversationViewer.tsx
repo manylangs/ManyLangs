@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import ConversationAudioController from "@/components/audio/controllers/ConversationAudioController";
+import { useViewerTarget } from "../context/ViewerTargetContext";
 
 type Sentence = {
   target: string;
@@ -56,17 +57,13 @@ export default function ConversationViewer({
 }: Props) {
   const [lang, setLang] = useState<StudyLang>("en");
 
-  const currentIndex = useMemo(
-    () => chapters.indexOf(chapter),
-    [chapters, chapter]
-  );
+  // ✅ Target 토글 상태
+  const { showTargetText } = useViewerTarget();
 
-  const prev =
-    currentIndex > 0 ? chapters[currentIndex - 1] : chapter;
-  const next =
-    currentIndex < chapters.length - 1
-      ? chapters[currentIndex + 1]
-      : chapter;
+  const currentIndex = useMemo(() => chapters.indexOf(chapter), [chapters, chapter]);
+
+  const prev = currentIndex > 0 ? chapters[currentIndex - 1] : chapter;
+  const next = currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : chapter;
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
@@ -83,32 +80,32 @@ export default function ConversationViewer({
             borderBottom: "1px solid #eee",
           }}
         >
-          <ConversationAudioController
-            lang="kr"
-            level={level}
-            chapter={chapter}
-          />
+          <ConversationAudioController lang="kr" level={level} chapter={chapter} />
         </section>
       )}
 
       {/* ✅ 제목 (목표언어 / 학습언어 동일 크기) */}
       {data.title && (
         <section style={{ marginBottom: 20 }}>
-          <div
-            style={{
-              fontSize: 22,
-              fontWeight: 700,
-              marginBottom: 4,
-            }}
-          >
-            {data.title.target}
-          </div>
+          {showTargetText && (
+            <div
+              style={{
+                fontSize: 22,
+                fontWeight: 700,
+                marginBottom: 4,
+              }}
+            >
+              {data.title.target}
+            </div>
+          )}
+
           {data.title[lang] && (
             <div
               style={{
                 fontSize: 22,
                 fontWeight: 700,
                 color: "#555",
+                marginTop: showTargetText ? 0 : 0,
               }}
             >
               {data.title[lang]}
@@ -120,11 +117,7 @@ export default function ConversationViewer({
       {/* 학습 언어 선택 */}
       <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
         {STUDY_LANGS.map((l) => (
-          <button
-            key={l}
-            onClick={() => setLang(l)}
-            style={buttonStyle(lang === l)}
-          >
+          <button key={l} onClick={() => setLang(l)} style={buttonStyle(lang === l)}>
             {l.toUpperCase()}
           </button>
         ))}
@@ -138,16 +131,10 @@ export default function ConversationViewer({
           marginBottom: 12,
         }}
       >
-        <Link
-          href={`/viewer/kr/conversation/${level}/${prev}`}
-          style={buttonStyle(false)}
-        >
+        <Link href={`/viewer/kr/conversation/${level}/${prev}`} style={buttonStyle(false)}>
           ← Prev
         </Link>
-        <Link
-          href={`/viewer/kr/conversation/${level}/${next}`}
-          style={buttonStyle(false)}
-        >
+        <Link href={`/viewer/kr/conversation/${level}/${next}`} style={buttonStyle(false)}>
           Next →
         </Link>
       </div>
@@ -176,18 +163,16 @@ export default function ConversationViewer({
       <section>
         {data.blocks.map((block, i) => (
           <div key={i} style={{ marginBottom: 32 }}>
-            <div style={{ fontWeight: 700, marginBottom: 8 }}>
-              Dialogue {i + 1}
-            </div>
+            <div style={{ fontWeight: 700, marginBottom: 8 }}>Dialogue {i + 1}</div>
 
             {block.lines.map((line, j) => (
               <div key={j} style={{ marginBottom: 10 }}>
                 <strong>{line.speaker}</strong>
-                <div>{line.sentences.target}</div>
+
+                {showTargetText && <div>{line.sentences.target}</div>}
+
                 {line.sentences[lang] && (
-                  <div style={{ color: "#444" }}>
-                    {line.sentences[lang]}
-                  </div>
+                  <div style={{ color: "#444" }}>{line.sentences[lang]}</div>
                 )}
               </div>
             ))}

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import IdiomAudioController from "@/components/audio/controllers/IdiomAudioController";
+import { useViewerTarget } from "../context/ViewerTargetContext";
 
 const STUDY_LANGS = ["en", "es", "fr", "pt"] as const;
 type StudyLang = (typeof STUDY_LANGS)[number];
@@ -17,23 +18,18 @@ const buttonStyle = (active: boolean) => ({
   cursor: "pointer",
 });
 
-export default function IdiomViewer({
-  data,
-  level,
-  chapter,
-  chapters,
-}: any) {
+export default function IdiomViewer({ data, level, chapter, chapters }: any) {
   const router = useRouter();
 
   // Conversation 기준: 영어 기본 표시
   const [lang, setLang] = useState<StudyLang>("en");
 
+  // ✅ Target 토글 상태
+  const { showTargetText } = useViewerTarget();
+
   const currentIndex = chapters.indexOf(chapter);
   const prev = currentIndex > 0 ? chapters[currentIndex - 1] : null;
-  const next =
-    currentIndex < chapters.length - 1
-      ? chapters[currentIndex + 1]
-      : null;
+  const next = currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : null;
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto" }}>
@@ -51,11 +47,7 @@ export default function IdiomViewer({
           padding: "16px 24px 12px",
         }}
       >
-        <IdiomAudioController
-          lang="kr"
-          level={level}
-          chapter={chapter}
-        />
+        <IdiomAudioController lang="kr" level={level} chapter={chapter} />
       </div>
 
       <div style={{ padding: 24 }}>
@@ -70,9 +62,7 @@ export default function IdiomViewer({
           <button
             style={buttonStyle(false)}
             disabled={!prev}
-            onClick={() =>
-              prev && router.push(`/viewer/kr/idiom/${level}/${prev}`)
-            }
+            onClick={() => prev && router.push(`/viewer/kr/idiom/${level}/${prev}`)}
           >
             ← Prev
           </button>
@@ -80,9 +70,7 @@ export default function IdiomViewer({
           <button
             style={buttonStyle(false)}
             disabled={!next}
-            onClick={() =>
-              next && router.push(`/viewer/kr/idiom/${level}/${next}`)
-            }
+            onClick={() => next && router.push(`/viewer/kr/idiom/${level}/${next}`)}
           >
             Next →
           </button>
@@ -94,9 +82,7 @@ export default function IdiomViewer({
             <button
               key={c}
               style={buttonStyle(c === chapter)}
-              onClick={() =>
-                router.push(`/viewer/kr/idiom/${level}/${c}`)
-              }
+              onClick={() => router.push(`/viewer/kr/idiom/${level}/${c}`)}
             >
               {c}
             </button>
@@ -131,14 +117,22 @@ export default function IdiomViewer({
               Set {idx + 1}
             </div>
 
-            {/* 표현 */}
-            <div style={{ fontSize: 22, fontWeight: 700 }}>
-              {block.expression.target}
-            </div>
+            {/* 표현 (target) */}
+            {showTargetText && (
+              <div style={{ fontSize: 22, fontWeight: 700 }}>
+                {block.expression.target}
+              </div>
+            )}
 
             {/* 학습언어 (기본 영어) */}
             {block.expression[lang] && (
-              <div style={{ fontSize: 18, color: "#555" }}>
+              <div
+                style={{
+                  fontSize: 18,
+                  color: "#555",
+                  marginTop: showTargetText ? 0 : 2,
+                }}
+              >
                 {block.expression[lang]}
               </div>
             )}
@@ -151,20 +145,17 @@ export default function IdiomViewer({
             {/* Explanation */}
             <div style={{ marginBottom: 20 }}>
               <div style={{ fontWeight: 700 }}>Explanation</div>
-              <div>{block.explanation.target}</div>
+
+              {showTargetText && <div>{block.explanation.target}</div>}
 
               {block.explanation[lang] && (
-                <div style={{ color: "#555" }}>
-                  {block.explanation[lang]}
-                </div>
+                <div style={{ color: "#555" }}>{block.explanation[lang]}</div>
               )}
             </div>
 
             {/* Examples */}
             <div>
-              <div style={{ fontWeight: 700, marginBottom: 8 }}>
-                Examples
-              </div>
+              <div style={{ fontWeight: 700, marginBottom: 8 }}>Examples</div>
 
               {block.examples.map((ex: any, i: number) => (
                 <div
@@ -175,13 +166,9 @@ export default function IdiomViewer({
                     paddingBottom: 12,
                   }}
                 >
-                  <div>{ex.target}</div>
+                  {showTargetText && <div>{ex.target}</div>}
 
-                  {ex[lang] && (
-                    <div style={{ color: "#555" }}>
-                      {ex[lang]}
-                    </div>
-                  )}
+                  {ex[lang] && <div style={{ color: "#555" }}>{ex[lang]}</div>}
                 </div>
               ))}
             </div>
