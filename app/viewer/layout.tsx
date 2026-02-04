@@ -1,20 +1,12 @@
-"use client";
+import { ReactNode } from "react";
+import ViewerHeaderClient from "./components/ViewerHeaderClient";
+import { ViewerTargetProvider } from "./context/ViewerTargetContext";
 
-import ViewerGuard from "@/app/viewer/ViewerGuard";
-import LicenseHeader from "@/app/viewer/components/LicenseHeader";
-import ViewerHeader from "@/app/viewer/components/ViewerHeader";
-
-export default function ViewerLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function ViewerLayout({ children }: { children: ReactNode }) {
   return (
-    <ViewerGuard>
-      {/* expiresAt은 STEP 2에서 다시 연결 */}
-      <LicenseHeader expiresAt={null} />
-      <ViewerHeader />
+    <ViewerTargetProvider>
+      <ViewerHeaderClient />
       {children}
-    </ViewerGuard>
+    </ViewerTargetProvider>
   );
 }

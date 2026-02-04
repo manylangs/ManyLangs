@@ -2,25 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
-
-type License = {
-  lang: string;
-  series: string;
-  level: string;
-  expiresAt?: number;
-  source?: "coupon" | "payment";
-  code?: string;
-};
-
-// 안전 JSON 파서
-function safeParse<T>(raw: string | null): T | null {
-  if (!raw) return null;
-  try {
-    return JSON.parse(raw) as T;
-  } catch {
-    return null;
-  }
-}
+import { cleanExpiredLibrary, isExpired, type License } from "@/lib/license";
 
 // /viewer/kr/grammar/a1/001 형태 기준
 function parseViewerPath(pathname: string) {
@@ -62,16 +44,14 @@ export default function ViewerGuard({
       return;
     }
 
-    // 목표언어 임시 고정
-    const reqLang = "kr";
+    const reqLang = req.lang || "kr";
     const reqSeries = req.series;
     const reqLevel = normalizeLevel(req.series, req.level);
 
-    const library = safeParse<License[]>(
-      localStorage.getItem("library")
-    ) || [];
+    // ✅ 만료 라이선스 정리 + 단일 진실
+    const library: License[] = cleanExpiredLibrary();
 
-    const ok = library.some((item) => {
+    const hit = library.find((item) => {
       const itemLevel = normalizeLevel(item.series, item.level);
       return (
         item.lang === reqLang &&
@@ -80,7 +60,8 @@ export default function ViewerGuard({
       );
     });
 
-    if (!ok) {
+    // ❌ 미보유 or 만료 → 차단
+    if (!hit || isExpired(hit.expiresAt)) {
       router.replace("/select-books");
       return;
     }

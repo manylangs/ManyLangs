@@ -1,68 +1,103 @@
 // app/api/coupons/redeem/route.ts
-
 import { NextResponse } from "next/server";
-import { COUPONS } from "@/lib/coupons";
+import { db } from "@/lib/firebaseAdmin";
+import { Coupon } from "@/lib/coupons";
+import type { License } from "@/lib/license";
+
+export const runtime = "nodejs";
 
 type RedeemBody = {
   code: string;
   userId: string;
-
-  // ✅ 새로고침해도 교재명이 안 사라지게 하려면
-  // redeem 시점에 "무슨 교재를 열었는지"를 같이 받아서 license에 저장해야 함
-  // (클라이언트에서 선택한 값 보내면 됨)
-  lang?: string;
-  series?: string;
-  level?: string;
+  lang: string;
+  series: string;
+  level: string;
 };
 
 export async function POST(req: Request) {
-  const body = (await req.json()) as RedeemBody;
+  let body: RedeemBody;
+
+  try {
+    body = await req.json();
+  } catch {
+    return NextResponse.json({ error: "invalid body" }, { status: 400 });
+  }
+
   const { code, userId, lang, series, level } = body;
 
-  if (!code || !userId) {
-    return NextResponse.json({ error: "missing code or userId" }, { status: 400 });
+  if (!code || !userId || !lang || !series || !level) {
+    return NextResponse.json(
+      { error: "missing required fields" },
+      { status: 400 }
+    );
   }
 
-  const coupon = COUPONS.find((c: any) => c.code === code);
+  const couponCode = String(code).trim();
+  const finalLevel = series === "voca" || series === "idiom" ? "all" : String(level).trim();
 
-  if (!coupon) {
-    return NextResponse.json({ error: "invalid coupon" }, { status: 404 });
+  try {
+    const ref = db.collection("coupons").doc(couponCode);
+
+    const { coupon, license } = await db.runTransaction(async (tx) => {
+      const snap = await tx.get(ref);
+
+      if (!snap.exists) {
+        throw new Error("Invalid coupon code");
+      }
+
+      const c = snap.data() as Coupon;
+
+      // 소유자 체크(정책상 필요)
+      if (c.ownerId !== userId) {
+        throw new Error("Invalid coupon code");
+      }
+
+      if (c.used) {
+        throw new Error("Coupon already used");
+      }
+
+      const now = Date.now();
+
+      const updated: Coupon = {
+        ...c,
+        code: couponCode,
+        used: true,
+        usedBy: userId,
+        usedAt: now,
+        usedLang: String(lang).trim(),
+        usedSeries: String(series).trim(),
+        usedLevel: finalLevel,
+      };
+
+      tx.set(ref, updated, { merge: true });
+
+      // ✅ 라이선스 생성 (프론트가 기대하는 구조 그대로)
+      const lic: License = {
+        lang: String(lang).trim(),
+        series: String(series).trim(),
+        level: finalLevel,
+        expiresAt: now + 1000 * 60 * 10, // 기본 10분 (현 테스트 정책 유지)
+        source: "coupon",
+        code: couponCode,
+        issuedAt: now,
+      };
+
+      return { coupon: updated, license: lic };
+    });
+
+    // ✅ 기존 프론트는 { success:true, coupon, license }를 기대하던 흐름 유지
+    return NextResponse.json({ success: true, coupon, license }, { status: 200 });
+  } catch (e: any) {
+    const msg = typeof e?.message === "string" ? e.message : "redeem failed";
+    const lower = msg.toLowerCase();
+
+    if (lower.includes("invalid coupon")) {
+      return NextResponse.json({ error: msg }, { status: 404 });
+    }
+    if (lower.includes("already used")) {
+      return NextResponse.json({ error: msg }, { status: 400 });
+    }
+
+    return NextResponse.json({ error: msg }, { status: 500 });
   }
-
-  if (coupon.used) {
-    return NextResponse.json({ error: "coupon already used" }, { status: 400 });
-  }
-
-  // ✅ 쿠폰 사용 처리
-  coupon.used = true;
-  coupon.usedBy = userId;
-  coupon.usedAt = Date.now();
-
-  // ⏱ TEST용: 라이선스 10분 (나중에 정책값으로 교체)
-  const licenseExpiresAt = Date.now() + 1000 * 60 * 10;
-
-  // ✅ 핵심: "쿠폰"이 아니라 "라이선스"에 교재 식별자 저장
-  // - 새로고침해도 교재명이 유지됨
-  // - 남은시간 표시도 license.expiresAt 기준으로 가능
-  const license = {
-    userId,
-    source: "coupon" as const,
-    code,
-    lang: lang ?? null,
-    series: series ?? null,
-    level: level ?? null,
-    expiresAt: licenseExpiresAt,
-    issuedAt: Date.now(),
-  };
-
-  return NextResponse.json({
-    success: true,
-    coupon: {
-      code: coupon.code,
-      used: coupon.used,
-      usedAt: coupon.usedAt,
-      usedBy: coupon.usedBy,
-    },
-    license,
-  });
 }

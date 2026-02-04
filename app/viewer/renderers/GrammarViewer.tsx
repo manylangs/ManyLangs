@@ -2,6 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useViewerTarget } from "../context/ViewerTargetContext";
+
+/* ================= types ================= */
 
 type GrammarBlock = {
   type: string;
@@ -43,6 +46,9 @@ export default function GrammarViewer({
 }: Props) {
   const [lang, setLang] = useState<StudyLang>("en");
 
+  // 🔑 Context에서 공통 상태 사용
+  const { showTargetText } = useViewerTarget();
+
   const currentIndex = chapters.indexOf(chapter);
   const prev = currentIndex > 0 ? chapters[currentIndex - 1] : chapter;
   const next =
@@ -68,7 +74,9 @@ export default function GrammarViewer({
 
     return (
       <div key={i} style={{ marginBottom: 12 }}>
-        <div>{target}</div>
+        {/* ✅ 토글 적용 */}
+        {showTargetText && <div>{target}</div>}
+
         {study && (
           <div style={{ color: "#444", marginTop: 2 }}>
             {study}
@@ -140,9 +148,12 @@ export default function GrammarViewer({
 
       {/* ===== Title ===== */}
       <section style={{ marginBottom: 28 }}>
-        <div style={{ fontSize: 24, fontWeight: 700 }}>
-          {grammarData.title?.target}
-        </div>
+        {showTargetText && (
+          <div style={{ fontSize: 24, fontWeight: 700 }}>
+            {grammarData.title?.target}
+          </div>
+        )}
+
         {grammarData.title?.[lang] && (
           <div
             style={{
@@ -183,35 +194,17 @@ export default function GrammarViewer({
           Examples
         </div>
 
-        <div
-          style={{
-            fontSize: 15,
-            fontWeight: 600,
-            marginBottom: 8,
-          }}
-        >
+        <div style={{ fontSize: 15, fontWeight: 600, marginBottom: 8 }}>
           Core Patterns
         </div>
         {byVariant("core_patterns").map(renderLine)}
 
-        <div
-          style={{
-            fontSize: 15,
-            fontWeight: 600,
-            margin: "20px 0 8px",
-          }}
-        >
+        <div style={{ fontSize: 15, fontWeight: 600, margin: "20px 0 8px" }}>
           Variations
         </div>
         {byVariant("variations").map(renderLine)}
 
-        <div
-          style={{
-            fontSize: 15,
-            fontWeight: 600,
-            margin: "20px 0 8px",
-          }}
-        >
+        <div style={{ fontSize: 15, fontWeight: 600, margin: "20px 0 8px" }}>
           Extended Examples
         </div>
         {byVariant("extended_usage").map(renderLine)}

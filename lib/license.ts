@@ -1,147 +1,132 @@
 // lib/license.ts
 
+export type LicenseSource = "coupon" | "payment";
+
 export type License = {
   lang: string;
-  series: string; // grammar | conversation | voca | idiom | real ...
-  level: string;  // a1~c2 or "all"(voca/idiom)
-  expiresAt: number;
-  source: "coupon" | "payment";
-  code?: string;
-  issuedAt?: number;
+  series: string;
+  level: string; // a1~c2 | all
+  expiresAt: number; // ms
+  source: LicenseSource;
+  code?: string; // coupon code if source=coupon
+  issuedAt?: number; // ms
 };
 
-const LIB_KEY = "library";
+const STORAGE_KEY = "library";
 
-function normalizeLevel(series: string, level: string) {
-  return series === "voca" || series === "idiom" ? "all" : level;
+/** seconds(ms)로 잘못 들어온 값 방어 */
+export function normalizeExpiresAt(expiresAt: number) {
+  if (!Number.isFinite(expiresAt)) return 0;
+  // 1e12 미만이면 초 단위로 보고 ms로 변환
+  if (expiresAt > 0 && expiresAt < 1e12) return expiresAt * 1000;
+  return expiresAt;
 }
 
-/**
- * library 전체 반환 (만료 포함)
- * - 만료도 UI에서 "Expired"로 보여줘야 하므로 절대 자동 제거하지 않음
- */
-export function getLibrary(): License[] {
-  if (typeof window === "undefined") return [];
-
-  const raw = localStorage.getItem(LIB_KEY);
-  if (!raw) return [];
-
-  try {
-    return JSON.parse(raw) as License[];
-  } catch {
-    return [];
-  }
-}
-
-/**
- * 만료 여부
- */
 export function isExpired(expiresAt: number) {
-  return Date.now() >= expiresAt;
+  const t = normalizeExpiresAt(expiresAt);
+  if (!t) return true;
+  return Date.now() >= t;
 }
 
-/**
- * 남은시간 포맷 (UI용)
- * - 1일 이상: D-3
- * - 1일 미만: hh:mm
- */
-export function formatRemaining(expiresAt: number) {
-  const ms = expiresAt - Date.now();
+export function remainingMs(expiresAt: number) {
+  const t = normalizeExpiresAt(expiresAt);
+  return Math.max(0, t - Date.now());
+}
+
+export function remainingText(expiresAt: number) {
+  const ms = remainingMs(expiresAt);
   if (ms <= 0) return "Expired";
 
-  const totalMin = Math.floor(ms / (1000 * 60));
+  const totalMin = Math.floor(ms / 60000);
   const days = Math.floor(totalMin / (60 * 24));
-
   if (days >= 1) return `D-${days}`;
 
   const hours = Math.floor(totalMin / 60);
   const mins = totalMin % 60;
-
   const hh = String(hours).padStart(2, "0");
   const mm = String(mins).padStart(2, "0");
   return `${hh}:${mm}`;
 }
 
-/**
- * 특정 교재의 "활성(유효) 라이선스" 1개 반환
- */
-export function getActiveLicense(params: {
-  lang: string;
-  series: string;
-  level: string;
-}): License | null {
-  const { lang, series, level } = params;
-  const normLevel = normalizeLevel(series, level);
+/** localStorage에서 전체 라이브러리 로드 */
+export function loadLibrary(): License[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    const arr = JSON.parse(raw || "[]");
+    if (!Array.isArray(arr)) return [];
 
-  const list = getLibrary();
-
-  // 같은 교재가 여러 번 저장될 수 있으니, 가장 늦게 만료되는 것 우선
-  const matches = list
-    .filter(l => {
-      const licLevel = normalizeLevel(l.series, l.level);
-      return l.lang === lang && l.series === series && licLevel === normLevel;
-    })
-    .sort((a, b) => b.expiresAt - a.expiresAt);
-
-  const best = matches[0];
-  if (!best) return null;
-
-  return isExpired(best.expiresAt) ? null : best;
+    return arr
+      .map((x) => ({
+        ...x,
+        expiresAt: normalizeExpiresAt(x?.expiresAt),
+      }))
+      .filter((x) => x && x.lang && x.series && x.level);
+  } catch {
+    return [];
+  }
 }
 
-/**
- * 특정 교재 license 존재 여부 (유효 기준)
- */
-export function hasLicense(params: {
-  lang: string;
-  series: string;
-  level: string;
-}): boolean {
-  return !!getActiveLicense(params);
-}
-
-/**
- * ✅ License 저장 (중복 제거 후 추가)
- * - voca/idiom은 level=all로 강제 저장
- */
-export function saveLicense(newLicense: License) {
+/** localStorage 저장 */
+export function saveLibrary(list: License[]) {
   if (typeof window === "undefined") return;
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+}
+
+/** 만료 자동 제거 + 저장까지 */
+export function cleanExpiredLibrary(): License[] {
+  const lib = loadLibrary();
+  const alive = lib.filter((l) => !isExpired(l.expiresAt));
+  saveLibrary(alive);
+  return alive;
+}
+
+/** (lang, series, level) 기준 upsert */
+export function upsertLicense(newOne: License): License[] {
+  const lib = loadLibrary();
 
   const normalized: License = {
-    ...newLicense,
-    level: normalizeLevel(newLicense.series, newLicense.level),
+    ...newOne,
+    expiresAt: normalizeExpiresAt(newOne.expiresAt),
   };
 
-  const list = getLibrary();
+  const next = lib.filter(
+    (l) =>
+      !(
+        l.lang === normalized.lang &&
+        l.series === normalized.series &&
+        l.level === normalized.level
+      )
+  );
 
-  const filtered = list.filter(l => {
-    const lLevel = normalizeLevel(l.series, l.level);
-    return !(
-      l.lang === normalized.lang &&
-      l.series === normalized.series &&
-      lLevel === normalized.level
-    );
-  });
-
-  const next = [...filtered, normalized];
-  localStorage.setItem(LIB_KEY, JSON.stringify(next));
+  next.push(normalized);
+  saveLibrary(next);
+  return next;
 }
 
 /**
- * (선택) 만료 license 정리
- * - 자동 호출 금지. "정리" 버튼 같은 곳에서만 쓰기.
+ * ✅ 하위호환 별칭
+ * - 과거 코드가 saveLicense를 import해도 깨지지 않게 유지
  */
-export function cleanupExpiredLicenses() {
-  if (typeof window === "undefined") return;
+export const saveLicense = upsertLicense;
 
-  const next = getLibrary().filter(l => !isExpired(l.expiresAt));
-  localStorage.setItem(LIB_KEY, JSON.stringify(next));
+/** 현재 선택 항목에 매칭되는 라이선스 찾기 */
+export function findLicense(selection: {
+  lang: string;
+  series: string;
+  level: string;
+}) {
+  const lib = loadLibrary();
+  return lib.find(
+    (l) =>
+      l.lang === selection.lang &&
+      l.series === selection.series &&
+      l.level === selection.level
+  );
 }
 
-/**
- * 전체 초기화 (테스트/로그아웃용)
- */
-export function clearLibrary() {
-  if (typeof window === "undefined") return;
-  localStorage.removeItem(LIB_KEY);
+/** 특정 쿠폰(code)로 생성된 라이선스들 */
+export function findLicensesByCouponCode(code: string) {
+  const lib = loadLibrary();
+  return lib.filter((l) => l.source === "coupon" && l.code === code);
 }
