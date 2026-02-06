@@ -33,7 +33,8 @@ export async function POST(req: Request) {
   }
 
   const couponCode = String(code).trim();
-  const finalLevel = series === "voca" || series === "idiom" ? "all" : String(level).trim();
+  const finalLevel =
+    series === "voca" || series === "idiom" ? "all" : String(level).trim();
 
   try {
     const ref = db.collection("coupons").doc(couponCode);
@@ -47,10 +48,10 @@ export async function POST(req: Request) {
 
       const c = snap.data() as Coupon;
 
-      // 소유자 체크(정책상 필요)
-      if (c.ownerId !== userId) {
-        throw new Error("Invalid coupon code");
-      }
+      // ✅ 공유/양도 허용: 소유자 체크 제거
+      // if (c.ownerId !== userId) {
+      //   throw new Error("Invalid coupon code");
+      // }
 
       if (c.used) {
         throw new Error("Coupon already used");
@@ -62,6 +63,7 @@ export async function POST(req: Request) {
         ...c,
         code: couponCode,
         used: true,
+        // ✅ 실제 사용자는 “redeem 요청한 계정”
         usedBy: userId,
         usedAt: now,
         usedLang: String(lang).trim(),
@@ -71,7 +73,7 @@ export async function POST(req: Request) {
 
       tx.set(ref, updated, { merge: true });
 
-      // ✅ 라이선스 생성 (프론트가 기대하는 구조 그대로)
+      // ✅ 라이선스도 “redeem 요청한 계정” 기준으로 생성(프론트 기대 구조 유지)
       const lic: License = {
         lang: String(lang).trim(),
         series: String(series).trim(),
@@ -85,8 +87,10 @@ export async function POST(req: Request) {
       return { coupon: updated, license: lic };
     });
 
-    // ✅ 기존 프론트는 { success:true, coupon, license }를 기대하던 흐름 유지
-    return NextResponse.json({ success: true, coupon, license }, { status: 200 });
+    return NextResponse.json(
+      { success: true, coupon, license },
+      { status: 200 }
+    );
   } catch (e: any) {
     const msg = typeof e?.message === "string" ? e.message : "redeem failed";
     const lower = msg.toLowerCase();

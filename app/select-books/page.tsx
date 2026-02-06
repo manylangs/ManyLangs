@@ -49,6 +49,8 @@ const SERIES_CONFIG: Record<string, { label: string; hasLevel: boolean }> = {
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
+const COUPON_PAGE_SIZE = 10;
+
 const PAYMENT_OPTIONS: Array<{
   amount: Amount;
   label: string;
@@ -128,6 +130,7 @@ export default function SelectBooksPage() {
 
   const [library, setLibrary] = useState<LibraryItem[]>([]);
   const [couponBox, setCouponBox] = useState<CouponItem[]>([]);
+  const [couponPage, setCouponPage] = useState(1);
 
   const [targetLang, setTargetLang] = useState("kr");
   const [book, setBook] = useState("");
@@ -148,7 +151,7 @@ export default function SelectBooksPage() {
     }
 
     // ✅ (A) 라이브러리 만료 청소 + state 반영 (여기서 aliveLib “1번만” 결정)
-    const aliveLib = cleanExpiredLibrary();
+    const aliveLib = cleanExpiredLibrary(userId); // ✅ FIX
     setLibrary(aliveLib);
 
     // ✅ (B) 쿠폰박스 로드 + used 쿠폰은 "유효 license(code)" 있을 때만 유지
@@ -251,7 +254,7 @@ export default function SelectBooksPage() {
 
     const tick = () => {
       // (1) 만료 라이선스 제거
-      const aliveLib = cleanExpiredLibrary();
+      const aliveLib = cleanExpiredLibrary(userId); // ✅ FIX
       setLibrary(aliveLib);
 
       // (2) used 쿠폰도 같이 제거 (해당 coupon code의 license가 살아있을 때만 유지)
@@ -301,6 +304,10 @@ export default function SelectBooksPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isLoaded, userId, library]);
 
+  useEffect(() => {
+    setCouponPage(1);
+  }, [couponBox.length]);
+
   // ✅ Hook 끝난 뒤에만 early return
   if (!isLoaded) return null;
   if (!userId) return null;
@@ -345,7 +352,7 @@ export default function SelectBooksPage() {
         return;
       }
 
-      const nextLib = upsertLicense(lic);
+      const nextLib = upsertLicense(lic, userId); // ✅ FIX
       setLibrary(nextLib);
 
       setCouponBox((prev) => {
@@ -445,6 +452,19 @@ export default function SelectBooksPage() {
 
   const filteredLibrary = library.filter((i) => i.lang === targetLang);
 
+  // ✅ Coupon UX: sort (unused first) + pagination (10/page)
+  const sortedCoupons = [
+    ...couponBox.filter((c) => !c.used),
+    ...couponBox.filter((c) => c.used),
+  ];
+
+  const couponTotal = sortedCoupons.length;
+  const couponTotalPages = Math.max(1, Math.ceil(couponTotal / COUPON_PAGE_SIZE));
+
+  const safeCouponPage = Math.min(Math.max(1, couponPage), couponTotalPages);
+  const couponStart = (safeCouponPage - 1) * COUPON_PAGE_SIZE;
+  const pageCoupons = sortedCoupons.slice(couponStart, couponStart + COUPON_PAGE_SIZE);
+
   return (
     <main className="flex justify-center px-4 py-8">
       <div className="w-full max-w-md space-y-6">
@@ -507,15 +527,54 @@ export default function SelectBooksPage() {
             <CardTitle>My Coupons</CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">
-            {couponBox.length === 0 && <p className="text-sm text-gray-500">No coupons available.</p>}
+            {couponTotal === 0 && <p className="text-sm text-gray-500">No coupons available.</p>}
 
-            {couponBox.map((c, idx) => {
+            {/* Header: total + pagination */}
+            {couponTotal > 0 && (
+              <div className="flex items-center justify-between rounded border px-3 py-2 text-sm">
+                <div>
+                  Total: <b>{couponTotal}</b>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    className="rounded border px-2 py-1 disabled:opacity-50"
+                    onClick={() => setCouponPage((p) => Math.max(1, p - 1))}
+                    disabled={safeCouponPage === 1}
+                    aria-label="Previous page"
+                  >
+                    {"<"}
+                  </button>
+
+                  <span className="text-xs text-gray-600">
+                    {safeCouponPage} / {couponTotalPages}
+                  </span>
+
+                  <button
+                    type="button"
+                    className="rounded border px-2 py-1 disabled:opacity-50"
+                    onClick={() => setCouponPage((p) => Math.min(couponTotalPages, p + 1))}
+                    disabled={safeCouponPage === couponTotalPages}
+                    aria-label="Next page"
+                  >
+                    {">"}
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* List: paged coupons */}
+            {pageCoupons.map((c, idx) => {
               const status = getCouponStatus(c);
               const usedAt = c.used ? formatUsedAt(c.usedAt) : "";
               const usedBook = formatUsedBook(c);
 
               return (
-                <div key={idx} className="flex justify-between rounded border px-3 py-2 text-sm">
+                <div
+                  key={`${c.code}-${idx}`}
+                  className="flex justify-between rounded border px-3 py-2 text-sm"
+                >
                   <button
                     type="button"
                     onClick={() => copyToClipboard(c.code)}

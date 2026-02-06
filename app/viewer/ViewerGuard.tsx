@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import { useAuth } from "@clerk/nextjs";
 import { cleanExpiredLibrary, isExpired, type License } from "@/lib/license";
 
 // /viewer/kr/grammar/a1/001 형태 기준
@@ -30,6 +31,7 @@ export default function ViewerGuard({
 }) {
   const router = useRouter();
   const pathname = usePathname();
+  const { userId, isLoaded } = useAuth();
 
   const [ready, setReady] = useState(false);
   const [allowed, setAllowed] = useState(false);
@@ -37,6 +39,15 @@ export default function ViewerGuard({
   const req = useMemo(() => parseViewerPath(pathname), [pathname]);
 
   useEffect(() => {
+    // ✅ auth 준비 전에는 판단하지 않음
+    if (!isLoaded) return;
+
+    // ✅ 로그아웃 상태면 로그인으로
+    if (!userId) {
+      router.replace("/login");
+      return;
+    }
+
     // viewer 경로 아니면 패스
     if (!req) {
       setAllowed(true);
@@ -48,8 +59,8 @@ export default function ViewerGuard({
     const reqSeries = req.series;
     const reqLevel = normalizeLevel(req.series, req.level);
 
-    // ✅ 만료 라이선스 정리 + 단일 진실
-    const library: License[] = cleanExpiredLibrary();
+    // ✅ ✅ ✅ (변경 포인트) 계정별 라이브러리로 만료 정리 + 단일 진실
+    const library: License[] = cleanExpiredLibrary(userId);
 
     const hit = library.find((item) => {
       const itemLevel = normalizeLevel(item.series, item.level);
@@ -68,7 +79,7 @@ export default function ViewerGuard({
 
     setAllowed(true);
     setReady(true);
-  }, [req, router]);
+  }, [req, router, isLoaded, userId]);
 
   if (!ready) return null;
   if (!allowed) return null;

@@ -24,10 +24,7 @@ export default function LoginPage() {
       }}
     >
       <Logo />
-      <h1 style={{ fontSize: 20, fontWeight: 600 }}>
-        Sign in to your account
-      </h1>
-
+     
       <SignIn
         redirectUrl="/select-books"
         afterSignInUrl="/select-books"
