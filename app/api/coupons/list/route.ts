@@ -5,6 +5,20 @@ import { Coupon } from "@/lib/coupons";
 
 export const runtime = "nodejs";
 
+function pick(c: Coupon) {
+  return {
+    code: c.code,
+    used: !!c.used,
+    issuedAt: c.issuedAt,
+    usedAt: c.usedAt ?? null,
+    usedBy: c.usedBy ?? null,
+
+    usedLang: c.usedLang ?? null,
+    usedSeries: c.usedSeries ?? null,
+    usedLevel: c.usedLevel ?? null,
+  };
+}
+
 export async function POST(req: Request) {
   let body: { userId?: string };
 
@@ -21,25 +35,33 @@ export async function POST(req: Request) {
   }
 
   try {
-    const snap = await db
-      .collection("coupons")
-      .where("ownerId", "==", userId)
-      .get();
+    // 🔥 OR 대체: ownerId 쿼리 + usedBy 쿼리 2번 후 머지
+    const [ownerSnap, usedBySnap] = await Promise.all([
+      db.collection("coupons").where("ownerId", "==", userId).get(),
+      db.collection("coupons").where("usedBy", "==", userId).get(),
+    ]);
 
-    const coupons = snap.docs
-      .map((d) => d.data() as Coupon)
-      .map((c) => ({
-        code: c.code,
-        used: !!c.used,
-        issuedAt: c.issuedAt,
-        usedAt: c.usedAt ?? null,
-        usedBy: c.usedBy ?? null,
+    // ✅ code 기준 dedupe
+    const map = new Map<string, Coupon>();
 
-        // ✅ 쿠폰이 어떤 교재에 사용됐는지 (UI/정리용)
-        usedLang: c.usedLang ?? null,
-        usedSeries: c.usedSeries ?? null,
-        usedLevel: c.usedLevel ?? null,
-      }));
+    for (const d of ownerSnap.docs) {
+      const c = d.data() as Coupon;
+      if (c?.code) map.set(c.code, c);
+    }
+    for (const d of usedBySnap.docs) {
+      const c = d.data() as Coupon;
+      if (c?.code) map.set(c.code, c);
+    }
+
+    const coupons = Array.from(map.values())
+      // ✅ 정렬: 미사용 먼저, used는 뒤로 + 최신 issuedAt 우선
+      .sort((a, b) => {
+        const au = !!a.used;
+        const bu = !!b.used;
+        if (au !== bu) return au ? 1 : -1;
+        return (b.issuedAt ?? 0) - (a.issuedAt ?? 0);
+      })
+      .map(pick);
 
     return NextResponse.json({ coupons });
   } catch (e: any) {
