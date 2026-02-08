@@ -1,7 +1,7 @@
 // app/api/coupons/list/route.ts
 import { NextResponse } from "next/server";
 import { db } from "@/lib/firebaseAdmin";
-import { Coupon } from "@/lib/coupons";
+import type { Coupon } from "@/lib/coupons";
 
 export const runtime = "nodejs";
 
@@ -19,6 +19,24 @@ function pick(c: Coupon) {
   };
 }
 
+function timeKey(c: Coupon) {
+  return Math.max(c.usedAt ?? 0, c.issuedAt ?? 0);
+}
+
+// ✅ 서버에서 "만료된 내 used 쿠폰" 제거용
+function isExpiredUsedCoupon(c: Coupon) {
+  // 공유 used(라이선스 없을 수 있음)는 숨기지 않음
+  if (!c.used) return false;
+  if (!c.usedSeries) return false;
+
+  const expiresAt = (c as any)?.expiresAt as number | undefined;
+
+  // ✅ (핵심) expiresAt 없는 과거 used 쿠폰은 만료로 간주 → 숨김
+  if (!expiresAt) return true;
+
+  return Date.now() > expiresAt;
+}
+
 export async function POST(req: Request) {
   let body: { userId?: string };
 
@@ -28,8 +46,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "invalid body" }, { status: 400 });
   }
 
-  const { userId } = body;
-
+  const userId = String(body?.userId || "").trim();
   if (!userId) {
     return NextResponse.json({ error: "missing userId" }, { status: 400 });
   }
@@ -50,20 +67,36 @@ export async function POST(req: Request) {
     }
     for (const d of usedBySnap.docs) {
       const c = d.data() as Coupon;
-      if (c?.code) map.set(c.code, c);
+      if (c?.code) {
+        const prev = map.get(c.code);
+        if (!prev || timeKey(c) >= timeKey(prev)) map.set(c.code, c);
+      }
     }
 
     const coupons = Array.from(map.values())
-      // ✅ 정렬: 미사용 먼저, used는 뒤로 + 최신 issuedAt 우선
+      // ✅ (핵심) 만료된 내 used 쿠폰 제거
+      .filter((c) => !isExpiredUsedCoupon(c))
+      // ✅ 정렬: 미사용 먼저, used는 뒤로 + 최신(usedAt/issuedAt) 우선
       .sort((a, b) => {
         const au = !!a.used;
         const bu = !!b.used;
         if (au !== bu) return au ? 1 : -1;
-        return (b.issuedAt ?? 0) - (a.issuedAt ?? 0);
+        return timeKey(b) - timeKey(a);
       })
       .map(pick);
 
-    return NextResponse.json({ coupons });
+    return NextResponse.json(
+      {
+        success: true,
+        coupons,
+        meta: {
+          ownerCount: ownerSnap.size,
+          usedByCount: usedBySnap.size,
+          total: coupons.length,
+        },
+      },
+      { status: 200 }
+    );
   } catch (e: any) {
     const msg = typeof e?.message === "string" ? e.message : "list failed";
     return NextResponse.json({ error: msg }, { status: 500 });

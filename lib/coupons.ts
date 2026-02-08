@@ -18,6 +18,9 @@ export type Coupon = {
   usedLang?: string;
   usedSeries?: string;
   usedLevel?: string;
+
+  // ✅ (추가) 만료 판단용: 해당 쿠폰으로 만든 라이선스 만료 시각
+  expiresAt?: number;
 };
 
 /* ================= storage (in-memory mock) ================= */
@@ -106,25 +109,31 @@ export async function redeemCoupon(params: {
 
   const finalLevel = series === "voca" || series === "idiom" ? "all" : level;
 
+  const now = Date.now();
+  const expiresAt = now + durationMs;
+
   // ✅ 쿠폰 used 처리
   coupon.used = true;
   coupon.usedBy = userId;
-  coupon.usedAt = Date.now();
+  coupon.usedAt = now;
 
   // ✅ 어떤 교재에 썼는지 저장 (쿠폰 UI/정리용)
   coupon.usedLang = lang;
   coupon.usedSeries = series;
   coupon.usedLevel = finalLevel;
 
+  // ✅ (추가) 서버 list에서 만료 판단 가능하도록 저장
+  coupon.expiresAt = expiresAt;
+
   // ✅ 라이선스 생성 (단일 구조)
   const license: License = {
     lang,
     series,
     level: finalLevel,
-    expiresAt: Date.now() + durationMs,
+    expiresAt,
     source: "coupon",
     code,
-    issuedAt: Date.now(),
+    issuedAt: now,
   };
 
   // ✅ 로컬 라이브러리에 저장
