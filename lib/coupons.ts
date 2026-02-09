@@ -1,6 +1,7 @@
 // lib/coupons.ts
 import { saveLicense, License } from "./license";
 import crypto from "crypto";
+import { db } from "./firebaseAdmin";
 
 /* ================= types ================= */
 
@@ -10,16 +11,13 @@ export type Coupon = {
   issuedAt: number;
   used: boolean;
 
-  // redeem 시점에 채워짐
   usedBy?: string;
   usedAt?: number;
 
-  // ✅ 어떤 교재에 썼는지 저장 (쿠폰 UI/정리용)
   usedLang?: string;
   usedSeries?: string;
   usedLevel?: string;
 
-  // ✅ (추가) 만료 판단용: 해당 쿠폰으로 만든 라이선스 만료 시각
   expiresAt?: number;
 };
 
@@ -47,24 +45,20 @@ export function createCouponsByPrice(ownerId: string, price: number) {
   return createCoupons(ownerId, qty);
 }
 
-// 🔐 안전한 코드 생성기
 function genCode() {
-  // ML- + 8자리 (대문자/숫자 위주)
   const raw = crypto.randomBytes(6).toString("base64url").toUpperCase();
   return "ML-" + raw.slice(0, 8);
 }
 
-export function createCoupons(ownerId: string, qty: number) {
+export async function createCoupons(ownerId: string, qty: number) {
   const now = Date.now();
 
-  // 기존 코드 집합 (중복 방지)
   const used = new Set(COUPONS.map((c) => c.code));
   const list: Coupon[] = [];
 
   for (let i = 0; i < qty; i++) {
     let code = genCode();
 
-    // ✅ 충돌 시 재생성 (최대 20회)
     for (let tries = 0; tries < 20 && used.has(code); tries++) {
       code = genCode();
     }
@@ -74,12 +68,17 @@ export function createCoupons(ownerId: string, qty: number) {
 
     used.add(code);
 
-    list.push({
+    const coupon: Coupon = {
       code,
       ownerId,
       issuedAt: now,
       used: false,
-    });
+    };
+
+    list.push(coupon);
+
+    // Firestore에 즉시 저장 (문서 ID = code)
+    await db.collection("coupons").doc(code).set(coupon);
   }
 
   COUPONS.push(...list);
@@ -89,54 +88,61 @@ export function createCoupons(ownerId: string, qty: number) {
 /* ================= redeem ================= */
 
 /**
- * ✅ route.ts에서 기대하는 형태:
+ * ✅ Firestore 기준 redeem
  * { coupon, license }
  */
 export async function redeemCoupon(params: {
   code: string;
   userId: string;
   selection: { lang: string; series: string; level: string };
-  durationMs?: number; // 기본 10분
+  durationMs?: number;
 }): Promise<{ coupon: Coupon; license: License }> {
   const { code, userId, selection } = params;
   const durationMs = params.durationMs ?? 1000 * 60 * 10;
 
+  const normalize = (s: string) => s.trim().toUpperCase();
+  const normalizedCode = normalize(code);
+
   const { lang, series, level } = selection;
-
-  const coupon = COUPONS.find((c) => c.code === code);
-  if (!coupon) throw new Error("Invalid coupon code");
-  if (coupon.used) throw new Error("Coupon already used");
-
   const finalLevel = series === "voca" || series === "idiom" ? "all" : level;
 
-  const now = Date.now();
-  const expiresAt = now + durationMs;
+  const ref = db.collection("coupons").doc(normalizedCode);
 
-  // ✅ 쿠폰 used 처리
-  coupon.used = true;
-  coupon.usedBy = userId;
-  coupon.usedAt = now;
+  const { coupon, expiresAt } = await db.runTransaction(async (tx) => {
+    const snap = await tx.get(ref);
+    if (!snap.exists) throw new Error("Invalid coupon code");
 
-  // ✅ 어떤 교재에 썼는지 저장 (쿠폰 UI/정리용)
-  coupon.usedLang = lang;
-  coupon.usedSeries = series;
-  coupon.usedLevel = finalLevel;
+    const c = snap.data() as Coupon;
+    if (c.used) throw new Error("Coupon already used");
 
-  // ✅ (추가) 서버 list에서 만료 판단 가능하도록 저장
-  coupon.expiresAt = expiresAt;
+    const now = Date.now();
+    const expiresAt = now + durationMs;
 
-  // ✅ 라이선스 생성 (단일 구조)
+    const updated: Coupon = {
+      ...c,
+      used: true,
+      usedBy: userId,
+      usedAt: now,
+      usedLang: lang,
+      usedSeries: series,
+      usedLevel: finalLevel,
+      expiresAt,
+    };
+
+    tx.update(ref, updated);
+    return { coupon: updated, expiresAt };
+  });
+
   const license: License = {
     lang,
     series,
     level: finalLevel,
     expiresAt,
     source: "coupon",
-    code,
-    issuedAt: now,
+    code: normalizedCode,
+    issuedAt: Date.now(),
   };
 
-  // ✅ 로컬 라이브러리에 저장
   saveLicense(license);
 
   return { coupon, license };

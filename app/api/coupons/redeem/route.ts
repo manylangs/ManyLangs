@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { db } from "@/lib/firebaseAdmin";
 import { Coupon } from "@/lib/coupons";
 import type { License } from "@/lib/license";
+import { FieldValue } from "firebase-admin/firestore";
 
 export const runtime = "nodejs";
 
@@ -44,7 +45,7 @@ export async function POST(req: Request) {
 
       const c = snap.data() as Coupon;
 
-      // 소유자 체크(정책상 필요)
+      // 소유자 체크
       if (c.ownerId !== userId) {
         throw new Error("Invalid coupon code");
       }
@@ -55,16 +56,14 @@ export async function POST(req: Request) {
 
       const now = Date.now();
 
-      const usedBySnap = await tx.get(
-        db.collection("coupons").where("usedBy", "==", userId).limit(200)
-      );
-
       const wantLang = String(lang).trim();
       const wantSeries = String(series).trim();
 
-      let hasActive = false;
+      // === 🔑 중복 차단 기준: Firestore licenses ===
+      const licDocId = `${wantLang}_${wantSeries}_${finalLevel}`;
+      const licRef = db.collection("licenses").doc(userId).collection("items").doc(licDocId);
+      const licSnap = await tx.get(licRef);
 
-      // ✅ (추가) expiresAt이 Timestamp/number 섞여도 ms(number)로 통일
       const toMs = (v: any): number => {
         if (!v) return 0;
         if (typeof v === "number") return v;
@@ -73,39 +72,41 @@ export async function POST(req: Request) {
         return Number.isFinite(n) ? n : 0;
       };
 
-      for (const doc of usedBySnap.docs) {
-        const x = doc.data() as any;
-
-        if (!x?.used) continue;
-        if (!x?.expiresAt) continue;
-
-        // ✅ 같은 교재/레벨만 막기
-        if (x.usedLang !== wantLang) continue;
-        if (x.usedSeries !== wantSeries) continue;
-        if (x.usedLevel !== finalLevel) continue;
-
-        // ✅ 만료 전이면 활성 (Timestamp도 안전하게 비교)
-        const exp = toMs(x.expiresAt);
+      if (licSnap.exists) {
+        const exp = toMs(licSnap.data()?.expiresAt);
         if (exp > now) {
-          hasActive = true;
-          break;
+          throw new Error("Active license exists");
         }
       }
 
-      if (hasActive) {
-        throw new Error("Active license exists");
-      }
-
-      // ✅ 라이선스 생성 (프론트가 기대하는 구조 그대로)
+      // === 라이선스 생성 ===
       const lic: License = {
-        lang: String(lang).trim(),
-        series: String(series).trim(),
+        lang: wantLang,
+        series: wantSeries,
         level: finalLevel,
-        expiresAt: now + 1000 * 60 * 10, // 기본 10분 (현 테스트 정책 유지)
+        expiresAt: now + 1000 * 60 * 10, // 테스트용 10분
         source: "coupon",
         code: couponCode,
         issuedAt: now,
       };
+
+      console.log("[LICENSE WRITE]", licDocId);
+
+      tx.set(
+        licRef,
+        {
+          lang: lic.lang,
+          series: lic.series,
+          level: lic.level,
+          expiresAt: lic.expiresAt,
+          source: "coupon",
+          code: couponCode,
+          issuedAt: FieldValue.serverTimestamp(),
+          updatedAt: FieldValue.serverTimestamp(),
+          issuedAtMs: now,
+        },
+        { merge: true }
+      );
 
       const updated: Coupon = {
         ...c,
@@ -113,11 +114,9 @@ export async function POST(req: Request) {
         used: true,
         usedBy: userId,
         usedAt: now,
-        usedLang: String(lang).trim(),
-        usedSeries: String(series).trim(),
+        usedLang: wantLang,
+        usedSeries: wantSeries,
         usedLevel: finalLevel,
-
-        // ✅ list에서 만료 판단 가능하도록 저장
         expiresAt: lic.expiresAt,
       };
 
@@ -126,7 +125,10 @@ export async function POST(req: Request) {
       return { coupon: updated, license: lic };
     });
 
-    return NextResponse.json({ success: true, coupon, license }, { status: 200 });
+    return NextResponse.json(
+      { success: true, coupon, license, serverNowMs: Date.now() },
+      { status: 200 }
+    );
   } catch (e: any) {
     const msg = typeof e?.message === "string" ? e.message : "redeem failed";
     const lower = msg.toLowerCase();
@@ -138,14 +140,6 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: msg }, { status: 400 });
     }
     if (lower.includes("active license exists")) {
-      return NextResponse.json(
-        { error: "You are already studying this textbook. Please wait until it expires." },
-        { status: 400 }
-      );
-    }
-
-    // ✅ Firestore index / FAILED_PRECONDITION → 사용자 메시지로 치환
-    if (lower.includes("failed_precondition") || lower.includes("requires an index")) {
       return NextResponse.json(
         { error: "You are already studying this textbook. Please wait until it expires." },
         { status: 400 }

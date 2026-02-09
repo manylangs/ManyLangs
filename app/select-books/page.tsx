@@ -7,12 +7,12 @@ import { useRouter } from "next/navigation";
 import { Button } from "../../components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "../../components/ui/card";
 import {
-  cleanExpiredLibrary,
   isExpired,
   remainingText,
   upsertLicense,
   type License,
 } from "@/lib/license";
+
 
 /* ================= types ================= */
 
@@ -65,6 +65,15 @@ const PAYMENT_OPTIONS: Array<{
   ];
 
 /* ================= utils ================= */
+async function safeJson(res: Response) {
+  try {
+    const text = await res.text();
+    return text ? JSON.parse(text) : null;
+  } catch {
+    return null;
+  }
+}
+
 
 function getCouponStatus(c: CouponItem) {
   if (c.used) return { text: "Used", color: "#999" };
@@ -169,25 +178,41 @@ export default function SelectBooksPage() {
       return;
     }
 
-    // ✅ (A) 라이브러리 만료 청소 + state 반영 (여기서 aliveLib “1번만” 결정)
-    const aliveLib = cleanExpiredLibrary(userId); // ✅ FIX
-    setLibrary(aliveLib);
+    (async () => {
+      // ✅ (A) Firestore 기준 라이브러리 로드 + aliveLib 확보
+      let aliveLib: LibraryItem[] = [];
+      try {
+        const res = await fetch("/api/licenses/list", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId }),
+        });
+        let data: any = {};
+        try {
+          const text = await res.text();
+          data = text ? JSON.parse(text) : {};
+        } catch {
+          data = {};
+        }
 
-    // ✅ (B) 쿠폰박스 로드 (UI는 서버 sync 결과만 사용)
-    const localCoupons = readLocalCoupons();
-    const aliveCodes = buildAliveCouponCodeSet(aliveLib);
-    const cleanedCoupons = localCoupons.filter((c) => !c.used || aliveCodes.has(c.code));
+        aliveLib = Array.isArray(data.licenses) ? (data.licenses as LibraryItem[]) : [];
+      } catch {
+        aliveLib = [];
+      }
+      setLibrary(aliveLib);
 
-    // ⚠️ UI set은 하지 않는다 (깜빡임 방지)
-    writeLocalCoupons(cleanedCoupons);
+      // ✅ (B) 쿠폰박스 로드 (UI는 서버 sync 결과만 사용)
+      const localCoupons = readLocalCoupons();
+      const aliveCodes = buildAliveCouponCodeSet(aliveLib);
+      const cleanedCoupons = localCoupons.filter((c) => !c.used || aliveCodes.has(c.code));
+      writeLocalCoupons(cleanedCoupons);
 
-    // ✅ (C) 결제 성공 처리: /select-books?checkout=success&session_id=...
-    const params = new URLSearchParams(window.location.search);
-    const checkout = params.get("checkout");
-    const sessionId = params.get("session_id");
+      // ✅ (C) 결제 성공 처리: /select-books?checkout=success&session_id=...
+      const params = new URLSearchParams(window.location.search);
+      const checkout = params.get("checkout");
+      const sessionId = params.get("session_id");
 
-    if (checkout === "success" && sessionId) {
-      (async () => {
+      if (checkout === "success" && sessionId) {
         try {
           setLoading(true);
           setError("");
@@ -198,42 +223,46 @@ export default function SelectBooksPage() {
             body: JSON.stringify({ session_id: sessionId }),
           });
 
-          const data = await res.json();
+          const data = await safeJson(res) ?? {};
+
           if (!res.ok) {
-            setError(data.error || "Checkout complete failed.");
-            return;
+            setError((data as any).error || "Checkout complete failed.");
+          } else {
+            const newCodes: string[] = Array.isArray((data as any).coupons)
+              ? (data as any).coupons
+              : [];
+
+            if (newCodes.length > 0) {
+              setCouponBox((prev) => {
+                const map = new Map(prev.map((c) => [c.code, c]));
+                for (const code of newCodes) {
+                  if (!map.has(code)) map.set(code, { code, used: false });
+                }
+                const next = Array.from(map.values());
+                writeLocalCoupons(next);
+                return next;
+              });
+            }
           }
 
-          const newCodes: string[] = Array.isArray(data.coupons) ? data.coupons : [];
-          if (newCodes.length > 0) {
-            setCouponBox((prev) => {
-              const map = new Map(prev.map((c) => [c.code, c]));
-              for (const code of newCodes) {
-                if (!map.has(code)) map.set(code, { code, used: false });
-              }
-              const next = Array.from(map.values());
-              writeLocalCoupons(next);
-              return next;
-            });
-          }
         } catch {
           setError("Network error.");
         } finally {
           setLoading(false);
+          // ✅ string 고정 (SyntaxError 방지)
           window.history.replaceState({}, "", "/select-books");
         }
-      })();
-    }
+      }
 
-    // ✅ (D) 서버 쿠폰 동기화 (webhook 발급 포함)
-    (async () => {
+      // ✅ (D) 서버 쿠폰 동기화 (webhook 발급 포함)
       try {
         const res = await fetch("/api/coupons/list", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ userId }),
         });
-        const data = await res.json();
+        const data = await safeJson(res);
+
         if (!res.ok) return;
 
         const serverCoupons: CouponItem[] = Array.isArray(data.coupons) ? data.coupons : [];
@@ -269,31 +298,45 @@ export default function SelectBooksPage() {
     })();
   }, [isLoaded, userId, router]);
 
+
   /** 2) ⏱ 자동 제거 타이머 */
   useEffect(() => {
     if (!isLoaded || !userId) return;
 
-    const tick = () => {
-      // (1) 만료 라이선스 제거
-      const aliveLib = cleanExpiredLibrary(userId); // ✅ FIX
-      setLibrary(aliveLib);
+    const tick = async () => {
+      try {
+        const res = await fetch("/api/licenses/list", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId }),
+        });
 
-      // (2) 만료된 "내 사용 쿠폰"(usedSeries 있는 것)도 동시에 제거
-      const localNow = readLocalCoupons();
-      const expiredUsedCodes = buildExpiredUsedCouponCodeSet(localNow, aliveLib);
+        // ✅ json 대신 안전 파싱
+        const data = (await safeJson(res)) ?? {};
+        const aliveLib: LibraryItem[] = Array.isArray((data as any).licenses)
+          ? ((data as any).licenses as LibraryItem[])
+          : [];
 
-      if (expiredUsedCodes.size === 0) return;
+        setLibrary(aliveLib);
 
-      const nextCoupons = localNow.filter((c) => !(c.used && expiredUsedCodes.has(c.code)));
-      setCouponBox(nextCoupons);
-      writeLocalCoupons(nextCoupons);
+        const localNow = readLocalCoupons();
+        const expiredUsedCodes = buildExpiredUsedCouponCodeSet(localNow, aliveLib);
+
+        if (expiredUsedCodes.size === 0) return;
+
+        const nextCoupons = localNow.filter((c) => !(c.used && expiredUsedCodes.has(c.code)));
+        setCouponBox(nextCoupons);
+        writeLocalCoupons(nextCoupons);
+      } catch {
+        // 네트워크/파싱 오류는 타이머에서 조용히 무시
+      }
     };
-
 
     tick();
     const id = window.setInterval(tick, 10_000);
     return () => window.clearInterval(id);
   }, [isLoaded, userId]);
+
 
 
   /** 3) 라이선스 기반 usedBook 필드 보강 */
@@ -362,7 +405,8 @@ export default function SelectBooksPage() {
         }),
       });
 
-      const data = await res.json();
+      const data = await safeJson(res);
+
       if (!res.ok) {
         setError(data.error || "Invalid coupon.");
         return;
@@ -440,17 +484,13 @@ export default function SelectBooksPage() {
         }),
       });
 
-      let data: any = {};
-      try {
-        data = await res.json();
-      } catch {
-        data = {};
-      }
+      const data = (await safeJson(res)) ?? {};
 
       if (!res.ok) {
-        setError(data?.error || "Checkout failed.");
+        setError((data as any).error || "Checkout failed.");
         return;
       }
+
 
       if (data?.url) {
         window.location.href = data.url;
