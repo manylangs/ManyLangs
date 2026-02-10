@@ -2,7 +2,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useAuth } from "@clerk/nextjs";
+import { useAuth, useClerk, useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { Button } from "../../components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "../../components/ui/card";
@@ -12,7 +12,6 @@ import {
   upsertLicense,
   type License,
 } from "@/lib/license";
-
 
 /* ================= types ================= */
 
@@ -73,7 +72,6 @@ async function safeJson(res: Response) {
     return null;
   }
 }
-
 
 function getCouponStatus(c: CouponItem) {
   if (c.used) return { text: "Used", color: "#999" };
@@ -157,12 +155,13 @@ function buildExpiredUsedCouponCodeSet(
   return expired;
 }
 
-
 /* ================= page ================= */
 
 export default function SelectBooksPage() {
   const { userId, isLoaded } = useAuth();
   const router = useRouter();
+  const { signOut } = useClerk();
+  const { user, isSignedIn, isLoaded: isUserLoaded } = useUser();
 
   const [library, setLibrary] = useState<LibraryItem[]>([]);
   const [couponBox, setCouponBox] = useState<CouponItem[]>([]);
@@ -177,6 +176,7 @@ export default function SelectBooksPage() {
 
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+
   /** ✅ (NEW) 계정 변경/로그아웃 시 localStorage 캐시 초기화 */
   useEffect(() => {
     if (!isLoaded) return;
@@ -247,7 +247,6 @@ export default function SelectBooksPage() {
       });
       writeLocalCoupons(cleanedCoupons);
 
-
       // ✅ (C) 결제 성공 처리: /select-books?checkout=success&session_id=...
       const params = new URLSearchParams(window.location.search);
       const checkout = params.get("checkout");
@@ -264,7 +263,7 @@ export default function SelectBooksPage() {
             body: JSON.stringify({ session_id: sessionId }),
           });
 
-          const data = await safeJson(res) ?? {};
+          const data = (await safeJson(res)) ?? {};
 
           if (!res.ok) {
             setError((data as any).error || "Checkout complete failed.");
@@ -285,7 +284,6 @@ export default function SelectBooksPage() {
               });
             }
           }
-
         } catch {
           setError("Network error.");
         } finally {
@@ -306,7 +304,9 @@ export default function SelectBooksPage() {
 
         if (!res.ok) return;
 
-        const serverCoupons: CouponItem[] = Array.isArray(data.coupons) ? data.coupons : [];
+        const serverCoupons: CouponItem[] = Array.isArray((data as any)?.coupons)
+          ? ((data as any).coupons as CouponItem[])
+          : [];
 
         // ✅ 여기서도 만료기준은 “이미 위에서 확정한 aliveLib” 사용
         setCouponBox((prev) => {
@@ -333,13 +333,11 @@ export default function SelectBooksPage() {
           writeLocalCoupons(finalList);
           return finalList;
         });
-
       } catch {
         // ignore
       }
     })();
   }, [isLoaded, userId, router]);
-
 
   /** 2) ⏱ 자동 제거 타이머 */
   useEffect(() => {
@@ -364,7 +362,6 @@ export default function SelectBooksPage() {
         const localNow = readLocalCoupons();
         const expiredUsedCodes = buildExpiredUsedCouponCodeSet(localNow, aliveLib, userId);
 
-
         if (expiredUsedCodes.size === 0) return;
 
         const nextCoupons = localNow.filter((c) => !(c.used && expiredUsedCodes.has(c.code)));
@@ -379,8 +376,6 @@ export default function SelectBooksPage() {
     const id = window.setInterval(tick, 10_000);
     return () => window.clearInterval(id);
   }, [isLoaded, userId]);
-
-
 
   /** 3) 라이선스 기반 usedBook 필드 보강 */
   useEffect(() => {
@@ -451,22 +446,20 @@ export default function SelectBooksPage() {
       const data = await safeJson(res);
 
       if (!res.ok) {
-        setError(data.error || "Invalid coupon.");
+        setError((data as any)?.error || "Invalid coupon.");
         return;
       }
 
-      const lic = data.license as LibraryItem | undefined;
-      const cp = data.coupon as CouponItem | undefined;
+      const lic = (data as any).license as LibraryItem | undefined;
+      const cp = (data as any).coupon as CouponItem | undefined;
 
       if (!lic || !lic.expiresAt) {
         setError("Redeem succeeded, but license missing.");
         return;
       }
 
-      const nextLib = upsertLicense(lic, userId)
-        .filter((x) => !isExpired(x.expiresAt)); // ✅ expired 즉시 제거
+      const nextLib = upsertLicense(lic, userId).filter((x) => !isExpired(x.expiresAt)); // ✅ expired 즉시 제거
       setLibrary(nextLib);
-
 
       setCouponBox((prev) => {
         const map = new Map(prev.map((c) => [c.code, c]));
@@ -536,9 +529,8 @@ export default function SelectBooksPage() {
         return;
       }
 
-
-      if (data?.url) {
-        window.location.href = data.url;
+      if ((data as any)?.url) {
+        window.location.href = (data as any).url;
       } else {
         setError("Checkout URL missing.");
       }
@@ -559,16 +551,10 @@ export default function SelectBooksPage() {
     router.push(`/viewer/${item.lang}/${item.series}${levelPath}/001`);
   }
 
-  const filteredLibrary = library.filter(
-    (i) => i.lang === targetLang && !isExpired(i.expiresAt)
-  );
-
+  const filteredLibrary = library.filter((i) => i.lang === targetLang && !isExpired(i.expiresAt));
 
   // ✅ Coupon UX: sort (unused first) + pagination (10/page)
-  const sortedCoupons = [
-    ...couponBox.filter((c) => !c.used),
-    ...couponBox.filter((c) => c.used),
-  ];
+  const sortedCoupons = [...couponBox.filter((c) => !c.used), ...couponBox.filter((c) => c.used)];
 
   const couponTotal = sortedCoupons.length;
   const couponTotalPages = Math.max(1, Math.ceil(couponTotal / COUPON_PAGE_SIZE));
@@ -578,227 +564,273 @@ export default function SelectBooksPage() {
   const pageCoupons = sortedCoupons.slice(couponStart, couponStart + COUPON_PAGE_SIZE);
 
   return (
-    <main className="flex justify-center px-4 py-8">
-      <div className="w-full max-w-md space-y-6">
-        {/* Language */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Language you want to learn</CardTitle>
-          </CardHeader>
-          <CardContent className="pt-0">
-            <select
-              value={targetLang}
-              onChange={(e) => setTargetLang(e.target.value)}
-              className="w-full rounded border px-2 py-1"
-            >
-              {LANGUAGE_OPTIONS.map((l) => (
-                <option key={l.value} value={l.value}>
-                  {l.label}
-                </option>
-              ))}
-            </select>
-          </CardContent>
-        </Card>
+    <main className="px-4 py-8">
+      {isUserLoaded && isSignedIn && (
+        <div className="sticky top-0 z-40 border-b bg-white/80 backdrop-blur">
+          <div className="mx-auto flex max-w-5xl items-center justify-center px-4 py-2">
+            <div className="flex items-center gap-6">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => router.push("/")}
+                className="h-8"
+              >
+                Home
+              </Button>
 
-        {/* My Library */}
-        <Card>
-          <CardHeader>
-            <CardTitle>My Library</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-3">
-            {filteredLibrary.length === 0 && (
-              <p className="text-sm text-gray-500">No active textbooks.</p>
-            )}
-            {filteredLibrary.map((item, idx) => (
-              <div key={idx} className="flex items-center justify-between rounded border px-3 py-2">
-                <div className="text-sm">
-                  {item.series.toUpperCase()}
-                  {item.level !== "all" && ` · ${item.level.toUpperCase()}`}
-                </div>
-                <div className="flex items-center gap-3">
-                  <span
-                    style={{
-                      fontSize: 12,
-                      color: remainingText(item.expiresAt) === "Expired" ? "#d00" : "#555",
-                    }}
-                  >
-                    {remainingText(item.expiresAt)}
-                  </span>
-                  <Button size="sm" onClick={() => openBook(item)}>
-                    Open
-                  </Button>
-                </div>
+              <div className="text-xs text-gray-500">
+                General inquiries:&nbsp;
+                <a className="underline" href="mailto:manylangs.help@gmail.com">
+                  manylangs.help@gmail.com
+                </a>
               </div>
-            ))}
-          </CardContent>
-        </Card>
-
-        {/* My Coupons */}
-        <Card>
-          <CardHeader>
-            <div className="flex items-center justify-between">
-              <CardTitle>My Coupons</CardTitle>
-              <span className="text-xs text-gray-400">
-                Tap/click a code to copy
-              </span>
             </div>
-          </CardHeader>
+          </div>
+        </div>
+      )}
 
-          <CardContent className="space-y-2">
-            {couponTotal === 0 && <p className="text-sm text-gray-500">No coupons available.</p>}
-
-            {/* Header: total + pagination */}
-            {couponTotal > 0 && (
-              <div className="flex items-center justify-between rounded border px-3 py-2 text-sm">
-                <div>
-                  Total: <b>{couponTotal}</b>
-                </div>
-
-                <div className="flex items-center gap-2">
-                  <button
-                    type="button"
-                    className="rounded border px-2 py-1 disabled:opacity-50"
-                    onClick={() => setCouponPage((p) => Math.max(1, p - 1))}
-                    disabled={safeCouponPage === 1}
-                    aria-label="Previous page"
-                  >
-                    {"<"}
-                  </button>
-
-                  <span className="text-xs text-gray-600">
-                    {safeCouponPage} / {couponTotalPages}
-                  </span>
-
-                  <button
-                    type="button"
-                    className="rounded border px-2 py-1 disabled:opacity-50"
-                    onClick={() => setCouponPage((p) => Math.min(couponTotalPages, p + 1))}
-                    disabled={safeCouponPage === couponTotalPages}
-                    aria-label="Next page"
-                  >
-                    {">"}
-                  </button>
-                </div>
-              </div>
-            )}
-
-            {/* List: paged coupons */}
-            {pageCoupons.map((c, idx) => {
-              const status = getCouponStatus(c);
-              const usedAt = c.used ? formatUsedAt(c.usedAt) : "";
-              const usedBook = formatUsedBook(c);
-
-              return (
-                <div
-                  key={`${c.code}-${idx}`}
-                  className="flex justify-between rounded border px-3 py-2 text-sm"
+      {/* ✅ 반응형 레이아웃 wrapper (여기만 변경) */}
+      <div className="mx-auto w-full max-w-5xl pt-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {/* LEFT COLUMN */}
+          <div className="space-y-6">
+            {/* Language */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Language you want to learn</CardTitle>
+              </CardHeader>
+              <CardContent className="pt-0">
+                <select
+                  value={targetLang}
+                  onChange={(e) => setTargetLang(e.target.value)}
+                  className="w-full rounded border px-2 py-1"
                 >
-                  <button
-                    type="button"
-                    onClick={() => copyToClipboard(c.code)}
-                    className="text-left hover:underline"
-                    title="Click to copy"
-                  >
-                    {c.code}
-                  </button>
+                  {LANGUAGE_OPTIONS.map((l) => (
+                    <option key={l.value} value={l.value}>
+                      {l.label}
+                    </option>
+                  ))}
+                </select>
+              </CardContent>
+            </Card>
 
-                  <div style={{ color: status.color, textAlign: "right" }}>
-                    {status.text}
-                    {c.used && usedAt ? ` · ${usedAt}` : ""}
-                    {c.used && usedBook ? (
-                      <div style={{ fontSize: 11, color: "#777" }}>{usedBook}</div>
-                    ) : null}
+            {/* My Library */}
+            <Card>
+              <CardHeader>
+                <CardTitle>My Library</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                {filteredLibrary.length === 0 && (
+                  <p className="text-sm text-gray-500">No active textbooks.</p>
+                )}
+                {filteredLibrary.map((item, idx) => (
+                  <div
+                    key={idx}
+                    className="flex items-center justify-between rounded border px-3 py-2"
+                  >
+                    <div className="text-sm">
+                      {item.series.toUpperCase()}
+                      {item.level !== "all" && ` · ${item.level.toUpperCase()}`}
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <span
+                        style={{
+                          fontSize: 12,
+                          color:
+                            remainingText(item.expiresAt) === "Expired" ? "#d00" : "#555",
+                        }}
+                      >
+                        {remainingText(item.expiresAt)}
+                      </span>
+                      <Button size="sm" onClick={() => openBook(item)}>
+                        Open
+                      </Button>
+                    </div>
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+
+            {/* My Coupons */}
+            <Card>
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <CardTitle>My Coupons</CardTitle>
+                  <span className="text-xs text-gray-400 ml-2 whitespace-nowrap">
+                    Tap/click a code to copy
+                  </span>
+                </div>
+              </CardHeader>
+
+              <CardContent className="space-y-2">
+                {couponTotal === 0 && (
+                  <p className="text-sm text-gray-500">No coupons available.</p>
+                )}
+
+                {/* Header: total + pagination */}
+                {couponTotal > 0 && (
+                  <div className="flex items-center justify-between rounded border px-3 py-2 text-sm">
+                    <div>
+                      Total: <b>{couponTotal}</b>
+                    </div>
+
+                    <div className="flex items-center gap-2">
+                      <button
+                        type="button"
+                        className="rounded border px-2 py-1 disabled:opacity-50"
+                        onClick={() => setCouponPage((p) => Math.max(1, p - 1))}
+                        disabled={safeCouponPage === 1}
+                        aria-label="Previous page"
+                      >
+                        {"<"}
+                      </button>
+
+                      <span className="text-xs text-gray-600">
+                        {safeCouponPage} / {couponTotalPages}
+                      </span>
+
+                      <button
+                        type="button"
+                        className="rounded border px-2 py-1 disabled:opacity-50"
+                        onClick={() =>
+                          setCouponPage((p) => Math.min(couponTotalPages, p + 1))
+                        }
+                        disabled={safeCouponPage === couponTotalPages}
+                        aria-label="Next page"
+                      >
+                        {">"}
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {/* List: paged coupons */}
+                {pageCoupons.map((c, idx) => {
+                  const status = getCouponStatus(c);
+                  const usedAt = c.used ? formatUsedAt(c.usedAt) : "";
+                  const usedBook = formatUsedBook(c);
+
+                  return (
+                    <div
+                      key={`${c.code}-${idx}`}
+                      className="flex justify-between rounded border px-3 py-2 text-sm"
+                    >
+                      <button
+                        type="button"
+                        onClick={() => copyToClipboard(c.code)}
+                        className="text-left hover:underline"
+                        title="Click to copy"
+                      >
+                        {c.code}
+                      </button>
+
+                      <div style={{ color: status.color, textAlign: "right" }}>
+                        {status.text}
+                        {c.used && usedAt ? ` · ${usedAt}` : ""}
+                        {c.used && usedBook ? (
+                          <div style={{ fontSize: 11, color: "#777" }}>{usedBook}</div>
+                        ) : null}
+                      </div>
+                    </div>
+                  );
+                })}
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* RIGHT COLUMN */}
+          <div className="space-y-6">
+            {/* Add textbook */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Add a textbook</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <select
+                  value={book}
+                  onChange={(e) => {
+                    const next = e.target.value;
+                    setBook(next);
+                    setLevel(SERIES_CONFIG[next]?.hasLevel ? "a1" : "");
+                  }}
+                  className="block w-full rounded border px-2 py-1"
+                >
+                  <option value="">Select textbook</option>
+                  {Object.entries(SERIES_CONFIG).map(([k, v]) => (
+                    <option key={k} value={k}>
+                      {v.label}
+                    </option>
+                  ))}
+                </select>
+
+                {book && SERIES_CONFIG[book].hasLevel && (
+                  <select
+                    value={level}
+                    onChange={(e) => setLevel(e.target.value)}
+                    className="block w-full rounded border px-2 py-1"
+                  >
+                    {LEVELS.map((l) => (
+                      <option key={l} value={l.toLowerCase()}>
+                        {l}
+                      </option>
+                    ))}
+                  </select>
+                )}
+
+                <input
+                  value={coupon}
+                  onChange={(e) => setCoupon(e.target.value)}
+                  placeholder="Coupon code"
+                  className="block w-full rounded border px-2 py-1"
+                />
+
+                <p className="text-xs text-gray-500">
+                  Coupons can be shared with others. However, ManyLangs cannot individually
+                  track whether a shared coupon has been used.
+                </p>
+
+                {/* ✅ 결제 금액 선택 + 쿠폰 수 설명 */}
+                <div className="space-y-2">
+                  <div className="text-sm font-medium">Choose a plan</div>
+                  <select
+                    value={payAmount}
+                    onChange={(e) => setPayAmount(e.target.value as Amount)}
+                    className="block w-full rounded border px-2 py-1"
+                  >
+                    {PAYMENT_OPTIONS.map((p) => (
+                      <option key={p.amount} value={p.amount}>
+                        {p.label} — {p.desc}
+                      </option>
+                    ))}
+                  </select>
+
+                  <div className="space-y-1 text-xs text-gray-500">
+                    {PAYMENT_OPTIONS.map((p) => (
+                      <div key={p.amount}>
+                        {p.label} → {p.coupons} coupons
+                      </div>
+                    ))}
                   </div>
                 </div>
-              );
-            })}
-          </CardContent>
-        </Card>
 
-        {/* Add textbook */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Add a textbook</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <select
-              value={book}
-              onChange={(e) => {
-                const next = e.target.value;
-                setBook(next);
-                setLevel(SERIES_CONFIG[next]?.hasLevel ? "a1" : "");
-              }}
-              className="block w-full rounded border px-2 py-1"
-            >
-              <option value="">Select textbook</option>
-              {Object.entries(SERIES_CONFIG).map(([k, v]) => (
-                <option key={k} value={k}>
-                  {v.label}
-                </option>
-              ))}
-            </select>
+                {error && <p className="text-sm text-red-600">{error}</p>}
 
-            {book && SERIES_CONFIG[book].hasLevel && (
-              <select
-                value={level}
-                onChange={(e) => setLevel(e.target.value)}
-                className="block w-full rounded border px-2 py-1"
-              >
-                {LEVELS.map((l) => (
-                  <option key={l} value={l.toLowerCase()}>
-                    {l}
-                  </option>
-                ))}
-              </select>
-            )}
+                <Button onClick={activateCoupon} disabled={loading} className="w-full">
+                  {loading ? "Processing..." : "Add with Coupon"}
+                </Button>
 
-            <input
-              value={coupon}
-              onChange={(e) => setCoupon(e.target.value)}
-              placeholder="Coupon code"
-              className="block w-full rounded border px-2 py-1"
-            />
-
-            <p className="text-xs text-gray-500">
-              Coupons can be shared with others. However, ManyLangs cannot individually track whether
-              a shared coupon has been used.
-            </p>
-
-            {/* ✅ 결제 금액 선택 + 쿠폰 수 설명 */}
-            <div className="space-y-2">
-              <div className="text-sm font-medium">Choose a plan</div>
-              <select
-                value={payAmount}
-                onChange={(e) => setPayAmount(e.target.value as Amount)}
-                className="block w-full rounded border px-2 py-1"
-              >
-                {PAYMENT_OPTIONS.map((p) => (
-                  <option key={p.amount} value={p.amount}>
-                    {p.label} — {p.desc}
-                  </option>
-                ))}
-              </select>
-
-              <div className="text-xs text-gray-500 space-y-1">
-                {PAYMENT_OPTIONS.map((p) => (
-                  <div key={p.amount}>
-                    {p.label} → {p.coupons} coupons
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {error && <p className="text-sm text-red-600">{error}</p>}
-
-            <Button onClick={activateCoupon} disabled={loading} className="w-full">
-              {loading ? "Processing..." : "Add with Coupon"}
-            </Button>
-
-            <Button variant="outline" onClick={startPayment} className="w-full" disabled={loading}>
-              Buy with Card
-            </Button>
-          </CardContent>
-        </Card>
+                <Button
+                  variant="outline"
+                  onClick={startPayment}
+                  className="w-full"
+                  disabled={loading}
+                >
+                  Buy with Card
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
       </div>
     </main>
   );
