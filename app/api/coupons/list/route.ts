@@ -5,37 +5,41 @@ import type { Coupon } from "@/lib/coupons";
 
 export const runtime = "nodejs";
 
+function toMs(v: any): number {
+  if (!v) return 0;
+  if (typeof v === "number") return v;
+  if (typeof v?.toMillis === "function") return v.toMillis(); // Firestore Timestamp
+  const n = Number(v);
+  return Number.isFinite(n) ? n : 0;
+}
+
 function pick(c: Coupon) {
   return {
     code: c.code,
     used: !!c.used,
-    issuedAt: c.issuedAt,
-    usedAt: c.usedAt ?? null,
-    usedBy: c.usedBy ?? null,
+    issuedAt: toMs((c as any).issuedAt),
+    usedAt: toMs((c as any).usedAt) || null,
+    usedBy: (c as any).usedBy ?? null,
 
-    usedLang: c.usedLang ?? null,
-    usedSeries: c.usedSeries ?? null,
-    usedLevel: c.usedLevel ?? null,
+    usedLang: (c as any).usedLang ?? null,
+    usedSeries: (c as any).usedSeries ?? null,
+    usedLevel: (c as any).usedLevel ?? null,
   };
 }
 
 function timeKey(c: Coupon) {
-  return Math.max(c.usedAt ?? 0, c.issuedAt ?? 0);
+  const usedAt = toMs((c as any).usedAt);
+  const issuedAt = toMs((c as any).issuedAt);
+  return Math.max(usedAt, issuedAt);
 }
 
-// ✅ 서버에서 "만료된 내 used 쿠폰" 제거용
-function isExpiredUsedCoupon(c: Coupon) {
-  // 공유 used(라이선스 없을 수 있음)는 숨기지 않음
-  if (!c.used) return false;
-  if (!c.usedSeries) return false;
-
-  const expiresAt = (c as any)?.expiresAt as number | undefined;
-
-  // ✅ (핵심) expiresAt 없는 과거 used 쿠폰은 만료로 간주 → 숨김
-  if (!expiresAt) return true;
-
-  return Date.now() > expiresAt;
-}
+/**
+ * ✅ 중요:
+ * - 만료/차단/남은시간 판단은 "licenses"가 담당
+ * - coupons/list에서는 절대 "만료 used 쿠폰 숨김" 같은 필터를 하지 않는다.
+ * - (호출/타입 꼬임 방지용으로 userId 파라미터는 남겨둠)
+ */
+// (삭제)
 
 export async function POST(req: Request) {
   let body: { userId?: string };
@@ -73,10 +77,45 @@ export async function POST(req: Request) {
       }
     }
 
+    /* =============================== */
+    /* ✅ (변경) B가 사용한 쿠폰은 "살아있는 라이선스"가 있을 때만 노출 */
+    /* - A(발급자) 화면: 미사용 쿠폰만
+       - B(사용자) 화면: usedBy=userId && used=true && (licenses에 살아있음) 일 때만
+    */
+    const now = Date.now();
+    const licSnap = await db
+      .collection("licenses")
+      .doc(userId)
+      .collection("items")
+      .where("expiresAt", ">", now)
+      .get();
+
+    const aliveCouponCodes = new Set<string>();
+    for (const d of licSnap.docs) {
+      const data = d.data() as any;
+      if (data?.source === "coupon" && typeof data?.code === "string") {
+        aliveCouponCodes.add(data.code);
+      }
+    }
+    /* =============================== */
+
     const coupons = Array.from(map.values())
-      // ✅ (핵심) 만료된 내 used 쿠폰 제거
-      .filter((c) => !isExpiredUsedCoupon(c))
-      // ✅ 정렬: 미사용 먼저, used는 뒤로 + 최신(usedAt/issuedAt) 우선
+      /* =============================== */
+      /* ✅ (변경) 필터 추가(다른 건 그대로) */
+      .filter((c) => {
+        const ownerId = (c as any).ownerId ?? null;
+        const usedBy = (c as any).usedBy ?? null;
+        const used = !!(c as any).used;
+
+        // A: 발급자 → 미사용만 유지
+        if (ownerId === userId && !used) return true;
+
+        // B: 사용자 → 내가 사용했고, 라이선스가 살아있을 때만 유지
+        if (usedBy === userId && used) return aliveCouponCodes.has(c.code);
+
+        return false;
+      })
+      /* =============================== */
       .sort((a, b) => {
         const au = !!a.used;
         const bu = !!b.used;
