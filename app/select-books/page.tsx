@@ -169,6 +169,29 @@ export default function SelectBooksPage() {
 
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  /** ✅ (NEW) 계정 변경/로그아웃 시 localStorage 캐시 초기화 */
+  useEffect(() => {
+    if (!isLoaded) return;
+
+    const key = "ml_uid";
+    const prev = localStorage.getItem(key);
+
+    // 로그아웃
+    if (!userId) {
+      localStorage.removeItem("library");
+      localStorage.removeItem("couponBox");
+      localStorage.removeItem(key);
+      return;
+    }
+
+    // 계정 변경
+    if (prev && prev !== userId) {
+      localStorage.removeItem("library");
+      localStorage.removeItem("couponBox");
+    }
+
+    localStorage.setItem(key, userId);
+  }, [isLoaded, userId]);
 
   /** 1) 초기 로드 + checkout success 처리 + 서버 coupon sync */
   useEffect(() => {
@@ -420,8 +443,10 @@ export default function SelectBooksPage() {
         return;
       }
 
-      const nextLib = upsertLicense(lic, userId); // ✅ FIX
+      const nextLib = upsertLicense(lic, userId)
+        .filter((x) => !isExpired(x.expiresAt)); // ✅ expired 즉시 제거
       setLibrary(nextLib);
+
 
       setCouponBox((prev) => {
         const map = new Map(prev.map((c) => [c.code, c]));
@@ -514,7 +539,10 @@ export default function SelectBooksPage() {
     router.push(`/viewer/${item.lang}/${item.series}${levelPath}/001`);
   }
 
-  const filteredLibrary = library.filter((i) => i.lang === targetLang);
+  const filteredLibrary = library.filter(
+    (i) => i.lang === targetLang && !isExpired(i.expiresAt)
+  );
+
 
   // ✅ Coupon UX: sort (unused first) + pagination (10/page)
   const sortedCoupons = [
