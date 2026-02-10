@@ -132,7 +132,11 @@ function buildAliveCouponCodeSet(aliveLib: LibraryItem[]) {
 }
 
 /** ✅ expiredUsedCodes → 만료로 정리된(=aliveLib에 없는) "내 사용 쿠폰" 코드 집합 */
-function buildExpiredUsedCouponCodeSet(localCoupons: CouponItem[], aliveLib: LibraryItem[]) {
+function buildExpiredUsedCouponCodeSet(
+  localCoupons: CouponItem[],
+  aliveLib: LibraryItem[],
+  currentUserId: string
+) {
   const aliveCodes = buildAliveCouponCodeSet(aliveLib);
   const expired = new Set<string>();
 
@@ -140,8 +144,11 @@ function buildExpiredUsedCouponCodeSet(localCoupons: CouponItem[], aliveLib: Lib
     if (!c?.code) continue;
     if (!c.used) continue;
 
-    // ✅ "내가 교재로 사용한 쿠폰"(usedSeries 있는 케이스)만 만료 숨김 대상
-    // (공유로 사용한 쿠폰은 라이선스가 없을 수도 있으니 숨기지 않음)
+    // ✅ "내가 사용한 쿠폰"만 만료 정리 대상
+    // (A가 발행했고 B가 사용한 shared coupon은 A 화면에서 제거 대상이 아님)
+    if (c.usedBy !== currentUserId) continue;
+
+    // ✅ 내가 교재로 사용한 쿠폰만(메타 있는 케이스)
     if (!c.usedSeries) continue;
 
     if (!aliveCodes.has(c.code)) expired.add(c.code);
@@ -149,6 +156,7 @@ function buildExpiredUsedCouponCodeSet(localCoupons: CouponItem[], aliveLib: Lib
 
   return expired;
 }
+
 
 /* ================= page ================= */
 
@@ -227,8 +235,18 @@ export default function SelectBooksPage() {
       // ✅ (B) 쿠폰박스 로드 (UI는 서버 sync 결과만 사용)
       const localCoupons = readLocalCoupons();
       const aliveCodes = buildAliveCouponCodeSet(aliveLib);
-      const cleanedCoupons = localCoupons.filter((c) => !c.used || aliveCodes.has(c.code));
+      const cleanedCoupons = localCoupons.filter((c) => {
+        // 미사용 쿠폰은 항상 유지
+        if (!c.used) return true;
+
+        // ✅ 남이 사용한(shared) 쿠폰은 A 화면에서 지우지 않음
+        if (c.usedBy && c.usedBy !== userId) return true;
+
+        // ✅ 내가 사용한 쿠폰만 라이선스(aliveLib) 없으면 만료로 정리
+        return aliveCodes.has(c.code);
+      });
       writeLocalCoupons(cleanedCoupons);
+
 
       // ✅ (C) 결제 성공 처리: /select-books?checkout=success&session_id=...
       const params = new URLSearchParams(window.location.search);
@@ -291,10 +309,6 @@ export default function SelectBooksPage() {
         const serverCoupons: CouponItem[] = Array.isArray(data.coupons) ? data.coupons : [];
 
         // ✅ 여기서도 만료기준은 “이미 위에서 확정한 aliveLib” 사용
-        const localNow = readLocalCoupons();
-        const expiredUsedCodes2 = buildExpiredUsedCouponCodeSet(localNow, aliveLib);
-
-        // ✅ "서버가 단일 진실" → serverCoupons 기준으로 덮어쓰기
         setCouponBox((prev) => {
           const prevMap = new Map(prev.map((c) => [c.code, c]));
 
@@ -309,12 +323,17 @@ export default function SelectBooksPage() {
             } as CouponItem;
           });
 
-          // ✅ 만료된 "내 사용 쿠폰"만 제거
-          const finalList = mergedServer.filter((c) => !(c.used && expiredUsedCodes2.has(c.code)));
+          // ✅ 핵심: localNow 말고 "mergedServer" 기준으로 만료 제거 대상 계산
+          const expiredUsedCodes2 = buildExpiredUsedCouponCodeSet(mergedServer, aliveLib, userId);
+
+          const finalList = mergedServer.filter(
+            (c) => !(c.used && expiredUsedCodes2.has(c.code))
+          );
 
           writeLocalCoupons(finalList);
           return finalList;
         });
+
       } catch {
         // ignore
       }
@@ -343,7 +362,8 @@ export default function SelectBooksPage() {
         setLibrary(aliveLib);
 
         const localNow = readLocalCoupons();
-        const expiredUsedCodes = buildExpiredUsedCouponCodeSet(localNow, aliveLib);
+        const expiredUsedCodes = buildExpiredUsedCouponCodeSet(localNow, aliveLib, userId);
+
 
         if (expiredUsedCodes.size === 0) return;
 
