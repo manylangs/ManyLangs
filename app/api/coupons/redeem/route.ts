@@ -30,7 +30,9 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "missing required fields" }, { status: 400 });
   }
 
-  const couponCode = String(code).trim();
+  // ✅ (수정 1) 쿠폰코드 대문자 정규화 (발급 코드가 대문자일 때 Firestore doc id 매칭)
+  const couponCode = String(code).trim().toUpperCase();
+
   const finalLevel = series === "voca" || series === "idiom" ? "all" : String(level).trim();
 
   try {
@@ -45,11 +47,7 @@ export async function POST(req: Request) {
 
       const c = snap.data() as Coupon;
 
-      // 소유자 체크
-      if (c.ownerId !== userId) {
-        throw new Error("Invalid coupon code");
-      }
-
+      // ✅ 쿠폰 공유 허용: ownerId 체크 제거 (최초 1회만 사용 가능)
       if (c.used) {
         throw new Error("Coupon already used");
       }
@@ -59,8 +57,8 @@ export async function POST(req: Request) {
       const wantLang = String(lang).trim();
       const wantSeries = String(series).trim();
 
-      // === 🔑 중복 차단 기준: Firestore licenses ===
-      const licDocId = `${wantLang}_${wantSeries}_${finalLevel}`;
+      // ✅ (수정 2) licenses/{userId}/items/{series_level} 로 고정 (lang 제거)
+      const licDocId = `${wantSeries}_${finalLevel}`;
       const licRef = db.collection("licenses").doc(userId).collection("items").doc(licDocId);
       const licSnap = await tx.get(licRef);
 
@@ -90,7 +88,7 @@ export async function POST(req: Request) {
         issuedAt: now,
       };
 
-      console.log("[LICENSE WRITE]", licDocId);
+      console.log("[LICENSE WRITE]", userId, licDocId);
 
       tx.set(
         licRef,
