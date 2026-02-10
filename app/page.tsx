@@ -37,20 +37,16 @@ export default function HomePage() {
         {/* 🔐 로그인 상태 */}
         {userId ? (
           <div style={{ display: "flex", gap: 12 }}>
+            <Link href="/select-books">
+              <button style={btnPrimary}>Go to Library</button>
+            </Link>
+
             <Link href="/logout">
               <button style={btnSecondary}>Logout</button>
             </Link>
 
             <Link href="/delete-account">
-              <button
-                style={{
-                  ...btnSecondary,
-                  color: "#dc2626",
-                  borderColor: "#dc2626",
-                }}
-              >
-                Delete account
-              </button>
+              <button style={btnDangerOutline}>Delete account</button>
             </Link>
           </div>
         ) : (
@@ -70,21 +66,36 @@ export default function HomePage() {
   );
 }
 
-const btnPrimary = {
+const baseBtn = {
   padding: "10px 16px",
   fontSize: 14,
   borderRadius: 6,
-  border: "none",
+  cursor: "pointer",
+} as const;
+
+const btnPrimary = {
+  ...baseBtn,
+  borderWidth: 0,
+  borderStyle: "solid",
+  borderColor: "transparent",
   background: "#111",
   color: "#fff",
-  cursor: "pointer",
-};
+} as const;
 
 const btnSecondary = {
-  padding: "10px 16px",
-  fontSize: 14,
-  borderRadius: 6,
-  border: "1px solid #ccc",
+  ...baseBtn,
+  borderWidth: 1,
+  borderStyle: "solid",
+  borderColor: "#ccc",
   background: "#fff",
-  cursor: "pointer",
-};
+  color: "#111",
+} as const;
+
+const btnDangerOutline = {
+  ...baseBtn,
+  borderWidth: 1,
+  borderStyle: "solid",
+  borderColor: "#dc2626",
+  background: "#fff",
+  color: "#dc2626",
+} as const;
