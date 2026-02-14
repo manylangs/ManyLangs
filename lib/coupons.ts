@@ -29,6 +29,7 @@ export const COUPONS: Coupon[] = g.__COUPONS__;
 
 /* ================= price → qty mapping ================= */
 
+// (레거시) 숫자 금액 기반 매핑 - 참고용
 export const PRICE_TO_COUPON_QTY: Record<number, number> = {
   3: 2,
   5: 4,
@@ -36,6 +37,23 @@ export const PRICE_TO_COUPON_QTY: Record<number, number> = {
   50: 60,
   100: 150,
 };
+
+// ✅ (단일 소스) Stripe priceId 기반 매핑
+export const PRICEID_TO_COUPON_QTY: Record<string, number> = {
+  "price_1SwyADCE7RyeZQ48EmhuYbWZ": 2,   // $3
+  "price_1Sl5zQCE7RyeZQ48RIJ6IXcU": 4,   // $5
+  "price_1SpPuiCE7RyeZQ48ha3skJXV": 20,  // $20
+  "price_1SpPwtCE7RyeZQ48Z7gtcD0M": 60,  // $50
+  "price_1SpPypCE7RyeZQ48B3mnIHSB": 150, // $100
+};
+
+// ✅ 앞으로 서버는 무조건 이것만 사용
+export function qtyFromPriceId(priceId: string) {
+  const key = String(priceId ?? "").trim();
+  const qty = PRICEID_TO_COUPON_QTY[key];
+  if (!qty) throw new Error(`Unsupported priceId: ${key}`);
+  return qty;
+}
 
 /* ================= create ================= */
 
