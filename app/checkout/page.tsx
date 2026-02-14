@@ -18,12 +18,8 @@ export default function CheckoutPage() {
       return;
     }
 
-    // 2️⃣ 이미 라이선스 있음 → 재결제 차단
-    const licensed = localStorage.getItem("licensed");
-    if (licensed === "true") {
-      router.replace("/select-books");
-      return;
-    }
+    // 2️⃣ (기존 licensed localStorage 체크 제거)
+    // 재결제 차단은 /select-books에서 Firestore 라이선스 기준으로 처리
   }, [isLoaded, userId, router]);
 
   const startCheckout = async () => {
@@ -40,9 +36,7 @@ export default function CheckoutPage() {
   return (
     <main style={{ padding: 24 }}>
       <h2>결제 페이지</h2>
-      <button onClick={startCheckout}>
-        Stripe 결제하기
-      </button>
+      <button onClick={startCheckout}>Stripe 결제하기</button>
     </main>
   );
 }
