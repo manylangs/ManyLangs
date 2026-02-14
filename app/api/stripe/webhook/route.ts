@@ -1,23 +1,23 @@
 // app/api/stripe/webhook/route.ts
 
 import Stripe from "stripe";
-import { headers } from "next/headers";
 import { NextResponse } from "next/server";
-import { createCoupons } from "@/lib/coupons";
+import { createCoupons, type Coupon } from "@/lib/coupons";
 import { PRICE_TO_COUPON_QTY } from "@/lib/pricing";
 
 export const runtime = "nodejs";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
-// ✅ dev용 중복 처리 방지(웹훅 재시도 대비) - 인메모리
+// ✅ dev용 중복 처리 방지(웹훅 재시도 대비) - 인메모리(사이클3에서 Firestore로 교체 예정)
 const g = globalThis as any;
 g.__STRIPE_HANDLED__ ||= new Set<string>();
 const HANDLED: Set<string> = g.__STRIPE_HANDLED__;
 
 export async function POST(req: Request) {
-  const sig = (await headers()).get("stripe-signature");
+  const sig = req.headers.get("stripe-signature");
   if (!sig) {
+    // ✅ 보안상 400 유지 (Stripe가 아닌 호출)
     return NextResponse.json({ error: "missing stripe signature" }, { status: 400 });
   }
 
@@ -45,29 +45,29 @@ export async function POST(req: Request) {
   const session = event.data.object as Stripe.Checkout.Session;
   const metadata = session.metadata ?? {};
 
-  const purchaseType = metadata.purchase_type; // personal | teacher | institution
+  const purchaseType = metadata.purchase_type;
   const userId = metadata.user_id;
 
+  // ✅ (변경) metadata 누락은 400 대신 200 스킵 (재시도 방지)
   if (!purchaseType || !userId) {
-    // ⚠️ 여기서 userId가 비면 "내 쿠폰이 안 뜸" 100% 발생
     return NextResponse.json(
-      { error: "missing required metadata", metadata },
-      { status: 400 }
+      { received: true, skipped: "missing required metadata", metadata, sessionId: session.id },
+      { status: 200 }
     );
   }
 
   // 결제 완료 안전 체크
   if (session.payment_status !== "paid") {
-    return NextResponse.json({ skipped: "payment not completed" }, { status: 200 });
+    return NextResponse.json({ received: true, skipped: "payment not completed" }, { status: 200 });
   }
 
-  // ✅ 중복 웹훅 방지
-  const dedupeKey = session.id; // 세션ID 기준
+  // ✅ 중복 웹훅 방지 (dev 전용)
+  const dedupeKey = session.id;
   if (HANDLED.has(dedupeKey)) {
     return NextResponse.json({ received: true, skipped: "already handled" }, { status: 200 });
   }
 
-  // ✅ line_items는 웹훅 payload에 없을 수 있음 → 세션 재조회 + expand
+  // 세션 재조회
   let priceId: string | undefined;
   try {
     const full = await stripe.checkout.sessions.retrieve(session.id, {
@@ -75,30 +75,27 @@ export async function POST(req: Request) {
     });
 
     const p = full.line_items?.data?.[0]?.price;
-    priceId = typeof p === "object" ? (p?.id as string | undefined) : undefined;
+    priceId = typeof p === "object" ? p.id : undefined;
   } catch {
-    // ignore (metadata fallback)
+    // ignore
   }
 
-  // 🔑 priceId 추출 실패 시 metadata fallback
   priceId = priceId ?? metadata.price_id ?? undefined;
 
-  // 🔢 쿠폰 수량 결정
   const qty =
-    (priceId && (PRICE_TO_COUPON_QTY as any)[priceId]) ||
+    (priceId && (PRICE_TO_COUPON_QTY as Record<string, number>)[priceId]) ||
     Number(metadata.coupon_qty ?? 0);
 
+  // ✅ (변경) qty 실패도 400 대신 200 스킵 (재시도 방지)
   if (!qty || qty <= 0) {
     return NextResponse.json(
-      { error: "unable to determine coupon quantity", priceId, metadata },
-      { status: 400 }
+      { received: true, skipped: "unable to determine coupon quantity", priceId, metadata, sessionId: session.id },
+      { status: 200 }
     );
   }
 
-  // ✅ 쿠폰 발급 (ownerId=userId)
-  const coupons = createCoupons(userId, qty);
+  const coupons: Coupon[] = await createCoupons(userId, qty);
 
-  // ✅ 처리 완료 표시 (중복 방지)
   HANDLED.add(dedupeKey);
 
   console.log("[STRIPE] coupons issued", {
@@ -110,8 +107,5 @@ export async function POST(req: Request) {
     sessionId: session.id,
   });
 
-  return NextResponse.json(
-    { received: true, handled: purchaseType, qty },
-    { status: 200 }
-  );
+  return NextResponse.json({ received: true, handled: purchaseType, qty }, { status: 200 });
 }

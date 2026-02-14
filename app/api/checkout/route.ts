@@ -1,6 +1,8 @@
 // app/api/checkout/route.ts
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
+import { FieldValue } from "firebase-admin/firestore";
+import { db } from "@/lib/firebaseAdmin";
 
 export const runtime = "nodejs";
 
@@ -11,7 +13,7 @@ type Body = {
   lang: string;
   series: string;
   level: string;
-  amount: "3" | "5" | "20" | "50" | "100"; // ✅ 추가
+  amount: "3" | "5" | "20" | "50" | "100";
 };
 
 const PRICE_ID_MAP: Record<Body["amount"], string | undefined> = {
@@ -30,10 +32,8 @@ function getPriceId(amount: Body["amount"]) {
 
 function getBaseUrl(req: Request) {
   const url = new URL(req.url);
-  const proto =
-    req.headers.get("x-forwarded-proto") || url.protocol.replace(":", "");
-  const host =
-    req.headers.get("x-forwarded-host") || req.headers.get("host") || url.host;
+  const proto = req.headers.get("x-forwarded-proto") || url.protocol.replace(":", "");
+  const host = req.headers.get("x-forwarded-host") || req.headers.get("host") || url.host;
   return `${proto}://${host}`;
 }
 
@@ -49,47 +49,50 @@ export async function POST(req: Request) {
   const { userId, lang, series, level, amount } = body;
 
   if (!userId || !lang || !series || !level || !amount) {
-    return NextResponse.json(
-      { error: "missing required fields" },
-      { status: 400 }
-    );
+    return NextResponse.json({ error: "missing required fields" }, { status: 400 });
   }
 
-  // ✅ 허용값 강제 (타입 우회 대비 런타임 체크)
   if (!["3", "5", "20", "50", "100"].includes(amount)) {
     return NextResponse.json({ error: "invalid amount" }, { status: 400 });
   }
 
   try {
     const baseUrl = getBaseUrl(req);
-
     const successUrl = `${baseUrl}/select-books?checkout=success&session_id={CHECKOUT_SESSION_ID}`;
     const cancelUrl = `${baseUrl}/select-books?checkout=cancel`;
 
-    // ✅ amount → priceId 확정
     const priceId = getPriceId(amount);
 
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       success_url: successUrl,
       cancel_url: cancelUrl,
-
       client_reference_id: userId,
       metadata: {
-        userId,
+        user_id: userId,
+        purchase_type: "personal",
         lang,
         series,
         level,
-        amount, // ✅ 기록용
+        amount,
       },
-
-      line_items: [
-        {
-          price: priceId,
-          quantity: 1,
-        },
-      ],
+      line_items: [{ price: priceId, quantity: 1 }],
     });
+
+    await db.collection("checkoutSessions").doc(session.id).set(
+      {
+        sessionId: session.id,
+        userId,
+        amount: Number(amount),
+        currency: session.currency ?? "usd",
+        status: "created",
+        issuedCouponCodes: [],
+        processed: false,
+        createdAt: FieldValue.serverTimestamp(),
+        updatedAt: FieldValue.serverTimestamp(),
+      },
+      { merge: true }
+    );
 
     return NextResponse.json({ url: session.url }, { status: 200 });
   } catch (e: any) {
