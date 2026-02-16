@@ -175,7 +175,9 @@ export default function SelectBooksPage() {
   const [payAmount, setPayAmount] = useState<Amount>("5"); // ✅ 결제 금액 선택
 
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [redeemLoading, setRedeemLoading] = useState(false);
+  const [checkoutLoading, setCheckoutLoading] = useState(false);
+
 
   /** ✅ (NEW) 계정 변경/로그아웃 시 localStorage 캐시 초기화 */
   useEffect(() => {
@@ -254,7 +256,7 @@ export default function SelectBooksPage() {
 
       if (checkout === "success" && sessionId) {
         try {
-          setLoading(true);
+          setRedeemLoading(true);
           setError("");
 
           const res = await fetch("/api/checkout/complete", {
@@ -287,7 +289,7 @@ export default function SelectBooksPage() {
         } catch {
           setError("Network error.");
         } finally {
-          setLoading(false);
+          setRedeemLoading(false);
           // ✅ string 고정 (SyntaxError 방지)
           window.history.replaceState({}, "", "/select-books");
         }
@@ -378,8 +380,8 @@ export default function SelectBooksPage() {
     tick();
     const id = window.setInterval(tick, 10_000);
     return () => window.clearInterval(id);
-  }, [isLoaded, userId, couponBox]); // ✅ couponBox 추가
-
+  }, [isLoaded, userId]);
+  // ✅ couponBox 추가
   /** 3) 라이선스 기반 usedBook 필드 보강 */
   useEffect(() => {
     if (!isLoaded || !userId) return;
@@ -421,13 +423,13 @@ export default function SelectBooksPage() {
   if (!userId) return null;
 
   async function activateCoupon() {
-    if (loading) return;
+    if (redeemLoading) return;
     setError("");
-    setLoading(true);
+    setRedeemLoading(true);
 
     if (!coupon.trim() || !book || (SERIES_CONFIG[book].hasLevel && !level)) {
       setError("Please complete all fields.");
-      setLoading(false);
+      setRedeemLoading(false);
       return;
     }
 
@@ -488,25 +490,25 @@ export default function SelectBooksPage() {
     } catch {
       setError("Network error.");
     } finally {
-      setLoading(false);
+      setRedeemLoading(false);
     }
   }
 
   // ✅ 여기만 변경: startPayment에 try/catch + json safe + 로딩가드
   async function startPayment() {
-    if (loading) return;
+    if (redeemLoading) return;
     setError("");
-    setLoading(true);
+    setRedeemLoading(true);
 
     if (!isLoaded || !userId) {
       setError("Please login first.");
-      setLoading(false);
+      setRedeemLoading(false);
       return;
     }
 
     if (!book || (SERIES_CONFIG[book].hasLevel && !level)) {
       setError("Please select textbook and level.");
-      setLoading(false);
+      setRedeemLoading(false);
       return;
     }
 
@@ -540,10 +542,9 @@ export default function SelectBooksPage() {
     } catch {
       setError("Network error. Please try again.");
     } finally {
-      setLoading(false);
+      setRedeemLoading(false);
     }
   }
-
   function openBook(item: LibraryItem) {
     if (isExpired(item.expiresAt)) {
       setError("Expired textbook. Please redeem a new coupon or purchase again.");
@@ -818,18 +819,19 @@ export default function SelectBooksPage() {
 
                 {error && <p className="text-sm text-red-600">{error}</p>}
 
-                <Button onClick={activateCoupon} disabled={loading} className="w-full">
-                  {loading ? "Processing..." : "Add with Coupon"}
+                <Button onClick={activateCoupon} disabled={redeemLoading} className="w-full">
+                  {redeemLoading ? "Processing..." : "Add with Coupon"}
                 </Button>
 
                 <Button
                   variant="outline"
                   onClick={startPayment}
                   className="w-full"
-                  disabled={loading}
+                  disabled={checkoutLoading}
                 >
-                  Buy with Card
+                  {checkoutLoading ? "Redirecting..." : "Buy with Card"}
                 </Button>
+
               </CardContent>
             </Card>
           </div>
