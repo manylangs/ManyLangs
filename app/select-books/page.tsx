@@ -343,6 +343,10 @@ export default function SelectBooksPage() {
   useEffect(() => {
     if (!isLoaded || !userId) return;
 
+    // ✅ used 쿠폰이 하나도 없으면 폴링 필요 없음
+    const hasUsed = couponBox.some((c) => c.used);
+    if (!hasUsed) return;
+
     const tick = async () => {
       try {
         const res = await fetch("/api/licenses/list", {
@@ -351,7 +355,6 @@ export default function SelectBooksPage() {
           body: JSON.stringify({ userId }),
         });
 
-        // ✅ json 대신 안전 파싱
         const data = (await safeJson(res)) ?? {};
         const aliveLib: LibraryItem[] = Array.isArray((data as any).licenses)
           ? ((data as any).licenses as LibraryItem[])
@@ -368,14 +371,14 @@ export default function SelectBooksPage() {
         setCouponBox(nextCoupons);
         writeLocalCoupons(nextCoupons);
       } catch {
-        // 네트워크/파싱 오류는 타이머에서 조용히 무시
+        // ignore
       }
     };
 
     tick();
     const id = window.setInterval(tick, 10_000);
     return () => window.clearInterval(id);
-  }, [isLoaded, userId]);
+  }, [isLoaded, userId, couponBox]); // ✅ couponBox 추가
 
   /** 3) 라이선스 기반 usedBook 필드 보강 */
   useEffect(() => {
