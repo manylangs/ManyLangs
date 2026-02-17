@@ -252,47 +252,6 @@ export default function SelectBooksPage() {
       const checkout = params.get("checkout");
       const sessionId = params.get("session_id");
 
-      if (checkout === "success" && sessionId) {
-        try {
-          setLoading(true);
-          setError("");
-
-          const res = await fetch("/api/checkout/complete", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ session_id: sessionId }),
-          });
-
-          const data = (await safeJson(res)) ?? {};
-
-          if (!res.ok) {
-            setError((data as any).error || "Checkout complete failed.");
-          } else {
-            const newCodes: string[] = Array.isArray((data as any).coupons)
-              ? (data as any).coupons
-              : [];
-
-            if (newCodes.length > 0) {
-              setCouponBox((prev) => {
-                const map = new Map(prev.map((c) => [c.code, c]));
-                for (const code of newCodes) {
-                  if (!map.has(code)) map.set(code, { code, used: false });
-                }
-                const next = Array.from(map.values());
-                writeLocalCoupons(next);
-                return next;
-              });
-            }
-          }
-        } catch {
-          setError("Network error.");
-        } finally {
-          setLoading(false);
-          // ✅ string 고정 (SyntaxError 방지)
-          window.history.replaceState({}, "", "/select-books");
-        }
-      }
-
       // ✅ (D) 서버 쿠폰 동기화 (webhook 발급 포함)
       try {
         const res = await fetch("/api/coupons/list", {

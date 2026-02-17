@@ -25,11 +25,14 @@ export async function POST(req: Request) {
       process.env.STRIPE_WEBHOOK_SECRET!
     );
   } catch (err: any) {
+    console.log("❌ constructEvent failed:", err.message);
     return NextResponse.json(
       { error: "invalid signature", message: err.message },
       { status: 400 }
     );
   }
+
+  console.log("📌 EVENT TYPE:", event.type);
 
   if (event.type !== "checkout.session.completed") {
     return NextResponse.json({ received: true }, { status: 200 });
@@ -38,10 +41,17 @@ export async function POST(req: Request) {
   const eventId = event.id;
   const session = event.data.object as Stripe.Checkout.Session;
 
+  console.log("📦 CHECKOUT SESSION:", {
+    id: session.id,
+    metadata: session.metadata,
+    payment_status: session.payment_status,
+  });
+
   const stripeEventRef = db.collection("stripeEvents").doc(eventId);
   const existing = await stripeEventRef.get();
 
   if (existing.exists) {
+    console.log("⚠️ Event already handled:", eventId);
     return NextResponse.json(
       { received: true, skipped: "event already handled" },
       { status: 200 }
@@ -58,46 +68,66 @@ export async function POST(req: Request) {
   });
 
   const metadata = session.metadata ?? {};
-  const purchaseType = metadata.purchase_type;
-  const userId = metadata.user_id;
+  const userId = metadata.userId;
 
-  if (!purchaseType || !userId) {
+  if (!userId) {
+    console.log("❌ Missing userId in metadata:", metadata);
+
+    await stripeEventRef.update({
+      handled: true,
+      resultStatus: "failed_missing_userId",
+    });
+
     return NextResponse.json(
-      { error: "missing required metadata", metadata },
+      { error: "missing userId in metadata", metadata },
       { status: 400 }
     );
   }
 
   if (session.payment_status !== "paid") {
+    console.log("⚠️ Payment not completed:", session.payment_status);
     return NextResponse.json(
       { skipped: "payment not completed" },
       { status: 200 }
     );
   }
 
-  // priceId 추출
+  // 🔥 priceId 추출
   let priceId: string | undefined;
+
   try {
     const full = await stripe.checkout.sessions.retrieve(session.id, {
       expand: ["line_items.data.price"],
     });
 
     const p = full.line_items?.data?.[0]?.price;
-    priceId = typeof p === "object" ? (p?.id as string | undefined) : undefined;
-  } catch {}
+    priceId = typeof p === "object" ? p.id : undefined;
+  } catch (e: any) {
+    console.log("❌ price expand failed:", e?.message);
+  }
 
-  priceId = priceId ?? metadata.price_id ?? undefined;
+  console.log("💰 priceId:", priceId);
 
-  const qty =
-    (priceId && (PRICE_TO_COUPON_QTY as any)[priceId]) ||
-    Number(metadata.coupon_qty ?? 0);
+  if (!priceId) {
+    await stripeEventRef.update({
+      handled: true,
+      resultStatus: "failed_missing_priceId",
+    });
+
+    return NextResponse.json(
+      { error: "missing priceId on session" },
+      { status: 400 }
+    );
+  }
+
+  const qty = (PRICE_TO_COUPON_QTY as any)[priceId];
+
+  console.log("🎟 qty:", qty);
 
   if (!qty || qty <= 0) {
     await stripeEventRef.update({
       handled: true,
       resultStatus: "failed_qty_unknown",
-      processingTimeMs: 0,
-      error: "unable to determine coupon quantity",
     });
 
     return NextResponse.json(
@@ -108,28 +138,27 @@ export async function POST(req: Request) {
 
   const start = Date.now();
 
-  // ✅ 쿠폰 생성
   const coupons = await createCoupons(userId, qty);
 
-  // ✅ checkoutSessions 업데이트 (🔥 핵심 추가 부분)
   const checkoutRef = db.collection("checkoutSessions").doc(session.id);
 
-  await checkoutRef.update({
-    processed: true,
-    status: "completed",
-    issuedCouponCodes: coupons.map((c) => c.code),
-    updatedAt: new Date(),
-  });
+  await checkoutRef.set(
+    {
+      processed: true,
+      status: "completed",
+      issuedCouponCodes: coupons.map((c) => c.code),
+      updatedAt: new Date(),
+    },
+    { merge: true }
+  );
 
-  // stripeEvents 처리 완료 표시
   await stripeEventRef.update({
     handled: true,
     resultStatus: "success",
     processingTimeMs: Date.now() - start,
   });
 
-  console.log("[STRIPE] coupons issued", {
-    purchaseType,
+  console.log("✅ coupons issued:", {
     userId,
     qty,
     priceId,
@@ -138,7 +167,7 @@ export async function POST(req: Request) {
   });
 
   return NextResponse.json(
-    { received: true, handled: purchaseType, qty },
+    { received: true, qty },
     { status: 200 }
   );
 }

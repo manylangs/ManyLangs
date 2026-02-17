@@ -1,6 +1,7 @@
 // app/api/checkout/route.ts
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
+import { db } from "@/lib/firebaseAdmin"; // ✅ 추가
 
 export const runtime = "nodejs";
 
@@ -11,7 +12,7 @@ type Body = {
   lang: string;
   series: string;
   level: string;
-  amount: "3" | "5" | "20" | "50" | "100"; // ✅ 추가
+  amount: "3" | "5" | "20" | "50" | "100";
 };
 
 const PRICE_ID_MAP: Record<Body["amount"], string | undefined> = {
@@ -55,7 +56,6 @@ export async function POST(req: Request) {
     );
   }
 
-  // ✅ 허용값 강제 (타입 우회 대비 런타임 체크)
   if (!["3", "5", "20", "50", "100"].includes(amount)) {
     return NextResponse.json({ error: "invalid amount" }, { status: 400 });
   }
@@ -66,7 +66,6 @@ export async function POST(req: Request) {
     const successUrl = `${baseUrl}/select-books?checkout=success&session_id={CHECKOUT_SESSION_ID}`;
     const cancelUrl = `${baseUrl}/select-books?checkout=cancel`;
 
-    // ✅ amount → priceId 확정
     const priceId = getPriceId(amount);
 
     const session = await stripe.checkout.sessions.create({
@@ -80,7 +79,7 @@ export async function POST(req: Request) {
         lang,
         series,
         level,
-        amount, // ✅ 기록용
+        amount,
       },
 
       line_items: [
@@ -89,6 +88,22 @@ export async function POST(req: Request) {
           quantity: 1,
         },
       ],
+    });
+
+    // ✅ checkoutSessions 선기록 추가
+    await db.collection("checkoutSessions").doc(session.id).set({
+      sessionId: session.id,
+      userId,
+      lang,
+      series,
+      level,
+      amount,
+      priceId,
+      status: "created",
+      processed: false,
+      issuedCouponCodes: [],
+      createdAt: new Date(),
+      updatedAt: new Date(),
     });
 
     return NextResponse.json({ url: session.url }, { status: 200 });
