@@ -48,24 +48,33 @@ export async function POST(req: Request) {
   });
 
   const stripeEventRef = db.collection("stripeEvents").doc(eventId);
-  const existing = await stripeEventRef.get();
 
-  if (existing.exists) {
-    console.log("⚠️ Event already handled:", eventId);
-    return NextResponse.json(
-      { received: true, skipped: "event already handled" },
-      { status: 200 }
-    );
+  try {
+    await db.runTransaction(async (tx) => {
+      const doc = await tx.get(stripeEventRef);
+
+      if (doc.exists) {
+        throw new Error("EVENT_ALREADY_PROCESSED");
+      }
+
+      tx.set(stripeEventRef, {
+        eventId,
+        type: event.type,
+        sessionId: session.id,
+        handled: false,
+        resultStatus: "processing",
+        receivedAt: new Date(),
+      });
+    });
+  } catch (e: any) {
+    if (e.message === "EVENT_ALREADY_PROCESSED") {
+      console.log("⚠️ Event already processed (transaction lock):", eventId);
+      return NextResponse.json({ received: true }, { status: 200 });
+    }
+
+    console.error("🔥 Transaction failed:", e);
+    return NextResponse.json({ error: "transaction_failed" }, { status: 500 });
   }
-
-  await stripeEventRef.set({
-    eventId,
-    type: event.type,
-    sessionId: session.id,
-    handled: false,
-    resultStatus: "processing",
-    receivedAt: new Date(),
-  });
 
   const metadata = session.metadata ?? {};
   const userId = metadata.userId;
