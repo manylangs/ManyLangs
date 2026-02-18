@@ -84,6 +84,42 @@ export async function createCoupons(ownerId: string, qty: number) {
   COUPONS.push(...list);
   return list;
 }
+export function createCouponsTx(
+  tx: FirebaseFirestore.Transaction,
+  ownerId: string,
+  qty: number
+): Coupon[] {
+  const now = Date.now();
+  const list: Coupon[] = [];
+  const used = new Set<string>();
+
+  for (let i = 0; i < qty; i++) {
+    let code = genCode();
+
+    for (let tries = 0; tries < 20 && used.has(code); tries++) {
+      code = genCode();
+    }
+    if (used.has(code)) {
+      throw new Error("Coupon code collision: retry limit exceeded");
+    }
+
+    used.add(code);
+
+    const coupon: Coupon = {
+      code,
+      ownerId,
+      issuedAt: now,
+      used: false,
+    };
+
+    const ref = db.collection("coupons").doc(code);
+    tx.set(ref, coupon);
+
+    list.push(coupon);
+  }
+
+  return list;
+}
 
 /* ================= redeem ================= */
 
