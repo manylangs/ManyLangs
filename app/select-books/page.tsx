@@ -42,8 +42,8 @@ const SERIES_CONFIG: Record<string, { label: string; hasLevel: boolean }> = {
   grammar: { label: "Grammar", hasLevel: true },
   conversation: { label: "Conversation", hasLevel: true },
   real: { label: "Real", hasLevel: true },
-  voca: { label: "Vocabulary", hasLevel: false },
-  idiom: { label: "Idiom", hasLevel: false },
+  voca: { label: "Vocabulary", hasLevel: true },
+  idiom: { label: "Idiom", hasLevel: true },
 };
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
@@ -387,7 +387,7 @@ export default function SelectBooksPage() {
       return;
     }
 
-    const finalLevel = SERIES_CONFIG[book].hasLevel ? level : "all";
+    const finalLevel = level;
 
     try {
       const res = await fetch("/api/coupons/redeem", {
@@ -466,7 +466,7 @@ export default function SelectBooksPage() {
       return;
     }
 
-    const finalLevel = SERIES_CONFIG[book].hasLevel ? level : "all";
+    const finalLevel = level;
 
     try {
       const res = await fetch("/api/checkout", {
@@ -506,7 +506,16 @@ export default function SelectBooksPage() {
       return;
     }
 
-    const levelPath = item.level === "all" ? "" : `/${item.level}`;
+    let levelPath = `/${item.level}`;
+
+    if (item.level === "all") {
+      if (item.series === "voca" || item.series === "idiom") {
+        levelPath = "/a1";
+      } else {
+        levelPath = "";
+      }
+    }
+
     router.push(`/viewer/${item.lang}/${item.series}${levelPath}/001`);
   }
 

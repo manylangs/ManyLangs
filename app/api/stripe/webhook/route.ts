@@ -54,7 +54,7 @@ export async function POST(req: Request) {
     });
     const p = full.line_items?.data?.[0]?.price;
     priceId = typeof p === "object" ? p.id : undefined;
-  } catch {}
+  } catch { }
 
   if (!priceId) {
     return NextResponse.json({ error: "missing priceId" }, { status: 400 });
@@ -88,7 +88,7 @@ export async function POST(req: Request) {
 
       // 2️⃣ 쿠폰 생성 (transaction 내부)
       const coupons = createCouponsTx(tx, userId, qty);
-
+ 
       // 3️⃣ checkoutSessions 확정
       tx.set(
         checkoutRef,
