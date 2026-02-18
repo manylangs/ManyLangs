@@ -8,7 +8,6 @@ import { useViewerTarget } from "../context/ViewerTargetContext";
 const STUDY_LANGS = ["en", "es", "fr", "pt"] as const;
 type StudyLang = (typeof STUDY_LANGS)[number];
 
-// ✅ 레벨 버튼용
 const LEVELS = ["a1", "a2", "b1", "b2", "c1", "c2"];
 
 const buttonStyle = (active: boolean) => ({
@@ -36,7 +35,6 @@ export default function VocabularyViewer({
 }: Props) {
   const router = useRouter();
   const [lang, setLang] = useState<StudyLang>("en");
-
   const { showTargetText } = useViewerTarget();
 
   const currentIndex = chapters.indexOf(chapter);
@@ -45,25 +43,27 @@ export default function VocabularyViewer({
     currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : null;
 
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto" }}>
-      {/* 🔒 상단 오디오 */}
+    <>
+      {/* 🔒 Audio를 Header와 같은 레벨로 분리 */}
       <div
         style={{
           position: "sticky",
-          top: 0,
-          zIndex: 100,
+          top: 64,          // Header 높이에 맞춤 (필요시 60~72 조정)
+          zIndex: 900,
           background: "#fff",
           padding: "16px 24px 12px",
+          borderBottom: "1px solid #eee",
         }}
       >
-        <VocaAudioController lang="kr" level={level} chapter={chapter} />
+        <div style={{ maxWidth: 720, margin: "0 auto" }}>
+          <VocaAudioController lang="kr" level={level} chapter={chapter} />
+        </div>
       </div>
 
-      <div style={{ padding: 24 }}>
+      {/* 본문 wrapper */}
+      <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
 
-        {/* ===============================
-            🔵 Level Navigation (A1~C2)
-           =============================== */}
+        {/* Level Navigation */}
         <div
           style={{
             display: "flex",
@@ -85,7 +85,7 @@ export default function VocabularyViewer({
           ))}
         </div>
 
-        {/* ===== 챕터 Prev / Next ===== */}
+        {/* Prev / Next */}
         <div
           style={{
             display: "flex",
@@ -114,7 +114,7 @@ export default function VocabularyViewer({
           </button>
         </div>
 
-        {/* ===== 챕터 버튼 ===== */}
+        {/* Chapter Buttons */}
         <div
           style={{
             display: "flex",
@@ -136,7 +136,7 @@ export default function VocabularyViewer({
           ))}
         </div>
 
-        {/* ===== 학습 언어 버튼 ===== */}
+        {/* Study Language */}
         <div style={{ display: "flex", gap: 8, marginBottom: 32 }}>
           {STUDY_LANGS.map((l) => (
             <button
@@ -149,15 +149,10 @@ export default function VocabularyViewer({
           ))}
         </div>
 
-        {/* ===== 제목 ===== */}
+        {/* Title */}
         <div style={{ marginBottom: 24 }}>
           {showTargetText && (
-            <div
-              style={{
-                fontSize: 22,
-                fontWeight: 700,
-              }}
-            >
+            <div style={{ fontSize: 22, fontWeight: 700 }}>
               {data.title?.target}
             </div>
           )}
@@ -176,7 +171,7 @@ export default function VocabularyViewer({
           )}
         </div>
 
-        {/* ===== Vocabulary Sets ===== */}
+        {/* Vocabulary Sets */}
         {data.blocks.map((block: any, idx: number) => (
           <section key={idx} style={{ marginBottom: 56 }}>
             <div
@@ -227,6 +222,6 @@ export default function VocabularyViewer({
           </section>
         ))}
       </div>
-    </div>
+    </>
   );
 }

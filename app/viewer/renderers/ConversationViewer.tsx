@@ -56,129 +56,157 @@ export default function ConversationViewer({
   chapters,
 }: Props) {
   const [lang, setLang] = useState<StudyLang>("en");
-
-  // ✅ Target 토글 상태
   const { showTargetText } = useViewerTarget();
 
-  const currentIndex = useMemo(() => chapters.indexOf(chapter), [chapters, chapter]);
+  const currentIndex = useMemo(
+    () => chapters.indexOf(chapter),
+    [chapters, chapter]
+  );
 
   const prev = currentIndex > 0 ? chapters[currentIndex - 1] : chapter;
-  const next = currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : chapter;
+  const next =
+    currentIndex < chapters.length - 1
+      ? chapters[currentIndex + 1]
+      : chapter;
 
   return (
-    <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
-      {/* 🔊 Audio Controller (동결 영역) */}
+    <>
+      {/* 🔊 Audio (Header와 같은 레벨로 분리) */}
       {data.blocks.length > 0 && (
-        <section
+        <div
           style={{
             position: "sticky",
-            top: 0,
-            zIndex: 50,
+            top: 64,         // Header 높이에 맞춤
+            zIndex: 900,
             background: "#fff",
-            padding: "12px 0",
-            marginBottom: 16,
             borderBottom: "1px solid #eee",
+            padding: "12px 0",
           }}
         >
-          <ConversationAudioController lang="kr" level={level} chapter={chapter} />
-        </section>
+          <div style={{ maxWidth: 720, margin: "0 auto" }}>
+            <ConversationAudioController
+              lang="kr"
+              level={level}
+              chapter={chapter}
+            />
+          </div>
+        </div>
       )}
-
-      {/* ✅ 제목 (목표언어 / 학습언어 동일 크기) */}
-      {data.title && (
-        <section style={{ marginBottom: 20 }}>
-          {showTargetText && (
-            <div
-              style={{
-                fontSize: 22,
-                fontWeight: 700,
-                marginBottom: 4,
-              }}
-            >
-              {data.title.target}
-            </div>
-          )}
-
-          {data.title[lang] && (
-            <div
-              style={{
-                fontSize: 22,
-                fontWeight: 700,
-                color: "#555",
-                marginTop: showTargetText ? 0 : 0,
-              }}
-            >
-              {data.title[lang]}
-            </div>
-          )}
-        </section>
-      )}
-
-      {/* 학습 언어 선택 */}
-      <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
-        {STUDY_LANGS.map((l) => (
-          <button key={l} onClick={() => setLang(l)} style={buttonStyle(lang === l)}>
-            {l.toUpperCase()}
-          </button>
-        ))}
-      </div>
-
-      {/* Prev / Next */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginBottom: 12,
-        }}
-      >
-        <Link href={`/viewer/kr/conversation/${level}/${prev}`} style={buttonStyle(false)}>
-          ← Prev
-        </Link>
-        <Link href={`/viewer/kr/conversation/${level}/${next}`} style={buttonStyle(false)}>
-          Next →
-        </Link>
-      </div>
-
-      {/* 챕터 번호 */}
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: 6,
-          marginBottom: 20,
-        }}
-      >
-        {chapters.map((ch) => (
-          <Link
-            key={ch}
-            href={`/viewer/kr/conversation/${level}/${ch}`}
-            style={buttonStyle(ch === chapter)}
-          >
-            {ch}
-          </Link>
-        ))}
-      </div>
 
       {/* 본문 */}
-      <section>
-        {data.blocks.map((block, i) => (
-          <div key={i} style={{ marginBottom: 32 }}>
-            <div style={{ fontWeight: 700, marginBottom: 8 }}>Dialogue {i + 1}</div>
+      <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
 
-            {block.lines.map((line, j) => (
-              <div key={j} style={{ marginBottom: 10 }}>
-                <strong>{line.speaker}</strong>
-
-                {showTargetText && <div>{line.sentences.target}</div>}
-
-                {line.sentences[lang] && (
-                  <div style={{ color: "#444" }}>{line.sentences[lang]}</div>
-                )}
+        {/* 제목 */}
+        {data.title && (
+          <section style={{ marginBottom: 20 }}>
+            {showTargetText && (
+              <div
+                style={{
+                  fontSize: 22,
+                  fontWeight: 700,
+                  marginBottom: 4,
+                }}
+              >
+                {data.title.target}
               </div>
-            ))}
-          </div>
-        ))}
-      </section>
-    </div>
+            )}
+
+            {data.title[lang] && (
+              <div
+                style={{
+                  fontSize: 22,
+                  fontWeight: 700,
+                  color: "#555",
+                }}
+              >
+                {data.title[lang]}
+              </div>
+            )}
+          </section>
+        )}
+
+        {/* 학습 언어 선택 */}
+        <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
+          {STUDY_LANGS.map((l) => (
+            <button
+              key={l}
+              onClick={() => setLang(l)}
+              style={buttonStyle(lang === l)}
+            >
+              {l.toUpperCase()}
+            </button>
+          ))}
+        </div>
+
+        {/* Prev / Next */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            marginBottom: 12,
+          }}
+        >
+          <Link
+            href={`/viewer/kr/conversation/${level}/${prev}`}
+            style={buttonStyle(false)}
+          >
+            ← Prev
+          </Link>
+          <Link
+            href={`/viewer/kr/conversation/${level}/${next}`}
+            style={buttonStyle(false)}
+          >
+            Next →
+          </Link>
+        </div>
+
+        {/* 챕터 번호 */}
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 6,
+            marginBottom: 20,
+          }}
+        >
+          {chapters.map((ch) => (
+            <Link
+              key={ch}
+              href={`/viewer/kr/conversation/${level}/${ch}`}
+              style={buttonStyle(ch === chapter)}
+            >
+              {ch}
+            </Link>
+          ))}
+        </div>
+
+        {/* 본문 */}
+        <section>
+          {data.blocks.map((block, i) => (
+            <div key={i} style={{ marginBottom: 32 }}>
+              <div style={{ fontWeight: 700, marginBottom: 8 }}>
+                Dialogue {i + 1}
+              </div>
+
+              {block.lines.map((line, j) => (
+                <div key={j} style={{ marginBottom: 10 }}>
+                  <strong>{line.speaker}</strong>
+
+                  {showTargetText && (
+                    <div>{line.sentences.target}</div>
+                  )}
+
+                  {line.sentences[lang] && (
+                    <div style={{ color: "#444" }}>
+                      {line.sentences[lang]}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          ))}
+        </section>
+      </div>
+    </>
   );
 }
