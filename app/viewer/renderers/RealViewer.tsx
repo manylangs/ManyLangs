@@ -8,11 +8,13 @@ import { useViewerTarget } from "../context/ViewerTargetContext";
 type StudyLang = "en" | "es" | "fr" | "pt";
 
 type Sentence = {
-  target: string;
-  en: string;
-  es: string;
-  fr: string;
-  pt: string;
+  texts: {
+    kr: string;
+    en: string;
+    es: string;
+    fr: string;
+    pt: string;
+  };
 };
 
 type Block =
@@ -49,8 +51,6 @@ const buttonStyle = (active = false) => ({
 
 export default function RealViewer({ level, chapter, data }: Props) {
   const [lang, setLang] = useState<StudyLang>("en");
-
-  // ✅ Target 토글 상태
   const { showTargetText } = useViewerTarget();
 
   const chapters = useMemo(
@@ -72,10 +72,10 @@ export default function RealViewer({ level, chapter, data }: Props) {
 
   return (
     <div style={{ maxWidth: 960, margin: "0 auto", padding: 24 }}>
-      {/* 🔊 오디오 (상단 고정) */}
+      {/* 🔊 오디오 */}
       <RealAudioController src={`/audio/real/${level}/${chapter}.wav`} />
 
-      {/* 🌐 언어 선택 */}
+      {/* 🌐 학습 언어 선택 */}
       <div style={{ display: "flex", gap: 8, margin: "12px 0" }}>
         {LANGS.map((l) => (
           <button
@@ -88,7 +88,7 @@ export default function RealViewer({ level, chapter, data }: Props) {
         ))}
       </div>
 
-      {/* 🔢 챕터 네비게이션 (001–020) */}
+      {/* 🔢 챕터 네비게이션 */}
       <div
         style={{
           display: "flex",
@@ -100,7 +100,7 @@ export default function RealViewer({ level, chapter, data }: Props) {
         {chapters.map((ch) => (
           <Link
             key={ch}
-            href={`/viewer/real/${level}/${ch}`}
+            href={`/viewer/kr/real/${level}/${ch}`}
             style={buttonStyle(ch === chapter)}
           >
             {ch}
@@ -116,15 +116,22 @@ export default function RealViewer({ level, chapter, data }: Props) {
           marginBottom: 16,
         }}
       >
-        <Link href={`/viewer/real/${level}/${prev}`} style={buttonStyle()}>
+        <Link
+          href={`/viewer/kr/real/${level}/${prev}`}
+          style={buttonStyle()}
+        >
           ← Prev
         </Link>
-        <Link href={`/viewer/real/${level}/${next}`} style={buttonStyle()}>
+
+        <Link
+          href={`/viewer/kr/real/${level}/${next}`}
+          style={buttonStyle()}
+        >
           Next →
         </Link>
       </div>
 
-      {/* 🖼 + 📝 Scene Row */}
+      {/* 🖼 + 📝 콘텐츠 */}
       <div
         style={{
           display: "flex",
@@ -133,23 +140,23 @@ export default function RealViewer({ level, chapter, data }: Props) {
           flexWrap: "wrap",
         }}
       >
-        {/* 이미지 (왼쪽) */}
+        {/* 이미지 */}
         {imageBlock && (
           <div style={{ flex: "0 0 360px" }}>
             <img
-              src={`/books/real/${level}/${imageBlock.src}`}
+              src={`/books/kr/real/${level}/${imageBlock.src}`}
               alt=""
               style={{ width: "100%", borderRadius: 8 }}
             />
           </div>
         )}
 
-        {/* 설명 (오른쪽) */}
+        {/* 설명 */}
         {descBlock && (
           <div style={{ flex: "1 1 320px" }}>
             {descBlock.sentences.map((s, i) => (
               <div key={i} style={{ marginBottom: 14 }}>
-                {showTargetText && <div>{s.target}</div>}
+                {showTargetText && <div>{s.texts.kr}</div>}
 
                 <div
                   style={{
@@ -157,7 +164,7 @@ export default function RealViewer({ level, chapter, data }: Props) {
                     marginTop: showTargetText ? 2 : 0,
                   }}
                 >
-                  {s[lang]}
+                  {s.texts[lang]}
                 </div>
               </div>
             ))}
