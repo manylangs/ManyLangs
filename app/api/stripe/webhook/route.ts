@@ -161,6 +161,7 @@ export async function POST(req: Request) {
     { merge: true }
   );
 
+
   await stripeEventRef.update({
     handled: true,
     resultStatus: "success",
