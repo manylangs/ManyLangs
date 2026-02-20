@@ -1,11 +1,13 @@
 // app/api/checkout/route.ts
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
-import { db } from "@/lib/firebaseAdmin"; // ✅ 추가
+import { db } from "@/lib/firebaseAdmin";
+import admin from "firebase-admin"; // ✅ 추가
 
 export const runtime = "nodejs";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string);
+const serverTimestamp = admin.firestore.FieldValue.serverTimestamp; // ✅ 추가
 
 type Body = {
   userId: string;
@@ -72,7 +74,6 @@ export async function POST(req: Request) {
       mode: "payment",
       success_url: successUrl,
       cancel_url: cancelUrl,
-
       client_reference_id: userId,
       metadata: {
         userId,
@@ -81,7 +82,6 @@ export async function POST(req: Request) {
         level,
         amount,
       },
-
       line_items: [
         {
           price: priceId,
@@ -90,7 +90,7 @@ export async function POST(req: Request) {
       ],
     });
 
-    // ✅ checkoutSessions 선기록 추가
+    // ✅ checkoutSessions 선기록 (serverTimestamp 적용)
     await db.collection("checkoutSessions").doc(session.id).set({
       sessionId: session.id,
       userId,
@@ -102,8 +102,8 @@ export async function POST(req: Request) {
       status: "created",
       processed: false,
       issuedCouponCodes: [],
-      createdAt: new Date(),
-      updatedAt: new Date(),
+      createdAt: serverTimestamp(), // ✅ 변경
+      updatedAt: serverTimestamp(), // ✅ 변경
     });
 
     return NextResponse.json({ url: session.url }, { status: 200 });
