@@ -82,7 +82,7 @@ export async function POST(req: Request) {
         lang: wantLang,
         series: wantSeries,
         level: finalLevel,
-        expiresAt: now + 1000 * 60 * 10, // 테스트용 10분
+        expiresAt: now + 1000 * 60 * 60 * 24 * 30, // 30일
         source: "coupon",
         code: couponCode,
         issuedAt: now,
