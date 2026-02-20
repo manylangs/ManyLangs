@@ -7,12 +7,25 @@ export default function ViewerHeader() {
   const router = useRouter();
   const { showTargetText, toggleTargetText } = useViewerTarget();
 
+  // 🔵 공통 버튼 스타일
+  const headerButtonStyle: React.CSSProperties = {
+    background: "none",
+    border: "none",
+    cursor: "pointer",
+    fontSize: 14,
+    padding: "10px 12px",
+    minHeight: "44px",
+    display: "flex",
+    alignItems: "center",
+    fontWeight: 500,
+  };
+
   return (
     <header
       style={{
         position: "sticky",
         top: 0,
-        zIndex: 1000,          // 🔴 반드시 1000
+        zIndex: 1000,
         background: "#fff",
         borderBottom: "1px solid #eee",
         padding: "8px 16px",
@@ -31,12 +44,7 @@ export default function ViewerHeader() {
         {/* Left */}
         <button
           onClick={() => router.push("/select-books")}
-          style={{
-            background: "none",
-            border: "none",
-            cursor: "pointer",
-            fontSize: 13,
-          }}
+          style={headerButtonStyle}
         >
           Back to Library
         </button>
@@ -45,11 +53,8 @@ export default function ViewerHeader() {
         <button
           onClick={toggleTargetText}
           style={{
-            background: "none",
-            border: "none",
-            cursor: "pointer",
-            fontSize: 13,
-            color: "#555",
+            ...headerButtonStyle,
+            color: showTargetText ? "#0a84ff" : "#888",
           }}
         >
           Target text: {showTargetText ? "ON" : "OFF"}

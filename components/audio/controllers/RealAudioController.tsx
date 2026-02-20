@@ -11,12 +11,12 @@ export default function RealAudioController({ src }: Props) {
     <div
       style={{
         position: "sticky",
-        top: 0,
-        zIndex: 100,
+        top: 100,          // 🔥 헤더 기준 통일
+        zIndex: 900,
         background: "#fff",
-        padding: "8px 0",
+        paddingTop: 8,
+        paddingBottom: 8,
         borderBottom: "1px solid #eee",
-        marginBottom: 12,
       }}
     >
       <AudioPlayer key={src} src={src} />

@@ -20,16 +20,9 @@ export default function ConversationAudioController({
   const [index, setIndex] = useState(0);
   const [ready, setReady] = useState(false);
 
-  /* =========================
-     ✅ Idiom과 동일한 규칙
-     (경로만 conversation)
-     ========================= */
   const audioSrc = `/audio/${lang}/conversation/${level}/conversation_${level}_${chapter}.wav`;
-  const cuesSrc  = `/audio/${lang}/conversation/${level}/conversation_${level}_${chapter}.cues.json`;
+  const cuesSrc = `/audio/${lang}/conversation/${level}/conversation_${level}_${chapter}.cues.json`;
 
-  /* =========================
-     cues.json 로드
-     ========================= */
   useEffect(() => {
     let cancelled = false;
 
@@ -60,10 +53,6 @@ export default function ConversationAudioController({
     };
   }, [cuesSrc]);
 
-  /* =========================
-     오디오 완전 리셋
-     (Idiom과 완전 동일)
-     ========================= */
   useEffect(() => {
     const el = audioRef.current;
     if (!el) return;
@@ -73,9 +62,6 @@ export default function ConversationAudioController({
     el.load();
   }, [audioSrc]);
 
-  /* =========================
-     정확한 세트 이동
-     ========================= */
   const seekTo = (next: number) => {
     const el = audioRef.current;
     if (!el) return;
@@ -87,44 +73,79 @@ export default function ConversationAudioController({
   };
 
   return (
-    <section>
-      {/* 🔊 AudioPlayer — Idiom과 100% 동일 */}
+    <section
+      style={{
+        position: "sticky",
+        top: 64,              // 🔥 헤더 높이에 맞게 (60~68 사이 조정 가능)
+        zIndex: 900,
+        background: "#fff",
+        paddingTop: 8,
+        paddingBottom: 8,
+        borderBottom: "1px solid #eee",
+      }}
+    >
       <AudioPlayer
         key={audioSrc}
         ref={audioRef}
         src={audioSrc}
       />
 
-      {/* ▶ 컨트롤 */}
       <div
         style={{
           display: "flex",
           alignItems: "center",
-          gap: 16,
-          marginTop: 8,
+          justifyContent: "space-between",
+          gap: 8,
+          marginTop: 12,
         }}
       >
-        {/* 이전 */}
         <button
           disabled={!ready || index === 0}
           onClick={() => seekTo(index - 1)}
+          style={{
+            padding: "10px 12px",
+            minHeight: "44px",
+            fontSize: 13,
+            fontWeight: 500,
+            borderRadius: 8,
+            border: "1px solid #ddd",
+            background: "#fff",
+            cursor: "pointer",
+          }}
         >
-          ◀ Previous Dialogue
+          ◀ Prev
         </button>
 
-        {/* 현재 / 전체 */}
         {ready && cues.length > 0 && (
-          <div style={{ fontWeight: 600 }}>
-            Dialogue {index + 1} / {cues.length}
+          <div
+            style={{
+              fontWeight: 600,
+              fontSize: 13,
+              minHeight: "44px",
+              display: "flex",
+              alignItems: "center",
+              whiteSpace: "nowrap",
+            }}
+          >
+            {index + 1} / {cues.length}
           </div>
         )}
 
-        {/* 다음 */}
         <button
           disabled={!ready || index >= cues.length - 1}
           onClick={() => seekTo(index + 1)}
+          style={{
+            padding: "10px 12px",
+            minHeight: "44px",
+            fontSize: 13,
+            fontWeight: 500,
+            borderRadius: 8,
+            border: "1px solid #ddd",
+            background: "#fff",
+            cursor: "pointer",
+          }}
         >
-          Next Dialogue ▶
+          Next ▶
         </button>
       </div>
     </section>

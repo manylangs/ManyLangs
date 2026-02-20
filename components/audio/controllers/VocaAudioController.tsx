@@ -20,13 +20,9 @@ export default function VocaAudioController({
   const [index, setIndex] = useState(0);
   const [ready, setReady] = useState(false);
 
-  // 🔁 Idiom → voca 경로만 변경
   const audioSrc = `/audio/${lang}/voca/${level}/voca_${level}_${chapter}.wav`;
   const cuesSrc = `/audio/${lang}/voca/${level}/voca_${level}_${chapter}.cues.json`;
 
-  /* =========================
-     cues.json 로드 (세트 전용)
-     ========================= */
   useEffect(() => {
     let cancelled = false;
 
@@ -37,16 +33,15 @@ export default function VocaAudioController({
       try {
         const res = await fetch(cuesSrc);
         const json = await res.json();
+
         if (!cancelled) {
-          // Idiom과 동일한 필드명 사용
           setCues(
             Array.isArray(json.setStartMs)
               ? json.setStartMs
               : Array.isArray(json.sets)
-                ? json.sets.map((s: any) => s.start_ms)
-                : []
+              ? json.sets.map((s: any) => s.start_ms)
+              : []
           );
-
           setReady(true);
         }
       } catch {
@@ -63,9 +58,6 @@ export default function VocaAudioController({
     };
   }, [cuesSrc]);
 
-  /* =========================
-     오디오 리셋
-     ========================= */
   useEffect(() => {
     const el = audioRef.current;
     if (!el) return;
@@ -75,48 +67,90 @@ export default function VocaAudioController({
     el.load();
   }, [audioSrc]);
 
-  /* =========================
-     세트 이동
-     ========================= */
   const seekTo = (next: number) => {
     const el = audioRef.current;
     if (!el) return;
     if (next < 0 || next >= cues.length) return;
 
     el.currentTime = cues[next] / 1000;
-    el.play().catch(() => { });
+    el.play().catch(() => {});
     setIndex(next);
   };
 
   return (
-    <section>
-      {/* 🔊 오디오 플레이어 (Idiom과 동일) */}
+    <section
+      style={{
+        position: "sticky",
+        top: 100,          // 🔥 모든 시리즈 동일 기준
+        zIndex: 900,
+        background: "#fff",
+        paddingTop: 8,
+        paddingBottom: 8,
+        borderBottom: "1px solid #eee",
+      }}
+    >
       <AudioPlayer
         key={audioSrc}
         ref={audioRef}
         src={audioSrc}
       />
 
-      {/* 🎛 컨트롤 UI (Idiom과 100% 동일) */}
-      <div style={{ display: "flex", gap: 16, marginTop: 8 }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          gap: 8,
+          marginTop: 12,
+        }}
+      >
         <button
           disabled={!ready || index === 0}
           onClick={() => seekTo(index - 1)}
+          style={{
+            padding: "10px 12px",
+            minHeight: "44px",
+            fontSize: 13,
+            fontWeight: 500,
+            borderRadius: 8,
+            border: "1px solid #ddd",
+            background: "#fff",
+            cursor: "pointer",
+          }}
         >
-          ◀ Previous Set
+          ◀ Prev
         </button>
 
         {ready && cues.length > 0 && (
-          <div style={{ fontWeight: 600 }}>
-            Set {index + 1} / {cues.length}
+          <div
+            style={{
+              fontWeight: 600,
+              fontSize: 13,
+              minHeight: "44px",
+              display: "flex",
+              alignItems: "center",
+              whiteSpace: "nowrap",
+            }}
+          >
+            {index + 1} / {cues.length}
           </div>
         )}
 
         <button
           disabled={!ready || index >= cues.length - 1}
           onClick={() => seekTo(index + 1)}
+          style={{
+            padding: "10px 12px",
+            minHeight: "44px",
+            fontSize: 13,
+            fontWeight: 500,
+            borderRadius: 8,
+            border: "1px solid #ddd",
+            background: "#fff",
+            cursor: "pointer",
+          }}
         >
-          Next Set ▶
+          Next ▶
         </button>
       </div>
     </section>

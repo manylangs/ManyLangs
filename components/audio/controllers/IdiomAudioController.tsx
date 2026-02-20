@@ -23,9 +23,6 @@ export default function IdiomAudioController({
   const audioSrc = `/audio/${lang}/idiom/${level}/idiom_${level}_${chapter}.wav`;
   const cuesSrc  = `/audio/${lang}/idiom/${level}/idiom_${level}_${chapter}.cues.json`;
 
-  /* =========================
-     cues.json 로드 (세트 전용)
-     ========================= */
   useEffect(() => {
     let cancelled = false;
 
@@ -54,9 +51,6 @@ export default function IdiomAudioController({
     };
   }, [cuesSrc]);
 
-  /* =========================
-     오디오 리셋
-     ========================= */
   useEffect(() => {
     const el = audioRef.current;
     if (!el) return;
@@ -66,9 +60,6 @@ export default function IdiomAudioController({
     el.load();
   }, [audioSrc]);
 
-  /* =========================
-     세트 이동
-     ========================= */
   const seekTo = (next: number) => {
     const el = audioRef.current;
     if (!el) return;
@@ -80,32 +71,79 @@ export default function IdiomAudioController({
   };
 
   return (
-    <section>
+    <section
+      style={{
+        position: "sticky",
+        top: 100,               // 🔥 헤더 기준 통일
+        zIndex: 900,
+        background: "#fff",
+        paddingTop: 8,
+        paddingBottom: 8,
+        borderBottom: "1px solid #eee",
+      }}
+    >
       <AudioPlayer
         key={audioSrc}
         ref={audioRef}
         src={audioSrc}
       />
 
-      <div style={{ display: "flex", gap: 16, marginTop: 8 }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          gap: 8,
+          marginTop: 12,
+        }}
+      >
         <button
           disabled={!ready || index === 0}
           onClick={() => seekTo(index - 1)}
+          style={{
+            padding: "10px 12px",
+            minHeight: "44px",
+            fontSize: 13,
+            fontWeight: 500,
+            borderRadius: 8,
+            border: "1px solid #ddd",
+            background: "#fff",
+            cursor: "pointer",
+          }}
         >
-          ◀ Previous Set
+          ◀ Prev
         </button>
 
         {ready && cues.length > 0 && (
-          <div style={{ fontWeight: 600 }}>
-            Set {index + 1} / {cues.length}
+          <div
+            style={{
+              fontWeight: 600,
+              fontSize: 13,
+              minHeight: "44px",
+              display: "flex",
+              alignItems: "center",
+              whiteSpace: "nowrap",
+            }}
+          >
+            {index + 1} / {cues.length}
           </div>
         )}
 
         <button
           disabled={!ready || index >= cues.length - 1}
           onClick={() => seekTo(index + 1)}
+          style={{
+            padding: "10px 12px",
+            minHeight: "44px",
+            fontSize: 13,
+            fontWeight: 500,
+            borderRadius: 8,
+            border: "1px solid #ddd",
+            background: "#fff",
+            cursor: "pointer",
+          }}
         >
-          Next Set ▶
+          Next ▶
         </button>
       </div>
     </section>

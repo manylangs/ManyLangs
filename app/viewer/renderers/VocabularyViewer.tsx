@@ -48,10 +48,10 @@ export default function VocabularyViewer({
       <div
         style={{
           position: "sticky",
-          top: 64,          // Header 높이에 맞춤 (필요시 60~72 조정)
+          top: 100,          // Header 높이에 맞춤 (필요시 60~72 조정)
           zIndex: 900,
           background: "#fff",
-          padding: "16px 24px 12px",
+          padding: 0,
           borderBottom: "1px solid #eee",
         }}
       >

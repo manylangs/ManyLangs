@@ -36,11 +36,11 @@ export default function IdiomViewer({ data, level, chapter, chapters }: any) {
       <div
         style={{
           position: "sticky",
-          top: 64,         // Header 높이에 맞춤
+          top: 100,         // Header 높이에 맞춤
           zIndex: 900,
           background: "#fff",
           borderBottom: "1px solid #eee",
-          padding: "16px 0 12px",
+          padding: 0,
         }}
       >
         <div style={{ maxWidth: 720, margin: "0 auto" }}>

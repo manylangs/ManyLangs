@@ -76,11 +76,11 @@ export default function ConversationViewer({
         <div
           style={{
             position: "sticky",
-            top: 64,         // Header 높이에 맞춤
+            top: 100,         // Header 높이에 맞춤
             zIndex: 900,
             background: "#fff",
             borderBottom: "1px solid #eee",
-            padding: "12px 0",
+            padding: 0,
           }}
         >
           <div style={{ maxWidth: 720, margin: "0 auto" }}>
