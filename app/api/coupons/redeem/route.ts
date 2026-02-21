@@ -15,9 +15,6 @@ type RedeemBody = {
 };
 
 export async function POST(req: Request) {
-  /* =======================
-     1️⃣ 서버 인증 (userId는 절대 body에서 받지 않음)
-  ======================== */
   const { userId } = await auth();
 
   if (!userId) {
@@ -27,9 +24,6 @@ export async function POST(req: Request) {
     );
   }
 
-  /* =======================
-     2️⃣ Body 파싱
-  ======================== */
   let body: RedeemBody;
 
   try {
@@ -51,6 +45,7 @@ export async function POST(req: Request) {
   }
 
   const couponCode = String(code).trim().toUpperCase();
+
   const finalLevel =
     series === "voca" || series === "idiom"
       ? "all"
@@ -77,7 +72,9 @@ export async function POST(req: Request) {
       const wantLang = String(lang).trim();
       const wantSeries = String(series).trim();
 
-      const licDocId = `${wantSeries}_${finalLevel}`;
+      // 🔥🔥🔥 핵심 수정 부분
+      const licDocId = `${wantLang}_${wantSeries}_${finalLevel}`;
+
       const licRef = db
         .collection("licenses")
         .doc(userId)
@@ -101,9 +98,6 @@ export async function POST(req: Request) {
         }
       }
 
-      /* =======================
-         3️⃣ 라이선스 생성
-      ======================== */
       const lic: License = {
         lang: wantLang,
         series: wantSeries,
