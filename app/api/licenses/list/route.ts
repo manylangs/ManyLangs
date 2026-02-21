@@ -1,11 +1,10 @@
 // app/api/licenses/list/route.ts
 import { NextResponse } from "next/server";
 import { db } from "@/lib/firebaseAdmin";
+import { auth } from "@clerk/nextjs/server";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
-
-type Body = { userId?: string };
 
 function toMs(v: any): number {
   if (!v) return 0;
@@ -15,17 +14,12 @@ function toMs(v: any): number {
   return Number.isFinite(n) ? n : 0;
 }
 
-export async function POST(req: Request) {
-  let body: Body = {};
-  try {
-    body = await req.json();
-  } catch {
-    return NextResponse.json({ error: "invalid body" }, { status: 400 });
-  }
+export async function POST() {
+  // ✅ Clerk 서버 인증 (타입 안전)
+  const { userId } = await auth();
 
-  const userId = String(body?.userId || "").trim();
   if (!userId) {
-    return NextResponse.json({ error: "missing userId" }, { status: 400 });
+    return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
   try {
@@ -47,16 +41,20 @@ export async function POST(req: Request) {
           lang: String(x.lang || ""),
           series: String(x.series || ""),
           level: String(x.level || ""),
-          expiresAt: expiresAtMs, // 프론트는 이 숫자만 믿는다
+          expiresAt: expiresAtMs,
           source: x.source ?? null,
           code: x.code ?? null,
           issuedAt: toMs(x.issuedAt) || toMs(x.issuedAtMs) || null,
           updatedAt: toMs(x.updatedAt) || null,
         };
       })
-      // ✅ 만료 안 된 것만
-      .filter((l) => !!l.lang && !!l.series && !!l.level && l.expiresAt > serverNowMs)
-      // 최신 만료순(남은시간 짧은게 위로) 또는 필요하면 반대로 바꿔도 됨
+      .filter(
+        (l) =>
+          !!l.lang &&
+          !!l.series &&
+          !!l.level &&
+          l.expiresAt > serverNowMs
+      )
       .sort((a, b) => a.expiresAt - b.expiresAt);
 
     return NextResponse.json(
@@ -69,7 +67,8 @@ export async function POST(req: Request) {
       }
     );
   } catch (e: any) {
-    const msg = typeof e?.message === "string" ? e.message : "list failed";
+    const msg =
+      typeof e?.message === "string" ? e.message : "list failed";
     return NextResponse.json({ error: msg }, { status: 500 });
   }
 }

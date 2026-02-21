@@ -3,9 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { useAuth } from "@clerk/nextjs";
-import { cleanExpiredLibrary, isExpired, type License } from "@/lib/license";
 
-// /viewer/kr/grammar/a1/001 형태 기준
 function parseViewerPath(pathname: string) {
   const parts = pathname.split("/").filter(Boolean);
   const idx = parts.indexOf("viewer");
@@ -18,71 +16,113 @@ function parseViewerPath(pathname: string) {
   };
 }
 
-// series별 level 정규화
 function normalizeLevel(series: string, level: string) {
   if (series === "voca" || series === "idiom") return "all";
   return level;
 }
 
-export default function ViewerGuard({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function ViewerGuard({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   const pathname = usePathname();
   const { userId, isLoaded } = useAuth();
 
-  const [ready, setReady] = useState(false);
-  const [allowed, setAllowed] = useState(false);
+  const [authorized, setAuthorized] = useState(false);
+  const [checked, setChecked] = useState(false);
 
   const req = useMemo(() => parseViewerPath(pathname), [pathname]);
+  console.log("ViewerGuard pathname:", pathname);
 
   useEffect(() => {
-    // ✅ auth 준비 전에는 판단하지 않음
+    console.log("isLoaded:", isLoaded);
+    console.log("userId:", userId);
+    console.log("req:", req);
     if (!isLoaded) return;
 
-    // ✅ 로그아웃 상태면 로그인으로
     if (!userId) {
       router.replace("/login");
       return;
     }
 
-    // viewer 경로 아니면 패스
     if (!req) {
-      setAllowed(true);
-      setReady(true);
+      setAuthorized(true);
+      setChecked(true);
       return;
     }
 
-    const reqLang = req.lang || "kr";
-    const reqSeries = req.series;
-    const reqLevel = normalizeLevel(req.series, req.level);
+    const verify = async () => {
+      try {
+        console.log("REQ:", req);
 
-    // ✅ ✅ ✅ (변경 포인트) 계정별 라이브러리로 만료 정리 + 단일 진실
-    const library: License[] = cleanExpiredLibrary(userId);
+        const res = await fetch("/api/licenses/list", {
+          method: "POST",
+          cache: "no-store",
+        });
 
-    const hit = library.find((item) => {
-      const itemLevel = normalizeLevel(item.series, item.level);
-      return (
-        item.lang === reqLang &&
-        item.series === reqSeries &&
-        itemLevel === reqLevel
-      );
-    });
+        if (!res.ok) {
+          router.replace("/select-books");
+          return;
+        }
 
-    // ❌ 미보유 or 만료 → 차단
-    if (!hit || isExpired(hit.expiresAt)) {
-      router.replace("/select-books");
-      return;
-    }
+        const data = await res.json();
 
-    setAllowed(true);
-    setReady(true);
+        console.log("SERVER LICENSES:", data.licenses);
+
+        const reqLang = req.lang || "kr";
+        const reqSeries = req.series;
+        const reqLevel = normalizeLevel(req.series, req.level);
+        const now = Date.now();
+
+        console.log("CHECKING:", {
+          reqLang,
+          reqSeries,
+          reqLevel,
+          now,
+        });
+
+        const hit = data.licenses?.find((item: any) => {
+          const itemLevel = normalizeLevel(item.series, item.level);
+
+          console.log("COMPARE:", {
+            itemLang: item.lang,
+            itemSeries: item.series,
+            itemLevel: item.level,
+            normalizedItemLevel: itemLevel,
+            expiresAt: item.expiresAt,
+            isValid: item.expiresAt > now,
+          });
+
+          return (
+            item.lang === reqLang &&
+            item.series === reqSeries &&
+            itemLevel === reqLevel &&
+            item.expiresAt > now
+          );
+        });
+
+        console.log("HIT RESULT:", hit);
+
+        if (!hit) {
+          router.replace("/select-books");
+          return;
+        }
+
+        setAuthorized(true);
+      } catch (e) {
+        console.log("VERIFY ERROR:", e);
+        router.replace("/select-books");
+      } finally {
+        setChecked(true);
+      }
+    };
+
+    verify();
   }, [req, router, isLoaded, userId]);
 
-  if (!ready) return null;
-  if (!allowed) return null;
+  // 🔥 검증 완료 전에는 절대 렌더 금지
+  if (!checked) return null;
+
+  // 🔥 인증 실패면 절대 렌더 금지
+  if (!authorized) return null;
 
   return <>{children}</>;
 }
