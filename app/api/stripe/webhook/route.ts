@@ -35,11 +35,10 @@ export async function POST(req: Request) {
   const session = event.data.object as Stripe.Checkout.Session;
   const eventId = event.id;
 
-  const metadata = session.metadata ?? {};
-  const userId = metadata.userId;
+  const userId = session.client_reference_id as string | null;
 
   if (!userId) {
-    return NextResponse.json({ error: "missing userId" }, { status: 400 });
+    return NextResponse.json({ error: "missing client_reference_id" }, { status: 400 });
   }
 
   if (session.payment_status !== "paid") {
@@ -88,7 +87,7 @@ export async function POST(req: Request) {
 
       // 2️⃣ 쿠폰 생성 (transaction 내부)
       const coupons = createCouponsTx(tx, userId, qty);
- 
+
       // 3️⃣ checkoutSessions 확정
       tx.set(
         checkoutRef,
