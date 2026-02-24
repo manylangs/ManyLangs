@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { useUser } from "@clerk/nextjs";
 
@@ -21,11 +21,7 @@ function normalizeLevel(series: string, level: string) {
   return level;
 }
 
-export default function ViewerGuard({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function ViewerGuard({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   const pathname = usePathname();
   const { isLoaded, isSignedIn } = useUser();
@@ -35,82 +31,119 @@ export default function ViewerGuard({
 
   const req = useMemo(() => parseViewerPath(pathname), [pathname]);
 
-  useEffect(() => {
-    // 🔥 Clerk 세션 복원 완료까지 절대 아무것도 하지 않음
+  // 동시 검증 방지
+  const inFlightRef = useRef(false);
+
+  const verify = async () => {
     if (!isLoaded) return;
 
-    // 🔥 로그인 안 되어 있으면 로그인 페이지로
     if (!isSignedIn) {
+      setAuthorized(false);
+      setChecked(true);
       router.replace("/login");
       return;
     }
 
-    // viewer 경로가 아니면 통과
     if (!req) {
       setAuthorized(true);
       setChecked(true);
       return;
     }
 
-    const verify = async () => {
-      try {
-        const res = await fetch("/api/licenses/list", {
+    if (inFlightRef.current) return;
+    inFlightRef.current = true;
+
+    // 🔥 bfcache 복귀 시 “잠깐 보임” 방지
+    setChecked(false);
+    setAuthorized(false);
+
+    try {
+      const doFetch = () =>
+        fetch("/api/licenses/list", {
           method: "POST",
           cache: "no-store",
-          credentials: "include", // 🔥 세션 쿠키 확실히 포함
+          credentials: "include",
         });
 
-        // 🔥 401이면 아직 세션 복원 중일 수 있으므로 바로 차단하지 않음
-        if (res.status === 401) {
-          return;
-        }
+      let res = await doFetch();
 
-        if (!res.ok) {
-          router.replace("/select-books");
-          return;
-        }
-
-        const data = await res.json();
-
-        const reqLang = req.lang || "kr";
-        const reqSeries = req.series;
-        const reqLevel = normalizeLevel(req.series, req.level);
-        const now = data.serverNowMs || Date.now();
-
-        const hit = data.licenses?.find((item: any) => {
-          const itemLevel = normalizeLevel(item.series, item.level);
-
-          return (
-            item.lang === reqLang &&
-            item.series === reqSeries &&
-            itemLevel === reqLevel &&
-            item.expiresAt > now
-          );
-        });
-
-        if (!hit) {
-          router.replace("/select-books");
-          return;
-        }
-
-        setAuthorized(true);
-      } catch (e) {
-        router.replace("/select-books");
-      } finally {
-        setChecked(true);
+      // 🔥 401은 세션 복원/타이밍일 수 있어 1회 재시도
+      if (res.status === 401) {
+        res = await doFetch();
       }
-    };
 
+      if (res.status === 401) {
+        router.replace("/login");
+        return;
+      }
+
+      if (!res.ok) {
+        router.replace("/select-books");
+        return;
+      }
+
+      const data = await res.json();
+
+      const reqLang = req.lang || "kr";
+      const reqSeries = req.series;
+      const reqLevel = normalizeLevel(req.series, req.level);
+      const now = data.serverNowMs || Date.now();
+
+      const hit = data.licenses?.find((item: any) => {
+        const itemLevel = normalizeLevel(item.series, item.level);
+        return (
+          item.lang === reqLang &&
+          item.series === reqSeries &&
+          itemLevel === reqLevel &&
+          item.expiresAt > now
+        );
+      });
+
+      if (!hit) {
+        router.replace("/select-books");
+        return;
+      }
+
+      setAuthorized(true);
+    } catch {
+      router.replace("/select-books");
+    } finally {
+      inFlightRef.current = false;
+      setChecked(true);
+    }
+  };
+
+  // 최초/경로변경 검증
+  useEffect(() => {
+    if (!isLoaded) return;
     verify();
-  }, [req, router, isLoaded, isSignedIn]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [req?.lang, req?.series, req?.level, isLoaded, isSignedIn]);
 
-  // 🔥 인증 복원 전엔 렌더 금지
+  // 🔥 bfcache/탭복귀/포커스복귀에서도 재검증
+  useEffect(() => {
+    if (!req) return;
+
+    const onPageShow = () => verify(); // 뒤로/앞으로(bfcache 포함)
+    const onVis = () => {
+      if (document.visibilityState === "visible") verify();
+    };
+    const onFocus = () => verify();
+
+    window.addEventListener("pageshow", onPageShow);
+    document.addEventListener("visibilitychange", onVis);
+    window.addEventListener("focus", onFocus);
+
+    return () => {
+      window.removeEventListener("pageshow", onPageShow);
+      document.removeEventListener("visibilitychange", onVis);
+      window.removeEventListener("focus", onFocus);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [req?.lang, req?.series, req?.level, isLoaded, isSignedIn]);
+
   if (!isLoaded) return null;
-
-  // 🔥 검증 완료 전 렌더 금지
   if (!checked) return null;
-
-  // 🔥 인증 실패 렌더 금지
   if (!authorized) return null;
 
   return <>{children}</>;
