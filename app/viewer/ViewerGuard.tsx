@@ -87,8 +87,12 @@ export default function ViewerGuard({ children }: { children: React.ReactNode })
       const reqLang = req.lang || "kr";
       const reqSeries = req.series;
       const reqLevel = normalizeLevel(req.series, req.level);
-      const now = data.serverNowMs || Date.now();
+      if (typeof data.serverNowMs !== "number") {
+        router.replace("/select-books");
+        return;
+      }
 
+      const now = data.serverNowMs;
       const hit = data.licenses?.find((item: any) => {
         const itemLevel = normalizeLevel(item.series, item.level);
         return (
