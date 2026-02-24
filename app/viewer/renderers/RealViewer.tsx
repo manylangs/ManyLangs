@@ -70,7 +70,12 @@ async function fetchSignedUrl(path: string): Promise<string> {
     return inflight.get(path)!;
   }
 
-  const p = fetch(`/api/content/signed-url?path=${encodeURIComponent(path)}`)
+  const base =
+    typeof window !== "undefined"
+      ? window.location.origin
+      : "";
+
+  const p = fetch(`${base}/api/content/signed-url?path=${encodeURIComponent(path)}`)
     .then((res) => {
       if (!res.ok) throw new Error("Failed signed-url");
       return res.json();
@@ -97,12 +102,18 @@ async function fetchSignedUrl(path: string): Promise<string> {
 
 /* =============================== */
 
+type LoadStatus = "idle" | "loading" | "ready" | "error";
+
 export default function RealViewer({ level, chapter, data }: Props) {
   const [lang, setLang] = useState<StudyLang>("en");
   const { showTargetText } = useViewerTarget();
 
   const [audioUrl, setAudioUrl] = useState<string>("");
   const [imageUrl, setImageUrl] = useState<string>("");
+
+  // ✅ 실패 보호 상태
+  const [status, setStatus] = useState<LoadStatus>("idle");
+  const [errorMsg, setErrorMsg] = useState<string>("");
 
   const chapters = useMemo(
     () => Array.from({ length: 20 }, (_, i) => String(i + 1).padStart(3, "0")),
@@ -112,60 +123,149 @@ export default function RealViewer({ level, chapter, data }: Props) {
   const currentIndex = chapters.indexOf(chapter);
   const prev = currentIndex > 0 ? chapters[currentIndex - 1] : chapter;
   const next =
-    currentIndex < chapters.length - 1
-      ? chapters[currentIndex + 1]
-      : chapter;
+    currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : chapter;
 
   const descBlock = data.blocks.find(
     (b) => b.type === "description"
   ) as { type: "description"; sentences: Sentence[] } | undefined;
 
+  // ✅ 수동 재시도 트리거
+  const [retryTick, setRetryTick] = useState(0);
+
   useEffect(() => {
     let cancelled = false;
+    const controller = new AbortController();
 
-    const load = async () => {
+    const loadOnce = async () => {
+      setStatus("loading");
+      setErrorMsg("");
+      setAudioUrl("");
+      setImageUrl("");
+
+      const manifestPath = `content/real/kr/${level}/${chapter}/manifest.json`;
+      const manifestSignedUrl = await fetchSignedUrl(manifestPath);
+
+      const manifestRes = await fetch(manifestSignedUrl, {
+        signal: controller.signal,
+        cache: "no-store",
+      });
+      if (!manifestRes.ok) throw new Error("Manifest fetch failed");
+
+      const manifest = await manifestRes.json();
+
+      const audioAsset = manifest.assets?.find((a: any) => a.kind === "audio");
+      const imageAsset = manifest.assets?.find((a: any) => a.kind === "image");
+
+      // audio
+      if (audioAsset && !cancelled) {
+        const audioPath = `content/real/kr/${level}/${chapter}/${audioAsset.path}`;
+        const signedAudio = await fetchSignedUrl(audioPath);
+        if (!cancelled) setAudioUrl(signedAudio);
+      }
+
+      // image
+      if (imageAsset && !cancelled) {
+        const imagePath = `content/real/kr/${level}/${chapter}/${imageAsset.path}`;
+        const signedImage = await fetchSignedUrl(imagePath);
+        if (!cancelled) setImageUrl(signedImage);
+      }
+
+      if (!cancelled) setStatus("ready");
+    };
+
+    const loadWithRetry = async () => {
       try {
-        setAudioUrl("");
-        setImageUrl("");
-
-        const manifestPath = `content/real/kr/${level}/${chapter}/manifest.json`;
-        const manifestSignedUrl = await fetchSignedUrl(manifestPath);
-
-        const manifestRes = await fetch(manifestSignedUrl);
-        if (!manifestRes.ok) throw new Error("Manifest fetch failed");
-
-        const manifest = await manifestRes.json();
-
-        const audioAsset = manifest.assets.find(
-          (a: any) => a.kind === "audio"
-        );
-
-        const imageAsset = manifest.assets.find(
-          (a: any) => a.kind === "image"
-        );
-
-        if (audioAsset && !cancelled) {
-          const audioPath = `content/real/kr/${level}/${chapter}/${audioAsset.path}`;
-          const signedAudio = await fetchSignedUrl(audioPath);
-          if (!cancelled) setAudioUrl(signedAudio);
+        await loadOnce();
+      } catch (e: any) {
+        if (cancelled) return;
+        // ✅ 1회 자동 재시도
+        try {
+          await new Promise((r) => setTimeout(r, 400));
+          await loadOnce();
+        } catch (e2: any) {
+          if (cancelled) return;
+          const msg =
+            typeof e2?.message === "string"
+              ? e2.message
+              : "콘텐츠 로딩에 실패했습니다.";
+          setErrorMsg(msg);
+          setStatus("error");
+          console.error("Signed URL load failed:", e2);
         }
-
-        if (imageAsset && !cancelled) {
-          const imagePath = `content/real/kr/${level}/${chapter}/${imageAsset.path}`;
-          const signedImage = await fetchSignedUrl(imagePath);
-          if (!cancelled) setImageUrl(signedImage);
-        }
-      } catch (e) {
-        console.error("Signed URL load failed:", e);
       }
     };
 
-    load();
+    loadWithRetry();
 
     return () => {
       cancelled = true;
+      controller.abort();
     };
-  }, [level, chapter]);
+  }, [level, chapter, retryTick]);
+
+  const LoadingBar = () => (
+    <div
+      style={{
+        padding: "10px 12px",
+        border: "1px solid #eee",
+        borderRadius: 8,
+        background: "#fafafa",
+        color: "#444",
+        fontSize: 14,
+        marginBottom: 12,
+      }}
+    >
+      로딩 중…
+    </div>
+  );
+
+  const ErrorPanel = () => (
+    <div
+      style={{
+        padding: "12px 12px",
+        border: "1px solid #f2c5c5",
+        borderRadius: 8,
+        background: "#fff7f7",
+        color: "#7a1f1f",
+        fontSize: 14,
+        marginBottom: 12,
+      }}
+    >
+      <div style={{ marginBottom: 8 }}>
+        콘텐츠를 불러오지 못했습니다. (네트워크/권한/서버 문제 가능)
+      </div>
+      <div style={{ color: "#8b3a3a", marginBottom: 10 }}>
+        {errorMsg || "알 수 없는 오류"}
+      </div>
+      <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+        <button
+          onClick={() => setRetryTick((x) => x + 1)}
+          style={{
+            padding: "6px 10px",
+            borderRadius: 6,
+            border: "1px solid #ddd",
+            background: "#fff",
+            cursor: "pointer",
+          }}
+        >
+          다시 시도
+        </button>
+        <Link
+          href="/select-books"
+          style={{
+            padding: "6px 10px",
+            borderRadius: 6,
+            border: "1px solid #ddd",
+            background: "#fff",
+            color: "#333",
+            textDecoration: "none",
+          }}
+        >
+          라이브러리로
+        </Link>
+      </div>
+    </div>
+  );
 
   return (
     <>
@@ -180,11 +280,15 @@ export default function RealViewer({ level, chapter, data }: Props) {
         }}
       >
         <div style={{ maxWidth: 720, margin: "0 auto" }}>
-          {audioUrl && <RealAudioController src={audioUrl} />}
+          {/* ✅ 로딩/실패 보호: 오디오 컨트롤러는 url 있을 때만 */}
+          {audioUrl ? <RealAudioController src={audioUrl} /> : null}
         </div>
       </div>
 
       <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
+        {/* ✅ 로딩/에러 UI */}
+        {status === "loading" && <LoadingBar />}
+        {status === "error" && <ErrorPanel />}
 
         {/* 🌐 학습 언어 */}
         <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
@@ -244,24 +348,32 @@ export default function RealViewer({ level, chapter, data }: Props) {
 
         {/* 🖼 + 📝 콘텐츠 */}
         <section style={{ display: "flex", gap: 20, flexWrap: "wrap" }}>
-          {imageUrl && (
-            <div style={{ flex: "0 0 300px" }}>
+          {/* ✅ 로딩 중엔 이미지가 비어도 레이아웃 흔들림 최소화 */}
+          <div style={{ flex: "0 0 300px" }}>
+            {imageUrl ? (
               <img
                 src={imageUrl}
                 alt=""
                 style={{ width: "100%", borderRadius: 8 }}
               />
-            </div>
-          )}
+            ) : (
+              <div
+                style={{
+                  width: "100%",
+                  height: 200,
+                  borderRadius: 8,
+                  background: "#f3f3f3",
+                }}
+              />
+            )}
+          </div>
 
           {descBlock && (
             <div style={{ flex: "1 1 300px" }}>
               {descBlock.sentences.map((s, i) => (
                 <div key={i} style={{ marginBottom: 14 }}>
                   {showTargetText && <div>{s.texts.kr}</div>}
-                  <div style={{ color: "#444" }}>
-                    {s.texts[lang]}
-                  </div>
+                  <div style={{ color: "#444" }}>{s.texts[lang]}</div>
                 </div>
               ))}
             </div>
