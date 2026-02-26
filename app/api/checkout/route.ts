@@ -77,11 +77,29 @@ export async function POST(req: Request) {
     );
   }
 
-  const { lang, series, level, amount } = body;
+  let { lang, series, level, amount } = body;
 
-  if (!lang || !series || !level || !amount) {
+  if (!lang || !series || !amount) {
     return NextResponse.json(
       { error: "missing required fields" },
+      { status: 400 }
+    );
+  }
+
+  // ✅ 서버 강제 보정 (클라이언트 조작 방지)
+  if (series === "voca" || series === "idiom") {
+    level = "all";
+  }
+
+  // ✅ 레벨 필요한 시리즈만 검증
+  const requiresLevel =
+    series === "grammar" ||
+    series === "conversation" ||
+    series === "real";
+
+  if (requiresLevel && !level) {
+    return NextResponse.json(
+      { error: "level required" },
       { status: 400 }
     );
   }

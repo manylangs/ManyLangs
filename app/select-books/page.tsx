@@ -42,8 +42,8 @@ const SERIES_CONFIG: Record<string, { label: string; hasLevel: boolean }> = {
   grammar: { label: "Grammar", hasLevel: true },
   conversation: { label: "Conversation", hasLevel: true },
   real: { label: "Real", hasLevel: true },
-  voca: { label: "Vocabulary", hasLevel: true },
-  idiom: { label: "Idiom", hasLevel: true },
+  voca: { label: "Vocabulary", hasLevel: false },   // ✅ 단권
+  idiom: { label: "Idiom", hasLevel: false },       // ✅ 단권
 };
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
@@ -387,7 +387,8 @@ export default function SelectBooksPage() {
       return;
     }
 
-    const finalLevel = level;
+    const finalLevel =
+      SERIES_CONFIG[book].hasLevel ? level : "all";
 
     try {
       const res = await fetch("/api/coupons/redeem", {
@@ -466,7 +467,8 @@ export default function SelectBooksPage() {
       return;
     }
 
-    const finalLevel = level;
+    const finalLevel =
+      SERIES_CONFIG[book].hasLevel ? level : "all";
 
     try {
       const res = await fetch("/api/checkout", {

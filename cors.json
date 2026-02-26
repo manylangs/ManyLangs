@@ -1,1 +1,24 @@
-[{"origin":["https://manylangs.studio","https://www.manylangs.studio","http://localhost:3000","http://127.0.0.1:3000"],"method":["GET","HEAD"],"responseHeader":["Content-Type","Content-Length","Accept-Ranges","Cache-Control","ETag","Last-Modified"],"maxAgeSeconds":3600}]
+[
+  {
+    "origin": [
+      "http://localhost:3000",
+      "http://127.0.0.1:3000",
+      "https://manylangs.studio",
+      "https://www.manylangs.studio",
+      "https://manylangs.vercel.app",
+      "https://*.vercel.app"
+    ],
+    "method": ["GET", "HEAD"],
+    "responseHeader": [
+      "Content-Type",
+      "Content-Length",
+      "Accept-Ranges",
+      "Cache-Control",
+      "ETag",
+      "Last-Modified",
+      "Authorization",
+      "x-goog-meta-*"
+    ],
+    "maxAgeSeconds": 3600
+  }
+]

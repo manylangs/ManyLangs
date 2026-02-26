@@ -10,13 +10,34 @@ function bad(msg: string, status = 400) {
   return NextResponse.json({ error: msg }, { status });
 }
 
+/* 🔒 강화된 path 검증 */
 function parseAndValidatePath(raw: string) {
   if (!raw) throw new Error("Missing path");
 
-  const p = decodeURIComponent(raw).trim();
+  let p = raw.trim();
+
+  // 🔐 최대 2회 decode 허용 (double encoding 차단)
+  try {
+    const d1 = decodeURIComponent(p);
+    const d2 = d1.includes("%") ? decodeURIComponent(d1) : d1;
+    if (d2.includes("%")) throw new Error("Excess encoding");
+    p = d2;
+  } catch {
+    throw new Error("Decode failed");
+  }
+
+  // 🔒 절대경로 / 스킴 차단
+  if (p.startsWith("/") || /^[a-zA-Z]+:\/\//.test(p)) {
+    throw new Error("Invalid path");
+  }
 
   // 🔒 위험 패턴 차단
-  if (p.includes("..") || p.includes("\\") || p.includes("//")) {
+  if (
+    p.includes("..") ||
+    p.includes("\\") ||
+    p.includes("//") ||
+    p.includes("/./")
+  ) {
     throw new Error("Invalid path");
   }
 
@@ -24,13 +45,11 @@ function parseAndValidatePath(raw: string) {
     throw new Error("Invalid root");
   }
 
-  // content/{series}/{lang}/{level}/{chapter}/...
   const parts = p.split("/");
   if (parts.length < 6) throw new Error("Invalid path shape");
 
   const [, series, lang, level, chapter] = parts;
 
-  // 🔒 시리즈 화이트리스트
   const allowedSeries = new Set([
     "real",
     "voca",
@@ -42,7 +61,6 @@ function parseAndValidatePath(raw: string) {
     throw new Error("Invalid series");
   }
 
-  // 🔒 형식 검증
   if (!/^[a-z]{2}$/.test(lang)) {
     throw new Error("Invalid lang");
   }
@@ -55,7 +73,7 @@ function parseAndValidatePath(raw: string) {
     throw new Error("Invalid chapter_id");
   }
 
-  return { path: p, series, lang, level, chapter };
+  return { path: p, series, lang, level };
 }
 
 function toMs(v: any): number {
@@ -75,8 +93,16 @@ export async function GET(req: Request) {
     const rawPath = url.searchParams.get("path") || "";
     const { path, series, lang, level } = parseAndValidatePath(rawPath);
 
-    // 🔒 라이선스 검증
-    const itemId = `${lang}_${series}_${level}`;
+    /* 🔒 라이선스 검증 */
+    let itemId: string;
+
+    if (series === "voca" || series === "idiom") {
+      // 단권 구조
+      itemId = `${lang}_${series}_all`;
+    } else {
+      // 레벨 구조
+      itemId = `${lang}_${series}_${level}`;
+    }
 
     const doc = await db
       .collection("licenses")
@@ -96,22 +122,27 @@ export async function GET(req: Request) {
       return bad("Forbidden", 403);
     }
 
-    // ✅ Signed URL 발급 (KR Real 캐시 전략 반영)
     const bucket = getStorage().bucket();
     const file = bucket.file(path);
 
-    // 🎯 KR Real 전략: 45분 TTL
-    const TTL_MINUTES = 45;
+    const [exists] = await file.exists();
+    if (!exists) {
+      return bad("File not found", 404);
+    }
+
+    // 🎯 TTL 10분
+    const TTL_MINUTES = 10;
+    const expiresAt = Date.now() + 1000 * 60 * TTL_MINUTES;
 
     const [signedUrl] = await file.getSignedUrl({
       version: "v4",
       action: "read",
-      expires: Date.now() + 1000 * 60 * TTL_MINUTES,
+      expires: expiresAt,
     });
 
     return NextResponse.json({
       url: signedUrl,
-      expiresAt: Date.now() + 1000 * 60 * TTL_MINUTES,
+      expiresAt,
     });
 
   } catch (e: any) {
