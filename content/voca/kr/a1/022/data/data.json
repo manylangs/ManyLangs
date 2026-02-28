@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a1",
+    "id": "022"
+  },
+  "title": {
+    "target": "A1 — 일상 어휘",
+    "en": "A1 — Everyday Vocabulary",
+    "es": "A1 — Vocabulario cotidiano",
+    "fr": "A1 — Vocabulaire quotidien",
+    "pt": "A1 — Vocabulário do dia a dia"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "벌레",
+        "en": "bug",
+        "es": "insecto",
+        "fr": "insecte",
+        "pt": "inseto"
+      },
+      "examples": [
+        {
+          "target": "방에 벌레가 있어요.",
+          "en": "There is a bug in the room.",
+          "es": "Hay un insecto en la habitación.",
+          "fr": "Il y a un insecte dans la pièce.",
+          "pt": "Há um inseto no quarto."
+        },
+        {
+          "target": "벌레를 무서워해요.",
+          "en": "I am afraid of bugs.",
+          "es": "Tengo miedo de los insectos.",
+          "fr": "J'ai peur des insectes.",
+          "pt": "Tenho medo de insetos."
+        },
+        {
+          "target": "벌레가 창문으로 들어왔어요.",
+          "en": "A bug came in through the window.",
+          "es": "Un insecto entró por la ventana.",
+          "fr": "Un insecte est entré par la fenêtre.",
+          "pt": "Um inseto entrou pela janela."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "식물",
+        "en": "plant",
+        "es": "planta",
+        "fr": "plante",
+        "pt": "planta"
+      },
+      "examples": [
+        {
+          "target": "식물을 잘 키우고 있어요.",
+          "en": "I am growing a plant well.",
+          "es": "Estoy cuidando bien una planta.",
+          "fr": "Je fais bien pousser une plante.",
+          "pt": "Estou a cuidar bem de uma planta."
+        },
+        {
+          "target": "식물에 물을 줘야 해요.",
+          "en": "You need to water the plant.",
+          "es": "Debes regar la planta.",
+          "fr": "Vous devez arroser la plante.",
+          "pt": "Precisas regar a planta."
+        },
+        {
+          "target": "이 식물은 햇빛이 많이 필요해요.",
+          "en": "This plant needs a lot of sunlight.",
+          "es": "Esta planta necesita mucha luz solar.",
+          "fr": "Cette plante a besoin de beaucoup de soleil.",
+          "pt": "Esta planta precisa de muita luz solar."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "꽃집",
+        "en": "flower shop",
+        "es": "floristería",
+        "fr": "fleuriste",
+        "pt": "florista"
+      },
+      "examples": [
+        {
+          "target": "꽃집에서 꽃을 샀어요.",
+          "en": "I bought flowers at the flower shop.",
+          "es": "Compré flores en la floristería.",
+          "fr": "J'ai acheté des fleurs chez le fleuriste.",
+          "pt": "Comprei flores na florista."
+        },
+        {
+          "target": "이 꽃집은 정말 예뻐요.",
+          "en": "This flower shop is really pretty.",
+          "es": "Esta floristería es muy bonita.",
+          "fr": "Cette boutique de fleurs est très jolie.",
+          "pt": "Esta florista é muito bonita."
+        },
+        {
+          "target": "꽃집에서 선물을 준비하고 있어요.",
+          "en": "I am preparing a gift at the flower shop.",
+          "es": "Estoy preparando un regalo en la floristería.",
+          "fr": "Je prépare un cadeau chez le fleuriste.",
+          "pt": "Estou a preparar um presente na florista."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "교실",
+        "en": "classroom",
+        "es": "aula",
+        "fr": "salle de classe",
+        "pt": "sala de aula"
+      },
+      "examples": [
+        {
+          "target": "교실에 학생들이 있어요.",
+          "en": "There are students in the classroom.",
+          "es": "Hay estudiantes en el aula.",
+          "fr": "Il y a des élèves dans la salle de classe.",
+          "pt": "Há alunos na sala de aula."
+        },
+        {
+          "target": "교실이 넓어요.",
+          "en": "The classroom is spacious.",
+          "es": "El aula es amplia.",
+          "fr": "La salle de classe est spacieuse.",
+          "pt": "A sala de aula é espaçosa."
+        },
+        {
+          "target": "교실에서 수업을 들어요.",
+          "en": "I take classes in the classroom.",
+          "es": "Tomo clases en el aula.",
+          "fr": "Je suis les cours dans la salle de classe.",
+          "pt": "Tenho aulas na sala de aula."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "칠판",
+        "en": "blackboard",
+        "es": "pizarra",
+        "fr": "tableau",
+        "pt": "quadro"
+      },
+      "examples": [
+        {
+          "target": "칠판에 글을 써 주세요.",
+          "en": "Please write on the blackboard.",
+          "es": "Por favor, escribe en la pizarra.",
+          "fr": "Veuillez écrire au tableau.",
+          "pt": "Por favor, escreve no quadro."
+        },
+        {
+          "target": "칠판을 지웠어요.",
+          "en": "I erased the blackboard.",
+          "es": "Borré la pizarra.",
+          "fr": "J'ai effacé le tableau.",
+          "pt": "Apaguei o quadro."
+        },
+        {
+          "target": "칠판에 문제가 적혀 있어요.",
+          "en": "There is a question written on the blackboard.",
+          "es": "Hay una pregunta escrita en la pizarra.",
+          "fr": "Il y a une question écrite au tableau.",
+          "pt": "Há uma pergunta escrita no quadro."
+        }
+      ]
+    }
+  ]
+}

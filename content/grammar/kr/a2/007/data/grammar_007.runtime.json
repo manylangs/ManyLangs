@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "a2",
+    "id": "007"
+  },
+  "title": {
+    "target": "-(으)면 (조건)",
+    "en": "-(으)면 (If / Condition)",
+    "es": "-(으)면 (Si / Condición)",
+    "fr": "-(으)면 (Si / Condition)",
+    "pt": "-(으)면 (Se / Condição)"
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "-(으)면은 어떤 조건이 이루어졌을 때 뒤의 결과가 나타남을 표현합니다.",
+        "en": "The form -(으)면 is used when a certain condition leads to a result.",
+        "es": "La forma -(으)면 se usa cuando una condición lleva a un resultado.",
+        "fr": "La forme -(으)면 est utilisée lorsqu’une condition entraîne un résultat.",
+        "pt": "A forma -(으)면 é usada quando uma certa condição leva a um resultado."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'만약 ~하면'과 비슷하며 가정 상황에 자주 쓰입니다.",
+        "en": "It is similar to saying 'if ~' and is commonly used for hypothetical situations.",
+        "es": "Es similar a decir ‘si ~’ y se usa a menudo en situaciones hipotéticas.",
+        "fr": "Elle est similaire à ‘si ~’ et s’emploie souvent dans des situations hypothétiques.",
+        "pt": "É semelhante a dizer 'se ~' e é frequentemente usada em situações hipotéticas."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "현실적이거나 실제 가능한 조건을 말할 때 사용합니다.",
+        "en": "It is used for realistic or possible conditions.",
+        "es": "Se utiliza para condiciones realistas o posibles.",
+        "fr": "Elle est utilisée pour des conditions réalistes ou possibles.",
+        "pt": "É usada para condições realistas ou possíveis."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "동사·형용사·명사 모두에 붙여 쓸 수 있습니다.",
+        "en": "It can be attached to verbs, adjectives, and nouns.",
+        "es": "Puede unirse a verbos, adjetivos y sustantivos.",
+        "fr": "Elle peut s’attacher aux verbes, adjectifs et noms.",
+        "pt": "Pode ser anexada a verbos, adjectivos e nomes."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침이 있으면 '-으면', 받침이 없으면 '-면'을 사용합니다.",
+        "en": "Use '-으면' after stems with a final consonant and '-면' after stems without one.",
+        "es": "Se usa '-으면' después de una raíz con consonante final y '-면' después de una raíz sin consonante final.",
+        "fr": "On utilise '-으면' après un radical avec consonne finale et '-면' après un radical sans consonne finale.",
+        "pt": "Usa-se '-으면' depois de um radical com consoante final e '-면' depois de um radical sem consoante final."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "미래에 대한 조건을 말할 때 자연스럽습니다.",
+        "en": "It is natural for talking about future-related conditions.",
+        "es": "Es natural para hablar de condiciones relacionadas con el futuro.",
+        "fr": "Elle est naturelle pour parler de conditions liées au futur.",
+        "pt": "É natural para falar de condições relacionadas com o futuro."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "부탁이나 제안할 때 조건을 붙여 정중하게 표현할 수 있습니다.",
+        "en": "It can be used politely when making requests or suggestions.",
+        "es": "Puede usarse cortésmente al hacer solicitudes o sugerencias.",
+        "fr": "Elle peut être utilisée poliment pour faire des demandes ou des suggestions.",
+        "pt": "Pode ser usada de forma educada para fazer pedidos ou sugestões."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "특정 상황에서의 선택이나 결과를 설명할 때도 쓰입니다.",
+        "en": "It is also used to describe choices or results in certain situations.",
+        "es": "También se emplea para describir elecciones o resultados en ciertas situaciones.",
+        "fr": "Elle sert également à décrire des choix ou résultats dans certaines situations.",
+        "pt": "Também é usada para descrever escolhas ou resultados em certas situações."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "과거 사실에 대한 가정에는 보통 사용하지 않습니다.",
+        "en": "It is not generally used for assumptions about past facts.",
+        "es": "Generalmente no se usa para suposiciones sobre hechos pasados.",
+        "fr": "Elle n'est généralement pas utilisée pour faire des suppositions sur des faits passés.",
+        "pt": "Geralmente não é usada para suposições sobre factos passados."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "일상 대화에서 매우 자주 쓰이는 기본 조건 표현입니다.",
+        "en": "It is a very common conditional expression in daily conversation.",
+        "es": "Es una expresión condicional muy común en la conversación diaria.",
+        "fr": "C’est une expression conditionnelle très fréquente dans la conversation quotidienne.",
+        "pt": "É uma expressão condicional muito comum no quotidiano."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "시간이 있으면 같이 가요.",
+        "en": "If you have time, let’s go together.",
+        "es": "Si tienes tiempo, vamos juntos.",
+        "fr": "Si tu as le temps, allons-y ensemble.",
+        "pt": "Se tiveres tempo, vamos juntos."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "비가 오면 집에 있을 거예요.",
+        "en": "If it rains, I will stay home.",
+        "es": "Si llueve, me quedaré en casa.",
+        "fr": "S’il pleut, je resterai à la maison.",
+        "pt": "Se chover, vou ficar em casa."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "피곤하면 좀 쉬세요.",
+        "en": "If you are tired, take some rest.",
+        "es": "Si estás cansado, descansa un poco.",
+        "fr": "Si tu es fatigué, repose-toi un peu.",
+        "pt": "Se estiveres cansado, descansa um pouco."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "모르면 물어보세요.",
+        "en": "If you don’t know, please ask.",
+        "es": "Si no sabes, pregunta por favor.",
+        "fr": "Si tu ne sais pas, demande s’il te plaît.",
+        "pt": "Se não souberes, pergunta por favor."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "좋으면 사세요.",
+        "en": "If you like it, buy it.",
+        "es": "Si te gusta, cómpralo.",
+        "fr": "Si tu aimes, achète-le.",
+        "pt": "Se gostares, compra-o."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "춥면 창문을 닫아요.",
+        "en": "If it’s cold, close the window.",
+        "es": "Si hace frío, cierra la ventana.",
+        "fr": "S’il fait froid, ferme la fenêtre.",
+        "pt": "Se estiver frio, fecha a janela."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "시간이 없으면 다음에 만나요.",
+        "en": "If you don’t have time, let’s meet next time.",
+        "es": "Si no tienes tiempo, nos vemos la próxima vez.",
+        "fr": "Si tu n’as pas le temps, voyons-nous la prochaine fois.",
+        "pt": "Se não tiveres tempo, encontramos-nos da próxima vez."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "배가 고프면 말해주세요.",
+        "en": "If you’re hungry, tell me.",
+        "es": "Si tienes hambre, dímelo.",
+        "fr": "Si tu as faim, dis-le-moi.",
+        "pt": "Se tiveres fome, diz-me."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "필요하면 언제든지 연락하세요.",
+        "en": "If you need anything, contact me anytime.",
+        "es": "Si necesitas algo, contáctame en cualquier momento.",
+        "fr": "Si tu as besoin de quelque chose, contacte-moi à tout moment.",
+        "pt": "Se precisares de alguma coisa, contacta-me a qualquer momento."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "자리가 없으면 기다릴게요.",
+        "en": "If there are no seats, I’ll wait.",
+        "es": "Si no hay asientos, esperaré.",
+        "fr": "S’il n’y a pas de place, j’attendrai.",
+        "pt": "Se não houver lugares, vou esperar."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "늦으면 전화할게요.",
+        "en": "If you’re late, I’ll call you.",
+        "es": "Si llegas tarde, te llamaré.",
+        "fr": "Si tu es en retard, je t’appellerai.",
+        "pt": "Se estiveres atrasado, ligo-te."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "괜찮으면 이것도 가져가세요.",
+        "en": "If it’s okay, take this too.",
+        "es": "Si está bien, llévate esto también.",
+        "fr": "Si c’est d’accord, prends aussi ceci.",
+        "pt": "Se estiver tudo bem, leva isto também."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "날씨가 좋으면 산책하러 갈 거예요.",
+        "en": "If the weather is nice, I will go for a walk.",
+        "es": "Si hace buen tiempo, saldré a pasear.",
+        "fr": "S’il fait beau, j’irai me promener.",
+        "pt": "Se estiver bom tempo, vou dar um passeio."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "할 일이 많으면 오늘은 집에 있을 거예요.",
+        "en": "If I have a lot to do, I will stay home today.",
+        "es": "Si tengo mucho que hacer, me quedaré en casa hoy.",
+        "fr": "Si j’ai beaucoup de travail, je resterai à la maison aujourd’hui.",
+        "pt": "Se tiver muito que fazer, vou ficar em casa hoje."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "버스를 놓치면 택시를 탈 거예요.",
+        "en": "If I miss the bus, I will take a taxi.",
+        "es": "Si pierdo el autobús, tomaré un taxi.",
+        "fr": "Si je rate le bus, je prendrai un taxi.",
+        "pt": "Se perder o autocarro, vou apanhar um táxi."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "빨리 끝나면 커피 마시러 갈게요.",
+        "en": "If I finish early, I’ll go for coffee.",
+        "es": "Si termino pronto, iré a tomar un café.",
+        "fr": "Si je finis tôt, j’irai prendre un café.",
+        "pt": "Se acabar cedo, vou tomar um café."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "조용하면 공부하기 좋아요.",
+        "en": "If it’s quiet, it’s good for studying.",
+        "es": "Si está tranquilo, es bueno para estudiar.",
+        "fr": "S’il fait calme, c’est bien pour étudier.",
+        "pt": "Se estiver silencioso, é bom para estudar."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "시간이 되면 도와줄게요.",
+        "en": "If I have time, I’ll help you.",
+        "es": "Si tengo tiempo, te ayudaré.",
+        "fr": "Si j’ai le temps, je t’aiderai.",
+        "pt": "Se tiver tempo, vou ajudar-te."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "문제가 생기면 바로 알려주세요.",
+        "en": "If any problem happens, please let me know.",
+        "es": "Si ocurre algún problema, avísame por favor.",
+        "fr": "S’il y a un problème, préviens-moi immédiatement.",
+        "pt": "Se surgir algum problema, avisa-me por favor."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "기회가 있으면 꼭 해 보고 싶어요.",
+        "en": "If I have the chance, I really want to try it.",
+        "es": "Si tengo la oportunidad, realmente quiero intentarlo.",
+        "fr": "Si j’en ai l’occasion, je veux vraiment essayer.",
+        "pt": "Se tiver oportunidade, quero mesmo experimentar."
+      }
+    }
+  ]
+}

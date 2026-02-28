@@ -299,6 +299,7 @@ export default function SelectBooksPage() {
   }, [isLoaded, userId, router]);
 
   /** 2) ⏱ 자동 제거 타이머 */
+  /** 2) ⏱ 자동 제거 타이머 — 안정화 버전 */
   useEffect(() => {
     if (!isLoaded || !userId) return;
 
@@ -310,12 +311,17 @@ export default function SelectBooksPage() {
           body: JSON.stringify({ userId }),
         });
 
-        // ✅ json 대신 안전 파싱
-        const data = (await safeJson(res)) ?? {};
-        const aliveLib: LibraryItem[] = Array.isArray((data as any).licenses)
-          ? ((data as any).licenses as LibraryItem[])
-          : [];
+        // 🔥 1️⃣ 응답 실패 시 기존 상태 유지
+        if (!res.ok) return;
 
+        const data = await safeJson(res);
+
+        // 🔥 2️⃣ 구조 검증 실패 시 기존 상태 유지
+        if (!data || !Array.isArray((data as any).licenses)) return;
+
+        const aliveLib = (data as any).licenses as LibraryItem[];
+
+        // 🔥 3️⃣ 여기서만 업데이트
         setLibrary(aliveLib);
 
         const localNow = readLocalCoupons();
@@ -323,16 +329,22 @@ export default function SelectBooksPage() {
 
         if (expiredUsedCodes.size === 0) return;
 
-        const nextCoupons = localNow.filter((c) => !(c.used && expiredUsedCodes.has(c.code)));
+        const nextCoupons = localNow.filter(
+          (c) => !(c.used && expiredUsedCodes.has(c.code))
+        );
+
         setCouponBox(nextCoupons);
         writeLocalCoupons(nextCoupons);
       } catch {
-        // 네트워크/파싱 오류는 타이머에서 조용히 무시
+        // 🔥 네트워크 오류는 기존 상태 유지 (아무것도 하지 않음)
       }
     };
 
     tick();
-    const id = window.setInterval(tick, 10_000);
+
+    // 🔥 4️⃣ 너무 짧은 10초 → 30초 권장
+    const id = window.setInterval(tick, 30_000);
+
     return () => window.clearInterval(id);
   }, [isLoaded, userId]);
 

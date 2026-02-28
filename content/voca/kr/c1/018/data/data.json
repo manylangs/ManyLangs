@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "c1",
+    "id": "018"
+  },
+  "title": {
+    "target": "C1 — 학술•전문 개념 어휘",
+    "en": "C1 — Academic and Specialized Concept Vocabulary",
+    "es": "C1 — Vocabulario de conceptos académáticos y especializados",
+    "fr": "C1 — Vocabulaire de concepts académiques et spécialisés",
+    "pt": "C1 — Vocabulário de conceitos acadêmicos e especializados"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "검증가능성",
+        "en": "verifiability",
+        "es": "verificabilidad",
+        "fr": "vérifiabilité",
+        "pt": "verificabilidade"
+      },
+      "examples": [
+        {
+          "target": "검증가능성은 과학적 주장에 필수적으로 요구되는 조건이다.",
+          "en": "Verifiability is an essential requirement for scientific claims.",
+          "es": "La verificabilidad es un requisito esencial para las afirmaciones científicas.",
+          "fr": "La vérifiabilité est une exigence essentielle pour les affirmations scientifiques.",
+          "pt": "A verificabilidade é um requisito essencial para afirmações científicas."
+        },
+        {
+          "target": "검증가능성이 낮으면 이론의 신뢰도가 떨어진다.",
+          "en": "When verifiability is low, the credibility of a theory decreases.",
+          "es": "Cuando la verificabilidad es baja, la credibilidad de una teoría disminuye.",
+          "fr": "Lorsque la vérifiabilité est faible, la crédibilité d’une théorie diminue.",
+          "pt": "Quando a verificabilidade é baixa, a credibilidade da teoria diminui."
+        },
+        {
+          "target": "연구자는 검증가능성을 확보하기 위해 실험 절차를 엄격히 관리한다.",
+          "en": "Researchers rigorously manage experimental procedures to ensure verifiability.",
+          "es": "Los investigadores gestionan rigurosamente los procedimientos experimentales para garantizar la verificabilidad.",
+          "fr": "Les chercheurs gèrent rigoureusement les procédures expérimentales pour garantir la vérifiabilité.",
+          "pt": "Pesquisadores gerenciam rigorosamente os procedimentos experimentais para garantir a verificabilidade."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "예측가능성",
+        "en": "predictability",
+        "es": "predictibilidad",
+        "fr": "prévisibilité",
+        "pt": "previsibilidade"
+      },
+      "examples": [
+        {
+          "target": "예측가능성은 모델의 실용성을 평가하는 중요한 기준이다.",
+          "en": "Predictability is an important criterion for evaluating a model’s practicality.",
+          "es": "La predictibilidad es un criterio importante para evaluar la utilidad de un modelo.",
+          "fr": "La prévisibilité est un critère important pour évaluer la praticité d’un modèle.",
+          "pt": "A previsibilidade é um critério importante para avaliar a utilidade de um modelo."
+        },
+        {
+          "target": "데이터 분석의 목표 중 하나는 현상의 예측가능성을 높이는 것이다.",
+          "en": "One of the goals of data analysis is to increase the predictability of phenomena.",
+          "es": "Uno de los objetivos del análisis de datos es aumentar la predictibilidad de los fenómenos.",
+          "fr": "L’un des objectifs de l’analyse de données est d’améliorer la prévisibilité des phénomènes.",
+          "pt": "Um dos objetivos da análise de dados é aumentar a previsibilidade dos fenômenos."
+        },
+        {
+          "target": "예측가능성이 부족하면 의사결정의 위험이 커진다.",
+          "en": "When predictability is low, the risk of decision-making increases.",
+          "es": "Cuando la predictibilidad es baja, aumenta el riesgo en la toma de decisiones.",
+          "fr": "Lorsque la prévisibilité est faible, le risque associé à la prise de décision augmente.",
+          "pt": "Quando a previsibilidade é baixa, o risco na tomada de decisões aumenta."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "설명가능성",
+        "en": "explainability",
+        "es": "explicabilidad",
+        "fr": "explicabilité",
+        "pt": "explicabilidade"
+      },
+      "examples": [
+        {
+          "target": "설명가능성은 인공지능 모델 평가의 핵심 요소이다.",
+          "en": "Explainability is a key factor in evaluating AI models.",
+          "es": "La explicabilidad es un factor clave en la evaluación de modelos de IA.",
+          "fr": "L’explicabilité est un facteur clé dans l'évaluation des modèles d'IA.",
+          "pt": "A explicabilidade é um fator crucial na avaliação de modelos de IA."
+        },
+        {
+          "target": "설명가능성이 높을수록 사용자가 결과를 신뢰하기 쉽다.",
+          "en": "Higher explainability makes it easier for users to trust the results.",
+          "es": "Una mayor explicabilidad facilita que los usuarios confíen en los resultados.",
+          "fr": "Une plus grande explicabilité facilite la confiance des utilisateurs dans les résultats.",
+          "pt": "Maior explicabilidade facilita que os usuários confiem nos resultados."
+        },
+        {
+          "target": "복잡한 구조는 설명가능성을 낮추는 요인이 된다.",
+          "en": "Complex structures tend to decrease explainability.",
+          "es": "Las estructuras complejas tienden a reducir la explicabilidad.",
+          "fr": "Des structures complexes ont tendance à réduire l’explicabilité.",
+          "pt": "Estruturas complexas tendem a reduzir a explicabilidade."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "설명력",
+        "en": "explanatory power",
+        "es": "poder explicativo",
+        "fr": "pouvoir explicatif",
+        "pt": "poder explicativo"
+      },
+      "examples": [
+        {
+          "target": "설명력이 높은 이론은 다양한 현상을 잘 설명해 낸다.",
+          "en": "A theory with high explanatory power explains a wide range of phenomena well.",
+          "es": "Una teoría con gran poder explicativo explica bien diversos fenómenos.",
+          "fr": "Une théorie ayant un fort pouvoir explicatif explique bien divers phénomènes.",
+          "pt": "Uma teoria com grande poder explicativo explica bem diversos fenômenos."
+        },
+        {
+          "target": "설명력이 부족하면 이론의 효용성이 떨어진다.",
+          "en": "When explanatory power is low, the usefulness of a theory diminishes.",
+          "es": "Cuando el poder explicativo es bajo, la utilidad de la teoría disminuye.",
+          "fr": "Lorsque le pouvoir explicatif est faible, l’utilité de la théorie diminue.",
+          "pt": "Quando o poder explicativo é baixo, a utilidade da teoria diminui."
+        },
+        {
+          "target": "좋은 연구는 높은 설명력을 바탕으로 한다.",
+          "en": "Good research is based on strong explanatory power.",
+          "es": "Una buena investigación se basa en un alto poder explicativo.",
+          "fr": "Une bonne recherche repose sur un fort pouvoir explicatif.",
+          "pt": "Uma boa pesquisa baseia-se em um alto poder explicativo."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "총체성",
+        "en": "totality",
+        "es": "totalidad",
+        "fr": "totalité",
+        "pt": "totalidade"
+      },
+      "examples": [
+        {
+          "target": "총체성 관점은 개별 요소보다 전체 구조에 주목한다.",
+          "en": "A perspective of totality focuses on the overall structure rather than individual elements.",
+          "es": "La perspectiva de la totalidad se centra en la estructura general más que en los elementos individuales.",
+          "fr": "La perspective de la totalité met l'accent sur la structure globale plutôt que sur les éléments individuels.",
+          "pt": "A perspectiva da totalidade foca na estrutura geral em vez de nos elementos individuais."
+        },
+        {
+          "target": "총체성을 고려한 분석은 현상을 다층적으로 이해하게 해준다.",
+          "en": "An analysis considering totality allows for a multilayered understanding of phenomena.",
+          "es": "Un análisis que considera la totalidad permite una comprensión multinivel de los fenómenos.",
+          "fr": "Une analyse fondée sur la totalité permet une compréhension multiniveau des phénomènes.",
+          "pt": "Uma análise que considera a totalidade permite uma compreensão multinível dos fenômenos."
+        },
+        {
+          "target": "총체적 접근 방식은 복잡한 문제 해결에 효과적이다.",
+          "en": "A holistic approach is effective for solving complex problems.",
+          "es": "Un enfoque holístico es eficaz para resolver problemas complejos.",
+          "fr": "Une approche holistique est efficace pour résoudre des problèmes complexes.",
+          "pt": "Uma abordagem holística é eficaz na resolução de problemas complexos."
+        }
+      ]
+    }
+  ]
+}

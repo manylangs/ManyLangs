@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a2",
+    "id": "002"
+  },
+  "title": {
+    "target": "취향과 선호",
+    "en": "Tastes and Preferences",
+    "es": "Gustos y preferencias",
+    "fr": "Goûts et préférences",
+    "pt": "Gostos e preferências"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 이런 밝은 색을 좋아하는데, 당신은 어떤 색 좋아하세요?",
+            "en": "I like bright colors like this. What color do you like?",
+            "es": "Me gustan los colores vivos como este. ¿Qué colores te gustan a ti?",
+            "fr": "J’aime les couleurs vives comme celle-ci. Et toi, quelles couleurs aimes-tu ?",
+            "pt": "Gosto de cores vivas como esta. E tu, que cores gostas?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "전 원래 파스텔톤을 좋아해요!",
+            "en": "I usually like pastel colors!",
+            "es": "A mí me gustan más los tonos pastel.",
+            "fr": "Moi, j’aime surtout les tons pastel !",
+            "pt": "Eu costumo gostar mais de tons pastel."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 생각보다 취향이 비슷하네요!",
+            "en": "Oh wow, our tastes are more similar than I thought!",
+            "es": "¡Vaya, tenemos gustos más parecidos de lo que pensaba!",
+            "fr": "Ah, on a des goûts plus proches que je ne pensais !",
+            "pt": "Uau, temos gostos mais parecidos do que pensei!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요! 색감 취향이 거의 같아요!",
+            "en": "Right! Our color preferences are almost the same!",
+            "es": "¡Sí! ¡Nuestros gustos de colores son casi iguales!",
+            "fr": "C’est vrai ! Nos goûts en couleurs sont presque identiques !",
+            "pt": "Pois é! Os nossos gostos de cores são quase iguais!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 다음에 같이 쇼핑 가요!",
+            "en": "Then let’s go shopping together next time!",
+            "es": "Entonces, ¡vayamos de compras juntos la próxima vez!",
+            "fr": "Alors, allons faire du shopping ensemble la prochaine fois !",
+            "pt": "Então vamos às compras juntos da próxima vez!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 그것도 재밌겠네요.",
+            "en": "Sure! That sounds fun.",
+            "es": "¡De acuerdo! Suena divertido.",
+            "fr": "D’accord, ça peut être sympa !",
+            "pt": "Claro! Vai ser divertido."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 단맛을 좋아하는데, 당신은 어때요?",
+            "en": "I like sweet flavors. How about you?",
+            "es": "A mí me gustan los sabores dulces. ¿Y a ti?",
+            "fr": "J’aime les saveurs sucrées. Et toi ?",
+            "pt": "Eu gosto de sabores doces. E tu?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "전 단맛보다 새콤한 걸 더 좋아해요!",
+            "en": "I prefer something a bit tangy rather than sweet!",
+            "es": "Prefiero algo más ácido que dulce.",
+            "fr": "Moi, je préfère quelque chose d’un peu acidulé.",
+            "pt": "Eu prefiro algo mais ácido do que doce."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오! 저도 그 조합 좋아해요!",
+            "en": "Oh! I really like that combination too!",
+            "es": "¡Oh! ¡A mí también me encanta esa combinación!",
+            "fr": "Oh ! J’aime beaucoup cette combinaison aussi !",
+            "pt": "Oh! Também adoro essa combinação!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "달콤하면서 상큼한 맛이 딱 좋죠!",
+            "en": "A mix of sweet and fresh tastes is perfect!",
+            "es": "¡Una mezcla de dulce y fresco es perfecta!",
+            "fr": "Un mélange sucré et frais, c’est parfait !",
+            "pt": "Uma mistura de doce e fresco é perfeita!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 나중에 같이 먹으러 가요!",
+            "en": "Then let’s go eat it together sometime!",
+            "es": "Entonces, ¡vayamos a comer eso algún día!",
+            "fr": "Alors allons en manger ensemble un de ces jours !",
+            "pt": "Então vamos comer isso juntos um dia!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요, 기대할게요!",
+            "en": "Sounds good! I’m looking forward to it!",
+            "es": "¡Genial! ¡Lo espero con ganas!",
+            "fr": "Super, j’ai hâte !",
+            "pt": "Perfeito! Já estou a contar com isso!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 조용한 카페를 선호해요. 당신은요?",
+            "en": "I prefer quiet cafés. What about you?",
+            "es": "Prefiero las cafeterías tranquilas. ¿Y tú?",
+            "fr": "Je préfère les cafés calmes. Et toi ?",
+            "pt": "Prefiro cafés tranquilos. E tu?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도 분위기 있는 카페가 좋아요.",
+            "en": "I like cafés with a nice atmosphere too.",
+            "es": "A mí también me gustan las cafeterías con buen ambiente.",
+            "fr": "J’aime aussi les cafés avec une bonne ambiance.",
+            "pt": "Também gosto de cafés com boa atmosfera."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 저도 너무 시끄러운 곳은 힘들더라고요.",
+            "en": "Yeah, I also struggle in really noisy places.",
+            "es": "Sí, los lugares muy ruidosos también me cansan.",
+            "fr": "Oui, les endroits trop bruyants me fatiguent aussi.",
+            "pt": "Sim, também me canso em sítios muito barulhentos."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요! 집중도 잘 되고 좋죠.",
+            "en": "Exactly! It helps you focus and relax.",
+            "es": "¡Exacto! Te ayuda a concentrarte y relajarte.",
+            "fr": "Exactement ! On peut mieux se concentrer et se détendre.",
+            "pt": "Exatamente! Ajuda a concentrar e relaxar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 다음엔 조용한 곳으로 가요!",
+            "en": "Then let’s go to a quiet one next time!",
+            "es": "Entonces, ¡la próxima vez vayamos a un sitio tranquilo!",
+            "fr": "Alors allons dans un endroit calme la prochaine fois !",
+            "pt": "Então vamos a um sítio mais calmo da próxima vez!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요, 제가 찾아볼게요!",
+            "en": "Sure! I’ll look for a good place.",
+            "es": "De acuerdo, buscaré un buen sitio.",
+            "fr": "D’accord, je chercherai un bon endroit.",
+            "pt": "Está bem! Vou procurar um bom lugar."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 운동할 때 가벼운 음악을 듣는 걸 좋아해요.",
+            "en": "I like listening to light music when I exercise.",
+            "es": "Cuando hago ejercicio, me gusta escuchar música ligera.",
+            "fr": "Quand je fais du sport, j’aime écouter de la musique légère.",
+            "pt": "Quando faço exercício, gosto de ouvir música leve."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 좀 더 신나는 음악을 좋아해요!",
+            "en": "I like more energetic music!",
+            "es": "A mí me gusta la música más enérgica.",
+            "fr": "Moi, j’aime la musique plus énergique !",
+            "pt": "Eu gosto mais de música energética!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아! 그거 완전 공감돼요!",
+            "en": "Ah, I totally get that!",
+            "es": "¡Ah, te entiendo totalmente!",
+            "fr": "Ah, je comprends totalement !",
+            "pt": "Ah, percebo-te perfeitamente!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "운동할 때 리듬감 있는 음악이 딱이죠!",
+            "en": "Rhythmic music is perfect for workouts!",
+            "es": "La música con ritmo es perfecta para entrenar.",
+            "fr": "Oui, la musique rythmée est parfaite pour le sport !",
+            "pt": "Música com ritmo é perfeita para treinar!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 추천 목록도 알려줄게요!",
+            "en": "Then I’ll share my playlist with you!",
+            "es": "Entonces, ¡te compartiré mi lista de reproducción!",
+            "fr": "Alors je te partagerai ma playlist !",
+            "pt": "Então vou partilhar contigo a minha playlist!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 공유해줘요!",
+            "en": "Nice! Please share it!",
+            "es": "¡Genial! ¡Compártela conmigo!",
+            "fr": "Super ! Partage-la avec moi !",
+            "pt": "Ótimo! Partilha comigo!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 가볍고 편한 옷을 좋아해요.",
+            "en": "I like clothes that are light and comfortable.",
+            "es": "Me gusta la ropa ligera y cómoda.",
+            "fr": "J’aime les vêtements légers et confortables.",
+            "pt": "Gosto de roupa leve e confortável."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도 편한 스타일이 제일 좋아요!",
+            "en": "I also prefer comfortable outfits!",
+            "es": "Yo también prefiero la ropa cómoda.",
+            "fr": "Moi aussi, je préfère les tenues confortables.",
+            "pt": "Eu também prefiro roupas confortáveis."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 저랑 스타일이 비슷하네요!",
+            "en": "Oh, our styles are pretty similar!",
+            "es": "¡Oh, nuestros estilos son muy parecidos!",
+            "fr": "Oh, nos styles se ressemblent vraiment !",
+            "pt": "Ah, os nossos estilos são mesmo parecidos!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요! 너무 막 꾸민 느낌은 별로예요.",
+            "en": "Right, I’m not a fan of overly fancy looks.",
+            "es": "Sí, no me gustan los estilos demasiado llamativos.",
+            "fr": "Oui, les looks trop élaborés ne me plaisent pas.",
+            "pt": "Pois é! Não gosto de estilos demasiado chamativos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 저 브랜드도 좋아하실 것 같아요!",
+            "en": "Then I think you’ll like that brand too!",
+            "es": "Entonces, ¡creo que también te gustará esa marca!",
+            "fr": "Alors je pense que tu aimeras aussi cette marque !",
+            "pt": "Então acho que também vais gostar daquela marca!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오! 한번 찾아볼게요.",
+            "en": "Oh! I’ll check it out.",
+            "es": "¡Oh! Voy a echarle un vistazo.",
+            "fr": "Oh ! Je vais regarder ça.",
+            "pt": "Ah! Vou ver isso."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 여행 갈 때 자연 풍경을 좋아해요.",
+            "en": "When I travel, I like places with natural scenery.",
+            "es": "Cuando viajo, prefiero los paisajes naturales.",
+            "fr": "Quand je voyage, je préfère les paysages naturels.",
+            "pt": "Quando viajo, gosto de paisagens naturais."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 바다를 보면 기분이 너무 좋아져요.",
+            "en": "I feel so good when I see the ocean.",
+            "es": "Ver el mar siempre me pone de buen humor.",
+            "fr": "La mer me met toujours de bonne humeur.",
+            "pt": "Ver o mar deixa-me sempre de bom humor."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 저도 도시보다 자연을 더 좋아해요!",
+            "en": "Oh, I also prefer nature over cities!",
+            "es": "¡Oh, yo también prefiero la naturaleza antes que la ciudad!",
+            "fr": "Ah, moi aussi je préfère la nature à la ville !",
+            "pt": "Oh, eu também prefiro natureza à cidade!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "자연이 더 힐링 되죠!",
+            "en": "Nature is much more healing!",
+            "es": "Sí, la naturaleza es mucho más relajante.",
+            "fr": "Oui, la nature, c’est beaucoup plus reposant !",
+            "pt": "Sim, a natureza é muito mais relaxante!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 같이 여행지 추천해요!",
+            "en": "Then let’s recommend some places to each other!",
+            "es": "Entonces, ¡recomendémonos lugares!",
+            "fr": "Alors recommandons-nous quelques endroits !",
+            "pt": "Então vamos recomendar lugares um ao outro!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 몇 곳 생각나는 데가 있어요.",
+            "en": "Great! I already have a few places in mind.",
+            "es": "¡Genial! Ya tengo algunos lugares en mente.",
+            "fr": "Super ! J’ai déjà quelques idées.",
+            "pt": "Perfeito! Já tenho alguns lugares em mente."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 향이 강한 걸 별로 좋아하지 않아요.",
+            "en": "I don’t really like strong scents.",
+            "es": "No me gustan mucho los perfumes muy fuertes.",
+            "fr": "Je n’aime pas trop les parfums trop forts.",
+            "pt": "Não gosto muito de perfumes fortes."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도 너무 강한 향은 부담스러워요.",
+            "en": "I also find strong scents overwhelming.",
+            "es": "A mí también me resultan pesados los aromas muy fuertes.",
+            "fr": "Moi aussi, je trouve les parfums trop forts dérangeants.",
+            "pt": "Eu também acho perfumes fortes muito intensos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "맞아요, 은은한 게 더 좋죠!",
+            "en": "Right, something soft is much nicer!",
+            "es": "Sí, algo suave es mucho mejor.",
+            "fr": "Oui, c’est mieux quand c’est doux !",
+            "pt": "Sim, algo suave é muito melhor!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "센 향은 오래 맡으면 힘들더라고요.",
+            "en": "A strong smell can be tiring after a while.",
+            "es": "Un olor demasiado intenso puede cansar al rato.",
+            "fr": "Une odeur trop intense peut être fatigante.",
+            "pt": "Um cheiro demasiado forte pode cansar ao fim de um tempo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 그 브랜드 한번 써보세요!",
+            "en": "Then try that brand!",
+            "es": "Entonces, ¡prueba esa marca!",
+            "fr": "Alors essaie cette marque !",
+            "pt": "Então experimenta aquela marca!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오! 추천해줘서 고마워요.",
+            "en": "Oh! Thanks for the recommendation.",
+            "es": "¡Oh! Gracias por la recomendación.",
+            "fr": "Oh ! Merci pour la recommandation.",
+            "pt": "Oh! Obrigado pela recomendação."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 영화는 가벼운 분위기가 좋아요.",
+            "en": "For movies, I prefer something light.",
+            "es": "En cuanto a películas, prefiero un ambiente ligero.",
+            "fr": "Pour les films, je préfère une atmosphère légère.",
+            "pt": "Quanto a filmes, prefiro algo mais leve."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 스릴러도 좋아하지만 분위기 가벼운 것도 좋아해요!",
+            "en": "I like thrillers too, but light movies are great as well!",
+            "es": "También me gustan los thrillers, pero las películas ligeras son muy agradables.",
+            "fr": "J’aime aussi les thrillers, mais les films légers sont très agréables.",
+            "pt": "Gosto de thrillers também, mas filmes leves são muito agradáveis."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 저도 무거운 영화는 자주 못 보겠더라고요.",
+            "en": "Oh, same here! Heavy movies can be hard to watch often.",
+            "es": "¡Sí, yo también! Las películas pesadas no las puedo ver muy seguido.",
+            "fr": "Oui, moi aussi ! Les films trop lourds, ce n’est pas facile à regarder souvent.",
+            "pt": "Sim, eu também! Filmes pesados não consigo ver muitas vezes."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요! 편하게 보기엔 가벼운 영화가 최고죠.",
+            "en": "Right! Light movies are perfect when you just want to relax.",
+            "es": "¡Exacto! Son perfectas para relajarse.",
+            "fr": "Exactement ! C’est parfait quand on veut juste se détendre.",
+            "pt": "Exato! São perfeitos para relaxar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 코미디 추천해줄게요!",
+            "en": "Then I’ll recommend a comedy for you!",
+            "es": "Entonces, ¡te recomendaré una comedia!",
+            "fr": "Alors je te recommanderai une comédie !",
+            "pt": "Então vou recomendar-te uma comédia!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 기대할게요.",
+            "en": "Sounds great! I’ll look forward to it.",
+            "es": "¡Genial! Esperaré tu recomendación.",
+            "fr": "Super ! J’attends ta recommandation.",
+            "pt": "Ótimo! Vou esperar pela tua recomendação."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 주말엔 집에서 쉬는 걸 좋아해요.",
+            "en": "I like staying home and relaxing on weekends.",
+            "es": "Los fines de semana me gusta descansar en casa.",
+            "fr": "Le week-end, j’aime rester à la maison et me reposer.",
+            "pt": "Ao fim de semana, gosto de ficar em casa a descansar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도 요즘은 집콕이 제일 좋더라고요.",
+            "en": "Same here. Staying home is the best for me lately.",
+            "es": "A mí también. Últimamente estar en casa es lo que más disfruto.",
+            "fr": "Moi aussi. Rester à la maison est ce que je préfère ces temps-ci.",
+            "pt": "Eu também. Ultimamente ficar em casa é o que mais gosto."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그거 완전 공감돼요!",
+            "en": "I totally relate!",
+            "es": "¡Te entiendo totalmente!",
+            "fr": "Je comprends tellement !",
+            "pt": "Percebo-te totalmente!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "몸도 마음도 쉬어가는 느낌이죠!",
+            "en": "It feels like your mind and body can finally rest!",
+            "es": "Sientes que el cuerpo y la mente realmente descansan.",
+            "fr": "On sent que l’esprit et le corps se reposent vraiment.",
+            "pt": "Sente-se mesmo que o corpo e a mente descansam."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 다음 주엔 같이 쉬어요!",
+            "en": "Then let’s relax together next weekend!",
+            "es": "Entonces, ¡descansemos juntos el próximo fin de semana!",
+            "fr": "Alors reposons-nous ensemble le week-end prochain !",
+            "pt": "Então vamos descansar juntos no próximo fim de semana!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 편하게 만나요!",
+            "en": "Sounds good! Let’s meet comfortably then!",
+            "es": "¡Perfecto! ¡Nos vemos con calma!",
+            "fr": "D’accord ! On se verra tranquillement !",
+            "pt": "Perfeito! Encontramo-nos com calma então!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 과한 장식은 별로 안 좋아해요.",
+            "en": "I don’t really like overly decorative designs.",
+            "es": "No me gustan los diseños demasiado decorativos.",
+            "fr": "Je n’aime pas trop les designs trop décoratifs.",
+            "pt": "Não gosto muito de designs demasiado decorativos."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 너무 화려하면 부담돼요.",
+            "en": "Yeah, too flashy can feel overwhelming.",
+            "es": "Sí, algo demasiado llamativo puede ser abrumador.",
+            "fr": "Oui, trop de fantaisie peut être fatigant.",
+            "pt": "Sim, algo demasiado chamativo pode ser cansativo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 저도 심플한 게 제일 좋더라고요!",
+            "en": "Oh, I also prefer simple ones!",
+            "es": "¡Oh, yo también prefiero los estilos simples!",
+            "fr": "Oh, je préfère aussi les styles simples !",
+            "pt": "Ah, também prefiro estilos simples!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "심플한 디자인이 더 오래 써요!",
+            "en": "Simple designs last longer too!",
+            "es": "Los diseños simples duran más también.",
+            "fr": "Les designs simples durent plus longtemps !",
+            "pt": "Designs simples duram mais tempo!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 그 브랜드 한번 찾아보세요!",
+            "en": "Then check out that brand!",
+            "es": "Entonces, ¡mira esa marca!",
+            "fr": "Alors regarde cette marque !",
+            "pt": "Então dá uma vista de olhos naquela marca!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 바로 검색해볼게요.",
+            "en": "Great! I’ll look it up right away.",
+            "es": "¡Genial! Lo buscaré ahora mismo.",
+            "fr": "Super, je vais chercher ça maintenant.",
+            "pt": "Ótimo! Vou procurar isso agora."
+          }
+        }
+      ]
+    }
+  ]
+}

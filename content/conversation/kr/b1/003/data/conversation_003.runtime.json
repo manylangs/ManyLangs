@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b1",
+    "id": "003"
+  },
+  "title": {
+    "target": "교수님 상담",
+    "en": "Professor Consultation",
+    "es": "Consulta con el profesor",
+    "fr": "Consultation avec le professeur",
+    "pt": "Consulta com o professor"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "교수님, 지금 잠깐 상담 가능하실까요?",
+            "en": "Professor, do you have a moment for a quick consultation?",
+            "es": "Profesor, ¿tiene un momento para una consulta rápida?",
+            "fr": "Professeur, auriez-vous un moment pour une petite consultation ?",
+            "pt": "Professor, tem um momento para uma consulta rápida?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아, 물론이죠! 어떤 부분이 헷갈렸나요?",
+            "en": "Of course! Which part was confusing for you?",
+            "es": "Claro, por supuesto. ¿Qué parte te resultó confusa?",
+            "fr": "Bien sûr ! Quelle partie vous a posé problème ?",
+            "pt": "Claro, com certeza. Que parte lhe pareceu confusa?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오늘 과제 설명 중에 잘 이해가 안 된 부분이 있었어요.",
+            "en": "There was a part of today’s assignment explanation I didn’t quite understand.",
+            "es": "Hubo una parte de la explicación de la tarea que no entendí bien.",
+            "fr": "Il y avait une partie de l’explication du devoir que je n’ai pas bien comprise.",
+            "pt": "Houve uma parte da explicação do trabalho que não percebi muito bem."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그 부분은 학생들이 자주 질문하는 내용이에요.",
+            "en": "A lot of students ask about that section.",
+            "es": "Muchos estudiantes suelen preguntar sobre ese punto.",
+            "fr": "Beaucoup d’étudiants posent des questions à ce sujet.",
+            "pt": "Muitos estudantes costumam ter dúvidas sobre esse ponto."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 다시 간단히 말씀해주실 수 있을까요?",
+            "en": "Could you go over it briefly one more time?",
+            "es": "¿Podría explicármela otra vez, de forma breve?",
+            "fr": "Pourriez-vous me la réexpliquer brièvement ?",
+            "pt": "Poderia explicá-la outra vez, de forma breve?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "천천히 다시 설명해드릴게요.",
+            "en": "Let me walk you through it slowly.",
+            "es": "Déjame explicártelo de nuevo con calma.",
+            "fr": "Je vais vous le réexpliquer lentement.",
+            "pt": "Deixe-me explicá-lo novamente com calma."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "보고서 구성 방식이 여전히 조금 어렵게 느껴져요.",
+            "en": "I still find the report structure a bit difficult.",
+            "es": "Todavía me cuesta un poco la estructura del informe.",
+            "fr": "Je trouve encore la structure du rapport un peu difficile.",
+            "pt": "Ainda acho a estrutura do relatório um pouco difícil."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그럴 수 있어요, 처음엔 헷갈릴 수 있죠.",
+            "en": "That’s totally normal. It can be confusing at first.",
+            "es": "Es normal, al principio puede resultar confuso.",
+            "fr": "C’est normal, au début ça peut être déroutant.",
+            "pt": "É normal, no início pode ser mesmo confuso."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "특히 어떤 순서로 써야 할지 잘 모르겠어요.",
+            "en": "I’m not sure what order I should write it in.",
+            "es": "No tengo claro en qué orden debería escribirlo.",
+            "fr": "Je ne sais pas vraiment dans quel ordre écrire.",
+            "pt": "Não sei bem em que ordem devo escrever."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "구성은 크게 서론–본론–결론 흐름만 잡으면 돼요.",
+            "en": "Just follow a simple introduction–body–conclusion format.",
+            "es": "Solo sigue la estructura básica: introducción, desarrollo y conclusión.",
+            "fr": "Suivez simplement une structure introduction–développement–conclusion.",
+            "pt": "Basta seguir a estrutura básica: introdução, desenvolvimento e conclusão."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "예시가 있다면 더 이해가 쉬울 것 같아요.",
+            "en": "I think an example would help me understand better.",
+            "es": "Creo que un ejemplo me ayudaría bastante.",
+            "fr": "Je pense qu’un exemple m’aiderait beaucoup.",
+            "pt": "Acho que um exemplo ajudaria bastante."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "예시 자료는 수업 게시판에 올려둘게요.",
+            "en": "I’ll upload a sample document on the course page.",
+            "es": "Subiré un ejemplo a la plataforma del curso.",
+            "fr": "Je mettrai un exemple sur la plateforme du cours.",
+            "pt": "Vou colocar um exemplo na plataforma da disciplina."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 제 발표 주제 방향이 괜찮은지도 여쭤보고 싶어요.",
+            "en": "I wanted to check if my presentation topic is going in the right direction.",
+            "es": "Quería confirmar si la dirección de mi tema de presentación es adecuada.",
+            "fr": "Je voulais vérifier si la direction de mon sujet de présentation est correcte.",
+            "pt": "Queria confirmar se a direção do meu tema de apresentação está adequada."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "주제는 좋아요! 너무 넓지도 않고 적당해요.",
+            "en": "Your topic looks good! Not too broad and not too narrow.",
+            "es": "Tu tema está bien, no es demasiado amplio ni demasiado limitado.",
+            "fr": "Votre sujet est bon ! Ni trop large, ni trop restreint.",
+            "pt": "O seu tema está bom — nem demasiado amplo nem demasiado restrito."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "조금 범위가 넓은 건 아닌지 걱정돼서요.",
+            "en": "I’m worried the scope might be too wide.",
+            "es": "Me preocupa que el enfoque sea demasiado amplio.",
+            "fr": "J’ai peur que le thème soit un peu trop large.",
+            "pt": "Tenho receio de que o tema esteja demasiado amplo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "다만 사례를 두세 개로 줄이면 더 명확해질 거예요.",
+            "en": "If you narrow the examples to two or three, it’ll be clearer.",
+            "es": "Si reduces los ejemplos a dos o tres, quedará más claro.",
+            "fr": "Si vous réduisez les exemples à deux ou trois, ce sera plus clair.",
+            "pt": "Se reduzir os exemplos para dois ou três, ficará mais claro."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "수정이 필요하면 바로 조정해보려고요.",
+            "en": "If I need to revise it, I can adjust it right away.",
+            "es": "Si tengo que ajustarlo, puedo hacerlo enseguida.",
+            "fr": "S’il faut le modifier, je peux le faire tout de suite.",
+            "pt": "Se for preciso ajustar, posso fazê-lo já."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그렇게만 조정하면 충분히 좋은 발표가 될 거예요.",
+            "en": "With that small adjustment, your presentation will be strong.",
+            "es": "Con ese pequeño ajuste, tu presentación será sólida.",
+            "fr": "Avec ce petit ajustement, votre présentation sera solide.",
+            "pt": "Com esse pequeno ajuste, a sua apresentação ficará muito sólida."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "지난 시험에서 틀린 문제들을 다시 보고 싶은데 가능할까요?",
+            "en": "Would it be possible to review the questions I got wrong on the last exam?",
+            "es": "¿Sería posible revisar las preguntas que fallé en el último examen?",
+            "fr": "Pourriez-vous revoir avec moi les questions que j’ai ratées à l’examen ?",
+            "pt": "Seria possível rever as perguntas que falhei no último exame?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요, 틀린 문제 분석은 정말 도움이 돼요.",
+            "en": "Sure, reviewing incorrect answers is really helpful.",
+            "es": "Claro, revisar los errores es muy útil.",
+            "fr": "Bien sûr, revoir les erreurs est très utile.",
+            "pt": "Claro, rever os erros ajuda imenso."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "제가 어디서 실수했는지 정확히 알고 싶어요.",
+            "en": "I want to understand exactly where I made mistakes.",
+            "es": "Quiero entender exactamente en qué me equivoqué.",
+            "fr": "Je voudrais comprendre exactement où je me suis trompé(e).",
+            "pt": "Quero perceber exatamente onde errei."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "대부분은 개념을 조금만 보완하면 해결될 것들이에요.",
+            "en": "Most of your mistakes just need a bit of concept reinforcement.",
+            "es": "La mayoría de tus fallos se corrigen reforzando algunos conceptos.",
+            "fr": "La plupart de vos fautes se corrigent avec un peu de révision des concepts.",
+            "pt": "A maioria deles corrige-se reforçando alguns conceitos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "피드백 주시면 다음에 더 잘할 수 있을 것 같아요.",
+            "en": "If you give me some feedback, I think I can improve next time.",
+            "es": "Si me da algo de retroalimentación, puedo mejorar para la próxima.",
+            "fr": "Avec un retour de votre part, je pourrai m’améliorer.",
+            "pt": "Com algum feedback seu, acho que posso melhorar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "잠시만요, 시험지 가지고 올게요.",
+            "en": "Hold on, I’ll bring your exam sheet.",
+            "es": "Dame un momento, voy a traer tu examen.",
+            "fr": "Attendez un instant, je vais chercher votre copie.",
+            "pt": "Espere um momento, vou buscar o seu exame."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 이번 주 안에 따로 상담 시간 잡을 수 있을까요?",
+            "en": "Could we schedule a separate consultation sometime this week?",
+            "es": "¿Podríamos programar una consulta aparte esta semana?",
+            "fr": "Serait-il possible de fixer une consultation séparée cette semaine ?",
+            "pt": "Podemos agendar uma consulta separada esta semana?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요, 이번 주 수요일 오후는 괜찮아요.",
+            "en": "Wednesday afternoon works for me.",
+            "es": "El miércoles por la tarde me viene bien.",
+            "fr": "Mercredi après-midi me convient.",
+            "pt": "Quarta-feira à tarde funciona para mim."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "과제 말고도 전공 관련해서 여쭤보고 싶은 게 있어요.",
+            "en": "I also have questions about my major, not just the assignment.",
+            "es": "Tengo preguntas sobre mi especialidad, no solo sobre la tarea.",
+            "fr": "J’ai aussi des questions sur ma filière, pas seulement sur le devoir.",
+            "pt": "Tenho questões sobre o meu curso, não só sobre o trabalho."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "전공 상담은 미리 준비해오면 더 좋아요.",
+            "en": "For major-related counseling, preparing some notes beforehand helps.",
+            "es": "Para preguntas sobre la especialidad, ayuda preparar notas previas.",
+            "fr": "Pour les questions d’orientation, il est utile de préparer quelques notes.",
+            "pt": "Para questões de orientação académica, ajuda trazer algumas notas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "시간 괜찮으신 날로 맞춰볼게요.",
+            "en": "I can adjust to whatever time works best for you.",
+            "es": "Puedo ajustarme al horario que le resulte mejor.",
+            "fr": "Je peux m’adapter à l’horaire qui vous convient.",
+            "pt": "Posso adaptar-me ao horário que lhe for mais conveniente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "학생 일정에 맞춰도 되니까 편한 시간 알려주세요.",
+            "en": "But feel free to choose a time that suits your schedule.",
+            "es": "Pero siéntete libre de proponer un horario que te convenga.",
+            "fr": "Mais choisissez un créneau qui vous arrange, ce sera très bien.",
+            "pt": "Mas escolha o horário que lhe der mais jeito."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "교수님 발표 피드백 정말 도움 됐어요.",
+            "en": "Your feedback on my presentation was really helpful.",
+            "es": "Sus comentarios sobre mi presentación me ayudaron muchísimo.",
+            "fr": "Votre retour sur ma présentation m’a vraiment aidé(e).",
+            "pt": "O seu feedback sobre a minha apresentação foi muito útil."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "와, 그렇게까지 반영했다니 기쁘네요!",
+            "en": "I’m glad to hear that! Great job applying the feedback.",
+            "es": "¡Me alegra oír eso! Buen trabajo aplicando la retroalimentación.",
+            "fr": "Je suis ravi(e) d’entendre ça ! Beau travail.",
+            "pt": "Fico muito contente por ouvir isso! Bom trabalho."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "말씀해주신 부분 수정하니까 훨씬 자연스러워졌어요.",
+            "en": "After making the changes you mentioned, it sounds much smoother.",
+            "es": "Después de aplicar lo que me dijo, suena mucho más natural.",
+            "fr": "Après avoir appliqué vos conseils, tout semble plus fluide.",
+            "pt": "Depois de aplicar o que disse, ficou muito mais natural."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "지금 버전이면 거의 완성 수준이에요.",
+            "en": "It’s almost complete in its current form.",
+            "es": "Ahora está casi terminada.",
+            "fr": "Dans son état actuel, elle est presque terminée.",
+            "pt": "Neste estado, já está praticamente concluída."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 마지막으로 한 번만 더 봐주실 수 있을까요?",
+            "en": "Could you check it one last time if possible?",
+            "es": "¿Podría revisarla una última vez?",
+            "fr": "Pourriez-vous y jeter un dernier coup d’œil ?",
+            "pt": "Poderia dar uma última vista de olhos?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "마지막 점검은 수업 끝나고 잠깐 보면 될 것 같아요.",
+            "en": "We can do a final check right after class.",
+            "es": "Podemos hacer una revisión final después de la clase.",
+            "fr": "On peut faire une dernière vérification après le cours.",
+            "pt": "Podemos fazer uma revisão final depois da aula."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "교수님, 지난번에 추천해주신 논문 읽어봤어요.",
+            "en": "I read the paper you recommended last time.",
+            "es": "Leí el artículo que me recomendó la última vez.",
+            "fr": "J’ai lu l’article que vous m’avez recommandé la dernière fois.",
+            "pt": "Li o artigo que o professor recomendou da última vez."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오, 벌써 읽어봤군요! 대단하네요.",
+            "en": "Oh, you already read it? Impressive!",
+            "es": "¿Ya lo leíste? ¡Qué bien!",
+            "fr": "Ah, vous l’avez déjà lu ? Impressionnant !",
+            "pt": "Já o leu? Muito bem!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "생각보다 흥미롭고 도움이 많이 됐어요.",
+            "en": "It was more interesting and helpful than I expected.",
+            "es": "Fue más interesante y útil de lo que esperaba.",
+            "fr": "C’était plus intéressant et utile que je ne l’imaginais.",
+            "pt": "Foi mais interessante e útil do que eu esperava."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그 논문 이해했으면 다음 자료도 어렵지 않을 거예요.",
+            "en": "If you understood that paper, the next ones won’t be difficult.",
+            "es": "Si entendiste ese artículo, los siguientes no te resultarán difíciles.",
+            "fr": "Si vous avez compris celui-ci, les suivants ne seront pas difficiles.",
+            "pt": "Se compreendeu esse artigo, os próximos não serão difíceis."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "비슷한 자료 더 찾아보면 좋을 것 같아요.",
+            "en": "I think I’d like to look for some similar materials.",
+            "es": "Creo que quiero buscar más materiales parecidos.",
+            "fr": "J’aimerais chercher d’autres documents similaires.",
+            "pt": "Acho que gostaria de procurar materiais semelhantes."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "원하면 추가 자료 몇 개 더 추천해줄게요.",
+            "en": "I can recommend a few more if you’d like.",
+            "es": "Puedo recomendarte algunos más si quieres.",
+            "fr": "Je peux vous en recommander quelques-uns de plus si vous voulez.",
+            "pt": "Posso recomendar mais alguns, se quiser."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 학기 후반에 있을 프로젝트 일정도 미리 알 수 있을까요?",
+            "en": "Could I get some information about the project schedule later this semester?",
+            "es": "¿Podría darme información sobre el cronograma del proyecto para más adelante en el semestre?",
+            "fr": "Pourrais-je avoir des informations sur le calendrier du projet de fin de semestre ?",
+            "pt": "Poderia dar-me informações sobre o calendário do projeto para o fim do semestre?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋은 생각이에요! 미리 계획하면 훨씬 수월해요.",
+            "en": "Good idea! Planning early makes things easier.",
+            "es": "Buena idea. Planificar con tiempo facilita todo.",
+            "fr": "Bonne idée ! Planifier tôt facilite vraiment les choses.",
+            "pt": "Boa ideia! Planear cedo facilita bastante."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "준비 기간이 얼마나 필요한지 알고 싶어요.",
+            "en": "I want to know how much preparation time I’ll need.",
+            "es": "Quiero saber cuánto tiempo necesitaré para prepararme.",
+            "fr": "Je voudrais savoir combien de temps de préparation il faudra.",
+            "pt": "Gostaria de saber quanto tempo precisarei para me preparar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "프로젝트는 중간고사 이후부터 시작될 거예요.",
+            "en": "The project will start after the midterm exam.",
+            "es": "El proyecto empezará después del examen parcial.",
+            "fr": "Le projet commencera après les examens de mi-semestre.",
+            "pt": "O projeto vai começar depois do exame intermédio."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "미리 계획 세우면 덜 급할 것 같아서요.",
+            "en": "Planning ahead will help me avoid rushing.",
+            "es": "Planificar con anticipación me ayuda a no ir con prisas.",
+            "fr": "Planifier à l’avance m’aiderait à éviter d’être pressé(e).",
+            "pt": "Planear com antecedência ajuda-me a não ficar aflito(a)."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "세부 일정은 다음 주에 공지할 예정이에요.",
+            "en": "I’ll announce the detailed schedule next week.",
+            "es": "Publicaré el calendario detallado la próxima semana.",
+            "fr": "Je publierai le calendrier détaillé la semaine prochaine.",
+            "pt": "Vou publicar o calendário detalhado na próxima semana."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "교수님, 혹시 진로 상담도 가능할까요?",
+            "en": "Professor, would career counseling also be possible?",
+            "es": "Profesor, ¿también sería posible recibir orientación profesional?",
+            "fr": "Professeur, serait-il également possible d’avoir un conseil d’orientation ?",
+            "pt": "Professor, também seria possível ter orientação profissional?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "물론이죠! 진로 상담은 언제든 환영이에요.",
+            "en": "Of course! I’m always happy to help with career guidance.",
+            "es": "Por supuesto, siempre estoy disponible para eso.",
+            "fr": "Bien sûr ! Je suis toujours disponible pour ce genre de conseils.",
+            "pt": "Claro! Estou sempre disponível para ajudar nisso."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "어떤 방향으로 준비해야 할지 잘 모르겠어요.",
+            "en": "I’m not sure which direction I should prepare for.",
+            "es": "No estoy seguro(a) de qué dirección tomar.",
+            "fr": "Je ne sais pas encore dans quelle direction me préparer.",
+            "pt": "Ainda não sei bem que direção seguir."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "가장 중요한 건 본인이 흥미 있는 분야부터 찾는 거예요.",
+            "en": "The most important thing is finding a field you’re genuinely interested in.",
+            "es": "Lo más importante es encontrar un área que realmente te interese.",
+            "fr": "Le plus important est de repérer un domaine qui vous intéresse vraiment.",
+            "pt": "O mais importante é encontrar uma área que realmente lhe interesse."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "기초부터 차근차근 잡고 싶어요.",
+            "en": "I want to build a solid foundation step by step.",
+            "es": "Quiero construir una base sólida paso a paso.",
+            "fr": "J’aimerais construire une base solide petit à petit.",
+            "pt": "Quero construir uma base sólida, passo a passo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "원하면 커리큘럼 맞춤으로 정리해줄게요.",
+            "en": "If you want, I can help you create a personalized curriculum.",
+            "es": "Si quieres, puedo ayudarte a crear un plan personalizado.",
+            "fr": "Si vous voulez, je peux vous aider à établir un plan personnalisé.",
+            "pt": "Se quiser, posso ajudar a criar um plano personalizado."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오늘 상담 정말 감사해요, 교수님.",
+            "en": "Thank you so much for today’s consultation.",
+            "es": "Muchas gracias por la consulta de hoy.",
+            "fr": "Merci beaucoup pour la consultation d’aujourd’hui.",
+            "pt": "Muito obrigado(a) pela consulta de hoje."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그렇게 느꼈다니 정말 다행이에요!",
+            "en": "I’m really glad to hear that!",
+            "es": "Me alegra mucho escuchar eso.",
+            "fr": "Je suis vraiment content(e) que cela vous aide !",
+            "pt": "Fico muito feliz por ouvir isso!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "말씀 듣고 나니까 마음이 훨씬 편해졌어요.",
+            "en": "I feel much more at ease after hearing your advice.",
+            "es": "Me siento mucho más tranquilo(a) después de hablar con usted.",
+            "fr": "Je me sens beaucoup plus rassuré(e) après vous avoir parlé.",
+            "pt": "Sinto-me muito mais tranquilo(a) depois de conversar consigo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "천천히 해도 괜찮으니까 너무 부담 갖지 마세요.",
+            "en": "Take your time, there’s no need to pressure yourself.",
+            "es": "Tómate tu tiempo, no hay necesidad de presionarte.",
+            "fr": "Prenez votre temps, il n’y a aucune pression.",
+            "pt": "Vá com calma — não precisa de se pressionar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "말씀해주신 방향으로 차근차근 준비해볼게요.",
+            "en": "I’ll follow the direction you suggested and prepare gradually.",
+            "es": "Seguiré sus consejos y avanzaré poco a poco.",
+            "fr": "Je vais suivre vos conseils et avancer progressivement.",
+            "pt": "Vou seguir os seus conselhos e avançar devagar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "필요하면 언제든 다시 찾아오면 돼요.",
+            "en": "And feel free to come back anytime you need help.",
+            "es": "Y vuelve cuando necesites más ayuda.",
+            "fr": "Revenez me voir quand vous en aurez besoin.",
+            "pt": "E volte sempre que precisar de ajuda."
+          }
+        }
+      ]
+    }
+  ]
+}

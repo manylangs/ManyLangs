@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "b1",
+    "id": "016"
+  },
+  "title": {
+    "target": "B1 — 사회•학교•기술 어휘",
+    "en": "B1 — Social, School, and Technology Vocabulary",
+    "es": "B1 — Vocabulario social, escolar y tecnológico",
+    "fr": "B1 — Vocabulaire social, scolaire et technologique",
+    "pt": "B1 — Vocabulário social, escolar e tecnológico"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "업데이트내역",
+        "en": "update history",
+        "es": "historial de actualizaciones",
+        "fr": "historique des mises à jour",
+        "pt": "histórico de atualizações"
+      },
+      "examples": [
+        {
+          "target": "업데이트내역을 확인하면 변경된 내용을 알 수 있어요.",
+          "en": "You can see what has changed by checking the update history.",
+          "es": "Puedes ver lo que cambió revisando el historial de actualizaciones.",
+          "fr": "Vous pouvez voir les modifications en consultant l'historique des mises à jour.",
+          "pt": "Você pode ver o que mudou verificando o histórico de atualizações."
+        },
+        {
+          "target": "업데이트내역에 오류 수정이 포함되어 있어요.",
+          "en": "The update history includes error fixes.",
+          "es": "El historial de actualizaciones incluye correcciones de errores.",
+          "fr": "L’historique des mises à jour inclut des corrections d’erreurs.",
+          "pt": "O histórico de atualizações inclui correções de erros."
+        },
+        {
+          "target": "업데이트내역을 주기적으로 관리해야 해요.",
+          "en": "The update history needs to be managed regularly.",
+          "es": "El historial de actualizaciones debe gestionarse regularmente.",
+          "fr": "L'historique des mises à jour doit être géré régulièrement.",
+          "pt": "É necessário gerenciar regularmente o histórico de atualizações."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "보안",
+        "en": "security",
+        "es": "seguridad",
+        "fr": "sécurité",
+        "pt": "segurança"
+      },
+      "examples": [
+        {
+          "target": "보안을 강화하기 위해 비밀번호를 변경했어요.",
+          "en": "I changed the password to enhance security.",
+          "es": "Cambié la contraseña para mejorar la seguridad.",
+          "fr": "J'ai changé le mot de passe pour renforcer la sécurité.",
+          "pt": "Mudei a senha para reforçar a segurança."
+        },
+        {
+          "target": "보안 문제로 서비스가 잠시 중단되었어요.",
+          "en": "The service was temporarily suspended due to a security issue.",
+          "es": "El servicio se suspendió temporalmente debido a un problema de seguridad.",
+          "fr": "Le service a été temporairement suspendu en raison d’un problème de sécurité.",
+          "pt": "O serviço foi temporariamente suspenso devido a um problema de segurança."
+        },
+        {
+          "target": "보안을 위해 이중 인증을 설정했어요.",
+          "en": "I set up two-factor authentication for security.",
+          "es": "Configuré la autenticación de dos factores por seguridad.",
+          "fr": "J’ai configuré l’authentification à deux facteurs pour plus de sécurité.",
+          "pt": "Configurei a autenticação de duas etapas para maior segurança."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "인증",
+        "en": "authentication",
+        "es": "autenticación",
+        "fr": "authentification",
+        "pt": "autenticação"
+      },
+      "examples": [
+        {
+          "target": "인증 절차를 완료해야 로그인할 수 있어요.",
+          "en": "You must complete the authentication process to log in.",
+          "es": "Debes completar el proceso de autenticación para iniciar sesión.",
+          "fr": "Vous devez terminer la procédure d'authentification pour vous connecter.",
+          "pt": "Você deve concluir o processo de autenticação para fazer login."
+        },
+        {
+          "target": "인증 코드가 문자로 전송되었어요.",
+          "en": "The authentication code has been sent via text message.",
+          "es": "El código de autenticación se envió por mensaje.",
+          "fr": "Le code d’authentification a été envoyé par message.",
+          "pt": "O código de autenticação foi enviado por mensagem."
+        },
+        {
+          "target": "인증 오류가 발생해 다시 시도해야 했어요.",
+          "en": "An authentication error occurred, so I had to try again.",
+          "es": "Ocurrió un error de autenticación, así que tuve que intentarlo de nuevo.",
+          "fr": "Une erreur d’authentification s’est produite, donc j’ai dû réessayer.",
+          "pt": "Ocorreu um erro de autenticação, então precisei tentar novamente."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "접근권한",
+        "en": "access permission",
+        "es": "permiso de acceso",
+        "fr": "autorisation d'accès",
+        "pt": "permissão de acesso"
+      },
+      "examples": [
+        {
+          "target": "해당 폴더는 접근권한이 있는 사용자만 열 수 있어요.",
+          "en": "Only users with access permission can open this folder.",
+          "es": "Solo los usuarios con permiso de acceso pueden abrir esta carpeta.",
+          "fr": "Seuls les utilisateurs disposant d'une autorisation d'accès peuvent ouvrir ce dossier.",
+          "pt": "Apenas usuários com permissão de acesso podem abrir esta pasta."
+        },
+        {
+          "target": "접근권한 설정을 변경해 드릴게요.",
+          "en": "I will change the access permission settings for you.",
+          "es": "Cambiaré la configuración de permiso de acceso para usted.",
+          "fr": "Je vais modifier les paramètres d'autorisation d'accès pour vous.",
+          "pt": "Vou alterar as configurações de permissão de acesso para você."
+        },
+        {
+          "target": "접근권한 부족으로 파일을 열 수 없어요.",
+          "en": "You cannot open the file due to insufficient access permission.",
+          "es": "No puede abrir el archivo por falta de permiso de acceso.",
+          "fr": "Vous ne pouvez pas ouvrir le fichier faute d'autorisation d'accès suffisante.",
+          "pt": "Você não pode abrir o arquivo por falta de permissão de acesso."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "관리자모드",
+        "en": "administrator mode",
+        "es": "modo administrador",
+        "fr": "mode administrateur",
+        "pt": "modo administrador"
+      },
+      "examples": [
+        {
+          "target": "프로그램을 설치하려면 관리자모드가 필요해요.",
+          "en": "You need administrator mode to install the program.",
+          "es": "Necesita el modo administrador para instalar el programa.",
+          "fr": "Vous avez besoin du mode administrateur pour installer le programme.",
+          "pt": "Você precisa do modo administrador para instalar o programa."
+        },
+        {
+          "target": "관리자모드에서 설정을 변경할 수 있어요.",
+          "en": "You can change the settings in administrator mode.",
+          "es": "Puede cambiar la configuración en modo administrador.",
+          "fr": "Vous pouvez modifier les paramètres en mode administrateur.",
+          "pt": "Você pode alterar as configurações no modo administrador."
+        },
+        {
+          "target": "관리자모드로 실행하지 않으면 기능이 제한돼요.",
+          "en": "If not run in administrator mode, some functions are restricted.",
+          "es": "Si no se ejecuta en modo administrador, algunas funciones estarán limitadas.",
+          "fr": "Si vous ne l'exécutez pas en mode administrateur, certaines fonctions seront limitées.",
+          "pt": "Se não for executado no modo administrador, algumas funções ficam limitadas."
+        }
+      ]
+    }
+  ]
+}

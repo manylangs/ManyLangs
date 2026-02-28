@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a2",
+    "id": "014"
+  },
+  "title": {
+    "target": "A2 — 확장 일상 어휘",
+    "en": "A2 — Expanded Everyday Vocabulary",
+    "es": "A2 — Vocabulario cotidiano ampliado",
+    "fr": "A2 — Vocabulaire quotidien élargi",
+    "pt": "A2 — Vocabulário do dia a dia ampliado"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "라벨",
+        "en": "label",
+        "es": "etiqueta",
+        "fr": "étiquette",
+        "pt": "rótulo"
+      },
+      "examples": [
+        {
+          "target": "라벨에 세탁 방법이 적혀 있어요.",
+          "en": "The washing instructions are written on the label.",
+          "es": "Las instrucciones de lavado están escritas en la etiqueta.",
+          "fr": "Les instructions de lavage sont écrites sur l’étiquette.",
+          "pt": "As instruções de lavagem estão escritas no rótulo."
+        },
+        {
+          "target": "라벨을 확인해 보세요.",
+          "en": "Please check the label.",
+          "es": "Por favor, revise la etiqueta.",
+          "fr": "Veuillez vérifier l’étiquette.",
+          "pt": "Por favor, verifique o rótulo."
+        },
+        {
+          "target": "라벨이 떨어져서 다시 붙였어요.",
+          "en": "The label came off so I reattached it.",
+          "es": "La etiqueta se despegó, así que la volví a pegar.",
+          "fr": "L’étiquette s’est décollée, donc je l’ai recollée.",
+          "pt": "O rótulo descolou, então eu o colei novamente."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "환불",
+        "en": "refund",
+        "es": "reembolso",
+        "fr": "remboursement",
+        "pt": "reembolso"
+      },
+      "examples": [
+        {
+          "target": "제품에 문제가 있어 환불을 요청했어요.",
+          "en": "I requested a refund because the product had an issue.",
+          "es": "Pedí un reembolso porque el producto tenía un problema.",
+          "fr": "J’ai demandé un remboursement parce que le produit avait un problème.",
+          "pt": "Pedi um reembolso porque o produto tinha um problema."
+        },
+        {
+          "target": "영수증이 있어야 환불이 가능해요.",
+          "en": "You need a receipt to get a refund.",
+          "es": "Necesita un recibo para obtener un reembolso.",
+          "fr": "Vous avez besoin d’un reçu pour obtenir un remboursement.",
+          "pt": "É necessário um recibo para receber um reembolso."
+        },
+        {
+          "target": "환불 처리가 완료되었어요.",
+          "en": "The refund has been processed.",
+          "es": "El reembolso ha sido procesado.",
+          "fr": "Le remboursement a été effectué.",
+          "pt": "O reembolso foi processado."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "교환",
+        "en": "exchange",
+        "es": "cambio",
+        "fr": "échange",
+        "pt": "troca"
+      },
+      "examples": [
+        {
+          "target": "사이즈가 맞지 않아 교환했어요.",
+          "en": "I exchanged it because the size didn’t fit.",
+          "es": "Lo cambié porque la talla no quedaba bien.",
+          "fr": "Je l’ai échangé parce que la taille ne convenait pas.",
+          "pt": "Troquei porque o tamanho não servia."
+        },
+        {
+          "target": "교환은 일주일 이내에 가능해요.",
+          "en": "Exchanges are possible within a week.",
+          "es": "Los cambios son posibles dentro de una semana.",
+          "fr": "Les échanges sont possibles dans un délai d’une semaine.",
+          "pt": "Trocas são possíveis dentro de uma semana."
+        },
+        {
+          "target": "색상이 마음에 들어서 교환했어요.",
+          "en": "I exchanged it because I preferred another color.",
+          "es": "Lo cambié porque me gustaba más otro color.",
+          "fr": "Je l’ai échangé car je préférais une autre couleur.",
+          "pt": "Troquei porque preferia outra cor."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "계산대",
+        "en": "checkout counter",
+        "es": "caja",
+        "fr": "caisse",
+        "pt": "caixa"
+      },
+      "examples": [
+        {
+          "target": "계산대 앞에 줄이 길어요.",
+          "en": "There is a long line at the checkout counter.",
+          "es": "Hay una fila larga en la caja.",
+          "fr": "Il y a une longue file d’attente à la caisse.",
+          "pt": "Há uma fila longa no caixa."
+        },
+        {
+          "target": "계산대에서 결제를 도와줄게요.",
+          "en": "I will help you with the payment at the checkout counter.",
+          "es": "Te ayudaré con el pago en la caja.",
+          "fr": "Je vais vous aider au paiement à la caisse.",
+          "pt": "Vou ajudar você com o pagamento no caixa."
+        },
+        {
+          "target": "계산대 위치가 어디예요?",
+          "en": "Where is the checkout counter?",
+          "es": "¿Dónde está la caja?",
+          "fr": "Où se trouve la caisse ?",
+          "pt": "Onde fica o caixa?"
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "영수증",
+        "en": "receipt",
+        "es": "recibo",
+        "fr": "reçu",
+        "pt": "recibo"
+      },
+      "examples": [
+        {
+          "target": "영수증을 꼭 보관하세요.",
+          "en": "Please keep the receipt.",
+          "es": "Por favor, guarde el recibo.",
+          "fr": "Veuillez garder le reçu.",
+          "pt": "Por favor, guarde o recibo."
+        },
+        {
+          "target": "영수증을 잃어버렸어요.",
+          "en": "I lost my receipt.",
+          "es": "Perdí mi recibo.",
+          "fr": "J’ai perdu mon reçu.",
+          "pt": "Perdi o meu recibo."
+        },
+        {
+          "target": "영수증에 총 금액이 적혀 있어요.",
+          "en": "The total amount is written on the receipt.",
+          "es": "El monto total está escrito en el recibo.",
+          "fr": "Le montant total est indiqué sur le reçu.",
+          "pt": "O valor total está escrito no recibo."
+        }
+      ]
+    }
+  ]
+}

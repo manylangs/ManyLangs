@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "b1",
+    "id": "019"
+  },
+  "title": {
+    "target": "B1 — 사회•학교•기술 어휘",
+    "en": "B1 — Social, School, and Technology Vocabulary",
+    "es": "B1 — Vocabulario social, escolar y tecnológico",
+    "fr": "B1 — Vocabulaire social, scolaire et technologique",
+    "pt": "B1 — Vocabulário social, escolar e tecnológico"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "파일관리",
+        "en": "file management",
+        "es": "gestión de archivos",
+        "fr": "gestion de fichiers",
+        "pt": "gerenciamento de arquivos"
+      },
+      "examples": [
+        {
+          "target": "파일관리를 잘하면 업무 효율이 높아져요.",
+          "en": "Good file management improves work efficiency.",
+          "es": "Una buena gestión de archivos mejora la eficiencia laboral.",
+          "fr": "Une bonne gestion des fichiers améliore l'efficacité du travail.",
+          "pt": "Uma boa gestão de arquivos melhora a eficiência no trabalho."
+        },
+        {
+          "target": "폴더를 정리해 파일관리를 쉽게 했어요.",
+          "en": "I organized the folders to make file management easier.",
+          "es": "Organicé las carpetas para facilitar la gestión de archivos.",
+          "fr": "J'ai organisé les dossiers pour faciliter la gestion des fichiers.",
+          "pt": "Organizei as pastas para facilitar o gerenciamento de arquivos."
+        },
+        {
+          "target": "파일관리 프로그램을 사용하면 실수를 줄일 수 있어요.",
+          "en": "Using a file management program helps reduce mistakes.",
+          "es": "Usar un programa de gestión de archivos ayuda a reducir errores.",
+          "fr": "L'utilisation d'un programme de gestion de fichiers aide à réduire les erreurs.",
+          "pt": "Usar um programa de gerenciamento de arquivos ajuda a reduzir erros."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "설계",
+        "en": "design",
+        "es": "diseño",
+        "fr": "conception",
+        "pt": "projeto / design"
+      },
+      "examples": [
+        {
+          "target": "새 건물 설계가 완료되었어요.",
+          "en": "The design of the new building has been completed.",
+          "es": "El diseño del nuevo edificio ha sido completado.",
+          "fr": "La conception du nouveau bâtiment est terminée.",
+          "pt": "O projeto do novo prédio foi concluído."
+        },
+        {
+          "target": "설계 변경으로 일정이 조금 늦어졌어요.",
+          "en": "The schedule was delayed due to design changes.",
+          "es": "El cronograma se retrasó debido a cambios en el diseño.",
+          "fr": "Le calendrier a été retardé en raison de modifications de la conception.",
+          "pt": "O cronograma atrasou devido a mudanças no projeto."
+        },
+        {
+          "target": "설계를 정확하게 해야 시공 오류를 줄일 수 있어요.",
+          "en": "Accurate design reduces construction errors.",
+          "es": "Un diseño preciso reduce los errores de construcción.",
+          "fr": "Une conception précise réduit les erreurs de construction.",
+          "pt": "Um projeto preciso reduz erros de construção."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "견적",
+        "en": "estimate",
+        "es": "presupuesto",
+        "fr": "devis",
+        "pt": "orçamento / estimativa"
+      },
+      "examples": [
+        {
+          "target": "프로젝트 비용 견적을 받아보았어요.",
+          "en": "I received an estimate for the project cost.",
+          "es": "Recibí un presupuesto para el costo del proyecto.",
+          "fr": "J'ai reçu un devis pour le coût du projet.",
+          "pt": "Recebi um orçamento para o custo do projeto."
+        },
+        {
+          "target": "견적 금액이 예상보다 높았어요.",
+          "en": "The estimated amount was higher than expected.",
+          "es": "El monto estimado fue más alto de lo esperado.",
+          "fr": "Le montant estimé était plus élevé que prévu.",
+          "pt": "O valor estimado foi mais alto do que o esperado."
+        },
+        {
+          "target": "정확한 견적을 위해 현장을 직접 방문했어요.",
+          "en": "I visited the site to prepare an accurate estimate.",
+          "es": "Visité el sitio para preparar un presupuesto preciso.",
+          "fr": "J'ai visité le site pour préparer un devis précis.",
+          "pt": "Visitei o local para preparar uma estimativa precisa."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "계약서",
+        "en": "contract",
+        "es": "contrato",
+        "fr": "contrat",
+        "pt": "contrato"
+      },
+      "examples": [
+        {
+          "target": "계약서 내용을 꼼꼼하게 확인해야 해요.",
+          "en": "You must check the contract details carefully.",
+          "es": "Debe revisar cuidadosamente el contenido del contrato.",
+          "fr": "Vous devez vérifier attentivement le contenu du contrat.",
+          "pt": "Você deve verificar cuidadosamente o conteúdo do contrato."
+        },
+        {
+          "target": "계약서에 서명하기 전에 변호사와 상담했어요.",
+          "en": "I consulted a lawyer before signing the contract.",
+          "es": "Consulté a un abogado antes de firmar el contrato.",
+          "fr": "J'ai consulté un avocat avant de signer le contrat.",
+          "pt": "Consultei um advogado antes de assinar o contrato."
+        },
+        {
+          "target": "계약서를 분실하면 다시 발급받아야 해요.",
+          "en": "If you lose the contract, you must request a reissue.",
+          "es": "Si pierde el contrato, debe solicitar una nueva copia.",
+          "fr": "Si vous perdez le contrat, vous devez en demander une réémission.",
+          "pt": "Se você perder o contrato, precisará solicitar uma nova via."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "공사",
+        "en": "construction",
+        "es": "construcción",
+        "fr": "construction",
+        "pt": "construção"
+      },
+      "examples": [
+        {
+          "target": "공사 소음 때문에 주변이 많이 시끄러웠어요.",
+          "en": "The construction noise made the area very loud.",
+          "es": "El ruido de la construcción hizo que la zona fuera muy ruidosa.",
+          "fr": "Le bruit des travaux rendait la zone très bruyante.",
+          "pt": "O barulho da construção deixou a área muito barulhenta."
+        },
+        {
+          "target": "공사 일정이 예정보다 빠르게 진행되고 있어요.",
+          "en": "The construction schedule is progressing faster than planned.",
+          "es": "El cronograma de construcción avanza más rápido de lo previsto.",
+          "fr": "Le calendrier des travaux avance plus vite que prévu.",
+          "pt": "O cronograma de construção está avançando mais rápido do que o previsto."
+        },
+        {
+          "target": "공사 구역은 출입이 제한돼요.",
+          "en": "Access is restricted in the construction area.",
+          "es": "El acceso está restringido en la zona de construcción.",
+          "fr": "L'accès est limité dans la zone de construction.",
+          "pt": "O acesso é restrito na área de construção."
+        }
+      ]
+    }
+  ]
+}

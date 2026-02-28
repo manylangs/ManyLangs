@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a1",
+    "id": "026"
+  },
+  "title": {
+    "target": "A1 — 일상 어휘",
+    "en": "A1 — Everyday Vocabulary",
+    "es": "A1 — Vocabulario cotidiano",
+    "fr": "A1 — Vocabulaire quotidien",
+    "pt": "A1 — Vocabulário do dia a dia"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "기분",
+        "en": "mood",
+        "es": "ánimo",
+        "fr": "humeur",
+        "pt": "humor"
+      },
+      "examples": [
+        {
+          "target": "오늘 기분이 좋아요.",
+          "en": "I'm in a good mood today.",
+          "es": "Estoy de buen ánimo hoy.",
+          "fr": "Je suis de bonne humeur aujourd'hui.",
+          "pt": "Estou de bom humor hoje."
+        },
+        {
+          "target": "기분이 좀 나아졌어요.",
+          "en": "My mood got better.",
+          "es": "Mi ánimo mejoró.",
+          "fr": "Mon humeur s'est améliorée.",
+          "pt": "Meu humor melhorou."
+        },
+        {
+          "target": "기분이 안 좋아 보여요.",
+          "en": "You don't look in a good mood.",
+          "es": "No pareces estar de buen ánimo.",
+          "fr": "Vous n'avez pas l'air de bonne humeur.",
+          "pt": "Não pareces estar de bom humor."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "감기",
+        "en": "cold (illness)",
+        "es": "resfriado",
+        "fr": "rhume",
+        "pt": "resfriado"
+      },
+      "examples": [
+        {
+          "target": "감기에 걸렸어요.",
+          "en": "I caught a cold.",
+          "es": "Me resfrié.",
+          "fr": "J'ai attrapé un rhume.",
+          "pt": "Peguei um resfriado."
+        },
+        {
+          "target": "감기 때문에 쉬었어요.",
+          "en": "I rested because of a cold.",
+          "es": "Descansé por el resfriado.",
+          "fr": "Je me suis reposé à cause d'un rhume.",
+          "pt": "Descansei por causa do resfriado."
+        },
+        {
+          "target": "감기가 빨리 나았으면 좋겠어요.",
+          "en": "I hope my cold gets better soon.",
+          "es": "Espero mejorar pronto del resfriado.",
+          "fr": "J'espère que mon rhume passera vite.",
+          "pt": "Espero melhorar do resfriado em breve."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "열",
+        "en": "fever",
+        "es": "fiebre",
+        "fr": "fièvre",
+        "pt": "febre"
+      },
+      "examples": [
+        {
+          "target": "열이 있어요.",
+          "en": "I have a fever.",
+          "es": "Tengo fiebre.",
+          "fr": "J'ai de la fièvre.",
+          "pt": "Estou com febre."
+        },
+        {
+          "target": "열이 높아서 병원에 갔어요.",
+          "en": "I went to the hospital because I had a high fever.",
+          "es": "Fui al hospital porque tenía fiebre alta.",
+          "fr": "Je suis allé à l'hôpital car j'avais une forte fièvre.",
+          "pt": "Fui ao hospital porque estava com febre alta."
+        },
+        {
+          "target": "열이 조금 내렸어요.",
+          "en": "My fever went down a bit.",
+          "es": "Mi fiebre bajó un poco.",
+          "fr": "Ma fièvre est un peu tombée.",
+          "pt": "Minha febre diminuiu um pouco."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "약",
+        "en": "medicine",
+        "es": "medicina",
+        "fr": "médicament",
+        "pt": "medicamento"
+      },
+      "examples": [
+        {
+          "target": "약을 먹었어요.",
+          "en": "I took medicine.",
+          "es": "Tomé medicina.",
+          "fr": "J'ai pris un médicament.",
+          "pt": "Tomei um medicamento."
+        },
+        {
+          "target": "이 약은 하루에 두 번 먹어요.",
+          "en": "Take this medicine twice a day.",
+          "es": "Toma esta medicina dos veces al día.",
+          "fr": "Prenez ce médicament deux fois par jour.",
+          "pt": "Tome este medicamento duas vezes por dia."
+        },
+        {
+          "target": "약을 먹고 조금 나아졌어요.",
+          "en": "I feel a bit better after taking medicine.",
+          "es": "Me siento mejor después de tomar la medicina.",
+          "fr": "Je me sens un peu mieux après avoir pris le médicament.",
+          "pt": "Sinto-me melhor depois de tomar o medicamento."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "병원",
+        "en": "hospital",
+        "es": "hospital",
+        "fr": "hôpital",
+        "pt": "hospital"
+      },
+      "examples": [
+        {
+          "target": "병원에 다녀왔어요.",
+          "en": "I went to the hospital.",
+          "es": "Fui al hospital.",
+          "fr": "Je suis allé à l'hôpital.",
+          "pt": "Fui ao hospital."
+        },
+        {
+          "target": "병원이 너무 멀어요.",
+          "en": "The hospital is too far.",
+          "es": "El hospital está muy lejos.",
+          "fr": "L'hôpital est trop loin.",
+          "pt": "O hospital é muito longe."
+        },
+        {
+          "target": "병원에서 검사를 받았어요.",
+          "en": "I got a check-up at the hospital.",
+          "es": "Me hicieron un examen en el hospital.",
+          "fr": "J'ai passé un examen à l'hôpital.",
+          "pt": "Fiz um exame no hospital."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a2",
+    "id": "028"
+  },
+  "title": {
+    "target": "A2 — 확장 일상 어휘",
+    "en": "A2 — Expanded Everyday Vocabulary",
+    "es": "A2 — Vocabulario cotidiano ampliado",
+    "fr": "A2 — Vocabulaire quotidien élargi",
+    "pt": "A2 — Vocabulário do dia a dia ampliado"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "앱",
+        "en": "app",
+        "es": "aplicación",
+        "fr": "application",
+        "pt": "aplicativo"
+      },
+      "examples": [
+        {
+          "target": "이 앱은 무료로 다운로드할 수 있어요.",
+          "en": "You can download this app for free.",
+          "es": "Puedes descargar esta aplicación gratis.",
+          "fr": "Vous pouvez télécharger cette application gratuitement.",
+          "pt": "Você pode baixar este aplicativo gratuitamente."
+        },
+        {
+          "target": "앱을 업데이트했어요.",
+          "en": "I updated the app.",
+          "es": "Actualicé la aplicación.",
+          "fr": "J'ai mis à jour l'application.",
+          "pt": "Atualizei o aplicativo."
+        },
+        {
+          "target": "앱이 갑자기 종료됐어요.",
+          "en": "The app closed unexpectedly.",
+          "es": "La aplicación se cerró repentinamente.",
+          "fr": "L'application s'est fermée soudainement.",
+          "pt": "O aplicativo fechou de repente."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "계정",
+        "en": "account",
+        "es": "cuenta",
+        "fr": "compte",
+        "pt": "conta"
+      },
+      "examples": [
+        {
+          "target": "새 계정을 만들었어요.",
+          "en": "I created a new account.",
+          "es": "Creé una nueva cuenta.",
+          "fr": "J'ai créé un nouveau compte.",
+          "pt": "Criei uma nova conta."
+        },
+        {
+          "target": "계정 정보를 확인하세요.",
+          "en": "Check your account information.",
+          "es": "Revisa la información de tu cuenta.",
+          "fr": "Vérifiez les informations de votre compte.",
+          "pt": "Verifique as informações da sua conta."
+        },
+        {
+          "target": "계정이 잠겨서 로그인할 수 없어요.",
+          "en": "My account is locked so I can't log in.",
+          "es": "Mi cuenta está bloqueada y no puedo iniciar sesión.",
+          "fr": "Mon compte est verrouillé donc je ne peux pas me connecter.",
+          "pt": "Minha conta está bloqueada e não consigo entrar."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "사용자",
+        "en": "user",
+        "es": "usuario",
+        "fr": "utilisateur",
+        "pt": "usuário"
+      },
+      "examples": [
+        {
+          "target": "사용자가 많을수록 서버가 느려질 수 있어요.",
+          "en": "The more users there are, the slower the server may become.",
+          "es": "Cuantos más usuarios hay, más lento puede volverse el servidor.",
+          "fr": "Plus il y a d'utilisateurs, plus le serveur peut devenir lent.",
+          "pt": "Quanto mais usuários houver, mais lento o servidor pode ficar."
+        },
+        {
+          "target": "사용자 정보를 보호해야 해요.",
+          "en": "User information must be protected.",
+          "es": "La información del usuario debe protegerse.",
+          "fr": "Les informations des utilisateurs doivent être protégées.",
+          "pt": "As informações do usuário devem ser protegidas."
+        },
+        {
+          "target": "새로운 사용자 인터페이스가 적용됐어요.",
+          "en": "A new user interface has been applied.",
+          "es": "Se aplicó una nueva interfaz de usuario.",
+          "fr": "Une nouvelle interface utilisateur a été appliquée.",
+          "pt": "Uma nova interface de usuário foi aplicada."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "암호",
+        "en": "password",
+        "es": "contraseña",
+        "fr": "mot de passe",
+        "pt": "senha"
+      },
+      "examples": [
+        {
+          "target": "암호를 잊어버려서 재설정했어요.",
+          "en": "I forgot my password, so I reset it.",
+          "es": "Olvidé mi contraseña, así que la restablecí.",
+          "fr": "J'ai oublié mon mot de passe, donc je l'ai réinitialisé.",
+          "pt": "Esqueci minha senha, então a redefini."
+        },
+        {
+          "target": "강한 암호를 사용하는 것이 좋아요.",
+          "en": "It’s good to use a strong password.",
+          "es": "Es bueno usar una contraseña fuerte.",
+          "fr": "Il est recommandé d'utiliser un mot de passe fort.",
+          "pt": "É bom usar uma senha forte."
+        },
+        {
+          "target": "암호를 입력하지 않으면 접근할 수 없어요.",
+          "en": "You cannot access it without entering the password.",
+          "es": "No puedes acceder sin ingresar la contraseña.",
+          "fr": "Vous ne pouvez pas y accéder sans saisir le mot de passe.",
+          "pt": "Você não pode acessar sem digitar a senha."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "검색",
+        "en": "search",
+        "es": "búsqueda",
+        "fr": "recherche",
+        "pt": "pesquisa"
+      },
+      "examples": [
+        {
+          "target": "검색 기능이 더 빨라졌어요.",
+          "en": "The search function became faster.",
+          "es": "La función de búsqueda se volvió más rápida.",
+          "fr": "La fonction de recherche est devenue plus rapide.",
+          "pt": "A função de pesquisa ficou mais rápida."
+        },
+        {
+          "target": "원하는 정보를 검색했어요.",
+          "en": "I searched for the information I wanted.",
+          "es": "Busqué la información que quería.",
+          "fr": "J'ai recherché l'information que je voulais.",
+          "pt": "Pesquisei as informações que queria."
+        },
+        {
+          "target": "검색 결과가 너무 많아요.",
+          "en": "There are too many search results.",
+          "es": "Hay demasiados resultados de búsqueda.",
+          "fr": "Il y a trop de résultats de recherche.",
+          "pt": "Há resultados demais na pesquisa."
+        }
+      ]
+    }
+  ]
+}
