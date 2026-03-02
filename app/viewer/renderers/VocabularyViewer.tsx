@@ -21,7 +21,6 @@ const buttonStyle = (active: boolean) => ({
 });
 
 type Props = {
-  targetLang: string;   // 🔥 목표 언어 (kr, en, es...)
   data: any;
   level: string;
   chapter: string;
@@ -29,14 +28,13 @@ type Props = {
 };
 
 export default function VocabularyViewer({
-  targetLang,
   data,
   level,
   chapter,
   chapters,
 }: Props) {
   const router = useRouter();
-  const [studyLang, setStudyLang] = useState<StudyLang>("en"); // 🔥 학습언어
+  const [lang, setLang] = useState<StudyLang>("en");
   const { showTargetText } = useViewerTarget();
 
   const currentIndex = chapters.indexOf(chapter);
@@ -46,37 +44,40 @@ export default function VocabularyViewer({
 
   return (
     <>
-      {/* 🔒 Audio 영역 */}
+      {/* 🔒 Audio를 Header와 같은 레벨로 분리 */}
       <div
         style={{
           position: "sticky",
-          top: 100,
+          top: 100,          // Header 높이에 맞춤 (필요시 60~72 조정)
           zIndex: 900,
           background: "#fff",
+          padding: 0,
           borderBottom: "1px solid #eee",
         }}
       >
         <div style={{ maxWidth: 720, margin: "0 auto" }}>
-          <VocaAudioController
-            lang={targetLang} // 🔥 kr 하드코딩 제거
-            level={level}
-            chapter={chapter}
-          />
+          <VocaAudioController lang="kr" level={level} chapter={chapter} />
         </div>
       </div>
 
+      {/* 본문 wrapper */}
       <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
 
         {/* Level Navigation */}
-        <div style={{ display: "flex", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
+        <div
+          style={{
+            display: "flex",
+            gap: 8,
+            marginBottom: 16,
+            flexWrap: "wrap",
+          }}
+        >
           {LEVELS.map((lv) => (
             <button
               key={lv}
               style={buttonStyle(lv === level)}
               onClick={() =>
-                router.push(
-                  `/viewer/${targetLang}/voca/${lv}/${chapters[0] ?? "001"}`
-                )
+                router.push(`/viewer/kr/voca/${lv}/001`)
               }
             >
               {lv.toUpperCase()}
@@ -85,12 +86,18 @@ export default function VocabularyViewer({
         </div>
 
         {/* Prev / Next */}
-        <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 12 }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            marginBottom: 12,
+          }}
+        >
           <button
             style={buttonStyle(false)}
             disabled={!prev}
             onClick={() =>
-              prev && router.push(`/viewer/${targetLang}/voca/${level}/${prev}`)
+              prev && router.push(`/viewer/kr/voca/${level}/${prev}`)
             }
           >
             ← Prev
@@ -100,7 +107,7 @@ export default function VocabularyViewer({
             style={buttonStyle(false)}
             disabled={!next}
             onClick={() =>
-              next && router.push(`/viewer/${targetLang}/voca/${level}/${next}`)
+              next && router.push(`/viewer/kr/voca/${level}/${next}`)
             }
           >
             Next →
@@ -108,13 +115,20 @@ export default function VocabularyViewer({
         </div>
 
         {/* Chapter Buttons */}
-        <div style={{ display: "flex", gap: 6, marginBottom: 20, flexWrap: "wrap" }}>
+        <div
+          style={{
+            display: "flex",
+            gap: 6,
+            marginBottom: 20,
+            flexWrap: "wrap",
+          }}
+        >
           {chapters.map((c) => (
             <button
               key={c}
               style={buttonStyle(c === chapter)}
               onClick={() =>
-                router.push(`/viewer/${targetLang}/voca/${level}/${c}`)
+                router.push(`/viewer/kr/voca/${level}/${c}`)
               }
             >
               {c}
@@ -122,13 +136,13 @@ export default function VocabularyViewer({
           ))}
         </div>
 
-        {/* Study Language Switch */}
+        {/* Study Language */}
         <div style={{ display: "flex", gap: 8, marginBottom: 32 }}>
           {STUDY_LANGS.map((l) => (
             <button
               key={l}
-              style={buttonStyle(studyLang === l)}
-              onClick={() => setStudyLang(l)}
+              style={buttonStyle(lang === l)}
+              onClick={() => setLang(l)}
             >
               {l.toUpperCase()}
             </button>
@@ -143,7 +157,7 @@ export default function VocabularyViewer({
             </div>
           )}
 
-          {data.title?.[studyLang] && (
+          {data.title?.[lang] && (
             <div
               style={{
                 fontSize: 22,
@@ -152,57 +166,61 @@ export default function VocabularyViewer({
                 marginTop: showTargetText ? 4 : 0,
               }}
             >
-              {data.title[studyLang]}
+              {data.title[lang]}
             </div>
           )}
         </div>
 
-        {/* Vocabulary Blocks */}
-        {Array.isArray(data?.blocks) &&
-          data.blocks.map((block: any, idx: number) => (
-            <section key={idx} style={{ marginBottom: 56 }}>
-              <div style={{ fontSize: 16, fontWeight: 700, marginBottom: 8 }}>
-                Set {idx + 1}
+        {/* Vocabulary Sets */}
+        {data.blocks.map((block: any, idx: number) => (
+          <section key={idx} style={{ marginBottom: 56 }}>
+            <div
+              style={{
+                fontSize: 16,
+                fontWeight: 700,
+                marginBottom: 8,
+              }}
+            >
+              Set {idx + 1}
+            </div>
+
+            {showTargetText && (
+              <div style={{ fontSize: 22, fontWeight: 700 }}>
+                {block.word.target}
               </div>
+            )}
 
-              {showTargetText && block?.word?.target && (
-                <div style={{ fontSize: 22, fontWeight: 700 }}>
-                  {block.word.target}
-                </div>
-              )}
+            {block.word[lang] && (
+              <div
+                style={{
+                  fontSize: 18,
+                  color: "#555",
+                  marginTop: showTargetText ? 0 : 2,
+                }}
+              >
+                {block.word[lang]}
+              </div>
+            )}
 
-              {block?.word?.[studyLang] && (
+            <div style={{ marginTop: 16 }}>
+              {block.examples.map((ex: any, i: number) => (
                 <div
+                  key={i}
                   style={{
-                    fontSize: 18,
-                    color: "#555",
-                    marginTop: showTargetText ? 0 : 2,
+                    borderBottom: "1px solid #eee",
+                    marginBottom: 12,
+                    paddingBottom: 12,
                   }}
                 >
-                  {block.word[studyLang]}
+                  {showTargetText && <div>{ex.target}</div>}
+                  {ex[lang] && (
+                    <div style={{ color: "#555" }}>{ex[lang]}</div>
+                  )}
                 </div>
-              )}
-
-              <div style={{ marginTop: 16 }}>
-                {Array.isArray(block?.examples) &&
-                  block.examples.map((ex: any, i: number) => (
-                    <div
-                      key={i}
-                      style={{
-                        borderBottom: "1px solid #eee",
-                        marginBottom: 12,
-                        paddingBottom: 12,
-                      }}
-                    >
-                      {showTargetText && <div>{ex.target}</div>}
-                      {ex[studyLang] && (
-                        <div style={{ color: "#555" }}>{ex[studyLang]}</div>
-                      )}
-                    </div>
-                  ))}
-              </div>
-            </section>
-          ))}
+              ))}
+            </div>
+          </section>
+        ))}
       </div>
     </>
   );
