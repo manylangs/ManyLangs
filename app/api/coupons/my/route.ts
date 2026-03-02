@@ -1,25 +1,48 @@
 import { NextResponse } from "next/server";
-import { COUPONS } from "@/lib/coupons";
+import { db } from "@/lib/firebaseAdmin";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
   const userId = searchParams.get("userId");
 
   if (!userId) {
-    return NextResponse.json({ error: "missing userId" }, { status: 400 });
+    return NextResponse.json(
+      { error: "missing userId" },
+      { status: 400 }
+    );
   }
 
   const now = Date.now();
 
-  const list = COUPONS.filter(c => c.ownerId === userId).map(c => ({
-    code: c.code,
-    status: c.used
-      ? "Activated"
-      : c.expiresAt < now
-      ? "Expired"
-      : "Unused",
-    expiresAt: c.expiresAt,
-  }));
+  const snap = await db
+    .collection("coupons")
+    .where("ownerId", "==", userId)
+    .get();
 
-  return NextResponse.json({ coupons: list });
+  const coupons = snap.docs.map(doc => {
+    const data = doc.data();
+
+    const used = !!data.used;
+    const expiresAt = data.expiresAt ?? null;
+
+    let status: "Unused" | "Activated" | "Expired" = "Unused";
+
+    if (used) {
+      status = "Activated";
+    } else if (expiresAt && expiresAt < now) {
+      status = "Expired";
+    }
+
+    return {
+      code: data.code,
+      status,
+      issuedAt: data.issuedAt ?? null,
+      expiresAt,
+    };
+  });
+
+  return NextResponse.json({ coupons });
 }
