@@ -60,7 +60,7 @@ export default function RealRenderer({ data }) {
           {/* 🔊 목표언어만 재생 버튼 표시 */}
           {targetTTS && Array.isArray(targetTTS) && targetTTS.length > 0 && (
             <button
-              onClick={() => playTTS(targetTTS)}
+              onClick={() => targetTTS.forEach((t: string) => playTTS(t))}
               className="mt-3 px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700"
             >
               🔊 듣기

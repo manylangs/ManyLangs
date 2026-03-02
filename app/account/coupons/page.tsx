@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useUser } from "@clerk/nextjs";
 import {
   Card,
   CardHeader,
@@ -10,20 +11,24 @@ import { Badge } from "../../../components/ui/badge";
 
 type Coupon = {
   code: string;
-  status: "Unused" | "Activated";
-  issuedAt?: number; // legacy coupon 대응
+  status: "Unused" | "Activated" | "Expired";
+  issuedAt?: number;
 };
 
 export default function MyCouponsPage() {
-  const userId = "test_user_123"; // TODO: Clerk 연동
+  const { user } = useUser();
+  const userId = user?.id;
+
   const [coupons, setCoupons] = useState<Coupon[]>([]);
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
 
   useEffect(() => {
+    if (!userId) return;
+
     fetch(`/api/coupons/my?userId=${userId}`)
       .then(res => res.json())
       .then(data => setCoupons(data.coupons ?? []));
-  }, []);
+  }, [userId]);
 
   function copyCoupon(code: string) {
     navigator.clipboard.writeText(code);
@@ -35,7 +40,6 @@ export default function MyCouponsPage() {
       <div className="w-full max-w-2xl">
         <h1 className="text-xl font-semibold">My Coupons</h1>
 
-        {/* 🔔 상단 고정 안내 */}
         <p className="mt-3 text-sm text-gray-500">
           Tap a coupon to copy the code.
         </p>
@@ -66,13 +70,21 @@ export default function MyCouponsPage() {
                     {c.code}
                   </code>
 
-                  {c.status === "Unused" ? (
+                  {c.status === "Unused" && (
                     <Badge className="bg-green-600 text-white">
                       Unused
                     </Badge>
-                  ) : (
+                  )}
+
+                  {c.status === "Activated" && (
                     <Badge variant="secondary">
                       Used
+                    </Badge>
+                  )}
+
+                  {c.status === "Expired" && (
+                    <Badge className="bg-gray-400 text-white">
+                      Expired
                     </Badge>
                   )}
                 </CardHeader>

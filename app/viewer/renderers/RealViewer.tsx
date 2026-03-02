@@ -4,6 +4,7 @@ import { useMemo, useState, useEffect } from "react";
 import Link from "next/link";
 import RealAudioController from "@/components/audio/controllers/RealAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
+import { useParams } from "next/navigation";
 
 type StudyLang = "en" | "es" | "fr" | "pt";
 
@@ -105,6 +106,8 @@ async function fetchSignedUrl(path: string): Promise<string> {
 type LoadStatus = "idle" | "loading" | "ready" | "error";
 
 export default function RealViewer({ level, chapter, data }: Props) {
+  const params = useParams();
+  const currentLang = params?.lang as string;
   const [lang, setLang] = useState<StudyLang>("en");
   const { showTargetText } = useViewerTarget();
 
@@ -142,7 +145,7 @@ export default function RealViewer({ level, chapter, data }: Props) {
       setAudioUrl("");
       setImageUrl("");
 
-      const manifestPath = `content/real/kr/${level}/${chapter}/manifest.json`;
+      const manifestPath = `content/real/${currentLang}/${level}/${chapter}/manifest.json`;
       const manifestSignedUrl = await fetchSignedUrl(manifestPath);
 
       const manifestRes = await fetch(manifestSignedUrl, {
@@ -158,14 +161,14 @@ export default function RealViewer({ level, chapter, data }: Props) {
 
       // audio
       if (audioAsset && !cancelled) {
-        const audioPath = `content/real/kr/${level}/${chapter}/${audioAsset.path}`;
+        const audioPath = `content/real/${currentLang}/${level}/${chapter}/${audioAsset.path}`;
         const signedAudio = await fetchSignedUrl(audioPath);
         if (!cancelled) setAudioUrl(signedAudio);
       }
 
       // image
       if (imageAsset && !cancelled) {
-        const imagePath = `content/real/kr/${level}/${chapter}/${imageAsset.path}`;
+        const imagePath = `content/real/${currentLang}/${level}/${chapter}/${imageAsset.path}`;
         const signedImage = await fetchSignedUrl(imagePath);
         if (!cancelled) setImageUrl(signedImage);
       }
@@ -312,14 +315,14 @@ export default function RealViewer({ level, chapter, data }: Props) {
           }}
         >
           <Link
-            href={`/viewer/kr/real/${level}/${prev}`}
+            href={`/viewer/${currentLang}/real/${level}/${prev}`}
             style={buttonStyle(false)}
           >
             ← Prev
           </Link>
 
           <Link
-            href={`/viewer/kr/real/${level}/${next}`}
+            href={`/viewer/${currentLang}/real/${level}/${next}`}
             style={buttonStyle(false)}
           >
             Next →
@@ -338,7 +341,7 @@ export default function RealViewer({ level, chapter, data }: Props) {
           {chapters.map((c) => (
             <Link
               key={c}
-              href={`/viewer/kr/real/${level}/${c}`}
+              href={`/viewer/${currentLang}/real/${level}/${c}`}
               style={buttonStyle(c === chapter)}
             >
               {c}
