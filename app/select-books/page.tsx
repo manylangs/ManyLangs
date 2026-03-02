@@ -166,7 +166,9 @@ export default function SelectBooksPage() {
   const [library, setLibrary] = useState<LibraryItem[]>([]);
   const [couponBox, setCouponBox] = useState<CouponItem[]>([]);
   const [couponPage, setCouponPage] = useState(1);
-
+  /* 🔥 Library pagination 추가 */
+  const LIBRARY_PAGE_SIZE = 10;
+  const [libraryPage, setLibraryPage] = useState(1);
   const [targetLang, setTargetLang] = useState("kr");
   const [book, setBook] = useState("");
   const [level, setLevel] = useState("");
@@ -534,7 +536,24 @@ export default function SelectBooksPage() {
   }
 
   const filteredLibrary = library.filter((i) => i.lang === targetLang && !isExpired(i.expiresAt));
+  /* 🔥 Library pagination 계산 */
+  const libraryTotal = filteredLibrary.length;
+  const libraryTotalPages = Math.max(
+    1,
+    Math.ceil(libraryTotal / LIBRARY_PAGE_SIZE)
+  );
 
+  const safeLibraryPage = Math.min(
+    Math.max(1, libraryPage),
+    libraryTotalPages
+  );
+
+  const libraryStart = (safeLibraryPage - 1) * LIBRARY_PAGE_SIZE;
+
+  const pagedLibrary = filteredLibrary.slice(
+    libraryStart,
+    libraryStart + LIBRARY_PAGE_SIZE
+  );
   // ✅ Coupon UX: sort (unused first) + pagination (10/page)
   const sortedCoupons = [...couponBox.filter((c) => !c.used), ...couponBox.filter((c) => c.used)];
 
@@ -605,7 +624,45 @@ export default function SelectBooksPage() {
                 {filteredLibrary.length === 0 && (
                   <p className="text-sm text-gray-500">No active textbooks.</p>
                 )}
-                {filteredLibrary.map((item, idx) => (
+                {/* Header: total + pagination */}
+                {libraryTotal > 0 && (
+                  <div className="flex items-center justify-between rounded border px-3 py-2 text-sm">
+                    <div>
+                      Total: <b>{libraryTotal}</b>
+                    </div>
+
+                    <div className="flex items-center gap-2">
+                      <button
+                        type="button"
+                        className="rounded border px-2 py-1 disabled:opacity-50"
+                        onClick={() => setLibraryPage((p) => Math.max(1, p - 1))}
+                        disabled={safeLibraryPage === 1}
+                      >
+                        {"<"}
+                      </button>
+
+                      <span className="text-xs text-gray-600">
+                        {safeLibraryPage} / {libraryTotalPages}
+                      </span>
+
+                      <button
+                        type="button"
+                        className="rounded border px-2 py-1 disabled:opacity-50"
+                        onClick={() =>
+                          setLibraryPage((p) =>
+                            Math.min(libraryTotalPages, p + 1)
+                          )
+                        }
+                        disabled={safeLibraryPage === libraryTotalPages}
+                      >
+                        {">"}
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {/* List: paged library */}
+                {pagedLibrary.map((item, idx) => (
                   <div
                     key={idx}
                     className="flex items-center justify-between rounded border px-3 py-2"
