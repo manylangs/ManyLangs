@@ -28,13 +28,13 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "invalid signature" }, { status: 400 });
   }
 
+
   if (event.type !== "checkout.session.completed") {
     return NextResponse.json({ received: true }, { status: 200 });
   }
 
   const session = event.data.object as Stripe.Checkout.Session;
   const eventId = event.id;
-
   const userId = session.client_reference_id as string | null;
 
   if (!userId) {
