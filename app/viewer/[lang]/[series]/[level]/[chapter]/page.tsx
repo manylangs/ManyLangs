@@ -52,7 +52,7 @@ export default async function Page({
       {/* VOCABULARY */}
       {series === "voca" && (
         <VocabularyViewer
-          targetLang={lang}
+          lang={lang}
           level={level}
           chapter={chapterId}
           chapters={chapters}
@@ -63,7 +63,7 @@ export default async function Page({
       {/* CONVERSATION (구조 변환 포함) */}
       {series === "conversation" && (
         <ConversationViewer
-          targetLang={lang}
+          lang={lang}
           level={level}
           chapter={chapterId}
           chapters={chapters}
@@ -98,7 +98,7 @@ export default async function Page({
       {/* REAL (manifest 기반 독립 구조) */}
       {series === "real" && (
         <RealViewer
-          targetLang={lang}
+          lang={lang}
           level={level}
           chapter={chapterId}
         />
@@ -106,7 +106,6 @@ export default async function Page({
       {/* GRAMMAR */}
       {series === "grammar" && (
         <GrammarViewer
-          targetLang={lang}
           level={level}
           chapter={chapterId}
           chapters={chapters}
@@ -115,7 +114,7 @@ export default async function Page({
       )}
       {series === "idiom" && (
         <IdiomViewer
-          targetLang={lang}
+          lang={lang}
           level={level}
           chapter={chapterId}
           chapters={chapters}

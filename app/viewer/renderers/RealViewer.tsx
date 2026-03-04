@@ -50,15 +50,21 @@ export default function RealViewer({
   const [sentences, setSentences] = useState<Sentence[]>([]);
   const [status, setStatus] = useState<LoadStatus>("idle");
 
-  const chapters = useMemo(
+  const FALLBACK_REAL_CHAPTERS = useMemo(
     () => Array.from({ length: 20 }, (_, i) => String(i + 1).padStart(3, "0")),
     []
   );
 
+  const [chapters, setChapters] = useState<string[]>(FALLBACK_REAL_CHAPTERS);
   const currentIndex = chapters.indexOf(chapter);
-  const prev = currentIndex > 0 ? chapters[currentIndex - 1] : chapter;
+
+  const prev =
+    currentIndex > 0 ? chapters[currentIndex - 1] : chapters[0] ?? chapter;
+
   const next =
-    currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : chapter;
+    currentIndex >= 0 && currentIndex < chapters.length - 1
+      ? chapters[currentIndex + 1]
+      : chapters[chapters.length - 1] ?? chapter;
 
   useEffect(() => {
     let cancelled = false;
@@ -80,11 +86,22 @@ export default function RealViewer({
 
         if (cancelled) return;
 
-        setAudioUrl(manifest.assets?.audio || "");
-        setImageUrl(manifest.assets?.image || "");
+        // ✅ 레벨별 실제 chapters 적용 (Real은 20개가 그대로 내려오게 됨)
+        const incoming = Array.isArray(manifest.chapters) ? manifest.chapters : null;
 
-        if (manifest.assets?.data) {
-          const dataRes = await fetch(manifest.assets.data);
+        // ✅ chapters가 서버에서 안 오면 Real은 20개 유지 (동결 유지)
+        setChapters(incoming && incoming.length > 0 ? incoming : FALLBACK_REAL_CHAPTERS);
+
+        // 🔹 array → object 변환
+        const audio = manifest.assets?.find((a: any) => a.kind === "audio")?.path;
+        const image = manifest.assets?.find((a: any) => a.kind === "image")?.path;
+        const data = manifest.assets?.find((a: any) => a.kind === "data")?.path;
+
+        setAudioUrl(audio || "");
+        setImageUrl(image || "");
+
+        if (data) {
+          const dataRes = await fetch(data);
           const dataJson = await dataRes.json();
 
           const descBlock = dataJson.blocks?.find(

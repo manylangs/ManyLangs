@@ -9,8 +9,9 @@ function parseViewerPath(pathname: string) {
   const idx = parts.indexOf("viewer");
   if (idx === -1) return null;
 
+  // ✅ 기본값 "kr" 제거: 불완전 경로는 빈 값으로 두고, 아래에서 차단
   return {
-    lang: parts[idx + 1] || "kr",
+    lang: parts[idx + 1] || "",
     series: parts[idx + 2] || "",
     level: parts[idx + 3] || "",
   };
@@ -19,6 +20,33 @@ function parseViewerPath(pathname: string) {
 function normalizeLevel(series: string, level: string) {
   if (series === "voca" || series === "idiom") return "all";
   return level;
+}
+
+function isValidReq(req: { lang: string; series: string; level: string }) {
+  // viewer 경로가 깨진 경우 통과/오작동 방지
+  if (!req.lang || !req.series || !req.level) return false;
+
+  // lang/series/level 최소 검증 (운영 안정성 + 오동작 차단)
+  if (!/^[a-z]{2}$/.test(req.lang)) return false;
+
+  const allowedSeries = new Set([
+    "real",
+    "voca",
+    "idiom",
+    "conversation",
+    "grammar",
+  ]);
+  if (!allowedSeries.has(req.series)) return false;
+
+  if (req.series === "voca" || req.series === "idiom") {
+    // voca/idiom은 level이 all이거나, 라우트는 실제론 all이 아닌 값이 올 수도 있음(기존 구조) → 허용
+    // 다만 빈 값은 위에서 이미 차단됨
+    return true;
+  }
+
+  if (!/^(a1|a2|b1|b2|c1|c2)$/.test(req.level)) return false;
+
+  return true;
 }
 
 export default function ViewerGuard({ children }: { children: React.ReactNode }) {
@@ -43,7 +71,7 @@ export default function ViewerGuard({ children }: { children: React.ReactNode })
   const abortRef = useRef<AbortController | null>(null);
 
   const hardBlock = () => {
-    // 🔥 bfcache/깜빡임 방지: 검증 중엔 절대 보여주지 않음
+    // bfcache/깜빡임 방지: 검증 중엔 절대 보여주지 않음
     setChecked(false);
     setAuthorized(false);
   };
@@ -62,6 +90,13 @@ export default function ViewerGuard({ children }: { children: React.ReactNode })
       return;
     }
 
+    // ✅ req가 깨진 경우 즉시 차단 (kr fallback 제거 효과)
+    if (!isValidReq(req)) {
+      finish(false);
+      router.replace("/select-books");
+      return;
+    }
+
     // 로그인 안 됨
     if (!isSignedIn) {
       finish(false);
@@ -71,13 +106,11 @@ export default function ViewerGuard({ children }: { children: React.ReactNode })
 
     const now = Date.now();
 
-    // ✅ 쿨다운 적용: 짧은 시간 중복 호출 무시
-    if (now - lastVerifyAtRef.current < COOLDOWN_MS) {
-      return;
-    }
+    // 쿨다운: 짧은 시간 중복 호출 무시
+    if (now - lastVerifyAtRef.current < COOLDOWN_MS) return;
     lastVerifyAtRef.current = now;
 
-    // ✅ 이미 실행 중이면 pending만 표시하고 종료
+    // 이미 실행 중이면 pending만 표시하고 종료
     if (inFlightRef.current) {
       pendingRef.current = true;
       return;
@@ -86,10 +119,10 @@ export default function ViewerGuard({ children }: { children: React.ReactNode })
     inFlightRef.current = true;
     pendingRef.current = false;
 
-    // 🔥 검증 시작 시 즉시 블록(깜빡임 방지)
+    // 검증 시작 시 즉시 블록(깜빡임 방지)
     hardBlock();
 
-    // ✅ 이전 요청 취소
+    // 이전 요청 취소
     if (abortRef.current) abortRef.current.abort();
     const controller = new AbortController();
     abortRef.current = controller;
@@ -105,7 +138,7 @@ export default function ViewerGuard({ children }: { children: React.ReactNode })
 
       let res = await doFetch();
 
-      // ✅ 401은 세션 복원 타이밍일 수 있어 1회 재시도
+      // 401은 세션 복원 타이밍일 수 있어 1회 재시도
       if (res.status === 401) res = await doFetch();
 
       if (res.status === 401) {
@@ -122,11 +155,11 @@ export default function ViewerGuard({ children }: { children: React.ReactNode })
 
       const data = await res.json();
 
-      const reqLang = req.lang || "kr";
+      const reqLang = req.lang;
       const reqSeries = req.series;
       const reqLevel = normalizeLevel(req.series, req.level);
 
-      // ✅ 서버 시간 없으면 실패 처리(운영 안정성)
+      // 서버 시간 없으면 실패 처리(운영 안정성)
       if (typeof data.serverNowMs !== "number") {
         finish(false);
         router.replace("/select-books");
@@ -151,40 +184,36 @@ export default function ViewerGuard({ children }: { children: React.ReactNode })
         return;
       }
 
-      // ✅ 통과
+      // 통과
       finish(true);
     } catch (e: any) {
-      // abort는 정상 케이스로 취급(새 verify가 덮어씀)
       if (e?.name === "AbortError") return;
-
       finish(false);
       router.replace("/select-books");
     } finally {
       inFlightRef.current = false;
 
-      // ✅ 실행 끝났는데 그 사이 이벤트가 더 들어왔으면 1번만 추가 실행
+      // 실행 끝났는데 그 사이 이벤트가 더 들어왔으면 1번만 추가 실행
       if (pendingRef.current) {
         pendingRef.current = false;
-        // 쿨다운 무시하고 바로 재검증(단 1회)
-        lastVerifyAtRef.current = 0;
+        lastVerifyAtRef.current = 0; // 쿨다운 무시하고 1회만
         verify("pending-flush");
       }
     }
   };
 
-  // ✅ 최초/경로변경 검증 (이것만으로도 보통 충분)
+  // 최초/경로변경 검증
   useEffect(() => {
     if (!isLoaded) return;
     verify("route");
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [req?.lang, req?.series, req?.level, isLoaded, isSignedIn]);
 
-  // ✅ bfcache/탭 복귀 등 추가 검증 (하지만 throttle/merge됨)
+  // bfcache/탭 복귀 등 추가 검증 (throttle/merge됨)
   useEffect(() => {
     if (!req) return;
 
     const onPageShow = (e: PageTransitionEvent) => {
-      // persisted(bfcache)일 때 특히 중요
       verify(e?.persisted ? "pageshow-bfcache" : "pageshow");
     };
 

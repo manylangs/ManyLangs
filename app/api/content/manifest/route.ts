@@ -7,11 +7,52 @@ import { db, storage } from "@/lib/firebaseAdmin";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
+/* 🔒 간단 rate limit */
+const RATE_LIMIT_WINDOW_MS = 60 * 1000;
+const RATE_LIMIT_MAX = 60;
+
+const rateMap = new Map<string, { count: number; windowStart: number }>();
+
+function checkRateLimit(userId: string) {
+  const now = Date.now();
+  const record = rateMap.get(userId);
+
+  if (!record) {
+    rateMap.set(userId, { count: 1, windowStart: now });
+    return;
+  }
+
+  if (now - record.windowStart > RATE_LIMIT_WINDOW_MS) {
+    rateMap.set(userId, { count: 1, windowStart: now });
+    return;
+  }
+
+  if (record.count >= RATE_LIMIT_MAX) {
+    throw new Error("Too many requests");
+  }
+
+  record.count++;
+}
+
+function bad(msg: string, status = 400) {
+  return NextResponse.json({ error: msg }, { status });
+}
+
+function toMs(v: any): number {
+  if (!v) return 0;
+  if (typeof v === "number") return v;
+  if (typeof v?.toMillis === "function") return v.toMillis();
+  const n = Number(v);
+  return Number.isFinite(n) ? n : 0;
+}
+
 export async function GET(req: Request) {
   try {
     const { userId } = await auth();
-    if (!userId)
-      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    if (!userId) return bad("Unauthorized", 401);
+
+    /* 🔒 rate limit */
+    checkRateLimit(userId);
 
     const url = new URL(req.url);
 
@@ -21,25 +62,48 @@ export async function GET(req: Request) {
     const chapter = url.searchParams.get("chapter");
 
     if (!lang || !series || !level || !chapter) {
-      return NextResponse.json({ error: "Missing params" }, { status: 400 });
+      return bad("Missing params", 400);
     }
 
+    /* 🔒 license 검증 */
+    let itemId: string;
+
+    if (series === "voca" || series === "idiom") {
+      itemId = `${lang}_${series}_all`;
+    } else {
+      itemId = `${lang}_${series}_${level}`;
+    }
+
+    const lic = await db
+      .collection("licenses")
+      .doc(userId)
+      .collection("items")
+      .doc(itemId)
+      .get();
+
+    if (!lic.exists) return bad("Forbidden", 403);
+
+    const exp = toMs(lic.data()?.expiresAt);
+
+    if (!exp || exp <= Date.now()) {
+      return bad("Forbidden", 403);
+    }
+
+    /* manifest 조회 */
+
     const docId = `${series}_${lang}_${level}_${chapter}`;
+
     const snap = await db.collection("contentManifests").doc(docId).get();
 
-    if (!snap.exists)
-      return NextResponse.json({ error: "Not found" }, { status: 404 });
+    if (!snap.exists) return bad("Not found", 404);
 
     const data = snap.data() as any;
 
-    if (!data?.active)
-      return NextResponse.json({ error: "Inactive content" }, { status: 403 });
+    if (!data?.active) return bad("Inactive content", 403);
 
     const bucket = storage.bucket();
+    const assets: any[] = [];
 
-    const assets: any = {};
-
-    // 🔥 audio / image
     for (const asset of data.assets || []) {
       const file = bucket.file(asset.path);
 
@@ -49,10 +113,12 @@ export async function GET(req: Request) {
         expires: Date.now() + 1000 * 60 * 20,
       });
 
-      assets[asset.kind] = signedUrl;
+      assets.push({
+        kind: asset.kind,
+        path: signedUrl,
+      });
     }
 
-    // 🔥 data 파일
     if (data.dataPath) {
       const file = bucket.file(data.dataPath);
 
@@ -62,14 +128,19 @@ export async function GET(req: Request) {
         expires: Date.now() + 1000 * 60 * 20,
       });
 
-      assets.data = signedUrl;
+      assets.push({
+        kind: "data",
+        path: signedUrl,
+      });
     }
 
     return NextResponse.json({ assets });
+
   } catch (e: any) {
-    return NextResponse.json(
-      { error: e.message ?? "Server error" },
-      { status: 500 }
-    );
+    if (e?.message === "Too many requests") {
+      return bad("Too many requests", 429);
+    }
+
+    return bad(e?.message || "Server error", 500);
   }
 }
