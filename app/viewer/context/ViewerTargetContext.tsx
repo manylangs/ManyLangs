@@ -1,69 +1,58 @@
 "use client";
 
-import React, {
-  createContext,
-  useCallback,
-  useContext,
-  useMemo,
-  useState,
-  type Dispatch,
-  type ReactNode,
-  type SetStateAction,
-} from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
-type ViewerTargetContextValue = {
-  /** ✅ 단일 소스 오브 트루스 */
-  showTarget: boolean;
-  setShowTarget: Dispatch<SetStateAction<boolean>>;
-  toggleShowTarget: () => void;
+const LEGACY_KEY = "showTargetLang";
+const NEW_KEY = "viewer_show_target_text";
 
-  /**
-   * ✅ 호환성(alias)
-   * - 기존 ViewerHeader가 showTargetText/toggleTargetText를 쓰고 있으니 유지
-   * - 내부적으로는 showTarget 하나로만 관리
-   */
+type Ctx = {
+  ready: boolean;
   showTargetText: boolean;
   toggleTargetText: () => void;
 };
 
-const ViewerTargetContext = createContext<ViewerTargetContextValue | null>(null);
+const ViewerTargetContext = createContext<Ctx | null>(null);
 
 export function ViewerTargetProvider({
   children,
-  initialShowTarget = true,
 }: {
-  children: ReactNode;
-  initialShowTarget?: boolean;
+  children: React.ReactNode;
 }) {
-  const [showTarget, setShowTarget] = useState<boolean>(initialShowTarget);
+  // 깜빡임 방지: hydration 전에는 기본 숨김(false)로 시작
+  const [ready, setReady] = useState(false);
+  const [showTargetText, setShowTargetText] = useState(false);
 
-  const toggleShowTarget = useCallback(() => {
-    setShowTarget((prev) => !prev);
+  useEffect(() => {
+    const saved =
+      localStorage.getItem(NEW_KEY) ?? localStorage.getItem(LEGACY_KEY);
+
+    // 저장값이 없으면 기본 ON(true)
+    const next = saved === null ? true : saved !== "false";
+
+    setShowTargetText(next);
+    setReady(true);
   }, []);
 
-  const value = useMemo<ViewerTargetContextValue>(() => {
-    return {
-      showTarget,
-      setShowTarget,
-      toggleShowTarget,
-
-      // alias (동일 상태를 다른 이름으로 노출)
-      showTargetText: showTarget,
-      toggleTargetText: toggleShowTarget,
-    };
-  }, [showTarget, toggleShowTarget]);
+  function toggleTargetText() {
+    setShowTargetText((prev) => {
+      const next = !prev;
+      localStorage.setItem(NEW_KEY, String(next));
+      localStorage.setItem(LEGACY_KEY, String(next));
+      return next;
+    });
+  }
 
   return (
-    <ViewerTargetContext.Provider value={value}>
+    <ViewerTargetContext.Provider value={{ ready, showTargetText, toggleTargetText }}>
       {children}
     </ViewerTargetContext.Provider>
   );
 }
 
-export function useViewerTarget(): ViewerTargetContextValue {
+export function useViewerTarget() {
   const ctx = useContext(ViewerTargetContext);
   if (!ctx) {
-    throw new Error("useViewerTarget must be used within ViewerTargetProvider");
+    throw new Error("useViewerTarget must be used inside ViewerTargetProvider");
   }
   return ctx;
 }

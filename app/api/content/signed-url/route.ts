@@ -10,46 +10,13 @@ function bad(msg: string, status = 400) {
   return NextResponse.json({ error: msg }, { status });
 }
 
-/* ===============================
-   🔒 Simple Memory Rate Limit
-================================= */
-
-const RATE_LIMIT_WINDOW_MS = 60 * 1000; // 1분
-const RATE_LIMIT_MAX = 60; // 분당 60회
-
-const rateMap = new Map<
-  string,
-  { count: number; windowStart: number }
->();
-
-function checkRateLimit(userId: string) {
-  const now = Date.now();
-  const record = rateMap.get(userId);
-
-  if (!record) {
-    rateMap.set(userId, { count: 1, windowStart: now });
-    return;
-  }
-
-  if (now - record.windowStart > RATE_LIMIT_WINDOW_MS) {
-    rateMap.set(userId, { count: 1, windowStart: now });
-    return;
-  }
-
-  if (record.count >= RATE_LIMIT_MAX) {
-    throw new Error("Too many requests");
-  }
-
-  record.count++;
-}
-
-/* =============================== */
-
+/* 🔒 강화된 path 검증 */
 function parseAndValidatePath(raw: string) {
   if (!raw) throw new Error("Missing path");
 
   let p = raw.trim();
 
+  // 🔐 최대 2회 decode 허용 (double encoding 차단)
   try {
     const d1 = decodeURIComponent(p);
     const d2 = d1.includes("%") ? decodeURIComponent(d1) : d1;
@@ -59,10 +26,12 @@ function parseAndValidatePath(raw: string) {
     throw new Error("Decode failed");
   }
 
+  // 🔒 절대경로 / 스킴 차단
   if (p.startsWith("/") || /^[a-zA-Z]+:\/\//.test(p)) {
     throw new Error("Invalid path");
   }
 
+  // 🔒 위험 패턴 차단
   if (
     p.includes("..") ||
     p.includes("\\") ||
@@ -120,9 +89,6 @@ export async function GET(req: Request) {
     const { userId } = await auth();
     if (!userId) return bad("Unauthorized", 401);
 
-    /* 🔒 Rate Limit 체크 */
-    checkRateLimit(userId);
-
     const url = new URL(req.url);
     const rawPath = url.searchParams.get("path") || "";
     const { path, series, lang, level } = parseAndValidatePath(rawPath);
@@ -131,8 +97,10 @@ export async function GET(req: Request) {
     let itemId: string;
 
     if (series === "voca" || series === "idiom") {
+      // 단권 구조
       itemId = `${lang}_${series}_all`;
     } else {
+      // 레벨 구조
       itemId = `${lang}_${series}_${level}`;
     }
 
@@ -157,8 +125,13 @@ export async function GET(req: Request) {
     const bucket = getStorage().bucket();
     const file = bucket.file(path);
 
-    // 🎯 TTL 20분
-    const TTL_MINUTES = 20;
+    const [exists] = await file.exists();
+    if (!exists) {
+      return bad("File not found", 404);
+    }
+
+    // 🎯 TTL 10분
+    const TTL_MINUTES = 10;
     const expiresAt = Date.now() + 1000 * 60 * TTL_MINUTES;
 
     const [signedUrl] = await file.getSignedUrl({
@@ -173,10 +146,6 @@ export async function GET(req: Request) {
     });
 
   } catch (e: any) {
-    if (e?.message === "Too many requests") {
-      return bad("Too many requests", 429);
-    }
-
     return bad(e?.message || "Server error", 500);
   }
 }
