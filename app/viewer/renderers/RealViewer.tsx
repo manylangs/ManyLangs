@@ -23,7 +23,7 @@ type Props = {
   chapter: string;
 };
 
-const LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
+const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
 
 const buttonStyle = (active: boolean) => ({
   padding: "4px 8px",
@@ -42,9 +42,19 @@ export default function RealViewer({
   level,
   chapter,
 }: Props) {
-  const { showTargetText } = useViewerTarget();
+
+  /* 🔹 Language you want to learn */
+  const { targetLang, showTargetText } = useViewerTarget();
 
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
+
+  /* 🔹 targetLang에 따라 studyLang 초기화 */
+  useEffect(() => {
+    const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
+    if (filtered.length > 0) {
+      setStudyLang(filtered[0]);
+    }
+  }, [targetLang]);
   const [audioUrl, setAudioUrl] = useState("");
   const [imageUrl, setImageUrl] = useState("");
   const [sentences, setSentences] = useState<Sentence[]>([]);
@@ -76,8 +86,9 @@ export default function RealViewer({
         setImageUrl("");
         setSentences([]);
 
+        /* 🔹 lang → targetLang */
         const res = await fetch(
-          `/api/content/manifest?lang=${lang}&series=real&level=${level}&chapter=${chapter}`
+          `/api/content/manifest?lang=${targetLang}&series=real&level=${level}&chapter=${chapter}`
         );
 
         if (!res.ok) throw new Error("Manifest failed");
@@ -86,13 +97,16 @@ export default function RealViewer({
 
         if (cancelled) return;
 
-        // ✅ 레벨별 실제 chapters 적용 (Real은 20개가 그대로 내려오게 됨)
-        const incoming = Array.isArray(manifest.chapters) ? manifest.chapters : null;
+        const incoming = Array.isArray(manifest.chapters)
+          ? manifest.chapters
+          : null;
 
-        // ✅ chapters가 서버에서 안 오면 Real은 20개 유지 (동결 유지)
-        setChapters(incoming && incoming.length > 0 ? incoming : FALLBACK_REAL_CHAPTERS);
+        setChapters(
+          incoming && incoming.length > 0
+            ? incoming
+            : FALLBACK_REAL_CHAPTERS
+        );
 
-        // 🔹 array → object 변환
         const audio = manifest.assets?.find((a: any) => a.kind === "audio")?.path;
         const image = manifest.assets?.find((a: any) => a.kind === "image")?.path;
         const data = manifest.assets?.find((a: any) => a.kind === "data")?.path;
@@ -104,11 +118,11 @@ export default function RealViewer({
           const dataRes = await fetch(data);
           const dataJson = await dataRes.json();
 
-          const descBlock = dataJson.blocks?.find(
-            (b: any) => b.type === "description"
-          );
+          const descBlock =
+            dataJson.blocks?.find((b: any) => b.type === "description") ||
+            dataJson.blocks?.[0];
 
-          setSentences(descBlock?.sentences || []);
+          setSentences(descBlock?.sentences || dataJson.sentences || []);
         }
 
         setStatus("ready");
@@ -123,7 +137,9 @@ export default function RealViewer({
     return () => {
       cancelled = true;
     };
-  }, [lang, level, chapter]);
+
+    /* 🔹 lang → targetLang */
+  }, [targetLang, level, chapter]);
 
   return (
     <div style={{ maxWidth: 1100, margin: "0 auto", padding: 24 }}>
@@ -142,20 +158,23 @@ export default function RealViewer({
           {audioUrl && <RealAudioController src={audioUrl} />}
 
           <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
-            {LANGS.map((l) => (
-              <button
-                key={l}
-                onClick={() => setStudyLang(l)}
-                style={buttonStyle(studyLang === l)}
-              >
-                {l.toUpperCase()}
-              </button>
-            ))}
+            {ALL_STUDY_LANGS
+              .filter((l) => l !== targetLang)
+              .map((l) => (
+                <button
+                  key={l}
+                  onClick={() => setStudyLang(l)}
+                  style={buttonStyle(studyLang === l)}
+                >
+                  {l.toUpperCase()}
+                </button>
+              ))}
           </div>
 
           <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <Link href={`/viewer/${lang}/real/${level}/${prev}`}>← Prev</Link>
-            <Link href={`/viewer/${lang}/real/${level}/${next}`}>Next →</Link>
+            {/* 🔹 lang → targetLang */}
+            <Link href={`/viewer/${targetLang}/real/${level}/${prev}`}>← Prev</Link>
+            <Link href={`/viewer/${targetLang}/real/${level}/${next}`}>Next →</Link>
           </div>
 
           <div
@@ -169,7 +188,7 @@ export default function RealViewer({
             {chapters.map((ch) => (
               <Link
                 key={ch}
-                href={`/viewer/${lang}/real/${level}/${ch}`}
+                href={`/viewer/${targetLang}/real/${level}/${ch}`}
                 style={{
                   padding: "4px 8px",
                   fontSize: 13,
@@ -205,9 +224,13 @@ export default function RealViewer({
 
             <div>
               {sentences.map((s, i) => {
+
+                /* 🔹 targetLang 사용 */
                 const targetText =
-                  s.texts?.[lang as keyof typeof s.texts] ?? "";
-                const studyText = s.texts?.[studyLang] ?? "";
+                  s.texts?.[targetLang as keyof typeof s.texts] ?? "";
+
+                const studyText =
+                  s.texts?.[studyLang] ?? "";
 
                 return (
                   <div key={i} style={{ marginBottom: 18 }}>

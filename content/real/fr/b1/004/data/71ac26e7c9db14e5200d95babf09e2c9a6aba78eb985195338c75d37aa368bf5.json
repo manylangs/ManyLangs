@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "b1",
+    "id": "004",
+    "targetLang": null
+  },
+  "topic": "A chef preparing ingredients",
+  "keywords": [
+    "chef",
+    "preparing ingredients",
+    "kitchen",
+    "cutting board",
+    "vegetables",
+    "cooking",
+    "knife"
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "004.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "texts": {
+            "kr": "한 셰프가 주방 조리대 앞에 서서 신선한 재료를 준비하고 있다.",
+            "en": "A chef stands at a kitchen counter preparing fresh ingredients.",
+            "es": "Un chef está de pie en el mostrador de la cocina preparando ingredientes frescos.",
+            "fr": "Un chef se tient au comptoir de la cuisine en préparant des ingrédients frais.",
+            "pt": "Um chef está em pé no balcão da cozinha preparando ingredientes frescos."
+          }
+        },
+        {
+          "texts": {
+            "kr": "그는 나무 도마 위에서 색색의 채소를 썰고 있다.",
+            "en": "He slices colorful vegetables on a wooden cutting board.",
+            "es": "Corta verduras coloridas sobre una tabla de cortar de madera.",
+            "fr": "Il tranche des légumes colorés sur une planche à découper en bois.",
+            "pt": "Ele corta legumes coloridos sobre uma tábua de madeira."
+          }
+        },
+        {
+          "texts": {
+            "kr": "잘게 다진 허브와 향신료가 담긴 여러 개의 그릇이 근처에 가지런히 놓여 있다.",
+            "en": "Several bowls filled with chopped herbs and spices are arranged neatly nearby.",
+            "es": "Varios cuencos con hierbas y especias picadas están colocados ordenadamente cerca.",
+            "fr": "Plusieurs bols remplis d'herbes et d'épices hachées sont disposés soigneusement à proximité.",
+            "pt": "Várias tigelas com ervas e especiarias picadas estão organizadas por perto."
+          }
+        },
+        {
+          "texts": {
+            "kr": "셰프는 날카로운 칼로 고르게 썰기 위해 집중하고 있다.",
+            "en": "The chef focuses carefully on making even cuts with his sharp knife.",
+            "es": "El chef se concentra en hacer cortes uniformes con su cuchillo afilado.",
+            "fr": "Le chef se concentre pour réaliser des découpes régulières avec son couteau bien aiguisé.",
+            "pt": "O chef se concentra em fazer cortes uniformes com sua faca afiada."
+          }
+        },
+        {
+          "texts": {
+            "kr": "가스레인지 위의 냄비에서는 김이 살짝 올라오며 끓고 있다.",
+            "en": "A pot is simmering on the stove, releasing a light cloud of steam.",
+            "es": "Una olla hierve a fuego lento en la estufa, liberando una ligera nube de vapor.",
+            "fr": "Une casserole mijote sur la cuisinière, laissant s'échapper un léger nuage de vapeur.",
+            "pt": "Uma panela ferve em fogo baixo no fogão, soltando uma leve nuvem de vapor."
+          }
+        },
+        {
+          "texts": {
+            "kr": "옆에는 손글씨 메모가 적힌 레시피 노트가 펼쳐져 있다.",
+            "en": "A recipe notebook lies open beside him with handwritten notes.",
+            "es": "Un cuaderno de recetas está abierto a su lado con notas escritas a mano.",
+            "fr": "Un carnet de recettes est ouvert à côté de lui avec des notes manuscrites.",
+            "pt": "Um caderno de receitas está aberto ao lado dele com anotações à mão."
+          }
+        }
+      ]
+    }
+  ],
+  "tts": {
+    "kr": [],
+    "en": [],
+    "es": [],
+    "fr": [],
+    "pt": []
+  }
+}

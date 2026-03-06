@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "a1",
+    "id": "010",
+    "targetLang": null
+  },
+  "topic": "A man waiting at a bus stop",
+  "keywords": [
+    "man",
+    "waiting",
+    "bus stop",
+    "street",
+    "phone",
+    "bench"
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "src": "010.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "texts": {
+            "kr": "남자가 조용한 거리의 작은 버스정류장에 혼자 서 있다.",
+            "en": "A man is standing alone at a small bus stop on a quiet street.",
+            "es": "Un hombre está de pie solo en una pequeña parada de autobús en una calle tranquila.",
+            "fr": "Un homme se tient seul à un petit arrêt de bus dans une rue calme.",
+            "pt": "Um homem está sozinho em um pequeno ponto de ônibus em uma rua tranquila."
+          }
+        },
+        {
+          "texts": {
+            "kr": "그는 한 손에 휴대폰을 들고 시간을 확인하고 있다.",
+            "en": "He holds a phone in one hand while checking the time.",
+            "es": "Sostiene un teléfono en una mano mientras revisa la hora.",
+            "fr": "Il tient un téléphone dans une main tout en vérifiant l’heure.",
+            "pt": "Ele segura um telefone em uma mão enquanto verifica a hora."
+          }
+        },
+        {
+          "texts": {
+            "kr": "남자는 버스가 오는지 보려고 길 아래쪽을 바라본다.",
+            "en": "The man looks down the road to see if the bus is coming.",
+            "es": "El hombre mira hacia la carretera para ver si el autobús viene.",
+            "fr": "L’homme regarde au bout de la route pour voir si le bus arrive.",
+            "pt": "O homem olha para a estrada para ver se o ônibus está vindo."
+          }
+        },
+        {
+          "texts": {
+            "kr": "그는 간단한 캐주얼 옷과 가벼운 재킷을 입고 있다.",
+            "en": "He wears simple casual clothes and a light jacket.",
+            "es": "Lleva ropa casual sencilla y una chaqueta ligera.",
+            "fr": "Il porte des vêtements simples et décontractés ainsi qu’une veste légère.",
+            "pt": "Ele usa roupas casuais simples e uma jaqueta leve."
+          }
+        },
+        {
+          "texts": {
+            "kr": "옆에 벤치가 있지만 그는 서 있는 것을 선택한다.",
+            "en": "A bench sits beside him, but he chooses to stand.",
+            "es": "Hay un banco junto a él, pero decide permanecer de pie.",
+            "fr": "Un banc se trouve à côté de lui, mais il choisit de rester debout.",
+            "pt": "Há um banco ao lado dele, mas ele escolhe ficar em pé."
+          }
+        },
+        {
+          "texts": {
+            "kr": "거리 뒤쪽에는 몇 대의 자동차가 주차되어 있다.",
+            "en": "A few cars are parked along the street behind him.",
+            "es": "Algunos coches están estacionados en la calle detrás de él.",
+            "fr": "Quelques voitures sont garées dans la rue derrière lui.",
+            "pt": "Alguns carros estão estacionados na rua atrás dele."
+          }
+        }
+      ]
+    }
+  ],
+  "tts": {
+    "kr": [],
+    "en": [],
+    "es": [],
+    "fr": [],
+    "pt": []
+  }
+}
