@@ -1,14 +1,29 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-import VocaAudioController from "@/components/audio/controllers/VocaAudioController";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import RealAudioController from "@/components/audio/controllers/RealAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
 
-const STUDY_LANGS = ["en", "es", "fr", "pt"] as const;
-type StudyLang = (typeof STUDY_LANGS)[number];
+type StudyLang = "en" | "es" | "fr" | "pt";
 
-const LEVELS = ["a1", "a2", "b1", "b2", "c1", "c2"];
+type Sentence = {
+  texts: {
+    kr: string;
+    en: string;
+    es: string;
+    fr: string;
+    pt: string;
+  };
+};
+
+type Props = {
+  lang: string;
+  level: string;
+  chapter: string;
+};
+
+const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
 
 const buttonStyle = (active: boolean) => ({
   padding: "4px 8px",
@@ -17,211 +32,243 @@ const buttonStyle = (active: boolean) => ({
   background: active ? "#333" : "#eee",
   color: active ? "#fff" : "#333",
   border: "none",
-  cursor: "pointer",
+  cursor: active ? "default" : "pointer",
 });
 
-type Props = {
-  data: any;
-  level: string;
-  chapter: string;
-  chapters: string[];
-};
+type LoadStatus = "idle" | "loading" | "ready" | "error";
 
-export default function VocabularyViewer({
-  data,
+export default function RealViewer({
+  lang,
   level,
   chapter,
-  chapters,
 }: Props) {
-  const router = useRouter();
-  const [lang, setLang] = useState<StudyLang>("en");
-  const { showTargetText } = useViewerTarget();
+
+  const { targetLang, showTargetText } = useViewerTarget();
+
+  const [studyLang, setStudyLang] = useState<StudyLang>("en");
+
+  useEffect(() => {
+    const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
+    if (filtered.length > 0) {
+      setStudyLang(filtered[0]);
+    }
+  }, [targetLang]);
+
+  const [audioUrl, setAudioUrl] = useState("");
+  const [imageUrl, setImageUrl] = useState("");
+  const [sentences, setSentences] = useState<Sentence[]>([]);
+  const [status, setStatus] = useState<LoadStatus>("idle");
+
+  /* 🔥 fallback 제거 */
+  const [chapters, setChapters] = useState<string[]>([]);
 
   const currentIndex = chapters.indexOf(chapter);
-  const prev = currentIndex > 0 ? chapters[currentIndex - 1] : null;
+
+  const prev =
+    currentIndex > 0 ? chapters[currentIndex - 1] : chapter;
+
   const next =
-    currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : null;
+    currentIndex >= 0 && currentIndex < chapters.length - 1
+      ? chapters[currentIndex + 1]
+      : chapter;
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const load = async () => {
+      try {
+
+        setStatus("loading");
+        setAudioUrl("");
+        setImageUrl("");
+        setSentences([]);
+
+        const res = await fetch(
+          `/api/content/manifest?lang=${targetLang}&series=real&level=${level}&chapter=${chapter}`
+        );
+
+        if (!res.ok) throw new Error("Manifest failed");
+
+        const manifest = await res.json();
+
+        if (cancelled) return;
+
+        /* 🔥 fallback 제거 → manifest chapters만 사용 */
+        const incoming = Array.isArray(manifest.chapters)
+          ? manifest.chapters
+          : [];
+
+        setChapters(incoming);
+
+        const audio =
+          manifest.assets?.find((a: any) => a.kind === "audio")?.path;
+
+        const image =
+          manifest.assets?.find((a: any) => a.kind === "image")?.path;
+
+        const data =
+          manifest.assets?.find((a: any) => a.kind === "data")?.path;
+
+        setAudioUrl(audio || "");
+        setImageUrl(image || "");
+
+        if (data) {
+
+          const dataRes = await fetch(data);
+
+          if (!dataRes.ok) throw new Error("data.json fetch failed");
+
+          const dataJson = await dataRes.json();
+
+          const descBlock =
+            dataJson.blocks?.find((b: any) => b.type === "description") ||
+            dataJson.blocks?.[0];
+
+          setSentences(
+            descBlock?.sentences ||
+            dataJson.sentences ||
+            []
+          );
+        }
+
+        setStatus("ready");
+
+      } catch (e) {
+
+        if (!cancelled) setStatus("error");
+
+        console.error(e);
+
+      }
+    };
+
+    load();
+
+    return () => {
+      cancelled = true;
+    };
+
+  }, [targetLang, level, chapter]);
 
   return (
-    <>
-      {/* 🔒 Audio를 Header와 같은 레벨로 분리 */}
-      <div
-        style={{
-          position: "sticky",
-          top: 100,          // Header 높이에 맞춤 (필요시 60~72 조정)
-          zIndex: 900,
-          background: "#fff",
-          padding: 0,
-          borderBottom: "1px solid #eee",
-        }}
-      >
-        <div style={{ maxWidth: 720, margin: "0 auto" }}>
-          <VocaAudioController lang="kr" level={level} chapter={chapter} />
+    <div style={{ maxWidth: 1100, margin: "0 auto", padding: 24 }}>
+
+      {status === "loading" && (
+        <div style={{ padding: 12, color: "#666" }}>Loading...</div>
+      )}
+
+      {status === "error" && (
+        <div style={{ padding: 12, color: "#c00" }}>
+          Failed to load this chapter.
         </div>
-      </div>
+      )}
 
-      {/* 본문 wrapper */}
-      <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
+      {status === "ready" && (
+        <>
 
-        {/* Level Navigation */}
-        <div
-          style={{
-            display: "flex",
-            gap: 8,
-            marginBottom: 16,
-            flexWrap: "wrap",
-          }}
-        >
-          {LEVELS.map((lv) => (
-            <button
-              key={lv}
-              style={buttonStyle(lv === level)}
-              onClick={() =>
-                router.push(`/viewer/kr/voca/${lv}/001`)
-              }
-            >
-              {lv.toUpperCase()}
-            </button>
-          ))}
-        </div>
-
-        {/* Prev / Next */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            marginBottom: 12,
-          }}
-        >
-          <button
-            style={buttonStyle(false)}
-            disabled={!prev}
-            onClick={() =>
-              prev && router.push(`/viewer/kr/voca/${level}/${prev}`)
-            }
-          >
-            ← Prev
-          </button>
-
-          <button
-            style={buttonStyle(false)}
-            disabled={!next}
-            onClick={() =>
-              next && router.push(`/viewer/kr/voca/${level}/${next}`)
-            }
-          >
-            Next →
-          </button>
-        </div>
-
-        {/* Chapter Buttons */}
-        <div
-          style={{
-            display: "flex",
-            gap: 6,
-            marginBottom: 20,
-            flexWrap: "wrap",
-          }}
-        >
-          {chapters.map((c) => (
-            <button
-              key={c}
-              style={buttonStyle(c === chapter)}
-              onClick={() =>
-                router.push(`/viewer/kr/voca/${level}/${c}`)
-              }
-            >
-              {c}
-            </button>
-          ))}
-        </div>
-
-        {/* Study Language */}
-        <div style={{ display: "flex", gap: 8, marginBottom: 32 }}>
-          {STUDY_LANGS.map((l) => (
-            <button
-              key={l}
-              style={buttonStyle(lang === l)}
-              onClick={() => setLang(l)}
-            >
-              {l.toUpperCase()}
-            </button>
-          ))}
-        </div>
-
-        {/* Title */}
-        <div style={{ marginBottom: 24 }}>
-          {showTargetText && (
-            <div style={{ fontSize: 22, fontWeight: 700 }}>
-              {data.title?.target}
-            </div>
+          {audioUrl && (
+            <RealAudioController src={audioUrl} />
           )}
 
-          {data.title?.[lang] && (
-            <div
-              style={{
-                fontSize: 22,
-                fontWeight: 400,
-                color: "#555",
-                marginTop: showTargetText ? 4 : 0,
-              }}
-            >
-              {data.title[lang]}
-            </div>
-          )}
-        </div>
+          <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
+            {ALL_STUDY_LANGS
+              .filter((l) => l !== targetLang)
+              .map((l) => (
+                <button
+                  key={l}
+                  onClick={() => setStudyLang(l)}
+                  style={buttonStyle(studyLang === l)}
+                >
+                  {l.toUpperCase()}
+                </button>
+              ))}
+          </div>
 
-        {/* Vocabulary Sets */}
-        {data.blocks.map((block: any, idx: number) => (
-          <section key={idx} style={{ marginBottom: 56 }}>
-            <div
-              style={{
-                fontSize: 16,
-                fontWeight: 700,
-                marginBottom: 8,
-              }}
-            >
-              Set {idx + 1}
-            </div>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <Link href={`/viewer/${targetLang}/real/${level}/${prev}`}>
+              ← Prev
+            </Link>
 
-            {showTargetText && (
-              <div style={{ fontSize: 22, fontWeight: 700 }}>
-                {block.word.target}
-              </div>
-            )}
+            <Link href={`/viewer/${targetLang}/real/${level}/${next}`}>
+              Next →
+            </Link>
+          </div>
 
-            {block.word[lang] && (
-              <div
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 6,
+              marginTop: 12,
+            }}
+          >
+            {chapters.map((ch) => (
+              <Link
+                key={ch}
+                href={`/viewer/${targetLang}/real/${level}/${ch}`}
                 style={{
-                  fontSize: 18,
-                  color: "#555",
-                  marginTop: showTargetText ? 0 : 2,
+                  padding: "4px 8px",
+                  fontSize: 13,
+                  borderRadius: 4,
+                  background: ch === chapter ? "#333" : "#eee",
+                  color: ch === chapter ? "#fff" : "#333",
+                  textDecoration: "none",
                 }}
               >
-                {block.word[lang]}
-              </div>
-            )}
+                {ch}
+              </Link>
+            ))}
+          </div>
 
-            <div style={{ marginTop: 16 }}>
-              {block.examples.map((ex: any, i: number) => (
-                <div
-                  key={i}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: 32,
+              marginTop: 24,
+              alignItems: "start",
+            }}
+          >
+
+            <div>
+              {imageUrl && (
+                <img
+                  src={imageUrl}
+                  alt=""
                   style={{
-                    borderBottom: "1px solid #eee",
-                    marginBottom: 12,
-                    paddingBottom: 12,
+                    width: "100%",
+                    borderRadius: 8,
                   }}
-                >
-                  {showTargetText && <div>{ex.target}</div>}
-                  {ex[lang] && (
-                    <div style={{ color: "#555" }}>{ex[lang]}</div>
-                  )}
-                </div>
-              ))}
+                />
+              )}
             </div>
-          </section>
-        ))}
-      </div>
-    </>
+
+            <div>
+              {sentences.map((s, i) => {
+
+                const targetText =
+                  s.texts?.[targetLang as keyof typeof s.texts] ?? "";
+
+                const studyText =
+                  s.texts?.[studyLang] ?? "";
+
+                return (
+                  <div key={i} style={{ marginBottom: 18 }}>
+                    {showTargetText && (
+                      <div style={{ marginBottom: 4, fontWeight: 500 }}>
+                        {targetText}
+                      </div>
+                    )}
+                    <div>{studyText}</div>
+                  </div>
+                );
+              })}
+            </div>
+
+          </div>
+
+        </>
+      )}
+    </div>
   );
 }

@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a2",
+    "id": "009"
+  },
+  "title": {
+    "target": "A2 — 확장 일상 어휘",
+    "en": "A2 — Expanded Everyday Vocabulary",
+    "es": "A2 — Vocabulario cotidiano ampliado",
+    "fr": "A2 — Vocabulaire quotidien élargi",
+    "pt": "A2 — Vocabulário do dia a dia ampliado"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "위치",
+        "en": "location",
+        "es": "ubicación",
+        "fr": "emplacement",
+        "pt": "localização"
+      },
+      "examples": [
+        {
+          "target": "현재 위치를 알려 주세요.",
+          "en": "Please tell me your current location.",
+          "es": "Por favor, indique su ubicación actual.",
+          "fr": "Veuillez indiquer votre emplacement actuel.",
+          "pt": "Por favor, diga sua localização atual."
+        },
+        {
+          "target": "위치를 잘못 전달했어요.",
+          "en": "I gave the wrong location.",
+          "es": "Di la ubicación equivocada.",
+          "fr": "J’ai donné le mauvais emplacement.",
+          "pt": "Passei a localização errada."
+        },
+        {
+          "target": "위치를 확인해 볼게요.",
+          "en": "Let me check the location.",
+          "es": "Voy a comprobar la ubicación.",
+          "fr": "Je vais vérifier l’emplacement.",
+          "pt": "Vou verificar a localização."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "방향",
+        "en": "direction",
+        "es": "dirección",
+        "fr": "direction",
+        "pt": "direção"
+      },
+      "examples": [
+        {
+          "target": "올바른 방향으로 가고 있어요.",
+          "en": "You are going in the right direction.",
+          "es": "Vas en la dirección correcta.",
+          "fr": "Vous allez dans la bonne direction.",
+          "pt": "Você está indo na direção certa."
+        },
+        {
+          "target": "방향을 잘못 잡았어요.",
+          "en": "I took the wrong direction.",
+          "es": "Tomé la dirección equivocada.",
+          "fr": "Je me suis trompé de direction.",
+          "pt": "Peguei a direção errada."
+        },
+        {
+          "target": "방향을 바꿔야 해요.",
+          "en": "We need to change direction.",
+          "es": "Necesitamos cambiar de dirección.",
+          "fr": "Nous devons changer de direction.",
+          "pt": "Precisamos mudar de direção."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "주변",
+        "en": "surroundings",
+        "es": "alrededores",
+        "fr": "alentours",
+        "pt": "arredores"
+      },
+      "examples": [
+        {
+          "target": "주변이 조용해요.",
+          "en": "The surroundings are quiet.",
+          "es": "Los alrededores están tranquilos.",
+          "fr": "Les alentours sont calmes.",
+          "pt": "Os arredores estão tranquilos."
+        },
+        {
+          "target": "주변을 살펴보세요.",
+          "en": "Look around the surroundings.",
+          "es": "Mira alrededor.",
+          "fr": "Regardez autour des environs.",
+          "pt": "Observe os arredores."
+        },
+        {
+          "target": "주변 환경이 좋아졌어요.",
+          "en": "The surrounding environment has improved.",
+          "es": "El entorno ha mejorado.",
+          "fr": "L’environnement autour s’est amélioré.",
+          "pt": "O ambiente ao redor melhorou."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "건물",
+        "en": "building",
+        "es": "edificio",
+        "fr": "bâtiment",
+        "pt": "prédio"
+      },
+      "examples": [
+        {
+          "target": "새 건물을 짓고 있어요.",
+          "en": "They are building a new building.",
+          "es": "Están construyendo un nuevo edificio.",
+          "fr": "Ils construisent un nouveau bâtiment.",
+          "pt": "Eles estão construindo um novo prédio."
+        },
+        {
+          "target": "건물이 정말 커요.",
+          "en": "The building is really big.",
+          "es": "El edificio es realmente grande.",
+          "fr": "Le bâtiment est vraiment grand.",
+          "pt": "O prédio é realmente grande."
+        },
+        {
+          "target": "이 건물에서 일해요.",
+          "en": "I work in this building.",
+          "es": "Trabajo en este edificio.",
+          "fr": "Je travaille dans ce bâtiment.",
+          "pt": "Eu trabalho neste prédio."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "문구점",
+        "en": "stationery store",
+        "es": "papelería",
+        "fr": "papeterie",
+        "pt": "papelaria"
+      },
+      "examples": [
+        {
+          "target": "문구점에서 펜을 샀어요.",
+          "en": "I bought a pen at the stationery store.",
+          "es": "Compré un bolígrafo en la papelería.",
+          "fr": "J’ai acheté un stylo à la papeterie.",
+          "pt": "Comprei uma caneta na papelaria."
+        },
+        {
+          "target": "근처에 문구점이 있어요?",
+          "en": "Is there a stationery store nearby?",
+          "es": "¿Hay una papelería cerca?",
+          "fr": "Y a-t-il une papeterie à proximité ?",
+          "pt": "Há uma papelaria por perto?"
+        },
+        {
+          "target": "문구점에서 필요한 걸 다 샀어요.",
+          "en": "I bought everything I needed at the stationery store.",
+          "es": "Compré todo lo que necesitaba en la papelería.",
+          "fr": "J’ai acheté tout ce dont j’avais besoin à la papeterie.",
+          "pt": "Comprei tudo que precisava na papelaria."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "b1",
+    "id": "048"
+  },
+  "title": {
+    "target": "B1 — 사회•학교•기술 어휘",
+    "en": "B1 — Social, School, and Technology Vocabulary",
+    "es": "B1 — Vocabulario social, escolar y tecnológico",
+    "fr": "B1 — Vocabulaire social, scolaire et technologique",
+    "pt": "B1 — Vocabulário social, escolar e tecnológico"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "카드사",
+        "en": "card company",
+        "es": "compañía de tarjetas",
+        "fr": "compagnie de carte",
+        "pt": "empresa de cartões"
+      },
+      "examples": [
+        {
+          "target": "카드사에서 사용 내역을 보냈습니다.",
+          "en": "The card company sent the usage details.",
+          "es": "La compañía de tarjetas envió los detalles de uso.",
+          "fr": "La compagnie de carte a envoyé les détails d’utilisation.",
+          "pt": "A empresa de cartões enviou os detalhes de uso."
+        },
+        {
+          "target": "카드사 고객센터에 문의했습니다.",
+          "en": "I contacted the card company’s customer service.",
+          "es": "Contacté al servicio al cliente de la compañía de tarjetas.",
+          "fr": "J’ai contacté le service client de la compagnie de carte.",
+          "pt": "Entrei em contato com o atendimento da empresa de cartões."
+        },
+        {
+          "target": "카드사 승인 절차가 지연되고 있습니다.",
+          "en": "The card company’s approval process is delayed.",
+          "es": "El proceso de aprobación de la compañía de tarjetas está retrasado.",
+          "fr": "La procédure d’approbation de la compagnie de carte est retardée.",
+          "pt": "O processo de aprovação da empresa de cartões está atrasado."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "한도",
+        "en": "limit",
+        "es": "límite",
+        "fr": "plafond",
+        "pt": "limite"
+      },
+      "examples": [
+        {
+          "target": "카드 한도가 초과되었습니다.",
+          "en": "The card limit has been exceeded.",
+          "es": "El límite de la tarjeta ha sido superado.",
+          "fr": "Le plafond de la carte a été dépassé.",
+          "pt": "O limite do cartão foi excedido."
+        },
+        {
+          "target": "한도 조정이 가능합니다.",
+          "en": "Limit adjustment is possible.",
+          "es": "Es posible ajustar el límite.",
+          "fr": "L’ajustement du plafond est possible.",
+          "pt": "É possível ajustar o limite."
+        },
+        {
+          "target": "이번 달에는 한도 내에서 사용하세요.",
+          "en": "Please stay within the limit this month.",
+          "es": "Por favor, mantente dentro del límite este mes.",
+          "fr": "Veuillez rester dans le plafond ce mois-ci.",
+          "pt": "Por favor, use dentro do limite este mês."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "승인번호",
+        "en": "approval number",
+        "es": "número de aprobación",
+        "fr": "numéro d’approbation",
+        "pt": "número de aprovação"
+      },
+      "examples": [
+        {
+          "target": "승인번호를 입력해 주세요.",
+          "en": "Please enter the approval number.",
+          "es": "Ingrese el número de aprobación, por favor.",
+          "fr": "Veuillez entrer le numéro d’approbation.",
+          "pt": "Digite o número de aprovação, por favor."
+        },
+        {
+          "target": "승인번호를 확인할 수 없습니다.",
+          "en": "The approval number cannot be verified.",
+          "es": "El número de aprobación no puede verificarse.",
+          "fr": "Le numéro d’approbation ne peut pas être vérifié.",
+          "pt": "O número de aprovação não pode ser verificado."
+        },
+        {
+          "target": "승인번호가 문자로 발송되었습니다.",
+          "en": "The approval number has been sent via text.",
+          "es": "El número de aprobación fue enviado por mensaje.",
+          "fr": "Le numéro d’approbation a été envoyé par message.",
+          "pt": "O número de aprovação foi enviado por mensagem."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "청구",
+        "en": "billing",
+        "es": "cobro",
+        "fr": "facturation",
+        "pt": "cobrança"
+      },
+      "examples": [
+        {
+          "target": "이번 달 청구 금액이 예상보다 높습니다.",
+          "en": "This month’s billing amount is higher than expected.",
+          "es": "El monto del cobro de este mes es mayor de lo esperado.",
+          "fr": "Le montant de facturation de ce mois est plus élevé que prévu.",
+          "pt": "O valor da cobrança deste mês é maior do que o esperado."
+        },
+        {
+          "target": "청구 내역을 이메일로 받았습니다.",
+          "en": "I received the billing details by email.",
+          "es": "Recibí los detalles de cobro por correo electrónico.",
+          "fr": "J’ai reçu les détails de facturation par e-mail.",
+          "pt": "Recebi os detalhes da cobrança por e-mail."
+        },
+        {
+          "target": "청구 오류가 발견되었습니다.",
+          "en": "A billing error has been found.",
+          "es": "Se encontró un error en el cobro.",
+          "fr": "Une erreur de facturation a été trouvée.",
+          "pt": "Foi encontrado um erro na cobrança."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "납부",
+        "en": "payment",
+        "es": "pago",
+        "fr": "paiement",
+        "pt": "pagamento"
+      },
+      "examples": [
+        {
+          "target": "요금 납부가 완료되었습니다.",
+          "en": "The payment has been completed.",
+          "es": "El pago ha sido completado.",
+          "fr": "Le paiement a été effectué.",
+          "pt": "O pagamento foi concluído."
+        },
+        {
+          "target": "납부 기한이 내일입니다.",
+          "en": "The payment deadline is tomorrow.",
+          "es": "La fecha límite de pago es mañana.",
+          "fr": "La date limite de paiement est demain.",
+          "pt": "O prazo de pagamento é amanhã."
+        },
+        {
+          "target": "자동 납부를 설정했습니다.",
+          "en": "I set up automatic payment.",
+          "es": "Configuré el pago automático.",
+          "fr": "J’ai configuré le paiement automatique.",
+          "pt": "Configurei o pagamento automático."
+        }
+      ]
+    }
+  ]
+}

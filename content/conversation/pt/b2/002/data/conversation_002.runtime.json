@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b2",
+    "id": "002"
+  },
+  "title": {
+    "target": "병원과 약국",
+    "en": "Hospital and Pharmacy",
+    "es": "Hospital y farmacia",
+    "fr": "Hôpital et pharmacie",
+    "pt": "Hospital e farmácia"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "안녕하세요, 진료 예약을 하고 싶은데 가능할까요?",
+            "en": "Hello, I'd like to make an appointment. Is that possible?",
+            "es": "Hola, quisiera pedir una cita. ¿Es posible?",
+            "fr": "Bonjour, je voudrais prendre un rendez-vous. Est-ce possible ?",
+            "pt": "Olá, gostaria de marcar uma consulta. É possível?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "안녕하세요! 네, 예약 도와드릴게요.",
+            "en": "Hello! Yes, I can help you with that.",
+            "es": "¡Hola! Sí, puedo ayudarle con eso.",
+            "fr": "Bonjour ! Oui, je peux vous aider.",
+            "pt": "Olá! Sim, posso tratar disso."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 가장 빠른 시간이 언제인가요?",
+            "en": "Then what is the earliest time available?",
+            "es": "Entonces, ¿cuál es el horario más temprano disponible?",
+            "fr": "D’accord, quel est l’horaire le plus tôt disponible ?",
+            "pt": "Então qual é o horário mais cedo disponível?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오늘 오후 3시가 가장 빨라요.",
+            "en": "The earliest slot is today at 3 p.m.",
+            "es": "El horario más temprano es hoy a las 3 p. m.",
+            "fr": "Le créneau le plus tôt est aujourd’hui à 15h.",
+            "pt": "O horário mais cedo é hoje às 15h."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요, 그 시간으로 예약해주세요.",
+            "en": "Great, please book that time for me.",
+            "es": "Perfecto, reserve ese horario para mí.",
+            "fr": "Très bien, réservez-moi ce créneau s’il vous plaît.",
+            "pt": "Perfeito, reserve esse horário para mim."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 예약 완료되었습니다!",
+            "en": "Alright, your appointment is confirmed!",
+            "es": "Muy bien, su cita está confirmada.",
+            "fr": "Parfait, votre rendez-vous est confirmé !",
+            "pt": "Muito bem, a sua consulta está confirmada!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "요즘 기침이 계속 나는데 좀 걱정돼요.",
+            "en": "I've been coughing a lot lately, and I'm a bit worried.",
+            "es": "He estado tosiendo mucho últimamente y estoy un poco preocupado.",
+            "fr": "Je tousse beaucoup ces derniers temps et ça m’inquiète un peu.",
+            "pt": "Tenho tossido bastante ultimamente e estou um pouco preocupado."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그렇군요. 언제부터 기침이 나기 시작했나요?",
+            "en": "I see. When did the coughing first start?",
+            "es": "Entiendo. ¿Cuándo comenzó la tos?",
+            "fr": "Je vois. Quand la toux a-t-elle commencé ?",
+            "pt": "Percebo. Quando é que a tosse começou?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 며칠 전부터 증상이 더 심해졌어요.",
+            "en": "Yes, the symptoms have gotten worse over the past few days.",
+            "es": "Sí, los síntomas han empeorado estos últimos días.",
+            "fr": "Oui, les symptômes se sont aggravés ces derniers jours.",
+            "pt": "Sim, os sintomas pioraram nos últimos dias."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그렇다면 감기나 기관지염일 가능성이 있어요.",
+            "en": "In that case, it could be a cold or bronchitis.",
+            "es": "En ese caso podría ser un resfriado o bronquitis.",
+            "fr": "Dans ce cas, cela pourrait être un rhume ou une bronchite.",
+            "pt": "Nesse caso, pode ser uma constipação ou bronquite."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 한번 검사를 받아볼게요.",
+            "en": "Okay, I'll go ahead with the test.",
+            "es": "De acuerdo, me haré el examen.",
+            "fr": "D’accord, je vais faire l’examen.",
+            "pt": "Está bem, vou fazer o exame."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "검사실로 안내해 드릴게요.",
+            "en": "Let me guide you to the testing room.",
+            "es": "Le acompañaré a la sala de exámenes.",
+            "fr": "Je vais vous accompagner vers la salle d’examen.",
+            "pt": "Vou acompanhá-lo até à sala de exames."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "검사 결과가 금방 나오나요?",
+            "en": "Will the test results be ready soon?",
+            "es": "¿Los resultados estarán listos pronto?",
+            "fr": "Les résultats seront disponibles rapidement ?",
+            "pt": "Os resultados vão ficar prontos rapidamente?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 20분 정도면 확인할 수 있어요.",
+            "en": "Yes, you can usually get them in about 20 minutes.",
+            "es": "Sí, normalmente se obtienen en unos veinte minutos.",
+            "fr": "Oui, on peut généralement les avoir en vingt minutes.",
+            "pt": "Sim, normalmente ficam prontos em cerca de vinte minutos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 생각보다 빨리 나오네요!",
+            "en": "Oh, that’s quicker than I expected!",
+            "es": "Vaya, es más rápido de lo que pensaba.",
+            "fr": "Oh, c’est plus rapide que je pensais !",
+            "pt": "Uau, é mais rápido do que eu imaginava!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "바로 안내드릴 수 있을 거예요.",
+            "en": "We should be able to inform you right away.",
+            "es": "Deberíamos poder informarle enseguida.",
+            "fr": "Nous devrions pouvoir vous informer aussitôt.",
+            "pt": "Provavelmente conseguiremos informá-lo de imediato."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 결과 나오면 바로 알려주세요.",
+            "en": "Okay, please let me know as soon as they’re out.",
+            "es": "Bien, avíseme en cuanto estén listos.",
+            "fr": "Très bien, prévenez-moi dès qu’ils sont prêts.",
+            "pt": "Certo, avise-me assim que estiverem prontos."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 결과 나오면 바로 호출해 드릴게요.",
+            "en": "I'll call you as soon as we have the results.",
+            "es": "Le llamaré en cuanto tengamos los resultados.",
+            "fr": "Je vous appellerai dès que nous aurons les résultats.",
+            "pt": "Eu chamo por si assim que tivermos os resultados."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 처방전 받을 수 있을까요?",
+            "en": "Could I get a prescription?",
+            "es": "¿Podría obtener una receta?",
+            "fr": "Pourrais-je obtenir une ordonnance ?",
+            "pt": "Posso obter uma receita?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 증상 보니까 약 처방이 필요해 보이네요.",
+            "en": "Yes, based on your symptoms, medication would help.",
+            "es": "Sí, por sus síntomas, un tratamiento le vendrá bien.",
+            "fr": "Oui, vu vos symptômes, un traitement vous fera du bien.",
+            "pt": "Sim, pelos seus sintomas, a medicação vai ajudar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "증상이 좀 심해서 약이 필요할 것 같아요.",
+            "en": "My symptoms are pretty strong, so I think I need some medication.",
+            "es": "Mis síntomas son bastante fuertes, así que creo que necesito medicación.",
+            "fr": "Mes symptômes sont assez forts, je pense qu’il me faut un traitement.",
+            "pt": "Os meus sintomas estão fortes, por isso acho que preciso de medicação."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "기침약과 염증 완화제를 함께 드릴게요.",
+            "en": "I'll prescribe cough medicine and an anti-inflammatory.",
+            "es": "Le recetaré un jarabe para la tos y un antiinflamatorio.",
+            "fr": "Je vais vous prescrire un sirop pour la toux et un anti-inflammatoire.",
+            "pt": "Vou prescrever um xarope para a tosse e um anti-inflamatório."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 감사합니다. 바로 약국에 갈게요.",
+            "en": "Great, thank you. I'll go to the pharmacy now.",
+            "es": "Perfecto, gracias. Iré a la farmacia.",
+            "fr": "Merci, je vais passer à la pharmacie.",
+            "pt": "Perfeito, obrigado. Vou já à farmácia."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "처방전 출력해드렸습니다.",
+            "en": "Your prescription has been printed.",
+            "es": "La receta ya está impresa.",
+            "fr": "L’ordonnance est imprimée.",
+            "pt": "A receita já está impressa."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "약은 식후에 먹으면 되나요?",
+            "en": "Should I take the medicine after meals?",
+            "es": "¿Debo tomar el medicamento después de las comidas?",
+            "fr": "Je dois prendre les médicaments après les repas ?",
+            "pt": "Devo tomar o medicamento depois das refeições?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 식후 30분에 드시면 가장 좋아요.",
+            "en": "Yes, it works best if taken 30 minutes after a meal.",
+            "es": "Sí, lo ideal es tomarlo treinta minutos después de comer.",
+            "fr": "Oui, idéalement trente minutes après un repas.",
+            "pt": "Sim, idealmente trinta minutos após a refeição."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 시간만 잘 맞추면 되는군요.",
+            "en": "Oh, so I just need to follow the timing properly.",
+            "es": "Ah, entonces solo debo seguir bien los horarios.",
+            "fr": "Ah, donc je dois juste respecter les horaires.",
+            "pt": "Ah, então só preciso de cumprir bem os horários."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "약효는 일정하게 유지되는 게 좋아요.",
+            "en": "Keeping the timing consistent helps with effectiveness.",
+            "es": "Mantener un horario constante ayuda a que funcione mejor.",
+            "fr": "C’est mieux de garder un rythme régulier pour l’efficacité.",
+            "pt": "Manter um horário regular ajuda na eficácia."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 잊지 않고 챙겨 먹을게요.",
+            "en": "Alright, I’ll make sure not to forget.",
+            "es": "De acuerdo, tendré cuidado.",
+            "fr": "D’accord, je ferai attention.",
+            "pt": "Está bem, vou ter atenção."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "필요하시면 추가 설명도 도와드릴게요.",
+            "en": "Let me know if you need further explanation.",
+            "es": "Avíseme si necesita más explicaciones.",
+            "fr": "Dites-moi si vous avez besoin d’explications supplémentaires.",
+            "pt": "Se precisar de mais esclarecimentos, é só dizer."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 열도 있는지 확인해 주실 수 있나요?",
+            "en": "Could you check if I have a fever?",
+            "es": "¿Podría comprobar si tengo fiebre?",
+            "fr": "Pouvez-vous vérifier si j’ai de la fièvre ?",
+            "pt": "Pode verificar se tenho febre?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 체온 한번 재볼게요.",
+            "en": "Sure, let me take your temperature.",
+            "es": "Claro, voy a tomarle la temperatura.",
+            "fr": "Oui, je vais prendre votre température.",
+            "pt": "Claro, vou medir a sua temperatura."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "생각보다 열이 높네요...",
+            "en": "Wow, that’s higher than I thought…",
+            "es": "Oh, es más alta de lo que pensaba…",
+            "fr": "Oh, c’est plus élevé que je ne pensais…",
+            "pt": "Uau, é mais alta do que eu pensava…"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "38도 이상이라서 해열이 필요해요.",
+            "en": "It's over 38 degrees, so you do need something for the fever.",
+            "es": "Está por encima de 38 grados, así que necesita algo para la fiebre.",
+            "fr": "Elle dépasse 38 degrés, un traitement contre la fièvre est nécessaire.",
+            "pt": "Está acima dos 38 graus, por isso precisa de algo para baixar a febre."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 주사도 맞아야 하나요?",
+            "en": "Then should I get an injection too?",
+            "es": "Entonces, ¿necesito una inyección?",
+            "fr": "Alors je dois recevoir une injection ?",
+            "pt": "Então preciso de uma injecção?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 해열 주사가 도움이 될 거예요.",
+            "en": "Yes, a fever-reducing injection will help.",
+            "es": "Sí, una inyección ayudará a bajarla.",
+            "fr": "Oui, une injection aidera à la faire baisser.",
+            "pt": "Sim, uma injecção ajudará a reduzir a temperatura."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 알레르기 약도 포함돼 있나요?",
+            "en": "Does this include allergy medication too?",
+            "es": "¿El tratamiento incluye también algo para las alergias?",
+            "fr": "Le traitement inclut aussi un médicament contre les allergies ?",
+            "pt": "O tratamento inclui também algo para alergias?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 알레르기 완화제도 함께 처방해드렸어요.",
+            "en": "Yes, I also prescribed an allergy reliever.",
+            "es": "Sí, también he añadido un antihistamínico.",
+            "fr": "Oui, j’ai également ajouté un antihistaminique.",
+            "pt": "Sim, também incluí um anti-histamínico."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 다행이에요. 요즘 알레르기가 좀 심해서요.",
+            "en": "Ah, that’s good. My allergies have been pretty bad lately.",
+            "es": "Ah, qué bien. Mis alergias han estado fuertes estos días.",
+            "fr": "Ah, tant mieux. Mes allergies sont assez fortes ces jours-ci.",
+            "pt": "Ah, ainda bem. As minhas alergias têm estado fortes ultimamente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그럼 약 드시면 좀 더 편해질 거예요.",
+            "en": "Then the symptoms should ease a bit.",
+            "es": "Eso debería aliviar sus síntomas.",
+            "fr": "Cela devrait soulager vos symptômes.",
+            "pt": "Isso deverá aliviar os seus sintomas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 알겠습니다. 주의할게요.",
+            "en": "Okay, I’ll be careful.",
+            "es": "Muy bien, tendré cuidado.",
+            "fr": "Très bien, je ferai attention.",
+            "pt": "Está bem, vou ter cuidado."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "졸릴 수 있으니까 운전은 피해주세요.",
+            "en": "It may cause drowsiness, so avoid driving.",
+            "es": "Puede causar somnolencia, así que evite conducir.",
+            "fr": "Cela peut provoquer de la somnolence, évitez de conduire.",
+            "pt": "Pode causar sonolência, portanto evite conduzir."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "약국이 바로 이 건물 안에 있나요?",
+            "en": "Is there a pharmacy inside this building?",
+            "es": "¿Hay una farmacia en este edificio?",
+            "fr": "Y a-t-il une pharmacie dans ce bâtiment ?",
+            "pt": "Há uma farmácia neste edifício?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 1층에 약국이 있어서 바로 가시면 돼요.",
+            "en": "Yes, there’s a pharmacy on the first floor.",
+            "es": "Sí, hay una farmacia en la planta baja.",
+            "fr": "Oui, il y a une pharmacie au rez-de-chaussée.",
+            "pt": "Sim, há uma farmácia no rés-do-chão."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 바로 옆이면 편하겠네요!",
+            "en": "Oh nice, right next door makes it convenient!",
+            "es": "Qué bien, ¡justo al lado es muy conveniente!",
+            "fr": "Ah super, juste à côté c’est pratique !",
+            "pt": "Ah, óptimo, ao lado é muito conveniente!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 대기 시간도 거의 없을 거예요.",
+            "en": "There usually isn’t much waiting time.",
+            "es": "Por lo general, casi no hay tiempo de espera.",
+            "fr": "En général, il n’y a presque pas d’attente.",
+            "pt": "Normalmente quase não há tempo de espera."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요. 금방 다녀올게요.",
+            "en": "Great. I’ll head there now.",
+            "es": "Perfecto, iré ahora mismo.",
+            "fr": "Très bien, j’y vais tout de suite.",
+            "pt": "Perfeito, vou lá agora."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "필요한 약 다 받으시면 다시 오지 않으셔도 됩니다.",
+            "en": "Once you get your medicine, you’re all set.",
+            "es": "Una vez tenga sus medicamentos, ya estará todo listo.",
+            "fr": "Une fois vos médicaments récupérés, tout sera bon.",
+            "pt": "Depois de levantar os medicamentos, estará tudo tratado."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 결과지를 이메일로도 받을 수 있을까요?",
+            "en": "Could I receive the test results by email as well?",
+            "es": "¿Puedo recibir también los resultados por correo electrónico?",
+            "fr": "Puis-je recevoir les résultats par e-mail également ?",
+            "pt": "Posso receber os resultados também por e-mail?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 이메일로도 보내드릴 수 있어요.",
+            "en": "Yes, we can email them to you.",
+            "es": "Sí, podemos enviárselos por correo electrónico.",
+            "fr": "Oui, nous pouvons vous les envoyer par e-mail.",
+            "pt": "Sim, podemos enviá-los por e-mail."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋네요. 그러면 보관하기 쉽겠어요.",
+            "en": "Nice, that will make it easier to keep track.",
+            "es": "Genial, así será más fácil guardarlos.",
+            "fr": "Super, ce sera plus simple à garder.",
+            "pt": "Óptimo, assim é mais fácil de guardar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "PDF 파일로 보내드려서 언제든 열람 가능해요.",
+            "en": "You’ll receive them as a PDF, so you can view them anytime.",
+            "es": "Los recibirá en PDF para que pueda revisarlos cuando quiera.",
+            "fr": "Vous les recevrez en PDF pour pouvoir les consulter facilement.",
+            "pt": "Recebê-los-á em PDF, para consultar quando quiser."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 부탁드릴게요.",
+            "en": "Okay, please send them to me.",
+            "es": "De acuerdo, envíemelos por favor.",
+            "fr": "D’accord, envoyez-les-moi s’il vous plaît.",
+            "pt": "De acordo, envie-mos por favor."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "이메일 주소 확인해 주시면 바로 발송할게요.",
+            "en": "Please confirm your email address and I'll send them right away.",
+            "es": "Confírmeme su dirección y se los envío enseguida.",
+            "fr": "Confirmez-moi votre adresse et je vous les envoie immédiatement.",
+            "pt": "Confirme o seu endereço e envio de imediato."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오늘 진료비는 어떻게 결제하면 되나요?",
+            "en": "How do I pay for the consultation today?",
+            "es": "¿Cómo debo pagar la consulta hoy?",
+            "fr": "Comment dois-je régler la consultation aujourd’hui ?",
+            "pt": "Como devo pagar a consulta de hoje?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "진료비는 데스크에서 결제하시면 돼요.",
+            "en": "You can pay at the front desk.",
+            "es": "Puede pagar en la recepción.",
+            "fr": "Vous pouvez payer à la réception.",
+            "pt": "Pode fazer o pagamento na recepção."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 카드 결제도 되는군요!",
+            "en": "Oh good, card payment works!",
+            "es": "Perfecto, ¡puedo pagar con tarjeta!",
+            "fr": "Ah parfait, le paiement par carte fonctionne !",
+            "pt": "Que bom, posso pagar com cartão!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 카드와 현금 모두 가능해요.",
+            "en": "Yes, we accept both card and cash.",
+            "es": "Sí, aceptamos tarjeta y efectivo.",
+            "fr": "Oui, nous acceptons carte et espèces.",
+            "pt": "Sim, aceitámos cartão e dinheiro."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 결제하고 가볼게요.",
+            "en": "Okay, I’ll pay now and head out.",
+            "es": "Muy bien, pagaré ahora y me marcho.",
+            "fr": "Très bien, je vais régler puis partir.",
+            "pt": "Muito bem, vou pagar agora e depois sigo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "여기 영수증입니다. 빠른 쾌유를 빌게요!",
+            "en": "Here’s your receipt. Wishing you a quick recovery!",
+            "es": "Aquí tiene su recibo. ¡Le deseo una pronta recuperación!",
+            "fr": "Voici votre reçu. Je vous souhaite un prompt rétablissement !",
+            "pt": "Aqui está o seu recibo. Desejo-lhe uma rápida recuperação!"
+          }
+        }
+      ]
+    }
+  ]
+}

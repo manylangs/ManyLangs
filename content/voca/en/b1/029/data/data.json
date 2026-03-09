@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "b1",
+    "id": "029"
+  },
+  "title": {
+    "target": "B2 — 사회·문화·경제·미래 개념 어휘",
+    "en": "B2 — Social, Cultural, Economic, and Future-Concept Vocabulary",
+    "es": "B2 — Vocabulario social, cultural, económico y de conceptos futuros",
+    "fr": "B2 — Vocabulaire social, culturel, économique et lié aux concepts futurs",
+    "pt": "B2 — Vocabulário social, cultural, econômico e de conceitos futuros"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "영향",
+        "en": "impact",
+        "es": "impacto",
+        "fr": "impact",
+        "pt": "impacto"
+      },
+      "examples": [
+        {
+          "target": "이 정책은 사회 전반에 큰 영향을 미쳤다.",
+          "en": "This policy had a major impact on society as a whole.",
+          "es": "Esta política tuvo un gran impacto en toda la sociedad.",
+          "fr": "Cette politique a eu un grand impact sur l'ensemble de la société.",
+          "pt": "Esta política teve um grande impacto em toda a sociedade."
+        },
+        {
+          "target": "환경 변화가 경제에 미치는 영향을 분석했다.",
+          "en": "We analyzed the impact of environmental changes on the economy.",
+          "es": "Analizamos el impacto de los cambios ambientales en la economía.",
+          "fr": "Nous avons analysé l’impact des changements environnementaux sur l’économie.",
+          "pt": "Analisamos o impacto das mudanças ambientais na economia."
+        },
+        {
+          "target": "미디어는 여론 형성에 중요한 영향을 준다.",
+          "en": "Media has an important impact on shaping public opinion.",
+          "es": "Los medios tienen un impacto importante en la formación de la opinión pública.",
+          "fr": "Les médias ont un impact important sur la formation de l’opinion publique.",
+          "pt": "A mídia tem um impacto importante na formação da opinião pública."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "결과값",
+        "en": "result value",
+        "es": "valor del resultado",
+        "fr": "valeur du résultat",
+        "pt": "valor do resultado"
+      },
+      "examples": [
+        {
+          "target": "입력값에 따라 결과값이 달라진다.",
+          "en": "The result value changes depending on the input value.",
+          "es": "El valor del resultado cambia según el valor de entrada.",
+          "fr": "La valeur du résultat change en fonction de la valeur d’entrée.",
+          "pt": "O valor do resultado muda dependendo do valor de entrada."
+        },
+        {
+          "target": "결과값을 비교하여 오류 여부를 확인했다.",
+          "en": "The result values were compared to check for errors.",
+          "es": "Se compararon los valores del resultado para verificar errores.",
+          "fr": "Les valeurs du résultat ont été comparées pour vérifier les erreurs.",
+          "pt": "Os valores do resultado foram comparados para verificar erros."
+        },
+        {
+          "target": "결과값이 예상과 다르게 나타났다.",
+          "en": "The result value appeared differently than expected.",
+          "es": "El valor del resultado apareció diferente de lo esperado.",
+          "fr": "La valeur du résultat est apparue différente de ce qui était prévu.",
+          "pt": "O valor do resultado apareceu diferente do esperado."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "실험군",
+        "en": "experimental group",
+        "es": "grupo experimental",
+        "fr": "groupe expérimental",
+        "pt": "grupo experimental"
+      },
+      "examples": [
+        {
+          "target": "실험군에는 새로운 약물이 투여되었다.",
+          "en": "The experimental group received the new drug.",
+          "es": "El grupo experimental recibió el nuevo medicamento.",
+          "fr": "Le groupe expérimental a reçu le nouveau médicament.",
+          "pt": "O grupo experimental recebeu o novo medicamento."
+        },
+        {
+          "target": "실험군과 통제군의 결과를 비교했다.",
+          "en": "We compared the results of the experimental group and the control group.",
+          "es": "Comparamos los resultados del grupo experimental y del grupo de control.",
+          "fr": "Nous avons comparé les résultats du groupe expérimental et du groupe témoin.",
+          "pt": "Comparamos os resultados do grupo experimental e do grupo de controle."
+        },
+        {
+          "target": "실험군의 반응이 예상보다 강하게 나타났다.",
+          "en": "The experimental group showed a stronger response than expected.",
+          "es": "El grupo experimental mostró una respuesta más fuerte de lo esperado.",
+          "fr": "Le groupe expérimental a montré une réaction plus forte que prévu.",
+          "pt": "O grupo experimental mostrou uma reação mais forte do que o esperado."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "통제군",
+        "en": "control group",
+        "es": "grupo de control",
+        "fr": "groupe témoin",
+        "pt": "grupo de controle"
+      },
+      "examples": [
+        {
+          "target": "통제군에는 약물이 투여되지 않았다.",
+          "en": "The control group did not receive the drug.",
+          "es": "El grupo de control no recibió el medicamento.",
+          "fr": "Le groupe témoin n’a pas reçu le médicament.",
+          "pt": "O grupo de controle não recebeu o medicamento."
+        },
+        {
+          "target": "통제군과 실험군의 차이를 측정했다.",
+          "en": "We measured the differences between the control and experimental groups.",
+          "es": "Se midieron las diferencias entre el grupo de control y el experimental.",
+          "fr": "Nous avons mesuré les différences entre le groupe témoin et le groupe expérimental.",
+          "pt": "Medimos as diferenças entre o grupo de controle e o grupo experimental."
+        },
+        {
+          "target": "통제군의 수치는 크게 변하지 않았다.",
+          "en": "The control group's values did not change significantly.",
+          "es": "Los valores del grupo de control no cambiaron significativamente.",
+          "fr": "Les valeurs du groupe témoin n’ont pas beaucoup changé.",
+          "pt": "Os valores do grupo de controle não mudaram significativamente."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "연구방법",
+        "en": "research method",
+        "es": "método de investigación",
+        "fr": "méthode de recherche",
+        "pt": "método de pesquisa"
+      },
+      "examples": [
+        {
+          "target": "연구방법을 명확히 설정해야 한다.",
+          "en": "The research method must be clearly defined.",
+          "es": "El método de investigación debe definirse claramente.",
+          "fr": "La méthode de recherche doit être clairement définie.",
+          "pt": "O método de pesquisa deve ser claramente definido."
+        },
+        {
+          "target": "적절한 연구방법 선택이 결과의 신뢰도를 높인다.",
+          "en": "Choosing an appropriate research method increases the reliability of the results.",
+          "es": "Elegir un método de investigación adecuado aumenta la fiabilidad de los resultados.",
+          "fr": "Le choix d’une méthode de recherche appropriée augmente la fiabilité des résultats.",
+          "pt": "Escolher um método de pesquisa adequado aumenta a confiabilidade dos resultados."
+        },
+        {
+          "target": "연구방법에 따라 데이터 수집 방식이 달라진다.",
+          "en": "The method of research determines how data is collected.",
+          "es": "El método de investigación determina cómo se recopilan los datos.",
+          "fr": "La méthode de recherche détermine la manière de collecter les données.",
+          "pt": "O método de pesquisa determina como os dados são coletados."
+        }
+      ]
+    }
+  ]
+}

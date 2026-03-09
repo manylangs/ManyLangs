@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "c1",
+    "id": "014"
+  },
+  "title": {
+    "target": "-(으)ㄴ 반면에",
+    "en": "Whereas / While / On the other hand",
+    "es": "Mientras que / Por otro lado",
+    "fr": "Tandis que / En revanche",
+    "pt": "Ao passo que / Enquanto / Por outro lado"
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'-(으)ㄴ 반면에'는 두 대상이나 상황의 상반된 특징을 대조적으로 제시할 때 사용된다.",
+        "en": "This form is used to present contrasting characteristics between two subjects or situations.",
+        "es": "Esta forma se usa para presentar características contrastadas entre dos sujetos o situaciones.",
+        "fr": "Cette forme est utilisée pour présenter des caractéristiques opposées entre deux sujets ou situations.",
+        "pt": "Esta forma é usada para apresentar características opostas entre dois sujeitos ou situações."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "앞 절과 뒤 절의 특성이 서로 반대되거나 균형을 이루는 경우에 자연스럽다.",
+        "en": "It is natural when the traits of the first and second clauses are opposite or balanced.",
+        "es": "Es natural cuando los rasgos de ambas partes son opuestos o están equilibrados.",
+        "fr": "Elle est naturelle lorsque les traits des deux propositions sont opposés ou équilibrés.",
+        "pt": "É natural quando os traços das duas partes são opostos ou equilibrados."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "긍정적·부정적 요소를 함께 제시하여 비교할 수 있다.",
+        "en": "It can compare both positive and negative aspects together.",
+        "es": "Permite comparar aspectos tanto positivos como negativos.",
+        "fr": "Elle permet de comparer à la fois des aspects positifs et négatifs.",
+        "pt": "Permite comparar aspectos tanto positivos como negativos."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "사실적 정보뿐 아니라 인상, 분위기 등 비정량적 요소도 대조할 수 있다.",
+        "en": "It can contrast not only factual information but also impressions and non-quantitative traits.",
+        "es": "Puede contrastar no solo hechos, sino también impresiones o rasgos no cuantitativos.",
+        "fr": "Elle peut contraster non seulement des faits, mais aussi des impressions ou des éléments non quantitatifs.",
+        "pt": "Pode contrastar não só factos, mas também impressões ou elementos não quantitativos."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'하지만', '그러나'와 달리 한 문장 안에서 균형 잡힌 비교를 만든다.",
+        "en": "Unlike ‘but’ or ‘however’, it creates a balanced comparison within a single sentence.",
+        "es": "A diferencia de ‘pero’ o ‘sin embargo’, crea una comparación equilibrada dentro de una misma oración.",
+        "fr": "Contrairement à « mais » ou « cependant », elle crée une comparaison équilibrée dans une seule phrase.",
+        "pt": "Ao contrário de «mas» ou «no entanto», cria uma comparação equilibrada numa única frase."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문어·구어 모두에서 사용 가능하지만 설명적 문맥에서 더 자주 쓰인다.",
+        "en": "It appears in both spoken and written contexts but is more common in explanatory writing.",
+        "es": "Aparece tanto en lenguaje hablado como escrito, aunque es más común en textos explicativos.",
+        "fr": "Elle apparaît à l’oral comme à l’écrit, mais est plus fréquente dans des textes explicatifs.",
+        "pt": "Aparece tanto na fala como na escrita, sendo mais comum em textos explicativos."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "두 요소의 차이를 명확하고 논리적으로 보여 준다.",
+        "en": "It clearly and logically shows differences between the two elements.",
+        "es": "Muestra de forma clara y lógica las diferencias entre los dos elementos.",
+        "fr": "Elle montre clairement et logiquement les différences entre les deux éléments.",
+        "pt": "Mostra de forma clara e lógica as diferenças entre os dois elementos."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "대조적 속성을 동시에 평가할 때 효과적이다.",
+        "en": "It is effective when evaluating opposing qualities simultaneously.",
+        "es": "Es eficaz para evaluar cualidades opuestas de manera simultánea.",
+        "fr": "Elle est efficace pour évaluer des caractéristiques opposées simultanément.",
+        "pt": "É eficaz quando se avaliam características opostas simultaneamente."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "비판적 분석뿐 아니라 객관적 비교에서도 활용 가능하다.",
+        "en": "It works not only for critical analysis but also for objective comparison.",
+        "es": "Sirve tanto para análisis crítico como para comparaciones objetivas.",
+        "fr": "Elle convient à la fois à l’analyse critique et à la comparaison objective.",
+        "pt": "É útil tanto para análise crítica como para comparação objectiva."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "상황이나 대상의 양면성을 설명할 때 유용한 표현이다.",
+        "en": "It is useful when describing two-sided or contrasting aspects of a situation.",
+        "es": "Es útil al describir dos aspectos opuestos o duales de una situación.",
+        "fr": "Elle est utile pour décrire deux aspects opposés ou dualistes d’une situation.",
+        "pt": "Ajuda a descrever os dois lados ou aspectos contrastantes de uma situação."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그는 조용한 반면에 동생은 적극적이다.",
+        "en": "He is quiet, whereas his younger sibling is outgoing.",
+        "es": "Él es callado, mientras que su hermano es extrovertido.",
+        "fr": "Il est calme, tandis que son frère est extraverti.",
+        "pt": "Ele é calmo, ao passo que o irmão é extrovertido."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "가격은 높은 반면에 품질은 뛰어나다.",
+        "en": "The price is high, whereas the quality is excellent.",
+        "es": "El precio es alto, mientras que la calidad es excelente.",
+        "fr": "Le prix est élevé, tandis que la qualité est excellente.",
+        "pt": "O preço é elevado, ao passo que a qualidade é excelente."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "속도는 빠른 반면에 안정성은 떨어진다.",
+        "en": "The speed is fast, whereas the stability is low.",
+        "es": "La velocidad es alta, mientras que la estabilidad es baja.",
+        "fr": "La vitesse est élevée, tandis que la stabilité est faible.",
+        "pt": "A velocidade é alta, ao passo que a estabilidade é baixa."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "공간은 좁은 반면에 활용도는 높다.",
+        "en": "The space is small, whereas the usability is high.",
+        "es": "El espacio es pequeño, mientras que la utilidad es alta.",
+        "fr": "L’espace est restreint, tandis que l’utilité est élevée.",
+        "pt": "O espaço é reduzido, ao passo que a utilidade é alta."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "준비는 부족한 반면에 결과는 좋았다.",
+        "en": "The preparation was lacking, whereas the result was good.",
+        "es": "La preparación fue insuficiente, mientras que el resultado fue bueno.",
+        "fr": "La préparation était insuffisante, tandis que le résultat était bon.",
+        "pt": "A preparação foi insuficiente, ao passo que o resultado foi bom."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "시간은 짧은 반면에 배운 내용은 많았다.",
+        "en": "The time was short, whereas the amount learned was large.",
+        "es": "El tiempo fue corto, mientras que lo aprendido fue mucho.",
+        "fr": "Le temps était court, tandis que ce qui a été appris était conséquent.",
+        "pt": "O tempo foi curto, ao passo que o que se aprendeu foi muito."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그 지역은 조용한 반면에 교통이 불편하다.",
+        "en": "The area is quiet, whereas the transportation is inconvenient.",
+        "es": "La zona es tranquila, mientras que el transporte es incómodo.",
+        "fr": "La région est calme, tandis que les transports sont inconfortables.",
+        "pt": "A zona é tranquila, ao passo que o transporte é incómodo."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "디자인은 단순한 반면에 기능은 다양하다.",
+        "en": "The design is simple, whereas the functions are diverse.",
+        "es": "El diseño es simple, mientras que las funciones son variadas.",
+        "fr": "Le design est simple, tandis que les fonctions sont variées.",
+        "pt": "O design é simples, ao passo que as funções são diversas."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "문제는 복잡한 반면에 해결책은 분명하다.",
+        "en": "The problem is complex, whereas the solution is clear.",
+        "es": "El problema es complejo, mientras que la solución es clara.",
+        "fr": "Le problème est complexe, tandis que la solution est claire.",
+        "pt": "O problema é complexo, ao passo que a solução é clara."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "팀 규모는 작은 반면에 성과는 안정적이다.",
+        "en": "The team is small, whereas the performance is stable.",
+        "es": "El equipo es pequeño, mientras que el rendimiento es estable.",
+        "fr": "L’équipe est petite, tandis que la performance est stable.",
+        "pt": "A equipa é pequena, ao passo que o desempenho é estável."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "경험은 부족한 반면에 이해도는 높았다.",
+        "en": "The experience is limited, whereas the understanding is high.",
+        "es": "La experiencia es limitada, mientras que la comprensión es alta.",
+        "fr": "L’expérience est limitée, tandis que la compréhension est élevée.",
+        "pt": "A experiência é limitada, ao passo que a compreensão é elevada."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "작업량은 많은 반면에 마감은 여유로웠다.",
+        "en": "The workload was heavy, whereas the deadline was generous.",
+        "es": "La carga de trabajo era grande, mientras que el plazo era amplio.",
+        "fr": "La charge de travail était lourde, tandis que le délai était large.",
+        "pt": "A carga de trabalho era pesada, ao passo que o prazo era amplo."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "요구 조건은 많은 반면에 실제 난도는 낮았다.",
+        "en": "The requirements were many, whereas the actual difficulty was low.",
+        "es": "Los requisitos eran muchos, mientras que la dificultad real era baja.",
+        "fr": "Les exigences étaient nombreuses, tandis que la difficulté réelle était faible.",
+        "pt": "Os requisitos eram muitos, ao passo que a dificuldade real era baixa."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "경쟁은 치열한 반면에 기회도 많았다.",
+        "en": "The competition was intense, whereas the opportunities were plentiful.",
+        "es": "La competencia era intensa, mientras que las oportunidades eran abundantes.",
+        "fr": "La concurrence était forte, tandis que les opportunités étaient nombreuses.",
+        "pt": "A concorrência era intensa, ao passo que havia muitas oportunidades."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "환경은 열악한 반면에 팀워크는 좋았다.",
+        "en": "The environment was poor, whereas the teamwork was good.",
+        "es": "El entorno era pobre, mientras que el trabajo en equipo era bueno.",
+        "fr": "L’environnement était médiocre, tandis que le travail d’équipe était bon.",
+        "pt": "O ambiente era fraco, ao passo que o trabalho em equipa era bom."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "변수는 많은 반면에 결과는 예측 가능했다.",
+        "en": "There were many variables, whereas the result was predictable.",
+        "es": "Había muchas variables, mientras que el resultado era predecible.",
+        "fr": "Il y avait beaucoup de variables, tandis que le résultat était prévisible.",
+        "pt": "Havia muitas variáveis, ao passo que o resultado era previsível."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "비용은 높은 반면에 효율은 떨어졌다.",
+        "en": "The cost was high, whereas the efficiency was low.",
+        "es": "El coste era alto, mientras que la eficiencia era baja.",
+        "fr": "Le coût était élevé, tandis que l’efficacité était faible.",
+        "pt": "O custo era elevado, ao passo que a eficiência era baixa."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "변화는 빠른 반면에 적용은 느렸다.",
+        "en": "The changes were quick, whereas the implementation was slow.",
+        "es": "Los cambios eran rápidos, mientras que la implementación era lenta.",
+        "fr": "Les changements étaient rapides, tandis que l’application était lente.",
+        "pt": "As mudanças eram rápidas, ao passo que a implementação era lenta."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "선택지는 적은 반면에 결정은 쉬웠다.",
+        "en": "The options were few, whereas the decision was easy.",
+        "es": "Había pocas opciones, mientras que la decisión era fácil.",
+        "fr": "Les options étaient limitées, tandis que la décision était facile.",
+        "pt": "As opções eram poucas, ao passo que a decisão era fácil."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "압박은 큰 반면에 성과는 안정적이었다.",
+        "en": "The pressure was high, whereas the performance was stable.",
+        "es": "La presión era alta, mientras que el rendimiento era estable.",
+        "fr": "La pression était forte, tandis que la performance restait stable.",
+        "pt": "A pressão era alta, ao passo que o desempenho era estável."
+      }
+    }
+  ]
+}

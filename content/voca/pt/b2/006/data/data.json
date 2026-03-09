@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "b2",
+    "id": "006"
+  },
+  "title": {
+    "target": "B2 — 사회•문화•경제•미래 개념 어휘",
+    "en": "B2 — Social, Cultural, Economic, and Future-Concept Vocabulary",
+    "es": "B2 — Vocabulario social, cultural, económico y de conceptos futuros",
+    "fr": "B2 — Vocabulaire social, culturel, économique et lié aux concepts futurs",
+    "pt": "B2 — Vocabulário social, cultural, econômico e de conceitos futuros"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "경제",
+        "en": "economy",
+        "es": "economía",
+        "fr": "économie",
+        "pt": "economia"
+      },
+      "examples": [
+        {
+          "target": "국가 경제가 회복세를 보이고 있다.",
+          "en": "The national economy is showing signs of recovery.",
+          "es": "La economía nacional muestra señales de recuperación.",
+          "fr": "L'économie nationale montre des signes de reprise.",
+          "pt": "A economia nacional está mostrando sinais de recuperação."
+        },
+        {
+          "target": "경제 안정은 정책의 중요한 목표이다.",
+          "en": "Economic stability is an important policy goal.",
+          "es": "La estabilidad económica es un objetivo político importante.",
+          "fr": "La stabilité économique est un objectif politique important.",
+          "pt": "A estabilidade econômica é um objetivo político importante."
+        },
+        {
+          "target": "경제의 구조적 변화가 진행 중이다.",
+          "en": "Structural changes in the economy are underway.",
+          "es": "Se están produciendo cambios estructurales en la economía.",
+          "fr": "Des changements structurels dans l'économie sont en cours.",
+          "pt": "Mudanças estruturais na economia estão em andamento."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "물가",
+        "en": "price level",
+        "es": "nivel de precios",
+        "fr": "niveau des prix",
+        "pt": "nível de preços"
+      },
+      "examples": [
+        {
+          "target": "최근 물가 상승이 이어지고 있다.",
+          "en": "Recent price increases have continued.",
+          "es": "El aumento reciente de los precios continúa.",
+          "fr": "La récente hausse des prix se poursuit.",
+          "pt": "O recente aumento dos preços continua."
+        },
+        {
+          "target": "물가 안정은 경제 정책의 핵심 목표이다.",
+          "en": "Price stability is a key economic policy objective.",
+          "es": "La estabilidad de precios es un objetivo clave de la política económica.",
+          "fr": "La stabilité des prix est un objectif clé de la politique économique.",
+          "pt": "A estabilidade dos preços é um objetivo fundamental da política econômica."
+        },
+        {
+          "target": "물가 변동은 소비자 행동에 영향을 미친다.",
+          "en": "Price fluctuations affect consumer behavior.",
+          "es": "Las fluctuaciones de precios afectan el comportamiento del consumidor.",
+          "fr": "Les fluctuations des prix influencent le comportement des consommateurs.",
+          "pt": "As flutuações de preços afetam o comportamento do consumidor."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "지수",
+        "en": "index",
+        "es": "índice",
+        "fr": "indice",
+        "pt": "índice"
+      },
+      "examples": [
+        {
+          "target": "물가 지수가 예상보다 높게 나타났다.",
+          "en": "The price index was higher than expected.",
+          "es": "El índice de precios fue más alto de lo esperado.",
+          "fr": "L'indice des prix était plus élevé que prévu.",
+          "pt": "O índice de preços ficou acima do esperado."
+        },
+        {
+          "target": "지수는 경제 상황을 파악하는 데 도움이 된다.",
+          "en": "Indexes help assess economic conditions.",
+          "es": "Los índices ayudan a evaluar la situación económica.",
+          "fr": "Les indices aident à évaluer la situation économique.",
+          "pt": "Os índices ajudam a avaliar a situação econômica."
+        },
+        {
+          "target": "주가 지수가 급락했다.",
+          "en": "The stock index plummeted.",
+          "es": "El índice bursátil cayó bruscamente.",
+          "fr": "L'indice boursier a chuté brusquement.",
+          "pt": "O índice de ações despencou."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "환율",
+        "en": "exchange rate",
+        "es": "tipo de cambio",
+        "fr": "taux de change",
+        "pt": "taxa de câmbio"
+      },
+      "examples": [
+        {
+          "target": "환율 변동이 수출 기업에 영향을 주고 있다.",
+          "en": "Exchange rate fluctuations are affecting export companies.",
+          "es": "Las fluctuaciones del tipo de cambio están afectando a las empresas exportadoras.",
+          "fr": "Les fluctuations du taux de change affectent les entreprises exportatrices.",
+          "pt": "As flutuações da taxa de câmbio estão afetando as empresas exportadoras."
+        },
+        {
+          "target": "환율 상승으로 수입 물가가 올랐다.",
+          "en": "Import prices rose due to higher exchange rates.",
+          "es": "El aumento del tipo de cambio elevó los precios de importación.",
+          "fr": "La hausse du taux de change a fait augmenter les prix à l'importation.",
+          "pt": "O aumento da taxa de câmbio elevou os preços de importação."
+        },
+        {
+          "target": "환율 안정이 국제 거래에 중요하다.",
+          "en": "Stable exchange rates are important for international trade.",
+          "es": "La estabilidad del tipo de cambio es importante para el comercio internacional.",
+          "fr": "La stabilité du taux de change est importante pour le commerce international.",
+          "pt": "A estabilidade da taxa de câmbio é importante para o comércio internacional."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "성장률",
+        "en": "growth rate",
+        "es": "tasa de crecimiento",
+        "fr": "taux de croissance",
+        "pt": "taxa de crescimento"
+      },
+      "examples": [
+        {
+          "target": "올해 경제 성장률이 예상보다 낮았다.",
+          "en": "This year's economic growth rate was lower than expected.",
+          "es": "La tasa de crecimiento económico de este año fue menor de lo esperado.",
+          "fr": "Le taux de croissance économique de cette année était inférieur aux prévisions.",
+          "pt": "A taxa de crescimento econômico deste ano ficou abaixo do esperado."
+        },
+        {
+          "target": "높은 성장률을 유지하기 위한 전략이 필요하다.",
+          "en": "Strategies are needed to maintain a high growth rate.",
+          "es": "Se necesitan estrategias para mantener una tasa de crecimiento alta.",
+          "fr": "Des stratégies sont nécessaires pour maintenir un taux de croissance élevé.",
+          "pt": "São necessárias estratégias para manter uma alta taxa de crescimento."
+        },
+        {
+          "target": "성장률은 국가 경쟁력의 중요한 지표다.",
+          "en": "Growth rate is an important indicator of national competitiveness.",
+          "es": "La tasa de crecimiento es un indicador importante de la competitividad nacional.",
+          "fr": "Le taux de croissance est un indicateur important de la compétitivité d’un pays.",
+          "pt": "A taxa de crescimento é um indicador importante da competitividade nacional."
+        }
+      ]
+    }
+  ]
+}

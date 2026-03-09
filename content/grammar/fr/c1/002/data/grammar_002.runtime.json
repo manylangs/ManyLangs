@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "c1",
+    "id": "002"
+  },
+  "title": {
+    "target": "-(으)리라고",
+    "en": "I thought/believed (strong prediction)",
+    "es": "Pensé/creí (fuerte predicción)",
+    "fr": "J'ai pensé/cru (forte prédiction)",
+    "pt": "Pensei/acreditei (forte previsão)"
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'-(으)리라고'는 화자가 어떤 상황이나 결과를 강하게 추측할 때 사용하는 표현이다.",
+        "en": "This form is used when the speaker makes a strong prediction about a situation or outcome.",
+        "es": "Esta forma se utiliza cuando el hablante hace una predicción fuerte sobre una situación o un resultado.",
+        "fr": "Cette forme est utilisée lorsque le locuteur fait une prédiction forte sur une situation ou un résultat.",
+        "pt": "Esta forma é usada quando o falante faz uma previsão forte sobre uma situação ou um resultado."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "현재의 정황을 근거로 강한 확신을 드러낼 때 쓰인다.",
+        "en": "It expresses firm belief based on the present circumstances.",
+        "es": "Expresa una creencia firme basada en las circunstancias actuales.",
+        "fr": "Elle exprime une conviction ferme fondée sur les circonstances actuelles.",
+        "pt": "Expressa uma convicção firme baseada nas circunstâncias presentes."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문어적이고 격식 있는 느낌을 주며 구어에서는 거의 사용되지 않는다.",
+        "en": "It has a formal and literary tone and is rarely used in casual speech.",
+        "es": "Tiene un tono formal y literario, y casi no se usa en el habla cotidiana.",
+        "fr": "Elle a un ton formel et littéraire et est rarement utilisée dans la conversation quotidienne.",
+        "pt": "Tem um tom formal e literário e raramente é usada na fala quotidiana."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "주로 미래의 사건이나 아직 발생하지 않은 일에 대한 판단을 나타낸다.",
+        "en": "It usually refers to events in the future or things that have not happened yet.",
+        "es": "Suele referirse a acontecimientos futuros o hechos que aún no han ocurrido.",
+        "fr": "Elle se réfère généralement à des événements futurs ou à des faits qui ne se sont pas encore produits.",
+        "pt": "Refere-se normalmente a acontecimentos futuros ou a factos que ainda não ocorreram."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "화자의 주관적 판단이 강조될 때 자주 쓰인다.",
+        "en": "It is used when the speaker’s subjective judgment is strongly emphasized.",
+        "es": "Se usa cuando se destaca de forma clara el juicio subjetivo del hablante.",
+        "fr": "Elle est employée lorsque le jugement subjectif du locuteur est fortement mis en avant.",
+        "pt": "É usada quando o juízo subjectivo do falante é claramente enfatizado."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "때때로 실현 가능성이 낮은 일에 대해 강한 추측을 할 때도 쓰인다.",
+        "en": "It can also be used for predicting something that seems unlikely.",
+        "es": "También puede emplearse para predecir algo que parece poco probable.",
+        "fr": "Elle peut également servir à prédire quelque chose qui semble peu probable.",
+        "pt": "Também pode ser empregada para prever algo que parece pouco provável."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문맥에 따라 기대, 확신, 의심 등의 뉘앙스가 포함될 수 있다.",
+        "en": "Depending on the context, it may carry nuances of expectation, certainty, or doubt.",
+        "es": "Según el contexto, puede transmitir expectativa, certeza o duda.",
+        "fr": "Selon le contexte, elle peut transmettre une nuance d’attente, de certitude ou de doute.",
+        "pt": "Consoante o contexto, pode transmitir expectativa, certeza ou dúvida."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'라고' 뒤에 흔히 '생각했다', '여겼다', '믿었다' 등이 이어진다.",
+        "en": "It is often followed by verbs like ‘thought’, ‘believed’, or ‘expected’.",
+        "es": "A menudo va seguida de verbos como ‘pensé’, ‘creí’ o ‘esperé’.",
+        "fr": "Elle est souvent suivie de verbes comme « pensé », « cru » ou « espéré ».",
+        "pt": "É frequentemente seguida por verbos como ‘pensei’, ‘acreditei’ ou ‘esperei’."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문장 전체가 다소 문학적·고전적 분위기를 띠기도 한다.",
+        "en": "The sentence may sound somewhat literary or classical.",
+        "es": "La frase puede sonar literaria o incluso clásica.",
+        "fr": "La phrase peut paraître littéraire ou même classique.",
+        "pt": "A frase pode soar literária ou até clássica."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "객관적 근거보다는 화자의 판단이나 감각이 중심이 되는 표현이다.",
+        "en": "This expression relies more on the speaker’s intuition than on objective evidence.",
+        "es": "Se basa más en la intuición del hablante que en pruebas objetivas.",
+        "fr": "Elle repose davantage sur l’intuition du locuteur que sur des preuves objectives.",
+        "pt": "Baseia-se mais na intuição do falante do que em provas objectivas."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그가 돌아오리라고 믿었다.",
+        "en": "I believed he would return.",
+        "es": "Creí que él volvería.",
+        "fr": "Je croyais qu’il reviendrait.",
+        "pt": "Acreditei que ele voltaria."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "문제가 쉽게 풀리리라고 예상했다.",
+        "en": "I expected the problem would be solved easily.",
+        "es": "Esperé que el problema se resolviera fácilmente.",
+        "fr": "J’espérais que le problème se résoudrait facilement.",
+        "pt": "Esperei que o problema se resolvesse facilmente."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "비가 곧 내리리라고 생각했다.",
+        "en": "I thought it would rain soon.",
+        "es": "Pensé que llovería pronto.",
+        "fr": "Je pensais qu’il pleuvrait bientôt.",
+        "pt": "Pensei que iria chover em breve."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "결과가 좋으리라고 기대했다.",
+        "en": "I hoped the result would be good.",
+        "es": "Confié en que el resultado sería bueno.",
+        "fr": "J’espérais que le résultat serait bon.",
+        "pt": "Esperei que o resultado fosse bom."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그 소문이 사실이리라고는 믿기 어려웠다.",
+        "en": "It was hard to believe the rumor would be true.",
+        "es": "Era difícil creer que el rumor fuera cierto.",
+        "fr": "Il était difficile de croire que la rumeur était vraie.",
+        "pt": "Era difícil acreditar que o rumor fosse verdadeiro."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "기회가 다시 오리라고 확신했다.",
+        "en": "I was certain the opportunity would come again.",
+        "es": "Estaba seguro de que la oportunidad volvería.",
+        "fr": "J’étais certain que l’occasion reviendrait.",
+        "pt": "Tinha a certeza de que a oportunidade voltaria."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그가 승리하리라고는 누구도 예상하지 못했다.",
+        "en": "No one expected he would win.",
+        "es": "Nadie esperaba que él ganara.",
+        "fr": "Personne ne s’attendait à ce qu’il gagne.",
+        "pt": "Ninguém esperava que ele vencesse."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "이 일이 오래 걸리리라고는 생각하지 않았다.",
+        "en": "I didn’t think this would take long.",
+        "es": "No pensé que esto tardaría mucho.",
+        "fr": "Je ne pensais pas que cela prendrait longtemps.",
+        "pt": "Não pensei que isto demorasse muito."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그가 나를 알아보리라고는 상상도 못했다.",
+        "en": "I never imagined he would recognize me.",
+        "es": "Nunca imaginé que él me reconocería.",
+        "fr": "Je n’ai jamais imaginé qu’il me reconnaîtrait.",
+        "pt": "Nunca imaginei que ele me reconheceria."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "문제가 이렇게 커지리라고는 누구도 몰랐다.",
+        "en": "No one knew the problem would grow this much.",
+        "es": "Nadie sabía que el problema crecería tanto.",
+        "fr": "Personne ne savait que le problème grandirait autant.",
+        "pt": "Ninguém sabia que o problema cresceria tanto."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "이 선택이 옳으리라고는 장담할 수 없었다.",
+        "en": "I couldn’t guarantee this choice would be right.",
+        "es": "No podía asegurar que esta elección fuera correcta.",
+        "fr": "Je ne pouvais pas garantir que ce choix serait juste.",
+        "pt": "Não podia garantir que esta escolha fosse correcta."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그가 끝까지 버티리라고는 미처 생각하지 못했다.",
+        "en": "I never thought he would endure until the end.",
+        "es": "Nunca pensé que él aguantaría hasta el final.",
+        "fr": "Je n’avais jamais pensé qu’il tiendrait jusqu’au bout.",
+        "pt": "Nunca pensei que ele aguentaria até ao fim."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그가 진심을 말하리라고 느꼈다.",
+        "en": "I felt he would speak honestly.",
+        "es": "Sentí que él hablaría con sinceridad.",
+        "fr": "Je sentais qu’il parlerait honnêtement.",
+        "pt": "Senti que ele falaria com sinceridade."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그 결정이 많은 변화를 가져오리라고 여겼다.",
+        "en": "I thought that decision would bring many changes.",
+        "es": "Pensé que esa decisión traería muchos cambios.",
+        "fr": "Je pensais que cette décision apporterait beaucoup de changements.",
+        "pt": "Pensei que essa decisão traria muitas mudanças."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그는 자신의 노력이 헛되지 않으리라고 믿었다.",
+        "en": "He believed his efforts would not be wasted.",
+        "es": "Creía que su esfuerzo no sería en vano.",
+        "fr": "Il croyait que ses efforts ne seraient pas vains.",
+        "pt": "Acreditava que o seu esforço não seria em vão."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "이 만남이 마지막이 되리라고는 생각지 못했다.",
+        "en": "I never thought this meeting would be the last.",
+        "es": "Nunca pensé que este encuentro sería el último.",
+        "fr": "Je n’aurais jamais pensé que cette rencontre serait la dernière.",
+        "pt": "Nunca pensei que este encontro seria o último."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그 계획이 성공하리라고 기대하는 분위기였다.",
+        "en": "There was an atmosphere expecting the plan would succeed.",
+        "es": "Había un ambiente que esperaba que el plan tuviera éxito.",
+        "fr": "On s’attendait à ce que le plan réussisse.",
+        "pt": "Havia um ambiente que esperava que o plano tivesse sucesso."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그 약속이 지켜지리라고는 누구도 확신하지 않았다.",
+        "en": "No one was sure the promise would be kept.",
+        "es": "Nadie estaba seguro de que se cumpliría la promesa.",
+        "fr": "Personne n’était sûr que la promesse serait tenue.",
+        "pt": "Ninguém tinha a certeza de que a promessa seria cumprida."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "이 문제가 곧 해결되리라고 짐작했다.",
+        "en": "I guessed this issue would be solved soon.",
+        "es": "Intuí que este problema se resolvería pronto.",
+        "fr": "Je devinais que ce problème serait bientôt résolu.",
+        "pt": "Imaginei que este problema seria resolvido em breve."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그 대답이 곧 들리리라고 직감했다.",
+        "en": "I sensed his answer would come soon.",
+        "es": "Percibí que su respuesta llegaría pronto.",
+        "fr": "Je sentais que sa réponse arriverait bientôt.",
+        "pt": "Pressenti que a resposta dele chegaria em breve."
+      }
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "b1",
+    "id": "020"
+  },
+  "title": {
+    "target": "B1 — 사회•학교•기술 어휘",
+    "en": "B1 — Social, School, and Technology Vocabulary",
+    "es": "B1 — Vocabulario social, escolar y tecnológico",
+    "fr": "B1 — Vocabulaire social, scolaire et technologique",
+    "pt": "B1 — Vocabulário social, escolar e tecnológico"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "현장",
+        "en": "site / field",
+        "es": "sitio / campo",
+        "fr": "site / terrain",
+        "pt": "local / campo"
+      },
+      "examples": [
+        {
+          "target": "작업 현장을 직접 확인했어요.",
+          "en": "I checked the work site in person.",
+          "es": "Verifiqué personalmente el sitio de trabajo.",
+          "fr": "J'ai vérifié le site de travail en personne.",
+          "pt": "Verifiquei o local de trabalho pessoalmente."
+        },
+        {
+          "target": "현장에서는 항상 안전 장비를 착용해야 해요.",
+          "en": "You must always wear safety gear at the site.",
+          "es": "Siempre debe usar equipo de seguridad en el sitio.",
+          "fr": "Vous devez toujours porter un équipement de sécurité sur le site.",
+          "pt": "Você deve sempre usar equipamento de segurança no local."
+        },
+        {
+          "target": "현장 상황이 예상과 달랐어요.",
+          "en": "The on-site situation was different from what we expected.",
+          "es": "La situación en el sitio fue diferente de lo esperado.",
+          "fr": "La situation sur le terrain était différente de ce que nous pensions.",
+          "pt": "A situação no local foi diferente do esperado."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "점유율",
+        "en": "market share",
+        "es": "cuota de mercado",
+        "fr": "part de marché",
+        "pt": "participação de mercado"
+      },
+      "examples": [
+        {
+          "target": "이 회사는 시장 점유율이 꾸준히 상승하고 있어요.",
+          "en": "This company’s market share is steadily increasing.",
+          "es": "La cuota de mercado de esta empresa está aumentando constantemente.",
+          "fr": "La part de marché de cette entreprise augmente régulièrement.",
+          "pt": "A participação de mercado desta empresa está aumentando continuamente."
+        },
+        {
+          "target": "점유율 변화를 분석해 전략을 수정했어요.",
+          "en": "We analyzed market share changes and adjusted the strategy.",
+          "es": "Analizamos los cambios en la cuota de mercado y ajustamos la estrategia.",
+          "fr": "Nous avons analysé les changements de part de marché et ajusté la stratégie.",
+          "pt": "Analisamos as mudanças na participação de mercado e ajustamos a estratégia."
+        },
+        {
+          "target": "점유율이 낮아 경쟁력이 떨어졌어요.",
+          "en": "Competitiveness decreased due to low market share.",
+          "es": "La competitividad disminuyó debido a la baja cuota de mercado.",
+          "fr": "La compétitivité a baissé en raison d'une faible part de marché.",
+          "pt": "A competitividade caiu devido à baixa participação de mercado."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "지표",
+        "en": "indicator",
+        "es": "indicador",
+        "fr": "indicateur",
+        "pt": "indicador"
+      },
+      "examples": [
+        {
+          "target": "성과 지표를 기반으로 평가가 이루어져요.",
+          "en": "Evaluations are based on performance indicators.",
+          "es": "Las evaluaciones se basan en indicadores de rendimiento.",
+          "fr": "Les évaluations sont basées sur des indicateurs de performance.",
+          "pt": "As avaliações são baseadas em indicadores de desempenho."
+        },
+        {
+          "target": "지표 분석을 통해 문제점을 발견했어요.",
+          "en": "We identified the issue through indicator analysis.",
+          "es": "Identificamos el problema mediante el análisis de indicadores.",
+          "fr": "Nous avons identifié le problème grâce à l'analyse des indicateurs.",
+          "pt": "Identificamos o problema por meio da análise de indicadores."
+        },
+        {
+          "target": "지표가 꾸준히 개선되고 있어요.",
+          "en": "The indicators are steadily improving.",
+          "es": "Los indicadores están mejorando constantemente.",
+          "fr": "Les indicateurs s'améliorent régulièrement.",
+          "pt": "Os indicadores estão melhorando continuamente."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "보고라인",
+        "en": "reporting line",
+        "es": "línea de reporte",
+        "fr": "ligne hiérarchique",
+        "pt": "linha de reporte"
+      },
+      "examples": [
+        {
+          "target": "보고라인이 명확해야 업무가 효율적이에요.",
+          "en": "The reporting line must be clear for efficient work.",
+          "es": "La línea de reporte debe ser clara para trabajar eficientemente.",
+          "fr": "La ligne hiérarchique doit être claire pour un travail efficace.",
+          "pt": "A linha de reporte deve ser clara para que o trabalho seja eficiente."
+        },
+        {
+          "target": "보고라인이 복잡해서 의사 결정이 늦어졌어요.",
+          "en": "Decision-making was delayed due to a complicated reporting line.",
+          "es": "La toma de decisiones se retrasó debido a una línea de reporte complicada.",
+          "fr": "La prise de décision a été retardée en raison d'une ligne hiérarchique complexe.",
+          "pt": "A tomada de decisão atrasou por causa de uma linha de reporte complicada."
+        },
+        {
+          "target": "새 조직 개편으로 보고라인이 바뀌었어요.",
+          "en": "The reporting line changed due to the new organizational restructuring.",
+          "es": "La línea de reporte cambió debido a la nueva reorganización.",
+          "fr": "La ligne hiérarchique a changé en raison de la nouvelle réorganisation.",
+          "pt": "A linha de reporte mudou devido à nova reorganização."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "협력사",
+        "en": "partner company",
+        "es": "empresa colaboradora",
+        "fr": "entreprise partenaire",
+        "pt": "empresa parceira"
+      },
+      "examples": [
+        {
+          "target": "협력사와 정기 회의를 진행하고 있어요.",
+          "en": "We are holding regular meetings with our partner company.",
+          "es": "Realizamos reuniones periódicas con la empresa colaboradora.",
+          "fr": "Nous tenons des réunions régulières avec l’entreprise partenaire.",
+          "pt": "Realizamos reuniões regulares com a empresa parceira."
+        },
+        {
+          "target": "협력사와의 계약 조건을 다시 협의했어요.",
+          "en": "We renegotiated the contract terms with the partner company.",
+          "es": "Renegociamos los términos del contrato con la empresa colaboradora.",
+          "fr": "Nous avons renégocié les conditions du contrat avec l’entreprise partenaire.",
+          "pt": "Renegociamos os termos do contrato com a empresa parceira."
+        },
+        {
+          "target": "협력사와의 관계를 강화하기 위한 계획을 세웠어요.",
+          "en": "We developed a plan to strengthen our partnership with the partner company.",
+          "es": "Elaboramos un plan para fortalecer la relación con la empresa colaboradora.",
+          "fr": "Nous avons élaboré un plan pour renforcer notre relation avec l’entreprise partenaire.",
+          "pt": "Elaboramos um plano para fortalecer a relação com a empresa parceira."
+        }
+      ]
+    }
+  ]
+}

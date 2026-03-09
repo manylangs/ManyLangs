@@ -66,6 +66,7 @@ export async function GET(req: Request) {
     }
 
     /* 🔒 license 검증 */
+
     let itemId: string;
 
     if (series === "voca" || series === "idiom") {
@@ -89,7 +90,7 @@ export async function GET(req: Request) {
       return bad("Forbidden", 403);
     }
 
-    /* manifest 조회 */
+    /* 🔎 현재 chapter manifest 조회 */
 
     const docId = `${series}_${lang}_${level}_${chapter}`;
 
@@ -100,6 +101,23 @@ export async function GET(req: Request) {
     const data = snap.data() as any;
 
     if (!data?.active) return bad("Inactive content", 403);
+
+    /* 🔎 같은 series/lang/level chapters 조회 */
+
+    const chapterSnap = await db
+      .collection("contentManifests")
+      .where("series", "==", series)
+      .where("lang", "==", lang)
+      .where("level", "==", level)
+      .where("active", "==", true)
+      .get();
+
+    const chapters = chapterSnap.docs
+      .map((d) => d.data().chapter)
+      .filter(Boolean)
+      .sort();
+
+    /* 🔎 assets signed URL 생성 */
 
     const bucket = storage.bucket();
     const assets: any[] = [];
@@ -134,7 +152,12 @@ export async function GET(req: Request) {
       });
     }
 
-    return NextResponse.json({ assets });
+    /* 🔥 최종 응답 */
+
+    return NextResponse.json({
+      assets,
+      chapters
+    });
 
   } catch (e: any) {
     if (e?.message === "Too many requests") {

@@ -222,3 +222,4 @@ export default function IdiomViewer({ data, level, chapter, chapters }: any) {
     </>
   );
 }
+

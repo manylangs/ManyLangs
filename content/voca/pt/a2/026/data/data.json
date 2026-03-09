@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a2",
+    "id": "026"
+  },
+  "title": {
+    "target": "A2 — 확장 일상 어휘",
+    "en": "A2 — Expanded Everyday Vocabulary",
+    "es": "A2 — Vocabulario cotidiano ampliado",
+    "fr": "A2 — Vocabulaire quotidien élargi",
+    "pt": "A2 — Vocabulário do dia a dia ampliado"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "관리자",
+        "en": "manager",
+        "es": "gerente",
+        "fr": "gestionnaire",
+        "pt": "gerente"
+      },
+      "examples": [
+        {
+          "target": "관리자에게 승인을 받으세요.",
+          "en": "Get approval from the manager.",
+          "es": "Obtén la aprobación del gerente.",
+          "fr": "Obtenez l'approbation du gestionnaire.",
+          "pt": "Obtenha a aprovação do gerente."
+        },
+        {
+          "target": "관리자가 회의를 주재했어요.",
+          "en": "The manager led the meeting.",
+          "es": "El gerente dirigió la reunión.",
+          "fr": "Le gestionnaire a dirigé la réunion.",
+          "pt": "O gerente conduziu a reunião."
+        },
+        {
+          "target": "관리자와 일정을 다시 조정했어요.",
+          "en": "I rescheduled with the manager.",
+          "es": "Volví a programar con el gerente.",
+          "fr": "J'ai replanifié avec le gestionnaire.",
+          "pt": "Reagendei com o gerente."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "상담",
+        "en": "consultation",
+        "es": "consulta",
+        "fr": "consultation",
+        "pt": "consulta"
+      },
+      "examples": [
+        {
+          "target": "상담을 예약하고 방문했어요.",
+          "en": "I made a consultation appointment and visited.",
+          "es": "Hice una cita para una consulta y fui.",
+          "fr": "J'ai pris un rendez-vous pour une consultation et je suis venu.",
+          "pt": "Marquei uma consulta e fui."
+        },
+        {
+          "target": "무료 상담을 받을 수 있어요.",
+          "en": "You can receive a free consultation.",
+          "es": "Puedes recibir una consulta gratuita.",
+          "fr": "Vous pouvez recevoir une consultation gratuite.",
+          "pt": "Você pode receber uma consulta gratuita."
+        },
+        {
+          "target": "상담 시간이 예상보다 길었어요.",
+          "en": "The consultation took longer than expected.",
+          "es": "La consulta duró más de lo esperado.",
+          "fr": "La consultation a duré plus longtemps que prévu.",
+          "pt": "A consulta demorou mais do que o esperado."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "문의창",
+        "en": "inquiry window",
+        "es": "ventana de consulta",
+        "fr": "fenêtre de demande",
+        "pt": "janela de consulta"
+      },
+      "examples": [
+        {
+          "target": "문의창에 질문을 남겼어요.",
+          "en": "I left a question in the inquiry window.",
+          "es": "Dejé una pregunta en la ventana de consulta.",
+          "fr": "J'ai laissé une question dans la fenêtre de demande.",
+          "pt": "Deixei uma pergunta na janela de consulta."
+        },
+        {
+          "target": "문의창에서 답변을 확인할 수 있어요.",
+          "en": "You can check the reply in the inquiry window.",
+          "es": "Puedes revisar la respuesta en la ventana de consulta.",
+          "fr": "Vous pouvez vérifier la réponse dans la fenêtre de demande.",
+          "pt": "Você pode verificar a resposta na janela de consulta."
+        },
+        {
+          "target": "문의창이 자주 업데이트돼요.",
+          "en": "The inquiry window is updated frequently.",
+          "es": "La ventana de consulta se actualiza con frecuencia.",
+          "fr": "La fenêtre de demande est souvent mise à jour.",
+          "pt": "A janela de consulta é frequentemente atualizada."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "화면잠금",
+        "en": "screen lock",
+        "es": "bloqueo de pantalla",
+        "fr": "verrouillage d'écran",
+        "pt": "bloqueio de tela"
+      },
+      "examples": [
+        {
+          "target": "화면잠금을 설정해 두었어요.",
+          "en": "I set up the screen lock.",
+          "es": "Configuré el bloqueo de pantalla.",
+          "fr": "J'ai configuré le verrouillage d'écran.",
+          "pt": "Configurei o bloqueio de tela."
+        },
+        {
+          "target": "화면잠금 비밀번호를 잊어버렸어요.",
+          "en": "I forgot the screen lock password.",
+          "es": "Olvidé la contraseña del bloqueo de pantalla.",
+          "fr": "J'ai oublié le mot de passe du verrouillage d'écran.",
+          "pt": "Esqueci a senha do bloqueio de tela."
+        },
+        {
+          "target": "화면잠금을 해제하려면 인증이 필요해요.",
+          "en": "Authentication is required to unlock the screen.",
+          "es": "Se necesita verificación para desbloquear la pantalla.",
+          "fr": "Une authentification est nécessaire pour déverrouiller l'écran.",
+          "pt": "É necessária autenticação para desbloquear a tela."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "설정",
+        "en": "settings",
+        "es": "configuración",
+        "fr": "paramètres",
+        "pt": "configurações"
+      },
+      "examples": [
+        {
+          "target": "설정에서 언어를 변경할 수 있어요.",
+          "en": "You can change the language in the settings.",
+          "es": "Puedes cambiar el idioma en la configuración.",
+          "fr": "Vous pouvez changer la langue dans les paramètres.",
+          "pt": "Você pode mudar o idioma nas configurações."
+        },
+        {
+          "target": "설정을 초기화했어요.",
+          "en": "I reset the settings.",
+          "es": "Restablecí la configuración.",
+          "fr": "J'ai réinitialisé les paramètres.",
+          "pt": "Redefini as configurações."
+        },
+        {
+          "target": "설정을 저장하는 것을 잊지 마세요.",
+          "en": "Don’t forget to save the settings.",
+          "es": "No olvides guardar la configuración.",
+          "fr": "N'oubliez pas d'enregistrer les paramètres.",
+          "pt": "Não se esqueça de salvar as configurações."
+        }
+      ]
+    }
+  ]
+}

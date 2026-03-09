@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "b1",
+    "id": "010"
+  },
+  "title": {
+    "target": "B1 — 사회•학교•기술 어휘",
+    "en": "B1 — Social, School, and Technology Vocabulary",
+    "es": "B1 — Vocabulario social, escolar y tecnológico",
+    "fr": "B1 — Vocabulaire social, scolaire et technologique",
+    "pt": "B1 — Vocabulário social, escolar e tecnológico"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "성과",
+        "en": "performance / outcome",
+        "es": "resultado / rendimiento",
+        "fr": "résultat / performance",
+        "pt": "resultado / desempenho"
+      },
+      "examples": [
+        {
+          "target": "이번 프로젝트 성과가 좋아요.",
+          "en": "The outcome of this project is good.",
+          "es": "El resultado de este proyecto es bueno.",
+          "fr": "Le résultat de ce projet est bon.",
+          "pt": "O resultado deste projeto é bom."
+        },
+        {
+          "target": "성과를 기반으로 평가가 이루어져요.",
+          "en": "The evaluation is based on performance.",
+          "es": "La evaluación se basa en el rendimiento.",
+          "fr": "L'évaluation est basée sur la performance.",
+          "pt": "A avaliação é baseada no desempenho."
+        },
+        {
+          "target": "성과 개선이 필요합니다.",
+          "en": "Performance improvement is needed.",
+          "es": "Es necesario mejorar el rendimiento.",
+          "fr": "Il faut améliorer les performances.",
+          "pt": "É necessário melhorar o desempenho."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "진도",
+        "en": "progress",
+        "es": "progreso",
+        "fr": "progression",
+        "pt": "progresso"
+      },
+      "examples": [
+        {
+          "target": "수업 진도가 많이 나갔어요.",
+          "en": "We have progressed a lot in the class.",
+          "es": "Hemos avanzado mucho en la clase.",
+          "fr": "Nous avons beaucoup progressé dans le cours.",
+          "pt": "Avançamos bastante na aula."
+        },
+        {
+          "target": "진도가 느려서 걱정이에요.",
+          "en": "I'm worried because the progress is slow.",
+          "es": "Estoy preocupado porque el progreso es lento.",
+          "fr": "Je suis inquiet car la progression est lente.",
+          "pt": "Estou preocupado porque o progresso está lento."
+        },
+        {
+          "target": "진도를 다시 점검해 볼게요.",
+          "en": "I will review the progress again.",
+          "es": "Revisaré el progreso nuevamente.",
+          "fr": "Je vais revoir la progression.",
+          "pt": "Vou revisar o progresso novamente."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "부하",
+        "en": "workload / burden",
+        "es": "carga de trabajo",
+        "fr": "charge de travail",
+        "pt": "carga de trabalho"
+      },
+      "examples": [
+        {
+          "target": "업무 부하가 너무 커요.",
+          "en": "The workload is too heavy.",
+          "es": "La carga de trabajo es demasiado pesada.",
+          "fr": "La charge de travail est trop lourde.",
+          "pt": "A carga de trabalho está muito pesada."
+        },
+        {
+          "target": "부하를 줄이기 위한 대책이 필요해요.",
+          "en": "We need measures to reduce the workload.",
+          "es": "Necesitamos medidas para reducir la carga de trabajo.",
+          "fr": "Nous avons besoin de mesures pour réduire la charge.",
+          "pt": "Precisamos de medidas para reduzir a carga de trabalho."
+        },
+        {
+          "target": "부하가 분산되도록 조정했어요.",
+          "en": "We adjusted to distribute the workload.",
+          "es": "Ajustamos para distribuir la carga de trabajo.",
+          "fr": "Nous avons ajusté pour répartir la charge.",
+          "pt": "Ajustamos para distribuir a carga de trabalho."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "생산성",
+        "en": "productivity",
+        "es": "productividad",
+        "fr": "productivité",
+        "pt": "produtividade"
+      },
+      "examples": [
+        {
+          "target": "생산성을 높이기 위한 방법을 찾고 있어요.",
+          "en": "We are looking for ways to improve productivity.",
+          "es": "Buscamos maneras de mejorar la productividad.",
+          "fr": "Nous cherchons des moyens d'améliorer la productivité.",
+          "pt": "Estamos procurando maneiras de aumentar a produtividade."
+        },
+        {
+          "target": "휴식이 생산성 향상에 도움이 돼요.",
+          "en": "Rest helps improve productivity.",
+          "es": "El descanso ayuda a mejorar la productividad.",
+          "fr": "Le repos aide à améliorer la productivité.",
+          "pt": "O descanso ajuda a melhorar a produtividade."
+        },
+        {
+          "target": "생산성이 낮아져서 문제예요.",
+          "en": "It’s a problem because productivity has decreased.",
+          "es": "Es un problema porque la productividad ha disminuido.",
+          "fr": "C'est un problème car la productivité a diminué.",
+          "pt": "É um problema porque a produtividade diminuiu."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "효율",
+        "en": "efficiency",
+        "es": "eficiencia",
+        "fr": "efficacité",
+        "pt": "eficiência"
+      },
+      "examples": [
+        {
+          "target": "업무 효율을 높여야 해요.",
+          "en": "We need to improve work efficiency.",
+          "es": "Necesitamos mejorar la eficiencia del trabajo.",
+          "fr": "Nous devons améliorer l'efficacité du travail.",
+          "pt": "Precisamos melhorar a eficiência do trabalho."
+        },
+        {
+          "target": "효율이 떨어지고 있어요.",
+          "en": "Efficiency is decreasing.",
+          "es": "La eficiencia está disminuyendo.",
+          "fr": "L'efficacité diminue.",
+          "pt": "A eficiência está diminuindo."
+        },
+        {
+          "target": "효율을 높이려면 도구가 필요해요.",
+          "en": "We need tools to increase efficiency.",
+          "es": "Necesitamos herramientas para aumentar la eficiencia.",
+          "fr": "Nous avons besoin d'outils pour augmenter l'efficacité.",
+          "pt": "Precisamos de ferramentas para aumentar a eficiência."
+        }
+      ]
+    }
+  ]
+}

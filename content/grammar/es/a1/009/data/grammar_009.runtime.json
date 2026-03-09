@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "a1",
+    "id": "009"
+  },
+  "title": {
+    "target": "에 / 에서",
+    "en": "에 / 에서 (At / To / From)",
+    "es": "에 / 에서 (En / A / Desde)",
+    "fr": "에 / 에서 (À / Dans / Depuis)",
+    "pt": "에 / 에서 (Em / Para / De)"
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'에'는 장소의 위치나 목적지를 나타낸다.",
+        "en": "‘에’ shows a location or destination.",
+        "es": "«에» indica una ubicación o un destino.",
+        "fr": "«에» indique un lieu ou une destination.",
+        "pt": "«에» indica um lugar ou um destino."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'에'는 어디에 있는지를 설명할 때 쓴다.",
+        "en": "It is used to say where something is.",
+        "es": "Se usa para decir dónde está algo.",
+        "fr": "Il s’utilise pour dire où quelque chose se trouve.",
+        "pt": "É usado para dizer onde algo está."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'에서'는 장소에서 일어나는 동작을 나타낸다.",
+        "en": "‘에서’ shows the place where an action happens.",
+        "es": "«에서» indica el lugar donde ocurre una acción.",
+        "fr": "«에서» indique l’endroit où une action se déroule.",
+        "pt": "«에서» indica o lugar onde uma ação acontece."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'에서'는 어디에서 행동이 일어나는지를 설명한다.",
+        "en": "It explains where an activity takes place.",
+        "es": "Explica dónde tiene lugar una actividad.",
+        "fr": "Il explique où une activité a lieu.",
+        "pt": "Explica onde uma atividade ocorre."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'에'는 정적인 의미, '에서'는 동적인 의미가 있다.",
+        "en": "‘에’ has a static meaning, while ‘에서’ has a dynamic meaning.",
+        "es": "«에» tiene un significado estático y «에서» uno dinámico.",
+        "fr": "«에» a un sens statique et «에서» un sens dynamique.",
+        "pt": "«에» tem um sentido estático e «에서» um sentido dinâmico."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "사람·사물·장소 등 다양한 명사와 함께 쓴다.",
+        "en": "They can be used with people, things, and places.",
+        "es": "Pueden usarse con personas, objetos y lugares.",
+        "fr": "Ils peuvent être utilisés avec des personnes, des objets et des lieux.",
+        "pt": "Podem ser usadas com pessoas, objetos e lugares."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'에'는 시간 표현과도 함께 자주 쓰인다.",
+        "en": "‘에’ is also often used with time expressions.",
+        "es": "«에» también se usa con frecuencia con expresiones de tiempo.",
+        "fr": "«에» est aussi souvent utilisé avec des expressions de temps.",
+        "pt": "«에» também é usado frequentemente com expressões de tempo."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'에서'는 활동·행동·과정이 있는 문장에서 많이 등장한다.",
+        "en": "‘에서’ appears often in sentences about actions or activities.",
+        "es": "«에서» aparece a menudo en oraciones sobre acciones o actividades.",
+        "fr": "«에서» apparaît souvent dans les phrases qui décrivent une action.",
+        "pt": "«에서» aparece muitas vezes em frases sobre ações ou atividades."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "두 표현은 문맥에 따라 뚜렷하게 구분된다.",
+        "en": "The two particles are clearly different depending on the context.",
+        "es": "Las dos partículas se distinguen claramente según el contexto.",
+        "fr": "Les deux particules sont clairement différentes selon le contexte.",
+        "pt": "As duas partículas são claramente diferentes consoante o contexto."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "한국어 기초 문장에서 매우 자주 나오는 필수 조사이다.",
+        "en": "They are essential particles in basic Korean sentences.",
+        "es": "Son partículas esenciales en oraciones básicas en coreano.",
+        "fr": "Ce sont des particules essentielles dans les phrases coréennes de base.",
+        "pt": "São partículas essenciais nas frases básicas do coreano."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "나는 집에 있다.",
+        "en": "I am at home.",
+        "es": "Estoy en casa.",
+        "fr": "Je suis à la maison.",
+        "pt": "Estou em casa."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그녀는 학교에 간다.",
+        "en": "She goes to school.",
+        "es": "Ella va a la escuela.",
+        "fr": "Elle va à l’école.",
+        "pt": "Ela vai para a escola."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "고양이는 침대에 있다.",
+        "en": "The cat is on the bed.",
+        "es": "El gato está en la cama.",
+        "fr": "Le chat est sur le lit.",
+        "pt": "O gato está na cama."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "우리는 공원에 간다.",
+        "en": "We go to the park.",
+        "es": "Vamos al parque.",
+        "fr": "Nous allons au parc.",
+        "pt": "Vamos ao parque."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "책은 책상에 있다.",
+        "en": "The book is on the desk.",
+        "es": "El libro está sobre el escritorio.",
+        "fr": "Le livre est sur le bureau.",
+        "pt": "O livro está na secretária."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그는 회사에 있다.",
+        "en": "He is at work.",
+        "es": "Él está en el trabajo.",
+        "fr": "Il est au travail.",
+        "pt": "Ele está no trabalho."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "나는 집에서 먹는다.",
+        "en": "I eat at home.",
+        "es": "Como en casa.",
+        "fr": "Je mange à la maison.",
+        "pt": "Eu como em casa."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그녀는 학교에서 공부한다.",
+        "en": "She studies at school.",
+        "es": "Ella estudia en la escuela.",
+        "fr": "Elle étudie à l’école.",
+        "pt": "Ela estuda na escola."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그는 공원에서 뛴다.",
+        "en": "He runs in the park.",
+        "es": "Él corre en el parque.",
+        "fr": "Il court dans le parc.",
+        "pt": "Ele corre no parque."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "우리는 방에서 쉰다.",
+        "en": "We rest in the room.",
+        "es": "Descansamos en la habitación.",
+        "fr": "Nous nous reposons dans la chambre.",
+        "pt": "Descansamos no quarto."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "고양이는 소파에서 잔다.",
+        "en": "The cat sleeps on the sofa.",
+        "es": "El gato duerme en el sofá.",
+        "fr": "Le chat dort sur le canapé.",
+        "pt": "O gato dorme no sofá."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "아이들은 놀이터에서 논다.",
+        "en": "The children play at the playground.",
+        "es": "Los niños juegan en el parque infantil.",
+        "fr": "Les enfants jouent au terrain de jeu.",
+        "pt": "As crianças brincam no parque infantil."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "나는 카페에서 책을 읽는다.",
+        "en": "I read a book at a café.",
+        "es": "Leo un libro en una cafetería.",
+        "fr": "Je lis un livre dans un café.",
+        "pt": "Eu leio um livro num café."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그녀는 회사에서 일한다.",
+        "en": "She works at the company.",
+        "es": "Ella trabaja en la empresa.",
+        "fr": "Elle travaille à l’entreprise.",
+        "pt": "Ela trabalha na empresa."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "우리는 도서관에서 만난다.",
+        "en": "We meet at the library.",
+        "es": "Nos encontramos en la biblioteca.",
+        "fr": "Nous nous rencontrons à la bibliothèque.",
+        "pt": "Encontramo-nos na biblioteca."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그는 집에서 휴식을 취한다.",
+        "en": "He relaxes at home.",
+        "es": "Él descansa en casa.",
+        "fr": "Il se repose à la maison.",
+        "pt": "Ele descansa em casa."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "나는 방에서 음악을 듣는다.",
+        "en": "I listen to music in the room.",
+        "es": "Escucho música en la habitación.",
+        "fr": "J’écoute de la musique dans la chambre.",
+        "pt": "Eu ouço música no quarto."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그녀는 시장에서 과일을 산다.",
+        "en": "She buys fruit at the market.",
+        "es": "Ella compra fruta en el mercado.",
+        "fr": "Elle achète des fruits au marché.",
+        "pt": "Ela compra fruta no mercado."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "우리는 학교에서 프로젝트를 한다.",
+        "en": "We do a project at school.",
+        "es": "Hacemos un proyecto en la escuela.",
+        "fr": "Nous faisons un projet à l’école.",
+        "pt": "Fazemos um projeto na escola."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그는 공항에 일찍 도착한다.",
+        "en": "He arrives early at the airport.",
+        "es": "Él llega temprano al aeropuerto.",
+        "fr": "Il arrive tôt à l’aéroport.",
+        "pt": "Ele chega cedo ao aeroporto."
+      }
+    }
+  ]
+}

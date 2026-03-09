@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a1",
+    "id": "004"
+  },
+  "title": {
+    "target": "A1 — 일상 어휘",
+    "en": "A1 — Everyday Vocabulary",
+    "es": "A1 — Vocabulario cotidiano",
+    "fr": "A1 — Vocabulaire quotidien",
+    "pt": "A1 — Vocabulário do dia a dia"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "번호",
+        "en": "number",
+        "es": "número",
+        "fr": "numéro",
+        "pt": "número"
+      },
+      "examples": [
+        {
+          "target": "전화번호가 뭐예요?",
+          "en": "What is your phone number?",
+          "es": "¿Cuál es tu número de teléfono?",
+          "fr": "Quel est votre numéro de téléphone ?",
+          "pt": "Qual é o seu número de telefone?"
+        },
+        {
+          "target": "번호를 잘못 눌렀어요.",
+          "en": "I pressed the wrong number.",
+          "es": "Marqué el número equivocado.",
+          "fr": "J'ai appuyé sur le mauvais numéro.",
+          "pt": "Digitei o número errado."
+        },
+        {
+          "target": "번호표를 받으세요.",
+          "en": "Please take a number ticket.",
+          "es": "Toma un ticket con número.",
+          "fr": "Prenez un ticket numéroté.",
+          "pt": "Pegue uma senha."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "주소",
+        "en": "address",
+        "es": "dirección",
+        "fr": "adresse",
+        "pt": "endereço"
+      },
+      "examples": [
+        {
+          "target": "주소를 알려 주세요.",
+          "en": "Please tell me your address.",
+          "es": "Dime tu dirección, por favor.",
+          "fr": "Dites-moi votre adresse, s'il vous plaît.",
+          "pt": "Diga-me seu endereço, por favor."
+        },
+        {
+          "target": "주소가 맞나요?",
+          "en": "Is this the correct address?",
+          "es": "¿Es esta la dirección correcta?",
+          "fr": "Est-ce la bonne adresse ?",
+          "pt": "Este é o endereço correto?"
+        },
+        {
+          "target": "주소를 다시 확인하세요.",
+          "en": "Please check the address again.",
+          "es": "Verifica la dirección otra vez.",
+          "fr": "Veuillez vérifier l'adresse encore une fois.",
+          "pt": "Verifique o endereço novamente."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "책",
+        "en": "book",
+        "es": "libro",
+        "fr": "livre",
+        "pt": "livro"
+      },
+      "examples": [
+        {
+          "target": "책을 읽고 있어요.",
+          "en": "I am reading a book.",
+          "es": "Estoy leyendo un libro.",
+          "fr": "Je lis un livre.",
+          "pt": "Estou lendo um livro."
+        },
+        {
+          "target": "이 책은 재밌어요.",
+          "en": "This book is interesting.",
+          "es": "Este libro es interesante.",
+          "fr": "Ce livre est intéressant.",
+          "pt": "Este livro é interessante."
+        },
+        {
+          "target": "책을 빌릴 수 있어요?",
+          "en": "Can I borrow this book?",
+          "es": "¿Puedo pedir prestado este libro?",
+          "fr": "Je peux emprunter ce livre ?",
+          "pt": "Posso pegar este livro emprestado?"
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "문",
+        "en": "door",
+        "es": "puerta",
+        "fr": "porte",
+        "pt": "porta"
+      },
+      "examples": [
+        {
+          "target": "문을 닫아 주세요.",
+          "en": "Please close the door.",
+          "es": "Cierra la puerta, por favor.",
+          "fr": "Fermez la porte, s'il vous plaît.",
+          "pt": "Feche a porta, por favor."
+        },
+        {
+          "target": "문이 열려 있어요.",
+          "en": "The door is open.",
+          "es": "La puerta está abierta.",
+          "fr": "La porte est ouverte.",
+          "pt": "A porta está aberta."
+        },
+        {
+          "target": "문을 잠갔나요?",
+          "en": "Did you lock the door?",
+          "es": "¿Cerraste la puerta con llave?",
+          "fr": "Avez-vous fermé la porte à clé ?",
+          "pt": "Você trancou a porta?"
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "가방",
+        "en": "bag",
+        "es": "bolsa",
+        "fr": "sac",
+        "pt": "bolsa"
+      },
+      "examples": [
+        {
+          "target": "가방이 어디 있어요?",
+          "en": "Where is the bag?",
+          "es": "¿Dónde está la bolsa?",
+          "fr": "Où est le sac ?",
+          "pt": "Onde está a bolsa?"
+        },
+        {
+          "target": "새 가방을 샀어요.",
+          "en": "I bought a new bag.",
+          "es": "Compré una bolsa nueva.",
+          "fr": "J'ai acheté un nouveau sac.",
+          "pt": "Comprei uma bolsa nova."
+        },
+        {
+          "target": "가방에 책이 있어요.",
+          "en": "There is a book in the bag.",
+          "es": "Hay un libro en la bolsa.",
+          "fr": "Il y a un livre dans le sac.",
+          "pt": "Há um livro na bolsa."
+        }
+      ]
+    }
+  ]
+}

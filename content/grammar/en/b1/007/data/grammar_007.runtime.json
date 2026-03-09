@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "b1",
+    "id": "007"
+  },
+  "title": {
+    "target": "-다고 하다 (평서 인용)",
+    "en": "Reported Statements with -다고 하다",
+    "es": "Discurso indirecto (afirmaciones) con -다고 하다",
+    "fr": "Rapporter une affirmation avec -다고 하다",
+    "pt": "Relatar afirmações com -다고 하다"
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "다른 사람이 한 말을 그대로 전달할 때 -다고 하다를 사용한다.",
+        "en": "The ending -다고 하다 is used to report what someone else said.",
+        "es": "La terminación -다고 하다 se usa para informar lo que otra persona dijo.",
+        "fr": "La terminaison -다고 하다 est utilisée pour rapporter ce que quelqu’un a dit.",
+        "pt": "A terminação -다고 하다 é usada para transmitir o que outra pessoa disse."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "평서문을 인용할 때 쓰이며, 주로 '말하다, 듣다, 하다' 등과 함께 사용된다.",
+        "en": "It is used to quote declarative sentences indirectly and usually appears with verbs like 'say', 'hear', or 'tell'.",
+        "es": "Se usa para citar oraciones declarativas de forma indirecta y suele aparecer con verbos como ‘decir’, ‘escuchar’ o ‘contar’.",
+        "fr": "Elle sert à citer une phrase déclarative de manière indirecte et apparaît souvent avec des verbes comme « dire », « entendre » ou « raconter ».",
+        "pt": "É utilizada para citar frases declarativas de forma indireta e costuma aparecer com verbos como «dizer», «ouvir» ou «contar»."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'A가 B라고 하다' 형태로 원래의 의미를 자연스럽게 전달한다.",
+        "en": "The pattern ‘A said that B’ naturally delivers the original meaning.",
+        "es": "La estructura ‘A dijo que B’ transmite el significado original de manera natural.",
+        "fr": "La structure « A a dit que B » transmet naturellement le sens original.",
+        "pt": "A estrutura «A disse que B» transmite naturalmente o significado original."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "시제에 따라 '-았/었다고 하다', '-고 있다고 하다' 등으로 변형할 수 있다.",
+        "en": "Depending on the tense, it can appear as ‘-았/었다고 하다’, ‘-고 있다고 하다’, and so on.",
+        "es": "Según el tiempo verbal, puede aparecer como ‘-았/었다고 하다’, ‘-고 있다고 하다’, etc.",
+        "fr": "Selon le temps verbal, elle peut apparaître sous la forme « -았/었다고 하다 », « -고 있다고 하다 », etc.",
+        "pt": "Dependendo do tempo verbal, pode aparecer como «-았/었다고 하다», «-고 있다고 하다», etc."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "주어와 시점이 바뀌어도 의미는 유지된다.",
+        "en": "The meaning stays the same even if the subject or time changes.",
+        "es": "El significado se mantiene incluso si cambian el sujeto o el tiempo.",
+        "fr": "Le sens reste le même même si le sujet ou le moment du discours change.",
+        "pt": "O significado mantém-se mesmo que o sujeito ou o momento mudem."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "간접 인용이므로 말투를 그대로 옮기지 않고 자연스럽게 바꿔 말한다.",
+        "en": "Since it is indirect speech, the wording is adjusted rather than copied exactly.",
+        "es": "Al ser discurso indirecto, no se repiten las palabras exactas, sino que se adaptan.",
+        "fr": "Comme il s’agit de discours indirect, les mots ne sont pas répétés exactement mais reformulés.",
+        "pt": "Por ser discurso indireto, as palavras não são repetidas exatamente, mas adaptadas."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "부정형은 '-지 않는다고 하다', '-지 않았다고 하다'처럼 표현한다.",
+        "en": "Negative forms include ‘said that (someone) doesn't ~’ or ‘said that (someone) didn’t ~’.",
+        "es": "Las formas negativas incluyen ‘dijo que no ~’ o ‘dijo que no había ~’.",
+        "fr": "Les formes négatives incluent « a dit que (quelqu’un) ne ~ pas » ou « a dit que (quelqu’un) n’avait pas ~ ».",
+        "pt": "As formas negativas incluem «disse que não ~» ou «disse que não tinha ~»."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "감정 표현, 정보 전달, 설명 상황에서 넓게 사용된다.",
+        "en": "It is widely used in situations involving emotions, explanations, or sharing information.",
+        "es": "Se usa ampliamente en situaciones de explicación, emociones o transmisión de información.",
+        "fr": "Elle est largement utilisée pour transmettre des sentiments, des informations ou des explications.",
+        "pt": "É amplamente usada para expressar emoções, dar explicações ou transmitir informação."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "직접 인용보다 더 공손하고 자연스러운 느낌을 준다.",
+        "en": "Compared to direct quotes, it sounds more polite and natural.",
+        "es": "En comparación con las citas directas, suena más natural y cortés.",
+        "fr": "Comparée au discours direct, elle sonne plus naturelle et plus polie.",
+        "pt": "Em comparação com o discurso direto, soa mais natural e educado."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "일상 대화에서 매우 자주 쓰이는 기본적인 인용 표현이다.",
+        "en": "It is a very common and essential expression in daily conversation.",
+        "es": "Es una expresión muy común y esencial en la conversación diaria.",
+        "fr": "C’est une expression très fréquente et essentielle dans la conversation quotidienne.",
+        "pt": "É uma expressão muito comum e essencial na conversação diária."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "친구가 오늘 바쁘다고 했어.",
+        "en": "My friend said that he was busy today.",
+        "es": "Mi amigo dijo que estaba ocupado hoy.",
+        "fr": "Mon ami a dit qu’il était occupé aujourd’hui.",
+        "pt": "O meu amigo disse que estava ocupado hoje."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "선생님이 내일 시험이 있다고 하셨어.",
+        "en": "The teacher said there would be a test tomorrow.",
+        "es": "El profesor dijo que habría un examen mañana.",
+        "fr": "Le professeur a dit qu’il y aurait un examen demain.",
+        "pt": "O professor disse que haverá um teste amanhã."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그는 이 일이 어렵다고 말했어.",
+        "en": "He said that this work was difficult.",
+        "es": "Él dijo que este trabajo era difícil.",
+        "fr": "Il a dit que ce travail était difficile.",
+        "pt": "Ele disse que este trabalho era difícil."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "엄마가 저녁에 늦는다고 하셨어.",
+        "en": "My mom said she would be late tonight.",
+        "es": "Mi madre dijo que llegaría tarde esta noche.",
+        "fr": "Ma mère a dit qu’elle rentrerait tard ce soir.",
+        "pt": "A minha mãe disse que chegaria tarde esta noite."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "직원이 가격이 올랐다고 했어.",
+        "en": "The staff said that the price went up.",
+        "es": "El empleado dijo que el precio había subido.",
+        "fr": "L’employé a dit que le prix avait augmenté.",
+        "pt": "O funcionário disse que o preço tinha aumentado."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "사람들이 그 소문이 사실이라고 하더라.",
+        "en": "People said that the rumor was true.",
+        "es": "La gente dijo que el rumor era cierto.",
+        "fr": "Les gens ont dit que la rumeur était vraie.",
+        "pt": "As pessoas disseram que o rumor era verdadeiro."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그는 이미 결정했다고 했어.",
+        "en": "He said that he had already decided.",
+        "es": "Él dijo que ya había tomado una decisión.",
+        "fr": "Il a dit qu’il avait déjà décidé.",
+        "pt": "Ele disse que já tinha decidido."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "비가 올 거라고 예보에서 말했어.",
+        "en": "The forecast said that it would rain.",
+        "es": "El pronóstico dijo que llovería.",
+        "fr": "La météo a dit qu’il allait pleuvoir.",
+        "pt": "A previsão disse que iria chover."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그 친구가 이 책이 재미없다고 하더라.",
+        "en": "My friend said that this book wasn’t interesting.",
+        "es": "Mi amigo dijo que este libro no era interesante.",
+        "fr": "Mon ami a dit que ce livre n’était pas intéressant.",
+        "pt": "O meu amigo disse que este livro não era interessante."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "회의가 취소됐다고 연락이 왔어.",
+        "en": "I got a message saying the meeting was canceled.",
+        "es": "Recibí un mensaje diciendo que la reunión fue cancelada.",
+        "fr": "J’ai reçu un message disant que la réunion était annulée.",
+        "pt": "Recebi uma mensagem a dizer que a reunião foi cancelada."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그가 늦게 온다고 메시지를 보냈어.",
+        "en": "He sent a message saying he would be late.",
+        "es": "Él envió un mensaje diciendo que llegaría tarde.",
+        "fr": "Il a envoyé un message disant qu’il arriverait en retard.",
+        "pt": "Ele enviou uma mensagem a dizer que chegaria atrasado."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "사람들이 곧 도착한다고 했어.",
+        "en": "People said that they would arrive soon.",
+        "es": "La gente dijo que llegarían pronto.",
+        "fr": "Les gens ont dit qu’ils arriveraient bientôt.",
+        "pt": "As pessoas disseram que chegariam em breve."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "동료가 이 프로젝트가 중요하다고 말했어.",
+        "en": "A coworker said that this project was important.",
+        "es": "Un compañero dijo que este proyecto era importante.",
+        "fr": "Un collègue a dit que ce projet était important.",
+        "pt": "Um colega disse que este projeto era importante."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그는 더 이상 시간이 없다고 했어.",
+        "en": "He said that he didn’t have any more time.",
+        "es": "Él dijo que ya no tenía tiempo.",
+        "fr": "Il a dit qu’il n’avait plus de temps.",
+        "pt": "Ele disse que já não tinha tempo."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "선배가 이 길이 가장 빠르다고 알려줬어.",
+        "en": "A senior told me that this road was the fastest.",
+        "es": "Un mayor me dijo que este camino era el más rápido.",
+        "fr": "Un senior m’a dit que cette route était la plus rapide.",
+        "pt": "Um sénior disse-me que este caminho era o mais rápido."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "사람들이 그 음식이 맛있다고 추천했어.",
+        "en": "People recommended the restaurant saying the food was good.",
+        "es": "La gente recomendó el restaurante diciendo que la comida era buena.",
+        "fr": "Les gens ont recommandé le restaurant en disant que la nourriture était bonne.",
+        "pt": "As pessoas recomendaram o restaurante dizendo que a comida era boa."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그는 일이 생각보다 복잡하다고 했어.",
+        "en": "He said the work was more complicated than expected.",
+        "es": "Él dijo que el trabajo era más complicado de lo esperado.",
+        "fr": "Il a dit que le travail était plus compliqué que prévu.",
+        "pt": "Ele disse que o trabalho era mais complicado do que esperava."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "친구들이 주말에 시간이 된다고 했어.",
+        "en": "My friends said they were free this weekend.",
+        "es": "Mis amigos dijeron que estarían libres este fin de semana.",
+        "fr": "Mes amis ont dit qu’ils étaient libres ce week-end.",
+        "pt": "Os meus amigos disseram que estariam livres este fim de semana."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "뉴스에서 상황이 좋아지고 있다고 했어.",
+        "en": "The news said that the situation was improving.",
+        "es": "Las noticias dijeron que la situación estaba mejorando.",
+        "fr": "Les informations ont dit que la situation s’améliorait.",
+        "pt": "As notícias disseram que a situação estava a melhorar."
+      }
+    }
+  ]
+}

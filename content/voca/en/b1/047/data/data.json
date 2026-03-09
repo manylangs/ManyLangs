@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "b1",
+    "id": "047"
+  },
+  "title": {
+    "target": "B1 — 사회•학교•기술 어휘",
+    "en": "B1 — Social, School, and Technology Vocabulary",
+    "es": "B1 — Vocabulario social, escolar y tecnológico",
+    "fr": "B1 — Vocabulaire social, scolaire et technologique",
+    "pt": "B1 — Vocabulário social, escolar e tecnológico"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "공제",
+        "en": "deduction",
+        "es": "deducción",
+        "fr": "déduction",
+        "pt": "dedução"
+      },
+      "examples": [
+        {
+          "target": "보험료가 자동으로 공제되었습니다.",
+          "en": "The insurance fee was automatically deducted.",
+          "es": "La tarifa del seguro se dedujo automáticamente.",
+          "fr": "La prime d’assurance a été déduite automatiquement.",
+          "pt": "A taxa do seguro foi deduzida automaticamente."
+        },
+        {
+          "target": "공제 내역을 확인해 주세요.",
+          "en": "Please check the deduction details.",
+          "es": "Revise los detalles de la deducción.",
+          "fr": "Veuillez vérifier les détails de la déduction.",
+          "pt": "Verifique os detalhes da dedução."
+        },
+        {
+          "target": "공제 금액이 예상보다 적습니다.",
+          "en": "The deduction amount is less than expected.",
+          "es": "El monto de la deducción es menor de lo esperado.",
+          "fr": "Le montant de la déduction est inférieur à ce qui était prévu.",
+          "pt": "O valor da dedução é menor do que o esperado."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "지출내역",
+        "en": "expense details",
+        "es": "detalles de gastos",
+        "fr": "détails des dépenses",
+        "pt": "detalhes de despesas"
+      },
+      "examples": [
+        {
+          "target": "지출내역을 월별로 정리했습니다.",
+          "en": "I organized the expense details by month.",
+          "es": "Organicé los detalles de gastos por mes.",
+          "fr": "J’ai organisé les détails des dépenses par mois.",
+          "pt": "Organizei os detalhes das despesas por mês."
+        },
+        {
+          "target": "지출내역 보고서를 제출해야 합니다.",
+          "en": "You must submit the expense details report.",
+          "es": "Debe presentar el informe de detalles de gastos.",
+          "fr": "Vous devez soumettre le rapport des dépenses.",
+          "pt": "Você deve enviar o relatório de despesas."
+        },
+        {
+          "target": "지출내역이 예산을 초과했습니다.",
+          "en": "The expense details exceeded the budget.",
+          "es": "Los gastos superaron el presupuesto.",
+          "fr": "Les dépenses ont dépassé le budget.",
+          "pt": "As despesas excederam o orçamento."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "거래",
+        "en": "transaction",
+        "es": "transacción",
+        "fr": "transaction",
+        "pt": "transação"
+      },
+      "examples": [
+        {
+          "target": "모든 거래는 기록됩니다.",
+          "en": "All transactions are recorded.",
+          "es": "Todas las transacciones se registran.",
+          "fr": "Toutes les transactions sont enregistrées.",
+          "pt": "Todas as transações são registradas."
+        },
+        {
+          "target": "거래 내역을 확인해 주세요.",
+          "en": "Please check the transaction history.",
+          "es": "Revise el historial de transacciones.",
+          "fr": "Veuillez vérifier l’historique des transactions.",
+          "pt": "Verifique o histórico das transações."
+        },
+        {
+          "target": "이 거래는 승인되었습니다.",
+          "en": "This transaction has been approved.",
+          "es": "Esta transacción ha sido aprobada.",
+          "fr": "Cette transaction a été approuvée.",
+          "pt": "Esta transação foi aprovada."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "송금",
+        "en": "remittance",
+        "es": "transferencia",
+        "fr": "virement",
+        "pt": "remessa"
+      },
+      "examples": [
+        {
+          "target": "송금이 정상적으로 완료되었습니다.",
+          "en": "The remittance was completed successfully.",
+          "es": "La transferencia se completó con éxito.",
+          "fr": "Le virement a été effectué avec succès.",
+          "pt": "A remessa foi concluída com sucesso."
+        },
+        {
+          "target": "송금 수수료가 부과됩니다.",
+          "en": "A remittance fee will be charged.",
+          "es": "Se cobrará una tarifa de transferencia.",
+          "fr": "Des frais de virement seront appliqués.",
+          "pt": "Será cobrada uma taxa de remessa."
+        },
+        {
+          "target": "해외 송금은 시간이 더 걸립니다.",
+          "en": "International remittances take more time.",
+          "es": "Las transferencias internacionales toman más tiempo.",
+          "fr": "Les virements internationaux prennent plus de temps.",
+          "pt": "As remessas internacionais levam mais tempo."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "계좌번호",
+        "en": "account number",
+        "es": "número de cuenta",
+        "fr": "numéro de compte",
+        "pt": "número da conta"
+      },
+      "examples": [
+        {
+          "target": "계좌번호를 정확히 입력해 주세요.",
+          "en": "Please enter the account number correctly.",
+          "es": "Ingrese el número de cuenta correctamente.",
+          "fr": "Veuillez saisir le numéro de compte correctement.",
+          "pt": "Digite o número da conta corretamente."
+        },
+        {
+          "target": "계좌번호 확인을 요청했습니다.",
+          "en": "I requested account number verification.",
+          "es": "Solicité la verificación del número de cuenta.",
+          "fr": "J’ai demandé la vérification du numéro de compte.",
+          "pt": "Solicitei a verificação do número da conta."
+        },
+        {
+          "target": "잘못된 계좌번호로 송금했습니다.",
+          "en": "The remittance was sent to the wrong account number.",
+          "es": "La transferencia se envió al número de cuenta equivocado.",
+          "fr": "Le virement a été envoyé au mauvais numéro de compte.",
+          "pt": "A remessa foi enviada para o número de conta errado."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "b1",
+    "id": "021"
+  },
+  "title": {
+    "target": "B2 — 사회·문화·경제·미래 개념 어휘",
+    "en": "B2 — Social, Cultural, Economic, and Future-Concept Vocabulary",
+    "es": "B2 — Vocabulario social, cultural, económico y de conceptos futuros",
+    "fr": "B2 — Vocabulaire social, culturel, économique et lié aux concepts futurs",
+    "pt": "B2 — Vocabulário social, cultural, econômico e de conceitos futuros"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "회계",
+        "en": "accounting",
+        "es": "contabilidad",
+        "fr": "comptabilité",
+        "pt": "contabilidade"
+      },
+      "examples": [
+        {
+          "target": "회계는 회사의 재무 상태를 정확히 파악하는 데 필수적이다.",
+          "en": "Accounting is essential for understanding a company's financial status.",
+          "es": "La contabilidad es esencial para comprender la situación financiera de una empresa.",
+          "fr": "La comptabilité est essentielle pour comprendre la situation financière d'une entreprise.",
+          "pt": "A contabilidade é essencial para entender a situação financeira de uma empresa."
+        },
+        {
+          "target": "그는 회계 업무를 담당하고 있다.",
+          "en": "He is in charge of accounting tasks.",
+          "es": "Él está a cargo de las tareas de contabilidad.",
+          "fr": "Il est responsable des tâches de comptabilité.",
+          "pt": "Ele é responsável pelas tarefas de contabilidade."
+        },
+        {
+          "target": "회계 기준이 올해부터 변경되었다.",
+          "en": "Accounting standards have changed starting this year.",
+          "es": "Las normas contables han cambiado desde este año.",
+          "fr": "Les normes comptables ont changé à partir de cette année.",
+          "pt": "Os padrões contábeis mudaram a partir deste ano."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "재무",
+        "en": "finance",
+        "es": "finanzas",
+        "fr": "finance",
+        "pt": "finanças"
+      },
+      "examples": [
+        {
+          "target": "재무 팀은 예산을 검토하고 있다.",
+          "en": "The finance team is reviewing the budget.",
+          "es": "El equipo de finanzas está revisando el presupuesto.",
+          "fr": "L'équipe financière examine le budget.",
+          "pt": "A equipe de finanças está revisando o orçamento."
+        },
+        {
+          "target": "회사의 재무 건전성이 크게 향상되었다.",
+          "en": "The company's financial stability has greatly improved.",
+          "es": "La estabilidad financiera de la empresa ha mejorado mucho.",
+          "fr": "La stabilité financière de l'entreprise s'est grandement améliorée.",
+          "pt": "A estabilidade financeira da empresa melhorou bastante."
+        },
+        {
+          "target": "재무 보고서는 매 분기 제출해야 한다.",
+          "en": "Financial reports must be submitted every quarter.",
+          "es": "Los informes financieros deben presentarse cada trimestre.",
+          "fr": "Les rapports financiers doivent être soumis chaque trimestre.",
+          "pt": "Os relatórios financeiros devem ser enviados a cada trimestre."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "예산",
+        "en": "budget",
+        "es": "presupuesto",
+        "fr": "budget",
+        "pt": "orçamento"
+      },
+      "examples": [
+        {
+          "target": "올해 예산이 작년에 비해 줄어들었다.",
+          "en": "This year's budget has decreased compared to last year.",
+          "es": "El presupuesto de este año ha disminuido en comparación con el del año pasado.",
+          "fr": "Le budget de cette année a diminué par rapport à l'année dernière.",
+          "pt": "O orçamento deste ano diminuiu em comparação com o ano passado."
+        },
+        {
+          "target": "프로젝트 예산을 다시 조정해야 한다.",
+          "en": "We need to readjust the project budget.",
+          "es": "Necesitamos reajustar el presupuesto del proyecto.",
+          "fr": "Nous devons réajuster le budget du projet.",
+          "pt": "Precisamos reajustar o orçamento do projeto."
+        },
+        {
+          "target": "예산 초과가 발생하지 않도록 주의해야 한다.",
+          "en": "We must be careful to avoid exceeding the budget.",
+          "es": "Debemos tener cuidado de no exceder el presupuesto.",
+          "fr": "Nous devons faire attention à ne pas dépasser le budget.",
+          "pt": "Devemos ter cuidado para não ultrapassar o orçamento."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "지출",
+        "en": "expenditure",
+        "es": "gasto",
+        "fr": "dépense",
+        "pt": "despesa"
+      },
+      "examples": [
+        {
+          "target": "이번 달 지출이 예상보다 많았다.",
+          "en": "This month's expenditure was higher than expected.",
+          "es": "El gasto de este mes fue mayor de lo esperado.",
+          "fr": "Les dépenses de ce mois-ci étaient plus élevées que prévu.",
+          "pt": "A despesa deste mês foi maior do que o esperado."
+        },
+        {
+          "target": "지출 내역을 정확히 기록해야 한다.",
+          "en": "Expenditure details must be recorded accurately.",
+          "es": "Los detalles de los gastos deben registrarse con precisión.",
+          "fr": "Les détails des dépenses doivent être enregistrés avec précision.",
+          "pt": "Os detalhes das despesas devem ser registrados com precisão."
+        },
+        {
+          "target": "지출을 줄이기 위한 방안을 마련했다.",
+          "en": "We prepared measures to reduce expenditure.",
+          "es": "Preparamos medidas para reducir los gastos.",
+          "fr": "Nous avons préparé des mesures pour réduire les dépenses.",
+          "pt": "Preparamos medidas para reduzir as despesas."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "수입",
+        "en": "income",
+        "es": "ingreso",
+        "fr": "revenu",
+        "pt": "renda"
+      },
+      "examples": [
+        {
+          "target": "올해 수입이 크게 증가했다.",
+          "en": "Income has increased significantly this year.",
+          "es": "El ingreso ha aumentado significativamente este año.",
+          "fr": "Le revenu a fortement augmenté cette année.",
+          "pt": "A renda aumentou significativamente este ano."
+        },
+        {
+          "target": "수입과 지출의 균형을 맞추는 것이 중요하다.",
+          "en": "It is important to balance income and expenditure.",
+          "es": "Es importante equilibrar los ingresos y los gastos.",
+          "fr": "Il est important d'équilibrer les revenus et les dépenses.",
+          "pt": "É importante equilibrar a renda e as despesas."
+        },
+        {
+          "target": "그는 여러 일을 하며 추가 수입을 얻고 있다.",
+          "en": "He earns additional income by doing various jobs.",
+          "es": "Él obtiene ingresos adicionales haciendo varios trabajos.",
+          "fr": "Il gagne un revenu supplémentaire en faisant divers travaux.",
+          "pt": "Ele ganha renda adicional fazendo vários trabalhos."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a1",
+    "id": "020"
+  },
+  "title": {
+    "target": "A1 — 일상 어휘",
+    "en": "A1 — Everyday Vocabulary",
+    "es": "A1 — Vocabulario cotidiano",
+    "fr": "A1 — Vocabulaire quotidien",
+    "pt": "A1 — Vocabulário do dia a dia"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "산",
+        "en": "mountain",
+        "es": "montaña",
+        "fr": "montagne",
+        "pt": "montanha"
+      },
+      "examples": [
+        {
+          "target": "주말에 산에 갔어요.",
+          "en": "I went to the mountain on the weekend.",
+          "es": "Fui a la montaña el fin de semana.",
+          "fr": "Je suis allé à la montagne ce week-end.",
+          "pt": "Fui para a montanha no fim de semana."
+        },
+        {
+          "target": "산이 정말 높아요.",
+          "en": "The mountain is really high.",
+          "es": "La montaña es realmente alta.",
+          "fr": "La montagne est vraiment haute.",
+          "pt": "A montanha é muito alta."
+        },
+        {
+          "target": "산길이 조금 위험해요.",
+          "en": "The mountain path is a bit dangerous.",
+          "es": "El sendero de la montaña es un poco peligroso.",
+          "fr": "Le chemin de montagne est un peu dangereux.",
+          "pt": "A trilha da montanha é um pouco perigosa."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "바다",
+        "en": "sea",
+        "es": "mar",
+        "fr": "mer",
+        "pt": "mar"
+      },
+      "examples": [
+        {
+          "target": "여름에 바다에 갔어요.",
+          "en": "I went to the sea in the summer.",
+          "es": "Fui al mar en verano.",
+          "fr": "Je suis allé à la mer en été.",
+          "pt": "Fui ao mar no verão."
+        },
+        {
+          "target": "바다 색이 정말 예뻐요.",
+          "en": "The color of the sea is really beautiful.",
+          "es": "El color del mar es realmente hermoso.",
+          "fr": "La couleur de la mer est vraiment belle.",
+          "pt": "A cor do mar é realmente bonita."
+        },
+        {
+          "target": "바다에서 수영했어요.",
+          "en": "I swam in the sea.",
+          "es": "Nadé en el mar.",
+          "fr": "J’ai nagé dans la mer.",
+          "pt": "Nadei no mar."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "강",
+        "en": "river",
+        "es": "río",
+        "fr": "rivière",
+        "pt": "rio"
+      },
+      "examples": [
+        {
+          "target": "강 근처에서 산책했어요.",
+          "en": "I took a walk near the river.",
+          "es": "Caminé cerca del río.",
+          "fr": "J’ai marché près de la rivière.",
+          "pt": "Caminhei perto do rio."
+        },
+        {
+          "target": "강물이 깨끗해요.",
+          "en": "The river water is clean.",
+          "es": "El agua del río está limpia.",
+          "fr": "L’eau de la rivière est propre.",
+          "pt": "A água do rio está limpa."
+        },
+        {
+          "target": "강을 따라 자전거를 탔어요.",
+          "en": "I rode a bicycle along the river.",
+          "es": "Anduve en bicicleta a lo largo del río.",
+          "fr": "J’ai fait du vélo le long de la rivière.",
+          "pt": "Andei de bicicleta ao longo do rio."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "나무",
+        "en": "tree",
+        "es": "árbol",
+        "fr": "arbre",
+        "pt": "árvore"
+      },
+      "examples": [
+        {
+          "target": "나무 아래에서 쉬었어요.",
+          "en": "I rested under the tree.",
+          "es": "Descansé bajo el árbol.",
+          "fr": "Je me suis reposé sous l’arbre.",
+          "pt": "Descansei debaixo da árvore."
+        },
+        {
+          "target": "나무가 아주 커요.",
+          "en": "The tree is very big.",
+          "es": "El árbol es muy grande.",
+          "fr": "L’arbre est très grand.",
+          "pt": "A árvore é muito grande."
+        },
+        {
+          "target": "나무 잎이 많이 떨어졌어요.",
+          "en": "Many leaves have fallen from the tree.",
+          "es": "Muchas hojas han caído del árbol.",
+          "fr": "Beaucoup de feuilles sont tombées de l’arbre.",
+          "pt": "Muitas folhas caíram da árvore."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "꽃",
+        "en": "flower",
+        "es": "flor",
+        "fr": "fleur",
+        "pt": "flor"
+      },
+      "examples": [
+        {
+          "target": "꽃이 아주 예뻐요.",
+          "en": "The flowers are very pretty.",
+          "es": "Las flores son muy bonitas.",
+          "fr": "Les fleurs sont très jolies.",
+          "pt": "As flores são muito bonitas."
+        },
+        {
+          "target": "꽃 향기가 좋아요.",
+          "en": "The scent of the flowers is nice.",
+          "es": "El aroma de las flores es agradable.",
+          "fr": "Le parfum des fleurs est agréable.",
+          "pt": "O perfume das flores é agradável."
+        },
+        {
+          "target": "꽃을 정원에 심었어요.",
+          "en": "I planted flowers in the garden.",
+          "es": "Planté flores en el jardín.",
+          "fr": "J’ai planté des fleurs dans le jardin.",
+          "pt": "Plantei flores no jardim."
+        }
+      ]
+    }
+  ]
+}

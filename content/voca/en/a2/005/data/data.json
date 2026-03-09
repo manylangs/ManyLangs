@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a2",
+    "id": "005"
+  },
+  "title": {
+    "target": "A2 — 확장 일상 어휘",
+    "en": "A2 — Expanded Everyday Vocabulary",
+    "es": "A2 — Vocabulario cotidiano ampliado",
+    "fr": "A2 — Vocabulaire quotidien élargi",
+    "pt": "A2 — Vocabulário do dia a dia ampliado"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "생각",
+        "en": "thought",
+        "es": "pensamiento",
+        "fr": "pensée",
+        "pt": "pensamento"
+      },
+      "examples": [
+        {
+          "target": "그 생각이 계속 나요.",
+          "en": "That thought keeps coming to my mind.",
+          "es": "Ese pensamiento sigue viniendo a mi mente.",
+          "fr": "Cette pensée me revient sans cesse.",
+          "pt": "Esse pensamento continua vindo à minha mente."
+        },
+        {
+          "target": "생각을 정리해야 해요.",
+          "en": "I need to organize my thoughts.",
+          "es": "Necesito organizar mis pensamientos.",
+          "fr": "Je dois organiser mes pensées.",
+          "pt": "Preciso organizar meus pensamentos."
+        },
+        {
+          "target": "생각이 많아졌어요.",
+          "en": "I started having many thoughts.",
+          "es": "Empecé a tener muchos pensamientos.",
+          "fr": "J’ai commencé à avoir beaucoup de pensées.",
+          "pt": "Comecei a ter muitos pensamentos."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "의견",
+        "en": "opinion",
+        "es": "opinión",
+        "fr": "opinion",
+        "pt": "opinião"
+      },
+      "examples": [
+        {
+          "target": "의견을 말해 주세요.",
+          "en": "Please share your opinion.",
+          "es": "Por favor, comparte tu opinión.",
+          "fr": "Donnez votre opinion, s’il vous plaît.",
+          "pt": "Por favor, compartilhe sua opinião."
+        },
+        {
+          "target": "의견 차이가 있어요.",
+          "en": "There is a difference in opinion.",
+          "es": "Hay una diferencia de opinión.",
+          "fr": "Il y a une divergence d’opinions.",
+          "pt": "Há uma diferença de opinião."
+        },
+        {
+          "target": "내 의견은 조금 달라요.",
+          "en": "My opinion is a bit different.",
+          "es": "Mi opinión es un poco diferente.",
+          "fr": "Mon opinion est un peu différente.",
+          "pt": "Minha opinião é um pouco diferente."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "선택",
+        "en": "choice",
+        "es": "elección",
+        "fr": "choix",
+        "pt": "escolha"
+      },
+      "examples": [
+        {
+          "target": "선택의 폭이 넓어요.",
+          "en": "There is a wide range of choices.",
+          "es": "Hay una amplia variedad de opciones.",
+          "fr": "Il y a un large éventail de choix.",
+          "pt": "Há uma ampla variedade de escolhas."
+        },
+        {
+          "target": "어떤 선택을 할지 고민 중이에요.",
+          "en": "I'm thinking about which choice to make.",
+          "es": "Estoy pensando en qué elección tomar.",
+          "fr": "Je réfléchis au choix que je vais faire.",
+          "pt": "Estou pensando em qual escolha fazer."
+        },
+        {
+          "target": "좋은 선택이었어요.",
+          "en": "It was a good choice.",
+          "es": "Fue una buena elección.",
+          "fr": "C’était un bon choix.",
+          "pt": "Foi uma boa escolha."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "결정",
+        "en": "decision",
+        "es": "decisión",
+        "fr": "décision",
+        "pt": "decisão"
+      },
+      "examples": [
+        {
+          "target": "중요한 결정을 내렸어요.",
+          "en": "I made an important decision.",
+          "es": "Tomé una decisión importante.",
+          "fr": "J’ai pris une décision importante.",
+          "pt": "Tomei uma decisão importante."
+        },
+        {
+          "target": "결정하기 전에 다시 생각해 보세요.",
+          "en": "Think again before making a decision.",
+          "es": "Piensa otra vez antes de tomar una decisión.",
+          "fr": "Réfléchissez encore avant de prendre une décision.",
+          "pt": "Pense novamente antes de tomar uma decisão."
+        },
+        {
+          "target": "결정이 쉽지 않았어요.",
+          "en": "The decision wasn’t easy.",
+          "es": "La decisión no fue fácil.",
+          "fr": "La décision n’a pas été facile.",
+          "pt": "A decisão não foi fácil."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "부탁",
+        "en": "request",
+        "es": "petición",
+        "fr": "demande",
+        "pt": "pedido"
+      },
+      "examples": [
+        {
+          "target": "작은 부탁이 있어요.",
+          "en": "I have a small request.",
+          "es": "Tengo una pequeña petición.",
+          "fr": "J’ai une petite demande.",
+          "pt": "Tenho um pequeno pedido."
+        },
+        {
+          "target": "부탁 하나 들어줄래요?",
+          "en": "Can you do me a favor?",
+          "es": "¿Puedes hacerme un favor?",
+          "fr": "Tu peux me rendre un service ?",
+          "pt": "Pode me fazer um favor?"
+        },
+        {
+          "target": "부탁을 거절했어요.",
+          "en": "I refused the request.",
+          "es": "Rechacé la petición.",
+          "fr": "J’ai refusé la demande.",
+          "pt": "Recusei o pedido."
+        }
+      ]
+    }
+  ]
+}

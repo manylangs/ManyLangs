@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a2",
+    "id": "017"
+  },
+  "title": {
+    "target": "A2 — 확장 일상 어휘",
+    "en": "A2 — Expanded Everyday Vocabulary",
+    "es": "A2 — Vocabulario cotidiano ampliado",
+    "fr": "A2 — Vocabulaire quotidien élargi",
+    "pt": "A2 — Vocabulário do dia a dia ampliado"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "출입문",
+        "en": "entrance door",
+        "es": "puerta de entrada",
+        "fr": "porte d’entrée",
+        "pt": "porta de entrada"
+      },
+      "examples": [
+        {
+          "target": "출입문을 꼭 닫아 주세요.",
+          "en": "Please close the entrance door.",
+          "es": "Por favor, cierre la puerta de entrada.",
+          "fr": "Veuillez fermer la porte d’entrée.",
+          "pt": "Por favor, feche a porta de entrada."
+        },
+        {
+          "target": "출입문 앞에 물건을 두지 마세요.",
+          "en": "Do not leave items in front of the entrance door.",
+          "es": "No deje objetos frente a la puerta de entrada.",
+          "fr": "Ne laissez pas d’objets devant la porte d’entrée.",
+          "pt": "Não deixe objetos em frente à porta de entrada."
+        },
+        {
+          "target": "출입문이 자동으로 열려요.",
+          "en": "The entrance door opens automatically.",
+          "es": "La puerta de entrada se abre automáticamente.",
+          "fr": "La porte d’entrée s’ouvre automatiquement.",
+          "pt": "A porta de entrada se abre automaticamente."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "사무실",
+        "en": "office",
+        "es": "oficina",
+        "fr": "bureau",
+        "pt": "escritório"
+      },
+      "examples": [
+        {
+          "target": "사무실에 사람이 거의 없어요.",
+          "en": "There are almost no people in the office.",
+          "es": "Hay casi nadie en la oficina.",
+          "fr": "Il y a presque personne dans le bureau.",
+          "pt": "Quase não há pessoas no escritório."
+        },
+        {
+          "target": "사무실은 복도 끝에 있어요.",
+          "en": "The office is at the end of the hallway.",
+          "es": "La oficina está al final del pasillo.",
+          "fr": "Le bureau se trouve au bout du couloir.",
+          "pt": "O escritório fica no final do corredor."
+        },
+        {
+          "target": "사무실 문을 노크하고 들어가세요.",
+          "en": "Knock before entering the office.",
+          "es": "Toque la puerta antes de entrar a la oficina.",
+          "fr": "Frappez avant d’entrer dans le bureau.",
+          "pt": "Bata na porta antes de entrar no escritório."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "회의실",
+        "en": "meeting room",
+        "es": "sala de reuniones",
+        "fr": "salle de réunion",
+        "pt": "sala de reunião"
+      },
+      "examples": [
+        {
+          "target": "회의실 예약이 완료되었어요.",
+          "en": "The meeting room reservation is complete.",
+          "es": "La reserva de la sala de reuniones está completa.",
+          "fr": "La réservation de la salle de réunion est terminée.",
+          "pt": "A reserva da sala de reunião está concluída."
+        },
+        {
+          "target": "회의실은 이 층에 두 개 있어요.",
+          "en": "There are two meeting rooms on this floor.",
+          "es": "Hay dos salas de reuniones en este piso.",
+          "fr": "Il y a deux salles de réunion à cet étage.",
+          "pt": "Há duas salas de reunião neste andar."
+        },
+        {
+          "target": "회의실 안에서 통화는 삼가 주세요.",
+          "en": "Please refrain from phone calls inside the meeting room.",
+          "es": "Por favor, evite llamadas dentro de la sala de reuniones.",
+          "fr": "Veuillez éviter les appels téléphoniques dans la salle de réunion.",
+          "pt": "Por favor, evite ligações dentro da sala de reunião."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "서랍",
+        "en": "drawer",
+        "es": "cajón",
+        "fr": "tiroir",
+        "pt": "gaveta"
+      },
+      "examples": [
+        {
+          "target": "서랍 안에 파일이 있어요.",
+          "en": "There is a file inside the drawer.",
+          "es": "Hay un archivo dentro del cajón.",
+          "fr": "Il y a un fichier dans le tiroir.",
+          "pt": "Há um arquivo dentro da gaveta."
+        },
+        {
+          "target": "서랍이 잘 열리지 않아요.",
+          "en": "The drawer doesn’t open well.",
+          "es": "El cajón no se abre bien.",
+          "fr": "Le tiroir ne s’ouvre pas bien.",
+          "pt": "A gaveta não abre bem."
+        },
+        {
+          "target": "서랍을 정리해야겠어요.",
+          "en": "I need to organize the drawer.",
+          "es": "Necesito organizar el cajón.",
+          "fr": "Je dois organiser le tiroir.",
+          "pt": "Preciso organizar a gaveta."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "문서함",
+        "en": "document tray",
+        "es": "bandeja de documentos",
+        "fr": "casier à documents",
+        "pt": "bandeja de documentos"
+      },
+      "examples": [
+        {
+          "target": "문서함에 새 서류가 도착했어요.",
+          "en": "New documents have arrived in the tray.",
+          "es": "Han llegado nuevos documentos a la bandeja.",
+          "fr": "De nouveaux documents sont arrivés dans le casier.",
+          "pt": "Novos documentos chegaram à bandeja."
+        },
+        {
+          "target": "문서함을 나누어 사용하고 있어요.",
+          "en": "We are sharing the document tray.",
+          "es": "Estamos compartiendo la bandeja de documentos.",
+          "fr": "Nous partageons le casier à documents.",
+          "pt": "Estamos compartilhando a bandeja de documentos."
+        },
+        {
+          "target": "문서함이 꽉 차서 정리가 필요해요.",
+          "en": "The document tray is full and needs organizing.",
+          "es": "La bandeja de documentos está llena y necesita organización.",
+          "fr": "Le casier à documents est plein et doit être organisé.",
+          "pt": "A bandeja de documentos está cheia e precisa ser organizada."
+        }
+      ]
+    }
+  ]
+}

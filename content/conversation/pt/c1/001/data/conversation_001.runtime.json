@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "c1",
+    "id": "001"
+  },
+  "title": {
+    "target": "면접 보기",
+    "en": "Job Interview",
+    "es": "Entrevista de trabajo",
+    "fr": "Entretien d’embauche",
+    "pt": "Entrevista de Emprego"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "안녕하세요, 시간 내주셔서 감사합니다.",
+            "en": "Hi, thanks for taking the time to meet with me today.",
+            "es": "Hola, gracias por tomarse el tiempo para reunirse conmigo hoy.",
+            "fr": "Bonjour, merci d’avoir pris le temps de me rencontrer aujourd’hui.",
+            "pt": "Olá, obrigado(a) por reservar um tempo para falar comigo hoje."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "반갑습니다! 오늘 편하게 이야기 나눠봐요.",
+            "en": "Nice to meet you! Let's have a relaxed conversation.",
+            "es": "Mucho gusto. Hablemos con tranquilidad.",
+            "fr": "Enchanté ! Parlons-en librement.",
+            "pt": "Muito prazer! Vamos conversar com calma."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 제가 맡았던 프로젝트 경험을 말씀드릴게요.",
+            "en": "Sure, I can walk you through the project I worked on.",
+            "es": "Claro, puedo explicarle el proyecto en el que trabajé.",
+            "fr": "Bien sûr, je peux vous présenter le projet sur lequel j’ai travaillé.",
+            "pt": "Claro, posso explicar o projeto em que trabalhei."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 그 프로젝트에서 본인 역할은 무엇이었나요?",
+            "en": "Sounds good. What exactly was your role in that project?",
+            "es": "Perfecto. ¿Cuál fue exactamente su función en ese proyecto?",
+            "fr": "D’accord. Quel était exactement votre rôle dans ce projet ?",
+            "pt": "Ótimo. Qual foi exatamente o seu papel nesse projeto?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 그런 업무라면 바로 투입할 수 있습니다.",
+            "en": "Yes, I can take on that kind of responsibility right away.",
+            "es": "Sí, puedo asumir ese tipo de responsabilidad de inmediato.",
+            "fr": "Oui, je peux assumer ce type de responsabilité immédiatement.",
+            "pt": "Sim, consigo assumir esse tipo de responsabilidade de imediato."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋습니다. 그러면 그 부분은 충분히 신뢰할 수 있겠네요.",
+            "en": "Great. It sounds like we can trust your experience in that area.",
+            "es": "Excelente. Entonces podemos confiar en su experiencia.",
+            "fr": "Très bien. On peut donc compter sur votre expérience dans ce domaine.",
+            "pt": "Excelente. Então podemos confiar na sua experiência."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 우선 주요 업무부터 설명해 주실 수 있을까요?",
+            "en": "Could you explain the main responsibilities of this role?",
+            "es": "¿Podría explicarme las responsabilidades principales del puesto?",
+            "fr": "Pourriez-vous m’expliquer les principales responsabilités de ce poste ?",
+            "pt": "Podia explicar quais são as principais responsabilidades deste cargo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "물론이죠! 이 역할은 프로젝트 관리 비중이 커요.",
+            "en": "Of course! This position involves a lot of project coordination.",
+            "es": "Por supuesto. Este puesto requiere bastante coordinación de proyectos.",
+            "fr": "Bien sûr ! Ce poste implique beaucoup de coordination de projets.",
+            "pt": "Claro! Este cargo envolve bastante coordenação de projetos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 그런 구조라면 협업 방식이 명확하겠네요.",
+            "en": "I see, that structure makes collaboration much clearer.",
+            "es": "Entiendo, esa estructura hace que la colaboración sea mucho más clara.",
+            "fr": "Je vois, cette structure rend la collaboration plus claire.",
+            "pt": "Entendo, essa estrutura torna a colaboração muito mais clara."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 팀 간 커뮤니케이션이 핵심이에요.",
+            "en": "Right, communication across teams is crucial here.",
+            "es": "Así es, la comunicación entre equipos es fundamental.",
+            "fr": "Exact, la communication entre équipes est essentielle.",
+            "pt": "Exacto, a comunicação entre equipas é fundamental."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 그 일정은 저도 충분히 맞출 수 있어요.",
+            "en": "Yes, I can manage that schedule without any problems.",
+            "es": "Sí, puedo manejar ese calendario sin ningún problema.",
+            "fr": "Oui, je peux gérer ce planning sans aucun problème.",
+            "pt": "Sim, consigo cumprir esse calendário sem dificuldade."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 그러면 일정 관리 역량이 강하신 거네요.",
+            "en": "Good to hear. Strong time-management skills are important.",
+            "es": "Perfecto. Tener buena gestión del tiempo es clave aquí.",
+            "fr": "Parfait. Une bonne gestion du temps est vraiment importante ici.",
+            "pt": "Perfeito. Ter boa gestão do tempo é essencial por aqui."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "회사 문화에 대해 간단히 설명해 주실 수 있을까요?",
+            "en": "Could you tell me a bit about the company culture?",
+            "es": "¿Podría hablarme un poco sobre la cultura de la empresa?",
+            "fr": "Pourriez-vous me parler un peu de la culture d’entreprise ?",
+            "pt": "Podia falar-me um pouco sobre a cultura da empresa?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 저희는 자율성과 책임을 중시해요.",
+            "en": "Sure! We value autonomy and responsibility.",
+            "es": "Claro. Valoramos la autonomía y la responsabilidad.",
+            "fr": "Bien sûr ! Nous valorisons l’autonomie et la responsabilité.",
+            "pt": "Claro! Valorizamos autonomia e responsabilidade."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "와, 들으니 분위기가 정말 좋네요.",
+            "en": "Wow, it sounds like a really positive environment.",
+            "es": "Vaya, suena como un ambiente muy positivo.",
+            "fr": "Ah, ça semble vraiment être un environnement positif.",
+            "pt": "Uau, parece realmente um ambiente muito positivo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그렇죠, 서로 존중하는 분위기가 강해요.",
+            "en": "Exactly, people here really respect each other.",
+            "es": "Exacto, hay mucho respeto mutuo dentro del equipo.",
+            "fr": "Exactement, il y a beaucoup de respect mutuel dans l’équipe.",
+            "pt": "Exactamente, há muito respeito mútuo dentro da equipa."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 그런 유연한 환경이면 더 잘 맞을 것 같아요.",
+            "en": "Yes, I think I'd work well in a flexible atmosphere like that.",
+            "es": "Sí, creo que trabajaría bien en un entorno flexible así.",
+            "fr": "Oui, je pense que je travaillerais bien dans un cadre flexible.",
+            "pt": "Sim, acho que trabalharia bem num contexto flexível como esse."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 본인 스타일과 잘 맞아 보이네요.",
+            "en": "Great. It seems like your style would fit well.",
+            "es": "Genial. Su estilo encaja bien con el nuestro.",
+            "fr": "Super. Votre style semble bien correspondre au nôtre.",
+            "pt": "Ótimo. O seu estilo parece combinar connosco."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 이 포지션의 성장 방향도 궁금합니다.",
+            "en": "I'm also curious about the growth path for this position.",
+            "es": "También me gustaría saber cómo es la trayectoria de crecimiento para este puesto.",
+            "fr": "Je suis aussi curieux de connaître la trajectoire d’évolution de ce poste.",
+            "pt": "Também tenho curiosidade em saber como é a progressão neste cargo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋은 질문이에요! 이 포지션은 리드 역할로 성장해요.",
+            "en": "Good question! This position can grow into a lead role.",
+            "es": "Buena pregunta. Este puesto puede evolucionar a un rol de liderazgo.",
+            "fr": "Très bonne question ! Ce poste peut évoluer vers un rôle de lead.",
+            "pt": "Boa pergunta! Este cargo pode evoluir para uma função de liderança."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 책임 범위가 점점 확대되는군요!",
+            "en": "Oh, so the scope of responsibility expands over time!",
+            "es": "Ah, entonces las responsabilidades se amplían con el tiempo.",
+            "fr": "Ah, donc les responsabilités s’élargissent progressivement !",
+            "pt": "Ah, então as responsabilidades aumentam gradualmente!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 프로젝트 규모도 점점 커져요.",
+            "en": "Right, and the size of the projects increases as well.",
+            "es": "Así es, y los proyectos se vuelven más grandes con el tiempo.",
+            "fr": "Exact, et les projets deviennent plus importants également.",
+            "pt": "Exacto, e os projetos tornam-se maiores com o tempo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 그 수준의 역할을 맡을 준비는 되어 있습니다.",
+            "en": "Yes, I'm ready to take on a role at that level.",
+            "es": "Sí, estoy preparado(a) para asumir un rol de ese nivel.",
+            "fr": "Oui, je suis prêt à assumer un rôle de ce niveau.",
+            "pt": "Sim, estou preparado(a) para assumir um papel desse nível."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그렇군요! 성장 의지가 강하시네요.",
+            "en": "Nice. I can see you have strong motivation to grow.",
+            "es": "Veo que tiene una fuerte motivación por crecer.",
+            "fr": "Je vois que vous avez une réelle motivation pour progresser.",
+            "pt": "Vejo que tem uma forte motivação para crescer."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "제가 준비한 포트폴리오도 보여드릴까요?",
+            "en": "Would you like to take a look at my portfolio?",
+            "es": "¿Le gustaría echar un vistazo a mi portafolio?",
+            "fr": "Souhaitez-vous jeter un œil à mon portfolio ?",
+            "pt": "Gostaria de ver o meu portefólio?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요, 한번 볼까요?",
+            "en": "Sure, let's take a look.",
+            "es": "Con gusto, veámoslo.",
+            "fr": "Avec plaisir, voyons cela.",
+            "pt": "Com certeza, vamos ver."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이 부분은 특히 사용자 경험을 개선한 사례예요.",
+            "en": "This part is a case where I improved the user experience.",
+            "es": "Esta parte muestra cómo mejoré la experiencia del usuario.",
+            "fr": "Cette section montre comment j’ai amélioré l’expérience utilisateur.",
+            "pt": "Esta parte mostra como melhorei a experiência do utilizador."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오, 개선 효과가 꽤 크네요!",
+            "en": "Oh, the improvement results are impressive!",
+            "es": "Oh, ¡los resultados de mejora son impresionantes!",
+            "fr": "Oh, les résultats d’amélioration sont impressionnants !",
+            "pt": "Oh, os resultados são muito bons!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 이런 방식으로 문제를 해결했습니다.",
+            "en": "Yes, that’s how I approached and solved the problem.",
+            "es": "Sí, así analicé y resolví el problema.",
+            "fr": "Oui, c’est ainsi que j’ai analysé puis résolu le problème.",
+            "pt": "Sim, foi assim que analisei e resolvi o problema."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "훌륭하네요. 접근 방식이 아주 체계적입니다.",
+            "en": "Excellent. Your approach looks very structured.",
+            "es": "Excelente. Su enfoque es muy estructurado.",
+            "fr": "Excellent. Votre approche est très structurée.",
+            "pt": "Excelente. A sua abordagem é bastante estruturada."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 팀 구성은 어떻게 되어 있나요?",
+            "en": "Could you tell me a bit about the team structure?",
+            "es": "¿Podría contarme cómo está estructurado el equipo?",
+            "fr": "Pourriez-vous me parler de la structure de l’équipe ?",
+            "pt": "Podia falar-me sobre a estrutura da equipa?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "현재는 6명 팀이고 역할이 확실히 나뉘어 있어요.",
+            "en": "We currently have a six-member team with clear roles.",
+            "es": "Actualmente somos seis personas con funciones bien definidas.",
+            "fr": "Nous avons actuellement une équipe de six personnes avec des rôles bien définis.",
+            "pt": "Atualmente somos seis, com funções bem definidas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 그런 역할 분담이면 효율적이겠네요.",
+            "en": "I see, that kind of role distribution sounds efficient.",
+            "es": "Ya veo, esa distribución de roles parece eficiente.",
+            "fr": "D’accord, cette répartition des rôles semble efficace.",
+            "pt": "Percebo, essa distribuição de funções parece eficiente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 효율과 책임감을 모두 챙길 수 있어요.",
+            "en": "Right, it helps maintain both efficiency and accountability.",
+            "es": "Exacto, eso permite mantener eficiencia y responsabilidad.",
+            "fr": "Exact, cela permet d’assurer efficacité et responsabilité.",
+            "pt": "Exacto, isso garante eficiência e responsabilidade."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 그런 환경에서는 협업하기 편할 것 같아요.",
+            "en": "Yes, I think I’d collaborate well in that setting.",
+            "es": "Sí, creo que podría colaborar bien en ese entorno.",
+            "fr": "Oui, je pense que je collaborerais bien dans ce cadre.",
+            "pt": "Sim, acredito que colaboraria bem nesse ambiente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 팀 분위기도 굉장히 안정적이에요.",
+            "en": "And the team atmosphere is quite stable.",
+            "es": "Y el ambiente del equipo es bastante estable.",
+            "fr": "Et l’ambiance dans l’équipe est très stable.",
+            "pt": "E o ambiente da equipa é bastante estável."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "업무 난이도는 초반에 어느 정도인가요?",
+            "en": "How challenging is the work at the beginning?",
+            "es": "¿Qué tan desafiante es el trabajo al principio?",
+            "fr": "Quelle est la difficulté du travail au début ?",
+            "pt": "Quão desafiante é o trabalho no início?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "처음엔 중간 난이도지만 점차 높아져요.",
+            "en": "At first it’s moderate, but it becomes more complex.",
+            "es": "Al principio es moderado, luego se vuelve más complejo.",
+            "fr": "Au début c’est modéré, puis cela devient plus complexe.",
+            "pt": "No início é moderado, depois vai ficando mais complexo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 적응 기간이 충분히 주어지는군요.",
+            "en": "Oh, so there’s enough time to adjust and learn.",
+            "es": "Ah, entonces hay suficiente tiempo para adaptarse.",
+            "fr": "Ah, donc il y a suffisamment de temps pour s’adapter.",
+            "pt": "Ah, então há tempo suficiente para adaptar-me."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, onboarding 체계가 잘 되어 있어요.",
+            "en": "Right, our onboarding process is well-organized.",
+            "es": "Así es, nuestro proceso de onboarding está muy bien organizado.",
+            "fr": "Exact, notre processus d’intégration est très bien organisé.",
+            "pt": "Exacto, o nosso processo de integração é muito organizado."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 그럼 빠르게 익혀서 기여할 수 있을 것 같아요.",
+            "en": "Yes, then I should be able to contribute quickly.",
+            "es": "Perfecto, creo que podré contribuir rápidamente.",
+            "fr": "Oui, dans ce cas je pourrai contribuer rapidement.",
+            "pt": "Ótimo, assim conseguirei contribuir rapidamente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 적극적인 태도가 인상적이네요.",
+            "en": "Great attitude. That’s always a good sign.",
+            "es": "Buena actitud. Eso siempre es una buena señal.",
+            "fr": "Super attitude. C’est toujours bon signe.",
+            "pt": "Boa atitude. Isso é sempre um bom sinal."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 근무 조건에 대해 더 여쭤봐도 될까요?",
+            "en": "Could I ask a bit about the working conditions?",
+            "es": "¿Puedo preguntarle sobre las condiciones de trabajo?",
+            "fr": "Puis-je vous poser quelques questions sur les conditions de travail ?",
+            "pt": "Posso perguntar-lhe sobre as condições de trabalho?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "물론이죠! 저희는 탄력 근무를 운영해요.",
+            "en": "Of course! We use a flexible working system.",
+            "es": "Claro. Utilizamos un sistema de horario flexible.",
+            "fr": "Bien sûr ! Nous utilisons un système d’horaires flexibles.",
+            "pt": "Claro! Utilizamos um regime de horário flexível."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 유연 근무제면 저에게도 잘 맞아요.",
+            "en": "Yes, a flexible schedule works well for me too.",
+            "es": "Sí, un horario flexible también me viene muy bien.",
+            "fr": "Oui, un emploi du temps flexible me convient parfaitement.",
+            "pt": "Sim, um horário flexível também funciona muito bem para mim."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그렇죠, 직원 만족도가 높은 이유예요.",
+            "en": "Right, it's one of the reasons satisfaction is high here.",
+            "es": "Exacto, es una de las razones del alto nivel de satisfacción aquí.",
+            "fr": "Exact, c’est l’une des raisons du haut niveau de satisfaction ici.",
+            "pt": "Exacto, isso contribui bastante para a satisfação dos colaboradores."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 그 정도면 일정 조율에 문제 없습니다.",
+            "en": "Sure, I have no issues coordinating my time with that system.",
+            "es": "De acuerdo, no tendré ningún problema para adaptarme a ese sistema.",
+            "fr": "D’accord, je n’aurai aucun problème à m’adapter à ce système.",
+            "pt": "Certo, não terei dificuldade em adaptar-me a esse sistema."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋습니다. 그럼 조건 부분은 큰 문제 없어 보이네요.",
+            "en": "Great. It seems like the conditions would work fine for you.",
+            "es": "Perfecto. Parece que las condiciones también le funcionan bien.",
+            "fr": "Très bien. Les conditions semblent vous convenir aussi.",
+            "pt": "Perfeito. Parece que as condições também lhe favorecem."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 제가 이번 역할에서 가장 중점적으로 준비해야 할 것은 무엇일까요?",
+            "en": "What should I focus on most when preparing for this role?",
+            "es": "¿En qué debería concentrarme más para prepararme para este puesto?",
+            "fr": "Sur quoi devrais-je me concentrer le plus en préparant ce poste ?",
+            "pt": "Em que devo concentrar-me mais ao preparar-me para este cargo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋은 질문이에요! 우선 문제 해결 능력이 핵심이에요.",
+            "en": "Great question! Problem-solving skills are the key.",
+            "es": "Muy buena pregunta. La resolución de problemas es la clave.",
+            "fr": "Très bonne question ! La résolution de problèmes est la clé.",
+            "pt": "Excelente pergunta! A capacidade de resolver problemas é essencial."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 그 방향은 충분히 준비해 왔습니다.",
+            "en": "Yes, I’ve already been preparing in that direction.",
+            "es": "Sí, ya me he estado preparando en esa dirección.",
+            "fr": "Oui, je me prépare déjà dans ce sens.",
+            "pt": "Sim, já estou a preparar-me nessa direção."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오, 이미 준비가 잘 되어 있군요!",
+            "en": "Oh, it sounds like you're already well-prepared!",
+            "es": "Oh, ¡parece que ya está muy bien preparado(a)!",
+            "fr": "Oh, on dirait que vous êtes déjà bien préparé !",
+            "pt": "Oh, parece que já está muito bem preparado(a)!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "말씀 감사합니다. 참고해서 더 보완하겠습니다.",
+            "en": "Thank you. I’ll use your advice to improve further.",
+            "es": "Gracias. Usaré sus consejos para seguir mejorando.",
+            "fr": "Merci. J’utiliserai vos conseils pour m’améliorer encore.",
+            "pt": "Obrigado(a). Vou usar os seus conselhos para melhorar ainda mais."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 그런 태도면 금방 성장하실 거예요.",
+            "en": "Exactly. With that attitude, you’ll grow quickly here.",
+            "es": "Exacto. Con esa actitud, crecerá rápidamente aquí.",
+            "fr": "Exact. Avec cette attitude, vous progresserez rapidement ici.",
+            "pt": "Exacto. Com essa atitude, crescerá rapidamente aqui."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "추가로 궁금한 점이 있다면 말씀해 주세요.",
+            "en": "Please let me know if there’s anything else you’d like to ask.",
+            "es": "Por favor, dígame si hay algo más que quiera preguntar.",
+            "fr": "N’hésitez pas à me dire si vous avez d’autres questions.",
+            "pt": "Por favor, diga-me se houver mais alguma pergunta."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 마지막으로 면접 절차 설명드릴게요.",
+            "en": "Sure! Let me briefly explain the next steps.",
+            "es": "Claro. Le explico brevemente los siguientes pasos.",
+            "fr": "Bien sûr ! Je vous explique brièvement les prochaines étapes.",
+            "pt": "Claro! Vou explicar rapidamente os próximos passos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 절차가 명확하군요. 이해했습니다.",
+            "en": "Oh, the process is very clear. Thanks for explaining.",
+            "es": "Ah, el proceso es muy claro. Gracias por explicarlo.",
+            "fr": "Ah, le processus est très clair. Merci pour l’explication.",
+            "pt": "Ah, o processo é bastante claro. Obrigado(a) pela explicação."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "다음 단계는 서류 확인 후 연락드리는 방식이에요.",
+            "en": "We’ll review everything and get back to you soon.",
+            "es": "Revisaremos todo y nos pondremos en contacto pronto.",
+            "fr": "Nous examinerons tout et reviendrons vers vous rapidement.",
+            "pt": "Vamos analisar tudo e entraremos em contacto em breve."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 오늘 면접 기회 주셔서 감사합니다.",
+            "en": "Thank you for giving me the opportunity to interview today.",
+            "es": "Gracias por darme la oportunidad de esta entrevista.",
+            "fr": "Merci de m’avoir donné l’occasion de passer cet entretien.",
+            "pt": "Obrigado(a) por me dar a oportunidade desta entrevista."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저희도 감사합니다. 곧 좋은 소식 드릴게요!",
+            "en": "We also appreciate your time. Expect good news soon!",
+            "es": "Gracias a usted también. ¡Espere buenas noticias pronto!",
+            "fr": "Merci à vous aussi. Attendez-vous à de bonnes nouvelles bientôt !",
+            "pt": "Obrigado(a). Esperamos dar-lhe boas notícias em breve!"
+          }
+        }
+      ]
+    }
+  ]
+}

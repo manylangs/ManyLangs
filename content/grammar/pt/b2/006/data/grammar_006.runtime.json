@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "b2",
+    "id": "006"
+  },
+  "title": {
+    "target": "-(으)ㄹ 테니(의지·추측·요청)",
+    "en": "Como yo voy a / supongo que ~, así que ~ (-(으)ㄹ 테니)",
+    "es": "Como yo voy a / supongo que ~, así que ~ (-(으)ㄹ 테니)",
+    "fr": "Comme je vais / je suppose que ~, alors ~ (-(으)ㄹ 테니)",
+    "pt": "Como eu vou / suponho que ~, por isso ~ (-(으)ㄹ 테니)"
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "-(으)ㄹ 테니는 화자의 의지·추측·요청을 함께 나타낼 수 있는 표현이다.",
+        "en": "La forma -(으)ㄹ 테니 expresa la intención del hablante, una suposición o una petición hacia el oyente.",
+        "es": "La forma -(으)ㄹ 테니 expresa la intención del hablante, una suposición o una petición hacia el oyente.",
+        "fr": "La forme -(으)ㄹ 테니 exprime l’intention du locuteur, une supposition ou une demande adressée à l’interlocuteur.",
+        "pt": "A forma -(으)ㄹ 테니 expressa a intenção do falante, uma suposição ou um pedido dirigido ao ouvinte."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "앞 절에서 화자가 자신의 의지나 상황에 대한 판단을 말하고, 뒤 절에서 상대에게 요구·조언·지시를 한다.",
+        "en": "En la primera oración, el hablante expresa su intención o un juicio sobre la situación; en la segunda, pide, sugiere o indica algo al oyente.",
+        "es": "En la primera oración, el hablante expresa su intención o un juicio sobre la situación; en la segunda, pide, sugiere o indica algo al oyente.",
+        "fr": "Dans la première proposition, le locuteur exprime son intention ou un jugement sur la situation ; dans la seconde, il fait une demande, une suggestion ou donne une indication.",
+        "pt": "Na primeira oração, o falante apresenta a sua intenção ou um juízo sobre a situação; na segunda, faz um pedido, sugestão ou instrução ao ouvinte."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'내가 ~할 테니, 너는 ~해라'와 같은 구조로 자주 사용된다.",
+        "en": "Es común en estructuras como: «Yo haré ~, así que tú deberías ~».",
+        "es": "Es común en estructuras como: «Yo haré ~, así que tú deberías ~».",
+        "fr": "Elle apparaît souvent dans la structure : « Je vais ~, alors tu devrais ~ ». ",
+        "pt": "Surge frequentemente na estrutura: «Eu vou ~, por isso tu deves ~»."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "의지 표현일 때는 화자가 직접 할 행동을 강조한다.",
+        "en": "Cuando expresa intención, enfatiza una acción que el hablante realizará personalmente.",
+        "es": "Cuando expresa intención, enfatiza una acción que el hablante realizará personalmente.",
+        "fr": "Lorsqu’elle exprime une intention, elle met en avant une action que le locuteur fera lui-même.",
+        "pt": "Quando expressa intenção, enfatiza uma ação que o próprio falante realizará."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "추측의 의미일 때는 '아마 ~일 테니'처럼 상황에 대한 예상이 담긴다.",
+        "en": "Cuando expresa suposición, tiene el sentido de «probablemente ~» o «supongo que ~».",
+        "es": "Cuando expresa suposición, tiene el sentido de «probablemente ~» o «supongo que ~».",
+        "fr": "Lorsqu’elle exprime une supposition, elle signifie « il est probable que ~ » ou « je suppose que ~ ». ",
+        "pt": "Quando expressa suposição, tem o sentido de «provavelmente ~» ou «suponho que ~»."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "부탁이나 제안을 자연스럽게 전달할 때 자주 쓰인다.",
+        "en": "Se usa a menudo para hacer peticiones o sugerencias de manera natural y educada.",
+        "es": "Se usa a menudo para hacer peticiones o sugerencias de manera natural y educada.",
+        "fr": "Elle est fréquemment utilisée pour formuler des demandes ou suggestions de manière naturelle et polie.",
+        "pt": "É usada frequentemente para fazer pedidos ou sugestões de forma natural e educada."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "말하는 사람과 듣는 사람의 역할이 분명히 나뉘는 문맥에서 사용하기 좋다.",
+        "en": "Es adecuada en contextos donde los roles del hablante y del oyente están claramente divididos.",
+        "es": "Es adecuada en contextos donde los roles del hablante y del oyente están claramente divididos.",
+        "fr": "Elle convient aux contextes où les rôles du locuteur et de l’interlocuteur sont clairement séparés.",
+        "pt": "É adequada em contextos onde os papéis do falante e do ouvinte estão claramente definidos."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "상대의 반응을 유도하려는 의도가 포함되는 경우가 많다.",
+        "en": "A menudo incluye la intención de guiar o motivar la respuesta del oyente.",
+        "es": "A menudo incluye la intención de guiar o motivar la respuesta del oyente.",
+        "fr": "Elle porte souvent la nuance d’orienter ou de guider la réaction de l’interlocuteur.",
+        "pt": "Muitas vezes inclui a nuance de orientar ou motivar a resposta do ouvinte."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문어체보다 구어체에서 더 자주 쓰인다.",
+        "en": "Se usa con más frecuencia en el habla cotidiana que en textos formales.",
+        "es": "Se usa con más frecuencia en el habla cotidiana que en textos formales.",
+        "fr": "Elle est plus courante à l’oral qu’à l’écrit.",
+        "pt": "É mais comum na língua falada do que na escrita."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "상대가 해야 하는 행동이 뒤 절에서 명확하게 나타나야 자연스럽다.",
+        "en": "Para que suene natural, la segunda oración debe indicar claramente lo que el oyente debe hacer.",
+        "es": "Para que suene natural, la segunda oración debe indicar claramente lo que el oyente debe hacer.",
+        "fr": "Pour un usage naturel, la seconde proposition doit préciser clairement ce que l’interlocuteur doit faire.",
+        "pt": "Para soar natural, a segunda oração deve indicar claramente o que o ouvinte deve fazer."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "내가 설명할 테니 잘 들어.",
+        "en": "Yo lo explicaré, así que escucha con atención.",
+        "es": "Yo lo explicaré, así que escucha con atención.",
+        "fr": "Je vais expliquer, alors écoute bien.",
+        "pt": "Vou explicar, por isso ouve com atenção."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "시간이 없을 테니 서둘러.",
+        "en": "No tenemos mucho tiempo, así que date prisa.",
+        "es": "No tenemos mucho tiempo, así que date prisa.",
+        "fr": "Nous n’avons pas beaucoup de temps, alors dépêche-toi.",
+        "pt": "Não temos muito tempo, por isso despacha-te."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "내가 먼저 가볼 테니 너는 여기 있어.",
+        "en": "Yo iré primero, así que tú quédate aquí.",
+        "es": "Yo iré primero, así que tú quédate aquí.",
+        "fr": "Je vais y aller en premier, alors reste ici.",
+        "pt": "Vou primeiro, por isso fica aqui."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "비가 올 테니 우산 가져가.",
+        "en": "Va a llover, así que lleva un paraguas.",
+        "es": "Va a llover, así que lleva un paraguas.",
+        "fr": "Il va pleuvoir, alors prends un parapluie.",
+        "pt": "Vai chover, por isso leva um guarda-chuva."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "회의가 길어질 테니 먼저 점심 먹어.",
+        "en": "La reunión será larga, así que almuerza antes.",
+        "es": "La reunión será larga, así que almuerza antes.",
+        "fr": "La réunion sera longue, alors déjeune d’abord.",
+        "pt": "A reunião vai ser longa, por isso almoça primeiro."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "금방 끝날 테니 기다려.",
+        "en": "Terminaré pronto, así que espérame.",
+        "es": "Terminaré pronto, así que espérame.",
+        "fr": "Je finirai bientôt, alors attends-moi.",
+        "pt": "Vou terminar em breve, por isso espera por mim."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "내가 확인해 볼 테니 잠깐만 기다려.",
+        "en": "Lo revisaré, así que espera un momento.",
+        "es": "Lo revisaré, así que espera un momento.",
+        "fr": "Je vais vérifier, alors attends un instant.",
+        "pt": "Vou verificar, por isso espera um momento."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "피곤할 테니 일찍 쉬어.",
+        "en": "Debes de estar cansado, así que descansa temprano.",
+        "es": "Debes de estar cansado, así que descansa temprano.",
+        "fr": "Tu dois être fatigué, alors repose-toi tôt.",
+        "pt": "Deves estar cansado, por isso descansa cedo."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "차가 막힐 테니 지하철 타는 게 좋겠다.",
+        "en": "Habrá mucho tráfico, así que será mejor tomar el metro.",
+        "es": "Habrá mucho tráfico, así que será mejor tomar el metro.",
+        "fr": "Il y aura beaucoup de circulation, alors il vaut mieux prendre le métro.",
+        "pt": "Vai haver muito trânsito, por isso é melhor apanhar o metro."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "내가 다시 연락할 테니 걱정하지 마.",
+        "en": "Volveré a contactarte, así que no te preocupes.",
+        "es": "Volveré a contactarte, así que no te preocupes.",
+        "fr": "Je te recontacterai, alors ne t’inquiète pas.",
+        "pt": "Vou contactar-te novamente, por isso não te preocupes."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "곧 닫을 테니 빨리 들어와.",
+        "en": "Cerrarán pronto, así que entra rápido.",
+        "es": "Cerrarán pronto, así que entra rápido.",
+        "fr": "Ils vont bientôt fermer, alors entre vite.",
+        "pt": "Vão fechar em breve, por isso entra rapidamente."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "기온이 떨어질 테니 따뜻하게 입어.",
+        "en": "La temperatura bajará, así que vístete abrigado.",
+        "es": "La temperatura bajará, así que vístete abrigado.",
+        "fr": "La température va baisser, alors habille-toi chaudement.",
+        "pt": "A temperatura vai descer, por isso veste-te bem."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "내가 자료를 정리해 둘 테니 너는 발표만 준비해.",
+        "en": "Organizaré el material, así que tú solo prepara la presentación.",
+        "es": "Organizaré el material, así que tú solo prepara la presentación.",
+        "fr": "Je vais organiser les documents, alors prépare simplement la présentation.",
+        "pt": "Vou organizar o material, por isso prepara apenas a apresentação."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "너는 먼저 자리 잡아, 나는 계산하고 갈 테니.",
+        "en": "Tú consigue un asiento primero; yo pagaré y te alcanzo.",
+        "es": "Tú consigue un asiento primero; yo pagaré y te alcanzo.",
+        "fr": "Trouve une place d’abord ; je paierai et je te rejoindrai.",
+        "pt": "Arranja um lugar primeiro; eu pago e vou ter contigo."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "오늘은 바쁠 테니 미뤄두는 게 좋겠어.",
+        "en": "Hoy estaremos ocupados, así que es mejor posponerlo.",
+        "es": "Hoy estaremos ocupados, así que es mejor posponerlo.",
+        "fr": "On sera occupés aujourd’hui, alors il vaut mieux remettre ça à plus tard.",
+        "pt": "Hoje vamos estar ocupados, por isso é melhor adiar."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그는 곧 도착할 테니 조금만 더 기다리자.",
+        "en": "Él llegará pronto, así que esperemos un poco más.",
+        "es": "Él llegará pronto, así que esperemos un poco más.",
+        "fr": "Il va bientôt arriver, alors attendons encore un peu.",
+        "pt": "Ele vai chegar em breve, por isso esperemos mais um pouco."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "사람이 많을 테니 미리 예약하는 게 안전해.",
+        "en": "Habrá mucha gente, así que reservar con anticipación es más seguro.",
+        "es": "Habrá mucha gente, así que reservar con anticipación es más seguro.",
+        "fr": "Il y aura beaucoup de monde, alors réserver à l’avance est plus sûr.",
+        "pt": "Vai haver muita gente, por isso reservar com antecedência é mais seguro."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "잘 모를 테니 설명을 다시 한 번 해 줄게.",
+        "en": "Puede que no lo entiendas bien, así que te lo explicaré otra vez.",
+        "es": "Puede que no lo entiendas bien, así que te lo explicaré otra vez.",
+        "fr": "Tu risques de ne pas bien comprendre, alors je vais réexpliquer.",
+        "pt": "Talvez não percebas bem, por isso vou explicar novamente."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "내가 사진을 보낼 테니 확인해 줘.",
+        "en": "Te enviaré la foto, así que revísala por favor.",
+        "es": "Te enviaré la foto, así que revísala por favor.",
+        "fr": "Je t’enverrai la photo, alors vérifie-la s’il te plaît.",
+        "pt": "Vou enviar-te a fotografia, por isso verifica-a, por favor."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "추울 테니 창문 좀 닫아 줘.",
+        "en": "Hará frío, así que cierra la ventana.",
+        "es": "Hará frío, así que cierra la ventana.",
+        "fr": "Il fera froid, alors ferme la fenêtre.",
+        "pt": "Vai estar frio, por isso fecha a janela."
+      }
+    }
+  ]
+}

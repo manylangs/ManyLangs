@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a2",
+    "id": "004"
+  },
+  "title": {
+    "target": "약속 잡기",
+    "en": "Making Appointments",
+    "es": "Concertar citas",
+    "fr": "Prise de rendez-vous",
+    "pt": "Marcar compromissos"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "내일 시간 괜찮으세요?",
+            "en": "Are you free tomorrow?",
+            "es": "¿Estás libre mañana?",
+            "fr": "Tu es libre demain ?",
+            "pt": "Estás livre amanhã?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 내일은 좀 여유 있어요!",
+            "en": "Yes, I have some time tomorrow!",
+            "es": "Sí, mañana tengo algo de tiempo.",
+            "fr": "Oui, j’ai un peu de temps demain !",
+            "pt": "Sim, amanhã tenho algum tempo!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 오후 2시는 어때요?",
+            "en": "Then how about 2 p.m.?",
+            "es": "Entonces, ¿qué tal a las 2?",
+            "fr": "Alors, que dirais-tu de 14h ?",
+            "pt": "Então… que tal às 14h?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오, 2시 딱 좋아요!",
+            "en": "Oh, 2 p.m. sounds perfect!",
+            "es": "Oh, las 2 me parecen perfectas.",
+            "fr": "Oh, 14h c’est parfait !",
+            "pt": "Ah, às 14h está ótimo!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요! 2시에 뵐게요!",
+            "en": "Great! See you at 2!",
+            "es": "¡Perfecto! ¡Nos vemos a las 2!",
+            "fr": "Super ! À 14h alors !",
+            "pt": "Perfeito! Vejo-te às 14h!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 약속해요!",
+            "en": "Alright, it’s a plan!",
+            "es": "De acuerdo, ¡queda hecho!",
+            "fr": "D’accord, c’est noté !",
+            "pt": "Combinado! Fica marcado!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이번 주에 잠깐 시간 괜찮으세요?",
+            "en": "Do you have time sometime this week?",
+            "es": "¿Tienes un rato esta semana?",
+            "fr": "As-tu un moment cette semaine ?",
+            "pt": "Tens um tempinho esta semana?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "금요일 오후는 비어 있어요.",
+            "en": "I’m free on Friday afternoon.",
+            "es": "Estoy libre el viernes por la tarde.",
+            "fr": "Je suis libre vendredi après-midi.",
+            "pt": "Estou livre na sexta à tarde."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오! 그 시간 좋아요!",
+            "en": "Oh, that time works well!",
+            "es": "¡Ah, genial! Esa hora me viene bien.",
+            "fr": "Ah super, cette heure me va !",
+            "pt": "Ah, ótimo! Essa hora dá-me jeito!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 금요일로 해요!",
+            "en": "Great! Friday sounds good!",
+            "es": "Perfecto, ¡viernes está bien!",
+            "fr": "Parfait ! Vendredi ça me va !",
+            "pt": "Perfeito! Sexta está bem!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 카페에서 만나요!",
+            "en": "Then let’s meet at the café!",
+            "es": "Entonces, ¡nos vemos en la cafetería!",
+            "fr": "Alors retrouvons-nous au café !",
+            "pt": "Então encontramos-nos no café!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 카페에서 봬요!",
+            "en": "Okay, see you at the café!",
+            "es": "Vale, ¡nos vemos en la cafetería!",
+            "fr": "Très bien, à tout à l’heure au café !",
+            "pt": "Certo! Vejo-te no café!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "다음 주에 일정 조율할 수 있을까요?",
+            "en": "Can we adjust our schedule next week?",
+            "es": "¿Podemos ajustar nuestra cita para la próxima semana?",
+            "fr": "Peut-on ajuster notre rendez-vous la semaine prochaine ?",
+            "pt": "Podemos ajustar a nossa marcação para a próxima semana?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 다음 주 수요일 비어 있어요.",
+            "en": "Yes! I’m free next Wednesday.",
+            "es": "Sí, el miércoles próximo estoy libre.",
+            "fr": "Oui ! Je suis libre mercredi prochain.",
+            "pt": "Sim, estou livre na próxima quarta."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 수요일 괜찮아요!",
+            "en": "Oh, Wednesday works for me!",
+            "es": "¡Ah, perfecto! El miércoles me va bien.",
+            "fr": "Ah super, mercredi me convient !",
+            "pt": "Ah, ótimo! Quarta-feira dá-me jeito!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도 오후가 좋네요!",
+            "en": "The afternoon works for me too!",
+            "es": "A mí también me va bien la tarde.",
+            "fr": "L’après-midi me va aussi !",
+            "pt": "À tarde também me dá bem!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 오후에 만나는 걸로 할게요!",
+            "en": "Then let’s meet in the afternoon!",
+            "es": "Entonces, ¡quedemos por la tarde!",
+            "fr": "Alors voyons-nous l’après-midi !",
+            "pt": "Então vemos-nos à tarde!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 일정 잡아둘게요!",
+            "en": "Great, I’ll note it down!",
+            "es": "Genial, ¡lo apunto en mi agenda!",
+            "fr": "Parfait, je l’ajoute à mon agenda !",
+            "pt": "Perfeito, já anoto isso!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 오늘 바로 만날 수 있을까요?",
+            "en": "Is it possible to meet today?",
+            "es": "¿Podemos vernos hoy?",
+            "fr": "Pouvons-nous nous voir aujourd’hui ?",
+            "pt": "Conseguimos encontrar-nos hoje?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 지금은 괜찮아요.",
+            "en": "Yes, I’m available right now.",
+            "es": "Sí, estoy disponible ahora.",
+            "fr": "Oui, je suis disponible maintenant.",
+            "pt": "Sim, estou disponível agora."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오! 다행이에요! 그럼 어디에서 볼까요?",
+            "en": "Oh, good! Where should we meet?",
+            "es": "¡Genial! ¿Dónde nos encontramos?",
+            "fr": "Ah génial ! Où aimerais-tu qu’on se retrouve ?",
+            "pt": "Ah, que bom! Onde queres encontrar-te?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "근처 공원은 어때요?",
+            "en": "How about the park nearby?",
+            "es": "¿Qué tal el parque de aquí cerca?",
+            "fr": "On peut se retrouver au parc près d’ici ?",
+            "pt": "Que tal o parque aqui perto?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요! 지금 바로 갈게요!",
+            "en": "Great! I’ll head over now!",
+            "es": "Perfecto, ¡voy para allá ahora mismo!",
+            "fr": "Parfait ! J’y vais tout de suite !",
+            "pt": "Perfeito! Vou já para lá!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 거기서 봐요!",
+            "en": "Sounds good! See you there!",
+            "es": "Vale, ¡nos vemos allí!",
+            "fr": "Très bien ! À tout de suite là-bas !",
+            "pt": "Ótimo! Vejo-te lá!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "회의 일정 다시 잡을 수 있을까요?",
+            "en": "Can we reschedule the meeting?",
+            "es": "¿Podemos reprogramar la reunión?",
+            "fr": "Peut-on reprogrammer la réunion ?",
+            "pt": "Podemos reagendar a reunião?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 조금 조정해야 할 것 같아요.",
+            "en": "Yes, I think we need to adjust it.",
+            "es": "Sí, creo que deberíamos moverla.",
+            "fr": "Oui, on devrait décaler un peu.",
+            "pt": "Sim, acho que devemos ajustar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 4시 괜찮으세요?",
+            "en": "Then is 4 p.m. okay for you?",
+            "es": "Entonces, ¿te va bien a las 4?",
+            "fr": "Alors, 16h te va ?",
+            "pt": "Então… às 16h está bem?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "4시면 충분해요!",
+            "en": "4 p.m. is perfect!",
+            "es": "Las 4 me vienen muy bien.",
+            "fr": "16h, c’est parfait pour moi !",
+            "pt": "Às 16h dá perfeitamente."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요! 4시로 변경할게요.",
+            "en": "Great! I’ll change it to 4.",
+            "es": "¡Perfecto! La cambio a las 4.",
+            "fr": "Super ! Je modifie l’horaire.",
+            "pt": "Perfeito! Mudo para as 16h."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "감사해요! 그때 봬요!",
+            "en": "Thanks! See you then!",
+            "es": "Gracias, ¡nos vemos entonces!",
+            "fr": "Merci ! À ce moment-là !",
+            "pt": "Obrigado! Até lá!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "전화 상담 예약 가능할까요?",
+            "en": "Can I make a phone appointment?",
+            "es": "¿Puedo reservar una llamada?",
+            "fr": "Puis-je prendre un rendez-vous téléphonique ?",
+            "pt": "Posso marcar uma chamada?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 오늘 저녁 7시는 괜찮아요?",
+            "en": "Sure! Is 7 p.m. okay today?",
+            "es": "Claro, ¿te va bien a las 7 esta tarde?",
+            "fr": "Bien sûr ! Est-ce que 19h te convient aujourd’hui ?",
+            "pt": "Claro! 19h funciona para ti hoje?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오! 그 시간 괜찮아요!",
+            "en": "Oh! That time works for me!",
+            "es": "¡Ah, perfecto! Esa hora me viene bien.",
+            "fr": "Ah parfait ! Cette heure me convient !",
+            "pt": "Ah, ótimo! Essa hora dá-me jeito!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 7시로 할게요!",
+            "en": "Great! Let’s do 7 p.m.!",
+            "es": "Genial, ¡hagamos a las 7!",
+            "fr": "Super ! 19h, c’est très bien !",
+            "pt": "Perfeito, façamos às 19h!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 그때 연락드릴게요!",
+            "en": "Okay! I’ll call you then!",
+            "es": "Vale, ¡te llamaré a esa hora!",
+            "fr": "Très bien ! Je t’appellerai à ce moment-là !",
+            "pt": "Então ligo-te nessa hora!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 기다릴게요!",
+            "en": "Alright, I’ll be waiting!",
+            "es": "De acuerdo, ¡estaré esperando!",
+            "fr": "D’accord, je t’attendrai !",
+            "pt": "Está bem! Vou esperar pela tua chamada!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "내일 오전도 괜찮으세요?",
+            "en": "Is tomorrow morning okay for you?",
+            "es": "¿Te viene bien mañana por la mañana?",
+            "fr": "Est-ce que demain matin te va ?",
+            "pt": "Amanhã de manhã dá-te jeito?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오전엔 회의가 있어요.",
+            "en": "I have a meeting in the morning.",
+            "es": "Tengo una reunión por la mañana.",
+            "fr": "J’ai une réunion le matin.",
+            "pt": "De manhã tenho outra reunião."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오! 오후도 괜찮아요!",
+            "en": "Oh, I see! Is the afternoon okay?",
+            "es": "Ah, entiendo. ¿Y por la tarde?",
+            "fr": "Ah d’accord ! Et l’après-midi ?",
+            "pt": "Ah, entendi! E de tarde?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오후는 비어 있어요!",
+            "en": "The afternoon is free for me!",
+            "es": "Por la tarde estoy libre.",
+            "fr": "L’après-midi, je suis libre !",
+            "pt": "À tarde estou livre!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 오후 1시에 뵐게요!",
+            "en": "Perfect! I’ll see you at 1 p.m.!",
+            "es": "¡Perfecto! ¡Nos vemos a la 1!",
+            "fr": "Parfait ! On se voit à 13h !",
+            "pt": "Perfeito! Vejo-te às 13h!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 오후 1시에 만나요!",
+            "en": "Great! See you at 1!",
+            "es": "¡Genial! ¡A la 1 entonces!",
+            "fr": "Super ! À 13h alors !",
+            "pt": "Ótimo! Às 13h então!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "다음에 언제 다시 만날까요?",
+            "en": "When should we meet again?",
+            "es": "¿Cuándo nos vemos otra vez?",
+            "fr": "Quand pourrions-nous nous revoir ?",
+            "pt": "Quando nos encontramos outra vez?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 다음 주가 더 여유 있어요.",
+            "en": "I’ll be more free next week.",
+            "es": "La próxima semana tendré más tiempo.",
+            "fr": "Je serai plus libre la semaine prochaine.",
+            "pt": "Na próxima semana tenho mais disponibilidade."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 다음 주 초는 어때요?",
+            "en": "Then how about early next week?",
+            "es": "Entonces, ¿qué tal a principios de la próxima semana?",
+            "fr": "Alors, que dirais-tu du début de la semaine prochaine ?",
+            "pt": "Então que tal no início da próxima semana?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "월요일이나 화요일이 괜찮아요!",
+            "en": "Monday or Tuesday should work!",
+            "es": "Me va bien lunes o martes.",
+            "fr": "Lundi ou mardi devraient aller !",
+            "pt": "Segunda ou terça deve funcionar!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요! 일정 잡아둘게요!",
+            "en": "Great! I’ll set the schedule!",
+            "es": "Perfecto, ¡reservaré ese tiempo!",
+            "fr": "Parfait ! Je bloque ce créneau !",
+            "pt": "Ótimo! Vou reservar esse horário!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 정해지면 알려드릴게요!",
+            "en": "Okay! I’ll let you know once it’s fixed!",
+            "es": "Muy bien, ¡te aviso cuando esté confirmado!",
+            "fr": "Très bien ! Je te confirme dès que possible !",
+            "pt": "Certo! Aviso-te assim que confirmar!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 5분 뒤에 통화 가능하세요?",
+            "en": "Can you take a call in five minutes?",
+            "es": "¿Puedes hablar dentro de cinco minutos?",
+            "fr": "Peux-tu parler dans cinq minutes ?",
+            "pt": "Consegues atender uma chamada daqui a cinco minutos?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 지금 정리만 하면 돼요.",
+            "en": "Yes! I just need to finish something.",
+            "es": "Sí, solo necesito terminar algo.",
+            "fr": "Oui ! Je termine juste quelque chose.",
+            "pt": "Sim! Só preciso terminar algo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오! 다행이에요!",
+            "en": "Oh great!",
+            "es": "¡Ah, genial!",
+            "fr": "Ah super !",
+            "pt": "Ah, ótimo!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 준비해둘게요!",
+            "en": "Okay! I’ll get ready!",
+            "es": "Vale, ¡me preparo!",
+            "fr": "D’accord ! Je me prépare !",
+            "pt": "Certo! Vou preparar-me!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 5분 뒤에 전화드릴게요!",
+            "en": "Then I’ll call you in five minutes!",
+            "es": "Entonces te llamo en cinco minutos.",
+            "fr": "Alors je t’appelle dans cinq minutes !",
+            "pt": "Então ligo-te dentro de cinco minutos!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 기다릴게요!",
+            "en": "Sounds good! I’ll wait!",
+            "es": "Perfecto, ¡espero tu llamada!",
+            "fr": "Parfait, j’attends ton appel !",
+            "pt": "Perfeito! Fico à espera!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오늘 일정 괜찮으셨어요?",
+            "en": "How was your schedule today?",
+            "es": "¿Cómo estuvo tu día hoy?",
+            "fr": "Ta journée s’est bien passée ?",
+            "pt": "Como correu o teu dia hoje?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 조금 정신없었어요.",
+            "en": "It was a bit hectic.",
+            "es": "Fue un poco agitado.",
+            "fr": "C’était un peu chargé.",
+            "pt": "Foi um pouco cansativo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 그럴 수 있죠! 고생 많으셨어요!",
+            "en": "Oh, that happens! You still did well!",
+            "es": "Oh, suele pasar. ¡Aun así lo hiciste bien!",
+            "fr": "Ah, ça arrive ! Tu t’en es bien sorti !",
+            "pt": "Ah, acontece! Fizeste o teu melhor!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 그래도 괜찮아요!",
+            "en": "Yeah, but I’m okay now.",
+            "es": "Sí, pero ya estoy mejor.",
+            "fr": "Oui, mais maintenant ça va mieux.",
+            "pt": "Sim, mas agora estou melhor."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 내일은 조금 더 여유 있길 바랄게요!",
+            "en": "I hope tomorrow is a bit easier for you!",
+            "es": "¡Ojalá mañana sea más tranquilo!",
+            "fr": "J’espère que demain sera un peu plus léger !",
+            "pt": "Espero que amanhã seja mais leve!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "감사해요! 내일 더 힘낼게요!",
+            "en": "Thank you! I’ll do my best tomorrow!",
+            "es": "¡Gracias! Mañana daré lo mejor.",
+            "fr": "Merci ! Je ferai de mon mieux demain !",
+            "pt": "Obrigado! Vou dar o meu melhor amanhã!"
+          }
+        }
+      ]
+    }
+  ]
+}

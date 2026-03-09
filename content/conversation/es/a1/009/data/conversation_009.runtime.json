@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a1",
+    "id": "009"
+  },
+  "title": {
+    "target": "음식 주문하기",
+    "en": "Ordering Food",
+    "es": "Pedir comida",
+    "fr": "Commander de la nourriture",
+    "pt": "Pedir comida"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "안녕하세요, 추천 메뉴 뭐가 있어요?",
+            "en": "Hi, do you have a recommended dish?",
+            "es": "Hola, ¿me recomienda algún plato?",
+            "fr": "Bonjour, vous avez un plat recommandé ?",
+            "pt": "Olá, tem algum prato recomendado?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오늘은 이 파스타가 가장 인기 있어요!",
+            "en": "Yes, this pasta is the most popular today!",
+            "es": "Sí, esta pasta es la más popular hoy.",
+            "fr": "Oui, ces pâtes sont les plus populaires aujourd’hui !",
+            "pt": "Sim, esta massa é a mais popular hoje!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 맛있겠다! 많이 매워요?",
+            "en": "Oh, that sounds good! Is it very spicy?",
+            "es": "Oh, ¡suena delicioso! ¿Es muy picante?",
+            "fr": "Ah, ça a l’air délicieux ! C’est très épicé ?",
+            "pt": "Ah, parece delicioso! É muito picante?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아니요, 생각보다 안 매워요.",
+            "en": "No, it’s not too spicy.",
+            "es": "No, no es muy picante.",
+            "fr": "Non, ce n’est pas trop épicé.",
+            "pt": "Não, não é muito picante."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요, 그걸로 주세요.",
+            "en": "Great, I’ll take that.",
+            "es": "Genial, voy a pedir ese.",
+            "fr": "Super, je vais prendre ça.",
+            "pt": "Ótimo, vou querer esse."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 하나 바로 준비할게요!",
+            "en": "Okay, I’ll prepare one for you!",
+            "es": "Perfecto, lo preparo ahora mismo.",
+            "fr": "Très bien, je vous prépare une portion.",
+            "pt": "Muito bem, já preparo um para si."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이 수프는 어떤 맛이에요?",
+            "en": "What does this soup taste like?",
+            "es": "¿A qué sabe esta sopa?",
+            "fr": "Quel goût a cette soupe ?",
+            "pt": "Qual é o sabor desta sopa?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "담백하고 따뜻한 맛이에요.",
+            "en": "It’s mild and warm.",
+            "es": "Es suave y calentita.",
+            "fr": "Elle est douce et bien chaude.",
+            "pt": "É suave e bem quente."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 깔끔한 맛 좋네요! 양은 많아요?",
+            "en": "Oh, a clean flavor sounds nice! Is the portion big?",
+            "es": "Oh, un sabor suave suena bien. ¿La ración es grande?",
+            "fr": "Oh, un goût léger, ça me plaît ! La portion est grande ?",
+            "pt": "Ah, um sabor leve parece ótimo. A porção é grande?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 한 그릇이면 충분히 배불러요.",
+            "en": "Yes, one bowl is filling enough.",
+            "es": "Sí, un bol llena bastante.",
+            "fr": "Oui, un bol suffit pour être rassasié.",
+            "pt": "Sim, um prato enche bastante."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 수프 하나 주세요.",
+            "en": "Then I’ll have one soup, please.",
+            "es": "Entonces, quiero una sopa.",
+            "fr": "D’accord, je vais prendre une soupe.",
+            "pt": "Então quero uma sopa, por favor."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 바로 준비할게요!",
+            "en": "Alright, I’ll get it ready!",
+            "es": "Muy bien, ya la preparo.",
+            "fr": "Très bien, je vous la prépare.",
+            "pt": "Muito bem, já trato disso."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 덜 매운 메뉴도 있어요?",
+            "en": "Do you have something less spicy?",
+            "es": "¿Tiene algo menos picante?",
+            "fr": "Vous avez un plat moins épicé ?",
+            "pt": "Há algo menos picante?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 이 요리는 거의 안 매워요.",
+            "en": "Yes, this one is almost not spicy at all.",
+            "es": "Sí, este casi no pica nada.",
+            "fr": "Oui, ce plat-là n’est presque pas épicé du tout.",
+            "pt": "Sim, este quase não é picante."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 그건 매운맛이 거의 없어요?",
+            "en": "Oh, so that dish is barely spicy?",
+            "es": "Ah, ¿ese plato casi no pica?",
+            "fr": "Ah, celui-là n’est presque pas épicé ?",
+            "pt": "Ah, esse prato quase não pica?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 어린아이도 잘 먹어요.",
+            "en": "Even kids enjoy it.",
+            "es": "Incluso los niños lo comen sin problema.",
+            "fr": "Même les enfants le mangent sans problème.",
+            "pt": "Até as crianças comem sem problema."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋네요, 하나 부탁드릴게요.",
+            "en": "Nice, I’ll order one.",
+            "es": "Perfecto, quiero uno.",
+            "fr": "Parfait, j’en prendrai un.",
+            "pt": "Perfeito, quero um."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 바로 해드릴게요!",
+            "en": "Sure, I’ll make one for you!",
+            "es": "Muy bien, lo preparo enseguida.",
+            "fr": "Très bien, je vous prépare ça.",
+            "pt": "Certo, preparo já."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이거 포장도 되나요?",
+            "en": "Can I get this to go?",
+            "es": "¿Puedo llevar esto para llevar?",
+            "fr": "Est-ce que je peux prendre ça à emporter ?",
+            "pt": "Posso levar isto para fora?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 포장 가능합니다.",
+            "en": "Yes, we can pack it.",
+            "es": "Sí, se puede llevar.",
+            "fr": "Oui, c’est possible.",
+            "pt": "Sim, pode levar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오 좋네요! 포장하면 시간 오래 걸려요?",
+            "en": "Oh, great! Does it take long to pack?",
+            "es": "Ah, ¡qué bien! ¿Tarda mucho en prepararse?",
+            "fr": "Ah super ! Ça prend longtemps à emballer ?",
+            "pt": "Ah, ótimo! Demora muito a embalar?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아니요, 금방 돼요.",
+            "en": "No, it only takes a moment.",
+            "es": "No, tardamos muy poco.",
+            "fr": "Non, ça prend juste un petit moment.",
+            "pt": "Não, é rápido."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 그럼 포장해 주세요.",
+            "en": "Okay, please pack it for me.",
+            "es": "Vale, por favor póngalo para llevar.",
+            "fr": "D’accord, emballez-le s’il vous plaît.",
+            "pt": "Então, por favor, faça para levar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "금방 준비해드릴게요!",
+            "en": "I’ll prepare it right away!",
+            "es": "Lo preparo ahora mismo.",
+            "fr": "Très bien, je vous l’emballe tout de suite.",
+            "pt": "Preparo já o seu pedido."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "음료는 뭐가 인기예요?",
+            "en": "What drinks are popular here?",
+            "es": "¿Qué bebidas son populares aquí?",
+            "fr": "Quelles boissons sont populaires ici ?",
+            "pt": "Quais bebidas são populares aqui?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "요즘은 레몬티가 많이 나가요.",
+            "en": "Lemon tea is very popular these days.",
+            "es": "El té de limón es muy popular estos días.",
+            "fr": "Le thé au citron est très demandé ces jours-ci.",
+            "pt": "O chá de limão é muito pedido ultimamente."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 상큼한 맛 좋아해요! 얼음은 적게 넣어주세요.",
+            "en": "Oh, I like refreshing things! Can you put less ice?",
+            "es": "Oh, me gusta lo refrescante. ¿Puede poner menos hielo?",
+            "fr": "Oh, j’aime les choses rafraîchissantes ! Moins de glace, s’il vous plaît.",
+            "pt": "Ah, adoro bebidas frescas! Pode pôr menos gelo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 얼음 적게 해서 드릴게요.",
+            "en": "Sure, I’ll put less ice for you.",
+            "es": "Claro, pondré menos hielo.",
+            "fr": "Bien sûr, je mets moins de glace.",
+            "pt": "Claro, ponho menos gelo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요, 그걸로 부탁드릴게요.",
+            "en": "Great, I’ll take that one.",
+            "es": "Genial, quiero esa.",
+            "fr": "D’accord, je prendrai celle-là.",
+            "pt": "Ótimo, quero essa."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 하나 준비할게요!",
+            "en": "Alright, I’ll make one!",
+            "es": "Perfecto, la preparo.",
+            "fr": "Très bien, je vous prépare ça.",
+            "pt": "Muito bem, preparo já."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 바로 먹을 수 있어요?",
+            "en": "Will the food be ready soon?",
+            "es": "¿La comida estará lista pronto?",
+            "fr": "Le plat sera prêt bientôt ?",
+            "pt": "A comida vai ficar pronta em breve?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 지금 거의 다 됐어요.",
+            "en": "Yes, it’s almost done.",
+            "es": "Sí, ya casi está lista.",
+            "fr": "Oui, c’est presque fini.",
+            "pt": "Sim, está quase pronto."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 곧 나온다니 다행이네요!",
+            "en": "Oh, good! I’m glad it won’t take long.",
+            "es": "Oh, ¡qué bien! Me alegra que no tarde mucho.",
+            "fr": "Ah, super ! Je suis content que ça ne prenne pas longtemps.",
+            "pt": "Ah, ainda bem! Fico contente que não demore."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "5분 정도면 나올 거예요.",
+            "en": "It’ll be out in about five minutes.",
+            "es": "Saldrá en unos cinco minutos.",
+            "fr": "Dans environ cinq minutes.",
+            "pt": "Sai dentro de cinco minutos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요, 조금만 기다릴게요.",
+            "en": "Okay, I’ll wait a little.",
+            "es": "Vale, esperaré un momento.",
+            "fr": "Très bien, j’attends un peu.",
+            "pt": "Tudo bem, espero um bocadinho."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "금방 드릴게요!",
+            "en": "I’ll bring it to you soon!",
+            "es": "Se la llevo enseguida.",
+            "fr": "Je vous l’apporte dès que c’est prêt.",
+            "pt": "Já lhe trago assim que estiver pronto."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "사이드 메뉴는 뭐가 있어요?",
+            "en": "What side dishes do you have?",
+            "es": "¿Qué acompañamientos tienen?",
+            "fr": "Quels accompagnements avez-vous ?",
+            "pt": "Que acompanhamentos têm?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "샐러드랑 감자튀김이 있어요.",
+            "en": "We have salad and fries.",
+            "es": "Tenemos ensalada y patatas fritas.",
+            "fr": "Nous avons une salade et des frites.",
+            "pt": "Temos salada e batatas fritas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 가볍게 먹기 좋겠네요! 양은 어떤가요?",
+            "en": "Oh, that sounds light! How big is the portion?",
+            "es": "Oh, suena ligero. ¿La ración es grande?",
+            "fr": "Oh, ça a l’air léger ! La portion est grande ?",
+            "pt": "Ah, parece leve! A porção é grande?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "적당해서 혼자 먹기 좋아요.",
+            "en": "It’s a good portion for one person.",
+            "es": "Es una ración adecuada para una persona.",
+            "fr": "C’est une portion idéale pour une personne.",
+            "pt": "É uma porção boa para uma pessoa."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 감자튀김 주세요.",
+            "en": "Then I’ll have the fries.",
+            "es": "Entonces quiero las patatas fritas.",
+            "fr": "Alors je vais prendre les frites.",
+            "pt": "Então quero as batatas fritas."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 바로 준비할게요!",
+            "en": "Alright, I’ll prepare that!",
+            "es": "Muy bien, lo preparo.",
+            "fr": "Très bien, je vous prépare ça.",
+            "pt": "Perfeito, preparo já."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이거 양이 많은 편인가요?",
+            "en": "Is this a large portion?",
+            "es": "¿Esta ración es grande?",
+            "fr": "La portion est grande ?",
+            "pt": "A porção é grande?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 꽤 푸짐한 편이에요.",
+            "en": "Yes, it’s pretty big.",
+            "es": "Sí, es bastante grande.",
+            "fr": "Oui, c’est assez généreux.",
+            "pt": "Sim, é bastante generosa."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 두 명도 먹을 수 있어요?",
+            "en": "Oh, two people can share it?",
+            "es": "Oh, ¿la pueden compartir dos personas?",
+            "fr": "Ah, deux personnes peuvent la partager ?",
+            "pt": "Ah, dá para duas pessoas?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 둘이서도 충분해요.",
+            "en": "Yes, it's enough for two people.",
+            "es": "Sí, es suficiente para dos.",
+            "fr": "Oui, c’est suffisant pour deux.",
+            "pt": "Sim, dá para duas pessoas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요! 친구랑 나눠 먹어야겠어요.",
+            "en": "Great! I’ll share it with my friend.",
+            "es": "Perfecto, la compartiré con un amigo.",
+            "fr": "Super ! Je vais la partager avec mon ami.",
+            "pt": "Perfeito, vou partilhar com um amigo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맛있게 드세요!",
+            "en": "Enjoy your meal!",
+            "es": "¡Buen provecho!",
+            "fr": "Bon appétit !",
+            "pt": "Bom apetite!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "여기 결제는 어떻게 해요?",
+            "en": "How do I pay here?",
+            "es": "¿Cómo se paga aquí?",
+            "fr": "Comment je paie ici ?",
+            "pt": "Como é que se paga aqui?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "카드, 현금 모두 가능해요.",
+            "en": "We take card and cash.",
+            "es": "Aceptamos tarjeta y efectivo.",
+            "fr": "Nous acceptons carte et espèces.",
+            "pt": "Aceitamos cartão e dinheiro."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 여러 가지 선택 가능하네요!",
+            "en": "Oh, nice! There are a lot of options.",
+            "es": "Oh, qué bien. Hay varias opciones.",
+            "fr": "Oh super ! Il y a plusieurs options.",
+            "pt": "Ah, ótimo! Há várias opções."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 요즘은 간편결제도 돼요.",
+            "en": "Yes, we also accept mobile payments.",
+            "es": "Sí, también funciona el pago móvil.",
+            "fr": "Oui, le paiement mobile fonctionne aussi.",
+            "pt": "Sim, também temos pagamento móvel."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 카드로 결제할게요.",
+            "en": "Okay, I’ll pay by card.",
+            "es": "Vale, pagaré con tarjeta.",
+            "fr": "D’accord, je paie par carte.",
+            "pt": "Então pago com cartão."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 카드 주세요!",
+            "en": "Sure, please hand me your card!",
+            "es": "Perfecto, deme su tarjeta.",
+            "fr": "Très bien, votre carte s’il vous plaît.",
+            "pt": "Certo, pode dar-me o cartão."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 리필도 돼요?",
+            "en": "Do you offer refills?",
+            "es": "¿Hacen recargas?",
+            "fr": "Vous faites des recharges ?",
+            "pt": "Fazem refill?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 일부 음료는 무료로 리필돼요.",
+            "en": "Yes, some drinks come with free refills.",
+            "es": "Sí, algunas bebidas tienen recarga gratis.",
+            "fr": "Oui, certains boissons incluent une recharge gratuite.",
+            "pt": "Sim, algumas bebidas têm refill grátis."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 무료 리필이군요? 좋네요!",
+            "en": "Oh, free refills? That’s nice!",
+            "es": "¿Recarga gratis? ¡Qué bien!",
+            "fr": "Ah, recharge gratuite ? C’est génial !",
+            "pt": "Ah, refill grátis? Que bom!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 부담 없이 말씀하세요.",
+            "en": "Yes, feel free to ask anytime.",
+            "es": "Sí, pida cuando quiera.",
+            "fr": "Oui, n’hésitez pas à demander.",
+            "pt": "Sim, peça sempre que precisar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 따뜻한 물로 리필 부탁드릴게요.",
+            "en": "Then I’d like a refill with hot water, please.",
+            "es": "Entonces quiero una recarga con agua caliente.",
+            "fr": "Alors je voudrais une recharge avec de l’eau chaude.",
+            "pt": "Então quero um refill com água quente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "따뜻한 물로 바로 가져다드릴게요!",
+            "en": "I’ll bring you hot water!",
+            "es": "Traigo el agua caliente enseguida.",
+            "fr": "Je vous apporte de l’eau chaude.",
+            "pt": "Trago a água quente já a seguir."
+          }
+        }
+      ]
+    }
+  ]
+}

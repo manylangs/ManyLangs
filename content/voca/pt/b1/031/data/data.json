@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "b1",
+    "id": "031"
+  },
+  "title": {
+    "target": "B1 — 사회•학교•기술 어휘",
+    "en": "B1 — Social, School, and Technology Vocabulary",
+    "es": "B1 — Vocabulario social, escolar y tecnológico",
+    "fr": "B1 — Vocabulaire social, scolaire et technologique",
+    "pt": "B1 — Vocabulário social, escolar e tecnológico"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "처리",
+        "en": "processing",
+        "es": "procesamiento",
+        "fr": "traitement",
+        "pt": "processamento"
+      },
+      "examples": [
+        {
+          "target": "데이터 처리 속도가 빨라졌어요.",
+          "en": "The data processing speed has improved.",
+          "es": "La velocidad de procesamiento de datos ha mejorado.",
+          "fr": "La vitesse de traitement des données s’est améliorée.",
+          "pt": "A velocidade de processamento de dados melhorou."
+        },
+        {
+          "target": "이 프로그램은 이미지 처리가 강력합니다.",
+          "en": "This program has powerful image processing.",
+          "es": "Este programa tiene un procesamiento de imágenes potente.",
+          "fr": "Ce programme possède un traitement d’image puissant.",
+          "pt": "Este programa tem um processamento de imagem poderoso."
+        },
+        {
+          "target": "처리 과정에서 오류가 발생했어요.",
+          "en": "An error occurred during the processing stage.",
+          "es": "Ocurrió un error durante la etapa de procesamiento.",
+          "fr": "Une erreur s’est produite lors de l’étape de traitement.",
+          "pt": "Ocorreu um erro durante a etapa de processamento."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "접속",
+        "en": "connection",
+        "es": "conexión",
+        "fr": "connexion",
+        "pt": "conexão"
+      },
+      "examples": [
+        {
+          "target": "인터넷 접속이 불안정합니다.",
+          "en": "The internet connection is unstable.",
+          "es": "La conexión a Internet es inestable.",
+          "fr": "La connexion Internet est instable.",
+          "pt": "A conexão à internet está instável."
+        },
+        {
+          "target": "계정 접속이 차단되었어요.",
+          "en": "Access to the account has been blocked.",
+          "es": "El acceso a la cuenta ha sido bloqueado.",
+          "fr": "L’accès au compte a été bloqué.",
+          "pt": "O acesso à conta foi bloqueado."
+        },
+        {
+          "target": "서버 접속 시간이 오래 걸립니다.",
+          "en": "Connecting to the server takes a long time.",
+          "es": "La conexión al servidor tarda mucho.",
+          "fr": "La connexion au serveur prend beaucoup de temps.",
+          "pt": "A conexão ao servidor demora muito."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "로딩",
+        "en": "loading",
+        "es": "carga",
+        "fr": "chargement",
+        "pt": "carregamento"
+      },
+      "examples": [
+        {
+          "target": "로딩 화면이 너무 오래 걸려요.",
+          "en": "The loading screen takes too long.",
+          "es": "La pantalla de carga tarda demasiado.",
+          "fr": "L’écran de chargement prend trop de temps.",
+          "pt": "A tela de carregamento demora demais."
+        },
+        {
+          "target": "영상 로딩이 아직 끝나지 않았어요.",
+          "en": "The video loading hasn’t finished yet.",
+          "es": "La carga del video aún no ha terminado.",
+          "fr": "Le chargement de la vidéo n’est pas encore terminé.",
+          "pt": "O carregamento do vídeo ainda não terminou."
+        },
+        {
+          "target": "로딩 오류로 페이지가 열리지 않습니다.",
+          "en": "Due to a loading error, the page won’t open.",
+          "es": "Debido a un error de carga, la página no se abre.",
+          "fr": "À cause d’une erreur de chargement, la page ne s’ouvre pas.",
+          "pt": "Por causa de um erro de carregamento, a página não abre."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "반응률",
+        "en": "response rate",
+        "es": "tasa de respuesta",
+        "fr": "taux de réponse",
+        "pt": "taxa de resposta"
+      },
+      "examples": [
+        {
+          "target": "설문 반응률이 예상보다 낮습니다.",
+          "en": "The survey response rate is lower than expected.",
+          "es": "La tasa de respuesta de la encuesta es más baja de lo esperado.",
+          "fr": "Le taux de réponse au sondage est plus faible que prévu.",
+          "pt": "A taxa de resposta da pesquisa está mais baixa do que o esperado."
+        },
+        {
+          "target": "캠페인의 반응률이 점점 올라가고 있어요.",
+          "en": "The campaign’s response rate is increasing.",
+          "es": "La tasa de respuesta de la campaña está aumentando.",
+          "fr": "Le taux de réponse de la campagne augmente.",
+          "pt": "A taxa de resposta da campanha está aumentando."
+        },
+        {
+          "target": "반응률을 높이기 위해 메시지를 수정했습니다.",
+          "en": "We modified the message to increase the response rate.",
+          "es": "Modificamos el mensaje para aumentar la tasa de respuesta.",
+          "fr": "Nous avons modifié le message pour augmenter le taux de réponse.",
+          "pt": "Modificamos a mensagem para aumentar a taxa de resposta."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "시청률",
+        "en": "viewership rating",
+        "es": "índice de audiencia",
+        "fr": "audience",
+        "pt": "índice de audiência"
+      },
+      "examples": [
+        {
+          "target": "그 프로그램의 시청률이 크게 상승했어요.",
+          "en": "The program’s viewership rating increased significantly.",
+          "es": "El índice de audiencia del programa aumentó significativamente.",
+          "fr": "L’audience de l’émission a fortement augmenté.",
+          "pt": "O índice de audiência do programa aumentou significativamente."
+        },
+        {
+          "target": "시청률 경쟁이 갈수록 치열해지고 있습니다.",
+          "en": "The competition for viewership ratings is becoming more intense.",
+          "es": "La competencia por la audiencia se vuelve cada vez más intensa.",
+          "fr": "La concurrence pour l’audience devient de plus en plus forte.",
+          "pt": "A competição por audiência está ficando cada vez mais intensa."
+        },
+        {
+          "target": "시청률이 낮아 프로그램이 폐지되었어요.",
+          "en": "The show was canceled due to low ratings.",
+          "es": "El programa fue cancelado por su baja audiencia.",
+          "fr": "L’émission a été annulée en raison de sa faible audience.",
+          "pt": "O programa foi cancelado por causa da baixa audiência."
+        }
+      ]
+    }
+  ]
+}

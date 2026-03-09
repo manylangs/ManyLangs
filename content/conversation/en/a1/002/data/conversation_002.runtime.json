@@ -1,0 +1,667 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a1",
+    "id": "002"
+  },
+  "title": {
+    "target": "자기소개",
+    "en": "Self_Introduction",
+    "es": "Presentación_personal",
+    "fr": "Présentation_personnelle",
+    "pt": "Apresentação_pessoal"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "안녕하세요! 저는 민서예요.",
+            "en": "Hi! I'm Minseo.",
+            "es": "¡Hola! Soy Minseo.",
+            "fr": "Salut ! Je m'appelle Minseo.",
+            "pt": "Olá! Eu sou a Minseo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "안녕하세요! 저는 나영이에요.",
+            "en": "Hi! I'm Nayoung.",
+            "es": "¡Hola! Yo soy Nayoung.",
+            "fr": "Salut ! Moi, c'est Nayoung.",
+            "pt": "Olá! Eu sou o Nayoung."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네! 한국에서 왔어요.",
+            "en": "Yes! I'm from Korea.",
+            "es": "¡Sí! Soy de Corea.",
+            "fr": "Oui ! Je viens de Corée.",
+            "pt": "Sim! Sou da Coreia."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오, 그렇군요! 반가워요.",
+            "en": "Oh really? Nice to meet you.",
+            "es": "¿Ah sí? Mucho gusto.",
+            "fr": "Ah vraiment ? Enchanté(e).",
+            "pt": "Ah, é? Prazer!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저도 만나서 정말 반가워요!",
+            "en": "Nice to meet you too!",
+            "es": "¡Mucho gusto también!",
+            "fr": "Ravi(e) de te rencontrer aussi !",
+            "pt": "Prazer em conhecer-te também!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "우리 앞으로 자주 봐요!",
+            "en": "Hope we see each other often!",
+            "es": "¡Ojalá nos veamos seguido!",
+            "fr": "J'espère qu'on se verra souvent !",
+            "pt": "Espero que nos vejamos mais vezes!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 대학생이에요. 혹시 무슨 일 하세요?",
+            "en": "I'm a university student. What do you do?",
+            "es": "Soy estudiante universitario(a). ¿A qué te dedicas?",
+            "fr": "Je suis étudiant(e) à l'université. Et toi, tu fais quoi ?",
+            "pt": "Sou estudante universitária. E tu, o que fazes?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 회사에서 일하고 있어요.",
+            "en": "I work at a company.",
+            "es": "Trabajo en una empresa.",
+            "fr": "Je travaille dans une entreprise.",
+            "pt": "Trabalho numa empresa."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "와, 멋진데요!",
+            "en": "Wow, that sounds cool!",
+            "es": "¡Guau, suena genial!",
+            "fr": "Wow, ça a l'air génial !",
+            "pt": "Uau, isso parece interessante!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아직 배우는 게 많아요.",
+            "en": "I still have a lot to learn though.",
+            "es": "Pero todavía tengo mucho que aprender.",
+            "fr": "J'ai encore beaucoup à apprendre.",
+            "pt": "Mas ainda tenho muito para aprender."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "기회 되면 꼭 얘기 더 해봐요!",
+            "en": "I'd love to hear more someday!",
+            "es": "¡Hablemos más de eso algún día!",
+            "fr": "On devrait en parler plus un jour !",
+            "pt": "Gostava de conversar mais sobre isso um dia!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 편하게 말 걸어주세요.",
+            "en": "Sure! Feel free to talk to me anytime.",
+            "es": "Claro, ¡habla conmigo cuando quieras!",
+            "fr": "Bien sûr ! Tu peux me parler quand tu veux.",
+            "pt": "Claro! Fala comigo quando quiseres."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "취미가 뭐예요?",
+            "en": "What's your hobby?",
+            "es": "¿Cuál es tu pasatiempo?",
+            "fr": "C'est quoi ton hobby ?",
+            "pt": "Qual é o teu hobby?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 음악 듣거나 산책하는 걸 좋아해요.",
+            "en": "I like listening to music or taking walks.",
+            "es": "Me gusta escuchar música o salir a caminar.",
+            "fr": "J'aime écouter de la musique ou me promener.",
+            "pt": "Gosto de ouvir música ou dar passeios."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 저도 산책 좋아해요!",
+            "en": "Oh, I like walking too!",
+            "es": "¡Oh, a mí también me gusta caminar!",
+            "fr": "Oh, moi aussi j'aime bien marcher !",
+            "pt": "Oh, eu também gosto de caminhar!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "같은 취미라니 신기하네요!",
+            "en": "Funny we have the same hobby!",
+            "es": "¡Qué curioso que tengamos el mismo hobby!",
+            "fr": "C'est drôle qu'on ait le même hobby !",
+            "pt": "Engraçado termos o mesmo hobby!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "언젠가 같이 걸어도 좋겠어요!",
+            "en": "We should walk together sometime!",
+            "es": "¡Deberíamos caminar juntos algún día!",
+            "fr": "On devrait marcher ensemble un jour !",
+            "pt": "Devíamos caminhar juntas um dia!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그러게요! 좋아요.",
+            "en": "Yeah! That would be nice.",
+            "es": "¡Sí! Sería genial.",
+            "fr": "Oui ! Ça me plairait.",
+            "pt": "Sim! Parece-me uma boa ideia."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 어디에 살고 있어요?",
+            "en": "Where do you live?",
+            "es": "¿Dónde vives?",
+            "fr": "Tu habites où ?",
+            "pt": "Onde moras?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 학교 근처에 살고 있어요.",
+            "en": "I live near the university.",
+            "es": "Vivo cerca de la universidad.",
+            "fr": "J'habite près de l'université.",
+            "pt": "Moro perto da universidade."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 거기 분위기 좋죠!",
+            "en": "Ah, that area has a nice vibe!",
+            "es": "¡Ah, esa zona tiene un buen ambiente!",
+            "fr": "Ah oui, ce quartier est sympa !",
+            "pt": "Ah, essa zona é mesmo agradável!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 조용하고 좋아요.",
+            "en": "Yeah, it's quiet and nice.",
+            "es": "Sí, es tranquilo y agradable.",
+            "fr": "Oui, c'est calme et agréable.",
+            "pt": "Sim, é calmo e muito bom."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "언젠가 근처 가면 연락할게요!",
+            "en": "Let me know if I'm around there!",
+            "es": "Avísame si algún día estoy por ahí.",
+            "fr": "Préviens-moi si je passe dans le coin !",
+            "pt": "Diz-me se eu passar por lá um dia!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "연락 주세요! 반가울 것 같아요.",
+            "en": "Sure! I'd be happy to meet.",
+            "es": "¡Claro! Me encantaría vernos.",
+            "fr": "Bien sûr ! Ce serait sympa de se voir.",
+            "pt": "Claro! Seria ótimo encontrarmo-nos."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 요즘 한국어 공부하고 있어요.",
+            "en": "I'm studying Korean these days.",
+            "es": "Estoy estudiando coreano últimamente.",
+            "fr": "J'apprends le coréen en ce moment.",
+            "pt": "Tenho estudado coreano ultimamente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오, 한국어 공부 중이군요!",
+            "en": "Oh, you're studying Korean!",
+            "es": "Oh, ¡estás estudiando coreano!",
+            "fr": "Oh, tu apprends le coréen !",
+            "pt": "Ah, estás a aprender coreano!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 발음이 정말 어려워요.",
+            "en": "Yeah, the pronunciation is really hard.",
+            "es": "Sí, la pronunciación es muy difícil.",
+            "fr": "Oui, la prononciation est vraiment difficile.",
+            "pt": "Sim, a pronúncia é mesmo difícil."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "처음엔 다 그래요. 금방 나아져요!",
+            "en": "Everyone struggles at first. You'll get better soon.",
+            "es": "Es normal al principio. Mejorarás rápido.",
+            "fr": "C'est normal au début. Tu vas t'améliorer vite.",
+            "pt": "É normal no início. Vais melhorar rápido!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋은 조언 있으면 알려주세요!",
+            "en": "Let me know if you have any tips!",
+            "es": "Si tienes algún consejo, ¡dímelo!",
+            "fr": "Si tu as des conseils, dis-le-moi !",
+            "pt": "Se tiveres alguma dica, diz-me!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "물론이죠! 필요하면 도와줄게요.",
+            "en": "Of course! I'll help anytime.",
+            "es": "Claro, ¡te puedo ayudar cuando quieras!",
+            "fr": "Bien sûr ! Je t'aiderai avec plaisir.",
+            "pt": "Claro! Posso ajudar-te quando quiseres."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 형제자매 있어요?",
+            "en": "Do you have any siblings?",
+            "es": "¿Tienes hermanos?",
+            "fr": "Tu as des frères ou sœurs ?",
+            "pt": "Tens irmãos?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 저는 형이 한 명 있어요.",
+            "en": "Yes, I have an older brother.",
+            "es": "Sí, tengo un hermano mayor.",
+            "fr": "Oui, j'ai un grand frère.",
+            "pt": "Sim, tenho um irmão mais velho."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 저랑 비슷하네요!",
+            "en": "Oh, that's similar to me!",
+            "es": "¡Oh, igual que yo!",
+            "fr": "Oh, pareil pour moi !",
+            "pt": "Oh, igual a mim!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "비슷하다니 반갑네요!",
+            "en": "Cool that we're similar!",
+            "es": "Qué bien, ¡somos parecidos!",
+            "fr": "Ah super, on se ressemble un peu alors !",
+            "pt": "Que giro, somos parecidos então!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "가족 이야기 듣고 싶어요!",
+            "en": "I'd love to hear more about your family!",
+            "es": "Me gustaría saber más de tu familia.",
+            "fr": "J'aimerais bien entendre parler de ta famille !",
+            "pt": "Gostava de ouvir mais sobre a tua família!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도요! 다음에 얘기해요.",
+            "en": "Me too! Let's talk more later.",
+            "es": "Sí, ¡hablemos más luego!",
+            "fr": "Moi aussi ! On en reparlera.",
+            "pt": "Eu também! Falamos mais depois."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 여행을 정말 좋아해요.",
+            "en": "I really love traveling.",
+            "es": "Me encanta viajar.",
+            "fr": "J'adore vraiment voyager.",
+            "pt": "Adoro viajar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도요! 특히 유럽 여행을 좋아해요.",
+            "en": "Me too! I especially love traveling in Europe.",
+            "es": "¡A mí también! Me encanta viajar por Europa.",
+            "fr": "Moi aussi ! J'adore surtout voyager en Europe.",
+            "pt": "Eu também! Adoro especialmente viajar pela Europa."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 유럽이라니! 부럽다…",
+            "en": "Oh wow, Europe? I'm jealous!",
+            "es": "¿Europa? ¡Qué envidia!",
+            "fr": "Oh wow, l'Europe ? Trop bien !",
+            "pt": "Oh, Europa? Que inveja!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "정말 좋은 기억이 많아요.",
+            "en": "I have a lot of great memories.",
+            "es": "Tengo muchos recuerdos bonitos.",
+            "fr": "J'ai plein de bons souvenirs.",
+            "pt": "Tenho muitas boas memórias."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "기회 되면 추천 여행지 알려주세요!",
+            "en": "Please recommend some places someday!",
+            "es": "Recomiéndame lugares algún día.",
+            "fr": "Tu devras me recommander des endroits un jour !",
+            "pt": "Recomenda-me alguns lugares um dia!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 알려드릴게요.",
+            "en": "Sure! I'd be happy to recommend some.",
+            "es": "Claro, ¡te recomendaré sitios!",
+            "fr": "Bien sûr ! Je te recommanderai des endroits.",
+            "pt": "Claro! Recomendo-te alguns sítios."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 좋아하는 음식 있어요?",
+            "en": "Do you have a favorite food?",
+            "es": "¿Tienes comida favorita?",
+            "fr": "Tu as un plat préféré ?",
+            "pt": "Tens alguma comida favorita?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 파스타를 제일 좋아해요.",
+            "en": "I love pasta the most.",
+            "es": "La pasta es mi comida favorita.",
+            "fr": "J'adore les pâtes, c'est mon plat préféré.",
+            "pt": "A minha comida favorita é massa."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 저도 파스타 좋아해요!",
+            "en": "Oh, I like pasta too!",
+            "es": "¡Oh, a mí también me encanta la pasta!",
+            "fr": "Oh, moi aussi j'adore les pâtes !",
+            "pt": "Oh, eu também adoro massa!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "취향이 비슷하네요!",
+            "en": "Looks like we have similar tastes!",
+            "es": "¡Tenemos gustos parecidos!",
+            "fr": "On a les mêmes goûts !",
+            "pt": "Temos gostos parecidos!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "언젠가 맛집 같이 가요!",
+            "en": "Let's go to a good restaurant someday!",
+            "es": "Vamos a un buen restaurante algún día.",
+            "fr": "Allons manger quelque part un jour !",
+            "pt": "Vamos a um bom restaurante um dia!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 같이 가요.",
+            "en": "Yeah! Let's go together.",
+            "es": "Sí, ¡vamos juntos!",
+            "fr": "Oui ! Allons-y ensemble.",
+            "pt": "Sim! Vamos juntas."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "요즘 뭐 배우고 있어요?",
+            "en": "What are you learning these days?",
+            "es": "¿Qué estás aprendiendo últimamente?",
+            "fr": "Tu apprends quelque chose en ce moment ?",
+            "pt": "O que tens aprendido ultimamente?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 요즘 사진 배우고 있어요.",
+            "en": "I'm learning photography lately.",
+            "es": "Últimamente estoy aprendiendo fotografía.",
+            "fr": "J'apprends la photographie en ce moment.",
+            "pt": "Ultimamente tenho aprendido fotografia."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 재밌겠다!",
+            "en": "Oh, that sounds fun!",
+            "es": "¡Oh, suena divertido!",
+            "fr": "Oh, ça a l'air amusant !",
+            "pt": "Oh, parece divertido!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "생각보다 어렵지만 즐거워요.",
+            "en": "It's harder than I expected but fun.",
+            "es": "Es más difícil de lo que pensaba, pero me gusta.",
+            "fr": "C'est plus difficile que je pensais, mais j'aime bien.",
+            "pt": "É mais difícil do que pensava, mas gosto muito."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저도 관심 생겨요!",
+            "en": "Now I'm interested too!",
+            "es": "Ahora también me interesa.",
+            "fr": "Ça me donne envie d'essayer aussi !",
+            "pt": "Fiquei com vontade de experimentar também!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "같이 찍으러 가도 좋겠어요!",
+            "en": "We should go take photos together!",
+            "es": "¡Podemos salir a tomar fotos juntos!",
+            "fr": "On pourrait prendre des photos ensemble !",
+            "pt": "Podemos tirar fotos juntas um dia!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 MBTI가 뭐예요?",
+            "en": "What's your MBTI?",
+            "es": "¿Cuál es tu MBTI?",
+            "fr": "C'est quoi ton MBTI ?",
+            "pt": "Qual é o teu MBTI?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 내향적인 편이에요.",
+            "en": "I'm more introverted.",
+            "es": "Soy más bien introvertido(a).",
+            "fr": "Je suis plutôt introverti(e).",
+            "pt": "Eu sou mais introvertido."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오! 저는 외향적이에요.",
+            "en": "Oh! I'm more outgoing.",
+            "es": "¡Oh! Yo soy más extrovertido(a).",
+            "fr": "Oh ! Moi, je suis plutôt extraverti(e).",
+            "pt": "Ah! Eu sou mais extrovertida."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그래도 외향적인 사람들과 잘 맞아요!",
+            "en": "But I get along well with outgoing people!",
+            "es": "Pero me llevo bien con personas extrovertidas.",
+            "fr": "Mais je m'entends bien avec les gens extravertis !",
+            "pt": "Mas dou-me bem com pessoas extrovertidas!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "잘 맞을 것 같아요!",
+            "en": "I think we'll get along well!",
+            "es": "Creo que nos llevaremos bien.",
+            "fr": "Je pense qu'on s'entendra bien !",
+            "pt": "Acho que vamos dar-nos muito bem!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도 그렇게 생각해요!",
+            "en": "Yeah, I think so too!",
+            "es": "Sí, yo también lo creo.",
+            "fr": "Oui, je pense aussi !",
+            "pt": "Sim, eu também acho!"
+          }
+        }
+      ]
+    }
+  ]
+}
+

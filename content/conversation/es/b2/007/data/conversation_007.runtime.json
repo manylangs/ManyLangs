@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b2",
+    "id": "007"
+  },
+  "title": {
+    "target": "맛집 찾기",
+    "en": "Finding Restaurants",
+    "es": "Encontrar restaurantes",
+    "fr": "Trouver un bon restaurant",
+    "pt": "Encontrar restaurantes"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 이 근처에 맛있는 식당 아세요?",
+            "en": "Hey, do you know any good places to eat around here?",
+            "es": "Oye, ¿conoces algún buen sitio para comer por aquí?",
+            "fr": "Hé, tu connais un bon endroit où manger dans le coin ?",
+            "pt": "Olha, conheces algum bom sítio para comer por aqui?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 바로 골목 건너에 꽤 유명한 집 있어.",
+            "en": "Yeah, there’s a pretty popular spot just across the street.",
+            "es": "Sí, hay un sitio bastante popular justo enfrente.",
+            "fr": "Oui, il y a un restaurant assez populaire juste en face.",
+            "pt": "Sim, há um restaurante bastante popular mesmo ali em frente."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오 분위기 좋은 곳이면 더 좋죠!",
+            "en": "Oh nice, I love places with a good vibe!",
+            "es": "Oh, genial, me encantan los lugares con buena vibra.",
+            "fr": "Oh super, j’adore les endroits avec une bonne ambiance !",
+            "pt": "Ah, ótimo! Adoro lugares com boa atmosfera."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "거기 인테리어도 예쁘고 음식도 괜찮아.",
+            "en": "The atmosphere is really nice and the food is solid.",
+            "es": "El ambiente es muy agradable y la comida está buenísima.",
+            "fr": "L’ambiance est vraiment sympa et la nourriture est bonne.",
+            "pt": "O ambiente é muito agradável e a comida é ótima."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 그 집으로 가볼까요?",
+            "en": "Then should we try that one?",
+            "es": "Entonces, ¿vamos a ese?",
+            "fr": "Alors, on essaie celui-là ?",
+            "pt": "Então vamos àquele?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아! 가면서 메뉴도 한번 찾아보자.",
+            "en": "Sure! Let’s check their menu while we walk.",
+            "es": "Perfecto, veamos el menú mientras vamos.",
+            "fr": "Ça marche ! On peut regarder le menu en y allant.",
+            "pt": "Perfeito! Podemos ver o menu enquanto vamos."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 추천해줄 만한 음식 있어?",
+            "en": "Do you have any dishes you'd recommend?",
+            "es": "¿Hay algún plato que recomiendes?",
+            "fr": "Tu me recommandes un plat en particulier ?",
+            "pt": "Tens algum prato que recomendes?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 그 집 파스타가 진짜 잘 나와.",
+            "en": "Yeah, their pasta is really good.",
+            "es": "Sí, la pasta de ese lugar está realmente buena.",
+            "fr": "Oui, leurs pâtes sont vraiment excellentes.",
+            "pt": "Sim, a massa desse sítio é mesmo muito boa."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "와, 비주얼부터 맛있겠다!",
+            "en": "Wow, that already sounds delicious!",
+            "es": "¡Guau, eso ya suena delicioso!",
+            "fr": "Wow, ça donne déjà envie !",
+            "pt": "Uau, isso já soa delicioso!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아, 나오면 사진 먼저 찍게 돼.",
+            "en": "Right? It’s so pretty you want to take a picture first.",
+            "es": "Ya verás, es tan bonita que dan ganas de hacer una foto.",
+            "fr": "Tu verras, c’est tellement joli qu’on veut d’abord faire une photo.",
+            "pt": "Vais ver, é tão bonita que dá vontade de tirar uma foto."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 그 메뉴로 먹어볼게.",
+            "en": "Alright, I’ll go with that.",
+            "es": "Vale, pediré eso.",
+            "fr": "D’accord, je prendrai ça.",
+            "pt": "Está bem, vou pedir isso."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아! 양도 꽤 넉넉해서 만족할 거야.",
+            "en": "Great! The portions are big, so you'll be satisfied.",
+            "es": "Genial, las porciones son grandes, te va a encantar.",
+            "fr": "Parfait ! Les portions sont généreuses, tu vas aimer.",
+            "pt": "Perfeito, as doses são grandes — vais ficar satisfeita."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 예약해야 되는 곳이야?",
+            "en": "Do we need a reservation for that place?",
+            "es": "¿Tenemos que reservar mesa allí?",
+            "fr": "Est-ce qu’on doit réserver là-bas ?",
+            "pt": "É preciso fazer reserva lá?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "평일은 괜찮은데 주말엔 예약하는 게 좋아.",
+            "en": "On weekdays it’s fine, but weekends are better with a reservation.",
+            "es": "Entre semana está bien, pero los fines de semana mejor reservar.",
+            "fr": "En semaine ça va, mais le week-end il vaut mieux réserver.",
+            "pt": "Durante a semana é tranquilo, mas ao fim de semana é melhor reservar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아 그렇구나! 그 정도면 괜찮네.",
+            "en": "Ah okay! That’s not too bad.",
+            "es": "Ah, vale, no está tan mal.",
+            "fr": "Ah d’accord, ça va alors.",
+            "pt": "Ah, ok! Assim não é nada mau."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 그래도 웨이팅 엄청 길진 않아.",
+            "en": "Yeah, but the wait isn’t usually too long.",
+            "es": "Sí, aunque normalmente la espera no es muy larga.",
+            "fr": "Oui, mais l’attente n’est généralement pas trop longue.",
+            "pt": "Sim, mas normalmente a espera não é muito longa."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "너 도착 시간 맞춰서 가면 되겠다.",
+            "en": "Then we can just go around the time we planned.",
+            "es": "Entonces podemos ir a la hora que planeamos.",
+            "fr": "Alors on peut y aller à l’heure prévue.",
+            "pt": "Então podemos ir à hora que planeámos."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그래! 너무 늦지만 않으면 바로 들어갈 수 있을 거야.",
+            "en": "Right! If we don’t go too late, we should get in quickly.",
+            "es": "Exacto, si no llegamos muy tarde, entraremos rápido.",
+            "fr": "Exact ! Si on n’arrive pas trop tard, on entrera rapidement.",
+            "pt": "Exacto! Se não chegarmos muito tarde, entramos rapidamente."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 웨이팅이 긴 편이야?",
+            "en": "Is the wait time usually long?",
+            "es": "¿La espera suele ser larga?",
+            "fr": "L’attente est longue d’habitude ?",
+            "pt": "A espera costuma ser longa?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "시간대마다 다른데 점심 피크만 좀 길어.",
+            "en": "It depends on the time, but lunch peak is the longest.",
+            "es": "Depende de la hora, pero al mediodía es cuando más gente hay.",
+            "fr": "Ça dépend de l’heure, mais le midi c’est le plus chargé.",
+            "pt": "Depende da hora, mas ao almoço é o mais concorrido."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오 생각보다 괜찮네.",
+            "en": "Oh that’s not as bad as I thought.",
+            "es": "Oh, pensaba que sería peor.",
+            "fr": "Oh, je pensais que ce serait pire.",
+            "pt": "Ah, pensei que fosse pior."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 10~15분 정도면 대부분 들어가.",
+            "en": "Yeah, most people get in within 10 to 15 minutes.",
+            "es": "Sí, la mayoría entra en 10 a 15 minutos.",
+            "fr": "Oui, la plupart entrent en 10 à 15 minutes.",
+            "pt": "Sim, a maioria entra em 10 a 15 minutos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 우리 그냥 기다리자!",
+            "en": "Then let’s just wait!",
+            "es": "Entonces esperemos.",
+            "fr": "Alors attendons simplement.",
+            "pt": "Então vamos esperar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아! 기다리면서 메뉴 고르자.",
+            "en": "Sounds good! We can pick what to order while we wait.",
+            "es": "Perfecto, podemos elegir lo que queremos mientras esperamos.",
+            "fr": "Parfait ! On peut choisir ce qu’on veut manger en attendant.",
+            "pt": "Ótimo! Podemos escolher o que queremos enquanto esperamos."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "가격대는 어떤 느낌이야?",
+            "en": "What’s the general price range there?",
+            "es": "¿Cuál es el rango de precios?",
+            "fr": "C’est dans quelle gamme de prix ?",
+            "pt": "Qual é a faixa de preços?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "메뉴마다 다르지만 중간 정도야.",
+            "en": "It varies by dish, but it’s mid-range overall.",
+            "es": "Depende del plato, pero en general es de precio medio.",
+            "fr": "Ça dépend des plats, mais globalement c’est moyen.",
+            "pt": "Depende dos pratos, mas no geral é médio."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 분위기 생각하면 괜찮다!",
+            "en": "Oh that’s pretty reasonable for a nice place!",
+            "es": "Oh, es bastante razonable para un sitio agradable.",
+            "fr": "Oh, c’est très correct pour un endroit sympa !",
+            "pt": "Ah, é bastante razoável para um sítio giro!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 가성비 좋다는 평이 많아.",
+            "en": "Yeah, lots of people say it’s great value.",
+            "es": "Sí, mucha gente dice que tiene muy buena relación calidad-precio.",
+            "fr": "Oui, beaucoup disent que le rapport qualité-prix est excellent.",
+            "pt": "Sim, muita gente diz que tem excelente relação qualidade-preço."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 크게 부담은 없겠네.",
+            "en": "Then it's not too pricey at all.",
+            "es": "Entonces no es tan caro.",
+            "fr": "Alors ce n’est pas trop cher finalement.",
+            "pt": "Então não é assim tão caro."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아! 양도 넉넉해서 만족도 높아.",
+            "en": "Totally! And the portions are big too.",
+            "es": "Totalmente, y las porciones son generosas.",
+            "fr": "Exact ! Et les portions sont plutôt grandes.",
+            "pt": "Sem dúvida — e as doses são generosas."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 디저트도 괜찮아?",
+            "en": "Do they have good desserts too?",
+            "es": "¿También tienen buenos postres?",
+            "fr": "Ils ont de bons desserts aussi ?",
+            "pt": "Também têm boas sobremesas?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 티라미수가 특히 유명해.",
+            "en": "Yeah, their tiramisu is really popular.",
+            "es": "Sí, su tiramisú es muy popular.",
+            "fr": "Oui, leur tiramisu est très populaire.",
+            "pt": "Sim, o tiramisu deles é muito popular."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "와, 그런 스타일 좋아해!",
+            "en": "Whoa, I love that kind of dessert!",
+            "es": "¡Guau, me encantan ese tipo de postres!",
+            "fr": "Wow, j’adore ce genre de dessert !",
+            "pt": "Uau, adoro esse tipo de sobremesa!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "달지 않고 부드러워서 다들 좋아해.",
+            "en": "It’s not too sweet and super smooth.",
+            "es": "No es muy dulce y es súper cremoso.",
+            "fr": "Il n’est pas trop sucré et super onctueux.",
+            "pt": "Não é demasiado doce e é super cremoso."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 식사 끝나고 꼭 먹어야겠다.",
+            "en": "Then we definitely need to try it after the meal.",
+            "es": "Entonces tenemos que probarlo después de comer.",
+            "fr": "Alors il faut absolument en prendre après le repas.",
+            "pt": "Então temos de provar depois da refeição."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아! 배부르더라도 디저트는 별도니까.",
+            "en": "For sure! Dessert always has its own space.",
+            "es": "Claro, siempre hay espacio para el postre.",
+            "fr": "Carrément ! Le dessert a toujours sa place.",
+            "pt": "Claro! Há sempre espaço para a sobremesa."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 혼자 가도 괜찮은 분위기야?",
+            "en": "Is it okay to go there alone too?",
+            "es": "¿Se puede ir solo sin problema?",
+            "fr": "On peut y aller seul sans problème ?",
+            "pt": "É tranquilo ir lá sozinho?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 1인석도 있어서 편해.",
+            "en": "Yeah, they even have single seats.",
+            "es": "Sí, incluso tienen asientos individuales.",
+            "fr": "Oui, il y a même des places pour une personne.",
+            "pt": "Sim, até têm lugares individuais."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아 그런 아늑한 느낌 좋다!",
+            "en": "Ah that cozy vibe sounds perfect!",
+            "es": "Ah, ese ambiente acogedor suena perfecto.",
+            "fr": "Ah, cette ambiance cosy a l’air parfaite !",
+            "pt": "Ah, esse ambiente acolhedor parece perfeito!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "전체적으로 조용하고 따뜻한 분위기야.",
+            "en": "Overall it’s quiet and warm inside.",
+            "es": "En general es tranquilo y cálido.",
+            "fr": "L’ensemble est calme et chaleureux.",
+            "pt": "O espaço é calmo e acolhedor no geral."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 혼밥도 부담 없겠네.",
+            "en": "Then it wouldn’t feel awkward eating alone.",
+            "es": "Entonces no sería incómodo comer allí solo.",
+            "fr": "Alors ce ne serait pas gênant d’y manger seul.",
+            "pt": "Então não seria estranho comer lá sozinha."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아! 혼자 가도 전혀 어색하지 않아.",
+            "en": "Right! Nobody feels out of place dining alone there.",
+            "es": "Exacto, nadie se siente fuera de lugar comiendo allí solo.",
+            "fr": "Exact, personne ne se sent mal à l’aise là-bas.",
+            "pt": "Exacto — ninguém se sente deslocado a comer sozinho."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "채식 메뉴도 있을까?",
+            "en": "Do they have vegetarian options?",
+            "es": "¿Tienen opciones vegetarianas?",
+            "fr": "Ils ont des options végétariennes ?",
+            "pt": "Têm opções vegetarianas?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 샐러드나 채식 파스타 몇 가지 있어.",
+            "en": "Yeah, they have a few salads and vegetarian pastas.",
+            "es": "Sí, tienen algunas ensaladas y pastas vegetarianas.",
+            "fr": "Oui, ils ont quelques salades et pâtes végétariennes.",
+            "pt": "Sim, têm algumas saladas e massas vegetarianas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오 그 정도면 고를 수 있겠다.",
+            "en": "Oh that’s enough for people to choose from.",
+            "es": "Oh, ya con eso hay varias opciones.",
+            "fr": "Oh, ça fait déjà quelques choix.",
+            "pt": "Ah, isso já dá algumas escolhas."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "완전 비건은 아니지만 선택지는 있어.",
+            "en": "It’s not fully vegan, but there are options.",
+            "es": "No es totalmente vegano, pero hay alternativas.",
+            "fr": "Ce n’est pas totalement vegan, mais il y a des options.",
+            "pt": "Não é totalmente vegan, mas há alternativas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 친구랑 같이 가도 좋겠네.",
+            "en": "Then it would be great to bring my friend too.",
+            "es": "Entonces sería ideal llevar a mi amiga.",
+            "fr": "Alors ce serait top d’y aller avec mon amie.",
+            "pt": "Então seria ótimo levar a minha amiga."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아! 식성 달라도 무난하게 맞출 수 있어.",
+            "en": "Exactly! Works well even with different food preferences.",
+            "es": "Exacto, funciona incluso si todos tienen gustos diferentes.",
+            "fr": "Exact, ça convient même si tout le monde n’a pas les mêmes goûts.",
+            "pt": "Exacto, funciona mesmo com preferências diferentes."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "여기 근처에 조용한 식당도 있어?",
+            "en": "Is there a quiet restaurant around here?",
+            "es": "¿Hay un restaurante tranquilo cerca?",
+            "fr": "Il y a un restaurant calme dans le coin ?",
+            "pt": "Há algum restaurante tranquilo aqui perto?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 조금만 걸으면 분위기 차분한 곳 하나 있어.",
+            "en": "Yeah, there’s a calm place a short walk from here.",
+            "es": "Sí, hay un sitio bastante calmado a pocos minutos de aquí.",
+            "fr": "Oui, il y a un endroit assez paisible à quelques minutes d’ici.",
+            "pt": "Sim, há um sítio bastante sossegado a poucos minutos daqui."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오 그런 분위기 괜찮다!",
+            "en": "Oh that kind of atmosphere sounds nice!",
+            "es": "Oh, ese tipo de ambiente me gusta.",
+            "fr": "Oh, ce genre d’ambiance me plaît !",
+            "pt": "Ah, gosto desse tipo de ambiente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "사람도 많지 않아서 편하게 먹기 좋아.",
+            "en": "It’s not crowded, so it’s comfortable to eat.",
+            "es": "No suele estar lleno, así que es cómodo para comer.",
+            "fr": "Ce n’est pas bondé, donc c’est confortable pour manger.",
+            "pt": "Normalmente não está cheio, por isso é confortável para comer."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 거기서 얘기하면서 천천히 먹자.",
+            "en": "Then let’s eat there and take our time talking.",
+            "es": "Entonces comamos ahí tranquilamente.",
+            "fr": "Alors mangeons là-bas tranquillement.",
+            "pt": "Então vamos comer lá com calma."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아! 자리 넓어서 오래 있어도 괜찮아.",
+            "en": "Right! The tables are spacious, so it’s fine to stay longer.",
+            "es": "Sí, las mesas son amplias y se puede estar allí bastante tiempo.",
+            "fr": "Oui, les tables sont spacieuses, on peut y rester longtemps.",
+            "pt": "Sim, as mesas são espaçosas — dá para ficar lá bastante tempo."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 이제 어디로 갈지 정해볼까?",
+            "en": "Alright, should we decide where to go?",
+            "es": "Bueno, ¿decidimos a dónde ir?",
+            "fr": "Bon, on choisit où aller ?",
+            "pt": "Então, decidimos para onde vamos?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그래! 후보가 두 군데니까 고르기 쉽겠다.",
+            "en": "Sure! Two options make it easier to choose.",
+            "es": "Vale, con dos opciones es fácil decidir.",
+            "fr": "Ça marche ! Deux options, c’est facile à choisir.",
+            "pt": "Combinado! Com duas opções é fácil de escolher."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오 두 곳 다 좋아 보이네!",
+            "en": "Oh both places look great!",
+            "es": "Oh, ¡los dos sitios se ven muy bien!",
+            "fr": "Oh, les deux ont l’air super !",
+            "pt": "Ah, os dois parecem ótimos!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응 분위기도 다르고 메뉴도 달라서 선택 폭 넓어.",
+            "en": "Yeah, the vibes are different and the menus too.",
+            "es": "Sí, el ambiente y los menús son diferentes.",
+            "fr": "Oui, les ambiances sont différentes et les menus aussi.",
+            "pt": "Sim, os ambientes e os menus são diferentes."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 네가 가고 싶은 곳으로 결정하자.",
+            "en": "Then let’s just go with the one you prefer.",
+            "es": "Entonces vamos al que prefieras tú.",
+            "fr": "Alors on va là où tu préfères.",
+            "pt": "Então vamos ao que preferires."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아! 내가 한 군데 선택해서 안내할게.",
+            "en": "Great! I’ll pick one and lead the way.",
+            "es": "Perfecto, elegiré uno y te guiaré.",
+            "fr": "Parfait ! Je choisis une et je te montre le chemin.",
+            "pt": "Perfeito! Eu escolho um e levo-te lá."
+          }
+        }
+      ]
+    }
+  ]
+}

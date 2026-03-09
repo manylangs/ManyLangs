@@ -1,39 +1,9 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import Link from "next/link";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import ConversationAudioController from "@/components/audio/controllers/ConversationAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
-
-type Sentence = {
-  target: string;
-  en?: string;
-  es?: string;
-  fr?: string;
-  pt?: string;
-};
-
-type Line = {
-  speaker: "A" | "B";
-  sentences: Sentence;
-};
-
-type Block = {
-  set_id: string;
-  lines: Line[];
-};
-
-type ConversationData = {
-  title?: Sentence;
-  blocks: Block[];
-};
-
-type Props = {
-  data: ConversationData;
-  level: string;
-  chapter: string;
-  chapters: string[];
-};
 
 const STUDY_LANGS = ["en", "es", "fr", "pt"] as const;
 type StudyLang = (typeof STUDY_LANGS)[number];
@@ -45,9 +15,17 @@ const buttonStyle = (active: boolean) => ({
   background: active ? "#333" : "#eee",
   color: active ? "#fff" : "#333",
   border: "none",
-  cursor: active ? "default" : "pointer",
-  textDecoration: "none",
+  cursor: "pointer",
 });
+
+type Props = {
+  lang: string;
+  data: any;
+  level: string;
+  chapter: string;
+  chapters: string[];
+};
+
 
 export default function ConversationViewer({
   data,
@@ -55,90 +33,45 @@ export default function ConversationViewer({
   chapter,
   chapters,
 }: Props) {
+
+  const router = useRouter();
   const [lang, setLang] = useState<StudyLang>("en");
-  const { showTargetText } = useViewerTarget();
 
-  const currentIndex = useMemo(
-    () => chapters.indexOf(chapter),
-    [chapters, chapter]
-  );
+  const { showTargetText, targetLang } = useViewerTarget();
 
-  const prev = currentIndex > 0 ? chapters[currentIndex - 1] : chapter;
+  const currentIndex = chapters.indexOf(chapter);
+
+  const prev = currentIndex > 0 ? chapters[currentIndex - 1] : null;
+
   const next =
     currentIndex < chapters.length - 1
       ? chapters[currentIndex + 1]
-      : chapter;
+      : null;
 
   return (
     <>
-      {/* 🔊 Audio (Header와 같은 레벨로 분리) */}
-      {data.blocks.length > 0 && (
-        <div
-          style={{
-            position: "sticky",
-            top: 100,         // Header 높이에 맞춤
-            zIndex: 900,
-            background: "#fff",
-            borderBottom: "1px solid #eee",
-            padding: 0,
-          }}
-        >
-          <div style={{ maxWidth: 720, margin: "0 auto" }}>
-            <ConversationAudioController
-              lang="kr"
-              level={level}
-              chapter={chapter}
-            />
-          </div>
+      {/* AUDIO */}
+      <div
+        style={{
+          position: "sticky",
+          top: 100,
+          zIndex: 900,
+          background: "#fff",
+          borderBottom: "1px solid #eee",
+        }}
+      >
+        <div style={{ maxWidth: 720, margin: "0 auto" }}>
+          <ConversationAudioController
+            lang={targetLang}
+            level={level}
+            chapter={chapter}
+          />
         </div>
-      )}
+      </div>
 
-      {/* 본문 */}
       <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
 
-        {/* 제목 */}
-        {data.title && (
-          <section style={{ marginBottom: 20 }}>
-            {showTargetText && (
-              <div
-                style={{
-                  fontSize: 22,
-                  fontWeight: 700,
-                  marginBottom: 4,
-                }}
-              >
-                {data.title.target}
-              </div>
-            )}
-
-            {data.title[lang] && (
-              <div
-                style={{
-                  fontSize: 22,
-                  fontWeight: 700,
-                  color: "#555",
-                }}
-              >
-                {data.title[lang]}
-              </div>
-            )}
-          </section>
-        )}
-
-        {/* 학습 언어 선택 */}
-        <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
-          {STUDY_LANGS.map((l) => (
-            <button
-              key={l}
-              onClick={() => setLang(l)}
-              style={buttonStyle(lang === l)}
-            >
-              {l.toUpperCase()}
-            </button>
-          ))}
-        </div>
-
-        {/* Prev / Next */}
+        {/* PREV NEXT */}
         <div
           style={{
             display: "flex",
@@ -146,66 +79,126 @@ export default function ConversationViewer({
             marginBottom: 12,
           }}
         >
-          <Link
-            href={`/viewer/kr/conversation/${level}/${prev}`}
+          <button
             style={buttonStyle(false)}
+            disabled={!prev}
+            onClick={() =>
+              prev &&
+              router.push(
+                `/viewer/${targetLang}/conversation/${level}/${prev}`
+              )
+            }
           >
             ← Prev
-          </Link>
-          <Link
-            href={`/viewer/kr/conversation/${level}/${next}`}
+          </button>
+
+          <button
             style={buttonStyle(false)}
+            disabled={!next}
+            onClick={() =>
+              next &&
+              router.push(
+                `/viewer/${targetLang}/conversation/${level}/${next}`
+              )
+            }
           >
             Next →
-          </Link>
+          </button>
         </div>
 
-        {/* 챕터 번호 */}
+        {/* CHAPTER */}
         <div
           style={{
             display: "flex",
-            flexWrap: "wrap",
             gap: 6,
             marginBottom: 20,
+            flexWrap: "wrap",
           }}
         >
-          {chapters.map((ch) => (
-            <Link
-              key={ch}
-              href={`/viewer/kr/conversation/${level}/${ch}`}
-              style={buttonStyle(ch === chapter)}
+          {chapters.map((c) => (
+            <button
+              key={c}
+              style={buttonStyle(c === chapter)}
+              onClick={() =>
+                router.push(
+                  `/viewer/${targetLang}/conversation/${level}/${c}`
+                )
+              }
             >
-              {ch}
-            </Link>
+              {c}
+            </button>
           ))}
         </div>
 
-        {/* 본문 */}
-        <section>
-          {data.blocks.map((block, i) => (
-            <div key={i} style={{ marginBottom: 32 }}>
-              <div style={{ fontWeight: 700, marginBottom: 8 }}>
-                Dialogue {i + 1}
-              </div>
+        {/* STUDY LANGUAGE */}
+        <div style={{ display: "flex", gap: 8, marginBottom: 32 }}>
+          {STUDY_LANGS.map((l) => (
+            <button
+              key={l}
+              style={buttonStyle(lang === l)}
+              onClick={() => setLang(l)}
+            >
+              {l.toUpperCase()}
+            </button>
+          ))}
+        </div>
 
-              {block.lines.map((line, j) => (
-                <div key={j} style={{ marginBottom: 10 }}>
-                  <strong>{line.speaker}</strong>
+        {/* TITLE */}
+        <div style={{ marginBottom: 24 }}>
+          <div style={{ fontSize: 22, fontWeight: 700 }}>
+            {data.title?.target}
+          </div>
+
+          {data.title?.[lang] && (
+            <div
+              style={{
+                fontSize: 22,
+                color: "#555",
+                marginTop: 4,
+              }}
+            >
+              {data.title[lang]}
+            </div>
+          )}
+        </div>
+
+        {/* DIALOGUE */}
+        {data.blocks?.map((block: any, idx: number) => (
+          <section key={idx} style={{ marginBottom: 48 }}>
+
+            <div
+              style={{
+                fontWeight: 700,
+                marginBottom: 12,
+                fontSize: 18,
+                color: "#444",
+              }}
+            >
+              Set {idx + 1}
+            </div>
+            {block.lines.map((line: any, i: number) => {
+
+              const targetText = line?.sentences?.target ?? "";
+              const learnerText = line?.sentences?.translations?.[lang];
+              return (
+                <div key={i} style={{ marginBottom: 12 }}>
 
                   {showTargetText && (
-                    <div>{line.sentences.target}</div>
-                  )}
-
-                  {line.sentences[lang] && (
-                    <div style={{ color: "#444" }}>
-                      {line.sentences[lang]}
+                    <div>
+                      <strong>{line.speaker}:</strong> {targetText}
                     </div>
                   )}
+
+                  <div style={{ color: "#555" }}>
+                    <strong>{line.speaker}:</strong> {learnerText}
+                  </div>
+
                 </div>
-              ))}
-            </div>
-          ))}
-        </section>
+              );
+            })}
+
+          </section>
+        ))}
       </div>
     </>
   );

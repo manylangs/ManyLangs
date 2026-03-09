@@ -4,29 +4,27 @@ import { useEffect, useRef, useState } from "react";
 import AudioPlayer from "@/components/audio/AudioPlayer";
 
 type Props = {
-  lang: string;
-  level: string;
-  chapter: string;
+  src: string;
+  cuesSrc?: string;
 };
 
-export default function VocaAudioController({
-  lang,
-  level,
-  chapter,
-}: Props) {
+export default function VocaAudioController({ src, cuesSrc }: Props) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const [cues, setCues] = useState<number[]>([]);
   const [index, setIndex] = useState(0);
   const [ready, setReady] = useState(false);
 
-  const audioSrc = `/audio/${lang}/voca/${level}/voca_${level}_${chapter}.wav`;
-  const cuesSrc = `/audio/${lang}/voca/${level}/voca_${level}_${chapter}.cues.json`;
-
   useEffect(() => {
     let cancelled = false;
 
     async function loadCues() {
+      if (!cuesSrc) {
+        setCues([]);
+        setReady(false);
+        return;
+      }
+
       setReady(false);
       setIndex(0);
 
@@ -35,13 +33,13 @@ export default function VocaAudioController({
         const json = await res.json();
 
         if (!cancelled) {
-          setCues(
-            Array.isArray(json.setStartMs)
-              ? json.setStartMs
-              : Array.isArray(json.sets)
-              ? json.sets.map((s: any) => s.start_ms)
-              : []
-          );
+          const list = Array.isArray(json.setStartMs)
+            ? json.setStartMs
+            : Array.isArray(json.sets)
+            ? json.sets.map((s: any) => s.start_ms)
+            : [];
+
+          setCues(list);
           setReady(true);
         }
       } catch {
@@ -53,6 +51,7 @@ export default function VocaAudioController({
     }
 
     loadCues();
+
     return () => {
       cancelled = true;
     };
@@ -65,11 +64,12 @@ export default function VocaAudioController({
     el.pause();
     el.currentTime = 0;
     el.load();
-  }, [audioSrc]);
+  }, [src]);
 
   const seekTo = (next: number) => {
     const el = audioRef.current;
     if (!el) return;
+
     if (next < 0 || next >= cues.length) return;
 
     el.currentTime = cues[next] / 1000;
@@ -77,11 +77,13 @@ export default function VocaAudioController({
     setIndex(next);
   };
 
+  if (!src) return null;
+
   return (
     <section
       style={{
         position: "sticky",
-        top: 100,          // 🔥 모든 시리즈 동일 기준
+        top: 100,
         zIndex: 900,
         background: "#fff",
         paddingTop: 8,
@@ -89,70 +91,35 @@ export default function VocaAudioController({
         borderBottom: "1px solid #eee",
       }}
     >
-      <AudioPlayer
-        key={audioSrc}
-        ref={audioRef}
-        src={audioSrc}
-      />
+      <AudioPlayer ref={audioRef} src={src} />
 
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: 8,
-          marginTop: 12,
-        }}
-      >
-        <button
-          disabled={!ready || index === 0}
-          onClick={() => seekTo(index - 1)}
+      {cues.length > 0 && (
+        <div
           style={{
-            padding: "10px 12px",
-            minHeight: "44px",
-            fontSize: 13,
-            fontWeight: 500,
-            borderRadius: 8,
-            border: "1px solid #ddd",
-            background: "#fff",
-            cursor: "pointer",
+            display: "flex",
+            justifyContent: "space-between",
+            marginTop: 12,
           }}
         >
-          ◀ Prev
-        </button>
-
-        {ready && cues.length > 0 && (
-          <div
-            style={{
-              fontWeight: 600,
-              fontSize: 13,
-              minHeight: "44px",
-              display: "flex",
-              alignItems: "center",
-              whiteSpace: "nowrap",
-            }}
+          <button
+            disabled={!ready || index === 0}
+            onClick={() => seekTo(index - 1)}
           >
+            ◀ Prev
+          </button>
+
+          <div>
             {index + 1} / {cues.length}
           </div>
-        )}
 
-        <button
-          disabled={!ready || index >= cues.length - 1}
-          onClick={() => seekTo(index + 1)}
-          style={{
-            padding: "10px 12px",
-            minHeight: "44px",
-            fontSize: 13,
-            fontWeight: 500,
-            borderRadius: 8,
-            border: "1px solid #ddd",
-            background: "#fff",
-            cursor: "pointer",
-          }}
-        >
-          Next ▶
-        </button>
-      </div>
+          <button
+            disabled={!ready || index >= cues.length - 1}
+            onClick={() => seekTo(index + 1)}
+          >
+            Next ▶
+          </button>
+        </div>
+      )}
     </section>
   );
 }

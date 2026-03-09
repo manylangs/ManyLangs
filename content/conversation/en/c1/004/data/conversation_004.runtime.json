@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "c1",
+    "id": "004"
+  },
+  "title": {
+    "target": "업무 지시와 보고",
+    "en": "Work Instructions and Reports",
+    "es": "Instrucciones y reportes de trabajo",
+    "fr": "Consignes et rapports de travail",
+    "pt": "Instruções e relatórios de trabalho"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 지금 잠깐 시간 괜찮으세요? 전달드릴 일이 있어요.",
+            "en": "Do you have a moment now? I have something to go over with you.",
+            "es": "¿Tiene un momento? Necesito comentarle algo.",
+            "fr": "Vous auriez un instant ? J’ai quelque chose à vous transmettre.",
+            "pt": "Tem um momento? Preciso de falar consigo sobre algo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아, 물론이죠! 어떤 내용인가요?",
+            "en": "Sure, of course! What’s it about?",
+            "es": "Claro, dígame, ¿de qué se trata?",
+            "fr": "Bien sûr ! De quoi s’agit-il ?",
+            "pt": "Claro, diga-me, do que se trata?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 우선 검토 기준을 다시 정리해 보겠습니다.",
+            "en": "Alright, I’ll reorganize the review criteria again and refine the structure.",
+            "es": "De acuerdo, reorganizaré los criterios y aclararé la estructura.",
+            "fr": "D’accord, je vais réorganiser les critères d’examen et clarifier la structure.",
+            "pt": "Certo, vou reorganizar os critérios e clarificar melhor a estrutura."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요, 그 방향이면 충분히 명확할 것 같아요.",
+            "en": "Sounds good. That approach should make things much clearer.",
+            "es": "Perfecto, ese enfoque hará que todo sea más claro.",
+            "fr": "Parfait, cette approche rendra tout beaucoup plus clair.",
+            "pt": "Ótimo — essa abordagem vai deixar tudo bem mais claro."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 초안 만들고 다시 보여드릴게요.",
+            "en": "Great, I’ll create a draft and show it to you shortly.",
+            "es": "Perfecto, prepararé un borrador y se lo mostraré en breve.",
+            "fr": "Très bien, je prépare un premier brouillon et vous le montre rapidement.",
+            "pt": "Perfeito, preparo um rascunho e mostro-lho em breve."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 초안 오면 제가 바로 피드백 드릴게요.",
+            "en": "Perfect. Once the draft is ready, I’ll give you feedback right away.",
+            "es": "Muy bien, cuando el borrador esté listo, le doy mi retroalimentación.",
+            "fr": "Très bien. Dès que le brouillon est prêt, je vous fais un retour.",
+            "pt": "Muito bem. Assim que o rascunho estiver pronto, dou-lhe feedback."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "보고서 진행 상황 잠깐만 확인해도 될까요?",
+            "en": "Could I quickly check the status of the report?",
+            "es": "¿Puedo revisar rápidamente el estado del informe?",
+            "fr": "Puis-je vérifier rapidement l’état d’avancement du rapport ?",
+            "pt": "Posso confirmar rapidamente o estado do relatório?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 지금 거의 마무리 단계예요.",
+            "en": "Sure, it’s almost finished now.",
+            "es": "Sí, ya casi está terminado.",
+            "fr": "Oui, c’est presque terminé.",
+            "pt": "Sim, já está quase concluído."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 생각보다 깔끔하게 정리됐네요!",
+            "en": "Wow, it’s much cleaner than I expected!",
+            "es": "Wow, está mucho más limpio de lo que imaginaba.",
+            "fr": "Oh, c’est présenté de manière beaucoup plus nette que je ne l’imaginais !",
+            "pt": "Uau, está muito mais organizado do que eu imaginava!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "감사합니다! 흐름 잡는 데 신경 많이 썼어요.",
+            "en": "Thanks! I spent time making the flow easy to follow.",
+            "es": "Gracias, puse bastante atención en la fluidez del contenido.",
+            "fr": "Merci ! J’ai vraiment fait attention à la fluidité du contenu.",
+            "pt": "Obrigado(a)! Tentei deixar o conteúdo o mais fluido possível."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 그럼 이 부분만 조금 더 보완해볼게요.",
+            "en": "Alright, I’ll refine this section a bit more.",
+            "es": "Bien, mejoraré un poco más esta parte.",
+            "fr": "Très bien, j’améliorerai encore un peu cette section.",
+            "pt": "Ótimo, vou melhorar um pouco mais esta parte."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 필요하면 자료 더 드릴게요.",
+            "en": "Great. Let me know if you need more reference material.",
+            "es": "Perfecto. Si necesita material adicional, puedo proporcionarlo.",
+            "fr": "Parfait. Si vous avez besoin de plus de documents, je vous en fournirai.",
+            "pt": "Perfeito. Se precisar de mais material, posso arranjar."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이 작업 순서가 맞는지 한번 봐주실 수 있을까요?",
+            "en": "Could you check if the order of this workflow looks correct?",
+            "es": "¿Puede comprobar si el orden de este proceso es adecuado?",
+            "fr": "Pouvez-vous vérifier si l’ordre du processus vous paraît correct ?",
+            "pt": "Pode verificar se a ordem deste processo está correta?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "음, 전반적으로 좋아요! 근데 순서만 조금 조정해보면 좋겠어요.",
+            "en": "Overall it looks good! Just rearranging the sequence might help.",
+            "es": "En general está muy bien. Solo ajustaría la secuencia.",
+            "fr": "Globalement c’est très bien ! Il suffirait juste de revoir la séquence.",
+            "pt": "No geral está ótimo — só precisa rever a sequência."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 그렇군요. 순서를 바꾸면 더 자연스럽겠네요.",
+            "en": "Ah, I see. Changing the order would definitely make it flow better.",
+            "es": "Ah, entiendo. Cambiar el orden lo hará más natural.",
+            "fr": "Ah, je vois. Le changer rendrait effectivement la progression plus naturelle.",
+            "pt": "Ah, percebo. Ajustar a ordem vai mesmo melhorar a fluidez."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 그러면 흐름이 훨씬 깔끔해질 거예요.",
+            "en": "Right, that’ll make the transitions much smoother.",
+            "es": "Exacto, así la transición será mucho más fluida.",
+            "fr": "Oui, comme ça, la transition sera beaucoup plus fluide.",
+            "pt": "Exato, assim a passagem entre etapas fica mais natural."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 그러면 바로 수정해서 다시 공유드릴게요.",
+            "en": "Okay, I’ll revise it and send you an updated version.",
+            "es": "Bien, lo modificaré y le enviaré una nueva versión.",
+            "fr": "Très bien, je fais les modifications et je vous envoie une nouvelle version.",
+            "pt": "Certo, faço as alterações e envio-lhe uma nova versão."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 수정본 기대하고 있을게요.",
+            "en": "Perfect. I’ll look forward to the updated version.",
+            "es": "Perfecto. Quedo atento a la versión actualizada.",
+            "fr": "Parfait. J’attends votre version mise à jour.",
+            "pt": "Perfeito. Fico a aguardar a versão atualizada."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 이 일정대로 진행해도 괜찮을까요?",
+            "en": "Would it be okay to follow this schedule as planned?",
+            "es": "¿Cree que este calendario es viable tal como está?",
+            "fr": "Est-ce que ce planning vous semble viable tel quel ?",
+            "pt": "Acha que este cronograma funciona tal como está?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 이 일정이면 충분히 무리 없어요.",
+            "en": "Yes, this schedule should work without issues.",
+            "es": "Sí, este calendario no debería causar problemas.",
+            "fr": "Oui, ce planning ne devrait poser aucun souci.",
+            "pt": "Sim, este cronograma não deve causar qualquer problema."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 예상보다 여유 있게 잡혀 있군요!",
+            "en": "Oh, it’s more flexible than I expected!",
+            "es": "Oh, es más flexible de lo que pensaba.",
+            "fr": "Oh, il est plus flexible que ce que je pensais !",
+            "pt": "Ah, é mais flexível do que eu pensava."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요. 중요한 마감도 그 안에 가능해요.",
+            "en": "Exactly — even the major deadlines fit into it.",
+            "es": "Exacto, incluso las fechas importantes encajan bien.",
+            "fr": "Exactement. Même les échéances importantes y rentrent.",
+            "pt": "Exato, até as entregas mais importantes conseguem encaixar aqui."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 그러면 일정에 맞춰서 준비해 보겠습니다.",
+            "en": "Alright, I’ll prepare everything according to this timeline.",
+            "es": "Perfecto, prepararé todo según este cronograma.",
+            "fr": "Très bien, je préparerai tout en fonction de ce calendrier.",
+            "pt": "Certo, organizarei tudo de acordo com este calendário."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "궁금한 점 생기면 바로 물어보세요.",
+            "en": "If anything pops up, feel free to ask anytime.",
+            "es": "Si surge alguna duda, no dude en consultarme.",
+            "fr": "Si vous avez la moindre question, n’hésitez pas.",
+            "pt": "Se surgir alguma dúvida, é só dizer."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "요청하신 자료는 여기 정리했습니다. 한번 확인해 보실래요?",
+            "en": "Here’s the material you requested — would you like to review it?",
+            "es": "Aquí tiene el material que solicitó. ¿Desea revisarlo?",
+            "fr": "Voici les documents que vous avez demandés. Voulez-vous y jeter un œil ?",
+            "pt": "Aqui está o material que pediu. Quer dar uma olhada?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오! 생각보다 훨씬 잘 정리됐네요.",
+            "en": "Oh! This is much better organized than I expected.",
+            "es": "¡Oh! Está mucho mejor organizado de lo que esperaba.",
+            "fr": "Oh ! C’est bien mieux ordonné que prévu.",
+            "pt": "Oh! Está muito melhor organizado do que eu esperava."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 다행이네요. 방향이 맞아서 안심됐어요.",
+            "en": "That’s a relief. I’m glad the direction matches your intention.",
+            "es": "Qué alivio, me alegra saber que la dirección es la correcta.",
+            "fr": "Ah, tant mieux ! Je suis rassuré(e) de voir que la direction est correcte.",
+            "pt": "Que bom — fico aliviado(a) por saber que estou no caminho certo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 제가 설명드린 의도랑 거의 딱 맞아요.",
+            "en": "Yes, it matches what I explained nearly perfectly.",
+            "es": "Sí, coincide casi perfectamente con lo que expliqué.",
+            "fr": "Oui, ça correspond presque exactement à ce que j’avais expliqué.",
+            "pt": "Sim, corresponde quase exatamente ao que expliquei."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 수정할 부분 있으면 바로 반영하겠습니다.",
+            "en": "Okay, I’ll adjust anything that needs refinement.",
+            "es": "Muy bien, ajustaré lo que sea necesario.",
+            "fr": "D’accord, je modifierai ce qui doit l’être.",
+            "pt": "Certo, trato de ajustar o que for necessário."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요. 그럼 이어서 다음 단계 진행해 주세요.",
+            "en": "Great. Please move on to the next step when you’re ready.",
+            "es": "Muy bien. Puede continuar con el siguiente paso.",
+            "fr": "Très bien. Vous pouvez passer à l’étape suivante.",
+            "pt": "Ótimo. Pode continuar para a próxima etapa."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 이 문제는 어떻게 해결하시는 편인가요?",
+            "en": "How do you usually solve issues like this?",
+            "es": "¿Cómo suele resolver este tipo de problemas?",
+            "fr": "Comment résolvez-vous habituellement ce genre de problème ?",
+            "pt": "Como costuma resolver este tipo de problema?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 일단 원인을 좁혀서 하나씩 점검해요.",
+            "en": "I usually narrow down the root cause step by step.",
+            "es": "Normalmente reduzco la causa raíz paso a paso.",
+            "fr": "En général, je réduis le champ des causes possibles et j’analyse étape par étape.",
+            "pt": "Normalmente vou eliminando as causas possíveis, passo a passo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 그런 방식이면 확실히 오류를 줄일 수 있겠네요.",
+            "en": "I see — that approach would definitely reduce errors.",
+            "es": "Entiendo, ese método definitivamente reducirá errores.",
+            "fr": "D’accord, cette méthode réduira sûrement les erreurs.",
+            "pt": "Ah, faz sentido — isso certamente reduz os erros."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 그렇게 해야 재발 가능성도 줄어요.",
+            "en": "Exactly, that way it prevents the same issue from recurring.",
+            "es": "Exacto, así también se evita que el problema se repita.",
+            "fr": "Exactement, cela permet aussi d’éviter que le problème se reproduise.",
+            "pt": "Exatamente. Assim também evitamos que aconteça novamente."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 그 방법으로 적용해서 다시 시도해볼게요.",
+            "en": "Alright, I’ll apply that method and try again.",
+            "es": "Bien, aplicaré ese enfoque e intentaré nuevamente.",
+            "fr": "Très bien, je vais appliquer ça et réessayer.",
+            "pt": "Tudo bem, aplicarei esse método e voltarei a testar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "궁금하면 과정도 함께 설명드릴게요.",
+            "en": "If you want, I can walk you through the whole process.",
+            "es": "Si quiere, puedo explicarle el proceso completo.",
+            "fr": "Si vous voulez, je peux vous expliquer tout le processus.",
+            "pt": "Se quiser, posso explicar todo o processo consigo."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "회의 전에 간단히 검토해 주실 수 있을까요?",
+            "en": "Could you review this briefly before the meeting?",
+            "es": "¿Puede revisar esto brevemente antes de la reunión?",
+            "fr": "Pourriez-vous relire ceci rapidement avant la réunion ?",
+            "pt": "Pode rever isto rapidamente antes da reunião?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 지금 바로 볼게요.",
+            "en": "Sure, I’ll take a look right now.",
+            "es": "Claro, lo reviso ahora mismo.",
+            "fr": "Bien sûr, je regarde tout de suite.",
+            "pt": "Claro, vejo agora mesmo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 말씀 듣고 보니 이 부분은 수정이 필요하겠네요.",
+            "en": "Oh, now that you mention it, that part definitely needs adjustment.",
+            "es": "Ah, sí, ahora que lo menciona, esa parte necesita un ajuste.",
+            "fr": "Ah oui, maintenant que vous le dites, cette partie a besoin d’un ajustement.",
+            "pt": "Ah, agora que menciona, esta parte precisa mesmo de um ajuste."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요. 내용은 좋은데 표현만 조금 다듬으면 돼요.",
+            "en": "Yes, the content is solid — the wording just needs a little polishing.",
+            "es": "El contenido está bien, solo necesita pulirse un poco la redacción.",
+            "fr": "Le contenu est bon, il faut simplement polir un peu la formulation.",
+            "pt": "O conteúdo está bom — basta polir a formulação."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 그럼 빠르게 고쳐서 회의 전에 다시 보여드릴게요.",
+            "en": "Okay, I’ll fix it quickly and show it to you before the meeting.",
+            "es": "Perfecto, lo corregiré y se lo enviaré antes de la reunión.",
+            "fr": "Très bien, je corrige ça et vous le renvoie avant la réunion.",
+            "pt": "Certo, faço já a correção e envio antes da reunião."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요, 회의 전에만 보내주시면 됩니다.",
+            "en": "Great. Just send it over before the meeting starts.",
+            "es": "Perfecto, envíemelo cuando esté listo.",
+            "fr": "Parfait. Envoyez-le moi dès que c’est prêt.",
+            "pt": "Perfeito, envie-me assim que estiver pronto."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 오늘 안에 이 작업 가능한가요?",
+            "en": "Do you think this task can be done today?",
+            "es": "¿Cree que esta tarea puede completarse hoy?",
+            "fr": "Pensez-vous que cette tâche peut être terminée aujourd’hui ?",
+            "pt": "Acha que esta tarefa pode ser concluída ainda hoje?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "음… 오늘 일정이 조금 빡빡하긴 해요.",
+            "en": "Hmm… today’s schedule is a bit tight.",
+            "es": "Hmm… hoy el horario está un poco ajustado.",
+            "fr": "Hmm… la journée est un peu chargée.",
+            "pt": "Hmm… o meu dia está um pouco cheio."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 그렇다면 우선순위를 다시 조정해볼게요.",
+            "en": "Ah, okay — then I’ll adjust my priorities.",
+            "es": "Ah, entiendo. Reorganizaré mis prioridades.",
+            "fr": "Ah d’accord, je vais revoir mes priorités alors.",
+            "pt": "Entendi — então vou reorganizar as minhas prioridades."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 다른 작업이랑 겹쳐 있어서요.",
+            "en": "Yes, it overlaps with a few other tasks.",
+            "es": "Sí, coincide con algunas tareas adicionales.",
+            "fr": "Oui, j’ai d’autres tâches qui se chevauchent.",
+            "pt": "Sim, coincide com algumas outras tarefas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 가능하면 최대한 오늘 안에 마무리해보겠습니다.",
+            "en": "Alright, I’ll try my best to finish it today if possible.",
+            "es": "Bien, intentaré terminarlo hoy si es posible.",
+            "fr": "Très bien, je ferai de mon mieux pour l’achever aujourd’hui.",
+            "pt": "Certo, tentarei ao máximo terminá-la hoje."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그래도 최대한 도와드릴게요!",
+            "en": "But I’ll help as much as I can!",
+            "es": "Pero haré lo posible por ayudarle.",
+            "fr": "Mais je vous aiderai autant que possible !",
+            "pt": "Mas vou ajudar no que conseguir!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "지금까지 진행하면서 어려운 점은 없으셨어요?",
+            "en": "Have you run into any difficulties so far?",
+            "es": "¿Ha tenido alguna dificultad hasta ahora?",
+            "fr": "Avez-vous rencontré des difficultés jusqu’ici ?",
+            "pt": "Teve alguma dificuldade até agora?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "사실 약간 있었어요. 초반 자료가 조금 헷갈렸어요.",
+            "en": "Actually, yes — the initial data was a bit confusing.",
+            "es": "La verdad sí — los datos iniciales eran un poco confusos.",
+            "fr": "Pour être honnête, oui — les données initiales étaient un peu confuses.",
+            "pt": "Para ser sincero(a), sim — os dados iniciais estavam um pouco confusos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 그런 부분은 미리 알았으면 더 좋았겠네요.",
+            "en": "Oh, it would’ve been helpful to know that earlier.",
+            "es": "Vaya, habría sido útil saber eso antes.",
+            "fr": "Ah, j’aurais aimé savoir ça un peu plus tôt.",
+            "pt": "Ah, teria sido útil saber isso um pouco mais cedo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 그 부분은 새로 정리할 필요가 있겠어요.",
+            "en": "Right, that part needs to be reorganized for clarity.",
+            "es": "Exacto, esa sección necesita reestructuración para mayor claridad.",
+            "fr": "Exactement, cette section doit être réorganisée pour gagner en clarté.",
+            "pt": "Exato, essa secção precisa de ser reestruturada para ficar mais clara."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 그럼 제가 해당 내용 정리해서 공유드릴게요.",
+            "en": "Okay, I’ll reorganize that section and share it with the team.",
+            "es": "Bien, reorganizaré esa parte y la compartiré con el equipo.",
+            "fr": "Très bien, je vais réorganiser cette partie et la partager avec l’équipe.",
+            "pt": "Certo, vou reorganizar essa parte e partilhá-la com a equipa."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "정리되면 서로 훨씬 수월해질 거예요.",
+            "en": "Once it’s整理, everything will flow much better.",
+            "es": "Una vez reorganizada, todo fluirá mucho mejor.",
+            "fr": "Une fois整理, tout sera bien plus fluide.",
+            "pt": "Assim que estiver reorganizada, tudo vai fluir muito melhor."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오늘 도와주신 덕분에 정말 많이 해결됐어요.",
+            "en": "Thanks to your help today, I resolved a lot of issues.",
+            "es": "Gracias a su ayuda hoy pude resolver muchos puntos.",
+            "fr": "Grâce à votre aide aujourd’hui, j’ai pu résoudre beaucoup de points.",
+            "pt": "Graças à sua ajuda hoje, consegui resolver muita coisa."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "다행이네요! 오늘 꽤 복잡한 부분이 많았거든요.",
+            "en": "Glad to hear that! There were quite a few tricky parts today.",
+            "es": "Qué bueno escuchar eso. Hoy había varias partes complejas.",
+            "fr": "Ravi(e) de l’entendre ! Il y avait plusieurs aspects complexes aujourd’hui.",
+            "pt": "Que bom ouvir isso! Hoje havia vários pontos complexos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "네, 앞으로 비슷한 작업도 훨씬 수월할 것 같아요.",
+            "en": "Yes, I think similar tasks will be much easier going forward.",
+            "es": "Sí, creo que tareas similares serán mucho más manejables ahora.",
+            "fr": "Oui, je pense que des tâches similaires seront bien plus simples désormais.",
+            "pt": "Sim, acho que tarefas semelhantes serão bem mais fáceis agora."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요. 그래도 금방 익숙해지실 거예요.",
+            "en": "Exactly — but you’ll get used to them quickly.",
+            "es": "Exacto, pero se acostumbrará muy rápido.",
+            "fr": "Exactement, mais vous vous y habituerez très vite.",
+            "pt": "Exato — mas depressa se habituará."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 이 작업 마무리되면 다시 보고드릴게요!",
+            "en": "Once I wrap this up, I’ll report back right away!",
+            "es": "Una vez que termine todo, le enviaré el informe final.",
+            "fr": "Dès que j’aurai tout terminé, je vous enverrai le rapport.",
+            "pt": "Quando terminar tudo, envio-lhe o relatório final."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋습니다! 기다리고 있을게요.",
+            "en": "Sounds good! I’ll keep an eye out for your final report.",
+            "es": "Perfecto, espero su informe final.",
+            "fr": "Parfait, j’attends votre rapport final.",
+            "pt": "Perfeito, fico a aguardar o relatório final."
+          }
+        }
+      ]
+    }
+  ]
+}

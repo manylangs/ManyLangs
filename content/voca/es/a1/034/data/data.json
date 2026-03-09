@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a1",
+    "id": "034"
+  },
+  "title": {
+    "target": "A1 — 일상 어휘",
+    "en": "A1 — Everyday Vocabulary",
+    "es": "A1 — Vocabulario cotidiano",
+    "fr": "A1 — Vocabulaire quotidien",
+    "pt": "A1 — Vocabulário do dia a dia"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "기계",
+        "en": "machine",
+        "es": "máquina",
+        "fr": "machine",
+        "pt": "máquina"
+      },
+      "examples": [
+        {
+          "target": "기계가 제대로 작동하지 않아요.",
+          "en": "The machine is not working properly.",
+          "es": "La máquina no funciona correctamente.",
+          "fr": "La machine ne fonctionne pas correctement.",
+          "pt": "A máquina não está funcionando direito."
+        },
+        {
+          "target": "새 기계를 설치했어요.",
+          "en": "We installed a new machine.",
+          "es": "Instalamos una máquina nueva.",
+          "fr": "Nous avons installé une nouvelle machine.",
+          "pt": "Instalamos uma máquina nova."
+        },
+        {
+          "target": "이 기계는 사용하기 쉬워요.",
+          "en": "This machine is easy to use.",
+          "es": "Esta máquina es fácil de usar.",
+          "fr": "Cette machine est facile à utiliser.",
+          "pt": "Essa máquina é fácil de usar."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "배터리",
+        "en": "battery",
+        "es": "batería",
+        "fr": "batterie",
+        "pt": "bateria"
+      },
+      "examples": [
+        {
+          "target": "배터리가 거의 다 됐어요.",
+          "en": "The battery is almost dead.",
+          "es": "La batería está casi agotada.",
+          "fr": "La batterie est presque vide.",
+          "pt": "A bateria está quase acabando."
+        },
+        {
+          "target": "배터리를 교체해야 해요.",
+          "en": "You need to replace the battery.",
+          "es": "Debes cambiar la batería.",
+          "fr": "Vous devez remplacer la batterie.",
+          "pt": "Você precisa trocar a bateria."
+        },
+        {
+          "target": "배터리가 빨리 닳아요.",
+          "en": "The battery drains quickly.",
+          "es": "La batería se descarga rápido.",
+          "fr": "La batterie se décharge rapidement.",
+          "pt": "A bateria descarrega rápido."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "충전기",
+        "en": "charger",
+        "es": "cargador",
+        "fr": "chargeur",
+        "pt": "carregador"
+      },
+      "examples": [
+        {
+          "target": "충전기를 가지고 오지 않았어요.",
+          "en": "I didn’t bring my charger.",
+          "es": "No traje mi cargador.",
+          "fr": "Je n'ai pas apporté mon chargeur.",
+          "pt": "Não trouxe meu carregador."
+        },
+        {
+          "target": "충전기를 빌려도 될까요?",
+          "en": "Can I borrow your charger?",
+          "es": "¿Puedo pedirte prestado tu cargador?",
+          "fr": "Puis-je emprunter votre chargeur ?",
+          "pt": "Posso pegar seu carregador emprestado?"
+        },
+        {
+          "target": "충전기가 고장났어요.",
+          "en": "The charger is broken.",
+          "es": "El cargador está roto.",
+          "fr": "Le chargeur est cassé.",
+          "pt": "O carregador está quebrado."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "전기",
+        "en": "electricity",
+        "es": "electricidad",
+        "fr": "électricité",
+        "pt": "eletricidade"
+      },
+      "examples": [
+        {
+          "target": "전기가 갑자기 나갔어요.",
+          "en": "The electricity suddenly went out.",
+          "es": "La electricidad se cortó de repente.",
+          "fr": "L'électricité a soudain été coupée.",
+          "pt": "A eletricidade acabou de repente."
+        },
+        {
+          "target": "전기 요금이 올랐어요.",
+          "en": "The electricity bill went up.",
+          "es": "La factura de electricidad subió.",
+          "fr": "La facture d'électricité a augmenté.",
+          "pt": "A conta de luz aumentou."
+        },
+        {
+          "target": "전기를 아껴 써야 해요.",
+          "en": "We should save electricity.",
+          "es": "Debemos ahorrar electricidad.",
+          "fr": "Nous devons économiser l'électricité.",
+          "pt": "Precisamos economizar eletricidade."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "불",
+        "en": "fire / light",
+        "es": "fuego / luz",
+        "fr": "feu / lumière",
+        "pt": "fogo / luz"
+      },
+      "examples": [
+        {
+          "target": "방 불을 꺼 주세요.",
+          "en": "Please turn off the light in the room.",
+          "es": "Apaga la luz de la habitación, por favor.",
+          "fr": "Veuillez éteindre la lumière de la chambre.",
+          "pt": "Desligue a luz do quarto, por favor."
+        },
+        {
+          "target": "불이 나서 건물이 대피했어요.",
+          "en": "A fire broke out, so the building was evacuated.",
+          "es": "Hubo un incendio y evacuaron el edificio.",
+          "fr": "Un incendie s'est déclaré, donc l'immeuble a été évacué.",
+          "pt": "Houve um incêndio e o prédio foi evacuado."
+        },
+        {
+          "target": "불을 조심해야 해요.",
+          "en": "You must be careful with fire.",
+          "es": "Debes tener cuidado con el fuego.",
+          "fr": "Vous devez faire attention au feu.",
+          "pt": "Você deve tomar cuidado com o fogo."
+        }
+      ]
+    }
+  ]
+}

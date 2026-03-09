@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "b2",
+    "id": "011"
+  },
+  "title": {
+    "target": "-거든요(설명·강조)",
+    "en": "You see, / It's because ~ (-거든요)",
+    "es": "Es que / Verás, ~ (-거든요)",
+    "fr": "C’est que / Tu vois, ~ (-거든요)",
+    "pt": "É que / Sabes, ~ (-거든요)"
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "-거든요는 자신의 생각·상황·이유를 설명하거나 강조할 때 사용하는 구어체 표현이다.",
+        "en": "The form -거든요 is a colloquial expression used to explain a reason, background, or personal situation.",
+        "es": "La forma -거든요 es una expresión coloquial que se usa para explicar una razón, un contexto o una situación personal.",
+        "fr": "La forme -거든요 est une expression familière utilisée pour expliquer une raison, un contexte ou une situation personnelle.",
+        "pt": "A forma -거든요 é uma expressão coloquial usada para explicar uma razão, um contexto ou uma situação pessoal."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "상대방이 모를 만한 배경 정보를 덧붙일 때 자연스럽다.",
+        "en": "It sounds natural when giving information the listener likely doesn’t know.",
+        "es": "Suena natural cuando se da información que el oyente probablemente no conoce.",
+        "fr": "Elle est naturelle lorsqu’on donne une information que l’interlocuteur ne connaît probablement pas.",
+        "pt": "É natural quando se dá uma informação que o ouvinte provavelmente não conhece."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "이미 말한 내용에 추가 설명을 줄 때 자주 쓰인다.",
+        "en": "It is often used to add extra explanation to something already mentioned.",
+        "es": "Se usa a menudo para añadir una explicación adicional a algo ya mencionado.",
+        "fr": "Elle sert souvent à ajouter une explication supplémentaire à quelque chose déjà mentionné.",
+        "pt": "É frequentemente usada para acrescentar uma explicação adicional a algo já mencionado."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "부드럽게 자신의 입장을 밝히거나 변명할 때 유용하다.",
+        "en": "It is useful for gently expressing one’s viewpoint or giving an excuse.",
+        "es": "Es útil para expresar la propia posición o dar una excusa de manera suave.",
+        "fr": "Elle est utile pour exprimer son point de vue ou donner une excuse de manière douce.",
+        "pt": "É útil para expressar suavemente a própria posição ou dar uma justificação."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문장 끝에서 말투에 여유와 친근함을 더해 준다.",
+        "en": "At the end of a sentence, it adds a soft and friendly tone.",
+        "es": "Al final de la frase añade un tono cercano y amistoso.",
+        "fr": "Placée en fin de phrase, elle ajoute un ton chaleureux et amical.",
+        "pt": "-거든요 no final da frase acrescenta um tom amigável e descontraído."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "상대의 질문에 이유를 말해 줄 때 매우 흔히 사용된다.",
+        "en": "It is commonly used when answering a question by giving the reason.",
+        "es": "Es muy común cuando se responde a una pregunta explicando el motivo.",
+        "fr": "Elle est très fréquente pour répondre à une question en donnant une justification.",
+        "pt": "É muito comum ao responder a uma pergunta explicando o motivo."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "상황을 강조하거나 자신의 감정을 드러낼 때도 쓰인다.",
+        "en": "It can also express emphasis or reveal the speaker’s feelings.",
+        "es": "También puede expresar énfasis o mostrar los sentimientos del hablante.",
+        "fr": "Elle peut aussi exprimer une nuance d’insistance ou révéler l’émotion du locuteur.",
+        "pt": "Também pode transmitir ênfase ou revelar os sentimentos do falante."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "격식 있는 문어체에서는 잘 사용되지 않는다.",
+        "en": "It is rarely used in formal or written contexts.",
+        "es": "Se usa poco en contextos formales o escritos.",
+        "fr": "Elle est rarement utilisée dans des contextes formels ou écrits.",
+        "pt": "É pouco usada em contextos formais ou textos escritos."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "감정의 강도는 문맥에 따라 다양하지만 비교적 부드럽고 편안한 느낌이다.",
+        "en": "The emotional tone varies, but it generally feels soft and casual.",
+        "es": "El tono emocional es suave y casual.",
+        "fr": "Son ton émotionnel est globalement doux et décontracté.",
+        "pt": "O tom emocional é geralmente leve e informal."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "과거·현재 모두 사용할 수 있으며 주로 대화 중 상황 설명에서 쓰인다.",
+        "en": "It can be used for both past and present situations, mainly in spoken explanations.",
+        "es": "Puede usarse en pasado o presente, sobre todo en explicaciones orales.",
+        "fr": "Elle s’emploie au passé comme au présent, surtout dans des explications orales.",
+        "pt": "Pode ser usada no passado ou no presente, sobretudo em explicações orais."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "오늘 못 가요. 일이 많거든요.",
+        "en": "I can’t go today. I have a lot of work, you see.",
+        "es": "Hoy no puedo ir. Es que tengo mucho trabajo.",
+        "fr": "Je ne peux pas venir aujourd’hui. C’est que j’ai beaucoup de travail.",
+        "pt": "Hoje não posso ir. É que tenho muito trabalho."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그 사람 알아요. 예전에 같이 일했거든요.",
+        "en": "I know that person. We worked together before.",
+        "es": "Conozco a esa persona. Es que trabajamos juntos antes.",
+        "fr": "Je connais cette personne. C’est qu’on a déjà travaillé ensemble.",
+        "pt": "Conheço essa pessoa. É que trabalhámos juntos antes."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "지하철로 갈게요. 그게 더 빠르거든요.",
+        "en": "I’ll take the subway. It’s faster, you see.",
+        "es": "Voy en metro. Es que es más rápido.",
+        "fr": "Je vais prendre le métro. C’est que c’est plus rapide.",
+        "pt": "Vou de metro. É que é mais rápido."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "이걸 추천해요. 맛있거든요.",
+        "en": "I recommend this. It’s really good.",
+        "es": "Te recomiendo esto. Es que está muy rico.",
+        "fr": "Je te recommande ça. C’est que c’est vraiment bon.",
+        "pt": "Recomendo-te isto. É que é mesmo bom."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "조금 늦을 거예요. 길이 막히거든요.",
+        "en": "I’ll be a bit late. The traffic is heavy.",
+        "es": "Voy a llegar un poco tarde. Es que hay mucho tráfico.",
+        "fr": "Je vais arriver un peu en retard. C’est qu’il y a beaucoup de trafic.",
+        "pt": "Vou chegar um pouco atrasado. É que há muito trânsito."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그만둘까 해요. 너무 힘들거든요.",
+        "en": "I’m thinking of quitting. It’s too exhausting, you see.",
+        "es": "Estoy pensando en dejarlo. Es que es demasiado cansado.",
+        "fr": "Je pense à arrêter. C’est que c’est trop fatigant.",
+        "pt": "Estou a pensar em desistir. É que estou demasiado cansado."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "지금 연락하기 어려워요. 회의 중이거든요.",
+        "en": "It’s hard to call right now. I’m in a meeting.",
+        "es": "Ahora no puedo llamar. Es que estoy en una reunión.",
+        "fr": "Je ne peux pas appeler maintenant. C’est que je suis en réunion.",
+        "pt": "Agora não consigo ligar. É que estou numa reunião."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "밖에 안 나갔어요. 비가 많이 오거든요.",
+        "en": "I didn’t go outside. It’s raining a lot.",
+        "es": "No salí afuera. Es que está lloviendo mucho.",
+        "fr": "Je ne suis pas sorti. C’est qu’il pleut beaucoup.",
+        "pt": "Não saí de casa. É que está a chover bastante."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "오늘은 집에 있을게요. 몸이 좀 안 좋거든요.",
+        "en": "I’ll stay home today. I’m not feeling well.",
+        "es": "Hoy me quedo en casa. Es que no me siento bien.",
+        "fr": "Je vais rester à la maison aujourd’hui. C’est que je ne me sens pas bien.",
+        "pt": "Hoje vou ficar em casa. É que não me sinto muito bem."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "이 책 읽어 보세요. 내용이 좋거든요.",
+        "en": "Try reading this book. The content is really good.",
+        "es": "Lee este libro. Es que el contenido es muy bueno.",
+        "fr": "Lis ce livre. C’est que son contenu est excellent.",
+        "pt": "Lê este livro. É que o conteúdo é muito bom."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "저는 여기로 갈게요. 익숙하거든요.",
+        "en": "I’ll go this way. I’m familiar with it.",
+        "es": "Yo voy por aquí. Es que conozco bien el camino.",
+        "fr": "Je vais passer par ici. C’est que je connais bien le chemin.",
+        "pt": "Vou por aqui. É que conheço bem o caminho."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "시험이 걱정돼요. 준비가 부족하거든요.",
+        "en": "I’m worried about the exam. I didn’t prepare enough.",
+        "es": "Me preocupa el examen. Es que no estudié lo suficiente.",
+        "fr": "Je suis inquiet pour l’examen. C’est que je n’ai pas assez étudié.",
+        "pt": "Estou preocupado com o exame. É que não estudei o suficiente."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "일찍 자려고요. 내일 중요한 발표가 있거든요.",
+        "en": "I’m going to sleep early. I have an important presentation tomorrow.",
+        "es": "Me voy a dormir temprano. Es que mañana tengo una presentación importante.",
+        "fr": "Je vais me coucher tôt. C’est que j’ai une présentation importante demain.",
+        "pt": "Vou dormir cedo. É que amanhã tenho uma apresentação importante."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "오늘 분위기가 좋아요. 오랜만에 다 같이 모였거든요.",
+        "en": "The atmosphere is nice today. It’s been a while since everyone gathered.",
+        "es": "El ambiente hoy está muy bonito. Es que hace tiempo que no nos reuníamos todos.",
+        "fr": "L’ambiance est agréable aujourd’hui. C’est que ça faisait longtemps qu’on n’était pas tous réunis.",
+        "pt": "O ambiente hoje está agradável. É que há muito tempo que não estávamos todos juntos."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "가격이 괜찮아요. 할인 중이거든요.",
+        "en": "The price is good. It’s on sale.",
+        "es": "El precio está bien. Es que está en oferta.",
+        "fr": "Le prix est bon. C’est qu’il est en promotion.",
+        "pt": "O preço está bom. É que está em promoção."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "요즘 바빠요. 새로운 프로젝트를 맡았거든요.",
+        "en": "I’ve been busy lately. I took on a new project.",
+        "es": "He estado ocupado últimamente. Es que asumí un proyecto nuevo.",
+        "fr": "Je suis très occupé ces derniers temps. C’est que j’ai pris un nouveau projet.",
+        "pt": "Tenho andado muito ocupado. É que assumi um novo projeto."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "지금 나가야 해요. 약속 시간이 다 됐거든요.",
+        "en": "I need to go now. It’s almost time for my appointment.",
+        "es": "Tengo que irme ahora. Es que ya casi es la hora de la cita.",
+        "fr": "Je dois partir maintenant. C’est que l’heure de mon rendez-vous approche.",
+        "pt": "Tenho de sair agora. É que já está quase na hora do meu compromisso."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "회의가 길어졌어요. 예상보다 논의가 많았거든요.",
+        "en": "The meeting ran long. There was more to discuss than expected.",
+        "es": "La reunión se alargó. Es que había más cosas de las que hablar.",
+        "fr": "La réunion a duré longtemps. C’est qu’il y avait plus de points à discuter que prévu.",
+        "pt": "A reunião demorou mais. É que havia mais assuntos para discutir do que o esperado."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그 사람을 믿게 됐어요. 진심이 느껴지거든요.",
+        "en": "I came to trust him. You can feel his sincerity.",
+        "es": "Llegué a confiar en él. Es que se siente su sinceridad.",
+        "fr": "J’ai fini par lui faire confiance. C’est que sa sincérité se ressent.",
+        "pt": "Acabei por confiar nele. É que se sente a sinceridade dele."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "이곳이 좋아요. 조용하고 편안하거든요.",
+        "en": "I like this place. It’s quiet and comfortable.",
+        "es": "Me gusta este lugar. Es que es tranquilo y acogedor.",
+        "fr": "J’aime cet endroit. C’est que c’est calme et confortable.",
+        "pt": "Gosto deste lugar. É que é calmo e confortável."
+      }
+    }
+  ]
+}

@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a1",
+    "id": "008"
+  },
+  "title": {
+    "target": "장소 묘사하기",
+    "en": "Describing Places",
+    "es": "Describir lugares",
+    "fr": "Décrire un lieu",
+    "pt": "Descrever lugares"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "여기 카페 분위기 어때요?",
+            "en": "How’s the atmosphere in this café?",
+            "es": "¿Cómo es el ambiente de este café?",
+            "fr": "Comment est l’ambiance dans ce café ?",
+            "pt": "Como é o ambiente deste café?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "여기 꽤 아늑해요. 사람도 적고요.",
+            "en": "It’s pretty cozy. Not many people here.",
+            "es": "Es bastante acogedor. No hay mucha gente.",
+            "fr": "C’est assez chaleureux. Il n’y a pas trop de monde.",
+            "pt": "É bastante acolhedor. Não há muita gente."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 좋아 보이네요! 음악도 조용해요?",
+            "en": "Oh, sounds nice! Is the music quiet too?",
+            "es": "Oh, ¡suena bien! ¿La música es tranquila también?",
+            "fr": "Ah, ça a l’air sympa ! La musique est calme aussi ?",
+            "pt": "Ah, parece ótimo! A música também é tranquila?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 잔잔한 음악만 나와요.",
+            "en": "Yes, they only play soft music.",
+            "es": "Sí, solo ponen música suave.",
+            "fr": "Oui, ils passent seulement de la musique douce.",
+            "pt": "Sim, só passam música suave."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요, 그럼 여기 앉을게요.",
+            "en": "Great, then I’ll sit here.",
+            "es": "Genial, entonces me quedo aquí.",
+            "fr": "Super, je vais m’asseoir ici.",
+            "pt": "Perfeito, vou ficar aqui."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "편하게 앉으세요!",
+            "en": "Make yourself comfortable!",
+            "es": "¡Siéntate donde quieras!",
+            "fr": "Installez-vous tranquillement !",
+            "pt": "Fique à vontade!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이 근처 공원은 어떤 곳이에요?",
+            "en": "What’s the park like around here?",
+            "es": "¿Cómo es el parque de por aquí?",
+            "fr": "Le parc d’ici, il est comment ?",
+            "pt": "Como é o parque aqui perto?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "조용하고 넓어요. 꽃도 많아요.",
+            "en": "It’s quiet and wide. Lots of flowers too.",
+            "es": "Es tranquilo y amplio. Hay muchas flores también.",
+            "fr": "Il est calme et assez large. Il y a aussi beaucoup de fleurs.",
+            "pt": "É calmo e espaçoso. Há muitas flores também."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 산책하기 좋겠네요! 벤치도 많아요?",
+            "en": "Oh, sounds perfect for a walk! Are there many benches?",
+            "es": "Oh, ¡perfecto para caminar! ¿Hay muchos bancos?",
+            "fr": "Ah, parfait pour marcher ! Il y a beaucoup de bancs ?",
+            "pt": "Ah, perfeito para caminhar! Há muitos bancos?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 그늘 있는 자리도 많아요.",
+            "en": "Yes, there are many shaded spots.",
+            "es": "Sí, hay muchas zonas con sombra.",
+            "fr": "Oui, il y a plein de coins à l’ombre.",
+            "pt": "Sim, há muitas zonas com sombra."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요, 한번 가볼게요.",
+            "en": "Nice, I’ll go check it out.",
+            "es": "Vale, lo iré a ver.",
+            "fr": "Génial, j’irai voir.",
+            "pt": "Boa, vou lá ver."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "즐거운 시간 보내세요!",
+            "en": "Enjoy your time there!",
+            "es": "¡Que lo disfrutes!",
+            "fr": "Profitez bien !",
+            "pt": "Aproveite!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "도서관 분위기 어때요?",
+            "en": "How’s the library atmosphere?",
+            "es": "¿Cómo es el ambiente de la biblioteca?",
+            "fr": "L’ambiance de la bibliothèque, c’est comment ?",
+            "pt": "Como é o ambiente da biblioteca?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "정말 조용해요. 학생들도 예의 있어요.",
+            "en": "It’s very quiet. Students are polite too.",
+            "es": "Es muy silenciosa. Los estudiantes son respetuosos.",
+            "fr": "C’est très silencieux. Les étudiants sont respectueux.",
+            "pt": "É muito silenciosa. Os estudantes são respeitadores."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 집중 잘 되겠네요. 자리도 넉넉해요?",
+            "en": "Oh, sounds great for studying. Are there many seats?",
+            "es": "Oh, suena ideal para estudiar. ¿Hay muchos asientos?",
+            "fr": "Oh, ça doit être bien pour étudier. Il y a beaucoup de places ?",
+            "pt": "Ah, ótimo para estudar. Há muitos lugares?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 창가 자리가 특히 많아요.",
+            "en": "Yes, especially by the windows.",
+            "es": "Sí, sobre todo en las mesas cerca de las ventanas.",
+            "fr": "Oui, surtout près des fenêtres.",
+            "pt": "Sim, especialmente perto das janelas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋네요, 저도 가볼게요.",
+            "en": "Nice, I’ll visit it later.",
+            "es": "Perfecto, iré más tarde.",
+            "fr": "Parfait, j’irai plus tard.",
+            "pt": "Fixe, vou lá mais tarde."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "금방 찾을 수 있을 거예요!",
+            "en": "You’ll find a seat easily!",
+            "es": "¡Encontrarás sitio fácilmente!",
+            "fr": "Vous trouverez facilement une place !",
+            "pt": "Vai encontrar lugar facilmente!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "여기 동네는 어떤 분위기예요?",
+            "en": "What’s the neighborhood like here?",
+            "es": "¿Cómo es este barrio?",
+            "fr": "Le quartier ici, il est comment ?",
+            "pt": "Como é o bairro aqui?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "조용하고 가족들이 많아서 편해요.",
+            "en": "It’s quiet, with many families living here.",
+            "es": "Es tranquilo y con muchas familias.",
+            "fr": "Il est calme, avec beaucoup de familles.",
+            "pt": "É calmo e cheio de famílias."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 안전한 동네라니 좋네요!",
+            "en": "Oh, that’s nice! I’m glad it’s a safe area.",
+            "es": "Oh, ¡qué bien! Me alegra que sea un lugar seguro.",
+            "fr": "Ah, super ! Contente qu’il soit sûr.",
+            "pt": "Ah, que bom! Ainda bem que é seguro."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 밤에도 밝고 안전한 편이에요.",
+            "en": "Yes, even at night it’s bright and safe.",
+            "es": "Sí, incluso por la noche está bien iluminado.",
+            "fr": "Oui, même le soir, c’est éclairé et sûr.",
+            "pt": "Sim, mesmo à noite é bem iluminado."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 산책도 편하게 할 수 있겠어요.",
+            "en": "Then walking around must feel comfortable.",
+            "es": "Entonces pasear debe ser agradable.",
+            "fr": "Alors on peut se promener tranquillement.",
+            "pt": "Então deve ser agradável passear."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "산책하기 딱 좋아요!",
+            "en": "It’s great for taking walks!",
+            "es": "¡Es un sitio perfecto para caminar!",
+            "fr": "C’est agréable pour se balader !",
+            "pt": "É ótimo para caminhar!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "여기 운동장은 어때요?",
+            "en": "How’s the sports field here?",
+            "es": "¿Cómo es el campo deportivo de aquí?",
+            "fr": "Le terrain de sport ici, il est comment ?",
+            "pt": "Como é o campo desportivo daqui?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "엄청 넓어요. 바닥도 깔끔하고요.",
+            "en": "It’s really wide. The ground is clean too.",
+            "es": "Es muy amplio. Y el suelo está limpio.",
+            "fr": "Il est très grand. Le sol est propre aussi.",
+            "pt": "É muito amplo. O chão também é limpo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 넓은 공간 좋네요! 사람도 많아요?",
+            "en": "Oh, a big open space sounds great! Are there many people?",
+            "es": "Oh, un espacio grande suena genial. ¿Hay mucha gente?",
+            "fr": "Ah, un grand espace, c’est génial ! Il y a beaucoup de monde ?",
+            "pt": "Ah, um espaço grande é perfeito! Há muita gente?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "시간대마다 다른데, 지금은 적어요.",
+            "en": "Depends on the time, but right now it’s not crowded.",
+            "es": "Depende de la hora, pero ahora no hay mucha gente.",
+            "fr": "Ça dépend de l’heure, mais en ce moment, il n’y a pas trop de monde.",
+            "pt": "Depende da hora, mas agora não há muita gente."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요, 한번 뛰어봐야겠어요.",
+            "en": "Nice, I should try running there.",
+            "es": "Perfecto, debería venir a correr un día.",
+            "fr": "Super, je devrais essayer de courir un peu.",
+            "pt": "Boa, tenho de vir correr um dia."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "운동하기 좋은 날이에요!",
+            "en": "It’s a good day to exercise!",
+            "es": "¡Buen día para hacer ejercicio!",
+            "fr": "C’est un bon jour pour faire du sport !",
+            "pt": "É um bom dia para treinar!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이 건물은 어떤 느낌이에요?",
+            "en": "What does this building feel like?",
+            "es": "¿Qué impresión da este edificio?",
+            "fr": "Ce bâtiment, il donne quelle impression ?",
+            "pt": "Que impressão dá este edifício?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "요즘 스타일이에요. 깔끔하고 세련됐어요.",
+            "en": "It’s very modern—clean and stylish.",
+            "es": "Es muy moderno: limpio y elegante.",
+            "fr": "C’est très moderne—propre et élégant.",
+            "pt": "É muito moderno—limpo e elegante."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 현대적인 분위기 좋네요! 로비는 넓어요?",
+            "en": "Oh, a modern style sounds nice! Is the lobby wide?",
+            "es": "Oh, un estilo moderno suena bien. ¿El vestíbulo es grande?",
+            "fr": "Ah, un style moderne, j’aime bien ! Le hall est large ?",
+            "pt": "Ah, um estilo moderno soa bem! O átrio é grande?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 천장도 높고 넓어요.",
+            "en": "Yes, the ceiling is high and the space is big.",
+            "es": "Sí, el techo es alto y el espacio es amplio.",
+            "fr": "Oui, le plafond est haut et l’espace est grand.",
+            "pt": "Sim, o teto é alto e o espaço é amplo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 그렇군요. 구경해봐야겠어요.",
+            "en": "Good to know. I should take a look.",
+            "es": "Vale, iré a echar un vistazo.",
+            "fr": "D’accord, je vais aller voir.",
+            "pt": "Certo, vou dar uma olhada."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "구경하기 좋을 거예요!",
+            "en": "You’ll enjoy looking around!",
+            "es": "¡Seguro que te va a gustar!",
+            "fr": "Vous aimerez sûrement visiter !",
+            "pt": "Acho que vai gostar!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "근처 시장 분위기 어때요?",
+            "en": "How’s the market nearby?",
+            "es": "¿Cómo es el mercado cercano?",
+            "fr": "Le marché près d’ici, il est comment ?",
+            "pt": "Como é o mercado aqui perto?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "사람도 많고 활기차요.",
+            "en": "It’s busy and energetic.",
+            "es": "Es muy vivo y con mucha energía.",
+            "fr": "C’est animé et plein d’énergie.",
+            "pt": "É muito vivo e cheio de energia."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 활기차겠네요! 가게도 많아요?",
+            "en": "Oh, sounds lively! Are there many shops?",
+            "es": "Oh, parece animado. ¿Hay muchas tiendas?",
+            "fr": "Ah, ça a l’air vivant ! Il y a beaucoup de boutiques ?",
+            "pt": "Ah, parece animado! Há muitas lojas?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 먹거리 가게도 정말 많아요.",
+            "en": "Yes, especially food stalls—there are lots of them.",
+            "es": "Sí, sobre todo los puestos de comida—hay un montón.",
+            "fr": "Oui, surtout les stands de nourriture—il y en a beaucoup.",
+            "pt": "Sim, sobretudo bancas de comida—há imensas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋네요! 한번 가볼게요.",
+            "en": "Great, I’ll visit it later.",
+            "es": "Genial, lo visitaré luego.",
+            "fr": "Génial, j’irai faire un tour.",
+            "pt": "Boa, vou visitá-lo depois."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "구경하면 재밌을 거예요!",
+            "en": "You’ll have fun walking around!",
+            "es": "¡Te divertirás mucho al recorrerlo!",
+            "fr": "Vous allez bien vous amuser !",
+            "pt": "Vai divertir-se muito a passear!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이 카페는 조용한 편인가요?",
+            "en": "Is this café usually quiet?",
+            "es": "¿Este café suele ser tranquilo?",
+            "fr": "Ce café est plutôt calme ?",
+            "pt": "Este café costuma ser calmo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 주말 빼고는 조용한 편이에요.",
+            "en": "Yes, except on weekends, it’s quiet.",
+            "es": "Sí, excepto los fines de semana, es bastante tranquilo.",
+            "fr": "Oui, sauf le week-end, c’est assez tranquille.",
+            "pt": "Sim, tirando os fins de semana, é bastante calmo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 공부하기에도 괜찮겠네요!",
+            "en": "Oh, good! Seems nice for studying too.",
+            "es": "Oh, ¡bien! Parece un buen lugar para estudiar.",
+            "fr": "Ah, parfait ! Ça doit être bien pour étudier.",
+            "pt": "Ah, ótimo! Parece um bom sítio para estudar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 학생들이 자주 와서 분위기 좋아요.",
+            "en": "Students come often, so the vibe is good.",
+            "es": "Los estudiantes vienen mucho, así que el ambiente es agradable.",
+            "fr": "Les étudiants viennent souvent, donc l’ambiance est agréable.",
+            "pt": "Os estudantes vêm muito, por isso o ambiente é bom."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요, 여기서 조금 있을게요.",
+            "en": "Alright, I’ll stay here for a bit.",
+            "es": "Vale, me quedaré un rato aquí.",
+            "fr": "Très bien, je vais rester un moment.",
+            "pt": "Perfeito, vou ficar aqui um bocadinho."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "편하게 쉬다 가세요!",
+            "en": "Relax and take your time!",
+            "es": "¡Tómate tu tiempo!",
+            "fr": "Prenez votre temps !",
+            "pt": "Fique à vontade!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저 건물은 무슨 건물이에요?",
+            "en": "What kind of building is that?",
+            "es": "¿Qué tipo de edificio es ese?",
+            "fr": "Ce bâtiment là-bas, c’est quoi ?",
+            "pt": "Que tipo de edifício é aquele?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "거긴 전시관이에요. 자주 행사해요.",
+            "en": "That’s an exhibition hall. They hold events often.",
+            "es": "Es una sala de exposiciones. Hacen eventos a menudo.",
+            "fr": "C’est une salle d’exposition. Ils organisent souvent des événements.",
+            "pt": "É uma sala de exposições. Fazem muitos eventos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 그래서 사람들이 많군요!",
+            "en": "Ah, that’s why so many people are there!",
+            "es": "Ah, por eso hay tanta gente ahí.",
+            "fr": "Ah, c’est pour ça qu’il y a autant de monde !",
+            "pt": "Ah, por isso há tanta gente!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 오늘도 작은 행사하고 있어요.",
+            "en": "Yes, there’s a small event today as well.",
+            "es": "Sí, hoy también hay uno pequeño.",
+            "fr": "Oui, il y en a un petit aujourd’hui aussi.",
+            "pt": "Sim, hoje também há um pequeno."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저도 구경 한번 해봐야겠어요.",
+            "en": "I should check it out too.",
+            "es": "Creo que debería ir a verlo también.",
+            "fr": "Je devrais aller voir aussi.",
+            "pt": "Acho que também devia ir ver."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "가보면 재미있을 거예요!",
+            "en": "You’ll enjoy visiting it!",
+            "es": "¡Seguro que te gustará!",
+            "fr": "Vous allez sûrement apprécier !",
+            "pt": "Vai gostar de certeza!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이곳 주변은 밤에 어때요?",
+            "en": "How is this area at night?",
+            "es": "¿Cómo es esta zona por la noche?",
+            "fr": "Cette zone, le soir, elle est comment ?",
+            "pt": "Como é esta zona à noite?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "밤에도 큰길은 꽤 밝아요.",
+            "en": "The main street is quite bright at night.",
+            "es": "La calle principal está bien iluminada por la noche.",
+            "fr": "La rue principale est assez éclairée la nuit.",
+            "pt": "A rua principal é bem iluminada à noite."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 밝으면 걷기 편하겠네요!",
+            "en": "Oh, if it’s bright, walking must feel safer!",
+            "es": "Oh, si está iluminado, es más seguro caminar.",
+            "fr": "Ah, si c’est éclairé, c’est rassurant pour marcher !",
+            "pt": "Ah, se for iluminada, é mais seguro caminhar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 사람도 제법 있어서 무섭지 않아요.",
+            "en": "Yes, there are enough people, so it doesn't feel scary.",
+            "es": "Sí, hay suficiente gente, así que no da miedo.",
+            "fr": "Oui, il y a assez de gens, donc ce n’est pas effrayant.",
+            "pt": "Sim, há gente suficiente para não ser assustador."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "감사해요, 참고할게요.",
+            "en": "Thanks, that’s helpful.",
+            "es": "Gracias, eso me ayuda.",
+            "fr": "Merci, c’est utile.",
+            "pt": "Obrigado, isso ajuda."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "필요한 거 있으면 또 물어보세요!",
+            "en": "Ask me anytime if you need more info!",
+            "es": "Si necesitas algo más, ¡pregunta sin problema!",
+            "fr": "Si vous avez d’autres questions, n’hésitez pas !",
+            "pt": "Se precisar de mais alguma coisa, diga!"
+          }
+        }
+      ]
+    }
+  ]
+}

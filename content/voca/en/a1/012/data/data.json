@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a1",
+    "id": "012"
+  },
+  "title": {
+    "target": "A1 — 일상 어휘",
+    "en": "A1 — Everyday Vocabulary",
+    "es": "A1 — Vocabulario cotidiano",
+    "fr": "A1 — Vocabulaire quotidien",
+    "pt": "A1 — Vocabulário do dia a dia"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "우유",
+        "en": "milk",
+        "es": "leche",
+        "fr": "lait",
+        "pt": "leite"
+      },
+      "examples": [
+        {
+          "target": "아침마다 우유를 마셔요.",
+          "en": "I drink milk every morning.",
+          "es": "Bebo leche todas las mañanas.",
+          "fr": "Je bois du lait chaque matin.",
+          "pt": "Eu bebo leite todas as manhãs."
+        },
+        {
+          "target": "우유가 냉장고에 있어요.",
+          "en": "The milk is in the refrigerator.",
+          "es": "La leche está en el refrigerador.",
+          "fr": "Le lait est dans le réfrigérateur.",
+          "pt": "O leite está na geladeira."
+        },
+        {
+          "target": "우유가 다 떨어졌어요.",
+          "en": "We are out of milk.",
+          "es": "Nos quedamos sin leche.",
+          "fr": "Nous n’avons plus de lait.",
+          "pt": "O leite acabou."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "아침",
+        "en": "morning",
+        "es": "mañana",
+        "fr": "matin",
+        "pt": "manhã"
+      },
+      "examples": [
+        {
+          "target": "아침에 일찍 일어났어요.",
+          "en": "I woke up early in the morning.",
+          "es": "Me desperté temprano por la mañana.",
+          "fr": "Je me suis réveillé tôt le matin.",
+          "pt": "Acordei cedo de manhã."
+        },
+        {
+          "target": "아침 공기가 상쾌해요.",
+          "en": "The morning air is refreshing.",
+          "es": "El aire de la mañana es refrescante.",
+          "fr": "L’air du matin est rafraîchissant.",
+          "pt": "O ar da manhã é refrescante."
+        },
+        {
+          "target": "아침 준비를 하고 있어요.",
+          "en": "I’m getting ready in the morning.",
+          "es": "Me estoy preparando por la mañana.",
+          "fr": "Je me prépare le matin.",
+          "pt": "Estou me preparando de manhã."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "점심",
+        "en": "lunch",
+        "es": "almuerzo",
+        "fr": "déjeuner",
+        "pt": "almoço"
+      },
+      "examples": [
+        {
+          "target": "친구와 점심을 먹었어요.",
+          "en": "I ate lunch with a friend.",
+          "es": "Almorcé con un amigo.",
+          "fr": "J’ai déjeuné avec un ami.",
+          "pt": "Almocei com um amigo."
+        },
+        {
+          "target": "점심 시간이 되었어요.",
+          "en": "It’s lunchtime.",
+          "es": "Es la hora del almuerzo.",
+          "fr": "C’est l’heure du déjeuner.",
+          "pt": "É hora do almoço."
+        },
+        {
+          "target": "점심 메뉴를 고르고 있어요.",
+          "en": "I’m choosing a lunch menu.",
+          "es": "Estoy eligiendo el menú del almuerzo.",
+          "fr": "Je choisis le menu du déjeuner.",
+          "pt": "Estou escolhendo o menu do almoço."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "저녁",
+        "en": "dinner",
+        "es": "cena",
+        "fr": "dîner",
+        "pt": "jantar"
+      },
+      "examples": [
+        {
+          "target": "오늘 저녁은 집에서 먹을 거예요.",
+          "en": "I will have dinner at home today.",
+          "es": "Cenaré en casa hoy.",
+          "fr": "Je vais dîner à la maison aujourd’hui.",
+          "pt": "Vou jantar em casa hoje."
+        },
+        {
+          "target": "저녁 시간이 늦어졌어요.",
+          "en": "Dinner time has been delayed.",
+          "es": "La hora de la cena se retrasó.",
+          "fr": "L’heure du dîner a été retardée.",
+          "pt": "A hora do jantar atrasou."
+        },
+        {
+          "target": "저녁 준비를 도와줄까요?",
+          "en": "Shall I help with dinner preparation?",
+          "es": "¿Quieres que ayude a preparar la cena?",
+          "fr": "Voulez-vous que j’aide à préparer le dîner?",
+          "pt": "Quer que eu ajude a preparar o jantar?"
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "식사",
+        "en": "meal",
+        "es": "comida",
+        "fr": "repas",
+        "pt": "refeição"
+      },
+      "examples": [
+        {
+          "target": "식사가 준비되었어요.",
+          "en": "The meal is ready.",
+          "es": "La comida está lista.",
+          "fr": "Le repas est prêt.",
+          "pt": "A refeição está pronta."
+        },
+        {
+          "target": "규칙적인 식사가 중요해요.",
+          "en": "Regular meals are important.",
+          "es": "Las comidas regulares son importantes.",
+          "fr": "Les repas réguliers sont importants.",
+          "pt": "As refeições regulares são importantes."
+        },
+        {
+          "target": "식사 후에 산책을 했어요.",
+          "en": "I took a walk after the meal.",
+          "es": "Di un paseo después de la comida.",
+          "fr": "J’ai fait une promenade après le repas.",
+          "pt": "Dei uma caminhada após a refeição."
+        }
+      ]
+    }
+  ]
+}

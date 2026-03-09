@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a1",
+    "id": "001"
+  },
+  "title": {
+    "target": "A1 — 일상 어휘",
+    "en": "A1 — Everyday Vocabulary",
+    "es": "A1 — Vocabulario cotidiano",
+    "fr": "A1 — Vocabulaire quotidien",
+    "pt": "A1 — Vocabulário do dia a dia"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "사람",
+        "en": "person",
+        "es": "persona",
+        "fr": "personne",
+        "pt": "pessoa"
+      },
+      "examples": [
+        {
+          "target": "그 사람은 친절해요.",
+          "en": "That person is kind.",
+          "es": "Esa persona es amable.",
+          "fr": "Cette personne est gentille.",
+          "pt": "Essa pessoa é gentil."
+        },
+        {
+          "target": "나는 많은 사람을 만났어요.",
+          "en": "I met many people.",
+          "es": "Conocí a muchas personas.",
+          "fr": "J'ai rencontré beaucoup de personnes.",
+          "pt": "Conheci muitas pessoas."
+        },
+        {
+          "target": "사람이 너무 많아요.",
+          "en": "There are too many people.",
+          "es": "Hay demasiada gente.",
+          "fr": "Il y a trop de gens.",
+          "pt": "Há pessoas demais."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "이름",
+        "en": "name",
+        "es": "nombre",
+        "fr": "nom",
+        "pt": "nome"
+      },
+      "examples": [
+        {
+          "target": "이름이 뭐예요?",
+          "en": "What is your name?",
+          "es": "¿Cómo te llamas?",
+          "fr": "Comment vous appelez-vous ?",
+          "pt": "Qual é o seu nome?"
+        },
+        {
+          "target": "제 이름은 민수예요.",
+          "en": "My name is Minsu.",
+          "es": "Me llamo Minsu.",
+          "fr": "Je m'appelle Minsu.",
+          "pt": "Meu nome é Minsu."
+        },
+        {
+          "target": "이름을 적어 주세요.",
+          "en": "Please write your name.",
+          "es": "Por favor, escribe tu nombre.",
+          "fr": "Veuillez écrire votre nom.",
+          "pt": "Por favor, escreva seu nome."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "집",
+        "en": "house",
+        "es": "casa",
+        "fr": "maison",
+        "pt": "casa"
+      },
+      "examples": [
+        {
+          "target": "집에 가고 싶어요.",
+          "en": "I want to go home.",
+          "es": "Quiero ir a casa.",
+          "fr": "Je veux rentrer à la maison.",
+          "pt": "Quero ir para casa."
+        },
+        {
+          "target": "우리 집은 가까워요.",
+          "en": "My house is close.",
+          "es": "Mi casa está cerca.",
+          "fr": "Ma maison est proche.",
+          "pt": "Minha casa é perto."
+        },
+        {
+          "target": "집을 청소했어요.",
+          "en": "I cleaned the house.",
+          "es": "Limpé la casa.",
+          "fr": "J'ai nettoyé la maison.",
+          "pt": "Limpei a casa."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "방",
+        "en": "room",
+        "es": "habitación",
+        "fr": "chambre",
+        "pt": "quarto"
+      },
+      "examples": [
+        {
+          "target": "방이 넓어요.",
+          "en": "The room is spacious.",
+          "es": "La habitación es amplia.",
+          "fr": "La chambre est spacieuse.",
+          "pt": "O quarto é espaçoso."
+        },
+        {
+          "target": "제 방은 저쪽이에요.",
+          "en": "My room is over there.",
+          "es": "Mi habitación está por allí.",
+          "fr": "Ma chambre est là-bas.",
+          "pt": "Meu quarto é lá."
+        },
+        {
+          "target": "방을 정리했어요.",
+          "en": "I organized the room.",
+          "es": "Ordené la habitación.",
+          "fr": "J'ai rangé la chambre.",
+          "pt": "Arrumei o quarto."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "물",
+        "en": "water",
+        "es": "agua",
+        "fr": "eau",
+        "pt": "água"
+      },
+      "examples": [
+        {
+          "target": "물 좀 주세요.",
+          "en": "Please give me some water.",
+          "es": "Por favor, deme agua.",
+          "fr": "Donnez-moi de l'eau, s'il vous plaît.",
+          "pt": "Por favor, me dê água."
+        },
+        {
+          "target": "물을 많이 마셔야 해요.",
+          "en": "You should drink plenty of water.",
+          "es": "Debes beber mucha agua.",
+          "fr": "Vous devez boire beaucoup d'eau.",
+          "pt": "Você deve beber bastante água."
+        },
+        {
+          "target": "물이 아주 차가워요.",
+          "en": "The water is very cold.",
+          "es": "El agua está muy fría.",
+          "fr": "L'eau est très froide.",
+          "pt": "A água está muito fria."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "b1",
+    "id": "015"
+  },
+  "title": {
+    "target": "B1 — 사회•학교•기술 어휘",
+    "en": "B1 — Social, School, and Technology Vocabulary",
+    "es": "B1 — Vocabulario social, escolar y tecnológico",
+    "fr": "B1 — Vocabulaire social, scolaire et technologique",
+    "pt": "B1 — Vocabulário social, escolar e tecnológico"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "마우스",
+        "en": "mouse",
+        "es": "ratón",
+        "fr": "souris",
+        "pt": "mouse"
+      },
+      "examples": [
+        {
+          "target": "마우스가 움직이지 않아 건전지를 교체했어요.",
+          "en": "The mouse wasn’t moving, so I replaced the battery.",
+          "es": "El ratón no se movía, así que cambié la batería.",
+          "fr": "La souris ne bougeait plus, alors j'ai changé la pile.",
+          "pt": "O mouse não estava se movendo, então troquei a bateria."
+        },
+        {
+          "target": "마우스 감도를 조절하면 작업이 더 편해요.",
+          "en": "Adjusting the mouse sensitivity makes work easier.",
+          "es": "Ajustar la sensibilidad del ratón hace el trabajo más cómodo.",
+          "fr": "Ajuster la sensibilité de la souris facilite le travail.",
+          "pt": "Ajustar a sensibilidade do mouse torna o trabalho mais fácil."
+        },
+        {
+          "target": "마우스 오른쪽 버튼을 클릭하세요.",
+          "en": "Click the right mouse button.",
+          "es": "Haz clic en el botón derecho del ratón.",
+          "fr": "Cliquez sur le bouton droit de la souris.",
+          "pt": "Clique no botão direito do mouse."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "저장장치",
+        "en": "storage device",
+        "es": "dispositivo de almacenamiento",
+        "fr": "dispositif de stockage",
+        "pt": "dispositivo de armazenamento"
+      },
+      "examples": [
+        {
+          "target": "저장장치가 가득 차서 파일을 더 저장할 수 없어요.",
+          "en": "The storage device is full, so no more files can be saved.",
+          "es": "El dispositivo de almacenamiento está lleno, así que no se pueden guardar más archivos.",
+          "fr": "Le dispositif de stockage est plein, donc aucun autre fichier ne peut être enregistré.",
+          "pt": "O dispositivo de armazenamento está cheio, então não é possível salvar mais arquivos."
+        },
+        {
+          "target": "외장 저장장치를 컴퓨터에 연결했어요.",
+          "en": "I connected the external storage device to the computer.",
+          "es": "Conecté el dispositivo de almacenamiento externo al ordenador.",
+          "fr": "J'ai connecté le dispositif de stockage externe à l'ordinateur.",
+          "pt": "Conectei o dispositivo de armazenamento externo ao computador."
+        },
+        {
+          "target": "저장장치 속도를 테스트해 보았어요.",
+          "en": "I tested the speed of the storage device.",
+          "es": "Probé la velocidad del dispositivo de almacenamiento.",
+          "fr": "J'ai testé la vitesse du dispositif de stockage.",
+          "pt": "Testei a velocidade do dispositivo de armazenamento."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "백업",
+        "en": "backup",
+        "es": "copia de seguridad",
+        "fr": "sauvegarde",
+        "pt": "backup"
+      },
+      "examples": [
+        {
+          "target": "중요한 파일은 정기적으로 백업해야 해요.",
+          "en": "Important files must be backed up regularly.",
+          "es": "Los archivos importantes deben respaldarse regularmente.",
+          "fr": "Les fichiers importants doivent être sauvegardés régulièrement.",
+          "pt": "Arquivos importantes devem ser feitos backup regularmente."
+        },
+        {
+          "target": "백업 파일에서 데이터를 복구했어요.",
+          "en": "I restored the data from the backup file.",
+          "es": "Restauré los datos desde el archivo de respaldo.",
+          "fr": "J'ai restauré les données à partir du fichier de sauvegarde.",
+          "pt": "Recuperei os dados do arquivo de backup."
+        },
+        {
+          "target": "클라우드 백업을 설정해 두면 안전해요.",
+          "en": "It’s safer if you set up cloud backup.",
+          "es": "Es más seguro si configuras una copia de seguridad en la nube.",
+          "fr": "C'est plus sûr si vous configurez une sauvegarde dans le cloud.",
+          "pt": "É mais seguro configurar um backup na nuvem."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "오류코드",
+        "en": "error code",
+        "es": "código de error",
+        "fr": "code d'erreur",
+        "pt": "código de erro"
+      },
+      "examples": [
+        {
+          "target": "오류코드가 나타나서 문제를 해결했어요.",
+          "en": "An error code appeared, so I resolved the issue.",
+          "es": "Apareció un código de error, así que resolví el problema.",
+          "fr": "Un code d'erreur est apparu, alors j'ai résolu le problème.",
+          "pt": "Um código de erro apareceu, então resolvi o problema."
+        },
+        {
+          "target": "오류코드를 검색하면 원인을 알 수 있어요.",
+          "en": "You can find the cause by searching the error code.",
+          "es": "Puedes encontrar la causa buscando el código de error.",
+          "fr": "Vous pouvez trouver la cause en recherchant le code d'erreur.",
+          "pt": "Você pode descobrir a causa pesquisando o código de erro."
+        },
+        {
+          "target": "오류코드가 반복되면 기술 지원이 필요해요.",
+          "en": "If the error code keeps appearing, technical support is needed.",
+          "es": "Si el código de error sigue apareciendo, se necesita soporte técnico.",
+          "fr": "Si le code d'erreur se répète, une assistance technique est nécessaire.",
+          "pt": "Se o código de erro continuar aparecendo, é necessário suporte técnico."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "로그",
+        "en": "log",
+        "es": "registro",
+        "fr": "journal",
+        "pt": "log"
+      },
+      "examples": [
+        {
+          "target": "로그를 확인해 오류 발생 시간을 찾았어요.",
+          "en": "I checked the log to find when the error occurred.",
+          "es": "Revisé el registro para encontrar la hora del error.",
+          "fr": "J'ai vérifié le journal pour trouver l'heure de l'erreur.",
+          "pt": "Verifiquei o log para encontrar o horário do erro."
+        },
+        {
+          "target": "시스템 로그가 너무 많아 정리했어요.",
+          "en": "There were too many system logs, so I organized them.",
+          "es": "Había demasiados registros del sistema, así que los organicé.",
+          "fr": "Il y avait trop de journaux système, alors je les ai organisés.",
+          "pt": "Havia muitos logs do sistema, então eu os organizei."
+        },
+        {
+          "target": "로그 분석을 통해 문제의 원인을 찾았어요.",
+          "en": "I identified the cause of the issue through log analysis.",
+          "es": "Identifiqué la causa del problema mediante el análisis del registro.",
+          "fr": "J'ai identifié la cause du problème grâce à l'analyse du journal.",
+          "pt": "Identifiquei a causa do problema por meio da análise do log."
+        }
+      ]
+    }
+  ]
+}

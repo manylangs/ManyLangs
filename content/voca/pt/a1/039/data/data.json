@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a1",
+    "id": "039"
+  },
+  "title": {
+    "target": "A1 — 일상 어휘",
+    "en": "A1 — Everyday Vocabulary",
+    "es": "A1 — Vocabulario cotidiano",
+    "fr": "A1 — Vocabulaire quotidien",
+    "pt": "A1 — Vocabulário do dia a dia"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "번호표",
+        "en": "queue ticket / number ticket",
+        "es": "número de turno / ticket de espera",
+        "fr": "ticket de numéro / ticket d'attente",
+        "pt": "senha / ticket de espera"
+      },
+      "examples": [
+        {
+          "target": "번호표를 뽑고 기다려 주세요.",
+          "en": "Please take a queue ticket and wait.",
+          "es": "Toma un número de turno y espera, por favor.",
+          "fr": "Veuillez prendre un ticket et attendre.",
+          "pt": "Pegue uma senha e aguarde, por favor."
+        },
+        {
+          "target": "제 번호표가 불렸어요.",
+          "en": "My number ticket was called.",
+          "es": "Mi número fue llamado.",
+          "fr": "Mon numéro a été appelé.",
+          "pt": "Minha senha foi chamada."
+        },
+        {
+          "target": "번호표를 잃어버렸어요.",
+          "en": "I lost my queue ticket.",
+          "es": "Perdí mi número de turno.",
+          "fr": "J'ai perdu mon ticket d'attente.",
+          "pt": "Perdi minha senha."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "안내",
+        "en": "information / guidance",
+        "es": "información / guía",
+        "fr": "information / guide",
+        "pt": "informação / orientação"
+      },
+      "examples": [
+        {
+          "target": "안내 데스크에서 물어보세요.",
+          "en": "Ask at the information desk.",
+          "es": "Pregunta en el mostrador de información.",
+          "fr": "Renseignez-vous au comptoir d'information.",
+          "pt": "Pergunte no balcão de informações."
+        },
+        {
+          "target": "안내 방송을 잘 들으세요.",
+          "en": "Listen carefully to the announcement.",
+          "es": "Escucha atentamente el anuncio.",
+          "fr": "Écoutez attentivement l’annonce.",
+          "pt": "Ouça atentamente o anúncio."
+        },
+        {
+          "target": "직원이 자세히 안내해 줬어요.",
+          "en": "The staff gave detailed guidance.",
+          "es": "El personal me dio una guía detallada.",
+          "fr": "Le personnel m'a donné des explications détaillées.",
+          "pt": "O funcionário deu orientações detalhadas."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "상품",
+        "en": "product / goods",
+        "es": "producto",
+        "fr": "produit",
+        "pt": "produto"
+      },
+      "examples": [
+        {
+          "target": "이 상품은 인기가 많아요.",
+          "en": "This product is very popular.",
+          "es": "Este producto es muy popular.",
+          "fr": "Ce produit est très populaire.",
+          "pt": "Este produto é muito popular."
+        },
+        {
+          "target": "상품 가격이 내려갔어요.",
+          "en": "The price of the product has gone down.",
+          "es": "El precio del producto bajó.",
+          "fr": "Le prix du produit a baissé.",
+          "pt": "O preço do produto caiu."
+        },
+        {
+          "target": "상품을 교환하고 싶어요.",
+          "en": "I want to exchange the product.",
+          "es": "Quiero cambiar el producto.",
+          "fr": "Je veux échanger le produit.",
+          "pt": "Quero trocar o produto."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "주문",
+        "en": "order",
+        "es": "pedido",
+        "fr": "commande",
+        "pt": "pedido"
+      },
+      "examples": [
+        {
+          "target": "주문을 완료했습니다.",
+          "en": "The order has been completed.",
+          "es": "El pedido ha sido completado.",
+          "fr": "La commande a été effectuée.",
+          "pt": "O pedido foi concluído."
+        },
+        {
+          "target": "주문을 취소할 수 있나요?",
+          "en": "Can I cancel the order?",
+          "es": "¿Puedo cancelar el pedido?",
+          "fr": "Puis-je annuler la commande ?",
+          "pt": "Posso cancelar o pedido?"
+        },
+        {
+          "target": "주문이 아직 배송되지 않았어요.",
+          "en": "The order has not been shipped yet.",
+          "es": "El pedido aún no ha sido enviado.",
+          "fr": "La commande n’a pas encore été expédiée.",
+          "pt": "O pedido ainda não foi enviado."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "배송",
+        "en": "delivery",
+        "es": "entrega",
+        "fr": "livraison",
+        "pt": "entrega"
+      },
+      "examples": [
+        {
+          "target": "배송이 하루 늦어졌어요.",
+          "en": "The delivery was delayed by a day.",
+          "es": "La entrega se retrasó un día.",
+          "fr": "La livraison a été retardée d’un jour.",
+          "pt": "A entrega atrasou um dia."
+        },
+        {
+          "target": "배송 상태를 확인해 주세요.",
+          "en": "Please check the delivery status.",
+          "es": "Por favor, revisa el estado de la entrega.",
+          "fr": "Veuillez vérifier l'état de la livraison.",
+          "pt": "Por favor, verifique o status da entrega."
+        },
+        {
+          "target": "무료 배송이 가능해요.",
+          "en": "Free delivery is available.",
+          "es": "La entrega gratuita está disponible.",
+          "fr": "La livraison gratuite est disponible.",
+          "pt": "A entrega gratuita está disponível."
+        }
+      ]
+    }
+  ]
+}

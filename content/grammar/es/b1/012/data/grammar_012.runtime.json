@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "b1",
+    "id": "012"
+  },
+  "title": {
+    "target": "-도록 (정도·목적)",
+    "en": "Expressing Degree and Purpose with -도록",
+    "es": "Expresar grado y propósito con -도록",
+    "fr": "Exprimer le degré et le but avec -도록",
+    "pt": "Expressar grau e propósito com -도록"
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "동사 뒤에 -도록을 붙이면 어떤 행동의 '정도'를 나타내거나, 목적을 표현할 때 사용한다.",
+        "en": "-도록 is used after a verb to express either the degree of an action or the purpose of an action.",
+        "es": "-도록 se usa después de un verbo para expresar el grado de una acción o el propósito de ella.",
+        "fr": "-도록 s’utilise après un verbe pour exprimer soit le degré d’une action, soit son objectif.",
+        "pt": "-도록 é usado depois de um verbo para expressar o grau de uma acção ou o propósito dessa acção."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'~할 정도로'라는 뜻으로, 상태나 변화의 강도를 설명할 수 있다.",
+        "en": "When expressing degree, it means ‘to the extent that ~’.",
+        "es": "Para expresar grado, significa «hasta el punto de que ~».",
+        "fr": "Pour exprimer le degré, il signifie « au point de ~ ».",
+        "pt": "Para expressar grau, significa «ao ponto de ~»."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "목적을 나타낼 때는 '~하기 위해서'와 비슷한 의미로 쓰인다.",
+        "en": "When expressing purpose, it is similar in meaning to ‘in order to ~’.",
+        "es": "Para expresar propósito, tiene un significado similar a «para / con el fin de ~».",
+        "fr": "Pour exprimer le but, il a un sens similaire à « pour / afin de ~ ».",
+        "pt": "Para expressar propósito, tem um sentido semelhante a «para / a fim de ~»."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문맥에 따라 '결과', '목표', '강도' 중 하나가 강조된다.",
+        "en": "Depending on the context, it can emphasize a result, goal, or intensity.",
+        "es": "Dependiendo del contexto, puede enfatizar un resultado, un objetivo o una intensidad.",
+        "fr": "Selon le contexte, il peut mettre en valeur un résultat, un objectif ou une intensité.",
+        "pt": "Dependendo do contexto, pode dar ênfase a um resultado, objectivo ou intensidade."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "감정이나 신체적 상태를 설명할 때 자연스럽게 등장한다.",
+        "en": "It naturally appears when describing emotions or physical conditions.",
+        "es": "Aparece de forma natural al describir emociones o condiciones físicas.",
+        "fr": "Il apparaît naturellement lorsque l’on décrit des émotions ou des états physiques.",
+        "pt": "Aparece naturalmente ao descrever emoções ou condições físicas."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'-도록 하다' 형태로 사용되면 지시·권유의 의미가 될 수 있다.",
+        "en": "When used as ‘-도록 하다’, it can also mean giving an instruction or suggestion.",
+        "es": "Cuando se usa como «-도록 하다», también puede expresar una instrucción o sugerencia.",
+        "fr": "Employé sous la forme « -도록 하다 », il peut aussi exprimer une instruction ou un conseil.",
+        "pt": "Quando usado como «-도록 하다», também pode expressar uma instrução ou sugestão."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "부정형은 '-지 않도록', '-지 못하도록' 형태로 쓴다.",
+        "en": "Negative forms include ‘so that (something) does not ~’ or ‘not to ~’.",
+        "es": "Las formas negativas incluyen «para que no ~» o «para no ~».",
+        "fr": "Les formes négatives incluent « pour ne pas ~ » ou « afin que ~ ne ~ pas ».",
+        "pt": "As formas negativas incluem «para não ~» ou «para que não ~»."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "과정이나 조건을 나타내는 상황에서도 넓게 사용된다.",
+        "en": "It is also used in situations describing process or conditions.",
+        "es": "También se usa para describir procesos o condiciones.",
+        "fr": "Il est également utilisé pour décrire des processus ou des conditions.",
+        "pt": "Também é usado para descrever processos ou condições."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "두 행동이 연결되며 이유와 목표가 함께 드러난다.",
+        "en": "It connects two actions, showing both reason and intention.",
+        "es": "Conecta dos acciones mostrando la razón y la intención.",
+        "fr": "Il relie deux actions en montrant à la fois la raison et l’intention.",
+        "pt": "Liga duas acções, mostrando tanto a razão como a intenção."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "일상 회화, 설명문, 글쓰기 등 다양한 맥락에서 사용되는 표현이다.",
+        "en": "It is widely used in daily conversation, explanations, and writing.",
+        "es": "Se usa ampliamente en la conversación diaria, explicaciones y textos escritos.",
+        "fr": "Il est largement utilisé dans la conversation quotidienne, les explications et l’écriture.",
+        "pt": "É amplamente utilizado na conversa diária, explicações e textos escritos."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "다 들리도록 크게 말해 줘.",
+        "en": "Speak loudly so that everyone can hear.",
+        "es": "Habla alto para que todos puedan oír.",
+        "fr": "Parle fort pour que tout le monde puisse entendre.",
+        "pt": "Fala alto para que todos possam ouvir."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "넘어지지 않도록 조심해.",
+        "en": "Be careful so that you don’t fall.",
+        "es": "Ten cuidado para que no te caigas.",
+        "fr": "Fais attention pour ne pas tomber.",
+        "pt": "Tem cuidado para não cair."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "늦지 않도록 빨리 가자.",
+        "en": "Let’s go quickly so that we won’t be late.",
+        "es": "Vámonos rápido para no llegar tarde.",
+        "fr": "Allons-y vite pour ne pas être en retard.",
+        "pt": "Vamos rapidamente para não chegarmos atrasados."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "잘 보이도록 글씨를 크게 썼어.",
+        "en": "I wrote the letters bigger so that they’re easier to see.",
+        "es": "Escribí las letras más grandes para que se vieran mejor.",
+        "fr": "J’ai écrit les lettres plus grandes pour qu’on les voie mieux.",
+        "pt": "Escrevi as letras maiores para que fossem mais fáceis de ver."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "눈이 아프도록 오래 봤어.",
+        "en": "I looked at it for so long that my eyes hurt.",
+        "es": "Lo miré tanto que me dolían los ojos.",
+        "fr": "Je l’ai regardé tellement longtemps que j’avais mal aux yeux.",
+        "pt": "Olhei durante tanto tempo que os meus olhos começaram a doer."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "배가 부르도록 많이 먹었어.",
+        "en": "I ate so much that I felt full.",
+        "es": "Comí tanto que quedé lleno.",
+        "fr": "J’ai tellement mangé que j’étais rassasié(e).",
+        "pt": "Comi tanto que fiquei cheio."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "실수하지 않도록 천천히 해.",
+        "en": "Do it slowly so that you don’t make mistakes.",
+        "es": "Hazlo despacio para no cometer errores.",
+        "fr": "Fais-le lentement pour ne pas faire d’erreurs.",
+        "pt": "Faz isso devagar para não cometer erros."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "길을 잃지 않도록 지도를 확인했어.",
+        "en": "I checked the map so I wouldn’t get lost.",
+        "es": "Revisé el mapa para no perderme.",
+        "fr": "J’ai vérifié la carte pour ne pas me perdre.",
+        "pt": "Verifiquei o mapa para não me perder."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "감기에 걸리지 않도록 옷을 따뜻하게 입어.",
+        "en": "Dress warmly so that you don’t catch a cold.",
+        "es": "Abrígate bien para no resfriarte.",
+        "fr": "Habille-toi chaudement pour ne pas attraper froid.",
+        "pt": "Veste-te bem para não apanhares uma constipação."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "더 잘 알도록 자세히 설명해 줄게.",
+        "en": "I’ll explain it in detail so that you can understand better.",
+        "es": "Te lo explicaré con detalle para que lo entiendas mejor.",
+        "fr": "Je t’expliquerai en détail pour que tu comprennes mieux.",
+        "pt": "Vou explicar com detalhe para que compreendas melhor."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "넘어지지 않도록 바닥을 닦아 놨어.",
+        "en": "I cleaned the floor so you wouldn’t slip.",
+        "es": "Limpié el suelo para que no resbalaras.",
+        "fr": "J’ai nettoyé le sol pour que tu ne glisses pas.",
+        "pt": "Limpei o chão para que não escorregasses."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "늦지 않도록 알람을 맞춰 놨어.",
+        "en": "I set an alarm so I wouldn’t be late.",
+        "es": "Puse una alarma para no llegar tarde.",
+        "fr": "J’ai mis une alarme pour ne pas être en retard.",
+        "pt": "Pus um alarme para não chegar atrasado."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "다시는 그런 일이 없도록 주의할게.",
+        "en": "I’ll be careful so that it doesn’t happen again.",
+        "es": "Tendré cuidado para que no vuelva a pasar.",
+        "fr": "Je ferai attention pour que cela n’arrive plus.",
+        "pt": "Terei cuidado para que isso não aconteça novamente."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "아이들이 이해하도록 쉽게 설명했어.",
+        "en": "I explained it simply so that the children could understand.",
+        "es": "Lo expliqué de forma sencilla para que los niños pudieran entender.",
+        "fr": "Je l’ai expliqué simplement pour que les enfants puissent comprendre.",
+        "pt": "Expliquei de forma simples para que as crianças pudessem entender."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "사람들이 볼 수 있도록 문 앞에 붙여 놨어.",
+        "en": "I posted it on the door so people could see it.",
+        "es": "Lo puse en la puerta para que la gente pudiera verlo.",
+        "fr": "Je l’ai affiché sur la porte pour que les gens puissent le voir.",
+        "pt": "Coloquei-o na porta para que as pessoas o pudessem ver."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "길이 막히지 않도록 일찍 출발했어.",
+        "en": "We left early so that the road wouldn’t be crowded.",
+        "es": "Salimos temprano para que no hubiera tráfico.",
+        "fr": "Nous sommes partis tôt pour éviter les embouteillages.",
+        "pt": "Saímos cedo para evitar o trânsito."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "눈에 띄도록 색을 더 밝게 바꿨어.",
+        "en": "I changed the color to make it stand out.",
+        "es": "Cambié el color para que llamara más la atención.",
+        "fr": "J’ai changé la couleur pour que ce soit plus visible.",
+        "pt": "Mudei a cor para que fosse mais visível."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "힘이 들도록 열심히 운동했어.",
+        "en": "I exercised hard enough to feel tired.",
+        "es": "Hice ejercicio hasta cansarme.",
+        "fr": "J’ai fait de l’exercice au point d’être fatigué(e).",
+        "pt": "Fiz exercício ao ponto de ficar cansado."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "편하게 보도록 화면을 조정했어.",
+        "en": "I adjusted the screen so that it’s easier to see.",
+        "es": "Ajusté la pantalla para que fuera más fácil de ver.",
+        "fr": "J’ai ajusté l’écran pour qu’il soit plus facile à voir.",
+        "pt": "Ajustei o ecrã para ser mais fácil de ver."
+      }
+    }
+  ]
+}

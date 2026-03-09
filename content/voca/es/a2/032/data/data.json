@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a2",
+    "id": "032"
+  },
+  "title": {
+    "target": "A2 — 확장 일상 어휘",
+    "en": "A2 — Expanded Everyday Vocabulary",
+    "es": "A2 — Vocabulario cotidiano ampliado",
+    "fr": "A2 — Vocabulaire quotidien élargi",
+    "pt": "A2 — Vocabulário do dia a dia ampliado"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "보관함",
+        "en": "locker",
+        "es": "casillero",
+        "fr": "casier",
+        "pt": "armário"
+      },
+      "examples": [
+        {
+          "target": "짐은 보관함에 넣어 두세요.",
+          "en": "Put your belongings in the locker.",
+          "es": "Guarde sus pertenencias en el casillero.",
+          "fr": "Mettez vos affaires dans le casier.",
+          "pt": "Coloque seus pertences no armário."
+        },
+        {
+          "target": "보관함 비밀번호를 잊지 마세요.",
+          "en": "Do not forget the locker password.",
+          "es": "No olvide la contraseña del casillero.",
+          "fr": "N’oubliez pas le mot de passe du casier.",
+          "pt": "Não se esqueça da senha do armário."
+        },
+        {
+          "target": "큰 짐은 보관함에 들어가지 않아요.",
+          "en": "Large luggage does not fit in the locker.",
+          "es": "El equipaje grande no cabe en el casillero.",
+          "fr": "Les gros bagages ne rentrent pas dans le casier.",
+          "pt": "A bagagem grande não cabe no armário."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "분실물",
+        "en": "lost item",
+        "es": "objeto perdido",
+        "fr": "objet perdu",
+        "pt": "objeto perdido"
+      },
+      "examples": [
+        {
+          "target": "분실물은 안내센터에서 찾아가세요.",
+          "en": "You can claim lost items at the information center.",
+          "es": "Puede recoger los objetos perdidos en el centro de información.",
+          "fr": "Vous pouvez récupérer les objets perdus au centre d’information.",
+          "pt": "Você pode recuperar objetos perdidos no centro de informações."
+        },
+        {
+          "target": "분실물 신고가 많이 들어왔어요.",
+          "en": "Many lost item reports were filed.",
+          "es": "Se han reportado muchos objetos perdidos.",
+          "fr": "De nombreux signalements d’objets perdus ont été faits.",
+          "pt": "Muitos relatos de objetos perdidos foram feitos."
+        },
+        {
+          "target": "지갑을 분실물 보관소에서 찾았어요.",
+          "en": "I found my wallet at the lost and found.",
+          "es": "Encontré mi cartera en la oficina de objetos perdidos.",
+          "fr": "J’ai retrouvé mon portefeuille au bureau des objets trouvés.",
+          "pt": "Encontrei minha carteira no achados e perdidos."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "신고",
+        "en": "report",
+        "es": "reporte",
+        "fr": "déclaration",
+        "pt": "relato"
+      },
+      "examples": [
+        {
+          "target": "도난 신고를 하러 경찰서에 갔어요.",
+          "en": "I went to the police station to file a theft report.",
+          "es": "Fui a la comisaría para hacer un reporte de robo.",
+          "fr": "Je suis allé au poste de police pour faire une déclaration de vol.",
+          "pt": "Fui à delegacia para registrar um boletim de furto."
+        },
+        {
+          "target": "불편 사항은 앱으로 신고할 수 있어요.",
+          "en": "You can report issues through the app.",
+          "es": "Puede reportar inconvenientes mediante la aplicación.",
+          "fr": "Vous pouvez signaler les problèmes via l’application.",
+          "pt": "Você pode relatar problemas pelo aplicativo."
+        },
+        {
+          "target": "신고 접수가 완료되었어요.",
+          "en": "Your report has been submitted.",
+          "es": "Su reporte ha sido enviado.",
+          "fr": "Votre déclaration a été enregistrée.",
+          "pt": "Seu relato foi enviado."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "증명서",
+        "en": "certificate",
+        "es": "certificado",
+        "fr": "certificat",
+        "pt": "certificado"
+      },
+      "examples": [
+        {
+          "target": "출석 증명서를 학교에서 발급받았어요.",
+          "en": "I received an attendance certificate from the school.",
+          "es": "Recibí un certificado de asistencia de la escuela.",
+          "fr": "J’ai obtenu un certificat de présence à l’école.",
+          "pt": "Recebi um certificado de presença da escola."
+        },
+        {
+          "target": "증명서 발급에는 신분증이 필요해요.",
+          "en": "You need an ID to issue a certificate.",
+          "es": "Necesita una identificación para solicitar un certificado.",
+          "fr": "Vous avez besoin d’une pièce d’identité pour obtenir un certificat.",
+          "pt": "É necessário um documento para emitir um certificado."
+        },
+        {
+          "target": "온라인으로 증명서를 출력할 수 있어요.",
+          "en": "You can print the certificate online.",
+          "es": "Puede imprimir el certificado en línea.",
+          "fr": "Vous pouvez imprimer le certificat en ligne.",
+          "pt": "Você pode imprimir o certificado online."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "등록",
+        "en": "registration",
+        "es": "registro",
+        "fr": "inscription",
+        "pt": "registro"
+      },
+      "examples": [
+        {
+          "target": "회원 등록을 완료했어요.",
+          "en": "I completed the membership registration.",
+          "es": "Completé el registro de membresía.",
+          "fr": "J’ai terminé l’inscription au service.",
+          "pt": "Concluí o registro de associação."
+        },
+        {
+          "target": "수강 등록은 금요일까지예요.",
+          "en": "Course registration is open until Friday.",
+          "es": "La inscripción al curso está abierta hasta el viernes.",
+          "fr": "L’inscription au cours est ouverte jusqu’à vendredi.",
+          "pt": "A inscrição no curso vai até sexta-feira."
+        },
+        {
+          "target": "등록 절차가 간단해요.",
+          "en": "The registration process is simple.",
+          "es": "El proceso de registro es sencillo.",
+          "fr": "La procédure d’inscription est simple.",
+          "pt": "O processo de registro é simples."
+        }
+      ]
+    }
+  ]
+}

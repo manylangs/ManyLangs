@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a2",
+    "id": "006"
+  },
+  "title": {
+    "target": "날씨 이야기하기",
+    "en": "Talking About the Weather",
+    "es": "Hablar del clima",
+    "fr": "Parler du temps",
+    "pt": "Falar sobre o tempo"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오늘 날씨 좀 이상하지 않아요?",
+            "en": "Doesn't the weather feel a bit strange today?",
+            "es": "¿No crees que el clima está un poco raro hoy?",
+            "fr": "Tu ne trouves pas que le temps est un peu bizarre aujourd’hui ?",
+            "pt": "Não achas que o tempo está um bocado estranho hoje?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그러게요, 미세먼지도 좀 있는 것 같아요.",
+            "en": "Yeah, it feels like there’s some fine dust too.",
+            "es": "Sí, incluso parece que hay algo de contaminación.",
+            "fr": "Oui, et j’ai l’impression qu’il y a un peu de pollution aussi.",
+            "pt": "Pois é, até parece que há um pouco de poluição no ar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "근데 갑자기 바람도 세진 것 같아요.",
+            "en": "And I think the wind suddenly got stronger.",
+            "es": "Y siento que el viento se volvió más fuerte de repente.",
+            "fr": "Et j’ai l’impression que le vent s’est renforcé d’un coup.",
+            "pt": "E parece que o vento ficou mais forte de repente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 체감 온도도 더 낮아졌어요.",
+            "en": "Right, it even feels colder because of the wind.",
+            "es": "Es verdad, el viento hace que se sienta más frío.",
+            "fr": "C’est vrai, le vent fait même paraître l’air plus froid.",
+            "pt": "Sim, o vento até faz parecer mais frio."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "집에 갈 때 비 오면 어쩌죠?",
+            "en": "What if it rains when I go home?",
+            "es": "¿Qué hago si llueve cuando vuelva a casa?",
+            "fr": "Et s’il pleut quand je rentre ?",
+            "pt": "E se chover quando eu for para casa?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "일단 우산 챙겨가세요. 소나기 올 수도 있어요.",
+            "en": "Just take an umbrella with you. It might shower later.",
+            "es": "Mejor lleva un paraguas. Podría caer un aguacero.",
+            "fr": "Prends un parapluie au cas où. Il pourrait y avoir une averse.",
+            "pt": "Leva um guarda-chuva, pode cair um aguaceiro."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오늘 왜 이렇게 더운 거죠?",
+            "en": "Why is it so hot today?",
+            "es": "¿Por qué hace tanto calor hoy?",
+            "fr": "Pourquoi fait-il si chaud aujourd’hui ?",
+            "pt": "Porque é que está tanto calor hoje?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "진짜 덥죠? 거의 한여름 같아요.",
+            "en": "I know, right? It feels like midsummer.",
+            "es": "Lo sé, parece pleno verano.",
+            "fr": "Je sais, on dirait presque l’été.",
+            "pt": "Eu sei, parece quase verão."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "에어컨 없으면 진짜 못 버티겠어요.",
+            "en": "I seriously can’t stand it without air-conditioning.",
+            "es": "Sin aire acondicionado, de verdad no puedo.",
+            "fr": "Sans clim, je ne tiens vraiment pas.",
+            "pt": "Sem ar condicionado, não consigo mesmo aguentar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 햇빛도 엄청 강해요.",
+            "en": "Yeah, the sunlight is really strong today.",
+            "es": "Sí, el sol está muy fuerte hoy.",
+            "fr": "Oui, le soleil tape vraiment fort.",
+            "pt": "Sim, o sol está mesmo forte hoje."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 오후에도 계속 더울까요?",
+            "en": "Do you think it’ll stay hot in the afternoon too?",
+            "es": "¿Crees que seguirá haciendo calor por la tarde?",
+            "fr": "Tu penses qu’il fera encore chaud cet après-midi ?",
+            "pt": "Achaste que vai continuar quente à tarde?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "예보 보니까 저녁까지는 덥다던데요.",
+            "en": "The forecast says it’ll stay hot until the evening.",
+            "es": "El pronóstico dice que hará calor hasta la noche.",
+            "fr": "La météo dit que la chaleur va durer jusqu’au soir.",
+            "pt": "A previsão diz que vai continuar quente até à noite."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 오늘 비 온다고 들으셨어요?",
+            "en": "Did you hear it might rain today?",
+            "es": "¿Escuchaste que podría llover hoy?",
+            "fr": "Tu as entendu dire qu’il allait pleuvoir aujourd’hui ?",
+            "pt": "Ouviste dizer que hoje podia chover?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 오후에 소나기 예보 있던데요.",
+            "en": "Yeah, they said there might be showers this afternoon.",
+            "es": "Sí, dijeron que habrá lluvias por la tarde.",
+            "fr": "Oui, ils ont annoncé des averses dans l’après-midi.",
+            "pt": "Sim, disseram que podia haver aguaceiros à tarde."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "빗방울 떨어지는 소리도 나는 것 같아요.",
+            "en": "I think I can already hear some raindrops.",
+            "es": "Creo que ya oigo algunas gotas.",
+            "fr": "J’ai l’impression d’entendre déjà quelques gouttes.",
+            "pt": "Acho que já estou a ouvir algumas pingas."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오 맞아요, 습도도 갑자기 높아졌어요.",
+            "en": "Oh, you're right. The humidity suddenly went up.",
+            "es": "Ah, tienes razón. La humedad subió de repente.",
+            "fr": "Ah oui, l’humidité a vraiment augmenté d’un coup.",
+            "pt": "Ah, tens razão. A humidade aumentou muito de repente."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 우산 꼭 챙겨야겠네요.",
+            "en": "Then I should definitely take an umbrella.",
+            "es": "Entonces definitivamente debo llevar un paraguas.",
+            "fr": "Alors je ferais mieux de prendre un parapluie.",
+            "pt": "Então é melhor levar mesmo um guarda-chuva."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 안 챙기면 후회할 수도 있어요.",
+            "en": "Yep, you’ll regret it if you don’t take one.",
+            "es": "Sí, podrías arrepentirte si no llevas uno.",
+            "fr": "Oui, tu pourrais le regretter si tu n’en prends pas un.",
+            "pt": "Sim, pode ser uma má ideia não levares um."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오늘 바람이 꽤 강하네요.",
+            "en": "The wind is pretty strong today.",
+            "es": "El viento está bastante fuerte hoy.",
+            "fr": "Le vent est vraiment fort aujourd’hui.",
+            "pt": "O vento está bem forte hoje."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 체감 온도도 더 춥게 느껴져요.",
+            "en": "Yeah, it even makes the temperature feel colder.",
+            "es": "Sí, incluso hace que la temperatura se sienta más baja.",
+            "fr": "Oui, ça donne même l’impression qu’il fait plus froid.",
+            "pt": "Pois, até parece que está mais frio."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "머리카락이 계속 날려서 불편해요.",
+            "en": "My hair keeps blowing everywhere.",
+            "es": "Mi cabello vuela por todos lados.",
+            "fr": "Mes cheveux volent partout, c’est pénible.",
+            "pt": "O meu cabelo está a voar para todo o lado."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도 아까 모자 날아갈 뻔했어요.",
+            "en": "My hat almost flew away earlier.",
+            "es": "Mi sombrero casi salió volando hace un rato.",
+            "fr": "Mon chapeau a failli s’envoler tout à l’heure.",
+            "pt": "O meu chapéu quase voou há pouco."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이 정도면 우산도 뒤집힐 것 같아요.",
+            "en": "At this rate, my umbrella might even flip inside out.",
+            "es": "A este ritmo, mi paraguas se va a voltear.",
+            "fr": "À ce rythme-là, mon parapluie va se retourner.",
+            "pt": "Assim o meu guarda-chuva ainda se vira ao contrário."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "웬만하면 우산 말고 후드 쓰는 게 낫겠어요.",
+            "en": "It’s better to use a hood instead of an umbrella today.",
+            "es": "Mejor usa una capucha en lugar de un paraguas hoy.",
+            "fr": "Mieux vaut mettre une capuche qu’un parapluie aujourd’hui.",
+            "pt": "Hoje é melhor usar um capuz em vez de guarda-chuva."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "요즘 아침·저녁 기온 차가 크네요.",
+            "en": "The temperature difference between morning and evening is huge lately.",
+            "es": "Últimamente hay mucha diferencia entre la mañana y la noche.",
+            "fr": "Il y a un grand écart de température entre le matin et le soir en ce moment.",
+            "pt": "Ultimamente, a diferença de temperatura entre a manhã e a noite é enorme."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 진짜 애매한 날씨예요.",
+            "en": "I know, the weather is tricky these days.",
+            "es": "Sí, el clima está muy impredecible estos días.",
+            "fr": "Oui, le temps est vraiment imprévisible ces jours-ci.",
+            "pt": "É verdade, o tempo anda muito imprevisível."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아침엔 춥다가 낮엔 또 너무 더워요.",
+            "en": "It’s cold in the morning but too hot in the afternoon.",
+            "es": "Hace frío por la mañana pero demasiado calor por la tarde.",
+            "fr": "Il fait froid le matin mais trop chaud l’après-midi.",
+            "pt": "De manhã está frio, mas à tarde fica demasiado quente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도 매일 얇은 거랑 두꺼운 거 같이 챙겨요.",
+            "en": "I always bring both light and warm clothes.",
+            "es": "Yo también llevo ropa ligera y algo más abrigado.",
+            "fr": "Moi aussi, je prends des vêtements légers et chauds.",
+            "pt": "Eu também levo roupa leve e algo mais quente."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그래서 옷을 어떻게 입어야 할지 모르겠어요.",
+            "en": "I really don’t know what to wear.",
+            "es": "No sé cómo vestirme.",
+            "fr": "Je ne sais vraiment pas comment m’habiller.",
+            "pt": "Já não sei como me devo vestir."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "겹쳐 입는 게 가장 안전한 것 같아요.",
+            "en": "Layering is probably the safest choice.",
+            "es": "Lo mejor es vestirse por capas.",
+            "fr": "Le mieux, c’est de superposer les couches.",
+            "pt": "O melhor é vestir por camadas."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "하늘이 갑자기 어두워졌어요.",
+            "en": "The sky suddenly got dark.",
+            "es": "El cielo se puso oscuro de repente.",
+            "fr": "Le ciel est devenu sombre d’un coup.",
+            "pt": "O céu ficou escuro de repente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 구름이 금방 몰려왔네요.",
+            "en": "Yeah, the clouds rolled in so quickly.",
+            "es": "Sí, las nubes llegaron rapidísimo.",
+            "fr": "Oui, les nuages sont arrivés super vite.",
+            "pt": "Sim, as nuvens apareceram super rápido."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "바람도 세지고 분위기가 딱 비 올 것 같아요.",
+            "en": "And the wind got stronger too—it really looks like rain.",
+            "es": "Y el viento se hizo más fuerte, parece que va a llover.",
+            "fr": "Et le vent s’est encore renforcé, on dirait vraiment qu’il va pleuvoir.",
+            "pt": "E o vento aumentou, parece mesmo que vai chover."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "습해진 거 보니까 거의 확정이죠.",
+            "en": "With this humidity, it’s almost certain.",
+            "es": "Con esta humedad, es casi seguro.",
+            "fr": "Avec cette humidité, c’est presque sûr.",
+            "pt": "Com esta humidade, é quase certo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이러다 소나기 바로 내리겠어요.",
+            "en": "I feel like it’s going to pour any minute.",
+            "es": "Siento que va a caer un chaparrón en cualquier momento.",
+            "fr": "J’ai l’impression qu’il va pleuvoir d’un moment à l’autre.",
+            "pt": "Parece que vai começar a chover a qualquer momento."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "빨리 이동하는 게 좋겠어요.",
+            "en": "We should probably move before it starts.",
+            "es": "Deberíamos movernos antes de que empiece.",
+            "fr": "On devrait bouger avant que ça commence.",
+            "pt": "Devíamos ir andando antes que comece."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오늘은 공기가 너무 좋지 않아요.",
+            "en": "The air doesn’t feel very clean today.",
+            "es": "El aire no se siente muy limpio hoy.",
+            "fr": "L’air n’a pas l’air très propre aujourd’hui.",
+            "pt": "O ar não parece muito limpo hoje."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그러게요, 미세먼지가 꽤 심하대요.",
+            "en": "Yeah, the fine dust level is pretty high.",
+            "es": "Sí, el nivel de contaminación está alto.",
+            "fr": "Oui, le taux de pollution est assez élevé.",
+            "pt": "Sim, o nível de poluição está alto."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "눈도 좀 따가운 느낌이에요.",
+            "en": "My eyes even feel a bit irritated.",
+            "es": "Incluso me arden un poco los ojos.",
+            "fr": "Mes yeux me piquent un peu.",
+            "pt": "Até sinto os olhos um pouco irritados."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도 목이 좀 칼칼하더라고요.",
+            "en": "My throat felt scratchy too.",
+            "es": "A mí también me irrita un poco la garganta.",
+            "fr": "Moi aussi, j’ai la gorge un peu irritée.",
+            "pt": "A minha garganta também ficou um bocado irritada."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "마스크 꼭 쓰고 다녀야겠어요.",
+            "en": "I should definitely wear a mask.",
+            "es": "Definitivamente debería usar una mascarilla.",
+            "fr": "Je devrais mettre un masque.",
+            "pt": "Acho que devia usar máscara."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 마스크 쓰면 훨씬 나아요.",
+            "en": "Wearing a mask really helps on days like this.",
+            "es": "Usar mascarilla ayuda mucho en días así.",
+            "fr": "Un masque aide vraiment les jours comme ça.",
+            "pt": "Usar máscara ajuda imenso nestes dias."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "햇살이 오늘은 유난히 좋네요.",
+            "en": "The sunlight feels really nice today.",
+            "es": "La luz del sol está muy agradable hoy.",
+            "fr": "La lumière du soleil est vraiment agréable aujourd’hui.",
+            "pt": "A luz do sol está mesmo agradável hoje."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 봄 같은 느낌이에요.",
+            "en": "Yeah, it feels almost like spring.",
+            "es": "Sí, parece casi primavera.",
+            "fr": "Oui, on dirait presque le printemps.",
+            "pt": "Sim, parece quase primavera."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "따뜻해서 기분이 좀 좋아지는 것 같아요.",
+            "en": "It’s warm, so it actually lifts my mood.",
+            "es": "Hace calorcito y me mejora el ánimo.",
+            "fr": "Il fait chaud et ça met de bonne humeur.",
+            "pt": "Está quentinho e até melhora o meu humor."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "햇빛이 부드러워서 좋네요.",
+            "en": "The sunlight is soft and pleasant.",
+            "es": "La luz del sol está suave y se siente bien.",
+            "fr": "La lumière est douce, c’est agréable.",
+            "pt": "A luz está suave e muito agradável."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이럴 때 산책하면 딱 좋겠어요.",
+            "en": "A walk would be perfect in weather like this.",
+            "es": "Sería perfecto salir a caminar un rato.",
+            "fr": "Ce serait parfait d’aller marcher un peu.",
+            "pt": "Era perfeito dar um passeio agora."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그럼 점심시간에 잠깐 나가보죠!",
+            "en": "Let’s go out for a bit during lunch!",
+            "es": "¿Salimos un momento durante el almuerzo?",
+            "fr": "On sort un peu pendant la pause déjeuner ?",
+            "pt": "Vamos dar um salto lá fora durante o almoço?"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오늘은 좀 흐리네요.",
+            "en": "It’s a bit cloudy today.",
+            "es": "Está un poco nublado hoy.",
+            "fr": "Il fait un peu gris aujourd’hui.",
+            "pt": "O dia está um bocado nublado."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 왠지 졸린 날씨예요.",
+            "en": "Yeah, it’s one of those sleepy days.",
+            "es": "Sí, es un clima que da sueño.",
+            "fr": "Oui, c’est un temps qui donne envie de dormir.",
+            "pt": "Sim, é um tempo que dá sono."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이런 날은 집중도 잘 안 돼요.",
+            "en": "I can’t focus well in weather like this.",
+            "es": "Me cuesta concentrarme con este clima.",
+            "fr": "J’ai du mal à me concentrer quand il fait ce temps-là.",
+            "pt": "Tenho dificuldade em concentrar-me com este tempo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도 일하기가 좀 힘들더라고요.",
+            "en": "I’ve been struggling to work too.",
+            "es": "A mí también me está costando trabajar.",
+            "fr": "Moi aussi, je galère à travailler.",
+            "pt": "Também estou a ter dificuldade em trabalhar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "빨리 해가 다시 떴으면 좋겠어요.",
+            "en": "I hope the sun comes out again soon.",
+            "es": "Ojalá el sol vuelva pronto.",
+            "fr": "J’espère que le soleil va revenir vite.",
+            "pt": "Espero que o sol volte depressa."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "곧 맑아진다니까 조금만 버텨봐요!",
+            "en": "They say it’ll clear up soon, so hang in there!",
+            "es": "Dicen que pronto se despejará, ¡ánimo!",
+            "fr": "Ça devrait se dégager bientôt, courage !",
+            "pt": "Dizem que deve abrir mais tarde, força!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오늘 날씨가 왜 이렇게 변덕스러울까요?",
+            "en": "Why is the weather so unpredictable today?",
+            "es": "¿Por qué el clima está tan impredecible hoy?",
+            "fr": "Pourquoi le temps est-il aussi imprévisible aujourd’hui ?",
+            "pt": "Porque é que o tempo está tão imprevisível hoje?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "요즘 날씨가 계속 이래요.",
+            "en": "Yeah, the weather keeps changing lately.",
+            "es": "Sí, el clima cambia todo el tiempo últimamente.",
+            "fr": "Oui, le temps change tout le temps en ce moment.",
+            "pt": "Pois, o tempo anda sempre a mudar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아까는 맑았다가 지금은 또 흐려졌어요.",
+            "en": "It was sunny earlier, but now it’s cloudy again.",
+            "es": "Hace un rato estaba soleado y ahora está nublado.",
+            "fr": "Il faisait beau tout à l’heure et maintenant c’est couvert.",
+            "pt": "Há pouco estava sol e agora está tudo nublado."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도 예보를 믿기가 힘들어요.",
+            "en": "Even the forecast isn’t very reliable.",
+            "es": "Ni siquiera el pronóstico es confiable.",
+            "fr": "Même la météo n’est pas très fiable.",
+            "pt": "Nem a previsão está muito fiável."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이러면 일정 잡기 진짜 어렵네요.",
+            "en": "It’s so hard to plan anything like this.",
+            "es": "Es difícil planear algo así.",
+            "fr": "C’est vraiment difficile de planifier quoi que ce soit.",
+            "pt": "Assim é mesmo difícil planear alguma coisa."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "일단 대비만 잘해두면 괜찮을 것 같아요!",
+            "en": "As long as we’re prepared, we should be fine!",
+            "es": "Mientras estemos preparados, todo irá bien.",
+            "fr": "Tant qu’on se prépare bien, ça ira !",
+            "pt": "Desde que estejamos preparados, tudo corre bem!"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a2",
+    "id": "010"
+  },
+  "title": {
+    "target": "A2 — 확장 일상 어휘",
+    "en": "A2 — Expanded Everyday Vocabulary",
+    "es": "A2 — Vocabulario cotidiano ampliado",
+    "fr": "A2 — Vocabulaire quotidien élargi",
+    "pt": "A2 — Vocabulário do dia a dia ampliado"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "서점",
+        "en": "bookstore",
+        "es": "librería",
+        "fr": "librairie",
+        "pt": "livraria"
+      },
+      "examples": [
+        {
+          "target": "서점에서 책을 샀어요.",
+          "en": "I bought a book at the bookstore.",
+          "es": "Compré un libro en la librería.",
+          "fr": "J’ai acheté un livre à la librairie.",
+          "pt": "Comprei um livro na livraria."
+        },
+        {
+          "target": "근처에 서점이 있어요?",
+          "en": "Is there a bookstore nearby?",
+          "es": "¿Hay una librería cerca?",
+          "fr": "Y a-t-il une librairie à proximité ?",
+          "pt": "Há uma livraria por perto?"
+        },
+        {
+          "target": "서점 구경하는 걸 좋아해요.",
+          "en": "I enjoy browsing bookstores.",
+          "es": "Me gusta recorrer las librerías.",
+          "fr": "J’aime parcourir les librairies.",
+          "pt": "Gosto de visitar livrarias."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "옷가게",
+        "en": "clothing store",
+        "es": "tienda de ropa",
+        "fr": "magasin de vêtements",
+        "pt": "loja de roupas"
+      },
+      "examples": [
+        {
+          "target": "옷가게에서 코트를 샀어요.",
+          "en": "I bought a coat at the clothing store.",
+          "es": "Compré un abrigo en la tienda de ropa.",
+          "fr": "J’ai acheté un manteau au magasin de vêtements.",
+          "pt": "Comprei um casaco na loja de roupas."
+        },
+        {
+          "target": "이 옷가게는 할인 중이에요.",
+          "en": "This clothing store is having a sale.",
+          "es": "Esta tienda de ropa está en oferta.",
+          "fr": "Ce magasin de vêtements est en promotion.",
+          "pt": "Esta loja de roupas está em promoção."
+        },
+        {
+          "target": "옷가게가 너무 많아요.",
+          "en": "There are too many clothing stores.",
+          "es": "Hay demasiadas tiendas de ropa.",
+          "fr": "Il y a trop de magasins de vêtements.",
+          "pt": "Há lojas de roupas demais."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "화장품",
+        "en": "cosmetics",
+        "es": "cosméticos",
+        "fr": "cosmétiques",
+        "pt": "cosméticos"
+      },
+      "examples": [
+        {
+          "target": "화장품을 새로 샀어요.",
+          "en": "I bought new cosmetics.",
+          "es": "Compré cosméticos nuevos.",
+          "fr": "J’ai acheté de nouveaux cosmétiques.",
+          "pt": "Comprei cosméticos novos."
+        },
+        {
+          "target": "화장품 알레르기가 있어요.",
+          "en": "I'm allergic to some cosmetics.",
+          "es": "Soy alérgico a algunos cosméticos.",
+          "fr": "Je suis allergique à certains cosmétiques.",
+          "pt": "Tenho alergia a alguns cosméticos."
+        },
+        {
+          "target": "화장품 가게에 들렀어요.",
+          "en": "I stopped by the cosmetics shop.",
+          "es": "Pasé por la tienda de cosméticos.",
+          "fr": "Je suis passé à la boutique de cosmétiques.",
+          "pt": "Passei na loja de cosméticos."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "향수",
+        "en": "perfume",
+        "es": "perfume",
+        "fr": "parfum",
+        "pt": "perfume"
+      },
+      "examples": [
+        {
+          "target": "좋은 향수를 추천해 주세요.",
+          "en": "Please recommend a good perfume.",
+          "es": "Recomiéndeme un buen perfume, por favor.",
+          "fr": "Recommandez-moi un bon parfum, s’il vous plaît.",
+          "pt": "Por favor, recomende um bom perfume."
+        },
+        {
+          "target": "향수를 너무 많이 뿌렸어요.",
+          "en": "I sprayed too much perfume.",
+          "es": "Me eché demasiado perfume.",
+          "fr": "J’ai mis trop de parfum.",
+          "pt": "Usei perfume demais."
+        },
+        {
+          "target": "향수 향이 오래가요.",
+          "en": "The perfume scent lasts long.",
+          "es": "El aroma del perfume dura mucho.",
+          "fr": "L’odeur du parfum dure longtemps.",
+          "pt": "O cheiro do perfume dura bastante."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "지퍼",
+        "en": "zipper",
+        "es": "cremallera",
+        "fr": "fermeture éclair",
+        "pt": "fecho éclair"
+      },
+      "examples": [
+        {
+          "target": "지퍼가 고장 났어요.",
+          "en": "The zipper is broken.",
+          "es": "La cremallera está rota.",
+          "fr": "La fermeture éclair est cassée.",
+          "pt": "O fecho éclair está quebrado."
+        },
+        {
+          "target": "지퍼를 올려 주세요.",
+          "en": "Please zip it up.",
+          "es": "Por favor, suba la cremallera.",
+          "fr": "Veuillez remonter la fermeture éclair.",
+          "pt": "Por favor, suba o fecho éclair."
+        },
+        {
+          "target": "지퍼가 잘 안 잠겨요.",
+          "en": "The zipper doesn’t close well.",
+          "es": "La cremallera no cierra bien.",
+          "fr": "La fermeture éclair se ferme mal.",
+          "pt": "O fecho éclair não fecha bem."
+        }
+      ]
+    }
+  ]
+}

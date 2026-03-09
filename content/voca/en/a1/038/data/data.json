@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a1",
+    "id": "038"
+  },
+  "title": {
+    "target": "A1 — 일상 어휘",
+    "en": "A1 — Everyday Vocabulary",
+    "es": "A1 — Vocabulario cotidiano",
+    "fr": "A1 — Vocabulaire quotidien",
+    "pt": "A1 — Vocabulário do dia a dia"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "눈",
+        "en": "snow",
+        "es": "nieve",
+        "fr": "neige",
+        "pt": "neve"
+      },
+      "examples": [
+        {
+          "target": "하얀 눈이 많이 내렸어요.",
+          "en": "A lot of white snow fell.",
+          "es": "Cayó mucha nieve blanca.",
+          "fr": "Beaucoup de neige blanche est tombée.",
+          "pt": "Caiu muita neve branca."
+        },
+        {
+          "target": "눈 때문에 길이 미끄러워요.",
+          "en": "The road is slippery because of the snow.",
+          "es": "La carretera está resbaladiza por la nieve.",
+          "fr": "La route est glissante à cause de la neige.",
+          "pt": "A estrada está escorregadia por causa da neve."
+        },
+        {
+          "target": "눈 오는 날을 좋아해요.",
+          "en": "I like snowy days.",
+          "es": "Me gustan los días de nieve.",
+          "fr": "J'aime les jours de neige.",
+          "pt": "Eu gosto de dias de neve."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "바람",
+        "en": "wind",
+        "es": "viento",
+        "fr": "vent",
+        "pt": "vento"
+      },
+      "examples": [
+        {
+          "target": "바람이 세게 불어요.",
+          "en": "The wind is blowing hard.",
+          "es": "El viento sopla fuerte.",
+          "fr": "Le vent souffle fort.",
+          "pt": "O vento está soprando forte."
+        },
+        {
+          "target": "바람 때문에 머리가 헝클어졌어요.",
+          "en": "My hair got messy because of the wind.",
+          "es": "El viento me desordenó el pelo.",
+          "fr": "Mes cheveux se sont décoiffés à cause du vent.",
+          "pt": "Meu cabelo bagunçou por causa do vento."
+        },
+        {
+          "target": "시원한 바람이 불어서 좋네요.",
+          "en": "The cool breeze feels nice.",
+          "es": "La brisa fresca se siente bien.",
+          "fr": "La brise fraîche est agréable.",
+          "pt": "A brisa fresca é agradável."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "소음",
+        "en": "noise",
+        "es": "ruido",
+        "fr": "bruit",
+        "pt": "ruído"
+      },
+      "examples": [
+        {
+          "target": "소음이 너무 심해요.",
+          "en": "The noise is too loud.",
+          "es": "El ruido es demasiado fuerte.",
+          "fr": "Le bruit est trop fort.",
+          "pt": "O ruído está muito alto."
+        },
+        {
+          "target": "공사 소음 때문에 잠을 못 잤어요.",
+          "en": "I couldn't sleep because of the construction noise.",
+          "es": "No pude dormir por el ruido de la construcción.",
+          "fr": "Je n'ai pas pu dormir à cause du bruit des travaux.",
+          "pt": "Não consegui dormir por causa do barulho da obra."
+        },
+        {
+          "target": "소음을 줄이는 방법이 필요해요.",
+          "en": "We need a way to reduce the noise.",
+          "es": "Necesitamos una manera de reducir el ruido.",
+          "fr": "Nous avons besoin d'une solution pour réduire le bruit.",
+          "pt": "Precisamos de uma forma de reduzir o ruído."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "약속",
+        "en": "appointment / promise",
+        "es": "cita / promesa",
+        "fr": "rendez-vous / promesse",
+        "pt": "compromisso / promessa"
+      },
+      "examples": [
+        {
+          "target": "오늘 중요한 약속이 있어요.",
+          "en": "I have an important appointment today.",
+          "es": "Tengo una cita importante hoy.",
+          "fr": "J'ai un rendez-vous important aujourd’hui.",
+          "pt": "Tenho um compromisso importante hoje."
+        },
+        {
+          "target": "약속 시간을 잊지 마세요.",
+          "en": "Don’t forget the appointment time.",
+          "es": "No olvides la hora de la cita.",
+          "fr": "N’oubliez pas l’heure du rendez-vous.",
+          "pt": "Não se esqueça da hora do compromisso."
+        },
+        {
+          "target": "그는 약속을 잘 지켜요.",
+          "en": "He keeps his promises well.",
+          "es": "Él cumple bien sus promesas.",
+          "fr": "Il tient bien ses promesses.",
+          "pt": "Ele cumpre bem as promessas."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "자리",
+        "en": "seat / spot",
+        "es": "asiento / lugar",
+        "fr": "siège / place",
+        "pt": "assento / lugar"
+      },
+      "examples": [
+        {
+          "target": "여기 제 자리예요.",
+          "en": "This is my seat.",
+          "es": "Este es mi asiento.",
+          "fr": "C’est ma place.",
+          "pt": "Este é o meu lugar."
+        },
+        {
+          "target": "자리가 없어서 서 있어야 했어요.",
+          "en": "There were no seats, so I had to stand.",
+          "es": "No había asientos, así que tuve que estar de pie.",
+          "fr": "Il n’y avait pas de place, donc j’ai dû rester debout.",
+          "pt": "Não havia assentos, então precisei ficar de pé."
+        },
+        {
+          "target": "빈 자리를 찾아보세요.",
+          "en": "Please look for an empty seat.",
+          "es": "Busca un asiento vacío, por favor.",
+          "fr": "Cherchez une place libre, s'il vous plaît.",
+          "pt": "Procure um assento vazio, por favor."
+        }
+      ]
+    }
+  ]
+}

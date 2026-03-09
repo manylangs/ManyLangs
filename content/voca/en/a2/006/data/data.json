@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a2",
+    "id": "006"
+  },
+  "title": {
+    "target": "A2 — 확장 일상 어휘",
+    "en": "A2 — Expanded Everyday Vocabulary",
+    "es": "A2 — Vocabulario cotidiano ampliado",
+    "fr": "A2 — Vocabulaire quotidien élargi",
+    "pt": "A2 — Vocabulário do dia a dia ampliado"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "요청",
+        "en": "request",
+        "es": "solicitud",
+        "fr": "requête",
+        "pt": "solicitação"
+      },
+      "examples": [
+        {
+          "target": "요청을 접수했습니다.",
+          "en": "We have received your request.",
+          "es": "Hemos recibido su solicitud.",
+          "fr": "Nous avons reçu votre requête.",
+          "pt": "Recebemos sua solicitação."
+        },
+        {
+          "target": "요청이 너무 많아요.",
+          "en": "There are too many requests.",
+          "es": "Hay demasiadas solicitudes.",
+          "fr": "Il y a trop de requêtes.",
+          "pt": "Há solicitações demais."
+        },
+        {
+          "target": "요청을 처리 중입니다.",
+          "en": "We are processing your request.",
+          "es": "Estamos procesando su solicitud.",
+          "fr": "Nous traitons votre requête.",
+          "pt": "Estamos processando sua solicitação."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "대화",
+        "en": "conversation",
+        "es": "conversación",
+        "fr": "conversation",
+        "pt": "conversa"
+      },
+      "examples": [
+        {
+          "target": "대화가 잘 통했어요.",
+          "en": "The conversation went well.",
+          "es": "La conversación salió bien.",
+          "fr": "La conversation s’est bien passée.",
+          "pt": "A conversa correu bem."
+        },
+        {
+          "target": "대화를 더 이어가고 싶어요.",
+          "en": "I want to continue the conversation.",
+          "es": "Quiero continuar la conversación.",
+          "fr": "Je veux poursuivre la conversation.",
+          "pt": "Quero continuar a conversa."
+        },
+        {
+          "target": "대화가 끊겼어요.",
+          "en": "The conversation was interrupted.",
+          "es": "La conversación fue interrumpida.",
+          "fr": "La conversation a été interrompue.",
+          "pt": "A conversa foi interrompida."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "메모",
+        "en": "note",
+        "es": "nota",
+        "fr": "note",
+        "pt": "nota"
+      },
+      "examples": [
+        {
+          "target": "중요한 내용을 메모했어요.",
+          "en": "I wrote down the important information.",
+          "es": "Anoté la información importante.",
+          "fr": "J’ai noté les informations importantes.",
+          "pt": "Anotei as informações importantes."
+        },
+        {
+          "target": "메모를 남겨 놨어요.",
+          "en": "I left a note.",
+          "es": "Dejé una nota.",
+          "fr": "J’ai laissé une note.",
+          "pt": "Deixei uma nota."
+        },
+        {
+          "target": "메모할 게 많아요.",
+          "en": "There are many things to note.",
+          "es": "Hay muchas cosas que anotar.",
+          "fr": "Il y a beaucoup de choses à noter.",
+          "pt": "Há muitas coisas para anotar."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "방문",
+        "en": "visit",
+        "es": "visita",
+        "fr": "visite",
+        "pt": "visita"
+      },
+      "examples": [
+        {
+          "target": "친구 집을 방문했어요.",
+          "en": "I visited my friend's house.",
+          "es": "Visité la casa de mi amigo.",
+          "fr": "J’ai rendu visite à mon ami.",
+          "pt": "Visitei a casa do meu amigo."
+        },
+        {
+          "target": "첫 방문이었어요.",
+          "en": "It was my first visit.",
+          "es": "Fue mi primera visita.",
+          "fr": "C’était ma première visite.",
+          "pt": "Foi minha primeira visita."
+        },
+        {
+          "target": "방문 일정을 미뤘어요.",
+          "en": "I postponed my visit.",
+          "es": "Pospuse mi visita.",
+          "fr": "J’ai reporté ma visite.",
+          "pt": "Adiei minha visita."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "초대",
+        "en": "invitation",
+        "es": "invitación",
+        "fr": "invitation",
+        "pt": "convite"
+      },
+      "examples": [
+        {
+          "target": "초대를 받았어요.",
+          "en": "I received an invitation.",
+          "es": "Recibí una invitación.",
+          "fr": "J’ai reçu une invitation.",
+          "pt": "Recebi um convite."
+        },
+        {
+          "target": "초대장을 보냈어요.",
+          "en": "I sent an invitation card.",
+          "es": "Envié una tarjeta de invitación.",
+          "fr": "J’ai envoyé une carte d’invitation.",
+          "pt": "Enviei um cartão de convite."
+        },
+        {
+          "target": "초대를 정중히 거절했어요.",
+          "en": "I politely declined the invitation.",
+          "es": "Rechacé la invitación amablemente.",
+          "fr": "J’ai poliment décliné l’invitation.",
+          "pt": "Recusei o convite educadamente."
+        }
+      ]
+    }
+  ]
+}

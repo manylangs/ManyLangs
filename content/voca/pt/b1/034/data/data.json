@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "b1",
+    "id": "034"
+  },
+  "title": {
+    "target": "B1 — 사회•학교•기술 어휘",
+    "en": "B1 — Social, School, and Technology Vocabulary",
+    "es": "B1 — Vocabulario social, escolar y tecnológico",
+    "fr": "B1 — Vocabulaire social, scolaire et technologique",
+    "pt": "B1 — Vocabulário social, escolar e tecnológico"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "평균값",
+        "en": "average value",
+        "es": "valor medio",
+        "fr": "valeur moyenne",
+        "pt": "valor médio"
+      },
+      "examples": [
+        {
+          "target": "데이터의 평균값을 먼저 계산해 주세요.",
+          "en": "Please calculate the average value of the data first.",
+          "es": "Primero calcule el valor medio de los datos.",
+          "fr": "Veuillez d’abord calculer la valeur moyenne des données.",
+          "pt": "Calcule primeiro o valor médio dos dados."
+        },
+        {
+          "target": "평균값이 전체 추세를 잘 보여줍니다.",
+          "en": "The average value shows the overall trend well.",
+          "es": "El valor medio muestra bien la tendencia general.",
+          "fr": "La valeur moyenne montre bien la tendance générale.",
+          "pt": "O valor médio mostra bem a tendência geral."
+        },
+        {
+          "target": "극단값 때문에 평균값이 왜곡될 수 있어요.",
+          "en": "The average value can be distorted by outliers.",
+          "es": "El valor medio puede distorsionarse por valores atípicos.",
+          "fr": "La valeur moyenne peut être faussée par les valeurs extrêmes.",
+          "pt": "O valor médio pode ser distorcido por valores extremos."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "중간값",
+        "en": "median value",
+        "es": "mediana",
+        "fr": "médiane",
+        "pt": "mediana"
+      },
+      "examples": [
+        {
+          "target": "중간값은 데이터의 중앙에 위치한 값입니다.",
+          "en": "The median value is the middle value of the data.",
+          "es": "La mediana es el valor que está en el centro de los datos.",
+          "fr": "La médiane est la valeur située au milieu des données.",
+          "pt": "A mediana é o valor que está no meio dos dados."
+        },
+        {
+          "target": "중간값은 극단값의 영향을 덜 받습니다.",
+          "en": "The median value is less affected by outliers.",
+          "es": "La mediana se ve menos afectada por valores atípicos.",
+          "fr": "La médiane est moins affectée par les valeurs extrêmes.",
+          "pt": "A mediana é menos afetada por valores extremos."
+        },
+        {
+          "target": "분포가 비대칭일 때는 중간값이 더 유용합니다.",
+          "en": "When the distribution is skewed, the median value is more useful.",
+          "es": "Cuando la distribución es asimétrica, la mediana es más útil.",
+          "fr": "Lorsque la distribution est asymétrique, la médiane est plus utile.",
+          "pt": "Quando a distribuição é assimétrica, a mediana é mais útil."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "표준편차",
+        "en": "standard deviation",
+        "es": "desviación estándar",
+        "fr": "écart-type",
+        "pt": "desvio padrão"
+      },
+      "examples": [
+        {
+          "target": "표준편차는 데이터의 흩어짐 정도를 나타냅니다.",
+          "en": "Standard deviation shows the amount of variation in the data.",
+          "es": "La desviación estándar muestra el nivel de dispersión de los datos.",
+          "fr": "L’écart-type indique le degré de dispersion des données.",
+          "pt": "O desvio padrão indica o grau de dispersão dos dados."
+        },
+        {
+          "target": "표준편차가 크면 데이터가 넓게 퍼져 있다는 뜻입니다.",
+          "en": "A large standard deviation means the data is widely spread.",
+          "es": "Una desviación estándar grande significa que los datos están muy dispersos.",
+          "fr": "Un écart-type élevé signifie que les données sont très dispersées.",
+          "pt": "Um desvio padrão alto significa que os dados estão muito dispersos."
+        },
+        {
+          "target": "표준편차 계산은 자동 도구를 사용하면 편리합니다.",
+          "en": "Calculating standard deviation is convenient using automated tools.",
+          "es": "Calcular la desviación estándar es más cómodo con herramientas automáticas.",
+          "fr": "Calculer l’écart-type est plus pratique avec des outils automatisés.",
+          "pt": "Calcular o desvio padrão é mais fácil com ferramentas automáticas."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "회귀",
+        "en": "regression",
+        "es": "regresión",
+        "fr": "régression",
+        "pt": "regressão"
+      },
+      "examples": [
+        {
+          "target": "회귀 분석은 변수 간 관계를 설명합니다.",
+          "en": "Regression analysis explains relationships between variables.",
+          "es": "El análisis de regresión explica las relaciones entre variables.",
+          "fr": "L’analyse de régression explique les relations entre les variables.",
+          "pt": "A análise de regressão explica as relações entre variáveis."
+        },
+        {
+          "target": "간단한 회귀 모델로도 예측이 가능합니다.",
+          "en": "Even a simple regression model can make predictions.",
+          "es": "Incluso un modelo de regresión sencillo puede hacer predicciones.",
+          "fr": "Même un modèle de régression simple peut réaliser des prédictions.",
+          "pt": "Até um modelo de regressão simples pode fazer previsões."
+        },
+        {
+          "target": "회귀 결과는 그래프로 시각화됩니다.",
+          "en": "Regression results are visualized in a graph.",
+          "es": "Los resultados de la regresión se visualizan en un gráfico.",
+          "fr": "Les résultats de la régression sont visualisés dans un graphique.",
+          "pt": "Os resultados da regressão são visualizados em um gráfico."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "분산",
+        "en": "variance",
+        "es": "varianza",
+        "fr": "variance",
+        "pt": "variância"
+      },
+      "examples": [
+        {
+          "target": "분산은 데이터가 평균에서 얼마나 떨어져 있는지를 나타냅니다.",
+          "en": "Variance shows how far the data is spread from the mean.",
+          "es": "La varianza muestra cuánto se alejan los datos de la media.",
+          "fr": "La variance montre l’écart des données par rapport à la moyenne.",
+          "pt": "A variância mostra o quanto os dados se afastam da média."
+        },
+        {
+          "target": "분산 값이 크면 데이터의 변동성이 큽니다.",
+          "en": "A large variance means high variability in the data.",
+          "es": "Una varianza alta indica gran variabilidad en los datos.",
+          "fr": "Une variance élevée signifie une grande variabilité des données.",
+          "pt": "Uma variância alta indica grande variabilidade nos dados."
+        },
+        {
+          "target": "분산 계산은 중요한 통계 분석 과정입니다.",
+          "en": "Calculating variance is an important statistical analysis step.",
+          "es": "El cálculo de la varianza es un paso importante en el análisis estadístico.",
+          "fr": "Le calcul de la variance est une étape importante de l’analyse statistique.",
+          "pt": "O cálculo da variância é um passo importante na análise estatística."
+        }
+      ]
+    }
+  ]
+}

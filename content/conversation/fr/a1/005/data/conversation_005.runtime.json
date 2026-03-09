@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a1",
+    "id": "005"
+  },
+  "title": {
+    "target": "가족 소개",
+    "en": "Family_Introduction",
+    "es": "Presentación_de_la_familia",
+    "fr": "Présentation_de_la_famille",
+    "pt": "Apresentação_da_família"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 가족이 어떻게 돼요?",
+            "en": "How is your family?",
+            "es": "¿Cómo es tu familia?",
+            "fr": "Ta famille est comment ?",
+            "pt": "Como é a tua família?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 부모님과 누나 한 명 있어요.",
+            "en": "I live with my parents and an older sister.",
+            "es": "Vivo con mis padres y mi hermana mayor.",
+            "fr": "Je vis avec mes parents et ma grande sœur.",
+            "pt": "Vivo com os meus pais e a minha irmã mais velha."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 가족이 다정하겠네요!",
+            "en": "Oh, sounds like a warm family!",
+            "es": "Oh, ¡suena como una familia muy cariñosa!",
+            "fr": "Oh, ça a l’air d’une famille chaleureuse !",
+            "pt": "Oh, parece uma família muito querida!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "다들 성격이 좋아요.",
+            "en": "Everyone gets along well.",
+            "es": "Nos llevamos muy bien.",
+            "fr": "On s’entend tous très bien.",
+            "pt": "Damo-nos todos muito bem."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "언젠가 가족 이야기 더 들려주세요!",
+            "en": "Tell me more about them someday!",
+            "es": "¡Cuéntame más sobre ellos algún día!",
+            "fr": "Tu m’en raconteras plus un jour !",
+            "pt": "Conta-me mais sobre eles um dia!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네! 기회 되면 말할게요.",
+            "en": "Sure, I can share more later!",
+            "es": "Sí, te contaré más luego.",
+            "fr": "Oui, je pourrai t’en parler plus tard.",
+            "pt": "Sim, posso contar-te mais depois."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "형제자매 있어요?",
+            "en": "Do you have any siblings?",
+            "es": "¿Tienes hermanos?",
+            "fr": "Tu as des frères ou sœurs ?",
+            "pt": "Tens irmãos?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 남동생이 한 명 있어요.",
+            "en": "Yes, I have a younger brother.",
+            "es": "Sí, tengo un hermano menor.",
+            "fr": "Oui, j’ai un petit frère.",
+            "pt": "Sim, tenho um irmão mais novo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 저랑 비슷하네요!",
+            "en": "Oh, that’s similar to me!",
+            "es": "¡Ah, parecido a mí!",
+            "fr": "Ah, c’est un peu comme moi !",
+            "pt": "Ah, é parecido comigo!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "같이 게임도 하고 잘 지내요.",
+            "en": "We play games together and get along well.",
+            "es": "Jugamos juntos y nos llevamos bien.",
+            "fr": "On joue souvent ensemble et on s’entend bien.",
+            "pt": "Brincamos juntos e damo-nos bem."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "가족끼리 사이가 좋아 보이네요!",
+            "en": "Your family seems really close!",
+            "es": "Parece que tu familia es muy unida.",
+            "fr": "On dirait que votre famille est très soudée.",
+            "pt": "Parece que a tua família é muito unida."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요! 꽤 친해요.",
+            "en": "Yeah, we’re pretty close.",
+            "es": "Sí, somos bastante cercanos.",
+            "fr": "Oui, on est assez proches.",
+            "pt": "Sim, somos bastante próximos."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "부모님은 무슨 일 하세요?",
+            "en": "What do your parents do?",
+            "es": "¿A qué se dedican tus padres?",
+            "fr": "Tes parents font quoi dans la vie ?",
+            "pt": "O que os teus pais fazem?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아버지는 회사에 다니고 엄마는 작은 가게를 하세요.",
+            "en": "My dad works at a company, and my mom runs a small shop.",
+            "es": "Mi padre trabaja en una empresa y mi madre tiene una pequeña tienda.",
+            "fr": "Mon père travaille dans une entreprise et ma mère tient une petite boutique.",
+            "pt": "O meu pai trabalha numa empresa e a minha mãe tem uma pequena loja."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 정말 열심히 사시는 분들이네요!",
+            "en": "Oh, they must work really hard!",
+            "es": "Oh, seguro que trabajan mucho.",
+            "fr": "Oh, ils doivent beaucoup travailler !",
+            "pt": "Oh, devem trabalhar imenso!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "늘 바쁘지만 즐겁게 일하세요.",
+            "en": "They’re busy but enjoy what they do.",
+            "es": "Siempre están ocupados, pero disfrutan lo que hacen.",
+            "fr": "Ils sont toujours occupés mais ils aiment leur travail.",
+            "pt": "Estão sempre ocupados, mas gostam do que fazem."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저도 그런 모습 존경해요.",
+            "en": "I really respect that.",
+            "es": "Yo admiro ese tipo de esfuerzo.",
+            "fr": "Je respecte vraiment ce genre d’énergie.",
+            "pt": "Admiro muito essa dedicação."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그렇게 말해줘서 고마워요!",
+            "en": "Thanks for saying that!",
+            "es": "Gracias por decir eso.",
+            "fr": "Merci, c’est gentil !",
+            "pt": "Obrigado(a), é querido da tua parte."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "가족은 어디에 살아요?",
+            "en": "Where does your family live?",
+            "es": "¿Dónde vive tu familia?",
+            "fr": "Ta famille habite où ?",
+            "pt": "Onde vive a tua família?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저희 가족은 지방에 살아요.",
+            "en": "My family lives outside the city.",
+            "es": "Mi familia vive fuera de la ciudad.",
+            "fr": "Ma famille habite hors de la ville.",
+            "pt": "A minha família vive fora da cidade."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 고향 분위기 참 좋겠다!",
+            "en": "Oh, your hometown must feel nice!",
+            "es": "Oh, ¡tu ciudad natal debe ser agradable!",
+            "fr": "Oh, ton coin natal doit être agréable !",
+            "pt": "Oh, a tua terra deve ser bem agradável!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "조용해서 편해요.",
+            "en": "It’s quiet and comfortable there.",
+            "es": "Es tranquilo y cómodo.",
+            "fr": "C’est calme et très confortable.",
+            "pt": "É calmo e muito confortável."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저도 언젠가 놀러가보고 싶어요.",
+            "en": "I’d love to visit someday.",
+            "es": "Me encantaría visitarla algún día.",
+            "fr": "J’aimerais visiter un jour.",
+            "pt": "Gostava de visitar um dia."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "언제든 환영해요!",
+            "en": "You’re welcome anytime!",
+            "es": "¡Eres bienvenido(a) cuando quieras!",
+            "fr": "Tu es le/la bienvenu(e) quand tu veux !",
+            "pt": "És bem-vindo(a) quando quiseres!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "가족이랑 자주 만나요?",
+            "en": "Do you see your family often?",
+            "es": "¿Ves a tu familia a menudo?",
+            "fr": "Tu vois souvent ta famille ?",
+            "pt": "Vês a tua família muitas vezes?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 주말마다 보려고 노력해요.",
+            "en": "Yes, I try to see them every weekend.",
+            "es": "Sí, intento verlos cada fin de semana.",
+            "fr": "Oui, j’essaie de les voir chaque week-end.",
+            "pt": "Sim, tento vê-los todos os fins de semana."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 자주 보면 더 돈독해지겠네요.",
+            "en": "Oh, that must make you closer.",
+            "es": "Ah, eso debe hacerlos más unidos.",
+            "fr": "Ah, ça doit vous rapprocher encore plus.",
+            "pt": "Ah, isso deve deixar-vos ainda mais próximos."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "같이 밥 먹고 이야기하면 기분이 좋아져요.",
+            "en": "Talking and eating together makes me feel better.",
+            "es": "Comer y hablar juntos siempre me anima.",
+            "fr": "Manger et discuter ensemble me fait du bien.",
+            "pt": "Conversar e comer juntos faz-me sentir melhor."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저도 가족들 보고 싶어지네요.",
+            "en": "Makes me want to visit my family too.",
+            "es": "Me dan ganas de ver a mi familia también.",
+            "fr": "Ça me donne envie de voir ma famille aussi.",
+            "pt": "Também fiquei com vontade de ver a minha família."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요! 가족은 큰 힘이 되죠.",
+            "en": "Yeah, family gives a lot of strength.",
+            "es": "Sí, la familia da mucha fuerza.",
+            "fr": "Oui, la famille donne beaucoup de force.",
+            "pt": "Sim, a família dá muita força."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "가족 중에 누구랑 제일 친해요?",
+            "en": "Who are you closest to in your family?",
+            "es": "¿Con quién eres más cercano(a) en tu familia?",
+            "fr": "Avec qui es-tu le plus proche dans ta famille ?",
+            "pt": "Com quem és mais próximo(a) na tua família?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 누나랑 제일 친해요.",
+            "en": "I’m closest to my sister.",
+            "es": "Soy más cercano(a) a mi hermana.",
+            "fr": "Je suis le plus proche de ma sœur.",
+            "pt": "Sou mais próximo(a) da minha irmã."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 둘이 정말 잘 맞는군요!",
+            "en": "Oh, sounds like you two get along great!",
+            "es": "Oh, suena como si se llevaran muy bien.",
+            "fr": "Ah, vous devez vraiment bien vous entendre !",
+            "pt": "Oh, parecem dar-se mesmo bem!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "성격이 잘 맞아서 얘기도 잘해요.",
+            "en": "We have similar personalities and talk a lot.",
+            "es": "Tenemos personalidades parecidas.",
+            "fr": "On a une personnalité assez similaire.",
+            "pt": "Temos personalidades parecidas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "같이 보내는 시간 많겠어요.",
+            "en": "You must spend lots of time together.",
+            "es": "Seguramente pasan mucho tiempo juntos.",
+            "fr": "Vous devez passer beaucoup de temps ensemble.",
+            "pt": "Devem passar bastante tempo juntos."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 자주 이야기해요.",
+            "en": "Yes, we chat often.",
+            "es": "Sí, hablamos muy a menudo.",
+            "fr": "Oui, on parle souvent.",
+            "pt": "Sim, falamos muitas vezes."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "가족들이랑 여행 자주 가요?",
+            "en": "Do you travel with your family often?",
+            "es": "¿Viajas mucho con tu familia?",
+            "fr": "Tu voyages souvent avec ta famille ?",
+            "pt": "Viajas muito com a tua família?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "예전엔 자주 갔는데 요즘은 바빠서 못 가요.",
+            "en": "We used to travel often, but not recently.",
+            "es": "Antes viajábamos mucho, pero ahora menos.",
+            "fr": "On voyageait souvent avant, mais moins maintenant.",
+            "pt": "Antes viajávamos muito, agora menos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 추억이 많겠어요!",
+            "en": "Oh, must be lots of memories!",
+            "es": "Oh, deben tener muchos recuerdos bonitos.",
+            "fr": "Oh, vous devez avoir plein de bons souvenirs !",
+            "pt": "Oh, devem ter muitas boas recordações!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그래도 기억은 많이 남아 있어요.",
+            "en": "Still, the memories are special.",
+            "es": "Aun así, los recuerdos son muy especiales.",
+            "fr": "Les souvenirs restent très précieux.",
+            "pt": "Mas as memórias continuam especiais."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "사진도 많이 찍었겠네요!",
+            "en": "I bet you took many photos!",
+            "es": "¡Apuesto a que tomaron muchas fotos!",
+            "fr": "Vous avez dû prendre beaucoup de photos !",
+            "pt": "Aposto que tiraram muitas fotos!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요! 사진 보면 또 가고 싶어요.",
+            "en": "Yes, looking at photos makes me miss it.",
+            "es": "Sí, ver las fotos me hace extrañarlo.",
+            "fr": "Oui, les photos me donnent envie d’y retourner.",
+            "pt": "Sim, ver as fotos dá vontade de voltar."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "가족들 생일은 어떻게 챙겨요?",
+            "en": "How do you celebrate birthdays in your family?",
+            "es": "¿Cómo celebran los cumpleaños en tu familia?",
+            "fr": "Comment vous fêtez les anniversaires en famille ?",
+            "pt": "Como celebram os aniversários na tua família?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "보통 집에서 조용히 축하해요.",
+            "en": "We usually celebrate quietly at home.",
+            "es": "Normalmente celebramos en casa.",
+            "fr": "On fête ça tranquillement à la maison.",
+            "pt": "Normalmente celebramos em casa."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 따뜻한 분위기네요!",
+            "en": "Oh, that sounds warm and cozy!",
+            "es": "Oh, suena muy acogedor.",
+            "fr": "Ah, ça a l’air tout doux et agréable !",
+            "pt": "Oh, parece tão acolhedor!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "케이크 먹고 이야기하면 충분해요.",
+            "en": "Just cake and talking together is enough.",
+            "es": "Un pastel y una buena charla son suficientes.",
+            "fr": "Un gâteau et une bonne discussion suffisent.",
+            "pt": "Um bolo e uma boa conversa chegam."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저도 그런 생일 좋아해요.",
+            "en": "I like simple birthdays like that too.",
+            "es": "A mí también me gustan los cumpleaños simples.",
+            "fr": "J’aime aussi ce genre de fête simple.",
+            "pt": "Também gosto de aniversários simples assim."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 소박한 게 더 좋아요.",
+            "en": "Yeah, simple feels better.",
+            "es": "Sí, lo sencillo es lo mejor.",
+            "fr": "Oui, la simplicité, c’est souvent le mieux.",
+            "pt": "Sim, o simples é o melhor."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "가족들이랑 성격이 비슷해요?",
+            "en": "Do you share similar personalities with your family?",
+            "es": "¿Te pareces a tu familia en personalidad?",
+            "fr": "As-tu un tempérament similaire à celui de ta famille ?",
+            "pt": "Pareces-te com a tua família em personalidade?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 아버지랑 성격이 조금 비슷해요.",
+            "en": "Yes, I’m a bit like my dad.",
+            "es": "Sí, me parezco un poco a mi padre.",
+            "fr": "Oui, je ressemble un peu à mon père.",
+            "pt": "Sim, pareço-me um pouco com o meu pai."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 성격이 닮으면 더 편하죠!",
+            "en": "Oh, that makes things easier!",
+            "es": "Ah, eso hace más fácil convivir.",
+            "fr": "Ah, ça rend les choses plus faciles !",
+            "pt": "Ah, isso facilita muito a convivência!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "침착한 편이에요.",
+            "en": "I’m pretty calm, like him.",
+            "es": "Soy tranquilo(a), igual que él.",
+            "fr": "Je suis plutôt calme comme lui.",
+            "pt": "Sou calmo(a), como ele."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그래서 사이가 좋아 보이네요!",
+            "en": "No wonder you get along well!",
+            "es": "Con razón se llevan tan bien.",
+            "fr": "Pas étonnant que vous vous entendiez si bien.",
+            "pt": "Não admira que se deem tão bem."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그런 말 들으면 기분 좋아요.",
+            "en": "Hearing that makes me happy.",
+            "es": "Qué bueno que lo notes.",
+            "fr": "Ça me fait plaisir que tu dises ça.",
+            "pt": "Fico feliz que notes isso."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "가족들이랑 떨어져 지내는 건 어때요?",
+            "en": "How is it living away from your family?",
+            "es": "¿Cómo es vivir lejos de tu familia?",
+            "fr": "C’est comment, vivre loin de ta famille ?",
+            "pt": "Como é viver longe da tua família?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "가끔 보고 싶어서 힘들어요.",
+            "en": "Sometimes I miss them and feel lonely.",
+            "es": "A veces los extraño y es difícil.",
+            "fr": "Parfois, ils me manquent et c’est dur.",
+            "pt": "Às vezes sinto saudades e é difícil."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 그 마음 이해돼요.",
+            "en": "Oh, I understand that feeling.",
+            "es": "Ah, entiendo ese sentimiento.",
+            "fr": "Oh, je comprends ce que tu ressens.",
+            "pt": "Ah, percebo bem esse sentimento."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그래도 전화 자주 하면서 버텨요.",
+            "en": "But I call them often, so it’s okay.",
+            "es": "Pero los llamo a menudo, así que estoy bien.",
+            "fr": "Mais je les appelle souvent, donc ça va.",
+            "pt": "Mas falo com eles muitas vezes, então fico bem."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그래도 자주 연락하면 괜찮죠!",
+            "en": "But staying in touch helps a lot!",
+            "es": "Pero mantenerse en contacto ayuda mucho.",
+            "fr": "Heureusement, rester en contact aide beaucoup.",
+            "pt": "Mas manter contacto ajuda bastante!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요! 연락이 큰 힘이 돼요.",
+            "en": "Yeah, calls make a big difference.",
+            "es": "Sí, las llamadas hacen mucha diferencia.",
+            "fr": "Oui, les appels font vraiment du bien.",
+            "pt": "Sim, as chamadas fazem muita diferença."
+          }
+        }
+      ]
+    }
+  ]
+}

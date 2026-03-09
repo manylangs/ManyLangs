@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "c1",
+    "id": "002"
+  },
+  "title": {
+    "target": "C1 — 학술•전문 개념 어휘",
+    "en": "C1 — Academic and Specialized Concept Vocabulary",
+    "es": "C1 — Vocabulario de conceptos académicos y especializados",
+    "fr": "C1 — Vocabulaire de concepts académiques et spécialisés",
+    "pt": "C1 — Vocabulário de conceitos acadêmicos e especializados"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "범주",
+        "en": "category",
+        "es": "categoría",
+        "fr": "catégorie",
+        "pt": "categoria"
+      },
+      "examples": [
+        {
+          "target": "연구에서 변인을 범주별로 분류했다.",
+          "en": "The variables were classified into categories in the study.",
+          "es": "Las variables se clasificaron por categorías en el estudio.",
+          "fr": "Les variables ont été classées par catégories dans l’étude.",
+          "pt": "As variáveis foram classificadas por categorias no estudo."
+        },
+        {
+          "target": "이 범주는 여러 학문 분야에서 중요하게 다뤄진다.",
+          "en": "This category is considered important across many academic fields.",
+          "es": "Esta categoría es importante en muchos campos académicos.",
+          "fr": "Cette catégorie est importante dans de nombreux domaines académiques.",
+          "pt": "Esta categoria é importante em vários campos acadêmicos."
+        },
+        {
+          "target": "자료를 범주로 나누면 분석이 더 쉬워진다.",
+          "en": "Dividing data into categories makes analysis easier.",
+          "es": "Dividir los datos en categorías facilita el análisis.",
+          "fr": "Diviser les données en catégories facilite l’analyse.",
+          "pt": "Dividir os dados em categorias facilita a análise."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "맥락",
+        "en": "context",
+        "es": "contexto",
+        "fr": "contexte",
+        "pt": "contexto"
+      },
+      "examples": [
+        {
+          "target": "어떤 주장도 맥락 속에서 이해해야 한다.",
+          "en": "Any argument must be understood within its context.",
+          "es": "Cualquier argumento debe entenderse dentro de su contexto.",
+          "fr": "Tout argument doit être compris dans son contexte.",
+          "pt": "Qualquer argumento deve ser compreendido dentro de seu contexto."
+        },
+        {
+          "target": "맥락을 고려하지 않으면 분석이 왜곡될 수 있다.",
+          "en": "Ignoring context may distort the analysis.",
+          "es": "Ignorar el contexto puede distorsionar el análisis.",
+          "fr": "Ignorer le contexte peut fausser l’analyse.",
+          "pt": "Ignorar o contexto pode distorcer a análise."
+        },
+        {
+          "target": "역사적 맥락을 아는 것이 중요한 단서가 되었다.",
+          "en": "Understanding the historical context provided important clues.",
+          "es": "Comprender el contexto histórico proporcionó pistas importantes.",
+          "fr": "Comprendre le contexte historique a fourni des indices importants.",
+          "pt": "Entender o contexto histórico forneceu pistas importantes."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "관점",
+        "en": "perspective",
+        "es": "perspectiva",
+        "fr": "perspective",
+        "pt": "perspetiva"
+      },
+      "examples": [
+        {
+          "target": "연구자는 다양한 관점에서 문제를 바라보았다.",
+          "en": "The researcher examined the issue from multiple perspectives.",
+          "es": "El investigador analizó el problema desde múltiples perspectivas.",
+          "fr": "Le chercheur a examiné la question sous plusieurs perspectives.",
+          "pt": "O pesquisador analisou o problema a partir de várias perspetivas."
+        },
+        {
+          "target": "관점의 차이가 해석을 크게 바꿀 수 있다.",
+          "en": "Differences in perspective can greatly change interpretations.",
+          "es": "Las diferencias de perspectiva pueden cambiar significativamente las interpretaciones.",
+          "fr": "Les différences de perspective peuvent modifier fortement les interprétations.",
+          "pt": "Diferenças de perspetiva podem alterar significativamente as interpretações."
+        },
+        {
+          "target": "새로운 관점이 문제 해결에 중요한 단서를 제공했다.",
+          "en": "A new perspective provided important clues for solving the problem.",
+          "es": "Una nueva perspectiva proporcionó pistas importantes para resolver el problema.",
+          "fr": "Une nouvelle perspective a fourni des indices importants pour résoudre le problème.",
+          "pt": "Uma nova perspetiva forneceu pistas importantes para resolver o problema."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "담론",
+        "en": "discourse",
+        "es": "discurso",
+        "fr": "discours",
+        "pt": "discurso"
+      },
+      "examples": [
+        {
+          "target": "그 시대의 사회 담론은 변화의 방향을 제시했다.",
+          "en": "The social discourse of that era suggested the direction of change.",
+          "es": "El discurso social de esa época indicaba la dirección del cambio.",
+          "fr": "Le discours social de cette époque indiquait la direction du changement.",
+          "pt": "O discurso social dessa época indicava a direção da mudança."
+        },
+        {
+          "target": "담론을 분석하면 권력 구조가 드러난다.",
+          "en": "Analyzing discourse reveals underlying power structures.",
+          "es": "Analizar el discurso revela las estructuras de poder subyacentes.",
+          "fr": "L’analyse du discours révèle les structures de pouvoir sous-jacentes.",
+          "pt": "Analisar o discurso revela as estruturas de poder subjacentes."
+        },
+        {
+          "target": "담론의 전환은 사회 인식의 변화를 가져왔다.",
+          "en": "Shifts in discourse brought changes in social awareness.",
+          "es": "Los cambios en el discurso provocaron transformaciones en la conciencia social.",
+          "fr": "Les changements de discours ont entraîné une évolution de la conscience sociale.",
+          "pt": "As mudanças no discurso trouxeram alterações na consciência social."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "성찰",
+        "en": "reflection",
+        "es": "reflexión",
+        "fr": "réflexion",
+        "pt": "reflexão"
+      },
+      "examples": [
+        {
+          "target": "연구자는 자신의 연구 방법을 깊이 성찰했다.",
+          "en": "The researcher deeply reflected on their research methods.",
+          "es": "El investigador reflexionó profundamente sobre su método de investigación.",
+          "fr": "Le chercheur a profondément réfléchi à sa méthode de recherche.",
+          "pt": "O pesquisador refletiu profundamente sobre seu método de pesquisa."
+        },
+        {
+          "target": "성찰은 새로운 이해로 이어질 수 있다.",
+          "en": "Reflection can lead to new understanding.",
+          "es": "La reflexión puede conducir a una nueva comprensión.",
+          "fr": "La réflexion peut mener à une nouvelle compréhension.",
+          "pt": "A reflexão pode levar a uma nova compreensão."
+        },
+        {
+          "target": "비판적 성찰은 학문적 성장의 핵심이다.",
+          "en": "Critical reflection is essential for academic growth.",
+          "es": "La reflexión crítica es esencial para el crecimiento académico.",
+          "fr": "La réflexion critique est essentielle à la croissance académique.",
+          "pt": "A reflexão crítica é essencial para o crescimento acadêmico."
+        }
+      ]
+    }
+  ]
+}

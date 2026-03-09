@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "a2",
+    "id": "015"
+  },
+  "title": {
+    "target": "격식체 (합니다체 · 하십시오체)",
+    "en": "Formal Speech (합니다체 · 하십시오체)",
+    "es": "Habla Formal (Estilo 합니다 · Estilo 하십시오)",
+    "fr": "Style Formel (Style 합니다 · Style 하십시오)",
+    "pt": "Estilo Formal (Forma 합니다 · Forma 하십시오)"
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "격식체는 공식적이고 정중한 상황에서 사용하는 말투입니다.",
+        "en": "The formal speech style is used in official and polite situations.",
+        "es": "El estilo formal se usa en situaciones oficiales y corteses.",
+        "fr": "Le style formel est utilisé dans des situations officielles et polies.",
+        "pt": "O estilo formal é usado em situações oficiais e educadas."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "합니다체는 설명·보고·안내에서 가장 많이 쓰입니다.",
+        "en": "The 합니다-style is most commonly used in explanations, reports, and announcements.",
+        "es": "El estilo 합니다 se usa principalmente en explicaciones, informes y anuncios.",
+        "fr": "Le style 합니다 est principalement utilisé dans les explications, les rapports et les annonces.",
+        "pt": "A forma 합니다 é usada principalmente em explicações, relatórios e anúncios."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "합니다체는 문장을 단정하고 공손하게 마무리합니다.",
+        "en": "The 합니다-style ends sentences clearly and politely.",
+        "es": "El estilo 합니다 termina las frases de manera clara y educada.",
+        "fr": "Le style 합니다 termine les phrases de manière claire et respectueuse.",
+        "pt": "A forma 합니다 termina as frases de forma clara e respeitosa."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "하십시오체는 명령이나 요청을 매우 정중하게 말할 때 사용합니다.",
+        "en": "The 하십시오-style is used when giving very polite commands or requests.",
+        "es": "El estilo 하십시오 se usa para dar órdenes o peticiones muy corteses.",
+        "fr": "Le style 하십시오 est utilisé pour donner des demandes ou instructions très polies.",
+        "pt": "A forma 하십시오 é usada para ordens ou pedidos muito educados."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "하십시오체는 '-십시오', '-으십시오' 형태로 끝납니다.",
+        "en": "The 하십시오-style ends with ‘-십시오’ or ‘-으십시오’.",
+        "es": "El estilo 하십시오 termina en ‘-십시오’ o ‘-으십시오’.",
+        "fr": "Le style 하십시오 se termine par ‘-십시오’ ou ‘-으십시오’.",
+        "pt": "A forma 하십시오 termina em ‘-십시오’ ou ‘-으십시오’."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "격식체는 회사·학교·행사·공지 등 공식 문장에서 사용됩니다.",
+        "en": "Formal speech is used in companies, schools, events, and public notices.",
+        "es": "El habla formal se usa en empresas, escuelas, eventos y avisos públicos.",
+        "fr": "Le style formel est utilisé dans les entreprises, les écoles, les événements et les annonces publiques.",
+        "pt": "O estilo formal é usado em empresas, escolas, eventos e avisos públicos."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "격식체는 감정보다 정보 전달에 초점을 둡니다.",
+        "en": "It focuses more on delivering information than expressing emotion.",
+        "es": "Se centra más en transmitir información que en expresar emociones.",
+        "fr": "Il met l’accent sur la transmission d’informations plutôt que sur l’expression des émotions.",
+        "pt": "Dá mais importância à transmissão de informação do que à expressão de emoções."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "처음 만난 사람에게도 자연스럽게 사용할 수 있습니다.",
+        "en": "It can be used naturally when speaking to someone for the first time.",
+        "es": "Puede usarse naturalmente al hablar con alguien por primera vez.",
+        "fr": "Il peut être utilisé naturellement lorsqu’on parle à quelqu’un pour la première fois.",
+        "pt": "Pode ser usado naturalmente quando se fala com alguém pela primeira vez."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "상대와의 관계를 모를 때 격식체를 쓰면 안전합니다.",
+        "en": "When unsure of the relationship or hierarchy, formal speech is the safest choice.",
+        "es": "Cuando no se conoce la relación o jerarquía, el estilo formal es la opción más segura.",
+        "fr": "Quand la relation ou la hiérarchie n’est pas claire, le style formel est le plus sûr.",
+        "pt": "Quando a relação ou a hierarquia não é clara, o estilo formal é a escolha mais segura."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "일상 대화에서는 조금 딱딱하게 들릴 수 있습니다.",
+        "en": "In daily conversation, it may sound a bit stiff.",
+        "es": "En la conversación diaria puede sonar un poco rígido.",
+        "fr": "Dans la conversation quotidienne, il peut sembler un peu rigide.",
+        "pt": "Na conversa diária, pode soar um pouco rígido."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "저는 한국어를 공부합니다. (합니다체)",
+        "en": "I study Korean. (합니다-style)",
+        "es": "Estudio coreano. (estilo 합니다)",
+        "fr": "J’étudie le coréen. (style 합니다)",
+        "pt": "Estudo coreano. (forma 합니다)"
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "회의는 3시에 시작합니다. (합니다체)",
+        "en": "The meeting starts at 3 p.m. (합니다-style)",
+        "es": "La reunión empieza a las 3 p.m. (estilo 합니다)",
+        "fr": "La réunion commence à 15 h. (style 합니다)",
+        "pt": "A reunião começa às 15h. (forma 합니다)"
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "지금 출발합니다. (합니다체)",
+        "en": "We are leaving now. (합니다-style)",
+        "es": "Salimos ahora. (estilo 합니다)",
+        "fr": "Nous partons maintenant. (style 합니다)",
+        "pt": "Estamos a sair agora. (forma 합니다)"
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "주의하시기 바랍니다. (하십시오체)",
+        "en": "Please be careful. (하십시오-style)",
+        "es": "Por favor, tenga cuidado. (estilo 하십시오)",
+        "fr": "Veuillez faire attention. (style 하십시오)",
+        "pt": "Por favor, tenha cuidado. (forma 하십시오)"
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "이쪽으로 오십시오. (십시오체)",
+        "en": "Please come this way. (십시오-style)",
+        "es": "Por favor, venga por aquí. (estilo 하십시오)",
+        "fr": "Veuillez venir par ici. (style 하십시오)",
+        "pt": "Por favor, venha por aqui. (forma 하십시오)"
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "편하게 질문하십시오. (십시오체)",
+        "en": "Feel free to ask questions. (십시오-style)",
+        "es": "Siéntase libre de hacer preguntas. (estilo 하십시오)",
+        "fr": "N’hésitez pas à poser des questions. (style 하십시오)",
+        "pt": "Sinta-se à vontade para fazer perguntas. (forma 하십시오)"
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "저는 음악을 좋아합니다.",
+        "en": "I like music.",
+        "es": "Me gusta la música.",
+        "fr": "J’aime la musique.",
+        "pt": "Gosto de música."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "오늘 날씨가 좋습니다.",
+        "en": "The weather is nice today.",
+        "es": "Hoy hace buen tiempo.",
+        "fr": "Il fait beau aujourd’hui.",
+        "pt": "Hoje está bom tempo."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "수업은 여기서 진행합니다.",
+        "en": "The class will be held here.",
+        "es": "La clase se realizará aquí.",
+        "fr": "Le cours aura lieu ici.",
+        "pt": "A aula será realizada aqui."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "자리에서 일어나십시오.",
+        "en": "Please stand up.",
+        "es": "Por favor, póngase de pie.",
+        "fr": "Veuillez vous lever.",
+        "pt": "Por favor, levante-se."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "안전에 유의하십시오.",
+        "en": "Please pay attention to safety.",
+        "es": "Por favor, preste atención a la seguridad.",
+        "fr": "Veuillez faire attention à la sécurité.",
+        "pt": "Por favor, preste atenção à segurança."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "문의 사항은 말씀하십시오.",
+        "en": "If you have questions, please speak.",
+        "es": "Si tiene preguntas, por favor hable.",
+        "fr": "Si vous avez des questions, veuillez parler.",
+        "pt": "Se tiver perguntas, por favor fale."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "행사는 곧 시작합니다.",
+        "en": "The event will begin soon.",
+        "es": "El evento comenzará pronto.",
+        "fr": "L’événement va commencer bientôt.",
+        "pt": "O evento começará em breve."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "도움이 필요하시면 알려 주십시오.",
+        "en": "If you need help, please let us know.",
+        "es": "Si necesita ayuda, por favor avísenos.",
+        "fr": "Si vous avez besoin d’aide, veuillez nous en informer.",
+        "pt": "Se precisar de ajuda, por favor informe-nos."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "보고서를 내일까지 제출하십시오.",
+        "en": "Please submit the report by tomorrow.",
+        "es": "Por favor, entregue el informe antes de mañana.",
+        "fr": "Veuillez remettre le rapport avant demain.",
+        "pt": "Por favor, entregue o relatório até amanhã."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "저희 회사는 고객을 최우선으로 생각합니다.",
+        "en": "Our company places customers first.",
+        "es": "Nuestra empresa pone al cliente en primer lugar.",
+        "fr": "Notre entreprise place le client avant tout.",
+        "pt": "A nossa empresa coloca o cliente em primeiro lugar."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "지금부터 설명을 시작하겠습니다.",
+        "en": "We will begin the explanation now.",
+        "es": "Ahora comenzaremos la explicación.",
+        "fr": "Nous allons commencer l’explication maintenant.",
+        "pt": "Vamos começar a explicação agora."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "휴대폰은 무음으로 설정하십시오.",
+        "en": "Please set your phone to silent mode.",
+        "es": "Por favor, ponga su teléfono en modo silencioso.",
+        "fr": "Veuillez mettre votre téléphone en mode silencieux.",
+        "pt": "Por favor, coloque o seu telemóvel no modo silencioso."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "참석해 주셔서 감사합니다.",
+        "en": "Thank you for attending.",
+        "es": "Gracias por asistir.",
+        "fr": "Merci de votre présence.",
+        "pt": "Obrigado por participar."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "문의가 있으시면 연락해 주십시오.",
+        "en": "If you have any inquiries, please contact us.",
+        "es": "Si tiene consultas, por favor contáctenos.",
+        "fr": "Si vous avez des demandes, veuillez nous contacter.",
+        "pt": "Se tiver questões, por favor contacte-nos."
+      }
+    }
+  ]
+}
