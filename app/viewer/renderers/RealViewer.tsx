@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import RealAudioController from "@/components/audio/controllers/RealAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
@@ -25,6 +25,8 @@ type Props = {
 
 const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
 
+type LoadStatus = "idle" | "loading" | "ready" | "error";
+
 const buttonStyle = (active: boolean) => ({
   padding: "4px 8px",
   borderRadius: 4,
@@ -35,101 +37,115 @@ const buttonStyle = (active: boolean) => ({
   cursor: active ? "default" : "pointer",
 });
 
-type LoadStatus = "idle" | "loading" | "ready" | "error";
-
 export default function RealViewer({
   lang,
   level,
   chapter,
 }: Props) {
 
-  /* 🔹 Language you want to learn */
   const { targetLang, showTargetText } = useViewerTarget();
 
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
 
-  /* 🔹 targetLang에 따라 studyLang 초기화 */
-  useEffect(() => {
-    const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
-    if (filtered.length > 0) {
-      setStudyLang(filtered[0]);
-    }
-  }, [targetLang]);
   const [audioUrl, setAudioUrl] = useState("");
   const [imageUrl, setImageUrl] = useState("");
   const [sentences, setSentences] = useState<Sentence[]>([]);
+  const [chapters, setChapters] = useState<string[]>([]);
   const [status, setStatus] = useState<LoadStatus>("idle");
 
-  const FALLBACK_REAL_CHAPTERS = useMemo(
-    () => Array.from({ length: 20 }, (_, i) => String(i + 1).padStart(3, "0")),
-    []
-  );
+  /* study language 자동 설정 */
+  useEffect(() => {
+    const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
+    if (filtered.length > 0) setStudyLang(filtered[0]);
+  }, [targetLang]);
 
-  const [chapters, setChapters] = useState<string[]>(FALLBACK_REAL_CHAPTERS);
   const currentIndex = chapters.indexOf(chapter);
 
   const prev =
-    currentIndex > 0 ? chapters[currentIndex - 1] : chapters[0] ?? chapter;
+    currentIndex > 0 ? chapters[currentIndex - 1] : chapter;
 
   const next =
     currentIndex >= 0 && currentIndex < chapters.length - 1
       ? chapters[currentIndex + 1]
-      : chapters[chapters.length - 1] ?? chapter;
+      : chapter;
 
   useEffect(() => {
+
     let cancelled = false;
 
     const load = async () => {
+
       try {
+
         setStatus("loading");
+
         setAudioUrl("");
         setImageUrl("");
         setSentences([]);
 
-        /* 🔹 lang → targetLang */
         const res = await fetch(
           `/api/content/manifest?lang=${targetLang}&series=real&level=${level}&chapter=${chapter}`
         );
 
-        if (!res.ok) throw new Error("Manifest failed");
+        if (!res.ok) throw new Error("manifest fetch failed");
 
         const manifest = await res.json();
 
         if (cancelled) return;
 
-        const incoming = Array.isArray(manifest.chapters)
-          ? manifest.chapters
-          : null;
+        /* chapters (manifest only) */
+        if (!Array.isArray(manifest.chapters))
+          throw new Error("chapters missing in manifest");
 
-        setChapters(
-          incoming && incoming.length > 0
-            ? incoming
-            : FALLBACK_REAL_CHAPTERS
-        );
+        setChapters(manifest.chapters);
 
-        const audio = manifest.assets?.find((a: any) => a.kind === "audio")?.path;
-        const image = manifest.assets?.find((a: any) => a.kind === "image")?.path;
-        const data = manifest.assets?.find((a: any) => a.kind === "data")?.path;
+        /* assets */
 
-        setAudioUrl(audio || "");
-        setImageUrl(image || "");
+        const audio =
+          manifest.assets?.find((a: any) => a.kind === "audio");
 
-        if (data) {
-          const dataRes = await fetch(data);
-          const dataJson = await dataRes.json();
+        const image =
+          manifest.assets?.find((a: any) => a.kind === "image");
 
-          const descBlock =
-            dataJson.blocks?.find((b: any) => b.type === "description") ||
-            dataJson.blocks?.[0];
+        const data =
+          manifest.assets?.find((a: any) => a.kind === "data");
 
-          setSentences(descBlock?.sentences || dataJson.sentences || []);
-        }
+        if (audio?.path) setAudioUrl(audio.path);
+        if (image?.path) setImageUrl(image.path);
+
+        if (!data?.path)
+          throw new Error("data.json missing in manifest");
+
+        const dataRes = await fetch(data.path);
+
+        if (!dataRes.ok)
+          throw new Error("data.json fetch failed");
+
+        const dataJson = await dataRes.json();
+
+        const descBlock =
+          dataJson.blocks?.find((b: any) => b.type === "description") ||
+          dataJson.blocks?.[0];
+
+        const s =
+          descBlock?.sentences ||
+          dataJson.sentences;
+
+        if (!Array.isArray(s))
+          throw new Error("sentences missing");
+
+        setSentences(s);
 
         setStatus("ready");
+
       } catch (e) {
-        if (!cancelled) setStatus("error");
+
         console.error(e);
+
+        if (!cancelled) setStatus("error");
+
       }
+
     };
 
     load();
@@ -138,13 +154,15 @@ export default function RealViewer({
       cancelled = true;
     };
 
-    /* 🔹 lang → targetLang */
   }, [targetLang, level, chapter]);
 
   return (
     <div style={{ maxWidth: 1100, margin: "0 auto", padding: 24 }}>
+
       {status === "loading" && (
-        <div style={{ padding: 12, color: "#666" }}>Loading...</div>
+        <div style={{ padding: 12, color: "#666" }}>
+          Loading...
+        </div>
       )}
 
       {status === "error" && (
@@ -155,7 +173,12 @@ export default function RealViewer({
 
       {status === "ready" && (
         <>
-          {audioUrl && <RealAudioController src={audioUrl} />}
+
+          {audioUrl && (
+            <RealAudioController src={audioUrl} />
+          )}
+
+          {/* language switch */}
 
           <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
             {ALL_STUDY_LANGS
@@ -171,11 +194,19 @@ export default function RealViewer({
               ))}
           </div>
 
+          {/* prev next */}
+
           <div style={{ display: "flex", justifyContent: "space-between" }}>
-            {/* 🔹 lang → targetLang */}
-            <Link href={`/viewer/${targetLang}/real/${level}/${prev}`}>← Prev</Link>
-            <Link href={`/viewer/${targetLang}/real/${level}/${next}`}>Next →</Link>
+            <Link href={`/viewer/${targetLang}/real/${level}/${prev}`}>
+              ← Prev
+            </Link>
+
+            <Link href={`/viewer/${targetLang}/real/${level}/${next}`}>
+              Next →
+            </Link>
           </div>
+
+          {/* chapter list */}
 
           <div
             style={{
@@ -203,6 +234,8 @@ export default function RealViewer({
             ))}
           </div>
 
+          {/* content */}
+
           <div
             style={{
               display: "grid",
@@ -212,20 +245,24 @@ export default function RealViewer({
               alignItems: "start",
             }}
           >
+
             <div>
               {imageUrl && (
                 <img
                   src={imageUrl}
                   alt=""
-                  style={{ width: "100%", borderRadius: 8 }}
+                  style={{
+                    width: "100%",
+                    borderRadius: 8,
+                  }}
                 />
               )}
             </div>
 
             <div>
+
               {sentences.map((s, i) => {
 
-                /* 🔹 targetLang 사용 */
                 const targetText =
                   s.texts?.[targetLang as keyof typeof s.texts] ?? "";
 
@@ -242,9 +279,13 @@ export default function RealViewer({
                     <div>{studyText}</div>
                   </div>
                 );
+
               })}
+
             </div>
+
           </div>
+
         </>
       )}
     </div>
