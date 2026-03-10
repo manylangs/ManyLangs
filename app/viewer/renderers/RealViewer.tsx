@@ -8,13 +8,7 @@ import { useViewerTarget } from "../context/ViewerTargetContext";
 type StudyLang = "en" | "es" | "fr" | "pt";
 
 type Sentence = {
-  texts: {
-    kr: string;
-    en: string;
-    es: string;
-    fr: string;
-    pt: string;
-  };
+  texts: Record<string, string>;
 };
 
 type Props = {
@@ -264,8 +258,8 @@ export default function RealViewer({
               {sentences.map((s, i) => {
 
                 const targetText =
-                  s.texts?.[targetLang as keyof typeof s.texts] ?? "";
-
+                  s.texts?.[targetLang] ?? "";
+ 
                 const studyText =
                   s.texts?.[studyLang] ?? "";
 

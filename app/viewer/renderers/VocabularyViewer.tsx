@@ -23,7 +23,10 @@ const buttonStyle = (active: boolean) => ({
   border: "none",
   cursor: "pointer",
 });
-
+type VocaBlock = {
+  word: Record<string, string>;
+  examples?: Record<string, string>[];
+};
 export default function VocabularyViewer({
   lang,
   level,
@@ -33,9 +36,10 @@ export default function VocabularyViewer({
   const router = useRouter();
 
   const { targetLang, showTargetText } = useViewerTarget();
-
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
-  const [blocks, setBlocks] = useState<any[]>([]);
+
+  const [blocks, setBlocks] = useState<VocaBlock[]>([]);
+
   const [chapters, setChapters] = useState<string[]>([]);
   const [status, setStatus] = useState<LoadStatus>("idle");
 
@@ -243,7 +247,7 @@ export default function VocabularyViewer({
 
               {showTargetText && (
                 <div style={{ fontSize: 22, fontWeight: 700 }}>
-                  {block.word?.[targetLang] ?? block.word?.target}
+                  {block.word?.[targetLang] ?? block.word?.target ?? ""}
                 </div>
               )}
 
@@ -254,32 +258,23 @@ export default function VocabularyViewer({
               )}
 
               <div style={{ marginTop: 16 }}>
-
                 {block.examples?.map((ex: any, i: number) => (
 
-                  <div
-                    key={i}
-                    style={{
-                      borderBottom: "1px solid #eee",
-                      marginBottom: 12,
-                      paddingBottom: 12,
-                    }}
-                  >
+                  <div key={i}>
 
                     {showTargetText && (
                       <div>
-                        {ex?.[targetLang] ?? ex?.target}
+                        {ex?.[targetLang] ?? ex?.target ?? ""}
                       </div>
                     )}
 
                     {ex?.[studyLang] && (
-                      <div style={{ color: "#555" }}>
+                      <div>
                         {ex[studyLang]}
                       </div>
                     )}
 
                   </div>
-
                 ))}
 
               </div>

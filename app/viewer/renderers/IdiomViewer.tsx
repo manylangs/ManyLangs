@@ -22,6 +22,12 @@ const buttonStyle = (active: boolean) => ({
   border: "none",
   cursor: "pointer",
 });
+type IdiomBlock = {
+  expression: Record<string, string>;
+  explanation: Record<string, string>;
+  examples?: Record<string, string>[];
+  frequency_stars?: string;
+};
 
 export default function IdiomViewer({
   lang,
@@ -32,7 +38,7 @@ export default function IdiomViewer({
   const { targetLang, showTargetText } = useViewerTarget();
 
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
-  const [blocks, setBlocks] = useState<any[]>([]);
+  const [blocks, setBlocks] = useState<IdiomBlock[]>([]);
   const [chapters, setChapters] = useState<string[]>([]);
   const [status, setStatus] = useState<LoadStatus>("idle");
 
@@ -268,7 +274,7 @@ export default function IdiomViewer({
                   Examples
                 </div>
 
-                {block.examples?.map((ex: any, i: number) => (
+                {block.examples?.map((ex: Record<string, string>, i: number) => (
                   <div
                     key={i}
                     style={{

@@ -9,13 +9,7 @@ type StudyLang = "en" | "es" | "fr" | "pt";
 
 type Line = {
   speaker: string;
-  sentences: {
-    target: string;
-    en: string;
-    es: string;
-    fr: string;
-    pt: string;
-  };
+  sentences: Record<string, string>;
 };
 
 type Block = {
@@ -242,9 +236,7 @@ export default function ConversationViewer({
                 {block.lines.map((line, i) => {
 
                   const targetText =
-                    line.sentences?.[targetLang] ??
-                    line.sentences?.target ??
-                    "";
+                    line.sentences?.[targetLang] ?? line.sentences?.target ?? "";
 
                   const studyText =
                     line.sentences?.[studyLang] ?? "";
