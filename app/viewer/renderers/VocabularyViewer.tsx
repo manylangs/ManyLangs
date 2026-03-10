@@ -1,29 +1,18 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
-import RealAudioController from "@/components/audio/controllers/RealAudioController";
+import VocaAudioController from "@/components/audio/controllers/VocaAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
 
 type StudyLang = "en" | "es" | "fr" | "pt";
 
-type Sentence = {
-  texts: {
-    kr: string;
-    en: string;
-    es: string;
-    fr: string;
-    pt: string;
-  };
-};
-
-type Props = {
-  lang: string;
-  level: string;
-  chapter: string;
-};
-
 const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
+
+const LEVELS = ["a1", "a2", "b1", "b2", "c1", "c2"];
+
+type LoadStatus = "idle" | "loading" | "ready" | "error";
 
 const buttonStyle = (active: boolean) => ({
   padding: "4px 8px",
@@ -32,35 +21,41 @@ const buttonStyle = (active: boolean) => ({
   background: active ? "#333" : "#eee",
   color: active ? "#fff" : "#333",
   border: "none",
-  cursor: active ? "default" : "pointer",
+  cursor: "pointer",
 });
 
-type LoadStatus = "idle" | "loading" | "ready" | "error";
-
-export default function RealViewer({
+export default function VocabularyViewer({
   lang,
   level,
   chapter,
-}: Props) {
+}: any) {
+
+  const router = useRouter();
 
   const { targetLang, showTargetText } = useViewerTarget();
 
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
-
-  useEffect(() => {
-    const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
-    if (filtered.length > 0) {
-      setStudyLang(filtered[0]);
-    }
-  }, [targetLang]);
-
-  const [audioUrl, setAudioUrl] = useState("");
-  const [imageUrl, setImageUrl] = useState("");
-  const [sentences, setSentences] = useState<Sentence[]>([]);
+  const [blocks, setBlocks] = useState<any[]>([]);
+  const [chapters, setChapters] = useState<string[]>([]);
   const [status, setStatus] = useState<LoadStatus>("idle");
 
-  /* 🔥 fallback 제거 */
-  const [chapters, setChapters] = useState<string[]>([]);
+  useEffect(() => {
+
+    const filtered = ALL_STUDY_LANGS.filter(
+      (l) => l !== targetLang
+    );
+
+    if (!filtered.includes(studyLang)) {
+      setStudyLang(filtered[0]);
+    }
+
+    /* 🔥 viewer URL sync */
+
+    router.replace(
+      `/viewer/${targetLang}/voca/${level}/${chapter}`
+    );
+
+  }, [targetLang]);
 
   const currentIndex = chapters.indexOf(chapter);
 
@@ -73,73 +68,58 @@ export default function RealViewer({
       : chapter;
 
   useEffect(() => {
+
     let cancelled = false;
 
     const load = async () => {
+
       try {
 
         setStatus("loading");
-        setAudioUrl("");
-        setImageUrl("");
-        setSentences([]);
 
         const res = await fetch(
-          `/api/content/manifest?lang=${targetLang}&series=real&level=${level}&chapter=${chapter}`
+          `/api/content/manifest?lang=${targetLang}&series=voca&level=${level}&chapter=${chapter}`
         );
 
-        if (!res.ok) throw new Error("Manifest failed");
+        if (!res.ok) throw new Error("manifest fetch failed");
 
         const manifest = await res.json();
 
         if (cancelled) return;
 
-        /* 🔥 fallback 제거 → manifest chapters만 사용 */
-        const incoming = Array.isArray(manifest.chapters)
-          ? manifest.chapters
-          : [];
+        if (!Array.isArray(manifest.chapters))
+          throw new Error("chapters missing");
 
-        setChapters(incoming);
-
-        const audio =
-          manifest.assets?.find((a: any) => a.kind === "audio")?.path;
-
-        const image =
-          manifest.assets?.find((a: any) => a.kind === "image")?.path;
+        setChapters(manifest.chapters);
 
         const data =
-          manifest.assets?.find((a: any) => a.kind === "data")?.path;
+          manifest.assets?.find((a: any) => a.kind === "data");
 
-        setAudioUrl(audio || "");
-        setImageUrl(image || "");
+        if (!data?.path)
+          throw new Error("data asset missing");
 
-        if (data) {
+        const dataRes = await fetch(data.path);
 
-          const dataRes = await fetch(data);
+        if (!dataRes.ok)
+          throw new Error("data fetch failed");
 
-          if (!dataRes.ok) throw new Error("data.json fetch failed");
+        const dataJson = await dataRes.json();
 
-          const dataJson = await dataRes.json();
+        if (!Array.isArray(dataJson.blocks))
+          throw new Error("blocks missing");
 
-          const descBlock =
-            dataJson.blocks?.find((b: any) => b.type === "description") ||
-            dataJson.blocks?.[0];
-
-          setSentences(
-            descBlock?.sentences ||
-            dataJson.sentences ||
-            []
-          );
-        }
+        setBlocks(dataJson.blocks);
 
         setStatus("ready");
 
       } catch (e) {
 
-        if (!cancelled) setStatus("error");
-
         console.error(e);
 
+        if (!cancelled) setStatus("error");
+
       }
+
     };
 
     load();
@@ -151,121 +131,162 @@ export default function RealViewer({
   }, [targetLang, level, chapter]);
 
   return (
-    <div style={{ maxWidth: 1100, margin: "0 auto", padding: 24 }}>
+    <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
 
       {status === "loading" && (
-        <div style={{ padding: 12, color: "#666" }}>Loading...</div>
+        <div style={{ padding: 12 }}>Loading...</div>
       )}
 
       {status === "error" && (
-        <div style={{ padding: 12, color: "#c00" }}>
-          Failed to load this chapter.
+        <div style={{ padding: 12, color: "red" }}>
+          Failed to load vocabulary.
         </div>
       )}
 
       {status === "ready" && (
         <>
 
-          {audioUrl && (
-            <RealAudioController src={audioUrl} />
-          )}
+          <VocaAudioController
+            lang={targetLang}
+            level={level}
+            chapter={chapter}
+          />
 
-          <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
-            {ALL_STUDY_LANGS
-              .filter((l) => l !== targetLang)
-              .map((l) => (
-                <button
-                  key={l}
-                  onClick={() => setStudyLang(l)}
-                  style={buttonStyle(studyLang === l)}
-                >
-                  {l.toUpperCase()}
-                </button>
-              ))}
+          {/* Level navigation */}
+
+          <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
+            {LEVELS.map((lv) => (
+              <Link
+                key={lv}
+                href={`/viewer/${targetLang}/voca/${lv}/001`}
+                style={{
+                  ...buttonStyle(lv === level),
+                  textDecoration: "none",
+                }}
+              >
+                {lv.toUpperCase()}
+              </Link>
+            ))}
           </div>
 
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <Link href={`/viewer/${targetLang}/real/${level}/${prev}`}>
+          {/* Prev Next */}
+
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              marginBottom: 12,
+            }}
+          >
+            <Link href={`/viewer/${targetLang}/voca/${level}/${prev}`}>
               ← Prev
             </Link>
 
-            <Link href={`/viewer/${targetLang}/real/${level}/${next}`}>
+            <Link href={`/viewer/${targetLang}/voca/${level}/${next}`}>
               Next →
             </Link>
           </div>
+
+          {/* Chapters */}
 
           <div
             style={{
               display: "flex",
               flexWrap: "wrap",
               gap: 6,
-              marginTop: 12,
+              marginBottom: 24,
             }}
           >
-            {chapters.map((ch) => (
+            {chapters.map((c) => (
               <Link
-                key={ch}
-                href={`/viewer/${targetLang}/real/${level}/${ch}`}
+                key={c}
+                href={`/viewer/${targetLang}/voca/${level}/${c}`}
                 style={{
                   padding: "4px 8px",
                   fontSize: 13,
                   borderRadius: 4,
-                  background: ch === chapter ? "#333" : "#eee",
-                  color: ch === chapter ? "#fff" : "#333",
+                  background: c === chapter ? "#333" : "#eee",
+                  color: c === chapter ? "#fff" : "#333",
                   textDecoration: "none",
                 }}
               >
-                {ch}
+                {c}
               </Link>
             ))}
           </div>
 
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: 32,
-              marginTop: 24,
-              alignItems: "start",
-            }}
-          >
+          {/* Study Lang */}
 
-            <div>
-              {imageUrl && (
-                <img
-                  src={imageUrl}
-                  alt=""
-                  style={{
-                    width: "100%",
-                    borderRadius: 8,
-                  }}
-                />
+          <div style={{ display: "flex", gap: 8, marginBottom: 32 }}>
+            {ALL_STUDY_LANGS
+              .filter((l) => l !== targetLang)
+              .map((l) => (
+                <button
+                  key={l}
+                  style={buttonStyle(studyLang === l)}
+                  onClick={() => setStudyLang(l)}
+                >
+                  {l.toUpperCase()}
+                </button>
+              ))}
+          </div>
+
+          {/* Vocabulary */}
+
+          {blocks.map((block, idx) => (
+
+            <section key={idx} style={{ marginBottom: 56 }}>
+
+              <div style={{ fontWeight: 700 }}>
+                Set {idx + 1}
+              </div>
+
+              {showTargetText && (
+                <div style={{ fontSize: 22, fontWeight: 700 }}>
+                  {block.word?.[targetLang] ?? block.word?.target}
+                </div>
               )}
-            </div>
 
-            <div>
-              {sentences.map((s, i) => {
+              {block.word?.[studyLang] && (
+                <div style={{ color: "#555" }}>
+                  {block.word[studyLang]}
+                </div>
+              )}
 
-                const targetText =
-                  s.texts?.[targetLang as keyof typeof s.texts] ?? "";
+              <div style={{ marginTop: 16 }}>
 
-                const studyText =
-                  s.texts?.[studyLang] ?? "";
+                {block.examples?.map((ex: any, i: number) => (
 
-                return (
-                  <div key={i} style={{ marginBottom: 18 }}>
+                  <div
+                    key={i}
+                    style={{
+                      borderBottom: "1px solid #eee",
+                      marginBottom: 12,
+                      paddingBottom: 12,
+                    }}
+                  >
+
                     {showTargetText && (
-                      <div style={{ marginBottom: 4, fontWeight: 500 }}>
-                        {targetText}
+                      <div>
+                        {ex?.[targetLang] ?? ex?.target}
                       </div>
                     )}
-                    <div>{studyText}</div>
-                  </div>
-                );
-              })}
-            </div>
 
-          </div>
+                    {ex?.[studyLang] && (
+                      <div style={{ color: "#555" }}>
+                        {ex[studyLang]}
+                      </div>
+                    )}
+
+                  </div>
+
+                ))}
+
+              </div>
+
+            </section>
+
+          ))}
 
         </>
       )}
