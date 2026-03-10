@@ -1,12 +1,37 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
+import Link from "next/link";
 import ConversationAudioController from "@/components/audio/controllers/ConversationAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
 
-const STUDY_LANGS = ["en", "es", "fr", "pt"] as const;
-type StudyLang = (typeof STUDY_LANGS)[number];
+type StudyLang = "en" | "es" | "fr" | "pt";
+
+type Line = {
+  speaker: string;
+  sentences: {
+    target: string;
+    en: string;
+    es: string;
+    fr: string;
+    pt: string;
+  };
+};
+
+type Block = {
+  set_id: string;
+  lines: Line[];
+};
+
+type Props = {
+  lang: string;
+  level: string;
+  chapter: string;
+};
+
+const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
+
+type LoadStatus = "idle" | "loading" | "ready" | "error";
 
 const buttonStyle = (active: boolean) => ({
   padding: "4px 8px",
@@ -15,191 +40,241 @@ const buttonStyle = (active: boolean) => ({
   background: active ? "#333" : "#eee",
   color: active ? "#fff" : "#333",
   border: "none",
-  cursor: "pointer",
+  cursor: active ? "default" : "pointer",
 });
 
-type Props = {
-  lang: string;
-  data: any;
-  level: string;
-  chapter: string;
-  chapters: string[];
-};
-
-
 export default function ConversationViewer({
-  data,
+  lang,
   level,
   chapter,
-  chapters,
 }: Props) {
 
-  const router = useRouter();
-  const [lang, setLang] = useState<StudyLang>("en");
+  const { targetLang, showTargetText } = useViewerTarget();
 
-  const { showTargetText, targetLang } = useViewerTarget();
+  const [studyLang, setStudyLang] = useState<StudyLang>("en");
+
+  const [blocks, setBlocks] = useState<Block[]>([]);
+  const [chapters, setChapters] = useState<string[]>([]);
+  const [status, setStatus] = useState<LoadStatus>("idle");
+
+  /* study language 자동 설정 */
+  useEffect(() => {
+    const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
+    if (filtered.length > 0) setStudyLang(filtered[0]);
+  }, [targetLang]);
 
   const currentIndex = chapters.indexOf(chapter);
 
-  const prev = currentIndex > 0 ? chapters[currentIndex - 1] : null;
+  const prev =
+    currentIndex > 0 ? chapters[currentIndex - 1] : chapter;
 
   const next =
-    currentIndex < chapters.length - 1
+    currentIndex >= 0 && currentIndex < chapters.length - 1
       ? chapters[currentIndex + 1]
-      : null;
+      : chapter;
+
+  useEffect(() => {
+
+    let cancelled = false;
+
+    const load = async () => {
+
+      try {
+
+        setStatus("loading");
+
+        setBlocks([]);
+
+        const res = await fetch(
+          `/api/content/manifest?lang=${targetLang}&series=conversation&level=${level}&chapter=${chapter}`
+        );
+
+        if (!res.ok) throw new Error("manifest fetch failed");
+
+        const manifest = await res.json();
+
+        if (cancelled) return;
+
+        /* chapters */
+        if (!Array.isArray(manifest.chapters))
+          throw new Error("chapters missing");
+
+        setChapters(manifest.chapters);
+
+        /* data asset */
+
+        const data =
+          manifest.assets?.find((a: any) => a.kind === "data");
+
+        if (!data?.path)
+          throw new Error("data asset missing");
+
+        const dataRes = await fetch(data.path);
+
+        if (!dataRes.ok)
+          throw new Error("data fetch failed");
+
+        const dataJson = await dataRes.json();
+
+        if (!Array.isArray(dataJson.blocks))
+          throw new Error("blocks missing");
+
+        setBlocks(dataJson.blocks);
+
+        setStatus("ready");
+
+      } catch (e) {
+
+        console.error(e);
+
+        if (!cancelled) setStatus("error");
+
+      }
+
+    };
+
+    load();
+
+    return () => {
+      cancelled = true;
+    };
+
+  }, [targetLang, level, chapter]);
 
   return (
-    <>
-      {/* AUDIO */}
-      <div
-        style={{
-          position: "sticky",
-          top: 100,
-          zIndex: 900,
-          background: "#fff",
-          borderBottom: "1px solid #eee",
-        }}
-      >
-        <div style={{ maxWidth: 720, margin: "0 auto" }}>
+    <div style={{ maxWidth: 1100, margin: "0 auto", padding: 24 }}>
+
+      {status === "loading" && (
+        <div style={{ padding: 12, color: "#666" }}>
+          Loading...
+        </div>
+      )}
+
+      {status === "error" && (
+        <div style={{ padding: 12, color: "#c00" }}>
+          Failed to load this chapter.
+        </div>
+      )}
+
+      {status === "ready" && (
+        <>
+
           <ConversationAudioController
             lang={targetLang}
             level={level}
             chapter={chapter}
           />
-        </div>
-      </div>
+          {/* language switch */}
 
-      <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
-
-        {/* PREV NEXT */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            marginBottom: 12,
-          }}
-        >
-          <button
-            style={buttonStyle(false)}
-            disabled={!prev}
-            onClick={() =>
-              prev &&
-              router.push(
-                `/viewer/${targetLang}/conversation/${level}/${prev}`
-              )
-            }
-          >
-            ← Prev
-          </button>
-
-          <button
-            style={buttonStyle(false)}
-            disabled={!next}
-            onClick={() =>
-              next &&
-              router.push(
-                `/viewer/${targetLang}/conversation/${level}/${next}`
-              )
-            }
-          >
-            Next →
-          </button>
-        </div>
-
-        {/* CHAPTER */}
-        <div
-          style={{
-            display: "flex",
-            gap: 6,
-            marginBottom: 20,
-            flexWrap: "wrap",
-          }}
-        >
-          {chapters.map((c) => (
-            <button
-              key={c}
-              style={buttonStyle(c === chapter)}
-              onClick={() =>
-                router.push(
-                  `/viewer/${targetLang}/conversation/${level}/${c}`
-                )
-              }
-            >
-              {c}
-            </button>
-          ))}
-        </div>
-
-        {/* STUDY LANGUAGE */}
-        <div style={{ display: "flex", gap: 8, marginBottom: 32 }}>
-          {STUDY_LANGS.map((l) => (
-            <button
-              key={l}
-              style={buttonStyle(lang === l)}
-              onClick={() => setLang(l)}
-            >
-              {l.toUpperCase()}
-            </button>
-          ))}
-        </div>
-
-        {/* TITLE */}
-        <div style={{ marginBottom: 24 }}>
-          <div style={{ fontSize: 22, fontWeight: 700 }}>
-            {data.title?.target}
+          <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
+            {ALL_STUDY_LANGS
+              .filter((l) => l !== targetLang)
+              .map((l) => (
+                <button
+                  key={l}
+                  onClick={() => setStudyLang(l)}
+                  style={buttonStyle(studyLang === l)}
+                >
+                  {l.toUpperCase()}
+                </button>
+              ))}
           </div>
 
-          {data.title?.[lang] && (
-            <div
-              style={{
-                fontSize: 22,
-                color: "#555",
-                marginTop: 4,
-              }}
-            >
-              {data.title[lang]}
-            </div>
-          )}
-        </div>
+          {/* prev next */}
 
-        {/* DIALOGUE */}
-        {data.blocks?.map((block: any, idx: number) => (
-          <section key={idx} style={{ marginBottom: 48 }}>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <Link href={`/viewer/${targetLang}/conversation/${level}/${prev}`}>
+              ← Prev
+            </Link>
 
-            <div
-              style={{
-                fontWeight: 700,
-                marginBottom: 12,
-                fontSize: 18,
-                color: "#444",
-              }}
-            >
-              Set {idx + 1}
-            </div>
-            {block.lines.map((line: any, i: number) => {
+            <Link href={`/viewer/${targetLang}/conversation/${level}/${next}`}>
+              Next →
+            </Link>
+          </div>
 
-              const targetText = line?.sentences?.target ?? "";
-              const learnerText = line?.sentences?.translations?.[lang];
-              return (
-                <div key={i} style={{ marginBottom: 12 }}>
+          {/* chapter list */}
 
-                  {showTargetText && (
-                    <div>
-                      <strong>{line.speaker}:</strong> {targetText}
-                    </div>
-                  )}
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 6,
+              marginTop: 12,
+            }}
+          >
+            {chapters.map((ch) => (
+              <Link
+                key={ch}
+                href={`/viewer/${targetLang}/conversation/${level}/${ch}`}
+                style={{
+                  padding: "4px 8px",
+                  fontSize: 13,
+                  borderRadius: 4,
+                  background: ch === chapter ? "#333" : "#eee",
+                  color: ch === chapter ? "#fff" : "#333",
+                  textDecoration: "none",
+                }}
+              >
+                {ch}
+              </Link>
+            ))}
+          </div>
 
-                  <div style={{ color: "#555" }}>
-                    <strong>{line.speaker}:</strong> {learnerText}
-                  </div>
+          {/* content */}
 
+          <div style={{ marginTop: 32 }}>
+
+            {blocks.map((block, idx) => (
+
+              <section key={block.set_id} style={{ marginBottom: 48 }}>
+
+                <div
+                  style={{
+                    fontWeight: 700,
+                    marginBottom: 12,
+                    fontSize: 18,
+                    color: "#444",
+                  }}
+                >
+                  Set {idx + 1}
                 </div>
-              );
-            })}
 
-          </section>
-        ))}
-      </div>
-    </>
+                {block.lines.map((line, i) => {
+
+                  const targetText =
+                    line.sentences?.[targetLang] ??
+                    line.sentences?.target ??
+                    "";
+
+                  const studyText =
+                    line.sentences?.[studyLang] ?? "";
+
+                  return (
+                    <div key={i} style={{ marginBottom: 14 }}>
+
+                      {showTargetText && (
+                        <div>
+                          <strong>{line.speaker}:</strong> {targetText}
+                        </div>
+                      )}
+
+                      <div style={{ color: "#555" }}>
+                        <strong>{line.speaker}:</strong> {studyText}
+                      </div>
+
+                    </div>
+                  );
+
+                })}
+
+              </section>
+
+            ))}
+
+          </div>
+
+        </>
+      )}
+    </div>
   );
 }
