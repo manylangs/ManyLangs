@@ -66,31 +66,6 @@ export default async function Page({
           lang={lang}
           level={level}
           chapter={chapterId}
-          chapters={chapters}
-          data={{
-            title: {
-              target: data?.title_kr ?? "",
-            },
-            blocks: Array.isArray(data?.sets)
-              ? data.sets.map((set: any) => ({
-                set_id: String(set?.set_id ?? ""),
-                lines: [
-                  ...(set?.dialogue_layer?.A ?? []).map(
-                    (text: string) => ({
-                      speaker: "A",
-                      sentences: { target: text },
-                    })
-                  ),
-                  ...(set?.dialogue_layer?.B ?? []).map(
-                    (text: string) => ({
-                      speaker: "B",
-                      sentences: { target: text },
-                    })
-                  ),
-                ],
-              }))
-              : [],
-          }}
         />
       )}
 
@@ -106,10 +81,9 @@ export default async function Page({
       {/* GRAMMAR */}
       {series === "grammar" && (
         <GrammarViewer
+          lang={lang}
           level={level}
           chapter={chapterId}
-          chapters={chapters}
-          grammarData={data}
         />
       )}
       {series === "idiom" && (
