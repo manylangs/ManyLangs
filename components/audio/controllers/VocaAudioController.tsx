@@ -24,17 +24,24 @@ export default function VocaAudioController({
   const [index, setIndex] = useState(0);
   const [ready, setReady] = useState(false);
 
+  const base =
+    `content/voca/${lang}/${level}/${chapter}/audio`;
+
+  const file =
+    `voca_${level}_${chapter}`;
+
   const langAudio =
-    `/audio/${lang}/voca/${level}/voca_${level}_${chapter}.wav`;
+    `https://firebasestorage.googleapis.com/v0/b/manylangs-55fd3.firebasestorage.app/o/${encodeURIComponent(`${base}/${file}.wav`)}?alt=media`;
 
   const krAudio =
-    `/audio/kr/voca/${level}/voca_${level}_${chapter}.wav`;
+    `https://firebasestorage.googleapis.com/v0/b/manylangs-55fd3.firebasestorage.app/o/${encodeURIComponent(`content/voca/kr/${level}/${chapter}/audio/${file}.wav`)}?alt=media`;
 
   const langCues =
-    `/audio/${lang}/voca/${level}/voca_${level}_${chapter}.cues.json`;
+    `https://firebasestorage.googleapis.com/v0/b/manylangs-55fd3.firebasestorage.app/o/${encodeURIComponent(`${base}/${file}.cues.json`)}?alt=media`;
 
   const krCues =
-    `/audio/kr/voca/${level}/voca_${level}_${chapter}.cues.json`;
+    `https://firebasestorage.googleapis.com/v0/b/manylangs-55fd3.firebasestorage.app/o/${encodeURIComponent(`content/voca/kr/${level}/${chapter}/audio/${file}.cues.json`)}?alt=media`;
+
 
   useEffect(() => {
 
@@ -44,18 +51,17 @@ export default function VocaAudioController({
 
       try {
 
-        const res = await fetch(langAudio, { method: "HEAD" });
+        const res = await fetch(langCues);
 
-        if (!cancelled && res.ok) {
+        if (res.ok) {
 
           setAudioSrc(langAudio);
           setCuesSrc(langCues);
-
           return;
 
         }
 
-      } catch {}
+      } catch { }
 
       if (!cancelled) {
 
@@ -95,6 +101,7 @@ export default function VocaAudioController({
           const list =
             json.setStartMs ??
             json.sets?.map((s: any) => s.start_ms) ??
+            json.start_ms ??
             [];
 
           setCues(list);
@@ -143,7 +150,7 @@ export default function VocaAudioController({
 
     el.currentTime = cues[next] / 1000;
 
-    el.play().catch(() => {});
+    el.play().catch(() => { });
 
     setIndex(next);
 

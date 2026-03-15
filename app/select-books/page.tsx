@@ -157,7 +157,22 @@ function buildExpiredUsedCouponCodeSet(
 
   return expired;
 }
+function isRefundEligible(coupon: CouponItem) {
 
+  if (!coupon.issuedAt) return false;
+
+  const now = Date.now();
+
+  const sevenDays = 7 * 24 * 60 * 60 * 1000;
+
+  const within7days = now - coupon.issuedAt <= sevenDays;
+
+  if (!within7days) return false;
+
+  if (coupon.used) return false;
+
+  return true;
+}
 /* ================= page ================= */
 
 export default function SelectBooksPage() {
@@ -519,7 +534,36 @@ export default function SelectBooksPage() {
       setLoading(false);
     }
   }
+  async function requestRefund() {
 
+    try {
+
+      const res = await fetch("/api/refund", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          userId
+        })
+      })
+
+      const data = await safeJson(res)
+
+      if (!res.ok) {
+        alert(data?.error || "Refund failed")
+        return
+      }
+
+      alert("Refund successful")
+
+    } catch {
+
+      alert("Network error")
+
+    }
+
+  }
   function openBook(item: LibraryItem) {
     if (isExpired(item.expiresAt)) {
       setError("Expired textbook. Please redeem a new coupon or purchase again.");
@@ -566,7 +610,11 @@ export default function SelectBooksPage() {
   );
   // ✅ Coupon UX: sort (unused first) + pagination (10/page)
   const sortedCoupons = [...couponBox.filter((c) => !c.used), ...couponBox.filter((c) => c.used)];
+  const refundableCoupons = couponBox.filter((c) =>
+    isRefundEligible(c)
+  );
 
+  const canRefund = refundableCoupons.length > 0;
   const couponTotal = sortedCoupons.length;
   const couponTotalPages = Math.max(1, Math.ceil(couponTotal / COUPON_PAGE_SIZE));
 
@@ -877,6 +925,34 @@ export default function SelectBooksPage() {
                 >
                   Buy with Card
                 </Button>
+              </CardContent>
+            </Card>
+            {/* Refund */}
+            {/* Refund */}
+            <Card>
+
+              <CardHeader className="text-center">
+                <CardTitle>Refund</CardTitle>
+              </CardHeader>
+
+              <CardContent className="space-y-3">
+
+                <Button
+                  variant="outline"
+                  className="w-full"
+                  disabled={!canRefund}
+                  onClick={requestRefund}
+                >
+                  Request Refund
+                </Button>
+
+                <div className="text-xs text-gray-500 space-y-1 text-left">
+                  <div>Refund Policy</div>
+                  <div>• Refund available within 7 days of purchase</div>
+                  <div>• Refund not available if coupon has been used</div>
+                  <div>• Refund not available if textbook has been opened</div>
+                </div>
+
               </CardContent>
             </Card>
           </div>

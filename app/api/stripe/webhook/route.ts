@@ -4,6 +4,8 @@ import { NextResponse } from "next/server";
 import { createCouponsTx } from "@/lib/coupons";
 import { PRICE_TO_COUPON_QTY } from "@/lib/pricing";
 import { db } from "@/lib/firebaseAdmin";
+import { revokeLicensesByPaymentIntent, resetCouponsByPaymentIntent } from "@/lib/refunds";
+
 
 export const runtime = "nodejs";
 
@@ -27,11 +29,36 @@ export async function POST(req: Request) {
   } catch {
     return NextResponse.json({ error: "invalid signature" }, { status: 400 });
   }
+  if (event.type === "charge.refunded") {
 
+    const charge = event.data.object as Stripe.Charge;
+
+    const paymentIntentId =
+      typeof charge.payment_intent === "string"
+        ? charge.payment_intent
+        : charge.payment_intent?.id;
+
+    if (!paymentIntentId) {
+      return NextResponse.json({ received: true }, { status: 200 });
+    }
+
+    // 전액 환불된 경우만 처리
+    if (!charge.refunded) {
+      return NextResponse.json({ received: true }, { status: 200 });
+    }
+
+    await revokeLicensesByPaymentIntent(paymentIntentId);
+    await resetCouponsByPaymentIntent(paymentIntentId);
+
+    return NextResponse.json({ received: true }, { status: 200 });
+  }
+  // 🔴 여기까지 추가
 
   if (event.type !== "checkout.session.completed") {
     return NextResponse.json({ received: true }, { status: 200 });
   }
+
+
 
   const session = event.data.object as Stripe.Checkout.Session;
   const eventId = event.id;
@@ -75,6 +102,12 @@ export async function POST(req: Request) {
         throw new Error("EVENT_ALREADY_PROCESSED");
       }
 
+      const paymentIntentId =
+        typeof session.payment_intent === "string"
+          ? session.payment_intent
+          : session.payment_intent?.id;
+      const checkoutSessionId = session.id;
+
       // 1️⃣ stripeEvents processing 상태 생성
       tx.set(stripeEventRef, {
         eventId,
@@ -86,8 +119,14 @@ export async function POST(req: Request) {
       });
 
       // 2️⃣ 쿠폰 생성 (transaction 내부)
-      const coupons = createCouponsTx(tx, userId, qty);
-
+      // 2️⃣ 쿠폰 생성 (transaction 내부)
+      const coupons = createCouponsTx(
+        tx,
+        userId,
+        qty,
+        paymentIntentId,
+        checkoutSessionId
+      );
       // 3️⃣ checkoutSessions 확정
       tx.set(
         checkoutRef,

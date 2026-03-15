@@ -24,20 +24,27 @@ export default function IdiomAudioController({
   const [index, setIndex] = useState(0);
   const [ready, setReady] = useState(false);
 
-  /* audio path */
+  /* audio path *//* storage path */
+
+  /* storage path */
+
+  const base =
+    `content/idiom/${lang}/${level}/${chapter}/audio`;
+
+  const file =
+    `idiom_${level}_${chapter}`;
+
   const langAudio =
-    `/audio/${lang}/idiom/${level}/idiom_${level}_${chapter}.wav`;
+    `https://firebasestorage.googleapis.com/v0/b/manylangs-55fd3.firebasestorage.app/o/${encodeURIComponent(`${base}/${file}.wav`)}?alt=media`;
 
   const krAudio =
-    `/audio/kr/idiom/${level}/idiom_${level}_${chapter}.wav`;
+    `https://firebasestorage.googleapis.com/v0/b/manylangs-55fd3.firebasestorage.app/o/${encodeURIComponent(`content/idiom/kr/${level}/${chapter}/audio/${file}.wav`)}?alt=media`;
 
   const langCues =
-    `/audio/${lang}/idiom/${level}/idiom_${level}_${chapter}.cues.json`;
+    `https://firebasestorage.googleapis.com/v0/b/manylangs-55fd3.firebasestorage.app/o/${encodeURIComponent(`${base}/${file}.cues.json`)}?alt=media`;
 
   const krCues =
-    `/audio/kr/idiom/${level}/idiom_${level}_${chapter}.cues.json`;
-
-  /* 🔥 audio 존재 여부 확인 */
+    `https://firebasestorage.googleapis.com/v0/b/manylangs-55fd3.firebasestorage.app/o/${encodeURIComponent(`content/idiom/kr/${level}/${chapter}/audio/${file}.cues.json`)}?alt=media`;/* 🔥 audio 존재 여부 확인 */
   useEffect(() => {
 
     let cancelled = false;
@@ -46,18 +53,17 @@ export default function IdiomAudioController({
 
       try {
 
-        const res = await fetch(langAudio, { method: "HEAD" });
+        const res = await fetch(langCues);
 
-        if (!cancelled && res.ok) {
+        if (res.ok) {
 
           setAudioSrc(langAudio);
           setCuesSrc(langCues);
-
           return;
 
         }
 
-      } catch {}
+      } catch { }
 
       /* fallback → KR */
 
@@ -144,7 +150,7 @@ export default function IdiomAudioController({
 
     el.currentTime = cues[next] / 1000;
 
-    el.play().catch(() => {});
+    el.play().catch(() => { });
 
     setIndex(next);
 

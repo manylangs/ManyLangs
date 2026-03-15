@@ -33,7 +33,6 @@ export default function VocabularyViewer({
   chapter,
 }: any) {
 
-  const router = useRouter();
 
   const { targetLang, showTargetText } = useViewerTarget();
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
@@ -52,12 +51,6 @@ export default function VocabularyViewer({
     if (!filtered.includes(studyLang)) {
       setStudyLang(filtered[0]);
     }
-
-    /* 🔥 viewer URL sync */
-
-    router.replace(
-      `/viewer/${targetLang}/voca/${level}/${chapter}`
-    );
 
   }, [targetLang]);
 

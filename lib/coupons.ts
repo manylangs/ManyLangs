@@ -18,6 +18,10 @@ export type Coupon = {
   usedLevel?: string;
 
   expiresAt?: number;
+
+  // 🔥 Stripe 연결
+  paymentIntentId?: string;
+  checkoutSessionId?: string;
 };
 
 /* ================= code generator ================= */
@@ -38,7 +42,9 @@ function genCode(): string {
 export function createCouponsTx(
   tx: FirebaseFirestore.Transaction,
   ownerId: string,
-  qty: number
+  qty: number,
+  paymentIntentId: string,
+  checkoutSessionId: string
 ): Coupon[] {
 
   const now = Date.now();
@@ -54,8 +60,10 @@ export function createCouponsTx(
       ownerId,
       issuedAt: now,
       used: false,
-    };
 
+      paymentIntentId,
+      checkoutSessionId,
+    };
     // 🔥 read 없이 바로 create
     // 이미 존재하면 자동으로 transaction 실패 → 안전
     tx.create(ref, coupon);

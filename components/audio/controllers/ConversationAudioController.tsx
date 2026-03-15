@@ -59,9 +59,12 @@ export default function ConversationAudioController({
         if (!cancelled) {
 
           const list =
-            Array.isArray(json.setStartMs)
-              ? json.setStartMs
-              : [];
+            json.setStartMs ??
+            json.sets?.map((s: any) => s.start_ms) ??
+            json.start_ms ??
+            [];
+
+          setCues(list);
 
           setCues(list);
           setReady(true);
@@ -110,7 +113,7 @@ export default function ConversationAudioController({
     if (next < 0 || next >= cues.length) return;
 
     el.currentTime = cues[next] / 1000;
-    el.play().catch(() => {});
+    el.play().catch(() => { });
     setIndex(next);
 
   };
