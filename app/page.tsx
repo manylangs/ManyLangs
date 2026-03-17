@@ -31,12 +31,11 @@ export default function HomePage() {
         >
           Learn languages through structured textbooks.
           <br />
-          Grammar · Conversation · Vocabulary · Pronunciation · Idioms
+          Grammar · Conversation · Vocabulary · Idioms
         </p>
 
-        {/* 🔐 로그인 상태 */}
         {userId ? (
-          <div style={{ display: "flex", gap: 12 }}>
+          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <Link href="/select-books">
               <button style={btnPrimary}>Go to Library</button>
             </Link>
@@ -50,8 +49,7 @@ export default function HomePage() {
             </Link>
           </div>
         ) : (
-          /* 🔓 비로그인 상태 */
-          <div style={{ display: "flex", gap: 12 }}>
+          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <Link href="/login">
               <button style={btnPrimary}>Log in</button>
             </Link>
@@ -61,6 +59,33 @@ export default function HomePage() {
             </Link>
           </div>
         )}
+
+        <div
+          style={{
+            marginTop: 28,
+            fontSize: 14,
+            lineHeight: 1.6,
+            color: "#666",
+          }}
+        >
+          <p style={{ margin: 0 }}>
+            Purchases are available on our website.
+          </p>
+          <a
+            href="https://www.manylangs.studio"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-block",
+              marginTop: 10,
+              color: "#111",
+              textDecoration: "none",
+              fontWeight: 600,
+            }}
+          >
+            Go to website →
+          </a>
+        </div>
       </section>
     </main>
   );

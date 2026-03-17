@@ -667,7 +667,7 @@ export default function SelectBooksPage() {
 
           {/* CENTER */}
           <p className="text-xs text-gray-500 text-center sm:text-left">
-            Purchases are managed on our website.&nbsp;
+            Purchases are available on our website.&nbsp;
             <a
               href="https://www.manylangs.studio"
               target="_blank"
@@ -1007,4 +1007,5 @@ export default function SelectBooksPage() {
     </main>
   );
 }
+
 
