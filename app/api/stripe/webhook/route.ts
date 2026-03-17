@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 import { createCouponsTx } from "@/lib/coupons";
 import { PRICE_TO_COUPON_QTY } from "@/lib/pricing";
 import { db } from "@/lib/firebaseAdmin";
-import { revokeLicensesByPaymentIntent, resetCouponsByPaymentIntent } from "@/lib/refunds";
+import { revokeLicensesByPaymentIntent, deleteCouponsByPaymentIntent } from "@/lib/refunds";
 
 
 export const runtime = "nodejs";
@@ -46,9 +46,8 @@ export async function POST(req: Request) {
     if (!charge.refunded) {
       return NextResponse.json({ received: true }, { status: 200 });
     }
-
     await revokeLicensesByPaymentIntent(paymentIntentId);
-    await resetCouponsByPaymentIntent(paymentIntentId);
+    await deleteCouponsByPaymentIntent(paymentIntentId);
 
     return NextResponse.json({ received: true }, { status: 200 });
   }
@@ -63,6 +62,13 @@ export async function POST(req: Request) {
   const session = event.data.object as Stripe.Checkout.Session;
   const eventId = event.id;
   const userId = session.client_reference_id as string | null;
+
+  const stripeCustomerId = typeof session.customer === "string" ? session.customer : session.customer?.id;
+
+  if (stripeCustomerId && userId) {
+    await db.collection("users").doc(userId).set({ stripeCustomerId }, { merge: true });
+  }
+
 
   if (!userId) {
     return NextResponse.json({ error: "missing client_reference_id" }, { status: 400 });

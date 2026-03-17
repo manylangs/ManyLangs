@@ -10,6 +10,10 @@ export type Coupon = {
   issuedAt: number;
   used: boolean;
 
+  // 🔥 여기 추가
+  disabled?: boolean;
+  disabledAt?: number;
+
   usedBy?: string;
   usedAt?: number;
 
@@ -19,7 +23,6 @@ export type Coupon = {
 
   expiresAt?: number;
 
-  // 🔥 Stripe 연결
   paymentIntentId?: string;
   checkoutSessionId?: string;
 };

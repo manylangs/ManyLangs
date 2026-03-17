@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import { db } from "@/lib/firebaseAdmin";
 import {
   revokeLicensesByPaymentIntent,
-  resetCouponsByPaymentIntent,
+  deleteCouponsByPaymentIntent,
 } from "@/lib/refunds";
 
 export const runtime = "nodejs";
@@ -14,8 +14,6 @@ export async function POST(req: Request) {
   try {
     const { userId } = await req.json();
 
-    console.log("===== REFUND REQUEST START =====", { userId });
-
     if (!userId) {
       return NextResponse.json(
         { error: "missing userId" },
@@ -23,183 +21,97 @@ export async function POST(req: Request) {
       );
     }
 
-    // 🔎 쿠폰 조회
+    // 🔍 사용자 쿠폰 조회
     const couponsSnap = await db
       .collection("coupons")
       .where("ownerId", "==", userId)
       .get();
 
-    console.log("coupons found:", couponsSnap.size);
-
     if (couponsSnap.empty) {
       return NextResponse.json(
-        { error: "No purchase found" },
-        { status: 400 }
+        { error: "no coupons found" },
+        { status: 404 }
       );
     }
 
-    const coupons = couponsSnap.docs.map((d) => d.data() as any);
+    // 🔍 paymentIntentId 수집
+    const paymentIntents = new Set<string>();
 
-    // 🔹 paymentIntent 그룹화
-    const groups = new Map<string, any[]>();
+    couponsSnap.docs.forEach((doc) => {
+      const data = doc.data();
+      if (data.paymentIntentId) {
+        paymentIntents.add(data.paymentIntentId);
+      }
+    });
 
-    for (const c of coupons) {
-      if (!c.paymentIntentId) continue;
+    if (paymentIntents.size === 0) {
+      return NextResponse.json(
+        { error: "no paymentIntentId found" },
+        { status: 400 }
+      );
+    }
+    // 🔥 그룹별 "사용 여부" 체크
+    const grouped: Record<string, any[]> = {}
 
-      if (!groups.has(c.paymentIntentId)) {
-        groups.set(c.paymentIntentId, []);
+    couponsSnap.docs.forEach((doc) => {
+      const data = doc.data()
+
+      if (!data.paymentIntentId) return
+
+      if (!grouped[data.paymentIntentId]) {
+        grouped[data.paymentIntentId] = []
       }
 
-      groups.get(c.paymentIntentId)!.push(c);
+      grouped[data.paymentIntentId].push(data)
+    })
+    // 🔥 환불 가능한 paymentIntent만 필터
+    const refundablePaymentIntents: string[] = []
+
+    for (const [pid, group] of Object.entries(grouped)) {
+      const anyUsed = group.some(c => c.used)
+
+      if (!anyUsed) {
+        refundablePaymentIntents.push(pid)
+      }
     }
 
-    console.log("paymentIntent groups:", groups.size);
-
-    for (const [pi, list] of groups.entries()) {
-      console.log("PI group:", {
-        paymentIntentId: pi,
-        couponCount: list.length,
-        anyUsed: list.some((c) => c.used),
-      });
+    // ❌ 하나도 환불 가능 없으면 차단
+    if (refundablePaymentIntents.length === 0) {
+      return NextResponse.json(
+        { error: "no refundable purchases (all used)" },
+        { status: 400 }
+      )
     }
 
-    let targetPaymentIntent: string | null = null;
-    let targetIssuedAt: number | null = null;
-
-    let expired = false;
-    let used = false;
-
-    // 🔹 환불 가능한 결제 찾기
-    for (const [pi, list] of groups.entries()) {
-
-      const issuedAt = list[0].issuedAt;
-      if (!issuedAt) continue;
-
-      const now = Date.now();
-      const sevenDays = 7 * 24 * 60 * 60 * 1000;
-
-      const isExpired = now - issuedAt > sevenDays;
-      const anyUsed = list.some((c) => c.used);
-
-      console.log("checking PI:", {
-        pi,
-        issuedAt,
-        age: now - issuedAt,
-        expired: isExpired,
-        anyUsed,
+    // 🔥 핵심 처리
+    for (const paymentIntentId of refundablePaymentIntents) {
+      // Stripe refund 확인
+      const refunds = await stripe.refunds.list({
+        payment_intent: paymentIntentId,
       });
 
-      if (isExpired) expired = true;
-      if (anyUsed) used = true;
+      const alreadyRefunded = refunds.data.length > 0;
 
-      if (isExpired || anyUsed) continue;
-
-      targetPaymentIntent = pi;
-      targetIssuedAt = issuedAt;
-
-      console.log("SELECTED paymentIntent:", pi);
-
-      break;
-    }
-
-    // 🔴 환불 불가
-    if (!targetPaymentIntent || !targetIssuedAt) {
-
-      let message = "No refundable purchase found";
-
-      if (expired && used) {
-        message =
-          "Refund unavailable: purchase is older than 7 days and at least one coupon has already been used";
-      } else if (expired) {
-        message = "Refund period (7 days) has expired";
-      } else if (used) {
-        message = "One or more coupons have already been used";
+      if (!alreadyRefunded) {
+        await stripe.refunds.create({
+          payment_intent: paymentIntentId,
+        });
       }
 
-      console.log("REFUND BLOCKED:", {
-        expired,
-        used,
-        message,
-      });
-
-      return NextResponse.json(
-        { error: message },
-        { status: 400 }
-      );
+      // 🔥 항상 실행 (중요)
+      await revokeLicensesByPaymentIntent(paymentIntentId);
+      await deleteCouponsByPaymentIntent(paymentIntentId);
     }
-
-    const paymentIntentId = targetPaymentIntent;
-
-    console.log("targetPaymentIntent:", paymentIntentId);
-
-    // 🔹 Stripe PaymentIntent 조회
-    const pi = await stripe.paymentIntents.retrieve(paymentIntentId, {
-      expand: ["latest_charge"],
-    });
-
-    console.log("Stripe PI status:", pi.status);
-
-    const charge = pi.latest_charge;
-
-    if (!charge || typeof charge === "string") {
-      return NextResponse.json(
-        { error: "Charge not found" },
-        { status: 400 }
-      );
-    }
-
-    console.log("Stripe charge:", {
-      chargeId: charge.id,
-      refunded: charge.refunded,
-      amount: charge.amount,
-      amount_refunded: charge.amount_refunded,
-    });
-
-    // 🔴 Stripe는 환불됐다고 하지만 쿠폰이 남아있는 경우
-    if (charge.refunded || charge.amount_refunded >= charge.amount) {
-
-      console.log("Stripe says already refunded BUT coupons exist");
-
-      return NextResponse.json(
-        {
-          error:
-            "Payment already refunded in Stripe but coupons still exist. Manual check required.",
-        },
-        { status: 400 }
-      );
-    }
-
-    // 💳 환불 실행
-    console.log("Creating Stripe refund...");
-
-    const refund = await stripe.refunds.create({
-      payment_intent: paymentIntentId,
-      reason: "requested_by_customer",
-    });
-
-    console.log("Refund created:", refund.id);
-
-    // 🔁 라이선스 제거
-    await revokeLicensesByPaymentIntent(paymentIntentId);
-    console.log("Licenses revoked");
-
-    // 🔁 쿠폰 리셋
-    await resetCouponsByPaymentIntent(paymentIntentId);
-    console.log("Coupons reset");
-
-    console.log("===== REFUND SUCCESS =====");
 
     return NextResponse.json({
       success: true,
-      message: "Refund processed",
     });
 
   } catch (err) {
-
     console.error("refund error:", err);
 
     return NextResponse.json(
-      { error: "Refund failed" },
+      { error: "refund failed" },
       { status: 500 }
     );
   }

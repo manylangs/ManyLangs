@@ -21,6 +21,9 @@ function pick(c: Coupon) {
     usedAt: toMs((c as any).usedAt) || null,
     usedBy: (c as any).usedBy ?? null,
 
+    paymentIntentId: (c as any).paymentIntentId ?? null,
+    disabled: !!(c as any).disabled,
+
     usedLang: (c as any).usedLang ?? null,
     usedSeries: (c as any).usedSeries ?? null,
     usedLevel: (c as any).usedLevel ?? null,

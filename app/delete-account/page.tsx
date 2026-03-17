@@ -1,32 +1,23 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { useUser, useClerk } from "@clerk/nextjs";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useState } from "react";
+import { useUser, useClerk, useReverification } from "@clerk/nextjs";
+import { useRouter } from "next/navigation";
 
 export default function DeleteAccountPage() {
-  const { user, isLoaded } = useUser();
-  const { signOut, redirectToSignIn } = useClerk();
+  const { user } = useUser();
+  const { signOut } = useClerk();
   const router = useRouter();
-  const params = useSearchParams();
 
   const [loading, setLoading] = useState(false);
 
-  const confirmDelete = params.get("confirm");
+  const performDelete = useReverification(async () => {
+    if (!user) throw new Error("No user");
 
-  async function deleteAccount() {
-    if (!user) return;
-
-    try {
-      await user.delete();
-      await signOut();
-      router.replace("/");
-    } catch (err) {
-      console.error(err);
-      alert("Failed to delete account.");
-      setLoading(false);
-    }
-  }
+    await user.delete();
+    await signOut();
+    router.replace("/");
+  });
 
   async function handleDelete() {
     if (!user) return;
@@ -40,34 +31,13 @@ export default function DeleteAccountPage() {
     setLoading(true);
 
     try {
-      await user.delete();
-      await signOut();
-      router.replace("/");
-    } catch (err: any) {
-
-      const code = err?.errors?.[0]?.code;
-
-      if (code === "session_reverification_required") {
-        redirectToSignIn({
-          afterSignInUrl: "/delete-account?confirm=true",
-        });
-        return;
-      }
-
+      await performDelete();
+    } catch (err) {
       console.error(err);
       alert("Failed to delete account.");
       setLoading(false);
     }
   }
-
-  useEffect(() => {
-    if (!isLoaded) return;
-    if (!user) return;
-
-    if (confirmDelete === "true") {
-      deleteAccount();
-    }
-  }, [isLoaded, user, confirmDelete]);
 
   function goHome() {
     router.push("/");
@@ -87,6 +57,7 @@ export default function DeleteAccountPage() {
       </p>
 
       <div style={{ marginTop: 24, display: "flex", gap: 12 }}>
+
         <button
           onClick={handleDelete}
           disabled={loading}

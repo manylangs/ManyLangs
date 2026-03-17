@@ -24,11 +24,13 @@ type CouponItem = {
   usedAt?: number | null;
   usedBy?: string;
 
+  paymentIntentId?: string | null;
+  disabled?: boolean;
+
   usedLang?: string | null;
   usedSeries?: string | null;
   usedLevel?: string | null;
 };
-
 type Amount = "3" | "5" | "20" | "50" | "100";
 
 /* ================= constants ================= */
@@ -157,22 +159,7 @@ function buildExpiredUsedCouponCodeSet(
 
   return expired;
 }
-function isRefundEligible(coupon: CouponItem) {
 
-  if (!coupon.issuedAt) return false;
-
-  const now = Date.now();
-
-  const sevenDays = 7 * 24 * 60 * 60 * 1000;
-
-  const within7days = now - coupon.issuedAt <= sevenDays;
-
-  if (!within7days) return false;
-
-  if (coupon.used) return false;
-
-  return true;
-}
 /* ================= page ================= */
 
 export default function SelectBooksPage() {
@@ -536,6 +523,8 @@ export default function SelectBooksPage() {
   }
   async function requestRefund() {
 
+    if (!confirm("Refund all eligible purchases?")) return
+
     try {
 
       const res = await fetch("/api/refund", {
@@ -555,7 +544,9 @@ export default function SelectBooksPage() {
         return
       }
 
-      alert("Refund successful")
+      alert("Refund completed")
+
+      window.location.reload()
 
     } catch {
 
@@ -609,12 +600,49 @@ export default function SelectBooksPage() {
     libraryStart + LIBRARY_PAGE_SIZE
   );
   // ✅ Coupon UX: sort (unused first) + pagination (10/page)
-  const sortedCoupons = [...couponBox.filter((c) => !c.used), ...couponBox.filter((c) => c.used)];
-  const refundableCoupons = couponBox.filter((c) =>
-    isRefundEligible(c)
-  );
+  const sortedCoupons = [
+    ...couponBox.filter((c) => !c.used),
+    ...couponBox.filter((c) => c.used)
+  ];
 
-  const canRefund = refundableCoupons.length > 0;
+  // refund는 "paymentIntent 묶음" 기준으로 계산
+  function getRefundableGroups(coupons: any[]) {
+
+    const groups: Record<string, any[]> = {}
+
+    for (const c of coupons) {
+
+      if (!c.paymentIntentId) continue
+
+      if (!groups[c.paymentIntentId]) {
+        groups[c.paymentIntentId] = []
+      }
+
+      groups[c.paymentIntentId].push(c)
+    }
+
+    const refundable: any[][] = []
+
+    for (const group of Object.values(groups)) {
+
+      const anyUsed = group.some(c => c.used)
+
+      if (!anyUsed) {
+        refundable.push(group)
+      }
+
+    }
+
+    return refundable
+  }
+
+  const refundableGroups = getRefundableGroups(couponBox)
+
+  const refundablePurchaseCount = refundableGroups.length
+  const refundableCouponCount = refundableGroups.flat().length
+
+  const canRefund = refundablePurchaseCount > 0
+
   const couponTotal = sortedCoupons.length;
   const couponTotalPages = Math.max(1, Math.ceil(couponTotal / COUPON_PAGE_SIZE));
 
@@ -625,26 +653,39 @@ export default function SelectBooksPage() {
   return (
     <main className="px-4 py-8">
       {isUserLoaded && isSignedIn && (
-        <div className="sticky top-0 z-40 border-b bg-white/80 backdrop-blur">
-          <div className="mx-auto flex max-w-5xl items-center justify-center px-4 py-2">
-            <div className="flex items-center gap-6">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => router.push("/")}
-                className="h-8"
-              >
-                Home
-              </Button>
+        <div className="mx-auto flex max-w-5xl flex-col gap-2 px-4 py-2 sm:flex-row sm:items-center sm:justify-between">
 
-              <div className="text-xs text-gray-500">
-                General inquiries:&nbsp;
-                <a className="underline" href="mailto:manylangs.help@gmail.com">
-                  manylangs.help@gmail.com
-                </a>
-              </div>
-            </div>
+          {/* LEFT */}
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => router.push("/")}
+            className="h-8 w-fit"
+          >
+            Home
+          </Button>
+
+          {/* CENTER */}
+          <p className="text-xs text-gray-500 text-center sm:text-left">
+            Purchases are managed on our website.&nbsp;
+            <a
+              href="https://www.manylangs.studio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              www.manylangs.studio
+            </a>
+          </p>
+
+          {/* RIGHT */}
+          <div className="text-xs text-gray-500 text-center sm:text-right">
+            <span className="hidden sm:inline">General inquiries:&nbsp;</span>
+            <a className="underline" href="mailto:manylangs.help@gmail.com">
+              manylangs.help@gmail.com
+            </a>
           </div>
+
         </div>
       )}
 
@@ -946,11 +987,16 @@ export default function SelectBooksPage() {
                   Request Refund
                 </Button>
 
+                {canRefund && (
+                  <div className="text-xs text-gray-500 text-center">
+                    Refund available for {refundablePurchaseCount} purchase
+                    {refundablePurchaseCount > 1 ? "s" : ""} ({refundableCouponCount} coupons)
+                  </div>
+                )}
+
                 <div className="text-xs text-gray-500 space-y-1 text-left">
                   <div>Refund Policy</div>
-                  <div>• Refund available within 7 days of purchase</div>
-                  <div>• Refund not available if coupon has been used</div>
-                  <div>• Refund not available if textbook has been opened</div>
+                  <div>• Refund not available if any coupon from the same purchase has been used</div>
                 </div>
 
               </CardContent>

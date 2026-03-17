@@ -72,7 +72,6 @@ export async function POST(req: Request) {
       const wantLang = String(lang).trim();
       const wantSeries = String(series).trim();
 
-      // 🔥🔥🔥 핵심 수정 부분
       const licDocId = `${wantLang}_${wantSeries}_${finalLevel}`;
 
       const licRef = db
@@ -98,16 +97,16 @@ export async function POST(req: Request) {
         }
       }
 
-      const lic: License = {
-        lang: wantLang,
-        series: wantSeries,
-        level: finalLevel,
-        expiresAt: now + 1000 * 60 * 60 * 24 * 30,
-        source: "coupon",
-        code: couponCode,
-        issuedAt: now,
-      };
-
+       const lic: License = {
+         lang: wantLang,
+         series: wantSeries,
+         level: finalLevel,
+         expiresAt: now + 1000 * 60 * 60 * 24 * 30,
+         source: "coupon",
+         code: couponCode,
+         issuedAt: now,
+       };
+  
       tx.set(
         licRef,
         {
@@ -150,6 +149,7 @@ export async function POST(req: Request) {
       },
       { status: 200 }
     );
+
   } catch (e: any) {
     const msg =
       typeof e?.message === "string"
@@ -159,8 +159,12 @@ export async function POST(req: Request) {
     const lower = msg.toLowerCase();
 
     if (lower.includes("invalid coupon")) {
-      return NextResponse.json({ error: msg }, { status: 404 });
+      return NextResponse.json(
+        { error: "Invalid or refunded coupon." },
+        { status: 404 }
+      );
     }
+
 
     if (lower.includes("already used")) {
       return NextResponse.json({ error: msg }, { status: 400 });

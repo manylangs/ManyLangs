@@ -126,6 +126,7 @@ export async function POST(req: Request) {
 
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
+      customer_creation: "always",
       success_url: successUrl,
       cancel_url: cancelUrl,
       client_reference_id: userId,

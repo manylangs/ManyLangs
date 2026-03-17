@@ -1,8 +1,7 @@
 import { db } from "@/lib/firebaseAdmin";
 
 /*
-license revoke
-paymentIntent 기준
+license revoke (안전 버전)
 */
 export async function revokeLicensesByPaymentIntent(paymentIntentId: string) {
 
@@ -13,67 +12,46 @@ export async function revokeLicensesByPaymentIntent(paymentIntentId: string) {
 
   if (couponsSnap.empty) return;
 
-  const codes = couponsSnap.docs.map(d => d.id);
-
   const batch = db.batch();
   const now = Date.now();
 
-  // Firestore IN limit = 10
-  const chunkSize = 10;
+  for (const doc of couponsSnap.docs) {
+    const code = doc.id;
 
-  for (let i = 0; i < codes.length; i += chunkSize) {
-
-    const chunk = codes.slice(i, i + chunkSize);
-
-    const snap = await db
-      .collectionGroup("items")
-      .where("code", "in", chunk)
+    const licSnap = await db
+      .collection("licenses")
+      .where("code", "==", code)
       .get();
 
-    for (const doc of snap.docs) {
-      batch.update(doc.ref, {
+    licSnap.docs.forEach((licDoc) => {
+      batch.update(licDoc.ref, {
         expiresAt: now,
-        updatedAt: new Date()
+        revoked: true,
+        updatedAt: new Date(),
       });
-    }
+    });
   }
 
   await batch.commit();
 }
 
-
 /*
-coupon reset
-refund 시 다시 사용 가능하게
+🔥 쿠폰 삭제 (핵심)
 */
-export async function resetCouponsByPaymentIntent(paymentIntentId: string) {
+export async function deleteCouponsByPaymentIntent(paymentIntentId: string) {
 
-  const snapshot = await db
+  const snap = await db
     .collection("coupons")
     .where("paymentIntentId", "==", paymentIntentId)
     .get();
 
-  if (snapshot.empty) return;
+  if (snap.empty) return;
 
   const batch = db.batch();
 
-  for (const doc of snapshot.docs) {
-
-    const data = doc.data();
-
-    // 이미 reset된 경우 skip
-    if (!data.used) continue;
-
-    batch.update(doc.ref, {
-      used: false,
-      usedBy: null,
-      usedAt: null,
-      usedLang: null,
-      usedLevel: null,
-      usedSeries: null,
-      updatedAt: new Date()
-    });
-  }
+  snap.docs.forEach((doc) => {
+    batch.delete(doc.ref);
+  });
 
   await batch.commit();
 }
