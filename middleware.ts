@@ -4,6 +4,10 @@ export default clerkMiddleware();
 
 export const config = {
   matcher: [
-    "/((?!_next|favicon.ico|api).*)", // ✅ 여기만 추가
+    /*
+     * 모든 요청에서 Clerk 실행
+     * (단, 정적 파일만 제외)
+     */
+    "/((?!_next|favicon.ico|.*\\..*).*)",
   ],
 };
