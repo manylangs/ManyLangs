@@ -1,5 +1,3 @@
-// app/api/content/manifest/route.ts
-
 import { NextResponse } from "next/server";
 import { auth } from "@clerk/nextjs/server";
 import { db, storage } from "@/lib/firebaseAdmin";
@@ -7,7 +5,7 @@ import { db, storage } from "@/lib/firebaseAdmin";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-/* 🔒 간단 rate limit */
+/* 🔒 rate limit */
 const RATE_LIMIT_WINDOW_MS = 60 * 1000;
 const RATE_LIMIT_MAX = 60;
 
@@ -48,14 +46,22 @@ function toMs(v: any): number {
 
 export async function GET(req: Request) {
   try {
-    const { userId } = await auth();
-    if (!userId) return bad("Unauthorized", 401);
-
-    /* 🔒 rate limit */
-    checkRateLimit(userId);
-
     const url = new URL(req.url);
+    const mode = url.searchParams.get("mode");
 
+    let userId: string | null = null;
+
+    // 🔥 demo 아닐 때만 인증
+    if (mode !== "demo") {
+      const authResult = await auth();
+      userId = authResult.userId;
+
+      if (!userId) return bad("Unauthorized", 401);
+
+      checkRateLimit(userId);
+    }
+
+    // ✅ params (중복 제거!!)
     const lang = url.searchParams.get("lang");
     const series = url.searchParams.get("series");
     const level = url.searchParams.get("level");
@@ -65,33 +71,33 @@ export async function GET(req: Request) {
       return bad("Missing params", 400);
     }
 
-    /* 🔒 license 검증 */
+    /* 🔒 license 검증 (demo 제외) */
+    if (mode !== "demo") {
+      let itemId: string;
 
-    let itemId: string;
+      if (series === "voca" || series === "idiom") {
+        itemId = `${lang}_${series}_all`;
+      } else {
+        itemId = `${lang}_${series}_${level}`;
+      }
 
-    if (series === "voca" || series === "idiom") {
-      itemId = `${lang}_${series}_all`;
-    } else {
-      itemId = `${lang}_${series}_${level}`;
+      const lic = await db
+        .collection("licenses")
+        .doc(userId!)
+        .collection("items")
+        .doc(itemId)
+        .get();
+
+      if (!lic.exists) return bad("Forbidden", 403);
+
+      const exp = toMs(lic.data()?.expiresAt);
+
+      if (!exp || exp <= Date.now()) {
+        return bad("Forbidden", 403);
+      }
     }
 
-    const lic = await db
-      .collection("licenses")
-      .doc(userId)
-      .collection("items")
-      .doc(itemId)
-      .get();
-
-    if (!lic.exists) return bad("Forbidden", 403);
-
-    const exp = toMs(lic.data()?.expiresAt);
-
-    if (!exp || exp <= Date.now()) {
-      return bad("Forbidden", 403);
-    }
-
-    /* 🔎 현재 chapter manifest 조회 */
-
+    /* 🔎 manifest 조회 */
     const docId = `${series}_${lang}_${level}_${chapter}`;
 
     const snap = await db.collection("contentManifests").doc(docId).get();
@@ -102,8 +108,7 @@ export async function GET(req: Request) {
 
     if (!data?.active) return bad("Inactive content", 403);
 
-    /* 🔎 같은 series/lang/level chapters 조회 */
-
+    /* 🔎 chapter list */
     const chapterSnap = await db
       .collection("contentManifests")
       .where("series", "==", series)
@@ -117,13 +122,19 @@ export async function GET(req: Request) {
       .filter(Boolean)
       .sort();
 
-    /* 🔎 assets signed URL 생성 */
-
+    /* 🔎 signed URL */
     const bucket = storage.bucket();
     const assets: any[] = [];
 
     for (const asset of data.assets || []) {
-      const file = bucket.file(asset.path);
+      let path = asset.path;
+
+      // 🔥 demo 경로 강제
+      if (mode === "demo" && !path.startsWith("content/demo/")) {
+        path = path.replace("content/", "content/demo/");
+      }
+
+      const file = bucket.file(path);
 
       const [signedUrl] = await file.getSignedUrl({
         version: "v4",
@@ -138,7 +149,14 @@ export async function GET(req: Request) {
     }
 
     if (data.dataPath) {
-      const file = bucket.file(data.dataPath);
+      let path = data.dataPath;
+
+      // 🔥 demo 경로 강제
+      if (mode === "demo" && !path.startsWith("content/demo/")) {
+        path = path.replace("content/", "content/demo/");
+      }
+
+      const file = bucket.file(path);
 
       const [signedUrl] = await file.getSignedUrl({
         version: "v4",
@@ -152,11 +170,9 @@ export async function GET(req: Request) {
       });
     }
 
-    /* 🔥 최종 응답 */
-
     return NextResponse.json({
       assets,
-      chapters
+      chapters,
     });
 
   } catch (e: any) {
@@ -164,6 +180,7 @@ export async function GET(req: Request) {
       return bad("Too many requests", 429);
     }
 
+    console.error(e);
     return bad(e?.message || "Server error", 500);
   }
 }

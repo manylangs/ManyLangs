@@ -1,0 +1,278 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import ConversationAudioController from "@/components/audio/controllers/ConversationAudioController";
+import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
+
+type StudyLang = "en" | "es" | "fr" | "pt";
+const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
+
+type Line = {
+  speaker: string;
+  sentences: Record<string, string>;
+};
+
+type Block = {
+  set_id: string;
+  lines: Line[];
+};
+
+type Props = {
+  level: string;
+  chapter: string;
+};
+
+type Status = "loading" | "ready" | "error";
+
+/* ✅ 버튼 스타일 (모바일 대응) */
+const buttonStyle = (active: boolean): React.CSSProperties => ({
+  padding: "6px 10px",
+  borderRadius: 6,
+  fontSize: 13,
+  background: active ? "#333" : "#f2f2f2",
+  color: active ? "#fff" : "#333",
+  border: "none",
+  cursor: active ? "default" : "pointer",
+  whiteSpace: "nowrap",
+});
+
+/* ✅ 공통 컨테이너 */
+const containerStyle: React.CSSProperties = {
+  maxWidth: 900,
+  margin: "0 auto",
+  padding: "0 clamp(12px, 4vw, 24px)",
+};
+
+export default function DemoConversationViewer({ level, chapter }: Props) {
+  const { targetLang } = useViewerTarget();
+  const lang = targetLang || "kr";
+
+  const [showTargetText, setShowTargetText] = useState(true);
+  const [studyLang, setStudyLang] = useState<StudyLang>("en");
+  const [blocks, setBlocks] = useState<Block[]>([]);
+  const [status, setStatus] = useState<Status>("loading");
+
+
+  const guideTexts: Record<StudyLang, string[]> = {
+    en: [
+      "1. You can change the study language using the buttons above.",
+      "2. You can move to the next set using the <> buttons below the audio.",
+      "3. Press Toggle Target to hide the target language and practice translating.",
+      "4. You are currently viewing A1 Chapter 1. You can choose levels A1, A2, B1, B2, C1, C2.",
+      "5. As the level increases, situations, sentence length, vocabulary, and expressions become more advanced.",
+    ],
+    es: [
+      "1. Puedes cambiar el idioma de estudio usando los botones de arriba.",
+      "2. Puedes moverte al siguiente set usando los botones <> debajo del audio.",
+      "3. Presiona Toggle Target para ocultar el idioma objetivo y practicar la traducción.",
+      "4. Actualmente estás viendo A1 Chapter 1. Puedes elegir niveles A1, A2, B1, B2, C1, C2.",
+      "5. A medida que sube el nivel, aumentan las situaciones, la longitud de las frases, el vocabulario y las expresiones.",
+    ],
+    fr: [
+      "1. Vous pouvez changer la langue d’étude avec les boutons ci-dessus.",
+      "2. Vous pouvez passer au set suivant avec les boutons <> sous l’audio.",
+      "3. Appuyez sur Toggle Target pour cacher la langue cible et pratiquer la traduction.",
+      "4. Vous regardez actuellement A1 Chapter 1. Vous pouvez choisir les niveaux A1, A2, B1, B2, C1, C2.",
+      "5. Plus le niveau augmente, plus les situations, les phrases et le vocabulaire deviennent complexes.",
+    ],
+    pt: [
+      "1. Você pode mudar o idioma de estudo usando os botões acima.",
+      "2. Você pode ir para o próximo set usando os botões <> abaixo do áudio.",
+      "3. Pressione Toggle Target para ocultar o idioma alvo e praticar a tradução.",
+      "4. Você está vendo A1 Chapter 1. Pode escolher níveis A1, A2, B1, B2, C1, C2.",
+      "5. À medida que o nível aumenta, aumentam as situações, o tamanho das frases e o vocabulário.",
+    ],
+  };
+
+
+  useEffect(() => {
+    const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
+    if (filtered.length > 0) setStudyLang(filtered[0]);
+  }, [targetLang]);
+
+  useEffect(() => {
+    if (!lang) return;
+
+    let cancelled = false;
+
+    const load = async () => {
+      try {
+        setStatus("loading");
+
+        const res = await fetch(
+          `/api/content/manifest?lang=${lang}&series=conversation&level=${level}&chapter=${chapter}&mode=demo`
+        );
+
+        const manifest = await res.json();
+
+        if (cancelled) return;
+
+        const data = manifest.assets?.find((a: any) => a.kind === "data");
+        const dataRes = await fetch(data.path);
+        const dataJson = await dataRes.json();
+
+        if (cancelled) return;
+
+        setBlocks(Array.isArray(dataJson.blocks) ? dataJson.blocks : []);
+        setStatus("ready");
+      } catch (e) {
+        console.error(e);
+        if (!cancelled) setStatus("error");
+      }
+    };
+
+    load();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [lang, level, chapter]);
+
+  if (status === "loading")
+    return <div style={{ padding: 24 }}>Loading...</div>;
+  if (status === "error")
+    return <div style={{ padding: 24 }}>Failed</div>;
+
+  return (
+    <div style={containerStyle}>
+      {/* ✅ STICKY */}
+      <div
+        style={{
+          position: "sticky",
+          top: 0,
+          zIndex: 30,
+          background: "#fff",
+          borderBottom: "1px solid #eee",
+        }}
+      >
+        {/* HEADER */}
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 8,
+            justifyContent: "space-between",
+            padding: "12px 0",
+          }}
+        >
+          {/* LEFT */}
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+            {ALL_STUDY_LANGS
+              .filter((l) => l !== targetLang)
+              .map((l) => (
+                <button
+                  key={l}
+                  onClick={() => setStudyLang(l)}
+                  style={buttonStyle(studyLang === l)}
+                >
+                  {l.toUpperCase()}
+                </button>
+              ))}
+
+            <button
+              onClick={() => setShowTargetText(!showTargetText)}
+              style={buttonStyle(false)}
+            >
+              Toggle
+            </button>
+
+            <button
+              onClick={async () => {
+                if (navigator.share) {
+                  try {
+                    await navigator.share({
+                      title: "Try Demo",
+                      url: window.location.href,
+                    });
+                  } catch { }
+                } else {
+                  navigator.clipboard.writeText(window.location.href);
+                  alert("Link copied!");
+                }
+              }}
+              style={buttonStyle(false)}
+            >
+              Share
+            </button>
+          </div>
+
+          {/* RIGHT */}
+          <Link href="/demo" style={buttonStyle(false)}>
+            ← Back
+          </Link>
+        </div>
+
+        {/* GUIDE */}
+        <div
+          style={{
+            fontSize: "clamp(12px, 3vw, 13px)",
+            color: "#666",
+            lineHeight: 1.5,
+            paddingBottom: 8,
+          }}
+        >
+          {guideTexts[studyLang].map((t, i) => (
+            <div key={i}>{t}</div>
+          ))}
+        </div>
+
+        {/* PLAYER */}
+        <div style={{ padding: "10px 0", borderTop: "1px solid #eee" }}>
+          <ConversationAudioController
+            lang={lang}
+            level={level}
+            chapter={chapter}
+          />
+        </div>
+      </div>
+
+      {/* CONTENT */}
+      <div style={{ padding: "20px 0" }}>
+        {blocks.map((block, idx) => (
+          <section key={block.set_id || idx} style={{ marginBottom: 32 }}>
+            <div
+              style={{
+                fontWeight: 700,
+                marginBottom: 12,
+                fontSize: "clamp(14px, 4vw, 16px)",
+              }}
+            >
+              Set {idx + 1}
+            </div>
+
+            {(block.lines || []).map((line, i) => {
+              const targetText =
+                line.sentences?.[targetLang] ??
+                line.sentences?.target ??
+                "";
+
+              const studyText = line.sentences?.[studyLang] ?? "";
+
+              return (
+                <div
+                  key={i}
+                  style={{
+                    marginBottom: 14,
+                    lineHeight: 1.6,
+                    fontSize: "clamp(14px, 4vw, 16px)",
+                  }}
+                >
+                  {showTargetText && (
+                    <div>
+                      <strong>{line.speaker}:</strong> {targetText}
+                    </div>
+                  )}
+
+                  <div style={{ color: "#555" }}>
+                    <strong>{line.speaker}:</strong> {studyText}
+                  </div>
+                </div>
+              );
+            })}
+          </section>
+        ))}
+      </div>
+    </div>
+  );
+}
