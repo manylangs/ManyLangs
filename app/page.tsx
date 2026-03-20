@@ -16,7 +16,12 @@ export default function LandingPage() {
 
   // 🔥 추가 (첫 로그인 해결)
   useEffect(() => {
-    if (isLoaded && isSignedIn) {
+    if (!isLoaded) return;
+
+    // 🔥 Clerk OAuth 콜백 중이면 절대 건드리지 마라
+    if (window.location.search.includes("__clerk")) return;
+
+    if (isSignedIn) {
       router.replace("/select-books");
     }
   }, [isLoaded, isSignedIn, router]);
@@ -30,7 +35,7 @@ export default function LandingPage() {
           title: "ManyLangs",
           url: window.location.href,
         });
-      } catch {}
+      } catch { }
     } else {
       try {
         await navigator.clipboard.writeText(window.location.href);
