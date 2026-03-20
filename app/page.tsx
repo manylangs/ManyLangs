@@ -178,7 +178,7 @@ export default function LandingPage() {
           </button>
 
           <button type="button" onClick={handleShare} style={btnSecondary}>
-            Share
+            Copy link
           </button>
         </div>
 
