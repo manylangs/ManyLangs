@@ -86,7 +86,9 @@ export default function LandingPage() {
           <div style={logoWrap}>
             <Logo />
           </div>
-
+          <span style={rightArea} className="desktop-email">
+            General inquiries : manylangs.help@gmail.com
+          </span>
           {/* Desktop Nav */}
           <nav style={navStyle} className="desktop-nav">
             <a href="#features" style={navItem}>
@@ -105,9 +107,9 @@ export default function LandingPage() {
 
           {/* Right Area */}
           <div style={rightWrap}>
-            <span style={rightArea} className="desktop-email">
+            {/* <span style={rightArea} className="desktop-email">
               General inquiries : manylangs.help@gmail.com
-            </span>
+            </span> */}
 
             <button
               type="button"
