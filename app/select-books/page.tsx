@@ -956,7 +956,7 @@ export default function SelectBooksPage() {
                 {error && <p className="text-sm text-red-600">{error}</p>}
 
                 <Button onClick={activateCoupon} disabled={loading} className="w-full">
-                  {loading ? "Processing..." : "Add with Coupon"}
+                  {loading ? "Processing..." : "Add this series with coupons"}
                 </Button>
 
                 <Button
@@ -965,7 +965,7 @@ export default function SelectBooksPage() {
                   className="w-full"
                   disabled={loading}
                 >
-                  Buy with Card
+                  Buy coupons using your card
                 </Button>
               </CardContent>
             </Card>
