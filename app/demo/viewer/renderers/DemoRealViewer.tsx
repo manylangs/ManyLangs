@@ -194,7 +194,7 @@ export default function DemoRealViewer({ level, chapter }: Props) {
               }}
               style={buttonStyle(false)}
             >
-              Share
+              Copy link
             </button>
           </div>
 

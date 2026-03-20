@@ -236,7 +236,7 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
               }}
               style={buttonStyle(false)}
             >
-              Share
+              Copy link
             </button>
           </div>
 

@@ -193,7 +193,7 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
               }}
               style={buttonStyle(false)}
             >
-              Share
+              Copy link
             </button>
           </div>
 
