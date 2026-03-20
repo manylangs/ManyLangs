@@ -480,16 +480,17 @@ export default function SelectBooksPage() {
       setLoading(false);
       return;
     }
+    //이부분은 책 선택없이 카드결제 가능하도록한 최소 수정임 이부분만 주석처리하고 손안댐
+    // if (!book || (SERIES_CONFIG[book].hasLevel && !level)) {
+    //   setError("Please select textbook and level.");
+    //   setLoading(false);
+    //   return;
+    // }
 
-    if (!book || (SERIES_CONFIG[book].hasLevel && !level)) {
-      setError("Please select textbook and level.");
-      setLoading(false);
-      return;
-    }
-
+    // const finalLevel =
+    //   SERIES_CONFIG[book].hasLevel ? level : "all";
     const finalLevel =
-      SERIES_CONFIG[book].hasLevel ? level : "all";
-
+      book && SERIES_CONFIG[book]?.hasLevel ? level : "all";
     try {
       const res = await fetch("/api/checkout", {
         method: "POST",

@@ -77,33 +77,54 @@ export async function POST(req: Request) {
     );
   }
 
+  // let { lang, series, level, amount } = body;
+
+  // if (!lang || !series || !amount) {
+  //   return NextResponse.json(
+  //     { error: "missing required fields" },
+  //     { status: 400 }
+  //   );
+  // }
+  //select book 카드결제 위해 아래처럼 변경
   let { lang, series, level, amount } = body;
 
-  if (!lang || !series || !amount) {
+  // ✅ 결제는 amount만 필요
+  if (!amount) {
     return NextResponse.json(
       { error: "missing required fields" },
       { status: 400 }
     );
   }
-
   // ✅ 서버 강제 보정 (클라이언트 조작 방지)
   if (series === "voca" || series === "idiom") {
     level = "all";
   }
 
   // ✅ 레벨 필요한 시리즈만 검증
+  // const requiresLevel =
+  //   series === "grammar" ||
+  //   series === "conversation" ||
+  //   series === "real";
+
+  // if (requiresLevel && !level) {
+  //   return NextResponse.json(
+  //     { error: "level required" },
+  //     { status: 400 }
+  //   );
+  // }
+  //select book 카드결제 위해 아래처럼 변경
   const requiresLevel =
     series === "grammar" ||
     series === "conversation" ||
     series === "real";
 
-  if (requiresLevel && !level) {
+  // ✅ series 없을 수도 있으므로 보호
+  if (series && requiresLevel && !level) {
     return NextResponse.json(
       { error: "level required" },
       { status: 400 }
     );
   }
-
   if (!["3", "5", "20", "50", "100"].includes(amount)) {
     return NextResponse.json(
       { error: "invalid amount" },
@@ -130,12 +151,20 @@ export async function POST(req: Request) {
       success_url: successUrl,
       cancel_url: cancelUrl,
       client_reference_id: userId,
+      // metadata: {
+      //   userId,      // 서버 인증 값
+      //   lang,
+      //   series,
+      //   level,
+      //   amount,
+      // },
+      //select book 카드결제 위해 아래처럼 변경
       metadata: {
-        userId,      // 서버 인증 값
-        lang,
-        series,
-        level,
+        userId,
         amount,
+        lang: lang || "",
+        series: series || "",
+        level: level || "",
       },
       line_items: [
         {
@@ -151,11 +180,18 @@ export async function POST(req: Request) {
     await db.collection("checkoutSessions")
       .doc(session.id)
       .set({
+        // sessionId: session.id,
+        // userId,
+        // lang,
+        // series,
+        // level,
+        // amount,
+        //select book 카드결제 위해 아래처럼 변경
         sessionId: session.id,
         userId,
-        lang,
-        series,
-        level,
+        lang: lang || "",
+        series: series || "",
+        level: level || "",
         amount,
         priceId,
         status: "created",
