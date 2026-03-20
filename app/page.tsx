@@ -174,7 +174,7 @@ export default function LandingPage() {
 
           {/* 🔥 iOS 버튼 */}
           <button type="button" onClick={handleIOSInstall} style={btnSecondary}>
-            Apple
+            IOS
           </button>
 
           <button type="button" onClick={handleShare} style={btnSecondary}>

@@ -94,7 +94,7 @@ export default function DemoPage() {
                             }}
                             style={btnSecondary}
                         >
-                            Share
+                            Copy link
                         </button>
 
                         <Link href="/app" style={linkReset}>
