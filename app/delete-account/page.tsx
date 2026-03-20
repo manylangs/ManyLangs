@@ -40,51 +40,96 @@ export default function DeleteAccountPage() {
   }
 
   function goHome() {
-    router.push("/");
+    router.push("/select-books");
   }
 
   return (
-    <main style={{ padding: 24, maxWidth: 480, margin: "0 auto" }}>
-      <h1 style={{ fontSize: 20, fontWeight: 600 }}>
-        Delete Account
-      </h1>
-
-      <p style={{ marginTop: 12, fontSize: 14 }}>
-        Deleting your account will permanently remove your access
-        to all textbooks and coupons.
-        <br />
-        <strong>This action cannot be undone.</strong>
-      </p>
-
-      <div style={{ marginTop: 24, display: "flex", gap: 12 }}>
-
-        <button
-          onClick={handleDelete}
-          disabled={loading}
+    <main
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "#f9fafb",
+      }}
+    >
+      <div
+        style={{
+          width: "100%",
+          maxWidth: 420,
+          padding: 32,
+          background: "#fff",
+          borderRadius: 12,
+          boxShadow: "0 10px 25px rgba(0,0,0,0.08)",
+          textAlign: "center",
+        }}
+      >
+        <h1
           style={{
-            padding: "10px 16px",
-            background: "#dc2626",
-            color: "#fff",
-            borderRadius: 6,
-            border: "none",
-            cursor: "pointer",
+            fontSize: 22,
+            fontWeight: 700,
           }}
         >
-          {loading ? "Deleting..." : "Delete my account"}
-        </button>
+          Delete Account
+        </h1>
 
-        <button
-          onClick={goHome}
+        <p
           style={{
-            padding: "10px 16px",
-            background: "#fff",
-            border: "1px solid #ccc",
-            borderRadius: 6,
-            cursor: "pointer",
+            marginTop: 16,
+            fontSize: 14,
+            color: "#555",
+            lineHeight: 1.6,
           }}
         >
-          Back to Home
-        </button>
+          Deleting your account will permanently remove your access
+          to all textbooks and coupons.
+          <br />
+          <strong style={{ color: "#111" }}>
+            This action cannot be undone.
+          </strong>
+        </p>
+
+        <div
+          style={{
+            marginTop: 28,
+            display: "flex",
+            gap: 12,
+          }}
+        >
+          <button
+            onClick={handleDelete}
+            disabled={loading}
+            style={{
+              flex: 1,
+              padding: "12px 0",
+              background: "#dc2626",
+              color: "#fff",
+              borderRadius: 8,
+              border: "none",
+              cursor: "pointer",
+              fontWeight: 600,
+              fontSize: 14,
+            }}
+          >
+            {loading ? "Deleting..." : "Delete my account"}
+          </button>
+
+          <button
+            onClick={goHome}
+            style={{
+              flex: 1,
+              padding: "12px 0",
+              background: "#fff",
+              border: "1px solid #ddd",
+              borderRadius: 8,
+              cursor: "pointer",
+              fontWeight: 500,
+              fontSize: 14,
+            }}
+          >
+            Back to My Library
+          </button>
+        </div>
       </div>
     </main>
   );

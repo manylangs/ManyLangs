@@ -659,7 +659,7 @@ export default function SelectBooksPage() {
           <Button
             variant="outline"
             size="sm"
-            onClick={() => router.push("/")}
+            onClick={() => router.push("/app")}
             className="h-8 w-fit"
           >
             Home

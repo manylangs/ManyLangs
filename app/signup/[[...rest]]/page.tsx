@@ -24,19 +24,28 @@ export default function SignUpPage() {
         alignItems: "center",
       }}
     >
-      <section style={{ width: 400 }}>
+      <section
+        style={{
+          width: 400,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 16,
+        }}
+      >
         <Logo />
+
         <h1
           style={{
             textAlign: "center",
             fontSize: 20,
-            marginBottom: 16,
             fontWeight: 500,
           }}
         >
           Create your account
         </h1>
-        <SignUp redirectUrl="/select-books" />
+
+        <SignUp />
       </section>
     </main>
   );

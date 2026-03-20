@@ -1,12 +1,25 @@
-//랜딩페이지
+//랜딩 페이지
 "use client";
 
 import Link from "next/link";
 import Logo from "@/app/components/Logo";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useUser } from "@clerk/nextjs";
+import { useRouter } from "next/navigation";
 
 export default function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // 🔥 추가 (핵심)
+  const { isSignedIn, isLoaded } = useUser();
+  const router = useRouter();
+
+  // 🔥 추가 (첫 로그인 해결)
+  useEffect(() => {
+    if (isLoaded && isSignedIn) {
+      router.replace("/select-books");
+    }
+  }, [isLoaded, isSignedIn, router]);
 
   const handleShare = async () => {
     if (typeof window === "undefined") return;
@@ -17,7 +30,7 @@ export default function LandingPage() {
           title: "ManyLangs",
           url: window.location.href,
         });
-      } catch { }
+      } catch {}
     } else {
       try {
         await navigator.clipboard.writeText(window.location.href);
@@ -32,6 +45,7 @@ export default function LandingPage() {
 
   return (
     <main style={mainStyle}>
+      {/* 이하 기존 코드 그대로 유지 */}
       {/* Header */}
       <header style={headerStyle}>
         <div style={headerInner}>
