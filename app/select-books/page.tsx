@@ -207,12 +207,13 @@ export default function SelectBooksPage() {
     }
 
     localStorage.setItem(key, userId);
-  }, [isLoaded, userId]);
+  }, [isLoaded, isSignedIn, userId]);
 
   /** 1) 초기 로드 + checkout success 처리 + 서버 coupon sync */
   useEffect(() => {
     if (!isLoaded) return;
-    if (!userId) {
+
+    if (!isSignedIn) {
       router.replace("/login");
       return;
     }
@@ -306,11 +307,10 @@ export default function SelectBooksPage() {
     })();
   }, [isLoaded, userId, router]);
 
-  /** 2) ⏱ 자동 제거 타이머 */
   /** 2) ⏱ 자동 제거 타이머 — 안정화 버전 */
   useEffect(() => {
-    if (!isLoaded || !userId) return;
-
+    if (!isLoaded) return;
+    if (!isSignedIn) return;
     const tick = async () => {
       try {
         const res = await fetch("/api/licenses/list", {
@@ -358,7 +358,8 @@ export default function SelectBooksPage() {
 
   /** 3) 라이선스 기반 usedBook 필드 보강 */
   useEffect(() => {
-    if (!isLoaded || !userId) return;
+    if (!isLoaded) return;
+    if (!isSignedIn) return;
     if (library.length === 0 || couponBox.length === 0) return;
 
     const byCode = new Map<string, LibraryItem>();
@@ -386,7 +387,8 @@ export default function SelectBooksPage() {
       return next;
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isLoaded, userId, library]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isLoaded, isSignedIn, library]);
 
   useEffect(() => {
     setCouponPage(1);
@@ -394,7 +396,7 @@ export default function SelectBooksPage() {
 
   // ✅ Hook 끝난 뒤에만 early return
   if (!isLoaded) return null;
-  if (!userId) return null;
+  if (!isSignedIn) return null;
 
   async function activateCoupon() {
     if (loading) return;
@@ -475,7 +477,12 @@ export default function SelectBooksPage() {
     setError("");
     setLoading(true);
 
-    if (!isLoaded || !userId) {
+    if (!isLoaded) {
+      setLoading(false);
+      return;
+    }
+
+    if (!isSignedIn) {
       setError("Please login first.");
       setLoading(false);
       return;
@@ -668,7 +675,7 @@ export default function SelectBooksPage() {
 
           {/* CENTER */}
           <p className="text-xs text-gray-500 text-center sm:text-left">
-            Purchases are available on our website.&nbsp;
+            Visit the website to learn about how to use ManyLangs and its features.&nbsp;
             <a
               href="https://www.manylangs.studio"
               target="_blank"
@@ -681,7 +688,7 @@ export default function SelectBooksPage() {
 
           {/* RIGHT */}
           <div className="text-xs text-gray-500 text-center sm:text-right">
-            <span className="hidden sm:inline">General inquiries:&nbsp;</span>
+            <span className="hidden sm:inline">General inquiries :&nbsp;</span>
             <a className="underline" href="mailto:manylangs.help@gmail.com">
               manylangs.help@gmail.com
             </a>

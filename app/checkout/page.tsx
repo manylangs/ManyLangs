@@ -1,30 +1,30 @@
 "use client";
 
 import { useEffect } from "react";
-import { useAuth } from "@clerk/nextjs";
+import { useAuth, useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 
 export default function CheckoutPage() {
-  const { userId, isLoaded } = useAuth();
+  const { isLoaded } = useAuth();
+  const { isSignedIn } = useUser(); // ✅ 추가
   const router = useRouter();
 
   // 🔒 비로그인 + 재결제 접근 차단
   useEffect(() => {
     if (!isLoaded) return;
 
-    // 1️⃣ 비로그인 차단
-    if (!userId) {
+    if (!isSignedIn) {
       router.replace("/login");
       return;
     }
 
-    // 2️⃣ 이미 라이선스 있음 → 재결제 차단
+    // 이미 라이선스 있음 → 재결제 방지
     const licensed = localStorage.getItem("licensed");
     if (licensed === "true") {
       router.replace("/select-books");
       return;
     }
-  }, [isLoaded, userId, router]);
+  }, [isLoaded, isSignedIn, router]); // ✅ userId 제거
 
   const startCheckout = async () => {
     const res = await fetch("/api/checkout", { method: "POST" });
@@ -32,10 +32,9 @@ export default function CheckoutPage() {
     window.location.href = data.url;
   };
 
-  // 가드 처리 중에는 렌더링 안 함
-  if (!isLoaded || !userId) {
-    return null;
-  }
+  // 🔥 auth 로딩 중 / 비로그인 시 렌더 차단
+  if (!isLoaded) return null;
+  if (!isSignedIn) return null;
 
   return (
     <main style={{ padding: 24 }}>

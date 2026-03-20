@@ -13,6 +13,35 @@ export default function LandingPage() {
   // 🔥 추가 (핵심)
   const { isSignedIn, isLoaded } = useUser();
   const router = useRouter();
+  // 🔥 PWA install 관련 state
+  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
+  const [showIOSGuide, setShowIOSGuide] = useState(false);
+
+  // 🔥 Android install 이벤트
+  useEffect(() => {
+    const handler = (e: any) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+    };
+
+    window.addEventListener("beforeinstallprompt", handler);
+    return () => window.removeEventListener("beforeinstallprompt", handler);
+  }, []);
+
+  // 🔥 Android 버튼 클릭
+  const handleAndroidInstall = async () => {
+    if (!deferredPrompt) {
+      alert("Already installed or not supported");
+      return;
+    }
+
+    deferredPrompt.prompt();
+  };
+
+  // 🔥 iOS 버튼 클릭
+  const handleIOSInstall = () => {
+    setShowIOSGuide(true);
+  };
 
   // 🔥 추가 (첫 로그인 해결)
   useEffect(() => {
@@ -77,7 +106,7 @@ export default function LandingPage() {
           {/* Right Area */}
           <div style={rightWrap}>
             <span style={rightArea} className="desktop-email">
-              manylangs.help@gmail.com
+              General inquiries : manylangs.help@gmail.com
             </span>
 
             <button
@@ -137,6 +166,16 @@ export default function LandingPage() {
               Get Started
             </button>
           </Link>
+
+          {/* 🔥 Android 버튼 */}
+          <button type="button" onClick={handleAndroidInstall} style={btnSecondary}>
+            Android
+          </button>
+
+          {/* 🔥 iOS 버튼 */}
+          <button type="button" onClick={handleIOSInstall} style={btnSecondary}>
+            Apple
+          </button>
 
           <button type="button" onClick={handleShare} style={btnSecondary}>
             Share
@@ -221,11 +260,51 @@ export default function LandingPage() {
           </button>
         </a>
       </section>
+      {showIOSGuide && (
+        <div
+          style={{
+            position: "fixed",
+            bottom: 0,
+            left: 0,
+            right: 0,
+            background: "#fff",
+            borderTop: "1px solid #ccc",
+            padding: 20,
+            zIndex: 9999,
+            textAlign: "center",
+          }}
+        >
+          <h3>Use ManyLangs like an app</h3>
 
+          <p style={{ fontSize: 14, marginTop: 10 }}>
+            1. Tap ⬆️ (Share)
+          </p>
+          <p style={{ fontSize: 14 }}>
+            2. Tap "Add to Home Screen"
+          </p>
+          <p style={{ fontSize: 14 }}>
+            3. No install needed — works like a real app.
+          </p>
+
+          <button
+            onClick={() => setShowIOSGuide(false)}
+            style={{
+              marginTop: 12,
+              padding: "8px 12px",
+              border: "1px solid #ccc",
+              borderRadius: 6,
+              background: "#fff",
+              cursor: "pointer",
+            }}
+          >
+            Close
+          </button>
+        </div>
+      )}
       {/* Footer */}
       <footer style={footerStyle}>
         <div style={footerInner}>
-          <p style={footerText}>manylangs.help@gmail.com</p>
+          <p style={footerText}>General inquiries : manylangs.help@gmail.com</p>
 
           <div style={footerLinks}>
             <a href="/terms" style={footerLink}>

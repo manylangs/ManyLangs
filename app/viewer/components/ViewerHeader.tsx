@@ -28,17 +28,18 @@ export default function ViewerHeader() {
         zIndex: 1000,
         background: "#fff",
         borderBottom: "1px solid #eee",
-        padding: "8px 16px",
+        padding: "8px 0",
       }}
     >
-      {/* Top Row */}
       <div
         style={{
+          maxWidth: 1000,
+          margin: "0 auto",
+          padding: "0 20px",
           display: "flex",
-          justifyContent: "space-between",
           alignItems: "center",
-          flexWrap: "wrap",
-          gap: 8,
+          justifyContent: "space-between",
+          gap: 12,
         }}
       >
         {/* Left */}
@@ -48,6 +49,18 @@ export default function ViewerHeader() {
         >
           Back to Library
         </button>
+
+        {/* Center */}
+        <div
+          style={{
+            fontSize: 13,
+            color: "#666",
+            textAlign: "center",
+            flex: 1,
+          }}
+        >
+          For typos, phrasing corrections, or general inquiries : manylangs.help@gmail.com
+        </div>
 
         {/* Right */}
         <button
@@ -59,20 +72,6 @@ export default function ViewerHeader() {
         >
           Target text: {showTargetText ? "ON" : "OFF"}
         </button>
-      </div>
-
-      {/* Bottom Info Line */}
-      <div
-        style={{
-          fontSize: 12,
-          color: "#888",
-          textAlign: "center",
-          wordBreak: "break-word",
-          marginTop: 4,
-        }}
-      >
-        For typos, phrasing corrections, or general inquiries:{" "}
-        manylangs.help@gmail.com
       </div>
     </header>
   );
