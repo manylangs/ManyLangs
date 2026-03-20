@@ -4,21 +4,23 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 
-/* ❗️임시: 나중에 VocaAudioController로 교체 */
-import IdiomAudioController from "@/components/audio/controllers/VocaAudioController";
-import VocaAudioController from "@/components/audio/controllers/VocaAudioController";
+/* ❗️임시: 나중에 IdiomAudioController로 교체 */
+import IdiomAudioController from "@/components/audio/controllers/IdiomAudioController";
 
 type StudyLang = "en" | "es" | "fr" | "pt";
 const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
 
 type Example = {
+  function: string;
   target: string;
   [key: string]: string;
 };
 
 type Block = {
-  type: "vocab_item";
-  word: Record<string, string>;
+  frequency_rank: number;
+  frequency_stars: string;
+  expression: Record<string, string>;
+  explanation: Record<string, string>;
   examples: Example[];
 };
 
@@ -29,7 +31,7 @@ type Props = {
 
 type Status = "loading" | "ready" | "error";
 
-/* ✅ 버튼 스타일 */
+/* ✅ 버튼 스타일 (컨버세이션 그대로 복사) */
 const buttonStyle = (active: boolean): React.CSSProperties => ({
   padding: "6px 10px",
   borderRadius: 6,
@@ -48,18 +50,20 @@ const containerStyle: React.CSSProperties = {
   padding: "0 clamp(12px, 4vw, 24px)",
 };
 
-export default function DemoVocaViewer({ level, chapter }: Props) {
+export default function DemoIdiomViewer({ level, chapter }: Props) {
   const { targetLang } = useViewerTarget();
   const lang = targetLang || "kr";
 
   const [showTargetText, setShowTargetText] = useState(true);
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
-  const [blocks, setBlocks] = useState<Block[]>([]);
+  const [groupedBlocks, setGroupedBlocks] = useState<Record<number, Block[]>>({});
   const [status, setStatus] = useState<Status>("loading");
 
+  /* 🔥 중요: idiom은 target 고정 */
   const TARGET_KEY = "target";
 
-  /* ✅ guide (그대로 복사) */
+  /* guide 그대로 복사 */
+
   const guideTexts: Record<StudyLang, string[]> = {
     en: [
       "1. You can change the study language using the buttons above.",
@@ -91,6 +95,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
     ],
   };
 
+
   useEffect(() => {
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
@@ -106,7 +111,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
         setStatus("loading");
 
         const res = await fetch(
-          `/api/content/manifest?lang=${lang}&series=voca&level=${level}&chapter=${chapter}&mode=demo`
+          `/api/content/manifest?lang=${lang}&series=idiom&level=${level}&chapter=${chapter}&mode=demo`
         );
 
         const manifest = await res.json();
@@ -118,6 +123,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
 
         let allBlocks: Block[] = [];
 
+        /* 🔥 set별 + blocks 병합 */
         for (const asset of dataAssets) {
           const res = await fetch(asset.path);
           const json = await res.json();
@@ -127,9 +133,22 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
           }
         }
 
+        /* 🔥 set 그룹화 (frequency_rank 기준) */
+        const grouped: Record<number, Block[]> = {};
+
+        for (const block of allBlocks) {
+          const key = block.frequency_rank || 0;
+
+          if (!grouped[key]) {
+            grouped[key] = [];
+          }
+
+          grouped[key].push(block);
+        }
+
         if (cancelled) return;
 
-        setBlocks(allBlocks);
+        setGroupedBlocks(grouped);
         setStatus("ready");
       } catch (e) {
         console.error(e);
@@ -151,7 +170,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
 
   return (
     <div style={containerStyle}>
-      {/* ✅ STICKY HEADER */}
+      {/* ✅ STICKY HEADER (컨버세이션 100% 동일) */}
       <div
         style={{
           position: "sticky",
@@ -171,6 +190,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
             padding: "12px 0",
           }}
         >
+          {/* LEFT */}
           <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
             {ALL_STUDY_LANGS
               .filter((l) => l !== targetLang)
@@ -191,7 +211,6 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
               Toggle
             </button>
 
-            {/* 🔥 여기 추가 */}
             <button
               onClick={async () => {
                 if (navigator.share) {
@@ -212,6 +231,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
             </button>
           </div>
 
+          {/* RIGHT */}
           <Link href="/demo" style={buttonStyle(false)}>
             ← Back
           </Link>
@@ -231,8 +251,8 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
           ))}
         </div>
 
-        {/* AUDIO */}
-        <VocaAudioController
+        {/* ❗️임시 audio (현재 문제 원인) */}
+        <IdiomAudioController
           lang={lang}
           level={level}
           chapter={chapter}
@@ -241,15 +261,12 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
 
       {/* CONTENT */}
       <div style={{ padding: "20px 0" }}>
-        {blocks.map((block, idx) => {
-          const setNumber = idx + 1; // 🔥 핵심
+        {Object.entries(groupedBlocks)
+          .sort(([a], [b]) => Number(a) - Number(b))
+          .map(([set, setBlocks]) => (
+            <div key={set} style={{ marginBottom: 50 }}>
 
-          const word = block.word?.[TARGET_KEY] ?? "";
-          const wordStudy = block.word?.[studyLang] ?? "";
-
-          return (
-            <div key={idx} style={{ marginBottom: 50 }}>
-              {/* ✅ SET 타이틀 */}
+              {/* 🔥 SET 타이틀 */}
               <div
                 style={{
                   fontSize: 18,
@@ -259,37 +276,58 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
                   paddingBottom: 6,
                 }}
               >
-                SET {setNumber}
+                SET {set}
               </div>
 
-              {/* ✅ 단어 */}
-              <section style={{ marginBottom: 40 }}>
-                {showTargetText && (
-                  <div style={{ fontSize: 20, fontWeight: 700 }}>
-                    {word}
-                  </div>
-                )}
+              {/* 🔥 블럭 렌더 */}
+              {setBlocks.map((block, idx) => {
+                const expression = block.expression?.[TARGET_KEY] ?? "";
+                const expressionStudy = block.expression?.[studyLang] ?? "";
 
-                <div style={{ color: "#555", marginBottom: 10 }}>
-                  {wordStudy}
-                </div>
+                const explanation = block.explanation?.[TARGET_KEY] ?? "";
+                const explanationStudy = block.explanation?.[studyLang] ?? "";
 
-                {/* 예문 */}
-                {block.examples?.map((ex, i) => {
-                  const t = ex[TARGET_KEY] ?? "";
-                  const s = ex[studyLang] ?? "";
+                return (
+                  <section key={idx} style={{ marginBottom: 40 }}>
+                    {/* 표현 */}
+                    {showTargetText && (
+                      <div style={{ fontSize: 20, fontWeight: 700 }}>
+                        {expression}
+                      </div>
+                    )}
 
-                  return (
-                    <div key={i} style={{ marginBottom: 10 }}>
-                      {showTargetText && <div>{t}</div>}
-                      <div style={{ color: "#555" }}>{s}</div>
+                    <div style={{ color: "#555", marginBottom: 8 }}>
+                      {expressionStudy}
                     </div>
-                  );
-                })}
-              </section>
+
+                    {/* 별 */}
+                    <div style={{ marginBottom: 8 }}>
+                      {block.frequency_stars}
+                    </div>
+
+                    {/* 설명 */}
+                    {showTargetText && <div>{explanation}</div>}
+                    <div style={{ color: "#666", marginBottom: 12 }}>
+                      {explanationStudy}
+                    </div>
+
+                    {/* 예문 */}
+                    {block.examples?.map((ex, i) => {
+                      const t = ex[TARGET_KEY] ?? "";
+                      const s = ex[studyLang] ?? "";
+
+                      return (
+                        <div key={i} style={{ marginBottom: 10 }}>
+                          {showTargetText && <div>{t}</div>}
+                          <div style={{ color: "#555" }}>{s}</div>
+                        </div>
+                      );
+                    })}
+                  </section>
+                );
+              })}
             </div>
-          );
-        })}
+          ))}
       </div>
     </div>
   );
