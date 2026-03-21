@@ -177,25 +177,51 @@ export default function DemoRealViewer({ level, chapter }: Props) {
             >
               Toggle
             </button>
+            <div style={{ display: "flex", gap: 6 }}>
+              {/* Copy link */}
+              <button
+                onClick={async () => {
+                  if (navigator.share) {
+                    try {
+                      await navigator.share({
+                        title: "Try Demo",
+                        url: window.location.href,
+                      });
+                    } catch { }
+                  } else {
+                    navigator.clipboard.writeText(window.location.href);
+                    alert("Link copied!");
+                  }
+                }}
+                style={buttonStyle(false)}
+              >
+                Copy link
+              </button>
 
-            <button
-              onClick={async () => {
-                if (navigator.share) {
-                  try {
-                    await navigator.share({
-                      title: "Try Demo",
-                      url: window.location.href,
-                    });
-                  } catch { }
-                } else {
-                  navigator.clipboard.writeText(window.location.href);
-                  alert("Link copied!");
-                }
-              }}
-              style={buttonStyle(false)}
-            >
-              Copy link
-            </button>
+              {/* Get Started (강조) */}
+              <Link href="/app">
+                <button
+                  type="button"
+                  style={{
+                    ...buttonStyle(false),
+                    background: "#111",
+                    color: "#fff",
+                  }}
+                >
+                  Get Started
+                </button>
+              </Link>
+              {/* 안내 문구 */}
+              <span
+                style={{
+                  fontSize: 12,
+                  color: "#666",
+                  lineHeight: 1.2,
+                }}
+              >
+                To continue to the next chapter, sign up by clicking Get Started.
+              </span>
+            </div>
           </div>
 
           <Link href="/demo" style={buttonStyle(false)}>

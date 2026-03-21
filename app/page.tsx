@@ -86,9 +86,7 @@ export default function LandingPage() {
           <div style={logoWrap}>
             <Logo />
           </div>
-          <span style={rightArea} className="desktop-email">
-            General inquiries : manylangs.help@gmail.com
-          </span>
+
           {/* Desktop Nav */}
           <nav style={navStyle} className="desktop-nav">
             <a href="#features" style={navItem}>
@@ -106,11 +104,18 @@ export default function LandingPage() {
           </nav>
 
           {/* Right Area */}
+          {/* Right Area */}
           <div style={rightWrap}>
-            {/* <span style={rightArea} className="desktop-email">
-              General inquiries : manylangs.help@gmail.com
-            </span> */}
+            {/* Copy link 버튼 추가 */}
+            <button
+              type="button"
+              onClick={handleShare}
+              style={btnSecondary}
+            >
+              Copy link
+            </button>
 
+            {/* 햄버거 */}
             <button
               type="button"
               onClick={() => setMenuOpen((prev) => !prev)}
@@ -138,7 +143,6 @@ export default function LandingPage() {
             <a href="#pricing" style={mobileMenuLink} onClick={closeMenu}>
               Pricing
             </a>
-            <div style={mobileEmail}>manylangs.help@gmail.com</div>
           </div>
         )}
       </header>
@@ -179,9 +183,6 @@ export default function LandingPage() {
             IOS
           </button>
 
-          <button type="button" onClick={handleShare} style={btnSecondary}>
-            Copy link
-          </button>
         </div>
 
         <div style={keywordText}>

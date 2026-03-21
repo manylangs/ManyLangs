@@ -211,24 +211,50 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
               Toggle
             </button>
 
-            <button
-              onClick={async () => {
-                if (navigator.share) {
-                  try {
-                    await navigator.share({
-                      title: "Try Demo",
-                      url: window.location.href,
-                    });
-                  } catch { }
-                } else {
-                  navigator.clipboard.writeText(window.location.href);
-                  alert("Link copied!");
-                }
-              }}
-              style={buttonStyle(false)}
-            >
-              Copy link
-            </button>
+            <div style={{ display: "flex", gap: 6 }}>
+              {/* Copy link */}
+              <button
+                onClick={async () => {
+                  if (navigator.share) {
+                    try {
+                      await navigator.share({
+                        title: "Try Demo",
+                        url: window.location.href,
+                      });
+                    } catch { }
+                  } else {
+                    navigator.clipboard.writeText(window.location.href);
+                    alert("Link copied!");
+                  }
+                }}
+                style={buttonStyle(false)}
+              >
+                Copy link
+              </button>
+
+              {/* Get Started (강조) */}
+              <Link href="/app">
+                <button
+                  type="button"
+                  style={{
+                    ...buttonStyle(false),
+                    background: "#111",
+                    color: "#fff",
+                  }}
+                >
+                  Get Started
+                </button>
+              </Link>
+              <span
+                style={{
+                  fontSize: 12,
+                  color: "#666",
+                  lineHeight: 1.2,
+                }}
+              >
+                To continue to the next chapter, sign up by clicking Get Started.
+              </span>
+            </div>
           </div>
 
           {/* RIGHT */}

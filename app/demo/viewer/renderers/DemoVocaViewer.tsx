@@ -210,6 +210,28 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
             >
               Copy link
             </button>
+            <Link href="/app">
+              <button
+                type="button"
+                style={{
+                  ...buttonStyle(false),
+                  background: "#111",
+                  color: "#fff",
+                }}
+              >
+                Get Started
+              </button>
+            </Link>
+            {/* 안내 문구 */}
+            <span
+              style={{
+                fontSize: 12,
+                color: "#666",
+                lineHeight: 1.2,
+              }}
+            >
+              To continue to the next chapter, sign up by clicking Get Started.
+            </span>
           </div>
 
           <Link href="/demo" style={buttonStyle(false)}>
