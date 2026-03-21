@@ -2,7 +2,7 @@
 "use client";
 
 import Link from "next/link";
-import Logo from "@/app/components/Logo";
+import LogoBig from "@/app/components/LogoBig";
 import React, { useState, useEffect } from "react";
 import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
@@ -162,7 +162,11 @@ export default function LandingPage() {
       <section style={heroSection}>
         <p style={heroSub}>Structured language learning for real users</p>
 
-        <h1 style={heroTitle}>ManyLangs</h1>
+        <div style={titleRow}>
+          <div style={heroLogoWrap}>
+            <LogoBig />
+          </div>
+        </div>
 
         <p style={heroDesc}>
           Learn languages through structured textbooks.
@@ -189,7 +193,6 @@ export default function LandingPage() {
           Grammar • Conversation • Vocabulary • Idioms • Real-life situations
         </div>
       </section>
-
       {/* Features */}
       <section id="features" style={sectionWrap}>
         <h2 style={sectionTitle}>Features</h2>
@@ -450,7 +453,28 @@ const mobileEmail: React.CSSProperties = {
 };
 
 /* ================= Hero ================= */
+const titleRow: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: 16,
+  marginBottom: 20,
+};
 
+const heroLogoWrap: React.CSSProperties = {
+  width: 64,
+  height: 64,
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+};
+
+const heroTitle: React.CSSProperties = {
+  fontSize: "clamp(42px, 7vw, 68px)", // 🔥 더 크게
+  fontWeight: 800,
+  lineHeight: 1,
+  margin: 0,
+};
 const heroSection: React.CSSProperties = {
   maxWidth: 720,
   margin: "0 auto",
@@ -464,12 +488,6 @@ const heroSub: React.CSSProperties = {
   marginBottom: 10,
 };
 
-const heroTitle: React.CSSProperties = {
-  fontSize: "clamp(28px, 6vw, 44px)",
-  fontWeight: 700,
-  lineHeight: 1.1,
-  margin: "0 0 14px",
-};
 
 const heroDesc: React.CSSProperties = {
   fontSize: "clamp(14px, 2.5vw, 16px)",
