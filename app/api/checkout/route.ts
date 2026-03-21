@@ -12,10 +12,8 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string);
 
 const serverTimestamp = admin.firestore.FieldValue.serverTimestamp;
 
+/* ✅ amount만 필요 */
 type Body = {
-  lang: string;
-  series: string;
-  level: string;
   amount: "3" | "5" | "20" | "50" | "100";
 };
 
@@ -36,7 +34,6 @@ function getPriceId(amount: Body["amount"]) {
 }
 
 function getBaseUrl(req: Request) {
-  // 운영 환경에서는 APP_URL 사용 권장
   if (process.env.APP_URL) return process.env.APP_URL;
 
   const url = new URL(req.url);
@@ -52,7 +49,7 @@ function getBaseUrl(req: Request) {
 
 export async function POST(req: Request) {
   /* =======================
-     1️⃣ 서버 인증 (절대 클라 userId 신뢰 X)
+     1️⃣ 서버 인증
   ======================== */
   const { userId } = await auth();
 
@@ -77,54 +74,15 @@ export async function POST(req: Request) {
     );
   }
 
-  // let { lang, series, level, amount } = body;
+  const { amount } = body;
 
-  // if (!lang || !series || !amount) {
-  //   return NextResponse.json(
-  //     { error: "missing required fields" },
-  //     { status: 400 }
-  //   );
-  // }
-  //select book 카드결제 위해 아래처럼 변경
-  let { lang, series, level, amount } = body;
-
-  // ✅ 결제는 amount만 필요
   if (!amount) {
     return NextResponse.json(
       { error: "missing required fields" },
       { status: 400 }
     );
   }
-  // ✅ 서버 강제 보정 (클라이언트 조작 방지)
-  if (series === "voca" || series === "idiom") {
-    level = "all";
-  }
 
-  // ✅ 레벨 필요한 시리즈만 검증
-  // const requiresLevel =
-  //   series === "grammar" ||
-  //   series === "conversation" ||
-  //   series === "real";
-
-  // if (requiresLevel && !level) {
-  //   return NextResponse.json(
-  //     { error: "level required" },
-  //     { status: 400 }
-  //   );
-  // }
-  //select book 카드결제 위해 아래처럼 변경
-  const requiresLevel =
-    series === "grammar" ||
-    series === "conversation" ||
-    series === "real";
-
-  // ✅ series 없을 수도 있으므로 보호
-  if (series && requiresLevel && !level) {
-    return NextResponse.json(
-      { error: "level required" },
-      { status: 400 }
-    );
-  }
   if (!["3", "5", "20", "50", "100"].includes(amount)) {
     return NextResponse.json(
       { error: "invalid amount" },
@@ -151,47 +109,29 @@ export async function POST(req: Request) {
       success_url: successUrl,
       cancel_url: cancelUrl,
       client_reference_id: userId,
-      // metadata: {
-      //   userId,      // 서버 인증 값
-      //   lang,
-      //   series,
-      //   level,
-      //   amount,
-      // },
-      //select book 카드결제 위해 아래처럼 변경
+
+      /* ✅ 핵심: metadata 최소화 */
       metadata: {
         userId,
         amount,
-        lang: lang || "",
-        series: series || "",
-        level: level || "",
       },
+
       line_items: [
         {
-          price: priceId,   // 서버 매핑 값
+          price: priceId,
           quantity: 1,
         },
       ],
     });
 
     /* =======================
-       4️⃣ checkoutSessions 선기록
+       4️⃣ checkoutSessions 기록
     ======================== */
     await db.collection("checkoutSessions")
       .doc(session.id)
       .set({
-        // sessionId: session.id,
-        // userId,
-        // lang,
-        // series,
-        // level,
-        // amount,
-        //select book 카드결제 위해 아래처럼 변경
         sessionId: session.id,
         userId,
-        lang: lang || "",
-        series: series || "",
-        level: level || "",
         amount,
         priceId,
         status: "created",

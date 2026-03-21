@@ -1,12 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { useUser, useClerk, useReverification } from "@clerk/nextjs";
+import { useUser, useReverification } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 
 export default function DeleteAccountPage() {
   const { user } = useUser();
-  const { signOut } = useClerk();
   const router = useRouter();
 
   const [loading, setLoading] = useState(false);
@@ -14,8 +13,10 @@ export default function DeleteAccountPage() {
   const performDelete = useReverification(async () => {
     if (!user) throw new Error("No user");
 
+    // ✅ 계정 삭제 (세션도 자동 종료됨)
     await user.delete();
-    await signOut();
+
+    // ✅ signOut 제거 (중요)
     router.replace("/");
   });
 
@@ -23,7 +24,7 @@ export default function DeleteAccountPage() {
     if (!user) return;
 
     const ok = confirm(
-      "Are you sure you want to delete your account?\nThis action cannot be undone."
+      "Delete your account permanently?\n\nAll textbooks and coupons will be lost and cannot be recovered."
     );
 
     if (!ok) return;
@@ -81,8 +82,9 @@ export default function DeleteAccountPage() {
             lineHeight: 1.6,
           }}
         >
-          Deleting your account will permanently remove your access
-          to all textbooks and coupons.
+          Your account and all associated access will be permanently lost.
+          <br />
+          Any unused coupons or purchased textbooks will not be recoverable.
           <br />
           <strong style={{ color: "#111" }}>
             This action cannot be undone.

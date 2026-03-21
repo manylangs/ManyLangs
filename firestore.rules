@@ -1,0 +1,49 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // 기본 차단
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // 사용자 문서
+    match /users/{userId} {
+      allow read, write: if request.auth != null
+        && request.auth.uid == userId;
+    }
+
+    // 라이선스 (Viewer 기준)
+    match /licenses/{userId}/items/{productId} {
+      allow read: if request.auth != null
+        && request.auth.uid == userId;
+      allow write: if false; // 서버 전용
+    }
+
+    // 🔓 실제 발급/보관 쿠폰 컬렉션 (수정)
+    match /coupons/{couponId} {
+      allow read: if request.auth != null; // ✅ 공유 쿠폰 조회 허용
+      allow write: if false;               // 서버 전용 유지
+    }
+
+    // Stripe 구독 미러
+    match /subscriptions/{subscriptionId} {
+      allow read, write: if false;
+    }
+
+    // 월 쿠폰 풀
+    match /coupon_pools/{poolId} {
+      allow read, write: if false;
+    }
+
+    // 쿠폰 로그
+    match /coupon_logs/{logId} {
+      allow read, write: if false;
+    }
+
+    // Stripe webhook idempotency
+    match /stripeEvents/{eventId} {
+      allow read, write: if false;
+    }
+  }
+}

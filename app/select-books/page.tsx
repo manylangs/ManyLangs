@@ -1,4 +1,4 @@
-// app/select-books/page.tsx
+// app/select-books/page.tsx 커밋으로 복구한 예전 로직
 "use client";
 
 import { useEffect, useState } from "react";
@@ -207,13 +207,12 @@ export default function SelectBooksPage() {
     }
 
     localStorage.setItem(key, userId);
-  }, [isLoaded, isSignedIn, userId]);
+  }, [isLoaded, userId]);
 
   /** 1) 초기 로드 + checkout success 처리 + 서버 coupon sync */
   useEffect(() => {
     if (!isLoaded) return;
-
-    if (!isSignedIn) {
+    if (!userId) {
       router.replace("/login");
       return;
     }
@@ -307,10 +306,11 @@ export default function SelectBooksPage() {
     })();
   }, [isLoaded, userId, router]);
 
+  /** 2) ⏱ 자동 제거 타이머 */
   /** 2) ⏱ 자동 제거 타이머 — 안정화 버전 */
   useEffect(() => {
-    if (!isLoaded) return;
-    if (!isSignedIn) return;
+    if (!isLoaded || !userId) return;
+
     const tick = async () => {
       try {
         const res = await fetch("/api/licenses/list", {
@@ -358,8 +358,7 @@ export default function SelectBooksPage() {
 
   /** 3) 라이선스 기반 usedBook 필드 보강 */
   useEffect(() => {
-    if (!isLoaded) return;
-    if (!isSignedIn) return;
+    if (!isLoaded || !userId) return;
     if (library.length === 0 || couponBox.length === 0) return;
 
     const byCode = new Map<string, LibraryItem>();
@@ -387,8 +386,7 @@ export default function SelectBooksPage() {
       return next;
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isLoaded, isSignedIn, library]);
+  }, [isLoaded, userId, library]);
 
   useEffect(() => {
     setCouponPage(1);
@@ -396,7 +394,7 @@ export default function SelectBooksPage() {
 
   // ✅ Hook 끝난 뒤에만 early return
   if (!isLoaded) return null;
-  if (!isSignedIn) return null;
+  if (!userId) return null;
 
   async function activateCoupon() {
     if (loading) return;
@@ -474,57 +472,37 @@ export default function SelectBooksPage() {
   // ✅ 여기만 변경: startPayment에 try/catch + json safe + 로딩가드
   async function startPayment() {
     if (loading) return;
-    setError("");
+
     setLoading(true);
+    setError("");
 
-    if (!isLoaded) {
-      setLoading(false);
-      return;
-    }
-
-    if (!isSignedIn) {
-      setError("Please login first.");
-      setLoading(false);
-      return;
-    }
-    //이부분은 책 선택없이 카드결제 가능하도록한 최소 수정임 이부분만 주석처리하고 손안댐
-    // if (!book || (SERIES_CONFIG[book].hasLevel && !level)) {
-    //   setError("Please select textbook and level.");
-    //   setLoading(false);
-    //   return;
-    // }
-
-    // const finalLevel =
-    //   SERIES_CONFIG[book].hasLevel ? level : "all";
-    const finalLevel =
-      book && SERIES_CONFIG[book]?.hasLevel ? level : "all";
     try {
       const res = await fetch("/api/checkout", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({
           userId,
-          lang: targetLang,
-          series: book,
-          level: finalLevel,
-          amount: payAmount, // ✅ 선택한 금액
+          amount: payAmount, // ✅ 이것만 남김
         }),
       });
 
-      const data = (await safeJson(res)) ?? {};
+      const data = await safeJson(res);
 
       if (!res.ok) {
-        setError((data as any).error || "Checkout failed.");
+        setError(data?.error || "Checkout failed.");
         return;
       }
 
-      if ((data as any)?.url) {
-        window.location.href = (data as any).url;
+      if (data?.url) {
+        window.location.href = data.url;
       } else {
         setError("Checkout URL missing.");
       }
+
     } catch {
-      setError("Network error. Please try again.");
+      setError("Network error.");
     } finally {
       setLoading(false);
     }
@@ -684,6 +662,7 @@ export default function SelectBooksPage() {
         </div>
       )}
 
+
       {/* ✅ 반응형 레이아웃 wrapper (여기만 변경) */}
       <div className="mx-auto w-full max-w-5xl pt-6">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -718,7 +697,7 @@ export default function SelectBooksPage() {
               <CardHeader>
                 <CardTitle>My Library</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4 p-5">
+              <CardContent className="space-y-3">
                 {libraryTotal > 0 && (
                   <div className="flex items-center justify-between rounded border px-3 py-2 text-sm">
                     <div>
@@ -847,33 +826,24 @@ export default function SelectBooksPage() {
                   return (
                     <div
                       key={`${c.code}-${idx}`}
-                      className="flex items-start justify-between rounded border px-3 py-3 text-sm"
+                      className="flex justify-between rounded border px-3 py-2 text-sm"
                     >
-                      {/* LEFT */}
-                      <div>
-                        <button
-                          type="button"
-                          onClick={() => copyToClipboard(c.code)}
-                          className="font-medium hover:underline"
-                        >
-                          {c.code}
-                        </button>
+                      <button
+                        type="button"
+                        onClick={() => copyToClipboard(c.code)}
+                        className="text-left hover:underline"
+                        title="Click to copy"
+                      >
+                        {c.code}
+                      </button>
 
-                        {c.used && (
-                          <div className="text-xs text-gray-500 mt-1">
-                            {status.text}
-                            {usedAt ? ` · ${usedAt}` : ""}
-                            {usedBook ? ` · ${usedBook}` : ""}
-                          </div>
-                        )}
+                      <div style={{ color: status.color, textAlign: "right" }}>
+                        {status.text}
+                        {c.used && usedAt ? ` · ${usedAt}` : ""}
+                        {c.used && usedBook ? (
+                          <div style={{ fontSize: 11, color: "#777" }}>{usedBook}</div>
+                        ) : null}
                       </div>
-
-                      {/* RIGHT */}
-                      {!c.used && (
-                        <div className="text-xs text-green-600 mt-1">
-                          Available
-                        </div>
-                      )}
                     </div>
                   );
                 })}
@@ -888,7 +858,10 @@ export default function SelectBooksPage() {
               <CardHeader>
                 <CardTitle>Add a textbook</CardTitle>
               </CardHeader>
+
               <CardContent className="space-y-4">
+
+                {/* textbook 선택 */}
                 <select
                   value={book}
                   onChange={(e) => {
@@ -896,7 +869,7 @@ export default function SelectBooksPage() {
                     setBook(next);
                     setLevel(SERIES_CONFIG[next]?.hasLevel ? "a1" : "");
                   }}
-                  className="block w-full rounded border px-2 py-1"
+                  className="block w-full rounded border px-3 py-2"
                 >
                   <option value="">Select textbook</option>
                   {Object.entries(SERIES_CONFIG).map(([k, v]) => (
@@ -906,11 +879,12 @@ export default function SelectBooksPage() {
                   ))}
                 </select>
 
+                {/* level */}
                 {book && SERIES_CONFIG[book].hasLevel && (
                   <select
                     value={level}
                     onChange={(e) => setLevel(e.target.value)}
-                    className="block w-full rounded border px-2 py-1"
+                    className="block w-full rounded border px-3 py-2"
                   >
                     {LEVELS.map((l) => (
                       <option key={l} value={l.toLowerCase()}>
@@ -920,25 +894,28 @@ export default function SelectBooksPage() {
                   </select>
                 )}
 
+                {/* coupon input */}
                 <input
                   value={coupon}
                   onChange={(e) => setCoupon(e.target.value)}
                   placeholder="Coupon code"
-                  className="block w-full rounded border px-2 py-1"
+                  className="block w-full rounded border px-3 py-2"
                 />
 
-                <p className="text-xs text-gray-500">
-                  Coupons can be shared with others. However, ManyLangs cannot individually
-                  track whether a shared coupon has been used.
+                {/* 설명 (위치 유지 but 더 명확하게) */}
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  Coupons can be shared with others. However, ManyLangs cannot individually track
+                  whether a shared coupon has been used.
                 </p>
 
-                {/* ✅ 결제 금액 선택 + 쿠폰 수 설명 */}
+                {/* plan 선택 */}
                 <div className="space-y-2">
                   <div className="text-sm font-medium">Choose a plan</div>
+
                   <select
                     value={payAmount}
                     onChange={(e) => setPayAmount(e.target.value as Amount)}
-                    className="block w-full rounded border px-2 py-1"
+                    className="block w-full rounded border px-3 py-2"
                   >
                     {PAYMENT_OPTIONS.map((p) => (
                       <option key={p.amount} value={p.amount}>
@@ -947,7 +924,8 @@ export default function SelectBooksPage() {
                     ))}
                   </select>
 
-                  <div className="space-y-1 text-xs text-gray-500">
+                  {/* 리스트 스타일 개선 */}
+                  <div className="text-xs text-gray-500 space-y-1">
                     {PAYMENT_OPTIONS.map((p) => (
                       <div key={p.amount}>
                         {p.label} → {p.coupons} coupons
@@ -958,24 +936,28 @@ export default function SelectBooksPage() {
 
                 {error && <p className="text-sm text-red-600">{error}</p>}
 
-                <Button
-                  onClick={activateCoupon}
-                  disabled={loading}
-                  className="w-full bg-black text-white hover:bg-black/90"
-                >
-                  {loading ? "Processing..." : "Add this series with coupons"}
-                </Button>
+                {/* 🔥 버튼 2개 (스샷 스타일 핵심) */}
+                <div className="space-y-2 pt-2">
 
-                <Button
-                  onClick={startPayment}
-                  disabled={loading}
-                  className="w-full bg-black text-white hover:bg-black/90"
-                >
-                  Buy coupons using your card
-                </Button>
+                  <button
+                    onClick={activateCoupon}
+                    disabled={loading}
+                    className="w-full rounded bg-black text-white py-2 text-sm font-medium"
+                  >
+                    {loading ? "Processing..." : "Add this series with coupons"}
+                  </button>
+
+                  <button
+                    onClick={startPayment}
+                    disabled={loading}
+                    className="w-full rounded bg-black text-white py-2 text-sm font-medium"
+                  >
+                    Buy coupons using your card
+                  </button>
+
+                </div>
               </CardContent>
             </Card>
-            {/* Refund */}
             {/* Refund */}
             <Card>
 
@@ -983,7 +965,7 @@ export default function SelectBooksPage() {
                 <CardTitle>Refund</CardTitle>
               </CardHeader>
 
-              <CardContent className="space-y-4 p-5">
+              <CardContent className="space-y-3">
 
                 <Button
                   variant="outline"
