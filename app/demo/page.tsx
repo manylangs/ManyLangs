@@ -73,8 +73,6 @@ export default function DemoPage() {
                                 ← Back
                             </button>
                         </Link>
-
-                        <h1 style={title}>Try Demo</h1>
                     </div>
 
                     <div style={headerActions}>
@@ -94,7 +92,7 @@ export default function DemoPage() {
                             }}
                             style={btnSecondary}
                         >
-                            Copy link
+                            Copy
                         </button>
 
                         <Link href="/app" style={linkReset}>
@@ -130,7 +128,21 @@ export default function DemoPage() {
 
                         <div style={grid}>
                             {section.items.map((item) => (
-                                <Link key={item.href} href={item.href} style={card}>
+                                <Link
+                                    key={item.href}
+                                    href={item.href}
+                                    style={card}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.transform = "translateY(-2px)";
+                                        e.currentTarget.style.boxShadow =
+                                            "0 6px 16px rgba(0,0,0,0.08)";
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.transform = "none";
+                                        e.currentTarget.style.boxShadow =
+                                            "0 1px 2px rgba(0,0,0,0.04)";
+                                    }}
+                                >
                                     <div>
                                         <h3 style={cardTitle}>{item.title}</h3>
                                         <p style={cardMeta}>Beginner • A1</p>
@@ -175,14 +187,6 @@ const headerRow: CSSProperties = {
 const headerLeft: CSSProperties = {
     display: "flex",
     alignItems: "center",
-    gap: 10,
-    flexWrap: "wrap",
-};
-
-const title: CSSProperties = {
-    fontSize: "clamp(24px, 5vw, 32px)",
-    fontWeight: 700,
-    margin: 0,
 };
 
 const headerActions: CSSProperties = {
@@ -191,7 +195,7 @@ const headerActions: CSSProperties = {
     gap: 8,
 };
 
-/* INFO BOX */
+/* INFO */
 const infoBox: CSSProperties = {
     marginBottom: 24,
 };
@@ -199,14 +203,13 @@ const infoBox: CSSProperties = {
 const infoText: CSSProperties = {
     fontSize: "clamp(14px, 3.5vw, 16px)",
     color: "#555",
-    marginTop: 0,
     marginBottom: 6,
     lineHeight: 1.6,
 };
 
 /* SECTION */
 const sectionWrap: CSSProperties = {
-    marginBottom: 28,
+    marginBottom: 32, // 🔥 spacing 개선
 };
 
 const sectionHeader: CSSProperties = {
@@ -230,7 +233,6 @@ const sectionDesc: CSSProperties = {
     fontSize: "clamp(13px, 3.5vw, 14px)",
     color: "#777",
     marginTop: 4,
-    marginBottom: 0,
 };
 
 /* GRID */
@@ -260,21 +262,18 @@ const card: CSSProperties = {
 const cardTitle: CSSProperties = {
     fontSize: 16,
     fontWeight: 600,
-    marginTop: 0,
     marginBottom: 6,
 };
 
 const cardMeta: CSSProperties = {
     fontSize: 12,
     color: "#999",
-    margin: 0,
 };
 
 const cardHint: CSSProperties = {
     fontSize: 13,
     color: "#666",
     marginTop: 12,
-    marginBottom: 0,
 };
 
 /* BUTTONS */
@@ -290,22 +289,22 @@ const btnPrimary: CSSProperties = {
 };
 
 const btnSecondary: CSSProperties = {
-    padding: "8px 14px",
+    padding: "8px 12px",
     fontSize: 13,
     borderRadius: 8,
-    border: "1px solid #ddd",
+    border: "1px solid #eee",
     background: "#fff",
     cursor: "pointer",
 };
 
 const btnBack: CSSProperties = {
-    padding: "8px 12px",
-    fontSize: 14,
-    borderRadius: 10,
-    border: "1px solid #ddd",
+    padding: "6px 10px", // 🔥 더 가볍게
+    fontSize: 13,
+    borderRadius: 8,
+    border: "1px solid #eee",
     background: "#fff",
+    color: "#555",
     cursor: "pointer",
-    fontWeight: 500,
 };
 
 /* LINK */

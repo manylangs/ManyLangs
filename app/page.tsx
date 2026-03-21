@@ -83,52 +83,63 @@ export default function LandingPage() {
       {/* Header */}
       <header style={headerStyle}>
         <div style={headerInner}>
+
+          {/* 로고 (현재 숨김) */}
           <div style={logoWrap}>
-            <Logo />
+            {/* <Logo /> */}
           </div>
 
           {/* Desktop Nav */}
           <nav style={navStyle} className="desktop-nav">
-            <a href="#features" style={navItem}>
-              Features
-            </a>
-            <a href="#usecases" style={navItem}>
-              Use Cases
-            </a>
-            <a href="#how" style={navItem}>
-              How it works
-            </a>
-            <a href="#pricing" style={navItem}>
-              Pricing
-            </a>
+            <a href="#features" style={navItem}>Features</a>
+            <a href="#usecases" style={navItem}>Use Cases</a>
+            <a href="#how" style={navItem}>How it works</a>
+            <a href="#pricing" style={navItem}>Pricing</a>
           </nav>
 
           {/* Right Area */}
-          {/* Right Area */}
           <div style={rightWrap}>
-            {/* Copy link 버튼 추가 */}
+
+            {/* Android (Primary 느낌) */}
+            <button
+              type="button"
+              onClick={handleAndroidInstall}
+              style={btnInstallPrimary}
+            >
+              Android
+            </button>
+
+            {/* iOS (Subtle) */}
+            <button
+              type="button"
+              onClick={handleIOSInstall}
+              style={btnInstallSecondary}
+            >
+              iOS
+            </button>
+
+            {/* Copy link (Ghost) */}
             <button
               type="button"
               onClick={handleShare}
-              style={btnSecondary}
+              style={btnGhost}
             >
               Copy link
             </button>
-
             {/* 햄버거 */}
             <button
               type="button"
               onClick={() => setMenuOpen((prev) => !prev)}
               style={hamburger}
               className="mobile-only"
-              aria-label="Open menu"
-              aria-expanded={menuOpen}
             >
               ☰
             </button>
           </div>
+
         </div>
 
+        {/* Mobile Menu (header 밖이 아니라 header 안, but headerInner 밖) */}
         {menuOpen && (
           <div style={mobileMenu}>
             <a href="#features" style={mobileMenuLink} onClick={closeMenu}>
@@ -172,17 +183,6 @@ export default function LandingPage() {
               Get Started
             </button>
           </Link>
-
-          {/* 🔥 Android 버튼 */}
-          <button type="button" onClick={handleAndroidInstall} style={btnSecondary}>
-            Android
-          </button>
-
-          {/* 🔥 iOS 버튼 */}
-          <button type="button" onClick={handleIOSInstall} style={btnSecondary}>
-            IOS
-          </button>
-
         </div>
 
         <div style={keywordText}>
@@ -654,3 +654,34 @@ const footerLink: React.CSSProperties = {
   textDecoration: "none",
 };
 
+const btnInstallPrimary: React.CSSProperties = {
+  padding: "8px 14px",
+  fontSize: 13,
+  borderRadius: 999, // 🔥 pill 느낌
+  background: "#111",
+  color: "#fff",
+  border: "none",
+  fontWeight: 600,
+  cursor: "pointer",
+};
+
+const btnInstallSecondary: React.CSSProperties = {
+  padding: "8px 12px",
+  fontSize: 13,
+  borderRadius: 999,
+  background: "#f5f5f5",
+  color: "#333",
+  border: "1px solid #e5e5e5",
+  fontWeight: 500,
+  cursor: "pointer",
+};
+
+const btnGhost: React.CSSProperties = {
+  padding: "8px 10px",
+  fontSize: 13,
+  borderRadius: 999,
+  background: "transparent",
+  color: "#666",
+  border: "none",
+  cursor: "pointer",
+};

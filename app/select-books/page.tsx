@@ -661,36 +661,23 @@ export default function SelectBooksPage() {
   return (
     <main className="px-4 py-8">
       {isUserLoaded && isSignedIn && (
-        <div className="mx-auto flex max-w-5xl flex-col gap-2 px-4 py-2 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mx-auto flex max-w-5xl items-center justify-between gap-2 px-4 py-2">
 
           {/* LEFT */}
           <Button
             variant="outline"
             size="sm"
             onClick={() => router.push("/app")}
-            className="h-8 w-fit"
+            className="h-8 shrink-0"
           >
             Home
           </Button>
 
-          {/* CENTER */}
-          <p className="text-xs text-gray-500 text-center sm:text-left">
-            Visit the website to learn about how to use ManyLangs and its features.&nbsp;
-            <a
-              href="https://www.manylangs.studio"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline"
-            >
-              www.manylangs.studio
-            </a>
-          </p>
-
           {/* RIGHT */}
-          <div className="text-xs text-gray-500 text-center sm:text-right">
-            <span className="hidden sm:inline">General inquiries :&nbsp;</span>
-            <a className="underline" href="mailto:manylangs.help@gmail.com">
-              manylangs.help@gmail.com
+          <div className="text-xs text-gray-500 whitespace-nowrap text-right">
+            Contact:{" "}
+            <a className="underline font-medium" href="mailto:manylangs.help@gmail.com">
+              ✉ manylangs.help@gmail.com
             </a>
           </div>
 
@@ -731,7 +718,7 @@ export default function SelectBooksPage() {
               <CardHeader>
                 <CardTitle>My Library</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-3">
+              <CardContent className="space-y-4 p-5">
                 {libraryTotal > 0 && (
                   <div className="flex items-center justify-between rounded border px-3 py-2 text-sm">
                     <div>
@@ -860,24 +847,33 @@ export default function SelectBooksPage() {
                   return (
                     <div
                       key={`${c.code}-${idx}`}
-                      className="flex justify-between rounded border px-3 py-2 text-sm"
+                      className="flex items-start justify-between rounded border px-3 py-3 text-sm"
                     >
-                      <button
-                        type="button"
-                        onClick={() => copyToClipboard(c.code)}
-                        className="text-left hover:underline"
-                        title="Click to copy"
-                      >
-                        {c.code}
-                      </button>
+                      {/* LEFT */}
+                      <div>
+                        <button
+                          type="button"
+                          onClick={() => copyToClipboard(c.code)}
+                          className="font-medium hover:underline"
+                        >
+                          {c.code}
+                        </button>
 
-                      <div style={{ color: status.color, textAlign: "right" }}>
-                        {status.text}
-                        {c.used && usedAt ? ` · ${usedAt}` : ""}
-                        {c.used && usedBook ? (
-                          <div style={{ fontSize: 11, color: "#777" }}>{usedBook}</div>
-                        ) : null}
+                        {c.used && (
+                          <div className="text-xs text-gray-500 mt-1">
+                            {status.text}
+                            {usedAt ? ` · ${usedAt}` : ""}
+                            {usedBook ? ` · ${usedBook}` : ""}
+                          </div>
+                        )}
                       </div>
+
+                      {/* RIGHT */}
+                      {!c.used && (
+                        <div className="text-xs text-green-600 mt-1">
+                          Available
+                        </div>
+                      )}
                     </div>
                   );
                 })}
@@ -962,15 +958,18 @@ export default function SelectBooksPage() {
 
                 {error && <p className="text-sm text-red-600">{error}</p>}
 
-                <Button onClick={activateCoupon} disabled={loading} className="w-full">
+                <Button
+                  onClick={activateCoupon}
+                  disabled={loading}
+                  className="w-full bg-black text-white hover:bg-black/90"
+                >
                   {loading ? "Processing..." : "Add this series with coupons"}
                 </Button>
 
                 <Button
-                  variant="outline"
                   onClick={startPayment}
-                  className="w-full"
                   disabled={loading}
+                  className="w-full bg-black text-white hover:bg-black/90"
                 >
                   Buy coupons using your card
                 </Button>
@@ -984,7 +983,7 @@ export default function SelectBooksPage() {
                 <CardTitle>Refund</CardTitle>
               </CardHeader>
 
-              <CardContent className="space-y-3">
+              <CardContent className="space-y-4 p-5">
 
                 <Button
                   variant="outline"

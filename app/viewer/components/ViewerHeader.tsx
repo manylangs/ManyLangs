@@ -59,7 +59,7 @@ export default function ViewerHeader() {
             flex: 1,
           }}
         >
-          For typos, phrasing corrections, or general inquiries : manylangs.help@gmail.com
+          Contact: ✉ manylangs.help@gmail.com
         </div>
 
         {/* Right */}

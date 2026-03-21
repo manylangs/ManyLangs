@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 
-/* ❗️임시: 나중에 IdiomAudioController로 교체 */
 import IdiomAudioController from "@/components/audio/controllers/IdiomAudioController";
 
 type StudyLang = "en" | "es" | "fr" | "pt";
@@ -31,7 +30,13 @@ type Props = {
 
 type Status = "loading" | "ready" | "error";
 
-/* ✅ 버튼 스타일 (컨버세이션 그대로 복사) */
+/* 🔥 Real 스타일 */
+const containerStyle: React.CSSProperties = {
+  maxWidth: 1100,
+  margin: "0 auto",
+  padding: "0 clamp(12px, 4vw, 24px)",
+};
+
 const buttonStyle = (active: boolean): React.CSSProperties => ({
   padding: "6px 10px",
   borderRadius: 6,
@@ -43,11 +48,10 @@ const buttonStyle = (active: boolean): React.CSSProperties => ({
   whiteSpace: "nowrap",
 });
 
-/* ✅ 컨테이너 */
-const containerStyle: React.CSSProperties = {
-  maxWidth: 900,
-  margin: "0 auto",
-  padding: "0 clamp(12px, 4vw, 24px)",
+const sentenceStyle: React.CSSProperties = {
+  borderRadius: 6,
+  padding: "4px 6px",
+  lineHeight: 1.7,
 };
 
 export default function DemoIdiomViewer({ level, chapter }: Props) {
@@ -59,42 +63,42 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
   const [groupedBlocks, setGroupedBlocks] = useState<Record<number, Block[]>>({});
   const [status, setStatus] = useState<Status>("loading");
 
-  /* 🔥 중요: idiom은 target 고정 */
   const TARGET_KEY = "target";
-
-  /* guide 그대로 복사 */
 
   const guideTexts: Record<StudyLang, string[]> = {
     en: [
-      "1. You can change the study language using the buttons above.",
-      "2. You can move to the next set using the <> buttons below the audio.",
-      "3. Press Toggle Target to hide the target language and practice translating.",
-      "4. You are currently viewing A1 Chapter 1. You can choose levels A1, A2, B1, B2, C1, C2.",
-      "5. As the level increases, situations, sentence length, vocabulary, and expressions become more advanced.",
+      "1. To continue to the next chapter, sign up by clicking Get Started.",
+      "2. You can change the study language using the buttons above.",
+      "3. You can move to the next set using the <> buttons below the audio.",
+      "4. Press Toggle Target to hide the target language and practice translating.",
+      "5. You are currently viewing A1 Chapter 1. You can choose levels A1, A2, B1, B2, C1, C2.",
+      "6. As the level increases, situations, sentence length, vocabulary, and expressions become more advanced.",
     ],
     es: [
-      "1. Puedes cambiar el idioma de estudio usando los botones de arriba.",
-      "2. Puedes moverte al siguiente set usando los botones <> debajo del audio.",
-      "3. Presiona Toggle Target para ocultar el idioma objetivo y practicar la traducción.",
-      "4. Actualmente estás viendo A1 Chapter 1. Puedes elegir niveles A1, A2, B1, B2, C1, C2.",
-      "5. A medida que sube el nivel, aumentan las situaciones, la longitud de las frases, el vocabulario y las expresiones.",
+      "1. Para continuar al siguiente capítulo, regístrate haciendo clic en Get Started.",
+      "2. Puedes cambiar el idioma de estudio usando los botones de arriba.",
+      "3. Puedes moverte al siguiente set usando los botones <> debajo del audio.",
+      "4. Presiona Toggle Target para ocultar el idioma objetivo y practicar la traducción.",
+      "5. Actualmente estás viendo A1 Chapter 1. Puedes elegir niveles A1, A2, B1, B2, C1, C2.",
+      "6. A medida que sube el nivel, aumentan las situaciones, la longitud de las frases, el vocabulario y las expresiones.",
     ],
     fr: [
-      "1. Vous pouvez changer la langue d’étude avec les boutons ci-dessus.",
-      "2. Vous pouvez passer au set suivant avec les boutons <> sous l’audio.",
-      "3. Appuyez sur Toggle Target pour cacher la langue cible et pratiquer la traduction.",
-      "4. Vous regardez actuellement A1 Chapter 1. Vous pouvez choisir les niveaux A1, A2, B1, B2, C1, C2.",
-      "5. Plus le niveau augmente, plus les situations, les phrases et le vocabulaire deviennent complexes.",
+      "1. Pour continuer au chapitre suivant, inscrivez-vous en cliquant sur Get Started.",
+      "2. Vous pouvez changer la langue d’étude avec les boutons ci-dessus.",
+      "3. Vous pouvez passer au set suivant avec les boutons <> sous l’audio.",
+      "4. Appuyez sur Toggle Target pour cacher la langue cible et pratiquer la traduction.",
+      "5. Vous regardez actuellement A1 Chapter 1. Vous pouvez choisir les niveaux A1, A2, B1, B2, C1, C2.",
+      "6. Plus le niveau augmente, plus les situations, les phrases et le vocabulaire deviennent complexes.",
     ],
     pt: [
-      "1. Você pode mudar o idioma de estudo usando os botões acima.",
-      "2. Você pode ir para o próximo set usando os botões <> abaixo do áudio.",
-      "3. Pressione Toggle Target para ocultar o idioma alvo e praticar a tradução.",
-      "4. Você está vendo A1 Chapter 1. Pode escolher níveis A1, A2, B1, B2, C1, C2.",
-      "5. À medida que o nível aumenta, aumentam as situações, o tamanho das frases e o vocabulário.",
+      "1. Para continuar para o próximo capítulo, registre-se clicando em Get Started.",
+      "2. Você pode mudar o idioma de estudo usando os botões acima.",
+      "3. Você pode ir para o próximo set usando os botões <> abaixo do áudio.",
+      "4. Pressione Toggle Target para ocultar o idioma alvo e praticar a tradução.",
+      "5. Você está vendo A1 Chapter 1. Pode escolher níveis A1, A2, B1, B2, C1, C2.",
+      "6. À medida que o nível aumenta, aumentam as situações, o tamanho das frases e o vocabulário.",
     ],
   };
-
 
   useEffect(() => {
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
@@ -123,7 +127,6 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
 
         let allBlocks: Block[] = [];
 
-        /* 🔥 set별 + blocks 병합 */
         for (const asset of dataAssets) {
           const res = await fetch(asset.path);
           const json = await res.json();
@@ -133,16 +136,11 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
           }
         }
 
-        /* 🔥 set 그룹화 (frequency_rank 기준) */
         const grouped: Record<number, Block[]> = {};
 
         for (const block of allBlocks) {
           const key = block.frequency_rank || 0;
-
-          if (!grouped[key]) {
-            grouped[key] = [];
-          }
-
+          if (!grouped[key]) grouped[key] = [];
           grouped[key].push(block);
         }
 
@@ -163,149 +161,88 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
     };
   }, [lang, level, chapter]);
 
-  if (status === "loading")
-    return <div style={{ padding: 24 }}>Loading...</div>;
-  if (status === "error")
-    return <div style={{ padding: 24 }}>Failed</div>;
+  if (status === "loading") return <div style={{ padding: 24 }}>Loading...</div>;
+  if (status === "error") return <div style={{ padding: 24 }}>Failed</div>;
 
   return (
     <div style={containerStyle}>
-      {/* ✅ STICKY HEADER (컨버세이션 100% 동일) */}
-      <div
-        style={{
-          position: "sticky",
-          top: 0,
-          zIndex: 30,
-          background: "#fff",
-          borderBottom: "1px solid #eee",
-        }}
-      >
-        {/* HEADER */}
+      {/* 🔥 HEADER */}
+      <div style={{ position: "sticky", top: 0, background: "#fff", zIndex: 30 }}>
         <div
           style={{
             display: "flex",
-            flexWrap: "wrap",
-            gap: 8,
             justifyContent: "space-between",
-            padding: "12px 0",
+            padding: "10px 0",
+            flexWrap: "wrap",
+            borderBottom: "1px solid #eee",
           }}
         >
-          {/* LEFT */}
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+          <div style={{ display: "flex", gap: 6 }}>
             {ALL_STUDY_LANGS
               .filter((l) => l !== targetLang)
               .map((l) => (
-                <button
-                  key={l}
-                  onClick={() => setStudyLang(l)}
-                  style={buttonStyle(studyLang === l)}
-                >
+                <button key={l} onClick={() => setStudyLang(l)} style={buttonStyle(studyLang === l)}>
                   {l.toUpperCase()}
                 </button>
               ))}
 
-            <button
-              onClick={() => setShowTargetText(!showTargetText)}
-              style={buttonStyle(false)}
-            >
+            <button onClick={() => setShowTargetText(!showTargetText)} style={buttonStyle(false)}>
               Toggle
             </button>
 
-            <div style={{ display: "flex", gap: 6 }}>
-              {/* Copy link */}
-              <button
-                onClick={async () => {
-                  if (navigator.share) {
-                    try {
-                      await navigator.share({
-                        title: "Try Demo",
-                        url: window.location.href,
-                      });
-                    } catch { }
-                  } else {
-                    navigator.clipboard.writeText(window.location.href);
-                    alert("Link copied!");
-                  }
-                }}
-                style={buttonStyle(false)}
-              >
-                Copy link
-              </button>
+            <button
+              onClick={() => {
+                navigator.clipboard.writeText(window.location.href);
+                alert("Link copied!");
+              }}
+              style={buttonStyle(false)}
+            >
+              Copy
+            </button>
 
-              {/* Get Started (강조) */}
-              <Link href="/app">
-                <button
-                  type="button"
-                  style={{
-                    ...buttonStyle(false),
-                    background: "#111",
-                    color: "#fff",
-                  }}
-                >
-                  Get Started
-                </button>
-              </Link>
-              <span
-                style={{
-                  fontSize: 12,
-                  color: "#666",
-                  lineHeight: 1.2,
-                }}
-              >
-                To continue to the next chapter, sign up by clicking Get Started.
-              </span>
-            </div>
+            <Link href="/app">
+              <button style={{ ...buttonStyle(false), background: "#111", color: "#fff" }}>
+                Get Started
+              </button>
+            </Link>
           </div>
 
-          {/* RIGHT */}
-          <Link href="/demo" style={buttonStyle(false)}>
-            ← Back
-          </Link>
+          <Link href="/demo">← Back</Link>
         </div>
 
-        {/* GUIDE */}
+        {/* 🔥 AUDIO */}
+        <div style={{ borderBottom: "1px solid #eee", padding: "6px 0" }}>
+          <IdiomAudioController lang={lang} level={level} chapter={chapter} />
+        </div>
+
+        {/* 🔥 GUIDE */}
         <div
           style={{
-            fontSize: "clamp(12px, 3vw, 13px)",
+            fontSize: 13,
             color: "#666",
-            lineHeight: 1.5,
-            paddingBottom: 8,
+            background: "#fafafa",
+            padding: "12px 14px",
+            borderRadius: 10,
+            border: "1px solid #eee",
+            marginTop: 10,
           }}
         >
           {guideTexts[studyLang].map((t, i) => (
             <div key={i}>{t}</div>
           ))}
         </div>
-
-        {/* ❗️임시 audio (현재 문제 원인) */}
-        <IdiomAudioController
-          lang={lang}
-          level={level}
-          chapter={chapter}
-        />
       </div>
 
-      {/* CONTENT */}
-      <div style={{ padding: "20px 0" }}>
+      {/* 🔥 CONTENT */}
+      <div style={{ padding: "30px 0" }}>
         {Object.entries(groupedBlocks)
           .sort(([a], [b]) => Number(a) - Number(b))
           .map(([set, setBlocks]) => (
-            <div key={set} style={{ marginBottom: 50 }}>
-
-              {/* 🔥 SET 타이틀 */}
-              <div
-                style={{
-                  fontSize: 18,
-                  fontWeight: 700,
-                  marginBottom: 16,
-                  borderBottom: "1px solid #ddd",
-                  paddingBottom: 6,
-                }}
-              >
+            <div key={set} style={{ marginBottom: 40 }}>
+              <div style={{ fontWeight: 700, marginBottom: 12 }}>
                 SET {set}
               </div>
 
-              {/* 🔥 블럭 렌더 */}
               {setBlocks.map((block, idx) => {
                 const expression = block.expression?.[TARGET_KEY] ?? "";
                 const expressionStudy = block.expression?.[studyLang] ?? "";
@@ -314,38 +251,39 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
                 const explanationStudy = block.explanation?.[studyLang] ?? "";
 
                 return (
-                  <section key={idx} style={{ marginBottom: 40 }}>
-                    {/* 표현 */}
+                  <section key={idx} style={{ marginBottom: 30 }}>
                     {showTargetText && (
-                      <div style={{ fontSize: 20, fontWeight: 700 }}>
+                      <div style={{ ...sentenceStyle, fontWeight: 700 }}>
                         {expression}
                       </div>
                     )}
 
-                    <div style={{ color: "#555", marginBottom: 8 }}>
+                    <div style={{ ...sentenceStyle, color: "#666" }}>
                       {expressionStudy}
                     </div>
 
-                    {/* 별 */}
-                    <div style={{ marginBottom: 8 }}>
-                      {block.frequency_stars}
-                    </div>
+                    <div style={{ marginBottom: 8 }}>{block.frequency_stars}</div>
 
-                    {/* 설명 */}
-                    {showTargetText && <div>{explanation}</div>}
-                    <div style={{ color: "#666", marginBottom: 12 }}>
+                    {showTargetText && (
+                      <div style={{ ...sentenceStyle }}>{explanation}</div>
+                    )}
+
+                    <div style={{ ...sentenceStyle, color: "#666", marginBottom: 12 }}>
                       {explanationStudy}
                     </div>
 
-                    {/* 예문 */}
                     {block.examples?.map((ex, i) => {
                       const t = ex[TARGET_KEY] ?? "";
                       const s = ex[studyLang] ?? "";
 
                       return (
-                        <div key={i} style={{ marginBottom: 10 }}>
-                          {showTargetText && <div>{t}</div>}
-                          <div style={{ color: "#555" }}>{s}</div>
+                        <div key={i} style={{ marginBottom: 14 }}>
+                          {showTargetText && (
+                            <div style={{ ...sentenceStyle }}>{t}</div>
+                          )}
+                          <div style={{ ...sentenceStyle, color: "#666" }}>
+                            {s}
+                          </div>
                         </div>
                       );
                     })}
