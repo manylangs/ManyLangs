@@ -365,7 +365,7 @@ export default function LandingPage() {
             </div>
           ))}
         </div>
-      </section>ㄴ
+      </section>
 
       {/* Use Cases */}
       <section id="usecases" style={sectionWrap}>
