@@ -151,14 +151,14 @@ export default function LandingPage() {
       <section style={heroSection}>
         <p
           style={{
-            fontSize: 16,
+            fontSize: 15,
             lineHeight: 1.5,
             marginBottom: 16,
             textAlign: "center",
           }}
         >
           <span style={{ display: "block" }}>
-            Learn through structured lessons — built for real use.
+            Learn to use real language — not just memorize it.
           </span>
         </p>
 
@@ -217,6 +217,20 @@ export default function LandingPage() {
       >
         <h2 style={sectionTitle}>How you’ll learn</h2>
 
+        {/* 🔥 추가 (핵심 카피) */}
+        <p
+          style={{
+            fontSize: 14,
+            color: "#666",
+            textAlign: "center",
+            maxWidth: 520,
+            margin: "0 auto 24px",
+            lineHeight: 1.6,
+          }}
+        >
+          See how you actually learn — step by step.
+        </p>
+
         <div
           style={{
             display: "flex",
@@ -229,7 +243,7 @@ export default function LandingPage() {
           <div
             style={{
               width: "100%",
-              maxWidth: 720, // 🔥 기존 800 → 살짝 줄임 (덜 압도적)
+              maxWidth: 720,
             }}
           >
             <img
@@ -240,16 +254,16 @@ export default function LandingPage() {
                 height: "auto",
                 borderRadius: 16,
                 border: "1px solid #eee",
-                boxShadow: "0 12px 32px rgba(0,0,0,0.08)", // 🔥 더 또렷하게
+                boxShadow: "0 12px 32px rgba(0,0,0,0.08)",
               }}
             />
           </div>
 
-          {/* 2️⃣ 라이브러리 (비중 ↑) */}
+          {/* 2️⃣ 라이브러리 */}
           <div
             style={{
               width: "100%",
-              maxWidth: 640, // 🔥 500 → 640 (핵심 변경)
+              maxWidth: 640,
             }}
           >
             <img
@@ -267,9 +281,21 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Features */}
       <section id="features" style={sectionWrap}>
         <h2 style={sectionTitle}>Features</h2>
+
+        <p
+          style={{
+            fontSize: 14,
+            color: "#666",
+            textAlign: "center",
+            maxWidth: 520,
+            margin: "0 auto 24px",
+            lineHeight: 1.6,
+          }}
+        >
+          Use language the way people actually speak in real life.
+        </p>
 
         <div style={grid2}>
           {/* 1 */}
@@ -287,9 +313,10 @@ export default function LandingPage() {
               Practice language through real scenarios.
             </div>
           </div>
+
           {/* 3 */}
           <div style={card}>
-            <div style={cardTitle}>Learn from 4 languages</div>
+            <div style={cardTitle}>Learn in 4 languages</div>
             <div style={text}>
               Study your target language using English, Spanish, French, or Portuguese.
             </div>
@@ -298,47 +325,47 @@ export default function LandingPage() {
       </section>
       {/* How */}
       <section id="how" style={sectionWrap}>
-  <h2 style={sectionTitle}>How it works</h2>
+        <h2 style={sectionTitle}>How it works</h2>
 
-  <div style={{
-    display: "flex",
-    flexDirection: "column",
-    gap: 12,
-  }}>
-    {[
-      "Sign in",
-      "Pick your language and level (A1–C2)",
-      "Start learning",
-    ].map((text, i) => (
-      <div key={i} style={{
-        display: "flex",
-        alignItems: "center",
-        gap: 12,
-        padding: "14px 16px",
-        borderRadius: 10,
-        border: "1px solid #eee",
-        background: "#fafafa",
-      }}>
         <div style={{
-          width: 28,
-          height: 28,
-          borderRadius: "50%",
-          background: "#111",
-          color: "#fff",
-          fontSize: 13,
           display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          fontWeight: 600,
+          flexDirection: "column",
+          gap: 12,
         }}>
-          {i + 1}
-        </div>
+          {[
+            "Sign in",
+            "Pick your language and level (A1–C2)",
+            "Start learning",
+          ].map((text, i) => (
+            <div key={i} style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 12,
+              padding: "14px 16px",
+              borderRadius: 10,
+              border: "1px solid #eee",
+              background: "#fafafa",
+            }}>
+              <div style={{
+                width: 28,
+                height: 28,
+                borderRadius: "50%",
+                background: "#111",
+                color: "#fff",
+                fontSize: 13,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontWeight: 600,
+              }}>
+                {i + 1}
+              </div>
 
-        <div style={{ fontSize: 14 }}>{text}</div>
-      </div>
-    ))}
-  </div>
-</section>
+              <div style={{ fontSize: 14 }}>{text}</div>
+            </div>
+          ))}
+        </div>
+      </section>ㄴ
 
       {/* Use Cases */}
       <section id="usecases" style={sectionWrap}>
@@ -495,7 +522,7 @@ export default function LandingPage() {
         textAlign: "center",
         lineHeight: 1.6,
       }}>
-        ManyLangs is an independent language learning platform focused on practical, real-world usage through structured lessons.
+        ManyLangs is a language learning platform providing structured lessons for real-world communication.
       </div>
       {/* Footer */}
       <footer style={footerStyle}>
