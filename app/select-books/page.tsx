@@ -442,12 +442,16 @@ export default function SelectBooksPage() {
       setLibrary(nextLib);
 
       setCouponBox((prev) => {
-        const map = new Map(prev.map((c) => [c.code, c]));
+        const map = new Map<string, CouponItem>();
+
+        // ✅ 서버 기준으로 먼저 세팅 (핵심)
+        for (const c of couponBox) {
+          map.set(c.code, c);
+        }
+
         const k = lic.code ?? coupon.trim();
-        const current = map.get(k);
 
         map.set(k, {
-          ...(current ?? { code: k, used: false }),
           code: k,
           used: true,
           usedAt: cp?.usedAt ?? Date.now(),
@@ -457,6 +461,7 @@ export default function SelectBooksPage() {
         });
 
         const next = Array.from(map.values());
+
         writeLocalCoupons(next);
         return next;
       });
@@ -711,7 +716,7 @@ export default function SelectBooksPage() {
                   </div>
                 )}
                 {filteredLibrary.length === 0 && (
-                  <p className="text-sm text-gray-500">No textbooks yet. Add one on the right →</p>
+                  <p className="text-sm text-gray-500">No textbooks yet.</p>
                 )}
                 {pageLibrary.map((item, idx) => (
                   <div
