@@ -1,4 +1,4 @@
-// app/select-books/page.tsx 커밋으로 복구한 예전 로직
+// app/select-books/page.tsx ui ux 최종/but쿠폰 안나오는코드/
 "use client";
 
 import { useEffect, useState } from "react";
@@ -668,29 +668,6 @@ export default function SelectBooksPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {/* LEFT COLUMN */}
           <div className="space-y-6">
-            {/* Language */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Language you want to learn</CardTitle>
-              </CardHeader>
-              <CardContent className="pt-0">
-                <select
-                  value={targetLang}
-                  onChange={(e) => {
-                    const v = e.target.value;
-                    setTargetLang(v);
-                    localStorage.setItem("ml_target_lang", v);
-                  }}
-                  className="w-full rounded border px-2 py-1"
-                >
-                  {LANGUAGE_OPTIONS.map((l) => (
-                    <option key={l.value} value={l.value}>
-                      {l.label}
-                    </option>
-                  ))}
-                </select>
-              </CardContent>
-            </Card>
 
             {/* My Library */}
             <Card>
@@ -734,7 +711,7 @@ export default function SelectBooksPage() {
                   </div>
                 )}
                 {filteredLibrary.length === 0 && (
-                  <p className="text-sm text-gray-500">No active textbooks.</p>
+                  <p className="text-sm text-gray-500">No textbooks yet. Add one on the right →</p>
                 )}
                 {pageLibrary.map((item, idx) => (
                   <div
@@ -854,12 +831,34 @@ export default function SelectBooksPage() {
           {/* RIGHT COLUMN */}
           <div className="space-y-6">
             {/* Add textbook */}
-            <Card>
+            <Card id="add-textbook-section">
               <CardHeader>
                 <CardTitle>Add a textbook</CardTitle>
               </CardHeader>
 
               <CardContent className="space-y-4">
+
+                {/* ✅ Language 선택 (맨 위로 이동) */}
+                <div>
+                  <div className="text-sm font-semibold mb-1">
+                    Language you want to learn
+                  </div>
+                  <select
+                    value={targetLang}
+                    onChange={(e) => {
+                      const v = e.target.value;
+                      setTargetLang(v);
+                      localStorage.setItem("ml_target_lang", v);
+                    }}
+                    className="block w-full rounded border px-3 py-2"
+                  >
+                    {LANGUAGE_OPTIONS.map((l) => (
+                      <option key={l.value} value={l.value}>
+                        {l.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
 
                 {/* textbook 선택 */}
                 <select
@@ -902,7 +901,7 @@ export default function SelectBooksPage() {
                   className="block w-full rounded border px-3 py-2"
                 />
 
-                {/* 설명 (위치 유지 but 더 명확하게) */}
+                {/* 설명 */}
                 <p className="text-xs text-gray-500 leading-relaxed">
                   Coupons can be shared with others. However, ManyLangs cannot individually track
                   whether a shared coupon has been used.
@@ -924,7 +923,6 @@ export default function SelectBooksPage() {
                     ))}
                   </select>
 
-                  {/* 리스트 스타일 개선 */}
                   <div className="text-xs text-gray-500 space-y-1">
                     {PAYMENT_OPTIONS.map((p) => (
                       <div key={p.amount}>
@@ -936,7 +934,7 @@ export default function SelectBooksPage() {
 
                 {error && <p className="text-sm text-red-600">{error}</p>}
 
-                {/* 🔥 버튼 2개 (스샷 스타일 핵심) */}
+                {/* 버튼 */}
                 <div className="space-y-2 pt-2">
 
                   <button
@@ -944,7 +942,9 @@ export default function SelectBooksPage() {
                     disabled={loading}
                     className="w-full rounded bg-black text-white py-2 text-sm font-medium"
                   >
-                    {loading ? "Processing..." : "Add this series with coupons"}
+                    {loading
+                      ? "Processing..."
+                      : `Add ${LANGUAGE_OPTIONS.find(l => l.value === targetLang)?.label} textbook`}
                   </button>
 
                   <button
@@ -956,6 +956,7 @@ export default function SelectBooksPage() {
                   </button>
 
                 </div>
+
               </CardContent>
             </Card>
             {/* Refund */}
@@ -996,5 +997,6 @@ export default function SelectBooksPage() {
     </main>
   );
 }
+
 
 
