@@ -30,9 +30,9 @@ export default function HomePage() {
             whiteSpace: "nowrap",
           }}
         >
-          Learn languages through structured textbooks.
+          Learn through structured lessons — built for real use.
           <br />
-          Grammar · Conversation · Vocabulary · Idioms · Real-life situations
+          Grammar · Speaking · Vocabulary · Idioms · Real-world usage
         </p>
 
         {userId ? (

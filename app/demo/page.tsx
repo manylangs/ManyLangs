@@ -106,14 +106,11 @@ export default function DemoPage() {
                 {/* TEXT */}
                 <div style={infoBox}>
                     <p style={infoText}>
-                        Although these are Korean samples, there are various languages you can learn.
-                    </p>
-                    <p style={infoText}>
-                        To check the available languages, click the{" "}
-                        <strong>Get Started</strong> button.
+                        You're viewing Korean sample content.
+                        <br />
+                        Discover other languages with <strong>Get Started</strong>.
                     </p>
                 </div>
-
                 {/* CONTENT */}
                 {demoData.map((section) => (
                     <div key={section.category} style={sectionWrap}>
