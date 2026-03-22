@@ -298,18 +298,47 @@ export default function LandingPage() {
       </section>
       {/* How */}
       <section id="how" style={sectionWrap}>
-        <h2 style={sectionTitle}>How it works</h2>
+  <h2 style={sectionTitle}>How it works</h2>
 
-        <div style={stepItem}>
-          <strong>1</strong> Sign in
+  <div style={{
+    display: "flex",
+    flexDirection: "column",
+    gap: 12,
+  }}>
+    {[
+      "Sign in",
+      "Pick your language and level (A1–C2)",
+      "Start learning",
+    ].map((text, i) => (
+      <div key={i} style={{
+        display: "flex",
+        alignItems: "center",
+        gap: 12,
+        padding: "14px 16px",
+        borderRadius: 10,
+        border: "1px solid #eee",
+        background: "#fafafa",
+      }}>
+        <div style={{
+          width: 28,
+          height: 28,
+          borderRadius: "50%",
+          background: "#111",
+          color: "#fff",
+          fontSize: 13,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontWeight: 600,
+        }}>
+          {i + 1}
         </div>
-        <div style={stepItem}>
-          <strong>2</strong> Pick your language and level (A1–C2)
-        </div>
-        <div style={stepItem}>
-          <strong>3</strong> Start learning
-        </div>
-      </section>
+
+        <div style={{ fontSize: 14 }}>{text}</div>
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* Use Cases */}
       <section id="usecases" style={sectionWrap}>
