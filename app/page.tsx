@@ -287,6 +287,13 @@ export default function LandingPage() {
               Practice language through real scenarios.
             </div>
           </div>
+          {/* 3 */}
+          <div style={card}>
+            <div style={cardTitle}>Learn from 4 languages</div>
+            <div style={text}>
+              Study your target language using English, Spanish, French, or Portuguese.
+            </div>
+          </div>
         </div>
       </section>
       {/* How */}
