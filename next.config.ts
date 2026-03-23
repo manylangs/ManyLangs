@@ -4,16 +4,6 @@ const nextConfig: NextConfig = {
   experimental: {
     serverComponentsExternalPackages: [],
   },
-
-  webpack: (config) => {
-    config.externals = [
-      ...(config.externals || []),
-      {
-        "./content": "commonjs ./content",
-      },
-    ];
-    return config;
-  },
 };
 
 export default nextConfig;
