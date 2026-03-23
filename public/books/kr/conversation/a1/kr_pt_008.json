@@ -1,0 +1,175 @@
+{
+  "chapter_id": "008",
+  "cefr": "A1",
+  "title_pt": "Descrever lugares",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Como é?,",
+    "Fica perto?,",
+    "É calmo?,",
+    "Está cheio?,",
+    "Como é o ambiente?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Como é o ambiente deste café?",
+          "Ah, parece ótimo! A música também é tranquila?",
+          "Perfeito, vou ficar aqui."
+        ],
+        "B": [
+          "É bastante acolhedor. Não há muita gente.",
+          "Sim, só passam música suave.",
+          "Fique à vontade!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Como é o parque aqui perto?",
+          "Ah, perfeito para caminhar! Há muitos bancos?",
+          "Boa, vou lá ver."
+        ],
+        "B": [
+          "É calmo e espaçoso. Há muitas flores também.",
+          "Sim, há muitas zonas com sombra.",
+          "Aproveite!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Como é o ambiente da biblioteca?",
+          "Ah, ótimo para estudar. Há muitos lugares?",
+          "Fixe, vou lá mais tarde."
+        ],
+        "B": [
+          "É muito silenciosa. Os estudantes são respeitadores.",
+          "Sim, especialmente perto das janelas.",
+          "Vai encontrar lugar facilmente!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Como é o bairro aqui?",
+          "Ah, que bom! Ainda bem que é seguro.",
+          "Então deve ser agradável passear."
+        ],
+        "B": [
+          "É calmo e cheio de famílias.",
+          "Sim, mesmo à noite é bem iluminado.",
+          "É ótimo para caminhar!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Como é o campo desportivo daqui?",
+          "Ah, um espaço grande é perfeito! Há muita gente?",
+          "Boa, tenho de vir correr um dia."
+        ],
+        "B": [
+          "É muito amplo. O chão também é limpo.",
+          "Depende da hora, mas agora não há muita gente.",
+          "É um bom dia para treinar!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Que impressão dá este edifício?",
+          "Ah, um estilo moderno soa bem! O átrio é grande?",
+          "Certo, vou dar uma olhada."
+        ],
+        "B": [
+          "É muito moderno—limpo e elegante.",
+          "Sim, o teto é alto e o espaço é amplo.",
+          "Acho que vai gostar!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Como é o mercado aqui perto?",
+          "Ah, parece animado! Há muitas lojas?",
+          "Boa, vou visitá-lo depois."
+        ],
+        "B": [
+          "É muito vivo e cheio de energia.",
+          "Sim, sobretudo bancas de comida—há imensas.",
+          "Vai divertir-se muito a passear!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Este café costuma ser calmo?",
+          "Ah, ótimo! Parece um bom sítio para estudar.",
+          "Perfeito, vou ficar aqui um bocadinho."
+        ],
+        "B": [
+          "Sim, tirando os fins de semana, é bastante calmo.",
+          "Os estudantes vêm muito, por isso o ambiente é bom.",
+          "Fique à vontade!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Que tipo de edifício é aquele?",
+          "Ah, por isso há tanta gente!",
+          "Acho que também devia ir ver."
+        ],
+        "B": [
+          "É uma sala de exposições. Fazem muitos eventos.",
+          "Sim, hoje também há um pequeno.",
+          "Vai gostar de certeza!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Como é esta zona à noite?",
+          "Ah, se for iluminada, é mais seguro caminhar.",
+          "Obrigado, isso ajuda."
+        ],
+        "B": [
+          "A rua principal é bem iluminada à noite.",
+          "Sim, há gente suficiente para não ser assustador.",
+          "Se precisar de mais alguma coisa, diga!"
+        ]
+      }
+    }
+  ]
+}

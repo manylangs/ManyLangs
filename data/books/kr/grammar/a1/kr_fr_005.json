@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "a1",
+    "id": "005"
+  },
+  "title": {
+    "target": "을/를",
+    "en": "",
+    "es": "",
+    "fr": "Particule d’objet 을/를",
+    "pt": ""
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'을/를'은 문장에서 목적어를 나타내는 조사이다.",
+        "en": "",
+        "es": "",
+        "fr": "« 을/를 » est une particule qui marque l’objet de la phrase.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침이 있으면 '을', 받침이 없으면 '를'을 쓴다.",
+        "en": "",
+        "es": "",
+        "fr": "On utilise « 을 » après une consonne finale et « 를 » après une voyelle.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'을/를'은 동작의 대상을 명확하게 보여 준다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle indique clairement la cible d’une action.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "사람·사물·장소 등 다양한 명사에 붙일 수 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle peut se lier à des personnes, objets, lieux ou de nombreux noms.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "동작을 설명하는 문장에서 필수적으로 등장한다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle est essentielle dans les phrases qui décrivent une action.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문장의 의미 흐름을 자연스럽게 연결해 준다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle aide le sens à circuler naturellement dans la phrase.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "강조할 때도 '을/를'을 사용하여 대상에 초점을 둔다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle peut aussi être utilisée pour mettre l’accent sur l’objet.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "명령문·청유문에서도 자주 쓰인다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle apparaît souvent dans les phrases impératives ou suggestives.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "감정 표현에서도 목적어를 나타낼 때 사용된다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle est utilisée dans des expressions émotionnelles pour indiquer l’objet.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "한국어 기초 표현에서 매우 자주 등장하는 조사이다.",
+        "en": "",
+        "es": "",
+        "fr": "C’est l’une des particules les plus courantes du coréen de base.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "나는 책을 읽는다.",
+        "en": "",
+        "es": "",
+        "fr": "Je lis un livre.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그녀는 물을 마신다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle boit de l’eau.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그는 영화를 본다.",
+        "en": "",
+        "es": "",
+        "fr": "Il regarde un film.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "우리는 밥을 먹는다.",
+        "en": "",
+        "es": "",
+        "fr": "Nous mangeons un repas.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "나는 음악을 듣는다.",
+        "en": "",
+        "es": "",
+        "fr": "J’écoute de la musique.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "아이들은 공을 던진다.",
+        "en": "",
+        "es": "",
+        "fr": "Les enfants lancent une balle.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "나는 커피를 산다.",
+        "en": "",
+        "es": "",
+        "fr": "J’achète du café.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그는 노래를 부른다.",
+        "en": "",
+        "es": "",
+        "fr": "Il chante une chanson.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그녀는 편지를 쓴다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle écrit une lettre.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "우리는 길을 걷는다.",
+        "en": "",
+        "es": "",
+        "fr": "Nous marchons dans la rue.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "나는 창문을 연다.",
+        "en": "",
+        "es": "",
+        "fr": "J’ouvre une fenêtre.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그는 문을 닫는다.",
+        "en": "",
+        "es": "",
+        "fr": "Il ferme la porte.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "나는 문제를 해결한다.",
+        "en": "",
+        "es": "",
+        "fr": "Je résous un problème.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그녀는 식물을 키운다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle fait pousser des plantes.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "우리는 계획을 세운다.",
+        "en": "",
+        "es": "",
+        "fr": "Nous faisons un plan.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그는 약속을 지킨다.",
+        "en": "",
+        "es": "",
+        "fr": "Il tient une promesse.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "나는 가방을 챙긴다.",
+        "en": "",
+        "es": "",
+        "fr": "Je prépare un sac.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그녀는 사진을 찍는다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle prend une photo.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "우리는 장소를 찾는다.",
+        "en": "",
+        "es": "",
+        "fr": "Nous cherchons un endroit.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그는 숙제를 끝낸다.",
+        "en": "",
+        "es": "",
+        "fr": "Il finit ses devoirs.",
+        "pt": ""
+      }
+    }
+  ]
+}

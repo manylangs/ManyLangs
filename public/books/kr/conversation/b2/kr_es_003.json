@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "003",
+  "cefr": "B2",
+  "title_es": "Oficina gubernamental",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Vengo a solicitar un documento,",
+    "¿Cómo funciona el proceso de solicitud?,",
+    "¿Cuánto tarda el trámite?,",
+    "¿Puedo solicitarlo también en línea?,",
+    "¿Necesito documentos adicionales?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Hola, vengo a solicitar una copia de mi certificado de residencia.",
+          "Entonces, ¿la ventanilla es más rápida que la máquina automática?",
+          "Perfecto, entonces usaré la ventanilla."
+        ],
+        "B": [
+          "Hola. ¿Necesita una copia? Claro, puedo ayudarle.",
+          "Ahora mismo la ventanilla es más rápida.",
+          "Por favor, muéstreme su identificación."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "También quiero presentar mi notificación de cambio de domicilio.",
+          "Ah, es más sencillo de lo que pensaba.",
+          "De acuerdo, rellenaré el formulario ahora mismo."
+        ],
+        "B": [
+          "Sí, solo tiene que completar este formulario.",
+          "Solo debe escribir su información básica.",
+          "Cuando termine, lo procesaré enseguida."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "¿Cuánto tarda el trámite?",
+          "Vaya, es más rápido de lo que imaginaba.",
+          "Genial. ¿Recibiré un mensaje cuando esté listo?"
+        ],
+        "B": [
+          "La mayoría se tramita el mismo día o, como mucho, al día siguiente.",
+          "Sí, el sistema es bastante rápido ahora.",
+          "Sí, podemos enviarle una notificación por mensaje de texto."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "¿Puedo solicitarlo también en línea?",
+          "Ah, entonces solo necesito una verificación de identidad.",
+          "Qué bien, así también puedo hacerlo desde casa."
+        ],
+        "B": [
+          "Sí, casi todos los documentos pueden solicitarse en el portal gubernamental.",
+          "Solo necesita una verificación sencilla.",
+          "Si quiere, puedo mostrarle cómo usar el sitio."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "¿Necesito documentos adicionales?",
+          "Perfecto, así puedo prepararlos antes en casa.",
+          "Gracias por avisarme."
+        ],
+        "B": [
+          "Para este trámite solo necesita su identificación.",
+          "Para otros servicios podrían requerirse documentos extra.",
+          "Si tiene dudas, no dude en preguntar."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Parece que hay bastante gente esperando. ¿Tardará mucho?",
+          "Ah, es más rápido de lo que pensaba.",
+          "Bien, ¿puedo salir un momento mientras espero?"
+        ],
+        "B": [
+          "Hay algo de espera, pero la fila avanza rápido.",
+          "Su turno debería llegar en unos diez minutos.",
+          "Sí, puede salir, pero revise su número para no perder el turno."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Creo que cometí un error en el formulario. ¿Podría revisarlo?",
+          "Ah, escribí mal mi fecha de nacimiento.",
+          "De acuerdo, lo corregiré y lo entregaré de nuevo."
+        ],
+        "B": [
+          "Claro, déjeme ver… Sí, aquí hay un pequeño error.",
+          "No se preocupe, se corrige fácilmente.",
+          "Cuando lo modifique, lo procesaré de inmediato."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "¿Puedo pagar la tasa con tarjeta?",
+          "Qué bien, no necesitaba traer efectivo.",
+          "Perfecto, pagaré con tarjeta."
+        ],
+        "B": [
+          "Sí, aceptamos tarjeta y efectivo.",
+          "La mayoría de las personas paga con tarjeta hoy en día.",
+          "Cuando el pago se complete, imprimiré su documento."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "¿Hay documentos que no puedan emitirse el mismo día?",
+          "Ah, los documentos relacionados con extranjeros tardan más.",
+          "Entonces debo presentar la solicitud con más antelación."
+        ],
+        "B": [
+          "Sí, la mayoría se emite al instante, pero algunos requieren verificación.",
+          "Especialmente los trámites para extranjeros, que requieren comprobaciones adicionales.",
+          "Si los solicita antes, todo le resultará más fácil."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "¿Dónde puedo verificar los documentos que presenté hoy?",
+          "Qué cómodo poder consultarlos en línea de inmediato.",
+          "Genial, los revisaré como me indicó."
+        ],
+        "B": [
+          "Puede consultarlos en el portal gubernamental o en la web del ayuntamiento.",
+          "Normalmente aparecen en el sistema casi al instante.",
+          "Si quiere, también puedo mostrarle dónde está el menú."
+        ]
+      }
+    }
+  ]
+}
+

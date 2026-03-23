@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "001",
+  "cefr": "A2",
+  "title_pt": "Fazer compras",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Quanto custa isto?,",
+    "Tem outra cor?,",
+    "Tem um tamanho maior?,",
+    "Posso experimentar?,",
+    "Há algum desconto?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Olá! Posso ver este artigo?",
+          "Ah, o tecido é mesmo agradável! Tem noutra cor?",
+          "Ótimo, fico com este."
+        ],
+        "B": [
+          "Claro, esteja à vontade!",
+          "Sim! Também temos em preto e azul.",
+          "Boa escolha! Vou embrulhá-lo para si."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Estes sapatos são giros! Quanto custam?",
+          "Nada mal! Há algum desconto?",
+          "Perfeito, pago já."
+        ],
+        "B": [
+          "Este par custa cinquenta mil wons.",
+          "Hoje temos 10% de desconto!",
+          "Muito bem, pode pagar aqui."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Esta mala parece um pouco pequena. Tem um tamanho maior?",
+          "Ah, sim, este fica-me melhor!",
+          "Está bem, levo este."
+        ],
+        "B": [
+          "Sim! Temos um tamanho maior. Experimente este.",
+          "Ótimo! Este tamanho está muito popular agora.",
+          "Acompanho-a à caixa."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Posso experimentar este chapéu?",
+          "Oh, fica mesmo bem! Tem outros estilos?",
+          "Perfeito, fico com este."
+        ],
+        "B": [
+          "Claro! Experimente em frente ao espelho.",
+          "Sim, o que está ao lado também é muito procurado.",
+          "Fica-lhe muito bem! Vou embrulhá-lo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Este tecido é tão macio! Está em promoção?",
+          "Uau, metade do preço? Excelente!",
+          "Então posso levar dois?"
+        ],
+        "B": [
+          "Sim, está com 50% de desconto agora.",
+          "Exato, hoje é o último dia.",
+          "Claro! Quer adicionar mais algum?"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Este é um produto novo?",
+          "Ah, faz sentido que o design pareça tão moderno!",
+          "Então gostaria de um novo, por favor!"
+        ],
+        "B": [
+          "Sim, chegou esta semana.",
+          "Exatamente! É um dos produtos mais populares desta estação.",
+          "Muito bem, trago-lhe um novo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Posso trocar isto mais tarde?",
+          "Ah, sete dias é ótimo para mim!",
+          "Perfeito, vou comprá-lo."
+        ],
+        "B": [
+          "Sim, desde que a etiqueta esteja intacta, pode trocar dentro de sete dias.",
+          "Muito bem! É para oferecer?",
+          "Obrigado! Faço um embrulho bonito."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Posso experimentar este perfume?",
+          "Oh, o cheiro é mesmo suave!",
+          "Então levo o tamanho pequeno."
+        ],
+        "B": [
+          "Sim! Aqui tem o tester.",
+          "Sim, é ótimo para usar no dia a dia.",
+          "Muito bem, preparo-o para si."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Acha que isto dá para oferecer?",
+          "Ah, parece perfeito!",
+          "Ótimo, pode embrulhar para presente?"
+        ],
+        "B": [
+          "Sim! É um dos nossos artigos mais vendidos para presentes.",
+          "Muita gente compra isto para aniversários ultimamente!",
+          "Claro, faço um embrulho bonito."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Posso pagar com este cartão?",
+          "Ah, ótimo!",
+          "Então, pode dar-me também o recibo?"
+        ],
+        "B": [
+          "Sim, aceitamos todos os cartões!",
+          "Muito bem, também pode acumular pontos.",
+          "Aqui tem — e aqui está o seu recibo."
+        ]
+      }
+    }
+  ]
+}
+

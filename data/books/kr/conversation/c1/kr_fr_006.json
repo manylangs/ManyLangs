@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "006",
+  "cefr": "C1",
+  "title_fr": "Communication avec le client",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Merci de vérifier le document quand vous le pourrez,",
+    "Voici les mises à jour effectuées,",
+    "N'hésitez pas à me dire si vous avez d'autres demandes,",
+    "Serait-il possible d'ajuster le planning si nécessaire?,",
+    "J'attendrai votre retour après la révision,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Bonjour ! Vous avez un moment pour en parler ?",
+          "La plupart des modifications que vous aviez demandées ont été appliquées.",
+          "Je vous envoie tout de suite la version préliminaire."
+        ],
+        "B": [
+          "Oui, je suis disponible. De quoi s’agit-il ?",
+          "Ah super ! Quels éléments ont été mis à jour ?",
+          "Parfait. Je regarde et je vous fais un retour."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Avez-vous pu consulter le document précédent ?",
+          "J’ai reformulé certaines phrases pour que tout soit plus naturel.",
+          "Si vous le souhaitez, je peux préparer aussi une deuxième version."
+        ],
+        "B": [
+          "Oui, je l’ai bien parcouru !",
+          "Ah, cette partie est beaucoup plus claire maintenant.",
+          "Très bien. Vous pouvez passer à l’étape suivante."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Le tableau supplémentaire que vous aviez demandé sera terminé aujourd’hui.",
+          "J’ai également ajusté la structure pour rendre le flux de données plus lisible.",
+          "Merci de bien vouloir vérifier aussi cette partie."
+        ],
+        "B": [
+          "Oh merci, c’est rapide !",
+          "Génial. Je suis curieux de voir ce changement de structure.",
+          "D’accord, je regarde et je vous envoie mon feedback."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Serait-il possible de revoir légèrement le planning ?",
+          "Après vérification interne, il nous faudrait une journée supplémentaire.",
+          "Désolé pour le dérangement."
+        ],
+        "B": [
+          "Oui, nous avons encore un peu de marge, donc pas de souci.",
+          "Je comprends, c’est logique si vous avez besoin de plus de temps.",
+          "Allez-y. Tant que la date finale est respectée, c’est bon."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Pourriez-vous jeter un œil au design mis à jour ?",
+          "J’ai ajusté les couleurs et la mise en page selon vos préférences.",
+          "Si vous voulez une version avec un ton différent, je peux en préparer une."
+        ],
+        "B": [
+          "Oh, je regarde ça tout de suite !",
+          "Oui, c’est beaucoup plus propre et agréable visuellement.",
+          "Très bien. J’aimerais aussi comparer avec une autre version."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Est-ce bien la partie que vous vouliez renforcer dans votre feedback ?",
+          "J’ai retravaillé la section pour rendre le message beaucoup plus clair.",
+          "Si vous avez d’autres suggestions, je peux les intégrer rapidement."
+        ],
+        "B": [
+          "Oui, c’est exactement ça !",
+          "Effectivement, le message passe beaucoup mieux maintenant.",
+          "Parfait. Continuez dans cette direction."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Le fichier est un peu plus lourd qu’avant, cela vous convient-il ?",
+          "C’est parce que j’ai essayé de conserver une haute qualité d’image.",
+          "Si besoin, je peux aussi produire une version optimisée."
+        ],
+        "B": [
+          "Ah d’accord, pas de problème !",
+          "Vous avez raison, la qualité est plus importante.",
+          "Mais oui, une version optimisée pourrait être utile."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Souhaitez-vous un résumé avant la réunion ?",
+          "Je peux préparer une page unique adaptée aux présentations.",
+          "Si vous voulez, je peux m’en occuper tout de suite."
+        ],
+        "B": [
+          "Oh, ce serait vraiment utile !",
+          "Une page résumée facilitera beaucoup la préparation.",
+          "Oui, je veux bien. Je vérifierai dès que vous l’aurez partagé."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Avez-vous pu ouvrir le fichier que je vous ai envoyé hier ?",
+          "Je craignais qu’il y ait un souci de compatibilité.",
+          "Si nécessaire, je peux aussi le convertir dans un autre format."
+        ],
+        "B": [
+          "Oui, il s’ouvre sans problème !",
+          "Merci d’avoir vérifié.",
+          "Un autre format pourrait servir plus tard, mais celui-ci va très bien pour l’instant."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Nous prévoyons de livrer la version finale cette semaine.",
+          "Dès que la relecture interne sera terminée, je vous l’enverrai immédiatement.",
+          "Faites-moi savoir si la date doit être ajustée."
+        ],
+        "B": [
+          "Parfait, merci pour l’information !",
+          "Une fois la relecture faite, ce sera quasiment terminé.",
+          "Très bien. Je vous préviens s’il y a le moindre changement."
+        ]
+      }
+    }
+  ]
+}
+

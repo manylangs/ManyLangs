@@ -1,0 +1,167 @@
+﻿{
+  "chapter_id": "007",
+  "cefr": "A2",
+  "title_pt": "Utilizar os transportes",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Qual é a maneira mais rápida?,",
+    "O autocarro passa com frequência?,",
+    "O metro é mais prático.,",
+    "Faz-se a ligação aqui.,",
+    "O trânsito está muito intenso.,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Quanto tempo demora a chegar à estação daqui?",
+          "Acho que é um pouco longe para ir a pé.",
+          "Então o metro deve ser o mais rápido, certo?"
+        ],
+        "B": [
+          "Cerca de quinze minutos a pé.",
+          "Sim, também há um autocarro se preferires.",
+          "Sim, com o metro chegas lá depressa."
+        ]
+      }
+    },
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Este autocarro vai para o centro, não é?",
+          "A paragem aqui ao lado é mesmo conveniente.",
+          "Mas o autocarro passa com frequência?"
+        ],
+        "B": [
+          "Sim, este vai para o centro.",
+          "Sim, daqui chega bastante rápido.",
+          "Normalmente passa a cada sete ou oito minutos."
+        ]
+      }
+    },
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Onde faço ligação para a linha 2?",
+          "É mais complicado do que pensei.",
+          "Então, se apanhar a escada rolante, chego direto?"
+        ],
+        "B": [
+          "Segue as indicações ali à frente.",
+          "Da primeira vez pode ser um pouco confuso.",
+          "Sim, é mesmo ali ao fundo da escada rolante."
+        ]
+      }
+    },
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Tem sido difícil apanhar táxi ultimamente, não achas?",
+          "Parece que os pontos de embarque mudam sempre.",
+          "Espero que apareça um rapidamente."
+        ],
+        "B": [
+          "Sim, e ainda pior nas horas de ponta.",
+          "Sim, é por causa das obras aqui perto.",
+          "Não te preocupes, deve aparecer um já já."
+        ]
+      }
+    },
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Porque é que o trânsito está tão mau hoje?",
+          "O autocarro quase não se mexe.",
+          "Espero que não fiquemos atrasados."
+        ],
+        "B": [
+          "Acho que foi por causa de um acidente esta manhã.",
+          "Também estou preocupado, tenho um compromisso.",
+          "Deve melhorar dentro de algum tempo."
+        ]
+      }
+    },
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Qual é a melhor maneira de ir para o aeroporto?",
+          "Não tenho a certeza, tenho muita bagagem.",
+          "Então o autocarro para o aeroporto parece a melhor opção."
+        ],
+        "B": [
+          "O comboio para o aeroporto é bom se o horário coincidir.",
+          "Sim, com muita bagagem o táxi não é muito prático.",
+          "Sim, o autocarro é confortável e vai direto ao aeroporto."
+        ]
+      }
+    },
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Onde posso encontrar uma estação de bicicletas?",
+          "A aplicação mostra que há uma aqui perto.",
+          "Então só tenho de caminhar um bocadinho."
+        ],
+        "B": [
+          "Fica mesmo ali, do outro lado da passadeira.",
+          "Sim, a dois ou três minutos daqui.",
+          "Deve haver muitas bicicletas disponíveis."
+        ]
+      }
+    },
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Esta é a linha certa do metro, não é?",
+          "Os nomes das estações são tão parecidos que fiquei confuso.",
+          "Ainda bem, pensei que tinha apanhado o metro errado."
+        ],
+        "B": [
+          "Sim, estás na direção certa.",
+          "É normal ficares um pouco confuso no início.",
+          "Não te preocupes, a tua estação está quase a chegar."
+        ]
+      }
+    },
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Onde posso carregar o meu cartão de transporte?",
+          "Posso fazê-lo numa loja também, não é?",
+          "Então vou carregá-lo mesmo aqui."
+        ],
+        "B": [
+          "Também podes carregá-lo nas máquinas do metro.",
+          "Sim, as lojas também fazem isso.",
+          "É rápido e muito simples."
+        ]
+      }
+    },
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Acham que o último metro já passou?",
+          "Acho que chegámos mesmo em cima da hora.",
+          "Há outra opção além do táxi?"
+        ],
+        "B": [
+          "Se calhar ainda tens um pouco de tempo.",
+          "Ao fim de semana os metros demoram mais.",
+          "Há um autocarro noturno, podes apanhar esse."
+        ]
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "a2",
+    "id": "005"
+  },
+  "title": {
+    "target": "-고 (연결)",
+    "en": "",
+    "es": "-고 (Y / Conexión)",
+    "fr": "",
+    "pt": ""
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "-고는 두 가지 이상의 행동이나 상태를 자연스럽게 이어 줄 때 사용합니다.",
+        "en": "",
+        "es": "La forma -고 se usa para conectar de manera natural dos o más acciones o estados.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "앞 문장과 뒤 문장이 같은 주제로 연결될 때 자주 사용됩니다.",
+        "en": "",
+        "es": "Se usa a menudo cuando las dos oraciones están relacionadas con el mismo tema.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "시간의 흐름에 따라 순서대로 일어난 행동을 말할 때 쓰입니다.",
+        "en": "",
+        "es": "Se utiliza para describir acciones que ocurrieron en orden con el paso del tiempo.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "사람의 감정이나 상태가 이어질 때도 사용할 수 있습니다.",
+        "en": "",
+        "es": "También puede usarse cuando continúan emociones o estados.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "형용사와 동사 모두에 붙여 사용할 수 있습니다.",
+        "en": "",
+        "es": "Puede unirse tanto a verbos como a adjetivos.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "간단한 나열이나 정보 연결에도 적합합니다.",
+        "en": "",
+        "es": "Es adecuada para enumeraciones simples o para conectar información.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "반복적인 행동을 나열할 때 자연스럽습니다.",
+        "en": "",
+        "es": "Es natural al enumerar acciones repetidas.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "비슷한 성격의 문장을 이어 말할 때 자주 쓰입니다.",
+        "en": "",
+        "es": "Se utiliza a menudo para unir oraciones con significados similares.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "앞 문장의 결과가 뒤 문장 내용에 영향을 줄 때 쓰이기도 합니다.",
+        "en": "",
+        "es": "Puede usarse cuando la primera oración influye en la situación de la siguiente.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "구어체와 문어체 모두에서 가장 널리 쓰이는 연결 표현입니다.",
+        "en": "",
+        "es": "Es una de las formas de conexión más comunes tanto en el lenguaje hablado como en el escrito.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "학교에 가고 친구를 만났어요.",
+        "en": "",
+        "es": "Fui a la escuela y me encontré con un amigo.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "밥을 먹고 산책했어요.",
+        "en": "",
+        "es": "Comí y di un paseo.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "샤워하고 잠을 잤어요.",
+        "en": "",
+        "es": "Me duché y me fui a dormir.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "책을 읽고 메모를 했어요.",
+        "en": "",
+        "es": "Leí un libro y tomé notas.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "빵을 사고 우유도 샀어요.",
+        "en": "",
+        "es": "Compré pan y también compré leche.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "버스를 타고 회사에 갔어요.",
+        "en": "",
+        "es": "Tomé el autobús y fui al trabajo.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "청소하고 빨래했어요.",
+        "en": "",
+        "es": "Limpié y lavé la ropa.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "공부하고 쉬었어요.",
+        "en": "",
+        "es": "Estudié y descansé.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "영화를 보고 집에 갔어요.",
+        "en": "",
+        "es": "Vi una película y me fui a casa.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "식사하고 바로 나왔어요.",
+        "en": "",
+        "es": "Comí y salí enseguida.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "운동하고 씻었어요.",
+        "en": "",
+        "es": "Hice ejercicio y me lavé.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "산책하고 사진을 찍었어요.",
+        "en": "",
+        "es": "Di un paseo y saqué algunas fotos.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "아침에 일어나고 창문을 열었어요.",
+        "en": "",
+        "es": "Me desperté por la mañana y abrí la ventana.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "커피를 마시고 컴퓨터를 켰어요.",
+        "en": "",
+        "es": "Tomé café y encendí el ordenador.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "회의를 하고 점심을 먹었어요.",
+        "en": "",
+        "es": "Tuve una reunión y luego almorcé.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "버스를 타고 강을 건넜어요.",
+        "en": "",
+        "es": "Tomé el autobús y crucé el río.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "옷을 사고 선물을 골랐어요.",
+        "en": "",
+        "es": "Compré ropa y elegí un regalo.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "밥을 먹고 잠깐 쉬었어요.",
+        "en": "",
+        "es": "Comí y descansé un momento.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "가방을 찾고 택시에 탔어요.",
+        "en": "",
+        "es": "Encontré mi bolso y cogí un taxi.",
+        "fr": "",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "수업 듣고 도서관에서 공부했어요.",
+        "en": "",
+        "es": "Asistí a clase y estudié en la biblioteca.",
+        "fr": "",
+        "pt": ""
+      }
+    }
+  ]
+}

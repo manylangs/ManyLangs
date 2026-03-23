@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "a1",
+    "id": "004"
+  },
+  "title": {
+    "target": "이/가",
+    "en": "",
+    "es": "",
+    "fr": "Particule du sujet 이/가",
+    "pt": ""
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'이/가'는 문장에서 주어를 나타내는 조사이다.",
+        "en": "",
+        "es": "",
+        "fr": "« 이/가 » est une particule qui marque le sujet de la phrase.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침이 있으면 '이', 받침이 없으면 '가'를 쓴다.",
+        "en": "",
+        "es": "",
+        "fr": "On utilise « 이 » après une consonne finale et « 가 » après une voyelle.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'이/가'는 새로운 정보를 강조할 때 자주 쓰인다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle est souvent utilisée pour mettre en avant une information nouvelle.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "주어가 무엇인지 명확하게 알려 주는 기능이 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle indique clairement quel est le sujet.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "사람, 동물, 사물 등 어떤 명사에도 붙을 수 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle peut se lier à des personnes, animaux, objets ou à tout nom.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문장에서 초점을 주어에 둘 때 자연스럽게 사용된다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle s’emploie naturellement lorsqu’on veut mettre l’accent sur le sujet.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "비교되는 대상이 있을 때 '이/가'가 더 선명하게 대비된다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle contraste clairement les sujets lorsqu’on compare deux éléments.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "감정이나 상태를 표현할 때도 자주 사용된다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle est fréquemment utilisée pour exprimer un état ou une émotion.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'이/가'는 상황 설명 문장에서 필수적으로 등장한다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle apparaît souvent dans les phrases descriptives.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "한국어에서 가장 기본적이고 많이 쓰이는 조사 중 하나이다.",
+        "en": "",
+        "es": "",
+        "fr": "C’est l’une des particules les plus essentielles et courantes en coréen.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "나는 배가 고프다.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai faim.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그는 눈이 크다.",
+        "en": "",
+        "es": "",
+        "fr": "Il a de grands yeux.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "고양이가 운다.",
+        "en": "",
+        "es": "",
+        "fr": "Le chat pleure.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "강아지가 뛴다.",
+        "en": "",
+        "es": "",
+        "fr": "Le chiot court.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "문이 열린다.",
+        "en": "",
+        "es": "",
+        "fr": "La porte s’ouvre.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "불이 켜진다.",
+        "en": "",
+        "es": "",
+        "fr": "La lumière s’allume.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "바람이 분다.",
+        "en": "",
+        "es": "",
+        "fr": "Le vent souffle.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "비가 내린다.",
+        "en": "",
+        "es": "",
+        "fr": "Il pleut.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "소리가 들린다.",
+        "en": "",
+        "es": "",
+        "fr": "Un son est entendu.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "별이 빛난다.",
+        "en": "",
+        "es": "",
+        "fr": "Les étoiles brillent.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "시간이 빠르다.",
+        "en": "",
+        "es": "",
+        "fr": "Le temps passe vite.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "꽃이 핀다.",
+        "en": "",
+        "es": "",
+        "fr": "Les fleurs fleurissent.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "아이들이 공을 던진다.",
+        "en": "",
+        "es": "",
+        "fr": "Les enfants lancent une balle.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "차가 천천히 멈춘다.",
+        "en": "",
+        "es": "",
+        "fr": "La voiture s’arrête lentement.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "음악이 크게 울린다.",
+        "en": "",
+        "es": "",
+        "fr": "La musique est forte.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "버스가 곧 도착한다.",
+        "en": "",
+        "es": "",
+        "fr": "Le bus arrive bientôt.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "지갑이 책상 위에 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Le portefeuille est sur le bureau.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "전화가 계속 울린다.",
+        "en": "",
+        "es": "",
+        "fr": "Le téléphone continue de sonner.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "방이 조금 어둡다.",
+        "en": "",
+        "es": "",
+        "fr": "La pièce est un peu sombre.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "길이 많이 막힌다.",
+        "en": "",
+        "es": "",
+        "fr": "La route est très encombrée.",
+        "pt": ""
+      }
+    }
+  ]
+}

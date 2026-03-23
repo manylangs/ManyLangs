@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "004",
+  "cefr": "B2",
+  "title_fr": "Travail à temps partiel",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Quels sont les horaires de travail ?,",
+    "Est-ce possible même sans expérience ?,",
+    "Quand puis-je passer l’entretien ?,",
+    "Quel est le salaire horaire ?,",
+    "Le travail du week-end est-il obligatoire ?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Bonjour, j’ai vu votre annonce pour un emploi à temps partiel et j’aimerais quelques renseignements.",
+          "Le poste est-il toujours ouvert aux candidats ?",
+          "Parfait, je vais commencer par remplir le formulaire."
+        ],
+        "B": [
+          "Bonjour ! Oui, merci de votre intérêt.",
+          "Oui, nous recrutons encore, vous pouvez donc postuler.",
+          "Une fois le formulaire rempli, je le vérifierai immédiatement."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Pourriez-vous me dire quels sont les horaires de travail ?",
+          "Ah, des horaires l’après-midi — ça me convient très bien.",
+          "D’accord, je noterai que je suis disponible à ces heures-là."
+        ],
+        "B": [
+          "En semaine, c’est de 13h à 18h.",
+          "Oui, beaucoup d’étudiants préfèrent ce créneau.",
+          "Très bien, indiquez-le simplement sur votre fiche."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Je n’ai presque pas d’expérience. Est-ce un problème ?",
+          "Ah, vous proposez une formation !",
+          "Super, j’apprendrai vite et je ferai de mon mieux."
+        ],
+        "B": [
+          "Ce n’est pas un souci, beaucoup de débutants commencent ici.",
+          "Une courte formation de base suffit.",
+          "Tant que vous êtes motivé, vous vous habituerez rapidement."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Pourriez-vous m’indiquer le salaire horaire ?",
+          "Oh, c’est mieux que ce que j’imaginais.",
+          "Très bien, j’ai noté l’information."
+        ],
+        "B": [
+          "Le taux horaire actuel est de 11 000 wons.",
+          "Le week-end, il y a une majoration de 1 000 wons.",
+          "Si vous avez d’autres questions, n’hésitez pas."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Le travail le week-end est-il obligatoire ?",
+          "Ah, c’est optionnel ? Très bonne nouvelle.",
+          "Alors je préciserai que je travaillerai selon mes disponibilités."
+        ],
+        "B": [
+          "Non, ce n’est pas obligatoire. Vous choisissez vos créneaux.",
+          "Certaines personnes ne travaillent que le week-end, d’ailleurs.",
+          "Indiquez simplement vos disponibilités."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Quand pourrais-je passer l’entretien ?",
+          "Wow, aussi rapidement ?",
+          "Très bien, réservez-moi ce créneau."
+        ],
+        "B": [
+          "Nous sommes disponibles cet après-midi ou demain matin.",
+          "Oui, notre planning est flexible, nous pouvons organiser cela rapidement.",
+          "Parfait, je note l’horaire et je vous recontacte."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Comment se déroule généralement le travail au début ?",
+          "Oui, commencer par des tâches simples me semble bien.",
+          "D’accord, je progresserai petit à petit."
+        ],
+        "B": [
+          "Au début, vous ferez des tâches simples comme accueillir les clients ou organiser l’espace.",
+          "Quand vous serez à l’aise, vous pourrez apprendre d’autres tâches.",
+          "Posez des questions quand vous en avez besoin."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Y a-t-il une pause déjeuner ?",
+          "Ah, des petites pauses flexibles, c’est parfait.",
+          "Très bien, je prendrai des pauses au besoin."
+        ],
+        "B": [
+          "Le service est court, donc il n’y a pas de vraie pause déjeuner.",
+          "Mais vous pouvez prendre de courtes pauses quand c’est nécessaire.",
+          "Si quelque chose vous gêne, dites-le nous."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Que dois-je porter au travail ?",
+          "Casual ? C’est simple alors.",
+          "D’accord, je viendrai habillé proprement et confortablement."
+        ],
+        "B": [
+          "Une tenue décontractée convient très bien.",
+          "Assurez-vous simplement qu’elle soit soignée.",
+          "Si besoin, nous fournissons un tablier."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Y a-t-il quelque chose à préparer avant mon premier jour ?",
+          "Très bien, je peux préparer ça rapidement.",
+          "Parfait, j’aurai tout prêt avant de venir."
+        ],
+        "B": [
+          "Apportez seulement votre pièce d’identité et de quoi écrire.",
+          "Nous fournissons tous les supports de formation.",
+          "Le premier jour, venez simplement un peu en avance."
+        ]
+      }
+    }
+  ]
+}
+

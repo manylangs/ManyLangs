@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b2",
+    "id": "005"
+  },
+  "title": {
+    "target": "여행 계획",
+    "en": "Travel Planning",
+    "es": "Planificación de viaje",
+    "fr": "Planification de voyage",
+    "pt": "Planeamento de viagem"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "우리 여행 일정 한번 잡아볼까요?",
+            "en": "Shall we start planning our trip?",
+            "es": "¿Empezamos a planear nuestro viaje?",
+            "fr": "On commence à organiser notre voyage ?",
+            "pt": "Começamos a planear a nossa viagem?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 어디서부터 정해볼까요?",
+            "en": "Sure! Where should we begin?",
+            "es": "¡Sí, buena idea! ¿Por dónde empezamos?",
+            "fr": "Oui, bonne idée ! On commence par quoi ?",
+            "pt": "Sim, ótima ideia! Por onde começamos?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 이틀 정도는 여유 있게 보내고 싶어요.",
+            "en": "I’d like to have a couple of relaxed days if possible.",
+            "es": "Me gustaría tener uno o dos días un poco más relajados.",
+            "fr": "J’aimerais qu’on garde deux jours un peu plus tranquilles.",
+            "pt": "Gostava de ter um ou dois dias mais tranquilos."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아, 여유 일정 좋네요. 너무 빡빡하면 힘들잖아요.",
+            "en": "Oh, having slower days sounds perfect. Tight schedules get exhausting.",
+            "es": "Ah, días tranquilos suenan genial. Los planes muy ajustados cansan mucho.",
+            "fr": "Ah, des journées plus calmes, j’adore. Les plannings trop chargés, c’est fatiguant.",
+            "pt": "Ah, dias mais calmos sabem muito bem. Um plano demasiado apertado cansa."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요, 그럼 일정표에 그 부분은 넉넉하게 잡죠.",
+            "en": "Great, then let’s set aside enough free time on the schedule.",
+            "es": "Perfecto, entonces reservemos suficiente tiempo libre en el itinerario.",
+            "fr": "Super, alors bloquons suffisamment de temps libre dans le planning.",
+            "pt": "Perfeito, então reservemos bastante tempo livre no itinerário."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 그렇게 하면 이동도 편할 것 같아요.",
+            "en": "Yes, that will also make moving around easier.",
+            "es": "Sí, además eso hace que los desplazamientos sean más cómodos.",
+            "fr": "Parfait, ça rendra aussi les déplacements plus simples.",
+            "pt": "Sim, e assim os deslocamentos também ficam mais simples."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "예산을 대략 어떻게 나누면 좋을까요?",
+            "en": "How should we divide the budget?",
+            "es": "¿Cómo deberíamos dividir el presupuesto?",
+            "fr": "Comment devrions-nous répartir le budget ?",
+            "pt": "Como devemos dividir o orçamento?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "교통, 숙소, 식비로 먼저 나누면 편해요.",
+            "en": "It’s easiest if we split it into transport, lodging, and meals.",
+            "es": "Lo más fácil es dividirlo en transporte, alojamiento y comidas.",
+            "fr": "Le plus simple est de diviser en transport, hébergement et repas.",
+            "pt": "O mais fácil é dividir em transporte, alojamento e alimentação."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 식비를 조금 넉넉하게 잡는 게 좋겠네요.",
+            "en": "Oh, so we should allow a bit more for food.",
+            "es": "Ah, entonces conviene dejar un poco más para la comida.",
+            "fr": "Ah, donc il vaut mieux prévoir un peu plus pour la nourriture.",
+            "pt": "Ah, então convém deixar um pouco mais para as refeições."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "여행지 음식이 맛있다니까요!",
+            "en": "The food there is supposed to be amazing!",
+            "es": "Dicen que la comida local es deliciosa.",
+            "fr": "La cuisine locale est réputée excellente !",
+            "pt": "Dizem que a comida local é excelente!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 숙소 비용은 제가 다시 계산해볼게요.",
+            "en": "Then I’ll recalculate the accommodation cost.",
+            "es": "Bien, volveré a calcular el coste del alojamiento.",
+            "fr": "D’accord, je recalculerai le budget pour l’hébergement.",
+            "pt": "Certo, vou recalcular os custos do alojamento."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 숙소 옵션 몇 개 찾아서 공유드릴게요.",
+            "en": "I’ll also look up a few lodging options and share them with you.",
+            "es": "Buscaré algunas opciones de alojamiento y te las compartiré.",
+            "fr": "Je vais chercher quelques options d’hébergement et te les partager.",
+            "pt": "Vou procurar algumas opções de alojamento e partilho contigo."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "필수로 가야 할 명소가 있을까요?",
+            "en": "Are there any must-visit spots?",
+            "es": "¿Hay lugares que debamos visitar sí o sí?",
+            "fr": "Y a-t-il des lieux incontournables ?",
+            "pt": "Há locais que não podemos perder?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 여기 전망대는 다들 꼭 가보라고 해요.",
+            "en": "Yes, everyone recommends visiting this observatory.",
+            "es": "Sí, todos recomiendan visitar ese mirador.",
+            "fr": "Oui, tout le monde recommande cet observatoire.",
+            "pt": "Sim, toda a gente recomenda visitar esse miradouro."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 야경이 그렇게 아름답다니까 궁금하네요.",
+            "en": "Really? The night view is that beautiful? Now I’m curious.",
+            "es": "¿De verdad? ¿La vista nocturna es tan bonita? Ahora tengo más ganas de ir.",
+            "fr": "Vraiment ? La vue nocturne est si belle ? Ça me donne envie d’y aller.",
+            "pt": "A sério? A vista noturna é assim tão bonita? Agora fiquei curioso."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "사진도 엄청 잘 나온다고 하더라고요.",
+            "en": "People say the photos turn out incredible.",
+            "es": "Dicen que las fotos salen increíbles.",
+            "fr": "On dit que les photos y sont magnifiques.",
+            "pt": "Dizem que as fotos ficam incríveis."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요! 그럼 그 장소는 첫날에 넣죠.",
+            "en": "Alright, let’s put that spot on the first day.",
+            "es": "Perfecto, entonces pongámoslo en el primer día.",
+            "fr": "Très bien, ajoutons cet endroit au programme du premier jour.",
+            "pt": "Perfeito, então vamos colocá-lo no primeiro dia."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "첫날 일정에 넣으면 동선도 괜찮아요.",
+            "en": "Adding it on day one works well with the route.",
+            "es": "Colocarlo el primer día encaja bien con la ruta.",
+            "fr": "Le mettre le premier jour fonctionne bien avec l’itinéraire.",
+            "pt": "Colocá-lo no primeiro dia combina bem com o percurso."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "숙소는 어떤 스타일이 좋아요? 조용한 곳이요?",
+            "en": "What kind of accommodation do you prefer? Something quiet?",
+            "es": "¿Qué tipo de alojamiento prefieres? ¿Algo tranquilo?",
+            "fr": "Quel type d’hébergement préfères-tu ? Un endroit calme ?",
+            "pt": "Que tipo de alojamento preferes? Um lugar mais calmo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 조용한 것도 좋지만 접근성이 우선이에요.",
+            "en": "I like quiet places too, but location matters more to me.",
+            "es": "Me gustan los lugares tranquilos, pero la accesibilidad es lo más importante.",
+            "fr": "J’aime le calme, mais l’accessibilité reste la priorité.",
+            "pt": "Gosto de tranquilidade, mas a acessibilidade é mais importante."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 접근성이 좋으면 일정 짜기 편하죠.",
+            "en": "Oh, good accessibility definitely makes planning easier.",
+            "es": "Ah, una buena ubicación facilita toda la planificación.",
+            "fr": "Ah oui, une bonne localisation facilite toute l’organisation.",
+            "pt": "Ah, uma boa localização facilita muito o planeamento."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "뭐든 이동 시간이 줄면 좋잖아요.",
+            "en": "Short travel times make everything smoother, you know?",
+            "es": "Cuanto menos tiempo pasemos en transporte, mejor.",
+            "fr": "Moins on passe de temps en trajets, mieux c’est.",
+            "pt": "Quanto menos tempo perdermos em deslocações, melhor."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 역 근처 숙소로 범위를 좁혀볼게요.",
+            "en": "Then I’ll narrow it down to places near the station.",
+            "es": "Bien, entonces reduciré la búsqueda a hoteles cerca de la estación.",
+            "fr": "Alors je vais limiter la recherche aux hôtels près de la gare.",
+            "pt": "Certo, vou limitar a pesquisa a hotéis perto da estação."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "근처에 깔끔한 호텔도 몇 개 보이네요.",
+            "en": "I see a few clean hotels around that area.",
+            "es": "Veo algunos hoteles limpios en esa zona.",
+            "fr": "Je vois justement quelques hôtels propres dans ce secteur.",
+            "pt": "Vejo alguns hotéis limpos naquela zona."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "교통편은 미리 예약할까요?",
+            "en": "Should we book transportation in advance?",
+            "es": "¿Deberíamos reservar el transporte con antelación?",
+            "fr": "Devons-nous réserver les transports à l’avance ?",
+            "pt": "Devemos reservar o transporte com antecedência?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 미리 해두면 마음이 편해요.",
+            "en": "Yes, booking early gives peace of mind.",
+            "es": "Sí, reservar pronto da tranquilidad.",
+            "fr": "Oui, réserver tôt rassure.",
+            "pt": "Sim, reservar cedo dá muito mais segurança."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 성수기라 매진될 수도 있겠네요.",
+            "en": "Ah, since it’s peak season, things might sell out.",
+            "es": "Ah, en temporada alta todo se agota rápido.",
+            "fr": "Ah oui, en haute saison tout peut vite être complet.",
+            "pt": "Pois, sendo época alta, pode esgotar rapidamente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "특히 기차표는 빨리 없어지더라고요.",
+            "en": "Train tickets in particular disappear quickly.",
+            "es": "Los billetes de tren desaparecen especialmente rápido.",
+            "fr": "Les billets de train partent surtout très vite.",
+            "pt": "Os bilhetes de comboio desaparecem especialmente depressa."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 오늘 안에 결제해둘게요.",
+            "en": "Okay, I’ll book everything today.",
+            "es": "Perfecto, haré las reservas hoy mismo.",
+            "fr": "Très bien, je ferai les réservations aujourd’hui.",
+            "pt": "Perfeito, faço as reservas ainda hoje."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "제가 시간표 보내드릴게요.",
+            "en": "I’ll send you the timetable.",
+            "es": "Te enviaré el horario en un momento.",
+            "fr": "Je t’envoie l’horaire tout de suite.",
+            "pt": "Já te envio o horário."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 투어 프로그램도 하나 넣어볼까요?",
+            "en": "Should we add a tour program too?",
+            "es": "¿Añadimos también un tour guiado?",
+            "fr": "On ajoute aussi un programme de visite guidée ?",
+            "pt": "Colocamos também um passeio guiado no plano?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋죠! 요즘 반나절 투어가 인기가 많대요.",
+            "en": "Good idea! Half-day tours are really popular now.",
+            "es": "Buena idea. Los tours de medio día son muy populares ahora.",
+            "fr": "Bonne idée ! Les visites d’une demi-journée sont très populaires.",
+            "pt": "Boa ideia! As visitas de meio dia estão muito populares."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 역사 투어도 괜찮겠어요!",
+            "en": "Oh, a historical tour sounds interesting!",
+            "es": "Oh, un tour histórico suena interesante.",
+            "fr": "Oh, une visite historique, ça me tente bien !",
+            "pt": "Oh, uma visita histórica parece interessante!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "도시 설명 들으면서 돌아다니면 더 재밌어요.",
+            "en": "It’s more fun when you explore with explanations.",
+            "es": "Con explicaciones se disfruta más de los lugares.",
+            "fr": "Avec les explications, on profite encore plus des lieux.",
+            "pt": "Com explicações, aproveitamos ainda mais os lugares."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 일정 겹치는지 한번 체크해볼게요.",
+            "en": "Then I’ll check if it fits into the schedule.",
+            "es": "Bien, revisaré si encaja con el itinerario.",
+            "fr": "Alors je vais vérifier si ça s’intègre au planning.",
+            "pt": "Certo, vou verificar se encaixa no itinerário."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "겹치지 않으면 바로 예약하죠.",
+            "en": "If it doesn’t overlap, we can book it right away.",
+            "es": "Si no coincide con nada, lo reservamos enseguida.",
+            "fr": "Si ça ne chevauche rien, on réservera immédiatement.",
+            "pt": "Se não houver conflito de horários, reservamos logo."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "짐은 최소한으로 챙기는 게 좋겠죠?",
+            "en": "We should keep our luggage light, right?",
+            "es": "Deberíamos viajar ligeros, ¿verdad?",
+            "fr": "On devrait voyager léger, non ?",
+            "pt": "Devemos viajar com pouca bagagem, certo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 가벼울수록 이동이 편해요.",
+            "en": "Yes, lighter bags make traveling easier.",
+            "es": "Sí, viajar ligero hace todo más fácil.",
+            "fr": "Oui, voyager léger rend tout plus agréable.",
+            "pt": "Sim, quanto mais leve viajarmos, melhor."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 기후 차이가 크면 옷을 잘 챙겨야겠네요.",
+            "en": "Ah, if the temperature changes a lot, we need to pack smart.",
+            "es": "Ah, si el clima cambia mucho, tendremos que elegir bien la ropa.",
+            "fr": "Ah, s’il fait plus froid le matin et le soir, il faudra bien choisir les vêtements.",
+            "pt": "Ah, se a temperatura variar muito, precisamos escolher bem a roupa."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아침·저녁으로는 쌀쌀하대요.",
+            "en": "It gets chilly in the mornings and evenings.",
+            "es": "Dicen que por la mañana y la noche hace más frío.",
+            "fr": "Le climat varie pas mal selon les moments de la journée.",
+            "pt": "De manhã e à noite costuma arrefecer bastante."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 체크리스트 만들어서 공유할게요.",
+            "en": "Okay, I’ll make a packing checklist and share it.",
+            "es": "Perfecto, prepararé una lista y te la compartiré.",
+            "fr": "Très bien, je ferai une checklist et te la partagerai.",
+            "pt": "Perfeito, faço uma checklist e partilho contigo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "체크리스트 있으면 준비가 훨씬 수월해요.",
+            "en": "A checklist will make packing much simpler.",
+            "es": "Una lista nos ayudará a preparar todo sin problemas.",
+            "fr": "Une checklist facilitera vraiment la préparation.",
+            "pt": "Uma checklist facilita muito a preparação."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "여행 중에 꼭 해보고 싶은 음식 있어요?",
+            "en": "Is there any food you definitely want to try on the trip?",
+            "es": "¿Hay alguna comida que quieras probar sí o sí?",
+            "fr": "Il y a une spécialité que tu veux absolument goûter ?",
+            "pt": "Há algum prato que queiras mesmo experimentar?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 현지 전통 음식이 제일 궁금해요.",
+            "en": "I’m most curious about the local traditional food.",
+            "es": "Tengo mucha curiosidad por la comida tradicional.",
+            "fr": "Je suis surtout curieux des plats traditionnels du coin.",
+            "pt": "Tenho muita curiosidade pelos pratos tradicionais."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 그거 유명하던데요! 꼭 먹어보고 싶어요.",
+            "en": "Oh, that one’s famous! I really want to try it too.",
+            "es": "Oh, ese plato es famoso. Yo también quiero probarlo.",
+            "fr": "Oh oui, ce plat est très connu ! J’ai envie de le goûter aussi.",
+            "pt": "Oh, esse é famoso! Eu também quero provar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "줄이 길다고 해서 더 기대돼요.",
+            "en": "People say the lines are long, which makes me even more excited.",
+            "es": "Dicen que siempre hay cola, así que me emociona más.",
+            "fr": "On dit qu’il y a toujours la queue, ce qui donne encore plus envie.",
+            "pt": "Dizem que há sempre fila, o que me deixa ainda mais entusiasmado."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 식당 예약도 가능한지 찾아볼게요.",
+            "en": "Then I’ll check if the restaurant takes reservations.",
+            "es": "Perfecto, revisaré si el restaurante acepta reservas.",
+            "fr": "D’accord, je vérifierai si le restaurant accepte les réservations.",
+            "pt": "Certo, vou ver se o restaurante aceita reservas."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "예약되면 기다릴 필요 없을 거예요.",
+            "en": "If we book ahead, we won’t have to wait.",
+            "es": "Con reserva evitaremos esperar.",
+            "fr": "Avec une réservation, on n’aura pas besoin d’attendre.",
+            "pt": "Com reserva não precisamos de esperar."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "여행 보험도 들어둘까요?",
+            "en": "Should we get travel insurance as well?",
+            "es": "¿Tomamos también un seguro de viaje?",
+            "fr": "On prend une assurance voyage aussi ?",
+            "pt": "Fazemos também um seguro de viagem?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 저는 보험을 항상 드는 편이에요.",
+            "en": "Yes, I usually get insurance for every trip.",
+            "es": "Sí, siempre contrato un seguro cuando viajo.",
+            "fr": "Oui, je prends toujours une assurance quand je voyage.",
+            "pt": "Sim, costumo fazer seguro em todas as viagens."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "맞아요, 혹시 모르니까 대비하는 게 좋죠.",
+            "en": "Right, it’s always better to be prepared.",
+            "es": "Sí, es mejor estar preparados por si acaso.",
+            "fr": "Oui, mieux vaut être prudent au cas où.",
+            "pt": "Pois é, mais vale prevenir do que remediar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "특히 해외는 예측이 어렵잖아요.",
+            "en": "Especially abroad—you never know what might happen.",
+            "es": "Especialmente en el extranjero, nunca se sabe qué puede pasar.",
+            "fr": "À l’étranger, on ne sait jamais ce qui peut arriver.",
+            "pt": "No estrangeiro nunca se sabe o que pode acontecer."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 저렴한 플랜으로 알아볼게요.",
+            "en": "Then I’ll look into the cheaper plans.",
+            "es": "Bien, buscaré las opciones más económicas.",
+            "fr": "D’accord, je regarderai les options les moins chères.",
+            "pt": "Certo, vou procurar planos mais económicos."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "괜찮은 플랜 몇 개 추천드릴게요.",
+            "en": "I’ll suggest a few good options.",
+            "es": "Te recomendaré algunas buenas opciones.",
+            "fr": "Je te proposerai quelques bons plans.",
+            "pt": "Vou recomendar-te algumas boas opções."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "대략적인 일정표는 이제 나온 것 같네요!",
+            "en": "Looks like we’ve got the rough itinerary done!",
+            "es": "Creo que ya tenemos el itinerario general listo.",
+            "fr": "On dirait que l’itinéraire général est presque finalisé !",
+            "pt": "Acho que já temos o itinerário geral pronto!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 틀이 잡히니까 훨씬 수월하네요.",
+            "en": "Yes, having a structure makes everything easier.",
+            "es": "Sí, tener una estructura clara facilita mucho todo.",
+            "fr": "Oui, une structure claire rend tout plus simple.",
+            "pt": "Sim, ter uma estrutura clara facilita tudo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 보기 좋게 정리됐네요. 한눈에 들어와요.",
+            "en": "Oh, it’s organized really well—easy to follow.",
+            "es": "Oh, está muy bien organizado. Se entiende de un vistazo.",
+            "fr": "Oh, c’est vraiment bien organisé — on voit tout d’un coup d’œil.",
+            "pt": "Uau, está muito bem organizado — percebe-se tudo num instante."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "확인해보니 이동 시간도 무난해요.",
+            "en": "The travel times look manageable too.",
+            "es": "Los tiempos de desplazamiento también se ven razonables.",
+            "fr": "Les temps de trajet ont l’air raisonnables aussi.",
+            "pt": "Os tempos de deslocação também parecem razoáveis."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 세부 코스는 제가 이어서 정리해볼게요.",
+            "en": "Great, I’ll finalize the detailed route next.",
+            "es": "Perfecto, ahora prepararé el itinerario detallado.",
+            "fr": "Parfait, je finaliserai le parcours détaillé.",
+            "pt": "Perfeito, agora trato do percurso detalhado."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "세부 코스 완성되면 바로 공유해주세요!",
+            "en": "Send it to me once you finish the detailed plan!",
+            "es": "Cuando lo tengas listo, envíamelo.",
+            "fr": "Envoie-moi le parcours détaillé quand il sera prêt !",
+            "pt": "Quando terminares o plano detalhado, envia-mo."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+﻿{
+  "chapter_id": "005",
+  "cefr": "C1",
+  "title_en": "Leading Meetings",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Let’s start by outlining today’s agenda,",
+    "Is now a good time to share your thoughts?",
+    "Would this direction work for everyone?",
+    "I can coordinate things if needed,",
+    "I’ll整理 everything and finalize the meeting notes,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Before we begin, let me briefly summarize today’s agenda.",
+          "Great, I’ll update the draft based on that suggestion.",
+          "Alright, let’s tentatively mark this as our working decision."
+        ],
+        "B": [
+          "Sounds good! What order would you like to follow?",
+          "Nice, that approach will make the flow much clearer.",
+          "Sure, we can always revise it later if necessary."
+        ]
+      }
+    },
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Can everyone see the shared screen clearly?",
+          "In that case, we might need to streamline this explanation section.",
+          "Alright, I’ll take responsibility for revising this paragraph."
+        ],
+        "B": [
+          "Yes, it’s clear! The layout looks clean too.",
+          "Right, the content feels a bit long at the moment.",
+          "Sounds good. I’ll review it again after your revision."
+        ]
+      }
+    },
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Does anyone have thoughts on this direction before we move on?",
+          "Oh, that’s a great point — I hadn’t considered that angle.",
+          "Good idea. I’ll incorporate that feedback and整理 a few alternatives."
+        ],
+        "B": [
+          "Hmm, I think it’d be helpful to discuss potential risks at this stage.",
+          "Yes, with that in mind, the approach might need slight adjustment.",
+          "Perfect. Then we can compare the alternatives side by side."
+        ]
+      }
+    },
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Is everyone comfortable proceeding with this timeline?",
+          "I see — then we should add a mid-point check-in.",
+          "Alright, I’ll update the schedule and share an updated version."
+        ],
+        "B": [
+          "I’m fine with it, though the deadline looks a bit tight.",
+          "Right, a mid-point review would make things more stable.",
+          "Sounds good. I’ll give more feedback once I review the revision."
+        ]
+      }
+    },
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "I think we should revisit the priority order we discussed earlier.",
+          "Great, that standard will make task allocation much clearer.",
+          "Okay, I’ll整理 the priorities and share a refined version."
+        ],
+        "B": [
+          "True, the list feels a bit overwhelming as it is.",
+          "Yes, prioritizing based on impact and urgency should help a lot.",
+          "Perfect. Let me know once your整理 version is ready."
+        ]
+      }
+    },
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Shall we move on to the next agenda item?",
+          "Alright, I’ll extend the discussion time a bit for this point.",
+          "Great, once整理 is complete, I’ll ask for everyone’s final input."
+        ],
+        "B": [
+          "Sure, we can move on — the previous item is mostly settled.",
+          "Right, this section could use a bit more discussion.",
+          "Sounds good. Please share the整理 version when ready."
+        ]
+      }
+    },
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "How does this document structure look to you all?",
+          "Got it — rearranging the structure should improve readability.",
+          "Alright, I’ll reorganize the flow to match that suggestion."
+        ],
+        "B": [
+          "It looks good overall, but the conclusion appears too early.",
+          "Yes, placing it later will make the document easier to follow.",
+          "Great! I’ll review it once you update the structure."
+        ]
+      }
+    },
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Would you be able to take responsibility for this section?",
+          "I see — adjusting the timeline should make it manageable.",
+          "Great, then please proceed according to the updated schedule."
+        ],
+        "B": [
+          "I can take it, but today’s a bit tight for me.",
+          "Right, with an extra day, I can handle it more thoroughly.",
+          "Sounds good. Share your availability and I’ll coordinate accordingly."
+        ]
+      }
+    },
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Any additional thoughts on what we’ve covered so far?",
+          "Ah, that’s something we can easily resolve with an earlier adjustment.",
+          "Alright, I’ll整理 a proposal and bring it back to the team."
+        ],
+        "B": [
+          "I have one! It might overlap slightly with an external schedule.",
+          "Yes, but that shouldn’t be a major issue.",
+          "Perfect, let’s review everything together once the proposal is ready."
+        ]
+      }
+    },
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Alright, let’s整理 today’s discussion here.",
+          "Sure, I’ll prepare additional materials before the next meeting.",
+          "Thanks everyone for your cooperation today!"
+        ],
+        "B": [
+          "Yes, everything seems well-organized!",
+          "Great, then let’s review the materials together next time.",
+          "Good work today — thanks for leading the meeting!"
+        ]
+      }
+    }
+  ]
+}
+

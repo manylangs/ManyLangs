@@ -1,0 +1,175 @@
+{
+  "chapter_id": "002",
+  "cefr": "A1",
+  "title_es": "Presentación_personal",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Soy ~.",
+    "Mucho gusto.",
+    "¿De dónde eres?",
+    "¿A qué te dedicas?",
+    "¿Cuál es tu pasatiempo?"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "¡Hola! Soy Minseo.",
+          "¡Sí! Soy de Corea.",
+          "¡Mucho gusto también!"
+        ],
+        "B": [
+          "¡Hola! Yo soy Jihun.",
+          "¿Ah sí? Mucho gusto.",
+          "¡Ojalá nos veamos seguido!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Soy estudiante universitario(a). ¿A qué te dedicas?",
+          "¡Guau, suena genial!",
+          "¡Hablemos más de eso algún día!"
+        ],
+        "B": [
+          "Trabajo en una empresa.",
+          "Pero todavía tengo mucho que aprender.",
+          "Claro, ¡habla conmigo cuando quieras!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "¿Cuál es tu pasatiempo?",
+          "¡Oh, a mí también me gusta caminar!",
+          "¡Deberíamos caminar juntos algún día!"
+        ],
+        "B": [
+          "Me gusta escuchar música o salir a caminar.",
+          "¡Qué curioso que tengamos el mismo hobby!",
+          "¡Sí! Sería genial."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "¿Dónde vives?",
+          "¡Ah, esa zona tiene un buen ambiente!",
+          "Avísame si algún día estoy por ahí."
+        ],
+        "B": [
+          "Vivo cerca de la universidad.",
+          "Sí, es tranquilo y agradable.",
+          "¡Claro! Me encantaría vernos."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Estoy estudiando coreano últimamente.",
+          "Sí, la pronunciación es muy difícil.",
+          "Si tienes algún consejo, ¡dímelo!"
+        ],
+        "B": [
+          "Oh, ¡estás estudiando coreano!",
+          "Es normal al principio. Mejorarás rápido.",
+          "Claro, ¡te puedo ayudar cuando quieras!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "¿Tienes hermanos?",
+          "¡Oh, igual que yo!",
+          "Me gustaría saber más de tu familia."
+        ],
+        "B": [
+          "Sí, tengo un hermano mayor.",
+          "Qué bien, ¡somos parecidos!",
+          "Sí, ¡hablemos más luego!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Me encanta viajar.",
+          "¿Europa? ¡Qué envidia!",
+          "Recomiéndame lugares algún día."
+        ],
+        "B": [
+          "¡A mí también! Me encanta viajar por Europa.",
+          "Tengo muchos recuerdos bonitos.",
+          "Claro, ¡te recomendaré sitios!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "¿Tienes comida favorita?",
+          "¡Oh, a mí también me encanta la pasta!",
+          "Vamos a un buen restaurante algún día."
+        ],
+        "B": [
+          "La pasta es mi comida favorita.",
+          "¡Tenemos gustos parecidos!",
+          "Sí, ¡vamos juntos!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "¿Qué estás aprendiendo últimamente?",
+          "¡Oh, suena divertido!",
+          "Ahora también me interesa."
+        ],
+        "B": [
+          "Últimamente estoy aprendiendo fotografía.",
+          "Es más difícil de lo que pensaba, pero me gusta.",
+          "¡Podemos salir a tomar fotos juntos!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "¿Cuál es tu MBTI?",
+          "¡Oh! Yo soy más extrovertido(a).",
+          "Creo que nos llevaremos bien."
+        ],
+        "B": [
+          "Soy más bien introvertido(a).",
+          "Pero me llevo bien con personas extrovertidas.",
+          "Sí, yo también lo creo."
+        ]
+      }
+    }
+  ]
+}

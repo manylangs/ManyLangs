@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "009",
+  "cefr": "C1",
+  "title_en": "Schedule Management",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Please double-check the schedule,",
+    "Let me know your available time slots,",
+    "If anything changes, please update me right away,",
+    "I will finalize the schedule and share it,",
+    "Let me know if further adjustments are needed,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Could you double-check the schedule for this week?",
+          "There seem to be a few differences from what I have on my end.",
+          "I’ll整理everything and share an updated version."
+        ],
+        "B": [
+          "Oh really? I did notice a couple of confusing parts too.",
+          "I’ll send you a screenshot of the latest version I’m using.",
+          "We can align everything based on that."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Is the meeting time for tomorrow morning still okay for you?",
+          "One of the attendees may have a schedule conflict.",
+          "If needed, we can shift to another time in the morning."
+        ],
+        "B": [
+          "Morning still works for me, though anything after 10 a.m. is better.",
+          "If there’s a conflict, adjusting the time makes sense.",
+          "Just share a few possible slots and I’ll pick one."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "There’s talk that the project timeline may be moved up.",
+          "That means we’ll likely need to reorganize our internal schedule.",
+          "Do you have time for a brief discussion?"
+        ],
+        "B": [
+          "Moved up? That could affect quite a lot.",
+          "I’ll have to review the internal milestones too.",
+          "I'm free this afternoon — let me know what time works for you."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "I was worried the frequent schedule changes might be confusing.",
+          "I’m doing my best to keep everything clean and organized.",
+          "I’ll prepare a revised version based on today’s updates."
+        ],
+        "B": [
+          "No worries! I understand why the changes are happening.",
+          "As long as I have a clear version, it’s easy to follow.",
+          "Send me the latest one and I’ll work from there."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Do you have about 30 minutes early next week?",
+          "There are a few important items I want to re-align.",
+          "Let me know the time that works best for you."
+        ],
+        "B": [
+          "Early next week? Monday afternoon should work.",
+          "I’ve been needing a check-in too — things are piling up.",
+          "How about 2 p.m. on Monday?"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Have you checked the schedule document? Some items seem to be missing.",
+          "Especially the external meeting schedule hasn't been reflected.",
+          "Could you review that section first?"
+        ],
+        "B": [
+          "Yes, I noticed a few missing entries too.",
+          "External meetings are important — we should add them right away.",
+          "I’ll整理the missing items and update the file."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Are we still keeping today’s planned schedule?",
+          "The related team informed me they’re running slightly behind.",
+          "If adjustments are needed, I can update it immediately."
+        ],
+        "B": [
+          "Ah, they’re delayed? Then sticking to the plan might be difficult.",
+          "I’ll check with the other teams as well.",
+          "Let me know if you need to shift anything."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Isn’t this week’s schedule a bit too tight?",
+          "There are too many back-to-back meetings, and I’m worried about efficiency.",
+          "Would it be possible to reprioritize a few items?"
+        ],
+        "B": [
+          "I noticed that too — the days feel pretty packed.",
+          "Some meetings could be moved online or shortened.",
+          "Share the priorities and I’ll rearrange them."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "It looks like a few items are missing from this month's schedule.",
+          "The external meeting schedule especially needs to be corrected.",
+          "Please review those parts when you have a moment."
+        ],
+        "B": [
+          "Yes, I found those gaps too when I checked.",
+          "External meetings are critical — we should add them immediately.",
+          "I’ll整理the missing entries and reflect them in the schedule."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Shall we finalize this week’s schedule based on today’s updates?",
+          "Most team feedback seems to be aligned now.",
+          "I’ll prepare the final version and send it over."
+        ],
+        "B": [
+          "Sounds good — the overall structure is much clearer now.",
+          "Having a finalized version will help the team prepare more easily.",
+          "Share it once you’re done, and I’ll review it right away."
+        ]
+      }
+    }
+  ]
+}
+

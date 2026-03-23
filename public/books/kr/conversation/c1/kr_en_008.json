@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "008",
+  "cefr": "C1",
+  "title_en": "Issue Solving",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Shall we check the root cause together?,",
+    "Let me review possible solutions.,",
+    "Let me summarize the situation first.,",
+    "If you need alternatives, I can suggest some right away.,",
+    "Let's resolve this based on priority.,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "An error keeps popping up — do you have any idea what might be causing it?",
+          "From what I’m seeing, it feels like the settings might be conflicting.",
+          "It would help if we could go through the logs together first."
+        ],
+        "B": [
+          "Yeah, I noticed something odd as well just now.",
+          "A settings conflict definitely sounds possible.",
+          "Let’s look at the logs — I think we’ll find the direction quickly."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "We’ve been told the system slowed down significantly after the update.",
+          "It looks like the optimization wasn’t fully applied.",
+          "If possible, could you also check the cache layer?"
+        ],
+        "B": [
+          "Ah, that makes sense. A lot of cache built up during the update.",
+          "We should also confirm whether the optimization was actually applied.",
+          "I’ll start by clearing and checking the cache line."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "A client reported that a certain feature keeps freezing.",
+          "I also noticed intermittent freezing during my tests.",
+          "Did you happen to modify the related module recently?"
+        ],
+        "B": [
+          "Yes, I changed part of the module structure last week.",
+          "So it could definitely be connected to that change.",
+          "I’ll re-check that section first to confirm."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "It seems like some of the data is missing.",
+          "It looks like an error occurred during the collection step.",
+          "It might help if we review the preprocessing stage as well."
+        ],
+        "B": [
+          "Missing data? Then something may have broken during collection.",
+          "Reviewing the preprocessing stage sounds like a solid approach.",
+          "I’ll pull the relevant logs so we can check right away."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "We’re getting reports that notifications are being sent repeatedly.",
+          "It feels like the queue is building up abnormally.",
+          "Did you recently change the trigger conditions?"
+        ],
+        "B": [
+          "Yes, I expanded the condition range during the last check.",
+          "That could very well be the cause.",
+          "I’ll revert the condition to the original settings and test again."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "File uploads keep failing above a certain size.",
+          "I’m not sure whether it’s due to network latency or server limits.",
+          "Let me start by checking the server logs."
+        ],
+        "B": [
+          "I tested it as well, and I got the same issue.",
+          "A server limitation seems very possible.",
+          "Once we see the logs, we can narrow it down quickly."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "The payment module is generating an unusual amount of error codes.",
+          "Since this happened after the new release, it may be a version conflict.",
+          "It’s a critical feature, so we should prioritize it."
+        ],
+        "B": [
+          "Absolutely. Any delay in payment processing is risky.",
+          "A version conflict is a strong possibility.",
+          "Let’s roll back that module first and compare results."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "We’ve been getting a spike in inquiries, and many of them seem related.",
+          "It might not be a single-function issue.",
+          "We should review the entire workflow from a broader perspective."
+        ],
+        "B": [
+          "I agree — the pattern doesn’t look like a single cause.",
+          "A workflow-level review sounds necessary.",
+          "Let’s go through the full process step by step."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Everything works fine in staging, but errors appear only in production.",
+          "It may be due to differences in environment variables.",
+          "I’ll start by reviewing the production environment settings."
+        ],
+        "B": [
+          "Yeah, I suspected that difference too.",
+          "If it’s happening only in production, the scope is much narrower.",
+          "I’ll prepare a comparison list of the environment variables."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Shall we at least整理the root cause by the end of today?",
+          "We can finalize the solutions in tomorrow’s meeting.",
+          "Let me prepare a summary so we can align clearly."
+        ],
+        "B": [
+          "Sounds good — identifying the cause already solves half the problem.",
+          "Tomorrow’s meeting will help us finalize the action plan.",
+          "Share the summary when it’s ready; I’ll review it right away."
+        ]
+      }
+    }
+  ]
+}
+

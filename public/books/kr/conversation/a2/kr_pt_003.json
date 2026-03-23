@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "003",
+  "cefr": "A2",
+  "title_pt": "Horas e dias",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "A que horas nos encontramos?,",
+    "Tens planos hoje?,",
+    "Estás livre este fim de semana?,",
+    "Estás disponível agora?,",
+    "A próxima semana funciona para mim.,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "A que horas nos encontramos hoje?",
+          "Então… que tal às 15h?",
+          "Perfeito! Até logo!"
+        ],
+        "B": [
+          "Hmm… a tarde dá-me mais jeito!",
+          "Ah, às 15h fica ótimo!",
+          "Combinado, vemos-nos então!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Tens algum plano para hoje?",
+          "Ah, percebo! E para almoçar, consegues?",
+          "Ótimo! Encontramo-nos ao meio-dia!"
+        ],
+        "B": [
+          "Sim, de manhã estou um pouco ocupado.",
+          "O almoço dá-me bem!",
+          "Perfeito, vejo-te às 12h!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Estás livre este fim de semana?",
+          "Boa! Para mim, sábado à tarde funciona!",
+          "Então vemos-nos no sábado!"
+        ],
+        "B": [
+          "Sim, tenho algum tempo livre ao fim de semana.",
+          "Parece-me ótimo!",
+          "Perfeito! Já estou ansioso!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Tens um momento para falar agora?",
+          "Ah, ótimo! Quantos minutos tens?",
+          "Está bem, ligo-te já!"
+        ],
+        "B": [
+          "Sim, tenho um tempinho agora.",
+          "Posso dar-te uns dez minutos.",
+          "Muito bem, fico à espera da tua chamada!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Quando estás livre na próxima semana?",
+          "Ah, perfeito! A tarde também me dá jeito!",
+          "Então vou marcar isso!"
+        ],
+        "B": [
+          "Acho que terça-feira funciona para mim.",
+          "Perfeito, deixo a tarde livre.",
+          "Está bem, vemos-nos então!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Estás livre esta noite?",
+          "Ah, é? Então e amanhã?",
+          "Perfeito! Mando-te mensagem amanhã à noite!"
+        ],
+        "B": [
+          "Hoje devo acabar tarde.",
+          "Amanhã à noite estou livre.",
+          "Ótimo! Até amanhã!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Amanhã de manhã dá-te jeito?",
+          "Ah, entendo! E de tarde?",
+          "Perfeito! Então vemos-nos de tarde!"
+        ],
+        "B": [
+          "De manhã já tenho um compromisso.",
+          "À tarde estou livre!",
+          "Ótimo, também me dá bem!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "A que horas começa a reunião hoje?",
+          "Ah, percebo. Posso chegar uns minutos atrasado.",
+          "Está bem! Vou o mais rápido possível!"
+        ],
+        "B": [
+          "Começa às 15h.",
+          "Cinco minutos não tem problema!",
+          "Combinado, até já!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "O que vais fazer esta noite?",
+          "Ah, perfeito! Eu também estou livre nessa hora!",
+          "Então vamos dar um passeio juntos!"
+        ],
+        "B": [
+          "Estava a pensar fazer um pequeno passeio.",
+          "Ótimo! Vemo-nos então!",
+          "Sim, adoro passear à noite!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Como correu o teu dia?",
+          "Ah, mesmo assim fizeste um bom trabalho!",
+          "Espero que amanhã seja ainda melhor!"
+        ],
+        "B": [
+          "Estive um pouco cansado.",
+          "Sim, mas agora estou melhor.",
+          "Obrigado! Vou dar o meu melhor amanhã!"
+        ]
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "005",
+  "cefr": "B2",
+  "title_en": "Travel Planning",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Shall we plan our trip?,",
+    "How should we divide the budget?,",
+    "Are there must-visit places?,",
+    "What kind of accommodation do you prefer?,",
+    "Should we book transportation in advance?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Shall we start planning our trip?",
+          "I’d like to have a couple of relaxed days if possible.",
+          "Great, then let’s set aside enough free time on the schedule."
+        ],
+        "B": [
+          "Sure! Where should we begin?",
+          "Oh, having slower days sounds perfect. Tight schedules get exhausting.",
+          "Yes, that will also make moving around easier."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "How should we divide the budget?",
+          "Oh, so we should allow a bit more for food.",
+          "Then I’ll recalculate the accommodation cost."
+        ],
+        "B": [
+          "It’s easiest if we split it into transport, lodging, and meals.",
+          "The food there is supposed to be amazing!",
+          "I’ll also look up a few lodging options and share them with you."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Are there any must-visit spots?",
+          "Really? The night view is that beautiful? Now I’m curious.",
+          "Alright, let’s put that spot on the first day."
+        ],
+        "B": [
+          "Yes, everyone recommends visiting this observatory.",
+          "People say the photos turn out incredible.",
+          "Adding it on day one works well with the route."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "What kind of accommodation do you prefer? Something quiet?",
+          "Oh, good accessibility definitely makes planning easier.",
+          "Then I’ll narrow it down to places near the station."
+        ],
+        "B": [
+          "I like quiet places too, but location matters more to me.",
+          "Short travel times make everything smoother, you know?",
+          "I see a few clean hotels around that area."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Should we book transportation in advance?",
+          "Ah, since it’s peak season, things might sell out.",
+          "Okay, I’ll book everything today."
+        ],
+        "B": [
+          "Yes, booking early gives peace of mind.",
+          "Train tickets in particular disappear quickly.",
+          "I’ll send you the timetable."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Should we add a tour program too?",
+          "Oh, a historical tour sounds interesting!",
+          "Then I’ll check if it fits into the schedule."
+        ],
+        "B": [
+          "Good idea! Half-day tours are really popular now.",
+          "It’s more fun when you explore with explanations.",
+          "If it doesn’t overlap, we can book it right away."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "We should keep our luggage light, right?",
+          "Ah, if the temperature changes a lot, we need to pack smart.",
+          "Okay, I’ll make a packing checklist and share it."
+        ],
+        "B": [
+          "Yes, lighter bags make traveling easier.",
+          "It gets chilly in the mornings and evenings.",
+          "A checklist will make packing much simpler."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Is there any food you definitely want to try on the trip?",
+          "Oh, that one’s famous! I really want to try it too.",
+          "Then I’ll check if the restaurant takes reservations."
+        ],
+        "B": [
+          "I’m most curious about the local traditional food.",
+          "People say the lines are long, which makes me even more excited.",
+          "If we book ahead, we won’t have to wait."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Should we get travel insurance as well?",
+          "Right, it’s always better to be prepared.",
+          "Then I’ll look into the cheaper plans."
+        ],
+        "B": [
+          "Yes, I usually get insurance for every trip.",
+          "Especially abroad—you never know what might happen.",
+          "I’ll suggest a few good options."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Looks like we’ve got the rough itinerary done!",
+          "Oh, it’s organized really well—easy to follow.",
+          "Great, I’ll finalize the detailed route next."
+        ],
+        "B": [
+          "Yes, having a structure makes everything easier.",
+          "The travel times look manageable too.",
+          "Send it to me once you finish the detailed plan!"
+        ]
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "002",
+  "cefr": "B1",
+  "title_fr": "Assister aux cours",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Comment était le cours aujourd’hui ?,",
+    "Tu as compris l’explication du professeur ?,",
+    "Tu as réussi à suivre les notes ?,",
+    "Prêt(e) pour le prochain cours ?,",
+    "Le devoir était gérable ?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Comment était le cours aujourd’hui ?",
+          "Il y avait quelques passages un peu difficiles pour moi.",
+          "Je pense que je vais devoir tout revoir en organisant mes notes."
+        ],
+        "B": [
+          "C’était mieux que ce à quoi je m’attendais !",
+          "Les parties compliquées étaient plus claires quand le professeur a donné des exemples.",
+          "Si on revoit ça ensemble, on trouvera vite la solution."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Le cours d’aujourd’hui était un peu plus complexe que celui de la semaine dernière.",
+          "Surtout les formules, je n’ai pas tout saisi au début.",
+          "Je devrais sûrement faire plus d’exercices chez moi."
+        ],
+        "B": [
+          "Oui, il y avait d’un coup beaucoup plus de formules.",
+          "Faire des exercices aide vraiment à comprendre.",
+          "Si tu veux, je peux te montrer ceux que j’ai faits."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "J’ai l’impression que le professeur parlait un peu vite aujourd’hui.",
+          "Par moments, c’était dur de suivre.",
+          "Heureusement, j’ai enregistré le cours, je pourrai réécouter."
+        ],
+        "B": [
+          "N’est-ce pas ? Aujourd’hui, c’était particulièrement rapide !",
+          "Moi aussi, j’ai raté quelques phrases.",
+          "Si tu as l’enregistrement, le réécouter va beaucoup t’aider."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Les supports de cours étaient plus utiles que je ne le pensais.",
+          "Ils sont bien organisés, donc faciles à suivre.",
+          "Je pense que je vais les imprimer pour les avoir avec moi."
+        ],
+        "B": [
+          "Oui, les supports sont vraiment bien faits.",
+          "Ils m’ont beaucoup aidé(e) pour prendre des notes.",
+          "Si tu les imprimes, ce sera plus simple de suivre le cours."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "La discussion en groupe d’aujourd’hui était plutôt sympa, non ?",
+          "Tout le monde avait plein d’idées.",
+          "Grâce à ça, les concepts sont devenus beaucoup plus clairs."
+        ],
+        "B": [
+          "Oui ! Tout le monde était super actif.",
+          "Parler ensemble rend la compréhension beaucoup plus facile.",
+          "J’aimerais qu’on ait plus de cours basés sur la discussion."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Tu as bien compris les explications sur le devoir ?",
+          "La dernière partie m’a un peu embrouillé(e).",
+          "On pourrait vérifier ensemble si tu veux."
+        ],
+        "B": [
+          "Moi aussi, j’ai un peu raté la fin.",
+          "Mais ils ont dit qu’un résumé serait bientôt mis en ligne.",
+          "Une fois qu’on l’aura regardé ensemble, ce sera clair."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "L’ambiance du cours était vraiment dynamique aujourd’hui.",
+          "Il y avait plein de questions et de réactions, non ?",
+          "Grâce à ça, j’ai mieux réussi à me concentrer."
+        ],
+        "B": [
+          "Oui ! Tout le monde avait beaucoup d’énergie.",
+          "Même le professeur avait l’air de bonne humeur.",
+          "Avec une ambiance comme ça, le cours passe super bien."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Le professeur a dit que ce qu’on a appris aujourd’hui sera à l’examen, non ?",
+          "Du coup, j’ai écouté plus attentivement que d’habitude.",
+          "J’ai aussi pris des notes plus sérieusement."
+        ],
+        "B": [
+          "Oui, ça sera sûrement à l’examen !",
+          "J’étais aussi un peu stressé(e) et concentré(e).",
+          "Si tes notes sont bonnes, tu as déjà fait la moitié du travail."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Tu as remarqué que les couleurs des diapositives ont changé ?",
+          "La lisibilité est bien meilleure maintenant.",
+          "Aujourd’hui, le contenu m’a paru plus clair."
+        ],
+        "B": [
+          "Oui, les nouvelles couleurs sont beaucoup plus agréables !",
+          "Ça m’a aidé(e) à rester concentré(e) aussi.",
+          "On dirait que la qualité du cours s’est vraiment améliorée."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Je me sens un peu plus confiant(e) après le cours d’aujourd’hui.",
+          "Je crois que je commence enfin à comprendre le déroulement.",
+          "Je pense que je pourrai mieux suivre le prochain cours."
+        ],
+        "B": [
+          "Oh, ça me motive d’entendre ça !",
+          "Une fois que tu comprends le déroulement, tout devient plus simple.",
+          "On fera de notre mieux au prochain cours aussi !"
+        ]
+      }
+    }
+  ]
+}
+

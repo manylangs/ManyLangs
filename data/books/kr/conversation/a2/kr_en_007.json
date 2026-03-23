@@ -1,0 +1,167 @@
+﻿{
+  "chapter_id": "007",
+  "cefr": "A2",
+  "title_en": "Using Transportation",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "What’s the fastest way?,",
+    "Does the bus come often?,",
+    "The subway is more convenient.,",
+    "You transfer here.,",
+    "The traffic is really heavy.,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "How long does it take to get to the station from here?",
+          "I think it might be a bit far to walk.",
+          "Then the subway is probably the fastest, right?"
+        ],
+        "B": [
+          "About fifteen minutes on foot.",
+          "Yeah, there’s also a bus if you prefer.",
+          "Yes, the subway will get you there quickly."
+        ]
+      }
+    },
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Is this the bus toward downtown?",
+          "The stop being right here is really convenient.",
+          "But does the bus come often?"
+        ],
+        "B": [
+          "Yes, this one goes downtown.",
+          "Right, it arrives pretty quickly from here.",
+          "It usually comes every seven or eight minutes."
+        ]
+      }
+    },
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Where do I transfer to Line 2?",
+          "It’s more complicated than I expected.",
+          "Then taking the escalator should lead me right there."
+        ],
+        "B": [
+          "Just follow the signs in that direction.",
+          "It can be confusing the first time.",
+          "Yes, it’s right in front of the escalator."
+        ]
+      }
+    },
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Isn’t it hard to get a taxi these days?",
+          "It feels like the pick-up spots keep changing.",
+          "I hope one comes soon."
+        ],
+        "B": [
+          "Yeah, it’s even harder during rush hour.",
+          "Yes, it’s because of the construction nearby.",
+          "Don’t worry, one should come soon."
+        ]
+      }
+    },
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Why is the traffic so bad today?",
+          "The bus is barely moving.",
+          "I hope we’re not late."
+        ],
+        "B": [
+          "I think it’s because of an accident this morning.",
+          "I’m worried too since I have an appointment.",
+          "It should clear up in a bit."
+        ]
+      }
+    },
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "What’s the best way to get to the airport?",
+          "I’m not sure because I have a lot of luggage.",
+          "Then the airport bus sounds like the best option."
+        ],
+        "B": [
+          "The airport train is good if the timing works.",
+          "Yeah, taxis can be inconvenient with lots of bags.",
+          "Right, the airport bus is comfortable and goes directly."
+        ]
+      }
+    },
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Where can I find a bike rental station?",
+          "The app shows one nearby.",
+          "Then it looks like I just need to walk a little."
+        ],
+        "B": [
+          "It’s right across the crosswalk over there.",
+          "Yeah, it’s only two or three minutes from here.",
+          "There should be plenty of bikes available."
+        ]
+      }
+    },
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "This is the right subway line, isn’t it?",
+          "The station names were so similar that I got confused.",
+          "Good thing—I was worried I got on the wrong train."
+        ],
+        "B": [
+          "Yes, this is the correct direction.",
+          "It’s normal to get confused at first.",
+          "Don’t worry, your stop is coming up soon."
+        ]
+      }
+    },
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Where can I recharge my transit card?",
+          "I can do it at a convenience store too, right?",
+          "Then I’ll just recharge it here."
+        ],
+        "B": [
+          "You can also recharge it at the subway ticket machines.",
+          "Yes, convenience stores can do it as well.",
+          "It’s quick and very simple."
+        ]
+      }
+    },
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Do you think the last train has already left?",
+          "I feel like we’re cutting it really close.",
+          "Is there any other option besides taking a taxi?"
+        ],
+        "B": [
+          "There might still be a little time left.",
+          "Trains are slower on weekends.",
+          "You can take the late-night bus instead."
+        ]
+      }
+    }
+  ]
+}
+

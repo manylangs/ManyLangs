@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "b1",
+    "id": "012"
+  },
+  "title": {
+    "target": "-도록 (정도·목적)",
+    "en": "",
+    "es": "",
+    "fr": "Exprimer le degré et le but avec -도록",
+    "pt": ""
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "동사 뒤에 -도록을 붙이면 어떤 행동의 '정도'를 나타내거나, 목적을 표현할 때 사용한다.",
+        "en": "",
+        "es": "",
+        "fr": "-도록 s’utilise après un verbe pour exprimer soit le degré d’une action, soit son objectif.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'~할 정도로'라는 뜻으로, 상태나 변화의 강도를 설명할 수 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Pour exprimer le degré, il signifie « au point de ~ ».",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "목적을 나타낼 때는 '~하기 위해서'와 비슷한 의미로 쓰인다.",
+        "en": "",
+        "es": "",
+        "fr": "Pour exprimer le but, il a un sens similaire à « pour / afin de ~ ».",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문맥에 따라 '결과', '목표', '강도' 중 하나가 강조된다.",
+        "en": "",
+        "es": "",
+        "fr": "Selon le contexte, il peut mettre en valeur un résultat, un objectif ou une intensité.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "감정이나 신체적 상태를 설명할 때 자연스럽게 등장한다.",
+        "en": "",
+        "es": "",
+        "fr": "Il apparaît naturellement lorsque l’on décrit des émotions ou des états physiques.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'-도록 하다' 형태로 사용되면 지시·권유의 의미가 될 수 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Employé sous la forme « -도록 하다 », il peut aussi exprimer une instruction ou un conseil.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "부정형은 '-지 않도록', '-지 못하도록' 형태로 쓴다.",
+        "en": "",
+        "es": "",
+        "fr": "Les formes négatives incluent « pour ne pas ~ » ou « afin que ~ ne ~ pas ».",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "과정이나 조건을 나타내는 상황에서도 넓게 사용된다.",
+        "en": "",
+        "es": "",
+        "fr": "Il est également utilisé pour décrire des processus ou des conditions.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "두 행동이 연결되며 이유와 목표가 함께 드러난다.",
+        "en": "",
+        "es": "",
+        "fr": "Il relie deux actions en montrant à la fois la raison et l’intention.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "일상 회화, 설명문, 글쓰기 등 다양한 맥락에서 사용되는 표현이다.",
+        "en": "",
+        "es": "",
+        "fr": "Il est largement utilisé dans la conversation quotidienne, les explications et l’écriture.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "다 들리도록 크게 말해 줘.",
+        "en": "",
+        "es": "",
+        "fr": "Parle fort pour que tout le monde puisse entendre.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "넘어지지 않도록 조심해.",
+        "en": "",
+        "es": "",
+        "fr": "Fais attention pour ne pas tomber.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "늦지 않도록 빨리 가자.",
+        "en": "",
+        "es": "",
+        "fr": "Allons-y vite pour ne pas être en retard.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "잘 보이도록 글씨를 크게 썼어.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai écrit les lettres plus grandes pour qu’on les voie mieux.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "눈이 아프도록 오래 봤어.",
+        "en": "",
+        "es": "",
+        "fr": "Je l’ai regardé tellement longtemps que j’avais mal aux yeux.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "배가 부르도록 많이 먹었어.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai tellement mangé que j’étais rassasié(e).",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "실수하지 않도록 천천히 해.",
+        "en": "",
+        "es": "",
+        "fr": "Fais-le lentement pour ne pas faire d’erreurs.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "길을 잃지 않도록 지도를 확인했어.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai vérifié la carte pour ne pas me perdre.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "감기에 걸리지 않도록 옷을 따뜻하게 입어.",
+        "en": "",
+        "es": "",
+        "fr": "Habille-toi chaudement pour ne pas attraper froid.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "더 잘 알도록 자세히 설명해 줄게.",
+        "en": "",
+        "es": "",
+        "fr": "Je t’expliquerai en détail pour que tu comprennes mieux.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "넘어지지 않도록 바닥을 닦아 놨어.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai nettoyé le sol pour que tu ne glisses pas.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "늦지 않도록 알람을 맞춰 놨어.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai mis une alarme pour ne pas être en retard.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "다시는 그런 일이 없도록 주의할게.",
+        "en": "",
+        "es": "",
+        "fr": "Je ferai attention pour que cela n’arrive plus.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "아이들이 이해하도록 쉽게 설명했어.",
+        "en": "",
+        "es": "",
+        "fr": "Je l’ai expliqué simplement pour que les enfants puissent comprendre.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "사람들이 볼 수 있도록 문 앞에 붙여 놨어.",
+        "en": "",
+        "es": "",
+        "fr": "Je l’ai affiché sur la porte pour que les gens puissent le voir.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "길이 막히지 않도록 일찍 출발했어.",
+        "en": "",
+        "es": "",
+        "fr": "Nous sommes partis tôt pour éviter les embouteillages.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "눈에 띄도록 색을 더 밝게 바꿨어.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai changé la couleur pour que ce soit plus visible.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "힘이 들도록 열심히 운동했어.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai fait de l’exercice au point d’être fatigué(e).",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "편하게 보도록 화면을 조정했어.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai ajusté l’écran pour qu’il soit plus facile à voir.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "",
+        "en": "",
+        "es": "",
+        "fr": "J’ai vérifié plusieurs fois pour ne pas me tromper.",
+        "pt": ""
+      }
+    }
+  ]
+}

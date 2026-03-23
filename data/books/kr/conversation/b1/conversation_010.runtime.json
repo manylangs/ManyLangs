@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b1",
+    "id": "010"
+  },
+  "title": {
+    "target": "학교 행사",
+    "en": "School Events",
+    "es": "Eventos escolares",
+    "fr": "Événements scolaires",
+    "pt": "Eventos escolares"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이번 학교 행사 준비는 잘 되고 있어요?",
+            "en": "Is the preparation for the school event going well?",
+            "es": "¿Va bien la preparación del evento escolar?",
+            "fr": "La préparation de l’événement avance bien ?",
+            "pt": "A preparação para o evento da escola está a correr bem?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 이번엔 준비가 꽤 잘 되고 있어요!",
+            "en": "Yes, everything’s going quite well this time!",
+            "es": "Sí, esta vez todo va bastante bien.",
+            "fr": "Oui, tout se passe plutôt bien cette fois !",
+            "pt": "Sim, desta vez tudo está a correr muito bem."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 생각보다 순조롭네요! 어떤 분위기예요?",
+            "en": "Oh really? Sounds smoother than I expected! What’s the atmosphere like?",
+            "es": "¿Ah sí? Parece que todo fluye mejor de lo que pensaba. ¿Cómo es el ambiente?",
+            "fr": "Ah oui ? Ça a l’air de se dérouler mieux que je pensais ! L’ambiance est comment ?",
+            "pt": "Mesmo? Parece que está tudo a avançar melhor do que eu imaginava. Como está o ambiente?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "전체적으로 밝고 활기찬 분위기예요.",
+            "en": "It feels bright and energetic overall.",
+            "es": "El ambiente es animado y muy positivo.",
+            "fr": "C’est assez animé et positif.",
+            "pt": "O ambiente está animado e bastante positivo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요. 그럼 행사 당일에 저도 구경 가볼게요.",
+            "en": "Nice! I’ll stop by on the event day and take a look.",
+            "es": "Genial, pasaré por allí el día del evento.",
+            "fr": "Super ! Je passerai voir le jour de l’événement.",
+            "pt": "Ótimo, passo lá no dia do evento."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 오면 더 재미있을 거예요.",
+            "en": "Great! You’ll enjoy it even more if you come.",
+            "es": "Perfecto, seguro que lo disfrutas si vienes.",
+            "fr": "Génial, tu vas sûrement apprécier si tu viens.",
+            "pt": "Perfeito, vais gostar se vieres."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 행사에서 맡은 역할 있어요?",
+            "en": "Do you have a role in the event?",
+            "es": "¿Tienes algún papel en el evento?",
+            "fr": "Tu as un rôle pendant l’événement ?",
+            "pt": "Tens algum papel no evento?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 짧게 소개하는 역할 맡았어요.",
+            "en": "Yes, I’m in charge of a short opening introduction.",
+            "es": "Sí, voy a hacer una breve presentación al inicio.",
+            "fr": "Oui, je suis chargé de faire une courte présentation au début.",
+            "pt": "Sim, vou fazer uma breve apresentação no início."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 발표 준비라니 긴장되겠어요!",
+            "en": "Oh, giving a short introduction must be a bit nerve-racking!",
+            "es": "Vaya, dar una pequeña introducción debe poner un poco nervioso.",
+            "fr": "Oh, faire une petite introduction doit être un peu stressant !",
+            "pt": "Ah, fazer uma pequena introdução deve dar algum nervosismo!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 조금 떨리긴 해요.",
+            "en": "Yeah, I’m a little nervous about it.",
+            "es": "Sí, me da un poco de nervios.",
+            "fr": "Oui, ça me rend un peu nerveux.",
+            "pt": "Sim, deixa-me um pouco nervoso."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그래도 잘할 것 같아요. 연습 많이 했나요?",
+            "en": "But I think you’ll do great. Have you practiced a lot?",
+            "es": "Pero seguro que te saldrá muy bien. ¿Has practicado mucho?",
+            "fr": "Mais je suis sûr que tu t’en sortiras très bien. Tu t’es beaucoup entraîné ?",
+            "pt": "Mas acho que te vais sair muito bem. Tens praticado bastante?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 계속 연습해서 이제 조금 익숙해졌어요.",
+            "en": "I practiced quite a bit, so it feels more natural now.",
+            "es": "He practicado bastante, así que ya me siento más cómodo.",
+            "fr": "Je me suis entraîné pas mal, alors ça commence à devenir naturel.",
+            "pt": "Treinei bastante, por isso agora já me sinto mais seguro."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "행사에 사람 많이 올 것 같아요?",
+            "en": "Do you think a lot of people will come to the event?",
+            "es": "¿Crees que vendrá mucha gente al evento?",
+            "fr": "Tu penses qu’il y aura beaucoup de monde ?",
+            "pt": "Achas que vai aparecer muita gente?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 작년보다 더 많이 올 것 같아요.",
+            "en": "Yes, probably more than last year.",
+            "es": "Sí, probablemente más que el año pasado.",
+            "fr": "Oui, sûrement plus que l’année dernière.",
+            "pt": "Sim, provavelmente mais do que no ano passado."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "와, 그렇게 많이요? 분위기 꽤 뜨겁겠네요!",
+            "en": "Wow, that many? Sounds like it’s going to be lively!",
+            "es": "¿En serio? ¡Entonces el ambiente estará súper animado!",
+            "fr": "Waouh, vraiment ? L’ambiance va être incroyable !",
+            "pt": "A sério? Então o ambiente vai estar muito animado!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "홍보도 많이 해서 관심이 높아요.",
+            "en": "We promoted it a lot, so people seem very interested.",
+            "es": "Hicimos mucha promoción y hay bastante interés.",
+            "fr": "On a beaucoup fait de promotion, alors l’intérêt est élevé.",
+            "pt": "Divulgámos bastante, então há muito interesse."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요. 북적이는 행사도 나름 재밌더라고요.",
+            "en": "Nice. Crowded events can be fun in their own way.",
+            "es": "Perfecto, los eventos concurridos tienen su encanto.",
+            "fr": "Super, les événements animés sont souvent très amusants.",
+            "pt": "Ótimo, eventos com muita gente também têm a sua graça."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도 기대돼요!",
+            "en": "I’m excited too!",
+            "es": "Yo también estoy emocionado.",
+            "fr": "Moi aussi j’ai hâte !",
+            "pt": "Também estou entusiasmado!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "행사 준비하면서 힘든 점은 없었어요?",
+            "en": "Was there anything difficult while preparing for the event?",
+            "es": "¿Hubo algo difícil durante la preparación?",
+            "fr": "Il y a eu quelque chose de difficile pendant les préparatifs ?",
+            "pt": "Houve algo difícil durante os preparativos?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "조금 있어요, 일정이 계속 겹치거든요.",
+            "en": "Yeah, it’s hard when schedules overlap.",
+            "es": "Sí, especialmente cuando coinciden varias tareas.",
+            "fr": "Oui, surtout quand les horaires se chevauchent.",
+            "pt": "Sim, especialmente quando várias tarefas coincidem."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 일정이 바쁘면 좀 힘들죠.",
+            "en": "Ah, it’s tough when schedules get busy.",
+            "es": "Ah, sí, cuando los horarios se cruzan, se complica todo.",
+            "fr": "Ah oui, quand les emplois du temps se bousculent, c’est compliqué.",
+            "pt": "Pois, quando os horários se sobrepõem fica complicado."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그래도 다 같이 준비해서 괜찮아요.",
+            "en": "But working together makes it manageable.",
+            "es": "Pero trabajar en equipo lo hace más llevadero.",
+            "fr": "Mais comme on travaille ensemble, ça reste gérable.",
+            "pt": "Mas trabalhar em equipa torna as coisas mais fáceis."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그래도 잘 하고 있어요! 필요하면 도와줄게요.",
+            "en": "You’re doing great though! Let me know if you need help.",
+            "es": "Aun así lo estás haciendo muy bien. Si necesitas ayuda, dímelo.",
+            "fr": "Mais tu t’en sors très bien ! Si tu as besoin d’aide, dis-le moi.",
+            "pt": "Mas estás a ir muito bem! Diz-me se precisares de ajuda."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "정말요? 필요하면 꼭 부탁할게요!",
+            "en": "Really? I’ll ask for help if I need it!",
+            "es": "Gracias, te avisaré si necesito algo.",
+            "fr": "Merci ! Je n’hésiterai pas si j’ai besoin.",
+            "pt": "Obrigado, aviso-te se precisar!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "행사 프로그램 중에 제일 기대되는 게 뭐예요?",
+            "en": "Which part of the program are you most excited about?",
+            "es": "¿Qué parte del programa te emociona más?",
+            "fr": "Quelle partie du programme t’intéresse le plus ?",
+            "pt": "Qual parte do programa te deixa mais entusiasmado?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 학생 공연이 제일 기대돼요.",
+            "en": "I’m most excited for the student performance.",
+            "es": "Estoy esperando sobre todo la actuación de los estudiantes.",
+            "fr": "J’attends surtout la prestation des étudiants.",
+            "pt": "Estou mais entusiasmado com a atuação dos estudantes."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "와, 퍼포먼스 팀 기대되는데요!",
+            "en": "Oh, the performance team? That sounds really fun!",
+            "es": "¿El grupo de presentaciones? ¡Suena muy divertido!",
+            "fr": "Oh, l’équipe de performance ? Ça promet d’être sympa !",
+            "pt": "Ah, a equipa de atuação? Deve ser muito divertido!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "연습하는 걸 조금 봤는데 꽤 멋있었어요.",
+            "en": "I saw them practicing a bit, and they looked great.",
+            "es": "Los vi ensayar un poco y estaban genial.",
+            "fr": "Je les ai vus s’entraîner et ça avait l’air vraiment bien.",
+            "pt": "Vi um pouco do ensaio e estava ótimo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "끝나고 후기 꼭 들려주세요.",
+            "en": "Tell me how it was afterward!",
+            "es": "Cuéntame después qué tal estuvo.",
+            "fr": "Raconte-moi après comment c’était.",
+            "pt": "Conta-me depois como correu."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "끝나면 바로 알려줄게요!",
+            "en": "I’ll let you know right after it ends!",
+            "es": "Sí, te cuento todo cuando termine.",
+            "fr": "Oui, je te dirai tout dès que ce sera fini !",
+            "pt": "Sim, conto-te tudo quando terminar."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "행사에 같이 갈 친구 있어요?",
+            "en": "Do you have someone to go to the event with?",
+            "es": "¿Vas con alguien al evento?",
+            "fr": "Tu vas à l’événement avec quelqu’un ?",
+            "pt": "Vais ao evento com alguém?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아직 정한 사람은 없어요.",
+            "en": "Not yet, I haven’t decided.",
+            "es": "Todavía no he quedado con nadie.",
+            "fr": "Pas encore, je n’ai rien prévu.",
+            "pt": "Ainda não combinei com ninguém."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 혼자 가도 괜찮죠! 행사장은 늘 사람 많잖아요.",
+            "en": "Ah, going alone is fine too! Events are usually crowded anyway.",
+            "es": "Bueno, incluso solo se disfruta. Siempre hay mucha gente.",
+            "fr": "Ah, même seul c’est agréable ! Il y a toujours plein de monde.",
+            "pt": "Ir sozinho também é tranquilo! Há sempre muita gente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 혼자 가도 충분히 재미있을 것 같아요.",
+            "en": "Yeah, I think it’ll still be fun even if I go alone.",
+            "es": "Sí, creo que será divertido incluso si voy solo.",
+            "fr": "Oui, même seul ça peut être sympa.",
+            "pt": "Sim, acho que será divertido mesmo indo sozinho."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그래도 혹시 필요하면 제가 같이 가줄게요.",
+            "en": "Still, if you want, I can go with you.",
+            "es": "Pero si quieres, puedo acompañarte.",
+            "fr": "Mais si tu veux, je peux t’accompagner.",
+            "pt": "Mas se quiseres, posso ir contigo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "고마워요! 그럼 같이 가도 좋을 것 같아요.",
+            "en": "Thanks! Actually, it’d be nice to go together.",
+            "es": "Gracias, me gustaría ir contigo.",
+            "fr": "Merci ! Ce serait chouette d’y aller ensemble.",
+            "pt": "Obrigado! Gostava de ir contigo."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 행사 부스도 참여할 거예요?",
+            "en": "Are you helping at any of the booths?",
+            "es": "¿Vas a ayudar en algún puesto del evento?",
+            "fr": "Tu aides à un stand pendant l’événement ?",
+            "pt": "Vais ajudar nalguma banca do evento?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 잠깐 체험 부스 도와달래서 가기로 했어요.",
+            "en": "Yes, they asked me to help at a hands-on experience booth.",
+            "es": "Sí, me pidieron ayudar en un puesto interactivo.",
+            "fr": "Oui, on m’a demandé d’aider à un stand de création.",
+            "pt": "Sim, pediram-me para ajudar numa banca interativa."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 체험 부스면 사람 많겠어요!",
+            "en": "Oh, a hands-on booth will probably be really popular!",
+            "es": "¿Un puesto de actividades manuales? Seguro que atrae a mucha gente.",
+            "fr": "Ah super, un stand d’activités manuelles attire toujours du monde !",
+            "pt": "Ah, uma banca de atividades práticas costuma atrair muita gente!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "특히 아이템 만드는 부스라 더 인기 많대요.",
+            "en": "It’s one of the craft booths, so I heard it gets lots of visitors.",
+            "es": "Dicen que es uno de los más populares.",
+            "fr": "On m’a dit que c’était l’un des stands les plus populaires.",
+            "pt": "Ouvi dizer que é uma das mais populares."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요. 그 부스도 꼭 들러볼게요.",
+            "en": "Great, I’ll definitely stop by your booth.",
+            "es": "Perfecto, pasaré a saludar.",
+            "fr": "Je passerai voir ton stand, c’est sûr.",
+            "pt": "Perfeito, passo lá para ver."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "와, 들러주면 정말 반가울 거예요!",
+            "en": "I’d be happy if you stopped by!",
+            "es": "Me haría ilusión que pasaras por allí.",
+            "fr": "Ça me ferait plaisir que tu passes !",
+            "pt": "Fico contente se passares por lá!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "행사 준비 기간 동안 새로운 친구도 생겼어요?",
+            "en": "Did you make any new friends while preparing for the event?",
+            "es": "¿Hiciste nuevos amigos preparando el evento?",
+            "fr": "Tu t’es fait de nouveaux amis en préparant l’événement ?",
+            "pt": "Fizeste novos amigos enquanto preparavam o evento?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 준비하면서 자연스럽게 친해진 친구 있어요.",
+            "en": "Yes, I became close to someone naturally during the preparations.",
+            "es": "Sí, me hice amigo de alguien durante los preparativos.",
+            "fr": "Oui, j’ai sympathisé avec quelqu’un pendant les préparatifs.",
+            "pt": "Sim, fiz amizade com alguém durante os preparativos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 같이 준비하면 금방 친해지죠!",
+            "en": "Oh, working together really helps people bond!",
+            "es": "Claro, trabajar juntos hace que uno conecte más rápido.",
+            "fr": "Ah oui, travailler ensemble rapproche vraiment les gens !",
+            "pt": "Pois é, trabalhar juntos aproxima muito as pessoas."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "같이 일하다 보니 소통도 잘 되고 즐거웠어요.",
+            "en": "We worked together a lot, so communication felt really smooth.",
+            "es": "Como trabajamos mucho juntos, la comunicación fue muy fluida.",
+            "fr": "On a beaucoup travaillé ensemble, donc la communication est devenue très naturelle.",
+            "pt": "Trabalhámos bastante juntos, então a comunicação fluiu muito bem."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요. 나중에 그 친구도 소개해주세요.",
+            "en": "Nice, introduce them to me sometime.",
+            "es": "Genial, preséntamelos algún día.",
+            "fr": "Super, tu me le présenteras un jour.",
+            "pt": "Boa! Apresenta-mo algum dia."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "기회 되면 꼭 소개할게요!",
+            "en": "Sure, I’ll introduce them when there’s a chance!",
+            "es": "Sí, te lo presentaré cuando se pueda.",
+            "fr": "Oui, je te le présenterai dès qu’on aura l’occasion.",
+            "pt": "Claro, apresento-te quando houver oportunidade."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "행사 끝나고 뒤풀이도 있대요?",
+            "en": "Is there an after-party after the event?",
+            "es": "¿Habrá una reunión o cena después del evento?",
+            "fr": "Il y a un repas ou une sortie après l’événement ?",
+            "pt": "Vai haver jantar ou encontro depois do evento?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 간단하게 저녁 먹기로 했어요.",
+            "en": "Yes, we’re going out for a casual dinner.",
+            "es": "Sí, vamos a cenar juntos después del evento.",
+            "fr": "Oui, on va dîner ensemble après.",
+            "pt": "Sim, vamos jantar juntos depois do evento."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "와, 다 같이 모이면 재밌겠네요!",
+            "en": "Oh nice! It must be fun to gather with everyone.",
+            "es": "¡Qué bien! Seguro que será divertido relajarse con todos.",
+            "fr": "Oh sympa ! Ça doit être chouette de se détendre tous ensemble.",
+            "pt": "Que bom! Deve ser ótimo relaxar com toda a gente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "다들 행사 끝나고 편하게 쉬고 싶어 하더라고요.",
+            "en": "Everyone wants to relax a bit after the event.",
+            "es": "Todos quieren relajarse un poco cuando termine.",
+            "fr": "Tout le monde veut juste souffler un peu après l’événement.",
+            "pt": "Toda a gente quer descontrair um pouco quando acabar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "다녀오면 어땠는지 꼭 얘기해주세요.",
+            "en": "Tell me all about it afterward!",
+            "es": "Cuéntame después cómo te fue.",
+            "fr": "Tu me raconteras comment ça s’est passé !",
+            "pt": "Conta-me depois como foi."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 꼭 얘기해줄게요!",
+            "en": "Yep, I’ll tell you everything after I go!",
+            "es": "Claro, te cuento todo luego.",
+            "fr": "Oui, je te dirai tout après.",
+            "pt": "Claro, conto-te tudo mais tarde."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 행사 당일에 저랑도 잠깐 같이 돌아다녀요?",
+            "en": "Then on the event day, want to walk around together for a bit?",
+            "es": "¿Quieres que recorramos el evento juntos ese día?",
+            "fr": "Le jour de l’événement, on pourrait se promener un peu ensemble ?",
+            "pt": "Queres dar uma volta comigo pelo evento nesse dia?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 같이 보면 더 즐거울 것 같아요.",
+            "en": "Sure! It’ll be more fun looking around together.",
+            "es": "Sí, sería más divertido ir juntos.",
+            "fr": "Oui, ce serait plus sympa à deux.",
+            "pt": "Sim, acho que será mais divertido juntos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "와, 좋죠! 사람 많으면 같이 다니는 게 더 좋아요.",
+            "en": "Oh great! It’s better to go around with someone when it’s crowded.",
+            "es": "Genial, cuando hay mucha gente es mejor ir acompañado.",
+            "fr": "Génial ! Quand il y a du monde, c’est mieux d’être à deux.",
+            "pt": "Boa! Quando há muita gente, é melhor andar acompanhado."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 둘이 다니면 덜 복잡할 거예요.",
+            "en": "Yeah, it’ll feel less overwhelming if we go as a pair.",
+            "es": "Claro, así será menos agobiante con tanta gente.",
+            "fr": "Oui, ce sera moins stressant si on reste ensemble.",
+            "pt": "Sim, assim é menos cansativo com tanta gente."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그날 일정 되면 꼭 연락할게요!",
+            "en": "I’ll message you on the day if everything works out!",
+            "es": "Te escribiré ese día si todo va bien.",
+            "fr": "Je t’enverrai un message ce jour-là si tout va bien.",
+            "pt": "Envio-te uma mensagem nesse dia se estiver tudo bem."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그날 아침에 바로 연락드릴게요!",
+            "en": "I’ll text you in the morning that day!",
+            "es": "Perfecto, te aviso por la mañana.",
+            "fr": "Parfait, je t’écris le matin même !",
+            "pt": "Perfeito, aviso-te de manhã!"
+          }
+        }
+      ]
+    }
+  ]
+}

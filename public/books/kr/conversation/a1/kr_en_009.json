@@ -1,0 +1,175 @@
+{
+  "chapter_id": "009",
+  "cefr": "A1",
+  "title_en": "Ordering Food",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Do you have a recommendation?,",
+    "Is this good?,",
+    "Do you have something less spicy?,",
+    "Can I get this to go?,",
+    "Will it be ready soon?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Hi, do you have a recommended dish?",
+          "Oh, that sounds good! Is it very spicy?",
+          "Great, I’ll take that."
+        ],
+        "B": [
+          "Yes, this pasta is the most popular today!",
+          "No, it’s not too spicy.",
+          "Okay, I’ll prepare one for you!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "What does this soup taste like?",
+          "Oh, a clean flavor sounds nice! Is the portion big?",
+          "Then I’ll have one soup, please."
+        ],
+        "B": [
+          "It’s mild and warm.",
+          "Yes, one bowl is filling enough.",
+          "Alright, I’ll get it ready!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Do you have something less spicy?",
+          "Oh, so that dish is barely spicy?",
+          "Nice, I’ll order one."
+        ],
+        "B": [
+          "Yes, this one is almost not spicy at all.",
+          "Even kids enjoy it.",
+          "Sure, I’ll make one for you!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Can I get this to go?",
+          "Oh, great! Does it take long to pack?",
+          "Okay, please pack it for me."
+        ],
+        "B": [
+          "Yes, we can pack it.",
+          "No, it only takes a moment.",
+          "I’ll prepare it right away!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "What drinks are popular here?",
+          "Oh, I like refreshing things! Can you put less ice?",
+          "Great, I’ll take that one."
+        ],
+        "B": [
+          "Lemon tea is very popular these days.",
+          "Sure, I’ll put less ice for you.",
+          "Alright, I’ll make one!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Will the food be ready soon?",
+          "Oh, good! I’m glad it won’t take long.",
+          "Okay, I’ll wait a little."
+        ],
+        "B": [
+          "Yes, it’s almost done.",
+          "It’ll be out in about five minutes.",
+          "I’ll bring it to you soon!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "What side dishes do you have?",
+          "Oh, that sounds light! How big is the portion?",
+          "Then I’ll have the fries."
+        ],
+        "B": [
+          "We have salad and fries.",
+          "It’s a good portion for one person.",
+          "Alright, I’ll prepare that!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Is this a large portion?",
+          "Oh, two people can share it?",
+          "Great! I’ll share it with my friend."
+        ],
+        "B": [
+          "Yes, it’s pretty big.",
+          "Yes, it's enough for two people.",
+          "Enjoy your meal!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "How do I pay here?",
+          "Oh, nice! There are a lot of options.",
+          "Okay, I’ll pay by card."
+        ],
+        "B": [
+          "We take card and cash.",
+          "Yes, we also accept mobile payments.",
+          "Sure, please hand me your card!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Do you offer refills?",
+          "Oh, free refills? That’s nice!",
+          "Then I’d like a refill with hot water, please."
+        ],
+        "B": [
+          "Yes, some drinks come with free refills.",
+          "Yes, feel free to ask anytime.",
+          "I’ll bring you hot water!"
+        ]
+      }
+    }
+  ]
+}

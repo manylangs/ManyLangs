@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "b1",
+    "id": "050"
+  },
+  "title": {
+    "target": "B1 — 사회•학교•기술 어휘",
+    "en": "B1 — Social, School, and Technology Vocabulary",
+    "es": "B1 — Vocabulario social, escolar y tecnológico",
+    "fr": "B1 — Vocabulaire social, scolaire et technologique",
+    "pt": "B1 — Vocabulário social, escolar e tecnológico"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "운영",
+        "en": "operation",
+        "es": "operación",
+        "fr": "exploitation",
+        "pt": "operação"
+      },
+      "examples": [
+        {
+          "target": "시스템 운영이 안정적입니다.",
+          "en": "System operation is stable.",
+          "es": "La operación del sistema es estable.",
+          "fr": "Le fonctionnement du système est stable.",
+          "pt": "A operação do sistema está estável."
+        },
+        {
+          "target": "운영 매뉴얼을 먼저 읽어 주세요.",
+          "en": "Please read the operation manual first.",
+          "es": "Primero lea el manual de operación.",
+          "fr": "Veuillez d’abord lire le manuel d’exploitation.",
+          "pt": "Leia primeiro o manual de operação."
+        },
+        {
+          "target": "운영 방식을 개선해야 합니다.",
+          "en": "We need to improve the operation method.",
+          "es": "Debemos mejorar el método de operación.",
+          "fr": "Nous devons améliorer le mode d’exploitation.",
+          "pt": "Precisamos melhorar o método de operação."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "관리비",
+        "en": "maintenance fee",
+        "es": "cuota de mantenimiento",
+        "fr": "frais de gestion",
+        "pt": "taxa de manutenção"
+      },
+      "examples": [
+        {
+          "target": "이번 달 관리비가 인상되었습니다.",
+          "en": "This month’s maintenance fee has increased.",
+          "es": "La cuota de mantenimiento de este mes ha aumentado.",
+          "fr": "Les frais de gestion de ce mois ont augmenté.",
+          "pt": "A taxa de manutenção deste mês aumentou."
+        },
+        {
+          "target": "관리비 납부는 매월 10일까지입니다.",
+          "en": "Maintenance fees must be paid by the 10th of each month.",
+          "es": "La cuota de mantenimiento debe pagarse antes del día 10 de cada mes.",
+          "fr": "Les frais de gestion doivent être payés avant le 10 de chaque mois.",
+          "pt": "A taxa de manutenção deve ser paga até o dia 10 de cada mês."
+        },
+        {
+          "target": "관리비 내역을 이메일로 받았습니다.",
+          "en": "I received the maintenance fee details by email.",
+          "es": "Recibí los detalles de la cuota de mantenimiento por correo.",
+          "fr": "J’ai reçu les détails des frais de gestion par e-mail.",
+          "pt": "Recebi os detalhes da taxa de manutenção por e-mail."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "유지보수",
+        "en": "maintenance",
+        "es": "mantenimiento",
+        "fr": "maintenance",
+        "pt": "manutenção"
+      },
+      "examples": [
+        {
+          "target": "장비 유지보수가 필요합니다.",
+          "en": "The equipment requires maintenance.",
+          "es": "El equipo necesita mantenimiento.",
+          "fr": "L’équipement nécessite une maintenance.",
+          "pt": "O equipamento precisa de manutenção."
+        },
+        {
+          "target": "유지보수 일정을 확인해 주세요.",
+          "en": "Please check the maintenance schedule.",
+          "es": "Revise el calendario de mantenimiento.",
+          "fr": "Veuillez vérifier le calendrier de maintenance.",
+          "pt": "Verifique o cronograma de manutenção."
+        },
+        {
+          "target": "정기 유지보수가 내일 진행됩니다.",
+          "en": "Regular maintenance will take place tomorrow.",
+          "es": "El mantenimiento regular se realizará mañana.",
+          "fr": "La maintenance régulière aura lieu demain.",
+          "pt": "A manutenção regular ocorrerá amanhã."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "담당자",
+        "en": "person in charge",
+        "es": "encargado",
+        "fr": "responsable",
+        "pt": "responsável"
+      },
+      "examples": [
+        {
+          "target": "담당자가 자리를 비웠습니다.",
+          "en": "The person in charge is away from their desk.",
+          "es": "El encargado no está en su escritorio.",
+          "fr": "Le responsable n’est pas à son bureau.",
+          "pt": "O responsável está fora da mesa."
+        },
+        {
+          "target": "담당자를 연결해 드리겠습니다.",
+          "en": "I will connect you to the person in charge.",
+          "es": "Lo conectaré con el encargado.",
+          "fr": "Je vais vous mettre en relation avec le responsable.",
+          "pt": "Vou conectá-lo ao responsável."
+        },
+        {
+          "target": "담당자가 변경되었습니다.",
+          "en": "The person in charge has been changed.",
+          "es": "El encargado ha sido cambiado.",
+          "fr": "Le responsable a été changé.",
+          "pt": "O responsável foi alterado."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "절차서",
+        "en": "procedure document",
+        "es": "documento de procedimiento",
+        "fr": "document de procédure",
+        "pt": "documento de procedimento"
+      },
+      "examples": [
+        {
+          "target": "절차서를 반드시 읽어야 합니다.",
+          "en": "You must read the procedure document.",
+          "es": "Debe leer el documento de procedimiento.",
+          "fr": "Vous devez lire le document de procédure.",
+          "pt": "Você deve ler o documento de procedimento."
+        },
+        {
+          "target": "절차서가 업데이트되었습니다.",
+          "en": "The procedure document has been updated.",
+          "es": "El documento de procedimiento ha sido actualizado.",
+          "fr": "Le document de procédure a été mis à jour.",
+          "pt": "O documento de procedimento foi atualizado."
+        },
+        {
+          "target": "절차서는 모든 직원이 접근할 수 있습니다.",
+          "en": "All employees can access the procedure document.",
+          "es": "Todos los empleados pueden acceder al documento de procedimiento.",
+          "fr": "Tous les employés peuvent accéder au document de procédure.",
+          "pt": "Todos os funcionários podem acessar o documento de procedimento."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a1",
+    "id": "004"
+  },
+  "title": {
+    "target": "직업과 업무",
+    "en": "Jobs_and_Work",
+    "es": "Trabajos_y_tareas",
+    "fr": "Métiers_et_travail",
+    "pt": "Trabalho_e_funções"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 무슨 일 하세요?",
+            "en": "What do you do?",
+            "es": "¿A qué te dedicas?",
+            "fr": "Tu fais quoi comme travail ?",
+            "pt": "O que fazes?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 사무직에서 일하고 있어요.",
+            "en": "I work in an office.",
+            "es": "Trabajo en una oficina.",
+            "fr": "Je travaille dans un bureau.",
+            "pt": "Trabalho num escritório."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 멋진데요!",
+            "en": "Oh, that sounds nice!",
+            "es": "¡Ah, suena bien!",
+            "fr": "Oh, ça a l’air sympa !",
+            "pt": "Ah, parece interessante!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "생각보다 재미있는 일이 많아요.",
+            "en": "There are more fun tasks than I expected.",
+            "es": "Hay más cosas interesantes de lo que pensaba.",
+            "fr": "Il y a plus de choses intéressantes que je pensais.",
+            "pt": "Há mais coisas engraçadas do que eu pensava."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "언젠가 일 얘기 더 듣고 싶어요!",
+            "en": "I'd love to hear more about your work someday.",
+            "es": "Me gustaría escuchar más sobre tu trabajo algún día.",
+            "fr": "J’aimerais en entendre plus un jour.",
+            "pt": "Queria ouvir mais sobre o teu trabalho um dia."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 언제든지요.",
+            "en": "Sure, anytime!",
+            "es": "¡Claro, cuando quieras!",
+            "fr": "Oui, quand tu veux !",
+            "pt": "Claro, quando quiseres!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 어디에서 일해요?",
+            "en": "So, where do you work?",
+            "es": "¿Y dónde trabajas?",
+            "fr": "Et tu travailles où ?",
+            "pt": "Então, onde trabalhas?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "도심 쪽 회사에서 일해요.",
+            "en": "I work at a company downtown.",
+            "es": "Trabajo en una empresa en el centro.",
+            "fr": "Je travaille dans une entreprise au centre-ville.",
+            "pt": "Trabalho numa empresa no centro."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 출퇴근이 꽤 길겠어요.",
+            "en": "Oh, your commute must be long.",
+            "es": "Ah, tu trayecto debe ser largo.",
+            "fr": "Ah, ton trajet doit être long.",
+            "pt": "Ah, o teu trajeto deve ser longo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그래서 아침마다 조금 바빠요.",
+            "en": "So mornings get a bit busy.",
+            "es": "Por eso las mañanas son un poco pesadas.",
+            "fr": "Les matins sont un peu chargés.",
+            "pt": "Por isso as manhãs são um pouco apressadas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그래도 익숙해지면 괜찮을 것 같아요!",
+            "en": "I guess it gets easier once you get used to it!",
+            "es": "Supongo que uno se acostumbra con el tiempo.",
+            "fr": "J’imagine que ça devient plus facile avec le temps.",
+            "pt": "Acho que fica mais fácil com o tempo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 이제 좀 편해졌어요.",
+            "en": "Yeah, I'm used to it now.",
+            "es": "Sí, ya estoy acostumbrado(a).",
+            "fr": "Oui, maintenant je suis habitué(e).",
+            "pt": "Sim, já estou habituado(a)."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "요즘 많이 바쁘죠?",
+            "en": "Are you busy these days?",
+            "es": "¿Has estado muy ocupado(a) estos días?",
+            "fr": "Tu es très occupé(e) ces jours-ci ?",
+            "pt": "Tens andado muito ocupado(a) estes dias?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 프로젝트 때문에 바빠요.",
+            "en": "Yes, I’m busy because of a project.",
+            "es": "Sí, estoy ocupado(a) por un proyecto.",
+            "fr": "Oui, je suis occupé(e) à cause d’un projet.",
+            "pt": "Sim, estou ocupado(a) por causa de um projeto."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 그럼 힘들었겠다.",
+            "en": "Oh, that must've been tough.",
+            "es": "Uf, eso debió ser duro.",
+            "fr": "Ah, ça a dû être difficile.",
+            "pt": "Uff, deve ter sido difícil."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그래도 끝이 보여서 괜찮아요.",
+            "en": "But it’s almost done, so it’s okay.",
+            "es": "Pero ya casi termino, así que está bien.",
+            "fr": "Mais c’est presque fini, donc ça va.",
+            "pt": "Mas está quase a terminar, por isso está tudo bem."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "주말에 좀 쉬면 좋겠어요!",
+            "en": "Hope you can rest this weekend!",
+            "es": "Ojalá puedas descansar este fin de semana.",
+            "fr": "J’espère que tu pourras te reposer ce week-end !",
+            "pt": "Espero que consigas descansar no fim de semana."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요! 좀 쉬고 싶어요.",
+            "en": "Yeah, I want to rest too.",
+            "es": "Sí, quiero descansar.",
+            "fr": "Oui, j’ai envie de me reposer.",
+            "pt": "Sim, também quero descansar."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "일하면서 제일 힘든 게 뭐예요?",
+            "en": "What’s the hardest part of your job?",
+            "es": "¿Qué es lo más difícil de tu trabajo?",
+            "fr": "Qu’est-ce qui est le plus dur dans ton travail ?",
+            "pt": "O que é mais difícil no teu trabalho?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "가끔 일이 너무 몰릴 때 힘들어요.",
+            "en": "It’s tough when too much work comes at once.",
+            "es": "Es difícil cuando llega demasiado trabajo de golpe.",
+            "fr": "C’est difficile quand il y a trop de travail d’un coup.",
+            "pt": "É difícil quando chega demasiado trabalho de uma vez."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 그런 부분 정말 공감돼요.",
+            "en": "Oh, I totally get that.",
+            "es": "Ah, te entiendo totalmente.",
+            "fr": "Oh, je comprends très bien.",
+            "pt": "Ah, percebo perfeitamente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그래도 팀이 도와줘서 버티고 있어요.",
+            "en": "But my team helps me, so I manage.",
+            "es": "Pero mi equipo me ayuda, así que lo manejo.",
+            "fr": "Mais mon équipe m’aide, donc j’arrive à gérer.",
+            "pt": "Mas a minha equipa ajuda-me, então consigo gerir."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그래도 잘하고 있어요!",
+            "en": "Still, you're doing great!",
+            "es": "Aun así, ¡lo haces muy bien!",
+            "fr": "Tu t’en sors vraiment bien !",
+            "pt": "Mesmo assim, estás a fazer um ótimo trabalho!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응원 고마워요!",
+            "en": "Thanks for the encouragement!",
+            "es": "¡Gracias por el ánimo!",
+            "fr": "Merci pour ton soutien !",
+            "pt": "Obrigado(a) pelo apoio!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "일 끝나고는 뭐 해요?",
+            "en": "What do you usually do after work?",
+            "es": "¿Qué sueles hacer después del trabajo?",
+            "fr": "Tu fais quoi après le travail ?",
+            "pt": "O que costumas fazer depois do trabalho?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "보통 집에서 쉬어요.",
+            "en": "I usually rest at home.",
+            "es": "Normalmente descanso en casa.",
+            "fr": "Je me repose à la maison.",
+            "pt": "Normalmente descanso em casa."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 좋은 휴식이네요!",
+            "en": "Oh, that sounds relaxing!",
+            "es": "Ah, suena relajante.",
+            "fr": "Oh, ça a l’air reposant !",
+            "pt": "Ah, parece relaxante!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "가끔은 산책도 해요.",
+            "en": "Sometimes I take a walk.",
+            "es": "A veces salgo a caminar.",
+            "fr": "Parfois je fais une petite promenade.",
+            "pt": "Às vezes dou um passeio."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저도 그런 시간 필요해요.",
+            "en": "I need time like that too.",
+            "es": "Yo también necesito tiempo así.",
+            "fr": "Moi aussi j’ai besoin de temps comme ça.",
+            "pt": "Eu também preciso de tempo assim."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 쉬는 게 최고죠.",
+            "en": "Yeah, resting is the best.",
+            "es": "Sí, descansar es lo mejor.",
+            "fr": "Oui, se reposer, c’est le meilleur.",
+            "pt": "Sim, descansar é o melhor."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 회사 동료들과 자주 어울려요?",
+            "en": "Do you hang out with your coworkers often?",
+            "es": "¿Sales a menudo con tus compañeros de trabajo?",
+            "fr": "Tu passes souvent du temps avec tes collègues ?",
+            "pt": "Costumas sair com os teus colegas?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 가끔 같이 밥 먹어요.",
+            "en": "Yes, we sometimes eat together.",
+            "es": "Sí, a veces comemos juntos.",
+            "fr": "Oui, on mange ensemble de temps en temps.",
+            "pt": "Sim, às vezes almoçamos juntos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 분위기 좋은 팀이네요!",
+            "en": "Oh, sounds like a good team!",
+            "es": "Ah, parece un buen equipo.",
+            "fr": "Oh, votre équipe a l’air super !",
+            "pt": "Ah, parecem ser uma ótima equipa!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "다들 편해서 좋아요.",
+            "en": "Everyone is easy to get along with.",
+            "es": "Todos son muy agradables.",
+            "fr": "Ils sont tous très sympas.",
+            "pt": "São todos muito simpáticos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그런 팀이면 일하기 좋겠어요.",
+            "en": "Working must be nice with people like that.",
+            "es": "Debe ser agradable trabajar con gente así.",
+            "fr": "Ça doit être agréable de travailler ensemble.",
+            "pt": "Deve ser bom trabalhar com pessoas assim."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "정말 그래요!",
+            "en": "Yeah, I really like that.",
+            "es": "Sí, me gusta mucho ese ambiente.",
+            "fr": "Oui, j’aime beaucoup cette ambiance !",
+            "pt": "Sim, gosto muito desse ambiente."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "출근 시간은 어때요?",
+            "en": "What time do you go to work?",
+            "es": "¿A qué hora entras a trabajar?",
+            "fr": "Tu commences le travail à quelle heure ?",
+            "pt": "A que horas começas a trabalhar?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "보통 9시에 출근해요.",
+            "en": "I usually go at 9 a.m.",
+            "es": "Normalmente entro a las 9.",
+            "fr": "Je commence vers 9 heures.",
+            "pt": "Começo por volta das 9."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 아침형이시네요!",
+            "en": "Oh, you're a morning person!",
+            "es": "Ah, eres una persona madrugadora.",
+            "fr": "Oh, tu es matinal(e) !",
+            "pt": "Ah, és uma pessoa madrugadora!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "일찍 가면 마음이 좀 편해요.",
+            "en": "Going a bit early feels relaxing.",
+            "es": "Llegar un poco antes me hace sentir tranquilo(a).",
+            "fr": "Arriver un peu plus tôt me détend.",
+            "pt": "Chegar um pouco mais cedo deixa-me tranquilo(a)."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저도 일찍 일어나야겠어요.",
+            "en": "I think I should start waking up early too.",
+            "es": "Creo que yo también debería levantarme temprano.",
+            "fr": "Je devrais essayer de me lever tôt aussi.",
+            "pt": "Talvez eu também devesse acordar mais cedo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "일찍 일어나면 하루가 길어져요!",
+            "en": "And the day feels longer!",
+            "es": "Y el día se siente más largo.",
+            "fr": "Et la journée semble plus longue !",
+            "pt": "E o dia parece mais longo!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "회의는 자주 있어요?",
+            "en": "Do you have meetings often?",
+            "es": "¿Tienen reuniones a menudo?",
+            "fr": "Vous avez des réunions souvent ?",
+            "pt": "Têm reuniões com frequência?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 일주일에 몇 번 있어요.",
+            "en": "Yes, we have a few every week.",
+            "es": "Sí, tenemos varias cada semana.",
+            "fr": "Oui, on en a quelques-unes chaque semaine.",
+            "pt": "Sim, temos algumas todas as semanas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 그래도 팀워크가 중요하죠.",
+            "en": "Yeah, teamwork is important.",
+            "es": "Sí, el trabajo en equipo es importante.",
+            "fr": "Oui, le travail d’équipe est important.",
+            "pt": "Sim, o trabalho em equipa é importante."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그래도 소통이 잘돼서 도움이 돼요.",
+            "en": "But communication gets better, so it helps.",
+            "es": "Pero mejora la comunicación.",
+            "fr": "Ça aide beaucoup pour la communication.",
+            "pt": "Mas melhora a comunicação, por isso ajuda."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "요즘은 회의도 빨리 끝나면 좋겠어요!",
+            "en": "I wish meetings would end quickly these days!",
+            "es": "Últimamente quisiera que las reuniones terminaran rápido.",
+            "fr": "J’aimerais que les réunions finissent plus vite !",
+            "pt": "Ultimamente queria que as reuniões acabassem rápido!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요! 길어지면 힘들어요.",
+            "en": "True! Long meetings are tiring.",
+            "es": "Es verdad, las reuniones largas cansan.",
+            "fr": "C’est vrai ! Les longues réunions fatiguent.",
+            "pt": "Verdade, reuniões longas cansam."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 일하면서 스트레스는 어떻게 풀어요?",
+            "en": "How do you relieve stress from work?",
+            "es": "¿Cómo alivias el estrés del trabajo?",
+            "fr": "Comment tu gères ton stress au travail ?",
+            "pt": "Como alivias o stress do trabalho?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 음악 듣는 걸 좋아해요.",
+            "en": "I like listening to music.",
+            "es": "Me gusta escuchar música.",
+            "fr": "J’aime écouter de la musique.",
+            "pt": "Gosto de ouvir música."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 간단하지만 효과 좋죠!",
+            "en": "Oh, simple but effective!",
+            "es": "Ah, simple pero efectivo.",
+            "fr": "Oh, simple mais efficace !",
+            "pt": "Ah, simples mas eficaz!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "짧게라도 들으면 기분이 나아져요.",
+            "en": "Even a short moment helps me feel better.",
+            "es": "Aunque sea un ratito, me hace sentir mejor.",
+            "fr": "Même un court moment me détend.",
+            "pt": "Mesmo um bocadinho já me acalma."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저도 따라 해봐야겠어요.",
+            "en": "I should try that too.",
+            "es": "Voy a probarlo yo también.",
+            "fr": "Je devrais essayer aussi.",
+            "pt": "Vou tentar isso também."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "한번 해보세요! 추천해요.",
+            "en": "Try it! I recommend it.",
+            "es": "Pruébalo, te lo recomiendo.",
+            "fr": "Essaie ! Je te le recommande.",
+            "pt": "Experimenta! Recomendo."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "언젠가 다른 일도 해보고 싶어요?",
+            "en": "Do you want to try a different job someday?",
+            "es": "¿Te gustaría probar otro trabajo algún día?",
+            "fr": "Tu voudrais changer de travail un jour ?",
+            "pt": "Gostarias de tentar outro trabalho um dia?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 나중에는 창업해보고 싶어요.",
+            "en": "Yes, I want to start a business someday.",
+            "es": "Sí, me gustaría emprender algún día.",
+            "fr": "Oui, j’aimerais créer mon entreprise un jour.",
+            "pt": "Sim, um dia quero criar o meu próprio negócio."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 좋은 꿈이에요!",
+            "en": "Oh, that’s a great dream!",
+            "es": "Oh, ¡qué buen sueño!",
+            "fr": "Oh, c’est un super rêve !",
+            "pt": "Oh, que sonho incrível!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아직 먼 이야기지만 준비는 하고 있어요.",
+            "en": "It's still far away, but I'm preparing little by little.",
+            "es": "Falta mucho, pero me estoy preparando poco a poco.",
+            "fr": "Ce n’est pas pour tout de suite, mais je m’y prépare.",
+            "pt": "Ainda falta muito, mas estou a preparar-me aos poucos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저도 응원할게요!",
+            "en": "I'll cheer for you!",
+            "es": "Te apoyaré.",
+            "fr": "Je te soutiendrai !",
+            "pt": "Vou apoiar-te!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응원해줘서 힘나요!",
+            "en": "Thanks, that means a lot!",
+            "es": "Gracias, eso me anima mucho.",
+            "fr": "Merci, ça me motive vraiment !",
+            "pt": "Obrigado(a), isso motiva-me!"
+          }
+        }
+      ]
+    }
+  ]
+}

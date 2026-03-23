@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "003",
+  "cefr": "B1",
+  "title_es": "Consulta con el profesor",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "¿Tiene un momento para una consulta?,",
+    "Tengo una duda sobre la tarea.,",
+    "La explicación fue un poco confusa.,",
+    "¿Puedo recibir orientación profesional?,",
+    "¿Es un buen momento para usted?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Profesor, ¿tiene un momento para una consulta rápida?",
+          "Hubo una parte de la explicación de la tarea que no entendí bien.",
+          "¿Podría explicármela otra vez, de forma breve?"
+        ],
+        "B": [
+          "Claro, por supuesto. ¿Qué parte te resultó confusa?",
+          "Muchos estudiantes suelen preguntar sobre ese punto.",
+          "Déjame explicártelo de nuevo con calma."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Todavía me cuesta un poco la estructura del informe.",
+          "No tengo claro en qué orden debería escribirlo.",
+          "Creo que un ejemplo me ayudaría bastante."
+        ],
+        "B": [
+          "Es normal, al principio puede resultar confuso.",
+          "Solo sigue la estructura básica: introducción, desarrollo y conclusión.",
+          "Subiré un ejemplo a la plataforma del curso."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Quería confirmar si la dirección de mi tema de presentación es adecuada.",
+          "Me preocupa que el enfoque sea demasiado amplio.",
+          "Si tengo que ajustarlo, puedo hacerlo enseguida."
+        ],
+        "B": [
+          "Tu tema está bien, no es demasiado amplio ni demasiado limitado.",
+          "Si reduces los ejemplos a dos o tres, quedará más claro.",
+          "Con ese pequeño ajuste, tu presentación será sólida."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "¿Sería posible revisar las preguntas que fallé en el último examen?",
+          "Quiero entender exactamente en qué me equivoqué.",
+          "Si me da algo de retroalimentación, puedo mejorar para la próxima."
+        ],
+        "B": [
+          "Claro, revisar los errores es muy útil.",
+          "La mayoría de tus fallos se corrigen reforzando algunos conceptos.",
+          "Dame un momento, voy a traer tu examen."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "¿Podríamos programar una consulta aparte esta semana?",
+          "Tengo preguntas sobre mi especialidad, no solo sobre la tarea.",
+          "Puedo ajustarme al horario que le resulte mejor."
+        ],
+        "B": [
+          "El miércoles por la tarde me viene bien.",
+          "Para preguntas sobre la especialidad, ayuda preparar notas previas.",
+          "Pero siéntete libre de proponer un horario que te convenga."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Sus comentarios sobre mi presentación me ayudaron muchísimo.",
+          "Después de aplicar lo que me dijo, suena mucho más natural.",
+          "¿Podría revisarla una última vez?"
+        ],
+        "B": [
+          "¡Me alegra oír eso! Buen trabajo aplicando la retroalimentación.",
+          "Ahora está casi terminada.",
+          "Podemos hacer una revisión final después de la clase."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Leí el artículo que me recomendó la última vez.",
+          "Fue más interesante y útil de lo que esperaba.",
+          "Creo que quiero buscar más materiales parecidos."
+        ],
+        "B": [
+          "¿Ya lo leíste? ¡Qué bien!",
+          "Si entendiste ese artículo, los siguientes no te resultarán difíciles.",
+          "Puedo recomendarte algunos más si quieres."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "¿Podría darme información sobre el cronograma del proyecto para más adelante en el semestre?",
+          "Quiero saber cuánto tiempo necesitaré para prepararme.",
+          "Planificar con anticipación me ayuda a no ir con prisas."
+        ],
+        "B": [
+          "Buena idea. Planificar con tiempo facilita todo.",
+          "El proyecto empezará después del examen parcial.",
+          "Publicaré el calendario detallado la próxima semana."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Profesor, ¿también sería posible recibir orientación profesional?",
+          "No estoy seguro(a) de qué dirección tomar.",
+          "Quiero construir una base sólida paso a paso."
+        ],
+        "B": [
+          "Por supuesto, siempre estoy disponible para eso.",
+          "Lo más importante es encontrar un área que realmente te interese.",
+          "Si quieres, puedo ayudarte a crear un plan personalizado."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Muchas gracias por la consulta de hoy.",
+          "Me siento mucho más tranquilo(a) después de hablar con usted.",
+          "Seguiré sus consejos y avanzaré poco a poco."
+        ],
+        "B": [
+          "Me alegra mucho escuchar eso.",
+          "Tómate tu tiempo, no hay necesidad de presionarte.",
+          "Y vuelve cuando necesites más ayuda."
+        ]
+      }
+    }
+  ]
+}
+

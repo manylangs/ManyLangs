@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "004",
+  "cefr": "B1",
+  "title_en": "Assignments and Submissions",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Did you submit the assignment?,",
+    "When is the deadline?,",
+    "Did the file upload correctly?,",
+    "Do we need a specific format?,",
+    "Can I resubmit it?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Did you submit the assignment?",
+          "I uploaded mine, but I’m not sure if it went through properly.",
+          "I’m also worried I might have named the file wrong."
+        ],
+        "B": [
+          "Yes, I submitted it a little while ago.",
+          "If the upload completed normally, it should be fine.",
+          "But if you're unsure, it’s safer to open the file again and double-check."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "The deadline is tonight at 11:59 p.m., right?",
+          "I feel like the professor said something different in class.",
+          "Did you check the announcement again?"
+        ],
+        "B": [
+          "Yes, the announcement clearly says 11:59 p.m.",
+          "The explanation in class may have been a bit confusing.",
+          "But the posted announcement is the official guideline, so follow that time."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "We’re supposed to submit the file as a PDF, right?",
+          "I made mine in Word first and then converted it.",
+          "I hope nothing got messed up during the conversion."
+        ],
+        "B": [
+          "Yes, PDF is the required format.",
+          "It usually converts fine, but tables or images sometimes shift.",
+          "It’s best to preview the PDF before you submit it."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "How did you format your references?",
+          "I wasn’t sure whether we needed APA or MLA.",
+          "Did the professor specify a style?"
+        ],
+        "B": [
+          "The professor asked us to use APA format.",
+          "I remember seeing that in the slides from the first week.",
+          "If you'd like, I can send you the example I organized."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Do we need to upload a draft as well?",
+          "The wording in the announcement was a bit unclear.",
+          "For now, I only uploaded my final version."
+        ],
+        "B": [
+          "Drafts are optional, so you don’t have to submit one.",
+          "Uploading only the final version is enough to meet the requirements.",
+          "But if you want full confirmation, you could email the professor."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Do you know if we’re allowed to resubmit?",
+          "I noticed a typo right after turning mine in.",
+          "Should I delete it and upload a corrected one?"
+        ],
+        "B": [
+          "Yes, resubmission is allowed.",
+          "The system only keeps the most recent upload, so there’s no issue.",
+          "If you found a typo, it’s better to fix it and resubmit."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Do we also have to upload our presentation slides?",
+          "The assignment description said to submit only the written part.",
+          "But we’ll need slides for the presentation, right?"
+        ],
+        "B": [
+          "Slides don’t need to be submitted beforehand.",
+          "The professor said we only need to show them during the presentation.",
+          "Still, preparing them early will make things easier later."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Did you see the grading rubric the professor posted?",
+          "It looks more detailed than the previous one.",
+          "Do you think that will affect the score a lot?"
+        ],
+        "B": [
+          "Yes, I checked it earlier.",
+          "The categories are more detailed, but the actual weight doesn’t seem to have changed much.",
+          "The professor emphasized that clarity of content is the most important factor."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Who was in charge of submitting our group assignment?",
+          "We’re still finishing the combined file on our side.",
+          "Do you think it will be submitted by tonight?"
+        ],
+        "B": [
+          "Minji was assigned to handle the submission.",
+          "I heard she’s organizing the final file right now.",
+          "She said she would submit it before tonight, so we should be fine."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Wow… I finally finished the assignment!",
+          "I felt all the tension leave after clicking the submit button.",
+          "I think I deserve a break now."
+        ],
+        "B": [
+          "You did great — that must have been a lot of work.",
+          "I know the feeling of relief after submitting something big.",
+          "Take a good rest today and start fresh tomorrow."
+        ]
+      }
+    }
+  ]
+}
+

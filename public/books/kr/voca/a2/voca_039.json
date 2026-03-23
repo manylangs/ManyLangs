@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a2",
+    "id": "039"
+  },
+  "title": {
+    "target": "A2 — 확장 일상 어휘",
+    "en": "A2 — Expanded Everyday Vocabulary",
+    "es": "A2 — Vocabulario cotidiano ampliado",
+    "fr": "A2 — Vocabulaire quotidien élargi",
+    "pt": "A2 — Vocabulário do dia a dia ampliado"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "반품",
+        "en": "return (product)",
+        "es": "devolución",
+        "fr": "retour de produit",
+        "pt": "devolução"
+      },
+      "examples": [
+        {
+          "target": "상품에 문제가 있어 반품을 신청했어요.",
+          "en": "I applied for a return because the product had an issue.",
+          "es": "Solicité una devolución porque el producto tenía un problema.",
+          "fr": "J’ai demandé un retour car le produit avait un problème.",
+          "pt": "Solicitei a devolução porque o produto tinha um problema."
+        },
+        {
+          "target": "반품 기간이 지나면 환불이 어려워요.",
+          "en": "Refunds are difficult after the return period has passed.",
+          "es": "Es difícil obtener un reembolso después del período de devolución.",
+          "fr": "Il est difficile d’obtenir un remboursement après la période de retour.",
+          "pt": "É difícil obter reembolso após o prazo de devolução."
+        },
+        {
+          "target": "반품을 위해 영수증이 필요해요.",
+          "en": "You need a receipt to make a return.",
+          "es": "Necesita el recibo para hacer la devolución.",
+          "fr": "Vous avez besoin du reçu pour effectuer un retour.",
+          "pt": "Você precisa do recibo para fazer a devolução."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "교환처",
+        "en": "exchange counter",
+        "es": "mostrador de cambio",
+        "fr": "point d’échange",
+        "pt": "balcão de troca"
+      },
+      "examples": [
+        {
+          "target": "상품은 교환처에서 바로 교환할 수 있어요.",
+          "en": "You can exchange the product directly at the exchange counter.",
+          "es": "Puede cambiar el producto directamente en el mostrador de cambio.",
+          "fr": "Vous pouvez échanger le produit directement au point d’échange.",
+          "pt": "Você pode trocar o produto diretamente no balcão de troca."
+        },
+        {
+          "target": "교환처 위치는 1층 안내판에 표시돼 있어요.",
+          "en": "The exchange counter location is shown on the first-floor signboard.",
+          "es": "La ubicación del mostrador de cambio aparece en el panel del primer piso.",
+          "fr": "L’emplacement du point d’échange est indiqué sur le panneau du premier étage.",
+          "pt": "A localização do balcão de troca está indicada no painel do primeiro andar."
+        },
+        {
+          "target": "교환처가 붐벼서 시간이 걸렸어요.",
+          "en": "It took time because the exchange counter was crowded.",
+          "es": "Tomó tiempo porque el mostrador de cambio estaba lleno.",
+          "fr": "Cela a pris du temps car le point d’échange était bondé.",
+          "pt": "Demorou porque o balcão de troca estava cheio."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "품목",
+        "en": "item",
+        "es": "artículo",
+        "fr": "article",
+        "pt": "item"
+      },
+      "examples": [
+        {
+          "target": "이 품목은 할인 대상이 아니에요.",
+          "en": "This item is not eligible for a discount.",
+          "es": "Este artículo no tiene descuento.",
+          "fr": "Cet article n’est pas éligible à une réduction.",
+          "pt": "Este item não tem desconto."
+        },
+        {
+          "target": "구매할 품목을 미리 정해 두었어요.",
+          "en": "I decided in advance which items to buy.",
+          "es": "Decidí con anticipación qué artículos comprar.",
+          "fr": "J’ai décidé à l’avance quels articles acheter.",
+          "pt": "Decidi com antecedência quais itens comprar."
+        },
+        {
+          "target": "품목별로 가격이 다 달라요.",
+          "en": "Prices vary by item.",
+          "es": "Los precios varían según el artículo.",
+          "fr": "Les prix varient selon l’article.",
+          "pt": "Os preços variam conforme o item."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "선택권",
+        "en": "choice",
+        "es": "opción",
+        "fr": "choix",
+        "pt": "opção"
+      },
+      "examples": [
+        {
+          "target": "어떤 서비스를 이용할지 선택권은 고객에게 있어요.",
+          "en": "The choice of which service to use belongs to the customer.",
+          "es": "La opción de qué servicio usar es del cliente.",
+          "fr": "Le choix du service à utiliser revient au client.",
+          "pt": "A escolha de qual serviço usar é do cliente."
+        },
+        {
+          "target": "여러 선택권 중에서 하나를 고르면 돼요.",
+          "en": "You can choose one among several options.",
+          "es": "Puede elegir una opción entre varias.",
+          "fr": "Vous pouvez choisir une option parmi plusieurs.",
+          "pt": "Você pode escolher uma opção entre várias."
+        },
+        {
+          "target": "선택권이 넓어서 결정하기 어려웠어요.",
+          "en": "It was hard to decide because there were many choices.",
+          "es": "Fue difícil decidir porque había muchas opciones.",
+          "fr": "Il était difficile de décider car il y avait beaucoup de choix.",
+          "pt": "Foi difícil decidir porque havia muitas opções."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "상담원",
+        "en": "customer service agent",
+        "es": "agente de atención al cliente",
+        "fr": "agent du service client",
+        "pt": "atendente de suporte"
+      },
+      "examples": [
+        {
+          "target": "상담원이 문의 내용을 친절하게 설명해 줬어요.",
+          "en": "The customer service agent kindly explained my inquiry.",
+          "es": "El agente de atención al cliente explicó mi consulta amablemente.",
+          "fr": "L’agent du service client m’a expliqué ma demande avec gentillesse.",
+          "pt": "O atendente de suporte explicou minha dúvida com gentileza."
+        },
+        {
+          "target": "상담원이 연결될 때까지 잠시 기다려 주세요.",
+          "en": "Please wait until a customer service agent is connected.",
+          "es": "Por favor, espere hasta que un agente de atención al cliente se conecte.",
+          "fr": "Veuillez patienter jusqu’à ce qu’un agent du service client soit en ligne.",
+          "pt": "Por favor, aguarde até que um atendente seja conectado."
+        },
+        {
+          "target": "상담원이 문제 해결을 도와줬어요.",
+          "en": "The customer service agent helped solve the problem.",
+          "es": "El agente de atención al cliente ayudó a resolver el problema.",
+          "fr": "L’agent du service client m’a aidé à résoudre le problème.",
+          "pt": "O atendente de suporte ajudou a resolver o problema."
+        }
+      ]
+    }
+  ]
+}

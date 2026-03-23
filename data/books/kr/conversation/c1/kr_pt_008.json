@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "008",
+  "cefr": "C1",
+  "title_pt": "Resolução de problemas",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Podemos verificar a causa principal juntos?,",
+    "Vou analisar as possíveis soluções.,",
+    "Vou resumir primeiro a situação.,",
+    "Se precisar de alternativas, posso sugerir algumas de imediato.,",
+    "Vamos resolver isto com base na prioridade.,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Estou a receber um erro repetidamente — tem alguma ideia do que o pode estar a causar?",
+          "Pelo que vejo, pode haver um conflito nas configurações.",
+          "Seria útil analisarmos os registos juntos."
+        ],
+        "B": [
+          "Sim, também reparei em algo estranho há pouco.",
+          "Um conflito de configurações parece bastante possível.",
+          "Vamos ver os registos; isso deve apontar-nos na direção certa."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Fomos informados de que o sistema ficou muito mais lento após a atualização.",
+          "Parece que a otimização não foi aplicada corretamente.",
+          "Pode verificar também a camada de cache?"
+        ],
+        "B": [
+          "Ah, isso faz sentido. Acumulou-se muito cache durante a atualização.",
+          "Também devemos confirmar se a otimização foi realmente aplicada.",
+          "Vou começar por limpar e rever a linha de cache."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Um cliente reportou que uma função está a bloquear frequentemente.",
+          "Durante os meus testes também notei congelamentos ocasionais.",
+          "Fez alguma alteração recente no módulo relacionado?"
+        ],
+        "B": [
+          "Sim, ajustei parte da estrutura do módulo na semana passada.",
+          "É bastante provável que esteja relacionado.",
+          "Vou rever essa secção primeiro para confirmar."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Parece que alguns dados estão em falta.",
+          "Parece ter ocorrido um erro durante a fase de recolha.",
+          "Seria útil revermos também a etapa de pré-processamento."
+        ],
+        "B": [
+          "Dados em falta? Então a recolha pode ter sido interrompida.",
+          "Rever o pré-processamento é uma boa abordagem.",
+          "Vou obter os registos relevantes para podermos verificar."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Estamos a receber relatos de que as notificações estão a ser enviadas várias vezes.",
+          "A fila parece estar a acumular-se de forma anormal.",
+          "Modificou recentemente as condições do disparador?"
+        ],
+        "B": [
+          "Sim, alarguei as condições na última revisão.",
+          "Isso pode muito bem ser a causa.",
+          "Vou repor as definições originais e testar novamente."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "O carregamento de ficheiros falha quando ultrapassa um certo tamanho.",
+          "Não sei se se deve à latência da rede ou a um limite do servidor.",
+          "Vou começar por analisar os registos do servidor."
+        ],
+        "B": [
+          "Fiz um teste e tive exatamente o mesmo problema.",
+          "Um limite do servidor parece bastante provável.",
+          "Quando analisarmos os registos, conseguiremos reduzir rapidamente as hipóteses."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "O módulo de pagamentos está a gerar um número invulgar de códigos de erro.",
+          "Como isto começou após a nova versão, pode haver um conflito de versões.",
+          "É uma funcionalidade crítica, por isso devemos tratá-la como prioridade."
+        ],
+        "B": [
+          "Concordo totalmente. Qualquer falha nos pagamentos é sensível.",
+          "Um conflito de versões é uma hipótese forte.",
+          "Vou fazer o rollback do módulo e comparar o comportamento."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "As solicitações aumentaram subitamente e muitas parecem estar relacionadas.",
+          "Pode não ser um problema de uma única funcionalidade.",
+          "Precisamos rever o fluxo de trabalho numa perspetiva mais ampla."
+        ],
+        "B": [
+          "Concordo — o padrão não parece apontar para uma causa única.",
+          "Uma revisão global do fluxo é o mais adequado.",
+          "Vamos analisar todo o processo passo a passo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "No ambiente de testes está tudo a funcionar, mas os erros aparecem apenas em produção.",
+          "Pode ser devido a diferenças nas variáveis de ambiente.",
+          "Vou começar por rever as definições do ambiente de produção."
+        ],
+        "B": [
+          "Sim, eu também suspeitava dessa diferença.",
+          "Se só acontece em produção, a causa é mais fácil de identificar.",
+          "Vou preparar uma lista comparativa das variáveis de ambiente."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Concorda que identifiquemos pelo menos a causa até ao final do dia?",
+          "Podemos fechar as soluções na reunião de amanhã.",
+          "Vou preparar um resumo para garantirmos alinhamento."
+        ],
+        "B": [
+          "Perfeito — identificar a causa já resolve metade do problema.",
+          "A reunião de amanhã ajudará a definir um plano de ação claro.",
+          "Envie o resumo quando estiver pronto; vou revê-lo de imediato."
+        ]
+      }
+    }
+  ]
+}
+

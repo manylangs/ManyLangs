@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a1",
+    "id": "031"
+  },
+  "title": {
+    "target": "A1 — 일상 어휘",
+    "en": "A1 — Everyday Vocabulary",
+    "es": "A1 — Vocabulario cotidiano",
+    "fr": "A1 — Vocabulaire quotidien",
+    "pt": "A1 — Vocabulário do dia a dia"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "화면",
+        "en": "screen",
+        "es": "pantalla",
+        "fr": "écran",
+        "pt": "tela"
+      },
+      "examples": [
+        {
+          "target": "화면이 잘 보이지 않아요.",
+          "en": "The screen is not clear.",
+          "es": "La pantalla no se ve clara.",
+          "fr": "L'écran n'est pas clair.",
+          "pt": "A tela não está nítida."
+        },
+        {
+          "target": "화면 밝기를 높여 주세요.",
+          "en": "Please increase the screen brightness.",
+          "es": "Aumenta el brillo de la pantalla, por favor.",
+          "fr": "Augmentez la luminosité de l'écran, s'il vous plaît.",
+          "pt": "Aumente o brilho da tela, por favor."
+        },
+        {
+          "target": "화면이 갑자기 꺼졌어요.",
+          "en": "The screen suddenly turned off.",
+          "es": "La pantalla se apagó de repente.",
+          "fr": "L'écran s'est éteint soudainement.",
+          "pt": "A tela desligou de repente."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "소리",
+        "en": "sound",
+        "es": "sonido",
+        "fr": "son",
+        "pt": "som"
+      },
+      "examples": [
+        {
+          "target": "소리가 너무 작아요.",
+          "en": "The sound is too low.",
+          "es": "El sonido es muy bajo.",
+          "fr": "Le son est trop faible.",
+          "pt": "O som está muito baixo."
+        },
+        {
+          "target": "소리를 줄여 주세요.",
+          "en": "Please turn down the sound.",
+          "es": "Baja el volumen, por favor.",
+          "fr": "Baissez le son, s'il vous plaît.",
+          "pt": "Abaixe o volume, por favor."
+        },
+        {
+          "target": "소리가 끊겨서 잘 안 들려요.",
+          "en": "The sound is cutting out.",
+          "es": "El sonido se está cortando.",
+          "fr": "Le son coupe.",
+          "pt": "O som está falhando."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "음악가",
+        "en": "musician",
+        "es": "músico",
+        "fr": "musicien",
+        "pt": "músico"
+      },
+      "examples": [
+        {
+          "target": "그는 유명한 음악가예요.",
+          "en": "He is a famous musician.",
+          "es": "Es un músico famoso.",
+          "fr": "C'est un musicien célèbre.",
+          "pt": "Ele é um músico famoso."
+        },
+        {
+          "target": "음악가는 새로운 곡을 만들었어요.",
+          "en": "The musician made a new song.",
+          "es": "El músico creó una nueva canción.",
+          "fr": "Le musicien a composé une nouvelle chanson.",
+          "pt": "O músico criou uma nova música."
+        },
+        {
+          "target": "저는 음악가가 되는 것이 꿈이에요.",
+          "en": "My dream is to become a musician.",
+          "es": "Mi sueño es ser músico.",
+          "fr": "Mon rêve est de devenir musicien.",
+          "pt": "Meu sonho é ser músico."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "거리감",
+        "en": "sense of distance",
+        "es": "sensación de distancia",
+        "fr": "sens de la distance",
+        "pt": "sensação de distância"
+      },
+      "examples": [
+        {
+          "target": "사진에 거리감이 잘 표현됐어요.",
+          "en": "The sense of distance is well shown in the photo.",
+          "es": "La sensación de distancia está bien expresada en la foto.",
+          "fr": "Le sens de la distance est bien exprimé sur la photo.",
+          "pt": "A sensação de distância está bem mostrada na foto."
+        },
+        {
+          "target": "거리감을 유지해 주세요.",
+          "en": "Please keep a sense of distance.",
+          "es": "Por favor, mantén cierta distancia.",
+          "fr": "Veuillez garder une certaine distance.",
+          "pt": "Por favor, mantenha certa distância."
+        },
+        {
+          "target": "그림에서 거리감을 느낄 수 있어요.",
+          "en": "You can feel the sense of distance in the painting.",
+          "es": "Se puede sentir la distancia en la pintura.",
+          "fr": "On peut sentir la distance dans le tableau.",
+          "pt": "É possível sentir a distância na pintura."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "냄새",
+        "en": "smell",
+        "es": "olor",
+        "fr": "odeur",
+        "pt": "cheiro"
+      },
+      "examples": [
+        {
+          "target": "냄새가 이상해요.",
+          "en": "The smell is strange.",
+          "es": "El olor es extraño.",
+          "fr": "L'odeur est étrange.",
+          "pt": "O cheiro está estranho."
+        },
+        {
+          "target": "좋은 냄새가 나요.",
+          "en": "It smells good.",
+          "es": "Huele bien.",
+          "fr": "Ça sent bon.",
+          "pt": "Está cheirando bem."
+        },
+        {
+          "target": "냄새 때문에 창문을 열었어요.",
+          "en": "I opened the window because of the smell.",
+          "es": "Abrí la ventana por el olor.",
+          "fr": "J'ai ouvert la fenêtre à cause de l'odeur.",
+          "pt": "Abri a janela por causa do cheiro."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "chapter_id": "007",
+  "cefr": "A1",
+  "title_fr": "Demander son chemin",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "C’est près d’ici?,",
+    "Comment j’y vais?,",
+    "C’est la bonne direction?,",
+    "Ça prend combien de temps à pied?,",
+    "C’est de ce côté-là?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Excusez-moi, comment puis-je aller à la station de métro ?",
+          "Ah, donc ce n’est pas loin ! Je dois juste marcher tout droit ?",
+          "Super, merci beaucoup ! J’y vais tout de suite."
+        ],
+        "B": [
+          "La station de métro ? Oui, allez tout droit sur cette route.",
+          "Oui, continuez jusqu’au grand bâtiment, puis tournez à gauche.",
+          "Très bien, bonne route !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Est-ce que ce bus va à l’Hôtel de Ville ?",
+          "Oh, parfait ! Où est-ce que je dois descendre ?",
+          "Merci beaucoup !"
+        ],
+        "B": [
+          "Oui, ce bus y va.",
+          "Descendez à l’arrêt juste devant. L’annonce vous le dira.",
+          "Avec plaisir !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Y a-t-il une banque près d’ici ?",
+          "Ah, par là-bas ? Je pourrai la voir facilement ?",
+          "D’accord ! Je vais y aller."
+        ],
+        "B": [
+          "Oui, quand cette ruelle se termine, c’est à droite.",
+          "Vous verrez une grande enseigne bleue.",
+          "Allez-y !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Le musée est loin d’ici ?",
+          "Ah, tant mieux ! C’est plus près que je pensais.",
+          "Merci beaucoup pour les indications !"
+        ],
+        "B": [
+          "Pas vraiment. C’est environ dix minutes à pied.",
+          "Traversez la rue puis tournez à gauche—vous le verrez rapidement.",
+          "Bonne visite !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Si je continue par ce chemin, c’est bien le bon ?",
+          "Ah, donc je suis presque arrivé(e) ?",
+          "D’accord, je continue un peu."
+        ],
+        "B": [
+          "Oui, cette route mène à l’entrée principale.",
+          "Vous la verrez dans environ trois minutes.",
+          "Vous y êtes presque !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Y a-t-il une pharmacie près d’ici ?",
+          "Dans la ruelle à droite ? Je devrais la trouver facilement !",
+          "Merci, j’y vais."
+        ],
+        "B": [
+          "Oui, entrez dans cette ruelle et elle est juste là.",
+          "Cherchez une enseigne en forme de croix bleue.",
+          "Prenez votre temps !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Euh… comment aller au parc depuis ici ?",
+          "Ah ! Je peux prendre un bus ?",
+          "Super, merci pour l’info !"
+        ],
+        "B": [
+          "Le parc est un peu loin. Le bus est plus pratique.",
+          "Oui, il n’y a que deux arrêts.",
+          "Pas de souci !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Y a-t-il des toilettes près d’ici ?",
+          "Ah, à l’intérieur du café ? Je devrais les trouver facilement.",
+          "Merci beaucoup !"
+        ],
+        "B": [
+          "Oui, entrez dans ce café.",
+          "Elles sont à côté des escaliers, c’est facile à repérer.",
+          "Allez-y !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Vous pouvez regarder cette carte ? Je ne suis pas sûr(e) de l’endroit.",
+          "Ah ! J’allais dans la mauvaise direction ?",
+          "Merci, maintenant je sais où aller."
+        ],
+        "B": [
+          "Bien sûr, où voulez-vous aller ?",
+          "Oui, votre destination est en fait dans l’autre sens.",
+          "Bonne chance pour la suite !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Est-ce facile de prendre un taxi d’ici ?",
+          "Ah, je dois aller jusqu’à la grande route ?",
+          "D’accord, j’y vais maintenant !"
+        ],
+        "B": [
+          "Ici, ce n’est pas très simple. C’est plus facile sur la grande route.",
+          "Oui, une fois que vous traversez, il y a beaucoup de taxis.",
+          "Bonne journée !"
+        ]
+      }
+    }
+  ]
+}

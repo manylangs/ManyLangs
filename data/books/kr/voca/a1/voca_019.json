@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a1",
+    "id": "019"
+  },
+  "title": {
+    "target": "A1 — 일상 어휘",
+    "en": "A1 — Everyday Vocabulary",
+    "es": "A1 — Vocabulario cotidiano",
+    "fr": "A1 — Vocabulaire quotidien",
+    "pt": "A1 — Vocabulário do dia a dia"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "역",
+        "en": "station",
+        "es": "estación",
+        "fr": "gare",
+        "pt": "estação"
+      },
+      "examples": [
+        {
+          "target": "역에서 친구를 만났어요.",
+          "en": "I met my friend at the station.",
+          "es": "Me encontré con mi amigo en la estación.",
+          "fr": "J’ai rencontré mon ami à la gare.",
+          "pt": "Encontrei meu amigo na estação."
+        },
+        {
+          "target": "역이 바로 근처에 있어요.",
+          "en": "The station is nearby.",
+          "es": "La estación está muy cerca.",
+          "fr": "La gare est juste à côté.",
+          "pt": "A estação fica aqui perto."
+        },
+        {
+          "target": "다음 역에서 내려야 해요.",
+          "en": "I need to get off at the next station.",
+          "es": "Tengo que bajarme en la próxima estación.",
+          "fr": "Je dois descendre à la prochaine gare.",
+          "pt": "Preciso descer na próxima estação."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "정류장",
+        "en": "bus stop",
+        "es": "parada de autobús",
+        "fr": "arrêt de bus",
+        "pt": "ponto de ônibus"
+      },
+      "examples": [
+        {
+          "target": "정류장에서 버스를 기다렸어요.",
+          "en": "I waited for the bus at the bus stop.",
+          "es": "Esperé el autobús en la parada.",
+          "fr": "J’ai attendu le bus à l’arrêt.",
+          "pt": "Esperei o ônibus no ponto."
+        },
+        {
+          "target": "정류장이 어디에 있어요?",
+          "en": "Where is the bus stop?",
+          "es": "¿Dónde está la parada de autobús?",
+          "fr": "Où se trouve l’arrêt de bus ?",
+          "pt": "Onde fica o ponto de ônibus?"
+        },
+        {
+          "target": "이 정류장은 항상 사람이 많아요.",
+          "en": "This bus stop is always crowded.",
+          "es": "Esta parada de autobús siempre está llena de gente.",
+          "fr": "Cet arrêt de bus est toujours bondé.",
+          "pt": "Este ponto de ônibus está sempre lotado."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "교통카드",
+        "en": "transportation card",
+        "es": "tarjeta de transporte",
+        "fr": "carte de transport",
+        "pt": "cartão de transporte"
+      },
+      "examples": [
+        {
+          "target": "교통카드를 충전했어요.",
+          "en": "I recharged my transportation card.",
+          "es": "Recargué mi tarjeta de transporte.",
+          "fr": "J’ai rechargé ma carte de transport.",
+          "pt": "Recarreguei meu cartão de transporte."
+        },
+        {
+          "target": "교통카드를 찍고 들어가세요.",
+          "en": "Tap your transportation card to enter.",
+          "es": "Pase la tarjeta de transporte para entrar.",
+          "fr": "Validez votre carte de transport pour entrer.",
+          "pt": "Passe o cartão de transporte para entrar."
+        },
+        {
+          "target": "교통카드를 잃어버렸어요.",
+          "en": "I lost my transportation card.",
+          "es": "Perdí mi tarjeta de transporte.",
+          "fr": "J’ai perdu ma carte de transport.",
+          "pt": "Perdi meu cartão de transporte."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "목적지",
+        "en": "destination",
+        "es": "destino",
+        "fr": "destination",
+        "pt": "destino"
+      },
+      "examples": [
+        {
+          "target": "목적지에 거의 도착했어요.",
+          "en": "We are almost at our destination.",
+          "es": "Estamos casi en nuestro destino.",
+          "fr": "Nous sommes presque arrivés à destination.",
+          "pt": "Estamos quase no nosso destino."
+        },
+        {
+          "target": "목적지를 잘못 말했어요.",
+          "en": "I said the wrong destination.",
+          "es": "Dije el destino equivocado.",
+          "fr": "J’ai donné la mauvaise destination.",
+          "pt": "Eu disse o destino errado."
+        },
+        {
+          "target": "목적지를 다시 확인해 주세요.",
+          "en": "Please double-check the destination.",
+          "es": "Por favor, verifica de nuevo el destino.",
+          "fr": "Veuillez revérifier la destination.",
+          "pt": "Por favor, verifique novamente o destino."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "공원",
+        "en": "park",
+        "es": "parque",
+        "fr": "parc",
+        "pt": "parque"
+      },
+      "examples": [
+        {
+          "target": "공원에서 산책했어요.",
+          "en": "I took a walk in the park.",
+          "es": "Di un paseo en el parque.",
+          "fr": "J’ai fait une promenade dans le parc.",
+          "pt": "Caminhei no parque."
+        },
+        {
+          "target": "공원이 집에서 가까워요.",
+          "en": "The park is close to my home.",
+          "es": "El parque está cerca de mi casa.",
+          "fr": "Le parc est près de chez moi.",
+          "pt": "O parque é perto da minha casa."
+        },
+        {
+          "target": "공원에 사람들이 많아요.",
+          "en": "There are many people in the park.",
+          "es": "Hay mucha gente en el parque.",
+          "fr": "Il y a beaucoup de gens dans le parc.",
+          "pt": "Há muitas pessoas no parque."
+        }
+      ]
+    }
+  ]
+}

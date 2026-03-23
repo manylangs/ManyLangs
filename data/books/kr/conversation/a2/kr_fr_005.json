@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "005",
+  "cefr": "A2",
+  "title_fr": "Décrire la maison et la chambre",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "La chambre est assez spacieuse.,",
+    "La maison est chaleureuse.,",
+    "J’aime la grande fenêtre.,",
+    "La lumière est douce.,",
+    "Tout est bien rangé.,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Comment trouves-tu ma chambre ?",
+          "Oui, la grande fenêtre laisse entrer beaucoup de lumière !",
+          "J’aime vraiment l’ambiance ici !"
+        ],
+        "B": [
+          "Oh, elle semble plus grande que je pensais !",
+          "Oui, la lumière chaude rend l’endroit encore plus agréable !",
+          "C’est vraiment confortable !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Tu ne trouves pas que mon bureau est un peu petit ?",
+          "Oui, c’est pour ça que c’est un peu gênant.",
+          "Je pense changer pour un bureau plus grand !"
+        ],
+        "B": [
+          "Hmm… oui, il semble un peu petit !",
+          "Oui, avoir de la place c’est important !",
+          "Un bureau plus grand serait beaucoup mieux !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Que penses-tu de la lumière dans ma chambre ?",
+          "Oui ! La couleur chaude rend l’endroit cosy !",
+          "Le soir, ça crée une ambiance agréable !"
+        ],
+        "B": [
+          "C’est vraiment chaleureux !",
+          "Oui, et c’est doux pour les yeux !",
+          "Ça va très bien avec la chambre !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Ce sofa n’a pas l’air confortable ?",
+          "Exactement ! Il est tellement doux que je m’allonge tout le temps !",
+          "Je passe presque tous mes week-ends ici !"
+        ],
+        "B": [
+          "Oui, il a l’air super confortable !",
+          "Wow, il semble vraiment moelleux !",
+          "Je comprends ! C’est parfait pour se détendre !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Ma chambre a l’air bien rangée, non ?",
+          "Oui ! J’ai essayé de tout organiser.",
+          "J’aime ce style simple !"
+        ],
+        "B": [
+          "Oui, tout est très bien rangé !",
+          "Rien que de regarder, ça fait du bien !",
+          "Le style simple va très bien avec ta chambre !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Le salon de ma maison te paraît petit ?",
+          "Ah, tant mieux !",
+          "La lumière le fait paraître plus grand !"
+        ],
+        "B": [
+          "Non, pas petit ! Plutôt chaleureux !",
+          "Oui, l’ambiance est agréable.",
+          "La lumière change vraiment tout !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Tu trouves que mon armoire est trop grande ?",
+          "Ah, super ! J’avais peur que ce soit trop imposant.",
+          "Alors je suppose que la taille est parfaite !"
+        ],
+        "B": [
+          "Non, elle va bien avec la taille de la chambre !",
+          "Oui ! Elle remplit bien l’espace !",
+          "Oui, ça donne un bon équilibre à la chambre !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Que penses-tu du parfum de la chambre ?",
+          "Oui ! C’est doux et agréable !",
+          "Ça me donne envie de rester ici plus longtemps !"
+        ],
+        "B": [
+          "Ça sent très frais !",
+          "Oui, c’est bien parce que ce n’est pas trop fort !",
+          "Ça rend la pièce plus chaleureuse !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Ma chambre te semble trop simple ?",
+          "Oh ! Bonne idée ! Je mets une affiche ?",
+          "Ça changerait complètement l’ambiance !"
+        ],
+        "B": [
+          "Elle est un peu simple, oui !",
+          "Oui ! Même une petite déco change tout !",
+          "Exactement ! Ça rendrait la chambre plus chaleureuse !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Comment trouves-tu la maison en général ?",
+          "Oh ! C’est ce que je préfère aussi !",
+          "C’est une maison où j’ai vraiment envie de rester !"
+        ],
+        "B": [
+          "Elle est calme et chaleureuse !",
+          "Oui, l’ambiance tranquille est vraiment agréable !",
+          "Oui, on a envie d’y vivre longtemps !"
+        ]
+      }
+    }
+  ]
+}
+

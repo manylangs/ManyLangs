@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a1",
+    "id": "007"
+  },
+  "title": {
+    "target": "A1 — 일상 어휘",
+    "en": "A1 — Everyday Vocabulary",
+    "es": "A1 — Vocabulario cotidiano",
+    "fr": "A1 — Vocabulaire quotidien",
+    "pt": "A1 — Vocabulário do dia a dia"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "가족",
+        "en": "family",
+        "es": "familia",
+        "fr": "famille",
+        "pt": "família"
+      },
+      "examples": [
+        {
+          "target": "가족이 모두 모였어요.",
+          "en": "The family gathered together.",
+          "es": "La familia se reunió.",
+          "fr": "La famille s'est réunie.",
+          "pt": "A família se reuniu."
+        },
+        {
+          "target": "가족 사진을 찍었어요.",
+          "en": "We took a family picture.",
+          "es": "Tomamos una foto familiar.",
+          "fr": "Nous avons pris une photo de famille.",
+          "pt": "Tiramos uma foto de família."
+        },
+        {
+          "target": "가족과 시간을 보냈어요.",
+          "en": "I spent time with my family.",
+          "es": "Pasé tiempo con mi familia.",
+          "fr": "J'ai passé du temps avec ma famille.",
+          "pt": "Passei tempo com minha família."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "부모",
+        "en": "parents",
+        "es": "padres",
+        "fr": "parents",
+        "pt": "pais"
+      },
+      "examples": [
+        {
+          "target": "부모님을 도와드렸어요.",
+          "en": "I helped my parents.",
+          "es": "Ayudé a mis padres.",
+          "fr": "J'ai aidé mes parents.",
+          "pt": "Ajudei meus pais."
+        },
+        {
+          "target": "부모님이 집에 계세요.",
+          "en": "My parents are at home.",
+          "es": "Mis padres están en casa.",
+          "fr": "Mes parents sont à la maison.",
+          "pt": "Meus pais estão em casa."
+        },
+        {
+          "target": "부모님께 전화했어요.",
+          "en": "I called my parents.",
+          "es": "Llamé a mis padres.",
+          "fr": "J'ai appelé mes parents.",
+          "pt": "Liguei para meus pais."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "형",
+        "en": "older brother (for males)",
+        "es": "hermano mayor (para hombres)",
+        "fr": "grand frère (pour hommes)",
+        "pt": "irmão mais velho (para homens)"
+      },
+      "examples": [
+        {
+          "target": "형이 도와줬어요.",
+          "en": "My older brother helped me.",
+          "es": "Mi hermano mayor me ayudó.",
+          "fr": "Mon grand frère m'a aidé.",
+          "pt": "Meu irmão mais velho me ajudou."
+        },
+        {
+          "target": "형은 학생이에요.",
+          "en": "My older brother is a student.",
+          "es": "Mi hermano mayor es estudiante.",
+          "fr": "Mon grand frère est étudiant.",
+          "pt": "Meu irmão mais velho é estudante."
+        },
+        {
+          "target": "형과 자주 놀아요.",
+          "en": "I often hang out with my older brother.",
+          "es": "Paso tiempo con mi hermano mayor a menudo.",
+          "fr": "Je passe souvent du temps avec mon grand frère.",
+          "pt": "Eu passo tempo com meu irmão mais velho com frequência."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "누나",
+        "en": "older sister (for males)",
+        "es": "hermana mayor (para hombres)",
+        "fr": "grande sœur (pour hommes)",
+        "pt": "irmã mais velha (para homens)"
+      },
+      "examples": [
+        {
+          "target": "누나가 요리를 했어요.",
+          "en": "My older sister cooked.",
+          "es": "Mi hermana mayor cocinó.",
+          "fr": "Ma grande sœur a cuisiné.",
+          "pt": "Minha irmã mais velha cozinhou."
+        },
+        {
+          "target": "누나는 친절해요.",
+          "en": "My older sister is kind.",
+          "es": "Mi hermana mayor es amable.",
+          "fr": "Ma grande sœur est gentille.",
+          "pt": "Minha irmã mais velha é gentil."
+        },
+        {
+          "target": "누나와 쇼핑했어요.",
+          "en": "I went shopping with my older sister.",
+          "es": "Fui de compras con mi hermana mayor.",
+          "fr": "J'ai fait du shopping avec ma grande sœur.",
+          "pt": "Fiz compras com minha irmã mais velha."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "동생",
+        "en": "younger sibling",
+        "es": "hermano/hermana menor",
+        "fr": "frère/soeur cadet(te)",
+        "pt": "irmão/irmã mais novo(a)"
+      },
+      "examples": [
+        {
+          "target": "동생이 숙제를 하고 있어요.",
+          "en": "My younger sibling is doing homework.",
+          "es": "Mi hermano menor está haciendo la tarea.",
+          "fr": "Mon cadet fait ses devoirs.",
+          "pt": "Meu irmão mais novo está fazendo a lição."
+        },
+        {
+          "target": "동생은 운동을 좋아해요.",
+          "en": "My younger sibling likes sports.",
+          "es": "A mi hermano menor le gustan los deportes.",
+          "fr": "Mon cadet aime le sport.",
+          "pt": "Meu irmão mais novo gosta de esportes."
+        },
+        {
+          "target": "동생과 게임했어요.",
+          "en": "I played games with my younger sibling.",
+          "es": "Jugué con mi hermano menor.",
+          "fr": "J'ai joué aux jeux avec mon cadet.",
+          "pt": "Joguei com meu irmão mais novo."
+        }
+      ]
+    }
+  ]
+}

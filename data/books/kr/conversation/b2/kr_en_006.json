@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "006",
+  "cefr": "B2",
+  "title_en": "Accommodation Booking",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Do you have any rooms available?,",
+    "What time is check-in?,",
+    "I'd like a double room.,",
+    "Is breakfast included?,",
+    "How much is the rate?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Hi there, do you have any rooms available for this weekend?",
+          "I'm planning to check in on Saturday afternoon.",
+          "Do you have a double room where I can stay comfortably?"
+        ],
+        "B": [
+          "Hello! Sure, just tell me your dates and I’ll check for you.",
+          "Yes, that time works! You can also choose your bed type.",
+          "Yes, a double room is available. Would you like me to book it for you?"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Do you also have rooms with breakfast included?",
+          "That sounds nice! It would be more convenient with breakfast.",
+          "Could you tell me how much the rate is?"
+        ],
+        "B": [
+          "Yes, we do. The breakfast option is quite popular.",
+          "Right, and the breakfast time is flexible, so it’s easy to enjoy.",
+          "For a double room, the rate is 90,000 won per night."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "What time does check-in start?",
+          "Great, that works well with my arrival time.",
+          "Is it okay if I arrive a bit late?"
+        ],
+        "B": [
+          "You can check in from 3 p.m.",
+          "Perfect, then you can come without rushing.",
+          "Sure, just let us know in advance and it’s no problem."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Do you have a parking area I can use?",
+          "Wow, that’s great that it’s free!",
+          "So I just need to ask at check-in, right?"
+        ],
+        "B": [
+          "Yes, guests can use the parking lot free of charge.",
+          "Exactly! Most guests find it very convenient.",
+          "Yes, the front desk will guide you when you check in."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Do you have any rooms with large windows?",
+          "Oh, that sounds perfect! Good lighting is important to me.",
+          "I'd like to reserve that room, please."
+        ],
+        "B": [
+          "Yes, we have one room with a nice view left.",
+          "Right, it gets a lot of sunlight. Guests really like it.",
+          "Great! I’ll book that room for you."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Do you happen to have smoking rooms?",
+          "Ah, I see. A non-smoking room is totally fine!",
+          "If possible, a room by the window would be even nicer."
+        ],
+        "B": [
+          "We currently operate as a fully non-smoking property.",
+          "Yes! Many guests prefer the non-smoking rooms because they're cleaner.",
+          "Sure, I'll try to assign you the best available room."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Is it possible to stay with a pet?",
+          "Oh, so only small dogs are allowed!",
+          "Then as long as I follow the rules, it's okay, right?"
+        ],
+        "B": [
+          "Yes, small dogs are allowed.",
+          "Right! And the additional fee isn’t high.",
+          "Yes, just follow the guidelines we explain at check-in."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Can I pay on site as well?",
+          "Great! Then I’ll pay when I check in.",
+          "Could you also tell me about your cancellation policy?"
+        ],
+        "B": [
+          "Yes, you can choose either on-site payment or prepayment.",
+          "Yes! That tends to be the most convenient.",
+          "You can cancel for free up to one day before your stay."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Does each room have a private bathroom?",
+          "Oh, a private bathroom is perfect.",
+          "Amenities are included as well, right?"
+        ],
+        "B": [
+          "Yes, every room comes with a private bathroom.",
+          "Yes! Most guests find it very comfortable.",
+          "Yes, the basic amenities are all provided."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Could you confirm the reservation for me?",
+          "Great! Getting the confirmation by text would be helpful.",
+          "Thank you! I’m looking forward to my stay."
+        ],
+        "B": [
+          "Yes, I’ll confirm it right now.",
+          "I’ll send you a text message. Please tell us when you arrive!",
+          "Have a wonderful trip!"
+        ]
+      }
+    }
+  ]
+}
+

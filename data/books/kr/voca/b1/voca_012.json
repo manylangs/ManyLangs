@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "b1",
+    "id": "012"
+  },
+  "title": {
+    "target": "B1 — 사회•학교•기술 어휘",
+    "en": "B1 — Social, School, and Technology Vocabulary",
+    "es": "B1 — Vocabulario social, escolar y tecnológico",
+    "fr": "B1 — Vocabulaire social, scolaire et technologique",
+    "pt": "B1 — Vocabulário social, escolar e tecnológico"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "부품",
+        "en": "component",
+        "es": "componente",
+        "fr": "composant",
+        "pt": "componente"
+      },
+      "examples": [
+        {
+          "target": "기계에 사용되는 부품이 모두 새것으로 교체되었어요.",
+          "en": "All components used in the machine were replaced with new ones.",
+          "es": "Todos los componentes usados en la máquina fueron reemplazados por nuevos.",
+          "fr": "Tous les composants utilisés dans la machine ont été remplacés par des neufs.",
+          "pt": "Todos os componentes usados na máquina foram substituídos por novos."
+        },
+        {
+          "target": "부품 하나가 고장 나서 장비가 작동하지 않았어요.",
+          "en": "The equipment didn’t work because one component was broken.",
+          "es": "El equipo no funcionó porque un componente estaba dañado.",
+          "fr": "L'équipement ne fonctionnait pas parce qu'un composant était défectueux.",
+          "pt": "O equipamento não funcionou porque um componente estava quebrado."
+        },
+        {
+          "target": "필요한 부품을 온라인으로 주문했어요.",
+          "en": "I ordered the necessary components online.",
+          "es": "Pedí los componentes necesarios en línea.",
+          "fr": "J'ai commandé les composants nécessaires en ligne.",
+          "pt": "Pedi os componentes necessários online."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "점검표",
+        "en": "checklist",
+        "es": "lista de verificación",
+        "fr": "liste de contrôle",
+        "pt": "lista de verificação"
+      },
+      "examples": [
+        {
+          "target": "작업 전에 점검표를 확인해야 해요.",
+          "en": "You must check the checklist before starting the task.",
+          "es": "Debe revisar la lista de verificación antes de comenzar la tarea.",
+          "fr": "Vous devez vérifier la liste de contrôle avant de commencer la tâche.",
+          "pt": "Você deve verificar a lista de verificação antes de iniciar a tarefa."
+        },
+        {
+          "target": "점검표에 모든 항목이 완료되었는지 확인했어요.",
+          "en": "I checked that all items on the checklist were completed.",
+          "es": "Verifiqué que todos los elementos de la lista de verificación estuvieran completos.",
+          "fr": "J'ai vérifié que tous les éléments de la liste de contrôle étaient complétés.",
+          "pt": "Verifiquei se todos os itens da lista de verificação estavam concluídos."
+        },
+        {
+          "target": "점검표를 사용하면 실수를 줄일 수 있어요.",
+          "en": "Using a checklist can help reduce mistakes.",
+          "es": "Usar una lista de verificación puede ayudar a reducir errores.",
+          "fr": "L'utilisation d'une liste de contrôle peut aider à réduire les erreurs.",
+          "pt": "Usar uma lista de verificação pode ajudar a reduzir erros."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "사용서",
+        "en": "user guide",
+        "es": "guía de usuario",
+        "fr": "guide d'utilisation",
+        "pt": "guia do usuário"
+      },
+      "examples": [
+        {
+          "target": "사용서를 참고하면 설정 방법을 쉽게 알 수 있어요.",
+          "en": "You can easily learn how to configure it by referring to the user guide.",
+          "es": "Puedes aprender fácilmente a configurarlo consultando la guía de usuario.",
+          "fr": "Vous pouvez facilement apprendre à le configurer en consultant le guide d'utilisation.",
+          "pt": "Você pode aprender facilmente a configurá-lo consultando o guia do usuário."
+        },
+        {
+          "target": "새 기기에는 항상 사용서가 함께 제공돼요.",
+          "en": "A user guide is always included with a new device.",
+          "es": "Siempre se incluye una guía de usuario con un dispositivo nuevo.",
+          "fr": "Un guide d'utilisation est toujours fourni avec un nouvel appareil.",
+          "pt": "Um guia do usuário sempre acompanha um novo dispositivo."
+        },
+        {
+          "target": "사용서를 읽지 않으면 기능을 제대로 활용하기 어려워요.",
+          "en": "Without reading the user guide, it's difficult to use all the features.",
+          "es": "Sin leer la guía de usuario, es difícil usar todas las funciones.",
+          "fr": "Sans lire le guide d'utilisation, il est difficile d'utiliser toutes les fonctions.",
+          "pt": "Sem ler o guia do usuário, é difícil usar todos os recursos."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "성능",
+        "en": "performance",
+        "es": "rendimiento",
+        "fr": "performance",
+        "pt": "desempenho"
+      },
+      "examples": [
+        {
+          "target": "새 모델은 이전보다 성능이 크게 향상되었어요.",
+          "en": "The new model has significantly improved performance compared to the previous one.",
+          "es": "El nuevo modelo tiene un rendimiento significativamente mejorado en comparación con el anterior.",
+          "fr": "Le nouveau modèle offre des performances nettement améliorées par rapport à l'ancien.",
+          "pt": "O novo modelo tem um desempenho significativamente melhorado em comparação ao anterior."
+        },
+        {
+          "target": "성능을 최대로 끌어올리기 위해 설정을 조정했어요.",
+          "en": "I adjusted the settings to maximize the performance.",
+          "es": "Ajusté la configuración para maximizar el rendimiento.",
+          "fr": "J'ai ajusté les paramètres pour maximiser les performances.",
+          "pt": "Ajustei as configurações para maximizar o desempenho."
+        },
+        {
+          "target": "성능 저하 문제가 발생해 시스템을 다시 시작했어요.",
+          "en": "Due to performance issues, I restarted the system.",
+          "es": "Debido a problemas de rendimiento, reinicié el sistema.",
+          "fr": "En raison de problèmes de performance, j'ai redémarré le système.",
+          "pt": "Devido a problemas de desempenho, reiniciei o sistema."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "기능성",
+        "en": "functionality",
+        "es": "funcionalidad",
+        "fr": "fonctionnalité",
+        "pt": "funcionalidade"
+      },
+      "examples": [
+        {
+          "target": "이 앱은 기능성이 뛰어나서 사용자들에게 인기가 많아요.",
+          "en": "This app is very popular because it has excellent functionality.",
+          "es": "Esta aplicación es muy popular porque tiene una excelente funcionalidad.",
+          "fr": "Cette application est très populaire car elle offre une excellente fonctionnalité.",
+          "pt": "Este aplicativo é muito popular porque oferece excelente funcionalidade."
+        },
+        {
+          "target": "기능성이 부족하면 아무리 디자인이 좋아도 사용하기 불편해요.",
+          "en": "If the functionality is poor, it's inconvenient to use even if the design is good.",
+          "es": "Si la funcionalidad es baja, es incómodo usarla aunque el diseño sea bueno.",
+          "fr": "Si la fonctionnalité est insuffisante, il est difficile d'utiliser l'application, même si le design est bon.",
+          "pt": "Se a funcionalidade for fraca, é difícil de usar mesmo que o design seja bom."
+        },
+        {
+          "target": "새 기능성이 추가되면서 작업 효율이 높아졌어요.",
+          "en": "With the new functionality added, work efficiency has improved.",
+          "es": "Con la nueva funcionalidad añadida, la eficiencia del trabajo mejoró.",
+          "fr": "Avec la nouvelle fonctionnalité ajoutée, l'efficacité du travail s'est améliorée.",
+          "pt": "Com a nova funcionalidade adicionada, a eficiência do trabalho melhorou."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "010",
+  "cefr": "B1",
+  "title_fr": "Événements scolaires",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Tu es prêt pour l’événement de l’école?,",
+    "Que penses-tu de l’événement cette fois-ci?,",
+    "L’ambiance est bonne?,",
+    "Tu comptes y participer?,",
+    "Allons-y ensemble la prochaine fois!,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "La préparation de l’événement avance bien ?",
+          "Ah oui ? Ça a l’air de se dérouler mieux que je pensais ! L’ambiance est comment ?",
+          "Super ! Je passerai voir le jour de l’événement."
+        ],
+        "B": [
+          "Oui, tout se passe plutôt bien cette fois !",
+          "C’est assez animé et positif.",
+          "Génial, tu vas sûrement apprécier si tu viens."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Tu as un rôle pendant l’événement ?",
+          "Oh, faire une petite introduction doit être un peu stressant !",
+          "Mais je suis sûr que tu t’en sortiras très bien. Tu t’es beaucoup entraîné ?"
+        ],
+        "B": [
+          "Oui, je suis chargé de faire une courte présentation au début.",
+          "Oui, ça me rend un peu nerveux.",
+          "Je me suis entraîné pas mal, alors ça commence à devenir naturel."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Tu penses qu’il y aura beaucoup de monde ?",
+          "Waouh, vraiment ? L’ambiance va être incroyable !",
+          "Super, les événements animés sont souvent très amusants."
+        ],
+        "B": [
+          "Oui, sûrement plus que l’année dernière.",
+          "On a beaucoup fait de promotion, alors l’intérêt est élevé.",
+          "Moi aussi j’ai hâte !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Il y a eu quelque chose de difficile pendant les préparatifs ?",
+          "Ah oui, quand les emplois du temps se bousculent, c’est compliqué.",
+          "Mais tu t’en sors très bien ! Si tu as besoin d’aide, dis-le moi."
+        ],
+        "B": [
+          "Oui, surtout quand les horaires se chevauchent.",
+          "Mais comme on travaille ensemble, ça reste gérable.",
+          "Merci ! Je n’hésiterai pas si j’ai besoin."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Quelle partie du programme t’intéresse le plus ?",
+          "Oh, l’équipe de performance ? Ça promet d’être sympa !",
+          "Raconte-moi après comment c’était."
+        ],
+        "B": [
+          "J’attends surtout la prestation des étudiants.",
+          "Je les ai vus s’entraîner et ça avait l’air vraiment bien.",
+          "Oui, je te dirai tout dès que ce sera fini !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Tu vas à l’événement avec quelqu’un ?",
+          "Ah, même seul c’est agréable ! Il y a toujours plein de monde.",
+          "Mais si tu veux, je peux t’accompagner."
+        ],
+        "B": [
+          "Pas encore, je n’ai rien prévu.",
+          "Oui, même seul ça peut être sympa.",
+          "Merci ! Ce serait chouette d’y aller ensemble."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Tu aides à un stand pendant l’événement ?",
+          "Ah super, un stand d’activités manuelles attire toujours du monde !",
+          "Je passerai voir ton stand, c’est sûr."
+        ],
+        "B": [
+          "Oui, on m’a demandé d’aider à un stand de création.",
+          "On m’a dit que c’était l’un des stands les plus populaires.",
+          "Ça me ferait plaisir que tu passes !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Tu t’es fait de nouveaux amis en préparant l’événement ?",
+          "Ah oui, travailler ensemble rapproche vraiment les gens !",
+          "Super, tu me le présenteras un jour."
+        ],
+        "B": [
+          "Oui, j’ai sympathisé avec quelqu’un pendant les préparatifs.",
+          "On a beaucoup travaillé ensemble, donc la communication est devenue très naturelle.",
+          "Oui, je te le présenterai dès qu’on aura l’occasion."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Il y a un repas ou une sortie après l’événement ?",
+          "Oh sympa ! Ça doit être chouette de se détendre tous ensemble.",
+          "Tu me raconteras comment ça s’est passé !"
+        ],
+        "B": [
+          "Oui, on va dîner ensemble après.",
+          "Tout le monde veut juste souffler un peu après l’événement.",
+          "Oui, je te dirai tout après."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Le jour de l’événement, on pourrait se promener un peu ensemble ?",
+          "Génial ! Quand il y a du monde, c’est mieux d’être à deux.",
+          "Je t’enverrai un message ce jour-là si tout va bien."
+        ],
+        "B": [
+          "Oui, ce serait plus sympa à deux.",
+          "Oui, ce sera moins stressant si on reste ensemble.",
+          "Parfait, je t’écris le matin même !"
+        ]
+      }
+    }
+  ]
+}
+

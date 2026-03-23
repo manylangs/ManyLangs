@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "001",
+  "cefr": "C2",
+  "title_pt": "Feiras e exposições",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "O ambiente desta feira está realmente diferente,",
+    "A disposição dos stands é um pouco confusa,",
+    "Se quiser, podemos dar uma volta juntos,",
+    "Aquela apresentação foi realmente impressionante,",
+    "Se tiver um momento, podíamos conversar um instante,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Esta feira é muito maior do que eu imaginava.",
+          "Tem algum stand que recomende?",
+          "Perfeito, vou começar por esse."
+        ],
+        "B": [
+          "Pois é! Este ano está maior porque participaram muitas empresas europeias.",
+          "Sim, a zona de tecnologia no Pavilhão 3 é bastante interessante.",
+          "Claro, posso ir consigo e explicar-lhe um pouco pelo caminho."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Viu aquela apresentação? Foi impressionante!",
+          "Se aquela tecnologia for realmente aplicada, o mercado pode mudar muito.",
+          "Sabe se haverá alguma demonstração hoje?"
+        ],
+        "B": [
+          "Vi, sim! O apresentador explicou tudo de forma muito clara.",
+          "Exactamente, a parte da automatização foi especialmente inovadora.",
+          "Sim, haverá uma demonstração ao vivo às 15h. Quer ir comigo?"
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "A disposição dos stands é um pouco confusa. Para onde devemos ir?",
+          "Ah, então virando à direita chegamos ao pavilhão principal.",
+          "Certo, vamos ver aquele lado primeiro e depois voltamos."
+        ],
+        "B": [
+          "Sim, muitas pessoas perdem-se da primeira vez!",
+          "Exacto, é lá que estão a maioria dos stands principais.",
+          "Perfeito, diga-me se precisar de alguma ajuda."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Posso levar mais um exemplar deste folheto?",
+          "Está tão bem organizado que gostava de partilhá-lo com a minha equipa.",
+          "Obrigado, vou usá-lo na nossa reunião."
+        ],
+        "B": [
+          "Claro! Também posso enviar-lhe a versão em PDF, se preferir.",
+          "Sim, foi feito mesmo para facilitar as discussões de equipa.",
+          "Qualquer dúvida adicional, não hesite em contactar-me."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "De repente ficou muito cheio. Vai começar algum evento?",
+          "Ah, por isso é que toda a gente se apressou.",
+          "Então, vamos um pouco mais cedo para arranjar lugar?"
+        ],
+        "B": [
+          "Sim! A sessão principal começa dentro de dez minutos.",
+          "É uma apresentação muito popular, as pessoas chegam sempre cedo.",
+          "Boa ideia — talvez consigamos lugares na primeira fila!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "O design deste stand é muito elegante. Destaca-se imenso.",
+          "O conceito é consistente, o que torna a explicação mais clara.",
+          "Posso tirar uma fotografia?"
+        ],
+        "B": [
+          "Não é? A equipa de design até ganhou um prémio este ano!",
+          "Sim, a mensagem principal é transmitida muito bem.",
+          "Claro, apenas dê destaque ao produto, por favor."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "A pessoa responsável está disponível neste momento?",
+          "Gostava de perguntar directamente sobre a integração do sistema.",
+          "Óptimo, falo com ela assim que voltar."
+        ],
+        "B": [
+          "Ela saiu por um instante, mas deve voltar em breve.",
+          "Para questões de integração, ela é mesmo a pessoa certa.",
+          "Eu aviso assim que ela regressar."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Está mais quente aqui dentro do que eu esperava. Fazemos uma pequena pausa?",
+          "Vejo ali uma zona de descanso junto à parede.",
+          "Perfeito, podemos comprar água e continuar depois."
+        ],
+        "B": [
+          "Também achei! Com tanta gente, aquece rapidamente.",
+          "Sim, há bastante lugares para se sentar por ali.",
+          "Uma pequena pausa vai saber bem!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Posso experimentar este produto em exposição?",
+          "Uau, é mais leve do que pensei! A sensação é muito boa.",
+          "Óptimo, então gostava de ouvir a explicação das funcionalidades."
+        ],
+        "B": [
+          "Claro, está aqui mesmo para isso — experimente à vontade.",
+          "Sim, este novo modelo aposta muito na redução do peso.",
+          "E posso fazer-lhe uma pequena demonstração agora mesmo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Acho que já vimos quase tudo. Falta algum stand?",
+          "Ah, ainda não fomos ao pavilhão 5.",
+          "Certo, vamos terminar passando por lá."
+        ],
+        "B": [
+          "Já viu a maior parte, mas falta a zona de novos produtos do pavilhão 5.",
+          "Sim, vale mesmo a pena visitar.",
+          "Perfeito — uma boa forma de terminar o dia!"
+        ]
+      }
+    }
+  ]
+}
+

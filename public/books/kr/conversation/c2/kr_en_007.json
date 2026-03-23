@@ -1,0 +1,167 @@
+﻿{
+  "chapter_id": "007",
+  "cefr": "C2",
+  "title_en": "Company Policies",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "review updated company policies,",
+    "check policy changes,",
+    "share updated guidelines,",
+    "ensure policy compliance,",
+    "clarify document details,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Did you see the new company policy notice that was posted?",
+          "The section on working hours changed quite a bit.",
+          "I just need to double-check the effective date."
+        ],
+        "B": [
+          "Yeah, I saw it! A lot of things were updated.",
+          "Right, that part stood out the most.",
+          "Okay, I’ll整理the effective dates and share them with you."
+        ]
+      }
+    },
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Did you notice the strengthened security policy?",
+          "The password update cycle got even shorter.",
+          "I’ll notify the team about it later today."
+        ],
+        "B": [
+          "Yes, I saw the announcement this morning.",
+          "Yeah, the overall security requirements went up.",
+          "Great, I’ll send you the guidance materials too."
+        ]
+      }
+    },
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "I heard the business trip policy changed a little.",
+          "Apparently the accommodation rates were updated.",
+          "I just need to check the new rate table."
+        ],
+        "B": [
+          "That’s right. The new standard applies starting this month.",
+          "Yes, the accommodation part changed the most.",
+          "I’ll share the updated rate table with you."
+        ]
+      }
+    },
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Did you review the revised leave policy?",
+          "The eligibility for special leave seems a lot clearer now.",
+          "It’d be good to explain that part to the team."
+        ],
+        "B": [
+          "Yeah, I read it! The explanations are much cleaner now.",
+          "Right, the conditions are easier to understand than before.",
+          "I’ll整理that section and post it in the team channel."
+        ]
+      }
+    },
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Did you hear that the document retention policy got stricter?",
+          "The external-sharing section was emphasized a lot.",
+          "Maybe we should review our project files as well."
+        ],
+        "B": [
+          "Yeah, we even received a separate reminder email.",
+          "Right, external sharing is regulated more tightly now.",
+          "Okay, let’s gather the related files and review them together."
+        ]
+      }
+    },
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "I heard the internal messenger policy was updated too.",
+          "Non-work usage is going to be more restricted.",
+          "Maybe we should整理the channels we use."
+        ],
+        "B": [
+          "Yes, it takes effect starting this week.",
+          "Yeah, the usage guidelines are much clearer now.",
+          "Alright, I’ll整理them and notify the team."
+        ]
+      }
+    },
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "I heard the dress code changed a bit as well.",
+          "Friday casual rules became more flexible.",
+          "Honestly, I like this change."
+        ],
+        "B": [
+          "Same here — they said it was adjusted based on employee feedback.",
+          "Yeah, Fridays feel a lot freer now.",
+          "I’ll mention it briefly in this week’s meeting."
+        ]
+      }
+    },
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Did you hear the development workflow guidelines changed too?",
+          "The code-review standards got more detailed.",
+          "I’ll update our documents to match the new standards."
+        ],
+        "B": [
+          "Yes, they announced it in the morning meeting.",
+          "Right, the review criteria are much more specific now.",
+          "Great, share the updated docs with me once you’re done."
+        ]
+      }
+    },
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "I heard the training-participation policy was reorganized.",
+          "It seems the required training hours increased a bit.",
+          "I guess I should sign up sometime this week."
+        ],
+        "B": [
+          "Yes, the new rule applies starting this year.",
+          "The required hours did increase, but the content improved too.",
+          "Sure, I’ll send you the sign-up instructions as well."
+        ]
+      }
+    },
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "I think the last thing we need to check is the evaluation policy.",
+          "The performance criteria look more detailed now.",
+          "I’ll整理everything and submit my part by tomorrow."
+        ],
+        "B": [
+          "Yes, that section changed quite a bit as well.",
+          "Right, the detailed criteria should make evaluations clearer.",
+          "Great, please submit it by tomorrow!"
+        ]
+      }
+    }
+  ]
+}
+

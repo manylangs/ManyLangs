@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "010",
+  "cefr": "B2",
+  "title_pt": "Redes sociais e comunidades online",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "A pesquisa não funciona.,",
+    "Não consigo ver os comentários.,",
+    "Recebo notificações a mais.,",
+    "A minha conta está bloqueada.,",
+    "Onde altero esta definição?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "A pesquisa na rede social deixou de funcionar. Sabe porquê?",
+          "Ah, então pode ser só uma falha temporária.",
+          "Certo, vou tentar novamente daqui a pouco."
+        ],
+        "B": [
+          "Ouvi dizer que os servidores têm estado instáveis desde ontem.",
+          "Sim, isso acontece às vezes, mas costuma voltar ao normal rapidamente.",
+          "Deve estabilizar em breve, tente novamente mais tarde."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Todos os comentários desapareceram de repente. Sou só eu?",
+          "Ah, um tipo de restrição pode mesmo causar isso!",
+          "Então devo verificar o estado da minha conta também."
+        ],
+        "B": [
+          "Às vezes o sistema oculta conteúdo se suspeitar de violação das regras.",
+          "Sim, normalmente volta a aparecer passado algum tempo.",
+          "Se notar algo estranho, pode contactar o apoio ao cliente."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Estou a receber tantas notificações que já se torna cansativo.",
+          "Ah, poder ajustar isso aí seria mesmo útil!",
+          "Vou reorganizar as minhas categorias de notificações."
+        ],
+        "B": [
+          "Nas definições de notificações pode desativar o que não precisar.",
+          "Sim, há muitas que não são realmente importantes.",
+          "Ao manter só as essenciais, tudo fica mais simples."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "As minhas publicações estão a ser apagadas. Sabe porquê?",
+          "Ah, então provavelmente é por causa das regras.",
+          "Vou ter mais cuidado da próxima vez."
+        ],
+        "B": [
+          "O filtro automático pode ser um pouco rígido às vezes.",
+          "Sim, certas palavras ou contextos podem desencadear a remoção.",
+          "Se respeitar as regras, as suas publicações devem manter-se online."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "A minha conta ficou bloqueada de repente. Porque é que isso acontece?",
+          "Ah, várias tentativas falhadas de início de sessão podem explicar isso!",
+          "Então vou redefinir a palavra-passe primeiro."
+        ],
+        "B": [
+          "Quando há atividade suspeita, a conta é bloqueada automaticamente.",
+          "Sim, várias tentativas falhadas podem desencadear esse bloqueio.",
+          "Depois de redefinir e confirmar, costuma desbloquear rapidamente."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "As recomendações de seguidores não fazem qualquer sentido.",
+          "Ah, então o algoritmo pode fazer suposições aleatórias.",
+          "Vou rever as minhas preferências e interesses."
+        ],
+        "B": [
+          "As sugestões baseiam-se muitas vezes no que viu recentemente.",
+          "Sim, uma pequena mudança na atividade pode alterar muito as recomendações.",
+          "Se atualizar os interesses, as sugestões ficam mais precisas."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "As notificações da comunidade chegam demasiado tarde. É inconveniente.",
+          "Ah, se for por causa das definições, deve ser fácil de resolver!",
+          "Vou colocar apenas as notificações importantes como prioridade alta."
+        ],
+        "B": [
+          "Se a prioridade estiver baixa, podem chegar com atraso.",
+          "Sim, ao aumentar a prioridade chegam quase de imediato.",
+          "É mais eficiente deixar só as notificações essenciais em alta prioridade."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "As minhas publicações quase não recebem recomendações. Porquê?",
+          "Ah, então o horário importa mesmo!",
+          "Vou prestar atenção aos períodos de maior atividade."
+        ],
+        "B": [
+          "Se publicar numa hora pouco ativa, a visibilidade baixa muito.",
+          "Sim, publicar quando há mais utilizadores ativos ajuda bastante.",
+          "Publicar em horários de maior interação é sempre mais eficaz."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Algumas comunidades têm um ambiente tão rígido que é difícil participar.",
+          "Ah, perceber essa diferença ajuda a entender melhor.",
+          "Vou focar-me nas comunidades onde me sinto mais confortável."
+        ],
+        "B": [
+          "Cada comunidade tem o seu próprio tom e cultura.",
+          "Sim, algumas são acolhedoras enquanto outras são bem mais exigentes.",
+          "Encontrar um espaço que combine consigo melhora muito a experiência."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Não sei como editar as minhas fotos para publicar nas redes sociais.",
+          "Ah, esse estilo pode ficar muito bonito!",
+          "Vou experimentar vários filtros e escolher o que mais gostar."
+        ],
+        "B": [
+          "Hoje em dia muita gente usa filtros estéticos.",
+          "Sim, até pequenos ajustes podem mudar completamente o ambiente.",
+          "Experimente alguns e escolha o que combina melhor consigo."
+        ]
+      }
+    }
+  ]
+}
+

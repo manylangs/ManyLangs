@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "b2",
+    "id": "014"
+  },
+  "title": {
+    "target": "B2 — 사회•문화•경제•미래 개념 어휘",
+    "en": "B2 — Social, Cultural, Economic, and Future-Concept Vocabulary",
+    "es": "B2 — Vocabulario social, cultural, económico y de conceptos futuros",
+    "fr": "B2 — Vocabulaire social, culturel, économique et lié aux concepts futurs",
+    "pt": "B2 — Vocabulário social, cultural, econômico e de conceitos futuros"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "네트워크망",
+        "en": "network system",
+        "es": "red de red",
+        "fr": "réseau",
+        "pt": "rede de rede"
+      },
+      "examples": [
+        {
+          "target": "기업은 안정적인 네트워크망 구축에 많은 비용을 투자한다.",
+          "en": "Companies invest heavily in building stable network systems.",
+          "es": "Las empresas invierten mucho en construir sistemas de red estables.",
+          "fr": "Les entreprises investissent beaucoup dans la construction de réseaux stables.",
+          "pt": "As empresas investem muito na construção de sistemas de rede estáveis."
+        },
+        {
+          "target": "네트워크망 장애는 업무 전체에 영향을 미칠 수 있다.",
+          "en": "Network system failures can affect entire operations.",
+          "es": "Una falla en la red puede afectar todas las operaciones.",
+          "fr": "Une panne du réseau peut affecter l’ensemble des opérations.",
+          "pt": "Falhas na rede podem afetar todas as operações."
+        },
+        {
+          "target": "고속 네트워크망은 데이터 전송을 빠르게 한다.",
+          "en": "High-speed network systems enable fast data transmission.",
+          "es": "Las redes de alta velocidad permiten una transmisión rápida de datos.",
+          "fr": "Les réseaux haut débit permettent une transmission rapide des données.",
+          "pt": "Redes de alta velocidade permitem transmissão rápida de dados."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "통신",
+        "en": "communication (telecom)",
+        "es": "telecomunicación",
+        "fr": "télécommunication",
+        "pt": "telecomunicação"
+      },
+      "examples": [
+        {
+          "target": "통신 기술 발전은 사회 전반의 변화를 이끌었다.",
+          "en": "Advances in telecommunications have driven changes across society.",
+          "es": "Los avances en telecomunicaciones han impulsado cambios en toda la sociedad.",
+          "fr": "Les progrès des télécommunications ont provoqué des changements dans toute la société.",
+          "pt": "Os avanços nas telecomunicações impulsionaram mudanças em toda a sociedade."
+        },
+        {
+          "target": "통신 장애가 발생하면 서비스 이용이 어려워진다.",
+          "en": "When telecommunications fail, services become difficult to use.",
+          "es": "Cuando fallan las telecomunicaciones, es difícil usar los servicios.",
+          "fr": "Lorsque les télécommunications échouent, l’utilisation des services devient difficile.",
+          "pt": "Quando as telecomunicações falham, o uso de serviços torna-se difícil."
+        },
+        {
+          "target": "새로운 통신 방식이 도입되어 속도가 향상되었다.",
+          "en": "A new communication method was introduced, improving speed.",
+          "es": "Se introdujo un nuevo método de comunicación, lo que mejoró la velocidad.",
+          "fr": "Une nouvelle méthode de communication a été introduite, améliorant la vitesse.",
+          "pt": "Um novo método de comunicação foi introduzido, melhorando a velocidade."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "전송률",
+        "en": "transmission rate",
+        "es": "tasa de transmisión",
+        "fr": "taux de transmission",
+        "pt": "taxa de transmissão"
+      },
+      "examples": [
+        {
+          "target": "전송률이 높을수록 파일 업로드 속도가 빨라진다.",
+          "en": "Higher transmission rates allow faster file uploads.",
+          "es": "Una mayor tasa de transmisión permite subir archivos más rápido.",
+          "fr": "Un taux de transmission plus élevé permet un téléversement plus rapide des fichiers.",
+          "pt": "Taxas de transmissão mais altas permitem enviar arquivos mais rapidamente."
+        },
+        {
+          "target": "전송률 저하는 네트워크 병목을 일으킬 수 있다.",
+          "en": "Low transmission rates can cause network bottlenecks.",
+          "es": "Una baja tasa de transmisión puede causar cuellos de botella en la red.",
+          "fr": "Une baisse du taux de transmission peut provoquer des goulots d’étranglement.",
+          "pt": "Baixas taxas de transmissão podem causar gargalos na rede."
+        },
+        {
+          "target": "장비 업그레이드로 전송률이 크게 향상되었다.",
+          "en": "Equipment upgrades significantly improved the transmission rate.",
+          "es": "La actualización del equipo mejoró significativamente la tasa de transmisión.",
+          "fr": "La mise à niveau des équipements a considérablement amélioré le taux de transmission.",
+          "pt": "A atualização dos equipamentos melhorou significativamente a taxa de transmissão."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "보안체계",
+        "en": "security system",
+        "es": "sistema de seguridad",
+        "fr": "système de sécurité",
+        "pt": "sistema de segurança"
+      },
+      "examples": [
+        {
+          "target": "보안체계를 강화해야 정보 유출을 막을 수 있다.",
+          "en": "Strengthening the security system can prevent information leaks.",
+          "es": "Fortalecer el sistema de seguridad puede evitar fugas de información.",
+          "fr": "Renforcer le système de sécurité peut empêcher les fuites d’informations.",
+          "pt": "Reforçar o sistema de segurança pode evitar vazamentos de informação."
+        },
+        {
+          "target": "새로운 보안체계가 도입되며 안전성이 높아졌다.",
+          "en": "A new security system was introduced, improving safety.",
+          "es": "Se introdujo un nuevo sistema de seguridad, aumentando la seguridad.",
+          "fr": "Un nouveau système de sécurité a été introduit, améliorant la sûreté.",
+          "pt": "Um novo sistema de segurança foi introduzido, aumentando a segurança."
+        },
+        {
+          "target": "보안체계 점검은 정기적으로 이루어져야 한다.",
+          "en": "Security systems must be checked regularly.",
+          "es": "Los sistemas de seguridad deben revisarse regularmente.",
+          "fr": "Les systèmes de sécurité doivent être vérifiés régulièrement.",
+          "pt": "Os sistemas de segurança devem ser verificados regularmente."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "인증수단",
+        "en": "authentication method",
+        "es": "método de autenticación",
+        "fr": "méthode d'authentification",
+        "pt": "método de autenticação"
+      },
+      "examples": [
+        {
+          "target": "보안 강화를 위해 새로운 인증수단이 도입되었다.",
+          "en": "A new authentication method was introduced to strengthen security.",
+          "es": "Se introdujo un nuevo método de autenticación para reforzar la seguridad.",
+          "fr": "Une nouvelle méthode d’authentification a été introduite pour renforcer la sécurité.",
+          "pt": "Um novo método de autenticação foi introduzido para reforçar a segurança."
+        },
+        {
+          "target": "다단계 인증수단은 계정 보호에 효과적이다.",
+          "en": "Multi-step authentication methods are effective for protecting accounts.",
+          "es": "Los métodos de autenticación en varios pasos son eficaces para proteger cuentas.",
+          "fr": "Les méthodes d’authentification à plusieurs étapes sont efficaces pour protéger les comptes.",
+          "pt": "Métodos de autenticação em várias etapas são eficazes para proteger contas."
+        },
+        {
+          "target": "인증수단 선택은 서비스 특성에 따라 달라진다.",
+          "en": "The choice of authentication method depends on service requirements.",
+          "es": "La elección del método de autenticación depende de las necesidades del servicio.",
+          "fr": "Le choix de la méthode d’authentification dépend des besoins du service.",
+          "pt": "A escolha do método de autenticação depende das necessidades do serviço."
+        }
+      ]
+    }
+  ]
+}

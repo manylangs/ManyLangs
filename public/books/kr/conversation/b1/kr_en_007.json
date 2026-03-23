@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "007",
+  "cefr": "B1",
+  "title_en": "Exam Preparation",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "How is your exam preparation going?,",
+    "Did you decide where to start studying?,",
+    "Should we review the important sections?,",
+    "Time management is the hardest part.,",
+    "Let’s review together!,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Is your exam preparation going well?",
+          "Oh really? Then have you planned out your study schedule?",
+          "Nice! I can help check your plan if you want."
+        ],
+        "B": [
+          "I’m studying little by little, but it's tougher than I thought.",
+          "Not completely, I just outlined the basics.",
+          "Really? That would be so helpful!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Did you decide where to start studying?",
+          "That order sounds good! It should help you understand better.",
+          "Yeah, focusing on key sections first is always smart."
+        ],
+        "B": [
+          "Yes, I’m starting with the basic concepts.",
+          "After that, I’ll try solving some practice problems.",
+          "I think I should do that too!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Do you understand the concepts so far?",
+          "Right, if something feels unclear, it’s better to review it again.",
+          "Exactly! Let’s go over it once more before moving to exercises."
+        ],
+        "B": [
+          "I understand about half, but some parts confuse me.",
+          "Yeah, so I’m trying to整理them again.",
+          "Alright, let’s do it now!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Did you try solving last year’s exam questions?",
+          "Oh wow, sounds like it was harder than expected!",
+          "Let’s solve some together—it's much easier that way."
+        ],
+        "B": [
+          "Yes, but a few questions were really difficult.",
+          "Some of them didn’t make sense to me at all.",
+          "Really? Okay, let’s look at them now."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Is there any chapter you’re especially worried about?",
+          "Yeah, lots of people say that chapter is tough.",
+          "Let’s organize that section separately and review it again."
+        ],
+        "B": [
+          "The chapter with the applied problems worries me the most.",
+          "Right, the explanations are quite complicated too.",
+          "Organizing it will help a lot!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Are you managing your study time well?",
+          "Yeah, that can be tricky to balance.",
+          "Try splitting your study time into shorter blocks—it really helps."
+        ],
+        "B": [
+          "Not really. I always run out of time.",
+          "Everything takes longer than I expect.",
+          "Okay, I’ll try that method!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Are you memorizing the key points well?",
+          "Oh no, then want to try a different method?",
+          "Using images or associations might make it easier!"
+        ],
+        "B": [
+          "No, I keep forgetting them.",
+          "Even if I repeat them, they don’t stick.",
+          "I’ve never tried that—sounds interesting!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "How far have you studied so far?",
+          "Oh, that’s actually really good progress!",
+          "Great! I can help with the remaining chapters."
+        ],
+        "B": [
+          "I’ve studied about half of the material.",
+          "But the last chapters feel overwhelming.",
+          "I’d really appreciate your help!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Do you think you can finish today’s study goals?",
+          "Wow, you’re doing better than I thought!",
+          "Great, you’re almost done—just one last check!"
+        ],
+        "B": [
+          "Yes, I think I can finish if I work a bit more.",
+          "I’m actually going faster than expected.",
+          "Hearing that gives me more motivation!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Shall we review together one last time?",
+          "Oh, you seem much more confident now!",
+          "Nice! You’re almost fully prepared."
+        ],
+        "B": [
+          "Sure! Let’s do it now.",
+          "Yeah, I think I’m finally getting the hang of it.",
+          "Thanks for your support—it really helps!"
+        ]
+      }
+    }
+  ]
+}
+

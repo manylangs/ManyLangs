@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "002",
+  "cefr": "B2",
+  "title_en": "Hospital and Pharmacy",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "I'd like to make a medical appointment,",
+    "My symptoms are continuing,",
+    "How will the test results come out?,",
+    "Could I get a prescription?,",
+    "How should I take the medicine?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Hello, I'd like to make an appointment. Is that possible?",
+          "Then what is the earliest time available?",
+          "Great, please book that time for me."
+        ],
+        "B": [
+          "Hello! Yes, I can help you with that.",
+          "The earliest slot is today at 3 p.m.",
+          "Alright, your appointment is confirmed!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "I've been coughing a lot lately, and I'm a bit worried.",
+          "Yes, the symptoms have gotten worse over the past few days.",
+          "Okay, I'll go ahead with the test."
+        ],
+        "B": [
+          "I see. When did the coughing first start?",
+          "In that case, it could be a cold or bronchitis.",
+          "Let me guide you to the testing room."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Will the test results be ready soon?",
+          "Oh, that’s quicker than I expected!",
+          "Okay, please let me know as soon as they’re out."
+        ],
+        "B": [
+          "Yes, you can usually get them in about 20 minutes.",
+          "We should be able to inform you right away.",
+          "I'll call you as soon as we have the results."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Could I get a prescription?",
+          "My symptoms are pretty strong, so I think I need some medication.",
+          "Great, thank you. I'll go to the pharmacy now."
+        ],
+        "B": [
+          "Yes, based on your symptoms, medication would help.",
+          "I'll prescribe cough medicine and an anti-inflammatory.",
+          "Your prescription has been printed."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Should I take the medicine after meals?",
+          "Oh, so I just need to follow the timing properly.",
+          "Alright, I’ll make sure not to forget."
+        ],
+        "B": [
+          "Yes, it works best if taken 30 minutes after a meal.",
+          "Keeping the timing consistent helps with effectiveness.",
+          "Let me know if you need further explanation."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Could you check if I have a fever?",
+          "Wow, that’s higher than I thought…",
+          "Then should I get an injection too?"
+        ],
+        "B": [
+          "Sure, let me take your temperature.",
+          "It's over 38 degrees, so you do need something for the fever.",
+          "Yes, a fever-reducing injection will help."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Does this include allergy medication too?",
+          "Ah, that’s good. My allergies have been pretty bad lately.",
+          "Okay, I’ll be careful."
+        ],
+        "B": [
+          "Yes, I also prescribed an allergy reliever.",
+          "Then the symptoms should ease a bit.",
+          "It may cause drowsiness, so avoid driving."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Is there a pharmacy inside this building?",
+          "Oh nice, right next door makes it convenient!",
+          "Great. I’ll head there now."
+        ],
+        "B": [
+          "Yes, there’s a pharmacy on the first floor.",
+          "There usually isn’t much waiting time.",
+          "Once you get your medicine, you’re all set."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Could I receive the test results by email as well?",
+          "Nice, that will make it easier to keep track.",
+          "Okay, please send them to me."
+        ],
+        "B": [
+          "Yes, we can email them to you.",
+          "You’ll receive them as a PDF, so you can view them anytime.",
+          "Please confirm your email address and I'll send them right away."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "How do I pay for the consultation today?",
+          "Oh good, card payment works!",
+          "Okay, I’ll pay now and head out."
+        ],
+        "B": [
+          "You can pay at the front desk.",
+          "Yes, we accept both card and cash.",
+          "Here’s your receipt. Wishing you a quick recovery!"
+        ]
+      }
+    }
+  ]
+}
+

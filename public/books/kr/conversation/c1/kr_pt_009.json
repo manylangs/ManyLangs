@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "009",
+  "cefr": "C1",
+  "title_pt": "Gestão de horários",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Por favor, reveja o horário novamente,",
+    "Informe-me dos horários em que está disponível,",
+    "Se houver alterações, avise-me de imediato,",
+    "Prepararei e partilharei a versão final do horário,",
+    "Se forem necessários ajustes adicionais, diga-me,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Pode rever o horário desta semana mais uma vez?",
+          "Há algumas diferenças em relação ao que tenho registado.",
+          "Vou reorganizar tudo e enviar uma versão atualizada."
+        ],
+        "B": [
+          "Ah, sim? Também encontrei alguns pontos confusos.",
+          "Vou enviar-lhe uma captura da última versão que estou a usar.",
+          "A partir disso conseguimos alinhar tudo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "A reunião de amanhã de manhã continua a ser conveniente para si?",
+          "Um dos participantes pode ter um conflito de horário.",
+          "Se necessário, podemos mudar para outro período da manhã."
+        ],
+        "B": [
+          "A manhã funciona, embora depois das 10h seja melhor.",
+          "Se houver conflito, ajustar a hora é o mais sensato.",
+          "Envie-me alguns horários possíveis e eu escolho um."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Parece que o cronograma do projeto poderá ser antecipado.",
+          "Isso significa que teremos de reorganizar o nosso planeamento interno.",
+          "Tem um momento para falarmos rapidamente?"
+        ],
+        "B": [
+          "Antecipado? Isso pode ter um impacto significativo.",
+          "Também vou precisar rever os marcos internos.",
+          "Estou disponível esta tarde — diga-me qual hora prefere."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Estava preocupado que as mudanças frequentes no horário estivessem a causar confusão.",
+          "Estou a tentar manter uma versão o mais clara possível.",
+          "Vou preparar uma atualização com base nas informações de hoje."
+        ],
+        "B": [
+          "Não se preocupe! Compreendo perfeitamente porque há tantos ajustes.",
+          "Enquanto tiver uma versão clara, consigo acompanhar sem problemas.",
+          "Assim que enviar a última versão, passo a usar essa."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Tem cerca de 30 minutos no início da próxima semana?",
+          "Gostaria de reajustar alguns pontos importantes.",
+          "Indique-me o horário que lhe seja mais conveniente."
+        ],
+        "B": [
+          "No início da semana… segunda-feira à tarde deve funcionar.",
+          "Também precisava de uma revisão — as tarefas estão a acumular-se.",
+          "Que tal segunda-feira às 14h?"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Chegou a ver o documento do horário? Parece que faltam alguns itens.",
+          "Especialmente a reunião com o parceiro externo não está incluída.",
+          "Pode verificar essa parte primeiro?"
+        ],
+        "B": [
+          "Sim, também reparei nessas omissões.",
+          "Essa reunião é importante — devemos adicioná-la de imediato.",
+          "Vou reunir os itens em falta e atualizar o documento."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Mantemos o horário previsto para hoje?",
+          "A equipa relacionada informou um ligeiro atraso.",
+          "Se precisarmos de ajustar algo, posso alterar já."
+        ],
+        "B": [
+          "Atraso? Então talvez seja difícil manter o plano original.",
+          "Vou confirmar com as outras equipas também.",
+          "Avise-me se for necessário deslocar algum ponto."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "A agenda desta semana não está demasiado cheia?",
+          "Há demasiadas reuniões consecutivas e receio perda de eficiência.",
+          "Seria possível reorganizar algumas prioridades?"
+        ],
+        "B": [
+          "Sim, também senti que a semana estava demasiado apertada.",
+          "Algumas reuniões poderiam ser online ou encurtadas.",
+          "Indique-me as prioridades e faço a reorganização."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Parece que faltam algumas entradas no horário deste mês.",
+          "A reunião externa, em particular, precisa de ser corrigida rapidamente.",
+          "Pode rever esses pontos quando tiver um momento?"
+        ],
+        "B": [
+          "Sim, também encontrei essas falhas.",
+          "As reuniões externas são críticas — devemos adicioná-las imediatamente.",
+          "Vou compilar as entradas em falta e integrá-las no horário."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Que lhe parece se finalizarmos o horário desta semana com as atualizações de hoje?",
+          "A maioria dos comentários das equipas já está alinhada.",
+          "Vou preparar a versão final e enviá-la."
+        ],
+        "B": [
+          "Perfeito — a visão geral está muito mais clara agora.",
+          "Ter uma versão final ajudará a equipa a preparar-se melhor.",
+          "Envie-a assim que estiver pronta; farei a revisão de imediato."
+        ]
+      }
+    }
+  ]
+}
+

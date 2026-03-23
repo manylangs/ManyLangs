@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a2",
+    "id": "008"
+  },
+  "title": {
+    "target": "A2 — 확장 일상 어휘",
+    "en": "A2 — Expanded Everyday Vocabulary",
+    "es": "A2 — Vocabulario cotidiano ampliado",
+    "fr": "A2 — Vocabulaire quotidien élargi",
+    "pt": "A2 — Vocabulário do dia a dia ampliado"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "신분증",
+        "en": "ID card",
+        "es": "documento de identidad",
+        "fr": "carte d'identité",
+        "pt": "documento de identidade"
+      },
+      "examples": [
+        {
+          "target": "신분증을 보여 주세요.",
+          "en": "Please show your ID card.",
+          "es": "Por favor, muestre su documento de identidad.",
+          "fr": "Veuillez montrer votre carte d'identité.",
+          "pt": "Por favor, mostre seu documento de identidade."
+        },
+        {
+          "target": "신분증을 집에 두고 왔어요.",
+          "en": "I left my ID card at home.",
+          "es": "Dejé mi documento de identidad en casa.",
+          "fr": "J'ai laissé ma carte d'identité à la maison.",
+          "pt": "Deixei meu documento de identidade em casa."
+        },
+        {
+          "target": "신분증을 다시 발급받았어요.",
+          "en": "I had my ID card reissued.",
+          "es": "Volví a sacar mi documento de identidad.",
+          "fr": "J'ai refait ma carte d'identité.",
+          "pt": "Reemiti meu documento de identidade."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "서명",
+        "en": "signature",
+        "es": "firma",
+        "fr": "signature",
+        "pt": "assinatura"
+      },
+      "examples": [
+        {
+          "target": "여기에 서명해 주세요.",
+          "en": "Please sign here.",
+          "es": "Firme aquí, por favor.",
+          "fr": "Veuillez signer ici.",
+          "pt": "Assine aqui, por favor."
+        },
+        {
+          "target": "서명이 필요합니다.",
+          "en": "A signature is required.",
+          "es": "Se requiere una firma.",
+          "fr": "Une signature est requise.",
+          "pt": "É necessária uma assinatura."
+        },
+        {
+          "target": "서명이 맞지 않아요.",
+          "en": "The signature doesn’t match.",
+          "es": "La firma no coincide.",
+          "fr": "La signature ne correspond pas.",
+          "pt": "A assinatura não confere."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "접수",
+        "en": "registration",
+        "es": "recepción",
+        "fr": "réception",
+        "pt": "recepção"
+      },
+      "examples": [
+        {
+          "target": "서류 접수가 완료되었습니다.",
+          "en": "Document registration is completed.",
+          "es": "El registro del documento está completo.",
+          "fr": "L’enregistrement du document est terminé.",
+          "pt": "O registro do documento foi concluído."
+        },
+        {
+          "target": "접수 시간이 끝났어요.",
+          "en": "Registration time is over.",
+          "es": "El horario de recepción ha terminado.",
+          "fr": "L'heure de réception est terminée.",
+          "pt": "O horário de recepção terminou."
+        },
+        {
+          "target": "접수 창구가 어디예요?",
+          "en": "Where is the registration desk?",
+          "es": "¿Dónde está la ventanilla de recepción?",
+          "fr": "Où se trouve le guichet de réception ?",
+          "pt": "Onde fica o balcão de recepção?"
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "순서",
+        "en": "order",
+        "es": "orden",
+        "fr": "ordre",
+        "pt": "ordem"
+      },
+      "examples": [
+        {
+          "target": "순서를 지켜 주세요.",
+          "en": "Please follow the order.",
+          "es": "Por favor, respete el orden.",
+          "fr": "Veuillez respecter l’ordre.",
+          "pt": "Por favor, respeite a ordem."
+        },
+        {
+          "target": "순서가 바뀌었어요.",
+          "en": "The order has changed.",
+          "es": "El orden ha cambiado.",
+          "fr": "L’ordre a changé.",
+          "pt": "A ordem mudou."
+        },
+        {
+          "target": "발표 순서를 정했어요.",
+          "en": "We decided the presentation order.",
+          "es": "Decidimos el orden de presentación.",
+          "fr": "Nous avons décidé l’ordre de présentation.",
+          "pt": "Decidimos a ordem da apresentação."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "거리감",
+        "en": "sense of distance",
+        "es": "sensación de distancia",
+        "fr": "sensation de distance",
+        "pt": "sensação de distância"
+      },
+      "examples": [
+        {
+          "target": "사람들과 거리감을 느꼈어요.",
+          "en": "I felt a sense of distance from people.",
+          "es": "Sentí una distancia con las personas.",
+          "fr": "J’ai ressenti une distance avec les gens.",
+          "pt": "Senti uma distância das pessoas."
+        },
+        {
+          "target": "거리감을 좁히고 싶어요.",
+          "en": "I want to close the sense of distance.",
+          "es": "Quiero reducir la distancia.",
+          "fr": "Je veux réduire la distance.",
+          "pt": "Quero diminuir a distância."
+        },
+        {
+          "target": "처음엔 거리감이 있었어요.",
+          "en": "There was some distance at first.",
+          "es": "Había algo de distancia al principio.",
+          "fr": "Il y avait une certaine distance au début.",
+          "pt": "Havia uma certa distância no início."
+        }
+      ]
+    }
+  ]
+}

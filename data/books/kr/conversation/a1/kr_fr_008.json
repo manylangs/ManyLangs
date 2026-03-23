@@ -1,0 +1,175 @@
+{
+  "chapter_id": "008",
+  "cefr": "A1",
+  "title_fr": "Décrire un lieu",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "C’est comment?,",
+    "C’est près d’ici?,",
+    "C’est calme?,",
+    "Il y a du monde?,",
+    "L’ambiance est comment?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Comment est l’ambiance dans ce café ?",
+          "Ah, ça a l’air sympa ! La musique est calme aussi ?",
+          "Super, je vais m’asseoir ici."
+        ],
+        "B": [
+          "C’est assez chaleureux. Il n’y a pas trop de monde.",
+          "Oui, ils passent seulement de la musique douce.",
+          "Installez-vous tranquillement !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Le parc d’ici, il est comment ?",
+          "Ah, parfait pour marcher ! Il y a beaucoup de bancs ?",
+          "Génial, j’irai voir."
+        ],
+        "B": [
+          "Il est calme et assez large. Il y a aussi beaucoup de fleurs.",
+          "Oui, il y a plein de coins à l’ombre.",
+          "Profitez bien !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "L’ambiance de la bibliothèque, c’est comment ?",
+          "Oh, ça doit être bien pour étudier. Il y a beaucoup de places ?",
+          "Parfait, j’irai plus tard."
+        ],
+        "B": [
+          "C’est très silencieux. Les étudiants sont respectueux.",
+          "Oui, surtout près des fenêtres.",
+          "Vous trouverez facilement une place !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Le quartier ici, il est comment ?",
+          "Ah, super ! Contente qu’il soit sûr.",
+          "Alors on peut se promener tranquillement."
+        ],
+        "B": [
+          "Il est calme, avec beaucoup de familles.",
+          "Oui, même le soir, c’est éclairé et sûr.",
+          "C’est agréable pour se balader !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Le terrain de sport ici, il est comment ?",
+          "Ah, un grand espace, c’est génial ! Il y a beaucoup de monde ?",
+          "Super, je devrais essayer de courir un peu."
+        ],
+        "B": [
+          "Il est très grand. Le sol est propre aussi.",
+          "Ça dépend de l’heure, mais en ce moment, il n’y a pas trop de monde.",
+          "C’est un bon jour pour faire du sport !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Ce bâtiment, il donne quelle impression ?",
+          "Ah, un style moderne, j’aime bien ! Le hall est large ?",
+          "D’accord, je vais aller voir."
+        ],
+        "B": [
+          "C’est très moderne—propre et élégant.",
+          "Oui, le plafond est haut et l’espace est grand.",
+          "Vous aimerez sûrement visiter !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Le marché près d’ici, il est comment ?",
+          "Ah, ça a l’air vivant ! Il y a beaucoup de boutiques ?",
+          "Génial, j’irai faire un tour."
+        ],
+        "B": [
+          "C’est animé et plein d’énergie.",
+          "Oui, surtout les stands de nourriture—il y en a beaucoup.",
+          "Vous allez bien vous amuser !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Ce café est plutôt calme ?",
+          "Ah, parfait ! Ça doit être bien pour étudier.",
+          "Très bien, je vais rester un moment."
+        ],
+        "B": [
+          "Oui, sauf le week-end, c’est assez tranquille.",
+          "Les étudiants viennent souvent, donc l’ambiance est agréable.",
+          "Prenez votre temps !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Ce bâtiment là-bas, c’est quoi ?",
+          "Ah, c’est pour ça qu’il y a autant de monde !",
+          "Je devrais aller voir aussi."
+        ],
+        "B": [
+          "C’est une salle d’exposition. Ils organisent souvent des événements.",
+          "Oui, il y en a un petit aujourd’hui aussi.",
+          "Vous allez sûrement apprécier !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Cette zone, le soir, elle est comment ?",
+          "Ah, si c’est éclairé, c’est rassurant pour marcher !",
+          "Merci, c’est utile."
+        ],
+        "B": [
+          "La rue principale est assez éclairée la nuit.",
+          "Oui, il y a assez de gens, donc ce n’est pas effrayant.",
+          "Si vous avez d’autres questions, n’hésitez pas !"
+        ]
+      }
+    }
+  ]
+}

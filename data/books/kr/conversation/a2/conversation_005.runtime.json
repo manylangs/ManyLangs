@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a2",
+    "id": "005"
+  },
+  "title": {
+    "target": "집과 방 묘사하기",
+    "en": "Describing Home and Room",
+    "es": "Describir la casa y la habitación",
+    "fr": "Décrire la maison et la chambre",
+    "pt": "Descrever a casa e o quarto"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "제 방 어때 보여요?",
+            "en": "How does my room look?",
+            "es": "¿Qué te parece mi habitación?",
+            "fr": "Comment trouves-tu ma chambre ?",
+            "pt": "O que achas do meu quarto?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오, 생각보다 넓어 보이네요!",
+            "en": "Oh, it looks bigger than I expected!",
+            "es": "Oh, se ve más grande de lo que pensaba.",
+            "fr": "Oh, elle semble plus grande que je pensais !",
+            "pt": "Oh, parece maior do que eu pensava!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "맞아요, 창문이 커서 햇빛도 잘 들어요!",
+            "en": "Right? The big window lets in a lot of sunlight!",
+            "es": "¿Verdad? La ventana grande deja entrar mucha luz.",
+            "fr": "Oui, la grande fenêtre laisse entrer beaucoup de lumière !",
+            "pt": "Pois é! A janela grande deixa entrar muita luz!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "햇빛이 따뜻해서 더 좋아 보여요!",
+            "en": "Yeah, the warm sunlight makes it feel even nicer!",
+            "es": "Sí, la luz cálida la hace ver aún mejor.",
+            "fr": "Oui, la lumière chaude rend l’endroit encore plus agréable !",
+            "pt": "Sim, a luz quente torna tudo ainda mais agradável!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 이 분위기가 참 마음에 들어요!",
+            "en": "I really like the atmosphere here!",
+            "es": "¡Me encanta el ambiente de aquí!",
+            "fr": "J’aime vraiment l’ambiance ici !",
+            "pt": "Gosto imenso do ambiente aqui!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 편안한 느낌이 딱 들어요!",
+            "en": "It feels really comfortable!",
+            "es": "¡Sí, se siente muy cómoda!",
+            "fr": "C’est vraiment confortable !",
+            "pt": "Sim, é mesmo confortável!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "제 책상이 너무 작은 것 같지 않아요?",
+            "en": "Doesn’t my desk look a bit small?",
+            "es": "¿No te parece que mi escritorio es un poco pequeño?",
+            "fr": "Tu ne trouves pas que mon bureau est un peu petit ?",
+            "pt": "Não achas que a minha secretária é pequena?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "음… 조금 작은 느낌은 있네요!",
+            "en": "Hmm… yeah, it does look a little small!",
+            "es": "Hmm… sí, parece un poco pequeño.",
+            "fr": "Hmm… oui, il semble un peu petit !",
+            "pt": "Hmm… sim, parece um pouco pequena!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그쵸? 그래서 요즘 조금 불편해요.",
+            "en": "Exactly! That’s why it feels a bit inconvenient.",
+            "es": "Exacto, por eso es un poco incómodo.",
+            "fr": "Oui, c’est pour ça que c’est un peu gênant.",
+            "pt": "Pois… por isso é que às vezes é um pouco incómoda."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 작업할 때 공간이 중요하죠!",
+            "en": "True, having enough space is important!",
+            "es": "Claro, tener espacio es importante.",
+            "fr": "Oui, avoir de la place c’est important !",
+            "pt": "É verdade, ter espaço é importante!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좀 더 큰 책상으로 바꿔볼까 해요!",
+            "en": "I’m thinking of getting a bigger one!",
+            "es": "Creo que compraré uno más grande.",
+            "fr": "Je pense changer pour un bureau plus grand !",
+            "pt": "Estou a pensar comprar uma maior!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋다! 그러면 더 편하게 쓰겠어요!",
+            "en": "A bigger desk will be much more comfortable!",
+            "es": "¡Un escritorio más grande será mucho mejor!",
+            "fr": "Un bureau plus grand serait beaucoup mieux !",
+            "pt": "Uma secretária maior vai ser muito melhor!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "제 방 조명은 어떤 것 같아요?",
+            "en": "What do you think about my room lighting?",
+            "es": "¿Qué opinas de la luz de mi habitación?",
+            "fr": "Que penses-tu de la lumière dans ma chambre ?",
+            "pt": "O que achas da iluminação do meu quarto?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "되게 아늑해 보여요!",
+            "en": "It feels really cozy!",
+            "es": "Se siente muy acogedora.",
+            "fr": "C’est vraiment chaleureux !",
+            "pt": "Está mesmo acolhedor!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오! 따뜻한 색이라 더 편안하죠!",
+            "en": "Right! The warm color makes it feel cozy!",
+            "es": "¡Sí! El color cálido la hace más acogedora.",
+            "fr": "Oui ! La couleur chaude rend l’endroit cosy !",
+            "pt": "Pois é! A luz quente deixa tudo mais acolhedor!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 눈도 편하고 보기 좋아요!",
+            "en": "Yeah, it’s easy on the eyes too!",
+            "es": "Sí, también es suave para los ojos.",
+            "fr": "Oui, et c’est doux pour les yeux !",
+            "pt": "Sim, também é suave para os olhos!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이 조명 때문에 밤에 분위기가 좋아요!",
+            "en": "It creates a nice mood at night!",
+            "es": "Por la noche crea un ambiente muy agradable.",
+            "fr": "Le soir, ça crée une ambiance agréable !",
+            "pt": "À noite cria um ambiente muito agradável!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요! 방 분위기랑 잘 어울려요!",
+            "en": "It matches the room perfectly!",
+            "es": "Combina muy bien con la habitación.",
+            "fr": "Ça va très bien avec la chambre !",
+            "pt": "Combina muito bem com o quarto!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이 소파 편해 보이지 않아요?",
+            "en": "Doesn’t this sofa look comfy?",
+            "es": "¿Este sofá no se ve cómodo?",
+            "fr": "Ce sofa n’a pas l’air confortable ?",
+            "pt": "Este sofá não parece confortável?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 보기만 해도 편해 보여요!",
+            "en": "Yeah, it looks super comfortable!",
+            "es": "Sí, se ve súper cómodo.",
+            "fr": "Oui, il a l’air super confortable !",
+            "pt": "Sim, parece super confortável!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "맞아요! 푹신해서 자꾸 눕게 돼요!",
+            "en": "Exactly! It’s so soft that I end up lying down a lot!",
+            "es": "¡Exacto! Es tan suave que siempre termino acostándome.",
+            "fr": "Exactement ! Il est tellement doux que je m’allonge tout le temps !",
+            "pt": "Exatamente! É tão macio que acabo sempre deitada nele!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오~ 진짜 푹신해 보이네요!",
+            "en": "Wow, it really does look soft!",
+            "es": "¡Wow, sí que parece muy suave!",
+            "fr": "Wow, il semble vraiment moelleux !",
+            "pt": "Uau, parece mesmo muito macio!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "주말엔 여기서 거의 보내요!",
+            "en": "I spend most weekends right here!",
+            "es": "Paso casi todos los fines de semana aquí.",
+            "fr": "Je passe presque tous mes week-ends ici !",
+            "pt": "Passo quase todos os fins de semana aqui!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그렇겠어요! 완전 휴식 공간이네요!",
+            "en": "I get it! It’s the perfect relaxing spot!",
+            "es": "Lo entiendo, ¡es un sitio perfecto para descansar!",
+            "fr": "Je comprends ! C’est parfait pour se détendre !",
+            "pt": "Percebo! É o sítio perfeito para relaxar!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "제 방이 깔끔해 보이나요?",
+            "en": "Does my room look tidy?",
+            "es": "¿Mi habitación se ve ordenada?",
+            "fr": "Ma chambre a l’air bien rangée, non ?",
+            "pt": "O meu quarto parece arrumado?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 정말 잘 정돈돼 있어 보여요!",
+            "en": "Yeah, it looks very well organized!",
+            "es": "Sí, se ve muy bien ordenada.",
+            "fr": "Oui, tout est très bien rangé !",
+            "pt": "Sim, está tudo muito bem arrumado!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오! 정리 잘돼 있죠?",
+            "en": "Right? I tried to keep everything organized!",
+            "es": "¡Sí! Intenté mantener todo organizado.",
+            "fr": "Oui ! J’ai essayé de tout organiser.",
+            "pt": "Sim! Tentei manter tudo organizado!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요! 보기만 해도 시원해요!",
+            "en": "It feels refreshing just looking at it!",
+            "es": "Da una sensación muy agradable.",
+            "fr": "Rien que de regarder, ça fait du bien !",
+            "pt": "Só de olhar já dá uma sensação boa!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 이렇게 심플한 스타일을 좋아해요!",
+            "en": "I like this simple style!",
+            "es": "Me gusta este estilo simple.",
+            "fr": "J’aime ce style simple !",
+            "pt": "Gosto deste estilo simples!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "심플한 스타일이랑 잘 어울리네요!",
+            "en": "The simple style suits your room well!",
+            "es": "El estilo simple combina perfecto con tu habitación.",
+            "fr": "Le style simple va très bien avec ta chambre !",
+            "pt": "O estilo simples fica muito bem no teu quarto!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "우리 집 거실은 좀 좁아 보이나요?",
+            "en": "Does my living room look a bit small?",
+            "es": "¿El salón de mi casa se ve pequeño?",
+            "fr": "Le salon de ma maison te paraît petit ?",
+            "pt": "A sala da minha casa parece pequena?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "음… 좁다기보단 아늑해 보여요!",
+            "en": "Not small! It feels cozy instead!",
+            "es": "No, no parece pequeño, ¡se ve acogedor!",
+            "fr": "Non, pas petit ! Plutôt chaleureux !",
+            "pt": "Não, não parece pequena! Parece acolhedora!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아! 다행이에요! 그런 느낌이면 좋죠!",
+            "en": "Oh, that’s good to hear!",
+            "es": "¡Ah, qué bien escuchar eso!",
+            "fr": "Ah, tant mieux !",
+            "pt": "Ah, ainda bem que achas isso!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응! 분위기 괜찮아요!",
+            "en": "Yeah, the atmosphere is nice!",
+            "es": "Sí, el ambiente es muy agradable.",
+            "fr": "Oui, l’ambiance est agréable.",
+            "pt": "Sim, o ambiente é muito agradável."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그래도 조명 덕분에 더 넓어 보여요!",
+            "en": "The lighting makes it feel more spacious!",
+            "es": "La luz hace que parezca más amplio.",
+            "fr": "La lumière le fait paraître plus grand !",
+            "pt": "A luz faz com que pareça maior!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오~ 조명이 진짜 한몫하네요!",
+            "en": "The lighting really makes a difference!",
+            "es": "La iluminación realmente cambia todo.",
+            "fr": "La lumière change vraiment tout !",
+            "pt": "A iluminação faz mesmo diferença!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "제 방 옷장이 너무 큰가요?",
+            "en": "Do you think my wardrobe is too big?",
+            "es": "¿Mi armario es demasiado grande?",
+            "fr": "Tu trouves que mon armoire est trop grande ?",
+            "pt": "Achas que o meu roupeiro é demasiado grande?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아니요! 방 크기랑 잘 맞아요!",
+            "en": "No, it fits the room size well!",
+            "es": "No, encaja bien con el tamaño de la habitación.",
+            "fr": "Non, elle va bien avec la taille de la chambre !",
+            "pt": "Não, combina bem com o tamanho do quarto!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오! 다행이네요! 너무 크면 답답할까 봤어요.",
+            "en": "Oh, good! I was worried it might feel overwhelming.",
+            "es": "¡Ah, qué alivio! Pensé que sería demasiado.",
+            "fr": "Ah, super ! J’avais peur que ce soit trop imposant.",
+            "pt": "Ah, que bom! Tinha medo que ficasse demasiado pesado na sala."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그렇죠? 공간을 딱 채워주는 느낌이에요!",
+            "en": "Right? It fills the space nicely!",
+            "es": "Sí, llena el espacio de forma equilibrada.",
+            "fr": "Oui ! Elle remplit bien l’espace !",
+            "pt": "Pois é! Preenche o espaço na medida certa!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 지금 사이즈로 계속 쓰면 되겠어요!",
+            "en": "Then I guess this size is perfect!",
+            "es": "Entonces creo que este tamaño es perfecto.",
+            "fr": "Alors je suppose que la taille est parfaite !",
+            "pt": "Então acho que este tamanho é perfeito!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응! 보기에도 안정감 있어요!",
+            "en": "Yeah, it even makes the room feel balanced!",
+            "es": "Sí, hace que la habitación se vea más estable.",
+            "fr": "Oui, ça donne un bon équilibre à la chambre !",
+            "pt": "Sim, dá um bom equilíbrio ao quarto!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이 방 향기 어떤 것 같아요?",
+            "en": "How does the scent in this room feel?",
+            "es": "¿Qué te parece el aroma de la habitación?",
+            "fr": "Que penses-tu du parfum de la chambre ?",
+            "pt": "O que achas do aroma do quarto?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "되게 상쾌해요!",
+            "en": "It smells really fresh!",
+            "es": "Huele muy fresco.",
+            "fr": "Ça sent très frais !",
+            "pt": "Cheira muito fresco!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 맞아요! 은은해서 좋아요!",
+            "en": "Right! It’s soft and pleasant!",
+            "es": "¡Sí! Es suave y agradable.",
+            "fr": "Oui ! C’est doux et agréable !",
+            "pt": "Pois é! É suave e muito agradável!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 강하지 않아서 더 좋은 것 같아요!",
+            "en": "Yeah, it’s nice because it’s not too strong!",
+            "es": "Sí, es agradable porque no es demasiado fuerte.",
+            "fr": "Oui, c’est bien parce que ce n’est pas trop fort !",
+            "pt": "Sim, é bom porque não é demasiado forte!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그래서 요즘 방에 더 있고 싶어져요!",
+            "en": "It makes me want to stay here longer!",
+            "es": "Me dan ganas de quedarme más tiempo.",
+            "fr": "Ça me donne envie de rester ici plus longtemps !",
+            "pt": "Faz-me querer ficar aqui mais tempo!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요! 공간이 더 따뜻해져요!",
+            "en": "It makes the room feel warmer and cozier!",
+            "es": "Hace que la habitación se sienta más cálida.",
+            "fr": "Ça rend la pièce plus chaleureuse !",
+            "pt": "Dá uma sensação mais acolhedora à divisão!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "제 방이 너무 심심해 보이나요?",
+            "en": "Does my room look too plain?",
+            "es": "¿Mi habitación se ve demasiado simple?",
+            "fr": "Ma chambre te semble trop simple ?",
+            "pt": "O meu quarto parece demasiado simples?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "조금 심플한 느낌은 있어요!",
+            "en": "It does look a bit simple!",
+            "es": "Sí, se ve un poco simple.",
+            "fr": "Elle est un peu simple, oui !",
+            "pt": "Está um pouco simples, sim!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아! 좋은 생각이에요! 포스터 붙여볼까요?",
+            "en": "Oh! That’s a good idea! Should I put up a poster?",
+            "es": "¡Oh, buena idea! ¿Pongo un póster?",
+            "fr": "Oh ! Bonne idée ! Je mets une affiche ?",
+            "pt": "Oh! Boa ideia! Devo colocar um poster?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응! 작은 장식만 있어도 달라져요!",
+            "en": "Yeah! Even a small decoration helps!",
+            "es": "Sí, incluso una pequeña decoración ayuda.",
+            "fr": "Oui ! Même une petite déco change tout !",
+            "pt": "Sim! Mesmo uma pequena decoração já faz diferença!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 분위기가 확 달라지겠죠?",
+            "en": "It would totally change the atmosphere!",
+            "es": "¡Eso cambiaría completamente el ambiente!",
+            "fr": "Ça changerait complètement l’ambiance !",
+            "pt": "Isso mudaria completamente o ambiente!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그렇죠! 더 따뜻해질 것 같아요!",
+            "en": "Right! It’ll feel much warmer!",
+            "es": "Exacto, la haría sentir más cálida.",
+            "fr": "Exactement ! Ça rendrait la chambre plus chaleureuse !",
+            "pt": "Pois é, tornaria o quarto mais acolhedor!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이 집은 전체적으로 어떤 느낌이에요?",
+            "en": "How does this house feel overall?",
+            "es": "¿Cómo se siente esta casa en general?",
+            "fr": "Comment trouves-tu la maison en général ?",
+            "pt": "Como sentes esta casa no geral?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "편안하고 아늑한 느낌이에요!",
+            "en": "It feels calm and cozy!",
+            "es": "Se siente tranquila y acogedora.",
+            "fr": "Elle est calme et chaleureuse !",
+            "pt": "Parece calma e acolhedora!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오! 저도 그 부분이 가장 좋아요!",
+            "en": "Oh! That’s my favorite part too!",
+            "es": "¡Oh! Esa también es mi parte favorita.",
+            "fr": "Oh ! C’est ce que je préfère aussi !",
+            "pt": "Ah, essa também é a minha parte preferida!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응, 조용해서 더 매력 있어요!",
+            "en": "Yeah, the quiet atmosphere is really nice!",
+            "es": "Sí, el ambiente silencioso es muy agradable.",
+            "fr": "Oui, l’ambiance tranquille est vraiment agréable !",
+            "pt": "Sim, o ambiente tranquilo é ótimo!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "앞으로 더 살고 싶어지는 집이에요!",
+            "en": "This place really makes me want to stay longer!",
+            "es": "Es una casa en la que realmente quiero quedarme.",
+            "fr": "C’est une maison où j’ai vraiment envie de rester !",
+            "pt": "É uma casa onde tenho mesmo vontade de ficar!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요! 오래 살고 싶은 공간이에요!",
+            "en": "Exactly! It’s the kind of place you want to live in!",
+            "es": "Sí, es el tipo de lugar donde quieres vivir mucho tiempo.",
+            "fr": "Oui, on a envie d’y vivre longtemps !",
+            "pt": "É mesmo o tipo de lugar onde apetece viver muito tempo!"
+          }
+        }
+      ]
+    }
+  ]
+}

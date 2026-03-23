@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "c1",
+    "id": "010"
+  },
+  "title": {
+    "target": "출장 준비",
+    "en": "Business Trip Preparation",
+    "es": "Preparación de viaje de negocios",
+    "fr": "Préparation du voyage d’affaires",
+    "pt": "Preparação de viagem de negócios"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이번 출장 준비는 어느 정도 진행되셨나요?",
+            "en": "How far along are you with the business trip preparations?",
+            "es": "¿Cómo va la preparación del viaje de negocios?",
+            "fr": "Où en êtes-vous avec la préparation du voyage d’affaires ?",
+            "pt": "Como está a avançar a preparação para a viagem de negócios?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아, 네. 저도 방금 변경 알림을 받았어요.",
+            "en": "Oh, yes. I also received a notification a moment ago.",
+            "es": "Sí, yo también recibí una notificación hace un momento.",
+            "fr": "Ah oui, j’ai moi aussi reçu une notification il y a un instant.",
+            "pt": "Sim, também recebi uma notificação há pouco."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "비행 일정이 조금 바뀐 것 같아서요.",
+            "en": "It looks like the flight schedule has changed a bit.",
+            "es": "Parece que el horario del vuelo cambió un poco.",
+            "fr": "Il semble que l’horaire du vol ait légèrement changé.",
+            "pt": "Parece que o horário do voo foi ligeiramente alterado."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "일정이 조금 앞당겨진 것 같더라고요.",
+            "en": "It seems the departure time was moved up slightly.",
+            "es": "Parece que adelantaron la hora de salida.",
+            "fr": "Le départ a été avancé de quelques minutes.",
+            "pt": "Pelo que vi, a hora de partida foi antecipada."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "확정된 시간 다시 공유드리겠습니다.",
+            "en": "I’ll share the confirmed time shortly.",
+            "es": "Le enviaré la hora confirmada en cuanto la tenga.",
+            "fr": "Je vous enverrai l’heure confirmée dès que possible.",
+            "pt": "Enviarei a hora confirmada assim que a receber."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "공유해주시면 제가 바로 일정표에 반영할게요.",
+            "en": "Once you share the update, I’ll reflect it in the schedule.",
+            "es": "Cuando me comparta la actualización, la incluiré en el calendario.",
+            "fr": "Une fois que vous me l’avez partagé, je l’ajouterai au planning.",
+            "pt": "Quando partilhar a atualização, eu integro-a no calendário."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "현지 미팅 자료는 준비되셨나요?",
+            "en": "Have you finished preparing the materials for the onsite meeting?",
+            "es": "¿Terminó de preparar el material para la reunión en destino?",
+            "fr": "Avez-vous terminé les supports pour la réunion sur place ?",
+            "pt": "Já terminou de preparar os materiais para a reunião no local?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 그 부분 저도 손봐야겠다고 생각했어요.",
+            "en": "Yes, I thought the same — a few areas definitely need updates.",
+            "es": "Sí, también pensé que varias partes necesitan una actualización.",
+            "fr": "Oui, j’ai pensé la même chose — plusieurs éléments doivent être actualisés.",
+            "pt": "Sim, também reparei que várias partes precisam mesmo de atualização."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "몇 부분은 최신 정보로 업데이트가 필요해 보였거든요.",
+            "en": "Some parts seemed to require updates with more recent information.",
+            "es": "Algunas partes necesitan actualizarse con información reciente.",
+            "fr": "Certaines parties doivent être mises à jour avec des informations plus récentes.",
+            "pt": "Algumas partes precisam de ser atualizadas com informação recente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "업데이트할 자료가 조금 많더라고요.",
+            "en": "There’s actually quite a bit to revise.",
+            "es": "Hay bastante contenido que ajustar.",
+            "fr": "Il y a pas mal de points à ajuster.",
+            "pt": "Há bastante conteúdo para ajustar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 수정 도와드릴까요?",
+            "en": "Would you like me to help revise those sections?",
+            "es": "Si quiere, puedo ayudarle a revisar esas secciones.",
+            "fr": "Souhaitez-vous que je vous aide à réviser ces sections ?",
+            "pt": "Se quiser, posso ajudar a rever essas secções."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "가능하시면 주요 내용만 먼저 정리해주실 수 있을까요?",
+            "en": "If possible, could you summarize the key items first?",
+            "es": "Si puede, organice primero los puntos esenciales.",
+            "fr": "Si possible, pourriez-vous d’abord organiser les points essentiels ?",
+            "pt": "Se possível, poderia organizar primeiro os pontos principais?"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "출장 서류는 모두 출력해두셨나요?",
+            "en": "Have you printed all the required travel documents?",
+            "es": "¿Ya imprimió todos los documentos necesarios para el viaje?",
+            "fr": "Avez-vous imprimé tous les documents nécessaires pour le voyage ?",
+            "pt": "Já imprimiu todos os documentos necessários para a viagem?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "초청장은 준비했는데 일정표는 아직입니다.",
+            "en": "I have the invitation letter ready, but not the itinerary yet.",
+            "es": "Tengo lista la carta de invitación, pero aún no el itinerario.",
+            "fr": "La lettre d’invitation est prête, mais pas encore l’itinéraire.",
+            "pt": "A carta de convite já está pronta, mas ainda falta o itinerário."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "특히 초청장과 일정표는 꼭 있어야 해요.",
+            "en": "The invitation letter and itinerary are essential to bring.",
+            "es": "La carta de invitación y el itinerario son imprescindibles.",
+            "fr": "La lettre d’invitation et l’itinéraire sont indispensables.",
+            "pt": "A carta de convite e o itinerário são obrigatórios."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "출력해주시면 정말 도움이 될 것 같아요.",
+            "en": "If you could print it, that would help a lot.",
+            "es": "Si pudiera imprimirlo, me ayudaría mucho.",
+            "fr": "Si vous pouviez l’imprimer, cela m’aiderait beaucoup.",
+            "pt": "Se puder imprimi-lo, ajudaria imenso."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "필요하시면 제가 추가로 출력해드릴게요.",
+            "en": "If you need extra copies, I can print them for you.",
+            "es": "Si necesita copias adicionales, puedo imprimirlas.",
+            "fr": "Si vous avez besoin de copies supplémentaires, je peux les imprimer.",
+            "pt": "Se precisar de cópias adicionais, posso imprimi-las."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그 대신 제가 호텔 바우처는 챙겨놓을게요.",
+            "en": "In return, I’ll take care of preparing the hotel vouchers.",
+            "es": "Yo me encargaré de preparar los vales del hotel.",
+            "fr": "De mon côté, je préparerai les bons d’hôtel.",
+            "pt": "Entretanto, eu trato dos vouchers do hotel."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "짐은 어느 정도 챙기셨어요?",
+            "en": "How much packing have you done so far?",
+            "es": "¿Ha avanzado con el equipaje?",
+            "fr": "Où en êtes-vous dans vos préparatifs de bagages ?",
+            "pt": "Como vai a preparação da bagagem?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아, 그 얘기 들었어요. 갑자기 추워졌다고 하더라고요.",
+            "en": "Yes, I heard that too — apparently it suddenly got colder.",
+            "es": "Sí, también escuché que ha hecho más frío de repente.",
+            "fr": "Oui, j’ai entendu la même chose — il fait soudain plus froid.",
+            "pt": "Sim, também ouvi — dizem que arrefeceu de repente."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "날씨가 꽤 변덕스럽다고 해서 걱정되더라고요.",
+            "en": "I heard the weather there has been unpredictable.",
+            "es": "Escuché que el clima allí es bastante impredecible.",
+            "fr": "On m’a dit que la météo est assez imprévisible là-bas.",
+            "pt": "Ouvi dizer que o clima lá anda bastante imprevisível."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "외투는 아직 안 챙겼는데 바로 넣어야겠네요.",
+            "en": "I haven’t packed a jacket yet, but I should add one.",
+            "es": "Aún no incluí una chaqueta, pero voy a añadirla.",
+            "fr": "Je n’ai pas encore mis de veste, mais je vais l’ajouter.",
+            "pt": "Ainda não coloquei um casaco, mas vou acrescentá-lo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "얇은 외투 하나 챙기시는 게 좋을 것 같습니다.",
+            "en": "It might be good to bring a light jacket just in case.",
+            "es": "Sería prudente llevar una chaqueta ligera.",
+            "fr": "Ce serait prudent d’emporter une veste légère.",
+            "pt": "Talvez seja prudente levar um casaco leve."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "알려주셔서 감사합니다!",
+            "en": "Thanks for the reminder!",
+            "es": "Gracias por recordármelo.",
+            "fr": "Merci de me l’avoir rappelé !",
+            "pt": "Obrigado pelo aviso!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "현지 팀과 첫 미팅 시간은 확인하셨나요?",
+            "en": "Have you confirmed the time for the first meeting with the local team?",
+            "es": "¿Confirmó la hora de la primera reunión con el equipo local?",
+            "fr": "Avez-vous confirmé l’horaire de la première réunion avec l’équipe locale ?",
+            "pt": "Confirmou a hora da primeira reunião com a equipa local?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아직 정확한 시간은 못 받았어요.",
+            "en": "I haven’t received the exact time yet.",
+            "es": "Todavía no recibí la hora exacta.",
+            "fr": "Je n’ai pas encore reçu l’horaire exact.",
+            "pt": "Ainda não recebi a hora exata."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "약간 조율이 필요할 수도 있다고 들었습니다.",
+            "en": "I heard there might be some adjustments needed.",
+            "es": "Me comentaron que podría requerir algunos ajustes.",
+            "fr": "On m’a dit qu’un ajustement pourrait être nécessaire.",
+            "pt": "Disseram-me que poderá ser necessário algum ajuste."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "조율이 필요하다면 부탁드릴 수 있을 것 같아요.",
+            "en": "But yes, if adjustments are needed, your help would be great.",
+            "es": "Si hay que ajustar algo, agradecería su ayuda.",
+            "fr": "Oui, si un ajustement est nécessaire, votre aide serait très utile.",
+            "pt": "Se houver ajustes, a sua ajuda seria ótima."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "필요하면 제가 대신 연락드릴게요.",
+            "en": "If necessary, I can reach out to them directly.",
+            "es": "Si hace falta, puedo contactarlos directamente.",
+            "fr": "Si besoin, je peux prendre contact avec eux.",
+            "pt": "Se for preciso, posso contactar a equipa diretamente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "시간 확정되면 바로 알려드리겠습니다.",
+            "en": "I’ll let you know as soon as the time is confirmed.",
+            "es": "Le avisaré en cuanto me confirmen el horario.",
+            "fr": "Je vous informerai dès que l’horaire sera confirmé.",
+            "pt": "Avisarei assim que tiver a confirmação."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "출장 경비는 모두 정산하셨나요?",
+            "en": "Have you settled all the travel expenses?",
+            "es": "¿Ya resolvió todos los gastos del viaje?",
+            "fr": "Avez-vous réglé toutes les dépenses liées au voyage ?",
+            "pt": "Já tratou de todas as despesas da viagem?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아직 일부 항목이 남아 있어요.",
+            "en": "Not everything yet — a few items are still pending.",
+            "es": "Aún quedan algunos elementos pendientes.",
+            "fr": "Pas encore — il reste quelques éléments en attente.",
+            "pt": "Ainda não — faltam alguns itens por fechar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "사전 결제 필요한 항목이 있으면 알려주세요.",
+            "en": "Let me know if anything needs to be prepaid.",
+            "es": "Avíseme si algo debe pagarse por adelantado.",
+            "fr": "Indiquez-moi ce qui doit être payé à l’avance.",
+            "pt": "Se houver algo que precise de pagamento antecipado, diga-me."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "특히 교통비 부분은 확인이 더 필요하더라고요.",
+            "en": "The transportation expenses in particular need another review.",
+            "es": "Sobre todo los gastos de transporte requieren otra revisión.",
+            "fr": "Les frais de transport, notamment, nécessitent une vérification supplémentaire.",
+            "pt": "Especialmente as despesas de transporte precisam de outra verificação."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "제가 승인 요청 넣어드리겠습니다.",
+            "en": "I can submit the approval request right away.",
+            "es": "Puedo enviar la solicitud de aprobación de inmediato.",
+            "fr": "Je peux soumettre la demande d’approbation immédiatement.",
+            "pt": "Posso submeter o pedido de aprovação de imediato."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "정리되면 바로 공유드릴게요.",
+            "en": "I’ll organize everything and share an update soon.",
+            "es": "Organizaré todo y le enviaré una actualización.",
+            "fr": "Je vais tout organiser et vous envoyer une mise à jour.",
+            "pt": "Vou organizar tudo e envio-lhe uma atualização."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이번 출장 일정이 꽤 타이트하던데 괜찮으실까요?",
+            "en": "This trip’s schedule looks quite tight — are you okay with it?",
+            "es": "El itinerario del viaje está bastante ajustado, ¿cree que será manejable?",
+            "fr": "L’emploi du temps de ce voyage est assez serré — est-ce que cela vous convient ?",
+            "pt": "O itinerário desta viagem está bastante apertado — acha que será gerível?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도 그 부분 조금 걱정됐어요.",
+            "en": "I noticed that too — a few transitions look too close.",
+            "es": "Yo también noté que varias transiciones están muy apretadas.",
+            "fr": "J’ai remarqué cela aussi — quelques transitions sont très rapprochées.",
+            "pt": "Também reparei nisso — algumas transições estão demasiado próximas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "중간에 이동 시간이 부족할 수도 있어 보였습니다.",
+            "en": "Some segments may not have enough travel time between them.",
+            "es": "Algunos desplazamientos parecen tener poco margen.",
+            "fr": "Certains déplacements semblent manquer de marge.",
+            "pt": "Alguns deslocamentos parecem ter pouco tempo entre si."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "이동이 겹치는 시간이 있더라고요.",
+            "en": "It might become an issue if meetings run long.",
+            "es": "Podría ser un problema si alguna reunión se extiende más de lo previsto.",
+            "fr": "Cela pourrait poser problème si les réunions dépassent.",
+            "pt": "Pode tornar-se um problema se alguma reunião se prolongar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "필요하면 제가 동선 다시 검토해보겠습니다.",
+            "en": "If needed, I can review the route again.",
+            "es": "Si es necesario, puedo revisar toda la ruta.",
+            "fr": "Si nécessaire, je peux revoir le trajet complet.",
+            "pt": "Se necessário, posso rever todo o trajeto."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "검토해주시면 정말 도움이 될 것 같아요.",
+            "en": "A review of the route would be very helpful.",
+            "es": "Una revisión de la ruta sería muy útil.",
+            "fr": "Un examen du trajet serait vraiment utile.",
+            "pt": "Uma revisão do trajeto seria realmente útil."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 현지에서 필요한 준비물 리스트는 만드셨나요?",
+            "en": "Have you created a list of things you'll need onsite?",
+            "es": "¿Preparó ya la lista de lo que necesitará en destino?",
+            "fr": "Avez-vous déjà préparé la liste du matériel nécessaire sur place?",
+            "pt": "Já preparou a lista do que será necessário no destino?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아직 완성은 못했어요. 빠진 게 있을까 저도 걱정이었어요.",
+            "en": "I haven’t completed it yet — I was also worried something might be missing.",
+            "es": "Aún no la terminé — también tenía miedo de olvidar algo.",
+            "fr": "Je ne l’ai pas encore finalisée — j’avais moi aussi peur d’oublier quelque chose.",
+            "pt": "Ainda não a terminei — também tinha receio de me esquecer de algo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "회의 장비 관련해서 빠진 게 있을까 걱정돼요.",
+            "en": "I’m a bit worried we might miss something related to meeting equipment.",
+            "es": "Me preocupa que olvidemos algo relacionado con el equipo para las reuniones.",
+            "fr": "Je crains que nous ayons oublié quelque chose concernant l’équipement de réunion.",
+            "pt": "Tenho receio de esquecermos algo relacionado com o equipamento das reuniões."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "체크리스트 있으면 훨씬 편할 것 같아요.",
+            "en": "A checklist would make things much easier.",
+            "es": "Una lista de verificación facilitaría mucho las cosas.",
+            "fr": "Une liste de contrôle faciliterait vraiment les choses.",
+            "pt": "Uma lista de verificação facilitaria bastante."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "제가 체크리스트 만들어서 보내드릴까요?",
+            "en": "Would you like me to prepare a checklist and send it to you?",
+            "es": "¿Quiere que prepare una lista de verificación y se la envíe?",
+            "fr": "Souhaitez-vous que je prépare une liste de contrôle et vous l’envoie?",
+            "pt": "Quer que eu prepare uma lista de verificação e a envie?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "만들어주시면 감사하겠습니다!",
+            "en": "Yes, please send it when it’s ready!",
+            "es": "Sí, envíemela cuando esté lista.",
+            "fr": "Oui, envoyez-la-moi quand elle sera prête !",
+            "pt": "Sim, envie-ma quando estiver pronta!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "호텔 체크인이 예상보다 늦게 된다고 합니다.",
+            "en": "It seems the hotel check-in may be later than expected.",
+            "es": "Parece que el check-in del hotel será más tarde de lo previsto.",
+            "fr": "Il semble que l’enregistrement à l’hôtel sera plus tard que prévu.",
+            "pt": "Parece que o check-in no hotel será mais tarde do que o previsto."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아, 그러면 첫 미팅 준비 시간이 좀 줄어들겠네요.",
+            "en": "Oh, then we might have less time to prepare for the first meeting.",
+            "es": "Oh, eso significa que tendremos menos tiempo para preparar la primera reunión.",
+            "fr": "Oh, cela veut dire que nous aurons moins de temps pour préparer la première réunion.",
+            "pt": "Oh, isso significa que teremos menos tempo para preparar a primeira reunião."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 일정에 영향이 있을까요?",
+            "en": "Do you think this will affect the schedule?",
+            "es": "¿Cree que eso afectará el itinerario?",
+            "fr": "Pensez-vous que cela aura un impact sur l’agenda ?",
+            "pt": "Acha que isso poderá afetar o itinerário?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "조금 타이트하긴 하지만 괜찮을 것 같아요.",
+            "en": "It could be a bit tight, but I think it’s manageable.",
+            "es": "Será un poco ajustado, pero creo que manejable.",
+            "fr": "Ce sera un peu serré, mais gérable.",
+            "pt": "Será um pouco apertado, mas penso que é gerível."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "필요하면 현지 팀에 미리 알려두겠습니다.",
+            "en": "If needed, I can inform the local team in advance.",
+            "es": "Si es necesario, puedo avisar al equipo local con antelación.",
+            "fr": "Si besoin, je peux prévenir l’équipe locale à l’avance.",
+            "pt": "Se necessário, posso avisar a equipa local com antecedência."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그래도 알려두면 좋을 것 같아요.",
+            "en": "Still, informing the local team would be a good idea.",
+            "es": "Aun así, sería buena idea informar al equipo local.",
+            "fr": "Tout de même, prévenir l’équipe locale serait une bonne idée.",
+            "pt": "Mesmo assim, avisar a equipa local seria prudente."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 출발 전 마지막으로 전체 일정 한번 더 확인해보시겠어요?",
+            "en": "Shall we go through the full itinerary one last time before departure?",
+            "es": "¿Revisamos el itinerario completo una última vez antes de salir?",
+            "fr": "Passons en revue l’itinéraire complet une dernière fois avant le départ.",
+            "pt": "Revemos o itinerário completo uma última vez antes da partida?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 마지막 점검만 하면 되겠네요.",
+            "en": "Sounds good — I think we’re almost ready.",
+            "es": "Perfecto — creo que estamos casi listos.",
+            "fr": "Très bien — je pense que nous sommes presque prêts.",
+            "pt": "Perfeito — acho que estamos praticamente prontos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이제 대부분 준비가 된 것 같습니다.",
+            "en": "It looks like most preparations are complete now.",
+            "es": "Parece que la mayor parte de la preparación ya está hecha.",
+            "fr": "Il semble que la plupart des préparatifs soient terminés maintenant.",
+            "pt": "Parece que a maior parte da preparação já está concluída."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "체크리스트 있으면 마음이 좀 놓일 것 같아요.",
+            "en": "Having a checklist will give me peace of mind.",
+            "es": "Tener una lista final me dará más tranquilidad.",
+            "fr": "Avoir une liste de vérification me rassurera.",
+            "pt": "Ter uma lista final deixa-me muito mais tranquilo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "최종 체크리스트도 함께 보내드릴게요.",
+            "en": "I’ll send you the final checklist as well.",
+            "es": "También le enviaré la lista final de verificación.",
+            "fr": "Je vous enverrai également la liste finale de vérification.",
+            "pt": "Também lhe enviarei a lista final de verificação."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "보내주시면 바로 확인해보겠습니다.",
+            "en": "Send it over when you can; I’ll check it right away.",
+            "es": "Envíela cuando pueda, la revisaré de inmediato.",
+            "fr": "Envoyez-la-moi et je la consulterai immédiatement.",
+            "pt": "Envie-a quando puder; vou revê-la de imediato."
+          }
+        }
+      ]
+    }
+  ]
+}

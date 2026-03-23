@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b1",
+    "id": "004"
+  },
+  "title": {
+    "target": "과제 및 제출",
+    "en": "Assignments and Submissions",
+    "es": "Tareas y entrega",
+    "fr": "Devoirs et remise",
+    "pt": "Trabalhos e entrega"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 과제 제출했어요?",
+            "en": "Did you submit the assignment?",
+            "es": "¿Entregaste la tarea?",
+            "fr": "Tu as rendu le devoir ?",
+            "pt": "Já entregaste o trabalho?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 저는 방금 제출했어요.",
+            "en": "Yes, I submitted it a little while ago.",
+            "es": "Sí, la entregué hace un rato.",
+            "fr": "Oui, je l’ai rendu tout à l’heure.",
+            "pt": "Sim, entreguei há pouco."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 업로드했는데 제대로 올라갔는지 걱정돼요.",
+            "en": "I uploaded mine, but I’m not sure if it went through properly.",
+            "es": "Yo ya subí la mía, pero no estoy segura de si se cargó correctamente.",
+            "fr": "J’ai téléchargé le mien, mais je ne suis pas sûre qu’il se soit envoyé correctement.",
+            "pt": "Eu carreguei o meu, mas não tenho a certeza se ficou tudo correto."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "업로드만 정상적으로 되면 보통 문제는 없더라고요.",
+            "en": "If the upload completed normally, it should be fine.",
+            "es": "Si el archivo se cargó sin errores, normalmente no hay problema.",
+            "fr": "Si le fichier s’est chargé sans erreur, cela devrait aller.",
+            "pt": "Se o ficheiro carregou sem erros, normalmente não há problema."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "파일 이름도 맞게 썼는지 모르겠어요.",
+            "en": "I’m also worried I might have named the file wrong.",
+            "es": "También me preocupa si nombré bien el archivo.",
+            "fr": "Je me demande aussi si j’ai bien nommé le fichier.",
+            "pt": "Também estou com receio de ter usado o nome do ficheiro errado."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "불안하시면 제출한 파일을 한 번 더 열어서 확인해보시는 게 좋을 것 같아요.",
+            "en": "But if you're unsure, it’s safer to open the file again and double-check.",
+            "es": "Pero si tienes dudas, es mejor abrirlo otra vez para comprobarlo.",
+            "fr": "Mais si tu hésites, ouvre-le encore une fois pour vérifier — ça évite les surprises.",
+            "pt": "Mas, se estiveres na dúvida, abre-o outra vez para confirmar."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "마감일이 오늘 밤 11시 59분 맞죠?",
+            "en": "The deadline is tonight at 11:59 p.m., right?",
+            "es": "La fecha límite es hoy a las 23:59, ¿verdad?",
+            "fr": "La date limite, c’est bien ce soir à 23h59 ?",
+            "pt": "O prazo é hoje às 23h59, certo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 공지에는 정확히 11시 59분이라고 적혀 있었어요.",
+            "en": "Yes, the announcement clearly says 11:59 p.m.",
+            "es": "Sí, el anuncio indica claramente las 23:59.",
+            "fr": "Oui, l’annonce indique clairement 23h59.",
+            "pt": "Sim, o anúncio indica claramente as 23h59."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "교수님이 수업 때는 다르게 말씀하셨던 것 같아서요.",
+            "en": "I feel like the professor said something different in class.",
+            "es": "Creo que el profesor dijo algo diferente en clase.",
+            "fr": "J’ai l’impression que le professeur a dit autre chose en cours.",
+            "pt": "Acho que o professor disse algo diferente na aula."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "수업 중에는 살짝 혼동될 만한 표현이 있었던 것 같아요.",
+            "en": "The explanation in class may have been a bit confusing.",
+            "es": "Es posible que en clase sonara un poco confuso.",
+            "fr": "L’explication en cours était peut-être un peu confuse.",
+            "pt": "A explicação durante a aula pode ter sido um pouco confusa."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 공지 다시 봤나요?",
+            "en": "Did you check the announcement again?",
+            "es": "¿Revisaste el anuncio?",
+            "fr": "Tu as revu l’annonce ?",
+            "pt": "Voltaste a ver o anúncio?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그래도 공식 공지가 기준이니 그 시간 맞춰 제출하시면 돼요.",
+            "en": "But the posted announcement is the official guideline, so follow that time.",
+            "es": "Pero la información oficial es la del anuncio, así que sigue esa hora.",
+            "fr": "Mais c’est l’annonce officielle qu’il faut suivre, donc respecte cette heure-là.",
+            "pt": "Mas a informação oficial é a do anúncio, por isso segue essa hora."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "파일 형식은 PDF로 제출하는 거 맞죠?",
+            "en": "We’re supposed to submit the file as a PDF, right?",
+            "es": "Tenemos que entregar el archivo en PDF, ¿cierto?",
+            "fr": "On doit bien rendre le fichier en PDF, n’est-ce pas ?",
+            "pt": "Temos de entregar o ficheiro em PDF, certo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, PDF 형식 제출이 맞아요.",
+            "en": "Yes, PDF is the required format.",
+            "es": "Sí, el formato requerido es PDF.",
+            "fr": "Oui, le format demandé est le PDF.",
+            "pt": "Sim, o formato pedido é PDF."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 처음에 Word로 만들었다가 다시 변환했어요.",
+            "en": "I made mine in Word first and then converted it.",
+            "es": "Primero lo hice en Word y luego lo convertí.",
+            "fr": "Je l’ai d’abord fait sous Word, puis converti.",
+            "pt": "Primeiro fiz tudo no Word e depois converti."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "대부분 문제는 없는데 표나 이미지가 있을 때는 간혹 깨지는 경우도 있더라고요.",
+            "en": "It usually converts fine, but tables or images sometimes shift.",
+            "es": "Normalmente se convierte bien, aunque a veces las tablas o imágenes se mueven.",
+            "fr": "En général, c’est correct, mais les tableaux ou images peuvent parfois bouger.",
+            "pt": "Normalmente fica bem, mas às vezes tabelas ou imagens podem deslocar-se."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 변환하면서 깨지는 부분 없겠죠?",
+            "en": "I hope nothing got messed up during the conversion.",
+            "es": "Ojalá nada se haya desconfigurado durante la conversión.",
+            "fr": "J’espère que rien ne s’est déformé pendant la conversion.",
+            "pt": "Espero que nada se tenha desformatado na conversão."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "제출 전에 PDF 미리보기로 한 번 확인해보시면 안전해요.",
+            "en": "It’s best to preview the PDF before you submit it.",
+            "es": "Lo mejor es revisar el PDF antes de enviarlo.",
+            "fr": "Le mieux est d’ouvrir le PDF avant de le rendre pour être sûre.",
+            "pt": "O melhor é pré-visualizar o PDF antes de o enviar."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 참고문헌 형식 어떻게 맞췄어요?",
+            "en": "How did you format your references?",
+            "es": "¿Cómo formateaste tu bibliografía?",
+            "fr": "Comment as-tu formaté ta bibliographie ?",
+            "pt": "Como formataste a tua bibliografia?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "교수님께서 APA 형식으로 작성하라고 하셨어요.",
+            "en": "The professor asked us to use APA format.",
+            "es": "Sí, pidió que usáramos el estilo APA.",
+            "fr": "Oui, il a demandé d’utiliser le style APA.",
+            "pt": "Sim, ele pediu que usássemos o estilo APA."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 APA가 맞는지 MLA가 맞는지 헷갈리더라고요.",
+            "en": "I wasn’t sure whether we needed APA or MLA.",
+            "es": "No estaba segura si necesitábamos APA o MLA.",
+            "fr": "Je n’étais pas certaine s’il fallait du APA ou du MLA.",
+            "pt": "Não tinha a certeza se era APA ou MLA."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "수업 첫 주 자료에 관련 안내가 있었던 걸로 기억해요.",
+            "en": "I remember seeing that in the slides from the first week.",
+            "es": "Recuerdo que estaba mencionado en las diapositivas de la primera semana.",
+            "fr": "Je me souviens que c’était mentionné dans les diapositives de la première semaine.",
+            "pt": "Lembro-me que isso foi mencionado nos diapositivos da primeira semana."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "교수님이 따로 지정하셨나요?",
+            "en": "Did the professor specify a style?",
+            "es": "¿El profesor especificó algún estilo?",
+            "fr": "Le professeur avait précisé quelque chose ?",
+            "pt": "O professor chegou a especificar?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "필요하시면 제가 정리해둔 예시를 보내드릴게요.",
+            "en": "If you'd like, I can send you the example I organized.",
+            "es": "Si quieres, puedo enviarte el ejemplo que preparé.",
+            "fr": "Si tu veux, je peux t’envoyer l’exemple que j’ai rédigé.",
+            "pt": "Se quiseres, posso enviar-te o exemplo que preparei."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 초안도 같이 올려야 하는 거예요?",
+            "en": "Do we need to upload a draft as well?",
+            "es": "¿También tenemos que subir un borrador?",
+            "fr": "Faut-il aussi téléverser un brouillon ?",
+            "pt": "Também precisamos de carregar um rascunho?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "초안은 선택 사항이라 제출하지 않으셔도 괜찮아요.",
+            "en": "Drafts are optional, so you don’t have to submit one.",
+            "es": "El borrador es opcional, así que no es obligatorio enviarlo.",
+            "fr": "Le brouillon est optionnel, donc tu n’as pas besoin de le rendre.",
+            "pt": "O rascunho é opcional, não é obrigatório."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "공지에 있는 문장이 애매하더라고요.",
+            "en": "The wording in the announcement was a bit unclear.",
+            "es": "La redacción del anuncio era un poco ambigua.",
+            "fr": "La formulation dans l’annonce n’était pas très claire.",
+            "pt": "A frase no anúncio estava um pouco ambígua."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "최종본만 업로드하시면 요구 조건은 충족돼요.",
+            "en": "Uploading only the final version is enough to meet the requirements.",
+            "es": "Con la versión final cumples completamente los requisitos.",
+            "fr": "La version finale suffit pour répondre aux consignes.",
+            "pt": "A versão final cumpre totalmente as exigências."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 일단 최종본만 올려놨어요.",
+            "en": "For now, I only uploaded my final version.",
+            "es": "Por ahora solo subí la versión final.",
+            "fr": "Pour l’instant, je n’ai mis en ligne que la version finale.",
+            "pt": "Por agora só carreguei a versão final."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그래도 확실히 하시려면 교수님께 간단히 메일로 문의해보셔도 좋아요.",
+            "en": "But if you want full confirmation, you could email the professor.",
+            "es": "Pero si quieres asegurarte, puedes escribirle al profesor.",
+            "fr": "Mais si tu veux être certaine, tu peux toujours envoyer un message au professeur.",
+            "pt": "Mas, se quiseres ter a certeza, podes enviar uma mensagem ao professor."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "과제 다시 제출해도 되는지 알아요?",
+            "en": "Do you know if we’re allowed to resubmit?",
+            "es": "¿Sabes si podemos volver a enviar la tarea?",
+            "fr": "Tu sais si on peut renvoyer le devoir ?",
+            "pt": "Sabes se podemos voltar a enviar o trabalho?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 다시 제출 가능해요.",
+            "en": "Yes, resubmission is allowed.",
+            "es": "Sí, se permite volver a enviarla.",
+            "fr": "Oui, la nouvelle soumission est autorisée.",
+            "pt": "Sim, podes reenviar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 제출하고 나서 오타를 발견했어요.",
+            "en": "I noticed a typo right after turning mine in.",
+            "es": "Noté un error justo después de entregarla.",
+            "fr": "J’ai vu une faute juste après l’avoir soumis.",
+            "pt": "Reparei num erro logo depois de o entregar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "시스템이 최신 제출본만 반영하기 때문에 큰 문제는 없어요.",
+            "en": "The system only keeps the most recent upload, so there’s no issue.",
+            "es": "El sistema solo conserva el archivo más reciente, así que no hay problema.",
+            "fr": "Le système garde uniquement le dernier fichier envoyé, donc aucun souci.",
+            "pt": "O sistema guarda apenas o ficheiro mais recente, portanto não há problema."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "삭제하고 새로 올리면 되려나요?",
+            "en": "Should I delete it and upload a corrected one?",
+            "es": "¿Debería borrarla y subir una versión corregida?",
+            "fr": "Je devrais le supprimer et remettre une version corrigée ?",
+            "pt": "Devo apagá-lo e carregar uma versão corrigida?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오타가 있다면 수정해서 다시 업로드하는 게 더 좋을 것 같아요.",
+            "en": "If you found a typo, it’s better to fix it and resubmit.",
+            "es": "Si encontraste un error, es mejor corregirlo y enviarlo de nuevo.",
+            "fr": "Si tu as repéré une faute, c’est mieux de corriger et de renvoyer.",
+            "pt": "Se encontraste um erro, é melhor corrigir e voltar a enviar."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 발표 자료도 같이 올려야 해요?",
+            "en": "Do we also have to upload our presentation slides?",
+            "es": "¿También debemos subir las diapositivas de la presentación?",
+            "fr": "Doit-on aussi téléverser les diapositives de présentation ?",
+            "pt": "Também precisamos de carregar os diapositivos da apresentação?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "슬라이드는 제출 대상은 아니었던 걸로 기억해요.",
+            "en": "Slides don’t need to be submitted beforehand.",
+            "es": "No, las diapositivas no se entregan por adelantado.",
+            "fr": "Non, les diapositives ne sont pas à remettre à l’avance.",
+            "pt": "Não, os diapositivos não precisam de ser entregues antecipadamente."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "과제 설명은 텍스트만 제출하라고 되어 있었는데요.",
+            "en": "The assignment description said to submit only the written part.",
+            "es": "La descripción decía que solo había que entregar la parte escrita.",
+            "fr": "L’annonce disait seulement de rendre la partie écrite.",
+            "pt": "A descrição dizia que só era preciso entregar a parte escrita."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "발표 시간에만 준비해서 보여드리면 된다고 하셨어요.",
+            "en": "The professor said we only need to show them during the presentation.",
+            "es": "El profesor dijo que solo necesitamos mostrarlas durante la presentación.",
+            "fr": "Le professeur a précisé qu’il suffit de les montrer le jour de la présentation.",
+            "pt": "O professor disse que só é necessário mostrá-los durante a apresentação."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그래도 발표용 슬라이드는 필요하겠죠?",
+            "en": "But we’ll need slides for the presentation, right?",
+            "es": "Pero necesitaremos diapositivas para el día de la presentación, ¿no?",
+            "fr": "Mais il faudra bien préparer des diapositives pour l’oral, non ?",
+            "pt": "Mas vamos precisar de diapositivos no dia da apresentação, certo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그래도 미리 제작해두면 나중에 훨씬 수월하긴 해요.",
+            "en": "Still, preparing them early will make things easier later.",
+            "es": "De todos modos, prepararlas antes facilita mucho el trabajo.",
+            "fr": "Mais les préparer tôt rendra le travail plus facile ensuite.",
+            "pt": "Mesmo assim, prepará-los com antecedência facilita muito o trabalho."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 교수님이 채점 기준 올리신 거 봤어요?",
+            "en": "Did you see the grading rubric the professor posted?",
+            "es": "¿Viste la rúbrica de evaluación que publicó el profesor?",
+            "fr": "Tu as vu la grille d’évaluation que le professeur a publiée ?",
+            "pt": "Viste a grelha de avaliação que o professor publicou?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 저도 조금 전 확인했어요.",
+            "en": "Yes, I checked it earlier.",
+            "es": "Sí, la revisé hace un momento.",
+            "fr": "Oui, je l’ai regardée tout à l’heure.",
+            "pt": "Sim, vi há pouco."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "항목이 예전보다 조금 더 세분화된 것 같아요.",
+            "en": "It looks more detailed than the previous one.",
+            "es": "Parece más detallada que la anterior.",
+            "fr": "Elle semble plus détaillée que la précédente.",
+            "pt": "Parece mais detalhada do que a anterior."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "항목이 세분화되긴 했지만 점수 비중 자체는 크게 달라지지 않았어요.",
+            "en": "The categories are more detailed, but the actual weight doesn’t seem to have changed much.",
+            "es": "Los criterios son más específicos, pero la ponderación casi no cambió.",
+            "fr": "Les critères sont plus précis, mais la pondération n’a presque pas changé.",
+            "pt": "Os critérios estão mais específicos, mas a ponderação quase não mudou."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저 부분이 점수에 많이 영향을 줄까요?",
+            "en": "Do you think that will affect the score a lot?",
+            "es": "¿Crees que afectará mucho a la nota?",
+            "fr": "Tu crois que cela changera beaucoup la note ?",
+            "pt": "Achas que isso vai influenciar muito a nota?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "교수님 말씀으로는 내용의 명확성이 가장 중요하다고 하셨어요.",
+            "en": "The professor emphasized that clarity of content is the most important factor.",
+            "es": "El profesor recalcó que la claridad del contenido es lo más importante.",
+            "fr": "Le professeur a insisté sur l’importance de la clarté du contenu.",
+            "pt": "O professor destacou que a clareza do conteúdo é o ponto mais importante."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "팀 과제 제출은 누가 맡기로 했죠?",
+            "en": "Who was in charge of submitting our group assignment?",
+            "es": "¿Quién estaba encargado de enviar la tarea del grupo?",
+            "fr": "Qui devait s’occuper de rendre le devoir de groupe ?",
+            "pt": "Quem ficou responsável por enviar o trabalho de grupo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "제출은 민지 씨가 맡기로 했어요.",
+            "en": "Minji was assigned to handle the submission.",
+            "es": "Minji era la responsable del envío.",
+            "fr": "C’est Minji qui doit le soumettre.",
+            "pt": "A Minji ficou encarregada da submissão."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "우리 팀 파일 합치는 작업이 아직 안 끝났거든요.",
+            "en": "We’re still finishing the combined file on our side.",
+            "es": "Todavía estamos terminando de unir nuestra parte del archivo.",
+            "fr": "On n’a pas encore fini d’assembler notre partie du fichier.",
+            "pt": "Ainda estamos a terminar a junção da nossa parte do ficheiro."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "지금 최종 파일을 정리 중이라고 들었어요.",
+            "en": "I heard she’s organizing the final file right now.",
+            "es": "Escuché que está organizando el archivo final ahora mismo.",
+            "fr": "J’ai entendu dire qu’elle finalisait le fichier en ce moment.",
+            "pt": "Ouvi dizer que ela está a organizar o ficheiro final agora."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오늘 안에 맡은 분이 제출해주실까요?",
+            "en": "Do you think it will be submitted by tonight?",
+            "es": "¿Crees que lo enviarán esta noche?",
+            "fr": "Tu penses que ce sera rendu ce soir ?",
+            "pt": "Achas que vai ser entregue ainda hoje?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오늘 밤 안에는 제출하겠다고 했으니 걱정하지 않으셔도 될 것 같아요.",
+            "en": "She said she would submit it before tonight, so we should be fine.",
+            "es": "Dijo que lo enviaría antes de esta noche, así que no deberíamos preocuparnos.",
+            "fr": "Elle a dit qu’elle l’enverrait avant ce soir, donc on devrait être tranquilles.",
+            "pt": "Ela disse que o enviaria antes do final do dia, por isso devemos ficar tranquilos."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "휴… 과제 드디어 끝냈어요!",
+            "en": "Wow… I finally finished the assignment!",
+            "es": "Uf… ¡por fin terminé la tarea!",
+            "fr": "Ouf… j’ai enfin terminé le devoir !",
+            "pt": "Ufa… finalmente terminei o trabalho!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "정말 고생 많으셨어요!",
+            "en": "You did great — that must have been a lot of work.",
+            "es": "Buen trabajo, realmente has hecho un gran esfuerzo.",
+            "fr": "Bravo, tu as vraiment bien travaillé.",
+            "pt": "Fizeste um ótimo trabalho, esforçaste-te bastante."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "제출 버튼 누르고 나니까 긴장이 확 풀리네요.",
+            "en": "I felt all the tension leave after clicking the submit button.",
+            "es": "Cuando presioné ‘enviar’, sentí que todo el estrés desaparecía.",
+            "fr": "Quand j’ai cliqué sur ‘soumettre’, j’ai senti tout le stress disparaître.",
+            "pt": "Quando cliquei em ‘enviar’, senti o stress desaparecer."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "제출하고 나면 힘이 빠지는 느낌 이해해요.",
+            "en": "I know the feeling of relief after submitting something big.",
+            "es": "Ese alivio después de entregar algo importante se siente muchísimo.",
+            "fr": "Je comprends tout à fait ce soulagement après une grosse remise.",
+            "pt": "Esse alívio depois de entregar algo importante é mesmo real."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "이제 오늘은 좀 쉬어도 되겠죠?",
+            "en": "I think I deserve a break now.",
+            "es": "Creo que ahora sí me merezco un descanso.",
+            "fr": "Je pense que j’ai bien mérité une pause maintenant.",
+            "pt": "Acho que hoje mereço descansar um pouco."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오늘은 충분히 쉬시고 내일부터 다시 시작해도 괜찮을 것 같아요.",
+            "en": "Take a good rest today and start fresh tomorrow.",
+            "es": "Descansa bien hoy y retoma las cosas con calma mañana.",
+            "fr": "Repose-toi bien aujourd’hui et reprends tranquillement demain.",
+            "pt": "Descansa bem hoje e retoma tudo com calma amanhã."
+          }
+        }
+      ]
+    }
+  ]
+}

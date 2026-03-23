@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "008",
+  "cefr": "B1",
+  "title_fr": "Amis à l’université",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Tes amis de la fac vont bien?,",
+    "Tu t’es rapproché de quelqu’un?,",
+    "Vous avez déjeuné ensemble?,",
+    "Vos styles d’étude vont bien ensemble?,",
+    "On pourra se rencontrer la prochaine fois!,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Tes amis de la fac vont bien ?",
+          "Ah oui ? Tu t’es rapproché de quelqu’un si vite ! C’est quel genre d’ami ?",
+          "Génial ! J’aimerais bien le rencontrer un jour."
+        ],
+        "B": [
+          "Oui, je m’entends bien avec eux, plus vite que prévu !",
+          "Un ami de ma filière, très facile à approcher.",
+          "Oui, je pense que vous vous entendriez bien aussi."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Tu vois quelqu’un plus souvent ces derniers temps ?",
+          "Ah d’accord, vous vous êtes rapprochés en faisant les devoirs !",
+          "C’est super. Vous deviendrez encore plus proches en étudiant ensemble."
+        ],
+        "B": [
+          "Oui, j’ai un ami avec qui je fais souvent les devoirs.",
+          "Oui, on s’est vite rapprochés en travaillant ensemble.",
+          "C’est vrai ! Je suis de plus en plus à l’aise."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Avec qui tu déjeunes le plus souvent ?",
+          "Ah, cet ami que tu croisais tout le temps au resto U !",
+          "Cool. Ce genre d’amitié dure longtemps."
+        ],
+        "B": [
+          "Souvent avec quelqu’un qui finit les cours en même temps que moi.",
+          "On se croisait tout le temps au resto, alors on a commencé à manger ensemble.",
+          "Oui, on s’entend super bien !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Tu as un ami avec qui ton style d’étude va bien ?",
+          "Ah super, quelqu’un avec qui vous échangez des questions !",
+          "Oui, étudier avec quelqu’un comme ça aide énormément."
+        ],
+        "B": [
+          "Oui, je me concentre vraiment bien avec un ami.",
+          "On se pose beaucoup de questions l’un à l’autre.",
+          "Oui, ça m’aide vraiment quand on étudie ensemble."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Il y a quelqu’un que tu croises souvent sur le campus ?",
+          "Oh sérieux ? Ces coïncidences sont trop drôles !",
+          "La prochaine fois, essaie de lui parler un peu !"
+        ],
+        "B": [
+          "Oui ! On se retrouve toujours au même endroit par hasard.",
+          "Je sais, nos emplois du temps ne sont même pas pareils, mais on se croise tout le temps.",
+          "Si je le revois, je lui dirai bonjour !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Tu as trouvé quelqu’un avec qui parler facilement de ta filière ?",
+          "Ah oui, c’est précieux quelqu’un avec qui partager ses soucis d’étude !",
+          "Oui, vous allez vraiment bien vous soutenir."
+        ],
+        "B": [
+          "Oui, j’ai un ami avec qui je parle de mes difficultés d’étude.",
+          "Oui, on a remarqué qu’on galérait sur les mêmes choses.",
+          "Oui, je crois que ça nous a rapprochés !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Tu as un ami avec qui tu prépares les examens ?",
+          "Ah c’est top ! Vous devez beaucoup vous entraider.",
+          "Oui, si ça marche bien, continuez à étudier ensemble."
+        ],
+        "B": [
+          "Oui, j’ai un ami avec qui j’étudie à chaque période d’examen.",
+          "On s’explique les choses quand l’un de nous ne comprend pas.",
+          "Oui, c’est tellement mieux que d’étudier seul !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Avec qui tu t’entends le mieux jusqu’à présent ?",
+          "Wow, mêmes goûts et personnalités compatibles ? Parfait !",
+          "Génial, ce genre d’amitié dure vraiment longtemps."
+        ],
+        "B": [
+          "Probablement l’ami avec qui je partage des cours.",
+          "Oui, on a des goûts similaires et nos personnalités matchent bien.",
+          "Oui, c’est vraiment facile de parler avec lui !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Tu as des plans avec des amis cette semaine ?",
+          "Oh sympa ! Vous allez sûrement bien manger aussi.",
+          "Tu me raconteras comment ça s’est passé !"
+        ],
+        "B": [
+          "Oui, on va dîner ensemble samedi.",
+          "On pense aller dans un nouveau resto qui vient d’ouvrir.",
+          "D’accord, je te raconterai tout après !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Je pourrais vous rejoindre la prochaine fois ?",
+          "Oh, ça a l’air super ! Ils ont l’air très sympas.",
+          "Cool ! Dis-moi quand vous prévoyez quelque chose."
+        ],
+        "B": [
+          "Bien sûr ! Tout le monde est très facile à vivre.",
+          "Oui, je pense que tu t’entendrais très vite avec eux.",
+          "D’accord, je te dirai dès qu’on organise quelque chose !"
+        ]
+      }
+    }
+  ]
+}
+

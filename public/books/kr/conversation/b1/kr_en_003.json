@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "003",
+  "cefr": "B1",
+  "title_en": "Professor Consultation",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Do you have a moment for a consultation?,",
+    "I have a question about the assignment.,",
+    "The explanation was a bit confusing.,",
+    "Could I get some career advice too?,",
+    "Is this a good time for you?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Professor, do you have a moment for a quick consultation?",
+          "There was a part of today’s assignment explanation I didn’t quite understand.",
+          "Could you go over it briefly one more time?"
+        ],
+        "B": [
+          "Of course! Which part was confusing for you?",
+          "A lot of students ask about that section.",
+          "Let me walk you through it slowly."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "I still find the report structure a bit difficult.",
+          "I’m not sure what order I should write it in.",
+          "I think an example would help me understand better."
+        ],
+        "B": [
+          "That’s totally normal. It can be confusing at first.",
+          "Just follow a simple introduction–body–conclusion format.",
+          "I’ll upload a sample document on the course page."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "I wanted to check if my presentation topic is going in the right direction.",
+          "I’m worried the scope might be too wide.",
+          "If I need to revise it, I can adjust it right away."
+        ],
+        "B": [
+          "Your topic looks good! Not too broad and not too narrow.",
+          "If you narrow the examples to two or three, it’ll be clearer.",
+          "With that small adjustment, your presentation will be strong."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Would it be possible to review the questions I got wrong on the last exam?",
+          "I want to understand exactly where I made mistakes.",
+          "If you give me some feedback, I think I can improve next time."
+        ],
+        "B": [
+          "Sure, reviewing incorrect answers is really helpful.",
+          "Most of your mistakes just need a bit of concept reinforcement.",
+          "Hold on, I’ll bring your exam sheet."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Could we schedule a separate consultation sometime this week?",
+          "I also have questions about my major, not just the assignment.",
+          "I can adjust to whatever time works best for you."
+        ],
+        "B": [
+          "Wednesday afternoon works for me.",
+          "For major-related counseling, preparing some notes beforehand helps.",
+          "But feel free to choose a time that suits your schedule."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Your feedback on my presentation was really helpful.",
+          "After making the changes you mentioned, it sounds much smoother.",
+          "Could you check it one last time if possible?"
+        ],
+        "B": [
+          "I’m glad to hear that! Great job applying the feedback.",
+          "It’s almost complete in its current form.",
+          "We can do a final check right after class."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "I read the paper you recommended last time.",
+          "It was more interesting and helpful than I expected.",
+          "I think I’d like to look for some similar materials."
+        ],
+        "B": [
+          "Oh, you already read it? Impressive!",
+          "If you understood that paper, the next ones won’t be difficult.",
+          "I can recommend a few more if you’d like."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Could I get some information about the project schedule later this semester?",
+          "I want to know how much preparation time I’ll need.",
+          "Planning ahead will help me avoid rushing."
+        ],
+        "B": [
+          "Good idea! Planning early makes things easier.",
+          "The project will start after the midterm exam.",
+          "I’ll announce the detailed schedule next week."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Professor, would career counseling also be possible?",
+          "I’m not sure which direction I should prepare for.",
+          "I want to build a solid foundation step by step."
+        ],
+        "B": [
+          "Of course! I’m always happy to help with career guidance.",
+          "The most important thing is finding a field you’re genuinely interested in.",
+          "If you want, I can help you create a personalized curriculum."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Thank you so much for today’s consultation.",
+          "I feel much more at ease after hearing your advice.",
+          "I’ll follow the direction you suggested and prepare gradually."
+        ],
+        "B": [
+          "I’m really glad to hear that!",
+          "Take your time, there’s no need to pressure yourself.",
+          "And feel free to come back anytime you need help."
+        ]
+      }
+    }
+  ]
+}
+

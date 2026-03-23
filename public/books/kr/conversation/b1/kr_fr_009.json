@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "009",
+  "cefr": "B1",
+  "title_fr": "Activités de club",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Tu as rejoint un club?,",
+    "L’ambiance est comment?,",
+    "Les gens sont sympas?,",
+    "Les activités te plaisent?,",
+    "On pourra y aller ensemble la prochaine fois!,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Comment se passent tes activités de club ces jours-ci ?",
+          "Ah oui ? On dirait que ta première impression était positive ! C’était comment, l’ambiance ?",
+          "Super ! J’aimerais bien venir voir la prochaine réunion."
+        ],
+        "B": [
+          "Plutôt bien ! C’est plus amusant que ce que je pensais.",
+          "C’était chaleureux et détendu, alors je me suis vite senti à l’aise.",
+          "Oui, je te dirai quand la prochaine réunion sera fixée."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Tu t’es un peu rapproché des membres ?",
+          "Ah, tu t’es vraiment rapproché de cet ami rapidement !",
+          "C’est chouette. Vous vous rapprocherez encore plus en faisant les activités ensemble."
+        ],
+        "B": [
+          "Oui, surtout d’un des membres.",
+          "On a beaucoup parlé pendant les activités, alors on s’est vite rapprochés.",
+          "Oui, c’est bien plus amusant quand on est ensemble."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Qu’est-ce que vous faites le plus souvent au club ?",
+          "Wow, c’est plus varié que ce que j’imaginais ! Ça doit être sympa.",
+          "Super, avec ce genre d’activités tu pourras continuer longtemps."
+        ],
+        "B": [
+          "On pratique ensemble ou on fait de petits projets.",
+          "Oui, ça change un peu chaque semaine, donc ce n’est jamais ennuyeux.",
+          "Oui, il y a toujours quelque chose de nouveau à apprendre."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "C’était difficile quand tu as participé pour la première fois ?",
+          "Ah d’accord, les membres t’ont bien accueilli alors !",
+          "Maintenant tu dois être complètement habitué."
+        ],
+        "B": [
+          "J’étais un peu stressé, mais je me suis vite détendu.",
+          "Oui, les anciens sont venus me parler en premier, ça m’a beaucoup aidé.",
+          "Oui, maintenant je participe sans problème."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "C’est facile d’équilibrer les études et les activités du club ?",
+          "Ah oui, on dirait que tu fais beaucoup d’efforts pour garder l’équilibre.",
+          "C’est vrai, ne force pas trop et avance tranquillement."
+        ],
+        "B": [
+          "C’est un peu chargé, mais j’essaie de garder un bon équilibre.",
+          "Oui, la gestion du temps est ce qu’il y a de plus difficile.",
+          "Si ça devient trop lourd, je réduirai peut-être un peu mes activités."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Tu as un rôle particulier dans le club ?",
+          "Ah, tu t’en sors bien même si c’est ta première fois !",
+          "Super, ce rôle te donnera beaucoup d’expérience."
+        ],
+        "B": [
+          "Oui, ce mois-ci j’aide à coordonner les événements.",
+          "Au début j’étais prudent, mais tout le monde m’a aidé, alors ça s’est bien passé.",
+          "Oui, je commence à m’y habituer."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "La prochaine activité est déjà prévue ?",
+          "Oh super, vous faites quelque chose de nouveau cette fois !",
+          "Génial, ce sera une bonne expérience pour toi."
+        ],
+        "B": [
+          "Oui, on prépare une petite représentation ce week-end.",
+          "Oui, c’est différent de d’habitude, alors je suis impatient.",
+          "Oui, je veux bien me préparer pour que ça se passe bien."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Il y a quelque chose que tu trouves difficile dans les activités ?",
+          "Ah, donc ce sont surtout le temps et l’énergie qui posent problème.",
+          "Tu t’en sors très bien ! Prends une pause si tu en as besoin."
+        ],
+        "B": [
+          "Oui, c’est dur quand les horaires se chevauchent.",
+          "Et ça demande plus d’énergie physique que je ne pensais.",
+          "Oui, faire de petites pauses m’aide beaucoup."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Tu as prévu de voir certains membres en dehors du club ?",
+          "Oh sympa ! L’ambiance doit être vraiment agréable.",
+          "Dis-moi comment ça s’est passé après !"
+        ],
+        "B": [
+          "Oui, on va dîner ensemble ce vendredi.",
+          "Tout le monde est très décontracté, donc c’est toujours amusant.",
+          "Oui, je te raconterai tout après."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Je pourrais me joindre à vous une prochaine fois ?",
+          "Wow, ça a l’air super ! Tu dois t’entendre vite avec eux.",
+          "Parfait, préviens-moi quand vous organisez quelque chose."
+        ],
+        "B": [
+          "Bien sûr ! Tout le monde est très sympa.",
+          "Oui, je pense que tu t’entendrais avec eux dès le début.",
+          "D’accord, je te dirai dès qu’on fixe une date !"
+        ]
+      }
+    }
+  ]
+}
+

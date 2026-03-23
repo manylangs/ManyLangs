@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "009",
+  "cefr": "B2",
+  "title_fr": "Smartphones et applications",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "L’application ne s’ouvre pas.,",
+    "Dois-je la mettre à jour ?,",
+    "La connexion Internet fonctionne ?,",
+    "Le stockage est saturé ?,",
+    "Où puis-je modifier ce réglage ?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Cette application refuse soudainement de s’ouvrir. Vous savez pourquoi ?",
+          "Ah vraiment ? Alors c’est peut-être un problème de l’application.",
+          "Très bien, je vais vérifier s’il y a une mise à jour."
+        ],
+        "B": [
+          "J’ai entendu dire qu’une mise à jour est sortie aujourd’hui. Peut-être que votre version n’est pas à jour ?",
+          "Oui, les anciennes versions peuvent parfois ne plus se lancer.",
+          "Une mise à jour devrait probablement résoudre le problème."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "La connexion Internet fonctionne correctement, n’est-ce pas ?",
+          "Ah, donc le problème ne vient pas de mon côté.",
+          "D’accord, je vais vider le cache de l’application."
+        ],
+        "B": [
+          "Oui, le Wi-Fi est stable et la vitesse est bonne.",
+          "Exact, ce n’est pas un problème de connexion.",
+          "Vider le cache règle souvent ce genre de souci immédiatement."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Est-ce que ça peut venir d’un manque de stockage ?",
+          "Ah, j’ai vraiment dû accumuler trop de fichiers !",
+          "Je vais devoir supprimer quelques photos et vidéos."
+        ],
+        "B": [
+          "Oui, c’est possible. Quand le stockage est presque plein, certaines applications dysfonctionnent.",
+          "Les vidéos prennent particulièrement beaucoup de place.",
+          "Même un petit nettoyage peut améliorer la stabilité du téléphone."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Je n’arrive pas à trouver où modifier ce réglage.",
+          "Wow, le menu est plus compliqué que je pensais !",
+          "Ah, je le vois maintenant. Je dois donc l’ajuster ici."
+        ],
+        "B": [
+          "Si vous allez dans Paramètres puis « Fonctions avancées », cela devrait apparaître immédiatement.",
+          "Oui, c’est normal d’être un peu perdu la première fois.",
+          "Une fois l’option activée, le changement s’appliquera tout de suite."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "La batterie ne se vide pas beaucoup trop vite ces derniers temps ?",
+          "Ah oui, cela semble vraiment anormal !",
+          "Je devrais activer le mode économie d’énergie."
+        ],
+        "B": [
+          "Oui, auparavant elle tenait toute la journée.",
+          "Exact, une baisse aussi soudaine n’est pas normale.",
+          "Le mode économie d’énergie aide généralement un peu."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Pourquoi les notifications arrivent-elles aussi tard ?",
+          "Exactement ! Parfois elles arrivent toutes en même temps.",
+          "Je vais désactiver la restriction en arrière-plan."
+        ],
+        "B": [
+          "Cela peut venir de l’optimisation de la batterie.",
+          "Oui, même les notifications importantes peuvent être retardées.",
+          "En désactivant ce réglage, elles devraient arriver presque instantanément."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Mes appels se coupent sans arrêt. Vous pensez que c’est le téléphone ?",
+          "Ah, si le signal est aussi instable, ça explique beaucoup.",
+          "Je vais essayer de retirer puis remettre la carte SIM."
+        ],
+        "B": [
+          "Certaines zones ont un signal faible, mais ces derniers temps c’est pire que d’habitude.",
+          "Oui, les appels peuvent se couper immédiatement quand le signal est faible.",
+          "Réinsérer la carte SIM règle souvent le problème."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Avez-vous essayé les nouvelles applications sorties récemment ?",
+          "Oh, ce système de recommandations personnalisées a l’air amusant !",
+          "Je vais la télécharger pour l’essayer moi-même."
+        ],
+        "B": [
+          "Oui, il y a beaucoup d’applications basées sur l’IA en ce moment.",
+          "Exact, celle que j’utilise analyse même mes préférences.",
+          "Essayez-la et dites-moi si vous l’aimez !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "L’écran de mon téléphone clignote parfois. C’est grave ?",
+          "Ouf, je suis soulagé… Je pensais qu’il était cassé.",
+          "Alors je ferai les mises à jour dès que la notification apparaîtra."
+        ],
+        "B": [
+          "C’est généralement un bug logiciel, une mise à jour devrait régler ça.",
+          "Oui, ce n’est presque jamais un défaut matériel.",
+          "Garder l’appareil à jour est toujours le plus sûr."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Transférer les données quand on change de téléphone, ce n’est pas trop compliqué ?",
+          "Oh, si tout se transfère automatiquement, c’est vraiment pratique !",
+          "Dans ce cas, je passerai au nouveau téléphone ce week-end."
+        ],
+        "B": [
+          "De nos jours, la plupart des applications gèrent presque tout automatiquement.",
+          "Oui, même les photos et les discussions se transfèrent telles quelles.",
+          "Parfait ! Mais faites quand même une sauvegarde par sécurité."
+        ]
+      }
+    }
+  ]
+}
+

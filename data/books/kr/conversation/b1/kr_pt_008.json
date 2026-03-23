@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "008",
+  "cefr": "B1",
+  "title_pt": "Amigos da universidade",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Como estão os teus amigos da universidade?,",
+    "Fizeste algum amigo mais próximo?,",
+    "Foram almoçar juntos?,",
+    "Os vossos estilos de estudo combinam?,",
+    "Podemos encontrar-nos todos da próxima vez!,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Como estão os teus amigos da universidade?",
+          "Ah é? Ficaste próximo tão depressa! Que tipo de amigo é?",
+          "Que bom! Gostava de o conhecer um dia."
+        ],
+        "B": [
+          "Estão ótimos. Até me estou a aproximar das pessoas mais rápido do que esperava.",
+          "É um colega do meu curso, muito fácil de conviver.",
+          "Sim, acho que também te darias bem com ele."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Há alguém com quem passes mais tempo ultimamente?",
+          "Ah, então ficaram próximos enquanto faziam trabalhos juntos!",
+          "É ótimo. Estudarem juntos vai aproximar-vos ainda mais."
+        ],
+        "B": [
+          "Sim, tenho um amigo com quem costumo fazer os trabalhos.",
+          "Sim, trabalhar juntos ajudou-nos a aproximar-nos muito.",
+          "Sim, cada vez é mais natural falar com ele."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Com quem costumas almoçar?",
+          "Ah, aquele amigo que vias sempre na cantina!",
+          "Boa. Essas amizades costumam durar muito."
+        ],
+        "B": [
+          "Normalmente com alguém que acaba as aulas à mesma hora que eu.",
+          "Encontrávamo-nos sempre na cantina e começámos a almoçar juntos.",
+          "Sim, damo-nos mesmo muito bem!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Tens algum amigo cujo estilo de estudo combine contigo?",
+          "Ah, que fixe — alguém com quem trocas perguntas!",
+          "Sim, estudar com alguém assim ajuda imenso."
+        ],
+        "B": [
+          "Sim, há um amigo com quem me concentro muito bem.",
+          "Fazemos muitas perguntas um ao outro.",
+          "Sim, ajuda-me bastante quando estudamos juntos."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Há alguém que encontres muitas vezes no campus?",
+          "A sério? Essas coincidências são sempre engraçadas!",
+          "Da próxima vez, tenta cumprimentá-lo."
+        ],
+        "B": [
+          "Sim! Encontramo-nos sempre no mesmo sítio.",
+          "Pois, nem sequer temos horários parecidos, mas estamos sempre a cruzar-nos.",
+          "Se o vir outra vez, digo-lhe olá!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Encontraste alguém com quem possas falar do teu curso tranquilamente?",
+          "Ah, é ótimo ter alguém com quem partilhar essas preocupações!",
+          "Sim, vão apoiar-se bastante um ao outro."
+        ],
+        "B": [
+          "Sim, tenho um amigo com quem falo das minhas dificuldades de estudo.",
+          "Sim, percebemos que temos problemas parecidos.",
+          "Sim, acho que isso nos aproximou ainda mais."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Tens algum amigo com quem prepares os exames?",
+          "Ah, isso é ótimo! Ajudar-se mutuamente facilita tudo.",
+          "Sim, se funciona bem, continuem a estudar juntos."
+        ],
+        "B": [
+          "Sim, tenho um amigo com quem estudo sempre na época de exames.",
+          "Explicamo-nos as coisas quando um de nós não percebe.",
+          "Sim, é muito melhor do que estudar sozinho!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Com quem te dás melhor até agora?",
+          "Uau — gostos parecidos e personalidades compatíveis? Perfeito!",
+          "Boa, essas amizades costumam durar."
+        ],
+        "B": [
+          "Provavelmente o amigo com quem partilho aulas.",
+          "Sim, temos gostos semelhantes e as nossas personalidades encaixam bem.",
+          "Sim, é muito fácil falar com ele!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Tens algum plano com amigos esta semana?",
+          "Parece divertido! Aposto que vão comer algo delicioso.",
+          "Conta-me depois como correu!"
+        ],
+        "B": [
+          "Sim, vamos jantar juntos no sábado.",
+          "Acho que vamos experimentar um restaurante novo que abriu há pouco tempo.",
+          "Claro, conto-te tudo depois!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Será que posso juntar-me a vocês da próxima vez?",
+          "Uau, parece ótimo! Soam todos muito simpáticos.",
+          "Perfeito, avisa-me quando marcarem alguma coisa."
+        ],
+        "B": [
+          "Claro! São todos muito tranquilos.",
+          "Sim, acho que te darias bem com eles rapidamente.",
+          "Sim, aviso-te assim que tivermos planos!"
+        ]
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "a1",
+    "id": "006"
+  },
+  "title": {
+    "target": "이다/아니다",
+    "en": "",
+    "es": "",
+    "fr": "",
+    "pt": "Ser / Não ser (이다/아니다)"
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'이다'는 어떤 대상이 무엇인지 설명할 때 쓰는 서술어이다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "«이다» é usado para dizer o que algo é."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'아니다'는 그것이 그렇지 않다는 의미를 나타낸다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "«아니다» é usado para dizer que algo não é verdade."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'이다'는 명사 뒤에 붙어 정체를 알려 준다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "«이다» liga-se a um substantivo para mostrar a sua identidade."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'아니다'는 명사 뒤에 '이/가 아니다' 형태로 쓴다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "«아니다» é usado na forma «N + 이/가 아니다»."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'이다'는 긍정, '아니다'는 부정을 나타낸다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "«이다» expressa afirmação e «아니다» expressa negação."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "사람·사물·장소 등 어떤 명사에도 자유롭게 붙는다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Podem ligar-se a qualquer substantivo, como pessoas, coisas ou lugares."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "현재 시제에서는 형태 변화 없이 그대로 쓴다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "No presente, a forma não muda."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "상황 설명이나 소개할 때 자주 등장한다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Aparecem muitas vezes quando se explica ou apresenta algo."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "자기소개·직업·관계 표현에서 필수적으로 사용된다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "São essenciais em apresentações pessoais, profissões e relações."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "한국어 기본 문장에서 가장 중요하고 자주 쓰이는 문형이다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Este padrão é um dos mais importantes do coreano básico."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "나는 학생이다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Sou estudante."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그녀는 의사이다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Ela é médica."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그는 친구이다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Ele é um amigo."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "여기는 공원이다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Este lugar é um parque."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "저것은 연필이다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Aquilo é um lápis."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "이것은 의자이다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Isto é uma cadeira."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "나는 학생이 아니다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Não sou estudante."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그녀는 의사가 아니다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Ela não é médica."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그는 선생님이 아니다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Ele não é professor."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "이것은 책이 아니다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Isto não é um livro."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "저것은 가방이 아니다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Aquilo não é uma mala."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "여기는 학교가 아니다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Este lugar não é uma escola."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "오늘은 휴일이 아니다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Hoje não é feriado."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그 사람은 내 동료가 아니다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Essa pessoa não é minha colega."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "나는 그 계획의 담당자가 아니다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Não sou a pessoa responsável pelo plano."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "이 장소는 조용한 곳이 아니다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Este lugar não é uma zona calma."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "이 시간은 약속 시간이 아니다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Esta hora não é a hora da reunião."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그것은 중요한 문제가 아니다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Isso não é um problema importante."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "나는 거짓말을 한 사람이 아니다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Não sou a pessoa que mentiu."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "이 길은 내가 찾던 길이 아니다.",
+        "en": "",
+        "es": "",
+        "fr": "",
+        "pt": "Esta estrada não é a que eu procurava."
+      }
+    }
+  ]
+}

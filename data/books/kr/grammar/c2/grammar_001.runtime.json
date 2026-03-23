@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "c2",
+    "id": "001"
+  },
+  "title": {
+    "target": "-(으)ㄴ/는 가운데",
+    "en": "While / Amid",
+    "es": "Mientras / En medio de",
+    "fr": "Pendant que / Au milieu de",
+    "pt": "Enquanto / Em meio a"
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'-(으)ㄴ/는 가운데'는 두 사건이 동시에 진행되고 있음을 나타내는 표현이다.",
+        "en": "The form indicates that two events occur at the same time.",
+        "es": "La forma indica que dos eventos ocurren al mismo tiempo.",
+        "fr": "Cette forme indique que deux événements se produisent en même temps.",
+        "pt": "A forma indica que dois eventos ocorrem ao mesmo tempo."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문어체에서 자주 사용되며, 공식 보고서나 신문 기사에서도 자주 보인다.",
+        "en": "It is frequently used in formal writing such as reports and news articles.",
+        "es": "Se utiliza con frecuencia en textos formales como informes y artículos de prensa.",
+        "fr": "Elle est fréquemment utilisée dans des écrits formels comme les rapports et les articles de presse.",
+        "pt": "É frequentemente usada em textos formais, como relatórios e artigos jornalísticos."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "주로 중심 상황 속에서 또 다른 상황이 동시에 일어날 때 쓰인다.",
+        "en": "It describes a secondary situation unfolding within a main situation.",
+        "es": "Describe una situación secundaria que se desarrolla dentro de una situación principal.",
+        "fr": "Elle décrit une situation secondaire qui se déroule dans une situation principale.",
+        "pt": "Descreve uma situação secundária que se desenrola dentro de uma situação principal."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "주절(핵심 사건)과 종속절(배경 사건)의 관계를 분명하게 만드는 기능을 가진다.",
+        "en": "It clarifies the relationship between the primary and background events.",
+        "es": "Aclara la relación entre el evento principal y el de fondo.",
+        "fr": "Elle clarifie la relation entre l’événement principal et l’événement de fond.",
+        "pt": "Esclarece a relação entre o evento principal e o evento de fundo."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "시간적 병행성을 강조하며, 두 사건의 긴밀한 연결성을 표현한다.",
+        "en": "It emphasizes temporal parallelism and the close connection between the two events.",
+        "es": "Enfatiza el paralelismo temporal y la estrecha conexión entre los dos eventos.",
+        "fr": "Elle met l’accent sur le parallélisme temporel et le lien étroit entre les deux événements.",
+        "pt": "Enfatiza o paralelismo temporal e a conexão estreita entre os dois eventos."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "감정이나 평가가 개입되지 않고 사실을 객관적으로 서술할 때 적합하다.",
+        "en": "It is suitable for objective descriptions without emotional judgment.",
+        "es": "Es adecuada para descripciones objetivas sin juicios emocionales.",
+        "fr": "Elle convient aux descriptions objectives sans jugement émotionnel.",
+        "pt": "É adequada para descrições objetivas sem julgamentos emocionais."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "사회적·정치적·경제적 상황을 묘사하는 데 자주 활용된다.",
+        "en": "It is often used to describe social, political, or economic situations.",
+        "es": "Se usa a menudo para describir situaciones sociales, políticas o económicas.",
+        "fr": "Elle est souvent utilisée pour décrire des situations sociales, politiques ou économiques.",
+        "pt": "É comum na descrição de situações sociais, políticas ou económicas."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "행위자가 다르더라도 두 사건이 같은 시기에 진행되면 함께 연결할 수 있다.",
+        "en": "The subjects of the two events may differ as long as the actions occur simultaneously.",
+        "es": "Los sujetos pueden ser diferentes mientras las acciones ocurran simultáneamente.",
+        "fr": "Les sujets peuvent être différents tant que les actions se produisent simultanément.",
+        "pt": "Os sujeitos podem ser diferentes desde que as ações ocorram simultaneamente."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'-(으)면서'보다 격식 있고 중립적인 뉘앙스를 갖는다.",
+        "en": "It conveys a more formal nuance than 'while' or 'as' in everyday usage.",
+        "es": "Transmite un matiz más formal que ‘while’ o ‘as’ en el uso cotidiano.",
+        "fr": "Elle exprime une nuance plus formelle que ‘while’ ou ‘as’ dans l’usage quotidien.",
+        "pt": "Transmite um tom mais formal do que 'while' ou 'as' no uso quotidiano."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문장 흐름을 정교하게 만들어 논리적이고 학술적인 분위기를 강화한다.",
+        "en": "It creates a precise and academic tone in complex written contexts.",
+        "es": "Genera un tono preciso y académico en contextos escritos complejos.",
+        "fr": "Elle crée un ton précis et académique dans des contextes écrits complexes.",
+        "pt": "Cria um estilo preciso e académico em contextos escritos complexos."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "회의가 진행되는 가운데 새로운 규정이 승인되었다.",
+        "en": "New regulations were approved amid the ongoing meeting.",
+        "es": "Nuevas regulaciones fueron aprobadas en medio de la reunión en curso.",
+        "fr": "De nouveaux règlements ont été approuvés au milieu de la réunion en cours.",
+        "pt": "Novos regulamentos foram aprovados em meio à reunião em curso."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "혼란이 이어지는 가운데 구조팀이 현장에 도착했다.",
+        "en": "The rescue team arrived at the site as the confusion continued.",
+        "es": "El equipo de rescate llegó al lugar mientras continuaba la confusión.",
+        "fr": "L’équipe de secours est arrivée sur les lieux alors que la confusion continuait.",
+        "pt": "A equipa de resgate chegou ao local enquanto a confusão continuava."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "협상이 지속되는 가운데 양측의 입장 차이가 더욱 뚜렷해졌다.",
+        "en": "While negotiations continued, the gap between both sides became clearer.",
+        "es": "Mientras continuaban las negociaciones, la diferencia entre ambas partes se volvió más clara.",
+        "fr": "Pendant que les négociations se poursuivaient, l’écart entre les deux parties est devenu plus clair.",
+        "pt": "Enquanto as negociações prosseguiam, a diferença entre as duas partes tornou-se mais clara."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "경제가 침체되는 가운데 물가만 계속 상승하고 있다.",
+        "en": "Prices kept rising even as the economy remained stagnant.",
+        "es": "Los precios siguieron aumentando incluso mientras la economía permanecía estancada.",
+        "fr": "Les prix ont continué à augmenter alors que l’économie restait stagnante.",
+        "pt": "Os preços continuaram a subir mesmo enquanto a economia permanecia estagnada."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "검토가 이루어지는 가운데 추가 자료 제출이 요구되었다.",
+        "en": "Additional documents were requested while the review was in progress.",
+        "es": "Se solicitaron documentos adicionales mientras avanzaba la revisión.",
+        "fr": "Des documents supplémentaires ont été demandés pendant que l’examen était en cours.",
+        "pt": "Foram solicitados documentos adicionais enquanto a revisão estava em andamento."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "비판이 커지는 가운데 해당 기관은 침묵을 유지했다.",
+        "en": "The institution remained silent as criticism grew.",
+        "es": "La institución guardó silencio mientras crecían las críticas.",
+        "fr": "L’institution est restée silencieuse alors que les critiques s’intensifiaient.",
+        "pt": "A instituição manteve silêncio enquanto as críticas aumentavam."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "행사가 열리는 가운데 예상치 못한 돌발 상황이 발생했다.",
+        "en": "An unexpected incident occurred during the event.",
+        "es": "Ocurrió un incidente inesperado durante el evento.",
+        "fr": "Un incident imprévu s’est produit pendant l’événement.",
+        "pt": "Ocorreu um incidente inesperado durante o evento."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "심리가 진행되는 가운데 새로운 증거가 공개되었다.",
+        "en": "New evidence was revealed while the hearing was in progress.",
+        "es": "Se revelaron nuevas pruebas mientras avanzaba la audiencia.",
+        "fr": "De nouvelles preuves ont été révélées alors que l’audience avançait.",
+        "pt": "Novas provas foram reveladas enquanto a audiência avançava."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "비가 내리는 가운데 시민들이 대피를 서둘렀다.",
+        "en": "Citizens hurried to evacuate as the rain continued.",
+        "es": "Los ciudadanos se apresuraron a evacuar mientras continuaba la lluvia.",
+        "fr": "Les citoyens se sont précipités pour évacuer alors que la pluie continuait.",
+        "pt": "Os cidadãos apressaram-se a evacuar enquanto a chuva continuava."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "지원이 줄어드는 가운데 지역 단체는 자체 해결책을 찾고 있다.",
+        "en": "Local groups searched for their own solutions as support declined.",
+        "es": "Los grupos locales buscaron soluciones propias mientras disminuía el apoyo.",
+        "fr": "Les groupes locaux ont cherché leurs propres solutions alors que le soutien diminuait.",
+        "pt": "Os grupos locais procuraram soluções próprias enquanto o apoio diminuía."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "갈등이 심화되는 가운데 협력 방안은 여전히 불투명하다.",
+        "en": "While the conflict deepened, cooperation measures remained uncertain.",
+        "es": "Mientras el conflicto se intensificaba, las medidas de cooperación seguían siendo inciertas.",
+        "fr": "Alors que le conflit s’intensifiait, les mesures de coopération restaient incertaines.",
+        "pt": "Enquanto o conflito se intensificava, as medidas de cooperação permaneciam incertas."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "논의가 늦어지는 가운데 최종 결정은 다시 연기되었다.",
+        "en": "The final decision was postponed again as discussions were delayed.",
+        "es": "La decisión final se pospuso nuevamente mientras se retrasaban las discusiones.",
+        "fr": "La décision finale a été de nouveau reportée alors que les discussions prenaient du retard.",
+        "pt": "A decisão final foi novamente adiada enquanto as discussões se atrasavam."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "긴장감이 감도는 가운데 발표자가 차분히 결과를 설명했다.",
+        "en": "The presenter calmly explained the results amid rising tension.",
+        "es": "El presentador explicó los resultados con calma en medio de la creciente tensión.",
+        "fr": "Le présentateur a expliqué calmement les résultats au milieu d’une tension croissante.",
+        "pt": "O apresentador explicou calmamente os resultados em meio à crescente tensão."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "불확실성이 커지는 가운데 젊은 연구자들은 새로운 접근법을 시도했다.",
+        "en": "Young researchers attempted new approaches as uncertainty increased.",
+        "es": "Los jóvenes investigadores intentaron nuevos enfoques mientras aumentaba la incertidumbre.",
+        "fr": "De jeunes chercheurs ont tenté de nouvelles approches alors que l’incertitude augmentait.",
+        "pt": "Jovens investigadores tentaram novas abordagens enquanto a incerteza aumentava."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "경쟁이 치열해지는 가운데 몇몇 기업은 과감한 혁신 전략을 내세웠다.",
+        "en": "Several companies introduced bold strategies as competition intensified.",
+        "es": "Varias empresas introdujeron estrategias audaces mientras la competencia se intensificaba.",
+        "fr": "Plusieurs entreprises ont adopté des stratégies audacieuses alors que la concurrence s’intensifiait.",
+        "pt": "Várias empresas adoptaram estratégias ousadas enquanto a concorrência se intensificava."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "변화가 요구되는 가운데 기존 체계는 쉽게 바뀌지 않았다.",
+        "en": "The existing system resisted change even as reform was demanded.",
+        "es": "El sistema existente resistió el cambio incluso cuando se exigían reformas.",
+        "fr": "Le système existant a résisté au changement même lorsque des réformes étaient exigées.",
+        "pt": "O sistema existente resistiu a mudanças mesmo quando reformas eram exigidas."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "기대가 높아지는 가운데 시장은 조심스러운 반응을 보였다.",
+        "en": "The market reacted cautiously as expectations grew.",
+        "es": "El mercado reaccionó con cautela mientras crecían las expectativas.",
+        "fr": "Le marché a réagi avec prudence alors que les attentes augmentaient.",
+        "pt": "O mercado reagiu com cautela enquanto as expectativas cresciam."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "여론이 양분되는 가운데 정부는 신중한 입장을 유지했다.",
+        "en": "The government maintained a careful stance while public opinion split.",
+        "es": "El gobierno mantuvo una postura cuidadosa mientras la opinión pública se dividía.",
+        "fr": "Le gouvernement a maintenu une position prudente alors que l’opinion publique se divisait.",
+        "pt": "O governo manteve uma postura cautelosa enquanto a opinião pública se dividia."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "전망이 어두운 가운데 일부 산업은 구조 조정을 서두르고 있다.",
+        "en": "Some industries rushed restructuring as prospects worsened.",
+        "es": "Algunas industrias aceleraron los procesos de reestructuración mientras empeoraban las perspectivas.",
+        "fr": "Certaines industries ont accéléré leur restructuration alors que les perspectives s’assombrissaient.",
+        "pt": "Algumas indústrias aceleraram a reestruturação enquanto as perspectivas pioravam."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "관심이 집중되는 가운데 전문가들의 분석이 잇따라 발표되었다.",
+        "en": "Experts released a series of analyses as public interest surged.",
+        "es": "Los expertos publicaron una serie de análisis mientras crecía el interés público.",
+        "fr": "Des experts ont publié une série d’analyses alors que l’intérêt du public augmentait.",
+        "pt": "Especialistas publicaram uma série de análises enquanto o interesse público aumentava."
+      }
+    }
+  ]
+}

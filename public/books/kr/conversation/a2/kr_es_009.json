@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "009",
+  "cefr": "A2",
+  "title_es": "Salud y síntomas",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "¿Dónde te duele?,",
+    "¿Has ido al médico?,",
+    "Deberías descansar.,",
+    "¿Has tomado algún medicamento?,",
+    "No es muy grave.,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "No te ves bien. ¿Te sientes mal?",
+          "Quizá es porque he estado cansado estos días.",
+          "Aun así, creo que deberías ir al médico."
+        ],
+        "B": [
+          "Sí, me duele la cabeza desde ayer.",
+          "Sí, cuando estás cansado el dolor empeora.",
+          "Sí, iré cuando tenga algo de tiempo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Toses mucho. ¿Tienes un resfriado?",
+          "¿Tomaste algún medicamento?",
+          "Entonces bebe agua caliente con frecuencia."
+        ],
+        "B": [
+          "Sí, me arde mucho la garganta.",
+          "Tomé medicina ayer, pero todavía molesta un poco.",
+          "Sí, beber agua tibia me ayuda un poco."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Me ha estado doliendo la espalda últimamente.",
+          "Incluso sentado me siento incómodo.",
+          "Creo que quizá es por falta de ejercicio."
+        ],
+        "B": [
+          "Sí, el dolor de espalda es difícil de llevar.",
+          "Si duele incluso al sentarte, es muy incómodo.",
+          "¿Qué tal si empiezas con estiramientos suaves?"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Hoy me duele el estómago y no sé por qué.",
+          "Quizá fue lo que comí esta mañana.",
+          "Pero no creo que sea algo grave."
+        ],
+        "B": [
+          "Es muy molesto cuando el estómago no va bien.",
+          "¿No comiste algo frío o muy pesado?",
+          "Sí, come algo ligero hoy para sentirte mejor."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Creo que tengo dolor corporal. Todo me duele.",
+          "No tengo nada de energía.",
+          "Creo que hoy solo necesito descansar bien."
+        ],
+        "B": [
+          "Uf, los dolores corporales son difíciles.",
+          "Sí, sin energía no se puede hacer nada.",
+          "Duerme un buen rato. Mañana te sentirás mejor."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "He estado mareado desde esta mañana.",
+          "Creo que es porque no desayuné.",
+          "Debería comer algo, aunque sea poco."
+        ],
+        "B": [
+          "El mareo puede ser peligroso.",
+          "Sí, empeora si no comes.",
+          "Come algo ligero. Te sentirás mejor pronto."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "No he dormido bien por el estrés.",
+          "Cuando me acuesto, sigo pensando en muchas cosas.",
+          "¿Conoces algún truco para dormir mejor?"
+        ],
+        "B": [
+          "Sí, mucha gente duerme mal últimamente.",
+          "Sí, cuando piensas demasiado es difícil dormir.",
+          "Toma un té caliente antes de dormir, ayuda bastante."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Creo que tengo un poco de fiebre.",
+          "Me siento caliente y sin energía.",
+          "No creo que pueda ir a trabajar hoy."
+        ],
+        "B": [
+          "Si tienes fiebre, deberías descansar bien.",
+          "Sí, cuando el cuerpo está caliente no puedes hacer nada.",
+          "Descansa hoy y ve mañana cómo te sientes."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Me ha estado doliendo la muñeca últimamente.",
+          "Creo que es porque he usado mucho el ordenador.",
+          "Debería estirarla más a menudo."
+        ],
+        "B": [
+          "El dolor de muñeca dificulta el trabajo.",
+          "Sí, usarla demasiado causa tensión.",
+          "Haz estiramientos con frecuencia, ayuda mucho."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Tengo el estómago pesado después de comer.",
+          "Creo que fue por comer algo grasoso.",
+          "Hoy debería comer algo más fácil de digerir."
+        ],
+        "B": [
+          "Sí, la comida grasosa suele molestar al estómago.",
+          "Sí, te sientes pesado toda la tarde.",
+          "Cena algo ligero. Te sentirás mejor."
+        ]
+      }
+    }
+  ]
+}
+

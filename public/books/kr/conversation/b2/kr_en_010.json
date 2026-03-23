@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "010",
+  "cefr": "B2",
+  "title_en": "SNS and Online Communities",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Search isn’t working.,",
+    "I can’t see any comments.,",
+    "I’m getting too many notifications.,",
+    "My account is locked.,",
+    "Where do I change this setting?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Search on SNS isn’t working at all. Do you know why?",
+          "Oh really? Then maybe it's just a temporary glitch.",
+          "Alright, I’ll try again in a little while."
+        ],
+        "B": [
+          "I heard the server’s been unstable since yesterday.",
+          "Yes, it happens sometimes but usually goes back to normal quickly.",
+          "Right, it should stabilize soon, so please try again later."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "All the comments suddenly disappeared. Is it just me?",
+          "Oh, that kind of restriction could cause this!",
+          "Then I should check my account status too."
+        ],
+        "B": [
+          "Sometimes posts get hidden automatically if there’s suspected rule violation.",
+          "Yes, they usually reappear after some time.",
+          "If anything seems off, you can also contact support."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "I’m getting so many notifications lately that it’s overwhelming.",
+          "Oh, being able to adjust them there sounds really convenient!",
+          "Then I’ll tidy up my notification categories."
+        ],
+        "B": [
+          "In the notification settings, you can turn them off by category.",
+          "Yes, there are quite a few you don’t actually need.",
+          "Keeping only the important ones makes things much cleaner."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "My posts keep getting deleted. What could be the reason?",
+          "Oh, then it might really be because of the rules.",
+          "I guess I should be more careful next time."
+        ],
+        "B": [
+          "The auto-filter sometimes reacts a bit strictly.",
+          "Yes, certain words or contexts can trigger deletion.",
+          "As long as you stay within the rules, posts usually stay up."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "My account suddenly got locked. Why would that happen?",
+          "Oh, failed login attempts could definitely cause that!",
+          "Then I’ll reset my password first."
+        ],
+        "B": [
+          "If suspicious activity is detected, accounts get locked for security.",
+          "Yes, multiple failed logins can trigger it.",
+          "Once you reset and verify, it usually unlocks quickly."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "I’m getting follower recommendations that don’t make any sense.",
+          "Oh, so the algorithm can guess like that!",
+          "Then I should review my interest settings."
+        ],
+        "B": [
+          "It often bases recommendations on recently viewed posts.",
+          "Yes, a slight change in your activity can shift recommendations a lot.",
+          "Updating your interests usually improves accuracy."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Community notifications arrive way too late. It’s inconvenient.",
+          "Oh, if it’s because of settings, that should be simple to fix!",
+          "Then I’ll set only the important ones to high priority."
+        ],
+        "B": [
+          "If the priority is low, notifications can be delayed.",
+          "Yes, once you raise the priority they come almost instantly.",
+          "Keeping only the essential ones on high priority is efficient."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "My posts barely get any recommendations. Why is that?",
+          "Ah, so timing really matters!",
+          "Then I should pay attention to posting at active hours."
+        ],
+        "B": [
+          "If the posting time is off, exposure can be low.",
+          "Yes, posting when people are active helps a lot.",
+          "Right, uploading during high-engagement hours is more effective."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Some communities feel so harsh that it’s hard to participate.",
+          "Oh, hearing that difference actually helps me understand.",
+          "Then I’ll focus on communities that match my vibe."
+        ],
+        "B": [
+          "Each community has its own tone and culture.",
+          "Yes, some are friendly while others feel more intense.",
+          "Finding one that suits you best makes the experience better."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "I can’t decide how to edit my photos for SNS.",
+          "Oh, that style sounds like it would look really nice!",
+          "Then I’ll try different filters and choose one I like."
+        ],
+        "B": [
+          "A lot of people use aesthetic filters these days.",
+          "Yes, even small adjustments can change the whole vibe.",
+          "Try a few and pick the one that feels best for you."
+        ]
+      }
+    }
+  ]
+}
+

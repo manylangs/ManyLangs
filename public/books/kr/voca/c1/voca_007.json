@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "c1",
+    "id": "007"
+  },
+  "title": {
+    "target": "C1 — 학술•전문 개념 어휘",
+    "en": "C1 — Academic and Specialized Concept Vocabulary",
+    "es": "C1 — Vocabulario de conceptos académicos y especializados",
+    "fr": "C1 — Vocabulaire de concepts académiques et spécialisés",
+    "pt": "C1 — Vocabulário de conceitos acadêmicos e especializados"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "상관성",
+        "en": "correlation",
+        "es": "correlación",
+        "fr": "corrélation",
+        "pt": "correlação"
+      },
+      "examples": [
+        {
+          "target": "두 변수 간의 상관성이 높게 나타났다.",
+          "en": "A high correlation was found between the two variables.",
+          "es": "Se encontró una alta correlación entre las dos variables.",
+          "fr": "Une forte corrélation a été observée entre les deux variables.",
+          "pt": "Foi encontrada uma alta correlação entre as duas variáveis."
+        },
+        {
+          "target": "상관성이 있다고 해서 인과성이 있는 것은 아니다.",
+          "en": "Correlation does not necessarily imply causation.",
+          "es": "La correlación no implica necesariamente causalidad.",
+          "fr": "La corrélation n’implique pas nécessairement la causalité.",
+          "pt": "Correlação não implica necessariamente causalidade."
+        },
+        {
+          "target": "상관성을 분석하기 위해 여러 통계 기법이 사용되었다.",
+          "en": "Various statistical methods were used to analyze the correlation.",
+          "es": "Se utilizaron varios métodos estadísticos para analizar la correlación.",
+          "fr": "Différentes méthodes statistiques ont été utilisées pour analyser la corrélation.",
+          "pt": "Vários métodos estatísticos foram usados para analisar a correlação."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "인과성",
+        "en": "causality",
+        "es": "causalidad",
+        "fr": "causalité",
+        "pt": "causalidade"
+      },
+      "examples": [
+        {
+          "target": "연구자는 두 현상 사이의 인과성을 규명하려 했다.",
+          "en": "The researcher attempted to identify the causality between the two phenomena.",
+          "es": "El investigador intentó determinar la causalidad entre los dos fenómenos.",
+          "fr": "Le chercheur a tenté de déterminer la causalité entre les deux phénomènes.",
+          "pt": "O pesquisador tentou identificar a causalidade entre os dois fenómenos."
+        },
+        {
+          "target": "인과성 검증에는 실험 연구가 가장 효과적이다.",
+          "en": "Experimental research is most effective for verifying causality.",
+          "es": "La investigación experimental es la más efectiva para verificar la causalidad.",
+          "fr": "La recherche expérimentale est la plus efficace pour vérifier la causalité.",
+          "pt": "A pesquisa experimental é a mais eficaz para verificar a causalidade."
+        },
+        {
+          "target": "인과성을 파악하지 못하면 정책 효과를 정확히 평가할 수 없다.",
+          "en": "Without identifying causality, policy effects cannot be accurately evaluated.",
+          "es": "Sin identificar la causalidad, no se pueden evaluar correctamente los efectos de una política.",
+          "fr": "Sans identifier la causalité, il est impossible d’évaluer correctement les effets des politiques.",
+          "pt": "Sem identificar a causalidade, não é possível avaliar corretamente os efeitos de uma política."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "타당성",
+        "en": "validity",
+        "es": "validez",
+        "fr": "validité",
+        "pt": "validade"
+      },
+      "examples": [
+        {
+          "target": "연구 도구의 타당성을 확보하는 것이 중요하다.",
+          "en": "It is important to ensure the validity of research instruments.",
+          "es": "Es importante garantizar la validez de los instrumentos de investigación.",
+          "fr": "Il est important d’assurer la validité des outils de recherche.",
+          "pt": "É importante garantir a validade dos instrumentos de pesquisa."
+        },
+        {
+          "target": "타당성이 낮으면 연구 결과를 신뢰하기 어렵다.",
+          "en": "If validity is low, it is difficult to trust the research results.",
+          "es": "Si la validez es baja, es difícil confiar en los resultados.",
+          "fr": "Si la validité est faible, il est difficile de faire confiance aux résultats.",
+          "pt": "Se a validade é baixa, é difícil confiar nos resultados."
+        },
+        {
+          "target": "타당성을 높이기 위해 여러 보완 작업이 이루어졌다.",
+          "en": "Several adjustments were made to increase validity.",
+          "es": "Se realizaron varios ajustes para aumentar la validez.",
+          "fr": "Plusieurs ajustements ont été effectués pour améliorer la validité.",
+          "pt": "Foram feitos vários ajustes para aumentar a validade."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "신뢰성",
+        "en": "reliability",
+        "es": "fiabilidad",
+        "fr": "fiabilité",
+        "pt": "fiabilidade"
+      },
+      "examples": [
+        {
+          "target": "측정 도구의 신뢰성이 확보되어야 결과가 일관적이다.",
+          "en": "The reliability of measurement tools must be ensured for consistent results.",
+          "es": "La fiabilidad de los instrumentos de medición debe garantizarse para obtener resultados consistentes.",
+          "fr": "La fiabilité des outils de mesure doit être assurée pour obtenir des résultats cohérents.",
+          "pt": "A fiabilidade dos instrumentos de medição deve ser garantida para resultados consistentes."
+        },
+        {
+          "target": "신뢰성 검증은 반복 측정을 통해 이루어진다.",
+          "en": "Reliability is verified through repeated measurements.",
+          "es": "La fiabilidad se verifica mediante mediciones repetidas.",
+          "fr": "La fiabilité est vérifiée par des mesures répétées.",
+          "pt": "A fiabilidade é verificada por meio de medições repetidas."
+        },
+        {
+          "target": "신뢰성이 낮으면 연구 결론의 설득력이 떨어진다.",
+          "en": "When reliability is low, the persuasiveness of research conclusions declines.",
+          "es": "Cuando la fiabilidad es baja, disminuye la fuerza de las conclusiones.",
+          "fr": "Lorsque la fiabilité est faible, la force des conclusions diminue.",
+          "pt": "Quando a fiabilidade é baixa, diminui a força das conclusões."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "정합성",
+        "en": "coherence",
+        "es": "coherencia",
+        "fr": "cohérence",
+        "pt": "coerência"
+      },
+      "examples": [
+        {
+          "target": "연구 가설과 결과 사이의 정합성이 중요하다.",
+          "en": "Coherence between research hypotheses and results is important.",
+          "es": "Es importante la coherencia entre las hipótesis y los resultados de la investigación.",
+          "fr": "La cohérence entre les hypothèses et les résultats de recherche est importante.",
+          "pt": "É importante a coerência entre as hipóteses e os resultados da pesquisa."
+        },
+        {
+          "target": "정합성이 부족하면 논문의 신뢰도가 떨어진다.",
+          "en": "A lack of coherence reduces the credibility of the paper.",
+          "es": "La falta de coherencia reduce la credibilidad del artículo.",
+          "fr": "Un manque de cohérence réduit la crédibilité de l’article.",
+          "pt": "A falta de coerência reduz a credibilidade do artigo."
+        },
+        {
+          "target": "정합성을 확보하기 위해 분석 과정이 다시 점검되었다.",
+          "en": "The analysis process was reviewed again to ensure coherence.",
+          "es": "Se revisó el proceso de análisis para asegurar la coherencia.",
+          "fr": "Le processus d'analyse a été revérifié pour garantir la cohérence.",
+          "pt": "O processo de análise foi revisado novamente para garantir a coerência."
+        }
+      ]
+    }
+  ]
+}

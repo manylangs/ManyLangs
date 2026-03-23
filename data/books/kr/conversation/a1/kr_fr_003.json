@@ -1,0 +1,175 @@
+{
+  "chapter_id": "003",
+  "cefr": "A1",
+  "title_fr": "Nationalité_et_langues",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Tu viens d’où ?",
+    "Tu parles quelle langue ?",
+    "Ton coréen est super !",
+    "Parle un peu plus lentement, s’il te plaît.",
+    "Tu peux répéter ?"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Tu viens d’où ?",
+          "Oh, c’est assez loin !",
+          "On devrait parler plus souvent !"
+        ],
+        "B": [
+          "Je viens d’Espagne.",
+          "Mais j’aime beaucoup la Corée !",
+          "Oui, bonne idée !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Tu parles quelle langue d’habitude ?",
+          "Wow, tu parles plusieurs langues !",
+          "Si tu as besoin d’aide, dis-moi."
+        ],
+        "B": [
+          "Je parle espagnol, et un peu anglais.",
+          "C’est pour ça que le coréen me paraît plus dur.",
+          "Merci ! Ça va m’aider."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Depuis combien de temps tu apprends le coréen ?",
+          "Oh, plus longtemps que je pensais !",
+          "Tu vas vite progresser encore plus !"
+        ],
+        "B": [
+          "Depuis environ six mois.",
+          "Mais parler est encore difficile.",
+          "Merci pour ton soutien !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Ton coréen est vraiment bon !",
+          "Même ta prononciation sonne naturelle.",
+          "Continue comme ça !"
+        ],
+        "B": [
+          "Vraiment ? Je ne me sens pas très bon…",
+          "La prononciation me stresse un peu.",
+          "Je vais pratiquer encore !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Tu peux parler un peu plus lentement ?",
+          "Ah, maintenant je comprends mieux.",
+          "Merci beaucoup !"
+        ],
+        "B": [
+          "Ah désolé, je parlais trop vite.",
+          "D’accord, je vais ralentir.",
+          "N’hésite pas à me le dire."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Tu peux répéter ce que tu as dit ?",
+          "Oh, c’est donc ça que tu voulais dire.",
+          "Maintenant j’ai compris !"
+        ],
+        "B": [
+          "Bien sûr ! J’ai dit : « Viens par ici ».",
+          "Je n’ai pas assez expliqué, désolé.",
+          "Demande-moi encore si tu veux !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "C’est comment pour toi, parler coréen ?",
+          "Oui, écouter est difficile pour moi aussi.",
+          "Mais tu t’en sors très bien !"
+        ],
+        "B": [
+          "Parler ça va, mais écouter est dur.",
+          "Surtout quand les gens parlent vite.",
+          "Merci pour le compliment !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Tu apprends une autre langue aussi ?",
+          "Wow, tu es doué(e) pour les langues !",
+          "Tu m’inspires aussi !"
+        ],
+        "B": [
+          "Oui, j’apprends un peu le français.",
+          "Mais la prononciation est très différente.",
+          "On pourrait étudier ensemble !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Tu as beaucoup d’amis coréens ?",
+          "Ah, c’est pour ça que ta prononciation est bonne !",
+          "Continuons à pratiquer ensemble."
+        ],
+        "B": [
+          "Oui, j’en ai rencontré quelques-uns à l’école.",
+          "Ils m’ont beaucoup aidé.",
+          "Oui ! Pratiquons ensemble."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Qu’est-ce qui est le plus difficile en coréen ?",
+          "Oui, la grammaire peut être compliquée.",
+          "Prends ton temps, tu vas y arriver !"
+        ],
+        "B": [
+          "Pour moi, les particules sont les plus dures.",
+          "Il y en a beaucoup et elles se ressemblent.",
+          "C’est vrai ! Mais je vais continuer."
+        ]
+      }
+    }
+  ]
+}

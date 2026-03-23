@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a2",
+    "id": "038"
+  },
+  "title": {
+    "target": "A2 — 확장 일상 어휘",
+    "en": "A2 — Expanded Everyday Vocabulary",
+    "es": "A2 — Vocabulario cotidiano ampliado",
+    "fr": "A2 — Vocabulaire quotidien élargi",
+    "pt": "A2 — Vocabulário do dia a dia ampliado"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "수리",
+        "en": "repair",
+        "es": "reparación",
+        "fr": "réparation",
+        "pt": "reparo"
+      },
+      "examples": [
+        {
+          "target": "기계 수리에 이틀 정도 걸릴 예정이에요.",
+          "en": "The machine repair will take about two days.",
+          "es": "La reparación de la máquina tomará unos dos días.",
+          "fr": "La réparation de la machine prendra environ deux jours.",
+          "pt": "O reparo da máquina levará cerca de dois dias."
+        },
+        {
+          "target": "수리 비용이 예상보다 비쌌어요.",
+          "en": "The repair cost was higher than expected.",
+          "es": "El costo de la reparación fue más alto de lo esperado.",
+          "fr": "Le coût de la réparation était plus élevé que prévu.",
+          "pt": "O custo do reparo foi mais alto que o esperado."
+        },
+        {
+          "target": "수리가 끝나면 연락을 드릴게요.",
+          "en": "I will contact you when the repair is finished.",
+          "es": "Le avisaré cuando la reparación esté lista.",
+          "fr": "Je vous contacterai lorsque la réparation sera terminée.",
+          "pt": "Eu avisarei quando o reparo estiver concluído."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "고장",
+        "en": "malfunction",
+        "es": "avería",
+        "fr": "panne",
+        "pt": "falha"
+      },
+      "examples": [
+        {
+          "target": "엘리베이터가 고장 나서 계단을 이용했어요.",
+          "en": "The elevator broke down, so I used the stairs.",
+          "es": "El ascensor se averió, así que usé las escaleras.",
+          "fr": "L’ascenseur est en panne, donc j’ai pris les escaliers.",
+          "pt": "O elevador quebrou, então eu usei as escadas."
+        },
+        {
+          "target": "고장 원인을 아직 찾지 못했어요.",
+          "en": "They haven't found the cause of the malfunction yet.",
+          "es": "Aún no han encontrado la causa de la avería.",
+          "fr": "Ils n’ont pas encore trouvé la cause de la panne.",
+          "pt": "Ainda não encontraram a causa da falha."
+        },
+        {
+          "target": "고장이 자주 나서 새 제품으로 교환했어요.",
+          "en": "It malfunctioned often, so I exchanged it for a new one.",
+          "es": "Se averiaba con frecuencia, así que lo cambié por uno nuevo.",
+          "fr": "Il tombait souvent en panne, alors je l’ai échangé contre un nouveau.",
+          "pt": "Ele quebrava com frequência, então eu troquei por um novo."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "점검",
+        "en": "inspection",
+        "es": "inspección",
+        "fr": "inspection",
+        "pt": "inspeção"
+      },
+      "examples": [
+        {
+          "target": "정기 점검으로 건물이 잠시 폐쇄돼요.",
+          "en": "The building will be temporarily closed for regular inspection.",
+          "es": "El edificio estará cerrado temporalmente por una inspección regular.",
+          "fr": "Le bâtiment sera temporairement fermé pour une inspection régulière.",
+          "pt": "O prédio ficará temporariamente fechado para inspeção regular."
+        },
+        {
+          "target": "점검 사항을 확인한 후에 다시 사용하세요.",
+          "en": "Check the inspection items before using it again.",
+          "es": "Revise los puntos de inspección antes de usarlo nuevamente.",
+          "fr": "Vérifiez les points d’inspection avant de l’utiliser à nouveau.",
+          "pt": "Verifique os itens de inspeção antes de usar novamente."
+        },
+        {
+          "target": "전문가가 시설을 점검하고 있어요.",
+          "en": "A specialist is inspecting the facility.",
+          "es": "Un especialista está inspeccionando las instalaciones.",
+          "fr": "Un spécialiste inspecte les installations.",
+          "pt": "Um especialista está inspecionando a instalação."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "소독",
+        "en": "disinfection",
+        "es": "desinfección",
+        "fr": "désinfection",
+        "pt": "desinfecção"
+      },
+      "examples": [
+        {
+          "target": "소독 후에는 잠시 입장이 제한돼요.",
+          "en": "Entry is restricted for a while after disinfection.",
+          "es": "La entrada está restringida por un tiempo después de la desinfección.",
+          "fr": "L’entrée est limitée pendant un moment après la désinfection.",
+          "pt": "A entrada fica restrita por um tempo após a desinfecção."
+        },
+        {
+          "target": "방을 소독하니 냄새가 조금 나요.",
+          "en": "The room smells a bit after disinfection.",
+          "es": "La habitación huele un poco después de la desinfección.",
+          "fr": "La pièce dégage une légère odeur après la désinfection.",
+          "pt": "O quarto tem um leve cheiro depois da desinfecção."
+        },
+        {
+          "target": "주기적으로 소독을 해야 해요.",
+          "en": "Disinfection must be done regularly.",
+          "es": "La desinfección debe hacerse regularmente.",
+          "fr": "La désinfection doit être effectuée régulièrement.",
+          "pt": "A desinfecção deve ser feita regularmente."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "위생",
+        "en": "hygiene",
+        "es": "higiene",
+        "fr": "hygiène",
+        "pt": "higiene"
+      },
+      "examples": [
+        {
+          "target": "위생 관리를 철저히 해야 해요.",
+          "en": "Hygiene must be managed thoroughly.",
+          "es": "La higiene debe mantenerse rigurosamente.",
+          "fr": "L’hygiène doit être gérée de manière rigoureuse.",
+          "pt": "A higiene deve ser mantida rigorosamente."
+        },
+        {
+          "target": "식당의 위생 상태가 좋아 보여요.",
+          "en": "The restaurant appears to have good hygiene.",
+          "es": "El restaurante parece tener buena higiene.",
+          "fr": "Le restaurant semble avoir une bonne hygiène.",
+          "pt": "O restaurante parece ter boa higiene."
+        },
+        {
+          "target": "위생 교육을 정기적으로 받고 있어요.",
+          "en": "We receive hygiene training regularly.",
+          "es": "Recibimos capacitación de higiene regularmente.",
+          "fr": "Nous recevons une formation sur l’hygiène régulièrement.",
+          "pt": "Recebemos treinamento de higiene regularmente."
+        }
+      ]
+    }
+  ]
+}

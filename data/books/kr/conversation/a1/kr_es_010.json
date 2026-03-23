@@ -1,0 +1,175 @@
+{
+  "chapter_id": "010",
+  "cefr": "A1",
+  "title_es": "Pedir en una cafetería",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "¿Qué es popular aquí?,",
+    "¿Puede ser menos dulce?,",
+    "¿Con menos hielo?,",
+    "¿Puedo pedirlo para llevar?,",
+    "¿Cuánto tarda?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Hola, ¿cuál es la bebida más popular aquí?",
+          "Oh, ¡suena dulce! ¿Es muy dulce?",
+          "Genial, quiero esa bebida."
+        ],
+        "B": [
+          "Hola. El latte de vainilla es el más popular.",
+          "No, es dulce pero suave.",
+          "Perfecto, preparo un latte de vainilla."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "¿Puede hacerlo menos dulce?",
+          "Ah, ¿puede poner solo la mitad del sirope?",
+          "Entonces, ponga solo un poco de sirope."
+        ],
+        "B": [
+          "Sí, podemos ajustar el dulzor.",
+          "Claro, puedo poner la mitad.",
+          "Muy bien, lo haré más ligero."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "¿Puede poner menos hielo en la bebida fría?",
+          "Oh, genial. No quiero que esté demasiado fría.",
+          "Perfecto, solo un poco de hielo, por favor."
+        ],
+        "B": [
+          "Sí, podemos poner menos hielo.",
+          "Sí, con menos hielo queda más suave.",
+          "Muy bien, pondré solo un poco."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "¿Cuánto tarda la bebida?",
+          "Oh, ¡más rápido de lo que pensaba!",
+          "De acuerdo, esperaré un poquito."
+        ],
+        "B": [
+          "Como lo estamos preparando ahora, unos tres minutos.",
+          "Sí, estará listo muy pronto.",
+          "Le avisaré cuando esté."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "¿Tienen un menú especial o de la casa?",
+          "Oh, me gustan los sabores intensos. ¿Es fuerte?",
+          "Perfecto, voy a pedir uno."
+        ],
+        "B": [
+          "Sí, nuestra especialidad es el latte con leche condensada.",
+          "Es intenso pero muy suave.",
+          "Muy bien, preparo uno para usted."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "¿A qué sabe el café del día?",
+          "Ah, ¿no es muy ácido?",
+          "Genial, quiero el café del día."
+        ],
+        "B": [
+          "Hoy usamos granos brasileños suaves.",
+          "Sí, es bastante ligero.",
+          "Perfecto, lo preparo enseguida."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "¿Puedo pedir esto para llevar?",
+          "Oh, ¿no tarda mucho en empaquetarse?",
+          "Vale, por favor póngalo para llevar."
+        ],
+        "B": [
+          "Sí, se puede pedir para llevar.",
+          "No, solo tarda uno o dos minutos.",
+          "Muy bien, lo preparo ahora mismo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "¿Puedo pedir un sándwich también?",
+          "Oh, ¿puede calentarlo?",
+          "Perfecto, caliéntelo, por favor."
+        ],
+        "B": [
+          "Sí, tenemos varios sándwiches.",
+          "Claro, puedo calentarlo.",
+          "Muy bien, lo caliento enseguida."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "¿Cómo se paga aquí?",
+          "Oh, qué bien. También aceptan pago móvil.",
+          "Vale, pagaré con tarjeta."
+        ],
+        "B": [
+          "Aceptamos tarjeta y efectivo.",
+          "Sí, el pago móvil funciona también.",
+          "Perfecto, deme su tarjeta."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "¿Puedo tenerlo en un vaso para llevar?",
+          "Ah, ¿también se puede con bebidas calientes?",
+          "Genial, entonces quiero un vaso para llevar."
+        ],
+        "B": [
+          "Sí, puedo ponerlo en un vaso para llevar.",
+          "Sí, incluso las bebidas calientes pueden ser para llevar.",
+          "Muy bien, lo preparo ahora mismo."
+        ]
+      }
+    }
+  ]
+}

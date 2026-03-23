@@ -1,0 +1,175 @@
+{
+  "chapter_id": "009",
+  "cefr": "A1",
+  "title_pt": "Pedir comida",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Tem alguma recomendação?,",
+    "É bom?,",
+    "Tem algo menos picante?,",
+    "Posso levar isto para fora?,",
+    "Vai ficar pronto em breve?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Olá, tem algum prato recomendado?",
+          "Ah, parece delicioso! É muito picante?",
+          "Ótimo, vou querer esse."
+        ],
+        "B": [
+          "Sim, esta massa é a mais popular hoje!",
+          "Não, não é muito picante.",
+          "Muito bem, já preparo um para si."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Qual é o sabor desta sopa?",
+          "Ah, um sabor leve parece ótimo. A porção é grande?",
+          "Então quero uma sopa, por favor."
+        ],
+        "B": [
+          "É suave e bem quente.",
+          "Sim, um prato enche bastante.",
+          "Muito bem, já trato disso."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Há algo menos picante?",
+          "Ah, esse prato quase não pica?",
+          "Perfeito, quero um."
+        ],
+        "B": [
+          "Sim, este quase não é picante.",
+          "Até as crianças comem sem problema.",
+          "Certo, preparo já."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Posso levar isto para fora?",
+          "Ah, ótimo! Demora muito a embalar?",
+          "Então, por favor, faça para levar."
+        ],
+        "B": [
+          "Sim, pode levar.",
+          "Não, é rápido.",
+          "Preparo já o seu pedido."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Quais bebidas são populares aqui?",
+          "Ah, adoro bebidas frescas! Pode pôr menos gelo?",
+          "Ótimo, quero essa."
+        ],
+        "B": [
+          "O chá de limão é muito pedido ultimamente.",
+          "Claro, ponho menos gelo.",
+          "Muito bem, preparo já."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "A comida vai ficar pronta em breve?",
+          "Ah, ainda bem! Fico contente que não demore.",
+          "Tudo bem, espero um bocadinho."
+        ],
+        "B": [
+          "Sim, está quase pronto.",
+          "Sai dentro de cinco minutos.",
+          "Já lhe trago assim que estiver pronto."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Que acompanhamentos têm?",
+          "Ah, parece leve! A porção é grande?",
+          "Então quero as batatas fritas."
+        ],
+        "B": [
+          "Temos salada e batatas fritas.",
+          "É uma porção boa para uma pessoa.",
+          "Perfeito, preparo já."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "A porção é grande?",
+          "Ah, dá para duas pessoas?",
+          "Perfeito, vou partilhar com um amigo."
+        ],
+        "B": [
+          "Sim, é bastante generosa.",
+          "Sim, dá para duas pessoas.",
+          "Bom apetite!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Como é que se paga aqui?",
+          "Ah, ótimo! Há várias opções.",
+          "Então pago com cartão."
+        ],
+        "B": [
+          "Aceitamos cartão e dinheiro.",
+          "Sim, também temos pagamento móvel.",
+          "Certo, pode dar-me o cartão."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Fazem refill?",
+          "Ah, refill grátis? Que bom!",
+          "Então quero um refill com água quente."
+        ],
+        "B": [
+          "Sim, algumas bebidas têm refill grátis.",
+          "Sim, peça sempre que precisar.",
+          "Trago a água quente já a seguir."
+        ]
+      }
+    }
+  ]
+}

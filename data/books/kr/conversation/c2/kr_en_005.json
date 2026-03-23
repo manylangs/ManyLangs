@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "005",
+  "cefr": "C2",
+  "title_en": "Project Planning",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "We should clarify the initial direction,",
+    "I'm unsure where to set the project scope,",
+    "Let me reorder the priorities,",
+    "I’m a bit concerned about potential risks,",
+    "Do you have any other thoughts,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "I'm still unsure how to define the starting point of this project. What do you think?",
+          "The overall direction feels a bit vague, which is worrying me.",
+          "You're right — I should set the foundation more firmly before moving forward."
+        ],
+        "B": [
+          "I felt the same! Once the starting point is clear, the whole structure becomes steadier.",
+          "Exactly — if the direction is fuzzy early on, the middle phases tend to wobble.",
+          "Good call. That approach will make the entire workflow much more coherent."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "I'm struggling to decide how wide the project scope should be.",
+          "If we make it too broad, the schedule could get overwhelming.",
+          "Alright, I’ll group only the core features and begin from there."
+        ],
+        "B": [
+          "Scope-setting is always tricky — if it’s off, resources drain fast!",
+          "Right, and the schedule tightens until there’s no buffer left.",
+          "Focusing on the essentials first will definitely stabilize the workflow."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "I think we need to adjust the project priorities. What do you think?",
+          "At this pace, the critical phases might get pushed back.",
+          "Let me reorganize the priority list from the top."
+        ],
+        "B": [
+          "Great idea — updating priorities alone makes everything clearer.",
+          "Exactly, delaying critical phases can disrupt the entire timeline.",
+          "Once you reorganize them, the next steps will become much easier."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "I think we should do a risk assessment earlier than planned.",
+          "I can’t quite pinpoint where the biggest issues might arise.",
+          "I'll start by reviewing the parts with the highest dependency."
+        ],
+        "B": [
+          "Yes, the earlier we identify risks, the easier they are to manage.",
+          "Dependency-heavy areas always bring the most uncertainty.",
+          "Once you check those, the overall risk map will become much clearer."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "The timeline is more complicated than I expected.",
+          "I'm unsure where to place the mid-project review.",
+          "I’ll reset the review points based on the key milestones."
+        ],
+        "B": [
+          "Absolutely — a clear timeline already solves half the project!",
+          "Once the review point is fixed, adjustments become much easier.",
+          "Using milestones as anchors will make the whole plan predictable."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "While organizing the meeting notes, I noticed some interpretation gaps.",
+          "It seems people understood certain terms differently.",
+          "I’ll standardize the terminology first so we avoid confusion."
+        ],
+        "B": [
+          "Exactly — consistent terminology prevents so many misunderstandings.",
+          "Especially during planning, even small wording differences can cause major issues.",
+          "Once terminology is aligned, documentation will flow much more smoothly."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "I’d like to clarify the role division among team members.",
+          "When responsibilities overlap, things get messy quickly.",
+          "So I’ll update the role definition table to make everything clearer."
+        ],
+        "B": [
+          "Absolutely — overlapping duties always lead to duplicated work.",
+          "Clear responsibility boundaries speed up every stage.",
+          "Once you update it, collaboration will feel much more organized."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "I heard the external partner’s schedule might be unstable.",
+          "I’m worried this could delay our entire timeline.",
+          "I’ll prepare a contingency plan before things escalate."
+        ],
+        "B": [
+          "I heard that too — external schedules tend to have many variables.",
+          "Exactly, even one delay there can derail the whole plan.",
+          "A contingency plan will save us from unexpected setbacks."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Budget allocation is always the hardest part. It feels tight again.",
+          "It's tricky deciding what we should cut back.",
+          "I'll start by reviewing the fixed costs before adjusting anything else."
+        ],
+        "B": [
+          "Budget issues never get easier… trimming it is always stressful!",
+          "Right — cutting too much can affect essential components.",
+          "Reviewing fixed costs first will give you a clearer overall picture."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "I think the overall structure is nearly complete now.",
+          "I just want to review the flow once more.",
+          "I’ll wrap up the draft today using the feedback you shared."
+        ],
+        "B": [
+          "It’s coming together really well — the whole plan feels solid.",
+          "A final flow check should bring everything to perfection.",
+          "Great, once you finalize it, the entire proposal will be much stronger!"
+        ]
+      }
+    }
+  ]
+}
+

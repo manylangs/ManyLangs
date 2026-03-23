@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "006",
+  "cefr": "B1",
+  "title_es": "Preparación de la presentación",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "¿Cómo va la preparación de tu presentación?,",
+    "¿Terminaste de organizar el material?,",
+    "¿Revisamos la distribución del tiempo?,",
+    "¿Añadimos otro ejemplo?,",
+    "¡Practiquemos la presentación juntos!,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "¿Va bien la preparación de tu presentación?",
+          "Qué bien, me alegra oírlo. ¿Ya terminaste de organizar el contenido?",
+          "Perfecto, si necesitas ayuda puedo echarte una mano."
+        ],
+        "B": [
+          "Sí, va mejor de lo que pensaba.",
+          "Casi termino, pero estoy pensando en añadir otro ejemplo.",
+          "Gracias, ¿puedes revisarlo un momento?"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "¿Cuántos minutos tendrás para la presentación?",
+          "Oh, es más tiempo del que imaginaba. La gestión del tiempo puede ser complicada.",
+          "Sí, quizá reducir un poco la parte del medio podría ayudar."
+        ],
+        "B": [
+          "Serán unos diez minutos.",
+          "Sí, cuando empiezo a hablar se me alarga.",
+          "Buena idea, intentaré acortarlo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "¿Cuántas diapositivas preparaste?",
+          "Ah, suena ordenado. ¿El flujo se siente natural?",
+          "Genial, con ese orden ya se entiende perfectamente."
+        ],
+        "B": [
+          "Unas doce diapositivas.",
+          "Sí, fluye bien desde la introducción hasta la conclusión.",
+          "Perfecto, solo ajustaré algunos detalles."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "¿Ya tienes preparada la frase de inicio?",
+          "Ah, suena natural y agradable de escuchar.",
+          "Genial, mantén ese tono durante toda la presentación."
+        ],
+        "B": [
+          "Sí, quiero empezar con: “Hola, hoy voy a presentar…”.",
+          "¿Crees que suena suficientemente natural?",
+          "Gracias por el consejo, lo practicaré un poco más."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "¿Hay alguna parte que te preocupe?",
+          "Ah, esa parte. ¿Qué tal si añades otro ejemplo?",
+          "Buena idea, ayudará a que sea más fácil de entender."
+        ],
+        "B": [
+          "Me preocupa la explicación del concepto en el medio.",
+          "Oh, esa sugerencia está muy bien.",
+          "Voy a añadir un ejemplo ahora mismo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "¿Has practicado ya la presentación?",
+          "Ah, entonces ya tienes más o menos el ritmo.",
+          "Perfecto, ¿quieres practicar una vez más ahora?"
+        ],
+        "B": [
+          "La he practicado dos veces yo solo.",
+          "Sí, no me trabé demasiado.",
+          "Bien, voy a intentarlo ahora."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "¿También preparaste la frase de cierre?",
+          "Ah, es clara y directa. Quedará muy bien.",
+          "Perfecto, combina con el tono general."
+        ],
+        "B": [
+          "Sí, pensaba decir: “Con esto concluye mi presentación”.",
+          "¿Debería añadir un agradecimiento también?",
+          "Buena idea, lo añadiré."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "¿Preparaste respuestas para algunas posibles preguntas?",
+          "Ah, anticipaste bien las preguntas.",
+          "Perfecto, con eso ya estás bastante preparado."
+        ],
+        "B": [
+          "Sí, anoté algunas preguntas probables.",
+          "Y preparé respuestas cortas.",
+          "Gracias, eso me da tranquilidad."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "¿Crees que podrás terminar todo hoy?",
+          "Genial, entonces ya casi está.",
+          "Perfecto, solo falta una última revisión."
+        ],
+        "B": [
+          "Sí, con este ritmo creo que sí.",
+          "Ya tengo casi todas las diapositivas listas.",
+          "Solo necesito revisar la lista final."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "¿Hacemos un último ensayo?",
+          "Oh, te ves seguro.",
+          "Genial, con esa energía saldrá perfecto."
+        ],
+        "B": [
+          "Claro, lo intento ahora mismo.",
+          "Hoy siento que podría hacerlo muy bien.",
+          "Gracias por el ánimo, me ayuda mucho."
+        ]
+      }
+    }
+  ]
+}
+

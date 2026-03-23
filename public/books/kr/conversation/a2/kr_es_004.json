@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "004",
+  "cefr": "A2",
+  "title_es": "Concertar citas",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "¿Tienes tiempo?,",
+    "¿Hacemos una cita?,",
+    "¿Qué tal esta semana?,",
+    "¡Esa hora me viene bien!,",
+    "Recuérdame la fecha, por favor.,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "¿Estás libre mañana?",
+          "Entonces, ¿qué tal a las 2?",
+          "¡Perfecto! ¡Nos vemos a las 2!"
+        ],
+        "B": [
+          "Sí, mañana tengo algo de tiempo.",
+          "Oh, las 2 me parecen perfectas.",
+          "De acuerdo, ¡queda hecho!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "¿Tienes un rato esta semana?",
+          "¡Ah, genial! Esa hora me viene bien.",
+          "Entonces, ¡nos vemos en la cafetería!"
+        ],
+        "B": [
+          "Estoy libre el viernes por la tarde.",
+          "Perfecto, ¡viernes está bien!",
+          "Vale, ¡nos vemos en la cafetería!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "¿Podemos ajustar nuestra cita para la próxima semana?",
+          "¡Ah, perfecto! El miércoles me va bien.",
+          "Entonces, ¡quedemos por la tarde!"
+        ],
+        "B": [
+          "Sí, el miércoles próximo estoy libre.",
+          "A mí también me va bien la tarde.",
+          "Genial, ¡lo apunto en mi agenda!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "¿Podemos vernos hoy?",
+          "¡Genial! ¿Dónde nos encontramos?",
+          "Perfecto, ¡voy para allá ahora mismo!"
+        ],
+        "B": [
+          "Sí, estoy disponible ahora.",
+          "¿Qué tal el parque de aquí cerca?",
+          "Vale, ¡nos vemos allí!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "¿Podemos reprogramar la reunión?",
+          "Entonces, ¿te va bien a las 4?",
+          "¡Perfecto! La cambio a las 4."
+        ],
+        "B": [
+          "Sí, creo que deberíamos moverla.",
+          "Las 4 me vienen muy bien.",
+          "Gracias, ¡nos vemos entonces!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "¿Puedo reservar una llamada?",
+          "¡Ah, perfecto! Esa hora me viene bien.",
+          "Vale, ¡te llamaré a esa hora!"
+        ],
+        "B": [
+          "Claro, ¿te va bien a las 7 esta tarde?",
+          "Genial, ¡hagamos a las 7!",
+          "De acuerdo, ¡estaré esperando!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "¿Te viene bien mañana por la mañana?",
+          "Ah, entiendo. ¿Y por la tarde?",
+          "¡Perfecto! ¡Nos vemos a la 1!"
+        ],
+        "B": [
+          "Tengo una reunión por la mañana.",
+          "Por la tarde estoy libre.",
+          "¡Genial! ¡A la 1 entonces!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "¿Cuándo nos vemos otra vez?",
+          "Entonces, ¿qué tal a principios de la próxima semana?",
+          "Perfecto, ¡reservaré ese tiempo!"
+        ],
+        "B": [
+          "La próxima semana tendré más tiempo.",
+          "Me va bien lunes o martes.",
+          "Muy bien, ¡te aviso cuando esté confirmado!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "¿Puedes hablar dentro de cinco minutos?",
+          "¡Ah, genial!",
+          "Entonces te llamo en cinco minutos."
+        ],
+        "B": [
+          "Sí, solo necesito terminar algo.",
+          "Vale, ¡me preparo!",
+          "Perfecto, ¡espero tu llamada!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "¿Cómo estuvo tu día hoy?",
+          "Oh, suele pasar. ¡Aun así lo hiciste bien!",
+          "¡Ojalá mañana sea más tranquilo!"
+        ],
+        "B": [
+          "Fue un poco agitado.",
+          "Sí, pero ya estoy mejor.",
+          "¡Gracias! Mañana daré lo mejor."
+        ]
+      }
+    }
+  ]
+}
+

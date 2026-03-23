@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a2",
+    "id": "004"
+  },
+  "title": {
+    "target": "A2 — 확장 일상 어휘",
+    "en": "A2 — Expanded Everyday Vocabulary",
+    "es": "A2 — Vocabulario cotidiano ampliado",
+    "fr": "A2 — Vocabulaire quotidien élargi",
+    "pt": "A2 — Vocabulário do dia a dia ampliado"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "걱정",
+        "en": "worry",
+        "es": "preocupación",
+        "fr": "inquiétude",
+        "pt": "preocupação"
+      },
+      "examples": [
+        {
+          "target": "괜히 걱정했어요.",
+          "en": "I worried for no reason.",
+          "es": "Me preocupé sin motivo.",
+          "fr": "Je me suis inquiété pour rien.",
+          "pt": "Preocupei-me à toa."
+        },
+        {
+          "target": "걱정할 필요 없어요.",
+          "en": "There is no need to worry.",
+          "es": "No hay necesidad de preocuparse.",
+          "fr": "Il n’y a pas besoin de s’inquiéter.",
+          "pt": "Não há necessidade de se preocupar."
+        },
+        {
+          "target": "계속 걱정이 되네요.",
+          "en": "I keep worrying.",
+          "es": "Sigo preocupándome.",
+          "fr": "Je n’arrête pas de m’inquiéter.",
+          "pt": "Continuo preocupado."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "스트레스",
+        "en": "stress",
+        "es": "estrés",
+        "fr": "stress",
+        "pt": "estresse"
+      },
+      "examples": [
+        {
+          "target": "스트레스를 너무 많이 받아요.",
+          "en": "I'm under too much stress.",
+          "es": "Estoy bajo mucho estrés.",
+          "fr": "Je suis sous trop de stress.",
+          "pt": "Estou sob muito estresse."
+        },
+        {
+          "target": "스트레스 해소가 필요해요.",
+          "en": "I need to relieve my stress.",
+          "es": "Necesito aliviar mi estrés.",
+          "fr": "J’ai besoin de soulager mon stress.",
+          "pt": "Preciso aliviar meu estresse."
+        },
+        {
+          "target": "스트레스가 쌓였어요.",
+          "en": "I’ve accumulated a lot of stress.",
+          "es": "He acumulado mucho estrés.",
+          "fr": "J’ai accumulé beaucoup de stress.",
+          "pt": "Acumulei muito estresse."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "만족",
+        "en": "satisfaction",
+        "es": "satisfacción",
+        "fr": "satisfaction",
+        "pt": "satisfação"
+      },
+      "examples": [
+        {
+          "target": "결과에 만족했어요.",
+          "en": "I was satisfied with the result.",
+          "es": "Estuve satisfecho con el resultado.",
+          "fr": "J’ai été satisfait du résultat.",
+          "pt": "Fiquei satisfeito com o resultado."
+        },
+        {
+          "target": "만족도가 높아요.",
+          "en": "The satisfaction level is high.",
+          "es": "El nivel de satisfacción es alto.",
+          "fr": "Le niveau de satisfaction est élevé.",
+          "pt": "O nível de satisfação é alto."
+        },
+        {
+          "target": "완전히 만족한 건 아니에요.",
+          "en": "I'm not completely satisfied.",
+          "es": "No estoy completamente satisfecho.",
+          "fr": "Je ne suis pas entièrement satisfait.",
+          "pt": "Não estou completamente satisfeito."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "느낌",
+        "en": "feeling",
+        "es": "sensación",
+        "fr": "sentiment",
+        "pt": "sensação"
+      },
+      "examples": [
+        {
+          "target": "이런 느낌은 처음이에요.",
+          "en": "This feeling is new to me.",
+          "es": "Esta sensación es nueva para mí.",
+          "fr": "Ce sentiment est nouveau pour moi.",
+          "pt": "Essa sensação é nova para mim."
+        },
+        {
+          "target": "느낌이 이상해요.",
+          "en": "I have a strange feeling.",
+          "es": "Tengo una sensación extraña.",
+          "fr": "J’ai un drôle de sentiment.",
+          "pt": "Tenho uma sensação estranha."
+        },
+        {
+          "target": "좋은 느낌이 들어요.",
+          "en": "I have a good feeling.",
+          "es": "Tengo una buena sensación.",
+          "fr": "J’ai un bon sentiment.",
+          "pt": "Tenho uma boa sensação."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "기억",
+        "en": "memory",
+        "es": "memoria",
+        "fr": "mémoire",
+        "pt": "memória"
+      },
+      "examples": [
+        {
+          "target": "좋은 기억으로 남았어요.",
+          "en": "It remained a good memory.",
+          "es": "Quedó como un buen recuerdo.",
+          "fr": "Cela est resté un bon souvenir.",
+          "pt": "Ficou como uma boa memória."
+        },
+        {
+          "target": "기억이 잘 안 나요.",
+          "en": "I can't remember well.",
+          "es": "No recuerdo bien.",
+          "fr": "Je ne me souviens pas bien.",
+          "pt": "Não me lembro bem."
+        },
+        {
+          "target": "어릴 때 기억이에요.",
+          "en": "It's a childhood memory.",
+          "es": "Es un recuerdo de la infancia.",
+          "fr": "C’est un souvenir d’enfance.",
+          "pt": "É uma memória de infância."
+        }
+      ]
+    }
+  ]
+}

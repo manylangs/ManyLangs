@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "a1",
+    "id": "003"
+  },
+  "title": {
+    "target": "은/는",
+    "en": "",
+    "es": "",
+    "fr": "Particule thématique 은/는",
+    "pt": ""
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'은/는'은 문장에서 주제를 나타내는 조사이다.",
+        "en": "",
+        "es": "",
+        "fr": "« 은/는 » est une particule qui indique le thème de la phrase.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "받침이 있으면 '은', 받침이 없으면 '는'을 쓴다.",
+        "en": "",
+        "es": "",
+        "fr": "On utilise « 은 » après une consonne finale et « 는 » après une voyelle.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'은/는'은 새로운 정보를 소개할 때 자주 쓰인다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle sert souvent à introduire une nouvelle information.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문장의 흐름을 잡아 주는 역할을 한다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle aide à guider le déroulement de la phrase.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "상대에게 알려진 정보를 말할 때도 사용된다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle peut aussi être utilisée pour mentionner une information déjà connue.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "비교하거나 대조할 때 자연스럽게 쓰인다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle apparaît naturellement pour comparer ou contraster des éléments.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "사람·사물·장소 등 어떤 말에도 붙을 수 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle peut se lier à des personnes, objets, lieux ou tout autre mot.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문장에서 핵심이 무엇인지 알려 주는 기능이 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle indique l’élément principal de la phrase.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'은/는'을 사용하면 말의 초점을 부드럽게 조절할 수 있다.",
+        "en": "",
+        "es": "",
+        "fr": "Utiliser « 은/는 » permet d’ajuster délicatement le focus de la phrase.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "한국어 기초 문장에서 가장 많이 쓰이는 조사 중 하나이다.",
+        "en": "",
+        "es": "",
+        "fr": "C’est l’une des particules les plus utilisées en coréen élémentaire.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "나는 학생이다.",
+        "en": "",
+        "es": "",
+        "fr": "Je suis étudiant.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그는 친구이다.",
+        "en": "",
+        "es": "",
+        "fr": "Il est un ami.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "여기는 집이다.",
+        "en": "",
+        "es": "",
+        "fr": "Ici, c’est ma maison.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "저기는 학교이다.",
+        "en": "",
+        "es": "",
+        "fr": "Là-bas, c’est l’école.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "이것은 책이다.",
+        "en": "",
+        "es": "",
+        "fr": "Ceci est un livre.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "저것은 가방이다.",
+        "en": "",
+        "es": "",
+        "fr": "Cela est un sac.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "나는 커피를 좋아한다.",
+        "en": "",
+        "es": "",
+        "fr": "J’aime le café.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그녀는 음악을 듣는다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle écoute de la musique.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "도시는 조용하다.",
+        "en": "",
+        "es": "",
+        "fr": "La ville est calme.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "오늘은 날씨가 좋다.",
+        "en": "",
+        "es": "",
+        "fr": "Aujourd’hui, le temps est agréable.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "저 사람은 선생님이다.",
+        "en": "",
+        "es": "",
+        "fr": "Cette personne est professeur.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "우리 집은 크다.",
+        "en": "",
+        "es": "",
+        "fr": "Notre maison est grande.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "나는 아침에 산책을 한다.",
+        "en": "",
+        "es": "",
+        "fr": "Je fais une promenade le matin.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그는 운동을 자주 한다.",
+        "en": "",
+        "es": "",
+        "fr": "Il fait souvent du sport.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "이 길은 정말 좁다.",
+        "en": "",
+        "es": "",
+        "fr": "Cette route est très étroite.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "저 가게는 음료가 맛있다.",
+        "en": "",
+        "es": "",
+        "fr": "Cette boutique a de bonnes boissons.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "우리 마을은 조용하다.",
+        "en": "",
+        "es": "",
+        "fr": "Notre village est calme.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그녀는 책 읽기를 좋아한다.",
+        "en": "",
+        "es": "",
+        "fr": "Elle aime lire des livres.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "오늘은 계획이 많다.",
+        "en": "",
+        "es": "",
+        "fr": "J’ai beaucoup de projets aujourd’hui.",
+        "pt": ""
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그 고양이는 아주 귀엽다.",
+        "en": "",
+        "es": "",
+        "fr": "Ce chat est très mignon.",
+        "pt": ""
+      }
+    }
+  ]
+}

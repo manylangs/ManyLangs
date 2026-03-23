@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "010",
+  "cefr": "B1",
+  "title_pt": "Eventos escolares",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Estás preparado para o evento da escola?,",
+    "O que achas do evento deste ano?,",
+    "O ambiente está bom?,",
+    "Vais participar?,",
+    "Vamos juntos da próxima vez!,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "A preparação para o evento da escola está a correr bem?",
+          "Mesmo? Parece que está tudo a avançar melhor do que eu imaginava. Como está o ambiente?",
+          "Ótimo, passo lá no dia do evento."
+        ],
+        "B": [
+          "Sim, desta vez tudo está a correr muito bem.",
+          "O ambiente está animado e bastante positivo.",
+          "Perfeito, vais gostar se vieres."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Tens algum papel no evento?",
+          "Ah, fazer uma pequena introdução deve dar algum nervosismo!",
+          "Mas acho que te vais sair muito bem. Tens praticado bastante?"
+        ],
+        "B": [
+          "Sim, vou fazer uma breve apresentação no início.",
+          "Sim, deixa-me um pouco nervoso.",
+          "Treinei bastante, por isso agora já me sinto mais seguro."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Achas que vai aparecer muita gente?",
+          "A sério? Então o ambiente vai estar muito animado!",
+          "Ótimo, eventos com muita gente também têm a sua graça."
+        ],
+        "B": [
+          "Sim, provavelmente mais do que no ano passado.",
+          "Divulgámos bastante, então há muito interesse.",
+          "Também estou entusiasmado!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Houve algo difícil durante os preparativos?",
+          "Pois, quando os horários se sobrepõem fica complicado.",
+          "Mas estás a ir muito bem! Diz-me se precisares de ajuda."
+        ],
+        "B": [
+          "Sim, especialmente quando várias tarefas coincidem.",
+          "Mas trabalhar em equipa torna as coisas mais fáceis.",
+          "Obrigado, aviso-te se precisar!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Qual parte do programa te deixa mais entusiasmado?",
+          "Ah, a equipa de atuação? Deve ser muito divertido!",
+          "Conta-me depois como correu."
+        ],
+        "B": [
+          "Estou mais entusiasmado com a atuação dos estudantes.",
+          "Vi um pouco do ensaio e estava ótimo.",
+          "Sim, conto-te tudo quando terminar."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Vais ao evento com alguém?",
+          "Ir sozinho também é tranquilo! Há sempre muita gente.",
+          "Mas se quiseres, posso ir contigo."
+        ],
+        "B": [
+          "Ainda não combinei com ninguém.",
+          "Sim, acho que será divertido mesmo indo sozinho.",
+          "Obrigado! Gostava de ir contigo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Vais ajudar nalguma banca do evento?",
+          "Ah, uma banca de atividades práticas costuma atrair muita gente!",
+          "Perfeito, passo lá para ver."
+        ],
+        "B": [
+          "Sim, pediram-me para ajudar numa banca interativa.",
+          "Ouvi dizer que é uma das mais populares.",
+          "Fico contente se passares por lá!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Fizeste novos amigos enquanto preparavam o evento?",
+          "Pois é, trabalhar juntos aproxima muito as pessoas.",
+          "Boa! Apresenta-mo algum dia."
+        ],
+        "B": [
+          "Sim, fiz amizade com alguém durante os preparativos.",
+          "Trabalhámos bastante juntos, então a comunicação fluiu muito bem.",
+          "Claro, apresento-te quando houver oportunidade."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Vai haver jantar ou encontro depois do evento?",
+          "Que bom! Deve ser ótimo relaxar com toda a gente.",
+          "Conta-me depois como foi."
+        ],
+        "B": [
+          "Sim, vamos jantar juntos depois do evento.",
+          "Toda a gente quer descontrair um pouco quando acabar.",
+          "Claro, conto-te tudo mais tarde."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Queres dar uma volta comigo pelo evento nesse dia?",
+          "Boa! Quando há muita gente, é melhor andar acompanhado.",
+          "Envio-te uma mensagem nesse dia se estiver tudo bem."
+        ],
+        "B": [
+          "Sim, acho que será mais divertido juntos.",
+          "Sim, assim é menos cansativo com tanta gente.",
+          "Perfeito, aviso-te de manhã!"
+        ]
+      }
+    }
+  ]
+}
+

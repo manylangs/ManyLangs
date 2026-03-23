@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "004",
+  "cefr": "B1",
+  "title_es": "Tareas y entrega",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "¿Entregaste la tarea?,",
+    "¿Cuál es la fecha límite?,",
+    "¿El archivo se subió bien?,",
+    "¿Necesitamos un formato específico?,",
+    "¿Puedo volver a enviarla?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "¿Entregaste la tarea?",
+          "Yo ya subí la mía, pero no estoy segura de si se cargó correctamente.",
+          "También me preocupa si nombré bien el archivo."
+        ],
+        "B": [
+          "Sí, la entregué hace un rato.",
+          "Si el archivo se cargó sin errores, normalmente no hay problema.",
+          "Pero si tienes dudas, es mejor abrirlo otra vez para comprobarlo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "La fecha límite es hoy a las 23:59, ¿verdad?",
+          "Creo que el profesor dijo algo diferente en clase.",
+          "¿Revisaste el anuncio?"
+        ],
+        "B": [
+          "Sí, el anuncio indica claramente las 23:59.",
+          "Es posible que en clase sonara un poco confuso.",
+          "Pero la información oficial es la del anuncio, así que sigue esa hora."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Tenemos que entregar el archivo en PDF, ¿cierto?",
+          "Primero lo hice en Word y luego lo convertí.",
+          "Ojalá nada se haya desconfigurado durante la conversión."
+        ],
+        "B": [
+          "Sí, el formato requerido es PDF.",
+          "Normalmente se convierte bien, aunque a veces las tablas o imágenes se mueven.",
+          "Lo mejor es revisar el PDF antes de enviarlo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "¿Cómo formateaste tu bibliografía?",
+          "No estaba segura si necesitábamos APA o MLA.",
+          "¿El profesor especificó algún estilo?"
+        ],
+        "B": [
+          "Sí, pidió que usáramos el estilo APA.",
+          "Recuerdo que estaba mencionado en las diapositivas de la primera semana.",
+          "Si quieres, puedo enviarte el ejemplo que preparé."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "¿También tenemos que subir un borrador?",
+          "La redacción del anuncio era un poco ambigua.",
+          "Por ahora solo subí la versión final."
+        ],
+        "B": [
+          "El borrador es opcional, así que no es obligatorio enviarlo.",
+          "Con la versión final cumples completamente los requisitos.",
+          "Pero si quieres asegurarte, puedes escribirle al profesor."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "¿Sabes si podemos volver a enviar la tarea?",
+          "Noté un error justo después de entregarla.",
+          "¿Debería borrarla y subir una versión corregida?"
+        ],
+        "B": [
+          "Sí, se permite volver a enviarla.",
+          "El sistema solo conserva el archivo más reciente, así que no hay problema.",
+          "Si encontraste un error, es mejor corregirlo y enviarlo de nuevo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "¿También debemos subir las diapositivas de la presentación?",
+          "La descripción decía que solo había que entregar la parte escrita.",
+          "Pero necesitaremos diapositivas para el día de la presentación, ¿no?"
+        ],
+        "B": [
+          "No, las diapositivas no se entregan por adelantado.",
+          "El profesor dijo que solo necesitamos mostrarlas durante la presentación.",
+          "De todos modos, prepararlas antes facilita mucho el trabajo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "¿Viste la rúbrica de evaluación que publicó el profesor?",
+          "Parece más detallada que la anterior.",
+          "¿Crees que afectará mucho a la nota?"
+        ],
+        "B": [
+          "Sí, la revisé hace un momento.",
+          "Los criterios son más específicos, pero la ponderación casi no cambió.",
+          "El profesor recalcó que la claridad del contenido es lo más importante."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "¿Quién estaba encargado de enviar la tarea del grupo?",
+          "Todavía estamos terminando de unir nuestra parte del archivo.",
+          "¿Crees que lo enviarán esta noche?"
+        ],
+        "B": [
+          "Minji era la responsable del envío.",
+          "Escuché que está organizando el archivo final ahora mismo.",
+          "Dijo que lo enviaría antes de esta noche, así que no deberíamos preocuparnos."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Uf… ¡por fin terminé la tarea!",
+          "Cuando presioné ‘enviar’, sentí que todo el estrés desaparecía.",
+          "Creo que ahora sí me merezco un descanso."
+        ],
+        "B": [
+          "Buen trabajo, realmente has hecho un gran esfuerzo.",
+          "Ese alivio después de entregar algo importante se siente muchísimo.",
+          "Descansa bien hoy y retoma las cosas con calma mañana."
+        ]
+      }
+    }
+  ]
+}
+

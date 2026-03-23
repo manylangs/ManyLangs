@@ -1,0 +1,175 @@
+{
+  "chapter_id": "004",
+  "cefr": "A1",
+  "title_es": "Trabajos_y_tareas",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "¿A qué te dedicas?",
+    "¿Dónde trabajas?",
+    "Parece que estás ocupado(a).",
+    "¿No te cansa?",
+    "¿Qué haces después del trabajo?"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "¿A qué te dedicas?",
+          "¡Ah, suena bien!",
+          "Me gustaría escuchar más sobre tu trabajo algún día."
+        ],
+        "B": [
+          "Trabajo en una oficina.",
+          "Hay más cosas interesantes de lo que pensaba.",
+          "¡Claro, cuando quieras!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "¿Y dónde trabajas?",
+          "Ah, tu trayecto debe ser largo.",
+          "Supongo que uno se acostumbra con el tiempo."
+        ],
+        "B": [
+          "Trabajo en una empresa en el centro.",
+          "Por eso las mañanas son un poco pesadas.",
+          "Sí, ya estoy acostumbrado(a)."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "¿Has estado muy ocupado(a) estos días?",
+          "Uf, eso debió ser duro.",
+          "Ojalá puedas descansar este fin de semana."
+        ],
+        "B": [
+          "Sí, estoy ocupado(a) por un proyecto.",
+          "Pero ya casi termino, así que está bien.",
+          "Sí, quiero descansar."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "¿Qué es lo más difícil de tu trabajo?",
+          "Ah, te entiendo totalmente.",
+          "Aun así, ¡lo haces muy bien!"
+        ],
+        "B": [
+          "Es difícil cuando llega demasiado trabajo de golpe.",
+          "Pero mi equipo me ayuda, así que lo manejo.",
+          "¡Gracias por el ánimo!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "¿Qué sueles hacer después del trabajo?",
+          "Ah, suena relajante.",
+          "Yo también necesito tiempo así."
+        ],
+        "B": [
+          "Normalmente descanso en casa.",
+          "A veces salgo a caminar.",
+          "Sí, descansar es lo mejor."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "¿Sales a menudo con tus compañeros de trabajo?",
+          "Ah, parece un buen equipo.",
+          "Debe ser agradable trabajar con gente así."
+        ],
+        "B": [
+          "Sí, a veces comemos juntos.",
+          "Todos son muy agradables.",
+          "Sí, me gusta mucho ese ambiente."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "¿A qué hora entras a trabajar?",
+          "Ah, eres una persona madrugadora.",
+          "Creo que yo también debería levantarme temprano."
+        ],
+        "B": [
+          "Normalmente entro a las 9.",
+          "Llegar un poco antes me hace sentir tranquilo(a).",
+          "Y el día se siente más largo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "¿Tienen reuniones a menudo?",
+          "Sí, el trabajo en equipo es importante.",
+          "Últimamente quisiera que las reuniones terminaran rápido."
+        ],
+        "B": [
+          "Sí, tenemos varias cada semana.",
+          "Pero mejora la comunicación.",
+          "Es verdad, las reuniones largas cansan."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "¿Cómo alivias el estrés del trabajo?",
+          "Ah, simple pero efectivo.",
+          "Voy a probarlo yo también."
+        ],
+        "B": [
+          "Me gusta escuchar música.",
+          "Aunque sea un ratito, me hace sentir mejor.",
+          "Pruébalo, te lo recomiendo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "¿Te gustaría probar otro trabajo algún día?",
+          "Oh, ¡qué buen sueño!",
+          "Te apoyaré."
+        ],
+        "B": [
+          "Sí, me gustaría emprender algún día.",
+          "Falta mucho, pero me estoy preparando poco a poco.",
+          "Gracias, eso me anima mucho."
+        ]
+      }
+    }
+  ]
+}

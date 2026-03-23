@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "001",
+  "cefr": "B2",
+  "title_pt": "Serviços bancários",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Gostaria de abrir uma nova conta,",
+    "Aqui está o meu documento de identificação,",
+    "Pode explicar-me as comissões?,",
+    "Posso solicitar também o acesso online?,",
+    "Como faço uma transferência internacional?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Olá, gostaria de abrir uma nova conta.",
+          "Certo, que documentos preciso de preparar?",
+          "Ótimo, então vamos avançar já."
+        ],
+        "B": [
+          "Olá! Quer abrir uma conta? Posso ajudar.",
+          "Só precisa do seu documento de identificação.",
+          "Perfeito. Um momento, por favor."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Posso solicitar o acesso online ao mesmo tempo?",
+          "Ah, é mais simples do que eu pensava.",
+          "Então também quero configurar os débitos automáticos."
+        ],
+        "B": [
+          "Sim, pode pedir isso enquanto abre a conta.",
+          "Basta preencher este formulário.",
+          "Muito bem. Também explico as opções de débito automático."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Esta conta permite transferências internacionais?",
+          "Entendi, há um limite inicial.",
+          "Posso pedir um aumento mais tarde?"
+        ],
+        "B": [
+          "Sim, permite transferências internacionais, mas tem um limite base.",
+          "Se precisar, pode concluir uma verificação adicional.",
+          "Claro, pode solicitar isso quando quiser."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Posso receber um cartão de débito hoje?",
+          "Ah, percebi, será enviado para minha morada.",
+          "Perfeito, envie o pedido por favor."
+        ],
+        "B": [
+          "Sim, pode solicitá-lo depois de abrir a conta.",
+          "A entrega costuma demorar cerca de cinco dias.",
+          "Vou tratar disso já."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Quais são as comissões?",
+          "Ah, então são eliminadas se eu mantiver um saldo mínimo.",
+          "Está bem, vou tentar manter esse saldo."
+        ],
+        "B": [
+          "As contas padrão têm algumas comissões de transferência.",
+          "Sim, mas são dispensadas se mantiver o saldo exigido.",
+          "Exatamente. É a opção mais prática."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Posso receber o meu livro de conta agora?",
+          "Uau, que rápido!",
+          "Perfeito, vou aguardar um pouco."
+        ],
+        "B": [
+          "Sim, podemos imprimi-lo aqui mesmo.",
+          "Demora apenas um ou dois minutos.",
+          "Chamo-o assim que estiver pronto."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Posso consultar os meus débitos automáticos?",
+          "Ah, não tinha visto esse menu.",
+          "Certo, vou verificar novamente em casa."
+        ],
+        "B": [
+          "Sim, pode consultá-los na aplicação.",
+          "Encontrará isso na secção ‘Gestão da conta’.",
+          "Se tiver alguma dificuldade, volte a contactar-nos."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Gostaria de imprimir o meu histórico recente.",
+          "Sim, um mês é suficiente.",
+          "Ótimo. Obrigado pela ajuda!"
+        ],
+        "B": [
+          "Muito bem, de quantos meses precisa?",
+          "Então vou imprimir as operações do último mês.",
+          "Um momento, por favor."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Posso mudar para um OTP móvel?",
+          "Uau, parece muito mais prático.",
+          "Perfeito, vou pedir isso agora."
+        ],
+        "B": [
+          "Sim, a maioria dos clientes usa OTP móvel.",
+          "Depois de instalar a aplicação, a verificação é rápida.",
+          "Vou guiá-lo nos passos de configuração."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "A espera vai ser longa?",
+          "Que bom, tenho a agenda apertada hoje.",
+          "Certo, vou aguardar ali."
+        ],
+        "B": [
+          "Neste momento, o atendimento está a ser rápido.",
+          "Acho que poderei atendê-lo em breve.",
+          "Por favor, sente-se e aguarde com calma."
+        ]
+      }
+    }
+  ]
+}
+

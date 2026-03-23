@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "003",
+  "cefr": "A2",
+  "title_fr": "Heures et jours",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "À quelle heure on se retrouve ?,",
+    "Tu as des plans pour aujourd’hui ?,",
+    "Tu es libre ce week-end ?,",
+    "Tu es disponible maintenant ?,",
+    "La semaine prochaine me va bien.,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "À quelle heure on se voit aujourd’hui ?",
+          "Alors, 15 heures, ça te va ?",
+          "Super ! À tout à l’heure !"
+        ],
+        "B": [
+          "Hmm… l’après-midi me convient mieux !",
+          "Ah oui, 15 heures c’est parfait !",
+          "D’accord, on se retrouve à cette heure-là !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Tu as quelque chose de prévu aujourd’hui ?",
+          "Ah d’accord ! Et pour déjeuner, ça marche ?",
+          "Super ! On se voit à midi alors !"
+        ],
+        "B": [
+          "Oui, je suis un peu occupé ce matin.",
+          "Le déjeuner, ça me va !",
+          "D’accord, rendez-vous à midi !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Tu es libre ce week-end ?",
+          "Génial ! Pour moi, samedi après-midi ça marche !",
+          "Alors on se voit samedi !"
+        ],
+        "B": [
+          "Oui, j’ai un peu de temps ce week-end.",
+          "Ça me va très bien !",
+          "Super ! J’ai hâte !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Tu as un moment pour parler maintenant ?",
+          "Ah super ! Tu as combien de minutes ?",
+          "D’accord, je t’appelle tout de suite !"
+        ],
+        "B": [
+          "Oui, j’ai un petit moment.",
+          "Je peux te donner une dizaine de minutes.",
+          "Très bien, j’attends ton appel !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Quand est-ce que tu es libre la semaine prochaine ?",
+          "Oh super ! L’après-midi m’arrange aussi !",
+          "Alors je bloque ce créneau !"
+        ],
+        "B": [
+          "Mardi devrait aller pour moi.",
+          "Parfait, je garde mon après-midi libre !",
+          "D’accord, à mardi !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Tu es libre ce soir ?",
+          "Ah bon ? Et demain, ça va ?",
+          "Super ! Je t’enverrai un message demain soir !"
+        ],
+        "B": [
+          "Je pense finir tard aujourd’hui.",
+          "Demain soir, c’est bon pour moi !",
+          "Très bien ! À demain alors !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Est-ce que demain matin, c’est possible pour toi ?",
+          "Ah d’accord ! Et l’après-midi alors ?",
+          "Parfait ! On se voit l’après-midi !"
+        ],
+        "B": [
+          "J’ai déjà un rendez-vous le matin.",
+          "L’après-midi, je suis libre !",
+          "Génial ! Ça me va aussi !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "La réunion commence à quelle heure aujourd’hui ?",
+          "Ah d’accord ! Je risque d’avoir quelques minutes de retard.",
+          "Très bien ! Je viens dès que possible !"
+        ],
+        "B": [
+          "Elle commence à 15 heures.",
+          "Cinq minutes de retard, ce n’est pas grave !",
+          "D’accord ! À tout de suite."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Tu fais quoi ce soir ?",
+          "Ah super ! Je suis libre à cette heure-là aussi !",
+          "Alors allons marcher ensemble !"
+        ],
+        "B": [
+          "Je pensais faire une petite promenade.",
+          "Parfait ! On se voit à ce moment-là !",
+          "Oui, j’adore marcher le soir !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Ta journée s’est bien passée ?",
+          "Oh, tu as quand même bien géré !",
+          "J’espère que demain sera encore meilleur !"
+        ],
+        "B": [
+          "J’étais un peu fatigué.",
+          "Oui, mais ça va maintenant.",
+          "Merci ! Je ferai de mon mieux demain !"
+        ]
+      }
+    }
+  ]
+}
+

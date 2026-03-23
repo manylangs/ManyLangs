@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "007",
+  "cefr": "C1",
+  "title_pt": "Comunicação por e-mail",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Por favor, verifique o e-mail quando puder,",
+    "Consulte o ficheiro em anexo,",
+    "Tratarei do assunto assim que responder,",
+    "Tem algo mais que gostaria de acrescentar?,",
+    "Aguardo o seu retorno após a revisão,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Acabei de lhe enviar um e-mail. Poderia vê-lo quando tiver um momento?",
+          "Organizei os materiais que tinha solicitado e incluí-os em anexo.",
+          "Se notar que falta algo, por favor avise-me."
+        ],
+        "B": [
+          "Ah, acabei de receber a notificação! Vou abrir já.",
+          "Uau, está tudo muito bem organizado.",
+          "Perfeito. Vou analisar e aviso caso precise de mais alguma coisa."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Ainda não recebi resposta ao e-mail que enviei ontem.",
+          "Pensei que talvez estivesse ocupado e não tivesse tido oportunidade de o rever.",
+          "Responda quando lhe for mais conveniente."
+        ],
+        "B": [
+          "Oh, peço desculpa! Acabei de o ler.",
+          "Havia mais conteúdo do que imaginava, por isso estive a analisá-lo com atenção.",
+          "Vou organizar os meus comentários e responderei em breve."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Enviei-lhe há pouco as atas da reunião.",
+          "Resumi apenas os pontos principais para facilitar a leitura.",
+          "Se preferir uma versão mais detalhada, posso enviá-la também."
+        ],
+        "B": [
+          "Ótimo! O resumo é muito mais simples de rever.",
+          "Assim consegui identificar os pontos essenciais rapidamente.",
+          "Sim, gostaria que me enviasse também a versão detalhada."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Percebi que a hora mencionada no e-mail podia gerar alguma confusão.",
+          "A hora final confirmada é hoje às 15h.",
+          "Lamento se a mensagem anterior provocou algum mal-entendido."
+        ],
+        "B": [
+          "Ah, obrigado pelo esclarecimento!",
+          "Também fiquei um pouco na dúvida ao verificar a hora.",
+          "Perfeito, estarei pronto às 15h."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Poderia verificar se o ficheiro em anexo abre corretamente?",
+          "O tamanho é um pouco grande e temi que pudesse causar problemas.",
+          "Se preferir outro formato, posso convertê-lo sem problema."
+        ],
+        "B": [
+          "Acabei de o abrir — sem qualquer problema!",
+          "Obrigado por se antecipar a essa questão.",
+          "Se mais tarde precisar de outro formato, aviso."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Também incluí o rascunho da ordem de trabalhos.",
+          "Por agora é apenas um esboço simples e pode ser ajustado.",
+          "Se tiver sugestões ou quiser alterar algo, diga-me à vontade."
+        ],
+        "B": [
+          "Ótimo, o rascunho está claro. A estrutura geral percebe-se bem.",
+          "Com alguns pequenos ajustes, ficará pronto a usar.",
+          "Vou preparar as minhas sugestões e enviá-las por e-mail."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "O assunto do e-mail não ficou demasiado longo?",
+          "Escrevi-o um pouco mais extenso para que a intenção ficasse clara.",
+          "Se quiser, posso torná-lo mais simples."
+        ],
+        "B": [
+          "Não, pelo contrário — foi bastante útil!",
+          "Só pelo assunto já percebia do que se tratava.",
+          "A versão atual está ótima; não é preciso alterar."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Estava preocupado por estar a demorar demasiado a responder ultimamente.",
+          "Estava a verificar um ponto importante e isso atrasou um pouco a resposta.",
+          "Mas estou a tentar tratar de tudo o mais rapidamente possível."
+        ],
+        "B": [
+          "Oh, compreendo perfeitamente. Sei que tem estado muito ocupado.",
+          "Não há problema em esperar; o mais importante é que esteja correto.",
+          "Se precisar de algo da minha parte, diga sem hesitar."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Teve oportunidade de rever a versão atualizada do documento que enviei ontem?",
+          "Alterei bastante a estrutura da segunda página.",
+          "Se preferir outra abordagem, posso voltar a ajustá-la."
+        ],
+        "B": [
+          "Sim, estive a analisá-la com atenção há pouco.",
+          "A nova organização da segunda página ficou excelente.",
+          "Acho que a versão atual funciona muito bem."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Pretendo enviar o e-mail final ainda hoje.",
+          "Assim que a revisão interna terminar, envio-o de imediato.",
+          "Avise-me se precisarmos de ajustar o prazo."
+        ],
+        "B": [
+          "Obrigado pela atualização.",
+          "Parece que estamos quase a terminar.",
+          "Se houver alguma alteração no calendário, eu aviso logo."
+        ]
+      }
+    }
+  ]
+}
+

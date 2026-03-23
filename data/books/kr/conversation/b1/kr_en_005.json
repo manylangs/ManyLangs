@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "005",
+  "cefr": "B1",
+  "title_en": "Team Project",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "When should we have our team meeting?,",
+    "Are you okay with the role division?,",
+    "How is the research going?,",
+    "I’ll organize the files,",
+    "We should start preparing the presentation,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "When would be a good time for our team meeting this week?",
+          "I’m free tomorrow afternoon, but I’m not sure if everyone else is.",
+          "If another time works better, please let me know."
+        ],
+        "B": [
+          "Tomorrow afternoon works for me as well.",
+          "I think the other members can probably make that time too.",
+          "Why don’t we post it in the group chat and confirm?"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "How should we divide the roles for this project?",
+          "I’m comfortable organizing things or preparing the slides.",
+          "Is there a part you’d prefer to take?"
+        ],
+        "B": [
+          "That sounds great — having someone strong in organization really helps.",
+          "I’m more comfortable with research and analysis.",
+          "If we choose tasks that suit our strengths, we’ll work much more efficiently."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "How far have we gotten with gathering sources?",
+          "I already collected a few related papers.",
+          "I can share them right away if you need them."
+        ],
+        "B": [
+          "Oh, you’ve found that many already? Thanks a lot!",
+          "I’ve been looking mainly at statistical data.",
+          "If we combine our materials, the project will be much stronger."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Our shared folder feels a bit messy right now.",
+          "Should I reorganize it and set up a clearer structure?",
+          "I can also rename the files so they’re easier to identify."
+        ],
+        "B": [
+          "That would help us so much, thank you.",
+          "It’s been difficult to find things because everything is scattered.",
+          "If you organize it, it’ll make our work much smoother."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "When should we start preparing for the presentation?",
+          "I think starting midweek would be manageable.",
+          "Should I draft a basic slide layout first?"
+        ],
+        "B": [
+          "Yes, that timing sounds good.",
+          "If you make a layout first, it’ll be easier for us to add our parts.",
+          "A simple draft is more than enough to get us going."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Did you already summarize the points from today’s meeting?",
+          "I only wrote down a few things, so mine feels incomplete.",
+          "If you organized anything, could you share it?"
+        ],
+        "B": [
+          "Yes, I summarized everything right after the meeting.",
+          "I kept it short and focused on the key decisions.",
+          "I’ll upload it to the group chat now so everyone can check it."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "I noticed there are quite a lot of evaluation criteria for this project.",
+          "The presentation score looks higher than I expected, so I’m a bit worried.",
+          "Maybe we should practice our presentation a few times."
+        ],
+        "B": [
+          "I thought the same — the presentation has a big weight.",
+          "But if we practice ahead of time, we’ll be fine.",
+          "How about doing two or three rehearsals together?"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "It seems like each team is progressing at a different pace.",
+          "Maybe we should break our timeline into smaller steps too.",
+          "Should we start by setting this week’s goals?"
+        ],
+        "B": [
+          "That’s a great idea. Having clear goals really helps us stay on track.",
+          "Let’s outline the key tasks we need to finish this week.",
+          "I already have a shortlist, so I can share it with you."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Should we also set aside some time to review each other’s parts?",
+          "A bit of feedback from everyone could improve the final quality.",
+          "Would meeting sometime this weekend work?"
+        ],
+        "B": [
+          "Yes, having a review session would be very helpful.",
+          "I’m available both in the morning and afternoon this weekend.",
+          "Just tell me what time works for you, and I’ll adjust."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "We’re finally getting close to finishing this project!",
+          "I’m glad everything went smoothly thanks to the teamwork.",
+          "As long as we wrap things up carefully, the submission should be fine."
+        ],
+        "B": [
+          "I agree — our teamwork really made the process easier.",
+          "Let’s just double-check everything before we submit.",
+          "A quick final review together will make sure it's all solid."
+        ]
+      }
+    }
+  ]
+}
+

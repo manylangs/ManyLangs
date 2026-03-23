@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "009",
+  "cefr": "A2",
+  "title_pt": "Saúde e sintomas",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Onde dói?,",
+    "Foste ao médico?,",
+    "Deves descansar.,",
+    "Tomaste algum medicamento?,",
+    "Não é muito grave.,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Não tens bom aspeto. Estás doente?",
+          "Talvez seja porque tenho andado cansado estes dias.",
+          "Mas acho que devias ir ao médico."
+        ],
+        "B": [
+          "Sim, tenho dor de cabeça desde ontem.",
+          "Pois, quando estamos cansados a dor piora.",
+          "Sim, vou quando tiver um pouco de tempo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Estás a tossir muito. Estás constipado?",
+          "Tomaste algum medicamento?",
+          "Então bebe água quente várias vezes."
+        ],
+        "B": [
+          "Sim, tenho a garganta muito irritada.",
+          "Tomei remédio ontem, mas ainda dói um bocado.",
+          "Sim, beber água morna ajuda um pouco."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Tenho tido dores na lombar ultimamente.",
+          "Até sentado fico desconfortável.",
+          "Acho que pode ser por falta de exercício."
+        ],
+        "B": [
+          "Dores na lombar são mesmo difíceis.",
+          "Se dói até quando te sentas, torna tudo incómodo.",
+          "Que tal começares com alguns alongamentos leves?"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Hoje estou com dor de barriga e não sei porquê.",
+          "Se calhar foi o que comi de manhã.",
+          "Mas acho que não é nada grave."
+        ],
+        "B": [
+          "É muito desconfortável quando o estômago não está bem.",
+          "Comeste algo frio ou muito pesado?",
+          "Sim, come algo leve hoje para melhorares."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Acho que estou com dores no corpo. Tudo dói.",
+          "Não tenho energia nenhuma.",
+          "Acho que hoje só preciso descansar bem."
+        ],
+        "B": [
+          "Puxa, dores no corpo são difíceis.",
+          "Pois, sem energia não dá para fazer nada.",
+          "Dorme bem. Amanhã vais sentir-te melhor."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Tenho estado tonto desde de manhã.",
+          "Acho que é porque não tomei pequeno-almoço.",
+          "Devo comer alguma coisa, mesmo que seja pouco."
+        ],
+        "B": [
+          "A tontura pode ser perigosa.",
+          "Sim, piora quando não comes.",
+          "Come algo leve. Vais sentir-te melhor em breve."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Não tenho dormido bem por causa do stress.",
+          "Quando me deito, fico a pensar em tudo.",
+          "Conheces alguma dica para dormir melhor?"
+        ],
+        "B": [
+          "Sim, muita gente anda a dormir mal.",
+          "Sim, quando a cabeça não para é difícil adormecer.",
+          "Bebe um chá quente antes de dormir, ajuda bastante."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Acho que tenho um pouco de febre.",
+          "Sinto-me quente e sem energia.",
+          "Acho que não consigo ir trabalhar hoje."
+        ],
+        "B": [
+          "Se tens febre, deves descansar bem.",
+          "Sim, quando o corpo está quente é difícil fazer qualquer coisa.",
+          "Descansa hoje e vê como te sentes amanhã."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "O meu pulso tem doído muito ultimamente.",
+          "Acho que é porque tenho usado demasiado o computador.",
+          "Devia alongar mais vezes."
+        ],
+        "B": [
+          "Quando o pulso dói, trabalhar fica difícil.",
+          "Sim, usá-lo demais provoca tensão.",
+          "Alongar com frequência ajuda a reduzir a dor."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Sinto o estômago pesado depois do almoço.",
+          "Acho que foi porque comi algo muito gorduroso.",
+          "Hoje devia comer algo mais fácil de digerir."
+        ],
+        "B": [
+          "Sim, comida gordurosa deixa o estômago desconfortável.",
+          "Pois, ficas pesado o resto da tarde.",
+          "Janta algo leve. Vais sentir-te melhor."
+        ]
+      }
+    }
+  ]
+}
+

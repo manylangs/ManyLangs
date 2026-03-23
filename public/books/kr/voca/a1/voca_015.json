@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a1",
+    "id": "015"
+  },
+  "title": {
+    "target": "A1 — 일상 어휘",
+    "en": "A1 — Everyday Vocabulary",
+    "es": "A1 — Vocabulario cotidiano",
+    "fr": "A1 — Vocabulaire quotidien",
+    "pt": "A1 — Vocabulário do dia a dia"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "창문",
+        "en": "window",
+        "es": "ventana",
+        "fr": "fenêtre",
+        "pt": "janela"
+      },
+      "examples": [
+        {
+          "target": "창문을 열어서 환기해 주세요.",
+          "en": "Please open the window to ventilate.",
+          "es": "Por favor, abre la ventana para ventilar.",
+          "fr": "Veuillez ouvrir la fenêtre pour aérer.",
+          "pt": "Por favor, abra a janela para ventilar."
+        },
+        {
+          "target": "창문 밖에 비가 와요.",
+          "en": "It’s raining outside the window.",
+          "es": "Está lloviendo afuera de la ventana.",
+          "fr": "Il pleut dehors, derrière la fenêtre.",
+          "pt": "Está chovendo lá fora, pela janela."
+        },
+        {
+          "target": "창문이 아주 깨끗해요.",
+          "en": "The window is very clean.",
+          "es": "La ventana está muy limpia.",
+          "fr": "La fenêtre est très propre.",
+          "pt": "A janela está muito limpa."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "벽",
+        "en": "wall",
+        "es": "pared",
+        "fr": "mur",
+        "pt": "parede"
+      },
+      "examples": [
+        {
+          "target": "벽에 그림이 걸려 있어요.",
+          "en": "There is a picture hanging on the wall.",
+          "es": "Hay un cuadro colgado en la pared.",
+          "fr": "Un tableau est accroché au mur.",
+          "pt": "Há um quadro pendurado na parede."
+        },
+        {
+          "target": "벽 색깔을 바꾸고 싶어요.",
+          "en": "I want to change the color of the wall.",
+          "es": "Quiero cambiar el color de la pared.",
+          "fr": "Je veux changer la couleur du mur.",
+          "pt": "Quero mudar a cor da parede."
+        },
+        {
+          "target": "벽이 두꺼워서 소리가 잘 안 들려요.",
+          "en": "The wall is thick, so the sound doesn’t pass through well.",
+          "es": "La pared es gruesa, así que el sonido no pasa bien.",
+          "fr": "Le mur est épais, donc le son passe mal.",
+          "pt": "A parede é grossa, então o som não passa bem."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "바닥",
+        "en": "floor",
+        "es": "suelo",
+        "fr": "sol",
+        "pt": "chão"
+      },
+      "examples": [
+        {
+          "target": "바닥이 미끄러우니까 조심하세요.",
+          "en": "Be careful, the floor is slippery.",
+          "es": "Cuidado, el suelo está resbaladizo.",
+          "fr": "Faites attention, le sol est glissant.",
+          "pt": "Cuidado, o chão está escorregadio."
+        },
+        {
+          "target": "바닥에 먼지가 많아요.",
+          "en": "There is a lot of dust on the floor.",
+          "es": "Hay mucho polvo en el suelo.",
+          "fr": "Il y a beaucoup de poussière sur le sol.",
+          "pt": "Há muita poeira no chão."
+        },
+        {
+          "target": "바닥 청소를 했어요.",
+          "en": "I cleaned the floor.",
+          "es": "Limpié el suelo.",
+          "fr": "J’ai nettoyé le sol.",
+          "pt": "Eu limpei o chão."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "침대",
+        "en": "bed",
+        "es": "cama",
+        "fr": "lit",
+        "pt": "cama"
+      },
+      "examples": [
+        {
+          "target": "침대에 누워서 쉬고 있어요.",
+          "en": "I am lying on the bed and resting.",
+          "es": "Estoy acostado en la cama descansando.",
+          "fr": "Je suis allongé sur le lit et je me repose.",
+          "pt": "Estou deitado na cama descansando."
+        },
+        {
+          "target": "새 침대를 하나 샀어요.",
+          "en": "I bought a new bed.",
+          "es": "Compré una cama nueva.",
+          "fr": "J’ai acheté un nouveau lit.",
+          "pt": "Comprei uma cama nova."
+        },
+        {
+          "target": "침대가 아주 편안해요.",
+          "en": "The bed is very comfortable.",
+          "es": "La cama es muy cómoda.",
+          "fr": "Le lit est très confortable.",
+          "pt": "A cama é muito confortável."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "이불",
+        "en": "blanket",
+        "es": "manta",
+        "fr": "couverture",
+        "pt": "cobertor"
+      },
+      "examples": [
+        {
+          "target": "이불을 덮고 자요.",
+          "en": "I sleep with a blanket.",
+          "es": "Duermo con una manta.",
+          "fr": "Je dors avec une couverture.",
+          "pt": "Eu durmo com um cobertor."
+        },
+        {
+          "target": "이불이 너무 따뜻해요.",
+          "en": "The blanket is very warm.",
+          "es": "La manta es muy cálida.",
+          "fr": "La couverture est très chaude.",
+          "pt": "O cobertor é muito quente."
+        },
+        {
+          "target": "새 이불을 빨래했어요.",
+          "en": "I washed the blanket.",
+          "es": "Lavé la manta.",
+          "fr": "J’ai lavé la couverture.",
+          "pt": "Lavei o cobertor."
+        }
+      ]
+    }
+  ]
+}

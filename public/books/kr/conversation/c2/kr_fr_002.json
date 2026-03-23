@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "002",
+  "cefr": "C2",
+  "title_fr": "Réseautage professionnel",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Auriez-vous une carte de visite,",
+    "Si vous avez un moment, on pourrait discuter rapidement,",
+    "Votre projet m’a vraiment impressionné,",
+    "Je pense qu’il y a un vrai potentiel de collaboration,",
+    "N’hésitez pas à me contacter quand vous le souhaitez,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Bonjour, vous avez un instant pour discuter ?",
+          "J’ai vraiment apprécié votre présentation tout à l’heure.",
+          "J’ai quelques questions à propos de ce que vous avez expliqué."
+        ],
+        "B": [
+          "Ah bien sûr ! Merci beaucoup pour votre intérêt.",
+          "On était un peu inquiets de la réaction, donc ça fait plaisir !",
+          "Allez-y, je suis à votre disposition."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Auriez-vous une carte de visite ? J’aimerais rester en contact.",
+          "Mon équipe travaille justement dans un domaine similaire.",
+          "Si possible, j’aimerais discuter d’une éventuelle collaboration."
+        ],
+        "B": [
+          "Oui, bien sûr ! Voici mes coordonnées.",
+          "Ah, vraiment ? On pourrait avoir une belle synergie.",
+          "Avec plaisir — je suis ouvert à ce type d’échanges."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "J’ai visité votre stand et votre projet était vraiment remarquable.",
+          "L’approche d’intégration m’a particulièrement impressionné.",
+          "Serait-il possible de parler avec un membre de votre équipe technique ?"
+        ],
+        "B": [
+          "Merci beaucoup ! C’est la partie sur laquelle on a le plus travaillé.",
+          "Oui, les retours ont été très positifs.",
+          "Le responsable technique doit être dans les environs — je vais vérifier."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "J’ai entendu une partie de votre intervention et c’était très clair.",
+          "Serait-il possible de partager les supports ?",
+          "Si vous me les envoyez par mail, je pourrais les montrer à mon équipe."
+        ],
+        "B": [
+          "Merci beaucoup ! On a passé pas mal de temps à la préparer.",
+          "Oui, nous avons une version PDF prête.",
+          "Donnez-moi votre adresse mail et je vous l’envoie tout de suite."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Avez-vous un moment maintenant pour discuter ?",
+          "Votre travail semble lié à un projet que nous préparons.",
+          "Si vous êtes d’accord, j’aimerais vous en présenter quelques détails."
+        ],
+        "B": [
+          "Oui, j’ai un moment ! Je suis curieux d’en savoir plus.",
+          "Oh, ça semble déjà très intéressant.",
+          "Parfait — allons nous asseoir à cette table là-bas."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Participez-vous souvent à ce genre de conférences ?",
+          "J’ai l’impression d’apprendre énormément lors de ces événements.",
+          "J’espère aussi rencontrer de nouvelles personnes aujourd’hui."
+        ],
+        "B": [
+          "Oui, j’essaie d’y aller régulièrement pour suivre les tendances du secteur.",
+          "Exactement, ces conversations ouvrent souvent de nouvelles perspectives.",
+          "Nous espérons aussi rencontrer beaucoup de monde aujourd’hui !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Avez-vous une feuille de route publique pour votre produit ?",
+          "Je suis curieux de connaître votre orientation à long terme.",
+          "Si possible, j’aimerais en avoir un bref aperçu."
+        ],
+        "B": [
+          "Oui, une partie est publique — il y a un résumé sur notre site.",
+          "Globalement, nous nous concentrons sur des solutions d’automatisation durables.",
+          "Je peux vous en donner un aperçu — qu’est-ce qui vous intéresse le plus ?"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Il y a beaucoup de bruit ici.",
+          "Le coin là-bas semble plus calme — on y va ?",
+          "On pourra parler plus en détail là-bas."
+        ],
+        "B": [
+          "Oui, vers cette heure-ci, la foule augmente.",
+          "Bonne idée — cet endroit sera plus tranquille.",
+          "Allons-y et continuons la conversation là-bas."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Avez-vous déjà géré un service similaire ?",
+          "On comprend beaucoup mieux en entendant des expériences réelles.",
+          "Pourriez-vous m’en dire un peu plus sur votre vécu ?"
+        ],
+        "B": [
+          "Oui, nous avons eu pas mal d’essais et d’erreurs au début.",
+          "Mais en l’exploitant vraiment, tout devient plus clair.",
+          "Bien sûr — je suis ravi de partager ce qui peut vous aider."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "J’ai vraiment beaucoup appris grâce à notre échange aujourd’hui.",
+          "J’aimerais qu’on ait l’occasion de collaborer à l’avenir.",
+          "Contactez-moi quand vous voulez — je pourrai planifier une réunion."
+        ],
+        "B": [
+          "Moi aussi ! Cette discussion m’a apporté de très bonnes idées.",
+          "Oui, nous voyons également un fort potentiel de collaboration.",
+          "Je vous contacterai. Au plaisir de travailler avec vous !"
+        ]
+      }
+    }
+  ]
+}
+

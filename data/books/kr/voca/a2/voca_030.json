@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "a2",
+    "id": "030"
+  },
+  "title": {
+    "target": "A2 — 확장 일상 어휘",
+    "en": "A2 — Expanded Everyday Vocabulary",
+    "es": "A2 — Vocabulario cotidiano ampliado",
+    "fr": "A2 — Vocabulaire quotidien élargi",
+    "pt": "A2 — Vocabulário do dia a dia ampliado"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "구독",
+        "en": "subscription",
+        "es": "suscripción",
+        "fr": "abonnement",
+        "pt": "assinatura"
+      },
+      "examples": [
+        {
+          "target": "채널 구독을 눌렀어요.",
+          "en": "I subscribed to the channel.",
+          "es": "Me suscribí al canal.",
+          "fr": "Je me suis abonné à la chaîne.",
+          "pt": "Assinei o canal."
+        },
+        {
+          "target": "구독 기간이 만료됐어요.",
+          "en": "The subscription has expired.",
+          "es": "La suscripción ha vencido.",
+          "fr": "L'abonnement a expiré.",
+          "pt": "A assinatura expirou."
+        },
+        {
+          "target": "구독 서비스를 이용하면 혜택이 많아요.",
+          "en": "There are many benefits to using the subscription service.",
+          "es": "Hay muchos beneficios al usar el servicio de suscripción.",
+          "fr": "Il y a beaucoup d'avantages à utiliser le service d'abonnement.",
+          "pt": "Há muitos benefícios ao usar o serviço de assinatura."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "확인창",
+        "en": "confirmation window",
+        "es": "ventana de confirmación",
+        "fr": "fenêtre de confirmation",
+        "pt": "janela de confirmação"
+      },
+      "examples": [
+        {
+          "target": "확인창이 떠서 내용을 검토했어요.",
+          "en": "A confirmation window popped up, and I reviewed the details.",
+          "es": "Apareció una ventana de confirmación y revisé los detalles.",
+          "fr": "Une fenêtre de confirmation est apparue et j'ai vérifié les détails.",
+          "pt": "Uma janela de confirmação apareceu e revisei os detalhes."
+        },
+        {
+          "target": "확인창에서 예를 눌렀어요.",
+          "en": "I pressed Yes in the confirmation window.",
+          "es": "Presioné Sí en la ventana de confirmación.",
+          "fr": "J'ai appuyé sur Oui dans la fenêtre de confirmation.",
+          "pt": "Apertei Sim na janela de confirmação."
+        },
+        {
+          "target": "확인창을 닫지 않으면 다음 단계로 넘어갈 수 없어요.",
+          "en": "You can't proceed to the next step unless you close the confirmation window.",
+          "es": "No puedes avanzar al siguiente paso sin cerrar la ventana de confirmación.",
+          "fr": "Vous ne pouvez pas passer à l'étape suivante sans fermer la fenêtre de confirmation.",
+          "pt": "Você não pode ir para a próxima etapa sem fechar a janela de confirmação."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "이동",
+        "en": "move",
+        "es": "movimiento",
+        "fr": "déplacement",
+        "pt": "movimento"
+      },
+      "examples": [
+        {
+          "target": "다음 페이지로 이동하세요.",
+          "en": "Move to the next page.",
+          "es": "Ve a la página siguiente.",
+          "fr": "Passez à la page suivante.",
+          "pt": "Vá para a próxima página."
+        },
+        {
+          "target": "이동 시간이 오래 걸렸어요.",
+          "en": "The travel time took a long while.",
+          "es": "El tiempo de desplazamiento fue largo.",
+          "fr": "Le temps de déplacement a été long.",
+          "pt": "O tempo de deslocamento foi longo."
+        },
+        {
+          "target": "이동 경로를 다시 설정했어요.",
+          "en": "I reset the movement route.",
+          "es": "Restablecí la ruta de movimiento.",
+          "fr": "J'ai réinitialisé l'itinéraire de déplacement.",
+          "pt": "Redefini a rota de deslocamento."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "전달",
+        "en": "delivery / convey",
+        "es": "transmisión",
+        "fr": "transmission",
+        "pt": "transmissão"
+      },
+      "examples": [
+        {
+          "target": "중요한 메시지를 전달했어요.",
+          "en": "I delivered an important message.",
+          "es": "Transmití un mensaje importante.",
+          "fr": "J'ai transmis un message important.",
+          "pt": "Transmiti uma mensagem importante."
+        },
+        {
+          "target": "전달이 제대로 되지 않았어요.",
+          "en": "The message was not conveyed properly.",
+          "es": "El mensaje no se transmitió correctamente.",
+          "fr": "Le message n'a pas été transmis correctement.",
+          "pt": "A mensagem não foi transmitida corretamente."
+        },
+        {
+          "target": "전달 속도를 높여야 해요.",
+          "en": "We need to increase the delivery speed.",
+          "es": "Debemos aumentar la velocidad de transmisión.",
+          "fr": "Nous devons augmenter la vitesse de transmission.",
+          "pt": "Precisamos aumentar a velocidade da transmissão."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "예약",
+        "en": "reservation",
+        "es": "reserva",
+        "fr": "réservation",
+        "pt": "reserva"
+      },
+      "examples": [
+        {
+          "target": "예약을 완료했어요.",
+          "en": "I completed the reservation.",
+          "es": "Completé la reserva.",
+          "fr": "J'ai terminé la réservation.",
+          "pt": "Concluí a reserva."
+        },
+        {
+          "target": "예약 시간이 잘못됐어요.",
+          "en": "The reservation time was incorrect.",
+          "es": "La hora de la reserva era incorrecta.",
+          "fr": "L'heure de la réservation était incorrecte.",
+          "pt": "O horário da reserva estava errado."
+        },
+        {
+          "target": "예약을 변경하고 싶어요.",
+          "en": "I want to change the reservation.",
+          "es": "Quiero cambiar la reserva.",
+          "fr": "Je veux modifier la réservation.",
+          "pt": "Quero alterar a reserva."
+        }
+      ]
+    }
+  ]
+}

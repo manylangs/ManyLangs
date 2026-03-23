@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "003",
+  "cefr": "A2",
+  "title_en": "Time and Days",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "What time should we meet?,",
+    "Do you have any plans today?,",
+    "Are you free this weekend?,",
+    "Are you available right now?,",
+    "Next week works for me.,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "What time should we meet today?",
+          "Then how about 3 p.m.?",
+          "Great! See you then!"
+        ],
+        "B": [
+          "Hmm… the afternoon works better for me!",
+          "Oh, 3 p.m. sounds perfect!",
+          "Yes, let’s meet at that time!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Do you have any plans today?",
+          "Oh, I see! Then is lunch possible?",
+          "Great! Let’s meet at noon!"
+        ],
+        "B": [
+          "Yeah, I’m a bit busy this morning.",
+          "Lunch works for me!",
+          "Okay, see you at 12!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Are you free this weekend?",
+          "Nice! Saturday afternoon works for me!",
+          "Okay! Let’s meet on Saturday!"
+        ],
+        "B": [
+          "Yeah, I have some free time on the weekend.",
+          "That sounds good to me!",
+          "Great! I’m looking forward to it!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Do you have a moment to talk now?",
+          "Oh, great! How many minutes do you have?",
+          "Okay, I’ll call you right now!"
+        ],
+        "B": [
+          "Yeah, I have a little bit of time.",
+          "I can spare around ten minutes.",
+          "Alright, I’ll wait for your call!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "When are you free next week?",
+          "Oh! That afternoon works for me!",
+          "Then I’ll schedule it!"
+        ],
+        "B": [
+          "Tuesday should be okay for me.",
+          "Great, I’ll keep my afternoon free!",
+          "Okay, see you then!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Are you free this evening?",
+          "Oh, really? Then what about tomorrow?",
+          "Great! I’ll message you tomorrow evening!"
+        ],
+        "B": [
+          "I think I’ll finish late today.",
+          "Tomorrow evening is fine!",
+          "Sounds good! See you then!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Is tomorrow morning possible for you?",
+          "Ah, I see! Then how about the afternoon?",
+          "Perfect! I’ll see you in the afternoon!"
+        ],
+        "B": [
+          "I already have an appointment in the morning.",
+          "The afternoon is free for me!",
+          "Great! That works well!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "What time does the meeting start today?",
+          "Oh! I might be a few minutes late.",
+          "Okay! I’ll get there as quickly as I can!"
+        ],
+        "B": [
+          "It starts at 3 p.m.",
+          "Five minutes should be fine!",
+          "Alright! See you soon."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "What are you doing this evening?",
+          "Oh! I’m free at that time too!",
+          "Then let’s go for a walk together!"
+        ],
+        "B": [
+          "I’m planning to take a short walk.",
+          "Great! See you then!",
+          "Sure! I love evening walks!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "How was your day?",
+          "Oh, you still did well today!",
+          "I hope tomorrow is even better!"
+        ],
+        "B": [
+          "I was a bit tired.",
+          "Yeah, but I’m okay now.",
+          "Thank you! I’ll try my best tomorrow!"
+        ]
+      }
+    }
+  ]
+}
+

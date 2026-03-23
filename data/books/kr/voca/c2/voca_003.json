@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "series": "voca",
+    "level": "c2",
+    "id": "003"
+  },
+  "title": {
+    "target": "C2 — 고급 학술•문학•철학 어휘",
+    "en": "C2 — Advanced Academic, Literary, and Philosophical Vocabulary",
+    "es": "C2 — Vocabulario académico, literario y filosófico avanzado",
+    "fr": "C2 — Vocabulaire académique, littéraire et philosophique avancé",
+    "pt": "C2 — Vocabulário acadêmico, literário e filosófico avançado"
+  },
+  "blocks": [
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "의미장",
+        "en": "semantic field",
+        "fr": "champ sémantique",
+        "es": "campo semántico",
+        "pt": "campo semântico"
+      },
+      "examples": [
+        {
+          "target": "의미장은 특정 개념을 중심으로 연관된 단어들의 집합이다.",
+          "en": "A semantic field is a set of words related to a specific concept.",
+          "fr": "Un champ sémantique est un ensemble de mots liés à un concept particulier.",
+          "es": "Un campo semántico es un conjunto de palabras relacionadas con un concepto específico.",
+          "pt": "Um campo semântico é um conjunto de palavras relacionadas a um conceito específico."
+        },
+        {
+          "target": "'감정'이라는 의미장에는 기쁨, 분노, 슬픔 등이 포함된다.",
+          "en": "The semantic field of 'emotion' includes joy, anger, sadness, and more.",
+          "fr": "Le champ sémantique de « émotion » inclut la joie, la colère, la tristesse, etc.",
+          "es": "El campo semántico de 'emoción' incluye alegría, ira, tristeza, entre otros.",
+          "pt": "O campo semântico de 'emoção' inclui alegria, raiva, tristeza, entre outros."
+        },
+        {
+          "target": "의미장을 분석하면 작가의 언어적 선택을 더 깊이 이해할 수 있다.",
+          "en": "Analyzing a semantic field allows for deeper understanding of an author's linguistic choices.",
+          "fr": "Analyser un champ sémantique permet de mieux comprendre les choix linguistiques d'un auteur.",
+          "es": "Analizar un campo semántico permite comprender mejor las elecciones lingüísticas del autor.",
+          "pt": "Analisar um campo semântico permite compreender melhor as escolhas linguísticas de um autor."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "심상",
+        "en": "imagery",
+        "fr": "imagerie",
+        "es": "imaginería",
+        "pt": "imagética"
+      },
+      "examples": [
+        {
+          "target": "시는 심상을 통해 독자의 감각을 자극한다.",
+          "en": "Poetry stimulates the reader's senses through imagery.",
+          "fr": "La poésie stimule les sens du lecteur grâce à l'imagerie.",
+          "es": "La poesía estimula los sentidos del lector mediante la imaginería.",
+          "pt": "A poesia estimula os sentidos do leitor por meio da imagética."
+        },
+        {
+          "target": "풍부한 심상은 작품의 분위기를 강화한다.",
+          "en": "Rich imagery enhances the atmosphere of a work.",
+          "fr": "Une imagerie riche renforce l'atmosphère d'une œuvre.",
+          "es": "Una imaginería rica refuerza la atmósfera de una obra.",
+          "pt": "Uma imagética rica reforça a atmosfera de uma obra."
+        },
+        {
+          "target": "심상 분석은 문학 비평에서 중요한 방법이다.",
+          "en": "Analyzing imagery is an important method in literary criticism.",
+          "fr": "L'analyse de l'imagerie est une méthode importante en critique littéraire.",
+          "es": "El análisis de la imaginería es un método importante en la crítica literaria.",
+          "pt": "A análise da imagética é um método importante na crítica literária."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "정서층위",
+        "en": "emotional layer",
+        "fr": "couche émotionnelle",
+        "es": "capa emocional",
+        "pt": "camada emocional"
+      },
+      "examples": [
+        {
+          "target": "정서층위는 작품 속 감정의 층을 섬세하게 드러낸다.",
+          "en": "The emotional layer delicately reveals the layers of feeling within a work.",
+          "fr": "La couche émotionnelle révèle délicatement les strates de sentiments dans l'œuvre.",
+          "es": "La capa emocional revela delicadamente las capas de sentimiento dentro de la obra.",
+          "pt": "A camada emocional revela delicadamente as camadas de sentimentos dentro da obra."
+        },
+        {
+          "target": "정서층위의 차이는 종종 인물의 내면 변화를 보여준다.",
+          "en": "Differences in emotional layers often reveal a character's internal shift.",
+          "fr": "Les différences dans les couches émotionnelles révèlent souvent les changements internes d'un personnage.",
+          "es": "Las diferencias en la capa emocional suelen mostrar el cambio interno de un personaje.",
+          "pt": "As diferenças na camada emocional frequentemente mostram mudanças internas do personagem."
+        },
+        {
+          "target": "정서층위를 파악하면 작품의 정조를 깊이 이해할 수 있다.",
+          "en": "Identifying the emotional layers helps in deeply understanding the tone of a work.",
+          "fr": "Identifier les couches émotionnelles aide à comprendre profondément le ton de l'œuvre.",
+          "es": "Identificar la capa emocional ayuda a comprender profundamente el tono de la obra.",
+          "pt": "Identificar a camada emocional ajuda a entender profundamente o tom da obra."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "의식흐름",
+        "en": "stream of consciousness",
+        "fr": "flux de conscience",
+        "es": "flujo de conciencia",
+        "pt": "fluxo de consciência"
+      },
+      "examples": [
+        {
+          "target": "의식흐름 기법은 생각의 흐름을 직접적으로 보여준다.",
+          "en": "The stream-of-consciousness technique directly presents the flow of thought.",
+          "fr": "La technique du flux de conscience montre directement le cours des pensées.",
+          "es": "La técnica del flujo de conciencia muestra directamente el curso del pensamiento.",
+          "pt": "A técnica do fluxo de consciência mostra diretamente o fluxo do pensamento."
+        },
+        {
+          "target": "이 소설은 의식흐름을 활용해 인물의 내면을 깊게 탐구한다.",
+          "en": "The novel uses stream of consciousness to deeply explore the character's inner world.",
+          "fr": "Le roman utilise le flux de conscience pour explorer profondément l'intériorité du personnage.",
+          "es": "La novela emplea el flujo de conciencia para explorar en profundidad el mundo interior del personaje.",
+          "pt": "O romance usa o fluxo de consciência para explorar profundamente o mundo interior do personagem."
+        },
+        {
+          "target": "의식흐름 기법은 전통적 서사 구조와 대비된다.",
+          "en": "The stream-of-consciousness method contrasts with traditional narrative structures.",
+          "fr": "La méthode du flux de conscience contraste avec les structures narratives traditionnelles.",
+          "es": "El método de flujo de conciencia contrasta con las estructuras narrativas tradicionales.",
+          "pt": "O método do fluxo de consciência contrasta com as estruturas narrativas tradicionais."
+        }
+      ]
+    },
+    {
+      "type": "vocab_item",
+      "word": {
+        "target": "사유체계",
+        "en": "thought system",
+        "fr": "système de pensée",
+        "es": "sistema de pensamiento",
+        "pt": "sistema de pensamento"
+      },
+      "examples": [
+        {
+          "target": "사유체계는 한 사회가 세계를 이해하는 방식을 보여준다.",
+          "en": "A thought system shows how a society understands the world.",
+          "fr": "Un système de pensée montre comment une société comprend le monde.",
+          "es": "Un sistema de pensamiento muestra cómo una sociedad entiende el mundo.",
+          "pt": "Um sistema de pensamento mostra como uma sociedade compreende o mundo."
+        },
+        {
+          "target": "철학은 사유체계를 정립하고 확장하는 학문이다.",
+          "en": "Philosophy is a discipline that establishes and expands systems of thought.",
+          "fr": "La philosophie est une discipline qui établit et étend les systèmes de pensée.",
+          "es": "La filosofía es una disciplina que establece y expande sistemas de pensamiento.",
+          "pt": "A filosofia é uma disciplina que estabelece e expande sistemas de pensamento."
+        },
+        {
+          "target": "각 문화는 고유한 사유체계를 발전시켜 왔다.",
+          "en": "Each culture has developed its own system of thought.",
+          "fr": "Chaque culture a développé son propre système de pensée.",
+          "es": "Cada cultura ha desarrollado su propio sistema de pensamiento.",
+          "pt": "Cada cultura desenvolveu seu próprio sistema de pensamento."
+        }
+      ]
+    }
+  ]
+}

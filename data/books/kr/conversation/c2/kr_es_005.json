@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "005",
+  "cefr": "C2",
+  "title_es": "Planificación de proyectos",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Deberíamos aclarar mejor la dirección inicial,",
+    "No tengo claro dónde fijar los límites del proyecto,",
+    "Voy a reorganizar las prioridades,",
+    "Me preocupa un poco dónde pueden aparecer los riesgos,",
+    "¿Tienes alguna otra idea al respecto,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Todavía no tengo claro cómo definir el punto de partida del proyecto. ¿Qué opinas?",
+          "La dirección general se siente algo difusa y eso me preocupa.",
+          "Tienes razón — debería consolidar la base antes de seguir avanzando."
+        ],
+        "B": [
+          "Yo sentí lo mismo. Cuando el inicio está claro, todo el proyecto gana estabilidad.",
+          "Exacto — si la orientación es confusa al principio, las fases siguientes tambalean.",
+          "Buena decisión. Así el flujo completo será mucho más coherente."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Me cuesta decidir hasta dónde debe llegar el alcance del proyecto.",
+          "Si lo hacemos demasiado amplio, el calendario se nos puede venir encima.",
+          "Bien, empezaré agrupando solo las funciones esenciales."
+        ],
+        "B": [
+          "Definir el alcance siempre es complicado — si te equivocas, los recursos se agotan rápido.",
+          "Sí, y el calendario se ajusta tanto que ya no queda margen.",
+          "Enfocarte primero en lo esencial va a estabilizar mucho mejor el avance."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Creo que debemos reajustar las prioridades del proyecto. ¿Qué te parece?",
+          "Con este ritmo, las fases críticas podrían quedar relegadas.",
+          "Voy a reorganizar la lista de prioridades desde arriba."
+        ],
+        "B": [
+          "Buena idea — revisar las prioridades ya aclara muchísimo el panorama.",
+          "Exactamente, posponer una fase crítica puede desordenar todo el calendario.",
+          "Una vez reorganices eso, los siguientes pasos serán mucho más fluidos."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Creo que deberíamos adelantar el análisis de riesgos.",
+          "No logro identificar con claridad dónde podrían surgir los problemas.",
+          "Empezaré revisando las áreas con mayor nivel de dependencia."
+        ],
+        "B": [
+          "Sí, cuanto antes se identifiquen los riesgos, más fácil es gestionarlos.",
+          "Las zonas con alta dependencia siempre generan más incertidumbre.",
+          "Cuando revises eso primero, el mapa de riesgos será mucho más claro."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "La línea de tiempo es más compleja de lo que imaginaba.",
+          "No sé dónde situar la revisión intermedia.",
+          "Voy a redefinir los puntos de control en torno a los hitos clave."
+        ],
+        "B": [
+          "Exacto — una línea de tiempo clara es medio proyecto ganado.",
+          "Una vez fijado el punto de revisión, los ajustes son mucho más simples.",
+          "Usar los hitos como referencia hará que todo el plan sea más predecible."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Al revisar las actas de la reunión, noté varias diferencias de interpretación.",
+          "Parece que algunos términos no se entendieron de la misma manera.",
+          "Voy a unificar primero todas las definiciones clave."
+        ],
+        "B": [
+          "Tal cual — una terminología coherente evita muchos malentendidos.",
+          "En la fase de planificación, incluso pequeños matices pueden generar problemas.",
+          "Una vez que unifiques eso, la documentación fluirá mucho mejor."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Quiero dejar más clara la división de roles dentro del equipo.",
+          "Cuando las responsabilidades se superponen, el trabajo se vuelve confuso.",
+          "Actualizaré la tabla de roles para que quede más ordenada."
+        ],
+        "B": [
+          "Totalmente — el solapamiento siempre provoca trabajo duplicado.",
+          "Sí, tener límites claros acelera cada etapa del proyecto.",
+          "Cuando lo actualices, la colaboración será mucho más eficiente."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Escuché que el calendario del socio externo podría ser inestable.",
+          "Me preocupa que eso retrase toda nuestra planificación.",
+          "Voy a preparar un plan de contingencia antes de que surjan problemas."
+        ],
+        "B": [
+          "Sí, yo también lo escuché — los calendarios externos suelen tener muchas variables.",
+          "Exacto, un solo retraso allí puede descarrilar todo el cronograma.",
+          "Un plan de contingencia nos protegerá de contratiempos inesperados."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "La asignación del presupuesto siempre es la parte más complicada. Está muy ajustado.",
+          "Es difícil decidir qué se puede recortar.",
+          "Empezaré revisando los costes fijos antes de tocar cualquier otra cosa."
+        ],
+        "B": [
+          "El presupuesto siempre es un rompecabezas… y recortar nunca es fácil.",
+          "Sí — si recortamos demasiado, podemos afectar partes esenciales.",
+          "Revisar primero los costes fijos te dará una visión más clara del conjunto."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Creo que la estructura general ya está casi terminada.",
+          "Solo quiero revisar el flujo una vez más.",
+          "Integraré tus comentarios y terminaré el borrador hoy mismo."
+        ],
+        "B": [
+          "Está quedando muy bien — el plan se siente sólido.",
+          "Una revisión final del flujo dejará todo aún más pulido.",
+          "Perfecto — una vez finalizado, el proyecto será mucho más robusto."
+        ]
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "series": "grammar",
+    "level": "c1",
+    "id": "009"
+  },
+  "title": {
+    "target": "-(으)ㄴ/는 모양이다",
+    "en": "It seems/appears (that)",
+    "es": "Parece que",
+    "fr": "Il semble que",
+    "pt": "Parece que"
+  },
+  "blocks": [
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'-(으)ㄴ/는 모양이다'는 보이는 행동, 상황, 상태 등을 근거로 간접적으로 추측할 때 사용한다.",
+        "en": "This form is used to make an indirect assumption based on visible actions, situations, or conditions.",
+        "es": "Esta forma se usa para hacer una suposición indirecta basada en acciones, situaciones o estados visibles.",
+        "fr": "Cette forme est utilisée pour faire une supposition indirecte fondée sur des actions, des situations ou des états visibles.",
+        "pt": "Esta forma é usada para fazer uma suposição indirecta com base em acções, situações ou estados visíveis."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "화자가 직접 확인한 사실은 아니지만, 외형적 정보로 판단을 내리는 표현이다.",
+        "en": "It indicates that the speaker has not confirmed the fact directly but is judging from outward signs.",
+        "es": "Indica que el hablante no ha confirmado el hecho directamente, sino que juzga a partir de señales externas.",
+        "fr": "Elle indique que le locuteur ne confirme pas directement le fait, mais le déduit d’indices extérieurs.",
+        "pt": "Indica que o falante não confirmou directamente o facto, mas o deduz a partir de sinais externos."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "분위기, 표정, 상황 흐름 등을 근거로 사용할 수 있다.",
+        "en": "It can be used when interpreting atmosphere, facial expressions, or the flow of events.",
+        "es": "Puede usarse al interpretar el ambiente, las expresiones faciales o el desarrollo de una situación.",
+        "fr": "Elle peut s’employer pour interpréter une ambiance, des expressions faciales ou l’évolution d’une situation.",
+        "pt": "Pode ser usada ao interpretar o ambiente, as expressões faciais ou o desenrolar de uma situação."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "직접적 단정이 아니라 조심스러운 판단을 전달한다.",
+        "en": "It delivers a cautious judgment rather than a firm conclusion.",
+        "es": "Expresa un juicio cauteloso en lugar de una conclusión firme.",
+        "fr": "Elle exprime un jugement prudent plutôt qu’une conclusion ferme.",
+        "pt": "Expressa um juízo cauteloso em vez de uma conclusão firme."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "긍정적·부정적 상황 모두에서 자연스럽게 쓰인다.",
+        "en": "It is natural in both positive and negative situations.",
+        "es": "Es natural tanto en situaciones positivas como negativas.",
+        "fr": "Elle est naturelle dans des contextes positifs comme négatifs.",
+        "pt": "É natural tanto em situações positivas como negativas."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "'듯하다'보다 외형적 근거가 좀 더 확실할 때 사용된다.",
+        "en": "It is used when there is slightly stronger external evidence than with ‘it seems’.",
+        "es": "Se usa cuando hay indicios externos más claros que con una simple impresión.",
+        "fr": "Elle est utilisée lorsque les indices externes sont un peu plus clairs qu’avec une simple impression.",
+        "pt": "É usada quando existem indícios externos mais claros do que numa simples impressão."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문어·구어 모두에서 자주 쓰이며 자연스럽게 들린다.",
+        "en": "It is common in both written and spoken contexts.",
+        "es": "Es común tanto en la lengua escrita como hablada.",
+        "fr": "Elle est courante tant à l’oral qu’à l’écrit.",
+        "pt": "É comum tanto na fala como na escrita."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "확인되지 않은 정보에 대해 완곡한 표현을 제공한다.",
+        "en": "It provides a mild expression when the information is not verified.",
+        "es": "Ofrece una expresión suave cuando la información no está verificada.",
+        "fr": "Elle offre une expression atténuée lorsque l’information n’est pas vérifiée.",
+        "pt": "Oferece uma expressão suavizada quando a informação não está verificada."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "문맥에 따라 추정의 강도는 다소 달라질 수 있다.",
+        "en": "The strength of the assumption may vary depending on context.",
+        "es": "La fuerza de la suposición puede variar según el contexto.",
+        "fr": "La force de la supposition peut varier selon le contexte.",
+        "pt": "A força da suposição pode variar consoante o contexto."
+      }
+    },
+    {
+      "type": "grammar_explanation",
+      "sentences": {
+        "target": "감정 유추, 상황 추론 등 다양한 영역에 적용된다.",
+        "en": "It applies widely to emotional inference and situational reasoning.",
+        "es": "Se aplica ampliamente a inferencias emocionales y razonamientos situacionales.",
+        "fr": "Elle s’applique largement à l’inférence émotionnelle et au raisonnement situationnel.",
+        "pt": "Aplica-se amplamente a inferências emocionais e raciocínios situacionais."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그는 오늘 기분이 좋은 모양이다.",
+        "en": "It seems he is in a good mood today.",
+        "es": "Parece que hoy está de buen ánimo.",
+        "fr": "Il semble être de bonne humeur aujourd’hui.",
+        "pt": "Parece que ele está bem-disposto hoje."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "비가 곧 올 모양이다.",
+        "en": "It looks like it will rain soon.",
+        "es": "Parece que pronto va a llover.",
+        "fr": "Il semble qu’il va bientôt pleuvoir.",
+        "pt": "Parece que vai chover em breve."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그 계획은 이미 결정된 모양이다.",
+        "en": "It seems the plan has already been decided.",
+        "es": "Parece que el plan ya está decidido.",
+        "fr": "Le plan semble déjà décidé.",
+        "pt": "Parece que o plano já foi decidido."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "문제가 생각보다 심각한 모양이다.",
+        "en": "The problem appears to be more serious than expected.",
+        "es": "El problema parece más grave de lo esperado.",
+        "fr": "Le problème paraît plus grave que prévu.",
+        "pt": "O problema parece mais grave do que o esperado."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "그는 나를 기다린 모양이다.",
+        "en": "It seems he was waiting for me.",
+        "es": "Parece que él me estaba esperando.",
+        "fr": "Il semble qu’il m’attendait.",
+        "pt": "Parece que ele estava à minha espera."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "core_patterns",
+      "sentences": {
+        "target": "회의가 길어질 모양이다.",
+        "en": "It looks like the meeting will be long.",
+        "es": "Parece que la reunión será larga.",
+        "fr": "Il semble que la réunion sera longue.",
+        "pt": "Parece que a reunião será longa."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그들은 이미 떠난 모양이었다.",
+        "en": "It seemed they had already left.",
+        "es": "Parecía que ya se habían ido.",
+        "fr": "Il semblait qu’ils étaient déjà partis.",
+        "pt": "Parecia que eles já tinham partido."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "상황이 예상과 다른 모양이다.",
+        "en": "The situation appears different from what was expected.",
+        "es": "La situación parece distinta de lo esperado.",
+        "fr": "La situation paraît différente de ce qui était prévu.",
+        "pt": "A situação parece diferente do que se esperava."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그의 표정이 불안한 모양이었다.",
+        "en": "His expression seemed uneasy.",
+        "es": "Su expresión parecía inquieta.",
+        "fr": "Son expression semblait inquiète.",
+        "pt": "A expressão dele parecia inquieta."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "문제가 해결된 모양이다.",
+        "en": "It seems the problem has been resolved.",
+        "es": "Parece que el problema se ha resuelto.",
+        "fr": "Il semble que le problème soit résolu.",
+        "pt": "Parece que o problema foi resolvido."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "그는 어딘가 급한 모양이었다.",
+        "en": "It looked like he was in a hurry.",
+        "es": "Parecía que él tenía prisa.",
+        "fr": "Il semblait avoir l’air pressé.",
+        "pt": "Parecia que ele estava com pressa."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "variations",
+      "sentences": {
+        "target": "팀 분위기가 달라진 모양이다.",
+        "en": "The team atmosphere seems to have changed.",
+        "es": "El ambiente del equipo parece haber cambiado.",
+        "fr": "L’ambiance de l’équipe semble avoir changé.",
+        "pt": "O ambiente da equipa parece ter mudado."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그의 말투가 평소와 다른 모양이었다.",
+        "en": "His tone sounded different from usual.",
+        "es": "Su tono sonaba distinto al de siempre.",
+        "fr": "Son ton semblait différent de d’habitude.",
+        "pt": "O tom dele parecia diferente do habitual."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그들은 무언가를 숨기는 모양이었다.",
+        "en": "It seemed they were hiding something.",
+        "es": "Parecía que estaban escondiendo algo.",
+        "fr": "Il semblait qu’ils cachaient quelque chose.",
+        "pt": "Parecia que eles estavam a esconder alguma coisa."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "상황이 곧 변할 모양이다.",
+        "en": "It looks like the situation will change soon.",
+        "es": "Parece que la situación cambiará pronto.",
+        "fr": "La situation semble sur le point de changer.",
+        "pt": "Parece que a situação mudará em breve."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그 결정이 큰 영향을 줄 모양이다.",
+        "en": "That decision seems likely to have a big impact.",
+        "es": "Esa decisión parece tener un gran impacto.",
+        "fr": "Cette décision semble avoir un impact important.",
+        "pt": "Essa decisão parece ter um grande impacto."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그는 결과를 알고 있는 모양이었다.",
+        "en": "It seemed he already knew the result.",
+        "es": "Parecía que él ya conocía el resultado.",
+        "fr": "Il semblait qu’il connaissait déjà le résultat.",
+        "pt": "Parecia que ele já sabia o resultado."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "문제가 다시 생긴 모양이다.",
+        "en": "It appears that the problem has reoccurred.",
+        "es": "Parece que el problema ha vuelto a aparecer.",
+        "fr": "Il semble que le problème soit réapparu.",
+        "pt": "Parece que o problema voltou a surgir."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "새로운 규칙이 적용될 모양이다.",
+        "en": "It seems a new rule will be applied.",
+        "es": "Parece que se aplicará una nueva regla.",
+        "fr": "Il semble qu’une nouvelle règle sera appliquée.",
+        "pt": "Parece que será aplicada uma nova regra."
+      }
+    },
+    {
+      "type": "grammar_example",
+      "variant": "extended_usage",
+      "sentences": {
+        "target": "그들은 이미 합의한 모양이었다.",
+        "en": "It seemed they had already reached an agreement.",
+        "es": "Parecía que ya habían llegado a un acuerdo.",
+        "fr": "Il semblait qu’ils étaient déjà parvenus à un accord.",
+        "pt": "Parecia que eles já tinham chegado a um acordo."
+      }
+    }
+  ]
+}

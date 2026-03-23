@@ -1,0 +1,60 @@
+{
+  "mode": "all",
+  "series": "idiom",
+  "levels": ["a1", "a2", "b1", "b2", "c1", "c2"],
+
+  "allLevelStarts": {
+    "a1": "001",
+    "a2": "008",
+    "b1": "015",
+    "b2": "022",
+    "c1": "029",
+    "c2": "035"
+  },
+
+  "allChapters": [
+    { "pos": "001", "level": "a1", "chapter": "001" },
+    { "pos": "002", "level": "a1", "chapter": "002" },
+    { "pos": "003", "level": "a1", "chapter": "003" },
+    { "pos": "004", "level": "a1", "chapter": "004" },
+    { "pos": "005", "level": "a1", "chapter": "005" },
+    { "pos": "006", "level": "a1", "chapter": "006" },
+    { "pos": "007", "level": "a1", "chapter": "007" },
+
+    { "pos": "008", "level": "a2", "chapter": "001" },
+    { "pos": "009", "level": "a2", "chapter": "002" },
+    { "pos": "010", "level": "a2", "chapter": "003" },
+    { "pos": "011", "level": "a2", "chapter": "004" },
+    { "pos": "012", "level": "a2", "chapter": "005" },
+    { "pos": "013", "level": "a2", "chapter": "006" },
+    { "pos": "014", "level": "a2", "chapter": "007" },
+
+    { "pos": "015", "level": "b1", "chapter": "001" },
+    { "pos": "016", "level": "b1", "chapter": "002" },
+    { "pos": "017", "level": "b1", "chapter": "003" },
+    { "pos": "018", "level": "b1", "chapter": "004" },
+    { "pos": "019", "level": "b1", "chapter": "005" },
+    { "pos": "020", "level": "b1", "chapter": "006" },
+    { "pos": "021", "level": "b1", "chapter": "007" },
+
+    { "pos": "022", "level": "b2", "chapter": "001" },
+    { "pos": "023", "level": "b2", "chapter": "002" },
+    { "pos": "024", "level": "b2", "chapter": "003" },
+    { "pos": "025", "level": "b2", "chapter": "004" },
+    { "pos": "026", "level": "b2", "chapter": "005" },
+    { "pos": "027", "level": "b2", "chapter": "006" },
+    { "pos": "028", "level": "b2", "chapter": "007" },
+
+    { "pos": "029", "level": "c1", "chapter": "001" },
+    { "pos": "030", "level": "c1", "chapter": "002" },
+    { "pos": "031", "level": "c1", "chapter": "003" },
+    { "pos": "032", "level": "c1", "chapter": "004" },
+    { "pos": "033", "level": "c1", "chapter": "005" },
+    { "pos": "034", "level": "c1", "chapter": "006" },
+
+    { "pos": "035", "level": "c2", "chapter": "001" },
+    { "pos": "036", "level": "c2", "chapter": "002" },
+    { "pos": "037", "level": "c2", "chapter": "003" },
+    { "pos": "038", "level": "c2", "chapter": "004" }
+  ]
+}

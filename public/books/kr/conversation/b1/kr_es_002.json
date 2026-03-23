@@ -1,0 +1,176 @@
+﻿{
+  "chapter_id": "002",
+  "cefr": "B1",
+  "title_es": "Asistir a clases",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "¿Cómo estuvo la clase hoy?,",
+    "¿Entendiste la explicación del profesor?,",
+    "¿Pudiste seguir las notas?,",
+    "¿Listo(a) para la próxima clase?,",
+    "¿El deber estuvo bien?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "¿Cómo estuvo la clase hoy?",
+          "Hubo algunas partes que me resultaron un poco difíciles.",
+          "Creo que necesito repasarlo mientras ordeno mis apuntes."
+        ],
+        "B": [
+          "¡Estuvo mejor de lo que esperaba!",
+          "Las partes complicadas se entendían mejor cuando el profesor daba ejemplos.",
+          "Si lo revisamos juntos, lo resolveremos rápido."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "La lección de hoy fue un poco más complicada que la de la semana pasada.",
+          "Sobre todo las fórmulas—no las entendí del todo al principio.",
+          "Debería practicar más ejercicios en casa."
+        ],
+        "B": [
+          "Sí, de repente había muchas más fórmulas.",
+          "Hacer ejercicios realmente ayuda a comprender mejor.",
+          "Si quieres, puedo mostrarte los que yo resolví."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Siento que el profesor habló un poco rápido hoy.",
+          "Hubo momentos en los que era difícil seguirle el ritmo.",
+          "Por suerte grabé la clase y podré escucharla de nuevo."
+        ],
+        "B": [
+          "¿Verdad? ¡Hoy habló especialmente rápido!",
+          "Yo también me perdí algunas frases.",
+          "Si tienes la grabación, volver a escucharla te ayudará un montón."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "El material de la clase fue más útil de lo que pensaba.",
+          "Está bien organizado, así que es fácil de seguir.",
+          "Creo que lo imprimiré para llevarlo conmigo."
+        ],
+        "B": [
+          "Sí, el material está muy bien hecho.",
+          "A mí también me ayudó mucho a la hora de tomar apuntes.",
+          "Si lo imprimes, será mucho más fácil seguir la clase."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "La discusión en grupo de hoy estuvo bastante divertida, ¿no?",
+          "Todos tenían muchas opiniones.",
+          "Gracias a eso, los conceptos me quedaron mucho más claros."
+        ],
+        "B": [
+          "¡Sí! Todos estaban muy participativos.",
+          "Hablarlo entre todos hace que sea mucho más fácil entender.",
+          "Ojalá tuviéramos más clases con discusiones así."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "¿Entendiste bien la explicación del deber?",
+          "La última parte me confundió un poco.",
+          "Podríamos revisarla juntos si quieres."
+        ],
+        "B": [
+          "A mí también se me escapó un poco el final.",
+          "Pero dijeron que pronto subirán un resumen.",
+          "Cuando lo veamos juntos, quedará claro."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "El ambiente en la clase estuvo muy animado hoy.",
+          "Hubo muchas preguntas y reacciones, ¿verdad?",
+          "Eso me ayudó a concentrarme mejor."
+        ],
+        "B": [
+          "¡Sí! Todos tenían mucha energía.",
+          "Hasta el profesor parecía de buen humor.",
+          "Con un ambiente así, la clase se hace mucho más fácil."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "El profesor dijo que lo de hoy entrará en el examen, ¿no?",
+          "Por eso presté más atención que de costumbre.",
+          "También tomé apuntes más en serio."
+        ],
+        "B": [
+          "Sí, definitivamente entrará en el examen.",
+          "Yo también estaba un poco nervioso(a) y concentrado(a).",
+          "Si tienes buenos apuntes, ya tienes la mitad del trabajo hecho."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "¿Notaste que cambiaron los colores de las diapositivas?",
+          "La legibilidad mejoró bastante.",
+          "Hoy el contenido me pareció más claro."
+        ],
+        "B": [
+          "Sí, ¡los nuevos colores se ven mucho mejor!",
+          "A mí también me ayudaron a concentrarme.",
+          "Parece que la calidad de la clase mejoró un montón."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Me siento un poco más seguro(a) después de la clase de hoy.",
+          "Creo que por fin estoy entendiendo el ritmo del curso.",
+          "Creo que podré seguir la próxima clase mejor."
+        ],
+        "B": [
+          "¡Oh, eso también me motiva a mí!",
+          "Cuando entiendes el ritmo, todo se vuelve más fácil.",
+          "En la próxima clase también lo haremos bien."
+        ]
+      }
+    }
+  ]
+}
+

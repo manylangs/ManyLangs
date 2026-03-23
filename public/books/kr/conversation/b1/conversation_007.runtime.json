@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b1",
+    "id": "007"
+  },
+  "title": {
+    "target": "시험 준비",
+    "en": "Exam Preparation",
+    "es": "Preparación para el examen",
+    "fr": "Préparation aux examens",
+    "pt": "Preparação para o exame"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "시험 준비는 좀 잘 되고 있어요?",
+            "en": "Is your exam preparation going well?",
+            "es": "¿Va bien tu preparación para el examen?",
+            "fr": "Ta préparation pour l’examen se passe bien ?",
+            "pt": "A tua preparação para o exame está a correr bem?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "조금씩 하고 있는데 은근히 어려워요.",
+            "en": "I’m studying little by little, but it's tougher than I thought.",
+            "es": "Estoy estudiando poco a poco, pero es más difícil de lo que pensaba.",
+            "fr": "J’étudie un peu chaque jour, mais c’est plus dur que je pensais.",
+            "pt": "Estou a estudar aos poucos, mas é mais difícil do que pensei."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 그래요? 그럼 공부 계획은 어느 정도 세웠어요?",
+            "en": "Oh really? Then have you planned out your study schedule?",
+            "es": "¿Ah sí? Entonces, ¿ya hiciste un plan de estudio?",
+            "fr": "Ah vraiment ? Alors tu as déjà préparé ton planning d’étude ?",
+            "pt": "Ah é? Então já fizeste o teu plano de estudo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아직 완전히는 아니고 대략적인 흐름만 잡았어요.",
+            "en": "Not completely, I just outlined the basics.",
+            "es": "No del todo, solo hice un esquema general.",
+            "fr": "Pas complètement, j’ai seulement fait un plan général.",
+            "pt": "Ainda não totalmente, só fiz um esquema geral."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요! 필요하면 제가 일정도 같이 봐드릴게요.",
+            "en": "Nice! I can help check your plan if you want.",
+            "es": "Genial, puedo ayudarte a revisarlo si quieres.",
+            "fr": "Super ! Je peux t’aider à le vérifier si tu veux.",
+            "pt": "Perfeito, posso ajudar-te a rever se quiseres."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오, 정말요? 그러면 너무 도움이 될 것 같아요!",
+            "en": "Really? That would be so helpful!",
+            "es": "¿En serio? ¡Eso me ayudaría muchísimo!",
+            "fr": "Ah oui ? Ça m’aiderait énormément !",
+            "pt": "A sério? Isso ajudava-me imenso!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "어디부터 공부할지 정하셨어요?",
+            "en": "Did you decide where to start studying?",
+            "es": "¿Ya decidiste por dónde empezar a estudiar?",
+            "fr": "Tu as décidé par où commencer à étudier ?",
+            "pt": "Já decidiste por onde começar a estudar?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 일단 기본 개념부터 보고 있어요.",
+            "en": "Yes, I’m starting with the basic concepts.",
+            "es": "Sí, empecé con los conceptos básicos.",
+            "fr": "Oui, je commence par les notions de base.",
+            "pt": "Sim, comecei pelos conceitos básicos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 그 순서 괜찮네요! 이해도 잘 될 것 같아요.",
+            "en": "That order sounds good! It should help you understand better.",
+            "es": "Ese orden suena bien, te ayudará a comprender mejor.",
+            "fr": "Cet ordre me paraît bien ! Ça t’aidera à mieux comprendre.",
+            "pt": "Essa ordem parece ótima! Vai ajudar-te a compreender melhor."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그 다음에 예제를 풀어보려고요.",
+            "en": "After that, I’ll try solving some practice problems.",
+            "es": "Luego quiero intentar algunos ejercicios.",
+            "fr": "Ensuite je veux essayer quelques exercices.",
+            "pt": "Depois quero experimentar alguns exercícios."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "맞아요, 중요한 부분은 먼저 잡는 게 좋아요.",
+            "en": "Yeah, focusing on key sections first is always smart.",
+            "es": "Sí, empezar por lo más importante siempre es buena idea.",
+            "fr": "Oui, commencer par les points essentiels, c’est toujours bien.",
+            "pt": "Sim, começar pelas partes essenciais é sempre uma boa ideia."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도 그렇게 해야겠네요!",
+            "en": "I think I should do that too!",
+            "es": "Creo que yo también debería hacerlo así.",
+            "fr": "Je devrais sûrement faire pareil !",
+            "pt": "Acho que eu também devia fazer isso!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "개념은 어느 정도 이해되셨어요?",
+            "en": "Do you understand the concepts so far?",
+            "es": "¿Entiendes bien los conceptos hasta ahora?",
+            "fr": "Tu comprends bien les notions pour l’instant ?",
+            "pt": "Estás a perceber bem os conceitos até agora?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "절반 정도는 괜찮은데 몇 군데 헷갈려요.",
+            "en": "I understand about half, but some parts confuse me.",
+            "es": "Entiendo como la mitad, pero algunas partes me confunden.",
+            "fr": "J’en comprends environ la moitié, mais certaines choses me mêlent.",
+            "pt": "Percebo mais ou menos metade, mas algumas partes confundem-me."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 부족한 부분이 확실히 있으면 다시 보는 게 좋아요.",
+            "en": "Right, if something feels unclear, it’s better to review it again.",
+            "es": "Claro, si algo no está claro, es mejor revisarlo de nuevo.",
+            "fr": "Oui, quand quelque chose n’est pas clair, mieux vaut le revoir.",
+            "pt": "Pois, quando algo não está claro é melhor rever."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 그래서 다시 정리하려고요.",
+            "en": "Yeah, so I’m trying to整理them again.",
+            "es": "Sí, por eso quiero reorganizarlo todo.",
+            "fr": "Oui, c’est pour ça que je veux tout réorganiser.",
+            "pt": "Sim, por isso quero reorganizar tudo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "맞아요! 한번 더 보고 예제로 넘어가요.",
+            "en": "Exactly! Let’s go over it once more before moving to exercises.",
+            "es": "Exacto, repasemos una vez más antes de pasar a los ejercicios.",
+            "fr": "Exactement ! Révisons encore une fois avant les exercices.",
+            "pt": "Exatamente, vamos rever mais uma vez antes dos exercícios."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 지금 바로 해볼게요.",
+            "en": "Alright, let’s do it now!",
+            "es": "Vale, hagámoslo ahora mismo.",
+            "fr": "D’accord, faisons ça maintenant !",
+            "pt": "Certo, vamos tratar disso agora."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 지난 시험 문제는 풀어보셨어요?",
+            "en": "Did you try solving last year’s exam questions?",
+            "es": "¿Intentaste resolver preguntas de exámenes anteriores?",
+            "fr": "Tu as essayé de faire les questions de l’examen de l’an dernier ?",
+            "pt": "Já tentaste resolver perguntas de exames anteriores?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 근데 몇 문제는 너무 어려웠어요.",
+            "en": "Yes, but a few questions were really difficult.",
+            "es": "Sí, pero algunas preguntas eran muy complicadas.",
+            "fr": "Oui, mais certaines étaient vraiment dures.",
+            "pt": "Sim, mas algumas perguntas eram muito complicadas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 생각보다 어려웠나 보네요!",
+            "en": "Oh wow, sounds like it was harder than expected!",
+            "es": "Vaya, parece que eran más difíciles de lo esperado.",
+            "fr": "Oh wow, ça avait l’air plus difficile que prévu !",
+            "pt": "Uau, parece que eram mais difíceis do que esperavas!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아예 감도 안 잡히는 게 있었어요.",
+            "en": "Some of them didn’t make sense to me at all.",
+            "es": "Había unas que no entendía para nada.",
+            "fr": "Il y en avait que je ne comprenais pas du tout.",
+            "pt": "Havia umas que eu não percebia mesmo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요. 같이 풀어보면 훨씬 수월할 거예요.",
+            "en": "Let’s solve some together—it's much easier that way.",
+            "es": "Podemos resolver algunas juntas, eso ayuda mucho.",
+            "fr": "On peut en résoudre quelques-unes ensemble, ça aide beaucoup.",
+            "pt": "Podemos resolver algumas juntos, ajuda imenso."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "헉, 정말요? 그럼 지금부터 같이 봐요.",
+            "en": "Really? Okay, let’s look at them now.",
+            "es": "¿Ah sí? Entonces revisémoslas ahora.",
+            "fr": "Ah oui ? Alors voyons-les maintenant.",
+            "pt": "É mesmo? Então vamos revê-las agora."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "시험 범위 중에 가장 걱정되는 부분 있어요?",
+            "en": "Is there any chapter you’re especially worried about?",
+            "es": "¿Hay algún tema que te preocupe más que los demás?",
+            "fr": "Il y a un chapitre qui t’inquiète plus que les autres ?",
+            "pt": "Há algum tema que te preocupe mais?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응용 문제가 많은 단원이 제일 걱정돼요.",
+            "en": "The chapter with the applied problems worries me the most.",
+            "es": "La parte con los ejercicios de aplicación es la que más me preocupa.",
+            "fr": "La partie avec les exercices d’application me fait un peu peur.",
+            "pt": "A parte com os exercícios de aplicação é a que mais me preocupa."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아, 그 단원은 다들 어렵다고 하더라고요.",
+            "en": "Yeah, lots of people say that chapter is tough.",
+            "es": "Ah, sí, muchos dicen que esa parte es complicada.",
+            "fr": "Ah oui, beaucoup disent que cette partie est compliquée.",
+            "pt": "Ah sim, muita gente diz que essa parte é complicada."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 설명도 복잡하고요.",
+            "en": "Right, the explanations are quite complicated too.",
+            "es": "Sí, y las explicaciones también son bastante complejas.",
+            "fr": "Oui, et les explications sont assez complexes.",
+            "pt": "Sim, e as explicações também são bastante complexas."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 그 파트만 따로 정리해서 다시 봐요!",
+            "en": "Let’s organize that section separately and review it again.",
+            "es": "Podemos organizar ese tema por separado y repasarlo otra vez.",
+            "fr": "On peut l’organiser séparément et la revoir ensemble.",
+            "pt": "Podemos organizar esse tema à parte e revê-lo outra vez."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 정리하면 좀 나을 것 같아요.",
+            "en": "Organizing it will help a lot!",
+            "es": "Organizarlo seguro que me ayuda.",
+            "fr": "La réorganiser m’aiderait vraiment !",
+            "pt": "Organizar isso vai ajudar imenso!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "공부할 때 시간 관리는 잘 되고 있어요?",
+            "en": "Are you managing your study time well?",
+            "es": "¿Te está yendo bien con la gestión del tiempo de estudio?",
+            "fr": "Tu arrives bien à gérer ton temps d’étude ?",
+            "pt": "Estás a conseguir gerir bem o teu tempo de estudo?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아직 잘은 모르겠어요. 계속 시간이 모자라요.",
+            "en": "Not really. I always run out of time.",
+            "es": "No mucho. Siempre me falta tiempo.",
+            "fr": "Pas vraiment. Je manque toujours de temps.",
+            "pt": "Nada por aí além. Fico sempre sem tempo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 조금 어려울 수 있겠네요.",
+            "en": "Yeah, that can be tricky to balance.",
+            "es": "Sí, equilibrarlo puede ser difícil.",
+            "fr": "Oui, c’est souvent difficile à équilibrer.",
+            "pt": "Pois, pode ser difícil equilibrar tudo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "계획보다 오래 걸리는 게 많아요.",
+            "en": "Everything takes longer than I expect.",
+            "es": "Todo me toma más de lo que esperaba.",
+            "fr": "Tout prend plus de temps que prévu.",
+            "pt": "Tudo leva mais tempo do que eu planeio."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요. 짧게 나눠서 하면 훨씬 나아요.",
+            "en": "Try splitting your study time into shorter blocks—it really helps.",
+            "es": "Prueba dividir el tiempo en bloques más cortos, ayuda bastante.",
+            "fr": "Essaie de diviser ton temps en petites sessions, ça aide beaucoup.",
+            "pt": "Experimenta dividir o tempo em blocos curtos, ajuda bastante."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그 방법 한번 해볼게요!",
+            "en": "Okay, I’ll try that method!",
+            "es": "Vale, probaré ese método.",
+            "fr": "D’accord, je vais essayer cette méthode !",
+            "pt": "Ok, vou experimentar esse método!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "혹시 암기해야 할 부분은 잘 외워져요?",
+            "en": "Are you memorizing the key points well?",
+            "es": "¿Te está yendo bien con memorizar los puntos importantes?",
+            "fr": "Tu arrives à mémoriser les points importants ?",
+            "pt": "Está a correr bem memorizar os pontos importantes?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아니요, 자꾸 까먹어요.",
+            "en": "No, I keep forgetting them.",
+            "es": "No, se me olvida todo.",
+            "fr": "Non, j’oublie tout le temps.",
+            "pt": "Não, esqueço-me sempre."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "헉, 그럼 다른 방식으로 다시 해볼까요?",
+            "en": "Oh no, then want to try a different method?",
+            "es": "Oh vaya, entonces probemos otro método.",
+            "fr": "Oh mince, alors on peut essayer une autre méthode.",
+            "pt": "Oh não? Então podemos tentar um método diferente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아무리 반복해도 기억이 잘 안 나요.",
+            "en": "Even if I repeat them, they don’t stick.",
+            "es": "Aunque repita, no se me queda.",
+            "fr": "Même en répétant, ça ne reste pas.",
+            "pt": "Mesmo repetindo, nada fica."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "예를 들어 이미지나 연결 고리를 만들어보는 것도 좋아요!",
+            "en": "Using images or associations might make it easier!",
+            "es": "Crear imágenes o asociaciones puede hacerlo más fácil.",
+            "fr": "Par exemple créer des images ou des associations !",
+            "pt": "Criar imagens ou associações pode facilitar muito!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "오, 그런 방법은 해본 적 없어요!",
+            "en": "I’ve never tried that—sounds interesting!",
+            "es": "Nunca he probado eso, suena útil.",
+            "fr": "Je n’ai jamais essayé ça, ça a l’air utile !",
+            "pt": "Nunca tentei isso, parece interessante!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "지금까지 진도는 얼마나 나갔어요?",
+            "en": "How far have you studied so far?",
+            "es": "¿Cuánto has estudiado hasta ahora?",
+            "fr": "Tu as étudié combien de chapitres jusqu’ici ?",
+            "pt": "Quanto é que já estudaste até agora?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "절반 정도 공부했어요.",
+            "en": "I’ve studied about half of the material.",
+            "es": "He estudiado alrededor de la mitad.",
+            "fr": "J’ai étudié environ la moitié.",
+            "pt": "Estudei mais ou menos metade."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 그 정도면 잘 하고 계신 거예요!",
+            "en": "Oh, that’s actually really good progress!",
+            "es": "Pues, ¡es un avance muy bueno!",
+            "fr": "Oh, c’est déjà une très bonne avancée !",
+            "pt": "Uau, isso já é um ótimo progresso!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "근데 뒤쪽 단원이 조금 부담돼요.",
+            "en": "But the last chapters feel overwhelming.",
+            "es": "Pero los últimos temas me agobian un poco.",
+            "fr": "Mais les derniers chapitres me stressent un peu.",
+            "pt": "Mas os últimos capítulos deixam-me um bocado ansioso."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요. 남은 부분은 제가 같이 도와드릴게요.",
+            "en": "Great! I can help with the remaining chapters.",
+            "es": "Genial, puedo ayudarte con lo que falta.",
+            "fr": "Super, je peux t’aider pour ce qu’il reste.",
+            "pt": "Perfeito, posso ajudar-te com o que falta."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "도와주시면 정말 감사해요!",
+            "en": "I’d really appreciate your help!",
+            "es": "Tu ayuda me vendría muy bien.",
+            "fr": "Ton aide serait vraiment géniale !",
+            "pt": "A tua ajuda seria fantástica!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오늘 안에 목표량은 채울 수 있을까요?",
+            "en": "Do you think you can finish today’s study goals?",
+            "es": "¿Crees que puedes cumplir tu meta de estudio de hoy?",
+            "fr": "Tu penses pouvoir finir ton objectif d’aujourd’hui ?",
+            "pt": "Achas que consegues cumprir o teu objetivo de hoje?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 조금만 더 하면 채울 수 있을 것 같아요.",
+            "en": "Yes, I think I can finish if I work a bit more.",
+            "es": "Sí, creo que puedo si trabajo un poco más.",
+            "fr": "Oui, je pense pouvoir finir avec un petit effort.",
+            "pt": "Sim, acho que consigo se trabalhar mais um pouco."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오! 생각보다 잘하고 계시네요?",
+            "en": "Wow, you’re doing better than I thought!",
+            "es": "¡Wow! Vas mejor de lo que pensaba.",
+            "fr": "Wow, tu avances encore mieux que prévu !",
+            "pt": "Uau, estás a avançar melhor do que pensei!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "예상보다 속도가 잘 나고 있어요.",
+            "en": "I’m actually going faster than expected.",
+            "es": "Voy más rápido de lo que imaginaba.",
+            "fr": "Je vais même plus vite que ce que j’imaginais.",
+            "pt": "Estou a ir até mais rápido do que esperava."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요. 마지막 체크만 하면 끝이에요!",
+            "en": "Great, you’re almost done—just one last check!",
+            "es": "Perfecto, ya casi terminas, solo falta una revisión final.",
+            "fr": "Génial, tu es presque prêt—il reste juste une dernière vérification.",
+            "pt": "Perfeito, estás quase pronto—falta só uma última revisão."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "그 말 들으니까 더 힘나네요!",
+            "en": "Hearing that gives me more motivation!",
+            "es": "Escuchar eso me motiva aún más.",
+            "fr": "Entendre ça me motive encore plus !",
+            "pt": "Ouvir isso dá-me ainda mais motivação!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 마지막으로 같이 복습 한번 해볼까요?",
+            "en": "Shall we review together one last time?",
+            "es": "¿Revisamos juntos una última vez?",
+            "fr": "On révise une dernière fois ensemble ?",
+            "pt": "Revisamos uma última vez juntos?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "좋아요! 지금 바로 해봐요.",
+            "en": "Sure! Let’s do it now.",
+            "es": "Sí, hagámoslo ahora.",
+            "fr": "Oui, faisons ça maintenant !",
+            "pt": "Sim, vamos a isso agora!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오, 자신감 올라온 것 같아요!",
+            "en": "Oh, you seem much more confident now!",
+            "es": "Parece que estás mucho más seguro ahora.",
+            "fr": "Oh, tu sembles beaucoup plus confiant maintenant !",
+            "pt": "Parece que estás muito mais confiante agora!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 조금씩 감이 잡히는 것 같아요.",
+            "en": "Yeah, I think I’m finally getting the hang of it.",
+            "es": "Creo que por fin estoy entendiendo bien.",
+            "fr": "Oui, je crois que je commence enfin à comprendre.",
+            "pt": "Acho que finalmente estou a apanhar o jeito."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "좋아요! 이제 거의 준비 끝이에요.",
+            "en": "Nice! You’re almost fully prepared.",
+            "es": "Genial, estás casi completamente preparado.",
+            "fr": "Parfait ! Tu es presque totalement prêt.",
+            "pt": "Perfeito, estás quase totalmente preparado."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "응원 고마워요! 정말 도움 돼요.",
+            "en": "Thanks for your support—it really helps!",
+            "es": "Gracias por tu apoyo, me ayuda muchísimo.",
+            "fr": "Merci pour ton soutien, ça m’aide vraiment.",
+            "pt": "Obrigado pelo apoio, ajuda-me imenso!"
+          }
+        }
+      ]
+    }
+  ]
+}

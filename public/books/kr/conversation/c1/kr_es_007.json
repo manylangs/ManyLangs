@@ -1,0 +1,178 @@
+﻿{
+  "chapter_id": "007",
+  "cefr": "C1",
+  "title_es": "Comunicación por correo electrónico",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+
+  "key_expressions": [
+    "Por favor, revise el correo cuando pueda,",
+    "Por favor, consulte el archivo adjunto,",
+    "Lo gestionaré en cuanto me responda,",
+    "¿Desea añadir algo más?,",
+    "Quedo a la espera de su respuesta tras la revisión,"
+  ],
+
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Acabo de enviarle un correo. ¿Podría revisarlo cuando tenga un momento?",
+          "Organicé los materiales que solicitó y los adjunté al mensaje.",
+          "Si nota que falta algo, por favor dígamelo."
+        ],
+        "B": [
+          "Ah, ¡acabo de ver la notificación! Lo abro ahora mismo.",
+          "Vaya, todo está muy bien organizado.",
+          "Perfecto, lo revisaré y le avisaré si necesito algo más."
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Aún no he recibido respuesta al correo que envié ayer.",
+          "Pensé que quizá estaba ocupado y no tuvo tiempo de revisarlo.",
+          "Respóndame cuando le venga bien, sin problema."
+        ],
+        "B": [
+          "Oh, ¡disculpe! Lo acabo de revisar.",
+          "Había más contenido de lo que imaginaba, así que lo estaba leyendo con detalle.",
+          "Voy a ordenar mis comentarios y le responderé en breve."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Le envié hace un rato las actas de la reunión.",
+          "Resumí únicamente los puntos clave para que fuese más fácil de leer.",
+          "Si prefiere una versión completa con detalles, también puedo enviársela."
+        ],
+        "B": [
+          "Perfecto. El resumen es mucho más fácil de revisar.",
+          "Gracias a eso pude captar lo esencial de inmediato.",
+          "Sí, me gustaría que me enviara también la versión detallada."
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Me di cuenta de que la hora mencionada en el correo podía generar confusión.",
+          "La hora final confirmada es hoy a las 3 p. m.",
+          "Lamento si el mensaje anterior causó malentendidos."
+        ],
+        "B": [
+          "Ah, gracias por la aclaración.",
+          "Yo también dudé un poco al revisar la hora.",
+          "Perfecto, estaré listo a las 3 p. m."
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "¿Podría comprobar si el archivo adjunto se abre correctamente?",
+          "El tamaño es un poco grande y temía que pudiera causar problemas.",
+          "Si prefiere otro formato, puedo convertirlo sin problema."
+        ],
+        "B": [
+          "Acabo de abrirlo— ¡sin ningún problema!",
+          "Gracias por adelantarse a revisarlo.",
+          "Si más adelante necesito otro formato, se lo pediré."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "También incluí el borrador del orden del día en el correo.",
+          "Por ahora es solo un esquema básico y se puede ajustar.",
+          "Si tiene sugerencias o quiere modificar algo, dígamelo con confianza."
+        ],
+        "B": [
+          "Genial, el borrador está claro. La estructura general se entiende bien.",
+          "Con algunos retoques pequeños, estará listo para usarse.",
+          "Prepararé mis sugerencias y se las enviaré por correo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "¿El asunto del correo le pareció demasiado largo?",
+          "Lo escribí un poco más extenso para dejar clara la intención.",
+          "Si quiere, puedo hacerlo más breve."
+        ],
+        "B": [
+          "No, al contrario, ¡fue útil!",
+          "Solo con el asunto ya entendía de qué trataba.",
+          "El formato actual está bien; no hace falta cambiarlo."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Me preocupaba estar respondiendo demasiado lento estos días.",
+          "Estaba verificando un asunto importante y eso retrasó un poco mi respuesta.",
+          "Pero estoy intentando gestionar todo lo más rápido posible."
+        ],
+        "B": [
+          "Oh, lo entiendo perfectamente. Sé que tiene mucho trabajo.",
+          "No pasa nada por esperar; la precisión es lo más importante.",
+          "Si necesita algo de mi parte, avíseme sin dudar."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "¿Pudo revisar la versión actualizada del documento que le envié ayer?",
+          "Modifiqué bastante la estructura de la segunda página.",
+          "Si prefiere otro enfoque, puedo volver a ajustarlo."
+        ],
+        "B": [
+          "Sí, la revisé con detalle hace un momento.",
+          "La nueva organización de la segunda página quedó excelente.",
+          "Creo que la versión actual funciona muy bien."
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Planeo enviar el correo final más tarde hoy.",
+          "En cuanto termine la revisión interna, se lo enviaré de inmediato.",
+          "Hágame saber si necesitamos ajustar la fecha límite."
+        ],
+        "B": [
+          "Gracias por avisar.",
+          "Parece que ya casi estamos terminando.",
+          "Si surge algún cambio en el calendario, se lo comunicaré enseguida."
+        ]
+      }
+    }
+  ]
+}
+

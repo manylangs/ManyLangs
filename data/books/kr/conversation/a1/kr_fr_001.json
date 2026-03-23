@@ -1,0 +1,175 @@
+{
+  "chapter_id": "001",
+  "cefr": "A1",
+  "title_fr": "Salutations",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "Bonjour !",
+    "Ça va ?",
+    "Ça fait longtemps !",
+    "Content(e) de te voir !",
+    "Ta journée se passe bien ?"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Bonjour ! Comment tu te sens aujourd’hui ?",
+          "Ah d’accord ! Moi, ça va plutôt bien.",
+          "Super ! Passe une bonne journée."
+        ],
+        "B": [
+          "Salut ! Je suis un peu fatigué, mais ça va.",
+          "C’est bien. Courage !",
+          "Merci !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "Salut ! Tu as une minute ?",
+          "Parfait, on peut parler un peu.",
+          "Alors marchons un moment ensemble !"
+        ],
+        "B": [
+          "Bonjour ! Oui, j’ai un peu de temps. Qu’est-ce qu’il y a ?",
+          "Ah super ! Moi aussi je suis libre.",
+          "OK, allons-y !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "Bonjour ! Tu as l’air un peu occupé aujourd’hui.",
+          "Je comprends. Je me suis levée tôt, alors je suis un peu fatiguée aussi.",
+          "Bon, j’espère que ta journée se passera bien !"
+        ],
+        "B": [
+          "Salut ! Oui, j’ai pas mal de choses à faire.",
+          "Oui, c’est vrai. Tout le monde est occupé en ce moment.",
+          "Oui ! Merci !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "Salut ! Il ne fait pas super beau aujourd’hui ?",
+          "Oui, ça me met de bonne humeur.",
+          "Ça me fait plaisir de te voir par un temps pareil !"
+        ],
+        "B": [
+          "Oui, c’est vraiment agréable !",
+          "Moi aussi. Le soleil fait du bien.",
+          "Ravi(e) de te voir aussi !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Hé ! Tu vas quelque part ?",
+          "Parfait, j’y vais aussi.",
+          "Alors allons-y ensemble !"
+        ],
+        "B": [
+          "Oui ! Je vais vers l’arrêt de bus.",
+          "Ah oui ? Quelle chance !",
+          "OK, allons ensemble !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Salut ! Tu as déjà déjeuné ?",
+          "Oh ça a l’air bon ! Moi, je n’ai pas encore mangé.",
+          "Bon, je devrais aller manger moi aussi !"
+        ],
+        "B": [
+          "Oui ! J’ai mangé quelque chose de simple.",
+          "Si tu veux, on peut manger ensemble ?",
+          "D’accord ! Bon appétit !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Bonjour ! Tu as l’air de bonne humeur aujourd’hui !",
+          "Oh génial ! Ça me fait plaisir aussi.",
+          "OK, passe une excellente journée !"
+        ],
+        "B": [
+          "Oui ! Il m’est arrivé quelque chose de chouette.",
+          "Merci ! Je me sens super bien.",
+          "Merci ! Toi aussi."
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Salut ! Tu as bien dormi cette nuit ?",
+          "Ah je vois, c’est pour ça que tu as l’air un peu fatigué.",
+          "J’espère que tu pourras te reposer tôt ce soir !"
+        ],
+        "B": [
+          "Hmm… pas vraiment. Je n’ai pas assez dormi.",
+          "Oui, j’ai mal dormi cette nuit.",
+          "Oui, tu as raison. Merci du conseil !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Hé ! Où est-ce que tu vas aujourd’hui ?",
+          "Ah d’accord ! Moi, je fais juste une petite promenade.",
+          "D’accord, à la prochaine !"
+        ],
+        "B": [
+          "Salut ! Je vais retrouver quelqu’un.",
+          "Une promenade ? Quelle chance !",
+          "Oui ! À bientôt !"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "Bonjour ! Tu te sens bien aujourd’hui ?",
+          "Je comprends. Moi, je me sens normal.",
+          "Allez, gardons la pêche aujourd’hui !"
+        ],
+        "B": [
+          "Hmm… je me sens un peu dans le vague.",
+          "Ah oui ? Pourtant tu as l’air en forme !",
+          "Merci ! Je vais faire de mon mieux."
+        ]
+      }
+    }
+  ]
+}

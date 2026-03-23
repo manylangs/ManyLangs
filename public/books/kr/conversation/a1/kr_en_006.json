@@ -1,0 +1,175 @@
+{
+  "chapter_id": "006",
+  "cefr": "A1",
+  "title_en": "Numbers and Prices",
+  "speaker_label_removed": true,
+  "voice_validation_required": true,
+  "key_expressions": [
+    "How much is this?,",
+    "Can it be cheaper?,",
+    "What's the price?,",
+    "Is there a discount?,",
+    "Do you have other colors?,"
+  ],
+  "sets": [
+    {
+      "set_id": 1,
+      "dialogue_layer": {
+        "A": [
+          "Excuse me, how much is this?",
+          "Oh, that’s better than I expected. Can I get a discount?",
+          "Great! I’ll take it at that price."
+        ],
+        "B": [
+          "That one is 15,000 won!",
+          "I can give you a small discount—about 1,000 won off.",
+          "Sure, I’ll ring it up for you!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 2,
+      "dialogue_layer": {
+        "A": [
+          "This hat looks nice. How much is it?",
+          "Hmm… it's a bit pricey. Do you have other colors?",
+          "Then I’ll go with the blue one!"
+        ],
+        "B": [
+          "That hat is 20,000 won.",
+          "Yes! We have it in blue and black.",
+          "Great, I'll bring the blue one for you."
+        ]
+      }
+    },
+
+    {
+      "set_id": 3,
+      "dialogue_layer": {
+        "A": [
+          "How much is this drink?",
+          "Oh! That’s not bad. Can I change the size?",
+          "Then I’ll take a large, please!"
+        ],
+        "B": [
+          "The regular size is 4,000 won.",
+          "Yes, a large is 1,000 won extra.",
+          "Alright, I’ll make it a large!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 4,
+      "dialogue_layer": {
+        "A": [
+          "How much are these if I buy two?",
+          "Oh, that’s cheaper than I expected!",
+          "Okay, I’ll take both."
+        ],
+        "B": [
+          "Two of them would be 10,000 won.",
+          "They’re on sale right now, so the price is lower.",
+          "Sure, I’ll pack them for you!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 5,
+      "dialogue_layer": {
+        "A": [
+          "Do you have a smaller size?",
+          "Nice! Is there any price difference?",
+          "Then I’ll take the smaller one."
+        ],
+        "B": [
+          "Yes, we do have a smaller size.",
+          "The price is the same!",
+          "Okay, I’ll get the smaller one for you."
+        ]
+      }
+    },
+
+    {
+      "set_id": 6,
+      "dialogue_layer": {
+        "A": [
+          "Um… what’s the cheapest item here?",
+          "Oh, that’s good. Can I buy it now?",
+          "Great! I’ll take one."
+        ],
+        "B": [
+          "The cheapest one is this—it’s 3,000 won.",
+          "Yes, you can buy it right away!",
+          "Sure, I’ll get one ready for you."
+        ]
+      }
+    },
+
+    {
+      "set_id": 7,
+      "dialogue_layer": {
+        "A": [
+          "Do you accept card payments?",
+          "Oh, good. There’s no extra fee, right?",
+          "Alright, I’ll pay by card."
+        ],
+        "B": [
+          "Yes, we accept cards!",
+          "Right, there’s no extra fee.",
+          "Okay, I’ll process your payment!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 8,
+      "dialogue_layer": {
+        "A": [
+          "Is this brand new?",
+          "Nice! Is this the last one?",
+          "Then I’ll buy it now."
+        ],
+        "B": [
+          "Yes, it’s completely new!",
+          "Yes, this is the last one we have.",
+          "Alright! I’ll get it ready for you."
+        ]
+      }
+    },
+
+    {
+      "set_id": 9,
+      "dialogue_layer": {
+        "A": [
+          "Is the price here correct?",
+          "Oh, it’s on sale?",
+          "Then I guess it’s best to buy it now!"
+        ],
+        "B": [
+          "Yes, it used to be 18,000 won.",
+          "But it’s on sale for 15,000 won right now!",
+          "That’s right—only until today!"
+        ]
+      }
+    },
+
+    {
+      "set_id": 10,
+      "dialogue_layer": {
+        "A": [
+          "How much is it with gift wrapping?",
+          "Oh, the wrapping fee is cheaper than I thought!",
+          "Okay, please wrap it for me."
+        ],
+        "B": [
+          "With wrapping, it comes to 12,000 won.",
+          "Yes, the wrapping is only 1,000 won.",
+          "Sure, I’ll wrap it nicely for you!"
+        ]
+      }
+    }
+  ]
+}

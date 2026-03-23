@@ -1,0 +1,666 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b2",
+    "id": "010"
+  },
+  "title": {
+    "target": "SNS와 온라인 커뮤니티",
+    "en": "SNS and Online Communities",
+    "es": "Redes sociales y comunidades en línea",
+    "fr": "Réseaux sociaux et communautés en ligne",
+    "pt": "Redes sociais e comunidades online"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "SNS에서 검색이 자꾸 안 되는데 왜 그럴까요?",
+            "en": "Search on SNS isn’t working at all. Do you know why?",
+            "es": "La búsqueda en la red social no funciona en absoluto. ¿Sabes por qué?",
+            "fr": "La recherche ne fonctionne plus sur mon réseau social. Vous savez pourquoi ?",
+            "pt": "A pesquisa na rede social deixou de funcionar. Sabe porquê?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "어제부터 서버가 불안정하다는 얘기가 있어요.",
+            "en": "I heard the server’s been unstable since yesterday.",
+            "es": "Escuché que los servidores han estado inestables desde ayer.",
+            "fr": "J’ai entendu dire que les serveurs sont instables depuis hier.",
+            "pt": "Ouvi dizer que os servidores têm estado instáveis desde ontem."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오 그럼 잠깐 오류일 수도 있겠네요.",
+            "en": "Oh really? Then maybe it's just a temporary glitch.",
+            "es": "Oh, entonces quizá sea solo un fallo temporal.",
+            "fr": "Ah d’accord, alors c’est peut-être juste un bug temporaire.",
+            "pt": "Ah, então pode ser só uma falha temporária."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 가끔 그런 증상 있다가 금방 괜찮아지더라고요.",
+            "en": "Yes, it happens sometimes but usually goes back to normal quickly.",
+            "es": "Sí, pasa a veces, pero normalmente vuelve a la normalidad rápido.",
+            "fr": "Oui, cela arrive parfois mais ça revient vite à la normale.",
+            "pt": "Sim, isso acontece às vezes, mas costuma voltar ao normal rapidamente."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 잠시 후에 다시 시도해볼게요.",
+            "en": "Alright, I’ll try again in a little while.",
+            "es": "De acuerdo, volveré a intentarlo dentro de un rato.",
+            "fr": "Très bien, je réessaierai un peu plus tard.",
+            "pt": "Certo, vou tentar novamente daqui a pouco."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 대부분 금방 정상으로 돌아오니까 조금만 기다려보세요.",
+            "en": "Right, it should stabilize soon, so please try again later.",
+            "es": "Seguro que se estabiliza pronto, así que intenta más tarde.",
+            "fr": "Ça devrait se stabiliser bientôt, réessayez un peu plus tard.",
+            "pt": "Deve estabilizar em breve, tente novamente mais tarde."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "댓글이 갑자기 하나도 안 보이는데 저만 그런가요?",
+            "en": "All the comments suddenly disappeared. Is it just me?",
+            "es": "Todos los comentarios desaparecieron de repente. ¿Soy la única?",
+            "fr": "Tous les commentaires ont soudainement disparu. Je suis la seule ?",
+            "pt": "Todos os comentários desapareceram de repente. Sou só eu?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "가끔 커뮤니티 규칙 위반 의심되면 자동으로 숨김 처리되기도 해요.",
+            "en": "Sometimes posts get hidden automatically if there’s suspected rule violation.",
+            "es": "A veces el sistema oculta contenido si sospecha una posible infracción.",
+            "fr": "Parfois, certains contenus sont masqués automatiquement si une infraction est suspectée.",
+            "pt": "Às vezes o sistema oculta conteúdo se suspeitar de violação das regras."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아 그런 제한이 걸리면 그럴 수 있겠네요!",
+            "en": "Oh, that kind of restriction could cause this!",
+            "es": "Ah, un tipo de restricción podría causar eso.",
+            "fr": "Ah, ce type de limitation peut vraiment provoquer ça !",
+            "pt": "Ah, um tipo de restrição pode mesmo causar isso!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 보통 일정 시간 지나면 다시 보이더라고요.",
+            "en": "Yes, they usually reappear after some time.",
+            "es": "Sí, normalmente vuelve a aparecer después de un tiempo.",
+            "fr": "Oui, en général ils réapparaissent après quelque temps.",
+            "pt": "Sim, normalmente volta a aparecer passado algum tempo."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 제 계정 상태도 한번 확인해볼게요.",
+            "en": "Then I should check my account status too.",
+            "es": "Entonces también debería revisar el estado de mi cuenta.",
+            "fr": "Alors je devrais vérifier l’état de mon compte aussi.",
+            "pt": "Então devo verificar o estado da minha conta também."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "확인해보시고 이상 있으면 고객센터에 문의하셔도 돼요.",
+            "en": "If anything seems off, you can also contact support.",
+            "es": "Si algo no te cuadra, puedes contactar con asistencia.",
+            "fr": "Si quelque chose vous semble étrange, vous pouvez contacter l’assistance.",
+            "pt": "Se notar algo estranho, pode contactar o apoio ao cliente."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "요즘 알림이 너무 많이 와서 정신이 없어요.",
+            "en": "I’m getting so many notifications lately that it’s overwhelming.",
+            "es": "Últimamente recibo tantas notificaciones que es agotador.",
+            "fr": "Je reçois tellement de notifications que c’en devient difficile à gérer.",
+            "pt": "Estou a receber tantas notificações que já se torna cansativo."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "알림 설정 메뉴 들어가시면 카테고리별로 끌 수 있어요.",
+            "en": "In the notification settings, you can turn them off by category.",
+            "es": "En los ajustes de notificaciones puedes desactivar las que no necesites.",
+            "fr": "Dans les paramètres de notifications, vous pouvez désactiver celles qui ne vous sont pas utiles.",
+            "pt": "Nas definições de notificações pode desativar o que não precisar."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오 그 메뉴에서 조절할 수 있다면 편하겠네요!",
+            "en": "Oh, being able to adjust them there sounds really convenient!",
+            "es": "Oh, poder ajustarlas ahí suena bastante útil.",
+            "fr": "Ah, pouvoir les ajuster là-dessus serait vraiment pratique !",
+            "pt": "Ah, poder ajustar isso aí seria mesmo útil!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 필요 없는 알림도 꽤 많더라고요.",
+            "en": "Yes, there are quite a few you don’t actually need.",
+            "es": "Sí, hay muchas que realmente no hacen falta.",
+            "fr": "Oui, il y en a beaucoup qui ne sont pas vraiment nécessaires.",
+            "pt": "Sim, há muitas que não são realmente importantes."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 알림 종류를 좀 정리해봐야겠어요.",
+            "en": "Then I’ll tidy up my notification categories.",
+            "es": "Voy a reorganizar mis categorías de notificaciones.",
+            "fr": "Je vais donc organiser mes catégories de notifications.",
+            "pt": "Vou reorganizar as minhas categorias de notificações."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 필요한 것만 남기면 훨씬 깔끔해요.",
+            "en": "Keeping only the important ones makes things much cleaner.",
+            "es": "Al dejar solo las importantes, todo se vuelve más claro.",
+            "fr": "En gardant seulement les notifications importantes, tout devient plus clair.",
+            "pt": "Ao manter só as essenciais, tudo fica mais simples."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "커뮤니티에서 글이 자꾸 삭제되는데 이유가 뭘까요?",
+            "en": "My posts keep getting deleted. What could be the reason?",
+            "es": "Mis publicaciones siguen siendo eliminadas. ¿Sabes por qué podría ser?",
+            "fr": "Mes publications sont souvent supprimées. Vous savez pourquoi ?",
+            "pt": "As minhas publicações estão a ser apagadas. Sabe porquê?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "자동 필터가 민감하게 반응하는 경우가 있어요.",
+            "en": "The auto-filter sometimes reacts a bit strictly.",
+            "es": "El filtro automático a veces es un poco estricto.",
+            "fr": "Le filtre automatique peut parfois être un peu strict.",
+            "pt": "O filtro automático pode ser um pouco rígido às vezes."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아 그러면 규칙 때문에 걸렸을 수 있겠네요.",
+            "en": "Oh, then it might really be because of the rules.",
+            "es": "Ah, entonces seguramente sea por las normas de la comunidad.",
+            "fr": "Ah, alors c’est probablement lié aux règles du site.",
+            "pt": "Ah, então provavelmente é por causa das regras."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 특정 단어나 문맥 때문에 삭제되기도 해요.",
+            "en": "Yes, certain words or contexts can trigger deletion.",
+            "es": "Sí, ciertas palabras o contextos pueden activar la eliminación.",
+            "fr": "Oui, certains mots ou contextes peuvent déclencher la suppression.",
+            "pt": "Sim, certas palavras ou contextos podem desencadear a remoção."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 다음엔 조금 더 조심해서 써야겠어요.",
+            "en": "I guess I should be more careful next time.",
+            "es": "Tendré que ser más cuidadosa la próxima vez.",
+            "fr": "Je devrais faire un peu plus attention la prochaine fois.",
+            "pt": "Vou ter mais cuidado da próxima vez."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 규칙 범위만 지키면 잘 유지돼요.",
+            "en": "As long as you stay within the rules, posts usually stay up.",
+            "es": "Mientras respetes las reglas, normalmente tus publicaciones se mantienen visibles.",
+            "fr": "Tant que vous respectez les règles, vos publications resteront visibles.",
+            "pt": "Se respeitar as regras, as suas publicações devem manter-se online."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "계정이 갑자기 잠겼는데 왜 이런 걸까요?",
+            "en": "My account suddenly got locked. Why would that happen?",
+            "es": "Mi cuenta de repente se bloqueó. ¿Por qué pasa eso?",
+            "fr": "Mon compte s’est soudainement verrouillé. Pourquoi cela arrive-t-il ?",
+            "pt": "A minha conta ficou bloqueada de repente. Porque é que isso acontece?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "보안 이유로 이상 활동 감지되면 자동으로 잠겨요.",
+            "en": "If suspicious activity is detected, accounts get locked for security.",
+            "es": "Cuando se detecta actividad sospechosa, la cuenta se bloquea automáticamente.",
+            "fr": "Quand une activité suspecte est détectée, le compte se verrouille automatiquement.",
+            "pt": "Quando há atividade suspeita, a conta é bloqueada automaticamente."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오 로그인 시도 실패 때문일 수도 있겠네요!",
+            "en": "Oh, failed login attempts could definitely cause that!",
+            "es": "Oh, varios intentos fallidos de inicio de sesión podrían explicarlo.",
+            "fr": "Ah, plusieurs tentatives de connexion échouées pourraient expliquer ça.",
+            "pt": "Ah, várias tentativas falhadas de início de sessão podem explicar isso!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 누가 여러 번 로그인 시도하면 그렇게 돼요.",
+            "en": "Yes, multiple failed logins can trigger it.",
+            "es": "Sí, múltiples intentos fallidos pueden activarlo.",
+            "fr": "Oui, plusieurs échecs de connexion peuvent le déclencher.",
+            "pt": "Sim, várias tentativas falhadas podem desencadear esse bloqueio."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 비밀번호 먼저 재설정해볼게요.",
+            "en": "Then I’ll reset my password first.",
+            "es": "Entonces restableceré mi contraseña primero.",
+            "fr": "Je vais réinitialiser mon mot de passe en premier.",
+            "pt": "Então vou redefinir a palavra-passe primeiro."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "재설정하고 인증만 하면 금방 풀려요.",
+            "en": "Once you reset and verify, it usually unlocks quickly.",
+            "es": "Una vez restablecida la contraseña, normalmente recuperas el acceso rápido.",
+            "fr": "Une fois la réinitialisation faite, vous devriez retrouver l’accès rapidement.",
+            "pt": "Depois de redefinir e confirmar, costuma desbloquear rapidamente."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "팔로워 추천이 너무 엉뚱하게 떠서 좀 당황했어요.",
+            "en": "I’m getting follower recommendations that don’t make any sense.",
+            "es": "Las recomendaciones de seguidores no tienen ningún sentido.",
+            "fr": "Les suggestions d’abonnements n’ont aucun sens. C’est étrange.",
+            "pt": "As recomendações de seguidores não fazem qualquer sentido."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "최근 본 게시물 기반으로 추천될 때가 많아요.",
+            "en": "It often bases recommendations on recently viewed posts.",
+            "es": "Las sugerencias suelen basarse en las publicaciones que has visto últimamente.",
+            "fr": "Les recommandations se basent souvent sur ce que vous regardez récemment.",
+            "pt": "As sugestões baseiam-se muitas vezes no que viu recentemente."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아 알고리즘이 그런 식으로 추측하기도 하는군요!",
+            "en": "Oh, so the algorithm can guess like that!",
+            "es": "Ah, entonces el algoritmo puede adivinar un poco al azar.",
+            "fr": "Ah, donc l’algorithme peut deviner un peu au hasard.",
+            "pt": "Ah, então o algoritmo pode fazer suposições aleatórias."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 조금만 다른 거 보면 추천이 확 변하기도 해요.",
+            "en": "Yes, a slight change in your activity can shift recommendations a lot.",
+            "es": "Sí, un pequeño cambio en tu actividad puede modificar mucho las recomendaciones.",
+            "fr": "Oui, un petit changement dans votre activité peut modifier fortement les suggestions.",
+            "pt": "Sim, uma pequena mudança na atividade pode alterar muito as recomendações."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 관심사도 한번 다시 체크해봐야겠어요.",
+            "en": "Then I should review my interest settings.",
+            "es": "Voy a revisar mis intereses configurados.",
+            "fr": "Je vais revoir mes centres d’intérêt, alors.",
+            "pt": "Vou rever as minhas preferências e interesses."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "관심사 수정하시면 추천 정확도도 조금 올라가요.",
+            "en": "Updating your interests usually improves accuracy.",
+            "es": "Si actualizas tus intereses, las sugerencias serán más precisas.",
+            "fr": "Si vous mettez à jour vos intérêts, les recommandations seront plus pertinentes.",
+            "pt": "Se atualizar os interesses, as sugestões ficam mais precisas."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "커뮤니티 알림이 너무 늦게 와서 불편해요.",
+            "en": "Community notifications arrive way too late. It’s inconvenient.",
+            "es": "Las notificaciones de la comunidad llegan demasiado tarde. Es incómodo.",
+            "fr": "Les notifications des communautés arrivent beaucoup trop tard. C’est gênant.",
+            "pt": "As notificações da comunidade chegam demasiado tarde. É inconveniente."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "알림 우선순위가 낮으면 늦게 올 수 있어요.",
+            "en": "If the priority is low, notifications can be delayed.",
+            "es": "Si la prioridad es baja, las notificaciones pueden retrasarse.",
+            "fr": "Si la priorité est basse, les notifications peuvent être retardées.",
+            "pt": "Se a prioridade estiver baixa, podem chegar com atraso."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오 설정 때문이면 금방 해결되겠네요!",
+            "en": "Oh, if it’s because of settings, that should be simple to fix!",
+            "es": "Oh, si es por la configuración, debería ser fácil de arreglar.",
+            "fr": "Ah, si c’est un réglage, cela devrait être facile à corriger !",
+            "pt": "Ah, se for por causa das definições, deve ser fácil de resolver!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 우선순위 높이면 거의 바로 도착해요.",
+            "en": "Yes, once you raise the priority they come almost instantly.",
+            "es": "Sí, al subir la prioridad llegan casi al instante.",
+            "fr": "Oui, une fois la priorité augmentée, elles arrivent presque instantanément.",
+            "pt": "Sim, ao aumentar a prioridade chegam quase de imediato."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 우선 중요한 알림만 우선순위로 바꿔볼게요.",
+            "en": "Then I’ll set only the important ones to high priority.",
+            "es": "Voy a poner solo las importantes como prioridad alta.",
+            "fr": "Je vais mettre seulement les notifications importantes en priorité.",
+            "pt": "Vou colocar apenas as notificações importantes como prioridade alta."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 중요한 것만 올려두면 효율적이에요.",
+            "en": "Keeping only the essential ones on high priority is efficient.",
+            "es": "Es más eficiente dejar solo las notificaciones esenciales como prioridad alta.",
+            "fr": "C’est plus efficace de ne garder que les alertes essentielles en priorité.",
+            "pt": "É mais eficiente deixar só as notificações essenciais em alta prioridade."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "제가 쓴 글이 추천을 거의 못 받는데 왜 그런 걸까요?",
+            "en": "My posts barely get any recommendations. Why is that?",
+            "es": "Mis publicaciones casi no reciben recomendaciones. ¿Por qué será?",
+            "fr": "Mes publications n’obtiennent presque aucune recommandation. Pourquoi ?",
+            "pt": "As minhas publicações quase não recebem recomendações. Porquê?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "게시 시각이 애매하면 노출이 적게 될 수도 있어요.",
+            "en": "If the posting time is off, exposure can be low.",
+            "es": "Si publicas a una hora poco activa, la visibilidad baja mucho.",
+            "fr": "Si vous publiez au mauvais moment, la visibilité peut être faible.",
+            "pt": "Se publicar numa hora pouco ativa, a visibilidade baixa muito."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "아 알고리즘 타이밍이 중요하군요!",
+            "en": "Ah, so timing really matters!",
+            "es": "Ah, entonces el horario realmente influye.",
+            "fr": "Ah, donc le bon timing joue vraiment un rôle !",
+            "pt": "Ah, então o horário importa mesmo!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 사람들이 활발할 때 올리면 훨씬 좋아요.",
+            "en": "Yes, posting when people are active helps a lot.",
+            "es": "Sí, publicar cuando la gente está activa ayuda bastante.",
+            "fr": "Oui, publier quand les gens sont actifs aide beaucoup.",
+            "pt": "Sim, publicar quando há mais utilizadores ativos ajuda bastante."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 활동 시간대도 신경 써봐야겠어요.",
+            "en": "Then I should pay attention to posting at active hours.",
+            "es": "Voy a fijarme en los momentos en que hay más actividad.",
+            "fr": "Je vais faire attention aux heures où il y a plus d’activité.",
+            "pt": "Vou prestar atenção aos períodos de maior atividade."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 반응 많은 시간에 올리면 효과 있어요.",
+            "en": "Right, uploading during high-engagement hours is more effective.",
+            "es": "Subir contenido en horas de mayor interacción siempre es más efectivo.",
+            "fr": "Poster aux heures d’engagement élevé est toujours plus efficace.",
+            "pt": "Publicar em horários de maior interação é sempre mais eficaz."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "어떤 커뮤니티는 분위기가 너무 날카로워서 적응이 힘들어요.",
+            "en": "Some communities feel so harsh that it’s hard to participate.",
+            "es": "Algunas comunidades tienen un ambiente tan tenso que me cuesta participar.",
+            "fr": "Dans certaines communautés, l’ambiance est tellement dure que j’ai du mal à participer.",
+            "pt": "Algumas comunidades têm um ambiente tão rígido que é difícil participar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "커뮤니티마다 톤이 아예 다르더라고요.",
+            "en": "Each community has its own tone and culture.",
+            "es": "Cada comunidad tiene su propio tono y cultura.",
+            "fr": "Chaque communauté a son propre ton et sa propre culture.",
+            "pt": "Cada comunidade tem o seu próprio tom e cultura."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오 그런 차이가 있다고 들으면 좀 이해가 되네요.",
+            "en": "Oh, hearing that difference actually helps me understand.",
+            "es": "Oh, saber esa diferencia ayuda a entender mejor.",
+            "fr": "Ah, savoir qu’il y a une telle différence aide à comprendre.",
+            "pt": "Ah, perceber essa diferença ajuda a entender melhor."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 어떤 곳은 친절한 편인데 어떤 곳은 날카로워요.",
+            "en": "Yes, some are friendly while others feel more intense.",
+            "es": "Sí, algunas son más amables y otras son mucho más estrictas.",
+            "fr": "Oui, certaines sont accueillantes alors que d’autres sont beaucoup plus strictes.",
+            "pt": "Sim, algumas são acolhedoras enquanto outras são bem mais exigentes."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 분위기 맞는 곳만 중심으로 이용해봐야겠어요.",
+            "en": "Then I’ll focus on communities that match my vibe.",
+            "es": "Me centraré en comunidades donde me sienta cómoda.",
+            "fr": "Je vais me concentrer sur les communautés où je me sens plus à l’aise.",
+            "pt": "Vou focar-me nas comunidades onde me sinto mais confortável."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "맞아요, 자신에게 맞는 분위기 찾는 게 제일 편해요.",
+            "en": "Finding one that suits you best makes the experience better.",
+            "es": "Encontrar un lugar que encaje contigo hace la experiencia mejor.",
+            "fr": "Trouver un espace qui vous correspond est ce qu’il y a de mieux.",
+            "pt": "Encontrar um espaço que combine consigo melhora muito a experiência."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "SNS에 올릴 사진을 어떻게 꾸밀지 고민돼요.",
+            "en": "I can’t decide how to edit my photos for SNS.",
+            "es": "No sé cómo editar mis fotos para publicarlas en redes sociales.",
+            "fr": "Je ne sais pas comment retoucher mes photos pour les publier sur les réseaux.",
+            "pt": "Não sei como editar as minhas fotos para publicar nas redes sociais."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "요즘은 감성 필터 쓰는 분들이 많아요.",
+            "en": "A lot of people use aesthetic filters these days.",
+            "es": "Hoy en día mucha gente usa filtros estéticos.",
+            "fr": "Beaucoup de gens utilisent des filtres esthétiques aujourd’hui.",
+            "pt": "Hoje em dia muita gente usa filtros estéticos."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "오 그런 스타일이면 예쁘게 연출되겠네요!",
+            "en": "Oh, that style sounds like it would look really nice!",
+            "es": "Oh, ese estilo podría quedar muy bonito.",
+            "fr": "Ah, ce style-là pourrait vraiment donner un joli rendu !",
+            "pt": "Ah, esse estilo pode ficar muito bonito!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 조금만 손봐도 분위기가 확 달라지죠.",
+            "en": "Yes, even small adjustments can change the whole vibe.",
+            "es": "Sí, incluso pequeños ajustes pueden cambiar totalmente el ambiente.",
+            "fr": "Oui, même des retouches légères peuvent changer complètement l’ambiance.",
+            "pt": "Sim, até pequenos ajustes podem mudar completamente o ambiente."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 필터도 여러 가지 적용해보면서 골라볼게요.",
+            "en": "Then I’ll try different filters and choose one I like.",
+            "es": "Probaré diferentes filtros y elegiré el que más me guste.",
+            "fr": "Je vais tester différents filtres et choisir celui qui me plaît le plus.",
+            "pt": "Vou experimentar vários filtros e escolher o que mais gostar."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "여러 개 테스트해보시고 제일 마음에 드는 걸로 올리세요.",
+            "en": "Try a few and pick the one that feels best for you.",
+            "es": "Prueba varios y elige el que mejor se adapte a tu estilo.",
+            "fr": "Testez-en plusieurs et gardez celui qui vous convient le mieux.",
+            "pt": "Experimente alguns e escolha o que combina melhor consigo."
+          }
+        }
+      ]
+    }
+  ]
+}
