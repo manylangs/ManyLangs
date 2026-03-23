@@ -1,7 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  experimental: {
+    serverComponentsExternalPackages: [],
+  },
+
+  webpack: (config) => {
+    config.externals = [
+      ...(config.externals || []),
+      {
+        "./content": "commonjs ./content",
+      },
+    ];
+    return config;
+  },
 };
 
 export default nextConfig;
