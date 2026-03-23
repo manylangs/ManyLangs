@@ -147,7 +147,6 @@ export default function LandingPage() {
         )}
       </header>
 
-      {/* Hero */}
       <section style={heroSection}>
         <p
           style={{
@@ -159,6 +158,11 @@ export default function LandingPage() {
         >
           <span style={{ display: "block" }}>
             Learn to use real language — not just memorize it.
+          </span>
+
+          {/* 🔥 추가 (핵심: 결과 문장) */}
+          <span style={{ display: "block", marginTop: 6 }}>
+            Build real-world speaking skills step by step.
           </span>
         </p>
 
@@ -175,9 +179,6 @@ export default function LandingPage() {
               Try Free Lesson
             </button>
           </a>
-
-          {/* 🔥 보조 CTA */}
-
         </div>
 
         {/* 🔥 신뢰 한 줄 */}
@@ -197,7 +198,7 @@ export default function LandingPage() {
         <span
           style={{
             display: "block",
-            fontSize: 13,
+            fontSize: 12,
             opacity: 0.6,
             textAlign: "center",
             marginTop: 6,
@@ -206,6 +207,7 @@ export default function LandingPage() {
           Grammar · Speaking · Vocabulary · Idioms · Real-world usage
         </span>
       </section>
+
       {/* Demo Section */}
       <section
         id="demo"
@@ -217,7 +219,7 @@ export default function LandingPage() {
       >
         <h2 style={sectionTitle}>How you’ll learn</h2>
 
-        {/* 🔥 추가 (핵심 카피) */}
+        {/* 🔥 핵심 카피 */}
         <p
           style={{
             fontSize: 14,
@@ -404,16 +406,44 @@ export default function LandingPage() {
       <section id="pricing" style={sectionCenter}>
         <h2 style={sectionTitle}>Pricing</h2>
 
+        {/* 🔥 추가 (SaaS 핵심 문장) */}
+        <p
+          style={{
+            fontSize: 14,
+            color: "#666",
+            textAlign: "center",
+            maxWidth: 520,
+            margin: "0 auto 24px",
+            lineHeight: 1.6,
+          }}
+        >
+          Unlimited learning access with flexible coupon-based pricing.
+        </p>
+
         <div style={pricingCard}>
           <h3 style={pricingTitle}>Coupon Packs</h3>
 
-          <div style={{ fontSize: 14, lineHeight: 1.6, color: "#444", marginBottom: 16 }}>
+          <div
+            style={{
+              fontSize: 14,
+              lineHeight: 1.6,
+              color: "#444",
+              marginBottom: 16,
+            }}
+          >
             Purchase once and receive coupons.
             Each coupon unlocks one selected course for 30 days.
           </div>
 
           {/* 가격 테이블 */}
-          <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 16 }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: 8,
+              marginBottom: 16,
+            }}
+          >
             {[
               { price: "$3", count: "2 coupons" },
               { price: "$5", count: "4 coupons" },
@@ -514,15 +544,19 @@ export default function LandingPage() {
           </div>
         )
       }
-      <div style={{
-        maxWidth: 600,
-        margin: "40px auto 0",
-        fontSize: 13,
-        color: "#666",
-        textAlign: "center",
-        lineHeight: 1.6,
-      }}>
+      <div
+        style={{
+          maxWidth: 600,
+          margin: "40px auto 0",
+          fontSize: 13,
+          color: "#666",
+          textAlign: "center",
+          lineHeight: 1.6,
+        }}
+      >
         ManyLangs is a language learning platform providing structured lessons for real-world communication.
+        <br />
+        Designed for learners worldwide.
       </div>
       {/* Footer */}
       <footer style={footerStyle}>
