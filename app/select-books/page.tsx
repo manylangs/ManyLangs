@@ -1,6 +1,7 @@
 // app/select-books/page.tsx ui ux 최종/but쿠폰 안나오는코드/
 "use client";
 
+import { LANGUAGES } from "@/app/config/languages";
 import { useEffect, useState } from "react";
 import { useAuth, useClerk, useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
@@ -35,13 +36,13 @@ type Amount = "3" | "5" | "20" | "50" | "100";
 
 /* ================= constants ================= */
 
-const LANGUAGE_OPTIONS = [
-  { value: "kr", label: "Korean" },
-  { value: "en", label: "English" },
-  { value: "es", label: "Spanish" },
-  { value: "fr", label: "French" },
-  { value: "pt", label: "Portuguese" },
-];
+// const LANGUAGES = [
+//   { code: "kr", label: "Korean" },
+//   { code: "en", label: "English" },
+//   { code: "es", label: "Spanish" },
+//   { code: "fr", label: "French" },
+//   { code: "pt", label: "Portuguese" },
+// ];import { LANGUAGES } from "@/app/config/languages"; 여기에서 단일
 
 const SERIES_CONFIG: Record<string, { label: string; hasLevel: boolean }> = {
   grammar: { label: "Grammar", hasLevel: true },
@@ -857,8 +858,8 @@ export default function SelectBooksPage() {
                     }}
                     className="block w-full rounded border px-3 py-2"
                   >
-                    {LANGUAGE_OPTIONS.map((l) => (
-                      <option key={l.value} value={l.value}>
+                    {LANGUAGES.map((l) => (
+                      <option key={l.code} value={l.code}>
                         {l.label}
                       </option>
                     ))}
@@ -949,7 +950,7 @@ export default function SelectBooksPage() {
                   >
                     {loading
                       ? "Processing..."
-                      : `Add ${LANGUAGE_OPTIONS.find(l => l.value === targetLang)?.label} textbook`}
+                      : `Add ${LANGUAGES.find(l => l.code === targetLang)?.label} textbook`}
                   </button>
 
                   <button

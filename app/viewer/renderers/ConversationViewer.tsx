@@ -1,9 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import ConversationAudioController from "@/components/audio/controllers/ConversationAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
+
+/* ================= 타입 ================= */
 
 type StudyLang = "en" | "es" | "fr" | "pt";
 
@@ -23,11 +25,25 @@ type Props = {
   chapter: string;
 };
 
-const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
-
 type LoadStatus = "idle" | "loading" | "ready" | "error";
 
-const buttonStyle = (active: boolean) => ({
+/* ================= 상수 ================= */
+
+const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
+
+/* 🔥 핵심 */
+const TTS_LANG_MAP: Record<string, string> = {
+  kr: "ko-KR",
+  ko: "ko-KR",
+  en: "en-US",
+  es: "es-ES",
+  fr: "fr-FR",
+  pt: "pt-PT",
+};
+
+/* ================= 스타일 ================= */
+
+const buttonStyle = (active: boolean): React.CSSProperties => ({
   padding: "4px 8px",
   borderRadius: 4,
   fontSize: 14,
@@ -37,72 +53,116 @@ const buttonStyle = (active: boolean) => ({
   cursor: active ? "default" : "pointer",
 });
 
+const targetStyle: React.CSSProperties = {
+  cursor: "pointer",
+  padding: "2px 0",
+  borderRadius: 4,
+};
+
+const studyStyle: React.CSSProperties = {
+  color: "#555",
+  cursor: "default",
+};
+
+/* ================= 컴포넌트 ================= */
+
 export default function ConversationViewer({
   lang,
   level,
   chapter,
 }: Props) {
-
   const { targetLang, showTargetText } = useViewerTarget();
 
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
-
   const [blocks, setBlocks] = useState<Block[]>([]);
   const [chapters, setChapters] = useState<string[]>([]);
   const [status, setStatus] = useState<LoadStatus>("idle");
+  const [playingKey, setPlayingKey] = useState<string | null>(null);
 
-  /* study language 자동 설정 */
+  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
+
+  /* 🔥 TTS 언어 결정 (절대 studyLang 사용 금지) */
+  const ttsLang = useMemo(
+    () => TTS_LANG_MAP[targetLang] ?? "en-US",
+    [targetLang]
+  );
+
+  /* ================= studyLang 자동 설정 ================= */
+
   useEffect(() => {
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
   }, [targetLang]);
 
-  const currentIndex = chapters.indexOf(chapter);
-
-  const prev =
-    currentIndex > 0 ? chapters[currentIndex - 1] : chapter;
-
-  const next =
-    currentIndex >= 0 && currentIndex < chapters.length - 1
-      ? chapters[currentIndex + 1]
-      : chapter;
+  /* ================= 언어 변경 시 음성 리셋 ================= */
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+    window.speechSynthesis.cancel();
+    utterRef.current = null;
+    setPlayingKey(null);
+  }, [targetLang, chapter]);
 
+  /* ================= 문장 재생 ================= */
+
+  const speak = (text: string, key: string) => {
+    if (!text.trim()) return;
+
+    const synth = window.speechSynthesis;
+    synth.cancel();
+
+    const u = new SpeechSynthesisUtterance(text);
+
+    /* 🔥 핵심 */
+    u.lang = ttsLang;
+
+    u.onstart = () => setPlayingKey(key);
+    u.onend = () => {
+      setPlayingKey(null);
+      utterRef.current = null;
+    };
+    u.onerror = () => {
+      setPlayingKey(null);
+      utterRef.current = null;
+    };
+
+    utterRef.current = u;
+    synth.speak(u);
+  };
+
+  /* ================= 데이터 로딩 ================= */
+
+  useEffect(() => {
     let cancelled = false;
 
     const load = async () => {
-
       try {
-
         setStatus("loading");
-
-        setBlocks([]);
 
         const res = await fetch(
           `/api/content/manifest?lang=${targetLang}&series=conversation&level=${level}&chapter=${chapter}`
         );
 
+        // ✅ 1. manifest 실패 차단 (핵심)
         if (!res.ok) throw new Error("manifest fetch failed");
 
         const manifest = await res.json();
 
         if (cancelled) return;
 
-        /* chapters */
+        // ✅ 2. chapters 검증
         if (!Array.isArray(manifest.chapters))
           throw new Error("chapters missing");
 
         setChapters(manifest.chapters);
 
-        /* data asset */
-
-        const data =
-          manifest.assets?.find((a: any) => a.kind === "data");
+        // ✅ 3. data asset 검증
+        const data = manifest.assets?.find((a: any) => a.kind === "data");
 
         if (!data?.path)
           throw new Error("data asset missing");
 
+        // ✅ 4. data fetch 검증
         const dataRes = await fetch(data.path);
 
         if (!dataRes.ok)
@@ -110,21 +170,17 @@ export default function ConversationViewer({
 
         const dataJson = await dataRes.json();
 
+        // ✅ 5. blocks 검증
         if (!Array.isArray(dataJson.blocks))
           throw new Error("blocks missing");
 
         setBlocks(dataJson.blocks);
 
         setStatus("ready");
-
       } catch (e) {
-
         console.error(e);
-
         if (!cancelled) setStatus("error");
-
       }
-
     };
 
     load();
@@ -132,81 +188,62 @@ export default function ConversationViewer({
     return () => {
       cancelled = true;
     };
-
   }, [targetLang, level, chapter]);
+
+  const idx = chapters.indexOf(chapter);
+  const prev = idx > 0 ? chapters[idx - 1] : chapter;
+  const next =
+    idx >= 0 && idx < chapters.length - 1 ? chapters[idx + 1] : chapter;
+
+  /* ================= UI ================= */
 
   return (
     <div style={{ maxWidth: 1100, margin: "0 auto", padding: 24 }}>
-
-      {status === "loading" && (
-        <div style={{ padding: 12, color: "#666" }}>
-          Loading...
-        </div>
-      )}
-
-      {status === "error" && (
-        <div style={{ padding: 12, color: "#c00" }}>
-          Failed to load this chapter.
-        </div>
-      )}
+      {status === "loading" && <div>Loading...</div>}
+      {status === "error" && <div>Load Error</div>}
 
       {status === "ready" && (
         <>
-
           <ConversationAudioController
             lang={targetLang}
             level={level}
             chapter={chapter}
           />
-          {/* language switch */}
 
+          {/* 학습언어 선택 */}
           <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
-            {ALL_STUDY_LANGS
-              .filter((l) => l !== targetLang)
-              .map((l) => (
-                <button
-                  key={l}
-                  onClick={() => setStudyLang(l)}
-                  style={buttonStyle(studyLang === l)}
-                >
-                  {l.toUpperCase()}
-                </button>
-              ))}
+            {ALL_STUDY_LANGS.filter((l) => l !== targetLang).map((l) => (
+              <button
+                key={l}
+                onClick={() => setStudyLang(l)}
+                style={buttonStyle(studyLang === l)}
+              >
+                {l.toUpperCase()}
+              </button>
+            ))}
           </div>
 
-          {/* prev next */}
-
+          {/* 이동 */}
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <Link href={`/viewer/${targetLang}/conversation/${level}/${prev}`}>
               ← Prev
             </Link>
-
             <Link href={`/viewer/${targetLang}/conversation/${level}/${next}`}>
               Next →
             </Link>
           </div>
 
-          {/* chapter list */}
-
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: 6,
-              marginTop: 12,
-            }}
-          >
+          {/* 챕터 목록 */}
+          <div style={{ marginTop: 12 }}>
             {chapters.map((ch) => (
               <Link
                 key={ch}
                 href={`/viewer/${targetLang}/conversation/${level}/${ch}`}
                 style={{
+                  marginRight: 6,
                   padding: "4px 8px",
-                  fontSize: 13,
-                  borderRadius: 4,
                   background: ch === chapter ? "#333" : "#eee",
                   color: ch === chapter ? "#fff" : "#333",
-                  textDecoration: "none",
                 }}
               >
                 {ch}
@@ -214,57 +251,48 @@ export default function ConversationViewer({
             ))}
           </div>
 
-          {/* content */}
-
+          {/* 본문 */}
           <div style={{ marginTop: 32 }}>
-
             {blocks.map((block, idx) => (
-
-              <section key={block.set_id} style={{ marginBottom: 48 }}>
-
-                <div
-                  style={{
-                    fontWeight: 700,
-                    marginBottom: 12,
-                    fontSize: 18,
-                    color: "#444",
-                  }}
-                >
+              <div key={block.set_id} style={{ marginBottom: 40 }}>
+                <div style={{ fontWeight: 700, marginBottom: 10 }}>
                   Set {idx + 1}
                 </div>
 
                 {block.lines.map((line, i) => {
-
                   const targetText =
-                    line.sentences?.[targetLang] ?? line.sentences?.target ?? "";
-
+                    line.sentences?.target ?? "";
                   const studyText =
-                    line.sentences?.[studyLang] ?? "";
+                    line.sentences[studyLang] ?? "";
+
+                  const key = `${block.set_id}-${i}`;
 
                   return (
-                    <div key={i} style={{ marginBottom: 14 }}>
-
+                    <div key={i} style={{ marginBottom: 12 }}>
+                      {/* 🔥 목표언어 (클릭 가능) */}
                       {showTargetText && (
-                        <div>
+                        <div
+                          onClick={() => speak(targetText, key)}
+                          style={{
+                            ...targetStyle,
+                            background:
+                              playingKey === key ? "#f3f4f6" : "transparent",
+                          }}
+                        >
                           <strong>{line.speaker}:</strong> {targetText}
                         </div>
                       )}
 
-                      <div style={{ color: "#555" }}>
+                      {/* ❌ 학습언어 (클릭 금지) */}
+                      <div style={studyStyle}>
                         <strong>{line.speaker}:</strong> {studyText}
                       </div>
-
                     </div>
                   );
-
                 })}
-
-              </section>
-
+              </div>
             ))}
-
           </div>
-
         </>
       )}
     </div>

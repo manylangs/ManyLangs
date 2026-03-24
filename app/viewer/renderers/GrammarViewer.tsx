@@ -1,6 +1,6 @@
-"use client";
+"use client"; 
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "../context/ViewerTargetContext";
 
@@ -29,6 +29,26 @@ type Props = {
 
 const STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
 
+const TTS_LANG_MAP: Record<string, string> = {
+  kr: "ko-KR",
+  ko: "ko-KR",
+  en: "en-US",
+  es: "es-ES",
+  fr: "fr-FR",
+  pt: "pt-PT",
+};
+
+const targetStyle: React.CSSProperties = {
+  cursor: "pointer",
+  padding: "2px 0",
+  borderRadius: 4,
+};
+
+const studyStyle: React.CSSProperties = {
+  color: "#555",
+  cursor: "default",
+};
+
 const buttonStyle = (active: boolean) => ({
   padding: "4px 8px",
   borderRadius: 4,
@@ -53,6 +73,44 @@ export default function GrammarViewer({
   const [data, setData] = useState<GrammarData | null>(null);
   const [chapters, setChapters] = useState<string[]>([]);
   const [status, setStatus] = useState<LoadStatus>("idle");
+  const [playingKey, setPlayingKey] = useState<string | null>(null);
+
+  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
+
+  const ttsLang = useMemo(
+    () => TTS_LANG_MAP[targetLang] ?? "en-US",
+    [targetLang]
+  );
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    window.speechSynthesis.cancel();
+    utterRef.current = null;
+    setPlayingKey(null);
+  }, [targetLang, chapter]);
+
+  const speak = (text: string, key: string) => {
+    if (!text.trim()) return;
+
+    const synth = window.speechSynthesis;
+    synth.cancel();
+
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = ttsLang;
+
+    u.onstart = () => setPlayingKey(key);
+    u.onend = () => {
+      setPlayingKey(null);
+      utterRef.current = null;
+    };
+    u.onerror = () => {
+      setPlayingKey(null);
+      utterRef.current = null;
+    };
+
+    utterRef.current = u;
+    synth.speak(u);
+  };
 
   /* study language 자동 설정 */
 
@@ -142,10 +200,8 @@ export default function GrammarViewer({
       ? chapters[currentIndex + 1]
       : chapter;
 
-  const renderLine = (b: GrammarBlock, i: number) => {
-
+  const renderLine = (b: GrammarBlock, i: number, sectionKey: string) => {
     const target =
-      b.sentences?.[targetLang] ??
       b.sentences?.target ??
       "";
 
@@ -155,19 +211,28 @@ export default function GrammarViewer({
 
     if (!target && !study) return null;
 
+    const key = `${sectionKey}-${i}`;
+
     return (
       <div key={i} style={{ marginBottom: 12 }}>
-
         {showTargetText && (
-          <div>{target}</div>
-        )}
-
-        {study && (
-          <div style={{ color: "#555" }}>
-            {study}
+          <div
+            onClick={() => speak(target, key)}
+            style={{
+              ...targetStyle,
+              background:
+                playingKey === key ? "#f3f4f6" : "transparent",
+            }}
+          >
+            {target}
           </div>
         )}
 
+        {study && (
+          <div style={studyStyle}>
+            {study}
+          </div>
+        )}
       </div>
     );
   };
@@ -291,8 +356,7 @@ export default function GrammarViewer({
               Explanation
             </div>
 
-            {explanations.map(renderLine)}
-
+            {explanations.map((b, i) => renderLine(b, i, "explanation"))}
           </div>
 
           {/* examples */}
@@ -307,19 +371,19 @@ export default function GrammarViewer({
               Core Patterns
             </div>
 
-            {byVariant("core_patterns").map(renderLine)}
+            {byVariant("core_patterns").map((b, i) => renderLine(b, i, "core_patterns"))}
 
             <div style={{ fontWeight: 700, margin: "20px 0 8px" }}>
               Variations
             </div>
 
-            {byVariant("variations").map(renderLine)}
+            {byVariant("variations").map((b, i) => renderLine(b, i, "variations"))}
 
             <div style={{ fontWeight: 700, margin: "20px 0 8px" }}>
               Extended Examples
             </div>
 
-            {byVariant("extended_usage").map(renderLine)}
+         {byVariant("extended_usage").map((b, i) => renderLine(b, i, "extended_usage"))}
 
           </div>
 

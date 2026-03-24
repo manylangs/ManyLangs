@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 
@@ -13,6 +13,14 @@ type Props = {
 };
 
 type Status = "loading" | "ready" | "error";
+
+const TTS_LANG_MAP: Record<string, string> = {
+  kr: "ko-KR",
+  en: "en-US",
+  es: "es-ES",
+  fr: "fr-FR",
+  pt: "pt-PT",
+};
 
 type GrammarBlock = {
   type: string;
@@ -58,41 +66,81 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
   const [data, setData] = useState<GrammarData | null>(null);
   const [status, setStatus] = useState<Status>("loading");
 
+  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
+  const [playingKey, setPlayingKey] = useState<string | null>(null);
+
+  const ttsLang = useMemo(
+    () => TTS_LANG_MAP[targetLang] ?? "en-US",
+    [targetLang]
+  );
   const guideTexts: Record<StudyLang, string[]> = {
     en: [
       "1. To continue to the next chapter, sign up by clicking Get Started.",
       "2. You can change the study language using the buttons above.",
       "3. Press Toggle Target to hide the target language and practice translating.",
       "4. You are currently viewing A1 Chapter 1. You can choose levels A1, A2, B1, B2, C1, C2.",
-      "5. As the level increases, the level of grammar increases",
+      "5. Tap or click a sentence to play only that part.",
     ],
     es: [
       "1. Para continuar al siguiente capítulo, regístrate haciendo clic en Get Started.",
       "2. Puedes cambiar el idioma de estudio usando los botones de arriba.",
       "3. Presiona Toggle Target para ocultar el idioma objetivo y practicar la traducción.",
       "4. Actualmente estás viendo A1 Capítulo 1. Puedes elegir los niveles A1, A2, B1, B2, C1, C2.",
-      "5. A medida que el nivel aumenta, el nivel de la gramática aumenta",
+      "5. Toca o haz clic en una frase para reproducir solo esa parte.",
     ],
     fr: [
       "1. Pour continuer au chapitre suivant, inscrivez-vous en cliquant sur Get Started.",
       "2. Vous pouvez changer la langue d'étude en utilisant les boutons ci-dessus.",
       "3. Appuyez sur Toggle Target pour cacher la langue cible et pratiquer la traduction.",
       "4. Vous regardez actuellement A1 Chapitre 1. Vous pouvez choisir les niveaux A1, A2, B1, B2, C1, C2.",
-      "5. À mesure que le niveau augmente, le niveau de la grammaire augmente",
+      "5. Appuyez ou cliquez sur une phrase pour lire uniquement cette partie.",
     ],
     pt: [
       "1. Para continuar para o próximo capítulo, registre-se clicando em Get Started.",
       "2. Você pode mudar o idioma de estudo usando os botões acima.",
       "3. Pressione Toggle Target para ocultar o idioma alvo e praticar a tradução.",
       "4. Você está atualmente visualizando A1 Capítulo 1. Você pode escolher os níveis A1, A2, B1, B2, C1, C2.",
-      "5. À medida que o nível aumenta, o nível da gramática aumenta",
+      "5. Toque ou clique numa frase para reproduzir apenas essa parte.",
     ],
   };
+
+
   useEffect(() => {
     if (!targetLang) return;
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
   }, [targetLang]);
+
+  const speak = (text: string, key: string) => {
+    if (!text.trim()) return;
+    if (typeof window === "undefined") return;
+
+    const synth = window.speechSynthesis;
+    synth.cancel();
+
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = ttsLang;
+
+    u.onstart = () => setPlayingKey(key);
+    u.onend = () => {
+      setPlayingKey(null);
+      utterRef.current = null;
+    };
+    u.onerror = () => {
+      setPlayingKey(null);
+      utterRef.current = null;
+    };
+
+    utterRef.current = u;
+    synth.speak(u);
+  };
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    window.speechSynthesis.cancel();
+    utterRef.current = null;
+    setPlayingKey(null);
+  }, [targetLang, chapter]);
 
   useEffect(() => {
     if (!lang) return;
@@ -152,7 +200,7 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
 
   const titleStudy = data?.title?.[studyLang] ?? "";
 
-  const renderLine = (b: GrammarBlock, i: number) => {
+  const renderLine = (b: GrammarBlock, i: number, sectionKey: string) => {
     const target =
       b.sentences?.[targetLang] ??
       b.sentences?.target ??
@@ -160,19 +208,38 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
 
     const study = b.sentences?.[studyLang] ?? "";
 
+    const lineKey = `${sectionKey}-${i}`;
+
     return (
-      <div key={i} style={{ marginBottom: 18 }}>
+      <div key={lineKey} style={{ marginBottom: 18 }}>
         {showTargetText && (
-          <div style={{ ...sentenceStyle, fontWeight: 600 }}>{target}</div>
+          <div
+            onClick={() => speak(target, lineKey)}
+            style={{
+              ...sentenceStyle,
+              fontWeight: 600,
+              cursor: "pointer",
+              background: playingKey === lineKey ? "#f3f4f6" : "transparent",
+            }}
+          >
+            {target}
+          </div>
         )}
-        <div style={{ ...sentenceStyle, color: "#666" }}>{study}</div>
+        <div
+          style={{
+            ...sentenceStyle,
+            color: "#666",
+            cursor: "default",
+          }}
+        >
+          {study}
+        </div>
       </div>
     );
   };
 
   return (
     <div style={containerStyle}>
-      {/* 🔥 HEADER */}
       <div style={{ position: "sticky", top: 0, background: "#fff", zIndex: 30 }}>
         <div
           style={{
@@ -204,11 +271,28 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
             </button>
 
             <button
-              onClick={() => {
-                navigator.clipboard.writeText(window.location.href);
-                alert("Link copied!");
+              onClick={async () => {
+                if (navigator.share) {
+                  try {
+                    await navigator.share({
+                      title: "Try Demo",
+                      url: window.location.href,
+                    });
+                  } catch { }
+                } else {
+                  await navigator.clipboard.writeText(window.location.href);
+                  alert("Link copied!");
+                }
               }}
-              style={buttonStyle(false)}
+              style={{
+                padding: "6px 10px",
+                borderRadius: 6,
+                fontSize: 13,
+                background: "#f2f2f2",
+                color: "#333",
+                border: "none",
+                cursor: "pointer",
+              }}
             >
               Copy
             </button>
@@ -223,7 +307,6 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
           <Link href="/demo">← Back</Link>
         </div>
 
-        {/* 🔥 GUIDE (Real 스타일) */}
         <div
           style={{
             fontSize: 13,
@@ -241,9 +324,7 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
         </div>
       </div>
 
-      {/* 🔥 CONTENT */}
       <div style={{ padding: "30px 0" }}>
-        {/* TITLE */}
         <div style={{ marginBottom: 30 }}>
           {showTargetText && (
             <div style={{ ...sentenceStyle, fontSize: 24, fontWeight: 700 }}>
@@ -255,24 +336,28 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
           </div>
         </div>
 
-        {/* EXPLANATION */}
         <div style={{ marginBottom: 32 }}>
           <div style={{ fontWeight: 700, marginBottom: 12 }}>Explanation</div>
-          {explanations.map(renderLine)}
+          {explanations.map((b, i) => renderLine(b, i, "explanation"))}
         </div>
 
-        {/* EXAMPLES */}
         <div>
           <div style={{ fontWeight: 700, marginBottom: 12 }}>Examples</div>
 
           <div style={{ fontWeight: 600, marginBottom: 8 }}>Core Patterns</div>
-          {byVariant("core_patterns").map(renderLine)}
+          {byVariant("core_patterns").map((b, i) =>
+            renderLine(b, i, "core_patterns")
+          )}
 
           <div style={{ fontWeight: 600, margin: "20px 0 8px" }}>Variations</div>
-          {byVariant("variations").map(renderLine)}
+          {byVariant("variations").map((b, i) =>
+            renderLine(b, i, "variations")
+          )}
 
           <div style={{ fontWeight: 600, margin: "20px 0 8px" }}>Extended Usage</div>
-          {byVariant("extended_usage").map(renderLine)}
+          {byVariant("extended_usage").map((b, i) =>
+            renderLine(b, i, "extended_usage")
+          )}
         </div>
       </div>
     </div>

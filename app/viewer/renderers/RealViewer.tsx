@@ -1,6 +1,6 @@
-"use client";
+"use client"; 
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import Link from "next/link";
 import RealAudioController from "@/components/audio/controllers/RealAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
@@ -18,6 +18,25 @@ type Props = {
 };
 
 const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
+const TTS_LANG_MAP: Record<string, string> = {
+  kr: "ko-KR",
+  ko: "ko-KR",
+  en: "en-US",
+  es: "es-ES",
+  fr: "fr-FR",
+  pt: "pt-PT",
+};
+
+const targetStyle: React.CSSProperties = {
+  cursor: "pointer",
+  padding: "2px 0",
+  borderRadius: 4,
+};
+
+const studyStyle: React.CSSProperties = {
+  color: "#555",
+  cursor: "default",
+};
 
 type LoadStatus = "idle" | "loading" | "ready" | "error";
 
@@ -46,6 +65,44 @@ export default function RealViewer({
   const [sentences, setSentences] = useState<Sentence[]>([]);
   const [chapters, setChapters] = useState<string[]>([]);
   const [status, setStatus] = useState<LoadStatus>("idle");
+  const [playingKey, setPlayingKey] = useState<string | null>(null);
+
+  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
+
+  const ttsLang = useMemo(
+    () => TTS_LANG_MAP[targetLang] ?? "en-US",
+    [targetLang]
+  );
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    window.speechSynthesis.cancel();
+    utterRef.current = null;
+    setPlayingKey(null);
+  }, [targetLang, chapter]);
+
+  const speak = (text: string, key: string) => {
+    if (!text.trim()) return;
+
+    const synth = window.speechSynthesis;
+    synth.cancel();
+
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = ttsLang;
+
+    u.onstart = () => setPlayingKey(key);
+    u.onend = () => {
+      setPlayingKey(null);
+      utterRef.current = null;
+    };
+    u.onerror = () => {
+      setPlayingKey(null);
+      utterRef.current = null;
+    };
+
+    utterRef.current = u;
+    synth.speak(u);
+  };
 
   /* study language 자동 설정 */
   useEffect(() => {
@@ -259,18 +316,37 @@ export default function RealViewer({
 
                 const targetText =
                   s.texts?.[targetLang] ?? "";
- 
+
                 const studyText =
                   s.texts?.[studyLang] ?? "";
 
                 return (
                   <div key={i} style={{ marginBottom: 18 }}>
                     {showTargetText && (
-                      <div style={{ marginBottom: 4, fontWeight: 500 }}>
+                      <div
+                        onClick={() =>
+                          speak(
+                            targetText,
+                            `real-${i}`
+                          )
+                        }
+                        style={{
+                          ...targetStyle,
+                          marginBottom: 4,
+                          fontWeight: 500,
+                          background:
+                            playingKey === `real-${i}`
+                              ? "#f3f4f6"
+                              : "transparent",
+                        }}
+                      >
                         {targetText}
                       </div>
                     )}
-                    <div>{studyText}</div>
+
+                    <div style={studyStyle}>
+                      {studyText}
+                    </div>
                   </div>
                 );
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useMemo, useRef } from "react";
 import Link from "next/link";
 import ConversationAudioController from "@/components/audio/controllers/ConversationAudioController";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
@@ -24,6 +25,15 @@ type Props = {
 };
 
 type Status = "loading" | "ready" | "error";
+/* 🔥 한줄 음성 추가 */
+
+const TTS_LANG_MAP: Record<string, string> = {
+  kr: "ko-KR",
+  en: "en-US",
+  es: "es-ES",
+  fr: "fr-FR",
+  pt: "pt-PT",
+};
 
 /* ================= 스타일 (🔥 Real 기준 그대로) ================= */
 
@@ -47,39 +57,39 @@ const buttonStyle = (active: boolean): React.CSSProperties => ({
 /* ================= GUIDE ================= */
 
 const guideTexts: Record<StudyLang, string[]> = {
-    en: [
-      "1. To continue to the next chapter, sign up by clicking Get Started.",
-      "2. You can change the study language using the buttons above.",
-      "3. You can move to the next set using the <> buttons below the audio.",
-      "4. Press Toggle Target to hide the target language and practice translating.",
-      "5. You are currently viewing A1 Chapter 1. You can choose levels A1, A2, B1, B2, C1, C2.",
-      "6. As the level increases, situations, sentence length, vocabulary, and expressions become more advanced.",
-    ],
-    es: [
-      "1. Para continuar al siguiente capítulo, regístrate haciendo clic en Get Started.",
-      "2. Puedes cambiar el idioma de estudio usando los botones de arriba.",
-      "3. Puedes moverte al siguiente set usando los botones <> debajo del audio.",
-      "4. Presiona Toggle Target para ocultar el idioma objetivo y practicar la traducción.",
-      "5. Actualmente estás viendo A1 Chapter 1. Puedes elegir niveles A1, A2, B1, B2, C1, C2.",
-      "6. A medida que sube el nivel, aumentan las situaciones, la longitud de las frases, el vocabulario y las expresiones.",
-    ],
-    fr: [
-      "1. Pour continuer au chapitre suivant, inscrivez-vous en cliquant sur Get Started.",
-      "2. Vous pouvez changer la langue d’étude avec les boutons ci-dessus.",
-      "3. Vous pouvez passer au set suivant avec les boutons <> sous l’audio.",
-      "4. Appuyez sur Toggle Target pour cacher la langue cible et pratiquer la traduction.",
-      "5. Vous regardez actuellement A1 Chapter 1. Vous pouvez choisir les niveaux A1, A2, B1, B2, C1, C2.",
-      "6. Plus le niveau augmente, plus les situations, les phrases et le vocabulaire deviennent complexes.",
-    ],
-    pt: [
-      "1. Para continuar para o próximo capítulo, registre-se clicando em Get Started.",
-      "2. Você pode mudar o idioma de estudo usando os botões acima.",
-      "3. Você pode ir para o próximo set usando os botões <> abaixo do áudio.",
-      "4. Pressione Toggle Target para ocultar o idioma alvo e praticar a tradução.",
-      "5. Você está vendo A1 Chapter 1. Pode escolher níveis A1, A2, B1, B2, C1, C2.",
-      "6. À medida que o nível aumenta, aumentam as situações, o tamanho das frases e o vocabulário.",
-    ],
-  };
+  en: [
+    "1. To continue to the next chapter, sign up by clicking Get Started.",
+    "2. You can change the study language using the buttons above.",
+    "3. You can move to the next set using the <> buttons below the audio.",
+    "4. Tap or click a sentence to play only that part.",
+    "5. Press Toggle Target to hide the target language and practice translating.",
+    "6. You are currently viewing A1 Chapter 1. You can choose levels A1, A2, B1, B2, C1, C2.",
+  ],
+  es: [
+    "1. Para continuar al siguiente capítulo, regístrate haciendo clic en Get Started.",
+    "2. Puedes cambiar el idioma de estudio usando los botones de arriba.",
+    "3. Puedes moverte al siguiente set usando los botones <> debajo del audio.",
+    "4. Toca o haz clic en una frase para reproducir solo esa parte.",
+    "5. Presiona Toggle Target para ocultar el idioma objetivo y practicar la traducción.",
+    "6. Actualmente estás viendo A1 Chapter 1. Puedes elegir niveles A1, A2, B1, B2, C1, C2.",
+  ],
+  fr: [
+    "1. Pour continuer au chapitre suivant, inscrivez-vous en cliquant sur Get Started.",
+    "2. Vous pouvez changer la langue d’étude avec les boutons ci-dessus.",
+    "3. Vous pouvez passer au set suivant avec les boutons <> sous l’audio.",
+    "4. Appuyez ou cliquez sur une phrase pour lire uniquement cette partie.",
+    "5. Appuyez sur Toggle Target pour cacher la langue cible et pratiquer la traduction.",
+    "6. Vous regardez actuellement A1 Chapter 1. Vous pouvez choisir les niveaux A1, A2, B1, B2, C1, C2.",
+  ],
+  pt: [
+    "1. Para continuar para o próximo capítulo, registre-se clicando em Get Started.",
+    "2. Pode mudar o idioma de estudo usando os botões acima.",
+    "3. Pode ir para o próximo set usando os botões <> abaixo do áudio.",
+    "4. Toque ou clique numa frase para reproduzir apenas essa parte.",
+    "5. Pressione Toggle Target para ocultar o idioma alvo e praticar a tradução.",
+    "6. Está a ver A1 Chapter 1. Pode escolher níveis A1, A2, B1, B2, C1, C2.",
+  ],
+};
 
 
 /* ================= COMPONENT ================= */
@@ -93,11 +103,42 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
   const [blocks, setBlocks] = useState<Block[]>([]);
   const [status, setStatus] = useState<Status>("loading");
+  /* 🔥 추가 */
+  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
+  const [playingKey, setPlayingKey] = useState<string | null>(null);
 
+  const ttsLang = useMemo(
+    () => TTS_LANG_MAP[targetLang] ?? "en-US",
+    [targetLang]
+  );
   useEffect(() => {
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
   }, [targetLang]);
+
+  /* 🔥 여기 ↓↓↓ 정확히 이 위치 */
+  const speak = (text: string, key: string) => {
+    if (!text.trim()) return;
+
+    const synth = window.speechSynthesis;
+    synth.cancel();
+
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = ttsLang;
+
+    u.onstart = () => setPlayingKey(key);
+    u.onend = () => {
+      setPlayingKey(null);
+      utterRef.current = null;
+    };
+    u.onerror = () => {
+      setPlayingKey(null);
+      utterRef.current = null;
+    };
+
+    utterRef.current = u;
+    synth.speak(u);
+  };
 
   useEffect(() => {
     if (!lang) return;
@@ -112,11 +153,53 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
           `/api/content/manifest?lang=${lang}&series=conversation&level=${level}&chapter=${chapter}&mode=demo`
         );
 
-        const manifest = await res.json();
+        if (!res.ok) {
+          console.warn("❌ manifest fetch failed:", res.status);
+          setBlocks([]);
+          setStatus("ready");
+          return;
+        }
 
+        let manifest;
+        try {
+          manifest = await res.json();
+        } catch {
+          console.error("❌ manifest JSON parse fail");
+          setBlocks([]);
+          setStatus("ready");
+          return;
+        }
+
+        // data 찾기
         const data = manifest.assets?.find((a: any) => a.kind === "data");
+
+        if (!data?.path) {
+          console.warn("❌ No data asset");
+          setBlocks([]);
+          setStatus("ready");
+          return;
+        }
+
+        // data fetch
         const dataRes = await fetch(data.path);
-        const dataJson = await dataRes.json();
+
+        if (!dataRes.ok) {
+          console.warn("❌ data fetch fail:", data.path);
+          setBlocks([]);
+          setStatus("ready");
+          return;
+        }
+
+        let dataJson;
+        try {
+          dataJson = await dataRes.json();
+        } catch {
+          console.error("❌ JSON parse fail:", data.path);
+          setBlocks([]);
+          setStatus("ready");
+          return;
+        }
+
 
         if (cancelled) return;
 
@@ -141,7 +224,7 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
     <div style={containerStyle}>
       {/* ================= HEADER ================= */}
       <div style={{ position: "sticky", top: 0, background: "#fff", zIndex: 30 }}>
-        
+
         {/* 🔥 버튼 영역 (Real 완전 동일 구조) */}
         <div
           style={{
@@ -174,11 +257,28 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
             </button>
 
             <button
-              onClick={() => {
-                navigator.clipboard.writeText(window.location.href);
-                alert("Link copied!");
+              onClick={async () => {
+                if (navigator.share) {
+                  try {
+                    await navigator.share({
+                      title: "Try Demo",
+                      url: window.location.href,
+                    });
+                  } catch { }
+                } else {
+                  await navigator.clipboard.writeText(window.location.href);
+                  alert("Link copied!");
+                }
               }}
-              style={buttonStyle(false)}
+              style={{
+                padding: "6px 10px",
+                borderRadius: 6,
+                fontSize: 13,
+                background: "#f2f2f2",
+                color: "#333",
+                border: "none",
+                cursor: "pointer",
+              }}
             >
               Copy
             </button>
@@ -244,6 +344,7 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
             </div>
 
             {(block.lines || []).map((line, i) => {
+              const key = `${block.set_id}-${i}`;
               const targetText =
                 line.sentences?.[targetLang] ??
                 line.sentences?.target ??
@@ -253,8 +354,18 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
 
               return (
                 <div key={i} style={{ marginBottom: 16, lineHeight: 1.6 }}>
+
+
                   {showTargetText && (
-                    <div style={{ fontWeight: 600 }}>
+                    <div
+                      onClick={() => speak(targetText, key)}
+                      style={{
+                        fontWeight: 600,
+                        cursor: "pointer",
+                        background:
+                          playingKey === key ? "#f3f4f6" : "transparent",
+                      }}
+                    >
                       <strong>{line.speaker}:</strong> {targetText}
                     </div>
                   )}

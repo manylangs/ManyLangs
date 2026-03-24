@@ -11,30 +11,29 @@ import React, {
   type ReactNode,
   type SetStateAction,
 } from "react";
+import { SUPPORTED_LANGS } from "@/app/config/languages";
+
+/* ================= 타입 ================= */
 
 type ViewerTargetContextValue = {
-  /** 🎯 Language you want to learn */
   targetLang: string;
   setTargetLang: Dispatch<SetStateAction<string>>;
 
-  /** 🎯 learner language */
   studyLang: string;
   setStudyLang: Dispatch<SetStateAction<string>>;
 
-  /** ✅ 단일 소스 오브 트루스 */
   showTarget: boolean;
   setShowTarget: Dispatch<SetStateAction<boolean>>;
   toggleShowTarget: () => void;
 
-  /**
-   * ✅ 호환성(alias)
-   * - 기존 ViewerHeader가 showTargetText/toggleTargetText를 쓰고 있으니 유지
-   */
   showTargetText: boolean;
   toggleTargetText: () => void;
 };
 
-const ViewerTargetContext = createContext<ViewerTargetContextValue | null>(null);
+const ViewerTargetContext =
+  createContext<ViewerTargetContextValue | null>(null);
+
+/* ================= Provider ================= */
 
 export function ViewerTargetProvider({
   children,
@@ -43,30 +42,63 @@ export function ViewerTargetProvider({
   children: ReactNode;
   initialShowTarget?: boolean;
 }) {
-
-  /** 🔥 Language you want to learn */
+  /** 🎯 target language */
   const [targetLang, setTargetLang] = useState<string>("kr");
 
-  /** 🔥 learner language */
+  /** 🎯 study language */
   const [studyLang, setStudyLang] = useState<string>("en");
 
-  const [showTarget, setShowTarget] = useState<boolean>(initialShowTarget);
+  const [showTarget, setShowTarget] =
+    useState<boolean>(initialShowTarget);
 
   const toggleShowTarget = useCallback(() => {
     setShowTarget((prev) => !prev);
   }, []);
 
-  /**
-   * 🔹 핵심 수정
-   * select-books 페이지에서 저장한
-   * ml_target_lang 복구
-   */
+  /* ================= 핵심: demo + 일반 분기 ================= */
+
   useEffect(() => {
-    const saved = localStorage.getItem("ml_target_lang");
-    if (saved) {
-      setTargetLang(saved);
+    if (typeof window === "undefined") return;
+
+    const path = window.location.pathname;
+    const isDemo = path.startsWith("/demo");
+
+    // ✅ 1. 데모뷰어 → URL 기준
+    if (isDemo) {
+      const parts = path.split("/");
+      const urlLang = parts[3]; // /demo/viewer/{lang}
+
+      if (urlLang && SUPPORTED_LANGS.includes(urlLang)) {
+        setTargetLang(urlLang);
+        return;
+      }
     }
+
+    // ✅ 2. 일반뷰어 → localStorage 유지
+    const saved = localStorage.getItem("ml_target_lang");
+
+    const lang =
+      saved && SUPPORTED_LANGS.includes(saved)
+        ? saved
+        : "kr";
+
+    setTargetLang(lang);
+    localStorage.setItem("ml_target_lang", lang);
   }, []);
+
+  /* ================= studyLang 자동 설정 ================= */
+
+  useEffect(() => {
+    const others = SUPPORTED_LANGS.filter(
+      (l) => l !== targetLang
+    );
+
+    if (others.length > 0) {
+      setStudyLang(others[0]);
+    }
+  }, [targetLang]);
+
+  /* ================= memo ================= */
 
   const value = useMemo<ViewerTargetContextValue>(() => {
     return {
@@ -84,12 +116,7 @@ export function ViewerTargetProvider({
       showTargetText: showTarget,
       toggleTargetText: toggleShowTarget,
     };
-  }, [
-    targetLang,
-    studyLang,
-    showTarget,
-    toggleShowTarget
-  ]);
+  }, [targetLang, studyLang, showTarget, toggleShowTarget]);
 
   return (
     <ViewerTargetContext.Provider value={value}>
@@ -98,11 +125,15 @@ export function ViewerTargetProvider({
   );
 }
 
+/* ================= hook ================= */
+
 export function useViewerTarget(): ViewerTargetContextValue {
   const ctx = useContext(ViewerTargetContext);
 
   if (!ctx) {
-    throw new Error("useViewerTarget must be used within ViewerTargetProvider");
+    throw new Error(
+      "useViewerTarget must be used within ViewerTargetProvider"
+    );
   }
 
   return ctx;

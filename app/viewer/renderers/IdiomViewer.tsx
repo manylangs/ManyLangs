@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import Link from "next/link";
 import IdiomAudioController from "@/components/audio/controllers/IdiomAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
@@ -10,6 +10,25 @@ type StudyLang = "en" | "es" | "fr" | "pt";
 const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
 
 const LEVELS = ["a1", "a2", "b1", "b2", "c1", "c2"];
+const TTS_LANG_MAP: Record<string, string> = {
+  kr: "ko-KR",
+  ko: "ko-KR",
+  en: "en-US",
+  es: "es-ES",
+  fr: "fr-FR",
+  pt: "pt-PT",
+};
+
+const targetStyle: React.CSSProperties = {
+  cursor: "pointer",
+  padding: "2px 0",
+  borderRadius: 4,
+};
+
+const studyStyle: React.CSSProperties = {
+  color: "#555",
+  cursor: "default",
+};
 
 type LoadStatus = "idle" | "loading" | "ready" | "error";
 
@@ -41,7 +60,44 @@ export default function IdiomViewer({
   const [blocks, setBlocks] = useState<IdiomBlock[]>([]);
   const [chapters, setChapters] = useState<string[]>([]);
   const [status, setStatus] = useState<LoadStatus>("idle");
+  const [playingKey, setPlayingKey] = useState<string | null>(null);
 
+  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
+
+  const ttsLang = useMemo(
+    () => TTS_LANG_MAP[targetLang] ?? "en-US",
+    [targetLang]
+  );
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    window.speechSynthesis.cancel();
+    utterRef.current = null;
+    setPlayingKey(null);
+  }, [targetLang, chapter]);
+
+  const speak = (text: string, key: string) => {
+    if (!text.trim()) return;
+
+    const synth = window.speechSynthesis;
+    synth.cancel();
+
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = ttsLang;
+
+    u.onstart = () => setPlayingKey(key);
+    u.onend = () => {
+      setPlayingKey(null);
+      utterRef.current = null;
+    };
+    u.onerror = () => {
+      setPlayingKey(null);
+      utterRef.current = null;
+    };
+
+    utterRef.current = u;
+    synth.speak(u);
+  };
   useEffect(() => {
 
     const filtered = ALL_STUDY_LANGS.filter(
@@ -236,8 +292,22 @@ export default function IdiomViewer({
               </div>
 
               {showTargetText && (
-                <div style={{ fontSize: 22, fontWeight: 700 }}>
-                  {block.expression?.[targetLang] ?? block.expression?.target}
+                <div
+                  onClick={() =>
+                    speak(
+                      block.expression?.target ?? "",
+                      `exp-${idx}`
+                    )
+                  }
+                  style={{
+                    ...targetStyle,
+                    fontSize: 22,
+                    fontWeight: 700,
+                    background:
+                      playingKey === `exp-${idx}` ? "#f3f4f6" : "transparent",
+                  }}
+                >
+                  {block.expression?.target ?? ""}
                 </div>
               )}
 
@@ -257,8 +327,20 @@ export default function IdiomViewer({
                 </div>
 
                 {showTargetText && (
-                  <div>
-                    {block.explanation?.[targetLang] ?? block.explanation?.target}
+                  <div
+                    onClick={() =>
+                      speak(
+                        block.explanation?.target ?? "",
+                        `expl-${idx}`
+                      )
+                    }
+                    style={{
+                      ...targetStyle,
+                      background:
+                        playingKey === `expl-${idx}` ? "#f3f4f6" : "transparent",
+                    }}
+                  >
+                    {block.explanation?.target ?? ""}
                   </div>
                 )}
 
@@ -284,8 +366,22 @@ export default function IdiomViewer({
                     }}
                   >
                     {showTargetText && (
-                      <div>
-                        {ex?.[targetLang] ?? ex?.target}
+                      <div
+                        onClick={() =>
+                          speak(
+                            ex?.target ?? "",
+                            `ex-${idx}-${i}`
+                          )
+                        }
+                        style={{
+                          ...targetStyle,
+                          background:
+                            playingKey === `ex-${idx}-${i}`
+                              ? "#f3f4f6"
+                              : "transparent",
+                        }}
+                      >
+                        {ex?.target ?? ""}
                       </div>
                     )}
 

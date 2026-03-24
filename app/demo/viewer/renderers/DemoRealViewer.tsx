@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 import RealAudioController from "@/components/audio/controllers/RealAudioController";
@@ -67,30 +67,80 @@ export default function DemoRealViewer({ level, chapter }: Props) {
       "2. You can change the study language using the buttons above.",
       "3. Press Toggle Target to hide the target language and practice translating.",
       "4. You are currently viewing A1 Chapter 1. You can choose levels A1, A2, B1, B2, C1, C2.",
-      "5. As the level increases, the level of grammar increases",
+      "5. Tap or click a sentence to play only that part.",
     ],
     es: [
       "1. Para continuar al siguiente capítulo, regístrate haciendo clic en Get Started.",
       "2. Puedes cambiar el idioma de estudio usando los botones de arriba.",
       "3. Presiona Toggle Target para ocultar el idioma objetivo y practicar la traducción.",
       "4. Actualmente estás viendo A1 Capítulo 1. Puedes elegir los niveles A1, A2, B1, B2, C1, C2.",
-      "5. A medida que el nivel aumenta, el nivel de la gramática aumenta",
+      "5. Toca o haz clic en una frase para reproducir solo esa parte.",
     ],
     fr: [
       "1. Pour continuer au chapitre suivant, inscrivez-vous en cliquant sur Get Started.",
       "2. Vous pouvez changer la langue d'étude en utilisant les boutons ci-dessus.",
       "3. Appuyez sur Toggle Target pour cacher la langue cible et pratiquer la traduction.",
       "4. Vous regardez actuellement A1 Chapitre 1. Vous pouvez choisir les niveaux A1, A2, B1, B2, C1, C2.",
-      "5. À mesure que le niveau augmente, le niveau de la grammaire augmente",
+      "5. Appuyez ou cliquez sur une phrase pour lire uniquement cette partie.",
     ],
     pt: [
       "1. Para continuar para o próximo capítulo, registre-se clicando em Get Started.",
       "2. Você pode mudar o idioma de estudo usando os botões acima.",
       "3. Pressione Toggle Target para ocultar o idioma alvo e praticar a tradução.",
       "4. Você está atualmente visualizando A1 Capítulo 1. Você pode escolher os níveis A1, A2, B1, B2, C1, C2.",
-      "5. À medida que o nível aumenta, o nível da gramática aumenta",
+      "5. Toque ou clique numa frase para reproduzir apenas essa parte.",
     ],
   };
+
+  const TTS_LANG_MAP: Record<string, string> = {
+    kr: "ko-KR",
+    en: "en-US",
+    es: "es-ES",
+    fr: "fr-FR",
+    pt: "pt-PT",
+  };
+
+  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
+  const [playingKey, setPlayingKey] = useState<string | null>(null);
+
+  const ttsLang = useMemo(
+    () => TTS_LANG_MAP[targetLang] ?? "en-US",
+    [targetLang]
+  );
+
+  const speak = (text: string, key: string) => {
+    if (!text.trim()) return;
+    if (typeof window === "undefined") return;
+
+    const synth = window.speechSynthesis;
+    synth.cancel();
+
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = ttsLang;
+
+    u.onstart = () => setPlayingKey(key);
+    u.onend = () => {
+      setPlayingKey(null);
+      utterRef.current = null;
+    };
+    u.onerror = () => {
+      setPlayingKey(null);
+      utterRef.current = null;
+    };
+
+    utterRef.current = u;
+    synth.speak(u);
+  };
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    window.speechSynthesis.cancel();
+    utterRef.current = null;
+    setPlayingKey(null);
+  }, [targetLang, chapter]);
+
+  /* 🔥 여기 추가 끝 */
+
 
   /* ================= 데이터 로드 ================= */
 
@@ -166,11 +216,28 @@ export default function DemoRealViewer({ level, chapter }: Props) {
             </button>
 
             <button
-              onClick={() => {
-                navigator.clipboard.writeText(window.location.href);
-                alert("Link copied!");
+              onClick={async () => {
+                if (navigator.share) {
+                  try {
+                    await navigator.share({
+                      title: "Try Demo",
+                      url: window.location.href,
+                    });
+                  } catch { }
+                } else {
+                  await navigator.clipboard.writeText(window.location.href);
+                  alert("Link copied!");
+                }
               }}
-              style={buttonStyle(false)}
+              style={{
+                padding: "6px 10px",
+                borderRadius: 6,
+                fontSize: 13,
+                background: "#f2f2f2",
+                color: "#333",
+                border: "none",
+                cursor: "pointer",
+              }}
             >
               Copy
             </button>
@@ -238,7 +305,16 @@ export default function DemoRealViewer({ level, chapter }: Props) {
             {descBlock?.sentences?.map((s: any, i: number) => (
               <div key={i} style={{ marginBottom: 18 }}>
                 {showTarget && (
-                  <div style={{ ...sentenceStyle, fontWeight: 600 }}>
+                  <div
+                    onClick={() => speak(s.texts[lang], `real-${i}`)}
+                    style={{
+                      ...sentenceStyle,
+                      fontWeight: 600,
+                      cursor: "pointer",
+                      background:
+                        playingKey === `real-${i}` ? "#f3f4f6" : "transparent",
+                    }}
+                  >
                     {s.texts[lang]}
                   </div>
                 )}

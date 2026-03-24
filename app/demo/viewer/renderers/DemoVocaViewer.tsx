@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 
@@ -26,6 +26,13 @@ type Props = {
 };
 
 type Status = "loading" | "ready" | "error";
+const TTS_LANG_MAP: Record<string, string> = {
+  kr: "ko-KR",
+  en: "en-US",
+  es: "es-ES",
+  fr: "fr-FR",
+  pt: "pt-PT",
+};
 
 /* 🔥 RealViewer 기준 스타일 */
 const containerStyle: React.CSSProperties = {
@@ -64,45 +71,83 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
   const TARGET_KEY = "target";
 
   const guideTexts: Record<StudyLang, string[]> = {
-    en: [
-      "1. To continue to the next chapter, sign up by clicking Get Started.",
-      "2. You can change the study language using the buttons above.",
-      "3. You can move to the next set using the <> buttons below the audio.",
-      "4. Press Toggle Target to hide the target language and practice translating.",
-      "5. You are currently viewing A1 Chapter 1. You can choose levels A1, A2, B1, B2, C1, C2.",
-      "6. As the level increases, situations, sentence length, vocabulary, and expressions become more advanced.",
-    ],
-    es: [
-      "1. Para continuar al siguiente capítulo, regístrate haciendo clic en Get Started.",
-      "2. Puedes cambiar el idioma de estudio usando los botones de arriba.",
-      "3. Puedes moverte al siguiente set usando los botones <> debajo del audio.",
-      "4. Presiona Toggle Target para ocultar el idioma objetivo y practicar la traducción.",
-      "5. Actualmente estás viendo A1 Chapter 1. Puedes elegir niveles A1, A2, B1, B2, C1, C2.",
-      "6. A medida que sube el nivel, aumentan las situaciones, la longitud de las frases, el vocabulario y las expresiones.",
-    ],
-    fr: [
-      "1. Pour continuer au chapitre suivant, inscrivez-vous en cliquant sur Get Started.",
-      "2. Vous pouvez changer la langue d’étude avec les boutons ci-dessus.",
-      "3. Vous pouvez passer au set suivant avec les boutons <> sous l’audio.",
-      "4. Appuyez sur Toggle Target pour cacher la langue cible et pratiquer la traduction.",
-      "5. Vous regardez actuellement A1 Chapter 1. Vous pouvez choisir les niveaux A1, A2, B1, B2, C1, C2.",
-      "6. Plus le niveau augmente, plus les situations, les phrases et le vocabulaire deviennent complexes.",
-    ],
-    pt: [
-      "1. Para continuar para o próximo capítulo, registre-se clicando em Get Started.",
-      "2. Você pode mudar o idioma de estudo usando os botões acima.",
-      "3. Você pode ir para o próximo set usando os botões <> abaixo do áudio.",
-      "4. Pressione Toggle Target para ocultar o idioma alvo e praticar a tradução.",
-      "5. Você está vendo A1 Chapter 1. Pode escolher níveis A1, A2, B1, B2, C1, C2.",
-      "6. À medida que o nível aumenta, aumentam as situações, o tamanho das frases e o vocabulário.",
-    ],
-  };
-
+  en: [
+    "1. To continue to the next chapter, sign up by clicking Get Started.",
+    "2. You can change the study language using the buttons above.",
+    "3. You can move to the next set using the <> buttons below the audio.",
+    "4. Tap or click a sentence to play only that part.",
+    "5. Press Toggle Target to hide the target language and practice translating.",
+    "6. You are currently viewing A1 Chapter 1. You can choose levels A1, A2, B1, B2, C1, C2.",
+  ],
+  es: [
+    "1. Para continuar al siguiente capítulo, regístrate haciendo clic en Get Started.",
+    "2. Puedes cambiar el idioma de estudio usando los botones de arriba.",
+    "3. Puedes moverte al siguiente set usando los botones <> debajo del audio.",
+    "4. Toca o haz clic en una frase para reproducir solo esa parte.",
+    "5. Presiona Toggle Target para ocultar el idioma objetivo y practicar la traducción.",
+    "6. Actualmente estás viendo A1 Chapter 1. Puedes elegir niveles A1, A2, B1, B2, C1, C2.",
+  ],
+  fr: [
+    "1. Pour continuer au chapitre suivant, inscrivez-vous en cliquant sur Get Started.",
+    "2. Vous pouvez changer la langue d’étude avec les boutons ci-dessus.",
+    "3. Vous pouvez passer au set suivant avec les boutons <> sous l’audio.",
+    "4. Appuyez ou cliquez sur une phrase pour lire uniquement cette partie.",
+    "5. Appuyez sur Toggle Target pour cacher la langue cible et pratiquer la traduction.",
+    "6. Vous regardez actuellement A1 Chapter 1. Vous pouvez choisir les niveaux A1, A2, B1, B2, C1, C2.",
+  ],
+  pt: [
+    "1. Para continuar para o próximo capítulo, registre-se clicando em Get Started.",
+    "2. Pode mudar o idioma de estudo usando os botões acima.",
+    "3. Pode ir para o próximo set usando os botões <> abaixo do áudio.",
+    "4. Toque ou clique numa frase para reproduzir apenas essa parte.",
+    "5. Pressione Toggle Target para ocultar o idioma alvo e praticar a tradução.",
+    "6. Está a ver A1 Chapter 1. Pode escolher níveis A1, A2, B1, B2, C1, C2.",
+  ],
+};
 
   useEffect(() => {
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
   }, [targetLang]);
+  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
+  const [playingKey, setPlayingKey] = useState<string | null>(null);
+
+  const ttsLang = useMemo(
+    () => TTS_LANG_MAP[targetLang] ?? "en-US",
+    [targetLang]
+  );
+
+  const speak = (text: string, key: string) => {
+    if (!text.trim()) return;
+    if (typeof window === "undefined") return;
+
+    const synth = window.speechSynthesis;
+    synth.cancel();
+
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = ttsLang;
+
+    u.onstart = () => setPlayingKey(key);
+    u.onend = () => {
+      setPlayingKey(null);
+      utterRef.current = null;
+    };
+    u.onerror = () => {
+      setPlayingKey(null);
+      utterRef.current = null;
+    };
+
+    utterRef.current = u;
+    synth.speak(u);
+  };
+
+  /* 🔥 필수 */
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    window.speechSynthesis.cancel();
+    utterRef.current = null;
+    setPlayingKey(null);
+  }, [targetLang, chapter]);
 
   useEffect(() => {
     if (!lang) return;
@@ -186,15 +231,31 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
             </button>
 
             <button
-              onClick={() => {
-                navigator.clipboard.writeText(window.location.href);
-                alert("Link copied!");
+              onClick={async () => {
+                if (navigator.share) {
+                  try {
+                    await navigator.share({
+                      title: "Try Demo",
+                      url: window.location.href,
+                    });
+                  } catch { }
+                } else {
+                  await navigator.clipboard.writeText(window.location.href);
+                  alert("Link copied!");
+                }
               }}
-              style={buttonStyle(false)}
+              style={{
+                padding: "6px 10px",
+                borderRadius: 6,
+                fontSize: 13,
+                background: "#f2f2f2",
+                color: "#333",
+                border: "none",
+                cursor: "pointer",
+              }}
             >
               Copy
             </button>
-
             <Link href="/app">
               <button style={{ ...buttonStyle(false), background: "#111", color: "#fff" }}>
                 Get Started
@@ -245,7 +306,18 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
               {/* 단어 */}
               <div style={{ marginBottom: 12 }}>
                 {showTargetText && (
-                  <div style={{ ...sentenceStyle, fontWeight: 700 }}>{word}</div>
+                  <div
+                    onClick={() => speak(word, `word-${idx}`)}
+                    style={{
+                      ...sentenceStyle,
+                      fontWeight: 700,
+                      cursor: "pointer",
+                      background:
+                        playingKey === `word-${idx}` ? "#f3f4f6" : "transparent",
+                    }}
+                  >
+                    {word}
+                  </div>
                 )}
                 <div style={{ ...sentenceStyle, color: "#666" }}>{wordStudy}</div>
               </div>
@@ -258,7 +330,19 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
                 return (
                   <div key={i} style={{ marginBottom: 14 }}>
                     {showTargetText && (
-                      <div style={{ ...sentenceStyle }}>{t}</div>
+                      <div
+                        onClick={() => speak(t, `voca-${idx}-${i}`)}
+                        style={{
+                          ...sentenceStyle,
+                          cursor: "pointer",
+                          background:
+                            playingKey === `voca-${idx}-${i}`
+                              ? "#f3f4f6"
+                              : "transparent",
+                        }}
+                      >
+                        {t}
+                      </div>
                     )}
                     <div style={{ ...sentenceStyle, color: "#666" }}>{s}</div>
                   </div>

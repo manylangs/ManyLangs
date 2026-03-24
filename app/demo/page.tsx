@@ -1,310 +1,209 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import type { CSSProperties } from "react";
 
+import { LANGUAGES } from "@/app/config/languages";
+
 const demoData = [
-    {
-        category: "Vocabulary",
-        desc: "Learn essential words for this chapter",
-        icon: "📘",
-        items: [
-            {
-                title: "Korean A1 - Chapter 1",
-                href: "/demo/viewer/kr/voca/a1/001?mode=demo",
-            },
-        ],
-    },
-    {
-        category: "Grammar",
-        desc: "Understand sentence structures and rules",
-        icon: "🧠",
-        items: [
-            {
-                title: "Korean A1 - Chapter 1",
-                href: "/demo/viewer/kr/grammar/a1/001?mode=demo",
-            },
-        ],
-    },
-    {
-        category: "Conversation",
-        desc: "Practice real dialogues",
-        icon: "💬",
-        items: [
-            {
-                title: "Korean A1 - Chapter 1",
-                href: "/demo/viewer/kr/conversation/a1/001?mode=demo",
-            },
-        ],
-    },
-    {
-        category: "Idioms",
-        desc: "Learn common expressions",
-        icon: "🎭",
-        items: [
-            {
-                title: "Korean A1 - Chapter 1",
-                href: "/demo/viewer/kr/idiom/a1/001?mode=demo",
-            },
-        ],
-    },
-    {
-        category: "Real Situations",
-        desc: "Apply language in real-life contexts",
-        icon: "🌍",
-        items: [
-            {
-                title: "Korean A1 - Chapter 1",
-                href: "/demo/viewer/kr/real/a1/001?mode=demo",
-            },
-        ],
-    },
+  { category: "Vocabulary", desc: "Learn essential words", icon: "📘", items: [{ title: "A1 - Chapter 1", series: "voca" }] },
+  { category: "Grammar", desc: "Understand sentence structures", icon: "🧠", items: [{ title: "A1 - Chapter 1", series: "grammar" }] },
+  { category: "Conversation", desc: "Practice dialogues", icon: "💬", items: [{ title: "A1 - Chapter 1", series: "conversation" }] },
+  { category: "Idioms", desc: "Learn expressions", icon: "🎭", items: [{ title: "A1 - Chapter 1", series: "idiom" }] },
+  { category: "Real Situations", desc: "Real-life language", icon: "🌍", items: [{ title: "A1 - Chapter 1", series: "real" }] },
 ];
 
 export default function DemoPage() {
-    return (
-        <main style={container}>
-            <div style={wrapper}>
-                {/* HEADER */}
-                <div style={headerRow}>
-                    <div style={headerLeft}>
-                        <Link href="/" style={linkReset}>
-                            <button type="button" style={btnBack}>
-                                ← Back
-                            </button>
-                        </Link>
-                    </div>
+  const [lang, setLang] = useState("kr");
 
-                    <div style={headerActions}>
-                        <button
-                            onClick={async () => {
-                                if (navigator.share) {
-                                    try {
-                                        await navigator.share({
-                                            title: "Try Demo",
-                                            url: window.location.href,
-                                        });
-                                    } catch { }
-                                } else {
-                                    await navigator.clipboard.writeText(window.location.href);
-                                    alert("Link copied!");
-                                }
-                            }}
-                            style={btnSecondary}
-                        >
-                            Copy
-                        </button>
+  return (
+    <main style={container}>
+      <div style={wrapper}>
 
-                        <Link href="/app" style={linkReset}>
-                            <button type="button" style={btnPrimary}>
-                                Get Started
-                            </button>
-                        </Link>
-                    </div>
-                </div>
+        {/* HEADER */}
+        <div style={headerRow}>
+          <Link href="/">
+            <span style={linkReset}>
+              <button style={btnBack}>← Back</button>
+            </span>
+          </Link>
 
-                {/* TEXT */}
-                <div style={infoBox}>
-                    <p style={infoText}>
-                        You're viewing Korean sample content.
-                        <br />
-                        Discover other languages with <strong>Get Started</strong>.
-                    </p>
-                </div>
-                {/* CONTENT */}
-                {demoData.map((section) => (
-                    <div key={section.category} style={sectionWrap}>
-                        <div style={sectionHeader}>
-                            <div style={iconStyle}>{section.icon}</div>
+          <div style={headerActions}>
+            <button
+              onClick={async () => {
+                if (navigator.share) {
+                  try {
+                    await navigator.share({ title: "Try Demo", url: window.location.href });
+                  } catch { }
+                } else {
+                  await navigator.clipboard.writeText(window.location.href);
+                  alert("Link copied!");
+                }
+              }}
+              style={btnSecondary}
+            >
+              Copy
+            </button>
 
-                            <div>
-                                <h2 style={sectionTitle}>{section.category}</h2>
-                                <p style={sectionDesc}>{section.desc}</p>
-                            </div>
-                        </div>
+            <Link href="/app" style={linkReset}>
+              <button style={btnPrimary}>Get Started</button>
+            </Link>
+          </div>
+        </div>
 
-                        <div style={grid}>
-                            {section.items.map((item) => (
-                                <Link
-                                    key={item.href}
-                                    href={item.href}
-                                    style={card}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = "translateY(-2px)";
-                                        e.currentTarget.style.boxShadow =
-                                            "0 6px 16px rgba(0,0,0,0.08)";
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = "none";
-                                        e.currentTarget.style.boxShadow =
-                                            "0 1px 2px rgba(0,0,0,0.04)";
-                                    }}
-                                >
-                                    <div>
-                                        <h3 style={cardTitle}>{item.title}</h3>
-                                        <p style={cardMeta}>Beginner • A1</p>
-                                    </div>
+        {/* INFO */}
+        <div style={infoBox}>
+          <p style={infoText}>You're viewing sample content.</p>
 
-                                    <p style={cardHint}>Start learning →</p>
-                                </Link>
-                            ))}
-                        </div>
-                    </div>
-                ))}
+          {/* 🔥 hydration 안전 */}
+          <select
+            value={lang}
+            onChange={(e) => setLang(e.target.value)}
+            style={selectStyle}
+            suppressHydrationWarning
+          >
+            {LANGUAGES.map((l) => (
+              <option key={l.code} value={l.code}>
+                {l.label}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* CONTENT */}
+        {demoData.map((section) => (
+          <div key={section.category} style={sectionWrap}>
+            <div style={sectionHeader}>
+              <div style={iconStyle}>{section.icon}</div>
+              <div>
+                <h2 style={sectionTitle}>{section.category}</h2>
+                <p style={sectionDesc}>{section.desc}</p>
+              </div>
             </div>
-        </main>
-    );
+
+            <div style={grid}>
+              {section.items.map((item) => (
+                <Link
+                  key={item.series}
+                  href={`/demo/viewer/${lang}/${item.series}/a1/001?mode=demo`}
+                  style={card}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = "translateY(-4px)";
+                    e.currentTarget.style.boxShadow = "0 8px 20px rgba(0,0,0,0.1)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = "translateY(0)";
+                    e.currentTarget.style.boxShadow = "0 1px 2px rgba(0,0,0,0.04)";
+                  }}
+                >
+                  <div>
+                    <h3 style={cardTitle}>
+                      {lang.toUpperCase()} {item.title}
+                    </h3>
+                    <p style={cardMeta}>Beginner • A1</p>
+                  </div>
+
+                  <p style={cardHint}>Start learning →</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </main>
+  );
 }
 
-/* ================== styles ================== */
+/* ================= styles ================= */
+
+const selectStyle: CSSProperties = {
+  marginTop: 10,
+  padding: "8px 10px",
+  borderRadius: 8,
+  border: "1px solid #ddd",
+};
 
 const container: CSSProperties = {
-    minHeight: "100vh",
-    display: "flex",
-    justifyContent: "center",
-    background: "#fafafa",
+  minHeight: "100vh",
+  display: "flex",
+  justifyContent: "center",
+  background: "#fafafa",
 };
 
 const wrapper: CSSProperties = {
-    width: "100%",
-    maxWidth: 900,
-    padding: "clamp(20px, 4vw, 40px) clamp(16px, 4vw, 24px)",
+  width: "100%",
+  maxWidth: 900,
+  padding: "clamp(20px, 4vw, 40px)",
 };
 
-/* HEADER */
 const headerRow: CSSProperties = {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    flexWrap: "wrap",
-    gap: 12,
-    marginBottom: 16,
-};
-
-const headerLeft: CSSProperties = {
-    display: "flex",
-    alignItems: "center",
+  display: "flex",
+  justifyContent: "space-between",
+  marginBottom: 16,
 };
 
 const headerActions: CSSProperties = {
-    display: "flex",
-    alignItems: "center",
-    gap: 8,
+  display: "flex",
+  gap: 8,
 };
 
-/* INFO */
-const infoBox: CSSProperties = {
-    marginBottom: 24,
-};
+const infoBox: CSSProperties = { marginBottom: 24 };
+const infoText: CSSProperties = { color: "#555" };
 
-const infoText: CSSProperties = {
-    fontSize: "clamp(14px, 3.5vw, 16px)",
-    color: "#555",
-    marginBottom: 6,
-    lineHeight: 1.6,
-};
-
-/* SECTION */
-const sectionWrap: CSSProperties = {
-    marginBottom: 32, // 🔥 spacing 개선
-};
+const sectionWrap: CSSProperties = { marginBottom: 32 };
 
 const sectionHeader: CSSProperties = {
-    display: "flex",
-    alignItems: "center",
-    gap: 12,
-    marginBottom: 12,
+  display: "flex",
+  gap: 12,
+  marginBottom: 12,
 };
 
-const iconStyle: CSSProperties = {
-    fontSize: 22,
-};
+const iconStyle: CSSProperties = { fontSize: 22 };
 
-const sectionTitle: CSSProperties = {
-    fontSize: "clamp(16px, 4vw, 20px)",
-    fontWeight: 600,
-    margin: 0,
-};
+const sectionTitle: CSSProperties = { fontWeight: 600 };
+const sectionDesc: CSSProperties = { color: "#777" };
 
-const sectionDesc: CSSProperties = {
-    fontSize: "clamp(13px, 3.5vw, 14px)",
-    color: "#777",
-    marginTop: 4,
-};
-
-/* GRID */
 const grid: CSSProperties = {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-    gap: 16,
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+  gap: 16,
 };
 
-/* CARD */
 const card: CSSProperties = {
-    padding: 20,
-    border: "1px solid #e5e5e5",
-    borderRadius: 14,
-    textDecoration: "none",
-    color: "#111",
-    background: "#fff",
-    transition: "all 0.2s ease",
-    cursor: "pointer",
-    boxShadow: "0 1px 2px rgba(0,0,0,0.04)",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-    minHeight: 110,
+  padding: 20,
+  border: "1px solid #e5e5e5",
+  borderRadius: 14,
+  background: "#fff",
+  transition: "all 0.2s ease",
+  boxShadow: "0 1px 2px rgba(0,0,0,0.04)",
 };
 
-const cardTitle: CSSProperties = {
-    fontSize: 16,
-    fontWeight: 600,
-    marginBottom: 6,
-};
+const cardTitle: CSSProperties = { fontWeight: 600 };
+const cardMeta: CSSProperties = { fontSize: 12, color: "#999" };
+const cardHint: CSSProperties = { marginTop: 12, color: "#666" };
 
-const cardMeta: CSSProperties = {
-    fontSize: 12,
-    color: "#999",
-};
-
-const cardHint: CSSProperties = {
-    fontSize: 13,
-    color: "#666",
-    marginTop: 12,
-};
-
-/* BUTTONS */
 const btnPrimary: CSSProperties = {
-    padding: "8px 14px",
-    fontSize: 13,
-    borderRadius: 8,
-    border: "none",
-    background: "#111",
-    color: "#fff",
-    cursor: "pointer",
-    fontWeight: 600,
+  padding: "8px 14px",
+  borderRadius: 8,
+  background: "#111",
+  color: "#fff",
+  border: "none",
 };
 
 const btnSecondary: CSSProperties = {
-    padding: "8px 12px",
-    fontSize: 13,
-    borderRadius: 8,
-    border: "1px solid #eee",
-    background: "#fff",
-    cursor: "pointer",
+  padding: "8px 12px",
+  borderRadius: 8,
+  border: "1px solid #eee",
+  background: "#fff",
 };
 
 const btnBack: CSSProperties = {
-    padding: "6px 10px", // 🔥 더 가볍게
-    fontSize: 13,
-    borderRadius: 8,
-    border: "1px solid #eee",
-    background: "#fff",
-    color: "#555",
-    cursor: "pointer",
+  padding: "6px 10px",
+  borderRadius: 8,
+  border: "1px solid #eee",
 };
 
-/* LINK */
 const linkReset: CSSProperties = {
-    textDecoration: "none",
+  textDecoration: "none",
 };
