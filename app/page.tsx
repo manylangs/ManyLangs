@@ -116,8 +116,19 @@ export default function LandingPage() {
                 </button>
               </a>
 
-              <button style={btnIconSmall}>Android</button>
-              <button style={btnIconSmall}>iOS</button>
+              <button
+                style={btnIconSmall}
+                onClick={handleAndroidInstall}
+              >
+                Android
+              </button>
+
+              <button
+                style={btnIconSmall}
+                onClick={handleIOSInstall}
+              >
+                IOS
+              </button>
               <button
                 onClick={async () => {
                   if (navigator.share) {
