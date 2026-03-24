@@ -101,47 +101,64 @@ export default function LandingPage() {
           {/* 오른쪽 */}
           <div style={rightWrap}>
 
-              {/* 버튼 그룹 */}
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 6,
-                  flexShrink: 0,
-                }}
-              >
-                <a href="/app" style={linkReset}>
-                  <button type="button" style={btnHeaderPrimary}>
-                    Unlock Full Access
-                  </button>
-                </a>
+            {/* 버튼 그룹 */}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 6,
+                flexShrink: 0,
+              }}
+            >
+              <a href="/app" style={linkReset}>
+                <button type="button" style={btnHeaderPrimary}>
+                  Unlock Full Access
+                </button>
+              </a>
 
-                <button style={btnIconSmall}>Android</button>
-                <button style={btnIconSmall}>iOS</button>
-                <button style={btnIconSmallWrap}>Copy link</button>
-              </div>
-
-              {/* 🔥 햄버거 여기 추가 */}
+              <button style={btnIconSmall}>Android</button>
+              <button style={btnIconSmall}>iOS</button>
               <button
-                onClick={() => setMenuOpen((prev) => !prev)}
-                style={hamburger}
-                className="mobile-only"
+                onClick={async () => {
+                  if (navigator.share) {
+                    try {
+                      await navigator.share({
+                        title: "Try Demo",
+                        url: window.location.href,
+                      });
+                    } catch { }
+                  } else {
+                    await navigator.clipboard.writeText(window.location.href);
+                    alert("Link copied!");
+                  }
+                }}
+                style={btnIconSmall}
               >
-                ☰
+                Copy link
               </button>
-
             </div>
-            {/* 🔥 모바일 메뉴 */}
-            {menuOpen && (
-              <div style={mobileMenu}>
-                <a href="#demo" style={mobileMenuLink} onClick={closeMenu}>How you’ll learn</a>
-                <a href="#features" style={mobileMenuLink} onClick={closeMenu}>Features</a>
-                <a href="#how" style={mobileMenuLink} onClick={closeMenu}>How it works</a>
-                <a href="#usecases" style={mobileMenuLink} onClick={closeMenu}>Use Cases</a>
-                <a href="#pricing" style={mobileMenuLink} onClick={closeMenu}>Pricing</a>
-              </div>
-            )}
+
+            {/* 🔥 햄버거 여기 추가 */}
+            <button
+              onClick={() => setMenuOpen((prev) => !prev)}
+              style={hamburger}
+              className="mobile-only"
+            >
+              ☰
+            </button>
+
           </div>
+          {/* 🔥 모바일 메뉴 */}
+          {menuOpen && (
+            <div style={mobileMenu}>
+              <a href="#demo" style={mobileMenuLink} onClick={closeMenu}>How you’ll learn</a>
+              <a href="#features" style={mobileMenuLink} onClick={closeMenu}>Features</a>
+              <a href="#how" style={mobileMenuLink} onClick={closeMenu}>How it works</a>
+              <a href="#usecases" style={mobileMenuLink} onClick={closeMenu}>Use Cases</a>
+              <a href="#pricing" style={mobileMenuLink} onClick={closeMenu}>Pricing</a>
+            </div>
+          )}
+        </div>
       </header>
       <section style={heroSection}>
         <p
