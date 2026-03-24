@@ -43,12 +43,15 @@ export default function DemoPage() {
               }}
               style={btnSecondary}
             >
-              Copy
+              Copy link
             </button>
 
-            <Link href="/app" style={linkReset}>
-              <button style={btnPrimary}>Get Started</button>
-            </Link>
+            <a href="/app" style={linkReset}>
+              <button type="button" style={btnHeaderPrimary}>
+                Unlock Full Access
+              </button>
+            </a>
+
           </div>
         </div>
 
@@ -206,4 +209,15 @@ const btnBack: CSSProperties = {
 
 const linkReset: CSSProperties = {
   textDecoration: "none",
+};
+const btnHeaderPrimary: React.CSSProperties = {
+  padding: "8px 14px",
+  fontSize: 13,
+  borderRadius: 8,
+  background: "#111",
+  color: "#fff",
+  border: "none",
+  fontWeight: 600,
+  whiteSpace: "nowrap",
+  minWidth: 150, // 🔥 핵심 (길게)
 };

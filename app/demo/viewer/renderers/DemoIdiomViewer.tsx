@@ -211,62 +211,100 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
     <div style={containerStyle}>
       {/* 🔥 HEADER */}
       <div style={{ position: "sticky", top: 0, background: "#fff", zIndex: 30 }}>
+
         <div
           style={{
             display: "flex",
-            justifyContent: "space-between",
+            flexDirection: "column",
             padding: "10px 0",
-            flexWrap: "wrap",
             borderBottom: "1px solid #eee",
+            gap: 6,
           }}
         >
-          <div style={{ display: "flex", gap: 6 }}>
-            {ALL_STUDY_LANGS
-              .filter((l) => l !== targetLang)
-              .map((l) => (
-                <button key={l} onClick={() => setStudyLang(l)} style={buttonStyle(studyLang === l)}>
-                  {l.toUpperCase()}
-                </button>
-              ))}
 
-            <button onClick={() => setShowTargetText(!showTargetText)} style={buttonStyle(false)}>
-              Toggle
-            </button>
-            <button
-              onClick={async () => {
-                if (navigator.share) {
-                  try {
-                    await navigator.share({
-                      title: "Try Demo",
-                      url: window.location.href,
-                    });
-                  } catch { }
-                } else {
-                  await navigator.clipboard.writeText(window.location.href);
-                  alert("Link copied!");
-                }
-              }}
+          {/* 🔥 1줄: Back + 버튼 */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              flexWrap: "wrap",
+              gap: 6,
+            }}
+          >
+            <Link href="/demo" style={{ fontSize: 13 }}>
+              ← Back
+            </Link>
+
+            <div
               style={{
-                padding: "6px 10px",
-                borderRadius: 6,
-                fontSize: 13,
-                background: "#f2f2f2",
-                color: "#333",
-                border: "none",
-                cursor: "pointer",
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 6,
+                justifyContent: "flex-end",
               }}
             >
-              Copy
-            </button>
+              {ALL_STUDY_LANGS
+                .filter((l) => l !== targetLang)
+                .map((l) => (
+                  <button
+                    key={l}
+                    onClick={() => setStudyLang(l)}
+                    style={buttonStyle(studyLang === l)}
+                  >
+                    {l.toUpperCase()}
+                  </button>
+                ))}
 
-            <Link href="/app">
-              <button style={{ ...buttonStyle(false), background: "#111", color: "#fff" }}>
-                Get Started
+              <button
+                onClick={() => setShowTargetText(!showTargetText)}
+                style={buttonStyle(false)}
+              >
+                Toggle
+              </button>
+
+              <button
+                onClick={async () => {
+                  if (navigator.share) {
+                    try {
+                      await navigator.share({
+                        title: "Try Demo",
+                        url: window.location.href,
+                      });
+                    } catch { }
+                  } else {
+                    await navigator.clipboard.writeText(window.location.href);
+                    alert("Link copied!");
+                  }
+                }}
+                style={buttonStyle(false)}
+              >
+                Copy link
+              </button>
+            </div>
+          </div>
+
+          {/* 🔥 2줄: Unlock */}
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "flex-end",
+            }}
+          >
+            <Link href="/app" style={{ width: "100%" }}>
+              <button
+                style={{
+                  ...buttonStyle(false),
+                  background: "#111",
+                  color: "#fff",
+                  width: "100%",
+                }}
+              >
+                Unlock Full Access
               </button>
             </Link>
           </div>
-
-          <Link href="/demo">← Back</Link>
         </div>
 
         {/* 🔥 AUDIO */}

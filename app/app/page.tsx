@@ -1,4 +1,3 @@
-//로그인 페이지
 "use client";
 
 import Link from "next/link";
@@ -19,24 +18,52 @@ export default function HomePage() {
         alignItems: "center",
       }}
     >
-      <section style={{ maxWidth: 560, width: "100%", padding: 24 }}>
-        <Logo />
+      <section
+        style={{
+          maxWidth: 560,
+          width: "100%",
+          padding: 24,
+          textAlign: "center",
+          margin: "0 auto",
+        }}
+      >
+        {/* 🔥 텍스트 1 */}
 
+        {/* 🔥 로고 (p 밖으로 분리) */}
+        <div
+          style={{
+            margin: "8px 0",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Logo />
+        </div>
+
+        {/* 🔥 텍스트 2 */}
         <p
           style={{
             fontSize: 16,
             lineHeight: 1.6,
             marginBottom: 24,
-            whiteSpace: "nowrap",
           }}
         >
-          Learn through structured lessons — built for real use.
+
+          Grammar · Speaking · Vocabulary
           <br />
-          Grammar · Speaking · Vocabulary · Idioms · Real-world usage
+          Idioms · Real-world usage
         </p>
 
+        {/* 🔥 버튼 */}
         {userId ? (
-          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+          <div
+            style={{
+              display: "flex",
+              gap: 12,
+              justifyContent: "center",
+              flexWrap: "wrap",
+            }}
+          >
             <Link href="/select-books">
               <button style={btnPrimary}>Go to Library</button>
             </Link>
@@ -50,7 +77,13 @@ export default function HomePage() {
             </Link>
           </div>
         ) : (
-          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+          <div
+            style={{
+              display: "flex",
+              gap: 12,
+              justifyContent: "center",
+            }}
+          >
             <Link href="/login">
               <button style={btnPrimary}>Log in</button>
             </Link>
@@ -61,6 +94,7 @@ export default function HomePage() {
           </div>
         )}
 
+        {/* 🔥 하단 설명 */}
         <div
           style={{
             marginTop: 28,
@@ -70,9 +104,11 @@ export default function HomePage() {
           }}
         >
           <p style={{ margin: 0 }}>
-            Explore the features of ManyLangs on our website.<br />
-            Try the demo to see it in action.
+            Explore the features of ManyLangs on our website.
+            <br />
+            Try a free lesson.
           </p>
+
           <a
             href="https://www.manylangs.studio"
             target="_blank"
@@ -92,6 +128,8 @@ export default function HomePage() {
     </main>
   );
 }
+
+/* 버튼 스타일 */
 
 const baseBtn = {
   padding: "10px 16px",
@@ -126,4 +164,3 @@ const btnDangerOutline = {
   background: "#fff",
   color: "#dc2626",
 } as const;
-

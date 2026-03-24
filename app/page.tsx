@@ -2,7 +2,7 @@
 "use client";
 
 import Link from "next/link";
-import LogoBig from "@/app/components/LogoBig";
+import Logo from "@/app/components/Logo";
 import React, { useState, useEffect } from "react";
 import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
@@ -101,52 +101,48 @@ export default function LandingPage() {
           {/* 오른쪽 */}
           <div style={rightWrap}>
 
-            {/* 데스크탑 버튼 */}
-            <div
-              style={{ display: "flex", gap: 6 }}
-              className="header-buttons"
-            >
-              <Link href="/app" style={linkReset}>
-                <button style={btnSecondary}>Get Started</button>
-              </Link>
+              {/* 버튼 그룹 */}
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 6,
+                  flexShrink: 0,
+                }}
+              >
+                <a href="/app" style={linkReset}>
+                  <button type="button" style={btnHeaderPrimary}>
+                    Unlock Full Access
+                  </button>
+                </a>
 
-              <button onClick={handleAndroidInstall} style={btnInstallPrimary}>
-                Android
+                <button style={btnIconSmall}>Android</button>
+                <button style={btnIconSmall}>iOS</button>
+                <button style={btnIconSmallWrap}>Copy link</button>
+              </div>
+
+              {/* 🔥 햄버거 여기 추가 */}
+              <button
+                onClick={() => setMenuOpen((prev) => !prev)}
+                style={hamburger}
+                className="mobile-only"
+              >
+                ☰
               </button>
 
-              <button onClick={handleIOSInstall} style={btnInstallSecondary}>
-                iOS
-              </button>
-
-              <button onClick={handleShare} style={btnGhost}>
-                Copy link
-              </button>
             </div>
-
-            {/* 모바일 햄버거 */}
-            <button
-              onClick={() => setMenuOpen((prev) => !prev)}
-              style={hamburger}
-              className="mobile-only"
-            >
-              ☰
-            </button>
-
+            {/* 🔥 모바일 메뉴 */}
+            {menuOpen && (
+              <div style={mobileMenu}>
+                <a href="#demo" style={mobileMenuLink} onClick={closeMenu}>How you’ll learn</a>
+                <a href="#features" style={mobileMenuLink} onClick={closeMenu}>Features</a>
+                <a href="#how" style={mobileMenuLink} onClick={closeMenu}>How it works</a>
+                <a href="#usecases" style={mobileMenuLink} onClick={closeMenu}>Use Cases</a>
+                <a href="#pricing" style={mobileMenuLink} onClick={closeMenu}>Pricing</a>
+              </div>
+            )}
           </div>
-        </div>
-
-        {/* 🔥 모바일 메뉴 */}
-        {menuOpen && (
-          <div style={mobileMenu}>
-            <a href="#demo" style={mobileMenuLink} onClick={closeMenu}>How you’ll learn</a>
-            <a href="#features" style={mobileMenuLink} onClick={closeMenu}>Features</a>
-            <a href="#how" style={mobileMenuLink} onClick={closeMenu}>How it works</a>
-            <a href="#usecases" style={mobileMenuLink} onClick={closeMenu}>Use Cases</a>
-            <a href="#pricing" style={mobileMenuLink} onClick={closeMenu}>Pricing</a>
-          </div>
-        )}
       </header>
-
       <section style={heroSection}>
         <p
           style={{
@@ -194,20 +190,42 @@ export default function LandingPage() {
           No sign-up required for demo
         </span>
 
-        {/* 기존 키워드 */}
-        <span
+
+      </section>
+      {/* 🔥 Brand Logo Banner */}
+      <section
+        style={{
+          width: "100%",
+          padding: "8px 20px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div
           style={{
-            display: "block",
-            fontSize: 12,
-            opacity: 0.6,
-            textAlign: "center",
-            marginTop: 6,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: 8, // 🔥 간격 줄임
           }}
         >
-          Grammar · Speaking · Vocabulary · Idioms · Real-world usage
-        </span>
-      </section>
+          <Logo />
 
+          {/* 기존 키워드 */}
+          <span
+            style={{
+              display: "block",
+              fontSize: 11,   // 🔥 12 → 11
+              opacity: 0.5,   // 🔥 0.6 → 0.5
+              textAlign: "center",
+              marginTop: 4,
+            }}
+          >
+            Grammar · Speaking · Vocabulary · Idioms · Real-world usage
+          </span>
+        </div>
+      </section>
       {/* Demo Section */}
       <section
         id="demo"
@@ -467,9 +485,16 @@ export default function LandingPage() {
             ))}
           </div>
 
-          <a href="/app" style={linkReset}>
+          <a
+            href="/app"
+            style={{
+              ...linkReset,
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
             <button type="button" style={btnPrimary}>
-              Buy Coupons
+              Purchase coupons after login
             </button>
           </a>
 
@@ -496,8 +521,8 @@ export default function LandingPage() {
         <h2 style={ctaTitle}>Start learning today</h2>
 
         <a href="/app" style={linkReset}>
-          <button type="button" style={btnPrimary}>
-            Login to Start
+          <button type="button" style={btnHeaderPrimary}>
+            Unlock Full Access
           </button>
         </a>
       </section>
@@ -696,6 +721,8 @@ const mainStyle: React.CSSProperties = {
   fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
   paddingTop: 0,
   minHeight: "100vh",
+  width: "100%",
+  overflowX: "hidden", // 🔥 혹시 모를 미세 밀림 차단
 };
 
 const linkReset: React.CSSProperties = {
@@ -708,11 +735,12 @@ const headerStyle: React.CSSProperties = {
   top: 0,
   left: 0,
   width: "100%",
+  boxSizing: "border-box", // 🔥 이거 추가 (핵심)
   zIndex: 9999,
   background: "#fff",
   borderBottom: "1px solid #eee",
-  padding: "14px 20px",
-  height: 64, // 🔥 추가 (핵심)
+  padding: "14px 16px", // 🔥 20 → 16 (통일)
+  height: 64,
 };
 const headerInner: React.CSSProperties = {
   maxWidth: 1100,
@@ -753,20 +781,6 @@ const rightArea: React.CSSProperties = {
   fontSize: 12,
   color: "#666",
   whiteSpace: "nowrap",
-};
-
-const hamburger: React.CSSProperties = {
-  display: "inline-flex",
-  alignItems: "center",
-  justifyContent: "center",
-  width: 40,   // 🔥 40 → 28
-  height: 40,  // 🔥 40 → 28
-  fontSize: 16, // 🔥 22 → 16
-  lineHeight: 1,
-  background: "#fff",
-  border: "1px solid #ddd",
-  borderRadius: 6,
-  cursor: "pointer",
 };
 
 const mobileMenu: React.CSSProperties = {
@@ -822,12 +836,13 @@ const heroTitle: React.CSSProperties = {
 };
 
 const heroSection: React.CSSProperties = {
+  width: "100%",            // 🔥 추가 (핵심)
   maxWidth: 720,
   margin: "0 auto",
-  padding: "calc(var(--header-h) + 24px) 20px 80px",
+  padding: "calc(var(--header-h) + 24px) 16px 24px", // 🔥 20 → 16
+  boxSizing: "border-box",  // 🔥 필수
   textAlign: "center",
 };
-
 const heroSub: React.CSSProperties = {
   fontSize: 13,
   color: "#666",
@@ -860,14 +875,12 @@ const keywordText: React.CSSProperties = {
 /* ================= Sections ================= */
 
 const sectionWrap: React.CSSProperties = {
-  position: "relative",
-  zIndex: 1,
-  scrollMarginTop: "var(--header-h)", // 🔥 수정
+  width: "100%",            // 🔥 추가
   maxWidth: 1000,
   margin: "0 auto",
-  padding: "clamp(20px, 4vw, 40px) 20px",
+  padding: "clamp(20px, 4vw, 40px) 16px", // 🔥 20 → 16
+  boxSizing: "border-box",  // 🔥 필수
 };
-
 const sectionCenter: React.CSSProperties = {
   scrollMarginTop: "var(--header-h)",
   maxWidth: 1000,          // 🔥 추가
@@ -945,12 +958,11 @@ const cardSmall: React.CSSProperties = {
 };
 
 const pricingCard: React.CSSProperties = {
-  border: "1px solid #eee",
-  borderRadius: 12,
-  padding: 24,
+  width: "100%",
   maxWidth: 360,
   margin: "0 auto",
-  width: "100%", // 🔥 추가
+  padding: 20,
+  boxSizing: "border-box", // 🔥 추가
 };
 
 const pricingTitle: React.CSSProperties = {
@@ -1056,6 +1068,20 @@ const btnGhost: React.CSSProperties = {
 };
 /* ================= Modal Styles ================= */
 
+
+//헤더 버튼
+
+const btnHeaderCTA: React.CSSProperties = {
+  padding: "6px 10px",
+  fontSize: 12,
+  borderRadius: 6,
+  background: "#111",
+  color: "#fff",
+  border: "none",
+  fontWeight: 600,
+};
+
+
 const modalOverlay: React.CSSProperties = {
   position: "fixed",
   top: 0,
@@ -1066,18 +1092,59 @@ const modalOverlay: React.CSSProperties = {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  zIndex: 999,
+  zIndex: 9999,
 };
 
 const modalContent: React.CSSProperties = {
   background: "#fff",
   borderRadius: 12,
   padding: 20,
-  maxWidth: 400,
   width: "90%",
-  maxHeight: "80vh",
-  overflowY: "auto",
-  fontSize: 14,
-  lineHeight: 1.6,
+  maxWidth: 400,
 };
 
+
+const btnHeaderPrimary: React.CSSProperties = {
+  padding: "8px 14px",
+  fontSize: 13,
+  borderRadius: 8,
+  background: "#111",
+  color: "#fff",
+  border: "none",
+  fontWeight: 600,
+  whiteSpace: "nowrap",
+  minWidth: 150, // 🔥 핵심 (길게)
+};
+// 🔥 기존 btnIconSmall 수정 (불필요 제거)
+const btnIconSmall: React.CSSProperties = {
+  height: 26,
+  padding: "0 6px",
+  borderRadius: 6,
+  background: "#f5f5f5",
+  border: "1px solid #e5e5e5",
+  fontSize: 10,
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+};
+
+// 🔥 Copy 전용 (줄바꿈 허용)
+const btnIconSmallWrap: React.CSSProperties = {
+  ...btnIconSmall,
+  whiteSpace: "normal",   // 🔥 핵심
+  lineHeight: 1.1,
+  padding: "2px 6px",
+};
+const hamburger: React.CSSProperties = {
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",
+  width: 32,
+  height: 32,
+  fontSize: 14,
+  background: "#fff",
+  border: "1px solid #ddd",
+  borderRadius: 6,
+  cursor: "pointer",
+  flexShrink: 0, // 🔥 중요
+};

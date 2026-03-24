@@ -192,80 +192,113 @@ export default function DemoRealViewer({ level, chapter }: Props) {
   return (
     <div style={containerStyle}>
       {/* HEADER */}
+
+      {/* ================= HEADER ================= */}
       <div style={{ position: "sticky", top: 0, background: "#fff", zIndex: 30 }}>
 
-        {/* 🔹 상단 버튼 영역 */}
         <div
           style={{
             display: "flex",
-            justifyContent: "space-between",
-            padding: "10px 0", // 🔥 줄임 (기존 12 → 10)
-            flexWrap: "wrap",
-            borderBottom: "1px solid #eee", // 🔥 구분선 추가
+            flexDirection: "column",
+            padding: "10px 0",
+            borderBottom: "1px solid #eee",
+            gap: 6,
           }}
         >
-          <div style={{ display: "flex", gap: 6 }}>
-            {(["en", "es", "fr", "pt"] as StudyLang[]).map((l) => (
-              <button key={l} onClick={() => setStudyLang(l)} style={buttonStyle(studyLang === l)}>
-                {l.toUpperCase()}
-              </button>
-            ))}
 
-            <button onClick={() => setShowTarget(!showTarget)} style={buttonStyle(false)}>
-              Toggle
-            </button>
+          {/* 🔥 1줄 */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              flexWrap: "wrap",
+              gap: 6,
+            }}
+          >
+            <Link href="/demo" style={{ fontSize: 13 }}>
+              ← Back
+            </Link>
 
-            <button
-              onClick={async () => {
-                if (navigator.share) {
-                  try {
-                    await navigator.share({
-                      title: "Try Demo",
-                      url: window.location.href,
-                    });
-                  } catch { }
-                } else {
-                  await navigator.clipboard.writeText(window.location.href);
-                  alert("Link copied!");
-                }
-              }}
+            <div
               style={{
-                padding: "6px 10px",
-                borderRadius: 6,
-                fontSize: 13,
-                background: "#f2f2f2",
-                color: "#333",
-                border: "none",
-                cursor: "pointer",
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 6,
+                justifyContent: "flex-end",
               }}
             >
-              Copy
-            </button>
+              {(["en", "es", "fr", "pt"] as StudyLang[])
+                .filter((l) => l !== targetLang)
+                .map((l) => (
+                  <button
+                    key={l}
+                    onClick={() => setStudyLang(l)}
+                    style={buttonStyle(studyLang === l)}
+                  >
+                    {l.toUpperCase()}
+                  </button>
+                ))}
 
-            <Link href="/app">
-              <button style={{ ...buttonStyle(false), background: "#111", color: "#fff" }}>
-                Get Started
+              <button
+                onClick={() => setShowTarget(!showTarget)}
+                style={buttonStyle(false)}
+              >
+                Toggle
+              </button>
+
+              <button
+                onClick={async () => {
+                  if (navigator.share) {
+                    try {
+                      await navigator.share({
+                        title: "Try Demo",
+                        url: window.location.href,
+                      });
+                    } catch { }
+                  } else {
+                    await navigator.clipboard.writeText(window.location.href);
+                    alert("Link copied!");
+                  }
+                }}
+                style={buttonStyle(false)}
+              >
+                Copy link
+              </button>
+            </div>
+          </div>
+
+          {/* 🔥 2줄 Unlock */}
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "flex-end",
+            }}
+          >
+            <Link href="/app" style={{ width: "100%" }}>
+              <button
+                style={{
+                  ...buttonStyle(false),
+                  background: "#111",
+                  color: "#fff",
+                  width: "100%",
+                }}
+              >
+                Unlock Full Access
               </button>
             </Link>
           </div>
-
-          <Link href="/demo">← Back</Link>
         </div>
 
-        {/* 🔥 AUDIO (헤더에 완전히 붙음) */}
+        {/* 🔥 AUDIO */}
         {audioSrc && (
-          <div
-            style={{
-              borderBottom: "1px solid #eee", // 🔥 구분선만 유지
-              paddingTop: 6, // 살짝 breathing
-              paddingBottom: 6,
-            }}
-          >
+          <div style={{ borderBottom: "1px solid #eee", padding: "6px 0" }}>
             <RealAudioController src={audioSrc} />
           </div>
         )}
 
-        {/* GUIDE */}
+        {/* 🔥 GUIDE */}
         <div
           style={{
             fontSize: 13,
@@ -274,7 +307,7 @@ export default function DemoRealViewer({ level, chapter }: Props) {
             padding: "12px 14px",
             borderRadius: 10,
             border: "1px solid #eee",
-            marginTop: 10, // 🔥 여기만 여백 유지
+            marginTop: 10,
           }}
         >
           {guideTexts[studyLang].map((t, i) => (
@@ -282,7 +315,6 @@ export default function DemoRealViewer({ level, chapter }: Props) {
           ))}
         </div>
       </div>
-
       {/* CONTENT */}
       <div style={{ padding: "30px 0" }}>
         <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
