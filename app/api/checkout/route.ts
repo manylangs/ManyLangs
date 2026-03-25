@@ -103,7 +103,7 @@ export async function POST(req: Request) {
     const priceId = getPriceId(amount);
 
     const session = await stripe.checkout.sessions.create({
-      payment_method_types: ["card"], // 🔥 이 줄 추가 카드승인후 여러 결제수단 추가할 때 (Apple Pay 등)Stripe 자동 설정 쓰고 싶을 때 삭제
+      //payment_method_types: ["card"], // 🔥 이 줄 추가 카드승인후 여러 결제수단 추가할 때 (Apple Pay 등)Stripe 자동 설정 쓰고 싶을 때 삭제
 
       mode: "payment",
       customer_creation: "always",

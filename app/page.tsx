@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 
 export default function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [footerOpen, setFooterOpen] = useState<"terms" | "privacy" | null>(null);
+  const [footerOpen, setFooterOpen] = useState<"terms" | "privacy" | "refund" | null>(null);
   // 🔥 추가 (핵심)
   const { isSignedIn, isLoaded } = useUser();
   const router = useRouter();
@@ -687,6 +687,17 @@ export default function LandingPage() {
             >
               Privacy
             </button>
+            <button
+              onClick={() => setFooterOpen("refund")}
+              style={{
+                ...footerLink,
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+              }}
+            >
+              Refund
+            </button>
           </div>
         </div>
       </footer>
@@ -701,7 +712,11 @@ export default function LandingPage() {
               }}
             >
               <strong>
-                {footerOpen === "terms" ? "Terms" : "Privacy Policy"}
+                {footerOpen === "terms"
+                  ? "Terms"
+                  : footerOpen === "privacy"
+                    ? "Privacy Policy"
+                    : "Refund Policy"}
               </strong>
               <button
                 onClick={() => setFooterOpen(null)}
@@ -726,6 +741,15 @@ export default function LandingPage() {
                 <p>• We collect minimal user data for service operation.</p>
                 <p>• Your data is not sold or shared with third parties.</p>
                 <p>• Login information is securely managed.</p>
+              </div>
+            )}
+
+            {footerOpen === "refund" && (
+              <div>
+                <p>• Refund not available if any coupon from the same purchase has been used.</p>
+                <p>• Coupons do not expire.</p>
+                <p>• If multiple unused coupons exist across purchases, they may be refunded together.</p>
+                <p>• Refunds are only provided in case of technical errors or duplicate charges.</p>
               </div>
             )}
           </div>
