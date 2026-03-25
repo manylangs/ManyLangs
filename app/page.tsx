@@ -76,7 +76,23 @@ export default function LandingPage() {
   };
 
   const closeMenu = () => setMenuOpen(false);
+  // 🔥 ===== [START] scrollToSection =====
+  const scrollToSection = (id: string) => {
+    closeMenu();
 
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (!el) return;
+
+      const y =
+        el.getBoundingClientRect().top +
+        window.scrollY -
+        (window.innerWidth <= 768 ? 72 : 64);
+
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }, 80);
+  };
+  // 🔥 ===== [END] scrollToSection =====
   return (
     <main style={mainStyle}>
       {/* 이하 기존 코드 그대로 유지 */}
@@ -159,16 +175,28 @@ export default function LandingPage() {
             </button>
 
           </div>
-          {/* 🔥 모바일 메뉴 */}
+
+
           {menuOpen && (
             <div style={mobileMenu}>
-              <a href="#demo" style={mobileMenuLink} onClick={closeMenu}>How you’ll learn</a>
-              <a href="#features" style={mobileMenuLink} onClick={closeMenu}>Features</a>
-              <a href="#how" style={mobileMenuLink} onClick={closeMenu}>How it works</a>
-              <a href="#usecases" style={mobileMenuLink} onClick={closeMenu}>Use Cases</a>
-              <a href="#pricing" style={mobileMenuLink} onClick={closeMenu}>Pricing</a>
+              <button style={mobileMenuLink} onClick={() => scrollToSection("demo")}>
+                How you’ll learn
+              </button>
+              <button style={mobileMenuLink} onClick={() => scrollToSection("features")}>
+                Features
+              </button>
+              <button style={mobileMenuLink} onClick={() => scrollToSection("how")}>
+                How it works
+              </button>
+              <button style={mobileMenuLink} onClick={() => scrollToSection("usecases")}>
+                Use Cases
+              </button>
+              <button style={mobileMenuLink} onClick={() => scrollToSection("pricing")}>
+                Pricing
+              </button>
             </div>
           )}
+
         </div>
       </header>
       <section style={heroSection}>
@@ -190,11 +218,11 @@ export default function LandingPage() {
           </span>
         </p>
 
-        {/* 버튼 영역 */}
         <div
           style={{
             ...btnRow,
             justifyContent: "center",
+            gap: 14, // 🔥 간격 업 (기존보다 넓게)
           }}
         >
           {/* 🔥 메인 CTA */}
@@ -203,6 +231,27 @@ export default function LandingPage() {
               Try Free Lesson
             </button>
           </a>
+
+          {/* 🔥 ===== [START] Curriculum CTA ===== */}
+          <a href="/curriculum" style={linkReset}>
+            <button
+              type="button"
+              style={{
+                ...btnSecondary,
+                border: "1px solid #bbb", // 🔥 더 또렷하게
+                background: "#fff",
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.background = "#f9f9f9";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.background = "#fff";
+              }}
+            >
+              View Full Curriculum
+            </button>
+          </a>
+          {/* 🔥 ===== [END] Curriculum CTA ===== */}
         </div>
 
         {/* 🔥 신뢰 한 줄 */}
@@ -212,13 +261,11 @@ export default function LandingPage() {
             fontSize: 13,
             opacity: 0.6,
             textAlign: "center",
-            marginTop: 12,
+            marginTop: 14, // 🔥 살짝 여유 추가
           }}
         >
           No sign-up required for demo
         </span>
-
-
       </section>
       {/* 🔥 Brand Logo Banner */}
       <section
@@ -811,28 +858,18 @@ const rightArea: React.CSSProperties = {
   whiteSpace: "nowrap",
 };
 
-const mobileMenu: React.CSSProperties = {
-  position: "absolute",     // 🔥 핵심
-  top: 64,                  // 헤더 높이 기준
-  right: 20,
-  width: 180,
-  background: "#fff",
-  border: "1px solid #eee",
-  borderRadius: 12,
-  boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
-  padding: 12,
-  display: "flex",
-  flexDirection: "column",
-  gap: 10,
-  zIndex: 2000,
-};
+// 🔥 ===== [START] mobileMenuLink =====
 const mobileMenuLink: React.CSSProperties = {
-  textDecoration: "none",
+  width: "100%",
+  background: "none",
+  border: "none",
+  textAlign: "left",
   color: "#222",
   fontSize: 15,
   fontWeight: 600,
+  padding: "10px 12px",
+  cursor: "pointer",
 };
-
 const mobileEmail: React.CSSProperties = {
   marginTop: 6,
   fontSize: 12,
@@ -902,13 +939,17 @@ const keywordText: React.CSSProperties = {
 
 /* ================= Sections ================= */
 
+// 🔥 ===== [START] sectionWrap =====
 const sectionWrap: React.CSSProperties = {
-  width: "100%",            // 🔥 추가
+  width: "100%",
   maxWidth: 1000,
   margin: "0 auto",
-  padding: "clamp(20px, 4vw, 40px) 16px", // 🔥 20 → 16
-  boxSizing: "border-box",  // 🔥 필수
+  padding: "clamp(20px, 4vw, 40px) 16px",
+  boxSizing: "border-box",
+  scrollMarginTop: "var(--header-h)", // 🔥 추가
 };
+
+// 🔥 ===== [END] sectionWrap =====
 const sectionCenter: React.CSSProperties = {
   scrollMarginTop: "var(--header-h)",
   maxWidth: 1000,          // 🔥 추가
@@ -1176,3 +1217,20 @@ const hamburger: React.CSSProperties = {
   cursor: "pointer",
   flexShrink: 0, // 🔥 중요
 };
+// 🔥 ===== [START] mobileMenu =====
+const mobileMenu: React.CSSProperties = {
+  position: "absolute",
+  top: 64,
+  right: 16,
+  width: 200,
+  background: "#fff",
+  border: "1px solid #eee",
+  borderRadius: 12,
+  boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+  padding: 8,
+  display: "flex",
+  flexDirection: "column",
+  gap: 4,
+  zIndex: 2000,
+};
+// 🔥 ===== [END] mobileMenu =====

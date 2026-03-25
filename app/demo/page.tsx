@@ -7,11 +7,11 @@ import type { CSSProperties } from "react";
 import { LANGUAGES } from "@/app/config/languages";
 
 const demoData = [
-  { category: "Vocabulary", desc: "Learn essential words", icon: "📘", items: [{ title: "A1 - Chapter 1", series: "voca" }] },
-  { category: "Grammar", desc: "Understand sentence structures", icon: "🧠", items: [{ title: "A1 - Chapter 1", series: "grammar" }] },
-  { category: "Conversation", desc: "Practice dialogues", icon: "💬", items: [{ title: "A1 - Chapter 1", series: "conversation" }] },
-  { category: "Idioms", desc: "Learn expressions", icon: "🎭", items: [{ title: "A1 - Chapter 1", series: "idiom" }] },
-  { category: "Real Situations", desc: "Real-life language", icon: "🌍", items: [{ title: "A1 - Chapter 1", series: "real" }] },
+  { category: "Vocabulary", desc: "Learn essential words", icon: "📘", bg: "#fffaf6", items: [{ title: "A1 - Chapter 1", series: "voca" }] },
+  { category: "Grammar", desc: "Understand sentence structures", icon: "🧠", bg: "#f6f8ff", items: [{ title: "A1 - Chapter 1", series: "grammar" }] },
+  { category: "Conversation", desc: "Practice dialogues", icon: "💬", bg: "#f6fff9", items: [{ title: "A1 - Chapter 1", series: "conversation" }] },
+  { category: "Idioms", desc: "Learn expressions", icon: "🎭", bg: "#f9f6ff", items: [{ title: "A1 - Chapter 1", series: "idiom" }] },
+  { category: "Real Situations", desc: "Real-life language", icon: "🌍", bg: "#f6fbff", items: [{ title: "A1 - Chapter 1", series: "real" }] },
 ];
 
 export default function DemoPage() {
@@ -23,10 +23,8 @@ export default function DemoPage() {
 
         {/* HEADER */}
         <div style={headerRow}>
-          <Link href="/">
-            <span style={linkReset}>
-              <button style={btnBack}>← Back</button>
-            </span>
+          <Link href="/" style={linkReset}>
+            <button style={btnBack}>← Back</button>
           </Link>
 
           <div style={headerActions}>
@@ -43,7 +41,7 @@ export default function DemoPage() {
               }}
               style={btnSecondary}
             >
-              Copy link
+              🔗 Copy link
             </button>
 
             <a href="/app" style={linkReset}>
@@ -51,7 +49,6 @@ export default function DemoPage() {
                 Unlock Full Access
               </button>
             </a>
-
           </div>
         </div>
 
@@ -59,7 +56,6 @@ export default function DemoPage() {
         <div style={infoBox}>
           <p style={infoText}>You're viewing sample content.</p>
 
-          {/* 🔥 hydration 안전 */}
           <select
             value={lang}
             onChange={(e) => setLang(e.target.value)}
@@ -90,14 +86,17 @@ export default function DemoPage() {
                 <Link
                   key={item.series}
                   href={`/demo/viewer/${lang}/${item.series}/a1/001?mode=demo`}
-                  style={card}
+                  style={{
+                    ...card,
+                    background: section.bg,
+                  }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.transform = "translateY(-4px)";
-                    e.currentTarget.style.boxShadow = "0 8px 20px rgba(0,0,0,0.1)";
+                    e.currentTarget.style.boxShadow = "0 10px 24px rgba(0,0,0,0.08)";
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.transform = "translateY(0)";
-                    e.currentTarget.style.boxShadow = "0 1px 2px rgba(0,0,0,0.04)";
+                    e.currentTarget.style.boxShadow = "0 2px 6px rgba(0,0,0,0.04)";
                   }}
                 >
                   <div>
@@ -107,7 +106,7 @@ export default function DemoPage() {
                     <p style={cardMeta}>Beginner • A1</p>
                   </div>
 
-                  <p style={cardHint}>Start learning →</p>
+                  <p style={cardHint}>👉 Start learning</p>
                 </Link>
               ))}
             </div>
@@ -120,18 +119,11 @@ export default function DemoPage() {
 
 /* ================= styles ================= */
 
-const selectStyle: CSSProperties = {
-  marginTop: 10,
-  padding: "8px 10px",
-  borderRadius: 8,
-  border: "1px solid #ddd",
-};
-
 const container: CSSProperties = {
   minHeight: "100vh",
   display: "flex",
   justifyContent: "center",
-  background: "#fafafa",
+  background: "#fff",
 };
 
 const wrapper: CSSProperties = {
@@ -143,7 +135,7 @@ const wrapper: CSSProperties = {
 const headerRow: CSSProperties = {
   display: "flex",
   justifyContent: "space-between",
-  marginBottom: 16,
+  marginBottom: 20,
 };
 
 const headerActions: CSSProperties = {
@@ -151,21 +143,69 @@ const headerActions: CSSProperties = {
   gap: 8,
 };
 
-const infoBox: CSSProperties = { marginBottom: 24 };
-const infoText: CSSProperties = { color: "#555" };
+const btnBack: CSSProperties = {
+  padding: "8px 12px",
+  borderRadius: 8,
+  border: "1px solid #ddd",
+  background: "#fff",
+  cursor: "pointer",
+};
 
-const sectionWrap: CSSProperties = { marginBottom: 32 };
+const btnSecondary: CSSProperties = {
+  padding: "8px 12px",
+  borderRadius: 8,
+  border: "1px solid #ddd",
+  background: "#f5f5f5",
+  cursor: "pointer",
+};
+
+const btnHeaderPrimary: CSSProperties = {
+  padding: "8px 14px",
+  borderRadius: 8,
+  background: "#111",
+  color: "#fff",
+  border: "none",
+  fontWeight: 600,
+};
+
+const infoBox: CSSProperties = {
+  marginBottom: 28,
+};
+
+const infoText: CSSProperties = {
+  color: "#555",
+  marginBottom: 8,
+};
+
+const selectStyle: CSSProperties = {
+  padding: "10px 12px",
+  borderRadius: 10,
+  border: "1px solid #ddd",
+};
+
+const sectionWrap: CSSProperties = {
+  marginBottom: 36,
+};
 
 const sectionHeader: CSSProperties = {
   display: "flex",
   gap: 12,
-  marginBottom: 12,
+  marginBottom: 14,
 };
 
-const iconStyle: CSSProperties = { fontSize: 22 };
+const iconStyle: CSSProperties = {
+  fontSize: 22,
+};
 
-const sectionTitle: CSSProperties = { fontWeight: 600 };
-const sectionDesc: CSSProperties = { color: "#777" };
+const sectionTitle: CSSProperties = {
+  fontWeight: 700,
+  fontSize: 18,
+};
+
+const sectionDesc: CSSProperties = {
+  color: "#777",
+  fontSize: 13,
+};
 
 const grid: CSSProperties = {
   display: "grid",
@@ -175,49 +215,28 @@ const grid: CSSProperties = {
 
 const card: CSSProperties = {
   padding: 20,
-  border: "1px solid #e5e5e5",
-  borderRadius: 14,
-  background: "#fff",
+  borderRadius: 16,
+  border: "1px solid rgba(0,0,0,0.04)",
   transition: "all 0.2s ease",
-  boxShadow: "0 1px 2px rgba(0,0,0,0.04)",
+  boxShadow: "0 2px 6px rgba(0,0,0,0.04)",
 };
 
-const cardTitle: CSSProperties = { fontWeight: 600 };
-const cardMeta: CSSProperties = { fontSize: 12, color: "#999" };
-const cardHint: CSSProperties = { marginTop: 12, color: "#666" };
-
-const btnPrimary: CSSProperties = {
-  padding: "8px 14px",
-  borderRadius: 8,
-  background: "#111",
-  color: "#fff",
-  border: "none",
+const cardTitle: CSSProperties = {
+  fontWeight: 600,
 };
 
-const btnSecondary: CSSProperties = {
-  padding: "8px 12px",
-  borderRadius: 8,
-  border: "1px solid #eee",
-  background: "#fff",
+const cardMeta: CSSProperties = {
+  fontSize: 12,
+  color: "#888",
 };
 
-const btnBack: CSSProperties = {
-  padding: "6px 10px",
-  borderRadius: 8,
-  border: "1px solid #eee",
+const cardHint: CSSProperties = {
+  marginTop: 12,
+  fontSize: 13,
+  color: "#5b6cff",
+  fontWeight: 600,
 };
 
 const linkReset: CSSProperties = {
   textDecoration: "none",
-};
-const btnHeaderPrimary: React.CSSProperties = {
-  padding: "8px 14px",
-  fontSize: 13,
-  borderRadius: 8,
-  background: "#111",
-  color: "#fff",
-  border: "none",
-  fontWeight: 600,
-  whiteSpace: "nowrap",
-  minWidth: 150, // 🔥 핵심 (길게)
 };
