@@ -54,7 +54,7 @@ export default function Page() {
         <p style={descStrong}>
           With <b>one coupon</b>, you can study <b>one level (A1–C2)</b> for <b>30 days</b>.
           <br /><br />
-          Each level includes 20 chapters where you train to describe images like the examples shown.
+          Each level includes 20 chapters where you practice describing images like the examples shown.
           <br /><br />
           As the level progresses from A1 to C2, you will practice speaking by describing increasingly complex real-life situations shown in images.
         </p>

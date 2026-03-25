@@ -110,10 +110,19 @@ export async function POST(req: Request) {
       cancel_url: cancelUrl,
       client_reference_id: userId,
 
-      /* ✅ 핵심: metadata 최소화 */
+      /* 🔥 metadata (checkout + webhook용) */
       metadata: {
         userId,
         amount,
+      },
+
+      /* 🔥 핵심 (payment_intent fallback 대응) */
+      payment_intent_data: {
+        metadata: {
+          userId,
+          amount,
+          priceId,
+        },
       },
 
       line_items: [
@@ -127,7 +136,8 @@ export async function POST(req: Request) {
     /* =======================
        4️⃣ checkoutSessions 기록
     ======================== */
-    await db.collection("checkoutSessions")
+    await db
+      .collection("checkoutSessions")
       .doc(session.id)
       .set({
         sessionId: session.id,

@@ -314,45 +314,41 @@ export default function SelectBooksPage() {
 
     const tick = async () => {
       try {
-        const res = await fetch("/api/licenses/list", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ userId }),
-        });
+        const [licenseRes, couponRes] = await Promise.all([
+          fetch("/api/licenses/list", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ userId }),
+          }),
+          fetch("/api/coupons/list", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ userId }),
+          }),
+        ]);
 
-        // 🔥 1️⃣ 응답 실패 시 기존 상태 유지
-        if (!res.ok) return;
+        const licenseData = await safeJson(licenseRes);
+        const couponData = await safeJson(couponRes);
 
-        const data = await safeJson(res);
+        if (licenseRes.ok && Array.isArray(licenseData?.licenses)) {
+          setLibrary(licenseData.licenses);
+        }
 
-        // 🔥 2️⃣ 구조 검증 실패 시 기존 상태 유지
-        if (!data || !Array.isArray((data as any).licenses)) return;
+        if (couponRes.ok && Array.isArray(couponData?.coupons)) {
+          const serverCoupons = couponData.coupons;
 
-        const aliveLib = (data as any).licenses as LibraryItem[];
+          // 🔥 핵심: 서버 기준으로 완전 덮어쓰기
+          setCouponBox(serverCoupons);
+          writeLocalCoupons(serverCoupons);
+        }
 
-        // 🔥 3️⃣ 여기서만 업데이트
-        setLibrary(aliveLib);
-
-        const localNow = readLocalCoupons();
-        const expiredUsedCodes = buildExpiredUsedCouponCodeSet(localNow, aliveLib, userId);
-
-        if (expiredUsedCodes.size === 0) return;
-
-        const nextCoupons = localNow.filter(
-          (c) => !(c.used && expiredUsedCodes.has(c.code))
-        );
-
-        setCouponBox(nextCoupons);
-        writeLocalCoupons(nextCoupons);
-      } catch {
-        // 🔥 네트워크 오류는 기존 상태 유지 (아무것도 하지 않음)
-      }
+      } catch { }
     };
 
     tick();
 
     // 🔥 4️⃣ 너무 짧은 10초 → 30초 권장
-    const id = window.setInterval(tick, 30_000);
+    const id = window.setInterval(tick, 3000);
 
     return () => window.clearInterval(id);
   }, [isLoaded, userId]);
@@ -489,8 +485,7 @@ export default function SelectBooksPage() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          userId,
-          amount: payAmount, // ✅ 이것만 남김
+          amount: payAmount, // 🔥 userId 제거
         }),
       });
 
@@ -513,39 +508,58 @@ export default function SelectBooksPage() {
       setLoading(false);
     }
   }
-  async function requestRefund() {
 
-    if (!confirm("Refund all eligible purchases?")) return
+  async function requestRefund() {
+    if (!confirm("Refund all eligible purchases?")) return;
 
     try {
-
       const res = await fetch("/api/refund", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          userId
-        })
-      })
+          userId,
+        }),
+      });
 
-      const data = await safeJson(res)
+      const data = await safeJson(res);
 
       if (!res.ok) {
-        alert(data?.error || "Refund failed")
-        return
+        alert(data?.error || "Refund failed");
+        return;
       }
 
-      alert("Refund completed")
+      // ✅ 환불 성공 후 즉시 서버 기준으로 다시 동기화
+      const [couponRes, licenseRes] = await Promise.all([
+        fetch("/api/coupons/list", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId }),
+        }),
+        fetch("/api/licenses/list", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId }),
+        }),
+      ]);
 
-      window.location.reload()
+      const couponData = await safeJson(couponRes);
+      const licenseData = await safeJson(licenseRes);
 
+      if (couponRes.ok && Array.isArray(couponData?.coupons)) {
+        setCouponBox(couponData.coupons);
+        writeLocalCoupons(couponData.coupons);
+      }
+
+      if (licenseRes.ok && Array.isArray(licenseData?.licenses)) {
+        setLibrary(licenseData.licenses);
+      }
+
+      alert("Refund completed");
     } catch {
-
-      alert("Network error")
-
+      alert("Network error");
     }
-
   }
   function openBook(item: LibraryItem) {
     if (isExpired(item.expiresAt)) {
@@ -987,9 +1001,10 @@ export default function SelectBooksPage() {
                   <div className="text-xs text-gray-500 text-center">
                     Refund available for {refundablePurchaseCount} purchase
                     {refundablePurchaseCount > 1 ? "s" : ""} ({refundableCouponCount} coupons)
+                    <br />
+                    All refundable purchases will be refunded together.
                   </div>
                 )}
-
                 <div className="text-xs text-gray-500 space-y-1 text-left">
                   <div>Refund Policy</div>
                   <div>• Refund not available if any coupon from the same purchase has been used</div>
