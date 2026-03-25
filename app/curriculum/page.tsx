@@ -41,7 +41,7 @@ export default function CurriculumPage() {
               }}
               style={copyBtn}
             >
-              🔗 Copy link
+              Copy link
             </button>
 
             <a href="/app" style={linkReset}>
@@ -73,7 +73,7 @@ export default function CurriculumPage() {
           {seriesList.map((s) => (
             <Link
               key={s.key}
-              href={`/curriculum/${s.key}`}
+              href={`/curriculum/${s.key}/${safeLang}`}
               style={linkReset}
             >
               <div
@@ -190,11 +190,11 @@ const CURRICULUM: Record<string, any[]> = {
 function getChapterCount(lang: string, series: string) {
   const map: any = {
     kr: {
-      grammar: "100+",
-      conversation: "60+",
-      vocabulary: "90+",
-      idioms: "70+",
-      real: "60+",
+      grammar: "84",
+      conversation: "60",
+      vocabulary: "200",
+      idioms: "38",
+      real: "120",
     },
     en: {
       grammar: "120+",
