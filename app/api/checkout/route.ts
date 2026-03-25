@@ -17,14 +17,13 @@ type Body = {
   amount: "3" | "5" | "20" | "50" | "100";
 };
 
-const PRICE_ID_MAP: Record<Body["amount"], string | undefined> = {
-  "3": process.env.STRIPE_PRICE_ID_3,
-  "5": process.env.STRIPE_PRICE_ID_5,
-  "20": process.env.STRIPE_PRICE_ID_20,
-  "50": process.env.STRIPE_PRICE_ID_50,
-  "100": process.env.STRIPE_PRICE_ID_100,
+const PRICE_ID_MAP: Record<Body["amount"], string> = {
+  "3": process.env.STRIPE_PRICE_ID_3 as string,
+  "5": process.env.STRIPE_PRICE_ID_5 as string,
+  "20": process.env.STRIPE_PRICE_ID_20 as string,
+  "50": process.env.STRIPE_PRICE_ID_50 as string,
+  "100": process.env.STRIPE_PRICE_ID_100 as string,
 };
-
 function getPriceId(amount: Body["amount"]) {
   const priceId = PRICE_ID_MAP[amount];
   if (!priceId) {
