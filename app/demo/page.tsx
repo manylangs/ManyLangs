@@ -32,7 +32,7 @@ export default function DemoPage() {
               onClick={async () => {
                 if (navigator.share) {
                   try {
-                    await navigator.share({ title: "Try Demo", url: window.location.href });
+                    await navigator.share({url: window.location.href });
                   } catch { }
                 } else {
                   await navigator.clipboard.writeText(window.location.href);
@@ -41,7 +41,7 @@ export default function DemoPage() {
               }}
               style={btnSecondary}
             >
-              🔗 Copy link
+               Copy link
             </button>
 
             <a href="/app" style={linkReset}>

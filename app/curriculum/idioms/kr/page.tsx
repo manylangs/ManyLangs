@@ -92,7 +92,6 @@ export default function Page() {
                 if (navigator.share) {
                   try {
                     await navigator.share({
-                      title: "Idiom",
                       url: window.location.href,
                     });
                   } catch { }

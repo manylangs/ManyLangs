@@ -109,7 +109,6 @@ export default function Page() {
                 if (navigator.share) {
                   try {
                     await navigator.share({
-                      title: "Curriculum",
                       url: window.location.href,
                     });
                   } catch { }

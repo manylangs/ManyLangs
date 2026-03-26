@@ -283,7 +283,6 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
                   if (navigator.share) {
                     try {
                       await navigator.share({
-                        title: "Try Demo",
                         url: window.location.href,
                       });
                     } catch { }

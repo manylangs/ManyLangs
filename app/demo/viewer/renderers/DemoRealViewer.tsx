@@ -252,7 +252,6 @@ export default function DemoRealViewer({ level, chapter }: Props) {
                   if (navigator.share) {
                     try {
                       await navigator.share({
-                        title: "Try Demo",
                         url: window.location.href,
                       });
                     } catch { }

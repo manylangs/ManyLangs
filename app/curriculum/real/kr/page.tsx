@@ -34,10 +34,23 @@ export default function Page() {
           </Link>
 
           <div style={headerRight}>
-            <button onClick={handleShare} style={copyBtn}>
+            <button
+              onClick={async () => {
+                if (navigator.share) {
+                  try {
+                    await navigator.share({
+                      url: window.location.href,
+                    });
+                  } catch { }
+                } else {
+                  await navigator.clipboard.writeText(window.location.href);
+                  alert("Link copied!");
+                }
+              }}
+              style={copyBtn}
+            >
               Copy link
             </button>
-
             <Link href="/app" style={linkReset}>
               <button style={btnHeaderPrimary}>
                 Unlock Full Access
