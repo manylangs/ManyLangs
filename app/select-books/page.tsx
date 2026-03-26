@@ -464,57 +464,78 @@ export default function SelectBooksPage() {
   }
 
   async function requestRefund() {
-    if (!confirm("Refund all eligible purchases?")) return;
+  if (!confirm("Refund all eligible purchases?")) return;
 
-    try {
-      const res = await fetch("/api/refund", {
+  if (loading) return;
+  setLoading(true);
+
+  try {
+
+    // 1️⃣ 최신 상태 서버에서 가져오기
+    const [couponRes, licenseRes] = await Promise.all([
+      fetch("/api/coupons/list", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          userId,
-        }),
-      });
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId }),
+      }),
+      fetch("/api/licenses/list", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId }),
+      }),
+    ]);
 
-      const data = await safeJson(res);
+    const couponData = await safeJson(couponRes);
+    const licenseData = await safeJson(licenseRes);
 
-      if (!res.ok) {
-        alert(data?.error || "Refund failed");
-        return;
-      }
+    const freshCoupons = couponData?.coupons || [];
+    const freshLicenses = licenseData?.licenses || [];
 
-      // ✅ 환불 성공 후 즉시 서버 기준으로 다시 동기화
-      const [couponRes, licenseRes] = await Promise.all([
-        fetch("/api/coupons/list", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ userId }),
-        }),
-        fetch("/api/licenses/list", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ userId }),
-        }),
-      ]);
+    // 2️⃣ 최신 기준으로 refund 가능 여부 판단
+    const freshGroups = getRefundableGroups(freshCoupons, freshLicenses);
 
-      const couponData = await safeJson(couponRes);
-      const licenseData = await safeJson(licenseRes);
-
-      if (couponRes.ok && Array.isArray(couponData?.coupons)) {
-        setCouponBox(couponData.coupons);
-        writeLocalCoupons(couponData.coupons);
-      }
-
-      if (licenseRes.ok && Array.isArray(licenseData?.licenses)) {
-        setLibrary(licenseData.licenses);
-      }
-
-      alert("Refund completed");
-    } catch {
-      alert("Network error");
+    if (freshGroups.length === 0) {
+      alert("Refund not available (coupon already used)");
+      return;
     }
+
+    // 3️⃣ 환불 실행
+    const res = await fetch("/api/refund", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ userId }),
+    });
+
+    const data = await safeJson(res);
+
+    if (!res.ok) {
+      alert(data?.error || "Refund failed");
+      return;
+    }
+
+    // 4️⃣ 최신 상태 다시 반영
+    if (Array.isArray(freshCoupons)) {
+      setCouponBox(freshCoupons);
+      writeLocalCoupons(freshCoupons);
+    }
+
+    if (Array.isArray(freshLicenses)) {
+      setLibrary(freshLicenses);
+    }
+
+    alert("Refund completed");
+
+  } catch {
+    alert("Network error");
+  } finally {
+    setLoading(false);
   }
+}
+
+
+
   function openBook(item: LibraryItem) {
     if (isExpired(item.expiresAt)) {
       setError("Expired textbook. Please redeem a new coupon or purchase again.");
