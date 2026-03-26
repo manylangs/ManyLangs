@@ -923,7 +923,8 @@ export default function SelectBooksPage() {
 
                 {/* 설명 */}
                 <p className="text-xs text-gray-500 leading-relaxed">
-                  Coupons can be shared with others. However, ManyLangs cannot individually track
+                  Coupons can be shared with others.
+                  <br/> However, ManyLangs cannot individually track
                   whether a shared coupon has been used.
                 </p>
 
