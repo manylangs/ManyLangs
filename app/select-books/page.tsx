@@ -566,12 +566,17 @@ export default function SelectBooksPage() {
   ];
 
   // refund는 "paymentIntent 묶음" 기준으로 계산
-  function getRefundableGroups(coupons: any[]) {
+  function getRefundableGroups(coupons: any[], library: LibraryItem[]) {
+
+    const usedCouponCodes = new Set(
+      library
+        .filter(l => l.source === "coupon" && l.code)
+        .map(l => l.code)
+    )
 
     const groups: Record<string, any[]> = {}
 
     for (const c of coupons) {
-
       if (!c.paymentIntentId) continue
 
       if (!groups[c.paymentIntentId]) {
@@ -585,18 +590,19 @@ export default function SelectBooksPage() {
 
     for (const group of Object.values(groups)) {
 
-      const anyUsed = group.some(c => c.used)
+      const anyUsed = group.some(c =>
+        c.used || usedCouponCodes.has(c.code)
+      )
 
       if (!anyUsed) {
         refundable.push(group)
       }
-
     }
 
     return refundable
   }
 
-  const refundableGroups = getRefundableGroups(couponBox)
+  const refundableGroups = getRefundableGroups(couponBox, library)
 
   const refundablePurchaseCount = refundableGroups.length
   const refundableCouponCount = refundableGroups.flat().length
