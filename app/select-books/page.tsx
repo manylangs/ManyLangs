@@ -464,75 +464,80 @@ export default function SelectBooksPage() {
   }
 
   async function requestRefund() {
-  if (!confirm("Refund all eligible purchases?")) return;
+    if (!confirm("Refund all eligible purchases?")) return;
 
-  if (loading) return;
-  setLoading(true);
+    if (loading) return;
+    setLoading(true);
 
-  try {
+    try {
 
-    // 1️⃣ 최신 상태 서버에서 가져오기
-    const [couponRes, licenseRes] = await Promise.all([
-      fetch("/api/coupons/list", {
+      // 1️⃣ 최신 상태 서버에서 가져오기
+      const [couponRes, licenseRes] = await Promise.all([
+        fetch("/api/coupons/list", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId }),
+        }),
+        fetch("/api/licenses/list", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId }),
+        }),
+      ]);
+
+      const couponData = await safeJson(couponRes);
+      const licenseData = await safeJson(licenseRes);
+
+      const freshCoupons = couponData?.coupons || [];
+      const freshLicenses = licenseData?.licenses || [];
+
+      // 2️⃣ 최신 기준으로 refund 가능 여부 판단
+      const freshGroups = getRefundableGroups(freshCoupons, freshLicenses);
+
+      if (freshGroups.length === 0) {
+
+        // 🔥 UI 즉시 최신 상태 반영 (핵심)
+        setCouponBox(freshCoupons)
+        setLibrary(freshLicenses)
+
+        alert("Refund not available (coupon already used)")
+        return
+      }
+
+      // 3️⃣ 환불 실행
+      const res = await fetch("/api/refund", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({ userId }),
-      }),
-      fetch("/api/licenses/list", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ userId }),
-      }),
-    ]);
+      });
 
-    const couponData = await safeJson(couponRes);
-    const licenseData = await safeJson(licenseRes);
+      const data = await safeJson(res);
 
-    const freshCoupons = couponData?.coupons || [];
-    const freshLicenses = licenseData?.licenses || [];
+      if (!res.ok) {
+        alert(data?.error || "Refund failed");
+        return;
+      }
 
-    // 2️⃣ 최신 기준으로 refund 가능 여부 판단
-    const freshGroups = getRefundableGroups(freshCoupons, freshLicenses);
+      // 4️⃣ 최신 상태 다시 반영
+      if (Array.isArray(freshCoupons)) {
+        setCouponBox(freshCoupons);
+        writeLocalCoupons(freshCoupons);
+      }
 
-    if (freshGroups.length === 0) {
-      alert("Refund not available (coupon already used)");
-      return;
+      if (Array.isArray(freshLicenses)) {
+        setLibrary(freshLicenses);
+      }
+
+      alert("Refund completed");
+
+    } catch {
+      alert("Network error");
+    } finally {
+      setLoading(false);
     }
-
-    // 3️⃣ 환불 실행
-    const res = await fetch("/api/refund", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ userId }),
-    });
-
-    const data = await safeJson(res);
-
-    if (!res.ok) {
-      alert(data?.error || "Refund failed");
-      return;
-    }
-
-    // 4️⃣ 최신 상태 다시 반영
-    if (Array.isArray(freshCoupons)) {
-      setCouponBox(freshCoupons);
-      writeLocalCoupons(freshCoupons);
-    }
-
-    if (Array.isArray(freshLicenses)) {
-      setLibrary(freshLicenses);
-    }
-
-    alert("Refund completed");
-
-  } catch {
-    alert("Network error");
-  } finally {
-    setLoading(false);
   }
-}
 
 
 
@@ -975,7 +980,6 @@ export default function SelectBooksPage() {
                 <Button
                   variant="outline"
                   className="w-full"
-                  disabled={!canRefund}
                   onClick={requestRefund}
                 >
                   Request Refund
