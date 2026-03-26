@@ -307,52 +307,6 @@ export default function SelectBooksPage() {
     })();
   }, [isLoaded, userId, router]);
 
-  /** 2) ⏱ 자동 제거 타이머 */
-  /** 2) ⏱ 자동 제거 타이머 — 안정화 버전 */
-  useEffect(() => {
-    if (!isLoaded || !userId) return;
-
-    const tick = async () => {
-      try {
-        const [licenseRes, couponRes] = await Promise.all([
-          fetch("/api/licenses/list", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ userId }),
-          }),
-          fetch("/api/coupons/list", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ userId }),
-          }),
-        ]);
-
-        const licenseData = await safeJson(licenseRes);
-        const couponData = await safeJson(couponRes);
-
-        if (licenseRes.ok && Array.isArray(licenseData?.licenses)) {
-          setLibrary(licenseData.licenses);
-        }
-
-        if (couponRes.ok && Array.isArray(couponData?.coupons)) {
-          const serverCoupons = couponData.coupons;
-
-          // 🔥 핵심: 서버 기준으로 완전 덮어쓰기
-          setCouponBox(serverCoupons);
-          writeLocalCoupons(serverCoupons);
-        }
-
-      } catch { }
-    };
-
-    tick();
-
-    // 🔥 4️⃣ 너무 짧은 10초 → 30초 권장
-    const id = window.setInterval(tick, 3000);
-
-    return () => window.clearInterval(id);
-  }, [isLoaded, userId]);
-
   /** 3) 라이선스 기반 usedBook 필드 보강 */
   useEffect(() => {
     if (!isLoaded || !userId) return;
