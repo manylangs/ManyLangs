@@ -922,12 +922,13 @@ export default function SelectBooksPage() {
                 />
 
                 {/* 설명 */}
-                <p className="text-xs text-gray-500 leading-relaxed">
-                  Coupons can be shared with others.
-                  <br/> However, ManyLangs cannot individually track
-                  whether a shared coupon has been used.
-                </p>
-
+                <div className="flex items-center justify-center h-full text-center">
+                  <p className="text-xs text-gray-500 leading-relaxed">
+                    Coupons can be shared with others.
+                    <br /> However, ManyLangs cannot individually track
+                    <br />whether a shared coupon has been used.
+                  </p>
+                </div>
                 {/* plan 선택 */}
                 <div className="space-y-2">
                   <div className="text-sm font-medium">Choose a plan</div>
