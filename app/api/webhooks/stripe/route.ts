@@ -35,15 +35,30 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "invalid signature" }, { status: 400 });
   }
 
-  if (event.type === "charge.refunded") {
-    const charge = event.data.object as Stripe.Charge;
+  if (
+    event.type === "charge.refunded" ||
+    event.type === "refund.created"
+  ) {
+    let paymentIntentId: string | undefined;
 
-    const paymentIntentId =
-      typeof charge.payment_intent === "string"
-        ? charge.payment_intent
-        : charge.payment_intent?.id;
+    if (event.type === "charge.refunded") {
+      const charge = event.data.object as Stripe.Charge;
 
-    if (paymentIntentId && charge.refunded) {
+      paymentIntentId =
+        typeof charge.payment_intent === "string"
+          ? charge.payment_intent
+          : charge.payment_intent?.id;
+
+    } else if (event.type === "refund.created") {
+      const refund = event.data.object as Stripe.Refund;
+
+      paymentIntentId =
+        typeof refund.payment_intent === "string"
+          ? refund.payment_intent
+          : refund.payment_intent?.id;
+    }
+
+    if (paymentIntentId) {
       await revokeLicensesByPaymentIntent(paymentIntentId);
       await deleteCouponsByPaymentIntent(paymentIntentId);
     }
@@ -87,12 +102,20 @@ export async function POST(req: Request) {
   const stripeEventRef = db.collection("stripeEvents").doc(eventId);
   const checkoutRef = db.collection("checkoutSessions").doc(session.id);
 
+  // 🔥 여기 추가
+  const checkoutSnap = await checkoutRef.get();
+
+  if (checkoutSnap.exists && checkoutSnap.data()?.processed) {
+    return NextResponse.json({ received: true }, { status: 200 });
+  }
+
+
   // 1순위: Firestore checkoutSessions에 저장된 priceId 사용
   let priceId: string | undefined;
   try {
     const checkoutSnap = await checkoutRef.get();
     priceId = checkoutSnap.data()?.priceId;
-  } catch {}
+  } catch { }
 
   // 2순위: 없을 때만 Stripe fallback 조회
   if (!priceId) {
@@ -102,7 +125,7 @@ export async function POST(req: Request) {
       });
       const p = full.line_items?.data?.[0]?.price;
       priceId = typeof p === "object" ? p.id : undefined;
-    } catch {}
+    } catch { }
   }
 
   if (!priceId) {
