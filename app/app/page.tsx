@@ -123,6 +123,17 @@ export default function HomePage() {
           >
             Go to website →
           </a>
+
+          <p
+            style={{
+              marginTop: 6,
+              fontSize: 13,
+              color: "#555",
+            }}
+          >
+            If you are currently logged in,<br />
+            please log out before visiting the website.
+          </p>
         </div>
       </section>
     </main>
