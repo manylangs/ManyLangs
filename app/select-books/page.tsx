@@ -1008,7 +1008,9 @@ export default function SelectBooksPage() {
                   </div>
                 )}
                 <div className="text-xs text-gray-500 space-y-1 text-left">
-                  <div>Refund Policy</div>
+                  <div className="text-center font-extrabold text-red-500">
+                    Refund Policy
+                  </div>
                   <div>• Refund not available if any coupon from the same purchase has been used</div>
                 </div>
 
