@@ -37,28 +37,17 @@ export async function POST(req: Request) {
 
   if (
     event.type === "charge.refunded" ||
-    event.type === "refund.created"
+    event.type === "charge.updated"
   ) {
-    let paymentIntentId: string | undefined;
+    const charge = event.data.object as Stripe.Charge;
 
-    if (event.type === "charge.refunded") {
-      const charge = event.data.object as Stripe.Charge;
+    const paymentIntentId =
+      typeof charge.payment_intent === "string"
+        ? charge.payment_intent
+        : charge.payment_intent?.id;
 
-      paymentIntentId =
-        typeof charge.payment_intent === "string"
-          ? charge.payment_intent
-          : charge.payment_intent?.id;
-
-    } else if (event.type === "refund.created") {
-      const refund = event.data.object as Stripe.Refund;
-
-      paymentIntentId =
-        typeof refund.payment_intent === "string"
-          ? refund.payment_intent
-          : refund.payment_intent?.id;
-    }
-
-    if (paymentIntentId) {
+    // 🔥 핵심: 실제 환불 여부 기준
+    if (paymentIntentId && charge.amount_refunded > 0) {
       await revokeLicensesByPaymentIntent(paymentIntentId);
       await deleteCouponsByPaymentIntent(paymentIntentId);
     }
