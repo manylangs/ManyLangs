@@ -108,13 +108,12 @@ export async function POST(req: Request) {
       .filter((c) => {
         const ownerId = (c as any).ownerId ?? null;
         const usedBy = (c as any).usedBy ?? null;
-        const used = !!(c as any).used;
 
-        // A: 발급자 → 미사용만 유지
-        if (ownerId === userId && !used) return true;
+        // 🔥 발급자는 자기 결제 쿠폰 전부 봐야함 (used 포함)
+        if (ownerId === userId) return true;
 
-        // B: 사용자 → 내가 사용했고, 라이선스가 살아있을 때만 유지
-        if (usedBy === userId && used) return aliveCouponCodes.has(c.code);
+        // 사용자
+        if (usedBy === userId) return true;
 
         return false;
       })
