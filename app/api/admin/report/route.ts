@@ -50,8 +50,8 @@ export async function GET(req: NextRequest) {
     const totalRefund = filteredRefunds.reduce(
       (sum, r) => sum + (r.amount || 0),
       0
-    )0
     )
+    
 
     const netRevenue = totalRevenue - totalRefund
 
