@@ -4,6 +4,8 @@ import { useEffect } from "react"
 
 export default function AdminPage() {
   useEffect(() => {
+    console.log("ENV:", process.env.NEXT_PUBLIC_ADMIN_EMAIL) // 👈 여기
+
     const fetchData = async () => {
       try {
         const res = await fetch("/api/admin/report", {
@@ -22,9 +24,5 @@ export default function AdminPage() {
     fetchData()
   }, [])
 
-  return (
-    <div style={{ padding: 20 }}>
-      <h1>Admin Page</h1>
-    </div>
-  )
+  return <div>Admin Page</div>
 }
