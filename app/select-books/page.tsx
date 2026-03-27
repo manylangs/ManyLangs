@@ -378,7 +378,7 @@ export default function SelectBooksPage() {
         // ignore
       }
     })();
-  }, [isLoaded, userId, couponBox.length, library.length]);
+  }, [isLoaded, userId]);
   // ✅ Hook 끝난 뒤에만 early return
   if (!isLoaded) return null;
   if (!userId) return null;
@@ -501,14 +501,13 @@ export default function SelectBooksPage() {
 
   async function requestRefund() {
     if (!confirm("Refund all eligible purchases?")) return;
-
     if (loading) return;
+
     setLoading(true);
 
     try {
-
-      // 1️⃣ 최신 상태 서버에서 가져오기
-      const [couponRes, licenseRes] = await Promise.all([
+      // 1) 환불 직전 최신 상태 조회
+      const [beforeCouponRes, beforeLicenseRes] = await Promise.all([
         fetch("/api/coupons/list", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -521,27 +520,33 @@ export default function SelectBooksPage() {
         }),
       ]);
 
-      const couponData = await safeJson(couponRes);
-      const licenseData = await safeJson(licenseRes);
+      const beforeCouponData = await safeJson(beforeCouponRes);
+      const beforeLicenseData = await safeJson(beforeLicenseRes);
 
-      const freshCoupons = couponData?.coupons || [];
-      const freshLicenses = licenseData?.licenses || [];
+      const beforeCoupons: CouponItem[] = Array.isArray(beforeCouponData?.coupons)
+        ? beforeCouponData.coupons
+        : [];
+      const beforeLicenses: LibraryItem[] = Array.isArray(beforeLicenseData?.licenses)
+        ? beforeLicenseData.licenses
+        : [];
 
-      // 2️⃣ 최신 기준으로 refund 가능 여부 판단
-      const freshGroups = getRefundableGroups(freshCoupons, freshLicenses);
+      // 2) 최신 기준으로 환불 가능 여부 먼저 판정
+      const beforeRefundableGroups = getRefundableGroups(beforeCoupons, beforeLicenses);
 
-      if (freshGroups.length === 0) {
+      // UI도 최신화
+      setCouponBox(beforeCoupons);
+      writeLocalCoupons(beforeCoupons);
+      setLibrary(beforeLicenses);
+      setRefundViewCoupons(beforeCoupons);
+      setRefundViewLicenses(beforeLicenses);
 
-        // 🔥 UI 즉시 최신 상태 반영 (핵심)
-        setCouponBox(freshCoupons)
-        setLibrary(freshLicenses)
-
-        alert("Refund not available (coupon already used)")
-        return
+      if (beforeRefundableGroups.length === 0) {
+        alert("Refund unavailable (coupon already used)");
+        return;
       }
 
-      // 3️⃣ 환불 실행
-      const res = await fetch("/api/refund", {
+      // 3) 환불 실행
+      const refundRes = await fetch("/api/refund", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -549,32 +554,51 @@ export default function SelectBooksPage() {
         body: JSON.stringify({ userId }),
       });
 
-      const data = await safeJson(res);
+      const refundData = await safeJson(refundRes);
 
-      if (!res.ok) {
-        alert(data?.error || "Refund failed");
+      if (!refundRes.ok) {
+        alert(refundData?.error || "Refund failed");
         return;
       }
 
-      // 4️⃣ 최신 상태 다시 반영
-      if (Array.isArray(freshCoupons)) {
-        setCouponBox(freshCoupons);
-        writeLocalCoupons(freshCoupons);
-      }
+      // 4) 환불 후 최신 상태 재조회 (핵심)
+      const [afterCouponRes, afterLicenseRes] = await Promise.all([
+        fetch("/api/coupons/list", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId }),
+        }),
+        fetch("/api/licenses/list", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId }),
+        }),
+      ]);
 
-      if (Array.isArray(freshLicenses)) {
-        setLibrary(freshLicenses);
-      }
+      const afterCouponData = await safeJson(afterCouponRes);
+      const afterLicenseData = await safeJson(afterLicenseRes);
+
+      const afterCoupons: CouponItem[] = Array.isArray(afterCouponData?.coupons)
+        ? afterCouponData.coupons
+        : [];
+      const afterLicenses: LibraryItem[] = Array.isArray(afterLicenseData?.licenses)
+        ? afterLicenseData.licenses
+        : [];
+
+      // 5) 최신 상태를 모든 UI 기준 state에 동시 반영
+      setCouponBox(afterCoupons);
+      writeLocalCoupons(afterCoupons);
+      setLibrary(afterLicenses);
+      setRefundViewCoupons(afterCoupons);
+      setRefundViewLicenses(afterLicenses);
 
       alert("Refund completed");
-
     } catch {
       alert("Network error");
     } finally {
       setLoading(false);
     }
   }
-
 
 
   function openBook(item: LibraryItem) {
@@ -629,42 +653,43 @@ export default function SelectBooksPage() {
 
   // refund는 "paymentIntent 묶음" 기준으로 계산
 
-  // refund는 "paymentIntent 묶음" 기준으로 계산
-  function getRefundableGroups(coupons: any[], library: LibraryItem[]) {
-
+  function getRefundableGroups(coupons: CouponItem[], library: LibraryItem[]) {
     const usedCouponCodes = new Set(
       library
-        .filter(l => l.source === "coupon" && l.code)
-        .map(l => l.code)
-    )
+        .filter((l) => l.source === "coupon" && l.code)
+        .map((l) => l.code as string)
+    );
 
-    const groups: Record<string, any[]> = {}
+    const groups: Record<string, CouponItem[]> = {};
 
     for (const c of coupons) {
-      if (!c.paymentIntentId) continue
+      if (!c.paymentIntentId) continue;
 
       if (!groups[c.paymentIntentId]) {
-        groups[c.paymentIntentId] = []
+        groups[c.paymentIntentId] = [];
       }
 
-      groups[c.paymentIntentId].push(c)
+      groups[c.paymentIntentId].push(c);
     }
 
-    const refundable: any[][] = []
+    const refundable: CouponItem[][] = [];
 
     for (const group of Object.values(groups)) {
-
-      const anyUsed = group.some(c =>
-        usedCouponCodes.has(c.code)
-      )
+      const anyUsed = group.some(
+        (c) => c.used === true || usedCouponCodes.has(c.code)
+      );
 
       if (!anyUsed) {
-        refundable.push(group)
+        refundable.push(group);
       }
     }
 
-    return refundable
+    return refundable;
   }
+
+
+
+
   const refundBaseCoupons =
     refundViewCoupons.length > 0 ? refundViewCoupons : couponBox;
 
