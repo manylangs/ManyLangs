@@ -15,6 +15,10 @@ type Report = {
 export default function AdminPage() {
   const [data, setData] = useState<Report | null>(null)
 
+  // 🔥 Load More 상태
+  const [paymentLimit, setPaymentLimit] = useState(20)
+  const [refundLimit, setRefundLimit] = useState(20)
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -48,30 +52,60 @@ export default function AdminPage() {
         <Card title="Payments" value={data.paymentCount} />
         <Card title="Refunds" value={data.refundCount} />
       </div>
+
       {/* 최근 결제 */}
       <h2 style={{ marginTop: 40 }}>Recent Payments</h2>
       <div>
-        {data.recentPayments.map((p) => (
+        {data.recentPayments.slice(0, paymentLimit).map((p) => (
           <div key={p.id} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
-            💳 {(p.amount_received / 100).toFixed(2)} USD | {p.status}
+            💳 {(p.amount_received / 100).toLocaleString("en-US", {
+              style: "currency",
+              currency: "USD",
+            })}{" "}
+            | {p.status}
           </div>
         ))}
       </div>
 
+      {/* Load More 버튼 */}
+      {paymentLimit < data.recentPayments.length && (
+        <button
+          onClick={() => setPaymentLimit((prev) => prev + 20)}
+          style={{ marginTop: 10 }}
+        >
+          Load More Payments
+        </button>
+      )}
+
       {/* 최근 환불 */}
       <h2 style={{ marginTop: 40 }}>Recent Refunds</h2>
       <div>
-        {data.recentRefunds.map((r) => (
+        {data.recentRefunds.slice(0, refundLimit).map((r) => (
           <div key={r.id} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
-            💸 {r.amount / 100} USD
+            💸 {(r.amount / 100).toLocaleString("en-US", {
+              style: "currency",
+              currency: "USD",
+            })}
           </div>
         ))}
       </div>
+
+      {/* Load More 버튼 */}
+      {refundLimit < data.recentRefunds.length && (
+        <button
+          onClick={() => setRefundLimit((prev) => prev + 20)}
+          style={{ marginTop: 10 }}
+        >
+          Load More Refunds
+        </button>
+      )}
     </div>
   )
 }
 
 function Card({ title, value }: { title: string; value: number }) {
+  const isCount = title === "Payments" || title === "Refunds"
+
   return (
     <div
       style={{
@@ -82,8 +116,14 @@ function Card({ title, value }: { title: string; value: number }) {
       }}
     >
       <div style={{ fontSize: 12, color: "#888" }}>{title}</div>
+
       <div style={{ fontSize: 20, fontWeight: "bold" }}>
-        {value.toLocaleString()}
+        {isCount
+          ? value.toLocaleString()
+          : (value / 100).toLocaleString("en-US", {
+              style: "currency",
+              currency: "USD",
+            })}
       </div>
     </div>
   )
