@@ -1,4 +1,4 @@
-// app/select-books/page.tsx ui ux 최종/but쿠폰 안나오는코드/
+
 "use client";
 
 import { LANGUAGES } from "@/app/config/languages";
@@ -343,11 +343,8 @@ export default function SelectBooksPage() {
     setCouponPage(1);
   }, [couponBox.length]);
   // 🔥 refund UI 동기화용 상태
-  // 🔥 START - refund loading state
   const [refundViewCoupons, setRefundViewCoupons] = useState<CouponItem[]>([]);
   const [refundViewLicenses, setRefundViewLicenses] = useState<LibraryItem[]>([]);
-  const [refundLoaded, setRefundLoaded] = useState(false);
-  // 🔥 END
 
   // 🔥 서버 기준 최신 데이터 가져오기
   useEffect(() => {
@@ -371,15 +368,12 @@ export default function SelectBooksPage() {
         const couponData = await safeJson(couponRes);
         const licenseData = await safeJson(licenseRes);
 
-        // 🔥 START - set + loaded
         setRefundViewCoupons(
           Array.isArray(couponData?.coupons) ? couponData.coupons : []
         );
         setRefundViewLicenses(
           Array.isArray(licenseData?.licenses) ? licenseData.licenses : []
         );
-        setRefundLoaded(true);
-        // 🔥 END
       } catch {
         // ignore
       }
@@ -543,7 +537,8 @@ export default function SelectBooksPage() {
       setCouponBox(beforeCoupons);
       writeLocalCoupons(beforeCoupons);
       setLibrary(beforeLicenses);
-
+      setRefundViewCoupons(beforeCoupons);
+      setRefundViewLicenses(beforeLicenses);
 
       if (beforeRefundableGroups.length === 0) {
         alert("Refund unavailable (coupon already used)");
@@ -594,7 +589,8 @@ export default function SelectBooksPage() {
       setCouponBox(afterCoupons);
       writeLocalCoupons(afterCoupons);
       setLibrary(afterLicenses);
-
+      setRefundViewCoupons(afterCoupons);
+      setRefundViewLicenses(afterLicenses);
 
       alert("Refund completed");
     } catch {
@@ -691,23 +687,21 @@ export default function SelectBooksPage() {
     return refundable;
   }
 
-  // 🔥 START FIX
+
+
+
   const refundBaseCoupons =
     refundViewCoupons.length > 0 ? refundViewCoupons : couponBox;
 
   const refundBaseLicenses =
     refundViewLicenses.length > 0 ? refundViewLicenses : library;
-  // 🔥 END FIX
 
   const refundableGroups = getRefundableGroups(refundBaseCoupons, refundBaseLicenses);
 
   const refundablePurchaseCount = refundableGroups.length;
   const refundableCouponCount = refundableGroups.flat().length;
 
-  // 🔥 START - gate
-  const canRefund =
-    refundLoaded && refundablePurchaseCount > 0;
-  // 🔥 END
+  const canRefund = refundablePurchaseCount > 0;
 
   const couponTotal = sortedCoupons.length;
   const couponTotalPages = Math.max(1, Math.ceil(couponTotal / COUPON_PAGE_SIZE));
@@ -1058,18 +1052,16 @@ export default function SelectBooksPage() {
                 >
                   Request Refund
                 </Button>
-                {!refundLoaded ? (
-                  <div className="text-xs text-gray-400 text-center">
-                    Checking refund availability...
-                  </div>
-                ) : canRefund ? (
+
+                {canRefund && (
                   <div className="text-xs text-gray-500 text-center">
                     Refund available for {refundablePurchaseCount} purchase
                     {refundablePurchaseCount > 1 ? "s" : ""} ({refundableCouponCount} coupons)
                     <br />
                     All refundable purchases will be refunded together.
                   </div>
-                ) : (
+                )}
+                {!canRefund && (
                   <div className="text-xs text-gray-400 text-center">
                     Refund unavailable (coupon already used)
                   </div>
