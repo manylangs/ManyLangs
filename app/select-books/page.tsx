@@ -638,8 +638,13 @@ export default function SelectBooksPage() {
       const licenses = Array.isArray(licenseData?.licenses)
         ? licenseData.licenses
         : [];
-      /// 🔥 START - strict refund validation
       const groups = getRefundableGroups(coupons, licenses);
+
+      // 🔥 여기서 바로 차단
+      if (groups.length === 0) {
+        alert("Refund unavailable (already used or already refunded)");
+        return;
+      }
 
       const strictGroups = groups.filter((group: any) => {
         return !group.some((c: any) => {
@@ -665,7 +670,7 @@ export default function SelectBooksPage() {
         alert("Refund unavailable (already used or already refunded)");
         return;
       }
-      setRefundPreviewGroups(strictGroups);
+      setRefundPreviewGroups(groups);
 
       // ✅ 여기서만 preview 열림
       setRefundPreviewOpen(true);
