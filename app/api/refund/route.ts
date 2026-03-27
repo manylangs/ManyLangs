@@ -87,9 +87,12 @@ export async function POST(req: Request) {
 
     for (const [pid, group] of Object.entries(grouped)) {
 
-      const anyUsed = group.some((c: any) =>
-        c.used === true || usedCouponCodes.has(c.code)
-      );
+      const anyUsed = group.some((c: any) => {
+        if (c.used === true) return true;
+        if (c.usedBy && c.usedBy !== userId) return true;
+        if (usedCouponCodes.has(c.code)) return true;
+        return false;
+      });
       if (!anyUsed) {
         refundablePaymentIntents.push(pid);
       }
