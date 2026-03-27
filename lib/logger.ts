@@ -1,3 +1,4 @@
+// ===== [START] logger.ts =====
 export async function logError(data: any) {
   try {
     const baseUrl =
@@ -12,9 +13,9 @@ export async function logError(data: any) {
       body: JSON.stringify(data),
     })
 
-    // 🔥 Slack webhook (추천)
-    if (process.env.NEXT_PUBLIC_SLACK_WEBHOOK_URL) {
-      await fetch(process.env.NEXT_PUBLIC_SLACK_WEBHOOK_URL, {
+    // 🔥 Slack webhook (서버 전용 env 사용)
+    if (process.env.SLACK_WEBHOOK_URL) {
+      await fetch(process.env.SLACK_WEBHOOK_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -27,3 +28,4 @@ export async function logError(data: any) {
     console.error("logError fail", e)
   }
 }
+// ===== [END] logger.ts =====
