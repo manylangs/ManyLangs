@@ -605,6 +605,59 @@ export default function SelectBooksPage() {
     }
   }
 
+  // START - server based preview check
+  async function handleRefundCheck() {
+    if (loading) return;
+
+    setLoading(true);
+
+    try {
+      const [couponRes, licenseRes] = await Promise.all([
+        fetch("/api/coupons/list", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId }),
+        }),
+        fetch("/api/licenses/list", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId }),
+        }),
+      ]);
+
+      const couponData = await safeJson(couponRes);
+      const licenseData = await safeJson(licenseRes);
+
+      const coupons = Array.isArray(couponData?.coupons)
+        ? couponData.coupons
+        : [];
+
+      const licenses = Array.isArray(licenseData?.licenses)
+        ? licenseData.licenses
+        : [];
+
+      const groups = getRefundableGroups(coupons, licenses);
+
+      // UI 최신화
+      setCouponBox(coupons);
+      setLibrary(licenses);
+      setRefundViewCoupons(coupons);
+      setRefundViewLicenses(licenses);
+
+      if (groups.length === 0) {
+        alert("Refund unavailable (coupon already used)");
+        return;
+      }
+
+      // ✅ 여기서만 preview 열림
+      setRefundPreviewOpen(true);
+
+    } catch {
+      alert("Network error");
+    } finally {
+      setLoading(false);
+    }
+  }
 
   function openBook(item: LibraryItem) {
     if (isExpired(item.expiresAt)) {
@@ -1055,11 +1108,9 @@ export default function SelectBooksPage() {
                 <Button
                   variant="outline"
                   className="w-full"
-                  disabled={!canRefund}
-                  onClick={() => setRefundPreviewOpen(true)}
-                >
-                  Refund Eligible Purchases
-                </Button>
+                  disabled={loading}
+                  onClick={handleRefundCheck}
+                />
 
 
                 {refundPreviewOpen && canRefund && (
