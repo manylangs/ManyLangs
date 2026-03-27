@@ -670,7 +670,7 @@ export default function SelectBooksPage() {
         alert("Refund unavailable (already used or already refunded)");
         return;
       }
-      setRefundPreviewGroups(groups);
+      setRefundPreviewGroups(strictGroups);
 
       // ✅ 여기서만 preview 열림
       setRefundPreviewOpen(true);
