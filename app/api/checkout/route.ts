@@ -111,18 +111,28 @@ export async function POST(req: Request) {
       cancel_url: cancelUrl,
       client_reference_id: userId,
 
-      /* 🔥 metadata (checkout + webhook용) */
       metadata: {
         userId,
         amount,
+        couponCount:
+          amount === "3" ? 2 :
+            amount === "5" ? 4 :
+              amount === "20" ? 20 :
+                amount === "50" ? 60 :
+                  amount === "100" ? 150 : 0,
       },
-
       /* 🔥 핵심 (payment_intent fallback 대응) */
       payment_intent_data: {
         metadata: {
           userId,
           amount,
           priceId,
+          couponCount:
+            amount === "3" ? 2 :
+              amount === "5" ? 4 :
+                amount === "20" ? 20 :
+                  amount === "50" ? 60 :
+                    amount === "100" ? 150 : 0,
         },
       },
 

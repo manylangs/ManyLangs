@@ -27,6 +27,7 @@ type CouponItem = {
 
   paymentIntentId?: string | null;
   disabled?: boolean;
+  couponCount?: number | null; // 🔥 추가
 
   usedLang?: string | null;
   usedSeries?: string | null;
@@ -748,18 +749,24 @@ export default function SelectBooksPage() {
     }
 
     const refundable: CouponItem[][] = [];
-
     for (const group of Object.values(groups)) {
 
-      const anyUsed = group.some((c) => {
-        // 내가 사용한 경우
-        if (c.used === true && c.usedBy === userId) return true;
+      const originalCount =
+        typeof group[0]?.couponCount === "number" && group[0].couponCount > 0
+          ? group[0].couponCount
+          : group.length;
 
-        // 다른 사람이 사용한 shared coupon도 포함 → 환불 불가
-        if (c.used === true && c.usedBy && c.usedBy !== userId) return true;
+      const currentCount = group.length;
 
-        return false;
-      });      // 🔥 END FIX
+      const anyUsed =
+        currentCount < originalCount ||
+
+        group.some((c) => {
+          if (c.used === true && c.usedBy === userId) return true;
+          if (c.used === true && c.usedBy && c.usedBy !== userId) return true;
+          if (usedCouponCodes.has(c.code)) return true; // 🔥 이거 추가
+          return false;
+        });
 
       if (!anyUsed) {
         refundable.push(group);

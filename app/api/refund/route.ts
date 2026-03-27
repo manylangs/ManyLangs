@@ -87,12 +87,22 @@ export async function POST(req: Request) {
 
     for (const [pid, group] of Object.entries(grouped)) {
 
-      const anyUsed = group.some((c: any) => {
-        if (c.used === true) return true;
-        if (c.usedBy && c.usedBy !== userId) return true;
-        if (usedCouponCodes.has(c.code)) return true;
-        return false;
-      });
+      const originalCount =
+        typeof group[0]?.couponCount === "number" && group[0].couponCount > 0
+          ? group[0].couponCount
+          : group.length;
+
+      const currentCount = group.length;
+
+      const anyUsed =
+        currentCount < originalCount || // 🔥 핵심 추가
+
+        group.some((c: any) => {
+          if (c.used === true) return true;
+          if (c.usedBy && c.usedBy !== userId) return true;
+          if (usedCouponCodes.has(c.code)) return true;
+          return false;
+        });
       if (!anyUsed) {
         refundablePaymentIntents.push(pid);
       }
