@@ -345,6 +345,9 @@ export default function SelectBooksPage() {
   // 🔥 refund UI 동기화용 상태
   const [refundViewCoupons, setRefundViewCoupons] = useState<CouponItem[]>([]);
   const [refundViewLicenses, setRefundViewLicenses] = useState<LibraryItem[]>([]);
+  // 🔥 START - refund preview state
+  const [refundPreviewOpen, setRefundPreviewOpen] = useState(false);
+  // 🔥 END
 
   // 🔥 서버 기준 최신 데이터 가져오기
   useEffect(() => {
@@ -592,7 +595,9 @@ export default function SelectBooksPage() {
       setRefundViewCoupons(afterCoupons);
       setRefundViewLicenses(afterLicenses);
 
+
       alert("Refund completed");
+      setRefundPreviewOpen(false);
     } catch {
       alert("Network error");
     } finally {
@@ -1046,14 +1051,52 @@ export default function SelectBooksPage() {
 
               <CardContent className="space-y-3">
 
+
                 <Button
                   variant="outline"
                   className="w-full"
                   disabled={!canRefund}
-                  onClick={requestRefund}
+                  onClick={() => setRefundPreviewOpen(true)}
                 >
-                  Request Refund
+                  Refund Eligible Purchases
                 </Button>
+
+
+                {refundPreviewOpen && canRefund && (
+                  <div className="border rounded p-3 text-center space-y-2 bg-gray-50">
+
+                    <div className="text-sm font-semibold">
+                      Refund available
+                    </div>
+
+                    <div className="text-xs text-gray-600">
+                      {refundablePurchaseCount} purchase
+                      {refundablePurchaseCount > 1 ? "s" : ""} ({refundableCouponCount} coupons)
+                    </div>
+
+                    <div className="text-xs text-gray-500">
+                      Do you want to proceed with the refund?
+                    </div>
+
+                    <div className="flex gap-2 pt-2">
+                      <Button
+                        className="w-full"
+                        onClick={requestRefund}
+                      >
+                        Confirm Refund
+                      </Button>
+
+                      <Button
+                        variant="outline"
+                        className="w-full"
+                        onClick={() => setRefundPreviewOpen(false)}
+                      >
+                        Cancel
+                      </Button>
+                    </div>
+
+                  </div>
+                )}
 
                 {canRefund && (
                   <div className="text-xs text-gray-500 text-center">
