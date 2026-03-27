@@ -593,6 +593,7 @@ export default function SelectBooksPage() {
 
   // refund는 "paymentIntent 묶음" 기준으로 계산
 
+  // refund는 "paymentIntent 묶음" 기준으로 계산
   function getRefundableGroups(coupons: any[], library: LibraryItem[]) {
 
     const usedCouponCodes = new Set(
@@ -628,7 +629,6 @@ export default function SelectBooksPage() {
 
     return refundable
   }
-
   const refundableGroups = getRefundableGroups(couponBox, library)
 
   const refundablePurchaseCount = refundableGroups.length
@@ -980,6 +980,7 @@ export default function SelectBooksPage() {
                 <Button
                   variant="outline"
                   className="w-full"
+                  disabled={!canRefund}
                   onClick={requestRefund}
                 >
                   Request Refund
@@ -991,6 +992,11 @@ export default function SelectBooksPage() {
                     {refundablePurchaseCount > 1 ? "s" : ""} ({refundableCouponCount} coupons)
                     <br />
                     All refundable purchases will be refunded together.
+                  </div>
+                )}
+                {!canRefund && (
+                  <div className="text-xs text-gray-400 text-center">
+                    Refund unavailable (coupon already used)
                   </div>
                 )}
                 <div className="text-xs text-gray-500 space-y-1 text-left">
@@ -1008,6 +1014,7 @@ export default function SelectBooksPage() {
     </main>
   );
 }
+
 
 
 

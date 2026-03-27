@@ -51,29 +51,51 @@ export async function POST(req: Request) {
       );
     }
     // 🔥 그룹별 "사용 여부" 체크
-    const grouped: Record<string, any[]> = {}
+
+    // 🔥 1️⃣ 라이선스 기준 used coupon 수집
+    const licensesSnap = await db
+      .collection("licenses")
+      .where("userId", "==", userId)
+      .get();
+
+    const usedCouponCodes = new Set<string>();
+
+    licensesSnap.docs.forEach((doc) => {
+      const data = doc.data();
+      if (data.source === "coupon" && data.code) {
+        usedCouponCodes.add(data.code);
+      }
+    });
+
+    // 🔥 2️⃣ paymentIntent 그룹화
+    const grouped: Record<string, any[]> = {};
 
     couponsSnap.docs.forEach((doc) => {
-      const data = doc.data()
+      const data = doc.data();
 
-      if (!data.paymentIntentId) return
+      if (!data.paymentIntentId) return;
 
       if (!grouped[data.paymentIntentId]) {
-        grouped[data.paymentIntentId] = []
+        grouped[data.paymentIntentId] = [];
       }
 
-      grouped[data.paymentIntentId].push(data)
-    })
-    // 🔥 환불 가능한 paymentIntent만 필터
-    const refundablePaymentIntents: string[] = []
+      grouped[data.paymentIntentId].push(data);
+    });
+
+    // 🔥 3️⃣ 환불 가능한 paymentIntent만 필터
+    const refundablePaymentIntents: string[] = [];
 
     for (const [pid, group] of Object.entries(grouped)) {
-      const anyUsed = group.some(c => c.used)
+
+      const anyUsed = group.some((c: any) =>
+        usedCouponCodes.has(c.code)
+      );
 
       if (!anyUsed) {
-        refundablePaymentIntents.push(pid)
+        refundablePaymentIntents.push(pid);
       }
     }
+
 
     // ❌ 하나도 환불 가능 없으면 차단
     if (refundablePaymentIntents.length === 0) {
