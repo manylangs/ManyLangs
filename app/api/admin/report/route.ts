@@ -24,12 +24,10 @@ export async function GET(req: NextRequest) {
     // 💳 결제
     const payments = await stripe.paymentIntents.list({
       limit: 100,
-      created: createdFilter,
     })
-    // 💸 환불
+    // 💳 환불
     const refunds = await stripe.refunds.list({
       limit: 100,
-      created: createdFilter,
     })
     const filteredPayments = payments.data.filter(
       (p) =>
@@ -51,7 +49,7 @@ export async function GET(req: NextRequest) {
       (sum, r) => sum + (r.amount || 0),
       0
     )
-    
+
 
     const netRevenue = totalRevenue - totalRefund
 
@@ -62,8 +60,8 @@ export async function GET(req: NextRequest) {
       paymentCount: payments.data.length,
       refundCount: refunds.data.length,
 
-      recentPayments: filteredPayments.slice(0, 20),
-      recentRefunds: filteredRefunds.slice(0, 20),
+      recentPayments: filteredPayments,
+      recentRefunds: filteredRefunds,
     })
   } catch (e) {
     console.error(e)

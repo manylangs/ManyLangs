@@ -15,9 +15,9 @@ type Report = {
 export default function AdminPage() {
   const [data, setData] = useState<Report | null>(null)
 
-  // 🔥 Load More 상태
-  const [paymentLimit, setPaymentLimit] = useState(20)
-  const [refundLimit, setRefundLimit] = useState(20)
+  // ✅ Load More 상태
+  const [visiblePayments, setVisiblePayments] = useState(20)
+  const [visibleRefunds, setVisibleRefunds] = useState(20)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -44,7 +44,7 @@ export default function AdminPage() {
     <div style={{ padding: 20 }}>
       <h1 style={{ fontSize: 24, marginBottom: 20 }}>Admin Dashboard</h1>
 
-      {/* 카드 영역 */}
+      {/* 카드 */}
       <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
         <Card title="Total Revenue" value={data.totalRevenue} />
         <Card title="Total Refund" value={data.totalRefund} />
@@ -53,50 +53,53 @@ export default function AdminPage() {
         <Card title="Refunds" value={data.refundCount} />
       </div>
 
-      {/* 최근 결제 */}
+      {/* ================= Payments ================= */}
       <h2 style={{ marginTop: 40 }}>Recent Payments</h2>
       <div>
-        {data.recentPayments.slice(0, paymentLimit).map((p) => (
-          <div key={p.id} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
-            💳 {(p.amount_received / 100).toLocaleString("en-US", {
-              style: "currency",
-              currency: "USD",
-            })}{" "}
-            | {p.status}
-          </div>
-        ))}
+        {data.recentPayments
+          .slice(0, visiblePayments)
+          .map((p, i) => (
+            <div key={p.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
+              💳 {(p.amount_received / 100).toLocaleString("en-US", {
+                style: "currency",
+                currency: "USD",
+              })}{" "}
+              | {p.status}
+            </div>
+          ))}
       </div>
 
-      {/* Load More 버튼 */}
-      {paymentLimit < data.recentPayments.length && (
+      {visiblePayments < data.recentPayments.length && (
         <button
-          onClick={() => setPaymentLimit((prev) => prev + 20)}
+          onClick={() => setVisiblePayments(prev => prev + 20)}
           style={{ marginTop: 10 }}
         >
-          Load More Payments
+          Load More Payments ({visiblePayments} / {data.recentPayments.length})
         </button>
       )}
 
-      {/* 최근 환불 */}
+      {/* ================= Refunds ================= */}
       <h2 style={{ marginTop: 40 }}>Recent Refunds</h2>
+      
       <div>
-        {data.recentRefunds.slice(0, refundLimit).map((r) => (
-          <div key={r.id} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
-            💸 {(r.amount / 100).toLocaleString("en-US", {
-              style: "currency",
-              currency: "USD",
-            })}
-          </div>
-        ))}
+        {data.recentRefunds
+          ?.slice(0, visibleRefunds || 20)
+          ?.map((r, i) => (
+            <div key={r.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
+              💸 {(r.amount / 100).toLocaleString("en-US", {
+                style: "currency",
+                currency: "USD",
+              })}
+            </div>
+          ))}
       </div>
 
-      {/* Load More 버튼 */}
-      {refundLimit < data.recentRefunds.length && (
+      {visibleRefunds < data.recentRefunds.length && (
         <button
-          onClick={() => setRefundLimit((prev) => prev + 20)}
+          onClick={() => setVisibleRefunds(prev => prev + 20)}
           style={{ marginTop: 10 }}
         >
-          Load More Refunds
+          Load More Refunds ({visibleRefunds} / {data.recentRefunds.length})
         </button>
       )}
     </div>
@@ -121,9 +124,9 @@ function Card({ title, value }: { title: string; value: number }) {
         {isCount
           ? value.toLocaleString()
           : (value / 100).toLocaleString("en-US", {
-              style: "currency",
-              currency: "USD",
-            })}
+            style: "currency",
+            currency: "USD",
+          })}
       </div>
     </div>
   )
