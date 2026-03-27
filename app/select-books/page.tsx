@@ -1058,8 +1058,6 @@ export default function SelectBooksPage() {
                 >
                   Request Refund
                 </Button>
-
-               // 🔥 START - loading UI
                 {!refundLoaded ? (
                   <div className="text-xs text-gray-400 text-center">
                     Checking refund availability...
@@ -1076,9 +1074,6 @@ export default function SelectBooksPage() {
                     Refund unavailable (coupon already used)
                   </div>
                 )}
-// 🔥 END
-
-
                 <div className="text-xs text-gray-500 space-y-1 text-left">
                   <div className="text-center font-extrabold text-red-500">
                     Refund Policy
