@@ -2,6 +2,22 @@
 
 import { useEffect, useState } from "react"
 
+// ===== [START] language map =====
+const LANG_MAP: Record<string, string> = {
+  korean: "KR",
+  spanish: "ES",
+  french: "FR",
+  portuguese: "PT",
+  english: "EN",
+}
+
+function parseProduct(productId: string) {
+  if (!productId) return "-"
+  const [lang, level] = productId.split("_")
+  return `${LANG_MAP[lang] || lang?.toUpperCase()} (${level})`
+}
+// ===== [END] language map =====
+
 type Report = {
   totalRevenue: number
   totalRefund: number
@@ -10,7 +26,7 @@ type Report = {
   refundCount: number
   recentPayments: any[]
   recentRefunds: any[]
-  paymentMap: Record<string, any> // ✅ 추가
+  paymentMap: Record<string, any>
 }
 
 export default function AdminPage() {
@@ -40,12 +56,27 @@ export default function AdminPage() {
 
   if (!data) return <div style={{ padding: 20 }}>Loading...</div>
 
-  // ✅ 그래프용 데이터 계산
+  // ===== 그래프 =====
   const dailyRevenue: Record<string, number> = {}
 
   data.recentPayments.forEach((p) => {
     const date = new Date(p.created * 1000).toLocaleDateString()
     dailyRevenue[date] = (dailyRevenue[date] || 0) + p.amount_received
+  })
+
+  // ===== 언어별 매출 =====
+  const langRevenue: Record<string, number> = {}
+
+  data.recentPayments.forEach((p) => {
+    const licenses = data.paymentMap?.[p.id]?.licenses || []
+
+    licenses.forEach((l: any) => {
+      if (!l.productId) return
+      const [lang] = l.productId.split("_")
+      const code = LANG_MAP[lang] || lang?.toUpperCase()
+
+      langRevenue[code] = (langRevenue[code] || 0) + p.amount_received
+    })
   })
 
   return (
@@ -68,7 +99,18 @@ export default function AdminPage() {
         <Card title="Refunds" value={data.refundCount} />
       </div>
 
-      {/* ================= 그래프 ================= */}
+      {/* ===== 언어별 매출 ===== */}
+      <h2 style={{ marginTop: 40 }}>Revenue by Language</h2>
+
+      <div style={{ marginTop: 10 }}>
+        {Object.entries(langRevenue).map(([lang, amount]) => (
+          <div key={lang} style={{ fontSize: 13 }}>
+            {lang} : ${(amount / 100).toFixed(2)}
+          </div>
+        ))}
+      </div>
+
+      {/* ===== 그래프 ===== */}
       <h2 style={{ marginTop: 40 }}>Revenue Trend</h2>
 
       <div style={{ marginTop: 10 }}>
@@ -79,7 +121,7 @@ export default function AdminPage() {
         ))}
       </div>
 
-      {/* ================= Payments ================= */}
+      {/* ===== Payments ===== */}
       <h2 style={{ marginTop: 40 }}>Recent Payments</h2>
 
       <div>
@@ -87,21 +129,19 @@ export default function AdminPage() {
           .slice(0, visiblePayments)
           .map((p, i) => (
             <div key={p.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
+              
               💳 {(p.amount_received / 100).toLocaleString("en-US", {
                 style: "currency",
                 currency: "USD",
-              })}{" "}
-              | {p.status}
+              })} | {p.status}
 
-              {/* ===== STEP3 UI ===== */}
               <div style={{ fontSize: 12, color: "#666", marginTop: 4 }}>
                 coupons: {data.paymentMap?.[p.id]?.coupons?.length || 0} | licenses: {data.paymentMap?.[p.id]?.licenses?.length || 0}
               </div>
 
-              {/* 상세 license */}
               {data.paymentMap?.[p.id]?.licenses?.map((l: any) => (
                 <div key={l.id} style={{ fontSize: 11, color: "#999" }}>
-                  - {l.productId}
+                  - {parseProduct(l.productId)}
                 </div>
               ))}
             </div>
@@ -117,7 +157,7 @@ export default function AdminPage() {
         </button>
       )}
 
-      {/* ================= Refunds ================= */}
+      {/* ===== Refunds ===== */}
       <h2 style={{ marginTop: 40 }}>Recent Refunds</h2>
 
       <div>
