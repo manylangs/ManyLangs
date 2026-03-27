@@ -92,11 +92,12 @@ export default function LogsPage() {
     <div style={{ padding: 20 }}>
       {/* 🔥 상단 버튼 */}
       <div style={{ marginBottom: 20 }}>
-        <Link href="/library">
-          <button style={{ marginRight: 10 }}>📚 Library</button>
+        <Link href="/select-books">
+          <button style={{ marginRight: 10 }}>📚← Back to Library</button>
         </Link>
       </div>
 
+        ← Back to Library
       <h1 style={{ fontSize: 24, marginBottom: 20 }}>Error Logs</h1>
 
       {/* ============================== */}
