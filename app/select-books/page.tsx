@@ -599,7 +599,7 @@ export default function SelectBooksPage() {
 
       alert("Refund completed");
       setRefundPreviewOpen(false);
-      setRefundPreviewGroups([]); 
+      setRefundPreviewGroups([]);
     } catch {
       alert("Network error");
     } finally {
@@ -641,7 +641,11 @@ export default function SelectBooksPage() {
       const groups = getRefundableGroups(coupons, licenses);
 
       const strictGroups = groups.filter((group: any) => {
-        return !group.some((c: any) => c.used === true);
+        return !group.some((c: any) => {
+          if (c.used === true) return true;
+          if (c.usedBy && c.usedBy !== userId) return true;
+          return false;
+        });
       });
       if (strictGroups.length === 0) {
         alert("Refund unavailable (already used or already refunded)");
