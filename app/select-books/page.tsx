@@ -1097,15 +1097,6 @@ export default function SelectBooksPage() {
 
                   </div>
                 )}
-
-                {canRefund && (
-                  <div className="text-xs text-gray-500 text-center">
-                    Refund available for {refundablePurchaseCount} purchase
-                    {refundablePurchaseCount > 1 ? "s" : ""} ({refundableCouponCount} coupons)
-                    <br />
-                    All refundable purchases will be refunded together.
-                  </div>
-                )}
                 {!canRefund && (
                   <div className="text-xs text-gray-400 text-center">
                     Refund unavailable (coupon already used)
