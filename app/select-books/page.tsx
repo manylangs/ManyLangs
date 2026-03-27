@@ -537,8 +537,7 @@ export default function SelectBooksPage() {
       setCouponBox(beforeCoupons);
       writeLocalCoupons(beforeCoupons);
       setLibrary(beforeLicenses);
-      setRefundViewCoupons(beforeCoupons);
-      setRefundViewLicenses(beforeLicenses);
+  
 
       if (beforeRefundableGroups.length === 0) {
         alert("Refund unavailable (coupon already used)");
@@ -589,8 +588,7 @@ export default function SelectBooksPage() {
       setCouponBox(afterCoupons);
       writeLocalCoupons(afterCoupons);
       setLibrary(afterLicenses);
-      setRefundViewCoupons(afterCoupons);
-      setRefundViewLicenses(afterLicenses);
+
 
       alert("Refund completed");
     } catch {
@@ -687,14 +685,10 @@ export default function SelectBooksPage() {
     return refundable;
   }
 
-
-
-
-  const refundBaseCoupons =
-    refundViewCoupons.length > 0 ? refundViewCoupons : couponBox;
-
-  const refundBaseLicenses =
-    refundViewLicenses.length > 0 ? refundViewLicenses : library;
+  // 🔥 START FIX
+  const refundBaseCoupons = couponBox;
+  const refundBaseLicenses = library;
+  // 🔥 END FIX
 
   const refundableGroups = getRefundableGroups(refundBaseCoupons, refundBaseLicenses);
 
@@ -1081,6 +1075,7 @@ export default function SelectBooksPage() {
     </main>
   );
 }
+
 
 
 
