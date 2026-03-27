@@ -1105,13 +1105,15 @@ export default function SelectBooksPage() {
               <CardContent className="space-y-3">
 
 
+
                 <Button
                   variant="outline"
                   className="w-full"
                   disabled={loading}
                   onClick={handleRefundCheck}
-                />
-
+                >
+                  Refund Eligible Purchases
+                </Button>
 
                 {refundPreviewOpen && canRefund && (
                   <div className="border rounded p-3 text-center space-y-2 bg-gray-50">
