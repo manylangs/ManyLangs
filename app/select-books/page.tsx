@@ -926,7 +926,7 @@ export default function SelectBooksPage() {
                   </div>
 
                   {/* 🔥 추가 */}
-                  <div className="text-xs text-red-400">
+                  <div className="text-xs text-red-400 text-center">
                     Status may take a moment. Please refresh if needed.
                   </div>
                 </div>
