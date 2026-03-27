@@ -342,7 +342,43 @@ export default function SelectBooksPage() {
   useEffect(() => {
     setCouponPage(1);
   }, [couponBox.length]);
+  // 🔥 refund UI 동기화용 상태
+  const [refundViewCoupons, setRefundViewCoupons] = useState<CouponItem[]>([]);
+  const [refundViewLicenses, setRefundViewLicenses] = useState<LibraryItem[]>([]);
 
+  // 🔥 서버 기준 최신 데이터 가져오기
+  useEffect(() => {
+    if (!isLoaded || !userId) return;
+
+    (async () => {
+      try {
+        const [couponRes, licenseRes] = await Promise.all([
+          fetch("/api/coupons/list", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ userId }),
+          }),
+          fetch("/api/licenses/list", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ userId }),
+          }),
+        ]);
+
+        const couponData = await safeJson(couponRes);
+        const licenseData = await safeJson(licenseRes);
+
+        setRefundViewCoupons(
+          Array.isArray(couponData?.coupons) ? couponData.coupons : []
+        );
+        setRefundViewLicenses(
+          Array.isArray(licenseData?.licenses) ? licenseData.licenses : []
+        );
+      } catch {
+        // ignore
+      }
+    })();
+  }, [isLoaded, userId, couponBox.length, library.length]);
   // ✅ Hook 끝난 뒤에만 early return
   if (!isLoaded) return null;
   if (!userId) return null;
@@ -629,12 +665,18 @@ export default function SelectBooksPage() {
 
     return refundable
   }
-  const refundableGroups = getRefundableGroups(couponBox, library)
+  const refundBaseCoupons =
+    refundViewCoupons.length > 0 ? refundViewCoupons : couponBox;
 
-  const refundablePurchaseCount = refundableGroups.length
-  const refundableCouponCount = refundableGroups.flat().length
+  const refundBaseLicenses =
+    refundViewLicenses.length > 0 ? refundViewLicenses : library;
 
-  const canRefund = refundablePurchaseCount > 0
+  const refundableGroups = getRefundableGroups(refundBaseCoupons, refundBaseLicenses);
+
+  const refundablePurchaseCount = refundableGroups.length;
+  const refundableCouponCount = refundableGroups.flat().length;
+
+  const canRefund = refundablePurchaseCount > 0;
 
   const couponTotal = sortedCoupons.length;
   const couponTotalPages = Math.max(1, Math.ceil(couponTotal / COUPON_PAGE_SIZE));

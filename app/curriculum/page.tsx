@@ -164,7 +164,7 @@ const BASE_SERIES = [
     desc: "Natural expressions used by natives",
     fixedInfo:
       "Each chapter includes 5 idioms, each with a definition and 5 example sentences.",
-    levels: "A2–C2",
+    levels: "A1–C2",
   },
   {
     key: "real",
