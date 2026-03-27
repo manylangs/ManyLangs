@@ -837,6 +837,18 @@ export default function SelectBooksPage() {
                 Admin
               </Button>
             )}
+
+            {/* 🔥 Revenue 버튼 */}
+            {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => router.push("/admin/revenue")}
+                className="h-8 shrink-0 border-red-500 text-red-500"
+              >
+                Revenue
+              </Button>
+            )}
           </div>
 
           {/* RIGHT */}
