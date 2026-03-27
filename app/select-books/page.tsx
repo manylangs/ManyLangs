@@ -80,8 +80,13 @@ async function safeJson(res: Response) {
   }
 }
 
-function getCouponStatus(c: CouponItem) {
-  if (c.used) return { text: "Used", color: "#999" };
+function getCouponStatus(c: CouponItem, currentUserId: string) {
+  if (c.used) {
+    if (c.usedBy && c.usedBy !== currentUserId) {
+      return { text: "Used by another user", color: "#999" };
+    }
+    return { text: "Used", color: "#999" };
+  }
   return { text: "Available", color: "#090" };
 }
 
@@ -964,7 +969,7 @@ export default function SelectBooksPage() {
 
                 {/* List: paged coupons */}
                 {pageCoupons.map((c, idx) => {
-                  const status = getCouponStatus(c);
+                  const status = getCouponStatus(c, userId!);
                   const usedAt = c.used ? formatUsedAt(c.usedAt) : "";
                   const usedBook = formatUsedBook(c);
 
