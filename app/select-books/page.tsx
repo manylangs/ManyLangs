@@ -1152,7 +1152,7 @@ export default function SelectBooksPage() {
                 )}
                 {!canRefund && (
                   <div className="text-xs text-gray-400 text-center">
-                    Refund unavailable (coupon already used)
+                    Refund unavailable (already used or already refunded)
                   </div>
                 )}
                 <div className="text-xs text-gray-500 space-y-1 text-left">
