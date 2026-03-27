@@ -675,9 +675,11 @@ export default function SelectBooksPage() {
     const refundable: CouponItem[][] = [];
 
     for (const group of Object.values(groups)) {
+      // 🔥 START FIX - remove library dependency
       const anyUsed = group.some(
-        (c) => c.used === true || usedCouponCodes.has(c.code)
+        (c) => c.used === true
       );
+      // 🔥 END FIX
 
       if (!anyUsed) {
         refundable.push(group);
