@@ -917,11 +917,18 @@ export default function SelectBooksPage() {
             {/* My Coupons */}
             <Card>
               <CardHeader>
-                <div className="flex items-center justify-between">
-                  <CardTitle>My Coupons</CardTitle>
-                  <span className="text-xs text-gray-400 ml-2 whitespace-nowrap">
-                    Tap/click a code to copy
-                  </span>
+                <div className="flex flex-col gap-1">
+                  <div className="flex items-center justify-between">
+                    <CardTitle>My Coupons</CardTitle>
+                    <span className="text-xs text-gray-400 ml-2 whitespace-nowrap">
+                      Tap/click a code to copy
+                    </span>
+                  </div>
+
+                  {/* 🔥 추가 */}
+                  <div className="text-xs text-red-400">
+                    Status may take a moment. Please refresh if needed.
+                  </div>
                 </div>
               </CardHeader>
 
