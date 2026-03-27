@@ -185,7 +185,7 @@ export default function SelectBooksPage() {
 
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-
+  const [refundPreviewGroups, setRefundPreviewGroups] = useState<any[]>([]);
   /** ✅ (NEW) 계정 변경/로그아웃 시 localStorage 캐시 초기화 */
   useEffect(() => {
     if (!isLoaded) return;
@@ -561,7 +561,7 @@ export default function SelectBooksPage() {
 
       if (!refundRes.ok) {
         alert(refundData?.error || "Refund failed");
-        setRefundPreviewOpen(false); 
+        setRefundPreviewOpen(false);
         return;
       }
 
@@ -636,8 +636,18 @@ export default function SelectBooksPage() {
       const licenses = Array.isArray(licenseData?.licenses)
         ? licenseData.licenses
         : [];
-
+      // 🔥 START - strict refund validation
       const groups = getRefundableGroups(coupons, licenses);
+
+      const strictGroups = groups.filter((group: any) => {
+        return !group.coupons.some((c: any) => c.used === true);
+      });
+
+      if (strictGroups.length === 0) {
+        alert("Refund unavailable (already used or already refunded)");
+        return;
+      }
+      // 🔥 END - strict refund validation
 
       // UI 최신화
       setCouponBox(coupons);
@@ -645,10 +655,12 @@ export default function SelectBooksPage() {
       setRefundViewCoupons(coupons);
       setRefundViewLicenses(licenses);
 
-      if (groups.length === 0) {
-        alert("Refund unavailable (coupon already used)");
+      // 🔥 START - strict 기준으로만 판단
+      if (strictGroups.length === 0) {
+        alert("Refund unavailable (already used or already refunded)");
         return;
       }
+      setRefundPreviewGroups(strictGroups);
 
       // ✅ 여기서만 preview 열림
       setRefundPreviewOpen(true);
