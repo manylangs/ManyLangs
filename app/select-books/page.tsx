@@ -599,6 +599,7 @@ export default function SelectBooksPage() {
 
       alert("Refund completed");
       setRefundPreviewOpen(false);
+      setRefundPreviewGroups([]); 
     } catch {
       alert("Network error");
     } finally {
@@ -608,7 +609,7 @@ export default function SelectBooksPage() {
 
   // START - server based preview check
   async function handleRefundCheck() {
-    if (loading) return;
+    if (loading || refundPreviewOpen) return;
 
     setLoading(true);
 
@@ -1126,7 +1127,7 @@ export default function SelectBooksPage() {
                 <Button
                   variant="outline"
                   className="w-full"
-                  disabled={loading}
+                  disabled={loading || refundPreviewOpen || !canRefund}
                   onClick={handleRefundCheck}
                 >
                   Refund Eligible Purchases
