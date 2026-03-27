@@ -811,57 +811,70 @@ export default function SelectBooksPage() {
 
   return (
     <main className="px-4 py-8">
-      {/* 🔥 START - header with admin */}
-      {isUserLoaded && isSignedIn && (
-        <div className="mx-auto flex max-w-5xl items-center justify-between gap-2 px-4 py-2">
+      <main className="px-4 py-8">
+        {/* 🔥 START - header with admin */}
+        {isUserLoaded && isSignedIn && (
+          <div className="mx-auto flex max-w-5xl items-center justify-between gap-2 px-4 py-2">
 
-          {/* LEFT */}
-          <div className="flex items-center gap-2">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => router.push("/app")}
-              className="h-8 shrink-0"
-            >
-              Home
-            </Button>
-
-            {/* 🔥 Admin 버튼 */}
-            {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
+            {/* LEFT */}
+            <div className="flex items-center gap-2">
               <Button
                 variant="outline"
                 size="sm"
-                onClick={() => router.push("/admin")}
-                className="h-8 shrink-0 border-red-500 text-red-500"
+                onClick={() => router.push("/app")}
+                className="h-8 shrink-0"
               >
-                Admin
+                Home
               </Button>
-            )}
 
-            {/* 🔥 Revenue 버튼 */}
-            {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => router.push("/admin/revenue")}
-                className="h-8 shrink-0 border-red-500 text-red-500"
-              >
-                Revenue
-              </Button>
-            )}
+              {/* 🔥 Admin 버튼 */}
+              {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => router.push("/admin")}
+                  className="h-8 shrink-0 border-red-500 text-red-500"
+                >
+                  Admin
+                </Button>
+              )}
+
+              {/* 🔥 Revenue 버튼 */}
+              {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => router.push("/admin/revenue")}
+                  className="h-8 shrink-0 border-red-500 text-red-500"
+                >
+                  Revenue
+                </Button>
+              )}
+
+              {/* 🔥 Logs 버튼 */}
+              {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => router.push("/admin/logs")}
+                  className="h-8 shrink-0 border-red-500 text-red-500"
+                >
+                  Logs
+                </Button>
+              )}
+            </div>
+
+            {/* RIGHT */}
+            <div className="text-xs text-gray-500 whitespace-nowrap text-right">
+              Contact:{" "}
+              <a className="underline font-medium" href="mailto:manylangs.help@gmail.com">
+                ✉ manylangs.help@gmail.com
+              </a>
+            </div>
+
           </div>
-
-          {/* RIGHT */}
-          <div className="text-xs text-gray-500 whitespace-nowrap text-right">
-            Contact:{" "}
-            <a className="underline font-medium" href="mailto:manylangs.help@gmail.com">
-              ✉ manylangs.help@gmail.com
-            </a>
-          </div>
-
-        </div>
-      )}
-      {/* 🔥 END */}
+        )}
+      </main>
 
 
       {/* ✅ 반응형 레이아웃 wrapper (여기만 변경) */}
