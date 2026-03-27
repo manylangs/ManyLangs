@@ -10,12 +10,12 @@ type Report = {
   refundCount: number
   recentPayments: any[]
   recentRefunds: any[]
+  paymentMap: Record<string, any> // ✅ 추가
 }
 
 export default function AdminPage() {
   const [data, setData] = useState<Report | null>(null)
 
-  // ✅ Load More 상태
   const [visiblePayments, setVisiblePayments] = useState(20)
   const [visibleRefunds, setVisibleRefunds] = useState(20)
 
@@ -40,15 +40,25 @@ export default function AdminPage() {
 
   if (!data) return <div style={{ padding: 20 }}>Loading...</div>
 
+  // ✅ 그래프용 데이터 계산
+  const dailyRevenue: Record<string, number> = {}
+
+  data.recentPayments.forEach((p) => {
+    const date = new Date(p.created * 1000).toLocaleDateString()
+    dailyRevenue[date] = (dailyRevenue[date] || 0) + p.amount_received
+  })
+
   return (
     <div style={{ padding: 20 }}>
       <h1 style={{ fontSize: 24, marginBottom: 20 }}>Admin Dashboard</h1>
+
       <button
         onClick={() => window.location.href = "/select-books"}
         style={{ marginBottom: 20 }}
       >
         ← Back to Library
       </button>
+
       {/* 카드 */}
       <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
         <Card title="Total Revenue" value={data.totalRevenue} />
@@ -58,8 +68,20 @@ export default function AdminPage() {
         <Card title="Refunds" value={data.refundCount} />
       </div>
 
+      {/* ================= 그래프 ================= */}
+      <h2 style={{ marginTop: 40 }}>Revenue Trend</h2>
+
+      <div style={{ marginTop: 10 }}>
+        {Object.entries(dailyRevenue).map(([date, amount]) => (
+          <div key={date} style={{ fontSize: 12 }}>
+            {date} : ${(amount / 100).toFixed(2)}
+          </div>
+        ))}
+      </div>
+
       {/* ================= Payments ================= */}
       <h2 style={{ marginTop: 40 }}>Recent Payments</h2>
+
       <div>
         {data.recentPayments
           .slice(0, visiblePayments)
@@ -70,6 +92,18 @@ export default function AdminPage() {
                 currency: "USD",
               })}{" "}
               | {p.status}
+
+              {/* ===== STEP3 UI ===== */}
+              <div style={{ fontSize: 12, color: "#666", marginTop: 4 }}>
+                coupons: {data.paymentMap?.[p.id]?.coupons?.length || 0} | licenses: {data.paymentMap?.[p.id]?.licenses?.length || 0}
+              </div>
+
+              {/* 상세 license */}
+              {data.paymentMap?.[p.id]?.licenses?.map((l: any) => (
+                <div key={l.id} style={{ fontSize: 11, color: "#999" }}>
+                  - {l.productId}
+                </div>
+              ))}
             </div>
           ))}
       </div>
@@ -129,9 +163,9 @@ function Card({ title, value }: { title: string; value: number }) {
         {isCount
           ? value.toLocaleString()
           : (value / 100).toLocaleString("en-US", {
-            style: "currency",
-            currency: "USD",
-          })}
+              style: "currency",
+              currency: "USD",
+            })}
       </div>
     </div>
   )

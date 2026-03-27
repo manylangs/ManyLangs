@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 import Stripe from "stripe"
+import { db } from "@/lib/firebaseAdmin"
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!)
 
@@ -21,6 +22,7 @@ export async function GET(req: NextRequest) {
     if (email !== process.env.ADMIN_EMAIL) {
       return NextResponse.json({ error: "Forbidden" }, { status: 403 })
     }
+
     const payments = await stripe.paymentIntents.list({
       limit: 100,
       created: createdFilter,
@@ -70,6 +72,47 @@ export async function GET(req: NextRequest) {
       .map(([month, amount]) => ({ month, amount }))
       .sort((a, b) => a.month.localeCompare(b.month))
 
+    // ==============================
+    // 🔥 STEP 3 추가 시작
+    // ==============================
+
+    // 1️⃣ paymentIntentId 매핑
+    const paymentMap: Record<string, any> = {}
+
+    filteredPayments.forEach((p) => {
+      paymentMap[p.id] = {
+        amount: p.amount_received,
+        coupons: [],
+        licenses: [],
+      }
+    })
+
+    // 🔥 Firestore 데이터 가져오기 (추가 필요)
+    // 👉 이미 db 연결돼있다는 전제
+    const couponsSnap = await db.collection("coupons").get()
+    const licensesSnap = await db.collection("licenses").get()
+
+    const coupons = couponsSnap.docs.map(doc => doc.data())
+    const licenses = licensesSnap.docs.map(doc => doc.data())
+
+    // 2️⃣ coupons 연결
+    coupons.forEach((c: any) => {
+      if (c.paymentIntentId && paymentMap[c.paymentIntentId]) {
+        paymentMap[c.paymentIntentId].coupons.push(c)
+      }
+    })
+
+    // 3️⃣ licenses 연결
+    licenses.forEach((l: any) => {
+      if (l.paymentIntentId && paymentMap[l.paymentIntentId]) {
+        paymentMap[l.paymentIntentId].licenses.push(l)
+      }
+    })
+
+    // ==============================
+    // 🔥 STEP 3 추가 끝
+    // ==============================
+
     return NextResponse.json({
       totalRevenue,
       totalRefund,
@@ -80,8 +123,10 @@ export async function GET(req: NextRequest) {
       recentPayments: filteredPayments,
       recentRefunds: filteredRefunds,
 
-      // ✅ 추가됨
       monthlyRevenue,
+
+      // 🔥 추가
+      paymentMap,
     })
   } catch (e) {
     console.error(e)
