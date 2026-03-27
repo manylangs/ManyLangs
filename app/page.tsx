@@ -11,8 +11,12 @@ export default function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [footerOpen, setFooterOpen] = useState<"terms" | "privacy" | "refund" | null>(null);
   // 🔥 추가 (핵심)
-  const { isSignedIn, isLoaded } = useUser();
+  const { isSignedIn, isLoaded, user } = useUser();
   const router = useRouter();
+
+  const isAdmin =
+    user?.primaryEmailAddress?.emailAddress ===
+    process.env.NEXT_PUBLIC_ADMIN_EMAIL;
   // 🔥 PWA install 관련 state
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const [showIOSGuide, setShowIOSGuide] = useState(false);

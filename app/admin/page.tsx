@@ -43,7 +43,12 @@ export default function AdminPage() {
   return (
     <div style={{ padding: 20 }}>
       <h1 style={{ fontSize: 24, marginBottom: 20 }}>Admin Dashboard</h1>
-
+      <button
+        onClick={() => window.location.href = "/select-books"}
+        style={{ marginBottom: 20 }}
+      >
+        ← Back to Library
+      </button>
       {/* 카드 */}
       <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
         <Card title="Total Revenue" value={data.totalRevenue} />
@@ -80,7 +85,7 @@ export default function AdminPage() {
 
       {/* ================= Refunds ================= */}
       <h2 style={{ marginTop: 40 }}>Recent Refunds</h2>
-      
+
       <div>
         {data.recentRefunds
           ?.slice(0, visibleRefunds || 20)

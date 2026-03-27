@@ -8,27 +8,29 @@ export async function GET(req: NextRequest) {
 
   // 기본: 최근 30일
   const now = Math.floor(Date.now() / 1000)
-  const days = Number(searchParams.get("days") || 30)
+  const days = Number(searchParams.get("days") || 365)
 
   const createdFilter = {
     gte: now - days * 24 * 60 * 60,
   }
+
   try {
-    // 🔐 admin 체크 (핵심)
+    // 🔐 admin 체크
     const email = req.headers.get("x-admin-email")
 
     if (email !== process.env.ADMIN_EMAIL) {
       return NextResponse.json({ error: "Forbidden" }, { status: 403 })
     }
-
-    // 💳 결제
     const payments = await stripe.paymentIntents.list({
       limit: 100,
+      created: createdFilter,
     })
-    // 💳 환불
+
     const refunds = await stripe.refunds.list({
       limit: 100,
+      created: createdFilter,
     })
+
     const filteredPayments = payments.data.filter(
       (p) =>
         p.status === "succeeded" &&
@@ -39,7 +41,8 @@ export async function GET(req: NextRequest) {
       (r) =>
         r.currency === "usd"
     )
-    // 📊 계산
+
+    // 📊 총합 계산
     const totalRevenue = filteredPayments.reduce(
       (sum, p) => sum + (p.amount_received || 0),
       0
@@ -50,8 +53,22 @@ export async function GET(req: NextRequest) {
       0
     )
 
-
     const netRevenue = totalRevenue - totalRefund
+
+    // 📊 월별 집계
+    const monthlyMap: Record<string, number> = {}
+
+    filteredPayments.forEach((p) => {
+      const date = new Date(p.created * 1000)
+      const key = `${date.getFullYear()}-${date.getMonth() + 1}`
+
+      if (!monthlyMap[key]) monthlyMap[key] = 0
+      monthlyMap[key] += p.amount_received || 0
+    })
+
+    const monthlyRevenue = Object.entries(monthlyMap)
+      .map(([month, amount]) => ({ month, amount }))
+      .sort((a, b) => a.month.localeCompare(b.month))
 
     return NextResponse.json({
       totalRevenue,
@@ -62,6 +79,9 @@ export async function GET(req: NextRequest) {
 
       recentPayments: filteredPayments,
       recentRefunds: filteredRefunds,
+
+      // ✅ 추가됨
+      monthlyRevenue,
     })
   } catch (e) {
     console.error(e)

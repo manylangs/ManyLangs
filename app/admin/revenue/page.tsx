@@ -1,86 +1,75 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts"
 
-type Report = {
-  totalRevenue: number
-  totalRefund: number
-  netRevenue: number
-  paymentCount: number
-  refundCount: number
+type Monthly = {
+  month: string
+  revenue: number
+  refund: number
+  net: number
 }
 
 export default function RevenuePage() {
-  const [data, setData] = useState<Report | null>(null)
+  const [data, setData] = useState<Monthly[]>([])
+  const [days, setDays] = useState(30)
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("/api/admin/report", {
+      const res = await fetch(`/api/admin/report?days=${days}`, {
         headers: {
           "x-admin-email": process.env.NEXT_PUBLIC_ADMIN_EMAIL!,
         },
       })
 
       const json = await res.json()
-      setData(json)
+      setData(json.monthlyRevenue || [])
     }
 
     fetchData()
-  }, [])
+  }, [days])
 
-  if (!data) return <div style={{ padding: 20 }}>Loading...</div>
+  if (!data.length) return <div style={{ padding: 20 }}>Loading...</div>
 
   return (
     <div style={{ padding: 20 }}>
       <h1 style={{ fontSize: 24, marginBottom: 20 }}>
-        Revenue Overview
+        Revenue Dashboard
       </h1>
-
-      <div style={{ display: "flex", gap: 20 }}>
-        <div>
-          <h3>Total Revenue</h3>
-          <p>${data.totalRevenue.toFixed(2)}</p>
-        </div>
-
-        <div>
-          <h3>Total Refund</h3>
-          <p>${data.totalRefund.toFixed(2)}</p>
-        </div>
-
-        <div>
-          <h3>Net Revenue</h3>
-          <p>${data.netRevenue.toFixed(2)}</p>
-        </div>
+      <button
+        onClick={() => window.location.href = "/select-books"}
+        style={{ marginBottom: 20 }}
+      >
+        ← Back to Library
+      </button>
+      {/* ✅ 날짜 필터 */}
+      <div style={{ marginBottom: 20 }}>
+        <button onClick={() => setDays(7)}>7D</button>{" "}
+        <button onClick={() => setDays(30)}>30D</button>{" "}
+        <button onClick={() => setDays(365)}>1Y</button>
       </div>
 
-      {/* 🔥 간단 그래프 (막대 형태) */}
-      <div style={{ marginTop: 40 }}>
-        <div style={{ display: "flex", gap: 40, alignItems: "flex-end", height: 200 }}>
-          <div style={{
-            width: 60,
-            height: data.totalRevenue,
-            background: "green"
-          }}>
-            Revenue
-          </div>
+      {/* ✅ recharts 그래프 */}
+      <ResponsiveContainer width="100%" height={300}>
+        <BarChart data={data}>
+          <XAxis dataKey="month" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
 
-          <div style={{
-            width: 60,
-            height: data.totalRefund,
-            background: "red"
-          }}>
-            Refund
-          </div>
-
-          <div style={{
-            width: 60,
-            height: data.netRevenue,
-            background: "blue"
-          }}>
-            Net
-          </div>
-        </div>
-      </div>
+          <Bar dataKey="revenue" fill="green" />
+          <Bar dataKey="refund" fill="red" />
+          <Bar dataKey="net" fill="blue" />
+        </BarChart>
+      </ResponsiveContainer>
     </div>
   )
 }
