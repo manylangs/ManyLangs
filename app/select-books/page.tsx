@@ -561,6 +561,7 @@ export default function SelectBooksPage() {
 
       if (!refundRes.ok) {
         alert(refundData?.error || "Refund failed");
+        setRefundPreviewOpen(false); 
         return;
       }
 
@@ -733,11 +734,16 @@ export default function SelectBooksPage() {
     const refundable: CouponItem[][] = [];
 
     for (const group of Object.values(groups)) {
-      // 🔥 START FIX - remove library dependency
-      const anyUsed = group.some(
-        (c) => c.used === true
-      );
-      // 🔥 END FIX
+
+      const anyUsed = group.some((c) => {
+        // 내가 사용한 경우
+        if (c.used === true && c.usedBy === userId) return true;
+
+        // 다른 사람이 사용한 shared coupon도 포함 → 환불 불가
+        if (c.used === true && c.usedBy && c.usedBy !== userId) return true;
+
+        return false;
+      });      // 🔥 END FIX
 
       if (!anyUsed) {
         refundable.push(group);
