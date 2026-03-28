@@ -1,5 +1,3 @@
-// ===== [START] checkout route =====
-
 // app/api/checkout/route.ts
 
 import { NextResponse } from "next/server";
@@ -7,10 +5,6 @@ import Stripe from "stripe";
 import { db } from "@/lib/firebaseAdmin";
 import admin from "firebase-admin";
 import { auth } from "@clerk/nextjs/server";
-
-// ===== [START] import logger =====
-import { logError } from "@/lib/logger";
-// ===== [END] import logger =====
 
 export const runtime = "nodejs";
 
@@ -30,7 +24,6 @@ const PRICE_ID_MAP: Record<Body["amount"], string> = {
   "50": process.env.STRIPE_PRICE_ID_50 as string,
   "100": process.env.STRIPE_PRICE_ID_100 as string,
 };
-
 function getPriceId(amount: Body["amount"]) {
   const priceId = PRICE_ID_MAP[amount];
   if (!priceId) {
@@ -100,11 +93,6 @@ export async function POST(req: Request) {
      3️⃣ Stripe Session 생성
   ======================== */
   try {
-
-    // ===== [START] test error =====
-    throw new Error("test error")
-    // ===== [END] test error =====
-
     const baseUrl = getBaseUrl(req);
 
     const successUrl =
@@ -115,6 +103,8 @@ export async function POST(req: Request) {
     const priceId = getPriceId(amount);
 
     const session = await stripe.checkout.sessions.create({
+      //payment_method_types: ["card"], // 🔥 이 줄 추가 카드승인후 여러 결제수단 추가할 때 (Apple Pay 등)Stripe 자동 설정 쓰고 싶을 때 삭제
+
       mode: "payment",
       customer_creation: "always",
       success_url: successUrl,
@@ -126,12 +116,12 @@ export async function POST(req: Request) {
         amount,
         couponCount:
           amount === "3" ? 2 :
-          amount === "5" ? 4 :
-          amount === "20" ? 20 :
-          amount === "50" ? 60 :
-          amount === "100" ? 150 : 0,
+            amount === "5" ? 4 :
+              amount === "20" ? 20 :
+                amount === "50" ? 60 :
+                  amount === "100" ? 150 : 0,
       },
-
+      /* 🔥 핵심 (payment_intent fallback 대응) */
       payment_intent_data: {
         metadata: {
           userId,
@@ -139,10 +129,10 @@ export async function POST(req: Request) {
           priceId,
           couponCount:
             amount === "3" ? 2 :
-            amount === "5" ? 4 :
-            amount === "20" ? 20 :
-            amount === "50" ? 60 :
-            amount === "100" ? 150 : 0,
+              amount === "5" ? 4 :
+                amount === "20" ? 20 :
+                  amount === "50" ? 60 :
+                    amount === "100" ? 150 : 0,
         },
       },
 
@@ -154,6 +144,9 @@ export async function POST(req: Request) {
       ],
     });
 
+    /* =======================
+       4️⃣ checkoutSessions 기록
+    ======================== */
     await db
       .collection("checkoutSessions")
       .doc(session.id)
@@ -180,19 +173,9 @@ export async function POST(req: Request) {
         ? e.message
         : "checkout failed";
 
-    // ===== [START] checkout log =====
-    await logError({
-      type: "checkout_error",
-      error: msg,
-      userId,
-    });
-    // ===== [END] checkout log =====
-
     return NextResponse.json(
       { error: msg },
       { status: 500 }
     );
   }
 }
-
-// ===== [END] checkout route =====

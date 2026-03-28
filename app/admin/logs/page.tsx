@@ -96,8 +96,6 @@ export default function LogsPage() {
           <button style={{ marginRight: 10 }}>📚← Back to Library</button>
         </Link>
       </div>
-
-        ← Back to Library
       <h1 style={{ fontSize: 24, marginBottom: 20 }}>Error Logs</h1>
 
       {/* ============================== */}
