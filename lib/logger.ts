@@ -1,19 +1,15 @@
 // ===== [START] logger.ts =====
+import { db } from "@/lib/firebaseAdmin"
+
 export async function logError(data: any) {
   try {
-    const baseUrl =
-      process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
-
-    // 🔥 Firestore 저장
-    await fetch(`${baseUrl}/api/log`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
+    // 🔥 Firestore 직접 저장 (핵심 변경)
+    await db.collection("logs").add({
+      ...data,
+      createdAt: Date.now(),
     })
 
-    // 🔥 Slack webhook (서버 전용 env 사용)
+    // 🔥 Slack
     if (process.env.SLACK_WEBHOOK_URL) {
       await fetch(process.env.SLACK_WEBHOOK_URL, {
         method: "POST",
