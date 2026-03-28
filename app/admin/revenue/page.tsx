@@ -1,3 +1,4 @@
+// ===== [START] revenue page =====
 "use client"
 
 import { useEffect, useState } from "react"
@@ -19,37 +20,43 @@ type Monthly = {
 }
 
 export default function RevenuePage() {
-  const [data, setData] = useState<Monthly[]>([])
+  const [data, setData] = useState<Monthly[] | null>(null)
   const [days, setDays] = useState(30)
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(`/api/admin/report?days=${days}`, {
-        headers: {
-          "x-admin-email": process.env.NEXT_PUBLIC_ADMIN_EMAIL!,
-        },
-      })
+      try {
+        const res = await fetch(`/api/admin/report?days=${days}`, {
+          headers: {
+            "x-admin-email": process.env.NEXT_PUBLIC_ADMIN_EMAIL!,
+          },
+        })
 
-      const json = await res.json()
-      setData(json.monthlyRevenue || [])
+        const json = await res.json()
+        setData(json.monthlyRevenue || [])
+      } catch (e) {
+        console.error(e)
+        setData([])
+      }
     }
 
     fetchData()
   }, [days])
 
-  if (!data.length) return <div style={{ padding: 20 }}>Loading...</div>
+  // 🔥 로딩
+  if (!data) return <div style={{ padding: 20 }}>Loading...</div>
+
+  // 🔥 데이터 없음
+  if (data.length === 0) {
+    return <div style={{ padding: 20 }}>No data</div>
+  }
 
   return (
     <div style={{ padding: 20 }}>
       <h1 style={{ fontSize: 24, marginBottom: 20 }}>
         Revenue Dashboard
       </h1>
-      <button
-        onClick={() => window.location.href = "/select-books"}
-        style={{ marginBottom: 20 }}
-      >
-        ← Back to Library
-      </button>
+
       {/* ✅ 날짜 필터 */}
       <div style={{ marginBottom: 20 }}>
         <button onClick={() => setDays(7)}>7D</button>{" "}
@@ -73,3 +80,4 @@ export default function RevenuePage() {
     </div>
   )
 }
+// ===== [END] revenue page =====
