@@ -80,7 +80,7 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
 
   const guideTexts: Record<StudyLang, string[]> = {
     en: [
-      "1. To continue to the next chapter, sign up by clicking Get Started.",
+      "1. To continue to the next chapter, sign up by clicking Unlock Full Access.",
       "2. You can change the study language using the buttons above.",
       "3. You can move to the next set using the <> buttons below the audio.",
       "4. Tap or click a sentence to play only that part.",
@@ -88,7 +88,7 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
       "6. You are currently viewing A1 Chapter 1. You can choose levels A1, A2, B1, B2, C1, C2.",
     ],
     es: [
-      "1. Para continuar al siguiente capítulo, regístrate haciendo clic en Get Started.",
+      "1. Para continuar al siguiente capítulo, regístrate haciendo clic en Unlock Full Access.",
       "2. Puedes cambiar el idioma de estudio usando los botones de arriba.",
       "3. Puedes moverte al siguiente set usando los botones <> debajo del audio.",
       "4. Toca o haz clic en una frase para reproducir solo esa parte.",
@@ -96,7 +96,7 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
       "6. Actualmente estás viendo A1 Chapter 1. Puedes elegir niveles A1, A2, B1, B2, C1, C2.",
     ],
     fr: [
-      "1. Pour continuer au chapitre suivant, inscrivez-vous en cliquant sur Get Started.",
+      "1. Pour continuer au chapitre suivant, inscrivez-vous en cliquant sur Unlock Full Access.",
       "2. Vous pouvez changer la langue d’étude avec les boutons ci-dessus.",
       "3. Vous pouvez passer au set suivant avec les boutons <> sous l’audio.",
       "4. Appuyez ou cliquez sur une phrase pour lire uniquement cette partie.",
@@ -104,7 +104,7 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
       "6. Vous regardez actuellement A1 Chapter 1. Vous pouvez choisir les niveaux A1, A2, B1, B2, C1, C2.",
     ],
     pt: [
-      "1. Para continuar para o próximo capítulo, registre-se clicando em Get Started.",
+      "1. Para continuar para o próximo capítulo, registre-se clicando em Unlock Full Access.",
       "2. Pode mudar o idioma de estudo usando os botões acima.",
       "3. Pode ir para o próximo set usando os botões <> abaixo do áudio.",
       "4. Toque ou clique numa frase para reproduzir apenas essa parte.",

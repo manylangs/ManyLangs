@@ -75,28 +75,28 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
   );
   const guideTexts: Record<StudyLang, string[]> = {
     en: [
-      "1. To continue to the next chapter, sign up by clicking Get Started.",
+      "1. To continue to the next chapter, sign up by clicking Unlock Full Access.",
       "2. You can change the study language using the buttons above.",
       "3. Press Toggle Target to hide the target language and practice translating.",
       "4. You are currently viewing A1 Chapter 1. You can choose levels A1, A2, B1, B2, C1, C2.",
       "5. Tap or click a sentence to play only that part.",
     ],
     es: [
-      "1. Para continuar al siguiente capítulo, regístrate haciendo clic en Get Started.",
+      "1. Para continuar al siguiente capítulo, regístrate haciendo clic en Unlock Full Access.",
       "2. Puedes cambiar el idioma de estudio usando los botones de arriba.",
       "3. Presiona Toggle Target para ocultar el idioma objetivo y practicar la traducción.",
       "4. Actualmente estás viendo A1 Capítulo 1. Puedes elegir los niveles A1, A2, B1, B2, C1, C2.",
       "5. Toca o haz clic en una frase para reproducir solo esa parte.",
     ],
     fr: [
-      "1. Pour continuer au chapitre suivant, inscrivez-vous en cliquant sur Get Started.",
+      "1. Pour continuer au chapitre suivant, inscrivez-vous en cliquant sur Unlock Full Access.",
       "2. Vous pouvez changer la langue d'étude en utilisant les boutons ci-dessus.",
       "3. Appuyez sur Toggle Target pour cacher la langue cible et pratiquer la traduction.",
       "4. Vous regardez actuellement A1 Chapitre 1. Vous pouvez choisir les niveaux A1, A2, B1, B2, C1, C2.",
       "5. Appuyez ou cliquez sur une phrase pour lire uniquement cette partie.",
     ],
     pt: [
-      "1. Para continuar para o próximo capítulo, registre-se clicando em Get Started.",
+      "1. Para continuar para o próximo capítulo, registre-se clicando em Unlock Full Access.",
       "2. Você pode mudar o idioma de estudo usando os botões acima.",
       "3. Pressione Toggle Target para ocultar o idioma alvo e praticar a tradução.",
       "4. Você está atualmente visualizando A1 Capítulo 1. Você pode escolher os níveis A1, A2, B1, B2, C1, C2.",
