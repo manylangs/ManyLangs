@@ -96,7 +96,18 @@ export default function LandingPage() {
       window.scrollTo({ top: y, behavior: "smooth" });
     }, 80);
   };
-  // 🔥 ===== [END] scrollToSection =====
+  useEffect(() => {
+    const handlePopState = () => {
+      // 무조건 다시 현재 페이지로 이동
+      window.location.replace(window.location.href)
+    }
+
+    window.addEventListener("popstate", handlePopState)
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState)
+    }
+  }, [])
   return (
     <main style={mainStyle}>
       {/* 이하 기존 코드 그대로 유지 */}

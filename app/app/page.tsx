@@ -1,3 +1,4 @@
+//로그인 페이지
 "use client";
 
 import Link from "next/link";
@@ -64,17 +65,17 @@ export default function HomePage() {
               flexWrap: "wrap",
             }}
           >
-            <Link href="/select-books">
+            <a href="/select-books">
               <button style={btnPrimary}>Go to Library</button>
-            </Link>
+            </a>
 
-            <Link href="/logout">
+            <a href="/logout">
               <button style={btnSecondary}>Logout</button>
-            </Link>
+            </a>
 
-            <Link href="/delete-account">
+            <a href="/delete-account">
               <button style={btnDangerOutline}>Delete account</button>
-            </Link>
+            </a>
           </div>
         ) : (
           <div
@@ -84,13 +85,13 @@ export default function HomePage() {
               justifyContent: "center",
             }}
           >
-            <Link href="/login">
+            <a href="/login">
               <button style={btnPrimary}>Log in</button>
-            </Link>
+            </a>
 
-            <Link href="/signup">
+            <a href="/signup">
               <button style={btnSecondary}>Sign up</button>
-            </Link>
+            </a>
           </div>
         )}
 
@@ -103,12 +104,6 @@ export default function HomePage() {
             color: "#666",
           }}
         >
-          <p style={{ margin: 0 }}>
-            Explore the features of ManyLangs on our website.
-            <br />
-            Try a free lesson.
-          </p>
-
           <a
             href="https://www.manylangs.studio"
             target="_blank"
@@ -121,7 +116,8 @@ export default function HomePage() {
               fontWeight: 600,
             }}
           >
-            Go to website →
+            Explore ManyLangs & Try a free lesson. →
+            
           </a>
 
           <p
@@ -132,7 +128,7 @@ export default function HomePage() {
             }}
           >
             If you are currently logged in,<br />
-            please log out before visiting the website.
+            please log out before visiting ManyLangs Home.
           </p>
         </div>
       </section>
