@@ -49,7 +49,7 @@ const SERIES_CONFIG: Record<string, { label: string; hasLevel: boolean }> = {
   grammar: { label: "Grammar", hasLevel: true },
   conversation: { label: "Conversation", hasLevel: true },
   real: { label: "Real", hasLevel: true },
-  voca: { label: "Vocabulary", hasLevel: false },   // ✅ 단권
+  voca: { label: "Vocabulary", hasLevel: true },
   idiom: { label: "Idiom", hasLevel: false },       // ✅ 단권
 };
 
@@ -696,7 +696,7 @@ export default function SelectBooksPage() {
     let levelPath = `/${item.level}`;
 
     if (item.level === "all") {
-      if (item.series === "voca" || item.series === "idiom") {
+      if (item.series === "idiom") {
         levelPath = "/a1";
       } else {
         levelPath = "";
@@ -1125,7 +1125,8 @@ export default function SelectBooksPage() {
                 {/* 설명 */}
                 <div className="flex items-center justify-center h-full text-center">
                   <p className="text-xs text-gray-500 leading-relaxed">
-                    Coupons can be shared with others.
+                    1 coupon = 30-day access
+                    <br />Coupons can be shared with others.
                     <br /> However, ManyLangs cannot individually track
                     <br />whether a shared coupon has been used.
                   </p>

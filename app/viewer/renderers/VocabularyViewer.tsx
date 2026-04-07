@@ -206,23 +206,6 @@ export default function VocabularyViewer({
             chapter={chapter}
           />
 
-          {/* Level navigation */}
-
-          <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
-            {LEVELS.map((lv) => (
-              <Link
-                key={lv}
-                href={`/viewer/${targetLang}/voca/${lv}/001`}
-                style={{
-                  ...buttonStyle(lv === level),
-                  textDecoration: "none",
-                }}
-              >
-                {lv.toUpperCase()}
-              </Link>
-            ))}
-          </div>
-
           {/* Prev Next */}
 
           <div

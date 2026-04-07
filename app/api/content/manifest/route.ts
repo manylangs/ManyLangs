@@ -75,7 +75,7 @@ export async function GET(req: Request) {
     if (mode !== "demo") {
       let itemId: string;
 
-      if (series === "voca" || series === "idiom") {
+      if (series === "idiom") {
         itemId = `${lang}_${series}_all`;
       } else {
         itemId = `${lang}_${series}_${level}`;

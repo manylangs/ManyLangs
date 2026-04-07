@@ -130,7 +130,7 @@ export async function GET(req: Request) {
     /* 🔒 라이선스 검증 */
     let itemId: string;
 
-    if (series === "voca" || series === "idiom") {
+    if (series === "idiom") {
       itemId = `${lang}_${series}_all`;
     } else {
       itemId = `${lang}_${series}_${level}`;

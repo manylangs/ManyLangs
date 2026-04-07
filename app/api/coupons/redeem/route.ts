@@ -47,7 +47,7 @@ export async function POST(req: Request) {
   const couponCode = String(code).trim().toUpperCase();
 
   const finalLevel =
-    series === "voca" || series === "idiom"
+    series === "idiom"
       ? "all"
       : String(level).trim();
 
@@ -97,16 +97,16 @@ export async function POST(req: Request) {
         }
       }
 
-       const lic: License = {
-         lang: wantLang,
-         series: wantSeries,
-         level: finalLevel,
-         expiresAt: now + 1000 * 60 * 60 * 24 * 30,
-         source: "coupon",
-         code: couponCode,
-         issuedAt: now,
-       };
-  
+      const lic: License = {
+        lang: wantLang,
+        series: wantSeries,
+        level: finalLevel,
+        expiresAt: now + 1000 * 60 * 60 * 24 * 30,
+        source: "coupon",
+        code: couponCode,
+        issuedAt: now,
+      };
+
       tx.set(
         licRef,
         {
