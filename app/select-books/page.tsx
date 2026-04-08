@@ -57,7 +57,7 @@ const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
 const COUPON_PAGE_SIZE = 10;
 
-const isAndroid = typeof window !== "undefined" && !!(window as any).AndroidBridge;
+
 
 const PAYMENT_OPTIONS: Array<{
   amount: Amount;
@@ -181,6 +181,7 @@ export default function SelectBooksPage() {
   const { signOut } = useClerk();
   const { user, isSignedIn, isLoaded: isUserLoaded } = useUser();
 
+  const [isAndroid, setIsAndroid] = useState(false);
   const [library, setLibrary] = useState<LibraryItem[]>([]);
   const [couponBox, setCouponBox] = useState<CouponItem[]>([]);
   const [couponPage, setCouponPage] = useState(1);
@@ -198,6 +199,10 @@ export default function SelectBooksPage() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [refundPreviewGroups, setRefundPreviewGroups] = useState<any[]>([]);
+  useEffect(() => {
+    setIsAndroid(!!(window as any).AndroidBridge);
+  }, []);
+
   /** ✅ (NEW) 계정 변경/로그아웃 시 localStorage 캐시 초기화 */
   useEffect(() => {
     if (!isLoaded) return;
