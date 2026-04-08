@@ -188,10 +188,7 @@ export default function SelectBooksPage() {
   const [couponBox, setCouponBox] = useState<CouponItem[]>([]);
   const [couponPage, setCouponPage] = useState(1);
   const [libraryPage, setLibraryPage] = useState(1);
-  const [targetLang, setTargetLang] = useState(() => {
-    if (typeof window === "undefined") return "kr";
-    return localStorage.getItem("ml_target_lang") || "kr";
-  });
+  const [targetLang, setTargetLang] = useState("kr");
   const [book, setBook] = useState("");
   const [level, setLevel] = useState("");
   const [coupon, setCoupon] = useState("");
