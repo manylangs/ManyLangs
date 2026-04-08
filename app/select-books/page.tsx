@@ -200,6 +200,8 @@ export default function SelectBooksPage() {
   const [refundPreviewGroups, setRefundPreviewGroups] = useState<any[]>([]);
   useEffect(() => {
     setIsAndroid(!!(window as any).AndroidBridge);
+    const savedLang = localStorage.getItem("ml_target_lang");
+    if (savedLang) setTargetLang(savedLang);
     setMounted(true);
   }, []);
 
