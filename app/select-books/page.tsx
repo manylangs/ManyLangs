@@ -177,7 +177,6 @@ export default function SelectBooksPage() {
         { amount: "50" as Amount, label: "$50", coupons: 60, desc: "60 coupons" },
         { amount: "100" as Amount, label: "$100", coupons: 150, desc: "150 coupons" },
       ], [isAndroid]);
-      ];
   const [library, setLibrary] = useState<LibraryItem[]>([]);
   const [couponBox, setCouponBox] = useState<CouponItem[]>([]);
   const [couponPage, setCouponPage] = useState(1);
