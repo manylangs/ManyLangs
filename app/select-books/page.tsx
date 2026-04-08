@@ -870,7 +870,7 @@ export default function SelectBooksPage() {
   const pageCoupons = sortedCoupons.slice(couponStart, couponStart + COUPON_PAGE_SIZE);
 
   return (
-    <main className="px-4 py-8">
+    <main className="px-4 py-8" suppressHydrationWarning>
       <main className="px-4 py-8">
         {/* 🔥 START - header with admin */}
         {isUserLoaded && isSignedIn && (
