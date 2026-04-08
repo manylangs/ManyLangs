@@ -57,19 +57,25 @@ const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
 const COUPON_PAGE_SIZE = 10;
 
+const isAndroid = typeof window !== "undefined" && !!(window as any).AndroidBridge;
+
 const PAYMENT_OPTIONS: Array<{
   amount: Amount;
   label: string;
   coupons: number;
   desc: string;
-}> = [
-    { amount: "3", label: "$3", coupons: 2, desc: "2 coupons" },
-    { amount: "5", label: "$5", coupons: 4, desc: "4 coupons" },
-    { amount: "20", label: "$20", coupons: 20, desc: "20 coupons" },
-    { amount: "50", label: "$50", coupons: 60, desc: "60 coupons" },
-    { amount: "100", label: "$100", coupons: 150, desc: "150 coupons" },
-  ];
-
+}> = isAndroid
+    ? [
+      { amount: "3", label: "$3", coupons: 2, desc: "2 coupons" },
+      { amount: "5", label: "$5", coupons: 4, desc: "4 coupons" },
+    ]
+    : [
+      { amount: "3", label: "$3", coupons: 2, desc: "2 coupons" },
+      { amount: "5", label: "$5", coupons: 4, desc: "4 coupons" },
+      { amount: "20", label: "$20", coupons: 20, desc: "20 coupons" },
+      { amount: "50", label: "$50", coupons: 60, desc: "60 coupons" },
+      { amount: "100", label: "$100", coupons: 150, desc: "150 coupons" },
+    ];
 /* ================= utils ================= */
 async function safeJson(res: Response) {
   try {
@@ -473,18 +479,25 @@ export default function SelectBooksPage() {
   // ✅ 여기만 변경: startPayment에 try/catch + json safe + 로딩가드
   async function startPayment() {
     if (loading) return;
-
     setLoading(true);
     setError("");
 
     try {
+      // ✅ Android WebView 감지 → IAP 브릿지 호출 (Stripe 안 탐)
+      if (typeof window !== "undefined" && (window as any).AndroidBridge) {
+        (window as any).AndroidBridge.purchase(payAmount);
+        setLoading(false);
+        return;
+      }
+
+      // ✅ 일반 브라우저 → 기존 Stripe 그대로
       const res = await fetch("/api/checkout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          amount: payAmount, // 🔥 userId 제거
+          amount: payAmount,
         }),
       });
 
@@ -507,6 +520,46 @@ export default function SelectBooksPage() {
       setLoading(false);
     }
   }
+
+  // ✅ Android IAP 결제 완료 콜백 (앱에서 호출됨)
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    (window as any).onIAPSuccess = async (purchaseToken: string, amount: string) => {
+      setLoading(true);
+      setError("");
+      try {
+        const res = await fetch("/api/iap/verify", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ purchaseToken, amount }),
+        });
+        const data = await safeJson(res);
+        if (!res.ok) {
+          setError(data?.error || "IAP verification failed.");
+          return;
+        }
+        // ✅ 쿠폰 목록 서버에서 새로고침
+        const couponRes = await fetch("/api/coupons/list", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId }),
+        });
+        const couponData = await safeJson(couponRes);
+        if (couponRes.ok && Array.isArray(couponData?.coupons)) {
+          setCouponBox(couponData.coupons);
+        }
+      } catch {
+        setError("Network error.");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    return () => {
+      delete (window as any).onIAPSuccess;
+    };
+  }, [userId]);
 
   async function requestRefund() {
     if (!confirm("Refund all eligible purchases?")) return;
