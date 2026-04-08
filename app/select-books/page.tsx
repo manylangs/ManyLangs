@@ -2,7 +2,7 @@
 "use client";
 
 import { LANGUAGES } from "@/app/config/languages";
-import { useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import { useAuth, useClerk, useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { Button } from "../../components/ui/button";
@@ -57,8 +57,25 @@ const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
 const COUPON_PAGE_SIZE = 10;
 
+const isAndroid = typeof window !== "undefined" && !!(window as any).AndroidBridge;
 
-
+const PAYMENT_OPTIONS: Array<{
+  amount: Amount;
+  label: string;
+  coupons: number;
+  desc: string;
+}> = isAndroid
+    ? [
+      { amount: "3", label: "$3", coupons: 2, desc: "2 coupons" },
+      { amount: "5", label: "$5", coupons: 4, desc: "4 coupons" },
+    ]
+    : [
+      { amount: "3", label: "$3", coupons: 2, desc: "2 coupons" },
+      { amount: "5", label: "$5", coupons: 4, desc: "4 coupons" },
+      { amount: "20", label: "$20", coupons: 20, desc: "20 coupons" },
+      { amount: "50", label: "$50", coupons: 60, desc: "60 coupons" },
+      { amount: "100", label: "$100", coupons: 150, desc: "150 coupons" },
+    ];
 /* ================= utils ================= */
 async function safeJson(res: Response) {
   try {
@@ -164,31 +181,14 @@ export default function SelectBooksPage() {
   const { signOut } = useClerk();
   const { user, isSignedIn, isLoaded: isUserLoaded } = useUser();
 
-  const [isAndroid, setIsAndroid] = useState(false);
-  const [mounted, setMounted] = useState(false);
-  const PAYMENT_OPTIONS = !mounted
-    ? [
-      { amount: "3" as Amount, label: "$3", coupons: 2, desc: "2 coupons" },
-      { amount: "5" as Amount, label: "$5", coupons: 4, desc: "4 coupons" },
-    ]
-    : isAndroid
-      ? [
-        { amount: "3" as Amount, label: "$3", coupons: 2, desc: "2 coupons" },
-        { amount: "5" as Amount, label: "$5", coupons: 4, desc: "4 coupons" },
-      ]
-      : [
-        { amount: "3" as Amount, label: "$3", coupons: 2, desc: "2 coupons" },
-        { amount: "5" as Amount, label: "$5", coupons: 4, desc: "4 coupons" },
-        { amount: "20" as Amount, label: "$20", coupons: 20, desc: "20 coupons" },
-        { amount: "50" as Amount, label: "$50", coupons: 60, desc: "60 coupons" },
-        { amount: "100" as Amount, label: "$100", coupons: 150, desc: "150 coupons" },
-      ];
-
   const [library, setLibrary] = useState<LibraryItem[]>([]);
   const [couponBox, setCouponBox] = useState<CouponItem[]>([]);
   const [couponPage, setCouponPage] = useState(1);
   const [libraryPage, setLibraryPage] = useState(1);
-  const [targetLang, setTargetLang] = useState("kr");
+  const [targetLang, setTargetLang] = useState(() => {
+    if (typeof window === "undefined") return "kr";
+    return localStorage.getItem("ml_target_lang") || "kr";
+  });
   const [book, setBook] = useState("");
   const [level, setLevel] = useState("");
   const [coupon, setCoupon] = useState("");
@@ -198,13 +198,6 @@ export default function SelectBooksPage() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [refundPreviewGroups, setRefundPreviewGroups] = useState<any[]>([]);
-  useEffect(() => {
-    setIsAndroid(!!(window as any).AndroidBridge);
-    const savedLang = localStorage.getItem("ml_target_lang");
-    if (savedLang) setTargetLang(savedLang);
-    setMounted(true);
-  }, []);
-
   /** ✅ (NEW) 계정 변경/로그아웃 시 localStorage 캐시 초기화 */
   useEffect(() => {
     if (!isLoaded) return;
@@ -870,7 +863,7 @@ export default function SelectBooksPage() {
   const pageCoupons = sortedCoupons.slice(couponStart, couponStart + COUPON_PAGE_SIZE);
 
   return (
-    <main className="px-4 py-8" suppressHydrationWarning>
+    <main className="px-4 py-8">
       <main className="px-4 py-8">
         {/* 🔥 START - header with admin */}
         {isUserLoaded && isSignedIn && (
@@ -1318,3 +1311,8 @@ export default function SelectBooksPage() {
     </main>
   );
 }
+
+
+
+
+
