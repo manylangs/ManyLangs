@@ -2,7 +2,7 @@
 "use client";
 
 import { LANGUAGES } from "@/app/config/languages";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { useAuth, useClerk, useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { Button } from "../../components/ui/button";
@@ -165,7 +165,7 @@ export default function SelectBooksPage() {
   const { user, isSignedIn, isLoaded: isUserLoaded } = useUser();
 
   const [isAndroid, setIsAndroid] = useState(false);
-  const PAYMENT_OPTIONS = isAndroid
+  const PAYMENT_OPTIONS = useMemo(() => isAndroid
     ? [
         { amount: "3" as Amount, label: "$3", coupons: 2, desc: "2 coupons" },
         { amount: "5" as Amount, label: "$5", coupons: 4, desc: "4 coupons" },
@@ -176,6 +176,7 @@ export default function SelectBooksPage() {
         { amount: "20" as Amount, label: "$20", coupons: 20, desc: "20 coupons" },
         { amount: "50" as Amount, label: "$50", coupons: 60, desc: "60 coupons" },
         { amount: "100" as Amount, label: "$100", coupons: 150, desc: "150 coupons" },
+      ], [isAndroid]);
       ];
   const [library, setLibrary] = useState<LibraryItem[]>([]);
   const [couponBox, setCouponBox] = useState<CouponItem[]>([]);
