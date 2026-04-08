@@ -2,7 +2,7 @@
 "use client";
 
 import { LANGUAGES } from "@/app/config/languages";
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState} from "react";
 import { useAuth, useClerk, useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { Button } from "../../components/ui/button";
@@ -166,18 +166,24 @@ export default function SelectBooksPage() {
 
   const [isAndroid, setIsAndroid] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const PAYMENT_OPTIONS = !mounted ? [] : (isAndroid
+  const PAYMENT_OPTIONS = !mounted
     ? [
+      { amount: "3" as Amount, label: "$3", coupons: 2, desc: "2 coupons" },
+      { amount: "5" as Amount, label: "$5", coupons: 4, desc: "4 coupons" },
+    ]
+    : isAndroid
+      ? [
         { amount: "3" as Amount, label: "$3", coupons: 2, desc: "2 coupons" },
         { amount: "5" as Amount, label: "$5", coupons: 4, desc: "4 coupons" },
       ]
-    : [
+      : [
         { amount: "3" as Amount, label: "$3", coupons: 2, desc: "2 coupons" },
         { amount: "5" as Amount, label: "$5", coupons: 4, desc: "4 coupons" },
         { amount: "20" as Amount, label: "$20", coupons: 20, desc: "20 coupons" },
         { amount: "50" as Amount, label: "$50", coupons: 60, desc: "60 coupons" },
         { amount: "100" as Amount, label: "$100", coupons: 150, desc: "150 coupons" },
-      ]);
+      ];
+
   const [library, setLibrary] = useState<LibraryItem[]>([]);
   const [couponBox, setCouponBox] = useState<CouponItem[]>([]);
   const [couponPage, setCouponPage] = useState(1);
@@ -1313,8 +1319,3 @@ export default function SelectBooksPage() {
     </main>
   );
 }
-
-
-
-
-
