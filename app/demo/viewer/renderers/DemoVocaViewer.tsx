@@ -1,5 +1,6 @@
 "use client";
 
+import { speakText } from "@/utils/tts";
 import { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
@@ -117,34 +118,11 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
     [targetLang]
   );
 
-  const speak = (text: string, key: string) => {
-    if (!text.trim()) return;
-    if (typeof window === "undefined") return;
-
-    const synth = window.speechSynthesis;
-    synth.cancel();
-
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = ttsLang;
-
-    u.onstart = () => setPlayingKey(key);
-    u.onend = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-    u.onerror = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-
-    utterRef.current = u;
-    synth.speak(u);
-  };
 
   /* 🔥 필수 */
   useEffect(() => {
     if (typeof window === "undefined") return;
-    window.speechSynthesis.cancel();
+
     utterRef.current = null;
     setPlayingKey(null);
   }, [targetLang, chapter]);
@@ -340,7 +318,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
               <div style={{ marginBottom: 12 }}>
                 {showTargetText && (
                   <div
-                    onClick={() => speak(word, `word-${idx}`)}
+                    onClick={() => speakText(word)}
                     style={{
                       ...sentenceStyle,
                       fontWeight: 700,
@@ -364,7 +342,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
                   <div key={i} style={{ marginBottom: 14 }}>
                     {showTargetText && (
                       <div
-                        onClick={() => speak(t, `voca-${idx}-${i}`)}
+                        onClick={() => speakText(t)}
                         style={{
                           ...sentenceStyle,
                           cursor: "pointer",
