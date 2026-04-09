@@ -10,8 +10,12 @@ export default function Providers({
   children: React.ReactNode;
 }) {
 
+  const clerkKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
+
   useEffect(() => {
     if (typeof window === "undefined") return;
+
+    console.log("CLERK KEY:", clerkKey);
 
     const w = window as any;
 
@@ -61,10 +65,15 @@ export default function Providers({
       };
     }
 
-  }, []);
+  }, [clerkKey]);
+
+  // 🔥 key 없으면 바로 에러 로그
+  if (!clerkKey) {
+    console.error("❌ Clerk publishable key is missing!");
+  }
 
   return (
-    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
+    <ClerkProvider publishableKey={clerkKey!}>
       <ViewerTargetProvider>
         {children}
       </ViewerTargetProvider>
