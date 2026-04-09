@@ -64,7 +64,7 @@ export default function Providers({
   }, []);
 
   return (
-    <ClerkProvider>
+    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
       <ViewerTargetProvider>
         {children}
       </ViewerTargetProvider>
