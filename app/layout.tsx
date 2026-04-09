@@ -1,5 +1,8 @@
-import "./globals.css"; 
+'use client'
+
+import "./globals.css";
 import { ReactNode } from "react";
+import { ClerkProvider } from "@clerk/nextjs";
 import Providers from "./providers";
 
 export default function RootLayout({
@@ -7,10 +10,19 @@ export default function RootLayout({
 }: {
   children: ReactNode;
 }) {
+
   return (
     <html lang="en">
       <body>
-        <Providers>{children}</Providers>
+        <ClerkProvider
+          publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}
+          signInForceRedirectUrl="/select-books"
+          signUpForceRedirectUrl="/select-books"
+        >
+          <Providers>
+            {children}
+          </Providers>
+        </ClerkProvider>
       </body>
     </html>
   );
