@@ -74,7 +74,7 @@ export default function Providers({
 
   return (
     <ClerkProvider
-      publishableKey={clerkKey!}
+      publishableKey="pk_live_Y2xlcmsubWFueWxhbmdzLnN0dWRpbyQ"
       appearance={{}}
       signInForceRedirectUrl="/select-books"
       signUpForceRedirectUrl="/select-books"
