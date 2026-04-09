@@ -22,9 +22,9 @@ export default function Providers({
     if (!w.ResizeObserver) {
       w.ResizeObserver = function () {
         return {
-          observe() {},
-          unobserve() {},
-          disconnect() {},
+          observe() { },
+          unobserve() { },
+          disconnect() { },
         };
       };
     }
@@ -32,9 +32,9 @@ export default function Providers({
     if (!w.IntersectionObserver) {
       w.IntersectionObserver = function () {
         return {
-          observe() {},
-          unobserve() {},
-          disconnect() {},
+          observe() { },
+          unobserve() { },
+          disconnect() { },
         };
       };
     }
@@ -44,18 +44,18 @@ export default function Providers({
         matches: false,
         media: "",
         onchange: null,
-        addListener: () => {},
-        removeListener: () => {},
-        addEventListener: () => {},
-        removeEventListener: () => {},
+        addListener: () => { },
+        removeListener: () => { },
+        addEventListener: () => { },
+        removeEventListener: () => { },
         dispatchEvent: () => false,
       });
     }
 
     if (!w.navigation) {
       w.navigation = {
-        addEventListener() {},
-        removeEventListener() {},
+        addEventListener() { },
+        removeEventListener() { },
       };
     }
 
@@ -73,7 +73,12 @@ export default function Providers({
   }
 
   return (
-    <ClerkProvider publishableKey={clerkKey!}>
+    <ClerkProvider
+      publishableKey={clerkKey!}
+      appearance={{}}
+      signInForceRedirectUrl="/select-books"
+      signUpForceRedirectUrl="/select-books"
+    >
       <ViewerTargetProvider>
         {children}
       </ViewerTargetProvider>
