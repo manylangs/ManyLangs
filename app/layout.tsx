@@ -1,3 +1,5 @@
+import "./globals.css"; // ✅ 이거 추가
+
 import { ClerkProvider } from "@clerk/nextjs";
 import { ViewerTargetProvider } from "@/app/viewer/context/ViewerTargetContext";
 
