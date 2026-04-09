@@ -219,10 +219,10 @@ export default function SelectBooksPage() {
   /** 1) 초기 로드 + checkout success 처리 + 서버 coupon sync */
   useEffect(() => {
     if (!isLoaded) return;
-    if (!userId) {
-      router.replace("/login");
-      return;
-    }
+    // if (!userId) {
+    //   router.replace("/login");
+    //   return;
+    // }
 
     (async () => {
       // ✅ (A) Firestore 기준 라이브러리 로드 + aliveLib 확보
@@ -414,8 +414,13 @@ export default function SelectBooksPage() {
     return () => { delete (window as any).onIAPSuccess; };
   }, [userId]);
   // ✅ Hook 끝난 뒤에만 early return
-  if (!isLoaded) return null;
-  if (!userId) return null;
+  if (!isLoaded || !isUserLoaded) {
+    return <div style={{ padding: 20 }}>Loading...</div>;
+  }
+
+  if (!isSignedIn) {
+    return <div style={{ padding: 20 }}>Redirecting...</div>;
+  }
 
   async function activateCoupon() {
     if (loading) return;
