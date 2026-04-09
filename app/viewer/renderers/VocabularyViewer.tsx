@@ -1,10 +1,11 @@
-"use client"; 
+"use client";
 
 import { useState, useEffect, useMemo, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import VocaAudioController from "@/components/audio/controllers/VocaAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
+import { speakText } from "@/utils/tts";
 
 type StudyLang = "en" | "es" | "fr" | "pt";
 
@@ -53,7 +54,8 @@ export default function VocabularyViewer({
 }: any) {
 
 
-  const { targetLang, showTargetText } = useViewerTarget();
+  const { targetLang, setTargetLang, showTargetText } = useViewerTarget();
+  const router = useRouter();
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
 
   const [blocks, setBlocks] = useState<VocaBlock[]>([]);
@@ -75,29 +77,6 @@ export default function VocabularyViewer({
     utterRef.current = null;
     setPlayingKey(null);
   }, [targetLang, chapter]);
-
-  const speak = (text: string, key: string) => {
-    if (!text.trim()) return;
-
-    const synth = window.speechSynthesis;
-    synth.cancel();
-
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = ttsLang;
-
-    u.onstart = () => setPlayingKey(key);
-    u.onend = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-    u.onerror = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-
-    utterRef.current = u;
-    synth.speak(u);
-  };
 
   useEffect(() => {
 
@@ -199,7 +178,29 @@ export default function VocabularyViewer({
 
       {status === "ready" && (
         <>
-
+          {/* 🌍 Language Selector */}
+          <div style={{ marginBottom: 12 }}>
+            <select
+              value={targetLang}
+              onChange={(e) => {
+                const newLang = e.target.value;
+                setTargetLang(newLang);
+                router.push(`/viewer/${newLang}/voca/${level}/${chapter}`);
+              }}
+              style={{
+                padding: "8px 12px",
+                borderRadius: 8,
+                border: "1px solid #ddd",
+                width: "100%",
+              }}
+            >
+              <option value="kr">Korean</option>
+              <option value="en">English</option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+              <option value="pt">Portuguese</option>
+            </select>
+          </div>
           <VocaAudioController
             lang={targetLang}
             level={level}
@@ -281,10 +282,7 @@ export default function VocabularyViewer({
               {showTargetText && (
                 <div
                   onClick={() =>
-                    speak(
-                      block.word?.target ?? "",
-                      `word-${idx}`
-                    )
+                    speakText(block.word?.target ?? "", targetLang)
                   }
                   style={{
                     ...targetStyle,
@@ -310,10 +308,7 @@ export default function VocabularyViewer({
                     {showTargetText && (
                       <div
                         onClick={() =>
-                          speak(
-                            ex?.target ?? "",
-                            `voca-${idx}-${i}`
-                          )
+                          speakText(ex?.target ?? "", targetLang)
                         }
                         style={{
                           ...targetStyle,
