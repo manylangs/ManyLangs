@@ -1,29 +1,26 @@
-'use client'
-
-import "./globals.css";
-import { ReactNode } from "react";
 import { ClerkProvider } from "@clerk/nextjs";
-import Providers from "./providers";
+import { ViewerTargetProvider } from "@/app/viewer/context/ViewerTargetContext";
 
 export default function RootLayout({
   children,
 }: {
-  children: ReactNode;
+  children: React.ReactNode;
 }) {
+  const clerkKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
   return (
-    <html lang="en">
-      <body>
-        <ClerkProvider
-          publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}
-          signInForceRedirectUrl="/select-books"
-          signUpForceRedirectUrl="/select-books"
-        >
-          <Providers>
+    <ClerkProvider
+      publishableKey={clerkKey!}
+      signInForceRedirectUrl="/select-books"
+      signUpForceRedirectUrl="/select-books"
+    >
+      <html lang="en">
+        <body>
+          <ViewerTargetProvider>
             {children}
-          </Providers>
-        </ClerkProvider>
-      </body>
-    </html>
+          </ViewerTargetProvider>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
