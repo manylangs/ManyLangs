@@ -388,6 +388,31 @@ export default function SelectBooksPage() {
       }
     })();
   }, [isLoaded, userId]);
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    (window as any).onIAPSuccess = async (purchaseToken: string, amount: string) => {
+      setLoading(true);
+      setError("");
+      try {
+        const res = await fetch("/api/iap/verify", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ purchaseToken, amount, userId }),
+        });
+        const data = await safeJson(res);
+        if (!res.ok) { setError(data?.error || "IAP verification failed."); return; }
+        const couponRes = await fetch("/api/coupons/list", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId }),
+        });
+        const couponData = await safeJson(couponRes);
+        if (couponRes.ok && Array.isArray(couponData?.coupons)) setCouponBox(couponData.coupons);
+      } catch { setError("Network error."); }
+      finally { setLoading(false); }
+    };
+    return () => { delete (window as any).onIAPSuccess; };
+  }, [userId]);
   // ✅ Hook 끝난 뒤에만 early return
   if (!isLoaded) return null;
   if (!userId) return null;
@@ -472,6 +497,12 @@ export default function SelectBooksPage() {
 
   // ✅ 여기만 변경: startPayment에 try/catch + json safe + 로딩가드
   async function startPayment() {
+    // Android IAP
+    if (typeof window !== "undefined" && (window as any).AndroidBridge) {
+      (window as any).AndroidBridge.purchase(payAmount);
+      setLoading(false);
+      return;
+    }
     if (loading) return;
 
     setLoading(true);
