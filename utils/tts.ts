@@ -2,34 +2,43 @@ export const speakText = (text: string, lang: string) => {
   if (!text) return;
   if (typeof window === "undefined") return;
 
-  // Android
+  const map: Record<string, string> = {
+    kr: "ko-KR",
+    ko: "ko-KR",
+    en: "en-US",
+    es: "es-ES",
+    fr: "fr-FR",
+    pt: "pt-PT",
+  };
+
+  const mappedLang = map[lang] || "en-US";
+
+  console.log("speakText called:", text, lang, "→", mappedLang);
+  console.log("AndroidBridge:", (window as any).AndroidBridge);
+
+  // ✅ Android
   if ((window as any).AndroidBridge?.speak) {
-    (window as any).AndroidBridge.speak(text, lang);
+    (window as any).AndroidBridge.speak(text, mappedLang);
     return;
   }
 
-  // iOS
+  // ✅ iOS
   if ((window as any).webkit?.messageHandlers?.speak) {
-    (window as any).webkit.messageHandlers.speak.postMessage({ text, lang });
+    (window as any).webkit.messageHandlers.speak.postMessage({
+      text,
+      lang: mappedLang,
+    });
     return;
   }
 
-  // Web
-  if (window.speechSynthesis) {
+  // ✅ Web (fallback) 🔥 수정됨
+  const synth = window.speechSynthesis;
+
+  if (synth) {
     const u = new SpeechSynthesisUtterance(text);
+    u.lang = mappedLang;
 
-    const map: any = {
-      kr: "ko-KR",
-      ko: "ko-KR",
-      en: "en-US",
-      es: "es-ES",
-      fr: "fr-FR",
-      pt: "pt-PT",
-    };
-
-    u.lang = map[lang] || "en-US";
-
-    window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(u);
+    synth.cancel?.();   // 🔥 핵심
+    synth.speak?.(u);   // 🔥 안전
   }
 };
