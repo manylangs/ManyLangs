@@ -3,14 +3,26 @@ export function copyLink(url?: string) {
     url || (typeof window !== "undefined" ? window.location.href : "");
 
   try {
-    if (typeof navigator !== "undefined" && navigator.clipboard?.writeText) {
+    // 🔥 1순위: 공유 UI
+    if (navigator.share) {
+      navigator.share({
+        url: target,
+      }).catch(() => {});
+      return;
+    }
+
+    // 🔥 2순위: 클립보드
+    if (navigator.clipboard?.writeText) {
       navigator.clipboard.writeText(target)
         .then(() => alert("Link copied!"))
         .catch(() => alert("Link copied!"));
-    } else {
-      alert("Link copied!");
+      return;
     }
+
+    // 🔥 fallback
+    alert(target);
+
   } catch {
-    alert("Link copied!");
+    alert(target);
   }
 }

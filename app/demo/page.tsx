@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import type { CSSProperties } from "react";
 import { copyLink } from "@/utils/share";
@@ -22,49 +21,31 @@ export default function DemoPage() {
       <div style={wrapper}>
 
         {/* HEADER */}
-        <div
-          style={{
-            ...headerRow,
-            position: "relative",
-            zIndex: 10,
-          }}
-        >
-          <Link
-            href="/"
-            style={{
-              ...linkReset,
-              ...btnBack,
-              display: "inline-block",
-              pointerEvents: "auto",
-            }}
+        <div style={{ ...headerRow, position: "relative", zIndex: 10 }}>
+          <button
+            type="button"
+            onClick={() => { window.location.href = "/"; }}
+            style={btnBack}
           >
             ← Back
-          </Link>
+          </button>
 
           <div style={headerActions}>
             <button
               type="button"
               onClick={() => copyLink()}
-              style={{
-                ...btnSecondary,
-                pointerEvents: "auto",
-              }}
+              style={btnSecondary}
             >
               Copy link
             </button>
 
-            <Link
-              href="/app"
-              style={{
-                ...linkReset,
-                ...btnHeaderPrimary,
-                display: "inline-block",
-                textAlign: "center",
-                pointerEvents: "auto",
-              }}
+            <button
+              type="button"
+              onClick={() => { window.location.href = "/app"; }}
+              style={btnHeaderPrimary}
             >
               Unlock Full Access
-            </Link>
+            </button>
           </div>
         </div>
 
@@ -99,20 +80,23 @@ export default function DemoPage() {
 
             <div style={grid}>
               {section.items.map((item) => (
-                <Link
+                <div
                   key={item.series}
-                  href={`/demo/viewer/${lang}/${item.series}/a1/001?mode=demo`}
+                  onClick={() => {
+                    window.location.href = `/demo/viewer/${lang}/${item.series}/a1/001?mode=demo`;
+                  }}
                   style={{
                     ...card,
                     background: section.bg,
+                    cursor: "pointer",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = "translateY(-4px)";
-                    e.currentTarget.style.boxShadow = "0 10px 24px rgba(0,0,0,0.08)";
+                    (e.currentTarget as HTMLDivElement).style.transform = "translateY(-4px)";
+                    (e.currentTarget as HTMLDivElement).style.boxShadow = "0 10px 24px rgba(0,0,0,0.08)";
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = "translateY(0)";
-                    e.currentTarget.style.boxShadow = "0 2px 6px rgba(0,0,0,0.04)";
+                    (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)";
+                    (e.currentTarget as HTMLDivElement).style.boxShadow = "0 2px 6px rgba(0,0,0,0.04)";
                   }}
                 >
                   <div>
@@ -123,7 +107,7 @@ export default function DemoPage() {
                   </div>
 
                   <p style={cardHint}>👉 Start learning</p>
-                </Link>
+                </div>
               ))}
             </div>
           </div>
@@ -184,7 +168,6 @@ const btnHeaderPrimary: CSSProperties = {
   border: "none",
   fontWeight: 600,
   cursor: "pointer",
-  textDecoration: "none",
 };
 
 const infoBox: CSSProperties = {
@@ -254,8 +237,4 @@ const cardHint: CSSProperties = {
   fontSize: 13,
   color: "#5b6cff",
   fontWeight: 600,
-};
-
-const linkReset: CSSProperties = {
-  textDecoration: "none",
 };
