@@ -23,21 +23,31 @@ export default function DemoPage() {
 
         {/* HEADER */}
         <div style={headerRow}>
-          <Link href="/" style={linkReset}>
-            <button style={btnBack}>← Back</button>
+          <Link href="/" style={{ ...linkReset, ...btnBack, display: "inline-block" }}>
+            ← Back
           </Link>
-
           <div style={headerActions}>
             <button
-              onClick={() => copyLink()}
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                copyLink();
+              }}
               style={btnSecondary}
             >
               Copy link
             </button>
-            <Link href="/app" style={linkReset}>
-              <button type="button" style={btnHeaderPrimary}>
-                Unlock Full Access
-              </button>
+            <Link
+              href="/app"
+              style={{
+                ...linkReset,
+                ...btnHeaderPrimary,
+                display: "inline-block",
+                textAlign: "center",
+              }}
+            >
+              Unlock Full Access
             </Link>
           </div>
         </div>
@@ -139,6 +149,7 @@ const btnBack: CSSProperties = {
   border: "1px solid #ddd",
   background: "#fff",
   cursor: "pointer",
+  textDecoration: "none",
 };
 
 const btnSecondary: CSSProperties = {
@@ -156,6 +167,8 @@ const btnHeaderPrimary: CSSProperties = {
   color: "#fff",
   border: "none",
   fontWeight: 600,
+  cursor: "pointer",
+  textDecoration: "none",
 };
 
 const infoBox: CSSProperties = {
