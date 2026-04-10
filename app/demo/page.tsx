@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import type { CSSProperties } from "react";
-
+import { copyLink } from "@/utils/share";
 import { LANGUAGES } from "@/app/config/languages";
 
 const demoData = [
@@ -29,26 +29,16 @@ export default function DemoPage() {
 
           <div style={headerActions}>
             <button
-              onClick={async () => {
-                if (navigator.share) {
-                  try {
-                    await navigator.share({url: window.location.href });
-                  } catch { }
-                } else {
-                  await navigator.clipboard.writeText(window.location.href);
-                  alert("Link copied!");
-                }
-              }}
+              onClick={() => copyLink()}
               style={btnSecondary}
             >
-               Copy link
+              Copy link
             </button>
-
-            <a href="/app" style={linkReset}>
+            <Link href="/app" style={linkReset}>
               <button type="button" style={btnHeaderPrimary}>
                 Unlock Full Access
               </button>
-            </a>
+            </Link>
           </div>
         </div>
 
