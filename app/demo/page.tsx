@@ -22,22 +22,37 @@ export default function DemoPage() {
       <div style={wrapper}>
 
         {/* HEADER */}
-        <div style={headerRow}>
-          <Link href="/" style={{ ...linkReset, ...btnBack, display: "inline-block" }}>
+        <div
+          style={{
+            ...headerRow,
+            position: "relative",
+            zIndex: 10,
+          }}
+        >
+          <Link
+            href="/"
+            style={{
+              ...linkReset,
+              ...btnBack,
+              display: "inline-block",
+              pointerEvents: "auto",
+            }}
+          >
             ← Back
           </Link>
+
           <div style={headerActions}>
             <button
               type="button"
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                copyLink();
+              onClick={() => copyLink()}
+              style={{
+                ...btnSecondary,
+                pointerEvents: "auto",
               }}
-              style={btnSecondary}
             >
               Copy link
             </button>
+
             <Link
               href="/app"
               style={{
@@ -45,6 +60,7 @@ export default function DemoPage() {
                 ...btnHeaderPrimary,
                 display: "inline-block",
                 textAlign: "center",
+                pointerEvents: "auto",
               }}
             >
               Unlock Full Access
