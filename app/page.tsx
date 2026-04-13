@@ -133,16 +133,22 @@ export default function LandingPage() {
           </nav>
 
           {/* 오른쪽 */}
-          <div style={rightWrap}>
+          <div style={{
+            ...rightWrap,
+            display: "flex",
+            alignItems: "center",
+            gap: 8,
+          }}>
 
             {/* 버튼 그룹 */}
+        // 내부 버튼 그룹
             <div
               style={{
                 display: "flex",
                 alignItems: "center",
                 gap: 6,
                 flexShrink: 0,
-                width: "100%",
+                // width 제거 ❌
               }}
             >
 
@@ -217,7 +223,7 @@ export default function LandingPage() {
       <section style={heroSection}>
         <p
           style={{
-            fontSize: 15,
+            fontSize: 14,
             lineHeight: 1.5,
             marginBottom: 16,
             textAlign: "center",
