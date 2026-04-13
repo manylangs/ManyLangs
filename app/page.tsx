@@ -136,7 +136,6 @@ export default function LandingPage() {
           <div style={rightWrap}>
 
             {/* 버튼 그룹 */}
-          // ===== [START header buttons] =====
             <div
               style={{
                 display: "flex",
@@ -160,7 +159,6 @@ export default function LandingPage() {
                 </button>
               </a>
 
-            // ===== [START install buttons condition] =====
               {!isPWA && typeof window !== "undefined" && window.innerWidth > 768 && (
                 <>
                   <button style={btnIconSmall} onClick={handleAndroidInstall}>
@@ -172,7 +170,6 @@ export default function LandingPage() {
                   </button>
                 </>
               )}
-// ===== [END install buttons condition] =====
 
               {/* 🔥 공유 */}
               <button
@@ -182,7 +179,6 @@ export default function LandingPage() {
                 Copy link
               </button>
             </div>
-// ===== [END header buttons] =====
 
             {/* 🔥 햄버거 여기 추가 */}
             <button
@@ -858,7 +854,6 @@ export default function LandingPage() {
 
 /* ================= Base ================= */
 
-// ===== [START mainStyle] =====
 const mainStyle: React.CSSProperties = {
   background: "#fff",
   color: "#111",
@@ -875,8 +870,6 @@ const linkReset: React.CSSProperties = {
 };
 
 /* ================= Header ================= */
-// ===== [START headerStyle] =====
-// ===== [START headerStyle] =====
 const headerStyle: React.CSSProperties = {
   position: "fixed",
   top: 0,
@@ -977,7 +970,6 @@ const heroTitle: React.CSSProperties = {
   margin: 0,
 };
 
-// ===== [START heroSection] =====
 const heroSection: React.CSSProperties = {
   width: "100%",
   maxWidth: 720,
@@ -986,7 +978,6 @@ const heroSection: React.CSSProperties = {
   boxSizing: "border-box",
   textAlign: "center",
 };
-// ===== [END heroSection] =====
 const heroSub: React.CSSProperties = {
   fontSize: 13,
   color: "#666",
@@ -1028,7 +1019,6 @@ const sectionWrap: React.CSSProperties = {
   scrollMarginTop: "var(--header-h)", // 🔥 추가
 };
 
-// 🔥 ===== [END] sectionWrap =====
 const sectionCenter: React.CSSProperties = {
   scrollMarginTop: "var(--header-h)",
   maxWidth: 1000,          // 🔥 추가
@@ -1296,7 +1286,7 @@ const hamburger: React.CSSProperties = {
   cursor: "pointer",
   flexShrink: 0, // 🔥 중요
 };
-// 🔥 ===== [START] mobileMenu =====
+
 const mobileMenu: React.CSSProperties = {
   position: "absolute",
   top: 64,
@@ -1312,4 +1302,4 @@ const mobileMenu: React.CSSProperties = {
   gap: 4,
   zIndex: 2000,
 };
-// 🔥 ===== [END] mobileMenu =====
+
