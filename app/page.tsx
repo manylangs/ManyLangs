@@ -673,7 +673,14 @@ export default function LandingPage() {
         Designed for learners worldwide.
       </div>
       {/* Footer */}
-      <footer style={footerStyle}>
+     // ===== [START footer] =====
+      <footer
+        style={{
+          ...footerStyle,
+          paddingBottom: "env(safe-area-inset-bottom)", // 🔥 핵심
+        }}
+      >
+// ===== [END footer] =====
         <div style={footerInner}>
           <p style={footerText}>General inquiries : manylangs.help@gmail.com</p>
 
@@ -828,33 +835,42 @@ export default function LandingPage() {
 
 /* ================= Base ================= */
 
+// ===== [START mainStyle] =====
 const mainStyle: React.CSSProperties = {
   background: "#fff",
   color: "#111",
   fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
   paddingTop: 0,
-  minHeight: "100vh",
+  minHeight: "100dvh", // 🔥 핵심 변경
   width: "100%",
-  overflowX: "hidden", // 🔥 혹시 모를 미세 밀림 차단
+  overflowX: "hidden",
 };
+// ===== [END mainStyle] =====
 
 const linkReset: React.CSSProperties = {
   textDecoration: "none",
 };
 
 /* ================= Header ================= */
+// ===== [START headerStyle] =====
+// ===== [START headerStyle] =====
 const headerStyle: React.CSSProperties = {
   position: "fixed",
   top: 0,
   left: 0,
   width: "100%",
-  boxSizing: "border-box", // 🔥 이거 추가 (핵심)
+  boxSizing: "border-box",
   zIndex: 9999,
   background: "#fff",
   borderBottom: "1px solid #eee",
-  padding: "14px 16px", // 🔥 20 → 16 (통일)
-  height: 64,
+
+  padding: "14px 16px",
+  paddingTop: "calc(14px + env(safe-area-inset-top))", // 🔥 핵심
+
+  height: "calc(64px + env(safe-area-inset-top))", // 🔥 핵심
 };
+// ===== [END headerStyle] =====
+// ===== [END headerStyle] =====
 const headerInner: React.CSSProperties = {
   maxWidth: 1100,
   margin: "0 auto",
@@ -938,14 +954,16 @@ const heroTitle: React.CSSProperties = {
   margin: 0,
 };
 
+// ===== [START heroSection] =====
 const heroSection: React.CSSProperties = {
-  width: "100%",            // 🔥 추가 (핵심)
+  width: "100%",
   maxWidth: 720,
   margin: "0 auto",
-  padding: "calc(var(--header-h) + 24px) 16px 24px", // 🔥 20 → 16
-  boxSizing: "border-box",  // 🔥 필수
+  padding: "calc(var(--header-h) + env(safe-area-inset-top) + 24px) 16px 24px", // 🔥 핵심
+  boxSizing: "border-box",
   textAlign: "center",
 };
+// ===== [END heroSection] =====
 const heroSub: React.CSSProperties = {
   fontSize: 13,
   color: "#666",
