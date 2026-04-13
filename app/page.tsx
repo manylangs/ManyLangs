@@ -6,6 +6,7 @@ import Logo from "@/app/components/Logo";
 import React, { useState, useEffect } from "react";
 import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
+import { copyLink } from "@/utils/share";
 
 export default function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,7 +21,17 @@ export default function LandingPage() {
   // 🔥 PWA install 관련 state
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const [showIOSGuide, setShowIOSGuide] = useState(false);
+  // ===== [START isPWA state] =====
+  const [isPWA, setIsPWA] = useState(false);
 
+  useEffect(() => {
+    const isStandalone =
+      window.matchMedia('(display-mode: standalone)').matches ||
+      (window.navigator as any).standalone === true;
+
+    setIsPWA(isStandalone);
+  }, []);
+  // ===== [END isPWA state] =====
   // 🔥 Android install 이벤트
   useEffect(() => {
     const handler = (e: any) => {
@@ -59,25 +70,16 @@ export default function LandingPage() {
     }
   }, [isLoaded, isSignedIn, router]);
 
-  const handleShare = async () => {
-    if (typeof window === "undefined") return;
+  // ===== [START handleShare] =====
+  const [copied, setCopied] = useState(false);
 
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: "ManyLangs",
-          url: window.location.href,
-        });
-      } catch { }
-    } else {
-      try {
-        await navigator.clipboard.writeText(window.location.href);
-        alert("Link copied!");
-      } catch {
-        alert("Unable to copy link.");
-      }
-    }
+  const handleShare = () => {
+    copyLink(undefined, () => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
   };
+  // ===== [END handleShare] =====
 
   const closeMenu = () => setMenuOpen(false);
   // 🔥 ===== [START] scrollToSection =====
@@ -110,6 +112,7 @@ export default function LandingPage() {
   // }, [])
   return (
     <main style={mainStyle}>
+
       {/* 이하 기존 코드 그대로 유지 */}
       {/* Header */}
       <header style={headerStyle}>
@@ -133,51 +136,53 @@ export default function LandingPage() {
           <div style={rightWrap}>
 
             {/* 버튼 그룹 */}
+          // ===== [START header buttons] =====
             <div
               style={{
                 display: "flex",
                 alignItems: "center",
                 gap: 6,
                 flexShrink: 0,
+                width: "100%",
               }}
             >
-              <a href="/app" style={linkReset}>
-                <button type="button" style={btnHeaderPrimary}>
+
+              {/* 🔥 메인 CTA (확장) */}
+              <a href="/app" style={{ ...linkReset, flex: 1 }}>
+                <button
+                  type="button"
+                  style={{
+                    ...btnHeaderPrimary,
+                    width: "100%",
+                  }}
+                >
                   Unlock Full Access
                 </button>
               </a>
 
-              <button
-                style={btnIconSmall}
-                onClick={handleAndroidInstall}
-              >
-                Android
-              </button>
+            // ===== [START install buttons condition] =====
+              {!isPWA && typeof window !== "undefined" && window.innerWidth > 768 && (
+                <>
+                  <button style={btnIconSmall} onClick={handleAndroidInstall}>
+                    Android
+                  </button>
 
+                  <button style={btnIconSmall} onClick={handleIOSInstall}>
+                    IOS
+                  </button>
+                </>
+              )}
+// ===== [END install buttons condition] =====
+
+              {/* 🔥 공유 */}
               <button
-                style={btnIconSmall}
-                onClick={handleIOSInstall}
-              >
-                IOS
-              </button>
-              <button
-                onClick={async () => {
-                  if (navigator.share) {
-                    try {
-                      await navigator.share({
-                        url: window.location.href,
-                      });
-                    } catch { }
-                  } else {
-                    await navigator.clipboard.writeText(window.location.href);
-                    alert("Link copied!");
-                  }
-                }}
+                onClick={handleShare}
                 style={btnIconSmall}
               >
                 Copy link
               </button>
             </div>
+// ===== [END header buttons] =====
 
             {/* 🔥 햄버거 여기 추가 */}
             <button
@@ -827,6 +832,26 @@ export default function LandingPage() {
 }
 
 `}</style>
+      // ===== [START copy toast] =====
+      {copied && (
+        <div
+          style={{
+            position: "fixed",
+            bottom: 80,
+            left: "50%",
+            transform: "translateX(-50%)",
+            background: "#111",
+            color: "#fff",
+            padding: "8px 12px",
+            borderRadius: 8,
+            fontSize: 13,
+            zIndex: 9999,
+          }}
+        >
+          Link copied
+        </div>
+      )}
+// ===== [END copy toast] =====
     </main >
   );
 }

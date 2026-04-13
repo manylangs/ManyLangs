@@ -1,28 +1,25 @@
-export function copyLink(url?: string) {
+// ===== [START improved copyLink] =====
+export function copyLink(url?: string, onCopy?: () => void) {
   const target =
     url || (typeof window !== "undefined" ? window.location.href : "");
 
   try {
-    // 🔥 1순위: 공유 UI
     if (navigator.share) {
-      navigator.share({
-        url: target,
-      }).catch(() => {});
+      navigator.share({ url: target }).catch(() => {});
       return;
     }
 
-    // 🔥 2순위: 클립보드
     if (navigator.clipboard?.writeText) {
       navigator.clipboard.writeText(target)
-        .then(() => alert("Link copied!"))
-        .catch(() => alert("Link copied!"));
+        .then(() => onCopy?.()) // 🔥 콜백
+        .catch(() => onCopy?.());
       return;
     }
 
-    // 🔥 fallback
-    alert(target);
+    onCopy?.();
 
   } catch {
-    alert(target);
+    onCopy?.();
   }
 }
+// ===== [END improved copyLink] =====
