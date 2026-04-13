@@ -834,7 +834,6 @@ export default function LandingPage() {
 }
 
 `}</style>
-      // ===== [START copy toast] =====
       {copied && (
         <div
           style={{
@@ -853,7 +852,6 @@ export default function LandingPage() {
           Link copied
         </div>
       )}
-// ===== [END copy toast] =====
     </main >
   );
 }
