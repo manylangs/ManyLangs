@@ -141,7 +141,6 @@ export default function LandingPage() {
           }}>
 
             {/* 버튼 그룹 */}
-        // 내부 버튼 그룹
             <div
               style={{
                 display: "flex",
