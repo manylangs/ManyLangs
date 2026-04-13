@@ -673,14 +673,12 @@ export default function LandingPage() {
         Designed for learners worldwide.
       </div>
       {/* Footer */}
-     // ===== [START footer] =====
       <footer
         style={{
           ...footerStyle,
           paddingBottom: "env(safe-area-inset-bottom)", // 🔥 핵심
         }}
       >
-// ===== [END footer] =====
         <div style={footerInner}>
           <p style={footerText}>General inquiries : manylangs.help@gmail.com</p>
 
