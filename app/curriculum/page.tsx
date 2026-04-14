@@ -4,10 +4,19 @@ import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 import { LANGUAGES } from "@/app/config/languages";
 import { useEffect, useState } from "react";
+import { copyLink } from "@/utils/share";
 
 export default function CurriculumPage() {
   const { targetLang, setTargetLang } = useViewerTarget();
 
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    copyLink(undefined, () => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
 
   const safeLang = targetLang || "kr";
 
@@ -25,24 +34,14 @@ export default function CurriculumPage() {
           </Link>
 
           <div style={headerRight}>
+            {/* ===== [START copy button] ===== */}
             <button
-              onClick={async () => {
-                if (navigator.share) {
-                  try {
-                    await navigator.share({
-                      title: "Curriculum",
-                      url: window.location.href,
-                    });
-                  } catch { }
-                } else {
-                  await navigator.clipboard.writeText(window.location.href);
-                  alert("Link copied!");
-                }
-              }}
+              onClick={handleCopy}
               style={copyBtn}
             >
               Copy link
             </button>
+            {/* ===== [END copy button] ===== */}
 
             <a href="/app" style={linkReset}>
               <button style={btnHeaderPrimary}>
@@ -121,6 +120,28 @@ export default function CurriculumPage() {
         </div>
 
       </div>
+
+      {/* ===== [START toast] ===== */}
+      {copied && (
+        <div
+          style={{
+            position: "fixed",
+            bottom: 80,
+            left: "50%",
+            transform: "translateX(-50%)",
+            background: "#111",
+            color: "#fff",
+            padding: "8px 12px",
+            borderRadius: 8,
+            fontSize: 13,
+            zIndex: 9999,
+          }}
+        >
+          Link copied
+        </div>
+      )}
+      {/* ===== [END toast] ===== */}
+
     </main>
   );
 }

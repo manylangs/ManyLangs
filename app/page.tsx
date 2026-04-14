@@ -1244,9 +1244,9 @@ const modalContent: React.CSSProperties = {
   maxWidth: 400,
 };
 
-
 const btnHeaderPrimary: React.CSSProperties = {
-  padding: "8px 14px",
+  height: 36,                
+  padding: "0 14px",         
   fontSize: 13,
   borderRadius: 8,
   background: "#111",
@@ -1254,9 +1254,13 @@ const btnHeaderPrimary: React.CSSProperties = {
   border: "none",
   fontWeight: 600,
   whiteSpace: "nowrap",
-  minWidth: 150, // 🔥 핵심 (길게)
+  minWidth: 150,
+
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",
 };
-// 🔥 기존 btnIconSmall 수정 (불필요 제거)
+
 const btnIconSmall: React.CSSProperties = {
   height: 26,
   padding: "0 6px",
@@ -1276,18 +1280,21 @@ const btnIconSmallWrap: React.CSSProperties = {
   lineHeight: 1.1,
   padding: "2px 6px",
 };
+
 const hamburger: React.CSSProperties = {
+  width: 36,              
+  height: 36,             
+  fontSize: 16,
+  background: "#fff",
+  border: "1px solid #ddd",
+  borderRadius: 8,
+
   display: "inline-flex",
   alignItems: "center",
   justifyContent: "center",
-  width: 32,
-  height: 32,
-  fontSize: 14,
-  background: "#fff",
-  border: "1px solid #ddd",
-  borderRadius: 6,
+
   cursor: "pointer",
-  flexShrink: 0, // 🔥 중요
+  flexShrink: 0,
 };
 
 const mobileMenu: React.CSSProperties = {
@@ -1305,4 +1312,3 @@ const mobileMenu: React.CSSProperties = {
   gap: 4,
   zIndex: 2000,
 };
-
