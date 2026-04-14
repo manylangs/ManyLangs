@@ -254,6 +254,8 @@ const header: React.CSSProperties = {
   justifyContent: "space-between",
   alignItems: "center",
   marginBottom: 20,
+
+  paddingTop: "calc(env(safe-area-inset-top) + 8px)", 
 };
 
 const headerRight: React.CSSProperties = {
