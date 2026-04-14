@@ -81,7 +81,7 @@ export default function Page() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    copyLink(undefined, () => {
+    copyLink(window.location.href, () => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     });
@@ -154,6 +154,24 @@ export default function Page() {
         ))}
 
       </div>
+      {copied && (
+        <div
+          style={{
+            position: "fixed",
+            bottom: 80,
+            left: "50%",
+            transform: "translateX(-50%)",
+            background: "#111",
+            color: "#fff",
+            padding: "8px 12px",
+            borderRadius: 8,
+            fontSize: 13,
+            zIndex: 9999,
+          }}
+        >
+          Link copied
+        </div>
+      )}
     </main>
   );
 }
