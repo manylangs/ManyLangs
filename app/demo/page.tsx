@@ -171,26 +171,36 @@ const headerActions: CSSProperties = {
   gap: 10,
 };
 
-const btnBack: CSSProperties = {
-  padding: "8px 12px",
+const baseBtn: CSSProperties = {
+  padding: "6px 10px",
+  fontSize: 13,
+  lineHeight: 1.2,
   borderRadius: 8,
+
+  WebkitAppearance: "none",
+  appearance: "none",
+
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",
+};
+
+const btnBack: CSSProperties = {
+  ...baseBtn,
   border: "1px solid #ddd",
   background: "#fff",
   cursor: "pointer",
-  textDecoration: "none",
 };
 
 const btnSecondary: CSSProperties = {
-  padding: "8px 12px",
-  borderRadius: 8,
+  ...baseBtn,
   border: "1px solid #ddd",
   background: "#f5f5f5",
   cursor: "pointer",
 };
 
 const btnHeaderPrimary: CSSProperties = {
-  padding: "8px 14px",
-  borderRadius: 8,
+  ...baseBtn,
   background: "#111",
   color: "#fff",
   border: "none",
