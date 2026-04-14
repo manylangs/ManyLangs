@@ -161,12 +161,14 @@ const wrapper: CSSProperties = {
 const headerRow: CSSProperties = {
   display: "flex",
   justifyContent: "space-between",
+  alignItems: "center", // 🔥 추가
   marginBottom: 20,
+  paddingTop: "calc(env(safe-area-inset-top) + 8px)",
 };
 
 const headerActions: CSSProperties = {
   display: "flex",
-  gap: 8,
+  gap: 10,
 };
 
 const btnBack: CSSProperties = {
@@ -250,17 +252,18 @@ const card: CSSProperties = {
 };
 
 const cardTitle: CSSProperties = {
-  fontWeight: 600,
+  fontWeight: 700,
+  fontSize: 16,
 };
 
 const cardMeta: CSSProperties = {
   fontSize: 12,
-  color: "#888",
+  color: "#999",
 };
 
 const cardHint: CSSProperties = {
   marginTop: 12,
   fontSize: 13,
-  color: "#5b6cff",
+  color: "#111",
   fontWeight: 600,
 };
