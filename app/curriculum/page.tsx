@@ -30,21 +30,28 @@ export default function CurriculumPage() {
         {/* HEADER */}
         <div style={header}>
           <Link href="/" style={linkReset}>
-            <button style={backBtn}>← Back</button>
+            <button
+              type="button"
+              style={btnBack}
+            >
+              ← Back
+            </button>
           </Link>
 
           <div style={headerRight}>
-            {/* ===== [START copy button] ===== */}
             <button
+              type="button"
               onClick={handleCopy}
-              style={copyBtn}
+              style={btnSecondary}
             >
               Copy link
             </button>
-            {/* ===== [END copy button] ===== */}
 
             <a href="/app" style={linkReset}>
-              <button style={btnHeaderPrimary}>
+              <button
+                type="button"
+                style={btnHeaderPrimary}
+              >
                 Unlock Full Access
               </button>
             </a>
@@ -262,21 +269,35 @@ const backBtn: React.CSSProperties = {
   cursor: "pointer",
 };
 
-const copyBtn: React.CSSProperties = {
-  padding: "8px 12px",
+const baseBtn: React.CSSProperties = {
+  height: 32,
+  padding: "0 10px",
+  fontSize: 12,
+  lineHeight: 1,
   borderRadius: 8,
+
+  WebkitAppearance: "none",
+  appearance: "none",
+
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",
+};
+
+const btnSecondary: React.CSSProperties = {
+  ...baseBtn,
   border: "1px solid #ddd",
   background: "#f5f5f5",
   cursor: "pointer",
 };
 
 const btnHeaderPrimary: React.CSSProperties = {
-  padding: "8px 14px",
-  borderRadius: 8,
+  ...baseBtn,
   background: "#111",
   color: "#fff",
   border: "none",
   fontWeight: 600,
+  cursor: "pointer",
 };
 
 const title: React.CSSProperties = {
@@ -348,4 +369,10 @@ const fixedInfo: React.CSSProperties = {
   color: "#4f46e5",
   marginTop: 6,
   fontWeight: 600,
+};
+const btnBack: React.CSSProperties = {
+  ...baseBtn,
+  border: "1px solid #ddd",
+  background: "#fff",
+  cursor: "pointer",
 };

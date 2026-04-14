@@ -11,17 +11,17 @@ import { copyLink } from "@/utils/share";
 export default function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [footerOpen, setFooterOpen] = useState<"terms" | "privacy" | "refund" | null>(null);
-  // 🔥 추가 (핵심)
+
   const { isSignedIn, isLoaded, user } = useUser();
   const router = useRouter();
 
   const isAdmin =
     user?.primaryEmailAddress?.emailAddress ===
     process.env.NEXT_PUBLIC_ADMIN_EMAIL;
-  // 🔥 PWA install 관련 state
+
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const [showIOSGuide, setShowIOSGuide] = useState(false);
-  // ===== [START isPWA state] =====
+
   const [isPWA, setIsPWA] = useState(false);
 
   useEffect(() => {
@@ -31,8 +31,7 @@ export default function LandingPage() {
 
     setIsPWA(isStandalone);
   }, []);
-  // ===== [END isPWA state] =====
-  // 🔥 Android install 이벤트
+
   useEffect(() => {
     const handler = (e: any) => {
       e.preventDefault();
@@ -166,11 +165,11 @@ export default function LandingPage() {
 
               {!isPWA && typeof window !== "undefined" && window.innerWidth > 768 && (
                 <>
-                  <button style={btnIconSmall} onClick={handleAndroidInstall}>
+                  <button style={btnHeaderSecondary} onClick={handleAndroidInstall}>
                     Android
                   </button>
 
-                  <button style={btnIconSmall} onClick={handleIOSInstall}>
+                  <button style={btnHeaderSecondary} onClick={handleIOSInstall}>
                     IOS
                   </button>
                 </>
@@ -179,7 +178,10 @@ export default function LandingPage() {
               {/* 🔥 공유 */}
               <button
                 onClick={handleShare}
-                style={btnIconSmall}
+                style={{
+                  ...btnHeaderSecondary,
+                  minWidth: 88,
+                }}
               >
                 Copy link
               </button>
@@ -931,7 +933,6 @@ const rightArea: React.CSSProperties = {
   whiteSpace: "nowrap",
 };
 
-// 🔥 ===== [START] mobileMenuLink =====
 const mobileMenuLink: React.CSSProperties = {
   width: "100%",
   background: "none",
@@ -949,7 +950,6 @@ const mobileEmail: React.CSSProperties = {
   color: "#666",
 };
 
-/* ================= Hero ================= */
 const titleRow: React.CSSProperties = {
   display: "flex",
   alignItems: "center",
@@ -1055,8 +1055,6 @@ const text: React.CSSProperties = {
   margin: 0,
 };
 
-/* ================= Layout ================= */
-
 const grid2: React.CSSProperties = {
   display: "grid",
   gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
@@ -1080,8 +1078,6 @@ const stepItem: React.CSSProperties = {
   lineHeight: 1.6,
   color: "#222",
 };
-
-/* ================= Cards ================= */
 
 const card: React.CSSProperties = {
   border: "1px solid #eee",
@@ -1118,8 +1114,6 @@ const cardTitle: React.CSSProperties = {
   margin: "0 0 6px",
 };
 
-/* ================= Buttons ================= */
-
 const baseBtn: React.CSSProperties = {
   padding: "10px 14px",
   fontSize: 14,
@@ -1142,8 +1136,6 @@ const btnSecondary: React.CSSProperties = {
   color: "#111",
   border: "1px solid #ccc",
 };
-
-/* ================= Footer ================= */
 
 const footerStyle: React.CSSProperties = {
   borderTop: "1px solid #eee",
@@ -1207,10 +1199,6 @@ const btnGhost: React.CSSProperties = {
   border: "none",
   cursor: "pointer",
 };
-/* ================= Modal Styles ================= */
-
-
-//헤더 버튼
 
 const btnHeaderCTA: React.CSSProperties = {
   padding: "6px 10px",
@@ -1221,7 +1209,6 @@ const btnHeaderCTA: React.CSSProperties = {
   border: "none",
   fontWeight: 600,
 };
-
 
 const modalOverlay: React.CSSProperties = {
   position: "fixed",
@@ -1245,8 +1232,8 @@ const modalContent: React.CSSProperties = {
 };
 
 const btnHeaderPrimary: React.CSSProperties = {
-  height: 36,                
-  padding: "0 14px",         
+  height: 36,
+  padding: "0 14px",
   fontSize: 13,
   borderRadius: 8,
   background: "#111",
@@ -1261,29 +1248,23 @@ const btnHeaderPrimary: React.CSSProperties = {
   justifyContent: "center",
 };
 
-const btnIconSmall: React.CSSProperties = {
-  height: 26,
-  padding: "0 6px",
-  borderRadius: 6,
+const btnHeaderSecondary: React.CSSProperties = {
+  height: 36,              
+  padding: "0 12px",       
+  borderRadius: 8,
   background: "#f5f5f5",
   border: "1px solid #e5e5e5",
-  fontSize: 10,
-  display: "flex",
+  fontSize: 12,
+  fontWeight: 500,
+  display: "inline-flex",
   alignItems: "center",
   justifyContent: "center",
-};
-
-// 🔥 Copy 전용 (줄바꿈 허용)
-const btnIconSmallWrap: React.CSSProperties = {
-  ...btnIconSmall,
-  whiteSpace: "normal",   // 🔥 핵심
-  lineHeight: 1.1,
-  padding: "2px 6px",
+  whiteSpace: "nowrap",
 };
 
 const hamburger: React.CSSProperties = {
-  width: 36,              
-  height: 36,             
+  width: 36,
+  height: 36,
   fontSize: 16,
   background: "#fff",
   border: "1px solid #ddd",
