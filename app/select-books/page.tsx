@@ -503,11 +503,21 @@ export default function SelectBooksPage() {
   // ✅ 여기만 변경: startPayment에 try/catch + json safe + 로딩가드
   async function startPayment() {
     // Android IAP
-    if (typeof window !== "undefined" && (window as any).AndroidBridge) {
-      (window as any).AndroidBridge.purchase(payAmount);
-      setLoading(false);
-      return;
+    // 🔥 START mobile payment
+    if (typeof window !== "undefined") {
+      if ((window as any).AndroidBridge) {
+        (window as any).AndroidBridge.purchase(payAmount);
+        setLoading(false);
+        return;
+      }
+
+      if ((window as any).webkit?.messageHandlers?.purchase) {
+        (window as any).webkit.messageHandlers.purchase.postMessage(payAmount);
+        setLoading(false);
+        return;
+      }
     }
+    // 🔥 END mobile payment
     if (loading) return;
 
     setLoading(true);
@@ -1171,25 +1181,41 @@ export default function SelectBooksPage() {
                 <div className="space-y-2">
                   <div className="text-sm font-medium">Choose a plan</div>
 
-                  <select
-                    value={payAmount}
-                    onChange={(e) => setPayAmount(e.target.value as Amount)}
-                    className="block w-full rounded border px-3 py-2"
-                  >
-                    {PAYMENT_OPTIONS.map((p) => (
-                      <option key={p.amount} value={p.amount}>
-                        {p.label} — {p.desc}
-                      </option>
-                    ))}
-                  </select>
+                  {/* 🔥 START mobile filter */}
+                  {(() => {
+                    const isMobileApp =
+                      typeof window !== "undefined" &&
+                      ((window as any).AndroidBridge || (window as any).webkit?.messageHandlers);
 
-                  <div className="text-xs text-gray-500 space-y-1">
-                    {PAYMENT_OPTIONS.map((p) => (
-                      <div key={p.amount}>
-                        {p.label} → {p.coupons} coupons
-                      </div>
-                    ))}
-                  </div>
+                    const visiblePaymentOptions = isMobileApp
+                      ? PAYMENT_OPTIONS.filter(p => p.amount === "3" || p.amount === "5")
+                      : PAYMENT_OPTIONS;
+
+                    return (
+                      <>
+                        <select
+                          value={payAmount}
+                          onChange={(e) => setPayAmount(e.target.value as Amount)}
+                          className="block w-full rounded border px-3 py-2"
+                        >
+                          {visiblePaymentOptions.map((p) => (
+                            <option key={p.amount} value={p.amount}>
+                              {p.label} — {p.desc}
+                            </option>
+                          ))}
+                        </select>
+
+                        <div className="text-xs text-gray-500 space-y-1">
+                          {visiblePaymentOptions.map((p) => (
+                            <div key={p.amount}>
+                              {p.label} → {p.coupons} coupons
+                            </div>
+                          ))}
+                        </div>
+                      </>
+                    );
+                  })()}
+                  {/* 🔥 END mobile filter */}
                 </div>
 
                 {error && <p className="text-sm text-red-600">{error}</p>}
@@ -1207,13 +1233,30 @@ export default function SelectBooksPage() {
                       : `Add ${LANGUAGES.find(l => l.code === targetLang)?.label} textbook`}
                   </button>
 
-                  <button
-                    onClick={startPayment}
-                    disabled={loading}
-                    className="w-full rounded bg-black text-white py-2 text-sm font-medium"
-                  >
-                    Buy coupons using your card
-                  </button>
+                  {/* 🔥 START platform button */}
+                  {(() => {
+                    const isAndroid =
+                      typeof window !== "undefined" && (window as any).AndroidBridge;
+
+                    const isIOS =
+                      typeof window !== "undefined" &&
+                      (window as any).webkit?.messageHandlers;
+
+                    return (
+                      <button
+                        onClick={startPayment}
+                        disabled={loading}
+                        className="w-full rounded bg-black text-white py-2 text-sm font-medium"
+                      >
+                        {isAndroid
+                          ? "Buy with Google Play"
+                          : isIOS
+                            ? "Buy with Apple"
+                            : "Buy coupons using your card"}
+                      </button>
+                    );
+                  })()}
+                  {/* 🔥 END platform button */}
 
                 </div>
 
