@@ -16,6 +16,15 @@ const demoData = [
 export default function DemoPage() {
   const [lang, setLang] = useState("kr");
 
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    copyLink(undefined, () => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
+
   return (
     <main style={container}>
       <div style={wrapper}>
@@ -33,12 +42,11 @@ export default function DemoPage() {
           <div style={headerActions}>
             <button
               type="button"
-              onClick={() => copyLink()}
+              onClick={handleCopy}
               style={btnSecondary}
             >
               Copy link
             </button>
-
             <button
               type="button"
               onClick={() => { window.location.href = "/app"; }}
@@ -113,6 +121,24 @@ export default function DemoPage() {
           </div>
         ))}
       </div>
+      {copied && (
+        <div
+          style={{
+            position: "fixed",
+            bottom: 80,
+            left: "50%",
+            transform: "translateX(-50%)",
+            background: "#111",
+            color: "#fff",
+            padding: "8px 12px",
+            borderRadius: 8,
+            fontSize: 13,
+            zIndex: 9999,
+          }}
+        >
+          Link copied
+        </div>
+      )}
     </main>
   );
 }
@@ -120,7 +146,7 @@ export default function DemoPage() {
 /* ================= styles ================= */
 
 const container: CSSProperties = {
-  minHeight: "100vh",
+  minHeight: "100dvh",
   display: "flex",
   justifyContent: "center",
   background: "#fff",
