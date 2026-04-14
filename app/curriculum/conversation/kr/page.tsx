@@ -91,10 +91,9 @@ const DATA: Item[] = [
   { kr: "직장 문화와 적응", en: "Work Culture and Adaptation", es: "Cultura laboral", fr: "Culture du travail", pt: "Cultura de trabalho e adaptação" }
 ];
 /* ================= 페이지 ================= */
+
 export default function Page() {
   const { targetLang } = useViewerTarget();
-
-  // 🔥 Demo 동일 copy 로직
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -108,7 +107,6 @@ export default function Page() {
     <main style={main}>
       <div style={container}>
 
-        {/* ✅ HEADER (Demo 완전 동일) */}
         <div style={{ ...headerRow, position: "relative", zIndex: 10 }}>
           <button
             type="button"
@@ -140,18 +138,52 @@ export default function Page() {
         {/* TITLE */}
         <h1 style={title}>🗣️ Conversation Curriculum (KR)</h1>
 
+
         <p style={descStrong}>
           With <b>one coupon</b>, you can study <b>one level (A1–C2)</b> for <b>30 days</b>.
         </p>
 
         {/* LIST */}
         <div style={listWrap}>
-          {/* 기존 리스트 그대로 유지 */}
+          {(() => {
+            const grouped = {
+              A1: DATA.slice(0, 10),
+              A2: DATA.slice(10, 20),
+              B1: DATA.slice(20, 30),
+              B2: DATA.slice(30, 40),
+              C1: DATA.slice(40, 50),
+              C2: DATA.slice(50, 60),
+            };
+
+            return Object.entries(grouped).map(([level, list]) =>
+              list.map((item, i) => {
+                const num = i + 1;
+
+                return (
+                  <div key={level + num} style={card}>
+                    <div style={left}>
+                      <div style={numStyle}>{num}</div>
+                    </div>
+
+                    <div style={right}>
+                      <div style={topRow}>
+                        <span style={levelBadge}>{level}</span>
+                      </div>
+
+                      <div style={kr}>{item.kr}</div>
+                      <div style={sub}>{item.en}</div>
+                      <div style={sub}>{item.es}</div>
+                      <div style={sub}>{item.fr}</div>
+                      <div style={sub}>{item.pt}</div> {/* 추가 */}
+                    </div>
+                  </div>
+                );
+              })
+            );
+          })()}
         </div>
 
       </div>
-
-      {/* ✅ Toast (Demo 동일) */}
       {copied && (
         <div
           style={{
@@ -170,7 +202,6 @@ export default function Page() {
           Link copied
         </div>
       )}
-
     </main>
   );
 }
@@ -188,13 +219,12 @@ const container: React.CSSProperties = {
   padding: "20px 16px 60px",
 };
 
-/* ✅ Demo header 그대로 */
 const headerRow: React.CSSProperties = {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
   marginBottom: 20,
-  paddingTop: "calc(env(safe-area-inset-top) + 8px)", // 🔥 핵심
+  paddingTop: "calc(env(safe-area-inset-top) + 8px)",
 };
 
 const headerActions: React.CSSProperties = {
@@ -202,17 +232,14 @@ const headerActions: React.CSSProperties = {
   gap: 10,
 };
 
-/* ✅ 버튼 구조 통일 */
 const baseBtn: React.CSSProperties = {
   height: 32,
   padding: "0 10px",
   fontSize: 12,
   lineHeight: 1,
   borderRadius: 8,
-
   WebkitAppearance: "none",
   appearance: "none",
-
   display: "inline-flex",
   alignItems: "center",
   justifyContent: "center",
@@ -241,7 +268,6 @@ const btnHeaderPrimary: React.CSSProperties = {
   cursor: "pointer",
 };
 
-/* 기존 스타일 유지 */
 const title: React.CSSProperties = {
   fontSize: 24,
   fontWeight: 800,
@@ -260,4 +286,51 @@ const listWrap: React.CSSProperties = {
   display: "flex",
   flexDirection: "column",
   gap: 10,
+};
+
+const card: React.CSSProperties = {
+  display: "flex",
+  gap: 12,
+  padding: 14,
+  borderRadius: 12,
+  background: "#fff",
+  border: "1px solid #eee",
+};
+
+const left: React.CSSProperties = {
+  width: 30,
+};
+
+const numStyle: React.CSSProperties = {
+  fontWeight: 700,
+  fontSize: 14,
+};
+
+const right: React.CSSProperties = {
+  flex: 1,
+};
+
+const topRow: React.CSSProperties = {
+  marginBottom: 4,
+};
+
+const levelBadge: React.CSSProperties = {
+  fontSize: 11,
+  color: "#4f46e5",
+  fontWeight: 700,
+};
+
+const kr: React.CSSProperties = {
+  fontSize: 14,
+  fontWeight: 700,
+  marginBottom: 4,
+};
+
+const sub: React.CSSProperties = {
+  fontSize: 12,
+  color: "#666",
+};
+
+const linkReset: React.CSSProperties = {
+  textDecoration: "none",
 };

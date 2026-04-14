@@ -3,24 +3,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
+import { useState } from "react";
+import { copyLink } from "@/utils/share";
 
 const levels = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
 export default function Page() {
   const { targetLang } = useViewerTarget();
+  const [copied, setCopied] = useState(false);
 
-  const handleShare = async () => {
-    try {
-      if (navigator.share) {
-        await navigator.share({
-          title: `Real Curriculum (${targetLang.toUpperCase()})`,
-          url: window.location.href,
-        });
-      } else {
-        await navigator.clipboard.writeText(window.location.href);
-        alert("Link copied!");
-      }
-    } catch { }
+  const handleCopy = () => {
+    copyLink(undefined, () => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
   };
 
   return (
@@ -28,34 +24,31 @@ export default function Page() {
       <div style={container}>
 
         {/* 🔥 HEADER (컨버세이션 동일 구조) */}
-        <div style={header}>
-          <Link href="/curriculum" style={linkReset}>
-            <button style={backBtn}>← Back</button>
-          </Link>
+        <div style={{ ...headerRow, position: "relative", zIndex: 10 }}>
+          <button
+            type="button"
+            onClick={() => { window.location.href = "/curriculum"; }}
+            style={btnBack}
+          >
+            ← Back
+          </button>
 
-          <div style={headerRight}>
+          <div style={headerActions}>
             <button
-              onClick={async () => {
-                if (navigator.share) {
-                  try {
-                    await navigator.share({
-                      url: window.location.href,
-                    });
-                  } catch { }
-                } else {
-                  await navigator.clipboard.writeText(window.location.href);
-                  alert("Link copied!");
-                }
-              }}
-              style={copyBtn}
+              type="button"
+              onClick={handleCopy}
+              style={btnSecondary}
             >
               Copy link
             </button>
-            <Link href="/app" style={linkReset}>
-              <button style={btnHeaderPrimary}>
-                Unlock Full Access
-              </button>
-            </Link>
+
+            <button
+              type="button"
+              onClick={() => { window.location.href = "/app"; }}
+              style={btnHeaderPrimary}
+            >
+              Unlock Full Access
+            </button>
           </div>
         </div>
 
@@ -90,8 +83,25 @@ export default function Page() {
             </div>
           ))}
         </div>
-
       </div>
+      {copied && (
+        <div
+          style={{
+            position: "fixed",
+            bottom: 80,
+            left: "50%",
+            transform: "translateX(-50%)",
+            background: "#111",
+            color: "#fff",
+            padding: "8px 12px",
+            borderRadius: 8,
+            fontSize: 13,
+            zIndex: 9999,
+          }}
+        >
+          Link copied
+        </div>
+      )}
     </main>
   );
 }
@@ -108,38 +118,48 @@ const container: React.CSSProperties = {
   margin: "0 auto",
   padding: "20px 16px 60px",
 };
-
-const header: React.CSSProperties = {
+const headerRow: React.CSSProperties = {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  marginBottom: 16,
+  marginBottom: 20,
+  paddingTop: "calc(env(safe-area-inset-top) + 8px)",
 };
 
-const headerRight: React.CSSProperties = {
+const headerActions: React.CSSProperties = {
   display: "flex",
-  gap: 8,
+  gap: 10,
 };
 
-const backBtn: React.CSSProperties = {
-  padding: "8px 12px",
+const baseBtn: React.CSSProperties = {
+  height: 32,
+  padding: "0 10px",
+  fontSize: 12,
+  lineHeight: 1,
   borderRadius: 8,
+  WebkitAppearance: "none",
+  appearance: "none",
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",
+};
+
+const btnBack: React.CSSProperties = {
+  ...baseBtn,
   border: "1px solid #ddd",
   background: "#fff",
   cursor: "pointer",
 };
 
-const copyBtn: React.CSSProperties = {
-  padding: "8px 12px",
-  borderRadius: 8,
+const btnSecondary: React.CSSProperties = {
+  ...baseBtn,
   border: "1px solid #ddd",
-  background: "#f3f4f6",
+  background: "#f5f5f5",
   cursor: "pointer",
 };
 
 const btnHeaderPrimary: React.CSSProperties = {
-  padding: "8px 14px",
-  borderRadius: 8,
+  ...baseBtn,
   background: "#111",
   color: "#fff",
   border: "none",

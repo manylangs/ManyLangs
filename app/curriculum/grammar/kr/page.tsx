@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 import { useState } from "react";
 import { copyLink } from "@/utils/share";
+/* ================= 하드코딩 데이터 ================= */
 
 const CHAPTERS = [
 
@@ -101,9 +101,6 @@ const CHAPTERS = [
 /* ================= 페이지 ================= */
 
 export default function Page() {
-  const { targetLang } = useViewerTarget();
-
-  // 🔥 Demo 동일 copy 로직
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -112,12 +109,11 @@ export default function Page() {
       setTimeout(() => setCopied(false), 2000);
     });
   };
-
   return (
     <main style={main}>
       <div style={container}>
 
-        {/* ✅ HEADER (Demo 완전 동일) */}
+        {/* HEADER */}
         <div style={{ ...headerRow, position: "relative", zIndex: 10 }}>
           <button
             type="button"
@@ -147,20 +143,31 @@ export default function Page() {
         </div>
 
         {/* TITLE */}
-        <h1 style={title}>🗣️ Conversation Curriculum (KR)</h1>
-
+        <h1 style={title}>🧩 Grammar Curriculum (KR)</h1>
         <p style={descStrong}>
           With <b>one coupon</b>, you can study <b>one level (A1–C2)</b> for <b>30 days</b>.
         </p>
 
-        {/* LIST */}
-        <div style={listWrap}>
-          {/* 기존 리스트 그대로 유지 */}
-        </div>
+        {/* LIST (반복문 1개만 사용, 로직 없음) */}
+        {CHAPTERS.map((c) => (
+          <div key={`${c.level}-${c.id}`} style={card}>
+            <div style={left}>
+              <div style={numStyle}>{c.id}</div>
+            </div>
+
+            <div style={right}>
+              <div style={levelBadge}>{c.level}</div>
+              <div style={chapterTitle}>
+                <div>{c.title.kr}</div>
+                <div style={{ fontSize: 12, opacity: 0.7 }}>
+                  {c.title.en} / {c.title.es} / {c.title.fr} / {c.title.pt}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
 
       </div>
-
-      {/* ✅ Toast (Demo 동일) */}
       {copied && (
         <div
           style={{
@@ -179,7 +186,6 @@ export default function Page() {
           Link copied
         </div>
       )}
-
     </main>
   );
 }
@@ -196,14 +202,12 @@ const container: React.CSSProperties = {
   margin: "0 auto",
   padding: "20px 16px 60px",
 };
-
-/* ✅ Demo header 그대로 */
 const headerRow: React.CSSProperties = {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
   marginBottom: 20,
-  paddingTop: "calc(env(safe-area-inset-top) + 8px)", // 🔥 핵심
+  paddingTop: "calc(env(safe-area-inset-top) + 8px)",
 };
 
 const headerActions: React.CSSProperties = {
@@ -211,17 +215,14 @@ const headerActions: React.CSSProperties = {
   gap: 10,
 };
 
-/* ✅ 버튼 구조 통일 */
 const baseBtn: React.CSSProperties = {
   height: 32,
   padding: "0 10px",
   fontSize: 12,
   lineHeight: 1,
   borderRadius: 8,
-
   WebkitAppearance: "none",
   appearance: "none",
-
   display: "inline-flex",
   alignItems: "center",
   justifyContent: "center",
@@ -250,23 +251,56 @@ const btnHeaderPrimary: React.CSSProperties = {
   cursor: "pointer",
 };
 
-/* 기존 스타일 유지 */
 const title: React.CSSProperties = {
   fontSize: 24,
   fontWeight: 800,
-  marginBottom: 6,
+  marginBottom: 20,
 };
 
+const listWrap: React.CSSProperties = {
+  display: "flex",
+  flexDirection: "column",
+  gap: 8,
+};
+
+const card: React.CSSProperties = {
+  display: "flex",
+  gap: 12,
+  padding: 12,
+  borderRadius: 10,
+  background: "#fff",
+  border: "1px solid #eee",
+};
+
+const left: React.CSSProperties = {
+  width: 50,
+};
+
+const numStyle: React.CSSProperties = {
+  fontWeight: 700,
+};
+
+const right: React.CSSProperties = {
+  flex: 1,
+};
+
+const levelBadge: React.CSSProperties = {
+  fontSize: 12,
+  color: "#4f46e5",
+  fontWeight: 700,
+};
+
+const chapterTitle: React.CSSProperties = {
+  fontSize: 14,
+};
+
+const linkReset: React.CSSProperties = {
+  textDecoration: "none",
+};
 const descStrong: React.CSSProperties = {
   fontSize: 15,
   fontWeight: 600,
   color: "#111",
   marginBottom: 24,
   lineHeight: 1.6,
-};
-
-const listWrap: React.CSSProperties = {
-  display: "flex",
-  flexDirection: "column",
-  gap: 10,
 };
