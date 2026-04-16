@@ -8,36 +8,65 @@ import { auth } from "@clerk/nextjs/server";
 
 export const runtime = "nodejs";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string);
+/* =======================
+   0️⃣ ENV 안전 체크
+======================= */
+const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY;
+
+if (!STRIPE_SECRET_KEY) {
+  throw new Error("❌ STRIPE_SECRET_KEY is missing");
+}
+
+const stripe = new Stripe(STRIPE_SECRET_KEY, {
+  maxNetworkRetries: 2,
+});
 
 const serverTimestamp = admin.firestore.FieldValue.serverTimestamp;
 
-/* ✅ amount만 필요 */
+/* =======================
+   1️⃣ 타입 정의
+======================= */
 type Body = {
   amount: "3" | "5" | "20" | "50" | "100";
 };
 
-const PRICE_ID_MAP: Record<Body["amount"], string> = {
-  "3": process.env.STRIPE_PRICE_ID_3 as string,
-  "5": process.env.STRIPE_PRICE_ID_5 as string,
-  "20": process.env.STRIPE_PRICE_ID_20 as string,
-  "50": process.env.STRIPE_PRICE_ID_50 as string,
-  "100": process.env.STRIPE_PRICE_ID_100 as string,
+/* =======================
+   2️⃣ Price 매핑
+======================= */
+const PRICE_ID_MAP: Record<Body["amount"], string | undefined> = {
+  "3": process.env.STRIPE_PRICE_ID_3,
+  "5": process.env.STRIPE_PRICE_ID_5,
+  "20": process.env.STRIPE_PRICE_ID_20,
+  "50": process.env.STRIPE_PRICE_ID_50,
+  "100": process.env.STRIPE_PRICE_ID_100,
 };
+
 function getPriceId(amount: Body["amount"]) {
   const priceId = PRICE_ID_MAP[amount];
+
   if (!priceId) {
-    throw new Error(`Missing STRIPE_PRICE_ID env for amount=${amount}`);
+    throw new Error(`❌ Missing STRIPE_PRICE_ID for amount=${amount}`);
   }
+
+  if (!priceId.startsWith("price_")) {
+    throw new Error(`❌ Invalid priceId: ${priceId}`);
+  }
+
   return priceId;
 }
 
+/* =======================
+   3️⃣ URL 생성
+======================= */
 function getBaseUrl(req: Request) {
   if (process.env.APP_URL) return process.env.APP_URL;
 
   const url = new URL(req.url);
+
   const proto =
-    req.headers.get("x-forwarded-proto") || url.protocol.replace(":", "");
+    req.headers.get("x-forwarded-proto") ||
+    url.protocol.replace(":", "");
+
   const host =
     req.headers.get("x-forwarded-host") ||
     req.headers.get("host") ||
@@ -46,69 +75,70 @@ function getBaseUrl(req: Request) {
   return `${proto}://${host}`;
 }
 
+/* =======================
+   4️⃣ API 핸들러
+======================= */
 export async function POST(req: Request) {
-  /* =======================
-     1️⃣ 서버 인증
-  ======================== */
-  const { userId } = await auth();
-
-  if (!userId) {
-    return NextResponse.json(
-      { error: "unauthorized" },
-      { status: 401 }
-    );
-  }
-
-  /* =======================
-     2️⃣ Body 파싱
-  ======================== */
-  let body: Body;
-
   try {
-    body = await req.json();
-  } catch {
-    return NextResponse.json(
-      { error: "invalid body" },
-      { status: 400 }
-    );
-  }
+    console.log("=== CHECKOUT START ===");
 
-  const { amount } = body;
+    /* 1️⃣ 인증 */
+    const { userId } = await auth();
 
-  if (!amount) {
-    return NextResponse.json(
-      { error: "missing required fields" },
-      { status: 400 }
-    );
-  }
+    if (!userId) {
+      console.log("❌ Unauthorized");
+      return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+    }
 
-  if (!["3", "5", "20", "50", "100"].includes(amount)) {
-    return NextResponse.json(
-      { error: "invalid amount" },
-      { status: 400 }
-    );
-  }
+    /* 2️⃣ Body */
+    let body: Body;
 
-  /* =======================
-     3️⃣ Stripe Session 생성
-  ======================== */
-  try {
+    try {
+      body = await req.json();
+    } catch {
+      return NextResponse.json({ error: "invalid body" }, { status: 400 });
+    }
+
+    const { amount } = body;
+
+    if (!amount) {
+      return NextResponse.json(
+        { error: "missing amount" },
+        { status: 400 }
+      );
+    }
+
+    if (!["3", "5", "20", "50", "100"].includes(amount)) {
+      return NextResponse.json(
+        { error: "invalid amount" },
+        { status: 400 }
+      );
+    }
+
+    /* 3️⃣ Stripe 준비 */
     const baseUrl = getBaseUrl(req);
+    const priceId = getPriceId(amount);
+
+    console.log("=== STRIPE DEBUG ===");
+    console.log("KEY:", STRIPE_SECRET_KEY.slice(0, 15));
+    console.log("AMOUNT:", amount);
+    console.log("PRICE:", priceId);
+    console.log("BASE URL:", baseUrl);
 
     const successUrl =
       `${baseUrl}/select-books?checkout=success&session_id={CHECKOUT_SESSION_ID}`;
+
     const cancelUrl =
       `${baseUrl}/select-books?checkout=cancel`;
 
-    const priceId = getPriceId(amount);
-
+    /* 4️⃣ Stripe 호출 */
     const session = await stripe.checkout.sessions.create({
-      //payment_method_types: ["card"], // 🔥 이 줄 추가 카드승인후 여러 결제수단 추가할 때 (Apple Pay 등)Stripe 자동 설정 쓰고 싶을 때 삭제
-
       mode: "payment",
       customer_creation: "always",
+
       success_url: successUrl,
       cancel_url: cancelUrl,
+
       client_reference_id: userId,
 
       metadata: {
@@ -116,23 +146,17 @@ export async function POST(req: Request) {
         amount,
         couponCount:
           amount === "3" ? 2 :
-            amount === "5" ? 4 :
-              amount === "20" ? 20 :
-                amount === "50" ? 60 :
-                  amount === "100" ? 150 : 0,
+          amount === "5" ? 4 :
+          amount === "20" ? 20 :
+          amount === "50" ? 60 :
+          amount === "100" ? 150 : 0,
       },
-      /* 🔥 핵심 (payment_intent fallback 대응) */
+
       payment_intent_data: {
         metadata: {
           userId,
           amount,
           priceId,
-          couponCount:
-            amount === "3" ? 2 :
-              amount === "5" ? 4 :
-                amount === "20" ? 20 :
-                  amount === "50" ? 60 :
-                    amount === "100" ? 150 : 0,
         },
       },
 
@@ -144,9 +168,9 @@ export async function POST(req: Request) {
       ],
     });
 
-    /* =======================
-       4️⃣ checkoutSessions 기록
-    ======================== */
+    console.log("✅ SESSION CREATED:", session.id);
+
+    /* 5️⃣ Firestore 기록 */
     await db
       .collection("checkoutSessions")
       .doc(session.id)
@@ -162,19 +186,26 @@ export async function POST(req: Request) {
         updatedAt: serverTimestamp(),
       });
 
-    return NextResponse.json(
-      { url: session.url },
-      { status: 200 }
-    );
+    console.log("=== CHECKOUT SUCCESS ===");
+
+    return NextResponse.json({ url: session.url });
 
   } catch (e: any) {
-    const msg =
-      typeof e?.message === "string"
-        ? e.message
-        : "checkout failed";
+    console.error("=== STRIPE ERROR FULL ===");
+    console.error("message:", e?.message);
+    console.error("type:", e?.type);
+    console.error("code:", e?.code);
+    console.error("statusCode:", e?.statusCode);
+    console.error("raw:", e);
+    console.error("==========================");
 
     return NextResponse.json(
-      { error: msg },
+      {
+        error: e?.message,
+        type: e?.type,
+        code: e?.code,
+        statusCode: e?.statusCode,
+      },
       { status: 500 }
     );
   }
