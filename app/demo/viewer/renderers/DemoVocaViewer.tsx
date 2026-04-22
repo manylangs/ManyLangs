@@ -42,9 +42,9 @@ const containerStyle: React.CSSProperties = {
 };
 
 const buttonStyle = (active: boolean): React.CSSProperties => ({
-  padding: "6px 10px",
+  padding: "4px 6px",     // 🔥 줄임
   borderRadius: 6,
-  fontSize: 13,
+  fontSize: 12,           // 🔥 줄임
   background: active ? "#333" : "#f2f2f2",
   color: active ? "#fff" : "#333",
   border: "none",
@@ -185,19 +185,20 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
             style={{
               display: "flex",
               alignItems: "center",
-              justifyContent: "space-between",
-              flexWrap: "wrap",
               gap: 6,
+              flexWrap: "nowrap",   // 🔥 줄바꿈 금지
+              overflowX: "auto",    // 🔥 넘치면 스크롤
             }}
           >
             <Link
               href="/demo"
               style={{
-                fontSize: 13,
+                fontSize: 12,        // 🔥 줄임
                 fontWeight: 600,
                 color: "#111",
                 textDecoration: "none",
-                flexShrink: 0,   // 🔥 핵심 (절대 안 줄어듦)
+                flexShrink: 0,       // 🔥 유지
+                marginRight: 6,
               }}
             >
               ← Back
@@ -205,7 +206,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
             <div
               style={{
                 display: "flex",
-                flexWrap: "wrap",
+                flexWrap: "nowrap",
                 gap: 6,
                 justifyContent: "flex-end",
               }}
@@ -273,7 +274,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
         </div>
 
         {/* 🔥 AUDIO */}
-       
+
         <div style={{ borderBottom: "1px solid #eee", padding: "6px 0" }}>
           <VocaAudioController lang={lang} level={level} chapter={chapter} />
         </div>
