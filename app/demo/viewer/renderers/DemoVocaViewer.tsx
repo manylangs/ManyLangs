@@ -147,8 +147,20 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
 
   return (
     <div style={containerStyle}>
-      <div style={{ background: "#fff" }}>
-        <div style={{ marginBottom: 6 }}>
+      {/* 🔥 HEADER (Grammar 방식) */}
+      <div style={{ position: "sticky", top: 0, background: "#fff", zIndex: 30 }}>
+
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            padding: "10px 0",
+            borderBottom: "1px solid #eee",
+            gap: 6,
+          }}
+        >
+          {/* 🔥 Back */}
           <Link
             href="/demo"
             style={{
@@ -156,48 +168,50 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
               fontWeight: 600,
               color: "#111",
               textDecoration: "none",
+              flexShrink: 0,
             }}
           >
             ← Back
           </Link>
-        </div>
 
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "flex-end",
-            gap: 6,
-            flexWrap: "wrap",
-            marginBottom: 8,
-          }}
-        >
-          <button
-            onClick={() => setShowTargetText(!showTargetText)}
-            style={buttonStyle(false)}
-          >
-            Toggle
-          </button>
-
-          <button
-            onClick={async () => {
-              if (navigator.share) {
-                try {
-                  await navigator.share({
-                    url: window.location.href,
-                  });
-                } catch {}
-              } else {
-                await navigator.clipboard.writeText(window.location.href);
-                alert("Link copied!");
-              }
+          {/* 🔥 버튼 그룹 */}
+          <div
+            style={{
+              display: "flex",
+              gap: 6,
+              flexWrap: "wrap",
+              justifyContent: "flex-end",
             }}
-            style={buttonStyle(false)}
           >
-            Copy link
-          </button>
+            <button
+              onClick={() => setShowTargetText(!showTargetText)}
+              style={buttonStyle(false)}
+            >
+              Toggle
+            </button>
+
+            <button
+              onClick={async () => {
+                if (navigator.share) {
+                  try {
+                    await navigator.share({
+                      url: window.location.href,
+                    });
+                  } catch { }
+                } else {
+                  await navigator.clipboard.writeText(window.location.href);
+                  alert("Link copied!");
+                }
+              }}
+              style={buttonStyle(false)}
+            >
+              Copy link
+            </button>
+          </div>
         </div>
 
-        <div style={{ marginBottom: 10 }}>
+        {/* 🔥 Unlock */}
+        <div style={{ padding: "6px 0", borderBottom: "1px solid #eee" }}>
           <Link href="/app" style={{ width: "100%" }}>
             <button
               style={{
