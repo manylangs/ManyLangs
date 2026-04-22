@@ -33,17 +33,17 @@ const containerStyle: React.CSSProperties = {
   padding: "0 clamp(12px, 4vw, 24px)",
 };
 
+// ✅ 교체
 const buttonStyle = (active: boolean): React.CSSProperties => ({
-  padding: "6px 10px",
+  padding: "4px 6px",
   borderRadius: 6,
-  fontSize: 13,
+  fontSize: 12,
   background: active ? "#333" : "#f2f2f2",
   color: active ? "#fff" : "#333",
   border: "none",
   cursor: active ? "default" : "pointer",
   whiteSpace: "nowrap",
 });
-
 const sentenceStyle: React.CSSProperties = {
   borderRadius: 6,
   padding: "4px 6px",
@@ -209,41 +209,57 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
 
   return (
     <div style={containerStyle}>
-      {/* ================= HEADER ================= */}
-      <div style={{ position: "sticky", top: 0, background: "#fff", zIndex: 30 }}>
-
+      <div
+        style={{
+          position: "sticky",
+          top: 0,
+          background: "#fff",
+          zIndex: 30,
+          paddingTop: "calc(env(safe-area-inset-top) + 8px)",
+        }}
+      >
         <div
           style={{
             display: "flex",
             flexDirection: "column",
-            padding: "10px 0",
+            padding: "10px 16px",
             borderBottom: "1px solid #eee",
             gap: 6,
           }}
         >
-
-          {/* 🔥 1줄 */}
+          {/* 1줄 */}
           <div
             style={{
               display: "flex",
               alignItems: "center",
-              justifyContent: "space-between",
-              flexWrap: "wrap",
               gap: 6,
+              flexWrap: "nowrap",
+              overflowX: "auto",
+              minWidth: 0,
             }}
           >
-            {/* 🔥 Back 왼쪽 */}
-            <Link href="/demo" style={{ fontSize: 13 }}>
+            <Link
+              href="/demo"
+              style={{
+                fontSize: 12,
+                fontWeight: 600,
+                color: "#111",
+                textDecoration: "none",
+                flexShrink: 0,
+                marginRight: 6,
+              }}
+            >
               ← Back
             </Link>
 
-            {/* 🔥 버튼 그룹 */}
             <div
               style={{
                 display: "flex",
-                flexWrap: "wrap",
+                flexWrap: "nowrap",
                 gap: 6,
                 justifyContent: "flex-end",
+                minWidth: 0,
+                flexShrink: 0,
               }}
             >
               {ALL_STUDY_LANGS
@@ -285,7 +301,7 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
             </div>
           </div>
 
-          {/* 🔥 2줄 (모바일 핵심) */}
+          {/* 2줄 Unlock */}
           <div
             style={{
               width: "100%",
@@ -306,10 +322,9 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
               </button>
             </Link>
           </div>
-
         </div>
 
-        {/* 🔥 GUIDE */}
+        {/* GUIDE */}
         <div
           style={{
             fontSize: 13,
@@ -319,13 +334,14 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
             borderRadius: 10,
             border: "1px solid #eee",
             marginTop: 10,
+            marginLeft: 16,
+            marginRight: 16,
           }}
         >
           {guideTexts[studyLang].map((t, i) => (
             <div key={i}>{t}</div>
           ))}
         </div>
-
       </div>
       <div style={{ padding: "30px 0" }}>
         <div style={{ marginBottom: 30 }}>
