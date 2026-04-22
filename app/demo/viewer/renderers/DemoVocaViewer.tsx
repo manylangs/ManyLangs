@@ -38,7 +38,6 @@ const TTS_LANG_MAP: Record<string, string> = {
 const containerStyle: React.CSSProperties = {
   maxWidth: 1100,
   margin: "0 auto",
-  padding: "0 clamp(12px, 4vw, 24px)",
 };
 
 const buttonStyle = (active: boolean): React.CSSProperties => ({
@@ -168,7 +167,15 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
     <div style={containerStyle}>
       {/* 🔥 HEADER */}
       {/* ================= HEADER ================= */}
-      <div style={{ position: "sticky", top: 0, background: "#fff", zIndex: 30 }}>
+      <div
+        style={{
+          position: "sticky",
+          top: 0,
+          background: "#fff",
+          zIndex: 30,
+          paddingTop: 8, // 🔥 핵심
+        }}
+      >
 
         <div
           style={{
@@ -297,7 +304,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
         </div>
       </div>
       {/* 🔥 CONTENT */}
-      <div style={{ padding: "30px 0" }}>
+      <div style={{ padding: "0 16px 30px" }}>
         {blocks.map((block, idx) => {
           const setNumber = idx + 1;
 
