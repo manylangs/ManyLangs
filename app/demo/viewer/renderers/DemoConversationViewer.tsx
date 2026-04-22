@@ -34,16 +34,18 @@ const containerStyle: React.CSSProperties = {
   margin: "0 auto",
 };
 
+// 🔥 START - buttonStyle 통일 (Voca 기준)
 const buttonStyle = (active: boolean): React.CSSProperties => ({
-  padding: "6px 10px",
+  padding: "4px 6px",     // 🔥 줄임 (핵심)
   borderRadius: 6,
-  fontSize: 13,
+  fontSize: 12,           // 🔥 줄임 (핵심)
   background: active ? "#333" : "#f2f2f2",
   color: active ? "#fff" : "#333",
   border: "none",
   cursor: active ? "default" : "pointer",
-  whiteSpace: "nowrap", // 🔥 Real 동일
+  whiteSpace: "nowrap",
 });
+// 🔥 END
 
 /* ================= GUIDE ================= */
 
@@ -281,9 +283,12 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
           {/* 🔥 2줄 Unlock */}
           <div
             style={{
-              width: "100%",
               display: "flex",
-              justifyContent: "flex-end",
+              flexWrap: "nowrap",
+              gap: 6,
+              minWidth: 0,
+              flexShrink: 0,
+              justifyContent: "flex-end", // ✅ 추가
             }}
           >
             <Link href="/app" style={{ width: "100%" }}>
