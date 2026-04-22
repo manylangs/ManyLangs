@@ -1,7 +1,7 @@
 "use client";
 
 import { speakText } from "@/utils/tts";
-import { useEffect, useState, useMemo, useRef } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 import VocaAudioController from "@/components/audio/controllers/VocaAudioController";
@@ -61,7 +61,6 @@ const sentenceStyle: React.CSSProperties = {
 
 export default function DemoVocaViewer({ level, chapter }: Props) {
   const { targetLang, setTargetLang } = useViewerTarget();
-  const router = useRouter();
   const lang = targetLang || "kr";
 
   const [showTargetText, setShowTargetText] = useState(true);
@@ -110,22 +109,9 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
   }, [targetLang]);
-  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
+
   const [playingKey, setPlayingKey] = useState<string | null>(null);
 
-  const ttsLang = useMemo(
-    () => TTS_LANG_MAP[targetLang] ?? "en-US",
-    [targetLang]
-  );
-
-
-  /* 🔥 필수 */
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    utterRef.current = null;
-    setPlayingKey(null);
-  }, [targetLang, chapter]);
 
   useEffect(() => {
     if (!lang) return;
