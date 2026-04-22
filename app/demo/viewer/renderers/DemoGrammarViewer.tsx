@@ -300,6 +300,8 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
   };
   return (
     <div style={containerStyle}>
+
+      {/* ✅ HEADER */}
       <div style={{ position: "sticky", top: 0, background: "#fff", zIndex: 30 }}>
         <div
           style={{
@@ -310,7 +312,7 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
             gap: 6,
           }}
         >
-          {/* 🔥 1줄 */}
+          {/* 1줄 */}
           <div
             style={{
               display: "flex",
@@ -320,20 +322,11 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
               gap: 6,
             }}
           >
-            {/* ✅ BACK */}
             <Link href="/demo" style={{ fontSize: 13 }}>
               ← Back
             </Link>
 
-            {/* ✅ 버튼 그룹 */}
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: 6,
-                justifyContent: "flex-end",
-              }}
-            >
+            <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
               {ALL_STUDY_LANGS
                 .filter((l) => l !== targetLang)
                 .map((l) => (
@@ -346,7 +339,6 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
                   </button>
                 ))}
 
-              {/* 👉 Voca 기준: 상태 표시 안함 */}
               <button
                 onClick={() => setShowTargetText((v) => !v)}
                 style={buttonStyle(false)}
@@ -374,23 +366,77 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
             </div>
           </div>
 
-          {/* 🔥 2줄 */}
-          <div style={{ width: "100%" }}>
-            <Link href="/app">
-              <button
-                style={{
-                  ...buttonStyle(false),
-                  background: "#111",
-                  color: "#fff",
-                  width: "100%",
-                }}
-              >
-                Unlock Full Access
-              </button>
-            </Link>
-          </div>
+          {/* 2줄 */}
+          <Link href="/app">
+            <button
+              style={{
+                ...buttonStyle(false),
+                background: "#111",
+                color: "#fff",
+                width: "100%",
+              }}
+            >
+              Unlock Full Access
+            </button>
+          </Link>
         </div>
       </div>
+
+      {/* ✅ CONTENT (이게 빠져서 지금 화면 빈거) */}
+      <div style={{ padding: "30px 0" }}>
+
+        {/* 제목 */}
+        <div style={{ marginBottom: 30 }}>
+          {showTargetText && (
+            <div style={{ fontSize: 24, fontWeight: 700 }}>
+              {titleTarget}
+            </div>
+          )}
+          <div style={{ fontSize: 20, color: "#444" }}>
+            {titleStudy}
+          </div>
+        </div>
+
+        {/* Explanation */}
+        <div style={{ marginBottom: 32 }}>
+          <div style={{ fontWeight: 700, marginBottom: 12 }}>
+            Explanation
+          </div>
+          {explanations.map((b, i) =>
+            renderLine(b, i, "explanation")
+          )}
+        </div>
+
+        {/* Examples */}
+        <div>
+          <div style={{ fontWeight: 700, marginBottom: 12 }}>
+            Examples
+          </div>
+
+          <div style={{ fontWeight: 600, marginBottom: 8 }}>
+            Core Patterns
+          </div>
+          {byVariant("core_patterns").map((b, i) =>
+            renderLine(b, i, "core_patterns")
+          )}
+
+          <div style={{ fontWeight: 600, margin: "20px 0 8px" }}>
+            Variations
+          </div>
+          {byVariant("variations").map((b, i) =>
+            renderLine(b, i, "variations")
+          )}
+
+          <div style={{ fontWeight: 600, margin: "20px 0 8px" }}>
+            Extended Usage
+          </div>
+          {byVariant("extended_usage").map((b, i) =>
+            renderLine(b, i, "extended_usage")
+          )}
+        </div>
+
+      </div>
+
     </div>
   );
 }
