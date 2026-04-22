@@ -3,6 +3,7 @@
 import { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
+import { speakText } from "@/utils/tts";
 
 type StudyLang = "en" | "es" | "fr" | "pt";
 const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
@@ -58,7 +59,6 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
   const [data, setData] = useState<GrammarData | null>(null);
   const [status, setStatus] = useState<Status>("loading");
 
-  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
   const [playingKey, setPlayingKey] = useState<string | null>(null);
 
   const guideTexts: Record<StudyLang, string[]> = {
@@ -101,35 +101,14 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
 
   const speak = (text: string, key: string) => {
     if (!text.trim()) return;
-    if (typeof window === "undefined") return;
 
-    if (playingKey === key) return; // ✅ 중복 클릭 방지
+    setPlayingKey(key);
+    speakText(text, targetLang);
 
-    const synth = window.speechSynthesis;
-    synth.cancel();
-
-    const u = new SpeechSynthesisUtterance(text);
-
-    u.onstart = () => setPlayingKey(key);
-    u.onend = () => {
+    setTimeout(() => {
       setPlayingKey(null);
-      utterRef.current = null;
-    };
-    u.onerror = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-
-    utterRef.current = u;
-    synth.speak(u);
+    }, 2000); // 필요시 조정
   };
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    window.speechSynthesis.cancel();
-    utterRef.current = null;
-    setPlayingKey(null);
-  }, [targetLang, chapter]);
 
   useEffect(() => {
     if (!lang) return;
