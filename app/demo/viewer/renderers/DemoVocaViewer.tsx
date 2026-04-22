@@ -26,13 +26,7 @@ type Props = {
 };
 
 type Status = "loading" | "ready" | "error";
-const TTS_LANG_MAP: Record<string, string> = {
-  kr: "ko-KR",
-  en: "en-US",
-  es: "es-ES",
-  fr: "fr-FR",
-  pt: "pt-PT",
-};
+
 
 /* 🔥 RealViewer 기준 스타일 */
 const containerStyle: React.CSSProperties = {
@@ -59,8 +53,8 @@ const sentenceStyle: React.CSSProperties = {
 };
 
 export default function DemoVocaViewer({ level, chapter }: Props) {
-  const { targetLang, setTargetLang } = useViewerTarget();
-  const lang = targetLang || "kr";
+  const { targetLang } = useViewerTarget();
+  const lang = targetLang;
 
   const [showTargetText, setShowTargetText] = useState(true);
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
@@ -108,9 +102,6 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
   }, [targetLang]);
-
-  const [playingKey, setPlayingKey] = useState<string | null>(null);
-
 
   useEffect(() => {
     if (!lang) return;
@@ -331,8 +322,6 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
                       ...sentenceStyle,
                       fontWeight: 700,
                       cursor: "pointer",
-                      background:
-                        playingKey === `word-${idx}` ? "#f3f4f6" : "transparent",
                     }}
                   >
                     {word}
@@ -354,10 +343,6 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
                         style={{
                           ...sentenceStyle,
                           cursor: "pointer",
-                          background:
-                            playingKey === `voca-${idx}-${i}`
-                              ? "#f3f4f6"
-                              : "transparent",
                         }}
                       >
                         {t}

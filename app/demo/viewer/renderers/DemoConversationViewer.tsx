@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useMemo, useRef } from "react";
 import Link from "next/link";
 import ConversationAudioController from "@/components/audio/controllers/ConversationAudioController";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
@@ -28,20 +27,11 @@ type Props = {
 type Status = "loading" | "ready" | "error";
 /* 🔥 한줄 음성 추가 */
 
-const TTS_LANG_MAP: Record<string, string> = {
-  kr: "ko-KR",
-  en: "en-US",
-  es: "es-ES",
-  fr: "fr-FR",
-  pt: "pt-PT",
-};
-
 /* ================= 스타일 (🔥 Real 기준 그대로) ================= */
 
 const containerStyle: React.CSSProperties = {
   maxWidth: 1100,
   margin: "0 auto",
-  padding: "0 clamp(12px, 4vw, 24px)",
 };
 
 const buttonStyle = (active: boolean): React.CSSProperties => ({
@@ -195,40 +185,58 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
   return (
     <div style={containerStyle}>
       {/* ================= HEADER ================= */}
-      <div style={{ position: "sticky", top: 0, background: "#fff", zIndex: 30 }}>
+      <div
+        style={{
+          position: "sticky",
+          top: 0,
+          background: "#fff",
+          zIndex: 30,
+          paddingTop: "calc(env(safe-area-inset-top) + 8px)",
+        }}
+      >
 
         <div
           style={{
             display: "flex",
-            flexDirection: "column", // 🔥 핵심
-            padding: "10px 0",
+            flexDirection: "column",
+            padding: "10px 16px",
             borderBottom: "1px solid #eee",
             gap: 6,
           }}
         >
 
-          {/* 🔥 1줄: Back + 버튼들 */}
+          {/* 🔥 1줄 */}
           <div
             style={{
               display: "flex",
               alignItems: "center",
-              justifyContent: "space-between",
-              flexWrap: "wrap",
               gap: 6,
+              flexWrap: "nowrap",
+              overflowX: "auto",
+              minWidth: 0,
             }}
           >
-            {/* 🔥 Back 왼쪽 */}
-            <Link href="/demo" style={{ fontSize: 13 }}>
+            <Link
+              href="/demo"
+              style={{
+                fontSize: 12,
+                fontWeight: 600,
+                color: "#111",
+                textDecoration: "none",
+                flexShrink: 0,
+                marginRight: 6,
+              }}
+            >
               ← Back
             </Link>
 
-            {/* 버튼 그룹 */}
             <div
               style={{
                 display: "flex",
-                flexWrap: "wrap",
+                flexWrap: "nowrap",
                 gap: 6,
-                justifyContent: "flex-end",
+                minWidth: 0,
+                flexShrink: 0,
               }}
             >
               {ALL_STUDY_LANGS
@@ -270,7 +278,7 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
             </div>
           </div>
 
-          {/* 🔥 2줄: Unlock (모바일 대응) */}
+          {/* 🔥 2줄 Unlock */}
           <div
             style={{
               width: "100%",
@@ -284,7 +292,7 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
                   ...buttonStyle(false),
                   background: "#111",
                   color: "#fff",
-                  width: "100%", // 🔥 핵심 (모바일 2줄)
+                  width: "100%",
                 }}
               >
                 Unlock Full Access
@@ -294,14 +302,8 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
 
         </div>
 
-        {/* AUDIO */}
-        <div
-          style={{
-            borderBottom: "1px solid #eee",
-            paddingTop: 6,
-            paddingBottom: 6,
-          }}
-        >
+        {/* 🔥 AUDIO */}
+        <div style={{ borderBottom: "1px solid #eee", padding: "6px 16px" }}>
           <ConversationAudioController
             lang={lang}
             level={level}
@@ -309,24 +311,25 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
           />
         </div>
 
-        {/* GUIDE */}
-        {showGuide && (
-          <div
-            style={{
-              fontSize: 13,
-              color: "#666",
-              background: "#fafafa",
-              padding: "12px 14px",
-              borderRadius: 10,
-              border: "1px solid #eee",
-              marginTop: 10,
-            }}
-          >
-            {guideTexts[studyLang].map((t, i) => (
-              <div key={i}>{t}</div>
-            ))}
-          </div>
-        )}
+        {/* 🔥 GUIDE */}
+        <div
+          style={{
+            fontSize: 13,
+            color: "#666",
+            background: "#fafafa",
+            padding: "12px 14px",
+            borderRadius: 10,
+            border: "1px solid #eee",
+            marginTop: 10,
+            marginLeft: 16,
+            marginRight: 16,
+          }}
+        >
+          {guideTexts[studyLang].map((t, i) => (
+            <div key={i}>{t}</div>
+          ))}
+        </div>
+
       </div>
 
       {/* ================= CONTENT ================= */}
