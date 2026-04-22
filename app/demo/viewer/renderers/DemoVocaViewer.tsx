@@ -4,7 +4,6 @@ import { speakText } from "@/utils/tts";
 import { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
-import { useRouter } from "next/navigation";
 import VocaAudioController from "@/components/audio/controllers/VocaAudioController";
 
 type StudyLang = "en" | "es" | "fr" | "pt";
@@ -205,10 +204,18 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
               gap: 6,
             }}
           >
-            <Link href="/demo" style={{ fontSize: 13 }}>
+            <Link
+              href="/demo"
+              style={{
+                fontSize: 13,
+                fontWeight: 600,
+                color: "#111",
+                textDecoration: "none",
+                flexShrink: 0,   // 🔥 핵심 (절대 안 줄어듦)
+              }}
+            >
               ← Back
             </Link>
-
             <div
               style={{
                 display: "flex",
@@ -280,29 +287,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
         </div>
 
         {/* 🔥 AUDIO */}
-        {/* 🌍 Language Selector */}
-        <div style={{ marginTop: 10 }}>
-          <select
-            value={targetLang || "kr"}
-            onChange={(e) => {
-              const newLang = e.target.value;
-              setTargetLang(newLang);
-              router.push(`/demo/${newLang}/voca/${level}/${chapter}`);
-            }}
-            style={{
-              padding: "8px 12px",
-              borderRadius: 8,
-              border: "1px solid #ddd",
-              width: "100%",
-            }}
-          >
-            <option value="kr">Korean</option>
-            <option value="en">English</option>
-            <option value="es">Spanish</option>
-            <option value="fr">French</option>
-            <option value="pt">Portuguese</option>
-          </select>
-        </div>
+       
         <div style={{ borderBottom: "1px solid #eee", padding: "6px 0" }}>
           <VocaAudioController lang={lang} level={level} chapter={chapter} />
         </div>
