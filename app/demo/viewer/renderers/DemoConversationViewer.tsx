@@ -5,6 +5,7 @@ import { useMemo, useRef } from "react";
 import Link from "next/link";
 import ConversationAudioController from "@/components/audio/controllers/ConversationAudioController";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
+import { speakText } from "@/utils/tts";
 
 type StudyLang = "en" | "es" | "fr" | "pt";
 const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
@@ -103,42 +104,13 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
   const [blocks, setBlocks] = useState<Block[]>([]);
   const [status, setStatus] = useState<Status>("loading");
-  /* 🔥 추가 */
-  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
-  const [playingKey, setPlayingKey] = useState<string | null>(null);
 
-  const ttsLang = useMemo(
-    () => TTS_LANG_MAP[targetLang] ?? "en-US",
-    [targetLang]
-  );
   useEffect(() => {
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
   }, [targetLang]);
 
   /* 🔥 여기 ↓↓↓ 정확히 이 위치 */
-  const speak = (text: string, key: string) => {
-    if (!text.trim()) return;
-
-    const synth = window.speechSynthesis;
-    synth.cancel();
-
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = ttsLang;
-
-    u.onstart = () => setPlayingKey(key);
-    u.onend = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-    u.onerror = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-
-    utterRef.current = u;
-    synth.speak(u);
-  };
 
   useEffect(() => {
     if (!lang) return;
@@ -380,12 +352,10 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
 
                   {showTargetText && (
                     <div
-                      onClick={() => speak(targetText, key)}
+                      onClick={() => speakText(targetText, targetLang)}
                       style={{
                         fontWeight: 600,
                         cursor: "pointer",
-                        background:
-                          playingKey === key ? "#f3f4f6" : "transparent",
                       }}
                     >
                       <strong>{line.speaker}:</strong> {targetText}
