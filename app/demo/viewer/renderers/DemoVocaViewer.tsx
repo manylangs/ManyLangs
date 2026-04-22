@@ -173,7 +173,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
           top: 0,
           background: "#fff",
           zIndex: 30,
-          paddingTop: 8, // 🔥 핵심
+          paddingTop: "calc(env(safe-area-inset-top) + 8px)",
         }}
       >
 
@@ -181,7 +181,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
           style={{
             display: "flex",
             flexDirection: "column",
-            padding: "10px 0",
+            padding: "10px 16px",
             borderBottom: "1px solid #eee",
             gap: 6,
           }}
@@ -193,8 +193,9 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
               display: "flex",
               alignItems: "center",
               gap: 6,
-              flexWrap: "nowrap",   // 🔥 줄바꿈 금지
-              overflowX: "auto",    // 🔥 넘치면 스크롤
+              flexWrap: "nowrap",
+              overflowX: "auto",
+              minWidth: 0,
             }}
           >
             <Link
@@ -216,6 +217,8 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
                 flexWrap: "nowrap",
                 gap: 6,
                 justifyContent: "flex-end",
+                minWidth: 0,
+                flexShrink: 0,
               }}
             >
               {ALL_STUDY_LANGS
@@ -282,7 +285,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
 
         {/* 🔥 AUDIO */}
 
-        <div style={{ borderBottom: "1px solid #eee", padding: "6px 0" }}>
+        <div style={{ borderBottom: "1px solid #eee", padding: "6px 16px" }}>
           <VocaAudioController lang={lang} level={level} chapter={chapter} />
         </div>
 
@@ -296,6 +299,8 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
             borderRadius: 10,
             border: "1px solid #eee",
             marginTop: 10,
+            marginLeft: 16,
+            marginRight: 16,
           }}
         >
           {guideTexts[studyLang].map((t, i) => (
