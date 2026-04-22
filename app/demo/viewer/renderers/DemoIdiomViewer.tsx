@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState, useMemo, useRef } from "react";
+import { speakText } from "@/utils/tts";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
-
 import IdiomAudioController from "@/components/audio/controllers/IdiomAudioController";
 
 type StudyLang = "en" | "es" | "fr" | "pt";
@@ -29,13 +29,6 @@ type Props = {
 };
 
 type Status = "loading" | "ready" | "error";
-const TTS_LANG_MAP: Record<string, string> = {
-  kr: "ko-KR",
-  en: "en-US",
-  es: "es-ES",
-  fr: "fr-FR",
-  pt: "pt-PT",
-};
 
 /* 🔥 Real 스타일 */
 const containerStyle: React.CSSProperties = {
@@ -69,13 +62,6 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
   const [groupedBlocks, setGroupedBlocks] = useState<Record<number, Block[]>>({});
   const [status, setStatus] = useState<Status>("loading");
-  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
-  const [playingKey, setPlayingKey] = useState<string | null>(null);
-
-  const ttsLang = useMemo(
-    () => TTS_LANG_MAP[targetLang] ?? "en-US",
-    [targetLang]
-  );
   const TARGET_KEY = "target";
 
   const guideTexts: Record<StudyLang, string[]> = {
@@ -117,37 +103,7 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
   }, [targetLang]);
-  const speak = (text: string, key: string) => {
-    if (!text.trim()) return;
-    if (typeof window === "undefined") return;
 
-    const synth = window.speechSynthesis;
-    synth.cancel();
-
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = ttsLang;
-
-    u.onstart = () => setPlayingKey(key);
-    u.onend = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-    u.onerror = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-
-    utterRef.current = u;
-    synth.speak(u);
-  };
-
-  /* 🔥 바로 아래 필수 */
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    window.speechSynthesis.cancel();
-    utterRef.current = null;
-    setPlayingKey(null);
-  }, [targetLang, chapter]);
   useEffect(() => {
     if (!lang) return;
 
@@ -209,39 +165,57 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
 
   return (
     <div style={containerStyle}>
-      {/* 🔥 HEADER */}
-      <div style={{ position: "sticky", top: 0, background: "#fff", zIndex: 30 }}>
-
+      <div
+        style={{
+          position: "sticky",
+          top: 0,
+          background: "#fff",
+          zIndex: 30,
+          paddingTop: "calc(env(safe-area-inset-top) + 8px)",
+        }}
+      >
         <div
           style={{
             display: "flex",
             flexDirection: "column",
-            padding: "10px 0",
+            padding: "10px 16px",
             borderBottom: "1px solid #eee",
             gap: 6,
           }}
         >
-
-          {/* 🔥 1줄: Back + 버튼 */}
+          {/* 🔥 1줄 */}
           <div
             style={{
               display: "flex",
               alignItems: "center",
-              justifyContent: "space-between",
-              flexWrap: "wrap",
               gap: 6,
+              flexWrap: "nowrap",
+              overflowX: "auto",
+              minWidth: 0,
             }}
           >
-            <Link href="/demo" style={{ fontSize: 13 }}>
+            <Link
+              href="/demo"
+              style={{
+                fontSize: 12,
+                fontWeight: 600,
+                color: "#111",
+                textDecoration: "none",
+                flexShrink: 0,
+                marginRight: 6,
+              }}
+            >
               ← Back
             </Link>
 
             <div
               style={{
                 display: "flex",
-                flexWrap: "wrap",
+                flexWrap: "nowrap",
                 gap: 6,
                 justifyContent: "flex-end",
+                minWidth: 0,
+                flexShrink: 0,
               }}
             >
               {ALL_STUDY_LANGS
@@ -278,62 +252,42 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
                 }}
                 style={buttonStyle(false)}
               >
-                Copy link
+                Share
               </button>
             </div>
           </div>
-
-          {/* 🔥 2줄: Unlock */}
-          <div
-            style={{
-              width: "100%",
-              display: "flex",
-              justifyContent: "flex-end",
-            }}
-          >
-            <Link href="/app" style={{ width: "100%" }}>
-              <button
-                style={{
-                  ...buttonStyle(false),
-                  background: "#111",
-                  color: "#fff",
-                  width: "100%",
-                }}
-              >
-                Unlock Full Access
-              </button>
-            </Link>
-          </div>
         </div>
+      </div>
 
-        {/* 🔥 AUDIO */}
-        <div style={{ borderBottom: "1px solid #eee", padding: "6px 0" }}>
-          <IdiomAudioController lang={lang} level={level} chapter={chapter} />
-        </div>
+      {/* 🔥 AUDIO */}
+      <div style={{ borderBottom: "1px solid #eee", padding: "6px 16px" }}>
+        <IdiomAudioController lang={lang} level={level} chapter={chapter} />
+      </div>
 
-        {/* 🔥 GUIDE */}
-        <div
-          style={{
-            fontSize: 13,
-            color: "#666",
-            background: "#fafafa",
-            padding: "12px 14px",
-            borderRadius: 10,
-            border: "1px solid #eee",
-            marginTop: 10,
-          }}
-        >
-          {guideTexts[studyLang].map((t, i) => (
-            <div key={i}>{t}</div>
-          ))}
-        </div>
+      {/* 🔥 GUIDE */}
+      <div
+        style={{
+          fontSize: 13,
+          color: "#666",
+          background: "#fafafa",
+          padding: "12px 14px",
+          borderRadius: 10,
+          border: "1px solid #eee",
+          marginTop: 10,
+          marginLeft: 16,
+          marginRight: 16,
+        }}
+      >
+        {guideTexts[studyLang].map((t, i) => (
+          <div key={i}>{t}</div>
+        ))}
       </div>
 
       {/* 🔥 CONTENT */}
       <div style={{ padding: "30px 0" }}>
-        {Object.entries(groupedBlocks)
+        {Object.entries(groupedBlocks as Record<number, Block[]>)
           .sort(([a], [b]) => Number(a) - Number(b))
-          .map(([set, setBlocks]) => (
+          .map(([set, setBlocks]: [string, Block[]]) => (
             <div key={set} style={{ marginBottom: 40 }}>
               <div style={{ fontWeight: 700, marginBottom: 12 }}>
                 SET {set}
@@ -350,13 +304,11 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
                   <section key={idx} style={{ marginBottom: 30 }}>
                     {showTargetText && (
                       <div
-                        onClick={() => speak(expression, `exp-${set}-${idx}`)}
+                        onClick={() => speakText(expression, targetLang)}
                         style={{
                           ...sentenceStyle,
                           fontWeight: 700,
                           cursor: "pointer",
-                          background:
-                            playingKey === `exp-${set}-${idx}` ? "#f3f4f6" : "transparent",
                         }}
                       >
                         {expression}
@@ -371,12 +323,10 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
 
                     {showTargetText && (
                       <div
-                        onClick={() => speak(explanation, `expl-${set}-${idx}`)}
+                        onClick={() => speakText(explanation, targetLang)}
                         style={{
                           ...sentenceStyle,
                           cursor: "pointer",
-                          background:
-                            playingKey === `expl-${set}-${idx}` ? "#f3f4f6" : "transparent",
                         }}
                       >
                         {explanation}
@@ -395,14 +345,10 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
                         <div key={i} style={{ marginBottom: 14 }}>
                           {showTargetText && (
                             <div
-                              onClick={() => speak(t, `ex-${set}-${idx}-${i}`)}
+                              onClick={() => speakText(t, targetLang)}
                               style={{
                                 ...sentenceStyle,
                                 cursor: "pointer",
-                                background:
-                                  playingKey === `ex-${set}-${idx}-${i}`
-                                    ? "#f3f4f6"
-                                    : "transparent",
                               }}
                             >
                               {t}
