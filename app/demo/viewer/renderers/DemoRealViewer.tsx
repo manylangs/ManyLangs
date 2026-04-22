@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState, useMemo, useRef } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
+import { speakText } from "@/utils/tts";
 import RealAudioController from "@/components/audio/controllers/RealAudioController";
 
 type Sentence = {
@@ -23,16 +24,18 @@ type StudyLang = "en" | "es" | "fr" | "pt";
 
 /* ================= 스타일 ================= */
 
+/* ===== [REPLACE_START: STYLE_REAL_TO_VOCA] ===== */
+
+/* 🔥 VocaViewer 기준 스타일 */
 const containerStyle: React.CSSProperties = {
   maxWidth: 1100,
   margin: "0 auto",
-  padding: "0 clamp(12px, 4vw, 24px)",
 };
 
 const buttonStyle = (active: boolean): React.CSSProperties => ({
-  padding: "6px 10px",
+  padding: "4px 6px",
   borderRadius: 6,
-  fontSize: 13,
+  fontSize: 12,
   background: active ? "#333" : "#f2f2f2",
   color: active ? "#fff" : "#333",
   border: "none",
@@ -40,12 +43,13 @@ const buttonStyle = (active: boolean): React.CSSProperties => ({
   whiteSpace: "nowrap",
 });
 
-/* 🔥 클릭 제거된 문장 스타일 */
 const sentenceStyle: React.CSSProperties = {
   borderRadius: 6,
   padding: "4px 6px",
   lineHeight: 1.7,
 };
+
+/* ===== [REPLACE_END: STYLE_REAL_TO_VOCA] ===== */
 
 /* ================= 컴포넌트 ================= */
 
@@ -92,56 +96,6 @@ export default function DemoRealViewer({ level, chapter }: Props) {
     ],
   };
 
-  const TTS_LANG_MAP: Record<string, string> = {
-    kr: "ko-KR",
-    en: "en-US",
-    es: "es-ES",
-    fr: "fr-FR",
-    pt: "pt-PT",
-  };
-
-  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
-  const [playingKey, setPlayingKey] = useState<string | null>(null);
-
-  const ttsLang = useMemo(
-    () => TTS_LANG_MAP[targetLang] ?? "en-US",
-    [targetLang]
-  );
-
-  const speak = (text: string, key: string) => {
-    if (!text.trim()) return;
-    if (typeof window === "undefined") return;
-
-    const synth = window.speechSynthesis;
-    synth.cancel();
-
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = ttsLang;
-
-    u.onstart = () => setPlayingKey(key);
-    u.onend = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-    u.onerror = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-
-    utterRef.current = u;
-    synth.speak(u);
-  };
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    window.speechSynthesis.cancel();
-    utterRef.current = null;
-    setPlayingKey(null);
-  }, [targetLang, chapter]);
-
-  /* 🔥 여기 추가 끝 */
-
-
   /* ================= 데이터 로드 ================= */
 
   useEffect(() => {
@@ -184,48 +138,75 @@ export default function DemoRealViewer({ level, chapter }: Props) {
     };
   }, [lang, level, chapter]);
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   if (status === "loading") return <div style={{ padding: 24 }}>Loading...</div>;
   if (status === "error") return <div style={{ padding: 24 }}>Failed</div>;
 
-  const descBlock = blocks.find((b) => b.type === "description") as any;
+  const descBlock = blocks.find((b) => b.type === "description");
+
+  const sentences = Array.isArray(descBlock?.sentences)
+    ? descBlock.sentences
+    : [];
+
+  const current =
+    currentIndex >= 0 && currentIndex < sentences.length
+      ? sentences[currentIndex]
+      : null;
 
   return (
     <div style={containerStyle}>
-      {/* HEADER */}
-
-      {/* ================= HEADER ================= */}
-      <div style={{ position: "sticky", top: 0, background: "#fff", zIndex: 30 }}>
-
+      {/* ===== [REPLACE_START: HEADER_REAL_TO_VOCA] ===== */}
+      <div
+        style={{
+          position: "sticky",
+          top: 0,
+          background: "#fff",
+          zIndex: 30,
+          paddingTop: "calc(env(safe-area-inset-top) + 8px)",
+        }}
+      >
         <div
           style={{
             display: "flex",
             flexDirection: "column",
-            padding: "10px 0",
+            padding: "10px 16px",
             borderBottom: "1px solid #eee",
             gap: 6,
           }}
         >
-
-          {/* 🔥 1줄 */}
           <div
             style={{
               display: "flex",
               alignItems: "center",
-              justifyContent: "space-between",
-              flexWrap: "wrap",
               gap: 6,
+              flexWrap: "nowrap",
+              overflowX: "auto",
+              minWidth: 0,
             }}
           >
-            <Link href="/demo" style={{ fontSize: 13 }}>
+            <Link
+              href="/demo"
+              style={{
+                fontSize: 12,
+                fontWeight: 600,
+                color: "#111",
+                textDecoration: "none",
+                flexShrink: 0,
+                marginRight: 6,
+              }}
+            >
               ← Back
             </Link>
 
             <div
               style={{
                 display: "flex",
-                flexWrap: "wrap",
+                flexWrap: "nowrap",
                 gap: 6,
                 justifyContent: "flex-end",
+                minWidth: 0,
+                flexShrink: 0,
               }}
             >
               {(["en", "es", "fr", "pt"] as StudyLang[])
@@ -267,7 +248,6 @@ export default function DemoRealViewer({ level, chapter }: Props) {
             </div>
           </div>
 
-          {/* 🔥 2줄 Unlock */}
           <div
             style={{
               width: "100%",
@@ -290,14 +270,12 @@ export default function DemoRealViewer({ level, chapter }: Props) {
           </div>
         </div>
 
-        {/* 🔥 AUDIO */}
         {audioSrc && (
-          <div style={{ borderBottom: "1px solid #eee", padding: "6px 0" }}>
+          <div style={{ borderBottom: "1px solid #eee", padding: "6px 16px" }}>
             <RealAudioController src={audioSrc} />
           </div>
         )}
 
-        {/* 🔥 GUIDE */}
         <div
           style={{
             fontSize: 13,
@@ -307,6 +285,8 @@ export default function DemoRealViewer({ level, chapter }: Props) {
             borderRadius: 10,
             border: "1px solid #eee",
             marginTop: 10,
+            marginLeft: 16,
+            marginRight: 16,
           }}
         >
           {guideTexts[studyLang].map((t, i) => (
@@ -314,16 +294,20 @@ export default function DemoRealViewer({ level, chapter }: Props) {
           ))}
         </div>
       </div>
-      {/* CONTENT */}
-      <div style={{ padding: "30px 0" }}>
-        <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
-          {/* IMAGE */}
+      {/* ===== [REPLACE_END: HEADER_REAL_TO_VOCA] ===== */}
+
+      {/* ===== [REPLACE_START: CONTENT_OUTER_FINAL] ===== */}
+      <div style={{ padding: "0 16px 30px" }}>
+        <div style={{ display: "flex", gap: 24, flexWrap: "wrap", paddingTop: 20 }}>
+
+          {/* 이미지 */}
           <div style={{ flex: "1 1 400px" }}>
             {imageSrc && (
               <img
                 src={imageSrc}
                 style={{
                   width: "100%",
+                  display: "block",
                   borderRadius: 16,
                   boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
                 }}
@@ -331,33 +315,82 @@ export default function DemoRealViewer({ level, chapter }: Props) {
             )}
           </div>
 
-          {/* TEXT */}
+          {/* ===== 한줄재생 영역 ===== */}
           <div style={{ flex: "1 1 400px" }}>
-            {descBlock?.sentences?.map((s: any, i: number) => (
-              <div key={i} style={{ marginBottom: 18 }}>
+
+            {current && (
+              <div style={{ marginBottom: 24 }}>
+
                 {showTarget && (
                   <div
-                    onClick={() => speak(s.texts[lang], `real-${i}`)}
+                    onClick={() => speakText(current.texts[lang], targetLang)}
                     style={{
                       ...sentenceStyle,
-                      fontWeight: 600,
+                      fontWeight: 700,
                       cursor: "pointer",
-                      background:
-                        playingKey === `real-${i}` ? "#f3f4f6" : "transparent",
+                      textAlign: "center",
+                      fontSize: 20,
+                      background: "#f3f4f6",
                     }}
                   >
-                    {s.texts[lang]}
+                    {current.texts[lang]}
                   </div>
                 )}
 
-                <div style={{ ...sentenceStyle, color: "#666" }}>
-                  {s.texts[studyLang]}
+                <div
+                  style={{
+                    ...sentenceStyle,
+                    color: "#666",
+                    textAlign: "center",
+                    fontSize: 16,
+                  }}
+                >
+                  {current.texts[studyLang]}
                 </div>
               </div>
-            ))}
+            )}
+
+            {/* 컨트롤 */}
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                gap: 12,
+              }}
+            >
+              <button
+                onClick={() => setCurrentIndex((i) => Math.max(i - 1, 0))}
+                style={buttonStyle(false)}
+              >
+                ◀
+              </button>
+
+              <button
+                onClick={() =>
+                  current && speakText(current.texts[lang], targetLang)
+                }
+                style={buttonStyle(false)}
+              >
+                ▶
+              </button>
+
+              <button
+                onClick={() =>
+                  setCurrentIndex((i) =>
+                    Math.min(i + 1, sentences.length - 1)
+                  )
+                }
+                style={buttonStyle(false)}
+              >
+                ▶▶
+              </button>
+            </div>
+
           </div>
+
         </div>
       </div>
+      {/* ===== [REPLACE_END: CONTENT_OUTER_FINAL] ===== */}
     </div>
   );
 }
