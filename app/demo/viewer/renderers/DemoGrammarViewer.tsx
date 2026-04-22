@@ -117,14 +117,12 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
 
     const synth = window.speechSynthesis;
 
-    // 👉 같은 줄 다시 누르면 stop (모바일 안정화 핵심)
     if (playingKey === key) {
       synth.cancel();
       setPlayingKey(null);
       return;
     }
 
-    // 👉 이전 재생 정리
     synth.cancel();
 
     const u = new SpeechSynthesisUtterance(text);
@@ -144,7 +142,6 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
 
     utterRef.current = u;
 
-    // 👉 iOS 안정성: 약간 지연 후 실행
     setTimeout(() => {
       synth.speak(u);
     }, 50);
@@ -243,11 +240,11 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
 
   const titleStudy = data?.title?.[studyLang] ?? "";
 
-  // ====================== 🔥 FIX START: renderLine ======================
   const renderLine = (b: GrammarBlock, i: number, sectionKey: string) => {
     const target =
-      b.sentences?.[targetLang] ??
-      b.sentences?.target ??
+      b.sentences?.[targetLang] ||
+      b.sentences?.["kr"] ||
+      b.sentences?.["en"] ||
       "";
 
     const study = b.sentences?.[studyLang] ?? "";
@@ -256,6 +253,8 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
     return (
       <div key={lineKey} style={{ marginBottom: 18 }}>
         <div style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
+
+          {/* ▶ 버튼 */}
           <button
             onClick={() => speak(target, lineKey)}
             style={{
@@ -270,6 +269,7 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
           </button>
 
           <div style={{ flex: 1 }}>
+            {/* target */}
             {showTargetText && (
               <div
                 style={{
@@ -283,10 +283,17 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
               </div>
             )}
 
-            <div style={{ ...sentenceStyle, color: "#666" }}>
+            {/* study */}
+            <div
+              style={{
+                ...sentenceStyle,
+                color: "#666",
+              }}
+            >
               {study}
             </div>
           </div>
+
         </div>
       </div>
     );
@@ -294,7 +301,6 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
   return (
     <div style={containerStyle}>
       <div style={{ position: "sticky", top: 0, background: "#fff", zIndex: 30 }}>
-
         <div
           style={{
             display: "flex",
@@ -304,7 +310,6 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
             gap: 6,
           }}
         >
-
           {/* 🔥 1줄 */}
           <div
             style={{
@@ -315,10 +320,12 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
               gap: 6,
             }}
           >
-            {/* 🔥 Back 왼쪽 */}
+            {/* ✅ BACK */}
             <Link href="/demo" style={{ fontSize: 13 }}>
               ← Back
             </Link>
+
+            {/* ✅ 버튼 그룹 */}
             <div
               style={{
                 display: "flex",
@@ -333,15 +340,16 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
                   <button
                     key={l}
                     onClick={() => setStudyLang(l)}
-                    style={buttonStyle(studyLang === l)} // ✅ active 반영
+                    style={buttonStyle(studyLang === l)}
                   >
                     {l.toUpperCase()}
                   </button>
                 ))}
 
+              {/* 👉 Voca 기준: 상태 표시 안함 */}
               <button
                 onClick={() => setShowTargetText((v) => !v)}
-                style={buttonStyle(showTargetText)} // ✅ 상태 연동
+                style={buttonStyle(false)}
               >
                 Toggle
               </button>
@@ -364,83 +372,22 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
                 Copy link
               </button>
             </div>
-
-            {/* 🔥 2줄 (모바일 핵심) */}
-            <div
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "flex-end",
-              }}
-            >
-              <Link href="/app" style={{ width: "100%" }}>
-                <button
-                  style={{
-                    ...buttonStyle(false),
-                    background: "#111",
-                    color: "#fff",
-                    width: "100%",
-                  }}
-                >
-                  Unlock Full Access
-                </button>
-              </Link>
-            </div>
-
           </div>
 
-          {/* 🔥 GUIDE */}
-          <div
-            style={{
-              fontSize: 13,
-              color: "#666",
-              background: "#fafafa",
-              padding: "12px 14px",
-              borderRadius: 10,
-              border: "1px solid #eee",
-              marginTop: 10,
-            }}
-          >
-            {guideTexts[studyLang].map((t, i) => (
-              <div key={i}>{t}</div>
-            ))}
-          </div>
-
-        </div>
-        <div style={{ padding: "30px 0" }}>
-          <div style={{ marginBottom: 30 }}>
-            {showTargetText && (
-              <div style={{ ...sentenceStyle, fontSize: 24, fontWeight: 700 }}>
-                {titleTarget}
-              </div>
-            )}
-            <div style={{ ...sentenceStyle, fontSize: 20, color: "#444" }}>
-              {titleStudy}
-            </div>
-          </div>
-
-          <div style={{ marginBottom: 32 }}>
-            <div style={{ fontWeight: 700, marginBottom: 12 }}>Explanation</div>
-            {explanations.map((b, i) => renderLine(b, i, "explanation"))}
-          </div>
-
-          <div>
-            <div style={{ fontWeight: 700, marginBottom: 12 }}>Examples</div>
-
-            <div style={{ fontWeight: 600, marginBottom: 8 }}>Core Patterns</div>
-            {byVariant("core_patterns").map((b, i) =>
-              renderLine(b, i, "core_patterns")
-            )}
-
-            <div style={{ fontWeight: 600, margin: "20px 0 8px" }}>Variations</div>
-            {byVariant("variations").map((b, i) =>
-              renderLine(b, i, "variations")
-            )}
-
-            <div style={{ fontWeight: 600, margin: "20px 0 8px" }}>Extended Usage</div>
-            {byVariant("extended_usage").map((b, i) =>
-              renderLine(b, i, "extended_usage")
-            )}
+          {/* 🔥 2줄 */}
+          <div style={{ width: "100%" }}>
+            <Link href="/app">
+              <button
+                style={{
+                  ...buttonStyle(false),
+                  background: "#111",
+                  color: "#fff",
+                  width: "100%",
+                }}
+              >
+                Unlock Full Access
+              </button>
+            </Link>
           </div>
         </div>
       </div>
