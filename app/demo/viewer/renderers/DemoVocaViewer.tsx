@@ -1,7 +1,7 @@
 "use client";
 
 import { speakText } from "@/utils/tts";
-import { useEffect, useState, useMemo, useRef } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 import { useRouter } from "next/navigation";
@@ -27,14 +27,6 @@ type Props = {
 };
 
 type Status = "loading" | "ready" | "error";
-const TTS_LANG_MAP: Record<string, string> = {
-  kr: "ko-KR",
-  en: "en-US",
-  es: "es-ES",
-  fr: "fr-FR",
-  pt: "pt-PT",
-};
-
 /* 🔥 RealViewer 기준 스타일 */
 const containerStyle: React.CSSProperties = {
   maxWidth: 1100,
@@ -106,28 +98,6 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
       "6. Está a ver A1 Chapter 1. Pode escolher níveis A1, A2, B1, B2, C1, C2.",
     ],
   };
-
-  useEffect(() => {
-    const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
-    if (filtered.length > 0) setStudyLang(filtered[0]);
-  }, [targetLang]);
-  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
-  const [playingKey, setPlayingKey] = useState<string | null>(null);
-
-  const ttsLang = useMemo(
-    () => TTS_LANG_MAP[targetLang] ?? "en-US",
-    [targetLang]
-  );
-
-
-  /* 🔥 필수 */
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    utterRef.current = null;
-    setPlayingKey(null);
-  }, [targetLang, chapter]);
-
   useEffect(() => {
     if (!lang) return;
 
@@ -178,7 +148,6 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
 
   if (status === "loading") return <div style={{ padding: 24 }}>Loading...</div>;
   if (status === "error") return <div style={{ padding: 24 }}>Failed</div>;
-
   return (
     <div style={containerStyle}>
       {/* 🔥 HEADER */}
@@ -217,18 +186,6 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
                 justifyContent: "flex-end",
               }}
             >
-              {ALL_STUDY_LANGS
-                .filter((l) => l !== targetLang)
-                .map((l) => (
-                  <button
-                    key={l}
-                    onClick={() => setStudyLang(l)}
-                    style={buttonStyle(studyLang === l)}
-                  >
-                    {l.toUpperCase()}
-                  </button>
-                ))}
-
               <button
                 onClick={() => setShowTargetText(!showTargetText)}
                 style={buttonStyle(false)}
@@ -280,29 +237,6 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
         </div>
 
         {/* 🔥 AUDIO */}
-        {/* 🌍 Language Selector */}
-        <div style={{ marginTop: 10 }}>
-          <select
-            value={targetLang || "kr"}
-            onChange={(e) => {
-              const newLang = e.target.value;
-              setTargetLang(newLang);
-              router.push(`/demo/${newLang}/voca/${level}/${chapter}`);
-            }}
-            style={{
-              padding: "8px 12px",
-              borderRadius: 8,
-              border: "1px solid #ddd",
-              width: "100%",
-            }}
-          >
-            <option value="kr">Korean</option>
-            <option value="en">English</option>
-            <option value="es">Spanish</option>
-            <option value="fr">French</option>
-            <option value="pt">Portuguese</option>
-          </select>
-        </div>
         <div style={{ borderBottom: "1px solid #eee", padding: "6px 0" }}>
           <VocaAudioController lang={lang} level={level} chapter={chapter} />
         </div>
@@ -347,8 +281,6 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
                       ...sentenceStyle,
                       fontWeight: 700,
                       cursor: "pointer",
-                      background:
-                        playingKey === `word-${idx}` ? "#f3f4f6" : "transparent",
                     }}
                   >
                     {word}
@@ -370,10 +302,6 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
                         style={{
                           ...sentenceStyle,
                           cursor: "pointer",
-                          background:
-                            playingKey === `voca-${idx}-${i}`
-                              ? "#f3f4f6"
-                              : "transparent",
                         }}
                       >
                         {t}
