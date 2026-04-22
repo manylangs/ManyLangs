@@ -152,22 +152,38 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    window.speechSynthesis.cancel();
-    utterRef.current = null;
-    setPlayingKey(null);
-  }, [targetLang, chapter]);
-  useEffect(() => {
+
+    const synth = window.speechSynthesis;
+
+    const reset = () => {
+      synth?.cancel();
+      utterRef.current = null;
+      setPlayingKey(null);
+    };
+
+    // 👉 언어/챕터 변경 시 초기화
+    reset();
+
+    // 👉 모바일/탭 전환 대응 (안전 버전)
     const handleVisibility = () => {
-      if (document.hidden) {
-        window.speechSynthesis.cancel();
-        setPlayingKey(null);
+      if (typeof document !== "undefined") {
+        if (typeof document.hidden !== "undefined" && document.hidden) {
+          reset();
+        }
       }
     };
 
-    document.addEventListener("visibilitychange", handleVisibility);
-    return () =>
-      document.removeEventListener("visibilitychange", handleVisibility);
-  }, []);
+    if (typeof document !== "undefined") {
+      document.addEventListener("visibilitychange", handleVisibility);
+    }
+
+    return () => {
+      reset();
+      if (typeof document !== "undefined") {
+        document.removeEventListener("visibilitychange", handleVisibility);
+      }
+    };
+  }, [targetLang, chapter]);
 
   useEffect(() => {
     if (!lang) return;
