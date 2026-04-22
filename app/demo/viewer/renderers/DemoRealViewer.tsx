@@ -138,7 +138,6 @@ export default function DemoRealViewer({ level, chapter }: Props) {
     };
   }, [lang, level, chapter]);
 
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   if (status === "loading") return <div style={{ padding: 24 }}>Loading...</div>;
   if (status === "error") return <div style={{ padding: 24 }}>Failed</div>;
@@ -148,11 +147,6 @@ export default function DemoRealViewer({ level, chapter }: Props) {
   const sentences = Array.isArray(descBlock?.sentences)
     ? descBlock.sentences
     : [];
-
-  const current =
-    currentIndex >= 0 && currentIndex < sentences.length
-      ? sentences[currentIndex]
-      : null;
 
   return (
     <div style={containerStyle}>
@@ -315,25 +309,20 @@ export default function DemoRealViewer({ level, chapter }: Props) {
             )}
           </div>
 
-          {/* ===== 한줄재생 영역 ===== */}
+          {/* ===== [REPLACE_START: SENTENCE_LIST_VIEW] ===== */}
           <div style={{ flex: "1 1 400px" }}>
-
-            {current && (
-              <div style={{ marginBottom: 24 }}>
-
+            {sentences.map((s: any, i: number) => (
+              <div key={i} style={{ marginBottom: 18 }}>
                 {showTarget && (
                   <div
-                    onClick={() => speakText(current.texts[lang], targetLang)}
+                    onClick={() => speakText(s.texts[lang], targetLang)}
                     style={{
                       ...sentenceStyle,
-                      fontWeight: 700,
+                      fontWeight: 600,
                       cursor: "pointer",
-                      textAlign: "center",
-                      fontSize: 20,
-                      background: "#f3f4f6",
                     }}
                   >
-                    {current.texts[lang]}
+                    {s.texts[lang]}
                   </div>
                 )}
 
@@ -341,52 +330,14 @@ export default function DemoRealViewer({ level, chapter }: Props) {
                   style={{
                     ...sentenceStyle,
                     color: "#666",
-                    textAlign: "center",
-                    fontSize: 16,
                   }}
                 >
-                  {current.texts[studyLang]}
+                  {s.texts[studyLang]}
                 </div>
               </div>
-            )}
-
-            {/* 컨트롤 */}
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                gap: 12,
-              }}
-            >
-              <button
-                onClick={() => setCurrentIndex((i) => Math.max(i - 1, 0))}
-                style={buttonStyle(false)}
-              >
-                ◀
-              </button>
-
-              <button
-                onClick={() =>
-                  current && speakText(current.texts[lang], targetLang)
-                }
-                style={buttonStyle(false)}
-              >
-                ▶
-              </button>
-
-              <button
-                onClick={() =>
-                  setCurrentIndex((i) =>
-                    Math.min(i + 1, sentences.length - 1)
-                  )
-                }
-                style={buttonStyle(false)}
-              >
-                ▶▶
-              </button>
-            </div>
-
+            ))}
           </div>
+          {/* ===== [REPLACE_END: SENTENCE_LIST_VIEW] ===== */}
 
         </div>
       </div>
