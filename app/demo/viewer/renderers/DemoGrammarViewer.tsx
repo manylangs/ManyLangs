@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, useMemo } from "react";
+import { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 
@@ -13,14 +13,6 @@ type Props = {
 };
 
 type Status = "loading" | "ready" | "error";
-
-const TTS_LANG_MAP: Record<string, string> = {
-  kr: "ko-KR",
-  en: "en-US",
-  es: "es-ES",
-  fr: "fr-FR",
-  pt: "pt-PT",
-};
 
 type GrammarBlock = {
   type: string;
@@ -69,10 +61,6 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
   const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
   const [playingKey, setPlayingKey] = useState<string | null>(null);
 
-  const ttsLang = useMemo(
-    () => TTS_LANG_MAP[targetLang] ?? "en-US",
-    [targetLang]
-  );
   const guideTexts: Record<StudyLang, string[]> = {
     en: [
       "1. To continue to the next chapter, sign up by clicking Unlock Full Access.",
@@ -115,71 +103,32 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
     if (!text.trim()) return;
     if (typeof window === "undefined") return;
 
+    if (playingKey === key) return; // ✅ 중복 클릭 방지
+
     const synth = window.speechSynthesis;
-
-    if (playingKey === key) {
-      synth.cancel();
-      setPlayingKey(null);
-      return;
-    }
-
     synth.cancel();
 
     const u = new SpeechSynthesisUtterance(text);
-    u.lang = ttsLang;
 
     u.onstart = () => setPlayingKey(key);
-
     u.onend = () => {
       setPlayingKey(null);
       utterRef.current = null;
     };
-
     u.onerror = () => {
       setPlayingKey(null);
       utterRef.current = null;
     };
 
     utterRef.current = u;
-
-    setTimeout(() => {
-      synth.speak(u);
-    }, 50);
+    synth.speak(u);
   };
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-
-    const synth = window.speechSynthesis;
-
-    const reset = () => {
-      synth?.cancel();
-      utterRef.current = null;
-      setPlayingKey(null);
-    };
-
-    // 👉 언어/챕터 변경 시 초기화
-    reset();
-
-    // 👉 모바일/탭 전환 대응 (안전 버전)
-    const handleVisibility = () => {
-      if (typeof document !== "undefined") {
-        if (typeof document.hidden !== "undefined" && document.hidden) {
-          reset();
-        }
-      }
-    };
-
-    if (typeof document !== "undefined") {
-      document.addEventListener("visibilitychange", handleVisibility);
-    }
-
-    return () => {
-      reset();
-      if (typeof document !== "undefined") {
-        document.removeEventListener("visibilitychange", handleVisibility);
-      }
-    };
+    window.speechSynthesis.cancel();
+    utterRef.current = null;
+    setPlayingKey(null);
   }, [targetLang, chapter]);
 
   useEffect(() => {
@@ -242,67 +191,48 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
 
   const renderLine = (b: GrammarBlock, i: number, sectionKey: string) => {
     const target =
-      b.sentences?.[targetLang] ||
-      b.sentences?.["kr"] ||
-      b.sentences?.["en"] ||
+      b.sentences?.[targetLang] ??
+      b.sentences?.target ??
       "";
 
     const study = b.sentences?.[studyLang] ?? "";
+
     const lineKey = `${sectionKey}-${i}`;
 
     return (
       <div key={lineKey} style={{ marginBottom: 18 }}>
-        <div style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
-
-          {/* ▶ 버튼 */}
-          <button
-            onClick={() => speak(target, lineKey)}
+        {showTargetText && (
+          <div
+            onClick={() => target && speak(target, lineKey)}
+            onTouchStart={() => target && speak(target, lineKey)}
             style={{
-              border: "none",
-              background: "transparent",
+              ...sentenceStyle,
+              fontWeight: 600,
               cursor: "pointer",
-              fontSize: 16,
-              marginTop: 2,
+              background: playingKey === lineKey ? "#f3f4f6" : "transparent",
             }}
           >
-            {playingKey === lineKey ? "⏸" : "▶"}
-          </button>
-
-          <div style={{ flex: 1 }}>
-            {/* target */}
-            {showTargetText && (
-              <div
-                style={{
-                  ...sentenceStyle,
-                  fontWeight: 600,
-                  background:
-                    playingKey === lineKey ? "#f3f4f6" : "transparent",
-                }}
-              >
-                {target}
-              </div>
-            )}
-
-            {/* study */}
-            <div
-              style={{
-                ...sentenceStyle,
-                color: "#666",
-              }}
-            >
-              {study}
-            </div>
+            {target}
           </div>
-
+        )}
+        <div
+          style={{
+            ...sentenceStyle,
+            color: "#666",
+            cursor: "default",
+          }}
+        >
+          {study}
         </div>
       </div>
     );
   };
+
   return (
     <div style={containerStyle}>
-
-      {/* ✅ HEADER */}
+      {/* ================= HEADER ================= */}
       <div style={{ position: "sticky", top: 0, background: "#fff", zIndex: 30 }}>
+
         <div
           style={{
             display: "flex",
@@ -312,7 +242,8 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
             gap: 6,
           }}
         >
-          {/* 1줄 */}
+
+          {/* 🔥 1줄 */}
           <div
             style={{
               display: "flex",
@@ -322,11 +253,20 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
               gap: 6,
             }}
           >
+            {/* 🔥 Back 왼쪽 */}
             <Link href="/demo" style={{ fontSize: 13 }}>
               ← Back
             </Link>
 
-            <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+            {/* 🔥 버튼 그룹 */}
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 6,
+                justifyContent: "flex-end",
+              }}
+            >
               {ALL_STUDY_LANGS
                 .filter((l) => l !== targetLang)
                 .map((l) => (
@@ -340,7 +280,7 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
                 ))}
 
               <button
-                onClick={() => setShowTargetText((v) => !v)}
+                onClick={() => setShowTargetText(!showTargetText)}
                 style={buttonStyle(false)}
               >
                 Toggle
@@ -366,77 +306,84 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
             </div>
           </div>
 
-          {/* 2줄 */}
-          <Link href="/app">
-            <button
-              style={{
-                ...buttonStyle(false),
-                background: "#111",
-                color: "#fff",
-                width: "100%",
-              }}
-            >
-              Unlock Full Access
-            </button>
-          </Link>
+          {/* 🔥 2줄 (모바일 핵심) */}
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "flex-end",
+            }}
+          >
+            <Link href="/app" style={{ width: "100%" }}>
+              <button
+                style={{
+                  ...buttonStyle(false),
+                  background: "#111",
+                  color: "#fff",
+                  width: "100%",
+                }}
+              >
+                Unlock Full Access
+              </button>
+            </Link>
+          </div>
+
         </div>
+
+        {/* 🔥 GUIDE */}
+        <div
+          style={{
+            fontSize: 13,
+            color: "#666",
+            background: "#fafafa",
+            padding: "12px 14px",
+            borderRadius: 10,
+            border: "1px solid #eee",
+            marginTop: 10,
+          }}
+        >
+          {guideTexts[studyLang].map((t, i) => (
+            <div key={i}>{t}</div>
+          ))}
+        </div>
+
       </div>
-
-      {/* ✅ CONTENT (이게 빠져서 지금 화면 빈거) */}
       <div style={{ padding: "30px 0" }}>
-
-        {/* 제목 */}
         <div style={{ marginBottom: 30 }}>
           {showTargetText && (
-            <div style={{ fontSize: 24, fontWeight: 700 }}>
+            <div style={{ ...sentenceStyle, fontSize: 24, fontWeight: 700 }}>
               {titleTarget}
             </div>
           )}
-          <div style={{ fontSize: 20, color: "#444" }}>
+          <div style={{ ...sentenceStyle, fontSize: 20, color: "#444" }}>
             {titleStudy}
           </div>
         </div>
 
-        {/* Explanation */}
         <div style={{ marginBottom: 32 }}>
-          <div style={{ fontWeight: 700, marginBottom: 12 }}>
-            Explanation
-          </div>
-          {explanations.map((b, i) =>
-            renderLine(b, i, "explanation")
-          )}
+          <div style={{ fontWeight: 700, marginBottom: 12 }}>Explanation</div>
+          {explanations.map((b, i) => renderLine(b, i, "explanation"))}
         </div>
 
-        {/* Examples */}
         <div>
-          <div style={{ fontWeight: 700, marginBottom: 12 }}>
-            Examples
-          </div>
+          <div style={{ fontWeight: 700, marginBottom: 12 }}>Examples</div>
 
-          <div style={{ fontWeight: 600, marginBottom: 8 }}>
-            Core Patterns
-          </div>
+          <div style={{ fontWeight: 600, marginBottom: 8 }}>Core Patterns</div>
           {byVariant("core_patterns").map((b, i) =>
             renderLine(b, i, "core_patterns")
           )}
 
-          <div style={{ fontWeight: 600, margin: "20px 0 8px" }}>
-            Variations
-          </div>
+          <div style={{ fontWeight: 600, margin: "20px 0 8px" }}>Variations</div>
           {byVariant("variations").map((b, i) =>
             renderLine(b, i, "variations")
           )}
 
-          <div style={{ fontWeight: 600, margin: "20px 0 8px" }}>
-            Extended Usage
-          </div>
+          <div style={{ fontWeight: 600, margin: "20px 0 8px" }}>Extended Usage</div>
           {byVariant("extended_usage").map((b, i) =>
             renderLine(b, i, "extended_usage")
           )}
         </div>
-
       </div>
-
     </div>
   );
 }
