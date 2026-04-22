@@ -116,23 +116,38 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
     if (typeof window === "undefined") return;
 
     const synth = window.speechSynthesis;
+
+    // 👉 같은 줄 다시 누르면 stop (모바일 안정화 핵심)
+    if (playingKey === key) {
+      synth.cancel();
+      setPlayingKey(null);
+      return;
+    }
+
+    // 👉 이전 재생 정리
     synth.cancel();
 
     const u = new SpeechSynthesisUtterance(text);
     u.lang = ttsLang;
 
     u.onstart = () => setPlayingKey(key);
+
     u.onend = () => {
       setPlayingKey(null);
       utterRef.current = null;
     };
+
     u.onerror = () => {
       setPlayingKey(null);
       utterRef.current = null;
     };
 
     utterRef.current = u;
-    synth.speak(u);
+
+    // 👉 iOS 안정성: 약간 지연 후 실행
+    setTimeout(() => {
+      synth.speak(u);
+    }, 50);
   };
 
   useEffect(() => {
@@ -141,6 +156,18 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
     utterRef.current = null;
     setPlayingKey(null);
   }, [targetLang, chapter]);
+  useEffect(() => {
+    const handleVisibility = () => {
+      if (document.hidden) {
+        window.speechSynthesis.cancel();
+        setPlayingKey(null);
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibility);
+    return () =>
+      document.removeEventListener("visibilitychange", handleVisibility);
+  }, []);
 
   useEffect(() => {
     if (!lang) return;
