@@ -38,14 +38,14 @@ const containerStyle: React.CSSProperties = {
 };
 
 const buttonStyle = (active: boolean): React.CSSProperties => ({
-padding: "6px 10px",
-borderRadius: 6,
-fontSize: 12,
-background: active ? "#333" : "#f2f2f2",
-color: active ? "#fff" : "#333",
-border: "none",
-cursor: active ? "default" : "pointer",
-whiteSpace: "nowrap",
+  padding: "4px 8px",
+  borderRadius: 6,
+  fontSize: 12,
+  background: active ? "#333" : "#f2f2f2",
+  color: active ? "#fff" : "#333",
+  border: "none",
+  cursor: active ? "default" : "pointer",
+  whiteSpace: "nowrap",
 });
 
 const sentenceStyle: React.CSSProperties = {
