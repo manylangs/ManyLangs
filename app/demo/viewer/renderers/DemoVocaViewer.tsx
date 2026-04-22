@@ -1,12 +1,14 @@
 "use client";
 
 import { speakText } from "@/utils/tts";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
+import { useRouter } from "next/navigation";
 import VocaAudioController from "@/components/audio/controllers/VocaAudioController";
 
 type StudyLang = "en" | "es" | "fr" | "pt";
+const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
 
 type Example = {
   target: string;
@@ -25,7 +27,15 @@ type Props = {
 };
 
 type Status = "loading" | "ready" | "error";
+const TTS_LANG_MAP: Record<string, string> = {
+  kr: "ko-KR",
+  en: "en-US",
+  es: "es-ES",
+  fr: "fr-FR",
+  pt: "pt-PT",
+};
 
+/* 🔥 RealViewer 기준 스타일 */
 const containerStyle: React.CSSProperties = {
   maxWidth: 1100,
   margin: "0 auto",
@@ -43,6 +53,7 @@ const buttonStyle = (active: boolean): React.CSSProperties => ({
   whiteSpace: "nowrap",
 });
 
+/* 🔥 RealViewer sentence 느낌 */
 const sentenceStyle: React.CSSProperties = {
   borderRadius: 6,
   padding: "4px 6px",
@@ -50,11 +61,12 @@ const sentenceStyle: React.CSSProperties = {
 };
 
 export default function DemoVocaViewer({ level, chapter }: Props) {
-  const { targetLang } = useViewerTarget();
+  const { targetLang, setTargetLang } = useViewerTarget();
+  const router = useRouter();
   const lang = targetLang || "kr";
 
   const [showTargetText, setShowTargetText] = useState(true);
-  const [studyLang] = useState<StudyLang>("en");
+  const [studyLang, setStudyLang] = useState<StudyLang>("en");
   const [blocks, setBlocks] = useState<Block[]>([]);
   const [status, setStatus] = useState<Status>("loading");
 
@@ -96,6 +108,27 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
   };
 
   useEffect(() => {
+    const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
+    if (filtered.length > 0) setStudyLang(filtered[0]);
+  }, [targetLang]);
+  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
+  const [playingKey, setPlayingKey] = useState<string | null>(null);
+
+  const ttsLang = useMemo(
+    () => TTS_LANG_MAP[targetLang] ?? "en-US",
+    [targetLang]
+  );
+
+
+  /* 🔥 필수 */
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    utterRef.current = null;
+    setPlayingKey(null);
+  }, [targetLang, chapter]);
+
+  useEffect(() => {
     if (!lang) return;
 
     let cancelled = false;
@@ -109,6 +142,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
         );
 
         const manifest = await res.json();
+
         if (cancelled) return;
 
         const dataAssets =
@@ -117,8 +151,8 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
         let allBlocks: Block[] = [];
 
         for (const asset of dataAssets) {
-          const dataRes = await fetch(asset.path);
-          const json = await dataRes.json();
+          const res = await fetch(asset.path);
+          const json = await res.json();
 
           if (Array.isArray(json.blocks)) {
             allBlocks = [...allBlocks, ...json.blocks];
@@ -147,106 +181,150 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
 
   return (
     <div style={containerStyle}>
-      {/* 🔥 HEADER (Grammar 방식) */}
+      {/* 🔥 HEADER */}
+      {/* ================= HEADER ================= */}
       <div style={{ position: "sticky", top: 0, background: "#fff", zIndex: 30 }}>
 
         <div
           style={{
             display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
+            flexDirection: "column",
             padding: "10px 0",
             borderBottom: "1px solid #eee",
             gap: 6,
           }}
         >
-          {/* 🔥 Back */}
-          <Link
-            href="/demo"
-            style={{
-              fontSize: 13,
-              fontWeight: 600,
-              color: "#111",
-              textDecoration: "none",
-              flexShrink: 0,
-            }}
-          >
-            ← Back
-          </Link>
 
-          {/* 🔥 버튼 그룹 */}
+          {/* 🔥 1줄 */}
           <div
             style={{
               display: "flex",
-              gap: 6,
+              alignItems: "center",
+              justifyContent: "space-between",
               flexWrap: "wrap",
+              gap: 6,
+            }}
+          >
+            <Link href="/demo" style={{ fontSize: 13 }}>
+              ← Back
+            </Link>
+
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 6,
+                justifyContent: "flex-end",
+              }}
+            >
+              {ALL_STUDY_LANGS
+                .filter((l) => l !== targetLang)
+                .map((l) => (
+                  <button
+                    key={l}
+                    onClick={() => setStudyLang(l)}
+                    style={buttonStyle(studyLang === l)}
+                  >
+                    {l.toUpperCase()}
+                  </button>
+                ))}
+
+              <button
+                onClick={() => setShowTargetText(!showTargetText)}
+                style={buttonStyle(false)}
+              >
+                Toggle
+              </button>
+
+              <button
+                onClick={async () => {
+                  if (navigator.share) {
+                    try {
+                      await navigator.share({
+                        url: window.location.href,
+                      });
+                    } catch { }
+                  } else {
+                    await navigator.clipboard.writeText(window.location.href);
+                    alert("Link copied!");
+                  }
+                }}
+                style={buttonStyle(false)}
+              >
+                Copy link
+              </button>
+            </div>
+          </div>
+
+          {/* 🔥 2줄 Unlock */}
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
               justifyContent: "flex-end",
             }}
           >
-            <button
-              onClick={() => setShowTargetText(!showTargetText)}
-              style={buttonStyle(false)}
-            >
-              Toggle
-            </button>
-
-            <button
-              onClick={async () => {
-                if (navigator.share) {
-                  try {
-                    await navigator.share({
-                      url: window.location.href,
-                    });
-                  } catch { }
-                } else {
-                  await navigator.clipboard.writeText(window.location.href);
-                  alert("Link copied!");
-                }
-              }}
-              style={buttonStyle(false)}
-            >
-              Copy link
-            </button>
+            <Link href="/app" style={{ width: "100%" }}>
+              <button
+                style={{
+                  ...buttonStyle(false),
+                  background: "#111",
+                  color: "#fff",
+                  width: "100%",
+                }}
+              >
+                Unlock Full Access
+              </button>
+            </Link>
           </div>
         </div>
 
-        {/* 🔥 Unlock */}
-        <div style={{ padding: "6px 0", borderBottom: "1px solid #eee" }}>
-          <Link href="/app" style={{ width: "100%" }}>
-            <button
-              style={{
-                ...buttonStyle(false),
-                background: "#111",
-                color: "#fff",
-                width: "100%",
-              }}
-            >
-              Unlock Full Access
-            </button>
-          </Link>
+        {/* 🔥 AUDIO */}
+        {/* 🌍 Language Selector */}
+        <div style={{ marginTop: 10 }}>
+          <select
+            value={targetLang || "kr"}
+            onChange={(e) => {
+              const newLang = e.target.value;
+              setTargetLang(newLang);
+              router.push(`/demo/${newLang}/voca/${level}/${chapter}`);
+            }}
+            style={{
+              padding: "8px 12px",
+              borderRadius: 8,
+              border: "1px solid #ddd",
+              width: "100%",
+            }}
+          >
+            <option value="kr">Korean</option>
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="pt">Portuguese</option>
+          </select>
+        </div>
+        <div style={{ borderBottom: "1px solid #eee", padding: "6px 0" }}>
+          <VocaAudioController lang={lang} level={level} chapter={chapter} />
+        </div>
+
+        {/* 🔥 GUIDE */}
+        <div
+          style={{
+            fontSize: 13,
+            color: "#666",
+            background: "#fafafa",
+            padding: "12px 14px",
+            borderRadius: 10,
+            border: "1px solid #eee",
+            marginTop: 10,
+          }}
+        >
+          {guideTexts[studyLang].map((t, i) => (
+            <div key={i}>{t}</div>
+          ))}
         </div>
       </div>
-
-      <div style={{ borderBottom: "1px solid #eee", padding: "6px 0" }}>
-        <VocaAudioController lang={lang} level={level} chapter={chapter} />
-      </div>
-
-      <div
-        style={{
-          fontSize: 13,
-          color: "#666",
-          background: "#fafafa",
-          padding: "12px 14px",
-          borderRadius: 10,
-          border: "1px solid #eee",
-          marginTop: 10,
-        }}
-      >
-        {guideTexts[studyLang].map((t, i) => (
-          <div key={i}>{t}</div>
-        ))}
-      </div>
-
+      {/* 🔥 CONTENT */}
       <div style={{ padding: "30px 0" }}>
         {blocks.map((block, idx) => {
           const setNumber = idx + 1;
@@ -260,6 +338,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
                 SET {setNumber}
               </div>
 
+              {/* 단어 */}
               <div style={{ marginBottom: 12 }}>
                 {showTargetText && (
                   <div
@@ -268,6 +347,8 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
                       ...sentenceStyle,
                       fontWeight: 700,
                       cursor: "pointer",
+                      background:
+                        playingKey === `word-${idx}` ? "#f3f4f6" : "transparent",
                     }}
                   >
                     {word}
@@ -276,6 +357,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
                 <div style={{ ...sentenceStyle, color: "#666" }}>{wordStudy}</div>
               </div>
 
+              {/* 예문 */}
               {block.examples?.map((ex, i) => {
                 const t = ex[TARGET_KEY] ?? "";
                 const s = ex[studyLang] ?? "";
@@ -288,6 +370,10 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
                         style={{
                           ...sentenceStyle,
                           cursor: "pointer",
+                          background:
+                            playingKey === `voca-${idx}-${i}`
+                              ? "#f3f4f6"
+                              : "transparent",
                         }}
                       >
                         {t}
