@@ -54,13 +54,12 @@ const sentenceStyle: React.CSSProperties = {
 
 export default function DemoVocaViewer({ level, chapter }: Props) {
   const { targetLang } = useViewerTarget();
-  const lang = targetLang;
 
   const [showTargetText, setShowTargetText] = useState(true);
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
   const [blocks, setBlocks] = useState<Block[]>([]);
   const [status, setStatus] = useState<Status>("loading");
-
+  const [playingKey, setPlayingKey] = useState<string | null>(null);
   const TARGET_KEY = "target";
 
   const guideTexts: Record<StudyLang, string[]> = {
@@ -97,14 +96,28 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
       "6. Está a ver A1 Chapter 1. Pode escolher níveis A1, A2, B1, B2, C1, C2.",
     ],
   };
+  const handleSpeak = async (text: string, key: string) => {
+    if (!targetLang) return;
 
+    const trimmed = text.trim();
+    if (!trimmed) return;
+
+    setPlayingKey(key);
+    const currentKey = key;
+
+    try {
+      await speakText(trimmed, targetLang);
+    } finally {
+      setPlayingKey((prev) => (prev === currentKey ? null : prev));
+    }
+  };
   useEffect(() => {
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
   }, [targetLang]);
 
   useEffect(() => {
-    if (!lang) return;
+    if (!targetLang) return;
 
     let cancelled = false;
 
@@ -113,7 +126,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
         setStatus("loading");
 
         const res = await fetch(
-          `/api/content/manifest?lang=${lang}&series=voca&level=${level}&chapter=${chapter}&mode=demo`
+          `/api/content/manifest?lang=${targetLang}&series=voca&level=${level}&chapter=${chapter}&mode=demo`
         );
 
         const manifest = await res.json();
@@ -149,7 +162,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
     return () => {
       cancelled = true;
     };
-  }, [lang, level, chapter]);
+  }, [targetLang, level, chapter]);
 
   if (status === "loading") return <div style={{ padding: 24 }}>Loading...</div>;
   if (status === "error") return <div style={{ padding: 24 }}>Failed</div>;
@@ -276,9 +289,11 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
 
         {/* 🔥 AUDIO */}
 
-        <div style={{ borderBottom: "1px solid #eee", padding: "6px 16px" }}>
-          <VocaAudioController lang={lang} level={level} chapter={chapter} />
-        </div>
+        {targetLang && (
+          <div style={{ borderBottom: "1px solid #eee", padding: "6px 16px" }}>
+            <VocaAudioController lang={targetLang} level={level} chapter={chapter} />
+          </div>
+        )}
 
         {/* 🔥 GUIDE */}
         <div
@@ -315,19 +330,24 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
 
               {/* 단어 */}
               <div style={{ marginBottom: 12 }}>
-                {showTargetText && (
+                {showTargetText && word && (
                   <div
-                    onClick={() => speakText(word, targetLang)}
+                    onClick={() => void handleSpeak(word, `word-${idx}`)}
                     style={{
                       ...sentenceStyle,
                       fontWeight: 700,
                       cursor: "pointer",
+                      background: playingKey === `word-${idx}` ? "#f3f4f6" : undefined,
                     }}
                   >
                     {word}
                   </div>
                 )}
-                <div style={{ ...sentenceStyle, color: "#666" }}>{wordStudy}</div>
+                {wordStudy && (
+                  <div style={{ ...sentenceStyle, color: "#666" }}>
+                    {wordStudy}
+                  </div>
+                )}
               </div>
 
               {/* 예문 */}
@@ -337,18 +357,24 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
 
                 return (
                   <div key={i} style={{ marginBottom: 14 }}>
-                    {showTargetText && (
+                    {showTargetText && t && (
                       <div
-                        onClick={() => speakText(t, targetLang)}
+                        onClick={() => void handleSpeak(t, `ex-${idx}-${i}`)}
                         style={{
                           ...sentenceStyle,
                           cursor: "pointer",
+                          background:
+                            playingKey === `ex-${idx}-${i}` ? "#f3f4f6" : undefined,
                         }}
                       >
                         {t}
                       </div>
                     )}
-                    <div style={{ ...sentenceStyle, color: "#666" }}>{s}</div>
+                    {s && (
+                      <div style={{ ...sentenceStyle, color: "#666" }}>
+                        {s}
+                      </div>
+                    )}
                   </div>
                 );
               })}
