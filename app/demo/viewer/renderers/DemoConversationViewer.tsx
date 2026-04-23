@@ -89,23 +89,42 @@ const guideTexts: Record<StudyLang, string[]> = {
 
 export default function DemoConversationViewer({ level, chapter }: Props) {
   const { targetLang } = useViewerTarget();
-  const lang = targetLang || "kr";
 
   const [showTargetText, setShowTargetText] = useState(true);
   const [showGuide, setShowGuide] = useState(true);
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
   const [blocks, setBlocks] = useState<Block[]>([]);
   const [status, setStatus] = useState<Status>("loading");
+  const [playingKey, setPlayingKey] = useState<string | null>(null);
 
   useEffect(() => {
+    if (!targetLang) return;
+
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
   }, [targetLang]);
 
-  /* 🔥 여기 ↓↓↓ 정확히 이 위치 */
+  const handleLineSpeak = async (text: string, key: string) => {
+    if (!targetLang) return;
+
+    const trimmed = text.trim();
+    if (!trimmed) return;
+
+    setPlayingKey(key);
+    const currentKey = key;
+
+    try {
+      await speakText(trimmed, targetLang);
+    } finally {
+      setPlayingKey((prev) => (prev === currentKey ? null : prev));
+    }
+  };
 
   useEffect(() => {
-    if (!lang) return;
+    if (!targetLang) {
+      setStatus("error");
+      return;
+    }
 
     let cancelled = false;
 
@@ -114,7 +133,7 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
         setStatus("loading");
 
         const res = await fetch(
-          `/api/content/manifest?lang=${lang}&series=conversation&level=${level}&chapter=${chapter}&mode=demo`
+          `/api/content/manifest?lang=${targetLang}&series=conversation&level=${level}&chapter=${chapter}&mode=demo`
         );
 
         if (!res.ok) {
@@ -179,7 +198,7 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
     return () => {
       cancelled = true;
     };
-  }, [lang, level, chapter]);
+  }, [targetLang, level, chapter]);
 
   if (status === "loading") return <div style={{ padding: 24 }}>Loading...</div>;
   if (status === "error") return <div style={{ padding: 24 }}>Failed</div>;
@@ -310,7 +329,7 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
         {/* 🔥 AUDIO */}
         <div style={{ borderBottom: "1px solid #eee", padding: "6px 16px" }}>
           <ConversationAudioController
-            lang={lang}
+            lang={targetLang}
             level={level}
             chapter={chapter}
           />
@@ -347,29 +366,27 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
 
             {(block.lines || []).map((line, i) => {
               const key = `${block.set_id}-${i}`;
-              const targetText =
-                line.sentences?.[targetLang] ??
-                line.sentences?.target ??
-                "";
+
+              const targetText = line.sentences?.[targetLang] ?? "";
 
               const studyText = line.sentences?.[studyLang] ?? "";
 
               return (
                 <div key={i} style={{ marginBottom: 16, lineHeight: 1.6 }}>
-
-
-                  {showTargetText && (
+                  {showTargetText && targetText && (
                     <div
-                      onClick={() => speakText(targetText, targetLang)}
+                      onClick={() => void handleLineSpeak(targetText, key)}
                       style={{
                         fontWeight: 600,
                         cursor: "pointer",
+                        background: playingKey === key ? "#f3f4f6" : undefined,
+                        borderRadius: 6,
+                        padding: "2px 4px",
                       }}
                     >
                       <strong>{line.speaker}:</strong> {targetText}
                     </div>
                   )}
-
                   <div style={{ color: "#666" }}>
                     <strong>{line.speaker}:</strong> {studyText}
                   </div>
