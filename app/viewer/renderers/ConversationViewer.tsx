@@ -1,11 +1,10 @@
 "use client";
 
-import { useEffect, useState, useMemo, useRef } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import ConversationAudioController from "@/components/audio/controllers/ConversationAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
-
-/* ================= 타입 ================= */
+import { speakText } from "@/utils/tts";
 
 type StudyLang = "en" | "es" | "fr" | "pt";
 
@@ -31,16 +30,6 @@ type LoadStatus = "idle" | "loading" | "ready" | "error";
 
 const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
 
-/* 🔥 핵심 */
-const TTS_LANG_MAP: Record<string, string> = {
-  kr: "ko-KR",
-  ko: "ko-KR",
-  en: "en-US",
-  es: "es-ES",
-  fr: "fr-FR",
-  pt: "pt-PT",
-};
-
 /* ================= 스타일 ================= */
 
 const buttonStyle = (active: boolean): React.CSSProperties => ({
@@ -61,9 +50,7 @@ const targetStyle: React.CSSProperties = {
 
 const studyStyle: React.CSSProperties = {
   color: "#555",
-  cursor: "default",
 };
-
 /* ================= 컴포넌트 ================= */
 
 export default function ConversationViewer({
@@ -79,13 +66,21 @@ export default function ConversationViewer({
   const [status, setStatus] = useState<LoadStatus>("idle");
   const [playingKey, setPlayingKey] = useState<string | null>(null);
 
-  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
+  const handleSpeak = async (text: string, key: string) => {
+    if (!targetLang) return;
 
-  /* 🔥 TTS 언어 결정 (절대 studyLang 사용 금지) */
-  const ttsLang = useMemo(
-    () => TTS_LANG_MAP[targetLang] ?? "en-US",
-    [targetLang]
-  );
+    const trimmed = text.trim();
+    if (!trimmed) return;
+
+    setPlayingKey(key);
+    const currentKey = key;
+
+    try {
+      await speakText(trimmed, targetLang);
+    } finally {
+      setPlayingKey((prev) => (prev === currentKey ? null : prev));
+    }
+  };
 
   /* ================= studyLang 자동 설정 ================= */
 
@@ -93,42 +88,6 @@ export default function ConversationViewer({
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
   }, [targetLang]);
-
-  /* ================= 언어 변경 시 음성 리셋 ================= */
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    window.speechSynthesis.cancel();
-    utterRef.current = null;
-    setPlayingKey(null);
-  }, [targetLang, chapter]);
-
-  /* ================= 문장 재생 ================= */
-
-  const speak = (text: string, key: string) => {
-    if (!text.trim()) return;
-
-    const synth = window.speechSynthesis;
-    synth.cancel();
-
-    const u = new SpeechSynthesisUtterance(text);
-
-    /* 🔥 핵심 */
-    u.lang = ttsLang;
-
-    u.onstart = () => setPlayingKey(key);
-    u.onend = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-    u.onerror = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-
-    utterRef.current = u;
-    synth.speak(u);
-  };
 
   /* ================= 데이터 로딩 ================= */
 
@@ -270,9 +229,9 @@ export default function ConversationViewer({
                   return (
                     <div key={i} style={{ marginBottom: 12 }}>
                       {/* 🔥 목표언어 (클릭 가능) */}
-                      {showTargetText && (
+                      {showTargetText && targetText && (
                         <div
-                          onClick={() => speak(targetText, key)}
+                          onClick={() => void handleSpeak(targetText, key)}
                           style={{
                             ...targetStyle,
                             background:
