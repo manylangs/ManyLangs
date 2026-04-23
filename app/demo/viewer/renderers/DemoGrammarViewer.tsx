@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useMemo, useRef } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 import { speakText } from "@/utils/tts";
@@ -99,15 +99,20 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
     if (filtered.length > 0) setStudyLang(filtered[0]);
   }, [targetLang]);
 
-  const speak = (text: string, key: string) => {
-    if (!text.trim()) return;
+  const handleSpeak = async (text: string, key: string) => {
+    if (!targetLang) return;
+
+    const trimmed = text.trim();
+    if (!trimmed) return;
 
     setPlayingKey(key);
-    speakText(text, targetLang);
+    const currentKey = key;
 
-    setTimeout(() => {
-      setPlayingKey(null);
-    }, 2000); // 필요시 조정
+    try {
+      await speakText(trimmed, targetLang);
+    } finally {
+      setPlayingKey((prev) => (prev === currentKey ? null : prev));
+    }
   };
 
   useEffect(() => {
@@ -128,7 +133,11 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
 
         const dataAsset = manifest.assets?.find((a: any) => a.kind === "data");
 
-        if (!dataAsset) throw new Error("No data asset");
+        if (!dataAsset?.path) {
+          setData(null);
+          setStatus("ready");
+          return;
+        }
 
         const dataRes = await fetch(dataAsset.path);
         const dataJson = await dataRes.json();
@@ -161,29 +170,21 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
 
   const byVariant = (v: string) => examples.filter((b) => b.variant === v);
 
-  const titleTarget =
-    data?.title?.[targetLang] ??
-    data?.title?.target ??
-    "";
+  const titleTarget = data?.title?.target ?? "";
 
   const titleStudy = data?.title?.[studyLang] ?? "";
 
   const renderLine = (b: GrammarBlock, i: number, sectionKey: string) => {
-    const target =
-      b.sentences?.[targetLang] ??
-      b.sentences?.target ??
-      "";
-
-    const study = b.sentences?.[studyLang] ?? "";
+    const targetText = b.sentences?.target ?? "";
+    const studyText = b.sentences?.[studyLang] ?? "";
 
     const lineKey = `${sectionKey}-${i}`;
 
     return (
       <div key={lineKey} style={{ marginBottom: 18 }}>
-        {showTargetText && (
+        {showTargetText && targetText && (
           <div
-            onClick={() => target && speak(target, lineKey)}
-            onTouchStart={() => target && speak(target, lineKey)}
+            onClick={() => void handleSpeak(targetText, lineKey)}
             style={{
               ...sentenceStyle,
               fontWeight: 600,
@@ -191,18 +192,20 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
               background: playingKey === lineKey ? "#f3f4f6" : "transparent",
             }}
           >
-            {target}
+            {targetText}
           </div>
         )}
-        <div
-          style={{
-            ...sentenceStyle,
-            color: "#666",
-            cursor: "default",
-          }}
-        >
-          {study}
-        </div>
+
+        {studyText && (
+          <div
+            style={{
+              ...sentenceStyle,
+              color: "#666",
+            }}
+          >
+            {studyText}
+          </div>
+        )}
       </div>
     );
   };
@@ -345,14 +348,16 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
       </div>
       <div style={{ padding: "30px 0" }}>
         <div style={{ marginBottom: 30 }}>
-          {showTargetText && (
+          {showTargetText && titleTarget && (
             <div style={{ ...sentenceStyle, fontSize: 24, fontWeight: 700 }}>
               {titleTarget}
             </div>
           )}
-          <div style={{ ...sentenceStyle, fontSize: 20, color: "#444" }}>
-            {titleStudy}
-          </div>
+          {titleStudy && (
+            <div style={{ ...sentenceStyle, fontSize: 20, color: "#444" }}>
+              {titleStudy}
+            </div>
+          )}
         </div>
 
         <div style={{ marginBottom: 32 }}>
