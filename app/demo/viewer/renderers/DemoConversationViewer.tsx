@@ -370,10 +370,7 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
 
               const dataLangKey = targetLang ? DATA_LANG_KEY_MAP[targetLang] : undefined;
 
-              const targetText =
-                dataLangKey && line.sentences
-                  ? line.sentences[dataLangKey] ?? ""
-                  : "";
+              const targetText = line.sentences?.target ?? "";
 
               const studyText = line.sentences?.[studyLang] ?? "";
 
