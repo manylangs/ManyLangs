@@ -1,14 +1,15 @@
-"use client"; 
+"use client";
 
-import { useState, useEffect, useMemo, useRef } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import RealAudioController from "@/components/audio/controllers/RealAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
+import { speakText } from "@/utils/tts";
 
 type StudyLang = "en" | "es" | "fr" | "pt";
 
 type Sentence = {
-  texts: Record<string, string>;
+  sentences: Record<string, string>;
 };
 
 type Props = {
@@ -18,14 +19,6 @@ type Props = {
 };
 
 const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
-const TTS_LANG_MAP: Record<string, string> = {
-  kr: "ko-KR",
-  ko: "ko-KR",
-  en: "en-US",
-  es: "es-ES",
-  fr: "fr-FR",
-  pt: "pt-PT",
-};
 
 const targetStyle: React.CSSProperties = {
   cursor: "pointer",
@@ -67,43 +60,21 @@ export default function RealViewer({
   const [status, setStatus] = useState<LoadStatus>("idle");
   const [playingKey, setPlayingKey] = useState<string | null>(null);
 
-  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
+  const handleSpeak = async (text: string, key: string) => {
+    if (!targetLang) return;
 
-  const ttsLang = useMemo(
-    () => TTS_LANG_MAP[targetLang] ?? "en-US",
-    [targetLang]
-  );
+    const trimmed = text.trim();
+    if (!trimmed) return;
 
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    window.speechSynthesis.cancel();
-    utterRef.current = null;
-    setPlayingKey(null);
-  }, [targetLang, chapter]);
+    setPlayingKey(key);
+    const currentKey = key;
 
-  const speak = (text: string, key: string) => {
-    if (!text.trim()) return;
-
-    const synth = window.speechSynthesis;
-    synth.cancel();
-
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = ttsLang;
-
-    u.onstart = () => setPlayingKey(key);
-    u.onend = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-    u.onerror = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-
-    utterRef.current = u;
-    synth.speak(u);
+    try {
+      await speakText(trimmed, targetLang);
+    } finally {
+      setPlayingKey((prev) => (prev === currentKey ? null : prev));
+    }
   };
-
   /* study language 자동 설정 */
   useEffect(() => {
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
@@ -315,20 +286,17 @@ export default function RealViewer({
               {sentences.map((s, i) => {
 
                 const targetText =
-                  s.texts?.[targetLang] ?? "";
+                  s.sentences?.target ?? "";
 
                 const studyText =
-                  s.texts?.[studyLang] ?? "";
+                  s.sentences?.[studyLang] ?? "";
 
                 return (
                   <div key={i} style={{ marginBottom: 18 }}>
-                    {showTargetText && (
+                    {showTargetText && targetText && (
                       <div
                         onClick={() =>
-                          speak(
-                            targetText,
-                            `real-${i}`
-                          )
+                          void handleSpeak(targetText, `real-${i}`)
                         }
                         style={{
                           ...targetStyle,
