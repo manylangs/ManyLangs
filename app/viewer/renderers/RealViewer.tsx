@@ -9,7 +9,7 @@ import { speakText } from "@/utils/tts";
 type StudyLang = "en" | "es" | "fr" | "pt";
 
 type Sentence = {
-  sentences: Record<string, string>;
+  texts: Record<string, string>;
 };
 
 type Props = {
@@ -286,11 +286,10 @@ export default function RealViewer({
               {sentences.map((s, i) => {
 
                 const targetText =
-                  s.sentences?.target ?? "";
+                  s.texts?.target ?? "";
 
                 const studyText =
-                  s.sentences?.[studyLang] ?? "";
-
+                  s.texts?.[studyLang] ?? "";
                 return (
                   <div key={i} style={{ marginBottom: 18 }}>
                     {showTargetText && targetText && (
