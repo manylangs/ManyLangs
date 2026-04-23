@@ -1,23 +1,16 @@
 "use client";
 
-import { useState, useEffect, useMemo, useRef } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import IdiomAudioController from "@/components/audio/controllers/IdiomAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
+import { speakText } from "@/utils/tts";
 
 type StudyLang = "en" | "es" | "fr" | "pt";
 
 const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
 
 const LEVELS = ["a1", "a2", "b1", "b2", "c1", "c2"];
-const TTS_LANG_MAP: Record<string, string> = {
-  kr: "ko-KR",
-  ko: "ko-KR",
-  en: "en-US",
-  es: "es-ES",
-  fr: "fr-FR",
-  pt: "pt-PT",
-};
 
 const targetStyle: React.CSSProperties = {
   cursor: "pointer",
@@ -62,42 +55,22 @@ export default function IdiomViewer({
   const [status, setStatus] = useState<LoadStatus>("idle");
   const [playingKey, setPlayingKey] = useState<string | null>(null);
 
-  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
+  const handleSpeak = async (text: string, key: string) => {
+    if (!targetLang) return;
 
-  const ttsLang = useMemo(
-    () => TTS_LANG_MAP[targetLang] ?? "en-US",
-    [targetLang]
-  );
+    const trimmed = text.trim();
+    if (!trimmed) return;
 
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    window.speechSynthesis.cancel();
-    utterRef.current = null;
-    setPlayingKey(null);
-  }, [targetLang, chapter]);
+    setPlayingKey(key);
+    const currentKey = key;
 
-  const speak = (text: string, key: string) => {
-    if (!text.trim()) return;
-
-    const synth = window.speechSynthesis;
-    synth.cancel();
-
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = ttsLang;
-
-    u.onstart = () => setPlayingKey(key);
-    u.onend = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-    u.onerror = () => {
-      setPlayingKey(null);
-      utterRef.current = null;
-    };
-
-    utterRef.current = u;
-    synth.speak(u);
+    try {
+      await speakText(trimmed, targetLang);
+    } finally {
+      setPlayingKey((prev) => (prev === currentKey ? null : prev));
+    }
   };
+
   useEffect(() => {
 
     const filtered = ALL_STUDY_LANGS.filter(
@@ -294,7 +267,7 @@ export default function IdiomViewer({
               {showTargetText && (
                 <div
                   onClick={() =>
-                    speak(
+                    void handleSpeak(
                       block.expression?.target ?? "",
                       `exp-${idx}`
                     )
@@ -329,7 +302,7 @@ export default function IdiomViewer({
                 {showTargetText && (
                   <div
                     onClick={() =>
-                      speak(
+                      void handleSpeak(
                         block.explanation?.target ?? "",
                         `expl-${idx}`
                       )
@@ -368,7 +341,7 @@ export default function IdiomViewer({
                     {showTargetText && (
                       <div
                         onClick={() =>
-                          speak(
+                          void handleSpeak(
                             ex?.target ?? "",
                             `ex-${idx}-${i}`
                           )
