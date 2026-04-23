@@ -55,13 +55,12 @@ const sentenceStyle: React.CSSProperties = {
 
 export default function DemoRealViewer({ level, chapter }: Props) {
   const { targetLang } = useViewerTarget();
-  const lang = targetLang || "kr";
 
   const [blocks, setBlocks] = useState<Block[]>([]);
   const [status, setStatus] = useState<Status>("loading");
   const [showTarget, setShowTarget] = useState(true);
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
-
+  const [playingKey, setPlayingKey] = useState<string | null>(null);
   const [audioSrc, setAudioSrc] = useState("");
   const [imageSrc, setImageSrc] = useState("");
 
@@ -95,11 +94,25 @@ export default function DemoRealViewer({ level, chapter }: Props) {
       "5. Toque ou clique numa frase para reproduzir apenas essa parte.",
     ],
   };
+  const handleSpeak = async (text: string, key: string) => {
+    if (!targetLang) return;
 
+    const trimmed = text.trim();
+    if (!trimmed) return;
+
+    setPlayingKey(key);
+    const currentKey = key;
+
+    try {
+      await speakText(trimmed, targetLang);
+    } finally {
+      setPlayingKey((prev) => (prev === currentKey ? null : prev));
+    }
+  };
   /* ================= 데이터 로드 ================= */
 
   useEffect(() => {
-    if (!lang) return;
+    if (!targetLang) return;
 
     let cancelled = false;
 
@@ -108,7 +121,7 @@ export default function DemoRealViewer({ level, chapter }: Props) {
         setStatus("loading");
 
         const res = await fetch(
-          `/api/content/manifest?lang=${lang}&series=real&level=${level}&chapter=${chapter}&mode=demo`
+          `/api/content/manifest?lang=${targetLang}&series=real&level=${level}&chapter=${chapter}&mode=demo`
         );
 
         const manifest = await res.json();
@@ -136,7 +149,7 @@ export default function DemoRealViewer({ level, chapter }: Props) {
     return () => {
       cancelled = true;
     };
-  }, [lang, level, chapter]);
+  }, [targetLang, level, chapter]);
 
 
   if (status === "loading") return <div style={{ padding: 24 }}>Loading...</div>;
@@ -144,7 +157,7 @@ export default function DemoRealViewer({ level, chapter }: Props) {
 
   const descBlock = blocks.find((b) => b.type === "description");
 
-  const sentences = Array.isArray(descBlock?.sentences)
+  const sentences: Sentence[] = Array.isArray(descBlock?.sentences)
     ? descBlock.sentences
     : [];
 
@@ -309,36 +322,42 @@ export default function DemoRealViewer({ level, chapter }: Props) {
             )}
           </div>
 
-          {/* ===== [REPLACE_START: SENTENCE_LIST_VIEW] ===== */}
           <div style={{ flex: "1 1 400px" }}>
-            {sentences.map((s: any, i: number) => (
-              <div key={i} style={{ marginBottom: 18 }}>
-                {showTarget && (
-                  <div
-                    onClick={() => speakText(s.texts[lang], targetLang)}
-                    style={{
-                      ...sentenceStyle,
-                      fontWeight: 600,
-                      cursor: "pointer",
-                    }}
-                  >
-                    {s.texts[lang]}
-                  </div>
-                )}
+            {sentences.map((s: any, i: number) => {
+              const key = `real-sentence-${i}`;
+              const targetText = s.texts?.target ?? "";
+              const studyText = s.texts?.[studyLang] ?? "";
 
-                <div
-                  style={{
-                    ...sentenceStyle,
-                    color: "#666",
-                  }}
-                >
-                  {s.texts[studyLang]}
+              return (
+                <div key={i} style={{ marginBottom: 18 }}>
+                  {showTarget && targetText && (
+                    <div
+                      onClick={() => void handleSpeak(targetText, key)}
+                      style={{
+                        ...sentenceStyle,
+                        fontWeight: 600,
+                        cursor: "pointer",
+                        background: playingKey === key ? "#f3f4f6" : undefined,
+                      }}
+                    >
+                      {targetText}
+                    </div>
+                  )}
+
+                  {studyText && (
+                    <div
+                      style={{
+                        ...sentenceStyle,
+                        color: "#666",
+                      }}
+                    >
+                      {studyText}
+                    </div>
+                  )}
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
-          {/* ===== [REPLACE_END: SENTENCE_LIST_VIEW] ===== */}
-
         </div>
       </div>
       {/* ===== [REPLACE_END: CONTENT_OUTER_FINAL] ===== */}
