@@ -5,6 +5,7 @@ import Link from "next/link";
 import ConversationAudioController from "@/components/audio/controllers/ConversationAudioController";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 import { speakText } from "@/utils/tts";
+import { DATA_LANG_KEY_MAP } from "@/lib/lang-key-map";
 
 type StudyLang = "en" | "es" | "fr" | "pt";
 const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
@@ -367,7 +368,12 @@ export default function DemoConversationViewer({ level, chapter }: Props) {
             {(block.lines || []).map((line, i) => {
               const key = `${block.set_id}-${i}`;
 
-              const targetText = line.sentences?.[targetLang] ?? "";
+              const dataLangKey = targetLang ? DATA_LANG_KEY_MAP[targetLang] : undefined;
+
+              const targetText =
+                dataLangKey && line.sentences
+                  ? line.sentences[dataLangKey] ?? ""
+                  : "";
 
               const studyText = line.sentences?.[studyLang] ?? "";
 
