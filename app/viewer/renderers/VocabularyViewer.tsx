@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo, useRef } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import VocaAudioController from "@/components/audio/controllers/VocaAudioController";
@@ -12,15 +12,6 @@ type StudyLang = "en" | "es" | "fr" | "pt";
 const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
 
 const LEVELS = ["a1", "a2", "b1", "b2", "c1", "c2"];
-
-const TTS_LANG_MAP: Record<string, string> = {
-  kr: "ko-KR",
-  ko: "ko-KR",
-  en: "en-US",
-  es: "es-ES",
-  fr: "fr-FR",
-  pt: "pt-PT",
-};
 
 const targetStyle: React.CSSProperties = {
   cursor: "pointer",
@@ -34,7 +25,7 @@ const studyStyle: React.CSSProperties = {
 };
 type LoadStatus = "idle" | "loading" | "ready" | "error";
 
-const buttonStyle = (active: boolean) => ({
+const buttonStyle = (active: boolean): React.CSSProperties => ({
   padding: "4px 8px",
   borderRadius: 4,
   fontSize: 14,
@@ -64,20 +55,21 @@ export default function VocabularyViewer({
   const [status, setStatus] = useState<LoadStatus>("idle");
   const [playingKey, setPlayingKey] = useState<string | null>(null);
 
-  const utterRef = useRef<SpeechSynthesisUtterance | null>(null);
+  const handleSpeak = async (text: string, key: string) => {
+    if (!targetLang) return;
 
-  const ttsLang = useMemo(
-    () => TTS_LANG_MAP[targetLang] ?? "en-US",
-    [targetLang]
-  );
+    const trimmed = text.trim();
+    if (!trimmed) return;
 
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    window.speechSynthesis.cancel();
-    utterRef.current = null;
-    setPlayingKey(null);
-  }, [targetLang, chapter]);
+    setPlayingKey(key);
+    const currentKey = key;
 
+    try {
+      await speakText(trimmed, targetLang);
+    } finally {
+      setPlayingKey((prev) => (prev === currentKey ? null : prev));
+    }
+  };
   useEffect(() => {
 
     const filtered = ALL_STUDY_LANGS.filter(
@@ -274,64 +266,69 @@ export default function VocabularyViewer({
           {blocks.map((block, idx) => (
 
             <section key={idx} style={{ marginBottom: 56 }}>
+              {(() => {
+                const key = `word-${idx}`;
+                const targetText = block.word?.target ?? "";
+                const studyText = block.word?.[studyLang] ?? "";
 
-              <div style={{ fontWeight: 700 }}>
-                Set {idx + 1}
-              </div>
+                return (
+                  <>
+                    <div style={{ fontWeight: 700 }}>
+                      Set {idx + 1}
+                    </div>
 
-              {showTargetText && (
-                <div
-                  onClick={() =>
-                    speakText(block.word?.target ?? "", targetLang)
-                  }
-                  style={{
-                    ...targetStyle,
-                    fontSize: 22,
-                    fontWeight: 700,
-                    background:
-                      playingKey === `word-${idx}` ? "#f3f4f6" : "transparent",
-                  }}
-                >
-                  {block.word?.target ?? ""}
-                </div>
-              )}
-              {block.word?.[studyLang] && (
-                <div style={{ color: "#555" }}>
-                  {block.word[studyLang]}
-                </div>
-              )}
-
-              <div style={{ marginTop: 16 }}>
-                {block.examples?.map((ex: any, i: number) => (
-
-                  <div key={i}>
-                    {showTargetText && (
+                    {showTargetText && targetText && (
                       <div
-                        onClick={() =>
-                          speakText(ex?.target ?? "", targetLang)
-                        }
+                        onClick={() => void handleSpeak(targetText, key)}
                         style={{
                           ...targetStyle,
+                          fontSize: 22,
+                          fontWeight: 700,
                           background:
-                            playingKey === `voca-${idx}-${i}`
-                              ? "#f3f4f6"
-                              : "transparent",
+                            playingKey === key ? "#f3f4f6" : "transparent",
                         }}
                       >
-                        {ex?.target ?? ""}
-                      </div>
-                    )}
-                    {ex?.[studyLang] && (
-                      <div>
-                        {ex[studyLang]}
+                        {targetText}
                       </div>
                     )}
 
-                  </div>
-                ))}
+                    {studyText && (
+                      <div style={{ color: "#555" }}>
+                        {studyText}
+                      </div>
+                    )}
 
-              </div>
+                    <div style={{ marginTop: 16 }}>
+                      {block.examples?.map((ex: any, i: number) => {
+                        const exKey = `voca-${idx}-${i}`;
+                        const exTarget = ex?.target ?? "";
+                        const exStudy = ex?.[studyLang] ?? "";
 
+                        return (
+                          <div key={i}>
+                            {showTargetText && exTarget && (
+                              <div
+                                onClick={() => void handleSpeak(exTarget, exKey)}
+                                style={{
+                                  ...targetStyle,
+                                  background:
+                                    playingKey === exKey
+                                      ? "#f3f4f6"
+                                      : "transparent",
+                                }}
+                              >
+                                {exTarget}
+                              </div>
+                            )}
+
+                            {exStudy && <div>{exStudy}</div>}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </>
+                );
+              })()}
             </section>
 
           ))}
