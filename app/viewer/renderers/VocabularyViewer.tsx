@@ -45,8 +45,7 @@ export default function VocabularyViewer({
 }: any) {
 
 
-  const { targetLang, setTargetLang, showTargetText } = useViewerTarget();
-  const router = useRouter();
+  const { targetLang, showTargetText } = useViewerTarget();
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
 
   const [blocks, setBlocks] = useState<VocaBlock[]>([]);
@@ -170,29 +169,6 @@ export default function VocabularyViewer({
 
       {status === "ready" && (
         <>
-          {/* 🌍 Language Selector */}
-          <div style={{ marginBottom: 12 }}>
-            <select
-              value={targetLang}
-              onChange={(e) => {
-                const newLang = e.target.value;
-                setTargetLang(newLang);
-                router.push(`/viewer/${newLang}/voca/${level}/${chapter}`);
-              }}
-              style={{
-                padding: "8px 12px",
-                borderRadius: 8,
-                border: "1px solid #ddd",
-                width: "100%",
-              }}
-            >
-              <option value="kr">Korean</option>
-              <option value="en">English</option>
-              <option value="es">Spanish</option>
-              <option value="fr">French</option>
-              <option value="pt">Portuguese</option>
-            </select>
-          </div>
           <VocaAudioController
             lang={targetLang}
             level={level}
