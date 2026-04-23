@@ -56,13 +56,31 @@ const sentenceStyle: React.CSSProperties = {
 
 export default function DemoIdiomViewer({ level, chapter }: Props) {
   const { targetLang } = useViewerTarget();
-  const lang = targetLang || "kr";
+  if (!targetLang) return null;
+
+  const lang = targetLang;
 
   const [showTargetText, setShowTargetText] = useState(true);
   const [studyLang, setStudyLang] = useState<StudyLang>("en");
   const [groupedBlocks, setGroupedBlocks] = useState<Record<number, Block[]>>({});
   const [status, setStatus] = useState<Status>("loading");
-  const TARGET_KEY = "target";
+  const [playingKey, setPlayingKey] = useState<string | null>(null);
+
+  const handleSpeak = async (text: string, key: string) => {
+    if (!targetLang) return;
+
+    const trimmed = text.trim();
+    if (!trimmed) return;
+
+    setPlayingKey(key);
+    const currentKey = key;
+
+    try {
+      await speakText(trimmed, targetLang);
+    } finally {
+      setPlayingKey((prev) => (prev === currentKey ? null : prev));
+    }
+  };
 
   const guideTexts: Record<StudyLang, string[]> = {
     en: [
@@ -162,7 +180,6 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
 
   if (status === "loading") return <div style={{ padding: 24 }}>Loading...</div>;
   if (status === "error") return <div style={{ padding: 24 }}>Failed</div>;
-
   return (
     <div style={containerStyle}>
       <div
@@ -294,69 +311,83 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
               </div>
 
               {setBlocks.map((block, idx) => {
-                const expression = block.expression?.[TARGET_KEY] ?? "";
+                const key = `${set}-${idx}`;
+
+                const expression = block.expression?.target ?? "";
                 const expressionStudy = block.expression?.[studyLang] ?? "";
 
-                const explanation = block.explanation?.[TARGET_KEY] ?? "";
+                const explanation = block.explanation?.target ?? "";
                 const explanationStudy = block.explanation?.[studyLang] ?? "";
 
                 return (
                   <section key={idx} style={{ marginBottom: 30 }}>
-                    {showTargetText && (
+                    {showTargetText && expression && (
                       <div
-                        onClick={() => speakText(expression, targetLang)}
+                        onClick={() => void handleSpeak(expression, key)}
                         style={{
                           ...sentenceStyle,
                           fontWeight: 700,
                           cursor: "pointer",
+                          background: playingKey === key ? "#f3f4f6" : "transparent",
                         }}
                       >
                         {expression}
                       </div>
                     )}
 
-                    <div style={{ ...sentenceStyle, color: "#666" }}>
-                      {expressionStudy}
-                    </div>
+                    {expressionStudy && (
+                      <div style={{ ...sentenceStyle, color: "#666" }}>
+                        {expressionStudy}
+                      </div>
+                    )}
 
                     <div style={{ marginBottom: 8 }}>{block.frequency_stars}</div>
 
-                    {showTargetText && (
+                    {showTargetText && explanation && (
                       <div
-                        onClick={() => speakText(explanation, targetLang)}
+                        onClick={() => void handleSpeak(explanation, key)}
                         style={{
                           ...sentenceStyle,
                           cursor: "pointer",
+                          background: playingKey === key ? "#f3f4f6" : "transparent",
                         }}
                       >
                         {explanation}
                       </div>
                     )}
 
-                    <div style={{ ...sentenceStyle, color: "#666", marginBottom: 12 }}>
-                      {explanationStudy}
-                    </div>
+                    {explanationStudy && (
+                      <div style={{ ...sentenceStyle, color: "#666", marginBottom: 12 }}>
+                        {explanationStudy}
+                      </div>
+                    )}
 
                     {block.examples?.map((ex, i) => {
-                      const t = ex[TARGET_KEY] ?? "";
+                      const t = ex.target ?? "";
                       const s = ex[studyLang] ?? "";
+
+                      const exKey = `${key}-ex-${i}`;
 
                       return (
                         <div key={i} style={{ marginBottom: 14 }}>
-                          {showTargetText && (
+                          {showTargetText && t && (
                             <div
-                              onClick={() => speakText(t, targetLang)}
+                              onClick={() => void handleSpeak(t, exKey)}
                               style={{
                                 ...sentenceStyle,
                                 cursor: "pointer",
+                                background: playingKey === exKey ? "#f3f4f6" : "transparent",
                               }}
                             >
                               {t}
                             </div>
                           )}
-                          <div style={{ ...sentenceStyle, color: "#666" }}>
-                            {s}
-                          </div>
+
+                          {s && (
+                            <div style={{ ...sentenceStyle, color: "#666" }}>
+                              {s}
+                            </div>
+                          )}
                         </div>
                       );
                     })}
