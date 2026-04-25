@@ -1,7 +1,11 @@
-import "./globals.css"; // ✅ 이거 추가
-
+import "./globals.css";
+import { Metadata, Viewport } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { ViewerTargetProvider } from "@/app/viewer/context/ViewerTargetContext";
+
+export const viewport: Viewport = {
+  viewportFit: "cover",
+};
 
 export default function RootLayout({
   children,

@@ -269,7 +269,7 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
                 }}
                 style={buttonStyle(false)}
               >
-                Share
+                Copy link
               </button>
             </div>
           </div>
