@@ -8,70 +8,71 @@ import { copyLink } from "@/utils/share";
 const LEVELS = [
   {
     level: "A1",
-    words: "200",
+    words: "175",
     desc: {
-      kr: "TOP 200 일상 명사",
-      en: "Top 200 everyday nouns",
-      es: "Top 200 sustantivos cotidianos",
-      fr: "Top 200 noms du quotidien",
-      pt: "Top 200 substantivos do cotidiano",
+      kr: "일상 명사",
+      en: "everyday nouns",
+      es: "sustantivos cotidianos",
+      fr: "noms du quotidien",
+      pt: "substantivos do cotidiano",
     },
   },
-  {
+  { 
     level: "A2",
-    words: "200",
+    words: "175",
     desc: {
-      kr: "TOP 200 확장 일상 명사",
-      en: "Top 200 extended everyday nouns",
-      es: "Top 200 sustantivos cotidianos ampliados",
-      fr: "Top 200 noms du quotidien étendus",
-      pt: "Top 200 substantivos do cotidiano expandidos",
-    },
+      kr: "일상 명사 & 확장 일상 명사",
+      en: "everyday nouns & extended everyday nouns",
+      es: "sustantivos cotidianos & sustantivos cotidianos ampliados",
+      fr: "noms du quotidien & noms du quotidien étendus",
+      pt: "substantivos do cotidiano & substantivos do cotidiano expandidos"
+    }
   },
   {
     level: "B1",
-    words: "250",
+    words: "175",
     desc: {
-      kr: "사회·학교·기술 관련 명사",
-      en: "Nouns related to society, school, and technology",
-      es: "Sustantivos relacionados con la sociedad, la escuela y la tecnología",
-      fr: "Noms liés à la société, à l’école et à la technologie",
-      pt: "Substantivos relacionados à sociedade, à escola e à tecnologia",
+    kr: "확장 일상 명사 & 사회·학교·기술 관련 명사",
+    en: "extended everyday nouns & Nouns related to society, school, and technology",
+    es: "sustantivos cotidianos ampliados & Sustantivos relacionados con la sociedad, la escuela y la tecnología",
+    fr: "noms du quotidien étendus & Noms liés à la société, à l’école et à la technologie",
+    pt: "substantivos do cotidiano expandidos & Substantivos relacionados à sociedade, à escola e à tecnologia"
     },
   },
-  {
-    level: "B2",
-    words: "200",
-    desc: {
-      kr: "추상·정책·미래 개념 명사",
+{
+  level: "B2",
+    words: "175",
+      desc: {
+
+    kr: "사회·학교·기술 관련 명사 & 추상·정책·미래 개념 명사",
+      en: "Nouns related to society, school, and technology & Abstract, policy, and future-related nouns",
+        es: "Sustantivos relacionados con la sociedad, la escuela y la tecnología & Sustantivos abstractos, de políticas y relacionados con el futuro",
+          fr: "Noms liés à la société, à l’école et à la technologie & Noms abstraits, politiques et liés au futur",
+            pt: "Substantivos relacionados à sociedade, à escola e à tecnologia & Substantivos abstratos, de políticas e relacionados ao futuro"
+  }
+},
+{
+  level: "C1",
+    words: "150",
+      desc: {
+    kr: "추상·정책·미래 개념 명사",
       en: "Abstract, policy, and future-related nouns",
-      es: "Sustantivos abstractos, de políticas y relacionados con el futuro",
-      fr: "Noms abstraits, politiques et liés au futur",
-      pt: "Substantivos abstratos, de políticas e relacionados ao futuro",
+        es: "Sustantivos abstractos, de políticas y relacionados con el futuro",
+          fr: "Noms abstraits, politiques et liés au futur",
+            pt: "Substantivos abstratos, de políticas e relacionados ao futuro",
     },
+},
+{
+  level: "C2",
+    words: "150",
+      desc: {
+    kr: "학술 명사 & 고급 명사",
+      en: "Academic nouns & Rare advanced nouns",
+        es: "Sustantivos académicos & Sustantivos avanzados raros",
+          fr: "Noms académiques & Noms avancés rares",
+            pt: "Substantivos acadêmicos & Substantivos avançados raros"
   },
-  {
-    level: "C1",
-    words: "100",
-    desc: {
-      kr: "학술 명사",
-      en: "Academic nouns",
-      es: "Sustantivos académicos",
-      fr: "Noms académiques",
-      pt: "Substantivos acadêmicos",
-    },
-  },
-  {
-    level: "C2",
-    words: "50",
-    desc: {
-      kr: "희귀 고급 명사",
-      en: "Rare advanced nouns",
-      es: "Sustantivos avanzados raros",
-      fr: "Noms avancés rares",
-      pt: "Substantivos avançados raros",
-    },
-  },
+},
 ];
 
 /* ================= 페이지 ================= */
