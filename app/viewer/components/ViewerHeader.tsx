@@ -29,6 +29,7 @@ export default function ViewerHeader() {
         zIndex: 1000,
         background: "#fff",
         height: "56px",
+        paddingTop: "8px",
       }}
     >
       <div
