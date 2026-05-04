@@ -499,27 +499,32 @@ export default function SelectBooksPage() {
       setLoading(false);
     }
   }
-
-  // ✅ 여기만 변경: startPayment에 try/catch + json safe + 로딩가드
   async function startPayment() {
-    // Android IAP
-    // 🔥 START mobile payment
+    if (loading) return;
+
+    // 🔥 Android / iOS IAP
     if (typeof window !== "undefined") {
+      // ✅ Android
       if ((window as any).AndroidBridge) {
-        (window as any).AndroidBridge.purchase(payAmount);
-        setLoading(false);
+        const productId =
+          payAmount === "3"
+            ? "coupon_pack_2"
+            : "coupon_pack_4";
+
+        console.log("Android IAP request:", productId);
+        (window as any).AndroidBridge.requestPurchase(productId);
         return;
       }
 
+      // ✅ iOS
       if ((window as any).webkit?.messageHandlers?.purchase) {
+        console.log("iOS IAP request:", payAmount);
         (window as any).webkit.messageHandlers.purchase.postMessage(payAmount);
-        setLoading(false);
         return;
       }
     }
-    // 🔥 END mobile payment
-    if (loading) return;
 
+    // 🌐 Web 결제
     setLoading(true);
     setError("");
 
@@ -530,7 +535,7 @@ export default function SelectBooksPage() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          amount: payAmount, // 🔥 userId 제거
+          amount: payAmount,
         }),
       });
 
@@ -546,7 +551,6 @@ export default function SelectBooksPage() {
       } else {
         setError("Checkout URL missing.");
       }
-
     } catch {
       setError("Network error.");
     } finally {
@@ -732,7 +736,6 @@ export default function SelectBooksPage() {
       setLoading(false);
     }
   }
-
   function openBook(item: LibraryItem) {
     if (isExpired(item.expiresAt)) {
       setError("Expired textbook. Please redeem a new coupon or purchase again.");
