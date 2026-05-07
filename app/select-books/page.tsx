@@ -390,30 +390,72 @@ export default function SelectBooksPage() {
   }, [isLoaded, userId]);
   useEffect(() => {
     if (typeof window === "undefined") return;
-    (window as any).onIAPSuccess = async (purchaseToken: string, amount: string) => {
+
+    (window as any).onIAPSuccess = async (
+      purchaseToken: string,
+      productId: string
+    ) => {
       setLoading(true);
       setError("");
+
       try {
-        const res = await fetch("/api/iap/verify", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ purchaseToken, amount, userId }),
+        console.log("[IAP SUCCESS]", {
+          purchaseToken,
+          productId,
         });
+
+        const res = await fetch("/api/android-iap", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            purchaseToken,
+            productId,
+            uid: userId,
+            packageName: "com.manylangs.app2",
+          }),
+        });
+
         const data = await safeJson(res);
-        if (!res.ok) { setError(data?.error || "IAP verification failed."); return; }
+
+        if (!res.ok) {
+          console.error("[IAP ERROR]", data);
+          setError(data?.error || "IAP verification failed.");
+          return;
+        }
+
+        console.log("[IAP OK]", data);
+
+        // 최신 coupon sync
         const couponRes = await fetch("/api/coupons/list", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ userId }),
         });
+
         const couponData = await safeJson(couponRes);
-        if (couponRes.ok && Array.isArray(couponData?.coupons)) setCouponBox(couponData.coupons);
-      } catch { setError("Network error."); }
-      finally { setLoading(false); }
+
+        if (
+          couponRes.ok &&
+          Array.isArray(couponData?.coupons)
+        ) {
+          setCouponBox(couponData.coupons);
+        }
+
+        alert("Coupons added!");
+      } catch (err) {
+        console.error(err);
+        setError("Network error.");
+      } finally {
+        setLoading(false);
+      }
     };
-    return () => { delete (window as any).onIAPSuccess; };
+
+    return () => {
+      delete (window as any).onIAPSuccess;
+    };
   }, [userId]);
-  // ✅ Hook 끝난 뒤에만 early return
   if (!isLoaded || !isUserLoaded) {
     return <div style={{ padding: 20 }}>Loading...</div>;
   }
@@ -512,7 +554,9 @@ export default function SelectBooksPage() {
             : "coupon_pack_4";
 
         console.log("Android IAP request:", productId);
-        (window as any).AndroidBridge.requestPurchase(productId);
+
+        (window as any).AndroidBridge.purchaseProduct(productId);
+
         return;
       }
 
