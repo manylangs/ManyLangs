@@ -556,7 +556,7 @@ export default function SelectBooksPage() {
 
         console.log("Android IAP request:", productId);
 
-        (window as any).AndroidBridge.purchaseProduct(productId);
+        (window as any).AndroidBridge.requestPurchase(productId);
 
         return;
       }
