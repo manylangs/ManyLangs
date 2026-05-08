@@ -140,16 +140,10 @@ async function verifyGooglePurchase(
 
         return isPurchased;
 
-    } catch (e) {
-
-        console.error(
-            "[GOOGLE VERIFY ERROR]",
-            e
-        );
-
+    } catch (e: any) {
         console.error(
             "[GOOGLE VERIFY ERROR FULL]",
-            JSON.stringify(e, null, 2)
+            e?.response?.data || e
         );
 
         return false;
