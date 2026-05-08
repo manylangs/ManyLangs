@@ -117,6 +117,11 @@ async function verifyGooglePurchase(
             data
         );
 
+        console.log(
+            "[GOOGLE VERIFY RAW DATA]",
+            JSON.stringify(data, null, 2)
+        );
+
         // purchaseState:
         // 0 = purchased
         const isPurchased =
@@ -140,6 +145,11 @@ async function verifyGooglePurchase(
         console.error(
             "[GOOGLE VERIFY ERROR]",
             e
+        );
+
+        console.error(
+            "[GOOGLE VERIFY ERROR FULL]",
+            JSON.stringify(e, null, 2)
         );
 
         return false;
