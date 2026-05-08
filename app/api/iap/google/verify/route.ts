@@ -9,217 +9,411 @@ import { createCouponsTx } from "@/lib/coupons";
 export const runtime = "nodejs";
 
 const serverTimestamp =
-  admin.firestore.FieldValue.serverTimestamp;
+    admin.firestore.FieldValue.serverTimestamp;
 
 // Google Play 상품 ↔ 쿠폰 수량
 const GOOGLE_PRODUCT_COUPON_QTY: Record<
-  string,
-  number
+    string,
+    number
 > = {
-  coupon_pack_2: 2,
-  coupon_pack_4: 4,
+    coupon_pack_2: 2,
+    coupon_pack_4: 4,
 };
 
 // Google Play purchase 검증
 async function verifyGooglePurchase(
-  purchaseToken: string,
-  productId: string
+    purchaseToken: string,
+    productId: string
 ): Promise<boolean> {
-  try {
-    const { GoogleAuth } = await import(
-      "google-auth-library"
+
+    console.log(
+        "[GOOGLE VERIFY] START VERIFY",
+        {
+            productId,
+            purchaseToken,
+        }
     );
 
-    const auth = new GoogleAuth({
-      credentials: JSON.parse(
-        process.env
-          .GOOGLE_SERVICE_ACCOUNT_JSON as string
-      ),
-      scopes: [
-        "https://www.googleapis.com/auth/androidpublisher",
-      ],
-    });
+    try {
 
-    const client = await auth.getClient();
+        console.log(
+            "[GOOGLE VERIFY] ENV CHECK",
+            {
+                hasServiceAccount:
+                    !!process.env
+                        .GOOGLE_SERVICE_ACCOUNT_JSON,
+                packageName:
+                    process.env
+                        .ANDROID_PACKAGE_NAME,
+            }
+        );
 
-    const packageName =
-      process.env.ANDROID_PACKAGE_NAME as string;
+        const { GoogleAuth } =
+            await import(
+                "google-auth-library"
+            );
 
-    const url =
-      `https://androidpublisher.googleapis.com/` +
-      `androidpublisher/v3/applications/` +
-      `${packageName}/purchases/products/` +
-      `${productId}/tokens/${purchaseToken}`;
+        const rawServiceAccount =
+            process.env
+                .GOOGLE_SERVICE_ACCOUNT_JSON;
 
-    const res = await client.request({
-      url,
-    });
+        if (!rawServiceAccount) {
 
-    const data = res.data as any;
+            console.error(
+                "[GOOGLE VERIFY ERROR] GOOGLE_SERVICE_ACCOUNT_JSON missing"
+            );
 
-    // purchaseState:
-    // 0 = purchased
-    return data?.purchaseState === 0;
-
-  } catch (e) {
-    console.error(
-      "[GOOGLE VERIFY ERROR]",
-      e
-    );
-
-    return false;
-  }
-}
-
-export async function POST(req: Request) {
-
-  // 1. Clerk 인증
-  const { userId } = await auth();
-
-  if (!userId) {
-    return NextResponse.json(
-      { error: "unauthorized" },
-      { status: 401 }
-    );
-  }
-
-  // 2. body parsing
-  let purchaseToken: string;
-  let productId: string;
-
-  try {
-
-    const body = await req.json();
-
-    purchaseToken = body.purchaseToken;
-    productId = body.productId;
-
-  } catch {
-    return NextResponse.json(
-      { error: "invalid_body" },
-      { status: 400 }
-    );
-  }
-
-  // 3. 필수값 체크
-  if (!purchaseToken || !productId) {
-    return NextResponse.json(
-      { error: "missing_fields" },
-      { status: 400 }
-    );
-  }
-
-  // 4. 상품 검증
-  const qty =
-    GOOGLE_PRODUCT_COUPON_QTY[productId];
-
-  if (!qty) {
-    return NextResponse.json(
-      { error: "invalid_product" },
-      { status: 400 }
-    );
-  }
-
-  // 5. 중복 처리 방지
-  const purchaseRef = db
-    .collection("iapPurchases")
-    .doc(purchaseToken);
-
-  const purchaseSnap =
-    await purchaseRef.get();
-
-  if (purchaseSnap.exists) {
-    return NextResponse.json(
-      { error: "already_processed" },
-      { status: 409 }
-    );
-  }
-
-  // 6. Google Play 검증
-  const isValid =
-    await verifyGooglePurchase(
-      purchaseToken,
-      productId
-    );
-
-  if (!isValid) {
-    return NextResponse.json(
-      { error: "invalid_purchase" },
-      { status: 400 }
-    );
-  }
-
-  // 7. 쿠폰 지급 transaction
-  try {
-
-    await db.runTransaction(
-      async (tx) => {
-
-        // 중복 재확인
-        const snap =
-          await tx.get(purchaseRef);
-
-        if (snap.exists) {
-          throw new Error(
-            "ALREADY_PROCESSED"
-          );
+            return false;
         }
 
-        // 공통 coupon 지급
-        const coupons =
-          createCouponsTx(
-            tx,
-            userId,
-            qty,
-            purchaseToken,
-            null
-          );
+        const credentials =
+            JSON.parse(rawServiceAccount);
 
-        // purchase 기록
-        tx.set(purchaseRef, {
-          provider: "google_play",
-          purchaseToken,
-          productId,
-          qty,
-          userId,
-          coupons,
-          processedAt:
-            serverTimestamp(),
-        });
-      }
+        const authClient =
+            new GoogleAuth({
+                credentials,
+                scopes: [
+                    "https://www.googleapis.com/auth/androidpublisher",
+                ],
+            });
+
+        const client =
+            await authClient.getClient();
+
+        const packageName =
+            process.env
+                .ANDROID_PACKAGE_NAME;
+
+        if (!packageName) {
+
+            console.error(
+                "[GOOGLE VERIFY ERROR] ANDROID_PACKAGE_NAME missing"
+            );
+
+            return false;
+        }
+
+        const url =
+            `https://androidpublisher.googleapis.com/` +
+            `androidpublisher/v3/applications/` +
+            `${packageName}/purchases/products/` +
+            `${productId}/tokens/${purchaseToken}`;
+
+        console.log(
+            "[GOOGLE VERIFY] REQUEST URL",
+            url
+        );
+
+        const res =
+            await client.request({
+                url,
+            });
+
+        const data =
+            res.data as any;
+
+        console.log(
+            "[GOOGLE VERIFY] RESPONSE",
+            data
+        );
+
+        // purchaseState:
+        // 0 = purchased
+        const isPurchased =
+            data?.purchaseState === 0;
+
+        console.log(
+            "[GOOGLE VERIFY] RESULT",
+            {
+                isPurchased,
+                purchaseState:
+                    data?.purchaseState,
+                acknowledgementState:
+                    data?.acknowledgementState,
+            }
+        );
+
+        return isPurchased;
+
+    } catch (e) {
+
+        console.error(
+            "[GOOGLE VERIFY ERROR]",
+            e
+        );
+
+        return false;
+    }
+}
+
+export async function POST(
+    req: Request
+) {
+
+    console.log(
+        "GOOGLE VERIFY START"
     );
 
-  } catch (e: any) {
+    // 1. Clerk 인증
+    const { userId } =
+        await auth();
 
-    console.error(
-      "[GOOGLE IAP TX ERROR]",
-      e
+    console.log(
+        "GOOGLE VERIFY USER",
+        userId
     );
 
-    if (
-      e?.message ===
-      "ALREADY_PROCESSED"
-    ) {
-      return NextResponse.json(
-        {
-          error: "already_processed",
-        },
-        { status: 409 }
-      );
+    if (!userId) {
+
+        console.error(
+            "GOOGLE VERIFY ERROR unauthorized"
+        );
+
+        return NextResponse.json(
+            {
+                error: "unauthorized",
+            },
+            { status: 401 }
+        );
     }
 
-    return NextResponse.json(
-      { error: "transaction_failed" },
-      { status: 500 }
-    );
-  }
+    // 2. body parsing
+    let purchaseToken: string;
+    let productId: string;
 
-  // 8. success
-  return NextResponse.json(
-    {
-      success: true,
-      qty,
-    },
-    { status: 200 }
-  );
+    try {
+
+        const body =
+            await req.json();
+
+        console.log(
+            "GOOGLE VERIFY BODY",
+            body
+        );
+
+        purchaseToken =
+            body.purchaseToken;
+
+        productId =
+            body.productId;
+
+    } catch (e) {
+
+        console.error(
+            "GOOGLE VERIFY BODY ERROR",
+            e
+        );
+
+        return NextResponse.json(
+            {
+                error: "invalid_body",
+            },
+            { status: 400 }
+        );
+    }
+
+    // 3. 필수값 체크
+    if (
+        !purchaseToken ||
+        !productId
+    ) {
+
+        console.error(
+            "GOOGLE VERIFY MISSING FIELDS",
+            {
+                purchaseToken,
+                productId,
+            }
+        );
+
+        return NextResponse.json(
+            {
+                error: "missing_fields",
+            },
+            { status: 400 }
+        );
+    }
+
+    // 4. 상품 검증
+    const qty =
+        GOOGLE_PRODUCT_COUPON_QTY[
+        productId
+        ];
+
+    console.log(
+        "GOOGLE VERIFY PRODUCT",
+        {
+            productId,
+            qty,
+        }
+    );
+
+    if (!qty) {
+
+        console.error(
+            "GOOGLE VERIFY INVALID PRODUCT",
+            productId
+        );
+
+        return NextResponse.json(
+            {
+                error: "invalid_product",
+            },
+            { status: 400 }
+        );
+    }
+
+    // 5. 중복 처리 방지
+    const purchaseRef = db
+        .collection("iapPurchases")
+        .doc(purchaseToken);
+
+    const purchaseSnap =
+        await purchaseRef.get();
+
+    console.log(
+        "GOOGLE VERIFY PURCHASE EXISTS",
+        purchaseSnap.exists
+    );
+
+    if (purchaseSnap.exists) {
+
+        return NextResponse.json(
+            {
+                error:
+                    "already_processed",
+            },
+            { status: 409 }
+        );
+    }
+
+    // 6. Google Play 검증
+    const isValid =
+        await verifyGooglePurchase(
+            purchaseToken,
+            productId
+        );
+
+    console.log(
+        "GOOGLE VERIFY VALID RESULT",
+        isValid
+    );
+
+    if (!isValid) {
+
+        console.error(
+            "GOOGLE VERIFY INVALID PURCHASE"
+        );
+
+        return NextResponse.json(
+            {
+                error:
+                    "invalid_purchase",
+            },
+            { status: 400 }
+        );
+    }
+
+    // 7. 쿠폰 지급 transaction
+    try {
+
+        console.log(
+            "CREATE COUPONS START"
+        );
+
+        await db.runTransaction(
+            async (tx) => {
+
+                // 중복 재확인
+                const snap =
+                    await tx.get(
+                        purchaseRef
+                    );
+
+                if (snap.exists) {
+
+                    throw new Error(
+                        "ALREADY_PROCESSED"
+                    );
+                }
+
+                // 공통 coupon 지급
+                const coupons =
+                    await createCouponsTx(
+                        tx,
+                        userId,
+                        qty,
+                        purchaseToken,
+                        null
+                    );
+
+                console.log(
+                    "CREATE COUPONS RESULT",
+                    coupons
+                );
+
+                // purchase 기록
+                tx.set(
+                    purchaseRef,
+                    {
+                        provider:
+                            "google_play",
+                        purchaseToken,
+                        productId,
+                        qty,
+                        userId,
+                        coupons,
+                        processedAt:
+                            serverTimestamp(),
+                    }
+                );
+            }
+        );
+
+        console.log(
+            "CREATE COUPONS SUCCESS"
+        );
+
+    } catch (e: any) {
+
+        console.error(
+            "[GOOGLE IAP TX ERROR]",
+            e
+        );
+
+        if (
+            e?.message ===
+            "ALREADY_PROCESSED"
+        ) {
+
+            return NextResponse.json(
+                {
+                    error:
+                        "already_processed",
+                },
+                { status: 409 }
+            );
+        }
+
+        return NextResponse.json(
+            {
+                error:
+                    "transaction_failed",
+            },
+            { status: 500 }
+        );
+    }
+
+    // 8. success
+    console.log(
+        "GOOGLE VERIFY SUCCESS"
+    );
+
+    return NextResponse.json(
+        {
+            success: true,
+            qty,
+        },
+        { status: 200 }
+    );
 }
