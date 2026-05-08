@@ -144,7 +144,11 @@ async function verifyGooglePurchase(
 
         console.error(
             "[GOOGLE VERIFY ERROR FULL]",
-            e?.response?.data || e
+            JSON.stringify({
+                message: e?.message,
+                stack: e?.stack,
+                response: e?.response?.data,
+            })
         );
 
         return false;
