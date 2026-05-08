@@ -57,6 +57,16 @@ async function verifyGooglePurchase(
             process.env
                 .GOOGLE_SERVICE_ACCOUNT_JSON;
 
+        console.log(
+            "[GOOGLE VERIFY SERVICE ACCOUNT LENGTH]",
+            rawServiceAccount?.length
+        );
+
+        console.log(
+            "[GOOGLE VERIFY SERVICE ACCOUNT START]",
+            rawServiceAccount?.slice(0, 50)
+        );
+
         if (!rawServiceAccount) {
 
             console.error(
@@ -68,6 +78,15 @@ async function verifyGooglePurchase(
 
         const credentials =
             JSON.parse(rawServiceAccount);
+
+        if (!rawServiceAccount) {
+
+            console.error(
+                "[GOOGLE VERIFY ERROR] GOOGLE_SERVICE_ACCOUNT_JSON missing"
+            );
+
+            return false;
+        }
 
         const authClient =
             new GoogleAuth({
