@@ -113,13 +113,13 @@ async function verifyGooglePurchase(
             res.data as any;
 
         console.log(
-            "[GOOGLE VERIFY] RESPONSE",
-            data
+            "[GOOGLE VERIFY RAW DATA]",
+            JSON.stringify(data)
         );
 
         console.log(
-            "[GOOGLE VERIFY RAW DATA]",
-            JSON.stringify(data, null, 2)
+            "[GOOGLE VERIFY] RESPONSE",
+            data
         );
 
         // purchaseState:
@@ -141,6 +141,7 @@ async function verifyGooglePurchase(
         return isPurchased;
 
     } catch (e: any) {
+
         console.error(
             "[GOOGLE VERIFY ERROR FULL]",
             e?.response?.data || e
