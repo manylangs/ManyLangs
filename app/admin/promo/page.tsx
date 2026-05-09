@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const ADMIN_EMAIL = process.env.NEXT_PUBLIC_ADMIN_EMAIL!;
 const PAGE_SIZE = 100;
@@ -133,10 +134,10 @@ export default function AdminPromoPage() {
 
   return (
     <div style={{ padding: 24, maxWidth: 900, margin: "0 auto" }}>
-      <div style={{ marginBottom: 16 }}>
-        <button onClick={() => (window.location.href = "/admin")}>
-          ← Admin
-        </button>
+      <div style={{ marginBottom: 20 }}>
+        <Link href="/select-books">
+          <button style={{ marginRight: 10 }}>📚← Back to Library</button>
+        </Link>
       </div>
 
       <h1 style={{ fontSize: 22, fontWeight: "bold", marginBottom: 24 }}>
