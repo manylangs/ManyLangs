@@ -586,63 +586,66 @@ export default function SelectBooksPage() {
         return;
       }
 
-      // 🔥 Google Play 쿠폰이면 링크로 이동
-      const refundGroup = beforeRefundableGroups[0];
-      const isGooglePlay = refundGroup?.[0]?.source === "google_play";
+      // 🔥 Stripe / Google Play 완전 분리
+      const stripeGroups = beforeRefundableGroups.filter((g) => g[0]?.paymentIntentId);
+      const googleGroups = beforeRefundableGroups.filter((g) => g[0]?.purchaseToken);
 
-      if (isGooglePlay) {
+      // Google Play만 있으면 링크 이동
+      if (googleGroups.length > 0 && stripeGroups.length === 0) {
         window.open("https://play.google.com/store/account/orderhistory", "_blank");
         setRefundPreviewOpen(false);
         return;
       }
 
       // Stripe 환불
-      const refundRes = await fetch("/api/refund", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ userId }),
-      });
+      if (stripeGroups.length > 0) {
+        const refundRes = await fetch("/api/refund", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId }),
+        });
 
-      const refundData = await safeJson(refundRes);
+        const refundData = await safeJson(refundRes);
 
-      if (!refundRes.ok) {
-        alert(refundData?.error || "Refund failed");
+        if (!refundRes.ok) {
+          alert(refundData?.error || "Refund failed");
+          setRefundPreviewOpen(false);
+          return;
+        }
+
+        const [afterCouponRes, afterLicenseRes] = await Promise.all([
+          fetch("/api/coupons/list", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ userId }),
+          }),
+          fetch("/api/licenses/list", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ userId }),
+          }),
+        ]);
+
+        const afterCouponData = await safeJson(afterCouponRes);
+        const afterLicenseData = await safeJson(afterLicenseRes);
+
+        const afterCoupons: CouponItem[] = Array.isArray(afterCouponData?.coupons)
+          ? afterCouponData.coupons
+          : [];
+        const afterLicenses: LibraryItem[] = Array.isArray(afterLicenseData?.licenses)
+          ? afterLicenseData.licenses
+          : [];
+
+        setCouponBox(afterCoupons);
+        writeLocalCoupons(afterCoupons);
+        setLibrary(afterLicenses);
+        setRefundViewCoupons(afterCoupons);
+        setRefundViewLicenses(afterLicenses);
+
+        alert("Refund completed");
         setRefundPreviewOpen(false);
-        return;
+        setRefundPreviewGroups([]);
       }
-
-      const [afterCouponRes, afterLicenseRes] = await Promise.all([
-        fetch("/api/coupons/list", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ userId }),
-        }),
-        fetch("/api/licenses/list", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ userId }),
-        }),
-      ]);
-
-      const afterCouponData = await safeJson(afterCouponRes);
-      const afterLicenseData = await safeJson(afterLicenseRes);
-
-      const afterCoupons: CouponItem[] = Array.isArray(afterCouponData?.coupons)
-        ? afterCouponData.coupons
-        : [];
-      const afterLicenses: LibraryItem[] = Array.isArray(afterLicenseData?.licenses)
-        ? afterLicenseData.licenses
-        : [];
-
-      setCouponBox(afterCoupons);
-      writeLocalCoupons(afterCoupons);
-      setLibrary(afterLicenses);
-      setRefundViewCoupons(afterCoupons);
-      setRefundViewLicenses(afterLicenses);
-
-      alert("Refund completed");
-      setRefundPreviewOpen(false);
-      setRefundPreviewGroups([]);
     } catch {
       alert("Network error");
     } finally {
