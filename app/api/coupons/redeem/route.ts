@@ -14,6 +14,16 @@ type RedeemBody = {
   level: string;
 };
 
+const DAY_MS = 1000 * 60 * 60 * 24;
+
+function toMs(v: any): number {
+  if (!v) return 0;
+  if (typeof v === "number") return v;
+  if (typeof v?.toMillis === "function") return v.toMillis();
+  const n = Number(v);
+  return Number.isFinite(n) ? n : 0;
+}
+
 export async function POST(req: Request) {
   const { userId } = await auth();
 
@@ -69,6 +79,14 @@ export async function POST(req: Request) {
 
       const now = Date.now();
 
+      // ✅ promo 쿠폰 전용 체크
+      if ((c as any).source === "promo") {
+        const deadline = toMs((c as any).activationDeadline);
+        if (deadline > 0 && now > deadline) {
+          throw new Error("Promotion coupon expired");
+        }
+      }
+
       const wantLang = String(lang).trim();
       const wantSeries = String(series).trim();
 
@@ -82,14 +100,6 @@ export async function POST(req: Request) {
 
       const licSnap = await tx.get(licRef);
 
-      const toMs = (v: any): number => {
-        if (!v) return 0;
-        if (typeof v === "number") return v;
-        if (typeof v?.toMillis === "function") return v.toMillis();
-        const n = Number(v);
-        return Number.isFinite(n) ? n : 0;
-      };
-
       if (licSnap.exists) {
         const exp = toMs(licSnap.data()?.expiresAt);
         if (exp > now) {
@@ -97,11 +107,15 @@ export async function POST(req: Request) {
         }
       }
 
+      // ✅ promo는 durationDays 사용, 기존은 30일 고정
+      const durationDays = (c as any).durationDays ?? 30;
+      const expiresAt = now + DAY_MS * durationDays;
+
       const lic: License = {
         lang: wantLang,
         series: wantSeries,
         level: finalLevel,
-        expiresAt: now + 1000 * 60 * 60 * 24 * 30,
+        expiresAt,
         source: "coupon",
         code: couponCode,
         issuedAt: now,
@@ -132,7 +146,7 @@ export async function POST(req: Request) {
         usedLang: wantLang,
         usedSeries: wantSeries,
         usedLevel: finalLevel,
-        expiresAt: lic.expiresAt,
+        expiresAt,
       };
 
       tx.set(ref, updated, { merge: true });
@@ -165,9 +179,15 @@ export async function POST(req: Request) {
       );
     }
 
-
     if (lower.includes("already used")) {
       return NextResponse.json({ error: msg }, { status: 400 });
+    }
+
+    if (lower.includes("promotion coupon expired")) {
+      return NextResponse.json(
+        { error: "This promotional coupon has expired." },
+        { status: 400 }
+      );
     }
 
     if (lower.includes("active license exists")) {
