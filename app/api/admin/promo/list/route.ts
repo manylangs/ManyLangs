@@ -37,7 +37,7 @@ export async function GET(req: Request) {
         const d = doc.data();
         return {
           code: d.code,
-          isUsed: !!(d.isUsed || d.used),
+          used: !!(d.used || d.isUsed),  // ✅ 두 필드 모두 fallback
           createdAtMs: toMs(d.createdAtMs) || toMs(d.createdAt),
           activationDeadline: toMs(d.activationDeadline),
           durationDays: d.durationDays ?? 14,
