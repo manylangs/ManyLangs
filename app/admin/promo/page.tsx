@@ -9,7 +9,7 @@ const DAY_MS = 1000 * 60 * 60 * 24;
 
 type PromoCoupon = {
   code: string;
-  isUsed: boolean;
+  used: boolean;
   createdAtMs: number;
   activationDeadline: number;
   durationDays: number;
@@ -141,7 +141,7 @@ PROMO COUPON ${index + 1}
 
 code: ${c.code}
 
-isUsed: ${c.isUsed ? "used" : "unused"}
+used: ${c.used ? "used" : "unused"}
 
 createdAt: ${new Date(
           c.createdAtMs
@@ -346,7 +346,7 @@ generatedAt: ${generatedAt}
                   downloadCSV(
                     newCodes.map((code) => ({
                       code,
-                      isUsed: false,
+                      used: false,
                       createdAtMs: now,
                       activationDeadline:
                         now +
@@ -645,7 +645,7 @@ generatedAt: ${generatedAt}
                                   "10px 16px",
                               }}
                             >
-                              {c.isUsed ? (
+                              {c.used ? (
                                 <span>
                                   Used
                                 </span>
