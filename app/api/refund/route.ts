@@ -50,6 +50,7 @@ export async function POST(req: Request) {
         { status: 400 }
       );
     }
+
     // 🔥 그룹별 "사용 여부" 체크
 
     // 🔥 1️⃣ 라이선스 기준 used coupon 수집
@@ -70,10 +71,13 @@ export async function POST(req: Request) {
     // 🔥 2️⃣ paymentIntent 그룹화
     const grouped: Record<string, any[]> = {};
 
+    const now = Date.now();
+
     couponsSnap.docs.forEach((doc) => {
       const data = doc.data();
 
       if (!data.paymentIntentId) return;
+      if (data.expiresAt && data.expiresAt < now) return; // 🔥 만료 제외
 
       if (!grouped[data.paymentIntentId]) {
         grouped[data.paymentIntentId] = [];
@@ -95,7 +99,7 @@ export async function POST(req: Request) {
       const currentCount = group.length;
 
       const anyUsed =
-        currentCount < originalCount || // 🔥 핵심 추가
+        currentCount < originalCount ||
 
         group.some((c: any) => {
           if (c.used === true) return true;
@@ -103,23 +107,22 @@ export async function POST(req: Request) {
           if (usedCouponCodes.has(c.code)) return true;
           return false;
         });
+
       if (!anyUsed) {
         refundablePaymentIntents.push(pid);
       }
     }
-
 
     // ❌ 하나도 환불 가능 없으면 차단
     if (refundablePaymentIntents.length === 0) {
       return NextResponse.json(
         { error: "no refundable purchases (all used)" },
         { status: 400 }
-      )
+      );
     }
 
     // 🔥 핵심 처리
     for (const paymentIntentId of refundablePaymentIntents) {
-      // Stripe refund 확인
       const refunds = await stripe.refunds.list({
         payment_intent: paymentIntentId,
       });
@@ -132,7 +135,6 @@ export async function POST(req: Request) {
         });
       }
 
-      // 🔥 항상 실행 (중요)
       await revokeLicensesByPaymentIntent(paymentIntentId);
       await deleteCouponsByPaymentIntent(paymentIntentId);
     }

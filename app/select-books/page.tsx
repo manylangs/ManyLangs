@@ -842,8 +842,11 @@ export default function SelectBooksPage() {
 
     const groups: Record<string, CouponItem[]> = {};
 
+    const now = Date.now();
+
     for (const c of coupons) {
       if (!c.paymentIntentId) continue;
+      if ((c as any).expiresAt && (c as any).expiresAt < now) continue; // 만료 제외
 
       if (!groups[c.paymentIntentId]) {
         groups[c.paymentIntentId] = [];
