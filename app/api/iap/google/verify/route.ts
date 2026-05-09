@@ -387,8 +387,10 @@ export async function POST(
                         tx,
                         userId,
                         qty,
-                        purchaseToken,
-                        null
+                        null,
+                        null,
+                        "google_play",
+                        purchaseToken
                     );
 
                 console.log(
