@@ -10,7 +10,6 @@ export type Coupon = {
   issuedAt: number;
   used: boolean;
 
-  // 🔥 여기 추가
   disabled?: boolean;
   disabledAt?: number;
 
@@ -25,29 +24,29 @@ export type Coupon = {
 
   paymentIntentId?: string;
   checkoutSessionId?: string;
+
+  // 🔥 추가
+  source?: string;
+  purchaseToken?: string;
 };
 
 /* ================= code generator ================= */
 
 function genCode(): string {
   const raw = crypto.randomBytes(8).toString("base64url").toUpperCase();
-  return "ML-" + raw.slice(0, 10); // 길이 증가 → 충돌 확률 극히 낮음
+  return "ML-" + raw.slice(0, 10);
 }
 
 /* ================= Stripe-safe TX creator ================= */
 
-/**
- * 🔒 Firestore transaction 전용
- * - read 없이 create 사용
- * - 이미 존재하면 transaction 자체가 실패
- * - webhook idempotency 구조와 궁합 완벽
- */
 export function createCouponsTx(
   tx: FirebaseFirestore.Transaction,
   ownerId: string,
   qty: number,
-  paymentIntentId: string,
-  checkoutSessionId: string
+  paymentIntentId: string | null,
+  checkoutSessionId: string | null,
+  source?: string,
+  purchaseToken?: string | null,
 ): Coupon[] {
 
   const now = Date.now();
@@ -63,14 +62,13 @@ export function createCouponsTx(
       ownerId,
       issuedAt: now,
       used: false,
-
-      paymentIntentId,
-      checkoutSessionId,
+      ...(paymentIntentId && { paymentIntentId }),
+      ...(checkoutSessionId && { checkoutSessionId }),
+      ...(source && { source }),
+      ...(purchaseToken && { purchaseToken }),
     };
-    // 🔥 read 없이 바로 create
-    // 이미 존재하면 자동으로 transaction 실패 → 안전
-    tx.create(ref, coupon);
 
+    tx.create(ref, coupon);
     list.push(coupon);
   }
 
