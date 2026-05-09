@@ -317,42 +317,10 @@ export default function SelectBooksPage() {
     setCouponPage(1);
   }, [couponBox.length]);
 
-  const [refundViewCoupons, setRefundViewCoupons] = useState<CouponItem[]>([]);
-  const [refundViewLicenses, setRefundViewLicenses] = useState<LibraryItem[]>([]);
+
   const [refundPreviewOpen, setRefundPreviewOpen] = useState(false);
 
-  useEffect(() => {
-    if (!isLoaded || !userId) return;
 
-    (async () => {
-      try {
-        const [couponRes, licenseRes] = await Promise.all([
-          fetch("/api/coupons/list", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ userId }),
-          }),
-          fetch("/api/licenses/list", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ userId }),
-          }),
-        ]);
-
-        const couponData = await safeJson(couponRes);
-        const licenseData = await safeJson(licenseRes);
-
-        setRefundViewCoupons(
-          Array.isArray(couponData?.coupons) ? couponData.coupons : []
-        );
-        setRefundViewLicenses(
-          Array.isArray(licenseData?.licenses) ? licenseData.licenses : []
-        );
-      } catch {
-        // ignore
-      }
-    })();
-  }, [isLoaded, userId]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -578,8 +546,6 @@ export default function SelectBooksPage() {
       setCouponBox(beforeCoupons);
       writeLocalCoupons(beforeCoupons);
       setLibrary(beforeLicenses);
-      setRefundViewCoupons(beforeCoupons);
-      setRefundViewLicenses(beforeLicenses);
 
       if (beforeRefundableGroups.length === 0) {
         alert("Refund unavailable (coupon already used)");
@@ -640,8 +606,6 @@ export default function SelectBooksPage() {
         setCouponBox(afterCoupons);
         writeLocalCoupons(afterCoupons);
         setLibrary(afterLicenses);
-        setRefundViewCoupons(afterCoupons);
-        setRefundViewLicenses(afterLicenses);
 
         alert("Refund completed");
         setRefundPreviewOpen(false);
@@ -712,8 +676,6 @@ export default function SelectBooksPage() {
 
       setCouponBox(coupons);
       setLibrary(licenses);
-      setRefundViewCoupons(coupons);
-      setRefundViewLicenses(licenses);
 
       setRefundPreviewGroups([...validStripeGroups, ...validGoogleGroups]);
       setRefundPreviewOpen(true);
@@ -815,9 +777,7 @@ export default function SelectBooksPage() {
     return refundable;
   }
 
-  const refundBaseCoupons = refundViewCoupons.length > 0 ? refundViewCoupons : couponBox;
-  const refundBaseLicenses = refundViewLicenses.length > 0 ? refundViewLicenses : library;
-  const refundableGroups = getRefundableGroups(refundBaseCoupons, refundBaseLicenses);
+  const refundableGroups = getRefundableGroups(couponBox, library);
   const refundablePurchaseCount = refundableGroups.length;
   const refundableCouponCount = refundableGroups.flat().length;
   const canRefund = refundablePurchaseCount > 0;
