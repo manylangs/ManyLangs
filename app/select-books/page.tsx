@@ -468,7 +468,7 @@ export default function SelectBooksPage() {
       setCouponBox((prev) => {
         const map = new Map<string, CouponItem>();
 
-        for (const c of couponBox) {
+        for (const c of prev) {
           map.set(c.code, c);
         }
 
@@ -592,6 +592,7 @@ export default function SelectBooksPage() {
 
       // Google Play만 있으면 링크 이동
       if (googleGroups.length > 0 && stripeGroups.length === 0) {
+        alert("Google Play purchases must be refunded through Google Play.");
         window.open("https://play.google.com/store/account/orderhistory", "_blank");
         setRefundPreviewOpen(false);
         return;
