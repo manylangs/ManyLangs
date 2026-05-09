@@ -685,15 +685,27 @@ export default function SelectBooksPage() {
         return;
       }
 
-      const strictGroups = groups.filter((group: any) => {
-        return !group.some((c: any) => {
+      // 🔥 Stripe / Google Play 분리
+      const stripeGroups = groups.filter((g: CouponItem[]) => g[0]?.paymentIntentId);
+      const googleGroups = groups.filter((g: CouponItem[]) => g[0]?.purchaseToken);
+
+      // Google Play: 사용 여부만 검증
+      const validGoogleGroups = googleGroups.filter((group: CouponItem[]) =>
+        !group.some((c) => c.used === true)
+      );
+
+      // Stripe: 사용 여부 + shared coupon 검증
+      const validStripeGroups = stripeGroups.filter((group: CouponItem[]) =>
+        !group.some((c) => {
           if (c.used === true) return true;
           if (c.usedBy && c.usedBy !== userId) return true;
           return false;
-        });
-      });
+        })
+      );
 
-      if (strictGroups.length === 0) {
+      const totalValid = validStripeGroups.length + validGoogleGroups.length;
+
+      if (totalValid === 0) {
         alert("Refund unavailable (already used or already refunded)");
         return;
       }
@@ -703,7 +715,7 @@ export default function SelectBooksPage() {
       setRefundViewCoupons(coupons);
       setRefundViewLicenses(licenses);
 
-      setRefundPreviewGroups(strictGroups);
+      setRefundPreviewGroups([...validStripeGroups, ...validGoogleGroups]);
       setRefundPreviewOpen(true);
 
     } catch {
