@@ -34,12 +34,14 @@ export async function POST(req: Request) {
       );
     }
 
-    // 🔍 paymentIntentId 수집
+    const now = Date.now();
+
+    // 🔍 paymentIntentId 수집 (만료 제외)
     const paymentIntents = new Set<string>();
 
     couponsSnap.docs.forEach((doc) => {
       const data = doc.data();
-      if (data.paymentIntentId) {
+      if (data.paymentIntentId && !(data.expiresAt && data.expiresAt < now)) {
         paymentIntents.add(data.paymentIntentId);
       }
     });
@@ -50,8 +52,6 @@ export async function POST(req: Request) {
         { status: 400 }
       );
     }
-
-    // 🔥 그룹별 "사용 여부" 체크
 
     // 🔥 1️⃣ 라이선스 기준 used coupon 수집
     const licensesSnap = await db
@@ -68,10 +68,8 @@ export async function POST(req: Request) {
       }
     });
 
-    // 🔥 2️⃣ paymentIntent 그룹화
+    // 🔥 2️⃣ paymentIntent 그룹화 (만료 제외)
     const grouped: Record<string, any[]> = {};
-
-    const now = Date.now();
 
     couponsSnap.docs.forEach((doc) => {
       const data = doc.data();
