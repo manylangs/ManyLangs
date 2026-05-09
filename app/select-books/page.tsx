@@ -760,50 +760,55 @@ export default function SelectBooksPage() {
     ...couponBox.filter((c) => c.used),
   ];
 
-  // 🔥 getRefundableGroups: Stripe(paymentIntentId) + Google Play(purchaseToken) 둘 다 처리
+  // 🔥 getRefundableGroups: Stripe/Google Play 완전 분리 판정
   function getRefundableGroups(coupons: CouponItem[], library: LibraryItem[]) {
+    // Stripe 전용: 라이선스 기준 used 판정
     const usedCouponCodes = new Set(
       library
         .filter((l) => l.source === "coupon" && l.code)
         .map((l) => l.code as string)
     );
 
-    const groups: Record<string, CouponItem[]> = {};
+    const stripeMap: Record<string, CouponItem[]> = {};
+    const googleMap: Record<string, CouponItem[]> = {};
     const now = Date.now();
 
     for (const c of coupons) {
-      // Stripe 그룹
       if (c.paymentIntentId) {
         if ((c as any).expiresAt && (c as any).expiresAt < now) continue; // 만료 제외
         const key = `stripe_${c.paymentIntentId}`;
-        if (!groups[key]) groups[key] = [];
-        groups[key].push(c);
+        if (!stripeMap[key]) stripeMap[key] = [];
+        stripeMap[key].push(c);
         continue;
       }
-      // Google Play 그룹
       if (c.purchaseToken) {
         const key = `google_${c.purchaseToken}`;
-        if (!groups[key]) groups[key] = [];
-        groups[key].push(c);
+        if (!googleMap[key]) googleMap[key] = [];
+        googleMap[key].push(c);
       }
     }
 
     const refundable: CouponItem[][] = [];
-    for (const group of Object.values(groups)) {
+
+    // Stripe 판정: coupon.used + 라이선스 usedCouponCodes 둘 다 체크
+    for (const group of Object.values(stripeMap)) {
       const originalCount =
         typeof group[0]?.couponCount === "number" && group[0].couponCount > 0
           ? group[0].couponCount
           : group.length;
-      const currentCount = group.length;
-
       const anyUsed =
-        currentCount < originalCount ||
+        group.length < originalCount ||
         group.some((c) => {
           if (c.used === true) return true;
           if (usedCouponCodes.has(c.code)) return true;
           return false;
         });
+      if (!anyUsed) refundable.push(group);
+    }
 
+    // Google Play 판정: coupon.used만 체크 (라이선스 sync 지연 영향 제외)
+    for (const group of Object.values(googleMap)) {
+      const anyUsed = group.some((c) => c.used === true);
       if (!anyUsed) refundable.push(group);
     }
 
