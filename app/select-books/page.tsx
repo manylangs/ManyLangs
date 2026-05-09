@@ -558,8 +558,10 @@ export default function SelectBooksPage() {
 
       // Google Play만 있으면 링크 이동
       if (googleGroups.length > 0 && stripeGroups.length === 0) {
-        alert("Google Play purchases must be refunded through Google Play.");
-        window.open("https://play.google.com/store/account/orderhistory", "_blank");
+        alert(
+          "Google Play purchases must be refunded through Google Play."
+        );
+
         setRefundPreviewOpen(false);
         return;
       }
