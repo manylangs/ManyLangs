@@ -22,7 +22,7 @@ export async function GET(req: Request) {
     .where("ownerId", "==", userId)
     .get();
 
-  const coupons = snap.docs.map(doc => {
+    const coupons = snap.docs.map(doc => {
     const data = doc.data();
 
     const used = !!data.used;
@@ -41,6 +41,8 @@ export async function GET(req: Request) {
       status,
       issuedAt: data.issuedAt ?? null,
       expiresAt,
+      source: data.source ?? null,
+      purchaseToken: data.purchaseToken ?? null,
     };
   });
 

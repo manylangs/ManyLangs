@@ -306,13 +306,29 @@ export async function POST(
 
     if (purchaseSnap.exists) {
 
-        return NextResponse.json(
-            {
-                error:
-                    "already_processed",
-            },
-            { status: 409 }
-        );
+        const existing = purchaseSnap.data()!;
+
+        // 다른 userId가 같은 token 재사용 시도 → 차단
+        if (existing.userId !== userId) {
+            console.error(
+                "GOOGLE VERIFY PURCHASE TOKEN USER MISMATCH",
+                { existingUserId: existing.userId, requestUserId: userId }
+            );
+            return NextResponse.json(
+                { error: "purchase_token_belongs_to_another_user" },
+                { status: 403 }
+            );
+        }
+
+        // 같은 userId → safe success
+        console.log("GOOGLE VERIFY ALREADY_PROCESSED safe success", { purchaseToken, userId });
+        return NextResponse.json({
+            success: true,
+            alreadyProcessed: true,
+            productId: existing.productId,
+            qty: existing.qty,
+            coupons: existing.coupons ?? [],
+        });
     }
 
     // 6. Google Play 검증
@@ -349,6 +365,8 @@ export async function POST(
             "CREATE COUPONS START"
         );
 
+        let alreadyProcessedInTx = false;
+
         await db.runTransaction(
             async (tx) => {
 
@@ -359,10 +377,8 @@ export async function POST(
                     );
 
                 if (snap.exists) {
-
-                    throw new Error(
-                        "ALREADY_PROCESSED"
-                    );
+                    alreadyProcessedInTx = true;
+                    return;
                 }
 
                 // 공통 coupon 지급
@@ -402,26 +418,20 @@ export async function POST(
             "CREATE COUPONS SUCCESS"
         );
 
+        if (alreadyProcessedInTx) {
+            return NextResponse.json({
+                success: true,
+                alreadyProcessed: true,
+                qty,
+            });
+        }
+
     } catch (e: any) {
 
         console.error(
             "[GOOGLE IAP TX ERROR]",
             e
         );
-
-        if (
-            e?.message ===
-            "ALREADY_PROCESSED"
-        ) {
-
-            return NextResponse.json(
-                {
-                    error:
-                        "already_processed",
-                },
-                { status: 409 }
-            );
-        }
 
         return NextResponse.json(
             {
