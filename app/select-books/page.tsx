@@ -1187,7 +1187,7 @@ export default function SelectBooksPage() {
                 <Button
                   variant="outline"
                   className="w-full"
-                  disabled={loading || refundPreviewOpen || !canRefund}
+                  disabled={loading || refundPreviewOpen}
                   onClick={handleRefundCheck}
                 >
                   Refund Eligible Purchases
