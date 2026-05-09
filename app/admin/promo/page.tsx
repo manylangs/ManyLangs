@@ -145,11 +145,27 @@ used: ${c.used ? "used" : "unused"}
 
 createdAt: ${new Date(
           c.createdAtMs
-        ).toLocaleString("ko-KR")}
+        ).toLocaleString("en-US", {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false,
+        })}
 
 activationDeadline: ${new Date(
           c.activationDeadline
-        ).toLocaleString("ko-KR")}
+        ).toLocaleString("en-US", {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false,
+        })}
 
 durationDays: ${c.durationDays} days
 
@@ -613,7 +629,7 @@ generatedAt: ${generatedAt}
                           Math.ceil(
                             (c.activationDeadline -
                               now) /
-                              DAY_MS
+                            DAY_MS
                           );
 
                         return (
