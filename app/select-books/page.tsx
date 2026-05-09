@@ -956,6 +956,17 @@ export default function SelectBooksPage() {
                   Logs
                 </Button>
               )}
+              {/* 🔥 Free Coupons 버튼 */}
+              {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => router.push("/admin/promo")}
+                  className="h-8 shrink-0 border-red-500 text-red-500"
+                >
+                  Free Coupons
+                </Button>
+              )}
             </div>
 
             {/* RIGHT */}
