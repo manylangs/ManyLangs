@@ -18,6 +18,9 @@ const GOOGLE_PRODUCT_COUPON_QTY: Record<
 > = {
     coupon_pack_2: 2,
     coupon_pack_4: 4,
+
+    // test sku
+    coupon_pack_test_1: 1,
 };
 
 // Google Play purchase 검증

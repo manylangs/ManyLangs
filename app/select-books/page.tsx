@@ -549,10 +549,7 @@ export default function SelectBooksPage() {
     if (typeof window !== "undefined") {
       // ✅ Android
       if ((window as any).AndroidBridge) {
-        const productId =
-          payAmount === "3"
-            ? "coupon_pack_2"
-            : "coupon_pack_4";
+        const productId = "coupon_pack_test_1";
 
         console.log("Android IAP request:", productId);
 
