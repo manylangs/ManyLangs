@@ -1,4 +1,3 @@
-
 "use client";
 
 import { LANGUAGES } from "@/app/config/languages";
@@ -27,30 +26,26 @@ type CouponItem = {
 
   paymentIntentId?: string | null;
   disabled?: boolean;
-  couponCount?: number | null; // 🔥 추가
+  couponCount?: number | null;
 
   usedLang?: string | null;
   usedSeries?: string | null;
   usedLevel?: string | null;
+
+  // 🔥 추가
+  source?: string | null;
+  purchaseToken?: string | null;
 };
 type Amount = "3" | "5" | "20" | "50" | "100";
 
 /* ================= constants ================= */
-
-// const LANGUAGES = [
-//   { code: "kr", label: "Korean" },
-//   { code: "en", label: "English" },
-//   { code: "es", label: "Spanish" },
-//   { code: "fr", label: "French" },
-//   { code: "pt", label: "Portuguese" },
-// ];import { LANGUAGES } from "@/app/config/languages"; 여기에서 단일
 
 const SERIES_CONFIG: Record<string, { label: string; hasLevel: boolean }> = {
   grammar: { label: "Grammar", hasLevel: true },
   conversation: { label: "Conversation", hasLevel: true },
   real: { label: "Real", hasLevel: true },
   voca: { label: "Vocabulary", hasLevel: true },
-  idiom: { label: "Idiom", hasLevel: false },       // ✅ 단권
+  idiom: { label: "Idiom", hasLevel: false },
 };
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
@@ -134,14 +129,12 @@ function writeLocalCoupons(list: CouponItem[]) {
   localStorage.setItem("couponBox", JSON.stringify(list));
 }
 
-/** ✅ aliveLib → 살아있는 coupon code 집합 */
 function buildAliveCouponCodeSet(aliveLib: LibraryItem[]) {
   return new Set(
     aliveLib.filter((x) => x.source === "coupon" && x.code).map((x) => x.code as string)
   );
 }
 
-/** ✅ expiredUsedCodes → 만료로 정리된(=aliveLib에 없는) "내 사용 쿠폰" 코드 집합 */
 function buildExpiredUsedCouponCodeSet(
   localCoupons: CouponItem[],
   aliveLib: LibraryItem[],
@@ -153,14 +146,8 @@ function buildExpiredUsedCouponCodeSet(
   for (const c of localCoupons) {
     if (!c?.code) continue;
     if (!c.used) continue;
-
-    // ✅ "내가 사용한 쿠폰"만 만료 정리 대상
-    // (A가 발행했고 B가 사용한 shared coupon은 A 화면에서 제거 대상이 아님)
     if (c.usedBy !== currentUserId) continue;
-
-    // ✅ 내가 교재로 사용한 쿠폰만(메타 있는 케이스)
     if (!c.usedSeries) continue;
-
     if (!aliveCodes.has(c.code)) expired.add(c.code);
   }
 
@@ -187,19 +174,18 @@ export default function SelectBooksPage() {
   const [level, setLevel] = useState("");
   const [coupon, setCoupon] = useState("");
 
-  const [payAmount, setPayAmount] = useState<Amount>("5"); // ✅ 결제 금액 선택
+  const [payAmount, setPayAmount] = useState<Amount>("5");
 
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [refundPreviewGroups, setRefundPreviewGroups] = useState<any[]>([]);
-  /** ✅ (NEW) 계정 변경/로그아웃 시 localStorage 캐시 초기화 */
+
   useEffect(() => {
     if (!isLoaded) return;
 
     const key = "ml_uid";
     const prev = localStorage.getItem(key);
 
-    // 로그아웃
     if (!userId) {
       localStorage.removeItem("library");
       localStorage.removeItem("couponBox");
@@ -207,7 +193,6 @@ export default function SelectBooksPage() {
       return;
     }
 
-    // 계정 변경
     if (prev && prev !== userId) {
       localStorage.removeItem("library");
       localStorage.removeItem("couponBox");
@@ -216,16 +201,10 @@ export default function SelectBooksPage() {
     localStorage.setItem(key, userId);
   }, [isLoaded, userId]);
 
-  /** 1) 초기 로드 + checkout success 처리 + 서버 coupon sync */
   useEffect(() => {
     if (!isLoaded) return;
-    // if (!userId) {
-    //   router.replace("/login");
-    //   return;
-    // }
 
     (async () => {
-      // ✅ (A) Firestore 기준 라이브러리 로드 + aliveLib 확보
       let aliveLib: LibraryItem[] = [];
       try {
         const res = await fetch("/api/licenses/list", {
@@ -247,27 +226,19 @@ export default function SelectBooksPage() {
       }
       setLibrary(aliveLib);
 
-      // ✅ (B) 쿠폰박스 로드 (UI는 서버 sync 결과만 사용)
       const localCoupons = readLocalCoupons();
       const aliveCodes = buildAliveCouponCodeSet(aliveLib);
       const cleanedCoupons = localCoupons.filter((c) => {
-        // 미사용 쿠폰은 항상 유지
         if (!c.used) return true;
-
-        // ✅ 남이 사용한(shared) 쿠폰은 A 화면에서 지우지 않음
         if (c.usedBy && c.usedBy !== userId) return true;
-
-        // ✅ 내가 사용한 쿠폰만 라이선스(aliveLib) 없으면 만료로 정리
         return aliveCodes.has(c.code);
       });
       writeLocalCoupons(cleanedCoupons);
 
-      // ✅ (C) 결제 성공 처리: /select-books?checkout=success&session_id=...
       const params = new URLSearchParams(window.location.search);
       const checkout = params.get("checkout");
       const sessionId = params.get("session_id");
 
-      // ✅ (D) 서버 쿠폰 동기화 (webhook 발급 포함)
       try {
         const res = await fetch("/api/coupons/list", {
           method: "POST",
@@ -282,7 +253,6 @@ export default function SelectBooksPage() {
           ? ((data as any).coupons as CouponItem[])
           : [];
 
-        // ✅ 여기서도 만료기준은 “이미 위에서 확정한 aliveLib” 사용
         setCouponBox((prev) => {
           const prevMap = new Map(prev.map((c) => [c.code, c]));
 
@@ -297,7 +267,6 @@ export default function SelectBooksPage() {
             } as CouponItem;
           });
 
-          // ✅ 핵심: localNow 말고 "mergedServer" 기준으로 만료 제거 대상 계산
           const expiredUsedCodes2 = buildExpiredUsedCouponCodeSet(mergedServer, aliveLib, userId);
 
           const finalList = mergedServer.filter(
@@ -313,7 +282,6 @@ export default function SelectBooksPage() {
     })();
   }, [isLoaded, userId, router]);
 
-  /** 3) 라이선스 기반 usedBook 필드 보강 */
   useEffect(() => {
     if (!isLoaded || !userId) return;
     if (library.length === 0 || couponBox.length === 0) return;
@@ -348,14 +316,11 @@ export default function SelectBooksPage() {
   useEffect(() => {
     setCouponPage(1);
   }, [couponBox.length]);
-  // 🔥 refund UI 동기화용 상태
+
   const [refundViewCoupons, setRefundViewCoupons] = useState<CouponItem[]>([]);
   const [refundViewLicenses, setRefundViewLicenses] = useState<LibraryItem[]>([]);
-  // 🔥 START - refund preview state
   const [refundPreviewOpen, setRefundPreviewOpen] = useState(false);
-  // 🔥 END
 
-  // 🔥 서버 기준 최신 데이터 가져오기
   useEffect(() => {
     if (!isLoaded || !userId) return;
 
@@ -388,6 +353,7 @@ export default function SelectBooksPage() {
       }
     })();
   }, [isLoaded, userId]);
+
   useEffect(() => {
     if (typeof window === "undefined") return;
 
@@ -399,24 +365,17 @@ export default function SelectBooksPage() {
       setError("");
 
       try {
-        console.log("[IAP SUCCESS]", {
-          purchaseToken,
-          productId,
-        });
+        console.log("[IAP SUCCESS]", { purchaseToken, productId });
 
-        const res = await fetch(
-          "/api/iap/google/verify",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              purchaseToken,
-              productId,
-              provider: "google_play",
-            }),
-          });
+        const res = await fetch("/api/iap/google/verify", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            purchaseToken,
+            productId,
+            provider: "google_play",
+          }),
+        });
 
         const data = await safeJson(res);
 
@@ -428,7 +387,6 @@ export default function SelectBooksPage() {
 
         console.log("[IAP OK]", data);
 
-        // 최신 coupon sync
         const couponRes = await fetch("/api/coupons/list", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -437,10 +395,7 @@ export default function SelectBooksPage() {
 
         const couponData = await safeJson(couponRes);
 
-        if (
-          couponRes.ok &&
-          Array.isArray(couponData?.coupons)
-        ) {
+        if (couponRes.ok && Array.isArray(couponData?.coupons)) {
           setCouponBox(couponData.coupons);
         }
 
@@ -457,6 +412,7 @@ export default function SelectBooksPage() {
       delete (window as any).onIAPSuccess;
     };
   }, [userId]);
+
   if (!isLoaded || !isUserLoaded) {
     return <div style={{ padding: 20 }}>Loading...</div>;
   }
@@ -476,8 +432,7 @@ export default function SelectBooksPage() {
       return;
     }
 
-    const finalLevel =
-      SERIES_CONFIG[book].hasLevel ? level : "all";
+    const finalLevel = SERIES_CONFIG[book].hasLevel ? level : "all";
 
     try {
       const res = await fetch("/api/coupons/redeem", {
@@ -507,13 +462,12 @@ export default function SelectBooksPage() {
         return;
       }
 
-      const nextLib = upsertLicense(lic, userId).filter((x) => !isExpired(x.expiresAt)); // ✅ expired 즉시 제거
+      const nextLib = upsertLicense(lic, userId).filter((x) => !isExpired(x.expiresAt));
       setLibrary(nextLib);
 
       setCouponBox((prev) => {
         const map = new Map<string, CouponItem>();
 
-        // ✅ 서버 기준으로 먼저 세팅 (핵심)
         for (const c of couponBox) {
           map.set(c.code, c);
         }
@@ -530,7 +484,6 @@ export default function SelectBooksPage() {
         });
 
         const next = Array.from(map.values());
-
         writeLocalCoupons(next);
         return next;
       });
@@ -542,26 +495,18 @@ export default function SelectBooksPage() {
       setLoading(false);
     }
   }
+
   async function startPayment() {
     if (loading) return;
 
-    // 🔥 Android / iOS IAP
     if (typeof window !== "undefined") {
-      // ✅ Android
       if ((window as any).AndroidBridge) {
-        const productId =
-          payAmount === "3"
-            ? "coupon_pack_2"
-            : "coupon_pack_4";
-
+        const productId = payAmount === "3" ? "coupon_pack_2" : "coupon_pack_4";
         console.log("Android IAP request:", productId);
-
         (window as any).AndroidBridge.requestPurchase(productId);
-
         return;
       }
 
-      // ✅ iOS
       if ((window as any).webkit?.messageHandlers?.purchase) {
         console.log("iOS IAP request:", payAmount);
         (window as any).webkit.messageHandlers.purchase.postMessage(payAmount);
@@ -569,19 +514,14 @@ export default function SelectBooksPage() {
       }
     }
 
-    // 🌐 Web 결제
     setLoading(true);
     setError("");
 
     try {
       const res = await fetch("/api/checkout", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          amount: payAmount,
-        }),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ amount: payAmount }),
       });
 
       const data = await safeJson(res);
@@ -610,7 +550,6 @@ export default function SelectBooksPage() {
     setLoading(true);
 
     try {
-      // 1) 환불 직전 최신 상태 조회
       const [beforeCouponRes, beforeLicenseRes] = await Promise.all([
         fetch("/api/coupons/list", {
           method: "POST",
@@ -634,10 +573,8 @@ export default function SelectBooksPage() {
         ? beforeLicenseData.licenses
         : [];
 
-      // 2) 최신 기준으로 환불 가능 여부 먼저 판정
       const beforeRefundableGroups = getRefundableGroups(beforeCoupons, beforeLicenses);
 
-      // UI도 최신화
       setCouponBox(beforeCoupons);
       writeLocalCoupons(beforeCoupons);
       setLibrary(beforeLicenses);
@@ -649,12 +586,20 @@ export default function SelectBooksPage() {
         return;
       }
 
-      // 3) 환불 실행
+      // 🔥 Google Play 쿠폰이면 링크로 이동
+      const refundGroup = beforeRefundableGroups[0];
+      const isGooglePlay = refundGroup?.[0]?.source === "google_play";
+
+      if (isGooglePlay) {
+        window.open("https://play.google.com/store/account/orderhistory", "_blank");
+        setRefundPreviewOpen(false);
+        return;
+      }
+
+      // Stripe 환불
       const refundRes = await fetch("/api/refund", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userId }),
       });
 
@@ -666,7 +611,6 @@ export default function SelectBooksPage() {
         return;
       }
 
-      // 4) 환불 후 최신 상태 재조회 (핵심)
       const [afterCouponRes, afterLicenseRes] = await Promise.all([
         fetch("/api/coupons/list", {
           method: "POST",
@@ -690,13 +634,11 @@ export default function SelectBooksPage() {
         ? afterLicenseData.licenses
         : [];
 
-      // 5) 최신 상태를 모든 UI 기준 state에 동시 반영
       setCouponBox(afterCoupons);
       writeLocalCoupons(afterCoupons);
       setLibrary(afterLicenses);
       setRefundViewCoupons(afterCoupons);
       setRefundViewLicenses(afterLicenses);
-
 
       alert("Refund completed");
       setRefundPreviewOpen(false);
@@ -708,7 +650,6 @@ export default function SelectBooksPage() {
     }
   }
 
-  // START - server based preview check
   async function handleRefundCheck() {
     if (loading || refundPreviewOpen) return;
 
@@ -731,16 +672,10 @@ export default function SelectBooksPage() {
       const couponData = await safeJson(couponRes);
       const licenseData = await safeJson(licenseRes);
 
-      const coupons = Array.isArray(couponData?.coupons)
-        ? couponData.coupons
-        : [];
-
-      const licenses = Array.isArray(licenseData?.licenses)
-        ? licenseData.licenses
-        : [];
+      const coupons = Array.isArray(couponData?.coupons) ? couponData.coupons : [];
+      const licenses = Array.isArray(licenseData?.licenses) ? licenseData.licenses : [];
       const groups = getRefundableGroups(coupons, licenses);
 
-      // 🔥 여기서 바로 차단
       if (groups.length === 0) {
         alert("Refund unavailable (already used or already refunded)");
         return;
@@ -753,26 +688,18 @@ export default function SelectBooksPage() {
           return false;
         });
       });
+
       if (strictGroups.length === 0) {
         alert("Refund unavailable (already used or already refunded)");
         return;
       }
-      // 🔥 END - strict refund validation
 
-      // UI 최신화
       setCouponBox(coupons);
       setLibrary(licenses);
       setRefundViewCoupons(coupons);
       setRefundViewLicenses(licenses);
 
-      // 🔥 START - strict 기준으로만 판단
-      if (strictGroups.length === 0) {
-        alert("Refund unavailable (already used or already refunded)");
-        return;
-      }
       setRefundPreviewGroups(strictGroups);
-
-      // ✅ 여기서만 preview 열림
       setRefundPreviewOpen(true);
 
     } catch {
@@ -781,6 +708,7 @@ export default function SelectBooksPage() {
       setLoading(false);
     }
   }
+
   function openBook(item: LibraryItem) {
     if (isExpired(item.expiresAt)) {
       setError("Expired textbook. Please redeem a new coupon or purchase again.");
@@ -803,36 +731,20 @@ export default function SelectBooksPage() {
   const filteredLibrary = library.filter((i) => i.lang === targetLang && !isExpired(i.expiresAt));
   const LIBRARY_PAGE_SIZE = 5;
 
-  const sortedLibrary = [...filteredLibrary].sort(
-    (a, b) => b.expiresAt - a.expiresAt
-  );
+  const sortedLibrary = [...filteredLibrary].sort((a, b) => b.expiresAt - a.expiresAt);
 
   const libraryTotal = sortedLibrary.length;
-
-  const libraryTotalPages = Math.max(
-    1,
-    Math.ceil(libraryTotal / LIBRARY_PAGE_SIZE)
-  );
-
-  const safeLibraryPage = Math.min(
-    Math.max(1, libraryPage),
-    libraryTotalPages
-  );
-
+  const libraryTotalPages = Math.max(1, Math.ceil(libraryTotal / LIBRARY_PAGE_SIZE));
+  const safeLibraryPage = Math.min(Math.max(1, libraryPage), libraryTotalPages);
   const libraryStart = (safeLibraryPage - 1) * LIBRARY_PAGE_SIZE;
+  const pageLibrary = sortedLibrary.slice(libraryStart, libraryStart + LIBRARY_PAGE_SIZE);
 
-  const pageLibrary = sortedLibrary.slice(
-    libraryStart,
-    libraryStart + LIBRARY_PAGE_SIZE
-  );
-  // ✅ Coupon UX: sort (unused first) + pagination (10/page)
   const sortedCoupons = [
     ...couponBox.filter((c) => !c.used),
-    ...couponBox.filter((c) => c.used)
+    ...couponBox.filter((c) => c.used),
   ];
 
-  // refund는 "paymentIntent 묶음" 기준으로 계산
-
+  // 🔥 getRefundableGroups: Stripe(paymentIntentId) + Google Play(purchaseToken) 둘 다 처리
   function getRefundableGroups(coupons: CouponItem[], library: LibraryItem[]) {
     const usedCouponCodes = new Set(
       library
@@ -841,67 +753,56 @@ export default function SelectBooksPage() {
     );
 
     const groups: Record<string, CouponItem[]> = {};
-
     const now = Date.now();
 
     for (const c of coupons) {
-      if (!c.paymentIntentId) continue;
-      if ((c as any).expiresAt && (c as any).expiresAt < now) continue; // 만료 제외
-
-      if (!groups[c.paymentIntentId]) {
-        groups[c.paymentIntentId] = [];
+      // Stripe 그룹
+      if (c.paymentIntentId) {
+        if ((c as any).expiresAt && (c as any).expiresAt < now) continue; // 만료 제외
+        const key = `stripe_${c.paymentIntentId}`;
+        if (!groups[key]) groups[key] = [];
+        groups[key].push(c);
+        continue;
       }
-
-      groups[c.paymentIntentId].push(c);
+      // Google Play 그룹
+      if (c.purchaseToken) {
+        const key = `google_${c.purchaseToken}`;
+        if (!groups[key]) groups[key] = [];
+        groups[key].push(c);
+      }
     }
 
     const refundable: CouponItem[][] = [];
     for (const group of Object.values(groups)) {
-
       const originalCount =
         typeof group[0]?.couponCount === "number" && group[0].couponCount > 0
           ? group[0].couponCount
           : group.length;
-
       const currentCount = group.length;
 
       const anyUsed =
         currentCount < originalCount ||
-
         group.some((c) => {
-          if (c.used === true && c.usedBy === userId) return true;
-          if (c.used === true && c.usedBy && c.usedBy !== userId) return true;
-          if (usedCouponCodes.has(c.code)) return true; // 🔥 이거 추가
+          if (c.used === true) return true;
+          if (usedCouponCodes.has(c.code)) return true;
           return false;
         });
 
-      if (!anyUsed) {
-        refundable.push(group);
-      }
+      if (!anyUsed) refundable.push(group);
     }
 
     return refundable;
   }
 
-
-
-
-  const refundBaseCoupons =
-    refundViewCoupons.length > 0 ? refundViewCoupons : couponBox;
-
-  const refundBaseLicenses =
-    refundViewLicenses.length > 0 ? refundViewLicenses : library;
-
+  const refundBaseCoupons = refundViewCoupons.length > 0 ? refundViewCoupons : couponBox;
+  const refundBaseLicenses = refundViewLicenses.length > 0 ? refundViewLicenses : library;
   const refundableGroups = getRefundableGroups(refundBaseCoupons, refundBaseLicenses);
-
   const refundablePurchaseCount = refundableGroups.length;
   const refundableCouponCount = refundableGroups.flat().length;
-
   const canRefund = refundablePurchaseCount > 0;
 
   const couponTotal = sortedCoupons.length;
   const couponTotalPages = Math.max(1, Math.ceil(couponTotal / COUPON_PAGE_SIZE));
-
   const safeCouponPage = Math.min(Math.max(1, couponPage), couponTotalPages);
   const couponStart = (safeCouponPage - 1) * COUPON_PAGE_SIZE;
   const pageCoupons = sortedCoupons.slice(couponStart, couponStart + COUPON_PAGE_SIZE);
@@ -909,11 +810,9 @@ export default function SelectBooksPage() {
   return (
     <main className="px-4 py-8">
       <main className="px-4 py-8">
-        {/* 🔥 START - header with admin */}
         {isUserLoaded && isSignedIn && (
           <div className="mx-auto flex max-w-5xl items-center justify-between gap-2 px-4 py-2">
 
-            {/* LEFT */}
             <div className="flex items-center gap-2">
               <Button
                 variant="outline"
@@ -924,7 +823,6 @@ export default function SelectBooksPage() {
                 Home
               </Button>
 
-              {/* 🔥 Admin 버튼 */}
               {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
                 <Button
                   variant="outline"
@@ -936,7 +834,6 @@ export default function SelectBooksPage() {
                 </Button>
               )}
 
-              {/* 🔥 Revenue 버튼 */}
               {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
                 <Button
                   variant="outline"
@@ -948,7 +845,6 @@ export default function SelectBooksPage() {
                 </Button>
               )}
 
-              {/* 🔥 Logs 버튼 */}
               {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
                 <Button
                   variant="outline"
@@ -959,7 +855,7 @@ export default function SelectBooksPage() {
                   Logs
                 </Button>
               )}
-              {/* 🔥 Free Coupons 버튼 */}
+
               {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
                 <Button
                   variant="outline"
@@ -972,7 +868,6 @@ export default function SelectBooksPage() {
               )}
             </div>
 
-            {/* RIGHT */}
             <div className="text-xs text-gray-500 whitespace-nowrap text-right">
               Contact:{" "}
               <a className="underline font-medium" href="mailto:manylangs.help@gmail.com">
@@ -984,8 +879,6 @@ export default function SelectBooksPage() {
         )}
       </main>
 
-
-      {/* ✅ 반응형 레이아웃 wrapper (여기만 변경) */}
       <div className="mx-auto w-full max-w-5xl pt-6">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {/* LEFT COLUMN */}
@@ -1004,7 +897,6 @@ export default function SelectBooksPage() {
                     </div>
 
                     <div className="flex items-center gap-2">
-
                       <button
                         type="button"
                         className="rounded border px-2 py-1 disabled:opacity-50"
@@ -1021,14 +913,11 @@ export default function SelectBooksPage() {
                       <button
                         type="button"
                         className="rounded border px-2 py-1 disabled:opacity-50"
-                        onClick={() =>
-                          setLibraryPage((p) => Math.min(libraryTotalPages, p + 1))
-                        }
+                        onClick={() => setLibraryPage((p) => Math.min(libraryTotalPages, p + 1))}
                         disabled={safeLibraryPage === libraryTotalPages}
                       >
                         {">"}
                       </button>
-
                     </div>
                   </div>
                 )}
@@ -1048,8 +937,7 @@ export default function SelectBooksPage() {
                       <span
                         style={{
                           fontSize: 12,
-                          color:
-                            remainingText(item.expiresAt) === "Expired" ? "#d00" : "#555",
+                          color: remainingText(item.expiresAt) === "Expired" ? "#d00" : "#555",
                         }}
                       >
                         {remainingText(item.expiresAt)}
@@ -1073,8 +961,6 @@ export default function SelectBooksPage() {
                       Tap/click a code to copy
                     </span>
                   </div>
-
-                  {/* 🔥 추가 */}
                   <div className="text-xs text-red-400 text-center">
                     Status may take a moment. Please refresh if needed.
                   </div>
@@ -1086,7 +972,6 @@ export default function SelectBooksPage() {
                   <p className="text-sm text-gray-500">No coupons available.</p>
                 )}
 
-                {/* Header: total + pagination */}
                 {couponTotal > 0 && (
                   <div className="flex items-center justify-between rounded border px-3 py-2 text-sm">
                     <div>
@@ -1111,9 +996,7 @@ export default function SelectBooksPage() {
                       <button
                         type="button"
                         className="rounded border px-2 py-1 disabled:opacity-50"
-                        onClick={() =>
-                          setCouponPage((p) => Math.min(couponTotalPages, p + 1))
-                        }
+                        onClick={() => setCouponPage((p) => Math.min(couponTotalPages, p + 1))}
                         disabled={safeCouponPage === couponTotalPages}
                         aria-label="Next page"
                       >
@@ -1123,7 +1006,6 @@ export default function SelectBooksPage() {
                   </div>
                 )}
 
-                {/* List: paged coupons */}
                 {pageCoupons.map((c, idx) => {
                   const status = getCouponStatus(c, userId!);
                   const usedAt = c.used ? formatUsedAt(c.usedAt) : "";
@@ -1167,7 +1049,6 @@ export default function SelectBooksPage() {
 
               <CardContent className="space-y-4">
 
-                {/* ✅ Language 선택 (맨 위로 이동) */}
                 <div>
                   <div className="text-sm font-semibold mb-1">
                     Language you want to learn
@@ -1189,7 +1070,6 @@ export default function SelectBooksPage() {
                   </select>
                 </div>
 
-                {/* textbook 선택 */}
                 <select
                   value={book}
                   onChange={(e) => {
@@ -1207,7 +1087,6 @@ export default function SelectBooksPage() {
                   ))}
                 </select>
 
-                {/* level */}
                 {book && SERIES_CONFIG[book].hasLevel && (
                   <select
                     value={level}
@@ -1222,7 +1101,6 @@ export default function SelectBooksPage() {
                   </select>
                 )}
 
-                {/* coupon input */}
                 <input
                   value={coupon}
                   onChange={(e) => setCoupon(e.target.value)}
@@ -1230,7 +1108,6 @@ export default function SelectBooksPage() {
                   className="block w-full rounded border px-3 py-2"
                 />
 
-                {/* 설명 */}
                 <div className="flex items-center justify-center h-full text-center">
                   <p className="text-xs text-gray-500 leading-relaxed">
                     1 coupon = 30-day access
@@ -1239,11 +1116,10 @@ export default function SelectBooksPage() {
                     <br />whether a shared coupon has been used.
                   </p>
                 </div>
-                {/* plan 선택 */}
+
                 <div className="space-y-2">
                   <div className="text-sm font-medium">Choose a plan</div>
 
-                  {/* 🔥 START mobile filter */}
                   {(() => {
                     const isMobileApp =
                       typeof window !== "undefined" &&
@@ -1277,12 +1153,10 @@ export default function SelectBooksPage() {
                       </>
                     );
                   })()}
-                  {/* 🔥 END mobile filter */}
                 </div>
 
                 {error && <p className="text-sm text-red-600">{error}</p>}
 
-                {/* 버튼 */}
                 <div className="space-y-2 pt-2">
 
                   <button
@@ -1295,14 +1169,11 @@ export default function SelectBooksPage() {
                       : `Add ${LANGUAGES.find(l => l.code === targetLang)?.label} textbook`}
                   </button>
 
-                  {/* 🔥 START platform button */}
                   {(() => {
                     const isAndroid =
                       typeof window !== "undefined" && (window as any).AndroidBridge;
-
                     const isIOS =
-                      typeof window !== "undefined" &&
-                      (window as any).webkit?.messageHandlers;
+                      typeof window !== "undefined" && (window as any).webkit?.messageHandlers;
 
                     return (
                       <button
@@ -1318,22 +1189,19 @@ export default function SelectBooksPage() {
                       </button>
                     );
                   })()}
-                  {/* 🔥 END platform button */}
 
                 </div>
 
               </CardContent>
             </Card>
+
             {/* Refund */}
             <Card>
-
               <CardHeader className="text-center">
                 <CardTitle>Refund</CardTitle>
               </CardHeader>
 
               <CardContent className="space-y-3">
-
-
 
                 <Button
                   variant="outline"
@@ -1361,10 +1229,7 @@ export default function SelectBooksPage() {
                     </div>
 
                     <div className="flex gap-2 pt-2">
-                      <Button
-                        className="w-full"
-                        onClick={requestRefund}
-                      >
+                      <Button className="w-full" onClick={requestRefund}>
                         Confirm Refund
                       </Button>
 
@@ -1379,11 +1244,13 @@ export default function SelectBooksPage() {
 
                   </div>
                 )}
+
                 {!canRefund && (
                   <div className="text-xs text-gray-400 text-center">
                     Refund unavailable (already used or already refunded)
                   </div>
                 )}
+
                 <div className="text-xs text-gray-500 space-y-1 text-left">
                   <div className="text-center font-extrabold text-red-500">
                     Refund Policy
@@ -1399,8 +1266,3 @@ export default function SelectBooksPage() {
     </main>
   );
 }
-
-
-
-
-
