@@ -8,7 +8,7 @@ export const runtime = "nodejs";
 function toMs(v: any): number {
   if (!v) return 0;
   if (typeof v === "number") return v;
-  if (typeof v?.toMillis === "function") return v.toMillis(); // Firestore Timestamp
+  if (typeof v?.toMillis === "function") return v.toMillis();
   const n = Number(v);
   return Number.isFinite(n) ? n : 0;
 }
@@ -27,6 +27,10 @@ function pick(c: Coupon) {
     usedLang: (c as any).usedLang ?? null,
     usedSeries: (c as any).usedSeries ?? null,
     usedLevel: (c as any).usedLevel ?? null,
+
+    // 🔥 추가
+    source: (c as any).source ?? null,
+    purchaseToken: (c as any).purchaseToken ?? null,
   };
 }
 
@@ -35,14 +39,6 @@ function timeKey(c: Coupon) {
   const issuedAt = toMs((c as any).issuedAt);
   return Math.max(usedAt, issuedAt);
 }
-
-/**
- * ✅ 중요:
- * - 만료/차단/남은시간 판단은 "licenses"가 담당
- * - coupons/list에서는 절대 "만료 used 쿠폰 숨김" 같은 필터를 하지 않는다.
- * - (호출/타입 꼬임 방지용으로 userId 파라미터는 남겨둠)
- */
-// (삭제)
 
 export async function POST(req: Request) {
   let body: { userId?: string };
@@ -59,13 +55,11 @@ export async function POST(req: Request) {
   }
 
   try {
-    // 🔥 OR 대체: ownerId 쿼리 + usedBy 쿼리 2번 후 머지
     const [ownerSnap, usedBySnap] = await Promise.all([
       db.collection("coupons").where("ownerId", "==", userId).get(),
       db.collection("coupons").where("usedBy", "==", userId).get(),
     ]);
 
-    // ✅ code 기준 dedupe
     const map = new Map<string, Coupon>();
 
     for (const d of ownerSnap.docs) {
@@ -80,11 +74,6 @@ export async function POST(req: Request) {
       }
     }
 
-    /* =============================== */
-    /* ✅ (변경) B가 사용한 쿠폰은 "살아있는 라이선스"가 있을 때만 노출 */
-    /* - A(발급자) 화면: 미사용 쿠폰만
-       - B(사용자) 화면: usedBy=userId && used=true && (licenses에 살아있음) 일 때만
-    */
     const now = Date.now();
     const licSnap = await db
       .collection("licenses")
@@ -100,24 +89,15 @@ export async function POST(req: Request) {
         aliveCouponCodes.add(data.code);
       }
     }
-    /* =============================== */
 
     const coupons = Array.from(map.values())
-      /* =============================== */
-      /* ✅ (변경) 필터 추가(다른 건 그대로) */
       .filter((c) => {
         const ownerId = (c as any).ownerId ?? null;
         const usedBy = (c as any).usedBy ?? null;
-
-        // 🔥 발급자는 자기 결제 쿠폰 전부 봐야함 (used 포함)
         if (ownerId === userId) return true;
-
-        // 사용자
         if (usedBy === userId) return true;
-
         return false;
       })
-      /* =============================== */
       .sort((a, b) => {
         const au = !!a.used;
         const bu = !!b.used;
