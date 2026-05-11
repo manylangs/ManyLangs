@@ -152,7 +152,8 @@ export async function POST(req: Request) {
       tx.set(ref, updated, { merge: true });
 
       // ✅ paidCouponUsed 기록 (RTDN 대비)
-      if (c.source === "google_play" || c.source === "stripe" || (c as any).paymentIntentId || (c as any).purchaseToken) {
+
+      if ((c as any).source === "google_play" || (c as any).source === "stripe" || (c as any).paymentIntentId || (c as any).purchaseToken) {
         const paidRef = db.collection("paidCouponUsed").doc(couponCode);
         tx.set(paidRef, {
           code: couponCode,
