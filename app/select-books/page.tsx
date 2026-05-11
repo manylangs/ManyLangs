@@ -1194,6 +1194,15 @@ export default function SelectBooksPage() {
 
               <CardContent className="space-y-3">
 
+                {/* 혼합 계정 안내 */}
+                {refundableGroups.some(g => g[0]?.paymentIntentId) &&
+                  refundableGroups.some(g => g[0]?.purchaseToken) && (
+                    <div className="text-xs text-center border rounded p-2 bg-yellow-50 text-gray-600">
+                      Card purchases can be refunded here.<br />
+                      Google Play purchases must be refunded through Google Play.
+                    </div>
+                  )}
+                  
                 <Button
                   variant="outline"
                   className="w-full"
