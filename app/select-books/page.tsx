@@ -350,10 +350,17 @@ export default function SelectBooksPage() {
         if (!res.ok) {
           console.error("[IAP ERROR]", data);
           setError(data?.error || "IAP verification failed.");
+          // ✅ verify 실패 시 consume 하지 않음 — 구매 유지
           return;
         }
 
         console.log("[IAP OK]", data);
+
+        // ✅ verify 성공 후에만 consume
+        if ((window as any).AndroidBridge?.consumePurchase) {
+          console.log("[IAP] consuming purchase:", purchaseToken);
+          (window as any).AndroidBridge.consumePurchase(purchaseToken);
+        }
 
         const couponRes = await fetch("/api/coupons/list", {
           method: "POST",
@@ -371,6 +378,7 @@ export default function SelectBooksPage() {
       } catch (err) {
         console.error(err);
         setError("Network error.");
+        // ✅ 네트워크 오류 시 consume 하지 않음
       } finally {
         setLoading(false);
       }
