@@ -483,9 +483,32 @@ export default function SelectBooksPage() {
         return;
       }
 
-      if ((window as any).webkit?.messageHandlers?.purchase) {
-        console.log("iOS IAP request:", payAmount);
-        (window as any).webkit.messageHandlers.purchase.postMessage(payAmount);
+      if (
+        (window as any)
+          .webkit
+          ?.messageHandlers
+          ?.native
+      ) {
+
+        const productId =
+          payAmount === "3"
+            ? "coupon_pack_2"
+            : "coupon_pack_4";
+
+        console.log(
+          "iOS IAP request:",
+          productId
+        );
+
+        ; (window as any)
+          .webkit
+          .messageHandlers
+          .native
+          .postMessage({
+            type: "PURCHASE",
+            productId
+          });
+
         return;
       }
     }
@@ -1202,7 +1225,7 @@ export default function SelectBooksPage() {
                       Google Play purchases must be refunded through Google Play.
                     </div>
                   )}
-                  
+
                 <Button
                   variant="outline"
                   className="w-full"
