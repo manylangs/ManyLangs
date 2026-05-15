@@ -111,30 +111,6 @@ export default function LandingPage() {
   // }, [])
   return (
     <main style={mainStyle}>
-      <button
-        style={{
-          position: "fixed",
-          top: "20px",
-          left: "20px",
-          zIndex: 999999,
-          background: "red",
-          color: "white",
-          padding: "12px 16px",
-          borderRadius: "8px",
-          fontSize: "16px"
-        }}
-        onClick={() => {
-
-          (window as any).webkit?.messageHandlers?.auth?.postMessage({
-            type: "TEST",
-            hello: "world"
-          })
-
-        }}
-      >
-        TEST BRIDGE
-      </button>
-      {/* 이하 기존 코드 그대로 유지 */}
       {/* Header */}
       <header style={headerStyle}>
         <div style={headerInner}>
