@@ -112,6 +112,17 @@ export default function LandingPage() {
   return (
     <main style={mainStyle}>
       <button
+        style={{
+          position: "fixed",
+          top: "20px",
+          left: "20px",
+          zIndex: 999999,
+          background: "red",
+          color: "white",
+          padding: "12px 16px",
+          borderRadius: "8px",
+          fontSize: "16px"
+        }}
         onClick={() => {
 
           (window as any).webkit?.messageHandlers?.auth?.postMessage({
