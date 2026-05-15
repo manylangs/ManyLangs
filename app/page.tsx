@@ -111,7 +111,18 @@ export default function LandingPage() {
   // }, [])
   return (
     <main style={mainStyle}>
+      <button
+        onClick={() => {
 
+          (window as any).webkit?.messageHandlers?.auth?.postMessage({
+            type: "TEST",
+            hello: "world"
+          })
+
+        }}
+      >
+        TEST BRIDGE
+      </button>
       {/* 이하 기존 코드 그대로 유지 */}
       {/* Header */}
       <header style={headerStyle}>
@@ -1249,8 +1260,8 @@ const btnHeaderPrimary: React.CSSProperties = {
 };
 
 const btnHeaderSecondary: React.CSSProperties = {
-  height: 36,              
-  padding: "0 12px",       
+  height: 36,
+  padding: "0 12px",
   borderRadius: 8,
   background: "#f5f5f5",
   border: "1px solid #e5e5e5",
