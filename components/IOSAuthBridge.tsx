@@ -18,21 +18,32 @@ export default function IOSAuthBridge() {
 
         const token = await session.getToken()
 
-        ;(window as any).webkit?.messageHandlers?.auth?.postMessage({
-          type: "AUTH_SUCCESS",
-          token,
-          userId: user?.id
-        })
+        ;(window as any)
+          .webkit
+          ?.messageHandlers
+          ?.native
+          ?.postMessage({
+            type: "AUTH_SUCCESS",
+            token,
+            userId: user?.id
+          })
 
-        ;(window as any).webkit?.messageHandlers?.auth?.postMessage({
-          type: "DISMISS_AUTH"
-        })
+        ;(window as any)
+          .webkit
+          ?.messageHandlers
+          ?.native
+          ?.postMessage({
+            type: "DISMISS_AUTH"
+          })
 
         console.log("✅ AUTH SENT TO IOS")
 
       } catch (error) {
 
-        console.error("❌ IOS AUTH BRIDGE ERROR", error)
+        console.error(
+          "❌ IOS AUTH BRIDGE ERROR",
+          error
+        )
       }
     }
 
