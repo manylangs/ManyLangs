@@ -3,15 +3,40 @@
 @tailwind utilities;
 
 /* ManyLangs 기본 스타일 */
+
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: ui-sans-serif, system-ui, -apple-system;
+  min-height: 100dvh;
+
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system;
+
   background-color: #ffffff;
   color: #000000;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* iOS input zoom 방지 */
+
+input,
+textarea,
+select {
+  font-size: 16px;
+}
+
+/* iOS safe-area 대응 */
+
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
 }
