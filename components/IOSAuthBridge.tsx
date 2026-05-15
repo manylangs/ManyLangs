@@ -18,10 +18,17 @@ export default function IOSAuthBridge() {
 
         const token = await session.getToken()
 
+        // iOS 앱에 로그인 성공 전달
         ;(window as any).webkit?.messageHandlers?.auth?.postMessage({
           type: "AUTH_SUCCESS",
           token,
           userId: user?.id
+        })
+
+        // 핵심:
+        // Safari OAuth overlay 닫기
+        ;(window as any).webkit?.messageHandlers?.auth?.postMessage({
+          type: "DISMISS_AUTH"
         })
 
         console.log("✅ AUTH SENT TO IOS")
