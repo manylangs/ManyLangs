@@ -473,6 +473,7 @@ export default function SelectBooksPage() {
   }
 
   async function startPayment() {
+    console.log("🔥 START PAYMENT");
     if (loading) return;
 
     if (typeof window !== "undefined") {
