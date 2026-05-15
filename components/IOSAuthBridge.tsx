@@ -8,6 +8,21 @@ export default function IOSAuthBridge() {
   const { isSignedIn, user } = useUser()
   const { session } = useSession()
 
+  // Swift -> Web
+  useEffect(() => {
+
+    ;(window as any).onNativeMessage =
+      (data: any) => {
+
+        console.log(
+          "🔥 FROM IOS:",
+          data
+        )
+      }
+
+  }, [])
+
+  // Web -> Swift
   useEffect(() => {
 
     async function sendAuthToIOS() {
