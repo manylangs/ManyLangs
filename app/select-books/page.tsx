@@ -473,7 +473,6 @@ export default function SelectBooksPage() {
   }
 
   async function startPayment() {
-    console.log("🔥 START PAYMENT");
     if (loading) return;
 
     if (typeof window !== "undefined") {
@@ -885,8 +884,8 @@ export default function SelectBooksPage() {
 
             <div className="text-xs text-gray-500 whitespace-nowrap text-right">
               Contact:{" "}
-              <a className="underline font-medium" href="mailto:manylangs.help@gmail.com">
-                ✉ manylangs.help@gmail.com
+              <a className="underline font-medium" href="mailto:help@manylangs.studio">
+                ✉ help@manylangs.studio
               </a>
             </div>
 

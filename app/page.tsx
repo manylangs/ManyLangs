@@ -686,7 +686,7 @@ export default function LandingPage() {
         }}
       >
         <div style={footerInner}>
-          <p style={footerText}>General inquiries : manylangs.help@gmail.com</p>
+          <p style={footerText}>General inquiries : help@manylangs.studio</p>
 
           <div style={footerLinks}>
             <button

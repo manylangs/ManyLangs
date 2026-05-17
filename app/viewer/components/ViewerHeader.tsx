@@ -49,7 +49,7 @@ export default function ViewerHeader() {
         </button>
 
         <div style={{ fontSize: 13, color: "#666", textAlign: "center", flex: 1 }}>
-          Contact: ✉ manylangs.help@gmail.com
+          Contact: ✉ help@manylangs.studio
         </div>
 
         <button

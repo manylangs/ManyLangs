@@ -18,7 +18,7 @@ export default function DeleteAccountInfoPage() {
       </p>
 
       <p>
-        📧 manylangs.help@gmail.com
+        📧 help@manylangs.studio
       </p>
 
       <p style={{ marginTop: 24, color: "#666", fontSize: 14 }}>
