@@ -7,6 +7,8 @@ import IOSAuthBridge from "@/components/IOSAuthBridge";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
   viewportFit: "cover",
 };
 
