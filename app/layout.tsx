@@ -17,7 +17,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const clerkKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
+  const clerkKey =
+    process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
   return (
     <ClerkProvider
@@ -26,12 +27,63 @@ export default function RootLayout({
       signUpForceRedirectUrl="/select-books"
     >
       <html lang="en">
+
+        <head>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+window.onNativeMessage = async function(data) {
+
+console.log("🔥 FROM IOS:", data);
+
+try {
+
+if (data?.type === "IAP_SUCCESS") {
+
+console.log("💰 PURCHASE RECEIVED");
+
+const res = await fetch(
+"/api/iap/apple/verify",
+{
+method: "POST",
+headers: {
+"Content-Type": "application/json"
+},
+body: JSON.stringify({
+productId: data.productId,
+transactionId: data.transactionId
+})
+}
+);
+
+const result = await res.json();
+
+console.log(
+"🍎 VERIFY RESULT:",
+result
+);
+}
+
+} catch (error) {
+
+console.error(
+"❌ PURCHASE VERIFY ERROR",
+error
+);
+}
+}
+`
+            }}
+          />
+        </head>
+
         <body>
           <ViewerTargetProvider>
             <IOSAuthBridge />
             {children}
           </ViewerTargetProvider>
         </body>
+
       </html>
     </ClerkProvider>
   );
