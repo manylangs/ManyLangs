@@ -17,6 +17,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
   const clerkKey =
     process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
@@ -29,6 +30,7 @@ export default function RootLayout({
       <html lang="en">
 
         <head>
+
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -38,14 +40,12 @@ window.onNativeMessage = async function (data) {
 
   try {
 
-    if (data?.type === "IAP_SUCCESS") {
+    if (
+      data?.type === "IAP_SUCCESS" ||
+      data?.type === "IAP_RESTORE_SUCCESS"
+    ) {
 
-      console.log("💰 PURCHASE RECEIVED");
-
-      console.log(
-        "🔥 VERIFY PAYLOAD:",
-        data
-      );
+      console.log("💰 IAP EVENT RECEIVED");
 
       const res = await fetch(
         "/api/iap/apple/verify",
@@ -74,14 +74,15 @@ window.onNativeMessage = async function (data) {
   } catch (error) {
 
     console.error(
-      "❌ PURCHASE VERIFY ERROR",
+      "❌ VERIFY ERROR",
       error
     );
   }
 }
-  `
+`
             }}
           />
+
         </head>
 
         <body>

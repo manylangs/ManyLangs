@@ -1190,17 +1190,42 @@ export default function SelectBooksPage() {
                       typeof window !== "undefined" && (window as any).webkit?.messageHandlers;
 
                     return (
-                      <button
-                        onClick={startPayment}
-                        disabled={loading}
-                        className="w-full rounded bg-black text-white py-2 text-sm font-medium"
-                      >
-                        {isAndroid
-                          ? "Buy with Google Play"
-                          : isIOS
-                            ? "Buy with Apple"
-                            : "Buy coupons using your card"}
-                      </button>
+                      <>
+                        <button
+                          onClick={startPayment}
+                          disabled={loading}
+                          className="w-full rounded bg-black text-white py-2 text-sm font-medium"
+                        >
+                          {isAndroid
+                            ? "Buy with Google Play"
+                            : isIOS
+                              ? "Buy with Apple"
+                              : "Buy coupons using your card"}
+                        </button>
+
+                        {isIOS && (
+                          <button
+                            onClick={() => {
+
+                              const ios =
+                                typeof window !== "undefined" &&
+                                (window as any).webkit?.messageHandlers?.native;
+
+                              if (!ios) {
+                                alert("iOS only");
+                                return;
+                              }
+
+                              (window as any).webkit.messageHandlers.native.postMessage({
+                                type: "RESTORE_PURCHASES"
+                              });
+                            }}
+                            className="w-full rounded border py-2 text-sm font-medium mt-2"
+                          >
+                            Restore Purchases
+                          </button>
+                        )}
+                      </>
                     );
                   })()}
 
