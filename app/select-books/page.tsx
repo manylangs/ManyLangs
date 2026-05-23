@@ -720,7 +720,17 @@ export default function SelectBooksPage() {
         })
       );
 
-      const totalValid = validStripeGroups.length + validGoogleGroups.length;
+      const totalValid =
+        validStripeGroups.length +
+        validGoogleGroups.length +
+        appleGroups.length;
+
+      if (appleGroups.length > 0 && stripeGroups.length === 0) {
+        alert(
+          "Apple App Store purchases must be refunded through Apple."
+        );
+        return;
+      }
 
       if (totalValid === 0) {
         alert("Refund unavailable (already used or already refunded)");
@@ -777,7 +787,6 @@ export default function SelectBooksPage() {
 
   // 🔥 getRefundableGroups: Stripe/Google Play 완전 분리 판정
   function getRefundableGroups(coupons: CouponItem[], library: LibraryItem[]) {
-    // Stripe 전용: 라이선스 기준 used 판정
     const usedCouponCodes = new Set(
       library
         .filter((l) => l.source === "coupon" && l.code)
@@ -786,11 +795,12 @@ export default function SelectBooksPage() {
 
     const stripeMap: Record<string, CouponItem[]> = {};
     const googleMap: Record<string, CouponItem[]> = {};
+    const appleMap: Record<string, CouponItem[]> = {};
     const now = Date.now();
 
     for (const c of coupons) {
       if (c.paymentIntentId) {
-        if ((c as any).expiresAt && (c as any).expiresAt < now) continue; // 만료 제외
+        if ((c as any).expiresAt && (c as any).expiresAt < now) continue;
         const key = `stripe_${c.paymentIntentId}`;
         if (!stripeMap[key]) stripeMap[key] = [];
         stripeMap[key].push(c);
@@ -800,12 +810,17 @@ export default function SelectBooksPage() {
         const key = `google_${c.purchaseToken}`;
         if (!googleMap[key]) googleMap[key] = [];
         googleMap[key].push(c);
+        continue;
+      }
+      if (c.transactionId) {
+        const key = `apple_${c.transactionId}`;
+        if (!appleMap[key]) appleMap[key] = [];
+        appleMap[key].push(c);
       }
     }
 
     const refundable: CouponItem[][] = [];
 
-    // Stripe 판정: coupon.used + 라이선스 usedCouponCodes 둘 다 체크
     for (const group of Object.values(stripeMap)) {
       const originalCount =
         typeof group[0]?.couponCount === "number" && group[0].couponCount > 0
@@ -821,8 +836,12 @@ export default function SelectBooksPage() {
       if (!anyUsed) refundable.push(group);
     }
 
-    // Google Play 판정: coupon.used만 체크 (라이선스 sync 지연 영향 제외)
     for (const group of Object.values(googleMap)) {
+      const anyUsed = group.some((c) => c.used === true);
+      if (!anyUsed) refundable.push(group);
+    }
+
+    for (const group of Object.values(appleMap)) {
       const anyUsed = group.some((c) => c.used === true);
       if (!anyUsed) refundable.push(group);
     }
