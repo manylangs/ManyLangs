@@ -32,47 +32,54 @@ export default function RootLayout({
           <script
             dangerouslySetInnerHTML={{
               __html: `
-window.onNativeMessage = async function(data) {
+window.onNativeMessage = async function (data) {
 
-console.log("🔥 FROM IOS:", data);
+  console.log("🔥 FROM IOS:", data);
 
-try {
+  try {
 
-if (data?.type === "IAP_SUCCESS") {
+    if (data?.type === "IAP_SUCCESS") {
 
-console.log("💰 PURCHASE RECEIVED");
+      console.log("💰 PURCHASE RECEIVED");
 
-const res = await fetch(
-"/api/iap/apple/verify",
-{
-method: "POST",
-headers: {
-"Content-Type": "application/json"
-},
-body: JSON.stringify({
-productId: data.productId,
-transactionId: data.transactionId
-})
+      console.log(
+        "🔥 VERIFY PAYLOAD:",
+        data
+      );
+
+      const res = await fetch(
+        "/api/iap/apple/verify",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            productId:
+              data.payload.productId,
+            transactionId:
+              data.payload.transactionId
+          })
+        }
+      );
+
+      const result = await res.json();
+
+      console.log(
+        "🍎 VERIFY RESULT:",
+        result
+      );
+    }
+
+  } catch (error) {
+
+    console.error(
+      "❌ PURCHASE VERIFY ERROR",
+      error
+    );
+  }
 }
-);
-
-const result = await res.json();
-
-console.log(
-"🍎 VERIFY RESULT:",
-result
-);
-}
-
-} catch (error) {
-
-console.error(
-"❌ PURCHASE VERIFY ERROR",
-error
-);
-}
-}
-`
+  `
             }}
           />
         </head>
