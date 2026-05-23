@@ -8,21 +8,8 @@ export default function IOSAuthBridge() {
   const { isSignedIn, user } = useUser()
   const { session } = useSession()
 
-  // Swift -> Web
-  useEffect(() => {
-
-    ;(window as any).onNativeMessage =
-      (data: any) => {
-
-        console.log(
-          "🔥 FROM IOS:",
-          data
-        )
-      }
-
-  }, [])
-
-  // Web -> Swift
+  // Web -> Swift only
+  // onNativeMessage는 layout.tsx head script에서 정의
   useEffect(() => {
 
     async function sendAuthToIOS() {
@@ -31,7 +18,8 @@ export default function IOSAuthBridge() {
 
       try {
 
-        const token = await session.getToken()
+        const token =
+          await session.getToken()
 
         ;(window as any)
           .webkit
@@ -51,7 +39,9 @@ export default function IOSAuthBridge() {
             type: "DISMISS_AUTH"
           })
 
-        console.log("✅ AUTH SENT TO IOS")
+        console.log(
+          "✅ AUTH SENT TO IOS"
+        )
 
       } catch (error) {
 
