@@ -35,6 +35,7 @@ type CouponItem = {
   // 🔥 추가
   source?: string | null;
   purchaseToken?: string | null;
+  transactionId?: string | null;
 };
 type Amount = "3" | "5" | "20" | "50" | "100";
 
@@ -586,9 +587,15 @@ export default function SelectBooksPage() {
       // 🔥 Stripe / Google Play 완전 분리
       const stripeGroups = beforeRefundableGroups.filter((g) => g[0]?.paymentIntentId);
       const googleGroups = beforeRefundableGroups.filter((g) => g[0]?.purchaseToken);
-
+      const appleGroups = beforeRefundableGroups.filter(
+        (g) => g[0]?.transactionId
+      );
       // Google Play만 있으면 링크 이동
-      if (googleGroups.length > 0 && stripeGroups.length === 0) {
+      if (
+        googleGroups.length > 0 &&
+        stripeGroups.length === 0 &&
+        appleGroups.length === 0
+      ) {
         alert(
           "Google Play purchases must be refunded through Google Play."
         );
@@ -597,6 +604,17 @@ export default function SelectBooksPage() {
         return;
       }
 
+      if (
+        appleGroups.length > 0 &&
+        stripeGroups.length === 0
+      ) {
+        alert(
+          "Apple App Store purchases must be refunded through Apple."
+        );
+
+        setRefundPreviewOpen(false);
+        return;
+      }
       // Stripe 환불
       if (stripeGroups.length > 0) {
         const refundRes = await fetch("/api/refund", {
