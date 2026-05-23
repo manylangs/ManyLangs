@@ -200,11 +200,23 @@ export async function POST(
                     {
                         provider:
                             "apple_app_store",
+
                         transactionId,
+
                         productId,
+
                         qty,
+
                         userId,
+
                         coupons,
+
+                        usedCouponCount: 0,
+
+                        refunded: false,
+
+                        refundDetectedAt: null,
+
                         processedAt:
                             serverTimestamp(),
                     }

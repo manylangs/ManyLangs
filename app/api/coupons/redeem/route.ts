@@ -153,19 +153,53 @@ export async function POST(req: Request) {
 
       // ✅ paidCouponUsed 기록 (RTDN 대비)
 
-      if ((c as any).source === "google_play" || (c as any).source === "stripe" || (c as any).paymentIntentId || (c as any).purchaseToken) {
+      if (
+        (c as any).source === "google_play" ||
+        (c as any).source === "stripe" ||
+        (c as any).source === "apple_app_store" ||
+        (c as any).paymentIntentId ||
+        (c as any).purchaseToken ||
+        (c as any).transactionId
+      ) {
         const paidRef = db.collection("paidCouponUsed").doc(couponCode);
         tx.set(paidRef, {
           code: couponCode,
           userId,
           source: (c as any).source ?? null,
-          paymentIntentId: (c as any).paymentIntentId ?? null,
-          purchaseToken: (c as any).purchaseToken ?? null,
+
+          paymentIntentId:
+            (c as any).paymentIntentId ?? null,
+
+          purchaseToken:
+            (c as any).purchaseToken ?? null,
+
+          transactionId:
+            (c as any).transactionId ?? null,
+
           usedAt: now,
+
           lang: wantLang,
           series: wantSeries,
           level: finalLevel,
         });
+        if (
+          (c as any).transactionId
+        ) {
+          const purchaseRef = db
+            .collection("iapPurchases")
+            .doc(
+              (c as any).transactionId
+            );
+
+          tx.set(
+            purchaseRef,
+            {
+              usedCouponCount:
+                FieldValue.increment(1),
+            },
+            { merge: true }
+          );
+        }
       }
 
       return { coupon: updated, license: lic };
