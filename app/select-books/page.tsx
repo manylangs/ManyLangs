@@ -703,7 +703,9 @@ export default function SelectBooksPage() {
       // 🔥 Stripe / Google Play 분리
       const stripeGroups = groups.filter((g: CouponItem[]) => g[0]?.paymentIntentId);
       const googleGroups = groups.filter((g: CouponItem[]) => g[0]?.purchaseToken);
-
+      const appleGroups = groups.filter(
+        (g: CouponItem[]) => g[0]?.transactionId
+      );
       // Google Play: 사용 여부만 검증
       const validGoogleGroups = googleGroups.filter((group: CouponItem[]) =>
         !group.some((c) => c.used === true)
