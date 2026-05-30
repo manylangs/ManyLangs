@@ -161,31 +161,35 @@ export default function LandingPage() {
                 </button>
               </a>
 
-              {!isPWA && (
-                <>
-                  <button
-                    style={{
-                      ...btnHeaderSecondary,
-                      padding: "0 8px",
-                      fontSize: 11,
-                    }}
-                    onClick={handleAndroidInstall}
-                  >
-                    Android
-                  </button>
+              {!isPWA &&
+                !(
+                  typeof window !== "undefined" &&
+                  (window as any).webkit?.messageHandlers
+                ) && (
+                  <>
+                    <button
+                      style={{
+                        ...btnHeaderSecondary,
+                        padding: "0 8px",
+                        fontSize: 11,
+                      }}
+                      onClick={handleAndroidInstall}
+                    >
+                      Android
+                    </button>
 
-                  <button
-                    style={{
-                      ...btnHeaderSecondary,
-                      padding: "0 8px",
-                      fontSize: 11,
-                    }}
-                    onClick={handleIOSInstall}
-                  >
-                    IOS
-                  </button>
-                </>
-              )}
+                    <button
+                      style={{
+                        ...btnHeaderSecondary,
+                        padding: "0 8px",
+                        fontSize: 11,
+                      }}
+                      onClick={handleIOSInstall}
+                    >
+                      IOS
+                    </button>
+                  </>
+                )}
 
               {/* 🔥 공유 */}
               <button
