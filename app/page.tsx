@@ -163,11 +163,25 @@ export default function LandingPage() {
 
               {!isPWA && (
                 <>
-                  <button style={btnHeaderSecondary} onClick={handleAndroidInstall}>
+                  <button
+                    style={{
+                      ...btnHeaderSecondary,
+                      padding: "0 8px",
+                      fontSize: 11,
+                    }}
+                    onClick={handleAndroidInstall}
+                  >
                     Android
                   </button>
 
-                  <button style={btnHeaderSecondary} onClick={handleIOSInstall}>
+                  <button
+                    style={{
+                      ...btnHeaderSecondary,
+                      padding: "0 8px",
+                      fontSize: 11,
+                    }}
+                    onClick={handleIOSInstall}
+                  >
                     IOS
                   </button>
                 </>
