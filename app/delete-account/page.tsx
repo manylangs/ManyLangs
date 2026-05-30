@@ -27,11 +27,7 @@ export default function DeleteAccountPage() {
 
     if (!user) return;
 
-    const ok = confirm(
-      "Delete your account permanently?\n\nAll textbooks and coupons will be lost and cannot be recovered."
-    );
-
-    if (!ok) return;
+    console.log("CONFIRM BYPASS");
 
     setLoading(true);
 
