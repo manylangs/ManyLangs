@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useUser, useReverification } from "@clerk/nextjs";
+import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 
 export default function DeleteAccountPage() {
@@ -10,17 +10,21 @@ export default function DeleteAccountPage() {
 
   const [loading, setLoading] = useState(false);
 
-  const performDelete = useReverification(async () => {
+  const performDelete = async () => {
+    console.log("DELETE RUN");
+
     if (!user) throw new Error("No user");
 
-    // ✅ 계정 삭제 (세션도 자동 종료됨)
     await user.delete();
 
-    // ✅ signOut 제거 (중요)
+    console.log("DELETE SUCCESS");
+
     router.replace("/");
-  });
+  };
 
   async function handleDelete() {
+    console.log("DELETE START");
+
     if (!user) return;
 
     const ok = confirm(
