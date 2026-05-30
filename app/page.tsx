@@ -161,7 +161,7 @@ export default function LandingPage() {
                 </button>
               </a>
 
-              {!isPWA && typeof window !== "undefined" && window.innerWidth > 768 && (
+              {!isPWA && (
                 <>
                   <button style={btnHeaderSecondary} onClick={handleAndroidInstall}>
                     Android
