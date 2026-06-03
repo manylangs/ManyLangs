@@ -197,7 +197,9 @@ export default function RealViewer({
         <>
 
           {audioUrl && (
-            <RealAudioController src={audioUrl} />
+            <div style={{ position: "sticky", top: 0, zIndex: 10, background: "#fff", paddingBottom: 8 }}>
+              <RealAudioController src={audioUrl} />
+            </div>
           )}
 
           {/* language switch */}
@@ -268,7 +270,7 @@ export default function RealViewer({
             }}
           >
 
-            <div>
+            <div style={{ position: "sticky", top: 60, alignSelf: "start" }}>
               {imageUrl && (
                 <img
                   src={imageUrl}

@@ -157,7 +157,7 @@ export default function ConversationViewer({
   /* ================= UI ================= */
 
   return (
-    <div style={{ maxWidth: 1100, margin: "0 auto", padding: 24 }}>
+    <div style={{ maxWidth: "100%", margin: "0 auto", padding: 24, overflowX: "hidden" }}>
       {status === "loading" && <div>Loading...</div>}
       {status === "error" && <div>Load Error</div>}
 
@@ -193,13 +193,12 @@ export default function ConversationViewer({
           </div>
 
           {/* 챕터 목록 */}
-          <div style={{ marginTop: 12 }}>
+          <div style={{ marginTop: 12, display: "flex", flexWrap: "wrap", gap: 6 }}>
             {chapters.map((ch) => (
               <Link
                 key={ch}
                 href={`/viewer/${targetLang}/conversation/${level}/${ch}`}
                 style={{
-                  marginRight: 6,
                   padding: "4px 8px",
                   background: ch === chapter ? "#333" : "#eee",
                   color: ch === chapter ? "#fff" : "#333",
