@@ -177,6 +177,8 @@ export default function IdiomViewer({
             chapter={chapter}
           />
 
+          <div style={{ height: 30 }} />
+
           {/* Study Lang */}
           <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
             {ALL_STUDY_LANGS
