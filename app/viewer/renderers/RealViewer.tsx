@@ -269,7 +269,13 @@ export default function RealViewer({
             }}
           >
 
-            <div style={{ alignSelf: "start" }}>
+            <div
+              style={{
+                position: "sticky",
+                top: 180,
+                alignSelf: "start",
+              }}
+            >
               {imageUrl && (
                 <img
                   src={imageUrl}
