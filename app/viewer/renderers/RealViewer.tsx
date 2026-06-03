@@ -200,6 +200,7 @@ export default function RealViewer({
             <RealAudioController src={audioUrl} />
           )}
 
+          <div style={{ height: 30 }} />
           {/* language switch */}
 
           <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
