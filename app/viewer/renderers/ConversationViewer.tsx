@@ -157,7 +157,7 @@ export default function ConversationViewer({
   /* ================= UI ================= */
 
   return (
-    <div style={{ maxWidth: "100%", margin: "0 auto", padding: 24, overflowX: "hidden" }}>
+    <div style={{ maxWidth: "100%", margin: "0 auto", padding: 24 }}>
       {status === "loading" && <div>Loading...</div>}
       {status === "error" && <div>Load Error</div>}
 

@@ -179,7 +179,7 @@ export default function RealViewer({
   }, [targetLang, level, chapter]);
 
   return (
-    <div style={{ maxWidth: 1100, margin: "0 auto", padding: 24 }}>
+    <div style={{ maxWidth: "100%", margin: "0 auto", padding: 24 }}>
 
       {status === "loading" && (
         <div style={{ padding: 12, color: "#666" }}>
@@ -197,9 +197,7 @@ export default function RealViewer({
         <>
 
           {audioUrl && (
-            <div style={{ position: "sticky", top: 0, zIndex: 10, background: "#fff", paddingBottom: 8 }}>
-              <RealAudioController src={audioUrl} />
-            </div>
+            <RealAudioController src={audioUrl} />
           )}
 
           {/* language switch */}
