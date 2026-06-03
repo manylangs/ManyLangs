@@ -124,7 +124,7 @@ export default function ConversationAudioController({
     <section
       style={{
         position: "sticky",
-        top: 64,
+        top: 0,
         zIndex: 900,
         background: "#fff",
         paddingTop: 8,
