@@ -861,472 +861,460 @@ export default function SelectBooksPage() {
   const pageCoupons = sortedCoupons.slice(couponStart, couponStart + COUPON_PAGE_SIZE);
 
   return (
-    <main className="px-4 py-8">
-      <main className="px-4 py-8">
-        {isUserLoaded && isSignedIn && (
+    <>
+      {/* 🔥 fixed 네비게이션 */}
+      {isUserLoaded && isSignedIn && (
+        <div
+          className="fixed top-0 left-0 right-0 z-50 bg-white border-b"
+          style={{ paddingTop: "env(safe-area-inset-top)" }}
+        >
           <div className="mx-auto flex max-w-5xl items-center justify-between gap-2 px-4 py-2">
-
-            <div className="flex items-center gap-2">
-              <Button
-                variant="outline"
-                size="sm"
+            <div className="flex items-center gap-2 overflow-x-auto">
+              <Button variant="outline" size="sm"
                 onClick={() => router.push("/app")}
-                className="h-8 shrink-0"
-              >
+                className="h-8 shrink-0">
                 Home
               </Button>
-
               {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
-                <Button
-                  variant="outline"
-                  size="sm"
+                <Button variant="outline" size="sm"
                   onClick={() => router.push("/admin")}
-                  className="h-8 shrink-0 border-red-500 text-red-500"
-                >
+                  className="h-8 shrink-0 border-red-500 text-red-500">
                   Admin
                 </Button>
               )}
-
               {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
-                <Button
-                  variant="outline"
-                  size="sm"
+                <Button variant="outline" size="sm"
                   onClick={() => router.push("/admin/revenue")}
-                  className="h-8 shrink-0 border-red-500 text-red-500"
-                >
+                  className="h-8 shrink-0 border-red-500 text-red-500">
                   Revenue
                 </Button>
               )}
-
               {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
-                <Button
-                  variant="outline"
-                  size="sm"
+                <Button variant="outline" size="sm"
                   onClick={() => router.push("/admin/logs")}
-                  className="h-8 shrink-0 border-red-500 text-red-500"
-                >
+                  className="h-8 shrink-0 border-red-500 text-red-500">
                   Logs
                 </Button>
               )}
-
               {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
-                <Button
-                  variant="outline"
-                  size="sm"
+                <Button variant="outline" size="sm"
                   onClick={() => router.push("/admin/promo")}
-                  className="h-8 shrink-0 border-red-500 text-red-500"
-                >
+                  className="h-8 shrink-0 border-red-500 text-red-500">
                   Free Coupons
                 </Button>
               )}
             </div>
-
-            <div className="text-xs text-gray-500 whitespace-nowrap text-right">
+            <div className="text-xs text-gray-500 whitespace-nowrap text-right shrink-0">
               Contact:{" "}
               <a className="underline font-medium" href="mailto:help@manylangs.studio">
                 ✉ help@manylangs.studio
               </a>
             </div>
-
           </div>
-        )}
-      </main>
+        </div>
+      )}
 
-      <div className="mx-auto w-full max-w-5xl pt-6">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          {/* LEFT COLUMN */}
-          <div className="space-y-6">
+      {/* 🔥 콘텐츠 */}
+      <main
+        className="px-4 py-8"
+        style={{ paddingTop: "calc(env(safe-area-inset-top) + 56px)" }}
+      >
+        <div className="mx-auto w-full max-w-5xl pt-6">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            {/* LEFT COLUMN */}
+            <div className="space-y-6">
 
-            {/* My Library */}
-            <Card>
-              <CardHeader>
-                <CardTitle>My Library</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                {libraryTotal > 0 && (
-                  <div className="flex items-center justify-between rounded border px-3 py-2 text-sm">
-                    <div>
-                      Total: <b>{libraryTotal}</b>
-                    </div>
+              {/* My Library */}
+              <Card>
+                <CardHeader>
+                  <CardTitle>My Library</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  {libraryTotal > 0 && (
+                    <div className="flex items-center justify-between rounded border px-3 py-2 text-sm">
+                      <div>
+                        Total: <b>{libraryTotal}</b>
+                      </div>
 
-                    <div className="flex items-center gap-2">
-                      <button
-                        type="button"
-                        className="rounded border px-2 py-1 disabled:opacity-50"
-                        onClick={() => setLibraryPage((p) => Math.max(1, p - 1))}
-                        disabled={safeLibraryPage === 1}
-                      >
-                        {"<"}
-                      </button>
+                      <div className="flex items-center gap-2">
+                        <button
+                          type="button"
+                          className="rounded border px-2 py-1 disabled:opacity-50"
+                          onClick={() => setLibraryPage((p) => Math.max(1, p - 1))}
+                          disabled={safeLibraryPage === 1}
+                        >
+                          {"<"}
+                        </button>
 
-                      <span className="text-xs text-gray-600">
-                        {safeLibraryPage} / {libraryTotalPages}
-                      </span>
+                        <span className="text-xs text-gray-600">
+                          {safeLibraryPage} / {libraryTotalPages}
+                        </span>
 
-                      <button
-                        type="button"
-                        className="rounded border px-2 py-1 disabled:opacity-50"
-                        onClick={() => setLibraryPage((p) => Math.min(libraryTotalPages, p + 1))}
-                        disabled={safeLibraryPage === libraryTotalPages}
-                      >
-                        {">"}
-                      </button>
-                    </div>
-                  </div>
-                )}
-                {filteredLibrary.length === 0 && (
-                  <p className="text-sm text-gray-500">No textbooks yet.</p>
-                )}
-                {pageLibrary.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="flex items-center justify-between rounded border px-3 py-2"
-                  >
-                    <div className="text-sm">
-                      {item.series.toUpperCase()}
-                      {item.level !== "all" && ` · ${item.level.toUpperCase()}`}
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <span
-                        style={{
-                          fontSize: 12,
-                          color: remainingText(item.expiresAt) === "Expired" ? "#d00" : "#555",
-                        }}
-                      >
-                        {remainingText(item.expiresAt)}
-                      </span>
-                      <Button size="sm" onClick={() => openBook(item)}>
-                        Open
-                      </Button>
-                    </div>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
-
-            {/* My Coupons */}
-            <Card>
-              <CardHeader>
-                <div className="flex flex-col gap-1">
-                  <div className="flex items-center justify-between">
-                    <CardTitle>My Coupons</CardTitle>
-                    <span className="text-xs text-gray-400 ml-2 whitespace-nowrap">
-                      Tap/click a code to copy
-                    </span>
-                  </div>
-                  <div className="text-xs text-red-400 text-center">
-                    Status may take a moment. Please refresh if needed.
-                  </div>
-                </div>
-              </CardHeader>
-
-              <CardContent className="space-y-2">
-                {couponTotal === 0 && (
-                  <p className="text-sm text-gray-500">No coupons available.</p>
-                )}
-
-                {couponTotal > 0 && (
-                  <div className="flex items-center justify-between rounded border px-3 py-2 text-sm">
-                    <div>
-                      Total: <b>{couponTotal}</b>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                      <button
-                        type="button"
-                        className="rounded border px-2 py-1 disabled:opacity-50"
-                        onClick={() => setCouponPage((p) => Math.max(1, p - 1))}
-                        disabled={safeCouponPage === 1}
-                        aria-label="Previous page"
-                      >
-                        {"<"}
-                      </button>
-
-                      <span className="text-xs text-gray-600">
-                        {safeCouponPage} / {couponTotalPages}
-                      </span>
-
-                      <button
-                        type="button"
-                        className="rounded border px-2 py-1 disabled:opacity-50"
-                        onClick={() => setCouponPage((p) => Math.min(couponTotalPages, p + 1))}
-                        disabled={safeCouponPage === couponTotalPages}
-                        aria-label="Next page"
-                      >
-                        {">"}
-                      </button>
-                    </div>
-                  </div>
-                )}
-
-                {pageCoupons.map((c, idx) => {
-                  const status = getCouponStatus(c, userId!);
-                  const usedAt = c.used ? formatUsedAt(c.usedAt) : "";
-                  const usedBook = formatUsedBook(c);
-
-                  return (
-                    <div
-                      key={`${c.code}-${idx}`}
-                      className="flex justify-between rounded border px-3 py-2 text-sm"
-                    >
-                      <button
-                        type="button"
-                        onClick={() => copyToClipboard(c.code)}
-                        className="text-left hover:underline"
-                        title="Click to copy"
-                      >
-                        {c.code}
-                      </button>
-
-                      <div style={{ color: status.color, textAlign: "right" }}>
-                        {status.text}
-                        {c.used && usedAt ? ` · ${usedAt}` : ""}
-                        {c.used && usedBook ? (
-                          <div style={{ fontSize: 11, color: "#777" }}>{usedBook}</div>
-                        ) : null}
+                        <button
+                          type="button"
+                          className="rounded border px-2 py-1 disabled:opacity-50"
+                          onClick={() => setLibraryPage((p) => Math.min(libraryTotalPages, p + 1))}
+                          disabled={safeLibraryPage === libraryTotalPages}
+                        >
+                          {">"}
+                        </button>
                       </div>
                     </div>
-                  );
-                })}
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* RIGHT COLUMN */}
-          <div className="space-y-6">
-            {/* Add textbook */}
-            <Card id="add-textbook-section">
-              <CardHeader>
-                <CardTitle>Add a textbook</CardTitle>
-              </CardHeader>
-
-              <CardContent className="space-y-4">
-
-                <div>
-                  <div className="text-sm font-semibold mb-1">
-                    Language you want to learn
-                  </div>
-                  <select
-                    value={targetLang}
-                    onChange={(e) => {
-                      const v = e.target.value;
-                      setTargetLang(v);
-                      localStorage.setItem("ml_target_lang", v);
-                    }}
-                    className="block w-full rounded border px-3 py-2"
-                  >
-                    {LANGUAGES.map((l) => (
-                      <option key={l.code} value={l.code}>
-                        {l.label}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <select
-                  value={book}
-                  onChange={(e) => {
-                    const next = e.target.value;
-                    setBook(next);
-                    setLevel(SERIES_CONFIG[next]?.hasLevel ? "a1" : "");
-                  }}
-                  className="block w-full rounded border px-3 py-2"
-                >
-                  <option value="">Select textbook</option>
-                  {Object.entries(SERIES_CONFIG).map(([k, v]) => (
-                    <option key={k} value={k}>
-                      {v.label}
-                    </option>
+                  )}
+                  {filteredLibrary.length === 0 && (
+                    <p className="text-sm text-gray-500">No textbooks yet.</p>
+                  )}
+                  {pageLibrary.map((item, idx) => (
+                    <div
+                      key={idx}
+                      className="flex items-center justify-between rounded border px-3 py-2"
+                    >
+                      <div className="text-sm">
+                        {item.series.toUpperCase()}
+                        {item.level !== "all" && ` · ${item.level.toUpperCase()}`}
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span
+                          style={{
+                            fontSize: 12,
+                            color: remainingText(item.expiresAt) === "Expired" ? "#d00" : "#555",
+                          }}
+                        >
+                          {remainingText(item.expiresAt)}
+                        </span>
+                        <Button size="sm" onClick={() => openBook(item)}>
+                          Open
+                        </Button>
+                      </div>
+                    </div>
                   ))}
-                </select>
+                </CardContent>
+              </Card>
 
-                {book && SERIES_CONFIG[book].hasLevel && (
-                  <select
-                    value={level}
-                    onChange={(e) => setLevel(e.target.value)}
-                    className="block w-full rounded border px-3 py-2"
-                  >
-                    {LEVELS.map((l) => (
-                      <option key={l} value={l.toLowerCase()}>
-                        {l}
-                      </option>
-                    ))}
-                  </select>
-                )}
+              {/* My Coupons */}
+              <Card>
+                <CardHeader>
+                  <div className="flex flex-col gap-1">
+                    <div className="flex items-center justify-between">
+                      <CardTitle>My Coupons</CardTitle>
+                      <span className="text-xs text-gray-400 ml-2 whitespace-nowrap">
+                        Tap/click a code to copy
+                      </span>
+                    </div>
+                    <div className="text-xs text-red-400 text-center">
+                      Status may take a moment. Please refresh if needed.
+                    </div>
+                  </div>
+                </CardHeader>
 
-                <input
-                  value={coupon}
-                  onChange={(e) => setCoupon(e.target.value)}
-                  placeholder="Coupon code"
-                  className="block w-full rounded border px-3 py-2"
-                />
+                <CardContent className="space-y-2">
+                  {couponTotal === 0 && (
+                    <p className="text-sm text-gray-500">No coupons available.</p>
+                  )}
 
-                <div className="flex items-center justify-center h-full text-center">
-                  <p className="text-xs text-gray-500 leading-relaxed">
-                    1 coupon = 30-day access
-                    <br />Coupons can be shared with others.
-                    <br /> However, ManyLangs cannot individually track
-                    <br />whether a shared coupon has been used.
-                  </p>
-                </div>
+                  {couponTotal > 0 && (
+                    <div className="flex items-center justify-between rounded border px-3 py-2 text-sm">
+                      <div>
+                        Total: <b>{couponTotal}</b>
+                      </div>
 
-                <div className="space-y-2">
-                  <div className="text-sm font-medium">Choose a plan</div>
-
-                  {(() => {
-                    const isMobileApp =
-                      typeof window !== "undefined" &&
-                      ((window as any).AndroidBridge || (window as any).webkit?.messageHandlers);
-
-                    const visiblePaymentOptions = isMobileApp
-                      ? PAYMENT_OPTIONS.filter(p => p.amount === "3" || p.amount === "5")
-                      : PAYMENT_OPTIONS;
-
-                    return (
-                      <>
-                        <select
-                          value={payAmount}
-                          onChange={(e) => setPayAmount(e.target.value as Amount)}
-                          className="block w-full rounded border px-3 py-2"
-                        >
-                          {visiblePaymentOptions.map((p) => (
-                            <option key={p.amount} value={p.amount}>
-                              {p.label} — {p.desc}
-                            </option>
-                          ))}
-                        </select>
-
-                        <div className="text-xs text-gray-500 space-y-1">
-                          {visiblePaymentOptions.map((p) => (
-                            <div key={p.amount}>
-                              {p.label} → {p.coupons} coupons
-                            </div>
-                          ))}
-                        </div>
-                      </>
-                    );
-                  })()}
-                </div>
-
-                {error && <p className="text-sm text-red-600">{error}</p>}
-
-                <div className="space-y-2 pt-2">
-
-                  <button
-                    onClick={activateCoupon}
-                    disabled={loading}
-                    className="w-full rounded bg-black text-white py-2 text-sm font-medium"
-                  >
-                    {loading
-                      ? "Processing..."
-                      : `Add ${LANGUAGES.find(l => l.code === targetLang)?.label} textbook`}
-                  </button>
-
-                  {(() => {
-                    const isAndroid =
-                      typeof window !== "undefined" && (window as any).AndroidBridge;
-                    const isIOS =
-                      typeof window !== "undefined" && (window as any).webkit?.messageHandlers;
-
-                    return (
-                      <>
+                      <div className="flex items-center gap-2">
                         <button
-                          onClick={startPayment}
-                          disabled={loading}
-                          className="w-full rounded bg-black text-white py-2 text-sm font-medium"
+                          type="button"
+                          className="rounded border px-2 py-1 disabled:opacity-50"
+                          onClick={() => setCouponPage((p) => Math.max(1, p - 1))}
+                          disabled={safeCouponPage === 1}
+                          aria-label="Previous page"
                         >
-                          {isAndroid
-                            ? "Buy with Google Play"
-                            : isIOS
-                              ? "Buy with Apple"
-                              : "Buy coupons using your card"}
+                          {"<"}
                         </button>
-                      </>
-                    );
-                  })()}
 
-                </div>
+                        <span className="text-xs text-gray-600">
+                          {safeCouponPage} / {couponTotalPages}
+                        </span>
 
-              </CardContent>
-            </Card>
-
-            {/* Refund */}
-            <Card>
-              <CardHeader className="text-center">
-                <CardTitle>Refund</CardTitle>
-              </CardHeader>
-
-              <CardContent className="space-y-3">
-
-                {/* 혼합 계정 안내 */}
-                {refundableGroups.some(g => g[0]?.paymentIntentId) &&
-                  refundableGroups.some(g => g[0]?.purchaseToken) && (
-                    <div className="text-xs text-center border rounded p-2 bg-yellow-50 text-gray-600">
-                      Card purchases can be refunded here.<br />
-                      Google Play purchases must be refunded through Google Play.
+                        <button
+                          type="button"
+                          className="rounded border px-2 py-1 disabled:opacity-50"
+                          onClick={() => setCouponPage((p) => Math.min(couponTotalPages, p + 1))}
+                          disabled={safeCouponPage === couponTotalPages}
+                          aria-label="Next page"
+                        >
+                          {">"}
+                        </button>
+                      </div>
                     </div>
                   )}
 
-                <Button
-                  variant="outline"
-                  className="w-full"
-                  disabled={loading || refundPreviewOpen}
-                  onClick={handleRefundCheck}
-                >
-                  Refund Eligible Purchases
-                </Button>
+                  {pageCoupons.map((c, idx) => {
+                    const status = getCouponStatus(c, userId!);
+                    const usedAt = c.used ? formatUsedAt(c.usedAt) : "";
+                    const usedBook = formatUsedBook(c);
 
-                {refundPreviewOpen && canRefund && (
-                  <div className="border rounded p-3 text-center space-y-2 bg-gray-50">
-
-                    <div className="text-sm font-semibold">
-                      Refund available
-                    </div>
-
-                    <div className="text-xs text-gray-600">
-                      {refundablePurchaseCount} purchase
-                      {refundablePurchaseCount > 1 ? "s" : ""} ({refundableCouponCount} coupons)
-                    </div>
-
-                    <div className="text-xs text-gray-500">
-                      Do you want to proceed with the refund?
-                    </div>
-
-                    <div className="flex gap-2 pt-2">
-                      <Button className="w-full" onClick={requestRefund}>
-                        Confirm Refund
-                      </Button>
-
-                      <Button
-                        variant="outline"
-                        className="w-full"
-                        onClick={() => setRefundPreviewOpen(false)}
+                    return (
+                      <div
+                        key={`${c.code}-${idx}`}
+                        className="flex justify-between rounded border px-3 py-2 text-sm"
                       >
-                        Cancel
-                      </Button>
+                        <button
+                          type="button"
+                          onClick={() => copyToClipboard(c.code)}
+                          className="text-left hover:underline"
+                          title="Click to copy"
+                        >
+                          {c.code}
+                        </button>
+
+                        <div style={{ color: status.color, textAlign: "right" }}>
+                          {status.text}
+                          {c.used && usedAt ? ` · ${usedAt}` : ""}
+                          {c.used && usedBook ? (
+                            <div style={{ fontSize: 11, color: "#777" }}>{usedBook}</div>
+                          ) : null}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* RIGHT COLUMN */}
+            <div className="space-y-6">
+              {/* Add textbook */}
+              <Card id="add-textbook-section">
+                <CardHeader>
+                  <CardTitle>Add a textbook</CardTitle>
+                </CardHeader>
+
+                <CardContent className="space-y-4">
+
+                  <div>
+                    <div className="text-sm font-semibold mb-1">
+                      Language you want to learn
                     </div>
+                    <select
+                      value={targetLang}
+                      onChange={(e) => {
+                        const v = e.target.value;
+                        setTargetLang(v);
+                        localStorage.setItem("ml_target_lang", v);
+                      }}
+                      className="block w-full rounded border px-3 py-2"
+                    >
+                      {LANGUAGES.map((l) => (
+                        <option key={l.code} value={l.code}>
+                          {l.label}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <select
+                    value={book}
+                    onChange={(e) => {
+                      const next = e.target.value;
+                      setBook(next);
+                      setLevel(SERIES_CONFIG[next]?.hasLevel ? "a1" : "");
+                    }}
+                    className="block w-full rounded border px-3 py-2"
+                  >
+                    <option value="">Select textbook</option>
+                    {Object.entries(SERIES_CONFIG).map(([k, v]) => (
+                      <option key={k} value={k}>
+                        {v.label}
+                      </option>
+                    ))}
+                  </select>
+
+                  {book && SERIES_CONFIG[book].hasLevel && (
+                    <select
+                      value={level}
+                      onChange={(e) => setLevel(e.target.value)}
+                      className="block w-full rounded border px-3 py-2"
+                    >
+                      {LEVELS.map((l) => (
+                        <option key={l} value={l.toLowerCase()}>
+                          {l}
+                        </option>
+                      ))}
+                    </select>
+                  )}
+
+                  <input
+                    value={coupon}
+                    onChange={(e) => setCoupon(e.target.value)}
+                    placeholder="Coupon code"
+                    className="block w-full rounded border px-3 py-2"
+                  />
+
+                  <div className="flex items-center justify-center h-full text-center">
+                    <p className="text-xs text-gray-500 leading-relaxed">
+                      1 coupon = 30-day access
+                      <br />Coupons can be shared with others.
+                      <br /> However, ManyLangs cannot individually track
+                      <br />whether a shared coupon has been used.
+                    </p>
+                  </div>
+
+                  <div className="space-y-2">
+                    <div className="text-sm font-medium">Choose a plan</div>
+
+                    {(() => {
+                      const isMobileApp =
+                        typeof window !== "undefined" &&
+                        ((window as any).AndroidBridge || (window as any).webkit?.messageHandlers);
+
+                      const visiblePaymentOptions = isMobileApp
+                        ? PAYMENT_OPTIONS.filter(p => p.amount === "3" || p.amount === "5")
+                        : PAYMENT_OPTIONS;
+
+                      return (
+                        <>
+                          <select
+                            value={payAmount}
+                            onChange={(e) => setPayAmount(e.target.value as Amount)}
+                            className="block w-full rounded border px-3 py-2"
+                          >
+                            {visiblePaymentOptions.map((p) => (
+                              <option key={p.amount} value={p.amount}>
+                                {p.label} — {p.desc}
+                              </option>
+                            ))}
+                          </select>
+
+                          <div className="text-xs text-gray-500 space-y-1">
+                            {visiblePaymentOptions.map((p) => (
+                              <div key={p.amount}>
+                                {p.label} → {p.coupons} coupons
+                              </div>
+                            ))}
+                          </div>
+                        </>
+                      );
+                    })()}
+                  </div>
+
+                  {error && <p className="text-sm text-red-600">{error}</p>}
+
+                  <div className="space-y-2 pt-2">
+
+                    <button
+                      onClick={activateCoupon}
+                      disabled={loading}
+                      className="w-full rounded bg-black text-white py-2 text-sm font-medium"
+                    >
+                      {loading
+                        ? "Processing..."
+                        : `Add ${LANGUAGES.find(l => l.code === targetLang)?.label} textbook`}
+                    </button>
+
+                    {(() => {
+                      const isAndroid =
+                        typeof window !== "undefined" && (window as any).AndroidBridge;
+                      const isIOS =
+                        typeof window !== "undefined" && (window as any).webkit?.messageHandlers;
+
+                      return (
+                        <>
+                          <button
+                            onClick={startPayment}
+                            disabled={loading}
+                            className="w-full rounded bg-black text-white py-2 text-sm font-medium"
+                          >
+                            {isAndroid
+                              ? "Buy with Google Play"
+                              : isIOS
+                                ? "Buy with Apple"
+                                : "Buy coupons using your card"}
+                          </button>
+                        </>
+                      );
+                    })()}
 
                   </div>
-                )}
 
-                {!canRefund && (
-                  <div className="text-xs text-gray-400 text-center">
-                    Refund unavailable (already used or already refunded)
+                </CardContent>
+              </Card>
+
+              {/* Refund */}
+              <Card>
+                <CardHeader className="text-center">
+                  <CardTitle>Refund</CardTitle>
+                </CardHeader>
+
+                <CardContent className="space-y-3">
+
+                  {/* 혼합 계정 안내 */}
+                  {refundableGroups.some(g => g[0]?.paymentIntentId) &&
+                    refundableGroups.some(g => g[0]?.purchaseToken) && (
+                      <div className="text-xs text-center border rounded p-2 bg-yellow-50 text-gray-600">
+                        Card purchases can be refunded here.<br />
+                        Google Play purchases must be refunded through Google Play.
+                      </div>
+                    )}
+
+                  <Button
+                    variant="outline"
+                    className="w-full"
+                    disabled={loading || refundPreviewOpen}
+                    onClick={handleRefundCheck}
+                  >
+                    Refund Eligible Purchases
+                  </Button>
+
+                  {refundPreviewOpen && canRefund && (
+                    <div className="border rounded p-3 text-center space-y-2 bg-gray-50">
+
+                      <div className="text-sm font-semibold">
+                        Refund available
+                      </div>
+
+                      <div className="text-xs text-gray-600">
+                        {refundablePurchaseCount} purchase
+                        {refundablePurchaseCount > 1 ? "s" : ""} ({refundableCouponCount} coupons)
+                      </div>
+
+                      <div className="text-xs text-gray-500">
+                        Do you want to proceed with the refund?
+                      </div>
+
+                      <div className="flex gap-2 pt-2">
+                        <Button className="w-full" onClick={requestRefund}>
+                          Confirm Refund
+                        </Button>
+
+                        <Button
+                          variant="outline"
+                          className="w-full"
+                          onClick={() => setRefundPreviewOpen(false)}
+                        >
+                          Cancel
+                        </Button>
+                      </div>
+
+                    </div>
+                  )}
+
+                  {!canRefund && (
+                    <div className="text-xs text-gray-400 text-center">
+                      Refund unavailable (already used or already refunded)
+                    </div>
+                  )}
+
+                  <div className="text-xs text-gray-500 space-y-1 text-left">
+                    <div className="text-center font-extrabold text-red-500">
+                      Refund Policy
+                    </div>
+                    <div>• Refund not available if any coupon from the same purchase has been used</div>
                   </div>
-                )}
 
-                <div className="text-xs text-gray-500 space-y-1 text-left">
-                  <div className="text-center font-extrabold text-red-500">
-                    Refund Policy
-                  </div>
-                  <div>• Refund not available if any coupon from the same purchase has been used</div>
-                </div>
-
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </>
   );
 }
