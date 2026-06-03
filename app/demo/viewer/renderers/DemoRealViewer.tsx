@@ -325,7 +325,7 @@ export default function DemoRealViewer({ level, chapter }: Props) {
           <div style={{ flex: "1 1 400px" }}>
             {sentences.map((s: any, i: number) => {
               const key = `real-sentence-${i}`;
-              const targetText = s.texts?.target ?? "";
+              const targetText = s.texts?.[targetLang] ?? "";
               const studyText = s.texts?.[studyLang] ?? "";
 
               return (

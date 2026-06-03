@@ -285,8 +285,7 @@ export default function RealViewer({
 
               {sentences.map((s, i) => {
 
-                const targetText =
-                  s.texts?.target ?? "";
+                const targetText = s.texts?.[targetLang] ?? "";
 
                 const studyText =
                   s.texts?.[studyLang] ?? "";
