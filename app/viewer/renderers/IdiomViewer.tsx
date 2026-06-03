@@ -171,12 +171,26 @@ export default function IdiomViewer({
 
       {status === "ready" && (
         <>
-
           <IdiomAudioController
             lang={targetLang}
             level={level}
             chapter={chapter}
           />
+
+          {/* Study Lang */}
+          <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
+            {ALL_STUDY_LANGS
+              .filter((l) => l !== targetLang)
+              .map((l) => (
+                <button
+                  key={l}
+                  style={buttonStyle(studyLang === l)}
+                  onClick={() => setStudyLang(l)}
+                >
+                  {l.toUpperCase()}
+                </button>
+              ))}
+          </div>
 
           <div
             style={{
@@ -241,20 +255,6 @@ export default function IdiomViewer({
                 {c}
               </Link>
             ))}
-          </div>
-
-          <div style={{ display: "flex", gap: 8, marginBottom: 32 }}>
-            {ALL_STUDY_LANGS
-              .filter((l) => l !== targetLang)
-              .map((l) => (
-                <button
-                  key={l}
-                  style={buttonStyle(studyLang === l)}
-                  onClick={() => setStudyLang(l)}
-                >
-                  {l.toUpperCase()}
-                </button>
-              ))}
           </div>
 
           {blocks.map((block, idx) => (

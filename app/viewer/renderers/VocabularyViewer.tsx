@@ -175,6 +175,21 @@ export default function VocabularyViewer({
             chapter={chapter}
           />
 
+          {/* Study Lang */}
+          <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
+            {ALL_STUDY_LANGS
+              .filter((l) => l !== targetLang)
+              .map((l) => (
+                <button
+                  key={l}
+                  style={buttonStyle(studyLang === l)}
+                  onClick={() => setStudyLang(l)}
+                >
+                  {l.toUpperCase()}
+                </button>
+              ))}
+          </div>
+
           {/* Prev Next */}
 
           <div
@@ -219,22 +234,6 @@ export default function VocabularyViewer({
                 {c}
               </Link>
             ))}
-          </div>
-
-          {/* Study Lang */}
-
-          <div style={{ display: "flex", gap: 8, marginBottom: 32 }}>
-            {ALL_STUDY_LANGS
-              .filter((l) => l !== targetLang)
-              .map((l) => (
-                <button
-                  key={l}
-                  style={buttonStyle(studyLang === l)}
-                  onClick={() => setStudyLang(l)}
-                >
-                  {l.toUpperCase()}
-                </button>
-              ))}
           </div>
 
           {/* Vocabulary */}
