@@ -268,7 +268,7 @@ export default function RealViewer({
             }}
           >
 
-            <div style={{ position: "sticky", top: 60, alignSelf: "start" }}>
+            <div style={{ alignSelf: "start" }}>
               {imageUrl && (
                 <img
                   src={imageUrl}
