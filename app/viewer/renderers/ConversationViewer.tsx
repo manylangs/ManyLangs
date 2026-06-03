@@ -169,6 +169,8 @@ export default function ConversationViewer({
             chapter={chapter}
           />
 
+          <div style={{ height: 120 }} />
+
           {/* 학습언어 선택 */}
           <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
             {ALL_STUDY_LANGS.filter((l) => l !== targetLang).map((l) => (
