@@ -14,7 +14,7 @@ export default function RealAudioController({ src }: Props) {
       <div
         style={{
           position: "sticky",
-          top: 0,
+          top: 100,
           zIndex: 900,
           background: "#fff",
           paddingTop: 8,
