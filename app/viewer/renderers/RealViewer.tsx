@@ -179,7 +179,7 @@ export default function RealViewer({
   }, [targetLang, level, chapter]);
 
   return (
-    <div style={{ maxWidth: "100%", margin: "0 auto", padding: 24 }}>
+    <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
 
       {status === "loading" && (
         <div style={{ padding: 12, color: "#666" }}>
