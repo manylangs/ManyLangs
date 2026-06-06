@@ -35,7 +35,14 @@ export default function RevenuePage() {
         })
 
         const json = await res.json()
-        setData(json.monthlyRevenue || [])
+        setData(
+  (json.monthlyRevenue || []).map((m: any) => ({
+    month: m.month,
+    revenue: m.amount / 100,
+    refund: 0,
+    net: m.amount / 100,
+  }))
+)
       } catch (e) {
         console.error(e)
         setData([])
