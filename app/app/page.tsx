@@ -70,7 +70,7 @@ export default function HomePage() {
             </a>
 
             <a href="/logout">
-              <button style={btnSecondary}>Logout</button>
+              <button style={btnSecondary}>Log out</button>
             </a>
 
             <a href="/delete-account">

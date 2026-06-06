@@ -2,6 +2,8 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Link from "next/link";
+
 import {
   BarChart,
   Bar,
@@ -53,6 +55,11 @@ export default function RevenuePage() {
 
   return (
     <div style={{ padding: 20 }}>
+      <div style={{ marginBottom: 20 }}>
+        <Link href="/select-books">
+          <button style={{ marginRight: 10 }}>📚← Back to Library</button>
+        </Link>
+      </div>
       <h1 style={{ fontSize: 24, marginBottom: 20 }}>
         Revenue Dashboard
       </h1>
