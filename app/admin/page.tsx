@@ -137,7 +137,7 @@ export default function AdminPage() {
               <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
                 📅 {new Date(p.created * 1000).toLocaleDateString("ko-KR")}
                 &nbsp;|&nbsp;
-                🆔 <span style={{ fontFamily: "monospace" }}>{p.id}</span>
+                📧 <span style={{ fontFamily: "monospace" }}>{p.payment_method?.billing_details?.email || p.id}</span>
                 &nbsp;|&nbsp;
                 🌍 {p.payment_method?.billing_details?.address?.country || p.currency?.toUpperCase() || "-"}
               </div>
