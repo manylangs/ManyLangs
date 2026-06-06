@@ -477,10 +477,11 @@ export default function SelectBooksPage() {
     if (loading) return;
 
     if (typeof window !== "undefined") {
-      if ((window as any).AndroidBridge) {
+      if ((window as any).AndroidBridge || navigator.userAgent.includes("ManyLangsApp/Android")) {
         const productId = payAmount === "3" ? "coupon_pack_2" : "coupon_pack_4";
-        console.log("Android IAP request:", productId);
-        (window as any).AndroidBridge.requestPurchase(productId);
+        if ((window as any).AndroidBridge) {
+          (window as any).AndroidBridge.requestPurchase(productId);
+        }
         return;
       }
 
@@ -1163,7 +1164,9 @@ export default function SelectBooksPage() {
                     {(() => {
                       const isMobileApp =
                         typeof window !== "undefined" &&
-                        ((window as any).AndroidBridge || (window as any).webkit?.messageHandlers);
+                        ((window as any).AndroidBridge ||
+                          (window as any).webkit?.messageHandlers ||
+                          navigator.userAgent.includes("ManyLangsApp/Android"));
 
                       const visiblePaymentOptions = isMobileApp
                         ? PAYMENT_OPTIONS.filter(p => p.amount === "3" || p.amount === "5")
@@ -1210,8 +1213,10 @@ export default function SelectBooksPage() {
                     </button>
 
                     {(() => {
-                      const isAndroid =
-                        typeof window !== "undefined" && (window as any).AndroidBridge;
+                      const isAndroid = typeof window !== "undefined" && (
+                        (window as any).AndroidBridge ||
+                        navigator.userAgent.includes("ManyLangsApp/Android")
+                      );
                       const isIOS =
                         typeof window !== "undefined" && (window as any).webkit?.messageHandlers;
 
