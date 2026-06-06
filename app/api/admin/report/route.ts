@@ -32,6 +32,7 @@ export async function GET(req: NextRequest) {
     const payments = await stripe.paymentIntents.list({
       limit: 100,
       created: createdFilter,
+      expand: ['data.payment_method'],
     })
 
     const refunds = await stripe.refunds.list({

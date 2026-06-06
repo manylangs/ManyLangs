@@ -139,7 +139,7 @@ export default function AdminPage() {
                 &nbsp;|&nbsp;
                 🆔 <span style={{ fontFamily: "monospace" }}>{p.id}</span>
                 &nbsp;|&nbsp;
-                🌍 {p.payment_method_details?.card?.country || p.currency?.toUpperCase() || "-"}
+                🌍 {p.payment_method?.card?.country || p.currency?.toUpperCase() || "-"}
               </div>
 
               <div style={{ fontSize: 12, color: "#666", marginTop: 4 }}>
