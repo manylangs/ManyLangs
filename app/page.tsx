@@ -164,7 +164,11 @@ export default function LandingPage() {
               {!isPWA &&
                 !(
                   typeof window !== "undefined" &&
-                  (window as any).webkit?.messageHandlers
+                  (
+                    (window as any).webkit?.messageHandlers ||
+                    (window as any).AndroidBridge ||
+                    navigator.userAgent.includes("ManyLangsApp/Android")
+                  )
                 ) && (
                   <>
                     <button
