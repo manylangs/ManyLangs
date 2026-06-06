@@ -38,6 +38,7 @@ export async function GET(req: NextRequest) {
     const refunds = await stripe.refunds.list({
       limit: 100,
       created: createdFilter,
+      expand: ['data.charge'],
     })
 
     const filteredPayments = payments.data.filter(

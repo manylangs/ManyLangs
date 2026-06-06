@@ -181,7 +181,7 @@ export default function AdminPage() {
               <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
                 📅 {new Date(r.created * 1000).toLocaleDateString("ko-KR")}
                 &nbsp;|&nbsp;
-                🆔 <span style={{ fontFamily: "monospace" }}>{r.id.slice(0, 8)}...{r.id.slice(-4)}</span>
+                📧 <span style={{ fontFamily: "monospace" }}>{(r as any).charge?.billing_details?.email || r.id.slice(0, 8) + "..." + r.id.slice(-4)}</span>
               </div>
             </div>
           ))}
