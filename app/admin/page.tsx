@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-
+import Link from "next/link";
 // ===== [START] language map =====
 const LANG_MAP: Record<string, string> = {
   korean: "KR",
@@ -81,15 +81,13 @@ export default function AdminPage() {
 
   return (
     <div style={{ padding: 20 }}>
+
+      <div style={{ marginBottom: 20 }}>
+        <Link href="/select-books">
+          <button style={{ marginRight: 10 }}>📚← Back to Library</button>
+        </Link>
+      </div>
       <h1 style={{ fontSize: 24, marginBottom: 20 }}>Admin Dashboard</h1>
-
-      <button
-        onClick={() => window.location.href = "/select-books"}
-        style={{ marginBottom: 20 }}
-      >
-        ← Back to Library
-      </button>
-
       {/* 카드 */}
       <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
         <Card title="Total Revenue" value={data.totalRevenue} />
@@ -129,11 +127,20 @@ export default function AdminPage() {
           .slice(0, visiblePayments)
           .map((p, i) => (
             <div key={p.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
-              
+
               💳 {(p.amount_received / 100).toLocaleString("en-US", {
                 style: "currency",
                 currency: "USD",
               })} | {p.status}
+
+              {/* 날짜 + ID + 국가 */}
+              <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
+                📅 {new Date(p.created * 1000).toLocaleDateString("ko-KR")}
+                &nbsp;|&nbsp;
+                🆔 <span style={{ fontFamily: "monospace" }}>{p.id}</span>
+                &nbsp;|&nbsp;
+                🌍 {p.payment_method_details?.card?.country || p.currency?.toUpperCase() || "-"}
+              </div>
 
               <div style={{ fontSize: 12, color: "#666", marginTop: 4 }}>
                 coupons: {data.paymentMap?.[p.id]?.coupons?.length || 0} | licenses: {data.paymentMap?.[p.id]?.licenses?.length || 0}
@@ -169,6 +176,13 @@ export default function AdminPage() {
                 style: "currency",
                 currency: "USD",
               })}
+
+              {/* 환불 날짜 + ID */}
+              <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
+                📅 {new Date(r.created * 1000).toLocaleDateString("ko-KR")}
+                &nbsp;|&nbsp;
+                🆔 <span style={{ fontFamily: "monospace" }}>{r.id}</span>
+              </div>
             </div>
           ))}
       </div>
@@ -203,9 +217,9 @@ function Card({ title, value }: { title: string; value: number }) {
         {isCount
           ? value.toLocaleString()
           : (value / 100).toLocaleString("en-US", {
-              style: "currency",
-              currency: "USD",
-            })}
+            style: "currency",
+            currency: "USD",
+          })}
       </div>
     </div>
   )
