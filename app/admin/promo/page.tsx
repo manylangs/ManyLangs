@@ -4,36 +4,47 @@ import { useState } from "react";
 import Link from "next/link";
 
 const ADMIN_EMAIL = process.env.NEXT_PUBLIC_ADMIN_EMAIL!;
-const PAGE_SIZE = 100;
 const DAY_MS = 1000 * 60 * 60 * 24;
 
-type PromoCoupon = {
+const REGIONS = ["BR", "MX", "PH", "US", "FR", "KR", "CO", "AR"];
+
+type Campaign = {
   code: string;
-  used: boolean;
-  createdAtMs: number;
-  activationDeadline: number;
+  region: string;
+  dateStr: string;
+  startAt: number;
+  endAt: number;
   durationDays: number;
-  usedBy?: string;
-  usedAt?: number;
+  usedCount: number;
+  createdAtMs: number;
+};
+
+type StatsData = {
+  campaigns: Campaign[];
+  regionStats: Record<string, number>;
+  dateStats: Record<string, number>;
+  totalActivations: number;
 };
 
 export default function AdminPromoPage() {
-  const [count, setCount] = useState(50);
+  // 생성
+  const [region, setRegion] = useState("BR");
+  const [durationDays, setDurationDays] = useState(10);
   const [generating, setGenerating] = useState(false);
-  const [newCodes, setNewCodes] = useState<string[]>([]);
-
-  const [coupons, setCoupons] = useState<PromoCoupon[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [page, setPage] = useState(1);
-  const [fetched, setFetched] = useState(false);
+  const [newCode, setNewCode] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
+
+  // 통계
+  const [stats, setStats] = useState<StatsData | null>(null);
+  const [loadingStats, setLoadingStats] = useState(false);
+
+  const now = Date.now();
 
   // 생성
   async function handleGenerate() {
     if (generating) return;
-
     setGenerating(true);
-    setNewCodes([]);
+    setNewCode(null);
 
     try {
       const res = await fetch("/api/admin/promo/create", {
@@ -42,7 +53,7 @@ export default function AdminPromoPage() {
           "Content-Type": "application/json",
           "x-admin-email": ADMIN_EMAIL,
         },
-        body: JSON.stringify({ count }),
+        body: JSON.stringify({ region, durationDays }),
       });
 
       const data = await res.json();
@@ -52,187 +63,67 @@ export default function AdminPromoPage() {
         return;
       }
 
-      setNewCodes(data.codes ?? []);
-
-      await fetchCoupons();
-    } catch (e) {
+      setNewCode(data.code);
+      await fetchStats();
+    } catch {
       alert("Network error");
     } finally {
       setGenerating(false);
     }
   }
 
-  // 목록 조회
-  async function fetchCoupons() {
-    setLoading(true);
-    setFetched(false);
-    setPage(1);
+  // 통계 조회
+  async function fetchStats() {
+    setLoadingStats(true);
 
     try {
-      const res = await fetch("/api/admin/promo/list", {
-        headers: {
-          "x-admin-email": ADMIN_EMAIL,
-        },
+      const res = await fetch("/api/admin/promo/stats", {
+        headers: { "x-admin-email": ADMIN_EMAIL },
       });
 
       const data = await res.json();
 
       if (res.ok) {
-        setCoupons(data.coupons ?? []);
-        setFetched(true);
+        setStats(data);
       } else {
-        alert(data.error || "Failed to fetch");
+        alert(data.error || "Failed to fetch stats");
       }
     } catch {
       alert("Network error");
     } finally {
-      setLoading(false);
+      setLoadingStats(false);
     }
   }
 
-  // 전체 복사
-  async function copyAll(list: string[]) {
-    const text = list.join("\n");
-
+  // 복사
+  async function copyCode(code: string) {
     try {
-      await navigator.clipboard.writeText(text);
+      await navigator.clipboard.writeText(code);
     } catch {
       const ta = document.createElement("textarea");
-
-      ta.value = text;
-
+      ta.value = code;
       document.body.appendChild(ta);
-
       ta.select();
-
       document.execCommand("copy");
-
       document.body.removeChild(ta);
     }
-
     setCopied(true);
-
     setTimeout(() => setCopied(false), 2000);
   }
 
-  // TXT 다운로드
-  function downloadCSV(list: PromoCoupon[]) {
-    const now = new Date();
-
-    const yy = String(now.getFullYear()).slice(-2);
-    const mm = String(now.getMonth() + 1).padStart(2, "0");
-    const dd = String(now.getDate()).padStart(2, "0");
-
-    const hh = String(now.getHours()).padStart(2, "0");
-    const min = String(now.getMinutes()).padStart(2, "0");
-    const ss = String(now.getSeconds()).padStart(2, "0");
-
-    const generatedAt =
-      `${now.getFullYear()}-` +
-      `${mm}-${dd} ` +
-      `${hh}:${min}:${ss}`;
-
-    const content = list
-      .map((c, index) => {
-        return `
-================================
-PROMO COUPON ${index + 1}
-================================
-
-code: ${c.code}
-
-used: ${c.used ? "used" : "unused"}
-
-createdAt: ${new Date(
-          c.createdAtMs
-        ).toLocaleString("en-US", {
-          year: "numeric",
-          month: "2-digit",
-          day: "2-digit",
-          hour: "2-digit",
-          minute: "2-digit",
-          second: "2-digit",
-          hour12: false,
-        })}
-
-activationDeadline: ${new Date(
-          c.activationDeadline
-        ).toLocaleString("en-US", {
-          year: "numeric",
-          month: "2-digit",
-          day: "2-digit",
-          hour: "2-digit",
-          minute: "2-digit",
-          second: "2-digit",
-          hour12: false,
-        })}
-
-durationDays: ${c.durationDays} days
-
-generatedAt: ${generatedAt}
-
-================================
-`;
-      })
-      .join("\n");
-
-    const blob = new Blob([content], {
-      type: "text/plain",
-    });
-
-    const url = URL.createObjectURL(blob);
-
-    const a = document.createElement("a");
-
-    a.href = url;
-
-    a.download =
-      `promo-coupons-` +
-      `${yy}${mm}${dd}-` +
-      `${hh}${min}${ss}.txt`;
-
-    a.click();
-
-    URL.revokeObjectURL(url);
-  }
-
-  // 페이지네이션
-  const totalPages = Math.ceil(coupons.length / PAGE_SIZE) || 1;
-
-  const paginated = coupons.slice(
-    (page - 1) * PAGE_SIZE,
-    page * PAGE_SIZE
-  );
-
-  const now = Date.now();
-
   return (
-    <div
-      style={{
-        padding: 24,
-        maxWidth: 900,
-        margin: "0 auto",
-      }}
-    >
+    <div style={{ padding: 24, maxWidth: 900, margin: "0 auto" }}>
       <div style={{ marginBottom: 20 }}>
         <Link href="/select-books">
-          <button style={{ marginRight: 10 }}>
-            📚← Back to Library
-          </button>
+          <button style={{ marginRight: 10 }}>📚← Back to Library</button>
         </Link>
       </div>
 
-      <h1
-        style={{
-          fontSize: 22,
-          fontWeight: "bold",
-          marginBottom: 24,
-        }}
-      >
-        Free Promo Coupons
+      <h1 style={{ fontSize: 22, fontWeight: "bold", marginBottom: 24 }}>
+        Promo Campaign Manager
       </h1>
 
-      {/* 생성 영역 */}
+      {/* ===== 생성 섹션 ===== */}
       <div
         style={{
           border: "1px solid #e5e7eb",
@@ -241,171 +132,109 @@ generatedAt: ${generatedAt}
           marginBottom: 32,
         }}
       >
-        <h2
-          style={{
-            fontSize: 16,
-            fontWeight: 600,
-            marginBottom: 16,
-          }}
-        >
-          Generate Coupons
+        <h2 style={{ fontSize: 16, fontWeight: 600, marginBottom: 16 }}>
+          Generate Campaign Code
         </h2>
 
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 12,
-          }}
-        >
-          <label
+        <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
+          <label style={{ fontSize: 14, color: "#6b7280" }}>Region</label>
+          <select
+            value={region}
+            onChange={(e) => setRegion(e.target.value)}
             style={{
-              fontSize: 14,
-              color: "#6b7280",
-            }}
-          >
-            Count
-          </label>
-
-          <input
-            type="number"
-            min={1}
-            max={200}
-            value={count}
-            onChange={(e) =>
-              setCount(Number(e.target.value))
-            }
-            style={{
-              width: 80,
               padding: "6px 10px",
               border: "1px solid #d1d5db",
               borderRadius: 6,
               fontSize: 14,
             }}
-          />
+          >
+            {REGIONS.map((r) => (
+              <option key={r} value={r}>{r}</option>
+            ))}
+          </select>
+
+          <label style={{ fontSize: 14, color: "#6b7280" }}>Duration</label>
+          <select
+            value={durationDays}
+            onChange={(e) => setDurationDays(Number(e.target.value))}
+            style={{
+              padding: "6px 10px",
+              border: "1px solid #d1d5db",
+              borderRadius: 6,
+              fontSize: 14,
+            }}
+          >
+            <option value={7}>7 days</option>
+            <option value={10}>10 days</option>
+            <option value={14}>14 days</option>
+          </select>
 
           <button
             onClick={handleGenerate}
             disabled={generating}
             style={{
               padding: "8px 20px",
-              background: generating
-                ? "#9ca3af"
-                : "#2563eb",
+              background: generating ? "#9ca3af" : "#2563eb",
               color: "white",
               border: "none",
               borderRadius: 6,
-              cursor: generating
-                ? "not-allowed"
-                : "pointer",
+              cursor: generating ? "not-allowed" : "pointer",
               fontSize: 14,
               fontWeight: 600,
             }}
           >
-            {generating
-              ? "Generating..."
-              : "Generate"}
+            {generating ? "Generating..." : "Generate"}
           </button>
         </div>
 
-        <p
-          style={{
-            fontSize: 12,
-            color: "#9ca3af",
-            marginTop: 8,
-          }}
-        >
-          Activation deadline: 7 days ·
-          Usage period: 14 days ·
-          Max 200 per batch
+        <p style={{ fontSize: 12, color: "#9ca3af", marginTop: 8 }}>
+          Format: PROMO-MMDD-REGION · Unlimited users · Date-based expiry
         </p>
 
         {/* 생성된 코드 */}
-        {newCodes.length > 0 && (
-          <div style={{ marginTop: 20 }}>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 12,
-                marginBottom: 10,
-              }}
-            >
-              <span
-                style={{
-                  fontSize: 14,
-                  fontWeight: 600,
-                  color: "#16a34a",
-                }}
-              >
-                ✓ Generated {newCodes.length} codes
-              </span>
-
-              <button
-                onClick={() => copyAll(newCodes)}
-                style={{
-                  padding: "4px 12px",
-                  fontSize: 13,
-                  border: "1px solid #d1d5db",
-                  borderRadius: 5,
-                  cursor: "pointer",
-                  background: copied
-                    ? "#dcfce7"
-                    : "white",
-                }}
-              >
-                {copied ? "Copied!" : "Copy All"}
-              </button>
-
-              <button
-                onClick={() =>
-                  downloadCSV(
-                    newCodes.map((code) => ({
-                      code,
-                      used: false,
-                      createdAtMs: now,
-                      activationDeadline:
-                        now +
-                        7 * DAY_MS,
-                      durationDays: 14,
-                    }))
-                  )
-                }
-                style={{
-                  padding: "4px 12px",
-                  fontSize: 13,
-                  border: "1px solid #d1d5db",
-                  borderRadius: 5,
-                  cursor: "pointer",
-                  background: "white",
-                }}
-              >
-                Export TXT
-              </button>
-            </div>
-
-            <div
+        {newCode && (
+          <div
+            style={{
+              marginTop: 16,
+              padding: 16,
+              background: "#f0fdf4",
+              border: "1px solid #bbf7d0",
+              borderRadius: 8,
+              display: "flex",
+              alignItems: "center",
+              gap: 16,
+            }}
+          >
+            <span
               style={{
                 fontFamily: "monospace",
-                fontSize: 13,
-                background: "#f9fafb",
-                border: "1px solid #e5e7eb",
-                borderRadius: 6,
-                padding: 12,
-                maxHeight: 300,
-                overflowY: "auto",
-                lineHeight: 1.8,
+                fontSize: 20,
+                fontWeight: 700,
+                color: "#16a34a",
+                letterSpacing: 2,
               }}
             >
-              {newCodes.map((c) => (
-                <div key={c}>{c}</div>
-              ))}
-            </div>
+              {newCode}
+            </span>
+
+            <button
+              onClick={() => copyCode(newCode)}
+              style={{
+                padding: "6px 14px",
+                fontSize: 13,
+                border: "1px solid #d1d5db",
+                borderRadius: 5,
+                cursor: "pointer",
+                background: copied ? "#dcfce7" : "white",
+              }}
+            >
+              {copied ? "Copied!" : "Copy"}
+            </button>
           </div>
         )}
       </div>
 
-      {/* 전체 목록 */}
+      {/* ===== 통계 섹션 ===== */}
       <div>
         <div
           style={{
@@ -415,291 +244,192 @@ generatedAt: ${generatedAt}
             marginBottom: 16,
           }}
         >
-          <h2
-            style={{
-              fontSize: 16,
-              fontWeight: 600,
-            }}
-          >
-            Active Promo Coupons
-
-            {fetched && (
-              <span
-                style={{
-                  fontSize: 13,
-                  color: "#6b7280",
-                  marginLeft: 8,
-                }}
-              >
-                ({coupons.length} total)
+          <h2 style={{ fontSize: 16, fontWeight: 600 }}>
+            Campaign Stats
+            {stats && (
+              <span style={{ fontSize: 13, color: "#6b7280", marginLeft: 8 }}>
+                (Total: {stats.totalActivations} activations)
               </span>
             )}
           </h2>
 
-          <div
+          <button
+            onClick={fetchStats}
+            disabled={loadingStats}
             style={{
-              display: "flex",
-              gap: 8,
+              padding: "6px 14px",
+              fontSize: 13,
+              border: "1px solid #d1d5db",
+              borderRadius: 5,
+              cursor: loadingStats ? "not-allowed" : "pointer",
+              background: "white",
             }}
           >
-            <button
-              onClick={fetchCoupons}
-              disabled={loading}
-              style={{
-                padding: "6px 14px",
-                fontSize: 13,
-                border: "1px solid #d1d5db",
-                borderRadius: 5,
-                cursor: loading
-                  ? "not-allowed"
-                  : "pointer",
-                background: "white",
-              }}
-            >
-              {loading
-                ? "Loading..."
-                : "Refresh"}
-            </button>
-
-            {fetched &&
-              coupons.length > 0 && (
-                <button
-                  onClick={() =>
-                    downloadCSV(coupons)
-                  }
-                  style={{
-                    padding: "6px 14px",
-                    fontSize: 13,
-                    border:
-                      "1px solid #d1d5db",
-                    borderRadius: 5,
-                    cursor: "pointer",
-                    background: "white",
-                  }}
-                >
-                  Export TXT
-                </button>
-              )}
-          </div>
+            {loadingStats ? "Loading..." : "Refresh Stats"}
+          </button>
         </div>
 
-        {!fetched && !loading && (
-          <p
-            style={{
-              fontSize: 14,
-              color: "#9ca3af",
-            }}
-          >
-            Click Refresh to load coupons.
+        {!stats && !loadingStats && (
+          <p style={{ fontSize: 14, color: "#9ca3af" }}>
+            Click Refresh Stats to load data.
           </p>
         )}
 
-        {fetched &&
-          coupons.length === 0 && (
-            <p
+        {stats && (
+          <>
+            {/* 지역별 요약 */}
+            <div
               style={{
-                fontSize: 14,
-                color: "#9ca3af",
+                display: "flex",
+                gap: 12,
+                flexWrap: "wrap",
+                marginBottom: 24,
               }}
             >
-              No active promo coupons.
-            </p>
-          )}
-
-        {fetched &&
-          coupons.length > 0 && (
-            <>
-              {totalPages > 1 && (
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 12,
-                    marginBottom: 12,
-                  }}
-                >
-                  <button
-                    onClick={() =>
-                      setPage((p) =>
-                        Math.max(1, p - 1)
-                      )
-                    }
-                    disabled={page === 1}
-                  >
-                    ←
-                  </button>
-
-                  <span
+              {Object.entries(stats.regionStats)
+                .sort((a, b) => b[1] - a[1])
+                .map(([r, count]) => (
+                  <div
+                    key={r}
                     style={{
+                      padding: "12px 20px",
+                      border: "1px solid #e5e7eb",
+                      borderRadius: 8,
+                      minWidth: 100,
+                      textAlign: "center",
+                    }}
+                  >
+                    <div style={{ fontSize: 12, color: "#6b7280" }}>{r}</div>
+                    <div style={{ fontSize: 22, fontWeight: 700 }}>{count}</div>
+                  </div>
+                ))}
+            </div>
+
+            {/* 날짜별 요약 */}
+            <div style={{ marginBottom: 24 }}>
+              <h3 style={{ fontSize: 14, fontWeight: 600, marginBottom: 8 }}>
+                By Date
+              </h3>
+              {Object.entries(stats.dateStats)
+                .sort((a, b) => b[0].localeCompare(a[0]))
+                .map(([date, count]) => (
+                  <div
+                    key={date}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 12,
+                      marginBottom: 6,
+                      fontSize: 13,
+                    }}
+                  >
+                    <span style={{ color: "#6b7280", width: 50 }}>
+                      {date.slice(0, 2)}/{date.slice(2)}
+                    </span>
+                    <div
+                      style={{
+                        height: 16,
+                        background: "#2563eb",
+                        borderRadius: 4,
+                        width: Math.max(4, (count / Math.max(...Object.values(stats.dateStats))) * 200),
+                      }}
+                    />
+                    <span style={{ fontWeight: 600 }}>{count}</span>
+                  </div>
+                ))}
+            </div>
+
+            {/* 캠페인 테이블 */}
+            <div
+              style={{
+                border: "1px solid #e5e7eb",
+                borderRadius: 8,
+                overflow: "hidden",
+              }}
+            >
+              <table style={{ width: "100%", borderCollapse: "collapse" }}>
+                <thead>
+                  <tr
+                    style={{
+                      background: "#f9fafb",
                       fontSize: 13,
                       color: "#6b7280",
                     }}
                   >
-                    Page {page} / {totalPages}
-                  </span>
+                    <th style={{ padding: "10px 16px", textAlign: "left" }}>Code</th>
+                    <th style={{ padding: "10px 16px", textAlign: "left" }}>Region</th>
+                    <th style={{ padding: "10px 16px", textAlign: "left" }}>Activations</th>
+                    <th style={{ padding: "10px 16px", textAlign: "left" }}>Status</th>
+                    <th style={{ padding: "10px 16px", textAlign: "left" }}>Expires</th>
+                  </tr>
+                </thead>
 
-                  <button
-                    onClick={() =>
-                      setPage((p) =>
-                        Math.min(
-                          totalPages,
-                          p + 1
-                        )
-                      )
-                    }
-                    disabled={
-                      page === totalPages
-                    }
-                  >
-                    →
-                  </button>
-                </div>
-              )}
+                <tbody>
+                  {stats.campaigns.map((c, i) => {
+                    const daysLeft = Math.ceil((c.endAt - now) / DAY_MS);
+                    const isActive = now < c.endAt;
 
-              <div
-                style={{
-                  border:
-                    "1px solid #e5e7eb",
-                  borderRadius: 8,
-                  overflow: "hidden",
-                }}
-              >
-                <table
-                  style={{
-                    width: "100%",
-                    borderCollapse:
-                      "collapse",
-                  }}
-                >
-                  <thead>
-                    <tr
-                      style={{
-                        background:
-                          "#f9fafb",
-                        fontSize: 13,
-                        color: "#6b7280",
-                      }}
-                    >
-                      <th
+                    return (
+                      <tr
+                        key={c.code}
                         style={{
-                          padding:
-                            "10px 16px",
-                          textAlign: "left",
+                          borderTop: i === 0 ? "none" : "1px solid #f3f4f6",
+                          fontSize: 13,
+                          background: isActive ? "white" : "#fafafa",
                         }}
                       >
-                        Code
-                      </th>
+                        <td
+                          style={{
+                            padding: "10px 16px",
+                            fontFamily: "monospace",
+                            fontWeight: 600,
+                          }}
+                        >
+                          {c.code}
+                        </td>
 
-                      <th
-                        style={{
-                          padding:
-                            "10px 16px",
-                          textAlign: "left",
-                        }}
-                      >
-                        Status
-                      </th>
-
-                      <th
-                        style={{
-                          padding:
-                            "10px 16px",
-                          textAlign: "left",
-                        }}
-                      >
-                        Expires
-                      </th>
-
-                      <th
-                        style={{
-                          padding:
-                            "10px 16px",
-                          textAlign: "left",
-                        }}
-                      >
-                        Created
-                      </th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    {paginated.map(
-                      (c, i) => {
-                        const daysLeft =
-                          Math.ceil(
-                            (c.activationDeadline -
-                              now) /
-                            DAY_MS
-                          );
-
-                        return (
-                          <tr
-                            key={c.code}
+                        <td style={{ padding: "10px 16px" }}>
+                          <span
                             style={{
-                              borderTop:
-                                i === 0
-                                  ? "none"
-                                  : "1px solid #f3f4f6",
-                              fontSize: 13,
+                              padding: "2px 8px",
+                              background: "#eff6ff",
+                              color: "#2563eb",
+                              borderRadius: 4,
+                              fontSize: 12,
+                              fontWeight: 600,
                             }}
                           >
-                            <td
-                              style={{
-                                padding:
-                                  "10px 16px",
-                                fontFamily:
-                                  "monospace",
-                                fontWeight: 600,
-                              }}
-                            >
-                              {c.code}
-                            </td>
+                            {c.region}
+                          </span>
+                        </td>
 
-                            <td
-                              style={{
-                                padding:
-                                  "10px 16px",
-                              }}
-                            >
-                              {c.used ? (
-                                <span>
-                                  Used
-                                </span>
-                              ) : (
-                                <span>
-                                  Unused
-                                </span>
-                              )}
-                            </td>
+                        <td style={{ padding: "10px 16px", fontWeight: 700 }}>
+                          {c.usedCount}
+                        </td>
 
-                            <td
-                              style={{
-                                padding:
-                                  "10px 16px",
-                              }}
-                            >
-                              {daysLeft}d left
-                            </td>
+                        <td style={{ padding: "10px 16px" }}>
+                          {isActive ? (
+                            <span style={{ color: "#16a34a", fontWeight: 600 }}>
+                              Active
+                            </span>
+                          ) : (
+                            <span style={{ color: "#9ca3af" }}>Expired</span>
+                          )}
+                        </td>
 
-                            <td
-                              style={{
-                                padding:
-                                  "10px 16px",
-                              }}
-                            >
-                              {new Date(
-                                c.createdAtMs
-                              ).toLocaleDateString()}
-                            </td>
-                          </tr>
-                        );
-                      }
-                    )}
-                  </tbody>
-                </table>
-              </div>
-            </>
-          )}
+                        <td style={{ padding: "10px 16px", color: "#6b7280" }}>
+                          {isActive
+                            ? `${daysLeft}d left`
+                            : new Date(c.endAt).toLocaleDateString()}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
