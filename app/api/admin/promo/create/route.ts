@@ -7,7 +7,16 @@ export const runtime = "nodejs";
 const DAY_MS = 1000 * 60 * 60 * 24;
 const ADMIN_EMAIL = process.env.NEXT_PUBLIC_ADMIN_EMAIL;
 
-const VALID_REGIONS = ["BR", "MX", "PH", "US", "FR", "KR", "CO", "AR"];
+const VALID_REGIONS = [
+  // 영어권
+  "US","GB","CA","AU","NZ","PH","NG","ZA","GH","KE","IN","SG","IE",
+  // 스페인어권
+  "MX","CO","AR","ES","PE","VE","CL","EC","GT","CU","BO","DO","HN","PY","SV","NI","CR","PA","UY",
+  // 포르투갈어권
+  "BR","PT","AO","MZ",
+  // 프랑스어권
+  "FR","BE","CH","SN","CI","CM","MG","BF",
+];
 
 export async function POST(req: Request) {
   const adminEmail = req.headers.get("x-admin-email");
@@ -38,13 +47,11 @@ export async function POST(req: Request) {
   const dd = String(d.getDate()).padStart(2, "0");
   const dateStr = `${mm}${dd}`;
 
-  // PROMO-0608-BR 형태
   const code = `PROMO-${dateStr}-${region}`;
 
   const startAt = now;
   const endAt = now + DAY_MS * durationDays;
 
-  // 중복 체크
   const existing = await db.collection("promoCampaigns").doc(code).get();
   if (existing.exists) {
     return NextResponse.json(

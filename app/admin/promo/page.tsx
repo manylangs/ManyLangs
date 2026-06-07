@@ -6,7 +6,56 @@ import Link from "next/link";
 const ADMIN_EMAIL = process.env.NEXT_PUBLIC_ADMIN_EMAIL!;
 const DAY_MS = 1000 * 60 * 60 * 24;
 
-const REGIONS = ["BR", "MX", "PH", "US", "FR", "KR", "CO", "AR"];
+const REGIONS = [
+  // 영어권
+  { code: "US", label: "US - United States" },
+  { code: "GB", label: "GB - United Kingdom" },
+  { code: "CA", label: "CA - Canada" },
+  { code: "AU", label: "AU - Australia" },
+  { code: "NZ", label: "NZ - New Zealand" },
+  { code: "PH", label: "PH - Philippines" },
+  { code: "NG", label: "NG - Nigeria" },
+  { code: "ZA", label: "ZA - South Africa" },
+  { code: "GH", label: "GH - Ghana" },
+  { code: "KE", label: "KE - Kenya" },
+  { code: "IN", label: "IN - India" },
+  { code: "SG", label: "SG - Singapore" },
+  { code: "IE", label: "IE - Ireland" },
+  // 스페인어권
+  { code: "MX", label: "MX - Mexico" },
+  { code: "CO", label: "CO - Colombia" },
+  { code: "AR", label: "AR - Argentina" },
+  { code: "ES", label: "ES - Spain" },
+  { code: "PE", label: "PE - Peru" },
+  { code: "VE", label: "VE - Venezuela" },
+  { code: "CL", label: "CL - Chile" },
+  { code: "EC", label: "EC - Ecuador" },
+  { code: "GT", label: "GT - Guatemala" },
+  { code: "CU", label: "CU - Cuba" },
+  { code: "BO", label: "BO - Bolivia" },
+  { code: "DO", label: "DO - Dominican Republic" },
+  { code: "HN", label: "HN - Honduras" },
+  { code: "PY", label: "PY - Paraguay" },
+  { code: "SV", label: "SV - El Salvador" },
+  { code: "NI", label: "NI - Nicaragua" },
+  { code: "CR", label: "CR - Costa Rica" },
+  { code: "PA", label: "PA - Panama" },
+  { code: "UY", label: "UY - Uruguay" },
+  // 포르투갈어권
+  { code: "BR", label: "BR - Brazil" },
+  { code: "PT", label: "PT - Portugal" },
+  { code: "AO", label: "AO - Angola" },
+  { code: "MZ", label: "MZ - Mozambique" },
+  // 프랑스어권
+  { code: "FR", label: "FR - France" },
+  { code: "BE", label: "BE - Belgium" },
+  { code: "CH", label: "CH - Switzerland" },
+  { code: "SN", label: "SN - Senegal" },
+  { code: "CI", label: "CI - Ivory Coast" },
+  { code: "CM", label: "CM - Cameroon" },
+  { code: "MG", label: "MG - Madagascar" },
+  { code: "BF", label: "BF - Burkina Faso" },
+];
 
 type Campaign = {
   code: string;
@@ -27,20 +76,17 @@ type StatsData = {
 };
 
 export default function AdminPromoPage() {
-  // 생성
   const [region, setRegion] = useState("BR");
   const [durationDays, setDurationDays] = useState(10);
   const [generating, setGenerating] = useState(false);
   const [newCode, setNewCode] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
 
-  // 통계
   const [stats, setStats] = useState<StatsData | null>(null);
   const [loadingStats, setLoadingStats] = useState(false);
 
   const now = Date.now();
 
-  // 생성
   async function handleGenerate() {
     if (generating) return;
     setGenerating(true);
@@ -72,7 +118,6 @@ export default function AdminPromoPage() {
     }
   }
 
-  // 통계 조회
   async function fetchStats() {
     setLoadingStats(true);
 
@@ -95,7 +140,6 @@ export default function AdminPromoPage() {
     }
   }
 
-  // 복사
   async function copyCode(code: string) {
     try {
       await navigator.clipboard.writeText(code);
@@ -146,10 +190,11 @@ export default function AdminPromoPage() {
               border: "1px solid #d1d5db",
               borderRadius: 6,
               fontSize: 14,
+              minWidth: 200,
             }}
           >
             {REGIONS.map((r) => (
-              <option key={r} value={r}>{r}</option>
+              <option key={r.code} value={r.code}>{r.label}</option>
             ))}
           </select>
 
@@ -191,7 +236,6 @@ export default function AdminPromoPage() {
           Format: PROMO-MMDD-REGION · Unlimited users · Date-based expiry
         </p>
 
-        {/* 생성된 코드 */}
         {newCode && (
           <div
             style={{
@@ -277,7 +321,6 @@ export default function AdminPromoPage() {
 
         {stats && (
           <>
-            {/* 지역별 요약 */}
             <div
               style={{
                 display: "flex",
@@ -288,24 +331,26 @@ export default function AdminPromoPage() {
             >
               {Object.entries(stats.regionStats)
                 .sort((a, b) => b[1] - a[1])
-                .map(([r, count]) => (
-                  <div
-                    key={r}
-                    style={{
-                      padding: "12px 20px",
-                      border: "1px solid #e5e7eb",
-                      borderRadius: 8,
-                      minWidth: 100,
-                      textAlign: "center",
-                    }}
-                  >
-                    <div style={{ fontSize: 12, color: "#6b7280" }}>{r}</div>
-                    <div style={{ fontSize: 22, fontWeight: 700 }}>{count}</div>
-                  </div>
-                ))}
+                .map(([r, count]) => {
+                  const label = REGIONS.find((x) => x.code === r)?.label ?? r;
+                  return (
+                    <div
+                      key={r}
+                      style={{
+                        padding: "12px 20px",
+                        border: "1px solid #e5e7eb",
+                        borderRadius: 8,
+                        minWidth: 140,
+                        textAlign: "center",
+                      }}
+                    >
+                      <div style={{ fontSize: 12, color: "#6b7280" }}>{label}</div>
+                      <div style={{ fontSize: 22, fontWeight: 700 }}>{count}</div>
+                    </div>
+                  );
+                })}
             </div>
 
-            {/* 날짜별 요약 */}
             <div style={{ marginBottom: 24 }}>
               <h3 style={{ fontSize: 14, fontWeight: 600, marginBottom: 8 }}>
                 By Date
@@ -339,7 +384,6 @@ export default function AdminPromoPage() {
                 ))}
             </div>
 
-            {/* 캠페인 테이블 */}
             <div
               style={{
                 border: "1px solid #e5e7eb",
@@ -368,6 +412,7 @@ export default function AdminPromoPage() {
                   {stats.campaigns.map((c, i) => {
                     const daysLeft = Math.ceil((c.endAt - now) / DAY_MS);
                     const isActive = now < c.endAt;
+                    const label = REGIONS.find((x) => x.code === c.region)?.label ?? c.region;
 
                     return (
                       <tr
@@ -399,7 +444,7 @@ export default function AdminPromoPage() {
                               fontWeight: 600,
                             }}
                           >
-                            {c.region}
+                            {label}
                           </span>
                         </td>
 
