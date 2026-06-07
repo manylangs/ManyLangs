@@ -54,7 +54,6 @@ export async function POST(req: Request) {
 
   const now = Date.now();
 
-  // ✅ PROMO-BR-001 형태면 promoCampaigns에서 처리
   const isPromoCampaign = /^PROMO-\d{4}-[A-Z]{2,3}$/.test(couponCode);
 
   if (isPromoCampaign) {
@@ -75,6 +74,18 @@ export async function POST(req: Request) {
       if (endAt > 0 && now > endAt) {
         return NextResponse.json(
           { error: "This promotional code has expired." },
+          { status: 400 }
+        );
+      }
+
+      // ✅ 계정당 프로모 5회 제한
+      const promoCheck = await db.collection("promoActivations")
+        .where("userId", "==", userId)
+        .get();
+
+      if (promoCheck.size >= 5) {
+        return NextResponse.json(
+          { error: "Promotion limit reached. Please purchase to continue." },
           { status: 400 }
         );
       }

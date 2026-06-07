@@ -52,14 +52,6 @@ export async function POST(req: Request) {
   const startAt = now;
   const endAt = now + DAY_MS * durationDays;
 
-  const existing = await db.collection("promoCampaigns").doc(code).get();
-  if (existing.exists) {
-    return NextResponse.json(
-      { error: `Code ${code} already exists for today` },
-      { status: 409 }
-    );
-  }
-
   await db.collection("promoCampaigns").doc(code).set({
     code,
     region,
