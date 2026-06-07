@@ -28,10 +28,7 @@ export async function POST(req: Request) {
   const { userId } = await auth();
 
   if (!userId) {
-    return NextResponse.json(
-      { error: "unauthorized" },
-      { status: 401 }
-    );
+    return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
   let body: RedeemBody;
@@ -39,10 +36,7 @@ export async function POST(req: Request) {
   try {
     body = await req.json();
   } catch {
-    return NextResponse.json(
-      { error: "invalid body" },
-      { status: 400 }
-    );
+    return NextResponse.json({ error: "invalid body" }, { status: 400 });
   }
 
   const { code, lang, series, level } = body;
@@ -56,15 +50,12 @@ export async function POST(req: Request) {
 
   const couponCode = String(code).trim().toUpperCase();
 
-  const finalLevel =
-    series === "idiom"
-      ? "all"
-      : String(level).trim();
+  const finalLevel = series === "idiom" ? "all" : String(level).trim();
 
   const now = Date.now();
 
-  // ✅ PROMO-MMDD-MMDD-REGION 형태면 promoCampaigns에서 처리
-  const isPromoCampaign = /^PROMO-\d{4}-\d{4}-[A-Z]{2,3}$/.test(couponCode);
+  // ✅ PROMO-BR-001 형태면 promoCampaigns에서 처리
+  const isPromoCampaign = /^PROMO-\d{4}-[A-Z]{2,3}$/.test(couponCode);
 
   if (isPromoCampaign) {
     try {
@@ -80,7 +71,6 @@ export async function POST(req: Request) {
 
       const campaign = campaignSnap.data()!;
 
-      // 만료 체크
       const endAt = toMs(campaign.endAt);
       if (endAt > 0 && now > endAt) {
         return NextResponse.json(
@@ -117,7 +107,6 @@ export async function POST(req: Request) {
       const durationDays = campaign.durationDays ?? 10;
       const expiresAt = now + DAY_MS * durationDays;
 
-      // 라이선스 발급
       await licRef.set(
         {
           lang: wantLang,
@@ -133,11 +122,10 @@ export async function POST(req: Request) {
         { merge: true }
       );
 
-      // 통계 기록
       await db.collection("promoActivations").add({
         code: couponCode,
         region: campaign.region,
-        dateStr: campaign.dateStr,
+        dateStr: campaign.dateStr ?? null,
         userId,
         lang: wantLang,
         series: wantSeries,
@@ -146,7 +134,6 @@ export async function POST(req: Request) {
         activatedAtMs: now,
       });
 
-      // usedCount 증가
       await campaignRef.update({
         usedCount: FieldValue.increment(1),
       });
@@ -174,7 +161,6 @@ export async function POST(req: Request) {
     }
   }
 
-  // ✅ 기존 개별 쿠폰 로직 (변경 없음)
   try {
     const ref = db.collection("coupons").doc(couponCode);
 
@@ -191,7 +177,6 @@ export async function POST(req: Request) {
         throw new Error("Coupon already used");
       }
 
-      // ✅ promo 쿠폰 전용 체크
       if ((c as any).source === "promo") {
         const deadline = toMs((c as any).activationDeadline);
         if (deadline > 0 && now > deadline) {
@@ -283,10 +268,12 @@ export async function POST(req: Request) {
           series: wantSeries,
           level: finalLevel,
         });
+
         if ((c as any).transactionId) {
           const purchaseRef = db
             .collection("iapPurchases")
             .doc((c as any).transactionId);
+
           tx.set(
             purchaseRef,
             { usedCouponCount: FieldValue.increment(1) },
@@ -314,15 +301,18 @@ export async function POST(req: Request) {
         { status: 404 }
       );
     }
+
     if (lower.includes("already used")) {
       return NextResponse.json({ error: msg }, { status: 400 });
     }
+
     if (lower.includes("promotion coupon expired")) {
       return NextResponse.json(
         { error: "This promotional coupon has expired." },
         { status: 400 }
       );
     }
+
     if (lower.includes("active license exists")) {
       return NextResponse.json(
         {

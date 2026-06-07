@@ -1,338 +1,87 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/firebaseAdmin";
-import { Coupon } from "@/lib/coupons";
-import type { License } from "@/lib/license";
 import { FieldValue } from "firebase-admin/firestore";
-import { auth } from "@clerk/nextjs/server";
 
 export const runtime = "nodejs";
 
-type RedeemBody = {
-  code: string;
-  lang: string;
-  series: string;
-  level: string;
-};
-
 const DAY_MS = 1000 * 60 * 60 * 24;
+const ADMIN_EMAIL = process.env.NEXT_PUBLIC_ADMIN_EMAIL;
 
-function toMs(v: any): number {
-  if (!v) return 0;
-  if (typeof v === "number") return v;
-  if (typeof v?.toMillis === "function") return v.toMillis();
-  const n = Number(v);
-  return Number.isFinite(n) ? n : 0;
-}
+const VALID_REGIONS = [
+  // 영어권
+  "US","GB","CA","AU","NZ","PH","NG","ZA","GH","KE","IN","SG","IE",
+  // 스페인어권
+  "MX","CO","AR","ES","PE","VE","CL","EC","GT","CU","BO","DO","HN","PY","SV","NI","CR","PA","UY",
+  // 포르투갈어권
+  "BR","PT","AO","MZ",
+  // 프랑스어권
+  "FR","BE","CH","SN","CI","CM","MG","BF",
+];
 
 export async function POST(req: Request) {
-  const { userId } = await auth();
-
-  if (!userId) {
-    return NextResponse.json(
-      { error: "unauthorized" },
-      { status: 401 }
-    );
+  const adminEmail = req.headers.get("x-admin-email");
+  if (!adminEmail || adminEmail !== ADMIN_EMAIL) {
+    return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
-  let body: RedeemBody;
-
+  let body: { region?: string; durationDays?: number };
   try {
     body = await req.json();
   } catch {
+    return NextResponse.json({ error: "invalid body" }, { status: 400 });
+  }
+
+  const region = String(body?.region ?? "").toUpperCase();
+  if (!VALID_REGIONS.includes(region)) {
     return NextResponse.json(
-      { error: "invalid body" },
+      { error: `invalid region. valid: ${VALID_REGIONS.join(", ")}` },
       { status: 400 }
     );
   }
 
-  const { code, lang, series, level } = body;
-
-  if (!code || !lang || !series || !level) {
-    return NextResponse.json(
-      { error: "missing required fields" },
-      { status: 400 }
-    );
-  }
-
-  const couponCode = String(code).trim().toUpperCase();
-
-  const finalLevel =
-    series === "idiom"
-      ? "all"
-      : String(level).trim();
+  const durationDays = Number(body?.durationDays) || 10;
 
   const now = Date.now();
+  const d = new Date(now);
+  const mm = String(d.getMonth() + 1).padStart(2, "0");
+  const dd = String(d.getDate()).padStart(2, "0");
+  const dateStr = `${mm}${dd}`;
 
-  // ✅ PROMO-MMDD-REGION 형태면 promoCampaigns에서 처리
-  const isPromoCampaign = /^PROMO-\d{4}-[A-Z]{2,3}$/.test(couponCode);
+  const code = `PROMO-${dateStr}-${region}`;
 
-  if (isPromoCampaign) {
-    try {
-      const campaignRef = db.collection("promoCampaigns").doc(couponCode);
-      const campaignSnap = await campaignRef.get();
+  const startAt = now;
+  const endAt = now + DAY_MS * durationDays;
 
-      if (!campaignSnap.exists) {
-        return NextResponse.json(
-          { error: "Invalid or expired promo code." },
-          { status: 404 }
-        );
-      }
-
-      const campaign = campaignSnap.data()!;
-
-      // 만료 체크
-      const endAt = toMs(campaign.endAt);
-      if (endAt > 0 && now > endAt) {
-        return NextResponse.json(
-          { error: "This promotional code has expired." },
-          { status: 400 }
-        );
-      }
-
-      const wantLang = String(lang).trim();
-      const wantSeries = String(series).trim();
-      const licDocId = `${wantLang}_${wantSeries}_${finalLevel}`;
-
-      const licRef = db
-        .collection("licenses")
-        .doc(userId)
-        .collection("items")
-        .doc(licDocId);
-
-      const licSnap = await licRef.get();
-
-      if (licSnap.exists) {
-        const exp = toMs(licSnap.data()?.expiresAt);
-        if (exp > now) {
-          return NextResponse.json(
-            {
-              error:
-                "You are already studying this textbook. Please wait until it expires.",
-            },
-            { status: 400 }
-          );
-        }
-      }
-
-      const durationDays = campaign.durationDays ?? 10;
-      const expiresAt = now + DAY_MS * durationDays;
-
-      // 라이선스 발급
-      await licRef.set(
-        {
-          lang: wantLang,
-          series: wantSeries,
-          level: finalLevel,
-          expiresAt,
-          source: "promo_campaign",
-          code: couponCode,
-          issuedAt: FieldValue.serverTimestamp(),
-          updatedAt: FieldValue.serverTimestamp(),
-          issuedAtMs: now,
-        },
-        { merge: true }
-      );
-
-      // 통계 기록
-      await db.collection("promoActivations").add({
-        code: couponCode,
-        region: campaign.region,
-        dateStr: campaign.dateStr,
-        userId,
-        lang: wantLang,
-        series: wantSeries,
-        level: finalLevel,
-        activatedAt: FieldValue.serverTimestamp(),
-        activatedAtMs: now,
-      });
-
-      // usedCount 증가
-      await campaignRef.update({
-        usedCount: FieldValue.increment(1),
-      });
-
-      return NextResponse.json(
-        {
-          success: true,
-          license: {
-            lang: wantLang,
-            series: wantSeries,
-            level: finalLevel,
-            expiresAt,
-            source: "promo_campaign",
-            code: couponCode,
-            issuedAt: now,
-          },
-          serverNowMs: now,
-        },
-        { status: 200 }
-      );
-    } catch (e: any) {
-      const msg =
-        typeof e?.message === "string" ? e.message : "redeem failed";
-      return NextResponse.json({ error: msg }, { status: 500 });
-    }
-  }
-
-  // ✅ 기존 개별 쿠폰 로직 (변경 없음)
-  try {
-    const ref = db.collection("coupons").doc(couponCode);
-
-    const { coupon, license } = await db.runTransaction(async (tx) => {
-      const snap = await tx.get(ref);
-
-      if (!snap.exists) {
-        throw new Error("Invalid coupon code");
-      }
-
-      const c = snap.data() as Coupon;
-
-      if (c.used) {
-        throw new Error("Coupon already used");
-      }
-
-      // ✅ promo 쿠폰 전용 체크
-      if ((c as any).source === "promo") {
-        const deadline = toMs((c as any).activationDeadline);
-        if (deadline > 0 && now > deadline) {
-          throw new Error("Promotion coupon expired");
-        }
-      }
-
-      const wantLang = String(lang).trim();
-      const wantSeries = String(series).trim();
-
-      const licDocId = `${wantLang}_${wantSeries}_${finalLevel}`;
-
-      const licRef = db
-        .collection("licenses")
-        .doc(userId)
-        .collection("items")
-        .doc(licDocId);
-
-      const licSnap = await tx.get(licRef);
-
-      if (licSnap.exists) {
-        const exp = toMs(licSnap.data()?.expiresAt);
-        if (exp > now) {
-          throw new Error("Active license exists");
-        }
-      }
-
-      const durationDays = (c as any).durationDays ?? 30;
-      const expiresAt = now + DAY_MS * durationDays;
-
-      const lic: License = {
-        lang: wantLang,
-        series: wantSeries,
-        level: finalLevel,
-        expiresAt,
-        source: "coupon",
-        code: couponCode,
-        issuedAt: now,
-      };
-
-      tx.set(
-        licRef,
-        {
-          lang: lic.lang,
-          series: lic.series,
-          level: lic.level,
-          expiresAt: lic.expiresAt,
-          source: "coupon",
-          code: couponCode,
-          issuedAt: FieldValue.serverTimestamp(),
-          updatedAt: FieldValue.serverTimestamp(),
-          issuedAtMs: now,
-        },
-        { merge: true }
-      );
-
-      const updated: Coupon = {
-        ...c,
-        code: couponCode,
-        used: true,
-        usedBy: userId,
-        usedAt: now,
-        usedLang: wantLang,
-        usedSeries: wantSeries,
-        usedLevel: finalLevel,
-        expiresAt,
-      };
-
-      tx.set(ref, updated, { merge: true });
-
-      if (
-        (c as any).source === "google_play" ||
-        (c as any).source === "stripe" ||
-        (c as any).source === "apple_app_store" ||
-        (c as any).paymentIntentId ||
-        (c as any).purchaseToken ||
-        (c as any).transactionId
-      ) {
-        const paidRef = db.collection("paidCouponUsed").doc(couponCode);
-        tx.set(paidRef, {
-          code: couponCode,
-          userId,
-          source: (c as any).source ?? null,
-          paymentIntentId: (c as any).paymentIntentId ?? null,
-          purchaseToken: (c as any).purchaseToken ?? null,
-          transactionId: (c as any).transactionId ?? null,
-          usedAt: now,
-          lang: wantLang,
-          series: wantSeries,
-          level: finalLevel,
-        });
-        if ((c as any).transactionId) {
-          const purchaseRef = db
-            .collection("iapPurchases")
-            .doc((c as any).transactionId);
-          tx.set(
-            purchaseRef,
-            { usedCouponCount: FieldValue.increment(1) },
-            { merge: true }
-          );
-        }
-      }
-
-      return { coupon: updated, license: lic };
-    });
-
+  const existing = await db.collection("promoCampaigns").doc(code).get();
+  if (existing.exists) {
     return NextResponse.json(
-      { success: true, coupon, license, serverNowMs: Date.now() },
-      { status: 200 }
+      { error: `Code ${code} already exists for today` },
+      { status: 409 }
     );
-  } catch (e: any) {
-    const msg =
-      typeof e?.message === "string" ? e.message : "redeem failed";
-
-    const lower = msg.toLowerCase();
-
-    if (lower.includes("invalid coupon")) {
-      return NextResponse.json(
-        { error: "Invalid or refunded coupon." },
-        { status: 404 }
-      );
-    }
-    if (lower.includes("already used")) {
-      return NextResponse.json({ error: msg }, { status: 400 });
-    }
-    if (lower.includes("promotion coupon expired")) {
-      return NextResponse.json(
-        { error: "This promotional coupon has expired." },
-        { status: 400 }
-      );
-    }
-    if (lower.includes("active license exists")) {
-      return NextResponse.json(
-        {
-          error:
-            "You are already studying this textbook. Please wait until it expires.",
-        },
-        { status: 400 }
-      );
-    }
-
-    return NextResponse.json({ error: msg }, { status: 500 });
   }
+
+  await db.collection("promoCampaigns").doc(code).set({
+    code,
+    region,
+    dateStr,
+    startAt,
+    endAt,
+    durationDays,
+    usedCount: 0,
+    source: "promo",
+    createdAt: FieldValue.serverTimestamp(),
+    createdAtMs: now,
+  });
+
+  return NextResponse.json(
+    {
+      success: true,
+      code,
+      region,
+      startAt,
+      endAt,
+      durationDays,
+    },
+    { status: 200 }
+  );
 }
