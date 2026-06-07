@@ -63,8 +63,8 @@ export async function POST(req: Request) {
 
   const now = Date.now();
 
-  // ✅ PROMO-MMDD-REGION 형태면 promoCampaigns에서 처리
-  const isPromoCampaign = /^PROMO-\d{4}-[A-Z]{2,3}$/.test(couponCode);
+  // ✅ PROMO-MMDD-MMDD-REGION 형태면 promoCampaigns에서 처리
+  const isPromoCampaign = /^PROMO-\d{4}-\d{4}-[A-Z]{2,3}$/.test(couponCode);
 
   if (isPromoCampaign) {
     try {
