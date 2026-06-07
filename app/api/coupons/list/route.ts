@@ -1,4 +1,3 @@
-// app/api/coupons/list/route.ts
 import { NextResponse } from "next/server";
 import { db } from "@/lib/firebaseAdmin";
 import type { Coupon } from "@/lib/coupons";
@@ -28,7 +27,6 @@ function pick(c: Coupon) {
     usedSeries: (c as any).usedSeries ?? null,
     usedLevel: (c as any).usedLevel ?? null,
 
-    // 🔥 추가
     source: (c as any).source ?? null,
     purchaseToken: (c as any).purchaseToken ?? null,
   };
@@ -50,14 +48,16 @@ export async function POST(req: Request) {
   }
 
   const userId = String(body?.userId || "").trim();
+
   if (!userId) {
     return NextResponse.json({ error: "missing userId" }, { status: 400 });
   }
 
   try {
-    const [ownerSnap, usedBySnap] = await Promise.all([
+    const [ownerSnap, usedBySnap, promoSnap] = await Promise.all([
       db.collection("coupons").where("ownerId", "==", userId).get(),
       db.collection("coupons").where("usedBy", "==", userId).get(),
+      db.collection("promoActivations").where("userId", "==", userId).get(),
     ]);
 
     const map = new Map<string, Coupon>();
@@ -66,45 +66,70 @@ export async function POST(req: Request) {
       const c = d.data() as Coupon;
       if (c?.code) map.set(c.code, c);
     }
+
     for (const d of usedBySnap.docs) {
       const c = d.data() as Coupon;
+
       if (c?.code) {
         const prev = map.get(c.code);
-        if (!prev || timeKey(c) >= timeKey(prev)) map.set(c.code, c);
+
+        if (!prev || timeKey(c) >= timeKey(prev)) {
+          map.set(c.code, c);
+        }
       }
     }
 
     const now = Date.now();
-    const licSnap = await db
+
+    await db
       .collection("licenses")
       .doc(userId)
       .collection("items")
       .where("expiresAt", ">", now)
       .get();
 
-    const aliveCouponCodes = new Set<string>();
-    for (const d of licSnap.docs) {
-      const data = d.data() as any;
-      if (data?.source === "coupon" && typeof data?.code === "string") {
-        aliveCouponCodes.add(data.code);
-      }
-    }
-
-    const coupons = Array.from(map.values())
+    const couponItems = Array.from(map.values())
       .filter((c) => {
         const ownerId = (c as any).ownerId ?? null;
         const usedBy = (c as any).usedBy ?? null;
-        if (ownerId === userId) return true;
-        if (usedBy === userId) return true;
-        return false;
-      })
-      .sort((a, b) => {
-        const au = !!a.used;
-        const bu = !!b.used;
-        if (au !== bu) return au ? 1 : -1;
-        return timeKey(b) - timeKey(a);
+
+        return ownerId === userId || usedBy === userId;
       })
       .map(pick);
+
+    const promoItems = promoSnap.docs.map((d) => {
+      const p = d.data() as any;
+
+      return {
+        code: p.code,
+        used: true,
+        issuedAt: p.activatedAtMs ?? 0,
+        usedAt: p.activatedAtMs ?? 0,
+        usedBy: userId,
+
+        paymentIntentId: null,
+        disabled: false,
+
+        usedLang: p.lang ?? null,
+        usedSeries: p.series ?? null,
+        usedLevel: p.level ?? null,
+
+        source: "promo_campaign",
+        purchaseToken: null,
+      };
+    });
+
+    const coupons = [...couponItems, ...promoItems].sort((a: any, b: any) => {
+      const au = !!a.used;
+      const bu = !!b.used;
+
+      if (au !== bu) return au ? 1 : -1;
+
+      const at = Math.max(a.usedAt || 0, a.issuedAt || 0);
+      const bt = Math.max(b.usedAt || 0, b.issuedAt || 0);
+
+      return bt - at;
+    });
 
     return NextResponse.json(
       {
@@ -113,13 +138,21 @@ export async function POST(req: Request) {
         meta: {
           ownerCount: ownerSnap.size,
           usedByCount: usedBySnap.size,
+          promoCount: promoSnap.size,
           total: coupons.length,
         },
       },
       { status: 200 }
     );
   } catch (e: any) {
-    const msg = typeof e?.message === "string" ? e.message : "list failed";
-    return NextResponse.json({ error: msg }, { status: 500 });
+    const msg =
+      typeof e?.message === "string"
+        ? e.message
+        : "list failed";
+
+    return NextResponse.json(
+      { error: msg },
+      { status: 500 }
+    );
   }
 }
