@@ -26,7 +26,7 @@ export default function ViewerWatermark() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        gap: 48,
+        gap: 72,
       }}
     >
       {lines.map((line, i) => (
@@ -35,7 +35,7 @@ export default function ViewerWatermark() {
           style={{
             fontSize: 16,
             color: "#000",
-            opacity: 0.18,
+            opacity: 0.10,
             whiteSpace: "nowrap",
             transform: "rotate(-30deg)",
             letterSpacing: 2,
