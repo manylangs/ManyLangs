@@ -36,13 +36,13 @@ export default function RevenuePage() {
 
         const json = await res.json()
         setData(
-  (json.monthlyRevenue || []).map((m: any) => ({
-    month: m.month,
-    revenue: m.amount / 100,
-    refund: 0,
-    net: m.amount / 100,
-  }))
-)
+          (json.monthlyRevenue || []).map((m: any) => ({
+            month: m.month,
+            revenue: m.amount / 100,
+            refund: 0,
+            net: m.amount / 100,
+          }))
+        )
       } catch (e) {
         console.error(e)
         setData([])
@@ -71,11 +71,27 @@ export default function RevenuePage() {
         Revenue Dashboard
       </h1>
 
-      {/* ✅ 날짜 필터 */}
-      <div style={{ marginBottom: 20 }}>
-        <button onClick={() => setDays(7)}>7D</button>{" "}
-        <button onClick={() => setDays(30)}>30D</button>{" "}
-        <button onClick={() => setDays(365)}>1Y</button>
+      <div style={{ marginBottom: 24, display: "flex", gap: 12, flexWrap: "wrap" }}>
+        {[7, 30, 365].map((value) => (
+          <button
+            key={value}
+            onClick={() => setDays(value)}
+            style={{
+              minWidth: 82,
+              minHeight: 48,
+              padding: "12px 18px",
+              fontSize: 18,
+              fontWeight: 700,
+              borderRadius: 10,
+              border: days === value ? "2px solid #111" : "1px solid #ccc",
+              background: days === value ? "#111" : "#fff",
+              color: days === value ? "#fff" : "#111",
+              cursor: "pointer",
+            }}
+          >
+            {value === 7 ? "7D" : value === 30 ? "30D" : "1Y"}
+          </button>
+        ))}
       </div>
 
       {/* ✅ recharts 그래프 */}
