@@ -6,11 +6,12 @@ export default function ViewerWatermark() {
   const { user } = useUser();
   const email = user?.emailAddresses[0]?.emailAddress ?? "ManyLangs";
 
-  const lines = [
+  const base = [
     email,
     "Unauthorized copying prohibited",
     `${email} · Unauthorized copying prohibited`,
   ];
+  const lines = [...base, ...base];
 
   return (
     <div
@@ -25,14 +26,14 @@ export default function ViewerWatermark() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        gap: 56,
+        gap: 48,
       }}
     >
       {lines.map((line, i) => (
         <span
           key={i}
           style={{
-            fontSize: 13,
+            fontSize: 16,
             color: "#000",
             opacity: 0.18,
             whiteSpace: "nowrap",
