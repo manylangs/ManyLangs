@@ -132,7 +132,14 @@ function writeLocalCoupons(list: CouponItem[]) {
 
 function buildAliveCouponCodeSet(aliveLib: LibraryItem[]) {
   return new Set(
-    aliveLib.filter((x) => x.source === "coupon" && x.code).map((x) => x.code as string)
+    aliveLib
+      .filter(
+        (x) =>
+          (x.source === "coupon" ||
+            x.source === "promo_campaign") &&
+          x.code
+      )
+      .map((x) => x.code as string)
   );
 }
 
@@ -289,7 +296,13 @@ export default function SelectBooksPage() {
 
     const byCode = new Map<string, LibraryItem>();
     for (const l of library) {
-      if (l.source === "coupon" && l.code) byCode.set(l.code, l);
+      if (
+        (l.source === "coupon" ||
+          l.source === "promo_campaign") &&
+        l.code
+      ) {
+        byCode.set(l.code, l);
+      }
     }
 
     setCouponBox((prev) => {

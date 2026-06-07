@@ -1,6 +1,8 @@
 // lib/license.ts
-
-export type LicenseSource = "coupon" | "payment";
+export type LicenseSource =
+  | "coupon"
+  | "payment"
+  | "promo_campaign";
 
 export type License = {
   lang: string;
@@ -129,7 +131,15 @@ export function findLicense(
 }
 
 /** 특정 쿠폰(code)로 생성된 라이선스들 */
-export function findLicensesByCouponCode(code: string, userId?: string | null) {
+export function findLicensesByCouponCode(
+  code: string,
+  userId?: string | null
+) {
   const lib = loadLibrary(userId);
-  return lib.filter((l) => l.source === "coupon" && l.code === code);
+  return lib.filter(
+    (l) =>
+      (l.source === "coupon" ||
+        l.source === "promo_campaign") &&
+      l.code === code
+  );
 }
