@@ -138,26 +138,6 @@ export default function AdminPage() {
         <Card title="Refunds" value={data.refundCount} />
       </div>
 
-      {/* ===== 언어별 매출 ===== */}
-      <h2 style={{ marginTop: 40 }}>Revenue by Language</h2>
-      <div style={{ marginTop: 10 }}>
-        {Object.entries(langRevenue).map(([lang, amount]) => (
-          <div key={lang} style={{ fontSize: 13 }}>
-            {lang} : ${(amount / 100).toFixed(2)}
-          </div>
-        ))}
-      </div>
-
-      {/* ===== 그래프 ===== */}
-      <h2 style={{ marginTop: 40 }}>Revenue Trend</h2>
-      <div style={{ marginTop: 10 }}>
-        {Object.entries(dailyRevenue).map(([date, amount]) => (
-          <div key={date} style={{ fontSize: 12 }}>
-            {date} : ${(amount / 100).toFixed(2)}
-          </div>
-        ))}
-      </div>
-
       {/* ===== 결제 + 환불 좌우 배치 ===== */}
       <div style={{ display: "flex", gap: 32, marginTop: 40, alignItems: "flex-start" }}>
 
