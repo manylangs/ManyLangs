@@ -109,7 +109,6 @@ export default function AdminPage() {
     })
   })
 
-  // 페이지 슬라이스 (1페이지 = 가장 최근)
   const paymentsSlice = data.recentPayments.slice(
     (paymentPage - 1) * PAGE_SIZE,
     paymentPage * PAGE_SIZE
@@ -141,7 +140,6 @@ export default function AdminPage() {
 
       {/* ===== 언어별 매출 ===== */}
       <h2 style={{ marginTop: 40 }}>Revenue by Language</h2>
-
       <div style={{ marginTop: 10 }}>
         {Object.entries(langRevenue).map(([lang, amount]) => (
           <div key={lang} style={{ fontSize: 13 }}>
@@ -152,7 +150,6 @@ export default function AdminPage() {
 
       {/* ===== 그래프 ===== */}
       <h2 style={{ marginTop: 40 }}>Revenue Trend</h2>
-
       <div style={{ marginTop: 10 }}>
         {Object.entries(dailyRevenue).map(([date, amount]) => (
           <div key={date} style={{ fontSize: 12 }}>
@@ -161,108 +158,101 @@ export default function AdminPage() {
         ))}
       </div>
 
-      {/* ===== Payments ===== */}
-      <h2 style={{ marginTop: 40 }}>
-        Recent Payments ({data.recentPayments.length}건)
-      </h2>
+      {/* ===== 결제 + 환불 좌우 배치 ===== */}
+      <div style={{ display: "flex", gap: 32, marginTop: 40, alignItems: "flex-start" }}>
 
-      <Pagination
-        total={data.recentPayments.length}
-        page={paymentPage}
-        onPage={(p) => { setPaymentPage(p); window.scrollTo(0, 0) }}
-      />
+        {/* 왼쪽: Payments */}
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <h2>💳 Payments ({data.recentPayments.length})</h2>
 
-      <div style={{ marginTop: 8 }}>
-        {paymentsSlice.map((p, i) => {
-          const email =
-            p.billing_details?.email ||
-            p.receipt_email ||
-            p.payment_method?.billing_details?.email ||
-            p.id
+          <div style={{ marginTop: 8 }}>
+            {paymentsSlice.map((p, i) => {
+              const email =
+                p.billing_details?.email ||
+                p.receipt_email ||
+                p.payment_method?.billing_details?.email ||
+                p.id
 
-          const country =
-            p.billing_details?.address?.country ||
-            p.payment_method?.billing_details?.address?.country ||
-            "-"
+              const country =
+                p.billing_details?.address?.country ||
+                p.payment_method?.billing_details?.address?.country ||
+                "-"
 
-          return (
-            <div key={p.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
-              💳 {((p.amount || 0) / 100).toLocaleString("en-US", {
-                style: "currency",
-                currency: "USD",
-              })} | {p.status}
+              return (
+                <div key={p.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
+                  {((p.amount || 0) / 100).toLocaleString("en-US", {
+                    style: "currency",
+                    currency: "USD",
+                  })} | {p.status}
 
-              <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
-                📅 {new Date(p.created * 1000).toLocaleDateString("ko-KR")}
-                &nbsp;|&nbsp;
-                📧 <span style={{ fontFamily: "monospace" }}>{email}</span>
-                &nbsp;|&nbsp;
-                🌍 {country}
-              </div>
+                  <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
+                    📅 {new Date(p.created * 1000).toLocaleDateString("ko-KR")}
+                    &nbsp;|&nbsp;
+                    📧 <span style={{ fontFamily: "monospace", wordBreak: "break-all" }}>{email}</span>
+                    &nbsp;|&nbsp;
+                    🌍 {country}
+                  </div>
 
-              <div style={{ fontSize: 12, color: "#666", marginTop: 4 }}>
-                coupons: {data.paymentMap?.[p.id]?.coupons?.length || 0} | licenses: {data.paymentMap?.[p.id]?.licenses?.length || 0}
-              </div>
+                  <div style={{ fontSize: 12, color: "#666", marginTop: 4 }}>
+                    coupons: {data.paymentMap?.[p.id]?.coupons?.length || 0} | licenses: {data.paymentMap?.[p.id]?.licenses?.length || 0}
+                  </div>
 
-              {data.paymentMap?.[p.id]?.licenses?.map((l: any) => (
-                <div key={l.id} style={{ fontSize: 11, color: "#999" }}>
-                  - {parseProduct(l.productId)}
+                  {data.paymentMap?.[p.id]?.licenses?.map((l: any) => (
+                    <div key={l.id} style={{ fontSize: 11, color: "#999" }}>
+                      - {parseProduct(l.productId)}
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          )
-        })}
+              )
+            })}
+          </div>
+
+          <Pagination
+            total={data.recentPayments.length}
+            page={paymentPage}
+            onPage={setPaymentPage}
+          />
+        </div>
+
+        {/* 오른쪽: Refunds */}
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <h2>💸 Refunds ({data.recentRefunds.length})</h2>
+
+          <div style={{ marginTop: 8 }}>
+            {refundsSlice.map((r, i) => {
+              const refundEmail =
+                (r as any).charge?.receipt_email ||
+                (r as any).charge?.billing_details?.email ||
+                (r as any).receipt_email ||
+                (r as any).billing_details?.email ||
+                (r as any).payment_intent?.receipt_email ||
+                r.id.slice(0, 8) + "..." + r.id.slice(-4)
+
+              return (
+                <div key={r.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
+                  {(r.amount / 100).toLocaleString("en-US", {
+                    style: "currency",
+                    currency: "USD",
+                  })}
+
+                  <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
+                    📅 {new Date(r.created * 1000).toLocaleDateString("ko-KR")}
+                    &nbsp;|&nbsp;
+                    📧 <span style={{ fontFamily: "monospace", wordBreak: "break-all" }}>{refundEmail}</span>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+
+          <Pagination
+            total={data.recentRefunds.length}
+            page={refundPage}
+            onPage={setRefundPage}
+          />
+        </div>
+
       </div>
-
-      <Pagination
-        total={data.recentPayments.length}
-        page={paymentPage}
-        onPage={(p) => { setPaymentPage(p); window.scrollTo(0, 0) }}
-      />
-
-      {/* ===== Refunds ===== */}
-      <h2 style={{ marginTop: 40 }}>
-        Recent Refunds ({data.recentRefunds.length}건)
-      </h2>
-
-      <Pagination
-        total={data.recentRefunds.length}
-        page={refundPage}
-        onPage={(p) => { setRefundPage(p); window.scrollTo(0, 0) }}
-      />
-
-      <div style={{ marginTop: 8 }}>
-        {refundsSlice.map((r, i) => {
-          const refundEmail =
-            (r as any).charge?.receipt_email ||
-            (r as any).charge?.billing_details?.email ||
-            (r as any).receipt_email ||
-            (r as any).billing_details?.email ||
-            (r as any).payment_intent?.receipt_email ||
-            r.id.slice(0, 8) + "..." + r.id.slice(-4)
-
-          return (
-            <div key={r.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
-              💸 {(r.amount / 100).toLocaleString("en-US", {
-                style: "currency",
-                currency: "USD",
-              })}
-
-              <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
-                📅 {new Date(r.created * 1000).toLocaleDateString("ko-KR")}
-                &nbsp;|&nbsp;
-                📧 <span style={{ fontFamily: "monospace" }}>{refundEmail}</span>
-              </div>
-            </div>
-          )
-        })}
-      </div>
-
-      <Pagination
-        total={data.recentRefunds.length}
-        page={refundPage}
-        onPage={(p) => { setRefundPage(p); window.scrollTo(0, 0) }}
-      />
     </div>
   )
 }
