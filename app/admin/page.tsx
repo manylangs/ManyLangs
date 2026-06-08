@@ -18,7 +18,7 @@ function parseProduct(productId: string) {
 }
 // ===== [END] language map =====
 
-const PAGE_SIZE = 20
+const PAGE_SIZE = 5
 
 function Pagination({ total, page, onPage }: { total: number; page: number; onPage: (p: number) => void }) {
   const totalPages = Math.ceil(total / PAGE_SIZE)
