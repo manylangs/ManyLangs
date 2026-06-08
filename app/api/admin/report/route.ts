@@ -19,19 +19,32 @@ export async function GET(req: NextRequest) {
       (Date.now() - days * 24 * 60 * 60 * 1000) / 1000
     );
 
-    const charges = await stripe.charges.list({
+    // 페이지네이션으로 전체 건수 제한 없이 가져오기
+    const allCharges: Stripe.Charge[] = [];
+    let lastId: string | undefined;
 
-      limit: 100,
-      created: {
-        gte: since,
-      },
-    });
+    while (true) {
+      const batch = await stripe.charges.list({
+        limit: 100,
+        starting_after: lastId,
+        created: { gte: since },
+      });
+
+      allCharges.push(...batch.data);
+
+      if (!batch.has_more) break;
+      lastId = batch.data[batch.data.length - 1].id;
+    }
+
+    const charges = { data: allCharges };
+
     console.log(
       "days:",
       days,
       "charges:",
       charges.data.length
     );
+
     const monthlyMap: Record<string, number> = {};
 
     charges.data.forEach((charge) => {
