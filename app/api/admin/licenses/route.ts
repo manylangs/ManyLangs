@@ -20,17 +20,20 @@ export async function GET(req: Request) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 })
   }
 
+  const url = new URL(req.url)
+  const debug = url.searchParams.get("debug") === "1"
   const now = Date.now()
   const langCount: Record<string, number> = {}
   let total = 0
+  let totalAll = 0
 
-  // licenses/{userId} 전체 순회
   const usersSnap = await db.collection("licenses").get()
 
   for (const userDoc of usersSnap.docs) {
     const itemsSnap = await userDoc.ref.collection("items").get()
     for (const item of itemsSnap.docs) {
       const d = item.data()
+      totalAll++
       const expiresAt = toMs(d.expiresAt)
       if (expiresAt <= now) continue
       const lang = d.lang || "unknown"
@@ -39,5 +42,5 @@ export async function GET(req: Request) {
     }
   }
 
-  return NextResponse.json({ total, langCount })
+  return NextResponse.json({ total, langCount, ...(debug ? { totalAll, userCount: usersSnap.size } : {}) })
 }
