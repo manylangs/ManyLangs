@@ -126,34 +126,49 @@ export default function AdminPage() {
       <div>
         {data.recentPayments
           .slice(0, visiblePayments)
-          .map((p, i) => (
-            <div key={p.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
+          .map((p, i) => {
+            // 이메일: charge 객체 기준으로 가능한 모든 경로 탐색
+            const email =
+              p.billing_details?.email ||
+              p.receipt_email ||
+              p.payment_method?.billing_details?.email ||
+              p.id
 
-              💳 {((p.amount || 0) / 100).toLocaleString("en-US", {
-                style: "currency",
-                currency: "USD",
-              })} | {p.status}
+            // 국가: billing_details 우선, 없으면 payment_method
+            const country =
+              p.billing_details?.address?.country ||
+              p.payment_method?.billing_details?.address?.country ||
+              "-"
 
-              {/* 날짜 + ID + 국가 */}
-              <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
-                📅 {new Date(p.created * 1000).toLocaleDateString("ko-KR")}
-                &nbsp;|&nbsp;
-                📧 <span style={{ fontFamily: "monospace" }}>{p.billing_details?.email || p.receipt_email || p.id}</span>
-                &nbsp;|&nbsp;
-                🌍 {p.payment_method?.billing_details?.address?.country || p.currency?.toUpperCase() || "-"}
-              </div>
+            return (
+              <div key={p.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
 
-              <div style={{ fontSize: 12, color: "#666", marginTop: 4 }}>
-                coupons: {data.paymentMap?.[p.id]?.coupons?.length || 0} | licenses: {data.paymentMap?.[p.id]?.licenses?.length || 0}
-              </div>
+                💳 {((p.amount || 0) / 100).toLocaleString("en-US", {
+                  style: "currency",
+                  currency: "USD",
+                })} | {p.status}
 
-              {data.paymentMap?.[p.id]?.licenses?.map((l: any) => (
-                <div key={l.id} style={{ fontSize: 11, color: "#999" }}>
-                  - {parseProduct(l.productId)}
+                {/* 날짜 + 이메일 + 국가 */}
+                <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
+                  📅 {new Date(p.created * 1000).toLocaleDateString("ko-KR")}
+                  &nbsp;|&nbsp;
+                  📧 <span style={{ fontFamily: "monospace" }}>{email}</span>
+                  &nbsp;|&nbsp;
+                  🌍 {country}
                 </div>
-              ))}
-            </div>
-          ))}
+
+                <div style={{ fontSize: 12, color: "#666", marginTop: 4 }}>
+                  coupons: {data.paymentMap?.[p.id]?.coupons?.length || 0} | licenses: {data.paymentMap?.[p.id]?.licenses?.length || 0}
+                </div>
+
+                {data.paymentMap?.[p.id]?.licenses?.map((l: any) => (
+                  <div key={l.id} style={{ fontSize: 11, color: "#999" }}>
+                    - {parseProduct(l.productId)}
+                  </div>
+                ))}
+              </div>
+            )
+          })}
       </div>
 
       {visiblePayments < data.recentPayments.length && (
@@ -171,21 +186,32 @@ export default function AdminPage() {
       <div>
         {data.recentRefunds
           ?.slice(0, visibleRefunds || 20)
-          ?.map((r, i) => (
-            <div key={r.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
-              💸 {(r.amount / 100).toLocaleString("en-US", {
-                style: "currency",
-                currency: "USD",
-              })}
+          ?.map((r, i) => {
+            // 환불 객체가 charge 자체인 경우를 포함해 모든 경로 탐색
+            const refundEmail =
+              (r as any).charge?.receipt_email ||
+              (r as any).charge?.billing_details?.email ||
+              (r as any).receipt_email ||
+              (r as any).billing_details?.email ||
+              (r as any).payment_intent?.receipt_email ||
+              r.id.slice(0, 8) + "..." + r.id.slice(-4)
 
-              {/* 환불 날짜 + ID */}
-              <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
-                📅 {new Date(r.created * 1000).toLocaleDateString("ko-KR")}
-                &nbsp;|&nbsp;
-                📧 <span style={{ fontFamily: "monospace" }}>{(r as any).charge?.receipt_email || (r as any).charge?.billing_details?.email || r.id.slice(0, 8) + "..." + r.id.slice(-4)}</span>
+            return (
+              <div key={r.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
+                💸 {(r.amount / 100).toLocaleString("en-US", {
+                  style: "currency",
+                  currency: "USD",
+                })}
+
+                {/* 환불 날짜 + 이메일 */}
+                <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
+                  📅 {new Date(r.created * 1000).toLocaleDateString("ko-KR")}
+                  &nbsp;|&nbsp;
+                  📧 <span style={{ fontFamily: "monospace" }}>{refundEmail}</span>
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
       </div>
 
       {visibleRefunds < (data.recentRefunds?.length || 0) && (
