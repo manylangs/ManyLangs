@@ -47,8 +47,44 @@ export async function GET(req: NextRequest) {
         amount,
       }));
 
+    const totalRevenue = charges.data
+      .filter((c) => c.paid)
+      .reduce((sum, c) => sum + c.amount, 0);
+
+    const totalRefund = charges.data
+      .filter((c) => c.refunded)
+      .reduce((sum, c) => sum + c.amount_refunded, 0);
+
+    const paymentCount = charges.data.filter(
+      (c) => c.paid
+    ).length;
+
+    const refundCount = charges.data.filter(
+      (c) => c.refunded
+    ).length;
+
+    const recentPayments = charges.data.filter(
+      (c) => c.paid
+    );
+
+    const recentRefunds = charges.data.filter(
+      (c) => c.refunded && c.amount_refunded > 0
+    );
+
     return NextResponse.json({
       monthlyRevenue,
+
+      totalRevenue,
+      totalRefund,
+      netRevenue: totalRevenue - totalRefund,
+
+      paymentCount,
+      refundCount,
+
+      recentPayments,
+      recentRefunds,
+
+      paymentMap: {},
     });
   } catch (error: any) {
     console.error(error);
