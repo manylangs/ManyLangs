@@ -912,9 +912,9 @@ export default function SelectBooksPage() {
               )}
               {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
                 <Button variant="outline" size="sm"
-                  onClick={() => router.push("/admin/sales")}
+                  onClick={() => router.push("/admin/active")}
                   className="h-8 shrink-0 border-red-500 text-red-500">
-                  Active Users
+                  Active Textbooks
                 </Button>
               )}
               {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
