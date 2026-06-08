@@ -36,14 +36,44 @@ export default function RevenuePage() {
 
         const json = await res.json()
 
-        setData(
-          (json.monthlyRevenue || []).map((m: any) => ({
-            month: m.month,
-            revenue: m.amount / 100,
-            refund: 0,
-            net: m.amount / 100,
-          }))
-        )
+        if (days === 7) {
+          // 7D: recentPayments 에서 일별로 직접 집계
+          const dailyMap: Record<string, number> = {}
+
+          const cutoff = Date.now() - 7 * 24 * 60 * 60 * 1000
+
+            ; (json.recentPayments || [])
+              .filter((p: any) => p.created * 1000 >= cutoff)
+              .forEach((p: any) => {
+                const date = new Date(p.created * 1000).toLocaleDateString("en-US", {
+                  month: "short",
+                  day: "numeric",
+                })
+                dailyMap[date] = (dailyMap[date] || 0) + (p.amount || 0)
+              })
+
+          // 날짜 오름차순 정렬
+          const sorted = Object.entries(dailyMap)
+            .sort(([a], [b]) => new Date(a).getTime() - new Date(b).getTime())
+            .map(([date, amount]) => ({
+              month: date,
+              revenue: amount / 100,
+              refund: 0,
+              net: amount / 100,
+            }))
+
+          setData(sorted)
+        } else {
+          // 30D / 1Y: monthlyRevenue 사용
+          setData(
+            (json.monthlyRevenue || []).map((m: any) => ({
+              month: m.month,
+              revenue: m.amount / 100,
+              refund: 0,
+              net: m.amount / 100,
+            }))
+          )
+        }
       } catch (e) {
         console.error(e)
         setData([])

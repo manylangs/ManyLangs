@@ -45,6 +45,7 @@ export default function AdminPage() {
         })
 
         const json = await res.json()
+        console.log("ADMIN REPORT", json)
         setData({ totalRevenue: json.totalRevenue || 0, totalRefund: json.totalRefund || 0, netRevenue: json.netRevenue || 0, paymentCount: json.paymentCount || 0, refundCount: json.refundCount || 0, recentPayments: Array.isArray(json.recentPayments) ? json.recentPayments : [], recentRefunds: Array.isArray(json.recentRefunds) ? json.recentRefunds : [], paymentMap: json.paymentMap || {} })
       } catch (e) {
         console.error(e)
@@ -61,7 +62,7 @@ export default function AdminPage() {
 
   data.recentPayments.forEach((p) => {
     const date = new Date(p.created * 1000).toLocaleDateString()
-    dailyRevenue[date] = (dailyRevenue[date] || 0) + p.amount_received
+    dailyRevenue[date] = (dailyRevenue[date] || 0) + (p.amount || 0)
   })
 
   // ===== 언어별 매출 =====
@@ -75,7 +76,7 @@ export default function AdminPage() {
       const [lang] = l.productId.split("_")
       const code = LANG_MAP[lang] || lang?.toUpperCase()
 
-      langRevenue[code] = (langRevenue[code] || 0) + p.amount_received
+      langRevenue[code] = (langRevenue[code] || 0) + (p.amount || 0)
     })
   })
 
@@ -128,7 +129,7 @@ export default function AdminPage() {
           .map((p, i) => (
             <div key={p.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
 
-              💳 {(p.amount_received / 100).toLocaleString("en-US", {
+              💳 {((p.amount || 0) / 100).toLocaleString("en-US", {
                 style: "currency",
                 currency: "USD",
               })} | {p.status}
@@ -137,7 +138,7 @@ export default function AdminPage() {
               <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
                 📅 {new Date(p.created * 1000).toLocaleDateString("ko-KR")}
                 &nbsp;|&nbsp;
-                📧 <span style={{ fontFamily: "monospace" }}>{p.payment_method?.billing_details?.email || p.id}</span>
+                📧 <span style={{ fontFamily: "monospace" }}>{p.billing_details?.email || p.receipt_email || p.id}</span>
                 &nbsp;|&nbsp;
                 🌍 {p.payment_method?.billing_details?.address?.country || p.currency?.toUpperCase() || "-"}
               </div>

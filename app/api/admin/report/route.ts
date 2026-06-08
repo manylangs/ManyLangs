@@ -20,12 +20,18 @@ export async function GET(req: NextRequest) {
     );
 
     const charges = await stripe.charges.list({
+
       limit: 100,
       created: {
         gte: since,
       },
     });
-
+    console.log(
+      "days:",
+      days,
+      "charges:",
+      charges.data.length
+    );
     const monthlyMap: Record<string, number> = {};
 
     charges.data.forEach((charge) => {
