@@ -21,18 +21,23 @@ export async function GET(req: Request) {
   }
 
   const now = Date.now()
-
-  const snap = await db.collection("licenses").where("expiresAt", ">", now).get()
-
   const langCount: Record<string, number> = {}
+  let total = 0
 
-  snap.docs.forEach((doc) => {
-    const d = doc.data()
-    const lang = d.lang || "unknown"
-    langCount[lang] = (langCount[lang] || 0) + 1
-  })
+  // licenses/{userId} 전체 순회
+  const usersSnap = await db.collection("licenses").get()
 
-  const total = snap.size
+  for (const userDoc of usersSnap.docs) {
+    const itemsSnap = await userDoc.ref.collection("items").get()
+    for (const item of itemsSnap.docs) {
+      const d = item.data()
+      const expiresAt = toMs(d.expiresAt)
+      if (expiresAt <= now) continue
+      const lang = d.lang || "unknown"
+      langCount[lang] = (langCount[lang] || 0) + 1
+      total++
+    }
+  }
 
   return NextResponse.json({ total, langCount })
 }
