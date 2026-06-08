@@ -914,7 +914,7 @@ export default function SelectBooksPage() {
                 <Button variant="outline" size="sm"
                   onClick={() => router.push("/admin/sales")}
                   className="h-8 shrink-0 border-red-500 text-red-500">
-                  Sales
+                  Active Users
                 </Button>
               )}
               {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
