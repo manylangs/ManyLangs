@@ -6,48 +6,38 @@ export const dynamic = "force-dynamic"
 
 const ADMIN_EMAIL = process.env.NEXT_PUBLIC_ADMIN_EMAIL
 
+function toMs(v: any): number {
+  if (!v) return 0
+  if (typeof v === "number") return v
+  if (typeof v?.toMillis === "function") return v.toMillis()
+  const n = Number(v)
+  return Number.isFinite(n) ? n : 0
+}
+
 export async function GET(req: Request) {
   const adminEmail = req.headers.get("x-admin-email")
   if (!adminEmail || adminEmail !== ADMIN_EMAIL) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 })
   }
 
-  try {
-    const usersSnap = await db.collection("licenses").get()
-    console.log("licenses userCount:", usersSnap.size)
-    
-    // 첫 번째 유저의 items 확인
-    if (usersSnap.size > 0) {
-      const firstUser = usersSnap.docs[0]
-      console.log("first userId:", firstUser.id)
-      const itemsSnap = await firstUser.ref.collection("items").get()
-      console.log("first user items count:", itemsSnap.size)
-      if (itemsSnap.size > 0) {
-        console.log("first item data:", JSON.stringify(itemsSnap.docs[0].data()))
-      }
-    }
+  const url = new URL(req.url)
+  const days = Number(url.searchParams.get("days") || "30")
+  const since = Date.now() - days * 24 * 60 * 60 * 1000
 
-    const langCount: Record<string, number> = {}
-    let total = 0
+  // Collection Group으로 모든 users의 items 한번에 조회
+  const snap = await db.collectionGroup("items").get()
 
-    for (const userDoc of usersSnap.docs) {
-      const itemsSnap = await userDoc.ref.collection("items").get()
-      for (const item of itemsSnap.docs) {
-        const d = item.data()
-        const lang = d.lang || "unknown"
-        langCount[lang] = (langCount[lang] || 0) + 1
-        total++
-      }
-    }
+  const langCount: Record<string, number> = {}
+  let total = 0
 
-    return NextResponse.json({ 
-      total, 
-      langCount, 
-      userCount: usersSnap.size,
-      projectId: process.env.FIREBASE_PROJECT_ID 
-    })
-  } catch (e: any) {
-    console.error("licenses api error:", e.message)
-    return NextResponse.json({ error: e.message }, { status: 500 })
-  }
+  snap.docs.forEach((doc) => {
+    const d = doc.data()
+    const issuedAt = toMs(d.issuedAt) || toMs(d.issuedAtMs)
+    if (issuedAt < since) return
+    const lang = d.lang || "unknown"
+    langCount[lang] = (langCount[lang] || 0) + 1
+    total++
+  })
+
+  return NextResponse.json({ total, langCount })
 }
