@@ -36,43 +36,55 @@ export default function RevenuePage() {
 
         const json = await res.json()
 
-        if (days === 7) {
-          // 7D: recentPayments 에서 일별로 직접 집계
-          const dailyMap: Record<string, number> = {}
-
-          const cutoff = Date.now() - 7 * 24 * 60 * 60 * 1000
-
-            ; (json.recentPayments || [])
-              .filter((p: any) => p.created * 1000 >= cutoff)
-              .forEach((p: any) => {
-                const date = new Date(p.created * 1000).toLocaleDateString("en-US", {
-                  month: "short",
-                  day: "numeric",
-                })
-                dailyMap[date] = (dailyMap[date] || 0) + (p.amount || 0)
-              })
-
-          // 날짜 오름차순 정렬
-          const sorted = Object.entries(dailyMap)
-            .sort(([a], [b]) => new Date(a).getTime() - new Date(b).getTime())
-            .map(([date, amount]) => ({
-              month: date,
-              revenue: amount / 100,
-              refund: 0,
-              net: amount / 100,
-            }))
-
-          setData(sorted)
-        } else {
-          // 30D / 1Y: monthlyRevenue 사용
+        if (days === 365) {
+          // 1Y: monthlyRevenue 사용, 이번달 포함되도록 집계
+          // API의 monthlyRevenue가 현재달을 포함하므로 그대로 사용
           setData(
             (json.monthlyRevenue || []).map((m: any) => ({
-              month: m.month,
+              month: m.month, // "2026-06" 형식
               revenue: m.amount / 100,
               refund: 0,
               net: m.amount / 100,
             }))
           )
+        } else {
+          // 7D / 30D: 날짜별 집계 (하루씩 막대)
+          const dayCount = days
+          const now = Date.now()
+
+          // 날짜 슬롯 미리 생성 (오늘 포함 dayCount일)
+          const slots: Record<string, number> = {}
+          for (let i = dayCount - 1; i >= 0; i--) {
+            const d = new Date(now - i * 24 * 60 * 60 * 1000)
+            const label = d.toLocaleDateString("en-US", {
+              month: "numeric",
+              day: "numeric",
+            })
+            slots[label] = 0
+          }
+
+          const cutoff = now - dayCount * 24 * 60 * 60 * 1000
+
+            ; (json.recentPayments || [])
+              .filter((p: any) => p.created * 1000 >= cutoff)
+              .forEach((p: any) => {
+                const label = new Date(p.created * 1000).toLocaleDateString("en-US", {
+                  month: "numeric",
+                  day: "numeric",
+                })
+                if (label in slots) {
+                  slots[label] = (slots[label] || 0) + (p.amount || 0)
+                }
+              })
+
+          const sorted = Object.entries(slots).map(([date, amount]) => ({
+            month: date,
+            revenue: amount / 100,
+            refund: 0,
+            net: amount / 100,
+          }))
+
+          setData(sorted)
         }
       } catch (e) {
         console.error(e)
@@ -101,12 +113,7 @@ export default function RevenuePage() {
         </Link>
       </div>
 
-      <h1
-        style={{
-          fontSize: 24,
-          marginBottom: 20,
-        }}
-      >
+      <h1 style={{ fontSize: 24, marginBottom: 20 }}>
         Revenue Dashboard
       </h1>
 
@@ -129,33 +136,24 @@ export default function RevenuePage() {
               fontSize: 18,
               fontWeight: 700,
               borderRadius: 10,
-              border:
-                days === value
-                  ? "2px solid #111"
-                  : "1px solid #ccc",
-              background:
-                days === value
-                  ? "#111"
-                  : "#fff",
-              color:
-                days === value
-                  ? "#fff"
-                  : "#111",
+              border: days === value ? "2px solid #111" : "1px solid #ccc",
+              background: days === value ? "#111" : "#fff",
+              color: days === value ? "#fff" : "#111",
               cursor: "pointer",
             }}
           >
-            {value === 7
-              ? "7D"
-              : value === 30
-                ? "30D"
-                : "1Y"}
+            {value === 7 ? "7D" : value === 30 ? "30D" : "1Y"}
           </button>
         ))}
       </div>
 
       <ResponsiveContainer width="100%" height={400}>
         <BarChart data={data}>
-          <XAxis dataKey="month" />
+          <XAxis
+            dataKey="month"
+            tick={{ fontSize: days === 30 ? 10 : 12 }}
+            interval={days === 30 ? 2 : 0}
+          />
 
           <YAxis
             tickFormatter={(value) =>
@@ -171,23 +169,9 @@ export default function RevenuePage() {
 
           <Legend />
 
-          <Bar
-            dataKey="revenue"
-            name="Revenue"
-            fill="green"
-          />
-
-          <Bar
-            dataKey="refund"
-            name="Refund"
-            fill="red"
-          />
-
-          <Bar
-            dataKey="net"
-            name="Net Revenue"
-            fill="blue"
-          />
+          <Bar dataKey="revenue" name="Revenue" fill="green" />
+          <Bar dataKey="refund" name="Refund" fill="red" />
+          <Bar dataKey="net" name="Net Revenue" fill="blue" />
         </BarChart>
       </ResponsiveContainer>
     </div>
