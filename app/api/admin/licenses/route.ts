@@ -6,14 +6,6 @@ export const dynamic = "force-dynamic"
 
 const ADMIN_EMAIL = process.env.NEXT_PUBLIC_ADMIN_EMAIL
 
-function toMs(v: any): number {
-  if (!v) return 0
-  if (typeof v === "number") return v
-  if (typeof v?.toMillis === "function") return v.toMillis()
-  const n = Number(v)
-  return Number.isFinite(n) ? n : 0
-}
-
 export async function GET(req: Request) {
   const adminEmail = req.headers.get("x-admin-email")
   if (!adminEmail || adminEmail !== ADMIN_EMAIL) {
@@ -26,6 +18,7 @@ export async function GET(req: Request) {
 
   const langCount: Record<string, number> = {}
   let total = 0
+  const debugSample: any[] = []
 
   const usersSnap = await db.collection("licenses").get()
 
@@ -33,13 +26,25 @@ export async function GET(req: Request) {
     const itemsSnap = await userDoc.ref.collection("items").get()
     for (const item of itemsSnap.docs) {
       const d = item.data()
-      const issuedAt = toMs(d.issuedAt) || toMs(d.issuedAtMs)
-      if (issuedAt < since) continue
+      
+      // 샘플 3개만 디버그용으로 수집
+      if (debugSample.length < 3) {
+        debugSample.push({
+          id: item.id,
+          lang: d.lang,
+          issuedAt: d.issuedAt,
+          issuedAtMs: d.issuedAtMs,
+          issuedAtType: typeof d.issuedAt,
+          keys: Object.keys(d),
+        })
+      }
+
+      // 필터 없이 전부 집계
       const lang = d.lang || "unknown"
       langCount[lang] = (langCount[lang] || 0) + 1
       total++
     }
   }
 
-  return NextResponse.json({ total, langCount })
+  return NextResponse.json({ total, langCount, since, days, debugSample })
 }
