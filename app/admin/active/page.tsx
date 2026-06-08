@@ -9,13 +9,15 @@ const LANG_LABEL: Record<string, string> = {
 }
 
 export default function ActivePage() {
+  const [days, setDays] = useState(30)
   const [chartData, setChartData] = useState<any[] | null>(null)
   const [total, setTotal] = useState(0)
 
   useEffect(() => {
     const fetchData = async () => {
+      setChartData(null)
       try {
-        const res = await fetch("/api/admin/licenses", {
+        const res = await fetch(`/api/admin/licenses?days=${days}`, {
           headers: { "x-admin-email": process.env.NEXT_PUBLIC_ADMIN_EMAIL! },
         })
         const json = await res.json()
@@ -27,15 +29,29 @@ export default function ActivePage() {
       } catch (e) { console.error(e); setChartData([]) }
     }
     fetchData()
-  }, [])
+  }, [days])
 
   return (
     <div style={{ padding: 20 }}>
       <div style={{ marginBottom: 20 }}>
         <Link href="/select-books"><button>📚← Back to Library</button></Link>
       </div>
-      <h1 style={{ fontSize: 24, marginBottom: 8 }}>Active Textbooks by Language</h1>
-      <div style={{ fontSize: 14, color: "#666", marginBottom: 24 }}>Total active: {total}</div>
+      <h1 style={{ fontSize: 24, marginBottom: 8 }}>Active Users by Language</h1>
+      <div style={{ fontSize: 14, color: "#666", marginBottom: 20 }}>Activations in period: {total}</div>
+
+      <div style={{ display: "flex", gap: 12, marginBottom: 24 }}>
+        {[7, 30, 365].map((v) => (
+          <button key={v} onClick={() => setDays(v)} style={{
+            minWidth: 82, minHeight: 48, padding: "12px 18px",
+            fontSize: 18, fontWeight: 700, borderRadius: 10,
+            border: days === v ? "2px solid #111" : "1px solid #ccc",
+            background: days === v ? "#111" : "#fff",
+            color: days === v ? "#fff" : "#111", cursor: "pointer",
+          }}>
+            {v === 7 ? "7D" : v === 30 ? "30D" : "1Y"}
+          </button>
+        ))}
+      </div>
 
       {!chartData ? <div>Loading...</div> : chartData.length === 0 ? <div>No data</div> : (
         <>
@@ -45,7 +61,7 @@ export default function ActivePage() {
               <YAxis allowDecimals={false} />
               <Tooltip />
               <Legend />
-              <Bar dataKey="count" name="Active Textbooks" fill="#4f46e5" />
+              <Bar dataKey="count" name="Activations" fill="#4f46e5" />
             </BarChart>
           </ResponsiveContainer>
           <div style={{ marginTop: 24 }}>

@@ -21,11 +21,11 @@ export async function GET(req: Request) {
   }
 
   const url = new URL(req.url)
-  const debug = url.searchParams.get("debug") === "1"
-  const now = Date.now()
+  const days = Number(url.searchParams.get("days") || "30")
+  const since = Date.now() - days * 24 * 60 * 60 * 1000
+
   const langCount: Record<string, number> = {}
   let total = 0
-  let totalAll = 0
 
   const usersSnap = await db.collection("licenses").get()
 
@@ -33,14 +33,13 @@ export async function GET(req: Request) {
     const itemsSnap = await userDoc.ref.collection("items").get()
     for (const item of itemsSnap.docs) {
       const d = item.data()
-      totalAll++
-      const expiresAt = toMs(d.expiresAt)
-      if (expiresAt <= now) continue
+      const issuedAt = toMs(d.issuedAt) || toMs(d.issuedAtMs)
+      if (issuedAt < since) continue
       const lang = d.lang || "unknown"
       langCount[lang] = (langCount[lang] || 0) + 1
       total++
     }
   }
 
-  return NextResponse.json({ total, langCount, ...(debug ? { totalAll, userCount: usersSnap.size } : {}) })
+  return NextResponse.json({ total, langCount })
 }
