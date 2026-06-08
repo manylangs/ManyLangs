@@ -45,7 +45,7 @@ export default function AdminPage() {
         })
 
         const json = await res.json()
-        setData(json)
+        setData({ totalRevenue: json.totalRevenue || 0, totalRefund: json.totalRefund || 0, netRevenue: json.netRevenue || 0, paymentCount: json.paymentCount || 0, refundCount: json.refundCount || 0, recentPayments: Array.isArray(json.recentPayments) ? json.recentPayments : [], recentRefunds: Array.isArray(json.recentRefunds) ? json.recentRefunds : [], paymentMap: json.paymentMap || {} })
       } catch (e) {
         console.error(e)
       }
@@ -187,7 +187,7 @@ export default function AdminPage() {
           ))}
       </div>
 
-      {visibleRefunds < data.recentRefunds.length && (
+      {visibleRefunds < (data.recentRefunds?.length || 0) && (
         <button
           onClick={() => setVisibleRefunds(prev => prev + 20)}
           style={{ marginTop: 10 }}
