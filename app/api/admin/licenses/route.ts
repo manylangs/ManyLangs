@@ -12,39 +12,42 @@ export async function GET(req: Request) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 })
   }
 
-  const url = new URL(req.url)
-  const days = Number(url.searchParams.get("days") || "30")
-  const since = Date.now() - days * 24 * 60 * 60 * 1000
-
-  const langCount: Record<string, number> = {}
-  let total = 0
-  const debugSample: any[] = []
-
-  const usersSnap = await db.collection("licenses").get()
-
-  for (const userDoc of usersSnap.docs) {
-    const itemsSnap = await userDoc.ref.collection("items").get()
-    for (const item of itemsSnap.docs) {
-      const d = item.data()
-      
-      // 샘플 3개만 디버그용으로 수집
-      if (debugSample.length < 3) {
-        debugSample.push({
-          id: item.id,
-          lang: d.lang,
-          issuedAt: d.issuedAt,
-          issuedAtMs: d.issuedAtMs,
-          issuedAtType: typeof d.issuedAt,
-          keys: Object.keys(d),
-        })
+  try {
+    const usersSnap = await db.collection("licenses").get()
+    console.log("licenses userCount:", usersSnap.size)
+    
+    // 첫 번째 유저의 items 확인
+    if (usersSnap.size > 0) {
+      const firstUser = usersSnap.docs[0]
+      console.log("first userId:", firstUser.id)
+      const itemsSnap = await firstUser.ref.collection("items").get()
+      console.log("first user items count:", itemsSnap.size)
+      if (itemsSnap.size > 0) {
+        console.log("first item data:", JSON.stringify(itemsSnap.docs[0].data()))
       }
-
-      // 필터 없이 전부 집계
-      const lang = d.lang || "unknown"
-      langCount[lang] = (langCount[lang] || 0) + 1
-      total++
     }
-  }
 
-  return NextResponse.json({ total, langCount, since, days, debugSample })
+    const langCount: Record<string, number> = {}
+    let total = 0
+
+    for (const userDoc of usersSnap.docs) {
+      const itemsSnap = await userDoc.ref.collection("items").get()
+      for (const item of itemsSnap.docs) {
+        const d = item.data()
+        const lang = d.lang || "unknown"
+        langCount[lang] = (langCount[lang] || 0) + 1
+        total++
+      }
+    }
+
+    return NextResponse.json({ 
+      total, 
+      langCount, 
+      userCount: usersSnap.size,
+      projectId: process.env.FIREBASE_PROJECT_ID 
+    })
+  } catch (e: any) {
+    console.error("licenses api error:", e.message)
+    return NextResponse.json({ error: e.message }, { status: 500 })
+  }
 }
