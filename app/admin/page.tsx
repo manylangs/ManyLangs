@@ -18,6 +18,36 @@ function parseProduct(productId: string) {
 }
 // ===== [END] language map =====
 
+const PAGE_SIZE = 20
+
+function Pagination({ total, page, onPage }: { total: number; page: number; onPage: (p: number) => void }) {
+  const totalPages = Math.ceil(total / PAGE_SIZE)
+  if (totalPages <= 1) return null
+
+  return (
+    <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginTop: 12 }}>
+      {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+        <button
+          key={p}
+          onClick={() => onPage(p)}
+          style={{
+            minWidth: 32,
+            padding: "4px 8px",
+            borderRadius: 4,
+            border: p === page ? "2px solid #111" : "1px solid #ccc",
+            background: p === page ? "#111" : "#fff",
+            color: p === page ? "#fff" : "#111",
+            cursor: "pointer",
+            fontSize: 13,
+          }}
+        >
+          {p}
+        </button>
+      ))}
+    </div>
+  )
+}
+
 type Report = {
   totalRevenue: number
   totalRefund: number
@@ -31,9 +61,8 @@ type Report = {
 
 export default function AdminPage() {
   const [data, setData] = useState<Report | null>(null)
-
-  const [visiblePayments, setVisiblePayments] = useState(20)
-  const [visibleRefunds, setVisibleRefunds] = useState(20)
+  const [paymentPage, setPaymentPage] = useState(1)
+  const [refundPage, setRefundPage] = useState(1)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -80,6 +109,17 @@ export default function AdminPage() {
     })
   })
 
+  // 페이지 슬라이스 (1페이지 = 가장 최근)
+  const paymentsSlice = data.recentPayments.slice(
+    (paymentPage - 1) * PAGE_SIZE,
+    paymentPage * PAGE_SIZE
+  )
+
+  const refundsSlice = data.recentRefunds.slice(
+    (refundPage - 1) * PAGE_SIZE,
+    refundPage * PAGE_SIZE
+  )
+
   return (
     <div style={{ padding: 20 }}>
 
@@ -89,6 +129,7 @@ export default function AdminPage() {
         </Link>
       </div>
       <h1 style={{ fontSize: 24, marginBottom: 20 }}>Admin Dashboard</h1>
+
       {/* 카드 */}
       <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
         <Card title="Total Revenue" value={data.totalRevenue} />
@@ -121,107 +162,107 @@ export default function AdminPage() {
       </div>
 
       {/* ===== Payments ===== */}
-      <h2 style={{ marginTop: 40 }}>Recent Payments</h2>
+      <h2 style={{ marginTop: 40 }}>
+        Recent Payments ({data.recentPayments.length}건)
+      </h2>
 
-      <div>
-        {data.recentPayments
-          .slice(0, visiblePayments)
-          .map((p, i) => {
-            // 이메일: charge 객체 기준으로 가능한 모든 경로 탐색
-            const email =
-              p.billing_details?.email ||
-              p.receipt_email ||
-              p.payment_method?.billing_details?.email ||
-              p.id
+      <Pagination
+        total={data.recentPayments.length}
+        page={paymentPage}
+        onPage={(p) => { setPaymentPage(p); window.scrollTo(0, 0) }}
+      />
 
-            // 국가: billing_details 우선, 없으면 payment_method
-            const country =
-              p.billing_details?.address?.country ||
-              p.payment_method?.billing_details?.address?.country ||
-              "-"
+      <div style={{ marginTop: 8 }}>
+        {paymentsSlice.map((p, i) => {
+          const email =
+            p.billing_details?.email ||
+            p.receipt_email ||
+            p.payment_method?.billing_details?.email ||
+            p.id
 
-            return (
-              <div key={p.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
+          const country =
+            p.billing_details?.address?.country ||
+            p.payment_method?.billing_details?.address?.country ||
+            "-"
 
-                💳 {((p.amount || 0) / 100).toLocaleString("en-US", {
-                  style: "currency",
-                  currency: "USD",
-                })} | {p.status}
+          return (
+            <div key={p.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
+              💳 {((p.amount || 0) / 100).toLocaleString("en-US", {
+                style: "currency",
+                currency: "USD",
+              })} | {p.status}
 
-                {/* 날짜 + 이메일 + 국가 */}
-                <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
-                  📅 {new Date(p.created * 1000).toLocaleDateString("ko-KR")}
-                  &nbsp;|&nbsp;
-                  📧 <span style={{ fontFamily: "monospace" }}>{email}</span>
-                  &nbsp;|&nbsp;
-                  🌍 {country}
-                </div>
-
-                <div style={{ fontSize: 12, color: "#666", marginTop: 4 }}>
-                  coupons: {data.paymentMap?.[p.id]?.coupons?.length || 0} | licenses: {data.paymentMap?.[p.id]?.licenses?.length || 0}
-                </div>
-
-                {data.paymentMap?.[p.id]?.licenses?.map((l: any) => (
-                  <div key={l.id} style={{ fontSize: 11, color: "#999" }}>
-                    - {parseProduct(l.productId)}
-                  </div>
-                ))}
+              <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
+                📅 {new Date(p.created * 1000).toLocaleDateString("ko-KR")}
+                &nbsp;|&nbsp;
+                📧 <span style={{ fontFamily: "monospace" }}>{email}</span>
+                &nbsp;|&nbsp;
+                🌍 {country}
               </div>
-            )
-          })}
+
+              <div style={{ fontSize: 12, color: "#666", marginTop: 4 }}>
+                coupons: {data.paymentMap?.[p.id]?.coupons?.length || 0} | licenses: {data.paymentMap?.[p.id]?.licenses?.length || 0}
+              </div>
+
+              {data.paymentMap?.[p.id]?.licenses?.map((l: any) => (
+                <div key={l.id} style={{ fontSize: 11, color: "#999" }}>
+                  - {parseProduct(l.productId)}
+                </div>
+              ))}
+            </div>
+          )
+        })}
       </div>
 
-      {visiblePayments < data.recentPayments.length && (
-        <button
-          onClick={() => setVisiblePayments(prev => prev + 20)}
-          style={{ marginTop: 10 }}
-        >
-          Load More Payments ({visiblePayments} / {data.recentPayments.length})
-        </button>
-      )}
+      <Pagination
+        total={data.recentPayments.length}
+        page={paymentPage}
+        onPage={(p) => { setPaymentPage(p); window.scrollTo(0, 0) }}
+      />
 
       {/* ===== Refunds ===== */}
-      <h2 style={{ marginTop: 40 }}>Recent Refunds</h2>
+      <h2 style={{ marginTop: 40 }}>
+        Recent Refunds ({data.recentRefunds.length}건)
+      </h2>
 
-      <div>
-        {data.recentRefunds
-          ?.slice(0, visibleRefunds || 20)
-          ?.map((r, i) => {
-            // 환불 객체가 charge 자체인 경우를 포함해 모든 경로 탐색
-            const refundEmail =
-              (r as any).charge?.receipt_email ||
-              (r as any).charge?.billing_details?.email ||
-              (r as any).receipt_email ||
-              (r as any).billing_details?.email ||
-              (r as any).payment_intent?.receipt_email ||
-              r.id.slice(0, 8) + "..." + r.id.slice(-4)
+      <Pagination
+        total={data.recentRefunds.length}
+        page={refundPage}
+        onPage={(p) => { setRefundPage(p); window.scrollTo(0, 0) }}
+      />
 
-            return (
-              <div key={r.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
-                💸 {(r.amount / 100).toLocaleString("en-US", {
-                  style: "currency",
-                  currency: "USD",
-                })}
+      <div style={{ marginTop: 8 }}>
+        {refundsSlice.map((r, i) => {
+          const refundEmail =
+            (r as any).charge?.receipt_email ||
+            (r as any).charge?.billing_details?.email ||
+            (r as any).receipt_email ||
+            (r as any).billing_details?.email ||
+            (r as any).payment_intent?.receipt_email ||
+            r.id.slice(0, 8) + "..." + r.id.slice(-4)
 
-                {/* 환불 날짜 + 이메일 */}
-                <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
-                  📅 {new Date(r.created * 1000).toLocaleDateString("ko-KR")}
-                  &nbsp;|&nbsp;
-                  📧 <span style={{ fontFamily: "monospace" }}>{refundEmail}</span>
-                </div>
+          return (
+            <div key={r.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
+              💸 {(r.amount / 100).toLocaleString("en-US", {
+                style: "currency",
+                currency: "USD",
+              })}
+
+              <div style={{ fontSize: 12, color: "#444", marginTop: 2 }}>
+                📅 {new Date(r.created * 1000).toLocaleDateString("ko-KR")}
+                &nbsp;|&nbsp;
+                📧 <span style={{ fontFamily: "monospace" }}>{refundEmail}</span>
               </div>
-            )
-          })}
+            </div>
+          )
+        })}
       </div>
 
-      {visibleRefunds < (data.recentRefunds?.length || 0) && (
-        <button
-          onClick={() => setVisibleRefunds(prev => prev + 20)}
-          style={{ marginTop: 10 }}
-        >
-          Load More Refunds ({visibleRefunds} / {data.recentRefunds.length})
-        </button>
-      )}
+      <Pagination
+        total={data.recentRefunds.length}
+        page={refundPage}
+        onPage={(p) => { setRefundPage(p); window.scrollTo(0, 0) }}
+      />
     </div>
   )
 }
