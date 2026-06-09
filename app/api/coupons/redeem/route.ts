@@ -115,8 +115,7 @@ export async function POST(req: Request) {
         }
       }
 
-      const durationDays = campaign.durationDays ?? 10;
-      const expiresAt = now + DAY_MS * durationDays;
+      const expiresAt = endAt;
 
       await licRef.set(
         {
