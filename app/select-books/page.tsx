@@ -896,34 +896,6 @@ export default function SelectBooksPage() {
                   Admin
                 </Button>
               )}
-              {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
-                <Button variant="outline" size="sm"
-                  onClick={() => router.push("/admin/revenue")}
-                  className="h-8 shrink-0 border-red-500 text-red-500">
-                  Revenue
-                </Button>
-              )}
-              {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
-                <Button variant="outline" size="sm"
-                  onClick={() => router.push("/admin/logs")}
-                  className="h-8 shrink-0 border-red-500 text-red-500">
-                  Logs
-                </Button>
-              )}
-              {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
-                <Button variant="outline" size="sm"
-                  onClick={() => router.push("/admin/active")}
-                  className="h-8 shrink-0 border-red-500 text-red-500">
-                  Active Textbooks
-                </Button>
-              )}
-              {user?.primaryEmailAddress?.emailAddress === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
-                <Button variant="outline" size="sm"
-                  onClick={() => router.push("/admin/promo")}
-                  className="h-8 shrink-0 border-red-500 text-red-500">
-                  Free Coupons
-                </Button>
-              )}
             </div>
             <div className="text-xs text-gray-500 whitespace-nowrap text-right shrink-0">
               Contact:{" "}
