@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
-import Database from "better-sqlite3";
-import path from "path";
-
-const DB_PATH = path.join(process.cwd(), "manylangs_crm.db");
+import { createClient } from "@libsql/client";
 
 function getDb() {
-  return new Database(DB_PATH);
+  return createClient({
+    url: process.env.TURSO_DATABASE_URL!,
+    authToken: process.env.TURSO_AUTH_TOKEN!,
+  });
 }
 
 // GET — 리드 목록 (status 필터 가능)
@@ -16,26 +16,25 @@ export async function GET(req: NextRequest) {
 
     const db = getDb();
 
-    let query = `
+    let sql = `
       SELECT
         id, school_name, website, email, country,
         lead_type, lead_status, lead_score, campaign_status, source
       FROM schools
     `;
 
-    const params: string[] = [];
+    const args: string[] = [];
 
     if (status && status !== "ALL") {
-      query += " WHERE lead_status = ?";
-      params.push(status);
+      sql += " WHERE lead_status = ?";
+      args.push(status);
     }
 
-    query += " ORDER BY lead_score DESC LIMIT 500";
+    sql += " ORDER BY lead_score DESC LIMIT 500";
 
-    const leads = db.prepare(query).all(...params);
-    db.close();
+    const result = await db.execute({ sql, args });
 
-    return NextResponse.json({ leads });
+    return NextResponse.json({ leads: result.rows });
   } catch (err: any) {
     console.error("[LEADS GET]", err);
     return NextResponse.json({ leads: [] });
