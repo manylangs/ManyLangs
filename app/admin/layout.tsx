@@ -10,7 +10,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     pathname.startsWith("/admin/imports") ||
     pathname.startsWith("/admin/leads") ||
     pathname.startsWith("/admin/tracking") ||
-    pathname.startsWith("/admin/funnel")
+    pathname.startsWith("/admin/funnel") ||
+    pathname.startsWith("/admin/exports")
   )
 
   const navStyle: React.CSSProperties = {
@@ -61,57 +62,29 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
   return (
     <div>
-      {/* 네비게이션 */}
       <nav style={navStyle}>
+        <Link href="/admin" style={linkStyle(pathname === "/admin")}>Dashboard</Link>
+        <Link href="/admin/revenue" style={linkStyle(pathname.startsWith("/admin/revenue"))}>Revenue</Link>
+        <Link href="/admin/logs" style={linkStyle(pathname.startsWith("/admin/logs"))}>Logs</Link>
+        <Link href="/admin/active" style={linkStyle(pathname.startsWith("/admin/active"))}>Active</Link>
+        <Link href="/admin/promo" style={linkStyle(pathname.startsWith("/admin/promo"))}>Promo</Link>
 
-        {/* 기존 메뉴 */}
-        <Link href="/admin" style={linkStyle(pathname === "/admin")}>
-          Dashboard
-        </Link>
-        <Link href="/admin/revenue" style={linkStyle(pathname.startsWith("/admin/revenue"))}>
-          Revenue
-        </Link>
-        <Link href="/admin/logs" style={linkStyle(pathname.startsWith("/admin/logs"))}>
-          Logs
-        </Link>
-        <Link href="/admin/active" style={linkStyle(pathname.startsWith("/admin/active"))}>
-          Active
-        </Link>
-        <Link href="/admin/promo" style={linkStyle(pathname.startsWith("/admin/promo"))}>
-          Promo
-        </Link>
-
-        {/* CRM 드롭다운 */}
         <div style={{ position: "relative" }}>
-          <button
-            style={dropdownBtnStyle}
-            onClick={() => setCrmOpen(!crmOpen)}
-          >
+          <button style={dropdownBtnStyle} onClick={() => setCrmOpen(!crmOpen)}>
             CRM {crmOpen ? "▲" : "▼"}
           </button>
         </div>
 
-        {/* CRM 하위 메뉴 (펼쳐진 상태) */}
         {crmOpen && (
           <>
-            <Link href="/admin/imports" style={subLinkStyle(pathname.startsWith("/admin/imports"))}>
-              📥 Imports
-            </Link>
-            <Link href="/admin/leads" style={subLinkStyle(pathname.startsWith("/admin/leads"))}>
-              🎯 Leads
-            </Link>
-            <Link href="/admin/funnel" style={subLinkStyle(pathname.startsWith("/admin/funnel"))}>
-              📈 Funnel
-            </Link>
-            <Link href="/admin/tracking" style={subLinkStyle(pathname.startsWith("/admin/tracking"))}>
-              📊 Tracking
-            </Link>
+            <Link href="/admin/imports" style={subLinkStyle(pathname.startsWith("/admin/imports"))}>📥 Imports</Link>
+            <Link href="/admin/leads" style={subLinkStyle(pathname.startsWith("/admin/leads"))}>🎯 Leads</Link>
+            <Link href="/admin/funnel" style={subLinkStyle(pathname.startsWith("/admin/funnel"))}>📈 Funnel</Link>
+            <Link href="/admin/exports" style={subLinkStyle(pathname.startsWith("/admin/exports"))}>💾 Exports</Link>
+            <Link href="/admin/tracking" style={subLinkStyle(pathname.startsWith("/admin/tracking"))}>📊 Tracking</Link>
           </>
         )}
-
       </nav>
-
-      {/* 페이지 콘텐츠 */}
       <main>{children}</main>
     </div>
   )

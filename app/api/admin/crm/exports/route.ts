@@ -8,18 +8,15 @@ function getDb() {
   });
 }
 
-function toCSV(rows: Record<string, any>[]): string {
+function toCSV(rows: any[]): string {
   if (rows.length === 0) return "";
-  const headers = ["id","school_name","website","email","country","city","phone","linkedin","source","lead_type","lead_score","lead_status","campaign_status","created_at"];
-  const escape = (v: any) => {
-    if (v == null) return "";
-    const s = String(v);
-    return s.includes(",") || s.includes('"') || s.includes("\n")
-      ? `"${s.replace(/"/g, '""')}"` : s;
-  };
+  const headers = ["id","school_name","website","email","country","city","source","lead_type","lead_score","lead_status","campaign_status","created_at"];
   const lines = [headers.join(",")];
   for (const row of rows) {
-    lines.push(headers.map((h) => escape(row[h])).join(","));
+    lines.push(headers.map((h) => {
+      const v = row[h] ?? "";
+      return `"${String(v).replace(/"/g, '""')}"`;
+    }).join(","));
   }
   return lines.join("\n");
 }
@@ -27,28 +24,30 @@ function toCSV(rows: Record<string, any>[]): string {
 export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
-    const type      = searchParams.get("type")      ?? "all";
-    const startDate = searchParams.get("startDate") ?? null;
-    const endDate   = searchParams.get("endDate")   ?? null;
+    const type      = searchParams.get("type") ?? "all";
+    const startDate = searchParams.get("startDate");
+    const endDate   = searchParams.get("endDate");
 
     const db = getDb();
 
-    let sql = `SELECT id, school_name, website, email, country, city, phone, linkedin,
-                      source, lead_type, lead_score, lead_status, campaign_status, created_at
-               FROM schools WHERE 1=1`;
-    const args: any[] = [];
+    let sql = `SELECT id, school_name, website, email, country, city, source, lead_type, lead_score, lead_status, campaign_status, created_at FROM schools`;
+    const conditions: string[] = [];
+    const args: string[] = [];
 
-    if (type === "hot")           { sql += " AND lead_status = ?";    args.push("HOT"); }
-    else if (type === "warm")     { sql += " AND lead_status = ?";    args.push("WARM"); }
-    else if (type === "cold")     { sql += " AND lead_status = ?";    args.push("COLD"); }
-    else if (type === "apollo")   { sql += " AND source = ?";         args.push("APOLLO"); }
+    if (type === "hot")            { conditions.push("lead_status = ?"); args.push("HOT"); }
+    else if (type === "warm")      { conditions.push("lead_status = ?"); args.push("WARM"); }
+    else if (type === "cold")      { conditions.push("lead_status = ?"); args.push("COLD"); }
+    else if (type === "apollo")    { conditions.push("source = ?"); args.push("APOLLO"); }
     else if (type === "ready_to_send") {
-      sql += " AND lead_status IN ('HOT','WARM') AND email IS NOT NULL AND email != '' AND is_contacted = 0";
+      conditions.push("lead_status IN ('HOT','WARM')");
+      conditions.push("email IS NOT NULL AND email != ''");
+      conditions.push("is_contacted = 0");
     }
 
-    if (startDate) { sql += " AND DATE(created_at) >= ?"; args.push(startDate); }
-    if (endDate)   { sql += " AND DATE(created_at) <= ?"; args.push(endDate); }
+    if (startDate) { conditions.push("created_at >= ?"); args.push(startDate); }
+    if (endDate)   { conditions.push("created_at <= ?"); args.push(endDate + " 23:59:59"); }
 
+    if (conditions.length > 0) sql += " WHERE " + conditions.join(" AND ");
     sql += " ORDER BY lead_score DESC LIMIT 5000";
 
     const result = await db.execute({ sql, args });
@@ -57,7 +56,6 @@ export async function GET(req: NextRequest) {
     const filename = `${type}_leads_${new Date().toISOString().slice(0,10)}.csv`;
 
     return new NextResponse(csv, {
-      status: 200,
       headers: {
         "Content-Type": "text/csv; charset=utf-8",
         "Content-Disposition": `attachment; filename="${filename}"`,
