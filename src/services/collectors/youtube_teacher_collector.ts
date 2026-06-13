@@ -78,7 +78,7 @@ async function searchChannelIds(query: string): Promise<string[]> {
       type: "channel",
       q: query,
       maxResults: "20",
-      relevanceLanguage: "ko",  // helps surface native results
+      relevanceLanguage: "ko",
     });
     return (data.items ?? []).map((i: any) => i.snippet?.channelId as string).filter(Boolean);
   } catch (e) {
@@ -125,18 +125,14 @@ function extractLinks(text: string): {
   instagram: string | null;
   linkedin: string | null;
 } {
-  // Email
   const email = text.match(/[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}/)?.[0] ?? null;
 
-  // Instagram
   const igMatch = text.match(/instagram\.com\/([A-Za-z0-9._]+)/i);
   const instagram = igMatch ? `https://instagram.com/${igMatch[1]}` : null;
 
-  // LinkedIn
   const liMatch = text.match(/linkedin\.com\/in\/([A-Za-z0-9._\-]+)/i);
   const linkedin = liMatch ? `https://linkedin.com/in/${liMatch[1]}` : null;
 
-  // Website — exclude known social/video domains
   const excludeDomains = /youtube|instagram|linkedin|twitter|facebook|tiktok|bit\.ly|linktr\.ee|youtu\.be/i;
   const allUrls = text.match(/https?:\/\/[^\s<>"']+/gi) ?? [];
   const website = allUrls.find((u) => !excludeDomains.test(u)) ?? null;
@@ -144,7 +140,20 @@ function extractLinks(text: string): {
   return { email, instagram, linkedin, website };
 }
 
-// ─── Step 5: Score ────────────────────────────────────────────────────────────
+// ─── Step 5: Contact grade (영업 우선순위) ───────────────────────────────────
+// A: 이메일 있음
+// B: 이메일 없음 + 인스타 있음
+// C: 이메일/인스타 없음 + 웹사이트 있음
+// D: 연락수단 없음 → 저장 안 함
+
+function contactGrade(links: ReturnType<typeof extractLinks>): "A" | "B" | "C" | "D" {
+  if (links.email)     return "A";
+  if (links.instagram) return "B";
+  if (links.website)   return "C";
+  return "D";
+}
+
+// ─── Step 6: Score ────────────────────────────────────────────────────────────
 
 function calcScore(
   subs: number,
@@ -152,16 +161,16 @@ function calcScore(
   recentDays: number
 ): number {
   let s = 0;
-  if (subs > 10000) s += 20;
-  if (links.website)   s += 20;
+  if (subs > 10000)    s += 20;
   if (links.email)     s += 30;
+  if (links.website)   s += 20;
   if (links.instagram) s += 10;
   if (links.linkedin)  s += 10;
   if (recentDays <= 30) s += 20;
   return Math.min(s, 100);
 }
 
-// ─── Step 6: Determine lead_status from score ────────────────────────────────
+// ─── Step 7: lead_status from score ──────────────────────────────────────────
 
 function scoreToStatus(score: number): string {
   if (score >= 70) return "HOT";
@@ -190,7 +199,6 @@ export async function collectYouTubeTeachers(language: string): Promise<{
     const kw = LANGUAGE_KEYWORDS[lang];
     if (!kw) continue;
 
-    // Collect unique channel IDs across all queries for this language
     const channelIdSet = new Set<string>();
     const allQueries = [...kw.native, ...kw.english];
 
@@ -202,7 +210,6 @@ export async function collectYouTubeTeachers(language: string): Promise<{
     const channelIds = Array.from(channelIdSet);
     totalSearched += channelIds.length;
 
-    // Process in batches of 50 (YouTube API limit)
     for (let i = 0; i < channelIds.length; i += 50) {
       const batch = channelIds.slice(i, i + 50);
       let items: any[] = [];
@@ -217,13 +224,6 @@ export async function collectYouTubeTeachers(language: string): Promise<{
       for (const item of items) {
         const subs = Number(item.statistics?.subscriberCount ?? 0);
 
-        // Filter: min 500 subscribers
-        if (subs < 500) {
-          totalSkipped++;
-          continue;
-        }
-
-        // Get description from snippet or brandingSettings
         const desc: string =
           item.snippet?.description ??
           item.brandingSettings?.channel?.description ??
@@ -231,13 +231,14 @@ export async function collectYouTubeTeachers(language: string): Promise<{
 
         const links = extractLinks(desc);
 
-        // Filter: must have at least one contact/social link
-        if (!links.website && !links.email && !links.instagram && !links.linkedin) {
+        // ✅ 변경1: 구독자 조건 제거
+        // ✅ 변경2: D등급(연락수단 없음)만 버림
+        const grade = contactGrade(links);
+        if (grade === "D") {
           totalSkipped++;
           continue;
         }
 
-        // Get recent video date from uploads playlist
         const uploadsPlaylistId: string | undefined =
           item.contentDetails?.relatedPlaylists?.uploads;
 
@@ -253,8 +254,8 @@ export async function collectYouTubeTeachers(language: string): Promise<{
           }
         }
 
-        // Filter: active within 180 days
-        if (recentDays > 180) {
+        // ✅ 변경3: 180일 → 365일
+        if (recentDays > 365) {
           totalSkipped++;
           continue;
         }
@@ -262,7 +263,7 @@ export async function collectYouTubeTeachers(language: string): Promise<{
         const channelId: string = item.id;
         const score = calcScore(subs, links, recentDays);
 
-        // Duplicate check
+        // 중복 체크
         const existing = await db.execute({
           sql: "SELECT id FROM schools WHERE channel_id = ?",
           args: [channelId],
