@@ -9,7 +9,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   const [crmOpen, setCrmOpen] = useState(
     pathname.startsWith("/admin/imports") ||
     pathname.startsWith("/admin/leads") ||
-    pathname.startsWith("/admin/tracking")
+    pathname.startsWith("/admin/tracking") ||
+    pathname.startsWith("/admin/funnel")
   )
 
   const navStyle: React.CSSProperties = {
@@ -98,6 +99,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             </Link>
             <Link href="/admin/leads" style={subLinkStyle(pathname.startsWith("/admin/leads"))}>
               🎯 Leads
+            </Link>
+            <Link href="/admin/funnel" style={subLinkStyle(pathname.startsWith("/admin/funnel"))}>
+              📈 Funnel
             </Link>
             <Link href="/admin/tracking" style={subLinkStyle(pathname.startsWith("/admin/tracking"))}>
               📊 Tracking
