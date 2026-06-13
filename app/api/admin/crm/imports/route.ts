@@ -100,7 +100,7 @@ function mapRow(row: Record<string, string>) {
 }
 
 function generateBatchId(): string {
-  return `APOLLO_${new Date().toISOString().replace(/[-:T.Z]/g, "").slice(0, 15)}`;
+  const n = new Date(); const pad = (x: number) => String(x).padStart(2,"0"); return `APOLLO_${n.getFullYear()}${pad(n.getMonth()+1)}${pad(n.getDate())}_${pad(n.getHours())}${pad(n.getMinutes())}${pad(n.getSeconds())}`;
 }
 
 export async function GET() {
