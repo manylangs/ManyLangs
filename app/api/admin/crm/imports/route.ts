@@ -1,12 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
-import Database from "better-sqlite3";
-import path from "path";
-
-const DB_PATH = path.join(process.cwd(), "manylangs_crm.db");
+import { createClient } from "@libsql/client";
 
 function getDb() {
-  const db = new Database(DB_PATH);
-  db.exec(`
+  return createClient({
+    url: process.env.TURSO_DATABASE_URL!,
+    authToken: process.env.TURSO_AUTH_TOKEN!,
+  });
+}
+
+async function initSchema(db: ReturnType<typeof createClient>) {
+  await db.execute(`
     CREATE TABLE IF NOT EXISTS import_batches (
       id            INTEGER PRIMARY KEY AUTOINCREMENT,
       batch_id      TEXT UNIQUE,
@@ -17,7 +20,7 @@ function getDb() {
       created_at    TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )
   `);
-  db.exec(`
+  await db.execute(`
     CREATE TABLE IF NOT EXISTS schools (
       id               INTEGER PRIMARY KEY AUTOINCREMENT,
       school_name      TEXT,
@@ -38,7 +41,6 @@ function getDb() {
       created_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )
   `);
-  return db;
 }
 
 function normalizeEmail(raw: string | undefined): string | null {
@@ -96,18 +98,34 @@ function mapRow(row: Record<string, string>) {
   const country = get("Country", "Company Country") ?? null;
   const city = get("City", "Company City") ?? null;
   const linkedin = get("LinkedIn URL", "Person Linkedin Url", "Company Linkedin Url") ?? null;
-  return { school_name: name ?? null, website, email, phone, country, city, linkedin, lead_type: classifyLeadType(name ?? "", website ?? ""), source: "APOLLO" };
+  return {
+    school_name: name ?? null,
+    website,
+    email,
+    phone,
+    country,
+    city,
+    linkedin,
+    lead_type: classifyLeadType(name ?? "", website ?? ""),
+    source: "APOLLO",
+  };
 }
 
 function generateBatchId(): string {
-  const n = new Date(); const pad = (x: number) => String(x).padStart(2,"0"); return `APOLLO_${n.getFullYear()}${pad(n.getMonth()+1)}${pad(n.getDate())}_${pad(n.getHours())}${pad(n.getMinutes())}${pad(n.getSeconds())}`;
+  const n = new Date();
+  const pad = (x: number) => String(x).padStart(2, "0");
+  return `APOLLO_${n.getFullYear()}${pad(n.getMonth() + 1)}${pad(n.getDate())}_${pad(n.getHours())}${pad(n.getMinutes())}${pad(n.getSeconds())}`;
 }
 
 export async function GET() {
   try {
     const db = getDb();
-    const batches = db.prepare(`SELECT id, batch_id, source, filename, total_rows, imported_rows, created_at FROM import_batches ORDER BY created_at DESC LIMIT 100`).all();
-    db.close();
+    await initSchema(db);
+    const result = await db.execute(
+      `SELECT id, batch_id, source, filename, total_rows, imported_rows, created_at
+       FROM import_batches ORDER BY created_at DESC LIMIT 100`
+    );
+    const batches = result.rows;
     return NextResponse.json({ batches });
   } catch (err) {
     console.error("[IMPORTS GET]", err);
@@ -125,27 +143,49 @@ export async function POST(req: NextRequest) {
     const rows = parseCSV(text);
     const batchId = generateBatchId();
     const db = getDb();
+    await initSchema(db);
 
-    const insertLead = db.prepare(`
-      INSERT OR IGNORE INTO schools (school_name, website, email, phone, country, city, linkedin, lead_type, source, discovery_batch, is_merged, is_contacted, lead_score, lead_status, campaign_status)
-      VALUES (@school_name, @website, @email, @phone, @country, @city, @linkedin, @lead_type, @source, @discovery_batch, 0, 0, 0, 'COLD', 'NEW')
-    `);
-    const insertBatch = db.prepare(`INSERT OR IGNORE INTO import_batches (batch_id, source, filename, total_rows, imported_rows) VALUES (@batch_id, @source, @filename, @total_rows, @imported_rows)`);
-
-    let imported = 0, skipped = 0, duplicates = 0;
+    let imported = 0;
+    let skipped = 0;
+    let duplicates = 0;
     const total = rows.length;
 
-    const run = db.transaction(() => {
-      for (const row of rows) {
-        const lead = mapRow(row);
-        if (!lead.website) { skipped++; continue; }
-        const r = insertLead.run({ ...lead, discovery_batch: batchId });
-        if (r.changes > 0) imported++; else duplicates++;
+    for (const row of rows) {
+      const lead = mapRow(row);
+      if (!lead.website) { skipped++; continue; }
+
+      try {
+        const r = await db.execute({
+          sql: `INSERT OR IGNORE INTO schools
+                  (school_name, website, email, phone, country, city, linkedin,
+                   lead_type, source, discovery_batch,
+                   is_merged, is_contacted, lead_score, lead_status, campaign_status)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, 0, 0, 'COLD', 'NEW')`,
+          args: [
+            lead.school_name,
+            lead.website,
+            lead.email,
+            lead.phone,
+            lead.country,
+            lead.city,
+            lead.linkedin,
+            lead.lead_type,
+            lead.source,
+            batchId,
+          ],
+        });
+        if (r.rowsAffected > 0) imported++; else duplicates++;
+      } catch {
+        duplicates++;
       }
-      insertBatch.run({ batch_id: batchId, source: "APOLLO", filename: file.name, total_rows: total, imported_rows: imported });
+    }
+
+    await db.execute({
+      sql: `INSERT OR IGNORE INTO import_batches
+              (batch_id, source, filename, total_rows, imported_rows)
+            VALUES (?, ?, ?, ?, ?)`,
+      args: [batchId, "APOLLO", file.name, total, imported],
     });
-    run();
-    db.close();
 
     return NextResponse.json({ success: true, batch_id: batchId, total, imported, duplicates, skipped });
   } catch (err: any) {
