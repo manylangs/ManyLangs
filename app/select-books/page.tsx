@@ -708,7 +708,7 @@ export default function SelectBooksPage() {
 
       if (validStripeGroups.length === 0) {
         setLoading(false);
-        setRefundError("No card purchases available to refund. Please refer to the note above.");
+        setRefundError("show");
         return;
       }
 
@@ -1211,7 +1211,11 @@ export default function SelectBooksPage() {
                   </div>
 
                   {refundError && (
-                    <p className="text-xs text-red-500 text-center">{refundError}</p>
+                    <p className="text-xs text-red-500 text-center">
+                      No card purchases to refund here.<br />
+                      Google Play purchases → refund via Google Play.<br />
+                      Apple purchases → refund via Apple.
+                    </p>
                   )}
 
                   <Button
