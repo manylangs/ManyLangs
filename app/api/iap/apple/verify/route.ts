@@ -46,6 +46,7 @@ export async function POST(
 
     // 2. body parsing
     let transactionId: string;
+    let originalTransactionId: string;
     let productId: string;
 
     try {
@@ -59,6 +60,10 @@ export async function POST(
         );
 
         transactionId =
+            body.transactionId;
+
+        originalTransactionId =
+            body.originalTransactionId ??
             body.transactionId;
 
         productId =
@@ -201,7 +206,12 @@ export async function POST(
                         provider:
                             "apple_app_store",
 
+                        source:
+                            "apple_app_store",
+
                         transactionId,
+
+                        originalTransactionId,
 
                         productId,
 
