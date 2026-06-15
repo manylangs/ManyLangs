@@ -558,7 +558,6 @@ export default function SelectBooksPage() {
   }
 
   async function requestRefund() {
-    if (!confirm("Refund all eligible purchases?")) return;
     if (loading) return;
 
     setLoading(true);
@@ -707,6 +706,7 @@ export default function SelectBooksPage() {
       );
 
       if (validStripeGroups.length === 0) {
+        setLoading(false);
         alert(
           "No card purchases available to refund. Please refer to the note above."
         );
