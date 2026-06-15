@@ -82,12 +82,58 @@ export async function GET(req: NextRequest) {
       (c) => c.refunded
     ).length;
 
-    const recentPayments = charges.data.filter(
-      (c) => c.paid
-    );
+    const recentPayments = charges.data
+      .filter((c) => c.paid)
+      .map((c) => ({
+        ...c,
+        adminEmail:
+          c.billing_details?.email ||
+          c.receipt_email ||
+          null,
+        chargeId: c.id,
+        paymentIntentId:
+          typeof c.payment_intent === "string"
+            ? c.payment_intent
+            : c.payment_intent?.id || null,
+      }));
 
-    const recentRefunds = charges.data.filter(
-      (c) => c.refunded && c.amount_refunded > 0
+    const refunds = await stripe.refunds.list({
+      limit: 100,
+      created: {
+        gte: since,
+      },
+    });
+
+    const recentRefunds = await Promise.all(
+      refunds.data.map(async (refund) => {
+        let charge: Stripe.Charge | null = null;
+
+        try {
+          charge = await stripe.charges.retrieve(
+            refund.charge as string
+          );
+        } catch {
+          charge = null;
+        }
+
+        return {
+          refundId: refund.id,
+          amount: refund.amount,
+          created: refund.created,
+
+          chargeId: charge?.id || null,
+
+          paymentIntentId:
+            typeof charge?.payment_intent === "string"
+              ? charge.payment_intent
+              : charge?.payment_intent?.id || null,
+
+          adminEmail:
+            charge?.billing_details?.email ||
+            charge?.receipt_email ||
+            null,
+        };
+      })
     );
 
     return NextResponse.json({

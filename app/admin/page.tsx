@@ -148,10 +148,10 @@ export default function AdminPage() {
           <div style={{ marginTop: 8 }}>
             {paymentsSlice.map((p, i) => {
               const email =
+                p.adminEmail ||
                 p.billing_details?.email ||
                 p.receipt_email ||
-                p.payment_method?.billing_details?.email ||
-                p.id
+                "-"
 
               const country =
                 p.billing_details?.address?.country ||
@@ -159,7 +159,10 @@ export default function AdminPage() {
                 "-"
 
               return (
-                <div key={p.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
+                <div
+                  key={p.chargeId || p.id || i}
+                  style={{ padding: 8, borderBottom: "1px solid #eee" }}
+                >
                   {((p.amount || 0) / 100).toLocaleString("en-US", {
                     style: "currency",
                     currency: "USD",
@@ -175,6 +178,14 @@ export default function AdminPage() {
 
                   <div style={{ fontSize: 12, color: "#666", marginTop: 4 }}>
                     coupons: {data.paymentMap?.[p.id]?.coupons?.length || 0} | licenses: {data.paymentMap?.[p.id]?.licenses?.length || 0}
+                  </div>
+
+                  <div style={{ fontSize: 11, color: "#999", marginTop: 4 }}>
+                    Charge ID: {p.chargeId}
+                  </div>
+
+                  <div style={{ fontSize: 11, color: "#999" }}>
+                    Payment Intent: {p.paymentIntentId}
                   </div>
 
                   {data.paymentMap?.[p.id]?.licenses?.map((l: any) => (
@@ -201,15 +212,10 @@ export default function AdminPage() {
           <div style={{ marginTop: 8 }}>
             {refundsSlice.map((r, i) => {
               const refundEmail =
-                (r as any).charge?.receipt_email ||
-                (r as any).charge?.billing_details?.email ||
-                (r as any).receipt_email ||
-                (r as any).billing_details?.email ||
-                (r as any).payment_intent?.receipt_email ||
-                r.id.slice(0, 8) + "..." + r.id.slice(-4)
+                r.adminEmail || "-"
 
               return (
-                <div key={r.id || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
+                <div key={r.refundId || i} style={{ padding: 8, borderBottom: "1px solid #eee" }}>
                   {(r.amount / 100).toLocaleString("en-US", {
                     style: "currency",
                     currency: "USD",
@@ -219,6 +225,18 @@ export default function AdminPage() {
                     📅 {new Date(r.created * 1000).toLocaleDateString("ko-KR")}
                     &nbsp;|&nbsp;
                     📧 <span style={{ fontFamily: "monospace", wordBreak: "break-all" }}>{refundEmail}</span>
+                  </div>
+
+                  <div style={{ fontSize: 11, color: "#999", marginTop: 4 }}>
+                    Refund ID: {r.refundId}
+                  </div>
+
+                  <div style={{ fontSize: 11, color: "#999" }}>
+                    Charge ID: {r.chargeId}
+                  </div>
+
+                  <div style={{ fontSize: 11, color: "#999" }}>
+                    Payment Intent: {r.paymentIntentId}
                   </div>
                 </div>
               )
