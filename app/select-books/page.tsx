@@ -185,6 +185,7 @@ export default function SelectBooksPage() {
   const [payAmount, setPayAmount] = useState<Amount>("5");
 
   const [error, setError] = useState("");
+  const [refundError, setRefundError] = useState("");
   const [loading, setLoading] = useState(false);
   const [refundPreviewGroups, setRefundPreviewGroups] = useState<any[]>([]);
 
@@ -664,7 +665,7 @@ export default function SelectBooksPage() {
     if (loading || refundPreviewOpen) return;
 
     setLoading(true);
-
+    setRefundError("");
     try {
       const [couponRes, licenseRes] = await Promise.all([
         fetch("/api/coupons/list", {
@@ -707,9 +708,7 @@ export default function SelectBooksPage() {
 
       if (validStripeGroups.length === 0) {
         setLoading(false);
-        alert(
-          "No card purchases available to refund. Please refer to the note above."
-        );
+        setRefundError("No card purchases available to refund. Please refer to the note above.");
         return;
       }
 
@@ -1210,6 +1209,10 @@ export default function SelectBooksPage() {
                     Google Play purchases must be refunded through Google Play.<br />
                     Apple App Store purchases must be refunded through Apple.
                   </div>
+
+                  {refundError && (
+                    <p className="text-xs text-red-500 text-center">{refundError}</p>
+                  )}
 
                   <Button
                     variant="outline"
