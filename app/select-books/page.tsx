@@ -598,37 +598,15 @@ export default function SelectBooksPage() {
         return;
       }
 
-      // 🔥 Stripe / Google Play 완전 분리
+      // 🔥 Stripe만 서버 환불 처리
       const stripeGroups = beforeRefundableGroups.filter((g) => g[0]?.paymentIntentId);
-      const googleGroups = beforeRefundableGroups.filter((g) => g[0]?.purchaseToken);
-      const appleGroups = beforeRefundableGroups.filter(
-        (g) => g[0]?.transactionId
-      );
-      // Google Play만 있으면 링크 이동
-      if (
-        googleGroups.length > 0 &&
-        stripeGroups.length === 0 &&
-        appleGroups.length === 0
-      ) {
-        alert(
-          "Google Play purchases must be refunded through Google Play."
-        );
 
+      if (stripeGroups.length === 0) {
+        alert("No card purchases to refund. Google Play or Apple App Store purchases must be refunded through their respective platforms.");
         setRefundPreviewOpen(false);
         return;
       }
 
-      if (
-        appleGroups.length > 0 &&
-        stripeGroups.length === 0
-      ) {
-        alert(
-          "Apple App Store purchases must be refunded through Apple."
-        );
-
-        setRefundPreviewOpen(false);
-        return;
-      }
       // Stripe 환불
       if (stripeGroups.length > 0) {
         const refundRes = await fetch("/api/refund", {
@@ -714,47 +692,31 @@ export default function SelectBooksPage() {
         return;
       }
 
-      // 🔥 Stripe / Google Play 분리
-      const stripeGroups = groups.filter((g: CouponItem[]) => g[0]?.paymentIntentId);
-      const googleGroups = groups.filter((g: CouponItem[]) => g[0]?.purchaseToken);
-      const appleGroups = groups.filter(
-        (g: CouponItem[]) => g[0]?.transactionId
-      );
-      // Google Play: 사용 여부만 검증
-      const validGoogleGroups = googleGroups.filter((group: CouponItem[]) =>
-        !group.some((c) => c.used === true)
+      // 🔥 Stripe만 환불 미리보기 표시
+      const stripeGroups = groups.filter(
+        (g: CouponItem[]) => g[0]?.paymentIntentId
       );
 
-      // Stripe: 사용 여부 + shared coupon 검증
-      const validStripeGroups = stripeGroups.filter((group: CouponItem[]) =>
-        !group.some((c) => {
-          if (c.used === true) return true;
-          if (c.usedBy && c.usedBy !== userId) return true;
-          return false;
-        })
+      const validStripeGroups = stripeGroups.filter(
+        (group: CouponItem[]) =>
+          !group.some((c) => {
+            if (c.used === true) return true;
+            if (c.usedBy && c.usedBy !== userId) return true;
+            return false;
+          })
       );
 
-      const totalValid =
-        validStripeGroups.length +
-        validGoogleGroups.length +
-        appleGroups.length;
-
-      if (appleGroups.length > 0 && stripeGroups.length === 0) {
+      if (validStripeGroups.length === 0) {
         alert(
-          "Apple App Store purchases must be refunded through Apple."
+          "No card purchases available to refund. Please refer to the note above."
         );
-        return;
-      }
-
-      if (totalValid === 0) {
-        alert("Refund unavailable (already used or already refunded)");
         return;
       }
 
       setCouponBox(coupons);
       setLibrary(licenses);
 
-      setRefundPreviewGroups([...validStripeGroups, ...validGoogleGroups]);
+      setRefundPreviewGroups(validStripeGroups);
       setRefundPreviewOpen(true);
 
     } catch {
@@ -864,9 +826,10 @@ export default function SelectBooksPage() {
   }
 
   const refundableGroups = getRefundableGroups(couponBox, library);
-  const refundablePurchaseCount = refundableGroups.length;
-  const refundableCouponCount = refundableGroups.flat().length;
-  const canRefund = refundablePurchaseCount > 0;
+  const stripeRefundableGroups = refundableGroups.filter(g => g[0]?.paymentIntentId);
+  const refundablePurchaseCount = stripeRefundableGroups.length;
+  const refundableCouponCount = stripeRefundableGroups.flat().length;
+  const canRefund = refundableGroups.length > 0; // 🔥 Stripe/Google/Apple 포함
 
   const couponTotal = sortedCoupons.length;
   const couponTotalPages = Math.max(1, Math.ceil(couponTotal / COUPON_PAGE_SIZE));
@@ -1242,18 +1205,11 @@ export default function SelectBooksPage() {
 
                 <CardContent className="space-y-3">
 
-                  {/* 외부 결제 환불 안내 */}
-                  {(
-                    refundableGroups.some(g => g[0]?.paymentIntentId) ||
-                    refundableGroups.some(g => g[0]?.purchaseToken) ||
-                    refundableGroups.some(g => g[0]?.transactionId)
-                  ) && (
-                      <div className="text-xs text-center border rounded p-2 bg-yellow-50 text-gray-600">
-                        Card purchases can be refunded here.<br />
-                        Google Play purchases must be refunded through Google Play.<br />
-                        Apple App Store purchases must be refunded through Apple.
-                      </div>
-                    )}
+                  <div className="text-xs text-center border rounded p-2 bg-yellow-50 text-gray-600">
+                    Card purchases can be refunded here.<br />
+                    Google Play purchases must be refunded through Google Play.<br />
+                    Apple App Store purchases must be refunded through Apple.
+                  </div>
 
                   <Button
                     variant="outline"
