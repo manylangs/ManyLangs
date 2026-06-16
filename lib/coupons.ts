@@ -28,6 +28,7 @@ export type Coupon = {
   // 🔥 추가
   source?: string;
   purchaseToken?: string;
+  transactionId?: string;
 };
 
 /* ================= code generator ================= */
@@ -47,6 +48,7 @@ export function createCouponsTx(
   checkoutSessionId: string | null,
   source?: string,
   purchaseToken?: string | null,
+  transactionId?: string | null,
 ): Coupon[] {
 
   const now = Date.now();
@@ -66,6 +68,7 @@ export function createCouponsTx(
       ...(checkoutSessionId && { checkoutSessionId }),
       ...(source && { source }),
       ...(purchaseToken && { purchaseToken }),
+      ...(transactionId && { transactionId }),
     };
 
     tx.create(ref, coupon);

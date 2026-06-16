@@ -9,10 +9,7 @@ export const runtime = "nodejs";
 const serverTimestamp =
     admin.firestore.FieldValue.serverTimestamp;
 
-const APPLE_PRODUCT_COUPON_QTY: Record<
-    string,
-    number
-> = {
+const APPLE_PRODUCT_COUPON_QTY: Record<string, number> = {
     coupon_pack_2: 2,
     coupon_pack_4: 4,
 };
@@ -197,7 +194,8 @@ export async function POST(
                         null,
                         null,
                         "apple_app_store",
-                        transactionId
+                        null,          // purchaseToken
+                        transactionId  // transactionId 🔥
                     );
 
                 tx.set(
