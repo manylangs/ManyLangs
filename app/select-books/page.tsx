@@ -594,7 +594,7 @@ export default function SelectBooksPage() {
       setLibrary(beforeLicenses);
 
       if (beforeRefundableGroups.length === 0) {
-        alert("Refund unavailable (coupon already used)");
+        setRefundPreviewOpen(false);
         return;
       }
 
@@ -700,7 +700,10 @@ export default function SelectBooksPage() {
       const groups = getRefundableGroups(coupons, licenses);
 
       if (groups.length === 0) {
-        alert("Refund unavailable (already used or already refunded)");
+        setCouponBox(coupons);
+        setLibrary(licenses);
+        setRefundPreviewGroups(groups); // 빈 배열
+        setRefundPreviewOpen(true);
         return;
       }
 
@@ -719,8 +722,10 @@ export default function SelectBooksPage() {
       );
 
       if (validStripeGroups.length === 0) {
-        setLoading(false);
-        setRefundError("show");
+        setCouponBox(coupons);
+        setLibrary(licenses);
+        setRefundPreviewGroups(groups); // 🔥 빈 배열 말고 전체 groups
+        setRefundPreviewOpen(true);
         return;
       }
 
@@ -1238,7 +1243,7 @@ export default function SelectBooksPage() {
                   >
                     Refund Eligible Purchases
                   </Button>
-                  {refundPreviewOpen && canRefund && (
+                  {refundPreviewOpen && (
                     <div className="border rounded p-3 text-center space-y-2 bg-gray-50">
 
                       <div className="text-sm font-semibold">
@@ -1252,13 +1257,13 @@ export default function SelectBooksPage() {
                         </div>
                       )}
 
-                      {refundableGroups.some((g) => g[0]?.purchaseToken) && (
+                      {refundPreviewGroups.some((g: any) => g[0]?.purchaseToken) && (
                         <div className="text-xs text-orange-500 font-medium">
                           Google Play purchases must be refunded through Google Play.
                         </div>
                       )}
 
-                      {refundableGroups.some((g) => g[0]?.transactionId) && (
+                      {refundPreviewGroups.some((g: any) => g[0]?.transactionId) && (
                         <div className="text-xs text-orange-500 font-medium">
                           Apple App Store purchases must be refunded through Apple.
                         </div>
