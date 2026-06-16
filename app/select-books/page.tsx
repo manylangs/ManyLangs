@@ -599,10 +599,22 @@ export default function SelectBooksPage() {
       }
 
       // 🔥 Stripe만 서버 환불 처리
+      // 🔥 Stripe만 서버 환불 처리
       const stripeGroups = beforeRefundableGroups.filter((g) => g[0]?.paymentIntentId);
+      const nonStripeGroups = beforeRefundableGroups.filter(
+        (g) => !g[0]?.paymentIntentId
+      );
 
       if (stripeGroups.length === 0) {
-        alert("No card purchases to refund. Google Play or Apple App Store purchases must be refunded through their respective platforms.");
+        const hasGoogle = nonStripeGroups.some((g) => g[0]?.purchaseToken);
+        const hasApple = nonStripeGroups.some((g) => g[0]?.transactionId);
+
+        let msg = "No card purchases to refund.\n";
+        if (hasGoogle) msg += "\nGoogle Play purchases must be refunded through Google Play.";
+        if (hasApple) msg += "\nApple App Store purchases must be refunded through Apple.";
+        if (!hasGoogle && !hasApple) msg += "\nGoogle Play or Apple App Store purchases must be refunded through their respective platforms.";
+
+        alert(msg);
         setRefundPreviewOpen(false);
         return;
       }
@@ -1226,7 +1238,6 @@ export default function SelectBooksPage() {
                   >
                     Refund Eligible Purchases
                   </Button>
-
                   {refundPreviewOpen && canRefund && (
                     <div className="border rounded p-3 text-center space-y-2 bg-gray-50">
 
@@ -1234,28 +1245,58 @@ export default function SelectBooksPage() {
                         Refund available
                       </div>
 
-                      <div className="text-xs text-gray-600">
-                        {refundablePurchaseCount} purchase
-                        {refundablePurchaseCount > 1 ? "s" : ""} ({refundableCouponCount} coupons)
-                      </div>
+                      {stripeRefundableGroups.length > 0 && (
+                        <div className="text-xs text-gray-600">
+                          {refundablePurchaseCount} purchase
+                          {refundablePurchaseCount > 1 ? "s" : ""} ({refundableCouponCount} coupons)
+                        </div>
+                      )}
 
-                      <div className="text-xs text-gray-500">
-                        Do you want to proceed with the refund?
-                      </div>
+                      {refundableGroups.some((g) => g[0]?.purchaseToken) && (
+                        <div className="text-xs text-orange-500 font-medium">
+                          Google Play purchases must be refunded through Google Play.
+                        </div>
+                      )}
 
-                      <div className="flex gap-2 pt-2">
-                        <Button className="w-full" onClick={requestRefund}>
-                          Confirm Refund
-                        </Button>
+                      {refundableGroups.some((g) => g[0]?.transactionId) && (
+                        <div className="text-xs text-orange-500 font-medium">
+                          Apple App Store purchases must be refunded through Apple.
+                        </div>
+                      )}
 
-                        <Button
-                          variant="outline"
-                          className="w-full"
-                          onClick={() => setRefundPreviewOpen(false)}
-                        >
-                          Cancel
-                        </Button>
-                      </div>
+                      {stripeRefundableGroups.length > 0 && (
+                        <>
+                          <div className="text-xs text-gray-500">
+                            Do you want to proceed with the refund?
+                          </div>
+
+                          <div className="flex gap-2 pt-2">
+                            <Button className="w-full" onClick={requestRefund}>
+                              Confirm Refund
+                            </Button>
+
+                            <Button
+                              variant="outline"
+                              className="w-full"
+                              onClick={() => setRefundPreviewOpen(false)}
+                            >
+                              Cancel
+                            </Button>
+                          </div>
+                        </>
+                      )}
+
+                      {stripeRefundableGroups.length === 0 && (
+                        <div className="flex gap-2 pt-2">
+                          <Button
+                            variant="outline"
+                            className="w-full"
+                            onClick={() => setRefundPreviewOpen(false)}
+                          >
+                            Close
+                          </Button>
+                        </div>
+                      )}
 
                     </div>
                   )}
