@@ -1247,7 +1247,7 @@ export default function SelectBooksPage() {
                     <div className="border rounded p-3 text-center space-y-2 bg-gray-50">
 
                       <div className="text-sm font-semibold">
-                        Refund available
+                        {stripeRefundableGroups.length > 0 ? "Refund available" : "Refund Info"}
                       </div>
 
                       {stripeRefundableGroups.length > 0 && (

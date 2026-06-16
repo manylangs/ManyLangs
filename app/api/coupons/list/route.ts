@@ -29,6 +29,7 @@ function pick(c: Coupon) {
 
     source: (c as any).source ?? null,
     purchaseToken: (c as any).purchaseToken ?? null,
+    transactionId: (c as any).transactionId ?? null,
   };
 }
 
