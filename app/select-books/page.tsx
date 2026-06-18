@@ -1014,9 +1014,6 @@ export default function SelectBooksPage() {
                         Tap/click a code to copy
                       </span>
                     </div>
-                    <div className="text-xs text-red-400 text-center">
-                      Status may take a moment. Please refresh if needed.
-                    </div>
                   </div>
                 </CardHeader>
 
