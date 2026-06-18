@@ -189,6 +189,15 @@ export default function SelectBooksPage() {
   const [loading, setLoading] = useState(false);
   const [refundPreviewGroups, setRefundPreviewGroups] = useState<any[]>([]);
 
+  const isIOS =
+    typeof window !== "undefined" &&
+    !!(window as any).webkit?.messageHandlers;
+
+  const isAndroid =
+    typeof window !== "undefined" &&
+    ((window as any).AndroidBridge ||
+      navigator.userAgent.includes("ManyLangsApp/Android"));
+
   useEffect(() => {
     if (!isLoaded) return;
 
@@ -610,9 +619,18 @@ export default function SelectBooksPage() {
         const hasApple = nonStripeGroups.some((g) => g[0]?.transactionId);
 
         let msg = "No card purchases to refund.\n";
-        if (hasGoogle) msg += "\nGoogle Play purchases must be refunded through Google Play.";
-        if (hasApple) msg += "\nApple App Store purchases must be refunded through Apple.";
-        if (!hasGoogle && !hasApple) msg += "\nGoogle Play or Apple App Store purchases must be refunded through their respective platforms.";
+
+        if (hasGoogle) {
+          msg += "\nGoogle Play purchases are handled directly by Google Play.";
+        }
+
+        if (hasApple) {
+          msg += "\nApp Store purchases are handled directly by Apple.";
+        }
+
+        if (!hasGoogle && !hasApple) {
+          msg += "\nPurchases made through app stores must be refunded through the respective store.";
+        }
 
         alert(msg);
         setRefundPreviewOpen(false);
@@ -1183,30 +1201,17 @@ export default function SelectBooksPage() {
                         : `Add ${LANGUAGES.find(l => l.code === targetLang)?.label} textbook`}
                     </button>
 
-                    {(() => {
-                      const isAndroid = typeof window !== "undefined" && (
-                        (window as any).AndroidBridge ||
-                        navigator.userAgent.includes("ManyLangsApp/Android")
-                      );
-                      const isIOS =
-                        typeof window !== "undefined" && (window as any).webkit?.messageHandlers;
-
-                      return (
-                        <>
-                          <button
-                            onClick={startPayment}
-                            disabled={loading}
-                            className="w-full rounded bg-black text-white py-2 text-sm font-medium"
-                          >
-                            {isAndroid
-                              ? "Buy with Google Play"
-                              : isIOS
-                                ? "Buy with Apple"
-                                : "Buy coupons using your card"}
-                          </button>
-                        </>
-                      );
-                    })()}
+                    <button
+                      onClick={startPayment}
+                      disabled={loading}
+                      className="w-full rounded bg-black text-white py-2 text-sm font-medium"
+                    >
+                      {isAndroid
+                        ? "Buy with Google Play"
+                        : isIOS
+                          ? "Buy with Apple"
+                          : "Buy coupons using your card"}
+                    </button>
 
                   </div>
 
@@ -1222,16 +1227,52 @@ export default function SelectBooksPage() {
                 <CardContent className="space-y-3">
 
                   <div className="text-xs text-center border rounded p-2 bg-yellow-50 text-gray-600">
-                    Card purchases can be refunded here.<br />
-                    Google Play purchases must be refunded through Google Play.<br />
-                    Apple App Store purchases must be refunded through Apple.
+                    {isIOS ? (
+                      <>
+                        Card purchases can be refunded here.
+                        <br />
+                        App Store purchases are handled directly by Apple according to App Store policies.
+                      </>
+                    ) : isAndroid ? (
+                      <>
+                        Card purchases can be refunded here.
+                        <br />
+                        Google Play purchases are handled directly by Google Play according to Google Play policies.
+                      </>
+                    ) : (
+                      <>
+                        Card purchases can be refunded here.
+                        <br />
+                        Google Play purchases must be refunded through Google Play.
+                        <br />
+                        Apple App Store purchases must be refunded through Apple.
+                      </>
+                    )}
                   </div>
 
                   {refundError && (
                     <p className="text-xs text-red-500 text-center">
-                      No card purchases to refund here.<br />
-                      Google Play purchases → refund via Google Play.<br />
-                      Apple purchases → refund via Apple.
+                      {isIOS ? (
+                        <>
+                          No card purchases to refund here.
+                          <br />
+                          App Store purchases are handled directly by Apple.
+                        </>
+                      ) : isAndroid ? (
+                        <>
+                          No card purchases to refund here.
+                          <br />
+                          Google Play purchases are handled directly by Google Play.
+                        </>
+                      ) : (
+                        <>
+                          No card purchases to refund here.
+                          <br />
+                          Google Play purchases → refund via Google Play.
+                          <br />
+                          Apple purchases → refund via Apple.
+                        </>
+                      )}
                     </p>
                   )}
 
@@ -1257,15 +1298,15 @@ export default function SelectBooksPage() {
                         </div>
                       )}
 
-                      {refundPreviewGroups.some((g: any) => g[0]?.purchaseToken) && (
+                      {refundPreviewGroups.some((g: any) => g[0]?.purchaseToken) && !isIOS && (
                         <div className="text-xs text-orange-500 font-medium">
-                          Google Play purchases must be refunded through Google Play.
+                          Google Play purchases are handled directly by Google Play.
                         </div>
                       )}
 
-                      {refundPreviewGroups.some((g: any) => g[0]?.transactionId) && (
+                      {refundPreviewGroups.some((g: any) => g[0]?.transactionId) && !isAndroid && (
                         <div className="text-xs text-orange-500 font-medium">
-                          Apple App Store purchases must be refunded through Apple.
+                          App Store purchases are handled directly by Apple.
                         </div>
                       )}
 
