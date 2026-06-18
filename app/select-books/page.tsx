@@ -1,4 +1,4 @@
-"use client";
+"use client"; 
 
 import { LANGUAGES } from "@/app/config/languages";
 import { useEffect, useState } from "react";
@@ -187,6 +187,7 @@ export default function SelectBooksPage() {
   const [error, setError] = useState("");
   const [refundError, setRefundError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [restoring, setRestoring] = useState(false);
   const [refundPreviewGroups, setRefundPreviewGroups] = useState<any[]>([]);
 
   const isIOS =
@@ -219,85 +220,88 @@ export default function SelectBooksPage() {
     localStorage.setItem(key, userId);
   }, [isLoaded, userId]);
 
+  /**
+   * Loads licenses + coupons for the given user and syncs local state.
+   * Shared by the initial page-load effect and the "Restore Purchases"
+   * action (which is just a manual re-trigger of the same refresh).
+   */
+  async function loadAccountData(uid: string | null | undefined) {
+    let aliveLib: LibraryItem[] = [];
+    try {
+      const res = await fetch("/api/licenses/list", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId: uid }),
+      });
+      let data: any = {};
+      try {
+        const text = await res.text();
+        data = text ? JSON.parse(text) : {};
+      } catch {
+        data = {};
+      }
+
+      aliveLib = Array.isArray(data.licenses) ? (data.licenses as LibraryItem[]) : [];
+    } catch {
+      aliveLib = [];
+    }
+    setLibrary(aliveLib);
+
+    const localCoupons = readLocalCoupons();
+    const aliveCodes = buildAliveCouponCodeSet(aliveLib);
+    const cleanedCoupons = localCoupons.filter((c) => {
+      if (!c.used) return true;
+      if (c.usedBy && c.usedBy !== uid) return true;
+      return aliveCodes.has(c.code);
+    });
+    writeLocalCoupons(cleanedCoupons);
+
+    try {
+      const res = await fetch("/api/coupons/list", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId: uid }),
+      });
+      const data = await safeJson(res);
+
+      if (!res.ok) return;
+
+      const serverCoupons: CouponItem[] = Array.isArray((data as any)?.coupons)
+        ? ((data as any).coupons as CouponItem[])
+        : [];
+
+      setCouponBox((prev) => {
+        const prevMap = new Map(prev.map((c) => [c.code, c]));
+
+        const mergedServer = serverCoupons.map((sc) => {
+          const prevOne = prevMap.get(sc.code);
+          return {
+            ...(prevOne ?? {}),
+            ...sc,
+            usedLang: sc.usedLang ?? prevOne?.usedLang ?? null,
+            usedSeries: sc.usedSeries ?? prevOne?.usedSeries ?? null,
+            usedLevel: sc.usedLevel ?? prevOne?.usedLevel ?? null,
+          } as CouponItem;
+        });
+
+        const expiredUsedCodes2 = buildExpiredUsedCouponCodeSet(mergedServer, aliveLib, uid as string);
+
+        const finalList = mergedServer.filter(
+          (c) => !(c.used && expiredUsedCodes2.has(c.code))
+        );
+
+        writeLocalCoupons(finalList);
+        return finalList;
+      });
+    } catch {
+      // ignore
+    }
+  }
+
   useEffect(() => {
     if (!isLoaded) return;
-
-    (async () => {
-      let aliveLib: LibraryItem[] = [];
-      try {
-        const res = await fetch("/api/licenses/list", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ userId }),
-        });
-        let data: any = {};
-        try {
-          const text = await res.text();
-          data = text ? JSON.parse(text) : {};
-        } catch {
-          data = {};
-        }
-
-        aliveLib = Array.isArray(data.licenses) ? (data.licenses as LibraryItem[]) : [];
-      } catch {
-        aliveLib = [];
-      }
-      setLibrary(aliveLib);
-
-      const localCoupons = readLocalCoupons();
-      const aliveCodes = buildAliveCouponCodeSet(aliveLib);
-      const cleanedCoupons = localCoupons.filter((c) => {
-        if (!c.used) return true;
-        if (c.usedBy && c.usedBy !== userId) return true;
-        return aliveCodes.has(c.code);
-      });
-      writeLocalCoupons(cleanedCoupons);
-
-      const params = new URLSearchParams(window.location.search);
-      const checkout = params.get("checkout");
-      const sessionId = params.get("session_id");
-
-      try {
-        const res = await fetch("/api/coupons/list", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ userId }),
-        });
-        const data = await safeJson(res);
-
-        if (!res.ok) return;
-
-        const serverCoupons: CouponItem[] = Array.isArray((data as any)?.coupons)
-          ? ((data as any).coupons as CouponItem[])
-          : [];
-
-        setCouponBox((prev) => {
-          const prevMap = new Map(prev.map((c) => [c.code, c]));
-
-          const mergedServer = serverCoupons.map((sc) => {
-            const prevOne = prevMap.get(sc.code);
-            return {
-              ...(prevOne ?? {}),
-              ...sc,
-              usedLang: sc.usedLang ?? prevOne?.usedLang ?? null,
-              usedSeries: sc.usedSeries ?? prevOne?.usedSeries ?? null,
-              usedLevel: sc.usedLevel ?? prevOne?.usedLevel ?? null,
-            } as CouponItem;
-          });
-
-          const expiredUsedCodes2 = buildExpiredUsedCouponCodeSet(mergedServer, aliveLib, userId);
-
-          const finalList = mergedServer.filter(
-            (c) => !(c.used && expiredUsedCodes2.has(c.code))
-          );
-
-          writeLocalCoupons(finalList);
-          return finalList;
-        });
-      } catch {
-        // ignore
-      }
-    })();
+    loadAccountData(userId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isLoaded, userId, router]);
 
   useEffect(() => {
@@ -564,6 +568,25 @@ export default function SelectBooksPage() {
       setError("Network error.");
     } finally {
       setLoading(false);
+    }
+  }
+
+  async function handleRestorePurchases() {
+    if (restoring) return;
+
+    setRestoring(true);
+    setError("");
+
+    try {
+      // Restoring purchases is just a manual refresh of this account's
+      // licenses + coupons — purchases aren't locked to a specific
+      // platform, they all attach to the signed-in account.
+      await loadAccountData(userId);
+      alert("Purchases and coupons have been refreshed.");
+    } catch {
+      setError("Network error.");
+    } finally {
+      setRestoring(false);
     }
   }
 
@@ -998,6 +1021,20 @@ export default function SelectBooksPage() {
                 </CardHeader>
 
                 <CardContent className="space-y-2">
+                  <div className="space-y-1 pb-1">
+                    <button
+                      type="button"
+                      onClick={handleRestorePurchases}
+                      disabled={restoring}
+                      className="w-full rounded bg-black text-white py-2 text-sm font-medium disabled:opacity-50"
+                    >
+                      {restoring ? "Restoring..." : "Restore Purchases"}
+                    </button>
+                    <p className="text-xs text-gray-500 text-center">
+                      Refresh purchases and coupons for this account.
+                    </p>
+                  </div>
+
                   {couponTotal === 0 && (
                     <p className="text-sm text-gray-500">No coupons available.</p>
                   )}
