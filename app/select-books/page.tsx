@@ -1212,10 +1212,6 @@ export default function SelectBooksPage() {
                     ) : (
                       <>
                         Card purchases can be refunded here.
-                        <br />
-                        Google Play purchases must be refunded through Google Play.
-                        <br />
-                        Apple App Store purchases must be refunded through Apple.
                       </>
                     )}
                   </div>
