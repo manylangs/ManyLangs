@@ -940,6 +940,71 @@ export default function SelectBooksPage() {
               {/* My Library */}
               <Card>
                 <CardHeader>
+                  <CardTitle>My Library</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  {libraryTotal > 0 && (
+                    <div className="flex items-center justify-between rounded border px-3 py-2 text-sm">
+                      <div>
+                        Total: <b>{libraryTotal}</b>
+                      </div>
+
+                      <div className="flex items-center gap-2">
+                        <button
+                          type="button"
+                          className="rounded border px-2 py-1 disabled:opacity-50"
+                          onClick={() => setLibraryPage((p) => Math.max(1, p - 1))}
+                          disabled={safeLibraryPage === 1}
+                        >
+                          {"<"}
+                        </button>
+
+                        <span className="text-xs text-gray-600">
+                          {safeLibraryPage} / {libraryTotalPages}
+                        </span>
+
+                        <button
+                          type="button"
+                          className="rounded border px-2 py-1 disabled:opacity-50"
+                          onClick={() => setLibraryPage((p) => Math.min(libraryTotalPages, p + 1))}
+                          disabled={safeLibraryPage === libraryTotalPages}
+                        >
+                          {">"}
+                        </button>
+                      </div>
+                    </div>
+                  )}
+                  {filteredLibrary.length === 0 && (
+                    <p className="text-sm text-gray-500">No textbooks yet.</p>
+                  )}
+                  {pageLibrary.map((item, idx) => (
+                    <div
+                      key={idx}
+                      className="flex items-center justify-between rounded border px-3 py-2"
+                    >
+                      <div className="text-sm">
+                        {item.series.toUpperCase()}
+                        {item.level !== "all" && ` · ${item.level.toUpperCase()}`}
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span
+                          style={{
+                            fontSize: 12,
+                            color: remainingText(item.expiresAt) === "Expired" ? "#d00" : "#555",
+                          }}
+                        >
+                          {remainingText(item.expiresAt)}
+                        </span>
+                        <Button size="sm" onClick={() => openBook(item)}>
+                          Open
+                        </Button>
+                      </div>
+                    </div>
+                  ))}
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col">
                       <CardTitle>My Coupons</CardTitle>
