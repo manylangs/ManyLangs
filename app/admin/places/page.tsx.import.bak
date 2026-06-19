@@ -51,25 +51,6 @@ export default function PlacesPage() {
     }
   }
 
-
-  const importPlace = async (place: any) => {
-    try {
-      const res = await fetch("/api/admin/crm/import-place", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(place)
-      })
-
-      const json = await res.json()
-
-      alert("Imported: " + json.imported)
-    } catch (e) {
-      console.error(e)
-    }
-  }
-
   return (
     <div style={{ padding: 24 }}>
       <h1 style={{ fontSize: 22, marginBottom: 20 }}>
@@ -118,14 +99,6 @@ export default function PlacesPage() {
                 style={{ marginTop: 10 }}
               >
                 Extract Email
-
-            <button
-              onClick={() => importPlace(r)}
-              style={{ marginLeft: 10 }}
-            >
-              Import CRM
-            </button>
-
               </button>
             )}
 
