@@ -1,4 +1,6 @@
-"use client"
+git add .
+git commit -m "CRM email auto save from places"
+git push^ㅌ"use client"
 
 import { useState } from "react"
 
@@ -42,27 +44,10 @@ export default function PlacesPage() {
 
       const json = await res.json()
 
-      const foundEmails = json.emails || []
-
       setEmails(prev => ({
         ...prev,
-        [url]: foundEmails
+        [url]: json.emails || []
       }))
-
-      if (foundEmails.length > 0) {
-        await fetch("/api/admin/crm/save-email", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({
-            website: url,
-            email: foundEmails[0]
-          })
-        })
-
-        console.log("EMAIL SAVED:", foundEmails[0])
-      }
     } catch (e) {
       console.error(e)
     }
@@ -162,21 +147,20 @@ export default function PlacesPage() {
             <div>{r.internationalPhoneNumber}</div>
 
             {r.websiteUri && (
-              <>
-                <button
-                  onClick={() => extractEmail(r.websiteUri)}
-                  style={{ marginTop: 10 }}
-                >
-                  Extract Email
-                </button>
+              <button
+                onClick={() => extractEmail(r.websiteUri)}
+                style={{ marginTop: 10 }}
+              >
+                Extract Email
 
-                <button
-                  onClick={() => importPlace(r)}
-                  style={{ marginLeft: 10 }}
-                >
-                  Import CRM
-                </button>
-              </>
+            <button
+              onClick={() => importPlace(r)}
+              style={{ marginLeft: 10 }}
+            >
+              Import CRM
+            </button>
+
+              </button>
             )}
 
             {emails[r.websiteUri]?.length > 0 && (
