@@ -70,31 +70,6 @@ export default function PlacesPage() {
     }
   }
 
-
-  const importAll = async () => {
-    let imported = 0
-
-    for (const place of results) {
-      try {
-        const res = await fetch("/api/admin/crm/import-place", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(place)
-        })
-
-        const json = await res.json()
-
-        imported += Number(json.imported || 0)
-      } catch (e) {
-        console.error(e)
-      }
-    }
-
-    alert("Imported Total: " + imported)
-  }
-
   return (
     <div style={{ padding: 24 }}>
       <h1 style={{ fontSize: 22, marginBottom: 20 }}>
@@ -118,13 +93,6 @@ export default function PlacesPage() {
           disabled={loading}
         >
           {loading ? "Collecting..." : "Collect"}
-        </button>
-
-        <button
-          onClick={importAll}
-          disabled={loading || results.length === 0}
-        >
-          Import All
         </button>
       </div>
 
