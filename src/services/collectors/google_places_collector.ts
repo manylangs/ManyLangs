@@ -17,15 +17,8 @@ export async function collectPlaces(query: string) {
     }
   );
 
-  // const data = await res.json();
-
-  // return data.places || [];
   const data = await res.json();
 
-  console.log(
-    "[GOOGLE PLACES]",
-    JSON.stringify(data, null, 2)
-  );
-
   return data.places || [];
+
 }
