@@ -1,6 +1,6 @@
 const API_KEY = process.env.GOOGLE_MAPS_API_KEY!;
 
-export async function collectPlaces(query: string) {
+export async function searchPlaceIds(query: string) {
   const res = await fetch(
     "https://places.googleapis.com/v1/places:searchText",
     {
@@ -8,8 +8,7 @@ export async function collectPlaces(query: string) {
       headers: {
         "Content-Type": "application/json",
         "X-Goog-Api-Key": API_KEY,
-        "X-Goog-FieldMask":
-          "places.id,places.displayName,places.websiteUri,places.formattedAddress,places.internationalPhoneNumber",
+        "X-Goog-FieldMask": "places.id",
       },
       body: JSON.stringify({
         textQuery: query,
@@ -20,5 +19,39 @@ export async function collectPlaces(query: string) {
   const data = await res.json();
 
   return data.places || [];
+}
 
+export async function getPlaceDetails(placeId: string) {
+  const res = await fetch(
+    `https://places.googleapis.com/v1/places/${placeId}`,
+    {
+      headers: {
+        "X-Goog-Api-Key": API_KEY,
+        "X-Goog-FieldMask":
+          "id,displayName,websiteUri,formattedAddress",
+      },
+    }
+  );
+
+  return await res.json();
+}
+
+/**
+ * 기존 /admin/places 호환 유지
+ */
+export async function collectPlaces(query: string) {
+  const ids = await searchPlaceIds(query);
+
+  const results = [];
+
+  for (const place of ids.slice(0, 20)) {
+    try {
+      const details = await getPlaceDetails(place.id);
+      results.push(details);
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
+  return results;
 }
