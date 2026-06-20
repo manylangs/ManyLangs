@@ -40,36 +40,44 @@ window.onNativeMessage = async function (data) {
 
   try {
 
-    if (
-      data?.type === "IAP_SUCCESS" ||
-      data?.type === "IAP_RESTORE_SUCCESS"
-    ) {
+if (data?.type === "IAP_RESTORE_SUCCESS") {
 
-      console.log("💰 IAP EVENT RECEIVED");
+  console.log("🔄 PURCHASE REFRESH");
 
-      const res = await fetch(
-        "/api/iap/apple/verify",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({
-            productId:
-              data.payload.productId,
-            transactionId:
-              data.payload.transactionId
-          })
-        }
-      );
+  window.dispatchEvent(
+    new CustomEvent("manylangs-restore")
+  );
 
-      const result = await res.json();
+  return;
+}
 
-      console.log(
-        "🍎 VERIFY RESULT:",
-        result
-      );
+if (data?.type === "IAP_SUCCESS") {
+
+  console.log("💰 IAP EVENT RECEIVED");
+
+  const res = await fetch(
+    "/api/iap/apple/verify",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        productId:
+          data.payload.productId,
+        transactionId:
+          data.payload.transactionId
+      })
     }
+  );
+
+  const result = await res.json();
+
+  console.log(
+    "🍎 VERIFY RESULT:",
+    result
+  );
+}
 
   } catch (error) {
 

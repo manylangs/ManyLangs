@@ -297,7 +297,25 @@ export default function SelectBooksPage() {
       // ignore
     }
   }
+  useEffect(() => {
 
+    const handler = () => {
+      loadAccountData(userId);
+    };
+
+    window.addEventListener(
+      "manylangs-restore",
+      handler
+    );
+
+    return () => {
+      window.removeEventListener(
+        "manylangs-restore",
+        handler
+      );
+    };
+
+  }, [userId]);
   useEffect(() => {
     if (!isLoaded) return;
     loadAccountData(userId);
@@ -1244,7 +1262,7 @@ export default function SelectBooksPage() {
                       {isAndroid
                         ? "Buy with Google Play"
                         : isIOS
-                          ? "Buy with Apple"
+                          ? "Buy Coupons"
                           : "Buy coupons using your card"}
                     </button>
 
