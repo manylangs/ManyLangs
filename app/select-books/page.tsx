@@ -1245,25 +1245,11 @@ export default function SelectBooksPage() {
                   <div className="space-y-2 pt-2">
 
                     <button
-                      onClick={activateCoupon}
-                      disabled={loading}
-                      className="w-full rounded bg-black text-white py-2 text-sm font-medium"
-                    >
-                      {loading
-                        ? "Processing..."
-                        : `Add ${LANGUAGES.find(l => l.code === targetLang)?.label} textbook`}
-                    </button>
-
-                    <button
                       onClick={startPayment}
                       disabled={loading}
                       className="w-full rounded bg-black text-white py-2 text-sm font-medium"
                     >
-                      {isAndroid
-                        ? "Buy with Google Play"
-                        : isIOS
-                          ? "Buy Coupons"
-                          : "Buy coupons using your card"}
+                      Buy Coupons
                     </button>
 
                   </div>
