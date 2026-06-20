@@ -104,20 +104,8 @@ export default function HomePage() {
             color: "#666",
           }}
         >
-          <a
-            href="https://www.manylangs.studio"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: "inline-block",
-              marginTop: 10,
-              color: "#111",
-              textDecoration: "none",
-              fontWeight: 600,
-            }}
-          >
+          <a href="https://www.manylangs.studio">
             Explore ManyLangs & Try a free lesson. →
-            
           </a>
 
           <p
