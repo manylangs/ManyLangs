@@ -105,7 +105,7 @@ export default function HomePage() {
           }}
         >
           <a href="https://www.manylangs.studio">
-            Explore ManyLangs & Try a free lesson. →
+            <strong>Explore ManyLangs & Try a free lesson. →</strong>
           </a>
 
           <p
