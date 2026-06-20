@@ -89,12 +89,21 @@ export default function LandingPage() {
       const el = document.getElementById(id);
       if (!el) return;
 
+      const header =
+        document.querySelector("header")
+          ?.getBoundingClientRect()
+          .height ?? 72;
+
       const y =
         el.getBoundingClientRect().top +
         window.scrollY -
-        (window.innerWidth <= 768 ? 72 : 64);
+        header -
+        12;
 
-      window.scrollTo({ top: y, behavior: "smooth" });
+      window.scrollTo({
+        top: y,
+        behavior: "smooth",
+      });
     }, 80);
   };
   // useEffect(() => {
@@ -789,13 +798,6 @@ export default function LandingPage() {
     /* 햄버거 보이기 */
     .mobile-only {
       display: inline-flex !important;
-    }
-  }
-
-  /* 🔥 데스크탑 */
-  @media (min-width: 769px) {
-    .mobile-only {
-      display: none !important;
     }
   }
     @media (max-width: 768px) {
