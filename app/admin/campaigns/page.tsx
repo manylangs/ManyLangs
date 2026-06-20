@@ -29,7 +29,7 @@ interface SendResult {
   error?: string;
 }
 
-const TARGET_TYPES = ["ALL", "HOT", "WARM", "COLD", "APOLLO", "YOUTUBE"];
+const TARGET_TYPES = ["ALL", "HOT", "WARM", "COLD", "YOUTUBE"];
 const COUNTRIES = ["ALL", "US", "KR", "JP", "GB", "FR", "DE", "ES", "BR", "CA", "AU"];
 
 export default function CampaignsPage() {

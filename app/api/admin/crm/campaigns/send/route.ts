@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
       if (["HOT", "WARM", "COLD"].includes(target_type)) {
         sql += ` AND lead_status = ?`;
         args.push(target_type);
-      } else if (["APOLLO", "YOUTUBE"].includes(target_type)) {
+      } else if (["YOUTUBE"].includes(target_type)) {
         sql += ` AND source = ?`;
         args.push(target_type);
       }

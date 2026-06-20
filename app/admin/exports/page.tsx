@@ -5,7 +5,6 @@ const EXPORT_BUTTONS = [
   { label: "Export HOT Leads",          type: "hot",           emoji: "🔥" },
   { label: "Export WARM Leads",         type: "warm",          emoji: "🌤️" },
   { label: "Export COLD Leads",         type: "cold",          emoji: "❄️" },
-  { label: "Export APOLLO Leads",       type: "apollo",        emoji: "🚀" },
   { label: "Export READY TO SEND",      type: "ready_to_send", emoji: "✉️" },
 ];
 

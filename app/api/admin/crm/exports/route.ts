@@ -37,7 +37,6 @@ export async function GET(req: NextRequest) {
     if (type === "hot")            { conditions.push("lead_status = ?"); args.push("HOT"); }
     else if (type === "warm")      { conditions.push("lead_status = ?"); args.push("WARM"); }
     else if (type === "cold")      { conditions.push("lead_status = ?"); args.push("COLD"); }
-    else if (type === "apollo")    { conditions.push("source = ?"); args.push("APOLLO"); }
     else if (type === "ready_to_send") {
       conditions.push("lead_status IN ('HOT','WARM')");
       conditions.push("email IS NOT NULL AND email != ''");

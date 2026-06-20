@@ -37,7 +37,7 @@ export async function GET() {
     return NextResponse.json({
       kpi: {
         ready_to_send: readyToSend,
-        hot:  statusMap["HOT"]  ?? 0,
+        hot: statusMap["HOT"] ?? 0,
         warm: statusMap["WARM"] ?? 0,
         cold: statusMap["COLD"] ?? 0,
       },
@@ -72,7 +72,7 @@ export async function POST(req: NextRequest) {
       if (["HOT", "WARM", "COLD"].includes(target_type)) {
         countSql += ` AND lead_status = ?`;
         args.push(target_type);
-      } else if (["APOLLO", "YOUTUBE"].includes(target_type)) {
+      } else if (["YOUTUBE"].includes(target_type)) {
         countSql += ` AND source = ?`;
         args.push(target_type);
       }
