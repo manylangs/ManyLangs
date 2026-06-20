@@ -1043,8 +1043,11 @@ export default function SelectBooksPage() {
                 </CardHeader>
 
                 <CardContent className="space-y-2">
+
                   <p className="text-xs text-gray-500 text-center">
-                    If your latest coupons do not appear, tap Restore Purchases.
+                    If your latest coupons do not appear,
+                    <br />
+                    tap Restore Purchases.
                   </p>
 
                   {couponTotal === 0 && (
