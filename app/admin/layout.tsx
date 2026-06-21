@@ -77,25 +77,50 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
         {crmOpen && (
           <>
-            <Link href="/admin/imports" style={subLinkStyle(pathname.startsWith("/admin/imports"))}>📥 Imports</Link>
-            <Link href="/admin/leads" style={subLinkStyle(pathname.startsWith("/admin/leads"))}>🎯 Leads</Link>
-            <Link href="/admin/funnel" style={subLinkStyle(pathname.startsWith("/admin/funnel"))}>📈 Funnel</Link>
-            <Link href="/admin/exports" style={subLinkStyle(pathname.startsWith("/admin/exports"))}>💾 Exports</Link>
-            <Link href="/admin/tracking" style={subLinkStyle(pathname.startsWith("/admin/tracking"))}>📊 Tracking</Link>
-            <Link href="/admin/places" style={subLinkStyle(pathname.startsWith("/admin/places"))}>📍 Places</Link>
-            <Link href="/admin/youtube" style={subLinkStyle(pathname.startsWith("/admin/youtube"))}>🎥 YouTube</Link>
-            <Link href="/admin/campaigns" style={subLinkStyle(pathname.startsWith("/admin/campaigns"))}>📧 Campaigns</Link>
+            <Link href="/admin/leads" style={subLinkStyle(pathname.startsWith("/admin/leads"))}>
+              🎯 Leads
+            </Link>
+
+            <Link href="/admin/campaigns" style={subLinkStyle(pathname.startsWith("/admin/campaigns"))}>
+              📧 Campaigns
+            </Link>
+
             <Link
               href="/admin/places-explorer"
               style={subLinkStyle(pathname.startsWith("/admin/places-explorer"))}
             >
               🧭 Places Explorer
             </Link>
+
             <Link
               href="/admin/place-queue"
               style={subLinkStyle(pathname.startsWith("/admin/place-queue"))}
             >
               ⚙️ Place Queue
+            </Link>
+
+            <Link href="/admin/imports" style={subLinkStyle(pathname.startsWith("/admin/imports"))}>
+              📥 Imports
+            </Link>
+
+            <Link href="/admin/exports" style={subLinkStyle(pathname.startsWith("/admin/exports"))}>
+              💾 Exports
+            </Link>
+
+            <Link href="/admin/youtube" style={subLinkStyle(pathname.startsWith("/admin/youtube"))}>
+              🎥 YouTube
+            </Link>
+
+            <Link href="/admin/tracking" style={subLinkStyle(pathname.startsWith("/admin/tracking"))}>
+              📊 Tracking
+            </Link>
+
+            <Link href="/admin/funnel" style={subLinkStyle(pathname.startsWith("/admin/funnel"))}>
+              📈 Funnel
+            </Link>
+
+            <Link href="/admin/places" style={subLinkStyle(pathname.startsWith("/admin/places"))}>
+              📍 Places
             </Link>
           </>
         )}
