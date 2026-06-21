@@ -111,20 +111,8 @@ export async function POST(req: NextRequest) {
         existingRows.map(r => r.google_place_id)
     );
 
-    const insertPlace = db.prepare(`
-    INSERT OR IGNORE INTO place_queue
-    (
-        place_id,
-        district
-    )
-    VALUES (?, ?)
-`);
-
     let existingCount = 0;
     let newCount = 0;
-
-    let inserted = 0;
-    let alreadyExists = 0;
 
     for (const id of uniqueIds) {
         if (existingIds.has(id)) {
@@ -132,18 +120,8 @@ export async function POST(req: NextRequest) {
         } else {
             newCount++;
         }
-
-        const result = insertPlace.run(
-            id,
-            district
-        );
-
-        if (result.changes > 0) {
-            inserted++;
-        } else {
-            alreadyExists++;
-        }
     }
+
     // 🔥 Place Details 샘플 테스트
     const sampleIds = [...uniqueIds].slice(0, 10);
 
@@ -177,9 +155,6 @@ export async function POST(req: NextRequest) {
 
         existingIds: existingCount,
         newIds: newCount,
-
-        inserted,
-        alreadyExists,
 
         detailsFetched,
         websitesFound,
