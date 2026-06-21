@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { searchPlaceIds } from "@/src/services/collectors/google_places_collector";
+import {
+    searchPlaceIds,
+    getPlaceDetails
+} from "@/src/services/collectors/google_places_collector";
 import Database from "better-sqlite3";
 import path from "path";
 
@@ -119,6 +122,26 @@ export async function POST(req: NextRequest) {
         }
     }
 
+    // 🔥 Place Details 샘플 테스트
+    const sampleIds = [...uniqueIds].slice(0, 10);
+
+    let detailsFetched = 0;
+    let websitesFound = 0;
+
+    for (const placeId of sampleIds) {
+        try {
+            const details = await getPlaceDetails(placeId);
+
+            detailsFetched++;
+
+            if (details.websiteUri) {
+                websitesFound++;
+            }
+        } catch (e) {
+            console.error(placeId, e);
+        }
+    }
+
     db.close();
 
     return NextResponse.json({
@@ -129,6 +152,8 @@ export async function POST(req: NextRequest) {
         uniqueIds: uniqueIds.size,
         existingIds: existingCount,
         newIds: newCount,
+        detailsFetched,
+        websitesFound,
         sampleQueries: queries.slice(0, 10),
     });
 }
