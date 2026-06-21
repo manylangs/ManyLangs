@@ -1,5 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 import { searchPlaceIds } from "@/src/services/collectors/google_places_collector";
+import Database from "better-sqlite3";
+import path from "path";
+
+const DB_PATH = path.join(process.cwd(), "manylangs_crm.db");
+
+function getDb() {
+    return new Database(DB_PATH);
+}
 
 const TIER1_LANGUAGES = [
     "english",
@@ -87,12 +95,40 @@ export async function POST(req: NextRequest) {
         }
     }
 
+    const db = getDb();
+
+    const existingRows = db.prepare(`
+        SELECT google_place_id
+        FROM schools
+        WHERE google_place_id IS NOT NULL
+        AND google_place_id != ''
+    `).all() as { google_place_id: string }[];
+
+    const existingIds = new Set(
+        existingRows.map(r => r.google_place_id)
+    );
+
+    let existingCount = 0;
+    let newCount = 0;
+
+    for (const id of uniqueIds) {
+        if (existingIds.has(id)) {
+            existingCount++;
+        } else {
+            newCount++;
+        }
+    }
+
+    db.close();
+
     return NextResponse.json({
         success: true,
         district,
         generatedQueries: queries.length,
         googleIdsFound,
         uniqueIds: uniqueIds.size,
+        existingIds: existingCount,
+        newIds: newCount,
         sampleQueries: queries.slice(0, 10),
     });
 }
