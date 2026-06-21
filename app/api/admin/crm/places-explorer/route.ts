@@ -122,7 +122,7 @@ export async function POST(req: NextRequest) {
         }
     }
 
-    // 🔥 Place Details 샘플 테스트
+    // Place Details 샘플 테스트
     const sampleIds = [...uniqueIds].slice(0, 10);
 
     let detailsFetched = 0;
