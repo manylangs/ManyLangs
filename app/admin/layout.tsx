@@ -91,6 +91,12 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             >
               🧭 Places Explorer
             </Link>
+            <Link
+              href="/admin/place-queue"
+              style={subLinkStyle(pathname.startsWith("/admin/place-queue"))}
+            >
+              ⚙️ Place Queue
+            </Link>
           </>
         )}
       </nav>
