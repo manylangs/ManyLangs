@@ -85,6 +85,12 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <Link href="/admin/places" style={subLinkStyle(pathname.startsWith("/admin/places"))}>📍 Places</Link>
             <Link href="/admin/youtube" style={subLinkStyle(pathname.startsWith("/admin/youtube"))}>🎥 YouTube</Link>
             <Link href="/admin/campaigns" style={subLinkStyle(pathname.startsWith("/admin/campaigns"))}>📧 Campaigns</Link>
+            <Link
+              href="/admin/places-explorer"
+              style={subLinkStyle(pathname.startsWith("/admin/places-explorer"))}
+            >
+              🧭 Places Explorer
+            </Link>
           </>
         )}
       </nav>
