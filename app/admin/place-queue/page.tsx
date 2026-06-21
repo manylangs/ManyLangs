@@ -5,7 +5,11 @@ import { useEffect, useState } from "react";
 export default function PlaceQueuePage() {
   const [stats, setStats] = useState<any[]>([]);
   const [result, setResult] = useState<any>(null);
+
   const [loading, setLoading] = useState(false);
+  const [websiteLoading, setWebsiteLoading] = useState(false);
+  const [emailLoading, setEmailLoading] = useState(false);
+  const [importLoading, setImportLoading] = useState(false);
 
   const loadStats = async () => {
     try {
@@ -25,7 +29,7 @@ export default function PlaceQueuePage() {
     loadStats();
   }, []);
 
-  const runWorker = async () => {
+  const runDetails = async () => {
     setLoading(true);
 
     try {
@@ -43,6 +47,66 @@ export default function PlaceQueuePage() {
     }
 
     setLoading(false);
+  };
+
+  const runWebsite = async () => {
+    setWebsiteLoading(true);
+
+    try {
+      const res = await fetch(
+        "/api/admin/crm/place-queue/website"
+      );
+
+      const data = await res.json();
+
+      setResult(data);
+
+      await loadStats();
+    } catch (e) {
+      console.error(e);
+    }
+
+    setWebsiteLoading(false);
+  };
+
+  const runEmail = async () => {
+    setEmailLoading(true);
+
+    try {
+      const res = await fetch(
+        "/api/admin/crm/place-queue/extract-email"
+      );
+
+      const data = await res.json();
+
+      setResult(data);
+
+      await loadStats();
+    } catch (e) {
+      console.error(e);
+    }
+
+    setEmailLoading(false);
+  };
+
+  const runImport = async () => {
+    setImportLoading(true);
+
+    try {
+      const res = await fetch(
+        "/api/admin/crm/place-queue/import"
+      );
+
+      const data = await res.json();
+
+      setResult(data);
+
+      await loadStats();
+    } catch (e) {
+      console.error(e);
+    }
+
+    setImportLoading(false);
   };
 
   return (
@@ -89,21 +153,69 @@ export default function PlaceQueuePage() {
         ))}
       </div>
 
-      <button
-        onClick={runWorker}
-        disabled={loading}
+      <div
         style={{
-          padding: "12px 20px",
-          borderRadius: 8,
-          border: "1px solid #ddd",
-          cursor: "pointer",
-          fontWeight: 600,
+          display: "flex",
+          gap: 12,
+          flexWrap: "wrap",
         }}
       >
-        {loading
-          ? "Running Details Worker..."
-          : "Run Details Worker"}
-      </button>
+        <button
+          onClick={runDetails}
+          disabled={loading}
+          style={{
+            padding: "12px 20px",
+            borderRadius: 8,
+            border: "1px solid #ddd",
+            cursor: "pointer",
+            fontWeight: 600,
+          }}
+        >
+          {loading ? "Running Details..." : "Run Details"}
+        </button>
+
+        <button
+          onClick={runWebsite}
+          disabled={websiteLoading}
+          style={{
+            padding: "12px 20px",
+            borderRadius: 8,
+            border: "1px solid #ddd",
+            cursor: "pointer",
+            fontWeight: 600,
+          }}
+        >
+          {websiteLoading ? "Running Website..." : "Run Website"}
+        </button>
+
+        <button
+          onClick={runEmail}
+          disabled={emailLoading}
+          style={{
+            padding: "12px 20px",
+            borderRadius: 8,
+            border: "1px solid #ddd",
+            cursor: "pointer",
+            fontWeight: 600,
+          }}
+        >
+          {emailLoading ? "Running Email..." : "Run Email Extractor"}
+        </button>
+
+        <button
+          onClick={runImport}
+          disabled={importLoading}
+          style={{
+            padding: "12px 20px",
+            borderRadius: 8,
+            border: "1px solid #ddd",
+            cursor: "pointer",
+            fontWeight: 600,
+          }}
+        >
+          {importLoading ? "Running Import..." : "Run Import"}
+        </button>
+      </div>
 
       {result && (
         <div
