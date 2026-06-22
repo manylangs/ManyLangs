@@ -220,15 +220,22 @@ export default function PlaceQueuePage() {
         }}
       >
         {CARD_ORDER.map((status) => {
-          const row = stats.find((r: any) => r.status === status);
-          if (!row) return null;
+          const row = stats.find(
+            (r: any) => r.status === status
+          );
+
+          const count = Number(
+            row?.count || 0
+          );
 
           return (
             <div
               key={status}
               onClick={() =>
                 setSelectedCard(
-                  selectedCard === status ? "ALL" : status
+                  selectedCard === status
+                    ? "ALL"
+                    : status
                 )
               }
               style={{
@@ -241,19 +248,35 @@ export default function PlaceQueuePage() {
                 minWidth: 180,
                 cursor: "pointer",
                 background:
-                  selectedCard === status ? "#fafafa" : "#fff",
-                boxShadow: "0 1px 3px rgba(0,0,0,0.06)",
+                  selectedCard === status
+                    ? "#fafafa"
+                    : "#fff",
+                boxShadow:
+                  "0 1px 3px rgba(0,0,0,0.06)",
               }}
             >
-              <div style={{ fontSize: 13, color: "#666", marginBottom: 8 }}>
+              <div
+                style={{
+                  fontSize: 13,
+                  color: "#666",
+                  marginBottom: 8,
+                }}
+              >
                 {STATUS_LABELS[status]}
               </div>
-              <div style={{ fontSize: 34, fontWeight: 700 }}>
-                {row.count}
+
+              <div
+                style={{
+                  fontSize: 34,
+                  fontWeight: 700,
+                }}
+              >
+                {count}
               </div>
             </div>
           );
         })}
+
       </div>
 
       {/* ── 액션 버튼 ── */}
