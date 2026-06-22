@@ -76,27 +76,17 @@ export async function GET() {
 
       if ((result.rowsAffected || 0) > 0) {
         imported++;
-
-        await db.execute({
-          sql: `
-            UPDATE place_queue
-            SET status = 'IMPORTED'
-            WHERE place_id = ?
-          `,
-          args: [placeId],
-        });
       } else {
         duplicated++;
-
-        await db.execute({
-          sql: `
-            UPDATE place_queue
-            SET status = 'DUPLICATE'
-            WHERE place_id = ?
-          `,
-          args: [placeId],
-        });
       }
+
+      await db.execute({
+        sql: `
+          DELETE FROM place_queue
+          WHERE place_id = ?
+        `,
+        args: [placeId],
+      });
     }
 
     return NextResponse.json({
