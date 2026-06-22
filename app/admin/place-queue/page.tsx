@@ -2,23 +2,35 @@
 
 import { useEffect, useState } from "react";
 
-const STATUS_LABELS: Record<string, string> = {
-  NEW: "신규 수집",
-  DETAILS_DONE: "홈페이지 확보",
-  EMAIL_DONE: "이메일 확보",
-  IMPORTED: "CRM 등록 완료",
-  HTML_FAILED: "홈페이지 확보 실패",
-  EMAIL_NOT_FOUND: "이메일 없음",
+const STATUS_LABELS = {
+  NEW: "NEW",
+  DETAILS_DONE: "DETAILS",
+  HTML_DONE: "HTML",
+  EMAIL_DONE: "EMAIL",
+  IMPORTED: "IMPORTED",
+  HTML_FAILED: "HTML FAIL",
+  EMAIL_NOT_FOUND: "NO EMAIL",
 };
 
 const CARD_ORDER = [
   "NEW",
   "DETAILS_DONE",
+  "HTML_DONE",
   "EMAIL_DONE",
   "IMPORTED",
   "HTML_FAILED",
   "EMAIL_NOT_FOUND",
 ];
+
+const STATUS_HELP = {
+  NEW: "Google Places에서 수집된 신규 데이터입니다.",
+  DETAILS_DONE: "Place Details 조회가 완료되어 이름, 주소, 홈페이지 정보를 확보했습니다.",
+  HTML_DONE: "홈페이지 HTML 수집이 완료되었습니다.",
+  EMAIL_DONE: "이메일 추출이 완료되었습니다.",
+  IMPORTED: "CRM schools 테이블로 등록 완료되었습니다.",
+  HTML_FAILED: "홈페이지 접근 또는 HTML 수집에 실패했습니다.",
+  EMAIL_NOT_FOUND: "홈페이지는 찾았지만 이메일을 발견하지 못했습니다.",
+};
 
 const actionButtonStyle: React.CSSProperties = {
   height: 40,
@@ -300,7 +312,24 @@ export default function PlaceQueuePage() {
           );
         })}
       </div>
-
+      {selectedCard !== "ALL" && (
+        <div
+          style={{
+            marginBottom: 20,
+            padding: 12,
+            background: "#f8f8f8",
+            border: "1px solid #eee",
+            borderRadius: 8,
+            fontSize: 13,
+            color: "#555",
+          }}
+        >
+          <strong>{STATUS_LABELS[selectedCard]}</strong>
+          <div style={{ marginTop: 4 }}>
+            {STATUS_HELP[selectedCard]}
+          </div>
+        </div>
+      )}
       {/* ── 액션 버튼 ── */}
       <div
         style={{
