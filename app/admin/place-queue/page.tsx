@@ -335,33 +335,6 @@ export default function PlaceQueuePage() {
           overflow: "hidden",
         }}
       >
-        <div
-          style={{
-            padding: 14,
-            fontWeight: 700,
-            borderBottom: "1px solid #eee",
-            display: "flex",
-            alignItems: "center",
-            gap: 8,
-          }}
-        >
-          지역별 Queue
-          {selectedCard !== "ALL" && (
-            <span
-              style={{
-                fontSize: 12,
-                fontWeight: 500,
-                background: "#f0f0f0",
-                borderRadius: 6,
-                padding: "2px 10px",
-                color: "#444",
-              }}
-            >
-              {STATUS_LABELS[selectedCard]} 필터 중
-            </span>
-          )}
-        </div>
-
         <table style={{ width: "100%", borderCollapse: "collapse" }}>
           <thead>
             <tr style={{ background: "#fafafa" }}>
