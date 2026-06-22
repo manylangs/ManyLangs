@@ -58,53 +58,38 @@ export default function PlacesExplorerPage() {
       </div>
 
       {result && (
-        <>
-          <div
-            style={{
-              marginTop: 20,
-              display: "grid",
-              gridTemplateColumns: "repeat(4, 1fr)",
-              gap: 12,
-            }}
-          >
-            <div>
-              <strong>New Added</strong>
-              <br />
-              {result.queuedIds ?? 0}
-            </div>
-
-            <div>
-              <strong>Duplicates</strong>
-              <br />
-              {(result.uniqueIds ?? 0) -
-                (result.queuedIds ?? 0)}
-            </div>
-
-            <div>
-              <strong>Unique IDs</strong>
-              <br />
-              {result.uniqueIds ?? 0}
-            </div>
-
-            <div>
-              <strong>Total Queue</strong>
-              <br />
-              {result.totalQueue ?? 0}
-            </div>
+        <div
+          style={{
+            marginTop: 24,
+            display: "grid",
+            gridTemplateColumns: "repeat(4, 1fr)",
+            gap: 16,
+          }}
+        >
+          <div>
+            <strong>Search Term</strong>
+            <br />
+            {result.searchTerm}
           </div>
 
-          <pre
-            style={{
-              marginTop: 20,
-              background: "#f5f5f5",
-              padding: 16,
-              borderRadius: 8,
-              overflow: "auto",
-            }}
-          >
-            {JSON.stringify(result, null, 2)}
-          </pre>
-        </>
+          <div>
+            <strong>Found</strong>
+            <br />
+            {result.found ?? 0}
+          </div>
+
+          <div>
+            <strong>Added</strong>
+            <br />
+            {result.added ?? 0}
+          </div>
+
+          <div>
+            <strong>Total In Term</strong>
+            <br />
+            {result.totalInTerm ?? 0}
+          </div>
+        </div>
       )}
     </div>
   );

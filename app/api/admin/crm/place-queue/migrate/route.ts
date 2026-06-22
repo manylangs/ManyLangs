@@ -36,6 +36,11 @@ export async function GET() {
     ADD COLUMN search_term TEXT
   `).catch(() => { });
 
+  await db.execute(`
+    ALTER TABLE place_queue
+    ADD COLUMN district_name TEXT
+  `).catch(() => { });
+
   return NextResponse.json({
     success: true,
   });

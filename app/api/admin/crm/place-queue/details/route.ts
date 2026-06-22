@@ -29,19 +29,25 @@ export async function GET() {
 
         const details = await getPlaceDetails(placeId);
 
-        const address = details.formattedAddress || "";
-
-        const parts = address.split(",");
+        const components = details.addressComponents || [];
 
         const country =
-          parts.length > 0
-            ? parts[parts.length - 1].trim()
-            : "";
+          components.find(
+            (c: any) =>
+              c.types?.includes("country")
+          )?.longText || "";
 
         const city =
-          parts.length > 1
-            ? parts[parts.length - 2].trim()
-            : "";
+          components.find(
+            (c: any) =>
+              c.types?.includes("locality")
+          )?.longText || "";
+
+        const districtName =
+          components.find(
+            (c: any) =>
+              c.types?.includes("sublocality")
+          )?.longText || "";
 
         await db.execute({
           sql: `
@@ -51,6 +57,7 @@ export async function GET() {
               website = ?,
               country = ?,
               city = ?,
+              district_name = ?,
               status = 'DETAILS_DONE'
             WHERE place_id = ?
           `,
@@ -59,6 +66,7 @@ export async function GET() {
             details.websiteUri || "",
             country,
             city,
+            districtName,
             placeId,
           ],
         });

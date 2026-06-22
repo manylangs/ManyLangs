@@ -79,13 +79,9 @@ export async function POST(req: NextRequest) {
 
   const uniqueIds = new Set<string>();
 
-  let googleIdsFound = 0;
-
   for (const query of queries) {
     try {
       const places = await searchPlaceIds(query);
-
-      googleIdsFound += places.length;
 
       for (const place of places) {
         if (place.id) {
@@ -99,7 +95,7 @@ export async function POST(req: NextRequest) {
 
   const db = getDb();
 
-  let queuedIds = 0;
+  let added = 0;
 
   for (const id of uniqueIds) {
     try {
@@ -121,33 +117,29 @@ export async function POST(req: NextRequest) {
         ],
       });
 
-      queuedIds += Number(result.rowsAffected || 0);
+      added += Number(result.rowsAffected || 0);
     } catch (e) {
       console.error(id, e);
     }
   }
 
-  const totalResult = await db.execute(`
-    SELECT COUNT(*) as count
-    FROM place_queue
-  `);
+  const totalResult = await db.execute({
+    sql: `
+      SELECT COUNT(*) as count
+      FROM place_queue
+      WHERE search_term = ?
+    `,
+    args: [district],
+  });
 
-  const totalQueue = Number(
+  const totalInTerm = Number(
     totalResult.rows[0]?.count || 0
   );
 
   return NextResponse.json({
-    success: true,
-    district,
-
-    generatedQueries: queries.length,
-
-    googleIdsFound,
-
-    uniqueIds: uniqueIds.size,
-
-    queuedIds,
-
-    totalQueue,
+    searchTerm: district,
+    found: uniqueIds.size,
+    added,
+    totalInTerm,
   });
 }
