@@ -19,7 +19,8 @@ export async function GET() {
         website,
         email,
         country,
-        city
+        city,
+        district_name
       FROM place_queue
       WHERE status = 'EMAIL_DONE'
       LIMIT 100
@@ -34,6 +35,7 @@ export async function GET() {
             const email = String(row.email || "");
             const country = String(row.country || "");
             const city = String(row.city || "");
+            const districtName = String(row.district_name || "");
 
             processed++;
 
@@ -46,6 +48,7 @@ export async function GET() {
             email,
             country,
             city,
+            district_name,
             lead_type,
             source,
             discovery_batch,
@@ -57,7 +60,7 @@ export async function GET() {
           )
           VALUES
           (
-            ?, ?, ?, ?, ?, ?, ?, ?, 0, 0, 0, 'COLD', 'NEW'
+            ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, 0, 0, 'COLD', 'NEW'
           )
         `,
                 args: [
@@ -66,6 +69,7 @@ export async function GET() {
                     email,
                     country,
                     city,
+                    districtName,
                     "LANGUAGE_SCHOOL",
                     "GOOGLE_PLACES",
                     "places_auto_import",

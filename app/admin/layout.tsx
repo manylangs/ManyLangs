@@ -99,10 +99,6 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
               ⚙️ Place Queue
             </Link>
 
-            <Link href="/admin/imports" style={subLinkStyle(pathname.startsWith("/admin/imports"))}>
-              📥 Imports
-            </Link>
-
             <Link href="/admin/exports" style={subLinkStyle(pathname.startsWith("/admin/exports"))}>
               💾 Exports
             </Link>
