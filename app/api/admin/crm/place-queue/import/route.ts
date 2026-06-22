@@ -27,6 +27,7 @@ export async function GET() {
 
     let processed = 0;
     let imported = 0;
+    let duplicated = 0;
 
     for (const row of rows.rows) {
       const placeId = String(row.place_id || "");
@@ -84,6 +85,17 @@ export async function GET() {
           `,
           args: [placeId],
         });
+      } else {
+        duplicated++;
+
+        await db.execute({
+          sql: `
+            UPDATE place_queue
+            SET status = 'DUPLICATE'
+            WHERE place_id = ?
+          `,
+          args: [placeId],
+        });
       }
     }
 
@@ -91,6 +103,7 @@ export async function GET() {
       success: true,
       processed,
       imported,
+      duplicated,
     });
   } catch (err: any) {
     console.error(err);
