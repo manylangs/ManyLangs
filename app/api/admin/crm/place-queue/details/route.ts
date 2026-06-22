@@ -41,13 +41,23 @@ export async function GET() {
           components.find(
             (c: any) =>
               c.types?.includes("locality")
-          )?.longText || "";
+          )?.longText ||
+          components.find(
+            (c: any) =>
+              c.types?.includes("administrative_area_level_2")
+          )?.longText ||
+          "";
 
-        const districtName =
+        const district =
           components.find(
             (c: any) =>
               c.types?.includes("sublocality")
-          )?.longText || "";
+          )?.longText ||
+          components.find(
+            (c: any) =>
+              c.types?.includes("sublocality_level_1")
+          )?.longText ||
+          "";
 
         await db.execute({
           sql: `
@@ -58,6 +68,7 @@ export async function GET() {
               country = ?,
               city = ?,
               district_name = ?,
+              district = ?,
               status = 'DETAILS_DONE'
             WHERE place_id = ?
           `,
@@ -66,10 +77,30 @@ export async function GET() {
             details.websiteUri || "",
             country,
             city,
-            districtName,
+            district,
+            district,
             placeId,
           ],
         });
+
+        if (country || city || district) {
+          await db.execute({
+            sql: `
+              INSERT OR IGNORE INTO location_master
+              (
+                country,
+                city,
+                district
+              )
+              VALUES (?, ?, ?)
+            `,
+            args: [
+              country,
+              city,
+              district,
+            ],
+          });
+        }
 
         processed++;
 
