@@ -11,21 +11,36 @@ function getDb() {
 export async function GET() {
     const db = getDb();
 
-    const countries = await db.execute(
-        "SELECT COUNT(*) as count FROM countries"
-    );
+    const countries = await db.execute(`
+    SELECT COUNT(DISTINCT country) as count
+    FROM location_master
+  `);
 
-    const cities = await db.execute(
-        "SELECT COUNT(*) as count FROM cities"
-    );
+    const cities = await db.execute(`
+    SELECT COUNT(DISTINCT city) as count
+    FROM location_master
+  `);
 
-    const districts = await db.execute(
-        "SELECT COUNT(*) as count FROM districts"
-    );
+    const districts = await db.execute(`
+    SELECT COUNT(DISTINCT district) as count
+    FROM location_master
+    WHERE district <> ''
+  `);
+
+    const byCountry = await db.execute(`
+    SELECT
+      country,
+      COUNT(DISTINCT city) as cities,
+      COUNT(DISTINCT district) as districts
+    FROM location_master
+    GROUP BY country
+    ORDER BY country
+  `);
 
     return NextResponse.json({
         countries: countries.rows[0],
         cities: cities.rows[0],
         districts: districts.rows[0],
+        byCountry: byCountry.rows,
     });
 }
