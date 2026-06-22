@@ -15,8 +15,11 @@ export async function GET() {
         const rows = await db.execute(`
       SELECT
         place_id,
+        name,
         website,
-        email
+        email,
+        country,
+        city
       FROM place_queue
       WHERE status = 'EMAIL_DONE'
       LIMIT 100
@@ -26,8 +29,11 @@ export async function GET() {
         let imported = 0;
 
         for (const row of rows.rows) {
+            const name = String(row.name || "");
             const website = String(row.website || "");
             const email = String(row.email || "");
+            const country = String(row.country || "");
+            const city = String(row.city || "");
 
             processed++;
 
@@ -55,11 +61,11 @@ export async function GET() {
           )
         `,
                 args: [
-                    website,
+                    name,
                     website,
                     email,
-                    "",
-                    "",
+                    country,
+                    city,
                     "LANGUAGE_SCHOOL",
                     "GOOGLE_PLACES",
                     "places_auto_import",
