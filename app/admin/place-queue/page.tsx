@@ -6,6 +6,13 @@ export default function PlaceQueuePage() {
   const [stats, setStats] = useState<any[]>([]);
   const [result, setResult] = useState<any>(null);
 
+  const [country, setCountry] = useState("ALL");
+  const [city, setCity] = useState("ALL");
+  const [district, setDistrict] = useState("ALL");
+  const [statusFilter, setStatusFilter] = useState("ALL");
+
+  const [selectedCard, setSelectedCard] = useState("ALL");
+
   const [loading, setLoading] = useState(false);
   const [websiteLoading, setWebsiteLoading] = useState(false);
   const [emailLoading, setEmailLoading] = useState(false);
@@ -110,26 +117,104 @@ export default function PlaceQueuePage() {
   };
 
   return (
-    <div style={{ padding: 24, maxWidth: 1000 }}>
+    <div
+      style={{
+        padding: 24,
+        maxWidth: 1400,
+      }}
+    >
       <h1>⚙️ Place Queue</h1>
+
+      {/* Filters */}
+
+      <div
+        style={{
+          display: "flex",
+          gap: 12,
+          flexWrap: "wrap",
+          marginTop: 20,
+          marginBottom: 24,
+        }}
+      >
+        <select
+          value={country}
+          onChange={(e) =>
+            setCountry(e.target.value)
+          }
+        >
+          <option>ALL</option>
+          <option>Argentina</option>
+          <option>Brazil</option>
+          <option>Korea</option>
+        </select>
+
+        <select
+          value={city}
+          onChange={(e) =>
+            setCity(e.target.value)
+          }
+        >
+          <option>ALL</option>
+          <option>Buenos Aires</option>
+          <option>Sao Paulo</option>
+          <option>Seoul</option>
+        </select>
+
+        <select
+          value={district}
+          onChange={(e) =>
+            setDistrict(e.target.value)
+          }
+        >
+          <option>ALL</option>
+        </select>
+
+        <select
+          value={statusFilter}
+          onChange={(e) =>
+            setStatusFilter(e.target.value)
+          }
+        >
+          <option>ALL</option>
+          <option>NEW</option>
+          <option>DETAILS_DONE</option>
+          <option>HTML_DONE</option>
+          <option>EMAIL_DONE</option>
+          <option>EMAIL_NOT_FOUND</option>
+          <option>HTML_FAILED</option>
+        </select>
+      </div>
+
+      {/* Status Cards */}
 
       <div
         style={{
           display: "flex",
           gap: 16,
-          marginTop: 20,
-          marginBottom: 30,
           flexWrap: "wrap",
+          marginBottom: 30,
         }}
       >
         {stats.map((row: any) => (
           <div
             key={row.status}
+            onClick={() =>
+              setSelectedCard(row.status)
+            }
             style={{
-              border: "1px solid #ddd",
-              borderRadius: 8,
+              border:
+                selectedCard === row.status
+                  ? "2px solid #000"
+                  : "1px solid #ddd",
+
+              borderRadius: 10,
               padding: 16,
-              minWidth: 140,
+              minWidth: 160,
+              cursor: "pointer",
+              background:
+                selectedCard === row.status
+                  ? "#fafafa"
+                  : "#fff",
             }}
           >
             <div
@@ -143,8 +228,9 @@ export default function PlaceQueuePage() {
 
             <div
               style={{
-                fontSize: 28,
+                fontSize: 30,
                 fontWeight: 700,
+                marginTop: 6,
               }}
             >
               {row.count}
@@ -153,68 +239,106 @@ export default function PlaceQueuePage() {
         ))}
       </div>
 
+      {/* Actions */}
+
       <div
         style={{
           display: "flex",
           gap: 12,
           flexWrap: "wrap",
+          marginBottom: 30,
         }}
       >
         <button
           onClick={runDetails}
           disabled={loading}
-          style={{
-            padding: "12px 20px",
-            borderRadius: 8,
-            border: "1px solid #ddd",
-            cursor: "pointer",
-            fontWeight: 600,
-          }}
         >
-          {loading ? "Running Details..." : "Run Details"}
+          {loading
+            ? "Running Details..."
+            : "Run Details"}
         </button>
 
         <button
           onClick={runWebsite}
           disabled={websiteLoading}
-          style={{
-            padding: "12px 20px",
-            borderRadius: 8,
-            border: "1px solid #ddd",
-            cursor: "pointer",
-            fontWeight: 600,
-          }}
         >
-          {websiteLoading ? "Running Website..." : "Run Website"}
+          {websiteLoading
+            ? "Running Website..."
+            : "Run Website"}
         </button>
 
         <button
           onClick={runEmail}
           disabled={emailLoading}
-          style={{
-            padding: "12px 20px",
-            borderRadius: 8,
-            border: "1px solid #ddd",
-            cursor: "pointer",
-            fontWeight: 600,
-          }}
         >
-          {emailLoading ? "Running Email..." : "Run Email Extractor"}
+          {emailLoading
+            ? "Running Email..."
+            : "Run Email"}
         </button>
 
         <button
           onClick={runImport}
           disabled={importLoading}
+        >
+          {importLoading
+            ? "Running Import..."
+            : "Run Import"}
+        </button>
+      </div>
+
+      {/* Queue Table Placeholder */}
+
+      <div
+        style={{
+          border: "1px solid #ddd",
+          borderRadius: 10,
+          overflow: "hidden",
+        }}
+      >
+        <div
           style={{
-            padding: "12px 20px",
-            borderRadius: 8,
-            border: "1px solid #ddd",
-            cursor: "pointer",
-            fontWeight: 600,
+            padding: 14,
+            fontWeight: 700,
+            borderBottom:
+              "1px solid #eee",
           }}
         >
-          {importLoading ? "Running Import..." : "Run Import"}
-        </button>
+          Queue Items
+        </div>
+
+        <table
+          style={{
+            width: "100%",
+            borderCollapse:
+              "collapse",
+          }}
+        >
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Country</th>
+              <th>City</th>
+              <th>Status</th>
+              <th>Website</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td
+                colSpan={6}
+                style={{
+                  padding: 30,
+                  textAlign: "center",
+                  color: "#999",
+                }}
+              >
+                API 연결 예정
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
       {result && (
@@ -234,7 +358,11 @@ export default function PlaceQueuePage() {
               overflow: "auto",
             }}
           >
-            {JSON.stringify(result, null, 2)}
+            {JSON.stringify(
+              result,
+              null,
+              2
+            )}
           </pre>
         </div>
       )}
