@@ -1,14 +1,62 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function PlacesExplorerPage() {
-  const [country, setCountry] = useState("South Korea");
-  const [city, setCity] = useState("Seoul");
-  const [district, setDistrict] = useState("Gangnam");
+  const [countries, setCountries] = useState<string[]>([]);
+  const [cities, setCities] = useState<string[]>([]);
+
+  const [country, setCountry] = useState("");
+  const [city, setCity] = useState("");
+  const [district, setDistrict] = useState("");
 
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<any>(null);
+
+  useEffect(() => {
+    loadCountries();
+  }, []);
+
+  useEffect(() => {
+    if (country) {
+      loadCities(country);
+    }
+  }, [country]);
+
+  const loadCountries = async () => {
+    try {
+      const res = await fetch("/api/admin/crm/locations");
+      const json = await res.json();
+
+      setCountries(json.countries || []);
+
+      if (json.countries?.length) {
+        setCountry(json.countries[0]);
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  const loadCities = async (selectedCountry: string) => {
+    try {
+      const res = await fetch(
+        `/api/admin/crm/locations?country=${encodeURIComponent(
+          selectedCountry
+        )}`
+      );
+
+      const json = await res.json();
+
+      setCities(json.cities || []);
+
+      if (json.cities?.length) {
+        setCity(json.cities[0]);
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  };
 
   const runExplorer = async () => {
     setLoading(true);
@@ -54,34 +102,44 @@ export default function PlacesExplorerPage() {
           flexWrap: "wrap",
         }}
       >
-        <input
+        <select
           value={country}
           onChange={(e) => setCountry(e.target.value)}
-          placeholder="Country"
           style={{
             padding: 8,
             width: 220,
             border: "1px solid #ddd",
             borderRadius: 6,
           }}
-        />
+        >
+          {countries.map((c) => (
+            <option key={c} value={c}>
+              {c}
+            </option>
+          ))}
+        </select>
 
-        <input
+        <select
           value={city}
           onChange={(e) => setCity(e.target.value)}
-          placeholder="City"
           style={{
             padding: 8,
             width: 220,
             border: "1px solid #ddd",
             borderRadius: 6,
           }}
-        />
+        >
+          {cities.map((c) => (
+            <option key={c} value={c}>
+              {c}
+            </option>
+          ))}
+        </select>
 
         <input
           value={district}
           onChange={(e) => setDistrict(e.target.value)}
-          placeholder="District"
+          placeholder="District (optional)"
           style={{
             padding: 8,
             width: 220,
@@ -90,10 +148,7 @@ export default function PlacesExplorerPage() {
           }}
         />
 
-        <button
-          onClick={runExplorer}
-          disabled={loading}
-        >
+        <button onClick={runExplorer} disabled={loading}>
           {loading ? "Running..." : "Run Explorer"}
         </button>
       </div>
