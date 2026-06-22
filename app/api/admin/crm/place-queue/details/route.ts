@@ -28,7 +28,7 @@ export async function GET() {
         const placeId = String(row.place_id);
 
         const details = await getPlaceDetails(placeId);
-
+        console.log(JSON.stringify(details, null, 2));
         const components = details.addressComponents || [];
 
         const country =
