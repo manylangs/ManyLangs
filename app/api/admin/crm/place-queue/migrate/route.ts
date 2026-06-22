@@ -14,22 +14,27 @@ export async function GET() {
   await db.execute(`
     ALTER TABLE place_queue
     ADD COLUMN html TEXT
-  `).catch(() => {});
+  `).catch(() => { });
 
   await db.execute(`
     ALTER TABLE place_queue
     ADD COLUMN name TEXT
-  `).catch(() => {});
+  `).catch(() => { });
 
   await db.execute(`
     ALTER TABLE place_queue
     ADD COLUMN country TEXT
-  `).catch(() => {});
+  `).catch(() => { });
 
   await db.execute(`
     ALTER TABLE place_queue
     ADD COLUMN city TEXT
-  `).catch(() => {});
+  `).catch(() => { });
+
+  await db.execute(`
+    ALTER TABLE place_queue
+    ADD COLUMN search_term TEXT
+  `).catch(() => { });
 
   return NextResponse.json({
     success: true,

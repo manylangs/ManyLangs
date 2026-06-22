@@ -109,11 +109,16 @@ export async function POST(req: NextRequest) {
           (
             place_id,
             district,
+            search_term,
             status
           )
-          VALUES (?, ?, 'NEW')
+          VALUES (?, ?, ?, 'NEW')
         `,
-        args: [id, district],
+        args: [
+          id,
+          district,
+          district,
+        ],
       });
 
       queuedIds += Number(result.rowsAffected || 0);
