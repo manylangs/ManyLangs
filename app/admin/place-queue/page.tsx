@@ -385,12 +385,9 @@ export default function PlaceQueuePage() {
         {/* ── 페이지네이션 ── */}
         <div
           style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: 12,
-            padding: 16,
-            borderTop: "1px solid #eee",
+            border: "1px solid #ddd",
+            borderRadius: 10,
+            overflow: "hidden",
           }}
         >
           <button
