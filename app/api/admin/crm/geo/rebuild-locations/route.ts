@@ -8,11 +8,19 @@ const db = createClient({
     authToken: process.env.TURSO_AUTH_TOKEN!,
 });
 
-export async function GET() {
+export async function GET(request: Request) {
     try {
-        await db.execute(`
-      DELETE FROM location_master
-    `);
+        const countryCodeFilter =
+            new URL(request.url).searchParams.get("country");
+
+        if (!countryCodeFilter) {
+            return NextResponse.json({
+                success: false,
+                error: "country parameter required",
+                example:
+                    "/api/admin/crm/geo/rebuild-locations?country=KR",
+            });
+        }
 
         const countryMap = new Map<string, string>();
 
@@ -49,13 +57,13 @@ export async function GET() {
             .readFileSync(cityFile, "utf8")
             .split("\n");
 
-        let inserted = 0;
-
         const ALLOWED = new Set([
             "PPLC",
             "PPLA",
             "PPLA2",
         ]);
+
+        let inserted = 0;
 
         for (const line of cityLines) {
             if (!line.trim()) continue;
@@ -68,6 +76,10 @@ export async function GET() {
 
             if (!city) continue;
             if (!countryCode) continue;
+
+            if (countryCode !== countryCodeFilter) {
+                continue;
+            }
 
             if (!ALLOWED.has(featureCode)) {
                 continue;
@@ -98,28 +110,14 @@ export async function GET() {
             inserted++;
         }
 
-        const countries = new Set<string>();
-
-        for (const line of cityLines) {
-            if (!line.trim()) continue;
-
-            const cols = line.split("\t");
-
-            const featureCode = cols[7]?.trim();
-            const countryCode = cols[8]?.trim();
-
-            if (!ALLOWED.has(featureCode)) continue;
-
-            const country =
-                countryMap.get(countryCode) || countryCode;
-
-            countries.add(country);
-        }
+        const countryName =
+            countryMap.get(countryCodeFilter) ||
+            countryCodeFilter;
 
         return NextResponse.json({
             success: true,
-            countries: countries.size,
-            cities: inserted,
+            country: countryName,
+            inserted,
         });
     } catch (e: any) {
         console.error(e);
