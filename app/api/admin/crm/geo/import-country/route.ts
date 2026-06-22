@@ -79,19 +79,34 @@ export async function GET(req: NextRequest) {
 
     const lines = citiesRaw.split("\n");
 
+    const ALLOWED = new Set([
+      "PPLC",
+      "PPLA",
+      "PPLA2",
+    ]);
+
     let inserted = 0;
 
     for (const line of lines) {
+      if (!line.trim()) {
+        continue;
+      }
+
       const cols = line.split("\t");
 
-      const city = cols[1];
-      const countryCode = cols[8];
+      const city = cols[1]?.trim();
+      const featureCode = cols[7]?.trim();
+      const countryCode = cols[8]?.trim();
+
+      if (!city) {
+        continue;
+      }
 
       if (countryCode !== code) {
         continue;
       }
 
-      if (!city) {
+      if (!ALLOWED.has(featureCode || "")) {
         continue;
       }
 
