@@ -11,23 +11,57 @@ async function run(path: string) {
 
 export async function GET() {
   try {
-    const details = await run(
-      "/api/admin/crm/place-queue/details"
-    );
+    let detailsTotal = 0;
+    let websiteTotal = 0;
+    let emailTotal = 0;
 
-    const website = await run(
-      "/api/admin/crm/place-queue/website"
-    );
+    while (true) {
+      const result = await run(
+        "/api/admin/crm/place-queue/details"
+      );
 
-    const email = await run(
-      "/api/admin/crm/place-queue/extract-email"
-    );
+      const processed = result?.processed || 0;
+
+      detailsTotal += processed;
+
+      if (processed === 0) {
+        break;
+      }
+    }
+
+    while (true) {
+      const result = await run(
+        "/api/admin/crm/place-queue/website"
+      );
+
+      const processed = result?.processed || 0;
+
+      websiteTotal += processed;
+
+      if (processed === 0) {
+        break;
+      }
+    }
+
+    while (true) {
+      const result = await run(
+        "/api/admin/crm/place-queue/extract-email"
+      );
+
+      const processed = result?.processed || 0;
+
+      emailTotal += processed;
+
+      if (processed === 0) {
+        break;
+      }
+    }
 
     return NextResponse.json({
       success: true,
-      details,
-      website,
-      email,
+      detailsProcessed: detailsTotal,
+      websiteProcessed: websiteTotal,
+      emailProcessed: emailTotal,
     });
   } catch (err: any) {
     console.error(err);
