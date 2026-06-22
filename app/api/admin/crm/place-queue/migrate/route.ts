@@ -16,6 +16,21 @@ export async function GET() {
     ADD COLUMN html TEXT
   `).catch(() => {});
 
+  await db.execute(`
+    ALTER TABLE place_queue
+    ADD COLUMN name TEXT
+  `).catch(() => {});
+
+  await db.execute(`
+    ALTER TABLE place_queue
+    ADD COLUMN country TEXT
+  `).catch(() => {});
+
+  await db.execute(`
+    ALTER TABLE place_queue
+    ADD COLUMN city TEXT
+  `).catch(() => {});
+
   return NextResponse.json({
     success: true,
   });
