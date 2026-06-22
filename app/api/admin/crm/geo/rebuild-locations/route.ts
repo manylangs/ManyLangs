@@ -1,18 +1,19 @@
 import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
-import { getDb } from "@/lib/db";
+import { createClient } from "@libsql/client";
+
+const db = createClient({
+    url: process.env.TURSO_DATABASE_URL!,
+    authToken: process.env.TURSO_AUTH_TOKEN!,
+});
 
 export async function GET() {
     try {
-        const db = await getDb();
-
-        // 1. 기존 데이터 삭제
         await db.execute(`
       DELETE FROM location_master
     `);
 
-        // 2. 국가코드 → 국가명 맵 생성
         const countryMap = new Map<string, string>();
 
         const countryFile = path.join(
@@ -38,7 +39,6 @@ export async function GET() {
             countryMap.set(countryCode, countryName);
         }
 
-        // 3. 도시 파일 읽기
         const cityFile = path.join(
             process.cwd(),
             "data",
