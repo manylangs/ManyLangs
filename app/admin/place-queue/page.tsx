@@ -6,6 +6,7 @@ const STATUS_LABELS: Record<string, string> = {
   NEW: "신규 수집",
   DETAILS_DONE: "홈페이지 확보",
   EMAIL_DONE: "이메일 확보",
+  IMPORTED: "CRM 등록 완료",
   HTML_FAILED: "홈페이지 확보 실패",
   EMAIL_NOT_FOUND: "이메일 없음",
 };
@@ -14,6 +15,7 @@ const CARD_ORDER = [
   "NEW",
   "DETAILS_DONE",
   "EMAIL_DONE",
+  "IMPORTED",
   "HTML_FAILED",
   "EMAIL_NOT_FOUND",
 ];
