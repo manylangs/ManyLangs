@@ -32,6 +32,7 @@ const actionButtonStyle: React.CSSProperties = {
 export default function PlaceQueuePage() {
   const [stats, setStats] = useState<any[]>([]);
   const [result, setResult] = useState<any>(null);
+  const [rows, setRows] = useState<any[]>([]);
 
   // ── 위치 필터 ──────────────────────────────────────────
   const [countries, setCountries] = useState<string[]>([]);
@@ -82,7 +83,7 @@ export default function PlaceQueuePage() {
     loadCities();
   }, [country]);
 
-  // ── 통계 로딩 (국가/도시/카드 변경 시) ─────────────────
+  // ── 통계 로딩 ──────────────────────────────────────────
   const loadStats = async () => {
     try {
       const params = new URLSearchParams();
@@ -99,9 +100,39 @@ export default function PlaceQueuePage() {
     }
   };
 
+  // ── 행 목록 로딩 ───────────────────────────────────────
+  const loadRows = async () => {
+    try {
+      const params = new URLSearchParams();
+
+      if (country !== "ALL") {
+        params.set("country", country);
+      }
+
+      if (city !== "ALL") {
+        params.set("city", city);
+      }
+
+      if (selectedCard !== "ALL") {
+        params.set("status", selectedCard);
+      }
+
+      const res = await fetch(
+        `/api/admin/crm/place-queue/list?${params.toString()}`
+      );
+
+      const data = await res.json();
+
+      setRows(data.rows || []);
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
   useEffect(() => {
     loadStats();
-  }, [country, city]);
+    loadRows();
+  }, [country, city, selectedCard]);
 
   // ── 액션 ───────────────────────────────────────────────
   const runDetails = async () => {
@@ -196,8 +227,6 @@ export default function PlaceQueuePage() {
             </option>
           ))}
         </select>
-
-        {/* district 삭제 — 데이터 없음 */}
       </div>
 
       {/* ── 현재 선택 표시 ── */}
@@ -220,23 +249,14 @@ export default function PlaceQueuePage() {
         }}
       >
         {CARD_ORDER.map((status) => {
-          const row = stats.find(
-            (r: any) => r.status === status
-          );
-
-          const count = Number(
-            row?.count || 0
-          );
+          const row = stats.find((r: any) => r.status === status);
+          const count = Number(row?.count || 0);
 
           return (
             <div
               key={status}
               onClick={() =>
-                setSelectedCard(
-                  selectedCard === status
-                    ? "ALL"
-                    : status
-                )
+                setSelectedCard(selectedCard === status ? "ALL" : status)
               }
               style={{
                 border:
@@ -247,12 +267,8 @@ export default function PlaceQueuePage() {
                 padding: 20,
                 minWidth: 180,
                 cursor: "pointer",
-                background:
-                  selectedCard === status
-                    ? "#fafafa"
-                    : "#fff",
-                boxShadow:
-                  "0 1px 3px rgba(0,0,0,0.06)",
+                background: selectedCard === status ? "#fafafa" : "#fff",
+                boxShadow: "0 1px 3px rgba(0,0,0,0.06)",
               }}
             >
               <div
@@ -276,7 +292,6 @@ export default function PlaceQueuePage() {
             </div>
           );
         })}
-
       </div>
 
       {/* ── 액션 버튼 ── */}
@@ -353,35 +368,38 @@ export default function PlaceQueuePage() {
           </thead>
 
           <tbody>
-            <tr>
-              <td
-                colSpan={6}
-                style={{ padding: 30, textAlign: "center", color: "#999" }}
-              >
-                API 연결 예정
-              </td>
-            </tr>
+            {rows.length === 0 ? (
+              <tr>
+                <td
+                  colSpan={6}
+                  style={{
+                    padding: 30,
+                    textAlign: "center",
+                    color: "#999",
+                  }}
+                >
+                  데이터 없음
+                </td>
+              </tr>
+            ) : (
+              rows.map((row: any) => (
+                <tr key={row.id}>
+                  <td style={{ padding: 12 }}>{row.name || "-"}</td>
+                  <td style={{ padding: 12 }}>{row.country || "-"}</td>
+                  <td style={{ padding: 12 }}>{row.city || "-"}</td>
+                  <td style={{ padding: 12 }}>{row.status}</td>
+                  <td style={{ padding: 12 }}>
+                    {row.website ? "✅" : "-"}
+                  </td>
+                  <td style={{ padding: 12 }}>
+                    {row.email || "-"}
+                  </td>
+                </tr>
+              ))
+            )}
           </tbody>
         </table>
       </div>
-
-      {/* ── 마지막 실행 결과 ── */}
-      {result && (
-        <div
-          style={{
-            marginTop: 24,
-            padding: 16,
-            border: "1px solid #ddd",
-            borderRadius: 8,
-            background: "#fafafa",
-          }}
-        >
-          <h3>Last Run Result</h3>
-          <pre style={{ overflow: "auto" }}>
-            {JSON.stringify(result, null, 2)}
-          </pre>
-        </div>
-      )}
     </div>
   );
 }
