@@ -2,7 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@libsql/client";
 import {
   searchPlaceIds,
-  getPlaceDetails,
 } from "@/src/services/collectors/google_places_collector";
 
 function getDb() {
@@ -123,25 +122,14 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  // Place Details 샘플 테스트
-  const sampleIds = [...uniqueIds].slice(0, 10);
+  const totalResult = await db.execute(`
+    SELECT COUNT(*) as count
+    FROM place_queue
+  `);
 
-  let detailsFetched = 0;
-  let websitesFound = 0;
-
-  for (const placeId of sampleIds) {
-    try {
-      const details = await getPlaceDetails(placeId);
-
-      detailsFetched++;
-
-      if (details.websiteUri) {
-        websitesFound++;
-      }
-    } catch (e) {
-      console.error(placeId, e);
-    }
-  }
+  const totalQueue = Number(
+    totalResult.rows[0]?.count || 0
+  );
 
   return NextResponse.json({
     success: true,
@@ -155,9 +143,6 @@ export async function POST(req: NextRequest) {
 
     queuedIds,
 
-    detailsFetched,
-    websitesFound,
-
-    sampleQueries: queries.slice(0, 10),
+    totalQueue,
   });
 }
