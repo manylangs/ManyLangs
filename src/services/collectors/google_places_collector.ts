@@ -28,7 +28,7 @@ export async function getPlaceDetails(placeId: string) {
       headers: {
         "X-Goog-Api-Key": API_KEY,
         "X-Goog-FieldMask":
-          "id,displayName,websiteUri,formattedAddress",
+          "id,displayName,websiteUri,formattedAddress,addressComponents",
       },
     }
   );

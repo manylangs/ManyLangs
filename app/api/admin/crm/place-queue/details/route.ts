@@ -29,16 +29,36 @@ export async function GET() {
 
         const details = await getPlaceDetails(placeId);
 
+        const address = details.formattedAddress || "";
+
+        const parts = address.split(",");
+
+        const country =
+          parts.length > 0
+            ? parts[parts.length - 1].trim()
+            : "";
+
+        const city =
+          parts.length > 1
+            ? parts[parts.length - 2].trim()
+            : "";
+
         await db.execute({
           sql: `
             UPDATE place_queue
             SET
+              name = ?,
               website = ?,
+              country = ?,
+              city = ?,
               status = 'DETAILS_DONE'
             WHERE place_id = ?
           `,
           args: [
+            details.displayName?.text || "",
             details.websiteUri || "",
+            country,
+            city,
             placeId,
           ],
         });
