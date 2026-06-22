@@ -3,7 +3,10 @@
 import { useState } from "react";
 
 export default function PlacesExplorerPage() {
+  const [country, setCountry] = useState("South Korea");
+  const [city, setCity] = useState("Seoul");
   const [district, setDistrict] = useState("Gangnam");
+
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<any>(null);
 
@@ -17,6 +20,8 @@ export default function PlacesExplorerPage() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
+          country,
+          city,
           district,
         }),
       });
@@ -33,17 +38,53 @@ export default function PlacesExplorerPage() {
 
   return (
     <div style={{ padding: 24 }}>
-      <h1 style={{ fontSize: 24, marginBottom: 20 }}>
+      <h1
+        style={{
+          fontSize: 24,
+          marginBottom: 20,
+        }}
+      >
         Places Explorer
       </h1>
 
-      <div style={{ display: "flex", gap: 8 }}>
+      <div
+        style={{
+          display: "flex",
+          gap: 8,
+          flexWrap: "wrap",
+        }}
+      >
+        <input
+          value={country}
+          onChange={(e) => setCountry(e.target.value)}
+          placeholder="Country"
+          style={{
+            padding: 8,
+            width: 220,
+            border: "1px solid #ddd",
+            borderRadius: 6,
+          }}
+        />
+
+        <input
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
+          placeholder="City"
+          style={{
+            padding: 8,
+            width: 220,
+            border: "1px solid #ddd",
+            borderRadius: 6,
+          }}
+        />
+
         <input
           value={district}
           onChange={(e) => setDistrict(e.target.value)}
+          placeholder="District"
           style={{
             padding: 8,
-            width: 300,
+            width: 220,
             border: "1px solid #ddd",
             borderRadius: 6,
           }}
@@ -62,14 +103,26 @@ export default function PlacesExplorerPage() {
           style={{
             marginTop: 24,
             display: "grid",
-            gridTemplateColumns: "repeat(4, 1fr)",
+            gridTemplateColumns: "repeat(6, 1fr)",
             gap: 16,
           }}
         >
           <div>
-            <strong>Search Term</strong>
+            <strong>Country</strong>
             <br />
-            {result.searchTerm}
+            {result.country}
+          </div>
+
+          <div>
+            <strong>City</strong>
+            <br />
+            {result.city}
+          </div>
+
+          <div>
+            <strong>District</strong>
+            <br />
+            {result.district}
           </div>
 
           <div>

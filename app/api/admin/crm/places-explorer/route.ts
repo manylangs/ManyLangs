@@ -50,13 +50,22 @@ const TIER2_PATTERNS = [
   "{lang} academy",
 ];
 
-function buildQueries(district: string) {
+function buildQueries(
+  country: string,
+  city: string,
+  district: string
+) {
+  const location =
+    [district, city, country]
+      .filter(Boolean)
+      .join(" ");
+
   const queries: string[] = [];
 
   for (const lang of TIER1_LANGUAGES) {
     for (const pattern of TIER1_PATTERNS) {
       queries.push(
-        `${pattern.replace("{lang}", lang)} ${district}`
+        `${pattern.replace("{lang}", lang)} ${location}`
       );
     }
   }
@@ -64,7 +73,7 @@ function buildQueries(district: string) {
   for (const lang of TIER2_LANGUAGES) {
     for (const pattern of TIER2_PATTERNS) {
       queries.push(
-        `${pattern.replace("{lang}", lang)} ${district}`
+        `${pattern.replace("{lang}", lang)} ${location}`
       );
     }
   }
@@ -73,9 +82,22 @@ function buildQueries(district: string) {
 }
 
 export async function POST(req: NextRequest) {
-  const { district } = await req.json();
+  const {
+    country,
+    city,
+    district,
+  } = await req.json();
 
-  const queries = buildQueries(district);
+  const searchTerm =
+    [country, city, district]
+      .filter(Boolean)
+      .join(" > ");
+
+  const queries = buildQueries(
+    country,
+    city,
+    district
+  );
 
   const uniqueIds = new Set<string>();
 
@@ -104,20 +126,29 @@ export async function POST(req: NextRequest) {
           INSERT OR IGNORE INTO place_queue
           (
             place_id,
+            country,
+            city,
             district,
             search_term,
             status
           )
-          VALUES (?, ?, ?, 'NEW')
+          VALUES
+          (
+            ?, ?, ?, ?, ?, 'NEW'
+          )
         `,
         args: [
           id,
+          country,
+          city,
           district,
-          district,
+          searchTerm,
         ],
       });
 
-      added += Number(result.rowsAffected || 0);
+      added += Number(
+        result.rowsAffected || 0
+      );
     } catch (e) {
       console.error(id, e);
     }
@@ -129,7 +160,7 @@ export async function POST(req: NextRequest) {
       FROM place_queue
       WHERE search_term = ?
     `,
-    args: [district],
+    args: [searchTerm],
   });
 
   const totalInTerm = Number(
@@ -137,7 +168,9 @@ export async function POST(req: NextRequest) {
   );
 
   return NextResponse.json({
-    searchTerm: district,
+    country,
+    city,
+    district,
     found: uniqueIds.size,
     added,
     totalInTerm,
