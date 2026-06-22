@@ -92,7 +92,7 @@ export default function PlacesExplorerPage() {
           marginBottom: 20,
         }}
       >
-        Places Explorer
+        Collect Places
       </h1>
 
       <div
@@ -149,7 +149,7 @@ export default function PlacesExplorerPage() {
         />
 
         <button onClick={runExplorer} disabled={loading}>
-          {loading ? "Running..." : "Run Explorer"}
+          {loading ? "Running..." : "Collect Places"}
         </button>
       </div>
 
