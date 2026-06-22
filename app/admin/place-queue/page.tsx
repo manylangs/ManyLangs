@@ -21,8 +21,8 @@ const CARD_ORDER = [
 ];
 
 const actionButtonStyle: React.CSSProperties = {
-  height: 52,
-  padding: "0 22px",
+  height: 40,
+  padding: "0 14px",
   borderRadius: 12,
   border: "1px solid #ddd",
   background: "#fff",
@@ -271,8 +271,8 @@ export default function PlaceQueuePage() {
                     ? "2px solid #000"
                     : "1px solid #ddd",
                 borderRadius: 12,
-                padding: 20,
-                minWidth: 180,
+                padding: 12,
+                minWidth: 140,
                 cursor: "pointer",
                 background: selectedCard === status ? "#fafafa" : "#fff",
                 boxShadow: "0 1px 3px rgba(0,0,0,0.06)",
@@ -290,7 +290,7 @@ export default function PlaceQueuePage() {
 
               <div
                 style={{
-                  fontSize: 34,
+                  fontSize: 24,
                   fontWeight: 700,
                 }}
               >
