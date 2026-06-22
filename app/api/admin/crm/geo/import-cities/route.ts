@@ -10,8 +10,16 @@ function getDb() {
     });
 }
 
-export async function GET() {
+export async function GET(req: Request) {
     try {
+        const { searchParams } = new URL(req.url);
+
+        const offset = Number(
+            searchParams.get("offset") || "0"
+        );
+
+        const limit = 1000;
+
         const db = getDb();
 
         const filePath = path.join(
@@ -20,15 +28,23 @@ export async function GET() {
             "cities5000.txt"
         );
 
-        const raw = fs.readFileSync(filePath, "utf8");
+        const raw = fs.readFileSync(
+            filePath,
+            "utf8"
+        );
 
         const lines = raw
             .split("\n")
             .filter(Boolean);
 
+        const batch = lines.slice(
+            offset,
+            offset + limit
+        );
+
         let imported = 0;
 
-        for (const line of lines) {
+        for (const line of batch) {
             const cols = line.split("\t");
 
             const cityName = cols[1];
@@ -61,9 +77,15 @@ export async function GET() {
 
         return NextResponse.json({
             success: true,
+            offset,
+            processed: batch.length,
             imported,
+            nextOffset: offset + limit,
+            totalLines: lines.length,
         });
     } catch (err: any) {
+        console.error(err);
+
         return NextResponse.json(
             {
                 success: false,
