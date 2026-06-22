@@ -14,37 +14,49 @@ export async function GET() {
   await db.execute(`
     ALTER TABLE place_queue
     ADD COLUMN html TEXT
-  `).catch(() => {});
+  `).catch(() => { });
 
   await db.execute(`
     ALTER TABLE place_queue
     ADD COLUMN name TEXT
-  `).catch(() => {});
+  `).catch(() => { });
 
   await db.execute(`
     ALTER TABLE place_queue
     ADD COLUMN country TEXT
-  `).catch(() => {});
+  `).catch(() => { });
 
   await db.execute(`
     ALTER TABLE place_queue
     ADD COLUMN city TEXT
-  `).catch(() => {});
+  `).catch(() => { });
 
   await db.execute(`
     ALTER TABLE place_queue
     ADD COLUMN search_term TEXT
-  `).catch(() => {});
+  `).catch(() => { });
 
   await db.execute(`
     ALTER TABLE place_queue
     ADD COLUMN district_name TEXT
-  `).catch(() => {});
+  `).catch(() => { });
 
   await db.execute(`
     ALTER TABLE place_queue
     ADD COLUMN district TEXT
-  `).catch(() => {});
+  `).catch(() => { });
+
+  await db.execute(`
+    CREATE TABLE IF NOT EXISTS location_master (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      country TEXT,
+      city TEXT,
+      district TEXT,
+      source TEXT DEFAULT 'google_places',
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(country, city, district)
+    )
+  `);
 
   return NextResponse.json({
     success: true,
