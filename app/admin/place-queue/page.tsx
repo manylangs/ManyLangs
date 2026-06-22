@@ -44,6 +44,10 @@ export default function PlaceQueuePage() {
   const [city, setCity] = useState("ALL");
   const [selectedCard, setSelectedCard] = useState("ALL");
 
+  // ── 페이지네이션 ───────────────────────────────────────
+  const [page, setPage] = useState(1);
+  const PAGE_SIZE = 10;
+
   // ── 액션 로딩 ──────────────────────────────────────────
   const [loading, setLoading] = useState(false);
   const [websiteLoading, setWebsiteLoading] = useState(false);
@@ -132,6 +136,7 @@ export default function PlaceQueuePage() {
   };
 
   useEffect(() => {
+    setPage(1);
     loadStats();
     loadRows();
   }, [country, city, selectedCard]);
@@ -241,7 +246,7 @@ export default function PlaceQueuePage() {
         )}
       </div>
 
-      {/* ── 통계 카드 (선택 도시 기준) ── */}
+      {/* ── 통계 카드 ── */}
       <div
         style={{
           display: "flex",
@@ -384,23 +389,67 @@ export default function PlaceQueuePage() {
                 </td>
               </tr>
             ) : (
-              rows.map((row: any) => (
-                <tr key={row.id}>
-                  <td style={{ padding: 12 }}>{row.name || "-"}</td>
-                  <td style={{ padding: 12 }}>{row.country || "-"}</td>
-                  <td style={{ padding: 12 }}>{row.city || "-"}</td>
-                  <td style={{ padding: 12 }}>{row.status}</td>
-                  <td style={{ padding: 12 }}>
-                    {row.website ? "✅" : "-"}
-                  </td>
-                  <td style={{ padding: 12 }}>
-                    {row.email || "-"}
-                  </td>
-                </tr>
-              ))
+              rows
+                .slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
+                .map((row: any) => (
+                  <tr key={row.id}>
+                    <td style={{ padding: 12 }}>{row.name || "-"}</td>
+                    <td style={{ padding: 12 }}>{row.country || "-"}</td>
+                    <td style={{ padding: 12 }}>{row.city || "-"}</td>
+                    <td style={{ padding: 12 }}>{row.status}</td>
+                    <td style={{ padding: 12 }}>
+                      {row.website ? "✅" : "-"}
+                    </td>
+                    <td style={{ padding: 12 }}>
+                      {row.email || "-"}
+                    </td>
+                  </tr>
+                ))
             )}
           </tbody>
         </table>
+
+        {/* ── 페이지네이션 ── */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: 12,
+            padding: 16,
+            borderTop: "1px solid #eee",
+          }}
+        >
+          <button
+            disabled={page <= 1}
+            onClick={() => setPage(page - 1)}
+            style={{
+              ...actionButtonStyle,
+              height: 32,
+              padding: "0 14px",
+              fontSize: 13,
+            }}
+          >
+            {"<"}
+          </button>
+
+          <span style={{ fontSize: 13, color: "#555" }}>
+            {page} / {Math.max(1, Math.ceil(rows.length / PAGE_SIZE))}
+          </span>
+
+          <button
+            disabled={page >= Math.max(1, Math.ceil(rows.length / PAGE_SIZE))}
+            onClick={() => setPage(page + 1)}
+            style={{
+              ...actionButtonStyle,
+              height: 32,
+              padding: "0 14px",
+              fontSize: 13,
+            }}
+          >
+            {">"}
+          </button>
+        </div>
       </div>
     </div>
   );
