@@ -36,9 +36,36 @@ export async function GET() {
       GROUP BY status
     `);
 
+    const countriesResult = await db.execute(`
+      SELECT DISTINCT country
+      FROM place_queue
+      WHERE country IS NOT NULL
+      AND country != ''
+      ORDER BY country
+    `);
+
+    const citiesResult = await db.execute(`
+      SELECT DISTINCT city
+      FROM place_queue
+      WHERE city IS NOT NULL
+      AND city != ''
+      ORDER BY city
+    `);
+
+    const districtsResult = await db.execute(`
+      SELECT DISTINCT district_name
+      FROM place_queue
+      WHERE district_name IS NOT NULL
+      AND district_name != ''
+      ORDER BY district_name
+    `);
+
     return NextResponse.json({
       success: true,
       rows: result.rows,
+      countries: countriesResult.rows,
+      cities: citiesResult.rows,
+      districts: districtsResult.rows,
     });
   } catch (err: any) {
     console.error(err);
