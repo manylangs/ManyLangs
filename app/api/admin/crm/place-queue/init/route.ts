@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@libsql/client";
 
 function getDb() {
@@ -22,19 +22,47 @@ async function initSchema(db: ReturnType<typeof createClient>) {
   `);
 }
 
-export async function GET() {
+export async function GET(req: NextRequest) {
   try {
     const db = getDb();
 
     await initSchema(db);
 
-    const result = await db.execute(`
-      SELECT
-        status,
-        COUNT(*) as count
-      FROM place_queue
-      GROUP BY status
-    `);
+    const country =
+      req.nextUrl.searchParams.get("country");
+
+    const city =
+      req.nextUrl.searchParams.get("city");
+
+    const where: string[] = [];
+    const args: any[] = [];
+
+    if (country) {
+      where.push("country = ?");
+      args.push(country);
+    }
+
+    if (city) {
+      where.push("city = ?");
+      args.push(city);
+    }
+
+    const whereSql =
+      where.length > 0
+        ? `WHERE ${where.join(" AND ")}`
+        : "";
+
+    const result = await db.execute({
+      sql: `
+        SELECT
+          status,
+          COUNT(*) as count
+        FROM place_queue
+        ${whereSql}
+        GROUP BY status
+      `,
+      args,
+    });
 
     const countriesResult = await db.execute(`
       SELECT DISTINCT country
@@ -44,13 +72,17 @@ export async function GET() {
       ORDER BY country
     `);
 
-    const citiesResult = await db.execute(`
-      SELECT DISTINCT city
-      FROM place_queue
-      WHERE city IS NOT NULL
-      AND city != ''
-      ORDER BY city
-    `);
+    const citiesResult = await db.execute({
+      sql: `
+        SELECT DISTINCT city
+        FROM place_queue
+        WHERE city IS NOT NULL
+        AND city != ''
+        ${country ? "AND country = ?" : ""}
+        ORDER BY city
+      `,
+      args: country ? [country] : [],
+    });
 
     const districtsResult = await db.execute(`
       SELECT DISTINCT district_name
