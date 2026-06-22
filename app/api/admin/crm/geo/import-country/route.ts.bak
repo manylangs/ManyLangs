@@ -131,17 +131,7 @@ export async function GET(req: NextRequest) {
       });
 
       inserted++;
-
-      if (inserted % 50 === 0) {
-        console.log(
-          `[${code}] inserted ${inserted}`
-        );
-      }
     }
-
-    console.log(
-      `[${code}] COMPLETE ${inserted}`
-    );
 
     return NextResponse.json({
       success: true,
