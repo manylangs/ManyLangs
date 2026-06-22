@@ -358,6 +358,25 @@ export default function PlaceQueuePage() {
           {importLoading ? "처리중..." : "📥 CRM 등록"}
         </button>
       </div>
+      
+      {/* ── 처리 단계 설명 ── */}
+      <div
+        style={{
+          marginBottom: 24,
+          padding: 12,
+          background: "#fafafa",
+          border: "1px solid #eee",
+          borderRadius: 8,
+          fontSize: 13,
+          color: "#666",
+          lineHeight: 1.8,
+        }}
+      >
+        <div>🔍 홈페이지 확보 → Google Place Details 조회</div>
+        <div>🌐 홈페이지 분석 → 웹사이트 HTML 수집</div>
+        <div>📧 이메일 추출 → HTML에서 이메일 자동 추출</div>
+        <div>📥 CRM 등록 → 신규 리드 저장 / 기존 리드는 DUPLICATE 처리</div>
+      </div>
 
       {/* ── 테이블 ── */}
       <div
