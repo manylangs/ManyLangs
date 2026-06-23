@@ -22,7 +22,6 @@ export async function GET() {
         city
       FROM place_queue
       WHERE status = 'EMAIL_DONE'
-      LIMIT 100
     `);
 
     let processed = 0;
@@ -30,7 +29,6 @@ export async function GET() {
     let duplicated = 0;
 
     for (const row of rows.rows) {
-      const placeId = String(row.place_id || "");
       const name = String(row.name || "");
       const website = String(row.website || "");
       const email = String(row.email || "");
@@ -79,15 +77,12 @@ export async function GET() {
       } else {
         duplicated++;
       }
-
-      await db.execute({
-        sql: `
-          DELETE FROM place_queue
-          WHERE place_id = ?
-        `,
-        args: [placeId],
-      });
     }
+
+    // CRM 등록 완료 후 Queue 전체 비움
+    await db.execute(`
+      DELETE FROM place_queue
+    `);
 
     return NextResponse.json({
       success: true,
