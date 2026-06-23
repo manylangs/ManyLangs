@@ -3,6 +3,9 @@ import { createClient } from "@libsql/client";
 import {
   searchPlaceIds,
 } from "@/src/services/collectors/google_places_collector";
+import {
+  getTermsByCountry,
+} from "@/src/services/search_terms";
 
 function getDb() {
   return createClient({
@@ -10,45 +13,6 @@ function getDb() {
     authToken: process.env.TURSO_AUTH_TOKEN!,
   });
 }
-
-const TIER1_LANGUAGES = [
-  "english",
-  "spanish",
-  "french",
-  "german",
-  "japanese",
-  "korean",
-  "chinese",
-  "portuguese",
-  "italian",
-  "russian",
-];
-
-const TIER2_LANGUAGES = [
-  "arabic",
-  "hindi",
-  "thai",
-  "vietnamese",
-  "indonesian",
-  "turkish",
-  "dutch",
-  "swedish",
-  "polish",
-  "greek",
-];
-
-const TIER1_PATTERNS = [
-  "{lang} language school",
-  "{lang} academy",
-  "{lang} institute",
-  "{lang} language center",
-  "{lang} training center",
-];
-
-const TIER2_PATTERNS = [
-  "{lang} language school",
-  "{lang} academy",
-];
 
 function buildQueries(
   country: string,
@@ -60,25 +24,9 @@ function buildQueries(
       .filter(Boolean)
       .join(" ");
 
-  const queries: string[] = [];
-
-  for (const lang of TIER1_LANGUAGES) {
-    for (const pattern of TIER1_PATTERNS) {
-      queries.push(
-        `${pattern.replace("{lang}", lang)} ${location}`
-      );
-    }
-  }
-
-  for (const lang of TIER2_LANGUAGES) {
-    for (const pattern of TIER2_PATTERNS) {
-      queries.push(
-        `${pattern.replace("{lang}", lang)} ${location}`
-      );
-    }
-  }
-
-  return queries;
+  return getTermsByCountry(country).map(
+    (term) => `${term} ${location}`
+  );
 }
 
 export async function POST(req: NextRequest) {
@@ -174,5 +122,6 @@ export async function POST(req: NextRequest) {
     found: uniqueIds.size,
     added,
     totalInTerm,
+    queries: queries.length,
   });
 }
