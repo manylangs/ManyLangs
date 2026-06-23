@@ -11,23 +11,8 @@ async function run(path: string) {
 
 export async function GET() {
   try {
-    let detailsTotal = 0;
     let websiteTotal = 0;
     let emailTotal = 0;
-
-    while (true) {
-      const result = await run(
-        "/api/admin/crm/place-queue/details"
-      );
-
-      const processed = result?.processed || 0;
-
-      detailsTotal += processed;
-
-      if (processed === 0) {
-        break;
-      }
-    }
 
     while (true) {
       const result = await run(
@@ -59,7 +44,6 @@ export async function GET() {
 
     return NextResponse.json({
       success: true,
-      detailsProcessed: detailsTotal,
       websiteProcessed: websiteTotal,
       emailProcessed: emailTotal,
     });

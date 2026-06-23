@@ -45,7 +45,7 @@ export async function GET() {
         const rows = await db.execute(`
       SELECT place_id, website
       FROM place_queue
-      WHERE status = 'DETAILS_DONE'
+      WHERE status = 'WEBSITE_FOUND'         
       AND website IS NOT NULL
       AND website != ''
       LIMIT 30

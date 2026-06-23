@@ -3,8 +3,7 @@
 import { useEffect, useState } from "react";
 
 const STATUS_LABELS = {
-  NEW: "NEW",
-  DETAILS_DONE: "DETAILS",
+  WEBSITE_FOUND: "WEBSITE",
   HTML_DONE: "HTML",
   EMAIL_DONE: "EMAIL",
   IMPORTED: "IMPORTED",
@@ -14,8 +13,7 @@ const STATUS_LABELS = {
 };
 
 const CARD_ORDER = [
-  "NEW",
-  "DETAILS_DONE",
+  "WEBSITE_FOUND",
   "HTML_DONE",
   "EMAIL_DONE",
   "IMPORTED",
@@ -25,14 +23,20 @@ const CARD_ORDER = [
 ];
 
 const STATUS_HELP = {
-  NEW: "Google Places에서 수집된 신규 데이터입니다.",
-  DETAILS_DONE: "홈페이지 주소 확보 완료 상태입니다. (🔍 홈페이지 확보)",
-  HTML_DONE: "홈페이지 HTML 수집 완료 상태입니다. (🌐 홈페이지 분석)",
-  EMAIL_DONE: "이메일 추출 완료 상태입니다. (📧 이메일 추출)",
-  IMPORTED: "CRM 리드 등록 완료 상태입니다. (📥 CRM 등록)",
-  DUPLICATE: "이미 CRM에 존재하여 중복으로 제외된 데이터입니다.",
-  HTML_FAILED: "홈페이지 접근 또는 HTML 수집에 실패했습니다.",
-  EMAIL_NOT_FOUND: "홈페이지는 찾았지만 이메일을 발견하지 못했습니다.",
+  WEBSITE_FOUND:
+    "홈페이지 주소 확보 완료 상태입니다. (SearchText → Website)",
+  HTML_DONE:
+    "홈페이지 HTML 수집 완료 상태입니다. (🌐 홈페이지 분석)",
+  EMAIL_DONE:
+    "이메일 추출 완료 상태입니다. (📧 이메일 추출)",
+  IMPORTED:
+    "CRM 리드 등록 완료 상태입니다. (📥 CRM 등록)",
+  DUPLICATE:
+    "이미 CRM에 존재하여 중복으로 제외된 데이터입니다.",
+  HTML_FAILED:
+    "홈페이지 접근 또는 HTML 수집에 실패했습니다.",
+  EMAIL_NOT_FOUND:
+    "홈페이지는 찾았지만 이메일을 발견하지 못했습니다.",
 };
 
 const actionButtonStyle: React.CSSProperties = {
@@ -155,20 +159,6 @@ export default function PlaceQueuePage() {
     loadStats();
     loadRows();
   }, [country, city, selectedCard]);
-
-  // ── 액션 ───────────────────────────────────────────────
-  const runDetails = async () => {
-    setLoading(true);
-    try {
-      const res = await fetch("/api/admin/crm/place-queue/details");
-      const data = await res.json();
-      setResult(data);
-      await loadStats();
-    } catch (e) {
-      console.error(e);
-    }
-    setLoading(false);
-  };
 
   const runWebsite = async () => {
     setWebsiteLoading(true);
@@ -342,10 +332,6 @@ export default function PlaceQueuePage() {
           marginBottom: 30,
         }}
       >
-        <button onClick={runDetails} disabled={loading} style={actionButtonStyle}>
-          {loading ? "처리중..." : "🔍 홈페이지 확보"}
-        </button>
-
         <button onClick={runWebsite} disabled={websiteLoading} style={actionButtonStyle}>
           {websiteLoading ? "처리중..." : "🌐 홈페이지 분석"}
         </button>
@@ -358,7 +344,7 @@ export default function PlaceQueuePage() {
           {importLoading ? "처리중..." : "📥 CRM 등록"}
         </button>
       </div>
-      
+
       {/* ── 처리 단계 설명 ── */}
       <div
         style={{
@@ -372,7 +358,7 @@ export default function PlaceQueuePage() {
           lineHeight: 1.8,
         }}
       >
-        <div>🔍 홈페이지 확보 → Google Place Details 조회</div>
+        <div>🔍 홈페이지 확보 → Website 수집</div>
         <div>🌐 홈페이지 분석 → 웹사이트 HTML 수집</div>
         <div>📧 이메일 추출 → HTML에서 이메일 자동 추출</div>
         <div>📥 CRM 등록 → 신규 리드 저장 / 기존 리드는 DUPLICATE 처리</div>
