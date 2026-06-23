@@ -73,20 +73,38 @@ export default function PlaceQueuePage() {
   // ── 통계 로딩 ──────────────────────────────────────────
   const loadStats = async () => {
     try {
+
+      if (
+        country === "ALL" ||
+        city === "ALL"
+      ) {
+        setMetrics({
+          placeIds: 0,
+          websites: 0,
+          newEmails: 0,
+          totalEmails: 0,
+        });
+        return;
+      }
+
       const params = new URLSearchParams();
-      if (country !== "ALL") params.set("country", country);
-      if (city !== "ALL") params.set("city", city);
+
+      params.set("country", country);
+      params.set("city", city);
 
       const res = await fetch(
         `/api/admin/crm/place-queue/init?${params.toString()}`
       );
+
       const data = await res.json();
+
       setMetrics({
         placeIds: data.placeIds || 0,
         websites: data.websites || 0,
         newEmails: data.newEmails || 0,
         totalEmails: data.totalEmails || 0,
       });
+
     } catch (e) {
       console.error(e);
     }
@@ -257,7 +275,11 @@ export default function PlaceQueuePage() {
       >
         <button
           onClick={runProcess}
-          disabled={loading}
+          disabled={
+            country === "ALL" ||
+            city === "ALL" ||
+            loading
+          }
           style={actionButtonStyle}
         >
           {loading ? "처리중..." : "⚙️ Process Queue"}
@@ -265,7 +287,11 @@ export default function PlaceQueuePage() {
 
         <button
           onClick={runImport}
-          disabled={importLoading}
+          disabled={
+            country === "ALL" ||
+            city === "ALL" ||
+            importLoading
+          }
           style={actionButtonStyle}
         >
           {importLoading ? "처리중..." : "📥 CRM 등록"}
