@@ -54,6 +54,11 @@ export async function POST(req: NextRequest) {
       const places = await searchPlaceIds(query);
 
       for (const place of places) {
+        console.log("[PLACE]", {
+          id: place.id,
+          websiteUri: place.websiteUri,
+        });
+
         if (place.id) {
           uniqueIds.add(place.id);
         }
