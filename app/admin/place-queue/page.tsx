@@ -2,26 +2,6 @@
 
 import { useEffect, useState } from "react";
 
-const STATUS_LABELS = {
-  WEBSITE_FOUND: "WEBSITE",
-  EMAIL_DONE: "EMAIL",
-  IMPORTED: "CRM LEADS",
-};
-
-const CARD_ORDER = [
-  "WEBSITE_FOUND",
-  "EMAIL_DONE",
-  "IMPORTED",
-];
-
-const STATUS_HELP = {
-  WEBSITE_FOUND:
-    "홈페이지 확보 완료 상태입니다.",
-  EMAIL_DONE:
-    "이메일 확보 완료 상태입니다.",
-  IMPORTED:
-    "CRM 등록 완료 상태입니다.",
-};
 const actionButtonStyle: React.CSSProperties = {
   height: 40,
   padding: "0 14px",
@@ -34,9 +14,15 @@ const actionButtonStyle: React.CSSProperties = {
 };
 
 export default function PlaceQueuePage() {
-  const [stats, setStats] = useState<any[]>([]);
+
+  const [metrics, setMetrics] = useState({
+    placeIds: 0,
+    websites: 0,
+    newEmails: 0,
+    totalEmails: 0,
+  });
+
   const [result, setResult] = useState<any>(null);
-  const [rows, setRows] = useState<any[]>([]);
 
   // ── 위치 필터 ──────────────────────────────────────────
   const [countries, setCountries] = useState<string[]>([]);
@@ -44,16 +30,9 @@ export default function PlaceQueuePage() {
 
   const [country, setCountry] = useState("ALL");
   const [city, setCity] = useState("ALL");
-  const [selectedCard, setSelectedCard] = useState("ALL");
-
-  // ── 페이지네이션 ───────────────────────────────────────
-  const [page, setPage] = useState(1);
-  const PAGE_SIZE = 10;
 
   // ── 액션 로딩 ──────────────────────────────────────────
   const [loading, setLoading] = useState(false);
-  const [websiteLoading, setWebsiteLoading] = useState(false);
-  const [emailLoading, setEmailLoading] = useState(false);
   const [importLoading, setImportLoading] = useState(false);
 
   // ── 국가 목록 로딩 (최초 1회) ──────────────────────────
@@ -102,71 +81,58 @@ export default function PlaceQueuePage() {
         `/api/admin/crm/place-queue/init?${params.toString()}`
       );
       const data = await res.json();
-      setStats(data.rows || []);
-    } catch (e) {
-      console.error(e);
-    }
-  };
-
-  // ── 행 목록 로딩 ───────────────────────────────────────
-  const loadRows = async () => {
-    try {
-      const params = new URLSearchParams();
-
-      if (country !== "ALL") {
-        params.set("country", country);
-      }
-
-      if (city !== "ALL") {
-        params.set("city", city);
-      }
-
-      if (selectedCard !== "ALL") {
-        params.set("status", selectedCard);
-      }
-
-      const res = await fetch(
-        `/api/admin/crm/place-queue/list?${params.toString()}`
-      );
-
-      const data = await res.json();
-
-      setRows(data.rows || []);
+      setMetrics({
+        placeIds: data.placeIds || 0,
+        websites: data.websites || 0,
+        newEmails: data.newEmails || 0,
+        totalEmails: data.totalEmails || 0,
+      });
     } catch (e) {
       console.error(e);
     }
   };
 
   useEffect(() => {
-    setPage(1);
     loadStats();
-    loadRows();
-  }, [country, city, selectedCard]);
+  }, [country, city]);
 
-  const runWebsite = async () => {
-    setWebsiteLoading(true);
+  const runProcess = async () => {
+    setLoading(true);
+
     try {
-      const res = await fetch("/api/admin/crm/place-queue/website");
-      const data = await res.json();
-      setResult(data);
+      let totalWebsite = 0;
+      let totalEmail = 0;
+
+      while (true) {
+        const res = await fetch(
+          "/api/admin/crm/place-queue/process"
+        );
+
+        const data = await res.json();
+
+        totalWebsite +=
+          data.websiteProcessed || 0;
+
+        totalEmail +=
+          data.emailProcessed || 0;
+
+        if (!data.hasMore) {
+          break;
+        }
+      }
+
+      setResult({
+        success: true,
+        websiteProcessed: totalWebsite,
+        emailProcessed: totalEmail,
+      });
+
       await loadStats();
     } catch (e) {
       console.error(e);
     }
-    setWebsiteLoading(false);
-  };
 
-  const runEmail = async () => {
-    setEmailLoading(true);
-    try {
-      const res = await fetch("/api/admin/crm/place-queue/extract-email");
-      const data = await res.json();
-      setResult(data);
-      await loadStats();
-    } catch (e) {
-      console.error(e);
-    }
-    setEmailLoading(false);
+    setLoading(false);
   };
 
   const runImport = async () => {
@@ -233,8 +199,6 @@ export default function PlaceQueuePage() {
           </>
         )}
       </div>
-
-      {/* ── 통계 카드 ── */}
       <div
         style={{
           display: "flex",
@@ -243,69 +207,45 @@ export default function PlaceQueuePage() {
           marginBottom: 30,
         }}
       >
-        {CARD_ORDER.map((status) => {
-          const row = stats.find((r: any) => r.status === status);
-          const count = Number(row?.count || 0);
-
-          return (
+        {[
+          ["PLACE IDS", metrics.placeIds],
+          ["WEBSITES", metrics.websites],
+          ["NEW EMAILS", metrics.newEmails],
+          ["TOTAL EMAILS", metrics.totalEmails],
+        ].map(([label, value]) => (
+          <div
+            key={String(label)}
+            style={{
+              border: "1px solid #ddd",
+              borderRadius: 12,
+              padding: 12,
+              minWidth: 160,
+              background: "#fff",
+              boxShadow: "0 1px 3px rgba(0,0,0,0.06)",
+            }}
+          >
             <div
-              key={status}
-              onClick={() =>
-                setSelectedCard(selectedCard === status ? "ALL" : status)
-              }
               style={{
-                border:
-                  selectedCard === status
-                    ? "2px solid #000"
-                    : "1px solid #ddd",
-                borderRadius: 12,
-                padding: 12,
-                minWidth: 140,
-                cursor: "pointer",
-                background: selectedCard === status ? "#fafafa" : "#fff",
-                boxShadow: "0 1px 3px rgba(0,0,0,0.06)",
+                fontSize: 13,
+                color: "#666",
+                marginBottom: 8,
               }}
             >
-              <div
-                style={{
-                  fontSize: 13,
-                  color: "#666",
-                  marginBottom: 8,
-                }}
-              >
-                {STATUS_LABELS[status]}
-              </div>
-
-              <div
-                style={{
-                  fontSize: 24,
-                  fontWeight: 700,
-                }}
-              >
-                {count}
-              </div>
+              {label}
             </div>
-          );
-        })}
-      </div>
-      {selectedCard !== "ALL" && (
-        <div
-          style={{
-            marginBottom: 20,
-            padding: 12,
-            background: "#f8f8f8",
-            border: "1px solid #eee",
-            borderRadius: 8,
-            fontSize: 13,
-            color: "#555",
-          }}
-        >
-          <strong>{STATUS_LABELS[selectedCard]}</strong>
-          <div style={{ marginTop: 4 }}>
-            {STATUS_HELP[selectedCard]}
+
+            <div
+              style={{
+                fontSize: 24,
+                fontWeight: 700,
+              }}
+            >
+              {value}
+            </div>
           </div>
-        </div>
-      )}
+        ))}
+      </div>
+
       {/* ── 액션 버튼 ── */}
       <div
         style={{
@@ -315,122 +255,23 @@ export default function PlaceQueuePage() {
           marginBottom: 30,
         }}
       >
-        <button onClick={runWebsite} disabled={websiteLoading} style={actionButtonStyle}>
-          {websiteLoading ? "처리중..." : "🌐 홈페이지 분석"}
+        <button
+          onClick={runProcess}
+          disabled={loading}
+          style={actionButtonStyle}
+        >
+          {loading ? "처리중..." : "⚙️ Process Queue"}
         </button>
 
-        <button onClick={runEmail} disabled={emailLoading} style={actionButtonStyle}>
-          {emailLoading ? "처리중..." : "📧 이메일 추출"}
-        </button>
-
-        <button onClick={runImport} disabled={importLoading} style={actionButtonStyle}>
+        <button
+          onClick={runImport}
+          disabled={importLoading}
+          style={actionButtonStyle}
+        >
           {importLoading ? "처리중..." : "📥 CRM 등록"}
         </button>
       </div>
 
-      {/* ── 테이블 ── */}
-      <div
-        style={{
-          border: "1px solid #ddd",
-          borderRadius: 10,
-          overflow: "hidden",
-        }}
-      >
-        <table style={{ width: "100%", borderCollapse: "collapse" }}>
-          <thead>
-            <tr style={{ background: "#fafafa" }}>
-              <th style={thStyle}>Name</th>
-              <th style={thStyle}>Country</th>
-              <th style={thStyle}>City</th>
-              <th style={thStyle}>Status</th>
-              <th style={thStyle}>Website</th>
-              <th style={thStyle}>Email</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            {rows.length === 0 ? (
-              <tr>
-                <td
-                  colSpan={6}
-                  style={{
-                    padding: 30,
-                    textAlign: "center",
-                    color: "#999",
-                  }}
-                >
-                  데이터 없음
-                </td>
-              </tr>
-            ) : (
-              rows
-                .slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
-                .map((row: any) => (
-                  <tr key={row.id}>
-                    <td style={{ padding: 12 }}>{row.name || "-"}</td>
-                    <td style={{ padding: 12 }}>{row.country || "-"}</td>
-                    <td style={{ padding: 12 }}>{row.city || "-"}</td>
-                    <td style={{ padding: 12 }}>{row.status}</td>
-                    <td style={{ padding: 12 }}>
-                      {row.website ? "✅" : "-"}
-                    </td>
-                    <td style={{ padding: 12 }}>
-                      {row.email || "-"}
-                    </td>
-                  </tr>
-                ))
-            )}
-          </tbody>
-        </table>
-
-        {/* ── 페이지네이션 ── */}
-        <div
-          style={{
-            border: "1px solid #ddd",
-            borderRadius: 10,
-            overflow: "hidden",
-          }}
-        >
-          <button
-            disabled={page <= 1}
-            onClick={() => setPage(page - 1)}
-            style={{
-              ...actionButtonStyle,
-              height: 32,
-              padding: "0 14px",
-              fontSize: 13,
-            }}
-          >
-            {"<"}
-          </button>
-
-          <span style={{ fontSize: 13, color: "#555" }}>
-            {page} / {Math.max(1, Math.ceil(rows.length / PAGE_SIZE))}
-          </span>
-
-          <button
-            disabled={page >= Math.max(1, Math.ceil(rows.length / PAGE_SIZE))}
-            onClick={() => setPage(page + 1)}
-            style={{
-              ...actionButtonStyle,
-              height: 32,
-              padding: "0 14px",
-              fontSize: 13,
-            }}
-          >
-            {">"}
-          </button>
-        </div>
-      </div>
     </div>
   );
 }
-
-const thStyle: React.CSSProperties = {
-  padding: "10px 14px",
-  textAlign: "left",
-  fontSize: 13,
-  fontWeight: 600,
-  color: "#555",
-  borderBottom: "1px solid #eee",
-};

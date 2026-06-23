@@ -52,17 +52,44 @@ export async function GET(req: NextRequest) {
         ? `WHERE ${where.join(" AND ")}`
         : "";
 
-    const result = await db.execute({
+    const placeIdsResult = await db.execute({
       sql: `
-        SELECT
-          status,
-          COUNT(*) as count
+        SELECT COUNT(*) as count
         FROM place_queue
         ${whereSql}
-        GROUP BY status
       `,
       args,
     });
+
+    const websitesResult = await db.execute({
+      sql: `
+        SELECT COUNT(*) as count
+        FROM place_queue
+        ${whereSql}
+        ${whereSql ? "AND" : "WHERE"}
+        website IS NOT NULL
+        AND website != ''
+      `,
+      args,
+    });
+
+    const newEmailsResult = await db.execute({
+      sql: `
+        SELECT COUNT(*) as count
+        FROM place_queue
+        ${whereSql}
+        ${whereSql ? "AND" : "WHERE"}
+        status = 'EMAIL_DONE'
+      `,
+      args,
+    });
+
+    const totalEmailsResult = await db.execute(`
+      SELECT COUNT(*) as count
+      FROM schools
+      WHERE email IS NOT NULL
+      AND email != ''
+    `);
 
     const countriesResult = await db.execute(`
       SELECT DISTINCT country
@@ -84,20 +111,23 @@ export async function GET(req: NextRequest) {
       args: country ? [country] : [],
     });
 
-    const districtsResult = await db.execute(`
-      SELECT DISTINCT district_name
-      FROM place_queue
-      WHERE district_name IS NOT NULL
-      AND district_name != ''
-      ORDER BY district_name
-    `);
-
     return NextResponse.json({
       success: true,
-      rows: result.rows,
+
+      placeIds:
+        Number(placeIdsResult.rows[0]?.count || 0),
+
+      websites:
+        Number(websitesResult.rows[0]?.count || 0),
+
+      newEmails:
+        Number(newEmailsResult.rows[0]?.count || 0),
+
+      totalEmails:
+        Number(totalEmailsResult.rows[0]?.count || 0),
+
       countries: countriesResult.rows,
       cities: citiesResult.rows,
-      districts: districtsResult.rows,
     });
   } catch (err: any) {
     console.error(err);
