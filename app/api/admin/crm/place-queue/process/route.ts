@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 const BASE_URL =
   process.env.NEXT_PUBLIC_APP_URL ||
@@ -9,14 +9,32 @@ async function run(path: string) {
   return res.json();
 }
 
-export async function GET() {
+export async function GET(req: NextRequest) {
   try {
+    const country =
+      req.nextUrl.searchParams.get("country");
+
+    const city =
+      req.nextUrl.searchParams.get("city");
+
+    const params = new URLSearchParams();
+
+    if (country) {
+      params.set("country", country);
+    }
+
+    if (city) {
+      params.set("city", city);
+    }
+
+    const query = params.toString();
+
     const websiteResult = await run(
-      "/api/admin/crm/place-queue/website"
+      `/api/admin/crm/place-queue/website?${query}`
     );
 
     const emailResult = await run(
-      "/api/admin/crm/place-queue/extract-email"
+      `/api/admin/crm/place-queue/extract-email?${query}`
     );
 
     const websiteProcessed =

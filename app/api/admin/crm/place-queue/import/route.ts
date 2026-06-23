@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@libsql/client";
 
 function getDb() {
@@ -8,27 +8,53 @@ function getDb() {
   });
 }
 
-export async function GET() {
+export async function GET(req: NextRequest) {
   try {
     const db = getDb();
 
-    const rows = await db.execute(`
-      SELECT
-        place_id,
-        name,
-        website,
-        email,
-        country,
-        city
-      FROM place_queue
-      WHERE status = 'EMAIL_DONE'
-    `);
+    const country =
+      req.nextUrl.searchParams.get("country");
+
+    const city =
+      req.nextUrl.searchParams.get("city");
+
+    const where: string[] = [
+      "status = 'EMAIL_DONE'"
+    ];
+
+    const args: any[] = [];
+
+    if (country) {
+      where.push("country = ?");
+      args.push(country);
+    }
+
+    if (city) {
+      where.push("city = ?");
+      args.push(city);
+    }
+
+    const rows = await db.execute({
+      sql: `
+        SELECT
+          place_id,
+          name,
+          website,
+          email,
+          country,
+          city
+        FROM place_queue
+        WHERE ${where.join(" AND ")}
+      `,
+      args,
+    });
 
     let processed = 0;
     let imported = 0;
     let duplicated = 0;
 
     for (const row of rows.rows) {
+      const placeId = String(row.place_id || "");
       const name = String(row.name || "");
       const website = String(row.website || "");
       const email = String(row.email || "");
@@ -77,12 +103,15 @@ export async function GET() {
       } else {
         duplicated++;
       }
-    }
 
-    // CRM 등록 완료 후 Queue 전체 비움
-    await db.execute(`
-      DELETE FROM place_queue
-    `);
+      await db.execute({
+        sql: `
+          DELETE FROM place_queue
+          WHERE place_id = ?
+        `,
+        args: [placeId],
+      });
+    }
 
     return NextResponse.json({
       success: true,

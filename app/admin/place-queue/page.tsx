@@ -122,8 +122,13 @@ export default function PlaceQueuePage() {
       let totalEmail = 0;
 
       while (true) {
+        const params = new URLSearchParams();
+
+        params.set("country", country);
+        params.set("city", city);
+
         const res = await fetch(
-          "/api/admin/crm/place-queue/process"
+          `/api/admin/crm/place-queue/process?${params.toString()}`
         );
 
         const data = await res.json();
@@ -156,7 +161,14 @@ export default function PlaceQueuePage() {
   const runImport = async () => {
     setImportLoading(true);
     try {
-      const res = await fetch("/api/admin/crm/place-queue/import");
+      const params = new URLSearchParams();
+
+      params.set("country", country);
+      params.set("city", city);
+
+      const res = await fetch(
+        `/api/admin/crm/place-queue/import?${params.toString()}`
+      );
       const data = await res.json();
       setResult(data);
       await loadStats();

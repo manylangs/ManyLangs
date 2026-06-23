@@ -84,12 +84,31 @@ export async function GET(req: NextRequest) {
       args,
     });
 
-    const totalEmailsResult = await db.execute(`
-      SELECT COUNT(*) as count
-      FROM schools
-      WHERE email IS NOT NULL
-      AND email != ''
-    `);
+    const totalEmailsWhere: string[] = [
+      "email IS NOT NULL",
+      "email != ''",
+    ];
+
+    const totalEmailsArgs: any[] = [];
+
+    if (country) {
+      totalEmailsWhere.push("country = ?");
+      totalEmailsArgs.push(country);
+    }
+
+    if (city) {
+      totalEmailsWhere.push("city = ?");
+      totalEmailsArgs.push(city);
+    }
+
+    const totalEmailsResult = await db.execute({
+      sql: `
+    SELECT COUNT(*) as count
+    FROM schools
+    WHERE ${totalEmailsWhere.join(" AND ")}
+  `,
+      args: totalEmailsArgs,
+    });
 
     const countriesResult = await db.execute(`
       SELECT DISTINCT country

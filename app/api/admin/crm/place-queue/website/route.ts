@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@libsql/client";
 
 function getDb() {
@@ -19,7 +19,8 @@ async function fetchHtml(url: string) {
         const res = await fetch(url, {
             signal: controller.signal,
             headers: {
-                "User-Agent": "Mozilla/5.0 (compatible; ManyLangsBot/1.0)",
+                "User-Agent":
+                    "Mozilla/5.0 (compatible; ManyLangsBot/1.0)",
             },
         });
 
@@ -38,18 +39,43 @@ async function fetchHtml(url: string) {
     }
 }
 
-export async function GET() {
+export async function GET(req: NextRequest) {
     try {
         const db = getDb();
 
-        const rows = await db.execute(`
-      SELECT place_id, website
-      FROM place_queue
-      WHERE status = 'WEBSITE_FOUND'         
-      AND website IS NOT NULL
-      AND website != ''
-      LIMIT 30
-    `);
+        const country =
+            req.nextUrl.searchParams.get("country");
+
+        const city =
+            req.nextUrl.searchParams.get("city");
+
+        const where: string[] = [
+            "status = 'WEBSITE_FOUND'",
+            "website IS NOT NULL",
+            "website != ''",
+        ];
+
+        const args: any[] = [];
+
+        if (country) {
+            where.push("country = ?");
+            args.push(country);
+        }
+
+        if (city) {
+            where.push("city = ?");
+            args.push(city);
+        }
+
+        const rows = await db.execute({
+            sql: `
+        SELECT place_id, website
+        FROM place_queue
+        WHERE ${where.join(" AND ")}
+        LIMIT 30
+      `,
+            args,
+        });
 
         let processed = 0;
         let htmlSaved = 0;
