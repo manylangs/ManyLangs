@@ -47,20 +47,18 @@ export async function POST(req: NextRequest) {
     district
   );
 
-  const uniqueIds = new Set<string>();
+  const uniquePlaces = new Map<string, string>();
 
   for (const query of queries) {
     try {
       const places = await searchPlaceIds(query);
 
       for (const place of places) {
-        console.log("[PLACE]", {
-          id: place.id,
-          websiteUri: place.websiteUri,
-        });
-
         if (place.id) {
-          uniqueIds.add(place.id);
+          uniquePlaces.set(
+            place.id,
+            place.websiteUri || ""
+          );
         }
       }
     } catch (e) {
@@ -72,26 +70,28 @@ export async function POST(req: NextRequest) {
 
   let added = 0;
 
-  for (const id of uniqueIds) {
+  for (const [id, website] of uniquePlaces) {
     try {
       const result = await db.execute({
         sql: `
-          INSERT OR IGNORE INTO place_queue
-          (
-            place_id,
-            country,
-            city,
-            district,
-            search_term,
-            status
-          )
-          VALUES
-          (
-            ?, ?, ?, ?, ?, 'NEW'
-          )
-        `,
+        INSERT OR IGNORE INTO place_queue
+        (
+          place_id,
+          website,
+          country,
+          city,
+          district,
+          search_term,
+          status
+        )
+        VALUES
+        (
+          ?, ?, ?, ?, ?, ?, 'WEBSITE_FOUND'
+        )
+      `,
         args: [
           id,
+          website,
           country,
           city,
           district,
@@ -109,10 +109,10 @@ export async function POST(req: NextRequest) {
 
   const totalResult = await db.execute({
     sql: `
-      SELECT COUNT(*) as count
-      FROM place_queue
-      WHERE search_term = ?
-    `,
+    SELECT COUNT(*) as count
+    FROM place_queue
+    WHERE search_term = ?
+  `,
     args: [searchTerm],
   });
 
@@ -124,7 +124,7 @@ export async function POST(req: NextRequest) {
     country,
     city,
     district,
-    found: uniqueIds.size,
+    found: uniquePlaces.size,
     added,
     totalInTerm,
     queries: queries.length,
