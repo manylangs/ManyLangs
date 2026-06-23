@@ -4,41 +4,24 @@ import { useEffect, useState } from "react";
 
 const STATUS_LABELS = {
   WEBSITE_FOUND: "WEBSITE",
-  HTML_DONE: "HTML",
   EMAIL_DONE: "EMAIL",
-  IMPORTED: "IMPORTED",
-  DUPLICATE: "DUPLICATE",
-  HTML_FAILED: "HTML FAIL",
-  EMAIL_NOT_FOUND: "NO EMAIL",
+  IMPORTED: "CRM LEADS",
 };
 
 const CARD_ORDER = [
   "WEBSITE_FOUND",
-  "HTML_DONE",
   "EMAIL_DONE",
   "IMPORTED",
-  "DUPLICATE",
-  "HTML_FAILED",
-  "EMAIL_NOT_FOUND",
 ];
 
 const STATUS_HELP = {
   WEBSITE_FOUND:
-    "홈페이지 주소 확보 완료 상태입니다. (SearchText → Website)",
-  HTML_DONE:
-    "홈페이지 HTML 수집 완료 상태입니다. (🌐 홈페이지 분석)",
+    "홈페이지 확보 완료 상태입니다.",
   EMAIL_DONE:
-    "이메일 추출 완료 상태입니다. (📧 이메일 추출)",
+    "이메일 확보 완료 상태입니다.",
   IMPORTED:
-    "CRM 리드 등록 완료 상태입니다. (📥 CRM 등록)",
-  DUPLICATE:
-    "이미 CRM에 존재하여 중복으로 제외된 데이터입니다.",
-  HTML_FAILED:
-    "홈페이지 접근 또는 HTML 수집에 실패했습니다.",
-  EMAIL_NOT_FOUND:
-    "홈페이지는 찾았지만 이메일을 발견하지 못했습니다.",
+    "CRM 등록 완료 상태입니다.",
 };
-
 const actionButtonStyle: React.CSSProperties = {
   height: 40,
   padding: "0 14px",
@@ -343,25 +326,6 @@ export default function PlaceQueuePage() {
         <button onClick={runImport} disabled={importLoading} style={actionButtonStyle}>
           {importLoading ? "처리중..." : "📥 CRM 등록"}
         </button>
-      </div>
-
-      {/* ── 처리 단계 설명 ── */}
-      <div
-        style={{
-          marginBottom: 24,
-          padding: 12,
-          background: "#fafafa",
-          border: "1px solid #eee",
-          borderRadius: 8,
-          fontSize: 13,
-          color: "#666",
-          lineHeight: 1.8,
-        }}
-      >
-        <div>🔍 홈페이지 확보 → Website 수집</div>
-        <div>🌐 홈페이지 분석 → 웹사이트 HTML 수집</div>
-        <div>📧 이메일 추출 → HTML에서 이메일 자동 추출</div>
-        <div>📥 CRM 등록 → 신규 리드 저장 / 기존 리드는 DUPLICATE 처리</div>
       </div>
 
       {/* ── 테이블 ── */}
