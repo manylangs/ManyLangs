@@ -8,7 +8,10 @@ export async function searchPlaceIds(query: string) {
       headers: {
         "Content-Type": "application/json",
         "X-Goog-Api-Key": API_KEY,
-        "X-Goog-FieldMask": "places.id",
+
+        // TEST
+        // websiteUri가 SearchText 응답으로 오는지 검증
+        "X-Goog-FieldMask": "places.id,places.websiteUri",
       },
       body: JSON.stringify({
         textQuery: query,
@@ -17,6 +20,11 @@ export async function searchPlaceIds(query: string) {
   );
 
   const data = await res.json();
+
+  console.log(
+    "[SEARCH_TEXT_RESPONSE]",
+    JSON.stringify(data, null, 2)
+  );
 
   return data.places || [];
 }
