@@ -18,15 +18,20 @@ export default function LeadsPage() {
   const [loading, setLoading] = useState(false)
   const [hasSearched, setHasSearched] = useState(false)
 
-  const [country, setCountry] = useState("ALL")
-  const [city, setCity] = useState("ALL")
+  const [country, setCountry] = useState("Select Country")
+  const [city, setCity] = useState("Select City")
 
-  const [countries, setCountries] = useState<string[]>(["ALL"])
-  const [cities, setCities] = useState<string[]>(["ALL"])
+  const [countries, setCountries] = useState<string[]>([
+    "Select Country",
+  ])
+
+  const [cities, setCities] = useState<string[]>([
+    "Select City",
+  ])
 
   const fetchLeads = async (
-    selectedCountry = "ALL",
-    selectedCity = "ALL"
+    selectedCountry = "Select Country",
+    selectedCity = "Select City"
   ) => {
     setLoading(true)
     setHasSearched(true)
@@ -34,11 +39,11 @@ export default function LeadsPage() {
     try {
       const params = new URLSearchParams()
 
-      if (selectedCountry !== "ALL") {
+      if (selectedCountry !== "Select Country") {
         params.set("country", selectedCountry)
       }
 
-      if (selectedCity !== "ALL") {
+      if (selectedCity !== "Select City") {
         params.set("city", selectedCity)
       }
 
@@ -58,11 +63,13 @@ export default function LeadsPage() {
     }
   }
 
-  const fetchScope = async (selectedCountry = "ALL") => {
+  const fetchScope = async (
+    selectedCountry = "Select Country"
+  ) => {
     try {
       const params = new URLSearchParams()
 
-      if (selectedCountry !== "ALL") {
+      if (selectedCountry !== "Select Country") {
         params.set("country", selectedCountry)
       }
 
@@ -75,14 +82,14 @@ export default function LeadsPage() {
       const json = await res.json()
 
       setCountries([
-        "ALL",
+        "Select Country",
         ...(json.countries || [])
           .map((x: any) => x.country)
           .filter(Boolean),
       ])
 
       setCities([
-        "ALL",
+        "Select City",
         ...(json.cities || [])
           .map((x: any) => x.city)
           .filter(Boolean),
@@ -93,9 +100,14 @@ export default function LeadsPage() {
   }
 
   useEffect(() => {
-    fetchScope(country)
+    fetchScope()
+  }, [])
+  useEffect(() => {
+    if (country !== "Select Country") {
+      fetchScope(country)
+    }
   }, [country])
-
+  
   const getDisplayName = (l: Lead) => {
     if (l.school_name) return l.school_name
     try {
@@ -105,15 +117,21 @@ export default function LeadsPage() {
     }
   }
 
-  const totalLeads = leads.length
+  const totalLeads = hasSearched
+    ? leads.length
+    : 0
 
-  const newLeads = leads.filter(
-    (l) => l.campaign_status === "NEW"
-  ).length
+  const newLeads = hasSearched
+    ? leads.filter(
+      (l) => l.campaign_status === "NEW"
+    ).length
+    : 0
 
-  const sentLeads = leads.filter(
-    (l) => l.campaign_status === "SENT"
-  ).length
+  const sentLeads = hasSearched
+    ? leads.filter(
+      (l) => l.campaign_status === "SENT"
+    ).length
+    : 0
 
   return (
     <div style={{ padding: 24 }}>
@@ -133,7 +151,7 @@ export default function LeadsPage() {
           value={country}
           onChange={(e) => {
             setCountry(e.target.value)
-            setCity("ALL")
+            setCity("Select City")
           }}
         >
           {countries.map((c) => (
@@ -143,7 +161,7 @@ export default function LeadsPage() {
 
         <select
           value={city}
-          disabled={country === "ALL"}
+          disabled={country === "Select Country"}
           onChange={(e) => setCity(e.target.value)}
         >
           {cities.map((c) => (
@@ -153,8 +171,8 @@ export default function LeadsPage() {
 
         <button
           disabled={
-            country === "ALL" ||
-            city === "ALL"
+            country === "Select Country" ||
+            city === "Select City"
           }
           onClick={() => fetchLeads(country, city)}
           style={{
@@ -162,14 +180,14 @@ export default function LeadsPage() {
             border: "1px solid #ddd",
             borderRadius: 6,
             background:
-              country === "ALL" ||
-                city === "ALL"
+              country === "Select Country" ||
+                city === "Select City"
                 ? "#ccc"
                 : "#111",
             color: "#fff",
             cursor:
-              country === "ALL" ||
-                city === "ALL"
+              country === "Select Country" ||
+                city === "Select City"
                 ? "not-allowed"
                 : "pointer",
           }}
