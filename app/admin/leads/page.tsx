@@ -15,7 +15,8 @@ type Lead = {
 
 export default function LeadsPage() {
   const [leads, setLeads] = useState<Lead[]>([])
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
+  const [hasSearched, setHasSearched] = useState(false)
 
   const [country, setCountry] = useState("ALL")
   const [city, setCity] = useState("ALL")
@@ -28,6 +29,7 @@ export default function LeadsPage() {
     selectedCity = "ALL"
   ) => {
     setLoading(true)
+    setHasSearched(true)
 
     try {
       const params = new URLSearchParams()
@@ -94,20 +96,6 @@ export default function LeadsPage() {
     fetchScope(country)
   }, [country])
 
-  useEffect(() => {
-    fetchLeads(country, city)
-  }, [country, city])
-  useEffect(() => {
-    console.log(
-      "RENDER COUNTRIES",
-      JSON.stringify(countries)
-    )
-
-    console.log(
-      "RENDER CITIES",
-      JSON.stringify(cities)
-    )
-  }, [countries, cities])
   const getDisplayName = (l: Lead) => {
     if (l.school_name) return l.school_name
     try {
@@ -123,8 +111,8 @@ export default function LeadsPage() {
     (l) => l.campaign_status === "NEW"
   ).length
 
-  const contactedLeads = leads.filter(
-    (l) => l.campaign_status !== "NEW"
+  const sentLeads = leads.filter(
+    (l) => l.campaign_status === "SENT"
   ).length
 
   return (
@@ -155,12 +143,39 @@ export default function LeadsPage() {
 
         <select
           value={city}
+          disabled={country === "ALL"}
           onChange={(e) => setCity(e.target.value)}
         >
           {cities.map((c) => (
             <option key={c}>{c}</option>
           ))}
         </select>
+
+        <button
+          disabled={
+            country === "ALL" ||
+            city === "ALL"
+          }
+          onClick={() => fetchLeads(country, city)}
+          style={{
+            padding: "8px 16px",
+            border: "1px solid #ddd",
+            borderRadius: 6,
+            background:
+              country === "ALL" ||
+                city === "ALL"
+                ? "#ccc"
+                : "#111",
+            color: "#fff",
+            cursor:
+              country === "ALL" ||
+                city === "ALL"
+                ? "not-allowed"
+                : "pointer",
+          }}
+        >
+          Search
+        </button>
       </div>
 
       <div
@@ -210,16 +225,29 @@ export default function LeadsPage() {
           }}
         >
           <div style={{ fontSize: 12, color: "#666" }}>
-            CONTACTED
+            SENT LEADS
           </div>
+
           <div style={{ fontSize: 24, fontWeight: 700 }}>
-            {contactedLeads}
+            {sentLeads}
           </div>
         </div>
       </div>
 
       {loading ? (
         <div>Loading...</div>
+      ) : !hasSearched ? (
+        <div
+          style={{
+            padding: 24,
+            color: "#666",
+            textAlign: "center",
+            border: "1px solid #eee",
+            borderRadius: 8,
+          }}
+        >
+          Select Country and Search
+        </div>
       ) : (
         <table
           style={{
