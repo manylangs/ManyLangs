@@ -1,19 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
 
-interface KPI {
-  ready_to_send: number;
-  hot: number;
-  warm: number;
-  cold: number;
-}
-
 interface Campaign {
   id: number;
   campaign_id: string;
   subject: string;
-  target_type: string;
-  country: string;
+  country?: string;
+  city?: string;
   status: string;
   target_count: number;
   created_at: string;
@@ -29,38 +22,120 @@ interface SendResult {
   error?: string;
 }
 
-const TARGET_TYPES = ["ALL", "HOT", "WARM", "COLD", "YOUTUBE"];
-const COUNTRIES = ["ALL", "US", "KR", "JP", "GB", "FR", "DE", "ES", "BR", "CA", "AU"];
+const ALL_COUNTRIES = "All Countries";
+const ALL_CITIES = "All Cities";
 
 export default function CampaignsPage() {
-  const [kpi, setKpi] = useState<KPI | null>(null);
   const [campaigns, setCampaigns] = useState<Campaign[]>([]);
   const [loading, setLoading] = useState(true);
+
+  // Scope (country / city) — same pattern as Leads page
+  const [countries, setCountries] = useState<string[]>([ALL_COUNTRIES]);
+  const [cities, setCities] = useState<string[]>([ALL_CITIES]);
 
   // Form state
   const [subject, setSubject] = useState("");
   const [emailBody, setEmailBody] = useState("");
-  const [targetType, setTargetType] = useState("HOT");
-  const [country, setCountry] = useState("ALL");
+  const [country, setCountry] = useState(ALL_COUNTRIES);
+  const [city, setCity] = useState(ALL_CITIES);
   const [creating, setCreating] = useState(false);
   const [createMsg, setCreateMsg] = useState("");
+
+  // Target check state
+  const [checking, setChecking] = useState(false);
+  const [hasChecked, setHasChecked] = useState(false);
+  const [readyCount, setReadyCount] = useState(0);
+  const [sentCount, setSentCount] = useState(0);
 
   // Send state
   const [sendResult, setSendResult] = useState<SendResult | null>(null);
   const [sending, setSending] = useState(false);
 
-  const fetchData = async () => {
+  const fetchCampaigns = async () => {
     try {
       const res = await fetch("/api/admin/crm/campaigns");
       const data = await res.json();
-      setKpi(data.kpi);
       setCampaigns(data.campaigns ?? []);
     } finally {
       setLoading(false);
     }
   };
 
-  useEffect(() => { fetchData(); }, []);
+  const fetchCountries = async () => {
+    try {
+      const res = await fetch("/api/admin/crm/locations");
+      const data = await res.json();
+      setCountries([ALL_COUNTRIES, ...(data.countries || [])]);
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  const fetchCities = async (selectedCountry: string) => {
+    if (selectedCountry === ALL_COUNTRIES) {
+      setCities([ALL_CITIES]);
+      return;
+    }
+    try {
+      const params = new URLSearchParams({ country: selectedCountry });
+      const res = await fetch(`/api/admin/crm/locations?${params.toString()}`);
+      const data = await res.json();
+      setCities([ALL_CITIES, ...(data.cities || [])]);
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  useEffect(() => {
+    fetchCampaigns();
+    fetchCountries();
+  }, []);
+
+  useEffect(() => {
+    fetchCities(country);
+  }, [country]);
+
+  const handleCheckTarget = async () => {
+    setChecking(true);
+    setHasChecked(true);
+
+    try {
+      const params = new URLSearchParams();
+
+      if (country !== ALL_COUNTRIES) {
+        params.set("country", country);
+      }
+
+      if (city !== ALL_CITIES) {
+        params.set("city", city);
+      }
+
+      const url =
+        params.toString().length > 0
+          ? `/api/admin/crm/leads?${params.toString()}`
+          : "/api/admin/crm/leads";
+
+      const res = await fetch(url);
+      const data = await res.json();
+      const leads = data.leads ?? [];
+
+      const readyLeads = leads.filter(
+        (l: any) => l.campaign_status === "NEW"
+      );
+      const sentLeads = leads.filter(
+        (l: any) => l.campaign_status === "SENT"
+      );
+
+      setReadyCount(readyLeads.length);
+      setSentCount(sentLeads.length);
+    } catch (e) {
+      console.error(e);
+      setReadyCount(0);
+      setSentCount(0);
+    } finally {
+      setChecking(false);
+    }
+  };
 
   const handleCreate = async () => {
     if (!subject.trim() || !emailBody.trim()) {
@@ -73,14 +148,19 @@ export default function CampaignsPage() {
       const res = await fetch("/api/admin/crm/campaigns", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ subject, email_body: emailBody, target_type: targetType, country }),
+        body: JSON.stringify({
+          country,
+          city,
+          subject,
+          body: emailBody,
+        }),
       });
       const data = await res.json();
       if (data.success) {
         setCreateMsg(`✅ 생성 완료 — ${data.campaign_id} (대상: ${data.target_count}건)`);
         setSubject("");
         setEmailBody("");
-        fetchData();
+        fetchCampaigns();
       } else {
         setCreateMsg(`❌ ${data.error}`);
       }
@@ -102,7 +182,7 @@ export default function CampaignsPage() {
       });
       const data: SendResult = await res.json();
       setSendResult(data);
-      fetchData();
+      fetchCampaigns();
     } catch (e: any) {
       setSendResult({ success: false, mode: "TEST", campaign_id, target_count: 0, sample: [], message: "", error: e.message });
     } finally {
@@ -119,24 +199,70 @@ export default function CampaignsPage() {
         SES 승인 전 — TEST MODE 운영 중. 실제 이메일은 발송되지 않습니다.
       </p>
 
+      {/* Scope selector */}
+      <div style={{ display: "flex", gap: 12, marginBottom: 20, flexWrap: "wrap", alignItems: "center" }}>
+        <label style={labelStyle}>
+          Country
+          <select
+            value={country}
+            onChange={(e) => {
+              setCountry(e.target.value);
+              setCity(ALL_CITIES);
+              setHasChecked(false);
+            }}
+            style={selectStyle}
+          >
+            {countries.map((c) => (
+              <option key={c}>{c}</option>
+            ))}
+          </select>
+        </label>
+
+        <label style={labelStyle}>
+          City
+          <select
+            value={city}
+            disabled={country === ALL_COUNTRIES}
+            onChange={(e) => {
+              setCity(e.target.value);
+              setHasChecked(false);
+            }}
+            style={selectStyle}
+          >
+            {cities.map((c) => (
+              <option key={c}>{c}</option>
+            ))}
+          </select>
+        </label>
+
+        <button
+          onClick={handleCheckTarget}
+          disabled={checking}
+          style={{ ...btnPrimary, marginTop: 18, opacity: checking ? 0.6 : 1 }}
+        >
+          {checking ? "조회 중..." : "🔍 Check Target"}
+        </button>
+      </div>
+
       {/* KPI */}
-      {kpi && (
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginBottom: 40 }}>
-          {[
-            { label: "READY TO SEND", value: kpi.ready_to_send, color: "#7c3aed" },
-            { label: "HOT",           value: kpi.hot,           color: "#dc2626" },
-            { label: "WARM",          value: kpi.warm,          color: "#ea580c" },
-            { label: "COLD",          value: kpi.cold,          color: "#2563eb" },
-          ].map((c) => (
-            <div key={c.label} style={{
-              background: c.color, color: "#fff", borderRadius: 12,
-              padding: "20px 16px", textAlign: "center",
-            }}>
-              <div style={{ fontSize: 28, fontWeight: 700 }}>{c.value.toLocaleString()}</div>
-              <div style={{ fontSize: 11, marginTop: 4, opacity: 0.85 }}>{c.label}</div>
-            </div>
-          ))}
-        </div>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 12, marginBottom: 40 }}>
+        {[
+          { label: "READY TO SEND", value: hasChecked ? readyCount : 0, color: "#7c3aed" },
+          { label: "SENT", value: hasChecked ? sentCount : 0, color: "#16a34a" },
+        ].map((c) => (
+          <div key={c.label} style={{
+            background: c.color, color: "#fff", borderRadius: 12,
+            padding: "20px 16px", textAlign: "center",
+          }}>
+            <div style={{ fontSize: 28, fontWeight: 700 }}>{c.value.toLocaleString()}</div>
+            <div style={{ fontSize: 11, marginTop: 4, opacity: 0.85 }}>{c.label}</div>
+          </div>
+        ))}
+      </div>
+      {!hasChecked && (
+        <p style={{ color: "#9ca3af", fontSize: 12, marginTop: -28, marginBottom: 32 }}>
+          Country / City 선택 후 Check Target을 눌러야 대상 수가 표시됩니다.
+        </p>
       )}
 
       {/* Create Campaign Form */}
@@ -145,15 +271,31 @@ export default function CampaignsPage() {
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 16 }}>
           <label style={labelStyle}>
-            Target Type
-            <select value={targetType} onChange={(e) => setTargetType(e.target.value)} style={selectStyle}>
-              {TARGET_TYPES.map((t) => <option key={t}>{t}</option>)}
+            Country
+            <select
+              value={country}
+              onChange={(e) => {
+                setCountry(e.target.value);
+                setCity(ALL_CITIES);
+                setHasChecked(false);
+              }}
+              style={selectStyle}
+            >
+              {countries.map((c) => <option key={c}>{c}</option>)}
             </select>
           </label>
           <label style={labelStyle}>
-            Country
-            <select value={country} onChange={(e) => setCountry(e.target.value)} style={selectStyle}>
-              {COUNTRIES.map((c) => <option key={c}>{c}</option>)}
+            City
+            <select
+              value={city}
+              disabled={country === ALL_COUNTRIES}
+              onChange={(e) => {
+                setCity(e.target.value);
+                setHasChecked(false);
+              }}
+              style={selectStyle}
+            >
+              {cities.map((c) => <option key={c}>{c}</option>)}
             </select>
           </label>
         </div>
@@ -234,7 +376,7 @@ export default function CampaignsPage() {
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
               <thead>
                 <tr style={{ background: "#f3f4f6", borderBottom: "2px solid #e5e7eb" }}>
-                  {["Campaign ID", "Subject", "Target", "Country", "대상 수", "Status", "Test Send", "생성일"].map((h) => (
+                  {["Campaign ID", "Subject", "Country", "City", "대상 수", "Status", "Test Send", "생성일"].map((h) => (
                     <th key={h} style={{ padding: "10px 14px", textAlign: "left", fontWeight: 600, whiteSpace: "nowrap" }}>{h}</th>
                   ))}
                 </tr>
@@ -244,14 +386,8 @@ export default function CampaignsPage() {
                   <tr key={c.id} style={{ borderBottom: "1px solid #f0f0f0" }}>
                     <td style={{ padding: "10px 14px", fontFamily: "monospace", fontSize: 12 }}>{c.campaign_id}</td>
                     <td style={{ padding: "10px 14px", maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{c.subject}</td>
-                    <td style={{ padding: "10px 14px" }}>
-                      <span style={{
-                        padding: "2px 8px", borderRadius: 4, fontSize: 11, fontWeight: 600,
-                        background: c.target_type === "HOT" ? "#fee2e2" : c.target_type === "WARM" ? "#ffedd5" : "#f3f4f6",
-                        color: c.target_type === "HOT" ? "#dc2626" : c.target_type === "WARM" ? "#ea580c" : "#374151",
-                      }}>{c.target_type}</span>
-                    </td>
-                    <td style={{ padding: "10px 14px", color: "#6b7280" }}>{c.country}</td>
+                    <td style={{ padding: "10px 14px", color: "#6b7280" }}>{c.country || "—"}</td>
+                    <td style={{ padding: "10px 14px", color: "#6b7280" }}>{c.city || "—"}</td>
                     <td style={{ padding: "10px 14px", textAlign: "center", fontWeight: 600 }}>{Number(c.target_count).toLocaleString()}</td>
                     <td style={{ padding: "10px 14px" }}>
                       <span style={{
