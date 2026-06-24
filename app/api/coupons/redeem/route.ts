@@ -25,6 +25,8 @@ function toMs(v: any): number {
 }
 
 export async function POST(req: Request) {
+  const ua = req.headers.get("user-agent") ?? "";
+  const isIOSApp = ua.includes("ManyLangsIOSApp");
   const { userId } = await auth();
 
   if (!userId) {
@@ -182,6 +184,18 @@ export async function POST(req: Request) {
       }
 
       const c = snap.data() as Coupon;
+      
+      if (
+        isIOSApp &&
+        (
+          (c as any).source !== "apple_app_store" ||
+          (c as any).ownerId !== userId
+        )
+      ) {
+        throw new Error(
+          "Only Apple In-App Purchase coupons can be used in this app."
+        );
+      }
 
       if (c.used) {
         throw new Error("Coupon already used");
