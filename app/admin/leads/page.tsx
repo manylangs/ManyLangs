@@ -63,51 +63,56 @@ export default function LeadsPage() {
     }
   }
 
-  const fetchScope = async (
-    selectedCountry = "Select Country"
-  ) => {
-    try {
-      const params = new URLSearchParams()
+  useEffect(() => {
+    const loadCountries = async () => {
+      try {
+        const res = await fetch(
+          "/api/admin/crm/locations"
+        )
 
-      if (selectedCountry !== "Select Country") {
-        params.set("country", selectedCountry)
+        const json = await res.json()
+
+        setCountries([
+          "Select Country",
+          ...(json.countries || []),
+        ])
+      } catch (e) {
+        console.error(e)
       }
-
-      const url =
-        params.toString().length > 0
-          ? `/api/admin/crm/place-queue/init?${params.toString()}`
-          : "/api/admin/crm/place-queue/init"
-
-      const res = await fetch(url)
-      const json = await res.json()
-
-      setCountries([
-        "Select Country",
-        ...(json.countries || [])
-          .map((x: any) => x.country)
-          .filter(Boolean),
-      ])
-
-      setCities([
-        "Select City",
-        ...(json.cities || [])
-          .map((x: any) => x.city)
-          .filter(Boolean),
-      ])
-    } catch (e) {
-      console.error(e)
     }
-  }
 
-  useEffect(() => {
-    fetchScope()
+    loadCountries()
   }, [])
+
   useEffect(() => {
-    if (country !== "Select Country") {
-      fetchScope(country)
+    const loadCities = async () => {
+      try {
+        setCities(["Select City"])
+        setCity("Select City")
+
+        if (country === "Select Country") {
+          return
+        }
+
+        const res = await fetch(
+          `/api/admin/crm/locations?country=${encodeURIComponent(
+            country
+          )}`
+        )
+
+        const json = await res.json()
+
+        setCities([
+          "Select City",
+          ...(json.cities || []),
+        ])
+      } catch (e) {
+        console.error(e)
+      }
     }
+
+    loadCities()
   }, [country])
-  
   const getDisplayName = (l: Lead) => {
     if (l.school_name) return l.school_name
     try {
