@@ -1255,14 +1255,14 @@ export default function SelectBooksPage() {
                     >
                       Buy Coupons
                     </button>
-                    <div className="flex items-center justify-center h-full text-center pt-3">
+                    {/* <div className="flex items-center justify-center h-full text-center pt-3">
                       <p className="text-xs text-gray-500 leading-relaxed">
                         1 coupon = 30-day access
                         <br />Coupons can be shared with others.
                         <br />However, ManyLangs cannot individually track
                         <br />whether a shared coupon has been used.
                       </p>
-                    </div>
+                    </div> */}
 
                   </div>
 
