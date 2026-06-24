@@ -8,35 +8,67 @@ function getDb() {
   });
 }
 
-// GET — 리드 목록 (status 필터 가능)
+// GET — 리드 목록 (Country / City 필터)
 export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
-    const status = searchParams.get("status");
+
+    const country = searchParams.get("country");
+    const city = searchParams.get("city");
 
     const db = getDb();
 
     let sql = `
       SELECT
-        id, school_name, website, email, country,
-        lead_type, lead_status, lead_score, campaign_status, source
+        id,
+        school_name,
+        website,
+        email,
+        country,
+        city,
+        campaign_status,
+        source
       FROM schools
     `;
 
+    const where: string[] = [];
     const args: string[] = [];
 
-    if (status && status !== "ALL") {
-      sql += " WHERE lead_status = ?";
-      args.push(status);
+    if (country && country !== "ALL") {
+      where.push("country = ?");
+      args.push(country);
     }
 
-    sql += " ORDER BY lead_score DESC LIMIT 500";
+    if (city && city !== "ALL") {
+      where.push("city = ?");
+      args.push(city);
+    }
 
-    const result = await db.execute({ sql, args });
+    if (where.length > 0) {
+      sql += " WHERE " + where.join(" AND ");
+    }
 
-    return NextResponse.json({ leads: result.rows });
+    sql += " ORDER BY id DESC LIMIT 1000";
+
+    const result = await db.execute({
+      sql,
+      args,
+    });
+
+    return NextResponse.json({
+      success: true,
+      leads: result.rows,
+    });
   } catch (err: any) {
     console.error("[LEADS GET]", err);
-    return NextResponse.json({ leads: [] });
+
+    return NextResponse.json(
+      {
+        success: false,
+        leads: [],
+        error: err.message,
+      },
+      { status: 500 }
+    );
   }
 }
