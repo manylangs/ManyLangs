@@ -1280,7 +1280,6 @@ export default function SelectBooksPage() {
                         </p>
                       </div>
                     )}
-                    )}
 
                   </div>
 
