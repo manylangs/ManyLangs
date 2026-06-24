@@ -97,7 +97,17 @@ export default function LeadsPage() {
   useEffect(() => {
     fetchLeads(country, city)
   }, [country, city])
+  useEffect(() => {
+    console.log(
+      "RENDER COUNTRIES",
+      JSON.stringify(countries)
+    )
 
+    console.log(
+      "RENDER CITIES",
+      JSON.stringify(cities)
+    )
+  }, [countries, cities])
   const getDisplayName = (l: Lead) => {
     if (l.school_name) return l.school_name
     try {
