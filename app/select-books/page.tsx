@@ -1296,21 +1296,20 @@ export default function SelectBooksPage() {
 
                   <div className="text-xs text-center border rounded p-2 bg-yellow-50 text-gray-600">
                     {isIOS ? (
-                      <>
-                        Card purchases can be refunded here.
-                        <br />
-                        App Store purchases are handled directly by Apple according to App Store policies.
-                      </>
+                      <div className="text-xs text-center border rounded p-2 bg-yellow-50 text-gray-600">
+                        App Store purchases are handled directly by Apple
+                        according to App Store policies.
+                      </div>
                     ) : isAndroid ? (
-                      <>
+                      <div className="text-xs text-center border rounded p-2 bg-yellow-50 text-gray-600">
                         Card purchases can be refunded here.
                         <br />
                         Google Play purchases are handled directly by Google Play according to Google Play policies.
-                      </>
+                      </div>
                     ) : (
-                      <>
+                      <div className="text-xs text-center border rounded p-2 bg-yellow-50 text-gray-600">
                         Card purchases can be refunded here.
-                      </>
+                      </div>
                     )}
                   </div>
 
