@@ -1193,7 +1193,16 @@ export default function SelectBooksPage() {
                     placeholder="Coupon code"
                     className="block w-full rounded border px-3 py-2"
                   />
-
+                  <button
+                    onClick={activateCoupon}
+                    disabled={loading}
+                    className="w-full rounded border py-2 text-sm font-medium"
+                  >
+                    {loading
+                      ? "Processing..."
+                      : `Add ${LANGUAGES.find(l => l.code === targetLang)?.label ?? ""
+                      } textbook`}
+                  </button>
                   <div className="flex items-center justify-center h-full text-center">
                     <p className="text-xs text-gray-500 leading-relaxed">
                       1 coupon = 30-day access
