@@ -72,21 +72,26 @@ export default function LeadsPage() {
       const res = await fetch(url)
       const json = await res.json()
 
-      setCountries(["ALL", ...(json.countries || [])])
-      setCities(["ALL", ...(json.cities || [])])
+      setCountries([
+        "ALL",
+        ...(json.countries || [])
+          .map((x: any) => x.country)
+          .filter(Boolean),
+      ])
+
+      setCities([
+        "ALL",
+        ...(json.cities || [])
+          .map((x: any) => x.city)
+          .filter(Boolean),
+      ])
     } catch (e) {
       console.error(e)
     }
   }
 
   useEffect(() => {
-    fetchScope("ALL")
-  }, [])
-
-  useEffect(() => {
-    if (country !== "ALL") {
-      fetchScope(country)
-    }
+    fetchScope(country)
   }, [country])
 
   useEffect(() => {
