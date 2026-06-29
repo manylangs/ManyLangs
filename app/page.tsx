@@ -550,6 +550,7 @@ export default function LandingPage() {
       <section id="pricing" style={sectionCenter}>
         <h2 style={sectionTitle}>Pricing</h2>
 
+        {/* 🔥 추가 (SaaS 핵심 문장) */}
         <p
           style={{
             fontSize: 14,
@@ -571,21 +572,69 @@ export default function LandingPage() {
               fontSize: 14,
               lineHeight: 1.6,
               color: "#444",
-              marginBottom: 24,
+              marginBottom: 16,
             }}
           >
-            Purchase after login.
+            Purchase once and receive coupons.
+            Each coupon unlocks one selected course for 30 days.
           </div>
 
+          {/* 가격 테이블 */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: 8,
+              marginBottom: 16,
+            }}
+          >
+            {[
+              { price: "$3", count: "2 coupons" },
+              { price: "$5", count: "4 coupons" },
+              { price: "$20", count: "20 coupons" },
+              { price: "$50", count: "60 coupons" },
+              { price: "$100", count: "150 coupons" },
+            ].map((item) => (
+              <div
+                key={item.price}
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  fontSize: 14,
+                  borderBottom: "1px solid #f0f0f0",
+                  paddingBottom: 6,
+                }}
+              >
+                <span>{item.price}</span>
+                <span style={{ fontWeight: 600 }}>{item.count}</span>
+              </div>
+            ))}
+          </div>
+
+          <a
+            href="/app"
+            style={{
+              ...linkReset,
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <button type="button" style={btnPrimary}>
+              Purchase coupons after login
+            </button>
+          </a>
+
+          {/* 정책 설명 */}
           <div
             style={{
               fontSize: 12,
               color: "#777",
+              marginTop: 16,
               lineHeight: 1.6,
             }}
           >
-            • Coupons are issued after payment.<br />
-            • Each coupon unlocks a selected course for 30 days.<br />
+            • Coupons are issued once after payment.<br />
+            • Each coupon unlocks a course for 30 days.<br />
             • Coupons do not expire.<br />
             • Coupons can be transferred to other users.<br />
             • ManyLangs is not responsible after transfer.
