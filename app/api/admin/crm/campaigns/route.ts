@@ -37,6 +37,11 @@ export async function GET() {
       statusMap[r.campaign_status] = Number(r.count);
     }
 
+    console.log("===== CAMPAIGN KPI =====");
+    console.log("NEW :", statusMap["NEW"] ?? 0);
+    console.log("SENT:", statusMap["SENT"] ?? 0);
+    console.log("========================");
+
     return NextResponse.json({
       kpi: {
         ready_to_send: statusMap["NEW"] ?? 0,

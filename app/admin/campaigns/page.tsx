@@ -54,9 +54,17 @@ export default function CampaignsPage() {
 
   const fetchCampaigns = async () => {
     try {
-      const res = await fetch("/api/admin/crm/campaigns");
+      const res = await fetch("/api/admin/crm/campaigns", {
+        cache: "no-store",
+      });
+
       const data = await res.json();
+
       setCampaigns(data.campaigns ?? []);
+
+      // KPI도 함께 갱신
+      setReadyCount(data.kpi?.ready_to_send ?? 0);
+      setSentCount(data.kpi?.sent ?? 0);
     } finally {
       setLoading(false);
     }
@@ -116,7 +124,12 @@ export default function CampaignsPage() {
           ? `/api/admin/crm/leads?${params.toString()}`
           : "/api/admin/crm/leads";
 
-      const res = await fetch(url);
+      const res = await fetch(
+        `${url}${url.includes("?") ? "&" : "?"}_=${Date.now()}`,
+        {
+          cache: "no-store",
+        }
+      );
       const data = await res.json();
       const leads = data.leads ?? [];
 
@@ -185,8 +198,8 @@ export default function CampaignsPage() {
 
       setSendResult(data);
 
+      // Campaign History + READY/SENT KPI 갱신
       await fetchCampaigns();
-      await handleCheckTarget();
     } catch (e: any) {
       setSendResult({ success: false, mode: "TEST", campaign_id, target_count: 0, sample: [], message: "", error: e.message });
     } finally {
