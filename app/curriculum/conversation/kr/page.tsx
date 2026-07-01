@@ -5,16 +5,6 @@ import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 import { useState } from "react";
 import { copyLink } from "@/utils/share";
 
-/* ================= 레벨 ================= */
-function getLevel(num: number) {
-  if (num <= 10) return "A1";
-  if (num <= 20) return "A2";
-  if (num <= 30) return "B1";
-  if (num <= 40) return "B2";
-  if (num <= 50) return "C1";
-  return "C2";
-}
-
 /* ================= 데이터 ================= */
 type Item = {
   kr: string;

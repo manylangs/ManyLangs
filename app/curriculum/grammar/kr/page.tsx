@@ -269,7 +269,7 @@ export default function Page() {
         </div>
 
         {/* TITLE */}
-        <h1 style={title}>🧩 Grammar Curriculum (KR)</h1>
+        <h1 style={title}>🧩 Grammar Curriculum (Korean)</h1>
         <p style={descStrong}>
           With <b>one coupon</b>, you can study <b>one level (A1–C2)</b> for <b>30 days</b>.
         </p>
