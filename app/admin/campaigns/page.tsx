@@ -182,8 +182,11 @@ export default function CampaignsPage() {
         body: JSON.stringify({ campaign_id }),
       });
       const data: SendResult = await res.json();
+
       setSendResult(data);
-      fetchCampaigns();
+
+      await fetchCampaigns();
+      await handleCheckTarget();
     } catch (e: any) {
       setSendResult({ success: false, mode: "TEST", campaign_id, target_count: 0, sample: [], message: "", error: e.message });
     } finally {
