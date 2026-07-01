@@ -98,14 +98,17 @@ export async function POST(req: NextRequest) {
         campaign.body
       );
 
-      await db.execute({
+      const updateResult = await db.execute({
         sql: `
-          UPDATE schools
-          SET campaign_status = 'SENT'
-          WHERE id = ?
-        `,
+    UPDATE schools
+    SET campaign_status = 'SENT'
+    WHERE id = ?
+  `,
         args: [target.id],
       });
+
+      console.log("TARGET ID:", target.id);
+      console.log("UPDATE RESULT:", updateResult);
     }
 
     await db.execute({
