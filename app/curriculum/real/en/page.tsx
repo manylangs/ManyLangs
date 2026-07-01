@@ -52,9 +52,9 @@ export default function Page() {
           </div>
         </div>
 
-        {/* TITLE */}a
+        {/* TITLE */}
         <h1 style={title}>
-          🖼️ Real Curriculum (Korean)
+          🖼️ Real Curriculum (English)
         </h1>
 
         <p style={descStrong}>
