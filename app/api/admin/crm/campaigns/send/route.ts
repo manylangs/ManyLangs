@@ -72,10 +72,15 @@ export async function POST(req: NextRequest) {
 
     // sql += ` LIMIT 5000`;
     sql += ` LIMIT 1`;
+
     const targets = await db.execute({
       sql,
       args,
     });
+
+    console.log("SQL:", sql);
+    console.log("ARGS:", args);
+    console.log("ROWS:", targets.rows);
 
     const target_count = targets.rows.length;
 
