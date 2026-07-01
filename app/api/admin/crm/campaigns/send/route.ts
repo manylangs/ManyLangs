@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@libsql/client";
+import { sendEmail } from "@/lib/aws/ses";
 
 function getDb() {
   return createClient({
@@ -69,8 +70,8 @@ export async function POST(req: NextRequest) {
       args.push(city);
     }
 
-    sql += ` LIMIT 5000`;
-
+    // sql += ` LIMIT 5000`;
+    sql += ` LIMIT 1`;
     const targets = await db.execute({
       sql,
       args,
@@ -85,13 +86,32 @@ export async function POST(req: NextRequest) {
     console.log("city        :", city);
     console.log("target_count:", target_count);
 
+    // ===== SES 발송 =====
+    for (const target of targets.rows as any[]) {
+      await sendEmail(
+        target.email,
+        campaign.subject,
+        campaign.body
+      );
+
+      await db.execute({
+        sql: `
+      UPDATE schools
+      SET campaign_status = 'SENT'
+      WHERE id = ?
+    `,
+        args: [target.id],
+      });
+    }
+    // ====================
+
     await db.execute({
       sql: `
-        UPDATE campaigns
-        SET status = 'READY',
-            target_count = ?
-        WHERE campaign_id = ?
-      `,
+    UPDATE campaigns
+    SET status = 'SENT',
+        target_count = ?
+    WHERE campaign_id = ?
+  `,
       args: [target_count, campaign_id],
     });
 

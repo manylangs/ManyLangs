@@ -196,9 +196,9 @@ export default function CampaignsPage() {
     <div style={{ padding: 40, maxWidth: 960, margin: "0 auto" }}>
       <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 6 }}>📧 Campaigns</h1>
       <p style={{ color: "#666", fontSize: 13, marginBottom: 32 }}>
-        SES 승인 전 — TEST MODE 운영 중. 실제 이메일은 발송되지 않습니다.
+        SES 연결 완료. TEST SEND는 실제 이메일을 발송합니다.
       </p>
-    
+
       {/* Scope selector */}
       <div style={{ display: "flex", gap: 12, marginBottom: 20, flexWrap: "wrap", alignItems: "center" }}>
         <label style={labelStyle}>
@@ -344,7 +344,7 @@ export default function CampaignsPage() {
           fontSize: 13,
         }}>
           <div style={{ fontWeight: 700, marginBottom: 8, fontSize: 14 }}>
-            {sendResult.success ? "✅ TEST MODE 시뮬레이션 완료" : `❌ 오류: ${sendResult.error}`}
+            {sendResult.success ? "✅ 이메일 발송 완료" : `❌ 오류: ${sendResult.error}`}
           </div>
           {sendResult.success && (
             <>
