@@ -4,24 +4,45 @@ import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 import { LANGUAGES } from "@/app/config/languages";
 import { useEffect, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { copyLink } from "@/utils/share";
 
 export default function CurriculumPage() {
   const { targetLang, setTargetLang } = useViewerTarget();
-
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    copyLink(undefined, () => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    });
+    copyLink(
+      `${window.location.origin}${window.location.pathname}?lang=${safeLang}`,
+      () => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      }
+    );
   };
 
-  const safeLang = targetLang || "kr";
+  useEffect(() => {
+    const lang = searchParams.get("lang");
+
+    if (!lang) {
+      router.replace("/curriculum?lang=en");
+      return;
+    }
+
+    if (
+      lang !== targetLang &&
+      LANGUAGES.some((l) => l.code === lang)
+    ) {
+      setTargetLang(lang);
+    }
+  }, [searchParams, targetLang, setTargetLang, router]);
+
+  const safeLang = searchParams.get("lang") || targetLang || "en";
 
   const seriesList =
-    CURRICULUM[safeLang] || CURRICULUM["kr"];
+    CURRICULUM[safeLang] || CURRICULUM["en"];
 
   return (
     <main style={main}>
@@ -63,8 +84,14 @@ export default function CurriculumPage() {
 
         {/* DROPDOWN */}
         <select
-          value={targetLang}
-          onChange={(e) => setTargetLang(e.target.value)}
+          value={safeLang}
+          onChange={(e) => {
+            const lang = e.target.value;
+
+            setTargetLang(lang);
+
+            router.replace(`/curriculum?lang=${lang}`);
+          }}
           style={select}
         >
           {LANGUAGES.map((lang) => (
@@ -255,7 +282,7 @@ const header: React.CSSProperties = {
   alignItems: "center",
   marginBottom: 20,
 
-  paddingTop: "calc(env(safe-area-inset-top) + 8px)", 
+  paddingTop: "calc(env(safe-area-inset-top) + 8px)",
 };
 
 const headerRight: React.CSSProperties = {

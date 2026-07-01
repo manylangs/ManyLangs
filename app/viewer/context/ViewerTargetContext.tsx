@@ -43,7 +43,7 @@ export function ViewerTargetProvider({
   initialShowTarget?: boolean;
 }) {
   /** 🎯 target language */
-  const [targetLang, setTargetLang] = useState<string>("kr");
+  const [targetLang, setTargetLang] = useState<string>("en");
 
   /** 🎯 study language */
   const [studyLang, setStudyLang] = useState<string>("en");
@@ -80,7 +80,7 @@ export function ViewerTargetProvider({
     const lang =
       saved && SUPPORTED_LANGS.includes(saved)
         ? saved
-        : "kr";
+        : "en";
 
     setTargetLang(lang);
     localStorage.setItem("ml_target_lang", lang);
