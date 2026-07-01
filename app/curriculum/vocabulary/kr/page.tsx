@@ -8,71 +8,70 @@ import { copyLink } from "@/utils/share";
 const LEVELS = [
   {
     level: "A1",
-    words: "175",
+    words: "120",
     desc: {
-      kr: "일상 명사",
-      en: "everyday nouns",
-      es: "sustantivos cotidianos",
-      fr: "noms du quotidien",
-      pt: "substantivos do cotidiano",
+      kr: "기초 핵심 어휘",
+      en: "Core Vocabulary",
+      es: "Vocabulario básico",
+      fr: "Vocabulaire de base",
+      pt: "Vocabulário básico",
     },
   },
-  { 
+  {
     level: "A2",
-    words: "175",
+    words: "120",
     desc: {
-      kr: "일상 명사 & 확장 일상 명사",
-      en: "everyday nouns & extended everyday nouns",
-      es: "sustantivos cotidianos & sustantivos cotidianos ampliados",
-      fr: "noms du quotidien & noms du quotidien étendus",
-      pt: "substantivos do cotidiano & substantivos do cotidiano expandidos"
-    }
+      kr: "기초 확장 어휘",
+      en: "Expanded Core Vocabulary",
+      es: "Vocabulario básico ampliado",
+      fr: "Vocabulaire de base élargi",
+      pt: "Vocabulário básico ampliado",
+    },
   },
   {
     level: "B1",
-    words: "175",
+    words: "120",
     desc: {
-    kr: "확장 일상 명사 & 사회·학교·기술 관련 명사",
-    en: "extended everyday nouns & Nouns related to society, school, and technology",
-    es: "sustantivos cotidianos ampliados & Sustantivos relacionados con la sociedad, la escuela y la tecnología",
-    fr: "noms du quotidien étendus & Noms liés à la société, à l’école et à la technologie",
-    pt: "substantivos do cotidiano expandidos & Substantivos relacionados à sociedade, à escola e à tecnologia"
+      kr: "중급 핵심 어휘",
+      en: "Intermediate Core Vocabulary",
+      es: "Vocabulario intermedio esencial",
+      fr: "Vocabulaire intermédiaire essentiel",
+      pt: "Vocabulário intermediário essencial",
     },
   },
-{
-  level: "B2",
-    words: "175",
-      desc: {
-
-    kr: "사회·학교·기술 관련 명사 & 추상·정책·미래 개념 명사",
-      en: "Nouns related to society, school, and technology & Abstract, policy, and future-related nouns",
-        es: "Sustantivos relacionados con la sociedad, la escuela y la tecnología & Sustantivos abstractos, de políticas y relacionados con el futuro",
-          fr: "Noms liés à la société, à l’école et à la technologie & Noms abstraits, politiques et liés au futur",
-            pt: "Substantivos relacionados à sociedade, à escola e à tecnologia & Substantivos abstratos, de políticas e relacionados ao futuro"
-  }
-},
-{
-  level: "C1",
-    words: "150",
-      desc: {
-    kr: "추상·정책·미래 개념 명사",
-      en: "Abstract, policy, and future-related nouns",
-        es: "Sustantivos abstractos, de políticas y relacionados con el futuro",
-          fr: "Noms abstraits, politiques et liés au futur",
-            pt: "Substantivos abstratos, de políticas e relacionados ao futuro",
+  {
+    level: "B2",
+    words: "120",
+    desc: {
+      kr: "추상·시스템 어휘",
+      en: "Abstract and Systems Vocabulary",
+      es: "Vocabulario abstracto y de sistemas",
+      fr: "Vocabulaire abstrait et des systèmes",
+      pt: "Vocabulário abstrato e de sistemas",
     },
-},
-{
-  level: "C2",
-    words: "150",
-      desc: {
-    kr: "학술 명사 & 고급 명사",
-      en: "Academic nouns & Rare advanced nouns",
-        es: "Sustantivos académicos & Sustantivos avanzados raros",
-          fr: "Noms académiques & Noms avancés rares",
-            pt: "Substantivos acadêmicos & Substantivos avançados raros"
   },
-},
+  {
+    level: "C1",
+    words: "120",
+    desc: {
+      kr: "고급 학술·추상 어휘",
+      en: "Advanced Academic and Abstract Vocabulary",
+      es: "Vocabulario académico y abstracto avanzado",
+      fr: "Vocabulaire académique et abstrait avancé",
+      pt: "Vocabulário acadêmico e abstrato avançado",
+    },
+  },
+  {
+    level: "C2",
+    words: "120",
+    desc: {
+      kr: "전문 분야 학술 어휘",
+      en: "Specialized Academic Vocabulary",
+      es: "Vocabulario académico especializado",
+      fr: "Vocabulaire académique spécialisé",
+      pt: "Vocabulário acadêmico especializado",
+    },
+  },
 ];
 
 /* ================= 페이지 ================= */
