@@ -120,7 +120,7 @@ export default function Page() {
         </div>
 
         {/* TITLE */}
-        <h1 style={title}>📚 Vocabulary Curriculum (Korean)</h1>
+        <h1 style={title}>📚 Vocabulary Curriculum (English)</h1>
         <p style={descStrong}>
           Special Offer for the Vocabulary Series!
           <br /><br />With just one coupon, enjoy full access to all A1–C2 content for 30 days.

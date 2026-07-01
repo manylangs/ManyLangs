@@ -126,7 +126,7 @@ export default function Page() {
         </div>
 
         {/* TITLE */}
-        <h1 style={title}>🗣️ Conversation Curriculum (KR)</h1>
+        <h1 style={title}>🗣️ Conversation Curriculum (Korean)</h1>
 
 
         <p style={descStrong}>

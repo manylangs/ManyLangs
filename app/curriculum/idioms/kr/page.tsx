@@ -120,7 +120,7 @@ export default function Page() {
         </div>
 
         {/* TITLE */}
-        <h1 style={title}>💬 Idiom Curriculum (KR)</h1>
+        <h1 style={title}>💬 Idiom Curriculum (Korean)</h1>
         <p style={descStrong}>
           Special Offer for the Idiom Series!
           <br /><br />With just one coupon, enjoy full access to all A1–C2 content for 30 days.

@@ -3,76 +3,76 @@
 import Link from "next/link";
 import { useState } from "react";
 import { copyLink } from "@/utils/share";
-/* ================= VOCAB LEVEL DATA ================= */
+
+/* ================= IDIOM LEVEL DATA ================= */
 
 const LEVELS = [
   {
     level: "A1",
-    words: "175",
+    items: "35",
     desc: {
-      kr: "일상 명사",
-      en: "everyday nouns",
-      es: "sustantivos cotidianos",
-      fr: "noms du quotidien",
-      pt: "substantivos do cotidiano",
+      kr: "기초 일상 표현 (간단한 숙어)",
+      en: "Basic everyday expressions (simple idioms)",
+      es: "Expresiones cotidianas básicas (modismos simples)",
+      fr: "Expressions quotidiennes de base (idiomes simples)",
+      pt: "Expressões cotidianas básicas (idiomas simples)",
     },
   },
-  { 
+  {
     level: "A2",
-    words: "175",
+    items: "35",
     desc: {
-      kr: "일상 명사 & 확장 일상 명사",
-      en: "everyday nouns & extended everyday nouns",
-      es: "sustantivos cotidianos & sustantivos cotidianos ampliados",
-      fr: "noms du quotidien & noms du quotidien étendus",
-      pt: "substantivos do cotidiano & substantivos do cotidiano expandidos"
-    }
+      kr: "확장 일상 표현 (자주 쓰는 숙어)",
+      en: "Expanded daily expressions (common idioms)",
+      es: "Expresiones cotidianas ampliadas (modismos comunes)",
+      fr: "Expressions quotidiennes étendues (idiomes courants)",
+      pt: "Expressões cotidianas expandidas (idiomas comuns)",
+    },
   },
   {
     level: "B1",
-    words: "175",
+    items: "35",
     desc: {
-    kr: "확장 일상 명사 & 사회·학교·기술 관련 명사",
-    en: "extended everyday nouns & Nouns related to society, school, and technology",
-    es: "sustantivos cotidianos ampliados & Sustantivos relacionados con la sociedad, la escuela y la tecnología",
-    fr: "noms du quotidien étendus & Noms liés à la société, à l’école et à la technologie",
-    pt: "substantivos do cotidiano expandidos & Substantivos relacionados à sociedade, à escola e à tecnologia"
+      kr: "상황별 숙어 표현",
+      en: "Situational idiomatic expressions",
+      es: "Expresiones idiomáticas según la situación",
+      fr: "Expressions idiomatiques selon la situation",
+      pt: "Expressões idiomáticas por situação",
     },
   },
-{
-  level: "B2",
-    words: "175",
-      desc: {
-
-    kr: "사회·학교·기술 관련 명사 & 추상·정책·미래 개념 명사",
-      en: "Nouns related to society, school, and technology & Abstract, policy, and future-related nouns",
-        es: "Sustantivos relacionados con la sociedad, la escuela y la tecnología & Sustantivos abstractos, de políticas y relacionados con el futuro",
-          fr: "Noms liés à la société, à l’école et à la technologie & Noms abstraits, politiques et liés au futur",
-            pt: "Substantivos relacionados à sociedade, à escola e à tecnologia & Substantivos abstratos, de políticas e relacionados ao futuro"
-  }
-},
-{
-  level: "C1",
-    words: "150",
-      desc: {
-    kr: "추상·정책·미래 개념 명사",
-      en: "Abstract, policy, and future-related nouns",
-        es: "Sustantivos abstractos, de políticas y relacionados con el futuro",
-          fr: "Noms abstraits, politiques et liés au futur",
-            pt: "Substantivos abstratos, de políticas e relacionados ao futuro",
+  {
+    level: "B2",
+    items: "35",
+    desc: {
+      kr: "자연스러운 구어 숙어",
+      en: "Natural spoken idioms",
+      es: "Modismos naturales del habla",
+      fr: "Idiomes naturels de la langue parlée",
+      pt: "Idiomas naturais da fala",
     },
-},
-{
-  level: "C2",
-    words: "150",
-      desc: {
-    kr: "학술 명사 & 고급 명사",
-      en: "Academic nouns & Rare advanced nouns",
-        es: "Sustantivos académicos & Sustantivos avanzados raros",
-          fr: "Noms académiques & Noms avancés rares",
-            pt: "Substantivos acadêmicos & Substantivos avançados raros"
   },
-},
+  {
+    level: "C1",
+    items: "30",
+    desc: {
+      kr: "고급 표현 및 관용구",
+      en: "Advanced idioms and expressions",
+      es: "Modismos y expresiones avanzadas",
+      fr: "Idiomes et expressions avancés",
+      pt: "Idiomas e expressões avançadas",
+    },
+  },
+  {
+    level: "C2",
+    items: "20",
+    desc: {
+      kr: "원어민 수준 관용 표현",
+      en: "Native-level idiomatic expressions",
+      es: "Expresiones idiomáticas de nivel nativo",
+      fr: "Expressions idiomatiques de niveau natif",
+      pt: "Expressões idiomáticas de nível nativo",
+    },
+  },
 ];
 
 /* ================= 페이지 ================= */
@@ -81,7 +81,7 @@ export default function Page() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    copyLink(undefined, () => {
+    copyLink(window.location.href, () => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     });
@@ -120,9 +120,9 @@ export default function Page() {
         </div>
 
         {/* TITLE */}
-        <h1 style={title}>📚 Vocabulary Curriculum (Korean)</h1>
+        <h1 style={title}>💬 Idiom Curriculum (English)</h1>
         <p style={descStrong}>
-          Special Offer for the Vocabulary Series!
+          Special Offer for the Idiom Series!
           <br /><br />With just one coupon, enjoy full access to all A1–C2 content for 30 days.
         </p>
 
@@ -134,25 +134,20 @@ export default function Page() {
             </div>
 
             <div style={right}>
-              <div style={words}>{lv.words} words</div>
+              <div style={words}>{lv.items} idioms</div>
+
               <div style={desc}>
-                {lv.desc.kr}
-                <br />
-                <span style={{ fontSize: 12, opacity: 0.7 }}>
-                  {lv.desc.en}
-                </span>
-                <br />
-                <span style={{ fontSize: 12, opacity: 0.6 }}>
-                  {lv.desc.es}
-                </span>
-                <br />
-                <span style={{ fontSize: 12, opacity: 0.6 }}>
-                  {lv.desc.fr}
-                </span>
-                <br />
-                <span style={{ fontSize: 12, opacity: 0.6 }}>
-                  {lv.desc.pt}
-                </span>
+                {Object.entries(lv.desc).map(([lang, text], i) => (
+                  <div
+                    key={lang}
+                    style={{
+                      fontSize: i === 0 ? 14 : 12,
+                      opacity: i === 0 ? 1 : 0.7,
+                    }}
+                  >
+                    {text}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -193,7 +188,6 @@ const container: React.CSSProperties = {
   margin: "0 auto",
   padding: "20px 16px 60px",
 };
-
 const headerRow: React.CSSProperties = {
   display: "flex",
   justifyContent: "space-between",
@@ -242,7 +236,6 @@ const btnHeaderPrimary: React.CSSProperties = {
   fontWeight: 600,
   cursor: "pointer",
 };
-
 
 const title: React.CSSProperties = {
   fontSize: 24,
