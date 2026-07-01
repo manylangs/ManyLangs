@@ -131,10 +131,6 @@ export default function Page() {
               <div style={desc}>
                 {lv.desc.en}
                 <br />
-                <span style={{ fontSize: 12, opacity: 0.7 }}>
-                  {lv.desc.en}
-                </span>
-                <br />
                 <span style={{ fontSize: 12, opacity: 0.6 }}>
                   {lv.desc.es}
                 </span>
