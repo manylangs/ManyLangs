@@ -228,9 +228,9 @@ export default function Page() {
             <div style={right}>
               <div style={levelBadge}>{c.level}</div>
               <div style={chapterTitle}>
-                <div>{c.title.kr}</div>
+                <div>{c.title.en}</div>
                 <div style={{ fontSize: 12, opacity: 0.7 }}>
-                  {c.title.en} / {c.title.es} / {c.title.fr} / {c.title.pt}
+                  {c.title.es} / {c.title.fr} / {c.title.pt}
                 </div>
               </div>
             </div>
