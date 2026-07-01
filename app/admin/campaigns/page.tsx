@@ -29,9 +29,6 @@ export default function CampaignsPage() {
   const [campaigns, setCampaigns] = useState<Campaign[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // Campaign scope
-  const [scope, setScope] = useState<"GLOBAL" | "COUNTRY" | "CITY">("CITY");
-
   // Scope (country / city) — same pattern as Leads page
   const [countries, setCountries] = useState<string[]>([ALL_COUNTRIES]);
   const [cities, setCities] = useState<string[]>([ALL_CITIES]);
@@ -201,41 +198,7 @@ export default function CampaignsPage() {
       <p style={{ color: "#666", fontSize: 13, marginBottom: 32 }}>
         SES 승인 전 — TEST MODE 운영 중. 실제 이메일은 발송되지 않습니다.
       </p>
-      <div className="space-y-2">
-        <label className="text-sm font-medium">Campaign Scope</label>
-
-        <div className="flex gap-6">
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="radio"
-              value="GLOBAL"
-              checked={scope === "GLOBAL"}
-              onChange={() => setScope("GLOBAL")}
-            />
-            <span>Global</span>
-          </label>
-
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="radio"
-              value="COUNTRY"
-              checked={scope === "COUNTRY"}
-              onChange={() => setScope("COUNTRY")}
-            />
-            <span>Country</span>
-          </label>
-
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="radio"
-              value="CITY"
-              checked={scope === "CITY"}
-              onChange={() => setScope("CITY")}
-            />
-            <span>City</span>
-          </label>
-        </div>
-      </div>
+    
       {/* Scope selector */}
       <div style={{ display: "flex", gap: 12, marginBottom: 20, flexWrap: "wrap", alignItems: "center" }}>
         <label style={labelStyle}>
