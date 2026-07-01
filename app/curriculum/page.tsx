@@ -218,18 +218,18 @@ const CURRICULUM: Record<string, any[]> = {
 function getChapterCount(lang: string, series: string) {
   const map: any = {
     kr: {
-      grammar: "84",
+      grammar: "310",
       conversation: "60",
-      vocabulary: "200",
-      idioms: "38",
+      vocabulary: "144",
+      idioms: "42",
       real: "120",
     },
     en: {
-      grammar: "120+",
-      conversation: "100+",
-      vocabulary: "150+",
-      idioms: "110+",
-      real: "90+",
+      grammar: "155",
+      conversation: "60",
+      vocabulary: "144",
+      idioms: "42",
+      real: "120",
     },
   };
 
