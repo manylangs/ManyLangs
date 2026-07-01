@@ -22,22 +22,23 @@ interface SendResult {
   error?: string;
 }
 
-const ALL_COUNTRIES = "All Countries";
-const ALL_CITIES = "All Cities";
+const ALL_VALUE = "ALL";
+const ALL_COUNTRY_LABEL = "All Countries";
+const ALL_CITY_LABEL = "All Cities";
 
 export default function CampaignsPage() {
   const [campaigns, setCampaigns] = useState<Campaign[]>([]);
   const [loading, setLoading] = useState(true);
 
   // Scope (country / city) — same pattern as Leads page
-  const [countries, setCountries] = useState<string[]>([ALL_COUNTRIES]);
-  const [cities, setCities] = useState<string[]>([ALL_CITIES]);
+  const [countries, setCountries] = useState<string[]>([]);
+  const [cities, setCities] = useState<string[]>([]);
 
   // Form state
   const [subject, setSubject] = useState("");
   const [emailBody, setEmailBody] = useState("");
-  const [country, setCountry] = useState(ALL_COUNTRIES);
-  const [city, setCity] = useState(ALL_CITIES);
+  const [country, setCountry] = useState(ALL_VALUE);
+  const [city, setCity] = useState(ALL_VALUE);
   const [creating, setCreating] = useState(false);
   const [createMsg, setCreateMsg] = useState("");
 
@@ -65,22 +66,22 @@ export default function CampaignsPage() {
     try {
       const res = await fetch("/api/admin/crm/locations");
       const data = await res.json();
-      setCountries([ALL_COUNTRIES, ...(data.countries || [])]);
+      setCountries(data.countries || []);
     } catch (e) {
       console.error(e);
     }
   };
 
   const fetchCities = async (selectedCountry: string) => {
-    if (selectedCountry === ALL_COUNTRIES) {
-      setCities([ALL_CITIES]);
+    if (selectedCountry === ALL_VALUE) {
+      setCities([]);
       return;
     }
     try {
       const params = new URLSearchParams({ country: selectedCountry });
       const res = await fetch(`/api/admin/crm/locations?${params.toString()}`);
       const data = await res.json();
-      setCities([ALL_CITIES, ...(data.cities || [])]);
+      setCities(data.cities || []);
     } catch (e) {
       console.error(e);
     }
@@ -102,11 +103,11 @@ export default function CampaignsPage() {
     try {
       const params = new URLSearchParams();
 
-      if (country !== ALL_COUNTRIES) {
+      if (country !== "ALL") {
         params.set("country", country);
       }
 
-      if (city !== ALL_CITIES) {
+      if (city !== "ALL") {
         params.set("city", city);
       }
 
@@ -207,7 +208,7 @@ export default function CampaignsPage() {
             value={country}
             onChange={(e) => {
               setCountry(e.target.value);
-              setCity(ALL_CITIES);
+              setCity(ALL_VALUE);
               setHasChecked(false);
             }}
             style={selectStyle}
@@ -222,7 +223,7 @@ export default function CampaignsPage() {
           City
           <select
             value={city}
-            disabled={country === ALL_COUNTRIES}
+            disabled={country === ALL_VALUE}
             onChange={(e) => {
               setCity(e.target.value);
               setHasChecked(false);
@@ -276,7 +277,7 @@ export default function CampaignsPage() {
               value={country}
               onChange={(e) => {
                 setCountry(e.target.value);
-                setCity(ALL_CITIES);
+                setCity(ALL_VALUE);
                 setHasChecked(false);
               }}
               style={selectStyle}
@@ -288,7 +289,7 @@ export default function CampaignsPage() {
             City
             <select
               value={city}
-              disabled={country === ALL_COUNTRIES}
+              disabled={country === ALL_VALUE}
               onChange={(e) => {
                 setCity(e.target.value);
                 setHasChecked(false);

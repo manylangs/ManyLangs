@@ -41,8 +41,9 @@ export async function POST(req: NextRequest) {
 
     const campaign = campResult.rows[0] as any;
 
-    const country = campaign.country ?? "ALL";
-    const city = campaign.city ?? "ALL";
+    // value만 저장된다고 가정
+    const country = campaign.country || "ALL";
+    const city = campaign.city || "ALL";
 
     let sql = `
       SELECT
@@ -58,7 +59,7 @@ export async function POST(req: NextRequest) {
       AND campaign_status = 'NEW'
     `;
 
-    const args: string[] = [];
+    const args: any[] = [];
 
     if (country !== "ALL") {
       sql += ` AND country = ?`;
@@ -70,7 +71,6 @@ export async function POST(req: NextRequest) {
       args.push(city);
     }
 
-    // sql += ` LIMIT 5000`;
     sql += ` LIMIT 1`;
 
     const targets = await db.execute({
@@ -84,14 +84,13 @@ export async function POST(req: NextRequest) {
 
     const target_count = targets.rows.length;
 
-    console.log("[CAMPAIGNS SEND] TEST MODE");
+    console.log("[CAMPAIGNS SEND]");
     console.log("campaign_id :", campaign_id);
     console.log("subject     :", campaign.subject);
     console.log("country     :", country);
     console.log("city        :", city);
     console.log("target_count:", target_count);
 
-    // ===== SES 발송 =====
     for (const target of targets.rows as any[]) {
       await sendEmail(
         target.email,
@@ -101,28 +100,26 @@ export async function POST(req: NextRequest) {
 
       await db.execute({
         sql: `
-      UPDATE schools
-      SET campaign_status = 'SENT'
-      WHERE id = ?
-    `,
+          UPDATE schools
+          SET campaign_status = 'SENT'
+          WHERE id = ?
+        `,
         args: [target.id],
       });
     }
-    // ====================
 
     await db.execute({
       sql: `
-    UPDATE campaigns
-    SET status = 'SENT',
-        target_count = ?
-    WHERE campaign_id = ?
-  `,
+        UPDATE campaigns
+        SET status = 'SENT',
+            target_count = ?
+        WHERE campaign_id = ?
+      `,
       args: [target_count, campaign_id],
     });
 
     return NextResponse.json({
       success: true,
-      mode: "TEST",
       campaign_id,
       subject: campaign.subject,
       country,
@@ -135,15 +132,18 @@ export async function POST(req: NextRequest) {
         city: r.city,
         status: r.campaign_status,
       })),
-      message:
-        "SES 승인 후 실제 발송 가능. 현재 TEST MODE.",
+      message: "Campaign processed successfully.",
     });
   } catch (err: any) {
     console.error("[CAMPAIGNS SEND]", err);
 
     return NextResponse.json(
-      { error: err.message },
-      { status: 500 }
+      {
+        error: err.message,
+      },
+      {
+        status: 500,
+      }
     );
   }
 }

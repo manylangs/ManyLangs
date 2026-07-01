@@ -67,6 +67,19 @@ export async function POST(req: NextRequest) {
       city,
     } = body;
 
+    const savedCountry =
+      !country ||
+        country === "All Countries" ||
+        country === "ALL"
+        ? "ALL"
+        : country;
+
+    const savedCity =
+      !city ||
+        city === "All Cities" ||
+        city === "ALL"
+        ? "ALL"
+        : city;
     if (!subject || !emailBody) {
       return NextResponse.json(
         {
@@ -93,20 +106,14 @@ export async function POST(req: NextRequest) {
 
     const args: string[] = [];
 
-    if (
-      country &&
-      country !== "ALL"
-    ) {
+    if (savedCountry !== "ALL") {
       countSql += ` AND country = ?`;
-      args.push(country);
+      args.push(savedCountry);
     }
 
-    if (
-      city &&
-      city !== "ALL"
-    ) {
+    if (savedCity !== "ALL") {
       countSql += ` AND city = ?`;
-      args.push(city);
+      args.push(savedCity);
     }
 
     const countResult =
@@ -139,8 +146,8 @@ export async function POST(req: NextRequest) {
         campaign_id,
         subject,
         emailBody,
-        country ?? "ALL",
-        city ?? "ALL",
+        savedCountry,
+        savedCity,
         target_count,
       ],
     });
