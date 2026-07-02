@@ -497,7 +497,11 @@ export default function CampaignsPage() {
                             opacity: isSendingAny ? 0.5 : 1,
                           }}
                         >
-                          {isSendingThis ? "Sending..." : "📧 REAL SEND"}
+                          {isSendingThis
+                            ? "Sending..."
+                            : c.status === "DRAFT"
+                              ? "🧪 Test"
+                              : "📧 REAL SEND"}
                         </button>
                       </td>
                       <td style={{ padding: "10px 14px", color: "#9ca3af", fontSize: 11, whiteSpace: "nowrap" }}>
