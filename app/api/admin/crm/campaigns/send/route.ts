@@ -120,19 +120,15 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // SENDING → SENT
-    // NOTE: campaigns 테이블에 sent_count 컬럼이 없으므로 target_count만 갱신합니다.
-    // 실제 발송 성공 건수를 DB에도 남기고 싶다면
-    // `ALTER TABLE campaigns ADD COLUMN sent_count INTEGER DEFAULT 0;` 로 컬럼을 추가한 뒤
-    // 아래 UPDATE에 sent_count = ? 를 다시 추가하세요.
     await db.execute({
       sql: `
-        UPDATE campaigns
-        SET status = 'SENT',
-            target_count = ?
-        WHERE campaign_id = ?
-      `,
-      args: [target_count, campaign_id],
+    UPDATE campaigns
+    SET status = 'SENT',
+        target_count = ?,
+        sent_count = ?
+    WHERE campaign_id = ?
+  `,
+      args: [target_count, sent_count, campaign_id],
     });
 
     return NextResponse.json({
