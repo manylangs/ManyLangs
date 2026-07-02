@@ -478,7 +478,7 @@ export default function CampaignsPage() {
                           opacity: sending ? 0.5 : 1,
                         }}
                       >
-                        {sending ? "..." : "🧪 Test"}
+                        {sending ? "Sending..." : "📧 REAL SEND"}S
                       </button>
                     </td>
                     <td style={{ padding: "10px 14px", color: "#9ca3af", fontSize: 11, whiteSpace: "nowrap" }}>
