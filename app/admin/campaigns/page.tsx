@@ -256,8 +256,11 @@ export default function CampaignsPage() {
             }}
             style={selectStyle}
           >
+            <option value={ALL_VALUE}>{ALL_COUNTRY_LABEL}</option>
             {countries.map((c) => (
-              <option key={c}>{c}</option>
+              <option key={c} value={c}>
+                {c}
+              </option>
             ))}
           </select>
         </label>
@@ -273,8 +276,11 @@ export default function CampaignsPage() {
             }}
             style={selectStyle}
           >
+            <option value={ALL_VALUE}>{ALL_CITY_LABEL}</option>
             {cities.map((c) => (
-              <option key={c}>{c}</option>
+              <option key={c} value={c}>
+                {c}
+              </option>
             ))}
           </select>
         </label>
