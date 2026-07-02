@@ -40,6 +40,14 @@ export async function POST(req: NextRequest) {
     }
 
     const campaign = campResult.rows[0] as any;
+    await db.execute({
+      sql: `
+    UPDATE campaigns
+    SET status = 'SENDING'
+    WHERE campaign_id = ?
+  `,
+      args: [campaign_id],
+    });
 
     // value만 저장된다고 가정
     const country = campaign.country || "ALL";
@@ -71,7 +79,7 @@ export async function POST(req: NextRequest) {
       args.push(city);
     }
 
-    sql += ` LIMIT 1`;
+    // sql += ` LIMIT 1`;
 
     const targets = await db.execute({
       sql,
@@ -90,35 +98,39 @@ export async function POST(req: NextRequest) {
     console.log("country     :", country);
     console.log("city        :", city);
     console.log("target_count:", target_count);
+    let sent_count = 0;
 
     for (const target of targets.rows as any[]) {
-      await sendEmail(
-        target.email,
-        campaign.subject,
-        campaign.body
-      );
+      try {
+        await sendEmail(
+          target.email,
+          campaign.subject,
+          campaign.body
+        );
 
-      const updateResult = await db.execute({
-        sql: `
-    UPDATE schools
-    SET campaign_status = 'SENT'
-    WHERE id = ?
-  `,
-        args: [target.id],
-      });
-
-      console.log("TARGET ID:", target.id);
-      console.log("UPDATE RESULT:", updateResult);
+        await db.execute({
+          sql: `
+      UPDATE schools
+      SET campaign_status = 'SENT'
+      WHERE id = ?
+    `,
+          args: [target.id],
+        });
+        sent_count++;
+      } catch (e) {
+        console.error("SEND FAILED:", target.email, e);
+      }
     }
 
     await db.execute({
       sql: `
-        UPDATE campaigns
-        SET status = 'SENT',
-            target_count = ?
-        WHERE campaign_id = ?
-      `,
-      args: [target_count, campaign_id],
+    UPDATE campaigns
+    SET status = 'SENT',
+        target_count = ?,
+        sent_count = ?
+    WHERE campaign_id = ?
+  `,
+      args: [target_count, sent_count, campaign_id],
     });
 
     return NextResponse.json({
