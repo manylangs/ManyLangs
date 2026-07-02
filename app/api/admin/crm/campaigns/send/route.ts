@@ -40,12 +40,14 @@ export async function POST(req: NextRequest) {
     }
 
     const campaign = campResult.rows[0] as any;
+
+    // DRAFT → SENDING
     await db.execute({
       sql: `
-    UPDATE campaigns
-    SET status = 'SENDING'
-    WHERE campaign_id = ?
-  `,
+        UPDATE campaigns
+        SET status = 'SENDING'
+        WHERE campaign_id = ?
+      `,
       args: [campaign_id],
     });
 
@@ -66,20 +68,16 @@ export async function POST(req: NextRequest) {
       AND email <> ''
       AND campaign_status = 'NEW'
     `;
-
     const args: any[] = [];
 
     if (country !== "ALL") {
       sql += ` AND country = ?`;
       args.push(country);
     }
-
     if (city !== "ALL") {
       sql += ` AND city = ?`;
       args.push(city);
     }
-
-    // sql += ` LIMIT 1`;
 
     const targets = await db.execute({
       sql,
@@ -98,39 +96,43 @@ export async function POST(req: NextRequest) {
     console.log("country     :", country);
     console.log("city        :", city);
     console.log("target_count:", target_count);
+
     let sent_count = 0;
 
+    // 대상이 없으면 굳이 SENDING 상태로 걸어둘 필요 없이 바로 SENT 처리
     for (const target of targets.rows as any[]) {
       try {
-        await sendEmail(
-          target.email,
-          campaign.subject,
-          campaign.body
-        );
+        await sendEmail(target.email, campaign.subject, campaign.body);
 
+        // 성공한 대상만 SENT로 변경
         await db.execute({
           sql: `
-      UPDATE schools
-      SET campaign_status = 'SENT'
-      WHERE id = ?
-    `,
+            UPDATE schools
+            SET campaign_status = 'SENT'
+            WHERE id = ?
+          `,
           args: [target.id],
         });
+
         sent_count++;
       } catch (e) {
         console.error("SEND FAILED:", target.email, e);
       }
     }
 
+    // SENDING → SENT
+    // NOTE: campaigns 테이블에 sent_count 컬럼이 없으므로 target_count만 갱신합니다.
+    // 실제 발송 성공 건수를 DB에도 남기고 싶다면
+    // `ALTER TABLE campaigns ADD COLUMN sent_count INTEGER DEFAULT 0;` 로 컬럼을 추가한 뒤
+    // 아래 UPDATE에 sent_count = ? 를 다시 추가하세요.
     await db.execute({
       sql: `
-    UPDATE campaigns
-    SET status = 'SENT',
-        target_count = ?,
-        sent_count = ?
-    WHERE campaign_id = ?
-  `,
-      args: [target_count, sent_count, campaign_id],
+        UPDATE campaigns
+        SET status = 'SENT',
+            target_count = ?
+        WHERE campaign_id = ?
+      `,
+      args: [target_count, campaign_id],
     });
 
     return NextResponse.json({
@@ -140,6 +142,7 @@ export async function POST(req: NextRequest) {
       country,
       city,
       target_count,
+      sent_count,
       sample: targets.rows.slice(0, 5).map((r: any) => ({
         name: r.school_name,
         email: r.email,
@@ -147,11 +150,10 @@ export async function POST(req: NextRequest) {
         city: r.city,
         status: r.campaign_status,
       })),
-      message: "Campaign processed successfully.",
+      message: `Campaign processed successfully. (${sent_count}/${target_count} sent)`,
     });
   } catch (err: any) {
     console.error("[CAMPAIGNS SEND]", err);
-
     return NextResponse.json(
       {
         error: err.message,

@@ -49,8 +49,10 @@ export default function CampaignsPage() {
   const [sentCount, setSentCount] = useState(0);
 
   // Send state
+  // NOTE: campaign_id 단위로 관리해야 특정 Campaign만 "Sending..." 상태가 됩니다.
+  // (기존에는 boolean 하나를 공유해서 모든 버튼이 동시에 Sending...으로 바뀌는 문제가 있었습니다.)
   const [sendResult, setSendResult] = useState<SendResult | null>(null);
-  const [sending, setSending] = useState(false);
+  const [sendingId, setSendingId] = useState<string | null>(null);
 
   const fetchCampaigns = async () => {
     try {
@@ -186,7 +188,10 @@ export default function CampaignsPage() {
   };
 
   const handleTestSend = async (campaign_id: string) => {
-    setSending(true);
+    // 이미 다른 Campaign이 발송 중이면 중복 실행 방지
+    if (sendingId !== null) return;
+
+    setSendingId(campaign_id);
     setSendResult(null);
     try {
       const res = await fetch("/api/admin/crm/campaigns/send", {
@@ -203,9 +208,10 @@ export default function CampaignsPage() {
     } catch (e: any) {
       setSendResult({ success: false, mode: "TEST", campaign_id, target_count: 0, sample: [], message: "", error: e.message });
     } finally {
-      setSending(false);
+      setSendingId(null);
     }
   };
+
   const handleReset = async () => {
     if (!confirm("현재 선택한 범위의 SENT를 READY로 되돌리시겠습니까?")) return;
 
@@ -234,6 +240,7 @@ export default function CampaignsPage() {
       alert(e.message);
     }
   };
+
   if (loading) return <div style={{ padding: 40, color: "#888" }}>Loading...</div>;
 
   return (
@@ -294,7 +301,7 @@ export default function CampaignsPage() {
         </button>
         <button
           onClick={handleReset}
-          disabled={sending || checking}
+          disabled={sendingId !== null || checking}
           style={{
             ...btnPrimary,
             marginTop: 18,
@@ -454,38 +461,51 @@ export default function CampaignsPage() {
                 </tr>
               </thead>
               <tbody>
-                {campaigns.map((c) => (
-                  <tr key={c.id} style={{ borderBottom: "1px solid #f0f0f0" }}>
-                    <td style={{ padding: "10px 14px", fontFamily: "monospace", fontSize: 12 }}>{c.campaign_id}</td>
-                    <td style={{ padding: "10px 14px", maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{c.subject}</td>
-                    <td style={{ padding: "10px 14px", color: "#6b7280" }}>{c.country || "—"}</td>
-                    <td style={{ padding: "10px 14px", color: "#6b7280" }}>{c.city || "—"}</td>
-                    <td style={{ padding: "10px 14px", textAlign: "center", fontWeight: 600 }}>{Number(c.target_count).toLocaleString()}</td>
-                    <td style={{ padding: "10px 14px" }}>
-                      <span style={{
-                        padding: "2px 8px", borderRadius: 4, fontSize: 11, fontWeight: 600,
-                        background: c.status === "READY" ? "#dcfce7" : "#f3f4f6",
-                        color: c.status === "READY" ? "#16a34a" : "#6b7280",
-                      }}>{c.status}</span>
-                    </td>
-                    <td style={{ padding: "10px 14px" }}>
-                      <button
-                        onClick={() => handleTestSend(c.campaign_id)}
-                        disabled={sending}
-                        style={{
-                          padding: "4px 12px", borderRadius: 6, border: "1px solid #d1d5db",
-                          background: "#fff", fontSize: 12, cursor: sending ? "not-allowed" : "pointer",
-                          opacity: sending ? 0.5 : 1,
-                        }}
-                      >
-                        {sending ? "Sending..." : "📧 REAL SEND"}S
-                      </button>
-                    </td>
-                    <td style={{ padding: "10px 14px", color: "#9ca3af", fontSize: 11, whiteSpace: "nowrap" }}>
-                      {new Date(c.created_at).toLocaleDateString("ko-KR")}
-                    </td>
-                  </tr>
-                ))}
+                {campaigns.map((c) => {
+                  const isSendingThis = sendingId === c.campaign_id;
+                  const isSendingAny = sendingId !== null;
+
+                  const statusColors: Record<string, { bg: string; fg: string }> = {
+                    DRAFT: { bg: "#f3f4f6", fg: "#6b7280" },
+                    READY: { bg: "#dcfce7", fg: "#16a34a" },
+                    SENDING: { bg: "#fef9c3", fg: "#ca8a04" },
+                    SENT: { bg: "#dbeafe", fg: "#2563eb" },
+                  };
+                  const statusStyle = statusColors[c.status] ?? statusColors.DRAFT;
+
+                  return (
+                    <tr key={c.id} style={{ borderBottom: "1px solid #f0f0f0" }}>
+                      <td style={{ padding: "10px 14px", fontFamily: "monospace", fontSize: 12 }}>{c.campaign_id}</td>
+                      <td style={{ padding: "10px 14px", maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{c.subject}</td>
+                      <td style={{ padding: "10px 14px", color: "#6b7280" }}>{c.country || "—"}</td>
+                      <td style={{ padding: "10px 14px", color: "#6b7280" }}>{c.city || "—"}</td>
+                      <td style={{ padding: "10px 14px", textAlign: "center", fontWeight: 600 }}>{Number(c.target_count).toLocaleString()}</td>
+                      <td style={{ padding: "10px 14px" }}>
+                        <span style={{
+                          padding: "2px 8px", borderRadius: 4, fontSize: 11, fontWeight: 600,
+                          background: statusStyle.bg,
+                          color: statusStyle.fg,
+                        }}>{c.status}</span>
+                      </td>
+                      <td style={{ padding: "10px 14px" }}>
+                        <button
+                          onClick={() => handleTestSend(c.campaign_id)}
+                          disabled={isSendingAny}
+                          style={{
+                            padding: "4px 12px", borderRadius: 6, border: "1px solid #d1d5db",
+                            background: "#fff", fontSize: 12, cursor: isSendingAny ? "not-allowed" : "pointer",
+                            opacity: isSendingAny ? 0.5 : 1,
+                          }}
+                        >
+                          {isSendingThis ? "Sending..." : "📧 REAL SEND"}
+                        </button>
+                      </td>
+                      <td style={{ padding: "10px 14px", color: "#9ca3af", fontSize: 11, whiteSpace: "nowrap" }}>
+                        {new Date(c.created_at).toLocaleDateString("ko-KR")}
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
