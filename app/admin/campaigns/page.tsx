@@ -206,7 +206,34 @@ export default function CampaignsPage() {
       setSending(false);
     }
   };
+  const handleReset = async () => {
+    if (!confirm("현재 선택한 범위의 SENT를 READY로 되돌리시겠습니까?")) return;
 
+    try {
+      const res = await fetch("/api/admin/crm/campaigns/reset", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          country,
+          city,
+        }),
+      });
+
+      const data = await res.json();
+
+      alert(`복구 완료 (${data.updated}건)`);
+
+      await fetchCampaigns();
+
+      if (hasChecked) {
+        await handleCheckTarget();
+      }
+    } catch (e: any) {
+      alert(e.message);
+    }
+  };
   if (loading) return <div style={{ padding: 40, color: "#888" }}>Loading...</div>;
 
   return (
@@ -258,6 +285,17 @@ export default function CampaignsPage() {
           style={{ ...btnPrimary, marginTop: 18, opacity: checking ? 0.6 : 1 }}
         >
           {checking ? "조회 중..." : "🔍 Check Target"}
+        </button>
+        <button
+          onClick={handleReset}
+          disabled={sending || checking}
+          style={{
+            ...btnPrimary,
+            marginTop: 18,
+            background: "#dc2626",
+          }}
+        >
+          ↩ Reset SENT
         </button>
       </div>
 
