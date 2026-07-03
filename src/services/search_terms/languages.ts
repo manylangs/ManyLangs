@@ -1,15 +1,73 @@
 export const COUNTRY_LANGUAGE_MAP: Record<string, string[]> = {
+  // Korea
   "South Korea": ["en", "ko"],
 
+  // Spanish-speaking
   "Argentina": ["en", "es"],
+  "Bolivia": ["en", "es"],
+  "Chile": ["en", "es"],
+  "Colombia": ["en", "es"],
+  "Ecuador": ["en", "es"],
+  "Paraguay": ["en", "es"],
+  "Peru": ["en", "es"],
+  "Uruguay": ["en", "es"],
+  "Venezuela": ["en", "es"],
   "Mexico": ["en", "es"],
+  "Guatemala": ["en", "es"],
+  "El Salvador": ["en", "es"],
+  "Honduras": ["en", "es"],
+  "Nicaragua": ["en", "es"],
+  "Costa Rica": ["en", "es"],
+  "Panama": ["en", "es"],
+  "Cuba": ["en", "es"],
+  "Dominican Republic": ["en", "es"],
+  "Puerto Rico": ["en", "es"],
   "Spain": ["en", "es"],
 
+  // Portuguese-speaking
   "Brazil": ["en", "pt"],
+  "Portugal": ["en", "pt"],
+  "Angola": ["en", "pt"],
+  "Mozambique": ["en", "pt"],
+  "Cape Verde": ["en", "pt"],
+  "Guinea-Bissau": ["en", "pt"],
+  "Sao Tome and Principe": ["en", "pt"],
+  "Timor-Leste": ["en", "pt"],
 
+  // French-speaking
   "France": ["en", "fr"],
+  "Belgium": ["en", "fr"],
+  "Switzerland": ["en", "fr"],
+  "Luxembourg": ["en", "fr"],
+  "Monaco": ["en", "fr"],
+  "Canada": ["en", "fr"],
+  "Haiti": ["en", "fr"],
+  "Benin": ["en", "fr"],
+  "Burkina Faso": ["en", "fr"],
+  "Burundi": ["en", "fr"],
+  "Cameroon": ["en", "fr"],
+  "Central African Republic": ["en", "fr"],
+  "Chad": ["en", "fr"],
+  "Comoros": ["en", "fr"],
+  "Republic of the Congo": ["en", "fr"],
+  "Democratic Republic of the Congo": ["en", "fr"],
+  "Cote d'Ivoire": ["en", "fr"],
+  "Djibouti": ["en", "fr"],
+  "Gabon": ["en", "fr"],
+  "Guinea": ["en", "fr"],
+  "Madagascar": ["en", "fr"],
+  "Mali": ["en", "fr"],
+  "Niger": ["en", "fr"],
+  "Rwanda": ["en", "fr"],
+  "Senegal": ["en", "fr"],
+  "Seychelles": ["en", "fr"],
+  "Togo": ["en", "fr"],
+  "Vanuatu": ["en", "fr"],
 
+  // Multi-language
+  "Equatorial Guinea": ["en", "es", "pt", "fr"],
+
+  // Future
   "Germany": ["en", "de"],
-
   "Japan": ["en", "ja"],
 };
