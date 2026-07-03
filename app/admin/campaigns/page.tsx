@@ -10,6 +10,11 @@ interface Campaign {
   status: string;
   target_count: number;
   created_at: string;
+  sent_count?: number;
+  opened_count?: number;
+  open_rate?: number;
+  clicked_count?: number;
+  click_rate?: number;
 }
 
 interface SendResult {
@@ -25,44 +30,81 @@ interface SendResult {
 const ALL_VALUE = "ALL";
 const ALL_COUNTRY_LABEL = "All Countries";
 const ALL_CITY_LABEL = "All Cities";
+const PAGE_SIZE = 5;
+const MAX_PAGE_BUTTONS = 5;
+
+// 현재 페이지 기준 최대 MAX_PAGE_BUTTONS개의 페이지 번호만 계산
+function getPageWindow(current: number, total: number): number[] {
+  const start = Math.max(
+    1,
+    Math.min(current - Math.floor(MAX_PAGE_BUTTONS / 2), total - MAX_PAGE_BUTTONS + 1)
+  );
+  const end = Math.min(total, start + MAX_PAGE_BUTTONS - 1);
+  return Array.from({ length: end - start + 1 }, (_, i) => start + i);
+}
 
 export default function CampaignsPage() {
   const [campaigns, setCampaigns] = useState<Campaign[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // Scope (country / city) — same pattern as Leads page
+  // 국가 목록은 공용 (한 번만 로드)
   const [countries, setCountries] = useState<string[]>([]);
-  const [cities, setCities] = useState<string[]>([]);
+
+  // ── History / KPI scope (상단 필터 전용) ──────────────────────────────
+  const [historyCountry, setHistoryCountry] = useState(ALL_VALUE);
+  const [historyCity, setHistoryCity] = useState(ALL_VALUE);
+  const [historyCities, setHistoryCities] = useState<string[]>([]);
+
+  // ── Create Campaign scope (폼 전용) ───────────────────────────────────
+  const [formCountry, setFormCountry] = useState(ALL_VALUE);
+  const [formCity, setFormCity] = useState(ALL_VALUE);
+  const [formCities, setFormCities] = useState<string[]>([]);
 
   // Form state
   const [subject, setSubject] = useState("");
   const [emailBody, setEmailBody] = useState("");
-  const [country, setCountry] = useState(ALL_VALUE);
-  const [city, setCity] = useState(ALL_VALUE);
   const [creating, setCreating] = useState(false);
   const [createMsg, setCreateMsg] = useState("");
 
-  // Target check state
+  // Target check state (상단 필터 scope 기준)
   const [checking, setChecking] = useState(false);
   const [hasChecked, setHasChecked] = useState(false);
   const [readyCount, setReadyCount] = useState(0);
   const [sentCount, setSentCount] = useState(0);
 
+  // Pagination state
+  const [page, setPage] = useState(1);
+  const [totalCampaigns, setTotalCampaigns] = useState(0);
+  const totalPages = Math.max(1, Math.ceil(totalCampaigns / PAGE_SIZE));
+  const pageWindow = getPageWindow(page, totalPages);
+
   // Send state
   // NOTE: campaign_id 단위로 관리해야 특정 Campaign만 "Sending..." 상태가 됩니다.
-  // (기존에는 boolean 하나를 공유해서 모든 버튼이 동시에 Sending...으로 바뀌는 문제가 있었습니다.)
   const [sendResult, setSendResult] = useState<SendResult | null>(null);
   const [sendingId, setSendingId] = useState<string | null>(null);
 
-  const fetchCampaigns = async () => {
+  const fetchCampaigns = async (
+    targetCountry: string = historyCountry,
+    targetCity: string = historyCity,
+    targetPage: number = page
+  ) => {
     try {
-      const res = await fetch("/api/admin/crm/campaigns", {
-        cache: "no-store",
-      });
+      const params = new URLSearchParams();
+
+      if (targetCountry !== ALL_VALUE) params.set("country", targetCountry);
+      if (targetCity !== ALL_VALUE) params.set("city", targetCity);
+      params.set("page", String(targetPage));
+      params.set("pageSize", String(PAGE_SIZE));
+
+      const res = await fetch(
+        `/api/admin/crm/campaigns?${params.toString()}`,
+        { cache: "no-store" }
+      );
 
       const data = await res.json();
 
       setCampaigns(data.campaigns ?? []);
+      setTotalCampaigns(data.pagination?.total ?? 0);
 
       // KPI도 함께 갱신
       setReadyCount(data.kpi?.ready_to_send ?? 0);
@@ -82,29 +124,54 @@ export default function CampaignsPage() {
     }
   };
 
-  const fetchCities = async (selectedCountry: string) => {
+  // History / Form 각각의 city 목록을 독립적으로 로드
+  const fetchCities = async (
+    selectedCountry: string,
+    setter: (cities: string[]) => void
+  ) => {
     if (selectedCountry === ALL_VALUE) {
-      setCities([]);
+      setter([]);
       return;
     }
     try {
       const params = new URLSearchParams({ country: selectedCountry });
       const res = await fetch(`/api/admin/crm/locations?${params.toString()}`);
       const data = await res.json();
-      setCities(data.cities || []);
+      setter(data.cities || []);
     } catch (e) {
       console.error(e);
     }
   };
 
   useEffect(() => {
-    fetchCampaigns();
     fetchCountries();
   }, []);
 
+  // History Country 변경 시 Campaign History 즉시 필터링 (1페이지로 리셋)
   useEffect(() => {
-    fetchCities(country);
-  }, [country]);
+    setPage(1);
+    fetchCampaigns(historyCountry, historyCity, 1);
+    fetchCities(historyCountry, setHistoryCities);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [historyCountry]);
+
+  useEffect(() => {
+    setPage(1);
+    fetchCampaigns(historyCountry, historyCity, 1);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [historyCity]);
+
+  // Form Country 변경 시 폼 전용 city 목록만 갱신 (History에 영향 없음)
+  useEffect(() => {
+    fetchCities(formCountry, setFormCities);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [formCountry]);
+
+  // 페이지 변경 시
+  useEffect(() => {
+    fetchCampaigns(historyCountry, historyCity, page);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [page]);
 
   const handleCheckTarget = async () => {
     setChecking(true);
@@ -113,12 +180,12 @@ export default function CampaignsPage() {
     try {
       const params = new URLSearchParams();
 
-      if (country !== "ALL") {
-        params.set("country", country);
+      if (historyCountry !== ALL_VALUE) {
+        params.set("country", historyCountry);
       }
 
-      if (city !== "ALL") {
-        params.set("city", city);
+      if (historyCity !== ALL_VALUE) {
+        params.set("city", historyCity);
       }
 
       const url =
@@ -165,8 +232,8 @@ export default function CampaignsPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          country,
-          city,
+          country: formCountry,
+          city: formCity,
           subject,
           body: emailBody,
         }),
@@ -176,7 +243,9 @@ export default function CampaignsPage() {
         setCreateMsg(`✅ 생성 완료 — ${data.campaign_id} (대상: ${data.target_count}건)`);
         setSubject("");
         setEmailBody("");
-        fetchCampaigns();
+        setPage(1);
+        // History는 History scope 기준으로 갱신
+        fetchCampaigns(historyCountry, historyCity, 1);
       } else {
         setCreateMsg(`❌ ${data.error}`);
       }
@@ -204,7 +273,7 @@ export default function CampaignsPage() {
       setSendResult(data);
 
       // Campaign History + READY/SENT KPI 갱신
-      await fetchCampaigns();
+      await fetchCampaigns(historyCountry, historyCity, page);
     } catch (e: any) {
       setSendResult({ success: false, mode: "TEST", campaign_id, target_count: 0, sample: [], message: "", error: e.message });
     } finally {
@@ -222,8 +291,8 @@ export default function CampaignsPage() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          country,
-          city,
+          country: historyCountry,
+          city: historyCity,
         }),
       });
 
@@ -231,7 +300,7 @@ export default function CampaignsPage() {
 
       alert(`복구 완료 (${data.updated}건)`);
 
-      await fetchCampaigns();
+      await fetchCampaigns(historyCountry, historyCity, page);
 
       if (hasChecked) {
         await handleCheckTarget();
@@ -244,21 +313,21 @@ export default function CampaignsPage() {
   if (loading) return <div style={{ padding: 40, color: "#888" }}>Loading...</div>;
 
   return (
-    <div style={{ padding: 40, maxWidth: 960, margin: "0 auto" }}>
+    <div style={{ padding: 40, maxWidth: 1080, margin: "0 auto" }}>
       <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 6 }}>📧 Campaigns</h1>
       <p style={{ color: "#666", fontSize: 13, marginBottom: 32 }}>
         SES 연결 완료. TEST SEND는 실제 이메일을 발송합니다.
       </p>
 
-      {/* Scope selector */}
+      {/* History scope selector — Campaign History / KPI / Reset 전용 필터 */}
       <div style={{ display: "flex", gap: 12, marginBottom: 20, flexWrap: "wrap", alignItems: "center" }}>
         <label style={labelStyle}>
           Country
           <select
-            value={country}
+            value={historyCountry}
             onChange={(e) => {
-              setCountry(e.target.value);
-              setCity(ALL_VALUE);
+              setHistoryCountry(e.target.value);
+              setHistoryCity(ALL_VALUE);
               setHasChecked(false);
             }}
             style={selectStyle}
@@ -275,16 +344,16 @@ export default function CampaignsPage() {
         <label style={labelStyle}>
           City
           <select
-            value={city}
-            disabled={country === ALL_VALUE}
+            value={historyCity}
+            disabled={historyCountry === ALL_VALUE}
             onChange={(e) => {
-              setCity(e.target.value);
+              setHistoryCity(e.target.value);
               setHasChecked(false);
             }}
             style={selectStyle}
           >
             <option value={ALL_VALUE}>{ALL_CITY_LABEL}</option>
-            {cities.map((c) => (
+            {historyCities.map((c) => (
               <option key={c} value={c}>
                 {c}
               </option>
@@ -333,7 +402,7 @@ export default function CampaignsPage() {
         </p>
       )}
 
-      {/* Create Campaign Form */}
+      {/* Create Campaign Form — 폼 전용 Country/City (History 필터와 독립) */}
       <div style={{ border: "1px solid #e5e7eb", borderRadius: 12, padding: 28, marginBottom: 40 }}>
         <h2 style={{ fontSize: 16, fontWeight: 600, marginBottom: 20 }}>새 Campaign 생성</h2>
 
@@ -341,11 +410,10 @@ export default function CampaignsPage() {
           <label style={labelStyle}>
             Country
             <select
-              value={country}
+              value={formCountry}
               onChange={(e) => {
-                setCountry(e.target.value);
-                setCity(ALL_VALUE);
-                setHasChecked(false);
+                setFormCountry(e.target.value);
+                setFormCity(ALL_VALUE);
               }}
               style={selectStyle}
             >
@@ -361,16 +429,13 @@ export default function CampaignsPage() {
           <label style={labelStyle}>
             City
             <select
-              value={city}
-              disabled={country === ALL_VALUE}
-              onChange={(e) => {
-                setCity(e.target.value);
-                setHasChecked(false);
-              }}
+              value={formCity}
+              disabled={formCountry === ALL_VALUE}
+              onChange={(e) => setFormCity(e.target.value)}
               style={selectStyle}
             >
               <option value={ALL_VALUE}>{ALL_CITY_LABEL}</option>
-              {cities.map((c) => (
+              {formCities.map((c) => (
                 <option key={c} value={c}>
                   {c}
                 </option>
@@ -449,70 +514,135 @@ export default function CampaignsPage() {
       <div>
         <h2 style={{ fontSize: 16, fontWeight: 600, marginBottom: 14 }}>Campaign History</h2>
         {campaigns.length === 0 ? (
-          <div style={{ color: "#9ca3af", fontSize: 13 }}>아직 생성된 Campaign이 없습니다.</div>
+          <div style={{ color: "#9ca3af", fontSize: 13 }}>조건에 맞는 Campaign이 없습니다.</div>
         ) : (
-          <div style={{ overflowX: "auto" }}>
-            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
-              <thead>
-                <tr style={{ background: "#f3f4f6", borderBottom: "2px solid #e5e7eb" }}>
-                  {["Campaign ID", "Subject", "Country", "City", "대상 수", "Status", "Test Send", "생성일"].map((h) => (
-                    <th key={h} style={{ padding: "10px 14px", textAlign: "left", fontWeight: 600, whiteSpace: "nowrap" }}>{h}</th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {campaigns.map((c) => {
-                  const isSendingThis = sendingId === c.campaign_id;
-                  const isSendingAny = sendingId !== null;
+          <>
+            <div style={{ overflowX: "auto" }}>
+              <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
+                <thead>
+                  <tr style={{ background: "#f3f4f6", borderBottom: "2px solid #e5e7eb" }}>
+                    {["Campaign ID", "Subject", "Country", "City", "대상 수", "Sent", "Opened", "Open %", "Clicked", "Click %", "Status", "Test Send", "생성일"].map((h) => (
+                      <th key={h} style={{ padding: "10px 14px", textAlign: "left", fontWeight: 600, whiteSpace: "nowrap" }}>{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {campaigns.map((c) => {
+                    const isSendingThis = sendingId === c.campaign_id;
+                    const isSendingAny = sendingId !== null;
 
-                  const statusColors: Record<string, { bg: string; fg: string }> = {
-                    DRAFT: { bg: "#f3f4f6", fg: "#6b7280" },
-                    READY: { bg: "#dcfce7", fg: "#16a34a" },
-                    SENDING: { bg: "#fef9c3", fg: "#ca8a04" },
-                    SENT: { bg: "#dbeafe", fg: "#2563eb" },
-                  };
-                  const statusStyle = statusColors[c.status] ?? statusColors.DRAFT;
+                    const statusColors: Record<string, { bg: string; fg: string }> = {
+                      DRAFT: { bg: "#f3f4f6", fg: "#6b7280" },
+                      READY: { bg: "#dcfce7", fg: "#16a34a" },
+                      SENDING: { bg: "#fef9c3", fg: "#ca8a04" },
+                      SENT: { bg: "#dbeafe", fg: "#2563eb" },
+                    };
+                    const statusStyle = statusColors[c.status] ?? statusColors.DRAFT;
 
-                  return (
-                    <tr key={c.id} style={{ borderBottom: "1px solid #f0f0f0" }}>
-                      <td style={{ padding: "10px 14px", fontFamily: "monospace", fontSize: 12 }}>{c.campaign_id}</td>
-                      <td style={{ padding: "10px 14px", maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{c.subject}</td>
-                      <td style={{ padding: "10px 14px", color: "#6b7280" }}>{c.country || "—"}</td>
-                      <td style={{ padding: "10px 14px", color: "#6b7280" }}>{c.city || "—"}</td>
-                      <td style={{ padding: "10px 14px", textAlign: "center", fontWeight: 600 }}>{Number(c.target_count).toLocaleString()}</td>
-                      <td style={{ padding: "10px 14px" }}>
-                        <span style={{
-                          padding: "2px 8px", borderRadius: 4, fontSize: 11, fontWeight: 600,
-                          background: statusStyle.bg,
-                          color: statusStyle.fg,
-                        }}>{c.status}</span>
-                      </td>
-                      <td style={{ padding: "10px 14px" }}>
-                        <button
-                          onClick={() => handleTestSend(c.campaign_id)}
-                          disabled={isSendingAny}
-                          style={{
-                            padding: "4px 12px", borderRadius: 6, border: "1px solid #d1d5db",
-                            background: "#fff", fontSize: 12, cursor: isSendingAny ? "not-allowed" : "pointer",
-                            opacity: isSendingAny ? 0.5 : 1,
-                          }}
-                        >
-                          {isSendingThis
-                            ? "Sending..."
-                            : c.status === "DRAFT"
-                              ? "🧪 Test"
-                              : "📧 REAL SEND"}
-                        </button>
-                      </td>
-                      <td style={{ padding: "10px 14px", color: "#9ca3af", fontSize: 11, whiteSpace: "nowrap" }}>
-                        {new Date(c.created_at).toLocaleDateString("ko-KR")}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
+                    return (
+                      <tr key={c.id} style={{ borderBottom: "1px solid #f0f0f0" }}>
+                        <td style={{ padding: "10px 14px", fontFamily: "monospace", fontSize: 12 }}>{c.campaign_id}</td>
+                        <td style={{ padding: "10px 14px", maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{c.subject}</td>
+                        <td style={{ padding: "10px 14px", color: "#6b7280" }}>{c.country || "—"}</td>
+                        <td style={{ padding: "10px 14px", color: "#6b7280" }}>{c.city || "—"}</td>
+                        <td style={{ padding: "10px 14px", textAlign: "center", fontWeight: 600 }}>{Number(c.target_count).toLocaleString()}</td>
+                        <td style={{ padding: "10px 14px", textAlign: "center" }}>{Number(c.sent_count ?? 0).toLocaleString()}</td>
+                        <td style={{ padding: "10px 14px", textAlign: "center" }}>{Number(c.opened_count ?? 0).toLocaleString()}</td>
+                        <td style={{ padding: "10px 14px", textAlign: "center", color: "#16a34a", fontWeight: 600 }}>{(c.open_rate ?? 0).toFixed(1)}%</td>
+                        <td style={{ padding: "10px 14px", textAlign: "center" }}>{Number(c.clicked_count ?? 0).toLocaleString()}</td>
+                        <td style={{ padding: "10px 14px", textAlign: "center", color: "#2563eb", fontWeight: 600 }}>{(c.click_rate ?? 0).toFixed(1)}%</td>
+                        <td style={{ padding: "10px 14px" }}>
+                          <span style={{
+                            padding: "2px 8px", borderRadius: 4, fontSize: 11, fontWeight: 600,
+                            background: statusStyle.bg,
+                            color: statusStyle.fg,
+                          }}>{c.status}</span>
+                        </td>
+                        <td style={{ padding: "10px 14px" }}>
+                          <button
+                            onClick={() => handleTestSend(c.campaign_id)}
+                            disabled={isSendingAny}
+                            style={{
+                              padding: "4px 12px", borderRadius: 6, border: "1px solid #d1d5db",
+                              background: "#fff", fontSize: 12, cursor: isSendingAny ? "not-allowed" : "pointer",
+                              opacity: isSendingAny ? 0.5 : 1,
+                            }}
+                          >
+                            {isSendingThis
+                              ? "Sending..."
+                              : c.status === "DRAFT"
+                                ? "🧪 Test"
+                                : "📧 REAL SEND"}
+                          </button>
+                        </td>
+                        <td style={{ padding: "10px 14px", color: "#9ca3af", fontSize: 11, whiteSpace: "nowrap" }}>
+                          {new Date(c.created_at).toLocaleDateString("ko-KR")}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+
+            {/* Pagination — 현재 페이지 기준 최대 5개 번호만 표시 */}
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 16, flexWrap: "wrap", gap: 12 }}>
+              <div style={{ fontSize: 12, color: "#6b7280" }}>
+                Showing {(page - 1) * PAGE_SIZE + 1}–{Math.min(page * PAGE_SIZE, totalCampaigns)} of {totalCampaigns} campaigns
+              </div>
+              <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
+                <button
+                  onClick={() => setPage((p) => Math.max(1, p - 1))}
+                  disabled={page <= 1}
+                  style={pageBtnStyle(page <= 1)}
+                >
+                  &lt; Prev
+                </button>
+
+                {pageWindow[0] > 1 && (
+                  <>
+                    <button onClick={() => setPage(1)} style={pageBtnStyle(false)}>1</button>
+                    {pageWindow[0] > 2 && (
+                      <span style={{ fontSize: 12, color: "#9ca3af", padding: "0 2px" }}>…</span>
+                    )}
+                  </>
+                )}
+
+                {pageWindow.map((p) => (
+                  <button
+                    key={p}
+                    onClick={() => setPage(p)}
+                    style={{
+                      ...pageBtnStyle(false),
+                      background: p === page ? "#111" : "#fff",
+                      color: p === page ? "#fff" : "#111",
+                    }}
+                  >
+                    {p}
+                  </button>
+                ))}
+
+                {pageWindow[pageWindow.length - 1] < totalPages && (
+                  <>
+                    {pageWindow[pageWindow.length - 1] < totalPages - 1 && (
+                      <span style={{ fontSize: 12, color: "#9ca3af", padding: "0 2px" }}>…</span>
+                    )}
+                    <button onClick={() => setPage(totalPages)} style={pageBtnStyle(false)}>
+                      {totalPages}
+                    </button>
+                  </>
+                )}
+
+                <button
+                  onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+                  disabled={page >= totalPages}
+                  style={pageBtnStyle(page >= totalPages)}
+                >
+                  Next &gt;
+                </button>
+              </div>
+            </div>
+          </>
         )}
       </div>
     </div>
@@ -554,3 +684,13 @@ const btnPrimary: React.CSSProperties = {
   fontWeight: 600,
   cursor: "pointer",
 };
+
+const pageBtnStyle = (disabled: boolean): React.CSSProperties => ({
+  padding: "4px 10px",
+  borderRadius: 6,
+  border: "1px solid #d1d5db",
+  background: "#fff",
+  fontSize: 12,
+  cursor: disabled ? "not-allowed" : "pointer",
+  opacity: disabled ? 0.4 : 1,
+});

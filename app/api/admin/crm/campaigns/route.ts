@@ -8,12 +8,39 @@ function getDb() {
   });
 }
 
-// GET — KPI + Campaign History
-export async function GET() {
+// GET — KPI + Campaign History (filterable + paginated)
+export async function GET(req: NextRequest) {
   try {
     const db = getDb();
+    const { searchParams } = new URL(req.url);
 
-    const [statusRows, campaignRows] = await Promise.all([
+    const country = searchParams.get("country") || "ALL";
+    const city = searchParams.get("city") || "ALL";
+    const page = Math.max(1, Number(searchParams.get("page") || "1"));
+    const pageSize = Math.max(
+      1,
+      Number(searchParams.get("pageSize") || "5")
+    );
+    const offset = (page - 1) * pageSize;
+
+    // Campaign History 필터 (country / city)
+    const filters: string[] = [];
+    const filterArgs: (string | number)[] = [];
+
+    if (country !== "ALL") {
+      filters.push("c.country = ?");
+      filterArgs.push(country);
+    }
+
+    if (city !== "ALL") {
+      filters.push("c.city = ?");
+      filterArgs.push(city);
+    }
+
+    const whereClause =
+      filters.length > 0 ? `WHERE ${filters.join(" AND ")}` : "";
+
+    const [statusRows, countRows, campaignRows] = await Promise.all([
       db.execute(`
         SELECT campaign_status, COUNT(*) as count
         FROM schools
@@ -22,12 +49,50 @@ export async function GET() {
         GROUP BY campaign_status
       `),
 
-      db.execute(`
-        SELECT *
-        FROM campaigns
-        ORDER BY created_at DESC
-        LIMIT 50
-      `),
+      // 필터 적용된 총 개수 (페이지네이션용)
+      db.execute({
+        sql: `
+          SELECT COUNT(*) as total
+          FROM campaigns c
+          ${whereClause}
+        `,
+        args: filterArgs,
+      }),
+
+      db.execute({
+        sql: `
+          SELECT
+            c.*,
+
+            COALESCE(COUNT(t.tracking_id), 0) AS sent_count,
+
+            COALESCE(SUM(
+              CASE WHEN t.open_count > 0 THEN 1 ELSE 0 END
+            ), 0) AS opened_count,
+
+            COALESCE(SUM(t.open_count), 0) AS total_opens,
+
+            COALESCE(SUM(
+              CASE WHEN t.click_count > 0 THEN 1 ELSE 0 END
+            ), 0) AS clicked_count,
+
+            COALESCE(SUM(t.click_count), 0) AS total_clicks
+
+          FROM campaigns c
+
+          LEFT JOIN email_tracking t
+          ON c.campaign_id = t.campaign_id
+
+          ${whereClause}
+
+          GROUP BY c.campaign_id
+
+          ORDER BY c.created_at DESC
+
+          LIMIT ? OFFSET ?
+        `,
+        args: [...filterArgs, pageSize, offset],
+      }),
     ]);
 
     const statusMap: Record<string, number> = {};
@@ -36,6 +101,26 @@ export async function GET() {
       const r = row as any;
       statusMap[r.campaign_status] = Number(r.count);
     }
+
+    const total = Number((countRows.rows[0] as any)?.total ?? 0);
+
+    const campaigns = campaignRows.rows.map((row: any) => {
+      const sent = Number(row.sent_count ?? 0);
+      const opened = Number(row.opened_count ?? 0);
+      const clicked = Number(row.clicked_count ?? 0);
+
+      return {
+        ...row,
+        open_rate:
+          sent > 0
+            ? Math.round((opened / sent) * 1000) / 10
+            : 0,
+        click_rate:
+          sent > 0
+            ? Math.round((clicked / sent) * 1000) / 10
+            : 0,
+      };
+    });
 
     console.log("===== CAMPAIGN KPI =====");
     console.log("NEW :", statusMap["NEW"] ?? 0);
@@ -48,7 +133,14 @@ export async function GET() {
         sent: statusMap["SENT"] ?? 0,
       },
 
-      campaigns: campaignRows.rows,
+      campaigns,
+
+      pagination: {
+        page,
+        pageSize,
+        total,
+        totalPages: Math.max(1, Math.ceil(total / pageSize)),
+      },
     });
   } catch (err: any) {
     console.error("[CAMPAIGNS GET]", err);
@@ -85,6 +177,7 @@ export async function POST(req: NextRequest) {
         city === "ALL"
         ? "ALL"
         : city;
+
     if (!subject || !emailBody) {
       return NextResponse.json(
         {
@@ -128,8 +221,7 @@ export async function POST(req: NextRequest) {
       });
 
     const target_count = Number(
-      (countResult.rows[0] as any)
-        .count ?? 0
+      (countResult.rows[0] as any).count ?? 0
     );
 
     await db.execute({
