@@ -52,7 +52,6 @@ export async function POST(req: NextRequest) {
       args: [campaign_id],
     });
 
-    // value만 저장된다고 가정
     const country = campaign.country || "ALL";
     const city = campaign.city || "ALL";
 
@@ -66,28 +65,32 @@ export async function POST(req: NextRequest) {
         campaign_status
       FROM schools
       WHERE email IS NOT NULL
-      AND email <> ''
-      AND campaign_status = 'NEW'
+        AND email <> ''
+        AND campaign_status = 'NEW'
     `;
+
     const args: any[] = [];
 
     if (country !== "ALL") {
       sql += ` AND country = ?`;
       args.push(country);
     }
+
     if (city !== "ALL") {
       sql += ` AND city = ?`;
       args.push(city);
     }
 
+    // 운영 모드 : 최대 5,000건 발송
+    sql += `
+      ORDER BY id ASC
+      LIMIT 5000
+    `;
+
     const targets = await db.execute({
       sql,
       args,
     });
-
-    console.log("SQL:", sql);
-    console.log("ARGS:", args);
-    console.log("ROWS:", targets.rows);
 
     const target_count = targets.rows.length;
 
@@ -100,22 +103,21 @@ export async function POST(req: NextRequest) {
 
     let sent_count = 0;
 
-    // 대상이 없으면 굳이 SENDING 상태로 걸어둘 필요 없이 바로 SENT 처리
     for (const target of targets.rows as any[]) {
       const trackingId = uuidv4();
-
       const now = new Date().toISOString();
+
       try {
         await db.execute({
           sql: `
-    INSERT INTO email_tracking (
-      tracking_id,
-      campaign_id,
-      email,
-      created_at
-    )
-    VALUES (?, ?, ?, ?)
-  `,
+            INSERT INTO email_tracking (
+              tracking_id,
+              campaign_id,
+              email,
+              created_at
+            )
+            VALUES (?, ?, ?, ?)
+          `,
           args: [
             trackingId,
             campaign_id,
@@ -123,6 +125,7 @@ export async function POST(req: NextRequest) {
             now,
           ],
         });
+
         await sendEmail(
           target.email,
           campaign.subject,
@@ -130,7 +133,6 @@ export async function POST(req: NextRequest) {
           trackingId
         );
 
-        // 성공한 대상만 SENT로 변경
         await db.execute({
           sql: `
             UPDATE schools
@@ -148,12 +150,12 @@ export async function POST(req: NextRequest) {
 
     await db.execute({
       sql: `
-    UPDATE campaigns
-    SET status = 'SENT',
-        target_count = ?,
-        sent_count = ?
-    WHERE campaign_id = ?
-  `,
+        UPDATE campaigns
+        SET status = 'SENT',
+            target_count = ?,
+            sent_count = ?
+        WHERE campaign_id = ?
+      `,
       args: [target_count, sent_count, campaign_id],
     });
 
@@ -176,6 +178,7 @@ export async function POST(req: NextRequest) {
     });
   } catch (err: any) {
     console.error("[CAMPAIGNS SEND]", err);
+
     return NextResponse.json(
       {
         error: err.message,

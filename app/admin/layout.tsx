@@ -84,9 +84,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
             <Link href="/admin/place-queue">⚙️ Place Queue</Link>
 
-            <Link href="/admin/leads">🎯 Leads</Link>
-
             <Link href="/admin/campaigns">📧 Campaigns</Link>
+
+            <Link href="/admin/leads">🎯 Leads</Link>
 
             <Link href="/admin/tracking">📊 Tracking</Link>
 
