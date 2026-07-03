@@ -3,6 +3,8 @@ import {
     SendEmailCommand,
 } from "@aws-sdk/client-sesv2";
 
+import { rewriteLinksForClickTracking } from "@/lib/tracking/click-links";
+
 export const ses = new SESv2Client({
     region: process.env.AWS_REGION!,
     credentials: {
@@ -17,6 +19,30 @@ export async function sendEmail(
     text: string,
     trackingId?: string
 ) {
+    // HTML 본문 생성
+    let bodyHtml = `
+<pre style="white-space:pre-wrap;font-family:inherit">${text}</pre>
+`;
+
+    // 클릭 트래킹 링크 치환 (HTML만)
+    if (trackingId) {
+        bodyHtml = rewriteLinksForClickTracking(bodyHtml, trackingId);
+    }
+
+    // Open Pixel 추가
+    const htmlBody = `
+<html>
+  <body style="font-family:Arial,sans-serif;line-height:1.6">
+    ${bodyHtml}
+
+    ${trackingId
+            ? `<img src="https://manylangs.studio/api/track/open?id=${trackingId}" width="1" height="1" style="display:none" />`
+            : ""
+        }
+  </body>
+</html>
+`;
+
     await ses.send(
         new SendEmailCommand({
             FromEmailAddress: process.env.SES_FROM_EMAIL!,
@@ -29,22 +55,12 @@ export async function sendEmail(
                         Data: subject,
                     },
                     Body: {
+                        // TEXT는 그대로 유지
                         Text: {
                             Data: text,
                         },
                         Html: {
-                            Data: `
-<html>
-  <body style="font-family:Arial,sans-serif;line-height:1.6">
-    <pre style="white-space:pre-wrap;font-family:inherit">${text}</pre>
-
-    ${trackingId
-                                    ? `<img src="https://manylangs.studio/api/track/open?id=${trackingId}" width="1" height="1" style="display:none" />`
-                                    : ""
-                                }
-  </body>
-</html>
-              `,
+                            Data: htmlBody,
                         },
                     },
                 },
