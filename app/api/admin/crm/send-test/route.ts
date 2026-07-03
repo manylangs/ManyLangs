@@ -1,10 +1,11 @@
 import { NextResponse } from "next/server";
 import { sendEmail } from "@/lib/aws/ses";
+import { v4 as uuidv4 } from "uuid";
 
 export async function GET() {
   try {
     await sendEmail(
-      "help.manylangs@gmail.com",
+      "rayforchatgpt1985@gmail.com",
       "ManyLangs SES Test",
       "SES connection test successful."
     );
