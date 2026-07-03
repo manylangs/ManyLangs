@@ -15,6 +15,13 @@ export default function CurriculumClient({ lang }: { lang: string }) {
   // URL we still render (falling back to English data) instead of
   // crashing.
   const safeLang = lang || "en";
+  const languageNames: Record<string, string> = {
+    kr: "Korean",
+    en: "English",
+    es: "Spanish",
+    fr: "French",
+    pt: "Portuguese",
+  };
   const seriesList = CURRICULUM[safeLang] || CURRICULUM["en"];
 
   const handleCopy = () => {
@@ -94,7 +101,7 @@ export default function CurriculumClient({ lang }: { lang: string }) {
               >
                 <div style={cardTop}>
                   <h3 style={cardTitle}>
-                    {s.icon} {s.name}
+                    {s.icon} {languageNames[safeLang]} {s.name}
                   </h3>
                   <span style={arrow}>›</span>
                 </div>

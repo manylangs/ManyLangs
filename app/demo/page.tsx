@@ -17,7 +17,13 @@ export default function DemoPage() {
   const [lang, setLang] = useState("en");
 
   const [copied, setCopied] = useState(false);
-
+  const languageNames: Record<string, string> = {
+    kr: "Korean",
+    en: "English",
+    es: "Spanish",
+    fr: "French",
+    pt: "Portuguese",
+  };
   const handleCopy = () => {
     copyLink(undefined, () => {
       setCopied(true);
@@ -109,7 +115,9 @@ export default function DemoPage() {
                 >
                   <div>
                     <h3 style={cardTitle}>
-                      {lang.toUpperCase()} {item.title}
+                      <h3 style={cardTitle}>
+                        {languageNames[lang] ?? lang} {item.title}
+                      </h3>
                     </h3>
                     <p style={cardMeta}>Beginner • A1</p>
                   </div>
