@@ -14,7 +14,7 @@ const demoData = [
 ];
 
 export default function DemoPage() {
-  const [lang, setLang] = useState("kr");
+  const [lang, setLang] = useState("en");
 
   const [copied, setCopied] = useState(false);
 
