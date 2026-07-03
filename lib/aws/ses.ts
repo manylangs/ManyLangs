@@ -14,7 +14,8 @@ export const ses = new SESv2Client({
 export async function sendEmail(
     to: string,
     subject: string,
-    text: string
+    text: string,
+    trackingId?: string
 ) {
     await ses.send(
         new SendEmailCommand({
@@ -30,6 +31,20 @@ export async function sendEmail(
                     Body: {
                         Text: {
                             Data: text,
+                        },
+                        Html: {
+                            Data: `
+<html>
+  <body style="font-family:Arial,sans-serif;line-height:1.6">
+    <pre style="white-space:pre-wrap;font-family:inherit">${text}</pre>
+
+    ${trackingId
+                                    ? `<img src="https://manylangs.studio/api/track/open?id=${trackingId}" width="1" height="1" style="display:none" />`
+                                    : ""
+                                }
+  </body>
+</html>
+              `,
                         },
                     },
                 },

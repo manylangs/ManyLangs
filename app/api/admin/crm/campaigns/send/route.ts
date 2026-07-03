@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@libsql/client";
 import { sendEmail } from "@/lib/aws/ses";
+import { v4 as uuidv4 } from "uuid";
 
 function getDb() {
   return createClient({
@@ -101,8 +102,33 @@ export async function POST(req: NextRequest) {
 
     // 대상이 없으면 굳이 SENDING 상태로 걸어둘 필요 없이 바로 SENT 처리
     for (const target of targets.rows as any[]) {
+      const trackingId = uuidv4();
+
+      const now = new Date().toISOString();
       try {
-        await sendEmail(target.email, campaign.subject, campaign.body);
+        await db.execute({
+          sql: `
+    INSERT INTO email_tracking (
+      tracking_id,
+      campaign_id,
+      email,
+      created_at
+    )
+    VALUES (?, ?, ?, ?)
+  `,
+          args: [
+            trackingId,
+            campaign_id,
+            target.email,
+            now,
+          ],
+        });
+        await sendEmail(
+          target.email,
+          campaign.subject,
+          campaign.body,
+          trackingId
+        );
 
         // 성공한 대상만 SENT로 변경
         await db.execute({
