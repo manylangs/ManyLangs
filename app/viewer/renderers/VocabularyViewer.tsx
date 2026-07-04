@@ -36,7 +36,9 @@ const buttonStyle = (active: boolean): React.CSSProperties => ({
 });
 type VocaBlock = {
   word: Record<string, string>;
+  explanation?: Record<string, string>;
   examples?: Record<string, string>[];
+  frequency_stars?: string;
 };
 export default function VocabularyViewer({
   lang,
@@ -175,6 +177,8 @@ export default function VocabularyViewer({
             chapter={chapter}
           />
 
+          <div style={{ height: 30 }} />
+
           {/* Study Lang */}
           <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
             {ALL_STUDY_LANGS
@@ -188,6 +192,31 @@ export default function VocabularyViewer({
                   {l.toUpperCase()}
                 </button>
               ))}
+          </div>
+
+          {/* Levels */}
+
+          <div
+            style={{
+              display: "flex",
+              gap: 8,
+              marginTop: 16,
+              marginBottom: 16,
+              flexWrap: "wrap",
+            }}
+          >
+            {LEVELS.map((lv) => (
+              <Link
+                key={lv}
+                href={`/viewer/${targetLang}/voca/${lv}/001`}
+                style={{
+                  ...buttonStyle(lv === level),
+                  textDecoration: "none",
+                }}
+              >
+                {lv.toUpperCase()}
+              </Link>
+            ))}
           </div>
 
           {/* Prev Next */}
@@ -273,14 +302,65 @@ export default function VocabularyViewer({
                       </div>
                     )}
 
+                    {block.frequency_stars && (
+                      <div style={{ margin: "6px 0 16px", color: "#f5a623" }}>
+                        {block.frequency_stars}
+                      </div>
+                    )}
+
+                    {block.explanation && (
+                      <div style={{ marginTop: 16, marginBottom: 20 }}>
+                        <div style={{ fontWeight: 700 }}>
+                          Explanation
+                        </div>
+
+                        {showTargetText && block.explanation?.target && (
+                          <div
+                            onClick={() =>
+                              void handleSpeak(
+                                block.explanation?.target ?? "",
+                                `expl-${idx}`
+                              )
+                            }
+                            style={{
+                              ...targetStyle,
+                              background:
+                                playingKey === `expl-${idx}`
+                                  ? "#f3f4f6"
+                                  : "transparent",
+                            }}
+                          >
+                            {block.explanation.target}
+                          </div>
+                        )}
+
+                        {block.explanation?.[studyLang] && (
+                          <div style={{ color: "#555" }}>
+                            {block.explanation[studyLang]}
+                          </div>
+                        )}
+                      </div>
+                    )}
+
                     <div style={{ marginTop: 16 }}>
+                      <div style={{ fontWeight: 700 }}>
+                        Examples
+                      </div>
+
                       {block.examples?.map((ex: any, i: number) => {
                         const exKey = `voca-${idx}-${i}`;
                         const exTarget = ex?.target ?? "";
                         const exStudy = ex?.[studyLang] ?? "";
 
                         return (
-                          <div key={i}>
+                          <div
+                            key={i}
+                            style={{
+                              borderBottom: "1px solid #eee",
+                              marginBottom: 12,
+                              paddingBottom: 12,
+                            }}
+                          >
                             {showTargetText && exTarget && (
                               <div
                                 onClick={() => void handleSpeak(exTarget, exKey)}
@@ -296,7 +376,11 @@ export default function VocabularyViewer({
                               </div>
                             )}
 
-                            {exStudy && <div>{exStudy}</div>}
+                            {exStudy && (
+                              <div style={{ color: "#555" }}>
+                                {exStudy}
+                              </div>
+                            )}
                           </div>
                         );
                       })}
