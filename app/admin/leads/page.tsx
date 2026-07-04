@@ -29,59 +29,51 @@ export default function LeadsPage() {
     "Select City",
   ])
 
-  // ── 수동 이메일 등록 ─────────────────────────────────────────────
+  // ── 수동 등록 → 파일 생성기 ──────────────────────────────────────
   const [manualOpen, setManualOpen] = useState(false)
   const [manualText, setManualText] = useState("")
+  const [manualTitle, setManualTitle] = useState("")
   const [manualCountry, setManualCountry] = useState("Select Country")
   const [manualCity, setManualCity] = useState("Select City")
   const [manualCities, setManualCities] = useState<string[]>(["Select City"])
-  const [manualSubmitting, setManualSubmitting] = useState(false)
-  const [manualResult, setManualResult] = useState<{
-    imported: number
-    duplicated: number
-    invalid_count: number
-  } | null>(null)
+  const [manualGeneratedMsg, setManualGeneratedMsg] = useState<string | null>(null)
 
-  const handleManualSubmit = async () => {
-    if (!manualText.trim()) return
+  const sanitizeForFilename = (input: string): string => {
+    return input
+      .trim()
+      .replace(/[^a-zA-Z0-9._-]+/g, "_")
+      .slice(0, 40) || "batch"
+  }
 
-    setManualSubmitting(true)
-    setManualResult(null)
+  const canGenerateFile =
+    manualText.trim().length > 0 &&
+    manualTitle.trim().length > 0 &&
+    manualCountry !== "Select Country" &&
+    manualCity !== "Select City"
 
-    try {
-      const res = await fetch("/api/admin/crm/leads/manual", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          text: manualText,
-          country: manualCountry === "Select Country" ? "" : manualCountry,
-          city: manualCity === "Select City" ? "" : manualCity,
-        }),
-      })
+  const handleGenerateFile = () => {
+    if (!canGenerateFile) return
 
-      const json = await res.json()
+    // ↓↓↓ 파일 이름 조합 로직 (Country_City_제목.txt) ↓↓↓
+    const filename = `${sanitizeForFilename(manualCountry)}_${sanitizeForFilename(
+      manualCity
+    )}_${sanitizeForFilename(manualTitle)}.txt`
+    // ↑↑↑ 파일 이름 조합 로직 ↑↑↑
 
-      if (json.success) {
-        setManualResult({
-          imported: json.imported ?? 0,
-          duplicated: json.duplicated ?? 0,
-          invalid_count: json.invalid_count ?? 0,
-        })
-        setManualText("")
+    const blob = new Blob([manualText], { type: "text/plain;charset=utf-8" })
+    const url = URL.createObjectURL(blob)
 
-        // 현재 검색 조건이 있으면 목록 새로고침
-        if (hasSearched) {
-          fetchLeads(country, city)
-        }
-      } else {
-        alert(`등록 실패: ${json.error || "알 수 없는 오류"}`)
-      }
-    } catch (e) {
-      console.error(e)
-      alert("등록 중 오류가 발생했습니다.")
-    } finally {
-      setManualSubmitting(false)
-    }
+    const a = document.createElement("a")
+    a.href = url
+    a.download = filename
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
+
+    setManualGeneratedMsg(
+      `✅ ${filename} 다운로드 완료. Campaigns 페이지의 "📁 파일로 캠페인 생성"에 업로드하세요.`
+    )
   }
 
   const fetchLeads = async (
@@ -230,7 +222,7 @@ export default function LeadsPage() {
         🎯 Leads
       </h1>
 
-      {/* 수동 이메일 등록 */}
+      {/* 수동 등록 → 파일 생성기 */}
       <div
         style={{
           border: "1px solid #eee",
@@ -253,14 +245,16 @@ export default function LeadsPage() {
             cursor: "pointer",
           }}
         >
-          {manualOpen ? "▾" : "▸"} ✍️ 수동으로 이메일 등록 (Manual Add)
+          {manualOpen ? "▾" : "▸"} 📄 이메일 → 파일 생성 (File Generator)
         </button>
 
         {manualOpen && (
           <div style={{ padding: 16 }}>
             <div style={{ fontSize: 12, color: "#666", marginBottom: 10 }}>
-              한 줄에 이메일 하나씩 붙여넣으세요. <code>이메일,이름</code> 형식으로 이름도 함께 넣을 수 있습니다.
-              등록된 이메일은 <strong>campaign_status = NEW</strong> 상태로 저장되어, Campaigns 페이지에서 바로 캠페인 생성/발송 대상이 됩니다.
+              한 줄에 이메일 하나씩 붙여넣으세요. Country/City/제목(카테고리)을 정하면
+              <code> Country_City_제목.txt</code> 형식의 파일이 다운로드됩니다.
+              그 파일을 Campaigns 페이지의 <strong>"📁 파일로 캠페인 생성"</strong>에 업로드하면
+              중복/가짜 이메일 필터링과 함께 해당 제목으로 캠페인이 자동 생성됩니다.
             </div>
 
             <textarea
@@ -274,6 +268,21 @@ export default function LeadsPage() {
                 border: "1px solid #ddd",
                 borderRadius: 6,
                 fontFamily: "monospace",
+                fontSize: 13,
+                marginBottom: 10,
+                boxSizing: "border-box",
+              }}
+            />
+
+            <input
+              value={manualTitle}
+              onChange={(e) => setManualTitle(e.target.value)}
+              placeholder="제목 / 카테고리 (예: 영어학원, 스페인어학원, 한국어학원)"
+              style={{
+                width: "100%",
+                padding: "8px 12px",
+                border: "1px solid #ddd",
+                borderRadius: 6,
                 fontSize: 13,
                 marginBottom: 10,
                 boxSizing: "border-box",
@@ -313,29 +322,24 @@ export default function LeadsPage() {
               </select>
 
               <button
-                onClick={handleManualSubmit}
-                disabled={manualSubmitting || !manualText.trim()}
+                onClick={handleGenerateFile}
+                disabled={!canGenerateFile}
                 style={{
                   padding: "8px 16px",
                   border: "1px solid #ddd",
                   borderRadius: 6,
-                  background: manualSubmitting || !manualText.trim() ? "#ccc" : "#111",
+                  background: !canGenerateFile ? "#ccc" : "#111",
                   color: "#fff",
-                  cursor: manualSubmitting || !manualText.trim() ? "not-allowed" : "pointer",
+                  cursor: !canGenerateFile ? "not-allowed" : "pointer",
                 }}
               >
-                {manualSubmitting ? "등록 중..." : "등록"}
+                📄 파일 생성
               </button>
             </div>
 
-            {manualResult && (
-              <div style={{ fontSize: 13, color: "#333" }}>
-                ✅ 신규 등록 {manualResult.imported}건 · 중복 제외 {manualResult.duplicated}건
-                {manualResult.invalid_count > 0 && (
-                  <span style={{ color: "#c0392b" }}>
-                    {" "}· 형식 오류 {manualResult.invalid_count}건 (무시됨)
-                  </span>
-                )}
+            {manualGeneratedMsg && (
+              <div style={{ fontSize: 13, color: "#16a34a" }}>
+                {manualGeneratedMsg}
               </div>
             )}
           </div>
@@ -531,8 +535,8 @@ export default function LeadsPage() {
                       whiteSpace: "nowrap",
                     }}
                   >
-
-                    <a href={l.website}
+                    <a
+                      href={l.website}
                       target="_blank"
                       rel="noreferrer"
                     >
