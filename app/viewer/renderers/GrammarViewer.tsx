@@ -171,29 +171,32 @@ export default function GrammarViewer({
     currentIndex >= 0 && currentIndex < chapters.length - 1
       ? chapters[currentIndex + 1]
       : chapter;
-
   const renderLine = (b: GrammarBlock, i: number, sectionKey: string) => {
-    const target =
-      b.sentences?.target ??
-      "";
-
-    const study =
-      b.sentences?.[studyLang] ??
-      "";
+    const target = b.sentences?.target ?? "";
+    const study = b.sentences?.[studyLang] ?? "";
 
     if (!target && !study) return null;
 
     const key = `${sectionKey}-${i}`;
+    const isExample = sectionKey !== "explanation";
 
     return (
-      <div key={i} style={{ marginBottom: 12 }}>
+      <div
+        key={i}
+        style={{
+          marginBottom: 12,
+          paddingBottom: isExample ? 12 : 0,
+          borderBottom: isExample ? "1px solid #eee" : "none",
+        }}
+      >
         {showTargetText && target && (
           <div
             onClick={() => void handleSpeak(target, key)}
             style={{
               ...targetStyle,
-              background:
-                playingKey === key ? "#f3f4f6" : "transparent",
+              fontSize: isExample ? 18 : 16,
+              fontWeight: 600,
+              background: playingKey === key ? "#f3f4f6" : "transparent",
             }}
           >
             {target}
