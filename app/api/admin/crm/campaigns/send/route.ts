@@ -54,6 +54,8 @@ export async function POST(req: NextRequest) {
 
     const country = campaign.country || "ALL";
     const city = campaign.city || "ALL";
+    // 파일 배치 캠페인 전용 태그 (없으면 기존 country/city 타겟팅 사용)
+    const batchTag = campaign.batch_tag || null;
 
     let sql = `
       SELECT
@@ -71,14 +73,22 @@ export async function POST(req: NextRequest) {
 
     const args: any[] = [];
 
-    if (country !== "ALL") {
-      sql += ` AND country = ?`;
-      args.push(country);
-    }
+    if (batchTag) {
+      // 파일 배치 캠페인: 이 배치에 속한 리드만 정확히 타겟팅
+      // (country/city는 표시용 실제 값이므로 필터에 사용하지 않음)
+      sql += ` AND batch_tag = ?`;
+      args.push(batchTag);
+    } else {
+      // 일반 캠페인: 기존 country/city 타겟팅 그대로 유지
+      if (country !== "ALL") {
+        sql += ` AND country = ?`;
+        args.push(country);
+      }
 
-    if (city !== "ALL") {
-      sql += ` AND city = ?`;
-      args.push(city);
+      if (city !== "ALL") {
+        sql += ` AND city = ?`;
+        args.push(city);
+      }
     }
 
     // 운영 모드 : 최대 5,000건 발송
@@ -99,6 +109,7 @@ export async function POST(req: NextRequest) {
     console.log("subject     :", campaign.subject);
     console.log("country     :", country);
     console.log("city        :", city);
+    console.log("batch_tag   :", batchTag ?? "(none)");
     console.log("target_count:", target_count);
 
     let sent_count = 0;
