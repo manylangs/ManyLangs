@@ -11,8 +11,6 @@ type StudyLang = "en" | "es" | "fr" | "pt";
 
 const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
 
-const LEVELS = ["a1", "a2", "b1", "b2", "c1", "c2"];
-
 const targetStyle: React.CSSProperties = {
   cursor: "pointer",
   padding: "2px 0",
@@ -192,31 +190,6 @@ export default function VocabularyViewer({
                   {l.toUpperCase()}
                 </button>
               ))}
-          </div>
-
-          {/* Levels */}
-
-          <div
-            style={{
-              display: "flex",
-              gap: 8,
-              marginTop: 16,
-              marginBottom: 16,
-              flexWrap: "wrap",
-            }}
-          >
-            {LEVELS.map((lv) => (
-              <Link
-                key={lv}
-                href={`/viewer/${targetLang}/voca/${lv}/001`}
-                style={{
-                  ...buttonStyle(lv === level),
-                  textDecoration: "none",
-                }}
-              >
-                {lv.toUpperCase()}
-              </Link>
-            ))}
           </div>
 
           {/* Prev Next */}
