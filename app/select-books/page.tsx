@@ -297,6 +297,29 @@ export default function SelectBooksPage() {
       // ignore
     }
   }
+  async function refreshLibrary() {
+    try {
+      const res = await fetch("/api/licenses/list", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      const data = await safeJson(res);
+
+      if (!res.ok) {
+        alert("Failed to refresh library.");
+        return;
+      }
+
+      setLibrary(Array.isArray(data?.licenses) ? data.licenses : []);
+      alert("Library refreshed.");
+    } catch {
+      alert("Network error.");
+    }
+  }
+
   useEffect(() => {
 
     const handler = () => {
@@ -958,9 +981,24 @@ export default function SelectBooksPage() {
               {/* My Library */}
               <Card>
                 <CardHeader>
-                  <CardTitle>My Library</CardTitle>
+                  <div className="flex items-center justify-between">
+                    <CardTitle>My Library</CardTitle>
+
+                    <button
+                      type="button"
+                      onClick={refreshLibrary}
+                      className="rounded border px-2 py-1 text-xs"
+                    >
+                      Refresh Textbooks
+                    </button>
+                  </div>
                 </CardHeader>
                 <CardContent className="space-y-3">
+                  <p className="text-xs text-gray-500 text-center">
+                    If your latest textbooks do not appear,
+                    <br />
+                    tap  Refresh Textbooks.
+                  </p>
                   {libraryTotal > 0 && (
                     <div className="flex items-center justify-between rounded border px-3 py-2 text-sm">
                       <div>

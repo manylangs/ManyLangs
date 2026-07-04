@@ -28,38 +28,3 @@ export async function searchPlaceIds(query: string) {
 
   return data.places || [];
 }
-
-export async function getPlaceDetails(placeId: string) {
-  const res = await fetch(
-    `https://places.googleapis.com/v1/places/${placeId}`,
-    {
-      headers: {
-        "X-Goog-Api-Key": API_KEY,
-        "X-Goog-FieldMask":
-          "id,displayName,websiteUri,formattedAddress,addressComponents",
-      },
-    }
-  );
-
-  return await res.json();
-}
-
-/**
- * 기존 /admin/places 호환 유지
- */
-export async function collectPlaces(query: string) {
-  const ids = await searchPlaceIds(query);
-
-  const results = [];
-
-  for (const place of ids.slice(0, 20)) {
-    try {
-      const details = await getPlaceDetails(place.id);
-      results.push(details);
-    } catch (e) {
-      console.error(e);
-    }
-  }
-
-  return results;
-}
