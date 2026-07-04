@@ -32,8 +32,9 @@ export default function LeadsPage() {
   // ── 수동 이메일 등록 ─────────────────────────────────────────────
   const [manualOpen, setManualOpen] = useState(false)
   const [manualText, setManualText] = useState("")
-  const [manualCountry, setManualCountry] = useState("")
-  const [manualCity, setManualCity] = useState("")
+  const [manualCountry, setManualCountry] = useState("Select Country")
+  const [manualCity, setManualCity] = useState("Select City")
+  const [manualCities, setManualCities] = useState<string[]>(["Select City"])
   const [manualSubmitting, setManualSubmitting] = useState(false)
   const [manualResult, setManualResult] = useState<{
     imported: number
@@ -53,8 +54,8 @@ export default function LeadsPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           text: manualText,
-          country: manualCountry,
-          city: manualCity,
+          country: manualCountry === "Select Country" ? "" : manualCountry,
+          city: manualCity === "Select City" ? "" : manualCity,
         }),
       })
 
@@ -167,6 +168,37 @@ export default function LeadsPage() {
 
     loadCities()
   }, [country])
+
+  useEffect(() => {
+    const loadManualCities = async () => {
+      try {
+        setManualCities(["Select City"])
+        setManualCity("Select City")
+
+        if (manualCountry === "Select Country") {
+          return
+        }
+
+        const res = await fetch(
+          `/api/admin/crm/locations?country=${encodeURIComponent(
+            manualCountry
+          )}`
+        )
+
+        const json = await res.json()
+
+        setManualCities([
+          "Select City",
+          ...(json.cities || []),
+        ])
+      } catch (e) {
+        console.error(e)
+      }
+    }
+
+    loadManualCities()
+  }, [manualCountry])
+
   const getDisplayName = (l: Lead) => {
     if (l.school_name) return l.school_name
     try {
@@ -249,28 +281,36 @@ export default function LeadsPage() {
             />
 
             <div style={{ display: "flex", gap: 12, marginBottom: 10, flexWrap: "wrap" }}>
-              <input
+              <select
                 value={manualCountry}
                 onChange={(e) => setManualCountry(e.target.value)}
-                placeholder="Country (선택)"
                 style={{
                   padding: "8px 12px",
                   border: "1px solid #ddd",
                   borderRadius: 6,
                   fontSize: 13,
                 }}
-              />
-              <input
+              >
+                {countries.map((c) => (
+                  <option key={c}>{c}</option>
+                ))}
+              </select>
+
+              <select
                 value={manualCity}
+                disabled={manualCountry === "Select Country"}
                 onChange={(e) => setManualCity(e.target.value)}
-                placeholder="City (선택)"
                 style={{
                   padding: "8px 12px",
                   border: "1px solid #ddd",
                   borderRadius: 6,
                   fontSize: 13,
                 }}
-              />
+              >
+                {manualCities.map((c) => (
+                  <option key={c}>{c}</option>
+                ))}
+              </select>
 
               <button
                 onClick={handleManualSubmit}
@@ -491,8 +531,8 @@ export default function LeadsPage() {
                       whiteSpace: "nowrap",
                     }}
                   >
-                    <a
-                      href={l.website}
+
+                    <a href={l.website}
                       target="_blank"
                       rel="noreferrer"
                     >

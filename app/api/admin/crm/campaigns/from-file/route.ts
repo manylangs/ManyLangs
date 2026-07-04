@@ -51,6 +51,16 @@ function slugify(input: string): string {
     .slice(0, 40) || "batch";
 }
 
+// 캠페인 이름 뒤에 붙일 짧은 고유 코드 (예: dfaf3fF)
+function generateUniqueSuffix(length = 7): string {
+  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  let result = "";
+  for (let i = 0; i < length; i++) {
+    result += chars[Math.floor(Math.random() * chars.length)];
+  }
+  return result;
+}
+
 // POST — 파일 텍스트에서 이메일 추출 + 중복/가짜 필터링 + schools 등록 + DRAFT 캠페인 자동 생성
 export async function POST(req: NextRequest) {
   try {
@@ -175,7 +185,8 @@ export async function POST(req: NextRequest) {
     }
 
     // 4) 방금 등록된 이메일만 정확히 타겟팅하는 DRAFT 캠페인 자동 생성
-    const campaign_id = `CMP-${Date.now().toString(36).toUpperCase()}`;
+    //    campaign_id = 사용자가 지정한 title + 짧은 고유 코드 (예: British_Council_Leads_dfaf3fF)
+    const campaign_id = `${slugify(title)}_${generateUniqueSuffix()}`;
 
     await db.execute({
       sql: `
