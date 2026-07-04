@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 interface FunnelData {
   total: number;
@@ -23,20 +24,27 @@ export default function FunnelPage() {
   }, []);
 
   if (loading) return <div className="p-8 text-gray-500">Loading...</div>;
-  if (!data)   return <div className="p-8 text-red-500">Failed to load funnel data.</div>;
+  if (!data) return <div className="p-8 text-red-500">Failed to load funnel data.</div>;
 
   const pct = (n: number) => data.total ? ((n / data.total) * 100).toFixed(1) : "0.0";
 
   const cards = [
-    { label: "Total Leads", value: data.total,   color: "bg-gray-800" },
-    { label: "HOT",         value: data.hot,     color: "bg-red-600"  },
-    { label: "WARM",        value: data.warm,    color: "bg-orange-500"},
-    { label: "COLD",        value: data.cold,    color: "bg-blue-600" },
-    { label: "BLOCKED",     value: data.blocked, color: "bg-gray-500" },
+    { label: "Total Leads", value: data.total, color: "bg-gray-800" },
+    { label: "HOT", value: data.hot, color: "bg-red-600" },
+    { label: "WARM", value: data.warm, color: "bg-orange-500" },
+    { label: "COLD", value: data.cold, color: "bg-blue-600" },
+    { label: "BLOCKED", value: data.blocked, color: "bg-gray-500" },
   ];
 
   return (
     <div className="p-8 max-w-5xl mx-auto space-y-10">
+      <div style={{ marginBottom: 20 }}>
+        <Link href="/select-books">
+          <button style={{ marginRight: 10 }}>
+            📚← Back to Library
+          </button>
+        </Link>
+      </div>
       <h1 className="text-2xl font-bold">Funnel Analytics</h1>
 
       {/* Status Cards */}
@@ -54,10 +62,10 @@ export default function FunnelPage() {
         <h2 className="text-lg font-semibold mb-3">Status Breakdown</h2>
         <div className="space-y-2">
           {[
-            { label: "HOT",     value: data.hot,     color: "bg-red-500"   },
-            { label: "WARM",    value: data.warm,    color: "bg-orange-400"},
-            { label: "COLD",    value: data.cold,    color: "bg-blue-500"  },
-            { label: "BLOCKED", value: data.blocked, color: "bg-gray-400"  },
+            { label: "HOT", value: data.hot, color: "bg-red-500" },
+            { label: "WARM", value: data.warm, color: "bg-orange-400" },
+            { label: "COLD", value: data.cold, color: "bg-blue-500" },
+            { label: "BLOCKED", value: data.blocked, color: "bg-gray-400" },
           ].map((s) => (
             <div key={s.label} className="flex items-center gap-3">
               <span className="w-20 text-sm font-medium">{s.label}</span>

@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 interface LangMeta {
   language: string;
@@ -69,7 +70,15 @@ export default function YouTubePage() {
   ];
 
   return (
+
     <div style={{ padding: 40, maxWidth: 960, margin: "0 auto" }}>
+      <div style={{ marginBottom: 20 }}>
+        <Link href="/select-books">
+          <button style={{ marginRight: 10 }}>
+            📚← Back to Library
+          </button>
+        </Link>
+      </div>
       <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 6 }}>🎥 YouTube Teacher Collector</h1>
       <p style={{ color: "#666", fontSize: 13, marginBottom: 32 }}>
         최근 365일 내 활동 · 연락처/SNS 링크 보유 채널 수집 · {langs.length}개 언어 지원

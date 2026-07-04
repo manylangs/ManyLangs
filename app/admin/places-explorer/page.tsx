@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function PlacesExplorerPage() {
   const [countries, setCountries] = useState<string[]>([]);
@@ -86,6 +87,13 @@ export default function PlacesExplorerPage() {
 
   return (
     <div style={{ padding: 24 }}>
+      <div style={{ marginBottom: 20 }}>
+        <Link href="/select-books">
+          <button style={{ marginRight: 10 }}>
+            📚← Back to Library
+          </button>
+        </Link>
+      </div>
       <h1
         style={{
           fontSize: 24,

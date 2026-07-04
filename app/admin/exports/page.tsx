@@ -1,23 +1,31 @@
 "use client";
+import Link from "next/link";
 
 const EXPORT_BUTTONS = [
-  { label: "Export All Leads",          type: "all",           emoji: "📋" },
-  { label: "Export HOT Leads",          type: "hot",           emoji: "🔥" },
-  { label: "Export WARM Leads",         type: "warm",          emoji: "🌤️" },
-  { label: "Export COLD Leads",         type: "cold",          emoji: "❄️" },
-  { label: "Export READY TO SEND",      type: "ready_to_send", emoji: "✉️" },
+  { label: "Export All Leads", type: "all", emoji: "📋" },
+  { label: "Export HOT Leads", type: "hot", emoji: "🔥" },
+  { label: "Export WARM Leads", type: "warm", emoji: "🌤️" },
+  { label: "Export COLD Leads", type: "cold", emoji: "❄️" },
+  { label: "Export READY TO SEND", type: "ready_to_send", emoji: "✉️" },
 ];
 
 export default function ExportsPage() {
   const handleExport = (type: string, startDate?: string, endDate?: string) => {
     let url = `/api/admin/crm/exports?type=${type}`;
     if (startDate) url += `&startDate=${startDate}`;
-    if (endDate)   url += `&endDate=${endDate}`;
+    if (endDate) url += `&endDate=${endDate}`;
     window.location.href = url;
   };
 
   return (
     <div style={{ padding: 40, maxWidth: 700, margin: "0 auto" }}>
+      <div style={{ marginBottom: 20 }}>
+        <Link href="/select-books">
+          <button style={{ marginRight: 10 }}>
+            📚← Back to Library
+          </button>
+        </Link>
+      </div>Ïƒ
       <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 8 }}>Export System</h1>
       <p style={{ color: "#666", marginBottom: 32 }}>CSV 다운로드 — 최대 5,000건</p>
 

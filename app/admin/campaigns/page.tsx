@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 interface Campaign {
   id: number;
@@ -380,7 +381,15 @@ export default function CampaignsPage() {
   if (loading) return <div style={{ padding: 40, color: "#888" }}>Loading...</div>;
 
   return (
+
     <div style={{ padding: 40, maxWidth: 1080, margin: "0 auto" }}>
+      <div style={{ marginBottom: 20 }}>
+        <Link href="/select-books">
+          <button style={{ marginRight: 10 }}>
+            📚← Back to Library
+          </button>
+        </Link>
+      </div>
       <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 6 }}>📧 Campaigns</h1>
       <p style={{ color: "#666", fontSize: 13, marginBottom: 32 }}>
         SES 연결 완료. TEST SEND는 실제 이메일을 발송합니다.

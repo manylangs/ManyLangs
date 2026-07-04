@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const actionButtonStyle: React.CSSProperties = {
   height: 40,
@@ -180,6 +181,13 @@ export default function PlaceQueuePage() {
 
   return (
     <div style={{ padding: 24, maxWidth: 1400 }}>
+      <div style={{ marginBottom: 20 }}>
+        <Link href="/select-books">
+          <button style={{ marginRight: 10 }}>
+            📚← Back to Library
+          </button>
+        </Link>
+      </div>
       <h1>⚙️ Place Queue</h1>
 
       {/* ── 필터 ── */}

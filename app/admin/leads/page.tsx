@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Link from "next/link";
 
 type Lead = {
   id: number
@@ -218,6 +219,13 @@ export default function LeadsPage() {
 
   return (
     <div style={{ padding: 24 }}>
+      <div style={{ marginBottom: 20 }}>
+        <Link href="/select-books">
+          <button style={{ marginRight: 10 }}>
+            📚← Back to Library
+          </button>
+        </Link>
+      </div>
       <h1 style={{ fontSize: 22, marginBottom: 20 }}>
         🎯 Leads
       </h1>

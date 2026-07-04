@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Link from "next/link";
 
 type Stats = {
   total_sent: number
@@ -56,6 +57,13 @@ export default function TrackingPage() {
 
   return (
     <div style={{ padding: 24 }}>
+      <div style={{ marginBottom: 20 }}>
+        <Link href="/select-books">
+          <button style={{ marginRight: 10 }}>
+            📚← Back to Library
+          </button>
+        </Link>
+      </div>
       <h1 style={{ fontSize: 22, marginBottom: 20 }}>📊 Tracking</h1>
 
       {/* 통계 카드 */}
