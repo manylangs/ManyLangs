@@ -83,6 +83,73 @@ export default function CampaignsPage() {
   const [sendResult, setSendResult] = useState<SendResult | null>(null);
   const [sendingId, setSendingId] = useState<string | null>(null);
 
+  // ── 파일 업로드로 한 번에 등록 + 캠페인 생성 ──────────────────────────
+  const [fileText, setFileText] = useState("");
+  const [fileName, setFileName] = useState("");
+  const [fileTitle, setFileTitle] = useState("");
+  const [fileSubject, setFileSubject] = useState("");
+  const [fileBody, setFileBody] = useState("");
+  const [fileSubmitting, setFileSubmitting] = useState(false);
+  const [fileMsg, setFileMsg] = useState<{ ok: boolean; text: string } | null>(null);
+
+  const handleFileSelect = (file: File) => {
+    setFileName(file.name);
+    const baseName = file.name.replace(/\.[^.]+$/, "");
+    setFileTitle(baseName);
+    if (!fileSubject) setFileSubject(baseName);
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      setFileText(String(reader.result || ""));
+    };
+    reader.readAsText(file);
+  };
+
+  const handleFileSubmit = async () => {
+    if (!fileText.trim() || !fileTitle.trim() || !fileSubject.trim() || !fileBody.trim()) {
+      setFileMsg({ ok: false, text: "파일, 제목, Subject, Body를 모두 입력하세요." });
+      return;
+    }
+
+    setFileSubmitting(true);
+    setFileMsg(null);
+
+    try {
+      const res = await fetch("/api/admin/crm/campaigns/from-file", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          text: fileText,
+          title: fileTitle,
+          subject: fileSubject,
+          body: fileBody,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setFileMsg({
+          ok: true,
+          text: `✅ ${data.campaign_id} 생성 — 신규 ${data.imported}건 (파일 내 중복 ${data.total_matches - data.unique_in_file}건, 가짜 이메일 ${data.junk_filtered}건, 기존 DB 중복 ${data.duplicated_existing}건 제외)`,
+        });
+        setFileText("");
+        setFileName("");
+        setFileTitle("");
+        setFileSubject("");
+        setFileBody("");
+        setPage(1);
+        fetchCampaigns(historyCountry, historyCity, 1);
+      } else {
+        setFileMsg({ ok: false, text: `❌ ${data.error}` });
+      }
+    } catch (e: any) {
+      setFileMsg({ ok: false, text: `❌ ${e.message}` });
+    } finally {
+      setFileSubmitting(false);
+    }
+  };
+
   const fetchCampaigns = async (
     targetCountry: string = historyCountry,
     targetCity: string = historyCity,
@@ -472,6 +539,75 @@ export default function CampaignsPage() {
           {createMsg && (
             <span style={{ fontSize: 13, color: createMsg.startsWith("✅") ? "#16a34a" : "#dc2626" }}>
               {createMsg}
+            </span>
+          )}
+        </div>
+      </div>
+
+      {/* 파일 업로드로 한 번에 등록 + 캠페인 생성 */}
+      <div style={{ border: "1px solid #e5e7eb", borderRadius: 12, padding: 28, marginBottom: 40 }}>
+        <h2 style={{ fontSize: 16, fontWeight: 600, marginBottom: 8 }}>📁 파일로 캠페인 생성</h2>
+        <p style={{ color: "#6b7280", fontSize: 12, marginBottom: 20 }}>
+          이메일 목록이 담긴 .txt / .rtf / .csv 파일을 업로드하면, 안의 이메일을 자동으로 추출하고
+          (파일 내부 중복 · 가짜 이메일 · 이미 DB에 있는 이메일을 모두 제외한 뒤) 파일 제목으로 DRAFT 캠페인을 바로 생성합니다.
+        </p>
+
+        <label style={{ ...labelStyle, display: "block", marginBottom: 16 }}>
+          파일 선택
+          <input
+            type="file"
+            accept=".txt,.rtf,.csv"
+            onChange={(e) => {
+              const f = e.target.files?.[0];
+              if (f) handleFileSelect(f);
+            }}
+            style={{ ...inputStyle, width: "100%", boxSizing: "border-box" }}
+          />
+          {fileName && (
+            <span style={{ fontSize: 12, color: "#6b7280", marginTop: 4 }}>
+              선택됨: {fileName} ({fileText.length.toLocaleString()}자)
+            </span>
+          )}
+        </label>
+
+        <label style={{ ...labelStyle, display: "block", marginBottom: 16 }}>
+          제목 (캠페인 식별용, 기본값 = 파일명)
+          <input
+            value={fileTitle}
+            onChange={(e) => setFileTitle(e.target.value)}
+            placeholder="예: mexico_en_"
+            style={{ ...inputStyle, width: "100%", boxSizing: "border-box" }}
+          />
+        </label>
+
+        <label style={{ ...labelStyle, display: "block", marginBottom: 16 }}>
+          Subject
+          <input
+            value={fileSubject}
+            onChange={(e) => setFileSubject(e.target.value)}
+            placeholder="예: ManyLangs Partner Invitation"
+            style={{ ...inputStyle, width: "100%", boxSizing: "border-box" }}
+          />
+        </label>
+
+        <label style={{ ...labelStyle, display: "block", marginBottom: 20 }}>
+          Email Body
+          <textarea
+            value={fileBody}
+            onChange={(e) => setFileBody(e.target.value)}
+            rows={6}
+            placeholder={"안녕하세요,\n\nManyLangs 파트너십 제안드립니다...\n\n감사합니다."}
+            style={{ ...inputStyle, width: "100%", boxSizing: "border-box", resize: "vertical", fontFamily: "inherit" }}
+          />
+        </label>
+
+        <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
+          <button onClick={handleFileSubmit} disabled={fileSubmitting} style={btnPrimary}>
+            {fileSubmitting ? "처리 중..." : "📁 등록 + Campaign 생성"}
+          </button>
+          {fileMsg && (
+            <span style={{ fontSize: 13, color: fileMsg.ok ? "#16a34a" : "#dc2626" }}>
+              {fileMsg.text}
             </span>
           )}
         </div>
