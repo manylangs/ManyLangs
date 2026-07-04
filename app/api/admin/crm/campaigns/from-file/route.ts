@@ -152,7 +152,6 @@ export async function POST(req: NextRequest) {
             campaign_status
           )
           VALUES
-          VALUES
 (
   ?, NULL, ?, ?, '', 'MANUAL', 'MANUAL_FILE_IMPORT', ?, 0, 0, 0, 'COLD', 'NEW'
 )
