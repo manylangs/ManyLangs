@@ -9,23 +9,27 @@ from pathlib import Path
 
 from google.cloud import texttospeech
 
-SUPPORTED_LANGS = ["kr", "en", "es", "fr", "pt"]
-LEVELS = ["a1", "a2", "b1", "b2", "c1", "c2"]
+import sys
+from pathlib import Path
 
-LANGUAGE_CODE = {
-    "kr": "ko-KR",
-    "en": "en-US",
-    "es": "es-ES",
-    "fr": "fr-FR",
-    "pt": "pt-PT",
-}
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from common.config import (  # noqa: E402
+    SUPPORTED_LANGS,
+    LEVELS,
+    LANGUAGE_CODE,
+    SAMPLE_RATE,
+    TEXT_FIELD_REAL,
+)
+
+TEXT_FIELD = TEXT_FIELD_REAL
 
 BREAK_TIME = "1.8s"
-SAMPLE_RATE = 24000
 
 
 def load_sentences(json_path: Path, lang: str):
     data = json.loads(json_path.read_text(encoding="utf-8"))
+    field = TEXT_FIELD[lang]
     sentences = []
 
     for block in data.get("blocks", []):
@@ -33,7 +37,7 @@ def load_sentences(json_path: Path, lang: str):
             continue
 
         for item in block.get("sentences", []):
-            text = item.get("texts", {}).get(lang, "").strip()
+            text = item.get("texts", {}).get(field, "").strip()
             if text:
                 sentences.append(text)
 

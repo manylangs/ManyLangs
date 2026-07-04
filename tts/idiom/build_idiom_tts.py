@@ -11,18 +11,23 @@ from pathlib import Path
 from google.cloud import texttospeech
 from pydub import AudioSegment
 
-SUPPORTED_LANGS = ["en"]
-LEVELS = ["a1", "a2", "b1", "b2", "c1", "c2"]
+import sys
+from pathlib import Path
 
-LANGUAGE_CODE = {"en": "en-US"}
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-VOICE_MAP = {
-    "en": {
-        "default": "en-US-Neural2-F",
-    },
-}
+from common.config import (  # noqa: E402
+    SUPPORTED_LANGS,
+    LEVELS,
+    LANGUAGE_CODE,
+    SAMPLE_RATE,
+    VOICE_SINGLE,
+    TEXT_FIELD_DEFAULT,
+)
 
-SAMPLE_RATE = 24000
+VOICE_MAP = VOICE_SINGLE
+TEXT_FIELD = TEXT_FIELD_DEFAULT
+
 
 GAP_INTRA_MS = 1800
 GAP_AFTER_EXPRESSION_MS = 1800
@@ -53,21 +58,22 @@ def synthesize(client, text: str, lang: str) -> AudioSegment:
 
 def load_sets(json_path: Path, lang: str):
     data = json.loads(json_path.read_text(encoding="utf-8"))
+    field = TEXT_FIELD[lang]
     sets = []
 
     for block in data.get("blocks", []):
         texts = []
 
-        expression = block.get("expression", {}).get(lang, "").strip()
+        expression = block.get("expression", {}).get(field, "").strip()
         if expression:
             texts.append(expression)
 
-        explanation = block.get("explanation", {}).get(lang, "").strip()
+        explanation = block.get("explanation", {}).get(field, "").strip()
         if explanation:
             texts.append(explanation)
 
         for ex in block.get("examples", []):
-            text = ex.get(lang, "").strip()
+            text = ex.get(field, "").strip()
             if text:
                 texts.append(text)
 

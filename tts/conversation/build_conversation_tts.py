@@ -11,19 +11,23 @@ from pathlib import Path
 from google.cloud import texttospeech
 from pydub import AudioSegment
 
-SUPPORTED_LANGS = ["en"]
-LEVELS = ["a1", "a2", "b1", "b2", "c1", "c2"]
+import sys
+from pathlib import Path
 
-LANGUAGE_CODE = {"en": "en-US"}
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-VOICE_MAP = {
-    "en": {
-        "A": "en-US-Neural2-F",
-        "B": "en-US-Neural2-J",
-    }
-}
+from common.config import (  # noqa: E402
+    SUPPORTED_LANGS,
+    LEVELS,
+    LANGUAGE_CODE,
+    SAMPLE_RATE,
+    VOICE_AB,
+    TEXT_FIELD_DEFAULT,
+)
 
-SAMPLE_RATE = 24000
+VOICE_MAP = VOICE_AB
+TEXT_FIELD = TEXT_FIELD_DEFAULT
+
 
 GAP_INTRA_MS = 350
 GAP_SET_END_MS = 650
@@ -53,13 +57,14 @@ def synthesize(client, text: str, lang: str, speaker: str) -> AudioSegment:
 
 def load_sets(json_path: Path, lang: str):
     data = json.loads(json_path.read_text(encoding="utf-8"))
+    field = TEXT_FIELD[lang]
     sets = []
 
     for block in data.get("blocks", []):
         lines = []
         for line in block.get("lines", []):
             speaker = line.get("speaker")
-            text = line.get("sentences", {}).get(lang, "").strip()
+            text = line.get("sentences", {}).get(field, "").strip()
             if speaker in ["A", "B"] and text:
                 lines.append({"speaker": speaker, "text": text})
 

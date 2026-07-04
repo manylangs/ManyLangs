@@ -222,8 +222,9 @@ export default function ConversationViewer({
                 {block.lines.map((line, i) => {
                   const targetText =
                     line.sentences?.target ?? "";
+
                   const studyText =
-                    line.sentences[studyLang] ?? "";
+                    line.sentences?.[studyLang] ?? "";
 
                   const key = `${block.set_id}-${i}`;
 
