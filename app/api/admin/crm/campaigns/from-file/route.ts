@@ -152,9 +152,10 @@ export async function POST(req: NextRequest) {
             campaign_status
           )
           VALUES
-          (
-            ?, '', ?, ?, '', 'MANUAL', 'MANUAL_FILE_IMPORT', ?, 0, 0, 0, 'COLD', 'NEW'
-          )
+          VALUES
+(
+  ?, NULL, ?, ?, '', 'MANUAL', 'MANUAL_FILE_IMPORT', ?, 0, 0, 0, 'COLD', 'NEW'
+)
         `,
         args: [
           email.split("@")[0],
