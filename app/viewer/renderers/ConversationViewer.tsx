@@ -5,8 +5,9 @@ import Link from "next/link";
 import ConversationAudioController from "@/components/audio/controllers/ConversationAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
 import { speakText } from "@/utils/tts";
+import { SUPPORTED_LANGS } from "@/app/config/languages";
+import { UI_TARGET_LABELS, UiLangKey } from "../uiLabels";
 
-type StudyLang = "en" | "es" | "fr" | "pt";
 
 type Line = {
   speaker: string;
@@ -28,7 +29,7 @@ type LoadStatus = "idle" | "loading" | "ready" | "error";
 
 /* ================= 상수 ================= */
 
-const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
+const ALL_STUDY_LANGS = SUPPORTED_LANGS;
 
 /* ================= 스타일 ================= */
 
@@ -60,7 +61,7 @@ export default function ConversationViewer({
 }: Props) {
   const { targetLang, showTargetText } = useViewerTarget();
 
-  const [studyLang, setStudyLang] = useState<StudyLang>("en");
+  const [studyLang, setStudyLang] = useState<string>("en");
   const [blocks, setBlocks] = useState<Block[]>([]);
   const [chapters, setChapters] = useState<string[]>([]);
   const [status, setStatus] = useState<LoadStatus>("idle");
@@ -171,15 +172,14 @@ export default function ConversationViewer({
 
           <div style={{ height: 30 }} />
 
-          {/* 학습언어 선택 */}
-          <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
+          {/* 학습언어 선택 */}<div style={{ display: "flex", gap: 8, marginBottom: 12, flexWrap: "wrap" }}>
             {ALL_STUDY_LANGS.filter((l) => l !== targetLang).map((l) => (
               <button
                 key={l}
                 onClick={() => setStudyLang(l)}
                 style={buttonStyle(studyLang === l)}
               >
-                {l.toUpperCase()}
+                {UI_TARGET_LABELS[l as UiLangKey]?.native ?? l.toUpperCase()}
               </button>
             ))}
           </div>

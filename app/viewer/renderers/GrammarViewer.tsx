@@ -4,10 +4,11 @@ import { useEffect, useState, } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "../context/ViewerTargetContext";
 import { speakText } from "@/utils/tts";
+import { SUPPORTED_LANGS } from "@/app/config/languages";
+import { UI_TARGET_LABELS, UiLangKey } from "../uiLabels";
 
 /* ================= types ================= */
 
-type StudyLang = "en" | "es" | "fr" | "pt";
 
 type GrammarBlock = {
   type: string;
@@ -28,7 +29,7 @@ type Props = {
   chapter: string;
 };
 
-const STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
+const STUDY_LANGS = SUPPORTED_LANGS;
 
 const targetStyle: React.CSSProperties = {
   cursor: "pointer",
@@ -60,7 +61,7 @@ export default function GrammarViewer({
 
   const { targetLang, showTargetText } = useViewerTarget();
 
-  const [studyLang, setStudyLang] = useState<StudyLang>("en");
+  const [studyLang, setStudyLang] = useState<string>("en");
 
   const [data, setData] = useState<GrammarData | null>(null);
   const [chapters, setChapters] = useState<string[]>([]);
@@ -236,7 +237,7 @@ export default function GrammarViewer({
 
           {/* language switch */}
 
-          <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
+          <div style={{ display: "flex", gap: 8, marginBottom: 12, flexWrap: "wrap" }}>
             {STUDY_LANGS
               .filter((l) => l !== targetLang)
               .map((l) => (
@@ -245,7 +246,7 @@ export default function GrammarViewer({
                   onClick={() => setStudyLang(l)}
                   style={buttonStyle(studyLang === l)}
                 >
-                  {l.toUpperCase()}
+                  {UI_TARGET_LABELS[l as UiLangKey]?.native ?? l.toUpperCase()}
                 </button>
               ))}
           </div>

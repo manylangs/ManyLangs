@@ -5,8 +5,10 @@ import Link from "next/link";
 import RealAudioController from "@/components/audio/controllers/RealAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
 import { speakText } from "@/utils/tts";
+import { SUPPORTED_LANGS } from "@/app/config/languages";
+import { UI_TARGET_LABELS, UiLangKey } from "../uiLabels";
 
-type StudyLang = "en" | "es" | "fr" | "pt";
+
 
 type Sentence = {
   texts: Record<string, string>;
@@ -18,7 +20,7 @@ type Props = {
   chapter: string;
 };
 
-const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
+const ALL_STUDY_LANGS = SUPPORTED_LANGS;
 
 const targetStyle: React.CSSProperties = {
   cursor: "pointer",
@@ -51,7 +53,7 @@ export default function RealViewer({
 
   const { targetLang, showTargetText } = useViewerTarget();
 
-  const [studyLang, setStudyLang] = useState<StudyLang>("en");
+  const [studyLang, setStudyLang] = useState<string>("en");
 
   const [audioUrl, setAudioUrl] = useState("");
   const [imageUrl, setImageUrl] = useState("");
@@ -203,7 +205,7 @@ export default function RealViewer({
           <div style={{ height: 30 }} />
           {/* language switch */}
 
-          <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
+          <div style={{ display: "flex", gap: 8, marginBottom: 12, flexWrap: "wrap" }}>
             {ALL_STUDY_LANGS
               .filter((l) => l !== targetLang)
               .map((l) => (
@@ -212,7 +214,7 @@ export default function RealViewer({
                   onClick={() => setStudyLang(l)}
                   style={buttonStyle(studyLang === l)}
                 >
-                  {l.toUpperCase()}
+                  {UI_TARGET_LABELS[l as UiLangKey]?.native ?? l.toUpperCase()}
                 </button>
               ))}
           </div>

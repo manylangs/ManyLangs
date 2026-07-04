@@ -5,9 +5,11 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 import VocaAudioController from "@/components/audio/controllers/VocaAudioController";
+import { SUPPORTED_LANGS } from "@/app/config/languages";
+import { UI_TARGET_LABELS, UiLangKey } from "@/app/viewer/uiLabels";
 
-type StudyLang = "en" | "es" | "fr" | "pt";
-const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
+
+const ALL_STUDY_LANGS = SUPPORTED_LANGS;
 
 type Example = {
   target: string;
@@ -56,13 +58,13 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
   const { targetLang } = useViewerTarget();
 
   const [showTargetText, setShowTargetText] = useState(true);
-  const [studyLang, setStudyLang] = useState<StudyLang>("en");
+  const [studyLang, setStudyLang] = useState<string>("en");
   const [blocks, setBlocks] = useState<Block[]>([]);
   const [status, setStatus] = useState<Status>("loading");
   const [playingKey, setPlayingKey] = useState<string | null>(null);
   const TARGET_KEY = "target";
 
-  const guideTexts: Record<StudyLang, string[]> = {
+  const guideTexts: Record<string, string[]> = {
     en: [
       "1. To continue to the next chapter, sign up by clicking Unlock Full Access.",
       "2. You can change the study language using the buttons above.",
@@ -94,6 +96,14 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
       "4. Toque ou clique numa frase para reproduzir apenas essa parte.",
       "5. Pressione Toggle Target para ocultar o idioma alvo e praticar a tradução.",
       "6. Está a ver A1 Chapter 1. Pode escolher níveis A1, A2, B1, B2, C1, C2.",
+    ],
+    kr: [
+      "1. 다음 챕터로 계속하려면 Unlock Full Access를 눌러 가입하세요.",
+      "2. 위의 버튼으로 학습 언어를 변경할 수 있습니다.",
+      "3. 오디오 아래의 <> 버튼으로 다음 세트로 이동할 수 있습니다.",
+      "4. 문장을 탭하거나 클릭하면 해당 부분만 재생됩니다.",
+      "5. Toggle Target을 누르면 목표 언어를 숨기고 번역 연습을 할 수 있습니다.",
+      "6. 현재 A1 Chapter 1을 보고 있습니다. A1, A2, B1, B2, C1, C2 레벨을 선택할 수 있습니다.",
     ],
   };
   const handleSpeak = async (text: string, key: string) => {
@@ -233,7 +243,7 @@ export default function DemoVocaViewer({ level, chapter }: Props) {
                     onClick={() => setStudyLang(l)}
                     style={buttonStyle(studyLang === l)}
                   >
-                    {l.toUpperCase()}
+                    {UI_TARGET_LABELS[l as UiLangKey]?.native ?? l.toUpperCase()}
                   </button>
                 ))}
 

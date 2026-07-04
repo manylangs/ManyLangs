@@ -6,10 +6,11 @@ import Link from "next/link";
 import VocaAudioController from "@/components/audio/controllers/VocaAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
 import { speakText } from "@/utils/tts";
+import { SUPPORTED_LANGS } from "@/app/config/languages";
+import { UI_TARGET_LABELS, UiLangKey } from "../uiLabels";
 
-type StudyLang = "en" | "es" | "fr" | "pt";
 
-const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
+const ALL_STUDY_LANGS = SUPPORTED_LANGS;
 
 const targetStyle: React.CSSProperties = {
   cursor: "pointer",
@@ -46,7 +47,7 @@ export default function VocabularyViewer({
 
 
   const { targetLang, showTargetText } = useViewerTarget();
-  const [studyLang, setStudyLang] = useState<StudyLang>("en");
+  const [studyLang, setStudyLang] = useState<string>("en");
 
   const [blocks, setBlocks] = useState<VocaBlock[]>([]);
 
@@ -178,7 +179,7 @@ export default function VocabularyViewer({
           <div style={{ height: 30 }} />
 
           {/* Study Lang */}
-          <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
+          <div style={{ display: "flex", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
             {ALL_STUDY_LANGS
               .filter((l) => l !== targetLang)
               .map((l) => (
@@ -187,7 +188,7 @@ export default function VocabularyViewer({
                   style={buttonStyle(studyLang === l)}
                   onClick={() => setStudyLang(l)}
                 >
-                  {l.toUpperCase()}
+                  {UI_TARGET_LABELS[l as UiLangKey]?.native ?? l.toUpperCase()}
                 </button>
               ))}
           </div>

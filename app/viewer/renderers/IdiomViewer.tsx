@@ -5,10 +5,12 @@ import Link from "next/link";
 import IdiomAudioController from "@/components/audio/controllers/IdiomAudioController";
 import { useViewerTarget } from "../context/ViewerTargetContext";
 import { speakText } from "@/utils/tts";
+import { SUPPORTED_LANGS } from "@/app/config/languages";
+import { UI_TARGET_LABELS, UiLangKey } from "../uiLabels";
 
-type StudyLang = "en" | "es" | "fr" | "pt";
 
-const ALL_STUDY_LANGS: StudyLang[] = ["en", "es", "fr", "pt"];
+
+const ALL_STUDY_LANGS = SUPPORTED_LANGS;
 
 const LEVELS = ["a1", "a2", "b1", "b2", "c1", "c2"];
 
@@ -49,7 +51,7 @@ export default function IdiomViewer({
 
   const { targetLang, showTargetText } = useViewerTarget();
 
-  const [studyLang, setStudyLang] = useState<StudyLang>("en");
+  const [studyLang, setStudyLang] = useState<string>("en");
   const [blocks, setBlocks] = useState<IdiomBlock[]>([]);
   const [chapters, setChapters] = useState<string[]>([]);
   const [status, setStatus] = useState<LoadStatus>("idle");
@@ -180,7 +182,7 @@ export default function IdiomViewer({
           <div style={{ height: 30 }} />
 
           {/* Study Lang */}
-          <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
+          <div style={{ display: "flex", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
             {ALL_STUDY_LANGS
               .filter((l) => l !== targetLang)
               .map((l) => (
@@ -189,7 +191,7 @@ export default function IdiomViewer({
                   style={buttonStyle(studyLang === l)}
                   onClick={() => setStudyLang(l)}
                 >
-                  {l.toUpperCase()}
+                  {UI_TARGET_LABELS[l as UiLangKey]?.native ?? l.toUpperCase()}
                 </button>
               ))}
           </div>
