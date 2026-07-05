@@ -5,7 +5,6 @@ import { useState } from "react";
 import { copyLink } from "@/utils/share";
 
 /* ================= IDIOM LEVEL DATA ================= */
-
 const LEVELS = [
   {
     level: "A1",
@@ -16,6 +15,8 @@ const LEVELS = [
       es: "Modismos coreanos cotidianos básicos",
       fr: "Idiomes coréens quotidiens de base",
       pt: "Expressões idiomáticas coreanas básicas do dia a dia",
+      zh: "基礎日常韓語慣用語",
+      jp: "基礎的な日常韓国語の慣用表現",
     },
   },
   {
@@ -27,6 +28,8 @@ const LEVELS = [
       es: "Modismos coreanos cotidianos comunes",
       fr: "Idiomes coréens courants du quotidien",
       pt: "Expressões idiomáticas coreanas comuns do dia a dia",
+      zh: "常用日常韓語慣用語",
+      jp: "よく使われる日常韓国語の慣用表現",
     },
   },
   {
@@ -38,6 +41,8 @@ const LEVELS = [
       es: "Modismos coreanos para situaciones sociales y laborales",
       fr: "Idiomes coréens pour les situations sociales et professionnelles",
       pt: "Expressões idiomáticas coreanas para situações sociais e profissionais",
+      zh: "社交與職場情境韓語慣用語",
+      jp: "社交・職場で使われる韓国語の慣用表現",
     },
   },
   {
@@ -49,6 +54,8 @@ const LEVELS = [
       es: "Modismos coreanos avanzados para una amplia variedad de situaciones",
       fr: "Idiomes coréens avancés pour une grande variété de situations",
       pt: "Expressões idiomáticas coreanas avançadas para uma ampla variedade de situações",
+      zh: "適用於各種情境的高級韓語慣用語",
+      jp: "さまざまな場面で使われる上級韓国語の慣用表現",
     },
   },
   {
@@ -60,6 +67,8 @@ const LEVELS = [
       es: "Refranes coreanos y expresiones figuradas",
       fr: "Proverbes coréens et expressions figurées",
       pt: "Provérbios coreanos e expressões figuradas",
+      zh: "韓語諺語與比喻表達",
+      jp: "韓国語のことわざ・比喩表現",
     },
   },
   {
@@ -71,6 +80,8 @@ const LEVELS = [
       es: "Expresiones idiomáticas coreanas avanzadas de nivel nativo",
       fr: "Expressions idiomatiques coréennes avancées de niveau natif",
       pt: "Expressões idiomáticas coreanas avançadas de nível nativo",
+      zh: "母語人士水準的高級韓語慣用表達",
+      jp: "ネイティブレベルの高度な韓国語慣用表現",
     },
   },
 ];

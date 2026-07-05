@@ -5,7 +5,6 @@ import { useState } from "react";
 import { copyLink } from "@/utils/share";
 
 /* ================= IDIOM LEVEL DATA ================= */
-
 const LEVELS = [
   {
     level: "A1",
@@ -16,6 +15,8 @@ const LEVELS = [
       fr: "Idiomes anglais quotidiens de base",
       pt: "Expressões idiomáticas inglesas básicas do dia a dia",
       kr: "기초적인 일상 영어 관용구",
+      zh: "基礎日常英語慣用語",
+      jp: "基礎的な日常英語の慣用表現",
     },
   },
   {
@@ -27,6 +28,8 @@ const LEVELS = [
       fr: "Idiomes anglais courants du quotidien",
       pt: "Expressões idiomáticas inglesas comuns do dia a dia",
       kr: "흔히 쓰이는 일상 영어 관용구",
+      zh: "常用日常英語慣用語",
+      jp: "よく使われる日常英語の慣用表現",
     },
   },
   {
@@ -38,6 +41,8 @@ const LEVELS = [
       fr: "Idiomes anglais pour les situations sociales et professionnelles",
       pt: "Expressões idiomáticas inglesas para situações sociais e profissionais",
       kr: "사교 및 직장 상황에서 쓰이는 영어 관용구",
+      zh: "社交與職場情境英語慣用語",
+      jp: "社交・職場で使われる英語の慣用表現",
     },
   },
   {
@@ -49,6 +54,8 @@ const LEVELS = [
       fr: "Idiomes anglais avancés pour une grande variété de situations",
       pt: "Expressões idiomáticas inglesas avançadas para uma ampla variedade de situações",
       kr: "다양한 상황에서 사용되는 고급 영어 관용구",
+      zh: "適用於各種情境的高級英語慣用語",
+      jp: "さまざまな場面で使われる上級英語の慣用表現",
     },
   },
   {
@@ -60,6 +67,8 @@ const LEVELS = [
       fr: "Proverbes anglais et expressions figurées",
       pt: "Provérbios ingleses e expressões figuradas",
       kr: "영어 속담 및 비유적 표현",
+      zh: "英語諺語與比喻表達",
+      jp: "英語のことわざ・比喩表現",
     },
   },
   {
@@ -71,9 +80,13 @@ const LEVELS = [
       fr: "Expressions idiomatiques anglaises avancées de niveau natif",
       pt: "Expressões idiomáticas inglesas avançadas de nível nativo",
       kr: "원어민 수준의 고급 영어 관용 표현",
+      zh: "母語人士水準的高級英語慣用表達",
+      jp: "ネイティブレベルの高度な英語慣用表現",
     },
   },
 ];
+
+
 
 /* ================= 페이지 ================= */
 
