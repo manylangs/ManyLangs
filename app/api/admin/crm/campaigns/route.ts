@@ -270,3 +270,49 @@ export async function POST(req: NextRequest) {
     );
   }
 }
+// PATCH — Update Campaign
+export async function PATCH(req: NextRequest) {
+  try {
+    const db = getDb();
+
+    const {
+      campaign_id,
+      subject,
+      body,
+    } = await req.json();
+
+    if (!campaign_id || !subject || !body) {
+      return NextResponse.json(
+        { error: "campaign_id, subject, body required" },
+        { status: 400 }
+      );
+    }
+
+    await db.execute({
+      sql: `
+        UPDATE campaigns
+        SET
+          subject = ?,
+          body = ?
+        WHERE campaign_id = ?
+      `,
+      args: [
+        subject,
+        body,
+        campaign_id,
+      ],
+    });
+
+    return NextResponse.json({
+      success: true,
+      campaign_id,
+    });
+  } catch (err: any) {
+    console.error("[CAMPAIGNS PATCH]", err);
+
+    return NextResponse.json(
+      { error: err.message },
+      { status: 500 }
+    );
+  }
+}

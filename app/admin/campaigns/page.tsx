@@ -6,6 +6,7 @@ interface Campaign {
   id: number;
   campaign_id: string;
   subject: string;
+  body?: string;
   country?: string;
   city?: string;
   status: string;
@@ -43,6 +44,7 @@ function getPageWindow(current: number, total: number): number[] {
   return Array.from({ length: end - start + 1 }, (_, i) => start + i);
 }
 
+
 export default function CampaignsPage() {
   const [campaigns, setCampaigns] = useState<Campaign[]>([]);
   const [loading, setLoading] = useState(true);
@@ -66,6 +68,13 @@ export default function CampaignsPage() {
   // Form state
   const [subject, setSubject] = useState("");
   const [emailBody, setEmailBody] = useState("");
+
+  // Edit Campaign
+  const [editingCampaign, setEditingCampaign] =
+    useState<Campaign | null>(null);
+  const [editSubject, setEditSubject] = useState("");
+  const [editBody, setEditBody] = useState("");
+
   const [creating, setCreating] = useState(false);
   const [createMsg, setCreateMsg] = useState("");
 
@@ -94,7 +103,8 @@ export default function CampaignsPage() {
   // ── 선택 캠페인 일괄 액션 ────────────────────────────
   const [bulkResetting, setBulkResetting] = useState(false);
   const [bulkSending, setBulkSending] = useState(false);
-  const [bulkProgress, setBulkProgress] = useState<{ done: number; total: number } | null>(null);
+  const [bulkProgress, setBulkProgress] =
+    useState<{ done: number; total: number } | null>(null);
   const [bulkMsg, setBulkMsg] = useState<string | null>(null);
 
   // ── 파일 업로드로 한 번에 등록 + 캠페인 생성 ──────────────────────────
@@ -104,7 +114,8 @@ export default function CampaignsPage() {
   const [fileSubject, setFileSubject] = useState("");
   const [fileBody, setFileBody] = useState("");
   const [fileSubmitting, setFileSubmitting] = useState(false);
-  const [fileMsg, setFileMsg] = useState<{ ok: boolean; text: string } | null>(null);
+  const [fileMsg, setFileMsg] =
+    useState<{ ok: boolean; text: string } | null>(null);
 
   const handleFileSelect = (file: File) => {
     setFileName(file.name);
@@ -347,7 +358,32 @@ export default function CampaignsPage() {
       setCreating(false);
     }
   };
+  const handleSaveCampaign = async () => {
+    if (!editingCampaign) return;
 
+    const res = await fetch("/api/admin/crm/campaigns", {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        campaign_id: editingCampaign.campaign_id,
+        subject: editSubject,
+        body: editBody,
+      }),
+    });
+
+    if (!res.ok) {
+      alert("Campaign 저장 실패");
+      return;
+    }
+
+    setEditingCampaign(null);
+    setEditSubject("");
+    setEditBody("");
+
+    fetchCampaigns();
+  };
   const handleTestSend = async (campaign_id: string) => {
     if (sendingId !== null) return;
 
@@ -616,7 +652,11 @@ export default function CampaignsPage() {
 
       {/* Create Campaign Form */}
       <div style={{ border: "1px solid #e5e7eb", borderRadius: 12, padding: 28, marginBottom: 40 }}>
-        <h2 style={{ fontSize: 16, fontWeight: 600, marginBottom: 20 }}>새 Campaign 생성</h2>
+        <h2 style={{ fontSize: 16, fontWeight: 600, marginBottom: 20 }}>
+          {editingCampaign
+            ? `✏️ Campaign 수정 (${editingCampaign.campaign_id})`
+            : "새 Campaign 생성"}
+        </h2>
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 16 }}>
           <label style={labelStyle}>
@@ -659,8 +699,12 @@ export default function CampaignsPage() {
         <label style={{ ...labelStyle, display: "block", marginBottom: 16 }}>
           Subject
           <input
-            value={subject}
-            onChange={(e) => setSubject(e.target.value)}
+            value={editingCampaign ? editSubject : subject}
+            onChange={(e) =>
+              editingCampaign
+                ? setEditSubject(e.target.value)
+                : setSubject(e.target.value)
+            }
             placeholder="예: ManyLangs Partner Invitation"
             style={{ ...inputStyle, width: "100%", boxSizing: "border-box" }}
           />
@@ -669,8 +713,12 @@ export default function CampaignsPage() {
         <label style={{ ...labelStyle, display: "block", marginBottom: 20 }}>
           Email Body
           <textarea
-            value={emailBody}
-            onChange={(e) => setEmailBody(e.target.value)}
+            value={editingCampaign ? editBody : emailBody}
+            onChange={(e) =>
+              editingCampaign
+                ? setEditBody(e.target.value)
+                : setEmailBody(e.target.value)
+            }
             rows={6}
             placeholder={"안녕하세요,\n\nManyLangs 파트너십 제안드립니다...\n\n감사합니다."}
             style={{ ...inputStyle, width: "100%", boxSizing: "border-box", resize: "vertical", fontFamily: "inherit" }}
@@ -678,14 +726,53 @@ export default function CampaignsPage() {
         </label>
 
         <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-          <button onClick={handleCreate} disabled={creating} style={btnPrimary}>
-            {creating ? "생성 중..." : "✅ Campaign 생성"}
-          </button>
+
+          {editingCampaign ? (
+            <>
+              <button
+                onClick={handleSaveCampaign}
+                style={btnPrimary}
+              >
+                💾 Save
+              </button>
+
+              <button
+                onClick={() => {
+                  setEditingCampaign(null);
+                  setEditSubject("");
+                  setEditBody("");
+                }}
+                style={{
+                  ...btnPrimary,
+                  background: "#6b7280",
+                }}
+              >
+                Cancel
+              </button>
+            </>
+          ) : (
+            <button
+              onClick={handleCreate}
+              disabled={creating}
+              style={btnPrimary}
+            >
+              {creating ? "생성 중..." : "✅ Campaign 생성"}
+            </button>
+          )}
+
           {createMsg && (
-            <span style={{ fontSize: 13, color: createMsg.startsWith("✅") ? "#16a34a" : "#dc2626" }}>
+            <span
+              style={{
+                fontSize: 13,
+                color: createMsg.startsWith("✅")
+                  ? "#16a34a"
+                  : "#dc2626",
+              }}
+            >
               {createMsg}
             </span>
           )}
+
         </div>
       </div>
 
@@ -930,13 +1017,37 @@ export default function CampaignsPage() {
                             color: statusStyle.fg,
                           }}>{c.status}</span>
                         </td>
-                        <td style={{ padding: "10px 14px" }}>
+                        <td style={{ padding: "10px 14px", whiteSpace: "nowrap" }}>
+
+                          <button
+                            onClick={() => {
+                              setEditingCampaign(c);
+                              setEditSubject(c.subject);
+                              setEditBody(c.body ?? "");
+                            }}
+                            style={{
+                              padding: "4px 10px",
+                              marginRight: 6,
+                              borderRadius: 6,
+                              border: "1px solid #d1d5db",
+                              background: "#fff",
+                              fontSize: 12,
+                              cursor: "pointer",
+                            }}
+                          >
+                            ✏️ Edit
+                          </button>
+
                           <button
                             onClick={() => handleTestSend(c.campaign_id)}
                             disabled={isSendingAny}
                             style={{
-                              padding: "4px 12px", borderRadius: 6, border: "1px solid #d1d5db",
-                              background: "#fff", fontSize: 12, cursor: isSendingAny ? "not-allowed" : "pointer",
+                              padding: "4px 12px",
+                              borderRadius: 6,
+                              border: "1px solid #d1d5db",
+                              background: "#fff",
+                              fontSize: 12,
+                              cursor: isSendingAny ? "not-allowed" : "pointer",
                               opacity: isSendingAny ? 0.5 : 1,
                             }}
                           >
@@ -946,6 +1057,7 @@ export default function CampaignsPage() {
                                 ? "🧪 Test"
                                 : "📧 REAL SEND"}
                           </button>
+
                         </td>
                         <td style={{ padding: "10px 14px" }}>
                           <button
