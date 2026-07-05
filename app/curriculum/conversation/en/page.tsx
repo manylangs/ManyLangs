@@ -12,7 +12,7 @@ type Item = {
   es: string;
   fr: string;
   pt: string;
-  ko: String; // 추가
+  ko: string; // 추가
 };
 
 const DATA: Item[] = [
@@ -165,6 +165,7 @@ export default function Page() {
                       <div style={sub}>{item.es}</div>
                       <div style={sub}>{item.fr}</div>
                       <div style={sub}>{item.pt}</div>
+                      <div style={sub}>{item.ko}</div>
                     </div>
                   </div>
                 );

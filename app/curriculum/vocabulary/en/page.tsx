@@ -148,6 +148,9 @@ export default function Page() {
                 <span style={{ fontSize: 12, opacity: 0.6 }}>
                   {lv.desc.pt}
                 </span>
+                <span style={{ fontSize: 12, opacity: 0.6 }}>
+                  {lv.desc.ko}
+                </span>
               </div>
             </div>
           </div>
