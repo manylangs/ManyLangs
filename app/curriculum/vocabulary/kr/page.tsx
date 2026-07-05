@@ -164,9 +164,11 @@ export default function Page() {
                 <span style={{ fontSize: 12, opacity: 0.6 }}>
                   {lv.desc.pt}
                 </span>
+                <br />   
                 <span style={{ fontSize: 12, opacity: 0.6 }}>
                   {lv.desc.zh}
                 </span>
+                <br />   
                 <span style={{ fontSize: 12, opacity: 0.6 }}>
                   {lv.desc.jp}
                 </span>
