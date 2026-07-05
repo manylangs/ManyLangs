@@ -15,6 +15,7 @@ const LEVELS = [
       es: "Modismos ingleses cotidianos básicos",
       fr: "Idiomes anglais quotidiens de base",
       pt: "Expressões idiomáticas inglesas básicas do dia a dia",
+      kr: "기초적인 일상 영어 관용구",
     },
   },
   {
@@ -25,6 +26,7 @@ const LEVELS = [
       es: "Modismos ingleses cotidianos comunes",
       fr: "Idiomes anglais courants du quotidien",
       pt: "Expressões idiomáticas inglesas comuns do dia a dia",
+      kr: "흔히 쓰이는 일상 영어 관용구",
     },
   },
   {
@@ -35,6 +37,7 @@ const LEVELS = [
       es: "Modismos ingleses para situaciones sociales y laborales",
       fr: "Idiomes anglais pour les situations sociales et professionnelles",
       pt: "Expressões idiomáticas inglesas para situações sociais e profissionais",
+      kr: "사교 및 직장 상황에서 쓰이는 영어 관용구",
     },
   },
   {
@@ -45,6 +48,7 @@ const LEVELS = [
       es: "Modismos ingleses avanzados para una amplia variedad de situaciones",
       fr: "Idiomes anglais avancés pour une grande variété de situations",
       pt: "Expressões idiomáticas inglesas avançadas para uma ampla variedade de situações",
+      kr: "다양한 상황에서 사용되는 고급 영어 관용구",
     },
   },
   {
@@ -55,6 +59,7 @@ const LEVELS = [
       es: "Refranes ingleses y expresiones figuradas",
       fr: "Proverbes anglais et expressions figurées",
       pt: "Provérbios ingleses e expressões figuradas",
+      kr: "영어 속담 및 비유적 표현",
     },
   },
   {
@@ -65,6 +70,7 @@ const LEVELS = [
       es: "Expresiones idiomáticas inglesas avanzadas de nivel nativo",
       fr: "Expressions idiomatiques anglaises avancées de niveau natif",
       pt: "Expressões idiomáticas inglesas avançadas de nível nativo",
+      kr: "원어민 수준의 고급 영어 관용 표현",
     },
   },
 ];

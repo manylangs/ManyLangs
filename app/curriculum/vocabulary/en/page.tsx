@@ -14,6 +14,7 @@ const LEVELS = [
       es: "Sustantivos cotidianos",
       fr: "Noms du quotidien",
       pt: "Substantivos do cotidiano",
+      ko: "일상 명사",
     },
   },
   {
@@ -24,6 +25,7 @@ const LEVELS = [
       es: "Sustantivos cotidianos y sustantivos cotidianos ampliados",
       fr: "Noms du quotidien et noms du quotidien étendus",
       pt: "Substantivos do cotidiano e substantivos do cotidiano expandidos",
+      ko: "일상 명사 및 확장된 일상 명사",
     },
   },
   {
@@ -34,6 +36,7 @@ const LEVELS = [
       es: "Sustantivos cotidianos ampliados y sustantivos relacionados con la sociedad, la educación y la tecnología",
       fr: "Noms du quotidien étendus et noms liés à la société, à l'éducation et à la technologie",
       pt: "Substantivos do cotidiano expandidos e substantivos relacionados à sociedade, educação e tecnologia",
+      ko: "확장된 일상 명사 및 사회, 교육, 기술 관련 명사",
     },
   },
   {
@@ -44,6 +47,7 @@ const LEVELS = [
       es: "Sustantivos relacionados con la sociedad, la educación y la tecnología y sustantivos abstractos, políticos y relacionados con el futuro",
       fr: "Noms liés à la société, à l'éducation et à la technologie et noms abstraits, politiques et liés au futur",
       pt: "Substantivos relacionados à sociedade, educação e tecnologia e substantivos abstratos, políticos e relacionados ao futuro",
+      ko: "사회, 교육, 기술 관련 명사 및 추상적, 정책적, 미래 관련 명사",
     },
   },
   {
@@ -54,6 +58,7 @@ const LEVELS = [
       es: "Sustantivos abstractos, políticos y relacionados con el futuro",
       fr: "Noms abstraits, politiques et liés au futur",
       pt: "Substantivos abstratos, políticos e relacionados ao futuro",
+      ko: "추상적, 정책적, 미래 관련 명사",
     },
   },
   {
@@ -64,6 +69,7 @@ const LEVELS = [
       es: "Sustantivos académicos y sustantivos avanzados",
       fr: "Noms académiques et noms avancés",
       pt: "Substantivos acadêmicos e substantivos avançados",
+      ko: "학술 명사 및 고급 명사",
     },
   },
 ];

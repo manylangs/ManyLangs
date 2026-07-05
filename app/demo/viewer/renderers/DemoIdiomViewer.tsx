@@ -91,7 +91,7 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
       "3. You can move to the next set using the <> buttons below the audio.",
       "4. Tap or click a sentence to play only that part.",
       "5. Press Toggle Target to hide the target language and practice translating.",
-      "6. You are currently viewing A1 Chapter 1. You can choose levels A1, A2, B1, B2, C1, C2.",
+      "6. You are currently viewing A1 Chapter 1. You can choose levels A1, A2, B1, B2, C1, and C2.",
     ],
     es: [
       "1. Para continuar al siguiente capítulo, regístrate haciendo clic en Unlock Full Access.",
@@ -99,7 +99,7 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
       "3. Puedes moverte al siguiente set usando los botones <> debajo del audio.",
       "4. Toca o haz clic en una frase para reproducir solo esa parte.",
       "5. Presiona Toggle Target para ocultar el idioma objetivo y practicar la traducción.",
-      "6. Actualmente estás viendo A1 Chapter 1. Puedes elegir niveles A1, A2, B1, B2, C1, C2.",
+      "6. Actualmente estás viendo A1 Chapter 1. Puedes elegir niveles A1, A2, B1, B2, C1 y C2.",
     ],
     fr: [
       "1. Pour continuer au chapitre suivant, inscrivez-vous en cliquant sur Unlock Full Access.",
@@ -107,7 +107,7 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
       "3. Vous pouvez passer au set suivant avec les boutons <> sous l’audio.",
       "4. Appuyez ou cliquez sur une phrase pour lire uniquement cette partie.",
       "5. Appuyez sur Toggle Target pour cacher la langue cible et pratiquer la traduction.",
-      "6. Vous regardez actuellement A1 Chapter 1. Vous pouvez choisir les niveaux A1, A2, B1, B2, C1, C2.",
+      "6. Vous regardez actuellement A1 Chapter 1. Vous pouvez choisir les niveaux A1, A2, B1, B2, C1 et C2.",
     ],
     pt: [
       "1. Para continuar para o próximo capítulo, registre-se clicando em Unlock Full Access.",
@@ -115,7 +115,7 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
       "3. Pode ir para o próximo set usando os botões <> abaixo do áudio.",
       "4. Toque ou clique numa frase para reproduzir apenas essa parte.",
       "5. Pressione Toggle Target para ocultar o idioma alvo e praticar a tradução.",
-      "6. Está a ver A1 Chapter 1. Pode escolher níveis A1, A2, B1, B2, C1, C2.",
+      "6. Está a ver A1 Chapter 1. Pode escolher níveis A1, A2, B1, B2, C1 e C2.",
     ],
     kr: [
       "1. 다음 챕터로 계속하려면 Unlock Full Access를 눌러 가입하세요.",
@@ -123,7 +123,7 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
       "3. 오디오 아래의 <> 버튼으로 다음 세트로 이동할 수 있습니다.",
       "4. 문장을 탭하거나 클릭하면 해당 부분만 재생됩니다.",
       "5. Toggle Target을 누르면 목표 언어를 숨기고 번역 연습을 할 수 있습니다.",
-      "6. 현재 A1 Chapter 1을 보고 있습니다. A1, A2, B1, B2, C1, C2 레벨을 선택할 수 있습니다.",
+      "6. 현재 A1 Chapter 1을 보고 있습니다. A1, A2, B1, B2, C1, 그리고 C2 레벨을 선택할 수 있습니다.",
     ],
   };
 
@@ -210,11 +210,12 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
             gap: 6,
           }}
         >
-          {/* 🔥 1줄 */}
+          {/* 🔥 1줄: Back / Toggle / Copy */}
           <div
             style={{
               display: "flex",
               alignItems: "center",
+              justifyContent: "space-between",
               gap: 6,
               flexWrap: "nowrap",
               overflowX: "auto",
@@ -240,23 +241,10 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
                 display: "flex",
                 flexWrap: "nowrap",
                 gap: 6,
-                justifyContent: "flex-end",
                 minWidth: 0,
                 flexShrink: 0,
               }}
             >
-              {ALL_STUDY_LANGS
-                .filter((l) => l !== targetLang)
-                .map((l) => (
-                  <button
-                    key={l}
-                    onClick={() => setStudyLang(l)}
-                    style={buttonStyle(studyLang === l)}
-                  >
-                    {UI_TARGET_LABELS[l as UiLangKey]?.native ?? l.toUpperCase()}
-                  </button>
-                ))}
-
               <button
                 onClick={() => setShowTargetText(!showTargetText)}
                 style={buttonStyle(false)}
@@ -282,6 +270,29 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
                 Copy link
               </button>
             </div>
+          </div>
+
+          {/* 🔥 2줄: 학습 언어 버튼들 */}
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "nowrap",
+              gap: 6,
+              overflowX: "auto",
+              minWidth: 0,
+            }}
+          >
+            {ALL_STUDY_LANGS
+              .filter((l) => l !== targetLang)
+              .map((l) => (
+                <button
+                  key={l}
+                  onClick={() => setStudyLang(l)}
+                  style={buttonStyle(studyLang === l)}
+                >
+                  {UI_TARGET_LABELS[l as UiLangKey]?.native ?? l.toUpperCase()}
+                </button>
+              ))}
           </div>
         </div>
       </div>

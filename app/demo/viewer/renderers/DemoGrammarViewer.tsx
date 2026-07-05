@@ -68,35 +68,35 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
       "1. To continue to the next chapter, sign up by clicking Unlock Full Access.",
       "2. You can change the study language using the buttons above.",
       "3. Press Toggle Target to hide the target language and practice translating.",
-      "4. You are currently viewing A1 Chapter 1. You can choose levels A1, A2, B1, B2, C1, C2.",
+      "4. You are currently viewing A1 Chapter 1. You can choose levels A1, A2, B1, B2, C1, and C2.",
       "5. Tap or click a sentence to play only that part.",
     ],
     es: [
       "1. Para continuar al siguiente capítulo, regístrate haciendo clic en Unlock Full Access.",
       "2. Puedes cambiar el idioma de estudio usando los botones de arriba.",
       "3. Presiona Toggle Target para ocultar el idioma objetivo y practicar la traducción.",
-      "4. Actualmente estás viendo A1 Capítulo 1. Puedes elegir los niveles A1, A2, B1, B2, C1, C2.",
+      "4. Actualmente estás viendo A1 Chapter 1. Puedes elegir niveles A1, A2, B1, B2, C1 y C2.",
       "5. Toca o haz clic en una frase para reproducir solo esa parte.",
     ],
     fr: [
       "1. Pour continuer au chapitre suivant, inscrivez-vous en cliquant sur Unlock Full Access.",
       "2. Vous pouvez changer la langue d'étude en utilisant les boutons ci-dessus.",
       "3. Appuyez sur Toggle Target pour cacher la langue cible et pratiquer la traduction.",
-      "4. Vous regardez actuellement A1 Chapitre 1. Vous pouvez choisir les niveaux A1, A2, B1, B2, C1, C2.",
+      "4. Vous regardez actuellement A1 Chapter 1. Vous pouvez choisir les niveaux A1, A2, B1, B2, C1 et C2.",
       "5. Appuyez ou cliquez sur une phrase pour lire uniquement cette partie.",
     ],
     pt: [
       "1. Para continuar para o próximo capítulo, registre-se clicando em Unlock Full Access.",
       "2. Você pode mudar o idioma de estudo usando os botões acima.",
       "3. Pressione Toggle Target para ocultar o idioma alvo e praticar a tradução.",
-      "4. Você está atualmente visualizando A1 Capítulo 1. Você pode escolher os níveis A1, A2, B1, B2, C1, C2.",
+      "4. Está a ver A1 Chapter 1. Pode escolher níveis A1, A2, B1, B2, C1 e C2.",
       "5. Toque ou clique numa frase para reproduzir apenas essa parte.",
     ],
     kr: [
       "1. 다음 챕터로 계속하려면 Unlock Full Access를 눌러 가입하세요.",
       "2. 위의 버튼으로 학습 언어를 변경할 수 있습니다.",
       "3. Toggle Target을 누르면 목표 언어를 숨기고 번역 연습을 할 수 있습니다.",
-      "4. 현재 A1 Chapter 1을 보고 있습니다. A1, A2, B1, B2, C1, C2 레벨을 선택할 수 있습니다.",
+      "4. 현재 A1 Chapter 1을 보고 있습니다. A1, A2, B1, B2, C1, 그리고 C2 레벨을 선택할 수 있습니다.",
       "5. 문장을 탭하거나 클릭하면 해당 부분만 재생됩니다.",
     ],
   };
@@ -218,7 +218,6 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
       </div>
     );
   };
-
   return (
     <div style={containerStyle}>
       <div
@@ -239,11 +238,12 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
             gap: 6,
           }}
         >
-          {/* 1줄 */}
+          {/* 1줄: Back / Toggle / Copy / Unlock */}
           <div
             style={{
               display: "flex",
               alignItems: "center",
+              justifyContent: "space-between",
               gap: 6,
               flexWrap: "nowrap",
               overflowX: "auto",
@@ -269,23 +269,10 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
                 display: "flex",
                 flexWrap: "nowrap",
                 gap: 6,
-                justifyContent: "flex-end",
                 minWidth: 0,
                 flexShrink: 0,
               }}
             >
-              {ALL_STUDY_LANGS
-                .filter((l) => l !== targetLang)
-                .map((l) => (
-                  <button
-                    key={l}
-                    onClick={() => setStudyLang(l)}
-                    style={buttonStyle(studyLang === l)}
-                  >
-                    {UI_TARGET_LABELS[l as UiLangKey]?.native ?? l.toUpperCase()}
-                  </button>
-                ))}
-
               <button
                 onClick={() => setShowTargetText(!showTargetText)}
                 style={buttonStyle(false)}
@@ -310,29 +297,42 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
               >
                 Copy link
               </button>
+
+              <Link href="/app">
+                <button
+                  style={{
+                    ...buttonStyle(false),
+                    background: "#111",
+                    color: "#fff",
+                  }}
+                >
+                  Unlock Full Access
+                </button>
+              </Link>
             </div>
           </div>
 
-          {/* 2줄 Unlock */}
+          {/* 2줄: 학습 언어 버튼들 */}
           <div
             style={{
-              width: "100%",
               display: "flex",
-              justifyContent: "flex-end",
+              flexWrap: "nowrap",
+              gap: 6,
+              overflowX: "auto",
+              minWidth: 0,
             }}
           >
-            <Link href="/app" style={{ width: "100%" }}>
-              <button
-                style={{
-                  ...buttonStyle(false),
-                  background: "#111",
-                  color: "#fff",
-                  width: "100%",
-                }}
-              >
-                Unlock Full Access
-              </button>
-            </Link>
+            {ALL_STUDY_LANGS
+              .filter((l) => l !== targetLang)
+              .map((l) => (
+                <button
+                  key={l}
+                  onClick={() => setStudyLang(l)}
+                  style={buttonStyle(studyLang === l)}
+                >
+                  {UI_TARGET_LABELS[l as UiLangKey]?.native ?? l.toUpperCase()}
+                </button>
+              ))}
           </div>
         </div>
 
@@ -355,6 +355,7 @@ export default function DemoGrammarViewer({ level, chapter }: Props) {
           ))}
         </div>
       </div>
+
       <div style={{ padding: "30px 0" }}>
         <div style={{ marginBottom: 30 }}>
           {showTargetText && titleTarget && (
