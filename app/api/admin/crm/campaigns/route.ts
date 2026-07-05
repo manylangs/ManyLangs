@@ -16,6 +16,7 @@ export async function GET(req: NextRequest) {
 
     const country = searchParams.get("country") || "ALL";
     const city = searchParams.get("city") || "ALL";
+    const q = searchParams.get("q")?.trim() || "";
     const page = Math.max(1, Number(searchParams.get("page") || "1"));
     const pageSize = Math.max(
       1,
@@ -23,7 +24,7 @@ export async function GET(req: NextRequest) {
     );
     const offset = (page - 1) * pageSize;
 
-    // Campaign History 필터 (country / city)
+    // Campaign History 필터 (country / city / 검색어)
     const filters: string[] = [];
     const filterArgs: (string | number)[] = [];
 
@@ -35,6 +36,12 @@ export async function GET(req: NextRequest) {
     if (city !== "ALL") {
       filters.push("c.city = ?");
       filterArgs.push(city);
+    }
+
+    if (q) {
+      // subject 또는 campaign_id 에서 키워드 검색
+      filters.push("(c.subject LIKE ? OR c.campaign_id LIKE ?)");
+      filterArgs.push(`%${q}%`, `%${q}%`);
     }
 
     const whereClause =

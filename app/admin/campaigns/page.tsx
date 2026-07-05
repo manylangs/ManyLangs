@@ -34,7 +34,6 @@ const ALL_CITY_LABEL = "All Cities";
 const PAGE_SIZE = 5;
 const MAX_PAGE_BUTTONS = 5;
 
-// 현재 페이지 기준 최대 MAX_PAGE_BUTTONS개의 페이지 번호만 계산
 function getPageWindow(current: number, total: number): number[] {
   const start = Math.max(
     1,
@@ -48,15 +47,18 @@ export default function CampaignsPage() {
   const [campaigns, setCampaigns] = useState<Campaign[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // 국가 목록은 공용 (한 번만 로드)
   const [countries, setCountries] = useState<string[]>([]);
 
-  // ── History / KPI scope (상단 필터 전용) ──────────────────────────────
+  // ── History / KPI scope ──────────────────────────────
   const [historyCountry, setHistoryCountry] = useState(ALL_VALUE);
   const [historyCity, setHistoryCity] = useState(ALL_VALUE);
   const [historyCities, setHistoryCities] = useState<string[]>([]);
 
-  // ── Create Campaign scope (폼 전용) ───────────────────────────────────
+  // ── 검색어 (subject / campaign_id) ──────────────────
+  const [searchInput, setSearchInput] = useState("");
+  const [search, setSearch] = useState("");
+
+  // ── Create Campaign scope ───────────────────────────────
   const [formCountry, setFormCountry] = useState(ALL_VALUE);
   const [formCity, setFormCity] = useState(ALL_VALUE);
   const [formCities, setFormCities] = useState<string[]>([]);
@@ -80,9 +82,20 @@ export default function CampaignsPage() {
   const pageWindow = getPageWindow(page, totalPages);
 
   // Send state
-  // NOTE: campaign_id 단위로 관리해야 특정 Campaign만 "Sending..." 상태가 됩니다.
   const [sendResult, setSendResult] = useState<SendResult | null>(null);
   const [sendingId, setSendingId] = useState<string | null>(null);
+
+  // ── 캠페인 다중 선택 (체크박스) ──────────────────────
+  const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
+
+  // ── row 단위 개별 Reset ──────────────────────────────
+  const [rowResetting, setRowResetting] = useState<string | null>(null);
+
+  // ── 선택 캠페인 일괄 액션 ────────────────────────────
+  const [bulkResetting, setBulkResetting] = useState(false);
+  const [bulkSending, setBulkSending] = useState(false);
+  const [bulkProgress, setBulkProgress] = useState<{ done: number; total: number } | null>(null);
+  const [bulkMsg, setBulkMsg] = useState<string | null>(null);
 
   // ── 파일 업로드로 한 번에 등록 + 캠페인 생성 ──────────────────────────
   const [fileText, setFileText] = useState("");
@@ -140,7 +153,7 @@ export default function CampaignsPage() {
         setFileSubject("");
         setFileBody("");
         setPage(1);
-        fetchCampaigns(historyCountry, historyCity, 1);
+        fetchCampaigns(historyCountry, historyCity, 1, search);
       } else {
         setFileMsg({ ok: false, text: `❌ ${data.error}` });
       }
@@ -154,13 +167,15 @@ export default function CampaignsPage() {
   const fetchCampaigns = async (
     targetCountry: string = historyCountry,
     targetCity: string = historyCity,
-    targetPage: number = page
+    targetPage: number = page,
+    targetSearch: string = search
   ) => {
     try {
       const params = new URLSearchParams();
 
       if (targetCountry !== ALL_VALUE) params.set("country", targetCountry);
       if (targetCity !== ALL_VALUE) params.set("city", targetCity);
+      if (targetSearch.trim()) params.set("q", targetSearch.trim());
       params.set("page", String(targetPage));
       params.set("pageSize", String(PAGE_SIZE));
 
@@ -174,7 +189,6 @@ export default function CampaignsPage() {
       setCampaigns(data.campaigns ?? []);
       setTotalCampaigns(data.pagination?.total ?? 0);
 
-      // KPI도 함께 갱신
       setReadyCount(data.kpi?.ready_to_send ?? 0);
       setSentCount(data.kpi?.sent ?? 0);
     } finally {
@@ -192,7 +206,6 @@ export default function CampaignsPage() {
     }
   };
 
-  // History / Form 각각의 city 목록을 독립적으로 로드
   const fetchCities = async (
     selectedCountry: string,
     setter: (cities: string[]) => void
@@ -215,31 +228,43 @@ export default function CampaignsPage() {
     fetchCountries();
   }, []);
 
-  // History Country 변경 시 Campaign History 즉시 필터링 (1페이지로 리셋)
   useEffect(() => {
     setPage(1);
-    fetchCampaigns(historyCountry, historyCity, 1);
+    fetchCampaigns(historyCountry, historyCity, 1, search);
     fetchCities(historyCountry, setHistoryCities);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [historyCountry]);
 
   useEffect(() => {
     setPage(1);
-    fetchCampaigns(historyCountry, historyCity, 1);
+    fetchCampaigns(historyCountry, historyCity, 1, search);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [historyCity]);
 
-  // Form Country 변경 시 폼 전용 city 목록만 갱신 (History에 영향 없음)
   useEffect(() => {
     fetchCities(formCountry, setFormCities);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [formCountry]);
 
-  // 페이지 변경 시
   useEffect(() => {
-    fetchCampaigns(historyCountry, historyCity, page);
+    fetchCampaigns(historyCountry, historyCity, page, search);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
+
+  const handleSearch = () => {
+    setPage(1);
+    setSelectedIds(new Set());
+    fetchCampaigns(historyCountry, historyCity, 1, searchInput);
+    setSearch(searchInput);
+  };
+
+  const handleClearSearch = () => {
+    setSearchInput("");
+    setSearch("");
+    setPage(1);
+    setSelectedIds(new Set());
+    fetchCampaigns(historyCountry, historyCity, 1, "");
+  };
 
   const handleCheckTarget = async () => {
     setChecking(true);
@@ -312,8 +337,7 @@ export default function CampaignsPage() {
         setSubject("");
         setEmailBody("");
         setPage(1);
-        // History는 History scope 기준으로 갱신
-        fetchCampaigns(historyCountry, historyCity, 1);
+        fetchCampaigns(historyCountry, historyCity, 1, search);
       } else {
         setCreateMsg(`❌ ${data.error}`);
       }
@@ -325,7 +349,6 @@ export default function CampaignsPage() {
   };
 
   const handleTestSend = async (campaign_id: string) => {
-    // 이미 다른 Campaign이 발송 중이면 중복 실행 방지
     if (sendingId !== null) return;
 
     setSendingId(campaign_id);
@@ -340,8 +363,7 @@ export default function CampaignsPage() {
 
       setSendResult(data);
 
-      // Campaign History + READY/SENT KPI 갱신
-      await fetchCampaigns(historyCountry, historyCity, page);
+      await fetchCampaigns(historyCountry, historyCity, page, search);
     } catch (e: any) {
       setSendResult({ success: false, mode: "TEST", campaign_id, target_count: 0, sample: [], message: "", error: e.message });
     } finally {
@@ -350,7 +372,7 @@ export default function CampaignsPage() {
   };
 
   const handleReset = async () => {
-    if (!confirm("현재 선택한 범위의 SENT를 READY로 되돌리시겠습니까?")) return;
+    if (!confirm("현재 선택한 범위(Country/City)의 SENT를 READY로 되돌리시겠습니까?\n※ 특정 캠페인만 되돌리려면 아래 표에서 개별 Reset 또는 체크박스로 선택 후 일괄 Reset을 사용하세요.")) return;
 
     try {
       const res = await fetch("/api/admin/crm/campaigns/reset", {
@@ -368,7 +390,7 @@ export default function CampaignsPage() {
 
       alert(`복구 완료 (${data.updated}건)`);
 
-      await fetchCampaigns(historyCountry, historyCity, page);
+      await fetchCampaigns(historyCountry, historyCity, page, search);
 
       if (hasChecked) {
         await handleCheckTarget();
@@ -376,6 +398,120 @@ export default function CampaignsPage() {
     } catch (e: any) {
       alert(e.message);
     }
+  };
+
+  // ── row 단위 개별 Reset (email_tracking 기준으로 그 캠페인 발송분만) ──
+  const handleRowReset = async (campaign_id: string) => {
+    if (!confirm(`캠페인 [${campaign_id}]이 발송한 대상만 SENT → READY로 되돌리시겠습니까?\n다른 캠페인이 보낸 대상은 영향받지 않습니다.`)) return;
+
+    setRowResetting(campaign_id);
+    try {
+      const res = await fetch("/api/admin/crm/campaigns/reset", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ campaign_ids: [campaign_id] }),
+      });
+      const data = await res.json();
+      alert(`복구 완료 (${data.updated}건) — 캠페인: ${campaign_id}`);
+
+      await fetchCampaigns(historyCountry, historyCity, page, search);
+      if (hasChecked) await handleCheckTarget();
+    } catch (e: any) {
+      alert(e.message);
+    } finally {
+      setRowResetting(null);
+    }
+  };
+
+  // ── 체크박스 선택 토글 ──────────────────────────────
+  const toggleRowSelect = (campaign_id: string) => {
+    setSelectedIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(campaign_id)) next.delete(campaign_id);
+      else next.add(campaign_id);
+      return next;
+    });
+  };
+
+  const allOnPageSelected =
+    campaigns.length > 0 && campaigns.every((c) => selectedIds.has(c.campaign_id));
+
+  const toggleSelectAllOnPage = () => {
+    setSelectedIds((prev) => {
+      const next = new Set(prev);
+      if (allOnPageSelected) {
+        campaigns.forEach((c) => next.delete(c.campaign_id));
+      } else {
+        campaigns.forEach((c) => next.add(c.campaign_id));
+      }
+      return next;
+    });
+  };
+
+  const clearSelection = () => setSelectedIds(new Set());
+
+  // ── 선택 캠페인 일괄 Reset ──────────────────────────
+  const handleBulkReset = async () => {
+    const ids = Array.from(selectedIds);
+    if (ids.length === 0) return;
+    if (!confirm(`선택한 ${ids.length}개 캠페인이 발송한 대상만 SENT → READY로 되돌리시겠습니까?`)) return;
+
+    setBulkResetting(true);
+    setBulkMsg(null);
+    try {
+      const res = await fetch("/api/admin/crm/campaigns/reset", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ campaign_ids: ids }),
+      });
+      const data = await res.json();
+      setBulkMsg(`✅ ${ids.length}개 캠페인 Reset 완료 (${data.updated}건)`);
+
+      await fetchCampaigns(historyCountry, historyCity, page, search);
+      if (hasChecked) await handleCheckTarget();
+      clearSelection();
+    } catch (e: any) {
+      setBulkMsg(`❌ ${e.message}`);
+    } finally {
+      setBulkResetting(false);
+    }
+  };
+
+  // ── 선택 캠페인 일괄 재발송 (순차) ──────────────────
+  const handleBulkSend = async () => {
+    const ids = Array.from(selectedIds);
+    if (ids.length === 0) return;
+    if (!confirm(`선택한 ${ids.length}개 캠페인을 순서대로 발송하시겠습니까?\n(캠페인별로 실제 발송이 각각 실행됩니다)`)) return;
+
+    setBulkSending(true);
+    setBulkMsg(null);
+    setBulkProgress({ done: 0, total: ids.length });
+
+    let successCount = 0;
+
+    for (let i = 0; i < ids.length; i++) {
+      const id = ids[i];
+      try {
+        const res = await fetch("/api/admin/crm/campaigns/send", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ campaign_id: id }),
+        });
+        const data = await res.json();
+        if (data.success) successCount++;
+      } catch (e) {
+        console.error("BULK SEND FAILED:", id, e);
+      }
+      setBulkProgress({ done: i + 1, total: ids.length });
+    }
+
+    setBulkMsg(`✅ ${successCount}/${ids.length}개 캠페인 발송 완료`);
+    setBulkSending(false);
+    setBulkProgress(null);
+
+    await fetchCampaigns(historyCountry, historyCity, page, search);
+    if (hasChecked) await handleCheckTarget();
+    clearSelection();
   };
 
   if (loading) return <div style={{ padding: 40, color: "#888" }}>Loading...</div>;
@@ -395,7 +531,7 @@ export default function CampaignsPage() {
         SES 연결 완료. TEST SEND는 실제 이메일을 발송합니다.
       </p>
 
-      {/* History scope selector — Campaign History / KPI / Reset 전용 필터 */}
+      {/* History scope selector */}
       <div style={{ display: "flex", gap: 12, marginBottom: 20, flexWrap: "wrap", alignItems: "center" }}>
         <label style={labelStyle}>
           Country
@@ -453,7 +589,7 @@ export default function CampaignsPage() {
             background: "#dc2626",
           }}
         >
-          ↩ Reset SENT
+          ↩ Reset SENT (전체 범위)
         </button>
       </div>
 
@@ -478,7 +614,7 @@ export default function CampaignsPage() {
         </p>
       )}
 
-      {/* Create Campaign Form — 폼 전용 Country/City (History 필터와 독립) */}
+      {/* Create Campaign Form */}
       <div style={{ border: "1px solid #e5e7eb", borderRadius: 12, padding: 28, marginBottom: 40 }}>
         <h2 style={{ fontSize: 16, fontWeight: 600, marginBottom: 20 }}>새 Campaign 생성</h2>
 
@@ -657,7 +793,82 @@ export default function CampaignsPage() {
 
       {/* Campaign History */}
       <div>
-        <h2 style={{ fontSize: 16, fontWeight: 600, marginBottom: 14 }}>Campaign History</h2>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: 12, marginBottom: 14 }}>
+          <h2 style={{ fontSize: 16, fontWeight: 600 }}>Campaign History</h2>
+
+          {/* 검색어 (subject / campaign_id) */}
+          <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+            <input
+              value={searchInput}
+              onChange={(e) => setSearchInput(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleSearch();
+              }}
+              placeholder="🔍 Subject / Campaign ID 검색"
+              style={{ ...inputStyle, width: 260 }}
+            />
+            <button onClick={handleSearch} style={{ ...pageBtnStyle(false), padding: "8px 14px" }}>
+              검색
+            </button>
+            {search && (
+              <button onClick={handleClearSearch} style={{ ...pageBtnStyle(false), padding: "8px 14px" }}>
+                ✕ 초기화
+              </button>
+            )}
+          </div>
+        </div>
+
+        {search && (
+          <div style={{ fontSize: 12, color: "#6b7280", marginBottom: 10 }}>
+            검색어 "<strong>{search}</strong>" 결과 — {totalCampaigns}건
+          </div>
+        )}
+
+        {/* 선택된 캠페인 일괄 액션 바 */}
+        {selectedIds.size > 0 && (
+          <div style={{
+            display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap",
+            border: "1px solid #c7d2fe", background: "#eef2ff", borderRadius: 10,
+            padding: "12px 16px", marginBottom: 16,
+          }}>
+            <span style={{ fontSize: 13, fontWeight: 600, color: "#3730a3" }}>
+              {selectedIds.size}개 캠페인 선택됨
+            </span>
+
+            <button
+              onClick={handleBulkReset}
+              disabled={bulkResetting || bulkSending}
+              style={{ ...pageBtnStyle(false), background: "#dc2626", color: "#fff", border: "none" }}
+            >
+              {bulkResetting ? "복구 중..." : "↩ 선택 Reset"}
+            </button>
+
+            <button
+              onClick={handleBulkSend}
+              disabled={bulkResetting || bulkSending}
+              style={{ ...pageBtnStyle(false), background: "#111", color: "#fff", border: "none" }}
+            >
+              {bulkSending
+                ? `발송 중... (${bulkProgress?.done ?? 0}/${bulkProgress?.total ?? selectedIds.size})`
+                : "📧 선택 순차 발송"}
+            </button>
+
+            <button
+              onClick={clearSelection}
+              disabled={bulkResetting || bulkSending}
+              style={pageBtnStyle(false)}
+            >
+              선택 해제
+            </button>
+
+            {bulkMsg && (
+              <span style={{ fontSize: 12, color: bulkMsg.startsWith("✅") ? "#16a34a" : "#dc2626" }}>
+                {bulkMsg}
+              </span>
+            )}
+          </div>
+        )}
+
         {campaigns.length === 0 ? (
           <div style={{ color: "#9ca3af", fontSize: 13 }}>조건에 맞는 Campaign이 없습니다.</div>
         ) : (
@@ -666,7 +877,14 @@ export default function CampaignsPage() {
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
                 <thead>
                   <tr style={{ background: "#f3f4f6", borderBottom: "2px solid #e5e7eb" }}>
-                    {["Campaign ID", "Subject", "Country", "City", "대상 수", "Sent", "Opened", "Open %", "Clicked", "Click %", "Status", "Test Send", "생성일"].map((h) => (
+                    <th style={{ padding: "10px 14px" }}>
+                      <input
+                        type="checkbox"
+                        checked={allOnPageSelected}
+                        onChange={toggleSelectAllOnPage}
+                      />
+                    </th>
+                    {["Campaign ID", "Subject", "Country", "City", "대상 수", "Sent", "Opened", "Open %", "Clicked", "Click %", "Status", "Test Send", "Reset", "생성일"].map((h) => (
                       <th key={h} style={{ padding: "10px 14px", textAlign: "left", fontWeight: 600, whiteSpace: "nowrap" }}>{h}</th>
                     ))}
                   </tr>
@@ -675,6 +893,8 @@ export default function CampaignsPage() {
                   {campaigns.map((c) => {
                     const isSendingThis = sendingId === c.campaign_id;
                     const isSendingAny = sendingId !== null;
+                    const isResettingThis = rowResetting === c.campaign_id;
+                    const isSelected = selectedIds.has(c.campaign_id);
 
                     const statusColors: Record<string, { bg: string; fg: string }> = {
                       DRAFT: { bg: "#f3f4f6", fg: "#6b7280" },
@@ -685,7 +905,14 @@ export default function CampaignsPage() {
                     const statusStyle = statusColors[c.status] ?? statusColors.DRAFT;
 
                     return (
-                      <tr key={c.id} style={{ borderBottom: "1px solid #f0f0f0" }}>
+                      <tr key={c.id} style={{ borderBottom: "1px solid #f0f0f0", background: isSelected ? "#f5f7ff" : "transparent" }}>
+                        <td style={{ padding: "10px 14px" }}>
+                          <input
+                            type="checkbox"
+                            checked={isSelected}
+                            onChange={() => toggleRowSelect(c.campaign_id)}
+                          />
+                        </td>
                         <td style={{ padding: "10px 14px", fontFamily: "monospace", fontSize: 12 }}>{c.campaign_id}</td>
                         <td style={{ padding: "10px 14px", maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{c.subject}</td>
                         <td style={{ padding: "10px 14px", color: "#6b7280" }}>{c.country || "—"}</td>
@@ -720,6 +947,20 @@ export default function CampaignsPage() {
                                 : "📧 REAL SEND"}
                           </button>
                         </td>
+                        <td style={{ padding: "10px 14px" }}>
+                          <button
+                            onClick={() => handleRowReset(c.campaign_id)}
+                            disabled={isResettingThis}
+                            style={{
+                              padding: "4px 12px", borderRadius: 6, border: "1px solid #fca5a5",
+                              background: "#fff", color: "#dc2626", fontSize: 12,
+                              cursor: isResettingThis ? "not-allowed" : "pointer",
+                              opacity: isResettingThis ? 0.5 : 1,
+                            }}
+                          >
+                            {isResettingThis ? "복구 중..." : "↩ Reset"}
+                          </button>
+                        </td>
                         <td style={{ padding: "10px 14px", color: "#9ca3af", fontSize: 11, whiteSpace: "nowrap" }}>
                           {new Date(c.created_at).toLocaleDateString("ko-KR")}
                         </td>
@@ -730,7 +971,7 @@ export default function CampaignsPage() {
               </table>
             </div>
 
-            {/* Pagination — 현재 페이지 기준 최대 5개 번호만 표시 */}
+            {/* Pagination */}
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 16, flexWrap: "wrap", gap: 12 }}>
               <div style={{ fontSize: 12, color: "#6b7280" }}>
                 Showing {(page - 1) * PAGE_SIZE + 1}–{Math.min(page * PAGE_SIZE, totalCampaigns)} of {totalCampaigns} campaigns
