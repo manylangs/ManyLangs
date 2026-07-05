@@ -14,6 +14,8 @@ const LEVELS = [
       es: "Sustantivos cotidianos",
       fr: "Noms du quotidien",
       pt: "Substantivos do cotidiano",
+      zh: "日常名词",
+      jp: "日常名詞",
       ko: "일상 명사",
     },
   },
@@ -25,6 +27,8 @@ const LEVELS = [
       es: "Sustantivos cotidianos y sustantivos cotidianos ampliados",
       fr: "Noms du quotidien et noms du quotidien étendus",
       pt: "Substantivos do cotidiano e substantivos do cotidiano expandidos",
+      zh: "日常名词与扩展日常名词",
+      jp: "日常名詞と拡張日常名詞",
       ko: "일상 명사 및 확장된 일상 명사",
     },
   },
@@ -36,6 +40,8 @@ const LEVELS = [
       es: "Sustantivos cotidianos ampliados y sustantivos relacionados con la sociedad, la educación y la tecnología",
       fr: "Noms du quotidien étendus et noms liés à la société, à l'éducation et à la technologie",
       pt: "Substantivos do cotidiano expandidos e substantivos relacionados à sociedade, educação e tecnologia",
+      zh: "扩展日常名词与社会、教育、科技名词",
+      jp: "拡張日常名詞と社会・教育・技術関連名詞",
       ko: "확장된 일상 명사 및 사회, 교육, 기술 관련 명사",
     },
   },
@@ -47,6 +53,8 @@ const LEVELS = [
       es: "Sustantivos relacionados con la sociedad, la educación y la tecnología y sustantivos abstractos, políticos y relacionados con el futuro",
       fr: "Noms liés à la société, à l'éducation et à la technologie et noms abstraits, politiques et liés au futur",
       pt: "Substantivos relacionados à sociedade, educação e tecnologia e substantivos abstratos, políticos e relacionados ao futuro",
+      zh: "社会、教育、科技名词与抽象、政策及未来相关名词",
+      jp: "社会・教育・技術関連名詞と抽象・政策・未来関連名詞",
       ko: "사회, 교육, 기술 관련 명사 및 추상적, 정책적, 미래 관련 명사",
     },
   },
@@ -58,6 +66,8 @@ const LEVELS = [
       es: "Sustantivos abstractos, políticos y relacionados con el futuro",
       fr: "Noms abstraits, politiques et liés au futur",
       pt: "Substantivos abstratos, políticos e relacionados ao futuro",
+      zh: "抽象、政策及未来相关名词",
+      jp: "抽象・政策・未来関連名詞",
       ko: "추상적, 정책적, 미래 관련 명사",
     },
   },
@@ -69,6 +79,8 @@ const LEVELS = [
       es: "Sustantivos académicos y sustantivos avanzados",
       fr: "Noms académiques et noms avancés",
       pt: "Substantivos acadêmicos e substantivos avançados",
+      zh: "学术名词与高级名词",
+      jp: "学術名詞・上級名詞",
       ko: "학술 명사 및 고급 명사",
     },
   },
@@ -151,6 +163,12 @@ export default function Page() {
                 <br />                                    {/* ← 이 줄 추가 */}
                 <span style={{ fontSize: 12, opacity: 0.6 }}>
                   {lv.desc.ko}
+                </span>
+                <span style={{ fontSize: 12, opacity: 0.6 }}>
+                  {lv.desc.zh}
+                </span>
+                <span style={{ fontSize: 12, opacity: 0.6 }}>
+                  {lv.desc.jp}
                 </span>
               </div>
             </div>

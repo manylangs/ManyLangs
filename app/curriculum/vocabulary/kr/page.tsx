@@ -15,6 +15,8 @@ const LEVELS = [
       es: "Vocabulario básico",
       fr: "Vocabulaire de base",
       pt: "Vocabulário básico",
+      zh: "基础核心词汇",
+      jp: "基礎コア語彙",
     },
   },
   {
@@ -26,6 +28,8 @@ const LEVELS = [
       es: "Vocabulario básico ampliado",
       fr: "Vocabulaire de base élargi",
       pt: "Vocabulário básico ampliado",
+      zh: "基础扩展词汇",
+      jp: "基礎拡張語彙",
     },
   },
   {
@@ -37,6 +41,8 @@ const LEVELS = [
       es: "Vocabulario intermedio esencial",
       fr: "Vocabulaire intermédiaire essentiel",
       pt: "Vocabulário intermediário essencial",
+      zh: "中级核心词汇",
+      jp: "中級コア語彙",
     },
   },
   {
@@ -48,6 +54,8 @@ const LEVELS = [
       es: "Vocabulario abstracto y de sistemas",
       fr: "Vocabulaire abstrait et des systèmes",
       pt: "Vocabulário abstrato e de sistemas",
+      zh: "抽象与系统词汇",
+      jp: "抽象・システム語彙",
     },
   },
   {
@@ -59,6 +67,8 @@ const LEVELS = [
       es: "Vocabulario académico y abstracto avanzado",
       fr: "Vocabulaire académique et abstrait avancé",
       pt: "Vocabulário acadêmico e abstrato avançado",
+      zh: "高级学术与抽象词汇",
+      jp: "上級学術・抽象語彙",
     },
   },
   {
@@ -70,6 +80,8 @@ const LEVELS = [
       es: "Vocabulario académico especializado",
       fr: "Vocabulaire académique spécialisé",
       pt: "Vocabulário acadêmico especializado",
+      zh: "专业领域学术词汇",
+      jp: "専門分野の学術語彙",
     },
   },
 ];
@@ -151,6 +163,12 @@ export default function Page() {
                 <br />
                 <span style={{ fontSize: 12, opacity: 0.6 }}>
                   {lv.desc.pt}
+                </span>
+                <span style={{ fontSize: 12, opacity: 0.6 }}>
+                  {lv.desc.zh}
+                </span>
+                <span style={{ fontSize: 12, opacity: 0.6 }}>
+                  {lv.desc.jp}
                 </span>
               </div>
             </div>
