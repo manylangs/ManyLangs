@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { UI_TARGET_LABELS, UiLangKey } from "../uiLabels";
 
-const ORDERED_LANGS: UiLangKey[] = ["en", "es", "pt", "fr", "kr"];
+const ORDERED_LANGS: UiLangKey[] = ["en", "es", "pt", "fr"];
+// const ORDERED_LANGS: UiLangKey[] = ["en", "es", "pt", "fr", "kr"];
 
 export default function LangTabs({ currentLang }: { currentLang: UiLangKey }) {
   return (
