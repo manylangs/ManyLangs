@@ -63,7 +63,7 @@ export default function RealViewer({
   const [playingKey, setPlayingKey] = useState<string | null>(null);
 
   const handleSpeak = async (text: string, key: string) => {
-    if (!targetLang) return;
+    if (!lang) return;
 
     const trimmed = text.trim();
     if (!trimmed) return;
@@ -72,7 +72,7 @@ export default function RealViewer({
     const currentKey = key;
 
     try {
-      await speakText(trimmed, targetLang);
+      await speakText(trimmed, lang);
     } finally {
       setPlayingKey((prev) => (prev === currentKey ? null : prev));
     }
@@ -108,7 +108,7 @@ export default function RealViewer({
         setSentences([]);
 
         const res = await fetch(
-          `/api/content/manifest?lang=${targetLang}&series=real&level=${level}&chapter=${chapter}`
+          `/api/content/manifest?lang=${lang}&series=real&level=${level}&chapter=${chapter}`
         );
 
         if (!res.ok) throw new Error("manifest fetch failed");

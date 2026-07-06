@@ -56,7 +56,7 @@ export default function VocabularyViewer({
   const [playingKey, setPlayingKey] = useState<string | null>(null);
 
   const handleSpeak = async (text: string, key: string) => {
-    if (!targetLang) return;
+    if (!lang) return;
 
     const trimmed = text.trim();
     if (!trimmed) return;
@@ -65,7 +65,7 @@ export default function VocabularyViewer({
     const currentKey = key;
 
     try {
-      await speakText(trimmed, targetLang);
+      await speakText(trimmed, lang);
     } finally {
       setPlayingKey((prev) => (prev === currentKey ? null : prev));
     }
@@ -103,7 +103,7 @@ export default function VocabularyViewer({
         setStatus("loading");
 
         const res = await fetch(
-          `/api/content/manifest?lang=${targetLang}&series=voca&level=${level}&chapter=${chapter}`
+          `/api/content/manifest?lang=${lang}&series=voca&level=${level}&chapter=${chapter}`
         );
 
         if (!res.ok) throw new Error("manifest fetch failed");

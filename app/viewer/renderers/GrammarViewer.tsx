@@ -55,6 +55,7 @@ const buttonStyle = (active: boolean) => ({
 /* ================= component ================= */
 
 export default function GrammarViewer({
+  lang,
   level,
   chapter,
 }: Props) {
@@ -69,7 +70,7 @@ export default function GrammarViewer({
   const [playingKey, setPlayingKey] = useState<string | null>(null);
 
   const handleSpeak = async (text: string, key: string) => {
-    if (!targetLang) return;
+    if (!lang) return;
 
     const trimmed = text.trim();
     if (!trimmed) return;
@@ -78,7 +79,7 @@ export default function GrammarViewer({
     const currentKey = key;
 
     try {
-      await speakText(trimmed, targetLang);
+      await speakText(trimmed, lang);
     } finally {
       setPlayingKey((prev) => (prev === currentKey ? null : prev));
     }
@@ -107,7 +108,7 @@ export default function GrammarViewer({
         setStatus("loading");
 
         const res = await fetch(
-          `/api/content/manifest?lang=${targetLang}&series=grammar&level=${level}&chapter=${chapter}`
+          `/api/content/manifest?lang=${lang}&series=grammar&level=${level}&chapter=${chapter}`
         );
 
         if (!res.ok) throw new Error("manifest failed");

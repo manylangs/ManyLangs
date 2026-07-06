@@ -68,7 +68,7 @@ export default function ConversationViewer({
   const [playingKey, setPlayingKey] = useState<string | null>(null);
 
   const handleSpeak = async (text: string, key: string) => {
-    if (!targetLang) return;
+    if (!lang) return;
 
     const trimmed = text.trim();
     if (!trimmed) return;
@@ -77,7 +77,7 @@ export default function ConversationViewer({
     const currentKey = key;
 
     try {
-      await speakText(trimmed, targetLang);
+      await speakText(trimmed, lang);
     } finally {
       setPlayingKey((prev) => (prev === currentKey ? null : prev));
     }
@@ -100,7 +100,7 @@ export default function ConversationViewer({
         setStatus("loading");
 
         const res = await fetch(
-          `/api/content/manifest?lang=${targetLang}&series=conversation&level=${level}&chapter=${chapter}`
+          `/api/content/manifest?lang=${lang}&series=conversation&level=${level}&chapter=${chapter}`
         );
 
         // ✅ 1. manifest 실패 차단 (핵심)
