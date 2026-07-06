@@ -60,7 +60,7 @@ export default function GrammarViewer({
   chapter,
 }: Props) {
 
-  const { targetLang, showTargetText } = useViewerTarget();
+  const { showTargetText } = useViewerTarget();
 
   const [studyLang, setStudyLang] = useState<string>("en");
 
@@ -93,7 +93,7 @@ export default function GrammarViewer({
 
     if (filtered.length > 0) setStudyLang(filtered[0]);
 
-  }, [targetLang]);
+  }, [lang]);
 
   /* manifest + data load */
 
@@ -148,7 +148,7 @@ export default function GrammarViewer({
       cancelled = true;
     };
 
-  }, [targetLang, level, chapter]);
+  }, [lang, level, chapter]);
 
   const blocks = data?.blocks || [];
 

@@ -46,7 +46,7 @@ export default function VocabularyViewer({
 }: any) {
 
 
-  const { targetLang, showTargetText } = useViewerTarget();
+  const { showTargetText } = useViewerTarget();
   const [studyLang, setStudyLang] = useState<string>("en");
 
   const [blocks, setBlocks] = useState<VocaBlock[]>([]);
@@ -73,14 +73,14 @@ export default function VocabularyViewer({
   useEffect(() => {
 
     const filtered = ALL_STUDY_LANGS.filter(
-      (l) => l !== targetLang
+      (l) => l !== lang
     );
 
     if (!filtered.includes(studyLang)) {
       setStudyLang(filtered[0]);
     }
 
-  }, [targetLang]);
+  }, [lang]);
 
   const currentIndex = chapters.indexOf(chapter);
 
@@ -153,7 +153,7 @@ export default function VocabularyViewer({
       cancelled = true;
     };
 
-  }, [targetLang, level, chapter]);
+  }, [lang, level, chapter]);
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
@@ -171,7 +171,7 @@ export default function VocabularyViewer({
       {status === "ready" && (
         <>
           <VocaAudioController
-            lang={targetLang}
+            lang={lang}
             level={level}
             chapter={chapter}
           />

@@ -1,37 +1,36 @@
 "use client";
 
-import Link from "next/link";
+import { useViewerTarget } from "../context/ViewerTargetContext";
+import { SUPPORTED_LANGS } from "@/app/config/languages";
 import { UI_TARGET_LABELS, UiLangKey } from "../uiLabels";
 
-const ORDERED_LANGS: UiLangKey[] = ["en", "es", "pt", "fr"];
-// const ORDERED_LANGS: UiLangKey[] = ["en", "es", "pt", "fr", "kr"];
+export default function LangTabs() {
+  const { targetLang, setTargetLang } = useViewerTarget();
 
-export default function LangTabs({ currentLang }: { currentLang: UiLangKey }) {
   return (
-    <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
-      {ORDERED_LANGS.map((code) => {
-        const label = UI_TARGET_LABELS[code]; // ✅ 무조건 string 구조
-
+    <div style={{ display: "flex", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
+      {(SUPPORTED_LANGS as UiLangKey[]).map((code) => {
+        const label = UI_TARGET_LABELS[code];
         const text =
           code === "en" ? "English" : `${label.native} (${label.en})`;
+        const active = targetLang === code;
 
         return (
-          <Link
+          <button
             key={code}
-            href={`/viewer/${code}`}
+            onClick={() => setTargetLang(code)}
             style={{
               padding: "4px 8px",
               borderRadius: 4,
               fontSize: 14,
-              background: currentLang === code ? "#333" : "#eee",
-              color: currentLang === code ? "#fff" : "#333",
+              background: active ? "#333" : "#eee",
+              color: active ? "#fff" : "#333",
               border: "none",
-              cursor: currentLang === code ? "default" : "pointer",
-              textDecoration: "none",
+              cursor: active ? "default" : "pointer",
             }}
           >
             {text}
-          </Link>
+          </button>
         );
       })}
     </div>

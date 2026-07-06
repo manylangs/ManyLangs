@@ -49,7 +49,7 @@ export default function IdiomViewer({
   chapter,
 }: any) {
 
-  const { targetLang, showTargetText } = useViewerTarget();
+  const { showTargetText } = useViewerTarget();
 
   const [studyLang, setStudyLang] = useState<string>("en");
   const [blocks, setBlocks] = useState<IdiomBlock[]>([]);
@@ -76,14 +76,14 @@ export default function IdiomViewer({
   useEffect(() => {
 
     const filtered = ALL_STUDY_LANGS.filter(
-      (l) => l !== targetLang
+      (l) => l !== lang
     );
 
     if (filtered.length > 0) {
       setStudyLang(filtered[0]);
     }
 
-  }, [targetLang]);
+  }, [lang]);
 
   const currentIndex = chapters.indexOf(chapter);
 
@@ -156,7 +156,7 @@ export default function IdiomViewer({
       cancelled = true;
     };
 
-  }, [targetLang, level, chapter]);
+  }, [lang, level, chapter]);
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
@@ -174,7 +174,7 @@ export default function IdiomViewer({
       {status === "ready" && (
         <>
           <IdiomAudioController
-            lang={targetLang}
+            lang={lang}
             level={level}
             chapter={chapter}
           />

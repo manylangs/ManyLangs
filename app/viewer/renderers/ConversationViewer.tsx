@@ -59,7 +59,7 @@ export default function ConversationViewer({
   level,
   chapter,
 }: Props) {
-  const { targetLang, showTargetText } = useViewerTarget();
+  const { showTargetText } = useViewerTarget();
 
   const [studyLang, setStudyLang] = useState<string>("en");
   const [blocks, setBlocks] = useState<Block[]>([]);
@@ -88,7 +88,7 @@ export default function ConversationViewer({
   useEffect(() => {
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== lang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
-  }, [targetLang]);
+  }, [lang]);
 
   /* ================= 데이터 로딩 ================= */
 
@@ -148,7 +148,7 @@ export default function ConversationViewer({
     return () => {
       cancelled = true;
     };
-  }, [targetLang, level, chapter]);
+  }, [lang, level, chapter]);
 
   const idx = chapters.indexOf(chapter);
   const prev = idx > 0 ? chapters[idx - 1] : chapter;
@@ -165,7 +165,7 @@ export default function ConversationViewer({
       {status === "ready" && (
         <>
           <ConversationAudioController
-            lang={targetLang}
+            lang={lang}
             level={level}
             chapter={chapter}
           />

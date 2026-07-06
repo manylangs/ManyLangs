@@ -51,7 +51,7 @@ export default function RealViewer({
   chapter,
 }: Props) {
 
-  const { targetLang, showTargetText } = useViewerTarget();
+  const { showTargetText } = useViewerTarget();
 
   const [studyLang, setStudyLang] = useState<string>("en");
 
@@ -81,7 +81,7 @@ export default function RealViewer({
   useEffect(() => {
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== lang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
-  }, [targetLang]);
+  }, [lang]);
 
   const currentIndex = chapters.indexOf(chapter);
 
@@ -178,7 +178,7 @@ export default function RealViewer({
       cancelled = true;
     };
 
-  }, [targetLang, level, chapter]);
+  }, [lang, level, chapter]);
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: 24 }}>
@@ -294,7 +294,7 @@ export default function RealViewer({
 
               {sentences.map((s, i) => {
 
-                const targetText = s.texts?.[targetLang] ?? "";
+                const targetText = s.texts?.[lang] ?? "";
 
                 const studyText =
                   s.texts?.[studyLang] ?? "";

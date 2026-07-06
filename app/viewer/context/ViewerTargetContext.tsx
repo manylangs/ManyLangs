@@ -88,16 +88,6 @@ export function ViewerTargetProvider({
 
   /* ================= studyLang 자동 설정 ================= */
 
-  useEffect(() => {
-    const others = SUPPORTED_LANGS.filter(
-      (l) => l !== targetLang
-    );
-
-    if (others.length > 0) {
-      setStudyLang(others[0]);
-    }
-  }, [targetLang]);
-
   /* ================= memo ================= */
 
   const value = useMemo<ViewerTargetContextValue>(() => {
