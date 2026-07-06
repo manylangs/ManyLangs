@@ -14,7 +14,6 @@ export default function VocaAudioController({
   level,
   chapter,
 }: Props) {
-
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const [audioSrc, setAudioSrc] = useState("");
@@ -42,34 +41,24 @@ export default function VocaAudioController({
   const krCues =
     `https://firebasestorage.googleapis.com/v0/b/manylangs-55fd3.firebasestorage.app/o/${encodeURIComponent(`content/voca/kr/${level}/${chapter}/audio/${file}.cues.json`)}?alt=media`;
 
-
   useEffect(() => {
-
     let cancelled = false;
 
     async function resolveAudio() {
-
       try {
-
         const res = await fetch(langCues);
 
         if (res.ok) {
-
           setAudioSrc(langAudio);
           setCuesSrc(langCues);
           return;
-
         }
-
       } catch { }
 
       if (!cancelled) {
-
         setAudioSrc(krAudio);
         setCuesSrc(krCues);
-
       }
-
     }
 
     resolveAudio();
@@ -77,27 +66,22 @@ export default function VocaAudioController({
     return () => {
       cancelled = true;
     };
-
   }, [langAudio]);
 
   useEffect(() => {
-
     if (!cuesSrc) return;
 
     let cancelled = false;
 
     async function loadCues() {
-
       setReady(false);
       setIndex(0);
 
       try {
-
         const res = await fetch(cuesSrc);
         const json = await res.json();
 
         if (!cancelled) {
-
           const list =
             json.setStartMs ??
             json.sets?.map((s: any) => s.start_ms) ??
@@ -106,20 +90,13 @@ export default function VocaAudioController({
 
           setCues(list);
           setReady(true);
-
         }
-
       } catch {
-
         if (!cancelled) {
-
           setCues([]);
           setReady(false);
-
         }
-
       }
-
     }
 
     loadCues();
@@ -127,39 +104,39 @@ export default function VocaAudioController({
     return () => {
       cancelled = true;
     };
-
   }, [cuesSrc]);
 
   useEffect(() => {
-
     const el = audioRef.current;
     if (!el) return;
 
     el.pause();
     el.currentTime = 0;
     el.load();
-
   }, [audioSrc]);
 
   const seekTo = (next: number) => {
-
     const el = audioRef.current;
     if (!el) return;
 
     if (next < 0 || next >= cues.length) return;
 
-    el.currentTime = cues[next] / 1000;
+    // 첫 음절 잘림 방지
+    const target = Math.max(0, cues[next] / 1000 - 0.03);
 
-    el.play().catch(() => { });
+    el.pause();
+    el.currentTime = target;
+
+    requestAnimationFrame(() => {
+      el.play().catch(() => { });
+    });
 
     setIndex(next);
-
   };
 
   if (!audioSrc) return null;
 
   return (
-
     <section
       style={{
         position: "sticky",
@@ -172,7 +149,6 @@ export default function VocaAudioController({
         marginBottom: 24,
       }}
     >
-
       <AudioPlayer
         key={audioSrc}
         ref={audioRef}
@@ -180,7 +156,6 @@ export default function VocaAudioController({
       />
 
       {cues.length > 0 && (
-
         <div
           style={{
             display: "flex",
@@ -188,7 +163,6 @@ export default function VocaAudioController({
             marginTop: 12,
           }}
         >
-
           <button
             disabled={!ready || index === 0}
             onClick={() => seekTo(index - 1)}
@@ -206,13 +180,8 @@ export default function VocaAudioController({
           >
             Next ▶
           </button>
-
         </div>
-
       )}
-
     </section>
-
   );
-
 }
