@@ -14,7 +14,6 @@ export default function ConversationAudioController({
   level,
   chapter,
 }: Props) {
-
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const [cues, setCues] = useState<number[]>([]);
@@ -37,16 +36,13 @@ export default function ConversationAudioController({
 
   /* cues load */
   useEffect(() => {
-
     let cancelled = false;
 
     async function loadCues() {
-
       setReady(false);
       setIndex(0);
 
       try {
-
         const res = await fetch(cuesSrc, { cache: "no-store" });
 
         if (!res.ok) {
@@ -57,7 +53,6 @@ export default function ConversationAudioController({
         const json = await res.json();
 
         if (!cancelled) {
-
           const list =
             json.setStartMs ??
             json.sets?.map((s: any) => s.start_ms) ??
@@ -65,22 +60,15 @@ export default function ConversationAudioController({
             [];
 
           setCues(list);
-
-          setCues(list);
           setReady(true);
-
         }
-
       } catch (e) {
-
         if (!cancelled) {
           console.error("cue parse error:", e);
           setCues([]);
           setReady(false);
         }
-
       }
-
     }
 
     loadCues();
@@ -88,39 +76,38 @@ export default function ConversationAudioController({
     return () => {
       cancelled = true;
     };
-
   }, [cuesSrc]);
-
 
   /* audio reset */
   useEffect(() => {
-
     const el = audioRef.current;
     if (!el) return;
 
     el.pause();
     el.currentTime = 0;
     el.load();
-
   }, [audioSrc]);
 
-
   const seekTo = (next: number) => {
-
     const el = audioRef.current;
     if (!el) return;
 
     if (next < 0 || next >= cues.length) return;
 
-    el.currentTime = cues[next] / 1000;
-    el.play().catch(() => { });
-    setIndex(next);
+    // 첫 음절 잘림 방지
+    const target = Math.max(0, cues[next] / 1000 - 0.03);
 
+    el.pause();
+    el.currentTime = target;
+
+    requestAnimationFrame(() => {
+      el.play().catch(() => { });
+    });
+
+    setIndex(next);
   };
 
-
   return (
-
     <section
       style={{
         position: "sticky",
@@ -132,7 +119,6 @@ export default function ConversationAudioController({
         borderBottom: "1px solid #eee",
       }}
     >
-
       <AudioPlayer
         ref={audioRef}
         key={audioSrc}
@@ -140,7 +126,6 @@ export default function ConversationAudioController({
       />
 
       {cues.length > 0 && (
-
         <div
           style={{
             display: "flex",
@@ -148,7 +133,6 @@ export default function ConversationAudioController({
             marginTop: 12,
           }}
         >
-
           <button
             disabled={!ready || index === 0}
             onClick={() => seekTo(index - 1)}
@@ -166,13 +150,8 @@ export default function ConversationAudioController({
           >
             Next ▶
           </button>
-
         </div>
-
       )}
-
     </section>
-
   );
-
 }
