@@ -184,7 +184,7 @@ export default function IdiomViewer({
           {/* Study Lang */}
           <div style={{ display: "flex", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
             {ALL_STUDY_LANGS
-              .filter((l) => l !== targetLang)
+              .filter((l) => l !== lang)
               .map((l) => (
                 <button
                   key={l}
@@ -208,7 +208,7 @@ export default function IdiomViewer({
             {LEVELS.map((lv) => (
               <Link
                 key={lv}
-                href={`/viewer/${targetLang}/idiom/${lv}/001`}
+                href={`/viewer/${lang}/idiom/${lv}/001`}
                 style={{
                   ...buttonStyle(lv === level),
                   textDecoration: "none",
@@ -226,11 +226,11 @@ export default function IdiomViewer({
               marginBottom: 12,
             }}
           >
-            <Link href={`/viewer/${targetLang}/idiom/${level}/${prev}`}>
+            <Link href={`/viewer/${lang}/idiom/${level}/${prev}`}>
               ← Prev
             </Link>
 
-            <Link href={`/viewer/${targetLang}/idiom/${level}/${next}`}>
+            <Link href={`/viewer/${lang}/idiom/${level}/${next}`}>
               Next →
             </Link>
           </div>
@@ -246,7 +246,7 @@ export default function IdiomViewer({
             {chapters.map((c) => (
               <Link
                 key={c}
-                href={`/viewer/${targetLang}/idiom/${level}/${c}`}
+                href={`/viewer/${lang}/idiom/${level}/${c}`}
                 style={{
                   padding: "4px 8px",
                   fontSize: 13,

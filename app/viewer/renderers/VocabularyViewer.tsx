@@ -181,7 +181,7 @@ export default function VocabularyViewer({
           {/* Study Lang */}
           <div style={{ display: "flex", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
             {ALL_STUDY_LANGS
-              .filter((l) => l !== targetLang)
+              .filter((l) => l !== lang)
               .map((l) => (
                 <button
                   key={l}
@@ -202,11 +202,11 @@ export default function VocabularyViewer({
               marginBottom: 12,
             }}
           >
-            <Link href={`/viewer/${targetLang}/voca/${level}/${prev}`}>
+            <Link href={`/viewer/${lang}/voca/${level}/${prev}`}>
               ← Prev
             </Link>
 
-            <Link href={`/viewer/${targetLang}/voca/${level}/${next}`}>
+            <Link href={`/viewer/${lang}/voca/${level}/${next}`}>
               Next →
             </Link>
           </div>
@@ -224,7 +224,7 @@ export default function VocabularyViewer({
             {chapters.map((c) => (
               <Link
                 key={c}
-                href={`/viewer/${targetLang}/voca/${level}/${c}`}
+                href={`/viewer/${lang}/voca/${level}/${c}`}
                 style={{
                   padding: "4px 8px",
                   fontSize: 13,

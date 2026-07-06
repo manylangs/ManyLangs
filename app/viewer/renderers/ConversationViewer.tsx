@@ -86,7 +86,7 @@ export default function ConversationViewer({
   /* ================= studyLang 자동 설정 ================= */
 
   useEffect(() => {
-    const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
+    const filtered = ALL_STUDY_LANGS.filter((l) => l !== lang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
   }, [targetLang]);
 
@@ -173,7 +173,7 @@ export default function ConversationViewer({
           <div style={{ height: 30 }} />
 
           {/* 학습언어 선택 */}<div style={{ display: "flex", gap: 8, marginBottom: 12, flexWrap: "wrap" }}>
-            {ALL_STUDY_LANGS.filter((l) => l !== targetLang).map((l) => (
+            {ALL_STUDY_LANGS.filter((l) => l !== lang).map((l) => (
               <button
                 key={l}
                 onClick={() => setStudyLang(l)}
@@ -186,10 +186,10 @@ export default function ConversationViewer({
 
           {/* 이동 */}
           <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <Link href={`/viewer/${targetLang}/conversation/${level}/${prev}`}>
+            <Link href={`/viewer/${lang}/conversation/${level}/${prev}`}>
               ← Prev
             </Link>
-            <Link href={`/viewer/${targetLang}/conversation/${level}/${next}`}>
+            <Link href={`/viewer/${lang}/conversation/${level}/${next}`}>
               Next →
             </Link>
           </div>
@@ -199,7 +199,7 @@ export default function ConversationViewer({
             {chapters.map((ch) => (
               <Link
                 key={ch}
-                href={`/viewer/${targetLang}/conversation/${level}/${ch}`}
+                href={`/viewer/${lang}/conversation/${level}/${ch}`}
                 style={{
                   padding: "4px 8px",
                   background: ch === chapter ? "#333" : "#eee",

@@ -89,7 +89,7 @@ export default function GrammarViewer({
 
   useEffect(() => {
 
-    const filtered = STUDY_LANGS.filter((l) => l !== targetLang);
+    const filtered = STUDY_LANGS.filter((l) => l !== lang);
 
     if (filtered.length > 0) setStudyLang(filtered[0]);
 
@@ -243,7 +243,7 @@ export default function GrammarViewer({
 
           <div style={{ display: "flex", gap: 8, marginBottom: 12, flexWrap: "wrap" }}>
             {STUDY_LANGS
-              .filter((l) => l !== targetLang)
+              .filter((l) => l !== lang)
               .map((l) => (
                 <button
                   key={l}
@@ -259,11 +259,11 @@ export default function GrammarViewer({
 
           <div style={{ display: "flex", justifyContent: "space-between" }}>
 
-            <Link href={`/viewer/${targetLang}/grammar/${level}/${prev}`}>
+            <Link href={`/viewer/${lang}/grammar/${level}/${prev}`}>
               ← Prev
             </Link>
 
-            <Link href={`/viewer/${targetLang}/grammar/${level}/${next}`}>
+            <Link href={`/viewer/${lang}/grammar/${level}/${next}`}>
               Next →
             </Link>
 
@@ -287,7 +287,7 @@ export default function GrammarViewer({
               return (
                 <Link
                   key={ch}
-                  href={`/viewer/${targetLang}/grammar/${level}/${ch}`}
+                  href={`/viewer/${lang}/grammar/${level}/${ch}`}
                   style={{
                     padding: "4px 8px",
                     fontSize: 13,

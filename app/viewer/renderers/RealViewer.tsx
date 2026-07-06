@@ -79,7 +79,7 @@ export default function RealViewer({
   };
   /* study language 자동 설정 */
   useEffect(() => {
-    const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
+    const filtered = ALL_STUDY_LANGS.filter((l) => l !== lang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
   }, [targetLang]);
 
@@ -207,7 +207,7 @@ export default function RealViewer({
 
           <div style={{ display: "flex", gap: 8, marginBottom: 12, flexWrap: "wrap" }}>
             {ALL_STUDY_LANGS
-              .filter((l) => l !== targetLang)
+              .filter((l) => l !== lang)
               .map((l) => (
                 <button
                   key={l}
@@ -222,11 +222,11 @@ export default function RealViewer({
           {/* prev next */}
 
           <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <Link href={`/viewer/${targetLang}/real/${level}/${prev}`}>
+            <Link href={`/viewer/${lang}/real/${level}/${prev}`}>
               ← Prev
             </Link>
 
-            <Link href={`/viewer/${targetLang}/real/${level}/${next}`}>
+            <Link href={`/viewer/${lang}/real/${level}/${next}`}>
               Next →
             </Link>
           </div>
@@ -244,7 +244,7 @@ export default function RealViewer({
             {chapters.map((ch) => (
               <Link
                 key={ch}
-                href={`/viewer/${targetLang}/real/${level}/${ch}`}
+                href={`/viewer/${lang}/real/${level}/${ch}`}
                 style={{
                   padding: "4px 8px",
                   fontSize: 13,
