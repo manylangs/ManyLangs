@@ -3,7 +3,6 @@
 import { speakText } from "@/utils/tts";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 import VocaAudioController from "@/components/audio/controllers/VocaAudioController";
 import { SUPPORTED_LANGS } from "@/app/config/languages";
 import { UI_TARGET_LABELS, UiLangKey } from "@/app/viewer/uiLabels";
@@ -23,6 +22,7 @@ type Block = {
 };
 
 type Props = {
+  targetLang: string;
   level: string;
   chapter: string;
 };
@@ -54,10 +54,14 @@ const sentenceStyle: React.CSSProperties = {
   lineHeight: 1.7,
 };
 
-export default function DemoVocaViewer({ level, chapter }: Props) {
-  const { targetLang } = useViewerTarget();
-
+export default function DemoVocaViewer({
+  targetLang,
+  level,
+  chapter,
+}: Props) {
   const [showTargetText, setShowTargetText] = useState(true);
+
+
   const [studyLang, setStudyLang] = useState<string>("en");
   const [blocks, setBlocks] = useState<Block[]>([]);
   const [status, setStatus] = useState<Status>("loading");

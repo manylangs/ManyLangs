@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import ConversationAudioController from "@/components/audio/controllers/ConversationAudioController";
-import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 import { speakText } from "@/utils/tts";
 import { SUPPORTED_LANGS } from "@/app/config/languages";
 import { UI_TARGET_LABELS, UiLangKey } from "@/app/viewer/uiLabels";
@@ -22,6 +21,7 @@ type Block = {
 };
 
 type Props = {
+  targetLang: string;
   level: string;
   chapter: string;
 };
@@ -113,8 +113,11 @@ const guideTexts: Record<string, string[]> = {
 
 /* ================= COMPONENT ================= */
 
-export default function DemoConversationViewer({ level, chapter }: Props) {
-  const { targetLang } = useViewerTarget();
+export default function DemoConversationViewer({
+  targetLang,
+  level,
+  chapter,
+}: Props) {
 
   const [showTargetText, setShowTargetText] = useState(true);
   const [showGuide, setShowGuide] = useState(true);

@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 import { speakText } from "@/utils/tts";
 import RealAudioController from "@/components/audio/controllers/RealAudioController";
 import { SUPPORTED_LANGS } from "@/app/config/languages";
@@ -17,6 +16,7 @@ type Block =
   | { type: "description"; sentences: Sentence[] };
 
 type Props = {
+  targetLang: string;
   level: string;
   chapter: string;
 };
@@ -55,8 +55,11 @@ const sentenceStyle: React.CSSProperties = {
 
 /* ================= 컴포넌트 ================= */
 
-export default function DemoRealViewer({ level, chapter }: Props) {
-  const { targetLang } = useViewerTarget();
+export default function DemoRealViewer({
+  targetLang,
+  level,
+  chapter,
+}: Props) {
 
   const [blocks, setBlocks] = useState<Block[]>([]);
   const [status, setStatus] = useState<Status>("loading");

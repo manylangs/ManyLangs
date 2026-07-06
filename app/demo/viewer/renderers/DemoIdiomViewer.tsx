@@ -3,7 +3,6 @@
 import { speakText } from "@/utils/tts";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 import IdiomAudioController from "@/components/audio/controllers/IdiomAudioController";
 import { SUPPORTED_LANGS } from "@/app/config/languages";
 import { UI_TARGET_LABELS, UiLangKey } from "@/app/viewer/uiLabels";
@@ -26,6 +25,7 @@ type Block = {
 };
 
 type Props = {
+  targetLang: string;
   level: string;
   chapter: string;
 };
@@ -56,10 +56,11 @@ const sentenceStyle: React.CSSProperties = {
   lineHeight: 1.7,
 };
 
-export default function DemoIdiomViewer({ level, chapter }: Props) {
-  const { targetLang } = useViewerTarget();
-  if (!targetLang) return null;
-
+export default function DemoIdiomViewer({
+  targetLang,
+  level,
+  chapter,
+}: Props) {
   const lang = targetLang;
 
   const [showTargetText, setShowTargetText] = useState(true);
@@ -69,7 +70,6 @@ export default function DemoIdiomViewer({ level, chapter }: Props) {
   const [playingKey, setPlayingKey] = useState<string | null>(null);
 
   const handleSpeak = async (text: string, key: string) => {
-    if (!targetLang) return;
 
     const trimmed = text.trim();
     if (!trimmed) return;

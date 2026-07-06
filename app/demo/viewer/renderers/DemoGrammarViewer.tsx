@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useViewerTarget } from "@/app/viewer/context/ViewerTargetContext";
 import { speakText } from "@/utils/tts";
 import { SUPPORTED_LANGS } from "@/app/config/languages";
 import { UI_TARGET_LABELS, UiLangKey } from "@/app/viewer/uiLabels";
@@ -11,6 +10,7 @@ import { UI_TARGET_LABELS, UiLangKey } from "@/app/viewer/uiLabels";
 const ALL_STUDY_LANGS = SUPPORTED_LANGS;
 
 type Props = {
+  targetLang: string;
   level: string;
   chapter: string;
 };
@@ -52,8 +52,11 @@ const sentenceStyle: React.CSSProperties = {
   lineHeight: 1.7,
 };
 
-export default function DemoGrammarViewer({ level, chapter }: Props) {
-  const { targetLang } = useViewerTarget();
+export default function DemoGrammarViewer({
+  targetLang,
+  level,
+  chapter,
+}: Props) {
   const lang = targetLang;
 
   const [showTargetText, setShowTargetText] = useState(true);
