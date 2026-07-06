@@ -122,7 +122,7 @@ export default function VocaAudioController({
     if (next < 0 || next >= cues.length) return;
 
     // 첫 음절 잘림 방지
-    const target = Math.max(0, cues[next] / 1000 - 0.03);
+    const target = Math.max(0, cues[next] / 1000 - 0.07);
 
     el.pause();
     el.currentTime = target;
