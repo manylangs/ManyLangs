@@ -64,7 +64,7 @@ export default function DemoRealViewer({
   const [blocks, setBlocks] = useState<Block[]>([]);
   const [status, setStatus] = useState<Status>("loading");
   const [showTarget, setShowTarget] = useState(true);
-  const [studyLang, setStudyLang] = useState<string>("en");
+  const [studyLang, setStudyLang] = useState("");
   const [playingKey, setPlayingKey] = useState<string | null>(null);
   const [audioSrc, setAudioSrc] = useState("");
   const [imageSrc, setImageSrc] = useState("");
@@ -135,6 +135,13 @@ export default function DemoRealViewer({
       setPlayingKey((prev) => (prev === currentKey ? null : prev));
     }
   };
+  useEffect(() => {
+    const filtered = SUPPORTED_LANGS.filter((l) => l !== targetLang);
+
+    if (filtered.length > 0) {
+      setStudyLang(filtered[0]);
+    }
+  }, [targetLang]);
   /* ================= 데이터 로드 ================= */
 
   useEffect(() => {
