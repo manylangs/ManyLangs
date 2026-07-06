@@ -97,7 +97,19 @@ SERVICE_ACCOUNT_PATH = Path(
 )
 
 # 지원하는 시리즈 목록 (검증용. 새 시리즈가 생기면 여기에 추가)
-VALID_SERIES = ["conversation", "voca", "idiom", "real", "grammar"]
+# 지원하는 시리즈 목록
+VALID_SERIES = [
+    "conversation",
+    "voca",
+    "idiom",
+    "real",
+    "grammar",
+    "demo/conversation",
+    "demo/voca",
+    "demo/idiom",
+    "demo/real",
+    "demo/grammar",
+]
 
 # manifest 재생성 스크립트 (--manifest 옵션 사용 시 실행)
 MANIFEST_SCRIPT = Path("scripts/generate-manifests-from-storage.js")
@@ -164,22 +176,20 @@ def build_scan_root(args) -> Path:
     --series / --lang / --level / --chapter 옵션에 맞는
     로컬 탐색 시작 폴더를 계산한다.
 
-    옵션이 주어질수록 더 좁은 경로로 내려간다:
-        (없음)                                   -> content/
-        --series conversation                     -> content/conversation/
-        --series conversation --lang en            -> content/conversation/en/
-        ... --level a1                              -> content/conversation/en/a1/
-        ... --chapter 001                            -> content/conversation/en/a1/001/
+    demo/conversation 같은 하위 경로도 지원한다.
     """
     root = LOCAL_ROOT
 
     if args.series:
-        root = root / args.series
-    if args.series and args.lang:
+        root = root.joinpath(*args.series.split("/"))
+
+    if args.lang:
         root = root / args.lang
-    if args.series and args.lang and args.level:
+
+    if args.level:
         root = root / args.level
-    if args.series and args.lang and args.level and args.chapter:
+
+    if args.chapter:
         root = root / args.chapter
 
     return root
@@ -232,25 +242,25 @@ def guess_content_type(path: Path) -> str:
 
 def compute_remote_prefix(args) -> str:
     """
-    옵션 조합에 맞는 Storage list_blobs() prefix 를 계산한다.
-    build_scan_root() 와 동일한 규칙을 Storage 경로 기준으로 적용한다.
-
-    --lang 만 단독으로 준 경우(시리즈 미지정)는 여러 시리즈에 걸쳐 있으므로
-    안전하게 REMOTE_ROOT 전체("content")를 prefix 로 사용하고,
-    실제 필터링은 로컬 파일 목록 기준으로 이미 걸러진 상태이므로 문제 없다.
+    Storage prefix 계산.
+    demo/conversation 같은 하위 경로도 지원한다.
     """
+
     if not args.series:
-        # --series 가 없으면 (옵션 없음 또는 --lang 단독) 전체 content 를 조회 범위로 삼는다.
         return REMOTE_ROOT
 
-    prefix = f"{REMOTE_ROOT}/{args.series}"
+    prefix = REMOTE_ROOT + "/" + "/".join(args.series.split("/"))
+
     if args.lang:
         prefix += f"/{args.lang}"
-    if args.lang and args.level:
+
+    if args.level:
         prefix += f"/{args.level}"
-    if args.lang and args.level and args.chapter:
+
+    if args.chapter:
         prefix += f"/{args.chapter}"
-    return prefix
+
+    return 
 
 
 def fetch_existing_blob_names(bucket, prefix: str) -> set:

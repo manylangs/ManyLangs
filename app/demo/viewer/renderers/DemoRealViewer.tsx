@@ -67,7 +67,7 @@ export default function DemoRealViewer({ level, chapter }: Props) {
   const [imageSrc, setImageSrc] = useState("");
 
   const guideTexts: Record<string, string[]> = {
-   en: [
+    en: [
       "1. To continue to the next chapter, sign up by clicking Unlock Full Access.",
       "2. You can change the study language using the buttons above.",
       "3. Press Toggle Target to hide the target language and practice translating.",
@@ -101,6 +101,20 @@ export default function DemoRealViewer({ level, chapter }: Props) {
       "3. Toggle Target을 누르면 목표 언어를 숨기고 번역 연습을 할 수 있습니다.",
       "4. 현재 A1 Chapter 1을 보고 있습니다. A1, A2, B1, B2, C1, 그리고 C2 레벨을 선택할 수 있습니다.",
       "5. 문장을 탭하거나 클릭하면 해당 부분만 재생됩니다.",
+    ],
+    zh: [
+      "1. 点击“解锁完整内容（Unlock Full Access）”并注册，即可继续学习下一章节。",
+      "2. 您可以使用上方按钮切换学习语言。",
+      "3. 点击“切换目标语言（Toggle Target）”可隐藏目标语言，并进行翻译练习。",
+      "4. 您当前正在学习 A1 第1章。您可以选择 A1、A2、B1、B2、C1 和 C2 等级。",
+      "5. 点击任意句子即可仅播放该句音频。",
+    ],
+    jp: [
+      "1. 「Unlock Full Access（すべてのコンテンツを解除）」をクリックして登録すると、次のチャプターへ進めます。",
+      "2. 上のボタンから学習言語を変更できます。",
+      "3. 「Toggle Target」を押すと、学習対象言語を非表示にして翻訳練習ができます。",
+      "4. 現在は A1 のチャプター1を学習中です。A1、A2、B1、B2、C1、C2 のレベルを選択できます。",
+      "5. 文をタップまたはクリックすると、その文だけを再生できます。",
     ],
   };
   const handleSpeak = async (text: string, key: string) => {
