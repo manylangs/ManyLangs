@@ -19,9 +19,23 @@ export async function sendEmail(
     text: string,
     trackingId?: string
 ) {
-    // HTML 본문 생성
+    // HTML Escape + 줄바꿈 유지
+    const escaped = text
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/\r\n/g, "\n")
+        .replace(/\n/g, "<br>");
+
     let bodyHtml = `
-<pre style="white-space:pre-wrap;font-family:inherit">${text}</pre>
+<div style="
+  font-family:Arial,sans-serif;
+  font-size:15px;
+  line-height:1.7;
+  color:#222;
+">
+${escaped}
+</div>
 `;
 
     // 클릭 트래킹 링크 치환 (HTML만)
@@ -31,15 +45,19 @@ export async function sendEmail(
 
     // Open Pixel 추가
     const htmlBody = `
+<!DOCTYPE html>
 <html>
-  <body style="font-family:Arial,sans-serif;line-height:1.6">
-    ${bodyHtml}
+<head>
+<meta charset="UTF-8">
+</head>
+<body style="margin:24px;font-family:Arial,sans-serif;line-height:1.7;color:#222;">
+  ${bodyHtml}
 
-    ${trackingId
-            ? `<img src="https://manylangs.studio/api/track/open?id=${trackingId}" width="1" height="1" style="display:none" />`
+  ${trackingId
+            ? `<img src="https://manylangs.studio/api/track/open?id=${trackingId}" width="1" height="1" style="display:none;" alt="" />`
             : ""
         }
-  </body>
+</body>
 </html>
 `;
 
@@ -55,7 +73,6 @@ export async function sendEmail(
                         Data: subject,
                     },
                     Body: {
-                        // TEXT는 그대로 유지
                         Text: {
                             Data: text,
                         },
