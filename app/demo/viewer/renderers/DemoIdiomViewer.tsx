@@ -285,6 +285,18 @@ export default function DemoIdiomViewer({
               >
                 Copy link
               </button>
+
+              <Link href="/app">
+                <button
+                  style={{
+                    ...buttonStyle(false),
+                    background: "#111",
+                    color: "#fff",
+                  }}
+                >
+                  Unlock Full Access
+                </button>
+              </Link>
             </div>
           </div>
 

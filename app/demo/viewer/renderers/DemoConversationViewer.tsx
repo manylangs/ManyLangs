@@ -255,14 +255,16 @@ export default function DemoConversationViewer({
           }}
         >
 
-          {/* 🔥 1줄 */}
-          {/* 🔥 1줄: Back / Toggle / Copy */}
+          {/* 🔥 1줄: Back / Toggle / Copy / Unlock */}
           <div
             style={{
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
               gap: 6,
+              flexWrap: "nowrap",
+              overflowX: "auto",
+              minWidth: 0,
             }}
           >
             <Link
@@ -273,12 +275,21 @@ export default function DemoConversationViewer({
                 color: "#111",
                 textDecoration: "none",
                 flexShrink: 0,
+                marginRight: 6,
               }}
             >
               ← Back
             </Link>
 
-            <div style={{ display: "flex", gap: 6, flexShrink: 0 }}>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "nowrap",
+                gap: 6,
+                minWidth: 0,
+                flexShrink: 0,
+              }}
+            >
               <button
                 onClick={() => setShowTargetText(!showTargetText)}
                 style={buttonStyle(false)}
@@ -290,7 +301,9 @@ export default function DemoConversationViewer({
                 onClick={async () => {
                   if (navigator.share) {
                     try {
-                      await navigator.share({ url: window.location.href });
+                      await navigator.share({
+                        url: window.location.href,
+                      });
                     } catch { }
                   } else {
                     await navigator.clipboard.writeText(window.location.href);
@@ -301,6 +314,18 @@ export default function DemoConversationViewer({
               >
                 Copy link
               </button>
+
+              <Link href="/app">
+                <button
+                  style={{
+                    ...buttonStyle(false),
+                    background: "#111",
+                    color: "#fff",
+                  }}
+                >
+                  Unlock Full Access
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -312,7 +337,6 @@ export default function DemoConversationViewer({
               gap: 6,
               overflowX: "auto",
               minWidth: 0,
-              marginTop: 6,
             }}
           >
             {ALL_STUDY_LANGS
@@ -326,31 +350,6 @@ export default function DemoConversationViewer({
                   {UI_TARGET_LABELS[l as UiLangKey]?.native ?? l.toUpperCase()}
                 </button>
               ))}
-          </div>
-
-          {/* 🔥 2줄 Unlock */}
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "nowrap",
-              gap: 6,
-              minWidth: 0,
-              flexShrink: 0,
-              justifyContent: "flex-end", // ✅ 추가
-            }}
-          >
-            <Link href="/app" style={{ width: "100%" }}>
-              <button
-                style={{
-                  ...buttonStyle(false),
-                  background: "#111",
-                  color: "#fff",
-                  width: "100%",
-                }}
-              >
-                Unlock Full Access
-              </button>
-            </Link>
           </div>
 
         </div>
