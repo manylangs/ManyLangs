@@ -11,5 +11,5 @@ export const LANGUAGES = [
 export const RELEASED_LANGS = LANGUAGES.map(l => l.code);
 
 // 🌐 학습언어 버튼(번역 보기용 UI 언어) — 코스 출시 여부와 무관하게 항상 5개 노출
-// export const SUPPORTED_LANGS = ["en", "es", "fr", "pt","kr","zh","jp"];
-export const SUPPORTED_LANGS = ["en", "es", "fr", "pt"];
+export const SUPPORTED_LANGS = ["en", "es", "fr", "pt","kr","zh","jp"];
+// export const SUPPORTED_LANGS = ["en", "es", "fr", "pt"];
