@@ -29,7 +29,7 @@ export async function GET(req: NextRequest) {
     const db = getDb();
     const now = new Date().toISOString();
 
-    // email_tracking 업데이트
+    // open 기록 업데이트
     await db.execute({
       sql: `
         UPDATE email_tracking
@@ -44,21 +44,47 @@ export async function GET(req: NextRequest) {
       args: [now, id],
     });
 
-    // campaigns 최신 Open 수 업데이트
-    await db.execute({
+    // campaign_id 조회
+    const result = await db.execute({
       sql: `
-        UPDATE campaigns
-        SET latest_opened = latest_opened + 1
-        WHERE campaign_id = (
-          SELECT campaign_id
-          FROM email_tracking
-          WHERE tracking_id = ?
-          LIMIT 1
-        )
+        SELECT campaign_id
+        FROM email_tracking
+        WHERE tracking_id = ?
+        LIMIT 1
       `,
       args: [id],
     });
 
+    const row = result.rows[0] as any;
+
+    if (row) {
+      // DISTINCT email 기준으로 Open 수 재계산
+      const openResult = await db.execute({
+        sql: `
+          SELECT COUNT(DISTINCT email) AS cnt
+          FROM email_tracking
+          WHERE campaign_id = ?
+            AND opened_at IS NOT NULL
+        `,
+        args: [row.campaign_id],
+      });
+
+      const latestOpened = Number(
+        (openResult.rows[0] as any)?.cnt ?? 0
+      );
+
+      await db.execute({
+        sql: `
+          UPDATE campaigns
+          SET latest_opened = ?
+          WHERE campaign_id = ?
+        `,
+        args: [
+          latestOpened,
+          row.campaign_id,
+        ],
+      });
+    }
   } catch (err) {
     console.error("[TRACK OPEN ERROR]", err);
   }

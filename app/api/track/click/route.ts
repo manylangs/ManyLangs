@@ -2,7 +2,7 @@
 //
 // Click Tracking
 // - email_tracking.click_count 증가
-// - campaigns.latest_clicked 증가 (첫 클릭만)
+// - campaigns.latest_clicked = DISTINCT email 재계산
 // - 원래 URL로 302 Redirect
 
 import { NextRequest, NextResponse } from "next/server";
@@ -44,10 +44,9 @@ export async function GET(req: NextRequest) {
     try {
       const db = getDb();
 
-      // 현재 click_count 조회
       const result = await db.execute({
         sql: `
-          SELECT campaign_id, click_count
+          SELECT campaign_id
           FROM email_tracking
           WHERE tracking_id = ?
           LIMIT 1
@@ -58,8 +57,6 @@ export async function GET(req: NextRequest) {
       const row = result.rows[0] as any;
 
       if (row) {
-        const firstClick = Number(row.click_count ?? 0) === 0;
-
         // email_tracking 업데이트
         await db.execute({
           sql: `
@@ -72,19 +69,33 @@ export async function GET(req: NextRequest) {
           args: [id],
         });
 
-        // 첫 클릭일 때만 latest_clicked 증가
-        if (firstClick) {
-          await db.execute({
-            sql: `
-              UPDATE campaigns
-              SET latest_clicked = latest_clicked + 1
-              WHERE campaign_id = ?
-            `,
-            args: [row.campaign_id],
-          });
-        }
-      }
+        // DISTINCT email 기준으로 클릭 수 재계산
+        const clickResult = await db.execute({
+          sql: `
+            SELECT COUNT(DISTINCT email) AS cnt
+            FROM email_tracking
+            WHERE campaign_id = ?
+              AND clicked_at IS NOT NULL
+          `,
+          args: [row.campaign_id],
+        });
 
+        const latestClicked = Number(
+          (clickResult.rows[0] as any)?.cnt ?? 0
+        );
+
+        await db.execute({
+          sql: `
+            UPDATE campaigns
+            SET latest_clicked = ?
+            WHERE campaign_id = ?
+          `,
+          args: [
+            latestClicked,
+            row.campaign_id,
+          ],
+        });
+      }
     } catch (err) {
       console.error("[TRACK CLICK]", err);
     }
