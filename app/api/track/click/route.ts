@@ -2,7 +2,7 @@
 //
 // Click Tracking
 // - email_tracking.click_count 증가
-// - campaigns.latest_clicked 증가
+// - campaigns.latest_clicked 증가 (첫 클릭만)
 // - 원래 URL로 302 Redirect
 
 import { NextRequest, NextResponse } from "next/server";
@@ -44,32 +44,46 @@ export async function GET(req: NextRequest) {
     try {
       const db = getDb();
 
-      // email_tracking 업데이트
-      await db.execute({
+      // 현재 click_count 조회
+      const result = await db.execute({
         sql: `
-          UPDATE email_tracking
-          SET
-            click_count = click_count + 1,
-            clicked_at = COALESCE(clicked_at, datetime('now'))
+          SELECT campaign_id, click_count
+          FROM email_tracking
           WHERE tracking_id = ?
+          LIMIT 1
         `,
         args: [id],
       });
 
-      // campaigns 최신 Click 수 업데이트
-      await db.execute({
-        sql: `
-          UPDATE campaigns
-          SET latest_clicked = latest_clicked + 1
-          WHERE campaign_id = (
-            SELECT campaign_id
-            FROM email_tracking
+      const row = result.rows[0] as any;
+
+      if (row) {
+        const firstClick = Number(row.click_count ?? 0) === 0;
+
+        // email_tracking 업데이트
+        await db.execute({
+          sql: `
+            UPDATE email_tracking
+            SET
+              click_count = click_count + 1,
+              clicked_at = COALESCE(clicked_at, datetime('now'))
             WHERE tracking_id = ?
-            LIMIT 1
-          )
-        `,
-        args: [id],
-      });
+          `,
+          args: [id],
+        });
+
+        // 첫 클릭일 때만 latest_clicked 증가
+        if (firstClick) {
+          await db.execute({
+            sql: `
+              UPDATE campaigns
+              SET latest_clicked = latest_clicked + 1
+              WHERE campaign_id = ?
+            `,
+            args: [row.campaign_id],
+          });
+        }
+      }
 
     } catch (err) {
       console.error("[TRACK CLICK]", err);
