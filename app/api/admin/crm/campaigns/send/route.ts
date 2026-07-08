@@ -52,47 +52,29 @@ export async function POST(req: NextRequest) {
       args: [campaign_id],
     });
 
-    const country = campaign.country || "ALL";
-    const city = campaign.city || "ALL";
-
-    // 파일 캠페인(from-file)도 이 campaign_id 생성 시 country 컬럼에
-    // FILEBATCH_... 배치 식별자를 그대로 저장해두므로, 아래 country/city
-    // 필터만으로 일반 캠페인과 파일 캠페인 모두 정확히 타겟팅됩니다.
-    let sql = `
-      SELECT
-        id,
-        school_name,
-        email,
-        country,
-        city,
-        campaign_status
-      FROM schools
-      WHERE email IS NOT NULL
-        AND email <> ''
-        AND campaign_status = 'NEW'
-    `;
-
-    const args: any[] = [];
-
-    if (country !== "ALL") {
-      sql += ` AND country = ?`;
-      args.push(country);
-    }
-
-    if (city !== "ALL") {
-      sql += ` AND city = ?`;
-      args.push(city);
-    }
-
-    // 운영 모드 : 최대 5,000건 발송
-    sql += `
-      ORDER BY id ASC
-      LIMIT 5000
-    `;
-
     const targets = await db.execute({
-      sql,
-      args,
+      sql: `
+    SELECT
+      s.id,
+      s.school_name,
+      s.email,
+      s.country,
+      s.city,
+      s.campaign_status
+    FROM campaign_targets ct
+    JOIN schools s
+      ON s.email = ct.email
+   WHERE ct.campaign_id = ?
+AND NOT EXISTS (
+    SELECT 1
+    FROM email_tracking et
+    WHERE et.campaign_id = ct.campaign_id
+      AND et.email = s.email
+)
+    ORDER BY s.id ASC
+    LIMIT 5000
+  `,
+      args: [campaign_id],
     });
 
     const target_count = targets.rows.length;
@@ -100,8 +82,6 @@ export async function POST(req: NextRequest) {
     console.log("[CAMPAIGNS SEND]");
     console.log("campaign_id :", campaign_id);
     console.log("subject     :", campaign.subject);
-    console.log("country     :", country);
-    console.log("city        :", city);
     console.log("target_count:", target_count);
 
     let sent_count = 0;
@@ -136,15 +116,6 @@ export async function POST(req: NextRequest) {
           trackingId
         );
 
-        await db.execute({
-          sql: `
-            UPDATE schools
-            SET campaign_status = 'SENT'
-            WHERE id = ?
-          `,
-          args: [target.id],
-        });
-
         sent_count++;
       } catch (e) {
         console.error("SEND FAILED:", target.email, e);
@@ -169,8 +140,6 @@ export async function POST(req: NextRequest) {
       success: true,
       campaign_id,
       subject: campaign.subject,
-      country,
-      city,
       target_count,
       sent_count,
       sample: targets.rows.slice(0, 5).map((r: any) => ({
