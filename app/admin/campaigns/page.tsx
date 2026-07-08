@@ -399,7 +399,14 @@ export default function CampaignsPage() {
 
       setSendResult(data);
 
-      await fetchCampaigns(historyCountry, historyCity, page, search);
+      setPage(1);
+
+      await fetchCampaigns(
+        historyCountry,
+        historyCity,
+        1,
+        search
+      );
     } catch (e: any) {
       setSendResult({ success: false, mode: "TEST", campaign_id, target_count: 0, sample: [], message: "", error: e.message });
     } finally {
@@ -574,11 +581,12 @@ export default function CampaignsPage() {
       }
 
       alert(`✅ 새 Campaign 생성: ${data.campaign_id}`);
+      setPage(1);
 
       await fetchCampaigns(
         historyCountry,
         historyCity,
-        page,
+        1,
         search
       );
     } catch (e: any) {
