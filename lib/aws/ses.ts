@@ -13,6 +13,26 @@ export const ses = new SESv2Client({
     },
 });
 
+// HTML-escape된 텍스트 안의 URL을 클릭 가능한 링크로 변환
+// Gmail / Naver / Outlook / Apple Mail 호환성을 위해
+// 가장 단순한 <a href="..."> 형태만 사용한다.
+function linkifyUrls(html: string): string {
+    const urlRegex = /(https?:\/\/[^\s<]+)/gi;
+
+    return html.replace(urlRegex, (raw) => {
+        let url = raw;
+        let trailing = "";
+
+        // URL 끝 문장부호 제외
+        while (/[.,;:!?)]$/.test(url)) {
+            trailing = url.slice(-1) + trailing;
+            url = url.slice(0, -1);
+        }
+
+        return `<a href="${url}">${url}</a>${trailing}`;
+    });
+}
+
 export async function sendEmail(
     to: string,
     subject: string,
@@ -27,6 +47,7 @@ export async function sendEmail(
         .replace(/\r\n/g, "\n")
         .replace(/\n/g, "<br>");
 
+    // URL → 클릭 가능한 링크
     let bodyHtml = `
 <div style="
   font-family:Arial,sans-serif;
@@ -34,16 +55,16 @@ export async function sendEmail(
   line-height:1.7;
   color:#222;
 ">
-${escaped}
+${linkifyUrls(escaped)}
 </div>
 `;
 
-    // 클릭 트래킹 링크 치환 (HTML만)
+    // 클릭 트래킹 링크 치환
     if (trackingId) {
         bodyHtml = rewriteLinksForClickTracking(bodyHtml, trackingId);
     }
 
-    // Open Pixel 추가
+    // Open Tracking Pixel
     const htmlBody = `
 <!DOCTYPE html>
 <html>
@@ -53,10 +74,11 @@ ${escaped}
 <body style="margin:24px;font-family:Arial,sans-serif;line-height:1.7;color:#222;">
   ${bodyHtml}
 
-  ${trackingId
-            ? `<img src="https://manylangs.studio/api/track/open?id=${trackingId}" width="1" height="1" style="display:none;" alt="" />`
-            : ""
-        }
+  ${
+      trackingId
+          ? `<img src="https://manylangs.studio/api/track/open?id=${trackingId}" width="1" height="1" style="display:none;" alt="" />`
+          : ""
+  }
 </body>
 </html>
 `;
