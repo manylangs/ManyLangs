@@ -1,12 +1,9 @@
 // app/api/track/click/route.ts
 //
-// Click Tracking (1단계) — "링크를 한 번이라도 클릭했는가"만 추적
-// - click_count: 클릭할 때마다 +1 (중복 허용)
-// - clicked_at : 최초 1회만 저장 (COALESCE)
-// - 처리 후 원래 URL로 302 Redirect
-// - DB 오류가 나도 사용자 리다이렉트는 절대 실패하지 않음
-//
-// Open Tracking(/api/track/open)과는 완전히 독립 — 기존 로직 변경 없음
+// Click Tracking
+// - email_tracking.click_count 증가
+// - campaigns.latest_clicked 증가
+// - 원래 URL로 302 Redirect
 
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@libsql/client";
@@ -22,7 +19,7 @@ function getDb() {
   });
 }
 
-// http/https URL만 허용 (javascript: 등 차단)
+// http/https URL만 허용
 function isSafeUrl(raw: string): boolean {
   try {
     const u = new URL(raw);
@@ -38,15 +35,16 @@ export async function GET(req: NextRequest) {
   const id = searchParams.get("id");
   const rawUrl = searchParams.get("url");
 
-  // url이 없거나 유효하지 않으면 홈으로
   const destination =
-    rawUrl && isSafeUrl(rawUrl) ? rawUrl : HOME_URL;
+    rawUrl && isSafeUrl(rawUrl)
+      ? rawUrl
+      : HOME_URL;
 
-  // id가 있을 때만 트래킹 기록 (실패해도 리다이렉트는 진행)
   if (id) {
     try {
       const db = getDb();
 
+      // email_tracking 업데이트
       await db.execute({
         sql: `
           UPDATE email_tracking
@@ -57,8 +55,23 @@ export async function GET(req: NextRequest) {
         `,
         args: [id],
       });
+
+      // campaigns 최신 Click 수 업데이트
+      await db.execute({
+        sql: `
+          UPDATE campaigns
+          SET latest_clicked = latest_clicked + 1
+          WHERE campaign_id = (
+            SELECT campaign_id
+            FROM email_tracking
+            WHERE tracking_id = ?
+            LIMIT 1
+          )
+        `,
+        args: [id],
+      });
+
     } catch (err) {
-      // 트래킹 실패는 사용자 경험에 영향 주지 않음
       console.error("[TRACK CLICK]", err);
     }
   }

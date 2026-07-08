@@ -71,20 +71,17 @@ export async function GET(req: NextRequest) {
           SELECT
             c.*,
 
-            COALESCE(COUNT(t.tracking_id), 0) AS sent_count,
+           c.sent_count,
 
-            COALESCE(SUM(
-              CASE WHEN t.open_count > 0 THEN 1 ELSE 0 END
-            ), 0) AS opened_count,
+c.send_runs,
 
-            COALESCE(SUM(t.open_count), 0) AS total_opens,
+c.latest_opened AS opened_count,
 
-            COALESCE(SUM(
-              CASE WHEN t.click_count > 0 THEN 1 ELSE 0 END
-            ), 0) AS clicked_count,
+COALESCE(SUM(t.open_count), 0) AS total_opens,
 
-            COALESCE(SUM(t.click_count), 0) AS total_clicks
+c.latest_clicked AS clicked_count,
 
+COALESCE(SUM(t.click_count), 0) AS total_clicks
           FROM campaigns c
 
           LEFT JOIN email_tracking t

@@ -161,13 +161,16 @@ export async function POST(req: NextRequest) {
 
     await db.execute({
       sql: `
-        UPDATE campaigns
-        SET status = 'SENT',
-            target_count = ?,
-            sent_count = ?
-        WHERE campaign_id = ?
-      `,
-      args: [target_count, sent_count, campaign_id],
+    UPDATE campaigns
+    SET
+      status = 'SENT',
+      sent_count = ?,
+      send_runs = send_runs + 1,
+      latest_opened = 0,
+      latest_clicked = 0
+    WHERE campaign_id = ?
+  `,
+      args: [sent_count, campaign_id],
     });
 
     return NextResponse.json({

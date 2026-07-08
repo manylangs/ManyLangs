@@ -29,6 +29,7 @@ export async function GET(req: NextRequest) {
     const db = getDb();
     const now = new Date().toISOString();
 
+    // email_tracking 업데이트
     await db.execute({
       sql: `
         UPDATE email_tracking
@@ -42,6 +43,22 @@ export async function GET(req: NextRequest) {
       `,
       args: [now, id],
     });
+
+    // campaigns 최신 Open 수 업데이트
+    await db.execute({
+      sql: `
+        UPDATE campaigns
+        SET latest_opened = latest_opened + 1
+        WHERE campaign_id = (
+          SELECT campaign_id
+          FROM email_tracking
+          WHERE tracking_id = ?
+          LIMIT 1
+        )
+      `,
+      args: [id],
+    });
+
   } catch (err) {
     console.error("[TRACK OPEN ERROR]", err);
   }
