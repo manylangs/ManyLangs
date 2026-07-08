@@ -101,6 +101,9 @@ export default function CampaignsPage() {
   // ── row 단위 개별 Reset (Campaign → DRAFT, Lead → NEW) ──
   const [rowResetting, setRowResetting] = useState<string | null>(null);
 
+  // ── row 단위 개별 Delete (campaigns + email_tracking만 삭제, schools는 유지) ──
+  const [deletingId, setDeletingId] = useState<string | null>(null);
+
   // ── 선택 캠페인 일괄 액션 ────────────────────────────
   const [bulkResetting, setBulkResetting] = useState(false);
   const [bulkSending, setBulkSending] = useState(false);
@@ -483,6 +486,46 @@ export default function CampaignsPage() {
       alert(e.message);
     } finally {
       setRowResetting(null);
+    }
+  };
+
+  // ── Delete: campaigns + email_tracking만 삭제 (schools는 절대 건드리지 않음) ──
+  const handleDeleteCampaign = async (campaign_id: string) => {
+    if (
+      !confirm(
+        "Delete Campaign?\n\nCampaign history and tracking data will be permanently deleted.\n\nLead database (schools) will NOT be affected."
+      )
+    ) {
+      return;
+    }
+
+    setDeletingId(campaign_id);
+
+    try {
+      const res = await fetch("/api/admin/crm/campaigns/delete", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ campaign_id }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || "Delete 실패");
+      }
+
+      // 선택되어 있었다면 선택 목록에서도 제거
+      setSelectedIds((prev) => {
+        const next = new Set(prev);
+        next.delete(campaign_id);
+        return next;
+      });
+
+      await fetchCampaigns(historyCountry, historyCity, page, search);
+    } catch (e: any) {
+      alert(e.message);
+    } finally {
+      setDeletingId(null);
     }
   };
 
@@ -1038,6 +1081,7 @@ export default function CampaignsPage() {
                     const isSendingThis = sendingId === c.campaign_id;
                     const isSendingAny = sendingId !== null;
                     const isResettingThis = rowResetting === c.campaign_id;
+                    const isDeletingThis = deletingId === c.campaign_id;
                     const isSelected = selectedIds.has(c.campaign_id);
 
                     const statusColors: Record<string, { bg: string; fg: string }> = {
@@ -1081,18 +1125,34 @@ export default function CampaignsPage() {
                           {c.status === "SENDING" ? (
                             <span style={{ fontSize: 12, color: "#ca8a04" }}>Sending...</span>
                           ) : c.status === "SENT" ? (
-                            <button
-                              onClick={() => handleRowReset(c.campaign_id)}
-                              disabled={isResettingThis}
-                              style={{
-                                padding: "4px 12px", borderRadius: 6, border: "1px solid #fca5a5",
-                                background: "#fff", color: "#dc2626", fontSize: 12,
-                                cursor: isResettingThis ? "not-allowed" : "pointer",
-                                opacity: isResettingThis ? 0.5 : 1,
-                              }}
-                            >
-                              {isResettingThis ? "처리 중..." : "↩ Reset"}
-                            </button>
+                            <>
+                              <button
+                                onClick={() => handleRowReset(c.campaign_id)}
+                                disabled={isResettingThis || isDeletingThis}
+                                style={{
+                                  padding: "4px 12px", borderRadius: 6, border: "1px solid #fca5a5",
+                                  background: "#fff", color: "#dc2626", fontSize: 12,
+                                  marginRight: 6,
+                                  cursor: isResettingThis || isDeletingThis ? "not-allowed" : "pointer",
+                                  opacity: isResettingThis || isDeletingThis ? 0.5 : 1,
+                                }}
+                              >
+                                {isResettingThis ? "처리 중..." : "↩ Reset"}
+                              </button>
+
+                              <button
+                                onClick={() => handleDeleteCampaign(c.campaign_id)}
+                                disabled={isResettingThis || isDeletingThis}
+                                style={{
+                                  padding: "4px 12px", borderRadius: 6, border: "1px solid #d1d5db",
+                                  background: "#fff", color: "#6b7280", fontSize: 12,
+                                  cursor: isResettingThis || isDeletingThis ? "not-allowed" : "pointer",
+                                  opacity: isResettingThis || isDeletingThis ? 0.5 : 1,
+                                }}
+                              >
+                                {isDeletingThis ? "삭제 중..." : "🗑 Delete"}
+                              </button>
+                            </>
                           ) : (
                             <>
                               <button
@@ -1116,18 +1176,36 @@ export default function CampaignsPage() {
 
                               <button
                                 onClick={() => handleSend(c.campaign_id)}
-                                disabled={isSendingAny}
+                                disabled={isSendingAny || isDeletingThis}
                                 style={{
                                   padding: "4px 12px",
                                   borderRadius: 6,
                                   border: "1px solid #d1d5db",
                                   background: "#fff",
                                   fontSize: 12,
-                                  cursor: isSendingAny ? "not-allowed" : "pointer",
-                                  opacity: isSendingAny ? 0.5 : 1,
+                                  marginRight: 6,
+                                  cursor: isSendingAny || isDeletingThis ? "not-allowed" : "pointer",
+                                  opacity: isSendingAny || isDeletingThis ? 0.5 : 1,
                                 }}
                               >
                                 {isSendingThis ? "Sending..." : "📧 Send"}
+                              </button>
+
+                              <button
+                                onClick={() => handleDeleteCampaign(c.campaign_id)}
+                                disabled={isSendingAny || isDeletingThis}
+                                style={{
+                                  padding: "4px 12px",
+                                  borderRadius: 6,
+                                  border: "1px solid #d1d5db",
+                                  background: "#fff",
+                                  color: "#6b7280",
+                                  fontSize: 12,
+                                  cursor: isSendingAny || isDeletingThis ? "not-allowed" : "pointer",
+                                  opacity: isSendingAny || isDeletingThis ? 0.5 : 1,
+                                }}
+                              >
+                                {isDeletingThis ? "삭제 중..." : "🗑 Delete"}
                               </button>
                             </>
                           )}
