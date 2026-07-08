@@ -12,6 +12,7 @@ interface Campaign {
   status: string;
   target_count: number;
   created_at: string;
+  send_runs?: number;
   sent_count?: number;
   opened_count?: number;
   open_rate?: number;
@@ -97,7 +98,7 @@ export default function CampaignsPage() {
   // ── 캠페인 다중 선택 (체크박스) ──────────────────────
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
 
-  // ── row 단위 개별 Reset ──────────────────────────────
+  // ── row 단위 개별 Reset (Campaign → DRAFT, Lead → NEW) ──
   const [rowResetting, setRowResetting] = useState<string | null>(null);
 
   // ── 선택 캠페인 일괄 액션 ────────────────────────────
@@ -384,7 +385,9 @@ export default function CampaignsPage() {
 
     fetchCampaigns();
   };
-  const handleTestSend = async (campaign_id: string) => {
+
+  // ── Send (DRAFT/READY 구분 없이 단일 발송 버튼) ──────
+  const handleSend = async (campaign_id: string) => {
     if (sendingId !== null) return;
 
     setSendingId(campaign_id);
@@ -399,16 +402,9 @@ export default function CampaignsPage() {
 
       setSendResult(data);
 
-      setPage(1);
-
-      await fetchCampaigns(
-        historyCountry,
-        historyCity,
-        1,
-        search
-      );
+      await fetchCampaigns(historyCountry, historyCity, page, search);
     } catch (e: any) {
-      setSendResult({ success: false, mode: "TEST", campaign_id, target_count: 0, sample: [], message: "", error: e.message });
+      setSendResult({ success: false, mode: "SEND", campaign_id, target_count: 0, sample: [], message: "", error: e.message });
     } finally {
       setSendingId(null);
     }
@@ -443,66 +439,15 @@ export default function CampaignsPage() {
     }
   };
 
-  // ── row 단위 개별 Reset (email_tracking 기준으로 그 캠페인 발송분만) ──
+  // ── row 단위 Reset: 단일 호출로 Campaign → DRAFT, Lead → NEW 모두 수행 ──
+  // ※ /api/admin/crm/campaigns/reset 엔드포인트가 campaign_ids를 받으면
+  //    해당 캠페인의 status를 DRAFT로, sent_count/latest_opened/latest_clicked를
+  //    0으로, 대상 lead를 NEW로 되돌리도록 백엔드가 맞춰져 있어야 합니다.
+  //    (send_runs는 건드리지 않고 그대로 유지)
   const handleRowReset = async (campaign_id: string) => {
-    if (!confirm(`캠페인 [${campaign_id}]이 발송한 대상만 SENT → READY로 되돌리시겠습니까?\n다른 캠페인이 보낸 대상은 영향받지 않습니다.`)) return;
-
-    setRowResetting(campaign_id);
-    try {
-      const res = await fetch("/api/admin/crm/campaigns/reset", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ campaign_ids: [campaign_id] }),
-      });
-      const data = await res.json();
-      alert(`복구 완료 (${data.updated}건) — 캠페인: ${campaign_id}`);
-
-      await fetchCampaigns(historyCountry, historyCity, page, search);
-      if (hasChecked) await handleCheckTarget();
-    } catch (e: any) {
-      alert(e.message);
-    } finally {
-      setRowResetting(null);
-    }
-  };
-  const handleDraft = async (campaign_id: string) => {
-    if (!confirm(`캠페인 [${campaign_id}]을 DRAFT 상태로 변경하시겠습니까?`)) {
-      return;
-    }
-
-    try {
-      const res = await fetch("/api/admin/crm/campaigns/draft", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          campaign_id,
-        }),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        throw new Error(data.error || "Draft 변경 실패");
-      }
-
-      alert("✅ Campaign이 DRAFT로 변경되었습니다.");
-
-      await fetchCampaigns(
-        historyCountry,
-        historyCity,
-        page,
-        search
-      );
-    } catch (e: any) {
-      alert(e.message);
-    }
-  };
-  const handleResetAndDraft = async (campaign_id: string) => {
     if (
       !confirm(
-        `캠페인 [${campaign_id}]의 발송 대상을 NEW로 복구하고\nCampaign도 DRAFT로 되돌리시겠습니까?`
+        `캠페인 [${campaign_id}]을 Reset 하시겠습니까?\n(발송 대상 → NEW, Campaign → DRAFT)`
       )
     ) {
       return;
@@ -511,8 +456,7 @@ export default function CampaignsPage() {
     setRowResetting(campaign_id);
 
     try {
-      // 1. Lead 복구
-      const resetRes = await fetch("/api/admin/crm/campaigns/reset", {
+      const res = await fetch("/api/admin/crm/campaigns/reset", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -522,30 +466,13 @@ export default function CampaignsPage() {
         }),
       });
 
-      const resetData = await resetRes.json();
+      const data = await res.json();
 
-      if (!resetRes.ok) {
-        throw new Error(resetData.error || "Reset 실패");
+      if (!res.ok) {
+        throw new Error(data.error || "Reset 실패");
       }
 
-      // 2. Campaign → DRAFT
-      const draftRes = await fetch("/api/admin/crm/campaigns/draft", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          campaign_id,
-        }),
-      });
-
-      const draftData = await draftRes.json();
-
-      if (!draftRes.ok) {
-        throw new Error(draftData.error || "Draft 실패");
-      }
-
-      alert(`✅ Reset + Draft 완료 (${resetData.updated}건)`);
+      alert(`✅ Reset 완료 (${data.updated}건)`);
 
       await fetchCampaigns(historyCountry, historyCity, page, search);
 
@@ -558,41 +485,7 @@ export default function CampaignsPage() {
       setRowResetting(null);
     }
   };
-  const handleDuplicate = async (campaign_id: string) => {
-    if (!confirm(`캠페인 [${campaign_id}]을 복제하시겠습니까?`)) {
-      return;
-    }
 
-    try {
-      const res = await fetch("/api/admin/crm/campaigns/duplicate", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          campaign_id,
-        }),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        throw new Error(data.error || "Duplicate 실패");
-      }
-
-      alert(`✅ 새 Campaign 생성: ${data.campaign_id}`);
-      setPage(1);
-
-      await fetchCampaigns(
-        historyCountry,
-        historyCity,
-        1,
-        search
-      );
-    } catch (e: any) {
-      alert(e.message);
-    }
-  };
   // ── 체크박스 선택 토글 ──────────────────────────────
   const toggleRowSelect = (campaign_id: string) => {
     setSelectedIds((prev) => {
@@ -620,11 +513,11 @@ export default function CampaignsPage() {
 
   const clearSelection = () => setSelectedIds(new Set());
 
-  // ── 선택 캠페인 일괄 Reset ──────────────────────────
+  // ── 선택 캠페인 일괄 Reset: 단일 호출로 Campaign → DRAFT, Lead → NEW 모두 수행 ──
   const handleBulkReset = async () => {
     const ids = Array.from(selectedIds);
     if (ids.length === 0) return;
-    if (!confirm(`선택한 ${ids.length}개 캠페인이 발송한 대상만 SENT → READY로 되돌리시겠습니까?`)) return;
+    if (!confirm(`선택한 ${ids.length}개 캠페인을 Reset 하시겠습니까?\n(발송 대상 → NEW, Campaign → DRAFT)`)) return;
 
     setBulkResetting(true);
     setBulkMsg(null);
@@ -635,6 +528,11 @@ export default function CampaignsPage() {
         body: JSON.stringify({ campaign_ids: ids }),
       });
       const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || "Reset 실패");
+      }
+
       setBulkMsg(`✅ ${ids.length}개 캠페인 Reset 완료 (${data.updated}건)`);
 
       await fetchCampaigns(historyCountry, historyCity, page, search);
@@ -698,7 +596,7 @@ export default function CampaignsPage() {
       </div>
       <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 6 }}>📧 Campaigns</h1>
       <p style={{ color: "#666", fontSize: 13, marginBottom: 32 }}>
-        SES 연결 완료. TEST SEND는 실제 이메일을 발송합니다.
+        SES 연결 완료. Send는 실제 이메일을 발송합니다.
       </p>
 
       {/* History scope selector */}
@@ -1111,15 +1009,14 @@ export default function CampaignsPage() {
                       "Country",
                       "City",
                       "대상 수",
+                      "Runs",
                       "Sent",
                       "Opened",
                       "Open %",
                       "Clicked",
                       "Click %",
                       "Status",
-                      "Test Send",
-                      "Reset",
-                      "Draft",
+                      "Action",
                       "생성일",
                     ].map((h) => (
                       <th
@@ -1165,6 +1062,9 @@ export default function CampaignsPage() {
                         <td style={{ padding: "10px 14px", color: "#6b7280" }}>{c.country || "—"}</td>
                         <td style={{ padding: "10px 14px", color: "#6b7280" }}>{c.city || "—"}</td>
                         <td style={{ padding: "10px 14px", textAlign: "center", fontWeight: 600 }}>{Number(c.target_count).toLocaleString()}</td>
+                        <td style={{ padding: "10px 14px", textAlign: "center" }}>
+                          {c.send_runs !== undefined ? Number(c.send_runs).toLocaleString() : "—"}
+                        </td>
                         <td style={{ padding: "10px 14px", textAlign: "center" }}>{Number(c.sent_count ?? 0).toLocaleString()}</td>
                         <td style={{ padding: "10px 14px", textAlign: "center" }}>{Number(c.opened_count ?? 0).toLocaleString()}</td>
                         <td style={{ padding: "10px 14px", textAlign: "center", color: "#16a34a", fontWeight: 600 }}>{(c.open_rate ?? 0).toFixed(1)}%</td>
@@ -1178,90 +1078,59 @@ export default function CampaignsPage() {
                           }}>{c.status}</span>
                         </td>
                         <td style={{ padding: "10px 14px", whiteSpace: "nowrap" }}>
+                          {c.status === "SENDING" ? (
+                            <span style={{ fontSize: 12, color: "#ca8a04" }}>Sending...</span>
+                          ) : c.status === "SENT" ? (
+                            <button
+                              onClick={() => handleRowReset(c.campaign_id)}
+                              disabled={isResettingThis}
+                              style={{
+                                padding: "4px 12px", borderRadius: 6, border: "1px solid #fca5a5",
+                                background: "#fff", color: "#dc2626", fontSize: 12,
+                                cursor: isResettingThis ? "not-allowed" : "pointer",
+                                opacity: isResettingThis ? 0.5 : 1,
+                              }}
+                            >
+                              {isResettingThis ? "처리 중..." : "↩ Reset"}
+                            </button>
+                          ) : (
+                            <>
+                              <button
+                                onClick={() => {
+                                  setEditingCampaign(c);
+                                  setEditSubject(c.subject);
+                                  setEditBody(c.body ?? "");
+                                }}
+                                style={{
+                                  padding: "4px 10px",
+                                  marginRight: 6,
+                                  borderRadius: 6,
+                                  border: "1px solid #d1d5db",
+                                  background: "#fff",
+                                  fontSize: 12,
+                                  cursor: "pointer",
+                                }}
+                              >
+                                ✏️ Edit
+                              </button>
 
-                          <button
-                            onClick={() => {
-                              setEditingCampaign(c);
-                              setEditSubject(c.subject);
-                              setEditBody(c.body ?? "");
-                            }}
-                            style={{
-                              padding: "4px 10px",
-                              marginRight: 6,
-                              borderRadius: 6,
-                              border: "1px solid #d1d5db",
-                              background: "#fff",
-                              fontSize: 12,
-                              cursor: "pointer",
-                            }}
-                          >
-                            ✏️ Edit
-                          </button>
-                          <button
-                            onClick={() => handleDuplicate(c.campaign_id)}
-                            style={{
-                              padding: "4px 10px",
-                              marginRight: 6,
-                              borderRadius: 6,
-                              border: "1px solid #d1d5db",
-                              background: "#fff",
-                              fontSize: 12,
-                              cursor: "pointer",
-                            }}
-                          >
-                            📄 Duplicate
-                          </button>
-
-                          <button
-                            onClick={() => handleTestSend(c.campaign_id)}
-                            disabled={isSendingAny}
-                            style={{
-                              padding: "4px 12px",
-                              borderRadius: 6,
-                              border: "1px solid #d1d5db",
-                              background: "#fff",
-                              fontSize: 12,
-                              cursor: isSendingAny ? "not-allowed" : "pointer",
-                              opacity: isSendingAny ? 0.5 : 1,
-                            }}
-                          >
-                            {isSendingThis
-                              ? "Sending..."
-                              : c.status === "DRAFT"
-                                ? "🧪 Test"
-                                : "📧 REAL SEND"}
-                          </button>
-
-                        </td>
-                        <td style={{ padding: "10px 14px" }}>
-                          <button
-                            onClick={() => handleResetAndDraft(c.campaign_id)}
-                            disabled={isResettingThis}
-                            style={{
-                              padding: "4px 12px", borderRadius: 6, border: "1px solid #fca5a5",
-                              background: "#fff", color: "#dc2626", fontSize: 12,
-                              cursor: isResettingThis ? "not-allowed" : "pointer",
-                              opacity: isResettingThis ? 0.5 : 1,
-                            }}
-                          >
-                            {isResettingThis ? "처리 중..." : "↩ Reset + Draft"}
-                          </button>
-                        </td>
-                        <td style={{ padding: "10px 14px" }}>
-                          <button
-                            onClick={() => handleDraft(c.campaign_id)}
-                            style={{
-                              padding: "4px 12px",
-                              borderRadius: 6,
-                              border: "1px solid #93c5fd",
-                              background: "#fff",
-                              color: "#2563eb",
-                              fontSize: 12,
-                              cursor: "pointer",
-                            }}
-                          >
-                            ↩ Draft
-                          </button>
+                              <button
+                                onClick={() => handleSend(c.campaign_id)}
+                                disabled={isSendingAny}
+                                style={{
+                                  padding: "4px 12px",
+                                  borderRadius: 6,
+                                  border: "1px solid #d1d5db",
+                                  background: "#fff",
+                                  fontSize: 12,
+                                  cursor: isSendingAny ? "not-allowed" : "pointer",
+                                  opacity: isSendingAny ? 0.5 : 1,
+                                }}
+                              >
+                                {isSendingThis ? "Sending..." : "📧 Send"}
+                              </button>
+                            </>
+                          )}
                         </td>
                         <td style={{ padding: "10px 14px", color: "#9ca3af", fontSize: 11, whiteSpace: "nowrap" }}>
                           {new Date(c.created_at).toLocaleDateString("ko-KR")}

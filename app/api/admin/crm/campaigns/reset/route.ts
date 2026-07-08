@@ -23,7 +23,8 @@ export async function POST(req: NextRequest) {
     if (ids.length > 0) {
       const placeholders = ids.map(() => "?").join(",");
 
-      const sql = `
+      // 1. 해당 캠페인이 보낸 대상만 schools.campaign_status → NEW
+      const leadSql = `
         UPDATE schools
         SET campaign_status = 'NEW'
         WHERE campaign_status = 'SENT'
@@ -33,16 +34,30 @@ export async function POST(req: NextRequest) {
           )
       `;
 
-      const result = await db.execute({ sql, args: ids });
+      const leadResult = await db.execute({ sql: leadSql, args: ids });
+
+      // 2. Campaign 자체도 DRAFT로 되돌리고 발송 지표 초기화
+      //    (send_runs는 누적값이므로 건드리지 않는다)
+      const campaignSql = `
+        UPDATE campaigns
+        SET
+          status = 'DRAFT',
+          sent_count = 0,
+          latest_opened = 0,
+          latest_clicked = 0
+        WHERE campaign_id IN (${placeholders})
+      `;
+
+      await db.execute({ sql: campaignSql, args: ids });
 
       return NextResponse.json({
         success: true,
-        updated: result.rowsAffected ?? 0,
+        updated: leadResult.rowsAffected ?? 0,
         scope: "campaign_id",
       });
     }
 
-    // campaign_id가 없으면 기존 country/city 스코프 유지 (하위호환)
+    // campaign_id가 없으면 기존 country/city 스코프 유지 (하위호환, lead만 리셋)
     const savedCountry =
       !country || country === "ALL" || country === "All Countries"
         ? "ALL"
