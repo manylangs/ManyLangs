@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { PROMO_LANGUAGES } from "./languages";
 
 const ADMIN_EMAIL = process.env.NEXT_PUBLIC_ADMIN_EMAIL!;
 const DAY_MS = 1000 * 60 * 60 * 24;
@@ -59,7 +60,8 @@ const REGIONS = [
 
 type Campaign = {
   code: string;
-  region: string;
+  region: string | null;
+  language: string | null;
   dateStr: string;
   startAt: number;
   endAt: number;
@@ -70,13 +72,14 @@ type Campaign = {
 
 type StatsData = {
   campaigns: Campaign[];
-  regionStats: Record<string, number>;
+  languageRegionStats: Record<string, number>;
   dateStats: Record<string, number>;
   totalActivations: number;
 };
 
 export default function AdminPromoPage() {
   const [region, setRegion] = useState("BR");
+  const [language, setLanguage] = useState("KOREAN");
   const [durationDays, setDurationDays] = useState(10);
   const [generating, setGenerating] = useState(false);
   const [newCode, setNewCode] = useState<string | null>(null);
@@ -99,7 +102,17 @@ export default function AdminPromoPage() {
           "Content-Type": "application/json",
           "x-admin-email": ADMIN_EMAIL,
         },
-        body: JSON.stringify({ region, durationDays }),
+        body: JSON.stringify(
+          durationDays === 7
+            ? {
+              language,
+              durationDays,
+            }
+            : {
+              region,
+              durationDays,
+            }
+        ),
       });
 
       const data = await res.json();
@@ -181,22 +194,6 @@ export default function AdminPromoPage() {
         </h2>
 
         <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-          <label style={{ fontSize: 14, color: "#6b7280" }}>Region</label>
-          <select
-            value={region}
-            onChange={(e) => setRegion(e.target.value)}
-            style={{
-              padding: "6px 10px",
-              border: "1px solid #d1d5db",
-              borderRadius: 6,
-              fontSize: 14,
-              minWidth: 200,
-            }}
-          >
-            {REGIONS.map((r) => (
-              <option key={r.code} value={r.code}>{r.label}</option>
-            ))}
-          </select>
 
           <label style={{ fontSize: 14, color: "#6b7280" }}>Duration</label>
           <select
@@ -213,7 +210,49 @@ export default function AdminPromoPage() {
             <option value={10}>10 days</option>
             <option value={14}>14 days</option>
           </select>
+          {durationDays === 7 ? (
+            <>
+              <label style={{ fontSize: 14, color: "#6b7280" }}>Language</label>
 
+              <select
+                value={language}
+                onChange={(e) => setLanguage(e.target.value)}
+                style={{
+                  padding: "6px 10px",
+                  border: "1px solid #d1d5db",
+                  borderRadius: 6,
+                  fontSize: 14,
+                  minWidth: 220,
+                }}
+              >
+                {PROMO_LANGUAGES.map((l) => (
+                  <option key={l.code} value={l.code}>
+                    {l.name}
+                  </option>
+                ))}
+              </select>
+            </>
+          ) : (
+            <>
+              <select
+                value={region}
+                onChange={(e) => setRegion(e.target.value)}
+                style={{
+                  padding: "6px 10px",
+                  border: "1px solid #d1d5db",
+                  borderRadius: 6,
+                  fontSize: 14,
+                  minWidth: 220,
+                }}
+              >
+                {REGIONS.map((r) => (
+                  <option key={r.code} value={r.code}>
+                    {r.label}
+                  </option>
+                ))}
+              </select>
+            </>
+          )}
           <button
             onClick={handleGenerate}
             disabled={generating}
@@ -233,7 +272,7 @@ export default function AdminPromoPage() {
         </div>
 
         <p style={{ fontSize: 12, color: "#9ca3af", marginTop: 8 }}>
-          Format: PROMO-MMDD-REGION · Unlimited users · Date-based expiry
+          Format: 7D = PROMO-MMDD-LANGUAGE · 10D/14D = PROMO-MMDD-REGION
         </p>
 
         {newCode && (
@@ -318,7 +357,6 @@ export default function AdminPromoPage() {
             Click Refresh Stats to load data.
           </p>
         )}
-
         {stats && (
           <>
             <div
@@ -329,10 +367,14 @@ export default function AdminPromoPage() {
                 marginBottom: 24,
               }}
             >
-              {Object.entries(stats.regionStats)
+              {Object.entries(stats.languageRegionStats)
                 .sort((a, b) => b[1] - a[1])
                 .map(([r, count]) => {
-                  const label = REGIONS.find((x) => x.code === r)?.label ?? r;
+                  const label =
+                    PROMO_LANGUAGES.find((x) => x.code === r)?.name ??
+                    REGIONS.find((x) => x.code === r)?.label ??
+                    r;
+
                   return (
                     <div
                       key={r}
@@ -344,13 +386,17 @@ export default function AdminPromoPage() {
                         textAlign: "center",
                       }}
                     >
-                      <div style={{ fontSize: 12, color: "#6b7280" }}>{label}</div>
-                      <div style={{ fontSize: 22, fontWeight: 700 }}>{count}</div>
+                      <div style={{ fontSize: 12, color: "#6b7280" }}>
+                        {label}
+                      </div>
+
+                      <div style={{ fontSize: 22, fontWeight: 700 }}>
+                        {count}
+                      </div>
                     </div>
                   );
                 })}
             </div>
-
             <div style={{ marginBottom: 24 }}>
               <h3 style={{ fontSize: 14, fontWeight: 600, marginBottom: 8 }}>
                 By Date
@@ -401,7 +447,7 @@ export default function AdminPromoPage() {
                     }}
                   >
                     <th style={{ padding: "10px 16px", textAlign: "left" }}>Code</th>
-                    <th style={{ padding: "10px 16px", textAlign: "left" }}>Region</th>
+                    <th style={{ padding: "10px 16px", textAlign: "left" }}>Language / Region</th>
                     <th style={{ padding: "10px 16px", textAlign: "left" }}>Activations</th>
                     <th style={{ padding: "10px 16px", textAlign: "left" }}>Status</th>
                     <th style={{ padding: "10px 16px", textAlign: "left" }}>Expires</th>
@@ -412,7 +458,12 @@ export default function AdminPromoPage() {
                   {stats.campaigns.map((c, i) => {
                     const daysLeft = Math.ceil((c.endAt - now) / DAY_MS);
                     const isActive = now < c.endAt;
-                    const label = REGIONS.find((x) => x.code === c.region)?.label ?? c.region;
+                    const key = c.language ?? c.region;
+
+                    const label =
+                      PROMO_LANGUAGES.find((x) => x.code === key)?.name ??
+                      REGIONS.find((x) => x.code === key)?.label ??
+                      key;
 
                     return (
                       <tr
@@ -476,6 +527,6 @@ export default function AdminPromoPage() {
           </>
         )}
       </div>
-    </div>
+    </div >
   );
 }

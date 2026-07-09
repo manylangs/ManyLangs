@@ -56,7 +56,9 @@ export async function POST(req: Request) {
 
   const now = Date.now();
 
-  const isPromoCampaign = /^PROMO-\d{4}-[A-Z]{2,3}$/.test(couponCode);
+  const isPromoCampaign =
+    /^PROMO-\d{4}-[A-Z]{2,3}$/.test(couponCode) ||
+    /^PROMO-\d{4}-[A-Z_]+$/.test(couponCode);
 
   if (isPromoCampaign) {
     try {
@@ -136,7 +138,8 @@ export async function POST(req: Request) {
 
       await db.collection("promoActivations").add({
         code: couponCode,
-        region: campaign.region,
+        region: campaign.region ?? null,
+        language: campaign.language ?? null,
         dateStr: campaign.dateStr ?? null,
         userId,
         lang: wantLang,
@@ -184,7 +187,7 @@ export async function POST(req: Request) {
       }
 
       const c = snap.data() as Coupon;
-      
+
       if (
         isIOSApp &&
         (

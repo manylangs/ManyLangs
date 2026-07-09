@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/firebaseAdmin";
 import { FieldValue } from "firebase-admin/firestore";
+import { PROMO_LANGUAGES } from "@/app/admin/promo/languages";
 
 export const runtime = "nodejs";
 
@@ -18,28 +19,53 @@ const VALID_REGIONS = [
   "FR","BE","CH","SN","CI","CM","MG","BF",
 ];
 
+const VALID_LANGUAGES = PROMO_LANGUAGES.map((l) => l.code);
+
 export async function POST(req: Request) {
   const adminEmail = req.headers.get("x-admin-email");
+
   if (!adminEmail || adminEmail !== ADMIN_EMAIL) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
-  let body: { region?: string; durationDays?: number };
+  let body: {
+    region?: string;
+    language?: string;
+    durationDays?: number;
+  };
+
   try {
     body = await req.json();
   } catch {
     return NextResponse.json({ error: "invalid body" }, { status: 400 });
   }
 
-  const region = String(body?.region ?? "").toUpperCase();
-  if (!VALID_REGIONS.includes(region)) {
-    return NextResponse.json(
-      { error: `invalid region. valid: ${VALID_REGIONS.join(", ")}` },
-      { status: 400 }
-    );
-  }
-
   const durationDays = Number(body?.durationDays) || 10;
+
+  let region = "";
+  let language = "";
+
+  if (durationDays === 7) {
+    language = String(body?.language ?? "").toUpperCase();
+
+    if (!VALID_LANGUAGES.includes(language)) {
+      return NextResponse.json(
+        { error: "invalid language" },
+        { status: 400 }
+      );
+    }
+  } else {
+    region = String(body?.region ?? "").toUpperCase();
+
+    if (!VALID_REGIONS.includes(region)) {
+      return NextResponse.json(
+        {
+          error: `invalid region. valid: ${VALID_REGIONS.join(", ")}`,
+        },
+        { status: 400 }
+      );
+    }
+  }
 
   const now = Date.now();
   const d = new Date(now);
@@ -47,7 +73,10 @@ export async function POST(req: Request) {
   const dd = String(d.getDate()).padStart(2, "0");
   const dateStr = `${mm}${dd}`;
 
-  const code = `PROMO-${dateStr}-${region}`;
+  const code =
+    durationDays === 7
+      ? `PROMO-${dateStr}-${language}`
+      : `PROMO-${dateStr}-${region}`;
 
   const startAt = now;
   const endAt = now + DAY_MS * durationDays;
@@ -55,6 +84,7 @@ export async function POST(req: Request) {
   await db.collection("promoCampaigns").doc(code).set({
     code,
     region,
+    language,
     dateStr,
     startAt,
     endAt,
@@ -70,6 +100,7 @@ export async function POST(req: Request) {
       success: true,
       code,
       region,
+      language,
       startAt,
       endAt,
       durationDays,
