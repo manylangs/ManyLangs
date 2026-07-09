@@ -168,6 +168,9 @@ export default function AdminPromoPage() {
     setTimeout(() => setCopied(false), 2000);
   }
 
+  // 날짜별 막대 그래프 폭 계산에 쓰이는 최댓값 (dateStats가 비어있어도 안전)
+  const maxDateCount = Math.max(1, ...Object.values(stats?.dateStats ?? {}));
+
   return (
     <div style={{ padding: 24, maxWidth: 900, margin: "0 auto" }}>
       <div style={{ marginBottom: 20 }}>
@@ -367,7 +370,7 @@ export default function AdminPromoPage() {
                 marginBottom: 24,
               }}
             >
-              {Object.entries(stats.languageRegionStats)
+              {Object.entries(stats?.languageRegionStats ?? {})
                 .sort((a, b) => b[1] - a[1])
                 .map(([r, count]) => {
                   const label =
@@ -401,7 +404,7 @@ export default function AdminPromoPage() {
               <h3 style={{ fontSize: 14, fontWeight: 600, marginBottom: 8 }}>
                 By Date
               </h3>
-              {Object.entries(stats.dateStats)
+              {Object.entries(stats?.dateStats ?? {})
                 .sort((a, b) => b[0].localeCompare(a[0]))
                 .map(([date, count]) => (
                   <div
@@ -422,7 +425,7 @@ export default function AdminPromoPage() {
                         height: 16,
                         background: "#2563eb",
                         borderRadius: 4,
-                        width: Math.max(4, (count / Math.max(...Object.values(stats.dateStats))) * 200),
+                        width: Math.max(4, (count / maxDateCount) * 200),
                       }}
                     />
                     <span style={{ fontWeight: 600 }}>{count}</span>
@@ -455,7 +458,7 @@ export default function AdminPromoPage() {
                 </thead>
 
                 <tbody>
-                  {stats.campaigns.map((c, i) => {
+                  {stats?.campaigns?.map((c, i) => {
                     const daysLeft = Math.ceil((c.endAt - now) / DAY_MS);
                     const isActive = now < c.endAt;
                     const key = c.language ?? c.region;
@@ -527,6 +530,6 @@ export default function AdminPromoPage() {
           </>
         )}
       </div>
-    </div >
+    </div>
   );
 }

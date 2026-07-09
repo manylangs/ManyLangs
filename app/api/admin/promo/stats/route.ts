@@ -43,13 +43,14 @@ export async function GET(req: Request) {
       };
     });
 
-    const regionStats: Record<string, number> = {};
+    const languageRegionStats: Record<string, number> = {};
     const dateStats: Record<string, number> = {};
 
     campaigns.forEach((c) => {
       const key = c.language || c.region || "UNKNOWN";
 
-      regionStats[key] = (regionStats[key] || 0) + c.usedCount;
+      languageRegionStats[key] =
+        (languageRegionStats[key] || 0) + c.usedCount;
       dateStats[c.dateStr] = (dateStats[c.dateStr] || 0) + c.usedCount;
     });
 
@@ -57,7 +58,7 @@ export async function GET(req: Request) {
       {
         success: true,
         campaigns,
-        regionStats,
+        languageRegionStats,
         dateStats,
         totalActivations: campaigns.reduce((s, c) => s + c.usedCount, 0),
       },
