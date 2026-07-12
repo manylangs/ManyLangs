@@ -172,7 +172,7 @@ export default function LandingPage() {
                   <button
                     type="button"
                     style={{
-                      ...btnHeaderPrimary,
+                      ...btnHeaderSecondary,
                       width: "100%",
                     }}
                   >
@@ -187,7 +187,7 @@ export default function LandingPage() {
                   <button
                     type="button"
                     style={{
-                      ...btnHeaderSecondary,
+                      ...btnHeaderPrimary,
                       width: "100%",
                     }}
                   >
