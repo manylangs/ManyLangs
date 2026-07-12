@@ -61,17 +61,6 @@ export default function SignUpPage() {
         >
           ← Back to Home
         </a>
-
-        <h1
-          style={{
-            textAlign: "center",
-            fontSize: 20,
-            fontWeight: 500,
-          }}
-        >
-          Create your account
-        </h1>
-
         <SignUp />
       </section>
     </main>
