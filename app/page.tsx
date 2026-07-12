@@ -1329,18 +1329,20 @@ const btnHeaderPrimary: React.CSSProperties = {
 
 const btnHeaderSecondary: React.CSSProperties = {
   height: 36,
-  padding: "0 12px",
+  padding: "0 14px",
   borderRadius: 8,
-  background: "#f5f5f5",
-  border: "1px solid #e5e5e5",
-  fontSize: 12,
-  fontWeight: 500,
+  background: "#fff",
+  color: "#111",
+  border: "1px solid #ddd",
+  fontSize: 13,
+  fontWeight: 600,
+  whiteSpace: "nowrap",
+  minWidth: 150,
+
   display: "inline-flex",
   alignItems: "center",
   justifyContent: "center",
-  whiteSpace: "nowrap",
 };
-
 const hamburger: React.CSSProperties = {
   width: 36,
   height: 36,
