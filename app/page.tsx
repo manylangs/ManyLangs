@@ -693,7 +693,14 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <a href="/signup" style={linkReset}>
+      <a
+        href="/signup"
+        style={{
+          ...linkReset,
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
         <button type="button" style={btnPrimary}>
           Start Learning Today
         </button>
