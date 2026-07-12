@@ -35,6 +35,18 @@ export default function SignUpPage() {
       >
         <Logo />
 
+        <a
+          href="/"
+          style={{
+            fontSize: 14,
+            color: "#666",
+            textDecoration: "none",
+            marginTop: -6,
+          }}
+        >
+          ← Back to Home
+        </a>
+
         <h1
           style={{
             textAlign: "center",

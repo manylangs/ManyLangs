@@ -148,12 +148,12 @@ export default function LandingPage() {
 
             {/* 버튼 그룹 */}
             <div
+              className="header-extra-buttons"
               style={{
                 display: "flex",
                 alignItems: "center",
                 gap: 6,
                 flexShrink: 0,
-                // width 제거 ❌
               }}
             >
 
@@ -252,24 +252,62 @@ export default function LandingPage() {
             </button>
 
           </div>
-
-
           {menuOpen && (
             <div style={mobileMenu}>
               <button style={mobileMenuLink} onClick={() => scrollToSection("demo")}>
-                How you’ll learn
+                How you'll learn
               </button>
+
               <button style={mobileMenuLink} onClick={() => scrollToSection("features")}>
                 Features
               </button>
+
               <button style={mobileMenuLink} onClick={() => scrollToSection("how")}>
                 How it works
               </button>
+
               <button style={mobileMenuLink} onClick={() => scrollToSection("usecases")}>
                 Use Cases
               </button>
+
               <button style={mobileMenuLink} onClick={() => scrollToSection("pricing")}>
                 Pricing
+              </button>
+
+              <hr style={{ margin: "8px 0", border: "none", borderTop: "1px solid #eee" }} />
+
+              {!isPWA && (
+                <>
+                  <button
+                    style={mobileMenuLink}
+                    onClick={() => {
+                      closeMenu();
+                      handleAndroidInstall();
+                    }}
+                  >
+                    Android App
+                  </button>
+
+                  <button
+                    style={mobileMenuLink}
+                    onClick={() => {
+                      closeMenu();
+                      handleIOSInstall();
+                    }}
+                  >
+                    iOS App
+                  </button>
+                </>
+              )}
+
+              <button
+                style={mobileMenuLink}
+                onClick={() => {
+                  closeMenu();
+                  handleShare();
+                }}
+              >
+                Copy Link
               </button>
             </div>
           )}
@@ -881,28 +919,32 @@ export default function LandingPage() {
     display: inline-flex;
   }
 
-  /* 🔥 모바일 */
-  @media (max-width: 768px) {
+ @media (max-width: 768px) {
 
-    /* 데스크탑 메뉴 숨김 */
-    .desktop-nav {
-      display: none !important;
-    }
-
-    .desktop-email {
-      display: none !important;
-    }
-
-    /* 🔥 추가 (핵심) */
-    .desktop-only {
-      display: none !important;
-    }
-
-    /* 햄버거 보이기 */
-    .mobile-only {
-      display: inline-flex !important;
-    }
+  /* 데스크탑 메뉴 숨김 */
+  .desktop-nav {
+    display: none !important;
   }
+
+  .desktop-email {
+    display: none !important;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+
+  /* Android / iOS / Copy Link 숨김 */
+  .header-extra-buttons > button,
+  .header-extra-buttons > :not(:first-child):not(:nth-child(2)) {
+    display: none !important;
+  }
+
+  /* 햄버거 표시 */
+  .mobile-only {
+    display: inline-flex !important;
+  }
+}
     @media (max-width: 768px) {
   .header-buttons button {
     padding: 6px 8px !important;

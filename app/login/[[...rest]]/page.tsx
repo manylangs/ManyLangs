@@ -20,6 +20,17 @@ export default function LoginPage() {
       }}
     >
       <Logo />
+      <a
+        href="/"
+        style={{
+          fontSize: 14,
+          color: "#666",
+          textDecoration: "none",
+          marginTop: -6,
+        }}
+      >
+        ← Back to Home
+      </a>
       <SignIn /> {/* 👈 이거 있어야 테스트 가능 */}
     </main>
   );
