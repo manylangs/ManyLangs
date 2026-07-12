@@ -207,25 +207,17 @@ export default function LandingPage() {
                 ) && (
                   <>
                     <button
-                      style={{
-                        ...btnHeaderSecondary,
-                        padding: "0 8px",
-                        fontSize: 11,
-                      }}
+                      style={btnHeaderInstall}
                       onClick={handleAndroidInstall}
                     >
                       Android
                     </button>
 
                     <button
-                      style={{
-                        ...btnHeaderSecondary,
-                        padding: "0 8px",
-                        fontSize: 11,
-                      }}
+                      style={btnHeaderInstall}
                       onClick={handleIOSInstall}
                     >
-                      IOS
+                      iOS
                     </button>
                   </>
                 )}
@@ -1373,4 +1365,21 @@ const mobileMenu: React.CSSProperties = {
   flexDirection: "column",
   gap: 4,
   zIndex: 2000,
+};
+
+const btnHeaderInstall: React.CSSProperties = {
+  height: 36,
+  minWidth: 72,
+  padding: "0 12px",
+  borderRadius: 8,
+  background: "#fff",
+  color: "#444",
+  border: "1px solid #ddd",
+  fontSize: 12,
+  fontWeight: 500,
+
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",
+  whiteSpace: "nowrap",
 };
