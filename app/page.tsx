@@ -425,14 +425,19 @@ export default function LandingPage() {
             fontSize: 14,
             color: "#666",
             textAlign: "center",
-            maxWidth: 520,
+            width: "100%",
+            maxWidth: "600px",
             margin: "0 auto 24px",
+            padding: "0 16px",
             lineHeight: 1.6,
+            wordBreak: "keep-all",
+            overflowWrap: "break-word",
           }}
         >
-          See how you actually learn — step by step.
+          Choose the language you want to learn—English, Spanish, Portuguese,
+          French, Korean, Chinese, or Japanese—and study with translations shown
+          below.
         </p>
-
         <div
           style={{
             display: "flex",
