@@ -523,9 +523,9 @@ export default function LandingPage() {
 
           {/* 3 */}
           <div style={card}>
-            <div style={cardTitle}>Learn in 4 languages</div>
+            <div style={cardTitle}>Learn in 7 languages</div>
             <div style={text}>
-              Study your target language using English, Spanish, French, or Portuguese.
+              Study your target language with support in English, Spanish, French, Portuguese, Korean, Simplified Chinese, or Japanese.
             </div>
           </div>
         </div>
