@@ -157,18 +157,44 @@ export default function LandingPage() {
               }}
             >
 
-              {/* 🔥 메인 CTA (확장) */}
-              <a href="/app" style={{ ...linkReset, flex: 1 }}>
-                <button
-                  type="button"
-                  style={{
-                    ...btnHeaderPrimary,
-                    width: "100%",
-                  }}
+              {/* 🔥 메인 CTA */}
+              <div
+                style={{
+                  display: "flex",
+                  gap: 8,
+                  flex: 1,
+                }}
+              >
+                <a
+                  href="/login"
+                  style={{ ...linkReset, flex: 1 }}
                 >
-                  Unlock Full Access
-                </button>
-              </a>
+                  <button
+                    type="button"
+                    style={{
+                      ...btnHeaderPrimary,
+                      width: "100%",
+                    }}
+                  >
+                    Sign In
+                  </button>
+                </a>
+
+                <a
+                  href="/signup"
+                  style={{ ...linkReset, flex: 1 }}
+                >
+                  <button
+                    type="button"
+                    style={{
+                      ...btnHeaderSecondary,
+                      width: "100%",
+                    }}
+                  >
+                    Create Account
+                  </button>
+                </a>
+              </div>
 
               {!isPWA &&
                 !(
@@ -668,37 +694,18 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section style={sectionCenterLarge}>
-        <h2 style={ctaTitle}>Start learning today</h2>
-
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: 12,
-            flexWrap: "wrap",
-          }}
-        >
-          <a
-            href="https://www.manylangs.studio/login"
-            style={linkReset}
-          >
-            <button type="button" style={btnHeaderPrimary}>
-              Sign In
-            </button>
-          </a>
-
-          <a
-            href="https://www.manylangs.studio/signup"
-            style={linkReset}
-          >
-            <button type="button" style={btnSecondary}>
-              Create Account
-            </button>
-          </a>
-        </div>
-      </section>
+      <a
+        href="/signup"
+        style={{
+          ...linkReset,
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <button type="button" style={btnPrimary}>
+          Create an account to purchase coupons
+        </button>
+      </a>
       {
         showIOSGuide && (
           <div
