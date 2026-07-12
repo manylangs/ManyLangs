@@ -23,10 +23,25 @@ export default function LoginPage() {
       <a
         href="/"
         style={{
-          fontSize: 14,
-          color: "#666",
+          display: "inline-flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: 6,
+          padding: "8px 14px",
+          border: "1px solid #ddd",
+          borderRadius: 999,
+          background: "#fff",
+          color: "#333",
           textDecoration: "none",
-          marginTop: -6,
+          fontSize: 14,
+          fontWeight: 500,
+          transition: "all .2s ease",
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.background = "#f5f5f5";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.background = "#fff";
         }}
       >
         ← Back to Home
