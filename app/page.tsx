@@ -675,45 +675,6 @@ export default function LandingPage() {
             ))}
           </div>
 
-          {/* 🔥 메인 CTA */}
-          <div
-            style={{
-              display: "flex",
-              gap: 8,
-              flex: 1,
-            }}
-          >
-            <a
-              href="/login"
-              style={{ ...linkReset, flex: 1 }}
-            >
-              <button
-                type="button"
-                style={{
-                  ...btnHeaderPrimary,
-                  width: "100%",
-                }}
-              >
-                Sign In
-              </button>
-            </a>
-
-            <a
-              href="/signup"
-              style={{ ...linkReset, flex: 1 }}
-            >
-              <button
-                type="button"
-                style={{
-                  ...btnHeaderSecondary,
-                  width: "100%",
-                }}
-              >
-                Create Account
-              </button>
-            </a>
-          </div>
-
           {/* 정책 설명 */}
           <div
             style={{
@@ -732,16 +693,9 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <a
-        href="/signup"
-        style={{
-          ...linkReset,
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
+      <a href="/signup" style={linkReset}>
         <button type="button" style={btnPrimary}>
-          Create an account to purchase coupons
+          Start Learning Today
         </button>
       </a>
       {
