@@ -611,18 +611,44 @@ export default function LandingPage() {
             ))}
           </div>
 
-          <a
-            href="/app"
+          {/* 🔥 메인 CTA */}
+          <div
             style={{
-              ...linkReset,
               display: "flex",
-              justifyContent: "center",
+              gap: 8,
+              flex: 1,
             }}
           >
-            <button type="button" style={btnPrimary}>
-              Purchase coupons after login
-            </button>
-          </a>
+            <a
+              href="/login"
+              style={{ ...linkReset, flex: 1 }}
+            >
+              <button
+                type="button"
+                style={{
+                  ...btnHeaderPrimary,
+                  width: "100%",
+                }}
+              >
+                Sign In
+              </button>
+            </a>
+
+            <a
+              href="/signup"
+              style={{ ...linkReset, flex: 1 }}
+            >
+              <button
+                type="button"
+                style={{
+                  ...btnHeaderSecondary,
+                  width: "100%",
+                }}
+              >
+                Create Account
+              </button>
+            </a>
+          </div>
 
           {/* 정책 설명 */}
           <div
@@ -646,11 +672,32 @@ export default function LandingPage() {
       <section style={sectionCenterLarge}>
         <h2 style={ctaTitle}>Start learning today</h2>
 
-        <a href="/app" style={linkReset}>
-          <button type="button" style={btnHeaderPrimary}>
-            Unlock Full Access
-          </button>
-        </a>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: 12,
+            flexWrap: "wrap",
+          }}
+        >
+          <a
+            href="https://www.manylangs.studio/login"
+            style={linkReset}
+          >
+            <button type="button" style={btnHeaderPrimary}>
+              Sign In
+            </button>
+          </a>
+
+          <a
+            href="https://www.manylangs.studio/signup"
+            style={linkReset}
+          >
+            <button type="button" style={btnSecondary}>
+              Create Account
+            </button>
+          </a>
+        </div>
       </section>
       {
         showIOSGuide && (
