@@ -43,14 +43,32 @@ export default function DemoClient({ lang }: { lang: string }) {
             <div style={wrapper}>
 
                 {/* HEADER */}
-                <div style={headerActions}>
-                    <Link href="/demo" style={{ textDecoration: "none" }}>
-                        <button type="button" style={btnBack}>
+                <div style={headerWrap}>
+                    {/* 🔥 1줄: Sign In / Create Account — 좌우 꽉 채움 */}
+                    <div style={authRow}>
+                        <Link href="/login" style={{ flex: 1, textDecoration: "none" }}>
+                            <button type="button" style={{ ...btnBack, width: "100%" }}>
+                                Sign In
+                            </button>
+                        </Link>
+
+                        <Link href="/signup" style={{ flex: 1, textDecoration: "none" }}>
+                            <button type="button" style={{ ...btnHeaderPrimary, width: "100%" }}>
+                                Create Account
+                            </button>
+                        </Link>
+                    </div>
+
+                    {/* 🔥 2줄: Back / Copy link */}
+                    <div style={secondaryRow}>
+                        <button
+                            type="button"
+                            onClick={() => router.back()}
+                            style={btnBack}
+                        >
                             ← Back
                         </button>
-                    </Link>
 
-                    <div style={headerRightGroup}>
                         <button
                             type="button"
                             onClick={handleCopy}
@@ -58,18 +76,6 @@ export default function DemoClient({ lang }: { lang: string }) {
                         >
                             Copy link
                         </button>
-
-                        <Link href="/login" style={{ textDecoration: "none" }}>
-                            <button type="button" style={{ ...btnBack, ...btnAuth }}>
-                                Sign In
-                            </button>
-                        </Link>
-
-                        <Link href="/signup" style={{ textDecoration: "none" }}>
-                            <button type="button" style={{ ...btnHeaderPrimary, ...btnAuth }}>
-                                Create Account
-                            </button>
-                        </Link>
                     </div>
                 </div>
 
@@ -279,27 +285,25 @@ const cardHint: CSSProperties = {
     fontWeight: 600,
 };
 
-/* 🔥 헤더 전체: Back(왼쪽) + 나머지(오른쪽) */
-const headerActions: CSSProperties = {
+/* 🔥 헤더 전체 래퍼 */
+const headerWrap: CSSProperties = {
     display: "flex",
-    alignItems: "center",
-    gap: 8,
+    flexDirection: "column",
+    gap: 10,
     marginBottom: 20,
     paddingTop: "calc(env(safe-area-inset-top) + 8px)",
-    flexWrap: "wrap",
 };
 
-/* 🔥 Copy link / Sign In / Create Account 그룹 — 오른쪽 정렬 */
-const headerRightGroup: CSSProperties = {
+/* 🔥 1줄: Sign In / Create Account — 좌우 꽉 채움, 같은 너비 */
+const authRow: CSSProperties = {
+    display: "flex",
+    gap: 8,
+    width: "100%",
+};
+
+/* 🔥 2줄: Back / Copy link */
+const secondaryRow: CSSProperties = {
     display: "flex",
     alignItems: "center",
     gap: 8,
-    marginLeft: "auto",
-    flexWrap: "wrap",
-};
-
-/* 🔥 Sign In / Create Account 너비 통일 */
-const btnAuth: CSSProperties = {
-    ...baseBtn,
-    minWidth: 96,
 };
