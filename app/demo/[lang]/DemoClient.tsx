@@ -5,6 +5,7 @@ import type { CSSProperties } from "react";
 import { useRouter } from "next/navigation";
 import { copyLink } from "@/utils/share";
 import { LANGUAGES } from "@/app/config/languages";
+import Link from "next/link";
 
 const demoData = [
     { category: "Vocabulary", desc: "Learn essential words", icon: "📘", bg: "#fffaf6", items: [{ title: "A1 - Chapter 1", series: "voca" }] },
@@ -42,31 +43,26 @@ export default function DemoClient({ lang }: { lang: string }) {
             <div style={wrapper}>
 
                 {/* HEADER */}
-                <div style={{ ...headerRow, position: "relative", zIndex: 10 }}>
+                <div style={headerActions}>
                     <button
                         type="button"
-                        onClick={() => { window.location.href = "/"; }}
-                        style={btnBack}
+                        onClick={handleCopy}
+                        style={btnSecondary}
                     >
-                        ← Back
+                        Copy link
                     </button>
 
-                    <div style={headerActions}>
-                        <button
-                            type="button"
-                            onClick={handleCopy}
-                            style={btnSecondary}
-                        >
-                            Copy link
+                    <Link href="/login" style={{ textDecoration: "none" }}>
+                        <button type="button" style={btnBack}>
+                            Sign In
                         </button>
-                        <button
-                            type="button"
-                            onClick={() => { window.location.href = "/app"; }}
-                            style={btnHeaderPrimary}
-                        >
-                            Unlock Full Access
+                    </Link>
+
+                    <Link href="/signup" style={{ textDecoration: "none" }}>
+                        <button type="button" style={btnHeaderPrimary}>
+                            Create Account
                         </button>
-                    </div>
+                    </Link>
                 </div>
 
                 {/* INFO */}

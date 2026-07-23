@@ -242,7 +242,7 @@ export default function DemoVocaViewer({
   if (status === "loading") return <div style={{ padding: 24 }}>Loading...</div>;
   if (status === "error") return <div style={{ padding: 24 }}>Failed</div>;
 
-  return (
+  return(
     <div style={containerStyle}>
       {/* ================= HEADER ================= */}
       <div
@@ -254,195 +254,155 @@ export default function DemoVocaViewer({
           paddingTop: "calc(env(safe-area-inset-top) + 8px)",
         }}
       >
-
+        {/* 🔥 1줄: Back / Toggle / Copy */}
         <div
           style={{
             display: "flex",
-            flexDirection: "column",
-            padding: "10px 16px",
-            borderBottom: "1px solid #eee",
+            alignItems: "center",
             gap: 6,
+            flexWrap: "nowrap",
+            overflowX: "auto",
+            minWidth: 0,
           }}
         >
-
-          {/* 🔥 1줄: Back / Toggle / Copy / Unlock */}
-          <div
+          <Link
+            href="/demo"
             style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              gap: 6,
-              flexWrap: "nowrap",
-              overflowX: "auto",
-              minWidth: 0,
+              fontSize: 12,
+              fontWeight: 600,
+              color: "#111",
+              textDecoration: "none",
+              flexShrink: 0,
+              marginRight: 6,
             }}
           >
-            <Link
-              href="/demo"
-              style={{
-                fontSize: 12,
-                fontWeight: 600,
-                color: "#111",
-                textDecoration: "none",
-                flexShrink: 0,
-                marginRight: 6,
-              }}
-            >
-              ← Back
-            </Link>
+            ← Back
+          </Link>
 
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "nowrap",
-                gap: 6,
-                minWidth: 0,
-                flexShrink: 0,
-              }}
-            >
-              <button
-                onClick={() => setShowTargetText(!showTargetText)}
-                style={buttonStyle(false)}
-              >
-                Toggle
-              </button>
-
-              <button
-                onClick={async () => {
-                  if (navigator.share) {
-                    try {
-                      await navigator.share({
-                        url: window.location.href,
-                      });
-                    } catch { }
-                  } else {
-                    await navigator.clipboard.writeText(window.location.href);
-                    alert("Link copied!");
-                  }
-                }}
-                style={buttonStyle(false)}
-              >
-                Copy link
-              </button>
-
-              <div
-                style={{
-                  display: "flex",
-                  gap: 8,
-                  flex: 1,
-                  minWidth: 220,
-                }}
-              >
-                <Link
-                  href="/login"
-                  style={{
-                    flex: 1,
-                    textDecoration: "none",
-                  }}
-                >
-                  <button
-                    type="button"
-                    style={{
-                      ...buttonStyle(false),
-                      width: "100%",
-                      border: "1px solid #ddd",
-                      background: "#fff",
-                      color: "#111",
-                    }}
-                  >
-                    Sign In
-                  </button>
-                </Link>
-
-                <Link
-                  href="/signup"
-                  style={{
-                    flex: 1,
-                    textDecoration: "none",
-                  }}
-                >
-                  <button
-                    type="button"
-                    style={{
-                      ...buttonStyle(false),
-                      width: "100%",
-                      background: "#111",
-                      color: "#fff",
-                    }}
-                  >
-                    Create Account
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* 🔥 2줄: 학습 언어 버튼들 */}
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "nowrap",
-              gap: 6,
-              overflowX: "auto",
-              minWidth: 0,
-            }}
+          <button
+            onClick={() => setShowTargetText(!showTargetText)}
+            style={{ ...buttonStyle(false), flexShrink: 0 }}
           >
-            {ALL_STUDY_LANGS
-              .filter((l) => l !== targetLang)
-              .map((l) => (
-                <button
-                  key={l}
-                  onClick={() => setStudyLang(l)}
-                  style={buttonStyle(studyLang === l)}
-                >
-                  {UI_TARGET_LABELS[l as UiLangKey]?.native ?? l.toUpperCase()}
-                </button>
-              ))}
-          </div>
+            Toggle
+          </button>
+
+          <button
+            onClick={async () => {
+              if (navigator.share) {
+                try {
+                  await navigator.share({
+                    url: window.location.href,
+                  });
+                } catch { }
+              } else {
+                await navigator.clipboard.writeText(window.location.href);
+                alert("Link copied!");
+              }
+            }}
+            style={{ ...buttonStyle(false), flexShrink: 0 }}
+          >
+            Copy link
+          </button>
         </div>
 
-        {/* 🔥 AUDIO */}
-
-        {targetLang && (
-          <div style={{ borderBottom: "1px solid #eee", padding: "6px 16px" }}>
-            <VocaAudioController lang={targetLang} level={level} chapter={chapter} />
-          </div>
-        )}
-
-        {/* 🔥 GUIDE */}
+        {/* 🔥 2줄: Sign In / Create Account */}
         <div
           style={{
-            fontSize: 13,
-            color: "#666",
-            background: "#fafafa",
-            padding: "12px 14px",
-            borderRadius: 10,
-            border: "1px solid #eee",
-            marginTop: 10,
-            marginLeft: 16,
-            marginRight: 16,
+            display: "flex",
+            gap: 8,
+            width: "100%",
           }}
         >
-          {guideTexts[studyLang].map((t, i) => (
-            <div key={i}>{t}</div>
-          ))}
+          <Link href="/login" style={{ flex: 1, textDecoration: "none" }}>
+            <button
+              type="button"
+              style={{
+                ...buttonStyle(false),
+                width: "100%",
+                border: "1px solid #ddd",
+                background: "#fff",
+                color: "#111",
+              }}
+            >
+              Sign In
+            </button>
+          </Link>
+
+          <Link href="/signup" style={{ flex: 1, textDecoration: "none" }}>
+            <button
+              type="button"
+              style={{
+                ...buttonStyle(false),
+                width: "100%",
+                background: "#111",
+                color: "#fff",
+              }}
+            >
+              Create Account
+            </button>
+          </Link>
+        </div>
+
+        {/* 🔥 3줄: 학습 언어 버튼들 */}
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "nowrap",
+            gap: 6,
+            overflowX: "auto",
+            minWidth: 0,
+          }}
+        >
+          {ALL_STUDY_LANGS
+            .filter((l) => l !== targetLang)
+            .map((l) => (
+              <button
+                key={l}
+                onClick={() => setStudyLang(l)}
+                style={buttonStyle(studyLang === l)}
+              >
+                {UI_TARGET_LABELS[l as UiLangKey]?.native ?? l.toUpperCase()}
+              </button>
+            ))}
         </div>
       </div>
+
+      {/* 🔥 AUDIO */}
+      {targetLang && (
+        <div style={{ borderBottom: "1px solid #eee", padding: "6px 16px" }}>
+          <VocaAudioController lang={targetLang} level={level} chapter={chapter} />
+        </div>
+      )}
+
+      {/* 🔥 GUIDE */}
+      <div
+        style={{
+          fontSize: 13,
+          color: "#666",
+          background: "#fafafa",
+          padding: "12px 14px",
+          borderRadius: 10,
+          border: "1px solid #eee",
+          marginTop: 10,
+          marginLeft: 16,
+          marginRight: 16,
+        }}
+      >
+        {guideTexts[studyLang].map((t, i) => (
+          <div key={i}>{t}</div>
+        ))}
+      </div>
+
       {/* 🔥 CONTENT */}
       <div style={{ padding: "0 16px 30px" }}>
         {blocks.map((block, idx) => {
           const setNumber = idx + 1;
 
-          /* 🔥 word.<lang>이 이제 { core, meaning_zone } 객체이므로
-             getWordText로 core만 안전하게 뽑아 표시용 문자열로 사용한다.
-             (구버전 plain string 데이터가 남아있어도 하위호환으로 동작) */
           const targetEntry = block.word?.[TARGET_KEY];
           const studyEntry = block.word?.[studyLang];
           const word = getWordText(targetEntry);
           const wordStudy = getWordText(studyEntry);
 
-          // meaning_zone의 나머지 표현(core 제외) — 원문/학습언어 양쪽 다 병기해서
-          // 하나의 개념이 문맥에 따라 다르게 표현될 수 있음을 학습자가 알 수 있게 한다.
           const wordExtras = getMeaningZoneExtras(targetEntry);
           const wordStudyExtras = getMeaningZoneExtras(studyEntry);
 
@@ -497,7 +457,7 @@ export default function DemoVocaViewer({
                 )}
               </div>
 
-              {/* 예문 (examples[lang]은 스키마 변경 없이 그대로 plain string) */}
+              {/* 예문 */}
               {block.examples?.map((ex, i) => {
                 const t = ex[TARGET_KEY] ?? "";
                 const s = ex[studyLang] ?? "";
