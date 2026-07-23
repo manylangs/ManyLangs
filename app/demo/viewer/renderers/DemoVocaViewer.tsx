@@ -242,7 +242,7 @@ export default function DemoVocaViewer({
   if (status === "loading") return <div style={{ padding: 24 }}>Loading...</div>;
   if (status === "error") return <div style={{ padding: 24 }}>Failed</div>;
 
-  return(
+  return (
     <div style={containerStyle}>
       {/* ================= HEADER ================= */}
       <div
@@ -254,7 +254,46 @@ export default function DemoVocaViewer({
           paddingTop: "calc(env(safe-area-inset-top) + 8px)",
         }}
       >
-        {/* 🔥 1줄: Back / Toggle / Copy */}
+        {/* 🔥 1줄: Sign In / Create Account */}
+        <div
+          style={{
+            display: "flex",
+            gap: 8,
+            width: "100%",
+            marginBottom: 12,
+          }}
+        >
+          <Link href="/login" style={{ flex: 1, textDecoration: "none" }}>
+            <button
+              type="button"
+              style={{
+                ...buttonStyle(false),
+                width: "100%",
+                border: "1px solid #ddd",
+                background: "#fff",
+                color: "#111",
+              }}
+            >
+              Sign In
+            </button>
+          </Link>
+
+          <Link href="/signup" style={{ flex: 1, textDecoration: "none" }}>
+            <button
+              type="button"
+              style={{
+                ...buttonStyle(false),
+                width: "100%",
+                background: "#111",
+                color: "#fff",
+              }}
+            >
+              Create Account
+            </button>
+          </Link>
+        </div>
+
+        {/* 🔥 2줄: Back / Toggle / Copy */}
         <div
           style={{
             display: "flex",
@@ -263,6 +302,7 @@ export default function DemoVocaViewer({
             flexWrap: "nowrap",
             overflowX: "auto",
             minWidth: 0,
+            marginBottom: 12,
           }}
         >
           <Link
@@ -303,44 +343,6 @@ export default function DemoVocaViewer({
           >
             Copy link
           </button>
-        </div>
-
-        {/* 🔥 2줄: Sign In / Create Account */}
-        <div
-          style={{
-            display: "flex",
-            gap: 8,
-            width: "100%",
-          }}
-        >
-          <Link href="/login" style={{ flex: 1, textDecoration: "none" }}>
-            <button
-              type="button"
-              style={{
-                ...buttonStyle(false),
-                width: "100%",
-                border: "1px solid #ddd",
-                background: "#fff",
-                color: "#111",
-              }}
-            >
-              Sign In
-            </button>
-          </Link>
-
-          <Link href="/signup" style={{ flex: 1, textDecoration: "none" }}>
-            <button
-              type="button"
-              style={{
-                ...buttonStyle(false),
-                width: "100%",
-                background: "#111",
-                color: "#fff",
-              }}
-            >
-              Create Account
-            </button>
-          </Link>
         </div>
 
         {/* 🔥 3줄: 학습 언어 버튼들 */}

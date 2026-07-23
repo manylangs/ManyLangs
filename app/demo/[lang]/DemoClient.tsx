@@ -174,11 +174,6 @@ const headerRow: CSSProperties = {
     paddingTop: "calc(env(safe-area-inset-top) + 8px)",
 };
 
-const headerActions: CSSProperties = {
-    display: "flex",
-    gap: 10,
-};
-
 const baseBtn: CSSProperties = {
     padding: "6px 10px",
     fontSize: 13,
@@ -283,3 +278,13 @@ const cardHint: CSSProperties = {
     color: "#111",
     fontWeight: 600,
 }
+const headerActions: CSSProperties = {
+    display: "flex",
+    gap: 8,
+    marginLeft: "auto",
+};
+
+const btnAuth: CSSProperties = {
+    ...baseBtn,
+    minWidth: 96,
+};
