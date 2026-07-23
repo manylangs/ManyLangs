@@ -1,0 +1,254 @@
+{
+    "meta": {
+        "series": "C1_KO_CONCESSION",
+        "level": "c1",
+        "id": "141"
+    },
+    "title": {
+        "target": "-(으)ㄴ/는 만큼",
+        "en": "-(eu)n/neun mankeum",
+        "es": "-(eu)n/neun mankeum",
+        "fr": "-(eu)n/neun mankeum",
+        "pt": "-(eu)n/neun mankeum",
+        "kr": "-(으)ㄴ/는 만큼",
+        "jp": "-(eu)n/neun mankeum",
+        "zh": "-(eu)n/neun mankeum"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "이 표현은 앞 절의 내용이 뒤 절의 판단이나 결과를 뒷받침하는 근거임을 나타내는 문법이다. 동사와 형용사의 어간에 결합하며, 동사 현재형은 '-는 만큼', 형용사와 동사 과거형은 '-(으)ㄴ 만큼', 명사 뒤에서는 '인 만큼'의 형태로 쓰인다.",
+                "en": "This expression indicates that the preceding clause serves as the grounds supporting the judgment or result in the following clause. It attaches to verb and adjective stems, taking the form '-는 만큼' with present-tense verbs, '-(으)ㄴ 만큼' with adjectives and past-tense verbs, and '인 만큼' after nouns.",
+                "es": "Esta expresión indica que la cláusula anterior sirve de fundamento para el juicio o resultado de la cláusula siguiente. Se une a las raíces de verbos y adjetivos, adoptando la forma '-는 만큼' con verbos en presente, '-(으)ㄴ 만큼' con adjetivos y verbos en pasado, y '인 만큼' tras sustantivos.",
+                "fr": "Cette expression indique que la proposition précédente sert de fondement au jugement ou au résultat exprimé dans la proposition suivante. Elle s'attache aux radicaux des verbes et des adjectifs, prenant la forme '-는 만큼' avec les verbes au présent, '-(으)ㄴ 만큼' avec les adjectifs et les verbes au passé, et '인 만큼' après un nom.",
+                "pt": "Esta expressão indica que a oração anterior serve de fundamento para o julgamento ou resultado expresso na oração seguinte. Junta-se aos radicais de verbos e adjetivos, assumindo a forma '-는 만큼' com verbos no presente, '-(으)ㄴ 만큼' com adjetivos e verbos no passado, e '인 만큼' após substantivos.",
+                "kr": "이 표현은 앞 절의 내용이 뒤 절의 판단이나 결과를 뒷받침하는 근거임을 나타내는 문법이다. 동사와 형용사의 어간에 결합하며, 동사 현재형은 '-는 만큼', 형용사와 동사 과거형은 '-(으)ㄴ 만큼', 명사 뒤에서는 '인 만큼'의 형태로 쓰인다.",
+                "jp": "この表現は、前の節の内容が後の節の判断や結果を裏付ける根拠であることを示す文法である。動詞と形容詞の語幹に結合し、動詞の現在形には「-는 만큼」、形容詞と動詞の過去形には「-(으)ㄴ 만큼」、名詞の後では「인 만큼」の形で用いられる。",
+                "zh": "该表达是一种表示前一分句的内容作为支撑后一分句判断或结果的依据的语法。它连接在动词和形容词的词干之后，动词现在时采用“-는 만큼”的形式，形容词和动词过去时采用“-(으)ㄴ 만큼”，名词后则采用“인 만큼”的形式。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "핵심은 앞 절이 단순한 상황 설명이 아니라 뒤 절 내용의 타당성을 뒷받침하는 근거로 기능한다는 점이다. 문장 구조상 근거가 되는 절이 앞에 오고 그 근거에 따른 판단이나 결과가 뒤에 이어진다.",
+                "en": "The key point is that the preceding clause functions not as a mere description of a situation but as grounds supporting the validity of what follows. Structurally, the clause providing the grounds comes first, followed by the judgment or result based on it.",
+                "es": "El punto clave es que la cláusula anterior no funciona como una simple descripción de una situación, sino como fundamento que respalda la validez de lo que sigue. Estructuralmente, la cláusula que aporta el fundamento va primero, seguida del juicio o resultado basado en ella.",
+                "fr": "L'essentiel est que la proposition précédente ne fonctionne pas comme une simple description d'une situation, mais comme un fondement soutenant la validité de ce qui suit. Sur le plan structurel, la proposition apportant le fondement vient en premier, suivie du jugement ou du résultat qui en découle.",
+                "pt": "O ponto essencial é que a oração anterior não funciona como uma simples descrição de uma situação, mas como fundamento que sustenta a validade do que se segue. Estruturalmente, a oração que fornece o fundamento vem primeiro, seguida do julgamento ou resultado baseado nela.",
+                "kr": "핵심은 앞 절이 단순한 상황 설명이 아니라 뒤 절 내용의 타당성을 뒷받침하는 근거로 기능한다는 점이다. 문장 구조상 근거가 되는 절이 앞에 오고 그 근거에 따른 판단이나 결과가 뒤에 이어진다.",
+                "jp": "重要なのは、前の節が単なる状況説明ではなく、後の節の内容の妥当性を裏付ける根拠として機能するという点である。文の構造上、根拠となる節が先に来て、その根拠に基づく判断や結果が後に続く。",
+                "zh": "关键在于，前一分句并非单纯的情况说明，而是作为支撑后一分句内容合理性的依据发挥作用。在句子结构上，作为依据的分句在前，基于该依据的判断或结果在后。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "뒤 절에는 명령문이나 청유문처럼 화자의 직접적인 요구를 담은 문장이 오기 어려운데, 이는 이 표현이 객관적 근거 제시에 초점을 두기 때문이다. 시제에 따라 형태가 달라져서 동사의 현재는 '-는 만큼', 과거는 '-(으)ㄴ 만큼'을 사용해야 하며, 형용사는 항상 '-(으)ㄴ 만큼', 명사는 '인 만큼'을 취한다.",
+                "en": "It is difficult for the following clause to contain a command or suggestion directed at the listener, since this expression focuses on presenting objective grounds. The form changes depending on tense: present-tense verbs take '-는 만큼', past-tense verbs take '-(으)ㄴ 만큼', adjectives always take '-(으)ㄴ 만큼', and nouns take '인 만큼'.",
+                "es": "Resulta difícil que la cláusula siguiente contenga una orden o sugerencia dirigida al oyente, ya que esta expresión se centra en presentar un fundamento objetivo. La forma cambia según el tiempo verbal: los verbos en presente toman '-는 만큼', los verbos en pasado toman '-(으)ㄴ 만큼', los adjetivos siempre toman '-(으)ㄴ 만큼', y los sustantivos toman '인 만큼'.",
+                "fr": "Il est difficile que la proposition suivante contienne un ordre ou une suggestion adressée à l'interlocuteur, car cette expression se concentre sur la présentation d'un fondement objectif. La forme change selon le temps : les verbes au présent prennent '-는 만큼', les verbes au passé prennent '-(으)ㄴ 만큼', les adjectifs prennent toujours '-(으)ㄴ 만큼', et les noms prennent '인 만큼'.",
+                "pt": "É difícil que a oração seguinte contenha uma ordem ou sugestão dirigida ao ouvinte, visto que esta expressão se centra em apresentar um fundamento objetivo. A forma muda consoante o tempo verbal: verbos no presente tomam '-는 만큼', verbos no passado tomam '-(으)ㄴ 만큼', adjetivos tomam sempre '-(으)ㄴ 만큼', e substantivos tomam '인 만큼'.",
+                "kr": "뒤 절에는 명령문이나 청유문처럼 화자의 직접적인 요구를 담은 문장이 오기 어려운데, 이는 이 표현이 객관적 근거 제시에 초점을 두기 때문이다. 시제에 따라 형태가 달라져서 동사의 현재는 '-는 만큼', 과거는 '-(으)ㄴ 만큼'을 사용해야 하며, 형용사는 항상 '-(으)ㄴ 만큼', 명사는 '인 만큼'을 취한다.",
+                "jp": "後の節には命令文や勧誘文のように話し手の直接的な要求を含む文が来にくいが、これはこの表現が客観的な根拠の提示に焦点を置くためである。時制によって形が変わり、動詞の現在には「-는 만큼」、過去には「-(으)ㄴ 만큼」を使わなければならず、形容詞は常に「-(으)ㄴ 만큼」、名詞は「인 만큼」を取る。",
+                "zh": "后一分句中很难出现命令句或劝诱句这类包含说话者直接要求的句子，这是因为该表达着重于提出客观依据。其形式随时态而变化：动词现在时须用“-는 만큼”，过去时须用“-(으)ㄴ 만큼”，形容词始终用“-(으)ㄴ 만큼”，名词则用“인 만큼”。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "비교되는 표현으로 정도의 유사성을 나타내는 '만큼'이 있으나, 그것과 달리 이 문법은 근거나 이유를 제시하는 기능에 중점을 둔다. 격식적인 글이나 공식적인 발표에서 자주 쓰이며 일상 대화에서는 상대적으로 사용 빈도가 낮은 편이다.",
+                "en": "There is a comparable expression indicating similarity in degree, but unlike that, this grammar focuses on presenting grounds or reasons. It is frequently used in formal writing and official presentations, appearing relatively less often in everyday conversation.",
+                "es": "Existe una expresión comparable que indica semejanza de grado, pero a diferencia de ella, esta gramática se centra en presentar un fundamento o motivo. Se utiliza con frecuencia en textos formales y presentaciones oficiales, apareciendo con menor frecuencia en la conversación cotidiana.",
+                "fr": "Il existe une expression comparable indiquant une similitude de degré, mais contrairement à celle-ci, cette grammaire se concentre sur la présentation d'un fondement ou d'une raison. Elle est fréquemment utilisée dans les écrits formels et les présentations officielles, apparaissant relativement moins souvent dans la conversation quotidienne.",
+                "pt": "Existe uma expressão comparável que indica semelhança de grau, mas ao contrário desta, esta gramática centra-se em apresentar um fundamento ou motivo. É frequentemente usada em textos formais e apresentações oficiais, surgindo com menor frequência na conversa quotidiana.",
+                "kr": "비교되는 표현으로 정도의 유사성을 나타내는 '만큼'이 있으나, 그것과 달리 이 문법은 근거나 이유를 제시하는 기능에 중점을 둔다. 격식적인 글이나 공식적인 발표에서 자주 쓰이며 일상 대화에서는 상대적으로 사용 빈도가 낮은 편이다.",
+                "jp": "比較される表現として程度の類似性を表す「만큼」があるが、それとは異なり、この文法は根拠や理由を提示する機能に重点を置く。格式のある文章や公式の発表で頻繁に使われ、日常会話では相対的に使用頻度が低い方である。",
+                "zh": "有一个可作比较的表达，即表示程度相似的“만큼”，但与之不同，该语法侧重于提出依据或理由的功能。它常用于正式文章和官方发表中，在日常对话中的使用频率相对较低。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "자주 나타나는 오류로는 동사 현재형에 '-는 만큼' 대신 잘못된 형태를 붙이는 경우가 있으며, 이는 반드시 '-는 만큼'으로 고쳐야 한다. 명사 뒤에서는 조사 없이 '만큼'만 붙이는 실수가 흔한데, 이 경우 '인 만큼'의 형태로 수정해야 한다.",
+                "en": "A common error is attaching an incorrect form instead of '-는 만큼' to present-tense verbs, which must always be corrected to '-는 만큼'. Another frequent mistake is attaching only '만큼' after a noun without a particle, which should be corrected to the form '인 만큼'.",
+                "es": "Un error frecuente consiste en añadir una forma incorrecta en lugar de '-는 만큼' a los verbos en presente, lo cual debe corregirse siempre a '-는 만큼'. Otro error habitual es añadir solo '만큼' tras un sustantivo sin partícula, que debe corregirse a la forma '인 만큼'.",
+                "fr": "Une erreur fréquente consiste à ajouter une forme incorrecte à la place de '-는 만큼' aux verbes au présent, ce qui doit toujours être corrigé en '-는 만큼'. Une autre erreur courante consiste à n'ajouter que '만큼' après un nom sans particule, ce qui doit être corrigé en la forme '인 만큼'.",
+                "pt": "Um erro frequente consiste em juntar uma forma incorreta em vez de '-는 만큼' aos verbos no presente, o que deve ser sempre corrigido para '-는 만큼'. Outro erro comum é juntar apenas '만큼' após um substantivo sem partícula, o que deve ser corrigido para a forma '인 만큼'.",
+                "kr": "자주 나타나는 오류로는 동사 현재형에 '-는 만큼' 대신 잘못된 형태를 붙이는 경우가 있으며, 이는 반드시 '-는 만큼'으로 고쳐야 한다. 명사 뒤에서는 조사 없이 '만큼'만 붙이는 실수가 흔한데, 이 경우 '인 만큼'의 형태로 수정해야 한다.",
+                "jp": "よく見られる誤りとしては、動詞の現在形に「-는 만큼」の代わりに誤った形を付ける場合があり、これは必ず「-는 만큼」に直さなければならない。名詞の後に助詞なしで「만큼」だけを付ける間違いも多いが、この場合は「인 만큼」の形に修正する必要がある。",
+                "zh": "常见的错误之一是在动词现在时后附加错误的形式而非“-는 만큼”，这必须改为“-는 만큼”。另一个常见错误是在名词后不加词缀而只附加“만큼”，此时应修改为“인 만큼”的形式。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "노력한 만큼 좋은 결과가 나올 것이다.",
+                "en": "Since one worked hard, good results will follow.",
+                "es": "Puesto que se ha trabajado duro, se obtendrán buenos resultados.",
+                "fr": "Puisqu'on a beaucoup travaillé, de bons résultats en découleront.",
+                "pt": "Visto que se trabalhou muito, virão bons resultados.",
+                "kr": "노력한 만큼 좋은 결과가 나올 것이다.",
+                "jp": "努力しただけに、良い結果が出るはずです。",
+                "zh": "正因为付出了努力，才会有好的结果。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "중요한 문제인 만큼 신중하게 결정해야 한다.",
+                "en": "Since it is an important issue, the decision must be made carefully.",
+                "es": "Dado que es un asunto importante, la decisión debe tomarse con cuidado.",
+                "fr": "Étant donné que c'est une question importante, la décision doit être prise avec prudence.",
+                "pt": "Visto que é uma questão importante, a decisão deve ser tomada com cuidado.",
+                "kr": "중요한 문제인 만큼 신중하게 결정해야 한다.",
+                "jp": "重要な問題であるだけに、慎重に決定しなければなりません。",
+                "zh": "正因为是重要的问题，所以必须慎重地做出决定。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "시간이 부족한 만큼 서둘러야 한다.",
+                "en": "Since time is short, one must hurry.",
+                "es": "Dado que el tiempo es escaso, hay que darse prisa.",
+                "fr": "Puisque le temps manque, il faut se dépêcher.",
+                "pt": "Visto que o tempo é escasso, é preciso apressar-se.",
+                "kr": "시간이 부족한 만큼 서둘러야 한다.",
+                "jp": "時間が足りないだけに、急がなければなりません。",
+                "zh": "正因为时间不足，所以必须抓紧。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "경험이 풍부한 만큼 실수가 적다.",
+                "en": "Since one has abundant experience, mistakes are few.",
+                "es": "Dado que se tiene mucha experiencia, los errores son pocos.",
+                "fr": "Puisqu'on a une grande expérience, les erreurs sont peu nombreuses.",
+                "pt": "Visto que se tem muita experiência, os erros são poucos.",
+                "kr": "경험이 풍부한 만큼 실수가 적다.",
+                "jp": "経験が豊富なだけに、ミスが少ないです。",
+                "zh": "正因为经验丰富，所以失误很少。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "최선을 다한 만큼 후회는 없다.",
+                "en": "Since one gave one's best, there are no regrets.",
+                "es": "Dado que se dio lo mejor de sí, no hay arrepentimientos.",
+                "fr": "Puisqu'on a donné le meilleur de soi-même, il n'y a aucun regret.",
+                "pt": "Visto que se deu o melhor de si, não há arrependimentos.",
+                "kr": "최선을 다한 만큼 후회는 없다.",
+                "jp": "最善を尽くしただけに、後悔はありません。",
+                "zh": "正因为已尽全力，所以没有遗憾。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "규모가 큰 프로젝트인 만큼 준비 기간이 길었다.",
+                "en": "Since it was a large-scale project, the preparation period was long.",
+                "es": "Dado que era un proyecto de gran envergadura, el período de preparación fue largo.",
+                "fr": "Puisque c'était un projet de grande envergure, la période de préparation a été longue.",
+                "pt": "Visto que era um projeto de grande dimensão, o período de preparação foi longo.",
+                "kr": "규모가 큰 프로젝트인 만큼 준비 기간이 길었다.",
+                "jp": "規模の大きいプロジェクトだっただけに、準備期間が長かったです。",
+                "zh": "正因为是规模庞大的项目，准备时间才很长。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "어린 아이인 만큼 세심한 배려가 필요하다.",
+                "en": "Since he is a young child, careful attention is needed.",
+                "es": "Dado que es un niño pequeño, se necesita una atención cuidadosa.",
+                "fr": "Puisque c'est un jeune enfant, une attention minutieuse est nécessaire.",
+                "pt": "Visto que é uma criança pequena, é necessária uma atenção cuidadosa.",
+                "kr": "어린 아이인 만큼 세심한 배려가 필요하다.",
+                "jp": "幼い子どもであるだけに、細やかな配慮が必要です。",
+                "zh": "正因为是年幼的孩子，所以需要细致的关照。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "상황이 급한 만큼 빠른 대응이 요구된다.",
+                "en": "Since the situation is urgent, a swift response is required.",
+                "es": "Dado que la situación es urgente, se requiere una respuesta rápida.",
+                "fr": "Puisque la situation est urgente, une réponse rapide est requise.",
+                "pt": "Visto que a situação é urgente, é exigida uma resposta rápida.",
+                "kr": "상황이 급한 만큼 빠른 대응이 요구된다.",
+                "jp": "状況が差し迫っているだけに、迅速な対応が求められます。",
+                "zh": "正因为情况紧急，所以需要迅速应对。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "오래 준비한 만큼 발표가 순조롭게 진행되었다.",
+                "en": "Since it was prepared for a long time, the presentation went smoothly.",
+                "es": "Dado que se preparó durante mucho tiempo, la presentación se desarrolló sin problemas.",
+                "fr": "Puisque cela a été préparé longtemps, la présentation s'est déroulée sans encombre.",
+                "pt": "Visto que foi preparada durante muito tempo, a apresentação decorreu sem problemas.",
+                "kr": "오래 준비한 만큼 발표가 순조롭게 진행되었다.",
+                "jp": "長く準備しただけに、発表は順調に進みました。",
+                "zh": "正因为准备了很久，发表才进行得很顺利。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "책임이 큰 자리인 만큼 부담도 크다.",
+                "en": "Since it is a position of great responsibility, the burden is also great.",
+                "es": "Dado que es un puesto de gran responsabilidad, la carga también es grande.",
+                "fr": "Puisque c'est un poste de grande responsabilité, la charge est également lourde.",
+                "pt": "Visto que é um cargo de grande responsabilidade, o peso também é grande.",
+                "kr": "책임이 큰 자리인 만큼 부담도 크다.",
+                "jp": "責任の重い立場であるだけに、負担も大きいです。",
+                "zh": "正因为是责任重大的职位，负担也很大。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "많은 사람이 관심을 가진 만큼 행사 규모를 확대했다.",
+                "en": "Since many people showed interest, the scale of the event was expanded.",
+                "es": "Dado que muchas personas mostraron interés, se amplió la escala del evento.",
+                "fr": "Puisque de nombreuses personnes ont montré de l'intérêt, l'ampleur de l'événement a été élargie.",
+                "pt": "Visto que muitas pessoas mostraram interesse, a dimensão do evento foi ampliada.",
+                "kr": "많은 사람이 관심을 가진 만큼 행사 규모를 확대했다.",
+                "jp": "多くの人が関心を持っただけに、行事の規模を拡大しました。",
+                "zh": "正因为许多人表示了关注，所以扩大了活动的规模。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "처음 시도하는 만큼 여러 변수를 고려해야 한다.",
+                "en": "Since it is the first attempt, various variables must be considered.",
+                "es": "Dado que es el primer intento, deben considerarse varias variables.",
+                "fr": "Puisque c'est la première tentative, plusieurs variables doivent être prises en compte.",
+                "pt": "Visto que é a primeira tentativa, devem ser consideradas várias variáveis.",
+                "kr": "처음 시도하는 만큼 여러 변수를 고려해야 한다.",
+                "jp": "初めて試みるだけに、さまざまな変数を考慮しなければなりません。",
+                "zh": "正因为是首次尝试，所以必须考虑多种变数。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}
+  
+  

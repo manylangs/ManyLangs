@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "B2_KO_EMPHASIS2",
+        "level": "b2",
+        "id": "124"
+    },
+    "title": {
+        "target": "-(이)야말로",
+        "en": "Indeed / Truly (Emphatic Topic Marker)",
+        "es": "Precisamente / Justamente",
+        "fr": "C'est bien… qui / Précisément",
+        "pt": "É precisamente… que / Justamente",
+        "kr": "-(이)야말로",
+        "jp": "～こそ（強調の主題標識）",
+        "zh": "……才是（强调标记）"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "명사에 -(이)야말로를 붙여, 여러 대상 가운데 바로 그것이 가장 적합하거나 진정한 예임을 강하게 강조하여 나타낸다.",
+                "en": "Attaching -(이)야말로 to a noun strongly emphasizes that, among various options, that particular one is truly the most fitting or genuine example.",
+                "es": "Al añadir -(이)야말로 a un sustantivo, se enfatiza con fuerza que, entre varias opciones, precisamente ese es el ejemplo más adecuado o genuino.",
+                "fr": "En ajoutant -(이)야말로 à un nom, on souligne fortement que, parmi plusieurs possibilités, celui-là est véritablement le plus approprié ou l'exemple authentique.",
+                "pt": "Ao acrescentar -(이)야말로 a um substantivo, enfatiza-se fortemente que, entre várias opções, precisamente esse é o exemplo mais adequado ou genuíno.",
+                "kr": "명사에 -(이)야말로를 붙여, 여러 대상 가운데 바로 그것이 가장 적합하거나 진정한 예임을 강하게 강조하여 나타낸다.",
+                "jp": "名詞に-(이)야말로を付け、複数の対象の中でまさにそれこそが最も適切または真の例であることを強く強調して表す。",
+                "zh": "在名词后加上-(이)야말로，强烈强调在众多对象中，正是那一个才是最合适或真正的例子。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "화제가 되는 명사를 문장 앞에 내세운 뒤, 그 명사가 다른 후보들을 제치고 논의의 핵심 대상임을 뒤이은 서술이 확정 짓는 방식으로 문장이 구성된다.",
+                "en": "The noun serving as the topic is placed at the front of the sentence, and the predicate that follows confirms that this noun, ahead of other candidates, is the central subject of the discussion.",
+                "es": "El sustantivo que funciona como tema se coloca al inicio de la oración, y el predicado que sigue confirma que ese sustantivo, por delante de otros candidatos, es el objeto central de la discusión.",
+                "fr": "Le nom servant de thème est placé en tête de phrase, et le prédicat qui suit confirme que ce nom, devant les autres candidats, constitue l'objet central du propos.",
+                "pt": "O substantivo que serve de tópico é colocado no início da frase, e o predicado que se segue confirma que esse substantivo, à frente de outros candidatos, é o objeto central da discussão.",
+                "kr": "화제가 되는 명사를 문장 앞에 내세운 뒤, 그 명사가 다른 후보들을 제치고 논의의 핵심 대상임을 뒤이은 서술이 확정 짓는 방식으로 문장이 구성된다.",
+                "jp": "話題となる名詞を文の前面に出した後、その名詞が他の候補を退けて論議の中心対象であることを後続の叙述が確定づける形で文が構成される。",
+                "zh": "先将作为话题的名词置于句首，随后的陈述以此名词胜过其他候选者、成为讨论核心对象的方式来完成整个句子结构。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "받침 유무에 따라 이야말로와 야말로로 형태가 갈리고, 명사에만 결합하며, 뒤 절에는 부정형보다 긍정적 판단이나 정의를 내리는 서술이 자연스럽게 이어진다.",
+                "en": "The form splits into 이야말로 and 야말로 depending on whether the noun ends in a final consonant, it combines only with nouns, and the following clause naturally continues with a positive judgment or defining statement rather than a negative one.",
+                "es": "La forma se divide en 이야말로 y 야말로 según si el sustantivo termina en consonante final, se combina solo con sustantivos, y la cláusula siguiente continúa de forma natural con un juicio positivo o una afirmación definitoria en lugar de una negativa.",
+                "fr": "La forme se scinde en 이야말로 et 야말로 selon que le nom se termine ou non par une consonne finale, elle ne se combine qu'avec des noms, et la proposition suivante se poursuit naturellement par un jugement positif ou une affirmation définitoire plutôt que négative.",
+                "pt": "A forma divide-se em 이야말로 e 야말로 consoante o substantivo termine ou não em consoante final, combina-se apenas com substantivos, e a oração seguinte continua naturalmente com um juízo positivo ou uma afirmação definidora, em vez de negativa.",
+                "kr": "받침 유무에 따라 이야말로와 야말로로 형태가 갈리고, 명사에만 결합하며, 뒤 절에는 부정형보다 긍정적 판단이나 정의를 내리는 서술이 자연스럽게 이어진다.",
+                "jp": "パッチムの有無によって이야말로と야말로に形が分かれ、名詞にのみ結合し、後節には否定形よりも肯定的な判断や定義を下す叙述が自然に続く。",
+                "zh": "根据名词是否以收音结尾，形式分为이야말로和야말로，只能与名词结合，后一分句自然地接续肯定的判断或定义性叙述，而非否定形式。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "단순 주제를 나타내는 은/는과 달리 이 표현은 다른 대상과의 비교 속에서 그 명사만이 지닌 특별함을 부각하며, 연설이나 논설처럼 확신을 드러내는 격식적 문맥에서 효과적으로 쓰인다.",
+                "en": "Unlike 은/는, which simply marks a topic, this expression highlights the special quality that only that noun holds in comparison with other options, and it is used effectively in formal contexts such as speeches or essays that convey conviction.",
+                "es": "A diferencia de 은/는, que simplemente marca un tema, esta expresión resalta la cualidad especial que solo posee ese sustantivo en comparación con otras opciones, y se usa con eficacia en contextos formales como discursos o ensayos que transmiten convicción.",
+                "fr": "Contrairement à 은/는, qui marque simplement un thème, cette expression met en évidence la qualité particulière que seul ce nom possède par rapport aux autres options, et elle s'emploie efficacement dans des contextes formels tels que les discours ou les essais exprimant une conviction.",
+                "pt": "Ao contrário de 은/는, que apenas marca um tópico, esta expressão realça a qualidade especial que só esse substantivo possui em comparação com outras opções, sendo usada eficazmente em contextos formais como discursos ou ensaios que transmitem convicção.",
+                "kr": "단순 주제를 나타내는 은/는과 달리 이 표현은 다른 대상과의 비교 속에서 그 명사만이 지닌 특별함을 부각하며, 연설이나 논설처럼 확신을 드러내는 격식적 문맥에서 효과적으로 쓰인다.",
+                "jp": "単純な主題を表す은/는とは違い、この表現は他の対象との比較の中でその名詞だけが持つ特別さを際立たせ、演説や論説のように確信を示す格式ばった文脈で効果的に使われる。",
+                "zh": "与仅表示单纯话题的은/는不同，这个表达在与其他对象的比较中凸显该名词独有的特殊性，在演讲或论说等表达确信的正式语境中使用效果显著。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사나 형용사에 바로 붙이는 실수가 흔하므로 반드시 명사 뒤에만 옴을 기억해야 하며, 한 문장에 여러 번 반복해 쓰면 강조 효과가 오히려 흐려지므로 절제해서 사용해야 한다.",
+                "en": "A common mistake is attaching it directly to a verb or adjective, so it must be remembered that it only follows a noun, and using it repeatedly several times within one sentence actually weakens the emphatic effect, so restraint is needed.",
+                "es": "Un error común es añadirlo directamente a un verbo o adjetivo, por lo que hay que recordar que solo va después de un sustantivo, y usarlo repetidamente varias veces en una misma oración en realidad debilita el efecto enfático, por lo que se requiere moderación.",
+                "fr": "Une erreur courante consiste à l'attacher directement à un verbe ou un adjectif, il faut donc se rappeler qu'elle ne suit qu'un nom, et l'utiliser plusieurs fois de suite dans une même phrase affaiblit en réalité l'effet emphatique, d'où la nécessité de modération.",
+                "pt": "Um erro comum é acrescentá-lo diretamente a um verbo ou adjetivo, devendo lembrar-se que só se segue a um substantivo, e usá-lo repetidamente várias vezes numa mesma frase enfraquece, na verdade, o efeito enfático, sendo necessária moderação.",
+                "kr": "동사나 형용사에 바로 붙이는 실수가 흔하므로 반드시 명사 뒤에만 옴을 기억해야 하며, 한 문장에 여러 번 반복해 쓰면 강조 효과가 오히려 흐려지므로 절제해서 사용해야 한다.",
+                "jp": "動詞や形容詞にそのまま付ける間違いがよくあるため、必ず名詞の後にのみ来ることを覚えておく必要があり、一つの文の中で何度も繰り返して使うとかえって強調効果が薄れるため、節度を持って使わなければならない。",
+                "zh": "常见的错误是直接接在动词或形容词后，必须记住它只能接在名词之后；如果在一个句子中反复多次使用，强调效果反而会减弱，因此要有所节制。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "건강이야말로 가장 소중한 재산이다.",
+                "en": "Health, truly, is the most precious asset.",
+                "es": "La salud es, precisamente, el bien más valioso.",
+                "fr": "C'est bien la santé qui est le bien le plus précieux.",
+                "pt": "É precisamente a saúde que é o bem mais precioso.",
+                "kr": "건강이야말로 가장 소중한 재산이다.",
+                "jp": "健康こそが最も大切な財産である。",
+                "zh": "健康才是最宝贵的财富。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 순간이야말로 우리가 기다려 온 때다.",
+                "en": "This moment, truly, is the time we've been waiting for.",
+                "es": "Este momento es, justamente, el que hemos estado esperando.",
+                "fr": "C'est bien ce moment-là que nous attendions.",
+                "pt": "É precisamente este momento que temos estado à espera.",
+                "kr": "이 순간이야말로 우리가 기다려 온 때다.",
+                "jp": "この瞬間こそ私たちが待ち望んできた時である。",
+                "zh": "此刻才是我们一直等待的时刻。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "노력이야말로 성공의 열쇠다.",
+                "en": "Effort, truly, is the key to success.",
+                "es": "El esfuerzo es, precisamente, la clave del éxito.",
+                "fr": "C'est bien l'effort qui est la clé du succès.",
+                "pt": "É precisamente o esforço que é a chave do sucesso.",
+                "kr": "노력이야말로 성공의 열쇠다.",
+                "jp": "努力こそ成功の鍵である。",
+                "zh": "努力才是成功的关键。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "가족이야말로 인생에서 가장 중요한 존재다.",
+                "en": "Family, truly, is the most important thing in life.",
+                "es": "La familia es, justamente, lo más importante en la vida.",
+                "fr": "C'est bien la famille qui est ce qu'il y a de plus important dans la vie.",
+                "pt": "É precisamente a família que é o mais importante na vida.",
+                "kr": "가족이야말로 인생에서 가장 중요한 존재다.",
+                "jp": "家族こそ人生で最も大切な存在である。",
+                "zh": "家人才是人生中最重要的存在。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "지금이야말로 결단을 내려야 할 때다.",
+                "en": "Now, truly, is the time to make a decision.",
+                "es": "Ahora es, precisamente, el momento de tomar una decisión.",
+                "fr": "C'est bien maintenant qu'il faut prendre une décision.",
+                "pt": "É precisamente agora que se deve tomar uma decisão.",
+                "kr": "지금이야말로 결단을 내려야 할 때다.",
+                "jp": "今こそ決断を下すべき時である。",
+                "zh": "现在才是应该做出决断的时候。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그 책이야말로 내 인생을 바꾼 작품이다.",
+                "en": "That book, truly, is the work that changed my life.",
+                "es": "Ese libro es, justamente, la obra que cambió mi vida.",
+                "fr": "C'est bien ce livre-là qui a changé ma vie.",
+                "pt": "É precisamente esse livro que mudou a minha vida.",
+                "kr": "그 책이야말로 내 인생을 바꾼 작품이다.",
+                "jp": "その本こそ私の人生を変えた作品である。",
+                "zh": "那本书才是改变了我人生的作品。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "신뢰야말로 관계의 기본이다.",
+                "en": "Trust, truly, is the foundation of a relationship.",
+                "es": "La confianza es, precisamente, la base de una relación.",
+                "fr": "C'est bien la confiance qui est la base d'une relation.",
+                "pt": "É precisamente a confiança que é a base de uma relação.",
+                "kr": "신뢰야말로 관계의 기본이다.",
+                "jp": "信頼こそ関係の基本である。",
+                "zh": "信任才是关系的根本。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 도시야말로 여행자에게 최고의 장소다.",
+                "en": "This city, truly, is the best place for travelers.",
+                "es": "Esta ciudad es, justamente, el mejor lugar para los viajeros.",
+                "fr": "C'est bien cette ville qui est l'endroit idéal pour les voyageurs.",
+                "pt": "É precisamente esta cidade que é o melhor lugar para os viajantes.",
+                "kr": "이 도시야말로 여행자에게 최고의 장소다.",
+                "jp": "この都市こそ旅行者にとって最高の場所である。",
+                "zh": "这座城市才是旅行者最理想的地方。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "위기 속의 협력이야말로 조직의 진짜 저력을 보여 준다.",
+                "en": "Cooperation amid crisis, truly, shows an organization's real strength.",
+                "es": "La cooperación en medio de la crisis es, precisamente, lo que muestra la verdadera fortaleza de una organización.",
+                "fr": "C'est bien la coopération en pleine crise qui révèle la véritable force d'une organisation.",
+                "pt": "É precisamente a cooperação em plena crise que revela a verdadeira força de uma organização.",
+                "kr": "위기 속의 협력이야말로 조직의 진짜 저력을 보여 준다.",
+                "jp": "危機の中での協力こそ組織の本当の底力を示す。",
+                "zh": "危机中的合作才真正展现出组织的实力。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "꾸준한 실천이야말로 이론을 현실로 바꾸는 힘이다.",
+                "en": "Steady practice, truly, is the force that turns theory into reality.",
+                "es": "La práctica constante es, precisamente, la fuerza que convierte la teoría en realidad.",
+                "fr": "C'est bien la pratique constante qui transforme la théorie en réalité.",
+                "pt": "É precisamente a prática constante que é a força que transforma a teoria em realidade.",
+                "kr": "꾸준한 실천이야말로 이론을 현실로 바꾸는 힘이다.",
+                "jp": "地道な実践こそ理論を現実に変える力である。",
+                "zh": "持之以恒的实践才是将理论化为现实的力量。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "실패에서 배우는 자세야말로 진정한 성장의 원동력이다.",
+                "en": "The attitude of learning from failure, truly, is the driving force of genuine growth.",
+                "es": "La actitud de aprender del fracaso es, precisamente, el motor del crecimiento genuino.",
+                "fr": "C'est bien l'attitude d'apprendre de l'échec qui est le moteur d'une véritable croissance.",
+                "pt": "É precisamente a atitude de aprender com o fracasso que é o motor de um crescimento genuíno.",
+                "kr": "실패에서 배우는 자세야말로 진정한 성장의 원동력이다.",
+                "jp": "失敗から学ぶ姿勢こそ真の成長の原動力である。",
+                "zh": "从失败中学习的态度才是真正成长的原动力。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 정책이야말로 장기적 안정을 보장하는 유일한 방안이다.",
+                "en": "This policy, truly, is the only measure that guarantees long-term stability.",
+                "es": "Esta política es, precisamente, la única medida que garantiza la estabilidad a largo plazo.",
+                "fr": "C'est bien cette politique qui est la seule mesure garantissant une stabilité à long terme.",
+                "pt": "É precisamente esta política que é a única medida que garante a estabilidade a longo prazo.",
+                "kr": "이 정책이야말로 장기적 안정을 보장하는 유일한 방안이다.",
+                "jp": "この政策こそ長期的な安定を保証する唯一の方策である。",
+                "zh": "这项政策才是保障长期稳定的唯一方案。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

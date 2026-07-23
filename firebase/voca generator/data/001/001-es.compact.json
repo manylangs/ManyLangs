@@ -1,0 +1,49 @@
+{
+    "blocks": [
+      {
+        "id": "block_001",
+        "word": { "es": { "core": "ir", "meaning_zone": ["ir"] } },
+        "examples": [
+          { "es": "Ella va al colegio todas las mañanas." },
+          { "es": "Él no va al parque los lunes." },
+          { "es": "¿Vas al trabajo en autobús?" }
+        ]
+      },
+      {
+        "id": "block_002",
+        "word": { "es": { "core": "venir", "meaning_zone": ["venir"] } },
+        "examples": [
+          { "es": "Mi amigo viene a mi casa los fines de semana." },
+          { "es": "Ellos no vienen a clase a tiempo." },
+          { "es": "¿Viene ella aquí todos los días?" }
+        ]
+      },
+      {
+        "id": "block_003",
+        "word": { "es": { "core": "subir", "meaning_zone": ["subir"] } },
+        "examples": [
+          { "es": "Él sube las escaleras rápidamente." },
+          { "es": "Ella no sube a la azotea." },
+          { "es": "¿Subes por esta calle para llegar al mercado?" }
+        ]
+      },
+      {
+        "id": "block_004",
+        "word": { "es": { "core": "bajar", "meaning_zone": ["bajar"] } },
+        "examples": [
+          { "es": "Los niños bajan la colina en bicicleta." },
+          { "es": "No bajamos por esa calle de noche." },
+          { "es": "¿Baja él a la cocina para desayunar?" }
+        ]
+      },
+      {
+        "id": "block_005",
+        "word": { "es": { "core": "entrar", "meaning_zone": ["entrar"] } },
+        "examples": [
+          { "es": "Ella entra en la habitación en silencio." },
+          { "es": "Él no entra en el edificio por la puerta principal." },
+          { "es": "¿Entran ellos en el aula antes que el profesor?" }
+        ]
+      }
+    ]
+  }

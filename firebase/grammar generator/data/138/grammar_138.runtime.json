@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "B2_KO_PREFERENCE",
+        "level": "b2",
+        "id": "138"
+    },
+    "title": {
+        "target": "차라리",
+        "en": "Rather",
+        "es": "Mejor dicho / Preferiblemente",
+        "fr": "Plutôt",
+        "pt": "Antes / Preferivelmente",
+        "kr": "차라리",
+        "jp": "むしろ",
+        "zh": "宁可"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "이 표현은 만족스럽지 않은 두 상황 가운데 상대적으로 나은 쪽을 선택할 때 쓰이는 부사이다. 문장 앞이나 절 앞에 놓여 형태 변화 없이 그대로 사용된다.",
+                "en": "This expression is an adverb used when choosing the relatively better option between two unsatisfactory situations. It is placed at the front of a sentence or clause and used as is, without any inflection.",
+                "es": "Esta expresión es un adverbio que se usa al elegir la opción relativamente mejor entre dos situaciones insatisfactorias. Se coloca al principio de una oración o cláusula y se usa tal cual, sin ninguna flexión.",
+                "fr": "Cette expression est un adverbe utilisé pour choisir l'option relativement meilleure entre deux situations insatisfaisantes. Il se place en début de phrase ou de proposition et s'emploie tel quel, sans aucune flexion.",
+                "pt": "Esta expressão é um advérbio usado ao escolher a opção relativamente melhor entre duas situações insatisfatórias. Coloca-se no início de uma frase ou oração e é usado tal como está, sem qualquer flexão.",
+                "kr": "이 표현은 만족스럽지 않은 두 상황 가운데 상대적으로 나은 쪽을 선택할 때 쓰이는 부사이다. 문장 앞이나 절 앞에 놓여 형태 변화 없이 그대로 사용된다.",
+                "jp": "この表現は、満足できない二つの状況の中で相対的にましな方を選ぶときに使う副詞である。文や節の前に置かれ、形の変化なくそのまま使われる。",
+                "zh": "这个表达是一个副词，用于在两种都不理想的情况中选择相对较好的一方。它放在句子或分句的开头，不发生形态变化，直接使用。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "비교되는 두 상황이 문맥에 함께 존재해야 하며 이 부사는 그중 하나를 가리키며 문장 앞쪽에 자리한다. 뒤따르는 서술어는 흔히 '낫다'나 비교를 나타내는 표현과 짝을 이룬다.",
+                "en": "Two situations being compared must both exist in the context, and this adverb points to one of them, positioned at the front of the sentence. The following predicate is often paired with '낫다' or an expression indicating comparison.",
+                "es": "Deben existir en el contexto ambas situaciones que se comparan, y este adverbio señala una de ellas, colocado al principio de la oración. El predicado siguiente suele emparejarse con '낫다' o una expresión que indica comparación.",
+                "fr": "Les deux situations comparées doivent toutes deux exister dans le contexte, et cet adverbe désigne l'une d'elles, placé en début de phrase. Le prédicat suivant s'associe souvent à '낫다' ou à une expression indiquant la comparaison.",
+                "pt": "As duas situações comparadas devem existir ambas no contexto, e este advérbio aponta para uma delas, colocado no início da frase. O predicado seguinte é frequentemente associado a '낫다' ou a uma expressão que indica comparação.",
+                "kr": "비교되는 두 상황이 문맥에 함께 존재해야 하며 이 부사는 그중 하나를 가리키며 문장 앞쪽에 자리한다. 뒤따르는 서술어는 흔히 '낫다'나 비교를 나타내는 표현과 짝을 이룬다.",
+                "jp": "比較される二つの状況が文脈の中に共に存在しなければならず、この副詞はそのうちの一つを指しながら文の前方に位置する。後に続く述語はしばしば「낫다」や比較を表す表現と組み合わされる。",
+                "zh": "被比较的两种情况必须同时存在于语境中，这个副词指向其中一方，并置于句子前部。后面的谓语常常与「낫다」或表示比较的表达搭配使用。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "단독으로 단순한 선호를 나타낼 수 없고 반드시 비교되는 대상이 문맥에 존재해야 한다. 두 선택지가 모두 완전히 만족스럽지 않은 상황에서만 자연스럽게 쓰인다. 뒤 절에는 흔히 청유형이나 평서형이 오며 명령형과는 잘 어울리지 않는다.",
+                "en": "It cannot indicate a simple preference on its own, and a comparison item must always exist in the context. It is used naturally only when both options are less than fully satisfactory. The following clause commonly takes a propositive or declarative form and does not fit well with an imperative.",
+                "es": "No puede indicar una preferencia simple por sí solo, y siempre debe existir en el contexto un elemento de comparación. Se usa con naturalidad solo cuando ambas opciones no son plenamente satisfactorias. La cláusula siguiente suele tomar una forma propositiva o declarativa y no encaja bien con un imperativo.",
+                "fr": "Il ne peut indiquer une simple préférence à lui seul, et un élément de comparaison doit toujours exister dans le contexte. Il s'emploie naturellement seulement lorsque les deux options ne sont pas pleinement satisfaisantes. La proposition suivante prend généralement une forme propositive ou déclarative et ne convient guère à un impératif.",
+                "pt": "Não pode indicar uma simples preferência sozinho, devendo existir sempre no contexto um elemento de comparação. Usa-se naturalmente apenas quando ambas as opções não são plenamente satisfatórias. A oração seguinte assume geralmente uma forma propositiva ou declarativa e não se adequa bem a um imperativo.",
+                "kr": "단독으로 단순한 선호를 나타낼 수 없고 반드시 비교되는 대상이 문맥에 존재해야 한다. 두 선택지가 모두 완전히 만족스럽지 않은 상황에서만 자연스럽게 쓰인다. 뒤 절에는 흔히 청유형이나 평서형이 오며 명령형과는 잘 어울리지 않는다.",
+                "jp": "単独で単純な好みを表すことはできず、必ず比較の対象が文脈に存在しなければならない。二つの選択肢がどちらも完全には満足できない状況でのみ自然に使われる。後続の節にはしばしば勧誘形や平叙形が来て、命令形とはあまり合わない。",
+                "zh": "不能单独表示简单的偏好，必须在语境中存在被比较的对象。只有在两个选项都不完全令人满意的情况下才会自然使用。后面的分句常常使用共动式或陈述式，与命令式不太搭配。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "예상 밖의 결과를 강조하는 '오히려'와 달리 이 표현은 두 대안 중 그나마 나은 쪽을 적극적으로 선택한다는 의미를 담고 있다는 점에서 차이가 있다. 격식과 비격식 모두에서 자연스럽게 쓰인다.",
+                "en": "Unlike '오히려', which emphasizes an unexpected result, this expression differs in that it carries the meaning of actively choosing the relatively better of two alternatives. It is used naturally in both formal and informal registers.",
+                "es": "A diferencia de '오히려', que enfatiza un resultado inesperado, esta expresión se distingue por llevar el sentido de elegir activamente la mejor de dos alternativas, aunque no ideal. Se usa con naturalidad tanto en registros formales como informales.",
+                "fr": "Contrairement à '오히려', qui souligne un résultat inattendu, cette expression se distingue en portant le sens de choisir activement la meilleure des deux alternatives, même imparfaite. Elle s'emploie naturellement en registre formel comme informel.",
+                "pt": "Ao contrário de '오히려', que sublinha um resultado inesperado, esta expressão distingue-se por conter o sentido de escolher ativamente a melhor das duas alternativas, ainda que imperfeita. Usa-se naturalmente tanto em registos formais como informais.",
+                "kr": "예상 밖의 결과를 강조하는 '오히려'와 달리 이 표현은 두 대안 중 그나마 나은 쪽을 적극적으로 선택한다는 의미를 담고 있다는 점에서 차이가 있다. 격식과 비격식 모두에서 자연스럽게 쓰인다.",
+                "jp": "予想外の結果を強調する「오히려」とは異なり、この表現は二つの代案のうちましな方を積極的に選ぶという意味を含んでいる点で違いがある。フォーマル・カジュアルどちらの場面でも自然に使われる。",
+                "zh": "与强调意外结果的「오히려」不同，这个表达的区别在于它包含了在两个选项中积极选择相对更好一方的含义。无论在正式还是非正式场合都能自然使用。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "비교 대상 없이 단순한 희망을 나타낼 때 이 표현을 쓰는 오류가 흔히 나타나므로 반드시 대안이 되는 상황이 함께 제시되어야 한다. 뒤 절이 생략된 채 '차라리...' 형태로 문장이 끝나기도 하는데 이때는 나머지 내용이 문맥상 충분히 짐작 가능해야 한다. 감정이 격해진 상황에서 극단적인 대안을 제시할 때도 자주 활용된다.",
+                "en": "Since the error of using this expression to state a simple wish without a comparison item often occurs, an alternative situation must always be presented together. The following clause is sometimes omitted, leaving the sentence ending with '차라리...', in which case the remaining content must be sufficiently inferable from context. It is also frequently used when presenting an extreme alternative in an emotionally charged situation.",
+                "es": "Como suele producirse el error de usar esta expresión para expresar un simple deseo sin un elemento de comparación, siempre debe presentarse junto una situación alternativa. A veces se omite la cláusula siguiente, dejando la oración terminada en '차라리...', en cuyo caso el resto del contenido debe poder inferirse suficientemente por el contexto. También se usa con frecuencia para presentar una alternativa extrema en una situación emocionalmente intensa.",
+                "fr": "Comme l'erreur d'employer cette expression pour exprimer un simple souhait sans élément de comparaison est fréquente, une situation alternative doit toujours être présentée conjointement. La proposition suivante est parfois omise, la phrase se terminant par '차라리...', auquel cas le reste du contenu doit pouvoir être suffisamment déduit du contexte. Elle est aussi souvent utilisée pour présenter une alternative extrême dans une situation chargée émotionnellement.",
+                "pt": "Como o erro de usar esta expressão para exprimir um simples desejo sem um elemento de comparação é frequente, deve apresentar-se sempre em conjunto uma situação alternativa. A oração seguinte é por vezes omitida, terminando a frase em '차라리...', caso em que o restante conteúdo deve ser suficientemente dedutível pelo contexto. É também frequentemente usada para apresentar uma alternativa extrema numa situação emocionalmente intensa.",
+                "kr": "비교 대상 없이 단순한 희망을 나타낼 때 이 표현을 쓰는 오류가 흔히 나타나므로 반드시 대안이 되는 상황이 함께 제시되어야 한다. 뒤 절이 생략된 채 '차라리...' 형태로 문장이 끝나기도 하는데 이때는 나머지 내용이 문맥상 충분히 짐작 가능해야 한다. 감정이 격해진 상황에서 극단적인 대안을 제시할 때도 자주 활용된다.",
+                "jp": "比較対象なしに単純な希望を表すときにこの表現を使う誤りがよく見られるため、必ず代案となる状況が共に提示されなければならない。後続の節が省略されたまま「차라리...」の形で文が終わることもあるが、この場合は残りの内容が文脈から十分に推測できなければならない。感情が高ぶった状況で極端な代案を示すときにもよく活用される。",
+                "zh": "由于常见在没有比较对象的情况下用这个表达来表示单纯愿望的错误，因此必须同时提出一个可作为替代方案的情况。有时后面的分句会被省略，句子以「차라리...」的形式结束，这时其余内容必须能从语境中充分推测出来。在情绪激动的情况下提出极端替代方案时也经常使用。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이렇게 기다릴 바에는 차라리 집에 가는 게 낫겠다.",
+                "en": "Rather than waiting like this, it would be better to just go home.",
+                "es": "En lugar de esperar así, mejor sería ir a casa.",
+                "fr": "Plutôt que d'attendre ainsi, il vaudrait mieux rentrer à la maison.",
+                "pt": "Em vez de esperar assim, seria melhor ir para casa.",
+                "kr": "이렇게 기다릴 바에는 차라리 집에 가는 게 낫겠다.",
+                "jp": "こんなふうに待つくらいなら、むしろ家に帰った方がいいだろう。",
+                "zh": "与其这样等下去，不如干脆回家更好。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "거짓말을 하느니 차라리 아무 말도 하지 않는 게 낫다.",
+                "en": "Rather than lying, it's better to say nothing at all.",
+                "es": "En vez de mentir, es mejor no decir nada.",
+                "fr": "Plutôt que de mentir, mieux vaut ne rien dire du tout.",
+                "pt": "Em vez de mentir, é melhor não dizer nada.",
+                "kr": "거짓말을 하느니 차라리 아무 말도 하지 않는 게 낫다.",
+                "jp": "嘘をつくくらいなら、むしろ何も言わない方がいい。",
+                "zh": "与其撒谎，不如干脆什么都不说更好。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그런 회사에서 일할 바에야 차라리 그만두는 게 낫겠다.",
+                "en": "Rather than work at a company like that, it would be better to quit.",
+                "es": "En lugar de trabajar en una empresa así, mejor sería dejarlo.",
+                "fr": "Plutôt que de travailler dans une telle entreprise, mieux vaudrait démissionner.",
+                "pt": "Em vez de trabalhar numa empresa dessas, seria melhor deixar o emprego.",
+                "kr": "그런 회사에서 일할 바에야 차라리 그만두는 게 낫겠다.",
+                "jp": "あんな会社で働くくらいなら、むしろ辞めた方がいいだろう。",
+                "zh": "与其在那样的公司工作，不如干脆辞职更好。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "버스를 놓칠 바에는 차라리 택시를 타는 게 나을 것이다.",
+                "en": "Rather than missing the bus, it would be better to just take a taxi.",
+                "es": "En lugar de perder el autobús, mejor sería tomar un taxi.",
+                "fr": "Plutôt que de rater le bus, mieux vaudrait prendre un taxi.",
+                "pt": "Em vez de perder o autocarro, seria melhor apanhar um táxi.",
+                "kr": "버스를 놓칠 바에는 차라리 택시를 타는 게 나을 것이다.",
+                "jp": "バスを逃すくらいなら、むしろタクシーに乗った方がいいだろう。",
+                "zh": "与其错过公交车，不如干脆打车更好。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 계획을 무리하게 진행할 바에야 차라리 포기하는 편이 낫다.",
+                "en": "Rather than forcing this plan through unreasonably, it's better to just give it up.",
+                "es": "En lugar de forzar este plan sin razón, mejor sería abandonarlo.",
+                "fr": "Plutôt que de poursuivre ce plan de manière déraisonnable, mieux vaut y renoncer.",
+                "pt": "Em vez de forçar este plano de forma pouco razoável, é melhor desistir dele.",
+                "kr": "이 계획을 무리하게 진행할 바에야 차라리 포기하는 편이 낫다.",
+                "jp": "この計画を無理に進めるくらいなら、むしろあきらめた方がいい。",
+                "zh": "与其勉强推进这个计划，不如干脆放弃更好。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그와 다투느니 차라리 아무 말도 안 하는 편이 나았다.",
+                "en": "Rather than arguing with him, it would have been better to say nothing.",
+                "es": "En vez de discutir con él, habría sido mejor no decir nada.",
+                "fr": "Plutôt que de me disputer avec lui, mieux valait ne rien dire.",
+                "pt": "Em vez de discutir com ele, teria sido melhor não dizer nada.",
+                "kr": "그와 다투느니 차라리 아무 말도 안 하는 편이 나았다.",
+                "jp": "彼と言い争うくらいなら、むしろ何も言わない方がよかった。",
+                "zh": "与其和他争吵，不如当初什么都不说更好。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "밖에서 기다리느니 차라리 카페에 들어가는 게 좋겠다.",
+                "en": "Rather than waiting outside, it would be better to go into a café.",
+                "es": "En lugar de esperar fuera, mejor sería entrar en un café.",
+                "fr": "Plutôt que d'attendre dehors, mieux vaudrait entrer dans un café.",
+                "pt": "Em vez de esperar lá fora, seria melhor entrar num café.",
+                "kr": "밖에서 기다리느니 차라리 카페에 들어가는 게 좋겠다.",
+                "jp": "外で待つくらいなら、むしろカフェに入った方がいいだろう。",
+                "zh": "与其在外面等，不如干脆进咖啡厅更好。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "혼자 고민할 바에는 차라리 전문가에게 상담하는 것이 낫다.",
+                "en": "Rather than agonizing over it alone, it's better to consult an expert.",
+                "es": "En lugar de darle vueltas solo, es mejor consultar a un experto.",
+                "fr": "Plutôt que de se tourmenter seul, mieux vaut consulter un expert.",
+                "pt": "Em vez de se atormentar sozinho, é melhor consultar um especialista.",
+                "kr": "혼자 고민할 바에는 차라리 전문가에게 상담하는 것이 낫다.",
+                "jp": "一人で悩むくらいなら、むしろ専門家に相談する方がいい。",
+                "zh": "与其一个人苦恼，不如干脆咨询专家更好。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "적자를 계속 감수할 바에야 차라리 사업을 정리하는 것이 합리적이다.",
+                "en": "Rather than continuing to endure losses, it is more reasonable to just wind down the business.",
+                "es": "En lugar de seguir soportando pérdidas, lo más razonable sería cerrar el negocio.",
+                "fr": "Plutôt que de continuer à subir des pertes, il serait plus raisonnable de cesser l'activité.",
+                "pt": "Em vez de continuar a suportar prejuízos, o mais razoável seria encerrar o negócio.",
+                "kr": "적자를 계속 감수할 바에야 차라리 사업을 정리하는 것이 합리적이다.",
+                "jp": "赤字を続けて甘受するくらいなら、むしろ事業をたたむ方が合理的だ。",
+                "zh": "与其继续承受亏损，不如干脆结束经营更合理。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "무의미한 논쟁을 이어가느니 차라리 침묵하는 편을 택했다.",
+                "en": "Rather than continuing the pointless argument, they chose to stay silent instead.",
+                "es": "En lugar de continuar con una discusión sin sentido, optaron por guardar silencio.",
+                "fr": "Plutôt que de poursuivre une dispute sans sens, ils ont choisi le silence.",
+                "pt": "Em vez de continuar uma discussão sem sentido, optaram por ficar em silêncio.",
+                "kr": "무의미한 논쟁을 이어가느니 차라리 침묵하는 편을 택했다.",
+                "jp": "無意味な論争を続けるくらいなら、むしろ沈黙する方を選んだ。",
+                "zh": "与其继续毫无意义的争论，不如选择了沉默。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "불확실한 미래를 걱정할 바에는 차라리 지금에 집중하는 것이 낫다.",
+                "en": "Rather than worrying about an uncertain future, it's better to just focus on the present.",
+                "es": "En lugar de preocuparse por un futuro incierto, es mejor concentrarse en el presente.",
+                "fr": "Plutôt que de s'inquiéter d'un avenir incertain, mieux vaut se concentrer sur le présent.",
+                "pt": "Em vez de se preocupar com um futuro incerto, é melhor concentrar-se no presente.",
+                "kr": "불확실한 미래를 걱정할 바에는 차라리 지금에 집중하는 것이 낫다.",
+                "jp": "不確実な未来を心配するくらいなら、むしろ今に集中する方がいい。",
+                "zh": "与其担心不确定的未来，不如干脆专注于现在更好。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "책임을 떠넘기려 애쓸 바에야 차라리 솔직하게 사과하는 편이 나았을 것이다.",
+                "en": "Rather than struggling to shift the blame, it would have been better to just apologize honestly.",
+                "es": "En lugar de esforzarse por eludir la responsabilidad, habría sido mejor disculparse con sinceridad.",
+                "fr": "Plutôt que de s'efforcer de rejeter la responsabilité, mieux aurait valu s'excuser sincèrement.",
+                "pt": "Em vez de se esforçar por transferir a responsabilidade, teria sido melhor pedir desculpa com sinceridade.",
+                "kr": "책임을 떠넘기려 애쓸 바에야 차라리 솔직하게 사과하는 편이 나았을 것이다.",
+                "jp": "責任を押し付けようと努力するくらいなら、むしろ率直に謝る方がよかっただろう。",
+                "zh": "与其努力推卸责任，不如当初坦诚道歉更好。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

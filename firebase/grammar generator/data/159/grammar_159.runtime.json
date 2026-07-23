@@ -1,0 +1,253 @@
+{
+    "meta": {
+        "series": "C1_KO_BACKGROUND2",
+        "level": "c1",
+        "id": "159"
+    },
+    "title": {
+        "target": "-(으)ㄴ 채(로)",
+        "en": "Remaining in a State (-(으)ㄴ 채로)",
+        "es": "Permanecer en un estado (-(으)ㄴ 채로)",
+        "fr": "Rester dans un état (-(으)ㄴ 채로)",
+        "pt": "Permanecer num estado (-(으)ㄴ 채로)",
+        "kr": "-(으)ㄴ 채(로)",
+        "jp": "～たまま（-(으)ㄴ 채로）",
+        "zh": "保持……的状态（-(으)ㄴ 채로）"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "선행 동작으로 만들어진 상태가 그대로 유지된 채 다른 행동이 이어짐을 나타내는 문형이다.",
+                "en": "This pattern shows an action occurring while a state created by an earlier action remains unchanged.",
+                "es": "Esta estructura muestra que una acción ocurre mientras un estado creado por una acción anterior permanece sin cambios.",
+                "fr": "Cette structure indique qu'une action se produit alors qu'un état créé par une action antérieure reste inchangé.",
+                "pt": "Esta estrutura mostra que uma ação ocorre enquanto um estado criado por uma ação anterior permanece inalterado.",
+                "kr": "선행 동작으로 만들어진 상태가 그대로 유지된 채 다른 행동이 이어짐을 나타내는 문형이다.",
+                "jp": "先行する動作によって作られた状態がそのまま維持されたまま、別の行動が続くことを表す文型である。",
+                "zh": "这是表示在先行动作所形成的状态原样保持的情况下，接续进行另一行为的句型。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사 어간에 받침이 없으면 -ㄴ 채로, 받침이 있으면 -은 채로가 결합해 상태의 지속을 표시한다.",
+                "en": "When the verb stem has no final consonant, -ㄴ 채로 attaches; when it has one, -은 채로 attaches, marking the continuation of the state.",
+                "es": "Si el radical verbal no termina en consonante, se añade -ㄴ 채로; si termina en consonante, se añade -은 채로, marcando la continuidad del estado.",
+                "fr": "Si le radical verbal ne se termine pas par une consonne, on ajoute -ㄴ 채로 ; s'il se termine par une consonne, on ajoute -은 채로, marquant la continuité de l'état.",
+                "pt": "Se o radical verbal não terminar em consoante, junta-se -ㄴ 채로; se terminar em consoante, junta-se -은 채로, marcando a continuidade do estado.",
+                "kr": "동사 어간에 받침이 없으면 -ㄴ 채로, 받침이 있으면 -은 채로가 결합해 상태의 지속을 표시한다.",
+                "jp": "動詞の語幹に終声がなければ「-ㄴ 채로」、終声があれば「-은 채로」が結合し、状態の持続を表す。",
+                "zh": "动词词干没有辅音尾音时结合“-ㄴ 채로”，有辅音尾音时结合“-은 채로”，表示状态的持续。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "형용사에는 결합하지 않으며, 결과 상태를 나타낼 수 있는 동사에만 쓰인다는 제약이 있다.",
+                "en": "It does not attach to adjectives and is restricted to verbs that can express a resultant state.",
+                "es": "No se combina con adjetivos y se limita a verbos que pueden expresar un estado resultante.",
+                "fr": "Elle ne se combine pas avec les adjectifs et se limite aux verbes pouvant exprimer un état résultant.",
+                "pt": "Não se combina com adjetivos e limita-se a verbos que podem exprimir um estado resultante.",
+                "kr": "형용사에는 결합하지 않으며, 결과 상태를 나타낼 수 있는 동사에만 쓰인다는 제약이 있다.",
+                "jp": "形容詞には結合せず、結果状態を表すことができる動詞にのみ使われるという制約がある。",
+                "zh": "它有不与形容词结合、只用于能够表示结果状态的动词这一限制。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "진행 중인 동작 자체를 가리키는 -고 있다와 달리, 이미 성립된 상태를 배경으로 삼는다는 점에서 구별되며 격식과 비격식 모두에서 자유롭게 쓰인다.",
+                "en": "Unlike -고 있다, which refers to an ongoing action itself, this pattern is distinguished by treating an already-established state as the background, and it is used freely in both formal and informal registers.",
+                "es": "A diferencia de -고 있다, que se refiere a la acción en curso en sí misma, esta estructura se distingue porque toma un estado ya establecido como trasfondo, y se usa libremente tanto en registros formales como informales.",
+                "fr": "Contrairement à -고 있다, qui désigne l'action en cours elle-même, cette structure se distingue en prenant un état déjà établi comme arrière-plan, et elle s'emploie librement aussi bien à l'oral formel qu'informel.",
+                "pt": "Ao contrário de -고 있다, que se refere à própria ação em curso, esta estrutura distingue-se por tomar um estado já estabelecido como pano de fundo, sendo usada livremente tanto em registos formais como informais.",
+                "kr": "진행 중인 동작 자체를 가리키는 -고 있다와 달리, 이미 성립된 상태를 배경으로 삼는다는 점에서 구별되며 격식과 비격식 모두에서 자유롭게 쓰인다.",
+                "jp": "進行中の動作そのものを指す「-고 있다」とは異なり、すでに成立した状態を背景とする点で区別され、格式のある場面とくだけた場面の両方で自由に使われる。",
+                "zh": "与指进行中动作本身的“-고 있다”不同，它的区别在于以已经形成的状态为背景，在正式和非正式场合中都可以自由使用。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "흔히 현재형인 -는 채로를 그대로 붙이는 실수를 저지르기 쉬우므로 받침 유무에 따른 정확한 활용형을 반드시 확인해야 한다.",
+                "en": "Learners often mistakenly attach the present-tense form -는 채로, so the correct conjugation based on the final consonant must always be checked.",
+                "es": "Los estudiantes suelen cometer el error de añadir la forma de presente -는 채로, por lo que siempre debe comprobarse la conjugación correcta según la consonante final.",
+                "fr": "Les apprenants ont souvent tendance à ajouter par erreur la forme au présent -는 채로, il faut donc toujours vérifier la conjugaison correcte selon la consonne finale.",
+                "pt": "Os aprendentes cometem frequentemente o erro de juntar a forma no presente -는 채로, pelo que se deve verificar sempre a conjugação correta consoante a consoante final.",
+                "kr": "흔히 현재형인 -는 채로를 그대로 붙이는 실수를 저지르기 쉬우므로 받침 유무에 따른 정확한 활용형을 반드시 확인해야 한다.",
+                "jp": "よく現在形の「-는 채로」をそのまま付ける間違いを犯しやすいため、終声の有無に応じた正確な活用形を必ず確認しなければならない。",
+                "zh": "学习者容易犯直接附加现在时形式“-는 채로”的错误，因此必须确认根据辅音尾音有无而定的正确活用形式。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "문을 연 채로 나갔어요.",
+                "en": "They went out leaving the door open.",
+                "es": "Salieron dejando la puerta abierta.",
+                "fr": "Ils sont sortis en laissant la porte ouverte.",
+                "pt": "Saíram deixando a porta aberta.",
+                "kr": "문을 연 채로 나갔어요.",
+                "jp": "ドアを開けたまま出て行きました。",
+                "zh": "门开着就出去了。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "신발을 신은 채로 들어왔어요.",
+                "en": "He came in with his shoes still on.",
+                "es": "Entró sin quitarse los zapatos.",
+                "fr": "Il est entré sans enlever ses chaussures.",
+                "pt": "Entrou sem tirar os sapatos.",
+                "kr": "신발을 신은 채로 들어왔어요.",
+                "jp": "靴を履いたまま入ってきました。",
+                "zh": "穿着鞋就进来了。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "불을 켠 채로 잠들었어요.",
+                "en": "She fell asleep with the light left on.",
+                "es": "Se quedó dormida con la luz encendida.",
+                "fr": "Elle s'est endormie avec la lumière allumée.",
+                "pt": "Adormeceu com a luz acesa.",
+                "kr": "불을 켠 채로 잠들었어요.",
+                "jp": "明かりをつけたまま眠ってしまいました。",
+                "zh": "开着灯就睡着了。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "눈을 감은 채로 이야기했어요.",
+                "en": "He spoke with his eyes closed.",
+                "es": "Habló con los ojos cerrados.",
+                "fr": "Il a parlé les yeux fermés.",
+                "pt": "Falou com os olhos fechados.",
+                "kr": "눈을 감은 채로 이야기했어요.",
+                "jp": "目を閉じたまま話しました。",
+                "zh": "闭着眼睛说了话。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "앉은 채 이야기를 들었어요.",
+                "en": "I listened to the story while remaining seated.",
+                "es": "Escuché la historia sin levantarme.",
+                "fr": "J'ai écouté l'histoire sans me lever.",
+                "pt": "Ouvi a história sem me levantar.",
+                "kr": "앉은 채 이야기를 들었어요.",
+                "jp": "座ったまま話を聞きました。",
+                "zh": "坐着听了那番话。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "안경을 쓴 채로 잠이 들면 안 돼요.",
+                "en": "You must not fall asleep with your glasses still on.",
+                "es": "No debes quedarte dormido con las gafas puestas.",
+                "fr": "Il ne faut pas s'endormir en gardant ses lunettes.",
+                "pt": "Não deves adormecer com os óculos postos.",
+                "kr": "안경을 쓴 채로 잠이 들면 안 돼요.",
+                "jp": "眼鏡をかけたまま眠ってはいけません。",
+                "zh": "不可以戴着眼镜就睡着。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그는 화가 난 채로 방을 나갔다.",
+                "en": "He left the room still angry.",
+                "es": "Salió de la habitación todavía enfadado.",
+                "fr": "Il a quitté la pièce encore en colère.",
+                "pt": "Saiu do quarto ainda zangado.",
+                "kr": "그는 화가 난 채로 방을 나갔다.",
+                "jp": "彼は怒ったまま部屋を出て行った。",
+                "zh": "他带着怒气离开了房间。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "아이는 신발도 안 신은 채로 뛰어나갔다.",
+                "en": "The child ran out without even putting on shoes.",
+                "es": "El niño salió corriendo sin ni siquiera ponerse los zapatos.",
+                "fr": "L'enfant est sorti en courant sans même mettre ses chaussures.",
+                "pt": "A criança saiu a correr sem sequer calçar os sapatos.",
+                "kr": "아이는 신발도 안 신은 채로 뛰어나갔다.",
+                "jp": "子どもは靴も履かないまま駆け出して行った。",
+                "zh": "孩子连鞋都没穿就跑了出去。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "진실을 모른 채로 오랜 시간을 보냈다.",
+                "en": "A long time passed without ever knowing the truth.",
+                "es": "Pasó mucho tiempo sin conocer la verdad.",
+                "fr": "Beaucoup de temps s'est écoulé sans jamais connaître la vérité.",
+                "pt": "Passou muito tempo sem conhecer a verdade.",
+                "kr": "진실을 모른 채로 오랜 시간을 보냈다.",
+                "jp": "真実を知らないまま長い時間を過ごした。",
+                "zh": "在不知真相的状态下度过了漫长的时间。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "사람들은 상황을 제대로 파악하지 못한 채 결정을 내렸다.",
+                "en": "People made the decision without properly grasping the situation.",
+                "es": "La gente tomó la decisión sin comprender bien la situación.",
+                "fr": "Les gens ont pris la décision sans bien comprendre la situation.",
+                "pt": "As pessoas tomaram a decisão sem compreender bem a situação.",
+                "kr": "사람들은 상황을 제대로 파악하지 못한 채 결정을 내렸다.",
+                "jp": "人々は状況をきちんと把握できないまま決定を下した。",
+                "zh": "人们在没有充分把握情况的状态下做出了决定。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그녀는 아무 말도 하지 않은 채 자리를 떠났다.",
+                "en": "She left the seat without saying a single word.",
+                "es": "Se marchó sin decir una sola palabra.",
+                "fr": "Elle est partie sans dire un seul mot.",
+                "pt": "Foi-se embora sem dizer uma única palavra.",
+                "kr": "그녀는 아무 말도 하지 않은 채 자리를 떠났다.",
+                "jp": "彼女は何も言わないまま席を立った。",
+                "zh": "她一句话也没说就离开了座位。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "문제는 해결되지 않은 채로 남아 있다.",
+                "en": "The problem remains unresolved.",
+                "es": "El problema sigue sin resolverse.",
+                "fr": "Le problème reste non résolu.",
+                "pt": "O problema continua por resolver.",
+                "kr": "문제는 해결되지 않은 채로 남아 있다.",
+                "jp": "問題は解決されないまま残っている。",
+                "zh": "问题仍处于未解决的状态。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}
+  

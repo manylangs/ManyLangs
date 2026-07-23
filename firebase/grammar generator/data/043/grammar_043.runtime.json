@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A2_KO_BEFORE",
+        "level": "a2",
+        "id": "043"
+    },
+    "title": {
+        "target": "V-기 전에",
+        "en": "Before doing V",
+        "es": "Antes de V",
+        "fr": "Avant de V",
+        "pt": "Antes de V",
+        "kr": "V-기 전에",
+        "jp": "～する前に",
+        "zh": "……之前"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사 어간에 -기 전에를 붙이면 두 동작 사이의 시간 순서를 나타낼 수 있다. 이 표현이 붙은 동작은 문장 전체에서 시간상 나중에 일어난 일을 가리킨다.",
+                "en": "Attaching -gi jeon-e to a verb stem shows the order in which two actions occur. The action marked this way refers to the event that happens later.",
+                "es": "Al añadir -gi jeon-e a la raíz del verbo se indica el orden temporal entre dos acciones. La acción marcada así se refiere al evento que ocurre después.",
+                "fr": "En ajoutant -gi jeon-e au radical du verbe, on indique l'ordre chronologique entre deux actions. L'action ainsi marquée renvoie à l'événement qui se produit plus tard.",
+                "pt": "Ao juntar -gi jeon-e à raiz do verbo, indica-se a ordem temporal entre duas ações. A ação assim marcada refere-se ao acontecimento que ocorre mais tarde.",
+                "kr": "동사 어간에 -기 전에를 붙이면 두 동작 사이의 시간 순서를 나타낼 수 있다. 이 표현이 붙은 동작은 문장 전체에서 시간상 나중에 일어난 일을 가리킨다.",
+                "jp": "動詞の語幹に-기 전에を付けると、二つの動作の間の時間的な順序を表すことができる。この表現が付いた動作は、文全体の中で時間的に後で起こる出来事を指す。",
+                "zh": "在动词词干后加上-기 전에，可以表示两个动作之间的时间顺序。带有这个表达的动作，在整个句子中指的是时间上后发生的事情。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "문장 구조상 전에가 포함된 절이 먼저 나오고 주절이 뒤에 온다. 그러나 실제 사건이 일어나는 순서는 반대로, 주절의 동작이 시간상 먼저 발생한다.",
+                "en": "In sentence structure, the clause with jeon-e comes first and the main clause follows. However, the real order of events is reversed, since the main clause's action happens earlier.",
+                "es": "En la estructura de la frase, la cláusula con jeon-e aparece primero y la principal después. Sin embargo, el orden real de los hechos es inverso, pues la acción principal ocurre antes.",
+                "fr": "Dans la structure de la phrase, la proposition avec jeon-e apparaît en premier et la principale ensuite. Pourtant, l'ordre réel des événements est inversé, car l'action principale se produit avant.",
+                "pt": "Na estrutura da frase, a oração com jeon-e surge primeiro e a principal depois. Contudo, a ordem real dos acontecimentos é inversa, pois a ação principal ocorre antes.",
+                "kr": "문장 구조상 전에가 포함된 절이 먼저 나오고 주절이 뒤에 온다. 그러나 실제 사건이 일어나는 순서는 반대로, 주절의 동작이 시간상 먼저 발생한다.",
+                "jp": "文の構造上、전에を含む節が先に来て、主節が後に来る。しかし実際に事件が起こる順序は反対で、主節の動作が時間的に先に発生する。",
+                "zh": "从句子结构上看，包含전에的分句先出现，主句在后。但实际事件发生的顺序恰好相反，主句的动作在时间上先发生。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "전에 앞에는 -았/었- 같은 과거 시제 표현이 결합할 수 없으며 항상 동사 원형에 기만 붙는다. 시간을 나타내는 명사 뒤에서는 기 없이 전에만 단독으로 쓰인다. 앞뒤 절의 주어는 서로 달라도 무방하지만 문맥이 자연스러워야 한다.",
+                "en": "Past tense markers like -at/eot- cannot combine before jeon-e, so only the plain verb stem with gi is used. After a time noun, jeon-e is used alone without gi. The subjects of the two clauses may differ as long as the context stays natural.",
+                "es": "Antes de jeon-e no pueden combinarse marcas de pasado como -at/eot-, así que solo se usa la raíz simple con gi. Tras un sustantivo de tiempo, jeon-e se usa solo, sin gi. Los sujetos de ambas cláusulas pueden ser distintos siempre que el contexto resulte natural.",
+                "fr": "Les marques du passé comme -at/eot- ne peuvent pas se combiner avant jeon-e, donc seul le radical simple avec gi est utilisé. Après un nom de temps, jeon-e s'emploie seul, sans gi. Les sujets des deux propositions peuvent différer tant que le contexte reste naturel.",
+                "pt": "Marcas de passado como -at/eot- não se combinam antes de jeon-e, pelo que se usa apenas a raiz simples com gi. Depois de um substantivo de tempo, jeon-e usa-se sozinho, sem gi. Os sujeitos das duas orações podem ser diferentes desde que o contexto se mantenha natural.",
+                "kr": "전에 앞에는 -았/었- 같은 과거 시제 표현이 결합할 수 없으며 항상 동사 원형에 기만 붙는다. 시간을 나타내는 명사 뒤에서는 기 없이 전에만 단독으로 쓰인다. 앞뒤 절의 주어는 서로 달라도 무방하지만 문맥이 자연스러워야 한다.",
+                "jp": "전에の前には-았/었-のような過去時制表現が結合できず、常に動詞の原形に기だけが付く。時間を表す名詞の後では기なしで전에だけが単独で使われる。前後の節の主語が互いに異なってもかまわないが、文脈が自然でなければならない。",
+                "zh": "전에前面不能结合-았/었-等过去时表达，只能在动词原形上加기。在表示时间的名词后面，不用기，只单独使用전에。前后分句的主语可以不同，但语境要自然。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "후에나 뒤에와 달리 전에는 사건의 순서가 반대로 해석된다는 점에서 구별된다. 격식과 비격식 표현 사이에 특별한 차이는 없어 두 상황 모두에서 자유롭게 쓸 수 있다.",
+                "en": "Unlike hu-e or dwi-e, jeon-e is distinguished by the fact that the order of events is interpreted in reverse. There is no notable difference between formal and informal registers, so it can be used freely in both.",
+                "es": "A diferencia de hu-e o dwi-e, jeon-e se distingue porque el orden de los hechos se interpreta al revés. No hay una diferencia notable entre el registro formal e informal, así que puede usarse libremente en ambos.",
+                "fr": "Contrairement à hu-e ou dwi-e, jeon-e se distingue par le fait que l'ordre des événements s'interprète à l'inverse. Il n'existe pas de différence notable entre le registre formel et informel, donc il peut être utilisé librement dans les deux.",
+                "pt": "Ao contrário de hu-e ou dwi-e, jeon-e distingue-se pelo facto de a ordem dos acontecimentos ser interpretada ao contrário. Não existe diferença notável entre o registo formal e informal, podendo usar-se livremente em ambos.",
+                "kr": "후에나 뒤에와 달리 전에는 사건의 순서가 반대로 해석된다는 점에서 구별된다. 격식과 비격식 표현 사이에 특별한 차이는 없어 두 상황 모두에서 자유롭게 쓸 수 있다.",
+                "jp": "후에や뒤에とは異なり、전에は事件の順序が反対に解釈されるという点で区別される。格式のある表現とくだけた表現の間に特別な差はなく、両方の場面で自由に使うことができる。",
+                "zh": "与후에或뒤에不同，전에的区别在于事件的顺序被反向解释。正式表达和非正式表达之间没有特别的差异，两种场合都可以自由使用。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "과거 사건을 언급할 때도 전에 앞에는 과거형을 쓰지 않는 점에 유의해야 한다. 명사와 결합할 때는 기 없이 명사 뒤에 곧바로 전에를 붙인다는 점도 자주 실수하는 부분이다.",
+                "en": "Even when referring to a past event, one must remember not to use the past tense before jeon-e. Attaching jeon-e directly after a noun without gi is another point where mistakes commonly occur.",
+                "es": "Incluso al referirse a un hecho pasado, hay que recordar no usar el pasado antes de jeon-e. Añadir jeon-e directamente tras un sustantivo sin gi es otro punto donde suelen cometerse errores.",
+                "fr": "Même en évoquant un événement passé, il faut se rappeler de ne pas utiliser le passé avant jeon-e. Ajouter jeon-e directement après un nom sans gi est un autre point où les erreurs sont fréquentes.",
+                "pt": "Mesmo ao referir um acontecimento passado, é preciso lembrar de não usar o passado antes de jeon-e. Juntar jeon-e diretamente a seguir a um substantivo sem gi é outro ponto onde os erros são frequentes.",
+                "kr": "과거 사건을 언급할 때도 전에 앞에는 과거형을 쓰지 않는 점에 유의해야 한다. 명사와 결합할 때는 기 없이 명사 뒤에 곧바로 전에를 붙인다는 점도 자주 실수하는 부분이다.",
+                "jp": "過去の出来事に言及するときも、전에の前に過去形を使わない点に注意しなければならない。名詞と結合するときは기なしで名詞の後にそのまま전에を付ける点もよく間違えるところである。",
+                "zh": "即使提到过去发生的事情，也要注意전에前面不用过去式。与名词结合时，不加기，直接在名词后面加전에，这也是常见的错误之处。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 자기 전에 이를 닦아요.",
+                "en": "I brush my teeth before going to sleep.",
+                "es": "Me cepillo los dientes antes de dormir.",
+                "fr": "Je me brosse les dents avant de dormir.",
+                "pt": "Lavo os dentes antes de dormir.",
+                "kr": "저는 자기 전에 이를 닦아요.",
+                "jp": "私は寝る前に歯を磨きます。",
+                "zh": "我睡觉前刷牙。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "학교에 가기 전에 아침을 먹어요.",
+                "en": "I eat breakfast before going to school.",
+                "es": "Desayuno antes de ir al colegio.",
+                "fr": "Je prends le petit-déjeuner avant d'aller à l'école.",
+                "pt": "Tomo o pequeno-almoço antes de ir à escola.",
+                "kr": "학교에 가기 전에 아침을 먹어요.",
+                "jp": "学校に行く前に朝ご飯を食べます。",
+                "zh": "去学校之前吃早饭。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "영화를 보기 전에 표를 샀어요.",
+                "en": "I bought the tickets before watching the movie.",
+                "es": "Compré las entradas antes de ver la película.",
+                "fr": "J'ai acheté les billets avant de regarder le film.",
+                "pt": "Comprei os bilhetes antes de ver o filme.",
+                "kr": "영화를 보기 전에 표를 샀어요.",
+                "jp": "映画を見る前にチケットを買いました。",
+                "zh": "看电影之前买了票。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "밥을 먹기 전에 손을 씻으세요.",
+                "en": "Please wash your hands before eating.",
+                "es": "Lávate las manos antes de comer.",
+                "fr": "Lave-toi les mains avant de manger.",
+                "pt": "Lava as mãos antes de comer.",
+                "kr": "밥을 먹기 전에 손을 씻으세요.",
+                "jp": "ご飯を食べる前に手を洗ってください。",
+                "zh": "吃饭之前请洗手。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "회의가 시작되기 전에 자료를 준비했어요.",
+                "en": "I prepared the materials before the meeting started.",
+                "es": "Preparé los materiales antes de que empezara la reunión.",
+                "fr": "J'ai préparé les documents avant que la réunion commence.",
+                "pt": "Preparei os materiais antes de a reunião começar.",
+                "kr": "회의가 시작되기 전에 자료를 준비했어요.",
+                "jp": "会議が始まる前に資料を準備しました。",
+                "zh": "会议开始之前准备好了资料。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "비가 오기 전에 집에 도착해야 해요.",
+                "en": "I need to get home before it rains.",
+                "es": "Tengo que llegar a casa antes de que llueva.",
+                "fr": "Je dois rentrer avant qu'il pleuve.",
+                "pt": "Tenho de chegar a casa antes de chover.",
+                "kr": "비가 오기 전에 집에 도착해야 해요.",
+                "jp": "雨が降る前に家に着かなければなりません。",
+                "zh": "下雨之前必须到家。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "결혼하기 전에 여행을 많이 다녔어요.",
+                "en": "I traveled a lot before getting married.",
+                "es": "Viajé mucho antes de casarme.",
+                "fr": "J'ai beaucoup voyagé avant de me marier.",
+                "pt": "Viajei muito antes de casar.",
+                "kr": "결혼하기 전에 여행을 많이 다녔어요.",
+                "jp": "結婚する前に旅行によく行きました。",
+                "zh": "结婚之前经常去旅行。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "시험을 보기 전에 커피를 한 잔 마셔요.",
+                "en": "I drink a cup of coffee before taking the exam.",
+                "es": "Tomo una taza de café antes del examen.",
+                "fr": "Je bois une tasse de café avant l'examen.",
+                "pt": "Bebo uma chávena de café antes do exame.",
+                "kr": "시험을 보기 전에 커피를 한 잔 마셔요.",
+                "jp": "試験を受ける前にコーヒーを一杯飲みます。",
+                "zh": "考试之前喝一杯咖啡。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "삼 일 전에 친구를 만났어요.",
+                "en": "I met a friend three days ago.",
+                "es": "Me encontré con un amigo hace tres días.",
+                "fr": "J'ai rencontré un ami il y a trois jours.",
+                "pt": "Encontrei um amigo há três dias.",
+                "kr": "삼 일 전에 친구를 만났어요.",
+                "jp": "三日前に友達に会いました。",
+                "zh": "三天前见了朋友。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "문제가 커지기 전에 해결하는 게 좋겠어요.",
+                "en": "It would be better to solve it before the problem grows bigger.",
+                "es": "Sería mejor resolverlo antes de que el problema se agrave.",
+                "fr": "Il vaudrait mieux le résoudre avant que le problème ne s'aggrave.",
+                "pt": "Seria melhor resolver isso antes de o problema piorar.",
+                "kr": "문제가 커지기 전에 해결하는 게 좋겠어요.",
+                "jp": "問題が大きくなる前に解決するのがいいでしょう。",
+                "zh": "问题变大之前解决比较好。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "늦기 전에 서둘러서 나가야 해요.",
+                "en": "We should hurry and leave before we're late.",
+                "es": "Deberíamos darnos prisa y salir antes de llegar tarde.",
+                "fr": "Nous devrions nous dépêcher de sortir avant d'être en retard.",
+                "pt": "Devíamos despachar-nos e sair antes de chegarmos atrasados.",
+                "kr": "늦기 전에 서둘러서 나가야 해요.",
+                "jp": "遅れる前に急いで出かけなければなりません。",
+                "zh": "迟到之前必须赶快出门。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "해가 지기 전에 산에서 내려왔어요.",
+                "en": "We came down the mountain before the sun set.",
+                "es": "Bajamos de la montaña antes de que se pusiera el sol.",
+                "fr": "Nous sommes descendus de la montagne avant le coucher du soleil.",
+                "pt": "Descemos da montanha antes de o sol se pôr.",
+                "kr": "해가 지기 전에 산에서 내려왔어요.",
+                "jp": "日が沈む前に山から下りてきました。",
+                "zh": "太阳落山之前从山上下来了。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

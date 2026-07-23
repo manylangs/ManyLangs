@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A2_KO_REASON_EXPLAIN",
+        "level": "a2",
+        "id": "070"
+    },
+    "title": {
+        "target": "A/V-(으)니까",
+        "en": "A/V-(으)니까 (Because/Since)",
+        "es": "A/V-(으)니까 (Porque/Ya que)",
+        "fr": "A/V-(으)니까 (Parce que/Puisque)",
+        "pt": "A/V-(으)니까 (Porque/Já que)",
+        "kr": "A/V-(으)니까",
+        "jp": "だから・ので（理由・根拠）",
+        "zh": "因为・所以（理由・依据）"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "이유나 근거를 나타낼 때 동사나 형용사 어간에 -(으)니까를 붙인다. 받침이 없는 어간에는 -니까, 받침이 있는 어간에는 -으니까가 결합한다.",
+                "en": "-(으)니까 is a connective used to state the reason or basis for what follows. It attaches as -니까 to stems without a final consonant and -으니까 to stems with one.",
+                "es": "-(으)니까 es un conector que indica la razón o el motivo de lo que sigue. Se une como -니까 a raíces sin consonante final y como -으니까 a raíces con consonante final.",
+                "fr": "-(으)니까 est un connecteur qui indique la raison ou le motif de ce qui suit. Il s'ajoute sous la forme -니까 aux radicaux sans consonne finale et -으니까 aux radicaux avec consonne finale.",
+                "pt": "-(으)니까 é um conector que indica a razão ou o motivo do que se segue. Junta-se como -니까 a radicais sem consoante final e como -으니까 a radicais com consoante final.",
+                "kr": "이유나 근거를 나타낼 때 동사나 형용사 어간에 -(으)니까를 붙인다. 받침이 없는 어간에는 -니까, 받침이 있는 어간에는 -으니까가 결합한다.",
+                "jp": "理由や根拠を表すとき、動詞や形容詞の語幹に「-(으)니까」を付ける。パッチムがない語幹には「-니까」、パッチムがある語幹には「-으니까」が結合する。",
+                "zh": "表示理由或依据时，在动词或形容词词干后接「-(으)니까」。无收音的词干接「-니까」，有收音的词干接「-으니까」。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "앞 절이 이유가 되고 뒤 절에 그 결과나 판단이 이어지는 순서로 문장이 구성된다. 화자의 주관적 근거를 제시하는 데 주로 쓰인다.",
+                "en": "The clause with -(으)니까 states the reason first, followed by the resulting action or judgment. It is mainly used to present the speaker's own basis for something.",
+                "es": "La cláusula con -(으)니까 expone primero la razón, seguida de la acción o el juicio resultante. Se usa principalmente para presentar el motivo subjetivo del hablante.",
+                "fr": "La proposition avec -(으)니까 énonce d'abord la raison, suivie de l'action ou du jugement qui en résulte. Elle sert surtout à présenter le motif subjectif du locuteur.",
+                "pt": "A oração com -(으)니까 apresenta primeiro a razão, seguida da ação ou do julgamento resultante. É usada principalmente para expor o motivo subjetivo de quem fala.",
+                "kr": "앞 절이 이유가 되고 뒤 절에 그 결과나 판단이 이어지는 순서로 문장이 구성된다. 화자의 주관적 근거를 제시하는 데 주로 쓰인다.",
+                "jp": "前の節が理由になり、後の節にその結果や判断が続く順序で文が構成される。話し手の主観的な根拠を示すのに主に使われる。",
+                "zh": "句子结构为前一分句作为理由，后一分句接续由此产生的结果或判断。主要用于表达说话者的主观依据。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "뒤 절에 명령문이나 청유문이 오면 -아서/어서 대신 반드시 -(으)니까를 써야 한다. 과거의 이유를 말할 때는 -았/었으니까 형태로 결합하며, 객관적인 인과관계보다는 주관적 판단을 나타낼 때 더 자주 사용된다.",
+                "en": "When the following clause is an imperative or a suggestion, -(으)니까 must be used instead of -아서/어서. To state a past reason, it combines as -았/었으니까, and it is used more often for subjective judgment than for purely objective causation.",
+                "es": "Cuando la cláusula siguiente es un imperativo o una sugerencia, debe usarse -(으)니까 en lugar de -아서/어서. Para expresar una razón pasada, se combina como -았/었으니까, y se emplea más para juicios subjetivos que para causalidad puramente objetiva.",
+                "fr": "Lorsque la proposition suivante est un impératif ou une suggestion, -(으)니까 doit être utilisé à la place de -아서/어서. Pour exprimer une raison passée, il se combine sous la forme -았/었으니까, et il sert plus souvent à un jugement subjectif qu'à une causalité purement objective.",
+                "pt": "Quando a oração seguinte é um imperativo ou uma sugestão, deve usar-se -(으)니까 em vez de -아서/어서. Para exprimir uma razão passada, combina-se como -았/었으니까, sendo usado mais para um julgamento subjetivo do que para uma causalidade puramente objetiva.",
+                "kr": "뒤 절에 명령문이나 청유문이 오면 -아서/어서 대신 반드시 -(으)니까를 써야 한다. 과거의 이유를 말할 때는 -았/었으니까 형태로 결합하며, 객관적인 인과관계보다는 주관적 판단을 나타낼 때 더 자주 사용된다.",
+                "jp": "後の節に命令文や勧誘文が来る場合は「-아서/어서」の代わりに必ず「-(으)니까」を使わなければならない。過去の理由を言うときは「-았/었으니까」の形で結合し、客観的な因果関係よりも主観的な判断を表すときにより多く使われる。",
+                "zh": "如果后一分句是命令句或共动句，必须使用「-(으)니까」而不能用「-아서/어서」。表示过去的理由时结合为「-았/었으니까」的形式，比起客观的因果关系，更常用于表达主观判断。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "-아서/어서와 의미가 비슷하지만 뒤 절에 명령형이나 청유형을 쓸 수 있다는 점에서 차이가 있다. 격식과 비격식 상황 모두에서 동일하게 사용할 수 있다.",
+                "en": "It has a meaning similar to -아서/어서, but differs in that the following clause can be an imperative or a proposal. It can be used the same way in both formal and informal situations.",
+                "es": "Tiene un significado similar a -아서/어서, pero se diferencia en que la cláusula siguiente puede ser un imperativo o una propuesta. Puede usarse igual tanto en situaciones formales como informales.",
+                "fr": "Son sens est proche de -아서/어서, mais il s'en distingue en ce que la proposition suivante peut être un impératif ou une proposition. Il s'emploie de la même façon dans les situations formelles et informelles.",
+                "pt": "Tem um significado semelhante a -아서/어서, mas distingue-se por a oração seguinte poder ser um imperativo ou uma proposta. Pode ser usado da mesma forma em situações formais e informais.",
+                "kr": "-아서/어서와 의미가 비슷하지만 뒤 절에 명령형이나 청유형을 쓸 수 있다는 점에서 차이가 있다. 격식과 비격식 상황 모두에서 동일하게 사용할 수 있다.",
+                "jp": "「-아서/어서」と意味は似ているが、後の節に命令形や勧誘形を使える点で違いがある。格式ばった場面でも気楽な場面でも同じように使うことができる。",
+                "zh": "意义上与「-아서/어서」相似，但区别在于后一分句可以使用命令形或共动形。在正式和非正式场合都可以同样使用。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "명령문이나 청유문 앞에 -아서/어서를 쓰면 어색한 문장이 된다는 점에 주의해야 한다. 지시나 제안을 할 때는 이유를 밝힐 때 항상 -(으)니까를 사용하는 습관을 들이는 것이 좋다.",
+                "en": "Note that using -아서/어서 before an imperative or a suggestion produces an unnatural sentence. When giving instructions or proposals, it helps to form the habit of always stating the reason with -(으)니까.",
+                "es": "Hay que tener en cuenta que usar -아서/어서 antes de un imperativo o una sugerencia produce una oración poco natural. Al dar instrucciones o propuestas, conviene adquirir el hábito de expresar siempre la razón con -(으)니까.",
+                "fr": "Il faut noter que l'emploi de -아서/어서 avant un impératif ou une suggestion produit une phrase peu naturelle. Lorsqu'on donne des instructions ou des propositions, il est utile de prendre l'habitude d'exprimer toujours la raison avec -(으)니까.",
+                "pt": "É preciso notar que usar -아서/어서 antes de um imperativo ou de uma sugestão produz uma frase pouco natural. Ao dar instruções ou propostas, convém criar o hábito de exprimir sempre a razão com -(으)니까.",
+                "kr": "명령문이나 청유문 앞에 -아서/어서를 쓰면 어색한 문장이 된다는 점에 주의해야 한다. 지시나 제안을 할 때는 이유를 밝힐 때 항상 -(으)니까를 사용하는 습관을 들이는 것이 좋다.",
+                "jp": "命令文や勧誘文の前に「-아서/어서」を使うと不自然な文になる点に注意しなければならない。指示や提案をするときは理由を述べる際に常に「-(으)니까」を使う習慣をつけるとよい。",
+                "zh": "需要注意的是，在命令句或共动句前使用「-아서/어서」会造成不自然的句子。发出指示或提议时，最好养成始终用「-(으)니까」来说明理由的习惯。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "지금 시간이 없으니까 우리 빨리 갑시다.",
+                "en": "We don't have time now, so let's go quickly.",
+                "es": "Ahora no tenemos tiempo, así que vámonos rápido.",
+                "fr": "Nous n'avons pas le temps maintenant, alors partons vite.",
+                "pt": "Agora não temos tempo, por isso vamos depressa.",
+                "kr": "지금 시간이 없으니까 우리 빨리 갑시다.",
+                "jp": "今時間がないから、私たち早く行きましょう。",
+                "zh": "现在没有时间了，我们快走吧。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "날씨가 추우니까 옷을 따뜻하게 입으세요.",
+                "en": "It's cold outside, so please dress warmly.",
+                "es": "Hace frío, así que abríguese bien.",
+                "fr": "Il fait froid, alors habillez-vous chaudement.",
+                "pt": "Está frio, por isso vista-se com roupa quente.",
+                "kr": "날씨가 추우니까 옷을 따뜻하게 입으세요.",
+                "jp": "寒いですから、服を暖かく着てください。",
+                "zh": "天气很冷，请穿暖和一点。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "배가 고프니까 지금 밥을 먹자.",
+                "en": "I'm hungry, so let's eat now.",
+                "es": "Tengo hambre, así que comamos ahora.",
+                "fr": "J'ai faim, alors mangeons maintenant.",
+                "pt": "Tenho fome, por isso vamos comer agora.",
+                "kr": "배가 고프니까 지금 밥을 먹자.",
+                "jp": "お腹がすいたから、今ご飯を食べよう。",
+                "zh": "肚子饿了，现在吃饭吧。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "길이 막히니까 지하철을 타는 게 낫다.",
+                "en": "The road is jammed, so it's better to take the subway.",
+                "es": "Hay atasco, así que es mejor tomar el metro.",
+                "fr": "Il y a des embouteillages, alors mieux vaut prendre le métro.",
+                "pt": "Há trânsito, por isso é melhor apanhar o metro.",
+                "kr": "길이 막히니까 지하철을 타는 게 낫다.",
+                "jp": "道が混んでいるから、地下鉄に乗るほうがいい。",
+                "zh": "路上堵车，坐地铁比较好。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "어제 많이 피곤했으니까 오늘은 집에서 쉬려고 한다.",
+                "en": "I was very tired yesterday, so I plan to rest at home today.",
+                "es": "Ayer estaba muy cansado, así que hoy pienso descansar en casa.",
+                "fr": "J'étais très fatigué hier, alors je compte me reposer chez moi aujourd'hui.",
+                "pt": "Ontem estava muito cansado, por isso hoje pretendo descansar em casa.",
+                "kr": "어제 많이 피곤했으니까 오늘은 집에서 쉬려고 한다.",
+                "jp": "昨日とても疲れたから、今日は家で休むつもりだ。",
+                "zh": "昨天太累了，所以今天打算在家休息。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 식당은 값이 싸니까 사람들이 많이 온다.",
+                "en": "This restaurant's prices are cheap, so many people come.",
+                "es": "Los precios de este restaurante son baratos, así que viene mucha gente.",
+                "fr": "Les prix de ce restaurant sont bas, alors beaucoup de gens y viennent.",
+                "pt": "Os preços deste restaurante são baratos, por isso vem muita gente.",
+                "kr": "이 식당은 값이 싸니까 사람들이 많이 온다.",
+                "jp": "この食堂は値段が安いから、人がたくさん来る。",
+                "zh": "这家餐厅价格便宜，所以很多人来。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "숙제를 다 했으니까 이제 놀아도 된다.",
+                "en": "I finished all my homework, so I can play now.",
+                "es": "Terminé toda la tarea, así que ahora puedo jugar.",
+                "fr": "J'ai fini tous mes devoirs, alors je peux jouer maintenant.",
+                "pt": "Já acabei os trabalhos de casa, por isso posso brincar agora.",
+                "kr": "숙제를 다 했으니까 이제 놀아도 된다.",
+                "jp": "宿題を全部終えたから、もう遊んでもいい。",
+                "zh": "作业都做完了，现在可以玩了。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "내일은 회의가 있으니까 일찍 출근해야 한다.",
+                "en": "There's a meeting tomorrow, so I have to go to work early.",
+                "es": "Mañana hay una reunión, así que tengo que ir a trabajar temprano.",
+                "fr": "Il y a une réunion demain, donc je dois aller au travail tôt.",
+                "pt": "Amanhã há uma reunião, por isso tenho de ir trabalhar cedo.",
+                "kr": "내일은 회의가 있으니까 일찍 출근해야 한다.",
+                "jp": "明日は会議があるから、早く出勤しなければならない。",
+                "zh": "明天有会议，所以必须早点上班。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그 사람은 성격이 좋으니까 친구가 많은 것 같다.",
+                "en": "That person has a good personality, so it seems they have many friends.",
+                "es": "Esa persona tiene buen carácter, así que parece tener muchos amigos.",
+                "fr": "Cette personne a un bon caractère, donc elle semble avoir beaucoup d'amis.",
+                "pt": "Essa pessoa tem bom feitio, por isso parece ter muitos amigos.",
+                "kr": "그 사람은 성격이 좋으니까 친구가 많은 것 같다.",
+                "jp": "あの人は性格がいいから、友達が多いようだ。",
+                "zh": "那个人性格很好，所以好像朋友很多。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이미 늦었으니까 서두르는 게 좋겠다.",
+                "en": "It's already late, so it would be best to hurry.",
+                "es": "Ya es tarde, así que sería mejor darse prisa.",
+                "fr": "Il est déjà tard, alors il vaudrait mieux se dépêcher.",
+                "pt": "Já é tarde, por isso seria melhor despachar-se.",
+                "kr": "이미 늦었으니까 서두르는 게 좋겠다.",
+                "jp": "もう遅れたから、急いだほうがよさそうだ。",
+                "zh": "已经迟了，还是抓紧点比较好。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "몸이 안 좋으니까 오늘은 일찍 자야겠다.",
+                "en": "I don't feel well, so I think I'll go to bed early today.",
+                "es": "No me siento bien, así que creo que hoy me acostaré temprano.",
+                "fr": "Je ne me sens pas bien, alors je pense me coucher tôt aujourd'hui.",
+                "pt": "Não me sinto bem, por isso acho que hoje vou deitar-me cedo.",
+                "kr": "몸이 안 좋으니까 오늘은 일찍 자야겠다.",
+                "jp": "体調がよくないから、今日は早く寝ないといけない。",
+                "zh": "身体不太舒服，今天得早点睡了。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "가격이 비싸니까 다른 걸로 바꾸는 게 어때요?",
+                "en": "The price is expensive, so how about changing to something else?",
+                "es": "El precio es caro, ¿qué tal si cambiamos a otra cosa?",
+                "fr": "Le prix est élevé, que diriez-vous d'en choisir un autre ?",
+                "pt": "O preço é caro, que tal trocar por outra coisa?",
+                "kr": "가격이 비싸니까 다른 걸로 바꾸는 게 어때요?",
+                "jp": "値段が高いから、他のものに変えるのはどうですか。",
+                "zh": "价格太贵了，换一个别的怎么样？"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

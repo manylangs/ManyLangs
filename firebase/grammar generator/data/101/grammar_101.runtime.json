@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "B1_KO_RESULT_STATE",
+        "level": "b1",
+        "id": "101"
+    },
+    "title": {
+        "target": "-아/어 있다",
+        "en": "Resultant State -아/어 있다",
+        "es": "Estado resultante -아/어 있다",
+        "fr": "État résultant -아/어 있다",
+        "pt": "Estado resultante -아/어 있다",
+        "kr": "-아/어 있다",
+        "jp": "-아/어 있다(〜ている状態/結果状態)",
+        "zh": "-아/어 있다(处于……状态/结果状态)"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "아/어 있다는 동작이 끝난 뒤에도 그 결과로 생긴 상태가 계속됨을 나타내는 표현이다.",
+                "en": "아/어 있다 expresses that the state resulting from a completed action continues.",
+                "es": "아/어 있다 expresa que el estado resultante de una acción terminada continúa.",
+                "fr": "아/어 있다 exprime que l'état résultant d'une action terminée se poursuit.",
+                "pt": "아/어 있다 exprime que o estado resultante de uma ação terminada continua.",
+                "kr": "아/어 있다는 동작이 끝난 뒤에도 그 결과로 생긴 상태가 계속됨을 나타내는 표현이다.",
+                "jp": "아/어 있다は、動作が終わった後もその結果として生じた状態が続いていることを示す表現である。",
+                "zh": "아/어 있다是一种语法表达,表示动作结束之后,由此产生的状态仍在持续。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사 어간의 마지막 모음이 아나 오면 아 있다를, 그 외에는 어 있다를 붙여 만든다.",
+                "en": "It is formed by attaching 아 or 어 to the verb stem depending on the final vowel, followed by 있다.",
+                "es": "Se forma añadiendo 아 o 어 a la raíz verbal según la vocal final, seguido de 있다.",
+                "fr": "Elle se forme en ajoutant 아 ou 어 au radical verbal selon la voyelle finale, suivi de 있다.",
+                "pt": "Forma-se acrescentando 아 ou 어 à raiz verbal conforme a vogal final, seguido de 있다.",
+                "kr": "동사 어간의 마지막 모음이 아나 오면 아 있다를, 그 외에는 어 있다를 붙여 만든다.",
+                "jp": "動詞の語幹の最後の母音がアかオであれば아 있다を、それ以外は어 있다を付けて作る。",
+                "zh": "根据动词词干最后一个元音是否为아或오,分别接아 있다或어 있다构成。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "주로 이동이나 변화를 나타내는 자동사에 결합하며 목적어를 취하는 타동사에는 결합하지 않는다.",
+                "en": "It mainly combines with intransitive verbs of movement or change and cannot combine with transitive verbs that take an object.",
+                "es": "Se combina principalmente con verbos intransitivos de movimiento o cambio y no puede combinarse con verbos transitivos que llevan objeto.",
+                "fr": "Elle se combine principalement avec des verbes intransitifs de mouvement ou de changement et ne peut pas se combiner avec des verbes transitifs prenant un objet.",
+                "pt": "Combina-se principalmente com verbos intransitivos de movimento ou mudança e não pode combinar-se com verbos transitivos que levam objeto.",
+                "kr": "주로 이동이나 변화를 나타내는 자동사에 결합하며 목적어를 취하는 타동사에는 결합하지 않는다.",
+                "jp": "主に移動や変化を表す自動詞に結合し、目的語を取る他動詞には結合しない。",
+                "zh": "主要与表示移动或变化的不及物动词结合,不能与带宾语的及物动词结合。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동작의 진행을 나타내는 -고 있다와 달리, 이 표현은 동작이 끝난 후의 결과 상태를 나타낸다.",
+                "en": "Unlike -고 있다, which expresses an ongoing action, this expression indicates the resulting state after an action has ended.",
+                "es": "A diferencia de -고 있다, que expresa una acción en curso, esta expresión indica el estado resultante después de que una acción ha terminado.",
+                "fr": "Contrairement à -고 있다, qui exprime une action en cours, cette expression indique l'état résultant après la fin d'une action.",
+                "pt": "Ao contrário de -고 있다, que exprime uma ação em curso, esta expressão indica o estado resultante depois de a ação ter terminado.",
+                "kr": "동작의 진행을 나타내는 -고 있다와 달리, 이 표현은 동작이 끝난 후의 결과 상태를 나타낸다.",
+                "jp": "動作の進行を表す-고 있다とは異なり、この表現は動作が終わった後の結果状態を示す。",
+                "zh": "与表示动作正在进行的-고 있다不同,这个表达表示动作结束之后的结果状态。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "타동사를 그대로 써서 열어 있다처럼 쓰는 오류가 흔하므로 피동형으로 바꾸어 열려 있다와 같이 표현해야 한다.",
+                "en": "A common error is using a transitive verb directly, as in 열어 있다, when the passive form must be used instead, as in 열려 있다.",
+                "es": "Un error común es usar directamente un verbo transitivo, como en 열어 있다, cuando debe usarse la forma pasiva, como en 열려 있다.",
+                "fr": "Une erreur courante consiste à utiliser directement un verbe transitif, comme dans 열어 있다, alors qu'il faut employer la forme passive, comme dans 열려 있다.",
+                "pt": "Um erro comum é usar diretamente um verbo transitivo, como em 열어 있다, quando se deve usar a forma passiva, como em 열려 있다.",
+                "kr": "타동사를 그대로 써서 열어 있다처럼 쓰는 오류가 흔하므로 피동형으로 바꾸어 열려 있다와 같이 표현해야 한다.",
+                "jp": "他動詞をそのまま使って열어 있다のように使う誤りが多いため、被動形に変えて열려 있다のように表現しなければならない。",
+                "zh": "常见的错误是直接使用及物动词,如열어 있다,而应改为被动形式,如열려 있다。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "창문 옆에 서 있다.",
+                "en": "Someone is standing by the window.",
+                "es": "Alguien está de pie junto a la ventana.",
+                "fr": "Quelqu'un est debout près de la fenêtre.",
+                "pt": "Alguém está de pé junto à janela.",
+                "kr": "창문 옆에 서 있다.",
+                "jp": "窓の横に立っている。",
+                "zh": "站在窗户旁边。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "침대에 누워 있다.",
+                "en": "Someone is lying on the bed.",
+                "es": "Alguien está acostado en la cama.",
+                "fr": "Quelqu'un est allongé sur le lit.",
+                "pt": "Alguém está deitado na cama.",
+                "kr": "침대에 누워 있다.",
+                "jp": "ベッドに横になっている。",
+                "zh": "躺在床上。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "문이 열려 있다.",
+                "en": "The door is open.",
+                "es": "La puerta está abierta.",
+                "fr": "La porte est ouverte.",
+                "pt": "A porta está aberta.",
+                "kr": "문이 열려 있다.",
+                "jp": "ドアが開いている。",
+                "zh": "门开着。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "불이 꺼져 있다.",
+                "en": "The light is turned off.",
+                "es": "La luz está apagada.",
+                "fr": "La lumière est éteinte.",
+                "pt": "A luz está apagada.",
+                "kr": "불이 꺼져 있다.",
+                "jp": "電気が消えている。",
+                "zh": "灯是关着的。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "아까부터 저기 앉아 있었다.",
+                "en": "Someone had been sitting there since a while ago.",
+                "es": "Alguien llevaba sentado allí desde hace un rato.",
+                "fr": "Quelqu'un était assis là-bas depuis un moment.",
+                "pt": "Alguém estava sentado ali desde há pouco.",
+                "kr": "아까부터 저기 앉아 있었다.",
+                "jp": "さっきからあそこに座っていた。",
+                "zh": "从刚才起就一直坐在那里。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "창문이 아직 열려 있지 않다.",
+                "en": "The window is not open yet.",
+                "es": "La ventana todavía no está abierta.",
+                "fr": "La fenêtre n'est pas encore ouverte.",
+                "pt": "A janela ainda não está aberta.",
+                "kr": "창문이 아직 열려 있지 않다.",
+                "jp": "窓がまだ開いていない。",
+                "zh": "窗户还没开着。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "벽에 그림이 걸려 있다.",
+                "en": "A picture is hanging on the wall.",
+                "es": "Un cuadro está colgado en la pared.",
+                "fr": "Un tableau est accroché au mur.",
+                "pt": "Um quadro está pendurado na parede.",
+                "kr": "벽에 그림이 걸려 있다.",
+                "jp": "壁に絵がかかっている。",
+                "zh": "墙上挂着一幅画。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "냉장고 안에 음식이 남아 있다.",
+                "en": "Food is left inside the refrigerator.",
+                "es": "Queda comida dentro del refrigerador.",
+                "fr": "De la nourriture reste dans le réfrigérateur.",
+                "pt": "Ainda há comida dentro do frigorífico.",
+                "kr": "냉장고 안에 음식이 남아 있다.",
+                "jp": "冷蔵庫の中に食べ物が残っている。",
+                "zh": "冰箱里还剩着食物。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그 자리에 오랫동안 서 있어서 다리가 아프다.",
+                "en": "Because someone has been standing in that spot for a long time, their legs hurt.",
+                "es": "Como alguien ha estado de pie en ese lugar durante mucho tiempo, le duelen las piernas.",
+                "fr": "Comme quelqu'un est resté debout à cet endroit pendant longtemps, il a mal aux jambes.",
+                "pt": "Como alguém esteve de pé naquele lugar durante muito tempo, dói-lhe as pernas.",
+                "kr": "그 자리에 오랫동안 서 있어서 다리가 아프다.",
+                "jp": "その場所に長い間立っていたので足が痛い。",
+                "zh": "在那个地方站了很久,腿很疼。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "책상 위에 놓여 있던 서류가 사라졌다.",
+                "en": "The documents that had been placed on the desk disappeared.",
+                "es": "Los documentos que habían estado colocados sobre el escritorio desaparecieron.",
+                "fr": "Les documents qui étaient posés sur le bureau ont disparu.",
+                "pt": "Os documentos que estavam colocados sobre a secretária desapareceram.",
+                "kr": "책상 위에 놓여 있던 서류가 사라졌다.",
+                "jp": "机の上に置かれていた書類が消えた。",
+                "zh": "放在桌子上的文件不见了。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "길에 쓰레기가 쌓여 있는 것을 보고 놀랐다.",
+                "en": "Someone was surprised to see trash piled up on the street.",
+                "es": "Alguien se sorprendió al ver la basura amontonada en la calle.",
+                "fr": "Quelqu'un a été surpris de voir les déchets entassés dans la rue.",
+                "pt": "Alguém ficou surpreendido ao ver o lixo amontoado na rua.",
+                "kr": "길에 쓰레기가 쌓여 있는 것을 보고 놀랐다.",
+                "jp": "道にごみが積まれているのを見て驚いた。",
+                "zh": "看到路上堆着垃圾,吓了一跳。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그가 도착했을 때 모든 준비가 끝나 있었다.",
+                "en": "When he arrived, all the preparations had already been finished.",
+                "es": "Cuando él llegó, todos los preparativos ya estaban terminados.",
+                "fr": "Quand il est arrivé, tous les préparatifs étaient déjà terminés.",
+                "pt": "Quando ele chegou, todos os preparativos já estavam terminados.",
+                "kr": "그가 도착했을 때 모든 준비가 끝나 있었다.",
+                "jp": "彼が到着したとき、すべての準備が終わっていた。",
+                "zh": "他到达的时候,一切准备都已经就绪了。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "a2",
+    "id": "004",
+    "targetLang": null
+  },
+  "topic": "A man shopping for clothes",
+  "keywords": [
+    "man",
+    "clothing store",
+    "shopping",
+    "clothes rack",
+    "mirror"
+  ],
+  "tts": {
+    "kr": [],
+    "en": [],
+    "es": [],
+    "fr": [],
+    "pt": [],
+    "jp": [],
+    "zh": []
+  },
+  "blocks": [
+    {
+      "type": "image",
+      "src": "004.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "texts": {
+            "kr": "한 남성이 옷 가게 안에서 셔츠가 걸린 옷걸이를 살펴보고 있다.",
+            "en": "A man stands inside a clothing store while browsing a rack of shirts.",
+            "es": "Un hombre está dentro de una tienda de ropa revisando un estante de camisas.",
+            "fr": "Un homme se tient dans un magasin de vêtements en parcourant un portant de chemises.",
+            "pt": "Um homem está dentro de uma loja de roupas olhando um cabideiro de camisas.",
+            "jp": "一人の男の人が洋服店の中でシャツが掛かったラックを見ています。",
+            "zh": "一个男人在服装店里查看挂着衬衫的衣架。"
+          }
+        },
+        {
+          "texts": {
+            "kr": "그는 연한 파란색 셔츠를 손에 들고 천을 자세히 살펴본다.",
+            "en": "He holds a light blue shirt in his hand and examines the fabric closely.",
+            "es": "Sostiene una camisa azul clara en su mano y examina la tela de cerca.",
+            "fr": "Il tient une chemise bleu clair dans sa main et en examine attentivement le tissu.",
+            "pt": "Ele segura uma camisa azul clara na mão e examina o tecido de perto.",
+            "jp": "彼は薄い青色のシャツを手に持って、生地をよく見ています。",
+            "zh": "他手里拿着一件浅蓝色的衬衫，仔细查看布料。"
+          }
+        },
+        {
+          "texts": {
+            "kr": "그 옆의 큰 거울은 밝게 조명이 켜진 매장 내부를 비추고 있다.",
+            "en": "A large mirror beside him reflects the bright interior of the store.",
+            "es": "Un gran espejo a su lado refleja el interior iluminado de la tienda.",
+            "fr": "Un grand miroir à côté de lui reflète l’intérieur lumineux du magasin.",
+            "pt": "Um grande espelho ao lado dele reflete o interior iluminado da loja.",
+            "jp": "彼の横の大きい鏡が、明るく照明された店内を映しています。",
+            "zh": "他旁边的大镜子映照出店内明亮的景象。"
+          }
+        },
+        {
+          "texts": {
+            "kr": "뒤쪽에는 가지런히 정리된 선반에 스웨터와 바지가 접혀 진열되어 있다.",
+            "en": "Behind him, neatly arranged shelves display folded sweaters and pants.",
+            "es": "Detrás de él, estantes ordenados muestran suéteres y pantalones doblados.",
+            "fr": "Derrière lui, des étagères bien rangées présentent des pulls et des pantalons pliés.",
+            "pt": "Atrás dele, prateleiras organizadas exibem suéteres e calças dobradas.",
+            "jp": "後ろには、きちんと並べられた棚にセーターとズボンが畳んで置かれています。",
+            "zh": "他身后整齐排列的架子上摆放着叠好的毛衣和裤子。"
+          }
+        },
+        {
+          "texts": {
+            "kr": "남성은 들고 있는 셔츠에 달린 가격표를 확인한다.",
+            "en": "The man checks the price tag attached to the shirt he is holding.",
+            "es": "El hombre revisa la etiqueta de precio de la camisa que sostiene.",
+            "fr": "L’homme regarde l’étiquette de prix attachée à la chemise qu’il tient.",
+            "pt": "O homem verifica a etiqueta de preço presa à camisa que está segurando.",
+            "jp": "男の人は持っているシャツに付いている値札を確認します。",
+            "zh": "男人查看着手中衬衫上挂着的价签。"
+          }
+        },
+        {
+          "texts": {
+            "kr": "벽을 따라 나무 옷걸이에 걸린 다양한 옷들이 보인다.",
+            "en": "Other clothing items hang on wooden hangers along the wall.",
+            "es": "Otras prendas cuelgan de perchas de madera a lo largo de la pared.",
+            "fr": "D’autres vêtements sont accrochés sur des cintres en bois le long du mur.",
+            "pt": "Outras roupas pendem de cabides de madeira ao longo da parede.",
+            "jp": "壁に沿って、木製のハンガーに掛かったさまざまな服が見えます。",
+            "zh": "沿着墙壁，木衣架上挂着各种各样的衣服。"
+          }
+        }
+      ]
+    }
+  ]
+}

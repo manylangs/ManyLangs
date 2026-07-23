@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "C1_KO_FORMAL_CONNECTOR",
+        "level": "c1",
+        "id": "173"
+    },
+    "title": {
+        "target": "더욱이 / 게다가",
+        "en": "Moreover / Furthermore",
+        "es": "Además / Es más",
+        "fr": "De plus / En outre",
+        "pt": "Além disso / Ademais",
+        "kr": "더욱이 / 게다가",
+        "jp": "さらに・その上",
+        "zh": "而且・再加上"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "더욱이와 게다가는 문장 앞에 놓여, 앞서 말한 내용에 새로운 정보나 이유를 덧붙여 논지를 강화하는 접속 부사이다.",
+                "en": "더욱이 and 게다가 are conjunctive adverbs placed at the start of a sentence to add new information or reasons to what was said before, reinforcing the argument.",
+                "es": "더욱이 y 게다가 son adverbios conjuntivos que se colocan al inicio de la oración para añadir nueva información o razones a lo dicho antes, reforzando el argumento.",
+                "fr": "더욱이 et 게다가 sont des adverbes de liaison placés en début de phrase pour ajouter une information ou une raison nouvelle à ce qui précède, renforçant ainsi l'argument.",
+                "pt": "더욱이 e 게다가 são advérbios conjuntivos colocados no início da frase para acrescentar nova informação ou razão ao que foi dito antes, reforçando o argumento.",
+                "kr": "더욱이와 게다가는 문장 앞에 놓여, 앞서 말한 내용에 새로운 정보나 이유를 덧붙여 논지를 강화하는 접속 부사이다.",
+                "jp": "「더욱이」と「게다가」は文頭に置かれ、先に述べた内容に新しい情報や理由を付け加えて論旨を強化する接続副詞である。",
+                "zh": "「더욱이」和「게다가」置于句首，用来在前文所述内容上补充新的信息或理由，从而加强论述，是一种连接副词。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "앞 문장이 하나의 사실이나 주장을 제시하면, 뒤 문장은 그와 같은 방향으로 정도를 더 높이는 내용을 이어 붙여 누적적인 논리 구조를 만든다.",
+                "en": "When the preceding sentence presents a fact or claim, the following sentence adds content that intensifies it in the same direction, forming a cumulative logical structure.",
+                "es": "Cuando la oración anterior presenta un hecho o una afirmación, la siguiente añade contenido que la intensifica en la misma dirección, formando una estructura lógica acumulativa.",
+                "fr": "Lorsque la phrase précédente présente un fait ou une affirmation, la phrase suivante ajoute un contenu qui l'intensifie dans le même sens, formant une structure logique cumulative.",
+                "pt": "Quando a frase anterior apresenta um facto ou uma afirmação, a frase seguinte acrescenta conteúdo que a intensifica na mesma direção, formando uma estrutura lógica cumulativa.",
+                "kr": "앞 문장이 하나의 사실이나 주장을 제시하면, 뒤 문장은 그와 같은 방향으로 정도를 더 높이는 내용을 이어 붙여 누적적인 논리 구조를 만든다.",
+                "jp": "前の文が一つの事実や主張を提示すると、後の文はそれと同じ方向で程度をより高める内容を続けて、累積的な論理構造を作る。",
+                "zh": "前一句提出某个事实或主张后，后一句会沿着同一方向补充程度更强的内容，从而形成一种累加式的逻辑结构。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "두 표현 모두 독립된 두 문장을 연결할 때 쓰이고 뒤 문장 첫머리에 오며, 앞 내용과 상반되는 정보를 덧붙일 때는 쓸 수 없다.",
+                "en": "Both expressions are used to connect two independent sentences and appear at the start of the following sentence, and they cannot be used to add information that contradicts the preceding content.",
+                "es": "Ambas expresiones se usan para conectar dos oraciones independientes y aparecen al inicio de la siguiente, y no pueden usarse para añadir información que contradiga lo anterior.",
+                "fr": "Les deux expressions servent à relier deux phrases indépendantes et apparaissent en tête de la phrase suivante, et elles ne peuvent servir à ajouter une information contredisant ce qui précède.",
+                "pt": "Ambas as expressões servem para ligar duas frases independentes e surgem no início da frase seguinte, não podendo ser usadas para acrescentar informação que contradiga o conteúdo anterior.",
+                "kr": "두 표현 모두 독립된 두 문장을 연결할 때 쓰이고 뒤 문장 첫머리에 오며, 앞 내용과 상반되는 정보를 덧붙일 때는 쓸 수 없다.",
+                "jp": "二つの表現はいずれも独立した二つの文をつなぐときに使われ後の文の冒頭に来るが、前の内容と相反する情報を付け加えるときには使えない。",
+                "zh": "这两个表达都用于连接两个独立的句子，位于后一句的开头；如果要补充与前文相反的信息，则不能使用。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "더욱이는 격식체 문어에서 논리적 첨가를 강조할 때 주로 쓰이는 반면, 게다가는 구어와 문어 모두에서 폭넓게 쓰이며 감정적 뉘앙스도 담을 수 있다.",
+                "en": "더욱이 is mainly used in formal written language to emphasize a logical addition, whereas 게다가 is used broadly in both speech and writing and can also carry an emotional nuance.",
+                "es": "더욱이 se usa principalmente en el lenguaje escrito formal para enfatizar una adición lógica, mientras que 게다가 se emplea ampliamente tanto en el habla como en la escritura y puede llevar también un matiz emocional.",
+                "fr": "더욱이 s'emploie surtout dans l'écrit formel pour souligner un ajout logique, tandis que 게다가 s'utilise largement à l'oral comme à l'écrit et peut également porter une nuance émotionnelle.",
+                "pt": "더욱이 é usado sobretudo na linguagem escrita formal para realçar um acréscimo lógico, ao passo que 게다가 é amplamente usado tanto na fala como na escrita e pode também carregar um matiz emocional.",
+                "kr": "더욱이는 격식체 문어에서 논리적 첨가를 강조할 때 주로 쓰이는 반면, 게다가는 구어와 문어 모두에서 폭넓게 쓰이며 감정적 뉘앙스도 담을 수 있다.",
+                "jp": "「더욱이」は格式ばった書き言葉で論理的な付加を強調するときに主に使われる一方、「게다가」は話し言葉と書き言葉の両方で幅広く使われ感情的なニュアンスも含むことができる。",
+                "zh": "「더욱이」主要用于正式书面语中强调逻辑上的补充，而「게다가」在口语和书面语中都广泛使用，还可以带有感情色彩。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "두 표현을 대조를 나타내는 접속사처럼 잘못 쓰는 실수가 흔하므로 첨가의 의미만 지님을 기억해야 하며, 문장 중간에 삽입하지 않고 항상 문두에 두어야 자연스럽다.",
+                "en": "A common mistake is misusing these two expressions as if they marked contrast, so it must be remembered that they carry only an additive meaning, and they should always be placed at the start of the sentence rather than inserted midway for natural phrasing.",
+                "es": "Un error común es usar mal estas dos expresiones como si marcaran contraste, por lo que hay que recordar que solo tienen sentido aditivo, y deben colocarse siempre al inicio de la oración, no insertarse a mitad de camino, para que suene natural.",
+                "fr": "Une erreur courante est d'employer à tort ces deux expressions comme si elles marquaient un contraste, il faut donc se rappeler qu'elles n'ont qu'un sens additif, et elles doivent toujours être placées en tête de phrase plutôt qu'insérées au milieu pour rester naturelles.",
+                "pt": "Um erro comum é usar mal estas duas expressões como se marcassem contraste, por isso é preciso lembrar que têm apenas sentido aditivo, devendo ser sempre colocadas no início da frase, e não inseridas a meio, para soarem naturais.",
+                "kr": "두 표현을 대조를 나타내는 접속사처럼 잘못 쓰는 실수가 흔하므로 첨가의 의미만 지님을 기억해야 하며, 문장 중간에 삽입하지 않고 항상 문두에 두어야 자연스럽다.",
+                "jp": "二つの表現を対照を表す接続詞のように誤って使う間違いがよく見られるため付加の意味しか持たないことを覚えておかなければならず、文の途中に挿入せず常に文頭に置いてこそ自然になる。",
+                "zh": "常见的错误是把这两个表达误用作表示对比的连接词，因此需要记住它们只有补充的意思；不要插入句子中间，而应始终放在句首才自然。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "가격이 올랐다. 더욱이 품질까지 떨어졌다.",
+                "en": "The price went up. Moreover, even the quality declined.",
+                "es": "El precio subió. Es más, hasta la calidad bajó.",
+                "fr": "Le prix a augmenté. De plus, même la qualité a baissé.",
+                "pt": "O preço subiu. Ademais, até a qualidade baixou.",
+                "kr": "가격이 올랐다. 더욱이 품질까지 떨어졌다.",
+                "jp": "価格が上がりました。さらに、品質まで下がりました。",
+                "zh": "价格上涨了。而且，连质量也下降了。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "비가 내렸다. 게다가 바람도 세게 불었다.",
+                "en": "It rained. Furthermore, the wind blew hard too.",
+                "es": "Llovió. Además, también sopló un viento fuerte.",
+                "fr": "Il a plu. En outre, le vent a aussi soufflé fort.",
+                "pt": "Choveu. Além disso, também soprou um vento forte.",
+                "kr": "비가 내렸다. 게다가 바람도 세게 불었다.",
+                "jp": "雨が降りました。その上、風も強く吹きました。",
+                "zh": "下雨了。再加上，风也刮得很大。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그는 성실하다. 더욱이 능력도 뛰어나다.",
+                "en": "He is diligent. Moreover, his ability is outstanding.",
+                "es": "Él es diligente. Es más, su capacidad es sobresaliente.",
+                "fr": "Il est appliqué. De plus, ses compétences sont remarquables.",
+                "pt": "Ele é diligente. Ademais, a sua capacidade é notável.",
+                "kr": "그는 성실하다. 더욱이 능력도 뛰어나다.",
+                "jp": "彼は誠実です。さらに、能力も優れています。",
+                "zh": "他很勤恳。而且，能力也很出众。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "길이 막혔다. 게다가 사고까지 났다.",
+                "en": "Traffic was jammed. Furthermore, an accident even occurred.",
+                "es": "El tráfico estaba atascado. Además, hasta hubo un accidente.",
+                "fr": "La circulation était bloquée. En outre, un accident s'est même produit.",
+                "pt": "O trânsito estava congestionado. Além disso, até houve um acidente.",
+                "kr": "길이 막혔다. 게다가 사고까지 났다.",
+                "jp": "道が混みました。その上、事故まで起きました。",
+                "zh": "路上堵车了。再加上，还发生了事故。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "매출이 줄었다. 더욱이 비용은 늘어났다.",
+                "en": "Sales decreased. Moreover, costs increased.",
+                "es": "Las ventas disminuyeron. Es más, los costes aumentaron.",
+                "fr": "Les ventes ont diminué. De plus, les coûts ont augmenté.",
+                "pt": "As vendas diminuíram. Ademais, os custos aumentaram.",
+                "kr": "매출이 줄었다. 더욱이 비용은 늘어났다.",
+                "jp": "売上が減りました。さらに、費用は増えました。",
+                "zh": "销售额减少了。而且，成本却增加了。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "숙소가 깨끗했다. 게다가 직원들도 친절했다.",
+                "en": "The lodging was clean. Furthermore, the staff were kind too.",
+                "es": "El alojamiento estaba limpio. Además, el personal también fue amable.",
+                "fr": "Le logement était propre. En outre, le personnel était également aimable.",
+                "pt": "O alojamento estava limpo. Além disso, o pessoal também foi simpático.",
+                "kr": "숙소가 깨끗했다. 게다가 직원들도 친절했다.",
+                "jp": "宿はきれいでした。その上、スタッフも親切でした。",
+                "zh": "住宿很干净。再加上，员工也很热情。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "실험 결과가 불확실하다. 더욱이 표본 수도 부족하다.",
+                "en": "The experimental results are uncertain. Moreover, the sample size is also insufficient.",
+                "es": "Los resultados experimentales son inciertos. Es más, el tamaño de la muestra también es insuficiente.",
+                "fr": "Les résultats expérimentaux sont incertains. De plus, la taille de l'échantillon est également insuffisante.",
+                "pt": "Os resultados experimentais são incertos. Ademais, o tamanho da amostra também é insuficiente.",
+                "kr": "실험 결과가 불확실하다. 더욱이 표본 수도 부족하다.",
+                "jp": "実験結果が不確実です。さらに、標本数も不足しています。",
+                "zh": "实验结果不确定。而且，样本数量也不足。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "계약 조건이 불리했다. 게다가 기한도 촉박했다.",
+                "en": "The contract terms were unfavorable. Furthermore, the deadline was also tight.",
+                "es": "Las condiciones del contrato eran desfavorables. Además, el plazo también era ajustado.",
+                "fr": "Les conditions du contrat étaient défavorables. En outre, le délai était également serré.",
+                "pt": "As condições do contrato eram desfavoráveis. Além disso, o prazo também era apertado.",
+                "kr": "계약 조건이 불리했다. 게다가 기한도 촉박했다.",
+                "jp": "契約条件が不利でした。その上、期限も差し迫っていました。",
+                "zh": "合同条件不利。再加上，期限也很紧迫。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "정책 시행 초기부터 반발이 컸다. 더욱이 시간이 갈수록 여론은 더 악화되었다.",
+                "en": "Backlash was strong from the early stage of the policy's implementation. Moreover, as time passed, public opinion worsened further.",
+                "es": "El rechazo fue grande desde el principio de la aplicación de la política. Es más, con el paso del tiempo, la opinión pública empeoró aún más.",
+                "fr": "L'opposition était forte dès le début de la mise en œuvre de la politique. De plus, avec le temps, l'opinion publique s'est encore dégradée.",
+                "pt": "A rejeição foi grande desde o início da aplicação da política. Ademais, com o passar do tempo, a opinião pública piorou ainda mais.",
+                "kr": "정책 시행 초기부터 반발이 컸다. 더욱이 시간이 갈수록 여론은 더 악화되었다.",
+                "jp": "政策施行の初期から反発が大きかったです。さらに、時間が経つにつれ世論はさらに悪化しました。",
+                "zh": "政策实施初期反对声就很大。而且，随着时间推移，舆论进一步恶化了。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 지역은 자원이 풍부하다. 게다가 지리적 위치도 전략적으로 유리하다.",
+                "en": "This region is rich in resources. Furthermore, its geographic location is also strategically advantageous.",
+                "es": "Esta región es rica en recursos. Además, su ubicación geográfica también es estratégicamente ventajosa.",
+                "fr": "Cette région est riche en ressources. En outre, sa position géographique est également stratégiquement avantageuse.",
+                "pt": "Esta região é rica em recursos. Além disso, a sua localização geográfica também é estrategicamente vantajosa.",
+                "kr": "이 지역은 자원이 풍부하다. 게다가 지리적 위치도 전략적으로 유리하다.",
+                "jp": "この地域は資源が豊富です。その上、地理的位置も戦略的に有利です。",
+                "zh": "这个地区资源丰富。再加上，地理位置在战略上也很有优势。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "연구 설계에 결함이 있었다. 더욱이 자료 수집 방식도 일관되지 않았다.",
+                "en": "There were flaws in the research design. Moreover, the data collection method was also inconsistent.",
+                "es": "Hubo fallos en el diseño de la investigación. Es más, el método de recolección de datos tampoco fue coherente.",
+                "fr": "Il y avait des failles dans la conception de la recherche. De plus, la méthode de collecte des données manquait également de cohérence.",
+                "pt": "Houve falhas na conceção da investigação. Ademais, o método de recolha de dados também não foi consistente.",
+                "kr": "연구 설계에 결함이 있었다. 더욱이 자료 수집 방식도 일관되지 않았다.",
+                "jp": "研究設計に欠陥がありました。さらに、資料収集の方式も一貫していませんでした。",
+                "zh": "研究设计存在缺陷。而且，数据收集方式也不一致。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "협상은 처음부터 난항을 겪었다. 게다가 양측의 입장 차이도 좁혀지지 않았다.",
+                "en": "The negotiations struggled from the very beginning. Furthermore, the gap between both sides' positions did not narrow either.",
+                "es": "Las negociaciones tuvieron dificultades desde el principio. Además, la diferencia de posturas entre ambas partes tampoco se redujo.",
+                "fr": "Les négociations ont été difficiles dès le départ. En outre, l'écart entre les positions des deux parties ne s'est pas non plus réduit.",
+                "pt": "As negociações enfrentaram dificuldades desde o início. Além disso, a diferença de posições entre as duas partes também não diminuiu.",
+                "kr": "협상은 처음부터 난항을 겪었다. 게다가 양측의 입장 차이도 좁혀지지 않았다.",
+                "jp": "交渉は初めから難航しました。その上、両側の立場の差も縮まりませんでした。",
+                "zh": "谈判从一开始就陷入僵局。再加上，双方立场的差距也没有缩小。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

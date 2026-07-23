@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A2_KO_UNTIL",
+        "level": "a2",
+        "id": "046"
+    },
+    "title": {
+        "target": "N까지 / V-까지",
+        "en": "N까지 / V-까지 (Until N / Until V)",
+        "es": "N까지 / V-까지 (Hasta N / Hasta V)",
+        "fr": "N까지 / V-까지 (Jusqu'à N / Jusqu'à V)",
+        "pt": "N까지 / V-까지 (Até N / Até V)",
+        "kr": "N까지 / V-까지",
+        "jp": "～まで",
+        "zh": "……为止/到……"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "까지는 명사나 동사 뒤에 붙어 어떤 시점이나 범위의 끝을 나타내는 조사이다.",
+                "en": "까지 is a particle attached after a noun or verb to mark the endpoint of a time or range.",
+                "es": "까지 es una partícula que se añade tras un sustantivo o verbo para marcar el final de un tiempo o rango.",
+                "fr": "까지 est une particule qui s'ajoute après un nom ou un verbe pour marquer la fin d'un temps ou d'une étendue.",
+                "pt": "까지 é uma partícula que se junta a um substantivo ou verbo para marcar o fim de um tempo ou intervalo.",
+                "kr": "까지는 명사나 동사 뒤에 붙어 어떤 시점이나 범위의 끝을 나타내는 조사이다.",
+                "jp": "까지は名詞や動詞の後に付いて、ある時点や範囲の終わりを表す助詞である。",
+                "zh": "까지是接在名词或动词后面，表示某个时间点或范围终点的助词。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "명사 뒤에서는 형태 변화 없이 그대로 붙고 동사 뒤에서는 관형형 없이 어간이나 종결형에 직접 결합한다.",
+                "en": "After a noun it attaches without any change, and after a verb it combines directly with the stem or a sentence-final form, without a modifier ending.",
+                "es": "Tras un sustantivo se añade sin cambios, y tras un verbo se combina directamente con la raíz o con una forma final, sin terminación de modificador.",
+                "fr": "Après un nom, elle s'ajoute sans changement, et après un verbe, elle se combine directement avec le radical ou une forme finale, sans terminaison adjectivale.",
+                "pt": "Depois de um substantivo junta-se sem alterações, e depois de um verbo combina-se diretamente com o radical ou uma forma final, sem terminação modificadora.",
+                "kr": "명사 뒤에서는 형태 변화 없이 그대로 붙고 동사 뒤에서는 관형형 없이 어간이나 종결형에 직접 결합한다.",
+                "jp": "名詞の後では形の変化なくそのまま付き、動詞の後では冠形形なしで語幹や終結形に直接結合する。",
+                "zh": "接在名词后面时形式不变，直接加上；接在动词后面时不用修饰形，而是直接与词干或终结形结合。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "출발점을 함께 밝힐 때는 부터와 짝을 이루며 도착점만 강조할 때는 단독으로 쓴다.",
+                "en": "When the starting point is also stated, it pairs with 부터, and when only the endpoint is emphasized, it's used alone.",
+                "es": "Cuando también se indica el punto de partida, se combina con 부터, y cuando solo se enfatiza el punto final, se usa sola.",
+                "fr": "Lorsque le point de départ est aussi indiqué, elle se combine avec 부터, et lorsqu'on insiste seulement sur le point final, elle s'emploie seule.",
+                "pt": "Quando o ponto de partida também é indicado, combina-se com 부터, e quando só se realça o ponto final, usa-se sozinha.",
+                "kr": "출발점을 함께 밝힐 때는 부터와 짝을 이루며 도착점만 강조할 때는 단독으로 쓴다.",
+                "jp": "出発点も一緒に示すときは부터と対をなし、到達点だけを強調するときは単独で使う。",
+                "zh": "同时说明出发点时，与부터搭配使用；只强调终点时，则单独使用。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "에는 특정 시점 하나를 가리키지만 까지는 그 시점에 도달하는 지속된 범위를 가리킨다는 점에서 다르다.",
+                "en": "It differs from 에, which points to a single specific moment, in that 까지 indicates a continuous range leading up to that point.",
+                "es": "Se diferencia de 에, que señala un único momento concreto, en que 까지 indica un rango continuo hasta llegar a ese punto.",
+                "fr": "Elle diffère de 에, qui désigne un moment précis unique, en ce que 까지 indique une étendue continue menant jusqu'à ce point.",
+                "pt": "Diferencia-se de 에, que assinala um único momento específico, pois 까지 indica um intervalo contínuo até chegar a esse ponto.",
+                "kr": "에는 특정 시점 하나를 가리키지만 까지는 그 시점에 도달하는 지속된 범위를 가리킨다는 점에서 다르다.",
+                "jp": "에は特定の一つの時点を指すが、까지はその時点に達するまでの継続した範囲を指すという点で異なる。",
+                "zh": "与에不同，에指的是某一个特定的时间点，而까지指的是到达那个时间点为止的持续范围。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "장소 명사와 결합하면 도착 지점을, 정도를 나타내는 표현과 결합하면 극단적인 범위를 뜻하게 된다.",
+                "en": "When combined with a place noun it means a destination, and when combined with an expression of degree it means an extreme range.",
+                "es": "Al combinarse con un sustantivo de lugar significa un destino, y al combinarse con una expresión de grado significa un rango extremo.",
+                "fr": "Combinée à un nom de lieu, elle signifie une destination, et combinée à une expression de degré, elle signifie une étendue extrême.",
+                "pt": "Ao combinar-se com um substantivo de lugar significa um destino, e ao combinar-se com uma expressão de grau significa um intervalo extremo.",
+                "kr": "장소 명사와 결합하면 도착 지점을, 정도를 나타내는 표현과 결합하면 극단적인 범위를 뜻하게 된다.",
+                "jp": "場所を表す名詞と結合すると到達地点を、程度を表す表現と結合すると極端な範囲を意味するようになる。",
+                "zh": "与表示地点的名词结合时表示到达地点，与表示程度的表达结合时则表示极端的范围。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 아홉 시까지 회사에 가요.",
+                "en": "I go to the office by nine o'clock.",
+                "es": "Voy a la oficina hasta las nueve.",
+                "fr": "Je vais au bureau jusqu'à neuf heures.",
+                "pt": "Vou ao escritório até às nove horas.",
+                "kr": "저는 아홉 시까지 회사에 가요.",
+                "jp": "私は九時まで会社に行きます。",
+                "zh": "我到九点为止去公司。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 표는 다음 주까지 유효해요.",
+                "en": "This ticket is valid until next week.",
+                "es": "Esta entrada es válida hasta la próxima semana.",
+                "fr": "Ce billet est valable jusqu'à la semaine prochaine.",
+                "pt": "Este bilhete é válido até à próxima semana.",
+                "kr": "이 표는 다음 주까지 유효해요.",
+                "jp": "このチケットは来週まで有効です。",
+                "zh": "这张票到下周为止有效。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "여기에서 학교까지 멀지 않아요.",
+                "en": "It's not far from here to the school.",
+                "es": "No queda lejos de aquí hasta el colegio.",
+                "fr": "Ce n'est pas loin d'ici jusqu'à l'école.",
+                "pt": "Não fica longe daqui até à escola.",
+                "kr": "여기에서 학교까지 멀지 않아요.",
+                "jp": "ここから学校まで遠くありません。",
+                "zh": "从这里到学校不远。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 밤늦게까지 공부해요.",
+                "en": "I study until late at night.",
+                "es": "Estudio hasta muy tarde en la noche.",
+                "fr": "J'étudie jusque tard dans la nuit.",
+                "pt": "Estudo até tarde da noite.",
+                "kr": "저는 밤늦게까지 공부해요.",
+                "jp": "私は夜遅くまで勉強します。",
+                "zh": "我一直学习到深夜。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "월요일부터 금요일까지 학교에 가요.",
+                "en": "I go to school from Monday to Friday.",
+                "es": "Voy al colegio de lunes a viernes.",
+                "fr": "Je vais à l'école du lundi au vendredi.",
+                "pt": "Vou à escola de segunda a sexta-feira.",
+                "kr": "월요일부터 금요일까지 학교에 가요.",
+                "jp": "月曜日から金曜日まで学校に行きます。",
+                "zh": "从星期一到星期五去学校。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "손님이 도착할 때까지 기다렸어요.",
+                "en": "I waited until the guest arrived.",
+                "es": "Esperé hasta que llegara el invitado.",
+                "fr": "J'ai attendu jusqu'à l'arrivée de l'invité.",
+                "pt": "Esperei até o convidado chegar.",
+                "kr": "손님이 도착할 때까지 기다렸어요.",
+                "jp": "お客様が到着するまで待ちました。",
+                "zh": "一直等到客人到达为止。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "일이 끝날 때까지 집에 못 가요.",
+                "en": "I can't go home until the work is finished.",
+                "es": "No puedo ir a casa hasta que termine el trabajo.",
+                "fr": "Je ne peux pas rentrer chez moi tant que le travail n'est pas fini.",
+                "pt": "Não posso ir para casa até o trabalho acabar.",
+                "kr": "일이 끝날 때까지 집에 못 가요.",
+                "jp": "仕事が終わるまで家に帰れません。",
+                "zh": "工作结束之前不能回家。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "봄부터 여름까지 꽃이 많이 펴요.",
+                "en": "Many flowers bloom from spring to summer.",
+                "es": "Florecen muchas flores desde la primavera hasta el verano.",
+                "fr": "Beaucoup de fleurs éclosent du printemps à l'été.",
+                "pt": "Florescem muitas flores da primavera até ao verão.",
+                "kr": "봄부터 여름까지 꽃이 많이 펴요.",
+                "jp": "春から夏まで花がたくさん咲きます。",
+                "zh": "从春天到夏天开很多花。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그는 화가 나서 소리까지 질렀어요.",
+                "en": "He was so angry that he even shouted.",
+                "es": "Estaba tan enfadado que hasta gritó.",
+                "fr": "Il était tellement en colère qu'il en est même venu à crier.",
+                "pt": "Ficou tão zangado que até gritou.",
+                "kr": "그는 화가 나서 소리까지 질렀어요.",
+                "jp": "彼は怒って大声まで出しました。",
+                "zh": "他生气到甚至大声喊了出来。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "아이까지 그 소식을 알고 있었어요.",
+                "en": "Even the child knew about the news.",
+                "es": "Hasta el niño sabía esa noticia.",
+                "fr": "Même l'enfant était au courant de cette nouvelle.",
+                "pt": "Até a criança sabia dessa notícia.",
+                "kr": "아이까지 그 소식을 알고 있었어요.",
+                "jp": "子供までその知らせを知っていました。",
+                "zh": "连孩子都知道那个消息。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 정도까지 힘든 줄 몰랐어요.",
+                "en": "I didn't know it would be this hard.",
+                "es": "No sabía que sería tan difícil hasta este punto.",
+                "fr": "Je ne savais pas que ce serait aussi difficile à ce point.",
+                "pt": "Não sabia que seria tão difícil até este ponto.",
+                "kr": "이 정도까지 힘든 줄 몰랐어요.",
+                "jp": "これほどまで大変だとは知りませんでした。",
+                "zh": "没想到会难到这种程度。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그녀는 눈물까지 흘리며 이야기했어요.",
+                "en": "She spoke while even shedding tears.",
+                "es": "Ella habló mientras hasta derramaba lágrimas.",
+                "fr": "Elle a parlé en versant même des larmes.",
+                "pt": "Ela falou até deixando cair lágrimas.",
+                "kr": "그녀는 눈물까지 흘리며 이야기했어요.",
+                "jp": "彼女は涙まで流しながら話しました。",
+                "zh": "她一边说话甚至流下了眼泪。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

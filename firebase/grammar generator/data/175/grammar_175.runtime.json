@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "C1_KO_DISCOURSE_MARKER",
+        "level": "c1",
+        "id": "175"
+    },
+    "title": {
+        "target": "한편 / 반면에 / 즉",
+        "en": "Meanwhile / On the Other Hand / That Is",
+        "es": "Por otra parte / En cambio / Es decir",
+        "fr": "D'autre part / En revanche / C'est-à-dire",
+        "pt": "Por outro lado / Em contrapartida / Ou seja",
+        "kr": "한편 / 반면에 / 즉",
+        "jp": "一方・その反面・すなわち",
+        "zh": "另一方面・相反・也就是说"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "한편은 다른 측면의 이야기를 덧붙일 때, 반면에는 앞 내용과 대립되는 사실을 제시할 때, 즉은 앞 내용을 다른 말로 바꾸어 설명할 때 쓰는 담화 표지이다.",
+                "en": "한편 is a discourse marker used to add a story from another angle, 반면에 is used to present a fact that contrasts with what came before, and 즉 is used to rephrase the preceding content in other words.",
+                "es": "한편 es un marcador discursivo usado para añadir información desde otro ángulo, 반면에 se usa para presentar un hecho que contrasta con lo anterior, y 즉 se usa para reformular el contenido anterior con otras palabras.",
+                "fr": "한편 est un marqueur de discours utilisé pour ajouter un propos sous un autre angle, 반면에 sert à présenter un fait qui s'oppose à ce qui précède, et 즉 sert à reformuler le contenu précédent en d'autres termes.",
+                "pt": "한편 é um marcador discursivo usado para acrescentar um assunto sob outro ângulo, 반면에 serve para apresentar um facto que contrasta com o que veio antes, e 즉 serve para reformular o conteúdo anterior por outras palavras.",
+                "kr": "한편은 다른 측면의 이야기를 덧붙일 때, 반면에는 앞 내용과 대립되는 사실을 제시할 때, 즉은 앞 내용을 다른 말로 바꾸어 설명할 때 쓰는 담화 표지이다.",
+                "jp": "「한편」は別の側面の話を付け加えるとき、「반면에」は前の内容と対立する事実を提示するとき、「즉」は前の内容を別の言葉に言い換えて説明するときに使う談話標識である。",
+                "zh": "「한편」用于补充另一方面的内容，「반면에」用于呈现与前文对立的事实，「즉」用于用别的话来重新说明前文内容，三者都是话语标记。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "세 표지 모두 독립된 두 문장 사이에 놓여 문장과 문장의 논리적 관계를 명시하는데, 한편은 병렬, 반면에는 대조, 즉은 재진술의 방향으로 흐름을 이끈다.",
+                "en": "All three markers are placed between two independent sentences to make the logical relation explicit, guiding the flow in the direction of parallel addition for 한편, contrast for 반면에, and restatement for 즉.",
+                "es": "Los tres marcadores se colocan entre dos oraciones independientes para hacer explícita la relación lógica, guiando el flujo hacia la adición paralela en el caso de 한편, el contraste en 반면에, y la reformulación en 즉.",
+                "fr": "Les trois marqueurs se placent entre deux phrases indépendantes pour expliciter la relation logique, orientant le déroulement vers l'ajout parallèle pour 한편, le contraste pour 반면에, et la reformulation pour 즉.",
+                "pt": "Os três marcadores colocam-se entre duas frases independentes para explicitar a relação lógica, orientando o fluxo para o acréscimo paralelo em 한편, o contraste em 반면에, e a reformulação em 즉.",
+                "kr": "세 표지 모두 독립된 두 문장 사이에 놓여 문장과 문장의 논리적 관계를 명시하는데, 한편은 병렬, 반면에는 대조, 즉은 재진술의 방향으로 흐름을 이끈다.",
+                "jp": "三つの標識はいずれも独立した二つの文の間に置かれて文と文の論理的関係を明示するが、「한편」は並列、「반면에」は対照、「즉」は再陳述の方向へ流れを導く。",
+                "zh": "这三个标记都置于两个独立句子之间，用来明示句与句之间的逻辑关系：「한편」引导并列方向，「반면에」引导对照方向，「즉」引导重述方向。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "세 표지 모두 문장 첫머리에 놓이고 뒤에 쉼표가 오는 경우가 많으며, 즉 뒤에는 앞 내용과 동일한 대상을 가리키는 표현만 올 수 있고 새로운 정보는 올 수 없다.",
+                "en": "All three markers are placed at the start of a sentence and are often followed by a comma, and only an expression referring to the same referent as the preceding content may follow 즉, never new information.",
+                "es": "Los tres marcadores se colocan al inicio de la oración y suelen ir seguidos de una coma, y después de 즉 solo puede aparecer una expresión que se refiera al mismo referente del contenido anterior, nunca información nueva.",
+                "fr": "Les trois marqueurs se placent en tête de phrase et sont souvent suivis d'une virgule, et après 즉 ne peut apparaître qu'une expression désignant le même référent que le contenu précédent, jamais une information nouvelle.",
+                "pt": "Os três marcadores colocam-se no início da frase e são frequentemente seguidos de vírgula, e depois de 즉 só pode surgir uma expressão que se refira ao mesmo referente do conteúdo anterior, nunca informação nova.",
+                "kr": "세 표지 모두 문장 첫머리에 놓이고 뒤에 쉼표가 오는 경우가 많으며, 즉 뒤에는 앞 내용과 동일한 대상을 가리키는 표현만 올 수 있고 새로운 정보는 올 수 없다.",
+                "jp": "三つの標識はいずれも文の冒頭に置かれ、後ろに読点が来る場合が多く、「즉」の後には前の内容と同一の対象を指す表現だけが来ることができ、新しい情報は来ることができない。",
+                "zh": "这三个标记通常都置于句首，后面常接逗号；「즉」后面只能出现指代前文同一对象的表达，不能出现新信息。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "종결어미에 결합하는 -(으)ㄴ 반면에와 달리 반면에는 독립된 부사로서 문장과 문장 사이에서만 쓰이며, 한편은 화제 전환의 뉘앙스가 강해 반면에보다 대립성이 약하다.",
+                "en": "Unlike -(으)ㄴ 반면에, which attaches to a sentence-final ending, 반면에 as an independent adverb is used only between two separate sentences, and 한편 carries a stronger nuance of topic shift, making its sense of opposition weaker than that of 반면에.",
+                "es": "A diferencia de -(으)ㄴ 반면에, que se une a una terminación final de oración, 반면에 como adverbio independiente se usa solo entre dos oraciones separadas, y 한편 conlleva un matiz más fuerte de cambio de tema, por lo que su oposición es más débil que la de 반면에.",
+                "fr": "Contrairement à -(으)ㄴ 반면에, qui se rattache à une terminaison finale de phrase, 반면에 en tant qu'adverbe autonome ne s'emploie qu'entre deux phrases distinctes, et 한편 porte une nuance plus marquée de changement de sujet, son opposition étant donc plus faible que celle de 반면에.",
+                "pt": "Ao contrário de -(으)ㄴ 반면에, que se liga a uma terminação final de frase, 반면에 como advérbio independente só se usa entre duas frases distintas, e 한편 carrega um matiz mais forte de mudança de tópico, sendo a sua oposição mais fraca do que a de 반면에.",
+                "kr": "종결어미에 결합하는 -(으)ㄴ 반면에와 달리 반면에는 독립된 부사로서 문장과 문장 사이에서만 쓰이며, 한편은 화제 전환의 뉘앙스가 강해 반면에보다 대립성이 약하다.",
+                "jp": "終結語尾に結合する「-(으)ㄴ 반면에」とは異なり、「반면에」は独立した副詞として文と文の間だけで使われ、「한편」は話題転換のニュアンスが強く「반면에」より対立性が弱い。",
+                "zh": "与接在句末词尾后的「-(으)ㄴ 반면에」不同，「반면에」作为独立副词只用于两个句子之间；「한편」的话题转换意味更强，其对立性比「반면에」弱。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "즉을 새로운 정보를 도입할 때 잘못 쓰는 실수가 흔하므로 앞뒤 내용이 동일한 지시 대상인지 반드시 확인해야 하며, 세 표지를 한 문단에 연이어 쓰면 논리 흐름이 산만해지므로 절제가 필요하다.",
+                "en": "A common mistake is misusing 즉 to introduce new information, so it must always be confirmed that the content before and after refers to the same thing, and using all three markers consecutively in one paragraph scatters the logical flow, so restraint is needed.",
+                "es": "Un error común es usar mal 즉 para introducir información nueva, por lo que siempre hay que confirmar que el contenido anterior y posterior se refiere a lo mismo, y usar los tres marcadores seguidos en un mismo párrafo dispersa el flujo lógico, por lo que se requiere moderación.",
+                "fr": "Une erreur courante consiste à mal employer 즉 pour introduire une information nouvelle, il faut donc toujours vérifier que le contenu avant et après renvoie au même référent, et l'emploi consécutif des trois marqueurs dans un même paragraphe disperse le fil logique, d'où la nécessité de modération.",
+                "pt": "Um erro comum é usar mal 즉 para introduzir informação nova, devendo confirmar-se sempre que o conteúdo anterior e posterior se refere à mesma coisa, e o uso consecutivo dos três marcadores num mesmo parágrafo dispersa o fluxo lógico, sendo necessária moderação.",
+                "kr": "즉을 새로운 정보를 도입할 때 잘못 쓰는 실수가 흔하므로 앞뒤 내용이 동일한 지시 대상인지 반드시 확인해야 하며, 세 표지를 한 문단에 연이어 쓰면 논리 흐름이 산만해지므로 절제가 필요하다.",
+                "jp": "「즉」を新しい情報を導入するときに誤って使う間違いがよく見られるため、前後の内容が同一の指示対象であるかを必ず確認しなければならず、三つの標識を一つの段落で連続して使うと論理の流れが散漫になるため節制が必要である。",
+                "zh": "常见的错误是把「즉」误用来引入新信息，因此必须确认前后内容是否指代同一对象；如果在一段中连续使用这三个标记，会使逻辑脉络变得散乱，因此需要节制使用。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "형은 회사에 다닌다. 한편 동생은 유학을 준비한다.",
+                "en": "The older brother works at a company. Meanwhile, the younger one is preparing to study abroad.",
+                "es": "El hermano mayor trabaja en una empresa. Por otra parte, el menor se prepara para estudiar en el extranjero.",
+                "fr": "Le frère aîné travaille dans une entreprise. D'autre part, le cadet se prépare à étudier à l'étranger.",
+                "pt": "O irmão mais velho trabalha numa empresa. Por outro lado, o mais novo prepara-se para estudar no estrangeiro.",
+                "kr": "형은 회사에 다닌다. 한편 동생은 유학을 준비한다.",
+                "jp": "兄は会社に勤めています。一方、弟は留学の準備をしています。",
+                "zh": "哥哥在公司上班。另一方面，弟弟正在准备出国留学。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "찬성 의견이 많았다. 반면에 반대하는 목소리도 적지 않았다.",
+                "en": "There were many opinions in favor. In contrast, there were also quite a few voices of opposition.",
+                "es": "Hubo muchas opiniones a favor. En cambio, también hubo bastantes voces en contra.",
+                "fr": "De nombreux avis étaient favorables. En revanche, les voix opposées n'étaient pas rares non plus.",
+                "pt": "Houve muitas opiniões a favor. Em contrapartida, também houve bastantes vozes contra.",
+                "kr": "찬성 의견이 많았다. 반면에 반대하는 목소리도 적지 않았다.",
+                "jp": "賛成意見が多かったです。その反面、反対する声も少なくありませんでした。",
+                "zh": "赞成的意见很多。相反，反对的声音也不少。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "매출이 두 배로 늘었다. 즉 회사의 실적이 크게 개선되었다.",
+                "en": "Sales doubled. That is, the company's performance improved significantly.",
+                "es": "Las ventas se duplicaron. Es decir, el rendimiento de la empresa mejoró notablemente.",
+                "fr": "Les ventes ont doublé. C'est-à-dire que les résultats de l'entreprise se sont nettement améliorés.",
+                "pt": "As vendas duplicaram. Ou seja, o desempenho da empresa melhorou significativamente.",
+                "kr": "매출이 두 배로 늘었다. 즉 회사의 실적이 크게 개선되었다.",
+                "jp": "売上が二倍に増えました。すなわち、会社の業績が大きく改善されたのです。",
+                "zh": "销售额翻了一倍。也就是说，公司的业绩得到了大幅改善。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "아버지는 요리를 좋아한다. 한편 어머니는 정원 가꾸기를 즐긴다.",
+                "en": "Father enjoys cooking. Meanwhile, mother enjoys gardening.",
+                "es": "Al padre le gusta cocinar. Por otra parte, la madre disfruta de la jardinería.",
+                "fr": "Le père aime cuisiner. D'autre part, la mère aime jardiner.",
+                "pt": "O pai gosta de cozinhar. Por outro lado, a mãe gosta de jardinagem.",
+                "kr": "아버지는 요리를 좋아한다. 한편 어머니는 정원 가꾸기를 즐긴다.",
+                "jp": "父は料理が好きです。一方、母は庭いじりを楽しんでいます。",
+                "zh": "爸爸喜欢做饭。另一方面，妈妈喜欢打理花园。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "도시 인구는 계속 늘고 있다. 반면에 농촌 인구는 해마다 줄고 있다.",
+                "en": "The urban population keeps growing. In contrast, the rural population keeps shrinking every year.",
+                "es": "La población urbana sigue creciendo. En cambio, la población rural disminuye cada año.",
+                "fr": "La population urbaine continue de croître. En revanche, la population rurale diminue chaque année.",
+                "pt": "A população urbana continua a crescer. Em contrapartida, a população rural diminui a cada ano.",
+                "kr": "도시 인구는 계속 늘고 있다. 반면에 농촌 인구는 해마다 줄고 있다.",
+                "jp": "都市の人口は増え続けています。その反面、農村の人口は年々減っています。",
+                "zh": "城市人口在持续增长。相反，农村人口逐年减少。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그는 회의에 참석하지 않았다. 즉 결정 과정에서 배제된 것이다.",
+                "en": "He did not attend the meeting. That is, he was excluded from the decision-making process.",
+                "es": "No asistió a la reunión. Es decir, quedó excluido del proceso de decisión.",
+                "fr": "Il n'a pas assisté à la réunion. C'est-à-dire qu'il a été exclu du processus de décision.",
+                "pt": "Ele não compareceu à reunião. Ou seja, foi excluído do processo de decisão.",
+                "kr": "그는 회의에 참석하지 않았다. 즉 결정 과정에서 배제된 것이다.",
+                "jp": "彼は会議に出席しませんでした。すなわち、意思決定の過程から排除されたのです。",
+                "zh": "他没有出席会议。也就是说，他被排除在了决策过程之外。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "정부는 세금을 인상했다. 한편 기업에는 보조금을 늘렸다.",
+                "en": "The government raised taxes. Meanwhile, it increased subsidies for businesses.",
+                "es": "El gobierno subió los impuestos. Por otra parte, aumentó los subsidios a las empresas.",
+                "fr": "Le gouvernement a augmenté les impôts. D'autre part, il a accru les subventions aux entreprises.",
+                "pt": "O governo aumentou os impostos. Por outro lado, aumentou os subsídios às empresas.",
+                "kr": "정부는 세금을 인상했다. 한편 기업에는 보조금을 늘렸다.",
+                "jp": "政府は税金を引き上げました。一方、企業への補助金は増やしました。",
+                "zh": "政府提高了税收。另一方面，也增加了对企业的补贴。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "실험은 성공적이었다. 반면에 비용은 예상보다 훨씬 많이 들었다.",
+                "en": "The experiment was successful. In contrast, the cost was far higher than expected.",
+                "es": "El experimento fue exitoso. En cambio, el costo fue mucho mayor de lo previsto.",
+                "fr": "L'expérience a été un succès. En revanche, le coût a été bien plus élevé que prévu.",
+                "pt": "A experiência foi bem-sucedida. Em contrapartida, o custo foi muito superior ao previsto.",
+                "kr": "실험은 성공적이었다. 반면에 비용은 예상보다 훨씬 많이 들었다.",
+                "jp": "実験は成功でした。その反面、費用は予想よりはるかに多くかかりました。",
+                "zh": "实验很成功。相反，费用远远超出了预期。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "제조업은 자동화가 빠르게 진행되고 있다. 한편 서비스업에서는 인력 수요가 오히려 늘고 있다.",
+                "en": "Automation is progressing rapidly in manufacturing. Meanwhile, in the service sector demand for labor is actually increasing.",
+                "es": "La automatización avanza rápidamente en la industria manufacturera. Por otra parte, en el sector servicios la demanda de mano de obra está aumentando.",
+                "fr": "L'automatisation progresse rapidement dans l'industrie manufacturière. D'autre part, dans le secteur des services, la demande de main-d'œuvre augmente au contraire.",
+                "pt": "A automação avança rapidamente na indústria transformadora. Por outro lado, no setor de serviços a procura de mão de obra está, na verdade, a aumentar.",
+                "kr": "제조업은 자동화가 빠르게 진행되고 있다. 한편 서비스업에서는 인력 수요가 오히려 늘고 있다.",
+                "jp": "製造業では自動化が急速に進んでいます。一方、サービス業ではむしろ人材需要が増えています。",
+                "zh": "制造业的自动化正在快速推进。另一方面，服务业的人力需求反而在增加。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "초기 투자 비용은 상당히 높다. 반면에 장기적으로는 운영 비용이 크게 절감된다.",
+                "en": "The initial investment cost is quite high. In contrast, operating costs are significantly reduced in the long run.",
+                "es": "El coste de inversión inicial es bastante alto. En cambio, a largo plazo los costes operativos se reducen considerablemente.",
+                "fr": "Le coût d'investissement initial est assez élevé. En revanche, à long terme, les coûts d'exploitation sont considérablement réduits.",
+                "pt": "O custo de investimento inicial é bastante elevado. Em contrapartida, a longo prazo os custos operacionais são consideravelmente reduzidos.",
+                "kr": "초기 투자 비용은 상당히 높다. 반면에 장기적으로는 운영 비용이 크게 절감된다.",
+                "jp": "初期投資費用はかなり高いです。その反面、長期的には運営費用が大きく削減されます。",
+                "zh": "初期投资成本相当高。相反，从长期来看运营成本会大幅降低。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 조약은 양국 간 관세를 전면 철폐하기로 했다. 즉 두 나라 사이의 무역 장벽이 사실상 사라지는 것이다.",
+                "en": "This treaty decided to abolish tariffs between the two countries entirely. That is, the trade barrier between the two nations effectively disappears.",
+                "es": "Este tratado decidió abolir por completo los aranceles entre ambos países. Es decir, la barrera comercial entre las dos naciones prácticamente desaparece.",
+                "fr": "Ce traité a décidé de supprimer entièrement les droits de douane entre les deux pays. C'est-à-dire que la barrière commerciale entre les deux nations disparaît de fait.",
+                "pt": "Este tratado decidiu abolir totalmente as tarifas entre os dois países. Ou seja, a barreira comercial entre as duas nações desaparece, na prática.",
+                "kr": "이 조약은 양국 간 관세를 전면 철폐하기로 했다. 즉 두 나라 사이의 무역 장벽이 사실상 사라지는 것이다.",
+                "jp": "この条約は両国間の関税を全面的に撤廃することにしました。すなわち、両国間の貿易障壁が事実上なくなるのです。",
+                "zh": "该条约决定全面废除两国间的关税。也就是说，两国之间的贸易壁垒实际上消失了。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "대기업들은 해외 진출을 가속화하고 있다. 한편 중소기업들은 내수 시장 강화에 주력하고 있다.",
+                "en": "Large corporations are accelerating their expansion abroad. Meanwhile, small and mid-sized businesses are focusing on strengthening the domestic market.",
+                "es": "Las grandes empresas están acelerando su expansión al extranjero. Por otra parte, las pequeñas y medianas empresas se centran en fortalecer el mercado interno.",
+                "fr": "Les grandes entreprises accélèrent leur expansion à l'étranger. D'autre part, les PME se concentrent sur le renforcement du marché intérieur.",
+                "pt": "As grandes empresas estão a acelerar a expansão para o exterior. Por outro lado, as pequenas e médias empresas concentram-se em reforçar o mercado interno.",
+                "kr": "대기업들은 해외 진출을 가속화하고 있다. 한편 중소기업들은 내수 시장 강화에 주력하고 있다.",
+                "jp": "大企業は海外進出を加速させています。一方、中小企業は国内市場の強化に力を入れています。",
+                "zh": "大企业正在加速拓展海外市场。另一方面，中小企业则致力于加强国内市场。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

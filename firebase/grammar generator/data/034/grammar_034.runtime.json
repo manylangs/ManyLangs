@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A1_KO_CAN",
+        "level": "a1",
+        "id": "034"
+    },
+    "title": {
+        "target": "V-(으)ㄹ 수 있다 / 없다",
+        "en": "Can / Cannot (V-(으)ㄹ 수 있다/없다)",
+        "es": "Poder / No poder (V-(으)ㄹ 수 있다/없다)",
+        "fr": "Pouvoir / Ne pas pouvoir (V-(으)ㄹ 수 있다/없다)",
+        "pt": "Poder / Não poder (V-(으)ㄹ 수 있다/없다)",
+        "kr": "V-(으)ㄹ 수 있다 / 없다",
+        "jp": "V-(으)ㄹ 수 있다 / 없다(〜できる/できない)",
+        "zh": "V-(으)ㄹ 수 있다 / 없다(能/不能)"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사 뒤에 붙어 어떤 행동을 할 능력이나 가능성이 있는지 없는지를 나타낸다. 동사 어간에 받침이 있으면 -을 수 있다, 받침이 없거나 ㄹ받침이면 -ㄹ 수 있다 형태로 결합한다.",
+                "en": "This pattern attaches to a verb to show whether there is ability or possibility to do an action. If the verb stem ends in a consonant, -을 수 있다 is used; if it ends in a vowel or ㄹ, -ㄹ 수 있다 is used.",
+                "es": "Esta estructura se añade a un verbo para indicar si existe capacidad o posibilidad de realizar una acción. Si la raíz del verbo termina en consonante, se usa -을 수 있다; si termina en vocal o en ㄹ, se usa -ㄹ 수 있다.",
+                "fr": "Cette structure s'ajoute à un verbe pour indiquer s'il existe une capacité ou une possibilité de réaliser une action. Si le radical du verbe se termine par une consonne, on utilise -을 수 있다 ; s'il se termine par une voyelle ou par ㄹ, on utilise -ㄹ 수 있다.",
+                "pt": "Esta estrutura junta-se a um verbo para indicar se existe capacidade ou possibilidade de realizar uma ação. Se o radical do verbo terminar em consoante, usa-se -을 수 있다; se terminar em vogal ou em ㄹ, usa-se -ㄹ 수 있다.",
+                "kr": "동사 뒤에 붙어 어떤 행동을 할 능력이나 가능성이 있는지 없는지를 나타낸다. 동사 어간에 받침이 있으면 -을 수 있다, 받침이 없거나 ㄹ받침이면 -ㄹ 수 있다 형태로 결합한다.",
+                "jp": "動詞の後ろに付いて、ある行動をする能力や可能性があるかないかを表す。動詞の語幹にパッチムがあれば-을 수 있다、パッチムがないかㄹパッチムであれば-ㄹ 수 있다の形で結合する。",
+                "zh": "接在动词后面，表示是否有能力或可能性去做某个动作。动词词干有收音时用-을 수 있다，无收音或收音为ㄹ时用-ㄹ 수 있다的形式。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사 어간에 명사형 \"수\"가 붙어 가능성을 명사처럼 표현한 뒤 \"있다\"나 \"없다\"를 이어 붙인다. 긍정은 있다, 부정은 없다로 나타나며 어순은 [동사 어간+ㄹ/을 수]+[있다/없다] 순서를 따른다.",
+                "en": "The noun-like form \"수\" attaches to the verb stem to express possibility as a noun, followed by either \"있다\" or \"없다\". Affirmative uses 있다 and negative uses 없다, following the order [verb stem + ㄹ/을 수] + [있다/없다].",
+                "es": "La forma nominal \"수\" se une a la raíz del verbo para expresar la posibilidad como un sustantivo, seguida de \"있다\" o \"없다\". La forma afirmativa usa 있다 y la negativa usa 없다, siguiendo el orden [raíz del verbo + ㄹ/을 수] + [있다/없다].",
+                "fr": "La forme nominale \"수\" s'ajoute au radical du verbe pour exprimer la possibilité comme un nom, suivie de \"있다\" ou de \"없다\". La forme affirmative utilise 있다 et la forme négative utilise 없다, selon l'ordre [radical du verbe + ㄹ/을 수] + [있다/없다].",
+                "pt": "A forma nominal \"수\" junta-se ao radical do verbo para exprimir a possibilidade como um substantivo, seguida de \"있다\" ou \"없다\". A forma afirmativa usa 있다 e a negativa usa 없다, seguindo a ordem [radical do verbo + ㄹ/을 수] + [있다/없다].",
+                "kr": "동사 어간에 명사형 \"수\"가 붙어 가능성을 명사처럼 표현한 뒤 \"있다\"나 \"없다\"를 이어 붙인다. 긍정은 있다, 부정은 없다로 나타나며 어순은 [동사 어간+ㄹ/을 수]+[있다/없다] 순서를 따른다.",
+                "jp": "動詞の語幹に名詞形「수」が付いて可能性を名詞のように表現した後、「있다」や「없다」を続けて付ける。肯定は있다、否定は없다で表され、語順は[動詞語幹+ㄹ/을 수]+[있다/없다]の順序に従う。",
+                "zh": "在动词词干后加上名词形\"수\"，将可能性表达为名词形式，再接上\"있다\"或\"없다\"。肯定用있다，否定用없다，语序遵循[动词词干+ㄹ/을 수]+[있다/없다]的顺序。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "이 표현은 동사에만 사용되며 형용사 뒤에는 붙지 않는다. 받침의 유무에 따라 -을 수와 -ㄹ 수를 정확히 구분해야 하며 잘못 결합하면 어색한 문장이 된다. \"수\" 뒤에는 조사가 추가로 붙기도 하지만 기본형에서는 생략된다.",
+                "en": "This expression is used only with verbs and does not attach to adjectives. Depending on whether the stem ends in a consonant, -을 수 or -ㄹ 수 must be chosen correctly, or the sentence becomes unnatural. A particle can sometimes follow \"수\", but it is omitted in the basic form.",
+                "es": "Esta expresión se usa solo con verbos y no se añade a los adjetivos. Según si la raíz termina en consonante o no, debe elegirse correctamente -을 수 o -ㄹ 수, o la frase resultará poco natural. A veces una partícula puede seguir a \"수\", pero se omite en la forma básica.",
+                "fr": "Cette expression s'utilise uniquement avec des verbes et ne s'ajoute pas aux adjectifs. Selon que le radical se termine par une consonne ou non, il faut choisir correctement -을 수 ou -ㄹ 수, sinon la phrase devient peu naturelle. Une particule peut parfois suivre \"수\", mais elle est omise dans la forme de base.",
+                "pt": "Esta expressão usa-se apenas com verbos e não se junta a adjetivos. Consoante o radical termine em consoante ou não, deve escolher-se corretamente -을 수 ou -ㄹ 수, caso contrário a frase torna-se pouco natural. Uma partícula pode por vezes seguir \"수\", mas é omitida na forma básica.",
+                "kr": "이 표현은 동사에만 사용되며 형용사 뒤에는 붙지 않는다. 받침의 유무에 따라 -을 수와 -ㄹ 수를 정확히 구분해야 하며 잘못 결합하면 어색한 문장이 된다. \"수\" 뒤에는 조사가 추가로 붙기도 하지만 기본형에서는 생략된다.",
+                "jp": "この表現は動詞にのみ使われ、形容詞の後ろには付かない。パッチムの有無によって-을 수と-ㄹ 수を正確に区別しなければならず、間違えて結合すると不自然な文になる。「수」の後ろには助詞が追加で付くこともあるが、基本形では省略される。",
+                "zh": "这个表达只用于动词，不接在形容词后面。必须根据是否有收音准确区分-을 수和-ㄹ 수，如果结合错误就会使句子显得不自然。\"수\"后面有时会附加助词，但在基本形式中会省略。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "-(으)ㄹ 줄 알다/모르다가 학습으로 얻은 기술을 뜻하는 반면 이 표현은 상황이나 조건에 따른 가능성까지 포괄한다. 격식체와 비격식체 사이에 형태 차이는 없으며 종결어미만 바뀐다.",
+                "en": "While -(으)ㄹ 줄 알다/모르다 refers to a skill acquired through learning, this expression also covers possibility depending on circumstances or conditions. There is no formal difference between formal and informal speech; only the sentence ending changes.",
+                "es": "Mientras que -(으)ㄹ 줄 알다/모르다 se refiere a una habilidad adquirida mediante el aprendizaje, esta expresión también abarca la posibilidad según las circunstancias o condiciones. No hay diferencia de forma entre el habla formal e informal; solo cambia la terminación de la oración.",
+                "fr": "Alors que -(으)ㄹ 줄 알다/모르다 renvoie à une compétence acquise par l'apprentissage, cette expression couvre aussi la possibilité selon les circonstances ou les conditions. Il n'y a pas de différence de forme entre le registre formel et informel ; seule la terminaison de phrase change.",
+                "pt": "Enquanto -(으)ㄹ 줄 알다/모르다 se refere a uma competência adquirida através da aprendizagem, esta expressão também abrange a possibilidade consoante as circunstâncias ou condições. Não há diferença de forma entre o registo formal e informal; apenas muda a terminação da frase.",
+                "kr": "-(으)ㄹ 줄 알다/모르다가 학습으로 얻은 기술을 뜻하는 반면 이 표현은 상황이나 조건에 따른 가능성까지 포괄한다. 격식체와 비격식체 사이에 형태 차이는 없으며 종결어미만 바뀐다.",
+                "jp": "-(으)ㄹ 줄 알다/모르다が学習によって得た技術を意味する一方、この表現は状況や条件による可能性まで包括する。格式体と非格式体の間に形の違いはなく、終結語尾のみが変わる。",
+                "zh": "-(으)ㄹ 줄 알다/모르다指通过学习获得的技能，而这个表达还包括根据情况或条件产生的可能性。正式体与非正式体之间形式没有差异，只有终结词尾会变化。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "어간에 받침이 있는데 -ㄹ 수 있다를 붙이거나 반대로 결합하는 실수가 흔하다. 부정형을 만들 때 없다 뒤에 불필요한 어미를 덧붙이지 않도록 주의해야 한다.",
+                "en": "A common mistake is attaching -ㄹ 수 있다 to a stem that ends in a consonant, or the reverse. When forming the negative, care must be taken not to add an unnecessary ending after 없다.",
+                "es": "Un error común es unir -ㄹ 수 있다 a una raíz que termina en consonante, o al revés. Al formar la negación, hay que tener cuidado de no añadir una terminación innecesaria después de 없다.",
+                "fr": "Une erreur courante consiste à ajouter -ㄹ 수 있다 à un radical se terminant par une consonne, ou l'inverse. Lors de la formation de la négation, il faut veiller à ne pas ajouter une terminaison inutile après 없다.",
+                "pt": "Um erro comum é juntar -ㄹ 수 있다 a um radical terminado em consoante, ou o inverso. Ao formar a negação, é preciso ter cuidado para não acrescentar uma terminação desnecessária depois de 없다.",
+                "kr": "어간에 받침이 있는데 -ㄹ 수 있다를 붙이거나 반대로 결합하는 실수가 흔하다. 부정형을 만들 때 없다 뒤에 불필요한 어미를 덧붙이지 않도록 주의해야 한다.",
+                "jp": "語幹にパッチムがあるのに-ㄹ 수 있다を付けたり、逆に結合したりする間違いがよくある。否定形を作るとき、없다の後ろに不要な語尾を付け加えないよう注意しなければならない。",
+                "zh": "常见的错误是词干有收音却使用-ㄹ 수 있다，或反过来使用。构成否定形式时，要注意不要在없다后面多加不必要的词尾。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "한국어를 조금 할 수 있어요.",
+                "en": "I can speak a little Korean.",
+                "es": "Puedo hablar un poco de coreano.",
+                "fr": "Je peux parler un peu coréen.",
+                "pt": "Consigo falar um pouco de coreano.",
+                "kr": "한국어를 조금 할 수 있어요.",
+                "jp": "韓国語を少し話すことができます。",
+                "zh": "我会说一点韩语。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 수영을 할 수 없어요.",
+                "en": "I cannot swim.",
+                "es": "No puedo nadar.",
+                "fr": "Je ne peux pas nager.",
+                "pt": "Não consigo nadar.",
+                "kr": "저는 수영을 할 수 없어요.",
+                "jp": "私は泳ぐことができません。",
+                "zh": "我不会游泳。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 문을 열 수 있어요?",
+                "en": "Can you open this door?",
+                "es": "¿Puedes abrir esta puerta?",
+                "fr": "Est-ce que tu peux ouvrir cette porte ?",
+                "pt": "Consegues abrir esta porta?",
+                "kr": "이 문을 열 수 있어요?",
+                "jp": "このドアを開けることができますか。",
+                "zh": "你能打开这扇门吗?"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "내일 다시 만날 수 있어요.",
+                "en": "We can meet again tomorrow.",
+                "es": "Podemos vernos otra vez mañana.",
+                "fr": "Nous pouvons nous revoir demain.",
+                "pt": "Podemos voltar a encontrar-nos amanhã.",
+                "kr": "내일 다시 만날 수 있어요.",
+                "jp": "明日また会うことができます。",
+                "zh": "明天可以再见面。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "어제는 갈 수 없었어요.",
+                "en": "I couldn't go yesterday.",
+                "es": "Ayer no pude ir.",
+                "fr": "Hier, je n'ai pas pu y aller.",
+                "pt": "Ontem não consegui ir.",
+                "kr": "어제는 갈 수 없었어요.",
+                "jp": "昨日は行くことができませんでした。",
+                "zh": "昨天没能去成。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 음식을 먹을 수 있어요.",
+                "en": "I can eat this food.",
+                "es": "Puedo comer esta comida.",
+                "fr": "Je peux manger ce plat.",
+                "pt": "Consigo comer esta comida.",
+                "kr": "이 음식을 먹을 수 있어요.",
+                "jp": "この料理を食べることができます。",
+                "zh": "我能吃这道菜。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "혼자서도 할 수 있어요.",
+                "en": "I can do it alone too.",
+                "es": "Puedo hacerlo yo solo también.",
+                "fr": "Je peux le faire seul aussi.",
+                "pt": "Também consigo fazê-lo sozinho.",
+                "kr": "혼자서도 할 수 있어요.",
+                "jp": "一人でもすることができます。",
+                "zh": "我一个人也能做。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "지금은 대답할 수 없어요.",
+                "en": "I can't answer right now.",
+                "es": "Ahora mismo no puedo responder.",
+                "fr": "Je ne peux pas répondre maintenant.",
+                "pt": "Agora não consigo responder.",
+                "kr": "지금은 대답할 수 없어요.",
+                "jp": "今は答えることができません。",
+                "zh": "现在不能回答。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "다음 주에는 만날 수 있어요.",
+                "en": "We can meet next week.",
+                "es": "Podemos vernos la próxima semana.",
+                "fr": "Nous pouvons nous voir la semaine prochaine.",
+                "pt": "Podemos encontrar-nos na próxima semana.",
+                "kr": "다음 주에는 만날 수 있어요.",
+                "jp": "来週は会うことができます。",
+                "zh": "下周可以见面。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 일을 혼자 할 수 없어요.",
+                "en": "I can't do this work alone.",
+                "es": "No puedo hacer este trabajo solo.",
+                "fr": "Je ne peux pas faire ce travail seul.",
+                "pt": "Não consigo fazer este trabalho sozinho.",
+                "kr": "이 일을 혼자 할 수 없어요.",
+                "jp": "この仕事を一人ですることができません。",
+                "zh": "这件事我一个人做不了。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "여기서는 사진을 찍을 수 없어요.",
+                "en": "You can't take photos here.",
+                "es": "No se pueden hacer fotografías aquí.",
+                "fr": "On ne peut pas prendre de photos ici.",
+                "pt": "Aqui não se podem tirar fotografias.",
+                "kr": "여기서는 사진을 찍을 수 없어요.",
+                "jp": "ここでは写真を撮ることができません。",
+                "zh": "这里不能拍照。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그 사람을 도울 수 있어요.",
+                "en": "I can help that person.",
+                "es": "Puedo ayudar a esa persona.",
+                "fr": "Je peux aider cette personne.",
+                "pt": "Consigo ajudar essa pessoa.",
+                "kr": "그 사람을 도울 수 있어요.",
+                "jp": "その人を助けることができます。",
+                "zh": "我能帮助那个人。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A2_KO_TOO",
+        "level": "a2",
+        "id": "068"
+    },
+    "title": {
+        "target": "A/V-지만",
+        "en": "But / Although",
+        "es": "Pero / Aunque",
+        "fr": "Mais / Bien que",
+        "pt": "Mas / Embora",
+        "kr": "A/V-지만",
+        "jp": "しかし・だが（逆接）",
+        "zh": "但是・虽然"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "-지만은 앞뒤 내용이 서로 반대될 때 사용하는 연결 어미이다.",
+                "en": "-jiman is a connective ending used when the preceding and following content contradict each other.",
+                "es": "-jiman es una terminación conectiva que se usa cuando el contenido anterior y el posterior se contradicen.",
+                "fr": "-jiman est une terminaison connective utilisée lorsque le contenu précédent et le contenu suivant se contredisent.",
+                "pt": "-jiman é uma terminação conectiva usada quando o conteúdo anterior e o seguinte se contradizem.",
+                "kr": "-지만은 앞뒤 내용이 서로 반대될 때 사용하는 연결 어미이다.",
+                "jp": "「-지만」は、前の内容と後の内容が互いに反対になる場合に使う接続語尾である。",
+                "zh": "「-지만」是当前后内容相互对立时使用的连接词尾。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사나 형용사 어간에 곧바로 붙여 앞 절과 뒤 절을 대조시킨다.",
+                "en": "It attaches directly to a verb or adjective stem to contrast the preceding and following clauses.",
+                "es": "Se une directamente a la raíz de un verbo o adjetivo para contrastar la cláusula anterior con la siguiente.",
+                "fr": "Elle se rattache directement au radical d'un verbe ou d'un adjectif pour opposer la proposition précédente à la suivante.",
+                "pt": "Junta-se diretamente ao radical de um verbo ou adjetivo para contrastar a oração anterior com a seguinte.",
+                "kr": "동사나 형용사 어간에 곧바로 붙여 앞 절과 뒤 절을 대조시킨다.",
+                "jp": "動詞や形容詞の語幹に直接付けて、前の節と後の節を対比させる。",
+                "zh": "直接接在动词或形容词词干后面，用来对比前后两个分句。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "앞 절의 사실을 인정하면서도 뒤 절에서 다른 내용을 제시할 때 사용한다.",
+                "en": "It is used to acknowledge the fact in the first clause while presenting different content in the second clause.",
+                "es": "Se usa para reconocer el hecho de la primera cláusula mientras se presenta un contenido diferente en la segunda.",
+                "fr": "Elle sert à admettre le fait énoncé dans la première proposition tout en présentant un contenu différent dans la seconde.",
+                "pt": "Usa-se para reconhecer o facto da primeira oração enquanto se apresenta um conteúdo diferente na segunda.",
+                "kr": "앞 절의 사실을 인정하면서도 뒤 절에서 다른 내용을 제시할 때 사용한다.",
+                "jp": "前の節の事実を認めながらも、後の節で異なる内容を提示するときに使う。",
+                "zh": "用于在承认前一分句事实的同时，在后一分句提出不同的内容。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "-는데보다 대조의 의미가 강하고 직접적이어서 반전을 분명히 드러낸다.",
+                "en": "Compared to -neunde, it has a stronger and more direct contrastive meaning, clearly showing a reversal.",
+                "es": "En comparación con -neunde, tiene un significado contrastivo más fuerte y directo, mostrando claramente un giro.",
+                "fr": "Par rapport à -neunde, elle a un sens contrastif plus fort et plus direct, marquant clairement un revirement.",
+                "pt": "Em comparação com -neunde, tem um significado contrastivo mais forte e direto, mostrando claramente uma reviravolta.",
+                "kr": "-는데보다 대조의 의미가 강하고 직접적이어서 반전을 분명히 드러낸다.",
+                "jp": "「-는데」より対照の意味が強く直接的で、反転をはっきりと表す。",
+                "zh": "比起「-는데」，其对比意义更强、更直接，能明确地表现出转折。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사 원형이 아닌 어간에 결합해야 하며 과거 표현은 -았/었지만으로 바뀐다.",
+                "en": "It must combine with the stem, not the dictionary form, and the past form changes to -at/eotjiman.",
+                "es": "Debe combinarse con la raíz, no con la forma de diccionario, y la forma pasada cambia a -at/eotjiman.",
+                "fr": "Elle doit se combiner avec le radical, et non avec la forme du dictionnaire, et la forme passée devient -at/eotjiman.",
+                "pt": "Deve combinar-se com o radical, não com a forma de dicionário, e a forma passada muda para -at/eotjiman.",
+                "kr": "동사 원형이 아닌 어간에 결합해야 하며 과거 표현은 -았/었지만으로 바뀐다.",
+                "jp": "動詞の原形ではなく語幹に結合しなければならず、過去表現は「-았/었지만」に変わる。",
+                "zh": "必须与词干结合，而不是与词典形结合，过去式变为「-았/었지만」。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "오늘 날씨는 춥지만 기분은 아주 좋아요.",
+                "en": "The weather is cold today, but I feel very good.",
+                "es": "El tiempo está frío hoy, pero me siento muy bien.",
+                "fr": "Il fait froid aujourd'hui, mais je me sens très bien.",
+                "pt": "Está frio hoje, mas sinto-me muito bem.",
+                "kr": "오늘 날씨는 춥지만 기분은 아주 좋아요.",
+                "jp": "今日は寒いですが、気分はとてもいいです。",
+                "zh": "今天天气很冷，但是心情很好。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 옷은 비싸지만 품질이 아주 좋아요.",
+                "en": "These clothes are expensive, but the quality is very good.",
+                "es": "Esta ropa es cara, pero la calidad es muy buena.",
+                "fr": "Ces vêtements sont chers, mais la qualité est très bonne.",
+                "pt": "Esta roupa é cara, mas a qualidade é muito boa.",
+                "kr": "이 옷은 비싸지만 품질이 아주 좋아요.",
+                "jp": "この服は高いですが、品質はとてもいいです。",
+                "zh": "这件衣服很贵，但是质量很好。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 한국어를 배우지만 아직 서툴러요.",
+                "en": "I am learning Korean, but I am still not good at it.",
+                "es": "Estoy aprendiendo coreano, pero todavía no se me da bien.",
+                "fr": "J'apprends le coréen, mais je ne suis pas encore doué.",
+                "pt": "Estou a aprender coreano, mas ainda não sou bom nisso.",
+                "kr": "저는 한국어를 배우지만 아직 서툴러요.",
+                "jp": "韓国語を勉強していますが、まだ下手です。",
+                "zh": "我在学韩语，但是还不太熟练。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "형은 키가 크지만 동생은 작아요.",
+                "en": "The older brother is tall, but the younger one is short.",
+                "es": "El hermano mayor es alto, pero el menor es bajo.",
+                "fr": "Le grand frère est grand, mais le petit frère est petit.",
+                "pt": "O irmão mais velho é alto, mas o mais novo é baixo.",
+                "kr": "형은 키가 크지만 동생은 작아요.",
+                "jp": "兄は背が高いですが、弟は低いです。",
+                "zh": "哥哥个子很高，但是弟弟个子矮。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "어제는 정말 바빴지만 오늘은 한가해요.",
+                "en": "I was really busy yesterday, but I am free today.",
+                "es": "Ayer estuve muy ocupado, pero hoy estoy libre.",
+                "fr": "J'étais vraiment occupé hier, mais aujourd'hui je suis libre.",
+                "pt": "Ontem estive muito ocupado, mas hoje estou livre.",
+                "kr": "어제는 정말 바빴지만 오늘은 한가해요.",
+                "jp": "昨日は本当に忙しかったですが、今日は暇です。",
+                "zh": "昨天真的很忙，但是今天很闲。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그 영화는 재미있었지만 너무 길었어요.",
+                "en": "That movie was fun, but it was too long.",
+                "es": "Esa película fue divertida, pero fue demasiado larga.",
+                "fr": "Ce film était amusant, mais il était trop long.",
+                "pt": "Esse filme foi divertido, mas foi demasiado longo.",
+                "kr": "그 영화는 재미있었지만 너무 길었어요.",
+                "jp": "その映画は面白かったですが、長すぎました。",
+                "zh": "那部电影很有趣，但是太长了。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "내일은 비가 오겠지만 산책을 할 거예요.",
+                "en": "It will probably rain tomorrow, but I will go for a walk.",
+                "es": "Mañana probablemente lloverá, pero saldré a caminar.",
+                "fr": "Il pleuvra probablement demain, mais j'irai me promener.",
+                "pt": "Amanhã provavelmente vai chover, mas vou dar um passeio.",
+                "kr": "내일은 비가 오겠지만 산책을 할 거예요.",
+                "jp": "明日は雨が降りそうですが、散歩をするつもりです。",
+                "zh": "明天可能会下雨，但是我还是要去散步。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그 사람은 선생님이지만 아이처럼 순수해요.",
+                "en": "That person is a teacher, but he is as pure as a child.",
+                "es": "Esa persona es profesora, pero es tan pura como un niño.",
+                "fr": "Cette personne est enseignante, mais elle est aussi pure qu'un enfant.",
+                "pt": "Essa pessoa é professora, mas é tão pura como uma criança.",
+                "kr": "그 사람은 선생님이지만 아이처럼 순수해요.",
+                "jp": "その人は先生ですが、子供のように純粋です。",
+                "zh": "那个人是老师，但是像孩子一样单纯。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "죄송하지만 창문 좀 닫아 주시겠어요?",
+                "en": "I'm sorry, but could you please close the window?",
+                "es": "Lo siento, pero ¿podría cerrar la ventana, por favor?",
+                "fr": "Désolé, mais est-ce que vous pourriez fermer la fenêtre?",
+                "pt": "Desculpe, mas podia fechar a janela, por favor?",
+                "kr": "죄송하지만 창문 좀 닫아 주시겠어요?",
+                "jp": "すみませんが、窓を閉めていただけますか。",
+                "zh": "不好意思，能麻烦您关一下窗户吗？"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "많이 힘들지만 끝까지 최선을 다할게요.",
+                "en": "It's really hard, but I will do my best until the end.",
+                "es": "Es muy difícil, pero haré lo mejor de mí hasta el final.",
+                "fr": "C'est très difficile, mais je ferai de mon mieux jusqu'au bout.",
+                "pt": "É muito difícil, mas vou dar o meu melhor até ao fim.",
+                "kr": "많이 힘들지만 끝까지 최선을 다할게요.",
+                "jp": "とても大変ですが、最後まで最善を尽くします。",
+                "zh": "虽然很辛苦，但是我会坚持到底、尽力而为。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "시간이 없지만 잠깐 만나서 얘기해요.",
+                "en": "There's no time, but let's meet briefly and talk.",
+                "es": "No hay tiempo, pero vamos a vernos un momento para hablar.",
+                "fr": "Il n'y a pas de temps, mais rencontrons-nous un instant pour parler.",
+                "pt": "Não há tempo, mas vamos encontrar-nos um pouco para falar.",
+                "kr": "시간이 없지만 잠깐 만나서 얘기해요.",
+                "jp": "時間がありませんが、少しの間会って話しましょう。",
+                "zh": "虽然没有时间，但是我们还是见面聊一下吧。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "몸은 피곤하지만 마음은 아주 행복해요.",
+                "en": "My body is tired, but my heart is very happy.",
+                "es": "El cuerpo está cansado, pero el corazón está muy feliz.",
+                "fr": "Le corps est fatigué, mais le cœur est très heureux.",
+                "pt": "O corpo está cansado, mas o coração está muito feliz.",
+                "kr": "몸은 피곤하지만 마음은 아주 행복해요.",
+                "jp": "体は疲れていますが、心はとても幸せです。",
+                "zh": "身体很累，但是心里很幸福。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

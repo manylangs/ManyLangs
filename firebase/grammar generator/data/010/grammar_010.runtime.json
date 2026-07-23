@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A1_KO_RECIPIENT_PARTICLE",
+        "level": "a1",
+        "id": "010"
+    },
+    "title": {
+        "target": "에게 / 한테",
+        "en": "에게/한테 (recipient marker)",
+        "es": "에게/한테 (marcador de destinatario)",
+        "fr": "에게/한테 (marqueur du destinataire)",
+        "pt": "에게/한테 (marcador de destinatário)",
+        "kr": "에게 / 한테",
+        "jp": "에게/한테(受け手を表す助詞)",
+        "zh": "에게/한테（表示接受者的助词）"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "에게와 한테는 행동이 향하는 대상을 나타내는 조사이다. 사람이나 동물 뒤에 붙어 누구를 향한 행동인지 알려준다.",
+                "en": "에게 and 한테 are particles that mark the target of an action. They attach after a person or animal to indicate who the action is directed toward.",
+                "es": "에게 y 한테 son partículas que marcan el destinatario de una acción. Se colocan después de una persona o animal para indicar hacia quién se dirige la acción.",
+                "fr": "에게 et 한테 sont des particules qui marquent le destinataire d'une action. Elles se placent après une personne ou un animal pour indiquer vers qui l'action est dirigée.",
+                "pt": "에게 e 한테 são partículas que marcam o destinatário de uma ação. Colocam-se depois de uma pessoa ou animal para indicar para quem a ação se dirige.",
+                "kr": "에게와 한테는 행동이 향하는 대상을 나타내는 조사이다. 사람이나 동물 뒤에 붙어 누구를 향한 행동인지 알려준다.",
+                "jp": "에게と한테は行動が向かう対象を表す助詞である。人や動物の後に付いて、誰に向けた行動なのかを示す。",
+                "zh": "에게和한테是表示动作对象的助词。接在人或动物后面，表明动作是朝向谁的。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "대상이 되는 명사 뒤에 곧바로 결합하며, 동사가 나타내는 행동의 방향을 그 대상 쪽으로 이끈다.",
+                "en": "It attaches directly after the noun that is the target, guiding the direction of the action expressed by the verb toward that target.",
+                "es": "Se une directamente después del sustantivo que es el destinatario, dirigiendo la acción expresada por el verbo hacia ese destinatario.",
+                "fr": "Elle s'attache directement après le nom qui est le destinataire, orientant l'action exprimée par le verbe vers ce destinataire.",
+                "pt": "Junta-se diretamente a seguir ao substantivo que é o destinatário, orientando a ação expressa pelo verbo para esse destinatário.",
+                "kr": "대상이 되는 명사 뒤에 곧바로 결합하며, 동사가 나타내는 행동의 방향을 그 대상 쪽으로 이끈다.",
+                "jp": "対象となる名詞の直後に結合し、動詞が表す行動の向きをその対象のほうへ導く。",
+                "zh": "紧接在作为对象的名词后面结合，将动词所表示的行为方向引向该对象。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "사람이나 동물에게만 사용할 수 있고, 무생물이나 장소를 가리킬 때는 쓸 수 없다. 그런 경우에는 에를 대신 사용한다.",
+                "en": "It can only be used with people or animals, not with inanimate objects or places. In those cases, 에 is used instead.",
+                "es": "Solo puede usarse con personas o animales, no con objetos inanimados o lugares. En esos casos se usa 에 en su lugar.",
+                "fr": "Elle ne peut s'employer qu'avec des personnes ou des animaux, pas avec des objets inanimés ou des lieux. Dans ces cas, on utilise 에 à la place.",
+                "pt": "Só pode ser usada com pessoas ou animais, não com objetos inanimados ou lugares. Nesses casos, usa-se 에 em vez disso.",
+                "kr": "사람이나 동물에게만 사용할 수 있고, 무생물이나 장소를 가리킬 때는 쓸 수 없다. 그런 경우에는 에를 대신 사용한다.",
+                "jp": "人や動物にのみ使うことができ、無生物や場所を指すときには使えない。そのような場合には代わりに에を使う。",
+                "zh": "只能用于人或动物，不能用于指代无生命物体或地点，那种情况下要改用에。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "한테는 주로 말할 때 쓰이고, 에게는 글에서도 자연스럽게 쓰인다. 두 표현은 의미가 같지만 격식의 정도에서 차이가 난다.",
+                "en": "한테 is mainly used in speech, while 에게 also sounds natural in writing. The two expressions share the same meaning but differ in formality.",
+                "es": "한테 se usa principalmente al hablar, mientras que 에게 también suena natural por escrito. Ambas expresiones comparten el significado, pero difieren en formalidad.",
+                "fr": "한테 s'emploie surtout à l'oral, tandis que 에게 sonne également naturel à l'écrit. Les deux expressions ont le même sens mais diffèrent par leur degré de formalité.",
+                "pt": "한테 é usado principalmente na fala, enquanto 에게 também soa natural na escrita. As duas expressões partilham o significado, mas diferem no grau de formalidade.",
+                "kr": "한테는 주로 말할 때 쓰이고, 에게는 글에서도 자연스럽게 쓰인다. 두 표현은 의미가 같지만 격식의 정도에서 차이가 난다.",
+                "jp": "한테は主に話すときに使われ、에게は文章でも自然に使われる。二つの表現は意味は同じだが、格式の度合いに違いがある。",
+                "zh": "한테主要用于口语，而에게在书面语中也很自然。两者意思相同，但正式程度有所不同。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "다른 조사와 겹쳐 쓰면 안 되며, 대상이 무생물일 때 실수로 붙이는 경우가 많으니 주의해야 한다.",
+                "en": "It should not be combined with another particle, and care is needed since it is often mistakenly attached to inanimate objects.",
+                "es": "No debe combinarse con otra partícula, y hay que tener cuidado porque a menudo se usa por error con objetos inanimados.",
+                "fr": "Elle ne doit pas être combinée avec une autre particule, et il faut faire attention car elle est souvent utilisée par erreur avec des objets inanimés.",
+                "pt": "Não deve ser combinada com outra partícula, sendo necessário cuidado, pois é frequentemente usada por engano com objetos inanimados.",
+                "kr": "다른 조사와 겹쳐 쓰면 안 되며, 대상이 무생물일 때 실수로 붙이는 경우가 많으니 주의해야 한다.",
+                "jp": "他の助詞と重ねて使ってはならず、対象が無生物であるときに誤って付けてしまう場合が多いので注意が必要である。",
+                "zh": "不能与其他助词重叠使用，且当对象是无生命物体时常被误加，需要注意。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 친구에게 작은 선물을 줘요.",
+                "en": "I give my friend a small gift.",
+                "es": "Le doy un pequeño regalo a mi amigo.",
+                "fr": "Je donne un petit cadeau à mon ami.",
+                "pt": "Dou um pequeno presente ao meu amigo.",
+                "kr": "저는 친구에게 작은 선물을 줘요.",
+                "jp": "私は友達に小さいプレゼントをあげます。",
+                "zh": "我送给朋友一个小礼物。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 동생한테 짧은 편지를 써요.",
+                "en": "I write a short letter to my younger sibling.",
+                "es": "Le escribo una carta corta a mi hermano menor.",
+                "fr": "J'écris une courte lettre à mon petit frère.",
+                "pt": "Escrevo uma carta curta ao meu irmão mais novo.",
+                "kr": "저는 동생한테 짧은 편지를 써요.",
+                "jp": "私は弟に短い手紙を書きます。",
+                "zh": "我给弟弟写一封短信。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 선생님에게 어려운 질문을 해요.",
+                "en": "I ask the teacher a difficult question.",
+                "es": "Le hago una pregunta difícil al profesor.",
+                "fr": "Je pose une question difficile au professeur.",
+                "pt": "Faço uma pergunta difícil ao professor.",
+                "kr": "저는 선생님에게 어려운 질문을 해요.",
+                "jp": "私は先生に難しい質問をします。",
+                "zh": "我向老师提出一个难题。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 강아지한테 아침마다 밥을 줘요.",
+                "en": "I give the puppy food every morning.",
+                "es": "Le doy comida al cachorro cada mañana.",
+                "fr": "Je donne à manger au chiot chaque matin.",
+                "pt": "Dou comida ao cachorrinho todas as manhãs.",
+                "kr": "저는 강아지한테 아침마다 밥을 줘요.",
+                "jp": "私は子犬に毎朝ご飯をあげます。",
+                "zh": "我每天早上给小狗喂食。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 매일 엄마에게 전화를 걸어요.",
+                "en": "I call my mom every day.",
+                "es": "Llamo a mi madre todos los días.",
+                "fr": "J'appelle ma mère tous les jours.",
+                "pt": "Ligo à minha mãe todos os dias.",
+                "kr": "저는 매일 엄마에게 전화를 걸어요.",
+                "jp": "私は毎日母に電話をかけます。",
+                "zh": "我每天给妈妈打电话。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 친구한테 항상 사실대로 말해요.",
+                "en": "I always tell my friend the truth.",
+                "es": "Siempre le digo la verdad a mi amigo.",
+                "fr": "Je dis toujours la vérité à mon ami.",
+                "pt": "Digo sempre a verdade ao meu amigo.",
+                "kr": "저는 친구한테 항상 사실대로 말해요.",
+                "jp": "私は友達にいつも本当のことを話します。",
+                "zh": "我总是对朋友说实话。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 회사 동료에게 이메일을 보내요.",
+                "en": "I send an email to my coworker.",
+                "es": "Le envío un correo a mi compañero.",
+                "fr": "J'envoie un e-mail à mon collègue.",
+                "pt": "Envio um e-mail ao meu colega.",
+                "kr": "저는 회사 동료에게 이메일을 보내요.",
+                "jp": "私は会社の同僚にメールを送ります。",
+                "zh": "我给公司同事发邮件。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 새 친구를 가족한테 소개해요.",
+                "en": "I introduce my new friend to my family.",
+                "es": "Le presento mi nuevo amigo a mi familia.",
+                "fr": "Je présente mon nouvel ami à ma famille.",
+                "pt": "Apresento o meu novo amigo à minha família.",
+                "kr": "저는 새 친구를 가족한테 소개해요.",
+                "jp": "私は新しい友達を家族に紹介します。",
+                "zh": "我把新朋友介绍给家人。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "누구에게 이 소식을 전해요?",
+                "en": "Who are you telling this news to?",
+                "es": "¿A quién le cuentas esta noticia?",
+                "fr": "Tu racontes cette nouvelle à qui ?",
+                "pt": "A quem contas esta notícia?",
+                "kr": "누구에게 이 소식을 전해요?",
+                "jp": "誰にこの知らせを伝えますか。",
+                "zh": "这个消息要告诉谁？"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 아이한테 재미있는 이야기를 들려줘요.",
+                "en": "I tell the child a fun story.",
+                "es": "Le cuento una historia divertida al niño.",
+                "fr": "Je raconte une histoire amusante à l'enfant.",
+                "pt": "Conto uma história divertida à criança.",
+                "kr": "저는 아이한테 재미있는 이야기를 들려줘요.",
+                "jp": "私は子供におもしろい話をしてあげます。",
+                "zh": "我给孩子讲有趣的故事。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 손님에게 항상 친절하게 인사해요.",
+                "en": "I always greet the guest kindly.",
+                "es": "Siempre saludo amablemente al invitado.",
+                "fr": "Je salue toujours le client aimablement.",
+                "pt": "Cumprimento sempre o cliente com simpatia.",
+                "kr": "저는 손님에게 항상 친절하게 인사해요.",
+                "jp": "私はお客さんにいつも親切にあいさつします。",
+                "zh": "我总是热情地问候客人。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 고양이한테 작은 장난감을 던져요.",
+                "en": "I throw a small toy to the cat.",
+                "es": "Le lanzo un juguete pequeño al gato.",
+                "fr": "Je lance un petit jouet au chat.",
+                "pt": "Atiro um pequeno brinquedo ao gato.",
+                "kr": "저는 고양이한테 작은 장난감을 던져요.",
+                "jp": "私は猫に小さいおもちゃを投げます。",
+                "zh": "我把小玩具扔给猫。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

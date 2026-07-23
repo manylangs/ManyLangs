@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "a2",
+    "id": "003",
+    "targetLang": null
+  },
+  "topic": "A student ordering food",
+  "keywords": [
+    "student",
+    "ordering",
+    "food counter",
+    "menu board",
+    "cashier",
+    "cafeteria"
+  ],
+  "tts": {
+    "kr": [],
+    "en": [],
+    "es": [],
+    "fr": [],
+    "pt": [],
+    "jp": [],
+    "zh": []
+  },
+  "blocks": [
+    {
+      "type": "image",
+      "src": "003.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "texts": {
+            "kr": "한 학생이 작은 쟁반을 들고 구내식당 카운터 앞에 서 있다.",
+            "en": "A student stands at a cafeteria counter while holding a small tray.",
+            "es": "Un estudiante está de pie en el mostrador de la cafetería sosteniendo una bandeja pequeña.",
+            "fr": "Un étudiant se tient au comptoir de la cafétéria en tenant un petit plateau.",
+            "pt": "Um estudante está no balcão da cantina segurando uma pequena bandeja.",
+            "jp": "一人の学生が小さいトレイを持って、食堂のカウンターの前に立っています。",
+            "zh": "一个学生拿着一个小托盘，站在食堂的柜台前。"
+          }
+        },
+        {
+          "texts": {
+            "kr": "학생이 메뉴판의 항목을 가리키자 계산원이 천천히 기다리고 있다.",
+            "en": "The cashier waits patiently as the student points at an item on the menu board.",
+            "es": "El cajero espera pacientemente mientras el estudiante señala un artículo en el menú.",
+            "fr": "Le caissier attend patiemment pendant que l’étudiant pointe un article sur le menu affiché.",
+            "pt": "O caixa espera pacientemente enquanto o estudante aponta um item no menu.",
+            "jp": "学生がメニュー表の項目を指すと、レジ係はゆっくり待っています。",
+            "zh": "学生指着菜单板上的一项，收银员耐心地等着。"
+          }
+        },
+        {
+          "texts": {
+            "kr": "카운터 위에는 음식 사진과 가격이 표시된 큰 디지털 메뉴판이 있다.",
+            "en": "A large digital menu above the counter shows pictures of meals and prices.",
+            "es": "Un gran menú digital sobre el mostrador muestra imágenes de comidas y precios.",
+            "fr": "Un grand menu numérique au-dessus du comptoir montre des images de plats et leurs prix.",
+            "pt": "Um grande menu digital acima do balcão mostra fotos das refeições e seus preços.",
+            "jp": "カウンターの上には、料理の写真と値段が表示された大きいデジタルメニューがあります。",
+            "zh": "柜台上方有一块大型电子菜单，显示着食物图片和价格。"
+          }
+        },
+        {
+          "texts": {
+            "kr": "카운터 뒤에는 여러 음식이 따뜻하게 보관된 용기에 진열되어 있다.",
+            "en": "Behind the counter, several dishes are displayed in warm food containers.",
+            "es": "Detrás del mostrador, varios platos están expuestos en contenedores térmicos.",
+            "fr": "Derrière le comptoir, plusieurs plats sont exposés dans des récipients chauffants.",
+            "pt": "Atrás do balcão, vários pratos estão expostos em recipientes aquecidos.",
+            "jp": "カウンターの後ろには、いくつかの料理が保温容器に並べられています。",
+            "zh": "柜台后面，几道菜肴摆放在保温容器里。"
+          }
+        },
+        {
+          "texts": {
+            "kr": "학생은 다른 손에 지갑을 들고 결제할 준비를 하고 있다.",
+            "en": "The student holds a wallet in their other hand, ready to pay.",
+            "es": "El estudiante sostiene una cartera en su otra mano, listo para pagar.",
+            "fr": "L’étudiant tient un portefeuille dans son autre main, prêt à payer.",
+            "pt": "O estudante segura uma carteira na outra mão, pronto para pagar.",
+            "jp": "学生はもう片方の手に財布を持って、支払う準備をしています。",
+            "zh": "学生另一只手拿着钱包，准备付款。"
+          }
+        },
+        {
+          "texts": {
+            "kr": "옆에는 다양한 음료 버튼이 있는 음료 기계가 있다.",
+            "en": "A drink machine stands to the side with colorful beverage buttons.",
+            "es": "Una máquina de bebidas está a un lado con botones de colores.",
+            "fr": "Une machine à boissons se trouve sur le côté avec des boutons colorés.",
+            "pt": "Uma máquina de bebidas fica ao lado com botões coloridos.",
+            "jp": "横にはカラフルな飲み物のボタンがある飲料機があります。",
+            "zh": "旁边有一台饮料机，上面有五颜六色的按钮。"
+          }
+        }
+      ]
+    }
+  ]
+}

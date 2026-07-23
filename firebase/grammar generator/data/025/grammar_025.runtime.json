@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A1_KO_NUMBERS_NATIVE",
+        "level": "a1",
+        "id": "025"
+    },
+    "title": {
+        "target": "고유어 수",
+        "en": "Native Korean Numbers",
+        "es": "Números nativos coreanos",
+        "fr": "Nombres coréens natifs",
+        "pt": "Números nativos coreanos",
+        "kr": "고유어 수",
+        "jp": "韓国語固有数詞",
+        "zh": "韩语固有数词"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "고유어 수는 물건의 개수나 사람의 나이를 셀 때 쓰는 순우리말 수사 체계이다.",
+                "en": "Native Korean numbers form a distinct numeral system used to count objects or state a person's age.",
+                "es": "Los números nativos coreanos forman un sistema numeral distinto que se usa para contar objetos o indicar la edad de una persona.",
+                "fr": "Les nombres coréens natifs forment un système numéral distinct utilisé pour compter des objets ou indiquer l'âge d'une personne.",
+                "pt": "Os números nativos coreanos formam um sistema numeral distinto utilizado para contar objetos ou indicar a idade de uma pessoa.",
+                "kr": "고유어 수는 물건의 개수나 사람의 나이를 셀 때 쓰는 순우리말 수사 체계이다.",
+                "jp": "固有語数詞は、物の個数や人の年齢を数える際に用いられる純粋な韓国固有の数詞体系である。",
+                "zh": "固有数词是用于计算物品数量或表达人的年龄的纯韩语数词体系。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "단위 명사 앞에서는 하나, 둘, 셋, 넷, 스물이 각각 한, 두, 세, 네, 스무로 형태가 바뀐다.",
+                "en": "Before a counting noun, hana, dul, set, net and seumul change form to han, du, se, ne and seumu respectively.",
+                "es": "Delante de un sustantivo contable, hana, dul, set, net y seumul cambian de forma a han, du, se, ne y seumu respectivamente.",
+                "fr": "Devant un nom comptable, hana, dul, set, net et seumul changent de forme pour devenir han, du, se, ne et seumu.",
+                "pt": "Antes de um substantivo contável, hana, dul, set, net e seumul mudam de forma para han, du, se, ne e seumu, respetivamente.",
+                "kr": "단위 명사 앞에서는 하나, 둘, 셋, 넷, 스물이 각각 한, 두, 세, 네, 스무로 형태가 바뀐다.",
+                "jp": "助数詞の前では、하나・둘・셋・넷・스물がそれぞれ한・두・세・네・스무という形に変わる。",
+                "zh": "在量词前，하나、둘、셋、넷、스물分别变化为한、두、세、네、스무的形式。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "백 이상의 수량이나 순서를 나타낼 때는 고유어 수 대신 한자어 수를 사용해야 한다.",
+                "en": "For quantities of one hundred or more, or when expressing order, Sino-Korean numbers must be used instead of native numbers.",
+                "es": "Para cantidades de cien o más, o al expresar un orden, deben usarse los números sino-coreanos en lugar de los números nativos.",
+                "fr": "Pour les quantités de cent ou plus, ou pour exprimer un ordre, les nombres sino-coréens doivent être utilisés à la place des nombres natifs.",
+                "pt": "Para quantidades de cem ou mais, ou ao exprimir uma ordem, devem usar-se os números sino-coreanos em vez dos números nativos.",
+                "kr": "백 이상의 수량이나 순서를 나타낼 때는 고유어 수 대신 한자어 수를 사용해야 한다.",
+                "jp": "百以上の数量や順序を表す場合には、固有語数詞の代わりに漢字語数詞を使わなければならない。",
+                "zh": "表示一百以上的数量或顺序时，必须使用汉字词数词，而不是固有词数词。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "한자어 수와 달리 개수, 나이, 시각의 '시'를 표현할 때 주로 고유어 수가 선택되며 격식에 따른 차이는 없다.",
+                "en": "Unlike Sino-Korean numbers, native numbers are usually chosen for counting objects, stating age, and the hour in time expressions, with no difference between formal and informal registers.",
+                "es": "A diferencia de los números sino-coreanos, los números nativos se eligen normalmente para contar objetos, indicar la edad y expresar la hora, sin diferencia entre el registro formal e informal.",
+                "fr": "Contrairement aux nombres sino-coréens, les nombres natifs sont généralement choisis pour compter des objets, indiquer l'âge et exprimer l'heure, sans différence entre le registre formel et informel.",
+                "pt": "Ao contrário dos números sino-coreanos, os números nativos são normalmente escolhidos para contar objetos, indicar a idade e exprimir a hora, sem diferença entre o registo formal e informal.",
+                "kr": "한자어 수와 달리 개수, 나이, 시각의 '시'를 표현할 때 주로 고유어 수가 선택되며 격식에 따른 차이는 없다.",
+                "jp": "漢字語数詞とは異なり、個数や年齢、時刻の「時」を表す際には主に固有語数詞が選ばれ、格式による違いはない。",
+                "zh": "与汉字词数词不同，在表达物品数量、年龄以及时刻中的\"点\"时，主要选用固有词数词，且没有正式与非正式之分。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "숫자 뒤에 단위 명사가 붙을 때 관형형을 잊고 원래 형태 그대로 쓰면 어색한 표현이 되므로 주의해야 한다.",
+                "en": "Forgetting to change a number into its modifying form before a counting noun produces an unnatural expression, so this shift needs attention.",
+                "es": "Olvidar cambiar un número a su forma modificadora antes de un sustantivo contable produce una expresión poco natural, por lo que hay que prestar atención a ese cambio.",
+                "fr": "Oublier de changer un nombre en sa forme déterminante devant un nom comptable produit une expression peu naturelle, il faut donc faire attention à ce changement.",
+                "pt": "Esquecer de mudar um número para a sua forma modificadora antes de um substantivo contável produz uma expressão pouco natural, pelo que é preciso atenção a essa mudança.",
+                "kr": "숫자 뒤에 단위 명사가 붙을 때 관형형을 잊고 원래 형태 그대로 쓰면 어색한 표현이 되므로 주의해야 한다.",
+                "jp": "数字の後ろに助数詞が付くとき、連体形への変化を忘れて元の形のまま使うと不自然な表現になるため、注意が必要である。",
+                "zh": "在数字后接量词时，如果忘记变为修饰形而直接使用原形，就会显得不自然，因此需要多加注意。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "사과가 한 개 있어요.",
+                "en": "There is one apple.",
+                "es": "Hay una manzana.",
+                "fr": "Il y a une pomme.",
+                "pt": "Há uma maçã.",
+                "kr": "사과가 한 개 있어요.",
+                "jp": "りんごが一つあります。",
+                "zh": "有一个苹果。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "친구가 두 명 왔어요.",
+                "en": "Two friends came.",
+                "es": "Vinieron dos amigos.",
+                "fr": "Deux amis sont venus.",
+                "pt": "Vieram dois amigos.",
+                "kr": "친구가 두 명 왔어요.",
+                "jp": "友達が二人来ました。",
+                "zh": "有两个朋友来了。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "책을 세 권 샀어요.",
+                "en": "I bought three books.",
+                "es": "Compré tres libros.",
+                "fr": "J'ai acheté trois livres.",
+                "pt": "Comprei três livros.",
+                "kr": "책을 세 권 샀어요.",
+                "jp": "本を三冊買いました。",
+                "zh": "我买了三本书。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "커피 네 잔 주세요.",
+                "en": "Please give me four cups of coffee.",
+                "es": "Deme cuatro tazas de café, por favor.",
+                "fr": "Donnez-moi quatre tasses de café, s'il vous plaît.",
+                "pt": "Dê-me quatro chávenas de café, por favor.",
+                "kr": "커피 네 잔 주세요.",
+                "jp": "コーヒーを四杯ください。",
+                "zh": "请给我四杯咖啡。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 스무 살이에요.",
+                "en": "I am twenty years old.",
+                "es": "Tengo veinte años.",
+                "fr": "J'ai vingt ans.",
+                "pt": "Tenho vinte anos.",
+                "kr": "저는 스무 살이에요.",
+                "jp": "私は二十歳です。",
+                "zh": "我二十岁。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "지금 세 시예요.",
+                "en": "It is three o'clock now.",
+                "es": "Ahora son las tres.",
+                "fr": "Il est maintenant trois heures.",
+                "pt": "Agora são três horas.",
+                "kr": "지금 세 시예요.",
+                "jp": "今三時です。",
+                "zh": "现在三点。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "동생이 다섯 살이에요.",
+                "en": "My younger sibling is five years old.",
+                "es": "Mi hermano menor tiene cinco años.",
+                "fr": "Mon petit frère a cinq ans.",
+                "pt": "O meu irmão mais novo tem cinco anos.",
+                "kr": "동생이 다섯 살이에요.",
+                "jp": "弟は五歳です。",
+                "zh": "弟弟五岁。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "학생이 여섯 명 있어요.",
+                "en": "There are six students.",
+                "es": "Hay seis estudiantes.",
+                "fr": "Il y a six étudiants.",
+                "pt": "Há seis estudantes.",
+                "kr": "학생이 여섯 명 있어요.",
+                "jp": "学生が六人います。",
+                "zh": "有六个学生。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "여기 열 명 앉을 수 있어요.",
+                "en": "Ten people can sit here.",
+                "es": "Aquí pueden sentarse diez personas.",
+                "fr": "Dix personnes peuvent s'asseoir ici.",
+                "pt": "Aqui podem sentar-se dez pessoas.",
+                "kr": "여기 열 명 앉을 수 있어요.",
+                "jp": "ここに十人座ることができます。",
+                "zh": "这里可以坐十个人。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "고양이가 일곱 마리 있어요.",
+                "en": "There are seven cats.",
+                "es": "Hay siete gatos.",
+                "fr": "Il y a sept chats.",
+                "pt": "Há sete gatos.",
+                "kr": "고양이가 일곱 마리 있어요.",
+                "jp": "猫が七匹います。",
+                "zh": "有七只猫。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "매일 여덟 시간 일해요.",
+                "en": "I work eight hours every day.",
+                "es": "Trabajo ocho horas todos los días.",
+                "fr": "Je travaille huit heures chaque jour.",
+                "pt": "Trabalho oito horas todos os dias.",
+                "kr": "매일 여덟 시간 일해요.",
+                "jp": "毎日八時間働きます。",
+                "zh": "我每天工作八个小时。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "우산이 아홉 개 필요해요.",
+                "en": "Nine umbrellas are needed.",
+                "es": "Se necesitan nueve paraguas.",
+                "fr": "Il faut neuf parapluies.",
+                "pt": "São necessários nove guarda-chuvas.",
+                "kr": "우산이 아홉 개 필요해요.",
+                "jp": "傘が九本必要です。",
+                "zh": "需要九把雨伞。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A1_KO_FUTURE_GEOYEYO",
+        "level": "a1",
+        "id": "019"
+    },
+    "title": {
+        "target": "-(으)ㄹ 거예요",
+        "en": "Future Tense -(으)ㄹ 거예요",
+        "es": "Tiempo futuro -(으)ㄹ 거예요",
+        "fr": "Futur -(으)ㄹ 거예요",
+        "pt": "Futuro -(으)ㄹ 거예요",
+        "kr": "-(으)ㄹ 거예요",
+        "jp": "未来形 -(으)ㄹ 거예요",
+        "zh": "将来时 -(으)ㄹ 거예요"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "이 표현은 아직 벌어지지 않은 일이나 계획을 나타낼 때 쓴다. 동사 어간 뒤에 결합해 미래 시제를 만든다.",
+                "en": "This expression is used to talk about something that has not happened yet or a future plan. It attaches to a verb stem to form the future tense.",
+                "es": "Esta expresión se usa para hablar de algo que aún no ha ocurrido o de un plan futuro. Se une a la raíz del verbo para formar el tiempo futuro.",
+                "fr": "Cette expression sert à parler d'un événement qui n'a pas encore eu lieu ou d'un projet futur. Elle se combine avec le radical du verbe pour former le futur.",
+                "pt": "Esta expressão serve para falar de algo que ainda não aconteceu ou de um plano futuro. Junta-se à raiz do verbo para formar o tempo futuro.",
+                "kr": "이 표현은 아직 벌어지지 않은 일이나 계획을 나타낼 때 쓴다. 동사 어간 뒤에 결합해 미래 시제를 만든다.",
+                "jp": "この表現はまだ起きていないことや計画を表すときに使う。動詞の語幹の後に結合して未来時制を作る。",
+                "zh": "这个表达用于表示尚未发生的事情或计划，接在动词词干后面构成将来时。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "어간의 받침 유무를 먼저 확인한 뒤 알맞은 형태를 골라 결합하는 것이 핵심 규칙이다. 이 과정을 거치면 아직 정해지지 않은 일을 자연스럽게 표현할 수 있다.",
+                "en": "The core rule is to first check whether the stem ends in a consonant and then attach the matching form. Following this process allows a not-yet-determined event to be expressed naturally.",
+                "es": "La regla principal es comprobar primero si la raíz termina en consonante y luego unir la forma correspondiente. Seguir este proceso permite expresar con naturalidad algo aún no decidido.",
+                "fr": "La règle essentielle consiste à vérifier d'abord si le radical se termine par une consonne, puis à y ajouter la forme correspondante. Ce procédé permet d'exprimer naturellement un événement encore incertain.",
+                "pt": "A regra principal é verificar primeiro se a raiz termina em consoante e depois juntar a forma correspondente. Seguir este processo permite exprimir com naturalidade algo ainda não decidido.",
+                "kr": "어간의 받침 유무를 먼저 확인한 뒤 알맞은 형태를 골라 결합하는 것이 핵심 규칙이다. 이 과정을 거치면 아직 정해지지 않은 일을 자연스럽게 표현할 수 있다.",
+                "jp": "語幹にパッチムがあるかないかをまず確認してから、適切な形を選んで結合することが核心規則である。この過程を経れば、まだ決まっていないことを自然に表現できる。",
+                "zh": "核心规则是先确认词干有没有收音，然后选择相应的形式结合。经过这个过程，就能自然地表达尚未确定的事情。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "받침이 있는 어간에는 -을 거예요가 결합하고 받침이 없거나 ㄹ받침인 어간에는 -ㄹ 거예요가 결합한다. 또한 1인칭 주어와 쓰이면 의지를 나타내고 3인칭 주어와 쓰이면 추측을 나타낸다.",
+                "en": "For stems ending in a consonant, -을 거예요 is attached, while for stems without a final consonant or ending in ㄹ, -ㄹ 거예요 is attached. Also, with a first-person subject it shows intention, and with a third-person subject it shows conjecture.",
+                "es": "A las raíces terminadas en consonante se une -을 거예요, mientras que a las raíces sin consonante final o terminadas en ㄹ se une -ㄹ 거예요. Además, con sujeto en primera persona indica intención y con sujeto en tercera persona indica suposición.",
+                "fr": "Aux radicaux se terminant par une consonne s'ajoute -을 거예요, tandis qu'aux radicaux sans consonne finale ou se terminant par ㄹ s'ajoute -ㄹ 거예요. De plus, avec un sujet à la première personne, cela exprime une intention, et avec un sujet à la troisième personne, une supposition.",
+                "pt": "Às raízes terminadas em consoante junta-se -을 거예요, enquanto às raízes sem consoante final ou terminadas em ㄹ se junta -ㄹ 거예요. Além disso, com sujeito na primeira pessoa exprime intenção e com sujeito na terceira pessoa exprime suposição.",
+                "kr": "받침이 있는 어간에는 -을 거예요가 결합하고 받침이 없거나 ㄹ받침인 어간에는 -ㄹ 거예요가 결합한다. 또한 1인칭 주어와 쓰이면 의지를 나타내고 3인칭 주어와 쓰이면 추측을 나타낸다.",
+                "jp": "パッチムがある語幹には-을 거예요が結合し、パッチムがないかㄹパッチムの語幹には-ㄹ 거예요が結合する。また、一人称主語と使われれば意志を表し、三人称主語と使われれば推測を表す。",
+                "zh": "有收音的词干接-을 거예요，没有收音或以ㄹ收音结尾的词干接-ㄹ 거예요。此外，与第一人称主语连用表示意志，与第三人称主语连用表示推测。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "-겠다는 강한 의지나 확신에 찬 추측을 드러내는 반면 이 표현은 부드러운 계획이나 예정을 전달한다. 격식적인 자리에서는 -(으)ㄹ 것입니다로 바꿔 쓸 수 있다.",
+                "en": "While -겠다 conveys strong will or confident conjecture, this expression conveys a softer plan or intention. In formal settings, it can be replaced with -(으)ㄹ 것입니다.",
+                "es": "Mientras que -겠다 transmite una voluntad firme o una suposición segura, esta expresión transmite un plan más suave. En contextos formales, puede sustituirse por -(으)ㄹ 것입니다.",
+                "fr": "Tandis que -겠다 exprime une volonté ferme ou une supposition assurée, cette expression exprime un projet plus doux. Dans un cadre formel, elle peut être remplacée par -(으)ㄹ 것입니다.",
+                "pt": "Enquanto -겠다 transmite uma vontade firme ou uma suposição segura, esta expressão transmite um plano mais suave. Em contextos formais, pode ser substituída por -(으)ㄹ 것입니다.",
+                "kr": "-겠다는 강한 의지나 확신에 찬 추측을 드러내는 반면 이 표현은 부드러운 계획이나 예정을 전달한다. 격식적인 자리에서는 -(으)ㄹ 것입니다로 바꿔 쓸 수 있다.",
+                "jp": "-겠다が強い意志や確信に満ちた推測を表すのに対し、この表現は柔らかな計画や予定を伝える。格式張った場では-(으)ㄹ 것입니다に置き換えて使うことができる。",
+                "zh": "-겠다表达强烈的意志或有把握的推测，而这个表达则传递较为温和的计划或安排。在正式场合可以换用-(으)ㄹ 것입니다。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "받침이 없는 어간에 -을 거예요를 잘못 붙이거나 ㄹ받침 어간에 받침을 중복해서 붙이는 실수가 흔하다. 날씨나 상황을 근거로 한 추측을 표현할 때도 폭넓게 쓰인다.",
+                "en": "A common mistake is attaching -을 거예요 to a stem without a final consonant, or doubling the consonant on an ㄹ-final stem. It is also widely used to express a guess based on weather or a situation.",
+                "es": "Un error frecuente es unir -을 거예요 a una raíz sin consonante final o duplicar la consonante en una raíz terminada en ㄹ. También se usa ampliamente para expresar una suposición basada en el clima o en una situación.",
+                "fr": "Une erreur fréquente consiste à ajouter -을 거예요 à un radical sans consonne finale, ou à doubler la consonne sur un radical se terminant par ㄹ. Elle sert aussi largement à exprimer une supposition fondée sur la météo ou une situation.",
+                "pt": "Um erro comum é juntar -을 거예요 a uma raiz sem consoante final ou duplicar a consoante numa raiz terminada em ㄹ. Também é amplamente usada para exprimir uma suposição baseada no tempo ou numa situação.",
+                "kr": "받침이 없는 어간에 -을 거예요를 잘못 붙이거나 ㄹ받침 어간에 받침을 중복해서 붙이는 실수가 흔하다. 날씨나 상황을 근거로 한 추측을 표현할 때도 폭넓게 쓰인다.",
+                "jp": "パッチムがない語幹に-을 거예요を誤って付けたり、ㄹパッチムの語幹に受け止めを重複して付けたりする間違いが多い。天気や状況を根拠にした推測を表現するときにも幅広く使われる。",
+                "zh": "常见错误是在没有收音的词干上误加-을 거예요，或在ㄹ收音词干上重复添加收音。这个表达也广泛用于基于天气或情况的推测。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 내일 학교에 갈 거예요.",
+                "en": "I will go to school tomorrow.",
+                "es": "Mañana iré al colegio.",
+                "fr": "J'irai à l'école demain.",
+                "pt": "Amanhã vou à escola.",
+                "kr": "저는 내일 학교에 갈 거예요.",
+                "jp": "私は明日学校に行きます。",
+                "zh": "我明天要去学校。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저녁에 친구를 만날 거예요.",
+                "en": "I will meet a friend in the evening.",
+                "es": "Por la tarde quedaré con un amigo.",
+                "fr": "Je retrouverai un ami ce soir.",
+                "pt": "À noite vou encontrar um amigo.",
+                "kr": "저녁에 친구를 만날 거예요.",
+                "jp": "夕方に友達に会います。",
+                "zh": "晚上要见朋友。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "주말에 집에서 쉴 거예요.",
+                "en": "I will rest at home on the weekend.",
+                "es": "El fin de semana descansaré en casa.",
+                "fr": "Je me reposerai chez moi le week-end.",
+                "pt": "Ao fim de semana vou descansar em casa.",
+                "kr": "주말에 집에서 쉴 거예요.",
+                "jp": "週末に家で休みます。",
+                "zh": "周末要在家休息。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "다음 달에 이사할 거예요.",
+                "en": "I will move next month.",
+                "es": "Me mudaré el próximo mes.",
+                "fr": "Je déménagerai le mois prochain.",
+                "pt": "Vou mudar de casa no próximo mês.",
+                "kr": "다음 달에 이사할 거예요.",
+                "jp": "来月引っ越します。",
+                "zh": "下个月要搬家。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "동생은 내년에 대학교에 갈 거예요.",
+                "en": "My younger sibling will go to university next year.",
+                "es": "Mi hermano menor irá a la universidad el año que viene.",
+                "fr": "Mon petit frère ira à l'université l'année prochaine.",
+                "pt": "O meu irmão mais novo vai para a universidade no próximo ano.",
+                "kr": "동생은 내년에 대학교에 갈 거예요.",
+                "jp": "弟は来年大学に行きます。",
+                "zh": "弟弟明年要上大学。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "오늘 저녁에 비가 올 거예요.",
+                "en": "It will rain this evening.",
+                "es": "Esta tarde lloverá.",
+                "fr": "Il pleuvra ce soir.",
+                "pt": "Esta noite vai chover.",
+                "kr": "오늘 저녁에 비가 올 거예요.",
+                "jp": "今日の夕方に雨が降ります。",
+                "zh": "今天晚上会下雨。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이번 주말에는 여행을 안 갈 거예요.",
+                "en": "I will not travel this weekend.",
+                "es": "Este fin de semana no viajaré.",
+                "fr": "Je ne voyagerai pas ce week-end.",
+                "pt": "Este fim de semana não vou viajar.",
+                "kr": "이번 주말에는 여행을 안 갈 거예요.",
+                "jp": "今週末は旅行に行きません。",
+                "zh": "这个周末不去旅行。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 다음 주에 시험을 볼 거예요.",
+                "en": "I will take an exam next week.",
+                "es": "La próxima semana haré un examen.",
+                "fr": "Je passerai un examen la semaine prochaine.",
+                "pt": "Na próxima semana vou fazer um exame.",
+                "kr": "저는 다음 주에 시험을 볼 거예요.",
+                "jp": "私は来週試験を受けます。",
+                "zh": "我下周要考试。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "선생님은 아마 늦게 오실 거예요.",
+                "en": "The teacher will probably come late.",
+                "es": "El profesor probablemente llegará tarde.",
+                "fr": "Le professeur arrivera probablement en retard.",
+                "pt": "O professor provavelmente vai chegar tarde.",
+                "kr": "선생님은 아마 늦게 오실 거예요.",
+                "jp": "先生はたぶん遅く来られます。",
+                "zh": "老师大概会晚点来。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 영화는 정말 재미있을 거예요.",
+                "en": "This movie will probably be really fun.",
+                "es": "Esta película será muy divertida.",
+                "fr": "Ce film sera vraiment amusant.",
+                "pt": "Este filme vai ser mesmo divertido.",
+                "kr": "이 영화는 정말 재미있을 거예요.",
+                "jp": "この映画は本当に面白いでしょう。",
+                "zh": "这部电影一定很有意思。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 절대 포기하지 않을 거예요.",
+                "en": "I will never give up.",
+                "es": "Nunca me rendiré.",
+                "fr": "Je n'abandonnerai jamais.",
+                "pt": "Nunca vou desistir.",
+                "kr": "저는 절대 포기하지 않을 거예요.",
+                "jp": "私は絶対に諦めません。",
+                "zh": "我绝对不会放弃。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "내년에는 상황이 좋아질 거예요.",
+                "en": "Next year the situation will get better.",
+                "es": "El año que viene la situación mejorará.",
+                "fr": "L'année prochaine la situation s'améliorera.",
+                "pt": "No próximo ano a situação vai melhorar.",
+                "kr": "내년에는 상황이 좋아질 거예요.",
+                "jp": "来年は状況が良くなります。",
+                "zh": "明年情况会好转。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

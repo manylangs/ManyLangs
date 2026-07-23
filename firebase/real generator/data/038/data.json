@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "series": "real",
+    "level": "a2",
+    "id": "018",
+    "targetLang": null
+  },
+  "topic": "A woman holding groceries",
+  "keywords": [
+    "woman",
+    "groceries",
+    "shopping bag",
+    "market street",
+    "walking"
+  ],
+  "tts": {
+    "kr": [],
+    "en": [],
+    "es": [],
+    "fr": [],
+    "pt": [],
+    "jp": [],
+    "zh": []
+  },
+  "blocks": [
+    {
+      "type": "image",
+      "src": "018.png"
+    },
+    {
+      "type": "description",
+      "sentences": [
+        {
+          "texts": {
+            "kr": "한 여성이 장을 본 가방을 들고 작은 시장 거리를 걸어가고 있다.",
+            "en": "A woman is walking along a small market street holding a bag of groceries.",
+            "es": "Una mujer camina por una pequeña calle del mercado sosteniendo una bolsa de compras.",
+            "fr": "Une femme marche dans une petite rue du marché en tenant un sac de courses.",
+            "pt": "Uma mulher caminha por uma pequena rua de mercado segurando uma sacola de compras.",
+            "jp": "一人の女の人が買い物袋を持って、小さい市場の通りを歩いています。",
+            "zh": "一个女人提着购物袋，走在一条小市场街上。"
+          }
+        },
+        {
+          "texts": {
+            "kr": "가방 윗부분에는 신선한 채소와 빵 한 덩이가 보인다.",
+            "en": "Fresh vegetables and a loaf of bread are visible at the top of the bag.",
+            "es": "Verduras frescas y una barra de pan son visibles en la parte superior de la bolsa.",
+            "fr": "Des légumes frais et une baguette sont visibles en haut du sac.",
+            "pt": "Legumes frescos e um pão são visíveis na parte superior da sacola.",
+            "jp": "袋の上の部分には新鮮な野菜とパン一斤が見えます。",
+            "zh": "袋子上方能看到新鲜蔬菜和一条面包。"
+          }
+        },
+        {
+          "texts": {
+            "kr": "뒤쪽 과일가게에는 알록달록한 사과와 오렌지가 진열되어 있다.",
+            "en": "A fruit shop behind her displays colorful apples and oranges.",
+            "es": "Una frutería detrás de ella muestra manzanas y naranjas de colores.",
+            "fr": "Une boutique de fruits derrière elle expose des pommes et des oranges colorées.",
+            "pt": "Uma loja de frutas atrás dela exibe maçãs e laranjas coloridas.",
+            "jp": "彼女の後ろの果物屋には、カラフルなりんごとオレンジが並んでいます。",
+            "zh": "她身后的水果店里摆放着五颜六色的苹果和橙子。"
+          }
+        },
+        {
+          "texts": {
+            "kr": "그녀는 따뜻한 오후 날씨를 즐기며 살짝 미소 짓는다.",
+            "en": "The woman smiles slightly as she enjoys the warm afternoon weather.",
+            "es": "La mujer sonríe levemente mientras disfruta del clima cálido de la tarde.",
+            "fr": "La femme sourit légèrement en profitant du temps chaud de l’après-midi.",
+            "pt": "A mulher sorri levemente enquanto aproveita o clima quente da tarde.",
+            "jp": "女の人は暖かい午後の天気を楽しみながら、少し微笑みます。",
+            "zh": "女人享受着温暖的午后天气，微微一笑。"
+          }
+        },
+        {
+          "texts": {
+            "kr": "방문했던 가게 입구 근처에는 자전거 한 대가 세워져 있다.",
+            "en": "A bicycle is parked near the entrance of the shop she just visited.",
+            "es": "Una bicicleta está estacionada cerca de la entrada de la tienda que acaba de visitar.",
+            "fr": "Un vélo est garé près de l’entrée du magasin qu’elle vient de visiter.",
+            "pt": "Uma bicicleta está estacionada perto da entrada da loja que ela acabou de visitar.",
+            "jp": "彼女が訪れたお店の入り口の近くには、自転車が一台停めてあります。",
+            "zh": "她刚才去过的商店入口附近停着一辆自行车。"
+          }
+        },
+        {
+          "texts": {
+            "kr": "그녀는 바람에 흩날린 머리카락 한 가닥을 자유로운 손으로 쓸어 넘긴다.",
+            "en": "She uses her free hand to brush away a strand of hair moved by the breeze.",
+            "es": "Usa su mano libre para apartar un mechón de cabello movido por la brisa.",
+            "fr": "Elle utilise sa main libre pour écarter une mèche de cheveux déplacée par la brise.",
+            "pt": "Ela usa a mão livre para afastar uma mecha de cabelo movida pela brisa.",
+            "jp": "彼女は空いている手で、風で乱れた髪の毛を一房払います。",
+            "zh": "她用空着的那只手拂开被微风吹乱的一缕头发。"
+          }
+        }
+      ]
+    }
+  ]
+}

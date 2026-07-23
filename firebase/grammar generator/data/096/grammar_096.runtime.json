@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "B1_KO_AS_MUCH_AS",
+        "level": "b1",
+        "id": "096"
+    },
+    "title": {
+        "target": "-(으)ㄴ/는 만큼",
+        "en": "-(으)ㄴ/는 만큼 (As much as / To the extent that)",
+        "es": "-(으)ㄴ/는 만큼 (Tanto como / En la medida en que)",
+        "fr": "-(으)ㄴ/는 만큼 (Autant que / Dans la mesure où)",
+        "pt": "-(으)ㄴ/는 만큼 (Tanto quanto / Na medida em que)",
+        "kr": "-(으)ㄴ/는 만큼",
+        "jp": "-(으)ㄴ/는 만큼(~だけに、~ほど)",
+        "zh": "-(으)ㄴ/는 만큼(正因为……所以)"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "만큼은 앞 내용의 정도나 근거가 뒤 내용의 정도와 비슷하거나 그 이유가 됨을 나타내는 표현이다.",
+                "en": "만큼 is an expression that shows the degree or basis of the preceding content is similar to, or serves as the reason for, the following content.",
+                "es": "만큼 es una expresión que muestra que el grado o el fundamento del contenido anterior es similar al del contenido siguiente, o sirve de razón para este.",
+                "fr": "만큼 est une expression qui montre que le degré ou le fondement du contenu précédent est semblable à celui qui suit, ou en constitue la raison.",
+                "pt": "만큼 é uma expressão que mostra que o grau ou o fundamento do conteúdo anterior é semelhante ao do conteúdo seguinte, ou serve de razão para ele.",
+                "kr": "만큼은 앞 내용의 정도나 근거가 뒤 내용의 정도와 비슷하거나 그 이유가 됨을 나타내는 표현이다.",
+                "jp": "만큼は、前の内容の程度や根拠が後の内容の程度と似ているか、その理由になることを表す表現である。",
+                "zh": "만큼是表示前面内容的程度或依据与后面内容的程度相似，或成为其原因的表达方式。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사에는 -는 만큼, 형용사와 이다에는 받침 유무에 따라 -은/ㄴ 만큼이 붙고 과거는 -았/었던 만큼으로 쓴다.",
+                "en": "Verbs take -는 만큼, adjectives and 이다 take -은/ㄴ 만큼 depending on whether the stem ends in a consonant, and the past form is -았/었던 만큼.",
+                "es": "Los verbos toman -는 만큼, los adjetivos y 이다 toman -은/ㄴ 만큼 según termine la raíz en consonante o no, y el pasado se expresa con -았/었던 만큼.",
+                "fr": "Les verbes prennent -는 만큼, les adjectifs et 이다 prennent -은/ㄴ 만큼 selon que le radical se termine par une consonne ou non, et le passé s'exprime avec -았/었던 만큼.",
+                "pt": "Os verbos tomam -는 만큼, os adjetivos e 이다 tomam -은/ㄴ 만큼 conforme o radical termine em consoante ou não, e o passado usa-se -았/었던 만큼.",
+                "kr": "동사에는 -는 만큼, 형용사와 이다에는 받침 유무에 따라 -은/ㄴ 만큼이 붙고 과거는 -았/었던 만큼으로 쓴다.",
+                "jp": "動詞には-는 만큼、形容詞と이다にはパッチムの有無に応じて-은/ㄴ 만큼が付き、過去は-았/었던 만큼を使う。",
+                "zh": "动词后接-는 만큼，形容词及이다根据词干末尾是否带收音接-은/ㄴ 만큼，过去时则使用-았/었던 만큼。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "정도를 비교할 때와 이유를 밝힐 때 두 가지 용법으로만 쓰이며 단순한 나열에는 쓰지 않는다.",
+                "en": "It's used only in two functions, comparing degree and stating a reason, and not for simple enumeration.",
+                "es": "Se usa únicamente en dos funciones, comparar el grado y expresar una razón, y no para una simple enumeración.",
+                "fr": "Elle s'emploie uniquement dans deux fonctions, comparer un degré et exprimer une raison, et non pour une simple énumération.",
+                "pt": "Usa-se apenas em duas funções, comparar o grau e expressar uma razão, e não para uma simples enumeração.",
+                "kr": "정도를 비교할 때와 이유를 밝힐 때 두 가지 용법으로만 쓰이며 단순한 나열에는 쓰지 않는다.",
+                "jp": "程度を比較する場合と理由を示す場合の二つの用法にのみ使われ、単純な羅列には使われない。",
+                "zh": "该语法只用于比较程度和说明理由这两种用法，不用于单纯的罗列。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "기 때문에가 이유만을 단순히 밝히는 것과 달리 만큼은 정도가 그만큼 크다는 근거의 무게까지 함께 전달한다.",
+                "en": "Unlike -기 때문에, which simply states a reason alone, 만큼 also conveys the weight of a basis whose degree is just that great.",
+                "es": "A diferencia de -기 때문에, que simplemente expresa una razón, 만큼 también transmite el peso de un fundamento cuyo grado es igual de grande.",
+                "fr": "Contrairement à -기 때문에, qui exprime simplement une raison, 만큼 transmet aussi le poids d'un fondement dont le degré est tout aussi grand.",
+                "pt": "Ao contrário de -기 때문에, que apenas expressa uma razão, 만큼 também transmite o peso de um fundamento cujo grau é igualmente grande.",
+                "kr": "기 때문에가 이유만을 단순히 밝히는 것과 달리 만큼은 정도가 그만큼 크다는 근거의 무게까지 함께 전달한다.",
+                "jp": "-기 때문에が理由だけを単純に示すのとは異なり、만큼は程度がそれだけ大きいという根拠の重みまで一緒に伝える。",
+                "zh": "与仅仅单纯说明理由的-기 때문에不同，만큼还一并传达出程度之大所带来的依据分量。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "명사 뒤에는 만큼이 조사로 바로 붙어 그 명사와 비슷한 정도라는 뜻을 간단히 표현할 수 있다.",
+                "en": "After a noun, 만큼 attaches directly as a particle to simply express a degree similar to that noun.",
+                "es": "Tras un sustantivo, 만큼 se une directamente como partícula para expresar de forma sencilla un grado similar al de ese sustantivo.",
+                "fr": "Après un nom, 만큼 s'ajoute directement comme particule pour exprimer simplement un degré semblable à celui de ce nom.",
+                "pt": "Depois de um substantivo, 만큼 junta-se diretamente como partícula para exprimir de forma simples um grau semelhante ao desse substantivo.",
+                "kr": "명사 뒤에는 만큼이 조사로 바로 붙어 그 명사와 비슷한 정도라는 뜻을 간단히 표현할 수 있다.",
+                "jp": "名詞の後には만큼が助詞としてそのまま付き、その名詞と似た程度という意味を簡単に表すことができる。",
+                "zh": "在名词后可直接以助词만큼附加，简单表达与该名词相似程度的意思。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "노력한 만큼 결과가 좋았어요.",
+                "en": "The result was good, to the extent that I made an effort.",
+                "es": "El resultado fue bueno, en la medida en que me esforcé.",
+                "fr": "Le résultat a été bon, à la mesure de mes efforts.",
+                "pt": "O resultado foi bom, na medida em que me esforcei.",
+                "kr": "노력한 만큼 결과가 좋았어요.",
+                "jp": "努力した分、結果が良かったです。",
+                "zh": "付出了多少努力，就得到了多好的结果。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 일은 중요한 만큼 신중하게 처리해야 해요.",
+                "en": "This work needs to be handled carefully, given how important it is.",
+                "es": "Este trabajo debe manejarse con cuidado, dado lo importante que es.",
+                "fr": "Ce travail doit être traité avec prudence, étant donné son importance.",
+                "pt": "Este trabalho deve ser tratado com cuidado, dada a sua importância.",
+                "kr": "이 일은 중요한 만큼 신중하게 처리해야 해요.",
+                "jp": "この仕事は重要な分、慎重に処理しなければなりません。",
+                "zh": "这件事很重要，所以要谨慎处理。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 먹는 만큼 운동도 열심히 해요.",
+                "en": "I exercise hard, to the same extent that I eat.",
+                "es": "Hago ejercicio con esfuerzo, en la misma medida en que como.",
+                "fr": "Je fais du sport avec autant d'ardeur que je mange.",
+                "pt": "Faço exercício com o mesmo empenho com que como.",
+                "kr": "저는 먹는 만큼 운동도 열심히 해요.",
+                "jp": "私は食べる分だけ、運動も一生懸命します。",
+                "zh": "我吃多少，就会同样努力地运动多少。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "값이 비싼 만큼 품질도 좋아요.",
+                "en": "The quality is good, to the extent that the price is expensive.",
+                "es": "La calidad es buena, en la medida en que el precio es caro.",
+                "fr": "La qualité est bonne, à la mesure du prix élevé.",
+                "pt": "A qualidade é boa, na medida em que o preço é caro.",
+                "kr": "값이 비싼 만큼 품질도 좋아요.",
+                "jp": "値段が高い分、品質もいいです。",
+                "zh": "价格贵，品质也相应地好。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "시간이 부족한 만큼 서둘러야 해요.",
+                "en": "We need to hurry, since time is short.",
+                "es": "Hay que darse prisa, ya que el tiempo es escaso.",
+                "fr": "Il faut se dépêcher, étant donné que le temps est court.",
+                "pt": "É preciso apressar-nos, visto que o tempo é escasso.",
+                "kr": "시간이 부족한 만큼 서둘러야 해요.",
+                "jp": "時間が足りない分、急がなければなりません。",
+                "zh": "时间不够，所以要抓紧。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "경험이 많은 만큼 실수가 적어요.",
+                "en": "There are few mistakes, given how much experience there is.",
+                "es": "Hay pocos errores, dada la gran experiencia que hay.",
+                "fr": "Il y a peu d'erreurs, étant donné la grande expérience.",
+                "pt": "Há poucos erros, dada a grande experiência que existe.",
+                "kr": "경험이 많은 만큼 실수가 적어요.",
+                "jp": "経験が多い分、ミスが少ないです。",
+                "zh": "经验丰富，失误也就少。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "약속을 지킨 만큼 믿음이 생겼어요.",
+                "en": "Trust grew, to the extent that the promise was kept.",
+                "es": "Se generó confianza, en la medida en que se cumplió la promesa.",
+                "fr": "La confiance s'est installée, à la mesure de la promesse tenue.",
+                "pt": "Nasceu confiança, na medida em que a promessa foi cumprida.",
+                "kr": "약속을 지킨 만큼 믿음이 생겼어요.",
+                "jp": "約束を守った分、信頼が生まれました。",
+                "zh": "遵守了承诺，也因此建立了信任。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "책임이 큰 만큼 부담도 느껴져요.",
+                "en": "I feel pressure, to the extent that the responsibility is great.",
+                "es": "Siento presión, en la medida en que la responsabilidad es grande.",
+                "fr": "Je ressens une pression, à la mesure de la grande responsabilité.",
+                "pt": "Sinto pressão, na medida em que a responsabilidade é grande.",
+                "kr": "책임이 큰 만큼 부담도 느껴져요.",
+                "jp": "責任が大きい分、プレッシャーも感じます。",
+                "zh": "责任大，压力也随之而来。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이번 시험은 중요한 만큼 다들 최선을 다했어요.",
+                "en": "Since this exam was so important, everyone did their best.",
+                "es": "Como este examen era tan importante, todos dieron lo mejor de sí.",
+                "fr": "Cet examen étant si important, tout le monde a fait de son mieux.",
+                "pt": "Como este exame era tão importante, todos deram o seu melhor.",
+                "kr": "이번 시험은 중요한 만큼 다들 최선을 다했어요.",
+                "jp": "今回の試験は重要な分、みんな最善を尽くしました。",
+                "zh": "这次考试很重要，所以大家都尽了全力。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "실력이 뛰어난 만큼 겸손하기도 해요.",
+                "en": "That person is also humble, to the extent that their skill is outstanding.",
+                "es": "Esa persona también es humilde, en la medida en que su habilidad es sobresaliente.",
+                "fr": "Cette personne est aussi humble, à la mesure de son talent exceptionnel.",
+                "pt": "Essa pessoa também é humilde, na medida em que a sua capacidade é excecional.",
+                "kr": "실력이 뛰어난 만큼 겸손하기도 해요.",
+                "jp": "実力が優れている分、謙虚でもあります。",
+                "zh": "实力出众，同时也很谦逊。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "사람들이 기대한 만큼 실망도 컸어요.",
+                "en": "The disappointment was great, to the same extent that people had expected.",
+                "es": "La decepción fue grande, en la misma medida en que la gente había esperado.",
+                "fr": "La déception a été grande, à la mesure des attentes des gens.",
+                "pt": "A desilusão foi grande, na mesma medida em que as pessoas esperavam.",
+                "kr": "사람들이 기대한 만큼 실망도 컸어요.",
+                "jp": "人々が期待した分、失望も大きかったです。",
+                "zh": "人们期待有多高，失望也就有多大。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "말을 조심해야 하는 만큼 미리 생각하고 이야기해요.",
+                "en": "Since one must be careful with words, I think it over before speaking.",
+                "es": "Como hay que tener cuidado con las palabras, pienso antes de hablar.",
+                "fr": "Comme il faut faire attention aux mots, je réfléchis avant de parler.",
+                "pt": "Como é preciso ter cuidado com as palavras, penso antes de falar.",
+                "kr": "말을 조심해야 하는 만큼 미리 생각하고 이야기해요.",
+                "jp": "言葉に気をつけなければならない分、あらかじめ考えてから話します。",
+                "zh": "说话需要谨慎，所以我会先想好再开口。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

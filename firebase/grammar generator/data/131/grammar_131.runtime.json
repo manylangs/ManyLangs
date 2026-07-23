@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "B2_KO_CHANGE_OVER_TIME",
+        "level": "b2",
+        "id": "131"
+    },
+    "title": {
+        "target": "아/어 가면서",
+        "en": "-아/어 가면서 (while gradually doing)",
+        "es": "-아/어 가면서 (mientras se hace progresivamente)",
+        "fr": "-아/어 가면서 (en faisant progressivement)",
+        "pt": "-아/어 가면서 (enquanto se faz progressivamente)",
+        "kr": "아/어 가면서",
+        "jp": "～ていきながら（徐々に～しながら）",
+        "zh": "一边逐渐……一边……"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사에 -아/어 가면서를 붙이면 어떤 행동이나 상태가 점차 진행되는 과정과 동시에 다른 일이 일어남을 나타낸다.",
+                "en": "Attaching -아/어 가면서 to a verb shows that an action or state gradually progresses while another event happens at the same time.",
+                "es": "Al añadir -아/어 가면서 a un verbo, se indica que una acción o estado avanza poco a poco mientras ocurre otra cosa al mismo tiempo.",
+                "fr": "En ajoutant -아/어 가면서 à un verbe, on indique qu'une action ou un état progresse peu à peu pendant qu'un autre événement se produit en même temps.",
+                "pt": "Ao acrescentar -아/어 가면서 a um verbo, indica-se que uma ação ou estado avança pouco a pouco enquanto outra coisa acontece ao mesmo tempo.",
+                "kr": "동사에 -아/어 가면서를 붙이면 어떤 행동이나 상태가 점차 진행되는 과정과 동시에 다른 일이 일어남을 나타낸다.",
+                "jp": "動詞に-아/어 가면서を付けると、ある行動や状態が徐々に進行する過程と同時に、他のことが起こることを表す。",
+                "zh": "在动词后加上-아/어 가면서，表示某个行为或状态逐渐推进的同时，还发生着另一件事。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "앞 절의 동작이 시간의 흐름에 따라 조금씩 변화하거나 발전하는 모습을 보이며, 그 과정이 뒤 절의 상황과 나란히 진행된다는 점을 보여준다.",
+                "en": "The action in the first clause shows gradual change or development over time, and this process unfolds alongside the situation in the second clause.",
+                "es": "La acción de la primera cláusula muestra un cambio o desarrollo gradual con el paso del tiempo, y ese proceso avanza junto con la situación de la segunda cláusula.",
+                "fr": "L'action de la première proposition montre un changement ou un développement progressif au fil du temps, et ce processus se déroule parallèlement à la situation de la seconde proposition.",
+                "pt": "A ação da primeira oração mostra uma mudança ou desenvolvimento gradual ao longo do tempo, e esse processo avança em paralelo com a situação da segunda oração.",
+                "kr": "앞 절의 동작이 시간의 흐름에 따라 조금씩 변화하거나 발전하는 모습을 보이며, 그 과정이 뒤 절의 상황과 나란히 진행된다는 점을 보여준다.",
+                "jp": "前の節の動作が時間の流れとともに少しずつ変化したり発展したりする様子を示し、その過程が後ろの節の状況と並行して進むことを表す。",
+                "zh": "前一小句的动作随着时间的推移一点点地发生变化或发展，同时这一过程与后一小句的情况并行推进。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "형용사에는 결합할 수 없고 점진적 변화나 진행의 의미를 담을 수 있는 동사에만 사용되며, 앞뒤 절의 주어가 서로 다르면 자연스럽지 않다.",
+                "en": "It cannot combine with adjectives and is used only with verbs capable of expressing gradual change or progress, and it sounds unnatural when the subjects of the two clauses differ.",
+                "es": "No puede combinarse con adjetivos y solo se usa con verbos que puedan expresar un cambio o progreso gradual, y resulta poco natural si los sujetos de ambas cláusulas son diferentes.",
+                "fr": "Elle ne peut pas s'associer à des adjectifs et n'est utilisée qu'avec des verbes pouvant exprimer un changement ou une progression graduelle, et elle sonne peu naturelle si les sujets des deux propositions diffèrent.",
+                "pt": "Não pode combinar-se com adjetivos e só é usada com verbos que possam exprimir uma mudança ou progresso gradual, soando pouco natural quando os sujeitos das duas orações são diferentes.",
+                "kr": "형용사에는 결합할 수 없고 점진적 변화나 진행의 의미를 담을 수 있는 동사에만 사용되며, 앞뒤 절의 주어가 서로 다르면 자연스럽지 않다.",
+                "jp": "形容詞には結合できず、漸進的な変化や進行の意味を含み得る動詞にのみ使われ、前後の節の主語が互いに異なると自然ではない。",
+                "zh": "不能与形容词结合，只能用于能表达渐进变化或进行意义的动词，若前后小句的主语不同则显得不自然。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "단순한 동시 동작을 나타내는 -(으)면서와 달리, 시간에 따른 변화나 발전의 뉘앙스를 함께 담아낸다는 차이가 있다.",
+                "en": "Unlike -(으)면서, which simply expresses simultaneous actions, this form also carries the nuance of change or development over time.",
+                "es": "A diferencia de -(으)면서, que simplemente expresa acciones simultáneas, esta forma también incluye el matiz de cambio o desarrollo con el tiempo.",
+                "fr": "Contrairement à -(으)면서, qui exprime simplement des actions simultanées, cette forme comporte aussi la nuance d'un changement ou d'un développement dans le temps.",
+                "pt": "Ao contrário de -(으)면서, que apenas exprime ações simultâneas, esta forma também traz a nuance de mudança ou desenvolvimento ao longo do tempo.",
+                "kr": "단순한 동시 동작을 나타내는 -(으)면서와 달리, 시간에 따른 변화나 발전의 뉘앙스를 함께 담아낸다는 차이가 있다.",
+                "jp": "単純な同時動作を表す-(으)면서とは異なり、時間の経過に伴う変化や発展のニュアンスも一緒に含むという違いがある。",
+                "zh": "与单纯表示同时动作的-(으)면서不同，这个表达还带有随时间变化或发展的语感。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "모음 축약 규칙을 지키지 않고 어간과 어미를 따로 적는 실수가 흔하므로, 배우다처럼 축약이 일어나는 동사는 형태 변화에 유의해야 한다.",
+                "en": "A common mistake is writing the stem and ending separately without applying vowel contraction, so verbs like 배우다 that undergo contraction require careful attention to their form.",
+                "es": "Un error frecuente es escribir la raíz y la terminación por separado sin aplicar la contracción vocálica, por lo que verbos como 배우다, que sufren contracción, requieren atención a su forma.",
+                "fr": "Une erreur fréquente consiste à écrire le radical et la terminaison séparément sans appliquer la contraction vocalique, aussi des verbes comme 배우다, qui subissent une contraction, exigent une attention particulière à leur forme.",
+                "pt": "Um erro comum é escrever o radical e a terminação separadamente sem aplicar a contração vocálica, pelo que verbos como 배우다, que sofrem contração, exigem atenção à sua forma.",
+                "kr": "모음 축약 규칙을 지키지 않고 어간과 어미를 따로 적는 실수가 흔하므로, 배우다처럼 축약이 일어나는 동사는 형태 변화에 유의해야 한다.",
+                "jp": "母音縮約の規則を守らず語幹と語尾を別々に書く間違いが多いため、배우다のように縮約が起こる動詞は形の変化に注意しなければならない。",
+                "zh": "常见的错误是不遵守元音缩略规则，把词干和词尾分开写，因此像배우다这类会发生缩略的动词需要特别注意其形态变化。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "아이가 자라 가면서 성격도 조금씩 변했다.",
+                "en": "As the child grew up, their personality gradually changed too.",
+                "es": "A medida que el niño crecía, su personalidad también cambió poco a poco.",
+                "fr": "À mesure que l'enfant grandissait, sa personnalité changeait aussi peu à peu.",
+                "pt": "À medida que a criança crescia, a personalidade também foi mudando pouco a pouco.",
+                "kr": "아이가 자라 가면서 성격도 조금씩 변했다.",
+                "jp": "子どもが育っていくにつれて性格も少しずつ変わりました。",
+                "zh": "随着孩子渐渐长大，性格也一点点发生了变化。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "한국어를 배워 가면서 문화에도 관심이 생겼다.",
+                "en": "While gradually learning Korean, I also became interested in the culture.",
+                "es": "Mientras aprendía coreano poco a poco, también me interesé por la cultura.",
+                "fr": "En apprenant le coréen petit à petit, je me suis aussi intéressé à la culture.",
+                "pt": "Enquanto ia aprendendo coreano pouco a pouco, também me interessei pela cultura.",
+                "kr": "한국어를 배워 가면서 문화에도 관심이 생겼다.",
+                "jp": "韓国語を学んでいきながら文化にも興味が湧きました。",
+                "zh": "在逐渐学习韩语的过程中，也开始对文化产生了兴趣。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "회사가 성장해 가면서 직원 수도 늘어났다.",
+                "en": "As the company grew, the number of employees also increased.",
+                "es": "A medida que la empresa crecía, el número de empleados también aumentó.",
+                "fr": "À mesure que l'entreprise se développait, le nombre d'employés augmentait aussi.",
+                "pt": "À medida que a empresa ia crescendo, o número de funcionários também aumentava.",
+                "kr": "회사가 성장해 가면서 직원 수도 늘어났다.",
+                "jp": "会社が成長していくにつれて社員の数も増えました。",
+                "zh": "随着公司逐渐发展壮大，员工人数也随之增加。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "시간이 지나 가면서 두 사람은 서로 이해하게 되었다.",
+                "en": "As time passed, the two people came to understand each other.",
+                "es": "A medida que pasaba el tiempo, los dos llegaron a entenderse.",
+                "fr": "Au fil du temps, les deux personnes ont fini par se comprendre.",
+                "pt": "Com o passar do tempo, as duas pessoas passaram a entender-se.",
+                "kr": "시간이 지나 가면서 두 사람은 서로 이해하게 되었다.",
+                "jp": "時間が過ぎていくにつれて二人はお互いを理解するようになりました。",
+                "zh": "随着时间的流逝，两个人渐渐理解了彼此。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "요리 실력이 늘어 가면서 자신감도 커졌다.",
+                "en": "As my cooking skills improved, my confidence also grew.",
+                "es": "A medida que mejoraba mi habilidad para cocinar, también crecía mi confianza.",
+                "fr": "Au fur et à mesure que mes compétences en cuisine s'amélioraient, ma confiance grandissait aussi.",
+                "pt": "À medida que a minha habilidade para cozinhar ia melhorando, a confiança também crescia.",
+                "kr": "요리 실력이 늘어 가면서 자신감도 커졌다.",
+                "jp": "料理の腕が伸びていくにつれて自信も大きくなりました。",
+                "zh": "随着厨艺逐渐提高，自信心也随之增强。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "나이가 들어 가면서 건강을 더 신경 쓰게 되었다.",
+                "en": "As I got older, I started paying more attention to my health.",
+                "es": "A medida que envejecía, empecé a cuidar más mi salud.",
+                "fr": "En vieillissant, j'ai commencé à faire plus attention à ma santé.",
+                "pt": "À medida que ia envelhecendo, comecei a cuidar mais da saúde.",
+                "kr": "나이가 들어 가면서 건강을 더 신경 쓰게 되었다.",
+                "jp": "年を取っていくにつれて健康にもっと気を遣うようになりました。",
+                "zh": "随着年纪渐长，也开始更加注意健康了。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "계획을 세워 가면서 문제점을 하나씩 발견했다.",
+                "en": "While gradually working out the plan, I discovered problems one by one.",
+                "es": "Mientras iba elaborando el plan, fui descubriendo problemas uno a uno.",
+                "fr": "En élaborant progressivement le plan, j'ai découvert des problèmes un par un.",
+                "pt": "Enquanto ia elaborando o plano, fui descobrindo problemas um a um.",
+                "kr": "계획을 세워 가면서 문제점을 하나씩 발견했다.",
+                "jp": "計画を立てていきながら問題点を一つずつ発見しました。",
+                "zh": "在逐步制定计划的过程中，一个个发现了问题所在。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "두 나라의 관계가 발전해 가면서 교류도 활발해졌다.",
+                "en": "As relations between the two countries developed, exchanges also became more active.",
+                "es": "A medida que se desarrollaban las relaciones entre los dos países, los intercambios también se intensificaron.",
+                "fr": "À mesure que les relations entre les deux pays se développaient, les échanges devenaient aussi plus actifs.",
+                "pt": "À medida que as relações entre os dois países se desenvolviam, os intercâmbios também se tornavam mais ativos.",
+                "kr": "두 나라의 관계가 발전해 가면서 교류도 활발해졌다.",
+                "jp": "両国の関係が発展していくにつれて交流も活発になりました。",
+                "zh": "随着两国关系不断发展，交流也变得更加活跃。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "프로젝트를 진행해 가면서 팀원 간의 신뢰도 쌓여 갔다.",
+                "en": "While carrying out the project step by step, trust among team members also built up.",
+                "es": "Mientras se llevaba a cabo el proyecto poco a poco, también se fue generando confianza entre los miembros del equipo.",
+                "fr": "En menant le projet petit à petit, la confiance entre les membres de l'équipe s'est aussi construite.",
+                "pt": "Enquanto o projeto ia sendo realizado pouco a pouco, a confiança entre os membros da equipa também se foi construindo.",
+                "kr": "프로젝트를 진행해 가면서 팀원 간의 신뢰도 쌓여 갔다.",
+                "jp": "プロジェクトを進めていきながらチームメンバー間の信頼も積み重なっていきました。",
+                "zh": "在逐步推进项目的过程中，团队成员之间的信任也逐渐建立起来。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "경제가 회복해 가면서 소비 심리도 살아났다.",
+                "en": "As the economy gradually recovered, consumer sentiment also revived.",
+                "es": "A medida que la economía se iba recuperando, la confianza del consumidor también se reactivó.",
+                "fr": "À mesure que l'économie se redressait progressivement, le moral des consommateurs se ranimait aussi.",
+                "pt": "À medida que a economia ia recuperando, a confiança do consumidor também se reanimava.",
+                "kr": "경제가 회복해 가면서 소비 심리도 살아났다.",
+                "jp": "経済が回復していくにつれて消費心理も持ち直しました。",
+                "zh": "随着经济逐渐复苏，消费心理也重新活跃起来。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "아이들이 커 가면서 부모의 역할도 달라진다.",
+                "en": "As children grow up, the parents' role also changes.",
+                "es": "A medida que los niños van creciendo, el papel de los padres también cambia.",
+                "fr": "À mesure que les enfants grandissent, le rôle des parents change aussi.",
+                "pt": "À medida que os filhos vão crescendo, o papel dos pais também muda.",
+                "kr": "아이들이 커 가면서 부모의 역할도 달라진다.",
+                "jp": "子どもたちが成長していくにつれて親の役割も変わります。",
+                "zh": "随着孩子们逐渐长大，父母的角色也随之改变。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "대화를 나눠 가면서 오해가 조금씩 풀렸다.",
+                "en": "While gradually having the conversation, the misunderstanding slowly resolved.",
+                "es": "Mientras iban conversando poco a poco, el malentendido se fue resolviendo.",
+                "fr": "En discutant petit à petit, le malentendu s'est peu à peu dissipé.",
+                "pt": "Enquanto iam conversando pouco a pouco, o mal-entendido foi-se resolvendo pouco a pouco.",
+                "kr": "대화를 나눠 가면서 오해가 조금씩 풀렸다.",
+                "jp": "対話を交わしていきながら誤解が少しずつ解けました。",
+                "zh": "在逐步交谈的过程中，误会一点点得到了化解。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

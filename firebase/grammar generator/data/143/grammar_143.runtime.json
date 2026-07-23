@@ -1,0 +1,254 @@
+{
+    "meta": {
+        "series": "C1_KO_HYPOTHETICAL",
+        "level": "c1",
+        "id": "143"
+    },
+    "title": {
+        "target": "-(으)ㄴ들",
+        "en": "Even If... (Rhetorical Concession)",
+        "es": "Aunque... (concesión retórica)",
+        "fr": "Même si... (concession rhétorique)",
+        "pt": "Mesmo que... (concessão retórica)",
+        "kr": "-(으)ㄴ들",
+        "jp": "たとえ～したところで（修辞的譲歩）",
+        "zh": "即便……又（反问式让步）"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "가정이 이루어진다 해도 결과가 달라지지 않음을 전제로 인정할 때 사용하는 표현이다. 동사나 형용사 어간에 받침 유무에 따라 -ㄴ들 또는 -은들이 결합한다.",
+                "en": "This expression is used to acknowledge a hypothetical situation while presupposing that the outcome will not change. It attaches to a verb or adjective stem as -ㄴ들 or -은들 depending on whether the stem ends in a consonant.",
+                "es": "Esta expresión se usa para admitir una situación hipotética partiendo de que el resultado no cambiará. Se combina con la raíz de un verbo o adjetivo como -ㄴ들 o -은들 según si la raíz termina en consonante.",
+                "fr": "Cette expression sert à admettre une situation hypothétique en partant du principe que le résultat ne changera pas. Elle se combine avec le radical d'un verbe ou d'un adjectif sous la forme -ㄴ들 ou -은들 selon que le radical se termine par une consonne.",
+                "pt": "Esta expressão é usada para admitir uma situação hipotética partindo do princípio de que o resultado não vai mudar. Combina-se com a raiz de um verbo ou adjetivo como -ㄴ들 ou -은들, consoante a raiz termine ou não em consoante.",
+                "kr": "가정이 이루어진다 해도 결과가 달라지지 않음을 전제로 인정할 때 사용하는 표현이다. 동사나 형용사 어간에 받침 유무에 따라 -ㄴ들 또는 -은들이 결합한다.",
+                "jp": "仮定が実現したとしても結果が変わらないことを前提として認めるときに使う表現である。動詞や形容詞の語幹に、終声の有無によって「-ㄴ들」または「-은들」が結合する。",
+                "zh": "该表达用于在承认某一假设的同时，以结果不会改变为前提。它根据词干是否以辅音结尾，以“-ㄴ들”或“-은들”的形式连接在动词或形容词词干之后。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "뒤에 오는 절은 앞선 가정이 실질적인 변화를 가져오지 못한다는 결론으로 이어진다. 흔히 반어적인 의문형으로 마무리되어 화자의 단정적인 태도를 드러낸다.",
+                "en": "The following clause leads to a conclusion that the preceding hypothesis brings no real change. It is often closed with a rhetorical question form, revealing the speaker's firm attitude.",
+                "es": "La cláusula siguiente conduce a la conclusión de que la hipótesis anterior no provoca ningún cambio real. A menudo se cierra con una pregunta retórica que revela la actitud tajante del hablante.",
+                "fr": "La proposition qui suit aboutit à la conclusion que l'hypothèse précédente n'entraîne aucun changement réel. Elle se termine souvent par une tournure rhétorique qui révèle l'attitude catégorique du locuteur.",
+                "pt": "A oração seguinte conduz à conclusão de que a hipótese anterior não provoca nenhuma mudança real. Frequentemente termina com uma forma retórica que revela a atitude categórica do falante.",
+                "kr": "뒤에 오는 절은 앞선 가정이 실질적인 변화를 가져오지 못한다는 결론으로 이어진다. 흔히 반어적인 의문형으로 마무리되어 화자의 단정적인 태도를 드러낸다.",
+                "jp": "後に続く節は、前の仮定が実質的な変化をもたらさないという結論へとつながる。多くの場合、反語的な疑問形で締めくくられ、話し手の断定的な態度を表す。",
+                "zh": "后面的分句会引向前面的假设不会带来实质性变化这一结论。它常以反问的疑问形式结尾，体现说话者断然的态度。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "결합 시 몇 가지 제약이 따른다. 반어적 의문문이나 부정적 결론이 뒤따라야 자연스러운 문장이 된다. 명령형이나 청유형과는 결합할 수 없다. 형용사와 쓰일 때는 상태에 대한 가정을 나타낸다.",
+                "en": "Several constraints apply to its use. A rhetorical question or a negative conclusion must follow for the sentence to sound natural. It cannot combine with imperative or propositive forms. When used with an adjective, it expresses a hypothesis about a state.",
+                "es": "Su uso está sujeto a varias restricciones. Debe ir seguido de una pregunta retórica o una conclusión negativa para que la oración suene natural. No puede combinarse con formas imperativas o propositivas. Cuando se usa con un adjetivo, expresa una hipótesis sobre un estado.",
+                "fr": "Son emploi est soumis à plusieurs contraintes. Il doit être suivi d'une question rhétorique ou d'une conclusion négative pour que la phrase paraisse naturelle. Il ne peut pas se combiner avec l'impératif ni avec le propositif. Utilisé avec un adjectif, il exprime une hypothèse portant sur un état.",
+                "pt": "O seu uso está sujeito a várias restrições. Deve ser seguido de uma pergunta retórica ou de uma conclusão negativa para que a frase soe natural. Não se pode combinar com formas imperativas ou propositivas. Quando usado com um adjetivo, exprime uma hipótese sobre um estado.",
+                "kr": "결합 시 몇 가지 제약이 따른다. 반어적 의문문이나 부정적 결론이 뒤따라야 자연스러운 문장이 된다. 명령형이나 청유형과는 결합할 수 없다. 형용사와 쓰일 때는 상태에 대한 가정을 나타낸다.",
+                "jp": "結合にはいくつかの制約が伴う。反語的な疑問文や否定的な結論が後に続いてこそ自然な文になる。命令形や勧誘形とは結合できない。形容詞と使われるときは、状態についての仮定を表す。",
+                "zh": "其使用受到几点限制。后面必须接反问句或否定性结论，句子才显得自然。它不能与命令形或劝诱形结合。与形容词连用时，表示对某种状态的假设。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "문어체와 격식적인 맥락에서 주로 쓰이며 일상 대화에서는 잘 사용되지 않는다. 비슷한 양보 표현인 -아/어도가 단순한 양보를 나타내는 반면, 이 표현은 결과가 소용없음을 강조하는 수사적 성격이 강하다.",
+                "en": "It is mainly used in written and formal contexts and is rarely found in everyday conversation. While the similar concessive form -아/어도 expresses a simple concession, this expression has a strong rhetorical character emphasizing the futility of the result.",
+                "es": "Se emplea principalmente en contextos escritos y formales y rara vez aparece en la conversación cotidiana. Mientras que la forma concesiva similar -아/어도 expresa una concesión simple, esta expresión tiene un fuerte carácter retórico que subraya la inutilidad del resultado.",
+                "fr": "Elle s'emploie surtout dans des contextes écrits et formels et apparaît rarement dans la conversation quotidienne. Alors que la forme concessive proche -아/어도 exprime une simple concession, cette expression possède un caractère rhétorique marqué qui souligne l'inutilité du résultat.",
+                "pt": "É usada sobretudo em contextos escritos e formais e raramente aparece na conversa quotidiana. Enquanto a forma concessiva semelhante -아/어도 exprime uma concessão simples, esta expressão tem um caráter retórico marcado que sublinha a inutilidade do resultado.",
+                "kr": "문어체와 격식적인 맥락에서 주로 쓰이며 일상 대화에서는 잘 사용되지 않는다. 비슷한 양보 표현인 -아/어도가 단순한 양보를 나타내는 반면, 이 표현은 결과가 소용없음을 강조하는 수사적 성격이 강하다.",
+                "jp": "文語体や格式ばった文脈で主に使われ、日常会話ではあまり使用されない。似た譲歩表現の「-아/어도」が単純な譲歩を表すのに対し、この表現は結果が無駄であることを強調する修辞的な性格が強い。",
+                "zh": "它主要用于书面语和正式语境，在日常对话中很少使用。相似的让步表达“-아/어도”表示单纯的让步，而该表达则具有强烈的修辞色彩，强调结果的徒劳。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "흔히 범하는 실수로는 청유형과 결합시키는 경우가 있는데 이는 반어적 서술로 바꾸어야 한다. 또한 단순 조건으로 오해하여 -(으)면과 혼동하는 경우도 있으므로 결과 불변을 전제하는 양보라는 점을 기억해야 한다. 확장적으로는 후회나 체념의 뉘앙스를 담은 문장에 자주 나타난다.",
+                "en": "A common mistake is combining it with a propositive form, which should instead be changed into a rhetorical statement. It is also often confused with the simple conditional -(으)면, so one must remember that it presupposes an unchanging outcome. As an extended usage, it frequently appears in sentences carrying a nuance of regret or resignation.",
+                "es": "Un error común es combinarla con una forma propositiva, que debe cambiarse por una afirmación retórica. También suele confundirse con la condicional simple -(으)면, por lo que hay que recordar que presupone un resultado inalterable. Como uso extendido, aparece con frecuencia en oraciones con matiz de arrepentimiento o resignación.",
+                "fr": "Une erreur fréquente consiste à la combiner avec une forme propositive, qu'il faut remplacer par une affirmation rhétorique. Elle est aussi souvent confondue avec la conditionnelle simple -(으)면, il faut donc se rappeler qu'elle présuppose un résultat immuable. En emploi étendu, elle apparaît fréquemment dans des phrases teintées de regret ou de résignation.",
+                "pt": "Um erro comum é combiná-la com uma forma propositiva, que deve ser substituída por uma afirmação retórica. Também é frequentemente confundida com a condicional simples -(으)면, pelo que se deve recordar que pressupõe um resultado inalterável. Como uso alargado, aparece com frequência em frases com nuance de arrependimento ou resignação.",
+                "kr": "흔히 범하는 실수로는 청유형과 결합시키는 경우가 있는데 이는 반어적 서술로 바꾸어야 한다. 또한 단순 조건으로 오해하여 -(으)면과 혼동하는 경우도 있으므로 결과 불변을 전제하는 양보라는 점을 기억해야 한다. 확장적으로는 후회나 체념의 뉘앙스를 담은 문장에 자주 나타난다.",
+                "jp": "よく犯す間違いとしては勧誘形と結合させる場合があり、これは反語的な叙述に変えなければならない。また、単純な条件と誤解して「-(으)면」と混同する場合もあるため、結果が変わらないことを前提とする譲歩である点を覚えておく必要がある。拡張的には、後悔や諦めのニュアンスを含む文によく現れる。",
+                "zh": "常犯的错误之一是将其与劝诱形结合，此时应改为反问式陈述。另外，也有人误解为单纯的条件而与“-(으)면”混淆，因此须记住它是以结果不变为前提的让步。作为扩展用法，它常出现在带有后悔或无奈语气的句子中。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "지금 후회한들 무슨 소용이 있으랴.",
+                "en": "Even if I regret it now, what use would it be?",
+                "es": "Aunque me arrepienta ahora, ¿de qué serviría?",
+                "fr": "Même si je le regrette maintenant, à quoi bon ?",
+                "pt": "Mesmo que me arrependa agora, de que serviria isso?",
+                "kr": "지금 후회한들 무슨 소용이 있으랴.",
+                "jp": "今さら後悔したところで、何の意味があるだろうか。",
+                "zh": "即便现在后悔，又有什么用呢。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "아무리 노력한들 결과는 바뀌지 않을 것이다.",
+                "en": "No matter how hard I try, the result will not change.",
+                "es": "Por mucho que me esfuerce, el resultado no cambiará.",
+                "fr": "J'aurai beau faire des efforts, le résultat ne changera pas.",
+                "pt": "Por mais que me esforce, o resultado não vai mudar.",
+                "kr": "아무리 노력한들 결과는 바뀌지 않을 것이다.",
+                "jp": "どんなに努力したところで、結果は変わらないでしょう。",
+                "zh": "即便再怎么努力，结果也不会改变。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그가 온들 상황이 나아지지는 않는다.",
+                "en": "Even if he comes, the situation will not improve.",
+                "es": "Aunque él venga, la situación no mejorará.",
+                "fr": "Même s'il vient, la situation ne s'améliorera pas.",
+                "pt": "Mesmo que ele venha, a situação não vai melhorar.",
+                "kr": "그가 온들 상황이 나아지지는 않는다.",
+                "jp": "彼が来たところで、状況が良くなるわけではありません。",
+                "zh": "即便他来了，情况也不会好转。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "돈이 많은들 행복을 보장하지는 못한다.",
+                "en": "Even having a lot of money does not guarantee happiness.",
+                "es": "Aunque se tenga mucho dinero, no se garantiza la felicidad.",
+                "fr": "Même en ayant beaucoup d'argent, cela ne garantit pas le bonheur.",
+                "pt": "Mesmo tendo muito dinheiro, isso não garante a felicidade.",
+                "kr": "돈이 많은들 행복을 보장하지는 못한다.",
+                "jp": "お金が多いところで、幸せを保証することはできません。",
+                "zh": "即便钱再多，也无法保证幸福。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이제 와서 사과한들 잃어버린 신뢰가 돌아오겠는가.",
+                "en": "Even if I apologize now, would the lost trust come back?",
+                "es": "Aunque me disculpe ahora, ¿volvería la confianza perdida?",
+                "fr": "Même si je présente mes excuses maintenant, la confiance perdue ne reviendra pas pour autant.",
+                "pt": "Mesmo que peça desculpa agora, a confiança perdida não vai voltar.",
+                "kr": "이제 와서 사과한들 잃어버린 신뢰가 돌아오겠는가.",
+                "jp": "今さら謝ったところで、失った信頼が戻ってくるだろうか。",
+                "zh": "事到如今即便道歉，失去的信任还会回来吗。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "밤새 준비한들 시험에 붙는다는 보장은 없다.",
+                "en": "Even if I prepare all night, there is no guarantee of passing the exam.",
+                "es": "Aunque me prepare toda la noche, no hay garantía de aprobar el examen.",
+                "fr": "Même en me préparant toute la nuit, il n'y a aucune garantie de réussir l'examen.",
+                "pt": "Mesmo que me prepare a noite toda, não há garantia de passar no exame.",
+                "kr": "밤새 준비한들 시험에 붙는다는 보장은 없다.",
+                "jp": "徹夜で準備したところで、試験に受かるという保証はありません。",
+                "zh": "即便通宵准备，也不能保证考试合格。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "아무리 뛰어난들 노력하지 않으면 소용없다.",
+                "en": "No matter how talented one is, it is useless without effort.",
+                "es": "Por muy talentoso que se sea, no sirve de nada sin esfuerzo.",
+                "fr": "On aura beau être talentueux, cela ne sert à rien sans effort.",
+                "pt": "Por mais talentoso que se seja, não serve de nada sem esforço.",
+                "kr": "아무리 뛰어난들 노력하지 않으면 소용없다.",
+                "jp": "どんなに優れていたところで、努力しなければ意味がありません。",
+                "zh": "即便再怎么出众，不努力也是徒劳。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "부모라 한들 자식의 인생을 대신 살아 줄 수는 없다.",
+                "en": "Even being a parent, one cannot live their child's life for them.",
+                "es": "Aunque se sea padre, no se puede vivir la vida del hijo en su lugar.",
+                "fr": "Même en étant parent, on ne peut pas vivre la vie de son enfant à sa place.",
+                "pt": "Mesmo sendo pai ou mãe, não se pode viver a vida do filho no seu lugar.",
+                "kr": "부모라 한들 자식의 인생을 대신 살아 줄 수는 없다.",
+                "jp": "親だからといったところで、子どもの人生を代わりに生きてやることはできません。",
+                "zh": "即便是父母，也无法替子女过他们的人生。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "세월이 흐른들 그날의 기억은 잊히지 않는다.",
+                "en": "Even as time passes, the memory of that day will not fade.",
+                "es": "Aunque pase el tiempo, el recuerdo de aquel día no se desvanece.",
+                "fr": "Même si le temps passe, le souvenir de ce jour-là ne s'effacera pas.",
+                "pt": "Mesmo que o tempo passe, a memória daquele dia não se apaga.",
+                "kr": "세월이 흐른들 그날의 기억은 잊히지 않는다.",
+                "jp": "歳月が流れたところで、あの日の記憶は忘れられません。",
+                "zh": "即便岁月流逝，那一天的记忆也不会被忘却。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "사람이 아무리 강한들 자연의 힘 앞에서는 무력하다.",
+                "en": "No matter how strong a person is, they are powerless before nature's force.",
+                "es": "Por muy fuerte que sea una persona, es impotente ante la fuerza de la naturaleza.",
+                "fr": "On aura beau être fort, on est impuissant face à la force de la nature.",
+                "pt": "Por mais forte que seja uma pessoa, é impotente perante a força da natureza.",
+                "kr": "사람이 아무리 강한들 자연의 힘 앞에서는 무력하다.",
+                "jp": "人間がどんなに強いところで、自然の力の前では無力です。",
+                "zh": "即便人再怎么强大，在大自然的力量面前也是无力的。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그 말을 믿은들 달라지는 것은 없었다.",
+                "en": "Even believing those words, nothing changed.",
+                "es": "Aunque se creyera en esas palabras, nada cambió.",
+                "fr": "Même en croyant à ces paroles, rien n'a changé.",
+                "pt": "Mesmo acreditando naquelas palavras, nada mudou.",
+                "kr": "그 말을 믿은들 달라지는 것은 없었다.",
+                "jp": "その言葉を信じたところで、変わるものは何もありませんでした。",
+                "zh": "即便相信了那些话，也没有任何改变。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "백 번을 설명한들 그는 이해하려 하지 않을 것이다.",
+                "en": "Even if explained a hundred times, he will not try to understand.",
+                "es": "Aunque se le explique cien veces, él no intentará entenderlo.",
+                "fr": "Même en expliquant cent fois, il ne cherchera pas à comprendre.",
+                "pt": "Mesmo que se explique cem vezes, ele não vai tentar perceber.",
+                "kr": "백 번을 설명한들 그는 이해하려 하지 않을 것이다.",
+                "jp": "百回説明したところで、彼は理解しようとしないでしょう。",
+                "zh": "即便解释一百遍，他也不会试着去理解。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}
+  
+  

@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A2_KO_PURPOSE",
+        "level": "a2",
+        "id": "060"
+    },
+    "title": {
+        "target": "V-(으)러 가다 / 오다",
+        "en": "Going or Coming to Do Something",
+        "es": "Ir o venir a hacer algo",
+        "fr": "Aller ou venir pour faire quelque chose",
+        "pt": "Ir ou vir para fazer algo",
+        "kr": "V-(으)러 가다 / 오다",
+        "jp": "-(eu)reo gada / oda（~しに行く・来る）",
+        "zh": "-(으)러 가다 / 오다（去/来做~）"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사 어간 뒤에 붙어 이동 행위의 목적을 나타내는 표현이다. 받침이 없는 어간에는 '-러'를, 받침이 있는 어간에는 '-으러'를 붙인다.",
+                "en": "This expression attaches to a verb stem to show the purpose of a movement. If the stem has no final consonant, '-러' is added; if it does, '-으러' is added.",
+                "es": "Esta expresión se une a la raíz de un verbo para indicar el propósito de un desplazamiento. Si la raíz no termina en consonante, se añade '-러'; si termina en consonante, se añade '-으러'.",
+                "fr": "Cette expression s'ajoute au radical d'un verbe pour indiquer le but d'un déplacement. Si le radical ne se termine pas par une consonne, on ajoute '-러' ; s'il se termine par une consonne, on ajoute '-으러'.",
+                "pt": "Esta expressão junta-se à raiz de um verbo para indicar o propósito de uma deslocação. Se a raiz não terminar em consoante, acrescenta-se '-러'; se terminar em consoante, acrescenta-se '-으러'.",
+                "kr": "동사 어간 뒤에 붙어 이동 행위의 목적을 나타내는 표현이다. 받침이 없는 어간에는 '-러'를, 받침이 있는 어간에는 '-으러'를 붙인다.",
+                "jp": "動詞語幹の後ろに付いて移動行為の目的を表す表現である。パッチムのない語幹には「-러」を、パッチムのある語幹には「-으러」を付ける。",
+                "zh": "这个表达接在动词词干后，表示移动行为的目的。词干末尾无收音时加“-러”，有收音时加“-으러”。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "앞 절은 목적이 되는 행위를 나타내고 뒤 절에는 가다, 오다 같은 이동 동사가 온다. 목적을 먼저 말하고 이동 동사를 나중에 배치하는 순서를 따른다.",
+                "en": "The first clause shows the action that is the purpose, and the second clause uses a movement verb like 가다 or 오다. The purpose is stated first, followed by the movement verb.",
+                "es": "La primera cláusula indica la acción que constituye el propósito y la segunda emplea un verbo de movimiento como 가다 u 오다. Primero se expresa el propósito y después se coloca el verbo de movimiento.",
+                "fr": "La première proposition indique l'action qui constitue le but et la seconde utilise un verbe de déplacement comme 가다 ou 오다. Le but est exprimé en premier, suivi du verbe de déplacement.",
+                "pt": "A primeira oração indica a ação que constitui o propósito e a segunda usa um verbo de deslocação como 가다 ou 오다. O propósito é expresso primeiro, seguido do verbo de deslocação.",
+                "kr": "앞 절은 목적이 되는 행위를 나타내고 뒤 절에는 가다, 오다 같은 이동 동사가 온다. 목적을 먼저 말하고 이동 동사를 나중에 배치하는 순서를 따른다.",
+                "jp": "前の節は目的となる行為を表し、後ろの節には가다、오다のような移動動詞が来る。目的を先に述べ、移動動詞を後に置く順序に従う。",
+                "zh": "前一分句表示作为目的的行为，后一分句使用가다、오다之类的移动动词。遵循先说目的、后接移动动词的顺序。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "형용사와는 결합할 수 없고 동작을 나타내는 동사에만 쓰인다. 뒤에는 이동을 뜻하는 동사만 올 수 있으며 다른 동사는 쓸 수 없다. 앞 절과 뒤 절의 주체는 반드시 같아야 한다.",
+                "en": "It cannot combine with adjectives and is used only with action verbs. Only a movement verb can follow, and no other verb is allowed. The subject of both clauses must be the same.",
+                "es": "No puede combinarse con adjetivos y solo se usa con verbos de acción. Solo puede seguirle un verbo de movimiento, y no se permite ningún otro verbo. El sujeto de ambas cláusulas debe ser el mismo.",
+                "fr": "Elle ne peut pas se combiner avec des adjectifs et s'utilise uniquement avec des verbes d'action. Seul un verbe de déplacement peut suivre, aucun autre verbe n'est autorisé. Le sujet des deux propositions doit être identique.",
+                "pt": "Não se pode combinar com adjetivos e usa-se apenas com verbos de ação. Só um verbo de deslocação pode seguir-se, não sendo permitido nenhum outro verbo. O sujeito das duas orações deve ser o mesmo.",
+                "kr": "형용사와는 결합할 수 없고 동작을 나타내는 동사에만 쓰인다. 뒤에는 이동을 뜻하는 동사만 올 수 있으며 다른 동사는 쓸 수 없다. 앞 절과 뒤 절의 주체는 반드시 같아야 한다.",
+                "jp": "形容詞とは結び付けられず、動作を表す動詞にのみ使われる。後ろには移動を意味する動詞しか来ることができず、他の動詞は使えない。前後の節の主体は必ず同じでなければならない。",
+                "zh": "不能与形容词结合，只能用于表示动作的动词。后面只能接表示移动的动词，不能使用其他动词。前后分句的主体必须相同。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "'-기 위해서'는 여러 동사와 폭넓게 결합하지만 이 표현은 반드시 이동 동사와만 쓰인다는 차이가 있다. 격식과 비격식 상황 모두에서 형태 변화 없이 동일하게 쓰인다.",
+                "en": "Unlike '-기 위해서', which combines broadly with many verbs, this expression must be used only with movement verbs. It is used the same way in both formal and informal situations without changing form.",
+                "es": "A diferencia de '-기 위해서', que se combina ampliamente con muchos verbos, esta expresión debe usarse solo con verbos de movimiento. Se emplea igual en situaciones formales e informales sin cambiar de forma.",
+                "fr": "Contrairement à '-기 위해서', qui se combine largement avec de nombreux verbes, cette expression doit s'utiliser uniquement avec des verbes de déplacement. Elle s'emploie de la même façon dans les situations formelles et informelles, sans changer de forme.",
+                "pt": "Ao contrário de '-기 위해서', que se combina amplamente com muitos verbos, esta expressão deve usar-se apenas com verbos de deslocação. Emprega-se da mesma forma em situações formais e informais, sem alterar a forma.",
+                "kr": "'-기 위해서'는 여러 동사와 폭넓게 결합하지만 이 표현은 반드시 이동 동사와만 쓰인다는 차이가 있다. 격식과 비격식 상황 모두에서 형태 변화 없이 동일하게 쓰인다.",
+                "jp": "「-기 위해서」は様々な動詞と幅広く結び付くが、この表現は必ず移動動詞とのみ使われるという違いがある。改まった場面でも打ち解けた場面でも形を変えずに同じように使われる。",
+                "zh": "“-기 위해서”可以广泛地与多种动词结合，而这个表达必须只与移动动词一起使用，这是二者的区别。无论在正式还是非正式场合，形式都不发生变化，用法相同。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "받침이 있는 어간 뒤에서 '-러'만 붙이는 실수가 흔하니 주의해야 한다. 목적어가 있을 때는 목적어를 동사 앞에 두고 그 뒤에 이 표현을 연결한다.",
+                "en": "Care is needed because attaching only '-러' after a stem with a final consonant is a common mistake. When there is an object, it is placed before the verb, followed by this expression.",
+                "es": "Hay que tener cuidado porque añadir solo '-러' tras una raíz terminada en consonante es un error frecuente. Cuando hay un objeto, se coloca antes del verbo y después se une esta expresión.",
+                "fr": "Il faut faire attention, car ajouter seulement '-러' après un radical se terminant par une consonne est une erreur fréquente. Lorsqu'il y a un complément d'objet, celui-ci se place avant le verbe, suivi de cette expression.",
+                "pt": "É preciso ter cuidado, pois acrescentar apenas '-러' depois de uma raiz terminada em consoante é um erro frequente. Quando há um objeto, este coloca-se antes do verbo, seguido desta expressão.",
+                "kr": "받침이 있는 어간 뒤에서 '-러'만 붙이는 실수가 흔하니 주의해야 한다. 목적어가 있을 때는 목적어를 동사 앞에 두고 그 뒤에 이 표현을 연결한다.",
+                "jp": "パッチムのある語幹の後ろに「-러」だけを付ける間違いがよくあるため注意が必要である。目的語がある場合は、目的語を動詞の前に置き、その後にこの表現をつなげる。",
+                "zh": "在有收音的词干后面只加“-러”是常见的错误，需要注意。有宾语时，将宾语放在动词前面，然后再连接这个表达。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "친구와 점심을 먹으러 식당에 가요.",
+                "en": "I'm going to a restaurant to eat lunch with a friend.",
+                "es": "Voy a un restaurante a comer el almuerzo con un amigo.",
+                "fr": "Je vais dans un restaurant pour déjeuner avec un ami.",
+                "pt": "Vou a um restaurante almoçar com um amigo.",
+                "kr": "친구와 점심을 먹으러 식당에 가요.",
+                "jp": "友達と昼ご飯を食べに食堂に行きます。",
+                "zh": "我要和朋友去餐厅吃午饭。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "오랜만에 친구를 만나러 카페에 가요.",
+                "en": "I'm going to the café to meet a friend after a long time.",
+                "es": "Voy a la cafetería a ver a un amigo después de mucho tiempo.",
+                "fr": "Je vais au café pour retrouver un ami après longtemps.",
+                "pt": "Vou ao café encontrar um amigo depois de muito tempo.",
+                "kr": "오랜만에 친구를 만나러 카페에 가요.",
+                "jp": "久しぶりに友達に会いにカフェに行きます。",
+                "zh": "我要去咖啡厅见久违的朋友。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "한국어 책을 빌리러 도서관에 가요.",
+                "en": "I'm going to the library to borrow a Korean book.",
+                "es": "Voy a la biblioteca a pedir prestado un libro de coreano.",
+                "fr": "Je vais à la bibliothèque pour emprunter un livre de coréen.",
+                "pt": "Vou à biblioteca pedir emprestado um livro de coreano.",
+                "kr": "한국어 책을 빌리러 도서관에 가요.",
+                "jp": "韓国語の本を借りに図書館に行きます。",
+                "zh": "我要去图书馆借韩语书。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "새로 나온 영화를 보러 극장에 가요.",
+                "en": "I'm going to the theater to watch a newly released movie.",
+                "es": "Voy al cine a ver una película recién estrenada.",
+                "fr": "Je vais au cinéma pour voir un film qui vient de sortir.",
+                "pt": "Vou ao cinema ver um filme recém-lançado.",
+                "kr": "새로 나온 영화를 보러 극장에 가요.",
+                "jp": "新しく出た映画を見に映画館に行きます。",
+                "zh": "我要去电影院看新上映的电影。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "어제 백화점에 옷을 사러 갔어요.",
+                "en": "Yesterday I went to the department store to buy clothes.",
+                "es": "Ayer fui a los grandes almacenes a comprar ropa.",
+                "fr": "Hier, je suis allé au grand magasin pour acheter des vêtements.",
+                "pt": "Ontem fui aos grandes armazéns comprar roupa.",
+                "kr": "어제 백화점에 옷을 사러 갔어요.",
+                "jp": "昨日デパートに服を買いに行きました。",
+                "zh": "昨天我去百货商店买衣服了。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "내일 아침에 운동하러 공원에 갈 거예요.",
+                "en": "Tomorrow morning I will go to the park to exercise.",
+                "es": "Mañana por la mañana iré al parque a hacer ejercicio.",
+                "fr": "Demain matin, j'irai au parc pour faire du sport.",
+                "pt": "Amanhã de manhã vou ao parque fazer exercício.",
+                "kr": "내일 아침에 운동하러 공원에 갈 거예요.",
+                "jp": "明日の朝、運動しに公園に行くつもりです。",
+                "zh": "明天早上我要去公园锻炼身体。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저녁을 먹으러 집에 일찍 왔어요.",
+                "en": "I came home early to eat dinner.",
+                "es": "Vine a casa temprano a cenar.",
+                "fr": "Je suis rentré tôt à la maison pour dîner.",
+                "pt": "Vim cedo para casa jantar.",
+                "kr": "저녁을 먹으러 집에 일찍 왔어요.",
+                "jp": "夕食を食べに家に早く帰ってきました。",
+                "zh": "我早早回家吃晚饭了。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "주말에 친구가 놀러 우리 집에 왔어요.",
+                "en": "A friend came to my house to hang out on the weekend.",
+                "es": "Un amigo vino a mi casa a pasar el rato el fin de semana.",
+                "fr": "Un ami est venu chez moi pour passer du temps le week-end.",
+                "pt": "Um amigo veio a minha casa conviver no fim de semana.",
+                "kr": "주말에 친구가 놀러 우리 집에 왔어요.",
+                "jp": "週末に友達が遊びにうちに来ました。",
+                "zh": "周末朋友来我家玩了。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "졸업한 선생님을 만나러 학교에 다시 갔어요.",
+                "en": "I went back to school to meet the teacher after graduating.",
+                "es": "Volví a la escuela a ver al profesor después de graduarme.",
+                "fr": "Je suis retourné à l'école pour rencontrer le professeur après avoir obtenu mon diplôme.",
+                "pt": "Voltei à escola para encontrar o professor depois de me formar.",
+                "kr": "졸업한 선생님을 만나러 학교에 다시 갔어요.",
+                "jp": "卒業後、先生に会いにもう一度学校に行きました。",
+                "zh": "毕业后我又回学校去见老师了。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "가을 풍경을 사진으로 찍으러 여행을 떠났어요.",
+                "en": "I set off on a trip to photograph the autumn scenery.",
+                "es": "Emprendí un viaje para fotografiar el paisaje otoñal.",
+                "fr": "Je suis parti en voyage pour photographier le paysage automnal.",
+                "pt": "Parti em viagem para fotografar a paisagem outonal.",
+                "kr": "가을 풍경을 사진으로 찍으러 여행을 떠났어요.",
+                "jp": "秋の風景を写真に撮りに旅行に出かけました。",
+                "zh": "我出发去旅行，拍摄秋天的风景。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "가족에게 소포를 부치러 우체국에 들렀어요.",
+                "en": "I stopped by the post office to mail a package to my family.",
+                "es": "Pasé por la oficina de correos a enviar un paquete a mi familia.",
+                "fr": "Je suis passé à la poste pour envoyer un colis à ma famille.",
+                "pt": "Passei pelos correios para enviar uma encomenda à minha família.",
+                "kr": "가족에게 소포를 부치러 우체국에 들렀어요.",
+                "jp": "家族に小包を送りに郵便局に寄りました。",
+                "zh": "我顺路去邮局给家人寄了包裹。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "무거운 짐을 옮기러 트럭이 새벽에 왔어요.",
+                "en": "A truck came at dawn to move the heavy luggage.",
+                "es": "Un camión vino de madrugada a trasladar el equipaje pesado.",
+                "fr": "Un camion est venu à l'aube pour déplacer les bagages lourds.",
+                "pt": "Veio um camião de madrugada para transportar a bagagem pesada.",
+                "kr": "무거운 짐을 옮기러 트럭이 새벽에 왔어요.",
+                "jp": "重い荷物を運びにトラックが明け方来ました。",
+                "zh": "卡车凌晨来搬运了沉重的行李。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

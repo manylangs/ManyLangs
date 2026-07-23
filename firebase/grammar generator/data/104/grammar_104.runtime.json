@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "B1_KO_PURPOSE_ADV",
+        "level": "b1",
+        "id": "104"
+    },
+    "title": {
+        "target": "V-도록",
+        "en": "-도록 (so that / to the extent that)",
+        "es": "-도록 (para que / hasta el punto de que)",
+        "fr": "-도록 (pour que / au point que)",
+        "pt": "-도록 (para que / ao ponto de)",
+        "kr": "V-도록",
+        "jp": "V-도록(〜するように/〜する程度に)",
+        "zh": "V-도록(为了……/以便……)"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "뒤 절의 행동이 이루어지도록 목적이나 기준, 결과의 정도를 제시하는 연결 표현이다. 동사 어간에 받침 유무와 관계없이 그대로 결합한다.",
+                "en": "This connective expression presents a purpose, standard, or degree of result so that the action in the following clause can be achieved. It attaches directly to the verb stem regardless of whether the stem ends in a consonant.",
+                "es": "Esta expresión conectiva presenta un propósito, un criterio o un grado de resultado para que se cumpla la acción de la cláusula siguiente. Se une directamente a la raíz del verbo, sin importar si termina en consonante.",
+                "fr": "Cette expression de liaison présente un but, un critère ou un degré de résultat afin que l'action de la proposition suivante puisse se réaliser. Elle s'attache directement au radical du verbe, que celui-ci se termine ou non par une consonne.",
+                "pt": "Esta expressão conectiva apresenta uma finalidade, um critério ou um grau de resultado para que a ação da oração seguinte se realize. Junta-se diretamente ao radical do verbo, independentemente de este terminar ou não em consoante.",
+                "kr": "뒤 절의 행동이 이루어지도록 목적이나 기준, 결과의 정도를 제시하는 연결 표현이다. 동사 어간에 받침 유무와 관계없이 그대로 결합한다.",
+                "jp": "後の節の行動が成し遂げられるように、目的や基準、結果の程度を提示する連結表現である。動詞の語幹にパッチムの有無に関係なくそのまま結合する。",
+                "zh": "这是一种连接表达,用来提出目的、标准或结果的程度,以促成后半句所述的动作实现。它直接接在动词词干后面,无论词干末尾是否带收音都以相同方式结合。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "앞 절이 뒤 절의 목표나 정도를 설정하고 뒤 절은 그 목표를 이루기 위한 행동이나 명령, 부탁을 담는 순서로 배열된다. 앞 절의 주어와 뒤 절의 주어가 달라도 문제없이 쓰인다.",
+                "en": "The preceding clause sets the goal or degree, and the following clause contains the action, command, or request aimed at achieving it, arranged in that order. The subjects of the two clauses can differ without any issue.",
+                "es": "La cláusula anterior establece el objetivo o el grado, y la cláusula siguiente contiene la acción, la orden o la petición dirigida a alcanzarlo, organizadas en ese orden. Los sujetos de ambas cláusulas pueden ser distintos sin ningún problema.",
+                "fr": "La proposition précédente fixe l'objectif ou le degré, et la proposition suivante contient l'action, l'ordre ou la demande visant à l'atteindre, disposés dans cet ordre. Les sujets des deux propositions peuvent être différents sans problème.",
+                "pt": "A oração anterior estabelece o objetivo ou o grau, e a oração seguinte contém a ação, a ordem ou o pedido destinado a alcançá-lo, dispostos nessa ordem. Os sujeitos das duas orações podem ser diferentes sem qualquer problema.",
+                "kr": "앞 절이 뒤 절의 목표나 정도를 설정하고 뒤 절은 그 목표를 이루기 위한 행동이나 명령, 부탁을 담는 순서로 배열된다. 앞 절의 주어와 뒤 절의 주어가 달라도 문제없이 쓰인다.",
+                "jp": "前の節が後の節の目標や程度を設定し、後の節はその目標を達成するための行動や命令、依頼を含む順序で配列される。前の節の主語と後の節の主語が異なっても問題なく使われる。",
+                "zh": "前半句设定后半句的目标或程度,后半句则依此顺序包含为了实现该目标而做出的行动、命令或请求。前后分句的主语即使不同也可以使用。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "뒤 절에는 명령문이나 청유문, 의지를 담은 문장이 자연스럽게 오지만 이미 끝난 과거 사실을 서술하는 절에는 쓸 수 없다. 형용사와는 결합하지 않고 동사에만 붙는다는 제약도 함께 지켜야 한다.",
+                "en": "The following clause naturally takes an imperative, propositive, or intention-bearing sentence, but this form cannot be used with a clause stating an already completed past fact. It must also be kept in mind that it combines only with verbs, not with adjectives.",
+                "es": "La cláusula siguiente admite de forma natural una oración imperativa, propositiva o con intención, pero esta forma no puede usarse con una cláusula que exprese un hecho pasado ya concluido. También debe respetarse la restricción de que solo se combina con verbos, no con adjetivos.",
+                "fr": "La proposition suivante accueille naturellement une phrase impérative, propositive ou exprimant une intention, mais cette forme ne peut pas être utilisée avec une proposition énonçant un fait passé déjà achevé. Il faut aussi respecter la restriction selon laquelle elle ne se combine qu'avec des verbes, pas avec des adjectifs.",
+                "pt": "A oração seguinte admite naturalmente uma frase imperativa, propositiva ou com intenção, mas esta forma não pode ser usada com uma oração que enuncie um facto passado já concluído. Deve também respeitar-se a restrição de que se combina apenas com verbos, não com adjetivos.",
+                "kr": "뒤 절에는 명령문이나 청유문, 의지를 담은 문장이 자연스럽게 오지만 이미 끝난 과거 사실을 서술하는 절에는 쓸 수 없다. 형용사와는 결합하지 않고 동사에만 붙는다는 제약도 함께 지켜야 한다.",
+                "jp": "後の節には命令文や勧誘文、意志を含む文が自然に来るが、すでに終わった過去の事実を述べる節には使えない。形容詞とは結合せず動詞にのみ付くという制約も一緒に守らなければならない。",
+                "zh": "后半句自然会接命令句、共动句或表示意志的句子,但不能用于陈述已经结束的过去事实的分句。此外,还必须遵守只能接动词、不能接形容词的限制。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "\"-(으)려고\"가 화자 자신의 단순한 의도만 나타내는 데 비해 이 표현은 목표에 도달하기 위한 기준이나 정도까지 함께 제시한다는 점에서 다르다. 문어체와 구어체 모두에서 격식 차이 없이 두루 쓰인다.",
+                "en": "It differs from '-(으)려고', which expresses only the speaker's simple intention, in that this form also presents the standard or degree needed to reach the goal. It is widely used in both written and spoken registers with no difference in formality.",
+                "es": "Se diferencia de '-(으)려고', que expresa solo la simple intención del hablante, en que esta forma también presenta el criterio o el grado necesario para alcanzar el objetivo. Se usa ampliamente tanto en el registro escrito como en el hablado, sin diferencia de formalidad.",
+                "fr": "Elle se distingue de '-(으)려고', qui exprime seulement la simple intention du locuteur, en ce que cette forme présente aussi le critère ou le degré nécessaire pour atteindre l'objectif. Elle s'emploie largement à l'écrit comme à l'oral, sans différence de formalité.",
+                "pt": "Distingue-se de '-(으)려고', que exprime apenas a simples intenção do falante, pelo facto de esta forma apresentar também o critério ou o grau necessário para alcançar o objetivo. É amplamente usada tanto no registo escrito como no oral, sem diferença de formalidade.",
+                "kr": "\"-(으)려고\"가 화자 자신의 단순한 의도만 나타내는 데 비해 이 표현은 목표에 도달하기 위한 기준이나 정도까지 함께 제시한다는 점에서 다르다. 문어체와 구어체 모두에서 격식 차이 없이 두루 쓰인다.",
+                "jp": "「-(으)려고」が話者自身の単純な意図だけを示すのに比べ、この表現は目標に到達するための基準や程度まで一緒に提示するという点で異なる。文語体と口語体のどちらでも格式の差なく広く使われる。",
+                "zh": "与仅表示说话人自身单纯意图的\"-(으)려고\"不同,这个表达还同时提出了达到目标所需的标准或程度。无论书面语还是口语,都可以毫无格式差异地广泛使用。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "형용사 어간에 잘못 붙여 \"예쁘도록\"처럼 쓰는 실수가 흔하므로 동사인지 먼저 확인해야 한다. 뒤 절에 과거형을 붙여 \"갔도록\"처럼 쓰는 것도 흔한 오류이므로 주의해야 한다.",
+                "en": "Attaching it incorrectly to an adjective stem, as in the mistaken form '예쁘도록', is a common error, so it should first be checked whether the word is a verb. Attaching a past-tense ending afterward, as in '갔도록', is also a frequent mistake that requires caution.",
+                "es": "Añadirlo incorrectamente a la raíz de un adjetivo, como en la forma errónea '예쁘도록', es un error frecuente, por lo que primero debe comprobarse si la palabra es un verbo. Añadir después una terminación de pasado, como en '갔도록', también es un error habitual que requiere atención.",
+                "fr": "L'attacher incorrectement au radical d'un adjectif, comme dans la forme erronée '예쁘도록', est une erreur fréquente ; il faut donc d'abord vérifier s'il s'agit d'un verbe. Ajouter ensuite une terminaison de passé, comme dans '갔도록', est également une erreur courante qui demande de la vigilance.",
+                "pt": "Juntá-lo incorretamente ao radical de um adjetivo, como na forma incorreta '예쁘도록', é um erro comum, pelo que se deve primeiro verificar se a palavra é um verbo. Acrescentar depois uma terminação de passado, como em '갔도록', é também um erro frequente que exige atenção.",
+                "kr": "형용사 어간에 잘못 붙여 \"예쁘도록\"처럼 쓰는 실수가 흔하므로 동사인지 먼저 확인해야 한다. 뒤 절에 과거형을 붙여 \"갔도록\"처럼 쓰는 것도 흔한 오류이므로 주의해야 한다.",
+                "jp": "形容詞の語幹に誤って付けて「예쁘도록」のように使う間違いが多いため、まず動詞かどうかを確認しなければならない。後に過去形を付けて「갔도록」のように使うこともよくある誤りなので注意しなければならない。",
+                "zh": "常见的错误是把它误接在形容词词干后,写成\"예쁘도록\"这样的形式,因此要先确认是否为动词。此外,在其后再接过去时词尾,写成\"갔도록\"这样的形式,也是常见的错误,需要注意。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "아이가 잘 자도록 조용히 해 주세요.",
+                "en": "Please be quiet so that the child can sleep well.",
+                "es": "Guarda silencio para que el niño pueda dormir bien.",
+                "fr": "Faites silence pour que l'enfant puisse bien dormir.",
+                "pt": "Faz silêncio para que a criança possa dormir bem.",
+                "kr": "아이가 잘 자도록 조용히 해 주세요.",
+                "jp": "子供がよく眠れるように静かにしてください。",
+                "zh": "请安静一点,好让孩子睡好。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "감기에 걸리지 않도록 옷을 따뜻하게 입으세요.",
+                "en": "Please dress warmly so that you don't catch a cold.",
+                "es": "Vístete con ropa de abrigo para no resfriarte.",
+                "fr": "Habillez-vous chaudement pour ne pas attraper froid.",
+                "pt": "Veste-te com roupa quente para não apanhares uma constipação.",
+                "kr": "감기에 걸리지 않도록 옷을 따뜻하게 입으세요.",
+                "jp": "風邪をひかないように服を暖かく着てください。",
+                "zh": "请穿暖和一点,以免感冒。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "늦지 않도록 일찍 출발합시다.",
+                "en": "Let's leave early so that we won't be late.",
+                "es": "Salgamos temprano para no llegar tarde.",
+                "fr": "Partons tôt pour ne pas être en retard.",
+                "pt": "Vamos sair cedo para não chegarmos atrasados.",
+                "kr": "늦지 않도록 일찍 출발합시다.",
+                "jp": "遅れないように早く出発しましょう。",
+                "zh": "我们早点出发吧,以免迟到。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "모두 이해할 수 있도록 천천히 설명해 주세요.",
+                "en": "Please explain slowly so that everyone can understand.",
+                "es": "Explica despacio para que todos puedan entender.",
+                "fr": "Expliquez lentement pour que tout le monde puisse comprendre.",
+                "pt": "Explica devagar para que todos possam entender.",
+                "kr": "모두 이해할 수 있도록 천천히 설명해 주세요.",
+                "jp": "みんなが理解できるようにゆっくり説明してください。",
+                "zh": "请慢慢解释,好让大家都能理解。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "손님이 편하게 앉도록 의자를 준비했어요.",
+                "en": "I prepared chairs so that the guests could sit comfortably.",
+                "es": "Preparé sillas para que los invitados se sentaran cómodamente.",
+                "fr": "J'ai préparé des chaises pour que les invités puissent s'asseoir confortablement.",
+                "pt": "Preparei cadeiras para que os convidados se sentassem confortavelmente.",
+                "kr": "손님이 편하게 앉도록 의자를 준비했어요.",
+                "jp": "お客さんが楽に座れるように椅子を用意しました。",
+                "zh": "我准备了椅子,好让客人坐得舒服。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "물건이 떨어지지 않도록 잘 묶어 놓았어요.",
+                "en": "I tied it up well so that the item wouldn't fall.",
+                "es": "Lo até bien para que el objeto no se cayera.",
+                "fr": "Je l'ai bien attaché pour que l'objet ne tombe pas.",
+                "pt": "Amarrei bem para que o objeto não caísse.",
+                "kr": "물건이 떨어지지 않도록 잘 묶어 놓았어요.",
+                "jp": "物が落ちないようにしっかり縛っておきました。",
+                "zh": "我把它绑好了,以免东西掉下来。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "회의가 오래 걸리지 않도록 안건을 미리 정리했어요.",
+                "en": "I organized the agenda in advance so that the meeting wouldn't take long.",
+                "es": "Organicé el orden del día con antelación para que la reunión no se alargara.",
+                "fr": "J'ai préparé l'ordre du jour à l'avance pour que la réunion ne s'éternise pas.",
+                "pt": "Organizei a agenda com antecedência para que a reunião não se prolongasse.",
+                "kr": "회의가 오래 걸리지 않도록 안건을 미리 정리했어요.",
+                "jp": "会議が長引かないように議題を事前に整理しました。",
+                "zh": "我提前整理了议程,以免会议拖得太久。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "학생들이 규칙을 지키도록 선생님이 여러 번 말씀하셨어요.",
+                "en": "The teacher spoke up several times so that the students would follow the rules.",
+                "es": "El profesor lo repitió varias veces para que los estudiantes cumplieran las normas.",
+                "fr": "Le professeur l'a répété plusieurs fois pour que les élèves respectent les règles.",
+                "pt": "O professor repetiu várias vezes para que os alunos cumprissem as regras.",
+                "kr": "학생들이 규칙을 지키도록 선생님이 여러 번 말씀하셨어요.",
+                "jp": "学生たちが規則を守るように先生が何度もおっしゃいました。",
+                "zh": "为了让学生们遵守规则,老师多次强调了这一点。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "회사는 직원들이 능력을 발휘하도록 다양한 기회를 제공한다.",
+                "en": "The company provides various opportunities so that employees can showcase their abilities.",
+                "es": "La empresa ofrece diversas oportunidades para que los empleados demuestren sus capacidades.",
+                "fr": "L'entreprise offre diverses opportunités pour que les employés puissent démontrer leurs compétences.",
+                "pt": "A empresa oferece diversas oportunidades para que os funcionários demonstrem as suas capacidades.",
+                "kr": "회사는 직원들이 능력을 발휘하도록 다양한 기회를 제공한다.",
+                "jp": "会社は社員が能力を発揮できるように様々な機会を提供する。",
+                "zh": "公司提供各种机会,让员工能够发挥自己的能力。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "정부는 국민이 안전하게 생활하도록 여러 정책을 마련했다.",
+                "en": "The government established various policies so that citizens can live safely.",
+                "es": "El gobierno estableció diversas políticas para que los ciudadanos puedan vivir con seguridad.",
+                "fr": "Le gouvernement a mis en place diverses politiques pour que les citoyens puissent vivre en sécurité.",
+                "pt": "O governo estabeleceu diversas políticas para que os cidadãos possam viver com segurança.",
+                "kr": "정부는 국민이 안전하게 생활하도록 여러 정책을 마련했다.",
+                "jp": "政府は国民が安全に生活できるように様々な政策を用意した。",
+                "zh": "政府制定了多项政策,以便国民能够安全地生活。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "환자가 빨리 회복되도록 의사가 세심하게 치료했다.",
+                "en": "The doctor treated the patient carefully so that he would recover quickly.",
+                "es": "El médico lo trató con esmero para que el paciente se recuperara rápido.",
+                "fr": "Le médecin l'a soigné avec soin pour que le patient se rétablisse rapidement.",
+                "pt": "O médico tratou-o com cuidado para que o paciente recuperasse rapidamente.",
+                "kr": "환자가 빨리 회복되도록 의사가 세심하게 치료했다.",
+                "jp": "患者が早く回復するように医者が丁寧に治療した。",
+                "zh": "医生细心地治疗,以便患者能够尽快康复。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "같은 실수를 반복하지 않도록 기록을 꼼꼼히 남겨 두었다.",
+                "en": "I kept careful records so that the same mistake wouldn't be repeated.",
+                "es": "Guardé registros minuciosos para que no se repitiera el mismo error.",
+                "fr": "J'ai conservé des notes minutieuses pour que la même erreur ne se répète pas.",
+                "pt": "Mantive registos minuciosos para que o mesmo erro não se repetisse.",
+                "kr": "같은 실수를 반복하지 않도록 기록을 꼼꼼히 남겨 두었다.",
+                "jp": "同じ失敗を繰り返さないように記録を丁寧に残しておいた。",
+                "zh": "我细致地做了记录,以免重复同样的错误。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A1_KO_AND_THEN",
+        "level": "a1",
+        "id": "031"
+    },
+    "title": {
+        "target": "V-아서/어서 (순차)",
+        "en": "V-아서/어서 (Sequential)",
+        "es": "V-아서/어서 (secuencial)",
+        "fr": "V-아서/어서 (séquentiel)",
+        "pt": "V-아서/어서 (sequencial)",
+        "kr": "V-아서/어서 (순차)",
+        "jp": "V-아서/어서 (継起)",
+        "zh": "V-아서/어서 (顺序)"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사 어간에 -아서나 -어서를 붙이면 앞 동작이 먼저 일어나고 이어서 뒤 동작이 일어남을 나타낸다.",
+                "en": "Attaching -아서 or -어서 to a verb stem shows that one action happens first and is followed by another.",
+                "es": "Añadir -아서 o -어서 a la raíz del verbo indica que una acción ocurre primero y luego sigue otra.",
+                "fr": "Ajouter -아서 ou -어서 au radical du verbe indique qu'une action se produit d'abord, suivie d'une autre.",
+                "pt": "Acrescentar -아서 ou -어서 à raiz do verbo indica que uma ação acontece primeiro e é seguida por outra.",
+                "kr": "동사 어간에 -아서나 -어서를 붙이면 앞 동작이 먼저 일어나고 이어서 뒤 동작이 일어남을 나타낸다.",
+                "jp": "動詞の語幹に-아서や-어서を付けると、前の動作が先に起こり、続けて後の動作が起こることを表す。",
+                "zh": "在动词词干后加上-아서或-어서，表示前面的动作先发生，接着发生后面的动作。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "앞 절의 동작이 완료된 상태를 유지한 채 뒤 절의 동작으로 자연스럽게 이어지며, 앞 절 바로 뒤에 뒤 절이 온다.",
+                "en": "The result of the first clause's action stays in effect while it naturally leads into the second clause, which follows right after.",
+                "es": "El resultado de la acción de la primera cláusula se mantiene mientras conduce de forma natural a la segunda, que aparece justo después.",
+                "fr": "Le résultat de l'action de la première proposition se maintient tout en menant naturellement à la seconde, placée juste après.",
+                "pt": "O resultado da ação da primeira oração mantém-se enquanto conduz naturalmente à segunda, que vem logo a seguir.",
+                "kr": "앞 절의 동작이 완료된 상태를 유지한 채 뒤 절의 동작으로 자연스럽게 이어지며, 앞 절 바로 뒤에 뒤 절이 온다.",
+                "jp": "前節の動作が完了した状態を保ったまま後節の動作へ自然につながり、前節の直後に後節が来る。",
+                "zh": "前面分句的动作完成后其状态得以保持，并自然过渡到后面分句的动作，后面分句紧接在前面分句之后。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "앞뒤 절의 주어는 반드시 같아야 하며, 앞 절에는 과거나 미래를 나타내는 어미가 올 수 없다. 두 동작은 의미적으로 서로 연관되어야 자연스럽다.",
+                "en": "The subject of both clauses must be the same, and the first clause cannot carry a past or future tense ending. The two actions must also be meaningfully related.",
+                "es": "El sujeto de ambas cláusulas debe ser el mismo, y la primera cláusula no puede llevar una terminación de pasado o futuro. Además, las dos acciones deben estar relacionadas por su significado.",
+                "fr": "Le sujet des deux propositions doit être identique, et la première proposition ne peut pas porter de terminaison de passé ou de futur. Les deux actions doivent également être liées par le sens.",
+                "pt": "O sujeito das duas orações deve ser o mesmo, e a primeira oração não pode levar uma terminação de passado ou futuro. As duas ações também devem estar relacionadas em significado.",
+                "kr": "앞뒤 절의 주어는 반드시 같아야 하며, 앞 절에는 과거나 미래를 나타내는 어미가 올 수 없다. 두 동작은 의미적으로 서로 연관되어야 자연스럽다.",
+                "jp": "前後の節の主語は必ず同じでなければならず、前節には過去や未来を表す語尾が来ることができない。二つの動作は意味的に互いに関連していてこそ自然になる。",
+                "zh": "前后分句的主语必须相同，前面的分句不能带有表示过去或将来的词尾。两个动作在意义上必须相互关联才自然。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "단순히 동작을 나열하는 -고와 달리 이 표현은 앞뒤 동작이 순서상 밀접하게 연결됨을 강조한다. 격식적인 자리에서나 편한 자리에서나 동일하게 쓰인다.",
+                "en": "Unlike -고, which simply lists actions, this expression emphasizes that the two actions are closely connected in sequence. It is used the same way in both formal and casual settings.",
+                "es": "A diferencia de -고, que solo enumera acciones, esta expresión resalta que las dos acciones están estrechamente conectadas en secuencia. Se usa igual en contextos formales e informales.",
+                "fr": "Contrairement à -고, qui se contente d'énumérer des actions, cette expression souligne que les deux actions sont étroitement liées dans l'ordre. Elle s'emploie de la même façon dans un contexte formel ou familier.",
+                "pt": "Ao contrário de -고, que apenas enumera ações, esta expressão realça que as duas ações estão estreitamente ligadas em sequência. É usada da mesma forma em contextos formais e informais.",
+                "kr": "단순히 동작을 나열하는 -고와 달리 이 표현은 앞뒤 동작이 순서상 밀접하게 연결됨을 강조한다. 격식적인 자리에서나 편한 자리에서나 동일하게 쓰인다.",
+                "jp": "単に動作を並べる-고とは異なり、この表現は前後の動作が順序上密接につながっていることを強調する。格式的な場でも気楽な場でも同じように使われる。",
+                "zh": "与单纯并列动作的-고不同，这个表达强调前后动作在顺序上紧密相连。正式场合和轻松场合都同样使用。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "두 동작 사이에 관련이 없으면 이 표현을 쓸 수 없으며, 어간 뒤에는 과거 시제 어미 없이 바로 아서나 어서가 붙어야 한다.",
+                "en": "If the two actions are unrelated, this expression cannot be used, and -아서 or -어서 must attach directly to the stem without a past tense ending.",
+                "es": "Si las dos acciones no están relacionadas, no se puede usar esta expresión, y -아서 o -어서 debe unirse directamente a la raíz sin una terminación de pasado.",
+                "fr": "Si les deux actions ne sont pas liées, cette expression ne peut pas être utilisée, et -아서 ou -어서 doit s'attacher directement au radical sans terminaison de passé.",
+                "pt": "Se as duas ações não estiverem relacionadas, esta expressão não pode ser usada, e -아서 ou -어서 deve juntar-se diretamente à raiz sem terminação de passado.",
+                "kr": "두 동작 사이에 관련이 없으면 이 표현을 쓸 수 없으며, 어간 뒤에는 과거 시제 어미 없이 바로 아서나 어서가 붙어야 한다.",
+                "jp": "二つの動作の間に関連がなければこの表現は使えず、語幹の後ろには過去時制語尾なしで直接아서や어서が付かなければならない。",
+                "zh": "如果两个动作之间没有关联，就不能使用这个表达，词干后面必须直接接-아서或-어서，中间不能加过去时词尾。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "친구를 만나서 커피를 마셔요.",
+                "en": "I meet a friend and then drink coffee.",
+                "es": "Quedo con un amigo y luego tomo café.",
+                "fr": "Je retrouve un ami et je bois ensuite un café.",
+                "pt": "Encontro um amigo e depois bebo café.",
+                "kr": "친구를 만나서 커피를 마셔요.",
+                "jp": "友達に会ってコーヒーを飲みます。",
+                "zh": "见了朋友然后喝咖啡。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "집에 가서 밥을 먹어요.",
+                "en": "I go home and then eat a meal.",
+                "es": "Voy a casa y luego como.",
+                "fr": "Je rentre à la maison et je mange ensuite.",
+                "pt": "Vou a casa e depois como.",
+                "kr": "집에 가서 밥을 먹어요.",
+                "jp": "家に帰ってご飯を食べます。",
+                "zh": "回家然后吃饭。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "아침에 일찍 일어나서 세수를 해요.",
+                "en": "I get up early in the morning and then wash my face.",
+                "es": "Me levanto temprano por la mañana y luego me lavo la cara.",
+                "fr": "Je me lève tôt le matin et je me lave ensuite le visage.",
+                "pt": "Levanto-me cedo de manhã e depois lavo a cara.",
+                "kr": "아침에 일찍 일어나서 세수를 해요.",
+                "jp": "朝早く起きて顔を洗います。",
+                "zh": "早上早起然后洗脸。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "서점에서 책을 사서 읽어요.",
+                "en": "I buy a book at the bookstore and then read it.",
+                "es": "Compro un libro en la librería y luego lo leo.",
+                "fr": "J'achète un livre à la librairie et je le lis ensuite.",
+                "pt": "Compro um livro na livraria e depois leio-o.",
+                "kr": "서점에서 책을 사서 읽어요.",
+                "jp": "書店で本を買って読みます。",
+                "zh": "在书店买了书然后阅读。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "어제 시장에 가서 과일을 샀어요.",
+                "en": "Yesterday I went to the market and then bought fruit.",
+                "es": "Ayer fui al mercado y luego compré fruta.",
+                "fr": "Hier, je suis allé au marché et j'ai ensuite acheté des fruits.",
+                "pt": "Ontem fui ao mercado e depois comprei fruta.",
+                "kr": "어제 시장에 가서 과일을 샀어요.",
+                "jp": "昨日市場に行って果物を買いました。",
+                "zh": "昨天去了市场然后买了水果。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "창문을 열어서 방을 환기했어요.",
+                "en": "I opened the window and then aired out the room.",
+                "es": "Abrí la ventana y luego ventilé la habitación.",
+                "fr": "J'ai ouvert la fenêtre et j'ai ensuite aéré la pièce.",
+                "pt": "Abri a janela e depois arejei o quarto.",
+                "kr": "창문을 열어서 방을 환기했어요.",
+                "jp": "窓を開けて部屋を換気しました。",
+                "zh": "打开窗户然后给房间通了风。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "친구에게 전화해서 약속을 정했어요.",
+                "en": "I called my friend and then set up a meeting time.",
+                "es": "Llamé a mi amigo y luego quedamos en una hora.",
+                "fr": "J'ai appelé mon ami et nous avons ensuite fixé un rendez-vous.",
+                "pt": "Telefonei ao meu amigo e depois combinámos um horário.",
+                "kr": "친구에게 전화해서 약속을 정했어요.",
+                "jp": "友達に電話をかけて約束を決めました。",
+                "zh": "给朋友打了电话然后约定了时间。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "음식을 만들어서 가족과 먹었어요.",
+                "en": "I made food and then ate it with my family.",
+                "es": "Preparé comida y luego comí con mi familia.",
+                "fr": "J'ai préparé un repas et je l'ai ensuite mangé en famille.",
+                "pt": "Preparei comida e depois comi com a família.",
+                "kr": "음식을 만들어서 가족과 먹었어요.",
+                "jp": "料理を作って家族と食べました。",
+                "zh": "做了饭然后和家人一起吃了。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "편지를 써서 친구에게 보냈어요.",
+                "en": "I wrote a letter and then sent it to my friend.",
+                "es": "Escribí una carta y luego se la envié a mi amigo.",
+                "fr": "J'ai écrit une lettre et je l'ai ensuite envoyée à mon ami.",
+                "pt": "Escrevi uma carta e depois enviei-a ao meu amigo.",
+                "kr": "편지를 써서 친구에게 보냈어요.",
+                "jp": "手紙を書いて友達に送りました。",
+                "zh": "写了信然后寄给了朋友。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "옷을 예쁘게 입어서 사진을 찍었어요.",
+                "en": "I dressed up nicely and then took photos.",
+                "es": "Me vestí bien y luego me hice fotos.",
+                "fr": "Je me suis habillé joliment et j'ai ensuite pris des photos.",
+                "pt": "Vesti-me bem e depois tirei fotografias.",
+                "kr": "옷을 예쁘게 입어서 사진을 찍었어요.",
+                "jp": "きれいに服を着て写真を撮りました。",
+                "zh": "穿得漂漂亮亮然后拍了照片。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "커피를 진하게 타서 마셨어요.",
+                "en": "I made the coffee strong and then drank it.",
+                "es": "Preparé el café cargado y luego lo bebí.",
+                "fr": "J'ai préparé un café corsé et je l'ai ensuite bu.",
+                "pt": "Fiz o café forte e depois bebi-o.",
+                "kr": "커피를 진하게 타서 마셨어요.",
+                "jp": "コーヒーを濃く入れて飲みました。",
+                "zh": "把咖啡冲得很浓然后喝了。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "방을 깨끗하게 청소해서 쉬었어요.",
+                "en": "I cleaned the room thoroughly and then rested.",
+                "es": "Limpié la habitación a fondo y luego descansé.",
+                "fr": "J'ai nettoyé la pièce à fond et je me suis ensuite reposé.",
+                "pt": "Limpei o quarto muito bem e depois descansei.",
+                "kr": "방을 깨끗하게 청소해서 쉬었어요.",
+                "jp": "部屋をきれいに掃除して休みました。",
+                "zh": "把房间打扫干净然后休息了。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

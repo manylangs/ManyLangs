@@ -15,9 +15,17 @@ type Example = {
   [key: string]: string;
 };
 
+/* 🔥 현재 runtime 스키마: word.<lang> = { core, meaning_zone } 객체.
+   (예전 뷰어는 word.<lang>이 plain string이라고 가정했었음 — 스키마 변경으로 깨짐) */
+type WordEntry = {
+  core: string;
+  meaning_zone?: string[];
+};
+
 type Block = {
-  type: "vocab_item";
-  word: Record<string, string>;
+  id?: string;
+  type?: "vocab_item";
+  word: Record<string, WordEntry>;
   examples: Example[];
 };
 
@@ -28,6 +36,15 @@ type Props = {
 };
 
 type Status = "loading" | "ready" | "error";
+
+/** word.<lang> 값에서 표시용 단어 텍스트(core)를 안전하게 추출.
+ *  - 정상 케이스: { core: "go", meaning_zone: [...] } → "go"
+ *  - 혹시 남아있을 구버전 plain string 데이터도 방어적으로 지원(하위호환) */
+function getWordText(entry: WordEntry | string | undefined | null): string {
+  if (!entry) return "";
+  if (typeof entry === "string") return entry;
+  return entry.core ?? "";
+}
 
 
 /* 🔥 RealViewer 기준 스타일 */
@@ -352,11 +369,14 @@ export default function DemoVocaViewer({
         {blocks.map((block, idx) => {
           const setNumber = idx + 1;
 
-          const word = block.word?.[TARGET_KEY] ?? "";
-          const wordStudy = block.word?.[studyLang] ?? "";
+          /* 🔥 word.<lang>이 이제 { core, meaning_zone } 객체이므로
+             getWordText로 core만 안전하게 뽑아 표시용 문자열로 사용한다.
+             (구버전 plain string 데이터가 남아있어도 하위호환으로 동작) */
+          const word = getWordText(block.word?.[TARGET_KEY]);
+          const wordStudy = getWordText(block.word?.[studyLang]);
 
           return (
-            <div key={idx} style={{ marginBottom: 40 }}>
+            <div key={block.id ?? idx} style={{ marginBottom: 40 }}>
               <div style={{ fontWeight: 700, marginBottom: 12 }}>
                 SET {setNumber}
               </div>
@@ -383,7 +403,7 @@ export default function DemoVocaViewer({
                 )}
               </div>
 
-              {/* 예문 */}
+              {/* 예문 (examples[lang]은 스키마 변경 없이 그대로 plain string) */}
               {block.examples?.map((ex, i) => {
                 const t = ex[TARGET_KEY] ?? "";
                 const s = ex[studyLang] ?? "";

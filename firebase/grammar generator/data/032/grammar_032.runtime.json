@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A1_KO_REASON_BASIC",
+        "level": "a1",
+        "id": "032"
+    },
+    "title": {
+        "target": "A/V-아서/어서 (이유)",
+        "en": "A/V -아서/어서 (Reason)",
+        "es": "A/V -아서/어서 (Razón)",
+        "fr": "A/V -아서/어서 (Raison)",
+        "pt": "A/V -아서/어서 (Razão)",
+        "kr": "A/V-아서/어서 (이유)",
+        "jp": "A/V-아서/어서 (理由)",
+        "zh": "A/V-아서/어서 (原因)"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "이 표현은 앞 내용이 뒤 내용의 원인이나 이유임을 나타낸다. 동사나 형용사 어간에 모음조화 규칙에 따라 -아서 또는 -어서가 결합된다.",
+                "en": "This expression shows that the first clause is the cause or reason for the second clause. It attaches to a verb or adjective stem, with the form chosen by vowel harmony.",
+                "es": "Esta expresión indica que la primera cláusula es la causa o el motivo de la segunda. Se une a la raíz de un verbo o adjetivo según la regla de armonía vocálica.",
+                "fr": "Cette expression indique que la première proposition est la cause ou la raison de la seconde. Elle se fixe au radical d'un verbe ou d'un adjectif selon l'harmonie vocalique.",
+                "pt": "Esta expressão indica que a primeira oração é a causa ou o motivo da segunda. Junta-se à raiz de um verbo ou adjetivo consoante a harmonia vocálica.",
+                "kr": "이 표현은 앞 내용이 뒤 내용의 원인이나 이유임을 나타낸다. 동사나 형용사 어간에 모음조화 규칙에 따라 -아서 또는 -어서가 결합된다.",
+                "jp": "この表現は、前の内容が後の内容の原因や理由であることを表す。動詞や形容詞の語幹に母音調和の規則に従って-아서または-어서が結合する。",
+                "zh": "这个表达表示前面的内容是后面内容的原因或理由。根据元音和谐规则，与动词或形容词词干结合-아서或-어서。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "앞 절이 원인을 나타내고 뒤 절이 그 결과나 상태를 설명하는 순서로 문장이 구성된다. 두 절은 하나의 문장 안에서 인과 관계로 자연스럽게 연결된다.",
+                "en": "The sentence is built so the first clause states the cause and the second clause explains the resulting state. Both clauses are joined naturally within one sentence through cause and effect.",
+                "es": "La oración se construye de modo que la primera cláusula expresa la causa y la segunda explica el estado resultante. Ambas cláusulas se unen de forma natural dentro de una sola oración por relación causal.",
+                "fr": "La phrase est construite de sorte que la première proposition énonce la cause et la seconde explique l'état qui en résulte. Les deux propositions sont liées naturellement dans une seule phrase par un rapport de cause à effet.",
+                "pt": "A frase é construída de modo que a primeira oração indica a causa e a segunda explica o estado resultante. As duas orações unem-se naturalmente numa só frase através de uma relação de causa e efeito.",
+                "kr": "앞 절이 원인을 나타내고 뒤 절이 그 결과나 상태를 설명하는 순서로 문장이 구성된다. 두 절은 하나의 문장 안에서 인과 관계로 자연스럽게 연결된다.",
+                "jp": "前節が原因を表し、後節がその結果や状態を説明する順序で文が構成される。二つの節は一つの文の中で因果関係によって自然に結ばれる。",
+                "zh": "句子的构成顺序是前面的分句表示原因，后面的分句说明由此产生的结果或状态。两个分句在一个句子中通过因果关系自然连接。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "뒤 절에는 명령이나 제안을 나타내는 표현을 쓸 수 없다. 앞 절에서는 과거를 나타내는 형태를 직접 결합하지 않고 시제는 뒤 절에서 드러난다. 받침이 없는 어간 뒤에서는 모음의 종류에 따라 형태가 달라지며 하다는 해서로 바뀐다.",
+                "en": "The second clause cannot contain a command or a suggestion. The first clause does not take a past-tense form directly, since tense is shown in the second clause instead. After a stem without a final consonant, the form changes according to the vowel, and 하다 becomes 해서.",
+                "es": "La segunda cláusula no puede contener una orden ni una sugerencia. La primera cláusula no lleva directamente una forma de pasado, ya que el tiempo se muestra en la segunda cláusula. Tras una raíz sin consonante final, la forma cambia según la vocal, y 하다 se convierte en 해서.",
+                "fr": "La seconde proposition ne peut pas contenir un ordre ni une suggestion. La première proposition ne prend pas directement une forme au passé, car le temps apparaît dans la seconde proposition. Après un radical sans consonne finale, la forme change selon la voyelle, et 하다 devient 해서.",
+                "pt": "A segunda oração não pode conter uma ordem nem uma sugestão. A primeira oração não recebe diretamente uma forma de passado, pois o tempo verbal aparece na segunda oração. Depois de uma raiz sem consoante final, a forma muda consoante a vogal, e 하다 passa a 해서.",
+                "kr": "뒤 절에는 명령이나 제안을 나타내는 표현을 쓸 수 없다. 앞 절에서는 과거를 나타내는 형태를 직접 결합하지 않고 시제는 뒤 절에서 드러난다. 받침이 없는 어간 뒤에서는 모음의 종류에 따라 형태가 달라지며 하다는 해서로 바뀐다.",
+                "jp": "後節には命令や提案を表す表現を使うことができない。前節では過去を表す形を直接結合させず、時制は後節に現れる。パッチムのない語幹の後ろでは母音の種類によって形が変わり、하다は해서になる。",
+                "zh": "后面的分句不能使用表示命令或提议的表达。前面的分句不能直接接过去时形式，时态体现在后面的分句中。词干无收音时，形式会根据元音种类而变化，하다会变为해서。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "비슷한 뜻을 가진 다른 표현과 달리 이 표현 뒤에는 명령형이나 청유형이 올 수 없다는 제약이 있다. 격식과 비격식 상황 모두에서 널리 쓰이지만 공식적인 글에서는 다른 표현이 더 선호되기도 한다.",
+                "en": "Unlike other expressions with a similar meaning, this one has the restriction that a command or proposal form cannot follow it. It is widely used in both formal and informal situations, though a different expression is sometimes preferred in official writing.",
+                "es": "A diferencia de otras expresiones con un significado similar, esta tiene la restricción de que no puede ir seguida de una forma imperativa o propositiva. Se usa ampliamente tanto en situaciones formales como informales, aunque en textos oficiales a veces se prefiere otra expresión.",
+                "fr": "Contrairement à d'autres expressions au sens proche, celle-ci comporte la restriction de ne pas pouvoir être suivie d'une forme impérative ou propositive. Elle est largement utilisée dans les situations formelles comme informelles, bien qu'une autre expression soit parfois préférée dans les écrits officiels.",
+                "pt": "Ao contrário de outras expressões com sentido semelhante, esta tem a restrição de não poder ser seguida de uma forma imperativa ou propositiva. É amplamente usada tanto em situações formais como informais, embora noutro tipo de escrita oficial se prefira por vezes uma expressão diferente.",
+                "kr": "비슷한 뜻을 가진 다른 표현과 달리 이 표현 뒤에는 명령형이나 청유형이 올 수 없다는 제약이 있다. 격식과 비격식 상황 모두에서 널리 쓰이지만 공식적인 글에서는 다른 표현이 더 선호되기도 한다.",
+                "jp": "似た意味を持つ他の表現とは異なり、この表現の後ろには命令形や勧誘形が来られないという制約がある。格式的な状況と非格式的な状況のどちらでも広く使われるが、公式な文章では他の表現がより好まれることもある。",
+                "zh": "与含义相近的其他表达不同，这个表达之后不能接命令句或共动句。正式和非正式场合都广泛使用，但在正式文书中有时更倾向使用其他表达。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "과거 형태를 앞 절에 잘못 결합하는 실수가 자주 나타난다. 감사나 사과의 이유를 말할 때도 이 표현이 폭넓게 활용된다.",
+                "en": "A common mistake is attaching a past-tense form directly to the first clause. This expression is also widely used to state the reason for thanks or an apology.",
+                "es": "Un error común es unir una forma de pasado directamente a la primera cláusula. Esta expresión también se usa ampliamente para expresar el motivo de un agradecimiento o una disculpa.",
+                "fr": "Une erreur fréquente consiste à attacher directement une forme au passé à la première proposition. Cette expression est aussi largement employée pour exprimer la raison d'un remerciement ou d'une excuse.",
+                "pt": "Um erro comum é juntar diretamente uma forma de passado à primeira oração. Esta expressão também é muito usada para indicar o motivo de um agradecimento ou de um pedido de desculpa.",
+                "kr": "과거 형태를 앞 절에 잘못 결합하는 실수가 자주 나타난다. 감사나 사과의 이유를 말할 때도 이 표현이 폭넓게 활용된다.",
+                "jp": "過去の形を前節に誤って結合させる間違いがよく見られる。感謝や謝罪の理由を述べるときにもこの表現が幅広く活用される。",
+                "zh": "常见的错误是在前面的分句中错误地加上过去时形式。这个表达在表达感谢或道歉的理由时也被广泛使用。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "너무 배고파서 밥을 먹어요.",
+                "en": "I'm so hungry, so I'm eating.",
+                "es": "Tengo tanta hambre que estoy comiendo.",
+                "fr": "J'ai tellement faim que je mange.",
+                "pt": "Tenho tanta fome que estou a comer.",
+                "kr": "너무 배고파서 밥을 먹어요.",
+                "jp": "とてもお腹が空いてご飯を食べます。",
+                "zh": "太饿了所以在吃饭。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "날씨가 추워서 옷을 많이 입어요.",
+                "en": "It's cold, so I'm wearing a lot of clothes.",
+                "es": "Hace frío, así que me pongo mucha ropa.",
+                "fr": "Il fait froid, donc je mets beaucoup de vêtements.",
+                "pt": "Está frio, por isso visto muita roupa.",
+                "kr": "날씨가 추워서 옷을 많이 입어요.",
+                "jp": "天気が寒くて服をたくさん着ます。",
+                "zh": "天气冷所以穿了很多衣服。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "시간이 없어서 택시를 탔어요.",
+                "en": "I didn't have time, so I took a taxi.",
+                "es": "No tenía tiempo, así que cogí un taxi.",
+                "fr": "Je n'avais pas le temps, alors j'ai pris un taxi.",
+                "pt": "Não tinha tempo, por isso apanhei um táxi.",
+                "kr": "시간이 없어서 택시를 탔어요.",
+                "jp": "時間がなくてタクシーに乗りました。",
+                "zh": "没有时间所以打了出租车。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "길이 막혀서 늦게 도착했어요.",
+                "en": "The traffic was jammed, so I arrived late.",
+                "es": "Había atasco, así que llegué tarde.",
+                "fr": "Il y avait des embouteillages, donc je suis arrivé en retard.",
+                "pt": "Havia trânsito, por isso cheguei tarde.",
+                "kr": "길이 막혀서 늦게 도착했어요.",
+                "jp": "道が混んで遅く着きました。",
+                "zh": "路上堵车所以到得晚了。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "머리가 아파서 학교에 못 가요.",
+                "en": "My head hurts, so I can't go to school.",
+                "es": "Me duele la cabeza, así que no puedo ir al colegio.",
+                "fr": "J'ai mal à la tête, donc je ne peux pas aller à l'école.",
+                "pt": "Dói-me a cabeça, por isso não posso ir à escola.",
+                "kr": "머리가 아파서 학교에 못 가요.",
+                "jp": "頭が痛くて学校に行けません。",
+                "zh": "头疼所以不能去学校。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "음식이 매워서 물을 마셔요.",
+                "en": "The food is spicy, so I drink water.",
+                "es": "La comida está picante, así que bebo agua.",
+                "fr": "Le plat est épicé, donc je bois de l'eau.",
+                "pt": "A comida está picante, por isso bebo água.",
+                "kr": "음식이 매워서 물을 마셔요.",
+                "jp": "料理が辛くて水を飲みます。",
+                "zh": "食物很辣所以喝水。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "방이 더러워서 청소를 했어요.",
+                "en": "The room was dirty, so I cleaned it.",
+                "es": "La habitación estaba sucia, así que la limpié.",
+                "fr": "La chambre était sale, donc je l'ai nettoyée.",
+                "pt": "O quarto estava sujo, por isso limpei-o.",
+                "kr": "방이 더러워서 청소를 했어요.",
+                "jp": "部屋が汚くて掃除をしました。",
+                "zh": "房间很脏所以打扫了。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "일이 많아서 오늘 바빠요.",
+                "en": "I have a lot of work, so I'm busy today.",
+                "es": "Tengo mucho trabajo, así que hoy estoy ocupado.",
+                "fr": "J'ai beaucoup de travail, donc je suis occupé aujourd'hui.",
+                "pt": "Tenho muito trabalho, por isso hoje estou ocupado.",
+                "kr": "일이 많아서 오늘 바빠요.",
+                "jp": "仕事が多くて今日忙しいです。",
+                "zh": "工作很多所以今天很忙。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "많이 늦어서 정말 죄송합니다.",
+                "en": "I'm very sorry for being so late.",
+                "es": "Lo siento mucho por llegar tan tarde.",
+                "fr": "Je suis vraiment désolé d'être aussi en retard.",
+                "pt": "Peço muita desculpa por chegar tão tarde.",
+                "kr": "많이 늦어서 정말 죄송합니다.",
+                "jp": "とても遅れて本当に申し訳ございません。",
+                "zh": "迟到了这么久真的很抱歉。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "많이 도와줘서 정말 고마워요.",
+                "en": "Thank you so much for helping me a lot.",
+                "es": "Muchas gracias por ayudarme tanto.",
+                "fr": "Merci beaucoup de m'avoir tant aidé.",
+                "pt": "Muito obrigado por me ajudar tanto.",
+                "kr": "많이 도와줘서 정말 고마워요.",
+                "jp": "たくさん助けてくれて本当にありがとうございます。",
+                "zh": "帮了我这么多真的很感谢。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "너무 피곤해서 일찍 잤어요.",
+                "en": "I was so tired that I went to bed early.",
+                "es": "Estaba tan cansado que me acosté temprano.",
+                "fr": "J'étais tellement fatigué que je me suis couché tôt.",
+                "pt": "Estava tão cansado que me deitei cedo.",
+                "kr": "너무 피곤해서 일찍 잤어요.",
+                "jp": "とても疲れて早く寝ました。",
+                "zh": "太累了所以早早睡了。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "시험이 어려워서 걱정이 돼요.",
+                "en": "The test is difficult, so I'm worried.",
+                "es": "El examen es difícil, así que estoy preocupado.",
+                "fr": "L'examen est difficile, donc je suis inquiet.",
+                "pt": "O exame é difícil, por isso estou preocupado.",
+                "kr": "시험이 어려워서 걱정이 돼요.",
+                "jp": "試験が難しくて心配になります。",
+                "zh": "考试很难所以很担心。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

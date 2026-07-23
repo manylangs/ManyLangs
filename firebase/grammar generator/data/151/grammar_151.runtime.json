@@ -1,0 +1,254 @@
+{
+    "meta": {
+        "series": "C1_KO_DECISION3",
+        "level": "c1",
+        "id": "151"
+    },
+    "title": {
+        "target": "-(으)ㄹ 바에는",
+        "en": "Rather than (doing this undesirable option)",
+        "es": "Antes que (hacer esto no deseado)",
+        "fr": "Plutôt que de (faire cette chose indésirable)",
+        "pt": "Em vez de (fazer esta opção indesejada)",
+        "kr": "-(으)ㄹ 바에는",
+        "jp": "～するくらいなら（望ましくない選択より）",
+        "zh": "与其……（不如）"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "달갑지 않은 두 가지 선택지 중 하나를 포기하고 나머지를 택할 때 쓰는 표현이다.",
+                "en": "This expression is used when giving up one of two undesirable options in favor of the other.",
+                "es": "Esta expresión se usa al renunciar a una de dos opciones indeseadas para elegir la otra.",
+                "fr": "Cette expression s'utilise pour renoncer à l'une de deux options peu souhaitables au profit de l'autre.",
+                "pt": "Esta expressão é usada ao desistir de uma de duas opções indesejadas em favor da outra.",
+                "kr": "달갑지 않은 두 가지 선택지 중 하나를 포기하고 나머지를 택할 때 쓰는 표현이다.",
+                "jp": "好ましくない二つの選択肢のうち一方を諦めて、もう一方を選ぶときに使う表現である。",
+                "zh": "该表达用于在两个都不理想的选项中放弃其一、选择另一个的时候。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사 어간에 받침이 있으면 -을 바에는, 받침이 없으면 -ㄹ 바에는이 붙어 앞 절이 부정적으로 평가되는 상황임을 나타낸다.",
+                "en": "Depending on whether the verb stem ends in a consonant or vowel, -을 바에는 or -ㄹ 바에는 attaches, marking the preceding clause as a negatively evaluated situation.",
+                "es": "Según si la raíz verbal termina en consonante o vocal, se añade -을 바에는 o -ㄹ 바에는, marcando la cláusula anterior como una situación valorada negativamente.",
+                "fr": "Selon que le radical du verbe se termine par une consonne ou une voyelle, -을 바에는 ou -ㄹ 바에는 s'attache, marquant la proposition précédente comme une situation jugée négativement.",
+                "pt": "Consoante o radical do verbo termine em consoante ou vogal, junta-se -을 바에는 ou -ㄹ 바에는, assinalando que a oração anterior é uma situação avaliada negativamente.",
+                "kr": "동사 어간에 받침이 있으면 -을 바에는, 받침이 없으면 -ㄹ 바에는이 붙어 앞 절이 부정적으로 평가되는 상황임을 나타낸다.",
+                "jp": "動詞の語幹に終声があれば「-을 바에는」、終声がなければ「-ㄹ 바에는」が付き、前の節が否定的に評価される状況であることを表す。",
+                "zh": "动词词干以辅音结尾时接“-을 바에는”，以元音结尾时接“-ㄹ 바에는”，表示前一分句是被消极评价的情况。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "뒤 절에는 흔히 차라리와 함께 상대적으로 나은 대안이 제시되며, 두 선택지 모두 완전히 만족스럽지 않다는 전제가 깔려 있다.",
+                "en": "The following clause commonly presents a relatively better alternative, often with 차라리, under the premise that neither option is fully satisfactory.",
+                "es": "La cláusula siguiente suele presentar una alternativa relativamente mejor, a menudo con 차라리, bajo la premisa de que ninguna opción es totalmente satisfactoria.",
+                "fr": "La proposition suivante présente généralement une alternative relativement meilleure, souvent avec 차라리, sous la prémisse qu'aucune des deux options n'est pleinement satisfaisante.",
+                "pt": "A oração seguinte apresenta normalmente uma alternativa relativamente melhor, muitas vezes com 차라리, partindo do princípio de que nenhuma das opções é totalmente satisfatória.",
+                "kr": "뒤 절에는 흔히 차라리와 함께 상대적으로 나은 대안이 제시되며, 두 선택지 모두 완전히 만족스럽지 않다는 전제가 깔려 있다.",
+                "jp": "後の節には多くの場合「차라리」とともに相対的に良い代案が提示され、二つの選択肢とも完全には満足できないという前提が敷かれている。",
+                "zh": "后一分句常与“차라리”一起提出相对较好的替代方案，其前提是两个选项都不能完全令人满意。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "비슷한 의미의 -는 게 낫다와 달리 이 표현은 단순한 선호가 아니라 앞선 선택지에 대한 거부감을 강하게 드러낸다.",
+                "en": "Unlike the similar -는 게 낫다, this expression conveys not mere preference but strong rejection of the earlier option.",
+                "es": "A diferencia de la expresión similar -는 게 낫다, esta no transmite una simple preferencia, sino un fuerte rechazo hacia la opción anterior.",
+                "fr": "Contrairement à l'expression similaire -는 게 낫다, celle-ci exprime non une simple préférence mais un rejet marqué de l'option précédente.",
+                "pt": "Ao contrário da expressão semelhante -는 게 낫다, esta não transmite uma simples preferência, mas uma forte rejeição da opção anterior.",
+                "kr": "비슷한 의미의 -는 게 낫다와 달리 이 표현은 단순한 선호가 아니라 앞선 선택지에 대한 거부감을 강하게 드러낸다.",
+                "jp": "似た意味の「-는 게 낫다」とは異なり、この表現は単純な好みではなく、前の選択肢に対する拒否感を強く表す。",
+                "zh": "与意思相近的“-는 게 낫다”不同，该表达传达的不是单纯的偏好，而是对前一选项的强烈排斥。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "과거 시제 어간에는 결합할 수 없으므로 완료된 사건이 아니라 앞으로의 선택이나 일반적 상황에만 쓰이며, 문어체나 격식적 구어에서 주로 나타난다.",
+                "en": "Since it cannot attach to a past-tense stem, it applies only to future choices or general situations rather than completed events, and appears mainly in written or formal spoken register.",
+                "es": "Como no puede combinarse con una raíz en pasado, se aplica solo a elecciones futuras o situaciones generales, no a eventos ya completados, y aparece sobre todo en el registro escrito o formal.",
+                "fr": "Ne pouvant pas s'attacher à un radical au passé, elle ne s'applique qu'à des choix futurs ou à des situations générales, et non à des événements accomplis, et apparaît surtout à l'écrit ou dans un registre oral soutenu.",
+                "pt": "Como não pode combinar-se com um radical no passado, aplica-se apenas a escolhas futuras ou situações gerais, não a acontecimentos concluídos, surgindo sobretudo no registo escrito ou formal.",
+                "kr": "과거 시제 어간에는 결합할 수 없으므로 완료된 사건이 아니라 앞으로의 선택이나 일반적 상황에만 쓰이며, 문어체나 격식적 구어에서 주로 나타난다.",
+                "jp": "過去時制の語幹には結合できないため、完了した出来事ではなく、これからの選択や一般的な状況にのみ使われ、文語体や格式のある口語で主に現れる。",
+                "zh": "由于它不能与过去时词干结合，因此只用于将来的选择或一般性情况，而非已完成的事件，主要出现在书面语或正式口语中。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이렇게 늦게 갈 바에는 차라리 안 가는 게 낫겠다.",
+                "en": "Rather than going this late, it would be better not to go at all.",
+                "es": "Antes que ir tan tarde, sería mejor no ir en absoluto.",
+                "fr": "Plutôt que d'y aller aussi tard, il vaudrait mieux ne pas y aller du tout.",
+                "pt": "Em vez de ir tão tarde, seria melhor não ir de todo.",
+                "kr": "이렇게 늦게 갈 바에는 차라리 안 가는 게 낫겠다.",
+                "jp": "こんなに遅く行くくらいなら、いっそ行かない方がよさそうだ。",
+                "zh": "与其这么晚才去，不如干脆不去。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그런 대접을 받을 바에는 혼자 먹는 게 편하다.",
+                "en": "Rather than being treated that way, it's more comfortable to eat alone.",
+                "es": "Antes que recibir ese trato, es más cómodo comer solo.",
+                "fr": "Plutôt que de recevoir un tel traitement, il est plus confortable de manger seul.",
+                "pt": "Em vez de receber esse tratamento, é mais confortável comer sozinho.",
+                "kr": "그런 대접을 받을 바에는 혼자 먹는 게 편하다.",
+                "jp": "そんな扱いを受けるくらいなら、一人で食べる方が気楽だ。",
+                "zh": "与其受那种待遇，不如一个人吃饭自在。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "억지로 웃을 바에는 솔직하게 말하는 편이 낫다.",
+                "en": "Rather than forcing a smile, it's better to speak honestly.",
+                "es": "Antes que forzar una sonrisa, es mejor hablar con sinceridad.",
+                "fr": "Plutôt que de forcer un sourire, il vaut mieux parler franchement.",
+                "pt": "Em vez de forçar um sorriso, é melhor falar com sinceridade.",
+                "kr": "억지로 웃을 바에는 솔직하게 말하는 편이 낫다.",
+                "jp": "無理に笑うくらいなら、正直に話す方がいい。",
+                "zh": "与其勉强陪笑，不如坦率地说出来。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "질질 끌 바에는 지금 결정하는 게 낫겠다.",
+                "en": "Rather than dragging it out, it would be better to decide now.",
+                "es": "Antes que alargarlo, sería mejor decidir ahora.",
+                "fr": "Plutôt que de faire traîner les choses, il vaudrait mieux décider maintenant.",
+                "pt": "Em vez de arrastar isto, seria melhor decidir agora.",
+                "kr": "질질 끌 바에는 지금 결정하는 게 낫겠다.",
+                "jp": "だらだら引き延ばすくらいなら、今決めた方がよさそうだ。",
+                "zh": "与其拖拖拉拉，不如现在就做决定。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 회사에 남을 바에는 차라리 새로운 도전을 하겠다.",
+                "en": "Rather than staying at this company, I would rather take on a new challenge.",
+                "es": "Antes que quedarme en esta empresa, prefiero asumir un nuevo reto.",
+                "fr": "Plutôt que de rester dans cette entreprise, je préfère relever un nouveau défi.",
+                "pt": "Em vez de ficar nesta empresa, prefiro enfrentar um novo desafio.",
+                "kr": "이 회사에 남을 바에는 차라리 새로운 도전을 하겠다.",
+                "jp": "この会社に残るくらいなら、いっそ新しい挑戦をします。",
+                "zh": "与其留在这家公司，不如索性去迎接新的挑战。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "매번 다툴 바에는 처음부터 만나지 않는 게 나았을 것이다.",
+                "en": "Rather than arguing every time, it would have been better not to meet in the first place.",
+                "es": "Antes que discutir cada vez, habría sido mejor no habernos conocido.",
+                "fr": "Plutôt que de se disputer à chaque fois, il aurait mieux valu ne pas se rencontrer du tout.",
+                "pt": "Em vez de discutirmos sempre, teria sido melhor nunca nos termos conhecido.",
+                "kr": "매번 다툴 바에는 처음부터 만나지 않는 게 나았을 것이다.",
+                "jp": "毎回言い争うくらいなら、最初から会わない方がよかっただろう。",
+                "zh": "与其每次都争吵，不如一开始就不见面更好。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "값싼 재료를 쓸 바에는 차라리 메뉴에서 빼는 게 낫다.",
+                "en": "Rather than using cheap ingredients, it's better to remove it from the menu entirely.",
+                "es": "Antes que usar ingredientes baratos, es mejor quitarlo del menú directamente.",
+                "fr": "Plutôt que d'utiliser des ingrédients bon marché, il vaut mieux le retirer complètement de la carte.",
+                "pt": "Em vez de usar ingredientes baratos, é melhor retirá-lo por completo do menu.",
+                "kr": "값싼 재료를 쓸 바에는 차라리 메뉴에서 빼는 게 낫다.",
+                "jp": "安い材料を使うくらいなら、いっそメニューから外す方がいい。",
+                "zh": "与其使用廉价的食材，不如干脆把它从菜单上撤掉。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이런 식으로 미룰 바에는 처음부터 시작하지 않는 편이 나았다.",
+                "en": "Rather than postponing it like this, it would have been better not to start at all.",
+                "es": "Antes que posponerlo así, habría sido mejor no empezar en absoluto.",
+                "fr": "Plutôt que de le repousser ainsi, il aurait mieux valu ne pas commencer du tout.",
+                "pt": "Em vez de adiar assim, teria sido melhor não ter começado de todo.",
+                "kr": "이런 식으로 미룰 바에는 처음부터 시작하지 않는 편이 나았다.",
+                "jp": "こんなふうに先延ばしにするくらいなら、最初から始めない方がよかった。",
+                "zh": "与其这样一拖再拖，不如一开始就不着手更好。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "무의미한 회의를 계속할 바에는 서면 보고로 대신하자는 의견이 나왔다.",
+                "en": "The suggestion emerged that, rather than continuing pointless meetings, a written report should replace them.",
+                "es": "Surgió la propuesta de que, antes que seguir con reuniones sin sentido, se sustituyeran por informes escritos.",
+                "fr": "L'idée a été avancée que, plutôt que de poursuivre des réunions inutiles, on les remplace par des rapports écrits.",
+                "pt": "Surgiu a sugestão de que, em vez de continuar com reuniões inúteis, estas fossem substituídas por relatórios escritos.",
+                "kr": "무의미한 회의를 계속할 바에는 서면 보고로 대신하자는 의견이 나왔다.",
+                "jp": "無意味な会議を続けるくらいなら、書面での報告に代えようという意見が出た。",
+                "zh": "有人提出意见，与其继续开无意义的会议，不如改用书面报告代替。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "품질이 떨어질 바에는 생산량을 줄이는 쪽으로 방향을 바꾸기로 했다.",
+                "en": "Rather than letting quality decline, they decided to shift toward reducing production volume instead.",
+                "es": "Antes que dejar caer la calidad, decidieron cambiar de rumbo y reducir el volumen de producción.",
+                "fr": "Plutôt que de laisser la qualité se dégrader, ils ont décidé de réorienter leur stratégie vers une réduction du volume de production.",
+                "pt": "Em vez de deixar a qualidade cair, decidiram mudar de rumo e reduzir o volume de produção.",
+                "kr": "품질이 떨어질 바에는 생산량을 줄이는 쪽으로 방향을 바꾸기로 했다.",
+                "jp": "品質が落ちるくらいなら、生産量を減らす方向へ方針を変えることにした。",
+                "zh": "与其让质量下降，不如决定转向减少产量的方针。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "타협 없이 끌려갈 바에는 협상 테이블을 아예 떠나는 게 낫다고 판단했다.",
+                "en": "They judged that rather than being dragged along without any compromise, it was better to leave the negotiating table altogether.",
+                "es": "Concluyeron que, antes que dejarse arrastrar sin ningún tipo de concesión, era mejor abandonar por completo la mesa de negociación.",
+                "fr": "Ils ont jugé que, plutôt que de se laisser entraîner sans aucun compromis, il valait mieux quitter complètement la table des négociations.",
+                "pt": "Concluíram que, em vez de se deixarem arrastar sem qualquer cedência, era melhor abandonar de vez a mesa de negociações.",
+                "kr": "타협 없이 끌려갈 바에는 협상 테이블을 아예 떠나는 게 낫다고 판단했다.",
+                "jp": "妥協もなく引きずられるくらいなら、交渉のテーブルをいっそ離れる方がいいと判断した。",
+                "zh": "他们判断，与其毫无妥协地被牵着走，不如干脆离开谈判桌。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "체면을 지키느라 손해를 볼 바에는 솔직히 실패를 인정하는 편이 낫다는 결론에 이르렀다.",
+                "en": "They reached the conclusion that, rather than taking losses to save face, it was better to honestly admit failure.",
+                "es": "Llegaron a la conclusión de que, antes que sufrir pérdidas por guardar las apariencias, era mejor admitir sinceramente el fracaso.",
+                "fr": "Ils sont arrivés à la conclusion que, plutôt que de subir des pertes pour sauver la face, il valait mieux reconnaître honnêtement l'échec.",
+                "pt": "Chegaram à conclusão de que, em vez de sofrer prejuízos para salvar as aparências, era melhor admitir honestamente o fracasso.",
+                "kr": "체면을 지키느라 손해를 볼 바에는 솔직히 실패를 인정하는 편이 낫다는 결론에 이르렀다.",
+                "jp": "体面を保つために損をするくらいなら、正直に失敗を認める方がいいという結論に至った。",
+                "zh": "他们得出结论，与其为了保全面子而蒙受损失，不如坦率地承认失败。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}
+  
+  

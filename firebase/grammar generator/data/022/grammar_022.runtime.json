@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A1_KO_PROPOSITIVE",
+        "level": "a1",
+        "id": "022"
+    },
+    "title": {
+        "target": "-(으)ㅂ시다",
+        "en": "Let's (propositive)",
+        "es": "Propongamos (-(으)ㅂ시다)",
+        "fr": "Proposons (-(으)ㅂ시다)",
+        "pt": "Vamos (-(으)ㅂ시다)",
+        "kr": "-(으)ㅂ시다",
+        "jp": "勧誘形 -(으)ㅂ시다",
+        "zh": "共动句 -(으)ㅂ시다"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사 어간에 -(으)ㅂ시다를 붙여 제안한다.",
+                "en": "This form combines with a verb stem plus -(으)ㅂ시다 to suggest doing something together.",
+                "es": "Esta forma se añade a la raíz verbal con -(으)ㅂ시다 para proponer hacer algo juntos.",
+                "fr": "Cette forme s'ajoute au radical verbal avec -(으)ㅂ시다 pour proposer de faire quelque chose ensemble.",
+                "pt": "Esta forma junta-se à raiz verbal com -(으)ㅂ시다 para propor fazer algo em conjunto.",
+                "kr": "동사 어간에 -(으)ㅂ시다를 붙여 제안한다.",
+                "jp": "動詞の語幹に-(으)ㅂ시다を付けて提案する。",
+                "zh": "在动词词干后加-(으)ㅂ시다来提议。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "받침 유무에 따라 형태가 달라진다.",
+                "en": "The shape changes depending on whether the stem ends in a consonant or not.",
+                "es": "La forma cambia según si la raíz termina en consonante o no.",
+                "fr": "La forme change selon que le radical se termine par une consonne ou non.",
+                "pt": "A forma muda consoante a raiz terminar em consoante ou não.",
+                "kr": "받침 유무에 따라 형태가 달라진다.",
+                "jp": "パッチムの有無によって形が変わる。",
+                "zh": "根据有无收音，形式会有所不同。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "형용사에는 이 표현을 절대 쓸 수 없다.",
+                "en": "This form cannot be used with adjectives at all.",
+                "es": "Esta forma no se puede usar nunca con adjetivos.",
+                "fr": "Cette forme ne peut absolument pas s'utiliser avec des adjectifs.",
+                "pt": "Esta forma não pode, de todo, ser usada com adjetivos.",
+                "kr": "형용사에는 이 표현을 절대 쓸 수 없다.",
+                "jp": "形容詞にはこの表現を決して使うことができない。",
+                "zh": "这个表达绝对不能用于形容词。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "이 표현은 격식적인 자리에서 주로 쓴다.",
+                "en": "This form is mainly used in formal settings.",
+                "es": "Esta forma se usa principalmente en contextos formales.",
+                "fr": "Cette forme s'utilise principalement dans des contextes formels.",
+                "pt": "Esta forma usa-se principalmente em contextos formais.",
+                "kr": "이 표현은 격식적인 자리에서 주로 쓴다.",
+                "jp": "この表現は格式的な場で主に使われる。",
+                "zh": "这个表达主要用于正式场合。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "윗사람에게는 이 표현을 쓰지 않는다.",
+                "en": "This form is not used toward someone of higher status.",
+                "es": "Esta forma no se usa con una persona de estatus superior.",
+                "fr": "Cette forme ne s'utilise pas envers une personne de statut supérieur.",
+                "pt": "Esta forma não se usa para uma pessoa de estatuto superior.",
+                "kr": "윗사람에게는 이 표현을 쓰지 않는다.",
+                "jp": "目上の人にはこの表現を使わない。",
+                "zh": "对长辈或上级不使用这个表达。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "우리 같이 저녁을 먹읍시다.",
+                "en": "Let's eat dinner together.",
+                "es": "Cenemos juntos.",
+                "fr": "Dînons ensemble.",
+                "pt": "Vamos jantar juntos.",
+                "kr": "우리 같이 저녁을 먹읍시다.",
+                "jp": "私たち一緒に夕食を食べましょう。",
+                "zh": "我们一起吃晚饭吧。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "우리 다음 주에 다시 만납시다.",
+                "en": "Let's meet again next week.",
+                "es": "Volvamos a vernos la semana que viene.",
+                "fr": "Revoyons-nous la semaine prochaine.",
+                "pt": "Vamos encontrar-nos novamente na próxima semana.",
+                "kr": "우리 다음 주에 다시 만납시다.",
+                "jp": "私たち来週また会いましょう。",
+                "zh": "我们下周再见面吧。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이제 이 문제를 같이 해결합시다.",
+                "en": "Let's solve this problem together now.",
+                "es": "Resolvamos este problema juntos ahora.",
+                "fr": "Résolvons ce problème ensemble maintenant.",
+                "pt": "Vamos resolver este problema juntos agora.",
+                "kr": "이제 이 문제를 같이 해결합시다.",
+                "jp": "さあ、この問題を一緒に解決しましょう。",
+                "zh": "现在我们一起解决这个问题吧。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "오늘은 다 같이 일찍 퇴근합시다.",
+                "en": "Let's all leave work early today.",
+                "es": "Salgamos todos pronto del trabajo hoy.",
+                "fr": "Sortons tous tôt du travail aujourd'hui.",
+                "pt": "Vamos todos sair cedo do trabalho hoje.",
+                "kr": "오늘은 다 같이 일찍 퇴근합시다.",
+                "jp": "今日はみんな一緒に早く退勤しましょう。",
+                "zh": "今天大家一起早点下班吧。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "우리 이번 주말에 영화를 봅시다.",
+                "en": "Let's watch a movie this weekend.",
+                "es": "Veamos una película este fin de semana.",
+                "fr": "Regardons un film ce week-end.",
+                "pt": "Vamos ver um filme este fim de semana.",
+                "kr": "우리 이번 주말에 영화를 봅시다.",
+                "jp": "私たち今週末映画を見ましょう。",
+                "zh": "我们这个周末看电影吧。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "지금 다 같이 사진을 찍읍시다.",
+                "en": "Let's all take a photo now.",
+                "es": "Hagámonos todos una foto ahora.",
+                "fr": "Prenons tous une photo maintenant.",
+                "pt": "Vamos todos tirar uma fotografia agora.",
+                "kr": "지금 다 같이 사진을 찍읍시다.",
+                "jp": "今みんなで写真を撮りましょう。",
+                "zh": "现在大家一起拍照吧。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "우리 잠깐 여기서 쉽시다.",
+                "en": "Let's rest here for a moment.",
+                "es": "Descansemos aquí un momento.",
+                "fr": "Reposons-nous ici un instant.",
+                "pt": "Vamos descansar aqui um momento.",
+                "kr": "우리 잠깐 여기서 쉽시다.",
+                "jp": "私たちしばらくここで休みましょう。",
+                "zh": "我们在这里稍微休息一下吧。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이제 새 계획을 같이 세웁시다.",
+                "en": "Let's make a new plan together now.",
+                "es": "Hagamos juntos un nuevo plan ahora.",
+                "fr": "Faisons ensemble un nouveau plan maintenant.",
+                "pt": "Vamos fazer juntos um novo plano agora.",
+                "kr": "이제 새 계획을 같이 세웁시다.",
+                "jp": "さあ、新しい計画を一緒に立てましょう。",
+                "zh": "现在我们一起制定新计划吧。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "날씨가 좋으니까 같이 산책합시다.",
+                "en": "Since the weather is nice, let's take a walk together.",
+                "es": "Como hace buen tiempo, demos un paseo juntos.",
+                "fr": "Comme il fait beau, allons nous promener ensemble.",
+                "pt": "Como está bom tempo, vamos passear juntos.",
+                "kr": "날씨가 좋으니까 같이 산책합시다.",
+                "jp": "天気がいいので一緒に散歩しましょう。",
+                "zh": "天气好，我们一起散步吧。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "시간이 있으면 커피를 마십시다.",
+                "en": "If we have time, let's have coffee.",
+                "es": "Si tenemos tiempo, tomemos un café.",
+                "fr": "Si nous avons le temps, prenons un café.",
+                "pt": "Se tivermos tempo, vamos tomar um café.",
+                "kr": "시간이 있으면 커피를 마십시다.",
+                "jp": "時間があればコーヒーを飲みましょう。",
+                "zh": "如果有时间，我们喝杯咖啡吧。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "배가 고프니까 밥부터 먹읍시다.",
+                "en": "Since we're hungry, let's eat first.",
+                "es": "Como tenemos hambre, comamos primero.",
+                "fr": "Comme nous avons faim, mangeons d'abord.",
+                "pt": "Como temos fome, vamos comer primeiro.",
+                "kr": "배가 고프니까 밥부터 먹읍시다.",
+                "jp": "お腹が空いたので、まずご飯を食べましょう。",
+                "zh": "肚子饿了，我们先吃饭吧。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "피곤하니까 우리 오늘은 그만합시다.",
+                "en": "Since we're tired, let's stop for today.",
+                "es": "Como estamos cansados, dejémoslo por hoy.",
+                "fr": "Comme nous sommes fatigués, arrêtons-nous pour aujourd'hui.",
+                "pt": "Como estamos cansados, vamos parar por hoje.",
+                "kr": "피곤하니까 우리 오늘은 그만합시다.",
+                "jp": "疲れたので、今日はこれで終わりにしましょう。",
+                "zh": "累了，我们今天就到这里吧。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

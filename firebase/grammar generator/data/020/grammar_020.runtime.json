@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A1_KO_PROGRESSIVE",
+        "level": "a1",
+        "id": "020"
+    },
+    "title": {
+        "target": "-고 있다",
+        "en": "The Progressive Form -go itda",
+        "es": "La forma progresiva -go itda",
+        "fr": "La forme progressive -go itda",
+        "pt": "A forma progressiva -go itda",
+        "kr": "-고 있다",
+        "jp": "進行形 -고 있다",
+        "zh": "进行时 -고 있다"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사 어간 뒤에 -고 있다를 붙이면 동작이 진행 중임을 나타낸다.",
+                "en": "Attaching -go itda to a verb stem shows that an action is currently happening.",
+                "es": "Al añadir -go itda a la raíz del verbo se indica que una acción está ocurriendo en ese momento.",
+                "fr": "En ajoutant -go itda au radical du verbe, on indique qu'une action est en train de se dérouler.",
+                "pt": "Ao juntar -go itda à raiz do verbo, indica-se que uma ação está a decorrer no momento.",
+                "kr": "동사 어간 뒤에 -고 있다를 붙이면 동작이 진행 중임을 나타낸다.",
+                "jp": "動詞の語幹の後に-고 있다を付けると、動作が進行中であることを表す。",
+                "zh": "在动词词干后面加-고 있다，表示动作正在进行。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "어간 뒤에 곧바로 연결되어 동작이 계속되는 상태를 나타낸다.",
+                "en": "It connects directly after the stem to express that an action continues over time.",
+                "es": "Se une directamente a la raíz para expresar que una acción continúa en el tiempo.",
+                "fr": "Elle se rattache directement au radical pour exprimer qu'une action se poursuit dans le temps.",
+                "pt": "Liga-se diretamente à raiz para exprimir que uma ação continua ao longo do tempo.",
+                "kr": "어간 뒤에 곧바로 연결되어 동작이 계속되는 상태를 나타낸다.",
+                "jp": "語幹の後に直接連結して、動作が続いている状態を表す。",
+                "zh": "直接连接在词干后面，表示动作持续的状态。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동작 동사에만 쓰이고 있다, 없다 같은 상태 동사에는 쓰이지 않는다.",
+                "en": "It only combines with action verbs, not with stative verbs like itda or eopda.",
+                "es": "Solo se combina con verbos de acción, no con verbos de estado como itda o eopda.",
+                "fr": "Elle ne s'associe qu'aux verbes d'action, pas aux verbes d'état comme itda ou eopda.",
+                "pt": "Só se combina com verbos de ação, não com verbos de estado como itda ou eopda.",
+                "kr": "동작 동사에만 쓰이고 있다, 없다 같은 상태 동사에는 쓰이지 않는다.",
+                "jp": "動作動詞にのみ使われ、있다、없다のような状態動詞には使われない。",
+                "zh": "只与动作动词搭配，不与있다、없다这类状态动词搭配。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "완료된 동작의 결과 지속을 뜻하는 -아/어 있다와 의미가 다르며 격식체와 비격식체 모두 자유롭게 쓸 수 있다.",
+                "en": "Its meaning differs from -a/eo itda, which shows a resulting state after completion, and it can be used freely in both formal and informal speech.",
+                "es": "Su significado difiere de -a/eo itda, que muestra un estado resultante tras completarse la acción, y puede usarse libremente tanto en registro formal como informal.",
+                "fr": "Son sens diffère de -a/eo itda, qui exprime un état résultant après l'achèvement, et elle peut s'employer librement en registre formel comme informel.",
+                "pt": "O seu significado difere de -a/eo itda, que mostra um estado resultante após a conclusão, e pode ser usada livremente tanto no registo formal como informal.",
+                "kr": "완료된 동작의 결과 지속을 뜻하는 -아/어 있다와 의미가 다르며 격식체와 비격식체 모두 자유롭게 쓸 수 있다.",
+                "jp": "完了した動作の結果の持続を意味する-아/어 있다とは意味が異なり、格式体と非格式体のどちらでも自由に使える。",
+                "zh": "它与表示动作完成后结果持续的-아/어 있다意义不同，无论正式还是非正式场合都能自由使用。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "입다, 결혼하다 같은 동사는 동작이 아니라 그 결과 상태가 지속됨을 나타내기도 하므로 주의해야 한다.",
+                "en": "Verbs like ipda or gyeolhonhada can indicate a continuing resulting state rather than an ongoing action, so care is needed.",
+                "es": "Verbos como ipda o gyeolhonhada pueden indicar un estado resultante continuo en vez de una acción en curso, así que hay que tener cuidado.",
+                "fr": "Des verbes comme ipda ou gyeolhonhada peuvent indiquer un état résultant continu plutôt qu'une action en cours, d'où la nécessité de prudence.",
+                "pt": "Verbos como ipda ou gyeolhonhada podem indicar um estado resultante contínuo em vez de uma ação em curso, pelo que é preciso cuidado.",
+                "kr": "입다, 결혼하다 같은 동사는 동작이 아니라 그 결과 상태가 지속됨을 나타내기도 하므로 주의해야 한다.",
+                "jp": "입다、결혼하다のような動詞は、動作ではなくその結果の状態が続くことを表す場合もあるため、注意が必要である。",
+                "zh": "像입다、결혼하다这样的动词，有时表示的不是动作本身，而是其结果状态的持续，因此需要注意。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "지금 밥을 먹고 있어요.",
+                "en": "I am eating right now.",
+                "es": "Estoy comiendo ahora mismo.",
+                "fr": "Je suis en train de manger maintenant.",
+                "pt": "Estou a comer agora mesmo.",
+                "kr": "지금 밥을 먹고 있어요.",
+                "jp": "今ご飯を食べています。",
+                "zh": "我现在正在吃饭。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "친구가 책을 읽고 있어요.",
+                "en": "My friend is reading a book.",
+                "es": "Mi amigo está leyendo un libro.",
+                "fr": "Mon ami est en train de lire un livre.",
+                "pt": "O meu amigo está a ler um livro.",
+                "kr": "친구가 책을 읽고 있어요.",
+                "jp": "友達が本を読んでいます。",
+                "zh": "朋友正在看书。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "아이가 노래를 부르고 있어요.",
+                "en": "The child is singing a song.",
+                "es": "El niño está cantando una canción.",
+                "fr": "L'enfant est en train de chanter une chanson.",
+                "pt": "A criança está a cantar uma canção.",
+                "kr": "아이가 노래를 부르고 있어요.",
+                "jp": "子供が歌を歌っています。",
+                "zh": "孩子正在唱歌。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "비가 계속 오고 있어요.",
+                "en": "It keeps raining.",
+                "es": "Sigue lloviendo sin parar.",
+                "fr": "Il continue de pleuvoir.",
+                "pt": "Continua a chover.",
+                "kr": "비가 계속 오고 있어요.",
+                "jp": "雨がずっと降っています。",
+                "zh": "雨一直在下。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "지금 뭐 하고 있어요?",
+                "en": "What are you doing right now?",
+                "es": "¿Qué estás haciendo ahora mismo?",
+                "fr": "Que fais-tu en ce moment ?",
+                "pt": "O que estás a fazer agora mesmo?",
+                "kr": "지금 뭐 하고 있어요?",
+                "jp": "今何をしていますか。",
+                "zh": "你现在在做什么？"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 커피를 마시고 있습니다.",
+                "en": "I am drinking coffee.",
+                "es": "Estoy tomando café.",
+                "fr": "Je suis en train de boire un café.",
+                "pt": "Estou a beber café.",
+                "kr": "저는 커피를 마시고 있습니다.",
+                "jp": "私はコーヒーを飲んでいます。",
+                "zh": "我正在喝咖啡。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "학생들이 운동장에서 놀고 있어요.",
+                "en": "The students are playing on the playground.",
+                "es": "Los estudiantes están jugando en el patio.",
+                "fr": "Les élèves sont en train de jouer dans la cour.",
+                "pt": "Os alunos estão a brincar no recreio.",
+                "kr": "학생들이 운동장에서 놀고 있어요.",
+                "jp": "学生たちが運動場で遊んでいます。",
+                "zh": "学生们正在操场上玩耍。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 요즘 한국어를 배우고 있어요.",
+                "en": "These days I am learning Korean.",
+                "es": "Últimamente estoy aprendiendo coreano.",
+                "fr": "Ces derniers temps, j'apprends le coréen.",
+                "pt": "Ultimamente estou a aprender coreano.",
+                "kr": "저는 요즘 한국어를 배우고 있어요.",
+                "jp": "私は最近韓国語を習っています。",
+                "zh": "我最近在学韩语。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "언니는 예쁜 옷을 입고 있어요.",
+                "en": "My older sister is wearing pretty clothes.",
+                "es": "Mi hermana mayor lleva ropa bonita.",
+                "fr": "Ma grande sœur porte de beaux vêtements.",
+                "pt": "A minha irmã mais velha está a usar roupa bonita.",
+                "kr": "언니는 예쁜 옷을 입고 있어요.",
+                "jp": "姉はきれいな服を着ています。",
+                "zh": "姐姐穿着漂亮的衣服。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그는 삼 년째 이 회사에 다니고 있어요.",
+                "en": "He has been working at this company for three years.",
+                "es": "Él lleva tres años trabajando en esta empresa.",
+                "fr": "Il travaille dans cette entreprise depuis trois ans.",
+                "pt": "Ele trabalha nesta empresa há três anos.",
+                "kr": "그는 삼 년째 이 회사에 다니고 있어요.",
+                "jp": "彼は三年目この会社に通っています。",
+                "zh": "他在这家公司已经工作三年了。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "할머니는 시골에서 혼자 살고 있어요.",
+                "en": "Grandmother lives alone in the countryside.",
+                "es": "La abuela vive sola en el campo.",
+                "fr": "Grand-mère vit seule à la campagne.",
+                "pt": "A avó vive sozinha no campo.",
+                "kr": "할머니는 시골에서 혼자 살고 있어요.",
+                "jp": "祖母は田舎で一人で暮らしています。",
+                "zh": "奶奶一个人住在乡下。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "형은 몇 년 전부터 태권도를 배우고 있어요.",
+                "en": "My older brother has been learning taekwondo for several years.",
+                "es": "Mi hermano mayor lleva varios años aprendiendo taekwondo.",
+                "fr": "Mon grand frère apprend le taekwondo depuis plusieurs années.",
+                "pt": "O meu irmão mais velho aprende taekwondo há vários anos.",
+                "kr": "형은 몇 년 전부터 태권도를 배우고 있어요.",
+                "jp": "兄は数年前からテコンドーを習っています。",
+                "zh": "哥哥从几年前开始学跆拳道。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

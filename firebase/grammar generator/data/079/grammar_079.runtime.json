@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "B1_KO_QUOTATION_REQUEST",
+        "level": "b1",
+        "id": "079"
+    },
+    "title": {
+        "target": "-자고 하다 / -(으)라고 하다",
+        "en": "Quoting Suggestions and Commands (-자고 하다 / -(으)라고 하다)",
+        "es": "Citar propuestas y órdenes (-자고 하다 / -(으)라고 하다)",
+        "fr": "Rapporter des propositions et des ordres (-자고 하다 / -(으)라고 하다)",
+        "pt": "Citar propostas e ordens (-자고 하다 / -(으)라고 하다)",
+        "kr": "-자고 하다 / -(으)라고 하다",
+        "jp": "提案と命令の引用表現（-자고 하다 / -(으)라고 하다）",
+        "zh": "转述建议与命令（-자고 하다 / -(으)라고 하다）"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "제안이나 지시를 간접적으로 전달할 때 쓰는 인용 표현이다. 화자가 들은 말을 그대로 옮기지 않고 요약해서 전달하는 기능을 한다.",
+                "en": "This expression is used to indirectly convey a suggestion or instruction someone made. It functions to relay what the speaker heard in summarized form rather than as a direct quote.",
+                "es": "Esta expresión se usa para transmitir de forma indirecta una sugerencia o una instrucción que alguien hizo. Sirve para relatar lo que el hablante oyó de forma resumida en lugar de citarlo textualmente.",
+                "fr": "Cette expression sert à rapporter indirectement une suggestion ou un ordre donné par quelqu'un. Elle permet de relayer ce que le locuteur a entendu de manière résumée plutôt que par une citation directe.",
+                "pt": "Esta expressão é usada para transmitir indiretamente uma sugestão ou uma instrução que alguém deu. Serve para relatar o que o falante ouviu de forma resumida, em vez de citar diretamente.",
+                "kr": "제안이나 지시를 간접적으로 전달할 때 쓰는 인용 표현이다. 화자가 들은 말을 그대로 옮기지 않고 요약해서 전달하는 기능을 한다.",
+                "jp": "この表現は、提案や指示を間接的に伝えるときに使う引用表現である。話者が聞いた内容をそのまま移さず、要約して伝える機能を持つ。",
+                "zh": "这是用来间接转达建议或指示的引用表达。它的作用是把说话人听到的内容加以概括后转达，而不是原样照搬。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사 어간에 -자고 하다를 붙이면 청유문을 인용하고, -(으)라고 하다를 붙이면 명령문을 인용한다. 받침이 있으면 으라고, 받침이 없으면 라고를 선택해 어간에 연결한다.",
+                "en": "Attaching -자고 하다 to a verb stem quotes a proposal, while attaching -(으)라고 하다 quotes a command. The choice between 으라고 and 라고 depends on whether the stem ends in a consonant or a vowel.",
+                "es": "Al añadir -자고 하다 a la raíz verbal se cita una propuesta, mientras que -(으)라고 하다 cita una orden. La elección entre 으라고 y 라고 depende de si la raíz termina en consonante o en vocal.",
+                "fr": "En ajoutant -자고 하다 au radical verbal, on rapporte une proposition, tandis que -(으)라고 하다 rapporte un ordre. Le choix entre 으라고 et 라고 dépend de la présence ou non d'une consonne finale au radical.",
+                "pt": "Ao juntar -자고 하다 à raiz verbal cita-se uma proposta, enquanto -(으)라고 하다 cita uma ordem. A escolha entre 으라고 e 라고 depende de a raiz terminar em consoante ou em vogal.",
+                "kr": "동사 어간에 -자고 하다를 붙이면 청유문을 인용하고, -(으)라고 하다를 붙이면 명령문을 인용한다. 받침이 있으면 으라고, 받침이 없으면 라고를 선택해 어간에 연결한다.",
+                "jp": "動詞語幹に-자고 하다を付けると勧誘文を引用し、-(으)라고 하다を付けると命令文を引用する。語幹末に終声（パッチム）がある場合は으라고を、ない場合は라고を選んで語幹に接続する。",
+                "zh": "在动词词干后加上-자고 하다用于转述劝诱句，加上-(으)라고 하다则用于转述命令句。词干末尾若有收音（받침）就接으라고，没有收音就接라고。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "청유문을 인용할 때는 -자고 하다만 가능하며 명령문에는 쓸 수 없다. 명령문을 인용할 때는 반드시 -(으)라고 하다를 사용하고 부정 명령은 -지 말라고 하다로 바뀐다.",
+                "en": "Only -자고 하다 can be used to quote a proposal, and it cannot replace a command. A command must be quoted with -(으)라고 하다, and a negative command changes to -지 말라고 하다.",
+                "es": "Solo -자고 하다 puede usarse para citar una propuesta y no puede sustituir a una orden. Una orden debe citarse con -(으)라고 하다, y una orden negativa cambia a -지 말라고 하다.",
+                "fr": "Seul -자고 하다 peut être utilisé pour rapporter une proposition et ne peut pas remplacer un ordre. Un ordre doit être rapporté avec -(으)라고 하다, et un ordre négatif devient -지 말라고 하다.",
+                "pt": "Só -자고 하다 pode ser usado para citar uma proposta e não pode substituir uma ordem. Uma ordem deve ser citada com -(으)라고 하다, e uma ordem negativa muda para -지 말라고 하다.",
+                "kr": "청유문을 인용할 때는 -자고 하다만 가능하며 명령문에는 쓸 수 없다. 명령문을 인용할 때는 반드시 -(으)라고 하다를 사용하고 부정 명령은 -지 말라고 하다로 바뀐다.",
+                "jp": "勧誘文を引用する場合は-자고 하다しか使えず、命令文には用いることができない。命令文を引用する場合は必ず-(으)라고 하다を使い、否定命令は-지 말라고 하다に変わる。",
+                "zh": "转述劝诱句时只能使用-자고 하다，不能用于命令句。转述命令句时必须使用-(으)라고 하다，否定命令则要变成-지 말라고 하다。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "-냐고 하다가 질문을, -다고 하다가 평서문을 인용하는 것과 달리 이 표현은 제안과 지시만을 대상으로 한다. 격식과 비격식 상황 모두에서 형태 차이 없이 동일하게 쓰인다.",
+                "en": "Unlike -냐고 하다, which quotes questions, or -다고 하다, which quotes statements, this expression only covers proposals and instructions. It takes the same form in both formal and informal situations.",
+                "es": "A diferencia de -냐고 하다, que cita preguntas, o -다고 하다, que cita afirmaciones, esta expresión solo abarca propuestas e instrucciones. Toma la misma forma tanto en situaciones formales como informales.",
+                "fr": "Contrairement à -냐고 하다, qui rapporte des questions, ou à -다고 하다, qui rapporte des affirmations, cette expression ne couvre que les propositions et les instructions. Elle prend la même forme dans les situations formelles et informelles.",
+                "pt": "Ao contrário de -냐고 하다, que cita perguntas, ou de -다고 하다, que cita afirmações, esta expressão abrange apenas propostas e instruções. Assume a mesma forma tanto em situações formais como informais.",
+                "kr": "-냐고 하다가 질문을, -다고 하다가 평서문을 인용하는 것과 달리 이 표현은 제안과 지시만을 대상으로 한다. 격식과 비격식 상황 모두에서 형태 차이 없이 동일하게 쓰인다.",
+                "jp": "-냐고 하다が疑問文を、-다고 하다が平叙文を引用するのとは異なり、この表現は提案と指示だけを対象とする。格式のある場面でもない場面でも、形の違いなく同じように使われる。",
+                "zh": "与-냐고 하다转述疑问句、-다고 하다转述陈述句不同，这个表达只针对建议和指示。无论是正式场合还是非正式场合，形式都没有区别，用法相同。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "많은 학습자가 청유형 어미를 그대로 남겨 자라고 같은 잘못된 형태를 만든다. 명령문을 인용할 때도 해라고처럼 원형을 살리지 않도록 주의해야 한다.",
+                "en": "Many learners mistakenly keep the proposal ending intact and produce incorrect forms like 자라고. Care is also needed with commands so that the plain form isn't kept, as in 해라고.",
+                "es": "Muchos estudiantes mantienen erróneamente la terminación de la propuesta y producen formas incorrectas como 자라고. También hay que tener cuidado con las órdenes para no conservar la forma simple, como en 해라고.",
+                "fr": "De nombreux apprenants gardent à tort la terminaison de la proposition et produisent des formes incorrectes comme 자라고. Il faut aussi veiller à ne pas conserver la forme simple des ordres, comme dans 해라고.",
+                "pt": "Muitos aprendizes mantêm erradamente a terminação da proposta e produzem formas incorretas como 자라고. Também é preciso ter cuidado com as ordens para não manter a forma simples, como em 해라고.",
+                "kr": "많은 학습자가 청유형 어미를 그대로 남겨 자라고 같은 잘못된 형태를 만든다. 명령문을 인용할 때도 해라고처럼 원형을 살리지 않도록 주의해야 한다.",
+                "jp": "多くの学習者が勧誘形の語尾をそのまま残し、자라고のような誤った形を作ってしまう。命令文を引用する際も、해라고のように元の形を残さないよう注意しなければならない。",
+                "zh": "很多学习者会把劝诱型词尾原样保留下来，造出像자라고这样错误的形式。转述命令句时也要注意，不能像해라고那样保留原形。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "친구가 같이 영화를 보자고 했어요.",
+                "en": "My friend suggested that we watch a movie together.",
+                "es": "Mi amigo propuso que viéramos una película juntos.",
+                "fr": "Mon ami a proposé qu'on regarde un film ensemble.",
+                "pt": "O meu amigo propôs que víssemos um filme juntos.",
+                "kr": "친구가 같이 영화를 보자고 했어요.",
+                "jp": "友達が一緒に映画を見ようと言いました。",
+                "zh": "朋友提议一起去看电影。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "선생님이 숙제를 다시 하라고 했어요.",
+                "en": "The teacher told me to do the homework again.",
+                "es": "El profesor me dijo que hiciera los deberes otra vez.",
+                "fr": "Le professeur m'a dit de refaire les devoirs.",
+                "pt": "O professor disse-me para refazer os trabalhos de casa.",
+                "kr": "선생님이 숙제를 다시 하라고 했어요.",
+                "jp": "先生が宿題をもう一度やるようにと言いました。",
+                "zh": "老师让我把作业重新做一遍。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "동생이 문을 닫으라고 했어요.",
+                "en": "My younger sibling told me to close the door.",
+                "es": "Mi hermano menor me dijo que cerrara la puerta.",
+                "fr": "Mon petit frère m'a dit de fermer la porte.",
+                "pt": "O meu irmão mais novo disse-me para fechar a porta.",
+                "kr": "동생이 문을 닫으라고 했어요.",
+                "jp": "弟（妹）がドアを閉めるようにと言いました。",
+                "zh": "弟弟（妹妹）让我把门关上。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "부장님이 일찍 오라고 하셨어요.",
+                "en": "The department head told me to come early.",
+                "es": "El jefe de departamento me dijo que viniera temprano.",
+                "fr": "Le chef de service m'a dit de venir tôt.",
+                "pt": "O chefe de departamento disse-me para vir cedo.",
+                "kr": "부장님이 일찍 오라고 하셨어요.",
+                "jp": "部長が早く来るようにとおっしゃいました。",
+                "zh": "部长让我早点来。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "직원이 잠깐 기다리라고 했어요.",
+                "en": "The staff member told me to wait a moment.",
+                "es": "El empleado me dijo que esperara un momento.",
+                "fr": "L'employé m'a dit d'attendre un instant.",
+                "pt": "O funcionário disse-me para esperar um momento.",
+                "kr": "직원이 잠깐 기다리라고 했어요.",
+                "jp": "職員がしばらく待つようにと言いました。",
+                "zh": "职员让我稍等一下。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "의사가 담배를 피우지 말라고 했어요.",
+                "en": "The doctor told me not to smoke.",
+                "es": "El médico me dijo que no fumara.",
+                "fr": "Le médecin m'a dit de ne pas fumer.",
+                "pt": "O médico disse-me para não fumar.",
+                "kr": "의사가 담배를 피우지 말라고 했어요.",
+                "jp": "医者がたばこを吸わないようにと言いました。",
+                "zh": "医生让我不要吸烟。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "친구들이 주말에 등산을 가자고 했어요.",
+                "en": "My friends suggested going hiking this weekend.",
+                "es": "Mis amigos propusieron ir de excursión este fin de semana.",
+                "fr": "Mes amis ont proposé d'aller randonner ce week-end.",
+                "pt": "Os meus amigos propuseram ir fazer caminhada este fim de semana.",
+                "kr": "친구들이 주말에 등산을 가자고 했어요.",
+                "jp": "友達が週末に山登りに行こうと言いました。",
+                "zh": "朋友们提议周末去爬山。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "어머니가 늦게까지 놀지 말라고 하셨어요.",
+                "en": "My mother told me not to stay out playing late.",
+                "es": "Mi madre me dijo que no jugara hasta tarde.",
+                "fr": "Ma mère m'a dit de ne pas rester dehors trop tard.",
+                "pt": "A minha mãe disse-me para não brincar até tarde.",
+                "kr": "어머니가 늦게까지 놀지 말라고 하셨어요.",
+                "jp": "母が遅くまで遊ばないようにとおっしゃいました。",
+                "zh": "妈妈让我别玩到太晚。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "사장님이 회의를 미루자고 해서 다음 주로 정했어요.",
+                "en": "The boss suggested postponing the meeting, so we set it for next week.",
+                "es": "El jefe propuso posponer la reunión, así que la fijamos para la semana que viene.",
+                "fr": "Le patron a proposé de reporter la réunion, donc on l'a fixée pour la semaine prochaine.",
+                "pt": "O chefe propôs adiar a reunião, por isso marcámos para a próxima semana.",
+                "kr": "사장님이 회의를 미루자고 해서 다음 주로 정했어요.",
+                "jp": "社長が会議を延ばそうと言ったので、来週に決めました。",
+                "zh": "老板提议把会议推迟，所以定在了下周。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "경찰이 차를 세우라고 해서 바로 세웠어요.",
+                "en": "The police told me to stop the car, so I stopped right away.",
+                "es": "La policía me dijo que parara el coche, así que lo hice enseguida.",
+                "fr": "La police m'a dit d'arrêter la voiture, alors je l'ai arrêtée tout de suite.",
+                "pt": "A polícia disse-me para parar o carro, por isso parei imediatamente.",
+                "kr": "경찰이 차를 세우라고 해서 바로 세웠어요.",
+                "jp": "警察が車を止めるようにと言ったので、すぐ止めました。",
+                "zh": "警察让我把车停下，我就立刻停了。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "코치가 다시 뛰어 보라고 해서 열심히 뛰었어요.",
+                "en": "The coach told me to try running again, so I ran hard.",
+                "es": "El entrenador me dijo que intentara correr de nuevo, así que corrí con esfuerzo.",
+                "fr": "L'entraîneur m'a dit d'essayer de courir encore une fois, alors j'ai couru avec effort.",
+                "pt": "O treinador disse-me para tentar correr outra vez, por isso corri com esforço.",
+                "kr": "코치가 다시 뛰어 보라고 해서 열심히 뛰었어요.",
+                "jp": "コーチがもう一度走ってみるようにと言ったので、頑張って走りました。",
+                "zh": "教练让我再跑一次试试，我就努力跑了。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "할머니가 건강을 위해 야채를 많이 먹으라고 하셨어요.",
+                "en": "My grandmother told me to eat a lot of vegetables for my health.",
+                "es": "Mi abuela me dijo que comiera muchas verduras por mi salud.",
+                "fr": "Ma grand-mère m'a dit de manger beaucoup de légumes pour ma santé.",
+                "pt": "A minha avó disse-me para comer muitos vegetais para a minha saúde.",
+                "kr": "할머니가 건강을 위해 야채를 많이 먹으라고 하셨어요.",
+                "jp": "祖母が健康のために野菜をたくさん食べるようにとおっしゃいました。",
+                "zh": "奶奶让我为了健康多吃蔬菜。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

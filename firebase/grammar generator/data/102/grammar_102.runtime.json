@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "B1_KO_ATTRIBUTE",
+        "level": "b1",
+        "id": "102"
+    },
+    "title": {
+        "target": "-(으)ㄴ 편이다",
+        "en": "-(으)ㄴ 편이다 (Tends to be / Is relatively)",
+        "es": "-(으)ㄴ 편이다 (Tiende a ser / Es relativamente)",
+        "fr": "-(으)ㄴ 편이다 (A tendance à être / Est plutôt)",
+        "pt": "-(으)ㄴ 편이다 (Tende a ser / É relativamente)",
+        "kr": "-(으)ㄴ 편이다",
+        "jp": "-(으)ㄴ 편이다(〜する方だ/比較的〜だ)",
+        "zh": "-(으)ㄴ 편이다(算是……/比较……)"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "은 편이다는 어떤 상태가 단정적이지는 않지만 대체로 그런 쪽에 가깝다는 것을 나타내는 표현이다.",
+                "en": "-은 편이다 is an expression that shows a state is not absolute but generally leans toward being that way.",
+                "es": "-은 편이다 es una expresión que muestra que un estado no es absoluto, pero generalmente tiende a serlo.",
+                "fr": "-은 편이다 est une expression qui montre qu'un état n'est pas absolu, mais penche généralement dans ce sens.",
+                "pt": "-은 편이다 é uma expressão que mostra que um estado não é absoluto, mas geralmente tende a ser assim.",
+                "kr": "은 편이다는 어떤 상태가 단정적이지는 않지만 대체로 그런 쪽에 가깝다는 것을 나타내는 표현이다.",
+                "jp": "은 편이다は、ある状態が断定的ではないものの、大体そちらに近いことを示す表現である。",
+                "zh": "은 편이다是一种语法表达,表示某种状态虽不绝对,但大体上偏向于那一方面。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "형용사 어간에는 받침 유무에 따라 -은/ㄴ 편이다가 붙고 동사에는 -는 편이다가 붙는다.",
+                "en": "-은/ㄴ 편이다 attaches to adjective stems depending on whether they end in a consonant, while -는 편이다 attaches to verbs.",
+                "es": "-은/ㄴ 편이다 se une a raíces de adjetivo según terminen en consonante o no, y -는 편이다 se une a verbos.",
+                "fr": "-은/ㄴ 편이다 s'ajoute aux radicaux adjectivaux selon qu'ils se terminent par une consonne ou non, et -는 편이다 s'ajoute aux verbes.",
+                "pt": "-은/ㄴ 편이다 junta-se a radicais adjetivais conforme terminem em consoante ou não, e -는 편이다 junta-se a verbos.",
+                "kr": "형용사 어간에는 받침 유무에 따라 -은/ㄴ 편이다가 붙고 동사에는 -는 편이다가 붙는다.",
+                "jp": "形容詞の語幹にはパッチムの有無によって-은/ㄴ 편이다が付き、動詞には-는 편이다が付く。",
+                "zh": "形容词词干根据是否带收音接-은/ㄴ 편이다,动词则接-는 편이다。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "명확한 기준으로 판단할 수 없는 주관적 평가에만 쓰이며 수치로 정확히 확인되는 사실에는 쓰지 않는다.",
+                "en": "It's used only for subjective evaluations that can't be judged by a clear standard, and not for facts precisely confirmed by figures.",
+                "es": "Se usa solo para evaluaciones subjetivas que no pueden juzgarse con un criterio claro, no para hechos confirmados con exactitud por cifras.",
+                "fr": "Elle s'emploie seulement pour des évaluations subjectives qui ne peuvent être jugées selon un critère clair, et non pour des faits confirmés précisément par des chiffres.",
+                "pt": "Usa-se apenas para avaliações subjetivas que não podem ser julgadas por um critério claro, e não para factos confirmados com precisão por números.",
+                "kr": "명확한 기준으로 판단할 수 없는 주관적 평가에만 쓰이며 수치로 정확히 확인되는 사실에는 쓰지 않는다.",
+                "jp": "明確な基準で判断できない主観的な評価にのみ使われ、数値で正確に確認できる事実には使われない。",
+                "zh": "只用于无法用明确标准判断的主观评价,不用于能以数字准确确认的事实。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "다가 단정적으로 상태를 서술하는 것과 달리 은 편이다는 완곡하게 정도를 낮추어 말하는 태도를 담는다.",
+                "en": "Unlike -다, which states a condition assertively, -은 편이다 carries an attitude of softening the degree in a roundabout way.",
+                "es": "A diferencia de -다, que enuncia un estado de forma tajante, -은 편이다 conlleva una actitud de suavizar el grado de manera indirecta.",
+                "fr": "Contrairement à -다, qui énonce un état de façon catégorique, -은 편이다 porte une attitude d'atténuation indirecte du degré.",
+                "pt": "Ao contrário de -다, que enuncia um estado de forma categórica, -은 편이다 carrega uma atitude de suavizar o grau de forma indireta.",
+                "kr": "다가 단정적으로 상태를 서술하는 것과 달리 은 편이다는 완곡하게 정도를 낮추어 말하는 태도를 담는다.",
+                "jp": "다が断定的に状態を述べるのとは異なり、은 편이다は婉曲的に程度を控えめに言う態度を含んでいる。",
+                "zh": "与断定式陈述状态的다不同,은 편이다带有委婉降低程度、含蓄表达的态度。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "부정형은 은 편이 아니다로 쓰며 정도 부사와 함께 쓰이면 완곡함이 더 자연스럽게 살아난다.",
+                "en": "The negative form is 은 편이 아니다, and when used together with a degree adverb, the softened nuance comes across more naturally.",
+                "es": "La forma negativa es 은 편이 아니다, y al usarse junto con un adverbio de grado, el matiz suavizado resulta más natural.",
+                "fr": "La forme négative est 은 편이 아니다, et employée avec un adverbe de degré, la nuance atténuée paraît plus naturelle.",
+                "pt": "A forma negativa é 은 편이 아니다, e quando usada com um advérbio de grau, a nuance suavizada torna-se mais natural.",
+                "kr": "부정형은 은 편이 아니다로 쓰며 정도 부사와 함께 쓰이면 완곡함이 더 자연스럽게 살아난다.",
+                "jp": "否定形は은 편이 아니다として使い、程度の副詞と一緒に使うと婉曲さがより自然に生きてくる。",
+                "zh": "否定形式为은 편이 아니다,若与程度副词搭配使用,委婉的语气会显得更加自然。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 아침에 일찍 일어나는 편이에요.",
+                "en": "I tend to get up early in the morning.",
+                "es": "Suelo levantarme temprano por la mañana.",
+                "fr": "J'ai tendance à me lever tôt le matin.",
+                "pt": "Costumo levantar-me cedo de manhã.",
+                "kr": "저는 아침에 일찍 일어나는 편이에요.",
+                "jp": "私は朝早く起きる方です。",
+                "zh": "我算是早上起得比较早的人。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 도시는 물가가 비싼 편이에요.",
+                "en": "Prices in this city are relatively high.",
+                "es": "Los precios en esta ciudad son relativamente altos.",
+                "fr": "Les prix dans cette ville sont plutôt élevés.",
+                "pt": "Os preços nesta cidade são relativamente altos.",
+                "kr": "이 도시는 물가가 비싼 편이에요.",
+                "jp": "この都市は物価が高い方です。",
+                "zh": "这座城市的物价算是比较贵的。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "제 동생은 키가 큰 편이에요.",
+                "en": "My younger sibling is relatively tall.",
+                "es": "Mi hermano es relativamente alto.",
+                "fr": "Mon petit frère est plutôt grand.",
+                "pt": "O meu irmão mais novo é relativamente alto.",
+                "kr": "제 동생은 키가 큰 편이에요.",
+                "jp": "私の弟は背が高い方です。",
+                "zh": "我弟弟算是个子比较高的。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 매운 음식을 잘 먹는 편이에요.",
+                "en": "I tend to handle spicy food well.",
+                "es": "Suelo comer bien la comida picante.",
+                "fr": "J'ai tendance à bien supporter la nourriture épicée.",
+                "pt": "Costumo aguentar bem a comida picante.",
+                "kr": "저는 매운 음식을 잘 먹는 편이에요.",
+                "jp": "私は辛い食べ物をよく食べる方です。",
+                "zh": "我算是比较能吃辣的人。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그 식당은 친절한 편이에요.",
+                "en": "That restaurant is relatively friendly.",
+                "es": "Ese restaurante es relativamente amable.",
+                "fr": "Ce restaurant est plutôt accueillant.",
+                "pt": "Esse restaurante é relativamente simpático.",
+                "kr": "그 식당은 친절한 편이에요.",
+                "jp": "その食堂は親切な方です。",
+                "zh": "那家餐厅算是比较亲切的。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 잠이 별로 없는 편이 아니에요.",
+                "en": "I'm not exactly someone who sleeps little.",
+                "es": "No es que duerma poco precisamente.",
+                "fr": "Je ne suis pas vraiment quelqu'un qui dort peu.",
+                "pt": "Não é que durma pouco, propriamente.",
+                "kr": "저는 잠이 별로 없는 편이 아니에요.",
+                "jp": "私はあまり睡眠が少ない方ではありません。",
+                "zh": "我并不算是睡眠很少的人。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "요즘 날씨가 따뜻한 편이에요.",
+                "en": "The weather these days is relatively warm.",
+                "es": "El clima estos días es relativamente cálido.",
+                "fr": "Le temps ces jours-ci est plutôt doux.",
+                "pt": "O tempo nestes dias é relativamente quente.",
+                "kr": "요즘 날씨가 따뜻한 편이에요.",
+                "jp": "最近天気が暖かい方です。",
+                "zh": "最近天气算是比较暖和的。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그는 말이 적은 편이에요.",
+                "en": "He tends to speak little.",
+                "es": "Él tiende a hablar poco.",
+                "fr": "Il a tendance à parler peu.",
+                "pt": "Ele tende a falar pouco.",
+                "kr": "그는 말이 적은 편이에요.",
+                "jp": "彼は口数が少ない方です。",
+                "zh": "他算是话比较少的人。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 회사는 월급이 많은 편이에요.",
+                "en": "This company's salary is relatively high.",
+                "es": "El salario de esta empresa es relativamente alto.",
+                "fr": "Le salaire dans cette entreprise est plutôt élevé.",
+                "pt": "O salário nesta empresa é relativamente alto.",
+                "kr": "이 회사는 월급이 많은 편이에요.",
+                "jp": "この会社は給料が多い方です。",
+                "zh": "这家公司的工资算是比较高的。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "제 성격은 느긋한 편이라 잘 안 서둘러요.",
+                "en": "My personality tends to be laid-back, so I don't hurry much.",
+                "es": "Mi personalidad tiende a ser tranquila, así que no me apuro mucho.",
+                "fr": "Mon caractère est plutôt tranquille, donc je ne me presse pas beaucoup.",
+                "pt": "A minha personalidade tende a ser calma, por isso não me apresso muito.",
+                "kr": "제 성격은 느긋한 편이라 잘 안 서둘러요.",
+                "jp": "私の性格はのんびりした方なので、あまり急ぎません。",
+                "zh": "我的性格算是比较从容的,所以不太着急。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그 팀은 실력이 뛰어난 편이라 우승 후보로 꼽혀요.",
+                "en": "That team's skill is relatively outstanding, so it's counted as a favorite to win.",
+                "es": "La habilidad de ese equipo es relativamente sobresaliente, por lo que se le considera favorito.",
+                "fr": "Le niveau de cette équipe est plutôt exceptionnel, elle est donc considérée comme favorite.",
+                "pt": "A capacidade dessa equipa é relativamente excecional, por isso é apontada como favorita.",
+                "kr": "그 팀은 실력이 뛰어난 편이라 우승 후보로 꼽혀요.",
+                "jp": "そのチームは実力が優れている方なので、優勝候補に挙げられています。",
+                "zh": "那支队伍算是实力出众的,因此被列为夺冠热门。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 지역은 겨울에 눈이 많이 오는 편이에요.",
+                "en": "This area tends to get a lot of snow in winter.",
+                "es": "Esta zona suele recibir mucha nieve en invierno.",
+                "fr": "Cette région a tendance à recevoir beaucoup de neige en hiver.",
+                "pt": "Esta região costuma ter muita neve no inverno.",
+                "kr": "이 지역은 겨울에 눈이 많이 오는 편이에요.",
+                "jp": "この地域は冬に雪がたくさん降る方です。",
+                "zh": "这个地区冬天算是雪下得比较多的。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

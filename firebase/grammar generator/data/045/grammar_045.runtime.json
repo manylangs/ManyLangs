@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A2_KO_WHILE",
+        "level": "a2",
+        "id": "045"
+    },
+    "title": {
+        "target": "V-는 동안",
+        "en": "While / During",
+        "es": "Mientras",
+        "fr": "Pendant que",
+        "pt": "Enquanto",
+        "kr": "V-는 동안",
+        "jp": "～している間",
+        "zh": "……的时候（期间）"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사 어간에 '-는 동안'을 붙이면 한 동작이나 상태가 계속되는 시간의 폭을 가리키게 된다. 형태는 앞에 오는 동사의 받침 유무와 상관없이 항상 동일하게 결합한다.",
+                "en": "Attaching '-는 동안' to a verb stem marks the span of time during which an action or state continues. The form stays the same regardless of whether the preceding verb stem ends in a consonant or vowel.",
+                "es": "Al añadir '-는 동안' a la raíz verbal se señala el período durante el cual continúa una acción o un estado. La forma no cambia, tenga o no consonante final la raíz verbal precedente.",
+                "fr": "En ajoutant '-는 동안' au radical verbal, on indique la durée pendant laquelle une action ou un état se poursuit. La forme reste identique, que le radical précédent se termine par une consonne ou une voyelle.",
+                "pt": "Ao juntar '-는 동안' à raiz verbal, indica-se o período durante o qual uma ação ou um estado continua. A forma mantém-se igual, quer a raiz verbal anterior termine em consoante quer em vogal.",
+                "kr": "동사 어간에 '-는 동안'을 붙이면 한 동작이나 상태가 계속되는 시간의 폭을 가리키게 된다. 형태는 앞에 오는 동사의 받침 유무와 상관없이 항상 동일하게 결합한다.",
+                "jp": "動詞の語幹に「-는 동안」を付けると、ある動作や状態が続く時間の幅を指すようになる。形は前に来る動詞のパッチムの有無に関係なく常に同じように結合する。",
+                "zh": "在动词词干后加上'-는 동안'，就会表示某个动作或状态持续的时间范围。无论前面动词的词干有没有收音，形式都保持相同。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "앞 절이 나타내는 동작이 진행되는 시간 안에서 뒤 절의 사건이 일어남을 보여 주는 것이 핵심 원리다. 앞 절과 뒤 절의 주어는 같을 수도 있고 다를 수도 있어서 문장 구조가 비교적 자유롭다.",
+                "en": "The core principle is showing that the event in the second clause occurs within the time frame of the action in the first clause. Since the subjects of the two clauses can be the same or different, the sentence structure is fairly flexible.",
+                "es": "El principio central consiste en mostrar que el evento de la segunda cláusula ocurre dentro del marco temporal de la acción de la primera. Como los sujetos de ambas cláusulas pueden coincidir o no, la estructura de la oración resulta bastante flexible.",
+                "fr": "Le principe central consiste à montrer que l'événement de la seconde proposition se produit dans le cadre temporel de l'action de la première. Comme les sujets des deux propositions peuvent être identiques ou différents, la structure de la phrase reste assez souple.",
+                "pt": "O princípio central consiste em mostrar que o acontecimento da segunda oração ocorre dentro do período da ação da primeira. Como os sujeitos das duas orações podem ser iguais ou diferentes, a estrutura da frase é bastante flexível.",
+                "kr": "앞 절이 나타내는 동작이 진행되는 시간 안에서 뒤 절의 사건이 일어남을 보여 주는 것이 핵심 원리다. 앞 절과 뒤 절의 주어는 같을 수도 있고 다를 수도 있어서 문장 구조가 비교적 자유롭다.",
+                "jp": "前の節が表す動作が進行する時間の中で、後ろの節の出来事が起こることを示すのが核心の原理である。前の節と後ろの節の主語は同じでも異なってもよいため、文の構造は比較的自由である。",
+                "zh": "核心原理是表示后一分句的事件发生在前一分句所表示动作进行的时间范围之内。前后分句的主语可以相同，也可以不同，因此句子结构比较自由。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "지속성을 가진 동작 동사에만 결합할 수 있고 형용사나 순간적으로 끝나는 동사에는 자연스럽게 어울리지 않는다. 뒤 절에는 앞 절의 시간 범위 안에서 함께 일어나는 사건이나 상태만 올 수 있다.",
+                "en": "It can only combine with durative action verbs and does not sit naturally with adjectives or momentary verbs. Only an event or state that occurs within the time frame of the first clause can appear in the second clause.",
+                "es": "Solo puede combinarse con verbos de acción duradera y no resulta natural con adjetivos ni con verbos momentáneos. En la segunda cláusula solo puede aparecer un evento o estado que ocurra dentro del marco temporal de la primera.",
+                "fr": "Elle ne peut se combiner qu'avec des verbes d'action durative et ne convient pas naturellement aux adjectifs ni aux verbes momentanés. Seul un événement ou un état se produisant dans le cadre temporel de la première proposition peut figurer dans la seconde.",
+                "pt": "Só se pode combinar com verbos de ação durativa e não se ajusta naturalmente a adjetivos nem a verbos momentâneos. Na segunda oração só pode surgir um acontecimento ou estado que ocorra dentro do período da primeira.",
+                "kr": "지속성을 가진 동작 동사에만 결합할 수 있고 형용사나 순간적으로 끝나는 동사에는 자연스럽게 어울리지 않는다. 뒤 절에는 앞 절의 시간 범위 안에서 함께 일어나는 사건이나 상태만 올 수 있다.",
+                "jp": "持続性を持つ動作動詞にのみ結合でき、形容詞や瞬間的に終わる動詞には自然に合わない。後ろの節には、前の節の時間範囲の中で一緒に起こる出来事や状態のみが来ることができる。",
+                "zh": "只能与具有持续性的动作动词结合，与形容词或瞬间结束的动词搭配则不自然。后一分句只能是在前一分句时间范围内同时发生的事件或状态。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "'-(으)면서'가 한 주체의 두 동작이 겹치는 순간을 강조한다면 이 표현은 시간의 폭 그 자체에 초점을 둔다. 격식과 비격식을 가리지 않고 두루 쓰이기 때문에 문체에 따른 제약은 거의 없다.",
+                "en": "While '-(으)면서' emphasizes the moment when two actions of one subject overlap, this expression focuses on the span of time itself. Because it is used across both formal and informal registers, there are hardly any style-related restrictions.",
+                "es": "Mientras que '-(으)면서' resalta el instante en que se superponen dos acciones de un mismo sujeto, esta expresión se centra en el propio período de tiempo. Al usarse tanto en registros formales como informales, apenas existen restricciones de estilo.",
+                "fr": "Alors que '-(으)면서' met l'accent sur l'instant où se chevauchent deux actions d'un même sujet, cette expression se concentre sur la durée elle-même. Comme elle s'emploie aussi bien en registre formel qu'informel, il n'existe presque aucune restriction stylistique.",
+                "pt": "Enquanto '-(으)면서' realça o instante em que duas ações de um mesmo sujeito se sobrepõem, esta expressão centra-se no próprio período de tempo. Por ser usada tanto em registos formais como informais, quase não existem restrições de estilo.",
+                "kr": "'-(으)면서'가 한 주체의 두 동작이 겹치는 순간을 강조한다면 이 표현은 시간의 폭 그 자체에 초점을 둔다. 격식과 비격식을 가리지 않고 두루 쓰이기 때문에 문체에 따른 제약은 거의 없다.",
+                "jp": "「-(으)면서」が一つの主体の二つの動作が重なる瞬間を強調するなら、この表現は時間の幅そのものに焦点を置く。格式のある場面でもくだけた場面でも広く使われるため、文体による制約はほとんどない。",
+                "zh": "如果说'-(으)면서'强调的是同一主体两个动作重叠的瞬间，这个表达则关注时间跨度本身。因为不分正式与非正式场合广泛使用，几乎没有文体上的限制。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "시제와 상관없이 뒤 절의 시제만 조정하고 앞 절은 항상 현재형 '-는' 형태를 유지해야 한다. 형용사 어간에 잘못 결합하는 실수도 자주 나타나므로 동사 여부를 먼저 확인하는 습관이 필요하다.",
+                "en": "Regardless of overall tense, only the second clause's tense is adjusted, while the first clause must always keep the present-tense '-는' form. Mistakenly attaching it to an adjective stem is also common, so it helps to first check whether the word is a verb.",
+                "es": "Independientemente del tiempo verbal general, solo se ajusta el tiempo de la segunda cláusula, mientras que la primera debe mantener siempre la forma de presente '-는'. También es frecuente el error de unirlo a una raíz adjetival, así que conviene comprobar primero si se trata de un verbo.",
+                "fr": "Quel que soit le temps global, seul le temps de la seconde proposition est ajusté, tandis que la première doit toujours conserver la forme de présent '-는'. L'erreur consistant à l'attacher à un radical adjectival est également fréquente, d'où l'intérêt de vérifier d'abord s'il s'agit bien d'un verbe.",
+                "pt": "Independentemente do tempo verbal geral, só se ajusta o tempo da segunda oração, devendo a primeira manter sempre a forma de presente '-는'. Também é frequente o erro de a associar a uma raiz adjetival, por isso convém verificar primeiro se se trata de um verbo.",
+                "kr": "시제와 상관없이 뒤 절의 시제만 조정하고 앞 절은 항상 현재형 '-는' 형태를 유지해야 한다. 형용사 어간에 잘못 결합하는 실수도 자주 나타나므로 동사 여부를 먼저 확인하는 습관이 필요하다.",
+                "jp": "時制に関係なく後ろの節の時制だけを調整し、前の節は常に現在形「-는」の形を保たなければならない。形容詞の語幹に誤って結合する間違いもよく見られるため、動詞かどうかを先に確認する習慣が必要である。",
+                "zh": "无论整体时态如何，只调整后一分句的时态，前一分句必须始终保持现在时'-는'的形式。错误地与形容词词干结合的情况也很常见，因此有必要先确认是否为动词。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "텔레비전을 보는 동안 전화벨이 울렸어요.",
+                "en": "While watching television, the phone rang.",
+                "es": "Mientras veía la televisión, sonó el teléfono.",
+                "fr": "Pendant que je regardais la télévision, le téléphone a sonné.",
+                "pt": "Enquanto via televisão, o telefone tocou.",
+                "kr": "텔레비전을 보는 동안 전화벨이 울렸어요.",
+                "jp": "テレビを見ている間に電話が鳴りました。",
+                "zh": "看电视的时候电话响了。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "엄마가 요리하는 동안 아이는 그림을 그렸어요.",
+                "en": "While mom was cooking, the child drew a picture.",
+                "es": "Mientras la madre cocinaba, el niño dibujaba.",
+                "fr": "Pendant que la mère cuisinait, l'enfant dessinait.",
+                "pt": "Enquanto a mãe cozinhava, a criança desenhava.",
+                "kr": "엄마가 요리하는 동안 아이는 그림을 그렸어요.",
+                "jp": "お母さんが料理をしている間に子供は絵を描きました。",
+                "zh": "妈妈做饭的时候孩子画了画。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "버스를 기다리는 동안 책을 읽었어요.",
+                "en": "While waiting for the bus, I read a book.",
+                "es": "Mientras esperaba el autobús, leí un libro.",
+                "fr": "Pendant que j'attendais le bus, j'ai lu un livre.",
+                "pt": "Enquanto esperava o autocarro, li um livro.",
+                "kr": "버스를 기다리는 동안 책을 읽었어요.",
+                "jp": "バスを待っている間に本を読みました。",
+                "zh": "等公交车的时候看了书。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "회의하는 동안 휴대폰을 꺼 두었어요.",
+                "en": "During the meeting, I kept my phone turned off.",
+                "es": "Durante la reunión, mantuve el móvil apagado.",
+                "fr": "Pendant la réunion, j'ai gardé mon téléphone éteint.",
+                "pt": "Durante a reunião, mantive o telemóvel desligado.",
+                "kr": "회의하는 동안 휴대폰을 꺼 두었어요.",
+                "jp": "会議をしている間に携帯電話を消しておきました。",
+                "zh": "开会的时候把手机关了。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "제가 자는 동안 눈이 많이 내렸어요.",
+                "en": "While I was sleeping, it snowed a lot.",
+                "es": "Mientras dormía, nevó mucho.",
+                "fr": "Pendant que je dormais, il a beaucoup neigé.",
+                "pt": "Enquanto dormia, nevou muito.",
+                "kr": "제가 자는 동안 눈이 많이 내렸어요.",
+                "jp": "私が寝ている間に雪がたくさん降りました。",
+                "zh": "我睡觉的时候下了很多雪。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "동생이 씻는 동안 저는 아침을 준비했어요.",
+                "en": "While my sibling was washing up, I prepared breakfast.",
+                "es": "Mientras mi hermano se aseaba, yo preparaba el desayuno.",
+                "fr": "Pendant que mon frère se lavait, je préparais le petit-déjeuner.",
+                "pt": "Enquanto o meu irmão se lavava, eu preparava o pequeno-almoço.",
+                "kr": "동생이 씻는 동안 저는 아침을 준비했어요.",
+                "jp": "弟が体を洗っている間に私は朝ご飯を準備しました。",
+                "zh": "弟弟洗澡的时候我准备了早饭。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "손님이 기다리는 동안 커피를 드렸어요.",
+                "en": "While the guest waited, I offered coffee.",
+                "es": "Mientras el cliente esperaba, le ofrecí café.",
+                "fr": "Pendant que le client attendait, je lui ai offert un café.",
+                "pt": "Enquanto o cliente esperava, ofereci-lhe café.",
+                "kr": "손님이 기다리는 동안 커피를 드렸어요.",
+                "jp": "お客様が待っている間にコーヒーを差し上げました。",
+                "zh": "客人等待的时候端上了咖啡。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "여행하는 동안 매일 사진을 찍었어요.",
+                "en": "While traveling, I took photos every day.",
+                "es": "Mientras viajaba, tomaba fotos cada día.",
+                "fr": "Pendant que je voyageais, je prenais des photos tous les jours.",
+                "pt": "Enquanto viajava, tirava fotografias todos os dias.",
+                "kr": "여행하는 동안 매일 사진을 찍었어요.",
+                "jp": "旅行している間に毎日写真を撮りました。",
+                "zh": "旅行的时候每天都拍了照片。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "공사하는 동안 도로 일부가 통제됩니다.",
+                "en": "While construction is underway, part of the road is controlled.",
+                "es": "Mientras dura la construcción, parte de la vía está controlada.",
+                "fr": "Pendant les travaux, une partie de la route est fermée à la circulation.",
+                "pt": "Durante as obras, parte da estrada está condicionada.",
+                "kr": "공사하는 동안 도로 일부가 통제됩니다.",
+                "jp": "工事している間に道路の一部が規制されます。",
+                "zh": "施工期间部分道路会被管制。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "발표하는 동안 청중이 조용히 집중했어요.",
+                "en": "While the presentation was going on, the audience listened quietly.",
+                "es": "Mientras se hacía la presentación, el público escuchaba en silencio.",
+                "fr": "Pendant la présentation, le public écoutait attentivement en silence.",
+                "pt": "Durante a apresentação, o público ouvia atentamente em silêncio.",
+                "kr": "발표하는 동안 청중이 조용히 집중했어요.",
+                "jp": "発表している間に聴衆が静かに集中しました。",
+                "zh": "发表演讲的时候听众安静地专注着。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "회복하는 동안 무리한 운동은 피해야 해요.",
+                "en": "While recovering, strenuous exercise should be avoided.",
+                "es": "Mientras se recupera, hay que evitar el ejercicio intenso.",
+                "fr": "Pendant la convalescence, il faut éviter les exercices intenses.",
+                "pt": "Durante a recuperação, deve evitar-se o exercício intenso.",
+                "kr": "회복하는 동안 무리한 운동은 피해야 해요.",
+                "jp": "回復している間に無理な運動は避けなければなりません。",
+                "zh": "恢复期间应该避免过度运动。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "해외에 머무는 동안 현지 문화를 배웠어요.",
+                "en": "While staying abroad, I learned the local culture.",
+                "es": "Mientras residía en el extranjero, aprendí la cultura local.",
+                "fr": "Pendant mon séjour à l'étranger, j'ai appris la culture locale.",
+                "pt": "Enquanto vivia no estrangeiro, aprendi a cultura local.",
+                "kr": "해외에 머무는 동안 현지 문화를 배웠어요.",
+                "jp": "海外に滞在している間に現地の文化を学びました。",
+                "zh": "在海外停留期间学习了当地文化。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

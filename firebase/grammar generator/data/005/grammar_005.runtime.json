@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A1_KO_TOPIC_PARTICLE",
+        "level": "a1",
+        "id": "005"
+    },
+    "title": {
+        "target": "은/는",
+        "en": "Topic Particle 은/는",
+        "es": "Partícula de tema 은/는",
+        "fr": "Particule de thème 은/는",
+        "pt": "Partícula de tópico 은/는",
+        "kr": "은/는",
+        "jp": "話題を表す助詞 은/는",
+        "zh": "表示话题的助词 은/는"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "은/는은 문장의 화제를 나타내는 조사이다. 받침이 있으면 은을, 받침이 없으면 는을 붙인다.",
+                "en": "Eun/neun is a particle that marks the topic of a sentence. Eun follows a noun ending in a consonant, and neun follows a noun ending in a vowel.",
+                "es": "Eun/neun es una partícula que marca el tema de la oración. Eun se usa tras un sustantivo terminado en consonante, y neun tras uno terminado en vocal.",
+                "fr": "Eun/neun est une particule qui marque le thème de la phrase. Eun suit un nom se terminant par une consonne, et neun un nom se terminant par une voyelle.",
+                "pt": "Eun/neun é uma partícula que marca o tópico da frase. Eun segue um substantivo terminado em consoante, e neun um terminado em vogal.",
+                "kr": "은/는은 문장의 화제를 나타내는 조사이다. 받침이 있으면 은을, 받침이 없으면 는을 붙인다.",
+                "jp": "은/는は文の話題を表す助詞である。パッチムがあれば은を、なければ는を付ける。",
+                "zh": "은/는是标示句子话题的助词。带收音时接은，不带收音时接는。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "명사 뒤에 곧바로 붙어서 그 명사를 문장의 중심 화제로 만든다. 이미 알고 있거나 전제된 대상을 가리킬 때 특히 자주 쓰인다.",
+                "en": "It attaches directly after a noun and turns that noun into the sentence's central topic. It is used especially often when referring to something already known or assumed.",
+                "es": "Se añade directamente tras el sustantivo y lo convierte en el tema central de la oración. Se usa especialmente cuando se habla de algo ya conocido o presupuesto.",
+                "fr": "Elle s'attache directement après un nom et fait de ce nom le thème central de la phrase. Elle est particulièrement utilisée pour désigner quelque chose déjà connu ou présupposé.",
+                "pt": "Junta-se diretamente ao substantivo e transforma-o no tópico central da frase. É usada sobretudo para referir algo já conhecido ou pressuposto.",
+                "kr": "명사 뒤에 곧바로 붙어서 그 명사를 문장의 중심 화제로 만든다. 이미 알고 있거나 전제된 대상을 가리킬 때 특히 자주 쓰인다.",
+                "jp": "名詞の直後に付いて、その名詞を文の中心的な話題にする。すでに知っている、または前提とされた対象を指すときに特によく使われる。",
+                "zh": "紧跟在名词后面，使该名词成为句子的核心话题。指代已知或已被预设的对象时尤其常用。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "받침 유무에 따라 형태가 정해지므로 임의로 선택할 수 없다. 두 대상을 견주어 말할 때도 각각에 붙여 대조를 표현한다. 다만 의문사로 새로운 정보를 물을 때는 다른 조사가 더 자연스럽다.",
+                "en": "The form is determined by whether the noun ends in a consonant or vowel, so it cannot be chosen freely. It also attaches to two items being compared to express contrast. However, when asking for new information with a question word, a different particle sounds more natural.",
+                "es": "La forma depende de si el sustantivo termina en consonante o vocal, así que no se elige libremente. También se añade a dos elementos que se comparan para expresar contraste. Sin embargo, al preguntar por información nueva con un interrogativo, suena más natural otra partícula.",
+                "fr": "La forme dépend de la terminaison consonantique ou vocalique du nom, elle ne se choisit donc pas librement. Elle s'ajoute aussi à deux éléments comparés pour exprimer un contraste. Cependant, pour demander une information nouvelle avec un mot interrogatif, une autre particule sonne plus naturelle.",
+                "pt": "A forma depende de o substantivo terminar em consoante ou vogal, por isso não se escolhe livremente. Também se junta a dois elementos comparados para exprimir contraste. No entanto, ao perguntar por informação nova com um interrogativo, soa mais natural outra partícula.",
+                "kr": "받침 유무에 따라 형태가 정해지므로 임의로 선택할 수 없다. 두 대상을 견주어 말할 때도 각각에 붙여 대조를 표현한다. 다만 의문사로 새로운 정보를 물을 때는 다른 조사가 더 자연스럽다.",
+                "jp": "パッチムの有無によって形が決まるため、任意に選ぶことはできない。二つの対象を比べて言うときにも、それぞれに付けて対照を表す。ただし、疑問詞で新しい情報を尋ねるときは、他の助詞のほうが自然である。",
+                "zh": "形式由收音的有无决定，不能随意选择。比较两个对象时，也会分别附加以表达对比。不过，用疑问词询问新信息时，使用其他助词更自然。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "이/가와 자주 혼동되지만 역할이 다르다. 이/가가 새로운 정보나 주어 자체에 초점을 둔다면 은/는은 이미 언급된 화제나 대조에 초점을 둔다. 격식이나 비격식에 따른 형태 차이는 없다.",
+                "en": "It is often confused with i/ga, but the role differs. While i/ga focuses on new information or the subject itself, eun/neun focuses on an already mentioned topic or a contrast. There is no difference in form between formal and informal speech.",
+                "es": "Se confunde a menudo con i/ga, pero su función es distinta. Mientras que i/ga se centra en información nueva o en el propio sujeto, eun/neun se centra en un tema ya mencionado o en un contraste. No hay diferencia de forma entre el habla formal e informal.",
+                "fr": "Elle est souvent confondue avec i/ga, mais son rôle diffère. Alors que i/ga met l'accent sur une information nouvelle ou sur le sujet lui-même, eun/neun met l'accent sur un thème déjà mentionné ou sur un contraste. Il n'existe aucune différence de forme entre le registre formel et informel.",
+                "pt": "É frequentemente confundida com i/ga, mas a função é diferente. Enquanto i/ga foca informação nova ou o próprio sujeito, eun/neun foca um tópico já mencionado ou um contraste. Não há diferença de forma entre o registo formal e informal.",
+                "kr": "이/가와 자주 혼동되지만 역할이 다르다. 이/가가 새로운 정보나 주어 자체에 초점을 둔다면 은/는은 이미 언급된 화제나 대조에 초점을 둔다. 격식이나 비격식에 따른 형태 차이는 없다.",
+                "jp": "이/가とよく混同されるが、役割は異なる。이/가が新しい情報や主語そのものに焦点を置くのに対し、은/는はすでに述べられた話題や対照に焦点を置く。格式ばった場面とくだけた場面による形の違いはない。",
+                "zh": "常与이/가混淆，但作用不同。이/가侧重于新信息或主语本身，은/는则侧重于已提及的话题或对比。正式与非正式场合的形式没有差别。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "받침 유무를 반대로 적용하는 실수가 흔하므로 명사의 끝소리를 항상 확인해야 한다. 문장 전체에서 화제를 유지하거나 전환할 때도 이 조사가 폭넓게 쓰인다.",
+                "en": "Applying the consonant/vowel rule backwards is a common mistake, so the final sound of the noun must always be checked. This particle is also widely used to maintain or shift the topic across a whole passage.",
+                "es": "Aplicar la regla de consonante/vocal al revés es un error común, por lo que siempre hay que comprobar el sonido final del sustantivo. Esta partícula también se usa ampliamente para mantener o cambiar el tema a lo largo de un texto.",
+                "fr": "Appliquer la règle consonne/voyelle à l'envers est une erreur fréquente, il faut donc toujours vérifier le son final du nom. Cette particule sert aussi largement à maintenir ou à changer de thème tout au long d'un passage.",
+                "pt": "Aplicar a regra de consoante/vogal ao contrário é um erro comum, por isso é preciso verificar sempre o som final do substantivo. Esta partícula também é amplamente usada para manter ou mudar o tópico ao longo de um texto.",
+                "kr": "받침 유무를 반대로 적용하는 실수가 흔하므로 명사의 끝소리를 항상 확인해야 한다. 문장 전체에서 화제를 유지하거나 전환할 때도 이 조사가 폭넓게 쓰인다.",
+                "jp": "パッチムの有無を逆に適用してしまう間違いがよく見られるため、名詞の終わりの音を常に確認する必要がある。文章全体で話題を維持したり転換したりするときにも、この助詞は幅広く使われる。",
+                "zh": "常见的错误是把收音有无的规则用反了，因此必须始终确认名词的结尾音。这个助词在整篇文章中维持或转换话题时也被广泛使用。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 매일 아침 커피를 마셔요.",
+                "en": "I drink coffee every morning.",
+                "es": "Bebo café todas las mañanas.",
+                "fr": "Je bois du café tous les matins.",
+                "pt": "Bebo café todas as manhãs.",
+                "kr": "저는 매일 아침 커피를 마셔요.",
+                "jp": "私は毎朝コーヒーを飲みます。",
+                "zh": "我每天早上喝咖啡。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 가방은 정말 무거워요.",
+                "en": "This bag is really heavy.",
+                "es": "Esta bolsa es muy pesada.",
+                "fr": "Ce sac est vraiment lourd.",
+                "pt": "Esta mala é muito pesada.",
+                "kr": "이 가방은 정말 무거워요.",
+                "jp": "このカバンは本当に重いです。",
+                "zh": "这个包真的很重。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "동생은 지금 학교에 있어요.",
+                "en": "My younger sibling is at school now.",
+                "es": "Mi hermano menor está en el colegio ahora.",
+                "fr": "Mon petit frère est à l'école maintenant.",
+                "pt": "O meu irmão mais novo está na escola agora.",
+                "kr": "동생은 지금 학교에 있어요.",
+                "jp": "弟は今学校にいます。",
+                "zh": "弟弟现在在学校。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "오늘 날씨는 아주 좋아요.",
+                "en": "The weather is very nice today.",
+                "es": "El tiempo de hoy es muy bueno.",
+                "fr": "Il fait très beau aujourd'hui.",
+                "pt": "O tempo hoje está muito bom.",
+                "kr": "오늘 날씨는 아주 좋아요.",
+                "jp": "今日の天気はとてもいいです。",
+                "zh": "今天的天气非常好。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "저는 커피를 좋아하지만 동생은 싫어해요.",
+                "en": "I like coffee, but my sibling dislikes it.",
+                "es": "A mí me gusta el café, pero a mi hermano no le gusta.",
+                "fr": "J'aime le café, mais mon frère ne l'aime pas.",
+                "pt": "Eu gosto de café, mas o meu irmão não gosta.",
+                "kr": "저는 커피를 좋아하지만 동생은 싫어해요.",
+                "jp": "私はコーヒーが好きですが、弟は嫌いです。",
+                "zh": "我喜欢咖啡，但弟弟不喜欢。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "선생님은 교실에 없고 학생들은 있어요.",
+                "en": "The teacher isn't in the classroom, but the students are.",
+                "es": "El profesor no está en el aula, pero los alumnos sí.",
+                "fr": "Le professeur n'est pas dans la salle, mais les élèves si.",
+                "pt": "O professor não está na sala, mas os alunos estão.",
+                "kr": "선생님은 교실에 없고 학생들은 있어요.",
+                "jp": "先生は教室にいませんが、学生たちはいます。",
+                "zh": "老师不在教室里，但学生们在。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "고양이는 자고 강아지는 놀아요.",
+                "en": "The cat is sleeping while the dog is playing.",
+                "es": "El gato duerme mientras el perro juega.",
+                "fr": "Le chat dort pendant que le chien joue.",
+                "pt": "O gato dorme enquanto o cão brinca.",
+                "kr": "고양이는 자고 강아지는 놀아요.",
+                "jp": "猫は寝ていて、犬は遊んでいます。",
+                "zh": "猫在睡觉，狗在玩耍。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "월요일은 바쁘고 주말은 한가해요.",
+                "en": "Monday is busy, but the weekend is relaxed.",
+                "es": "El lunes es ocupado, pero el fin de semana es tranquilo.",
+                "fr": "Le lundi est chargé, mais le week-end est calme.",
+                "pt": "A segunda-feira é ocupada, mas o fim de semana é calmo.",
+                "kr": "월요일은 바쁘고 주말은 한가해요.",
+                "jp": "月曜日は忙しくて、週末は暇です。",
+                "zh": "星期一很忙，周末很清闲。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "제 이름은 민수예요.",
+                "en": "My name is Minsu.",
+                "es": "Mi nombre es Minsu.",
+                "fr": "Je m'appelle Minsu.",
+                "pt": "O meu nome é Minsu.",
+                "kr": "제 이름은 민수예요.",
+                "jp": "私の名前はミンスです。",
+                "zh": "我的名字是敏洙。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 영화는 다음 주에 개봉해요.",
+                "en": "This movie comes out next week.",
+                "es": "Esta película se estrena la próxima semana.",
+                "fr": "Ce film sort la semaine prochaine.",
+                "pt": "Este filme estreia na próxima semana.",
+                "kr": "이 영화는 다음 주에 개봉해요.",
+                "jp": "この映画は来週公開されます。",
+                "zh": "这部电影下周上映。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "서울은 한국의 수도예요.",
+                "en": "Seoul is the capital of Korea.",
+                "es": "Seúl es la capital de Corea.",
+                "fr": "Séoul est la capitale de la Corée.",
+                "pt": "Seul é a capital da Coreia.",
+                "kr": "서울은 한국의 수도예요.",
+                "jp": "ソウルは韓国の首都です。",
+                "zh": "首尔是韩国的首都。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그 책은 아직 안 읽었어요.",
+                "en": "I haven't read that book yet.",
+                "es": "Todavía no he leído ese libro.",
+                "fr": "Je n'ai pas encore lu ce livre.",
+                "pt": "Ainda não li esse livro.",
+                "kr": "그 책은 아직 안 읽었어요.",
+                "jp": "その本はまだ読んでいません。",
+                "zh": "那本书我还没有读。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

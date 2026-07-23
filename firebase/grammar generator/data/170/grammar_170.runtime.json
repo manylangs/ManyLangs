@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "C1_KO_COMPARISON2",
+        "level": "c1",
+        "id": "170"
+    },
+    "title": {
+        "target": "-(으)ㄹ수록 더욱",
+        "en": "The More…, Even More So",
+        "es": "Cuanto más…, más aún…",
+        "fr": "Plus…, encore plus…",
+        "pt": "Quanto mais…, ainda mais…",
+        "kr": "-(으)ㄹ수록 더욱",
+        "jp": "～すればするほどさらに",
+        "zh": "越……就越……"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사나 형용사 어간에 -(으)ㄹ수록을 붙이고 뒤에 더욱을 더해, 앞 절의 정도가 커질 때 뒤 절의 정도가 한층 강하게 나타남을 표현한다.",
+                "en": "Attaching -(으)ㄹ수록 to a verb or adjective stem and adding 더욱 afterward expresses that as the degree in the first clause increases, the degree in the second clause intensifies even further.",
+                "es": "Al añadir -(으)ㄹ수록 a la raíz de un verbo o adjetivo y agregar 더욱 después, se expresa que cuanto más aumenta el grado de la primera cláusula, más se intensifica el de la segunda.",
+                "fr": "En ajoutant -(으)ㄹ수록 au radical d'un verbe ou d'un adjectif, puis 더욱 ensuite, on exprime que plus le degré de la première proposition augmente, plus celui de la seconde s'intensifie encore.",
+                "pt": "Ao acrescentar -(으)ㄹ수록 à raiz de um verbo ou adjetivo e adicionar 더욱 depois, exprime-se que, quanto mais aumenta o grau da primeira oração, mais se intensifica o da segunda.",
+                "kr": "동사나 형용사 어간에 -(으)ㄹ수록을 붙이고 뒤에 더욱을 더해, 앞 절의 정도가 커질 때 뒤 절의 정도가 한층 강하게 나타남을 표현한다.",
+                "jp": "動詞や形容詞の語幹に「-(으)ㄹ수록」を付け、後ろに「더욱」を加えて、前の節の程度が大きくなるとき後の節の程度が一段と強く現れることを表す。",
+                "zh": "在动词或形容词词干后接「-(으)ㄹ수록」，再在后面加上「더욱」，表示当前一分句的程度增大时，后一分句的程度会更加强烈地体现出来。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "앞 절에서 제시된 조건이 강해지는 만큼 뒤 절에 놓인 더욱이 결과의 강도를 한 단계 끌어올리는 방식으로 문장이 구성된다.",
+                "en": "The sentence is structured so that as the condition presented in the first clause grows stronger, the 더욱 placed in the second clause pushes the intensity of the result up another level.",
+                "es": "La oración se construye de modo que, a medida que se refuerza la condición de la primera cláusula, el 더욱 de la segunda eleva un grado más la intensidad del resultado.",
+                "fr": "La phrase est construite de sorte que, à mesure que la condition posée dans la première proposition se renforce, le 더욱 de la seconde élève encore l'intensité du résultat.",
+                "pt": "A frase estrutura-se de modo que, à medida que a condição da primeira oração se reforça, o 더욱 da segunda eleva ainda mais a intensidade do resultado.",
+                "kr": "앞 절에서 제시된 조건이 강해지는 만큼 뒤 절에 놓인 더욱이 결과의 강도를 한 단계 끌어올리는 방식으로 문장이 구성된다.",
+                "jp": "前の節で提示された条件が強まる分だけ、後の節に置かれた「더욱」が結果の強さを一段階引き上げる形で文が構成される。",
+                "zh": "句子的构成方式是：前一分句所述条件越强，后一分句中的「더욱」就把结果的强度提升一个层次。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "앞뒤 절의 주어는 같을 수도 다를 수도 있으며, 명사가 오면 일수록의 형태로 바뀌고, 뒤 절에는 명령이나 청유의 문장이 올 수 없다.",
+                "en": "The subjects of the two clauses may be the same or different, a noun changes the form to 일수록, and the second clause cannot be an imperative or propositive sentence.",
+                "es": "Los sujetos de ambas cláusulas pueden ser iguales o distintos, un sustantivo cambia la forma a 일수록, y la segunda cláusula no puede ser imperativa ni propositiva.",
+                "fr": "Les sujets des deux propositions peuvent être identiques ou différents, un nom transforme la forme en 일수록, et la seconde proposition ne peut être ni impérative ni exhortative.",
+                "pt": "Os sujeitos das duas orações podem ser iguais ou diferentes, um substantivo muda a forma para 일수록, e a segunda oração não pode ser imperativa nem exortativa.",
+                "kr": "앞뒤 절의 주어는 같을 수도 다를 수도 있으며, 명사가 오면 일수록의 형태로 바뀌고, 뒤 절에는 명령이나 청유의 문장이 올 수 없다.",
+                "jp": "前後の節の主語は同じ場合も異なる場合もあり、名詞が来ると「일수록」の形に変わり、後の節には命令や勧誘の文が来ることができない。",
+                "zh": "前后分句的主语可以相同也可以不同；如果接名词则变为「일수록」的形式；后一分句不能是命令句或共动句。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "단순한 -(으)ㄹ수록과 달리 이 표현은 더욱을 더해 정도의 강화를 한층 부각시키며, 격식과 비격식 모두에서 무리 없이 쓰인다.",
+                "en": "Unlike the plain -(으)ㄹ수록, this expression adds 더욱 to further highlight the intensification of degree, and it is used naturally in both formal and informal contexts.",
+                "es": "A diferencia del simple -(으)ㄹ수록, esta expresión añade 더욱 para resaltar aún más la intensificación del grado, y se usa con naturalidad tanto en contextos formales como informales.",
+                "fr": "Contrairement au simple -(으)ㄹ수록, cette expression ajoute 더욱 pour souligner davantage l'intensification du degré, et elle s'emploie naturellement aussi bien en contexte formel qu'informel.",
+                "pt": "Ao contrário do simples -(으)ㄹ수록, esta expressão acrescenta 더욱 para realçar ainda mais a intensificação do grau, sendo usada naturalmente tanto em contextos formais como informais.",
+                "kr": "단순한 -(으)ㄹ수록과 달리 이 표현은 더욱을 더해 정도의 강화를 한층 부각시키며, 격식과 비격식 모두에서 무리 없이 쓰인다.",
+                "jp": "単純な「-(으)ㄹ수록」とは異なり、この表現は「더욱」を加えて程度の強化を一段と際立たせ、格式ばった場面でも気楽な場面でも無理なく使われる。",
+                "zh": "与单纯的「-(으)ㄹ수록」不同，这个表达通过加上「더욱」进一步凸显程度的增强，在正式和非正式场合都能自然使用。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "더욱과 의미가 겹치는 더를 나란히 쓰거나 수록 뒤에 불필요한 조사를 붙이는 실수가 흔하므로 주의해야 하며, 문어체 글에서 논지를 강조할 때도 자주 활용된다.",
+                "en": "A common mistake is placing 더 alongside 더욱, which overlaps in meaning, or attaching an unnecessary particle after 수록, so care is needed, and the pattern is also frequently used in written text to emphasize an argument.",
+                "es": "Un error común es colocar 더 junto a 더욱, que se solapa en significado, o añadir una partícula innecesaria después de 수록, por lo que hay que tener cuidado, y el patrón también se usa con frecuencia en textos escritos para reforzar un argumento.",
+                "fr": "Une erreur courante consiste à placer 더 à côté de 더욱, qui se recoupe en sens, ou à ajouter une particule inutile après 수록, d'où la nécessité de vigilance, et cette tournure est aussi fréquemment employée dans les écrits pour appuyer un argument.",
+                "pt": "Um erro comum é colocar 더 ao lado de 더욱, que se sobrepõe em significado, ou acrescentar uma partícula desnecessária depois de 수록, por isso é preciso cuidado, e o padrão também é frequentemente usado em textos escritos para reforçar um argumento.",
+                "kr": "더욱과 의미가 겹치는 더를 나란히 쓰거나 수록 뒤에 불필요한 조사를 붙이는 실수가 흔하므로 주의해야 하며, 문어체 글에서 논지를 강조할 때도 자주 활용된다.",
+                "jp": "「더욱」と意味が重なる「더」を並べて使ったり「수록」の後に不要な助詞を付けたりする間違いがよく見られるため注意しなければならず、書き言葉の文章で論旨を強調するときにもよく活用される。",
+                "zh": "常见的错误是把与「더욱」意义重叠的「더」并列使用，或在「수록」后面加上多余的助词，因此需要注意；这个句型也常用于书面语中强调论点。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "노력할수록 더욱 좋은 결과가 나온다.",
+                "en": "The harder you try, the better the results become.",
+                "es": "Cuanto más te esfuerzas, mejores resultados obtienes.",
+                "fr": "Plus on s'efforce, plus les résultats deviennent meilleurs.",
+                "pt": "Quanto mais te esforças, melhores resultados obténs.",
+                "kr": "노력할수록 더욱 좋은 결과가 나온다.",
+                "jp": "努力すればするほどさらに良い結果が出ます。",
+                "zh": "越努力，就越能取得更好的结果。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "시간이 지날수록 더욱 그리워진다.",
+                "en": "The more time passes, the more I miss it.",
+                "es": "Cuanto más pasa el tiempo, más lo echo de menos.",
+                "fr": "Plus le temps passe, plus cela me manque.",
+                "pt": "Quanto mais o tempo passa, mais tenho saudades.",
+                "kr": "시간이 지날수록 더욱 그리워진다.",
+                "jp": "時間が経つほどさらに恋しくなります。",
+                "zh": "时间越久，就越怀念。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "가격이 오를수록 더욱 신중해진다.",
+                "en": "The more the price rises, the more cautious one becomes.",
+                "es": "Cuanto más sube el precio, más cauteloso se vuelve uno.",
+                "fr": "Plus le prix augmente, plus on devient prudent.",
+                "pt": "Quanto mais o preço sobe, mais cauteloso se torna.",
+                "kr": "가격이 오를수록 더욱 신중해진다.",
+                "jp": "価格が上がるほどさらに慎重になります。",
+                "zh": "价格越涨，就越要谨慎。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "어려울수록 더욱 침착해야 한다.",
+                "en": "The more difficult it is, the calmer one must remain.",
+                "es": "Cuanto más difícil es, más calmado hay que mantenerse.",
+                "fr": "Plus c'est difficile, plus il faut rester calme.",
+                "pt": "Quanto mais difícil for, mais calmo se deve manter.",
+                "kr": "어려울수록 더욱 침착해야 한다.",
+                "jp": "難しいほどさらに落ち着かなければなりません。",
+                "zh": "越困难，就越应该保持冷静。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "관계가 깊어질수록 더욱 조심스러워진다.",
+                "en": "The deeper a relationship grows, the more careful it becomes.",
+                "es": "Cuanto más profunda se vuelve una relación, más cuidado hay que tener.",
+                "fr": "Plus une relation s'approfondit, plus il faut être prudent.",
+                "pt": "Quanto mais profunda se torna uma relação, mais cuidado é preciso ter.",
+                "kr": "관계가 깊어질수록 더욱 조심스러워진다.",
+                "jp": "関係が深まるほどさらに慎重になります。",
+                "zh": "关系越深，就越要小心谨慎。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "나이가 들수록 더욱 겸손해져야 한다.",
+                "en": "The older one gets, the more humble one should become.",
+                "es": "Cuanto más envejece uno, más humilde debe volverse.",
+                "fr": "Plus on vieillit, plus on doit devenir humble.",
+                "pt": "Quanto mais se envelhece, mais humilde se deve tornar.",
+                "kr": "나이가 들수록 더욱 겸손해져야 한다.",
+                "jp": "年を取るほどさらに謙虚にならなければなりません。",
+                "zh": "年纪越大，就越应该谦逊。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "책임이 클수록 더욱 신중하게 행동해야 한다.",
+                "en": "The greater the responsibility, the more carefully one must act.",
+                "es": "Cuanto mayor es la responsabilidad, más cuidadosamente hay que actuar.",
+                "fr": "Plus la responsabilité est grande, plus il faut agir avec prudence.",
+                "pt": "Quanto maior for a responsabilidade, mais cuidadosamente se deve agir.",
+                "kr": "책임이 클수록 더욱 신중하게 행동해야 한다.",
+                "jp": "責任が大きいほどさらに慎重に行動しなければなりません。",
+                "zh": "责任越大，行动就越要谨慎。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "경쟁이 치열할수록 더욱 철저히 준비하게 된다.",
+                "en": "The fiercer the competition, the more thoroughly one prepares.",
+                "es": "Cuanto más feroz es la competencia, más a fondo se prepara uno.",
+                "fr": "Plus la concurrence est féroce, plus on se prépare minutieusement.",
+                "pt": "Quanto mais feroz for a concorrência, mais minuciosamente se prepara.",
+                "kr": "경쟁이 치열할수록 더욱 철저히 준비하게 된다.",
+                "jp": "競争が激しいほどさらに徹底的に準備するようになります。",
+                "zh": "竞争越激烈，准备就越要周全。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "위기가 깊을수록 더욱 냉철한 판단이 요구된다.",
+                "en": "The deeper the crisis, the more clear-headed judgment is required.",
+                "es": "Cuanto más profunda es la crisis, más se requiere un juicio sereno.",
+                "fr": "Plus la crise est profonde, plus un jugement lucide est requis.",
+                "pt": "Quanto mais profunda for a crise, mais é exigido um julgamento sereno.",
+                "kr": "위기가 깊을수록 더욱 냉철한 판단이 요구된다.",
+                "jp": "危機が深いほどさらに冷静な判断が求められます。",
+                "zh": "危机越深重，就越需要冷静的判断。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "사회가 복잡해질수록 더욱 명확한 기준이 필요하다.",
+                "en": "The more complex society becomes, the more clear-cut standards are needed.",
+                "es": "Cuanto más compleja se vuelve la sociedad, más se necesitan criterios claros.",
+                "fr": "Plus la société devient complexe, plus des critères clairs sont nécessaires.",
+                "pt": "Quanto mais complexa se torna a sociedade, mais são necessários critérios claros.",
+                "kr": "사회가 복잡해질수록 더욱 명확한 기준이 필요하다.",
+                "jp": "社会が複雑になるほどさらに明確な基準が必要です。",
+                "zh": "社会越复杂，就越需要明确的标准。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이론이 정교할수록 더욱 엄밀한 검증이 뒤따른다.",
+                "en": "The more refined a theory is, the stricter the verification that follows.",
+                "es": "Cuanto más refinada es una teoría, más rigurosa es la verificación que sigue.",
+                "fr": "Plus une théorie est raffinée, plus la vérification qui suit est rigoureuse.",
+                "pt": "Quanto mais refinada for uma teoria, mais rigorosa é a verificação que se segue.",
+                "kr": "이론이 정교할수록 더욱 엄밀한 검증이 뒤따른다.",
+                "jp": "理論が精巧であるほどさらに厳密な検証が伴います。",
+                "zh": "理论越精密，随之而来的验证就越严格。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "목표가 원대할수록 더욱 치밀한 계획이 요구된다.",
+                "en": "The grander the goal, the more meticulous the plan required.",
+                "es": "Cuanto más grandioso es el objetivo, más meticuloso es el plan requerido.",
+                "fr": "Plus l'objectif est grandiose, plus un plan méticuleux est requis.",
+                "pt": "Quanto mais grandioso for o objetivo, mais meticuloso é o plano exigido.",
+                "kr": "목표가 원대할수록 더욱 치밀한 계획이 요구된다.",
+                "jp": "目標が壮大であるほどさらに緻密な計画が求められます。",
+                "zh": "目标越远大，就越需要周密的计划。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

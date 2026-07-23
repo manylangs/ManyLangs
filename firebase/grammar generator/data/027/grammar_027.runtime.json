@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A1_KO_COUNTERS",
+        "level": "a1",
+        "id": "027"
+    },
+    "title": {
+        "target": "단위 명사(개, 명, 권 등)",
+        "en": "Counters (개, 명, 권, etc.)",
+        "es": "Clasificadores numerales (개, 명, 권, etc.)",
+        "fr": "Classificateurs numéraux (개, 명, 권, etc.)",
+        "pt": "Classificadores numerais (개, 명, 권, etc.)",
+        "kr": "단위 명사(개, 명, 권 등)",
+        "jp": "助数詞(개, 명, 권など)",
+        "zh": "量词(개, 명, 권等)"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "단위 명사는 사람, 사물, 동물 등을 셀 때 수 뒤에 붙이는 명사이다.",
+                "en": "A counter is a noun attached after a number to count people, objects, or animals.",
+                "es": "Un clasificador numeral es un sustantivo que se coloca después del número para contar personas, objetos o animales.",
+                "fr": "Un classificateur numéral est un nom placé après le nombre pour compter des personnes, des objets ou des animaux.",
+                "pt": "Um classificador numeral é um substantivo colocado depois do número para contar pessoas, objetos ou animais.",
+                "kr": "단위 명사는 사람, 사물, 동물 등을 셀 때 수 뒤에 붙이는 명사이다.",
+                "jp": "助数詞は、人や物、動物などを数える際に数字の後ろに付ける名詞である。",
+                "zh": "量词是在数字后面用来计算人、物品、动物等的名词。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "문장에서는 세는 대상 명사 다음에 수와 단위 명사가 순서대로 온다.",
+                "en": "In a sentence, the number and counter come right after the noun being counted.",
+                "es": "En la oración, el número y el clasificador aparecen justo después del sustantivo que se cuenta.",
+                "fr": "Dans la phrase, le nombre et le classificateur viennent juste après le nom compté.",
+                "pt": "Na frase, o número e o classificador vêm logo a seguir ao substantivo que se conta.",
+                "kr": "문장에서는 세는 대상 명사 다음에 수와 단위 명사가 순서대로 온다.",
+                "jp": "文の中では、数える対象の名詞の後に数字と助数詞が順に来る。",
+                "zh": "在句子中，被计算的对象名词后面依次接数字和量词。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "고유어 수는 대부분의 단위 명사와 결합하지만, 일부 단위 명사는 한자어 수와만 결합한다.",
+                "en": "Native Korean numbers combine with most counters, but some counters only combine with Sino-Korean numbers.",
+                "es": "Los numerales nativos coreanos se combinan con la mayoría de los clasificadores, pero algunos clasificadores solo se combinan con los numerales sino-coreanos.",
+                "fr": "Les numéraux natifs coréens se combinent avec la plupart des classificateurs, mais certains classificateurs ne se combinent qu'avec les numéraux sino-coréens.",
+                "pt": "Os numerais nativos coreanos combinam-se com a maioria dos classificadores, mas alguns classificadores só se combinam com os numerais sino-coreanos.",
+                "kr": "고유어 수는 대부분의 단위 명사와 결합하지만, 일부 단위 명사는 한자어 수와만 결합한다.",
+                "jp": "固有語数詞は大部分の助数詞と結び付くが、一部の助数詞は漢字語数詞としか結び付かない。",
+                "zh": "固有词数词可以与大多数量词搭配，但部分量词只能与汉字词数词搭配。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "셀 대상의 종류에 따라 알맞은 단위 명사를 골라야 하며, 잘못 고르면 문장이 어색해진다.",
+                "en": "The right counter must be chosen according to what is being counted, or the sentence sounds unnatural.",
+                "es": "Hay que elegir el clasificador adecuado según lo que se cuenta; si no, la oración suena poco natural.",
+                "fr": "Il faut choisir le bon classificateur selon ce qui est compté, sinon la phrase paraît peu naturelle.",
+                "pt": "É preciso escolher o classificador certo consoante aquilo que se conta, caso contrário a frase soa pouco natural.",
+                "kr": "셀 대상의 종류에 따라 알맞은 단위 명사를 골라야 하며, 잘못 고르면 문장이 어색해진다.",
+                "jp": "数える対象の種類に応じて適切な助数詞を選ばなければならず、間違えると文が不自然になる。",
+                "zh": "需要根据被计算对象的种类选择合适的量词，选错了句子就会显得不自然。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "고유어 수사 '하나, 둘, 셋, 넷'은 단위 명사 앞에서 '한, 두, 세, 네'로 형태가 바뀐다.",
+                "en": "The native numbers 'hana, dul, set, net' change to 'han, du, se, ne' before a counter.",
+                "es": "Los numerales nativos 'hana, dul, set, net' cambian a 'han, du, se, ne' delante de un clasificador.",
+                "fr": "Les numéraux natifs « hana, dul, set, net » deviennent « han, du, se, ne » devant un classificateur.",
+                "pt": "Os numerais nativos «hana, dul, set, net» mudam para «han, du, se, ne» antes de um classificador.",
+                "kr": "고유어 수사 '하나, 둘, 셋, 넷'은 단위 명사 앞에서 '한, 두, 세, 네'로 형태가 바뀐다.",
+                "jp": "固有語数詞「하나・둘・셋・넷」は、助数詞の前で「한・두・세・네」という形に変わる。",
+                "zh": "固有词数词\"하나、둘、셋、넷\"在量词前会变化为\"한、두、세、네\"的形式。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "사과 세 개 주세요.",
+                "en": "Please give me three apples.",
+                "es": "Deme tres manzanas, por favor.",
+                "fr": "Donnez-moi trois pommes, s'il vous plaît.",
+                "pt": "Dê-me três maçãs, por favor.",
+                "kr": "사과 세 개 주세요.",
+                "jp": "りんごを三つください。",
+                "zh": "请给我三个苹果。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "학생이 다섯 명 있어요.",
+                "en": "There are five students.",
+                "es": "Hay cinco estudiantes.",
+                "fr": "Il y a cinq étudiants.",
+                "pt": "Há cinco estudantes.",
+                "kr": "학생이 다섯 명 있어요.",
+                "jp": "学生が五人います。",
+                "zh": "有五个学生。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "책 두 권 샀어요.",
+                "en": "I bought two books.",
+                "es": "Compré dos libros.",
+                "fr": "J'ai acheté deux livres.",
+                "pt": "Comprei dois livros.",
+                "kr": "책 두 권 샀어요.",
+                "jp": "本を二冊買いました。",
+                "zh": "我买了两本书。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "강아지 한 마리 키워요.",
+                "en": "I have one dog.",
+                "es": "Tengo un perro.",
+                "fr": "J'ai un chien.",
+                "pt": "Tenho um cão.",
+                "kr": "강아지 한 마리 키워요.",
+                "jp": "子犬を一匹飼っています。",
+                "zh": "我养了一只小狗。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "커피 한 잔 마셨어요.",
+                "en": "I drank one cup of coffee.",
+                "es": "Tomé una taza de café.",
+                "fr": "J'ai bu une tasse de café.",
+                "pt": "Bebi uma chávena de café.",
+                "kr": "커피 한 잔 마셨어요.",
+                "jp": "コーヒーを一杯飲みました。",
+                "zh": "我喝了一杯咖啡。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "종이 세 장 필요해요.",
+                "en": "I need three sheets of paper.",
+                "es": "Necesito tres hojas de papel.",
+                "fr": "J'ai besoin de trois feuilles de papier.",
+                "pt": "Preciso de três folhas de papel.",
+                "kr": "종이 세 장 필요해요.",
+                "jp": "紙が三枚必要です。",
+                "zh": "需要三张纸。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "동생은 열 살이에요.",
+                "en": "My younger sibling is ten years old.",
+                "es": "Mi hermano menor tiene diez años.",
+                "fr": "Mon petit frère a dix ans.",
+                "pt": "O meu irmão mais novo tem dez anos.",
+                "kr": "동생은 열 살이에요.",
+                "jp": "弟は十歳です。",
+                "zh": "弟弟十岁。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "자동차 두 대 있어요.",
+                "en": "I have two cars.",
+                "es": "Tengo dos coches.",
+                "fr": "J'ai deux voitures.",
+                "pt": "Tenho dois carros.",
+                "kr": "자동차 두 대 있어요.",
+                "jp": "車が二台あります。",
+                "zh": "有两辆汽车。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "사람이 몇 명 왔어요?",
+                "en": "How many people came?",
+                "es": "¿Cuántas personas vinieron?",
+                "fr": "Combien de personnes sont venues ?",
+                "pt": "Quantas pessoas vieram?",
+                "kr": "사람이 몇 명 왔어요?",
+                "jp": "何人来ましたか。",
+                "zh": "来了几个人?"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "빵을 두 개밖에 안 먹었어요.",
+                "en": "I only ate two pieces of bread.",
+                "es": "Solo comí dos panes.",
+                "fr": "Je n'ai mangé que deux pains.",
+                "pt": "Só comi dois pães.",
+                "kr": "빵을 두 개밖에 안 먹었어요.",
+                "jp": "パンを二個しか食べませんでした。",
+                "zh": "面包只吃了两个。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "고양이 세 마리를 키우고 있어요.",
+                "en": "I am raising three cats.",
+                "es": "Estoy criando tres gatos.",
+                "fr": "J'élève trois chats.",
+                "pt": "Estou a criar três gatos.",
+                "kr": "고양이 세 마리를 키우고 있어요.",
+                "jp": "猫を三匹飼っています。",
+                "zh": "我养着三只猫。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "물 한 잔만 주세요.",
+                "en": "Please give me just one cup of water.",
+                "es": "Deme solo un vaso de agua, por favor.",
+                "fr": "Donnez-moi juste un verre d'eau, s'il vous plaît.",
+                "pt": "Dê-me só um copo de água, por favor.",
+                "kr": "물 한 잔만 주세요.",
+                "jp": "水を一杯だけください。",
+                "zh": "请只给我一杯水。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

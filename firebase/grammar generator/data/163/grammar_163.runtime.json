@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "C1_KO_REASON_FORMAL",
+        "level": "c1",
+        "id": "163"
+    },
+    "title": {
+        "target": "-(으)로 말미암아",
+        "en": "Owing To / Due To (-(으)로 말미암아)",
+        "es": "Debido a (-(으)로 말미암아)",
+        "fr": "En raison de (-(으)로 말미암아)",
+        "pt": "Devido a (-(으)로 말미암아)",
+        "kr": "-(으)로 말미암아",
+        "jp": "-(으)로 말미암아（~によって・書き言葉）",
+        "zh": "-(으)로 말미암아（由于~，书面语）"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "말미암아는 앞선 명사가 원인이 되어 뒤의 결과가 발생했음을 나타내는 표현이다. 받침이 있는 명사에는 으로 말미암아가, 받침이 없거나 ㄹ받침인 명사에는 로 말미암아가 결합한다.",
+                "en": "Malmiama expresses that a preceding noun is the cause of a following result. Nouns ending in a consonant take euro malmiama, while those ending in a vowel or ㄹ take ro malmiama.",
+                "es": "Malmiama indica que el sustantivo anterior es la causa del resultado que sigue. Los sustantivos terminados en consonante toman euro malmiama, y los terminados en vocal o en ㄹ toman ro malmiama.",
+                "fr": "Malmiama indique que le nom qui précède est la cause du résultat qui suit. Les noms se terminant par une consonne prennent euro malmiama, tandis que ceux se terminant par une voyelle ou par ㄹ prennent ro malmiama.",
+                "pt": "Malmiama indica que o substantivo anterior é a causa do resultado que se segue. Substantivos terminados em consoante recebem euro malmiama, e os terminados em vogal ou em ㄹ recebem ro malmiama.",
+                "kr": "말미암아는 앞선 명사가 원인이 되어 뒤의 결과가 발생했음을 나타내는 표현이다. 받침이 있는 명사에는 으로 말미암아가, 받침이 없거나 ㄹ받침인 명사에는 로 말미암아가 결합한다.",
+                "jp": "말미암아は前の名詞が原因となって後ろの結果が発生したことを表す表現である。パッチムのある名詞には으로 말미암아が、パッチムがないかㄹパッチムの名詞には로 말미암아が結び付く。",
+                "zh": "말미암아是表示前面的名词成为原因，从而产生后面结果的表达方式。以有收音的名词后接으로 말미암아，以无收音或以ㄹ收音结尾的名词后接로 말미암아。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "결합 순서는 원인을 뜻하는 명사가 먼저 오고 그 뒤에 결과나 상황을 서술하는 절이 이어지는 구조이다. 원인과 결과 사이의 인과 관계가 문장 전체의 핵심 의미를 이룬다.",
+                "en": "The structure places the noun denoting the cause first, followed by a clause describing the resulting situation. The causal link between the two forms the core meaning of the sentence.",
+                "es": "La estructura coloca primero el sustantivo que indica la causa, seguido de una cláusula que describe la situación resultante. El vínculo causal entre ambos constituye el significado central de la oración.",
+                "fr": "La structure place d'abord le nom désignant la cause, suivi d'une proposition décrivant la situation résultante. Le lien de causalité entre les deux constitue le sens central de la phrase.",
+                "pt": "A estrutura coloca primeiro o substantivo que indica a causa, seguido de uma oração que descreve a situação resultante. A ligação causal entre ambos constitui o significado central da frase.",
+                "kr": "결합 순서는 원인을 뜻하는 명사가 먼저 오고 그 뒤에 결과나 상황을 서술하는 절이 이어지는 구조이다. 원인과 결과 사이의 인과 관계가 문장 전체의 핵심 의미를 이룬다.",
+                "jp": "結び付く順序は、原因を意味する名詞が先に来て、その後ろに結果や状況を叙述する節が続く構造である。原因と結果の間の因果関係が文全体の核心的な意味をなす。",
+                "zh": "结合的顺序是表示原因的名词在前，后面接叙述结果或情况的分句。原因与结果之间的因果关系构成整个句子的核心意义。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사나 형용사 어간에는 직접 결합하지 않으며 반드시 명사 형태를 취해야 사용할 수 있다. 또한 신문 기사나 논설문 같은 문어체에서 주로 쓰이고 일상 대화에서는 거의 나타나지 않는다. 뒤따르는 절은 명령문이나 청유문이 아니라 사실을 서술하는 평서문이어야 한다.",
+                "en": "It does not attach directly to verb or adjective stems and can only be used with a noun form. It is mainly found in written registers such as news articles or editorials and rarely appears in everyday conversation. The following clause must be a factual statement rather than a command or suggestion.",
+                "es": "No se combina directamente con raíces verbales o adjetivales y solo puede usarse con una forma sustantiva. Aparece principalmente en registros escritos como artículos periodísticos o editoriales y rara vez se usa en la conversación cotidiana. La cláusula siguiente debe ser una afirmación factual, no una orden o sugerencia.",
+                "fr": "Elle ne se combine pas directement avec un radical verbal ou adjectival et ne peut s'employer qu'avec une forme nominale. On la trouve surtout dans des registres écrits tels que les articles de presse ou les éditoriaux et elle apparaît rarement dans la conversation quotidienne. La proposition qui suit doit être une affirmation factuelle, et non un ordre ou une suggestion.",
+                "pt": "Não se combina diretamente com radicais verbais ou adjetivais e só pode ser usada com uma forma nominal. Ocorre sobretudo em registos escritos, como artigos de jornal ou editoriais, e raramente surge na conversa quotidiana. A oração seguinte deve ser uma afirmação factual, e não uma ordem ou sugestão.",
+                "kr": "동사나 형용사 어간에는 직접 결합하지 않으며 반드시 명사 형태를 취해야 사용할 수 있다. 또한 신문 기사나 논설문 같은 문어체에서 주로 쓰이고 일상 대화에서는 거의 나타나지 않는다. 뒤따르는 절은 명령문이나 청유문이 아니라 사실을 서술하는 평서문이어야 한다.",
+                "jp": "動詞や形容詞の語幹に直接結び付くことはなく、必ず名詞の形をとってこそ使うことができる。また、新聞記事や論説文のような書き言葉で主に使われ、日常会話ではほとんど現れない。後ろに続く節は命令文や勧誘文ではなく、事実を叙述する平叙文でなければならない。",
+                "zh": "不直接与动词或形容词词干结合，必须采取名词形式才能使用。此外，主要用于新闻报道或社论等书面语，在日常对话中几乎不出现。后面的分句必须是陈述事实的平叙句，而不能是命令句或共动句。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "비슷한 인과 표현인 기 때문에보다 문어적이고 격식적인 느낌이 강하며 명사에만 결합한다는 제약이 있다. 격식체 문장에서 주로 사용되고 비격식적 대화체에는 어울리지 않는다.",
+                "en": "Compared to the similar causal expression gi ttaemune, it carries a stronger written and formal tone and is restricted to combining with nouns only. It is mainly used in formal sentences and does not suit informal conversational speech.",
+                "es": "En comparación con la expresión causal similar gi ttaemune, tiene un matiz más escrito y formal, y solo puede combinarse con sustantivos. Se usa principalmente en oraciones formales y no encaja en el habla coloquial.",
+                "fr": "Par rapport à l'expression causale similaire gi ttaemune, elle a une tonalité plus écrite et plus formelle, et ne peut se combiner qu'avec des noms. Elle s'emploie surtout dans des phrases formelles et ne convient pas au discours familier.",
+                "pt": "Em comparação com a expressão causal semelhante gi ttaemune, tem um tom mais escrito e formal, e só se combina com substantivos. É usada sobretudo em frases formais e não se adequa à fala informal.",
+                "kr": "비슷한 인과 표현인 기 때문에보다 문어적이고 격식적인 느낌이 강하며 명사에만 결합한다는 제약이 있다. 격식체 문장에서 주로 사용되고 비격식적 대화체에는 어울리지 않는다.",
+                "jp": "似た因果表現である기 때문에より書き言葉的で格式的な感じが強く、名詞にのみ結び付くという制約がある。格式ばった文で主に使われ、非格式的な会話体には似合わない。",
+                "zh": "与相似的因果表达기 때문에相比，书面语和正式的语气更强，并且有只能与名词结合的限制。主要用于正式的句子中，不适合非正式的会话体。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "학습자들은 동사를 명사처럼 취급해 어간 뒤에 곧바로 붙이는 오류를 자주 범한다. 원인을 나타내는 명사가 분명하지 않을 때는 다른 인과 표현으로 바꾸어 쓰는 것이 자연스럽다.",
+                "en": "Learners often mistakenly attach it directly after a verb stem as though it were a noun. When the noun expressing the cause is unclear, it is more natural to use a different causal expression instead.",
+                "es": "Los estudiantes suelen cometer el error de unirla directamente a una raíz verbal como si fuera un sustantivo. Cuando el sustantivo que expresa la causa no es claro, resulta más natural emplear otra expresión causal.",
+                "fr": "Les apprenants ont souvent l'erreur de l'attacher directement à un radical verbal comme s'il s'agissait d'un nom. Lorsque le nom exprimant la cause n'est pas clair, il est plus naturel d'utiliser une autre expression causale.",
+                "pt": "Os aprendentes cometem frequentemente o erro de a juntar diretamente a um radical verbal como se fosse um substantivo. Quando o substantivo que exprime a causa não é claro, é mais natural utilizar outra expressão causal.",
+                "kr": "학습자들은 동사를 명사처럼 취급해 어간 뒤에 곧바로 붙이는 오류를 자주 범한다. 원인을 나타내는 명사가 분명하지 않을 때는 다른 인과 표현으로 바꾸어 쓰는 것이 자연스럽다.",
+                "jp": "学習者は動詞を名詞のように扱って語幹の後ろに直接付けてしまう誤りをよく犯す。原因を表す名詞がはっきりしないときは、他の因果表現に変えて使うのが自然である。",
+                "zh": "学习者常犯的错误是把动词当作名词处理，直接接在词干后面。当表示原因的名词不明确时，改用其他因果表达会更自然。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "폭우로 말미암아 도로가 침수되었다.",
+                "en": "Due to the heavy rain, the road was flooded.",
+                "es": "Debido a la fuerte lluvia, la carretera quedó inundada.",
+                "fr": "En raison des fortes pluies, la route a été inondée.",
+                "pt": "Devido à forte chuva, a estrada ficou inundada.",
+                "kr": "폭우로 말미암아 도로가 침수되었다.",
+                "jp": "豪雨によって道路が浸水した。",
+                "zh": "由于暴雨，道路被淹没了。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "경제 위기로 말미암아 많은 기업이 도산했다.",
+                "en": "Owing to the economic crisis, many companies went bankrupt.",
+                "es": "A causa de la crisis económica, muchas empresas quebraron.",
+                "fr": "En raison de la crise économique, de nombreuses entreprises ont fait faillite.",
+                "pt": "Devido à crise económica, muitas empresas faliram.",
+                "kr": "경제 위기로 말미암아 많은 기업이 도산했다.",
+                "jp": "経済危機によって多くの企業が倒産した。",
+                "zh": "由于经济危机，许多企业倒闭了。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "태풍으로 말미암아 항공편이 모두 결항되었다.",
+                "en": "Because of the typhoon, all flights were cancelled.",
+                "es": "Debido al tifón, todos los vuelos fueron cancelados.",
+                "fr": "En raison du typhon, tous les vols ont été annulés.",
+                "pt": "Devido ao tufão, todos os voos foram cancelados.",
+                "kr": "태풍으로 말미암아 항공편이 모두 결항되었다.",
+                "jp": "台風によって航空便がすべて欠航になった。",
+                "zh": "由于台风，所有航班都停飞了。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그의 노력으로 말미암아 프로젝트가 성공했다.",
+                "en": "Thanks to his effort, the project succeeded.",
+                "es": "Gracias a su esfuerzo, el proyecto tuvo éxito.",
+                "fr": "Grâce à ses efforts, le projet a réussi.",
+                "pt": "Graças ao seu esforço, o projeto teve sucesso.",
+                "kr": "그의 노력으로 말미암아 프로젝트가 성공했다.",
+                "jp": "彼の努力によってプロジェクトが成功した。",
+                "zh": "由于他的努力，项目取得了成功。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "오랜 가뭄으로 말미암아 농작물 피해가 심각하다.",
+                "en": "Due to the prolonged drought, crop damage is severe.",
+                "es": "Debido a la prolongada sequía, los daños a los cultivos son graves.",
+                "fr": "En raison de la longue sécheresse, les dégâts aux récoltes sont graves.",
+                "pt": "Devido à longa seca, os danos às colheitas são graves.",
+                "kr": "오랜 가뭄으로 말미암아 농작물 피해가 심각하다.",
+                "jp": "長引く干ばつによって農作物の被害が深刻だ。",
+                "zh": "由于长期干旱，农作物受灾严重。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "잘못된 정책으로 말미암아 국민들이 큰 혼란을 겪었다.",
+                "en": "Because of the flawed policy, the public experienced great confusion.",
+                "es": "Debido a la política equivocada, la población sufrió una gran confusión.",
+                "fr": "En raison de la politique erronée, la population a connu une grande confusion.",
+                "pt": "Devido à política errada, a população sofreu uma grande confusão.",
+                "kr": "잘못된 정책으로 말미암아 국민들이 큰 혼란을 겪었다.",
+                "jp": "誤った政策によって国民が大きな混乱を経験した。",
+                "zh": "由于错误的政策，民众经历了极大的混乱。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "기술 발전으로 말미암아 생활 방식이 크게 변화했다.",
+                "en": "Owing to technological advancement, lifestyles have changed greatly.",
+                "es": "A causa del avance tecnológico, los estilos de vida han cambiado enormemente.",
+                "fr": "En raison du progrès technologique, les modes de vie ont beaucoup changé.",
+                "pt": "Devido ao avanço tecnológico, os estilos de vida mudaram muito.",
+                "kr": "기술 발전으로 말미암아 생활 방식이 크게 변화했다.",
+                "jp": "技術の発展によって生活様式が大きく変化した。",
+                "zh": "由于技术的发展，生活方式发生了巨大变化。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "지진으로 말미암아 수많은 건물이 붕괴되었다.",
+                "en": "Because of the earthquake, countless buildings collapsed.",
+                "es": "Debido al terremoto, innumerables edificios se derrumbaron.",
+                "fr": "En raison du séisme, d'innombrables bâtiments se sont effondrés.",
+                "pt": "Devido ao terramoto, inúmeros edifícios desabaram.",
+                "kr": "지진으로 말미암아 수많은 건물이 붕괴되었다.",
+                "jp": "地震によって数多くの建物が崩壊した。",
+                "zh": "由于地震，无数建筑物倒塌了。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "환경 오염으로 말미암아 생태계 전체가 위협받고 있다는 보고서가 발표되었다.",
+                "en": "A report was released stating that the entire ecosystem is under threat due to environmental pollution.",
+                "es": "Se publicó un informe que afirma que todo el ecosistema está amenazado debido a la contaminación ambiental.",
+                "fr": "Un rapport a été publié affirmant que tout l'écosystème est menacé en raison de la pollution environnementale.",
+                "pt": "Foi publicado um relatório afirmando que todo o ecossistema está ameaçado devido à poluição ambiental.",
+                "kr": "환경 오염으로 말미암아 생태계 전체가 위협받고 있다는 보고서가 발표되었다.",
+                "jp": "環境汚染によって生態系全体が脅かされているという報告書が発表された。",
+                "zh": "有报告发布称，由于环境污染，整个生态系统正受到威胁。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "무리한 확장으로 말미암아 회사가 결국 파산에 이르렀다.",
+                "en": "Due to reckless expansion, the company eventually went bankrupt.",
+                "es": "Debido a una expansión imprudente, la empresa acabó en quiebra.",
+                "fr": "En raison d'une expansion imprudente, l'entreprise a fini par faire faillite.",
+                "pt": "Devido a uma expansão imprudente, a empresa acabou por falir.",
+                "kr": "무리한 확장으로 말미암아 회사가 결국 파산에 이르렀다.",
+                "jp": "無理な拡張によって会社は結局破産に至った。",
+                "zh": "由于盲目扩张，公司最终走向破产。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "관계자들은 이번 사고가 정비 소홀로 말미암아 발생했다고 밝혔다.",
+                "en": "Officials stated that the accident occurred due to negligent maintenance.",
+                "es": "Los responsables declararon que el accidente ocurrió debido a un mantenimiento negligente.",
+                "fr": "Les responsables ont déclaré que l'accident s'était produit en raison d'un entretien négligent.",
+                "pt": "Os responsáveis declararam que o acidente ocorreu devido a uma manutenção negligente.",
+                "kr": "관계자들은 이번 사고가 정비 소홀로 말미암아 발생했다고 밝혔다.",
+                "jp": "関係者はこの事故が整備不良によって発生したと明らかにした。",
+                "zh": "有关人士表示，此次事故是由于维护疏忽而发生的。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "오해로 말미암아 두 사람 사이의 신뢰가 완전히 무너지고 말았다.",
+                "en": "Because of the misunderstanding, the trust between the two completely collapsed.",
+                "es": "Debido al malentendido, la confianza entre ambos se derrumbó por completo.",
+                "fr": "En raison du malentendu, la confiance entre les deux s'est complètement effondrée.",
+                "pt": "Devido ao mal-entendido, a confiança entre os dois desmoronou-se completamente.",
+                "kr": "오해로 말미암아 두 사람 사이의 신뢰가 완전히 무너지고 말았다.",
+                "jp": "誤解によって二人の間の信頼が完全に崩れてしまった。",
+                "zh": "由于误会，两人之间的信任彻底崩塌了。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

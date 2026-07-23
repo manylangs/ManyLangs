@@ -1,0 +1,254 @@
+{
+    "meta": {
+        "series": "C1_KO_ADDITION",
+        "level": "c1",
+        "id": "153"
+    },
+    "title": {
+        "target": "-(으)ㄴ 데다(가)",
+        "en": "In addition to being ~, ~ (adding a further point)",
+        "es": "Además de ser ~, ~",
+        "fr": "En plus d'être ~, ~",
+        "pt": "Além de ser ~, ~",
+        "kr": "-(으)ㄴ 데다(가)",
+        "jp": "～うえに（さらに付け加える）",
+        "zh": "不但……而且（追加补充）"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "이 문법은 앞 절의 상태나 행위에 뒤 절의 내용을 덧붙여 정도나 범위를 강화하는 표현이다. 동사 어간에는 -는 데다가가, 형용사 어간에는 -(으)ㄴ 데다가가 결합하며, 명사 뒤에서는 인 데다가 형태로 쓰인다.",
+                "en": "This grammar point adds further content to a preceding state or action, intensifying its degree or scope. Verb stems combine with -는 데다가, adjective stems with -(으)ㄴ 데다가, and nouns take the form 인 데다가.",
+                "es": "Este punto gramatical añade contenido adicional a un estado o acción anterior, intensificando su grado o alcance. Los verbos se combinan con -는 데다가, los adjetivos con -(으)ㄴ 데다가, y los sustantivos adoptan la forma 인 데다가.",
+                "fr": "Ce point de grammaire ajoute un contenu supplémentaire à un état ou une action précédente, en intensifiant son degré ou son étendue. Les verbes se combinent avec -는 데다가, les adjectifs avec -(으)ㄴ 데다가, et les noms prennent la forme 인 데다가.",
+                "pt": "Este ponto gramatical acrescenta conteúdo adicional a um estado ou ação anterior, intensificando o seu grau ou alcance. Os verbos combinam-se com -는 데다가, os adjetivos com -(으)ㄴ 데다가, e os substantivos assumem a forma 인 데다가.",
+                "kr": "이 문법은 앞 절의 상태나 행위에 뒤 절의 내용을 덧붙여 정도나 범위를 강화하는 표현이다. 동사 어간에는 -는 데다가가, 형용사 어간에는 -(으)ㄴ 데다가가 결합하며, 명사 뒤에서는 인 데다가 형태로 쓰인다.",
+                "jp": "この文法は、前の節の状態や行為に後の節の内容を付け加え、程度や範囲を強める表現である。動詞の語幹には「-는 데다가」が、形容詞の語幹には「-(으)ㄴ 데다가」が結合し、名詞の後では「인 데다가」の形で使われる。",
+                "zh": "该语法是在前一分句的状态或行为上追加后一分句的内容，从而强化程度或范围的表达。动词词干结合“-는 데다가”，形容词词干结合“-(으)ㄴ 데다가”，名词后则以“인 데다가”的形式使用。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "결합 방식은 앞 절과 뒤 절이 같은 방향의 의미를 가지도록 배열되는 데 핵심이 있다. 앞에서 제시된 특성이나 사건에 뒤 절이 추가되면서 전체적인 인상이나 결과가 더욱 강해지는 구조를 이룬다.",
+                "en": "The way it works centers on arranging the two clauses so they share the same directional meaning. As the characteristic or event introduced in the first clause is joined by the second, the overall impression or result becomes stronger.",
+                "es": "Su funcionamiento se centra en disponer las dos cláusulas para que compartan el mismo sentido direccional. A medida que la característica o el hecho presentado en la primera cláusula se une con la segunda, la impresión o el resultado general se refuerza.",
+                "fr": "Son fonctionnement repose sur l'agencement des deux propositions de manière à partager le même sens directionnel. Lorsque la caractéristique ou l'événement introduit dans la première proposition se combine avec la seconde, l'impression ou le résultat global se renforce.",
+                "pt": "O seu funcionamento assenta em dispor as duas orações de modo a partilharem o mesmo sentido direcional. À medida que a característica ou o acontecimento apresentado na primeira oração se junta à segunda, a impressão ou o resultado global torna-se mais forte.",
+                "kr": "결합 방식은 앞 절과 뒤 절이 같은 방향의 의미를 가지도록 배열되는 데 핵심이 있다. 앞에서 제시된 특성이나 사건에 뒤 절이 추가되면서 전체적인 인상이나 결과가 더욱 강해지는 구조를 이룬다.",
+                "jp": "結合の仕方は、前の節と後の節が同じ方向の意味を持つように配列されることに核心がある。前で提示された特性や出来事に後の節が加わることで、全体的な印象や結果がより強くなる構造をなす。",
+                "zh": "其结合方式的核心在于，前后两个分句要按照相同方向的意义排列。前面提出的特性或事件加上后一分句的内容，构成使整体印象或结果更加强化的结构。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "사용에는 몇 가지 제약이 따른다. 앞뒤 절의 내용은 긍정적이든 부정적이든 서로 같은 방향성을 유지해야 하며, 상반된 평가가 섞이면 자연스럽지 않다. 또한 뒤 절 자리에 명령형이나 청유형 어미가 오는 것은 허용되지 않는다.",
+                "en": "Several constraints apply to its use. The content of both clauses must maintain the same directionality, whether positive or negative, since mixing contradictory evaluations feels unnatural. In addition, imperative or propositive endings cannot appear in the second clause.",
+                "es": "Su uso está sujeto a varias restricciones. El contenido de ambas cláusulas debe mantener la misma direccionalidad, ya sea positiva o negativa, pues mezclar valoraciones contradictorias resulta poco natural. Además, no pueden aparecer terminaciones imperativas o propositivas en la segunda cláusula.",
+                "fr": "Plusieurs contraintes s'appliquent à son emploi. Le contenu des deux propositions doit conserver la même orientation, positive ou négative, car mélanger des évaluations contradictoires paraît peu naturel. De plus, les terminaisons impératives ou propositives ne peuvent pas apparaître dans la seconde proposition.",
+                "pt": "Aplicam-se várias restrições ao seu uso. O conteúdo de ambas as orações deve manter a mesma direcionalidade, seja positiva ou negativa, pois misturar avaliações contraditórias soa pouco natural. Além disso, terminações imperativas ou propositivas não podem surgir na segunda oração.",
+                "kr": "사용에는 몇 가지 제약이 따른다. 앞뒤 절의 내용은 긍정적이든 부정적이든 서로 같은 방향성을 유지해야 하며, 상반된 평가가 섞이면 자연스럽지 않다. 또한 뒤 절 자리에 명령형이나 청유형 어미가 오는 것은 허용되지 않는다.",
+                "jp": "使用にはいくつかの制約が伴う。前後の節の内容は肯定的であれ否定的であれ互いに同じ方向性を保たなければならず、相反する評価が混ざると不自然になる。また、後の節の位置に命令形や勧誘形の語尾が来ることは許容されない。",
+                "zh": "其使用受到几点限制。前后分句的内容无论是积极还是消极，都必须保持相同的方向性，混入相反的评价会显得不自然。此外，后一分句的位置不允许出现命令形或劝诱形词尾。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "비슷한 의미를 가진 -(으)ㄹ뿐더러와 견주어 보면, 이 표현이 구어체에서 훨씬 폭넓게 활용된다는 차이가 드러난다. 격식을 갖춘 자리와 편안한 대화 모두에서 무리 없이 사용할 수 있어 문체상의 제약이 크지 않다.",
+                "en": "Compared with the similar expression -(으)ㄹ뿐더러, this pattern is used far more broadly in spoken language. It fits comfortably in both formal settings and casual conversation, so it carries little stylistic restriction.",
+                "es": "En comparación con la expresión similar -(으)ㄹ뿐더러, este patrón se emplea de forma mucho más amplia en el habla coloquial. Encaja con naturalidad tanto en contextos formales como en conversaciones informales, por lo que apenas conlleva restricciones de estilo.",
+                "fr": "Comparé à l'expression similaire -(으)ㄹ뿐더러, ce schéma est employé de façon bien plus large à l'oral. Il s'intègre naturellement aussi bien dans des contextes formels que dans des conversations informelles, et ne comporte donc que peu de restrictions stylistiques.",
+                "pt": "Em comparação com a expressão semelhante -(으)ㄹ뿐더러, este padrão é utilizado de forma muito mais ampla na linguagem falada. Encaixa-se naturalmente tanto em contextos formais como em conversas informais, pelo que apresenta poucas restrições estilísticas.",
+                "kr": "비슷한 의미를 가진 -(으)ㄹ뿐더러와 견주어 보면, 이 표현이 구어체에서 훨씬 폭넓게 활용된다는 차이가 드러난다. 격식을 갖춘 자리와 편안한 대화 모두에서 무리 없이 사용할 수 있어 문체상의 제약이 크지 않다.",
+                "jp": "似た意味を持つ「-(으)ㄹ뿐더러」と比べてみると、この表現が口語体ではるかに幅広く活用されるという違いが表れる。格式のある場面とくだけた会話の両方で無理なく使うことができ、文体上の制約は大きくない。",
+                "zh": "与意思相近的“-(으)ㄹ뿐더러”相比，可以看出该表达在口语中的运用范围要广泛得多。它在正式场合和轻松的对话中都可以自如使用，文体上的限制不大。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "주의할 점은 품사에 따라 결합 형태가 달라진다는 사실을 혼동하기 쉽다는 것이다. 형용사 뒤에 동사형인 -는 데다가를 잘못 붙이는 오류가 흔하며, 앞뒤 절의 의미 방향이 어긋난 문장을 만드는 실수도 자주 나타난다.",
+                "en": "One point to watch is the tendency to confuse how the form changes depending on part of speech. Attaching the verb form -는 데다가 to an adjective is a common mistake, as is constructing sentences where the two clauses point in opposite directions.",
+                "es": "Un aspecto a vigilar es la tendencia a confundir cómo cambia la forma según la categoría gramatical. Es un error frecuente añadir la forma verbal -는 데다가 a un adjetivo, al igual que construir oraciones en las que las dos cláusulas apuntan en direcciones opuestas.",
+                "fr": "Un point à surveiller est la tendance à confondre la manière dont la forme change selon la catégorie grammaticale. Attacher la forme verbale -는 데다가 à un adjectif est une erreur fréquente, tout comme construire des phrases où les deux propositions vont dans des directions opposées.",
+                "pt": "Um ponto a ter em conta é a tendência para confundir a forma como a estrutura muda consoante a categoria gramatical. Juntar a forma verbal -는 데다가 a um adjetivo é um erro comum, tal como construir frases em que as duas orações apontam em direções opostas.",
+                "kr": "주의할 점은 품사에 따라 결합 형태가 달라진다는 사실을 혼동하기 쉽다는 것이다. 형용사 뒤에 동사형인 -는 데다가를 잘못 붙이는 오류가 흔하며, 앞뒤 절의 의미 방향이 어긋난 문장을 만드는 실수도 자주 나타난다.",
+                "jp": "注意すべき点は、品詞によって結合形態が変わるという事実を混同しやすいことである。形容詞の後に動詞形の「-는 데다가」を誤って付ける誤りがよく見られ、前後の節の意味の方向がずれた文を作る間違いもよく現れる。",
+                "zh": "需要注意的是，容易混淆结合形式随词性变化这一事实。在形容词后误接动词形式“-는 데다가”是常见错误，造出前后分句意义方向相悖的句子的失误也经常出现。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 식당은 음식이 맛있는 데다가 가격도 저렴해서 항상 손님이 많다.",
+                "en": "This restaurant's food is delicious, and on top of that the prices are low, so it's always crowded.",
+                "es": "La comida de este restaurante es deliciosa y, además, los precios son bajos, por lo que siempre está lleno.",
+                "fr": "La nourriture de ce restaurant est délicieuse et, en plus, les prix sont bas, si bien qu'il est toujours plein.",
+                "pt": "A comida deste restaurante é deliciosa e, além disso, os preços são baixos, por isso está sempre cheio.",
+                "kr": "이 식당은 음식이 맛있는 데다가 가격도 저렴해서 항상 손님이 많다.",
+                "jp": "この食堂は料理がおいしいうえに値段も手頃なので、いつも客が多い。",
+                "zh": "这家餐厅不但菜好吃，而且价格也便宜，所以客人总是很多。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그는 성격이 밝은 데다가 능력도 뛰어나서 동료들에게 인기가 많다.",
+                "en": "His personality is cheerful, and on top of that his skills are outstanding, so he's popular among colleagues.",
+                "es": "Su personalidad es alegre y, además, su capacidad es sobresaliente, por lo que es popular entre sus compañeros.",
+                "fr": "Son caractère est joyeux et, en plus, ses compétences sont remarquables, si bien qu'il est apprécié de ses collègues.",
+                "pt": "A sua personalidade é alegre e, além disso, a sua capacidade é notável, por isso é popular entre os colegas.",
+                "kr": "그는 성격이 밝은 데다가 능력도 뛰어나서 동료들에게 인기가 많다.",
+                "jp": "彼は性格が明るいうえに能力も優れているので、同僚たちに人気がある。",
+                "zh": "他不但性格开朗，而且能力也出众，所以很受同事们的欢迎。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "올해는 비가 많이 온 데다가 태풍까지 겹쳐서 농작물 피해가 심각했다.",
+                "en": "This year it rained heavily, and on top of that a typhoon hit as well, so crop damage was severe.",
+                "es": "Este año llovió mucho y, además, coincidió con un tifón, por lo que los daños en los cultivos fueron graves.",
+                "fr": "Cette année, il a beaucoup plu et, en plus, un typhon est survenu en même temps, si bien que les dégâts sur les récoltes ont été graves.",
+                "pt": "Este ano choveu muito e, além disso, coincidiu com um tufão, por isso os danos nas colheitas foram graves.",
+                "kr": "올해는 비가 많이 온 데다가 태풍까지 겹쳐서 농작물 피해가 심각했다.",
+                "jp": "今年は雨が多く降ったうえに台風まで重なって、農作物の被害が深刻だった。",
+                "zh": "今年不但雨下得多，而且还赶上台风，农作物损失十分严重。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "시험이 어려운 데다가 시간까지 부족해서 다 풀지 못했다.",
+                "en": "The exam was difficult, and on top of that there wasn't enough time, so I couldn't finish it all.",
+                "es": "El examen era difícil y, además, faltaba tiempo, por lo que no pude terminarlo todo.",
+                "fr": "L'examen était difficile et, en plus, le temps manquait, si bien que je n'ai pas pu tout terminer.",
+                "pt": "O exame era difícil e, além disso, faltava tempo, por isso não consegui terminar tudo.",
+                "kr": "시험이 어려운 데다가 시간까지 부족해서 다 풀지 못했다.",
+                "jp": "試験が難しいうえに時間まで足りなくて、全部解けなかった。",
+                "zh": "考试不但难，而且时间还不够，所以没能全部做完。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그 배우는 연기를 잘하는 데다가 목소리까지 매력적이어서 인기가 높다.",
+                "en": "That actor performs well, and on top of that even the voice is charming, so popularity is high.",
+                "es": "Ese actor actúa bien y, además, incluso su voz es encantadora, por lo que goza de gran popularidad.",
+                "fr": "Cet acteur joue bien et, en plus, même sa voix est charmante, si bien qu'il est très populaire.",
+                "pt": "Esse ator representa bem e, além disso, até a voz é encantadora, por isso goza de grande popularidade.",
+                "kr": "그 배우는 연기를 잘하는 데다가 목소리까지 매력적이어서 인기가 높다.",
+                "jp": "あの俳優は演技がうまいうえに声まで魅力的なので、人気が高い。",
+                "zh": "那位演员不但演技好，而且连声音都很有魅力，所以人气很高。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "회사는 규모가 작은 데다가 자금까지 부족해서 어려움을 겪고 있다.",
+                "en": "The company is small, and on top of that funds are lacking too, so it's struggling.",
+                "es": "La empresa es pequeña y, además, también le faltan fondos, por lo que atraviesa dificultades.",
+                "fr": "L'entreprise est petite et, en plus, les fonds manquent aussi, si bien qu'elle traverse des difficultés.",
+                "pt": "A empresa é pequena e, além disso, também lhe faltam fundos, por isso atravessa dificuldades.",
+                "kr": "회사는 규모가 작은 데다가 자금까지 부족해서 어려움을 겪고 있다.",
+                "jp": "会社は規模が小さいうえに資金まで足りなくて、困難に直面している。",
+                "zh": "公司不但规模小，而且资金还不足，正面临困难。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "길이 막힌 데다가 사고까지 나서 약속 시간에 늦고 말았다.",
+                "en": "The road was jammed, and on top of that an accident happened too, so I ended up being late for the appointment.",
+                "es": "El tráfico estaba atascado y, además, hubo un accidente, por lo que acabé llegando tarde a la cita.",
+                "fr": "La route était bouchée et, en plus, un accident s'est produit, si bien que j'ai fini par être en retard au rendez-vous.",
+                "pt": "O trânsito estava congestionado e, além disso, houve um acidente, por isso acabei por chegar atrasado ao compromisso.",
+                "kr": "길이 막힌 데다가 사고까지 나서 약속 시간에 늦고 말았다.",
+                "jp": "道が渋滞したうえに事故まで起きて、約束の時間に遅れてしまった。",
+                "zh": "不但路上堵车，而且还出了事故，结果约会迟到了。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그녀는 실력이 뛰어난 데다가 성실하기까지 해서 신뢰를 얻고 있다.",
+                "en": "Her skills are outstanding, and on top of that she's diligent too, so she's earning trust.",
+                "es": "Su capacidad es sobresaliente y, además, también es diligente, por lo que se está ganando la confianza de los demás.",
+                "fr": "Ses compétences sont remarquables et, en plus, elle est également assidue, si bien qu'elle gagne la confiance des autres.",
+                "pt": "A sua capacidade é notável e, além disso, também é diligente, por isso está a ganhar a confiança dos outros.",
+                "kr": "그녀는 실력이 뛰어난 데다가 성실하기까지 해서 신뢰를 얻고 있다.",
+                "jp": "彼女は実力が優れているうえに誠実でもあるので、信頼を得ている。",
+                "zh": "她不但实力出众，而且为人还很踏实，因此赢得了信任。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 도시는 물가가 비싼 데다가 교통까지 복잡해서 살기가 쉽지 않다.",
+                "en": "This city has high prices, and on top of that traffic is complicated too, so it's not easy to live here.",
+                "es": "Esta ciudad tiene precios altos y, además, el tráfico también es complicado, por lo que no resulta fácil vivir aquí.",
+                "fr": "Cette ville a des prix élevés et, en plus, la circulation est également compliquée, si bien qu'il n'est pas facile d'y vivre.",
+                "pt": "Esta cidade tem preços altos e, além disso, o trânsito também é complicado, por isso não é fácil viver aqui.",
+                "kr": "이 도시는 물가가 비싼 데다가 교통까지 복잡해서 살기가 쉽지 않다.",
+                "jp": "この都市は物価が高いうえに交通まで複雑で、暮らすのが容易ではない。",
+                "zh": "这座城市不但物价高，而且交通还很复杂，生活起来不容易。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "계획이 갑자기 바뀐 데다가 예산까지 줄어서 진행이 늦어지고 있다.",
+                "en": "The plan changed suddenly, and on top of that the budget was cut too, so progress is being delayed.",
+                "es": "El plan cambió de repente y, además, también se redujo el presupuesto, por lo que el avance se está retrasando.",
+                "fr": "Le plan a changé soudainement et, en plus, le budget a également été réduit, si bien que l'avancement prend du retard.",
+                "pt": "O plano mudou de repente e, além disso, o orçamento também foi reduzido, por isso o avanço está a atrasar-se.",
+                "kr": "계획이 갑자기 바뀐 데다가 예산까지 줄어서 진행이 늦어지고 있다.",
+                "jp": "計画が急に変わったうえに予算まで減って、進行が遅れている。",
+                "zh": "不但计划突然改变，而且预算还被削减，进度正在延迟。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 책은 내용이 어려운 데다가 분량까지 방대해서 완독하기가 만만치 않다.",
+                "en": "This book's content is difficult, and on top of that the volume is vast too, so finishing it is no easy task.",
+                "es": "El contenido de este libro es difícil y, además, su extensión también es enorme, por lo que terminarlo no resulta sencillo.",
+                "fr": "Le contenu de ce livre est difficile et, en plus, son volume est également considérable, si bien qu'il n'est pas facile d'en venir à bout.",
+                "pt": "O conteúdo deste livro é difícil e, além disso, a sua extensão também é enorme, por isso não é fácil terminá-lo.",
+                "kr": "이 책은 내용이 어려운 데다가 분량까지 방대해서 완독하기가 만만치 않다.",
+                "jp": "この本は内容が難しいうえに分量まで膨大で、読み通すのは容易ではない。",
+                "zh": "这本书不但内容难，而且篇幅还很庞大，要读完并不容易。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "신제품은 디자인이 세련된 데다가 성능까지 우수해서 반응이 뜨겁다.",
+                "en": "The new product's design is sophisticated, and on top of that its performance is excellent too, so the response has been enthusiastic.",
+                "es": "El diseño del nuevo producto es sofisticado y, además, su rendimiento también es excelente, por lo que la acogida ha sido entusiasta.",
+                "fr": "Le design du nouveau produit est raffiné et, en plus, ses performances sont également excellentes, si bien que l'accueil est enthousiaste.",
+                "pt": "O design do novo produto é sofisticado e, além disso, o seu desempenho também é excelente, por isso a receção tem sido entusiástica.",
+                "kr": "신제품은 디자인이 세련된 데다가 성능까지 우수해서 반응이 뜨겁다.",
+                "jp": "新製品はデザインが洗練されているうえに性能まで優れていて、反響が大きい。",
+                "zh": "新产品不但设计精致，而且性能还很优秀，反响十分热烈。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}
+  
+  

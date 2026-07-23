@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "B2_KO_FUTILITY",
+        "level": "b2",
+        "id": "121"
+    },
+    "title": {
+        "target": "-(으)나 마나",
+        "en": "No Point Whether or Not",
+        "es": "Da igual si… o no",
+        "fr": "Que ce soit… ou non, ça ne change rien",
+        "pt": "Tanto faz se… ou não",
+        "kr": "-(으)나 마나",
+        "jp": "してもしなくても意味がない",
+        "zh": "做不做都一样（无用功）"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사 어간에 -(으)나 마나를 붙여, 어떤 행동을 하든 안 하든 결과가 달라지지 않아 그 행동이 무의미함을 나타낸다.",
+                "en": "Attaching -(으)나 마나 to a verb stem expresses that the result stays the same whether or not the action is performed, making the action meaningless.",
+                "es": "Al añadir -(으)나 마나 a la raíz de un verbo se expresa que el resultado no cambia se realice o no la acción, por lo que esta resulta inútil.",
+                "fr": "En ajoutant -(으)나 마나 au radical d'un verbe, on exprime que le résultat reste identique que l'action soit accomplie ou non, rendant celle-ci inutile.",
+                "pt": "Ao acrescentar -(으)나 마나 à raiz de um verbo, exprime-se que o resultado não muda quer a ação seja realizada quer não, tornando-a inútil.",
+                "kr": "동사 어간에 -(으)나 마나를 붙여, 어떤 행동을 하든 안 하든 결과가 달라지지 않아 그 행동이 무의미함을 나타낸다.",
+                "jp": "動詞語幹に-(으)나 마나を付け、その行動をしてもしなくても結果が変わらず、その行動が無意味であることを表す。",
+                "zh": "在动词词干后加上-(으)나 마나，表示无论做不做这个动作结果都不会改变，因此这个动作毫无意义。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동일한 동사가 긍정형과 부정형으로 짝을 이루어 두 가능성을 모두 제시한 뒤, 어느 쪽을 선택해도 결과가 이미 뻔하다는 판단으로 문장이 마무리된다.",
+                "en": "The same verb is paired in affirmative and negative forms to present both possibilities, and the sentence concludes with the judgment that the result is already obvious no matter which is chosen.",
+                "es": "El mismo verbo se empareja en forma afirmativa y negativa para presentar ambas posibilidades, y la oración concluye con el juicio de que el resultado ya es evidente sin importar cuál se elija.",
+                "fr": "Le même verbe est associé sous forme affirmative et négative pour présenter les deux possibilités, et la phrase se conclut par le jugement que le résultat est déjà évident quel que soit le choix.",
+                "pt": "O mesmo verbo é emparelhado na forma afirmativa e negativa para apresentar ambas as possibilidades, e a frase conclui com o juízo de que o resultado já é óbvio seja qual for a escolha.",
+                "kr": "동일한 동사가 긍정형과 부정형으로 짝을 이루어 두 가능성을 모두 제시한 뒤, 어느 쪽을 선택해도 결과가 이미 뻔하다는 판단으로 문장이 마무리된다.",
+                "jp": "同じ動詞が肯定形と否定形の対になって二つの可能性を示した後、どちらを選んでも結果はすでに明らかだという判断で文が締めくくられる。",
+                "zh": "同一个动词以肯定和否定形式成对出现，先呈现两种可能性，最后以无论选择哪种结果都已显而易见的判断收尾。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "앞에는 반드시 동사 어간이 오고 형용사에는 쓰이지 않으며, 뒤 절에는 그 행동이 무익하거나 예상된 결과를 낳는다는 내용이 이어지고, 명령문이나 청유문은 뒤에 올 수 없다.",
+                "en": "A verb stem must precede it and it is not used with adjectives, the following clause must convey that the action is futile or produces a predictable result, and imperative or propositive sentences cannot follow.",
+                "es": "Debe ir precedido de la raíz de un verbo y no se usa con adjetivos, la cláusula siguiente debe transmitir que la acción es inútil o produce un resultado previsible, y no puede ir seguida de oraciones imperativas o propositivas.",
+                "fr": "Il doit être précédé du radical d'un verbe et ne s'emploie pas avec les adjectifs, la proposition suivante doit indiquer que l'action est vaine ou produit un résultat prévisible, et aucune phrase impérative ou exhortative ne peut suivre.",
+                "pt": "Deve ser precedido da raiz de um verbo e não se usa com adjetivos, a oração seguinte deve transmitir que a ação é inútil ou produz um resultado previsível, e não pode ser seguida de frases imperativas ou exortativas.",
+                "kr": "앞에는 반드시 동사 어간이 오고 형용사에는 쓰이지 않으며, 뒤 절에는 그 행동이 무익하거나 예상된 결과를 낳는다는 내용이 이어지고, 명령문이나 청유문은 뒤에 올 수 없다.",
+                "jp": "前には必ず動詞語幹が来て形容詞には使われず、後節にはその行動が無益であるか、予想された結果を生むという内容が続き、命令文や勧誘文は後に来ることができない。",
+                "zh": "前面必须是动词词干，不能用于形容词；后一分句必须表达该行为无益或产生了可预见的结果，命令句和共动句不能出现在后面。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "가정을 나타내는 -아/어 봤자와 달리 이 표현은 동사를 긍정과 부정으로 반복하여 두 선택지를 직접 대비시키며, 구어체에서 체념이나 냉소의 어조로 자주 쓰인다.",
+                "en": "Unlike -아/어 봤자, which expresses a hypothetical, this expression directly contrasts two options by repeating the verb in affirmative and negative form, and it is often used in spoken language with a tone of resignation or cynicism.",
+                "es": "A diferencia de -아/어 봤자, que expresa una hipótesis, esta expresión contrasta directamente dos opciones repitiendo el verbo en forma afirmativa y negativa, y se usa a menudo en el habla con un tono de resignación o cinismo.",
+                "fr": "Contrairement à -아/어 봤자, qui exprime une hypothèse, cette expression met directement en contraste deux options en répétant le verbe sous forme affirmative et négative, et elle est souvent employée à l'oral avec un ton de résignation ou de cynisme.",
+                "pt": "Ao contrário de -아/어 봤자, que exprime uma hipótese, esta expressão contrasta diretamente duas opções repetindo o verbo na forma afirmativa e negativa, sendo frequentemente usada na fala com um tom de resignação ou de ceticismo.",
+                "kr": "가정을 나타내는 -아/어 봤자와 달리 이 표현은 동사를 긍정과 부정으로 반복하여 두 선택지를 직접 대비시키며, 구어체에서 체념이나 냉소의 어조로 자주 쓰인다.",
+                "jp": "仮定を表す-아/어 봤자とは違い、この表現は動詞を肯定と否定で繰り返して二つの選択肢を直接対比させ、口語で諦めや冷笑の口調でよく使われる。",
+                "zh": "与表示假设的-아/어 봤자不同，这个表达通过肯定和否定重复动词，直接对比两种选择，在口语中常带有放弃或嘲讽的语气。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "형용사 어간에 잘못 붙이는 실수가 흔하므로 반드시 동사에만 결합함을 기억해야 하며, 격식적인 글보다는 일상 대화나 불만을 표현하는 상황에서 훨씬 자연스럽게 쓰인다.",
+                "en": "A common mistake is wrongly attaching it to an adjective stem, so it must be remembered that it combines only with verbs, and it sounds far more natural in everyday conversation or situations expressing complaint than in formal writing.",
+                "es": "Un error común es añadirlo incorrectamente a la raíz de un adjetivo, por lo que hay que recordar que solo se combina con verbos, y suena mucho más natural en la conversación cotidiana o en situaciones de queja que en la escritura formal.",
+                "fr": "Une erreur courante consiste à l'ajouter à tort au radical d'un adjectif, il faut donc se rappeler qu'il ne se combine qu'avec les verbes, et il sonne bien plus naturel dans la conversation quotidienne ou les situations de plainte que dans l'écrit formel.",
+                "pt": "Um erro comum é acrescentá-lo indevidamente à raiz de um adjetivo, devendo lembrar-se que só se combina com verbos, soando muito mais natural na conversa do dia a dia ou em situações de queixa do que na escrita formal.",
+                "kr": "형용사 어간에 잘못 붙이는 실수가 흔하므로 반드시 동사에만 결합함을 기억해야 하며, 격식적인 글보다는 일상 대화나 불만을 표현하는 상황에서 훨씬 자연스럽게 쓰인다.",
+                "jp": "形容詞語幹に誤って付ける間違いがよくあるため、必ず動詞にのみ結合することを覚えておく必要があり、格式ばった文章よりも日常会話や不満を表す状況でずっと自然に使われる。",
+                "zh": "常见的错误是误将其接在形容词词干后，因此必须记住它只能与动词结合，在日常对话或表达不满的场合比正式文章中使用起来自然得多。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이제 와서 후회하나 마나 소용없다.",
+                "en": "Regretting it now or not, it's useless anyway.",
+                "es": "Ya sea que te arrepientas ahora o no, es inútil.",
+                "fr": "Que tu regrettes maintenant ou non, ça ne sert à rien.",
+                "pt": "Agora, quer te arrependas quer não, é inútil.",
+                "kr": "이제 와서 후회하나 마나 소용없다.",
+                "jp": "今さら後悔してもしなくても無駄だ。",
+                "zh": "事到如今后悔不后悔都没用。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그 사람은 물어보나 마나 거절할 것이다.",
+                "en": "Whether you ask him or not, he'll refuse anyway.",
+                "es": "Sea que le preguntes o no, él se negará de todos modos.",
+                "fr": "Que tu lui demandes ou non, il refusera de toute façon.",
+                "pt": "Quer lhe perguntes quer não, ele vai recusar de qualquer forma.",
+                "kr": "그 사람은 물어보나 마나 거절할 것이다.",
+                "jp": "あの人は聞いても聞かなくても断るだろう。",
+                "zh": "那个人问不问都会拒绝的。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 시험은 공부하나 마나 다 아는 내용이다.",
+                "en": "Whether you study for this test or not, it's all content you already know.",
+                "es": "Estudies o no para este examen, es contenido que ya sabes.",
+                "fr": "Que tu révises ou non pour cet examen, c'est un contenu que tu connais déjà.",
+                "pt": "Quer estudes quer não para este exame, é conteúdo que já sabes.",
+                "kr": "이 시험은 공부하나 마나 다 아는 내용이다.",
+                "jp": "この試験は勉強してもしなくても全部知っている内容だ。",
+                "zh": "这次考试学不学都是已经会的内容。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그에게 부탁하나 마나 도와주지 않을 거야.",
+                "en": "Whether you ask him for a favor or not, he won't help you.",
+                "es": "Le pidas un favor o no, no te ayudará.",
+                "fr": "Que tu lui demandes une faveur ou non, il ne t'aidera pas.",
+                "pt": "Quer lhe peças um favor quer não, ele não vai ajudar.",
+                "kr": "그에게 부탁하나 마나 도와주지 않을 거야.",
+                "jp": "彼に頼んでも頼まなくても助けてくれないだろう。",
+                "zh": "拜托他也好不拜托也好，他都不会帮忙的。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "일기예보는 보나 마나 또 틀릴 것이다.",
+                "en": "Whether you check the weather forecast or not, it'll be wrong again anyway.",
+                "es": "Mires el pronóstico del tiempo o no, seguramente estará equivocado otra vez.",
+                "fr": "Que tu regardes la météo ou non, elle sera encore fausse de toute façon.",
+                "pt": "Quer vejas a previsão do tempo quer não, vai estar errada outra vez.",
+                "kr": "일기예보는 보나 마나 또 틀릴 것이다.",
+                "jp": "天気予報は見ても見なくてもまた外れるだろう。",
+                "zh": "天气预报看不看反正又会不准的。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그 영화는 보나 마나 뻔한 결말일 것이다.",
+                "en": "Whether you watch that movie or not, the ending is bound to be predictable.",
+                "es": "Veas esa película o no, el final será previsible con toda seguridad.",
+                "fr": "Que tu voies ce film ou non, la fin sera forcément prévisible.",
+                "pt": "Quer vejas esse filme quer não, o final vai ser previsível.",
+                "kr": "그 영화는 보나 마나 뻔한 결말일 것이다.",
+                "jp": "あの映画は見ても見なくても結末は見え見えだろう。",
+                "zh": "那部电影看不看结局都会很老套。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이 문제는 고민하나 마나 답이 뻔하다.",
+                "en": "Whether you agonize over this problem or not, the answer is obvious.",
+                "es": "Le des vueltas a este problema o no, la respuesta es obvia.",
+                "fr": "Que tu réfléchisses à ce problème ou non, la réponse est évidente.",
+                "pt": "Quer penses muito neste problema quer não, a resposta é óbvia.",
+                "kr": "이 문제는 고민하나 마나 답이 뻔하다.",
+                "jp": "この問題は悩んでも悩まなくても答えは明らかだ。",
+                "zh": "这个问题想不想答案都很明显。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그 식당은 예약하나 마나 자리가 없을 것이다.",
+                "en": "Whether you make a reservation at that restaurant or not, there won't be a table anyway.",
+                "es": "Reserves en ese restaurante o no, no habrá mesa de todos modos.",
+                "fr": "Que tu réserves dans ce restaurant ou non, il n'y aura pas de table de toute façon.",
+                "pt": "Quer reserves nesse restaurante quer não, não vai haver mesa.",
+                "kr": "그 식당은 예약하나 마나 자리가 없을 것이다.",
+                "jp": "あの食堂は予約してもしなくても席がないだろう。",
+                "zh": "那家餐厅订不订位反正都没有位子。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "낡은 제도를 개혁하나 마나 근본 문제는 그대로다.",
+                "en": "Whether the outdated system is reformed or not, the fundamental problem remains unchanged.",
+                "es": "Se reforme el sistema anticuado o no, el problema fundamental sigue igual.",
+                "fr": "Que le système désuet soit réformé ou non, le problème fondamental reste inchangé.",
+                "pt": "Quer o sistema ultrapassado seja reformado quer não, o problema fundamental mantém-se igual.",
+                "kr": "낡은 제도를 개혁하나 마나 근본 문제는 그대로다.",
+                "jp": "古い制度を改革してもしなくても根本的な問題はそのままだ。",
+                "zh": "陈旧的制度改革不改革，根本问题都没有变化。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "이런 정책은 발표하나 마나 현장에서는 지켜지지 않는다.",
+                "en": "Whether such a policy is announced or not, it won't be observed in practice anyway.",
+                "es": "Se anuncie esta política o no, no se cumplirá en la práctica de todos modos.",
+                "fr": "Que cette politique soit annoncée ou non, elle ne sera de toute façon pas respectée sur le terrain.",
+                "pt": "Quer esta política seja anunciada quer não, não será cumprida na prática.",
+                "kr": "이런 정책은 발표하나 마나 현장에서는 지켜지지 않는다.",
+                "jp": "こういう政策は発表してもしなくても現場では守られない。",
+                "zh": "这种政策公布不公布，现场都不会被遵守。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그 후보의 공약은 들어보나 마나 실현 가능성이 낮다.",
+                "en": "Whether you listen to that candidate's pledges or not, their feasibility is bound to be low.",
+                "es": "Escuches las promesas de ese candidato o no, su viabilidad es seguramente baja.",
+                "fr": "Que tu écoutes les promesses de ce candidat ou non, leur faisabilité est forcément faible.",
+                "pt": "Quer ouças as promessas desse candidato quer não, a sua viabilidade é certamente baixa.",
+                "kr": "그 후보의 공약은 들어보나 마나 실현 가능성이 낮다.",
+                "jp": "あの候補の公約は聞いても聞かなくても実現可能性は低い。",
+                "zh": "那位候选人的承诺听不听实现的可能性都很低。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "낡은 계약서를 검토하나 마나 조항은 이미 불리하게 되어 있다.",
+                "en": "Whether the outdated contract is reviewed or not, the clauses are already set unfavorably.",
+                "es": "Se revise el contrato anticuado o no, las cláusulas ya están dispuestas de forma desfavorable.",
+                "fr": "Que le vieux contrat soit examiné ou non, les clauses sont déjà établies de façon défavorable.",
+                "pt": "Quer o contrato antigo seja revisto quer não, as cláusulas já estão definidas de forma desfavorável.",
+                "kr": "낡은 계약서를 검토하나 마나 조항은 이미 불리하게 되어 있다.",
+                "jp": "古い契約書を検討してもしなくても条項はすでに不利になっている。",
+                "zh": "陈旧的合同审查不审查，条款都已经处于不利地位。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}

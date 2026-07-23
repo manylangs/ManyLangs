@@ -1,0 +1,252 @@
+{
+    "meta": {
+        "series": "A2_KO_AND_THEN2",
+        "level": "a2",
+        "id": "056"
+    },
+    "title": {
+        "target": "V-고 나서",
+        "en": "-고 나서 (After doing...)",
+        "es": "-고 나서 (Después de hacer...)",
+        "fr": "-고 나서 (Après avoir fait...)",
+        "pt": "-고 나서 (Depois de fazer...)",
+        "kr": "V-고 나서",
+        "jp": "-고 나서(〜してから)",
+        "zh": "-고 나서(做完……之后)"
+    },
+    "blocks": [
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동사 어간 뒤에 '-고 나서'를 붙이면 앞선 동작이 완전히 마무리된 다음에 다음 동작이 이어짐을 나타낸다.",
+                "en": "Attaching -고 나서 to a verb stem shows that the next action happens only after the first one is fully completed.",
+                "es": "Al añadir -고 나서 a la raíz del verbo se indica que la siguiente acción ocurre solo después de que la primera haya terminado por completo.",
+                "fr": "En ajoutant -고 나서 au radical du verbe, on indique que l'action suivante se produit seulement après que la première soit entièrement terminée.",
+                "pt": "Ao juntar -고 나서 à raiz do verbo, indica-se que a ação seguinte ocorre apenas depois de a primeira estar totalmente concluída.",
+                "kr": "동사 어간 뒤에 '-고 나서'를 붙이면 앞선 동작이 완전히 마무리된 다음에 다음 동작이 이어짐을 나타낸다.",
+                "jp": "動詞語幹の後に「-고 나서」を付けると、先の動作が完全に終わった後で次の動作が続くことを表す。",
+                "zh": "在动词词干后加上“-고 나서”,表示前一个动作完全结束之后,紧接着进行下一个动作。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "앞 절의 행동이 끝나야만 뒤 절의 행동이 시작될 수 있으므로, 두 동작 사이에는 뚜렷한 시간차와 완료의 의미가 존재한다.",
+                "en": "Because the action in the first clause must finish before the second one begins, there is a clear time gap and sense of completion between the two actions.",
+                "es": "Como la acción de la primera cláusula debe terminar antes de que comience la segunda, existe una clara diferencia temporal y un sentido de finalización entre ambas acciones.",
+                "fr": "Comme l'action de la première proposition doit se terminer avant que la seconde ne commence, il existe un net décalage temporel et une idée d'achèvement entre les deux actions.",
+                "pt": "Como a ação da primeira oração deve terminar antes de a segunda começar, existe uma clara diferença temporal e uma ideia de conclusão entre as duas ações.",
+                "kr": "앞 절의 행동이 끝나야만 뒤 절의 행동이 시작될 수 있으므로, 두 동작 사이에는 뚜렷한 시간차와 완료의 의미가 존재한다.",
+                "jp": "前節の行動が終わってこそ後節の行動が始まるため、二つの動作の間には明確な時間差と完了の意味が存在する。",
+                "zh": "只有前一分句的行动结束后,后一分句的行动才能开始,因此两个动作之间存在明显的时间差和完成的含义。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "동일한 주어가 연속으로 두 동작을 수행할 때 주로 사용되며, 주어가 다르거나 두 동작이 동시에 일어나는 경우에는 쓸 수 없다.",
+                "en": "It is mainly used when the same subject performs both actions in sequence, and cannot be used when the subjects differ or when the two actions happen simultaneously.",
+                "es": "Se usa principalmente cuando el mismo sujeto realiza ambas acciones en secuencia, y no puede usarse cuando los sujetos son distintos o cuando las dos acciones ocurren al mismo tiempo.",
+                "fr": "Elle s'emploie surtout lorsque le même sujet effectue les deux actions l'une après l'autre, et ne peut pas s'utiliser lorsque les sujets diffèrent ou que les deux actions se produisent simultanément.",
+                "pt": "É usada principalmente quando o mesmo sujeito realiza as duas ações em sequência, e não pode ser usada quando os sujeitos são diferentes ou quando as duas ações ocorrem ao mesmo tempo.",
+                "kr": "동일한 주어가 연속으로 두 동작을 수행할 때 주로 사용되며, 주어가 다르거나 두 동작이 동시에 일어나는 경우에는 쓸 수 없다.",
+                "jp": "同じ主語が続けて二つの動作を行うときに主に使われ、主語が異なったり二つの動作が同時に起こったりする場合には使えない。",
+                "zh": "主要用于同一个主语连续做两个动作的情况,如果主语不同,或两个动作同时发生,则不能使用。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "'-고'가 단순한 나열이나 동시 동작을 나타내는 반면, '-고 나서'는 완료 후 순차 진행을 강조한다는 점에서 차이가 있다.",
+                "en": "While -고 alone can express simple listing or simultaneous actions, -고 나서 emphasizes sequential progression after completion, which is the key difference between them.",
+                "es": "Mientras que -고 por sí solo puede expresar una simple enumeración o acciones simultáneas, -고 나서 destaca la progresión secuencial tras la finalización, y esa es la diferencia clave entre ambos.",
+                "fr": "Alors que -고 seul peut exprimer une simple énumération ou des actions simultanées, -고 나서 met l'accent sur la progression séquentielle après l'achèvement, ce qui constitue la différence essentielle entre les deux.",
+                "pt": "Enquanto -고 sozinho pode expressar uma simples enumeração ou ações simultâneas, -고 나서 destaca a progressão sequencial depois da conclusão, sendo essa a principal diferença entre os dois.",
+                "kr": "'-고'가 단순한 나열이나 동시 동작을 나타내는 반면, '-고 나서'는 완료 후 순차 진행을 강조한다는 점에서 차이가 있다.",
+                "jp": "「-고」が単純な羅列や同時動作を表すのに対し、「-고 나서」は完了後の順次進行を強調するという点で違いがある。",
+                "zh": "“-고”表示单纯的并列或同时进行的动作,而“-고 나서”强调完成之后按顺序进行,这就是二者的区别。"
+            }
+        },
+        {
+            "type": "grammar_explanation",
+            "sentences": {
+                "target": "'먹고나서'처럼 붙여 쓰거나 완료되지 않은 동작에 사용하는 오류에 주의해야 하며, 뒤 절에는 주로 과거나 현재 시제가 자연스럽게 온다.",
+                "en": "Care is needed to avoid writing 먹고나서 without a space or using it for an action that has not yet finished, and the second clause is usually expressed naturally in the past or present tense.",
+                "es": "Hay que evitar escribir 먹고나서 sin espacio o usarlo con una acción aún no terminada, y la segunda cláusula suele expresarse de forma natural en pasado o presente.",
+                "fr": "Il faut éviter d'écrire 먹고나서 sans espace ou de l'employer pour une action non encore terminée, et la seconde proposition s'exprime généralement de façon naturelle au passé ou au présent.",
+                "pt": "É preciso evitar escrever 먹고나서 sem espaço ou usá-lo para uma ação ainda não concluída, e a segunda oração costuma expressar-se naturalmente no passado ou no presente.",
+                "kr": "'먹고나서'처럼 붙여 쓰거나 완료되지 않은 동작에 사용하는 오류에 주의해야 하며, 뒤 절에는 주로 과거나 현재 시제가 자연스럽게 온다.",
+                "jp": "「먹고나서」のように続けて書いたり、完了していない動作に使ったりする間違いに注意しなければならず、後節には主に過去や現在の時制が自然に来る。",
+                "zh": "要注意不要像“먹고나서”那样连写,也不要用于尚未完成的动作;后一分句通常自然使用过去时或现在时。"
+            }
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "밥을 먹고 나서 이를 닦아요.",
+                "en": "After eating, I brush my teeth.",
+                "es": "Después de comer, me cepillo los dientes.",
+                "fr": "Après avoir mangé, je me brosse les dents.",
+                "pt": "Depois de comer, escovo os dentes.",
+                "kr": "밥을 먹고 나서 이를 닦아요.",
+                "jp": "ご飯を食べてから歯を磨きます。",
+                "zh": "吃完饭之后刷牙。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "숙제를 하고 나서 텔레비전을 봤어요.",
+                "en": "After doing my homework, I watched television.",
+                "es": "Después de hacer la tarea, vi la televisión.",
+                "fr": "Après avoir fait mes devoirs, j'ai regardé la télévision.",
+                "pt": "Depois de fazer o trabalho de casa, vi televisão.",
+                "kr": "숙제를 하고 나서 텔레비전을 봤어요.",
+                "jp": "宿題をしてからテレビを見ました。",
+                "zh": "做完作业之后看了电视。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "손을 씻고 나서 요리를 시작해요.",
+                "en": "After washing my hands, I start cooking.",
+                "es": "Después de lavarme las manos, empiezo a cocinar.",
+                "fr": "Après m'être lavé les mains, je commence à cuisiner.",
+                "pt": "Depois de lavar as mãos, começo a cozinhar.",
+                "kr": "손을 씻고 나서 요리를 시작해요.",
+                "jp": "手を洗ってから料理を始めます。",
+                "zh": "洗完手之后开始做饭。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "친구를 만나고 나서 영화관에 갔어요.",
+                "en": "After meeting my friend, I went to the movie theater.",
+                "es": "Después de encontrarme con mi amigo, fui al cine.",
+                "fr": "Après avoir retrouvé mon ami, je suis allé au cinéma.",
+                "pt": "Depois de encontrar o meu amigo, fui ao cinema.",
+                "kr": "친구를 만나고 나서 영화관에 갔어요.",
+                "jp": "友達に会ってから映画館に行きました。",
+                "zh": "见完朋友之后去了电影院。"
+            },
+            "variant": "core_patterns"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "그는 회의를 끝내고 나서 바로 퇴근했어요.",
+                "en": "After finishing the meeting, he left work right away.",
+                "es": "Después de terminar la reunión, se fue del trabajo enseguida.",
+                "fr": "Après avoir terminé la réunion, il est parti du travail tout de suite.",
+                "pt": "Depois de terminar a reunião, ele saiu do trabalho logo em seguida.",
+                "kr": "그는 회의를 끝내고 나서 바로 퇴근했어요.",
+                "jp": "彼は会議を終えてからすぐに退勤しました。",
+                "zh": "他开完会之后马上就下班了。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "비가 그치고 나서 산책을 나갔어요.",
+                "en": "After the rain stopped, I went out for a walk.",
+                "es": "Después de que dejara de llover, salí a pasear.",
+                "fr": "Après que la pluie s'est arrêtée, je suis sorti me promener.",
+                "pt": "Depois de a chuva parar, saí para caminhar.",
+                "kr": "비가 그치고 나서 산책을 나갔어요.",
+                "jp": "雨がやんでから散歩に出ました。",
+                "zh": "雨停之后出去散步了。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "짐을 다 싸고 나서 공항으로 출발했어요.",
+                "en": "After packing all the luggage, I set off for the airport.",
+                "es": "Después de terminar de hacer las maletas, salí hacia el aeropuerto.",
+                "fr": "Après avoir fini de faire les valises, je suis parti pour l'aéroport.",
+                "pt": "Depois de terminar de fazer as malas, parti para o aeroporto.",
+                "kr": "짐을 다 싸고 나서 공항으로 출발했어요.",
+                "jp": "荷物を全部まとめてから空港に向かいました。",
+                "zh": "行李都收拾好之后出发去了机场。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "책을 다 읽고 나서 감상을 적었어요.",
+                "en": "After finishing the book, I wrote down my thoughts.",
+                "es": "Después de terminar de leer el libro, escribí mis impresiones.",
+                "fr": "Après avoir fini de lire le livre, j'ai noté mes impressions.",
+                "pt": "Depois de terminar de ler o livro, escrevi as minhas impressões.",
+                "kr": "책을 다 읽고 나서 감상을 적었어요.",
+                "jp": "本を読み終えてから感想を書きました。",
+                "zh": "看完书之后写下了感想。"
+            },
+            "variant": "variations"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "충분히 고민하고 나서 결정을 내리는 게 좋다.",
+                "en": "It is better to make a decision after thinking it over carefully.",
+                "es": "Es mejor tomar una decisión después de reflexionar bien.",
+                "fr": "Il vaut mieux prendre une décision après avoir bien réfléchi.",
+                "pt": "É melhor tomar uma decisão depois de refletir bem.",
+                "kr": "충분히 고민하고 나서 결정을 내리는 게 좋다.",
+                "jp": "十分に悩んでから決定を下すのがよい。",
+                "zh": "充分考虑之后再做决定比较好。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "문제의 원인을 파악하고 나서 대책을 세워야 한다.",
+                "en": "One must identify the cause of the problem before setting up countermeasures.",
+                "es": "Hay que identificar la causa del problema antes de establecer medidas.",
+                "fr": "Il faut identifier la cause du problème avant d'établir des mesures.",
+                "pt": "É preciso identificar a causa do problema antes de definir medidas.",
+                "kr": "문제의 원인을 파악하고 나서 대책을 세워야 한다.",
+                "jp": "問題の原因を把握してから対策を立てなければならない。",
+                "zh": "要先弄清问题的原因,然后再制定对策。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "계약서를 꼼꼼히 확인하고 나서 서명하는 것이 안전하다.",
+                "en": "It is safer to sign only after carefully checking the contract.",
+                "es": "Es más seguro firmar solo después de revisar minuciosamente el contrato.",
+                "fr": "Il est plus sûr de signer seulement après avoir vérifié le contrat avec soin.",
+                "pt": "É mais seguro assinar apenas depois de verificar cuidadosamente o contrato.",
+                "kr": "계약서를 꼼꼼히 확인하고 나서 서명하는 것이 안전하다.",
+                "jp": "契約書を念入りに確認してから署名するのが安全である。",
+                "zh": "仔细核对合同之后再签名比较安全。"
+            },
+            "variant": "extended_usage"
+        },
+        {
+            "type": "grammar_example",
+            "sentences": {
+                "target": "상황을 정확히 파악하고 나서 판단하는 습관이 중요하다.",
+                "en": "Having the habit of judging only after accurately grasping the situation is important.",
+                "es": "Es importante tener el hábito de juzgar solo después de comprender bien la situación.",
+                "fr": "Il est important d'avoir l'habitude de juger seulement après avoir bien compris la situation.",
+                "pt": "É importante ter o hábito de julgar apenas depois de compreender bem a situação.",
+                "kr": "상황을 정확히 파악하고 나서 판단하는 습관이 중요하다.",
+                "jp": "状況を正確に把握してから判断する習慣が重要である。",
+                "zh": "养成先准确掌握情况再做判断的习惯很重要。"
+            },
+            "variant": "extended_usage"
+        }
+    ]
+}
