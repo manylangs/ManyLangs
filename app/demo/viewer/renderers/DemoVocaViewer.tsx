@@ -46,6 +46,32 @@ function getWordText(entry: WordEntry | string | undefined | null): string {
   return entry.core ?? "";
 }
 
+/** meaning_zone 중 core를 제외한 "비슷한 표현들"만 뽑아낸다.
+ *  meaning_zone[0]은 항상 core와 동일하므로(설계 규칙), core와 다른 나머지만 반환.
+ *  구버전 plain string 데이터(meaning_zone 없음)는 빈 배열 반환. */
+function getMeaningZoneExtras(entry: WordEntry | string | undefined | null): string[] {
+  if (!entry || typeof entry === "string") return [];
+  const zone = entry.meaning_zone ?? [];
+  return zone.filter((z) => z && z !== entry.core);
+}
+
+/* 🔥 "meaning zone"이라는 전문용어 대신, 언어별로 자연스러운 안내 라벨을 붙인다.
+   "이 단어가 문맥에 따라 다르게 표현될 수도 있다"는 걸 학습자가 직관적으로 이해하도록. */
+const SIMILAR_EXPRESSION_LABELS: Record<string, string> = {
+  target: "Also:",
+  en: "Also:",
+  es: "También:",
+  fr: "Aussi :",
+  pt: "Também:",
+  kr: "비슷한 표현:",
+  zh: "同义表达：",
+  jp: "類似表現：",
+};
+
+function getSimilarLabel(lang: string): string {
+  return SIMILAR_EXPRESSION_LABELS[lang] ?? SIMILAR_EXPRESSION_LABELS.en;
+}
+
 
 /* 🔥 RealViewer 기준 스타일 */
 const containerStyle: React.CSSProperties = {
@@ -372,8 +398,15 @@ export default function DemoVocaViewer({
           /* 🔥 word.<lang>이 이제 { core, meaning_zone } 객체이므로
              getWordText로 core만 안전하게 뽑아 표시용 문자열로 사용한다.
              (구버전 plain string 데이터가 남아있어도 하위호환으로 동작) */
-          const word = getWordText(block.word?.[TARGET_KEY]);
-          const wordStudy = getWordText(block.word?.[studyLang]);
+          const targetEntry = block.word?.[TARGET_KEY];
+          const studyEntry = block.word?.[studyLang];
+          const word = getWordText(targetEntry);
+          const wordStudy = getWordText(studyEntry);
+
+          // meaning_zone의 나머지 표현(core 제외) — 원문/학습언어 양쪽 다 병기해서
+          // 하나의 개념이 문맥에 따라 다르게 표현될 수 있음을 학습자가 알 수 있게 한다.
+          const wordExtras = getMeaningZoneExtras(targetEntry);
+          const wordStudyExtras = getMeaningZoneExtras(studyEntry);
 
           return (
             <div key={block.id ?? idx} style={{ marginBottom: 40 }}>
@@ -394,11 +427,34 @@ export default function DemoVocaViewer({
                     }}
                   >
                     {word}
+                    {wordExtras.length > 0 && (
+                      <span
+                        style={{
+                          fontWeight: 400,
+                          fontSize: 12,
+                          color: "#999",
+                          marginLeft: 8,
+                        }}
+                      >
+                        {getSimilarLabel(TARGET_KEY)} {wordExtras.join(", ")}
+                      </span>
+                    )}
                   </div>
                 )}
                 {wordStudy && (
                   <div style={{ ...sentenceStyle, color: "#666" }}>
                     {wordStudy}
+                    {wordStudyExtras.length > 0 && (
+                      <span
+                        style={{
+                          fontSize: 12,
+                          color: "#aaa",
+                          marginLeft: 8,
+                        }}
+                      >
+                        {getSimilarLabel(studyLang)} {wordStudyExtras.join(", ")}
+                      </span>
+                    )}
                   </div>
                 )}
               </div>
