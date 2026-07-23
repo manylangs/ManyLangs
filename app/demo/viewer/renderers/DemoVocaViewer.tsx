@@ -325,17 +325,55 @@ export default function DemoVocaViewer({
                 Copy link
               </button>
 
-              <Link href="/app">
-                <button
+              <div
+                style={{
+                  display: "flex",
+                  gap: 8,
+                  flex: 1,
+                  minWidth: 220,
+                }}
+              >
+                <Link
+                  href="/login"
                   style={{
-                    ...buttonStyle(false),
-                    background: "#111",
-                    color: "#fff",
+                    flex: 1,
+                    textDecoration: "none",
                   }}
                 >
-                  Unlock Full Access
-                </button>
-              </Link>
+                  <button
+                    type="button"
+                    style={{
+                      ...buttonStyle(false),
+                      width: "100%",
+                      border: "1px solid #ddd",
+                      background: "#fff",
+                      color: "#111",
+                    }}
+                  >
+                    Sign In
+                  </button>
+                </Link>
+
+                <Link
+                  href="/signup"
+                  style={{
+                    flex: 1,
+                    textDecoration: "none",
+                  }}
+                >
+                  <button
+                    type="button"
+                    style={{
+                      ...buttonStyle(false),
+                      width: "100%",
+                      background: "#111",
+                      color: "#fff",
+                    }}
+                  >
+                    Create Account
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
 
