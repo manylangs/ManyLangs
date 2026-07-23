@@ -61,13 +61,11 @@ export default function DemoClient({ lang }: { lang: string }) {
 
                     {/* 🔥 2줄: Back / Copy link */}
                     <div style={secondaryRow}>
-                        <button
-                            type="button"
-                            onClick={() => router.back()}
-                            style={btnBack}
-                        >
-                            ← Back
-                        </button>
+                        <Link href="/" style={{ textDecoration: "none" }}>
+                            <button type="button" style={btnBack}>
+                                ← Back
+                            </button>
+                        </Link>
 
                         <button
                             type="button"
