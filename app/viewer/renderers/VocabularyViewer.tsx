@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import VocaAudioController from "@/components/audio/controllers/VocaAudioController";
@@ -113,24 +113,6 @@ export default function VocabularyViewer({
     } finally {
       setPlayingKey((prev) => (prev === currentKey ? null : prev));
     }
-  };
-
-  /* 🔥 앱(모바일 웹뷰)에서 onClick만으로는 탭이 씹히는 경우가 있어
-     클릭/터치 모두 동일하게 반응하도록 공용 핸들러로 통일.
-     같은 탭에서 onClick과 onTouchEnd가 중복 실행되지 않도록 방지 처리. */
-  const lastFiredRef = useRef(0);
-  const makeSpeakTrigger = (text: string, key: string) => {
-    const fire = (e?: { preventDefault?: () => void }) => {
-      const now = Date.now();
-      if (now - lastFiredRef.current < 400) return; // 중복 방지 (touch → click 합성 이벤트)
-      lastFiredRef.current = now;
-      e?.preventDefault?.();
-      void handleSpeak(text, key);
-    };
-    return {
-      onClick: () => fire(),
-      onTouchEnd: (e: React.TouchEvent) => fire(e),
-    };
   };
   useEffect(() => {
 
@@ -325,15 +307,11 @@ export default function VocabularyViewer({
 
                     {showTargetText && targetText && (
                       <div
-                        {...makeSpeakTrigger(targetText, key)}
-                        role="button"
-                        tabIndex={0}
+                        onClick={() => void handleSpeak(targetText, key)}
                         style={{
                           ...targetStyle,
                           fontSize: 22,
                           fontWeight: 700,
-                          touchAction: "manipulation",
-                          WebkitTapHighlightColor: "transparent",
                           background:
                             playingKey === key ? "#f3f4f6" : "transparent",
                         }}
@@ -385,16 +363,14 @@ export default function VocabularyViewer({
 
                         {showTargetText && block.explanation?.target && (
                           <div
-                            {...makeSpeakTrigger(
-                              block.explanation?.target ?? "",
-                              `expl-${idx}`
-                            )}
-                            role="button"
-                            tabIndex={0}
+                            onClick={() =>
+                              void handleSpeak(
+                                block.explanation?.target ?? "",
+                                `expl-${idx}`
+                              )
+                            }
                             style={{
                               ...targetStyle,
-                              touchAction: "manipulation",
-                              WebkitTapHighlightColor: "transparent",
                               background:
                                 playingKey === `expl-${idx}`
                                   ? "#f3f4f6"
@@ -434,13 +410,9 @@ export default function VocabularyViewer({
                           >
                             {showTargetText && exTarget && (
                               <div
-                                {...makeSpeakTrigger(exTarget, exKey)}
-                                role="button"
-                                tabIndex={0}
+                                onClick={() => void handleSpeak(exTarget, exKey)}
                                 style={{
                                   ...targetStyle,
-                                  touchAction: "manipulation",
-                                  WebkitTapHighlightColor: "transparent",
                                   background:
                                     playingKey === exKey
                                       ? "#f3f4f6"
