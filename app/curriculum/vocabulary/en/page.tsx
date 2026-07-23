@@ -16,7 +16,7 @@ const LEVELS = [
       pt: "Substantivos do cotidiano",
       zh: "日常名词",
       jp: "日常名詞",
-      ko: "일상 명사",
+      kr: "일상 명사",
     },
   },
   {
@@ -29,7 +29,7 @@ const LEVELS = [
       pt: "Substantivos do cotidiano e substantivos do cotidiano expandidos",
       zh: "日常名词与扩展日常名词",
       jp: "日常名詞と拡張日常名詞",
-      ko: "일상 명사 및 확장된 일상 명사",
+      kr: "일상 명사 및 확장된 일상 명사",
     },
   },
   {
@@ -42,7 +42,7 @@ const LEVELS = [
       pt: "Substantivos do cotidiano expandidos e substantivos relacionados à sociedade, educação e tecnologia",
       zh: "扩展日常名词与社会、教育、科技名词",
       jp: "拡張日常名詞と社会・教育・技術関連名詞",
-      ko: "확장된 일상 명사 및 사회, 교육, 기술 관련 명사",
+      kr: "확장된 일상 명사 및 사회, 교육, 기술 관련 명사",
     },
   },
   {
@@ -55,7 +55,7 @@ const LEVELS = [
       pt: "Substantivos relacionados à sociedade, educação e tecnologia e substantivos abstratos, políticos e relacionados ao futuro",
       zh: "社会、教育、科技名词与抽象、政策及未来相关名词",
       jp: "社会・教育・技術関連名詞と抽象・政策・未来関連名詞",
-      ko: "사회, 교육, 기술 관련 명사 및 추상적, 정책적, 미래 관련 명사",
+      kr: "사회, 교육, 기술 관련 명사 및 추상적, 정책적, 미래 관련 명사",
     },
   },
   {
@@ -68,7 +68,7 @@ const LEVELS = [
       pt: "Substantivos abstratos, políticos e relacionados ao futuro",
       zh: "抽象、政策及未来相关名词",
       jp: "抽象・政策・未来関連名詞",
-      ko: "추상적, 정책적, 미래 관련 명사",
+      kr: "추상적, 정책적, 미래 관련 명사",
     },
   },
   {
@@ -81,7 +81,7 @@ const LEVELS = [
       pt: "Substantivos acadêmicos e substantivos avançados",
       zh: "学术名词与高级名词",
       jp: "学術名詞・上級名詞",
-      ko: "학술 명사 및 고급 명사",
+      kr: "학술 명사 및 고급 명사",
     },
   },
 ];
@@ -102,28 +102,40 @@ export default function Page() {
       <div style={container}>
 
         {/* HEADER */}
-        <div style={{ ...headerRow, position: "relative", zIndex: 10 }}>
-          <button
-            type="button"
-            onClick={() => { window.location.href = "/curriculum"; }}
-            style={btnBack}
-          >
-            ← Back
-          </button>
+        <div style={headerWrap}>
+          {/* 1줄: Sign In / Create Account — 좌우 꽉 채움 */}
+          <div style={authRow}>
+            <Link href="/login" style={linkReset}>
+              <button type="button" style={{ ...btnBack, width: "100%" }}>
+                Sign In
+              </button>
+            </Link>
 
-          <div style={headerActions}>
+            <Link href="/signup" style={linkReset}>
+              <button type="button" style={{ ...btnHeaderPrimary, width: "100%" }}>
+                Create Account
+              </button>
+            </Link>
+          </div>
+
+          {/* 2줄: Back / Copy link / Unlock Full Access */}
+          <div style={secondaryRow}>
             <button
               type="button"
-              onClick={handleCopy}
-              style={btnSecondary}
+              onClick={() => { window.location.href = "/curriculum"; }}
+              style={btnBack}
             >
+              ← Back
+            </button>
+
+            <button type="button" onClick={handleCopy} style={btnSecondary}>
               Copy link
             </button>
 
             <button
               type="button"
               onClick={() => { window.location.href = "/app"; }}
-              style={btnHeaderPrimary}
+              style={{ ...btnHeaderPrimary, marginLeft: "auto" }}
             >
               Unlock Full Access
             </button>
@@ -162,7 +174,7 @@ export default function Page() {
                 </span>
                 <br />                                    {/* ← 이 줄 추가 */}
                 <span style={{ fontSize: 12, opacity: 0.6 }}>
-                  {lv.desc.ko}
+                  {lv.desc.kr}
                 </span>
                 <br />   
                 <span style={{ fontSize: 12, opacity: 0.6 }}>
@@ -213,19 +225,6 @@ const container: React.CSSProperties = {
   padding: "20px 16px 60px",
 };
 
-const headerRow: React.CSSProperties = {
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  marginBottom: 20,
-  paddingTop: "calc(env(safe-area-inset-top) + 8px)",
-};
-
-const headerActions: React.CSSProperties = {
-  display: "flex",
-  gap: 10,
-};
-
 const baseBtn: React.CSSProperties = {
   height: 32,
   padding: "0 10px",
@@ -262,6 +261,29 @@ const btnHeaderPrimary: React.CSSProperties = {
   cursor: "pointer",
 };
 
+/* 헤더 전체 래퍼 */
+const headerWrap: React.CSSProperties = {
+  display: "flex",
+  flexDirection: "column",
+  gap: 10,
+  marginBottom: 20,
+  paddingTop: "calc(env(safe-area-inset-top) + 8px)",
+};
+
+/* 1줄: Sign In / Create Account — 좌우 꽉 채움, 같은 너비 */
+const authRow: React.CSSProperties = {
+  display: "flex",
+  gap: 8,
+  width: "100%",
+};
+
+/* 2줄: Back / Copy link / Unlock Full Access */
+const secondaryRow: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  gap: 8,
+  flexWrap: "wrap",
+};
 
 const title: React.CSSProperties = {
   fontSize: 24,

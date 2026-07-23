@@ -178,33 +178,46 @@ export default function Page() {
       setTimeout(() => setCopied(false), 2000);
     });
   };
+
   return (
     <main style={main}>
       <div style={container}>
 
         {/* HEADER */}
-        <div style={{ ...headerRow, position: "relative", zIndex: 10 }}>
-          <button
-            type="button"
-            onClick={() => { window.location.href = "/curriculum"; }}
-            style={btnBack}
-          >
-            ← Back
-          </button>
+        <div style={headerWrap}>
+          {/* 1줄: Sign In / Create Account — 좌우 꽉 채움 */}
+          <div style={authRow}>
+            <Link href="/login" style={linkReset}>
+              <button type="button" style={{ ...btnBack, width: "100%" }}>
+                Sign In
+              </button>
+            </Link>
 
-          <div style={headerActions}>
+            <Link href="/signup" style={linkReset}>
+              <button type="button" style={{ ...btnHeaderPrimary, width: "100%" }}>
+                Create Account
+              </button>
+            </Link>
+          </div>
+
+          {/* 2줄: Back / Copy link / Unlock Full Access */}
+          <div style={secondaryRow}>
             <button
               type="button"
-              onClick={handleCopy}
-              style={btnSecondary}
+              onClick={() => { window.location.href = "/curriculum"; }}
+              style={btnBack}
             >
+              ← Back
+            </button>
+
+            <button type="button" onClick={handleCopy} style={btnSecondary}>
               Copy link
             </button>
 
             <button
               type="button"
               onClick={() => { window.location.href = "/app"; }}
-              style={btnHeaderPrimary}
+              style={{ ...btnHeaderPrimary, marginLeft: "auto" }}
             >
               Unlock Full Access
             </button>
@@ -218,29 +231,31 @@ export default function Page() {
         </p>
 
         {/* LIST (반복문 1개만 사용, 로직 없음) */}
-        {CHAPTERS.map((c) => (
-          <div key={`${c.level}-${c.id}`} style={card}>
-            <div style={left}>
-              <div style={numStyle}>{c.id}</div>
-            </div>
+        <div style={listWrap}>
+          {CHAPTERS.map((c) => (
+            <div key={`${c.level}-${c.id}`} style={card}>
+              <div style={left}>
+                <div style={numStyle}>{c.id}</div>
+              </div>
 
-            <div style={right}>
-              <div style={levelBadge}>{c.level}</div>
-              <div style={chapterTitle}>
-                <div>{c.title.en}</div>
-                <div style={{ fontSize: 12, opacity: 0.7 }}>
+              <div style={right}>
+                <div style={levelBadge}>{c.level}</div>
+                <div style={chapterTitle}>
                   <div>{c.title.en}</div>
-                  <div>{c.title.es}</div>
-                  <div>{c.title.fr}</div>
-                  <div>{c.title.pt}</div>
-                  <div>{c.title.ko}</div>
-                  <div>{c.title.zh}</div>
-                  <div>{c.title.jp}</div>
+                  <div style={{ fontSize: 12, opacity: 0.7 }}>
+                    <div>{c.title.en}</div>
+                    <div>{c.title.es}</div>
+                    <div>{c.title.fr}</div>
+                    <div>{c.title.pt}</div>
+                    <div>{c.title.ko}</div>
+                    <div>{c.title.zh}</div>
+                    <div>{c.title.jp}</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
 
       </div>
       {copied && (
@@ -276,18 +291,6 @@ const container: React.CSSProperties = {
   maxWidth: 720,
   margin: "0 auto",
   padding: "20px 16px 60px",
-};
-const headerRow: React.CSSProperties = {
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  marginBottom: 20,
-  paddingTop: "calc(env(safe-area-inset-top) + 8px)",
-};
-
-const headerActions: React.CSSProperties = {
-  display: "flex",
-  gap: 10,
 };
 
 const baseBtn: React.CSSProperties = {
@@ -326,10 +329,42 @@ const btnHeaderPrimary: React.CSSProperties = {
   cursor: "pointer",
 };
 
+/* 헤더 전체 래퍼 */
+const headerWrap: React.CSSProperties = {
+  display: "flex",
+  flexDirection: "column",
+  gap: 10,
+  marginBottom: 20,
+  paddingTop: "calc(env(safe-area-inset-top) + 8px)",
+};
+
+/* 1줄: Sign In / Create Account — 좌우 꽉 채움, 같은 너비 */
+const authRow: React.CSSProperties = {
+  display: "flex",
+  gap: 8,
+  width: "100%",
+};
+
+/* 2줄: Back / Copy link / Unlock Full Access */
+const secondaryRow: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  gap: 8,
+  flexWrap: "wrap",
+};
+
 const title: React.CSSProperties = {
   fontSize: 24,
   fontWeight: 800,
-  marginBottom: 20,
+  marginBottom: 6,
+};
+
+const descStrong: React.CSSProperties = {
+  fontSize: 15,
+  fontWeight: 600,
+  color: "#111",
+  marginBottom: 24,
+  lineHeight: 1.6,
 };
 
 const listWrap: React.CSSProperties = {
@@ -371,11 +406,4 @@ const chapterTitle: React.CSSProperties = {
 
 const linkReset: React.CSSProperties = {
   textDecoration: "none",
-};
-const descStrong: React.CSSProperties = {
-  fontSize: 15,
-  fontWeight: 600,
-  color: "#111",
-  marginBottom: 24,
-  lineHeight: 1.6,
 };

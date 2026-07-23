@@ -100,30 +100,35 @@ export default function Page() {
     <main style={main}>
       <div style={container}>
 
-        <div style={{ ...headerRow, position: "relative", zIndex: 10 }}>
-          <button
-            type="button"
-            onClick={() => { window.location.href = "/curriculum"; }}
-            style={btnBack}
-          >
-            ← Back
-          </button>
+        {/* HEADER */}
+        <div style={headerWrap}>
+          {/* 🔥 1줄: Sign In / Create Account — 좌우 꽉 채움 */}
+          <div style={authRow}>
+            <Link href="/login" style={linkReset}>
+              <button type="button" style={{ ...btnBack, width: "100%" }}>
+                Sign In
+              </button>
+            </Link>
 
-          <div style={headerActions}>
+            <Link href="/signup" style={linkReset}>
+              <button type="button" style={{ ...btnHeaderPrimary, width: "100%" }}>
+                Create Account
+              </button>
+            </Link>
+          </div>
+
+          {/* 🔥 2줄: Back / Copy link */}
+          <div style={secondaryRow}>
             <button
               type="button"
-              onClick={handleCopy}
-              style={btnSecondary}
+              onClick={() => { window.location.href = "/curriculum"; }}
+              style={btnBack}
             >
-              Copy link
+              ← Back
             </button>
 
-            <button
-              type="button"
-              onClick={() => { window.location.href = "/app"; }}
-              style={btnHeaderPrimary}
-            >
-              Unlock Full Access
+            <button type="button" onClick={handleCopy} style={btnSecondary}>
+              Copy link
             </button>
           </div>
         </div>
@@ -214,19 +219,6 @@ const container: React.CSSProperties = {
   padding: "20px 16px 60px",
 };
 
-const headerRow: React.CSSProperties = {
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  marginBottom: 20,
-  paddingTop: "calc(env(safe-area-inset-top) + 8px)",
-};
-
-const headerActions: React.CSSProperties = {
-  display: "flex",
-  gap: 10,
-};
-
 const baseBtn: React.CSSProperties = {
   height: 32,
   padding: "0 10px",
@@ -261,6 +253,29 @@ const btnHeaderPrimary: React.CSSProperties = {
   border: "none",
   fontWeight: 600,
   cursor: "pointer",
+};
+
+/* 🔥 헤더 전체 래퍼 */
+const headerWrap: React.CSSProperties = {
+  display: "flex",
+  flexDirection: "column",
+  gap: 10,
+  marginBottom: 20,
+  paddingTop: "calc(env(safe-area-inset-top) + 8px)",
+};
+
+/* 🔥 1줄: Sign In / Create Account — 좌우 꽉 채움, 같은 너비 */
+const authRow: React.CSSProperties = {
+  display: "flex",
+  gap: 8,
+  width: "100%",
+};
+
+/* 🔥 2줄: Back / Copy link */
+const secondaryRow: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  gap: 8,
 };
 
 const title: React.CSSProperties = {

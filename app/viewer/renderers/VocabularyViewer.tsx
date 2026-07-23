@@ -33,12 +33,56 @@ const buttonStyle = (active: boolean): React.CSSProperties => ({
   border: "none",
   cursor: "pointer",
 });
+
+/* 🔥 현재 runtime 스키마: word.<lang> = { core, meaning_zone } 객체.
+   (예전 뷰어는 word.<lang>이 plain string이라고 가정했었음 — 스키마 변경으로 깨짐) */
+type WordEntry = {
+  core: string;
+  meaning_zone?: string[];
+};
+
 type VocaBlock = {
-  word: Record<string, string>;
+  word: Record<string, WordEntry | string>;
   explanation?: Record<string, string>;
   examples?: Record<string, string>[];
   frequency_stars?: string;
 };
+
+/** word.<lang> 값에서 표시용 단어 텍스트(core)를 안전하게 추출.
+ *  - 정상 케이스: { core: "go", meaning_zone: [...] } → "go"
+ *  - 혹시 남아있을 구버전 plain string 데이터도 방어적으로 지원(하위호환) */
+function getWordText(entry: WordEntry | string | undefined | null): string {
+  if (!entry) return "";
+  if (typeof entry === "string") return entry;
+  return entry.core ?? "";
+}
+
+/** meaning_zone 중 core를 제외한 "비슷한 표현들"만 뽑아낸다.
+ *  meaning_zone[0]은 항상 core와 동일하므로(설계 규칙), core와 다른 나머지만 반환.
+ *  구버전 plain string 데이터(meaning_zone 없음)는 빈 배열 반환. */
+function getMeaningZoneExtras(entry: WordEntry | string | undefined | null): string[] {
+  if (!entry || typeof entry === "string") return [];
+  const zone = entry.meaning_zone ?? [];
+  return zone.filter((z) => z && z !== entry.core);
+}
+
+/* 🔥 "meaning zone"이라는 전문용어 대신, 언어별로 자연스러운 안내 라벨을 붙인다.
+   "이 단어가 문맥에 따라 다르게 표현될 수도 있다"는 걸 학습자가 직관적으로 이해하도록. */
+const SIMILAR_EXPRESSION_LABELS: Record<string, string> = {
+  target: "Also:",
+  en: "Also:",
+  es: "También:",
+  fr: "Aussi :",
+  pt: "Também:",
+  kr: "비슷한 표현:",
+  zh: "同义表达：",
+  jp: "類似表現：",
+};
+
+function getSimilarLabel(lang: string): string {
+  return SIMILAR_EXPRESSION_LABELS[lang] ?? SIMILAR_EXPRESSION_LABELS.en;
+}
+
 export default function VocabularyViewer({
   lang,
   level,
@@ -246,8 +290,14 @@ export default function VocabularyViewer({
             <section key={idx} style={{ marginBottom: 56 }}>
               {(() => {
                 const key = `word-${idx}`;
-                const targetText = block.word?.target ?? "";
-                const studyText = block.word?.[studyLang] ?? "";
+                const targetEntry = block.word?.target;
+                const studyEntry = block.word?.[studyLang];
+
+                const targetText = getWordText(targetEntry);
+                const studyText = getWordText(studyEntry);
+
+                const targetExtras = getMeaningZoneExtras(targetEntry);
+                const studyExtras = getMeaningZoneExtras(studyEntry);
 
                 return (
                   <>
@@ -267,12 +317,35 @@ export default function VocabularyViewer({
                         }}
                       >
                         {targetText}
+                        {targetExtras.length > 0 && (
+                          <span
+                            style={{
+                              fontWeight: 400,
+                              fontSize: 12,
+                              color: "#999",
+                              marginLeft: 8,
+                            }}
+                          >
+                            {getSimilarLabel("target")} {targetExtras.join(", ")}
+                          </span>
+                        )}
                       </div>
                     )}
 
                     {studyText && (
                       <div style={{ color: "#555" }}>
                         {studyText}
+                        {studyExtras.length > 0 && (
+                          <span
+                            style={{
+                              fontSize: 12,
+                              color: "#aaa",
+                              marginLeft: 8,
+                            }}
+                          >
+                            {getSimilarLabel(studyLang)} {studyExtras.join(", ")}
+                          </span>
+                        )}
                       </div>
                     )}
 

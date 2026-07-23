@@ -11,7 +11,7 @@ const CHAPTERS = [
   { id: "003", level: "A1", title: { kr: "있다 / 없다", en: "To Have / To Not Have (있다 / 없다)", es: "Tener / No tener (있다 / 없다)", fr: "Avoir / Ne pas avoir (있다 / 없다)", pt: "Ter / Não ter (있다 / 없다)", zh: "有 / 没有 (있다 / 없다)", jp: "ある / ない（있다 / 없다）" } },
   { id: "004", level: "A1", title: { kr: "이/가", en: "Subject Marker 이/가", es: "Partícula de sujeto 이/가", fr: "Particule du sujet 이/가", pt: "Partícula de sujeito 이/가", zh: "主格助词 이/가", jp: "主格助詞 이/가" } },
   { id: "005", level: "A1", title: { kr: "은/는", en: "Topic Marker 은/는", es: "Partícula temática 은/는", fr: "Particule thématique 은/는", pt: "Partícula temática 은/는", zh: "主题助词 은/는", jp: "主題助詞 은/는" } },
-  { id: "006", level: "A1", title: { kr: "을/를", en: "Object Marker 을/를", es: "Partícula de objeto 을/를", fr: "Particule d’objet 을/를", pt: "Partícula de objeto 을/를", zh: "宾格助词 을/를", jp: "目的格助詞 을/를" } },
+  { id: "006", level: "A1", title: { kr: "을/를", en: "Object Marker 을/를", es: "Partícula de objeto 을/를", fr: "Particule d'objet 을/를", pt: "Partícula de objeto 을/를", zh: "宾格助词 을/를", jp: "目的格助詞 을/를" } },
   { id: "007", level: "A1", title: { kr: "에", en: "Location Particle 에", es: "Partícula de ubicación 에", fr: "Particule de lieu 에", pt: "Partícula de localização 에", zh: "位置助词 에", jp: "場所の助詞 에" } },
   { id: "008", level: "A1", title: { kr: "에서", en: "Location Particle 에서", es: "Partícula de ubicación 에서", fr: "Particule de lieu 에서", pt: "Partícula de localização 에서", zh: "位置助词 에서", jp: "場所の助詞 에서" } },
   { id: "009", level: "A1", title: { kr: "-(으)로", en: "Direction Particle -(으)로", es: "Partícula de dirección -(으)로", fr: "Particule de direction -(으)로", pt: "Partícula de direção -(으)로", zh: "方向助词 -(으)로", jp: "方向の助詞 -(으)로" } },
@@ -237,31 +237,35 @@ export default function Page() {
     <main style={main}>
       <div style={container}>
 
-        {/* HEADER */}
-        <div style={{ ...headerRow, position: "relative", zIndex: 10 }}>
-          <button
-            type="button"
-            onClick={() => { window.location.href = "/curriculum"; }}
-            style={btnBack}
-          >
-            ← Back
-          </button>
+        {/* HEADER (conversation curriculum 헤더 이식) */}
+        <div style={headerWrap}>
+          {/* 1줄: Sign In / Create Account — 좌우 꽉 채움 */}
+          <div style={authRow}>
+            <Link href="/login" style={linkReset}>
+              <button type="button" style={{ ...btnBack, width: "100%" }}>
+                Sign In
+              </button>
+            </Link>
 
-          <div style={headerActions}>
+            <Link href="/signup" style={linkReset}>
+              <button type="button" style={{ ...btnHeaderPrimary, width: "100%" }}>
+                Create Account
+              </button>
+            </Link>
+          </div>
+
+          {/* 2줄: Back / Copy link */}
+          <div style={secondaryRow}>
             <button
               type="button"
-              onClick={handleCopy}
-              style={btnSecondary}
+              onClick={() => { window.location.href = "/curriculum"; }}
+              style={btnBack}
             >
-              Copy link
+              ← Back
             </button>
 
-            <button
-              type="button"
-              onClick={() => { window.location.href = "/app"; }}
-              style={btnHeaderPrimary}
-            >
-              Unlock Full Access
+            <button type="button" onClick={handleCopy} style={btnSecondary}>
+              Copy link
             </button>
           </div>
         </div>
@@ -332,18 +336,6 @@ const container: React.CSSProperties = {
   margin: "0 auto",
   padding: "20px 16px 60px",
 };
-const headerRow: React.CSSProperties = {
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  marginBottom: 20,
-  paddingTop: "calc(env(safe-area-inset-top) + 8px)",
-};
-
-const headerActions: React.CSSProperties = {
-  display: "flex",
-  gap: 10,
-};
 
 const baseBtn: React.CSSProperties = {
   height: 32,
@@ -379,6 +371,29 @@ const btnHeaderPrimary: React.CSSProperties = {
   border: "none",
   fontWeight: 600,
   cursor: "pointer",
+};
+
+/* 헤더 전체 래퍼 (conversation curriculum과 동일) */
+const headerWrap: React.CSSProperties = {
+  display: "flex",
+  flexDirection: "column",
+  gap: 10,
+  marginBottom: 20,
+  paddingTop: "calc(env(safe-area-inset-top) + 8px)",
+};
+
+/* 1줄: Sign In / Create Account — 좌우 꽉 채움, 같은 너비 */
+const authRow: React.CSSProperties = {
+  display: "flex",
+  gap: 8,
+  width: "100%",
+};
+
+/* 2줄: Back / Copy link */
+const secondaryRow: React.CSSProperties = {
+  display: "flex",
+  alignItems: "center",
+  gap: 8,
 };
 
 const title: React.CSSProperties = {
