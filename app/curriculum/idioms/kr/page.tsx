@@ -105,20 +105,20 @@ export default function Page() {
         <div style={headerWrap}>
           {/* 1줄: Sign In / Create Account — 좌우 꽉 채움 */}
           <div style={authRow}>
-            <Link href="/login" style={linkReset}>
+            <Link href="/login" style={{ flex: 1, textDecoration: "none" }}>
               <button type="button" style={{ ...btnBack, width: "100%" }}>
                 Sign In
               </button>
             </Link>
 
-            <Link href="/signup" style={linkReset}>
+            <Link href="/signup" style={{ flex: 1, textDecoration: "none" }}>
               <button type="button" style={{ ...btnHeaderPrimary, width: "100%" }}>
                 Create Account
               </button>
             </Link>
           </div>
 
-          {/* 2줄: Back / Copy link / Unlock Full Access */}
+          {/* 2줄: Back / Copy link */}
           <div style={secondaryRow}>
             <button
               type="button"
@@ -130,14 +130,6 @@ export default function Page() {
 
             <button type="button" onClick={handleCopy} style={btnSecondary}>
               Copy link
-            </button>
-
-            <button
-              type="button"
-              onClick={() => { window.location.href = "/app"; }}
-              style={{ ...btnHeaderPrimary, marginLeft: "auto" }}
-            >
-              Unlock Full Access
             </button>
           </div>
         </div>
@@ -264,7 +256,7 @@ const authRow: React.CSSProperties = {
   width: "100%",
 };
 
-/* 2줄: Back / Copy link / Unlock Full Access */
+/* 2줄: Back / Copy link */
 const secondaryRow: React.CSSProperties = {
   display: "flex",
   alignItems: "center",

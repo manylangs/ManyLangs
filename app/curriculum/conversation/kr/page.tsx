@@ -104,13 +104,13 @@ export default function Page() {
         <div style={headerWrap}>
           {/* 🔥 1줄: Sign In / Create Account — 좌우 꽉 채움 */}
           <div style={authRow}>
-            <Link href="/login" style={linkReset}>
+            <Link href="/login" style={{ flex: 1, textDecoration: "none" }}>
               <button type="button" style={{ ...btnBack, width: "100%" }}>
                 Sign In
               </button>
             </Link>
 
-            <Link href="/signup" style={linkReset}>
+            <Link href="/signup" style={{ flex: 1, textDecoration: "none" }}>
               <button type="button" style={{ ...btnHeaderPrimary, width: "100%" }}>
                 Create Account
               </button>

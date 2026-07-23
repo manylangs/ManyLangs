@@ -222,6 +222,7 @@ const CHAPTERS = [
   { id: "034", level: "C2", title: { kr: "~에 따라", en: "According to / Depending on ~", es: "Según / Dependiendo de ~", fr: "Selon / En fonction de ~", pt: "De acordo com / Dependendo de ~", zh: "根据 / 取决于~", jp: "~によって / ~次第で" } },
   { id: "035", level: "C2", title: { kr: "비록 ~일지라도 / 설령 ~일지라도", en: "Even Though / Even If ~", es: "Aunque / Incluso si ~", fr: "Même si ~", pt: "Mesmo que ~", zh: "即使~", jp: "たとえ~であっても" } },
 ];
+
 /* ================= 페이지 ================= */
 
 export default function Page() {
@@ -241,13 +242,13 @@ export default function Page() {
         <div style={headerWrap}>
           {/* 1줄: Sign In / Create Account — 좌우 꽉 채움 */}
           <div style={authRow}>
-            <Link href="/login" style={linkReset}>
+            <Link href="/login" style={{ flex: 1, textDecoration: "none" }}>
               <button type="button" style={{ ...btnBack, width: "100%" }}>
                 Sign In
               </button>
             </Link>
 
-            <Link href="/signup" style={linkReset}>
+            <Link href="/signup" style={{ flex: 1, textDecoration: "none" }}>
               <button type="button" style={{ ...btnHeaderPrimary, width: "100%" }}>
                 Create Account
               </button>
