@@ -1,7 +1,7 @@
 "use client";
 
 import { speakText } from "@/utils/tts";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import VocaAudioController from "@/components/audio/controllers/VocaAudioController";
 import { SUPPORTED_LANGS } from "@/app/config/languages";
@@ -184,6 +184,25 @@ const guideTexts: Record<string, string[]> = {
       setPlayingKey((prev) => (prev === currentKey ? null : prev));
     }
   };
+
+  /* 🔥 앱(모바일 웹뷰)에서 onClick만으로는 탭이 씹히는 경우가 있어
+     클릭/터치 모두 동일하게 반응하도록 공용 핸들러로 통일.
+     같은 탭에서 onClick과 onTouchEnd가 중복 실행되지 않도록 방지 처리. */
+  const lastFiredRef = useRef(0);
+  const makeSpeakTrigger = (text: string, key: string) => {
+    const fire = (e?: { preventDefault?: () => void }) => {
+      const now = Date.now();
+      if (now - lastFiredRef.current < 400) return; // 중복 방지 (touch → click 합성 이벤트)
+      lastFiredRef.current = now;
+      e?.preventDefault?.();
+      void handleSpeak(text, key);
+    };
+    return {
+      onClick: () => fire(),
+      onTouchEnd: (e: React.TouchEvent) => fire(e),
+    };
+  };
+
   useEffect(() => {
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
@@ -425,11 +444,15 @@ const guideTexts: Record<string, string[]> = {
               <div style={{ marginBottom: 12 }}>
                 {showTargetText && word && (
                   <div
-                    onClick={() => void handleSpeak(word, `word-${idx}`)}
+                    {...makeSpeakTrigger(word, `word-${idx}`)}
+                    role="button"
+                    tabIndex={0}
                     style={{
                       ...sentenceStyle,
                       fontWeight: 700,
                       cursor: "pointer",
+                      touchAction: "manipulation",
+                      WebkitTapHighlightColor: "transparent",
                       background: playingKey === `word-${idx}` ? "#f3f4f6" : undefined,
                     }}
                   >
@@ -470,17 +493,22 @@ const guideTexts: Record<string, string[]> = {
               {block.examples?.map((ex, i) => {
                 const t = ex[TARGET_KEY] ?? "";
                 const s = ex[studyLang] ?? "";
+                const exKey = `ex-${idx}-${i}`;
 
                 return (
                   <div key={i} style={{ marginBottom: 14 }}>
                     {showTargetText && t && (
                       <div
-                        onClick={() => void handleSpeak(t, `ex-${idx}-${i}`)}
+                        {...makeSpeakTrigger(t, exKey)}
+                        role="button"
+                        tabIndex={0}
                         style={{
                           ...sentenceStyle,
                           cursor: "pointer",
+                          touchAction: "manipulation",
+                          WebkitTapHighlightColor: "transparent",
                           background:
-                            playingKey === `ex-${idx}-${i}` ? "#f3f4f6" : undefined,
+                            playingKey === exKey ? "#f3f4f6" : undefined,
                         }}
                       >
                         {t}
