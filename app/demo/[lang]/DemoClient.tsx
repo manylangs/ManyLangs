@@ -44,25 +44,33 @@ export default function DemoClient({ lang }: { lang: string }) {
 
                 {/* HEADER */}
                 <div style={headerActions}>
-                    <button
-                        type="button"
-                        onClick={handleCopy}
-                        style={btnSecondary}
-                    >
-                        Copy link
-                    </button>
-
-                    <Link href="/login" style={{ textDecoration: "none" }}>
+                    <Link href="/demo" style={{ textDecoration: "none" }}>
                         <button type="button" style={btnBack}>
-                            Sign In
+                            ← Back
                         </button>
                     </Link>
 
-                    <Link href="/signup" style={{ textDecoration: "none" }}>
-                        <button type="button" style={btnHeaderPrimary}>
-                            Create Account
+                    <div style={headerRightGroup}>
+                        <button
+                            type="button"
+                            onClick={handleCopy}
+                            style={btnSecondary}
+                        >
+                            Copy link
                         </button>
-                    </Link>
+
+                        <Link href="/login" style={{ textDecoration: "none" }}>
+                            <button type="button" style={{ ...btnBack, ...btnAuth }}>
+                                Sign In
+                            </button>
+                        </Link>
+
+                        <Link href="/signup" style={{ textDecoration: "none" }}>
+                            <button type="button" style={{ ...btnHeaderPrimary, ...btnAuth }}>
+                                Create Account
+                            </button>
+                        </Link>
+                    </div>
                 </div>
 
                 {/* INFO */}
@@ -164,14 +172,6 @@ const wrapper: CSSProperties = {
     width: "100%",
     maxWidth: 900,
     padding: "clamp(20px, 4vw, 40px)",
-};
-
-const headerRow: CSSProperties = {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: 20,
-    paddingTop: "calc(env(safe-area-inset-top) + 8px)",
 };
 
 const baseBtn: CSSProperties = {
@@ -277,13 +277,28 @@ const cardHint: CSSProperties = {
     fontSize: 13,
     color: "#111",
     fontWeight: 600,
-}
-const headerActions: CSSProperties = {
-    display: "flex",
-    gap: 8,
-    marginLeft: "auto",
 };
 
+/* 🔥 헤더 전체: Back(왼쪽) + 나머지(오른쪽) */
+const headerActions: CSSProperties = {
+    display: "flex",
+    alignItems: "center",
+    gap: 8,
+    marginBottom: 20,
+    paddingTop: "calc(env(safe-area-inset-top) + 8px)",
+    flexWrap: "wrap",
+};
+
+/* 🔥 Copy link / Sign In / Create Account 그룹 — 오른쪽 정렬 */
+const headerRightGroup: CSSProperties = {
+    display: "flex",
+    alignItems: "center",
+    gap: 8,
+    marginLeft: "auto",
+    flexWrap: "wrap",
+};
+
+/* 🔥 Sign In / Create Account 너비 통일 */
 const btnAuth: CSSProperties = {
     ...baseBtn,
     minWidth: 96,

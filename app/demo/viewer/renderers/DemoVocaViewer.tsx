@@ -110,10 +110,9 @@ export default function DemoVocaViewer({
   const [status, setStatus] = useState<Status>("loading");
   const [playingKey, setPlayingKey] = useState<string | null>(null);
   const TARGET_KEY = "target";
-
-  const guideTexts: Record<string, string[]> = {
+const guideTexts: Record<string, string[]> = {
     en: [
-      "1. To continue to the next chapter, sign up by clicking Unlock Full Access.",
+      "1. To study the next chapter, please create an account and sign in.",
       "2. You can change the study language using the buttons above.",
       "3. You can move to the next set using the <> buttons below the audio.",
       "4. Tap or click a sentence to play only that part.",
@@ -121,7 +120,7 @@ export default function DemoVocaViewer({
       "6. You are currently viewing A1 Chapter 1. You can choose levels A1, A2, B1, B2, C1, and C2.",
     ],
     es: [
-      "1. Para continuar al siguiente capítulo, regístrate haciendo clic en Unlock Full Access.",
+      "1. Para estudiar el siguiente capítulo, crea una cuenta e inicia sesión.",
       "2. Puedes cambiar el idioma de estudio usando los botones de arriba.",
       "3. Puedes moverte al siguiente set usando los botones <> debajo del audio.",
       "4. Toca o haz clic en una frase para reproducir solo esa parte.",
@@ -129,7 +128,7 @@ export default function DemoVocaViewer({
       "6. Actualmente estás viendo A1 Chapter 1. Puedes elegir niveles A1, A2, B1, B2, C1 y C2.",
     ],
     fr: [
-      "1. Pour continuer au chapitre suivant, inscrivez-vous en cliquant sur Unlock Full Access.",
+      "1. Pour étudier le chapitre suivant, créez un compte et connectez-vous.",
       "2. Vous pouvez changer la langue d’étude avec les boutons ci-dessus.",
       "3. Vous pouvez passer au set suivant avec les boutons <> sous l’audio.",
       "4. Appuyez ou cliquez sur une phrase pour lire uniquement cette partie.",
@@ -137,7 +136,7 @@ export default function DemoVocaViewer({
       "6. Vous regardez actuellement A1 Chapter 1. Vous pouvez choisir les niveaux A1, A2, B1, B2, C1 et C2.",
     ],
     pt: [
-      "1. Para continuar para o próximo capítulo, registre-se clicando em Unlock Full Access.",
+      "1. Para estudar o próximo capítulo, crie uma conta e inicie sessão.",
       "2. Pode mudar o idioma de estudo usando os botões acima.",
       "3. Pode ir para o próximo set usando os botões <> abaixo do áudio.",
       "4. Toque ou clique numa frase para reproduzir apenas essa parte.",
@@ -145,7 +144,7 @@ export default function DemoVocaViewer({
       "6. Está a ver A1 Chapter 1. Pode escolher níveis A1, A2, B1, B2, C1 e C2.",
     ],
     kr: [
-      "1. 다음 챕터로 계속하려면 Unlock Full Access를 눌러 가입하세요.",
+      "1. 다음 챕터를 공부하려면 계정을 생성해서 로그인하세요.",
       "2. 위의 버튼으로 학습 언어를 변경할 수 있습니다.",
       "3. 오디오 아래의 <> 버튼으로 다음 세트로 이동할 수 있습니다.",
       "4. 문장을 탭하거나 클릭하면 해당 부분만 재생됩니다.",
@@ -153,7 +152,7 @@ export default function DemoVocaViewer({
       "6. 현재 A1 Chapter 1을 보고 있습니다. A1, A2, B1, B2, C1, 그리고 C2 레벨을 선택할 수 있습니다.",
     ],
     zh: [
-      "1. 点击“解锁完整内容（Unlock Full Access）”并注册，即可继续学习下一章节。",
+      "1. 要学习下一章节，请创建账户并登录。",
       "2. 您可以使用上方按钮切换学习语言。",
       "3. 您可以使用音频下方的 <> 按钮切换到下一组内容。",
       "4. 点击任意句子即可仅播放该句音频。",
@@ -161,16 +160,15 @@ export default function DemoVocaViewer({
       "6. 您当前正在学习 A1 第1章。您可以选择 A1、A2、B1、B2、C1 和 C2 等级。",
     ],
     jp: [
-      "1. 「Unlock Full Access（すべてのコンテンツを解除）」をクリックして登録すると、次のチャプターへ進めます。",
+      "1. 次のチャプターを学習するには、アカウントを作成してログインしてください。",
       "2. 上のボタンから学習言語を変更できます。",
       "3. 音声の下にある <> ボタンで次のセットへ移動できます。",
       "4. 文をタップまたはクリックすると、その文だけを再生できます。",
       "5. 「Toggle」を押すと、学習対象言語を非表示にして翻訳練習ができます。",
       "6. 現在は A1 のチャプター1を学習中です。A1、A2、B1、B2、C1、C2 のレベルを選択できます。",
     ],
-
-
   };
+
   const handleSpeak = async (text: string, key: string) => {
     if (!targetLang) return;
 
@@ -244,7 +242,7 @@ export default function DemoVocaViewer({
 
   return (
     <div style={containerStyle}>
-      {/* ================= HEADER ================= */}
+      {/* ================= HEADER (전체 sticky) ================= */}
       <div
         style={{
           position: "sticky",
@@ -367,32 +365,41 @@ export default function DemoVocaViewer({
               </button>
             ))}
         </div>
-      </div>
 
-      {/* 🔥 AUDIO */}
-      {targetLang && (
-        <div style={{ borderBottom: "1px solid #eee", padding: "6px 16px" }}>
-          <VocaAudioController lang={targetLang} level={level} chapter={chapter} />
+        {/* 🔥 AUDIO — sticky 헤더 안으로 이동 (스크롤해도 고정) */}
+        {targetLang && (
+          <div
+            style={{
+              borderBottom: "1px solid #eee",
+              padding: "6px 16px",
+              marginTop: 12,
+              marginLeft: -16,
+              marginRight: -16,
+            }}
+          >
+            <VocaAudioController lang={targetLang} level={level} chapter={chapter} />
+          </div>
+        )}
+
+        {/* 🔥 GUIDE — sticky 헤더 안으로 이동 (스크롤해도 고정) */}
+        <div
+          style={{
+            fontSize: 13,
+            color: "#666",
+            background: "#fafafa",
+            padding: "12px 14px",
+            borderRadius: 10,
+            border: "1px solid #eee",
+            marginTop: 10,
+            marginLeft: 16,
+            marginRight: 16,
+            marginBottom: 10,
+          }}
+        >
+          {guideTexts[studyLang].map((t, i) => (
+            <div key={i}>{t}</div>
+          ))}
         </div>
-      )}
-
-      {/* 🔥 GUIDE */}
-      <div
-        style={{
-          fontSize: 13,
-          color: "#666",
-          background: "#fafafa",
-          padding: "12px 14px",
-          borderRadius: 10,
-          border: "1px solid #eee",
-          marginTop: 10,
-          marginLeft: 16,
-          marginRight: 16,
-        }}
-      >
-        {guideTexts[studyLang].map((t, i) => (
-          <div key={i}>{t}</div>
-        ))}
       </div>
 
       {/* 🔥 CONTENT */}
