@@ -83,6 +83,16 @@ function getSimilarLabel(lang: string): string {
   return SIMILAR_EXPRESSION_LABELS[lang] ?? SIMILAR_EXPRESSION_LABELS.en;
 }
 
+const disclaimerTexts: Record<string, string> = {
+  kr: "원문의 의미를 자연스럽게 전달하기 위해, 필요한 경우 원문의 표현에 직접 대응하는 단어나 표현을 사용하지 않고 번역한 경우가 있습니다.",
+  en: "To convey the meaning of the original text naturally, some translations may, when necessary, avoid using words or expressions that directly correspond to those in the original.",
+  es: "Para transmitir de forma natural el significado del texto original, en algunos casos se ha optado, cuando ha sido necesario, por no utilizar palabras o expresiones que correspondan directamente a las del original.",
+  pt: "Para transmitir de forma natural o significado do texto original, em alguns casos, quando necessário, a tradução foi feita sem utilizar palavras ou expressões que correspondam diretamente às do original.",
+  fr: "Afin de transmettre naturellement le sens du texte original, certaines traductions ont, lorsque cela était nécessaire, été formulées sans utiliser de mots ou d'expressions correspondant directement à ceux de l'original.",
+  zh: "为了自然地传达原文的含义，在必要的情况下，部分翻译没有使用与原文表达直接对应的词语或说法。",
+  jp: "原文の意味を自然に伝えるため、必要に応じて、原文の表現に直接対応する単語や表現を使わずに翻訳している場合があります。",
+};
+
 export default function VocabularyViewer({
   lang,
   level,
@@ -236,7 +246,21 @@ export default function VocabularyViewer({
                 </button>
               ))}
           </div>
-
+          {disclaimerTexts[studyLang] && (
+            <div
+              style={{
+                fontSize: 13,
+                color: "#666",
+                background: "#fafafa",
+                padding: "10px 12px",
+                borderRadius: 8,
+                border: "1px solid #eee",
+                marginBottom: 16,
+              }}
+            >
+              {disclaimerTexts[studyLang]}
+            </div>
+          )}
           {/* Prev Next */}
 
           <div

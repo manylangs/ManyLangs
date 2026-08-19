@@ -110,7 +110,7 @@ export default function DemoVocaViewer({
   const [status, setStatus] = useState<Status>("loading");
   const [playingKey, setPlayingKey] = useState<string | null>(null);
   const TARGET_KEY = "target";
-const guideTexts: Record<string, string[]> = {
+  const guideTexts: Record<string, string[]> = {
     en: [
       "1. To study the next chapter, please create an account and sign in.",
       "2. You can change the study language using the buttons above.",
@@ -167,6 +167,15 @@ const guideTexts: Record<string, string[]> = {
       "5. 「Toggle」を押すと、学習対象言語を非表示にして翻訳練習ができます。",
       "6. 現在は A1 のチャプター1を学習中です。A1、A2、B1、B2、C1、C2 のレベルを選択できます。",
     ],
+  };
+  const disclaimerTexts: Record<string, string> = {
+    kr: "원문의 의미를 자연스럽게 전달하기 위해, 필요한 경우 원문의 표현에 직접 대응하는 단어나 표현을 사용하지 않고 번역한 경우가 있습니다.",
+    en: "To convey the meaning of the original text naturally, some translations may, when necessary, avoid using words or expressions that directly correspond to those in the original.",
+    es: "Para transmitir de forma natural el significado del texto original, en algunos casos se ha optado, cuando ha sido necesario, por no utilizar palabras o expresiones que correspondan directamente a las del original.",
+    pt: "Para transmitir de forma natural o significado do texto original, em alguns casos, quando necessário, a tradução foi feita sem utilizar palavras ou expressões que correspondam diretamente às do original.",
+    fr: "Afin de transmettre naturellement le sens du texte original, certaines traductions ont, lorsque cela était nécessaire, été formulées sans utiliser de mots ou d'expressions correspondant directement à ceux de l'original.",
+    zh: "为了自然地传达原文的含义，在必要的情况下，部分翻译没有使用与原文表达直接对应的词语或说法。",
+    jp: "原文の意味を自然に伝えるため、必要に応じて、原文の表現に直接対応する単語や表現を使わずに翻訳している場合があります。",
   };
 
   const handleSpeak = async (text: string, key: string) => {
@@ -367,6 +376,17 @@ const guideTexts: Record<string, string[]> = {
             ))}
         </div>
 
+        {disclaimerTexts[studyLang] && (
+          <div
+            style={{
+              fontSize: 12,
+              color: "#888",
+              padding: "8px 16px 0",
+            }}
+          >
+            {disclaimerTexts[studyLang]}
+          </div>
+        )}
         {/* 🔥 AUDIO — sticky 헤더 안으로 이동 (스크롤해도 고정) */}
         {targetLang && (
           <div
