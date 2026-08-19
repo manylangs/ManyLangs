@@ -21,8 +21,8 @@ voice 이름은 반드시 Google Cloud TTS 지원 목록에서 확인 후
 --------------------------------------------------
 Real JSON만 문장 구조가 다르다:
 
-    real:                "texts":     { "kr": ..., "en": ..., "es": ... }   ← kr 키가 직접 존재
-    voca/idiom/conv:     "sentences": { "target": ..., "en": ..., "es": ... } ← kr 텍스트는 "target" 키
+    real:                "texts":     { "kr": ..., "en": ..., "es": ... }
+    voca/idiom/conv:     "sentences": { "target": ..., "en": ..., "es": ... }
 
 따라서:
     - voca / idiom / conversation → TEXT_FIELD_DEFAULT (kr → "target")
@@ -64,25 +64,44 @@ TEXT_FIELD_REAL = {
 SAMPLE_RATE = 24000
 
 # ── Voice ──────────────────────────────────────────────────────────────
-# 원칙: 가능한 모든 언어에서 Neural2 계열로 통일.
-# 예외: pt-PT(유럽 포르투갈어)는 Google TTS에 Neural2가 없어 Wavenet 사용.
-#       (Neural2는 pt-BR(브라질)만 제공 — 콘텐츠가 유럽식이므로 pt-PT 유지)
-# 성별 규칙: 단일 목소리 = 여성 / conversation A = 여성, B = 남성
+# 현재 최종 음성 정책:
+#
+# - en-US: Chirp 3 HD
+# - ko-KR: Neural2
+# - es/fr: Neural2
+# - pt-PT: WaveNet
+#
+# 성별 규칙:
+# - 단일 목소리 = 여성
+# - conversation A = 여성
+# - conversation B = 남성
+#
+# 한국어 ko-KR 테스트 결과:
+# - Chirp3 Aoede / Charon:
+#     음색과 발음은 자연스럽지만 단어 경계 및 끊어읽기가 불안정
+# - Chirp3 Kore / Orus:
+#     쉼표 휴지 및 한국어 운율이 학습용 콘텐츠에 부적합
+# - WaveNet A / C:
+#     띄어읽기는 정확하지만 Neural2보다 기계음이 강함
+# - Neural2 A / C:
+#     띄어읽기와 문장 호흡이 정확하고 전체 균형이 가장 좋음
+#
+# 따라서 한국어 최종 음성은 Neural2를 사용한다.
 
 # voca / idiom / real 등 단일 목소리 시리즈
 VOICE_SINGLE = {
-    "en": {"default": "en-US-Neural2-F"},
+    "en": {"default": "en-US-Chirp3-HD-Aoede"},
     "kr": {"default": "ko-KR-Neural2-A"},
     "es": {"default": "es-ES-Neural2-A"},
     "fr": {"default": "fr-FR-Neural2-A"},
-    "pt": {"default": "pt-PT-Wavenet-A"},  # pt-PT는 Neural2 미지원
+    "pt": {"default": "pt-PT-Wavenet-A"},
 }
 
 # conversation 용 (A = 여성, B = 남성)
 VOICE_AB = {
     "en": {
-        "A": "en-US-Neural2-F",
-        "B": "en-US-Neural2-J",
+        "A": "en-US-Chirp3-HD-Aoede",
+        "B": "en-US-Chirp3-HD-Charon",
     },
     "kr": {
         "A": "ko-KR-Neural2-A",
@@ -97,7 +116,7 @@ VOICE_AB = {
         "B": "fr-FR-Neural2-B",
     },
     "pt": {
-        "A": "pt-PT-Wavenet-A",  # pt-PT는 Neural2 미지원
+        "A": "pt-PT-Wavenet-A",
         "B": "pt-PT-Wavenet-B",
     },
 }

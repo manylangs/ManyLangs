@@ -143,6 +143,17 @@ export default function DemoIdiomViewer({
     ],
   };
 
+
+  const disclaimerTexts: Record<string, string> = {
+    en: "The translations were rendered to convey the meaning of the original text without relying on one-to-one idiomatic equivalents.",
+    es: "Las traducciones se realizaron con el objetivo de transmitir el significado del texto original sin recurrir a equivalentes idiomáticos uno a uno.",
+    pt: "As traduções foram feitas de modo a transmitir o significado do texto original sem recorrer a equivalentes idiomáticos numa correspondência de um para um.",
+    fr: "Les traductions ont été réalisées de manière à transmettre le sens du texte original sans recourir à des équivalents idiomatiques terme à terme.",
+    zh: "翻译时以传达原文含义为原则，而不采用一一对应的习语表达。",
+    jp: "翻訳文については、イディオムを一対一で対応させるのではなく、原文の意味を伝えることを重視して翻訳されています。",
+    kr: "번역문의 경우 일대일 이디엄 대응어를 사용하지 않으면서 원문의 의미를 전달하는 방향으로 번역되었습니다.",
+  };
+
   useEffect(() => {
     const filtered = ALL_STUDY_LANGS.filter((l) => l !== targetLang);
     if (filtered.length > 0) setStudyLang(filtered[0]);
@@ -335,6 +346,18 @@ export default function DemoIdiomViewer({
             ))}
         </div>
 
+        {disclaimerTexts[studyLang] && (
+          <div
+            style={{
+              fontSize: 12,
+              color: "#888",
+              padding: "8px 16px 0",
+            }}
+          >
+            {disclaimerTexts[studyLang]}
+          </div>
+        )}
+        
         {/* 🔥 AUDIO — sticky 헤더 안으로 이동 (스크롤해도 고정) */}
         <div
           style={{

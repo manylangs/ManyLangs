@@ -6,7 +6,7 @@ review.py와 마찬가지로 KR-target / EN-target 데이터 모두에
 공용으로 사용하는 단일 스크립트다.
 
 review.py는 "수정"을 적용하는 스크립트이고, 이 checker.py는
-"수정 없이 읽기만" 하면서 아래 두 가지를 검사한다.
+"수정 없이 읽기만" 하면서 아래 항목을 검사한다.
 
   1) 언어 키 완전성 (S-04/S-05 계열)
      title / word / examples 각 항목에 8개 언어
@@ -20,6 +20,18 @@ review.py는 "수정"을 적용하는 스크립트이고, 이 checker.py는
      - meaning_zone 길이가 1~3인가
      - meaning_zone[0] == core 인가
      - meaning_zone에 중복 표현이 없는가
+
+  3) 폴더와 meta.id의 대응
+     data 폴더는 001~144까지 연속 번호를 사용하지만,
+     meta.id는 각 레벨마다 001~024로 다시 시작한다.
+
+     폴더 범위와 예상 meta.id:
+       001~024 -> 001~024
+       025~048 -> 001~024
+       049~072 -> 001~024
+       073~096 -> 001~024
+       097~120 -> 001~024
+       121~144 -> 001~024
 
   같은 zone인지 / 의미 확장·축소인지 / 품사 이동인지처럼 의미
   판단이 필요한 규칙은 이 스크립트가 검사할 수 없다 — 그건
@@ -36,21 +48,16 @@ ROOT = Path(
 )
 
 ############################################################
-# 언어 완전성 검사용 전체 8개 언어 (target 포함).
-#
-# 이전 버전 체커는 LANGS에 target이 빠져 있어서, target 키가
-# 통째로 누락된 블록도 구조 검사를 통과시켜버리는 버그가 있었다.
-# 이 버전은 target을 포함해 8개 전부를 검사한다.
-#
-# (참고: review.py의 ALLOWED_LANGUAGES는 이것과 다른 목적의
-#  상수다 — 그쪽은 "수정 가능한" 7개 언어이고, target은 애초에
-#  수정 대상이 아니라서 의도적으로 빠져 있다. 여기 LANGS는
-#  "존재해야 하는" 8개 언어이므로 target을 반드시 포함한다.)
+# 언어 완전성 검사용 전체 8개 언어 (target 포함)
 ############################################################
+
 LANGS = {"target", "en", "kr", "pt", "fr", "jp", "zh", "es"}
 
 BATCH_START = 1
 BATCH_END = 144
+
+# 각 레벨의 챕터 수
+CHAPTERS_PER_LEVEL = 24
 
 errors = []
 
@@ -58,7 +65,8 @@ errors = []
 ############################################################
 # word.{lang} 구조 검사
 #
-# 스키마: {"core": "문자열", "meaning_zone": ["문자열", ...]}
+# 스키마:
+# {"core": "문자열", "meaning_zone": ["문자열", ...]}
 ############################################################
 
 def check_word_entry(word_value, location: str) -> None:
@@ -70,6 +78,7 @@ def check_word_entry(word_value, location: str) -> None:
         return
 
     extra_keys = set(word_value.keys()) - {"core", "meaning_zone"}
+
     if extra_keys:
         errors.append(
             f"[WORD-KEYS] {location} | core/meaning_zone 이외의 키: "
@@ -105,7 +114,8 @@ def check_word_entry(word_value, location: str) -> None:
     if len(meaning_zone) > 3:
         errors.append(
             f"[WORD-MZ-MAX] {location} | meaning_zone이 3개를 "
-            f"초과합니다 (현재 {len(meaning_zone)}개): {meaning_zone!r}"
+            f"초과합니다 (현재 {len(meaning_zone)}개): "
+            f"{meaning_zone!r}"
         )
 
     for item in meaning_zone:
@@ -119,8 +129,8 @@ def check_word_entry(word_value, location: str) -> None:
     if core_ok and meaning_zone[0] != core:
         errors.append(
             f"[WORD-MZ-FIRST] {location} | meaning_zone[0]이 core와 "
-            f"다릅니다 (core={core!r}, meaning_zone[0]="
-            f"{meaning_zone[0]!r})"
+            f"다릅니다 (core={core!r}, "
+            f"meaning_zone[0]={meaning_zone[0]!r})"
         )
 
     if len(set(meaning_zone)) != len(meaning_zone):
@@ -131,53 +141,95 @@ def check_word_entry(word_value, location: str) -> None:
 
 
 ############################################################
-# 블록 하나 검사
+# data.json 하나 검사
 ############################################################
 
-def check_data(data, json_file: Path):
-    chapter = json_file.parent.name  # .../data/001/data.json -> 001
+def check_data(data, json_file: Path) -> None:
+    chapter = json_file.parent.name
+
+    ##########################
+    # 최상위 데이터 타입
+    ##########################
+
+    if not isinstance(data, dict):
+        errors.append(
+            f"[DATA-TYPE] {json_file} | 최상위 JSON이 객체가 아닙니다."
+        )
+        return
 
     ##########################
     # meta
     ##########################
 
     meta = data.get("meta", {})
-    json_id = meta.get("id")
 
-    if json_id != chapter:
+    if not isinstance(meta, dict):
         errors.append(
-            f"[ID] {json_file} | folder={chapter} json={json_id}"
+            f"[META-TYPE] {json_file} | meta가 객체가 아닙니다."
         )
+    else:
+        json_id = meta.get("id")
+
+        try:
+            folder_number = int(chapter)
+            expected_id = (
+                f"{((folder_number - 1) % CHAPTERS_PER_LEVEL) + 1:03d}"
+            )
+
+            if json_id != expected_id:
+                errors.append(
+                    f"[ID] {json_file} | folder={chapter} "
+                    f"expected={expected_id} json={json_id}"
+                )
+        except ValueError:
+            errors.append(
+                f"[FOLDER-ID] {json_file} | 폴더명이 3자리 숫자가 "
+                f"아닙니다: {chapter!r}"
+            )
 
     ##########################
     # title: 언어 완전성
     ##########################
 
     title = data.get("title", {})
+
     if not isinstance(title, dict):
-        errors.append(f"[TITLE-TYPE] {json_file} | title이 객체가 아닙니다.")
+        errors.append(
+            f"[TITLE-TYPE] {json_file} | title이 객체가 아닙니다."
+        )
     else:
         missing_title = LANGS - set(title.keys())
+
         if missing_title:
             errors.append(
-                f"[LANG-TITLE] {json_file} | missing {sorted(missing_title)}"
+                f"[LANG-TITLE] {json_file} | "
+                f"missing {sorted(missing_title)}"
             )
+
+        for lang in LANGS:
+            if lang not in title:
+                continue
+
+            title_value = title[lang]
+
+            if not isinstance(title_value, str) or not title_value.strip():
+                errors.append(
+                    f"[TITLE-EMPTY] {json_file} | title.{lang} 값이 "
+                    f"비어 있거나 문자열이 아닙니다: {title_value!r}"
+                )
 
     ##########################
     # blocks
-    #
-    # voca 스키마:
-    # blocks[] = [
-    #     {
-    #         "id": "block_001",
-    #         "word": {8개 언어: {core, meaning_zone}},
-    #         "examples": [{8개 언어: 문자열}, {..}, {..}],  # 3개 고정
-    #     },
-    #     ...
-    # ]
     ##########################
 
     blocks = data.get("blocks", [])
+
+    if not isinstance(blocks, list):
+        errors.append(
+            f"[BLOCKS-TYPE] {json_file} | blocks가 배열이 아닙니다: "
+            f"{blocks!r}"
+        )
+        return
 
     if len(blocks) != 5:
         errors.append(
@@ -186,82 +238,118 @@ def check_data(data, json_file: Path):
         )
 
     for block_idx, block in enumerate(blocks):
+        if not isinstance(block, dict):
+            errors.append(
+                f"[BLOCK-TYPE] {json_file} | block index "
+                f"{block_idx}가 객체가 아닙니다: {block!r}"
+            )
+            continue
+
         block_id = block.get("id", f"index {block_idx}")
 
         ######################
-        # word: 언어 완전성 + core/meaning_zone 구조
+        # word
         ######################
 
         word = block.get("word", {})
-        missing_word = LANGS - set(word.keys())
 
-        if missing_word:
+        if not isinstance(word, dict):
             errors.append(
-                f"[LANG-WORD] {json_file} | block {block_id} "
-                f"missing {sorted(missing_word)}"
+                f"[WORD-CONTAINER-TYPE] {json_file} | block {block_id} "
+                f"| word가 객체가 아닙니다: {word!r}"
             )
+        else:
+            missing_word = LANGS - set(word.keys())
 
-        for lang, word_value in word.items():
-            if lang not in LANGS:
-                continue
-            check_word_entry(
-                word_value,
-                f"{json_file} | block {block_id} | word.{lang}",
-            )
+            if missing_word:
+                errors.append(
+                    f"[LANG-WORD] {json_file} | block {block_id} "
+                    f"missingmissing {sorted(missing_word)}"
+                )
+
+            for lang, word_value in word.items():
+                if lang not in LANGS:
+                    continue
+
+                check_word_entry(
+                    word_value,
+                    f"{json_file} | block {block_id} | word.{lang}",
+                )
 
         ######################
-        # examples: 3개 고정 + 각 예문의 언어 완전성
+        # examples
         ######################
 
         examples = block.get("examples", [])
 
+        if not isinstance(examples, list):
+            errors.append(
+                f"[EXAMPLES-TYPE] {json_file} | block {block_id} "
+                f"| examples가 배열이 아닙니다: {examples!r}"
+            )
+            continue
+
         if len(examples) != 3:
             errors.append(
                 f"[EXAMPLE-COUNT] {json_file} | block {block_id} "
-                f"examples가 3개가 아닙니다 (현재 {len(examples)}개)"
+                f"examples가 3개가 아닙니다 "
+                f"(현재 {len(examples)}개)"
             )
 
         for ex_idx, example in enumerate(examples):
-            texts = example if isinstance(example, dict) else {}
-            missing = LANGS - set(texts.keys())
+            if not isinstance(example, dict):
+                errors.append(
+                    f"[EXAMPLE-TYPE] {json_file} | block {block_id} "
+                    f"example {ex_idx + 1}이 객체가 아닙니다: "
+                    f"{example!r}"
+                )
+                continue
+
+            missing = LANGS - set(example.keys())
 
             if missing:
                 errors.append(
                     f"[LANG-EXAMPLE] {json_file} | block {block_id} "
-                    f"example {ex_idx + 1} missing {sorted(missing)}"
+                    f"example {ex_idx + 1} "
+                    f"missing {sorted(missing)}"
                 )
 
-            for lang, text in texts.items():
+            for lang, text in example.items():
                 if lang not in LANGS:
                     continue
+
                 if not isinstance(text, str) or not text.strip():
                     errors.append(
-                        f"[EXAMPLE-EMPTY] {json_file} | block {block_id} "
-                        f"example {ex_idx + 1} [{lang}] 값이 비어 있거나 "
-                        f"문자열이 아닙니다: {text!r}"
+                        f"[EXAMPLE-EMPTY] {json_file} | "
+                        f"block {block_id} example {ex_idx + 1} "
+                        f"[{lang}] 값이 비어 있거나 문자열이 아닙니다: "
+                        f"{text!r}"
                     )
 
+
+############################################################
+# review.py 등에서 개별 데이터 검증 시 사용하는 함수
+############################################################
 
 def run_checker_validation(data, json_file):
     global errors
     errors = []
 
-    check_data(data, json_file)
+    check_data(data, Path(json_file))
 
     return errors
 
+
+############################################################
+# 전체 배치 검사
+############################################################
 
 def main():
     global errors
     errors = []
 
-    # data/001 ~ data/144 범위만 명시적으로 검사한다
-    # (그 외 폴더는 검사하지 않음)
-
     for i in range(BATCH_START, BATCH_END + 1):
-
         batch_id = f"{i:03d}"
-
         batch_dir = ROOT / batch_id
 
         if not batch_dir.is_dir():
@@ -275,7 +363,7 @@ def main():
             continue
 
         try:
-            with open(json_file, "r", encoding="utf-8") as f:
+            with json_file.open("r", encoding="utf-8") as f:
                 data = json.load(f)
         except Exception as e:
             errors.append(f"[JSON ERROR] {json_file}: {e}")
@@ -288,9 +376,8 @@ def main():
         print(f"ERRORS : {len(errors)}")
         print("=" * 80)
 
-        for e in errors:
-            print(e)
-
+        for error in errors:
+            print(error)
     else:
         print(
             f"✅ 모든 파일 통과 "

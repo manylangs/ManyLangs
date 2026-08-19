@@ -36,6 +36,17 @@ const buttonStyle = (active: boolean) => ({
   border: "none",
   cursor: "pointer",
 });
+
+const disclaimerTexts: Record<string, string> = {
+  en: "The translations were rendered to convey the meaning of the original text without relying on one-to-one idiomatic equivalents.",
+  es: "Las traducciones se realizaron con el objetivo de transmitir el significado del texto original sin recurrir a equivalentes idiomáticos uno a uno.",
+  pt: "As traduções foram feitas de modo a transmitir o significado do texto original sem recorrer a equivalentes idiomáticos numa correspondência de um para um.",
+  fr: "Les traductions ont été réalisées de manière à transmettre le sens du texte original sans recourir à des équivalents idiomatiques terme à terme.",
+  zh: "翻译时以传达原文含义为原则，而不采用一一对应的习语表达。",
+  jp: "翻訳文については、イディオムを一対一で対応させるのではなく、原文の意味を伝えることを重視して翻訳されています。",
+  kr: "번역문의 경우 일대일 이디엄 대응어를 사용하지 않으면서 원문의 의미를 전달하는 방향으로 번역되었습니다.",
+};
+
 type IdiomBlock = {
   expression: Record<string, string>;
   explanation: Record<string, string>;
@@ -195,6 +206,25 @@ export default function IdiomViewer({
                 </button>
               ))}
           </div>
+          {/* ↑ Study Lang 버튼 그룹 끝 */}
+
+          {/* ↓↓↓ 여기 새로 추가 ↓↓↓ */}
+          {disclaimerTexts[studyLang] && (
+            <div
+              style={{
+                fontSize: 13,
+                color: "#666",
+                background: "#fafafa",
+                padding: "10px 12px",
+                borderRadius: 8,
+                border: "1px solid #eee",
+                marginBottom: 16,
+              }}
+            >
+              {disclaimerTexts[studyLang]}
+            </div>
+          )}
+          {/* ↑↑↑ 여기까지 ↑↑↑ */}
 
           <div
             style={{

@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
 """
-batch_convert.py — 보카(vocabulary) 프로젝트용 일회성 변환 스크립트.
-(컨버세이션 프로젝트 batch_convert.py를 보카 스키마에 맞게 재작성한 버전)
+batch_convert.py — 보카(vocabulary) 프로젝트용 일회성 변환 스크립트. (v2 - en 특별취급 제거)
 
-컨버세이션 스키마와의 핵심 차이:
-  - conversation: set_id / lines[].speaker / lines[].sentences[lang]  (문장 텍스트만 언어별로 존재)
+수정 사유:
+  이전 버전은 "<id>-target.compact.json"에 target/en이 함께 채워져
+  나온다고 가정해 promote_to_base에서 en을 target과 같이 승격 복사했다.
+  하지만 번역 프롬프트(en 포함 7개 전부)가 전부 "target → 각 언어" 직접
+  번역이고, en도 다른 6개 언어와 동급으로 취급되어야 하므로, Manual A
+  산출물에는 이제 target만 들어있다고 가정한다. en 포함 나머지 7개 언어
+  슬롯은 전부 빈 값으로 초기화해 merge.py가 채울 수 있게 한다.
+
+컨버세이션 스키마와의 핵심 차이(변경 없음):
+  - conversation: set_id / lines[].speaker / lines[].sentences[lang]
   - vocabulary  : block.id / word.<lang>.{core, meaning_zone} / examples[].<lang>
-                  → 언어별로 "단어(core+meaning_zone)"와 "예문 텍스트" 둘 다 존재한다는 점이 다름.
-  - vocabulary는 target(영어) 산출물(Manual A 결과물, "<id>-target.compact.json")에
-    이미 target/en이 함께 채워져 있으므로, conversation처럼 en을 별도 mirror/merge
-    단계로 다시 채울 필요가 없음 (en은 Manual A 단계에서 이미 완성).
 
 data/<id>/ 폴더 구조를 순회하며:
 1) <id>.runtime.json (여러 언어가 병합된 완성 스키마)이 존재하면
    → 그 안에서 특정 언어(lang)의 word/examples 값만 뽑아
      <id>-<lang>.compact.json 형태로 역추출 (라운드트립 검증/재작업용)
-2) <id>-target.compact.json (Manual A 결과물, target+en 포함)이 존재하면
+2) <id>-target.compact.json (Manual A 결과물, target만 포함)이 존재하면
    → <id>.runtime.json 이 아직 없을 때 표준 base 이름으로 승격
      (이미 완성본이 있으면 건드리지 않음)
 
@@ -24,10 +27,11 @@ data/<id>/ 폴더 구조를 순회하며:
   python3 batch_convert.py /path/to/data --extract-lang es   # 특정 언어만 역추출
 
 [수정 이력]
-  - runtime_path 파일명을 "conversation_<id>.runtime.json"에서 "<id>.runtime.json"으로
-    변경. run_merge.sh가 실제로 만들어내는 base 파일명("${BATCH_ID}.runtime.json")과
-    일치하지 않아, run_merge.sh로 병합을 마친 뒤 이 스크립트를 돌리면 기존 결과물을
-    찾지 못하고 역추출을 건너뛰거나 중복 파일을 새로 만들어버리는 문제가 있었음.
+  - v2: promote_to_base가 compact["title"]["en"] / block["word"]["en"] 등을
+    더이상 참조하지 않음 (Manual A 산출물이 en을 포함하지 않는 것을 전제).
+    en 포함 7개 언어 슬롯 전부 빈 문자열/빈 배열로 초기화.
+  - v1: runtime_path 파일명을 "conversation_<id>.runtime.json"에서
+    "<id>.runtime.json"으로 변경 (run_merge.sh --out과 일치시킴).
 """
 import argparse
 import json
@@ -65,9 +69,8 @@ def extract_lang_compact(runtime_path: Path, lang: str) -> Path:
         "lang": lang,
         "blocks": blocks_out,
     }
-    if lang in ("target", "en"):
-        compact["title"] = base["title"][lang]
     if lang == "target":
+        compact["title"] = base["title"][lang]
         compact["level"] = base["meta"]["level"]
 
     out_path = runtime_path.parent / f"{base['meta']['id']}-{lang}.compact.json"
@@ -77,8 +80,8 @@ def extract_lang_compact(runtime_path: Path, lang: str) -> Path:
 
 
 def promote_to_base(target_compact_path: Path, base_out: Path):
-    """Manual A 결과물(target+en 포함)을 표준 runtime base 파일명으로 승격 복사.
-    나머지 언어(es/fr/pt/kr/jp/zh) 슬롯은 빈 문자열/빈 배열로 초기화해 merge.py가
+    """Manual A 결과물(target만 포함)을 표준 runtime base 파일명으로 승격 복사.
+    나머지 언어(en/es/fr/pt/kr/jp/zh) 슬롯은 빈 문자열/빈 배열로 초기화해 merge.py가
     이후 채워 넣을 수 있게 해 둔다."""
     with open(target_compact_path, encoding="utf-8") as f:
         compact = json.load(f)
@@ -86,23 +89,20 @@ def promote_to_base(target_compact_path: Path, base_out: Path):
     if len(compact["blocks"]) != EXPECTED_BLOCK_COUNT:
         raise ValueError(f"block 개수 이상: {len(compact['blocks'])}")
 
-    title = {lang: compact["title"].get(lang, "") for lang in ALL_LANGS}
+    title = {lang: "" for lang in ALL_LANGS}
     title["target"] = compact["title"]["target"]
-    title["en"] = compact["title"]["en"]
 
     blocks = []
     for block in compact["blocks"]:
-        word = {lang: block["word"].get(lang, {"core": "", "meaning_zone": []}) for lang in ALL_LANGS}
+        word = {lang: {"core": "", "meaning_zone": []} for lang in ALL_LANGS}
         word["target"] = block["word"]["target"]
-        word["en"] = block["word"]["en"]
 
         if len(block["examples"]) != EXPECTED_EXAMPLES_PER_BLOCK:
             raise ValueError(f"{block['id']}: example 개수 이상")
         examples = []
         for ex in block["examples"]:
-            row = {lang: ex.get(lang, "") for lang in ALL_LANGS}
+            row = {lang: "" for lang in ALL_LANGS}
             row["target"] = ex["target"]
-            row["en"] = ex["en"]
             examples.append(row)
 
         blocks.append({"id": block["id"], "word": word, "examples": examples})

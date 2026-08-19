@@ -115,20 +115,14 @@ DATA_DIR = Path(
 # 수정하지 않는 항목은 작성하지 않는다.
 ############################################################
 ALL_REPLACEMENTS = {
-    # "001": {
-    #     "TITLE_REPLACEMENTS": {},
-    #     "WORD_REPLACEMENTS": {
-    #         ("block_004", "zh"): {
-    #             "core": "给……看",
-    #             "meaning_zone": ["给……看", "出示"],
-    #         },
-    #     },
-    #     "EXAMPLE_REPLACEMENTS": {
-    #         ("block_001", 3, "fr"): "Est-ce qu'il va au travail ?",
-    #     },
-    # },
+    "093": {
+        "TITLE_REPLACEMENTS": {},
+        "WORD_REPLACEMENTS": {},
+        "EXAMPLE_REPLACEMENTS": {
+            ("block_005", 2, "zh"): "这条规则不会使成员们紧密团结。"
+        }
+    }
 }
-
 ############################################################
 # 현재 처리 중인 항목이 담기는 전역 변수
 #
@@ -149,6 +143,7 @@ EXAMPLE_REPLACEMENTS = {}
 # 일치시킨다"는 뜻이지, target 자체를 바꾸는 게 아니기 때문이다.
 ############################################################
 ALLOWED_LANGUAGES = {
+    "target",
     "en",
     "es",
     "fr",
@@ -319,12 +314,6 @@ def validate_replacements(data: dict) -> list[str]:
             )
             continue
 
-        if lang == "target":
-            errors.append(
-                f"[REPLACEMENT] target 언어는 수정할 수 없습니다: {key!r}"
-            )
-            continue
-
         if lang not in ALLOWED_LANGUAGES:
             errors.append(
                 f"[REPLACEMENT] 허용되지 않은 언어입니다: {lang} / {key!r}"
@@ -396,12 +385,6 @@ def validate_replacements(data: dict) -> list[str]:
                 f"[REPLACEMENT] example_index는 1~3 범위여야 합니다 "
                 f"(블록당 예문 3개 고정): {key!r}"
             )
-
-        if lang == "target":
-            errors.append(
-                f"[REPLACEMENT] target 언어는 수정할 수 없습니다: {key!r}"
-            )
-            continue
 
         if lang not in ALLOWED_LANGUAGES:
             errors.append(
