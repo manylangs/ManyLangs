@@ -422,14 +422,15 @@ export default function LandingPage() {
         {/* 🔥 핵심 카피 */}
         <p
           style={{
-            fontSize: 14,
-            color: "#666",
+            fontSize: 16,
+            fontWeight: 600,
+            color: "#222",
             textAlign: "center",
             width: "100%",
-            maxWidth: "600px",
-            margin: "0 auto 24px",
+            maxWidth: "680px",
+            margin: "4px auto 28px",
             padding: "0 16px",
-            lineHeight: 1.6,
+            lineHeight: 1.65,
             wordBreak: "keep-all",
             overflowWrap: "break-word",
           }}
