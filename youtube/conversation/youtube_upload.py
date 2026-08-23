@@ -17,7 +17,7 @@ from googleapiclient.http import MediaFileUpload
 # =========================================================
 
 BASE_DIR = Path(__file__).resolve().parent
-TOKEN_FILE = BASE_DIR / "token.json"
+TOKEN_FILE = Path("/Users/junghasuk/Desktop/manylangs 최종 설계/중요한키/youtube_keys/token.json")
 
 SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
