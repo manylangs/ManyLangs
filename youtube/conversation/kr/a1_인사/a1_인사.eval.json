@@ -1,0 +1,69 @@
+{
+  "chapter_id": "conversation_001.runtime.json",
+  "target_lang": "kr",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A/B가 세트 내에서 자연스럽게 번갈아 등장하며, 대화가 일관된 흐름을 유지한다. A는 준호, B는 지은으로 고정되어 관계가 명확하다."
+    },
+    "dialogue_function_accuracy": {
+      "score": 9,
+      "weight": 10,
+      "notes": "인사, 안부 묻기, 반가움 표현, 헤어짐 인사 등 대화 기능이 자연스럽게 연결된다. 다만 '만나서 반가워요'가 오랜만에 만난 상황에서 어색할 수 있어, '만나서 더 반가워요' 등이 더 자연스러웠을 것(set_id=001, line=5, lang=kr)."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "전반적으로 구어체가 자연스럽고 짧은 문장이 대화 흐름에 잘 맞는다. 다만 '만나서 반가워요'는 첫 만남에 주로 쓰이는 표현이라, 오랜만에 만난 상황에서는 '만나서 더 반가워요'가 더 자연스럽다(set_id=001, line=5, lang=kr)."
+    },
+    "register_appropriateness": {
+      "score": 10,
+      "weight": 10,
+      "notes": "존대말(해요체)이 일관되게 사용되었고, '씨' 호칭이 적절하다. 한국어 초급 수준에 맞는 격식과 친밀감의 균형이 좋다."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 오류가 없고, 문장 부호와 띄어쓰기가 정확하다. '오랜만이에요', '잘 지냈어요?' 등 표현이 문법적으로 올바르다."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "일상적인 인사 상황을 다루어 실용적이며, 초급 학습자가 바로 활용할 수 있는 주제다. 다양한 상황으로 확장 가능한 기초 대화를 제공한다."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "문화적으로 특정 국가나 관습에 치우치지 않으며, 보편적인 인사 문화를 반영한다. 한국어 존대법은 자연스럽게 포함되었으나 문화적 편향이 없다."
+    },
+    "tts_readiness": {
+      "score": 10,
+      "weight": 5,
+      "notes": "모든 문장이 TTS로 읽기에 적합한 길이와 구조이며, 축약이나 비문이 없다. 문장 부호가 명확하여 자연스러운 운율 생성이 가능하다."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "kr 필드가 target과 완전히 일치하며, 모든 언어에서 한국어 원문의 의미를 정확히 반영하고 있다."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "TTMIK 등 벤치마크 서비스와 비교해도 초급 인사 대화로서 충분한 품질을 갖추었다. 다만 '만나서 반가워요'의 뉘앙스가 오랜만 상황에 약간 어색해, 이를 개선하면 더 높은 경쟁력을 확보할 수 있다(set_id=001, line=5, lang=kr)."
+    }
+  },
+  "final_score": 95,
+  "market_benchmark": {
+    "comparable_services": [
+      "Talk To Me In Korean",
+      "Duolingo Korean Conversations",
+      "세종한국어/TOPIK",
+      "Pimsleur Korean"
+    ],
+    "estimated_relative_position": "상위 10% 수준. 초급 인사 대화로서 자연스러움과 실용성이 뛰어나며, TTMIK의 유사 단원과 견줄 만하다.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": []
+}

@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "007"
+  },
+  "title": {
+    "target": "Asking for Directions",
+    "en": "Asking for Directions",
+    "es": "Pidiendo indicaciones",
+    "fr": "Demander son chemin",
+    "pt": "A Pedir Indicações",
+    "kr": "길 묻기",
+    "zh": "问路",
+    "jp": "道を尋ねる"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Excuse me, is the museum far from here?",
+            "en": "Excuse me, is the museum far from here?",
+            "es": "Disculpe, ¿está el museo lejos de aquí?",
+            "fr": "Excusez-moi, est-ce que le musée est loin d'ici ?",
+            "pt": "Com licença, o museu fica longe daqui?",
+            "kr": "실례합니다, 박물관이 여기서 먼가요?",
+            "zh": "打扰一下，博物馆离这里远吗？",
+            "jp": "すみません、博物館はここから遠いですか？"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "No, it's not far. You can walk there in ten minutes.",
+            "en": "No, it's not far. You can walk there in ten minutes.",
+            "es": "No, no está lejos. Puedes ir caminando en diez minutos.",
+            "fr": "Non, ce n'est pas loin. Vous pouvez y aller à pied en dix minutes.",
+            "pt": "Não, não fica longe. Podes ir a pé em dez minutos.",
+            "kr": "아니요, 멀지 않아요. 걸어서 십 분이면 돼요.",
+            "zh": "不远，走路十分钟就能到。",
+            "jp": "いいえ、遠くないですよ。歩いて十分で行けます。"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Oh, that's great. Which way should I go?",
+            "en": "Oh, that's great. Which way should I go?",
+            "es": "Ah, qué bien. ¿Por dónde tengo que ir?",
+            "fr": "Oh, c'est super. Par où dois-je aller ?",
+            "pt": "Ah, que ótimo. Para que lado devo ir?",
+            "kr": "아, 잘됐네요. 어느 쪽으로 가야 하나요?",
+            "zh": "哦，那太好了。我该往哪边走？",
+            "jp": "ああ、それはいいですね。どの道を行けばいいですか？"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Go straight down this street and turn left at the bank.",
+            "en": "Go straight down this street and turn left at the bank.",
+            "es": "Sigue todo recto por esta calle y gira a la izquierda en el banco.",
+            "fr": "Allez tout droit dans cette rue et tournez à gauche à la banque.",
+            "pt": "Vai sempre em frente por esta rua e vira à esquerda no banco.",
+            "kr": "이 길로 쭉 가다가 은행에서 왼쪽으로 도세요.",
+            "zh": "沿着这条街一直走，在银行那里左转。",
+            "jp": "この道をまっすぐ行って、銀行のところで左に曲がってください。"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Got it. Is the museum on the right side?",
+            "en": "Got it. Is the museum on the right side?",
+            "es": "Entendido. ¿Está el museo en el lado derecho?",
+            "fr": "Compris. Est-ce que le musée est sur le côté droit ?",
+            "pt": "Percebi. O museu fica do lado direito?",
+            "kr": "알겠어요. 박물관이 오른쪽에 있나요?",
+            "zh": "明白了。博物馆是在右边吗？",
+            "jp": "わかりました。博物館は右側にありますか？"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Yes, it's right next to the park. You can't miss it.",
+            "en": "Yes, it's right next to the park. You can't miss it.",
+            "es": "Sí, está justo al lado del parque. No tiene pérdida.",
+            "fr": "Oui, il est juste à côté du parc. Vous ne pouvez pas le manquer.",
+            "pt": "Sim, fica mesmo ao lado do parque. Não tem como não veres.",
+            "kr": "네, 공원 바로 옆에 있어요. 놓칠 수 없어요.",
+            "zh": "是的，就在公园旁边。你不会错过的。",
+            "jp": "はい、公園のすぐ隣にあります。絶対にわかりますよ。"
+          }
+        }
+      ]
+    }
+  ]
+}

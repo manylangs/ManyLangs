@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "006"
+  },
+  "title": {
+    "target": "Numbers and Prices",
+    "en": "Numbers and Prices",
+    "es": "Números y precios",
+    "fr": "Les nombres et les prix",
+    "pt": "Números e Preços",
+    "kr": "숫자와 가격",
+    "zh": "数字和价格",
+    "jp": "数字と値段"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "How much is this T-shirt?",
+            "en": "How much is this T-shirt?",
+            "es": "¿Cuánto cuesta esta camiseta?",
+            "fr": "Combien coûte ce T-shirt ?",
+            "pt": "Quanto custa esta t-shirt?",
+            "kr": "이 티셔츠는 얼마예요?",
+            "zh": "这件T恤多少钱？",
+            "jp": "このTシャツはいくらですか？"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "It's fifteen dollars and ninety-nine cents.",
+            "en": "It's fifteen dollars and ninety-nine cents.",
+            "es": "Cuesta quince dólares con noventa y nueve centavos.",
+            "fr": "Il coûte quinze dollars et quatre-vingt-dix-neuf cents.",
+            "pt": "Custa quinze dólares e noventa e nove cêntimos.",
+            "kr": "십오 달러 구십구 센트예요.",
+            "zh": "十五美元九十九美分。",
+            "jp": "十五ドル九十九セントです。"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "That's a good price. I'll take it.",
+            "en": "That's a good price. I'll take it.",
+            "es": "Es un buen precio. Me la llevo.",
+            "fr": "C'est un bon prix. Je le prends.",
+            "pt": "É um bom preço. Fico com ela.",
+            "kr": "가격이 좋네요. 살게요.",
+            "zh": "价格不错。我买了。",
+            "jp": "いい値段ですね。それをください。"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Great choice. Would you like a bag?",
+            "en": "Great choice. Would you like a bag?",
+            "es": "Buena elección. ¿Quieres una bolsa?",
+            "fr": "Bon choix. Voulez-vous un sac ?",
+            "pt": "Boa escolha. Quer um saco?",
+            "kr": "좋은 선택이에요. 가방 필요하세요?",
+            "zh": "好选择。您需要袋子吗？",
+            "jp": "いい選択ですね。袋はご入用ですか？"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Yes, please. Here is twenty dollars.",
+            "en": "Yes, please. Here is twenty dollars.",
+            "es": "Sí, por favor. Aquí tiene veinte dólares.",
+            "fr": "Oui, s'il vous plaît. Voici vingt dollars.",
+            "pt": "Sim, por favor. Aqui tem vinte dólares.",
+            "kr": "네, 주세요. 여기 이십 달러예요.",
+            "zh": "好的，谢谢。这是二十美元。",
+            "jp": "はい、お願いします。二十ドルです。"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Perfect. Here is your change and your T-shirt.",
+            "en": "Perfect. Here is your change and your T-shirt.",
+            "es": "Perfecto. Aquí tiene su cambio y su camiseta.",
+            "fr": "Parfait. Voici votre monnaie et votre T-shirt.",
+            "pt": "Perfeito. Aqui está o seu troco e a sua t-shirt.",
+            "kr": "완벽해요. 여기 잔돈이랑 티셔츠예요.",
+            "zh": "好的。这是您的找零和您的T恤。",
+            "jp": "ぴったりですね。お釣りとTシャツです。"
+          }
+        }
+      ]
+    }
+  ]
+}

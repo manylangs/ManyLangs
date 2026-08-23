@@ -434,9 +434,8 @@ export default function LandingPage() {
             overflowWrap: "break-word",
           }}
         >
-          Choose the language you want to learn—English, Spanish, Portuguese,
-          French, Korean, Chinese, or Japanese—and study with translations shown
-          below.
+          Learn your target language with subtitles available in English, Spanish,
+          Portuguese, French, Korean, Mandarin Chinese, or Japanese.
         </p>
         <div
           style={{

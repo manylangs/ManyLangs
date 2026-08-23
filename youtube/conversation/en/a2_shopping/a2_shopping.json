@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a2",
+    "id": "011"
+  },
+  "title": {
+    "target": "Shopping",
+    "en": "Shopping",
+    "es": "Compras",
+    "fr": "Shopping",
+    "pt": "Compras",
+    "kr": "쇼핑",
+    "zh": "购物",
+    "jp": "買い物"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "I'm looking for a birthday gift for my sister.",
+            "en": "I'm looking for a birthday gift for my sister.",
+            "es": "Estoy buscando un regalo de cumpleaños para mi hermana.",
+            "fr": "Je cherche un cadeau d'anniversaire pour ma sœur.",
+            "pt": "Estou à procura de um presente de aniversário para a minha irmã.",
+            "kr": "여동생 생일 선물을 찾고 있어요.",
+            "zh": "我在给我妹妹找生日礼物。",
+            "jp": "妹への誕生日プレゼントを探しているんです。"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "That's a nice idea. What kind of things does she like?",
+            "en": "That's a nice idea. What kind of things does she like?",
+            "es": "Es una buena idea. ¿Qué tipo de cosas le gustan?",
+            "fr": "C'est une bonne idée. Qu'est-ce qu'elle aime comme choses ?",
+            "pt": "Essa é uma boa ideia. Que tipo de coisas é que ela gosta?",
+            "kr": "좋은 생각이네요. 그분은 어떤 걸 좋아하세요?",
+            "zh": "这个想法不错。她喜欢什么样的东西？",
+            "jp": "いいですね。妹さんはどんなものが好きなんですか？"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "She loves reading, so I was thinking about a book.",
+            "en": "She loves reading, so I was thinking about a book.",
+            "es": "Le encanta leer, así que estaba pensando en un libro.",
+            "fr": "Elle adore lire, donc je pensais à un livre.",
+            "pt": "Ela adora ler, por isso estava a pensar num livro.",
+            "kr": "책 읽는 걸 좋아해서, 책을 생각하고 있었어요.",
+            "zh": "她喜欢读书，所以我在考虑买一本书。",
+            "jp": "読書が大好きなので、本を考えています。"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Does she have a favorite author?",
+            "en": "Does she have a favorite author?",
+            "es": "¿Tiene un autor favorito?",
+            "fr": "Est-ce qu'elle a un auteur préféré ?",
+            "pt": "Ela tem algum autor favorito?",
+            "kr": "좋아하는 작가가 있나요?",
+            "zh": "她有最喜欢的作家吗？",
+            "jp": "好きな作家はいますか？"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Yes, she really enjoys mystery novels.",
+            "en": "Yes, she really enjoys mystery novels.",
+            "es": "Sí, le gustan mucho las novelas de misterio.",
+            "fr": "Oui, elle aime beaucoup les romans policiers.",
+            "pt": "Sim, ela gosta muito de romances policiais.",
+            "kr": "네, 추리 소설을 정말 좋아해요.",
+            "zh": "有，她非常喜欢推理小说。",
+            "jp": "はい、ミステリー小説がとても好きです。"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Then you should check out the bestseller table over there.",
+            "en": "Then you should check out the bestseller table over there.",
+            "es": "Entonces deberías echar un vistazo a la mesa de los superventas de allí.",
+            "fr": "Alors tu devrais regarder la table des best-sellers là-bas.",
+            "pt": "Então devias ver a mesa dos bestsellers ali.",
+            "kr": "그럼 저기 베스트셀러 코너를 확인해 보세요.",
+            "zh": "那你应该去看看那边的畅销书展台。",
+            "jp": "それなら、あそこのベストセラーコーナーを見てみてください。"
+          }
+        }
+      ]
+    }
+  ]
+}

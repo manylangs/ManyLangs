@@ -1,0 +1,43 @@
+{
+  "image": "a1_self_introduction.png",
+  "width": 941,
+  "height": 1672,
+  "speakers": {
+    "A": {
+      "gender": "woman",
+      "position": "left",
+      "face_center": {
+        "x": 255,
+        "y": 827
+      },
+      "bubble_region": {
+        "x1": 55,
+        "y1": 260,
+        "x2": 430,
+        "y2": 590
+      },
+      "tail_target": {
+        "x": 275,
+        "y": 760
+      }
+    },
+    "B": {
+      "gender": "man",
+      "position": "right",
+      "face_center": {
+        "x": 682,
+        "y": 760
+      },
+      "bubble_region": {
+        "x1": 500,
+        "y1": 250,
+        "x2": 875,
+        "y2": 555
+      },
+      "tail_target": {
+        "x": 655,
+        "y": 705
+      }
+    }
+  }
+}

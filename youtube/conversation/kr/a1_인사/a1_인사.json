@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "001"
+  },
+  "title": {
+    "target": "인사",
+    "en": "Greetings",
+    "es": "Saludos",
+    "fr": "Salutations",
+    "pt": "Cumprimentos",
+    "kr": "인사",
+    "zh": "问候",
+    "jp": "挨拶"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "준호 씨, 안녕하세요?",
+            "en": "Junho, hello?",
+            "es": "¿Hola, señor Junho?",
+            "fr": "Bonjour, Monsieur Junho.",
+            "pt": "Olá, senhor Junho?",
+            "kr": "준호 씨, 안녕하세요?",
+            "zh": "俊浩先生，您好？",
+            "jp": "ジュノさん、こんにちは。"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 안녕하세요. 지은 씨, 오랜만이에요.",
+            "en": "Yes, hello. Jieun, it's been a while.",
+            "es": "Sí, hola. Señorita Jieun, cuánto tiempo.",
+            "fr": "Oui, bonjour. C'est une longue journée, Mademoiselle Jieun.",
+            "pt": "Sim, olá. Senhora Jieun, há quanto tempo.",
+            "kr": "네, 안녕하세요. 지은 씨, 오랜만이에요.",
+            "zh": "您好。智恩小姐，好久不见了。",
+            "jp": "はい、こんにちは。ジウンさん、お久しぶりです。"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "정말 오랜만이에요. 요즘 잘 지냈어요?",
+            "en": "It really has been a while. How have you been lately?",
+            "es": "Sí, cuánto tiempo. ¿Cómo has estado últimamente?",
+            "fr": "C'est vraiment une longue journée. Comment allez-vous ces jours-ci ?",
+            "pt": "Realmente, há muito tempo. Tem passado bem?",
+            "kr": "정말 오랜만이에요. 요즘 잘 지냈어요?",
+            "zh": "真的是好久不见了。最近过得好吗？",
+            "jp": "本当にお久しぶりですね。最近、元気でしたか？"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 덕분에 잘 지냈어요. 지은 씨도요?",
+            "en": "I've been doing well, thanks to you. How about you, Jieun?",
+            "es": "Bien, gracias. ¿Y usted, señorita Jieun?",
+            "fr": "Oui, je vais bien, merci. Et vous, Mademoiselle Jieun ?",
+            "pt": "Sim, graças a Deus, tenho passado bem. E a senhora?",
+            "kr": "네, 덕분에 잘 지냈어요. 지은 씨도요?",
+            "zh": "嗯，托您的福过得很好。智恩小姐呢？",
+            "jp": "はい、おかげさまで元気です。ジウンさんは？"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저도 잘 지냈어요. 만나서 반가워요.",
+            "en": "I've been doing well too. Nice to meet you.",
+            "es": "Yo también estoy bien. Encantada de verte.",
+            "fr": "Je vais bien aussi. Je suis content de vous rencontrer.",
+            "pt": "Eu também tenho passado bem. Prazer em conhecê-la.",
+            "kr": "저도 잘 지냈어요. 만나서 반가워요.",
+            "zh": "我也过得很好。很高兴见到你。",
+            "jp": "私も元気です。お会いできてうれしいです。"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저도 반가워요. 다음에 또 만나요.",
+            "en": "Nice to meet you too. Let's meet again next time.",
+            "es": "Igualmente. Hasta la próxima.",
+            "fr": "Moi aussi, je suis content. À la prochaine fois.",
+            "pt": "O prazer é meu. Até a próxima.",
+            "kr": "저도 반가워요. 다음에 또 만나요.",
+            "zh": "我也很高兴。下次再见面吧。",
+            "jp": "私もうれしいです。また今度、会いましょう。"
+          }
+        }
+      ]
+    }
+  ]
+}

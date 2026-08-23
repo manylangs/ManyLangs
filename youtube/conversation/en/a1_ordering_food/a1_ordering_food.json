@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "009"
+  },
+  "title": {
+    "target": "Ordering Food",
+    "en": "Ordering Food",
+    "es": "Pedir comida",
+    "fr": "Commander de la nourriture",
+    "pt": "Pedir Comida",
+    "kr": "음식 주문하기",
+    "zh": "点餐",
+    "jp": "料理の注文"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "I'd like to order the grilled chicken, please.",
+            "en": "I'd like to order the grilled chicken, please.",
+            "es": "Quisiera pedir el pollo a la parrilla, por favor.",
+            "fr": "Je voudrais commander le poulet grillé, s'il vous plaît.",
+            "pt": "Queria pedir o frango grelhado, por favor.",
+            "kr": "그릴 치킨을 주문하고 싶어요.",
+            "zh": "我想要点烤鸡肉，谢谢。",
+            "jp": "グリルチキンを注文したいのですが。"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Sure, would you like a side with that?",
+            "en": "Sure, would you like a side with that?",
+            "es": "Claro, ¿quieres un acompañamiento con eso?",
+            "fr": "Bien sûr, voulez-vous un accompagnement avec ?",
+            "pt": "Claro, quer um acompanhamento com isso?",
+            "kr": "네, 곁들일 사이드 메뉴도 드릴까요?",
+            "zh": "好的，您需要配菜吗？",
+            "jp": "かしこまりました。サイドメニューはいかがですか？"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Yes, I'll have the mashed potatoes.",
+            "en": "Yes, I'll have the mashed potatoes.",
+            "es": "Sí, quiero el puré de patatas.",
+            "fr": "Oui, je prendrai la purée de pommes de terre.",
+            "pt": "Sim, quero o puré de batata.",
+            "kr": "네, 으깬 감자로 할게요.",
+            "zh": "是的，我要土豆泥。",
+            "jp": "はい、マッシュポテトをお願いします。"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Great choice. Anything to drink?",
+            "en": "Great choice. Anything to drink?",
+            "es": "Buena elección. ¿Algo para beber?",
+            "fr": "Bon choix. Quelque chose à boire ?",
+            "pt": "Boa escolha. Quer algo para beber?",
+            "kr": "좋은 선택이에요. 마실 건 뭐로 드릴까요?",
+            "zh": "好选择。要喝点什么吗？",
+            "jp": "いい選択ですね。お飲み物はいかがですか？"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Just water, please.",
+            "en": "Just water, please.",
+            "es": "Solo agua, por favor.",
+            "fr": "Juste de l'eau, s'il vous plaît.",
+            "pt": "Só água, por favor.",
+            "kr": "물이면 돼요.",
+            "zh": "只要水，谢谢。",
+            "jp": "お水だけで大丈夫です。"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Got it. I'll bring it right out.",
+            "en": "Got it. I'll bring it right out.",
+            "es": "Entendido. Se lo traigo enseguida.",
+            "fr": "Compris. Je vous l'apporte tout de suite.",
+            "pt": "Percebido. Já lhe trago.",
+            "kr": "알겠어요. 곧 가져다드릴게요.",
+            "zh": "明白了，我马上给您端上来。",
+            "jp": "承知しました。すぐにお持ちします。"
+          }
+        }
+      ]
+    }
+  ]
+}

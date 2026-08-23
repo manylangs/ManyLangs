@@ -1,0 +1,71 @@
+{
+  "chapter_id": "conversation_009.runtime.json",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A(고객)와 B(직원)의 역할이 전체 대화에서 일관되게 유지됨. A는 주문/요청, B는 응대/확인으로 명확히 구분됨."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "주문하기, 추천받기, 음료 선택, 확인 응대 등 레스토랑 주문 상황의 전형적인 대화 기능이 정확하게 구현됨."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "전체적으로 자연스러운 구어체 표현을 사용함. 'I'd like to', 'Got it', 'right out' 등 실제 대화에서 자주 쓰이는 표현이 적절히 사용됨. 다만 'Great choice'는 실제 레스토랑 응대에서 조금 더 공손한 표현이 쓰일 수 있으나 A1 레벨에 적합한 자연스러운 표현임."
+    },
+    "register_appropriateness": {
+      "score": 9,
+      "weight": 10,
+      "notes": "레스토랑 상황에 맞는 공손하고 적절한 레지스터를 사용함. 'please', 'I'd like to' 등 공손한 요청 표현이 잘 사용됨. 다만 B의 'Sure'는 좀 더 캐주얼한 느낌이 있어, A1 레벨에서는 'Of course'가 더 적절할 수 있으나 큰 문제는 아님."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 완벽하며, 축약형(I'd, I'll, don't)과 문장 부호가 올바르게 사용됨. A1 레벨에 적합한 간단하고 명확한 문장 구조를 유지함."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "실제 레스토랑에서 바로 사용할 수 있는 실용적인 표현들로 구성됨. 주문, 사이드 메뉴 선택, 음료 주문, 서버의 응대까지 실제 상황을 그대로 반영함."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "특정 문화에 국한되지 않는 보편적인 레스토랑 주문 상황을 다루고 있어 문화적 중립성을 유지함."
+    },
+    "tts_readiness": {
+      "score": 9,
+      "weight": 5,
+      "notes": "TTS로 읽기에 적합한 명확한 문장 구조와 자연스러운 표현을 사용함. 다만 'Got it'과 같은 구어체 표현은 TTS에서 다소 딱딱하게 읽힐 수 있으나, 전반적으로 TTS 제작에 문제없음."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 en이 완전히 일치하며, 모든 언어가 target의 의미를 정확하게 반영함."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "실용적인 주제와 자연스러운 대화로 구성되어 시중 주요 영어 회화 서비스와 비교해도 경쟁력이 있음. A1 레벨에 적합한 난이도와 실용성을 갖추고 있어 학습자의 동기 부여에 효과적임."
+    }
+  },
+  "final_score": 95,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "상위 10%",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "pass": true,
+  "priority_fixes": []
+}

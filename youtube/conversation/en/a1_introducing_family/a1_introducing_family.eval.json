@@ -1,0 +1,71 @@
+{
+  "chapter_id": "conversation_shorts_005_a1",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A와 B의 역할이 전체 대화에서 일관되게 유지됨. A는 질문을, B는 답변을 하는 패턴이 명확하고, 각 발화가 이전 발화에 자연스럽게 이어짐."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "대화의 기능(질문-응답, 정보 요청-제공)이 정확하게 구현됨. 가족 구성원 소개, 나이 묻기, 취미 묻기 등 A1 레벨에 적합한 기능이 자연스럽게 포함됨."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "대화가 전반적으로 자연스럽고 실제 회화에서 사용될 법한 표현들로 구성됨. 'That is sweet.'과 같은 자연스러운 반응이 포함되어 있음. 다만 'He loves it.'에서 'it'이 'playing outside'을 가리키는 것이 문맥상 명확하지만, 실제 구어에서는 'He loves to.' 또는 'He does.'와 같은 형태가 더 자주 쓰일 수 있음."
+    },
+    "register_appropriateness": {
+      "score": 9,
+      "weight": 10,
+      "notes": "전체적으로 친근하고 부드러운 어조를 유지하며, A1 레벨에 적합한 일상적인 표현을 사용함. 'sweet'과 같은 단어가 대화의 친밀감을 높임. 다만 'That is sweet.'은 상황에 따라 다소 문어체적으로 들릴 수 있어, 구어에서는 'That's sweet.'이 더 자연스러움."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 오류가 없으며, A1 레벨에 적합한 간단한 문장 구조를 사용함. 축약형(That's, He's 등)이 아닌 완전한 형태(is, is)를 사용하여 학습자가 구조를 명확히 이해할 수 있게 한 점이 좋음."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "사진 속 가족을 소개하고, 가족 구성원에 대해 묻고 답하는 실제 생활에서 자주 발생하는 상황을 잘 반영함. 나이, 취미 등 일상 대화에서 활용도가 높은 주제를 다룸."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "특정 문화에 국한되지 않는 보편적인 가족 개념과 일상적인 상황을 다루고 있어 문화적 중립성을 잘 유지함."
+    },
+    "tts_readiness": {
+      "score": 9,
+      "weight": 5,
+      "notes": "TTS로 읽기에 적합한 명확한 문장 구조를 가지고 있음. 다만 'That is sweet.'과 같은 감탄문은 TTS가 감정을 자연스럽게 표현하기 어려울 수 있으며, 'He loves it.'의 'it'이 지칭하는 바가 명확하지 않아 TTS 강세 처리에 약간의 주의가 필요할 수 있음."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 en이 완전히 일치하며, 다른 언어 번역도 en을 정확히 따르고 있음. 특히 한국어 번역은 존댓말을 사용하여 en의 공손한 어조를 잘 반영함."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "A1 레벨의 기초 회화 학습자에게 필요한 핵심 표현과 문장 구조를 효과적으로 제시함. 가족 소개라는 친숙한 주제를 통해 학습자의 흥미를 유발할 수 있으며, 짧고 명확한 문장으로 구성되어 초급 학습자가 부담 없이 접근할 수 있음. 다만, 경쟁 서비스들에 비해 대화의 길이나 활동의 다양성 측면에서 다소 단순할 수 있음."
+    }
+  },
+  "final_score": 95,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "A1 레벨의 기초 회화 교재로서 Cambridge English Conversation 및 EBS/YBM 실용영어회화의 초급 단계와 유사한 수준의 품질을 보임. Duolingo나 Speak와 같은 앱 기반 서비스에 비해서는 인터랙티브한 요소는 부족하지만, 문장의 정확성과 자연스러움에 있어서는 동등하거나 우수한 수준.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "pass": true,
+  "priority_fixes": []
+}

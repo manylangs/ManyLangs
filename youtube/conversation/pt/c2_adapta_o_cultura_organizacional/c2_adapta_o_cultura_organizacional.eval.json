@@ -1,0 +1,70 @@
+{
+  "chapter_id": "conversation_060.runtime.json",
+  "target_lang": "pt",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "A와 B 두 화자가 한 세트 안에서 자연스럽게 번갈아 대화하며, 화자 간 역할(신입사원과 기존 직원)이 일관되게 유지됨."
+    },
+    "dialogue_function_accuracy": {
+      "score": 9.5,
+      "weight": 10,
+      "notes": "관찰 언급, 확인, 조언, 감사, 허용 등 대화 기능이 상황에 맞게 정확하게 사용됨. set_id=001 line=3 'Entendi'는 이해를 나타내는 자연스러운 구어체 반응."
+    },
+    "spoken_naturalness": {
+      "score": 9.5,
+      "weight": 15,
+      "notes": "전체적으로 브라질 포르투갈어 원어민의 자연스러운 구어체 표현을 사용함. 'Disponha'(line=6)와 같은 일상적 표현이 자연스럽게 쓰임."
+    },
+    "register_appropriateness": {
+      "score": 10,
+      "weight": 10,
+      "notes": "직장 내 대화에 적합한 격식 수준을 유지하며, 2인칭 대명사는 'você'로 일관되게 사용됨. 'pode me perguntar'(line=6)와 같은 você 활용이 일관적."
+    },
+    "grammar_and_notation": {
+      "score": 9.5,
+      "weight": 10,
+      "notes": "문법적으로 정확하며, 성별 일치('a pontualidade é um valor muito forte')와 표기('reuniões', 'decisões')가 올바름. 'por que' 표기가 필요한 경우는 없었으나 전체적으로 표기법이 정확함."
+    },
+    "situational_practicality": {
+      "score": 9,
+      "weight": 10,
+      "notes": "조직 문화 적응이라는 실용적인 주제를 다루며, 신입사원이 겪을 수 있는 실제 상황(회의 시간, 의사결정 기록)을 반영함. 다양한 표현이 포함되어 있음."
+    },
+    "cultural_neutrality": {
+      "score": 9,
+      "weight": 5,
+      "notes": "브라질 조직 문화의 보편적인 특징(정시성, 문서화)을 다루되, 특정 기업이나 지역에 국한되지 않는 중립적인 내용으로 구성됨."
+    },
+    "tts_readiness": {
+      "score": 9.5,
+      "weight": 5,
+      "notes": "TTS로 읽기에 적합한 명확한 문장 구조와 자연스러운 억양 패턴을 가짐. 축약형이나 불규칙한 표현이 없어 합성음성으로도 자연스럽게 읽힘."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "pt 컬럼이 target 컬럼과 완벽하게 일치함. 6개 문장 모두 target과 동일한 텍스트로 미러 관계가 정확함."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "C2 수준에 맞는 고급 어휘와 자연스러운 표현을 갖추어, PortuguesePod101이나 Semantica의 고급 레슨과 비교해도 손색없는 수준. 실제 업무 상황을 반영한 실용적 대화로 경쟁력이 높음."
+    }
+  },
+  "final_score": 94.5,
+  "market_benchmark": {
+    "comparable_services": [
+      "PortuguesePod101 (Brazilian Portuguese)",
+      "Duolingo Portuguese (Brazilian) Conversations",
+      "Semantica Portuguese",
+      "Pimsleur Brazilian Portuguese"
+    ],
+    "estimated_relative_position": "상위 5% 수준. C2 레벨의 고급 어휘와 실제 업무 상황을 반영한 자연스러운 대화로, PortuguesePod101의 고급 시리즈나 Semantica의 실전 회화와 동등하거나 그 이상의 품질.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}

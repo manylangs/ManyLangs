@@ -1,0 +1,70 @@
+{
+  "chapter_id": "conversation_shorts_010_runtime.json",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "A/B 화자 역할이 전체 대화에서 일관되게 유지됨. 고객(A)과 직원(B)의 역할 구분이 명확하고, 각 발화가 해당 역할에 적합함."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "주문, 확인, 추가 주문, 매장/포장 여부 확인, 결제 금액 안내에 이르는 카페 주문의 전형적인 대화 기능을 정확하게 수행함."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "전체적으로 자연스러운 구어체 표현을 사용함. 'Hi, can I get...', 'Sure, anything else?', 'Will that be for here or to go?' 등 실제 원어민이 사용하는 자연스러운 표현이 잘 반영됨."
+    },
+    "register_appropriateness": {
+      "score": 10,
+      "weight": 10,
+      "notes": "처음 만나는 사이의 공손한 거래 상황에 적합한 레지스터를 일관되게 사용함. 'could I also have...'와 같은 공손한 요청 표현과 직원의 정중한 응답이 적절함."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 오류가 없으며, 문장 부호 및 대문자 사용이 정확함."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "카페에서 실제로 발생할 수 있는 전형적인 주문 상황을 매우 실용적으로 반영함. A1 레벨 학습자가 실제로 활용할 수 있는 고빈도 표현들로 구성됨."
+    },
+    "cultural_neutrality": {
+      "score": 9,
+      "weight": 5,
+      "notes": "미국 달러 사용을 제외하면 특정 문화에 치우치지 않는 중립적인 상황을 다루고 있음. 달러 사용은 영어권 문화 학습의 일부로 간주할 수 있어 문제없음."
+    },
+    "tts_readiness": {
+      "score": 9,
+      "weight": 5,
+      "notes": "TTS 변환에 용이한 짧고 명확한 문장들로 구성됨. 다만 'eight dollars and fifty cents'와 같은 숫자 표현은 TTS가 정확히 읽을 수 있도록 표기가 명확함."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 en이 모든 문장에서 완벽하게 일치함."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "실용적인 주제와 자연스러운 표현으로 구성되어 시중 주요 영어 회화 학습 서비스와 비교해도 손색없는 수준임. A1 레벨에 맞는 난이도와 실용성의 균형이 좋음."
+    }
+  },
+  "final_score": 96.5,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "상위 10% 수준. 실용적인 주제와 자연스러운 대화 흐름, 명확한 화자 구분 등에서 주요 경쟁 서비스 대비 우수한 품질을 보임.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": []
+}

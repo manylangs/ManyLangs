@@ -1,0 +1,71 @@
+{
+  "chapter_id": "conversation_shorts_a1_003_runtime.json",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "A와 B 화자가 전 세트에서 일관되게 유지됨. 역할 혼동 없음."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "자기소개, 질문, 칭찬, 격려 등 대화 기능이 자연스럽게 연결됨. A1 수준에 적합한 단순한 정보 교환 구조."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "전체적으로 자연스러운 회화체. 'Oh, cool!', 'That's awesome!', 'Well, it sounds great to me!' 등 구어적 표현이 잘 사용됨. 'a work in progress'는 A1 학습자에게 다소 높은 수준일 수 있으나, 맥락상 이해 가능."
+    },
+    "register_appropriateness": {
+      "score": 10,
+      "weight": 10,
+      "notes": "친근하지만 예의를 갖춘 중립적 레지스터로 일관됨. 'I'm also learning' 등 공손한 표현 사용."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 정확하며, 구두점과 표기법에 오류 없음. A1 레벨에 적합한 현재 시제와 진행형 사용."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "국적과 언어에 관한 기본 대화는 실생활에서 자주 발생하는 상황으로, 학습자에게 실용적 가치가 높음."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "브라질이라는 특정 국가를 언급하나, 문화적 고정관념이나 민감한 이슈 없이 중립적이고 보편적인 대화 구성."
+    },
+    "tts_readiness": {
+      "score": 9,
+      "weight": 5,
+      "notes": "축약형(I'm, it's, that's)이 자연스럽게 사용되어 TTS 발화에 적합. 'Oh, cool!'과 같은 감탄사도 TTS에서 자연스럽게 처리 가능한 수준."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 en이 모든 문장에서 완전히 일치함. 미러 구조 정확."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "A1 레벨 교재로서 Cambridge나 Duolingo의 유사 대화 콘텐츠와 비교해 자연스러운 구어체와 실용적 주제로 경쟁력 있음. 다만 'a work in progress' 같은 숙어는 A1 레벨에서 다소 높을 수 있어 약간의 조정 여지."
+    }
+  },
+  "final_score": 96.5,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "상위 10% 수준. A1 레벨에서 자연스러운 구어체와 실용적 주제를 잘 결합했으며, Cambridge와 Duolingo의 유사 레벨 대화 콘텐츠와 비교해도 손색없음.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}

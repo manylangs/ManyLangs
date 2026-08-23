@@ -1,0 +1,43 @@
+{
+  "image": "a1_ordering_at_a_cafe(2).png",
+  "width": 928,
+  "height": 1648,
+  "speakers": {
+    "A": {
+      "role": "customer",
+      "position": "left",
+      "face_center": {
+        "x": 278,
+        "y": 680
+      },
+      "bubble_region": {
+        "x1": 60,
+        "y1": 260,
+        "x2": 430,
+        "y2": 530
+      },
+      "tail_target": {
+        "x": 300,
+        "y": 650
+      }
+    },
+    "B": {
+      "role": "barista",
+      "position": "right",
+      "face_center": {
+        "x": 703,
+        "y": 566
+      },
+      "bubble_region": {
+        "x1": 500,
+        "y1": 270,
+        "x2": 875,
+        "y2": 450
+      },
+      "tail_target": {
+        "x": 680,
+        "y": 535
+      }
+    }
+  }
+}

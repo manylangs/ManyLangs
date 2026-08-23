@@ -1,0 +1,71 @@
+{
+  "chapter_id": "conversation_008.runtime.json",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "A와 B 화자가 각 블록에서 일관되게 유지되며, 대화의 흐름에 맞게 교대합니다."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "장소(공원)에 대한 묘사, 감정 표현, 제안, 동의 등 대화의 기능이 자연스럽고 정확하게 구현되었습니다."
+    },
+    "spoken_naturalness": {
+      "score": 10,
+      "weight": 15,
+      "notes": "실제 회화에서 사용되는 자연스러운 표현과 어휘가 사용되었습니다. 'It is!', 'Me too.', 'Good idea.' 등의 짧은 응답이 자연스럽습니다."
+    },
+    "register_appropriateness": {
+      "score": 10,
+      "weight": 10,
+      "notes": "A1 레벨에 맞는 친근하고 일상적인 대화체가 일관되게 사용되었습니다."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 정확하며, 문장 부호 및 띄어쓰기가 올바르게 사용되었습니다."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "공원에서 휴식을 취하며 대화하는 실제 상황을 잘 반영하여 실용적입니다."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "특정 문화에 국한되지 않는 보편적인 상황과 표현을 사용하여 문화적 중립성을 유지합니다."
+    },
+    "tts_readiness": {
+      "score": 10,
+      "weight": 5,
+      "notes": "TTS로 읽기에 적합한 명확하고 자연스러운 문장 구조를 가지고 있습니다."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 en이 완벽하게 일치합니다."
+    },
+    "market_competitiveness": {
+      "score": 10,
+      "weight": 15,
+      "notes": "A1 레벨 학습자에게 필요한 핵심 어휘와 표현을 효과적으로 구성하여 시중 최상위 서비스와 견줄 만한 수준입니다."
+    }
+  },
+  "final_score": 100,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "A1 레벨 교재로서 시중 최상위 서비스와 동등하거나 그 이상의 품질을 갖추었습니다.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}

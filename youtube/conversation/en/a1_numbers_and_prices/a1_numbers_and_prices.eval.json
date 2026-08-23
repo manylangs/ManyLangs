@@ -1,0 +1,70 @@
+{
+  "chapter_id": "conversation_006.runtime.json",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A(고객)와 B(점원)의 역할이 전체 대화에서 일관되게 유지됨. A는 질문, 구매 결정, 결제를 하고 B는 답변, 권유, 거래 완료를 함."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "가격 묻기, 답변, 구매 결정, 가방 제공, 결제, 거래 완료까지 전형적인 쇼핑 대화의 기능적 흐름이 정확하게 구현됨."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "대화가 전반적으로 자연스러움. 다만 'Here is twenty dollars'와 'Perfect. Here is your change'는 실제 구어에서 더 자주 쓰이는 'Here's twenty dollars'와 'Here's your change'에 비해 약간 격식 있어 보이나, A1 레벨에서는 명확한 발음을 위해 오히려 적절할 수 있음."
+    },
+    "register_appropriateness": {
+      "score": 9,
+      "weight": 10,
+      "notes": "점원과 고객 사이의 공손한 거래 상황에 맞는 적절한 레지스터를 사용함. 'Would you like a bag?'은 점원의 공손한 표현으로 적절함."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 완벽하며, 구두점, 대문자 사용, 축약형(I'll, It's, Here's)이 모두 올바르게 사용됨."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "가격 묻기, 지불, 거스름돈 받기 등 실제 여행이나 일상생활에서 자주 마주치는 실용적인 상황을 다루고 있어 학습자의 실제 활용도가 높음."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "달러와 티셔츠 같은 보편적인 소재를 사용하여 특정 문화에 치우치지 않음."
+    },
+    "tts_readiness": {
+      "score": 9,
+      "weight": 5,
+      "notes": "TTS로 읽기에 적합한 명확한 문장 구조를 가짐. 'fifteen dollars and ninety-nine cents'와 같은 숫자/금액 표현은 TTS가 정확히 읽을 수 있음. 다만 'T-shirt'의 발음 변형 가능성이 있어 약간의 주의가 필요함."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 en이 모든 문장에서 완벽하게 일치함."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "A1 레벨의 기초 회화 학습자에게 필요한 핵심 표현을 간결하고 효과적으로 담고 있음. 벤치마크 서비스들의 유사한 쇼핑 단원과 비교해도 손색없는 구성이며, 특히 실용성과 명확성에서 우수함."
+    }
+  },
+  "final_score": 95,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "상위 10% 수준. A1 레벨 쇼핑 회화 단원으로서 실용성, 자연스러움, 교육적 효과성 모두 우수하여 시중 최상위 서비스와 동급 이상의 품질을 보임.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": []
+}

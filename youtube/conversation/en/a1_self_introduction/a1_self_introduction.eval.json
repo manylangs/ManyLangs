@@ -1,0 +1,71 @@
+{
+  "chapter_id": "conversation_shorts_002",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A와 B의 역할이 전체 대화에서 일관되게 유지됨. A는 질문을 주도하고 B는 응답하는 패턴이 자연스럽고 일관적임."
+    },
+    "dialogue_function_accuracy": {
+      "score": 9.5,
+      "weight": 10,
+      "notes": "자기소개, 상대 이름 묻기, 출신지 묻기, 환영 표현 등 대화 기능이 A1 레벨에 적절하게 구성됨. 각 발화가 명확한 의사소통 기능을 수행함."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "대화가 전반적으로 자연스러운 회화체를 유지함. 'How about you?', 'That's cool' 등의 구어적 표현이 적절히 사용됨. 다만 'I moved here last year'에서 'here'의 구체적 맥락이 다소 모호할 수 있으나 A1 레벨에서는 허용 가능한 수준."
+    },
+    "register_appropriateness": {
+      "score": 9,
+      "weight": 10,
+      "notes": "A1 레벨에 적합한 캐주얼한 회화체로 일관됨. 한국어 번역에서 '어디에서 오셨어요?'와 '당신은요?'가 존댓말과 반말의 혼재를 보이나, 이는 한국어의 사회적 화용론적 특성을 반영한 것으로 볼 수 있음."
+    },
+    "grammar_and_notation": {
+      "score": 9.5,
+      "weight": 10,
+      "notes": "모든 언어에서 문법적 오류가 발견되지 않음. 구두점, 대문자 사용, 축약형 사용이 일관되고 정확함. 프랑스어의 공백 처리, 스페인어의 역물음표 등 언어별 표기 규칙이 올바르게 적용됨."
+    },
+    "situational_practicality": {
+      "score": 9.5,
+      "weight": 10,
+      "notes": "첫 만남에서의 자기소개라는 가장 기본적이고 실용적인 상황을 다루고 있음. 실제 회화에서 즉시 활용 가능한 표현들로 구성됨."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "특정 문화권에 편향되지 않은 중립적인 내용. 미국 도시명(시카고, 오스틴)이 등장하지만 이는 영어 학습 맥락에서 자연스러운 배경 설정이며 문화적 민감성을 유발하지 않음."
+    },
+    "tts_readiness": {
+      "score": 9,
+      "weight": 5,
+      "notes": "TTS 합성에 적합한 명확한 문장 구조와 자연스러운 발화 리듬을 가짐. 축약형(I'm, What's, That's)이 포함되어 실제 발화 패턴과 유사함. 다만 'neighborhood'와 같은 단어는 A1 레벨에서 다소 발음이 어려울 수 있으나 TTS에는 문제없음."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 en이 완전히 일치함. 모든 문장에서 target=en 미러가 정확하게 유지됨."
+    },
+    "market_competitiveness": {
+      "score": 8.5,
+      "weight": 15,
+      "notes": "A1 레벨 자기소개라는 기본 주제는 시장에서 흔한 소재이나, 6개 언어 병기와 대화형 구성은 차별화 요소가 있음. 다만 단일 세트(6문장)로는 분량이 다소 짧아 경쟁 서비스 대비 학습 볼륨이 부족할 수 있음. 더 다양한 상황(직업, 취미 등)이 포함되면 경쟁력이 높아질 것."
+    }
+  },
+  "final_score": 92.75,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "상위 15% 수준. A1 레벨의 기초 회화라는 점에서 Cambridge와 EBS/YBM의 초급 과정과 유사하나, 다국어 병기와 대화형 구성이 차별화 요소. Duolingo나 Speak의 인터랙티브 기능에는 미치지 못하나 교재의 정확성과 자연스러움은 경쟁력 있음.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}
