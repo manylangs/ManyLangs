@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a2",
+    "id": "011"
+  },
+  "title": {
+    "target": "쇼핑",
+    "en": "Shopping",
+    "es": "Compras",
+    "fr": "Shopping",
+    "pt": "Compras",
+    "kr": "쇼핑",
+    "zh": "购物",
+    "jp": "ショッピング",
+    "ru": "Покупки"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "준호 씨, 이 옷 어때요?",
+            "en": "Junho, how does this shirt look?",
+            "es": "Junho, ¿qué te parece esta ropa?",
+            "fr": "Junho, comment tu trouves cette tenue ?",
+            "pt": "Junho, o que achas desta roupa?",
+            "kr": "준호 씨, 이 옷 어때요?",
+            "zh": "俊浩，这件衣服怎么样？",
+            "jp": "ジュノさん、この服どうですか？",
+            "ru": "Джунхо, как тебе эта одежда?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "색이 정말 예쁘네요. 잘 어울려요.",
+            "en": "The color is really pretty. It suits you well.",
+            "es": "El color es muy bonito. Te queda muy bien.",
+            "fr": "La couleur est vraiment jolie. Elle te va bien.",
+            "pt": "A cor é mesmo bonita. Fica-te bem.",
+            "kr": "색이 정말 예쁘네요. 잘 어울려요.",
+            "zh": "颜色真好看。很适合你。",
+            "jp": "色が本当にきれいですね。よく似合っていますよ。",
+            "ru": "Цвет действительно красивый. Тебе очень идёт."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "정말요? 그런데 조금 비싸지 않아요?",
+            "en": "Really? But isn't it a bit expensive?",
+            "es": "¿De verdad? Pero, ¿no es un poco cara?",
+            "fr": "Vraiment ? Mais elle n'est pas un peu chère ?",
+            "pt": "A sério? Mas não é um pouco cara?",
+            "kr": "정말요? 그런데 조금 비싸지 않아요?",
+            "zh": "真的吗？但是是不是有点贵？",
+            "jp": "本当ですか？でも、ちょっと高くないですか？",
+            "ru": "Правда? Но разве это не немного дорого?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "괜찮아요. 그만한 값어치는 있어 보여요.",
+            "en": "It's fine. It seems worth the price.",
+            "es": "Está bien. Parece que vale lo que cuesta.",
+            "fr": "C'est bon. Elle a l'air d'en valoir la peine.",
+            "pt": "Não faz mal. Parece que vale o preço.",
+            "kr": "괜찮아요. 그만한 값어치는 있어 보여요.",
+            "zh": "没关系。看起来挺值的。",
+            "jp": "大丈夫ですよ。それだけの価値はありそうです。",
+            "ru": "Нормально. Похоже, она стоит своих денег."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 이걸로 살까요?",
+            "en": "Then should I get this one?",
+            "es": "Entonces, ¿me la compro?",
+            "fr": "Alors, je la prends ?",
+            "pt": "Então, compro esta?",
+            "kr": "그럼 이걸로 살까요?",
+            "zh": "那我们买这件吧？",
+            "jp": "じゃあ、これにしましょうか？",
+            "ru": "Тогда возьмём эту?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 그렇게 하세요. 후회하지 않을 거예요.",
+            "en": "Yes, go ahead. You won't regret it.",
+            "es": "Sí, hazlo. No te arrepentirás.",
+            "fr": "Oui, fais comme ça. Tu ne le regretteras pas.",
+            "pt": "Sim, faz isso. Não te vais arrepender.",
+            "kr": "네, 그렇게 하세요. 후회하지 않을 거예요.",
+            "zh": "好，那就买吧。你不会后悔的。",
+            "jp": "はい、そうしてください。後悔しないと思いますよ。",
+            "ru": "Да, давай. Ты не пожалеешь."
+          }
+        }
+      ]
+    }
+  ]
+}

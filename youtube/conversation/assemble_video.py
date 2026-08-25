@@ -43,11 +43,25 @@ SRT 타이밍에 맞춰 정확하게 전환한다.
 
 학습언어 자막은 추후 YouTube CC 자막 트랙으로 별도 업로드한다.
 
+최종 영상(mp4) 완성 직후, 같은 폴더에 TikTok 설명(Description)용
+캡션 텍스트 파일({base}.tiktok.txt)도 함께 생성한다.
+TikTok Studio의 설명 필드는 URL을 실제 클릭 가능한 링크로 만들어주므로,
+Instagram과 달리 Google Form 무료체험 링크를 그대로 노출한다
+(post_facebook.py의 FREE_TRIAL_CTA와 동일한 링크/문구를 재사용).
+캡션 첫 줄은 "{언어} Conversation | {레벨} | {주제}" 형태로 시작한다.
+
 사용:
 
 cd /Users/junghasuk/Desktop/ManyLangs/web/youtube/conversation
 
-python3 assemble_video.py en/a1_ordering_cafe
+python3 assemble_video.py
+
+  -> 언어 코드 입력
+  -> conversation/{lang}/ 아래 a1_~c2_ 로 시작하는 폴더를 번호로 보여주고 선택
+  -> 선택한 폴더로 조립 진행
+
+(파일명을 직접 입력하는 방식은 더 이상 사용하지 않음 - 다른 업로더
+스크립트들과 동일하게 언어 선택 -> 폴더 번호 선택 방식으로 통일)
 """
 
 import argparse
@@ -101,6 +115,76 @@ SRT_TIME_RE = re.compile(
     r"(\d{2}):(\d{2}):(\d{2}),(\d{3})\s*-->\s*"
     r"(\d{2}):(\d{2}):(\d{2}),(\d{3})"
 )
+
+
+# ==========================================================
+# 회화 폴더 선택 (언어 코드 입력 -> 폴더 번호 선택)
+#
+# post_facebook.py / post_instagram.py / build_x_post.py 와 동일한
+# 흐름 - assemble_video.py가 위치한 conversation/ 폴더 아래
+# {lang}/ 안의 a1_~c2_ 로 시작하는 폴더를 대상으로 한다.
+# ==========================================================
+
+# assemble_video.py 자신이 conversation/ 폴더에 위치한다고 가정
+CONVERSATION_DIR = Path(__file__).resolve().parent
+
+LANGUAGES = {
+    "en": "English",
+    "kr": "Korean",
+    "ja": "Japanese",
+    "zh": "Chinese",
+    "es": "Spanish",
+    "fr": "French",
+    "pt": "Portuguese",
+    "de": "German",
+}
+
+
+def prompt_language():
+    print("\n지원 언어:")
+
+    for code, name in LANGUAGES.items():
+        print(f"  {code} - {name}")
+
+    lang_code = input("언어 코드 입력: ").strip().lower()
+
+    if lang_code not in LANGUAGES:
+        raise ValueError(f"지원하지 않는 언어 코드입니다: {lang_code}")
+
+    return lang_code
+
+
+def list_language_folders(lang_code):
+    lang_dir = CONVERSATION_DIR / lang_code
+
+    if not lang_dir.exists():
+        raise FileNotFoundError(f"언어 폴더가 없습니다:\n{lang_dir}")
+
+    folders = [
+        d
+        for d in sorted(lang_dir.iterdir())
+        if d.is_dir()
+        and re.match(r"^(a1|a2|b1|b2|c1|c2)_", d.name, re.IGNORECASE)
+    ]
+
+    if not folders:
+        raise FileNotFoundError(f"회화 폴더가 없습니다:\n{lang_dir}")
+
+    return folders
+
+
+def prompt_folder_selection(folders):
+    print("\n조립 가능한 폴더:")
+
+    for i, d in enumerate(folders, start=1):
+        print(f"  {i:>2} - {d.name}")
+
+    choice = input("번호 선택: ").strip()
+
+    if not choice.isdigit() or not (1 <= int(choice) <= len(folders)):
+        raise ValueError(f"잘못된 번호: {choice}")
+
+    return folders[int(choice) - 1]
 
 
 # ==========================================================
@@ -739,6 +823,109 @@ def concat_clips(
 
 
 # ==========================================================
+# TikTok 설명(Description) 캡션 텍스트 생성
+#
+# TikTok Studio 설명 필드는 URL을 실제 클릭 가능한 링크로 만들어주므로,
+# Instagram과 달리 Google Form 무료체험 링크를 그대로 노출한다
+# (post_facebook.py의 FREE_TRIAL_CTA와 동일한 링크/문구를 재사용).
+#
+# 캡션 순서:
+#   1) {언어} Conversation | {레벨} | {주제}
+#   2) 무료체험 CTA (Google Form 링크)
+#   3) 자막 지원 언어 안내
+#   4) ManyLangs 태그라인 + 사이트 링크
+# ==========================================================
+
+SUBTITLE_LANGS = ["en", "es", "pt", "fr", "kr", "ja", "zh", "ru"]
+
+SUBTITLE_LANG_NAMES = {
+    "en": "English",
+    "es": "Spanish",
+    "pt": "Portuguese",
+    "fr": "French",
+    "kr": "Korean",
+    "ja": "Japanese",
+    "zh": "Mandarin Chinese",
+    "ru": "Russian",
+}
+
+FREE_TRIAL_CTA = (
+    "🎁 Want a 7-day free trial? Apply here:\n"
+    "https://docs.google.com/forms/d/e/"
+    "1FAIpQLSeEUOaoBonuInr1fjuC3KfWgP24aYD1wXkjnFxOsA9bm-1ExQ/viewform"
+)
+
+MANYLANGS_TAGLINE = (
+    "🌐 Grammar · Vocabulary · Idiom · Real-Life Situations · Conversation\n"
+    "👉 www.manylangs.studio"
+)
+
+
+def build_subtitle_promo(lang_code, language_name):
+    """
+    자막 지원 7개 언어 중, 지금 게시하는 언어 자신은 제외하고 안내한다.
+    """
+    if lang_code in SUBTITLE_LANGS:
+        other_codes = [c for c in SUBTITLE_LANGS if c != lang_code]
+    else:
+        other_codes = SUBTITLE_LANGS[:]
+
+    other_names = [SUBTITLE_LANG_NAMES[c] for c in other_codes]
+
+    if len(other_names) == 1:
+        joined = other_names[0]
+    else:
+        joined = ", ".join(other_names[:-1]) + f", and {other_names[-1]}"
+
+    return f"📚 Study {language_name} conversations with subtitles in {joined}!"
+
+
+def extract_level(folder_name):
+    match = re.match(r"^(a1|a2|b1|b2|c1|c2)_", folder_name, re.IGNORECASE)
+
+    if not match:
+        raise ValueError(f"레벨을 폴더명에서 찾을 수 없습니다:\n{folder_name}")
+
+    return match.group(1).upper()
+
+
+def folder_name_to_title(folder_name):
+    name = re.sub(r"^(a1|a2|b1|b2|c1|c2)_", "", folder_name, flags=re.IGNORECASE)
+    words = [w for w in name.split("_") if w]
+    return " ".join(w.capitalize() for w in words)
+
+
+def build_tiktok_caption(lang_code, folder_name):
+    language_name = LANGUAGES[lang_code]
+    level = extract_level(folder_name)
+    conversation_title = folder_name_to_title(folder_name)
+
+    subtitle_promo = build_subtitle_promo(lang_code, language_name)
+
+    lines = [
+        f"{language_name} Conversation | {level} | {conversation_title}",
+        "",
+        FREE_TRIAL_CTA,
+        "",
+        subtitle_promo,
+        "",
+        MANYLANGS_TAGLINE,
+    ]
+
+    return "\n".join(lines).strip()
+
+
+def write_tiktok_caption_file(item_dir, lang_code, folder_name):
+    caption = build_tiktok_caption(lang_code, folder_name)
+    caption_path = item_dir / f"{folder_name}.tiktok.txt"
+    caption_path.write_text(caption, encoding="utf-8")
+
+    print(f"\n[TikTok 캡션 저장 완료] {caption_path}")
+
+    return caption_path
+
+
+# ==========================================================
 # 전체 조립
 # ==========================================================
 
@@ -998,6 +1185,20 @@ def assemble(
         f"\n[완성] {final_path}"
     )
 
+    # ------------------------------------------------------
+    # TikTok 설명(Description) 캡션 텍스트 파일 생성
+    #
+    # item_dir.parent.name = 언어 코드 (예: en, kr ...)
+    # ------------------------------------------------------
+
+    lang_code = item_dir.parent.name
+
+    write_tiktok_caption_file(
+        item_dir,
+        lang_code,
+        base
+    )
+
     return final_path
 
 
@@ -1012,15 +1213,8 @@ def main():
             "001~006 CC 안내 + "
             "6장 이미지 미세 줌 + "
             "target 오디오 + "
-            "outro -> 최종 mp4"
-        )
-    )
-
-    parser.add_argument(
-        "item_dir",
-        help=(
-            "shorts_pipeline.py가 만든 "
-            "{filename_base} 폴더 경로"
+            "outro -> 최종 mp4 "
+            "+ TikTok 캡션 txt"
         )
     )
 
@@ -1031,8 +1225,14 @@ def main():
 
     args = parser.parse_args()
 
+    # 파일명 직접 입력 대신, 다른 업로더 스크립트들과 동일하게
+    # 언어 코드 입력 -> a1_~c2_ 폴더 번호 선택 방식을 사용한다.
+    lang_code = prompt_language()
+    folders = list_language_folders(lang_code)
+    selected_dir = prompt_folder_selection(folders)
+
     assemble(
-        args.item_dir,
+        selected_dir,
         outro_asset=args.outro
     )
 

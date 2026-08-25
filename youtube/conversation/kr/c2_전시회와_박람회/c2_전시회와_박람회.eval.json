@@ -1,0 +1,70 @@
+{
+  "chapter_id": "conversation_051_runtime.json",
+  "target_lang": "kr",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "A/B 화자가 한 세트 내에서 자연스럽게 번갈아 대화하며, 역할(준호-지은, 상사-부하)이 일관되게 유지됨."
+    },
+    "dialogue_function_accuracy": {
+      "score": 9,
+      "weight": 10,
+      "notes": "정보 전달, 요청, 동의, 제안, 수락 등 대화 기능이 명확하고 자연스럽게 구현됨. set_id=001 line=2에서 '~해 주시면 좋겠어요'를 통한 공손한 요청이 효과적으로 드러남."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "전체적으로 자연스러운 구어체를 사용함. set_id=001 line=3의 '~할 것 같아요'와 line=5의 '~도록 할게요'는 한국어 회화에서 자주 쓰이는 표현으로 자연스러움. 다만, line=2의 '그래서 지은 씨는 부스 운영 계획을 한번 검토해 주시면 좋겠어요'는 '지은 씨'를 주어로 사용한 것이 다소 어색할 수 있으나, 문맥상 이해 가능한 수준임."
+    },
+    "register_appropriateness": {
+      "score": 10,
+      "weight": 10,
+      "notes": "직장 내 상사와 부하 간의 대화로, '-요'체를 사용하여 적절한 존대와 격식을 유지함. '~해 주시면 좋겠어요', '~하도록 할게요' 등 상황에 맞는 공손한 표현을 사용함."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적 오류나 표기 오류를 찾을 수 없음. 모든 문장이 정확한 한국어 문법을 따르고 있음."
+    },
+    "situational_practicality": {
+      "score": 9,
+      "weight": 10,
+      "notes": "국제 전자 박람회 참가라는 구체적인 비즈니스 상황을 다루어 실용성이 높음. 부스 운영, 경쟁, 체험형 콘텐츠, 준비 점검 등 실제 업무에서 사용할 수 있는 어휘와 표현이 풍부함."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "한국어 원문은 한국의 직장 문화를 반영하지만, 특정 문화에 국한되지 않는 보편적인 비즈니스 상황을 다루고 있어 다른 언어로 번역되었을 때도 자연스럽게 이해될 수 있음."
+    },
+    "tts_readiness": {
+      "score": 10,
+      "weight": 5,
+      "notes": "모든 문장이 TTS로 읽기에 적합한 길이와 구조를 가지고 있음. 축약형이나 불완전한 문장이 없어 합성 음성으로 출력했을 때에도 자연스러울 것으로 판단됨."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 kr이 완전히 일치함. 모든 문장에서 target과 kr의 문자열이 동일함을 확인함."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "C2 레벨에 맞는 고급 어휘와 비즈니스 상황을 다루어 시중 교재 대비 경쟁력이 높음. 다만, 대화가 다소 형식적이고 짧아 실제 회화에서의 유연성은 다소 부족할 수 있음."
+    }
+  },
+  "final_score": 95,
+  "market_benchmark": {
+    "comparable_services": [
+      "Talk To Me In Korean",
+      "Duolingo Korean Conversations",
+      "세종한국어/TOPIK",
+      "Pimsleur Korean"
+    ],
+    "estimated_relative_position": "C2 레벨의 비즈니스 한국어 회화 교재로서, TTMIK의 고급 회화 과정이나 세종한국어 고급 교재와 유사한 수준. 특히, 실제 비즈니스 상황을 다루는 실용성에서 경쟁력이 높음.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "pass": true,
+  "priority_fixes": []
+}

@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "b1",
+    "id": "021"
+  },
+  "title": {
+    "target": "Dormitory Life",
+    "en": "Dormitory Life",
+    "es": "La vida en la residencia",
+    "fr": "La vie en dortoir",
+    "pt": "Vida no Dormitório",
+    "kr": "기숙사 생활",
+    "zh": "宿舍生活",
+    "jp": "寮生活"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Hey, how's your new dorm room?",
+            "en": "Hey, how's your new dorm room?",
+            "es": "Oye, ¿qué tal tu nueva habitación en la residencia?",
+            "fr": "Hé, comment est ta nouvelle chambre de dortoir ?",
+            "pt": "Olá, como está o teu novo quarto no dormitório?",
+            "kr": "야, 새 기숙사 방은 어때?",
+            "zh": "嘿，你的新宿舍房间怎么样？",
+            "jp": "ねえ、新しい寮の部屋はどう？"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "It's pretty nice, but the walls are really thin.",
+            "en": "It's pretty nice, but the walls are really thin.",
+            "es": "Es bastante bonita, pero las paredes son muy finas.",
+            "fr": "Elle est plutôt sympa, mais les murs sont vraiment fins.",
+            "pt": "É bastante bom, mas as paredes são mesmo finas.",
+            "kr": "꽤 괜찮은데, 벽이 정말 얇아.",
+            "zh": "挺好的，就是墙真的很薄。",
+            "jp": "結構いいけど、壁がすごく薄いんだ。"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Oh, that's a bummer. Can you hear your neighbors a lot?",
+            "en": "Oh, that's a bummer. Can you hear your neighbors a lot?",
+            "es": "Ah, qué pena. ¿Oyes mucho a tus vecinos?",
+            "fr": "Oh, c'est dommage. Tu entends beaucoup tes voisins ?",
+            "pt": "Oh, que chatice. Consegues ouvir muito os teus vizinhos?",
+            "kr": "아, 그건 좀 아쉽네. 옆방 소리가 많이 들려?",
+            "zh": "哦，那真遗憾。你能经常听到邻居的声音吗？",
+            "jp": "ああ、それは残念だね。隣の人の声がよく聞こえるの？"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Yeah, especially at night. I can hear everything they say.",
+            "en": "Yeah, especially at night. I can hear everything they say.",
+            "es": "Sí, sobre todo por la noche. Puedo oír todo lo que dicen.",
+            "fr": "Ouais, surtout la nuit. J'entends tout ce qu'ils disent.",
+            "pt": "Sim, especialmente à noite. Consigo ouvir tudo o que eles dizem.",
+            "kr": "응, 특히 밤에 그래. 그들이 말하는 게 다 들려.",
+            "zh": "是啊，尤其是晚上。他们说什么我都能听见。",
+            "jp": "うん、特に夜はね。何を言ってるか全部聞こえるよ。"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "That must be annoying. Have you tried talking to them about it?",
+            "en": "That must be annoying. Have you tried talking to them about it?",
+            "es": "Eso debe ser molesto. ¿Has intentado hablar con ellos?",
+            "fr": "Ça doit être agaçant. Tu as essayé de leur en parler ?",
+            "pt": "Isso deve ser irritante. Já tentaste falar com eles sobre isso?",
+            "kr": "그거 정말 짜증 나겠다. 그들한테 얘기해 본 적 있어?",
+            "zh": "那一定很烦人。你有没有试着跟他们谈谈这件事？",
+            "jp": "それは困るね。そのことについて話してみたの？"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Not yet, but I think I'll mention it tomorrow.",
+            "en": "Not yet, but I think I'll mention it tomorrow.",
+            "es": "Todavía no, pero creo que lo mencionaré mañana.",
+            "fr": "Pas encore, mais je pense que j'en parlerai demain.",
+            "pt": "Ainda não, mas acho que vou mencionar isso amanhã.",
+            "kr": "아직은 아니지만, 내일 말해 볼 생각이야.",
+            "zh": "还没有，不过我想明天会提一下。",
+            "jp": "まだだけど、明日言ってみようと思ってる。"
+          }
+        }
+      ]
+    }
+  ]
+}

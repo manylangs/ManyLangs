@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a2",
+    "id": "013"
+  },
+  "title": {
+    "target": "Time and Days",
+    "en": "Time and Days",
+    "es": "La hora y los días",
+    "fr": "L'heure et les jours",
+    "pt": "Tempo e Dias",
+    "kr": "시간과 요일",
+    "zh": "时间和日期",
+    "jp": "時間と曜日",
+    "ru": "Время и дни"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "What time does the movie start tonight?",
+            "en": "What time does the movie start tonight?",
+            "es": "¿A qué hora empieza la película esta noche?",
+            "fr": "À quelle heure commence le film ce soir ?",
+            "pt": "A que horas começa o filme hoje à noite?",
+            "kr": "오늘 밤 영화 몇 시에 시작해?",
+            "zh": "今晚的电影几点开始？",
+            "jp": "今夜、映画は何時に始まりますか？",
+            "ru": "Во сколько сегодня вечером начинается фильм?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "It starts at seven thirty, so we should leave by six forty-five.",
+            "en": "It starts at seven thirty, so we should leave by six forty-five.",
+            "es": "Empieza a las siete y media, así que deberíamos salir a las seis y cuarenta y cinco.",
+            "fr": "Il commence à sept heures et demie, donc on devrait partir à sept heures moins le quart.",
+            "pt": "Começa às sete e meia, por isso devemos sair às seis e quarenta e cinco.",
+            "kr": "일곱 시 삼십 분에 시작해서, 여섯 시 사십오 분까지는 출발해야 해.",
+            "zh": "七点半开始，所以我们最晚六点四十五分出发。",
+            "jp": "七時半に始まります。だから、六時四十五分には出発しないといけませんね。",
+            "ru": "Он начинается в семь тридцать, так что нам нужно выйти не позже шести сорока пяти."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "That gives us enough time to grab a quick dinner first.",
+            "en": "That gives us enough time to grab a quick dinner first.",
+            "es": "Eso nos da tiempo de sobra para cenar algo rápido antes.",
+            "fr": "Ça nous laisse assez de temps pour manger un dîner rapide d'abord.",
+            "pt": "Isso dá-nos tempo suficiente para comer qualquer coisa rápida primeiro.",
+            "kr": "그러면 먼저 간단히 저녁 먹을 시간이 충분하네.",
+            "zh": "那我们有足够的时间先快速吃个晚饭。",
+            "jp": "それなら、先に軽く夕食を食べる時間が十分ありますね。",
+            "ru": "Тогда у нас будет достаточно времени, чтобы быстро поужинать."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Perfect. Do you want to meet at the station at six fifteen?",
+            "en": "Perfect. Do you want to meet at the station at six fifteen?",
+            "es": "Perfecto. ¿Quedamos en la estación a las seis y cuarto?",
+            "fr": "Parfait. Tu veux qu'on se retrouve à la gare à six heures et quart ?",
+            "pt": "Perfeito. Queres encontrar-te comigo na estação às seis e quinze?",
+            "kr": "좋아. 여섯 시 십오 분에 역에서 만날래?",
+            "zh": "太好了。我们六点十五分在车站见面怎么样？",
+            "jp": "完璧です。六時十五分に駅で会いましょうか？",
+            "ru": "Отлично. Встретимся на станции в шесть пятнадцать?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Sure, I'll be there. See you then!",
+            "en": "Sure, I'll be there. See you then!",
+            "es": "Claro, allí estaré. ¡Hasta entonces!",
+            "fr": "Bien sûr, je serai là. À tout à l'heure !",
+            "pt": "Claro, eu estarei lá. Até já!",
+            "kr": "그래, 거기 있을게. 그때 보자!",
+            "zh": "好的，我会到的。到时候见！",
+            "jp": "いいですよ、行きます。じゃあ、また後で！",
+            "ru": "Конечно, я буду там. До встречи!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Great, see you tonight!",
+            "en": "Great, see you tonight!",
+            "es": "¡Genial, nos vemos esta noche!",
+            "fr": "Super, à ce soir !",
+            "pt": "Ótimo, até hoje à noite!",
+            "kr": "좋아, 오늘 밤에 보자!",
+            "zh": "好，今晚见！",
+            "jp": "はい、今夜会いましょう！",
+            "ru": "Здорово, увидимся вечером!"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "chapter_id": "conversation_shorts_021_runtime.json",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A와 B의 역할이 전체 대화에서 일관되게 유지됨. A는 질문/공감, B는 상황 설명/계획으로 역할 분담이 명확함."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "인사 및 안부 묻기(Line 1), 상태 설명(Line 2), 공감 및 추가 질문(Line 3, 5), 문제 확인(Line 4), 향후 계획(Line 6) 등 대화의 기능적 흐름이 자연스럽고 정확함."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "전체적으로 자연스러운 구어체 표현 사용. 'Hey', 'Yeah', 'That must be annoying' 등이 실제 회화에서 자주 쓰이는 표현. 다만 'Can you hear your neighbors a lot?'는 'Do you hear your neighbors a lot?'가 더 자연스러울 수 있으나, 의미 전달에는 문제없음."
+    },
+    "register_appropriateness": {
+      "score": 10,
+      "weight": 10,
+      "notes": "대학 기숙사라는 캐주얼한 상황에 맞는 친근하고 일상적인 어조가 일관되게 유지됨. 모든 발화가 B1 레벨에 적합한 평이한 표현으로 구성됨."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적 오류 없음. 축약형('how's', 'It's', 'That's', 'I'll')이 적절히 사용되어 구어체 특성을 잘 반영함. 문장 부호 및 대문자 표기 정확함."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "기숙사 생활 중 발생할 수 있는 실제적인 문제(벽이 얇음, 소음)와 해결 방안(대화 시도)을 다루어 학습자가 실제 상황에서 활용하기 매우 적합함."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "기숙사 생활이라는 보편적인 주제를 다루며 특정 문화권에 국한된 내용 없음. 모든 언어 번역에서 문화적 중립성이 유지됨."
+    },
+    "tts_readiness": {
+      "score": 9,
+      "weight": 5,
+      "notes": "축약형과 자연스러운 구어체 문장 구조로 TTS 합성에 적합함. 다만 'bummer'와 같은 비격식 표현은 일부 TTS 엔진에서 강세 처리가 다를 수 있으나 큰 문제는 아님."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 en이 모든 문장에서 완전히 일치함. 6개 문장 모두 동일한 텍스트로 미러링되어 있음."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "실용적인 주제와 자연스러운 대화 흐름으로 시중 주요 영어 회화 서비스와 비교해 손색없는 수준. B1 레벨에 적합한 난이도와 표현 구성이 우수함. 다만 대화 길이가 짧아(6문장) 더 풍부한 상호작용을 원하는 학습자에게는 다소 아쉬울 수 있음."
+    }
+  },
+  "final_score": 96,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "Cambridge English Conversation 및 Pimsleur English의 B1 레벨 대화 교재와 유사한 수준. 실용적인 주제와 자연스러운 구어체 표현에서 상위권 서비스와 경쟁 가능.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "pass": true,
+  "priority_fixes": []
+}

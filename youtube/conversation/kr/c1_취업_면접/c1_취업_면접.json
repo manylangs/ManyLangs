@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "c1",
+    "id": "041"
+  },
+  "title": {
+    "target": "취업 면접",
+    "en": "Job Interview",
+    "es": "Entrevista de trabajo",
+    "fr": "Entretien d'embauche",
+    "pt": "Entrevista de emprego",
+    "kr": "취업 면접",
+    "zh": "求职面试",
+    "jp": "就職面接",
+    "ru": "Собеседование при приёме на работу"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "면접 준비는 잘하고 오셨어요?",
+            "en": "Did you prepare well for the interview?",
+            "es": "¿Ha venido bien preparada para la entrevista?",
+            "fr": "Vous êtes bien préparé pour l'entretien ?",
+            "pt": "Veio bem preparado/a para a entrevista?",
+            "kr": "면접 준비는 잘하고 오셨어요?",
+            "zh": "面试准备得还好吗？",
+            "jp": "面接の準備はしっかりして来られましたか？",
+            "ru": "Вы хорошо подготовились к собеседованию?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "네, 지원한 직무와 관련된 경험을 정리해 왔어요.",
+            "en": "Yes, I organized my experience related to the position I applied for.",
+            "es": "Sí, he organizado mi experiencia relacionada con el puesto al que he aplicado.",
+            "fr": "Oui, j'ai organisé mon expérience en lien avec le poste visé.",
+            "pt": "Sim, organizei a experiência relacionada com o cargo a que me candidatei.",
+            "kr": "네, 지원한 직무와 관련된 경험을 정리해 왔어요.",
+            "zh": "是的，我整理了与应聘职位相关的经验。",
+            "jp": "はい、応募した職種に関連する経験をまとめて来ました。",
+            "ru": "Да, я систематизировал(а) свой опыт, связанный с должностью, на которую я подал(а) заявку."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "그럼 지원 동기를 말씀해 주시겠어요?",
+            "en": "Then, could you tell me why you applied for this position?",
+            "es": "Entonces, ¿podría contarnos su motivación para postularse?",
+            "fr": "Alors, pourriez-vous nous expliquer votre motivation ?",
+            "pt": "Então, pode falar-me da sua motivação para se candidatar?",
+            "kr": "그럼 지원 동기를 말씀해 주시겠어요?",
+            "zh": "那请说说你的应聘动机吧。",
+            "jp": "では、応募動機をお聞かせいただけますか？",
+            "ru": "Тогда расскажите, пожалуйста, о мотивации, почему вы подали заявку."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "제 역량을 발휘할 수 있는 환경에서 성장하고 싶어서 지원하게 됐어요.",
+            "en": "I applied because I want to grow in an environment where I can use my abilities.",
+            "es": "He solicitado el puesto porque quiero crecer en un entorno donde pueda desarrollar mis capacidades.",
+            "fr": "J'ai postulé parce que je souhaite évoluer dans un environnement où je peux mettre à profit mes compétences.",
+            "pt": "Candidatei-me porque quero crescer num ambiente onde possa usar as minhas competências.",
+            "kr": "제 역량을 발휘할 수 있는 환경에서 성장하고 싶어서 지원하게 됐어요.",
+            "zh": "因为想在能发挥自己能力的环境中成长，所以申请了这个职位。",
+            "jp": "自分の能力を発揮できる環境で成長したいと思い、応募しました。",
+            "ru": "Я подал(а) заявку, потому что хочу расти в среде, где смогу проявить свои способности."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "입사 후 어떤 기여를 할 수 있다고 생각하세요?",
+            "en": "What kind of contribution do you think you can make after joining the company?",
+            "es": "¿Qué cree que podría aportar a la empresa si se incorpora?",
+            "fr": "Selon vous, quelle contribution pourriez-vous apporter à l'entreprise ?",
+            "pt": "Que contributo acha que pode dar à empresa depois de entrar?",
+            "kr": "입사 후 어떤 기여를 할 수 있다고 생각하세요?",
+            "zh": "你觉得入职后能做出什么贡献？",
+            "jp": "入社後、どのような貢献ができると思われますか？",
+            "ru": "Как вы думаете, какой вклад вы сможете внести после поступления на работу?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "지금까지 쌓은 협업 경험을 바탕으로 팀 성과에 실질적인 도움이 되고 싶습니다.",
+            "en": "Based on the collaboration experience I've built so far, I want to make a real contribution to the team's performance.",
+            "es": "Me gustaría ser de gran ayuda para el rendimiento del equipo basándome en mi experiencia de colaboración acumulada hasta ahora.",
+            "fr": "Je voudrais apporter une aide concrète à la performance de l'équipe, en m'appuyant sur mon expérience de collaboration acquise jusqu'à présent.",
+            "pt": "Com base na experiência de colaboração que acumulei, quero ser uma mais-valia real para os resultados da equipa.",
+            "kr": "지금까지 쌓은 협업 경험을 바탕으로 팀 성과에 실질적인 도움이 되고 싶습니다.",
+            "zh": "我希望凭借至今积累的协作经验，为团队业绩带来实实在在的帮助。",
+            "jp": "これまでに培った協働経験を基に、チームの成果に実質的な貢献をしたいと思います。",
+            "ru": "Я хочу принести реальную пользу результатам команды, опираясь на накопленный опыт сотрудничества."
+          }
+        }
+      ]
+    }
+  ]
+}

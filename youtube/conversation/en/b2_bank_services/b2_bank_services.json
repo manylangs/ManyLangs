@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "b2",
+    "id": "031"
+  },
+  "title": {
+    "target": "Bank Services",
+    "en": "Bank Services",
+    "es": "Servicios bancarios",
+    "fr": "Services bancaires",
+    "pt": "Serviços Bancários",
+    "kr": "은행 업무",
+    "zh": "银行服务",
+    "jp": "銀行サービス"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "I need to open a checking account. What do I need to bring?",
+            "en": "I need to open a checking account. What do I need to bring?",
+            "es": "Necesito abrir una cuenta corriente. ¿Qué necesito traer?",
+            "fr": "Je dois ouvrir un compte courant. Qu'est-ce que je dois apporter ?",
+            "pt": "Preciso de abrir uma conta à ordem. O que preciso de trazer?",
+            "kr": "당좌 예금 계좌를 개설해야 하는데, 뭘 가져와야 하나요?",
+            "zh": "我想开一个支票账户。我需要带什么东西？",
+            "jp": "当座預金口座を開設したいのですが、何を持っていけばいいですか？"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "You'll need a valid ID and your social security number. Are you a new customer?",
+            "en": "You'll need a valid ID and your social security number. Are you a new customer?",
+            "es": "Necesitará un documento de identidad válido y su número de seguridad social. ¿Es usted un cliente nuevo?",
+            "fr": "Il vous faudra une pièce d'identité valide et votre numéro de sécurité sociale. Êtes-vous un nouveau client ?",
+            "pt": "Vai precisar de um documento de identificação válido e do seu número de segurança social. É cliente novo?",
+            "kr": "유효한 신분증과 사회보장번호가 필요합니다. 신규 고객이신가요?",
+            "zh": "你需要带有效的身份证件和你的社会安全号码。你是新客户吗？",
+            "jp": "有効な身分証明書と社会保障番号が必要です。新規のお客様ですか？"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Yes, I am. I just moved here for work.",
+            "en": "Yes, I am. I just moved here for work.",
+            "es": "Sí, lo soy. Acabo de mudarme aquí por trabajo.",
+            "fr": "Oui, je le suis. Je viens de déménager ici pour le travail.",
+            "pt": "Sim, sou. Acabei de me mudar para cá por causa do trabalho.",
+            "kr": "네, 맞아요. 일 때문에 방금 이사 왔어요.",
+            "zh": "是的，我是。我刚搬到这里工作。",
+            "jp": "はい、そうです。仕事のためここに引っ越してきたばかりです。"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Got it. We can set you up right now. Would you like to apply for a debit card as well?",
+            "en": "Got it. We can set you up right now. Would you like to apply for a debit card as well?",
+            "es": "Entendido. Podemos dejarle todo listo ahora mismo. ¿Le gustaría solicitar también una tarjeta de débito?",
+            "fr": "Compris. Nous pouvons vous inscrire tout de suite. Souhaitez-vous également demander une carte de débit ?",
+            "pt": "Percebido. Podemos tratar disso agora mesmo. Também quer pedir um cartão de débito?",
+            "kr": "알겠습니다. 지금 바로 개설해 드릴 수 있어요. 체크카드도 신청하시겠어요?",
+            "zh": "明白了。我们现在就可以帮你办好。你想同时申请一张借记卡吗？",
+            "jp": "承知しました。今すぐ手続きできますよ。デビットカードも申し込みますか？"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "That would be great. How long does it take to get the card?",
+            "en": "That would be great. How long does it take to get the card?",
+            "es": "Eso sería genial. ¿Cuánto tiempo se tarda en recibir la tarjeta?",
+            "fr": "Ce serait parfait. Combien de temps faut-il pour recevoir la carte ?",
+            "pt": "Seria ótimo. Quanto tempo demora até receber o cartão?",
+            "kr": "그러면 좋죠. 카드는 얼마나 걸리나요?",
+            "zh": "那太好了。拿到卡需要多长时间？",
+            "jp": "それはありがたいです。カードはどのくらいで届きますか？"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "You'll receive it in the mail within seven to ten business days.",
+            "en": "You'll receive it in the mail within seven to ten business days.",
+            "es": "La recibirá por correo en un plazo de siete a diez días hábiles.",
+            "fr": "Vous la recevrez par courrier sous sept à dix jours ouvrables.",
+            "pt": "Vai recebê-lo pelo correio dentro de sete a dez dias úteis.",
+            "kr": "영업일 기준 칠 일에서 십 일 안에 우편으로 받으실 거예요.",
+            "zh": "你会在七到十个工作日内通过邮件收到。",
+            "jp": "7営業日から10営業日以内に郵送で届きます。"
+          }
+        }
+      ]
+    }
+  ]
+}

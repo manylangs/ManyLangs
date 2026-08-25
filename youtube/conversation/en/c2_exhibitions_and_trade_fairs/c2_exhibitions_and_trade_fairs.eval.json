@@ -1,0 +1,71 @@
+{
+  "chapter_id": "conversation_shorts_051",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "All lines are correctly attributed to Speaker A and B in an alternating pattern, maintaining a consistent and logical dialogue flow."
+    },
+    "dialogue_function_accuracy": {
+      "score": 9.5,
+      "weight": 10,
+      "notes": "The dialogue effectively demonstrates key functions: reporting on status, asking for confirmation, expressing a desire, giving instructions, and agreeing on a plan. The flow is natural and purposeful."
+    },
+    "spoken_naturalness": {
+      "score": 9.5,
+      "weight": 15,
+      "notes": "The language is natural for a professional setting. Phrases like 'booth traffic has been incredible' and 'compare notes' are idiomatic and commonly used. The dialogue reads smoothly and authentically."
+    },
+    "register_appropriateness": {
+      "score": 10,
+      "weight": 10,
+      "notes": "The register is perfectly suited for a professional conversation between colleagues at a trade fair. It is polite, collaborative, and uses appropriate business terminology without being overly formal."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "The grammar is flawless. The use of tenses (present perfect, present continuous, future with 'will') is accurate and appropriate for the context. Punctuation and capitalization are correct."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "The scenario is highly practical and realistic for a trade fair. The actions—tracking leads, engaging decision-makers, and preparing competitor summaries—are all concrete and useful tasks."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "The content is culturally neutral. It focuses on universal business activities and does not contain any culturally specific references, idioms, or assumptions that would not translate well."
+    },
+    "tts_readiness": {
+      "score": 9.5,
+      "weight": 5,
+      "notes": "The sentences are clear, well-structured, and of appropriate length for TTS. The pronunciation is straightforward, and there are no ambiguous homographs or complex punctuation that might confuse a TTS engine."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "The 'en' field is an exact and perfect mirror of the 'target' field for all sentences, as expected."
+    },
+    "market_competitiveness": {
+      "score": 9.5,
+      "weight": 15,
+      "notes": "The content is on par with top-tier business English learning materials. The scenario is specific, the language is practical and current, and the level (C2) is accurately targeted. It offers a realistic and engaging dialogue that would be valuable for advanced learners."
+    }
+  },
+  "final_score": 96.75,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "This material is estimated to be in the top 5-10% of comparable offerings, matching the quality of premium business English courses from leading providers.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "pass": true,
+  "priority_fixes": []
+}

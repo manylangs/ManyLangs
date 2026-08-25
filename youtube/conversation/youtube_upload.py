@@ -110,10 +110,11 @@ YOUTUBE_LANGUAGE_CODES = {
     "ja": "ja",
     "kr": "ko",
     "de": "de",
+    "ru": "ru",
 }
 
-# 현재 ManyLangs 기본 사용자 언어 7종
-BASE_LOCALIZATION_LANGS = ["en", "es", "fr", "pt", "zh", "ja", "kr"]
+# 현재 ManyLangs 기본 사용자 언어 8종 (자막 탭에 자동으로 줄이 생기는 언어)
+BASE_LOCALIZATION_LANGS = ["en", "es", "fr", "pt", "zh", "ja", "kr", "ru"]
 
 
 # =========================================================
@@ -643,7 +644,7 @@ def build_playlist_description():
     description = """\
 🌍 Learn languages through real-life conversations with ManyLangs.
 
-Choose the language you want to learn, then study with explanations and subtitles in the language you understand best — English, Spanish, French, Portuguese, Mandarin Chinese, Japanese, or Korean.
+Choose the language you want to learn, then study with explanations and subtitles in the language you understand best — English, Spanish, French, Portuguese, Mandarin Chinese, Japanese, Korean, or Russian.
 
 🎧 Listen to natural conversations
 
@@ -737,10 +738,11 @@ def translate_full_titles_with_deepseek(
         "ja": "Japanese",
         "kr": "Korean",
         "de": "German",
+        "ru": "Russian",
     }
 
     requested = ", ".join(
-        f'{code}={language_labels.get(code, LANGUAGES[code]["name"])}'
+        f"{code}={language_labels[code]}"
         for code in requested_codes
     )
 

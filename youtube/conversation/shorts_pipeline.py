@@ -14,17 +14,17 @@ TTS/SRT 단계를 새로 추가한 버전이다.
      -> 번호 입력으로 선택 (레벨을 따로 묻지 않음, 이미 만들어진 폴더를 같은
      번호로 다시 고르면 그 폴더가 그대로 덮어써짐 -- 재작업/새작업 구분 없이
      "그 폴더 작업"으로 통일)
-  2) target 6줄 생성 (01/09_TARGET_GENERATOR.md, 세트 1개로 축소 호출)
+  2) target 6줄 생성 (GENERATOR_KR.md/GENERATOR_EN.md, 세트 1개로 축소 호출)
   3) 경량 자체확인 통과 -> target 6줄을 텍스트 파일로 저장하고 "녹음할까요?"
      대기 (사람이 파일을 열어 수정/저장할 수 있는 마지막 검수 지점, 확정사항)
   4) target 텍스트 -> TTS 오디오 생성 (target 언어 1개만)
   5) 오디오 실제 타이밍 추출 -> target SRT 생성 (6줄, cue)
-  6) target SRT 각 줄을 앵커로 02~08_TRANSLATOR.md 호출 -> 7개 언어 텍스트
+  6) target SRT 각 줄을 앵커로 02~09_TRANSLATOR.md 호출 -> 8개 언어 텍스트
      (target 자신의 언어는 미러링 -> LANG_TRANSLATOR가 자체적으로 mirror 분기 처리)
   7) 채점(평가프롬프트) -> PASS 아니면 재검수프롬프트로 "문장 단위"만 패치
      (target 자체 문제면 3)으로 복귀), 재시도 상한 RETRY_LIMIT 회
   8) 초과분은 needs_review/ 로 격리하고 나머지 언어는 그대로 진행
-  9) PASS한 언어 텍스트를 target SRT의 동일 타임스탬프에 텍스트만 교체 -> SRT x7
+  9) PASS한 언어 텍스트를 target SRT의 동일 타임스탬프에 텍스트만 교체 -> SRT x8
   10) 산출물 저장: conversation/{target_lang}/{level}_{topic}/ 하위
 
 주의: TTS 실제 호출(4단계)과 오디오 타이밍 추출(5단계)은 실제 tts/common/config.py
@@ -40,9 +40,13 @@ prompts_dir에서 파일명 패턴으로 찾는다 (find_prompt_file 참고) -- 
 맞는 프롬프트 3개(생성/평가/재검수)만 넣으면 된다. 패턴에 맞는 파일이
 없으면 "이 언어는 아직 준비 안 됐다"는 신호로 FileNotFoundError가 난다.
 
-번역 대상 7개 언어(ALL_LANGS: en/es/fr/pt/kr/zh/jp)는 이것과 다르다 -- 모든
+번역 대상 8개 언어(ALL_LANGS: en/es/fr/pt/kr/zh/jp/ru)는 이것과 다르다 -- 모든
 교재가 공유하는 고정 스키마라서 딕셔너리(TRANSLATOR_PROMPT_FILENAME)로
-관리하며, 이 7개는 늘리지 않는다(target 언어를 늘리는 것과 별개 문제).
+관리하며, target 언어를 늘리는 것과 달리 이 스키마 자체를 늘리는 건 (ru 추가처럼)
+의도적인 설계 변경이다 -- 새 언어를 넣을 때는 TRANSLATOR_RU.md 같은 번역
+매뉴얼과 검수/재검수 프롬프트가 실제로 준비돼 있어야 하고, 이후 모든 신규
+콘텐츠는 이 언어 컬럼까지 함께 생성된다(기존에 이미 만들어진 콘텐츠는 이
+컬럼이 비어 있으므로 별도 백필이 필요함).
 """
 
 import argparse
@@ -99,28 +103,32 @@ SET_END_GAP_MS = 650    # 세트 끝 (쇼츠는 세트 1개뿐이라 이 세트�
 TTS_SAMPLE_RATE_HZ = 24000
 
 TRANSLATOR_PROMPT_FILENAME = {
-    "en": "02_EN_TRANSLATOR.md",
-    "es": "03_ES_TRANSLATOR.md",
-    "fr": "04_FR_TRANSLATOR.md",
-    "pt": "05_PT_TRANSLATOR.md",
-    "kr": "06_KR_TRANSLATOR.md",
-    "zh": "07_ZH_TRANSLATOR.md",
-    "jp": "08_JP_TRANSLATOR.md",
+    "en": "TRANSLATOR_EN.md",
+    "es": "TRANSLATOR_ES.md",
+    "fr": "TRANSLATOR_FR.md",
+    "pt": "TRANSLATOR_PT.md",
+    "kr": "TRANSLATOR_KR.md",
+    "zh": "TRANSLATOR_ZH.md",
+    "jp": "TRANSLATOR_JP.md",
+    "ru": "TRANSLATOR_RU.md",
 }
-ALL_LANGS = list(TRANSLATOR_PROMPT_FILENAME.keys())  # en/es/fr/pt/kr/zh/jp -- 고정 7개, 확장하지 않는다.
+ALL_LANGS = list(TRANSLATOR_PROMPT_FILENAME.keys())  # en/es/fr/pt/kr/zh/jp/ru -- 고정 8개.
 
 # ---------------------------------------------------------------------------
 # target 쪽 프롬프트(생성/평가/재검수)는 딕셔너리로 등록하지 않는다.
 #
-# ALL_LANGS(번역 대상 7개 언어)는 모든 교재가 공유하는 고정 스키마라서 딕셔너리로
-# 관리하지만, target으로 쓸 언어는 몇 개든 늘어날 수 있다(en/kr/pt 다음 de, it,
-# ru... 20개까지). 새 target 언어를 추가할 때마다 이 스크립트를 고쳐야 한다면
+# ALL_LANGS(번역 대상 8개 언어)는 모든 교재가 공유하는 고정 스키마라서 딕셔너리로
+# 관리하지만, target으로 쓸 언어는 몇 개든 늘어날 수 있다(en/kr/pt/ru 다음 de,
+# it... 20개까지). 새 target 언어를 추가할 때마다 이 스크립트를 고쳐야 한다면
 # 그 자체가 병목이므로, 대신 아래 파일명 규칙만 지키면 코드 수정 없이 자동으로
-# 인식되도록 glob 패턴 검색으로 찾는다:
+# 인식되도록 glob 패턴 검색으로 찾는다. 2026년 8월 리네이밍 이후 파일명에는
+# 버전 번호를 넣지 않는다(버전은 파일 내용의 변경 이력 장에만 기록) -- 그래서
+# 매번 정확히 1개 파일과만 매치되며, 업데이트해도 파일명이 안 바뀌어 이 스크립트가
+# 다시 못 찾는 사고가 나지 않는다:
 #
-#   {아무 접두 번호}_{LANG}_TARGET_GENERATOR.md      예: 10_PT_TARGET_GENERATOR.md
-#   conversation_{lang}_평가프롬프트{아무 버전 표기}    예: conversation_pt_평가프롬프트_v1.1.md
-#   conversation_{lang}_재검수프롬프트{아무 버전 표기}   예: conversation_pt_재검수프롬프트_v1.0.md
+#   GENERATOR_{LANG}.md   예: GENERATOR_PT.md
+#   EVAL_{LANG}.md        예: EVAL_PT.md
+#   REVIEW_{LANG}.md      예: REVIEW_PT.md
 #
 # 새 target 언어를 추가하려면 이 3개 파일만 prompts_dir에 넣으면 끝이다.
 # ---------------------------------------------------------------------------
@@ -169,21 +177,21 @@ def find_prompt_file(prompts_dir, pattern):
 def load_target_generator_prompt(prompts_dir, target_lang):
     return find_prompt_file(
         prompts_dir,
-        f"*_{target_lang.upper()}_TARGET_GENERATOR.md"
+        f"GENERATOR_{target_lang.upper()}.md"
     )
 
 
 def load_eval_prompt_text(prompts_dir, target_lang):
     return find_prompt_file(
         prompts_dir,
-        f"conversation_{target_lang}_평가프롬프트*"
+        f"EVAL_{target_lang.upper()}.md"
     )
 
 
 def load_reviewer_prompt_text(prompts_dir, target_lang):
     return find_prompt_file(
         prompts_dir,
-        f"conversation_{target_lang}_재검수프롬프트*"
+        f"REVIEW_{target_lang.upper()}.md"
     )
 
 
@@ -258,7 +266,7 @@ def load_prompt(prompts_dir, filename):
 
 
 # ---------------------------------------------------------------------------
-# 60챕터 표 파싱 (01/09_TARGET_GENERATOR.md 4장 마크다운 표에서 직접 추출)
+# 60챕터 표 파싱 (GENERATOR_KR.md/GENERATOR_EN.md 4장 마크다운 표에서 직접 추출)
 # ---------------------------------------------------------------------------
 
 CHAPTER_ROW_RE = re.compile(
@@ -268,7 +276,7 @@ CHAPTER_ROW_RE = re.compile(
 
 def parse_chapter_table(manual_text):
     """4장 표에서 (idx, chapter_id, level, title) 리스트를 뽑는다.
-    01/09_TARGET_GENERATOR.md 양쪽 다 동일 표 형식이라 파서 공용."""
+    GENERATOR_KR.md/GENERATOR_EN.md 양쪽 다 동일 표 형식이라 파서 공용."""
     chapters = []
     for line in manual_text.splitlines():
         m = CHAPTER_ROW_RE.match(line.strip())
@@ -329,7 +337,7 @@ def prompt_chapter_selection(chapters, target_lang):
 # ---------------------------------------------------------------------------
 
 def build_target_user_input_single_set(chapter):
-    """01/09_TARGET_GENERATOR.md는 원래 세트 10개(BATCH 전체)를 만드는
+    """GENERATOR_KR.md/GENERATOR_EN.md는 원래 세트 10개(BATCH 전체)를 만드는
     매뉴얼이지만, 쇼츠는 세트 1개만 필요하다. 프롬프트 본문은 그대로 두고,
     유저 메시지에서 '세트 1개만 생성'을 명시적으로 오버라이드한다 -- 매뉴얼
     자체를 고치지 않는 이유는 정규 60챕터 파이프라인과 공유해야 하기 때문."""
@@ -566,7 +574,7 @@ def build_srt(lines, timings):
 
 
 # ---------------------------------------------------------------------------
-# 6) target SRT 앵커 -> 7개 언어 1:1 번역
+# 6) target SRT 앵커 -> 8개 언어 1:1 번역
 # ---------------------------------------------------------------------------
 
 def build_translation_user_input(chapter, target_lang, title, target_lines, lang):
@@ -603,7 +611,7 @@ def translate_one_lang(chapter, target_lang, title, target_lines, lang, prompts_
 
 def translate_all(chapter, target_lang, title, target_lines, prompts_dir, model, api_key, workers=4):
     """target_lang 자신은 이미 target이므로 번역 대상에서 제외.
-    나머지 6개 언어를 병렬 호출 (deepseek_generate.py의 ThreadPoolExecutor 구조 재사용)."""
+    나머지 7개 언어를 병렬 호출 (deepseek_generate.py의 ThreadPoolExecutor 구조 재사용)."""
     langs_to_translate = [l for l in ALL_LANGS if l != target_lang]
     results = {}
 
@@ -637,7 +645,7 @@ def translate_all(chapter, target_lang, title, target_lines, prompts_dir, model,
 def build_runtime_json(chapter, target_lang, title, translations):
     """평가/재검수 프롬프트가 기대하는 runtime JSON(meta/title/blocks[].lines[].sentences)
     형태로 조립. set 1개, 6줄뿐이므로 blocks 배열도 원소 1개."""
-    lang_keys = ["target"] + ALL_LANGS  # target, en, es, fr, pt, kr, jp, zh
+    lang_keys = ["target"] + ALL_LANGS  # target, en, es, fr, pt, kr, jp, zh, ru
     title_obj = {"target": title}
     for lang in ALL_LANGS:
         title_obj[lang] = title if lang == target_lang else translations[lang]["title"]
@@ -746,11 +754,11 @@ def build_all_srts(runtime_json, target_lang, timings):
 
 def build_combined_srt(runtime_json, timings):
     """
-    target + 7개 언어를 같은 타임스탬프 구간에 8줄로 몰아넣은
+    target + 8개 언어를 같은 타임스탬프 구간에 9줄로 몰아넣은
     합본 SRT 하나를 만든다.
 
-    줄 순서: target -> ALL_LANGS 순서(en/es/fr/pt/kr/zh/jp) 고정.
-    언어 라벨은 붙이지 않는다 (텍스트만 8줄).
+    줄 순서: target -> ALL_LANGS 순서(en/es/fr/pt/kr/zh/jp/ru) 고정.
+    언어 라벨은 붙이지 않는다 (텍스트만 9줄).
     """
     order = ["target"] + ALL_LANGS
 
@@ -771,7 +779,7 @@ def build_combined_srt(runtime_json, timings):
 
 
 # ---------------------------------------------------------------------------
-# 10) 저장 (파일명과 동일한 이름의 폴더 하나에 json/eval/오디오/SRT ×8 모두 저장)
+# 10) 저장 (파일명과 동일한 이름의 폴더 하나에 json/eval/오디오/SRT ×9 모두 저장)
 # ---------------------------------------------------------------------------
 
 def compute_filename_base(chapter, target_lang):
@@ -888,7 +896,7 @@ def main():
                                          tts_credentials=args.tts_creds,
                                          tts_common_dir=args.tts_common_dir)
 
-    # 6) 7개 언어 번역
+    # 6) 8개 언어 번역
     translations = translate_all(
         chapter, target_lang, title, target_lines, args.prompts_dir, args.model, api_key
     )
@@ -904,7 +912,7 @@ def main():
         print("  [사람 판단 필요] 재시도 상한 초과 -- needs_review/에 저장 후 target 자체 "
               "재생성이 필요한지는 blocking_issues를 직접 확인해 결정할 것")
 
-    # 9) SRT 생성 (언어별 8개 + 합본 1개) + 10) 저장
+    # 9) SRT 생성 (언어별 9개 + 합본 1개) + 10) 저장
     srts = build_all_srts(runtime_json, target_lang, timings)
     combined_srt = build_combined_srt(runtime_json, timings)
     save_outputs(chapter, target_lang, filename_base, runtime_json, srts, combined_srt,

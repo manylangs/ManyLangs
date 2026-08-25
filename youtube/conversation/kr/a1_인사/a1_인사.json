@@ -9,10 +9,11 @@
     "en": "Greetings",
     "es": "Saludos",
     "fr": "Salutations",
-    "pt": "Cumprimentos",
+    "pt": "Saudações",
     "kr": "인사",
     "zh": "问候",
-    "jp": "挨拶"
+    "jp": "挨拶",
+    "ru": "Приветствие"
   },
   "blocks": [
     {
@@ -21,79 +22,85 @@
         {
           "speaker": "A",
           "sentences": {
-            "target": "준호 씨, 안녕하세요?",
-            "en": "Junho, hello?",
-            "es": "¿Hola, señor Junho?",
-            "fr": "Bonjour, Monsieur Junho.",
-            "pt": "Olá, senhor Junho?",
-            "kr": "준호 씨, 안녕하세요?",
-            "zh": "俊浩先生，您好？",
-            "jp": "ジュノさん、こんにちは。"
+            "target": "안녕하세요, 준호 씨. 오랜만이에요.",
+            "en": "Hello, Junho. It's been a while.",
+            "es": "Hola, señor Junho. Cuánto tiempo sin verte.",
+            "fr": "Bonjour, Junho. Ça fait longtemps.",
+            "pt": "Olá, senhor Junho. Há quanto tempo.",
+            "kr": "안녕하세요, 준호 씨. 오랜만이에요.",
+            "zh": "您好，俊浩先生。好久不见了。",
+            "jp": "こんにちは、ジュノさん。お久しぶりですね。",
+            "ru": "Здравствуйте, Чунхо. Давно не виделись."
           }
         },
         {
           "speaker": "B",
           "sentences": {
-            "target": "네, 안녕하세요. 지은 씨, 오랜만이에요.",
-            "en": "Yes, hello. Jieun, it's been a while.",
-            "es": "Sí, hola. Señorita Jieun, cuánto tiempo.",
-            "fr": "Oui, bonjour. C'est une longue journée, Mademoiselle Jieun.",
-            "pt": "Sim, olá. Senhora Jieun, há quanto tempo.",
-            "kr": "네, 안녕하세요. 지은 씨, 오랜만이에요.",
-            "zh": "您好。智恩小姐，好久不见了。",
-            "jp": "はい、こんにちは。ジウンさん、お久しぶりです。"
+            "target": "네, 정말 오랜만이에요. 그동안 잘 지냈어요?",
+            "en": "Yes, it really has been a while. How have you been?",
+            "es": "Sí, de verdad, cuánto tiempo. ¿Cómo has estado?",
+            "fr": "Oui, ça fait vraiment longtemps. Comment as-tu passé ce temps ?",
+            "pt": "Sim, realmente há muito tempo. Como tem passado?",
+            "kr": "네, 정말 오랜만이에요. 그동안 잘 지냈어요?",
+            "zh": "是的，真的好久不见了。这段时间过得好吗？",
+            "jp": "はい、本当にお久しぶりです。その間、元気にしていましたか？",
+            "ru": "Да, действительно давно. Как вы поживали всё это время?"
           }
         },
         {
           "speaker": "A",
           "sentences": {
-            "target": "정말 오랜만이에요. 요즘 잘 지냈어요?",
-            "en": "It really has been a while. How have you been lately?",
-            "es": "Sí, cuánto tiempo. ¿Cómo has estado últimamente?",
-            "fr": "C'est vraiment une longue journée. Comment allez-vous ces jours-ci ?",
-            "pt": "Realmente, há muito tempo. Tem passado bem?",
-            "kr": "정말 오랜만이에요. 요즘 잘 지냈어요?",
-            "zh": "真的是好久不见了。最近过得好吗？",
-            "jp": "本当にお久しぶりですね。最近、元気でしたか？"
+            "target": "네, 덕분에 잘 지냈어요. 준호 씨도요?",
+            "en": "I've been doing well, thanks. How about you, Junho?",
+            "es": "Bien, gracias. ¿Y tú, Junho?",
+            "fr": "Bien, merci. Et toi, Junho ?",
+            "pt": "Tenho passado bem, obrigada. E o senhor, Junho?",
+            "kr": "네, 덕분에 잘 지냈어요. 준호 씨도요?",
+            "zh": "是的，托您的福过得很好。俊浩先生呢？",
+            "jp": "はい、おかげさまで元気にしていました。ジュノさんもですか？",
+            "ru": "Хорошо, спасибо. А вы, Чунхо?"
           }
         },
         {
           "speaker": "B",
           "sentences": {
-            "target": "네, 덕분에 잘 지냈어요. 지은 씨도요?",
-            "en": "I've been doing well, thanks to you. How about you, Jieun?",
-            "es": "Bien, gracias. ¿Y usted, señorita Jieun?",
-            "fr": "Oui, je vais bien, merci. Et vous, Mademoiselle Jieun ?",
-            "pt": "Sim, graças a Deus, tenho passado bem. E a senhora?",
-            "kr": "네, 덕분에 잘 지냈어요. 지은 씨도요?",
-            "zh": "嗯，托您的福过得很好。智恩小姐呢？",
-            "jp": "はい、おかげさまで元気です。ジウンさんは？"
+            "target": "저도 잘 지냈어요. 요즘 뭐 하고 지내요?",
+            "en": "I've been doing well too. What have you been up to these days?",
+            "es": "Yo también he estado bien. ¿Qué has estado haciendo últimamente?",
+            "fr": "Moi aussi, ça va bien. Qu'est-ce que tu fais en ce moment ?",
+            "pt": "Eu também tenho passado bem. O que tem feito ultimamente?",
+            "kr": "저도 잘 지냈어요. 요즘 뭐 하고 지내요?",
+            "zh": "我也过得很好。最近在做什么呢？",
+            "jp": "私も元気にしていました。最近は何をして過ごしていますか？",
+            "ru": "Я тоже хорошо. Чем вы сейчас занимаетесь?"
           }
         },
         {
           "speaker": "A",
           "sentences": {
-            "target": "저도 잘 지냈어요. 만나서 반가워요.",
-            "en": "I've been doing well too. Nice to meet you.",
-            "es": "Yo también estoy bien. Encantada de verte.",
-            "fr": "Je vais bien aussi. Je suis content de vous rencontrer.",
-            "pt": "Eu também tenho passado bem. Prazer em conhecê-la.",
-            "kr": "저도 잘 지냈어요. 만나서 반가워요.",
-            "zh": "我也过得很好。很高兴见到你。",
-            "jp": "私も元気です。お会いできてうれしいです。"
+            "target": "요즘 한국어를 열심히 공부하고 있어요.",
+            "en": "These days I've been studying Korean hard.",
+            "es": "Últimamente estoy estudiando coreano con dedicación.",
+            "fr": "En ce moment, j'étudie le coréen sérieusement.",
+            "pt": "Ultimamente tenho estudado coreano com afinco.",
+            "kr": "요즘 한국어를 열심히 공부하고 있어요.",
+            "zh": "最近在努力学习韩语。",
+            "jp": "最近、韓国語を一生懸命勉強しています。",
+            "ru": "Сейчас я усердно учу корейский язык."
           }
         },
         {
           "speaker": "B",
           "sentences": {
-            "target": "저도 반가워요. 다음에 또 만나요.",
-            "en": "Nice to meet you too. Let's meet again next time.",
-            "es": "Igualmente. Hasta la próxima.",
-            "fr": "Moi aussi, je suis content. À la prochaine fois.",
-            "pt": "O prazer é meu. Até a próxima.",
-            "kr": "저도 반가워요. 다음에 또 만나요.",
-            "zh": "我也很高兴。下次再见面吧。",
-            "jp": "私もうれしいです。また今度、会いましょう。"
+            "target": "아, 그렇군요. 열심히 하세요. 저도 응원할게요.",
+            "en": "Oh, I see. Keep up the good work. I'll be cheering you on.",
+            "es": "Ah, ya veo. Sigue así. Yo también te apoyaré.",
+            "fr": "Ah, je vois. Continue comme ça. Je te soutiens aussi.",
+            "pt": "Ah, entendo. Continue com o bom trabalho. Eu também vou torcer por si.",
+            "kr": "아, 그렇군요. 열심히 하세요. 저도 응원할게요.",
+            "zh": "啊，是这样啊。加油。我也会为您应援的。",
+            "jp": "ああ、そうなんですね。頑張ってください。私も応援しますね。",
+            "ru": "А, понятно. Успехов вам. Я тоже буду вас поддерживать."
           }
         }
       ]

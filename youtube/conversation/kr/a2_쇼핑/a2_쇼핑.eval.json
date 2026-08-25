@@ -1,0 +1,70 @@
+{
+  "chapter_id": "conversation_011.runtime.json",
+  "target_lang": "kr",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A/B가 한 세트 안에서 자연스럽게 번갈아 대화하며, 역할(쇼핑하는 사람과 조언하는 친구)이 일관되게 유지됨."
+    },
+    "dialogue_function_accuracy": {
+      "score": 9.5,
+      "weight": 10,
+      "notes": "의견 묻기, 칭찬, 가격 의문 표현, 추천, 결정, 안심시키기 등 쇼핑 상황의 전형적인 대화 기능이 정확하게 구현됨."
+    },
+    "spoken_naturalness": {
+      "score": 9.5,
+      "weight": 15,
+      "notes": "'-어때요?', '-네요', '-지 않아요?', '-ㄹ까요?' 등 한국어 회화에서 자주 쓰이는 자연스러운 구어체 표현이 잘 사용됨."
+    },
+    "register_appropriateness": {
+      "score": 9.5,
+      "weight": 10,
+      "notes": "준호 씨에 대한 '요'체 사용이 일관되며, 친근하면서도 예의를 갖춘 적절한 격식 수준을 유지함."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 오류가 없으며, 띄어쓰기 및 문장 부호가 정확함."
+    },
+    "situational_practicality": {
+      "score": 9,
+      "weight": 10,
+      "notes": "옷 쇼핑이라는 매우 실용적인 상황을 다루며, 가격, 어울림, 구매 결정 등 실제로 자주 쓰이는 표현으로 구성됨. 다만, 사이즈나 교환/환불 같은 추가적인 쇼핑 표현이 없어 약간의 아쉬움이 있음."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "특정 문화에 국한되지 않는 보편적인 쇼핑 상황을 다루어 문화적 중립성을 잘 유지함."
+    },
+    "tts_readiness": {
+      "score": 9.5,
+      "weight": 5,
+      "notes": "TTS로 읽기에 적합한 자연스러운 문장 구조와 구어체 표현을 사용함. '그만한 값어치'와 같은 표현은 또렷하게 발음될 수 있는 표준어임."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "kr 필드가 target 필드와 완벽하게 일치함."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "TTMIK, Duolingo 등 주요 서비스의 A2 수준 쇼핑 단원과 비교해도 손색없는 자연스러운 대화와 실용적인 표현을 제공함. 다만, 대화의 길이가 짧아 조금 더 풍부한 상호작용이 있었다면 더 좋았을 것임."
+    }
+  },
+  "final_score": 95.25,
+  "market_benchmark": {
+    "comparable_services": [
+      "Talk To Me In Korean",
+      "Duolingo Korean Conversations",
+      "세종한국어/TOPIK",
+      "Pimsleur Korean"
+    ],
+    "estimated_relative_position": "TTMIK의 초급 회화 교재와 유사한 수준의 자연스러운 구어체와 실용성을 갖추었으며, Duolingo의 단순 문장 반복보다는 대화의 흐름이 자연스러움. 세종한국어의 공식 교재 대화문과 비교해도 문법적 정확성과 상황 전달력이 뛰어남.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "pass": true,
+  "priority_fixes": []
+}

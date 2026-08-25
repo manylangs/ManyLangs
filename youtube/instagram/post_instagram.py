@@ -1,37 +1,42 @@
 #!/usr/bin/env python3
 """
-ManyLangs Instagram Uploader
+ManyLangs Instagram Uploader (동영상 버전)
 
-youtube_upload.py와 동일한 흐름을 따릅니다:
-  1) 언어 코드 입력
-  2) 해당 언어 폴더 아래 a1_~c2_ 로 시작하는 하위 폴더를 번호로 보여주고 선택
-  3) 폴더 안의 {folder_name}_001.png ~ {folder_name}_006.png 를 순서대로 찾아
-     Firebase Storage(social/{lang}/{folder_name}/)에 업로드 후, 그 공개 URL로
-     Instagram에 캐러셀(여러 장) 게시물 게시
-  4) 마지막 장에는 www.manylangs.studio + Grammar/Vocab/Idiom/Real-Life Situations/
-     Conversation 을 강조하는 캡션을 붙임
-  5) 오디오/전체 강의를 원하면 YouTube에서 "ManyLangsStudio" 를 검색해서
-     방문하라는 안내 문구를 캡션에 포함 (Instagram은 캡션 내 URL을 클릭 가능하게
-     만들지 않고, "@계정명" 형태는 실제 멘션 링크로 자동 변환되어 버리므로
-     URL과 "@" 표기 모두 사용하지 않고 순수 텍스트 안내만 사용합니다)
-  6) 무료 체험(7-day free trial) 프로필 링크 CTA를 캡션에 포함
+인스타그램은 캡션에 링크를 넣어도 클릭이 안 되므로, 이미지 캐러셀 대신
+assemble_social.py가 만든 Instagram 전용 .insta.mp4 동영상을
+Reels로 게시합니다.
 
-실행 위치: /Users/junghasuk/Desktop/ManyLangs/web/youtube/instagram/post_instagram.py
+폴더 구조 (post_facebook.py 와 동일):
+    facebook/{Language}/{Series}/{Level}/{topic}/{topic}.insta.mp4
+
+흐름:
+  1) 언어 → 시리즈 → 레벨 → 영상(주제 폴더) 순서로 번호 선택
+  2) 선택한 폴더 안의 {topic}.insta.mp4 를 찾아
+     Firebase Storage(social/{Language}/{Series}/{Level}/{topic}/)에 업로드 후,
+     그 공개 URL로 Instagram에 Reels(동영상) 게시물 게시
+  3) 무료 체험(7-day free trial) CTA는 그대로 유지
+  4) 자막 지원 언어 안내와, 전체 재생목록을 보고 싶으면 유튜브에서
+     ManyLangs Studio를 검색하라는 안내 문구를 함께 포함
+     (Instagram은 캡션 내 URL을 클릭 가능하게 만들지 않고, "@계정명" 형태는
+     실제 멘션 링크로 자동 변환되어 버리므로 순수 텍스트 안내만 사용)
+
+실행 위치:
+/Users/junghasuk/Desktop/ManyLangs/web/youtube/instagram/post_instagram.py
+
 실행:
     cd /Users/junghasuk/Desktop/ManyLangs/web/youtube/instagram
     python3 post_instagram.py
 
 주의:
   - Instagram Graph API는 로컬 파일을 직접 업로드할 수 없고, 반드시 인터넷에서
-    접근 가능한 이미지 URL(image_url)이 필요합니다. 게시 전에 로컬 이미지를
-    자동으로 Firebase Storage(social/{lang}/{folder_name}/ 경로)에 업로드하고,
-    그 공개 다운로드 URL을 image_url로 사용합니다. 이 방식은 로컬 폴더 삭제나
-    Vercel 재배포와 완전히 무관하게 안정적으로 유지됩니다.
-    (기존 firebase/upload_content_to_firebase.py 와 같은 버킷 사용, 서비스 계정
-    권한도 동일하게 GOOGLE_APPLICATION_CREDENTIALS 환경변수/gcloud 인증을 사용)
+    접근 가능한 동영상 URL(video_url)이 필요합니다. 게시 전에 로컬 .insta.mp4를
+    자동으로 Firebase Storage에 업로드하고, 그 공개 다운로드 URL을 video_url로
+    사용합니다.
   - "Instagram API with Instagram Login" 방식은 Facebook과 다른 base URL
     (graph.instagram.com)과 토큰 체계를 사용합니다.
   - google-cloud-storage 패키지가 필요합니다: pip3 install google-cloud-storage
+  - 게시할 .insta.mp4가 없으면(assemble_social.py를 아직 안 돌렸으면) 에러가 납니다.
+    먼저 assemble_social.py로 해당 폴더의 mp4를 만들어 두세요.
 """
 
 from pathlib import Path
@@ -43,13 +48,16 @@ import requests
 from dotenv import load_dotenv
 from google.cloud import storage
 
+
 # =========================================================
 # 기본 설정
 # =========================================================
 
 BASE_DIR = Path(__file__).resolve().parent
-# youtube/instagram/post_instagram.py 기준으로 youtube/conversation 을 바라봄
-CONVERSATION_DIR = BASE_DIR.parent / "conversation"
+
+# youtube/instagram/post_instagram.py 기준으로 youtube/facebook 을 바라봄
+# assemble_social.py가 만든 facebook/{Language}/{Series}/{Level}/{topic}/ 를 사용
+FACEBOOK_DIR = BASE_DIR.parent / "facebook"
 
 
 # .env.local 로드 - 여러 후보 경로를 순서대로 확인 (실행 위치와 무관하게 안전하게)
@@ -88,12 +96,6 @@ FIREBASE_BUCKET_NAME = os.environ.get(
 
 FREE_TRIAL_CTA = "🎁 Want a 7-day free trial? Tap our profile → tap the link."
 
-# YouTube 채널 안내 - "@계정명" 형태는 Instagram이 실제 멘션 링크로 자동 변환해
-# 버리므로 사용하지 않고, 순수 텍스트로만 안내합니다.
-YOUTUBE_VISIT_TEXT = (
-    "🎧 Want the full audio lesson? Search \"ManyLangsStudio\" on YouTube and visit us!"
-)
-
 MANYLANGS_TAGLINE = (
     "🌐 Grammar · Vocabulary · Idiom · Real-Life Situations · Conversation\n"
     "👉 www.manylangs.studio"
@@ -101,7 +103,10 @@ MANYLANGS_TAGLINE = (
 
 
 # =========================================================
-# 언어 설정 (youtube_upload.py 와 동일)
+# 언어 설정
+#
+# "name" 값이 그대로 facebook/{Language}/ 폴더명과
+# 대소문자 무시하고 매칭됩니다. (예: "English" -> facebook/English/)
 # =========================================================
 
 LANGUAGES = {
@@ -113,181 +118,267 @@ LANGUAGES = {
     "fr": {"name": "French", "native_name": "Français"},
     "pt": {"name": "Portuguese", "native_name": "Português"},
     "de": {"name": "German", "native_name": "Deutsch"},
+    "ru": {"name": "Russian", "native_name": "Русский"},
+}
+
+# 폴더명(소문자) -> 언어 코드
+LANGUAGE_NAME_TO_CODE = {
+    lang["name"].lower(): code for code, lang in LANGUAGES.items()
 }
 
 
 # =========================================================
-# 언어 선택
+# 자막 지원 언어 안내 문구
 # =========================================================
 
-def prompt_language():
-    print("\n지원 언어:")
-    for code, lang in LANGUAGES.items():
-        print(f"  {code} - {lang['name']}")
+SUBTITLE_LANGS = ["en", "es", "pt", "fr", "kr", "ja", "zh", "ru"]
 
-    lang_code = input("언어 코드 입력: ").strip().lower()
+SUBTITLE_LANG_NAMES = {
+    "en": "English",
+    "es": "Spanish",
+    "pt": "Portuguese",
+    "fr": "French",
+    "kr": "Korean",
+    "ja": "Japanese",
+    "zh": "Chinese Mandarin",
+    "ru": "Russian",
+}
 
-    if lang_code not in LANGUAGES:
-        raise ValueError(f"지원하지 않는 언어 코드입니다: {lang_code}")
 
-    return lang_code
+def build_subtitle_promo(lang_code, language_name):
+    """
+    자막 지원 8개 언어 중, 지금 게시하는 언어 자신은 제외하고 안내한다.
+    """
+    if lang_code in SUBTITLE_LANGS:
+        other_codes = [c for c in SUBTITLE_LANGS if c != lang_code]
+    else:
+        other_codes = SUBTITLE_LANGS[:]
+
+    other_names = [SUBTITLE_LANG_NAMES[c] for c in other_codes]
+
+    if len(other_names) == 1:
+        joined = other_names[0]
+    else:
+        joined = ", ".join(other_names[:-1]) + f", and {other_names[-1]}"
+
+    return f"📚 Study {language_name} conversations with subtitles in {joined}!"
+
+
+def youtube_playlists_text(language_name):
+    """
+    Instagram은 캡션 내 URL을 클릭 가능하게 만들지 않고, "@계정명" 형태는
+    실제 멘션 링크로 자동 변환되어 버리므로, 실제 재생목록 URL을 나열하는
+    Facebook 버전과 달리 유튜브에서 채널을 검색하도록 순수 텍스트로 안내합니다.
+    """
+    return (
+        f'🎬 Watch all {language_name} playlists — '
+        f'search "ManyLangs Studio" on YouTube!'
+    )
 
 
 # =========================================================
-# 폴더 검색 (CONVERSATION_DIR/{lang_code}/ 아래, a1_~c2_ 로 시작하는 폴더만)
+# 폴더 탐색: 언어 -> 시리즈 -> 레벨 -> 주제(영상) 폴더
+# (post_facebook.py 와 동일한 구조/로직)
 # =========================================================
 
-def list_language_folders(lang_code):
-    lang_dir = CONVERSATION_DIR / lang_code
-
-    if not lang_dir.exists():
-        raise FileNotFoundError(f"언어 폴더가 없습니다:\n{lang_dir}")
-
-    folders = [
-        d for d in sorted(lang_dir.iterdir())
-        if d.is_dir()
-        and re.match(r"^(a1|a2|b1|b2|c1|c2)_", d.name, re.IGNORECASE)
-    ]
-
-    if not folders:
-        raise FileNotFoundError(f"게시할 폴더가 없습니다:\n{lang_dir}")
-
-    return folders
+LEVEL_DIR_PATTERN = re.compile(r"^(a1|a2|b1|b2|c1|c2)$", re.IGNORECASE)
 
 
-def prompt_folder_selection(folders):
-    print("\n게시 가능한 폴더:")
-    for i, d in enumerate(folders, start=1):
-        print(f"  {i:>2} - {d.name}")
+def _list_subdirs(parent_dir):
+    return [d for d in sorted(parent_dir.iterdir()) if d.is_dir()]
 
-    choice = input("번호 선택: ").strip()
 
-    if not choice.isdigit() or not (1 <= int(choice) <= len(folders)):
+def _prompt_choice(items, label_fn, prompt_text):
+    if not items:
+        raise FileNotFoundError("선택할 폴더가 없습니다.")
+
+    print()
+    for i, item in enumerate(items, start=1):
+        print(f"  {i:>2} - {label_fn(item)}")
+
+    choice = input(prompt_text).strip()
+
+    if not choice.isdigit() or not (1 <= int(choice) <= len(items)):
         raise ValueError(f"잘못된 번호: {choice}")
 
-    return folders[int(choice) - 1]
+    return items[int(choice) - 1]
 
 
-def build_folder_info(lang_code, item_dir):
-    folder_name = item_dir.name
+def list_language_dirs():
+    """
+    facebook/ 바로 아래 폴더 중, LANGUAGES 의 "name" 과
+    (대소문자 무시) 매칭되는 폴더만 (lang_code, path) 로 반환.
+    """
 
-    match = re.match(r"^(a1|a2|b1|b2|c1|c2)_", folder_name, re.IGNORECASE)
+    results = []
 
-    if not match:
-        raise ValueError(f"레벨을 폴더명에서 찾을 수 없습니다:\n{folder_name}")
+    for d in _list_subdirs(FACEBOOK_DIR):
+        code = LANGUAGE_NAME_TO_CODE.get(d.name.lower())
+        if code:
+            results.append((code, d))
 
-    level = match.group(1).upper()
+    if not results:
+        raise FileNotFoundError(
+            "언어 폴더를 찾을 수 없습니다 (먼저 assemble_social.py를 실행하세요). "
+            f"확인한 경로: {FACEBOOK_DIR}"
+        )
 
-    return {
-        "item_dir": item_dir,
-        "folder_name": folder_name,
-        "lang_code": lang_code,
-        "language": LANGUAGES[lang_code],
-        "level": level,
-    }
+    return results
+
+
+def prompt_language_dir():
+    lang_dirs = list_language_dirs()
+
+    print("\n[1/4] 언어 선택")
+    code, path = _prompt_choice(
+        lang_dirs,
+        label_fn=lambda pair: f"{pair[0]} - {LANGUAGES[pair[0]]['name']}",
+        prompt_text="번호 선택: ",
+    )
+
+    return code, path
+
+
+def prompt_series_dir(lang_dir):
+    series_dirs = _list_subdirs(lang_dir)
+
+    if not series_dirs:
+        raise FileNotFoundError(f"시리즈 폴더가 없습니다:\n{lang_dir}")
+
+    print("\n[2/4] 시리즈 선택")
+    return _prompt_choice(
+        series_dirs,
+        label_fn=lambda d: d.name,
+        prompt_text="번호 선택: ",
+    )
+
+
+def prompt_level_dir(series_dir):
+    level_dirs = [
+        d for d in _list_subdirs(series_dir) if LEVEL_DIR_PATTERN.match(d.name)
+    ]
+
+    if not level_dirs:
+        raise FileNotFoundError(f"레벨 폴더(A1~C2)가 없습니다:\n{series_dir}")
+
+    print("\n[3/4] 레벨 선택")
+    return _prompt_choice(
+        level_dirs,
+        label_fn=lambda d: d.name.upper(),
+        prompt_text="번호 선택: ",
+    )
+
+
+def prompt_topic_dir(level_dir):
+    topic_dirs = _list_subdirs(level_dir)
+
+    if not topic_dirs:
+        raise FileNotFoundError(f"게시할 영상 폴더가 없습니다:\n{level_dir}")
+
+    print("\n[4/4] 영상(주제) 선택")
+    return _prompt_choice(
+        topic_dirs,
+        label_fn=lambda d: d.name,
+        prompt_text="번호 선택: ",
+    )
 
 
 def folder_name_to_title(folder_name):
+    # 과거 구조(레벨 접두사가 폴더명에 남아있는 경우)와 호환
     name = re.sub(r"^(a1|a2|b1|b2|c1|c2)_", "", folder_name, flags=re.IGNORECASE)
     words = [w for w in name.split("_") if w]
     return " ".join(w.capitalize() for w in words)
 
 
 # =========================================================
-# 이미지 찾기: {folder_name}_001.png ~ {folder_name}_006.png
+# Instagram 동영상 찾기: {topic_dir}/{topic_dir.name}.insta.mp4
+#
+# 같은 폴더에 .fx.mp4가 있어도 사용하지 않음
 # =========================================================
 
-def find_sequential_images(item_dir, folder_name):
-    images = []
+def find_social_video(topic_dir):
+    video_path = topic_dir / f"{topic_dir.name}.insta.mp4"
 
-    for n in range(1, 7):
-        candidate = item_dir / f"{folder_name}_{n:03d}.png"
-
-        if candidate.exists():
-            images.append(candidate)
-
-    if not images:
+    if not video_path.exists():
         raise FileNotFoundError(
-            f"{folder_name}_001.png ~ {folder_name}_006.png 를 찾을 수 없습니다:\n{item_dir}"
+            f"{topic_dir.name}.insta.mp4 를 찾을 수 없습니다:\n"
+            f"{video_path}\n"
+            "먼저 assemble_social.py로 Instagram용 .insta.mp4를 만들어 두세요."
         )
 
-    print(f"[이미지 {len(images)}장 발견]")
+    print(f"[Instagram 동영상 발견] {video_path.name}")
 
-    for img in images:
-        print(f"  - {img.name}")
-
-    return images
+    return video_path
 
 
 # =========================================================
 # 캡션 빌드
 # =========================================================
 
-def build_caption(language, level, folder_name, include_cta=True):
+def build_caption(language, lang_code, level, series_name, folder_name, include_cta=True):
     conversation_title = folder_name_to_title(folder_name)
     name = language["name"]
 
+    subtitle_promo = build_subtitle_promo(lang_code, name)
+    playlists_text = youtube_playlists_text(name)
+
     lines = [
-        "👉 Swipe to see the full conversation →",
+        f"{name} {series_name} | {level} | {conversation_title}",
     ]
 
-    # 2번째: 7-Day Free Trial
     if include_cta:
         lines += [
             "",
             FREE_TRIAL_CTA,
         ]
 
-    # 나머지는 기존 순서 그대로
     lines += [
         "",
-        f"{name} Conversation | {level} | {conversation_title}",
-        "",
-        YOUTUBE_VISIT_TEXT,
+        subtitle_promo,
+        playlists_text,
         "",
         MANYLANGS_TAGLINE,
         "",
-        f"#Learn{name} #{name}Conversation #{name}Speaking #{name}Practice "
-        f"#ManyLangs #LanguageLearning",
+        f"#Learn{name} #{name}{series_name.replace(' ', '')} #{name}Speaking "
+        f"#{name}Practice #ManyLangs #LanguageLearning",
     ]
 
     return "\n".join(lines).strip()
 
 
 # =========================================================
-# Firebase Storage 업로드 (Vercel 배포/로컬 폴더 삭제와 완전히 무관한
-# 공개 URL을 얻기 위해 사용 - 기존 콘텐츠 업로드 파이프라인과 같은 버킷)
+# Firebase Storage 업로드
+#
+# Instagram Graph API는 인터넷에서 접근 가능한 video_url이 필요하므로,
+# 로컬 .insta.mp4를 Firebase Storage에 올린다.
 # =========================================================
 
-def upload_images_to_firebase(image_paths, lang_code, folder_name):
+def upload_video_to_firebase(video_path, language, series_name, level, folder_name):
     client = storage.Client()
     bucket = client.bucket(FIREBASE_BUCKET_NAME)
 
-    urls = []
+    blob_path = (
+        f"social/{language['name']}/{series_name}/{level}/"
+        f"{folder_name}/{video_path.name}"
+    )
+    blob = bucket.blob(blob_path)
 
-    for path in image_paths:
-        blob_path = f"social/{lang_code}/{folder_name}/{path.name}"
-        blob = bucket.blob(blob_path)
+    if blob.exists():
+        print(f"[이미 존재, 재사용] {blob_path}")
+    else:
+        blob.upload_from_filename(str(video_path), content_type="video/mp4")
+        print(f"[Firebase 업로드 완료] {blob_path}")
 
-        if blob.exists():
-            print(f"[이미 존재, 재사용] {blob_path}")
-        else:
-            blob.upload_from_filename(str(path), content_type="image/png")
-            print(f"[Firebase 업로드 완료] {blob_path}")
+    # 이미 올라가 있어도 공개 상태인지 항상 보장
+    blob.make_public()
 
-        # 이미 올라가 있어도 공개 상태인지 항상 보장
-        blob.make_public()
-        urls.append(blob.public_url)
+    print(f"\n[사용할 동영상 URL - Firebase Storage]\n  - {blob.public_url}")
 
-    print("\n[사용할 이미지 URL - Firebase Storage]")
-    for u in urls:
-        print(f"  - {u}")
-
-    return urls
+    return blob.public_url
 
 
 # =========================================================
-# Instagram: 캐러셀(여러 장) 게시
+# Instagram: 동영상(Reels) 게시
 # =========================================================
 
 def _raise_with_detail(resp):
@@ -299,15 +390,23 @@ def _raise_with_detail(resp):
             detail = resp.json()
         except Exception:
             detail = resp.text
+
         print("\n[Meta API 에러 상세]")
         print(detail)
         raise
 
 
-def _wait_until_ready(container_id, max_wait_seconds=60):
-    """캐러셀/미디어 컨테이너가 FINISHED 상태가 될 때까지 대기."""
+def _wait_until_ready(container_id, max_wait_seconds=600):
+    """
+    동영상 컨테이너가 FINISHED 상태가 될 때까지 대기.
+
+    상태 조회 중 Application request limit reached 같은
+    일시적 사용량 제한 에러가 나오면 대기 시간을 점점 늘려가며 재시도한다.
+    """
     waited = 0
-    interval = 3
+    interval = 10
+    backoff = 10
+    max_backoff = 60
 
     while waited < max_wait_seconds:
         resp = requests.get(
@@ -317,7 +416,29 @@ def _wait_until_ready(container_id, max_wait_seconds=60):
                 "access_token": IG_ACCESS_TOKEN,
             },
         )
-        resp.raise_for_status()
+
+        if resp.status_code != 200:
+            try:
+                err = resp.json().get("error", {})
+            except Exception:
+                err = {}
+
+            if err.get("is_transient") or err.get("code") == 4:
+                print(
+                    f"[일시적 사용량 제한] "
+                    f"{err.get('error_user_msg') or err.get('message')} "
+                    f"-> {backoff}초 대기 후 재시도"
+                )
+
+                time.sleep(backoff)
+                waited += backoff
+                backoff = min(backoff * 2, max_backoff)
+                continue
+
+            _raise_with_detail(resp)
+
+        backoff = 10
+
         status = resp.json().get("status_code")
         print(f"[컨테이너 상태 확인] {container_id} -> {status}")
 
@@ -330,59 +451,48 @@ def _wait_until_ready(container_id, max_wait_seconds=60):
         time.sleep(interval)
         waited += interval
 
-    print(f"[경고] {max_wait_seconds}초 대기했지만 아직 FINISHED가 아닙니다. 게시를 시도합니다.")
+    print(
+        f"[경고] {max_wait_seconds}초 대기했지만 아직 FINISHED가 아닙니다. "
+        "게시를 시도합니다."
+    )
+
     return False
 
 
-def post_instagram_carousel(image_urls, caption):
+def post_instagram_video(video_url, caption):
     if not IG_ACCESS_TOKEN or not IG_ACCOUNT_ID:
         raise RuntimeError(
             "IG_ACCESS_TOKEN / IG_ACCOUNT_ID 환경변수가 없습니다. "
             ".env.local 을 확인하세요."
         )
 
-    child_ids = []
-
-    for url in image_urls:
-        resp = requests.post(
-            f"{IG_GRAPH_URL}/{IG_ACCOUNT_ID}/media",
-            data={
-                "image_url": url,
-                "is_carousel_item": "true",
-                "access_token": IG_ACCESS_TOKEN,
-            },
-        )
-        _raise_with_detail(resp)
-        child_id = resp.json()["id"]
-        child_ids.append(child_id)
-        print(f"[컨테이너 생성] {child_id}")
-        time.sleep(1)
-
-    carousel_resp = requests.post(
+    container_resp = requests.post(
         f"{IG_GRAPH_URL}/{IG_ACCOUNT_ID}/media",
         data={
-            "media_type": "CAROUSEL",
-            "children": ",".join(child_ids),
+            "media_type": "REELS",
+            "video_url": video_url,
             "caption": caption,
             "access_token": IG_ACCESS_TOKEN,
         },
     )
-    _raise_with_detail(carousel_resp)
-    carousel_id = carousel_resp.json()["id"]
-    print(f"[캐러셀 컨테이너 생성] {carousel_id}")
 
-    print("\n[캐러셀 처리 대기 중...]")
-    _wait_until_ready(carousel_id)
+    _raise_with_detail(container_resp)
+
+    container_id = container_resp.json()["id"]
+    print(f"[컨테이너 생성] {container_id}")
+
+    print("\n[동영상 처리 대기 중...]")
+    _wait_until_ready(container_id)
 
     publish_resp = requests.post(
         f"{IG_GRAPH_URL}/{IG_ACCOUNT_ID}/media_publish",
         data={
-            "creation_id": carousel_id,
+            "creation_id": container_id,
             "access_token": IG_ACCESS_TOKEN,
         },
     )
 
-    # "Media ID is not available" 에러(2207027)가 나오면 몇 초 더 기다렸다가 재시도
+    # Media ID is not available 에러가 나오면 몇 초 더 기다렸다가 재시도
     if publish_resp.status_code == 400:
         try:
             err = publish_resp.json().get("error", {})
@@ -393,19 +503,23 @@ def post_instagram_carousel(image_urls, caption):
             for attempt in range(5):
                 print(f"[아직 준비 안 됨, 재시도 {attempt + 1}/5]")
                 time.sleep(5)
+
                 publish_resp = requests.post(
                     f"{IG_GRAPH_URL}/{IG_ACCOUNT_ID}/media_publish",
                     data={
-                        "creation_id": carousel_id,
+                        "creation_id": container_id,
                         "access_token": IG_ACCESS_TOKEN,
                     },
                 )
+
                 if publish_resp.status_code == 200:
                     break
 
     _raise_with_detail(publish_resp)
+
     result = publish_resp.json()
     print(f"[Instagram 게시 완료] {result}")
+
     return result
 
 
@@ -416,30 +530,34 @@ def post_instagram_carousel(image_urls, caption):
 def main():
     print()
     print("========================================")
-    print("ManyLangs Instagram Uploader")
+    print("ManyLangs Instagram Uploader (동영상)")
     print("========================================")
 
-    lang_code = prompt_language()
-    folders = list_language_folders(lang_code)
-    selected_dir = prompt_folder_selection(folders)
+    lang_code, lang_dir = prompt_language_dir()
+    series_dir = prompt_series_dir(lang_dir)
+    level_dir = prompt_level_dir(series_dir)
+    topic_dir = prompt_topic_dir(level_dir)
 
-    info = build_folder_info(lang_code, selected_dir)
-    item_dir = info["item_dir"]
-    language = info["language"]
-    level = info["level"]
-    folder_name = info["folder_name"]
+    language = LANGUAGES[lang_code]
+    series_name = series_dir.name
+    level = level_dir.name.upper()
+    folder_name = topic_dir.name
 
-    images = find_sequential_images(item_dir, folder_name)
+    video_path = find_social_video(topic_dir)
 
     print()
+
     include_cta_input = input(
-        "무료 체험 CTA를 캡션에 포함할까요? [Y/n]: "
+        "7-day free trial 신청 안내를 캡션에 포함할까요? [Y/n]: "
     ).strip().lower()
+
     include_cta = include_cta_input in ("", "y", "yes")
 
     caption = build_caption(
         language=language,
+        lang_code=lang_code,
         level=level,
+        series_name=series_name,
         folder_name=folder_name,
         include_cta=include_cta,
     )
@@ -451,14 +569,23 @@ def main():
     print(caption)
     print("========================================")
 
-    confirm = input("\n이 설정으로 Instagram에 게시할까요? [y/N]: ").strip().lower()
+    confirm = input(
+        "\n이 설정으로 Instagram에 게시할까요? [y/N]: "
+    ).strip().lower()
 
     if confirm != "y":
         print("게시를 취소했습니다.")
         return
 
-    image_urls = upload_images_to_firebase(images, lang_code, folder_name)
-    post_instagram_carousel(image_urls, caption)
+    video_url = upload_video_to_firebase(
+        video_path,
+        language,
+        series_name,
+        level,
+        folder_name,
+    )
+
+    post_instagram_video(video_url, caption)
 
     print()
     print("========================================")

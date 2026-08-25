@@ -1,0 +1,70 @@
+{
+  "chapter_id": "conversation_021.runtime.json",
+  "target_lang": "kr",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A/B가 한 세트 내에서 자연스럽게 번갈아 대화하며, '준호 씨'와 '지은 씨'라는 상호 호칭을 통해 관계가 일관되게 유지됨."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "질문(기숙사 생활은 좀 어때요?), 답변(꽤 만족해요), 동의(그렇죠?), 공감(저도 그렇게 느껴요), 위로/긍정(다행이네요) 등 대화의 기능이 뚜렷하고 자연스럽게 연결됨."
+    },
+    "spoken_naturalness": {
+      "score": 10,
+      "weight": 15,
+      "notes": "'좀 어때요?', '불편하긴 한데요', '적응이 안 됐어요', '괜찮고요' 등 한국어 구어체의 전형적인 표현과 어미가 자연스럽게 사용됨."
+    },
+    "register_appropriateness": {
+      "score": 10,
+      "weight": 10,
+      "notes": "두 화자가 '~요'체를 일관되게 사용하며, 서로를 '씨'로 호칭하는 친근하지만 예의를 갖춘 한국어 회화의 표준적인 격식 수준을 유지함."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 오류가 발견되지 않았으며, 띄어쓰기 및 문장 부호 사용이 정확함."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "기숙사 생활이라는 구체적이고 실용적인 주제를 다루며, 통금 시간, 룸메이트, 규칙적인 생활 등 실제 대화에서 자주 등장할 수 있는 세부 내용을 포함함."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "한국어 교재이지만 '기숙사', '통금' 등 보편적인 주제를 다루어 특정 문화권에 국한되지 않는 중립적인 내용으로 구성됨."
+    },
+    "tts_readiness": {
+      "score": 10,
+      "weight": 5,
+      "notes": "모든 문장이 TTS로 읽기에 적합한 길이와 구조를 가지며, 축약형이나 지나치게 빠른 구어체 표현이 없어 또렷하게 읽힘."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "kr 필드가 target 필드와 모든 줄에서 완벽하게 일치함."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "TTMIK이나 세종한국어 교재의 초급~중급 대화문과 비교했을 때, 실용적인 주제와 자연스러운 구어체 표현, 명확한 대화 구조를 갖추어 충분히 경쟁력 있는 수준임. 다만, 해당 서비스들의 다양한 부가 자료(문화 설명, 심화 표현 등)에 비해 단순한 구조라는 점에서 만점은 아님."
+    }
+  },
+  "final_score": 98.5,
+  "market_benchmark": {
+    "comparable_services": [
+      "Talk To Me In Korean",
+      "Duolingo Korean Conversations",
+      "세종한국어/TOPIK",
+      "Pimsleur Korean"
+    ],
+    "estimated_relative_position": "세종한국어 회화 교재 및 TTMIK의 중급 수준 대화문과 동급 이상의 자연스러움과 실용성을 갖추었으며, Duolingo의 단순 문장 반복형 대화보다 훨씬 높은 완성도를 보임.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}

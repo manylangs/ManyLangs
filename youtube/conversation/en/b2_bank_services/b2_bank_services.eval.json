@@ -1,0 +1,71 @@
+{
+  "chapter_id": "conversation_031.runtime.json",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A(고객)와 B(은행 직원)의 역할이 전체 대화에서 일관되게 유지됨. A는 질문/요청, B는 안내/답변 패턴이 명확함."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "계좌 개설 요청, 필요 서류 안내, 신규 고객 확인, 추가 서비스 제안, 소요 시간 문의 및 안내 등 은행 업무 대화의 기능적 흐름이 자연스럽고 정확함."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "전체적으로 자연스러운 회화체. 'Got it.', 'That would be great.' 등 구어적 표현이 적절히 사용됨. 다만 'You'll receive it in the mail within seven to ten business days.'는 다소 공식적인 안내문 스타일로, 실제 대화에서는 'It usually takes about seven to ten business days to arrive.'처럼 더 짧고 친근한 표현이 쓰일 수 있음."
+    },
+    "register_appropriateness": {
+      "score": 9,
+      "weight": 10,
+      "notes": "은행 직원과 고객 간의 대화에 적절한 공손함과 전문성을 유지함. 'Would you like to...'와 같은 정중한 제안 표현이 잘 사용됨. 다만 직원의 응답이 전반적으로 다소 격식 있어, 실제 은행 창구 대화보다 약간 더 공식적인 톤."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "모든 언어에서 문법적 오류나 표기 오류가 발견되지 않음. 구두점, 대문자 사용, 축약형 사용이 일관되고 정확함."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "은행에서 계좌 개설 시 필요한 실제 절차(신분증, 사회보장번호, 체크카드 신청, 배송 기간)를 정확히 반영하여 실용성이 높음. 학습자가 실제 은행 방문 시 바로 활용 가능한 표현들로 구성됨."
+    },
+    "cultural_neutrality": {
+      "score": 9,
+      "weight": 5,
+      "notes": "'social security number'는 미국 중심 표현이나, 영어권 학습자를 대상으로 한 교재에서는 표준적인 용어임. 다른 언어 번역에서도 문화적 편향이 두드러지지 않음."
+    },
+    "tts_readiness": {
+      "score": 10,
+      "weight": 5,
+      "notes": "모든 문장이 TTS 합성에 적합한 명확한 구조와 자연스러운 리듬을 가짐. 축약형(I'll, You'll, We'll)이 적절히 사용되어 실제 발화처럼 읽히기 좋음."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 en이 모든 문장에서 완벽하게 일치함. 6개 문장 모두 동일한 텍스트로 확인됨."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "실용적인 은행 업무 상황을 다루어 실생활 활용도가 높음. Cambridge English Conversation 및 EBS/YBM 실용영어회화 수준의 대화 품질을 갖추고 있으며, Duolingo나 Speak의 AI 기반 대화보다 더 체계적인 문장 구조를 보여줌."
+    }
+  },
+  "final_score": 95,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "Cambridge English Conversation 및 EBS/YBM 실용영어회화와 동급 이상의 품질. 실용성과 자연스러움에서 Duolingo 및 Speak보다 우위에 있음.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}

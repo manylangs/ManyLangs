@@ -1,0 +1,71 @@
+{
+  "chapter_id": "conversation_013.runtime.json",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A와 B의 역할이 일관되게 유지됨. A는 질문/제안, B는 정보 제공/동의하는 패턴이 자연스럽고, 대화 전체에서 화자가 혼동될 여지가 없음."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "영화 시작 시간 확인(질문), 정보 제공, 제안, 동의, 작별 인사까지 대화의 기능적 흐름이 명확하고 자연스러움. 각 발화가 상황에 맞는 기능을 정확히 수행함."
+    },
+    "spoken_naturalness": {
+      "score": 10,
+      "weight": 15,
+      "notes": "영어 원문 기준으로 'grab a quick dinner', 'Perfect.', 'See you then!' 등 실제 원어민이 일상에서 쓰는 자연스러운 구어체 표현이 잘 사용됨. 대화의 리듬과 호흡이 매우 자연스러움."
+    },
+    "register_appropriateness": {
+      "score": 10,
+      "weight": 10,
+      "notes": "친구나 지인 사이의 일상적인 대화에 적합한 캐주얼한 레지스터를 일관되게 유지함. 존칭이나 과도하게 격식 있는 표현이 섞이지 않아 일관성이 높음."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "모든 언어에서 문법적 오류나 철자 오류가 발견되지 않음. 구두점(물음표, 느낌표, 쉼표) 사용이 각 언어의 표기 규칙을 정확히 따르고 있음."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "영화 관람 전 일정을 조율하는 매우 흔하고 실용적인 상황을 다루고 있음. 시간 표현(seven thirty, six forty-five, six fifteen)이 실제 회화에서 바로 활용 가능한 고빈도 표현임."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "영화, 역, 저녁 식사 등 문화적으로 중립적인 소재를 사용하여 특정 문화권에 치우치지 않음. 모든 언어권 학습자가 공감할 수 있는 보편적 상황임."
+    },
+    "tts_readiness": {
+      "score": 10,
+      "weight": 5,
+      "notes": "모든 문장이 TTS로 읽기에 적합한 길이와 구조를 가짐. 축약형(I'll, we should)과 자연스러운 문장 경계가 포함되어 있어 음성 합성 품질이 높을 것으로 예상됨."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 en이 완전히 동일한 문자열로 일치함. 미러 구조가 정확히 유지되고 있음."
+    },
+    "market_competitiveness": {
+      "score": 10,
+      "weight": 15,
+      "notes": "A2 레벨에 적합한 난이도와 실용성을 갖추고 있으며, 벤치마크 서비스들의 유사 레벨 콘텐츠와 비교해도 손색없는 품질. 짧고 집중된 대화로 학습 효율이 높음."
+    }
+  },
+  "final_score": 100,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "상위 5% 수준. A2 레벨에서 다루는 핵심 표현(시간 말하기, 약속 정하기)을 가장 자연스러운 구어체로 구현했으며, 8개 언어 번역 품질도 모두 우수함.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}

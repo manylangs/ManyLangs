@@ -20,6 +20,7 @@ function toMs(v: any): number {
   if (!v) return 0;
   if (typeof v === "number") return v;
   if (typeof v?.toMillis === "function") return v.toMillis();
+
   const n = Number(v);
   return Number.isFinite(n) ? n : 0;
 }
@@ -27,10 +28,14 @@ function toMs(v: any): number {
 export async function POST(req: Request) {
   const ua = req.headers.get("user-agent") ?? "";
   const isIOSApp = ua.includes("ManyLangsIOSApp");
+
   const { userId } = await auth();
 
   if (!userId) {
-    return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+    return NextResponse.json(
+      { error: "unauthorized" },
+      { status: 401 }
+    );
   }
 
   let body: RedeemBody;
@@ -38,7 +43,10 @@ export async function POST(req: Request) {
   try {
     body = await req.json();
   } catch {
-    return NextResponse.json({ error: "invalid body" }, { status: 400 });
+    return NextResponse.json(
+      { error: "invalid body" },
+      { status: 400 }
+    );
   }
 
   const { code, lang, series, level } = body;
@@ -52,17 +60,26 @@ export async function POST(req: Request) {
 
   const couponCode = String(code).trim().toUpperCase();
 
-  const finalLevel = series === "idiom" ? "all" : String(level).trim();
+  const finalLevel =
+    series === "idiom" ? "all" : String(level).trim();
 
   const now = Date.now();
 
+  /*
+   * 기존 Language / Region 프로모 코드 유지
+   * + 신규 SNS 프로모 코드 추가
+   */
   const isPromoCampaign =
     /^PROMO-\d{4}-[A-Z]{2,3}$/.test(couponCode) ||
-    /^PROMO-\d{4}-[A-Z_]+$/.test(couponCode);
+    /^PROMO-\d{4}-[A-Z_]+$/.test(couponCode) ||
+    /^PROMO-\d{4}-SNS-(X|TT|YT|IS|FB)$/.test(couponCode);
 
   if (isPromoCampaign) {
     try {
-      const campaignRef = db.collection("promoCampaigns").doc(couponCode);
+      const campaignRef = db
+        .collection("promoCampaigns")
+        .doc(couponCode);
+
       const campaignSnap = await campaignRef.get();
 
       if (!campaignSnap.exists) {
@@ -75,6 +92,7 @@ export async function POST(req: Request) {
       const campaign = campaignSnap.data()!;
 
       const endAt = toMs(campaign.endAt);
+
       if (endAt > 0 && now > endAt) {
         return NextResponse.json(
           { error: "This promotional code has expired." },
@@ -82,21 +100,27 @@ export async function POST(req: Request) {
         );
       }
 
-      // ✅ 계정당 프로모 5회 제한
-      const promoCheck = await db.collection("promoActivations")
+      // 계정당 프로모 5회 제한
+      const promoCheck = await db
+        .collection("promoActivations")
         .where("userId", "==", userId)
         .get();
 
       if (promoCheck.size >= 5) {
         return NextResponse.json(
-          { error: "Promotion limit reached. Please purchase to continue." },
+          {
+            error:
+              "Promotion limit reached. Please purchase to continue.",
+          },
           { status: 400 }
         );
       }
 
       const wantLang = String(lang).trim();
       const wantSeries = String(series).trim();
-      const licDocId = `${wantLang}_${wantSeries}_${finalLevel}`;
+
+      const licDocId =
+        `${wantLang}_${wantSeries}_${finalLevel}`;
 
       const licRef = db
         .collection("licenses")
@@ -108,6 +132,7 @@ export async function POST(req: Request) {
 
       if (licSnap.exists) {
         const exp = toMs(licSnap.data()?.expiresAt);
+
         if (exp > now) {
           return NextResponse.json(
             {
@@ -138,8 +163,14 @@ export async function POST(req: Request) {
 
       await db.collection("promoActivations").add({
         code: couponCode,
+
+        // 기존 필드 유지
         region: campaign.region ?? null,
         language: campaign.language ?? null,
+
+        // 신규 SNS 플랫폼 필드
+        platform: campaign.platform ?? null,
+
         dateStr: campaign.dateStr ?? null,
         userId,
         lang: wantLang,
@@ -171,176 +202,248 @@ export async function POST(req: Request) {
       );
     } catch (e: any) {
       const msg =
-        typeof e?.message === "string" ? e.message : "redeem failed";
-      return NextResponse.json({ error: msg }, { status: 500 });
+        typeof e?.message === "string"
+          ? e.message
+          : "redeem failed";
+
+      return NextResponse.json(
+        { error: msg },
+        { status: 500 }
+      );
     }
   }
 
+  /*
+   * =========================================================
+   * 기존 일반 쿠폰 / Stripe / Google Play / Apple
+   * 아래 로직은 기존 그대로 유지
+   * =========================================================
+   */
+
   try {
-    const ref = db.collection("coupons").doc(couponCode);
+    const ref = db
+      .collection("coupons")
+      .doc(couponCode);
 
-    const { coupon, license } = await db.runTransaction(async (tx) => {
-      const snap = await tx.get(ref);
+    const { coupon, license } =
+      await db.runTransaction(async (tx) => {
+        const snap = await tx.get(ref);
 
-      if (!snap.exists) {
-        throw new Error("Invalid coupon code");
-      }
-
-      const c = snap.data() as Coupon;
-
-      if (
-        isIOSApp &&
-        (
-          (c as any).source !== "apple_app_store" ||
-          (c as any).ownerId !== userId
-        )
-      ) {
-        throw new Error(
-          "Only Apple In-App Purchase coupons can be used in this app."
-        );
-      }
-
-      if (c.used) {
-        throw new Error("Coupon already used");
-      }
-
-      if ((c as any).source === "promo") {
-        const deadline = toMs((c as any).activationDeadline);
-        if (deadline > 0 && now > deadline) {
-          throw new Error("Promotion coupon expired");
+        if (!snap.exists) {
+          throw new Error("Invalid coupon code");
         }
-      }
 
-      const wantLang = String(lang).trim();
-      const wantSeries = String(series).trim();
+        const c = snap.data() as Coupon;
 
-      const licDocId = `${wantLang}_${wantSeries}_${finalLevel}`;
-
-      const licRef = db
-        .collection("licenses")
-        .doc(userId)
-        .collection("items")
-        .doc(licDocId);
-
-      const licSnap = await tx.get(licRef);
-
-      if (licSnap.exists) {
-        const exp = toMs(licSnap.data()?.expiresAt);
-        if (exp > now) {
-          throw new Error("Active license exists");
+        if (
+          isIOSApp &&
+          (
+            (c as any).source !== "apple_app_store" ||
+            (c as any).ownerId !== userId
+          )
+        ) {
+          throw new Error(
+            "Only Apple In-App Purchase coupons can be used in this app."
+          );
         }
-      }
 
-      const durationDays = (c as any).durationDays ?? 30;
-      const expiresAt = now + DAY_MS * durationDays;
+        if (c.used) {
+          throw new Error("Coupon already used");
+        }
 
-      const lic: License = {
-        lang: wantLang,
-        series: wantSeries,
-        level: finalLevel,
-        expiresAt,
-        source: "coupon",
-        code: couponCode,
-        issuedAt: now,
-      };
+        if ((c as any).source === "promo") {
+          const deadline = toMs(
+            (c as any).activationDeadline
+          );
 
-      tx.set(
-        licRef,
-        {
-          lang: lic.lang,
-          series: lic.series,
-          level: lic.level,
-          expiresAt: lic.expiresAt,
-          source: "coupon",
-          code: couponCode,
-          issuedAt: FieldValue.serverTimestamp(),
-          updatedAt: FieldValue.serverTimestamp(),
-          issuedAtMs: now,
-        },
-        { merge: true }
-      );
+          if (deadline > 0 && now > deadline) {
+            throw new Error(
+              "Promotion coupon expired"
+            );
+          }
+        }
 
-      const updated: Coupon = {
-        ...c,
-        code: couponCode,
-        used: true,
-        usedBy: userId,
-        usedAt: now,
-        usedLang: wantLang,
-        usedSeries: wantSeries,
-        usedLevel: finalLevel,
-        expiresAt,
-      };
+        const wantLang = String(lang).trim();
+        const wantSeries = String(series).trim();
 
-      tx.set(ref, updated, { merge: true });
+        const licDocId =
+          `${wantLang}_${wantSeries}_${finalLevel}`;
 
-      if (
-        (c as any).source === "google_play" ||
-        (c as any).source === "stripe" ||
-        (c as any).source === "apple_app_store" ||
-        (c as any).paymentIntentId ||
-        (c as any).purchaseToken ||
-        (c as any).transactionId
-      ) {
-        const paidRef = db.collection("paidCouponUsed").doc(couponCode);
-        tx.set(paidRef, {
-          code: couponCode,
-          userId,
-          source: (c as any).source ?? null,
-          paymentIntentId: (c as any).paymentIntentId ?? null,
-          purchaseToken: (c as any).purchaseToken ?? null,
-          transactionId: (c as any).transactionId ?? null,
-          usedAt: now,
+        const licRef = db
+          .collection("licenses")
+          .doc(userId)
+          .collection("items")
+          .doc(licDocId);
+
+        const licSnap = await tx.get(licRef);
+
+        if (licSnap.exists) {
+          const exp = toMs(
+            licSnap.data()?.expiresAt
+          );
+
+          if (exp > now) {
+            throw new Error(
+              "Active license exists"
+            );
+          }
+        }
+
+        const durationDays =
+          (c as any).durationDays ?? 30;
+
+        const expiresAt =
+          now + DAY_MS * durationDays;
+
+        const lic: License = {
           lang: wantLang,
           series: wantSeries,
           level: finalLevel,
-        });
+          expiresAt,
+          source: "coupon",
+          code: couponCode,
+          issuedAt: now,
+        };
 
-        if ((c as any).transactionId) {
-          const purchaseRef = db
-            .collection("iapPurchases")
-            .doc((c as any).transactionId);
+        tx.set(
+          licRef,
+          {
+            lang: lic.lang,
+            series: lic.series,
+            level: lic.level,
+            expiresAt: lic.expiresAt,
+            source: "coupon",
+            code: couponCode,
+            issuedAt:
+              FieldValue.serverTimestamp(),
+            updatedAt:
+              FieldValue.serverTimestamp(),
+            issuedAtMs: now,
+          },
+          { merge: true }
+        );
 
-          tx.set(
-            purchaseRef,
-            { usedCouponCount: FieldValue.increment(1) },
-            { merge: true }
-          );
+        const updated: Coupon = {
+          ...c,
+          code: couponCode,
+          used: true,
+          usedBy: userId,
+          usedAt: now,
+          usedLang: wantLang,
+          usedSeries: wantSeries,
+          usedLevel: finalLevel,
+          expiresAt,
+        };
+
+        tx.set(ref, updated, { merge: true });
+
+        if (
+          (c as any).source === "google_play" ||
+          (c as any).source === "stripe" ||
+          (c as any).source ===
+            "apple_app_store" ||
+          (c as any).paymentIntentId ||
+          (c as any).purchaseToken ||
+          (c as any).transactionId
+        ) {
+          const paidRef = db
+            .collection("paidCouponUsed")
+            .doc(couponCode);
+
+          tx.set(paidRef, {
+            code: couponCode,
+            userId,
+            source:
+              (c as any).source ?? null,
+            paymentIntentId:
+              (c as any).paymentIntentId ?? null,
+            purchaseToken:
+              (c as any).purchaseToken ?? null,
+            transactionId:
+              (c as any).transactionId ?? null,
+            usedAt: now,
+            lang: wantLang,
+            series: wantSeries,
+            level: finalLevel,
+          });
+
+          if ((c as any).transactionId) {
+            const purchaseRef = db
+              .collection("iapPurchases")
+              .doc(
+                (c as any).transactionId
+              );
+
+            tx.set(
+              purchaseRef,
+              {
+                usedCouponCount:
+                  FieldValue.increment(1),
+              },
+              { merge: true }
+            );
+          }
         }
-      }
 
-      return { coupon: updated, license: lic };
-    });
+        return {
+          coupon: updated,
+          license: lic,
+        };
+      });
 
     return NextResponse.json(
-      { success: true, coupon, license, serverNowMs: Date.now() },
+      {
+        success: true,
+        coupon,
+        license,
+        serverNowMs: Date.now(),
+      },
       { status: 200 }
     );
   } catch (e: any) {
     const msg =
-      typeof e?.message === "string" ? e.message : "redeem failed";
+      typeof e?.message === "string"
+        ? e.message
+        : "redeem failed";
 
     const lower = msg.toLowerCase();
 
     if (lower.includes("invalid coupon")) {
       return NextResponse.json(
-        { error: "Invalid or refunded coupon." },
+        {
+          error:
+            "Invalid or refunded coupon.",
+        },
         { status: 404 }
       );
     }
 
     if (lower.includes("already used")) {
-      return NextResponse.json({ error: msg }, { status: 400 });
-    }
-
-    if (lower.includes("promotion coupon expired")) {
       return NextResponse.json(
-        { error: "This promotional coupon has expired." },
+        { error: msg },
         { status: 400 }
       );
     }
 
-    if (lower.includes("active license exists")) {
+    if (
+      lower.includes(
+        "promotion coupon expired"
+      )
+    ) {
+      return NextResponse.json(
+        {
+          error:
+            "This promotional coupon has expired.",
+        },
+        { status: 400 }
+      );
+    }
+
+    if (
+      lower.includes(
+        "active license exists"
+      )
+    ) {
       return NextResponse.json(
         {
           error:
@@ -350,6 +453,9 @@ export async function POST(req: Request) {
       );
     }
 
-    return NextResponse.json({ error: msg }, { status: 500 });
+    return NextResponse.json(
+      { error: msg },
+      { status: 500 }
+    );
   }
 }

@@ -1,0 +1,71 @@
+{
+  "chapter_id": "conversation_012.runtime.json",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A와 B의 역할이 일관되게 유지됨. A는 제안과 동의, B는 선호 표현과 수용을 담당하며, 대화 전체에 걸쳐 화자 혼동이 없음."
+    },
+    "dialogue_function_accuracy": {
+      "score": 9.5,
+      "weight": 10,
+      "notes": "의견 묻기, 선호 표현하기, 제안하기, 동의하기, 계획 세우기 등 대화 기능이 자연스럽게 연결됨. A2 레벨에 적합한 기능적 표현 사용."
+    },
+    "spoken_naturalness": {
+      "score": 9.5,
+      "weight": 15,
+      "notes": "실제 원어민 회화에서 쓰이는 자연스러운 축약형(I'm, I've, we can)과 구어체 표현(Are you in the mood for, That sounds great)이 잘 사용됨. 대화의 흐름이 매끄럽고 실제 상황처럼 느껴짐."
+    },
+    "register_appropriateness": {
+      "score": 9,
+      "weight": 10,
+      "notes": "친근한 친구 사이의 대화로 적절한 캐주얼 레지스터를 유지함. 'I was hoping to'와 같은 공손한 표현과 'Perfect' 같은 캐주얼한 표현이 자연스럽게 혼합되어 A2 레벨에 적합한 톤을 보여줌."
+    },
+    "grammar_and_notation": {
+      "score": 9.5,
+      "weight": 10,
+      "notes": "문법적으로 정확하며, A2 레벨에 적합한 현재진행형, 현재완료, 조동사(can, will) 등이 적절히 사용됨. 구두점과 대문자 표기가 올바름."
+    },
+    "situational_practicality": {
+      "score": 9.5,
+      "weight": 10,
+      "notes": "레스토랑에서 피자 주문과 예약을 논의하는 실제 생활에서 자주 발생하는 상황을 다룸. 학습자가 실제로 사용할 수 있는 유용한 표현들로 구성됨."
+    },
+    "cultural_neutrality": {
+      "score": 8.5,
+      "weight": 5,
+      "notes": "이탈리안 레스토랑, 파스타, 피자, 페퍼로니 등 서양 음식 문화를 다루지만, 이는 국제적으로 널리 알려진 보편적인 상황으로 특정 문화에 국한되지 않음. 다양한 문화권의 학습자가 이해하기 쉬운 소재임."
+    },
+    "tts_readiness": {
+      "score": 9.5,
+      "weight": 5,
+      "notes": "TTS로 읽기에 적합한 명확한 문장 구조와 자연스러운 리듬을 가짐. 축약형이 포함되어 있어 실제 발화처럼 자연스럽게 읽히며, 감탄사(Oh)와 같은 표현이 TTS에서도 자연스럽게 처리될 수 있음."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 en이 완전히 일치하며, 모든 문장에서 target 언어(영어)가 정확히 미러링됨."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "실용적인 상황을 다루면서도 자연스러운 구어체 표현을 포함하여 시중 주요 영어 회화 서비스와 비교해도 손색없는 수준. A2 레벨에 맞는 적절한 난이도와 실용성을 갖춤."
+    }
+  },
+  "final_score": 93.75,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "상위 10% 수준. Cambridge English Conversation 및 Speak와 유사한 수준의 실용성과 자연스러움을 갖추고 있으며, EBS/YBM 실용영어회화보다 더 현대적이고 실제 회화에 가까운 표현을 사용함.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}
