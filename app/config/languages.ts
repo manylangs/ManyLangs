@@ -2,7 +2,7 @@
 export const LANGUAGES = [
   { code: "kr", label: "Korean" },
   { code: "en", label: "English" },
-  //{ code: "es", label: "Spanish" },
+  { code: "es", label: "Spanish" },
   //{ code: "fr", label: "French" },
   //{ code: "pt", label: "Portuguese" },
 ];
@@ -37,10 +37,10 @@ export const RELEASED_CONTENT: Record<
     idiom: ["all"],
   },
   // 예시: 새 목표언어를 완성된 것부터 하나씩 오픈
-  // es: {
-  //   grammar: ["a1", "a2"],
+  es: {
+     grammar: ["a1"],
   //   conversation: ["a1"],
-  // },
+   },
 };
 
 /** 서버/클라이언트 공통 판정 함수 */
