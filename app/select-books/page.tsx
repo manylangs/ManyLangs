@@ -1,6 +1,6 @@
 "use client";
 
-import { LANGUAGES } from "@/app/config/languages";
+import { LANGUAGES, RELEASED_CONTENT, getReleasedSeries, getReleasedLevels } from "@/app/config/languages";
 import { useEffect, useState } from "react";
 import { useAuth, useClerk, useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
@@ -1183,6 +1183,8 @@ export default function SelectBooksPage() {
                         const v = e.target.value;
                         setTargetLang(v);
                         localStorage.setItem("ml_target_lang", v);
+                        setBook("");
+                        setLevel("");
                       }}
                       className="block w-full rounded border px-3 py-2"
                     >
@@ -1199,16 +1201,19 @@ export default function SelectBooksPage() {
                     onChange={(e) => {
                       const next = e.target.value;
                       setBook(next);
-                      setLevel(SERIES_CONFIG[next]?.hasLevel ? "a1" : "");
+                      const levels = getReleasedLevels(targetLang, next);
+                      setLevel(SERIES_CONFIG[next]?.hasLevel ? (levels[0] ?? "") : "");
                     }}
                     className="block w-full rounded border px-3 py-2"
                   >
                     <option value="">Select textbook</option>
-                    {Object.entries(SERIES_CONFIG).map(([k, v]) => (
-                      <option key={k} value={k}>
-                        {v.label}
-                      </option>
-                    ))}
+                    {Object.entries(SERIES_CONFIG)
+                      .filter(([k]) => getReleasedSeries(targetLang).includes(k))
+                      .map(([k, v]) => (
+                        <option key={k} value={k}>
+                          {v.label}
+                        </option>
+                      ))}
                   </select>
 
                   {book && SERIES_CONFIG[book].hasLevel && (
@@ -1217,11 +1222,13 @@ export default function SelectBooksPage() {
                       onChange={(e) => setLevel(e.target.value)}
                       className="block w-full rounded border px-3 py-2"
                     >
-                      {LEVELS.map((l) => (
-                        <option key={l} value={l.toLowerCase()}>
-                          {l}
-                        </option>
-                      ))}
+                      {LEVELS
+                        .filter((l) => getReleasedLevels(targetLang, book).includes(l.toLowerCase()))
+                        .map((l) => (
+                          <option key={l} value={l.toLowerCase()}>
+                            {l}
+                          </option>
+                        ))}
                     </select>
                   )}
 

@@ -4,6 +4,7 @@ import { Coupon } from "@/lib/coupons";
 import type { License } from "@/lib/license";
 import { FieldValue } from "firebase-admin/firestore";
 import { auth } from "@clerk/nextjs/server";
+import { isReleasedContent } from "@/app/config/languages";
 
 export const runtime = "nodejs";
 
@@ -62,6 +63,14 @@ export async function POST(req: Request) {
 
   const finalLevel =
     series === "idiom" ? "all" : String(level).trim();
+
+  // 🔴 미출시 교재 서버 차단 (프로모/일반 쿠폰 공통 진입점)
+  if (!isReleasedContent(String(lang).trim(), String(series).trim(), finalLevel)) {
+    return NextResponse.json(
+      { error: "This textbook is not available yet." },
+      { status: 400 }
+    );
+  }
 
   const now = Date.now();
 
