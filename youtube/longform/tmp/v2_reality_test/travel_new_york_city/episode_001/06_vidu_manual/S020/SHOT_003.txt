@@ -1,0 +1,27 @@
+ORDER: 065/065
+SCENE: S020
+SHOT: SHOT_003
+DURATION: 5.0 seconds
+ASPECT RATIO: 16:9
+RESOLUTION: 1080p
+
+REFERENCE IMAGE:
+- _references/jieun_primary.png
+
+PROMPT:
+Medium-wide eye-level shot with smooth follow camera movement. Jieun, a woman with an oval face, soft features, natural eyebrows, dark brown eyes, light natural makeup, and a warm friendly expression, with shoulder-length dark brown hair that is straight with slight natural waves and tucked behind ears, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch, carrying a small crossbody bag over her shoulder, with a soft smile of accomplishment on her face, turns around and begins walking back toward the hotel on the sidewalk of a lively Manhattan evening street near the hotel area. The environment includes sidewalks, street crossings, streetlights, building lights, storefronts and signage, city traffic and taxis, typical Manhattan architecture, warm evening street lighting from streetlights and storefronts mixed with the soft glow of building lights and passing traffic, lively with pedestrians walking on the sidewalk, cars and taxis passing by, and distant city sounds. The familiar tall building is behind her, and the hotel is ahead in the direction she is walking. Her crossbody bag remains visible over her shoulder, and the room key and smartphone remain inside the bag or in her pocket, not visible.
+
+NEGATIVE / DO-NOT-CHANGE NOTES:
+- Do not change Jieun's character identity.
+- Do not change the canonical location identity.
+- Do not introduce new characters.
+- Do not introduce new locations.
+- Do not alter the canonical prop state.
+- Do not change story events.
+- Do not show Jieun moving past the evening street area.
+- Do not show Jieun's backpack or checked suitcase on the walk.
+- Do not show Jieun's passport or smartphone being dropped or lost.
+- Do not introduce a new travel problem.
+
+OUTPUT FILE:
+S020_SHOT_003.mp4

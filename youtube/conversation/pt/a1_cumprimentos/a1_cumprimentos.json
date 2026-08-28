@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "001"
+  },
+  "title": {
+    "target": "Cumprimentos",
+    "en": "Greetings",
+    "es": "Saludos",
+    "fr": "Salutations",
+    "pt": "Cumprimentos",
+    "kr": "인사",
+    "zh": "问候",
+    "jp": "挨拶",
+    "ru": "Приветствия"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Oi, tudo bem?",
+            "en": "Hi, how are you?",
+            "es": "¡Hola! ¿Todo bien?",
+            "fr": "Salut, ça va ?",
+            "pt": "Oi, tudo bem?",
+            "kr": "안녕하세요, 잘 지내세요?",
+            "zh": "嗨，你好吗？",
+            "jp": "やあ、元気？",
+            "ru": "Привет, как дела?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Tudo ótimo, e com você?",
+            "en": "I'm doing great, and you?",
+            "es": "Todo genial, ¿y contigo?",
+            "fr": "Tout va très bien, et toi ?",
+            "pt": "Tudo ótimo, e com você?",
+            "kr": "아주 좋아요, 당신은요?",
+            "zh": "我很好，你呢？",
+            "jp": "すごく元気だよ、君は？",
+            "ru": "Всё отлично, а у тебя?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Estou bem também, obrigada!",
+            "en": "I'm doing well too, thanks!",
+            "es": "Estoy bien también, ¡gracias!",
+            "fr": "Je vais bien aussi, merci !",
+            "pt": "Estou bem também, obrigada!",
+            "kr": "저도 잘 지내요, 고마워요!",
+            "zh": "我也很好，谢谢！",
+            "jp": "私も元気だよ、ありがとう！",
+            "ru": "У меня тоже всё хорошо, спасибо!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Que bom! Você chegou agora?",
+            "en": "That's good! Did you just get here?",
+            "es": "¡Qué bien! ¿Acabas de llegar?",
+            "fr": "Tant mieux ! Tu viens d'arriver ?",
+            "pt": "Que bom! Você chegou agora?",
+            "kr": "다행이네요! 방금 도착하셨어요?",
+            "zh": "太好了！你刚到吗？",
+            "jp": "よかった！今着いたの？",
+            "ru": "Как здорово! Ты только что пришёл?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Cheguei há pouco, sim.",
+            "en": "Yes, I got here a little while ago.",
+            "es": "Sí, llegué hace poco.",
+            "fr": "Oui, je suis arrivée il y a peu.",
+            "pt": "Cheguei há pouco, sim.",
+            "kr": "네, 조금 전에 도착했어요.",
+            "zh": "是的，我刚到不久。",
+            "jp": "うん、さっき着いたばかり。",
+            "ru": "Да, я пришёл недавно."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Então vem, vamos entrar!",
+            "en": "Then come on, let's go inside!",
+            "es": "Entonces ven, ¡vamos a entrar!",
+            "fr": "Alors viens, entrons !",
+            "pt": "Então vem, vamos entrar!",
+            "kr": "그럼 들어와요, 같이 들어가요!",
+            "zh": "那来吧，我们进去！",
+            "jp": "じゃあ、入ろうよ！",
+            "ru": "Тогда идём, заходим!"
+          }
+        }
+      ]
+    }
+  ]
+}

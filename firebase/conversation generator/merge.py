@@ -1,12 +1,19 @@
 #!/usr/bin/env python3
-"""merge.py — test copy"""
+"""merge.py
+
+언어 목록은 languages.py 하나에서만 관리한다 (하드코딩 금지).
+새 번역 언어가 추가되면 languages.py의 TRANSLATE_LANGS만 고치면
+이 스크립트는 수정할 필요가 없다.
+"""
 import argparse
 import json
 import sys
 from pathlib import Path
 
-ALL_LANGS = ["target", "en", "es", "fr", "pt", "kr", "jp", "zh"]
-TEMPLATE_LANGS = ["target", "en", "es", "fr", "pt", "kr", "jp", "zh"]
+from languages import TRANSLATE_LANGS
+
+ALL_LANGS = ["target"] + TRANSLATE_LANGS
+TEMPLATE_LANGS = ALL_LANGS
 SPEAKER_ORDER = ["A", "B", "A", "B", "A", "B"]
 EXPECTED_SET_COUNT = 10
 EXPECTED_LINES_PER_SET = 6

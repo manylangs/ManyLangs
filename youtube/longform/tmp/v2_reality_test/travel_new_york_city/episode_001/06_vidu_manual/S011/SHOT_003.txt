@@ -1,0 +1,29 @@
+ORDER: 036/065
+SCENE: S011
+SHOT: SHOT_003
+DURATION: 7.0 seconds
+ASPECT RATIO: 16:9
+RESOLUTION: 1080p
+
+REFERENCE IMAGE:
+- _references/jieun_primary.png
+
+PROMPT:
+A young Korean woman with an oval face, soft features, natural eyebrows, dark brown eyes, and light natural makeup, with shoulder-length dark brown hair tucked behind her ears, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch, stands inside a bright subway train car during the day. She has a medium-sized travel backpack on her back, a small crossbody bag across her body, and a checked suitcase beside her. She nods with a relieved expression, puts her smartphone into her crossbody bag, and looks out the window, watching for her stop, while holding onto a pole with one hand. The train car is bright with natural daylight streaming through the windows, with a few passengers seated and standing, and views of the urban landscape passing by outside. Medium shot, three-quarter angle, static camera with smooth stability. She has confirmed she is on the correct train toward Manhattan, has put her phone away, and is now watching for her stop, with her backpack, crossbody bag, and suitcase in place, and her expression calm and relieved.
+
+NEGATIVE / DO-NOT-CHANGE NOTES:
+- Do not change character identity.
+- Do not change canonical location identity.
+- Do not introduce new characters.
+- Do not introduce new locations.
+- Do not alter canonical prop state.
+- Do not change story events.
+- Do not show Jieun moving past the subway journey or arriving at her stop.
+- Do not show Jieun's smartphone in her hand.
+- Do not show Jieun's suitcase being lost or missing.
+- Do not show Jieun's passport or smartphone being dropped or lost.
+- Do not show any problems or incidents with the subway ride.
+- Do not show Jieun arriving at her hotel.
+
+OUTPUT FILE:
+S011_SHOT_003.mp4

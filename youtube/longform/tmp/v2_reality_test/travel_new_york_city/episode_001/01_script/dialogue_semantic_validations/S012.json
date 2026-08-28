@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S012",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "The subway train stops between stations",
+      "pass": true,
+      "evidence": "Line 1: 'Why is the train stopping? We're not at a station.'"
+    },
+    {
+      "requirement": "The lights flicker briefly",
+      "pass": true,
+      "evidence": "Line 2: 'The lights just flickered.'"
+    },
+    {
+      "requirement": "Jieun feels a moment of anxiety about the delay",
+      "pass": true,
+      "evidence": "Line 3: 'I hope this doesn't take too long. I don't want to be late to the hotel.'"
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not resolve the subway delay in this scene",
+      "pass": true,
+      "evidence": "No line indicates the train moving or the delay ending."
+    },
+    {
+      "requirement": "Do not move Jieun past the subway journey",
+      "pass": true,
+      "evidence": "All lines occur within the stopped train; no arrival at a station or hotel."
+    },
+    {
+      "requirement": "Do not introduce another unrelated travel problem",
+      "pass": true,
+      "evidence": "Only the delay is mentioned; no other issues are raised."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

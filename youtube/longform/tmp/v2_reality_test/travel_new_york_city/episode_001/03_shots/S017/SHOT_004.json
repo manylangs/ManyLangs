@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S017",
+  "shot_id": "SHOT_004",
+  "sequence": 4,
+  "duration_seconds": 5.0,
+  "location_ref": "LOC_MANHATTAN_HOTEL_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun's satisfied expression as she reflects on arriving in New York and thinks about taking a walk.",
+  "framing": {
+    "shot_size": "medium_close",
+    "subject_priority": [
+      "CHAR_JIEUN_001"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun continues looking out the window, then turns her head slightly with a thoughtful, satisfied smile.",
+    "start_state": [
+      "Jieun is standing by the window, looking out at the city view",
+      "She has a peaceful and happy expression"
+    ],
+    "end_state": [
+      "Jieun is standing by the window with a thoughtful, satisfied smile",
+      "She appears settled and comfortable, thinking about exploring the area"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "settled and thoughtful",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "placed near the bed or luggage rack",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "placed near the bed or luggage rack",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_ROOM_KEY_001",
+      "state": "placed on a nearby surface",
+      "visible": false
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L004"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is standing by the window, looking out at the city view",
+      "She has a peaceful and happy expression",
+      "Her bags remain placed down near the bed or luggage rack"
+    ],
+    "carry_out": [
+      "Jieun is in her hotel room and has seen the city view from the window",
+      "She is feeling settled and comfortable",
+      "She is thinking about taking a walk to explore the area",
+      "Her bags are placed down in the room",
+      "She still has her backpack, crossbody bag, smartphone, passport, and room key with her"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

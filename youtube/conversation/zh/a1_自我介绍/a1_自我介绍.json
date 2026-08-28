@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "002"
+  },
+  "title": {
+    "target": "自我介绍",
+    "en": "Self-Introduction",
+    "es": "Presentación personal",
+    "fr": "Se présenter",
+    "pt": "Apresentação pessoal",
+    "kr": "자기소개",
+    "zh": "自我介绍",
+    "jp": "自己紹介",
+    "ru": "Знакомство"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "你好，我叫小美。",
+            "en": "Hello, my name is Xiaomei.",
+            "es": "Hola, me llamo Xiaomei.",
+            "fr": "Bonjour, je m'appelle Xiaomei.",
+            "pt": "Olá, chamo-me Xiaomei.",
+            "kr": "안녕하세요, 저는 샤오메이라고 합니다.",
+            "zh": "你好，我叫小美。",
+            "jp": "こんにちは、私は小美です。",
+            "ru": "Здравствуйте, меня зовут Сяо Мэй."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "你好，我叫浩宇。很高兴认识你。",
+            "en": "Hello, my name is Haoyu. Nice to meet you.",
+            "es": "Hola, me llamo Haoyu. Encantado de conocerte.",
+            "fr": "Bonjour, je m'appelle Haoyu. Enchanté de faire votre connaissance.",
+            "pt": "Olá, chamo-me Haoyu. Muito prazer em conhecer-te.",
+            "kr": "안녕하세요, 저는 하오위라고 합니다. 만나서 반갑습니다.",
+            "zh": "你好，我叫浩宇。很高兴认识你。",
+            "jp": "こんにちは、私は浩宇です。お会いできて嬉しいです。",
+            "ru": "Здравствуйте, меня зовут Хаоюй. Очень приятно познакомиться."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "我也是。你住在哪里？",
+            "en": "Nice to meet you too. Where do you live?",
+            "es": "Igualmente. ¿Dónde vives?",
+            "fr": "Moi de même. Où habitez-vous ?",
+            "pt": "Igualmente. Onde moras?",
+            "kr": "저도요. 어디에 사세요?",
+            "zh": "我也是。你住在哪里？",
+            "jp": "私もです。どこに住んでいますか？",
+            "ru": "Мне тоже. Где вы живёте?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "我住在学校附近。你呢？",
+            "en": "I live near the school. How about you?",
+            "es": "Vivo cerca de la escuela. ¿Y tú?",
+            "fr": "J'habite près de l'école. Et vous ?",
+            "pt": "Moro perto da escola. E tu?",
+            "kr": "저는 학교 근처에 살아요. 당신은요?",
+            "zh": "我住在学校附近。你呢？",
+            "jp": "学校の近くに住んでいます。あなたは？",
+            "ru": "Я живу рядом со школой. А вы?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "我也住在那边。那我们是邻居了。",
+            "en": "I live over there too. Then we're neighbors.",
+            "es": "Yo también vivo por allí. Entonces somos vecinos.",
+            "fr": "J'habite aussi par là. Alors nous sommes voisins.",
+            "pt": "Eu também moro por lá. Então somos vizinhos.",
+            "kr": "저도 그쪽에 살아요. 그럼 우리 이웃이네요.",
+            "zh": "我也住在那边。那我们是邻居了。",
+            "jp": "私もそちらに住んでいます。じゃあ、私たちは隣人ですね。",
+            "ru": "Я тоже живу там. Значит, мы соседи."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "太好了！以后请多关照。",
+            "en": "That's great! I hope we'll get along.",
+            "es": "¡Genial! Espero que nos llevemos bien.",
+            "fr": "C'est génial ! Au plaisir de bien s'entendre à l'avenir.",
+            "pt": "Que ótimo! Espero que nos demos bem.",
+            "kr": "정말 좋네요! 앞으로 잘 부탁드려요.",
+            "zh": "太好了！以后请多关照。",
+            "jp": "よかったです！これからよろしくお願いします。",
+            "ru": "Отлично! Надеюсь, мы поладим."
+          }
+        }
+      ]
+    }
+  ]
+}

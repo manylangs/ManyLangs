@@ -1,0 +1,214 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/character.schema.json",
+  "title": "ManyLangs Longform Character",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "character_id",
+    "series_id",
+    "identity",
+    "story_profile",
+    "visual_identity",
+    "wardrobe",
+    "production"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "common.schema.json#/$defs/document_metadata"
+    },
+    "character_id": {
+      "type": "string",
+      "pattern": "^CHAR_[A-Z0-9_]+_[0-9]{3}$"
+    },
+    "series_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "name",
+        "gender",
+        "age_range"
+      ],
+      "properties": {
+        "role": {
+          "type": "string",
+          "enum": [
+            "protagonist",
+            "supporting",
+            "recurring_supporting"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "gender": {
+          "type": "string",
+          "enum": [
+            "female",
+            "male"
+          ]
+        },
+        "age_range": {
+          "type": "string",
+          "minLength": 1
+        },
+        "nationality": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "home_base": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "story_profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "perspective",
+        "personality_traits",
+        "speaking_style",
+        "continuity_rules"
+      ],
+      "properties": {
+        "perspective": {
+          "type": "string",
+          "minLength": 1
+        },
+        "personality_traits": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "speaking_style": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "continuity_rules": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "visual_identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "appearance_summary",
+        "face",
+        "hair",
+        "body",
+        "continuity_lock"
+      ],
+      "properties": {
+        "appearance_summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "face": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hair": {
+          "type": "string",
+          "minLength": 1
+        },
+        "body": {
+          "type": "string",
+          "minLength": 1
+        },
+        "distinctive_features": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "continuity_lock": {
+          "type": "boolean"
+        }
+      }
+    },
+    "wardrobe": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "default_outfit",
+        "continuity_policy"
+      ],
+      "properties": {
+        "default_outfit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "accessories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "continuity_policy": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "production": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "visual_provider",
+        "persistent_character",
+        "reference_asset_ids",
+        "prompt_rules"
+      ],
+      "properties": {
+        "visual_provider": {
+          "type": "string",
+          "enum": [
+            "vidu"
+          ]
+        },
+        "persistent_character": {
+          "type": "boolean"
+        },
+        "reference_asset_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ASSET_[A-Z0-9_]+_[0-9]{6}$"
+          },
+          "uniqueItems": true
+        },
+        "prompt_rules": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

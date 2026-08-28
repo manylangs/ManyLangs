@@ -1,0 +1,73 @@
+{
+  "chapter_id": "conversation_001.runtime.json",
+  "target_lang": "jp",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "A/B 화자가 세트 내에서 번갈아 등장하며, 대화의 흐름이 자연스럽고 관계가 일관적이다."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "인사, 안부 묻기, 제안, 동의, 기대 표현, 출발 선언 등 대화 기능이 명확하고 정확하게 수행된다."
+    },
+    "spoken_naturalness": {
+      "score": 10,
+      "weight": 15,
+      "notes": "일상생활에서 자주 쓰이는 자연스러운 구어체 표현으로 구성되어 있다."
+    },
+    "register_appropriateness": {
+      "score": 10,
+      "weight": 10,
+      "notes": "친근한 관계에서 쓰는 'タメ口'가 일관되게 사용되어 격식 수준이 적절하다."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 오류가 없으며, 가나 표기와 경어 활용이 정확하다."
+    },
+    "situational_practicality": {
+      "score": 9,
+      "weight": 10,
+      "notes": "아침 인사와 날씨, 산책 제안 등 실생활에서 활용도가 높은 상황을 다루고 있다."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "특정 문화에 치우치지 않는 보편적인 상황을 다루고 있다."
+    },
+    "tts_readiness": {
+      "score": 10,
+      "weight": 5,
+      "notes": "TTS로 읽기에 적합한 짧고 명확한 문장으로 구성되어 있다."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 jp가 완전히 일치한다.",
+      "set_id": "001",
+      "line_number": 1,
+      "lang": "jp"
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "시중 A1 레벨 교재와 비교해 자연스러운 대화와 실용성에서 경쟁력이 있다."
+    }
+  },
+  "final_score": 97,
+  "market_benchmark": {
+    "comparable_services": [
+      "JapanesePod101",
+      "Duolingo Japanese Conversations",
+      "Pimsleur Japanese",
+      "Genki 공식 교재 대화문"
+    ],
+    "estimated_relative_position": "시중 상위권 서비스와 동급 또는 그 이상의 자연스러움과 정확성을 갖춘 A1 레벨 교재로 평가된다.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "pass": true,
+  "priority_fixes": []
+}

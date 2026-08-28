@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Gestão da agenda",
+  "sets": {
+    "001": [
+      "Você conseguiu encaixar a reunião com o pessoal de marketing na minha agenda?",
+      "Consegui sim. Coloquei para amanhã às dez, antes do almoço.",
+      "Perfeito. E o que ficou marcado para a parte da tarde?",
+      "Você tem uma visita ao cliente às duas, mas eu posso remarcar se precisar.",
+      "Não, pode deixar. Só me avise se o horário da reunião mudar.",
+      "Pode deixar que eu te mantenho informada."
+    ],
+    "002": [
+      "Estou vendo que a minha semana está bem cheia. Você acha que dá para dar uma organizada?",
+      "Dá sim. A única coisa que não pode ser adiada é a apresentação de quinta-feira.",
+      "Então vou priorizar isso. O que mais está travando a minha agenda?",
+      "Você tem três reuniões internas que poderiam ser encurtadas ou até canceladas.",
+      "Boa ideia. Pode cancelar a de amanhã de manhã, por favor?",
+      "Claro, eu já envio o cancelamento e aviso os participantes."
+    ],
+    "003": [
+      "Preciso de um tempinho para preparar o relatório, mas está tudo tão corrido.",
+      "Que tal bloquear duas horas na sua agenda amanhã cedo para isso?",
+      "Amanhã cedo eu tenho uma reunião com o diretor, infelizmente.",
+      "Então que tal no fim da tarde, depois das cinco?",
+      "Pode ser. Você consegue reservar a sala de reunião para mim?",
+      "Consigo sim. Vou deixar tudo reservado e te mando o convite."
+    ],
+    "004": [
+      "O cliente pediu para antecipar a reunião de sexta para quarta-feira. Dá para ajustar?",
+      "Deixa eu verificar a sua agenda... Quarta de manhã você está livre.",
+      "Ótimo, então marca para as nove e meia. Preciso de uma hora com ele.",
+      "Fechado. Vou mandar o convite agora e confirmar com o cliente.",
+      "Obrigada. E não esquece de separar a sala com o projetor.",
+      "Pode deixar, já estou anotando tudo aqui."
+    ],
+    "005": [
+      "Você viu que tenho dois compromissos marcados para o mesmo horário amanhã?",
+      "Vi sim, foi um erro meu. Já estou resolvendo isso agora.",
+      "Qual deles você acha que eu deveria manter?",
+      "A reunião com o fornecedor é mais urgente, eu manteria ela.",
+      "Então remarca o outro para a próxima semana, se possível.",
+      "Perfeito. Vou ligar para eles e já te confirmo o novo horário."
+    ],
+    "006": [
+      "Estou preocupada com o prazo do projeto. Será que a gente consegue terminar a tempo?",
+      "Se a gente se organizar bem, dá sim. O que está te preocupando?",
+      "Tenho muitas tarefas pequenas que estão tomando o meu tempo.",
+      "Que tal você delegar algumas delas para o resto da equipe?",
+      "Você tem razão. Vou conversar com o pessoal na reunião de hoje.",
+      "Boa. E eu posso te ajudar a montar um cronograma mais realista."
+    ],
+    "007": [
+      "Você pode me lembrar de confirmar a viagem a trabalho até o fim do dia?",
+      "Claro. Já deixei um lembrete no seu celular para as quatro horas.",
+      "Obrigada. E você já reservou o hotel para a próxima semana?",
+      "Ainda não, mas vou fazer isso hoje à tarde, sem falta.",
+      "Prefere um hotel mais perto do escritório ou do cliente?",
+      "Mais perto do cliente, com certeza. Facilita a locomoção."
+    ],
+    "008": [
+      "A reunião de status atrasou e agora estou atrasada para o próximo compromisso.",
+      "Sem problema. A sua próxima reunião foi remarcada para daqui a uma hora.",
+      "Que alívio! E o pessoal do projeto já foi avisado sobre o atraso?",
+      "Já sim, mandei uma mensagem no grupo agora há pouco.",
+      "Você é muito eficiente, viu? Não sei o que eu faria sem você.",
+      "Imagina! É para isso que eu estou aqui."
+    ],
+    "009": [
+      "Estou achando que estou dedicando tempo demais para tarefas que não são tão importantes.",
+      "Isso é normal, mas a gente pode rever as suas prioridades juntos.",
+      "Você acha que eu deveria cortar alguma coisa da minha rotina?",
+      "Eu cortaria a reunião de sexta-feira, ela poderia ser um e-mail.",
+      "Faz sentido. Vou conversar com o time sobre isso hoje.",
+      "Boa decisão. Isso vai te dar umas boas horas livres na semana."
+    ],
+    "010": [
+      "Você consegue ver se o horário das férias do pessoal está atualizado na planilha?",
+      "Consigo sim. Deixa eu abrir aqui... Está tudo certinho.",
+      "E o meu pedido de folga no mês que vem, já foi aprovado?",
+      "Já foi sim, está tudo anotado no sistema.",
+      "Perfeito. Agora sim eu posso planejar a minha viagem com calma.",
+      "Fico feliz em ajudar. Boa viagem quando chegar a hora!"
+    ]
+  },
+  "level": "c1",
+  "chapter_id": "CONV_PT_SCHEDULE_MANAGEMENT",
+  "id": "049",
+  "target_lang": "pt"
+}

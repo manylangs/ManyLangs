@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b2",
+    "id": "037"
+  },
+  "title": {
+    "target": "Поиск хорошего ресторана",
+    "en": "Finding a Good Restaurant",
+    "es": "La búsqueda de un buen restaurante",
+    "fr": "À la recherche d’un bon restaurant",
+    "pt": "Encontrando um bom restaurante",
+    "kr": "좋은 레스토랑 찾기",
+    "jp": "いいレストラン探し",
+    "zh": "寻找好餐厅",
+    "ru": "Поиск хорошего ресторана"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты не знаешь, где здесь можно поужинать? Мы с подругой хотим найти что-то уютное.",
+            "en": "Ivan, do you know where we can have dinner around here? My friend and I want to find something cozy.",
+            "es": "Iván, ¿sabes dónde podemos cenar por aquí? Mi amiga y yo queremos encontrar un lugar acogedor.",
+            "fr": "Ivan, tu ne sais pas où on peut dîner ici ? Avec mon amie, on veut trouver un endroit cosy.",
+            "pt": "Ivan, você não sabe onde a gente pode jantar por aqui? Eu e minha amiga queremos encontrar um lugar aconchegante.",
+            "kr": "이반, 여기서 저녁 먹을 만한 곳 혹시 알아? 나랑 친구가 아늑한 곳을 찾고 있어.",
+            "jp": "イワン、この辺りで夕食を食べられるいい場所を知らない？ 私と友達で何か居心地のいいところを探しているんだけど。",
+            "zh": "伊万，你知道这附近哪里可以吃晚饭吗？我和朋友想找个舒适的地方。",
+            "ru": "Иван, ты не знаешь, где здесь можно поужинать? Мы с подругой хотим найти что-то уютное."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ольга, есть отличное место недалеко от парка. Там подают домашнюю итальянскую кухню.",
+            "en": "Olga, there's a great place not far from the park. They serve homemade Italian cuisine.",
+            "es": "Olga, hay un sitio estupendo cerca del parque. Allí sirven cocina italiana casera.",
+            "fr": "Olga, il y a un excellent endroit pas loin du parc. On y sert une cuisine italienne maison.",
+            "pt": "Olga, tem um lugar ótimo perto do parque. Lá servem comida italiana caseira.",
+            "kr": "올가, 공원 근처에 좋은 곳이 있어. 거기서 이탈리아 가정식을 제공해.",
+            "jp": "オルガ、公園の近くにすごくいい場所があるよ。そこは手作りのイタリア料理を出しているんだ。",
+            "zh": "奥尔加，公园附近有个很棒的地方。那里供应家常意大利菜。",
+            "ru": "Ольга, есть отличное место недалеко от парка. Там подают домашнюю итальянскую кухню."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Звучит заманчиво. А цены там приемлемые?",
+            "en": "Sounds tempting. And are the prices reasonable there?",
+            "es": "Suena tentador. ¿Y los precios son razonables?",
+            "fr": "Ça semble tentant. Et les prix y sont raisonnables ?",
+            "pt": "Parece tentador. E os preços são acessíveis?",
+            "kr": "듣기 좋네. 거기 가격은 괜찮아?",
+            "jp": "魅力的に聞こえるわね。あそこは値段は手頃なの？",
+            "zh": "听起来不错。那价格合理吗？",
+            "ru": "Звучит заманчиво. А цены там приемлемые?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вполне. Средний чек около двух тысяч рублей на человека.",
+            "en": "Quite. The average check is about two thousand rubles per person.",
+            "es": "Bastante. El ticket medio es de unos dos mil rublos por persona.",
+            "fr": "Tout à fait. L’addition moyenne est d’environ deux mille roubles par personne.",
+            "pt": "Bastante. A conta média é cerca de dois mil rublos por pessoa.",
+            "kr": "괜찮아. 일인당 평균 이천 루블 정도야.",
+            "jp": "十分手頃だよ。一人あたりの平均額はだいたい二千ルーブルくらいだね。",
+            "zh": "相当合理。人均消费大约两千卢布。",
+            "ru": "Вполне. Средний чек около двух тысяч рублей на человека."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, тогда давай сходим туда в субботу вечером.",
+            "en": "Great, then let's go there on Saturday evening.",
+            "es": "Genial, entonces vamos allí el sábado por la noche.",
+            "fr": "Parfait, alors allons-y samedi soir.",
+            "pt": "Ótimo, então vamos lá no sábado à noite.",
+            "kr": "좋아, 그럼 토요일 저녁에 거기 가자.",
+            "jp": "それならいいわ。じゃあ、土曜日の夜にそこに行きましょう。",
+            "zh": "太好了，那我们周六晚上去吧。",
+            "ru": "Отлично, тогда давай сходим туда в субботу вечером."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошая идея. Я позвоню и забронирую столик на двоих.",
+            "en": "Good idea. I'll call and book a table for two.",
+            "es": "Buena idea. Llamaré y reservaré una mesa para dos.",
+            "fr": "Bonne idée. Je vais appeler et réserver une table pour deux.",
+            "pt": "Boa ideia. Vou ligar e reservar uma mesa para dois.",
+            "kr": "좋은 생각이야. 내가 전화해서 둘 자리 예약할게.",
+            "jp": "いいアイデアだね。僕が電話して二人分の席を予約しておくよ。",
+            "zh": "好主意。我打电话订个两人桌。",
+            "ru": "Хорошая идея. Я позвоню и забронирую столик на двоих."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, я слышала, ты ходил в новый ресторан на набережной. Как тебе?",
+            "en": "Dmitry, I heard you went to the new restaurant on the embankment. How was it?",
+            "es": "Dmitri, he oído que fuiste al restaurante nuevo del paseo marítimo. ¿Qué te pareció?",
+            "fr": "Dimitri, j’ai entendu dire que tu es allé au nouveau restaurant sur le quai. Tu en as pensé quoi ?",
+            "pt": "Dmitri, eu ouvi que você foi ao novo restaurante na orla. O que você achou?",
+            "kr": "드미트리, 너 강변에 새로 생긴 레스토랑에 갔다며. 어땠어?",
+            "jp": "ドミトリー、あなたが堤防沿いの新しいレストランに行ったって聞いたんだけど、どうだった？",
+            "zh": "德米特里，我听说你去了河堤边那家新餐厅。你觉得怎么样？",
+            "ru": "Дмитрий, я слышала, ты ходил в новый ресторан на набережной. Как тебе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Честно говоря, я был разочарован. Еда вкусная, но обслуживание очень медленное.",
+            "en": "Honestly, I was disappointed. The food is tasty, but the service is very slow.",
+            "es": "Sinceramente, me decepcionó. La comida está rica, pero el servicio es muy lento.",
+            "fr": "Franchement, j’ai été déçu. La nourriture est bonne, mais le service est très lent.",
+            "pt": "Para ser sincero, fiquei decepcionado. A comida é gostosa, mas o atendimento é muito lento.",
+            "kr": "솔직히 말하면, 실망했어. 음식은 맛있는데 서비스가 엄청 느리더라고.",
+            "jp": "正直言うと、がっかりしたよ。料理はおいしいけど、サービスがとても遅いんだ。",
+            "zh": "说实话，我挺失望的。菜很好吃，但服务太慢了。",
+            "ru": "Честно говоря, я был разочарован. Еда вкусная, но обслуживание очень медленное."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Жаль, а я как раз думала пригласить туда коллег.",
+            "en": "That's a shame, and I was just thinking of inviting my colleagues there.",
+            "es": "Qué pena, y yo justo estaba pensando en invitar a mis compañeros allí.",
+            "fr": "Dommage, et j’étais justement en train de penser à y inviter mes collègues.",
+            "pt": "Que pena, e eu estava pensando em convidar meus colegas para ir lá.",
+            "kr": "아쉽네, 나는 거기에 동료들 초대하려고 생각했었거든.",
+            "jp": "残念だわ。ちょうど同僚たちをそこに招待しようと思っていたところなのに。",
+            "zh": "真可惜，我正想着请同事们去那里呢。",
+            "ru": "Жаль, а я как раз думала пригласить туда коллег."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не советую. Лучше попробуй ресторан в центре, там и атмосфера приятнее, и персонал внимательный.",
+            "en": "I wouldn't recommend it. Better try the restaurant in the center, the atmosphere is nicer there, and the staff is attentive.",
+            "es": "No te lo recomiendo. Mejor prueba el restaurante del centro, allí el ambiente es más agradable y el personal es atento.",
+            "fr": "Je ne te le conseille pas. Essaie plutôt le restaurant au centre, l’ambiance y est plus agréable et le personnel est attentionné.",
+            "pt": "Não recomendo. Melhor você experimentar o restaurante no centro, lá o clima é mais agradável e a equipe é atenciosa.",
+            "kr": "비추천해. 차라리 시내에 있는 레스토랑을 가 봐. 분위기도 더 좋고 직원들도 세심해.",
+            "jp": "おすすめしないよ。中心街のレストランを試してみたら？ あっちの方が雰囲気もいいし、スタッフも親切だよ。",
+            "zh": "我不建议去。你不如试试市中心那家，那里氛围更好，服务员也更周到。",
+            "ru": "Не советую. Лучше попробуй ресторан в центре, там и атмосфера приятнее, и персонал внимательный."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спасибо за совет. Тогда я забронирую столик в центре.",
+            "en": "Thanks for the advice. Then I'll book a table in the center.",
+            "es": "Gracias por el consejo. Entonces reservaré una mesa en el centro.",
+            "fr": "Merci pour le conseil. Alors je vais réserver une table au centre.",
+            "pt": "Obrigada pelo conselho. Então vou reservar uma mesa no centro.",
+            "kr": "조언 고마워. 그럼 시내에 자리를 예약할게.",
+            "jp": "アドバイスありがとう。じゃあ、中心街で席を予約するわ。",
+            "zh": "谢谢你的建议。那我就订市中心那家吧。",
+            "ru": "Спасибо за совет. Тогда я забронирую столик в центре."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не за что. Уверен, тебе там понравится.",
+            "en": "You're welcome. I'm sure you'll like it there.",
+            "es": "De nada. Estoy seguro de que te gustará.",
+            "fr": "De rien. Je suis sûr que tu vas aimer.",
+            "pt": "De nada. Tenho certeza de que você vai gostar de lá.",
+            "kr": "천만에. 분명 마음에 들 거야.",
+            "jp": "どういたしまして。きっと気に入ると思うよ。",
+            "zh": "不客气。我相信你会喜欢的。",
+            "ru": "Не за что. Уверен, тебе там понравится."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, мы с семьёй ищем ресторан, где можно отметить день рождения мамы.",
+            "en": "Sergey, my family and I are looking for a restaurant where we can celebrate my mom's birthday.",
+            "es": "Serguéi, mi familia y yo buscamos un restaurante para celebrar el cumpleaños de mamá.",
+            "fr": "Sergueï, avec ma famille, on cherche un restaurant pour fêter l’anniversaire de ma mère.",
+            "pt": "Sergei, eu e minha família estamos procurando um restaurante para comemorar o aniversário da minha mãe.",
+            "kr": "세르게이, 우리 가족이 엄마 생일을 축하할 레스토랑을 찾고 있어.",
+            "jp": "セルゲイ、私たち家族で母の誕生日を祝えるレストランを探しているんだけど。",
+            "zh": "谢尔盖，我们一家人想找家餐厅给妈妈过生日。",
+            "ru": "Сергей, мы с семьёй ищем ресторан, где можно отметить день рождения мамы."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "А какой кухни вы предпочитаете? Может быть, грузинская или японская?",
+            "en": "And what kind of cuisine do you prefer? Maybe Georgian or Japanese?",
+            "es": "¿Y qué tipo de cocina preferís? ¿Quizás georgiana o japonesa?",
+            "fr": "Et quelle cuisine préférez-vous ? Peut-être géorgienne ou japonaise ?",
+            "pt": "E que tipo de culinária vocês preferem? Talvez georgiana ou japonesa?",
+            "kr": "어떤 요리를 좋아해? 그루지야 요리나 일본 요리는 어때?",
+            "jp": "どんな料理がいいの？ ジョージア料理か日本料理はどう？",
+            "zh": "那你们喜欢什么菜系？格鲁吉亚菜或者日本菜怎么样？",
+            "ru": "А какой кухни вы предпочитаете? Может быть, грузинская или японская?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мама любит грузинскую кухню, но мы хотим, чтобы было и детское меню.",
+            "en": "Mom loves Georgian cuisine, but we want there to be a kids' menu too.",
+            "es": "A mamá le gusta la cocina georgiana, pero queremos que también haya menú infantil.",
+            "fr": "Maman aime la cuisine géorgienne, mais on voudrait qu’il y ait aussi un menu pour enfants.",
+            "pt": "Minha mãe adora culinária georgiana, mas queremos que tenha também um menu infantil.",
+            "kr": "엄마는 그루지야 요리를 좋아하시는데, 우리는 키즈 메뉴도 있었으면 해.",
+            "jp": "母はジョージア料理が好きなんだけど、子供向けメニューもあるといいなと思っているの。",
+            "zh": "妈妈喜欢格鲁吉亚菜，但我们希望有儿童菜单。",
+            "ru": "Мама любит грузинскую кухню, но мы хотим, чтобы было и детское меню."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда советую ресторан «Тбилиси». Там есть специальные блюда для детей и живая музыка по вечерам.",
+            "en": "Then I recommend the restaurant \"Tbilisi.\" They have special dishes for children and live music in the evenings.",
+            "es": "Entonces os recomiendo el restaurante «Tbilisi». Allí tienen platos especiales para niños y música en vivo por las noches.",
+            "fr": "Alors je te conseille le restaurant « Tbilissi ». Il y a des plats spéciaux pour les enfants et de la musique live le soir.",
+            "pt": "Então recomendo o restaurante \"Tbilisi\". Lá tem pratos especiais para crianças e música ao vivo à noite.",
+            "kr": "그럼 '트빌리시' 레스토랑을 추천해. 거기는 아이들을 위한 특별 메뉴도 있고 저녁에는 라이브 음악도 있어.",
+            "jp": "それなら「トビリシ」というレストランをおすすめするよ。あそこは子供向けの特別な料理と、夜は生演奏があるんだ。",
+            "zh": "那我推荐“第比利斯”餐厅。那里有专门的儿童菜，晚上还有现场音乐。",
+            "ru": "Тогда советую ресторан «Тбилиси». Там есть специальные блюда для детей и живая музыка по вечерам."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это звучит идеально. А нужно ли бронировать заранее?",
+            "en": "That sounds perfect. And do we need to book in advance?",
+            "es": "Suena perfecto. ¿Y hay que reservar con antelación?",
+            "fr": "Ça semble parfait. Et faut-il réserver à l’avance ?",
+            "pt": "Isso parece perfeito. E precisa reservar com antecedência?",
+            "kr": "완벽하네. 미리 예약해야 해?",
+            "jp": "それは理想的ね。事前に予約する必要はある？",
+            "zh": "听起来太合适了。需要提前预订吗？",
+            "ru": "Это звучит идеально. А нужно ли бронировать заранее?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, обязательно. В выходные там всегда много гостей.",
+            "en": "Yes, definitely. On weekends there are always a lot of guests there.",
+            "es": "Sí, sin duda. Los fines de semana siempre hay mucha gente.",
+            "fr": "Oui, absolument. Le week-end, il y a toujours beaucoup de clients.",
+            "pt": "Sim, com certeza. Nos fins de semana sempre tem muitos clientes lá.",
+            "kr": "응, 꼭 해야 해. 주말에는 항상 손님이 많거든.",
+            "jp": "うん、絶対に必要だよ。週末はいつもたくさんお客さんがいるからね。",
+            "zh": "是的，一定要订。周末那里客人总是很多。",
+            "ru": "Да, обязательно. В выходные там всегда много гостей."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, подскажи, где можно попробовать настоящую русскую кухню? Ко мне приезжают иностранные коллеги.",
+            "en": "Anna, tell me where we can try real Russian cuisine? My foreign colleagues are coming to visit.",
+            "es": "Ana, dime, ¿dónde se puede probar la auténtica cocina rusa? Vienen unos compañeros extranjeros a verme.",
+            "fr": "Anna, dis-moi où on peut goûter une vraie cuisine russe ? Des collègues étrangers viennent me voir.",
+            "pt": "Anna, me diz onde a gente pode experimentar comida russa de verdade? Meus colegas estrangeiros estão vindo me visitar.",
+            "kr": "안나, 진짜 러시아 요리를 맛볼 수 있는 곳 좀 알려줘. 외국인 동료들이 나한테 오거든.",
+            "jp": "アンナ、本格的なロシア料理を食べられる場所を教えてくれない？ 外国人の同僚たちが来るんだ。",
+            "zh": "安娜，你推荐一下哪里能吃到正宗俄餐？我有外国同事要来。",
+            "ru": "Анна, подскажи, где можно попробовать настоящую русскую кухню? Ко мне приезжают иностранные коллеги."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Есть замечательный ресторан в старом городе. Там подают борщ, пельмени и блины по старинным рецептам.",
+            "en": "There's a wonderful restaurant in the old town. They serve borscht, pelmeni, and blini according to old recipes.",
+            "es": "Hay un restaurante maravilloso en el casco antiguo. Allí sirven borscht, pelmeni y blinis según recetas antiguas.",
+            "fr": "Il y a un merveilleux restaurant dans la vieille ville. On y sert du bortsch, des pelmenis et des blinis selon d’anciennes recettes.",
+            "pt": "Tem um restaurante maravilhoso na cidade antiga. Lá servem borscht, pelmeni e blinis com receitas antigas.",
+            "kr": "구시가지에 훌륭한 레스토랑이 있어. 거기서 옛날 조리법으로 보르시, 펠메니, 블린을 만들어.",
+            "jp": "旧市街に素晴らしいレストランがあるわよ。あそこは昔ながらのレシピでボルシチ、ペリメニ、ブリヌイを出しているの。",
+            "zh": "老城区有一家很棒的餐厅。那里按古老配方做红菜汤、饺子和薄饼。",
+            "ru": "Есть замечательный ресторан в старом городе. Там подают борщ, пельмени и блины по старинным рецептам."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Прекрасно. А они смогут объяснить меню на английском?",
+            "en": "Wonderful. And will they be able to explain the menu in English?",
+            "es": "Estupendo. ¿Y podrán explicar el menú en inglés?",
+            "fr": "Parfait. Et ils pourront expliquer le menu en anglais ?",
+            "pt": "Perfeito. E eles conseguem explicar o cardápio em inglês?",
+            "kr": "좋네. 거기서 영어로 메뉴를 설명해 줄 수 있을까?",
+            "jp": "それはいいね。あそこは英語でメニューを説明してもらえるかな？",
+            "zh": "太好了。他们能用英语解释菜单吗？",
+            "ru": "Прекрасно. А они смогут объяснить меню на английском?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, у них есть меню на нескольких языках, и официанты говорят по-английски.",
+            "en": "Yes, they have a menu in several languages, and the waiters speak English.",
+            "es": "Sí, tienen el menú en varios idiomas y los camareros hablan inglés.",
+            "fr": "Oui, ils ont un menu en plusieurs langues, et les serveurs parlent anglais.",
+            "pt": "Sim, eles têm cardápio em vários idiomas, e os garçons falam inglês.",
+            "kr": "응, 거기는 여러 언어로 된 메뉴가 있고 웨이터들도 영어를 할 줄 알아.",
+            "jp": "ええ、あそこは数か国語のメニューがあるし、ウェイターも英語を話せるわ。",
+            "zh": "可以，他们有多种语言的菜单，服务员也会说英语。",
+            "ru": "Да, у них есть меню на нескольких языках, и официанты говорят по-английски."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это очень удобно для гостей. Ты не знаешь, нужно ли заранее заказывать столик?",
+            "en": "That's very convenient for the guests. Do you know if we need to book a table in advance?",
+            "es": "Eso es muy cómodo para los invitados. ¿Sabes si hay que reservar mesa con antelación?",
+            "fr": "C’est très pratique pour les invités. Tu ne sais pas s’il faut réserver une table à l’avance ?",
+            "pt": "Isso é muito conveniente para os convidados. Você não sabe se precisa reservar mesa com antecedência?",
+            "kr": "손님들한테 정말 편리하겠네. 자리 미리 예약해야 하는지 알아?",
+            "jp": "それはゲストにとってとても便利だね。事前に席を予約する必要があるか知ってる？",
+            "zh": "这对客人来说很方便。你知道需要提前订位吗？",
+            "ru": "Это очень удобно для гостей. Ты не знаешь, нужно ли заранее заказывать столик?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Лучше позвонить и забронировать, особенно если вас будет больше четырёх человек.",
+            "en": "It's better to call and reserve, especially if there will be more than four of you.",
+            "es": "Mejor llamar y reservar, sobre todo si vais a ser más de cuatro personas.",
+            "fr": "Il vaut mieux appeler et réserver, surtout si vous êtes plus de quatre personnes.",
+            "pt": "É melhor ligar e reservar, principalmente se vocês forem mais de quatro pessoas.",
+            "kr": "전화해서 예약하는 게 좋아, 특히 네 명 이상이면 더더욱 그래.",
+            "jp": "電話して予約した方がいいわ。特に四人以上ならね。",
+            "zh": "最好打电话预订，尤其是如果你们超过四个人的话。",
+            "ru": "Лучше позвонить и забронировать, особенно если вас будет больше четырёх человек."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, я ищу ресторан с видом на город, чтобы сделать предложение своей девушке.",
+            "en": "Alexey, I'm looking for a restaurant with a view of the city to propose to my girlfriend.",
+            "es": "Alekséi, estoy buscando un restaurante con vistas a la ciudad para proponerle matrimonio a mi novia.",
+            "fr": "Alexeï, je cherche un restaurant avec une vue sur la ville pour demander ma copine en mariage.",
+            "pt": "Alexei, estou procurando um restaurante com vista para a cidade para pedir minha namorada em casamento.",
+            "kr": "알렉세이, 나 도시가 보이는 레스토랑을 찾고 있어. 여자친구한테 프로포즈하려고.",
+            "jp": "アレクセイ、街の景色が見えるレストランを探しているんだ。彼女にプロポーズしようと思ってるんだ。",
+            "zh": "阿列克谢，我在找一家能俯瞰城市的餐厅，想向女朋友求婚。",
+            "ru": "Алексей, я ищу ресторан с видом на город, чтобы сделать предложение своей девушке."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ого, это серьёзный шаг! Есть ресторан на верхнем этаже бизнес-центра, оттуда открывается потрясающий вид.",
+            "en": "Wow, that's a serious step! There's a restaurant on the top floor of a business center, and it has an amazing view.",
+            "es": "¡Vaya, es un paso muy serio! Hay un restaurante en la planta superior del centro de negocios, desde allí hay unas vistas impresionantes.",
+            "fr": "Oh là là, c’est un grand pas ! Il y a un restaurant à l’étage supérieur du centre d’affaires, avec une vue magnifique.",
+            "pt": "Nossa, isso é um passo sério! Tem um restaurante no último andar do centro empresarial, de lá tem uma vista incrível.",
+            "kr": "와, 정말 중요한 결정이네! 비즈니스 센터 꼭대기 층에 레스토랑이 있는데, 거기서 굉장히 멋진 전망이 보여.",
+            "jp": "おお、それは大事な一歩だね！ ビジネスセンターの上層階にレストランがあるんだけど、そこからは素晴らしい景色が見えるよ。",
+            "zh": "哇，这可是重要的一步！商务中心顶楼有家餐厅，那里的视野非常壮观。",
+            "ru": "Ого, это серьёзный шаг! Есть ресторан на верхнем этаже бизнес-центра, оттуда открывается потрясающий вид."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А атмосфера там романтичная? Мне важно, чтобы всё было идеально.",
+            "en": "And is the atmosphere romantic there? It's important to me that everything be perfect.",
+            "es": "¿Y el ambiente es romántico? Para mí es importante que todo sea perfecto.",
+            "fr": "Et l’ambiance y est romantique ? C’est important pour moi que tout soit parfait.",
+            "pt": "E o clima lá é romântico? É importante para mim que tudo seja perfeito.",
+            "kr": "거기 분위기는 로맨틱해? 모든 게 완벽해야 해서 중요해.",
+            "jp": "あそこは雰囲気はロマンチックなのかな？ すべてが完璧であることが大事なんだ。",
+            "zh": "那里氛围浪漫吗？我希望一切都完美。",
+            "ru": "А атмосфера там романтичная? Мне важно, чтобы всё было идеально."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, там приглушённый свет, живая скрипка и очень внимательный персонал.",
+            "en": "Yes, there's dim lighting, a live violin, and very attentive staff.",
+            "es": "Sí, allí la luz es tenue, hay violín en vivo y un personal muy atento.",
+            "fr": "Oui, il y a un éclairage tamisé, un violon live et un personnel très attentionné.",
+            "pt": "Sim, lá tem luz baixa, violino ao vivo e uma equipe muito atenciosa.",
+            "kr": "응, 거기는 조명이 은은하고 라이브 바이올린 연주도 있고 직원들도 아주 세심해.",
+            "jp": "うん、あそこは照明が落ち着いていて、バイオリンの生演奏と、とても気配りの行き届いたスタッフがいるんだ。",
+            "zh": "是的，那里灯光柔和，有小提琴现场演奏，服务员也非常贴心。",
+            "ru": "Да, там приглушённый свет, живая скрипка и очень внимательный персонал."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Звучит именно то, что нужно. Как ты думаешь, стоит предупредить их о моём плане?",
+            "en": "Sounds like exactly what I need. Do you think we should let them know about my plan?",
+            "es": "Suena justo a lo que necesito. ¿Crees que debería avisarles de mi plan?",
+            "fr": "Ça semble exactement ce qu’il me faut. Tu penses que je devrais les prévenir de mon plan ?",
+            "pt": "Parece exatamente o que eu preciso. Você acha que vale avisar eles sobre o meu plano?",
+            "kr": "딱 내가 원하는 곳이네. 내 계획을 미리 알려주는 게 좋을까?",
+            "jp": "まさに探していたところだよ。彼らに僕の計画を伝えた方がいいと思う？",
+            "zh": "听起来正是我想要的。你觉得应该提前告诉他们我的计划吗？",
+            "ru": "Звучит именно то, что нужно. Как ты думаешь, стоит предупредить их о моём плане?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, они помогут организовать сюрприз, например, подадут десерт с кольцом.",
+            "en": "Of course, they'll help organize the surprise, for example, they'll serve a dessert with the ring.",
+            "es": "Por supuesto, te ayudarán a organizar la sorpresa, por ejemplo, te servirán el postre con el anillo.",
+            "fr": "Bien sûr, ils aideront à organiser la surprise, par exemple, ils serviront un dessert avec la bague.",
+            "pt": "Claro, eles ajudam a organizar a surpresa, por exemplo, servem a sobremesa com o anel.",
+            "kr": "당연하지, 거기서 깜짝 이벤트를 도와줄 거야. 예를 들어 반지가 든 디저트를 내준다든지.",
+            "jp": "もちろんさ。彼らはサプライズの準備を手伝ってくれるよ。例えば、指輪を載せたデザートを出してくれたりするんだ。",
+            "zh": "当然，他们会帮你安排惊喜，比如把戒指放在甜点里一起端上来。",
+            "ru": "Конечно, они помогут организовать сюрприз, например, подадут десерт с кольцом."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, мы с друзьями хотим отметить окончание проекта. Посоветуй ресторан с большим залом.",
+            "en": "Maria, my friends and I want to celebrate the end of a project. Recommend a restaurant with a large hall.",
+            "es": "María, mis amigos y yo queremos celebrar el fin del proyecto. Recomiéndame un restaurante con una sala grande.",
+            "fr": "Maria, avec des amis, on veut fêter la fin du projet. Conseille-moi un restaurant avec une grande salle.",
+            "pt": "Maria, eu e meus amigos queremos comemorar o fim do projeto. Me recomenda um restaurante com salão grande.",
+            "kr": "마리아, 우리 친구들이랑 프로젝트 끝난 걸 축하하려고 해. 큰 홀이 있는 레스토랑 좀 추천해 줘.",
+            "jp": "マリア、私たち友達とプロジェクトの完了を祝いたいの。広いホールのあるレストランを教えてくれる？",
+            "zh": "玛丽亚，我们想和朋友们庆祝项目完成。推荐一家有大厅的餐厅吧。",
+            "ru": "Мария, мы с друзьями хотим отметить окончание проекта. Посоветуй ресторан с большим залом."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Есть отличное место в центре, там есть отдельный зал для компаний до двадцати человек.",
+            "en": "There's a great place in the center, they have a separate hall for groups of up to twenty people.",
+            "es": "Hay un sitio estupendo en el centro, tienen una sala privada para grupos de hasta veinte personas.",
+            "fr": "Il y a un excellent endroit au centre, avec une salle privée pour des groupes jusqu’à vingt personnes.",
+            "pt": "Tem um lugar ótimo no centro, lá tem um salão separado para grupos de até vinte pessoas.",
+            "kr": "시내에 좋은 곳이 있어. 거기는 최대 이십 명까지 수용 가능한 별도 홀이 있어.",
+            "jp": "中心街に素晴らしい場所があるわよ。あそこは二十人までの会社向けの個室があるの。",
+            "zh": "市中心有个很棒的地方，那里有可容纳二十人的独立包间。",
+            "ru": "Есть отличное место в центре, там есть отдельный зал для компаний до двадцати человек."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А кухня там разнообразная? У нас есть вегетарианцы и те, кто не ест мясо.",
+            "en": "And is the cuisine varied there? We have vegetarians and people who don't eat meat.",
+            "es": "¿Y la cocina allí es variada? Tenemos vegetarianos y gente que no come carne.",
+            "fr": "Et la cuisine y est variée ? On a des végétariens et des gens qui ne mangent pas de viande.",
+            "pt": "E a comida lá é variada? Temos vegetarianos e pessoas que não comem carne.",
+            "kr": "거기 메뉴는 다양한 편이야? 우리 중에 채식주의자랑 고기를 안 먹는 사람도 있어.",
+            "jp": "あそこは料理は豊富なの？ ベジタリアンやお肉を食べない人もいるんだけど。",
+            "zh": "那里菜品种类多吗？我们中间有素食主义者，也有人不吃肉。",
+            "ru": "А кухня там разнообразная? У нас есть вегетарианцы и те, кто не ест мясо."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, меню очень разнообразное, есть много овощных блюд и свежих салатов.",
+            "en": "Yes, the menu is very diverse, there are lots of vegetable dishes and fresh salads.",
+            "es": "Sí, el menú es muy variado, hay muchos platos de verduras y ensaladas frescas.",
+            "fr": "Oui, le menu est très varié, il y a beaucoup de plats de légumes et de salades fraîches.",
+            "pt": "Sim, o cardápio é bem variado, tem muitos pratos de legumes e saladas frescas.",
+            "kr": "응, 메뉴가 아주 다양해. 채소 요리랑 신선한 샐러드가 많아.",
+            "jp": "ええ、メニューはとても豊富で、野菜料理や新鮮なサラダがたくさんあるわ。",
+            "zh": "有的，菜单非常丰富，有很多蔬菜菜肴和新鲜沙拉。",
+            "ru": "Да, меню очень разнообразное, есть много овощных блюд и свежих салатов."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, это решит нашу проблему. А можно ли заказать музыкальное сопровождение?",
+            "en": "Great, that solves our problem. And can we order live music?",
+            "es": "Genial, eso resolverá nuestro problema. ¿Y se puede pedir música en directo?",
+            "fr": "Parfait, ça résoudra notre problème. Et peut-on commander un accompagnement musical ?",
+            "pt": "Ótimo, isso resolve o nosso problema. E dá para pedir acompanhamento musical?",
+            "kr": "좋아, 그럼 우리 문제가 해결됐네. 음악도 신청할 수 있어?",
+            "jp": "それはいいわ。私たちの問題が解決するわね。音楽の手配もできるかしら？",
+            "zh": "太好了，这解决了我们的问题。可以预订音乐伴奏吗？",
+            "ru": "Отлично, это решит нашу проблему. А можно ли заказать музыкальное сопровождение?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, они предоставляют диджея или живой ансамбль по вашему желанию.",
+            "en": "Yes, they provide a DJ or a live band, whichever you prefer.",
+            "es": "Sí, te ponen un DJ o un grupo en vivo, como prefieras.",
+            "fr": "Oui, ils fournissent un DJ ou un ensemble live selon votre souhait.",
+            "pt": "Sim, eles oferecem um DJ ou um conjunto ao vivo, como vocês preferirem.",
+            "kr": "응, 원하면 디제이나 라이브 앙상블을 제공해 줘.",
+            "jp": "ええ、希望に応じてDJか生演奏のアンサンブルを手配してくれるわよ。",
+            "zh": "可以，他们可以根据你们的要求提供DJ或现场乐队。",
+            "ru": "Да, они предоставляют диджея или живой ансамбль по вашему желанию."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, я никак не могу найти хороший рыбный ресторан. Все, что я пробовала, не впечатляет.",
+            "en": "Ivan, I just can't find a good seafood restaurant. Everything I've tried hasn't impressed me.",
+            "es": "Iván, no consigo encontrar un buen restaurante de pescado. Todo lo que he probado no me impresiona.",
+            "fr": "Ivan, je n’arrive pas à trouver un bon restaurant de poisson. Tout ce que j’ai essayé ne m’impressionne pas.",
+            "pt": "Ivan, não consigo encontrar um bom restaurante de peixes. Tudo o que eu experimentei não me impressiona.",
+            "kr": "이반, 나 좋은 생선 요리집을 도저히 못 찾겠어. 내가 가 본 곳들은 다 별로였거든.",
+            "jp": "イワン、なかなかいい魚料理のレストランが見つからないの。今まで試したところはどれも感動しなかったわ。",
+            "zh": "伊万，我一直找不到好的鱼餐厅。我去过的那些都不怎么样。",
+            "ru": "Иван, я никак не могу найти хороший рыбный ресторан. Все, что я пробовала, не впечатляет."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Попробуй ресторан на окраине города, он называется «Морской бриз». Туда привозят свежую рыбу каждое утро.",
+            "en": "Try the restaurant on the outskirts of the city, it's called \"Sea Breeze.\" They bring in fresh fish every morning.",
+            "es": "Prueba el restaurante en las afueras de la ciudad, se llama «Brisa Marina». Allí traen pescado fresco cada mañana.",
+            "fr": "Essaie le restaurant à la périphérie de la ville, il s’appelle « Brise marine ». On y apporte du poisson frais chaque matin.",
+            "pt": "Experimenta o restaurante na periferia da cidade, chama \"Brisa do Mar\". Eles trazem peixe fresco todas as manhãs.",
+            "kr": "시 외곽에 있는 레스토랑을 가 봐, '바다의 산들바람'이라고 하는데. 거기는 매일 아침 신선한 생선을 공수해.",
+            "jp": "街はずれのレストランを試してみたら？ 「海のそよ風」っていうんだけど、あそこは毎朝新鮮な魚が届くんだ。",
+            "zh": "试试城郊那家叫“海风”的餐厅吧。他们每天早上都会运来新鲜的鱼。",
+            "ru": "Попробуй ресторан на окраине города, он называется «Морской бриз». Туда привозят свежую рыбу каждое утро."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? А как ты узнал об этом месте?",
+            "en": "Really? And how did you find out about this place?",
+            "es": "¿De verdad? ¿Y cómo te enteraste de ese sitio?",
+            "fr": "Vraiment ? Et comment as-tu découvert cet endroit ?",
+            "pt": "Sério? E como você ficou sabendo desse lugar?",
+            "kr": "정말? 그런데 그곳을 어떻게 알게 됐어?",
+            "jp": "本当？ どうやってその場所を知ったの？",
+            "zh": "真的吗？你是怎么知道这个地方的？",
+            "ru": "Правда? А как ты узнал об этом месте?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мой коллега ходил туда с семьёй и очень хвалил. Говорит, что уха там просто восхитительная.",
+            "en": "My colleague went there with his family and praised it highly. He says the fish soup there is simply amazing.",
+            "es": "Mi compañero fue con su familia y lo elogió mucho. Dice que la sopa de pescado allí es sencillamente deliciosa.",
+            "fr": "Mon collègue y est allé avec sa famille et en a fait beaucoup d’éloges. Il dit que la soupe de poisson y est tout simplement délicieuse.",
+            "pt": "Meu colega foi lá com a família e elogiou muito. Ele diz que a sopa de peixe de lá é simplesmente deliciosa.",
+            "kr": "우리 동료가 가족이랑 갔다가 엄청 칭찬했어. 거기 우하(생선 수프)가 정말 환상적이라고 하더라.",
+            "jp": "同僚が家族で行ったことがあって、とても褒めていたんだ。あそこの魚のスープは絶品だって言ってたよ。",
+            "zh": "我同事带家人去过，评价很高。他说那里的鱼汤简直太美味了。",
+            "ru": "Мой коллега ходил туда с семьёй и очень хвалил. Говорит, что уха там просто восхитительная."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда я обязательно попробую. А по будням там бывает многолюдно?",
+            "en": "Then I'll definitely try it. And is it crowded there on weekdays?",
+            "es": "Entonces lo probaré sin falta. ¿Y entre semana suele estar muy lleno?",
+            "fr": "Alors je vais absolument essayer. Et en semaine, il y a beaucoup de monde ?",
+            "pt": "Então eu com certeza vou experimentar. E durante a semana costuma ficar lotado?",
+            "kr": "그럼 꼭 가 봐야겠네. 평일에는 사람 많아?",
+            "jp": "じゃあ、絶対に行ってみるわ。平日は混んでるのかしら？",
+            "zh": "那我一定要去尝尝。工作日那里人多吗？",
+            "ru": "Тогда я обязательно попробую. А по будням там бывает многолюдно?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не очень, но на выходные лучше бронировать заранее.",
+            "en": "Not very, but for the weekend it's better to book in advance.",
+            "es": "No mucho, pero para el fin de semana es mejor reservar con antelación.",
+            "fr": "Pas trop, mais pour le week-end, il vaut mieux réserver à l’avance.",
+            "pt": "Não muito, mas para o fim de semana é melhor reservar com antecedência.",
+            "kr": "별로 없어. 그런데 주말에는 미리 예약하는 게 좋아.",
+            "jp": "そんなに混んでないよ。でも週末は早めに予約した方がいいね。",
+            "zh": "不太多，但周末最好提前预订。",
+            "ru": "Не очень, но на выходные лучше бронировать заранее."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, мы с мужем хотим найти тихий ресторан для романтического ужина, но не слишком дорогой.",
+            "en": "Elena, my husband and I want to find a quiet restaurant for a romantic dinner, but not too expensive.",
+            "es": "Elena, mi marido y yo queremos encontrar un restaurante tranquilo para una cena romántica, pero que no sea demasiado caro.",
+            "fr": "Hélène, avec mon mari, on veut trouver un restaurant calme pour un dîner romantique, mais pas trop cher.",
+            "pt": "Elena, eu e meu marido queremos encontrar um restaurante tranquilo para um jantar romântico, mas não muito caro.",
+            "kr": "옐레나, 우리 부부가 조용한 레스토랑을 찾고 있어. 로맨틱한 저녁 식사하려고, 그런데 너무 비싸지 않은 곳으로.",
+            "jp": "エレナ、私たち夫婦で静かなレストランを探しているんだけど、ロマンチックなディナーにぴったりで、でもあまり高すぎないところがいいの。",
+            "zh": "叶莲娜，我和丈夫想找一家安静的餐厅吃浪漫晚餐，但不要太贵。",
+            "ru": "Елена, мы с мужем хотим найти тихий ресторан для романтического ужина, но не слишком дорогой."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понимаю, иногда сложно найти баланс. Есть небольшой семейный ресторан в переулке, там очень уютно.",
+            "en": "I understand, sometimes it's hard to find a balance. There's a small family restaurant in the alley, it's very cozy.",
+            "es": "Te entiendo, a veces es difícil encontrar el equilibrio. Hay un pequeño restaurante familiar en un callejón, es muy acogedor.",
+            "fr": "Je comprends, c’est parfois difficile de trouver l’équilibre. Il y a un petit restaurant familial dans une ruelle, c’est très cosy.",
+            "pt": "Entendo, às vezes é difícil encontrar um equilíbrio. Tem um restaurante familiar pequeno no beco, lá é bem aconchegante.",
+            "kr": "이해해, 가끔 균형 잡기가 어렵잖아. 골목에 작은 가족 레스토랑이 있는데, 거기 엄청 아늑해.",
+            "jp": "わかるわ、時々バランスを見つけるのは難しいものね。路地に小さな家族経営のレストランがあるんだけど、あそこはとても居心地がいいのよ。",
+            "zh": "我明白，有时候很难找到平衡。小巷里有一家小型家庭餐厅，那里非常温馨。",
+            "ru": "Понимаю, иногда сложно найти баланс. Есть небольшой семейный ресторан в переулке, там очень уютно."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А какая там кухня? Мы любим средиземноморскую.",
+            "en": "And what kind of cuisine do they have? We love Mediterranean.",
+            "es": "¿Y qué tipo de cocina tienen? Nos gusta la mediterránea.",
+            "fr": "Et quelle cuisine y sert-on ? On aime la cuisine méditerranéenne.",
+            "pt": "E que tipo de comida tem lá? Nós adoramos mediterrânea.",
+            "kr": "거기 요리는 어떤 종류야? 우리는 지중해 요리를 좋아해.",
+            "jp": "あそこはどんな料理なの？ 私たちは地中海料理が好きなんだけど。",
+            "zh": "那里是什么菜系？我们喜欢地中海菜。",
+            "ru": "А какая там кухня? Мы любим средиземноморскую."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Как раз средиземноморская. Паста, морепродукты, свежие овощи и отличное домашнее вино.",
+            "en": "It just happens to be Mediterranean. Pasta, seafood, fresh vegetables, and excellent house wine.",
+            "es": "Justo mediterránea. Pasta, marisco, verduras frescas y un excelente vino de la casa.",
+            "fr": "Justement méditerranéenne. Des pâtes, des fruits de mer, des légumes frais et un excellent vin maison.",
+            "pt": "É mediterrânea mesmo. Massas, frutos do mar, legumes frescos e um ótimo vinho caseiro.",
+            "kr": "바로 지중해 요리야. 파스타, 해산물, 신선한 채소 그리고 훌륭한 집에서 만든 와인도 있어.",
+            "jp": "ちょうど地中海料理よ。パスタ、シーフード、新鮮な野菜、それに素晴らしい自家製ワインがあるわ。",
+            "zh": "正好是地中海菜。有意大利面、海鲜、新鲜蔬菜和很棒的家酿葡萄酒。",
+            "ru": "Как раз средиземноморская. Паста, морепродукты, свежие овощи и отличное домашнее вино."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это звучит замечательно. А нужно ли одеваться формально?",
+            "en": "That sounds wonderful. And do we need to dress formally?",
+            "es": "Suena estupendo. ¿Y hay que ir vestido de forma formal?",
+            "fr": "Ça semble merveilleux. Et faut-il s’habiller de manière formelle ?",
+            "pt": "Isso parece maravilhoso. E precisa se vestir formalmente?",
+            "kr": "정말 좋네. 거기 정장을 입어야 해?",
+            "jp": "それは素敵だわ。フォーマルな服装が必要かしら？",
+            "zh": "听起来太棒了。需要穿正装吗？",
+            "ru": "Это звучит замечательно. А нужно ли одеваться формально?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, там демократичная атмосфера, но лучше выглядеть опрятно.",
+            "en": "No, the atmosphere is casual there, but it's better to look neat.",
+            "es": "No, el ambiente es informal, pero mejor ir arreglado.",
+            "fr": "Non, l’ambiance y est décontractée, mais il vaut mieux être soigné.",
+            "pt": "Não, lá o clima é descontraído, mas é melhor estar com uma aparência arrumada.",
+            "kr": "아니, 거기는 편한 분위기야. 그렇지만 단정하게 입는 게 좋아.",
+            "jp": "いいえ、あそこはカジュアルな雰囲気よ。でもきちんとした格好をしていた方がいいわね。",
+            "zh": "不用，那里氛围很随意，但最好穿着整洁。",
+            "ru": "Нет, там демократичная атмосфера, но лучше выглядеть опрятно."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, посоветуй ресторан для деловой встречи с важным клиентом. Нужно произвести хорошее впечатление.",
+            "en": "Dmitry, recommend a restaurant for a business meeting with an important client. We need to make a good impression.",
+            "es": "Dmitri, recomiéndame un restaurante para una reunión de negocios con un cliente importante. Hay que causar una buena impresión.",
+            "fr": "Dimitri, conseille-moi un restaurant pour une réunion d’affaires avec un client important. Il faut faire bonne impression.",
+            "pt": "Dmitri, me recomenda um restaurante para uma reunião de negócios com um cliente importante. Precisamos causar uma boa impressão.",
+            "kr": "드미트리, 중요한 고객이랑 비즈니스 미팅할 레스토랑 좀 추천해 줘. 좋은 인상을 남겨야 해.",
+            "jp": "ドミトリー、大切なクライアントとの商談にいいレストランを教えてくれないか。いい印象を与えたいんだ。",
+            "zh": "德米特里，推荐一家适合和重要客户商务会面的餐厅吧。需要留下好印象。",
+            "ru": "Дмитрий, посоветуй ресторан для деловой встречи с важным клиентом. Нужно произвести хорошее впечатление."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "В таком случае рекомендую ресторан «Классик» в деловом центре. Там строгая атмосфера и отличная кухня.",
+            "en": "In that case, I recommend the restaurant \"Classic\" in the business center. It has a formal atmosphere and excellent cuisine.",
+            "es": "En ese caso te recomiendo el restaurante «Clásico» en el centro de negocios. Allí el ambiente es serio y la cocina es excelente.",
+            "fr": "Dans ce cas, je recommande le restaurant « Classique » dans le centre d’affaires. L’ambiance y est stricte et la cuisine excellente.",
+            "pt": "Nesse caso, recomendo o restaurante \"Clássico\" no centro empresarial. Lá tem um clima sóbrio e uma ótima cozinha.",
+            "kr": "그렇다면 비즈니스 센터에 있는 '클래식' 레스토랑을 추천할게. 거기는 격식 있는 분위기에 훌륭한 요리를 제공해.",
+            "jp": "それならビジネスセンターにある「クラシック」というレストランをおすすめするよ。あそこは落ち着いた雰囲気と素晴らしい料理があるんだ。",
+            "zh": "这样的话，我推荐商务中心的“古典”餐厅。那里氛围庄重，菜品也很棒。",
+            "ru": "В таком случае рекомендую ресторан «Классик» в деловом центре. Там строгая атмосфера и отличная кухня."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А есть ли там отдельные кабинеты для переговоров?",
+            "en": "And do they have private rooms for negotiations?",
+            "es": "¿Y tienen salas privadas para negociaciones?",
+            "fr": "Et y a-t-il des salles privées pour les négociations ?",
+            "pt": "E tem salas privativas para reuniões?",
+            "kr": "거기 업무 회의할 수 있는 별도 룸이 있어?",
+            "jp": "あそこに交渉用の個室はあるかな？",
+            "zh": "那里有独立的商务包间吗？",
+            "ru": "А есть ли там отдельные кабинеты для переговоров?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, есть несколько уютных кабинетов, где можно спокойно обсудить дела.",
+            "en": "Yes, there are several cozy rooms where you can calmly discuss business.",
+            "es": "Sí, hay varios salones acogedores donde se puede hablar de negocios con tranquilidad.",
+            "fr": "Oui, il y a plusieurs salles confortables où l’on peut discuter tranquillement.",
+            "pt": "Sim, tem várias salas aconchegantes onde dá para discutir os negócios com tranquilidade.",
+            "kr": "응, 조용히 일 얘기할 수 있는 아늑한 룸이 몇 개 있어.",
+            "jp": "うん、いくつか居心地のいい個室があって、静かに仕事の話ができるよ。",
+            "zh": "有，有几个舒适的包间，可以安静地谈事情。",
+            "ru": "Да, есть несколько уютных кабинетов, где можно спокойно обсудить дела."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это идеально. А как быстро они готовят блюда? Не хочется, чтобы клиент ждал.",
+            "en": "That's perfect. And how fast do they prepare the dishes? I don't want the client to wait.",
+            "es": "Es perfecto. ¿Y qué tan rápido preparan los platos? No quiero que el cliente tenga que esperar.",
+            "fr": "C’est idéal. Et est-ce qu’ils préparent les plats rapidement ? Je ne veux pas que le client attende.",
+            "pt": "Isso é perfeito. E com que rapidez eles preparam os pratos? Não quero que o cliente fique esperando.",
+            "kr": "완벽하네. 그런데 음식은 얼마나 빨리 나와? 고객이 기다리게 하고 싶지 않아서.",
+            "jp": "それは理想的だね。あそこは料理はどれくらい早く出てくるんだ？ クライアントを待たせたくないんだ。",
+            "zh": "太理想了。他们上菜快吗？不想让客户等太久。",
+            "ru": "Это идеально. А как быстро они готовят блюда? Не хочется, чтобы клиент ждал."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно очень быстро, но лучше предупредить администратора о времени встречи.",
+            "en": "Usually very fast, but it's better to let the manager know about the meeting time.",
+            "es": "Normalmente muy rápido, pero mejor avisar al gerente de la hora de la reunión.",
+            "fr": "En général, c’est très rapide, mais il vaut mieux prévenir le directeur de l’heure de la réunion.",
+            "pt": "Normalmente é bem rápido, mas é melhor avisar o gerente sobre o horário da reunião.",
+            "kr": "보통 아주 빨라. 그렇지만 미팅 시간을 관리자에게 미리 알려주는 게 좋아.",
+            "jp": "だいたいはとても早いよ。でも、マネージャーに会合の時間を伝えておいた方がいいね。",
+            "zh": "通常很快，但最好提前告诉经理你们的会面时间。",
+            "ru": "Обычно очень быстро, но лучше предупредить администратора о времени встречи."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, я слышал, ты недавно была в новом азиатском ресторане. Расскажи, стоит ли туда идти?",
+            "en": "Olga, I heard you recently went to the new Asian restaurant. Tell me, is it worth going?",
+            "es": "Olga, he oído que fuiste hace poco al restaurante asiático nuevo. Cuéntame, ¿merece la pena ir?",
+            "fr": "Olga, j’ai entendu dire que tu es allée récemment au nouveau restaurant asiatique. Dis-moi, est-ce que ça vaut le coup d’y aller ?",
+            "pt": "Olga, eu ouvi que você foi recentemente ao novo restaurante asiático. Me conta, vale a pena ir lá?",
+            "kr": "올가, 너 최근에 새로 생긴 아시아 레스토랑에 갔다며. 거기 갈 만한지 얘기해 줘.",
+            "jp": "オルガ、君が最近新しいアジア料理のレストランに行ったって聞いたんだけど、行く価値があるか教えてくれない？",
+            "zh": "奥尔加，我听说你最近去了一家新的亚洲餐厅。说说看，值得去吗？",
+            "ru": "Ольга, я слышал, ты недавно была в новом азиатском ресторане. Расскажи, стоит ли туда идти?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я была там на прошлой неделе. Еда вкусная, порции большие, но есть один минус.",
+            "en": "Yes, I was there last week. The food is tasty, the portions are big, but there's one downside.",
+            "es": "Sí, estuve allí la semana pasada. La comida está rica, las raciones son grandes, pero hay un inconveniente.",
+            "fr": "Oui, j’y suis allée la semaine dernière. La nourriture est bonne, les portions sont généreuses, mais il y a un inconvénient.",
+            "pt": "Sim, eu fui na semana passada. A comida é gostosa, as porções são grandes, mas tem um ponto negativo.",
+            "kr": "응, 지난주에 거기 갔었어. 음식은 맛있고 양도 많았는데, 단점이 하나 있었어.",
+            "jp": "ええ、先週そこに行ったの。料理はおいしいし、量も多いけど、一つ欠点があるの。",
+            "zh": "是的，我上周去的。菜很好吃，分量也大，但有一个缺点。",
+            "ru": "Да, я была там на прошлой неделе. Еда вкусная, порции большие, но есть один минус."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Какой же? Надеюсь, не слишком шумно?",
+            "en": "What is it? I hope it's not too noisy?",
+            "es": "¿Cuál? Espero que no sea demasiado ruidoso.",
+            "fr": "Lequel ? J’espère que ce n’est pas trop bruyant ?",
+            "pt": "Qual? Espero que não seja muito barulhento?",
+            "kr": "뭔데? 너무 시끄러운 건 아니길 바라.",
+            "jp": "どんな欠点？ あまりうるさくないといいんだけど。",
+            "zh": "什么缺点？希望不会太吵吧？",
+            "ru": "Какой же? Надеюсь, не слишком шумно?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Именно! Музыка очень громкая, и трудно разговаривать. Если хочешь спокойно пообщаться, лучше выбрать другое место.",
+            "en": "Exactly! The music is very loud, and it's hard to have a conversation. If you want to chat quietly, it's better to choose another place.",
+            "es": "¡Exacto! La música está muy alta y es difícil hablar. Si quieres conversar con tranquilidad, mejor elegir otro sitio.",
+            "fr": "Exactement ! La musique est très forte, et il est difficile de parler. Si tu veux discuter tranquillement, il vaut mieux choisir un autre endroit.",
+            "pt": "Exatamente! A música é muito alta, e é difícil conversar. Se você quiser conversar com tranquilidade, é melhor escolher outro lugar.",
+            "kr": "바로 그거야! 음악이 엄청 시끄러워서 대화하기가 힘들었어. 조용히 얘기하고 싶으면 다른 곳을 고르는 게 좋아.",
+            "jp": "まさにそれよ！ 音楽がとても大きくて、話をするのが難しいの。静かに話したいなら、別の場所を選んだ方がいいわ。",
+            "zh": "正是！音乐太大声了，很难聊天。如果你想安静地聊天，最好选别的地方。",
+            "ru": "Именно! Музыка очень громкая, и трудно разговаривать. Если хочешь спокойно пообщаться, лучше выбрать другое место."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно, спасибо за предупреждение. А еду на вынос они готовят?",
+            "en": "I see, thanks for the warning. And do they make food to go?",
+            "es": "Entendido, gracias por avisar. ¿Y hacen comida para llevar?",
+            "fr": "Je vois, merci pour l’avertissement. Et est-ce qu’ils préparent des plats à emporter ?",
+            "pt": "Entendi, obrigado pelo aviso. E eles fazem comida para viagem?",
+            "kr": "알겠어, 미리 알려줘서 고마워. 그런데 포장 음식도 만들어 줘?",
+            "jp": "わかった、警告してくれてありがとう。あそこはテイクアウトもやってるのかな？",
+            "zh": "明白了，谢谢提醒。他们做外卖吗？",
+            "ru": "Понятно, спасибо за предупреждение. А еду на вынос они готовят?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, у них отличная упаковка, и суши не теряют свежести даже через час.",
+            "en": "Yes, they have excellent packaging, and the sushi doesn't lose its freshness even after an hour.",
+            "es": "Sí, tienen un empaque excelente y el sushi no pierde frescura ni después de una hora.",
+            "fr": "Oui, ils ont un excellent emballage, et les sushis ne perdent pas leur fraîcheur même après une heure.",
+            "pt": "Sim, eles têm uma embalagem ótima, e os sushis não perdem a frescura nem depois de uma hora.",
+            "kr": "응, 거기 포장이 아주 좋아서 스시는 한 시간이 지나도 신선함을 잃지 않아.",
+            "jp": "ええ、あそこはパッケージが素晴らしくて、一時間経っても寿司は新鮮さを失わないわよ。",
+            "zh": "做，他们的包装很好，寿司放一个小时也不会变味。",
+            "ru": "Да, у них отличная упаковка, и суши не теряют свежести даже через час."
+          }
+        }
+      ]
+    }
+  ]
+}

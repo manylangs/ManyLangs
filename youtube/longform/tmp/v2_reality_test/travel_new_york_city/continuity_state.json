@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 3
+  },
+  "series_id": "travel_new_york_city",
+  "current_episode_id": "travel_new_york_city_ep001",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "protagonist_state": {
+    "current_emotion": "content and ready to rest",
+    "known_information": [
+      "Jieun has left her hotel room",
+      "Jieun is heading out for an evening walk",
+      "Jieun is on the sidewalk of a lively Manhattan evening street",
+      "Jieun has turned a corner on the evening street",
+      "Jieun has spotted a familiar tall building in the distance",
+      "Jieun recognizes the area near her hotel",
+      "Jieun is smiling softly with a sense of accomplishment",
+      "Jieun has turned around and is walking back toward the hotel",
+      "Jieun is carrying her crossbody bag over her shoulder",
+      "Jieun's backpack, passport, and checked suitcase remain in the hotel room",
+      "Jieun has arrived at her hotel in Manhattan and checked in successfully",
+      "She has completed her first evening walk, feeling more comfortable with the city",
+      "She has used English for immigration, transportation, and hotel check-in",
+      "She is ready to explore more of New York the next day"
+    ],
+    "current_goals": []
+  },
+  "story_facts": [
+    "Jieun has arrived at her hotel in Manhattan and checked in successfully",
+    "She has completed her first evening walk, feeling more comfortable with the city",
+    "She has used English for immigration, transportation, and hotel check-in",
+    "She is ready to explore more of New York the next day"
+  ],
+  "unresolved_threads": [],
+  "relationship_states": [],
+  "inventory_state": [
+    {
+      "item_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "over Jieun's shoulder"
+    },
+    {
+      "item_id": "PROP_ROOM_KEY_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "inside crossbody bag"
+    },
+    {
+      "item_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "not in use"
+    }
+  ],
+  "location_state": {
+    "current_location_ref": "LOC_MANHATTAN_EVENING_STREET_001",
+    "previous_location_ref": null
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S012",
+  "sequence": 12,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "characters": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "local_character_id": null,
+      "role": "protagonist",
+      "gender": "female",
+      "visual_state": {
+        "appearance": [
+          "Oval face with soft features",
+          "Natural eyebrows",
+          "Dark brown eyes",
+          "Light natural makeup",
+          "Warm friendly expression",
+          "Shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears"
+        ],
+        "clothing": [
+          "White casual t-shirt",
+          "Light blue denim jacket",
+          "Dark blue skinny jeans",
+          "White sneakers",
+          "Small silver earrings",
+          "Simple wristwatch"
+        ],
+        "carried_items": [
+          "Medium-sized travel backpack",
+          "Small crossbody bag",
+          "Smartphone",
+          "Passport",
+          "Checked suitcase"
+        ]
+      },
+      "emotion": "anxious about the sudden subway delay and whether she will reach her hotel on time",
+      "screen_action": "Stands inside the stopped subway train, grips the pole tightly, looks around at the dark tunnel outside the windows, then checks her phone for the time"
+    }
+  ],
+  "environment": {
+    "time_of_day": "day",
+    "weather": null,
+    "lighting": "bright indoor subway car lighting with natural daylight streaming through the windows, then briefly flickering",
+    "background_activity": [
+      "A few passengers seated and standing",
+      "Some passengers look up from their phones when the train stops",
+      "The train is stationary between stations"
+    ]
+  },
+  "visual_goal": "The viewer must see the subway train stopped between stations, the lights flickering briefly, and Jieun's growing anxiety about the delay.",
+  "actions": [
+    {
+      "sequence": 1,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "stands inside the moving subway train, holding onto a pole",
+      "object_ref": null
+    },
+    {
+      "sequence": 2,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "feels the train suddenly stop between stations",
+      "object_ref": null
+    },
+    {
+      "sequence": 3,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "looks around as the lights flicker briefly",
+      "object_ref": null
+    },
+    {
+      "sequence": 4,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "grips the pole tighter and looks out the window at the dark tunnel",
+      "object_ref": null
+    },
+    {
+      "sequence": 5,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "checks her phone for the time",
+      "object_ref": "PROP_SMARTPHONE_001"
+    },
+    {
+      "sequence": 6,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "looks around the car with an anxious expression",
+      "object_ref": null
+    }
+  ],
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "description": "Medium-sized travel backpack",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "description": "Small crossbody bag",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "description": "Smartphone",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "description": "Passport",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "description": "Jieun's checked suitcase that she retrieved from the carousel",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    }
+  ],
+  "must_show": [
+    "The subway train stops between stations",
+    "The lights flicker briefly",
+    "Jieun's expression changes from calm to anxious",
+    "Jieun looks out the window at the dark tunnel",
+    "Jieun checks her phone for the time"
+  ],
+  "must_not_show": [
+    "The subway delay must not be resolved in this scene",
+    "Jieun must not move past the subway journey",
+    "No unrelated travel problem should be introduced",
+    "Jieun's clothing and appearance must remain unchanged"
+  ],
+  "visual_continuity": {
+    "carry_in": [
+      "Jieun is on the subway train heading toward Manhattan",
+      "She has confirmed she is on the correct train",
+      "She is now watching for her stop",
+      "She feels relieved that she is on the right track"
+    ],
+    "carry_out": [
+      "The subway train has stopped between stations",
+      "Jieun is feeling anxious about the delay",
+      "She is wondering if she will reach her hotel on time",
+      "The subway delay remains unresolved"
+    ],
+    "start_state": [
+      "Jieun is standing inside the moving subway train, holding onto a pole",
+      "She is looking out the window at the city passing by",
+      "Her expression is calm and relieved"
+    ],
+    "end_state": [
+      "The subway train is stopped between stations",
+      "The lights have stopped flickering but the train remains stationary",
+      "Jieun is gripping the pole, looking anxious",
+      "She is looking at her phone, worried about the time"
+    ]
+  },
+  "production_constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_story_continuity": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false
+  }
+}

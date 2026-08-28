@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1
+  },
+  "location_id": "LOC_JFK_ARRIVALS_001",
+  "series_id": "travel_new_york",
+  "identity": {
+    "name": "JFK Airport Arrivals Area",
+    "location_type": "airport_arrivals",
+    "city": "New York City",
+    "country": "United States",
+    "parent_location_id": null
+  },
+  "story_profile": {
+    "story_function": "The protagonist's initial arrival environment in New York and the starting point of the continuous travel story.",
+    "continuity_rules": [
+      "This location represents the JFK arrival environment before the protagonist completes the airport arrival process.",
+      "Keep the environment recognizably consistent when returning to this location.",
+      "Do not visually transform this location into baggage claim, immigration, or ground transportation."
+    ]
+  },
+  "visual_identity": {
+    "environment_summary": "A realistic contemporary international airport arrivals environment at JFK Airport in New York, with terminal architecture, directional signage, travelers, luggage, and natural airport activity.",
+    "persistent_features": [
+      "contemporary international airport terminal",
+      "airport directional signage",
+      "travelers carrying luggage",
+      "realistic terminal lighting",
+      "large indoor public circulation space"
+    ],
+    "variable_features": [
+      "traveler density",
+      "camera position",
+      "background travelers",
+      "time-dependent ambient lighting"
+    ],
+    "continuity_lock": true
+  },
+  "production": {
+    "visual_provider": "vidu",
+    "reference_asset_ids": [],
+    "prompt_rules": [
+      "Preserve the recognizable JFK airport arrivals environment across scenes assigned to this location.",
+      "Maintain realistic airport architecture and scale.",
+      "Allow camera angle, crowd density, protagonist action, and framing to vary.",
+      "Do not introduce visually contradictory environments.",
+      "Do not change the location identity when generating adjacent shots."
+    ]
+  }
+}

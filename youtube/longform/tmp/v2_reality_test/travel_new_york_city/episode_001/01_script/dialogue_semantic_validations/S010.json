@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S010",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun boards the subway train toward Manhattan",
+      "pass": true,
+      "evidence": "L001: 'Okay, I'm on the train now.'"
+    },
+    {
+      "requirement": "Jieun holds onto a pole",
+      "pass": true,
+      "evidence": "L001: 'I'll just hold onto this pole.'"
+    },
+    {
+      "requirement": "Jieun observes the other passengers",
+      "pass": true,
+      "evidence": "L002: 'Everyone looks so busy. Some people are reading, and some are looking at their phones.'"
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the subway journey",
+      "pass": true,
+      "evidence": "All lines describe being on the train and observing, not arriving or exiting."
+    },
+    {
+      "requirement": "Do not introduce any problems with the subway ride",
+      "pass": true,
+      "evidence": "No issues or complications are mentioned in any line."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

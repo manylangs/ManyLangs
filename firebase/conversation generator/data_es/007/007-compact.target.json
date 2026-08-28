@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Preguntar direcciones",
+  "sets": {
+    "001": [
+      "Perdona, ¿la estación de tren está cerca de aquí?",
+      "Sí, está a unos diez minutos andando. Tienes que seguir todo recto.",
+      "¿Y tengo que cruzar alguna calle importante?",
+      "Sí, cruzas la plaza mayor y sigues hasta el final.",
+      "Vale, ¿y la entrada principal está en esa calle?",
+      "Exacto, la verás justo enfrente del quiosco."
+    ],
+    "002": [
+      "Hola, estoy buscando el museo de arte moderno.",
+      "Ah, está en el centro. Puedes ir en metro, es más rápido.",
+      "¿Qué línea tengo que coger?",
+      "La línea verde y bajas en la parada del ayuntamiento.",
+      "¿Y desde allí se ve el museo?",
+      "Sí, al salir giras a la izquierda y lo tienes delante."
+    ],
+    "003": [
+      "Disculpe, ¿sabe dónde está la farmacia más cercana?",
+      "Claro, hay una a dos calles de aquí, al lado del supermercado.",
+      "¿Es mejor ir andando o en autobús?",
+      "Andando es mejor, son solo cinco minutos.",
+      "Perfecto, muchas gracias por la ayuda.",
+      "De nada, que tengas un buen día."
+    ],
+    "004": [
+      "Oye, ¿me puedes decir cómo llegar a la biblioteca?",
+      "Sí, claro. Sales de aquí y giras a la derecha en el semáforo.",
+      "¿Y luego sigo todo recto?",
+      "Sí, hasta que veas un parque pequeño. La biblioteca está enfrente.",
+      "¿Y hay algún cartel para reconocerla?",
+      "Sí, tiene un letrero grande de color azul."
+    ],
+    "005": [
+      "Perdona, ¿esta calle lleva a la catedral?",
+      "No, esta no. Tienes que volver atrás y coger la segunda calle a la izquierda.",
+      "Ah, vale. ¿Y está muy lejos desde allí?",
+      "No, unos siete minutos andando, más o menos.",
+      "Genial, gracias por indicármelo.",
+      "No hay problema, es fácil de encontrar."
+    ],
+    "006": [
+      "Buenos días, ¿me podría decir dónde está el hotel central?",
+      "Buenos días. Está en la avenida principal, cerca del banco.",
+      "¿Puedo llegar en autobús desde aquí?",
+      "Sí, pero le recomiendo ir andando, son quince minutos.",
+      "¿Y la avenida principal es esta misma?",
+      "No, es la siguiente. Continúe hasta el final de esta calle."
+    ],
+    "007": [
+      "Hola, ¿sabes si hay un cajero automático por aquí?",
+      "Sí, hay uno en la gasolinera, a la vuelta de la esquina.",
+      "¿La gasolinera está en esa dirección?",
+      "Sí, giras en la esquina del banco y la ves enseguida.",
+      "Perfecto, muchas gracias.",
+      "De nada, espero que lo encuentres sin problema."
+    ],
+    "008": [
+      "Perdona, ¿el parque del retiro queda lejos de aquí?",
+      "No, nada. Está a unos veinte minutos andando.",
+      "¿Y hay algún autobús que me lleve?",
+      "Sí, el autobús número cinco te deja justo en la puerta.",
+      "¿Dónde está la parada?",
+      "Está al cruzar la calle, junto a la papelería."
+    ],
+    "009": [
+      "Disculpa, me he perdido. ¿Cómo llego a la plaza de toros?",
+      "No te preocupes, es fácil. Desde aquí ves la torre del reloj, ¿verdad?",
+      "Sí, la veo al fondo.",
+      "Pues camina hacia esa torre y luego giras a la derecha.",
+      "¿Y la plaza está en esa calle?",
+      "Sí, al final de la calle la encontrarás."
+    ],
+    "010": [
+      "Hola, ¿me puedes indicar dónde está el mercado central?",
+      "Claro, está detrás del ayuntamiento. Puedes ir por esta calle.",
+      "¿Es la calle que sale justo al lado del cine?",
+      "Sí, esa misma. Sigues recto y luego giras a la izquierda.",
+      "¿Y el mercado está a la vista desde allí?",
+      "Sí, verás una entrada grande con toldos de colores."
+    ]
+  },
+  "level": "a1",
+  "chapter_id": "CONV_ES_ASKING_DIRECTIONS",
+  "id": "007",
+  "target_lang": "es"
+}

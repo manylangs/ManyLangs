@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a2",
+    "id": "014"
+  },
+  "title": {
+    "target": "Making Appointments",
+    "en": "Making Appointments",
+    "es": "Haciendo citas",
+    "fr": "Prendre rendez-vous",
+    "pt": "Marcar Reuniões",
+    "kr": "약속 잡기",
+    "zh": "预约见面",
+    "jp": "アポイントメントを取る",
+    "ru": "Назначение встреч"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Do you have time to meet this week?",
+            "en": "Do you have time to meet this week?",
+            "es": "¿Tienes tiempo para quedar esta semana?",
+            "fr": "As-tu du temps pour te rencontrer cette semaine ?",
+            "pt": "Tens tempo para te encontrares comigo esta semana?",
+            "kr": "이번 주에 만날 시간 있으세요?",
+            "zh": "这周你有时间见面吗？",
+            "jp": "今週、会う時間はありますか？",
+            "ru": "У тебя есть время встретиться на этой неделе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "I do. How about Thursday afternoon?",
+            "en": "I do. How about Thursday afternoon?",
+            "es": "Sí, lo tengo. ¿Qué tal el jueves por la tarde?",
+            "fr": "Oui, j'en ai. Et jeudi après-midi, ça te va ?",
+            "pt": "Tenho. Que tal quinta-feira à tarde?",
+            "kr": "있어요. 목요일 오후는 어때요?",
+            "zh": "有的。星期四下午怎么样？",
+            "jp": "ありますよ。木曜日の午後はどうですか？",
+            "ru": "Да, есть. Как насчёт четверга после обеда?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Thursday works for me. What time is good for you?",
+            "en": "Thursday works for me. What time is good for you?",
+            "es": "El jueves me viene bien. ¿A qué hora te va bien a ti?",
+            "fr": "Jeudi, ça me va. Quelle heure te conviendrait ?",
+            "pt": "Quinta-feira dá-me jeito. Que horas te são boas?",
+            "kr": "목요일 괜찮아요. 몇 시가 좋을까요?",
+            "zh": "星期四我可以。你什么时间方便？",
+            "jp": "木曜日は大丈夫です。何時がいいですか？",
+            "ru": "Четверг мне подходит. Во сколько тебе удобно?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Let's say two o'clock at the cafe near the station.",
+            "en": "Let's say two o'clock at the cafe near the station.",
+            "es": "Digamos a las dos en el café cerca de la estación.",
+            "fr": "Disons deux heures, au café près de la gare.",
+            "pt": "Digamos às duas no café perto da estação.",
+            "kr": "역 근처 카페에서 두 시 어때요?",
+            "zh": "那就下午两点在车站附近的咖啡馆吧。",
+            "jp": "二時に駅の近くのカフェにしましょう。",
+            "ru": "Давай в два часа в кафе возле вокзала."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Perfect. I'll see you there at two.",
+            "en": "Perfect. I'll see you there at two.",
+            "es": "Perfecto. Te veo allí a las dos.",
+            "fr": "Parfait. Je te verrai là-bas à deux heures.",
+            "pt": "Perfeito. Vejo-te lá às duas.",
+            "kr": "좋아요. 두 시에 거기서 뵐게요.",
+            "zh": "太好了。我们两点在那儿见。",
+            "jp": "いいですね。二時にそこで会いましょう。",
+            "ru": "Отлично. Увидимся там в два."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Great. I'm looking forward to it.",
+            "en": "Great. I'm looking forward to it.",
+            "es": "Genial. Lo estoy deseando.",
+            "fr": "Super. J'ai hâte.",
+            "pt": "Ótimo. Estou ansioso por isso.",
+            "kr": "좋아요. 기대하고 있을게요.",
+            "zh": "好的。我很期待。",
+            "jp": "楽しみにしています。",
+            "ru": "Здорово. Я с нетерпением жду."
+          }
+        }
+      ]
+    }
+  ]
+}

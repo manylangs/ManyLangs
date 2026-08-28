@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S013",
+  "shot_id": "SHOT_001",
+  "sequence": 1,
+  "duration_seconds": 5.0,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun's relief as the subway train resumes moving and she relaxes her grip on the pole.",
+  "framing": {
+    "shot_size": "medium_close",
+    "subject_priority": [
+      "CHAR_JIEUN_001"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun feels the train start moving again, her expression changes from anxious to relieved, and she relaxes her grip on the pole.",
+    "start_state": [
+      "The subway train is stationary between stations",
+      "Jieun is standing inside the train, gripping the pole tightly",
+      "Her expression is anxious"
+    ],
+    "end_state": [
+      "The subway train is moving smoothly",
+      "Jieun has relaxed her grip on the pole",
+      "Her expression is relieved"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "relieved",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on Jieun's back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "state": "held in Jieun's hand",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "state": "stored inside crossbody bag",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "placed near Jieun in the train",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L001"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "The subway train has stopped between stations",
+      "Jieun is feeling anxious about the delay",
+      "She is wondering if she will reach her hotel on time",
+      "The subway delay remains unresolved"
+    ],
+    "carry_out": [
+      "The subway train has resumed moving",
+      "Jieun feels relieved",
+      "She is now looking out the window"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

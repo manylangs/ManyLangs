@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1
+  },
+
+  "character_id": "CHAR_JIEUN_001",
+  "series_id": "travel_new_york",
+
+  "identity": {
+    "role": "protagonist",
+    "name": "Jieun",
+    "gender": "female",
+    "age_range": "late twenties",
+    "nationality": "Korean",
+    "home_base": "Seoul"
+  },
+
+  "story_profile": {
+    "perspective": "The story is experienced from Jieun's point of view as she travels through New York City.",
+    "personality_traits": [
+      "curious",
+      "observant",
+      "friendly",
+      "independent",
+      "practical",
+      "occasionally cautious in unfamiliar situations"
+    ],
+    "speaking_style": [
+      "natural conversational speech",
+      "friendly but not overly expressive",
+      "asks practical questions when needed",
+      "reacts naturally to unfamiliar situations",
+      "avoids textbook-like explanations"
+    ],
+    "continuity_rules": [
+      "Jieun remains the same protagonist throughout the New York series.",
+      "Her established personality must not reset between scenes or episodes.",
+      "Her unresolved experiences and emotional state may carry into later scenes.",
+      "Jieun remains the central story perspective.",
+      "Supporting characters must not take over Jieun's central problem, request, reaction, or emotional perspective."
+    ]
+  },
+
+  "visual_identity": {
+    "appearance_summary": "Korean woman in her late twenties with a natural, approachable appearance suitable for a realistic contemporary travel story.",
+    "face": "natural oval face, balanced facial features, warm approachable expression, realistic appearance",
+    "hair": "dark straight hair, medium length, natural styling",
+    "body": "average height and slim-to-average build with natural realistic proportions",
+    "distinctive_features": [
+      "natural understated appearance",
+      "warm and attentive facial expression"
+    ],
+    "continuity_lock": true
+  },
+
+  "wardrobe": {
+    "default_outfit": "casual practical contemporary travel clothing appropriate for walking around New York City",
+    "accessories": [
+      "small practical travel bag"
+    ],
+    "continuity_policy": "Keep the same outfit within a continuous story period. Wardrobe may change only when the story timeline clearly justifies a new day or a deliberate clothing change."
+  },
+
+  "production": {
+    "visual_provider": "vidu",
+    "persistent_character": true,
+    "reference_asset_ids": [],
+    "prompt_rules": [
+      "Preserve Jieun's facial identity across every generated scene.",
+      "Preserve her age range, ethnicity, hair, body proportions, and overall appearance.",
+      "Do not redesign or reinterpret the protagonist between scenes.",
+      "Maintain wardrobe continuity unless the story explicitly establishes a justified change.",
+      "Use realistic human proportions and natural facial expressions.",
+      "Scene-specific actions, emotions, camera framing, lighting, and environments may change without changing character identity."
+    ]
+  }
+}

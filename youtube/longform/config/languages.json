@@ -1,0 +1,70 @@
+{
+  "version": "1.0",
+  "internal_language_codes": [
+    "en",
+    "es",
+    "fr",
+    "pt",
+    "jp",
+    "zh",
+    "kr",
+    "ru"
+  ],
+  "languages": {
+    "en": {
+      "name": "English",
+      "iso_639_1": "en",
+      "default_locale": "en-US"
+    },
+    "es": {
+      "name": "Spanish",
+      "iso_639_1": "es",
+      "default_locale": "es-ES"
+    },
+    "fr": {
+      "name": "French",
+      "iso_639_1": "fr",
+      "default_locale": "fr-FR"
+    },
+    "pt": {
+      "name": "Portuguese",
+      "iso_639_1": "pt",
+      "default_locale": "pt-BR"
+    },
+    "jp": {
+      "name": "Japanese",
+      "iso_639_1": "ja",
+      "default_locale": "ja-JP"
+    },
+    "zh": {
+      "name": "Mandarin Chinese",
+      "iso_639_1": "zh",
+      "default_locale": "cmn-CN"
+    },
+    "kr": {
+      "name": "Korean",
+      "iso_639_1": "ko",
+      "default_locale": "ko-KR"
+    },
+    "ru": {
+      "name": "Russian",
+      "iso_639_1": "ru",
+      "default_locale": "ru-RU"
+    }
+  },
+  "cefr_levels": [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "C1",
+    "C2"
+  ],
+  "rules": {
+    "use_internal_codes_for_json_references": true,
+    "target_language_must_use_internal_code": true,
+    "learner_languages_must_use_internal_codes": true,
+    "locale_is_separate_from_internal_language_code": true,
+    "cefr_values_are_uppercase": true
+  }
+}

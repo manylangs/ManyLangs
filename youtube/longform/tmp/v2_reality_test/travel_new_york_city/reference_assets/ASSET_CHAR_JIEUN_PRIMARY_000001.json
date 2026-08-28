@@ -1,0 +1,14 @@
+{
+  "asset_id": "ASSET_CHAR_JIEUN_PRIMARY_000001",
+  "asset_type": "character_reference",
+  "owner_ref": "CHAR_JIEUN_001",
+  "source": {
+    "kind": "local_file",
+    "value": "reference_assets/files/jieun_primary.png"
+  },
+  "usage": {
+    "identity_reference": true,
+    "allow_generation_reference": true
+  },
+  "provider_neutral": true
+}

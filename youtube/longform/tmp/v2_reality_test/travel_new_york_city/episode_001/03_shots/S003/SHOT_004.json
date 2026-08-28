@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S003",
+  "shot_id": "SHOT_004",
+  "sequence": 4,
+  "duration_seconds": 5.0,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun taking back her passport, nodding gratefully, and stepping away from the booth.",
+  "framing": {
+    "shot_size": "medium_wide",
+    "subject_priority": [
+      "CHAR_JIEUN_001"
+    ]
+  },
+  "camera": {
+    "angle": "three_quarter",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun takes back her passport, nods gratefully, and steps away from the booth.",
+    "start_state": [
+      "Jieun is holding her passport",
+      "She is standing at the immigration booth"
+    ],
+    "end_state": [
+      "Jieun is stepping away from the immigration booth, holding her passport",
+      "She looks relieved and slightly more at ease",
+      "She begins walking toward the baggage claim area"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "relieved",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "state": "held by Jieun",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn by Jieun",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn by Jieun",
+      "visible": true
+    }
+  ],
+  "continuity": {
+    "carry_in": [
+      "Jieun is holding her passport",
+      "She looks relieved",
+      "She is about to step away from the booth"
+    ],
+    "carry_out": [
+      "Jieun has completed immigration successfully",
+      "She is now heading toward baggage claim",
+      "She feels relieved that the immigration process went smoothly"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

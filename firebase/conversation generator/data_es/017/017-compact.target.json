@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Usar el transporte público",
+  "sets": {
+    "001": [
+      "Perdona, ¿sabes si este autobús va al centro?",
+      "Sí, este va directo al centro. ¿Es tu primera vez en la ciudad?",
+      "Así es, estoy un poco perdida. ¿Cuántas paradas faltan?",
+      "No te preocupes, son cinco paradas. Te aviso cuando lleguemos.",
+      "Muchas gracias, eres muy amable.",
+      "De nada, yo también estuve perdido cuando llegué aquí."
+    ],
+    "002": [
+      "Hola, un billete sencillo para la estación, por favor.",
+      "Son dos euros con cincuenta. ¿Quieres pagar en efectivo o con tarjeta?",
+      "Con tarjeta, por favor. ¿A qué hora sale el próximo tren?",
+      "El próximo sale a las diez y media. Tienes tiempo de sobra.",
+      "Perfecto, así puedo tomar un café antes.",
+      "Buena idea, hay una cafetería justo al lado del andén."
+    ],
+    "003": [
+      "¿Me prestas tu tarjeta de transporte? Se me ha olvidado la mía.",
+      "Claro, pero recuerda que solo tiene viajes para hoy.",
+      "Genial, con uno me basta. ¿Dónde la valido?",
+      "En la máquina amarilla que está junto a la puerta de entrada.",
+      "Vale, ya está. Te la devuelvo al bajar.",
+      "No hay prisa, quédate con ella por si acaso."
+    ],
+    "004": [
+      "Este metro está muy lleno hoy, ¿verdad?",
+      "Sí, es la hora punta. ¿Hasta dónde vas?",
+      "Voy a la plaza mayor. ¿Tengo que hacer transbordo?",
+      "No, quédate en esta línea y baja en la tercera parada.",
+      "Menos mal, no me apetece cambiar de tren con tanta gente.",
+      "Te entiendo, yo también prefiero evitar el transbordo a esta hora."
+    ],
+    "005": [
+      "Disculpe, ¿dónde puedo comprar un abono mensual?",
+      "En la taquilla de la estación central o en las máquinas de autoservicio.",
+      "¿Y qué necesito para sacarlo?",
+      "Solo una foto y el documento de identidad. Se tarda unos minutos.",
+      "Perfecto, iré mañana por la mañana.",
+      "Le recomiendo ir temprano, porque suele haber cola."
+    ],
+    "006": [
+      "¿Este autobús para en el hospital?",
+      "No, este no pasa por allí. Tienes que coger el número diecisiete.",
+      "¿Y dónde puedo cogerlo?",
+      "En la parada de la avenida, a dos calles de aquí.",
+      "Vale, iré andando hasta allí. ¿Tarda mucho en pasar?",
+      "No, suele pasar cada diez minutos."
+    ],
+    "007": [
+      "Me he equivocado de dirección y ahora estoy en las afueras.",
+      "Vaya, ¿cómo ha pasado eso?",
+      "Me subí al autobús sin mirar el número. Qué despiste.",
+      "No te preocupes, baja en la próxima parada y cruza al otro lado.",
+      "¿Y desde allí puedo volver al centro?",
+      "Sí, el autobús de vuelta para justo enfrente."
+    ],
+    "008": [
+      "¿Vamos en taxi o en metro al aeropuerto?",
+      "El metro es más barato y tarda lo mismo a esta hora.",
+      "Tienes razón, pero voy con dos maletas grandes.",
+      "Ah, entonces mejor el taxi. No querrás arrastrar las maletas por las escaleras.",
+      "Sí, es verdad. ¿Llamo a un taxi ahora?",
+      "Vale, yo mientras voy bajando las maletas."
+    ],
+    "009": [
+      "Perdona, ¿esta parada es la del autobús nocturno?",
+      "Sí, pero el nocturno solo pasa los viernes y sábados.",
+      "¿En serio? Hoy es jueves, qué mala suerte.",
+      "Lo siento, tendrás que buscar otra opción para volver.",
+      "¿Sabes si hay algún taxi por aquí cerca?",
+      "Hay una parada de taxis a la vuelta de la esquina."
+    ],
+    "010": [
+      "Buenos días, ¿me pone un billete de ida y vuelta a la playa?",
+      "Claro, son cuatro euros con veinte. El tren sale cada media hora.",
+      "¿Y el último tren de vuelta a qué hora es?",
+      "El último sale a las once de la noche.",
+      "Perfecto, así podré ver la puesta de sol.",
+      "Sin duda, merece la pena quedarse hasta esa hora."
+    ]
+  },
+  "level": "a2",
+  "chapter_id": "CONV_ES_USING_TRANSPORT",
+  "id": "017",
+  "target_lang": "es"
+}

@@ -1,0 +1,236 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/series_bible.schema.json",
+  "title": "ManyLangs Longform Series Bible",
+  "description": "Stable series-level facts and invariants. Episode-specific language, CEFR, events, dialogue, and production data do not belong here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "series_id",
+    "category_id",
+    "series_name",
+    "premise",
+    "genre",
+    "tone",
+    "timeline",
+    "character_policy",
+    "story_rules",
+    "episode_policy",
+    "learning_philosophy",
+    "character_refs",
+    "location_refs",
+    "forbidden_contradictions"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "common.schema.json#/$defs/document_metadata"
+    },
+    "series_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+    },
+    "category_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+    },
+    "series_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "premise": {
+      "type": "string",
+      "minLength": 1
+    },
+    "genre": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "tone": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "timeline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "model",
+        "episode_order_is_chronological"
+      ],
+      "properties": {
+        "model": {
+          "type": "string",
+          "enum": [
+            "continuous",
+            "episodic",
+            "hybrid"
+          ]
+        },
+        "episode_order_is_chronological": {
+          "type": "boolean"
+        }
+      }
+    },
+    "character_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "protagonist_is_persistent",
+        "protagonist_keeps_identity",
+        "protagonist_keeps_story_perspective",
+        "dialogue_supporting_characters_default_to_new_local_person",
+        "monologue_has_no_dialogue_partner"
+      ],
+      "properties": {
+        "protagonist_is_persistent": {
+          "type": "boolean"
+        },
+        "protagonist_keeps_identity": {
+          "type": "boolean"
+        },
+        "protagonist_keeps_story_perspective": {
+          "type": "boolean"
+        },
+        "dialogue_supporting_characters_default_to_new_local_person": {
+          "type": "boolean"
+        },
+        "monologue_has_no_dialogue_partner": {
+          "type": "boolean"
+        }
+      }
+    },
+    "story_rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "preserve_continuity",
+        "avoid_repetitive_events",
+        "avoid_forced_dialogue",
+        "problems_may_span_multiple_scenes",
+        "unresolved_state_carries_forward"
+      ],
+      "properties": {
+        "preserve_continuity": {
+          "type": "boolean"
+        },
+        "avoid_repetitive_events": {
+          "type": "boolean"
+        },
+        "avoid_forced_dialogue": {
+          "type": "boolean"
+        },
+        "problems_may_span_multiple_scenes": {
+          "type": "boolean"
+        },
+        "unresolved_state_carries_forward": {
+          "type": "boolean"
+        }
+      }
+    },
+    "episode_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "default_scene_count",
+        "main_situation_minimum_scenes",
+        "intro_travel_maximum_scenes",
+        "outro_travel_maximum_scenes",
+        "surprise_scene_minimum",
+        "surprise_scene_maximum",
+        "recommended_monologue_minimum",
+        "recommended_monologue_maximum"
+      ],
+      "properties": {
+        "default_scene_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "main_situation_minimum_scenes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "intro_travel_maximum_scenes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "outro_travel_maximum_scenes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "surprise_scene_minimum": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "surprise_scene_maximum": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "recommended_monologue_minimum": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "recommended_monologue_maximum": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "learning_philosophy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "real_world_context_first",
+        "natural_spoken_language",
+        "avoid_textbook_like_dialogue",
+        "expressions_should_be_contextual"
+      ],
+      "properties": {
+        "real_world_context_first": {
+          "type": "boolean"
+        },
+        "natural_spoken_language": {
+          "type": "boolean"
+        },
+        "avoid_textbook_like_dialogue": {
+          "type": "boolean"
+        },
+        "expressions_should_be_contextual": {
+          "type": "boolean"
+        }
+      }
+    },
+    "character_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^CHAR_[A-Z0-9_]+_[0-9]{3}$"
+      }
+    },
+    "location_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^LOC_[A-Z0-9_]+_[0-9]{3}$"
+      }
+    },
+    "forbidden_contradictions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

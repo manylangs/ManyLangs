@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S009",
+  "shot_id": "SHOT_001",
+  "sequence": 1,
+  "source_refs": {
+    "production_scene": "02_visual/production_scenes/S009.json",
+    "shot": "03_shots/S009/SHOT_001.json",
+    "visual_continuity": "04_visual_continuity/S009/SHOT_001.json"
+  },
+  "generation": {
+    "provider": "vidu",
+    "duration_seconds": 8.0,
+    "aspect_ratio": "16:9",
+    "resolution": "1080p",
+    "mode": "reference_guided"
+  },
+  "actors": [
+    {
+      "actor_ref": "CHAR_JIEUN_001",
+      "identity_type": "persistent",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Medium-sized travel backpack",
+        "Small crossbody bag",
+        "Smartphone",
+        "Passport",
+        "Checked suitcase"
+      ],
+      "body_state": [
+        "Standing in front of the transit employee near the station entrance",
+        "Backpack worn on back",
+        "Crossbody bag worn across body",
+        "Suitcase handle held in hand"
+      ],
+      "emotion": "excited but slightly uncertain",
+      "reference_asset_ids": [
+        "ASSET_CHAR_JIEUN_PRIMARY_000001"
+      ]
+    },
+    {
+      "actor_ref": "B",
+      "identity_type": "scene_local",
+      "identity_lock": true,
+      "appearance": [
+        "Female transit employee in her 30s",
+        "Neat professional appearance",
+        "Friendly and helpful expression"
+      ],
+      "hair": [
+        "Hair tied back neatly in a professional style"
+      ],
+      "clothing": [
+        "Transit authority uniform with visible badge",
+        "Dark-colored uniform pants",
+        "Comfortable work shoes"
+      ],
+      "carried_items": [
+        "Small handheld radio"
+      ],
+      "body_state": [
+        "Standing near the station entrance",
+        "Facing Jieun"
+      ],
+      "emotion": "helpful and patient",
+      "reference_asset_ids": []
+    }
+  ],
+  "location": {
+    "location_ref": "LOC_AIRPORT_TRANSIT_001",
+    "identity_lock": true,
+    "current_zone": "Subway station entrance area, near the ticket machine and platform signs",
+    "persistent_features": [
+      "Transit station platforms",
+      "Train or vehicle interior",
+      "Views of urban landscape during the journey",
+      "Signage for transit lines and stops"
+    ],
+    "orientation_state": [
+      "Jieun standing in front of the transit employee",
+      "Transit employee facing Jieun",
+      "Station entrance behind the transit employee",
+      "Ticket machine visible to the side",
+      "Platform signs visible in the background"
+    ],
+    "reference_asset_ids": []
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn on back",
+      "position": "on Jieun's back",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn across body",
+      "position": "across Jieun's body",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "not visible in hands, likely stored in crossbody bag or pocket",
+      "position": "not visible, likely in crossbody bag or pocket",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "not visible in hands, likely stored in crossbody bag or pocket",
+      "position": "not visible, likely in crossbody bag or pocket",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "held by Jieun's hand",
+      "position": "in Jieun's hand, beside her",
+      "visible": true,
+      "continuity_lock": true
+    }
+  ],
+  "prompt": {
+    "subject": "A young Korean woman with shoulder-length dark brown hair tucked behind her ears, wearing a white t-shirt, light blue denim jacket, dark blue skinny jeans, and white sneakers, with a medium-sized travel backpack on her back and a small crossbody bag across her body, holding a checked suitcase by the handle, standing in front of a female transit employee in her 30s wearing a transit authority uniform with a visible badge, dark pants, and work shoes, holding a small handheld radio.",
+    "environment": "Inside a subway station entrance area with bright indoor lighting and natural daylight from platform entrances, ticket machine visible to the side, platform signs in the background, a few passengers walking toward platforms and checking departure boards.",
+    "action": "Jieun walks toward the transit employee near the station entrance, holding her suitcase handle and wearing her backpack, then stops in front of the employee, about to ask a question.",
+    "camera": "Medium-wide shot at eye level, static and locked camera.",
+    "continuity": "Jieun has just arrived at the subway station area after the AirTrain ride, carrying her suitcase and wearing her backpack; she is standing in front of the transit employee, with the station entrance behind the employee, ticket machine to the side, and platform signs in the background.",
+    "final_prompt": "A young Korean woman with shoulder-length dark brown hair tucked behind her ears, wearing a white t-shirt, light blue denim jacket, dark blue skinny jeans, and white sneakers, with a medium-sized travel backpack on her back and a small crossbody bag across her body, holding a checked suitcase by the handle, walks toward a female transit employee in her 30s wearing a transit authority uniform with a visible badge, dark pants, and work shoes, holding a small handheld radio, near the station entrance. She stops in front of the employee, about to ask a question. The scene is inside a subway station entrance area with bright indoor lighting and natural daylight from platform entrances, ticket machine visible to the side, platform signs in the background, a few passengers walking toward platforms and checking departure boards. Medium-wide shot at eye level, static and locked camera."
+  },
+  "negative_constraints": [
+    "Do not change character identity.",
+    "Do not change canonical location identity.",
+    "Do not introduce new characters.",
+    "Do not introduce new locations.",
+    "Do not alter canonical prop state.",
+    "Do not change story events.",
+    "Do not show Jieun moving past the subway station or boarding a train.",
+    "Do not show specific ticket prices or payment method details.",
+    "Do not show Jieun's suitcase being lost or missing.",
+    "Do not show Jieun's passport or smartphone being dropped or lost."
+  ],
+  "continuity": {
+    "carry_in": [
+      "Jieun is on the AirTrain heading toward the subway connection.",
+      "She is watching the city appear through the windows.",
+      "She feels a sense of excitement about arriving in Manhattan."
+    ],
+    "carry_out": [
+      "Jieun is standing in front of the transit employee near the station entrance.",
+      "She is holding her suitcase handle and wearing her backpack.",
+      "She is about to ask how to pay for the subway to Manhattan."
+    ],
+    "must_match_previous_shot": true,
+    "previous_scene_id": "S008",
+    "previous_shot_id": "SHOT_002",
+    "next_scene_id": "S009",
+    "next_shot_id": "SHOT_002"
+  }
+}

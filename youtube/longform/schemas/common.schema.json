@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/common.schema.json",
+  "title": "ManyLangs Longform Common Definitions",
+  "description": "Shared definitions for the ManyLangs Longform v2 JSON contracts.",
+  "type": "object",
+  "$defs": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$",
+      "examples": [
+        "2.0"
+      ]
+    },
+    "content_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$",
+      "examples": [
+        "1.0"
+      ]
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1,
+      "examples": [
+        1
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "examples": [
+        "2026-08-26T15:53:00+09:00"
+      ]
+    },
+    "internal_language_code": {
+      "type": "string",
+      "enum": [
+        "en",
+        "es",
+        "fr",
+        "pt",
+        "jp",
+        "zh",
+        "kr",
+        "ru"
+      ]
+    },
+    "cefr_level": {
+      "type": "string",
+      "enum": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ]
+    },
+    "generated_by": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "provider",
+        "model"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "ai",
+            "human",
+            "system"
+          ]
+        },
+        "provider": {
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "deepseek"
+          ]
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "deepseek-chat"
+          ]
+        }
+      }
+    },
+    "document_metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "content_version",
+        "revision"
+      ],
+      "properties": {
+        "schema_version": {
+          "$ref": "#/$defs/schema_version"
+        },
+        "content_version": {
+          "$ref": "#/$defs/content_version"
+        },
+        "revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "created_at": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "updated_at": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "generated_by": {
+          "$ref": "#/$defs/generated_by"
+        }
+      }
+    },
+    "language_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "target_language",
+        "learner_languages",
+        "cefr_level"
+      ],
+      "properties": {
+        "target_language": {
+          "$ref": "#/$defs/internal_language_code"
+        },
+        "target_locale": {
+          "type": "string",
+          "minLength": 2
+        },
+        "learner_languages": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/internal_language_code"
+          },
+          "uniqueItems": true
+        },
+        "cefr_level": {
+          "$ref": "#/$defs/cefr_level"
+        }
+      }
+    }
+  }
+}

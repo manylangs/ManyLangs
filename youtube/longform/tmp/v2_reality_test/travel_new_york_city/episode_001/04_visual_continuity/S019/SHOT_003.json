@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S019",
+  "shot_id": "SHOT_003",
+  "character_states": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Small crossbody bag",
+        "Hotel room key card",
+        "Smartphone"
+      ],
+      "body_state": [
+        "Walking along the sidewalk of a lively Manhattan evening street",
+        "Smiling softly",
+        "Looking relaxed and comfortable",
+        "Crossbody bag over her shoulder"
+      ],
+      "emotion": "comfortable and relaxed"
+    }
+  ],
+  "location_state": {
+    "location_ref": "LOC_MANHATTAN_EVENING_STREET_001",
+    "identity_lock": true,
+    "persistent_features": [
+      "Sidewalks and street crossings",
+      "Streetlights and building lights",
+      "Storefronts and signage",
+      "City traffic and taxis",
+      "Typical Manhattan architecture"
+    ],
+    "current_zone": "Sidewalk on a lively Manhattan evening street, continuing along the walk",
+    "orientation_state": [
+      "Jieun is walking along the sidewalk",
+      "The storefront she paused at is now behind her",
+      "The street and passing traffic are beside her",
+      "She is facing forward in the direction of her walk"
+    ]
+  },
+  "prop_states": [
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "over Jieun's shoulder",
+      "position": "over Jieun's shoulder",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_ROOM_KEY_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "inside crossbody bag",
+      "position": "inside crossbody bag",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "not in use",
+      "position": "in her crossbody bag or pocket",
+      "visible": false,
+      "continuity_lock": true
+    }
+  ],
+  "environment_state": {
+    "time_of_day": "evening",
+    "weather": null,
+    "lighting": "warm evening street lighting from streetlights and storefronts, mixed with the soft glow of building lights and passing traffic",
+    "crowd_state": "lively with pedestrians walking on the sidewalk, cars and taxis passing by, and distant city sounds"
+  },
+  "story_visual_state": {
+    "resolved_visual_facts": [
+      "Jieun has left her hotel room",
+      "Jieun is heading out for an evening walk",
+      "Jieun is on the sidewalk of a lively Manhattan evening street",
+      "Jieun has paused and turned to look at a storefront with an interesting display",
+      "Jieun has glanced at the passing cars and people, taking in the sounds of the city",
+      "Jieun has smiled softly and continued walking, looking more relaxed and comfortable",
+      "Jieun is carrying her crossbody bag over her shoulder",
+      "Jieun's backpack, passport, and checked suitcase remain in the hotel room"
+    ],
+    "unresolved_visual_facts": [],
+    "must_remain_visible": [
+      "Jieun's crossbody bag over her shoulder",
+      "Jieun walking along the evening street with a relaxed and comfortable expression"
+    ],
+    "must_not_appear": [
+      "Jieun moving past the evening street area",
+      "Jieun's backpack or checked suitcase on the walk",
+      "Jieun's passport or smartphone being dropped or lost",
+      "A new travel problem being introduced"
+    ]
+  },
+  "continuity_links": {
+    "previous_scene_id": "S019",
+    "previous_shot_id": "SHOT_002",
+    "next_scene_id": "S020",
+    "next_shot_id": "SHOT_001",
+    "carry_in": [
+      "Jieun is standing still, looking at a storefront display.",
+      "She is feeling curious and interested.",
+      "She is still carrying her crossbody bag and room key.",
+      "She remains close to the hotel area."
+    ],
+    "carry_out": [
+      "Jieun is walking along the evening street, experiencing the city atmosphere.",
+      "She is feeling more comfortable and less anxious.",
+      "She is enjoying the sights and sounds of New York.",
+      "She is still carrying her crossbody bag and room key.",
+      "She remains close to the hotel area."
+    ]
+  },
+  "locks": {
+    "character_identity": true,
+    "clothing": true,
+    "location_identity": true,
+    "prop_state": true,
+    "timeline": true,
+    "weather": true,
+    "story_state": true
+  }
+}

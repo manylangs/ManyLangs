@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "category_id": "travel",
+  "series_id": "travel_new_york_city",
+  "episode_id": "travel_new_york_city_ep001",
+  "series_direction": {
+    "name": "First Trip to New York",
+    "premise": "A first-time visitor experiences New York City through realistic, everyday travel situations, learning practical English for navigation, dining, transportation, and cultural encounters.",
+    "genre": "realistic travel language learning",
+    "tone": "warm, realistic, practical",
+    "scope": "Follows a traveler's journey through New York City, covering arrival, accommodation, transportation, dining, sightseeing, shopping, and daily interactions with locals, with each episode focusing on a distinct travel phase or experience.",
+    "learning_focus": "practical travel conversation, everyday interaction, situational listening, natural spoken expressions"
+  },
+  "reality_context": {
+    "reference_date": "2026-08",
+    "location_context": "New York City"
+  },
+  "episode_direction": {
+    "episode_number": 1,
+    "topic": "First trip to New York",
+    "story_goal": "Jieun arrives at JFK Airport and successfully navigates her first day in New York City, from landing and immigration to checking into her hotel and taking a first evening walk in Manhattan, building confidence in using English for essential travel tasks.",
+    "start_state": [
+      "Jieun is on an airplane approaching JFK Airport",
+      "She feels excited but slightly anxious about her first visit to New York",
+      "She has her passport, luggage, and hotel reservation ready",
+      "Her main goal is to get from the airport to her hotel safely"
+    ],
+    "end_state": [
+      "Jieun has arrived at her hotel in Manhattan and checked in successfully",
+      "She has completed her first evening walk, feeling more comfortable with the city",
+      "She has used English for immigration, transportation, and hotel check-in",
+      "She is ready to explore more of New York the next day"
+    ],
+    "scene_count": 20,
+    "target_language": "en",
+    "cefr_level": "A2"
+  },
+  "protagonist_design": {
+    "character_id": "CHAR_JIEUN_001",
+    "name": "Jieun",
+    "gender": "female",
+    "story_role": "First-time traveler from Korea, experiencing New York City for the first time, serving as the learner's viewpoint for practical English travel situations.",
+    "personality": [
+      "curious",
+      "polite",
+      "observant",
+      "slightly cautious"
+    ],
+    "visual_direction": "Realistic modern traveler, approachable everyday appearance, practical travel clothing, visually consistent across episodes"
+  },
+  "location_design": {
+    "setting": "New York City",
+    "location_strategy": "Separate locations only when they represent distinct physical places with different functions in the story. Use zones or states for movements within the same physical location, such as different areas within an airport or hotel.",
+    "required_locations": [
+      {
+        "location_id": "LOC_JFK_AIRPORT",
+        "purpose": "Arrival point for Jieun, including immigration, baggage claim, and ground transportation areas"
+      },
+      {
+        "location_id": "LOC_AIRPORT_TRANSIT",
+        "purpose": "Route and vehicle for traveling from JFK Airport to Manhattan, such as AirTrain and subway or taxi"
+      },
+      {
+        "location_id": "LOC_MANHATTAN_HOTEL",
+        "purpose": "Jieun's accommodation for the trip, where she checks in and settles into her room"
+      },
+      {
+        "location_id": "LOC_MANHATTAN_EVENING_STREET",
+        "purpose": "Area around the hotel for Jieun's first evening walk, experiencing the city atmosphere and nearby landmarks"
+      }
+    ]
+  },
+  "production_policy": {
+    "preserve_series_identity": true,
+    "preserve_protagonist_identity": true,
+    "preserve_location_identity": true,
+    "allow_downstream_story_redefinition": false
+  }
+}

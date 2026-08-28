@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S010",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "source_dialogue": {
+    "source_scene_id": "S010",
+    "source_line_ids": [
+      "L001",
+      "L002",
+      "L003"
+    ]
+  },
+  "key_expressions": [
+    {
+      "key_expression_id": "KE001",
+      "source_line_ids": [
+        "L001"
+      ],
+      "expression": "I'll just hold onto this pole.",
+      "meaning": "이 기둥을 그냥 잡고 있을게. 지하철이나 버스에서 균형을 잡기 위해 손잡이를 잡겠다는 뜻이다.",
+      "usage": "대중교통을 탔을 때 서서 갈 경우 손잡이를 잡겠다고 말할 때 쓴다. 'just'를 붙여서 가볍고 간단한 행동임을 나타낸다. 일상적이고 캐주얼한 표현이다.",
+      "context": "지은이가 뉴욕 지하철에 탑승한 후, 서 있는 상태에서 균형을 잡기 위해 손잡이를 잡겠다고 스스로에게 말하는 상황이다.",
+      "communicative_function": "expressing intention",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "I'll just grab this pole.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE002",
+      "source_line_ids": [
+        "L002"
+      ],
+      "expression": "Everyone looks so busy.",
+      "meaning": "모두가 정말 바빠 보인다. 주변 사람들이 각자 할 일에 집중하느라 분주해 보이는 모습을 관찰하며 하는 말이다.",
+      "usage": "사람들이 많은 장소에서 주변 사람들의 분주한 모습을 보고 느낌을 표현할 때 쓴다. 'look'은 '~해 보이다'라는 뜻으로 시각적인 인상을 나타낸다. 일상적인 대화에서 자주 쓰인다.",
+      "context": "지은이가 지하철 안에서 다른 승객들을 둘러보며, 모두가 각자 바쁘게 무언가를 하고 있는 모습을 관찰하고 느낀 점을 혼잣말로 표현하는 상황이다.",
+      "communicative_function": "describing the environment",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "Everyone seems so busy.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE003",
+      "source_line_ids": [
+        "L003"
+      ],
+      "expression": "The city is passing by outside the window.",
+      "meaning": "도시가 창밖으로 지나가고 있다. 움직이는 지하철 안에서 창밖으로 보이는 도시 풍경이 계속 바뀌는 모습을 묘사하는 표현이다.",
+      "usage": "기차, 자동차, 지하철 등 움직이는 탈것 안에서 창밖 풍경이 지나가는 모습을 묘사할 때 쓴다. 'pass by'는 '지나가다'라는 뜻으로, 이동 중에 풍경이 바뀌는 상황을 자연스럽게 표현한다.",
+      "context": "지은이가 맨해튼으로 향하는 지하철 안에서 창밖으로 보이는 도시 풍경이 빠르게 지나가는 것을 보며, 자신이 정말 뉴욕에 왔다는 사실을 실감하는 상황이다.",
+      "communicative_function": "describing the environment",
+      "difficulty": "A2",
+      "priority": "useful",
+      "variation": "The city is going by outside the window.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    }
+  ],
+  "validation": {
+    "expression_count": 3,
+    "all_expressions_exist_in_dialogue": true,
+    "source_lines_valid": true,
+    "cefr_appropriate": true
+  }
+}

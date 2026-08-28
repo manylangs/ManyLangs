@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a2",
+    "id": "015"
+  },
+  "title": {
+    "target": "Описание дома",
+    "en": "Describing a Home",
+    "es": "Descripción de la casa",
+    "fr": "Description de la maison",
+    "pt": "Descrição da casa",
+    "kr": "집 묘사",
+    "jp": "家の説明",
+    "zh": "描述房子",
+    "ru": "Описание дома"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, я недавно переехала в новую квартиру. Хочешь посмотреть фотографии?",
+            "en": "Ivan, I recently moved into a new apartment. Do you want to see the photos?",
+            "es": "Iván, me he mudado recientemente a un piso nuevo. ¿Quieres ver las fotos?",
+            "fr": "Ivan, j'ai récemment emménagé dans un nouvel appartement. Tu veux voir les photos ?",
+            "pt": "Ivan, eu me mudei recentemente para um apartamento novo. Quer ver as fotos?",
+            "kr": "이반, 저 최근에 새 아파트로 이사했어요. 사진 볼래요?",
+            "jp": "イワン、最近新しいアパートに引っ越したの。写真を見たい？",
+            "zh": "伊万，我最近搬进了新公寓。你想看看照片吗？",
+            "ru": "Иван, я недавно переехала в новую квартиру. Хочешь посмотреть фотографии?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, покажи! Я как раз думал о том, чтобы тоже сменить жильё.",
+            "en": "Of course, show me! I was just thinking about changing my place too.",
+            "es": "¡Claro, enséñamelas! Justo estaba pensando en cambiar de vivienda yo también.",
+            "fr": "Bien sûr, montre-moi ! Je pensais justement à changer de logement moi aussi.",
+            "pt": "Claro, mostra! Eu estava justamente pensando em também mudar de moradia.",
+            "kr": "물론이죠, 보여주세요! 저도 마침 집을 바꿀까 생각하고 있었어요.",
+            "jp": "もちろん、見せて！ちょうど僕も住まいを変えようか考えていたところなんだ。",
+            "zh": "当然，给我看看！我正好也在考虑换房子。",
+            "ru": "Конечно, покажи! Я как раз думал о том, чтобы тоже сменить жильё."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Вот гостиная. Она довольно просторная, и из окна видно парк.",
+            "en": "Here's the living room. It's pretty spacious, and you can see the park from the window.",
+            "es": "Este es el salón. Es bastante espacioso, y desde la ventana se ve el parque.",
+            "fr": "Voici le salon. Il est assez spacieux, et de la fenêtre on voit le parc.",
+            "pt": "Aqui está a sala de estar. Ela é bem espaçosa, e da janela dá para ver o parque.",
+            "kr": "여기가 거실이에요. 꽤 넓고, 창문 밖으로 공원이 보여요.",
+            "jp": "ここがリビングルームよ。かなり広くて、窓から公園が見えるの。",
+            "zh": "这是客厅。它挺宽敞的，而且从窗户能看到公园。",
+            "ru": "Вот гостиная. Она довольно просторная, и из окна видно парк."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Очень уютно выглядит. А кухня большая?",
+            "en": "It looks very cozy. And is the kitchen big?",
+            "es": "Se ve muy acogedor. ¿Y la cocina es grande?",
+            "fr": "Ça a l'air très cosy. Et la cuisine, elle est grande ?",
+            "pt": "Parece muito aconchegante. E a cozinha é grande?",
+            "kr": "아주 아늑해 보이네요. 부엌은 커요?",
+            "jp": "とても居心地よさそうだね。キッチンは広いの？",
+            "zh": "看起来非常温馨。那厨房大吗？",
+            "ru": "Очень уютно выглядит. А кухня большая?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Кухня небольшая, но современная. Там есть вся необходимая техника.",
+            "en": "The kitchen is small, but modern. It has all the necessary appliances.",
+            "es": "La cocina es pequeña, pero moderna. Tiene todos los electrodomésticos necesarios.",
+            "fr": "La cuisine est petite, mais moderne. Il y a tous les appareils nécessaires.",
+            "pt": "A cozinha é pequena, mas moderna. Tem todos os eletrodomésticos necessários.",
+            "kr": "부엌은 작지만 현대식이에요. 필요한 가전제품은 다 있어요.",
+            "jp": "キッチンは小さいけど、モダンよ。必要な家電は全部そろっているの。",
+            "zh": "厨房不大，但是很现代化。那里有所有必需的电器。",
+            "ru": "Кухня небольшая, но современная. Там есть вся необходимая техника."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Звучит отлично. А сколько комнат в твоей квартире?",
+            "en": "Sounds great. And how many rooms are there in your apartment?",
+            "es": "Suena genial. ¿Y cuántas habitaciones tiene tu piso?",
+            "fr": "Ça a l'air super. Et combien de pièces il y a dans ton appartement ?",
+            "pt": "Parece ótimo. E quantos quartos tem o seu apartamento?",
+            "kr": "좋네요. 그럼 아파트에 방이 몇 개나 있어요?",
+            "jp": "いいね。ところで、君のアパートは部屋がいくつあるの？",
+            "zh": "听起来不错。那你的公寓有几个房间？",
+            "ru": "Звучит отлично. А сколько комнат в твоей квартире?"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, а где ты сейчас живёшь? В центре или за городом?",
+            "en": "Dmitry, where do you live now? In the center or outside the city?",
+            "es": "Dmitri, ¿y tú dónde vives ahora? ¿En el centro o en las afueras?",
+            "fr": "Dmitri, et toi, tu habites où en ce moment ? Au centre ou à la campagne ?",
+            "pt": "Dmitri, e onde você mora agora? No centro ou fora da cidade?",
+            "kr": "드미트리, 지금 어디 살아요? 시내 중심가인가요, 교외인가요?",
+            "jp": "ドミトリー、今どこに住んでいるの？中心部それとも郊外？",
+            "zh": "德米特里，你现在住在哪里？在市中心还是郊区？",
+            "ru": "Дмитрий, а где ты сейчас живёшь? В центре или за городом?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я снимаю квартиру недалеко от университета, в тихом районе.",
+            "en": "I'm renting an apartment not far from the university, in a quiet neighborhood.",
+            "es": "Estoy alquilando un piso cerca de la universidad, en una zona tranquila.",
+            "fr": "Je loue un appartement pas loin de l'université, dans un quartier calme.",
+            "pt": "Eu alugo um apartamento perto da universidade, num bairro tranquilo.",
+            "kr": "대학교에서 멀지 않은 조용한 동네에 아파트를 빌려 살아요.",
+            "jp": "大学の近くの静かな地区でアパートを借りているんだ。",
+            "zh": "我在大学附近租了一套公寓，在一个安静的小区。",
+            "ru": "Я снимаю квартиру недалеко от университета, в тихом районе."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это удобно. А дом старый или новый?",
+            "en": "That's convenient. And is the building old or new?",
+            "es": "Qué práctico. ¿Y el edificio es antiguo o nuevo?",
+            "fr": "C'est pratique. Et l'immeuble, il est ancien ou récent ?",
+            "pt": "Isso é conveniente. E o prédio é antigo ou novo?",
+            "kr": "편리하겠네요. 그럼 건물은 오래됐어요, 아니면 새것이에요?",
+            "jp": "それは便利ね。家は古いの？それとも新しいの？",
+            "zh": "那很方便。那房子是旧的还是新的？",
+            "ru": "Это удобно. А дом старый или новый?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Дом новый, ему всего пять лет. В нём есть лифт и подземная парковка.",
+            "en": "The building is new, it's only five years old. It has an elevator and an underground parking lot.",
+            "es": "El edificio es nuevo, solo tiene cinco años. Tiene ascensor y parking subterráneo.",
+            "fr": "L'immeuble est récent, il n'a que cinq ans. Il y a un ascenseur et un parking souterrain.",
+            "pt": "O prédio é novo, tem só cinco anos. Tem elevador e estacionamento subterrâneo.",
+            "kr": "건물은 새것이에요. 지은 지 겨우 오 년 됐어요. 엘리베이터랑 지하 주차장이 있어요.",
+            "jp": "新しいよ、築五年だ。エレベーターと地下駐車場があるんだ。",
+            "zh": "房子是新的，才建了五年。楼里有电梯和地下停车场。",
+            "ru": "Дом новый, ему всего пять лет. В нём есть лифт и подземная парковка."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здорово! А соседи у тебя шумные?",
+            "en": "Great! And are your neighbors noisy?",
+            "es": "¡Genial! ¿Y tus vecinos son ruidosos?",
+            "fr": "Super ! Et tes voisins, ils sont bruyants ?",
+            "pt": "Que ótimo! E os seus vizinhos são barulhentos?",
+            "kr": "좋네요! 그럼 이웃들이 시끄러워요?",
+            "jp": "すごい！隣人はうるさい？",
+            "zh": "真棒！那你的邻居吵吗？",
+            "ru": "Здорово! А соседи у тебя шумные?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, соседи спокойные. Мы иногда даже здороваемся в лифте.",
+            "en": "No, the neighbors are quiet. We even say hi to each other in the elevator sometimes.",
+            "es": "No, los vecinos son tranquilos. A veces incluso nos saludamos en el ascensor.",
+            "fr": "Non, les voisins sont tranquilles. On se dit même parfois bonjour dans l'ascenseur.",
+            "pt": "Não, os vizinhos são calmos. Às vezes até nos cumprimentamos no elevador.",
+            "kr": "아니요, 이웃들이 조용해요. 가끔 엘리베이터에서 인사도 나눠요.",
+            "jp": "いや、隣人は静かだよ。エレベーターで会ったら挨拶するくらいかな。",
+            "zh": "不吵，邻居们都很安静。我们有时候在电梯里还会打个招呼。",
+            "ru": "Нет, соседи спокойные. Мы иногда даже здороваемся в лифте."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне очень нравится моя комната. Я сделала в ней ремонт в светлых тонах.",
+            "en": "I really like my room. I redecorated it in light colors.",
+            "es": "Me gusta mucho mi habitación. La he reformado en tonos claros.",
+            "fr": "J'aime beaucoup ma chambre. J'ai fait des travaux dans des tons clairs.",
+            "pt": "Eu gosto muito do meu quarto. Eu fiz uma reforma nele em tons claros.",
+            "kr": "저는 제 방이 정말 좋아요. 밝은 톤으로 방을 리모델링했거든요.",
+            "jp": "自分の部屋がとても気に入っているの。明るい色でリフォームしたのよ。",
+            "zh": "我非常喜欢我的房间。我把它装修成了浅色调。",
+            "ru": "Мне очень нравится моя комната. Я сделала в ней ремонт в светлых тонах."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это, наверное, было непросто. А что ты изменила в первую очередь?",
+            "en": "That must have been difficult. And what did you change first?",
+            "es": "Eso debió de ser complicado. ¿Y qué cambiaste primero?",
+            "fr": "Ça a dû être compliqué. Et qu'est-ce que tu as changé en premier ?",
+            "pt": "Isso deve ter sido difícil. E o que você mudou primeiro?",
+            "kr": "아마 쉽지 않았을 거예요. 그럼 뭐부터 바꿨어요?",
+            "jp": "それは大変だっただろうね。まず何を変えたの？",
+            "zh": "那应该不容易吧。那你最先改了哪里？",
+            "ru": "Это, наверное, было непросто. А что ты изменила в первую очередь?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я покрасила стены в тёплый бежевый цвет и заменила старый шкаф.",
+            "en": "I painted the walls a warm beige color and replaced the old wardrobe.",
+            "es": "Pinté las paredes de un color beige cálido y cambié el armario viejo.",
+            "fr": "J'ai peint les murs dans un beau ton beige chaud et j'ai remplacé la vieille armoire.",
+            "pt": "Eu pintei as paredes de um tom bege quente e troquei o armário velho.",
+            "kr": "벽을 따뜻한 베이지색으로 칠하고 오래된 옷장을 새것으로 교체했어요.",
+            "jp": "壁を温かみのあるベージュ色に塗って、古いクローゼットを替えたの。",
+            "zh": "我把墙壁刷成了温暖的米色，还换掉了旧衣柜。",
+            "ru": "Я покрасила стены в тёплый бежевый цвет и заменила старый шкаф."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично. А мебель ты покупала новую или оставила старую?",
+            "en": "Great. And did you buy new furniture or keep the old ones?",
+            "es": "Muy bien. ¿Y los muebles los compraste nuevos o dejaste los viejos?",
+            "fr": "Très bien. Et les meubles, tu en as acheté des nouveaux ou tu as gardé les anciens ?",
+            "pt": "Ótimo. E você comprou móveis novos ou ficou com os antigos?",
+            "kr": "좋네요. 그럼 가구는 새로 샀어요, 아니면 옛날 거 그대로 두었어요?",
+            "jp": "いいね。家具は新しいのを買ったの？それとも古いのを残したの？",
+            "zh": "很好。那家具你是买了新的还是保留了旧的？",
+            "ru": "Отлично. А мебель ты покупала новую или оставила старую?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Купила новый диван и письменный стол. Теперь комната выглядит совсем иначе.",
+            "en": "I bought a new sofa and a desk. Now the room looks completely different.",
+            "es": "Compré un sofá nuevo y un escritorio. Ahora la habitación se ve completamente diferente.",
+            "fr": "J'ai acheté un nouveau canapé et un bureau. Maintenant la chambre a l'air complètement différente.",
+            "pt": "Comprei um sofá novo e uma escrivaninha. Agora o quarto está completamente diferente.",
+            "kr": "새 소파랑 책상을 샀어요. 이제 방이 완전히 달라 보여요.",
+            "jp": "新しいソファと机を買ったの。今は部屋の雰囲気がすっかり変わったわ。",
+            "zh": "我买了新沙发和书桌。现在房间看起来完全不一样了。",
+            "ru": "Купила новый диван и письменный стол. Теперь комната выглядит совсем иначе."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Представляю, как там теперь красиво. Надо будет зайти в гости!",
+            "en": "I can imagine how beautiful it is now. I'll have to come visit!",
+            "es": "Me imagino lo bonita que estará ahora. ¡Tendré que pasarme a visitarte!",
+            "fr": "J'imagine comme c'est beau maintenant. Il faudra que je vienne te rendre visite !",
+            "pt": "Imagino como deve estar bonito agora. Vou ter que passar aí para visitar!",
+            "kr": "이제 얼마나 예쁠지 상상이 가요. 놀러 가 봐야겠네요!",
+            "jp": "きれいになったんだろうね。今度遊びに行かなくちゃ！",
+            "zh": "可以想象现在那里有多漂亮。改天得去你家做客！",
+            "ru": "Представляю, как там теперь красиво. Надо будет зайти в гости!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, расскажи про свой дом. Вы живёте в частном доме или в квартире?",
+            "en": "Sergey, tell me about your house. Do you live in a private house or an apartment?",
+            "es": "Serguéi, cuéntame sobre tu casa. ¿Vivís en una casa particular o en un piso?",
+            "fr": "Sergueï, parle-moi de ta maison. Vous habitez dans une maison individuelle ou dans un appartement ?",
+            "pt": "Sergei, me conta sobre a sua casa. Vocês moram numa casa ou num apartamento?",
+            "kr": "세르게이, 네 집에 대해 말해 줘. 단독주택에 살아, 아파트에 살아?",
+            "jp": "セルゲイ、家のことを教えてよ。一軒家に住んでいるの？それともアパート？",
+            "zh": "谢尔盖，跟我说说你的房子吧。你们住在独栋房子里还是公寓里？",
+            "ru": "Сергей, расскажи про свой дом. Вы живёте в частном доме или в квартире?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мы живём в небольшом частном доме за городом. Там есть сад и гараж.",
+            "en": "We live in a small private house outside the city. There's a garden and a garage.",
+            "es": "Vivimos en una casa particular pequeña en las afueras. Tiene jardín y garaje.",
+            "fr": "Nous habitons dans une petite maison individuelle à la campagne. Il y a un jardin et un garage.",
+            "pt": "A gente mora numa casa pequena fora da cidade. Tem jardim e garagem.",
+            "kr": "우리는 교외에 있는 작은 단독주택에 살아. 거기에 정원이랑 차고가 있어.",
+            "jp": "郊外の小さな一軒家に住んでいるんだ。庭とガレージがあるんだよ。",
+            "zh": "我们住在郊区的一栋小独栋房子里。那里有花园和车库。",
+            "ru": "Мы живём в небольшом частном доме за городом. Там есть сад и гараж."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Как здорово! А зимой, наверное, холодно топить такой дом?",
+            "en": "How nice! And in winter, it must be expensive to heat a house like that?",
+            "es": "¡Qué bien! ¿Y en invierno debe ser caro calentar una casa así?",
+            "fr": "Comme c'est bien ! Et l'hiver, ça doit coûter cher de chauffer une telle maison ?",
+            "pt": "Que legal! E no inverno, deve ser difícil aquecer uma casa assim, não?",
+            "kr": "정말 좋다! 그런데 겨울에는 그런 집 난방하기에 추울 것 같지 않아?",
+            "jp": "いいね！でも冬はそんな家を暖めるのが大変なんじゃない？",
+            "zh": "真好啊！那冬天给这样的房子供暖应该很费劲吧？",
+            "ru": "Как здорово! А зимой, наверное, холодно топить такой дом?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "У нас хорошее отопление, так что зимой дома тепло и комфортно.",
+            "en": "We have good heating, so it's warm and comfortable at home in winter.",
+            "es": "Tenemos buena calefacción, así que en invierno la casa está cálida y confortable.",
+            "fr": "On a un bon chauffage, donc en hiver il fait chaud et confortable à la maison.",
+            "pt": "A gente tem um bom aquecimento, então no inverno a casa fica quente e confortável.",
+            "kr": "우리 집은 난방이 잘 돼서 겨울에도 집 안이 따뜻하고 편안해.",
+            "jp": "暖房がしっかりしているから、冬でも家の中は暖かくて快適だよ。",
+            "zh": "我们供暖很好，所以冬天家里又暖和又舒服。",
+            "ru": "У нас хорошее отопление, так что зимой дома тепло и комфортно."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А летом, наверное, приятно сидеть в саду?",
+            "en": "And in summer, it must be nice to sit in the garden?",
+            "es": "¿Y en verano debe ser agradable sentarse en el jardín?",
+            "fr": "Et l'été, ça doit être agréable de s'asseoir dans le jardin ?",
+            "pt": "E no verão, deve ser gostoso ficar no jardim, não?",
+            "kr": "그럼 여름에는 정원에 앉아 있으면 좋겠다?",
+            "jp": "じゃあ夏は庭で過ごすのが気持ちいいんでしょうね？",
+            "zh": "那夏天坐在花园里应该很惬意吧？",
+            "ru": "А летом, наверное, приятно сидеть в саду?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, летом мы часто обедаем на террасе. Это очень приятно.",
+            "en": "Yes, in summer we often have lunch on the terrace. It's very pleasant.",
+            "es": "Sí, en verano a menudo comemos en la terraza. Es muy agradable.",
+            "fr": "Oui, l'été on déjeune souvent sur la terrasse. C'est très agréable.",
+            "pt": "Sim, no verão a gente costuma almoçar no terraço. É muito agradável.",
+            "kr": "응, 여름에는 테라스에서 점심을 자주 먹어. 정말 좋아.",
+            "jp": "うん、夏はよくテラスで食事をするんだ。とても気持ちいいよ。",
+            "zh": "是的，夏天我们经常在露台上吃饭。那非常惬意。",
+            "ru": "Да, летом мы часто обедаем на террасе. Это очень приятно."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я ищу новую квартиру, но пока ничего не подходит.",
+            "en": "I'm looking for a new apartment, but nothing fits so far.",
+            "es": "Estoy buscando un piso nuevo, pero de momento nada me convence.",
+            "fr": "Je cherche un nouvel appartement, mais rien ne me convient pour l'instant.",
+            "pt": "Estou procurando um apartamento novo, mas por enquanto nada serve.",
+            "kr": "새 아파트를 찾고 있는데 아직 마음에 드는 게 없어요.",
+            "jp": "新しいアパートを探しているんだけど、まだいいのが見つからないの。",
+            "zh": "我在找新公寓，但到目前为止没有合适的。",
+            "ru": "Я ищу новую квартиру, но пока ничего не подходит."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "А какие у тебя требования к жилью?",
+            "en": "And what are your requirements for a place?",
+            "es": "¿Y qué requisitos tienes para la vivienda?",
+            "fr": "Et quelles sont tes exigences pour le logement ?",
+            "pt": "E quais são os seus requisitos para a moradia?",
+            "kr": "그럼 집에 어떤 조건이 필요한데요?",
+            "jp": "住まいにどんな条件があるの？",
+            "zh": "那你对住房有什么要求？",
+            "ru": "А какие у тебя требования к жилью?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне нужна двухкомнатная квартира с балконом и хорошей звукоизоляцией.",
+            "en": "I need a two-bedroom apartment with a balcony and good soundproofing.",
+            "es": "Necesito un piso de dos habitaciones con balcón y buen aislamiento acústico.",
+            "fr": "Il me faut un deux-pièces avec balcon et une bonne isolation phonique.",
+            "pt": "Eu preciso de um apartamento de dois quartos com varanda e bom isolamento acústico.",
+            "kr": "발코니랑 방음이 잘 되는 방 두 개짜리 아파트가 필요해요.",
+            "jp": "バルコニー付きで、防音のしっかりした二部屋のアパートが必要なの。",
+            "zh": "我需要一套两居室的公寓，要有阳台和良好的隔音。",
+            "ru": "Мне нужна двухкомнатная квартира с балконом и хорошей звукоизоляцией."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понимаю. А район имеет значение?",
+            "en": "I see. And does the neighborhood matter?",
+            "es": "Entiendo. ¿Y la zona es importante?",
+            "fr": "Je comprends. Et le quartier, il a de l'importance ?",
+            "pt": "Entendo. E o bairro faz diferença?",
+            "kr": "알겠어요. 그럼 지역도 중요해요?",
+            "jp": "わかるよ。場所は重要？",
+            "zh": "我明白。那地段重要吗？",
+            "ru": "Понимаю. А район имеет значение?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, хотелось бы, чтобы рядом были магазины и парк.",
+            "en": "Yes, I'd like there to be shops and a park nearby.",
+            "es": "Sí, me gustaría que hubiera tiendas y un parque cerca.",
+            "fr": "Oui, j'aimerais qu'il y ait des magasins et un parc à proximité.",
+            "pt": "Sim, eu gostaria que tivesse mercados e um parque por perto.",
+            "kr": "네, 가까이에 상점들이랑 공원이 있었으면 좋겠어요.",
+            "jp": "ええ、近くにスーパーと公園があるといいなと思っているの。",
+            "zh": "是的，我希望附近有商店和公园。",
+            "ru": "Да, хотелось бы, чтобы рядом были магазины и парк."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Надеюсь, ты скоро найдёшь то, что ищешь. Удачи!",
+            "en": "I hope you find what you're looking for soon. Good luck!",
+            "es": "Espero que encuentres pronto lo que buscas. ¡Buena suerte!",
+            "fr": "J'espère que tu trouveras bientôt ce que tu cherches. Bonne chance !",
+            "pt": "Espero que você encontre logo o que procura. Boa sorte!",
+            "kr": "곧 원하는 집을 찾길 바랄게요. 행운을 빌어요!",
+            "jp": "いいのが見つかるといいね。頑張って！",
+            "zh": "希望你很快能找到你想要的。祝你好运！",
+            "ru": "Надеюсь, ты скоро найдёшь то, что ищешь. Удачи!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, как тебе твоя новая студия? Ты уже освоился?",
+            "en": "Alexey, how do you like your new studio? Have you settled in yet?",
+            "es": "Alekséi, ¿qué tal tu nuevo estudio? ¿Ya te has adaptado?",
+            "fr": "Alexeï, comment tu trouves ton nouveau studio ? Tu t'es déjà installé ?",
+            "pt": "Alexei, o que você acha do seu novo studio? Já se acostumou?",
+            "kr": "알렉세이, 새 원룸은 어때? 벌써 적응했어?",
+            "jp": "アレクセイ、新しいワンルームはどう？もう慣れた？",
+            "zh": "阿列克谢，你觉得你的新单间公寓怎么样？你已经适应了吗？",
+            "ru": "Алексей, как тебе твоя новая студия? Ты уже освоился?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, привык за пару недель. Правда, она очень маленькая.",
+            "en": "Yes, I got used to it in a couple of weeks. Though, it's very small.",
+            "es": "Sí, me acostumbré en un par de semanas. Eso sí, es muy pequeño.",
+            "fr": "Oui, je m'y suis habitué en deux semaines. Par contre, il est très petit.",
+            "pt": "Sim, me acostumei em algumas semanas. É verdade que ele é bem pequeno.",
+            "kr": "응, 이 주일 만에 익숙해졌어. 그런데 정말 작아.",
+            "jp": "うん、二週間で慣れたよ。ただ、すごく狭いんだ。",
+            "zh": "是的，几个星期就习惯了。不过，它确实非常小。",
+            "ru": "Да, привык за пару недель. Правда, она очень маленькая."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Но зато у тебя теперь свой уголок в центре города.",
+            "en": "But at least you have your own little corner in the city center now.",
+            "es": "Pero al menos ahora tienes tu propio rincón en el centro de la ciudad.",
+            "fr": "Mais au moins tu as maintenant ton petit coin au centre-ville.",
+            "pt": "Mas pelo menos agora você tem o seu cantinho no centro da cidade.",
+            "kr": "그래도 이제 시내 중심에 네만의 공간이 생긴 거잖아.",
+            "jp": "でも、中心部に自分の空間があるのはいいでしょ。",
+            "zh": "但至少你现在在市中心有了自己的一角。",
+            "ru": "Но зато у тебя теперь свой уголок в центре города."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это точно. Мне нравится, что всё рядом: и работа, и кафе.",
+            "en": "That's true. I like that everything is close by: both work and cafes.",
+            "es": "Eso seguro. Me gusta que todo esté cerca: tanto el trabajo como los cafés.",
+            "fr": "C'est vrai. J'aime le fait que tout soit à proximité : le travail et les cafés.",
+            "pt": "Isso é verdade. Eu gosto que tudo fica perto: tanto o trabalho quanto os cafés.",
+            "kr": "그건 맞아. 직장이랑 카페가 다 가까워서 좋아.",
+            "jp": "それはそうだね。仕事もカフェも全部近くにあるのが気に入っているんだ。",
+            "zh": "那倒是。我喜欢这里什么都很近：上班、咖啡馆都在旁边。",
+            "ru": "Это точно. Мне нравится, что всё рядом: и работа, и кафе."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А что с мебелью? Ты всё уже расставил?",
+            "en": "And what about the furniture? Have you arranged everything?",
+            "es": "¿Y qué hay de los muebles? ¿Ya lo has colocado todo?",
+            "fr": "Et les meubles ? Tu as déjà tout installé ?",
+            "pt": "E os móveis? Você já arrumou tudo?",
+            "kr": "그럼 가구는? 다 배치했어?",
+            "jp": "家具はどう？もう全部配置したの？",
+            "zh": "那家具呢？你都摆放好了吗？",
+            "ru": "А что с мебелью? Ты всё уже расставил?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Почти. Осталось повесить полки на кухне, и всё будет готово.",
+            "en": "Almost. I just need to hang the shelves in the kitchen, and everything will be ready.",
+            "es": "Casi. Solo falta colgar las estanterías en la cocina y estará todo listo.",
+            "fr": "Presque. Il reste à accrocher les étagères dans la cuisine, et tout sera prêt.",
+            "pt": "Quase. Só falta pendurar as prateleiras na cozinha, e vai estar tudo pronto.",
+            "kr": "거의 다 했어. 부엌에 선반 걸기만 하면 끝나.",
+            "jp": "ほとんど終わったよ。キッチンに棚を付けるだけだ。",
+            "zh": "差不多了。就差在厨房挂上架子，然后就都搞定了。",
+            "ru": "Почти. Осталось повесить полки на кухне, и всё будет готово."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, а какой у тебя дом? Ты говорила, что живёшь с родителями.",
+            "en": "Maria, what kind of home do you have? You said you live with your parents.",
+            "es": "María, ¿y cómo es tu casa? Dijiste que vives con tus padres.",
+            "fr": "Maria, et ta maison, elle est comment ? Tu disais que tu habites avec tes parents.",
+            "pt": "Maria, e como é a sua casa? Você disse que mora com os seus pais.",
+            "kr": "마리야, 네 집은 어떤데? 부모님이랑 같이 산다고 했잖아.",
+            "jp": "マリア、家はどんな感じ？両親と住んでいるって言ってたよね。",
+            "zh": "玛丽亚，你家是什么样的？你说过你和父母一起住。",
+            "ru": "Мария, а какой у тебя дом? Ты говорила, что живёшь с родителями."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, мы живём в трёхкомнатной квартире на пятом этаже.",
+            "en": "Yes, we live in a three-room apartment on the fifth floor.",
+            "es": "Sí, vivimos en un piso de tres habitaciones en el quinto piso.",
+            "fr": "Oui, on habite dans un appartement de trois pièces au cinquième étage.",
+            "pt": "Sim, a gente mora num apartamento de três quartos no quinto andar.",
+            "kr": "응, 우리는 오 층짜리 건물의 방 세 개짜리 아파트에 살아.",
+            "jp": "ええ、五階にある三部屋のアパートに住んでいるの。",
+            "zh": "是的，我们住在五楼的一套三居室公寓里。",
+            "ru": "Да, мы живём в трёхкомнатной квартире на пятом этаже."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А у тебя есть своя комната?",
+            "en": "And do you have your own room?",
+            "es": "¿Y tienes tu propia habitación?",
+            "fr": "Et tu as ta propre chambre ?",
+            "pt": "E você tem o seu próprio quarto?",
+            "kr": "그럼 네 방이 따로 있어?",
+            "jp": "自分の部屋はあるの？",
+            "zh": "那你有自己的房间吗？",
+            "ru": "А у тебя есть своя комната?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, у меня отдельная комната. Я её очень люблю.",
+            "en": "Of course, I have a separate room. I love it very much.",
+            "es": "Claro, tengo una habitación para mí sola. La quiero mucho.",
+            "fr": "Bien sûr, j'ai une chambre à moi. Je l'aime beaucoup.",
+            "pt": "Claro, eu tenho um quarto só para mim. Eu amo muito ele.",
+            "kr": "당연하지, 내 방이 따로 있어. 정말 좋아해.",
+            "jp": "もちろん、自分の部屋があるわ。とても気に入っているの。",
+            "zh": "当然，我有自己独立的房间。我非常喜欢它。",
+            "ru": "Конечно, у меня отдельная комната. Я её очень люблю."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А какая она? Большая?",
+            "en": "And what's it like? Is it big?",
+            "es": "¿Y cómo es? ¿Grande?",
+            "fr": "Et elle est comment ? Grande ?",
+            "pt": "E como ele é? Grande?",
+            "kr": "그럼 방이 어떤데? 커?",
+            "jp": "どんな部屋なの？広い？",
+            "zh": "那房间怎么样？大吗？",
+            "ru": "А какая она? Большая?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не очень большая, но светлая. Там большое окно, выходящее во двор.",
+            "en": "Not very big, but bright. There's a large window facing the courtyard.",
+            "es": "No es muy grande, pero es luminosa. Tiene una ventana grande que da al patio.",
+            "fr": "Pas très grande, mais lumineuse. Il y a une grande fenêtre qui donne sur la cour.",
+            "pt": "Não é muito grande, mas é claro. Tem uma janela grande que dá para o pátio.",
+            "kr": "아주 크지는 않은데 밝아. 마당이 보이는 큰 창문이 있어.",
+            "jp": "あまり広くないけど、明るいの。中庭に面した大きな窓があるのよ。",
+            "zh": "不算很大，但是很明亮。那里有一扇朝院子的大窗户。",
+            "ru": "Не очень большая, но светлая. Там большое окно, выходящее во двор."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, я слышала, ты переезжаешь. Это правда?",
+            "en": "Olga, I heard you're moving. Is that true?",
+            "es": "Olga, he oído que te mudas. ¿Es verdad?",
+            "fr": "Olga, j'ai entendu dire que tu déménages. C'est vrai ?",
+            "pt": "Olga, eu ouvi dizer que você vai se mudar. É verdade?",
+            "kr": "올가, 이사한다고 들었어. 사실이야?",
+            "jp": "オルガ、引っ越すって聞いたけど、本当なの？",
+            "zh": "奥尔加，我听说你要搬家了。是真的吗？",
+            "ru": "Ольга, я слышала, ты переезжаешь. Это правда?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я нашла квартиру поближе к работе. Теперь не нужно тратить час на дорогу.",
+            "en": "Yes, I found an apartment closer to work. Now I don't have to spend an hour commuting.",
+            "es": "Sí, he encontrado un piso más cerca del trabajo. Ahora no tendré que perder una hora en el trayecto.",
+            "fr": "Oui, j'ai trouvé un appartement plus proche du travail. Maintenant je n'ai plus besoin de passer une heure dans les transports.",
+            "pt": "Sim, eu encontrei um apartamento mais perto do trabalho. Agora não preciso gastar uma hora no caminho.",
+            "kr": "응, 직장에서 더 가까운 아파트를 찾았어. 이제 출퇴근에 한 시간을 쓰지 않아도 돼.",
+            "jp": "ええ、職場に近いアパートを見つけたの。もう通勤に一時間かける必要はないわ。",
+            "zh": "是的，我找到了离工作更近的公寓。现在不用花一个小时在路上了。",
+            "ru": "Да, я нашла квартиру поближе к работе. Теперь не нужно тратить час на дорогу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это замечательно! А что за квартира?",
+            "en": "That's wonderful! And what's the apartment like?",
+            "es": "¡Eso es estupendo! ¿Y cómo es el piso?",
+            "fr": "C'est génial ! Et c'est comment, cet appartement ?",
+            "pt": "Que maravilha! E como é o apartamento?",
+            "kr": "정말 잘됐네! 그런데 어떤 아파트야?",
+            "jp": "それはすばらしい！どんなアパートなの？",
+            "zh": "那太好了！那是什么样的公寓？",
+            "ru": "Это замечательно! А что за квартира?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Однокомнатная, но с очень удобной планировкой. Кухня совмещена с гостиной.",
+            "en": "It's a one-bedroom, but with a very convenient layout. The kitchen is combined with the living room.",
+            "es": "De una habitación, pero con una distribución muy práctica. La cocina está integrada con el salón.",
+            "fr": "C'est un studio, mais avec une disposition très pratique. La cuisine est ouverte sur le salon.",
+            "pt": "É de um quarto, mas com uma planta muito boa. A cozinha é integrada com a sala de estar.",
+            "kr": "방 하나짜리인데 동선이 아주 편리해. 부엌이 거실이랑 연결되어 있어.",
+            "jp": "ワンルームだけど、とても使いやすい間取りなの。キッチンがリビングとつながっているのよ。",
+            "zh": "一居室，但是户型布局非常合理。厨房和客厅是连在一起的。",
+            "ru": "Однокомнатная, но с очень удобной планировкой. Кухня совмещена с гостиной."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А вид из окна хороший?",
+            "en": "And is the view from the window good?",
+            "es": "¿Y las vistas desde la ventana son buenas?",
+            "fr": "Et la vue depuis la fenêtre est belle ?",
+            "pt": "E a vista da janela é boa?",
+            "kr": "그럼 창밖으로 보이는 풍경은 좋아?",
+            "jp": "窓からの眺めはいいの？",
+            "zh": "那窗外的景色好吗？",
+            "ru": "А вид из окна хороший?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, окна выходят на набережную. Вечером там очень красиво.",
+            "en": "Yes, the windows face the embankment. It's very beautiful there in the evening.",
+            "es": "Sí, las ventanas dan al paseo marítimo. Por la tarde es muy bonito.",
+            "fr": "Oui, les fenêtres donnent sur les quais. Le soir, c'est très beau.",
+            "pt": "Sim, as janelas dão para o aterro. À noite é muito bonito lá.",
+            "kr": "응, 창문이 강변 산책로 쪽으로 나 있어. 저녁에 거기가 정말 예뻐.",
+            "jp": "ええ、窓は堤防に面しているの。夜はとてもきれいなのよ。",
+            "zh": "是的，窗户朝向河堤。晚上那里非常漂亮。",
+            "ru": "Да, окна выходят на набережную. Вечером там очень красиво."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, а ты когда-нибудь жила в общежитии?",
+            "en": "Elena, have you ever lived in a dormitory?",
+            "es": "Elena, ¿alguna vez has vivido en una residencia de estudiantes?",
+            "fr": "Elena, tu as déjà vécu dans une résidence universitaire ?",
+            "pt": "Elena, você já morou em alojamento estudantil?",
+            "kr": "옐레나, 기숙사에서 살아본 적 있어?",
+            "jp": "エレーナ、寮に住んだことはある？",
+            "zh": "叶莲娜，你以前住过宿舍吗？",
+            "ru": "Елена, а ты когда-нибудь жила в общежитии?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, на первом курсе я жила в общежитии. Это был интересный опыт.",
+            "en": "Yes, in my first year I lived in a dormitory. It was an interesting experience.",
+            "es": "Sí, en el primer curso viví en una residencia. Fue una experiencia interesante.",
+            "fr": "Oui, en première année j'ai vécu à la résidence. C'était une expérience intéressante.",
+            "pt": "Sim, no primeiro ano eu morei num alojamento. Foi uma experiência interessante.",
+            "kr": "응, 일 학년 때 기숙사에서 살았어. 재미있는 경험이었어.",
+            "jp": "ええ、一年生のときに寮に住んでいたわ。いい経験だったわ。",
+            "zh": "住过，大一的时候我住在宿舍。那是一段有趣的经历。",
+            "ru": "Да, на первом курсе я жила в общежитии. Это был интересный опыт."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? А как там было? Комнаты большие?",
+            "en": "Really? And what was it like there? Were the rooms big?",
+            "es": "¿En serio? ¿Y cómo era? ¿Las habitaciones eran grandes?",
+            "fr": "Vraiment ? Et comment c'était ? Les chambres étaient grandes ?",
+            "pt": "Sério? E como era lá? Os quartos eram grandes?",
+            "kr": "정말? 그런데 거기 어땠어? 방은 컸어?",
+            "jp": "本当？どんな感じだったの？部屋は広かった？",
+            "zh": "真的吗？那那里怎么样？房间大吗？",
+            "ru": "Правда? А как там было? Комнаты большие?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Комнаты были маленькие, на двоих человек. Но зато было очень весело.",
+            "en": "The rooms were small, for two people. But it was a lot of fun.",
+            "es": "Las habitaciones eran pequeñas, para dos personas. Pero lo pasábamos muy bien.",
+            "fr": "Les chambres étaient petites, pour deux personnes. Mais par contre, c'était très amusant.",
+            "pt": "Os quartos eram pequenos, para duas pessoas. Mas era muito divertido.",
+            "kr": "방은 두 명이 쓰는 작은 방이었어. 그런데 정말 즐거웠어.",
+            "jp": "部屋は小さくて、二人部屋だったわ。でも、とても楽しかったの。",
+            "zh": "房间很小，两个人一间。但是非常热闹。",
+            "ru": "Комнаты были маленькие, на двоих человек. Но зато было очень весело."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А удобства были в комнате или на этаже?",
+            "en": "And were the facilities in the room or on the floor?",
+            "es": "¿Y los servicios estaban en la habitación o en el pasillo?",
+            "fr": "Et les sanitaires, ils étaient dans la chambre ou sur le palier ?",
+            "pt": "E o banheiro ficava no quarto ou no corredor?",
+            "kr": "그럼 화장실이랑 샤워실은 방 안에 있었어, 복도에 있었어?",
+            "jp": "水回りは部屋にあったの？それとも階にあったの？",
+            "zh": "那卫生间是在房间里还是在楼道里？",
+            "ru": "А удобства были в комнате или на этаже?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "На этаже была общая кухня и душ. Сейчас, конечно, живу в квартире и не жалею.",
+            "en": "There was a shared kitchen and shower on the floor. Now, of course, I live in an apartment and don't regret it.",
+            "es": "En el pasillo había una cocina compartida y una ducha. Ahora, por supuesto, vivo en un piso y no me arrepiento.",
+            "fr": "Il y avait une cuisine et une douche communes sur le palier. Maintenant, bien sûr, je vis dans un appartement et je ne le regrette pas.",
+            "pt": "No corredor tinha uma cozinha compartilhada e um chuveiro. Agora, claro, moro num apartamento e não me arrependo.",
+            "kr": "복도에 공용 부엌이랑 샤워실이 있었어. 지금은 당연히 아파트에서 살고 있고 후회는 없어.",
+            "jp": "階に共用のキッチンとシャワーがあったわ。今はもちろんアパートに住んでいて、後悔はしていないわ。",
+            "zh": "楼道里有公共厨房和淋浴间。当然，现在我住在公寓里，一点也不后悔。",
+            "ru": "На этаже была общая кухня и душ. Сейчас, конечно, живу в квартире и не жалею."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, я думаю о том, чтобы переставить мебель в гостиной. Что думаешь?",
+            "en": "Dmitry, I'm thinking about rearranging the furniture in the living room. What do you think?",
+            "es": "Dmitri, estoy pensando en reorganizar los muebles del salón. ¿Qué te parece?",
+            "fr": "Dmitri, je pense à réorganiser les meubles du salon. Qu'est-ce que tu en penses ?",
+            "pt": "Dmitri, estou pensando em reorganizar os móveis da sala de estar. O que você acha?",
+            "kr": "드미트리, 거실에 가구를 다시 배치할까 생각 중이야. 어떻게 생각해?",
+            "jp": "ドミトリー、リビングの家具を配置し直そうと思っているんだけど、どう思う？",
+            "zh": "德米特里，我在考虑重新摆放客厅的家具。你觉得怎么样？",
+            "ru": "Дмитрий, я думаю о том, чтобы переставить мебель в гостиной. Что думаешь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это хорошая идея. А что именно ты хочешь изменить?",
+            "en": "That's a good idea. And what exactly do you want to change?",
+            "es": "Es una buena idea. ¿Y qué es exactamente lo que quieres cambiar?",
+            "fr": "C'est une bonne idée. Et qu'est-ce que tu veux changer exactement ?",
+            "pt": "É uma boa ideia. E o que exatamente você quer mudar?",
+            "kr": "좋은 생각이야. 그런데 정확히 뭘 바꾸고 싶은데?",
+            "jp": "いいアイデアだね。具体的に何を変えたいの？",
+            "zh": "这是个好主意。那你具体想改什么？",
+            "ru": "Это хорошая идея. А что именно ты хочешь изменить?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хочу поставить диван у окна, а телевизор перенести на другую стену.",
+            "en": "I want to put the sofa by the window and move the TV to the other wall.",
+            "es": "Quiero poner el sofá junto a la ventana y mover el televisor a otra pared.",
+            "fr": "Je veux mettre le canapé près de la fenêtre et déplacer la télévision sur l'autre mur.",
+            "pt": "Quero colocar o sofá perto da janela e mudar a televisão para a outra parede.",
+            "kr": "소파를 창문 쪽에 놓고, 텔레비전은 반대쪽 벽으로 옮기고 싶어.",
+            "jp": "ソファを窓のそばに置いて、テレビは別の壁に移したいの。",
+            "zh": "我想把沙发放到窗户旁边，然后把电视移到另一面墙上。",
+            "ru": "Хочу поставить диван у окна, а телевизор перенести на другую стену."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Звучит разумно. Так комната будет казаться больше.",
+            "en": "Sounds reasonable. That way the room will seem bigger.",
+            "es": "Suena razonable. Así la habitación parecerá más grande.",
+            "fr": "Ça semble raisonnable. Comme ça, la pièce paraîtra plus grande.",
+            "pt": "Faz sentido. Assim a sala vai parecer maior.",
+            "kr": "합리적이네. 그러면 방이 더 넓어 보일 거야.",
+            "jp": "理にかなっているね。そうすれば部屋が広く見えるよ。",
+            "zh": "听起来很合理。这样房间会显得更大。",
+            "ru": "Звучит разумно. Так комната будет казаться больше."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты прав. А ещё я хочу добавить больше света.",
+            "en": "You're right. And I also want to add more light.",
+            "es": "Tienes razón. Además, quiero añadir más luz.",
+            "fr": "Tu as raison. Et je veux aussi ajouter plus de lumière.",
+            "pt": "Você tem razão. E também quero adicionar mais luz.",
+            "kr": "맞아. 그리고 조명도 더 추가하고 싶어.",
+            "jp": "そうね。あともっと光を取り入れたいの。",
+            "zh": "你说得对。而且我还想增加更多的光线。",
+            "ru": "Ты прав. А ещё я хочу добавить больше света."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Можно повесить зеркало напротив окна. Это визуально увеличит пространство.",
+            "en": "You could hang a mirror opposite the window. That will visually increase the space.",
+            "es": "Puedes colgar un espejo frente a la ventana. Eso agrandará visualmente el espacio.",
+            "fr": "Tu peux accrocher un miroir en face de la fenêtre. Ça agrandira visuellement l'espace.",
+            "pt": "Dá para pendurar um espelho em frente à janela. Isso vai aumentar visualmente o espaço.",
+            "kr": "창문 맞은편에 거울을 걸어 봐. 시각적으로 공간이 더 넓어 보일 거야.",
+            "jp": "窓の向かい側に鏡を掛けるといいよ。視覚的に空間が広がって見えるから。",
+            "zh": "可以在窗户对面挂一面镜子。这样会在视觉上扩大空间。",
+            "ru": "Можно повесить зеркало напротив окна. Это визуально увеличит пространство."
+          }
+        }
+      ]
+    }
+  ]
+}

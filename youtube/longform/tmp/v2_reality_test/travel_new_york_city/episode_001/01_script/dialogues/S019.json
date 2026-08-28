@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S019",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "mode": "monologue",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "b_gender": null,
+  "lines": [
+    {
+      "line_id": "L001",
+      "sequence": 1,
+      "speaker": "A",
+      "text": "Wow, the street is so bright. All the lights make it feel alive."
+    },
+    {
+      "line_id": "L002",
+      "sequence": 2,
+      "speaker": "A",
+      "text": "I can hear cars and people talking. It's busy, but it's nice."
+    },
+    {
+      "line_id": "L003",
+      "sequence": 3,
+      "speaker": "A",
+      "text": "That storefront looks interesting. Maybe I can look at it for a moment."
+    },
+    {
+      "line_id": "L004",
+      "sequence": 4,
+      "speaker": "A",
+      "text": "I feel more comfortable now. New York is exciting."
+    }
+  ],
+  "scene_state": {
+    "location_ref": "LOC_MANHATTAN_EVENING_STREET_001",
+    "carry_in": [
+      "Jieun has left her hotel room and is heading out for an evening walk",
+      "She is feeling curious and excited to see the neighborhood",
+      "She is planning to stay close to the hotel"
+    ],
+    "carry_out": [
+      "Jieun is walking along the evening street, experiencing the city atmosphere",
+      "She is feeling more comfortable and less anxious",
+      "She is enjoying the sights and sounds of New York"
+    ],
+    "emotion": "more comfortable and less anxious, enjoying the city"
+  },
+  "validation": {
+    "expected_line_count": 4,
+    "actual_line_count": 4
+  }
+}

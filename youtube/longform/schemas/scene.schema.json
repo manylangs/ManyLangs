@@ -1,0 +1,271 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/scene.schema.json",
+  "title": "ManyLangs Longform Scene",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "scene_id",
+    "episode_id",
+    "sequence",
+    "story",
+    "dialogue",
+    "learning",
+    "production"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "common.schema.json#/$defs/document_metadata"
+    },
+    "scene_id": {
+      "type": "string",
+      "pattern": "^S[0-9]{3}$"
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*_ep[0-9]{3}$"
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "story": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "location_ref",
+        "character_refs",
+        "situation",
+        "problem",
+        "monologue",
+        "surprise",
+        "continuity"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location_ref": {
+          "type": "string",
+          "pattern": "^LOC_[A-Z0-9_]+_[0-9]{3}$"
+        },
+        "character_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^CHAR_[A-Z0-9_]+_[0-9]{3}$"
+          }
+        },
+        "situation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "problem": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "monologue": {
+          "type": "boolean"
+        },
+        "surprise": {
+          "type": "boolean"
+        },
+        "continuity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "carry_in",
+            "carry_out"
+          ],
+          "properties": {
+            "carry_in": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "carry_out": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "dialogue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "line_count",
+        "b_gender",
+        "lines"
+      ],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": [
+            "monologue",
+            "dialogue"
+          ]
+        },
+        "line_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "b_gender": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "female",
+            "male",
+            null
+          ]
+        },
+        "lines": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "line_id",
+              "speaker",
+              "text"
+            ],
+            "properties": {
+              "line_id": {
+                "type": "string",
+                "pattern": "^L[0-9]{3}$"
+              },
+              "speaker": {
+                "type": "string",
+                "enum": [
+                  "A",
+                  "B"
+                ]
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "learning": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key_expression_refs",
+        "learning_notes"
+      ],
+      "properties": {
+        "key_expression_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^KE[0-9]{3}$"
+          }
+        },
+        "learning_notes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "production": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "visual_provider",
+        "shot_count",
+        "shots"
+      ],
+      "properties": {
+        "visual_provider": {
+          "type": "string",
+          "enum": [
+            "vidu"
+          ]
+        },
+        "shot_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "shots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "shot_id",
+              "character_refs",
+              "location_ref",
+              "action",
+              "emotion",
+              "camera",
+              "continuity_notes"
+            ],
+            "properties": {
+              "shot_id": {
+                "type": "string",
+                "pattern": "^SHOT_[0-9]{3}$"
+              },
+              "character_refs": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "pattern": "^CHAR_[A-Z0-9_]+_[0-9]{3}$"
+                }
+              },
+              "location_ref": {
+                "type": "string",
+                "pattern": "^LOC_[A-Z0-9_]+_[0-9]{3}$"
+              },
+              "action": {
+                "type": "string",
+                "minLength": 1
+              },
+              "emotion": {
+                "type": "string",
+                "minLength": 1
+              },
+              "camera": {
+                "type": "string",
+                "minLength": 1
+              },
+              "continuity_notes": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

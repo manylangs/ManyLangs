@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S006",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "mode": "monologue",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "b_gender": null,
+  "lines": [
+    {
+      "line_id": "L001",
+      "sequence": 1,
+      "speaker": "A",
+      "text": "Okay, this is the ground transportation area. I can see taxis, ride-sharing, and public transit signs."
+    },
+    {
+      "line_id": "L002",
+      "sequence": 2,
+      "speaker": "A",
+      "text": "A taxi looks fast and easy, but it might be expensive."
+    },
+    {
+      "line_id": "L003",
+      "sequence": 3,
+      "speaker": "A",
+      "text": "Ride-sharing could be cheaper, but I need to use an app and find the right pickup spot."
+    },
+    {
+      "line_id": "L004",
+      "sequence": 4,
+      "speaker": "A",
+      "text": "Public transit is probably the cheapest, but I'm not sure if it's easy with my luggage. Hmm, which one should I choose?"
+    }
+  ],
+  "scene_state": {
+    "location_ref": "LOC_JFK_AIRPORT_001",
+    "carry_in": [
+      "Jieun has retrieved her luggage from the carousel",
+      "She is now following signs toward ground transportation",
+      "She is thinking about how to get to Manhattan"
+    ],
+    "carry_out": [
+      "Jieun is at the ground transportation area considering her options",
+      "She is comparing taxi, ride-sharing, and public transit",
+      "She is unsure which option is the most practical"
+    ],
+    "emotion": "unsure and thoughtful as she compares the different transportation options"
+  },
+  "validation": {
+    "expected_line_count": 4,
+    "actual_line_count": 4
+  }
+}

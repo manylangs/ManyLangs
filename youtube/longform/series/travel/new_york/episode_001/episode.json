@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 2
+  },
+  "episode_id": "travel_new_york_ep001",
+  "series_id": "travel_new_york",
+  "episode_number": 1,
+  "story": {
+    "title": "Arriving in New York",
+    "situation": "Arriving at JFK Airport and completing the essential arrival process before leaving the airport.",
+    "summary": "Jieun arrives in New York at JFK Airport, follows the arrival process, handles practical airport interactions, collects her baggage, and prepares to continue her journey into the city.",
+    "scene_count": 20
+  },
+  "language_context": {
+    "target_language": "en",
+    "target_locale": "en-US",
+    "learner_languages": [
+      "es",
+      "fr",
+      "pt",
+      "jp",
+      "kr",
+      "zh",
+      "ru"
+    ],
+    "cefr_level": "A1"
+  },
+  "continuity": {
+    "character_refs": [
+      "CHAR_JIEUN_001"
+    ],
+    "location_refs": [
+      "LOC_JFK_ARRIVALS_001",
+      "LOC_JFK_IMMIGRATION_001",
+      "LOC_JFK_BAGGAGE_001",
+      "LOC_JFK_GROUND_TRANSPORT_001"
+    ],
+    "previous_episode_id": null,
+    "next_episode_id": "travel_new_york_ep002",
+    "carry_in_state": [
+      "Jieun has just arrived in New York for her trip."
+    ],
+    "carry_out_state": [
+      "Jieun has completed the airport arrival process.",
+      "Jieun is ready to leave JFK Airport and travel into New York City."
+    ]
+  }
+}

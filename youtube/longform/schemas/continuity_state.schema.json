@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/continuity_state.schema.json",
+  "title": "ManyLangs Longform Story Continuity State",
+  "description": "Canonical story-state memory carried across episodes before visual production.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "series_id",
+    "current_episode_id",
+    "protagonist_ref",
+    "protagonist_state",
+    "story_facts",
+    "unresolved_threads",
+    "relationship_states",
+    "inventory_state",
+    "location_state"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "content_version",
+        "revision"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "2.0"
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "series_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "current_episode_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "protagonist_ref": {
+      "type": "string",
+      "pattern": "^CHAR_[A-Z0-9_]+_[0-9]{3}$"
+    },
+    "protagonist_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "current_emotion",
+        "known_information",
+        "current_goals"
+      ],
+      "properties": {
+        "current_emotion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "known_information": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "current_goals": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "story_facts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "unresolved_threads": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "thread_id",
+          "description",
+          "status"
+        ],
+        "properties": {
+          "thread_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "open",
+              "resolved"
+            ]
+          }
+        }
+      }
+    },
+    "relationship_states": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "character_ref",
+          "relationship"
+        ],
+        "properties": {
+          "character_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "relationship": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "inventory_state": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "item_id",
+          "owner_ref",
+          "state"
+        ],
+        "properties": {
+          "item_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "owner_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "state": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "location_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "current_location_ref",
+        "previous_location_ref"
+      ],
+      "properties": {
+        "current_location_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "previous_location_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

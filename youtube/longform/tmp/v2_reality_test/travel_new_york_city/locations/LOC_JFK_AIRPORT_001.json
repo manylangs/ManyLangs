@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "location_id": "LOC_JFK_AIRPORT_001",
+  "series_id": "travel_new_york_city",
+  "identity": {
+    "name": "JFK International Airport",
+    "location_type": "international airport",
+    "city": "New York City",
+    "country": "United States",
+    "parent_location_id": null
+  },
+  "story_profile": {
+    "story_function": "Arrival point for Jieun, including immigration, baggage claim, and ground transportation areas",
+    "continuity_rules": [
+      "Represents the international arrivals experience at JFK",
+      "Areas within the airport are zones of the same location, not separate locations",
+      "Maintain consistent airport atmosphere throughout the episode"
+    ]
+  },
+  "visual_identity": {
+    "environment_summary": "A large, modern international airport terminal with clear signage, moving walkways, and areas for immigration, baggage claim, and ground transportation.",
+    "persistent_features": [
+      "Large terminal with high ceilings",
+      "Digital flight information displays",
+      "Signage for Arrivals, Immigration, and Baggage Claim",
+      "Moving walkways and escalators",
+      "Large windows with natural light"
+    ],
+    "variable_features": [
+      "Crowd density varies by scene",
+      "Time of day affects lighting",
+      "Specific areas within the terminal change (immigration hall, baggage claim, exit)"
+    ],
+    "continuity_lock": true
+  },
+  "production": {
+    "visual_provider": "vidu",
+    "reference_asset_ids": [],
+    "prompt_rules": [
+      "Maintain consistent airport architecture and signage style",
+      "Use realistic airport lighting conditions",
+      "Keep the same general layout across scenes"
+    ]
+  }
+}

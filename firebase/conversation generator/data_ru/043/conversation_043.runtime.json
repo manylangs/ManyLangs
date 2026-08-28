@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b1",
+    "id": "043"
+  },
+  "title": {
+    "target": "Разговор с коллегами",
+    "en": "Talking with Colleagues",
+    "es": "Conversaciones con los compañeros",
+    "fr": "Discussion avec des collègues",
+    "pt": "Conversa com os colegas",
+    "kr": "동료들과의 대화",
+    "jp": "同僚との会話",
+    "zh": "和同事聊天",
+    "ru": "Разговор с коллегами"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Доброе утро, Иван! Как прошёл твой вечер?",
+            "en": "Good morning, Ivan! How was your evening?",
+            "es": "¡Buenos días, Iván! ¿Qué tal tu tarde?",
+            "fr": "Bonjour Ivan ! Comment s'est passée ta soirée ?",
+            "pt": "Bom dia, Ivan! Como foi a sua noite?",
+            "kr": "안녕하세요, 이반 씨! 어제 저녁은 어떻게 보내셨어요?",
+            "jp": "おはようございます、イワンさん！昨夜はどうでしたか？",
+            "zh": "早上好，伊万！你昨晚过得怎么样？",
+            "ru": "Доброе утро, Иван! Как прошёл твой вечер?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Привет, Анна! Хорошо, я сходил в спортзал и отдохнул.",
+            "en": "Hi, Anna! It was good, I went to the gym and relaxed.",
+            "es": "¡Hola, Ana! Bien, fui al gimnasio y descansé.",
+            "fr": "Salut Anna ! Bien, je suis allé à la salle de sport et je me suis reposé.",
+            "pt": "Oi, Anna! Foi boa, eu fui à academia e descansei.",
+            "kr": "안녕하세요, 안나 씨! 좋았어요, 헬스장에 다녀오고 푹 쉬었어요.",
+            "jp": "こんにちは、アンナさん！良かったですよ。ジムに行って、ゆっくり休みました。",
+            "zh": "你好，安娜！挺好的，我去健身房锻炼了一下，然后休息了。",
+            "ru": "Привет, Анна! Хорошо, я сходил в спортзал и отдохнул."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично! А я весь вечер готовила отчёт для начальника.",
+            "en": "Great! And I spent the whole evening preparing a report for the boss.",
+            "es": "¡Genial! Y yo estuve toda la tarde preparando el informe para el jefe.",
+            "fr": "Super ! Et moi, j'ai passé toute la soirée à préparer le rapport pour le chef.",
+            "pt": "Ótimo! E eu passei a noite toda preparando o relatório para o chefe.",
+            "kr": "좋네요! 저는 저녁 내내 상사한테 낼 보고서를 준비했어요.",
+            "jp": "それは良かったです！私は昨夜ずっと上司向けの報告書を作っていました。",
+            "zh": "太好了！我整个晚上都在给领导准备报告。",
+            "ru": "Отлично! А я весь вечер готовила отчёт для начальника."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Звучит утомительно. Надеюсь, ты не засиделась допоздна?",
+            "en": "That sounds tiring. I hope you didn't stay up too late?",
+            "es": "Suena agotador. Espero que no te acostaras muy tarde.",
+            "fr": "Ça a l'air fatigant. J'espère que tu ne t'es pas couchée trop tard ?",
+            "pt": "Parece cansativo. Espero que você não tenha ficado até tarde?",
+            "kr": "힘들었겠네요. 늦게까지 안 계셨길 바라요.",
+            "jp": "大変そうですね。遅くまで起きていませんでしたか？",
+            "zh": "听起来很累。希望你没有熬夜到很晚吧？",
+            "ru": "Звучит утомительно. Надеюсь, ты не засиделась допоздна?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Немного, но я успела всё закончить.",
+            "en": "A little, but I managed to finish everything.",
+            "es": "Un poco, pero conseguí terminarlo todo.",
+            "fr": "Un peu, mais j'ai réussi à tout finir.",
+            "pt": "Um pouco, mas consegui terminar tudo.",
+            "kr": "조금 늦었지만, 그래도 다 끝냈어요.",
+            "jp": "少しだけですが、全部終わらせることができました。",
+            "zh": "稍微有点晚，但我把所有事情都做完了。",
+            "ru": "Немного, но я успела всё закончить."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Молодец! Может, сегодня сходим вместе на обед?",
+            "en": "Good job! Maybe we can go to lunch together today?",
+            "es": "¡Bien hecho! ¿Quizás hoy vamos juntos a comer?",
+            "fr": "Bien joué ! Et si on allait déjeuner ensemble aujourd'hui ?",
+            "pt": "Muito bem! Que tal irmos almoçar juntos hoje?",
+            "kr": "대단하네요! 오늘 같이 점심 먹으러 갈까요?",
+            "jp": "すごいですね！今日は一緒に昼食に行きませんか？",
+            "zh": "真棒！要不今天我们一起去吃午饭吧？",
+            "ru": "Молодец! Может, сегодня сходим вместе на обед?"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты не видел мой блокнот? Я его куда-то положила.",
+            "en": "Sergey, have you seen my notebook? I put it somewhere.",
+            "es": "Serguéi, ¿no has visto mi cuaderno? Lo dejé por algún sitio.",
+            "fr": "Sergueï, tu n'as pas vu mon carnet ? Je l'ai posé quelque part.",
+            "pt": "Sergei, você viu o meu caderno? Eu o coloquei em algum lugar.",
+            "kr": "세르게이 씨, 제 수첩 못 보셨어요? 어딘가에 두었는데.",
+            "jp": "セルゲイさん、私のノート見ませんでしたか？どこかに置いたんですけど。",
+            "zh": "谢尔盖，你看到我的笔记本了吗？我不知道放到哪里去了。",
+            "ru": "Сергей, ты не видел мой блокнот? Я его куда-то положила."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Кажется, я видел его в переговорной комнате.",
+            "en": "I think I saw it in the meeting room.",
+            "es": "Creo que lo vi en la sala de reuniones.",
+            "fr": "Je crois que je l'ai vu dans la salle de réunion.",
+            "pt": "Acho que vi ele na sala de reuniões.",
+            "kr": "회의실에 있는 것 같던데요.",
+            "jp": "会議室にあったと思いますよ。",
+            "zh": "我好像看到它在会议室里。",
+            "ru": "Кажется, я видел его в переговорной комнате."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Точно, я туда ходила записывать идеи для проекта.",
+            "en": "Right, I went there to write down ideas for the project.",
+            "es": "Es cierto, fui allí a apuntar ideas para el proyecto.",
+            "fr": "C'est vrai, j'y suis allée pour noter des idées pour le projet.",
+            "pt": "Isso mesmo, eu fui lá para anotar ideias para o projeto.",
+            "kr": "맞아요, 프로젝트 아이디어 적으러 거기에 갔었어요.",
+            "jp": "そうだ、プロジェクトのアイデアを書きに行ったんでした。",
+            "zh": "对了，我去那儿记项目想法了。",
+            "ru": "Точно, я туда ходила записывать идеи для проекта."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я как раз туда иду, могу принести его тебе.",
+            "en": "I'm actually heading there now, I can bring it to you.",
+            "es": "Justo voy para allá, puedo traértelo.",
+            "fr": "J'y vais justement, je peux te l'apporter.",
+            "pt": "Eu estou indo para lá agora, posso trazê-lo para você.",
+            "kr": "저도 그쪽으로 가는 길이라, 가져다 드릴게요.",
+            "jp": "ちょうどそこに行くところなので、持ってきてあげられますよ。",
+            "zh": "我正好要去那里，可以帮你拿过来。",
+            "ru": "Я как раз туда иду, могу принести его тебе."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Буду очень благодарна, ты меня очень выручишь.",
+            "en": "I'd be very grateful, you'd really save me.",
+            "es": "Te lo agradecería mucho, me harías un gran favor.",
+            "fr": "Je te serais très reconnaissante, tu me rendrais vraiment service.",
+            "pt": "Ficaria muito grata, você me ajuda muito.",
+            "kr": "정말 고마워요, 큰 도움이 될 거예요.",
+            "jp": "本当に助かります。とても助かります。",
+            "zh": "太感谢你了，你真是帮了我大忙。",
+            "ru": "Буду очень благодарна, ты меня очень выручишь."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не за что, мне всё равно нужно туда зайти.",
+            "en": "No problem, I need to go there anyway.",
+            "es": "De nada, de todas formas tengo que pasar por allí.",
+            "fr": "De rien, je dois de toute façon y passer.",
+            "pt": "De nada, eu preciso passar lá de qualquer jeito.",
+            "kr": "별말씀을요, 어차피 거기에 들를 생각이었어요.",
+            "jp": "いいえ、どういたしまして。どうせ行く用事があったので。",
+            "zh": "不客气，反正我也需要去那边一趟。",
+            "ru": "Не за что, мне всё равно нужно туда зайти."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, как тебе новый дизайн нашего сайта?",
+            "en": "Dmitry, what do you think of the new design of our website?",
+            "es": "Dmitri, ¿qué te parece el nuevo diseño de nuestra página web?",
+            "fr": "Dimitri, que penses-tu du nouveau design de notre site ?",
+            "pt": "Dmitri, o que você achou do novo design do nosso site?",
+            "kr": "드미트리 씨, 우리 웹사이트 새 디자인 어때요?",
+            "jp": "ドミトリーさん、私たちのウェブサイトの新しいデザインはどう思いますか？",
+            "zh": "德米特里，你觉得我们网站的新设计怎么样？",
+            "ru": "Дмитрий, как тебе новый дизайн нашего сайта?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Честно говоря, мне кажется, что цвета слишком яркие.",
+            "en": "Honestly, I think the colors are too bright.",
+            "es": "Siendo sincero, creo que los colores son demasiado llamativos.",
+            "fr": "Franchement, je trouve que les couleurs sont trop vives.",
+            "pt": "Sinceramente, acho que as cores estão muito chamativas.",
+            "kr": "솔직히 말하면, 색깔이 너무 화려한 것 같아요.",
+            "jp": "正直に言うと、色が鮮やかすぎる気がします。",
+            "zh": "说实话，我觉得颜色太鲜艳了。",
+            "ru": "Честно говоря, мне кажется, что цвета слишком яркие."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? А мне казалось, что это привлекает внимание.",
+            "en": "Really? I thought it draws attention.",
+            "es": "¿De verdad? A mí me parecía que eso llama la atención.",
+            "fr": "Vraiment ? Moi, je trouvais que ça attirait l'attention.",
+            "pt": "Sério? Eu achava que isso chama a atenção.",
+            "kr": "그래요? 저는 오히려 시선을 끌 만하다고 생각했는데.",
+            "jp": "本当ですか？私は注目を集めると思っていました。",
+            "zh": "真的吗？我还觉得这样能吸引眼球呢。",
+            "ru": "Правда? А мне казалось, что это привлекает внимание."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Возможно, но для нашей аудитории лучше выбрать спокойные тона.",
+            "en": "Maybe, but for our audience it's better to choose calmer tones.",
+            "es": "Puede ser, pero para nuestro público es mejor elegir tonos más sobrios.",
+            "fr": "Peut-être, mais pour notre public, il vaudrait mieux choisir des tons plus doux.",
+            "pt": "Talvez, mas para o nosso público é melhor escolher tons mais suaves.",
+            "kr": "그럴 수도 있지만, 우리 고객층에는 차분한 톤이 더 나을 것 같아요.",
+            "jp": "そうかもしれませんが、私たちの利用者には落ち着いた色合いの方がいいと思います。",
+            "zh": "也许吧，但对我们受众来说，最好选择柔和一点的色调。",
+            "ru": "Возможно, но для нашей аудитории лучше выбрать спокойные тона."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хорошая мысль. Может, обсудим это на совещании?",
+            "en": "Good point. Maybe we can discuss this at the meeting?",
+            "es": "Buena idea. ¿Quizás lo hablamos en la reunión?",
+            "fr": "Bonne idée. Et si on en discutait à la réunion ?",
+            "pt": "Boa ideia. Que tal discutirmos isso na reunião?",
+            "kr": "좋은 생각이에요. 회의 때 이걸 논의해 볼까요?",
+            "jp": "良い考えですね。会議で話し合ってみませんか？",
+            "zh": "有道理。要不要我们在会上讨论一下？",
+            "ru": "Хорошая мысль. Может, обсудим это на совещании?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, давай предложим это всем вместе.",
+            "en": "Yes, let's propose it to everyone together.",
+            "es": "Sí, propongámoslo entre todos.",
+            "fr": "Oui, proposons ça tous ensemble.",
+            "pt": "Sim, vamos propor isso para todos juntos.",
+            "kr": "네, 다 같이 제안해 봐요.",
+            "jp": "ええ、みんなで提案してみましょう。",
+            "zh": "好，我们一起向大家提出来吧。",
+            "ru": "Да, давай предложим это всем вместе."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, ты уже закончил отчёт по продажам?",
+            "en": "Alexey, have you finished the sales report yet?",
+            "es": "Alekséi, ¿ya has terminado el informe de ventas?",
+            "fr": "Alexeï, tu as déjà fini le rapport sur les ventes ?",
+            "pt": "Alexei, você já terminou o relatório de vendas?",
+            "kr": "알렉세이 씨, 판매 보고서는 이미 끝내셨어요?",
+            "jp": "アレクセイさん、売上報告書はもう終わりましたか？",
+            "zh": "阿列克谢，你做完销售报告了吗？",
+            "ru": "Алексей, ты уже закончил отчёт по продажам?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Почти, осталось проверить пару цифр.",
+            "en": "Almost, I just need to double-check a couple of numbers.",
+            "es": "Casi, solo me falta comprobar un par de cifras.",
+            "fr": "Presque, il me reste à vérifier quelques chiffres.",
+            "pt": "Quase, falta conferir alguns números.",
+            "kr": "거의 다 됐어요, 숫자 몇 개만 확인하면 돼요.",
+            "jp": "もう少しです。あと数字をいくつか確認するだけです。",
+            "zh": "差不多了，还剩几个数字要核对一下。",
+            "ru": "Почти, осталось проверить пару цифр."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Начальник просил сдать его до конца дня.",
+            "en": "The boss asked to submit it by the end of the day.",
+            "es": "El jefe pidió entregarlo antes de que acabe el día.",
+            "fr": "Le chef a demandé de le rendre avant la fin de la journée.",
+            "pt": "O chefe pediu para entregar até o fim do dia.",
+            "kr": "상사가 오늘 안으로 제출하라고 하셨어요.",
+            "jp": "上司が今日中に提出するように言っていましたよ。",
+            "zh": "领导要求今天下班前交上去。",
+            "ru": "Начальник просил сдать его до конца дня."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я знаю, я успею. Мне нужно только уточнить данные у отдела закупок.",
+            "en": "I know, I'll make it. I just need to confirm the data with the purchasing department.",
+            "es": "Lo sé, llegaré a tiempo. Solo tengo que confirmar los datos con el departamento de compras.",
+            "fr": "Je sais, j'aurai le temps. J'ai juste besoin de confirmer les données avec le service des achats.",
+            "pt": "Eu sei, eu consigo. Só preciso confirmar os dados com o departamento de compras.",
+            "kr": "알아요, 시간 안에 끝낼 수 있어요. 구매 부서에 데이터만 확인하면 돼요.",
+            "jp": "分かっています。間に合わせます。仕入れ部門にデータを確認するだけなので。",
+            "zh": "我知道，我赶得上。我只需要跟采购部确认一下数据。",
+            "ru": "Я знаю, я успею. Мне нужно только уточнить данные у отдела закупок."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Если нужна помощь, я могу позвонить им.",
+            "en": "If you need help, I can call them.",
+            "es": "Si necesitas ayuda, puedo llamarlos yo.",
+            "fr": "Si tu as besoin d'aide, je peux les appeler.",
+            "pt": "Se precisar de ajuda, eu posso ligar para eles.",
+            "kr": "도움이 필요하면 제가 전화해 드릴게요.",
+            "jp": "手伝いが必要なら、私が電話できますよ。",
+            "zh": "如果需要帮忙的话，我可以给他们打电话。",
+            "ru": "Если нужна помощь, я могу позвонить им."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо, но я сам справлюсь. Это не займёт много времени.",
+            "en": "Thanks, but I can handle it myself. It won't take long.",
+            "es": "Gracias, pero puedo arreglármelas solo. No me llevará mucho tiempo.",
+            "fr": "Merci, mais je vais m'en sortir tout seul. Ça ne prendra pas beaucoup de temps.",
+            "pt": "Obrigado, mas eu dou conta sozinho. Não vai levar muito tempo.",
+            "kr": "고마워요, 하지만 제가 알아서 할게요. 오래 걸리지 않아요.",
+            "jp": "ありがとうございます。でも自分で大丈夫です。そんなに時間はかかりませんから。",
+            "zh": "谢谢，但我自己能搞定。这花不了多少时间。",
+            "ru": "Спасибо, но я сам справлюсь. Это не займёт много времени."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, ты не знаешь, когда будет следующее собрание?",
+            "en": "Olga, do you know when the next meeting is?",
+            "es": "Olga, ¿sabes cuándo será la próxima reunión?",
+            "fr": "Olga, tu ne sais pas quand aura lieu la prochaine réunion ?",
+            "pt": "Olga, você sabe quando será a próxima reunião?",
+            "kr": "올가 씨, 다음 회의가 언제인지 아세요?",
+            "jp": "オルガさん、次の会議がいつか知っていますか？",
+            "zh": "奥尔加，你知道下次会议什么时候开吗？",
+            "ru": "Ольга, ты не знаешь, когда будет следующее собрание?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Кажется, в четверг после обеда.",
+            "en": "I think on Thursday afternoon.",
+            "es": "Creo que el jueves por la tarde.",
+            "fr": "Je crois que c'est jeudi après-midi.",
+            "pt": "Acho que na quinta-feira à tarde.",
+            "kr": "목요일 오후인 것 같아요.",
+            "jp": "木曜日の午後だったと思います。",
+            "zh": "好像是周四下午。",
+            "ru": "Кажется, в четверг после обеда."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А во сколько именно? Мне нужно записать в календарь.",
+            "en": "And what time exactly? I need to put it in my calendar.",
+            "es": "¿Y a qué hora exactamente? Necesito apuntarlo en el calendario.",
+            "fr": "Et à quelle heure exactement ? J'ai besoin de l'écrire dans mon agenda.",
+            "pt": "E a que horas exatamente? Preciso anotar na agenda.",
+            "kr": "정확히 몇 시인가요? 달력에 적어야 해서요.",
+            "jp": "何時頃ですか？カレンダーに書いておきたいので。",
+            "zh": "具体几点呢？我需要记到日历里。",
+            "ru": "А во сколько именно? Мне нужно записать в календарь."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "В три часа, в большой переговорной.",
+            "en": "At three o'clock, in the big meeting room.",
+            "es": "A las tres, en la sala de reuniones grande.",
+            "fr": "À trois heures, dans la grande salle de réunion.",
+            "pt": "Às três horas, na sala de reuniões grande.",
+            "kr": "세 시에, 큰 회의실에서요.",
+            "jp": "三時に、大きい会議室です。",
+            "zh": "三点，在大会议室。",
+            "ru": "В три часа, в большой переговорной."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спасибо! А ты уже подготовила свою презентацию?",
+            "en": "Thanks! And have you already prepared your presentation?",
+            "es": "¡Gracias! ¿Y tú ya has preparado tu presentación?",
+            "fr": "Merci ! Et tu as déjà préparé ta présentation ?",
+            "pt": "Obrigada! E você já preparou a sua apresentação?",
+            "kr": "고마워요! 발표 자료는 이미 준비하셨어요?",
+            "jp": "ありがとうございます！プレゼンテーションはもう準備しましたか？",
+            "zh": "谢谢！那你的演示文稿准备好了吗？",
+            "ru": "Спасибо! А ты уже подготовила свою презентацию?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ещё нет, но я планирую заняться этим завтра утром.",
+            "en": "Not yet, but I'm planning to work on it tomorrow morning.",
+            "es": "Todavía no, pero pienso hacerlo mañana por la mañana.",
+            "fr": "Pas encore, mais je compte m'y mettre demain matin.",
+            "pt": "Ainda não, mas pretendo fazer isso amanhã de manhã.",
+            "kr": "아직이요, 내일 아침에 할 생각이에요.",
+            "jp": "まだですが、明日の朝にやろうと思っています。",
+            "zh": "还没有，但我打算明天早上弄。",
+            "ru": "Ещё нет, но я планирую заняться этим завтра утром."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, я слышала, ты получил повышение. Поздравляю!",
+            "en": "Ivan, I heard you got a promotion. Congratulations!",
+            "es": "Iván, he oído que te han ascendido. ¡Enhorabuena!",
+            "fr": "Ivan, j'ai entendu dire que tu as eu une promotion. Félicitations !",
+            "pt": "Ivan, eu ouvi dizer que você foi promovido. Parabéns!",
+            "kr": "이반 씨, 승진하셨다고 들었어요. 축하드려요!",
+            "jp": "イワンさん、昇進したって聞きましたよ。おめでとうございます！",
+            "zh": "伊万，我听说你升职了。恭喜你！",
+            "ru": "Иван, я слышала, ты получил повышение. Поздравляю!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо, Анна. Я очень рад, но теперь будет больше работы.",
+            "en": "Thanks, Anna. I'm really happy, but now there will be more work.",
+            "es": "Gracias, Ana. Estoy muy contento, pero ahora habrá más trabajo.",
+            "fr": "Merci, Anna. Je suis très content, mais maintenant il y aura plus de travail.",
+            "pt": "Obrigado, Anna. Estou muito feliz, mas agora vai ter mais trabalho.",
+            "kr": "고마워요, 안나 씨. 정말 기쁘지만, 이제 일이 더 많아질 거예요.",
+            "jp": "ありがとうございます、アンナさん。とても嬉しいですが、仕事はもっと増えますね。",
+            "zh": "谢谢你，安娜。我很高兴，但现在工作会更多了。",
+            "ru": "Спасибо, Анна. Я очень рад, но теперь будет больше работы."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Уверена, ты справишься. Ты всегда хорошо работаешь.",
+            "en": "I'm sure you'll handle it. You always do a great job.",
+            "es": "Estoy segura de que podrás con ello. Siempre trabajas bien.",
+            "fr": "Je suis sûre que tu vas y arriver. Tu travailles toujours bien.",
+            "pt": "Tenho certeza de que você vai dar conta. Você sempre trabalha bem.",
+            "kr": "잘 해내실 거라고 믿어요. 항상 일을 잘하시잖아요.",
+            "jp": "きっと大丈夫ですよ。いつもよく仕事をしていますから。",
+            "zh": "我相信你能应付得来。你一直都很能干。",
+            "ru": "Уверена, ты справишься. Ты всегда хорошо работаешь."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Стараюсь. Но мне будет не хватать нашей совместной работы.",
+            "en": "I try. But I'll miss working together.",
+            "es": "Lo intento. Pero echaré de menos trabajar juntos.",
+            "fr": "J'essaie. Mais notre travail ensemble va me manquer.",
+            "pt": "Eu me esforço. Mas vou sentir falta do nosso trabalho em conjunto.",
+            "kr": "노력하고 있어요. 그런데 우리가 같이 일하는 게 좀 아쉽네요.",
+            "jp": "頑張っています。でも、一緒に仕事ができなくなるのは寂しいです。",
+            "zh": "我尽力吧。但我会想念我们一起工作的日子。",
+            "ru": "Стараюсь. Но мне будет не хватать нашей совместной работы."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мы всё равно будем общаться, я работаю в соседнем кабинете.",
+            "en": "We'll still talk, I work in the office next door.",
+            "es": "De todas formas seguiremos hablando, trabajo en el despacho de al lado.",
+            "fr": "On continuera de toute façon à se parler, je travaille dans le bureau d'à côté.",
+            "pt": "A gente vai continuar se falando do mesmo jeito, eu trabalho na sala ao lado.",
+            "kr": "그래도 계속 볼 수 있잖아요, 제가 옆방에서 일하니까요.",
+            "jp": "これからも会えますよ。隣の部屋で働いていますから。",
+            "zh": "我们还是可以经常联系的，我就在隔壁办公室工作。",
+            "ru": "Мы всё равно будем общаться, я работаю в соседнем кабинете."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это правда. Тогда будем видеться так же часто.",
+            "en": "That's true. Then we'll see each other just as often.",
+            "es": "Es verdad. Entonces nos veremos igual de a menudo.",
+            "fr": "C'est vrai. Alors on se verra aussi souvent.",
+            "pt": "É verdade. Então a gente vai continuar se vendo com a mesma frequência.",
+            "kr": "맞네요. 그럼 예전처럼 자주 뵙겠네요.",
+            "jp": "そうですね。じゃあ、今まで通りよく会えますね。",
+            "zh": "那倒是。那我们还是能像以前一样经常见面。",
+            "ru": "Это правда. Тогда будем видеться так же часто."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты не мог бы помочь мне с компьютером? Он завис.",
+            "en": "Sergey, could you help me with my computer? It froze.",
+            "es": "Serguéi, ¿podrías ayudarme con el ordenador? Se ha quedado congelado.",
+            "fr": "Sergueï, tu pourrais m'aider avec mon ordinateur ? Il a planté.",
+            "pt": "Sergei, você poderia me ajudar com o computador? Ele travou.",
+            "kr": "세르게이 씨, 컴퓨터 좀 봐 주시겠어요? 멈췄어요.",
+            "jp": "セルゲイさん、コンピューターを見てもらえませんか？フリーズしてしまって。",
+            "zh": "谢尔盖，你能帮我看看电脑吗？它死机了。",
+            "ru": "Сергей, ты не мог бы помочь мне с компьютером? Он завис."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, давай посмотрю. Что ты делала перед этим?",
+            "en": "Sure, let me take a look. What were you doing before that?",
+            "es": "Claro, déjame verlo. ¿Qué estabas haciendo antes de que pasara?",
+            "fr": "Bien sûr, laisse-moi regarder. Qu'est-ce que tu faisais avant ?",
+            "pt": "Claro, deixa eu ver. O que você estava fazendo antes disso?",
+            "kr": "그럼요, 한번 볼게요. 그전에 뭘 하셨어요?",
+            "jp": "いいですよ、見てみます。その前に何をしていましたか？",
+            "zh": "当然可以，我来看看。你之前做了什么？",
+            "ru": "Конечно, давай посмотрю. Что ты делала перед этим?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я открыла много программ одновременно, наверное, поэтому.",
+            "en": "I opened a lot of programs at the same time, that's probably why.",
+            "es": "Abrí muchos programas a la vez, seguramente por eso.",
+            "fr": "J'ai ouvert beaucoup de programmes en même temps, c'est sûrement à cause de ça.",
+            "pt": "Eu abri muitos programas ao mesmo tempo, provavelmente foi por isso.",
+            "kr": "프로그램을 너무 많이 한꺼번에 열어서 그런 것 같아요.",
+            "jp": "たくさんのプログラムを同時に開いていたので、それが原因だと思います。",
+            "zh": "我同时打开了很多程序，大概就是因为这个。",
+            "ru": "Я открыла много программ одновременно, наверное, поэтому."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понятно. Попробуй закрыть лишние вкладки, и всё заработает.",
+            "en": "I see. Try closing the extra tabs, and it'll start working.",
+            "es": "Entendido. Intenta cerrar las pestañas que sobran y todo funcionará.",
+            "fr": "Je vois. Essaie de fermer les onglets en trop, et tout va remarchera.",
+            "pt": "Entendi. Tente fechar as abas extras, e tudo vai funcionar.",
+            "kr": "알겠어요. 필요 없는 창을 닫으면 다시 작동할 거예요.",
+            "jp": "なるほど。余分なタブを閉じてみてください。そうすれば動くはずです。",
+            "zh": "明白了。你试试关掉多余的窗口，应该就能恢复正常了。",
+            "ru": "Понятно. Попробуй закрыть лишние вкладки, и всё заработает."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "О, теперь работает. Спасибо большое!",
+            "en": "Oh, it works now. Thank you so much!",
+            "es": "Oh, ya funciona. ¡Muchas gracias!",
+            "fr": "Oh, ça marche maintenant. Merci beaucoup !",
+            "pt": "Ah, agora funcionou. Muito obrigada!",
+            "kr": "오, 이제 되네요. 정말 고마워요!",
+            "jp": "あ、動くようになりました。本当にありがとうございます！",
+            "zh": "哦，现在能用了。太感谢了！",
+            "ru": "О, теперь работает. Спасибо большое!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обращайся, если что-то ещё случится.",
+            "en": "Let me know if anything else happens.",
+            "es": "Avísame si pasa algo más.",
+            "fr": "N'hésite pas si quelque chose d'autre arrive.",
+            "pt": "Pode me chamar se acontecer qualquer outra coisa.",
+            "kr": "또 문제 생기면 말씀하세요.",
+            "jp": "また何かあったら、いつでも言ってください。",
+            "zh": "再有什么问题就找我。",
+            "ru": "Обращайся, если что-то ещё случится."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты идёшь на корпоратив в пятницу?",
+            "en": "Dmitry, are you going to the company party on Friday?",
+            "es": "Dmitri, ¿vas a la fiesta de la empresa el viernes?",
+            "fr": "Dimitri, tu vas à la soirée d'entreprise vendredi ?",
+            "pt": "Dmitri, você vai na festa da empresa na sexta-feira?",
+            "kr": "드미트리 씨, 금요일 회사 행사에 가실 거예요?",
+            "jp": "ドミトリーさん、金曜日の社内イベントに行きますか？",
+            "zh": "德米特里，周五的公司聚会你去吗？",
+            "ru": "Дмитрий, ты идёшь на корпоратив в пятницу?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я уже записался. А ты?",
+            "en": "Yes, I already signed up. And you?",
+            "es": "Sí, ya me he apuntado. ¿Y tú?",
+            "fr": "Oui, je me suis déjà inscrit. Et toi ?",
+            "pt": "Vou, já me inscrevi. E você?",
+            "kr": "네, 이미 신청했어요. 씨는요?",
+            "jp": "はい、もう申し込みました。あなたは？",
+            "zh": "去，我已经报名了。你呢？",
+            "ru": "Да, я уже записался. А ты?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я тоже. Говорят, будет очень весело.",
+            "en": "Me too. They say it's going to be a lot of fun.",
+            "es": "Yo también. Dicen que va a ser muy divertido.",
+            "fr": "Moi aussi. On dit que ça va être très amusant.",
+            "pt": "Eu também. Dizem que vai ser bem divertido.",
+            "kr": "저도요. 아주 재미있을 거래요.",
+            "jp": "私も行きます。とても楽しいらしいですよ。",
+            "zh": "我也去。听说会很好玩。",
+            "ru": "Я тоже. Говорят, будет очень весело."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Надеюсь, будет хорошая музыка и вкусная еда.",
+            "en": "I hope there will be good music and tasty food.",
+            "es": "Espero que haya buena música y comida rica.",
+            "fr": "J'espère qu'il y aura de la bonne musique et de la bonne nourriture.",
+            "pt": "Espero que tenha uma boa música e comida gostosa.",
+            "kr": "음악도 좋고 음식도 맛있으면 좋겠네요.",
+            "jp": "良い音楽と美味しい料理があるといいですね。",
+            "zh": "希望有好听的音乐和好吃的菜。",
+            "ru": "Надеюсь, будет хорошая музыка и вкусная еда."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне сказали, что заказали отличный ресторан.",
+            "en": "I was told they booked a great restaurant.",
+            "es": "Me han dicho que han reservado un restaurante estupendo.",
+            "fr": "On m'a dit qu'ils ont réservé un excellent restaurant.",
+            "pt": "Me disseram que reservaram um restaurante ótimo.",
+            "kr": "훌륭한 레스토랑을 예약했다고 들었어요.",
+            "jp": "素晴らしいレストランを予約したと聞きました。",
+            "zh": "我听说他们订了一家很棒的餐厅。",
+            "ru": "Мне сказали, что заказали отличный ресторан."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда я с нетерпением жду пятницы!",
+            "en": "Then I can't wait for Friday!",
+            "es": "¡Entonces estoy deseando que llegue el viernes!",
+            "fr": "Alors j'ai hâte d'être à vendredi !",
+            "pt": "Então estou ansioso pela sexta-feira!",
+            "kr": "그럼 금요일이 정말 기대되네요!",
+            "jp": "それなら金曜日が待ち遠しいです！",
+            "zh": "那我可太期待周五了！",
+            "ru": "Тогда я с нетерпением жду пятницы!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, как прошла встреча с новым клиентом?",
+            "en": "Alexey, how did the meeting with the new client go?",
+            "es": "Alekséi, ¿cómo fue la reunión con el cliente nuevo?",
+            "fr": "Alexeï, comment s'est passée la rencontre avec le nouveau client ?",
+            "pt": "Alexei, como foi o encontro com o novo cliente?",
+            "kr": "알렉세이 씨, 새 고객과의 미팅은 어땠어요?",
+            "jp": "アレクセイさん、新しいお客様との会合はどうでしたか？",
+            "zh": "阿列克谢，和新客户的会面怎么样？",
+            "ru": "Алексей, как прошла встреча с новым клиентом?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "В целом неплохо, но он попросил снизить цену.",
+            "en": "Overall, not bad, but he asked to lower the price.",
+            "es": "En general bien, pero pidió que bajáramos el precio.",
+            "fr": "Dans l'ensemble, pas mal, mais il a demandé de baisser le prix.",
+            "pt": "No geral, foi bom, mas ele pediu para baixar o preço.",
+            "kr": "전체적으로 괜찮았는데, 가격을 내려 달라고 하더군요.",
+            "jp": "全体的には悪くなかったですが、値下げを求められました。",
+            "zh": "总的来说还不错，但他要求降价。",
+            "ru": "В целом неплохо, но он попросил снизить цену."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "И что ты ему ответил?",
+            "en": "And what did you tell him?",
+            "es": "¿Y qué le respondiste?",
+            "fr": "Et qu'est-ce que tu lui as répondu ?",
+            "pt": "E o que você respondeu para ele?",
+            "kr": "그럼 뭐라고 답하셨어요?",
+            "jp": "それで何と答えたんですか？",
+            "zh": "那你怎么跟他说的？",
+            "ru": "И что ты ему ответил?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я сказал, что мы можем обсудить это при большом заказе.",
+            "en": "I said we can discuss it with a large order.",
+            "es": "Le dije que podemos hablarlo si hace un pedido grande.",
+            "fr": "J'ai dit qu'on pouvait en discuter pour une grosse commande.",
+            "pt": "Eu disse que podemos discutir isso se o pedido for grande.",
+            "kr": "대량 주문을 하시면 협의할 수 있다고 말했어요.",
+            "jp": "大量注文なら検討できると言いました。",
+            "zh": "我说如果订单量大的话，我们可以谈。",
+            "ru": "Я сказал, что мы можем обсудить это при большом заказе."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правильное решение. Надеюсь, он согласится.",
+            "en": "The right decision. I hope he'll agree.",
+            "es": "Buena decisión. Espero que acepte.",
+            "fr": "Bonne décision. J'espère qu'il sera d'accord.",
+            "pt": "Decisão certa. Espero que ele aceite.",
+            "kr": "잘한 결정이에요. 그분이 동의하길 바라요.",
+            "jp": "良い判断ですね。彼が同意してくれるといいですね。",
+            "zh": "做得对。希望他能同意。",
+            "ru": "Правильное решение. Надеюсь, он согласится."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я тоже. Он обещал дать ответ в начале следующей недели.",
+            "en": "Me too. He promised to give an answer early next week.",
+            "es": "Yo también. Prometió dar una respuesta a principios de la semana que viene.",
+            "fr": "Moi aussi. Il a promis de donner sa réponse au début de la semaine prochaine.",
+            "pt": "Eu também. Ele prometeu dar uma resposta no começo da próxima semana.",
+            "kr": "저도요. 다음 주 초에 답을 주겠다고 약속했어요.",
+            "jp": "私もそう思います。来週の初めには返事をくれると言っていました。",
+            "zh": "我也希望。他答应下周初给我们答复。",
+            "ru": "Я тоже. Он обещал дать ответ в начале следующей недели."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, ты не знаешь, где найти документы по прошлому проекту?",
+            "en": "Olga, do you know where to find the documents from the last project?",
+            "es": "Olga, ¿sabes dónde puedo encontrar los documentos del proyecto anterior?",
+            "fr": "Olga, tu ne sais pas où trouver les documents du dernier projet ?",
+            "pt": "Olga, você sabe onde encontrar os documentos do projeto anterior?",
+            "kr": "올가 씨, 지난 프로젝트 서류가 어디 있는지 아세요?",
+            "jp": "オルガさん、前のプロジェクトの書類がどこにあるか知っていますか？",
+            "zh": "奥尔加，你知道在哪里能找到上个项目的文件吗？",
+            "ru": "Ольга, ты не знаешь, где найти документы по прошлому проекту?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Они должны быть в общей папке на сервере.",
+            "en": "They should be in the shared folder on the server.",
+            "es": "Deberían estar en la carpeta compartida del servidor.",
+            "fr": "Ils devraient être dans le dossier commun sur le serveur.",
+            "pt": "Eles devem estar na pasta compartilhada no servidor.",
+            "kr": "서버에 있는 공용 폴더에 있을 거예요.",
+            "jp": "サーバーの共有フォルダーにあるはずですよ。",
+            "zh": "应该在服务器的共享文件夹里。",
+            "ru": "Они должны быть в общей папке на сервере."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я искала там, но не нашла нужную папку.",
+            "en": "I looked there, but I couldn't find the right folder.",
+            "es": "Busqué allí, pero no encontré la carpeta que necesito.",
+            "fr": "J'ai cherché là-bas, mais je n'ai pas trouvé le bon dossier.",
+            "pt": "Eu procurei lá, mas não encontrei a pasta certa.",
+            "kr": "거기서 찾아봤는데, 필요한 폴더를 못 찾았어요.",
+            "jp": "そこを探したんですが、必要なフォルダーが見つかりませんでした。",
+            "zh": "我去找过了，但没找到那个文件夹。",
+            "ru": "Я искала там, но не нашла нужную папку."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Странно. Давай я посмотрю у себя, может, я сохраню их на другом диске.",
+            "en": "That's strange. Let me check on my end, maybe I saved them on a different drive.",
+            "es": "Qué raro. Déjame mirar en mi ordenador, a lo mejor los guardé en otro disco.",
+            "fr": "C'est étrange. Laisse-moi regarder de mon côté, peut-être que je les ai enregistrés sur un autre disque.",
+            "pt": "Que estranho. Deixa eu ver aqui, talvez eu tenha salvado em outro disco.",
+            "kr": "이상하네요. 제 쪽에서 찾아볼게요, 다른 드라이브에 저장했을 수도 있어요.",
+            "jp": "変ですね。私の方で見てみます。別のドライブに保存しているかもしれません。",
+            "zh": "奇怪。我看看我这边，可能我存在另一个盘里了。",
+            "ru": "Странно. Давай я посмотрю у себя, может, я сохраню их на другом диске."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Буду очень признательна, если поможешь.",
+            "en": "I'd really appreciate it if you could help.",
+            "es": "Te estaría muy agradecida si me ayudas.",
+            "fr": "Je te serais très reconnaissante si tu pouvais m'aider.",
+            "pt": "Ficaria muito grata se você me ajudar.",
+            "kr": "도와주시면 정말 감사하겠어요.",
+            "jp": "手伝ってもらえると本当に助かります。",
+            "zh": "如果你能帮忙的话，我会非常感激的。",
+            "ru": "Буду очень признательна, если поможешь."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, сейчас посмотрю и напишу тебе.",
+            "en": "Of course, I'll take a look now and text you.",
+            "es": "Claro, ahora mismo miro y te escribo.",
+            "fr": "Bien sûr, je regarde tout de suite et je t'écris.",
+            "pt": "Claro, vou ver agora e te aviso.",
+            "kr": "그럼요, 지금 찾아보고 연락드릴게요.",
+            "jp": "もちろんです。今すぐ見て、あなたに連絡しますね。",
+            "zh": "没问题，我现在就看一下，然后告诉你。",
+            "ru": "Конечно, сейчас посмотрю и напишу тебе."
+          }
+        }
+      ]
+    }
+  ]
+}

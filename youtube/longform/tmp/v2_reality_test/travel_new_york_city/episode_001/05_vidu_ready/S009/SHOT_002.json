@@ -1,0 +1,196 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S009",
+  "shot_id": "SHOT_002",
+  "sequence": 2,
+  "source_refs": {
+    "production_scene": "02_visual/production_scenes/S009.json",
+    "shot": "03_shots/S009/SHOT_002.json",
+    "visual_continuity": "04_visual_continuity/S009/SHOT_002.json"
+  },
+  "generation": {
+    "provider": "vidu",
+    "duration_seconds": 8.0,
+    "aspect_ratio": "16:9",
+    "resolution": "1080p",
+    "mode": "reference_guided"
+  },
+  "actors": [
+    {
+      "actor_ref": "CHAR_JIEUN_001",
+      "identity_type": "persistent",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Medium-sized travel backpack",
+        "Small crossbody bag",
+        "Smartphone",
+        "Passport",
+        "Checked suitcase"
+      ],
+      "body_state": [
+        "Standing near the transit employee, facing the ticket machine",
+        "Backpack worn on back",
+        "Crossbody bag worn across body",
+        "Suitcase handle held in hand",
+        "Head turned toward the ticket machine"
+      ],
+      "emotion": "attentive and curious",
+      "reference_asset_ids": [
+        "ASSET_CHAR_JIEUN_PRIMARY_000001"
+      ]
+    },
+    {
+      "actor_ref": "B",
+      "identity_type": "scene_local",
+      "identity_lock": true,
+      "appearance": [
+        "Female transit employee in her 30s",
+        "Neat professional appearance",
+        "Friendly and helpful expression"
+      ],
+      "hair": [
+        "Hair tied back neatly in a professional style"
+      ],
+      "clothing": [
+        "Transit authority uniform with visible badge",
+        "Dark-colored uniform pants",
+        "Comfortable work shoes"
+      ],
+      "carried_items": [
+        "Small handheld radio"
+      ],
+      "body_state": [
+        "Standing near the station entrance",
+        "Facing Jieun",
+        "Hand extended pointing toward the ticket machine"
+      ],
+      "emotion": "helpful and patient",
+      "reference_asset_ids": []
+    }
+  ],
+  "location": {
+    "location_ref": "LOC_AIRPORT_TRANSIT_001",
+    "identity_lock": true,
+    "current_zone": "Subway station entrance area, near the ticket machine and platform signs",
+    "persistent_features": [
+      "Transit station platforms",
+      "Train or vehicle interior",
+      "Views of urban landscape during the journey",
+      "Signage for transit lines and stops"
+    ],
+    "orientation_state": [
+      "Jieun standing in front of the transit employee",
+      "Transit employee facing Jieun",
+      "Transit employee's hand pointing toward the ticket machine",
+      "Jieun's head turned toward the ticket machine",
+      "Station entrance behind the transit employee",
+      "Platform signs visible in the background"
+    ],
+    "reference_asset_ids": []
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn on back",
+      "position": "on Jieun's back",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn across body",
+      "position": "across Jieun's body",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "not visible in hands, likely stored in crossbody bag or pocket",
+      "position": "not visible, likely in crossbody bag or pocket",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "not visible in hands, likely stored in crossbody bag or pocket",
+      "position": "not visible, likely in crossbody bag or pocket",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "held by Jieun's hand",
+      "position": "in Jieun's hand, beside her",
+      "visible": true,
+      "continuity_lock": true
+    }
+  ],
+  "prompt": {
+    "subject": "A young Korean woman with an oval face, soft features, natural eyebrows, dark brown eyes, and light natural makeup, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch. She has shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears. She wears a medium-sized travel backpack on her back and a small crossbody bag across her body, and holds a checked suitcase handle in her hand. She stands near the transit employee, facing the ticket machine with her head turned toward it, with an attentive and curious expression. Beside her is a female transit employee in her 30s with a neat professional appearance, hair tied back neatly, wearing a transit authority uniform with a visible badge, dark-colored uniform pants, and comfortable work shoes, carrying a small handheld radio. The employee stands near the station entrance, facing Jieun, with her hand extended pointing toward the ticket machine, with a helpful and patient expression.",
+    "environment": "The scene is set in the subway station entrance area of LOC_AIRPORT_TRANSIT_001, near the ticket machine and platform signs. The station features transit station platforms, train or vehicle interior, views of urban landscape during the journey, and signage for transit lines and stops. The time is day, with bright indoor station lighting and natural daylight coming from the platform entrances. A few passengers walk toward the platforms, some checking departure boards. The station entrance is behind the transit employee, and platform signs are visible in the background.",
+    "action": "The transit employee points toward the ticket machine and explains how to buy a ticket. Jieun listens attentively and turns her head to look at the ticket machine.",
+    "camera": "Medium shot, eye-level angle, static and locked camera.",
+    "continuity": "Jieun is standing in front of the transit employee, having asked how to pay for the subway to Manhattan. She wears her backpack on her back, crossbody bag across her body, and holds her suitcase handle. The transit employee's hand is pointing toward the ticket machine. Jieun's head turns toward the ticket machine. The station entrance is behind the transit employee, and platform signs are visible in the background.",
+    "final_prompt": "A young Korean woman with an oval face, soft features, natural eyebrows, dark brown eyes, and light natural makeup, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch, with shoulder-length dark brown hair tucked behind ears, wearing a medium-sized travel backpack on her back and a small crossbody bag across her body, holding a checked suitcase handle in her hand, stands near the transit employee, facing the ticket machine with her head turned toward it, with an attentive and curious expression. Beside her, a female transit employee in her 30s with a neat professional appearance, hair tied back neatly, wearing a transit authority uniform with a visible badge, dark-colored uniform pants, and comfortable work shoes, carrying a small handheld radio, stands near the station entrance, facing Jieun, with her hand extended pointing toward the ticket machine, with a helpful and patient expression. The scene is set in the subway station entrance area of LOC_AIRPORT_TRANSIT_001, near the ticket machine and platform signs, with transit station platforms, train or vehicle interior, views of urban landscape during the journey, and signage for transit lines and stops. The time is day, with bright indoor station lighting and natural daylight coming from the platform entrances. A few passengers walk toward the platforms, some checking departure boards. The station entrance is behind the transit employee, and platform signs are visible in the background. The transit employee points toward the ticket machine and explains how to buy a ticket. Jieun listens attentively and turns her head to look at the ticket machine. Medium shot, eye-level angle, static and locked camera."
+  },
+  "negative_constraints": [
+    "Do not change character identity.",
+    "Do not change canonical location identity.",
+    "Do not introduce new characters.",
+    "Do not introduce new locations.",
+    "Do not alter canonical prop state.",
+    "Do not change story events.",
+    "Do not show Jieun moving past the subway station.",
+    "Do not show Jieun boarding a train.",
+    "Do not show Jieun's suitcase being lost or missing.",
+    "Do not show Jieun's passport or smartphone being dropped or lost.",
+    "Do not show specific ticket prices or payment method details."
+  ],
+  "continuity": {
+    "carry_in": [
+      "Jieun is standing in front of the transit employee.",
+      "She has asked how to pay for the subway to Manhattan."
+    ],
+    "carry_out": [
+      "Jieun has seen the ticket machine the employee pointed to.",
+      "She understands she needs to buy a ticket at the machine.",
+      "The transit employee is still pointing toward the ticket machine."
+    ],
+    "must_match_previous_shot": true,
+    "previous_scene_id": "S009",
+    "previous_shot_id": "SHOT_001",
+    "next_scene_id": "S009",
+    "next_shot_id": "SHOT_003"
+  }
+}

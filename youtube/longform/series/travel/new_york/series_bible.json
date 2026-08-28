@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 3
+  },
+  "series_id": "travel_new_york",
+  "category_id": "travel",
+  "series_name": "New York Travel",
+  "premise": "A continuous real-world travel story following one persistent protagonist through practical experiences and interactions in New York City.",
+  "genre": [
+    "travel",
+    "real_world_language_learning"
+  ],
+  "tone": [
+    "natural",
+    "practical",
+    "warm",
+    "immersive"
+  ],
+  "timeline": {
+    "model": "continuous",
+    "episode_order_is_chronological": true
+  },
+  "character_policy": {
+    "protagonist_is_persistent": true,
+    "protagonist_keeps_identity": true,
+    "protagonist_keeps_story_perspective": true,
+    "dialogue_supporting_characters_default_to_new_local_person": true,
+    "monologue_has_no_dialogue_partner": true
+  },
+  "story_rules": {
+    "preserve_continuity": true,
+    "avoid_repetitive_events": true,
+    "avoid_forced_dialogue": true,
+    "problems_may_span_multiple_scenes": true,
+    "unresolved_state_carries_forward": true
+  },
+  "episode_policy": {
+    "default_scene_count": 20,
+    "main_situation_minimum_scenes": 14,
+    "intro_travel_maximum_scenes": 2,
+    "outro_travel_maximum_scenes": 2,
+    "surprise_scene_minimum": 2,
+    "surprise_scene_maximum": 3,
+    "recommended_monologue_minimum": 6,
+    "recommended_monologue_maximum": 10
+  },
+  "learning_philosophy": {
+    "real_world_context_first": true,
+    "natural_spoken_language": true,
+    "avoid_textbook_like_dialogue": true,
+    "expressions_should_be_contextual": true
+  },
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "location_refs": [
+    "LOC_JFK_ARRIVALS_001",
+    "LOC_JFK_IMMIGRATION_001",
+    "LOC_JFK_BAGGAGE_001",
+    "LOC_JFK_GROUND_TRANSPORT_001"
+  ],
+  "forbidden_contradictions": [
+    "Do not change the protagonist identity between scenes or episodes.",
+    "Do not transfer the protagonist's central problem, request, reaction, or emotional perspective to a supporting character.",
+    "Do not force a dialogue partner into a scene that is naturally a monologue.",
+    "Do not resolve a surprise problem inside the same scene in which it is introduced.",
+    "Do not repeatedly use the same type of surprise event within one episode.",
+    "Do not ignore unresolved state from preceding scenes.",
+    "Do not place target language or CEFR level into the permanent series identity."
+  ]
+}

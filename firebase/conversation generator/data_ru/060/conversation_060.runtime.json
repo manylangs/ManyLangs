@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "c2",
+    "id": "060"
+  },
+  "title": {
+    "target": "Адаптация к корпоративной культуре",
+    "en": "Adapting to Corporate Culture",
+    "es": "Adaptación a la cultura corporativa",
+    "fr": "L'adaptation à la culture d'entreprise",
+    "pt": "Adaptação à cultura corporativa",
+    "kr": "회사 문화 적응하기",
+    "jp": "企業文化への適応",
+    "zh": "适应企业文化",
+    "ru": "Адаптация к корпоративной культуре"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, как тебе первые недели в нашей команде? Удалось уже влиться в рабочий ритм?",
+            "en": "Ivan, how have your first few weeks been with our team? Have you managed to get into the work rhythm?",
+            "es": "Iván, ¿qué tal tus primeras semanas en nuestro equipo? ¿Has conseguido ya adaptarte al ritmo de trabajo?",
+            "fr": "Ivan, comment se passent tes premières semaines dans notre équipe ? Tu as réussi à trouver le rythme de travail ?",
+            "pt": "Ivan, como estão as suas primeiras semanas na nossa equipe? Você já conseguiu se adaptar ao ritmo de trabalho?",
+            "kr": "이반, 우리 팀에서 첫 몇 주는 어땠어? 벌써 업무 리듬에 적응했어?",
+            "jp": "イワンさん、私たちのチームでの最初の数週間はどうですか？もう仕事のリズムに馴染めましたか？",
+            "zh": "伊万，你觉得在我们团队的头几周怎么样？已经适应工作节奏了吗？",
+            "ru": "Иван, как тебе первые недели в нашей команде? Удалось уже влиться в рабочий ритм?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Честно говоря, поначалу было непросто привыкнуть к такому темпу, но коллеги очень помогли.",
+            "en": "Honestly, at first it wasn't easy getting used to such a pace, but my colleagues helped a lot.",
+            "es": "Siendo sincero, al principio no fue fácil acostumbrarme a ese ritmo, pero los compañeros me ayudaron mucho.",
+            "fr": "Honnêtement, au début, il n'était pas facile de m'habituer à ce rythme, mais les collègues ont beaucoup aidé.",
+            "pt": "Para ser sincero, no começo não foi fácil me acostumar com esse ritmo, mas os colegas ajudaram muito.",
+            "kr": "솔직히 말하면, 처음에는 그런 속도에 적응하기가 쉽지 않았는데 동료들이 많이 도와줬어요.",
+            "jp": "正直に言うと、最初はこのペースに慣れるのが大変でしたが、同僚がとても助けてくれました。",
+            "zh": "说实话，一开始很难适应这种节奏，但同事们帮了我很多。",
+            "ru": "Честно говоря, поначалу было непросто привыкнуть к такому темпу, но коллеги очень помогли."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это замечательно, что ты не стесняешься спрашивать. У нас это только приветствуется.",
+            "en": "It's great that you're not afraid to ask questions. That's always welcome here.",
+            "es": "Es estupendo que no te dé vergüenza preguntar. Aquí eso siempre se valora.",
+            "fr": "C'est formidable que tu n'hésites pas à poser des questions. Chez nous, c'est bien vu.",
+            "pt": "É ótimo que você não tenha vergonha de perguntar. Aqui, isso é sempre bem-vindo.",
+            "kr": "네가 망설이지 않고 질문하는 게 정말 좋아. 우리는 그걸 오히려 환영해.",
+            "jp": "遠慮せずに質問してくれるのは素晴らしいことです。うちではそれはむしろ歓迎されています。",
+            "zh": "你不怕提问，这很好。我们非常欢迎这样做。",
+            "ru": "Это замечательно, что ты не стесняешься спрашивать. У нас это только приветствуется."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я заметил, что у вас принято открыто обсуждать ошибки, и это меня немного удивило.",
+            "en": "I noticed that you have a habit of openly discussing mistakes, and that surprised me a bit.",
+            "es": "He notado que tenéis por costumbre hablar abiertamente de los errores, y eso me sorprendió un poco.",
+            "fr": "J'ai remarqué que chez vous, on a l'habitude de discuter ouvertement des erreurs, et cela m'a un peu surpris.",
+            "pt": "Notei que vocês costumam discutir os erros abertamente, e isso me surpreendeu um pouco.",
+            "kr": "여기서는 실수를 공개적으로 논의하는 게 관례라는 걸 알게 됐는데, 그게 좀 놀라웠어요.",
+            "jp": "皆さんがミスをオープンに話し合う習慣があることに気づいて、少し驚きました。",
+            "zh": "我注意到你们习惯公开讨论错误，这让我有点惊讶。",
+            "ru": "Я заметил, что у вас принято открыто обсуждать ошибки, и это меня немного удивило."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, мы считаем, что лучше сразу выявить проблему, чем потом долго исправлять последствия.",
+            "en": "Yes, we believe it's better to identify a problem right away than to spend a long time fixing the consequences later.",
+            "es": "Sí, creemos que es mejor detectar el problema de inmediato que luego estar mucho tiempo corrigiendo las consecuencias.",
+            "fr": "Oui, nous pensons qu'il vaut mieux identifier le problème tout de suite plutôt que de passer du temps à corriger les conséquences plus tard.",
+            "pt": "Sim, acreditamos que é melhor identificar o problema logo do que passar muito tempo corrigindo as consequências depois.",
+            "kr": "응, 우리는 나중에 결과를 오랫동안 고치느니 차라리 문제를 바로 찾아내는 게 낫다고 생각해.",
+            "jp": "ええ、後で結果を長く修正するよりも、問題を早く見つけたほうがいいと思っています。",
+            "zh": "是的，我们认为最好及时发现问题，而不是之后花很长时间去弥补后果。",
+            "ru": "Да, мы считаем, что лучше сразу выявить проблему, чем потом долго исправлять последствия."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен, такой подход действительно помогает быстрее учиться и не повторять промахов.",
+            "en": "I agree, this approach really helps you learn faster and not repeat the same mistakes.",
+            "es": "De acuerdo, ese enfoque realmente ayuda a aprender más rápido y a no repetir los fallos.",
+            "fr": "Je suis d'accord, cette approche aide vraiment à apprendre plus vite et à ne pas répéter les erreurs.",
+            "pt": "Concordo, essa abordagem realmente ajuda a aprender mais rápido e a não repetir os erros.",
+            "kr": "동의해요. 그런 접근 방식이 실제로 더 빨리 배우고 실수를 반복하지 않게 도와주네요.",
+            "jp": "同意します。そのやり方は本当に早く学べて、失敗を繰り返さないのに役立ちますね。",
+            "zh": "我同意，这种方法确实有助于更快地学习，并且不再犯同样的错误。",
+            "ru": "Согласен, такой подход действительно помогает быстрее учиться и не повторять промахов."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты уже привык к нашим еженедельным планёркам или они всё ещё кажутся слишком долгими?",
+            "en": "Dmitry, have you gotten used to our weekly meetings yet, or do they still seem too long?",
+            "es": "Dmitri, ¿ya te has acostumbrado a nuestras reuniones semanales o todavía te parecen demasiado largas?",
+            "fr": "Dmitri, tu t'es déjà habitué à nos réunions hebdomadaires ou elles te semblent encore trop longues ?",
+            "pt": "Dmitri, você já se acostumou com as nossas reuniões semanais ou elas ainda parecem longas demais?",
+            "kr": "드미트리, 우리 주간 회의에 벌써 적응했어, 아니면 아직도 너무 긴 것 같아?",
+            "jp": "ドミトリーさん、毎週のミーティングにはもう慣れましたか、それともまだ長すぎると思いますか？",
+            "zh": "德米特里，你已经习惯我们每周的例会了吗，还是仍然觉得它们太长了？",
+            "ru": "Дмитрий, ты уже привык к нашим еженедельным планёркам или они всё ещё кажутся слишком долгими?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Если честно, сначала они казались мне затянутыми, но теперь вижу, что это полезно для синхронизации.",
+            "en": "To be honest, at first they seemed drawn out to me, but now I see that they're useful for keeping everyone on the same page.",
+            "es": "Siendo honesto, al principio me parecían muy extensas, pero ahora veo que son útiles para la sincronización.",
+            "fr": "Pour être honnête, au début, elles me semblaient interminables, mais maintenant je vois que c'est utile pour la synchronisation.",
+            "pt": "Para ser honesto, no começo elas me pareciam arrastadas, mas agora vejo que são úteis para o alinhamento.",
+            "kr": "솔직히 처음에는 좀 길게 느껴졌는데, 이제는 팀원들 간에 의견을 맞추는 데 유용하다는 걸 알겠어요.",
+            "jp": "正直言うと、最初は長引くように感じましたが、今は情報共有に役立つと分かりました。",
+            "zh": "说实话，一开始我觉得它们太拖沓，但现在我明白了这对同步工作很有帮助。",
+            "ru": "Если честно, сначала они казались мне затянутыми, но теперь вижу, что это полезно для синхронизации."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мы стараемся делать их максимально продуктивными, чтобы не тратить время команды впустую.",
+            "en": "We try to make them as productive as possible so we don't waste the team's time.",
+            "es": "Intentamos que sean lo más productivas posible para no hacer perder el tiempo al equipo.",
+            "fr": "Nous essayons de les rendre aussi productives que possible pour ne pas gaspiller le temps de l'équipe.",
+            "pt": "A gente tenta torná-las o mais produtivas possível, para não perder o tempo da equipe à toa.",
+            "kr": "우리는 팀 시간을 낭비하지 않도록 회의를 최대한 생산적으로 만들려고 노력해.",
+            "jp": "チームの時間を無駄にしないように、できるだけ生産的なものにしようと努めています。",
+            "zh": "我们尽量让会议高效，不浪费团队的时间。",
+            "ru": "Мы стараемся делать их максимально продуктивными, чтобы не тратить время команды впустую."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мне нравится, что у каждого есть право высказаться и предложить свою идею.",
+            "en": "I like that everyone has the right to speak up and offer their own idea.",
+            "es": "Me gusta que cada uno tenga derecho a opinar y a proponer su idea.",
+            "fr": "J'aime le fait que chacun ait le droit de s'exprimer et de proposer son idée.",
+            "pt": "Gosto do fato de que todo mundo tem o direito de se manifestar e propor uma ideia.",
+            "kr": "모든 사람이 발언할 권리와 자기 아이디어를 제안할 권리가 있다는 점이 마음에 들어요.",
+            "jp": "誰にでも意見を言って自分のアイデアを提案する権利があるのが気に入っています。",
+            "zh": "我喜欢每个人都有发言权和提出自己想法的权利。",
+            "ru": "Мне нравится, что у каждого есть право высказаться и предложить свою идею."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это основа нашей культуры — мы ценим инициативу и не боимся обсуждать разные точки зрения.",
+            "en": "That's the foundation of our culture — we value initiative and aren't afraid to discuss different points of view.",
+            "es": "Esa es la base de nuestra cultura: valoramos la iniciativa y no tenemos miedo de debatir diferentes puntos de vista.",
+            "fr": "C'est la base de notre culture — nous valorisons l'initiative et nous n'avons pas peur de discuter de différents points de vue.",
+            "pt": "Essa é a base da nossa cultura — valorizamos a iniciativa e não temos medo de discutir pontos de vista diferentes.",
+            "kr": "그게 우리 문화의 기본이야. 우리는 주도성을 중요하게 여기고 다양한 관점을 논의하는 걸 두려워하지 않아.",
+            "jp": "それが私たちの文化の基本です。主体性を重視し、異なる視点を話し合うことを恐れません。",
+            "zh": "这是我们文化的基础——我们重视主动性，不怕讨论不同的观点。",
+            "ru": "Это основа нашей культуры — мы ценим инициативу и не боимся обсуждать разные точки зрения."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично, тогда в следующий раз я тоже подготовлю несколько предложений по нашему проекту.",
+            "en": "Great, then next time I'll prepare a few suggestions for our project too.",
+            "es": "Genial, entonces la próxima vez yo también prepararé algunas propuestas para nuestro proyecto.",
+            "fr": "Parfait, alors la prochaine fois, je préparerai aussi quelques propositions pour notre projet.",
+            "pt": "Ótimo, então da próxima vez eu também vou preparar algumas sugestões para o nosso projeto.",
+            "kr": "좋아요. 그럼 다음에는 저도 우리 프로젝트에 대한 제안 몇 가지를 준비해 올게요.",
+            "jp": "素晴らしい。では、次回は私もプロジェクトについていくつか提案を用意します。",
+            "zh": "太好了，那下次我也为我们的项目准备一些建议。",
+            "ru": "Отлично, тогда в следующий раз я тоже подготовлю несколько предложений по нашему проекту."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, как ты ощущаешь себя в неформальной обстановке после работы? Тебе комфортно?",
+            "en": "Sergey, how do you feel in the informal setting after work? Are you comfortable?",
+            "es": "Serguéi, ¿cómo te sientes en el ambiente informal después del trabajo? ¿Estás cómodo?",
+            "fr": "Sergueï, comment te sens-tu dans un cadre informel après le travail ? Tu es à l'aise ?",
+            "pt": "Sergei, como você se sente no ambiente informal depois do trabalho? Você fica confortável?",
+            "kr": "세르게이, 퇴근 후 비공식적인 자리에서는 기분이 어때? 편안해?",
+            "jp": "セルゲイさん、仕事後のくだけた雰囲気ではどう感じますか？居心地はいいですか？",
+            "zh": "谢尔盖，你在下班后的非正式场合感觉怎么样？觉得自在吗？",
+            "ru": "Сергей, как ты ощущаешь себя в неформальной обстановке после работы? Тебе комфортно?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Признаться, я немного удивился, что у вас принято так часто общаться вне офиса.",
+            "en": "I'll admit, I was a bit surprised that you're used to socializing outside the office so often.",
+            "es": "Para ser sincero, me sorprendió un poco que tengáis por costumbre relacionaros tan a menudo fuera de la oficina.",
+            "fr": "Pour être honnête, j'ai été un peu surpris que chez vous, on ait l'habitude de communiquer si souvent en dehors du bureau.",
+            "pt": "Confesso que fiquei um pouco surpreso por vocês terem o costume de se encontrar tão frequentemente fora do escritório.",
+            "kr": "솔직히 말하면, 사무실 밖에서 이렇게 자주 어울리는 게 관례라는 걸 알고 좀 놀랐어요.",
+            "jp": "認めます、オフィスの外でこんなに頻繁に交流する習慣があることに少し驚きました。",
+            "zh": "说实话，我有点惊讶你们习惯在办公室之外这么频繁地交流。",
+            "ru": "Признаться, я немного удивился, что у вас принято так часто общаться вне офиса."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Для нас это способ лучше узнать друг друга и укрепить командный дух.",
+            "en": "For us, it's a way to get to know each other better and strengthen team spirit.",
+            "es": "Para nosotros es una forma de conocernos mejor y de fortalecer el espíritu de equipo.",
+            "fr": "Pour nous, c'est un moyen de mieux se connaître et de renforcer l'esprit d'équipe.",
+            "pt": "Para nós, é uma forma de nos conhecermos melhor e fortalecer o espírito de equipe.",
+            "kr": "우리에게 그건 서로를 더 잘 알게 되고 팀 정신을 강화하는 방법이야.",
+            "jp": "私たちにとってそれは、お互いをもっとよく知り、チームワークを強める方法なんです。",
+            "zh": "对我们来说，这是更好地了解彼此、加强团队精神的方式。",
+            "ru": "Для нас это способ лучше узнать друг друга и укрепить командный дух."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понимаю, это помогает доверять друг другу и в рабочих вопросах.",
+            "en": "I understand, it helps you trust each other in work matters too.",
+            "es": "Lo entiendo, eso ayuda a confiar los unos en los otros también en los asuntos de trabajo.",
+            "fr": "Je comprends, cela aide à se faire confiance aussi dans les questions professionnelles.",
+            "pt": "Entendo, isso ajuda a confiar uns nos outros também nas questões de trabalho.",
+            "kr": "이해해요. 그게 업무 문제에서도 서로를 신뢰하는 데 도움이 되네요.",
+            "jp": "なるほど、それは仕事の問題でもお互いを信頼するのに役立ちますね。",
+            "zh": "我理解，这也有助于在工作问题上互相信任。",
+            "ru": "Понимаю, это помогает доверять друг другу и в рабочих вопросах."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Именно. Когда знаешь человека ближе, легче находить общий язык в сложных ситуациях.",
+            "en": "Exactly. When you know a person better, it's easier to find common ground in difficult situations.",
+            "es": "Exacto. Cuando conoces mejor a una persona, es más fácil encontrar puntos en común en situaciones difíciles.",
+            "fr": "Exactement. Quand on connaît mieux une personne, il est plus facile de trouver un terrain d'entente dans les situations difficiles.",
+            "pt": "Exatamente. Quando você conhece a pessoa melhor, fica mais fácil encontrar um ponto em comum em situações difíceis.",
+            "kr": "바로 그거야. 사람을 더 가까이 알게 되면 어려운 상황에서도 공통 언어를 찾기가 더 쉬워져.",
+            "jp": "まさにそうです。人をよりよく知っていれば、難しい状況でも共通の理解を見つけやすいんです。",
+            "zh": "没错。当你更了解一个人时，在复杂情况下就更容易找到共同语言。",
+            "ru": "Именно. Когда знаешь человека ближе, легче находить общий язык в сложных ситуациях."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пожалуй, ты права. Я начинаю ценить такой подход, хотя поначалу он был непривычен.",
+            "en": "I suppose you're right. I'm starting to appreciate this approach, even though it was unusual at first.",
+            "es": "Supongo que tienes razón. Empiezo a valorar ese enfoque, aunque al principio me resultaba extraño.",
+            "fr": "Tu as sans doute raison. Je commence à apprécier cette approche, même si au début elle était inhabituelle.",
+            "pt": "Acho que você tem razão. Estou começando a valorizar essa abordagem, embora no começo ela fosse estranha para mim.",
+            "kr": "아마 맞는 말이에요. 처음에는 낯설었지만 이제는 그런 접근 방식을 소중히 여기기 시작했어요.",
+            "jp": "そうかもしれませんね。最初は慣れませんでしたが、そういうやり方を評価し始めています。",
+            "zh": "也许你说得对。我开始欣赏这种方式了，虽然一开始不太习惯。",
+            "ru": "Пожалуй, ты права. Я начинаю ценить такой подход, хотя поначалу он был непривычен."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, расскажи, как ты адаптировалась к нашему правилу самостоятельно планировать свой день?",
+            "en": "Anna, tell me, how did you adapt to our rule of planning your own day?",
+            "es": "Ana, cuéntame, ¿cómo te has adaptado a nuestra norma de planificar tu propio día?",
+            "fr": "Anna, raconte-moi comment tu t'es adaptée à notre règle de planifier ta journée de manière autonome ?",
+            "pt": "Anna, me conta como você se adaptou à nossa regra de planejar o próprio dia de forma autônoma?",
+            "kr": "안나, 하루 일정을 스스로 계획해야 한다는 우리 규칙에 어떻게 적응했는지 말해줘.",
+            "jp": "アンナさん、自分の一日を自分で計画するという私たちのルールにどう適応しましたか？",
+            "zh": "安娜，跟我们说说，你是怎么适应我们自行安排一天工作的规定的？",
+            "ru": "Анна, расскажи, как ты адаптировалась к нашему правилу самостоятельно планировать свой день?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Сначала это было непривычно, ведь раньше я привыкла к более строгому контролю со стороны руководства.",
+            "en": "At first it was unusual, since before I was used to stricter control from management.",
+            "es": "Al principio era raro, porque antes estaba acostumbrada a un control más estricto por parte de la dirección.",
+            "fr": "Au début, c'était inhabituel, car avant, j'étais habituée à un contrôle plus strict de la part de la direction.",
+            "pt": "No começo foi estranho, porque antes eu estava acostumada a um controle mais rígido por parte da gestão.",
+            "kr": "처음에는 낯설었어요. 예전에는 관리진의 더 엄격한 통제에 익숙했거든요.",
+            "jp": "最初は慣れませんでした。以前はもっと厳しい管理職の管理に慣れていたからです。",
+            "zh": "一开始很不习惯，因为以前我习惯了管理层更严格的控制。",
+            "ru": "Сначала это было непривычно, ведь раньше я привыкла к более строгому контролю со стороны руководства."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мы сознательно даём сотрудникам свободу, чтобы они чувствовали ответственность за результат.",
+            "en": "We deliberately give employees freedom so they feel responsible for the results.",
+            "es": "Damos libertad a los empleados a propósito, para que sientan responsabilidad por el resultado.",
+            "fr": "Nous donnons délibérément de la liberté aux employés pour qu'ils se sentent responsables du résultat.",
+            "pt": "Damos liberdade aos funcionários de propósito, para que eles sintam responsabilidade pelo resultado.",
+            "kr": "우리는 의도적으로 직원들에게 자유를 줘서 결과에 대한 책임감을 느끼게 해.",
+            "jp": "私たちは意図的に社員に自由を与えています。結果に対する責任を感じてほしいからです。",
+            "zh": "我们有意给员工自由，让他们对结果负责。",
+            "ru": "Мы сознательно даём сотрудникам свободу, чтобы они чувствовали ответственность за результат."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Теперь я понимаю, что это развивает дисциплину и умение расставлять приоритеты.",
+            "en": "Now I understand that it develops discipline and the ability to set priorities.",
+            "es": "Ahora entiendo que eso desarrolla la disciplina y la capacidad de establecer prioridades.",
+            "fr": "Maintenant, je comprends que cela développe la discipline et la capacité à établir des priorités.",
+            "pt": "Agora entendo que isso desenvolve a disciplina e a capacidade de definir prioridades.",
+            "kr": "이제는 그게 규율과 우선순위를 정하는 능력을 키워준다는 걸 알겠어요.",
+            "jp": "今ではそれが規律と優先順位をつける力を育てると分かりました。",
+            "zh": "现在我明白了，这能培养纪律性和分清轻重缓急的能力。",
+            "ru": "Теперь я понимаю, что это развивает дисциплину и умение расставлять приоритеты."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "И, кстати, у тебя отлично получается — твой последний отчёт был очень структурированным.",
+            "en": "And, by the way, you're doing a great job — your last report was very well structured.",
+            "es": "Y, por cierto, lo estás haciendo muy bien: tu último informe estaba muy bien estructurado.",
+            "fr": "Et d'ailleurs, tu t'en sors très bien — ton dernier rapport était très structuré.",
+            "pt": "E, aliás, você está indo muito bem — o seu último relatório foi muito bem estruturado.",
+            "kr": "그리고 말이 나왔으니 말인데, 너 정말 잘하고 있어. 네 지난 보고서는 아주 체계적이었어.",
+            "jp": "それに、あなたはとても上手にやっていますよ。最後の報告書はとても体系的でした。",
+            "zh": "而且，顺便说一句，你做得非常好——你最近的报告结构非常清晰。",
+            "ru": "И, кстати, у тебя отлично получается — твой последний отчёт был очень структурированным."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо, приятно слышать. Постараюсь и дальше оправдывать ваше доверие.",
+            "en": "Thank you, it's nice to hear that. I'll try to keep living up to your trust.",
+            "es": "Gracias, me alegra oírlo. Intentaré seguir estando a la altura de vuestra confianza.",
+            "fr": "Merci, c'est agréable à entendre. Je vais continuer à être à la hauteur de votre confiance.",
+            "pt": "Obrigada, é bom ouvir isso. Vou continuar fazendo por merecer a confiança de vocês.",
+            "kr": "감사해요. 그렇게 들으니 기분이 좋네요. 앞으로도 계속 그 신뢰에 부응하도록 노력할게요.",
+            "jp": "ありがとうございます。そう言っていただけると嬉しいです。これからも信頼に応えられるよう頑張ります。",
+            "zh": "谢谢，听到你这么说很高兴。我会继续努力，不辜负你们的信任。",
+            "ru": "Спасибо, приятно слышать. Постараюсь и дальше оправдывать ваше доверие."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, как ты относишься к нашему обычаю давать обратную связь сразу после презентации?",
+            "en": "Ivan, how do you feel about our custom of giving feedback right after a presentation?",
+            "es": "Iván, ¿qué opinas de nuestra costumbre de dar retroalimentación justo después de la presentación?",
+            "fr": "Ivan, comment perçois-tu notre habitude de donner un retour immédiatement après une présentation ?",
+            "pt": "Ivan, o que você acha do nosso costume de dar feedback logo após a apresentação?",
+            "kr": "이반, 발표 직후에 바로 피드백을 주는 우리 관행에 대해 어떻게 생각해?",
+            "jp": "イワンさん、プレゼンテーションの直後にフィードバックをするという私たちの習慣をどう思いますか？",
+            "zh": "伊万，你怎么看待我们演讲结束后立即给出反馈的习惯？",
+            "ru": "Иван, как ты относишься к нашему обычаю давать обратную связь сразу после презентации?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Честно говоря, поначалу это было непросто, но я вижу в этом огромную пользу для роста.",
+            "en": "Honestly, at first it wasn't easy, but I see huge value in it for growth.",
+            "es": "Siendo sincero, al principio no fue fácil, pero veo un gran beneficio para el crecimiento.",
+            "fr": "Honnêtement, au début, ce n'était pas facile, mais j'y vois un énorme bénéfice pour la progression.",
+            "pt": "Para ser sincero, no começo não foi fácil, mas vejo um benefício enorme para o crescimento.",
+            "kr": "솔직히 말하면, 처음에는 쉽지 않았어요. 하지만 성장에 엄청난 도움이 된다는 걸 알겠어요.",
+            "jp": "正直に言うと、最初は大変でしたが、成長のために大きな利点があると思います。",
+            "zh": "说实话，一开始这并不容易，但我看到了这对成长有巨大的好处。",
+            "ru": "Честно говоря, поначалу это было непросто, но я вижу в этом огромную пользу для роста."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мы стараемся делать это конструктивно, чтобы каждый мог улучшить свою работу.",
+            "en": "We try to do it constructively so that everyone can improve their work.",
+            "es": "Intentamos hacerlo de forma constructiva para que cada uno pueda mejorar su trabajo.",
+            "fr": "Nous essayons de le faire de manière constructive pour que chacun puisse améliorer son travail.",
+            "pt": "Procuramos fazer isso de forma construtiva, para que cada um possa melhorar o seu trabalho.",
+            "kr": "우리는 모두가 자기 일을 개선할 수 있도록 건설적으로 피드백을 주려고 해.",
+            "jp": "誰もが自分の仕事を改善できるように、建設的に行うよう努めています。",
+            "zh": "我们尽量让反馈具有建设性，让每个人都能改进自己的工作。",
+            "ru": "Мы стараемся делать это конструктивно, чтобы каждый мог улучшить свою работу."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, ваши замечания всегда конкретные и касаются сути, а не личности.",
+            "en": "Yes, your comments are always specific and about the substance, not the person.",
+            "es": "Sí, vuestros comentarios siempre son concretos y se centran en el fondo, no en la persona.",
+            "fr": "Oui, vos remarques sont toujours concrètes et portent sur le fond, pas sur la personne.",
+            "pt": "Sim, as observações de vocês são sempre objetivas e dizem respeito ao essencial, não à pessoa.",
+            "kr": "네, 지적해 주시는 내용이 항상 구체적이고 개인이 아니라 본질에 관한 거예요.",
+            "jp": "ええ、皆さんの指摘はいつも具体的で、人格ではなく本質に関わるものです。",
+            "zh": "是的，你们的意见总是很具体，针对事情本身，而不是针对个人。",
+            "ru": "Да, ваши замечания всегда конкретные и касаются сути, а не личности."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это важный принцип — мы критикуем идею, а не человека, который её предложил.",
+            "en": "That's an important principle — we criticize the idea, not the person who suggested it.",
+            "es": "Ese es un principio importante: criticamos la idea, no a la persona que la propuso.",
+            "fr": "C'est un principe important — nous critiquons l'idée, pas la personne qui l'a proposée.",
+            "pt": "Esse é um princípio importante — criticamos a ideia, não a pessoa que a propôs.",
+            "kr": "그건 중요한 원칙이야. 우리는 아이디어를 비판하지, 그걸 제안한 사람을 비판하지 않아.",
+            "jp": "それは重要な原則です。私たちはアイデアを批判しますが、それを提案した人を批判するのではありません。",
+            "zh": "这是一个重要的原则——我们批评的是想法，而不是提出想法的人。",
+            "ru": "Это важный принцип — мы критикуем идею, а не человека, который её предложил."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Именно поэтому я чувствую себя спокойно и готов открыто обсуждать свои недочёты.",
+            "en": "That's exactly why I feel at ease and am ready to openly discuss my shortcomings.",
+            "es": "Por eso me siento tranquilo y estoy dispuesto a hablar abiertamente de mis fallos.",
+            "fr": "C'est précisément pour cela que je me sens serein et prêt à discuter ouvertement de mes lacunes.",
+            "pt": "É por isso que me sinto tranquilo e pronto para discutir abertamente as minhas falhas.",
+            "kr": "그래서 저는 마음 편하게 제 부족한 점을 솔직하게 이야기할 수 있는 것 같아요.",
+            "jp": "だからこそ、私は安心して自分の欠点をオープンに話し合えるんです。",
+            "zh": "正因如此，我感到很安心，也愿意公开讨论自己的不足。",
+            "ru": "Именно поэтому я чувствую себя спокойно и готов открыто обсуждать свои недочёты."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, ты уже привыкла к тому, что у нас решения часто принимаются коллегиально?",
+            "en": "Elena, have you gotten used to the fact that we often make decisions collectively?",
+            "es": "Elena, ¿ya te has acostumbrado a que aquí las decisiones suelen tomarse de forma colegiada?",
+            "fr": "Elena, tu t'es déjà habituée au fait que chez nous, les décisions sont souvent prises collectivement ?",
+            "pt": "Elena, você já se acostumou com o fato de que aqui as decisões costumam ser tomadas de forma colegiada?",
+            "kr": "엘레나, 우리가 결정을 자주 팀원들과 함께 내리는 것에 벌써 적응했어?",
+            "jp": "エレナさん、私たちが決定をよく集団で行うことにはもう慣れましたか？",
+            "zh": "叶连娜，你已经习惯我们经常集体做决定的做法了吗？",
+            "ru": "Елена, ты уже привыкла к тому, что у нас решения часто принимаются коллегиально?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Поначалу мне казалось, что это замедляет процесс, но теперь вижу, что это снижает риски.",
+            "en": "At first it seemed to me that it slowed things down, but now I see that it reduces risks.",
+            "es": "Al principio me parecía que eso ralentizaba el proceso, pero ahora veo que reduce los riesgos.",
+            "fr": "Au début, j'avais l'impression que cela ralentissait le processus, mais maintenant je vois que cela réduit les risques.",
+            "pt": "No começo, eu achava que isso atrasava o processo, mas agora vejo que reduz os riscos.",
+            "kr": "처음에는 그게 절차를 늦춘다고 생각했는데, 이제는 위험을 줄여준다는 걸 알겠어요.",
+            "jp": "最初はそれがプロセスを遅くするように思えましたが、今はリスクを減らすと分かりました。",
+            "zh": "一开始我觉得这拖慢了进程，但现在我明白了这能降低风险。",
+            "ru": "Поначалу мне казалось, что это замедляет процесс, но теперь вижу, что это снижает риски."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мы считаем, что коллективное обсуждение позволяет учесть все нюансы и избежать ошибок.",
+            "en": "We believe that collective discussion allows us to take all the nuances into account and avoid mistakes.",
+            "es": "Creemos que la discusión colectiva permite tener en cuenta todos los matices y evitar errores.",
+            "fr": "Nous pensons que la discussion collective permet de prendre en compte toutes les nuances et d'éviter les erreurs.",
+            "pt": "Acreditamos que a discussão coletiva permite considerar todos os detalhes e evitar erros.",
+            "kr": "우리는 집단 토론을 통해 모든 세부 사항을 고려하고 실수를 피할 수 있다고 생각해.",
+            "jp": "集団での話し合いによって、あらゆる細かい点を考慮し、ミスを避けられると考えています。",
+            "zh": "我们认为集体讨论能考虑到所有细节，避免错误。",
+            "ru": "Мы считаем, что коллективное обсуждение позволяет учесть все нюансы и избежать ошибок."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласна, особенно когда речь идёт о сложных задачах, где важна каждая деталь.",
+            "en": "I agree, especially when it comes to complex tasks where every detail matters.",
+            "es": "De acuerdo, sobre todo cuando se trata de tareas complejas donde cada detalle importa.",
+            "fr": "Je suis d'accord, surtout lorsqu'il s'agit de tâches complexes où chaque détail compte.",
+            "pt": "Concordo, principalmente quando se trata de tarefas complexas, em que cada detalhe é importante.",
+            "kr": "동의해요. 특히 모든 세부 사항이 중요한 복잡한 작업에서는 더 그런 것 같아요.",
+            "jp": "同意します。特に細部が重要な複雑なタスクの場合はそうです。",
+            "zh": "我同意，尤其是在处理复杂任务时，每个细节都很重要。",
+            "ru": "Согласна, особенно когда речь идёт о сложных задачах, где важна каждая деталь."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "И потом, когда все участвуют в решении, каждый чувствует ответственность за его исполнение.",
+            "en": "And besides, when everyone takes part in the decision, everyone feels responsible for carrying it out.",
+            "es": "Y además, cuando todos participan en la decisión, cada uno se siente responsable de su ejecución.",
+            "fr": "Et puis, quand tout le monde participe à la décision, chacun se sent responsable de sa mise en œuvre.",
+            "pt": "E além disso, quando todos participam da decisão, cada um sente responsabilidade pela sua execução.",
+            "kr": "그리고 모두가 결정에 참여하면, 각자가 그 결정을 실행할 책임감을 느끼게 돼.",
+            "jp": "それに、皆が決定に関わると、各自がその実行に責任を感じます。",
+            "zh": "而且，当所有人都参与决策时，每个人都会对执行感到有责任。",
+            "ru": "И потом, когда все участвуют в решении, каждый чувствует ответственность за его исполнение."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, это действительно повышает вовлечённость и мотивацию всей команды.",
+            "en": "Yes, that really increases the engagement and motivation of the whole team.",
+            "es": "Sí, eso realmente aumenta la implicación y la motivación de todo el equipo.",
+            "fr": "Oui, cela augmente vraiment l'implication et la motivation de toute l'équipe.",
+            "pt": "Sim, isso realmente aumenta o engajamento e a motivação de toda a equipe.",
+            "kr": "네, 그게 정말 팀 전체의 참여도와 동기부여를 높여주네요.",
+            "jp": "ええ、それは本当にチーム全体の関与とモチベーションを高めますね。",
+            "zh": "是的，这确实提高了整个团队的参与度和积极性。",
+            "ru": "Да, это действительно повышает вовлечённость и мотивацию всей команды."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, как ты воспринял нашу традицию отмечать успехи проекта в конце каждого этапа?",
+            "en": "Dmitry, how did you take to our tradition of celebrating project successes at the end of each stage?",
+            "es": "Dmitri, ¿cómo has recibido nuestra tradición de celebrar los logros del proyecto al final de cada etapa?",
+            "fr": "Dmitri, comment as-tu perçu notre tradition de célébrer les réussites du projet à la fin de chaque étape ?",
+            "pt": "Dmitri, como você recebeu a nossa tradição de comemorar os sucessos do projeto ao final de cada etapa?",
+            "kr": "드미트리, 각 단계가 끝날 때마다 프로젝트 성과를 기념하는 우리 전통을 어떻게 받아들였어?",
+            "jp": "ドミトリーさん、各段階の終わりにプロジェクトの成功を祝うという私たちの伝統をどう受け止めましたか？",
+            "zh": "德米特里，你是怎么看待我们在每个阶段结束时庆祝项目成果的传统的？",
+            "ru": "Дмитрий, как ты воспринял нашу традицию отмечать успехи проекта в конце каждого этапа?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Признаюсь, сначала я считал это лишним, но потом понял, что это отличная мотивация.",
+            "en": "I'll admit, at first I thought it was unnecessary, but then I realized it's great motivation.",
+            "es": "Lo confieso, al principio lo consideraba innecesario, pero luego entendí que es una gran motivación.",
+            "fr": "Je l'avoue, au début, je trouvais cela superflu, mais ensuite j'ai compris que c'était une excellente motivation.",
+            "pt": "Confesso que no começo eu achava isso desnecessário, mas depois entendi que é uma ótima motivação.",
+            "kr": "솔직히 인정하건대, 처음에는 그게 불필요하다고 생각했는데 나중에 그게 훌륭한 동기부여라는 걸 알게 됐어요.",
+            "jp": "認めます、最初は余計なことだと思っていましたが、その後それが素晴らしいモチベーションになると分かりました。",
+            "zh": "说实话，一开始我觉得这没必要，但后来我明白了这是很好的激励。",
+            "ru": "Признаюсь, сначала я считал это лишним, но потом понял, что это отличная мотивация."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мы верим, что важно замечать достижения, а не только работать над ошибками.",
+            "en": "We believe it's important to acknowledge achievements, not just work on mistakes.",
+            "es": "Creemos que es importante reconocer los logros, y no solo trabajar sobre los errores.",
+            "fr": "Nous croyons qu'il est important de remarquer les accomplissements, et pas seulement de travailler sur les erreurs.",
+            "pt": "Acreditamos que é importante reconhecer as conquistas, e não apenas trabalhar em cima dos erros.",
+            "kr": "우리는 실수를 바로잡는 것뿐만 아니라 성과를 알아차리는 것도 중요하다고 믿어.",
+            "jp": "私たちは、ミスを修正するだけでなく、成果に気づくことが重要だと信じています。",
+            "zh": "我们相信，关注成就是很重要的，而不只是改正错误。",
+            "ru": "Мы верим, что важно замечать достижения, а не только работать над ошибками."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это помогает команде чувствовать, что её труд ценят, и заряжает энергией на будущее.",
+            "en": "It helps the team feel that their work is valued and gives them energy for the future.",
+            "es": "Eso ayuda al equipo a sentir que su trabajo es valorado y da energía para el futuro.",
+            "fr": "Cela aide l'équipe à sentir que son travail est valorisé et donne de l'énergie pour l'avenir.",
+            "pt": "Isso ajuda a equipe a sentir que o trabalho dela é valorizado e dá energia para o futuro.",
+            "kr": "그게 팀이 자기 노력을 인정받고 있다는 걸 느끼게 해주고, 앞으로 나아갈 에너지를 채워주네요.",
+            "jp": "それはチームが自分の仕事を評価されていると感じるのに役立ち、未来へのエネルギーを与えますね。",
+            "zh": "这能让团队感到自己的工作受到重视，并为未来充电。",
+            "ru": "Это помогает команде чувствовать, что её труд ценят, и заряжает энергией на будущее."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "К тому же в неформальной обстановке часто рождаются новые идеи и укрепляются связи.",
+            "en": "Besides, new ideas often come up in an informal setting, and bonds get stronger.",
+            "es": "Además, en un ambiente distendido suelen surgir nuevas ideas y se fortalecen los vínculos.",
+            "fr": "De plus, dans un cadre informel, de nouvelles idées naissent souvent et les liens se renforcent.",
+            "pt": "Além disso, é no ambiente informal que muitas vezes surgem novas ideias e os laços se fortalecem.",
+            "kr": "게다가 비공식적인 자리에서는 새로운 아이디어가 자주 떠오르고 관계도 강화돼.",
+            "jp": "それに、くだけた雰囲気の中で新しいアイデアが生まれ、つながりが強まることがよくあります。",
+            "zh": "而且，在非正式的氛围中，常常会诞生新想法，联系也会加强。",
+            "ru": "К тому же в неформальной обстановке часто рождаются новые идеи и укрепляются связи."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен, теперь я с нетерпением жду таких встреч и сам предлагаю поводы для них.",
+            "en": "I agree, now I look forward to those gatherings and even suggest reasons for them myself.",
+            "es": "De acuerdo, ahora espero esas reuniones con ganas y yo mismo propongo motivos para celebrarlas.",
+            "fr": "Je suis d'accord, maintenant j'attends ces rencontres avec impatience et je propose moi-même des occasions de les organiser.",
+            "pt": "Concordo, agora eu aguardo esses encontros com ansiedade e eu mesmo proponho motivos para eles.",
+            "kr": "동의해요. 이제는 그런 모임을 기다리게 되고, 저도 직접 그럴 만한 자리를 제안하고 있어요.",
+            "jp": "同意します。今ではそんな集まりを楽しみにしていますし、自分からその機会を提案しています。",
+            "zh": "我同意，现在我很期待这样的聚会，而且我自己也会提议庆祝的理由。",
+            "ru": "Согласен, теперь я с нетерпением жду таких встреч и сам предлагаю поводы для них."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, как ты адаптировалась к нашему принципу прозрачности в общении между отделами?",
+            "en": "Olga, how did you adapt to our principle of transparency in communication between departments?",
+            "es": "Olga, ¿cómo te has adaptado a nuestro principio de transparencia en la comunicación entre departamentos?",
+            "fr": "Olga, comment t'es-tu adaptée à notre principe de transparence dans la communication entre les services ?",
+            "pt": "Olga, como você se adaptou ao nosso princípio de transparência na comunicação entre os departamentos?",
+            "kr": "올가, 부서 간 소통의 투명성이라는 우리 원칙에 어떻게 적응했어?",
+            "jp": "オルガさん、部署間のコミュニケーションにおける透明性の原則にどう適応しましたか？",
+            "zh": "奥莉加，你是怎么适应我们部门之间沟通透明原则的？",
+            "ru": "Ольга, как ты адаптировалась к нашему принципу прозрачности в общении между отделами?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Сначала меня удивляло, что мы можем напрямую обсуждать вопросы с другими командами без посредников.",
+            "en": "At first I was surprised that we could directly discuss things with other teams without intermediaries.",
+            "es": "Al principio me sorprendía que pudiéramos hablar directamente con otros equipos sin intermediarios.",
+            "fr": "Au début, j'étais surprise que nous puissions discuter directement avec d'autres équipes sans intermédiaires.",
+            "pt": "No começo, me surpreendia o fato de podermos discutir assuntos diretamente com outras equipes, sem intermediários.",
+            "kr": "처음에는 중간 단계 없이 다른 팀과 직접 문제를 논의할 수 있다는 게 놀라웠어요.",
+            "jp": "最初は、仲介者なしで他のチームと直接問題を話し合えることに驚いていました。",
+            "zh": "一开始我很惊讶，我们可以直接与其他团队讨论问题，不需要中间人。",
+            "ru": "Сначала меня удивляло, что мы можем напрямую обсуждать вопросы с другими командами без посредников."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мы убрали лишние барьеры, чтобы ускорить обмен информацией и принятие решений.",
+            "en": "We removed unnecessary barriers to speed up the exchange of information and decision-making.",
+            "es": "Eliminamos barreras innecesarias para acelerar el intercambio de información y la toma de decisiones.",
+            "fr": "Nous avons supprimé les barrières inutiles pour accélérer l'échange d'informations et la prise de décision.",
+            "pt": "Removemos as barreiras desnecessárias para acelerar a troca de informações e a tomada de decisões.",
+            "kr": "우리는 정보 교환과 의사 결정을 빠르게 하기 위해 불필요한 장벽을 없앴어.",
+            "jp": "情報交換と意思決定を速めるために、余分な障壁を取り除きました。",
+            "zh": "我们消除了多余的障碍，以加快信息交流和决策速度。",
+            "ru": "Мы убрали лишние барьеры, чтобы ускорить обмен информацией и принятие решений."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это действительно экономит время и позволяет быстрее решать возникающие проблемы.",
+            "en": "It really saves time and lets us solve problems faster.",
+            "es": "Eso realmente ahorra tiempo y permite resolver los problemas que surgen más rápidamente.",
+            "fr": "Cela fait vraiment gagner du temps et permet de résoudre plus rapidement les problèmes qui surviennent.",
+            "pt": "Isso realmente economiza tempo e permite resolver os problemas que surgem mais rapidamente.",
+            "kr": "그게 정말 시간을 절약해 주고 생기는 문제를 더 빨리 해결할 수 있게 해주네요.",
+            "jp": "それは本当に時間を節約し、発生する問題をより早く解決できますね。",
+            "zh": "这确实节省了时间，能更快地解决出现的问题。",
+            "ru": "Это действительно экономит время и позволяет быстрее решать возникающие проблемы."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "И, что немаловажно, это снижает количество недопониманий и конфликтов.",
+            "en": "And, importantly, it reduces the number of misunderstandings and conflicts.",
+            "es": "Y, lo que es importante, reduce los malentendidos y los conflictos.",
+            "fr": "Et, ce qui n'est pas négligeable, cela réduit le nombre de malentendus et de conflits.",
+            "pt": "E, o que não é menos importante, isso reduz a quantidade de mal-entendidos e conflitos.",
+            "kr": "그리고 무엇보다 중요한 건, 오해와 갈등의 수를 줄여준다는 거야.",
+            "jp": "そして、重要なことですが、誤解や対立の数を減らします。",
+            "zh": "而且，很重要的一点是，这减少了误解和冲突。",
+            "ru": "И, что немаловажно, это снижает количество недопониманий и конфликтов."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Полностью с тобой согласна, такой подход делает работу гораздо эффективнее.",
+            "en": "I completely agree with you, this approach makes the work much more efficient.",
+            "es": "Estoy totalmente de acuerdo contigo, ese enfoque hace que el trabajo sea mucho más eficiente.",
+            "fr": "Je suis tout à fait d'accord avec toi, cette approche rend le travail beaucoup plus efficace.",
+            "pt": "Concordo totalmente com você, essa abordagem torna o trabalho muito mais eficiente.",
+            "kr": "전적으로 동의해요. 그런 접근 방식이 일을 훨씬 더 효율적으로 만들죠.",
+            "jp": "完全に同意します。そのやり方で仕事はずっと効率的になりますね。",
+            "zh": "我完全同意你的看法，这种方法让工作高效得多。",
+            "ru": "Полностью с тобой согласна, такой подход делает работу гораздо эффективнее."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, как ты относишься к нашему правилу не работать сверхурочно без крайней необходимости?",
+            "en": "Sergey, how do you feel about our rule of not working overtime unless it's absolutely necessary?",
+            "es": "Serguéi, ¿qué opinas de nuestra norma de no hacer horas extra sin una necesidad real?",
+            "fr": "Sergueï, comment perçois-tu notre règle de ne pas faire d'heures supplémentaires sans nécessité absolue ?",
+            "pt": "Sergei, o que você acha da nossa regra de não fazer hora extra sem necessidade extrema?",
+            "kr": "세르게이, 꼭 필요한 경우가 아니면 야근을 하지 말라는 우리 규칙에 대해 어떻게 생각해?",
+            "jp": "セルゲイさん、本当に必要なとき以外は残業をしないという私たちのルールをどう思いますか？",
+            "zh": "谢尔盖，你怎么看待我们没有极端必要就不加班的规矩？",
+            "ru": "Сергей, как ты относишься к нашему правилу не работать сверхурочно без крайней необходимости?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Честно говоря, я был приятно удивлён, ведь раньше я часто задерживался на работе.",
+            "en": "Honestly, I was pleasantly surprised, because before I often stayed late at work.",
+            "es": "Siendo sincero, me llevé una grata sorpresa, porque antes solía quedarme tarde en el trabajo.",
+            "fr": "Honnêtement, j'ai été agréablement surpris, car avant, je restais souvent tard au travail.",
+            "pt": "Para ser sincero, fiquei agradavelmente surpreso, porque antes eu costumava ficar até tarde no trabalho.",
+            "kr": "솔직히 말하면, 기분 좋게 놀랐어요. 예전에는 퇴근 시간이 자주 늦어졌거든요.",
+            "jp": "正直に言うと、嬉しい驚きでした。以前はよく仕事に遅くまで残っていましたから。",
+            "zh": "说实话，我感到很惊喜，因为以前我经常加班。",
+            "ru": "Честно говоря, я был приятно удивлён, ведь раньше я часто задерживался на работе."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мы считаем, что переработки снижают продуктивность и ведут к выгоранию сотрудников.",
+            "en": "We believe that overworking lowers productivity and leads to burnout.",
+            "es": "Creemos que las horas extra reducen la productividad y llevan al agotamiento de los empleados.",
+            "fr": "Nous pensons que les heures supplémentaires réduisent la productivité et mènent à l'épuisement professionnel des employés.",
+            "pt": "Acreditamos que as horas extras reduzem a produtividade e levam ao esgotamento dos funcionários.",
+            "kr": "우리는 야근이 생산성을 떨어뜨리고 직원들의 번아웃으로 이어진다고 생각해.",
+            "jp": "私たちは、残業は生産性を下げ、社員の燃え尽き症候群につながると考えています。",
+            "zh": "我们认为加班会降低效率，导致员工倦怠。",
+            "ru": "Мы считаем, что переработки снижают продуктивность и ведут к выгоранию сотрудников."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ты права, забота о балансе между работой и жизнью действительно важна для долгосрочной эффективности.",
+            "en": "You're right, taking care of the work-life balance is really important for long-term effectiveness.",
+            "es": "Tienes razón, cuidar el equilibrio entre el trabajo y la vida personal es realmente importante para la eficacia a largo plazo.",
+            "fr": "Tu as raison, l'équilibre entre vie professionnelle et vie privée est vraiment important pour une efficacité à long terme.",
+            "pt": "Você tem razão, cuidar do equilíbrio entre trabalho e vida pessoal é realmente importante para a eficiência a longo prazo.",
+            "kr": "맞는 말이에요. 일과 삶의 균형을 챙기는 게 장기적인 효율을 위해 정말 중요하죠.",
+            "jp": "おっしゃる通りです。仕事と生活のバランスへの配慮は、長期的な効率にとって本当に重要です。",
+            "zh": "你说得对，关注工作与生活的平衡对于长期效率确实很重要。",
+            "ru": "Ты права, забота о балансе между работой и жизнью действительно важна для долгосрочной эффективности."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Поэтому мы стараемся планировать нагрузку так, чтобы всё успевать в рабочее время.",
+            "en": "That's why we try to plan the workload so that everything gets done during work hours.",
+            "es": "Por eso intentamos planificar la carga de trabajo para poder hacer todo en horario laboral.",
+            "fr": "C'est pourquoi nous essayons de planifier la charge de travail pour que tout soit fait pendant les heures de bureau.",
+            "pt": "Por isso, procuramos planejar a carga de trabalho de forma que dê tempo de fazer tudo durante o expediente.",
+            "kr": "그래서 우리는 모든 일을 근무 시간 안에 끝낼 수 있도록 업무량을 계획하려고 해.",
+            "jp": "だからこそ、勤務時間内にすべてが終わるように業務量を計画するよう努めています。",
+            "zh": "所以我们尽量安排好工作量，让大家在工作时间内完成所有事情。",
+            "ru": "Поэтому мы стараемся планировать нагрузку так, чтобы всё успевать в рабочее время."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это очень мудрый подход, и я вижу, что команда работает слаженно и без лишнего стресса.",
+            "en": "That's a very wise approach, and I can see that the team works smoothly and without unnecessary stress.",
+            "es": "Es un enfoque muy sensato, y veo que el equipo trabaja de forma coordinada y sin estrés innecesario.",
+            "fr": "C'est une approche très sage, et je vois que l'équipe travaille de manière coordonnée et sans stress inutile.",
+            "pt": "É uma abordagem muito sábia, e vejo que a equipe trabalha de forma harmoniosa e sem estresse desnecessário.",
+            "kr": "정말 현명한 접근 방식이에요. 팀이 불필요한 스트레스 없이 잘 협력해서 일하는 게 보여요.",
+            "jp": "とても賢明なやり方ですね。チームが余計なストレスなく、うまく機能しているのが分かります。",
+            "zh": "这是非常明智的做法，我看到团队工作协调，没有多余的压力。",
+            "ru": "Это очень мудрый подход, и я вижу, что команда работает слаженно и без лишнего стресса."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, как ты привыкаешь к нашему стилю общения с руководством? Он кажется тебе достаточно открытым?",
+            "en": "Anna, how are you getting used to our style of communication with management? Does it seem open enough to you?",
+            "es": "Ana, ¿cómo te estás acostumbrando a nuestro estilo de comunicación con la dirección? ¿Te parece bastante abierto?",
+            "fr": "Anna, comment t'habitues-tu à notre style de communication avec la direction ? Te semble-t-il assez ouvert ?",
+            "pt": "Anna, como você está se acostumando com o nosso estilo de comunicação com a gestão? Ele te parece aberto o suficiente?",
+            "kr": "안나, 우리의 경영진과의 소통 방식에 적응하고 있어? 충분히 개방적이라고 느껴져?",
+            "jp": "アンナさん、私たちの経営陣とのコミュニケーションのスタイルには慣れてきましたか？十分にオープンだと思いますか？",
+            "zh": "安娜，你对我们与管理层沟通的风格适应得怎么样？你觉得足够开放吗？",
+            "ru": "Анна, как ты привыкаешь к нашему стилю общения с руководством? Он кажется тебе достаточно открытым?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, для меня это было приятным открытием, что можно спокойно обсуждать идеи с директором.",
+            "en": "Yes, it was a pleasant discovery for me that you can calmly discuss ideas with the director.",
+            "es": "Sí, para mí fue un descubrimiento agradable poder hablar tranquilamente de ideas con el director.",
+            "fr": "Oui, pour moi, ce fut une agréable découverte de pouvoir discuter calmement d'idées avec le directeur.",
+            "pt": "Sim, para mim foi uma descoberta agradável poder discutir ideias calmamente com o diretor.",
+            "kr": "네, 디렉터와 아이디어를 편하게 논의할 수 있다는 게 저에게는 기분 좋은 발견이었어요.",
+            "jp": "ええ、ディレクターと気軽にアイデアを話し合えるのは、嬉しい発見でした。",
+            "zh": "是的，对我来说这是一个愉快的发现，可以平静地和总监讨论想法。",
+            "ru": "Да, для меня это было приятным открытием, что можно спокойно обсуждать идеи с директором."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мы стараемся поддерживать горизонтальные связи и убирать излишнюю иерархичность.",
+            "en": "We try to support horizontal connections and remove excessive hierarchy.",
+            "es": "Intentamos mantener relaciones horizontales y eliminar la jerarquía excesiva.",
+            "fr": "Nous essayons de maintenir des liens horizontaux et de supprimer la hiérarchie excessive.",
+            "pt": "Procuramos manter uma comunicação horizontal e eliminar a hierarquia excessiva.",
+            "kr": "우리는 수평적 관계를 유지하고 과도한 위계질서를 없애려고 노력해.",
+            "jp": "私たちは横のつながりを大切にし、過度な階層性を取り除くよう努めています。",
+            "zh": "我们努力保持横向联系，消除过多的等级观念。",
+            "ru": "Мы стараемся поддерживать горизонтальные связи и убирать излишнюю иерархичность."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это помогает чувствовать себя частью единой команды, а не просто исполнителем.",
+            "en": "It helps you feel like part of one team, not just someone carrying out orders.",
+            "es": "Eso ayuda a sentirse parte de un equipo unido, y no solo un ejecutor.",
+            "fr": "Cela aide à se sentir partie prenante d'une équipe unie, et non pas simplement un exécutant.",
+            "pt": "Isso ajuda a me sentir parte de uma equipe única, e não apenas uma executora.",
+            "kr": "그게 저를 단순한 실행자가 아니라 하나의 팀의 일원으로 느끼게 해주네요.",
+            "jp": "それは、ただの実行者のように感じるのではなく、一つのチームの一員だと感じるのに役立ちますね。",
+            "zh": "这让人感觉自己是统一团队的一部分，而不只是一个执行者。",
+            "ru": "Это помогает чувствовать себя частью единой команды, а не просто исполнителем."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Именно, мы хотим, чтобы каждый сотрудник чувствовал, что его мнение имеет значение.",
+            "en": "Exactly, we want every employee to feel that their opinion matters.",
+            "es": "Exacto, queremos que cada empleado sienta que su opinión importa.",
+            "fr": "Exactement, nous voulons que chaque employé sente que son avis compte.",
+            "pt": "Exatamente, queremos que cada funcionário sinta que a sua opinião importa.",
+            "kr": "바로 그거야. 우리는 모든 직원이 자기 의견이 중요하다고 느끼길 바라.",
+            "jp": "まさにそうです。すべての社員に、自分の意見には価値があると感じてもらいたいのです。",
+            "zh": "没错，我们希望每个员工都感到自己的意见很重要。",
+            "ru": "Именно, мы хотим, чтобы каждый сотрудник чувствовал, что его мнение имеет значение."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо за такое отношение, оно действительно вдохновляет работать лучше и предлагать новое.",
+            "en": "Thank you for that attitude, it really inspires me to work better and suggest new things.",
+            "es": "Gracias por esa actitud, de verdad inspira a trabajar mejor y a proponer cosas nuevas.",
+            "fr": "Merci pour cette attitude, elle inspire vraiment à mieux travailler et à proposer de nouvelles choses.",
+            "pt": "Obrigada por essa postura, ela realmente inspira a trabalhar melhor e a propor coisas novas.",
+            "kr": "그런 태도를 보여주셔서 감사해요. 정말 더 열심히 일하고 새로운 것을 제안하고 싶게 만드네요.",
+            "jp": "そんな姿勢に感謝します。本当に、より良く働き、新しいことを提案したいという気持ちにさせてくれます。",
+            "zh": "谢谢你们这样的态度，这确实激励人更好地工作，提出新的想法。",
+            "ru": "Спасибо за такое отношение, оно действительно вдохновляет работать лучше и предлагать новое."
+          }
+        }
+      ]
+    }
+  ]
+}

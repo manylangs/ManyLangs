@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b2",
+    "id": "036"
+  },
+  "title": {
+    "target": "Бронирование жилья",
+    "en": "Booking Accommodation",
+    "es": "Reserva de alojamiento",
+    "fr": "Réservation d'un logement",
+    "pt": "Reserva de hospedagem",
+    "kr": "숙소 예약",
+    "jp": "宿泊施設の予約",
+    "zh": "预订住宿",
+    "ru": "Бронирование жилья"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты уже нашёл, где остановиться в Москве?",
+            "en": "Ivan, have you found where to stay in Moscow yet?",
+            "es": "Iván, ¿ya has encontrado dónde alojarte en Moscú?",
+            "fr": "Ivan, tu as déjà trouvé où loger à Moscou ?",
+            "pt": "Ivan, você já encontrou onde ficar em Moscou?",
+            "kr": "이반, 너 모스크바에서 묵을 곳 이미 찾았어?",
+            "jp": "イワン、モスクワでどこに泊まるかもう見つけた？",
+            "zh": "伊万，你找到在莫斯科住的地方了吗？",
+            "ru": "Иван, ты уже нашёл, где остановиться в Москве?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пока нет, Мария. Я смотрел пару вариантов, но всё никак не выберу.",
+            "en": "Not yet, Maria. I looked at a couple of options, but I just can't seem to choose.",
+            "es": "Todavía no, María. He mirado un par de opciones, pero no acabo de decidirme.",
+            "fr": "Pas encore, Maria. J'ai regardé quelques options, mais je n'arrive toujours pas à choisir.",
+            "pt": "Ainda não, Maria. Eu vi algumas opções, mas não consigo escolher.",
+            "kr": "아직 아니야, 마리야. 두어 가지 옵션을 봤는데, 아직 결정을 못 하겠어.",
+            "jp": "まだだよ、マリア。いくつか候補は見たんだけど、なかなか決められなくて。",
+            "zh": "还没有，玛丽亚。我看了几个选项，但一直没定下来。",
+            "ru": "Пока нет, Мария. Я смотрел пару вариантов, но всё никак не выберу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А какой район тебе подходит? Может, я смогу что-то посоветовать.",
+            "en": "And which area suits you? Maybe I can suggest something.",
+            "es": "¿Y qué zona te viene bien? Quizá pueda recomendarte algo.",
+            "fr": "Et quel quartier te conviendrait ? Peut-être que je pourrais te conseiller quelque chose.",
+            "pt": "E que região serve para você? Talvez eu possa sugerir algo.",
+            "kr": "어떤 지역이 너한테 맞아? 내가 뭔가 추천해 줄 수도 있을 것 같은데.",
+            "jp": "どの地区がいいの？ 何かアドバイスできるかもしれないわ。",
+            "zh": "那你觉得哪个区域合适？也许我能给你一些建议。",
+            "ru": "А какой район тебе подходит? Может, я смогу что-то посоветовать."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хотелось бы поближе к центру, чтобы не тратить много времени на дорогу.",
+            "en": "I'd like to be closer to the center, so I don't spend a lot of time on the road.",
+            "es": "Me gustaría algo cerca del centro, para no perder mucho tiempo en el camino.",
+            "fr": "J'aimerais être près du centre, pour ne pas perdre trop de temps dans les transports.",
+            "pt": "Eu gostaria de algo mais perto do centro, para não perder muito tempo no caminho.",
+            "kr": "중심가에 가까우면 좋겠어, 길에 시간을 많이 쓰지 않으려고.",
+            "jp": "中心部に近いといいな。移動に時間をかけたくないから。",
+            "zh": "我想住得离市中心近一点，这样不用花太多时间在路上。",
+            "ru": "Хотелось бы поближе к центру, чтобы не тратить много времени на дорогу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда посмотри квартиру на Патриарших, там очень удобно.",
+            "en": "Then look at an apartment on Patriarch's Ponds, it's very convenient there.",
+            "es": "Entonces mira un piso en los Patriarcas, allí es muy cómodo.",
+            "fr": "Alors regarde un appartement près des Étangs du Patriarche, c'est très pratique là-bas.",
+            "pt": "Então dá uma olhada no apartamento perto do Patriarshiye, lá é muito conveniente.",
+            "kr": "그럼 파트리아르시히에 아파트를 찾아봐, 거기 정말 편리해.",
+            "jp": "それならパトリアルシエのアパートを見てみて。そこはとても便利よ。",
+            "zh": "那就看看 Patriarch 池塘附近的公寓吧，那里很方便。",
+            "ru": "Тогда посмотри квартиру на Патриарших, там очень удобно."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо за совет! Я сегодня же посмотрю этот вариант.",
+            "en": "Thanks for the advice! I'll look at that option today.",
+            "es": "¡Gracias por el consejo! Voy a mirar esa opción hoy mismo.",
+            "fr": "Merci pour le conseil ! Je vais regarder cette option dès aujourd'hui.",
+            "pt": "Obrigado pela dica! Vou ver essa opção ainda hoje.",
+            "kr": "조언 고마워! 오늘 바로 그 옵션을 볼게.",
+            "jp": "アドバイスありがとう！ 今日中にその候補を見てみるよ。",
+            "zh": "谢谢你的建议！我今天就看这个选项。",
+            "ru": "Спасибо за совет! Я сегодня же посмотрю этот вариант."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты уже забронировал номер в гостинице?",
+            "en": "Dmitry, have you booked a hotel room yet?",
+            "es": "Dmitri, ¿ya has reservado la habitación del hotel?",
+            "fr": "Dmitri, tu as déjà réservé une chambre à l'hôtel ?",
+            "pt": "Dmitri, você já reservou o quarto no hotel?",
+            "kr": "드미트리, 너 호텔 방 이미 예약했어?",
+            "jp": "ドミトリー、ホテルの部屋はもう予約した？",
+            "zh": "德米特里，你订好酒店房间了吗？",
+            "ru": "Дмитрий, ты уже забронировал номер в гостинице?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ещё нет, Ольга. Я жду ответа от одного отеля.",
+            "en": "Not yet, Olga. I'm waiting for a response from one hotel.",
+            "es": "Todavía no, Olga. Estoy esperando respuesta de un hotel.",
+            "fr": "Pas encore, Olga. J'attends une réponse d'un hôtel.",
+            "pt": "Ainda não, Olga. Estou esperando a resposta de um hotel.",
+            "kr": "아직 아니야, 올가. 한 호텔에서 답변을 기다리고 있어.",
+            "jp": "まだだよ、オリガ。あるホテルからの返事を待っているところなんだ。",
+            "zh": "还没有，奥尔加。我在等一家酒店的回复。",
+            "ru": "Ещё нет, Ольга. Я жду ответа от одного отеля."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А почему так долго? Обычно они отвечают в течение дня.",
+            "en": "Why is it taking so long? They usually reply within a day.",
+            "es": "¿Y por qué tarda tanto? Normalmente responden en el mismo día.",
+            "fr": "Et pourquoi ça prend si longtemps ? D'habitude, ils répondent dans la journée.",
+            "pt": "E por que está demorando tanto? Normalmente eles respondem durante o dia.",
+            "kr": "왜 그렇게 오래 걸려? 보통 하루 안에 답변하는데.",
+            "jp": "どうしてそんなに時間がかかるの？ 普通は一日以内に返事が来るわよ。",
+            "zh": "为什么这么久？他们通常一天之内就会回复。",
+            "ru": "А почему так долго? Обычно они отвечают в течение дня."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Они просят подтвердить бронь по телефону, а у меня не получается дозвониться.",
+            "en": "They're asking me to confirm the booking by phone, but I can't get through.",
+            "es": "Me piden que confirme la reserva por teléfono, pero no consigo comunicarme.",
+            "fr": "Ils demandent de confirmer la réservation par téléphone, et je n'arrive pas à les joindre.",
+            "pt": "Eles pedem para confirmar a reserva por telefone, mas não estou conseguindo ligar.",
+            "kr": "전화로 예약을 확인해 달라고 하는데, 통화가 연결이 안 돼.",
+            "jp": "電話で予約を確認してほしいって言われてるんだけど、なかなか電話がつながらないんだ。",
+            "zh": "他们要求打电话确认预订，但我一直打不通。",
+            "ru": "Они просят подтвердить бронь по телефону, а у меня не получается дозвониться."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Попробуй написать им на почту ещё раз, иногда это работает быстрее.",
+            "en": "Try emailing them again, sometimes that works faster.",
+            "es": "Prueba a escribirles un correo otra vez, a veces funciona más rápido.",
+            "fr": "Essaie de leur écrire un e-mail encore une fois, parfois ça va plus vite.",
+            "pt": "Tenta escrever para eles por e-mail de novo, às vezes funciona mais rápido.",
+            "kr": "이메일로 다시 한번 써 봐, 가끔 그게 더 빠르게 처리되더라.",
+            "jp": "もう一度メールを送ってみたら？ そのほうが早いこともあるわよ。",
+            "zh": "试着再给他们发一封邮件，有时候这样更快。",
+            "ru": "Попробуй написать им на почту ещё раз, иногда это работает быстрее."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошая идея. Напишу им прямо сейчас.",
+            "en": "Good idea. I'll write to them right now.",
+            "es": "Buena idea. Les escribo ahora mismo.",
+            "fr": "Bonne idée. Je vais leur écrire tout de suite.",
+            "pt": "Boa ideia. Vou escrever para eles agora mesmo.",
+            "kr": "좋은 생각이야. 지금 바로 쓸게.",
+            "jp": "いいアイデアだね。今すぐメールしてみるよ。",
+            "zh": "好主意。我现在就给他们写。",
+            "ru": "Хорошая идея. Напишу им прямо сейчас."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алло, здравствуйте! Я хотела бы забронировать номер на две ночи.",
+            "en": "Hello! I'd like to book a room for two nights.",
+            "es": "¿Diga? ¡Hola! Me gustaría reservar una habitación para dos noches.",
+            "fr": "Allô, bonjour ! Je voudrais réserver une chambre pour deux nuits.",
+            "pt": "Alô, olá! Eu gostaria de reservar um quarto por duas noites.",
+            "kr": "여보세요, 안녕하세요! 이틀 밤 방을 예약하고 싶은데요.",
+            "jp": "もしもし、こんにちは！ 二泊で部屋を予約したいのですが。",
+            "zh": "喂，您好！我想预订一个住两晚的房间。",
+            "ru": "Алло, здравствуйте! Я хотела бы забронировать номер на две ночи."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Здравствуйте! На какие даты вы планируете заезд?",
+            "en": "Hello! What dates are you planning to check in?",
+            "es": "¡Hola! ¿Para qué fechas tiene prevista la llegada?",
+            "fr": "Bonjour ! À quelles dates prévoyez-vous l'arrivée ?",
+            "pt": "Olá! Para quais datas você planeja o check-in?",
+            "kr": "안녕하세요! 언제 체크인하실 예정이신가요?",
+            "jp": "こんにちは！ ご宿泊の日程はいつ頃でしょうか？",
+            "zh": "您好！您计划哪天入住？",
+            "ru": "Здравствуйте! На какие даты вы планируете заезд?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "С пятницы по воскресенье, если есть свободные номера.",
+            "en": "From Friday to Sunday, if you have any rooms available.",
+            "es": "De viernes a domingo, si tienen habitaciones libres.",
+            "fr": "Du vendredi au dimanche, si vous avez des chambres libres.",
+            "pt": "De sexta a domingo, se tiver quartos disponíveis.",
+            "kr": "금요일부터 일요일까지요, 빈 방이 있으면요.",
+            "jp": "金曜日から日曜日までで、空きがあればお願いします。",
+            "zh": "从周五到周日，如果有空房的话。",
+            "ru": "С пятницы по воскресенье, если есть свободные номера."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, есть свободный стандартный номер с завтраком.",
+            "en": "Yes, we have a standard room available with breakfast.",
+            "es": "Sí, tenemos una habitación estándar libre con desayuno.",
+            "fr": "Oui, il y a une chambre standard libre avec petit-déjeuner.",
+            "pt": "Sim, temos um quarto standard disponível com café da manhã.",
+            "kr": "네, 조식 포함 스탠다드 룸이 비어 있습니다.",
+            "jp": "はい、朝食付きのスタンダードルームが空いております。",
+            "zh": "有的，有一间带早餐的标准间。",
+            "ru": "Да, есть свободный стандартный номер с завтраком."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, меня это устраивает. Сколько это будет стоить?",
+            "en": "Great, that works for me. How much will it cost?",
+            "es": "Perfecto, me viene bien. ¿Cuánto costará?",
+            "fr": "Parfait, ça me convient. Combien ça coûtera ?",
+            "pt": "Ótimo, isso me atende. Quanto vai custar?",
+            "kr": "좋아요, 그걸로 할게요. 요금은 얼마인가요?",
+            "jp": "よかった、それでお願いします。お値段はいくらですか？",
+            "zh": "太好了，这个可以。多少钱？",
+            "ru": "Отлично, меня это устраивает. Сколько это будет стоить?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Стоимость составит шесть тысяч рублей за ночь.",
+            "en": "The price will be six thousand rubles per night.",
+            "es": "El precio será de seis mil rublos por noche.",
+            "fr": "Le prix sera de six mille roubles par nuit.",
+            "pt": "O valor será de seis mil rublos por noite.",
+            "kr": "요금은 하룻밤에 육천 루블입니다.",
+            "jp": "一泊六千ルーブルになります。",
+            "zh": "价格是每晚六千卢布。",
+            "ru": "Стоимость составит шесть тысяч рублей за ночь."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты уже решил, где будешь жить во время конференции?",
+            "en": "Sergey, have you decided where you'll stay during the conference?",
+            "es": "Serguéi, ¿ya has decidido dónde vas a alojarte durante la conferencia?",
+            "fr": "Sergueï, tu as déjà décidé où tu vas loger pendant la conférence ?",
+            "pt": "Sergei, você já decidiu onde vai ficar durante a conferência?",
+            "kr": "세르게이, 너 컨퍼런스 기간에 어디서 묵을지 이미 정했어?",
+            "jp": "セルゲイ、会議の間どこに泊まるかもう決めた？",
+            "zh": "谢尔盖，你决定会议期间住哪里了吗？",
+            "ru": "Сергей, ты уже решил, где будешь жить во время конференции?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пока думаю между гостиницей и арендой квартиры.",
+            "en": "I'm still deciding between a hotel and renting an apartment.",
+            "es": "De momento lo estoy pensando entre el hotel y el alquiler de un piso.",
+            "fr": "J'hésite encore entre l'hôtel et la location d'un appartement.",
+            "pt": "Ainda estou em dúvida entre hotel e aluguel de apartamento.",
+            "kr": "아직 호텔이랑 아파트 임대 사이에서 고민 중이야.",
+            "jp": "まだホテルとアパートの賃貸で迷っているところだよ。",
+            "zh": "还在犹豫是住酒店还是租公寓。",
+            "ru": "Пока думаю между гостиницей и арендой квартиры."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А в чём разница по цене? Наверное, квартира выгоднее?",
+            "en": "And what's the difference in price? I guess an apartment is more economical?",
+            "es": "¿Y cuál es la diferencia de precio? Supongo que el piso sale más a cuenta, ¿no?",
+            "fr": "Et quelle est la différence de prix ? L'appartement est sûrement plus avantageux ?",
+            "pt": "E qual é a diferença de preço? Provavelmente o apartamento compensa mais?",
+            "kr": "가격 차이가 얼마나 나? 아마 아파트가 더 이득이지?",
+            "jp": "値段はどのくらい違うの？ たぶんアパートのほうがお得なんじゃない？",
+            "zh": "价格上有什么区别？公寓应该更划算吧？",
+            "ru": "А в чём разница по цене? Наверное, квартира выгоднее?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Квартира дешевле, но нужно платить залог и ждать хозяина.",
+            "en": "The apartment is cheaper, but you have to pay a deposit and wait for the owner.",
+            "es": "El piso es más barato, pero hay que pagar fianza y esperar al dueño.",
+            "fr": "L'appartement est moins cher, mais il faut payer une caution et attendre le propriétaire.",
+            "pt": "O apartamento é mais barato, mas precisa pagar caução e esperar o proprietário.",
+            "kr": "아파트가 더 싸긴 한데, 보증금을 내야 하고 집주인을 기다려야 해.",
+            "jp": "アパートのほうが安いけど、保証金を払わないといけないし、大家さんを待たないといけないんだ。",
+            "zh": "公寓更便宜，但需要付押金，还要等房东。",
+            "ru": "Квартира дешевле, но нужно платить залог и ждать хозяина."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда, может, проще взять гостиницу, чтобы не было лишних хлопот?",
+            "en": "Then maybe it's easier to take a hotel, so there's no extra hassle?",
+            "es": "Entonces, quizá sea más sencillo coger un hotel para no tener más molestias.",
+            "fr": "Alors, peut-être qu'il est plus simple de prendre un hôtel, pour éviter les tracas inutiles ?",
+            "pt": "Então, talvez seja mais simples ficar no hotel, para não ter complicações?",
+            "kr": "그럼 그냥 호텔을 잡는 게 더 낫지 않을까, 번거로운 일이 없게?",
+            "jp": "それなら、余計な手間がないようにホテルにしたほうが簡単じゃない？",
+            "zh": "那也许住酒店更省事，免得麻烦？",
+            "ru": "Тогда, может, проще взять гостиницу, чтобы не было лишних хлопот?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ты права, наверное, так надёжнее. Забронирую номер сегодня.",
+            "en": "You're right, it's probably more reliable that way. I'll book a room today.",
+            "es": "Tienes razón, seguramente sea más seguro. Reservaré la habitación hoy.",
+            "fr": "Tu as raison, c'est sûrement plus fiable. Je vais réserver une chambre aujourd'hui.",
+            "pt": "Você tem razão, provavelmente é mais seguro. Vou reservar o quarto hoje.",
+            "kr": "네 말이 맞아, 아마 그게 더 안전할 거야. 오늘 방을 예약할게.",
+            "jp": "君の言うとおりだね、たぶんそのほうが確実だよ。今日中に部屋を予約するよ。",
+            "zh": "你说得对，这样可能更可靠。我今天就订房间。",
+            "ru": "Ты права, наверное, так надёжнее. Забронирую номер сегодня."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте, я бронировала у вас номер через интернет.",
+            "en": "Hello, I booked a room with you online.",
+            "es": "Hola, reservé una habitación en su hotel por internet.",
+            "fr": "Bonjour, j'ai réservé une chambre chez vous sur Internet.",
+            "pt": "Olá, eu reservei um quarto com vocês pela internet.",
+            "kr": "안녕하세요, 인터넷으로 방을 예약했는데요.",
+            "jp": "こんにちは、インターネットで部屋を予約した者ですが。",
+            "zh": "您好，我在网上订了你们这里的房间。",
+            "ru": "Здравствуйте, я бронировала у вас номер через интернет."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Добрый день! Назовите, пожалуйста, вашу фамилию.",
+            "en": "Good afternoon! Could you please give me your last name?",
+            "es": "¡Buenas tardes! ¿Me dice su apellido, por favor?",
+            "fr": "Bonjour ! Veuillez me donner votre nom de famille.",
+            "pt": "Boa tarde! Por favor, me diga seu sobrenome.",
+            "kr": "안녕하세요! 성함을 말씀해 주시겠어요?",
+            "jp": "こんにちは！ お名前をお願いします。",
+            "zh": "您好！请告诉我您的姓氏。",
+            "ru": "Добрый день! Назовите, пожалуйста, вашу фамилию."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Моя фамилия Соколова, бронь на сегодня.",
+            "en": "My last name is Sokolova, the booking is for today.",
+            "es": "Mi apellido es Sokolova, la reserva es para hoy.",
+            "fr": "Mon nom est Sokolova, la réservation est pour aujourd'hui.",
+            "pt": "Meu sobrenome é Sokolova, a reserva é para hoje.",
+            "kr": "제 성은 소콜로바이고, 예약은 오늘 날짜입니다.",
+            "jp": "ソコロワといいます。今日からの予約です。",
+            "zh": "我姓索科洛娃，预订的是今天的。",
+            "ru": "Моя фамилия Соколова, бронь на сегодня."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, вижу вашу бронь. Номер триста пять, на третьем этаже.",
+            "en": "Yes, I see your booking. Room three hundred five, on the third floor.",
+            "es": "Sí, veo su reserva. Habitación trescientos cinco, en la tercera planta.",
+            "fr": "Oui, je vois votre réservation. Chambre trois cent cinq, au troisième étage.",
+            "pt": "Sim, estou vendo sua reserva. Quarto trezentos e cinco, no terceiro andar.",
+            "kr": "네, 예약 확인했습니다. 삼백오호, 삼층에 있습니다.",
+            "jp": "はい、ご予約を確認しました。三〇五号室、三階になります。",
+            "zh": "是的，我看到您的预订了。三百零五号房，在三楼。",
+            "ru": "Да, вижу вашу бронь. Номер триста пять, на третьем этаже."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Скажите, а завтрак включён в стоимость?",
+            "en": "Tell me, is breakfast included in the price?",
+            "es": "Dígame, ¿el desayuno está incluido en el precio?",
+            "fr": "Dites-moi, le petit-déjeuner est-il inclus dans le prix ?",
+            "pt": "Me diga, o café da manhã está incluído no valor?",
+            "kr": "혹시 조식이 요금에 포함되어 있나요?",
+            "jp": "あの、朝食は料金に含まれていますか？",
+            "zh": "请问，早餐包含在房费里吗？",
+            "ru": "Скажите, а завтрак включён в стоимость?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, завтрак подаётся с семи до десяти утра.",
+            "en": "Yes, breakfast is served from seven to ten in the morning.",
+            "es": "Sí, el desayuno se sirve de siete a diez de la mañana.",
+            "fr": "Oui, le petit-déjeuner est servi de sept heures à dix heures du matin.",
+            "pt": "Sim, o café da manhã é servido das sete às dez da manhã.",
+            "kr": "네, 조식은 아침 일곱 시부터 열 시까지 제공됩니다.",
+            "jp": "はい、朝食は午前七時から十時までです。",
+            "zh": "是的，早餐供应时间是早上七点到十点。",
+            "ru": "Да, завтрак подаётся с семи до десяти утра."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, я нашёл отличный вариант жилья, но там нет кухни.",
+            "en": "Olga, I found a great place to stay, but it doesn't have a kitchen.",
+            "es": "Olga, he encontrado una opción de alojamiento estupenda, pero no tiene cocina.",
+            "fr": "Olga, j'ai trouvé une excellente option de logement, mais il n'y a pas de cuisine.",
+            "pt": "Olga, encontrei uma ótima opção de hospedagem, mas não tem cozinha.",
+            "kr": "올가, 나 훌륭한 숙소 옵션을 찾았는데, 거기 부엌이 없어.",
+            "jp": "オリガ、すごくいい宿泊先を見つけたんだけど、キッチンがないんだ。",
+            "zh": "奥尔加，我找到了一个很不错的住处，但是没有厨房。",
+            "ru": "Ольга, я нашёл отличный вариант жилья, но там нет кухни."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "А тебе обязательно нужна кухня? В ресторанах можно питаться.",
+            "en": "Do you really need a kitchen? You can eat at restaurants.",
+            "es": "¿Y necesitas cocina sí o sí? Puedes comer en restaurantes.",
+            "fr": "Et tu as vraiment besoin d'une cuisine ? Tu peux manger au restaurant.",
+            "pt": "E você precisa mesmo de cozinha? Dá para comer em restaurantes.",
+            "kr": "부엌이 꼭 필요해? 식당에서 식사하면 되잖아.",
+            "jp": "キッチンは絶対必要？ レストランで食事すればいいじゃない。",
+            "zh": "你必须要厨房吗？可以在餐馆吃饭啊。",
+            "ru": "А тебе обязательно нужна кухня? В ресторанах можно питаться."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, но я привык готовить сам, так и дешевле, и полезнее.",
+            "en": "Yes, but I'm used to cooking myself, it's both cheaper and healthier.",
+            "es": "Sí, pero estoy acostumbrado a cocinar yo mismo, así es más barato y más sano.",
+            "fr": "Oui, mais j'ai l'habitude de cuisiner moi-même, c'est à la fois moins cher et plus sain.",
+            "pt": "Sim, mas estou acostumado a cozinhar, é mais barato e mais saudável.",
+            "kr": "맞긴 한데, 나는 직접 요리하는 게 익숙해, 그게 더 저렴하고 건강에도 좋아.",
+            "jp": "そうなんだけど、自分で料理するのに慣れてるんだ。そのほうが安いし、健康的だしね。",
+            "zh": "是的，但我习惯自己做饭，这样又便宜又健康。",
+            "ru": "Да, но я привык готовить сам, так и дешевле, и полезнее."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда поищи квартиру с кухней, на сайтах есть фильтры.",
+            "en": "Then look for an apartment with a kitchen, the websites have filters.",
+            "es": "Entonces busca un piso con cocina, en las webs hay filtros.",
+            "fr": "Alors cherche un appartement avec cuisine, il y a des filtres sur les sites.",
+            "pt": "Então procure um apartamento com cozinha, os sites têm filtros.",
+            "kr": "그럼 부엌 있는 아파트를 찾아봐, 사이트에 필터가 있어.",
+            "jp": "それならキッチン付きのアパートを探してみたら？ サイトにフィルターがあるわよ。",
+            "zh": "那就找带厨房的公寓，网站上有筛选功能。",
+            "ru": "Тогда поищи квартиру с кухней, на сайтах есть фильтры."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Точно, я как-то не подумал про фильтры. Спасибо за подсказку!",
+            "en": "Right, I didn't think about filters. Thanks for the tip!",
+            "es": "Cierto, no había pensado en los filtros. ¡Gracias por el consejo!",
+            "fr": "C'est vrai, je n'avais pas pensé aux filtres. Merci pour le conseil !",
+            "pt": "É verdade, eu não tinha pensado nos filtros. Obrigado pela dica!",
+            "kr": "맞다, 나는 필터를 생각을 못 했네. 힌트 고마워!",
+            "jp": "そうか、フィルターのこと考えてなかったよ。教えてくれてありがとう！",
+            "zh": "对，我怎么没想到用筛选功能。谢谢你的提醒！",
+            "ru": "Точно, я как-то не подумал про фильтры. Спасибо за подсказку!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не за что. Надеюсь, найдёшь то, что нужно.",
+            "en": "You're welcome. I hope you find what you need.",
+            "es": "De nada. Espero que encuentres lo que necesitas.",
+            "fr": "De rien. J'espère que tu trouveras ce qu'il te faut.",
+            "pt": "De nada. Espero que encontre o que precisa.",
+            "kr": "별말을. 필요한 걸 찾길 바랄게.",
+            "jp": "どういたしまして。いいところが見つかるといいね。",
+            "zh": "不客气。希望你能找到合适的。",
+            "ru": "Не за что. Надеюсь, найдёшь то, что нужно."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты уже оплатил бронь за квартиру?",
+            "en": "Dmitry, have you paid for the apartment booking yet?",
+            "es": "Dmitri, ¿ya has pagado la reserva del piso?",
+            "fr": "Dmitri, tu as déjà payé la réservation de l'appartement ?",
+            "pt": "Dmitri, você já pagou a reserva do apartamento?",
+            "kr": "드미트리, 너 아파트 예약비 이미 결제했어?",
+            "jp": "ドミトリー、アパートの予約はもう支払った？",
+            "zh": "德米特里，你付公寓的预订款了吗？",
+            "ru": "Дмитрий, ты уже оплатил бронь за квартиру?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ещё нет, жду реквизиты от хозяина.",
+            "en": "Not yet, I'm waiting for the payment details from the owner.",
+            "es": "Todavía no, estoy esperando los datos bancarios del dueño.",
+            "fr": "Pas encore, j'attends les coordonnées bancaires du propriétaire.",
+            "pt": "Ainda não, estou esperando os dados bancários do proprietário.",
+            "kr": "아직 아니야, 집주인의 계좌 정보를 기다리고 있어.",
+            "jp": "まだだよ、大家さんの口座情報を待っているところなんだ。",
+            "zh": "还没有，在等房东的账户信息。",
+            "ru": "Ещё нет, жду реквизиты от хозяина."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А ты проверял отзывы об этом жилье?",
+            "en": "And did you check the reviews for this place?",
+            "es": "¿Y has mirado las opiniones sobre ese alojamiento?",
+            "fr": "Et tu as vérifié les avis sur ce logement ?",
+            "pt": "E você verificou as avaliações desse lugar?",
+            "kr": "그 숙소에 대한 후기는 확인해 봤어?",
+            "jp": "その宿泊先の口コミは確認した？",
+            "zh": "你查看过这个住处的评价吗？",
+            "ru": "А ты проверял отзывы об этом жилье?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, отзывы хорошие, но я всё равно немного переживаю.",
+            "en": "Yes, the reviews are good, but I'm still a little worried.",
+            "es": "Sí, las opiniones son buenas, pero aun así estoy un poco preocupado.",
+            "fr": "Oui, les avis sont bons, mais je suis quand même un peu inquiet.",
+            "pt": "Sim, as avaliações são boas, mas ainda estou um pouco preocupado.",
+            "kr": "응, 후기는 좋은데, 그래도 좀 걱정되긴 해.",
+            "jp": "うん、口コミはいい感じなんだけど、やっぱり少し心配なんだ。",
+            "zh": "看了，评价不错，但我还是有点担心。",
+            "ru": "Да, отзывы хорошие, но я всё равно немного переживаю."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Может, попросить хозяина показать видео комнаты?",
+            "en": "Maybe ask the owner to show you a video of the room?",
+            "es": "¿Quizá puedas pedirle al dueño que te enseñe un vídeo de la habitación?",
+            "fr": "Tu pourrais peut-être demander au propriétaire de montrer une vidéo de la pièce ?",
+            "pt": "Talvez pedir para o proprietário mostrar um vídeo do quarto?",
+            "kr": "집주인한테 방 영상을 보여 달라고 요청해 보는 건 어때?",
+            "jp": "大家さんに部屋の動画を見せてもらうよう頼んでみたら？",
+            "zh": "要不要让房东给你看一段房间的视频？",
+            "ru": "Может, попросить хозяина показать видео комнаты?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отличная мысль! Так я смогу убедиться, что всё в порядке.",
+            "en": "Great idea! That way I can make sure everything is fine.",
+            "es": "¡Buena idea! Así podré asegurarme de que todo está en orden.",
+            "fr": "Excellente idée ! Comme ça, je pourrai m'assurer que tout est en ordre.",
+            "pt": "Ótima ideia! Assim consigo ter certeza de que está tudo certo.",
+            "kr": "좋은 생각이야! 그렇게 하면 모든 게 괜찮은지 확인할 수 있을 거야.",
+            "jp": "いい考えだね！ それでちゃんとした部屋か確認できるよ。",
+            "zh": "好主意！这样我就能确认一切都没问题了。",
+            "ru": "Отличная мысль! Так я смогу убедиться, что всё в порядке."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте, я хотела бы продлить своё пребывание в отеле.",
+            "en": "Hello, I'd like to extend my stay at the hotel.",
+            "es": "Hola, me gustaría ampliar mi estancia en el hotel.",
+            "fr": "Bonjour, je voudrais prolonger mon séjour à l'hôtel.",
+            "pt": "Olá, eu gostaria de estender minha estadia no hotel.",
+            "kr": "안녕하세요, 호텔 체류 기간을 연장하고 싶은데요.",
+            "jp": "こんにちは、滞在を延長したいのですが。",
+            "zh": "您好，我想延长在酒店的住宿时间。",
+            "ru": "Здравствуйте, я хотела бы продлить своё пребывание в отеле."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Здравствуйте, на сколько дней вы хотите продлить?",
+            "en": "Hello, for how many days would you like to extend?",
+            "es": "Hola, ¿cuántos días quiere ampliarla?",
+            "fr": "Bonjour, de combien de jours voulez-vous prolonger ?",
+            "pt": "Olá, por quantos dias você quer estender?",
+            "kr": "안녕하세요, 며칠 더 연장하시겠어요?",
+            "jp": "こんにちは、何泊延長されますか？",
+            "zh": "您好，您想延长几天？",
+            "ru": "Здравствуйте, на сколько дней вы хотите продлить?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ещё на два дня, если это возможно.",
+            "en": "For two more days, if that's possible.",
+            "es": "Dos días más, si es posible.",
+            "fr": "Encore deux jours, si c'est possible.",
+            "pt": "Por mais dois dias, se for possível.",
+            "kr": "가능하면 이틀 더요.",
+            "jp": "可能であれば、あと二泊お願いしたいです。",
+            "zh": "再住两天，如果可以的话。",
+            "ru": "Ещё на два дня, если это возможно."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, конечно. Ваш номер свободен, так что проблем нет.",
+            "en": "Yes, of course. Your room is available, so there's no problem.",
+            "es": "Sí, por supuesto. Su habitación está libre, así que no hay problema.",
+            "fr": "Oui, bien sûr. Votre chambre est libre, donc il n'y a aucun problème.",
+            "pt": "Sim, claro. Seu quarto está disponível, então não tem problema.",
+            "kr": "네, 물론입니다. 룸이 비어 있어서 문제없습니다.",
+            "jp": "はい、もちろんです。お部屋は空いておりますので、問題ありません。",
+            "zh": "好的，当然可以。您的房间是空的，所以没有问题。",
+            "ru": "Да, конечно. Ваш номер свободен, так что проблем нет."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Замечательно, спасибо большое!",
+            "en": "Wonderful, thank you very much!",
+            "es": "Estupendo, ¡muchas gracias!",
+            "fr": "Parfait, merci beaucoup !",
+            "pt": "Maravilha, muito obrigada!",
+            "kr": "좋아요, 정말 감사합니다!",
+            "jp": "よかったです、ありがとうございます！",
+            "zh": "太好了，非常感谢！",
+            "ru": "Замечательно, спасибо большое!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пожалуйста, я оформлю продление прямо сейчас.",
+            "en": "You're welcome, I'll arrange the extension right now.",
+            "es": "De nada, le tramito la ampliación ahora mismo.",
+            "fr": "Je vous en prie, je vais faire la prolongation tout de suite.",
+            "pt": "De nada, vou fazer a extensão agora mesmo.",
+            "kr": "천만에요, 지금 바로 연장 처리해 드리겠습니다.",
+            "jp": "どういたしまして。今すぐ延長の手続きをいたします。",
+            "zh": "不客气，我现在就帮您办理续住。",
+            "ru": "Пожалуйста, я оформлю продление прямо сейчас."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, как тебе гостиница, которую ты забронировал?",
+            "en": "Ivan, how do you like the hotel you booked?",
+            "es": "Iván, ¿qué tal el hotel que reservaste?",
+            "fr": "Ivan, comment trouves-tu l'hôtel que tu as réservé ?",
+            "pt": "Ivan, o que você achou do hotel que reservou?",
+            "kr": "이반, 네가 예약한 호텔은 어때?",
+            "jp": "イワン、予約したホテルはどう？",
+            "zh": "伊万，你订的那家酒店怎么样？",
+            "ru": "Иван, как тебе гостиница, которую ты забронировал?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "В целом неплохо, но окна выходят на шумную улицу.",
+            "en": "Overall it's not bad, but the windows face a noisy street.",
+            "es": "En general no está mal, pero las ventanas dan a una calle ruidosa.",
+            "fr": "Dans l'ensemble, ce n'est pas mal, mais les fenêtres donnent sur une rue bruyante.",
+            "pt": "No geral, não é ruim, mas as janelas dão para uma rua barulhenta.",
+            "kr": "전반적으로 괜찮은데, 창문이 시끄러운 거리 쪽으로 나 있어.",
+            "jp": "全体的には悪くないんだけど、窓が騒がしい通りに面してるんだ。",
+            "zh": "总体来说还不错，但是窗户朝向一条很吵的街。",
+            "ru": "В целом неплохо, но окна выходят на шумную улицу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это неприятно. Ты пробовал попросить другой номер?",
+            "en": "That's unpleasant. Did you try asking for a different room?",
+            "es": "Qué fastidio. ¿Has probado a pedir otra habitación?",
+            "fr": "C'est désagréable. Tu as essayé de demander une autre chambre ?",
+            "pt": "Isso é desagradável. Você tentou pedir outro quarto?",
+            "kr": "그건 불편하네. 다른 방을 요청해 봤어?",
+            "jp": "それは困るわね。別の部屋を頼んでみた？",
+            "zh": "那挺烦人的。你试过要求换房间吗？",
+            "ru": "Это неприятно. Ты пробовал попросить другой номер?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я говорил на ресепшене, но других свободных номеров нет.",
+            "en": "Yes, I spoke to the front desk, but there are no other rooms available.",
+            "es": "Sí, lo hablé en recepción, pero no hay otras habitaciones libres.",
+            "fr": "Oui, j'en ai parlé à la réception, mais il n'y a pas d'autres chambres libres.",
+            "pt": "Sim, falei na recepção, mas não há outros quartos disponíveis.",
+            "kr": "응, 프런트에 말해 봤는데 다른 빈 방이 없대.",
+            "jp": "うん、フロントで言ってみたんだけど、他に空き部屋がないんだ。",
+            "zh": "试过了，我跟前台说了，但没有其他空房了。",
+            "ru": "Да, я говорил на ресепшене, но других свободных номеров нет."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Жаль. А кондиционер в номере работает хорошо?",
+            "en": "That's a shame. And does the air conditioning in the room work well?",
+            "es": "Qué pena. ¿Y el aire acondicionado de la habitación funciona bien?",
+            "fr": "Dommage. Et la climatisation fonctionne bien dans la chambre ?",
+            "pt": "Que pena. E o ar-condicionado do quarto funciona bem?",
+            "kr": "아쉽네. 그런데 방에 에어컨은 잘 작동해?",
+            "jp": "残念ね。エアコンはちゃんと効いてる？",
+            "zh": "真遗憾。那房间里的空调好用吗？",
+            "ru": "Жаль. А кондиционер в номере работает хорошо?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Кондиционер работает отлично, так что окна можно не открывать.",
+            "en": "The air conditioning works great, so I don't have to open the windows.",
+            "es": "El aire acondicionado funciona de maravilla, así que no hace falta abrir las ventanas.",
+            "fr": "La climatisation fonctionne parfaitement, donc je n'ai pas besoin d'ouvrir les fenêtres.",
+            "pt": "O ar-condicionado funciona perfeitamente, então nem preciso abrir as janelas.",
+            "kr": "에어컨은 완벽하게 작동해, 그래서 창문은 안 열어도 돼.",
+            "jp": "エアコンはすごくよく効くから、窓を開けなくても大丈夫だよ。",
+            "zh": "空调很好用，所以窗户可以不打开。",
+            "ru": "Кондиционер работает отлично, так что окна можно не открывать."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, ты уже забронировала жильё на выходные?",
+            "en": "Maria, have you booked accommodation for the weekend yet?",
+            "es": "María, ¿ya has reservado alojamiento para el fin de semana?",
+            "fr": "Maria, tu as déjà réservé un logement pour le week-end ?",
+            "pt": "Maria, você já reservou a hospedagem para o fim de semana?",
+            "kr": "마리야, 너 주말에 묵을 숙소 이미 예약했어?",
+            "jp": "マリア、週末の宿泊先はもう予約した？",
+            "zh": "玛丽亚，你订好周末住的地方了吗？",
+            "ru": "Мария, ты уже забронировала жильё на выходные?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я сняла квартиру недалеко от парка.",
+            "en": "Yes, I rented an apartment not far from the park.",
+            "es": "Sí, he alquilado un piso cerca del parque.",
+            "fr": "Oui, j'ai loué un appartement près du parc.",
+            "pt": "Sim, aluguei um apartamento perto do parque.",
+            "kr": "응, 공원 근처에 아파트를 빌렸어.",
+            "jp": "うん、公園の近くのアパートを借りたの。",
+            "zh": "订好了，我租了一套离公园不远的公寓。",
+            "ru": "Да, я сняла квартиру недалеко от парка."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Звучит замечательно! А как ты её нашла?",
+            "en": "Sounds wonderful! And how did you find it?",
+            "es": "¡Suena genial! ¿Y cómo lo encontraste?",
+            "fr": "Ça a l'air formidable ! Et comment tu l'as trouvé ?",
+            "pt": "Que ótimo! E como você encontrou?",
+            "kr": "좋겠다! 그런데 어떻게 찾았어?",
+            "jp": "いいね！ どうやって見つけたの？",
+            "zh": "听起来很棒！你是怎么找到的？",
+            "ru": "Звучит замечательно! А как ты её нашла?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мне посоветовала коллега, она там часто останавливается.",
+            "en": "A colleague recommended it to me, she stays there often.",
+            "es": "Me lo recomendó una compañera, ella se aloja allí a menudo.",
+            "fr": "Une collègue me l'a recommandé, elle y séjourne souvent.",
+            "pt": "Uma colega me indicou, ela fica hospedada lá com frequência.",
+            "kr": "동료가 추천해 줬어, 그 사람이 거기 자주 묵거든.",
+            "jp": "同僚が教えてくれたの。その人はよくそこに泊まってるみたい。",
+            "zh": "是同事推荐的，她经常住在那里。",
+            "ru": "Мне посоветовала коллега, она там часто останавливается."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это удобно, когда есть проверенный вариант.",
+            "en": "It's convenient when you have a tried-and-true option.",
+            "es": "Es cómodo cuando tienes una opción de confianza.",
+            "fr": "C'est pratique d'avoir une option éprouvée.",
+            "pt": "É bom quando se tem uma opção de confiança.",
+            "kr": "검증된 옵션이 있으면 편리하네.",
+            "jp": "実績のあるところがあると安心だね。",
+            "zh": "有个经过验证的选择真好。",
+            "ru": "Это удобно, когда есть проверенный вариант."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласна. Главное, чтобы всё было так же хорошо, как она описывала.",
+            "en": "I agree. The main thing is that everything is as good as she described.",
+            "es": "De acuerdo. Lo importante es que todo sea tan bien como ella lo describía.",
+            "fr": "Je suis d'accord. L'essentiel, c'est que tout soit aussi bien qu'elle le décrivait.",
+            "pt": "Concordo. O importante é que seja tudo tão bom quanto ela descreveu.",
+            "kr": "맞아. 가장 중요한 건 그녀가 말한 만큼 모든 게 좋아야 한다는 거야.",
+            "jp": "そうね。一番大事なのは、彼女が言ってた通りだといいんだけどね。",
+            "zh": "是啊。希望一切都像她说的那么好。",
+            "ru": "Согласна. Главное, чтобы всё было так же хорошо, как она описывала."
+          }
+        }
+      ]
+    }
+  ]
+}

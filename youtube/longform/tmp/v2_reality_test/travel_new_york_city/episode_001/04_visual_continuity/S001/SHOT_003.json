@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S001",
+  "shot_id": "SHOT_003",
+  "character_states": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Medium-sized travel backpack",
+        "Small crossbody bag",
+        "Smartphone"
+      ],
+      "body_state": [
+        "Standing inside the JFK terminal after disembarking",
+        "Carrying backpack on back",
+        "Crossbody bag worn across body",
+        "Looking around, following the flow of passengers"
+      ],
+      "emotion": "excited but slightly nervous"
+    }
+  ],
+  "location_state": {
+    "location_ref": "LOC_JFK_AIRPORT_001",
+    "identity_lock": true,
+    "persistent_features": [
+      "Large terminal with high ceilings",
+      "Digital flight information displays",
+      "Signage for Arrivals, Immigration, and Baggage Claim",
+      "Moving walkways and escalators",
+      "Large windows with natural light"
+    ],
+    "current_zone": "airplane exit / terminal arrival area, JFK International Airport",
+    "orientation_state": [
+      "Jieun facing the airplane exit while moving through it",
+      "Airplane exit behind Jieun after she steps through",
+      "Terminal corridor ahead of Jieun",
+      "Other passengers moving in the same direction toward immigration"
+    ]
+  },
+  "prop_states": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "on Jieun's back",
+      "position": "on Jieun's back",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn across Jieun's body",
+      "position": "across Jieun's body",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "held in Jieun's hand",
+      "position": "in Jieun's hand, lowered to her side",
+      "visible": true,
+      "continuity_lock": true
+    }
+  ],
+  "environment_state": {
+    "time_of_day": "day",
+    "weather": null,
+    "lighting": "bright natural daylight coming through airplane windows and terminal windows",
+    "crowd_state": "other passengers disembarking and moving toward immigration, cabin crew near the airplane exit"
+  },
+  "story_visual_state": {
+    "resolved_visual_facts": [
+      "Jieun's plane has landed at JFK Airport",
+      "Jieun has gathered her backpack and crossbody bag",
+      "Jieun has confirmed her belongings are with her by checking her smartphone",
+      "Jieun has disembarked from the airplane"
+    ],
+    "unresolved_visual_facts": [
+      "Jieun has not yet reached the immigration area",
+      "Jieun has not yet reached her hotel in Manhattan"
+    ],
+    "must_remain_visible": [
+      "Jieun's travel backpack on her back",
+      "Jieun's crossbody bag across her body",
+      "Jieun's smartphone in her hand"
+    ],
+    "must_not_appear": [
+      "Jieun moving past the arrival terminal area",
+      "Any dialogue or interaction with other characters",
+      "Jieun recovering a missing bag (no missing bag exists yet)"
+    ]
+  },
+  "continuity_links": {
+    "previous_scene_id": "S001",
+    "previous_shot_id": "SHOT_002",
+    "next_scene_id": "S002",
+    "next_shot_id": "SHOT_001",
+    "carry_in": [
+      "Jieun is holding her smartphone, having confirmed her belongings are with her",
+      "She is seated on the airplane with her backpack and crossbody bag"
+    ],
+    "carry_out": [
+      "Jieun has disembarked from the airplane",
+      "She is now inside the JFK terminal, following signs toward immigration",
+      "She feels a mix of excitement and nervousness"
+    ]
+  },
+  "locks": {
+    "character_identity": true,
+    "clothing": true,
+    "location_identity": true,
+    "prop_state": true,
+    "timeline": true,
+    "weather": true,
+    "story_state": true
+  }
+}

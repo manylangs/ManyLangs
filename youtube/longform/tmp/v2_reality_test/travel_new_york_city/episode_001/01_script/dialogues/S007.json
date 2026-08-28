@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S007",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "mode": "dialogue",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "b_gender": "male",
+  "lines": [
+    {
+      "line_id": "L001",
+      "sequence": 1,
+      "speaker": "A",
+      "text": "Excuse me, can I ask you something?"
+    },
+    {
+      "line_id": "L002",
+      "sequence": 2,
+      "speaker": "B",
+      "text": "Sure. How can I help you?"
+    },
+    {
+      "line_id": "L003",
+      "sequence": 3,
+      "speaker": "A",
+      "text": "I need to get to my hotel in Manhattan. What's the best way?"
+    },
+    {
+      "line_id": "L004",
+      "sequence": 4,
+      "speaker": "B",
+      "text": "You have a few options. Taxis and ride-sharing are direct, but public transit is cheaper."
+    },
+    {
+      "line_id": "L005",
+      "sequence": 5,
+      "speaker": "A",
+      "text": "Is public transit easy with luggage?"
+    },
+    {
+      "line_id": "L006",
+      "sequence": 6,
+      "speaker": "B",
+      "text": "It's not too bad. The train has space for bags, and it goes right into the city."
+    },
+    {
+      "line_id": "L007",
+      "sequence": 7,
+      "speaker": "A",
+      "text": "Okay, that sounds good. I'll take the train then."
+    },
+    {
+      "line_id": "L008",
+      "sequence": 8,
+      "speaker": "B",
+      "text": "Good choice. Just follow the signs for the train. Have a nice trip!"
+    }
+  ],
+  "scene_state": {
+    "location_ref": "LOC_JFK_AIRPORT_001",
+    "carry_in": [
+      "Jieun is at the ground transportation area considering her options",
+      "She is comparing taxi, ride-sharing, and public transit",
+      "She is unsure which option is the most practical"
+    ],
+    "carry_out": [
+      "Jieun has received advice from a transit employee",
+      "She has decided to take public transit to Manhattan",
+      "She is now heading toward the transit station"
+    ],
+    "emotion": "more confident and decided after receiving advice"
+  },
+  "validation": {
+    "expected_line_count": 8,
+    "actual_line_count": 8
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "002"
+  },
+  "title": {
+    "target": "자기소개",
+    "en": "Self-Introduction",
+    "es": "Presentación personal",
+    "fr": "Se présenter",
+    "pt": "Apresentação pessoal",
+    "kr": "자기소개",
+    "zh": "自我介绍",
+    "jp": "自己紹介",
+    "ru": "Знакомство"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "안녕하세요, 저는 지은이라고 해요.",
+            "en": "Hello, my name is Jieun.",
+            "es": "Hola, me llamo Jieun.",
+            "fr": "Bonjour, je m'appelle Jieun.",
+            "pt": "Olá, eu chamo-me Jieun.",
+            "kr": "안녕하세요, 저는 지은이라고 해요.",
+            "zh": "你好，我叫智恩。",
+            "jp": "こんにちは、私はジウンと言います。",
+            "ru": "Здравствуйте, меня зовут Чиын."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "안녕하세요, 저는 준호예요. 만나서 반가워요.",
+            "en": "Hello, I'm Junho. Nice to meet you.",
+            "es": "Hola, yo soy Junho. Encantado de conocerte.",
+            "fr": "Bonjour, je m'appelle Junho. Enchanté.",
+            "pt": "Olá, eu sou Junho. Prazer em conhecer-te.",
+            "kr": "안녕하세요, 저는 준호예요. 만나서 반가워요.",
+            "zh": "你好，我是俊浩。很高兴认识你。",
+            "jp": "こんにちは、私はジュノです。はじめまして、よろしくお願いします。",
+            "ru": "Здравствуйте, я Чунхо. Приятно познакомиться."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저도 반가워요. 준호 씨는 어디에서 왔어요?",
+            "en": "Nice to meet you too. Where are you from, Junho?",
+            "es": "Igualmente. ¿De dónde eres, Junho?",
+            "fr": "Enchantée moi aussi. D'où venez-vous, Junho ?",
+            "pt": "Igualmente. De onde és, Junho?",
+            "kr": "저도 반가워요. 준호 씨는 어디에서 왔어요?",
+            "zh": "我也很高兴认识你。俊浩你是哪里人？",
+            "jp": "こちらこそよろしくお願いします。ジュノさんはどこから来ましたか？",
+            "ru": "Мне тоже приятно. Откуда вы, Чунхо?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "저는 서울에서 왔어요. 지은 씨는요?",
+            "en": "I'm from Seoul. How about you, Jieun?",
+            "es": "Soy de Seúl. ¿Y tú, Jieun?",
+            "fr": "Je viens de Séoul. Et vous, Jieun ?",
+            "pt": "Eu sou de Seul. E tu, Jieun?",
+            "kr": "저는 서울에서 왔어요. 지은 씨는요?",
+            "zh": "我是首尔人。智恩你呢？",
+            "jp": "私はソウルから来ました。ジウンさんは？",
+            "ru": "Я из Сеула. А вы, Чиын?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "저는 부산에서 왔어요. 바다가 가까워서 좋아요.",
+            "en": "I'm from Busan. I like it because the sea is close.",
+            "es": "Soy de Busan. Me gusta porque el mar está cerca.",
+            "fr": "Je viens de Busan. J'aime bien parce que la mer est proche.",
+            "pt": "Eu sou de Busan. Gosto porque fica perto do mar.",
+            "kr": "저는 부산에서 왔어요. 바다가 가까워서 좋아요.",
+            "zh": "我是釜山人。离海近，所以很好。",
+            "jp": "私は釜山から来ました。海が近くて好きです。",
+            "ru": "Я из Пусана. Мне нравится, что море рядом."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "아, 그렇군요. 부산은 정말 아름다운 곳이죠.",
+            "en": "Oh, I see. Busan is a really beautiful place.",
+            "es": "Ah, ya veo. Busan es un lugar realmente hermoso.",
+            "fr": "Ah, je vois. Busan est vraiment un bel endroit.",
+            "pt": "Ah, entendo. Busan é realmente um lugar lindo.",
+            "kr": "아, 그렇군요. 부산은 정말 아름다운 곳이죠.",
+            "zh": "啊，是这样啊。釜山真是个美丽的地方。",
+            "jp": "ああ、そうなんですね。釜山は本当に美しい場所ですよね。",
+            "ru": "А, понятно. Пусан — действительно красивое место."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S003",
+  "shot_id": "SHOT_002",
+  "sequence": 2,
+  "duration_seconds": 12.0,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001",
+    "B"
+  ],
+  "visual_intent": "Show the immigration officer reviewing Jieun's passport and asking questions while Jieun responds.",
+  "framing": {
+    "shot_size": "medium",
+    "subject_priority": [
+      "B",
+      "CHAR_JIEUN_001"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "B",
+    "description": "The officer reviews Jieun's passport and asks about the purpose of her visit, how long she will stay, and where she will stay in New York.",
+    "start_state": [
+      "The officer is holding Jieun's passport",
+      "Jieun is standing at the booth"
+    ],
+    "end_state": [
+      "The officer has finished asking questions",
+      "Jieun has answered all questions"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "professional and courteous",
+    "supporting": {
+      "CHAR_JIEUN_001": "a bit more confident but still cautious"
+    }
+  },
+  "props": [
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "state": "held by the officer",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn by Jieun",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn by Jieun",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L002",
+      "L003",
+      "L004",
+      "L005",
+      "L006",
+      "L007"
+    ],
+    "speaker_focus": "B"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is standing at the immigration booth",
+      "The officer is holding her passport",
+      "The officer is about to ask about the purpose of her visit"
+    ],
+    "carry_out": [
+      "The officer has finished asking questions",
+      "Jieun has answered all questions",
+      "The officer is about to return the passport"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

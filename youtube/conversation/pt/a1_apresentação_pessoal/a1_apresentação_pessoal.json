@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "002"
+  },
+  "title": {
+    "target": "Apresentação Pessoal",
+    "en": "Personal Introduction",
+    "es": "Presentación Personal",
+    "fr": "Présentation personnelle",
+    "pt": "Apresentação Pessoal",
+    "kr": "자기 소개",
+    "zh": "个人介绍",
+    "jp": "自己紹介",
+    "ru": "Личное представление"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Oi, tudo bem? Meu nome é Ana.",
+            "en": "Hi, how are you? My name is Ana.",
+            "es": "¡Hola! ¿Qué tal? Me llamo Ana.",
+            "fr": "Salut, ça va ? Je m'appelle Ana.",
+            "pt": "Oi, tudo bem? Meu nome é Ana.",
+            "kr": "안녕, 잘 지내? 내 이름은 아나야.",
+            "zh": "嗨，你好吗？我叫安娜。",
+            "jp": "やあ、元気？私の名前はアナだよ。",
+            "ru": "Привет, как дела? Меня зовут Ана."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Oi, Ana! Prazer, eu sou o Lucas.",
+            "en": "Hi, Ana! Nice to meet you, I'm Lucas.",
+            "es": "¡Hola, Ana! Encantado, yo soy Lucas.",
+            "fr": "Salut, Ana ! Enchanté, moi c'est Lucas.",
+            "pt": "Oi, Ana! Prazer, eu sou o Lucas.",
+            "kr": "안녕, 아나! 만나서 반가워, 나는 루카스야.",
+            "zh": "嗨，安娜！很高兴认识你，我是卢卡斯。",
+            "jp": "やあ、アナ！はじめまして、僕はルーカスです。",
+            "ru": "Привет, Ана! Приятно познакомиться, я Лукас."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Prazer, Lucas! De onde você é?",
+            "en": "Nice to meet you, Lucas! Where are you from?",
+            "es": "¡Encantada, Lucas! ¿De dónde eres?",
+            "fr": "Enchantée, Lucas ! Tu viens d'où ?",
+            "pt": "Prazer, Lucas! De onde você é?",
+            "kr": "반가워, 루카스! 너는 어디에서 왔어?",
+            "zh": "很高兴认识你，卢卡斯！你是哪里人？",
+            "jp": "はじめまして、ルーカス！出身はどこ？",
+            "ru": "Очень приятно, Лукас! Откуда ты?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Eu sou de São Paulo. E você?",
+            "en": "I'm from São Paulo. And you?",
+            "es": "Soy de São Paulo. ¿Y tú?",
+            "fr": "Je viens de São Paulo. Et toi ?",
+            "pt": "Eu sou de São Paulo. E você?",
+            "kr": "나는 상파울루에서 왔어. 너는?",
+            "zh": "我是圣保罗人。你呢？",
+            "jp": "サンパウロ出身だよ。君は？",
+            "ru": "Я из Сан-Паулу. А ты?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Sou do Rio de Janeiro.",
+            "en": "I'm from Rio de Janeiro.",
+            "es": "Soy de Río de Janeiro.",
+            "fr": "Je viens de Rio de Janeiro.",
+            "pt": "Sou do Rio de Janeiro.",
+            "kr": "나는 리우데자네이루에서 왔어.",
+            "zh": "我是里约热内卢人。",
+            "jp": "私はリオデジャネイロ出身です。",
+            "ru": "Я из Рио-де-Жанейро."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Que legal! É um prazer te conhecer.",
+            "en": "That's cool! It's a pleasure to meet you.",
+            "es": "¡Qué bien! Es un placer conocerte.",
+            "fr": "Super ! C'est un plaisir de te rencontrer.",
+            "pt": "Que legal! É um prazer te conhecer.",
+            "kr": "정말 멋지다! 만나서 정말 반가워.",
+            "zh": "太棒了！很高兴认识你。",
+            "jp": "いいね！君に会えてうれしいよ。",
+            "ru": "Как здорово! Рад познакомиться с тобой."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -107,12 +107,17 @@ MANYLANGS_TAGLINE = (
 #
 # "name" 값이 그대로 facebook/{Language}/ 폴더명과
 # 대소문자 무시하고 매칭됩니다. (예: "English" -> facebook/English/)
+#
+# 다른 파이프라인 스크립트(youtube_upload.py, assemble_video.py,
+# assemble_social.py, post_facebook.py, watermark 스크립트 등)와
+# 동일하게, 내부 관리 코드는 이 딕셔너리의 키를 그대로 쓴다
+# (일본어는 내부적으로 "jp").
 # =========================================================
 
 LANGUAGES = {
     "en": {"name": "English", "native_name": "English"},
     "kr": {"name": "Korean", "native_name": "한국어"},
-    "ja": {"name": "Japanese", "native_name": "日本語"},
+    "jp": {"name": "Japanese", "native_name": "日本語"},
     "zh": {"name": "Chinese", "native_name": "简体中文"},
     "es": {"name": "Spanish", "native_name": "Español"},
     "fr": {"name": "French", "native_name": "Français"},
@@ -131,7 +136,7 @@ LANGUAGE_NAME_TO_CODE = {
 # 자막 지원 언어 안내 문구
 # =========================================================
 
-SUBTITLE_LANGS = ["en", "es", "pt", "fr", "kr", "ja", "zh", "ru"]
+SUBTITLE_LANGS = ["en", "es", "pt", "fr", "kr", "jp", "zh", "ru"]
 
 SUBTITLE_LANG_NAMES = {
     "en": "English",
@@ -139,7 +144,7 @@ SUBTITLE_LANG_NAMES = {
     "pt": "Portuguese",
     "fr": "French",
     "kr": "Korean",
-    "ja": "Japanese",
+    "jp": "Japanese",
     "zh": "Chinese Mandarin",
     "ru": "Russian",
 }

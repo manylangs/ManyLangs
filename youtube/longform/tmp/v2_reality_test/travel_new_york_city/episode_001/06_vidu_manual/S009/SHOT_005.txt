@@ -1,0 +1,28 @@
+ORDER: 030/065
+SCENE: S009
+SHOT: SHOT_005
+DURATION: 8.0 seconds
+ASPECT RATIO: 16:9
+RESOLUTION: 1080p
+
+REFERENCE IMAGE:
+- _references/jieun_primary.png
+
+PROMPT:
+Medium close shot, eye-level, static locked camera. Jieun, a young woman with an oval face, soft features, natural eyebrows, dark brown eyes, and light natural makeup, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch, with shoulder-length dark brown hair straight with slight natural waves tucked behind ears, wearing a medium-sized travel backpack on her back and a small crossbody bag across her body, holding a checked suitcase handle in her hand, stands near the ticket machine in the subway station entrance area. Beside her stands a female transit employee in her 30s with a neat professional appearance, hair tied back, wearing a transit authority uniform with a visible badge, dark-colored uniform pants, and comfortable work shoes, holding a small handheld radio. Bright indoor station lighting with natural daylight from the platform entrances. A few passengers walk toward the platforms, some checking departure boards. Platform signs are visible in the background. Jieun nods in understanding, looks at the ticket machine, then turns her head to look toward Platform 2, her expression showing growing confidence. The transit employee stands beside her, facing her, with her hand lowered. The location remains the same subway station entrance area.
+
+NEGATIVE / DO-NOT-CHANGE NOTES:
+- Do not change Jieun's identity, appearance, hair, or clothing.
+- Do not change the transit employee's identity or uniform.
+- Do not change the canonical location identity or current zone.
+- Do not introduce new characters.
+- Do not introduce new locations.
+- Do not alter the canonical prop state: backpack on back, crossbody bag across body, suitcase held in hand, smartphone and passport not visible.
+- Do not show Jieun moving past the subway station or boarding a train.
+- Do not show Jieun's suitcase being lost or missing.
+- Do not show Jieun's passport or smartphone being dropped or lost.
+- Do not show specific ticket prices or payment method details.
+- Do not change story events or resolve unresolved story facts.
+
+OUTPUT FILE:
+S009_SHOT_005.mp4

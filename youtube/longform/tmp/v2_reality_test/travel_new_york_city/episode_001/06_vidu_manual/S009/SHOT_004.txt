@@ -1,0 +1,27 @@
+ORDER: 029/065
+SCENE: S009
+SHOT: SHOT_004
+DURATION: 8.0 seconds
+ASPECT RATIO: 16:9
+RESOLUTION: 1080p
+
+REFERENCE IMAGE:
+- _references/jieun_primary.png
+
+PROMPT:
+A medium shot at eye level with a static camera shows a young Korean woman with shoulder-length dark brown hair tucked behind her ears, wearing a white t-shirt, light blue denim jacket, dark blue skinny jeans, and white sneakers, with a backpack on her back, a crossbody bag across her body, and holding a suitcase handle. Beside her, a female transit employee in her 30s with hair tied back, wearing a transit authority uniform with a visible badge, dark pants, and work shoes, holds a small handheld radio and points toward platform signs in the background. The employee directs Jieun to take the Downtown train on Platform 2. Jieun listens attentively and looks toward the platform signs. The bright indoor station has a ticket machine beside Jieun and natural daylight from platform entrances. A few passengers walk in the background. The camera remains static and locked.
+
+NEGATIVE / DO-NOT-CHANGE NOTES:
+- Do not change character identity.
+- Do not change canonical location identity.
+- Do not introduce new characters.
+- Do not introduce new locations.
+- Do not alter canonical prop state.
+- Do not change story events.
+- Do not show Jieun moving past the subway station or boarding a train.
+- Do not show specific ticket prices or payment method details.
+- Do not show Jieun's suitcase being lost or missing.
+- Do not show Jieun's passport or smartphone being dropped or lost.
+
+OUTPUT FILE:
+S009_SHOT_004.mp4

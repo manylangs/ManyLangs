@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a1",
+    "id": "007"
+  },
+  "title": {
+    "target": "Как спросить дорогу",
+    "en": "Asking for Directions",
+    "es": "Cómo preguntar por una dirección",
+    "fr": "Demander son chemin",
+    "pt": "Como perguntar o caminho",
+    "kr": "길 묻는 법",
+    "jp": "道の尋ね方",
+    "zh": "问路",
+    "ru": "Как спросить дорогу"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Извините, вы не подскажете, где здесь библиотека?",
+            "en": "Excuse me, could you tell me where the library is?",
+            "es": "Disculpe, ¿podría decirme dónde está la biblioteca?",
+            "fr": "Excusez-moi, pourriez-vous m'indiquer où se trouve la bibliothèque ?",
+            "pt": "Com licença, você poderia me dizer onde fica a biblioteca?",
+            "kr": "실례합니다, 여기 도서관이 어디 있는지 아세요?",
+            "jp": "すみません、ここに図書館はどこか教えていただけますか？",
+            "zh": "不好意思，请问图书馆在哪里？",
+            "ru": "Извините, вы не подскажете, где здесь библиотека?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Идите прямо до конца улицы, а потом поверните направо.",
+            "en": "Go straight to the end of the street, and then turn right.",
+            "es": "Siga recto hasta el final de la calle y luego gire a la derecha.",
+            "fr": "Allez tout droit jusqu'au bout de la rue, puis tournez à droite.",
+            "pt": "Vá em frente até o fim da rua e depois vire à direita.",
+            "kr": "길 끝까지 쭉 가신 다음에 오른쪽으로 도세요.",
+            "jp": "通りをまっすぐ突き当たりまで行って、それから右に曲がってください。",
+            "zh": "一直走到街的尽头，然后右转。",
+            "ru": "Идите прямо до конца улицы, а потом поверните направо."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это далеко отсюда?",
+            "en": "Is it far from here?",
+            "es": "¿Está lejos de aquí?",
+            "fr": "C'est loin d'ici ?",
+            "pt": "É longe daqui?",
+            "kr": "여기서 멀어요?",
+            "jp": "ここから遠いですか？",
+            "zh": "离这儿远吗？",
+            "ru": "Это далеко отсюда?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, минут пять пешком.",
+            "en": "No, it's about a five-minute walk.",
+            "es": "No, a unos cinco minutos andando.",
+            "fr": "Non, environ cinq minutes à pied.",
+            "pt": "Não, uns cinco minutos a pé.",
+            "kr": "아니요, 걸어서 오 분쯤이에요.",
+            "jp": "いいえ、歩いて五分くらいです。",
+            "zh": "不远，走路大概五分钟。",
+            "ru": "Нет, минут пять пешком."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спасибо большое!",
+            "en": "Thank you very much!",
+            "es": "¡Muchas gracias!",
+            "fr": "Merci beaucoup !",
+            "pt": "Muito obrigada!",
+            "kr": "정말 감사합니다!",
+            "jp": "どうもありがとうございます！",
+            "zh": "非常感谢！",
+            "ru": "Спасибо большое!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не за что. Хорошего дня!",
+            "en": "You're welcome. Have a nice day!",
+            "es": "De nada. ¡Que tenga un buen día!",
+            "fr": "De rien. Bonne journée !",
+            "pt": "De nada. Tenha um bom dia!",
+            "kr": "천만에요. 좋은 하루 보내세요!",
+            "jp": "どういたしまして。良い一日を！",
+            "zh": "不客气。祝您今天愉快！",
+            "ru": "Не за что. Хорошего дня!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Скажите, пожалуйста, как пройти к метро?",
+            "en": "Could you tell me, please, how to get to the metro?",
+            "es": "Por favor, ¿cómo se llega al metro?",
+            "fr": "Dites-moi, s'il vous plaît, comment aller au métro ?",
+            "pt": "Me diga, por favor, como chego ao metrô?",
+            "kr": "저기요, 지하철역에 어떻게 가는지 알려주시겠어요?",
+            "jp": "すみません、地下鉄への行き方を教えていただけますか？",
+            "zh": "请问，去地铁站怎么走？",
+            "ru": "Скажите, пожалуйста, как пройти к метро?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вам нужно идти вон туда, за угол.",
+            "en": "You need to go over there, around the corner.",
+            "es": "Tiene que ir hacia allí, a la vuelta de la esquina.",
+            "fr": "Vous devez aller par là-bas, au coin de la rue.",
+            "pt": "Você precisa ir por ali, virando a esquina.",
+            "kr": "저쪽 모퉁이로 가셔야 해요.",
+            "jp": "あそこへ行って、角を曲がってください。",
+            "zh": "您需要往那边走，拐过那个角。",
+            "ru": "Вам нужно идти вон туда, за угол."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А там будет указатель?",
+            "en": "And will there be a sign there?",
+            "es": "¿Y habrá un letrero allí?",
+            "fr": "Et il y aura un panneau indicateur ?",
+            "pt": "E vai ter uma placa lá?",
+            "kr": "그럼 거기에 표지판이 있을까요?",
+            "jp": "そこに案内標識はありますか？",
+            "zh": "那里会有指示牌吗？",
+            "ru": "А там будет указатель?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, вы увидите синюю букву «М».",
+            "en": "Yes, you'll see a blue letter \"M\".",
+            "es": "Sí, verá una letra azul «M».",
+            "fr": "Oui, vous verrez la lettre « M » en bleu.",
+            "pt": "Sim, você vai ver a letra \"M\" azul.",
+            "kr": "네, 파란색 엠 글자가 보일 거예요.",
+            "jp": "はい、青い「М」の文字が見えますよ。",
+            "zh": "会有的，您会看到一个蓝色的“M”字母。",
+            "ru": "Да, вы увидите синюю букву «М»."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, спасибо!",
+            "en": "Great, thanks!",
+            "es": "Estupendo, ¡gracias!",
+            "fr": "Parfait, merci !",
+            "pt": "Ótimo, obrigada!",
+            "kr": "좋아요, 감사합니다!",
+            "jp": "素晴らしい、ありがとうございます！",
+            "zh": "太好了，谢谢！",
+            "ru": "Отлично, спасибо!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пожалуйста, удачи вам!",
+            "en": "You're welcome, good luck!",
+            "es": "De nada, ¡buena suerte!",
+            "fr": "Je vous en prie, bonne chance !",
+            "pt": "De nada, boa sorte!",
+            "kr": "별말씀을요, 행운을 빌어요!",
+            "jp": "どういたしまして、お気をつけて！",
+            "zh": "不客气，祝您好运！",
+            "ru": "Пожалуйста, удачи вам!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Добрый день! Я ищу аптеку. Она рядом?",
+            "en": "Good afternoon! I'm looking for a pharmacy. Is it nearby?",
+            "es": "¡Buenas tardes! Estoy buscando una farmacia. ¿Está cerca?",
+            "fr": "Bonjour ! Je cherche une pharmacie. C'est près d'ici ?",
+            "pt": "Boa tarde! Estou procurando uma farmácia. Ela fica perto?",
+            "kr": "안녕하세요! 약국을 찾고 있는데요. 가까이 있나요?",
+            "jp": "こんにちは！薬局を探しているんですが、近くにありますか？",
+            "zh": "您好！我在找药店。它在这附近吗？",
+            "ru": "Добрый день! Я ищу аптеку. Она рядом?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, аптека находится через дорогу.",
+            "en": "Yes, the pharmacy is across the street.",
+            "es": "Sí, la farmacia está al otro lado de la calle.",
+            "fr": "Oui, la pharmacie est de l'autre côté de la rue.",
+            "pt": "Sim, a farmácia fica do outro lado da rua.",
+            "kr": "네, 약국은 길 건너편에 있어요.",
+            "jp": "はい、薬局は通りの向かいにあります。",
+            "zh": "是的，药店就在马路对面。",
+            "ru": "Да, аптека находится через дорогу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это вон то белое здание?",
+            "en": "Is it that white building over there?",
+            "es": "¿Es aquel edificio blanco?",
+            "fr": "C'est ce bâtiment blanc là-bas ?",
+            "pt": "É aquele prédio branco ali?",
+            "kr": "저기 흰색 건물인가요?",
+            "jp": "あの白い建物ですか？",
+            "zh": "是那栋白色的楼吗？",
+            "ru": "Это вон то белое здание?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, белое здание — это банк. Аптека — рядом с ним.",
+            "en": "No, the white building is the bank. The pharmacy is next to it.",
+            "es": "No, el edificio blanco es el banco. La farmacia está al lado.",
+            "fr": "Non, le bâtiment blanc, c'est la banque. La pharmacie est à côté.",
+            "pt": "Não, o prédio branco é o banco. A farmácia fica ao lado dele.",
+            "kr": "아니요, 흰색 건물은 은행이에요. 약국은 그 옆에 있어요.",
+            "jp": "いいえ、白い建物は銀行です。薬局はその隣です。",
+            "zh": "不是，白色的楼是银行。药店就在它旁边。",
+            "ru": "Нет, белое здание — это банк. Аптека — рядом с ним."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А, теперь я вижу. Спасибо!",
+            "en": "Oh, now I see it. Thanks!",
+            "es": "Ah, ahora la veo. ¡Gracias!",
+            "fr": "Ah, maintenant je vois. Merci !",
+            "pt": "Ah, agora estou vendo. Obrigada!",
+            "kr": "아, 이제 보이네요. 감사합니다!",
+            "jp": "ああ、今わかりました。ありがとうございます！",
+            "zh": "啊，现在我看到了。谢谢！",
+            "ru": "А, теперь я вижу. Спасибо!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обращайтесь, если что.",
+            "en": "Feel free to ask if you need anything.",
+            "es": "No hay de qué, si necesita algo, avíseme.",
+            "fr": "N'hésitez pas si vous avez besoin de quelque chose.",
+            "pt": "Se precisar de algo, é só falar.",
+            "kr": "필요하시면 또 말씀하세요.",
+            "jp": "何かあれば、声をかけてください。",
+            "zh": "有事随时找我。",
+            "ru": "Обращайтесь, если что."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Простите, я заблудилась. Где находится парк?",
+            "en": "Excuse me, I'm lost. Where is the park?",
+            "es": "Perdone, me he perdido. ¿Dónde está el parque?",
+            "fr": "Pardon, je me suis perdue. Où se trouve le parc ?",
+            "pt": "Desculpe, eu me perdi. Onde fica o parque?",
+            "kr": "죄송한데요, 길을 잃었어요. 공원이 어디에 있나요?",
+            "jp": "すみません、道に迷ってしまいました。公園はどこにありますか？",
+            "zh": "对不起，我迷路了。公园在哪里？",
+            "ru": "Простите, я заблудилась. Где находится парк?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Парк совсем близко. Идите назад, потом налево.",
+            "en": "The park is very close. Go back, and then turn left.",
+            "es": "El parque está muy cerca. Vaya hacia atrás y luego a la izquierda.",
+            "fr": "Le parc est tout près. Revenez en arrière, puis tournez à gauche.",
+            "pt": "O parque fica bem perto. Vá para trás e depois vire à esquerda.",
+            "kr": "공원은 아주 가까워요. 뒤로 가신 다음에 왼쪽으로 가세요.",
+            "jp": "公園はすぐ近くですよ。戻って、それから左に曲がってください。",
+            "zh": "公园很近。您往回走，然后左转。",
+            "ru": "Парк совсем близко. Идите назад, потом налево."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Налево у светофора?",
+            "en": "Left at the traffic light?",
+            "es": "¿A la izquierda en el semáforo?",
+            "fr": "À gauche au feu rouge ?",
+            "pt": "À esquerda no semáforo?",
+            "kr": "신호등에서 왼쪽으로요?",
+            "jp": "信号のところで左ですか？",
+            "zh": "在红绿灯那里左转吗？",
+            "ru": "Налево у светофора?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, именно так. И вы сразу его увидите.",
+            "en": "Yes, exactly. And you'll see it right away.",
+            "es": "Sí, exactamente. Y lo verá enseguida.",
+            "fr": "Oui, exactement. Et vous le verrez tout de suite.",
+            "pt": "Sim, exatamente isso. E você vai vê-lo logo.",
+            "kr": "네, 바로 그렇게 하시면 돼요. 그러면 바로 보일 거예요.",
+            "jp": "はい、その通りです。すぐに見えますよ。",
+            "zh": "对，就是这样。您马上就能看到它。",
+            "ru": "Да, именно так. И вы сразу его увидите."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Большое спасибо за помощь!",
+            "en": "Thank you so much for your help!",
+            "es": "¡Muchas gracias por su ayuda!",
+            "fr": "Merci beaucoup pour votre aide !",
+            "pt": "Muito obrigada pela ajuda!",
+            "kr": "도와주셔서 정말 감사합니다!",
+            "jp": "助けていただいて、本当にありがとうございます！",
+            "zh": "非常感谢您的帮助！",
+            "ru": "Большое спасибо за помощь!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не стоит благодарности.",
+            "en": "Don't mention it.",
+            "es": "No hay de qué.",
+            "fr": "Il n'y a pas de quoi.",
+            "pt": "Não precisa agradecer.",
+            "kr": "별말씀을요.",
+            "jp": "お礼には及びません。",
+            "zh": "不用谢。",
+            "ru": "Не стоит благодарности."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Подскажите, тут есть хорошее кафе поблизости?",
+            "en": "Could you tell me, is there a good cafe nearby?",
+            "es": "¿Me podría decir si hay un buen café cerca de aquí?",
+            "fr": "Dites-moi, y a-t-il un bon café dans le quartier ?",
+            "pt": "Me diga, tem um bom café por perto?",
+            "kr": "저기요, 이 근처에 괜찮은 카페가 있나요?",
+            "jp": "すみません、この近くにいいカフェはありますか？",
+            "zh": "请问，这附近有好一点的咖啡馆吗？",
+            "ru": "Подскажите, тут есть хорошее кафе поблизости?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, есть одно кафе на следующей улице.",
+            "en": "Yes, there's a cafe on the next street.",
+            "es": "Sí, hay un café en la calle siguiente.",
+            "fr": "Oui, il y a un café dans la rue d'à côté.",
+            "pt": "Sim, tem um café na próxima rua.",
+            "kr": "네, 다음 거리에 카페가 하나 있어요.",
+            "jp": "はい、次の通りに一軒ありますよ。",
+            "zh": "有，下一条街上有一家咖啡馆。",
+            "ru": "Да, есть одно кафе на следующей улице."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А как туда добраться?",
+            "en": "And how do I get there?",
+            "es": "¿Y cómo se llega hasta allí?",
+            "fr": "Et comment y aller ?",
+            "pt": "E como eu chego lá?",
+            "kr": "그럼 거기에 어떻게 가요?",
+            "jp": "そこへはどうやって行けばいいですか？",
+            "zh": "那怎么去那里？",
+            "ru": "А как туда добраться?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Идите прямо, потом сверните на втором повороте.",
+            "en": "Go straight, and then turn at the second turnoff.",
+            "es": "Siga recto y luego gire en el segundo cruce.",
+            "fr": "Allez tout droit, puis tournez à la deuxième rue.",
+            "pt": "Vá em frente e depois dobre na segunda esquina.",
+            "kr": "쭉 가시다가 두 번째 모퉁이에서 꺾으세요.",
+            "jp": "まっすぐ行って、二つ目の曲がり角で曲がってください。",
+            "zh": "一直往前走，然后在第二个路口转弯。",
+            "ru": "Идите прямо, потом сверните на втором повороте."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно, спасибо вам!",
+            "en": "Got it, thank you!",
+            "es": "Entendido, ¡gracias!",
+            "fr": "Compris, merci !",
+            "pt": "Entendi, obrigada!",
+            "kr": "알겠어요, 감사합니다!",
+            "jp": "わかりました、ありがとうございます！",
+            "zh": "明白了，谢谢您！",
+            "ru": "Понятно, спасибо вам!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пожалуйста, приятного аппетита!",
+            "en": "You're welcome, enjoy your meal!",
+            "es": "De nada, ¡que aproveche!",
+            "fr": "Je vous en prie, bon appétit !",
+            "pt": "De nada, bom apetite!",
+            "kr": "천만에요, 맛있게 드세요!",
+            "jp": "どういたしまして、ごゆっくりどうぞ！",
+            "zh": "不客气，祝您用餐愉快！",
+            "ru": "Пожалуйста, приятного аппетита!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мужчина, вы не знаете, где останавливается автобус?",
+            "en": "Sir, do you know where the bus stops?",
+            "es": "Caballero, ¿sabe usted dónde para el autobús?",
+            "fr": "Monsieur, savez-vous où s'arrête le bus ?",
+            "pt": "Moço, você sabe onde para o ônibus?",
+            "kr": "저기요, 버스가 어디에 서는지 아세요?",
+            "jp": "すみません、バスはどこに止まりますか、ご存知ですか？",
+            "zh": "先生，您知道公交车在哪里停吗？",
+            "ru": "Мужчина, вы не знаете, где останавливается автобус?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Остановка вон там, около магазина.",
+            "en": "The stop is over there, near the store.",
+            "es": "La parada está allí, cerca de la tienda.",
+            "fr": "L'arrêt est là-bas, près du magasin.",
+            "pt": "O ponto fica ali, perto da loja.",
+            "kr": "정류장은 저기 가게 옆에 있어요.",
+            "jp": "バス停はあそこです、お店の近くにあります。",
+            "zh": "车站就在那边，商店附近。",
+            "ru": "Остановка вон там, около магазина."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А какой автобус идёт до центра?",
+            "en": "And which bus goes to the city center?",
+            "es": "¿Y qué autobús va al centro?",
+            "fr": "Et quel bus va au centre-ville ?",
+            "pt": "E qual ônibus vai para o centro?",
+            "kr": "그럼 시내까지 가는 버스는 뭐예요?",
+            "jp": "中心部まで行くバスはどれですか？",
+            "zh": "哪路车去市中心？",
+            "ru": "А какой автобус идёт до центра?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вам подойдут тридцать пятый и сорок второй.",
+            "en": "The thirty-fifth and the forty-second will work for you.",
+            "es": "Le sirven el treinta y cinco y el cuarenta y dos.",
+            "fr": "Les trente-cinq et quarante-deux vous conviennent.",
+            "pt": "O trinta e cinco e o quarenta e dois servem para você.",
+            "kr": "삼십오 번하고 사십이 번이면 돼요.",
+            "jp": "三十五番と四十二番がいいですよ。",
+            "zh": "三十五路和四十二路都可以。",
+            "ru": "Вам подойдут тридцать пятый и сорок второй."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спасибо, очень помогли!",
+            "en": "Thanks, you've been a big help!",
+            "es": "Gracias, ¡me ha ayudado mucho!",
+            "fr": "Merci, vous m'avez beaucoup aidé !",
+            "pt": "Obrigada, você me ajudou muito!",
+            "kr": "감사합니다, 정말 도움이 됐어요!",
+            "jp": "ありがとうございます、とても助かりました！",
+            "zh": "谢谢，您帮了大忙！",
+            "ru": "Спасибо, очень помогли!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да не за что, приятной поездки!",
+            "en": "No problem, have a nice trip!",
+            "es": "De nada, ¡buen viaje!",
+            "fr": "Mais de rien, bon voyage !",
+            "pt": "Imagina, boa viagem!",
+            "kr": "별말씀을요, 즐거운 여행 되세요!",
+            "jp": "いいえ、どういたしまして。良い旅を！",
+            "zh": "不客气，祝您旅途愉快！",
+            "ru": "Да не за что, приятной поездки!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Девушка, подскажите, как найти гостиницу «Центральная»?",
+            "en": "Miss, could you tell me how to find the \"Central\" hotel?",
+            "es": "Señorita, ¿me podría decir cómo encontrar el hotel «Central»?",
+            "fr": "Madame, dites-moi comment trouver l'hôtel « Central » ?",
+            "pt": "Moça, me diga como encontro o hotel \"Central\"?",
+            "kr": "저기요, 중앙 호텔을 어떻게 찾아가야 하나요?",
+            "jp": "すみません、「ツェントラーリナヤ」ホテルへの行き方を教えていただけますか？",
+            "zh": "姑娘，请问“中央”宾馆怎么走？",
+            "ru": "Девушка, подскажите, как найти гостиницу «Центральная»?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это очень просто. Идите по этой улице до площади.",
+            "en": "It's very simple. Walk along this street to the square.",
+            "es": "Es muy sencillo. Siga por esta calle hasta la plaza.",
+            "fr": "C'est très simple. Suivez cette rue jusqu'à la place.",
+            "pt": "É bem simples. Vá por esta rua até a praça.",
+            "kr": "아주 간단해요. 이 길을 따라 광장까지 가세요.",
+            "jp": "とても簡単ですよ。この通りをまっすぐ広場まで行ってください。",
+            "zh": "很简单。沿着这条街走到广场。",
+            "ru": "Это очень просто. Идите по этой улице до площади."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А потом?",
+            "en": "And then?",
+            "es": "¿Y después?",
+            "fr": "Et ensuite ?",
+            "pt": "E depois?",
+            "kr": "그다음에는요?",
+            "jp": "それからですか？",
+            "zh": "然后呢？",
+            "ru": "А потом?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "На площади поверните направо, гостиница будет слева.",
+            "en": "At the square, turn right, and the hotel will be on the left.",
+            "es": "En la plaza gire a la derecha, el hotel estará a la izquierda.",
+            "fr": "Sur la place, tournez à droite, l'hôtel sera sur la gauche.",
+            "pt": "Na praça, vire à direita, o hotel vai ficar à esquerda.",
+            "kr": "광장에서 오른쪽으로 도시면 호텔이 왼쪽에 있을 거예요.",
+            "jp": "広場で右に曲がると、ホテルは左側にあります。",
+            "zh": "到了广场右转，宾馆就在左边。",
+            "ru": "На площади поверните направо, гостиница будет слева."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ясно, спасибо большое!",
+            "en": "Got it, thank you very much!",
+            "es": "Claro, ¡muchas gracias!",
+            "fr": "D'accord, merci beaucoup !",
+            "pt": "Entendi, muito obrigada!",
+            "kr": "알겠어요, 정말 감사합니다!",
+            "jp": "なるほど、どうもありがとうございます！",
+            "zh": "明白了，非常感谢！",
+            "ru": "Ясно, спасибо большое!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пожалуйста, хорошего отдыха!",
+            "en": "You're welcome, enjoy your stay!",
+            "es": "De nada, ¡que descanse!",
+            "fr": "Je vous en prie, bon séjour !",
+            "pt": "De nada, tenha um bom descanso!",
+            "kr": "천만에요, 즐거운 휴가 보내세요!",
+            "jp": "どういたしまして、楽しいひとときを！",
+            "zh": "不客气，祝您休息愉快！",
+            "ru": "Пожалуйста, хорошего отдыха!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Извините, я ищу почту. Я правильно иду?",
+            "en": "Excuse me, I'm looking for the post office. Am I going the right way?",
+            "es": "Disculpe, estoy buscando la oficina de correos. ¿Voy bien?",
+            "fr": "Excusez-moi, je cherche la poste. Est-ce que je vais dans la bonne direction ?",
+            "pt": "Com licença, estou procurando o correio. Estou indo no caminho certo?",
+            "kr": "실례합니다, 우체국을 찾고 있는데요. 제가 잘 가고 있나요?",
+            "jp": "すみません、郵便局を探しているんですが、この道で合っていますか？",
+            "zh": "不好意思，我在找邮局。我走得对吗？",
+            "ru": "Извините, я ищу почту. Я правильно иду?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, вы идёте правильно. Почта будет через два дома.",
+            "en": "Yes, you're going the right way. The post office will be two buildings down.",
+            "es": "Sí, va usted bien. La oficina de correos estará a dos casas de aquí.",
+            "fr": "Oui, vous allez dans la bonne direction. La poste sera après deux maisons.",
+            "pt": "Sim, você está indo certo. O correio fica a duas casas daqui.",
+            "kr": "네, 잘 가고 있어요. 우체국은 두 채 지나면 나와요.",
+            "jp": "はい、合っていますよ。郵便局は二軒先にあります。",
+            "zh": "对，您走对了。再过两栋房子就是邮局。",
+            "ru": "Да, вы идёте правильно. Почта будет через два дома."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это высокое серое здание?",
+            "en": "Is it that tall gray building?",
+            "es": "¿Es aquel edificio alto y gris?",
+            "fr": "C'est ce grand bâtiment gris ?",
+            "pt": "É aquele prédio cinza alto?",
+            "kr": "저 높은 회색 건물인가요?",
+            "jp": "あの高い灰色の建物ですか？",
+            "zh": "是那栋灰色的高楼吗？",
+            "ru": "Это высокое серое здание?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, почта — это жёлтое здание с вывеской.",
+            "en": "No, the post office is the yellow building with a sign.",
+            "es": "No, la oficina de correos es el edificio amarillo con el letrero.",
+            "fr": "Non, la poste, c'est le bâtiment jaune avec une enseigne.",
+            "pt": "Não, o correio é o prédio amarelo com uma placa.",
+            "kr": "아니요, 우체국은 간판이 있는 노란색 건물이에요.",
+            "jp": "いいえ、郵便局は看板のある黄色い建物です。",
+            "zh": "不是，邮局是那栋带招牌的黄色建筑。",
+            "ru": "Нет, почта — это жёлтое здание с вывеской."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спасибо, что подсказали!",
+            "en": "Thanks for telling me!",
+            "es": "¡Gracias por indicármelo!",
+            "fr": "Merci de me l'avoir dit !",
+            "pt": "Obrigada por me indicar!",
+            "kr": "알려주셔서 감사합니다!",
+            "jp": "教えていただいて、ありがとうございます！",
+            "zh": "谢谢您告诉我！",
+            "ru": "Спасибо, что подсказали!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пожалуйста, всего доброго!",
+            "en": "You're welcome, all the best!",
+            "es": "De nada, ¡que le vaya bien!",
+            "fr": "Je vous en prie, bonne journée !",
+            "pt": "De nada, tudo de bom!",
+            "kr": "천만에요, 좋은 일만 가득하세요!",
+            "jp": "どういたしまして、お元気で！",
+            "zh": "不客气，祝您一切顺利！",
+            "ru": "Пожалуйста, всего доброго!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Вы не подскажете, где здесь туалет?",
+            "en": "Could you tell me where the restroom is?",
+            "es": "¿Me podría decir dónde hay un baño por aquí?",
+            "fr": "Pourriez-vous me dire où sont les toilettes ?",
+            "pt": "Você poderia me dizer onde fica o banheiro?",
+            "kr": "여기 화장실이 어디 있는지 아세요?",
+            "jp": "すみません、ここら辺にトイレはありますか？",
+            "zh": "请问，这附近哪里有厕所？",
+            "ru": "Вы не подскажете, где здесь туалет?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, он есть в торговом центре.",
+            "en": "Sure, there's one in the shopping center.",
+            "es": "Claro, hay uno en el centro comercial.",
+            "fr": "Bien sûr, il y en a dans le centre commercial.",
+            "pt": "Claro, tem um no shopping.",
+            "kr": "그럼요, 쇼핑몰 안에 있어요.",
+            "jp": "もちろん、ショッピングセンターの中にありますよ。",
+            "zh": "有，商场里有。",
+            "ru": "Конечно, он есть в торговом центре."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А торговый центр далеко?",
+            "en": "And is the shopping center far?",
+            "es": "¿Y el centro comercial está lejos?",
+            "fr": "Et le centre commercial est loin ?",
+            "pt": "E o shopping fica longe?",
+            "kr": "그럼 쇼핑몰은 멀어요?",
+            "jp": "ショッピングセンターは遠いですか？",
+            "zh": "商场远吗？",
+            "ru": "А торговый центр далеко?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, он прямо за этим зданием.",
+            "en": "No, it's right behind this building.",
+            "es": "No, está justo detrás de este edificio.",
+            "fr": "Non, il est juste derrière ce bâtiment.",
+            "pt": "Não, fica logo atrás deste prédio.",
+            "kr": "아니요, 이 건물 바로 뒤에 있어요.",
+            "jp": "いいえ、この建物のすぐ裏にあります。",
+            "zh": "不远，就在这栋楼的后面。",
+            "ru": "Нет, он прямо за этим зданием."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, спасибо!",
+            "en": "Great, thanks!",
+            "es": "Estupendo, ¡gracias!",
+            "fr": "Parfait, merci !",
+            "pt": "Ótimo, obrigada!",
+            "kr": "좋아요, 감사합니다!",
+            "jp": "良かった、ありがとうございます！",
+            "zh": "太好了，谢谢！",
+            "ru": "Отлично, спасибо!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не за что, обращайтесь!",
+            "en": "No problem, feel free to ask!",
+            "es": "De nada, ¡cuando necesite algo, avise!",
+            "fr": "De rien, n'hésitez pas !",
+            "pt": "De nada, é só falar!",
+            "kr": "천만에요, 또 오세요!",
+            "jp": "どういたしまして、いつでも声をかけてください！",
+            "zh": "不客气，有事找我！",
+            "ru": "Не за что, обращайтесь!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте! Как мне добраться до вокзала?",
+            "en": "Hello! How do I get to the train station?",
+            "es": "¡Hola! ¿Cómo puedo llegar a la estación de tren?",
+            "fr": "Bonjour ! Comment puis-je me rendre à la gare ?",
+            "pt": "Olá! Como eu chego à estação de trem?",
+            "kr": "안녕하세요! 기차역에는 어떻게 가야 하나요?",
+            "jp": "こんにちは！駅へはどうやって行けばいいですか？",
+            "zh": "您好！去火车站怎么走？",
+            "ru": "Здравствуйте! Как мне добраться до вокзала?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Лучше всего на такси, это не очень близко.",
+            "en": "The best way is by taxi, it's not very close.",
+            "es": "Lo mejor es en taxi, no está muy cerca.",
+            "fr": "Le mieux est de prendre un taxi, ce n'est pas très proche.",
+            "pt": "O melhor é de táxi, não é muito perto.",
+            "kr": "택시를 타시는 게 제일 좋아요. 그렇게 가깝지 않아요.",
+            "jp": "タクシーが一番いいですよ、あまり近くないですから。",
+            "zh": "最好打车去，那里不太近。",
+            "ru": "Лучше всего на такси, это не очень близко."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А на автобусе нельзя?",
+            "en": "And can't I take a bus?",
+            "es": "¿Y no se puede en autobús?",
+            "fr": "Et on ne peut pas y aller en bus ?",
+            "pt": "E de ônibus não dá?",
+            "kr": "그럼 버스로는 안 돼요?",
+            "jp": "バスでは行けませんか？",
+            "zh": "不能坐公交车吗？",
+            "ru": "А на автобусе нельзя?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Можно, но нужно будет сделать пересадку.",
+            "en": "You can, but you'll need to make a transfer.",
+            "es": "Se puede, pero tendrá que hacer transbordo.",
+            "fr": "Si, mais il faudra faire une correspondance.",
+            "pt": "Dá, mas você vai precisar fazer baldeação.",
+            "kr": "갈 수는 있는데, 환승을 하셔야 해요.",
+            "jp": "行けますよ、でも乗り換えが必要です。",
+            "zh": "可以，但是需要换乘。",
+            "ru": "Можно, но нужно будет сделать пересадку."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда, наверное, возьму такси. Спасибо!",
+            "en": "Then I guess I'll take a taxi. Thanks!",
+            "es": "Entonces, supongo que cogeré un taxi. ¡Gracias!",
+            "fr": "Alors, je vais probablement prendre un taxi. Merci !",
+            "pt": "Então, acho que vou pegar um táxi. Obrigada!",
+            "kr": "그럼 아마 택시를 탈게요. 감사합니다!",
+            "jp": "それなら、たぶんタクシーにします。ありがとうございます！",
+            "zh": "那我还是打车吧。谢谢！",
+            "ru": "Тогда, наверное, возьму такси. Спасибо!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пожалуйста, счастливого пути!",
+            "en": "You're welcome, have a safe trip!",
+            "es": "De nada, ¡buen viaje!",
+            "fr": "Je vous en prie, bon voyage !",
+            "pt": "De nada, boa viagem!",
+            "kr": "천만에요, 즐거운 여행 되세요!",
+            "jp": "どういたしまして、良い旅を！",
+            "zh": "不客气，祝您一路顺风！",
+            "ru": "Пожалуйста, счастливого пути!"
+          }
+        }
+      ]
+    }
+  ]
+}

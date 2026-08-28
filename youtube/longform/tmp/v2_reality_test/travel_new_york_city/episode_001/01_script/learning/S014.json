@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S014",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "source_dialogue": {
+    "source_scene_id": "S014",
+    "source_line_ids": [
+      "L001",
+      "L002",
+      "L003",
+      "L004"
+    ]
+  },
+  "key_expressions": [
+    {
+      "key_expression_id": "KE001",
+      "source_line_ids": [
+        "L001"
+      ],
+      "expression": "This is my stop. I need to get off here.",
+      "meaning": "이 역이 내가 내릴 역이다. 여기서 내려야 한다.",
+      "usage": "지하철이나 버스에서 내릴 역에 도착했을 때 스스로에게 또는 옆 사람에게 말하는 표현이다. 'get off'는 교통수단에서 '내리다'라는 뜻으로, 여행 중에 매우 자주 쓰이는 구동사다.",
+      "context": "지하철을 타고 맨해튼에 도착한 지은이 자신의 목적지 역임을 확인하고 내려야 한다고 스스로에게 말하는 상황이다.",
+      "communicative_function": "confirming information",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "This is my stop. I have to get off here.",
+      "common_mistake": "'get off' 대신 'get out'을 쓰는 경우가 있는데, 'get out'은 차나 건물에서 나올 때 더 자연스럽다. 대중교통에서는 'get off'가 맞다.",
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE002",
+      "source_line_ids": [
+        "L002"
+      ],
+      "expression": "The buildings are so tall.",
+      "meaning": "건물들이 정말 높다.",
+      "usage": "처음 보는 도시의 높은 건물들을 보고 감탄할 때 쓰는 표현이다. 'so'를 사용해 감정을 강조하는 것은 회화에서 매우 자연스럽고 흔한 패턴이다.",
+      "context": "지하철역을 나와 맨해튼의 거리를 처음 마주한 지은이 높은 건물들을 보고 감탄하며 내뱉는 말이다.",
+      "communicative_function": "expressing internal awe",
+      "difficulty": "A1",
+      "priority": "core",
+      "variation": "The buildings are really tall.",
+      "common_mistake": "형용사 앞에 'so'를 쓸 때 'so tall buildings'처럼 명사 앞에 쓰는 실수를 할 수 있다. 감탄문에서는 'The buildings are so tall.'처럼 be동사 뒤에 쓰는 것이 자연스럽다.",
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE003",
+      "source_line_ids": [
+        "L003"
+      ],
+      "expression": "It's amazing.",
+      "meaning": "정말 놀랍다.",
+      "usage": "무언가를 보고 매우 감동하거나 놀랐을 때 쓰는 짧고 강력한 감탄 표현이다. 'amazing'은 일상생활에서 매우 자주 쓰이는 형용사로, 긍정적인 감정을 표현할 때 유용하다.",
+      "context": "영화에서만 보던 맨해튼의 스카이라인을 직접 눈으로 보고 지은이가 감동하여 'It's amazing.'이라고 말하는 상황이다.",
+      "communicative_function": "expressing internal awe",
+      "difficulty": "A1",
+      "priority": "core",
+      "variation": "It's incredible.",
+      "common_mistake": "'amazing'을 사람에게 쓸 때 'I am amazing.'이라고 하면 '나는 대단해'라는 뜻이 된다. 감탄의 대상이 사물이나 상황일 때는 'It's amazing.'이라고 하는 것이 맞다.",
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE004",
+      "source_line_ids": [
+        "L004"
+      ],
+      "expression": "I can't wait to see the hotel.",
+      "meaning": "호텔을 빨리 보고 싶다.",
+      "usage": "기대되는 일을 빨리 경험하고 싶을 때 쓰는 표현이다. 'can't wait to + 동사원형'은 '못 기다리다'라는 뜻으로, 어떤 일을 정말 빨리 하고 싶다는 강한 기대를 나타낸다.",
+      "context": "맨해튼에 도착한 설렘과 함께, 다음 목적지인 호텔에 대한 기대감을 지은이가 스스로에게 표현하는 상황이다.",
+      "communicative_function": "expressing preference",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "I'm really looking forward to seeing the hotel.",
+      "common_mistake": "'can't wait' 뒤에 'to'와 동사원형을 써야 하는데, 'I can't wait for see the hotel.'처럼 'for'를 쓰는 실수를 할 수 있다. 'can't wait to see'가 올바른 형태다.",
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    }
+  ],
+  "validation": {
+    "expression_count": 4,
+    "all_expressions_exist_in_dialogue": true,
+    "source_lines_valid": true,
+    "cefr_appropriate": true
+  }
+}

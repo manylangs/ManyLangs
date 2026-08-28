@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S014",
+  "shot_id": "SHOT_002",
+  "sequence": 2,
+  "duration_seconds": 8.0,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun stopping and looking up at the tall Manhattan buildings with awe.",
+  "framing": {
+    "shot_size": "medium",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "Manhattan skyline"
+    ]
+  },
+  "camera": {
+    "angle": "low_angle",
+    "movement": "tilt",
+    "stability": "smooth"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun stops walking, tilts her head up, and gazes at the tall buildings and skyline around her, her expression shifting to one of awe.",
+    "start_state": [
+      "Jieun is standing on the sidewalk outside the subway station",
+      "She is looking ahead at street level"
+    ],
+    "end_state": [
+      "Jieun is standing still, looking upward at the tall buildings",
+      "Her expression shows awe and wonder"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "awe and excitement",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "state": "in hand or pocket",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "state": "in crossbody bag",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "stationary beside Jieun",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L002",
+      "L003"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is standing on the street outside the subway station",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase"
+    ],
+    "carry_out": [
+      "Jieun is standing still, looking up at the tall buildings",
+      "Her expression is one of awe and excitement",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

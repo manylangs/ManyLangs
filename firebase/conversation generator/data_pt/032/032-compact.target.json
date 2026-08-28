@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Hospital e farmácia",
+  "sets": {
+    "001": [
+      "Bom dia, estou me sentindo muito mal, preciso de um médico.",
+      "Bom dia, pode me contar o que você está sentindo?",
+      "Estou com uma dor de cabeça forte e um pouco de febre.",
+      "Entendi. A senhora pode aguardar aqui, o médico já vai atender.",
+      "Muito obrigada, vou esperar sentada então.",
+      "Fique à vontade, qualquer coisa é só me chamar."
+    ],
+    "002": [
+      "Onde fica a farmácia mais próxima daqui?",
+      "Tem uma a duas quadras daqui, perto do banco.",
+      "Você sabe até que horas ela fica aberta?",
+      "Acho que ela fecha às vinte e duas horas, mas é melhor confirmar.",
+      "Perfeito, muito obrigada pela informação.",
+      "De nada, espero que você melhore logo."
+    ],
+    "003": [
+      "Doutor, esse remédio precisa ser tomado de quantas em quantas horas?",
+      "Você vai tomar um comprimido a cada oito horas, durante sete dias.",
+      "Posso tomar junto com a comida ou precisa ser em jejum?",
+      "O ideal é tomar depois do almoço e do jantar, para evitar irritação no estômago.",
+      "Entendi, muito obrigada pela orientação.",
+      "Se os sintomas não melhorarem, volte aqui para a gente reavaliar."
+    ],
+    "004": [
+      "O senhor tem algum remédio para alergia? Estou espirrando sem parar.",
+      "Temos algumas opções, mas primeiro preciso saber se você já usou algum antes.",
+      "Já usei um antialérgico, mas não lembro o nome agora.",
+      "Sem problemas, vou te mostrar as opções que temos aqui.",
+      "Qual desses o senhor recomenda para o meu caso?",
+      "Este aqui é bem eficaz e não dá muito sono, é uma boa escolha."
+    ],
+    "005": [
+      "Preciso fazer um exame de sangue, como faço para agendar?",
+      "Você pode agendar pelo aplicativo ou aqui na recepção mesmo.",
+      "Preciso estar em jejum para fazer esse exame?",
+      "Sim, é necessário ficar pelo menos oito horas sem comer.",
+      "O resultado sai em quanto tempo?",
+      "Em geral, sai em dois dias úteis pelo portal do paciente."
+    ],
+    "006": [
+      "Meu filho está com febre alta desde ontem à noite.",
+      "Qual a idade dele e qual a temperatura que você mediu?",
+      "Ele tem quatro anos e a febre chegou a trinta e nove graus.",
+      "Você já deu algum remédio para baixar a febre?",
+      "Dei um antitérmico, mas a febre voltou depois de algumas horas.",
+      "O ideal é trazer ele para a emergência pediátrica para uma avaliação."
+    ],
+    "007": [
+      "O senhor pode me explicar como usar essa pomada?",
+      "Claro, você vai aplicar uma camada fina na região afetada, duas vezes ao dia.",
+      "Precisa de receita para comprar esse remédio?",
+      "Sim, esse é um medicamento controlado, então só vendemos com receita.",
+      "Entendi, então vou passar no médico antes para conseguir a receita.",
+      "Isso mesmo, é importante seguir a orientação médica direitinho."
+    ],
+    "008": [
+      "Estou com uma dor no joelho que não passa há uma semana.",
+      "Você sofreu alguma queda ou fez algum esforço físico recentemente?",
+      "Não, a dor começou do nada, sem nenhum motivo aparente.",
+      "Vou pedir um raio-x para verificar se não há nada mais sério.",
+      "Está bem, doutor, e isso dói na hora do exame?",
+      "Não, é um exame rápido e indolor, pode ficar tranquila."
+    ],
+    "009": [
+      "O senhor tem algo para dor de garganta?",
+      "Temos pastilhas e sprays, qual você prefere?",
+      "Acho que o spray é mais prático, qual o senhor indica?",
+      "Este aqui é muito bom, alivia rápido e tem um gosto agradável.",
+      "Perfeito, vou levar esse então. Qual o valor?",
+      "Fica em vinte e cinco reais, pode passar no caixa."
+    ],
+    "010": [
+      "Preciso renovar minha receita de um remédio de uso contínuo.",
+      "Você tem a receita anterior com você? Precisamos verificar.",
+      "Tenho sim, aqui está. Preciso de mais três caixas.",
+      "Perfeito, vou verificar se temos em estoque para você.",
+      "Se não tiver, vocês conseguem encomendar?",
+      "Conseguimos sim, mas levaria um dia útil para chegar."
+    ]
+  },
+  "level": "b2",
+  "chapter_id": "CONV_PT_HOSPITAL_PHARMACY",
+  "id": "032",
+  "target_lang": "pt"
+}

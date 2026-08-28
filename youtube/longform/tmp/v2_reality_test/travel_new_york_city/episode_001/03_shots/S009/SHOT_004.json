@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S009",
+  "shot_id": "SHOT_004",
+  "sequence": 4,
+  "duration_seconds": 8.0,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001",
+    "B"
+  ],
+  "visual_intent": "Show the transit employee pointing toward the platform signs and directing Jieun to the Downtown train on Platform 2.",
+  "framing": {
+    "shot_size": "medium",
+    "subject_priority": [
+      "B",
+      "CHAR_JIEUN_001"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "B",
+    "description": "The transit employee points toward the platform signs and says to take the Downtown train on Platform 2.",
+    "start_state": [
+      "The transit employee is facing Jieun.",
+      "Jieun is listening to the employee's directions."
+    ],
+    "end_state": [
+      "The transit employee's hand is pointing toward the platform signs.",
+      "Jieun looks in the direction of the platform signs."
+    ]
+  },
+  "emotion": {
+    "primary_actor": "helpful and clear",
+    "supporting": {
+      "CHAR_JIEUN_001": "attentive and processing the information"
+    }
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on Jieun's back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "held by Jieun's hand",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L004"
+    ],
+    "speaker_focus": "B"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun has asked which train to take to Manhattan.",
+      "The transit employee is about to answer."
+    ],
+    "carry_out": [
+      "Jieun has been told to take the Downtown train on Platform 2.",
+      "She is looking toward the platform signs."
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

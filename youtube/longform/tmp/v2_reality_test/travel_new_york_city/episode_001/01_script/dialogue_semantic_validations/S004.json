@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S004",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun arrives at the baggage claim area",
+      "pass": true,
+      "evidence": "Line L001: \"Baggage claim. Now I need to find the right carousel for my flight.\""
+    },
+    {
+      "requirement": "Jieun identifies the correct baggage carousel for her flight",
+      "pass": true,
+      "evidence": "Line L002: \"There it is. Flight KE081. This is the right one.\""
+    },
+    {
+      "requirement": "Jieun begins waiting for her luggage",
+      "pass": true,
+      "evidence": "Line L003: \"I hope my bag made it. I really don't want to lose it.\""
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not resolve whether her bag arrived in this scene",
+      "pass": true,
+      "evidence": "Line L003: \"I hope my bag made it. I really don't want to lose it.\" - The dialogue expresses hope and worry, but does not confirm or deny the bag's arrival."
+    },
+    {
+      "requirement": "Do not move Jieun past the baggage claim area",
+      "pass": true,
+      "evidence": "All lines take place at the baggage claim area, with no mention of leaving or moving to another location."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

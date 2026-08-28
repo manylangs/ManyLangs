@@ -1,0 +1,318 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "overall_pass": true,
+  "severity": "warning",
+  "scene_count_pass": true,
+  "master_alignment_pass": true,
+  "character_continuity_pass": true,
+  "prop_continuity_pass": true,
+  "environment_continuity_pass": true,
+  "location_continuity_pass": true,
+  "visual_transition_pass": true,
+  "production_readiness_pass": true,
+  "scene_checks": [
+    {
+      "scene_id": "S001",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Episode start state aligns with carry_in_state.",
+        "Protagonist identity and wardrobe consistent.",
+        "Props (backpack, crossbody bag, smartphone) established."
+      ]
+    },
+    {
+      "scene_id": "S002",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Scene-local B (male airport employee) matches dialogue.",
+        "Passport prop introduced as carried item.",
+        "Transition from S001 (disembarking to immigration area) is logical."
+      ]
+    },
+    {
+      "scene_id": "S003",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Scene-local B (male immigration officer) matches dialogue.",
+        "Immigration process completed as per Master Script.",
+        "Transition from S002 (joining line to reaching officer) is logical."
+      ]
+    },
+    {
+      "scene_id": "S004",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Monologue scene, no B present.",
+        "Baggage claim area correctly depicted.",
+        "Transition from S003 (heading to baggage claim) is logical."
+      ]
+    },
+    {
+      "scene_id": "S005",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Scene-local B (male airport employee) matches dialogue.",
+        "Luggage prop (PROP_LUGGAGE_001) introduced and retrieved.",
+        "Transition from S004 (waiting for bag to retrieving it) is logical."
+      ]
+    },
+    {
+      "scene_id": "S006",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Monologue scene, no B present.",
+        "Ground transportation options observed without decision.",
+        "Transition from S005 (following signs to ground transport) is logical."
+      ]
+    },
+    {
+      "scene_id": "S007",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Scene-local B (male transit employee) matches dialogue.",
+        "Decision to take public transit made.",
+        "Transition from S006 (considering options to asking for advice) is logical."
+      ]
+    },
+    {
+      "scene_id": "S008",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Monologue scene, no B present.",
+        "Location correctly changes to LOC_AIRPORT_TRANSIT_001.",
+        "Transition from S007 (heading to transit station to boarding AirTrain) is logical."
+      ]
+    },
+    {
+      "scene_id": "S009",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Scene-local B (female transit employee) matches dialogue.",
+        "Subway payment and train direction clarified.",
+        "Transition from S008 (AirTrain to subway station) is logical."
+      ]
+    },
+    {
+      "scene_id": "S010",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Monologue scene, no B present.",
+        "Subway journey depicted.",
+        "Transition from S009 (waiting on platform to boarding train) is logical."
+      ]
+    },
+    {
+      "scene_id": "S011",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Monologue scene, no B present.",
+        "Map checking and direction confirmation shown.",
+        "Transition from S010 (observing city to checking map) is logical."
+      ]
+    },
+    {
+      "scene_id": "S012",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Monologue scene, no B present.",
+        "Surprise event (subway delay) correctly introduced.",
+        "Transition from S011 (confirming direction to sudden stop) is logical."
+      ]
+    },
+    {
+      "scene_id": "S013",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Monologue scene, no B present.",
+        "Delay resolved, train resumes.",
+        "Transition from S012 (stopped train to resuming) is logical."
+      ]
+    },
+    {
+      "scene_id": "S014",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Monologue scene, no B present.",
+        "Arrival in Manhattan and first skyline view depicted.",
+        "Transition from S013 (watching for stop to exiting station) is logical."
+      ]
+    },
+    {
+      "scene_id": "S015",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Scene-local B (male passerby) matches dialogue.",
+        "Location correctly changes to LOC_MANHATTAN_HOTEL_001.",
+        "Transition from S014 (on street to navigating to hotel) is logical."
+      ]
+    },
+    {
+      "scene_id": "S016",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Scene-local B (female front desk employee) matches dialogue.",
+        "Room key prop (PROP_ROOM_KEY_001) introduced.",
+        "Transition from S015 (at entrance to checking in) is logical."
+      ]
+    },
+    {
+      "scene_id": "S017",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Monologue scene, no B present.",
+        "Hotel room and city view depicted.",
+        "Transition from S016 (heading to elevator to entering room) is logical."
+      ]
+    },
+    {
+      "scene_id": "S018",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Monologue scene, no B present.",
+        "Backpack, passport, and suitcase left in room; crossbody bag, room key, and smartphone carried out.",
+        "Transition from S017 (in room to preparing for walk) is logical."
+      ]
+    },
+    {
+      "scene_id": "S019",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Monologue scene, no B present.",
+        "Location correctly changes to LOC_MANHATTAN_EVENING_STREET_001.",
+        "Time of day correctly changes to evening.",
+        "Transition from S018 (leaving hotel to walking on street) is logical."
+      ]
+    },
+    {
+      "scene_id": "S020",
+      "pass": true,
+      "master_alignment_pass": true,
+      "character_pass": true,
+      "prop_pass": true,
+      "environment_pass": true,
+      "transition_pass": true,
+      "notes": [
+        "Monologue scene, no B present.",
+        "Closing scene with landmark recognition and decision to return to hotel.",
+        "Transition from S019 (walking street to turning corner) is logical."
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "severity": "warning",
+      "category": "time_of_day",
+      "scene_refs": [
+        "S018",
+        "S019"
+      ],
+      "evidence": "S018 environment states time_of_day as 'day', while S019 and S020 state 'evening'.",
+      "reason": "The transition from day to evening between S018 and S019 is rapid. While it is understandable that Jieun freshens up and goes for an evening walk, the visual jump from bright daylight in the hotel room to evening street lighting in the next scene may require a clear visual cue (e.g., a time-lapse or a shot of the sky) to avoid jarring the viewer."
+    }
+  ]
+}

@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a2",
+    "id": "011"
+  },
+  "title": {
+    "target": "Покупки",
+    "en": "Shopping",
+    "es": "Compras",
+    "fr": "Les achats",
+    "pt": "Compras",
+    "kr": "쇼핑",
+    "jp": "買い物",
+    "zh": "购物",
+    "ru": "Покупки"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты не подскажешь, где здесь хороший продуктовый магазин?",
+            "en": "Ivan, could you tell me where a good grocery store is around here?",
+            "es": "Iván, ¿me puedes decir dónde hay un buen supermercado de alimentos por aquí?",
+            "fr": "Ivan, tu ne saurais pas où se trouve un bon magasin d'alimentation par ici ?",
+            "pt": "Ivan, você não sabe me dizer onde tem um bom mercado aqui perto?",
+            "kr": "이반, 여기 근처에 좋은 식료품점이 어디 있는지 알려줄 수 있어?",
+            "jp": "イワン、ここら辺でいい食料品店がどこにあるか教えてくれない？",
+            "zh": "伊万，你知道这附近哪里有好一点的食品店吗？",
+            "ru": "Иван, ты не подскажешь, где здесь хороший продуктовый магазин?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Недалеко есть супермаркет, минут пять пешком.",
+            "en": "There's a supermarket not far away, about five minutes on foot.",
+            "es": "No muy lejos hay un supermercado, a unos cinco minutos andando.",
+            "fr": "Il y a un supermarché pas loin, à cinq minutes à pied.",
+            "pt": "Tem um supermercado perto daqui, uns cinco minutos a pé.",
+            "kr": "멀지 않은 곳에 슈퍼마켓이 있어, 걸어서 오 분 정도야.",
+            "jp": "近くにスーパーがあるよ、歩いて五分くらい。",
+            "zh": "不远处有个超市，走路大概五分钟。",
+            "ru": "Недалеко есть супермаркет, минут пять пешком."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А он работает допоздна?",
+            "en": "And does it stay open late?",
+            "es": "¿Y abre hasta tarde?",
+            "fr": "Et il est ouvert tard ?",
+            "pt": "E ele fica aberto até tarde?",
+            "kr": "거기 늦게까지 하나?",
+            "jp": "遅くまでやってる？",
+            "zh": "那它营业到很晚吗？",
+            "ru": "А он работает допоздна?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, до одиннадцати вечера.",
+            "en": "Yes, until eleven in the evening.",
+            "es": "Sí, hasta las once de la noche.",
+            "fr": "Oui, jusqu'à onze heures du soir.",
+            "pt": "Sim, até as onze da noite.",
+            "kr": "응, 저녁 열한 시까지 해.",
+            "jp": "うん、夜の十一時まで。",
+            "zh": "是的，开到晚上十一点。",
+            "ru": "Да, до одиннадцати вечера."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, тогда схожу туда после работы.",
+            "en": "Great, then I'll go there after work.",
+            "es": "Genial, entonces iré allí después del trabajo.",
+            "fr": "Parfait, alors j'y passerai après le travail.",
+            "pt": "Ótimo, então vou lá depois do trabalho.",
+            "kr": "좋아, 그럼 퇴근 후에 거기 갈게.",
+            "jp": "よかった、じゃあ仕事帰りに行ってみるよ。",
+            "zh": "太好了，那我下班后去一趟。",
+            "ru": "Отлично, тогда схожу туда после работы."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Если хочешь, можем сходить вместе.",
+            "en": "If you want, we can go together.",
+            "es": "Si quieres, podemos ir juntos.",
+            "fr": "Si tu veux, on peut y aller ensemble.",
+            "pt": "Se você quiser, podemos ir juntos.",
+            "kr": "원하면 같이 갈 수 있어.",
+            "jp": "よかったら、一緒に行こうか。",
+            "zh": "如果你想的话，我们可以一起去。",
+            "ru": "Если хочешь, можем сходить вместе."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне нужно купить подарок для мамы, но я совсем не знаю, что выбрать.",
+            "en": "I need to buy a gift for my mom, but I have no idea what to choose.",
+            "es": "Necesito comprar un regalo para mi madre, pero no sé qué elegir.",
+            "fr": "Je dois acheter un cadeau pour ma mère, mais je ne sais pas du tout quoi choisir.",
+            "pt": "Preciso comprar um presente para a minha mãe, mas não sei o que escolher.",
+            "kr": "엄마 선물을 사야 하는데 뭘 골라야 할지 전혀 모르겠어.",
+            "jp": "母にプレゼントを買わなきゃいけないんだけど、何を選べばいいか全然わからないの。",
+            "zh": "我需要给妈妈买件礼物，但我完全不知道该选什么。",
+            "ru": "Мне нужно купить подарок для мамы, но я совсем не знаю, что выбрать."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "А что она любит? Может быть, книги или косметика?",
+            "en": "What does she like? Maybe books or cosmetics?",
+            "es": "¿Y qué le gusta? ¿Quizás libros o cosméticos?",
+            "fr": "Et qu'est-ce qu'elle aime ? Peut-être les livres ou les cosmétiques ?",
+            "pt": "E o que ela gosta? Talvez livros ou cosméticos?",
+            "kr": "엄마는 뭘 좋아하세요? 책이나 화장품은 어때?",
+            "jp": "お母さんは何が好きなの？本とか化粧品とか？",
+            "zh": "她喜欢什么？也许是书或者化妆品？",
+            "ru": "А что она любит? Может быть, книги или косметика?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Она любит читать, но у неё уже много книг.",
+            "en": "She likes to read, but she already has a lot of books.",
+            "es": "Le gusta leer, pero ya tiene muchos libros.",
+            "fr": "Elle aime lire, mais elle a déjà beaucoup de livres.",
+            "pt": "Ela gosta de ler, mas já tem muitos livros.",
+            "kr": "책 읽는 걸 좋아하시는데 이미 책이 많아.",
+            "jp": "読書は好きなんだけど、もう本はたくさん持ってるの。",
+            "zh": "她喜欢读书，但她已经有很多书了。",
+            "ru": "Она любит читать, но у неё уже много книг."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда можно подарить ей красивый шарф или сумку.",
+            "en": "Then you could give her a nice scarf or a bag.",
+            "es": "Entonces puedes regalarle una bufanda bonita o un bolso.",
+            "fr": "Alors tu pourrais lui offrir une belle écharpe ou un sac.",
+            "pt": "Então você pode dar para ela um cachecol ou uma bolsa bonita.",
+            "kr": "그럼 예쁜 스카프나 가방을 선물해 드리는 건 어때?",
+            "jp": "じゃあ、きれいなスカーフとかバッグをあげたら？",
+            "zh": "那可以送她一条漂亮的围巾或者一个包。",
+            "ru": "Тогда можно подарить ей красивый шарф или сумку."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это хорошая идея, спасибо за совет.",
+            "en": "That's a good idea, thanks for the advice.",
+            "es": "Es una buena idea, gracias por el consejo.",
+            "fr": "C'est une bonne idée, merci pour le conseil.",
+            "pt": "É uma boa ideia, obrigada pelo conselho.",
+            "kr": "좋은 생각이야, 조언 고마워.",
+            "jp": "いいアイデアね、アドバイスありがとう。",
+            "zh": "这是个好主意，谢谢你的建议。",
+            "ru": "Это хорошая идея, спасибо за совет."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не за что, я помогу тебе выбрать, если хочешь.",
+            "en": "You're welcome, I'll help you choose if you want.",
+            "es": "De nada, te ayudaré a elegir si quieres.",
+            "fr": "De rien, je t'aiderai à choisir si tu veux.",
+            "pt": "De nada, eu te ajudo a escolher, se você quiser.",
+            "kr": "천만에, 원하면 내가 고르는 거 도와줄게.",
+            "jp": "どういたしまして、よかったら選ぶの手伝うよ。",
+            "zh": "不客气，如果你愿意的话，我帮你挑。",
+            "ru": "Не за что, я помогу тебе выбрать, если хочешь."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты не видел, где продают хорошие кроссовки?",
+            "en": "Dmitry, have you seen where they sell good sneakers?",
+            "es": "Dmitri, ¿no has visto dónde venden buenas zapatillas?",
+            "fr": "Dimitri, tu n'as pas vu où on vend de bonnes baskets ?",
+            "pt": "Dmitri, você não viu onde vendem tênis bons?",
+            "kr": "드미트리, 좋은 운동화 파는 곳 어디인지 못 봤어?",
+            "jp": "ドミートリー、いいスニーカーがどこで売ってるか見なかった？",
+            "zh": "德米特里，你看到哪里卖好的运动鞋了吗？",
+            "ru": "Дмитрий, ты не видел, где продают хорошие кроссовки?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "В торговом центре на углу есть спортивный магазин.",
+            "en": "There's a sports store in the mall on the corner.",
+            "es": "En el centro comercial de la esquina hay una tienda de deportes.",
+            "fr": "Au centre commercial au coin, il y a un magasin de sport.",
+            "pt": "No shopping da esquina tem uma loja de artigos esportivos.",
+            "kr": "모퉁이에 있는 쇼핑몰에 스포츠 매장이 있어.",
+            "jp": "角のショッピングセンターにスポーツ用品店があるよ。",
+            "zh": "拐角处的购物中心里有一家体育用品店。",
+            "ru": "В торговом центре на углу есть спортивный магазин."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А там бывают скидки?",
+            "en": "And do they have discounts there?",
+            "es": "¿Y suelen tener descuentos?",
+            "fr": "Et il y a des soldes là-bas ?",
+            "pt": "E lá costuma ter descontos?",
+            "kr": "거기 할인 같은 거 해?",
+            "jp": "あそこってセールとかあるの？",
+            "zh": "那里有折扣吗？",
+            "ru": "А там бывают скидки?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "На прошлой неделе была распродажа, но сейчас, наверное, уже нет.",
+            "en": "There was a sale last week, but now, probably not anymore.",
+            "es": "La semana pasada hubo rebajas, pero ahora seguramente ya no.",
+            "fr": "La semaine dernière il y avait une promotion, mais maintenant, probablement plus.",
+            "pt": "Na semana passada teve uma liquidação, mas agora, provavelmente, não tem mais.",
+            "kr": "지난주에 세일했었는데 지금은 아마 없을 거야.",
+            "jp": "先週はバーゲンやってたけど、今はもう終わったと思うよ。",
+            "zh": "上周有促销活动，但现在可能已经没有了。",
+            "ru": "На прошлой неделе была распродажа, но сейчас, наверное, уже нет."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Жаль, тогда посмотрю в интернете.",
+            "en": "Too bad, then I'll look online.",
+            "es": "Qué pena, entonces miraré en internet.",
+            "fr": "Dommage, alors je regarderai sur Internet.",
+            "pt": "Que pena, então vou olhar na internet.",
+            "kr": "아쉽네, 그럼 인터넷에서 찾아볼게.",
+            "jp": "残念、じゃあインターネットで見てみるよ。",
+            "zh": "真可惜，那我上网看看吧。",
+            "ru": "Жаль, тогда посмотрю в интернете."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "В интернете часто бывают дешевле, но нужно проверять размер.",
+            "en": "Online they're often cheaper, but you need to check the size.",
+            "es": "En internet suelen ser más baratas, pero hay que comprobar la talla.",
+            "fr": "Sur Internet c'est souvent moins cher, mais il faut vérifier la taille.",
+            "pt": "Na internet costuma ser mais barato, mas é preciso verificar o tamanho.",
+            "kr": "인터넷이 보통 더 싸긴 한데, 사이즈는 확인해 봐야 해.",
+            "jp": "ネットの方が安いことも多いけど、サイズはちゃんと確認しないとね。",
+            "zh": "网上经常更便宜，但需要注意尺码。",
+            "ru": "В интернете часто бывают дешевле, но нужно проверять размер."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я хочу купить новое пальто на зиму, но не знаю, какой цвет выбрать.",
+            "en": "I want to buy a new coat for winter, but I don't know which color to choose.",
+            "es": "Quiero comprar un abrigo nuevo para el invierno, pero no sé qué color elegir.",
+            "fr": "Je veux acheter un nouveau manteau pour l'hiver, mais je ne sais pas quelle couleur choisir.",
+            "pt": "Quero comprar um casaco novo para o inverno, mas não sei qual cor escolher.",
+            "kr": "겨울용 새 코트를 사고 싶은데 무슨 색을 골라야 할지 모르겠어.",
+            "jp": "冬用の新しいコートを買いたいんだけど、何色にしようか迷ってるの。",
+            "zh": "我想买件冬天穿的新大衣，但不知道该选什么颜色。",
+            "ru": "Я хочу купить новое пальто на зиму, но не знаю, какой цвет выбрать."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тебе идёт тёмно-синий или серый.",
+            "en": "Dark blue or gray suits you.",
+            "es": "Te queda bien el azul marino o el gris.",
+            "fr": "Le bleu marine ou le gris te va bien.",
+            "pt": "Fica bem em você o azul-marinho ou o cinza.",
+            "kr": "너한테는 남색이나 회색이 잘 어울려.",
+            "jp": "紺色かグレーが似合うと思うよ。",
+            "zh": "深蓝色或者灰色很适合你。",
+            "ru": "Тебе идёт тёмно-синий или серый."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? А я думала про чёрный.",
+            "en": "Really? And I was thinking about black.",
+            "es": "¿De verdad? Y yo pensaba en el negro.",
+            "fr": "Vraiment ? Et moi je pensais au noir.",
+            "pt": "Sério? E eu estava pensando no preto.",
+            "kr": "정말? 나는 검은색 생각하고 있었는데.",
+            "jp": "本当？私は黒を考えてたんだけど。",
+            "zh": "真的吗？我本来想的是黑色。",
+            "ru": "Правда? А я думала про чёрный."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Чёрный тоже хорошо, но синий будет свежее.",
+            "en": "Black is also good, but blue will be fresher.",
+            "es": "El negro también queda bien, pero el azul será más fresco.",
+            "fr": "Le noir aussi c'est bien, mais le bleu sera plus frais.",
+            "pt": "O preto também fica bem, mas o azul vai dar um ar mais fresco.",
+            "kr": "검은색도 괜찮지만, 남색이 더 산뜻할 거야.",
+            "jp": "黒もいいけど、紺の方がさわやかに見えるよ。",
+            "zh": "黑色也不错，但蓝色会显得更精神。",
+            "ru": "Чёрный тоже хорошо, но синий будет свежее."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда пойду в магазин и примepю оба варианта.",
+            "en": "Then I'll go to the store and try on both options.",
+            "es": "Entonces iré a la tienda y me probaré las dos opciones.",
+            "fr": "Alors j'irai au magasin et j'essaierai les deux options.",
+            "pt": "Então vou à loja e experimento as duas opções.",
+            "kr": "그럼 매장에 가서 두 가지 다 입어볼게.",
+            "jp": "じゃあお店に行って、両方試着してみるわ。",
+            "zh": "那我去店里把两个都试一下。",
+            "ru": "Тогда пойду в магазин и примepю оба варианта."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошая идея, главное, чтобы тебе было удобно.",
+            "en": "Good idea, the main thing is that you feel comfortable.",
+            "es": "Buena idea, lo importante es que te sientas cómoda.",
+            "fr": "Bonne idée, l'important c'est que tu sois à l'aise.",
+            "pt": "Boa ideia, o importante é que você se sinta confortável.",
+            "kr": "좋은 생각이야, 중요한 건 네가 편한 거야.",
+            "jp": "いい考えだね、何より自分が着心地いいのが一番だからね。",
+            "zh": "好主意，主要是你自己穿着舒服。",
+            "ru": "Хорошая идея, главное, чтобы тебе было удобно."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты не знаешь, где можно купить свежие овощи?",
+            "en": "Sergey, do you know where I can buy fresh vegetables?",
+            "es": "Serguéi, ¿no sabes dónde se pueden comprar verduras frescas?",
+            "fr": "Sergueï, tu ne sais pas où on peut acheter des légumes frais ?",
+            "pt": "Sergei, você não sabe onde posso comprar legumes frescos?",
+            "kr": "세르게이, 신선한 채소 어디서 살 수 있는지 알아?",
+            "jp": "セルゲイ、新鮮な野菜がどこで買えるか知ってる？",
+            "zh": "谢尔盖，你知道哪里能买到新鲜的蔬菜吗？",
+            "ru": "Сергей, ты не знаешь, где можно купить свежие овощи?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "На рынке за углом всегда хороший выбор.",
+            "en": "At the market around the corner there's always a good selection.",
+            "es": "En el mercado de la esquina siempre hay buena variedad.",
+            "fr": "Au marché au coin, il y a toujours un bon choix.",
+            "pt": "No mercado ali na esquina sempre tem uma boa variedade.",
+            "kr": "모퉁이 뒤에 있는 시장에 항상 좋은 게 많아.",
+            "jp": "角の市場ならいつも品揃えがいいよ。",
+            "zh": "拐角后面的市场里选择一直很好。",
+            "ru": "На рынке за углом всегда хороший выбор."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А цены там нормальные?",
+            "en": "And are the prices there reasonable?",
+            "es": "¿Y los precios allí son normales?",
+            "fr": "Et les prix y sont corrects ?",
+            "pt": "E os preços lá são normais?",
+            "kr": "거기 가격은 괜찮아?",
+            "jp": "値段はそこそこ？",
+            "zh": "那里的价格正常吗？",
+            "ru": "А цены там нормальные?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, даже дешевле, чем в супермаркете.",
+            "en": "Yes, even cheaper than at the supermarket.",
+            "es": "Sí, incluso más baratos que en el supermercado.",
+            "fr": "Oui, même moins chers qu'au supermarché.",
+            "pt": "Sim, até mais baratos do que no supermercado.",
+            "kr": "응, 슈퍼마켓보다 오히려 더 싸.",
+            "jp": "うん、スーパーより安いくらいだよ。",
+            "zh": "是的，甚至比超市还便宜。",
+            "ru": "Да, даже дешевле, чем в супермаркете."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда схожу туда в субботу утром.",
+            "en": "Then I'll go there on Saturday morning.",
+            "es": "Entonces iré allí el sábado por la mañana.",
+            "fr": "Alors j'irai là-bas samedi matin.",
+            "pt": "Então vou lá no sábado de manhã.",
+            "kr": "그럼 토요일 아침에 거기 갈게.",
+            "jp": "じゃあ土曜日の朝に行ってみるよ。",
+            "zh": "那我星期六早上去一趟。",
+            "ru": "Тогда схожу туда в субботу утром."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Лучше приходить пораньше, пока всё самое свежее.",
+            "en": "It's better to come earlier, while everything is the freshest.",
+            "es": "Mejor ve temprano, mientras todo está más fresco.",
+            "fr": "Il vaut mieux y aller tôt, pendant que tout est encore bien frais.",
+            "pt": "Melhor ir mais cedo, enquanto tudo ainda está bem fresco.",
+            "kr": "가능하면 일찍 가는 게 좋아, 가장 신선할 때니까.",
+            "jp": "一番新鮮なうちに、早めに行くのがおすすめだよ。",
+            "zh": "最好早点去，趁所有东西都最新鲜的时候。",
+            "ru": "Лучше приходить пораньше, пока всё самое свежее."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне нужно купить новую сумку для ноутбука, моя уже порвалась.",
+            "en": "I need to buy a new laptop bag, mine is already torn.",
+            "es": "Necesito comprar una bolsa nueva para el portátil, la mía ya se ha roto.",
+            "fr": "Je dois acheter un nouveau sac pour ordinateur portable, le mien est déjà déchiré.",
+            "pt": "Preciso comprar uma bolsa nova para o notebook, a minha já rasgou.",
+            "kr": "노트북 가방을 새로 사야 하는데, 내 가방이 이미 찢어졌어.",
+            "jp": "ノートパソコン用の新しいバッグを買わなきゃいけないんだけど、もう破れちゃったの。",
+            "zh": "我需要买个新的笔记本电脑包，我的已经破了。",
+            "ru": "Мне нужно купить новую сумку для ноутбука, моя уже порвалась."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "В магазине электроники есть хороший выбор.",
+            "en": "At the electronics store there's a good selection.",
+            "es": "En la tienda de electrónica hay buena variedad.",
+            "fr": "Au magasin d'électronique, il y a un bon choix.",
+            "pt": "Na loja de eletrônicos tem uma boa variedade.",
+            "kr": "전자제품 매장에 좋은 게 많이 있어.",
+            "jp": "家電量販店にいいのがいろいろあるよ。",
+            "zh": "电子产品商店里有很多选择。",
+            "ru": "В магазине электроники есть хороший выбор."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А они дорогие?",
+            "en": "And are they expensive?",
+            "es": "¿Y son caras?",
+            "fr": "Et ils sont chers ?",
+            "pt": "E elas são caras?",
+            "kr": "거기 비싸?",
+            "jp": "高いの？",
+            "zh": "那它们贵吗？",
+            "ru": "А они дорогие?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Есть разные варианты, от недорогих до очень дорогих.",
+            "en": "There are different options, from inexpensive to very expensive.",
+            "es": "Hay diferentes opciones, desde baratas hasta muy caras.",
+            "fr": "Il y a différentes options, des pas chers aux très chers.",
+            "pt": "Tem opções variadas, desde as baratas até as muito caras.",
+            "kr": "저렴한 것부터 아주 비싼 것까지 다양한 옵션이 있어.",
+            "jp": "安いのからすごく高いのまで、いろいろあるよ。",
+            "zh": "有各种价位的，从便宜的到非常贵的都有。",
+            "ru": "Есть разные варианты, от недорогих до очень дорогих."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне нужна не слишком дорогая, но качественная.",
+            "en": "I need one that's not too expensive, but good quality.",
+            "es": "Necesito una que no sea demasiado cara, pero de calidad.",
+            "fr": "Il me faut quelque chose de pas trop cher, mais de bonne qualité.",
+            "pt": "Preciso de uma que não seja muito cara, mas que tenha qualidade.",
+            "kr": "나는 너무 비싸지 않지만 품질 좋은 게 필요해.",
+            "jp": "あんまり高くないけど、質のいいのがいいの。",
+            "zh": "我需要一个不太贵但质量好的。",
+            "ru": "Мне нужна не слишком дорогая, но качественная."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда посмотри на кожаные, они служат дольше.",
+            "en": "Then look at leather ones, they last longer.",
+            "es": "Entonces mira las de cuero, duran más.",
+            "fr": "Alors regarde ceux en cuir, ils durent plus longtemps.",
+            "pt": "Então dá uma olhada nas de couro, elas duram mais.",
+            "kr": "그럼 가죽 제품을 봐, 더 오래 쓸 수 있으니까.",
+            "jp": "じゃあ革製のを見てみたら？長持ちするよ。",
+            "zh": "那就看看皮的吧，它们更耐用。",
+            "ru": "Тогда посмотри на кожаные, они служат дольше."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, ты не подскажешь, где я могу купить цветы?",
+            "en": "Olga, could you tell me where I can buy flowers?",
+            "es": "Olga, ¿me puedes decir dónde puedo comprar flores?",
+            "fr": "Olga, tu ne saurais pas où je peux acheter des fleurs ?",
+            "pt": "Olga, você não sabe me dizer onde posso comprar flores?",
+            "kr": "올가, 꽃 어디서 살 수 있는지 알려줄 수 있어?",
+            "jp": "オリガ、花がどこで買えるか教えてくれない？",
+            "zh": "奥尔加，你知道我在哪里能买到花吗？",
+            "ru": "Ольга, ты не подскажешь, где я могу купить цветы?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Через дорогу есть цветочный магазин, он работает до восьми.",
+            "en": "Across the street there's a flower shop, it's open until eight.",
+            "es": "Cruzando la calle hay una floristería, abre hasta las ocho.",
+            "fr": "De l'autre côté de la rue, il y a un magasin de fleurs, il est ouvert jusqu'à huit heures.",
+            "pt": "Do outro lado da rua tem uma floricultura, ela fica aberta até as oito.",
+            "kr": "길 건너편에 꽃집이 있는데 여덟 시까지 해.",
+            "jp": "道を渡ったところに花屋さんがあるよ、八時までやってるよ。",
+            "zh": "马路对面有一家花店，它开到八点。",
+            "ru": "Через дорогу есть цветочный магазин, он работает до восьми."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А какие цветы лучше подарить подруге на день рождения?",
+            "en": "And what flowers are best to give a friend for her birthday?",
+            "es": "¿Y qué flores son mejores para regalar a una amiga por su cumpleaños?",
+            "fr": "Et quelles fleurs vaut-il mieux offrir à une amie pour son anniversaire ?",
+            "pt": "E quais flores são melhores para dar de presente para uma amiga no aniversário?",
+            "kr": "그럼 친구 생일 선물로는 어떤 꽃이 좋을까?",
+            "jp": "友達の誕生日にはどんな花をあげるのがいいかな？",
+            "zh": "那朋友过生日送什么花比较好呢？",
+            "ru": "А какие цветы лучше подарить подруге на день рождения?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Розы или тюльпаны — это всегда хороший выбор.",
+            "en": "Roses or tulips — that's always a good choice.",
+            "es": "Rosas o tulipanes: siempre son una buena elección.",
+            "fr": "Des roses ou des tulipes, c'est toujours un bon choix.",
+            "pt": "Rosas ou tulipas — são sempre uma boa escolha.",
+            "kr": "장미나 튤립은 언제나 좋은 선택이야.",
+            "jp": "バラかチューリップはいつでもいい選択だよ。",
+            "zh": "玫瑰或者郁金香——一直都是不错的选择。",
+            "ru": "Розы или тюльпаны — это всегда хороший выбор."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда куплю белые розы, она их любит.",
+            "en": "Then I'll buy white roses, she loves them.",
+            "es": "Entonces compraré rosas blancas, a ella le encantan.",
+            "fr": "Alors j'achèterai des roses blanches, elle les aime.",
+            "pt": "Então vou comprar rosas brancas, ela adora elas.",
+            "kr": "그럼 흰 장미를 살게, 친구가 좋아하거든.",
+            "jp": "じゃあ白いバラを買うわ、あの子好きだから。",
+            "zh": "那我就买白玫瑰吧，她喜欢白玫瑰。",
+            "ru": "Тогда куплю белые розы, она их любит."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отличная идея, белые розы очень красивые.",
+            "en": "Great idea, white roses are very beautiful.",
+            "es": "Excelente idea, las rosas blancas son muy bonitas.",
+            "fr": "Excellente idée, les roses blanches sont très belles.",
+            "pt": "Ótima ideia, rosas brancas são muito bonitas.",
+            "kr": "좋은 생각이야, 흰 장미는 정말 예뻐.",
+            "jp": "いいアイデアだね、白いバラはとてもきれいだよ。",
+            "zh": "好主意，白玫瑰非常漂亮。",
+            "ru": "Отличная идея, белые розы очень красивые."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я хочу купить новые наушники, но не знаю, какие лучше.",
+            "en": "I want to buy new headphones, but I don't know which ones are better.",
+            "es": "Quiero comprar unos auriculares nuevos, pero no sé cuáles son mejores.",
+            "fr": "Je veux acheter de nouveaux écouteurs, mais je ne sais pas lesquels sont les meilleurs.",
+            "pt": "Quero comprar um fone de ouvido novo, mas não sei qual é melhor.",
+            "kr": "새 헤드폰을 사고 싶은데 어떤 게 더 좋은지 모르겠어.",
+            "jp": "新しいヘッドホンを買いたいんだけど、どれがいいかわからないの。",
+            "zh": "我想买一副新耳机，但不知道哪种更好。",
+            "ru": "Я хочу купить новые наушники, но не знаю, какие лучше."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "А какой у тебя бюджет?",
+            "en": "And what's your budget?",
+            "es": "¿Y cuál es tu presupuesto?",
+            "fr": "Et c'est quoi ton budget ?",
+            "pt": "E qual é o seu orçamento?",
+            "kr": "예산은 얼마나 돼?",
+            "jp": "予算はどのくらい？",
+            "zh": "那你的预算是多少？",
+            "ru": "А какой у тебя бюджет?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хочу уложиться в три тысячи рублей.",
+            "en": "I want to keep it within three thousand rubles.",
+            "es": "Quiero gastar menos de tres mil rublos.",
+            "fr": "Je veux rester dans les trois mille roubles.",
+            "pt": "Quero gastar no máximo três mil rublos.",
+            "kr": "삼천 루블 안으로 맞추고 싶어.",
+            "jp": "三千ルーブル以内に収めたいの。",
+            "zh": "我想控制在三千卢布以内。",
+            "ru": "Хочу уложиться в три тысячи рублей."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "За эти деньги можно найти хорошие беспроводные наушники.",
+            "en": "For that money you can find good wireless headphones.",
+            "es": "Por ese dinero se pueden encontrar buenos auriculares inalámbricos.",
+            "fr": "Pour ce prix-là, on peut trouver de bons écouteurs sans fil.",
+            "pt": "Com esse dinheiro dá para encontrar um bom fone sem fio.",
+            "kr": "그 가격이면 괜찮은 무선 헤드폰을 찾을 수 있어.",
+            "jp": "その値段なら、いいワイヤレスヘッドホンが見つかるよ。",
+            "zh": "这个价钱可以买到不错的无线耳机。",
+            "ru": "За эти деньги можно найти хорошие беспроводные наушники."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А где их лучше покупать, в магазине или в интернете?",
+            "en": "And where is it better to buy them, in a store or online?",
+            "es": "¿Y dónde es mejor comprarlos, en la tienda o en internet?",
+            "fr": "Et où vaut-il mieux les acheter, en magasin ou sur Internet ?",
+            "pt": "E onde é melhor comprar, na loja ou na internet?",
+            "kr": "그럼 어디서 사는 게 좋을까, 매장 아니면 인터넷?",
+            "jp": "どこで買うのがいいかな、お店それともインターネット？",
+            "zh": "那在哪里买更好呢，在店里还是网上？",
+            "ru": "А где их лучше покупать, в магазине или в интернете?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Лучше в магазине, чтобы можно было проверить звук.",
+            "en": "Better in a store, so you can check the sound.",
+            "es": "Mejor en la tienda, para poder probar el sonido.",
+            "fr": "Mieux vaut en magasin, pour pouvoir vérifier le son.",
+            "pt": "Melhor na loja, para poder testar o som.",
+            "kr": "매장에서 사는 게 좋아, 소리를 확인해 볼 수 있으니까.",
+            "jp": "音を確認できるから、お店の方がいいよ。",
+            "zh": "最好在店里买，这样可以试听一下音质。",
+            "ru": "Лучше в магазине, чтобы можно было проверить звук."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты не знаешь, где продают хороший кофе в зёрнах?",
+            "en": "Dmitry, do you know where they sell good coffee beans?",
+            "es": "Dmitri, ¿no sabes dónde venden buen café en grano?",
+            "fr": "Dimitri, tu ne sais pas où on vend du bon café en grains ?",
+            "pt": "Dmitri, você não sabe onde vendem café em grãos bom?",
+            "kr": "드미트리, 좋은 원두 커피 파는 곳 어디인지 알아?",
+            "jp": "ドミートリー、いい豆コーヒーがどこで売ってるか知ってる？",
+            "zh": "德米特里，你知道哪里卖好的咖啡豆吗？",
+            "ru": "Дмитрий, ты не знаешь, где продают хороший кофе в зёрнах?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "В кофейне на набережной есть отличный выбор.",
+            "en": "At the coffee shop on the embankment there's an excellent selection.",
+            "es": "En la cafetería del paseo marítimo hay una excelente selección.",
+            "fr": "Au café sur le quai, il y a un excellent choix.",
+            "pt": "Na cafeteria do calçadão tem uma ótima variedade.",
+            "kr": "강변에 있는 커피숍에 훌륭한 게 많이 있어.",
+            "jp": "堤防沿いのコーヒーショップにすごくいいのが揃ってるよ。",
+            "zh": "河堤上的咖啡馆里有很多不错的选择。",
+            "ru": "В кофейне на набережной есть отличный выбор."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А они продают кофе навынос?",
+            "en": "And do they sell coffee to go?",
+            "es": "¿Y venden café para llevar?",
+            "fr": "Et ils vendent du café à emporter ?",
+            "pt": "E eles vendem café para levar?",
+            "kr": "거기 커피 테이크아웃으로 팔아?",
+            "jp": "コーヒーってテイクアウトできるの？",
+            "zh": "那他们卖外带的咖啡吗？",
+            "ru": "А они продают кофе навынос?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, можно купить пачку и взять с собой.",
+            "en": "Yes, you can buy a bag and take it with you.",
+            "es": "Sí, puedes comprar un paquete y llevártelo.",
+            "fr": "Oui, on peut acheter un paquet et l'emporter avec soi.",
+            "pt": "Sim, dá para comprar um pacote e levar com você.",
+            "kr": "응, 한 팩 사서 가져갈 수 있어.",
+            "jp": "うん、パックを買って持ち帰ることもできるよ。",
+            "zh": "是的，可以买一包带走。",
+            "ru": "Да, можно купить пачку и взять с собой."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда зайду туда после обеда.",
+            "en": "Then I'll stop by there after lunch.",
+            "es": "Entonces pasaré por allí después de comer.",
+            "fr": "Alors j'y passerai après le déjeuner.",
+            "pt": "Então passo lá depois do almoço.",
+            "kr": "그럼 점심 먹고 거기 들를게.",
+            "jp": "じゃあ昼食後に行ってみるよ。",
+            "zh": "那我午饭后去一趟。",
+            "ru": "Тогда зайду туда после обеда."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Попробуй их бразильский кофе, он очень вкусный.",
+            "en": "Try their Brazilian coffee, it's very tasty.",
+            "es": "Prueba su café brasileño, está muy rico.",
+            "fr": "Goûte leur café brésilien, il est très bon.",
+            "pt": "Experimenta o café brasileiro deles, é muito gostoso.",
+            "kr": "거기 브라질 커피 한번 마셔 봐, 정말 맛있어.",
+            "jp": "あそこのブラジル産のコーヒーを試してみて、すごくおいしいから。",
+            "zh": "尝尝他们的巴西咖啡吧，非常好喝。",
+            "ru": "Попробуй их бразильский кофе, он очень вкусный."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне нужно купить новую рубашку для работы, но я не знаю, какой размер брать.",
+            "en": "I need to buy a new shirt for work, but I don't know what size to get.",
+            "es": "Necesito comprar una camisa nueva para el trabajo, pero no sé qué talla elegir.",
+            "fr": "Je dois acheter une nouvelle chemise pour le travail, mais je ne sais pas quelle taille prendre.",
+            "pt": "Preciso comprar uma camisa nova para o trabalho, mas não sei qual tamanho pegar.",
+            "kr": "출근용 셔츠를 새로 사야 하는데 무슨 사이즈를 골라야 할지 모르겠어.",
+            "jp": "仕事用の新しいシャツを買わなきゃいけないんだけど、どのサイズを選べばいいかわからないの。",
+            "zh": "我需要买件上班穿的新衬衫，但我不知道该买什么尺码。",
+            "ru": "Мне нужно купить новую рубашку для работы, но я не знаю, какой размер брать."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "А какой размер ты обычно носишь?",
+            "en": "And what size do you usually wear?",
+            "es": "¿Y qué talla sueles usar?",
+            "fr": "Et quelle taille tu portes d'habitude ?",
+            "pt": "E qual tamanho você costuma usar?",
+            "kr": "평소에 무슨 사이즈 입어?",
+            "jp": "いつもはどのサイズを着てるの？",
+            "zh": "那你通常穿什么尺码？",
+            "ru": "А какой размер ты обычно носишь?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Обычно сорок восьмой, но иногда бывает по-разному.",
+            "en": "Usually a forty-eight, but sometimes it varies.",
+            "es": "Normalmente la cuarenta y ocho, pero a veces varía.",
+            "fr": "En général le quarante-huit, mais parfois ça varie.",
+            "pt": "Normalmente o quarenta e oito, mas às vezes varia.",
+            "kr": "보통 사십팔인데, 가끔은 다를 때도 있어.",
+            "jp": "だいたい四十八なんだけど、時々違うこともあるの。",
+            "zh": "通常是四十八码，但有时候也不太一样。",
+            "ru": "Обычно сорок восьмой, но иногда бывает по-разному."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда лучше примерить перед покупкой.",
+            "en": "Then it's better to try it on before buying.",
+            "es": "Entonces es mejor probártela antes de comprarla.",
+            "fr": "Alors il vaut mieux l'essayer avant d'acheter.",
+            "pt": "Então é melhor experimentar antes de comprar.",
+            "kr": "그럼 사기 전에 입어보는 게 좋겠어.",
+            "jp": "じゃあ買う前に試着した方がいいよ。",
+            "zh": "那最好买之前先试穿一下。",
+            "ru": "Тогда лучше примерить перед покупкой."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, ты прав, пойду в магазин и помеpю.",
+            "en": "Yes, you're right, I'll go to the store and try it on.",
+            "es": "Sí, tienes razón, iré a la tienda y me la probaré.",
+            "fr": "Oui, tu as raison, j'irai au magasin et j'essaierai.",
+            "pt": "É, você tem razão, vou à loja e experimento.",
+            "kr": "응, 네 말이 맞아. 매장에 가서 입어볼게.",
+            "jp": "そうだね、お店に行って試着してみるわ。",
+            "zh": "是的，你说得对，我去店里试试。",
+            "ru": "Да, ты прав, пойду в магазин и помеpю."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Если что, можно заказать другой размер в интернете.",
+            "en": "If anything, you can order a different size online.",
+            "es": "Si acaso, puedes pedir otra talla por internet.",
+            "fr": "Et si besoin, on peut commander une autre taille sur Internet.",
+            "pt": "Se precisar, dá para pedir outro tamanho pela internet.",
+            "kr": "필요하면 인터넷에서 다른 사이즈로 주문할 수도 있어.",
+            "jp": "もし合わなかったら、インターネットで別のサイズを注文できるよ。",
+            "zh": "如果不行的话，可以在网上订别的尺码。",
+            "ru": "Если что, можно заказать другой размер в интернете."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "location_id": "LOC_MANHATTAN_HOTEL_001",
+  "series_id": "travel_new_york_city",
+  "identity": {
+    "name": "Manhattan Hotel",
+    "location_type": "hotel",
+    "city": "New York City",
+    "country": "United States",
+    "parent_location_id": null
+  },
+  "story_profile": {
+    "story_function": "Jieun's accommodation for the trip, where she checks in and settles into her room",
+    "continuity_rules": [
+      "Represents a typical mid-range Manhattan hotel",
+      "The hotel is within walking distance of the evening street location",
+      "Maintain consistent hotel interior and exterior appearance"
+    ]
+  },
+  "visual_identity": {
+    "environment_summary": "A clean, modern mid-range hotel in Manhattan with a modest lobby, front desk, elevator, and a comfortable guest room with a view of the city.",
+    "persistent_features": [
+      "Hotel lobby with front desk",
+      "Elevator area",
+      "Guest room with bed, desk, and window",
+      "City view from the room window",
+      "Hotel signage and entrance"
+    ],
+    "variable_features": [
+      "Lighting changes from day to evening",
+      "Lobby crowd level varies",
+      "Room lighting can be adjusted"
+    ],
+    "continuity_lock": true
+  },
+  "production": {
+    "visual_provider": "vidu",
+    "reference_asset_ids": [],
+    "prompt_rules": [
+      "Maintain consistent hotel interior design",
+      "Keep the same room layout across scenes",
+      "Use realistic hotel lighting conditions"
+    ]
+  }
+}

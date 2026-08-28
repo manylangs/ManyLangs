@@ -1,0 +1,69 @@
+{
+  "chapter_id": "conversation_shorts_a1_002.runtime.json",
+  "target_lang": "kr",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A와 B의 역할이 명확하고, 한 세트 내에서 자연스럽게 번갈아 대화하며 관계(처음 만난 사이)가 일관되게 유지됨."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "인사, 이름 묻고 답하기, 출신 묻고 답하기, 호감 표현 등 자기소개 상황의 전형적인 대화 기능을 정확하게 수행함."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "전체적으로 구어체 표현('-예요', '-어요', '그렇군요')이 자연스럽게 사용됨. 다만 '바다가 가까워서 좋아요'는 문어체적인 느낌이 다소 있어, '바다가 가까워서 좋아요'보다는 '바다가 가까워서 좋네요'가 더 구어체적으로 자연스러울 수 있음."
+    },
+    "register_appropriateness": {
+      "score": 9,
+      "weight": 10,
+      "notes": "처음 만나는 사이에 '-요'체를 사용하여 적절한 존대 수준을 유지함. '준호 씨', '지은 씨' 호칭 사용이 상황에 맞음. 다만, '준호 씨는 어디에서 왔어요?'는 '준호 씨는 어디에서 오셨어요?'처럼 더 높은 존대를 사용할 수도 있으나, 현재 수준도 무난함."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 오류가 발견되지 않으며, 띄어쓰기 및 문장 부호 사용이 정확함."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "처음 만난 사람과의 자기소개라는 가장 기본적이고 실용적인 상황을 다루며, 이름과 출신지를 묻고 답하는 실생활에서 바로 활용 가능한 표현으로 구성됨."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "서울, 부산 등 한국의 지명이 등장하지만, 특정 문화적 가치나 민감한 주제를 포함하지 않아 보편적인 상황으로 이해될 수 있음."
+    },
+    "tts_readiness": {
+      "score": 9,
+      "weight": 5,
+      "notes": "문장이 비교적 짧고 명확하여 TTS로 읽기에 적합함. 다만, '부산은 정말 아름다운 곳이죠'의 '곳이죠'와 같은 축약된 발음이 TTS 엔진에 따라 다르게 처리될 수 있어, 발음 표기에 주의가 필요할 수 있음."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 kr이 모든 문장에서 완벽하게 일치함."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "기본적인 자기소개 표현을 정확하고 자연스럽게 다루고 있어 초급자에게 유용함. TTMIK이나 세종한국어 교재의 유사한 대화문과 비교해도 손색이 없으나, 대화의 길이나 심화 표현 측면에서 약간의 차별화가 부족할 수 있음."
+    }
+  },
+  "final_score": 95,
+  "market_benchmark": {
+    "comparable_services": [
+      "Talk To Me In Korean",
+      "Duolingo Korean Conversations",
+      "세종한국어/TOPIK",
+      "Pimsleur Korean"
+    ],
+    "estimated_relative_position": "시중 주요 한국어 회화 교재 및 앱과 비교했을 때, 기본적인 자기소개 표현을 정확하고 자연스럽게 다루어 초급자에게 충분한 학습 가치를 제공함. TTMIK이나 세종한국어의 유사한 대화문과 동등한 수준의 품질을 보여주며, 특히 다국어 번역의 정확성과 일관성에서 강점을 가짐.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": []
+}

@@ -29,6 +29,15 @@ PRIVACY_STATUS = "private"
 
 # =========================================================
 # 언어 설정
+#
+# 내부 관리 코드(폴더명, 딕셔너리 키 등)는 항상 이 딕셔너리의 키를
+# 그대로 사용한다 (예: 일본어는 내부적으로 "jp"). 유튜브 API에 실제로
+# 전달되는 BCP-47 코드는 YOUTUBE_LANGUAGE_CODES에서 별도로 관리한다
+# (예: 내부 코드 "jp" -> 유튜브 코드 "ja").
+#
+# 새 언어를 추가/삭제/순서 변경하고 싶으면 이 딕셔너리만 수정하면
+# 된다. 언어 선택 메뉴(prompt_language)의 번호는 이 딕셔너리에
+# 등록된 순서대로 자동으로 매겨진다.
 # =========================================================
 
 LANGUAGES = {
@@ -48,7 +57,7 @@ LANGUAGES = {
         "speaking": "KoreanSpeaking",
         "practice": "KoreanPractice",
     },
-    "ja": {
+    "jp": {
         "name": "Japanese",
         "native_name": "日本語",
         "learn": "LearnJapanese",
@@ -96,6 +105,14 @@ LANGUAGES = {
         "speaking": "GermanSpeaking",
         "practice": "GermanPractice",
     },
+        "ru": {
+        "name": "Russian",
+        "native_name": "Русский",
+        "learn": "LearnRussian",
+        "conversation": "RussianConversation",
+        "speaking": "RussianSpeaking",
+        "practice": "RussianPractice",
+    },
 }
 
 
@@ -107,14 +124,14 @@ YOUTUBE_LANGUAGE_CODES = {
     "fr": "fr",
     "pt": "pt",
     "zh": "zh-CN",
-    "ja": "ja",
+    "jp": "ja",
     "kr": "ko",
     "de": "de",
     "ru": "ru",
 }
 
 # 현재 ManyLangs 기본 사용자 언어 8종 (자막 탭에 자동으로 줄이 생기는 언어)
-BASE_LOCALIZATION_LANGS = ["en", "es", "fr", "pt", "zh", "ja", "kr", "ru"]
+BASE_LOCALIZATION_LANGS = ["en", "es", "fr", "pt", "zh", "jp", "kr", "ru"]
 
 
 # =========================================================
@@ -141,21 +158,28 @@ def get_youtube():
 
 # =========================================================
 # 언어 선택
+#
+# 약어를 직접 타이핑하지 않고, LANGUAGES에 등록된 순서대로
+# 번호를 매겨 보여준 뒤 번호로 선택한다.
+# 언어를 추가/삭제/순서 변경하고 싶으면 LANGUAGES 딕셔너리만
+# 수정하면 되고, 이 함수는 그대로 두면 된다.
 # =========================================================
 
 def prompt_language():
+    codes = list(LANGUAGES.keys())
+
     print("\n지원 언어:")
-    for code, lang in LANGUAGES.items():
-        print(f"  {code} - {lang['name']}")
+    for i, code in enumerate(codes, start=1):
+        print(f"  {i:>2} - {code} ({LANGUAGES[code]['name']})")
 
-    lang_code = input("언어 코드 입력: ").strip().lower()
+    choice = input("번호 입력: ").strip()
 
-    if lang_code not in LANGUAGES:
+    if not choice.isdigit() or not (1 <= int(choice) <= len(codes)):
         raise ValueError(
-            f"지원하지 않는 언어 코드입니다: {lang_code}"
+            f"잘못된 번호: {choice}"
         )
 
-    return lang_code
+    return codes[int(choice) - 1]
 
 
 # =========================================================
@@ -206,7 +230,7 @@ def prompt_folder_selection(folders):
 # =========================================================
 # 선택된 폴더 정보 구성
 #
-# en/a1_ordering_at_a_cafe (폴더) -> English / A1
+# jp/a1_ordering_at_a_cafe (폴더) -> Japanese / A1
 # =========================================================
 
 def build_folder_info(lang_code, item_dir):
@@ -735,7 +759,7 @@ def translate_full_titles_with_deepseek(
         "fr": "French",
         "pt": "European Portuguese",
         "zh": "Simplified Chinese",
-        "ja": "Japanese",
+        "jp": "Japanese",
         "kr": "Korean",
         "de": "German",
         "ru": "Russian",
@@ -936,19 +960,17 @@ def update_playlist_description(
 # =========================================================
 # 플레이리스트 검색 / 생성
 #
-# English | A1
-# Korean | A1
-# Japanese | B1
+# 모든 언어: 통합 플레이리스트 (예: English | A1-C2)
 # =========================================================
 
 def get_or_create_playlist(
     youtube,
     language_name,
     level,
+    lang_code,          # ✅ 언어 코드 추가 (en / kr / jp ...)
 ):
-    playlist_title = (
-        f"{language_name} | {level}"
-    )
+    # 모든 언어 A1-C2 통합 플레이리스트 사용
+    playlist_title = f"{language_name} | A1-C2"
 
     playlist_description = (
         build_playlist_description()
@@ -1378,8 +1400,8 @@ def main():
     print("========================================")
 
     # -----------------------------------------------------
-    # 언어 선택 -> 해당 언어 폴더 안 후보를 번호로 보여주고 선택
-    # (예전처럼 "en/a1_ordering_at_a_cafe"를 직접 입력하지 않는다)
+    # 언어 선택 -> 번호로 선택 (해당 언어 폴더 안 후보를 다시
+    # 번호로 보여주고 선택하는 흐름은 그대로 유지)
     # -----------------------------------------------------
 
     lang_code = prompt_language()
@@ -1488,7 +1510,7 @@ def main():
 
     playlist_title = (
         f"{language['name']} | "
-        f"{level}"
+        f"A1-C2"
     )
 
     # -----------------------------------------------------
@@ -1591,10 +1613,9 @@ def main():
     playlist_id = (
         get_or_create_playlist(
             youtube=youtube,
-            language_name=(
-                language["name"]
-            ),
+            language_name=language["name"],
             level=level,
+            lang_code=lang_code,
         )
     )
 

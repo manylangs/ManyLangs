@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S004",
+  "shot_id": "SHOT_001",
+  "sequence": 1,
+  "duration_seconds": 6.0,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun entering the baggage claim area and locating the correct carousel for her flight.",
+  "framing": {
+    "shot_size": "medium_wide",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "digital flight information display"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "follow",
+    "stability": "smooth"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun walks into the baggage claim area, looks around, and checks the digital flight information display to confirm the carousel number for flight KE081.",
+    "start_state": [
+      "Jieun is walking into the baggage claim area from the immigration corridor",
+      "She is carrying her backpack and crossbody bag"
+    ],
+    "end_state": [
+      "Jieun has identified the correct carousel number from the display",
+      "She is beginning to turn toward the carousel area"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "focused",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across body",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L001",
+      "L002"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun has completed immigration successfully",
+      "She is now heading toward baggage claim",
+      "She feels relieved that the immigration process went smoothly"
+    ],
+    "carry_out": [
+      "Jieun has identified the correct baggage carousel",
+      "She is moving toward the carousel area"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

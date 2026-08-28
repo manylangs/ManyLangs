@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S014",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun arrives at her subway stop in Manhattan",
+      "pass": true,
+      "evidence": "L001: \"This is my stop. I need to get off here.\""
+    },
+    {
+      "requirement": "Jieun exits the subway station",
+      "pass": true,
+      "evidence": "L002: \"Wow. The buildings are so tall. This is really Manhattan.\" implies she is now on the street looking at buildings."
+    },
+    {
+      "requirement": "Jieun sees the city skyline for the first time",
+      "pass": true,
+      "evidence": "L003: \"The skyline looks just like in the movies. It's amazing.\""
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the area around the subway station",
+      "pass": true,
+      "evidence": "All lines are spoken immediately upon exiting the station, with no indication of moving to another location."
+    },
+    {
+      "requirement": "Do not introduce any problems with finding her hotel yet",
+      "pass": true,
+      "evidence": "L004: \"I can't wait to see the hotel.\" expresses anticipation, not a problem."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

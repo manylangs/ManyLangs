@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S008",
+  "shot_id": "SHOT_001",
+  "sequence": 1,
+  "duration_seconds": 6.0,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun boarding the AirTrain and finding a seat by the window with her suitcase.",
+  "framing": {
+    "shot_size": "medium_wide",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "PROP_LUGGAGE_001"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "tracking",
+    "stability": "smooth"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun boards the AirTrain, moves through the car, and sits down by the window, placing her suitcase beside her.",
+    "start_state": [
+      "Jieun is standing on the AirTrain platform holding her suitcase handle.",
+      "She has a confident and decided expression."
+    ],
+    "end_state": [
+      "Jieun is seated by the window on the AirTrain.",
+      "Her suitcase is placed beside her."
+    ]
+  },
+  "emotion": {
+    "primary_actor": "confident and excited",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on Jieun's back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "placed beside Jieun's seat",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L001"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun has received advice from a transit employee.",
+      "She has decided to take public transit to Manhattan.",
+      "She is now heading toward the transit station."
+    ],
+    "carry_out": [
+      "Jieun is seated by the window on the AirTrain.",
+      "Her suitcase is beside her."
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

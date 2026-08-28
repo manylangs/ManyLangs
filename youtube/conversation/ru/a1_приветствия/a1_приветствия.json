@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "001"
+  },
+  "title": {
+    "target": "Приветствия",
+    "en": "Greetings",
+    "es": "Saludos",
+    "fr": "Salutations",
+    "pt": "Saudações",
+    "kr": "인사",
+    "zh": "问候",
+    "jp": "あいさつ",
+    "ru": "Приветствия"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте! Как у вас дела?",
+            "en": "Hello! How are you?",
+            "es": "¡Hola! ¿Cómo está usted?",
+            "fr": "Bonjour ! Comment allez-vous ?",
+            "pt": "Olá! Como está?",
+            "kr": "안녕하세요! 어떻게 지내세요?",
+            "zh": "您好！您最近怎么样？",
+            "jp": "こんにちは！お元気ですか？",
+            "ru": "Здравствуйте! Как у вас дела?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Здравствуйте! Спасибо, хорошо. А у вас?",
+            "en": "Hello! I'm fine, thank you. And you?",
+            "es": "¡Hola! Bien, gracias. ¿Y usted?",
+            "fr": "Bonjour ! Merci, bien. Et vous ?",
+            "pt": "Olá! Estou bem, obrigado. E você?",
+            "kr": "안녕하세요! 덕분에 잘 지내요. 당신은요?",
+            "zh": "您好！谢谢，我很好。您呢？",
+            "jp": "こんにちは！おかげさまで、元気です。あなたは？",
+            "ru": "Здравствуйте! Спасибо, хорошо. А у вас?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тоже хорошо, спасибо. Вы давно здесь ждёте?",
+            "en": "I'm fine too, thank you. Have you been waiting here long?",
+            "es": "Bien también, gracias. ¿Lleva mucho tiempo esperando aquí?",
+            "fr": "Bien aussi, merci. Vous attendez ici depuis longtemps ?",
+            "pt": "Também estou bem, obrigada. Está à espera há muito tempo?",
+            "kr": "저도 잘 지내요, 감사합니다. 여기서 오래 기다리셨어요?",
+            "zh": "我也很好，谢谢。您在这里等了很久了吗？",
+            "jp": "私も元気です、ありがとう。ここで長く待っていましたか？",
+            "ru": "Тоже хорошо, спасибо. Вы давно здесь ждёте?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, я пришёл только что. А вы?",
+            "en": "No, I just got here. And you?",
+            "es": "No, acabo de llegar. ¿Y usted?",
+            "fr": "Non, je viens d'arriver. Et vous ?",
+            "pt": "Não, acabei de chegar. E você?",
+            "kr": "아니요, 방금 왔어요. 당신은요?",
+            "zh": "没有，我刚到。您呢？",
+            "jp": "いいえ、私はちょうど来たところです。あなたは？",
+            "ru": "Нет, я пришёл только что. А вы?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я тоже. Очень приятно познакомиться!",
+            "en": "Me too. Very nice to meet you!",
+            "es": "Yo también. ¡Mucho gusto en conocerle!",
+            "fr": "Moi aussi. Enchanté de faire votre connaissance !",
+            "pt": "Eu também. Muito prazer em conhecê-lo!",
+            "kr": "저도요. 만나서 정말 반가워요!",
+            "zh": "我也是。很高兴认识您！",
+            "jp": "私もです。はじめまして！",
+            "ru": "Я тоже. Очень приятно познакомиться!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мне тоже очень приятно. До встречи!",
+            "en": "Nice to meet you too. See you later!",
+            "es": "El gusto es mío. ¡Hasta luego!",
+            "fr": "Moi aussi, enchanté. À bientôt !",
+            "pt": "O prazer é meu. Até à próxima!",
+            "kr": "저도 정말 반가워요. 또 만나요!",
+            "zh": "我也很高兴认识您。再见！",
+            "jp": "こちらこそ、はじめまして。また会いましょう！",
+            "ru": "Мне тоже очень приятно. До встречи!"
+          }
+        }
+      ]
+    }
+  ]
+}

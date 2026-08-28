@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Gestiones bancarias",
+  "sets": {
+    "001": [
+      "Buenos días, quería abrir una cuenta corriente, por favor.",
+      "Claro, ¿me permite su documento de identidad y un justificante de domicilio?",
+      "Sí, aquí tiene el pasaporte y el recibo de la luz.",
+      "Perfecto, todo está en regla. ¿Desea también una tarjeta de débito?",
+      "Sí, por favor, y quería saber si la cuenta tiene comisiones.",
+      "No, esta cuenta es gratuita si mantiene un saldo mínimo de trescientos euros."
+    ],
+    "002": [
+      "Hola, necesito hacer una transferencia a otro banco.",
+      "De acuerdo, ¿me dice el importe y el número de cuenta del destinatario?",
+      "Son doscientos cincuenta euros, y aquí tiene el número de cuenta.",
+      "Muy bien, ¿quiere que la transferencia sea inmediata u ordinaria?",
+      "Prefiero que sea inmediata, por favor.",
+      "Entendido, en unos segundos estará hecha. ¿Necesita algo más?"
+    ],
+    "003": [
+      "He perdido mi tarjeta de crédito y estoy muy preocupada.",
+      "No se preocupe, la bloqueamos ahora mismo. ¿Cuándo la vio por última vez?",
+      "La usé esta mañana en un cajero y creo que se me olvidó allí.",
+      "Ya está bloqueada. Le emitiremos una nueva en unos días hábiles.",
+      "¿Y puedo seguir usando la aplicación para pagar mientras tanto?",
+      "Sí, puede usar el móvil para pagar sin ningún problema."
+    ],
+    "004": [
+      "Quería contratar un seguro de viaje para el mes que viene.",
+      "Muy bien, ¿me dice el destino y la duración del viaje?",
+      "Voy a Japón durante dos semanas.",
+      "Tenemos varias opciones. ¿Le interesa una cobertura completa con asistencia médica?",
+      "Sí, prefiero la que tenga mejor cobertura sanitaria.",
+      "Entonces le recomiendo la póliza premium, que incluye cancelación y equipaje."
+    ],
+    "005": [
+      "Necesito cambiar estos dólares a euros, por favor.",
+      "Claro, ¿me enseña su pasaporte, por favor? Es necesario para la operación.",
+      "Aquí lo tiene. ¿Cuál es el tipo de cambio de hoy?",
+      "Está a cero coma noventa y dos. ¿Cuántos dólares quiere cambiar?",
+      "Quinientos dólares, por favor.",
+      "Perfecto, son cuatrocientos sesenta euros. Aquí tiene el dinero y el justificante."
+    ],
+    "006": [
+      "Hola, vengo a recoger una tarjeta nueva que solicité la semana pasada.",
+      "Déjeme verificar con su documento, por favor. ¿Me da su DNI?",
+      "Sí, aquí está. ¿Está ya disponible?",
+      "Un momento, por favor... Sí, aquí la tiene. ¿Quiere que le explique cómo activarla?",
+      "Sí, por favor, no sé muy bien cómo funciona.",
+      "Es muy sencillo: tiene que llamar al número que aparece en el adhesivo."
+    ],
+    "007": [
+      "Llevo varios días sin poder acceder a la banca online.",
+      "Entiendo, ¿qué mensaje le aparece cuando intenta entrar?",
+      "Me dice que la contraseña no es correcta, pero estoy segura de que la escribo bien.",
+      "Puede ser un problema de seguridad. Se la vamos a restablecer ahora mismo.",
+      "¿Y tendré que volver a configurar algo en el móvil?",
+      "Sí, le enviaremos un código por SMS para que active la nueva contraseña."
+    ],
+    "008": [
+      "Quería domiciliar el recibo de la comunidad en mi cuenta.",
+      "De acuerdo, ¿me trae el documento del banco del proveedor del servicio?",
+      "Sí, aquí está el formulario cumplimentado y firmado.",
+      "Perfecto, ¿me confirma el número de cuenta donde quiere domiciliarlo?",
+      "Es el que aparece en la parte inferior del formulario.",
+      "Muy bien, en unos días quedará activo el cargo automático."
+    ],
+    "009": [
+      "Me gustaría solicitar un préstamo personal para reformar la cocina.",
+      "Muy bien, ¿de qué importe necesita y en cuántos años quiere devolverlo?",
+      "Necesito ocho mil euros y me gustaría devolverlos en cinco años.",
+      "De acuerdo, con su nómina y su historial no habrá problema. Le preparo la solicitud.",
+      "¿Cuánto tardarán en darme una respuesta?",
+      "Normalmente, entre dos y tres días laborables."
+    ],
+    "010": [
+      "Buenos días, quería cancelar mi cuenta porque me mudo a otro país.",
+      "Entendido, ¿me dice el número de cuenta y me confirma que no tiene recibos pendientes?",
+      "Sí, el número es este y no tengo ningún recibo pendiente.",
+      "Perfecto, ¿desea que le transfieran el saldo restante a otra cuenta?",
+      "Sí, por favor, a mi cuenta en el banco de Alemania.",
+      "De acuerdo, en unos días recibirá la confirmación del cierre."
+    ]
+  },
+  "level": "b2",
+  "chapter_id": "CONV_ES_BANK_SERVICES",
+  "id": "031",
+  "target_lang": "es"
+}

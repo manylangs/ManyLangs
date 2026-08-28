@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S002",
+  "sequence": 2,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "characters": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "local_character_id": null,
+      "role": "protagonist",
+      "gender": "female",
+      "visual_state": {
+        "appearance": [
+          "Oval face with soft features",
+          "Natural eyebrows",
+          "Dark brown eyes",
+          "Light natural makeup",
+          "Warm friendly expression",
+          "Shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears"
+        ],
+        "clothing": [
+          "White casual t-shirt",
+          "Light blue denim jacket",
+          "Dark blue skinny jeans",
+          "White sneakers",
+          "Small silver earrings",
+          "Simple wristwatch"
+        ],
+        "carried_items": [
+          "Medium-sized travel backpack",
+          "Small crossbody bag",
+          "Smartphone"
+        ]
+      },
+      "emotion": "a bit overwhelmed but curious",
+      "screen_action": "Stands near the immigration area, looking at the lines and then approaches an airport employee for help"
+    },
+    {
+      "character_ref": null,
+      "local_character_id": "B",
+      "role": "supporting",
+      "gender": "male",
+      "visual_state": {
+        "appearance": [
+          "Professional airport employee",
+          "Neatly groomed",
+          "Wearing an airport uniform with a visible ID badge"
+        ],
+        "clothing": [
+          "Airport uniform shirt",
+          "Dark trousers",
+          "Comfortable work shoes"
+        ],
+        "carried_items": []
+      },
+      "emotion": "helpful and professional",
+      "screen_action": "Stands near the immigration area, assisting passengers and responding to Jieun's questions"
+    }
+  ],
+  "environment": {
+    "time_of_day": "day",
+    "weather": null,
+    "lighting": "bright indoor terminal lighting with natural light from large windows",
+    "background_activity": [
+      "Other passengers walking toward the immigration area",
+      "Airport staff guiding passengers",
+      "Digital flight information displays showing arrival times"
+    ]
+  },
+  "visual_goal": "The viewer sees Jieun, feeling a bit overwhelmed, successfully identify the correct immigration line with the help of a professional airport employee, and join the line with her passport ready.",
+  "actions": [
+    {
+      "sequence": 1,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "Walks toward the immigration area, looking at the different lines and the signage above them",
+      "object_ref": null
+    },
+    {
+      "sequence": 2,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "Approaches the airport employee and asks which line to join for immigration",
+      "object_ref": null
+    },
+    {
+      "sequence": 3,
+      "actor_ref": "B",
+      "action": "Looks at Jieun and asks if she is a visitor or a resident",
+      "object_ref": null
+    },
+    {
+      "sequence": 4,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "Replies that she is a visitor here for a trip",
+      "object_ref": null
+    },
+    {
+      "sequence": 5,
+      "actor_ref": "B",
+      "action": "Points toward the line on the left and tells her it is for visitors",
+      "object_ref": null
+    },
+    {
+      "sequence": 6,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "Asks if she needs to fill out any forms",
+      "object_ref": null
+    },
+    {
+      "sequence": 7,
+      "actor_ref": "B",
+      "action": "Shakes his head and tells her no forms are needed, just to have her passport ready",
+      "object_ref": null
+    },
+    {
+      "sequence": 8,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "Nods, takes her passport out from her crossbody bag, and walks toward the line on the left",
+      "object_ref": "PROP_PASSPORT_001"
+    }
+  ],
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "description": "Medium-sized travel backpack",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "description": "Small crossbody bag",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "description": "Smartphone",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "description": "Passport",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    }
+  ],
+  "must_show": [
+    "Jieun observing the immigration area and the different lines",
+    "Jieun approaching the airport employee and asking for help",
+    "The airport employee pointing toward the line on the left for visitors",
+    "Jieun joining the correct immigration line with her passport ready"
+  ],
+  "must_not_show": [
+    "Jieun moving past the immigration area",
+    "Jieun completing the immigration process",
+    "Jieun leaving the airport",
+    "Any unexplained change in Jieun's clothing or appearance"
+  ],
+  "visual_continuity": {
+    "carry_in": [
+      "Jieun has disembarked from the airplane",
+      "She is now inside the JFK terminal, following signs toward immigration",
+      "She feels a mix of excitement and nervousness"
+    ],
+    "carry_out": [
+      "Jieun has joined the correct immigration line after asking for help",
+      "She is waiting in line with her passport ready",
+      "She feels a bit more confident about the process"
+    ],
+    "start_state": [
+      "Jieun is standing in the immigration area of JFK terminal",
+      "She is wearing her default travel outfit with her backpack and crossbody bag",
+      "She is looking at the different lines, appearing a bit overwhelmed"
+    ],
+    "end_state": [
+      "Jieun is standing in the correct immigration line for visitors",
+      "She is holding her passport in her hand",
+      "She looks a bit more confident and calm"
+    ]
+  },
+  "production_constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_story_continuity": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false
+  }
+}

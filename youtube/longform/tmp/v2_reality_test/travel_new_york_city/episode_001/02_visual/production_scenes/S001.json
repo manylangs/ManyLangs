@@ -1,0 +1,152 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S001",
+  "sequence": 1,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "characters": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "local_character_id": null,
+      "role": "protagonist",
+      "gender": "female",
+      "visual_state": {
+        "appearance": [
+          "Oval face with soft features",
+          "Natural eyebrows",
+          "Dark brown eyes",
+          "Light natural makeup",
+          "Warm friendly expression",
+          "Shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears"
+        ],
+        "clothing": [
+          "White casual t-shirt",
+          "Light blue denim jacket",
+          "Dark blue skinny jeans",
+          "White sneakers",
+          "Small silver earrings",
+          "Simple wristwatch"
+        ],
+        "carried_items": [
+          "Medium-sized travel backpack",
+          "Small crossbody bag",
+          "Smartphone"
+        ]
+      },
+      "emotion": "excited but slightly nervous",
+      "screen_action": "Gathers her belongings and prepares to disembark from the airplane"
+    }
+  ],
+  "environment": {
+    "time_of_day": "day",
+    "weather": null,
+    "lighting": "bright natural daylight coming through airplane windows",
+    "background_activity": [
+      "Other passengers preparing to disembark",
+      "Cabin crew standing near the exit"
+    ]
+  },
+  "visual_goal": "Show Jieun's excitement and nervousness as she gathers her belongings and prepares to step off the plane into JFK Airport for the first time.",
+  "actions": [
+    {
+      "sequence": 1,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "looks out the airplane window at the airport terminal",
+      "object_ref": null
+    },
+    {
+      "sequence": 2,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "gathers her travel backpack and crossbody bag",
+      "object_ref": "PROP_BACKPACK_001"
+    },
+    {
+      "sequence": 3,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "checks her smartphone",
+      "object_ref": "PROP_SMARTPHONE_001"
+    },
+    {
+      "sequence": 4,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "stands up and moves toward the airplane exit",
+      "object_ref": null
+    },
+    {
+      "sequence": 5,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "steps off the airplane into the terminal",
+      "object_ref": null
+    }
+  ],
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "description": "Medium-sized travel backpack",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "description": "Small crossbody bag",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "description": "Smartphone",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    }
+  ],
+  "must_show": [
+    "Jieun gathers her belongings and prepares to disembark",
+    "Jieun steps off the airplane into the terminal",
+    "Jieun's excited but slightly nervous expression"
+  ],
+  "must_not_show": [
+    "Jieun moving past the arrival terminal area",
+    "Any dialogue or interaction with other characters",
+    "Jieun recovering her missing bag (no missing bag exists yet)"
+  ],
+  "visual_continuity": {
+    "carry_in": [
+      "Jieun is on an airplane approaching JFK Airport",
+      "She feels excited but slightly anxious about her first visit to New York",
+      "She has her passport, luggage, and hotel reservation ready",
+      "Her main goal is to get from the airport to her hotel safely"
+    ],
+    "carry_out": [
+      "Jieun has disembarked from the airplane",
+      "She is now inside the JFK terminal, following signs toward immigration",
+      "She feels a mix of excitement and nervousness"
+    ],
+    "start_state": [
+      "Jieun is seated on the airplane, which has just landed at JFK Airport",
+      "She is looking out the window at the terminal",
+      "She is wearing her default travel outfit with her backpack and crossbody bag"
+    ],
+    "end_state": [
+      "Jieun is standing inside the JFK terminal after disembarking",
+      "She is carrying her backpack and crossbody bag",
+      "She is looking around, following the flow of passengers toward immigration"
+    ]
+  },
+  "production_constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_story_continuity": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false
+  }
+}

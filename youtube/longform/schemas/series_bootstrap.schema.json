@@ -1,0 +1,315 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/series_bootstrap.schema.json",
+  "title": "ManyLangs Longform Series Bootstrap",
+  "description": "Provider-neutral bootstrap contract connecting a content request to Series Bible, Episode, Character, and Location generation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "category_id",
+    "series_id",
+    "episode_id",
+    "series_direction",
+    "reality_context",
+    "episode_direction",
+    "protagonist_design",
+    "location_design",
+    "production_policy"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "content_version",
+        "revision",
+        "generated_by"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "2.0"
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "generated_by": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type",
+            "provider",
+            "model"
+          ],
+          "properties": {
+            "type": {
+              "const": "ai"
+            },
+            "provider": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "category_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+    },
+    "series_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*_ep[0-9]{3}$"
+    },
+    "series_direction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "premise",
+        "genre",
+        "tone",
+        "scope",
+        "learning_focus"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "premise": {
+          "type": "string",
+          "minLength": 1
+        },
+        "genre": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "learning_focus": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "reality_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reference_date",
+        "location_context"
+      ],
+      "properties": {
+        "reference_date": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}$"
+        },
+        "location_context": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "episode_direction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "episode_number",
+        "topic",
+        "story_goal",
+        "start_state",
+        "end_state",
+        "scene_count",
+        "target_language",
+        "cefr_level"
+      ],
+      "properties": {
+        "episode_number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "topic": {
+          "type": "string",
+          "minLength": 1
+        },
+        "story_goal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "start_state": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "end_state": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "scene_count": {
+          "const": 20
+        },
+        "target_language": {
+          "type": "string",
+          "enum": [
+            "en",
+            "es",
+            "fr",
+            "pt",
+            "jp",
+            "kr",
+            "zh",
+            "ru"
+          ]
+        },
+        "cefr_level": {
+          "type": "string",
+          "enum": [
+            "A1",
+            "A2",
+            "B1",
+            "B2",
+            "C1",
+            "C2"
+          ]
+        }
+      }
+    },
+    "protagonist_design": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "character_id",
+        "gender",
+        "story_role",
+        "personality",
+        "visual_direction"
+      ],
+      "properties": {
+        "character_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gender": {
+          "type": "string",
+          "enum": [
+            "female",
+            "male"
+          ]
+        },
+        "story_role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "personality": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "visual_direction": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "location_design": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "setting",
+        "location_strategy",
+        "required_locations"
+      ],
+      "properties": {
+        "setting": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location_strategy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "required_locations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "location_id",
+              "purpose"
+            ],
+            "properties": {
+              "location_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "purpose": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "production_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "preserve_series_identity",
+        "preserve_protagonist_identity",
+        "preserve_location_identity",
+        "allow_downstream_story_redefinition"
+      ],
+      "properties": {
+        "preserve_series_identity": {
+          "const": true
+        },
+        "preserve_protagonist_identity": {
+          "const": true
+        },
+        "preserve_location_identity": {
+          "const": true
+        },
+        "allow_downstream_story_redefinition": {
+          "const": false
+        }
+      }
+    }
+  }
+}

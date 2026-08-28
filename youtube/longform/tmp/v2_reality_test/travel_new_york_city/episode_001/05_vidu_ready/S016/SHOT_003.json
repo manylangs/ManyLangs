@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S016",
+  "shot_id": "SHOT_003",
+  "sequence": 3,
+  "source_refs": {
+    "production_scene": "02_visual/production_scenes/S016.json",
+    "shot": "03_shots/S016/SHOT_003.json",
+    "visual_continuity": "04_visual_continuity/S016/SHOT_003.json"
+  },
+  "generation": {
+    "provider": "vidu",
+    "duration_seconds": 6.0,
+    "aspect_ratio": "16:9",
+    "resolution": "1080p",
+    "mode": "reference_guided"
+  },
+  "actors": [
+    {
+      "actor_ref": "CHAR_JIEUN_001",
+      "identity_type": "persistent",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Medium-sized travel backpack",
+        "Small crossbody bag",
+        "Smartphone",
+        "Passport",
+        "Checked suitcase",
+        "Hotel room key"
+      ],
+      "body_state": [
+        "Standing at the front desk",
+        "Facing the front desk employee",
+        "Backpack worn on back",
+        "Crossbody bag worn across body",
+        "Checked suitcase stopped beside her",
+        "Holding the room key in her hand"
+      ],
+      "emotion": "relieved and happy",
+      "reference_asset_ids": [
+        "ASSET_CHAR_JIEUN_PRIMARY_000001"
+      ]
+    },
+    {
+      "actor_ref": "B",
+      "identity_type": "scene_local",
+      "identity_lock": true,
+      "appearance": [
+        "A local woman in her 30s or 40s",
+        "Friendly and professional expression",
+        "Neat and tidy appearance appropriate for a hotel front desk employee"
+      ],
+      "hair": [
+        "Neatly styled hair appropriate for a hotel front desk employee"
+      ],
+      "clothing": [
+        "Hotel uniform or smart business attire",
+        "Name tag"
+      ],
+      "carried_items": [],
+      "body_state": [
+        "Standing behind the front desk",
+        "Facing Jieun",
+        "Pointing toward the elevator"
+      ],
+      "emotion": "welcoming and helpful",
+      "reference_asset_ids": []
+    }
+  ],
+  "location": {
+    "location_ref": "LOC_MANHATTAN_HOTEL_001",
+    "identity_lock": true,
+    "current_zone": "Hotel lobby, at the front desk",
+    "persistent_features": [
+      "Hotel lobby with front desk",
+      "Elevator area",
+      "Guest room with bed, desk, and window",
+      "City view from the room window",
+      "Hotel signage and entrance"
+    ],
+    "orientation_state": [
+      "Jieun standing at the front desk",
+      "Jieun facing the front desk employee",
+      "Front desk employee standing behind the front desk, facing Jieun",
+      "Front desk employee pointing toward the elevator",
+      "Checked suitcase stopped beside Jieun",
+      "Elevator area visible behind or to the side of the front desk"
+    ],
+    "reference_asset_ids": []
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn on back",
+      "position": "on Jieun's back",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn across body, closed",
+      "position": "across Jieun's body",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "stored in crossbody bag",
+      "position": "inside Jieun's crossbody bag",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "stored in crossbody bag",
+      "position": "inside Jieun's crossbody bag",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "stopped beside Jieun",
+      "position": "beside Jieun at the front desk",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_ROOM_KEY_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "held in Jieun's hand",
+      "position": "in Jieun's right hand",
+      "visible": true,
+      "continuity_lock": true
+    }
+  ],
+  "prompt": {
+    "subject": "Jieun, a young Korean woman with an oval face, soft features, natural eyebrows, dark brown eyes, light natural makeup, and a warm friendly expression, stands at the hotel front desk. She has shoulder-length dark brown hair, straight with slight natural waves, tucked behind her ears. She wears a white casual t-shirt, a light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch. She carries a medium-sized travel backpack on her back, a small crossbody bag across her body, and her checked suitcase is stopped beside her. She holds the hotel room key in her right hand. Across the desk, a local woman in her 30s or 40s, with a friendly and professional expression and neatly styled hair, wears a hotel uniform or smart business attire with a name tag. She stands behind the front desk, facing Jieun, and points toward the elevator.",
+    "environment": "The scene takes place in the hotel lobby of the Manhattan Hotel, at the front desk. Bright natural daylight streams through the lobby windows, mixed with warm indoor lighting. A few guests walk through the lobby, and soft background music typical of a hotel lobby plays, with occasional sounds of the elevator and distant conversation. The elevator area is visible behind or to the side of the front desk.",
+    "action": "The front desk employee hands the room key to Jieun, then points toward the elevator. Jieun receives the key and holds it in her hand, standing at the front desk facing the employee.",
+    "camera": "Medium close shot at eye level, static and locked camera.",
+    "continuity": "Jieun remains standing at the front desk, facing the employee, with her backpack on her back, crossbody bag across her body, and checked suitcase stopped beside her. The front desk employee has confirmed the reservation and is now handing the room key to Jieun and pointing toward the elevator. Jieun is relieved and happy.",
+    "final_prompt": "A medium close shot at eye level, static and locked camera, shows Jieun, a young Korean woman with an oval face, soft features, natural eyebrows, dark brown eyes, light natural makeup, and a warm friendly expression, standing at the hotel front desk. She has shoulder-length dark brown hair, straight with slight natural waves, tucked behind her ears, and wears a white casual t-shirt, a light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch. She carries a medium-sized travel backpack on her back, a small crossbody bag across her body, and her checked suitcase is stopped beside her. Across the desk, a local woman in her 30s or 40s, with a friendly and professional expression and neatly styled hair, wears a hotel uniform or smart business attire with a name tag. The employee hands the room key to Jieun, who takes it and holds it in her right hand, then the employee points toward the elevator. The scene takes place in the hotel lobby of the Manhattan Hotel, at the front desk, with bright natural daylight streaming through the lobby windows mixed with warm indoor lighting, a few guests walking through the lobby, soft background music, and the elevator area visible behind or to the side of the front desk. Jieun remains standing at the front desk, facing the employee, with her backpack on her back, crossbody bag across her body, and checked suitcase stopped beside her. She is relieved and happy."
+  },
+  "negative_constraints": [
+    "Do not change character identity.",
+    "Do not change canonical location identity.",
+    "Do not introduce new characters.",
+    "Do not introduce new locations.",
+    "Do not alter canonical prop state.",
+    "Do not change story events.",
+    "Do not show Jieun moving past the hotel lobby.",
+    "Do not show Jieun leaving the hotel.",
+    "Do not show Jieun's suitcase being lost or missing.",
+    "Do not show Jieun's passport or smartphone being dropped or lost.",
+    "Do not introduce a new travel problem.",
+    "Do not show Jieun entering her room before reaching the elevator."
+  ],
+  "continuity": {
+    "carry_in": [
+      "The front desk employee has confirmed the reservation",
+      "Jieun is still standing at the front desk",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase"
+    ],
+    "carry_out": [
+      "Jieun is holding the room key in her hand",
+      "The front desk employee has pointed toward the elevator",
+      "Jieun is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase",
+      "Her checked suitcase is stopped beside her",
+      "Jieun is relieved and happy"
+    ],
+    "must_match_previous_shot": true,
+    "previous_scene_id": "S016",
+    "previous_shot_id": "SHOT_002",
+    "next_scene_id": "S016",
+    "next_shot_id": "SHOT_004"
+  }
+}

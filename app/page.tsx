@@ -435,8 +435,7 @@ export default function LandingPage() {
             overflowWrap: "break-word",
           }}
         >
-          Learn your target language with subtitles available in English, Spanish,
-          Portuguese, French, Korean, Mandarin Chinese, or Japanese.
+          Learn your target language with subtitles available in English, Spanish, Portuguese, French, Korean, Mandarin Chinese, Japanese, or Russian.
         </p>
         <div
           style={{
@@ -523,10 +522,9 @@ export default function LandingPage() {
 
           {/* 3 */}
           <div style={card}>
-            <div style={cardTitle}>Learn in 7 languages</div>
+            <div style={cardTitle}>Learn in 8 languages</div>
             <div style={text}>
-              Study your target language with support in English, Spanish, French, Portuguese, Korean, Simplified Chinese, or Japanese.
-            </div>
+              Study your target language with support in English, Spanish, French, Portuguese, Korean, Simplified Chinese, Japanese, or Russian.            </div>
           </div>
         </div>
       </section>

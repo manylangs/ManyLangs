@@ -1,0 +1,70 @@
+{
+  "chapter_id": "conversation_001.runtime.json",
+  "target_lang": "es",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A/B가 한 세트 내에서 자연스럽게 번갈아 대화하며, 역할과 응답이 일관적입니다."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "인사, 안부 묻기, 기분 답하기, 계획 묻기, 계획 말하기, 축복과 작별 인사 등 대화 기능이 정확하고 자연스럽게 연결됩니다."
+    },
+    "spoken_naturalness": {
+      "score": 10,
+      "weight": 15,
+      "notes": "'¡Qué bien!', 'Pues...', 'la verdad es que sí' 등 스페인 본토 구어체 표현이 자연스럽게 사용되었습니다."
+    },
+    "register_appropriateness": {
+      "score": 10,
+      "weight": 10,
+      "notes": "친근한 사이의 대화로 'tú' 형태가 일관되게 사용되었고, 마지막에 'vosotros' 형태('paséis')가 자연스럽게 등장합니다."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법, 철자, 성별 일치('contenta'), 감탄문 부호(¡!, ¿?) 등이 모두 정확합니다."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "A1 레벨에 적합한 가장 기본적이고 실용적인 인사 및 안부 대화 상황을 잘 다루고 있습니다."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "특정 문화권에 국한되지 않는 보편적인 대화 내용입니다."
+    },
+    "tts_readiness": {
+      "score": 10,
+      "weight": 5,
+      "notes": "문장이 짧고 명확하며, 감탄문과 의문문의 구분이 뚜렷하여 TTS 합성에 적합합니다."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 es 필드가 모든 문장에서 완벽하게 일치합니다."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "A1 레벨의 기본적인 인사말 대화로, 시중 서비스의 유사 레벨 콘텐츠와 견줄 만한 품질을 갖추었습니다. 다만, 더 높은 점수를 위해서는 대화의 길이나 다양성 측면에서 약간의 확장이 필요할 수 있습니다."
+    }
+  },
+  "final_score": 98.5,
+  "market_benchmark": {
+    "comparable_services": [
+      "SpanishPod101",
+      "Duolingo Spanish Conversations",
+      "Pimsleur Spanish",
+      "Notes in Spanish (European Spanish)"
+    ],
+    "estimated_relative_position": "A1 레벨의 기본 인사말 대화로서, 시중 최상위 서비스의 동급 콘텐츠와 동등하거나 그 이상의 품질을 보여줍니다. 특히 유럽 스페인어 특유의 구어체 표현과 'vosotros' 사용이 자연스러워 Notes in Spanish와 같은 현지 중심 서비스와도 견줄 만합니다.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}

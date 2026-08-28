@@ -1,0 +1,87 @@
+{
+  "lang": "pt",
+  "title": "Atendimento ao cliente",
+  "sets": {
+    "001": [
+      "Bom dia! Aqui é a empresa \"StroyTech\", meu nome é Anna. Como posso ajudar?",
+      "Olá, Anna. Aqui é o Sergei, da empresa \"Alfa\". Gostaríamos de esclarecer alguns detalhes sobre o nosso pedido.",
+      "Sim, claro, Sergei. Vejo o seu pedido no sistema. O que exatamente lhe interessa?",
+      "Estamos interessados nos prazos de entrega. Contávamos em receber os materiais até o final do mês.",
+      "Infelizmente, por causa do atraso no armazém, a entrega só será possível duas semanas após a data combinada.",
+      "Entendi. Isso cria algumas dificuldades para nós, mas vamos tentar encontrar uma solução."
+    ],
+    "002": [
+      "Ivan, olá! É a Maria, do departamento de compras. Você recebeu o nosso último pedido de cotação?",
+      "Sim, Maria, recebi. Eu estava justamente analisando. Tenho algumas dúvidas sobre a especificação.",
+      "Estou ouvindo com atenção. O que exatamente precisa esclarecer?",
+      "No item sobre as características técnicas, está indicada a potência, mas não está muito claro para qual modo de operação.",
+      "Boa pergunta. É para o modo de pico, vamos indicar isso na documentação.",
+      "Ótimo, então está tudo certo. Vou preparar a resposta até amanhã de manhã."
+    ],
+    "003": [
+      "Alexei, boa tarde! É a Elena, da empresa \"Vetor\". Recebemos a sua fatura, mas notamos uma divergência no valor.",
+      "Olá, Elena. Sim, estou ciente. Houve um erro no cálculo do frete, já preparamos o documento corrigido.",
+      "Obrigada pela agilidade. E quando poderemos receber a versão corrigida?",
+      "Vou enviá-la para vocês hoje à tarde. Pedimos desculpas pelo transtorno.",
+      "Sem problema, isso acontece. O importante é que a questão foi resolvida rapidamente.",
+      "Concordo. Se surgirem outras dúvidas, estou à disposição."
+    ],
+    "004": [
+      "Dmitri, oi! É a Olga. Nós conversamos sobre o adiamento da reunião com o cliente da \"TeknoProm\".",
+      "Sim, Olga, lembro. Eles pediram para adiar para a próxima semana, certo?",
+      "Exatamente. Eles sugeriram quarta-feira às onze horas. Esse horário funciona para você?",
+      "Na quarta-feira, tenho reunião até meio-dia, infelizmente. Que tal sugerirmos quinta-feira?",
+      "Boa ideia. Vou escrever para eles e confirmar se quinta-feira às dez da manhã os atende.",
+      "Combinado. Obrigado por ter assumido isso. Vou aguardar a confirmação."
+    ],
+    "005": [
+      "Sergei, olá! É a Anna, da \"StroyTech\". Recebemos a sua reclamação sobre a qualidade dos materiais.",
+      "Olá, Anna. Sim, contamos muito com a sua ajuda nessa questão.",
+      "Já fizemos uma verificação interna e reconhecemos que parte do lote realmente apresentava defeito.",
+      "Obrigado por reconhecerem isso com honestidade. E quais são as suas propostas para resolver o problema?",
+      "Estamos prontos para substituir o lote defeituoso às nossas custas no prazo de uma semana.",
+      "Essa é uma ótima notícia. Essa postura nos atende plenamente, obrigado pela compreensão."
+    ],
+    "006": [
+      "Ivan, boa tarde! É a Maria falando. Recebemos a sua proposta comercial, mas ela está sem assinatura.",
+      "Olá, Maria. Ah, foi um descuido meu, eu estava com pressa para enviar. Vou enviar a versão assinada agora mesmo.",
+      "Ficarei muito grata. Precisamos aprová-la até o final do dia para a nossa diretoria.",
+      "Farei isso em meia hora. E peço desculpas mais uma vez por esse atraso.",
+      "Tudo bem, isso acontece. Obrigada pela rápida resolução da questão.",
+      "Eu que agradeço pela compreensão. Pode falar comigo se precisar de mais alguma coisa."
+    ],
+    "007": [
+      "Alexei, oi! É a Elena. Surgiu uma questão sobre a assistência técnica garantida do equipamento.",
+      "Olá, Elena. Estou ouvindo, o que aconteceu?",
+      "A fonte de alimentação da máquina que compramos de vocês no ano passado queimou.",
+      "Entendi. A garantia desse equipamento ainda está válida, então enviaremos o nosso técnico até vocês.",
+      "Ótimo. E quando ele poderá vir? Estamos com a produção parada, é crítico.",
+      "Amanhã de manhã o nosso engenheiro estará aí. Já vou avisá-lo sobre a urgência."
+    ],
+    "008": [
+      "Dmitri, olá! É a Olga. O cliente da \"StroyInvest\" está perguntando sobre a possibilidade de um desconto adicional.",
+      "Oi, Olga. E qual é o volume que eles estão dispostos a pedir?",
+      "Eles dizem que estão prontos para aumentar o pedido em uma vez e meia, se dermos um desconto de dez por cento.",
+      "Dez por cento é bastante. Mas, com esse volume, podemos considerar sete por cento.",
+      "Certo, vou repassar essa proposta para eles. Acho que podem aceitar.",
+      "Se for preciso, podemos discutir outras condições, mas sem comprometer a qualidade."
+    ],
+    "009": [
+      "Sergei, boa tarde! É a Anna. Gostaríamos de convidá-lo para a apresentação da nossa nova linha de produtos.",
+      "Olá, Anna. Com prazer. Quando e onde será o evento?",
+      "Na próxima quinta-feira, no salão de conferências do hotel \"Central\", começando às três da tarde.",
+      "Ótimo, farei o possível para ir. Haverá a oportunidade de discutir com os seus tecnólogos os detalhes de aplicação?",
+      "Claro, vamos reservar um tempo especialmente para consultas individuais após a parte principal.",
+      "Isso é ótimo. Então com certeza irei, e possivelmente com um colega do departamento técnico."
+    ],
+    "010": [
+      "Ivan, oi! É a Maria falando. Recebemos os seus documentos para pagamento, mas falta um carimbo.",
+      "Olá, Maria. Sim, eu sei, o nosso contador está de licença médica hoje, e o carimbo está com ele.",
+      "Entendo. Mas sem o carimbo, não podemos processar o pagamento, é uma exigência do nosso banco.",
+      "Então posso levar os documentos pessoalmente até vocês, para que vocês registrem o recebimento, e o carimbo adicionamos depois.",
+      "Isso seria ideal. Venha hoje, estarei no escritório até as seis da tarde.",
+      "Combinado, estarei aí dentro de uma hora. Obrigado pela flexibilidade nessa questão."
+    ]
+  },
+  "id": "046"
+}

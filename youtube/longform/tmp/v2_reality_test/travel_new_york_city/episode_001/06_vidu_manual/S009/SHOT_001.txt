@@ -1,0 +1,27 @@
+ORDER: 026/065
+SCENE: S009
+SHOT: SHOT_001
+DURATION: 8.0 seconds
+ASPECT RATIO: 16:9
+RESOLUTION: 1080p
+
+REFERENCE IMAGE:
+- _references/jieun_primary.png
+
+PROMPT:
+A young Korean woman with shoulder-length dark brown hair tucked behind her ears, wearing a white t-shirt, light blue denim jacket, dark blue skinny jeans, and white sneakers, with a medium-sized travel backpack on her back and a small crossbody bag across her body, holding a checked suitcase by the handle, walks toward a female transit employee in her 30s wearing a transit authority uniform with a visible badge, dark pants, and work shoes, holding a small handheld radio, near the station entrance. She stops in front of the employee, about to ask a question. The scene is inside a subway station entrance area with bright indoor lighting and natural daylight from platform entrances, ticket machine visible to the side, platform signs in the background, a few passengers walking toward platforms and checking departure boards. Medium-wide shot at eye level, static and locked camera.
+
+NEGATIVE / DO-NOT-CHANGE NOTES:
+- Do not change character identity.
+- Do not change canonical location identity.
+- Do not introduce new characters.
+- Do not introduce new locations.
+- Do not alter canonical prop state.
+- Do not change story events.
+- Do not show Jieun moving past the subway station or boarding a train.
+- Do not show specific ticket prices or payment method details.
+- Do not show Jieun's suitcase being lost or missing.
+- Do not show Jieun's passport or smartphone being dropped or lost.
+
+OUTPUT FILE:
+S009_SHOT_001.mp4

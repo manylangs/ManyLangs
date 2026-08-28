@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a2",
+    "id": "012"
+  },
+  "title": {
+    "target": "Вкусы и предпочтения",
+    "en": "Tastes and Preferences",
+    "es": "Gustos y preferencias",
+    "fr": "Goûts et préférences",
+    "pt": "Gostos e preferências",
+    "kr": "취향과 선호",
+    "jp": "好みと嗜好",
+    "zh": "口味与偏好",
+    "ru": "Вкусы и предпочтения"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, тебе нравится чёрный кофе или с молоком?",
+            "en": "Ivan, do you like black coffee or with milk?",
+            "es": "Iván, ¿te gusta el café solo o con leche?",
+            "fr": "Ivan, tu préfères le café noir ou avec du lait ?",
+            "pt": "Ivan, você gosta de café preto ou com leite?",
+            "kr": "이반, 너는 블랙 커피를 좋아해, 아니면 우유 넣은 커피?",
+            "jp": "イワン、君はブラックコーヒーとミルク入り、どっちが好き？",
+            "zh": "伊万，你喜欢黑咖啡还是加奶的？",
+            "ru": "Иван, тебе нравится чёрный кофе или с молоком?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Честно говоря, я предпочитаю с молоком. А ты?",
+            "en": "Honestly, I prefer it with milk. And you?",
+            "es": "Para ser sincero, prefiero con leche. ¿Y tú?",
+            "fr": "Pour être honnête, je préfère avec du lait. Et toi ?",
+            "pt": "Pra ser sincero, eu prefiro com leite. E você?",
+            "kr": "솔직히 말하면, 나는 우유 넣은 게 좋아. 너는?",
+            "jp": "正直言うと、ミルク入りの方が好きだな。君は？",
+            "zh": "说实话，我更喜欢加奶的。你呢？",
+            "ru": "Честно говоря, я предпочитаю с молоком. А ты?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А я люблю чёрный, без сахара.",
+            "en": "And I like it black, without sugar.",
+            "es": "Pues a mí me gusta solo, sin azúcar.",
+            "fr": "Moi, j'aime le café noir, sans sucre.",
+            "pt": "Eu gosto de preto, sem açúcar.",
+            "kr": "나는 설탕 없는 블랙을 좋아해.",
+            "jp": "私はブラックが好き。砂糖なしでね。",
+            "zh": "我喜欢黑的，不加糖。",
+            "ru": "А я люблю чёрный, без сахара."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Правда? Обычно девушки любят послаще.",
+            "en": "Really? Usually girls like it sweeter.",
+            "es": "¿En serio? Normalmente a las chicas les gusta más dulce.",
+            "fr": "Vraiment ? D'habitude, les filles préfèrent plus sucré.",
+            "pt": "Sério? Normalmente as mulheres gostam mais doce.",
+            "kr": "정말? 보통 여자들은 좀 더 단 것을 좋아하잖아.",
+            "jp": "本当？ 普通、女性は甘い方が好きだよね。",
+            "zh": "真的吗？一般女孩子都喜欢甜一点的。",
+            "ru": "Правда? Обычно девушки любят послаще."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ну, я не такая. Крепкий кофе мне нравится больше.",
+            "en": "Well, I'm not like that. I like strong coffee more.",
+            "es": "Bueno, yo no soy así. El café fuerte me gusta más.",
+            "fr": "Eh bien, je ne suis pas comme ça. J'aime davantage le café fort.",
+            "pt": "Bom, eu não sou assim. Café forte eu gosto mais.",
+            "kr": "글쎄, 나는 그런 편이 아니야. 진한 커피가 더 좋아.",
+            "jp": "まあ、私はそうじゃないから。濃いコーヒーの方が好きなの。",
+            "zh": "嗯，我不是那样的。我更喜欢浓咖啡。",
+            "ru": "Ну, я не такая. Крепкий кофе мне нравится больше."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда в следующий раз угощу тебя отличным чёрным кофе.",
+            "en": "Then next time I'll treat you to some great black coffee.",
+            "es": "Entonces la próxima vez te invito a un café solo excelente.",
+            "fr": "Alors, la prochaine fois, je t'offre un excellent café noir.",
+            "pt": "Então da próxima vez eu te pago um ótimo café preto.",
+            "kr": "그럼 다음에는 훌륭한 블랙 커피를 한 잔 사 줄게.",
+            "jp": "じゃあ、今度はいいブラックコーヒーをごちそうするよ。",
+            "zh": "那下次我请你喝一杯很棒的黑咖啡。",
+            "ru": "Тогда в следующий раз угощу тебя отличным чёрным кофе."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты больше любишь кино или театр?",
+            "en": "Dmitry, do you like movies or theater more?",
+            "es": "Dmitri, ¿te gusta más el cine o el teatro?",
+            "fr": "Dimitri, tu aimes plus le cinéma ou le théâtre ?",
+            "pt": "Dmitri, você gosta mais de cinema ou de teatro?",
+            "kr": "드미트리, 너는 영화를 더 좋아해, 아니면 연극?",
+            "jp": "ドミトリー、君は映画と演劇、どっちが好き？",
+            "zh": "德米特里，你更喜欢电影还是戏剧？",
+            "ru": "Дмитрий, ты больше любишь кино или театр?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Наверное, театр. Живая игра актёров мне нравится больше.",
+            "en": "Probably theater. I like the actors' live performance more.",
+            "es": "Supongo que el teatro. La actuación en vivo de los actores me gusta más.",
+            "fr": "Probablement le théâtre. Le jeu vivant des acteurs me plaît davantage.",
+            "pt": "Acho que teatro. A atuação ao vivo dos atores me agrada mais.",
+            "kr": "아마 연극일 거야. 배우들의 생생한 연기가 더 좋아.",
+            "jp": "たぶん演劇かな。俳優の生の演技の方が好きなんだ。",
+            "zh": "大概是戏剧吧。演员的现场表演我更喜欢。",
+            "ru": "Наверное, театр. Живая игра актёров мне нравится больше."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ого, неожиданно! А я вот совсем не хожу в театр.",
+            "en": "Wow, unexpected! And I never go to the theater at all.",
+            "es": "¡Vaya, qué sorpresa! Pues yo no voy al teatro casi nada.",
+            "fr": "Oh, c'est inattendu ! Moi, je ne vais pas du tout au théâtre.",
+            "pt": "Nossa, que surpresa! Eu não vou ao teatro de jeito nenhum.",
+            "kr": "와, 의외네! 나는 연극을 전혀 안 가는데.",
+            "jp": "わあ、意外！ 私は全然劇場に行かないんだけど。",
+            "zh": "哦，真没想到！我倒是完全不去剧院。",
+            "ru": "Ого, неожиданно! А я вот совсем не хожу в театр."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Почему? Тебе не нравится?",
+            "en": "Why? Don't you like it?",
+            "es": "¿Por qué? ¿No te gusta?",
+            "fr": "Pourquoi ? Tu n'aimes pas ça ?",
+            "pt": "Por quê? Você não gosta?",
+            "kr": "왜? 안 좋아해?",
+            "jp": "どうして？ 好きじゃないの？",
+            "zh": "为什么？你不喜欢吗？",
+            "ru": "Почему? Тебе не нравится?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне кажется, это скучно и долго.",
+            "en": "I think it's boring and long.",
+            "es": "Me parece aburrido y largo.",
+            "fr": "Je trouve que c'est ennuyeux et long.",
+            "pt": "Acho que é chato e demorado.",
+            "kr": "지루하고 시간도 오래 걸리는 것 같아.",
+            "jp": "退屈で長い気がするの。",
+            "zh": "我觉得又无聊又漫长。",
+            "ru": "Мне кажется, это скучно и долго."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Может, просто ты не видела хороших постановок. Сходим вместе?",
+            "en": "Maybe you just haven't seen good productions. Want to go together?",
+            "es": "Quizás es que no has visto buenas obras. ¿Vamos juntos?",
+            "fr": "C'est peut-être juste que tu n'as pas vu de bonnes pièces. On y va ensemble ?",
+            "pt": "Talvez você só não tenha visto boas peças. Vamos juntos?",
+            "kr": "좋은 공연을 아직 못 봐서 그럴 수도 있지. 같이 갈래?",
+            "jp": "もしかしたら、いい舞台を見たことがないだけかもよ。一緒に行ってみない？",
+            "zh": "也许只是你没看过好的剧目。我们一起去看看？",
+            "ru": "Может, просто ты не видела хороших постановок. Сходим вместе?"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, какую музыку ты обычно слушаешь?",
+            "en": "Sergey, what kind of music do you usually listen to?",
+            "es": "Serguéi, ¿qué música sueles escuchar?",
+            "fr": "Sergueï, quelle musique écoutes-tu d'habitude ?",
+            "pt": "Sergei, que tipo de música você costuma ouvir?",
+            "kr": "세르게이, 너는 보통 어떤 음악을 들어?",
+            "jp": "セルゲイ、普段どんな音楽を聴いてるの？",
+            "zh": "谢尔盖，你平时都听什么音乐？",
+            "ru": "Сергей, какую музыку ты обычно слушаешь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "В основном рок, а ещё иногда классику.",
+            "en": "Mostly rock, and sometimes classical too.",
+            "es": "Sobre todo rock, y a veces también música clásica.",
+            "fr": "Surtout du rock, et parfois aussi de la musique classique.",
+            "pt": "Principalmente rock, e às vezes música clássica também.",
+            "kr": "주로 록이랑, 가끔 클래식도 들어.",
+            "jp": "主にロックだね。あと、たまにクラシックも聴くよ。",
+            "zh": "主要是摇滚，有时候也听古典乐。",
+            "ru": "В основном рок, а ещё иногда классику."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Классику? Вот это неожиданно для рокера.",
+            "en": "Classical? Now that's unexpected for a rocker.",
+            "es": "¿Música clásica? Eso sí que es inesperado para un rockero.",
+            "fr": "De la musique classique ? Ça, c'est inattendu pour un rockeur.",
+            "pt": "Música clássica? Isso é surpreendente para um roqueiro.",
+            "kr": "클래식? 로커한테는 정말 의외인데.",
+            "jp": "クラシック？ それはロッカーとしては意外だね。",
+            "zh": "古典乐？这对一个摇滚乐手来说真没想到。",
+            "ru": "Классику? Вот это неожиданно для рокера."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "А что тебе нравится, Елена?",
+            "en": "And what do you like, Elena?",
+            "es": "¿Y a ti qué te gusta, Elena?",
+            "fr": "Et toi, qu'est-ce que tu aimes, Hélène ?",
+            "pt": "E o que você gosta, Elena?",
+            "kr": "그럼 너는 뭐가 좋아, 옐레나?",
+            "jp": "で、君は何が好きなの、エレーナ？",
+            "zh": "那你喜欢什么，叶莲娜？",
+            "ru": "А что тебе нравится, Елена?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я люблю поп-музыку и джаз.",
+            "en": "I like pop music and jazz.",
+            "es": "Me gusta el pop y el jazz.",
+            "fr": "J'aime la pop et le jazz.",
+            "pt": "Eu gosto de pop e jazz.",
+            "kr": "나는 팝 음악이랑 재즈를 좋아해.",
+            "jp": "私はポップスとジャズが好き。",
+            "zh": "我喜欢流行音乐和爵士乐。",
+            "ru": "Я люблю поп-музыку и джаз."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Джаз — это здорово. Могу посоветовать тебе пару хороших альбомов.",
+            "en": "Jazz is great. I can recommend you a couple of good albums.",
+            "es": "El jazz es genial. Puedo recomendarte un par de buenos álbumes.",
+            "fr": "Le jazz, c'est génial. Je peux te conseiller deux ou trois bons albums.",
+            "pt": "Jazz é ótimo. Posso te recomendar uns bons álbuns.",
+            "kr": "재즈는 정말 좋지. 좋은 앨범 두 개 추천해 줄 수 있어.",
+            "jp": "ジャズはいいよね。いいアルバムを何枚か紹介できるよ。",
+            "zh": "爵士乐很棒。我可以给你推荐几张好专辑。",
+            "ru": "Джаз — это здорово. Могу посоветовать тебе пару хороших альбомов."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, тебе нравится готовить?",
+            "en": "Alexey, do you like cooking?",
+            "es": "Alekséi, ¿te gusta cocinar?",
+            "fr": "Alexeï, tu aimes cuisiner ?",
+            "pt": "Alexei, você gosta de cozinhar?",
+            "kr": "알렉세이, 너는 요리하는 거 좋아해?",
+            "jp": "アレクセイ、料理をするのは好き？",
+            "zh": "阿列克谢，你喜欢做饭吗？",
+            "ru": "Алексей, тебе нравится готовить?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Честно? Не очень. Я больше люблю заказывать еду.",
+            "en": "Honestly? Not really. I prefer ordering food.",
+            "es": "¿Sinceramente? No mucho. Prefiero pedir comida.",
+            "fr": "Honnêtement ? Pas vraiment. Je préfère commander à manger.",
+            "pt": "Sinceramente? Nem tanto. Eu prefiro pedir comida.",
+            "kr": "솔직히? 별로. 나는 음식을 시켜 먹는 걸 더 좋아해.",
+            "jp": "正直？ あまり好きじゃないんだ。どちらかというと出前を頼む方が好きだな。",
+            "zh": "说实话？不太喜欢。我更喜欢点外卖。",
+            "ru": "Честно? Не очень. Я больше люблю заказывать еду."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А я обожаю готовить, особенно десерты.",
+            "en": "And I love cooking, especially desserts.",
+            "es": "Pues a mí me encanta cocinar, sobre todo postres.",
+            "fr": "Moi, j'adore cuisiner, surtout les desserts.",
+            "pt": "Eu adoro cozinhar, principalmente sobremesas.",
+            "kr": "나는 요리하는 걸 엄청 좋아해, 특히 디저트.",
+            "jp": "私は料理が大好きなの。特にデザート作りがね。",
+            "zh": "我特别喜欢做饭，尤其是甜点。",
+            "ru": "А я обожаю готовить, особенно десерты."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Серьёзно? Тогда ты просто мечта, а не девушка.",
+            "en": "Seriously? Then you're a dream girl.",
+            "es": "¿En serio? Entonces eres un sueño hecho realidad.",
+            "fr": "Sérieusement ? Alors tu es un vrai rêve, pas une fille ordinaire.",
+            "pt": "Sério? Então você é um sonho, não uma garota qualquer.",
+            "kr": "진짜? 그럼 너는 정말 꿈같은 여자야.",
+            "jp": "本当？ それなら君は夢のような女性だよ。",
+            "zh": "真的吗？那你简直是梦中情人啊。",
+            "ru": "Серьёзно? Тогда ты просто мечта, а не девушка."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ну, не льсти мне. Лучше скажи, что ты любишь есть.",
+            "en": "Well, don't flatter me. Better tell me what you like to eat.",
+            "es": "Bueno, no me halagues. Mejor dime qué te gusta comer.",
+            "fr": "Bon, ne me fais pas de compliments. Dis-moi plutôt ce que tu aimes manger.",
+            "pt": "Ah, não me bajula. Melhor me dizer o que você gosta de comer.",
+            "kr": "아, 아첨하지 마. 차라리 뭘 먹는 걸 좋아하는지 말해 봐.",
+            "jp": "まあ、お世辞はいいから。何を食べるのが好きか教えてよ。",
+            "zh": "哎呀，别夸我了。还不如说说你喜欢吃什么。",
+            "ru": "Ну, не льсти мне. Лучше скажи, что ты любишь есть."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я люблю мясо и пасту. А сладкое — это по настроению.",
+            "en": "I like meat and pasta. And sweets — depends on my mood.",
+            "es": "Me gusta la carne y la pasta. Y el dulce, según el momento.",
+            "fr": "J'aime la viande et les pâtes. Et le sucré, ça dépend de mon humeur.",
+            "pt": "Eu gosto de carne e massa. E doce, depende do meu humor.",
+            "kr": "나는 고기랑 파스타를 좋아해. 달콤한 건 기분에 따라.",
+            "jp": "肉とパスタが好きだな。甘いものは気分次第かな。",
+            "zh": "我喜欢肉和意大利面。甜食嘛，看心情。",
+            "ru": "Я люблю мясо и пасту. А сладкое — это по настроению."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, ты предпочитаешь отдыхать на море или в горах?",
+            "en": "Olga, do you prefer relaxing at the sea or in the mountains?",
+            "es": "Olga, ¿prefieres descansar en la playa o en la montaña?",
+            "fr": "Olga, tu préfères te reposer à la mer ou à la montagne ?",
+            "pt": "Olga, você prefere descansar no mar ou nas montanhas?",
+            "kr": "올가, 너는 휴가를 바다에서 보내는 걸 좋아해, 아니면 산에서?",
+            "jp": "オリガ、休暇は海と山、どっちがいい？",
+            "zh": "奥尔加，你更喜欢去海边度假还是去山里？",
+            "ru": "Ольга, ты предпочитаешь отдыхать на море или в горах?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "На море, конечно! Люблю тепло и солнце.",
+            "en": "At the sea, of course! I love warmth and sun.",
+            "es": "¡En la playa, claro! Me gusta el calor y el sol.",
+            "fr": "À la mer, bien sûr ! J'aime la chaleur et le soleil.",
+            "pt": "No mar, claro! Adoro calor e sol.",
+            "kr": "당연히 바다지! 따뜻함과 햇살을 좋아해.",
+            "jp": "もちろん海！ 暖かさと太陽が好きなの。",
+            "zh": "当然是海边！我喜欢温暖和阳光。",
+            "ru": "На море, конечно! Люблю тепло и солнце."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А мне горы ближе. Там свежий воздух и тишина.",
+            "en": "And I'm closer to the mountains. There's fresh air and silence there.",
+            "es": "Pues a mí me atrae más la montaña. Allí hay aire fresco y silencio.",
+            "fr": "Moi, la montagne me convient mieux. Là-bas, l'air est frais et c'est calme.",
+            "pt": "Eu prefiro as montanhas. Lá tem ar puro e silêncio.",
+            "kr": "나는 산이 더 좋아. 거기는 공기도 맑고 조용하잖아.",
+            "jp": "僕は山の方が合ってるな。新鮮な空気と静けさがあるから。",
+            "zh": "我更喜欢山。那里空气新鲜又安静。",
+            "ru": "А мне горы ближе. Там свежий воздух и тишина."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Но на море тоже тихо, особенно вечером.",
+            "en": "But it's quiet at the sea too, especially in the evening.",
+            "es": "Pero en la playa también hay silencio, sobre todo por la tarde.",
+            "fr": "Mais à la mer, c'est aussi calme, surtout le soir.",
+            "pt": "Mas no mar também é tranquilo, principalmente à noite.",
+            "kr": "그런데 바다도 조용해, 특히 저녁에는.",
+            "jp": "でも海も静かだよ。特に夕方はね。",
+            "zh": "但是海边也很安静，尤其是傍晚的时候。",
+            "ru": "Но на море тоже тихо, особенно вечером."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Согласен, но горы мне всё равно нравятся больше.",
+            "en": "I agree, but I still like the mountains more.",
+            "es": "De acuerdo, pero la montaña me gusta más igualmente.",
+            "fr": "Je suis d'accord, mais je préfère quand même la montagne.",
+            "pt": "Concordo, mas eu ainda gosto mais das montanhas.",
+            "kr": "인정하지만, 그래도 나는 산이 더 좋아.",
+            "jp": "それは同意するけど、やっぱり山の方が好きだな。",
+            "zh": "同意，但我还是更喜欢山。",
+            "ru": "Согласен, но горы мне всё равно нравятся больше."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ладно, в отпуск поедем по очереди: сначала море, потом горы.",
+            "en": "Fine, on vacation we'll go one at a time: first the sea, then the mountains.",
+            "es": "Vale, de vacaciones iremos por turnos: primero la playa, luego la montaña.",
+            "fr": "D'accord, pour les vacances, on y va à tour de rôle : d'abord la mer, ensuite la montagne.",
+            "pt": "Tá bom, nas férias a gente vai alternando: primeiro o mar, depois as montanhas.",
+            "kr": "좋아, 휴가는 번갈아 가자: 먼저 바다, 그다음 산.",
+            "jp": "わかった、休暇は交代で行こう：最初は海、次は山ね。",
+            "zh": "好吧，那咱们度假就轮流去：先去海边，再去山里。",
+            "ru": "Ладно, в отпуск поедем по очереди: сначала море, потом горы."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, ты любишь читать книги или смотреть сериалы?",
+            "en": "Maria, do you like reading books or watching TV series?",
+            "es": "María, ¿te gusta leer libros o ver series?",
+            "fr": "Maria, tu aimes lire des livres ou regarder des séries ?",
+            "pt": "Maria, você gosta de ler livros ou de assistir séries?",
+            "kr": "마리야, 너는 책 읽는 걸 좋아해, 아니면 드라마 보는 걸?",
+            "jp": "マリア、本を読むのとドラマを見るの、どっちが好き？",
+            "zh": "玛丽亚，你喜欢看书还是看电视剧？",
+            "ru": "Мария, ты любишь читать книги или смотреть сериалы?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Раньше я много читала, а теперь всё больше сериалы смотрю.",
+            "en": "I used to read a lot, but now I watch more and more series.",
+            "es": "Antes leía mucho, pero ahora veo cada vez más series.",
+            "fr": "Avant, je lisais beaucoup, mais maintenant je regarde de plus en plus de séries.",
+            "pt": "Antes eu lia muito, mas agora assisto cada vez mais séries.",
+            "kr": "예전에는 책을 많이 읽었는데, 이제는 점점 더 드라마를 봐.",
+            "jp": "昔はたくさん読んでたけど、今はどんどんドラマを見るようになったわ。",
+            "zh": "以前我读很多书，现在越来越常看电视剧了。",
+            "ru": "Раньше я много читала, а теперь всё больше сериалы смотрю."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понимаю, сериалы затягивают. А какие тебе нравятся?",
+            "en": "I get it, series are addictive. And which ones do you like?",
+            "es": "Entiendo, las series enganchan. ¿Y cuáles te gustan?",
+            "fr": "Je comprends, les séries captivent. Et lesquelles tu aimes ?",
+            "pt": "Entendo, as séries viciam. E de quais você gosta?",
+            "kr": "이해해, 드라마는 빠져들게 되잖아. 어떤 장르를 좋아해?",
+            "jp": "わかるよ、ドラマは引き込まれるからね。どんなのが好きなの？",
+            "zh": "我懂，电视剧很吸引人。你喜欢什么样的？",
+            "ru": "Понимаю, сериалы затягивают. А какие тебе нравятся?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Люблю детективы и исторические драмы.",
+            "en": "I like detective stories and historical dramas.",
+            "es": "Me gustan las de detectives y los dramas históricos.",
+            "fr": "J'aime les polars et les drames historiques.",
+            "pt": "Gosto de suspense e dramas históricos.",
+            "kr": "추리물이랑 사극을 좋아해.",
+            "jp": "ミステリーと歴史ドラマが好き。",
+            "zh": "我喜欢侦探片和历史剧。",
+            "ru": "Люблю детективы и исторические драмы."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отличный выбор! А я вот не могу смотреть длинные сериалы.",
+            "en": "Great choice! And I can't watch long series.",
+            "es": "¡Buena elección! Pues yo no puedo ver series largas.",
+            "fr": "Excellent choix ! Moi, je ne peux pas regarder de longues séries.",
+            "pt": "Ótima escolha! Eu não consigo assistir séries longas.",
+            "kr": "훌륭한 선택이야! 나는 긴 드라마는 못 보겠던데.",
+            "jp": "いい選択だね！ 僕は長いドラマは見られないんだ。",
+            "zh": "很好的选择！我就看不了长篇电视剧。",
+            "ru": "Отличный выбор! А я вот не могу смотреть длинные сериалы."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это потому что ты не нашёл свой жанр. Я тебе что-нибудь посоветую.",
+            "en": "That's because you haven't found your genre. I'll recommend you something.",
+            "es": "Eso es porque no has encontrado tu género. Te recomendaré algo.",
+            "fr": "C'est parce que tu n'as pas trouvé ton genre. Je vais te conseiller quelque chose.",
+            "pt": "Isso é porque você ainda não achou seu estilo. Vou te recomendar alguma coisa.",
+            "kr": "그건 네 장르를 아직 못 찾았기 때문이야. 내가 뭔가 추천해 줄게.",
+            "jp": "それはあなたが自分のジャンルを見つけてないからよ。何か紹介してあげる。",
+            "zh": "那是因为你还没找到适合自己的类型。我给你推荐一些。",
+            "ru": "Это потому что ты не нашёл свой жанр. Я тебе что-нибудь посоветую."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, ты больше любишь зиму или лето?",
+            "en": "Anna, do you like winter or summer more?",
+            "es": "Ana, ¿te gusta más el invierno o el verano?",
+            "fr": "Anna, tu aimes plus l'hiver ou l'été ?",
+            "pt": "Anna, você gosta mais do inverno ou do verão?",
+            "kr": "안나, 너는 겨울을 더 좋아해, 아니면 여름?",
+            "jp": "アンナ、冬と夏、どっちが好き？",
+            "zh": "安娜，你更喜欢冬天还是夏天？",
+            "ru": "Анна, ты больше любишь зиму или лето?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Зиму! Люблю снег, катание на коньках и Новый год.",
+            "en": "Winter! I love snow, ice skating, and New Year.",
+            "es": "¡El invierno! Me gusta la nieve, patinar y el Año Nuevo.",
+            "fr": "L'hiver ! J'aime la neige, le patinage et le Nouvel An.",
+            "pt": "Do inverno! Adoro neve, patinação no gelo e o Ano Novo.",
+            "kr": "겨울! 눈이랑 스케이트 타는 거, 그리고 새해를 좋아해.",
+            "jp": "冬！ 雪とスケートとお正月が好きなの。",
+            "zh": "冬天！我喜欢雪、滑冰和新年。",
+            "ru": "Зиму! Люблю снег, катание на коньках и Новый год."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Серьёзно? А я лето люблю, потому что тепло.",
+            "en": "Seriously? And I love summer because it's warm.",
+            "es": "¿En serio? Pues a mí me gusta el verano porque hace calor.",
+            "fr": "Sérieusement ? Moi, j'aime l'été parce qu'il fait chaud.",
+            "pt": "Sério? Eu gosto do verão, porque é quente.",
+            "kr": "진짜? 나는 여름이 좋아, 따뜻하니까.",
+            "jp": "本当？ 僕は暖かいから夏が好きだな。",
+            "zh": "真的吗？我喜欢夏天，因为暖和。",
+            "ru": "Серьёзно? А я лето люблю, потому что тепло."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ну, летом жарко и душно. А зимой красиво.",
+            "en": "Well, in summer it's hot and stuffy. And in winter it's beautiful.",
+            "es": "Bueno, en verano hace calor y es agobiante. En invierno es bonito.",
+            "fr": "Eh bien, en été, il fait chaud et c'est étouffant. Et en hiver, c'est beau.",
+            "pt": "Bom, no verão faz calor e é abafado. E no inverno é bonito.",
+            "kr": "글쎄, 여름은 덥고 답답하잖아. 겨울은 예쁘고.",
+            "jp": "でも夏は暑くて蒸すでしょ。冬はきれいだよ。",
+            "zh": "嗯，夏天又热又闷。冬天多美啊。",
+            "ru": "Ну, летом жарко и душно. А зимой красиво."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спорить не буду, но летом можно купаться.",
+            "en": "I won't argue, but in summer you can swim.",
+            "es": "No voy a discutir, pero en verano se puede nadar.",
+            "fr": "Je ne vais pas discuter, mais en été, on peut se baigner.",
+            "pt": "Não vou discutir, mas no verão dá para nadar.",
+            "kr": "말다툼은 안 할게, 하지만 여름에는 수영할 수 있잖아.",
+            "jp": "議論はしないけど、夏は泳げるからね。",
+            "zh": "我不跟你争，但夏天可以游泳。",
+            "ru": "Спорить не буду, но летом можно купаться."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Зато зимой можно пить горячий шоколад и смотреть на снег.",
+            "en": "But in winter you can drink hot chocolate and watch the snow.",
+            "es": "En cambio, en invierno puedes tomar chocolate caliente y mirar la nieve.",
+            "fr": "En revanche, en hiver, on peut boire du chocolat chaud et regarder la neige.",
+            "pt": "Mas no inverno dá para tomar chocolate quente e ver a neve.",
+            "kr": "그래도 겨울에는 핫초코 마시면서 눈을 볼 수 있잖아.",
+            "jp": "その代わり、冬はホットチョコレートを飲みながら雪を見られるわ。",
+            "zh": "可是冬天可以喝热巧克力，看雪景。",
+            "ru": "Зато зимой можно пить горячий шоколад и смотреть на снег."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, тебе нравится спорт или ты больше по играм?",
+            "en": "Dmitry, do you like sports or are you more into games?",
+            "es": "Dmitri, ¿te gusta el deporte o eres más de juegos?",
+            "fr": "Dimitri, tu aimes le sport ou tu es plutôt jeux vidéo ?",
+            "pt": "Dmitri, você gosta de esportes ou prefere jogos?",
+            "kr": "드미트리, 너는 운동을 좋아해, 아니면 게임을 더 좋아해?",
+            "jp": "ドミトリー、スポーツは好き？ それともゲームの方が好き？",
+            "zh": "德米特里，你喜欢运动还是更喜欢打游戏？",
+            "ru": "Дмитрий, тебе нравится спорт или ты больше по играм?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Раньше я любил футбол, а теперь больше компьютерные игры.",
+            "en": "I used to love football, but now I'm more into computer games.",
+            "es": "Antes me gustaba el fútbol, pero ahora prefiero los videojuegos.",
+            "fr": "Avant, j'aimais le football, mais maintenant, je préfère les jeux vidéo.",
+            "pt": "Antes eu gostava de futebol, mas agora gosto mais de videogames.",
+            "kr": "예전에는 축구를 좋아했는데, 이제는 컴퓨터 게임을 더 좋아해.",
+            "jp": "昔はサッカーが好きだったけど、今はどちらかというとコンピューターゲームだな。",
+            "zh": "以前我喜欢踢足球，现在更喜欢玩电脑游戏。",
+            "ru": "Раньше я любил футбол, а теперь больше компьютерные игры."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно. А я вот люблю плавание и йогу.",
+            "en": "I see. And I love swimming and yoga.",
+            "es": "Entendido. Pues a mí me gusta la natación y el yoga.",
+            "fr": "Je vois. Moi, j'aime la natation et le yoga.",
+            "pt": "Entendi. Eu gosto de natação e ioga.",
+            "kr": "그렇구나. 나는 수영이랑 요가를 좋아해.",
+            "jp": "なるほど。私は水泳とヨガが好きなの。",
+            "zh": "明白了。我喜欢游泳和瑜伽。",
+            "ru": "Понятно. А я вот люблю плавание и йогу."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Йога? Это же скучно, наверное.",
+            "en": "Yoga? That must be boring, I guess.",
+            "es": "¿Yoga? Eso debe ser aburrido, supongo.",
+            "fr": "Le yoga ? C'est ennuyeux, probablement.",
+            "pt": "Ioga? Isso deve ser chato.",
+            "kr": "요가? 그건 좀 지루할 것 같은데.",
+            "jp": "ヨガ？ それは退屈なんじゃないかな。",
+            "zh": "瑜伽？那应该很无聊吧。",
+            "ru": "Йога? Это же скучно, наверное."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Вовсе нет! Она помогает расслабиться и держать себя в форме.",
+            "en": "Not at all! It helps you relax and stay in shape.",
+            "es": "¡Para nada! Ayuda a relajarse y mantenerse en forma.",
+            "fr": "Pas du tout ! Ça aide à se détendre et à rester en forme.",
+            "pt": "De jeito nenhum! Ela ajuda a relaxar e a manter a forma.",
+            "kr": "전혀 아니야! 긴장을 풀고 몸매를 유지하는 데 도움이 돼.",
+            "jp": "全然そんなことないよ！ リラックスできるし、体調も整えられるの。",
+            "zh": "才不是呢！它能帮助放松，还能保持身材。",
+            "ru": "Вовсе нет! Она помогает расслабиться и держать себя в форме."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хм, может, стоит попробовать. Запишешь меня на занятие?",
+            "en": "Hmm, maybe I should try it. Will you sign me up for a class?",
+            "es": "Hmm, quizás debería probarlo. ¿Me apuntas a una clase?",
+            "fr": "Hmm, peut-être que je devrais essayer. Tu m'inscris à un cours ?",
+            "pt": "Hmm, talvez valha a pena tentar. Você me inscreve numa aula?",
+            "kr": "흠, 한번 해볼 만하네. 나 수업 등록해 줄 수 있어?",
+            "jp": "ふむ、試してみる価値はあるかもね。レッスンに申し込んでくれる？",
+            "zh": "嗯，也许值得试试。你能帮我报名上课吗？",
+            "ru": "Хм, может, стоит попробовать. Запишешь меня на занятие?"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты любишь сладкое или солёное?",
+            "en": "Sergey, do you like sweet or salty?",
+            "es": "Serguéi, ¿te gusta lo dulce o lo salado?",
+            "fr": "Sergueï, tu aimes le sucré ou le salé ?",
+            "pt": "Sergei, você gosta do doce ou do salgado?",
+            "kr": "세르게이, 너는 단 음식을 좋아해, 아니면 짠 음식?",
+            "jp": "セルゲイ、甘いものと塩っぱいもの、どっちが好き？",
+            "zh": "谢尔盖，你喜欢吃甜的还是咸的？",
+            "ru": "Сергей, ты любишь сладкое или солёное?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Солёное, конечно. Чипсы, орешки, сыр — это моё.",
+            "en": "Salty, of course. Chips, nuts, cheese — that's my thing.",
+            "es": "Lo salado, claro. Patatas fritas, frutos secos, queso... eso es lo mío.",
+            "fr": "Le salé, bien sûr. Les chips, les noix, le fromage — c'est mon truc.",
+            "pt": "Do salgado, claro. Batata chips, castanhas, queijo — isso é comigo.",
+            "kr": "당연히 짠 음식이지. 과자, 견과류, 치즈 — 그게 내 스타일이야.",
+            "jp": "もちろん塩っぱい方だよ。ポテトチップス、ナッツ、チーズ、これが最高だね。",
+            "zh": "当然是咸的。薯片、坚果、奶酪——都是我的最爱。",
+            "ru": "Солёное, конечно. Чипсы, орешки, сыр — это моё."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А я без сладкого жить не могу.",
+            "en": "And I can't live without sweets.",
+            "es": "Pues yo no puedo vivir sin lo dulce.",
+            "fr": "Moi, je ne peux pas vivre sans sucreries.",
+            "pt": "Eu não consigo viver sem doce.",
+            "kr": "나는 단 음식 없이는 못 살아.",
+            "jp": "私は甘いものなしでは生きていけないわ。",
+            "zh": "我离开甜食就活不了。",
+            "ru": "А я без сладкого жить не могу."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это вредно для фигуры, между прочим.",
+            "en": "That's bad for your figure, by the way.",
+            "es": "Eso es malo para la figura, por cierto.",
+            "fr": "C'est mauvais pour la silhouette, d'ailleurs.",
+            "pt": "Isso faz mal para a silhueta, aliás.",
+            "kr": "그거 몸매에 안 좋은 거야, 참고로.",
+            "jp": "それは体に悪いよ、ところで。",
+            "zh": "顺便说一句，这对身材可不好。",
+            "ru": "Это вредно для фигуры, между прочим."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Знаю, но иногда так хочется чего-нибудь вкусненького.",
+            "en": "I know, but sometimes I just really want something tasty.",
+            "es": "Lo sé, pero a veces me apetece tanto algo rico...",
+            "fr": "Je sais, mais parfois, j'ai tellement envie de quelque chose de bon.",
+            "pt": "Eu sei, mas às vezes dá uma vontade de comer uma coisa gostosa.",
+            "kr": "알아, 하지만 가끔은 맛있는 게 너무 먹고 싶더라고.",
+            "jp": "わかってるけど、たまに何かおいしいものがすごく食べたくなるの。",
+            "zh": "我知道，但有时候就是特别想吃点好吃的。",
+            "ru": "Знаю, но иногда так хочется чего-нибудь вкусненького."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ладно, тогда договоримся: ты угощаешь меня орешками, а я тебя шоколадкой.",
+            "en": "Fine, then let's make a deal: you treat me to nuts, and I'll treat you to a chocolate bar.",
+            "es": "Vale, entonces hagamos un trato: tú me invitas a frutos secos y yo te invito a un chocolate.",
+            "fr": "D'accord, alors on fait un accord : tu m'offres des noix, et moi, je t'offre une tablette de chocolat.",
+            "pt": "Tá bom, então vamos combinar: você me paga umas castanhas, e eu te pago um chocolate.",
+            "kr": "좋아, 그럼 이렇게 하자: 너는 나한테 견과류 쏘고, 나는 너한테 초콜릿 쏠게.",
+            "jp": "わかった、じゃあこうしよう：君がナッツをごちそうしてくれて、僕がチョコレートをごちそうするってことで。",
+            "zh": "好吧，那咱们说好了：你请我吃坚果，我请你吃巧克力。",
+            "ru": "Ладно, тогда договоримся: ты угощаешь меня орешками, а я тебя шоколадкой."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, тебе нравится работать в команде или одной?",
+            "en": "Elena, do you like working in a team or alone?",
+            "es": "Elena, ¿te gusta trabajar en equipo o sola?",
+            "fr": "Hélène, tu aimes travailler en équipe ou seule ?",
+            "pt": "Elena, você gosta de trabalhar em equipe ou sozinha?",
+            "kr": "옐레나, 너는 팀으로 일하는 걸 좋아해, 아니면 혼자?",
+            "jp": "エレーナ、チームで働くのと一人で働くの、どっちが好き？",
+            "zh": "叶莲娜，你喜欢团队合作还是一个人工作？",
+            "ru": "Елена, тебе нравится работать в команде или одной?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мне больше нравится в команде, так веселее.",
+            "en": "I like working in a team more, it's more fun.",
+            "es": "Prefiero trabajar en equipo, es más divertido.",
+            "fr": "Je préfère travailler en équipe, c'est plus amusant.",
+            "pt": "Eu gosto mais em equipe, é mais divertido.",
+            "kr": "나는 팀이 더 좋아, 그게 더 재밌으니까.",
+            "jp": "私はチームの方が好き。その方が楽しいから。",
+            "zh": "我更喜欢团队合作，这样更有意思。",
+            "ru": "Мне больше нравится в команде, так веселее."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А я предпочитаю работать один, чтобы никто не мешал.",
+            "en": "And I prefer working alone so nobody bothers me.",
+            "es": "Pues yo prefiero trabajar solo, para que nadie me moleste.",
+            "fr": "Moi, je préfère travailler seul, pour que personne ne me dérange.",
+            "pt": "Eu prefiro trabalhar sozinho, para ninguém atrapalhar.",
+            "kr": "나는 혼자 일하는 걸 선호해, 아무도 방해하지 않게.",
+            "jp": "僕は一人で働く方がいいな。誰にも邪魔されずにね。",
+            "zh": "我喜欢一个人工作，这样没人打扰。",
+            "ru": "А я предпочитаю работать один, чтобы никто не мешал."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Но вместе можно быстрее справиться с задачей.",
+            "en": "But together you can get the task done faster.",
+            "es": "Pero juntos se puede terminar la tarea más rápido.",
+            "fr": "Mais ensemble, on peut terminer la tâche plus vite.",
+            "pt": "Mas juntos dá para resolver a tarefa mais rápido.",
+            "kr": "하지만 같이 하면 일을 더 빨리 끝낼 수 있잖아.",
+            "jp": "でも一緒なら、もっと早く仕事を終わらせられるよ。",
+            "zh": "但是一起做任务可以更快完成。",
+            "ru": "Но вместе можно быстрее справиться с задачей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это правда, но я люблю делать всё по-своему.",
+            "en": "That's true, but I like doing everything my own way.",
+            "es": "Es verdad, pero me gusta hacerlo todo a mi manera.",
+            "fr": "C'est vrai, mais j'aime faire les choses à ma façon.",
+            "pt": "É verdade, mas eu gosto de fazer tudo do meu jeito.",
+            "kr": "그건 맞아, 하지만 나는 모든 걸 내 방식대로 하는 걸 좋아해.",
+            "jp": "それはそうだけど、自分のやり方で全部やりたいんだ。",
+            "zh": "这倒是真的，但我喜欢按自己的方式来。",
+            "ru": "Это правда, но я люблю делать всё по-своему."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понимаю. Но иногда стоит довериться другим — так интереснее.",
+            "en": "I understand. But sometimes it's worth trusting others — it's more interesting that way.",
+            "es": "Lo entiendo. Pero a veces merece la pena confiar en los demás — así es más interesante.",
+            "fr": "Je comprends. Mais parfois, il faut faire confiance aux autres — c'est plus intéressant.",
+            "pt": "Entendo. Mas às vezes vale a pena confiar nos outros — fica mais interessante.",
+            "kr": "이해해. 하지만 가끔은 다른 사람을 믿어 볼 필요가 있어 — 그게 더 재미있으니까.",
+            "jp": "わかるよ。でも時には他人を信頼するのも大事だよ。その方が面白いから。",
+            "zh": "我理解。但有时候也该相信别人——这样更有趣。",
+            "ru": "Понимаю. Но иногда стоит довериться другим — так интереснее."
+          }
+        }
+      ]
+    }
+  ]
+}

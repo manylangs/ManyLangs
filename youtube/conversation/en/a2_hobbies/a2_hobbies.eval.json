@@ -1,0 +1,71 @@
+{
+  "chapter_id": "conversation_018",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A와 B의 역할이 일관되게 유지됨. A는 취미(그림)를 소개하고, B는 질문과 반응을 통해 대화를 이끌어감. 모든 세트에서 화자 전환이 자연스러움."
+    },
+    "dialogue_function_accuracy": {
+      "score": 9.5,
+      "weight": 10,
+      "notes": "대화의 기능(정보 제공, 질문, 감탄, 제안)이 명확하고 자연스럽게 구현됨. A의 취미 소개 → B의 관심 표현 및 질문 → A의 답변 → B의 제안으로 이어지는 대화 흐름이 기능적으로 정확함."
+    },
+    "spoken_naturalness": {
+      "score": 9.5,
+      "weight": 15,
+      "notes": "대화가 전반적으로 자연스러운 구어체 영어를 사용함. 'That's awesome!', 'Portraits sound tricky', 'Nice.' 등의 표현이 실제 회화에서 자주 쓰이는 자연스러운 표현임. 다만 'Maybe you can show me one of your paintings sometime'은 약간 더 캐주얼하게 표현할 수 있었음."
+    },
+    "register_appropriateness": {
+      "score": 9,
+      "weight": 10,
+      "notes": "친근한 대화체로 적절한 레지스터를 유지함. A2 레벨에 맞게 어휘와 문장 구조가 단순하지만, 'watercolors', 'oils', 'portraits' 등 주제 관련 어휘가 적절히 포함됨. 과도하게 격식 있거나 비격식한 표현 없음."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 오류가 발견되지 않음. 문장 부호, 대문자 사용, 축약형 사용이 모두 정확함. 'I started painting last month, and I love it.' 등 모든 문장이 문법적으로 완전함."
+    },
+    "situational_practicality": {
+      "score": 9.5,
+      "weight": 10,
+      "notes": "취미에 대해 이야기하는 일상적인 상황을 잘 반영함. 그림 그리기, 재료(수채화/유화), 작품 공유 제안 등 실제 대화에서 자주 등장하는 요소를 포함하여 실용성이 높음."
+    },
+    "cultural_neutrality": {
+      "score": 9.5,
+      "weight": 5,
+      "notes": "특정 문화에 치우치지 않는 중립적인 내용으로 구성됨. 그림 그리기라는 보편적인 취미를 다루어 다양한 문화권의 학습자가 공감할 수 있음."
+    },
+    "tts_readiness": {
+      "score": 9,
+      "weight": 5,
+      "notes": "TTS로 읽기에 적합한 문장 구조를 가짐. 다만 'watercolors'와 'oils' 같은 단어는 발음이 명확히 구분되도록 TTS 설정 시 주의가 필요할 수 있음. 전체적으로 짧고 명확한 문장으로 구성됨."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "en 필드가 target 필드와 완전히 일치함. 모든 세트와 라인에서 target과 en이 동일한 문장으로 구성되어 미러 일치도가 완벽함."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "A2 레벨의 회화 교재로서 시중 상위 서비스와 비교해도 손색없는 수준. 자연스러운 대화, 실용적인 주제, 적절한 난이도로 Cambridge English Conversation이나 Duolingo의 유사 레벨 콘텐츠와 경쟁력이 있음."
+    }
+  },
+  "final_score": 94.5,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "상위 10% 수준. 자연스러운 대화 구성과 실용적인 주제 선택, 8개 언어 번역의 정확성으로 시중 주요 서비스 대비 우수한 품질을 보임.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}

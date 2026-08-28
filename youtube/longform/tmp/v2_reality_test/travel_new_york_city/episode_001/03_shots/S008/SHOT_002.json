@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S008",
+  "shot_id": "SHOT_002",
+  "sequence": 2,
+  "duration_seconds": 8.0,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun looking out the window as the train moves and the city skyline gradually appears.",
+  "framing": {
+    "shot_size": "medium",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "city skyline through the window"
+    ]
+  },
+  "camera": {
+    "angle": "profile",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun looks out the window as the train begins to move, watching the city skyline and buildings appear through the window.",
+    "start_state": [
+      "Jieun is seated by the window.",
+      "The train is beginning to move."
+    ],
+    "end_state": [
+      "Jieun is watching the city skyline appear through the window.",
+      "Her expression shows growing excitement."
+    ]
+  },
+  "emotion": {
+    "primary_actor": "excited and amazed",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on Jieun's back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "placed beside Jieun's seat",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L002",
+      "L003"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is seated by the window on the AirTrain.",
+      "Her suitcase is beside her."
+    ],
+    "carry_out": [
+      "Jieun is on the AirTrain heading toward the subway connection.",
+      "She is watching the city appear through the windows.",
+      "She feels a sense of excitement about arriving in Manhattan."
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

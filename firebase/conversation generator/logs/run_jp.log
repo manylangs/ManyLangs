@@ -1,0 +1,2482 @@
+=== jp: target 생성 (1-60) ===
+[준비 완료] target_lang=jp -- GENERATOR_JP.md 로드됨 (6994 bytes)
+
+[target] batch=001 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/001/001-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=002 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/002/002-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=003 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/003/003-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=004 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/004/004-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=005 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/005/005-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=006 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/006/006-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=007 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/007/007-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=008 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/008/008-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=009 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/009/009-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=010 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/010/010-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=011 target_lang=jp -- DeepSeek 호출 중...
+  [파싱 실패] SET 006의 줄 수 오류: 7 (6이어야 함)
+  --- raw response (첫 500자) ---
+LEVEL: a2
+CHAPTER_ID: CONV_JP_SHOPPING
+TITLE: 買い物
+
+SET 001
+A: この服、どう思う？
+B: いいね。色がきれいだね。
+A: 値段はちょっと高いけど。
+B: いくらなの？
+A: 五千円だって。
+B: それなら安い方だよ。
+
+SET 002
+A: すみません、試着してもいいですか？
+B: はい、どうぞ。あちらの更衣室でお願いします。
+A: サイズがちょっと大きいです。
+B: ワンサイズ小さいのをお持ちしましょうか？
+A: お願いします。
+B: 少々お待ちください。
+
+SET 003
+A: この靴、かわいいね。
+B: 本当だね。でも、歩きやすそう？
+A: ちょっと試しに履いてみる。
+B: うん、履いてみたら？
+A: うーん、ちょっと硬いかも。
+B: じゃあ、別のを探そうか。
+
+SET 004
+A: このバッグ、いくらですか？
+B: こちらは八千円になります。
+A: もう少し安くなりませんか？
+B: 申し訳ありません。値引きはしておりません。
+A: そうですか。じゃあ、これでお願いします。
+B: ありがとうございます。お会計はこちらです
+
+[target] batch=012 target_lang=jp -- DeepSeek 호출 중...
+  [파싱 실패] SET 005의 줄 수 오류: 7 (6이어야 함)
+  --- raw response (첫 500자) ---
+LEVEL: a2
+CHAPTER_ID: CONV_JP_TASTES_PREFERENCES
+TITLE: 好みと好き嫌い
+
+SET 001
+A: 翔太さんはどんな音楽が好きですか。
+B: 私はジャズが一番好きです。由紀さんは？
+A: 私はポップスが好きです。特に日本のアーティストが好きです。
+B: いいですね。今度おすすめの曲を教えてください。
+A: もちろんです。翔太さんにもおすすめのジャズを教えてください。
+B: わかりました。楽しみにしています。
+
+SET 002
+A: この料理、どうですか。
+B: とてもおいしいです。特にこの魚がいいですね。
+A: 私も魚は好きですが、このソースはちょっと辛いです。
+B: そうですか。私は辛いものも大好きです。
+A: じゃあ、このお店はぴったりですね。
+B: はい、また来たいです。
+
+SET 003
+A: 休みの日は何をして過ごすのが好きですか。
+B: 私は家で映画を見るのが好きです。由紀さんは？
+A: 私は外に出て散歩するのが好きです。
+B: いいですね。天気のいい日は気持ちがいいですよね。
+A: そうなんです。特に公園を歩くのが好きで
+
+[target] batch=013 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/013/013-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=014 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/014/014-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=015 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/015/015-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=016 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/016/016-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=017 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/017/017-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=018 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/018/018-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=019 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/019/019-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=020 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/020/020-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=021 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/021/021-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=022 target_lang=jp -- DeepSeek 호출 중...
+  [파싱 실패] SET 001의 줄 수 오류: 5 (6이어야 함)
+  --- raw response (첫 500자) ---
+LEVEL: b1
+CHAPTER_ID: CONV_JP_ATTENDING_CLASSES
+TITLE: 授業に出る
+
+SET 001
+A: 翔太くん、今日の授業、もうすぐ始まるよ。
+B: あ、そうだね。急がないと。
+A: どの教室だったっけ？
+B: 三階の一番奥の教室だよ。
+A: ありがとう。一緒に行こう。
+
+SET 002
+A: この授業、いつもより人が多いね。
+B: 本当だね。今日は特別講義だからかな。
+A: なるほど。席、空いてるかな。
+B: 前の方に空いてるよ。
+A: よかった。そこに座ろう。
+
+SET 003
+A: 先生の話、ちょっと難しくない？
+B: うん、少し速い気がするね。
+A: ノート、ちゃんと取れてる？
+B: うーん、半分くらいしか書けてないかも。
+A: あとで見せてもらえると助かるな。
+
+SET 004
+A: 今日の授業、眠くなっちゃった。
+B: わかるよ。昨日あんまり寝てないんでしょ。
+A: そうなんだよね。課題が多くて。
+B: 大変だね。あとでコーヒーでも飲もうか。
+A: いいね。そうしよう。
+
+SET 005
+A: この講義、毎回出席を取るんだね。
+B
+
+[target] batch=023 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/023/023-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=024 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/024/024-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=025 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/025/025-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=026 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/026/026-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=027 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/027/027-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=028 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/028/028-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=029 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/029/029-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=030 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/030/030-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=031 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/031/031-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=032 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/032/032-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=033 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/033/033-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=034 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/034/034-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=035 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/035/035-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=036 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/036/036-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=037 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/037/037-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=038 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/038/038-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=039 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/039/039-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=040 target_lang=jp -- DeepSeek 호출 중...
+  [파싱 실패] SET 005의 줄 수 오류: 7 (6이어야 함)
+  --- raw response (첫 500자) ---
+LEVEL: b2
+CHAPTER_ID: CONV_JP_SNS_ONLINE_COMMUNITIES
+TITLE: SNSとオンラインコミュニティ
+
+SET 001
+A: 翔太くん、新しいSNSのアプリ、もう試した？
+B: うん、先週から使い始めたよ。すごくシンプルで使いやすいね。
+A: 私も気になってるんだ。どんな機能があるの？
+B: 写真を投稿するだけじゃなくて、短い動画も簡単に作れるんだよ。
+A: へえ、それは便利だね。今度教えてくれる？
+B: もちろん、いいよ。一緒にやってみよう。
+
+SET 002
+A: 昨日、オンラインのコミュニティに入ってみたんだけど、ちょっと雰囲気が怖くて。
+B: ああ、やっぱり場所によっては荒れてるところもあるよね。
+A: そうなんだよ。すぐに怒る人がいて、びっくりしちゃった。
+B: そういう時は、静かに抜けるのが一番だと思うよ。
+A: 確かにね。無理して続ける必要はないよね。
+B: うん、自分に合った場所を探せばいいんだよ。
+
+SET 003
+A: この前、SNSで見つけたレシピがすごく美味しかったんだ。
+B: 本当？どんな料理だったの？
+A: 
+
+[target] batch=041 target_lang=jp -- DeepSeek 호출 중...
+  [파싱 실패] SET 010의 줄 수 오류: 7 (6이어야 함)
+  --- raw response (첫 500자) ---
+LEVEL: c1
+CHAPTER_ID: CONV_JP_JOB_INTERVIEW
+TITLE: 就職面接
+
+SET 001
+A: 本日はお時間をいただき、ありがとうございます。
+B: こちらこそ、お越しいただきありがとうございます。まず自己紹介をお願いします。
+A: はい、大学で経済学を専攻しております、佐藤と申します。
+B: なるほど。では、なぜ当社を志望されたのですか。
+A: 御社の海外展開に強く魅力を感じ、ぜひ貢献したいと思いました。
+B: 大変嬉しいです。では、学生時代に力を入れたことを教えてください。
+
+SET 002
+A: 学生時代は、ゼミの活動に最も力を入れておりました。
+B: それはどのような活動だったのですか。
+A: 地域の商店街の活性化について、実際に調査を行い提案しました。
+B: それは貴重な経験ですね。そこで得たものは何ですか。
+A: 人に働きかける力と、最後までやり遂げる責任感です。
+B: 素晴らしいですね。ぜひ当社でも発揮してください。
+
+SET 003
+A: 私の強みは、周囲と協力して物事を進められることです。
+B: 具体的にはどのような場面で発揮さ
+
+[target] batch=042 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/042/042-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=043 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/043/043-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=044 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/044/044-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=045 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/045/045-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=046 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/046/046-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=047 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/047/047-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=048 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/048/048-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=049 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/049/049-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=050 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/050/050-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=051 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/051/051-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=052 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/052/052-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=053 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/053/053-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=054 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/054/054-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=055 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/055/055-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=056 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/056/056-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=057 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/057/057-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=058 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/058/058-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=059 target_lang=jp -- DeepSeek 호출 중...
+  [저장] data_jp/059/059-target.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[target] batch=060 target_lang=jp -- DeepSeek 호출 중...
+  [파싱 실패] SET 002의 줄 수 오류: 5 (6이어야 함)
+  --- raw response (첫 500자) ---
+LEVEL: c2
+CHAPTER_ID: CONV_JP_WORK_CULTURE_ADAPTATION
+TITLE: 職場文化への適応
+
+SET 001
+A: 新しい職場にはもう慣れましたか。
+B: だいぶ慣れましたが、まだ分からないこともあります。
+A: 例えば、どんなことに困っていますか。
+B: 会議の時の発言のタイミングが難しいです。
+A: 確かに、最初は誰もが苦労しますよ。
+B: そう言っていただけると、少し安心します。
+
+SET 002
+A: うちの会社の雰囲気はどう感じますか。
+B: とても真面目で、礼儀正しい人が多いですね。
+A: そうですね。ただ、少し堅苦しいと感じることもあります。
+B: 私も最初はそう思いましたが、慣れてきました。
+A: それは良かったです。何かあれば相談してください。
+
+SET 003
+A: 飲み会には参加しましたか。
+B: はい、先週初めて参加しました。
+A: どうでしたか。楽しめましたか。
+B: はい、普段話せない同僚と話せて良かったです。
+A: 飲み会は情報交換の場でもありますからね。
+B: なるほど、だから大切なんですね。
+
+SET 0
+
+[target 완료] 성공 54건, 실패 6건
+=== jp: target 전체 승격 (검수 생략) ===
+- data_jp/001/001-target.draft.json
+  [승격 완료] 001-target.draft.json -> 001-target.compact.json
+- data_jp/002/002-target.draft.json
+  [승격 완료] 002-target.draft.json -> 002-target.compact.json
+- data_jp/003/003-target.draft.json
+  [승격 완료] 003-target.draft.json -> 003-target.compact.json
+- data_jp/004/004-target.draft.json
+  [승격 완료] 004-target.draft.json -> 004-target.compact.json
+- data_jp/005/005-target.draft.json
+  [승격 완료] 005-target.draft.json -> 005-target.compact.json
+- data_jp/006/006-target.draft.json
+  [승격 완료] 006-target.draft.json -> 006-target.compact.json
+- data_jp/007/007-target.draft.json
+  [승격 완료] 007-target.draft.json -> 007-target.compact.json
+- data_jp/008/008-target.draft.json
+  [승격 완료] 008-target.draft.json -> 008-target.compact.json
+- data_jp/009/009-target.draft.json
+  [승격 완료] 009-target.draft.json -> 009-target.compact.json
+- data_jp/010/010-target.draft.json
+  [승격 완료] 010-target.draft.json -> 010-target.compact.json
+- data_jp/013/013-target.draft.json
+  [승격 완료] 013-target.draft.json -> 013-target.compact.json
+- data_jp/014/014-target.draft.json
+  [승격 완료] 014-target.draft.json -> 014-target.compact.json
+- data_jp/015/015-target.draft.json
+  [승격 완료] 015-target.draft.json -> 015-target.compact.json
+- data_jp/016/016-target.draft.json
+  [승격 완료] 016-target.draft.json -> 016-target.compact.json
+- data_jp/017/017-target.draft.json
+  [승격 완료] 017-target.draft.json -> 017-target.compact.json
+- data_jp/018/018-target.draft.json
+  [승격 완료] 018-target.draft.json -> 018-target.compact.json
+- data_jp/019/019-target.draft.json
+  [승격 완료] 019-target.draft.json -> 019-target.compact.json
+- data_jp/020/020-target.draft.json
+  [승격 완료] 020-target.draft.json -> 020-target.compact.json
+- data_jp/021/021-target.draft.json
+  [승격 완료] 021-target.draft.json -> 021-target.compact.json
+- data_jp/023/023-target.draft.json
+  [승격 완료] 023-target.draft.json -> 023-target.compact.json
+- data_jp/024/024-target.draft.json
+  [승격 완료] 024-target.draft.json -> 024-target.compact.json
+- data_jp/025/025-target.draft.json
+  [승격 완료] 025-target.draft.json -> 025-target.compact.json
+- data_jp/026/026-target.draft.json
+  [승격 완료] 026-target.draft.json -> 026-target.compact.json
+- data_jp/027/027-target.draft.json
+  [승격 완료] 027-target.draft.json -> 027-target.compact.json
+- data_jp/028/028-target.draft.json
+  [승격 완료] 028-target.draft.json -> 028-target.compact.json
+- data_jp/029/029-target.draft.json
+  [승격 완료] 029-target.draft.json -> 029-target.compact.json
+- data_jp/030/030-target.draft.json
+  [승격 완료] 030-target.draft.json -> 030-target.compact.json
+- data_jp/031/031-target.draft.json
+  [승격 완료] 031-target.draft.json -> 031-target.compact.json
+- data_jp/032/032-target.draft.json
+  [승격 완료] 032-target.draft.json -> 032-target.compact.json
+- data_jp/033/033-target.draft.json
+  [승격 완료] 033-target.draft.json -> 033-target.compact.json
+- data_jp/034/034-target.draft.json
+  [승격 완료] 034-target.draft.json -> 034-target.compact.json
+- data_jp/035/035-target.draft.json
+  [승격 완료] 035-target.draft.json -> 035-target.compact.json
+- data_jp/036/036-target.draft.json
+  [승격 완료] 036-target.draft.json -> 036-target.compact.json
+- data_jp/037/037-target.draft.json
+  [승격 완료] 037-target.draft.json -> 037-target.compact.json
+- data_jp/038/038-target.draft.json
+  [승격 완료] 038-target.draft.json -> 038-target.compact.json
+- data_jp/039/039-target.draft.json
+  [승격 완료] 039-target.draft.json -> 039-target.compact.json
+- data_jp/042/042-target.draft.json
+  [승격 완료] 042-target.draft.json -> 042-target.compact.json
+- data_jp/043/043-target.draft.json
+  [승격 완료] 043-target.draft.json -> 043-target.compact.json
+- data_jp/044/044-target.draft.json
+  [승격 완료] 044-target.draft.json -> 044-target.compact.json
+- data_jp/045/045-target.draft.json
+  [승격 완료] 045-target.draft.json -> 045-target.compact.json
+- data_jp/046/046-target.draft.json
+  [승격 완료] 046-target.draft.json -> 046-target.compact.json
+- data_jp/047/047-target.draft.json
+  [승격 완료] 047-target.draft.json -> 047-target.compact.json
+- data_jp/048/048-target.draft.json
+  [승격 완료] 048-target.draft.json -> 048-target.compact.json
+- data_jp/049/049-target.draft.json
+  [승격 완료] 049-target.draft.json -> 049-target.compact.json
+- data_jp/050/050-target.draft.json
+  [승격 완료] 050-target.draft.json -> 050-target.compact.json
+- data_jp/051/051-target.draft.json
+  [승격 완료] 051-target.draft.json -> 051-target.compact.json
+- data_jp/052/052-target.draft.json
+  [승격 완료] 052-target.draft.json -> 052-target.compact.json
+- data_jp/053/053-target.draft.json
+  [승격 완료] 053-target.draft.json -> 053-target.compact.json
+- data_jp/054/054-target.draft.json
+  [승격 완료] 054-target.draft.json -> 054-target.compact.json
+- data_jp/055/055-target.draft.json
+  [승격 완료] 055-target.draft.json -> 055-target.compact.json
+- data_jp/056/056-target.draft.json
+  [승격 완료] 056-target.draft.json -> 056-target.compact.json
+- data_jp/057/057-target.draft.json
+  [승격 완료] 057-target.draft.json -> 057-target.compact.json
+- data_jp/058/058-target.draft.json
+  [승격 완료] 058-target.draft.json -> 058-target.compact.json
+- data_jp/059/059-target.draft.json
+  [승격 완료] 059-target.draft.json -> 059-target.compact.json
+
+총 54개 중 54개 승격, 0개 실패/건너뜀
+=== jp: 번역 8종 생성 (1-60) ===
+[오류] batch 011: target.compact.json 없음 (target 모드를 먼저 실행하세요): data_jp/011/011-target.compact.json
+[오류] batch 012: target.compact.json 없음 (target 모드를 먼저 실행하세요): data_jp/012/012-target.compact.json
+[오류] batch 022: target.compact.json 없음 (target 모드를 먼저 실행하세요): data_jp/022/022-target.compact.json
+[오류] batch 040: target.compact.json 없음 (target 모드를 먼저 실행하세요): data_jp/040/040-target.compact.json
+[오류] batch 041: target.compact.json 없음 (target 모드를 먼저 실행하세요): data_jp/041/041-target.compact.json
+[오류] batch 060: target.compact.json 없음 (target 모드를 먼저 실행하세요): data_jp/060/060-target.compact.json
+
+[translate] batch=001 lang=en -- DeepSeek 호출 중...
+
+[translate] batch=001 lang=pt -- DeepSeek 호출 중...
+
+[translate] batch=001 lang=es -- DeepSeek 호출 중...
+
+[translate] batch=001 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/001/001-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=001 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/001/001-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=001 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/001/001-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=001 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/001/001-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=002 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/001/001-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=002 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/002/002-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=002 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/001/001-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=002 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/001/001-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=002 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/002/002-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=002 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/002/002-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=002 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/002/002-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=003 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/002/002-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=003 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/002/002-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=003 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/003/003-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=003 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/002/002-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=003 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/003/003-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=003 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/003/003-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=003 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/003/003-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=004 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/003/003-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=004 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/003/003-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=004 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/004/004-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=004 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/003/003-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=004 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/004/004-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=004 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/004/004-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=004 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/004/004-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=005 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/004/004-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+  [저장] data_jp/004/004-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=005 lang=es -- DeepSeek 호출 중...
+
+[translate] batch=005 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/004/004-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=005 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/005/005-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=005 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/005/005-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=005 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/005/005-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=005 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/005/005-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+  [저장] data_jp/005/005-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=006 lang=en -- DeepSeek 호출 중...
+
+[translate] batch=006 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/005/005-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=006 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/005/005-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=006 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/006/006-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=006 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/006/006-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=006 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/006/006-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=006 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/006/006-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=007 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/006/006-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=007 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/006/006-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=007 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/006/006-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=007 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/007/007-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=007 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/007/007-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=007 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/007/007-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=007 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/007/007-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=008 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/007/007-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=008 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/007/007-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=008 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/007/007-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=008 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/008/008-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=008 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/008/008-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=008 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/008/008-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=008 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/008/008-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=009 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/008/008-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=009 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/008/008-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=009 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/009/009-en.draft.json  (검수 후 promote_draft.py로 승격 필요)  [저장] data_jp/008/008-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+
+[translate] batch=009 lang=pt -- DeepSeek 호출 중...
+
+[translate] batch=009 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/009/009-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=009 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/009/009-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=009 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/009/009-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=010 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/009/009-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=010 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/009/009-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=010 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/009/009-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=010 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/010/010-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=010 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/010/010-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=010 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/010/010-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=010 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/010/010-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=013 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/010/010-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=013 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/010/010-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=013 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/010/010-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=013 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/013/013-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=013 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/013/013-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=013 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/013/013-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=013 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/013/013-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=014 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/013/013-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=014 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/013/013-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=014 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/014/014-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=014 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/013/013-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=014 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/014/014-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=014 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/014/014-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=014 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/014/014-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=015 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/014/014-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=015 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/014/014-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=015 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/015/015-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=015 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/014/014-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=015 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/015/015-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=015 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/015/015-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=015 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/015/015-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=016 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/015/015-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=016 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/015/015-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=016 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/015/015-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=016 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/016/016-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=016 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/016/016-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=016 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/016/016-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=016 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/016/016-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=017 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/016/016-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=017 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/016/016-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=017 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/017/017-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=017 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/016/016-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=017 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/017/017-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=017 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/017/017-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=017 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/017/017-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=018 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/017/017-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=018 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/017/017-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=018 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/017/017-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=018 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/018/018-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=018 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/018/018-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=018 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/018/018-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=018 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/018/018-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=019 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/018/018-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=019 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/018/018-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=019 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/018/018-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=019 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/019/019-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=019 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/019/019-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=019 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/019/019-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=019 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/019/019-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=020 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/019/019-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=020 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/019/019-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=020 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/020/020-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=020 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/019/019-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=020 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/020/020-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=020 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/020/020-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=020 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/020/020-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=021 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/020/020-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=021 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/020/020-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=021 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/020/020-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=021 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/021/021-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=021 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/021/021-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=021 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/021/021-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=021 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/021/021-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=023 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/021/021-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=023 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/021/021-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=023 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/023/023-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=023 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/021/021-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=023 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/023/023-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=023 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/023/023-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=023 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/023/023-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=024 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/023/023-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=024 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/023/023-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=024 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/024/024-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=024 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/023/023-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=024 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/024/024-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=024 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/024/024-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=024 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/024/024-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=025 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/024/024-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=025 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/024/024-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=025 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/025/025-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=025 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/024/024-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=025 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/025/025-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=025 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/025/025-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=025 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/025/025-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=026 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/025/025-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=026 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/025/025-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=026 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/025/025-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=026 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/026/026-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=026 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/026/026-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=026 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/026/026-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=026 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/026/026-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=027 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/026/026-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=027 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/026/026-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=027 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/026/026-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=027 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/027/027-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=027 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/027/027-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=027 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/027/027-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=027 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/027/027-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+  [저장] data_jp/027/027-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=028 lang=en -- DeepSeek 호출 중...
+[translate] batch=028 lang=es -- DeepSeek 호출 중...
+
+  [저장] data_jp/027/027-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=028 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/027/027-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=028 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/028/028-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=028 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/028/028-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=028 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/028/028-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=028 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/028/028-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=029 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/028/028-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=029 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/028/028-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=029 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/028/028-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=029 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/029/029-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=029 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/029/029-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=029 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/029/029-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=029 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/029/029-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=030 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/029/029-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=030 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/029/029-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=030 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/030/030-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=030 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/029/029-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=030 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/030/030-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=030 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/030/030-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=030 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/030/030-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=031 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/030/030-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=031 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/030/030-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=031 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/030/030-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=031 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/031/031-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=031 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/031/031-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=031 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/031/031-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=031 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/031/031-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=032 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/031/031-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=032 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/031/031-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=032 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/032/032-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=032 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/031/031-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=032 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/032/032-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=032 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/032/032-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=032 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/032/032-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=033 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/032/032-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=033 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/032/032-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=033 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/032/032-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=033 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/033/033-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=033 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/033/033-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=033 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/033/033-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=033 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/033/033-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=034 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/033/033-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=034 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/033/033-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=034 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/033/033-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=034 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/034/034-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=034 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/034/034-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=034 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/034/034-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=034 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/034/034-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=035 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/034/034-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=035 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/034/034-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=035 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/035/035-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=035 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/034/034-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=035 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/035/035-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=035 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/035/035-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=035 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/035/035-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=036 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/035/035-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=036 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/035/035-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=036 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/035/035-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=036 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/036/036-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=036 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/036/036-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=036 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/036/036-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=036 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/036/036-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=037 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/036/036-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=037 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/036/036-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=037 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/036/036-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=037 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/037/037-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=037 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/037/037-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=037 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/037/037-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=037 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/037/037-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=038 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/037/037-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=038 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/037/037-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=038 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/038/038-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=038 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/037/037-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=038 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/038/038-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=038 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/038/038-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=038 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/038/038-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=039 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/038/038-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=039 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/038/038-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=039 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/038/038-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=039 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/039/039-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=039 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/039/039-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=039 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/039/039-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=039 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/039/039-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=042 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/039/039-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=042 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/039/039-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=042 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/042/042-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=042 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/039/039-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=042 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/042/042-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=042 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/042/042-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=042 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/042/042-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=043 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/042/042-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=043 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/042/042-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=043 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/043/043-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=043 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/042/042-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=043 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/043/043-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=043 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/043/043-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=043 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/043/043-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=044 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/043/043-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=044 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/043/043-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=044 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/043/043-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=044 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/044/044-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=044 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/044/044-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=044 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/044/044-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=044 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/044/044-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=045 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/044/044-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=045 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/044/044-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=045 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/044/044-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=045 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/045/045-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=045 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/045/045-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=045 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/045/045-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=045 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/045/045-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=046 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/045/045-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=046 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/045/045-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=046 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/045/045-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=046 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/046/046-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=046 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/046/046-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=046 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/046/046-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=046 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/046/046-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=047 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/046/046-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=047 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/046/046-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=047 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/047/047-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=047 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/046/046-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=047 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/047/047-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=047 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/047/047-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=047 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/047/047-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=048 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/047/047-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=048 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/047/047-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=048 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/048/048-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=048 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/047/047-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=048 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/048/048-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=048 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/048/048-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=048 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/048/048-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=049 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/048/048-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=049 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/048/048-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=049 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/049/049-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=049 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/048/048-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=049 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/049/049-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=049 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/049/049-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=049 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/049/049-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=050 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/049/049-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=050 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/049/049-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=050 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/050/050-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=050 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/049/049-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=050 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/050/050-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=050 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/050/050-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=050 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/050/050-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=051 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/050/050-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=051 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/050/050-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=051 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/050/050-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=051 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/051/051-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=051 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/051/051-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=051 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/051/051-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=051 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/051/051-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=052 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/051/051-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=052 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/051/051-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=052 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/051/051-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=052 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/052/052-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=052 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/052/052-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=052 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/052/052-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=052 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/052/052-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=053 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/052/052-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=053 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/052/052-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=053 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/053/053-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=053 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/052/052-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=053 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/053/053-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=053 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/053/053-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=053 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/053/053-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=054 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/053/053-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=054 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/053/053-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=054 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/053/053-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=054 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/054/054-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=054 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/054/054-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=054 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/054/054-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=054 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/054/054-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=055 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/054/054-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=055 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/054/054-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=055 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/054/054-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=055 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/055/055-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=055 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/055/055-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=055 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/055/055-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=055 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/055/055-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=056 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/055/055-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=056 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/055/055-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=056 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/055/055-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=056 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/056/056-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=056 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/056/056-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=056 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/056/056-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=056 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/056/056-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=057 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/056/056-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=057 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/056/056-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=057 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/057/057-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=057 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/056/056-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=057 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/057/057-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=057 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/057/057-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=057 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/057/057-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=058 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/057/057-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=058 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/057/057-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=058 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/058/058-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=058 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/057/057-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=058 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/058/058-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=058 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/058/058-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=058 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/058/058-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=059 lang=en -- DeepSeek 호출 중...
+  [저장] data_jp/058/058-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=059 lang=es -- DeepSeek 호출 중...
+  [저장] data_jp/058/058-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=059 lang=fr -- DeepSeek 호출 중...
+  [저장] data_jp/058/058-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=059 lang=pt -- DeepSeek 호출 중...
+  [저장] data_jp/059/059-en.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=059 lang=kr -- DeepSeek 호출 중...
+  [저장] data_jp/059/059-es.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=059 lang=zh -- DeepSeek 호출 중...
+  [저장] data_jp/059/059-fr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate] batch=059 lang=ru -- DeepSeek 호출 중...
+  [저장] data_jp/059/059-pt.draft.json  (검수 후 promote_draft.py로 승격 필요)
+  [저장] data_jp/059/059-zh.draft.json  (검수 후 promote_draft.py로 승격 필요)
+  [저장] data_jp/059/059-kr.draft.json  (검수 후 promote_draft.py로 승격 필요)
+  [저장] data_jp/059/059-ru.draft.json  (검수 후 promote_draft.py로 승격 필요)
+
+[translate 완료] 성공 378건, 실패 0건
+=== jp: 번역 전체 승격 (검수 생략) ===
+- data_jp/001/001-en.draft.json
+  [승격 완료] 001-en.draft.json -> 001-en.compact.json
+- data_jp/001/001-es.draft.json
+  [승격 완료] 001-es.draft.json -> 001-es.compact.json
+- data_jp/001/001-fr.draft.json
+  [승격 완료] 001-fr.draft.json -> 001-fr.compact.json
+- data_jp/001/001-kr.draft.json
+  [승격 완료] 001-kr.draft.json -> 001-kr.compact.json
+- data_jp/001/001-pt.draft.json
+  [승격 완료] 001-pt.draft.json -> 001-pt.compact.json
+- data_jp/001/001-ru.draft.json
+  [승격 완료] 001-ru.draft.json -> 001-ru.compact.json
+- data_jp/001/001-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/001/001-target.compact.json
+- data_jp/001/001-zh.draft.json
+  [승격 완료] 001-zh.draft.json -> 001-zh.compact.json
+- data_jp/002/002-en.draft.json
+  [승격 완료] 002-en.draft.json -> 002-en.compact.json
+- data_jp/002/002-es.draft.json
+  [승격 완료] 002-es.draft.json -> 002-es.compact.json
+- data_jp/002/002-fr.draft.json
+  [승격 완료] 002-fr.draft.json -> 002-fr.compact.json
+- data_jp/002/002-kr.draft.json
+  [승격 완료] 002-kr.draft.json -> 002-kr.compact.json
+- data_jp/002/002-pt.draft.json
+  [승격 완료] 002-pt.draft.json -> 002-pt.compact.json
+- data_jp/002/002-ru.draft.json
+  [승격 완료] 002-ru.draft.json -> 002-ru.compact.json
+- data_jp/002/002-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/002/002-target.compact.json
+- data_jp/002/002-zh.draft.json
+  [승격 완료] 002-zh.draft.json -> 002-zh.compact.json
+- data_jp/003/003-en.draft.json
+  [승격 완료] 003-en.draft.json -> 003-en.compact.json
+- data_jp/003/003-es.draft.json
+  [승격 완료] 003-es.draft.json -> 003-es.compact.json
+- data_jp/003/003-fr.draft.json
+  [승격 완료] 003-fr.draft.json -> 003-fr.compact.json
+- data_jp/003/003-kr.draft.json
+  [승격 완료] 003-kr.draft.json -> 003-kr.compact.json
+- data_jp/003/003-pt.draft.json
+  [승격 완료] 003-pt.draft.json -> 003-pt.compact.json
+- data_jp/003/003-ru.draft.json
+  [승격 완료] 003-ru.draft.json -> 003-ru.compact.json
+- data_jp/003/003-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/003/003-target.compact.json
+- data_jp/003/003-zh.draft.json
+  [승격 완료] 003-zh.draft.json -> 003-zh.compact.json
+- data_jp/004/004-en.draft.json
+  [승격 완료] 004-en.draft.json -> 004-en.compact.json
+- data_jp/004/004-es.draft.json
+  [승격 완료] 004-es.draft.json -> 004-es.compact.json
+- data_jp/004/004-fr.draft.json
+  [승격 완료] 004-fr.draft.json -> 004-fr.compact.json
+- data_jp/004/004-kr.draft.json
+  [승격 완료] 004-kr.draft.json -> 004-kr.compact.json
+- data_jp/004/004-pt.draft.json
+  [승격 완료] 004-pt.draft.json -> 004-pt.compact.json
+- data_jp/004/004-ru.draft.json
+  [승격 완료] 004-ru.draft.json -> 004-ru.compact.json
+- data_jp/004/004-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/004/004-target.compact.json
+- data_jp/004/004-zh.draft.json
+  [승격 완료] 004-zh.draft.json -> 004-zh.compact.json
+- data_jp/005/005-en.draft.json
+  [승격 완료] 005-en.draft.json -> 005-en.compact.json
+- data_jp/005/005-es.draft.json
+  [승격 완료] 005-es.draft.json -> 005-es.compact.json
+- data_jp/005/005-fr.draft.json
+  [승격 완료] 005-fr.draft.json -> 005-fr.compact.json
+- data_jp/005/005-kr.draft.json
+  [승격 완료] 005-kr.draft.json -> 005-kr.compact.json
+- data_jp/005/005-pt.draft.json
+  [승격 완료] 005-pt.draft.json -> 005-pt.compact.json
+- data_jp/005/005-ru.draft.json
+  [승격 완료] 005-ru.draft.json -> 005-ru.compact.json
+- data_jp/005/005-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/005/005-target.compact.json
+- data_jp/005/005-zh.draft.json
+  [승격 완료] 005-zh.draft.json -> 005-zh.compact.json
+- data_jp/006/006-en.draft.json
+  [승격 완료] 006-en.draft.json -> 006-en.compact.json
+- data_jp/006/006-es.draft.json
+  [승격 완료] 006-es.draft.json -> 006-es.compact.json
+- data_jp/006/006-fr.draft.json
+  [승격 완료] 006-fr.draft.json -> 006-fr.compact.json
+- data_jp/006/006-kr.draft.json
+  [승격 완료] 006-kr.draft.json -> 006-kr.compact.json
+- data_jp/006/006-pt.draft.json
+  [승격 완료] 006-pt.draft.json -> 006-pt.compact.json
+- data_jp/006/006-ru.draft.json
+  [승격 완료] 006-ru.draft.json -> 006-ru.compact.json
+- data_jp/006/006-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/006/006-target.compact.json
+- data_jp/006/006-zh.draft.json
+  [승격 완료] 006-zh.draft.json -> 006-zh.compact.json
+- data_jp/007/007-en.draft.json
+  [승격 완료] 007-en.draft.json -> 007-en.compact.json
+- data_jp/007/007-es.draft.json
+  [승격 완료] 007-es.draft.json -> 007-es.compact.json
+- data_jp/007/007-fr.draft.json
+  [승격 완료] 007-fr.draft.json -> 007-fr.compact.json
+- data_jp/007/007-kr.draft.json
+  [승격 완료] 007-kr.draft.json -> 007-kr.compact.json
+- data_jp/007/007-pt.draft.json
+  [승격 완료] 007-pt.draft.json -> 007-pt.compact.json
+- data_jp/007/007-ru.draft.json
+  [승격 완료] 007-ru.draft.json -> 007-ru.compact.json
+- data_jp/007/007-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/007/007-target.compact.json
+- data_jp/007/007-zh.draft.json
+  [승격 완료] 007-zh.draft.json -> 007-zh.compact.json
+- data_jp/008/008-en.draft.json
+  [승격 완료] 008-en.draft.json -> 008-en.compact.json
+- data_jp/008/008-es.draft.json
+  [승격 완료] 008-es.draft.json -> 008-es.compact.json
+- data_jp/008/008-fr.draft.json
+  [승격 완료] 008-fr.draft.json -> 008-fr.compact.json
+- data_jp/008/008-kr.draft.json
+  [승격 완료] 008-kr.draft.json -> 008-kr.compact.json
+- data_jp/008/008-pt.draft.json
+  [승격 완료] 008-pt.draft.json -> 008-pt.compact.json
+- data_jp/008/008-ru.draft.json
+  [승격 완료] 008-ru.draft.json -> 008-ru.compact.json
+- data_jp/008/008-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/008/008-target.compact.json
+- data_jp/008/008-zh.draft.json
+  [승격 완료] 008-zh.draft.json -> 008-zh.compact.json
+- data_jp/009/009-en.draft.json
+  [승격 완료] 009-en.draft.json -> 009-en.compact.json
+- data_jp/009/009-es.draft.json
+  [승격 완료] 009-es.draft.json -> 009-es.compact.json
+- data_jp/009/009-fr.draft.json
+  [승격 완료] 009-fr.draft.json -> 009-fr.compact.json
+- data_jp/009/009-kr.draft.json
+  [승격 완료] 009-kr.draft.json -> 009-kr.compact.json
+- data_jp/009/009-pt.draft.json
+  [승격 완료] 009-pt.draft.json -> 009-pt.compact.json
+- data_jp/009/009-ru.draft.json
+  [승격 완료] 009-ru.draft.json -> 009-ru.compact.json
+- data_jp/009/009-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/009/009-target.compact.json
+- data_jp/009/009-zh.draft.json
+  [승격 완료] 009-zh.draft.json -> 009-zh.compact.json
+- data_jp/010/010-en.draft.json
+  [승격 완료] 010-en.draft.json -> 010-en.compact.json
+- data_jp/010/010-es.draft.json
+  [승격 완료] 010-es.draft.json -> 010-es.compact.json
+- data_jp/010/010-fr.draft.json
+  [승격 완료] 010-fr.draft.json -> 010-fr.compact.json
+- data_jp/010/010-kr.draft.json
+  [승격 완료] 010-kr.draft.json -> 010-kr.compact.json
+- data_jp/010/010-pt.draft.json
+  [승격 완료] 010-pt.draft.json -> 010-pt.compact.json
+- data_jp/010/010-ru.draft.json
+  [승격 완료] 010-ru.draft.json -> 010-ru.compact.json
+- data_jp/010/010-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/010/010-target.compact.json
+- data_jp/010/010-zh.draft.json
+  [승격 완료] 010-zh.draft.json -> 010-zh.compact.json
+- data_jp/013/013-en.draft.json
+  [승격 완료] 013-en.draft.json -> 013-en.compact.json
+- data_jp/013/013-es.draft.json
+  [승격 완료] 013-es.draft.json -> 013-es.compact.json
+- data_jp/013/013-fr.draft.json
+  [승격 완료] 013-fr.draft.json -> 013-fr.compact.json
+- data_jp/013/013-kr.draft.json
+  [승격 완료] 013-kr.draft.json -> 013-kr.compact.json
+- data_jp/013/013-pt.draft.json
+  [승격 완료] 013-pt.draft.json -> 013-pt.compact.json
+- data_jp/013/013-ru.draft.json
+  [승격 완료] 013-ru.draft.json -> 013-ru.compact.json
+- data_jp/013/013-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/013/013-target.compact.json
+- data_jp/013/013-zh.draft.json
+  [승격 완료] 013-zh.draft.json -> 013-zh.compact.json
+- data_jp/014/014-en.draft.json
+  [승격 완료] 014-en.draft.json -> 014-en.compact.json
+- data_jp/014/014-es.draft.json
+  [승격 완료] 014-es.draft.json -> 014-es.compact.json
+- data_jp/014/014-fr.draft.json
+  [승격 완료] 014-fr.draft.json -> 014-fr.compact.json
+- data_jp/014/014-kr.draft.json
+  [승격 완료] 014-kr.draft.json -> 014-kr.compact.json
+- data_jp/014/014-pt.draft.json
+  [승격 완료] 014-pt.draft.json -> 014-pt.compact.json
+- data_jp/014/014-ru.draft.json
+  [승격 완료] 014-ru.draft.json -> 014-ru.compact.json
+- data_jp/014/014-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/014/014-target.compact.json
+- data_jp/014/014-zh.draft.json
+  [승격 완료] 014-zh.draft.json -> 014-zh.compact.json
+- data_jp/015/015-en.draft.json
+  [승격 완료] 015-en.draft.json -> 015-en.compact.json
+- data_jp/015/015-es.draft.json
+  [승격 완료] 015-es.draft.json -> 015-es.compact.json
+- data_jp/015/015-fr.draft.json
+  [승격 완료] 015-fr.draft.json -> 015-fr.compact.json
+- data_jp/015/015-kr.draft.json
+  [승격 완료] 015-kr.draft.json -> 015-kr.compact.json
+- data_jp/015/015-pt.draft.json
+  [승격 완료] 015-pt.draft.json -> 015-pt.compact.json
+- data_jp/015/015-ru.draft.json
+  [승격 완료] 015-ru.draft.json -> 015-ru.compact.json
+- data_jp/015/015-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/015/015-target.compact.json
+- data_jp/015/015-zh.draft.json
+  [승격 완료] 015-zh.draft.json -> 015-zh.compact.json
+- data_jp/016/016-en.draft.json
+  [승격 완료] 016-en.draft.json -> 016-en.compact.json
+- data_jp/016/016-es.draft.json
+  [승격 완료] 016-es.draft.json -> 016-es.compact.json
+- data_jp/016/016-fr.draft.json
+  [승격 완료] 016-fr.draft.json -> 016-fr.compact.json
+- data_jp/016/016-kr.draft.json
+  [승격 완료] 016-kr.draft.json -> 016-kr.compact.json
+- data_jp/016/016-pt.draft.json
+  [승격 완료] 016-pt.draft.json -> 016-pt.compact.json
+- data_jp/016/016-ru.draft.json
+  [승격 완료] 016-ru.draft.json -> 016-ru.compact.json
+- data_jp/016/016-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/016/016-target.compact.json
+- data_jp/016/016-zh.draft.json
+  [승격 완료] 016-zh.draft.json -> 016-zh.compact.json
+- data_jp/017/017-en.draft.json
+  [승격 완료] 017-en.draft.json -> 017-en.compact.json
+- data_jp/017/017-es.draft.json
+  [승격 완료] 017-es.draft.json -> 017-es.compact.json
+- data_jp/017/017-fr.draft.json
+  [승격 완료] 017-fr.draft.json -> 017-fr.compact.json
+- data_jp/017/017-kr.draft.json
+  [승격 완료] 017-kr.draft.json -> 017-kr.compact.json
+- data_jp/017/017-pt.draft.json
+  [승격 완료] 017-pt.draft.json -> 017-pt.compact.json
+- data_jp/017/017-ru.draft.json
+  [승격 완료] 017-ru.draft.json -> 017-ru.compact.json
+- data_jp/017/017-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/017/017-target.compact.json
+- data_jp/017/017-zh.draft.json
+  [승격 완료] 017-zh.draft.json -> 017-zh.compact.json
+- data_jp/018/018-en.draft.json
+  [승격 완료] 018-en.draft.json -> 018-en.compact.json
+- data_jp/018/018-es.draft.json
+  [승격 완료] 018-es.draft.json -> 018-es.compact.json
+- data_jp/018/018-fr.draft.json
+  [승격 완료] 018-fr.draft.json -> 018-fr.compact.json
+- data_jp/018/018-kr.draft.json
+  [승격 완료] 018-kr.draft.json -> 018-kr.compact.json
+- data_jp/018/018-pt.draft.json
+  [승격 완료] 018-pt.draft.json -> 018-pt.compact.json
+- data_jp/018/018-ru.draft.json
+  [승격 완료] 018-ru.draft.json -> 018-ru.compact.json
+- data_jp/018/018-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/018/018-target.compact.json
+- data_jp/018/018-zh.draft.json
+  [승격 완료] 018-zh.draft.json -> 018-zh.compact.json
+- data_jp/019/019-en.draft.json
+  [승격 완료] 019-en.draft.json -> 019-en.compact.json
+- data_jp/019/019-es.draft.json
+  [승격 완료] 019-es.draft.json -> 019-es.compact.json
+- data_jp/019/019-fr.draft.json
+  [승격 완료] 019-fr.draft.json -> 019-fr.compact.json
+- data_jp/019/019-kr.draft.json
+  [승격 완료] 019-kr.draft.json -> 019-kr.compact.json
+- data_jp/019/019-pt.draft.json
+  [승격 완료] 019-pt.draft.json -> 019-pt.compact.json
+- data_jp/019/019-ru.draft.json
+  [승격 완료] 019-ru.draft.json -> 019-ru.compact.json
+- data_jp/019/019-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/019/019-target.compact.json
+- data_jp/019/019-zh.draft.json
+  [승격 완료] 019-zh.draft.json -> 019-zh.compact.json
+- data_jp/020/020-en.draft.json
+  [승격 완료] 020-en.draft.json -> 020-en.compact.json
+- data_jp/020/020-es.draft.json
+  [승격 완료] 020-es.draft.json -> 020-es.compact.json
+- data_jp/020/020-fr.draft.json
+  [승격 완료] 020-fr.draft.json -> 020-fr.compact.json
+- data_jp/020/020-kr.draft.json
+  [승격 완료] 020-kr.draft.json -> 020-kr.compact.json
+- data_jp/020/020-pt.draft.json
+  [승격 완료] 020-pt.draft.json -> 020-pt.compact.json
+- data_jp/020/020-ru.draft.json
+  [승격 완료] 020-ru.draft.json -> 020-ru.compact.json
+- data_jp/020/020-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/020/020-target.compact.json
+- data_jp/020/020-zh.draft.json
+  [승격 완료] 020-zh.draft.json -> 020-zh.compact.json
+- data_jp/021/021-en.draft.json
+  [승격 완료] 021-en.draft.json -> 021-en.compact.json
+- data_jp/021/021-es.draft.json
+  [승격 완료] 021-es.draft.json -> 021-es.compact.json
+- data_jp/021/021-fr.draft.json
+  [승격 완료] 021-fr.draft.json -> 021-fr.compact.json
+- data_jp/021/021-kr.draft.json
+  [승격 완료] 021-kr.draft.json -> 021-kr.compact.json
+- data_jp/021/021-pt.draft.json
+  [승격 완료] 021-pt.draft.json -> 021-pt.compact.json
+- data_jp/021/021-ru.draft.json
+  [승격 완료] 021-ru.draft.json -> 021-ru.compact.json
+- data_jp/021/021-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/021/021-target.compact.json
+- data_jp/021/021-zh.draft.json
+  [승격 완료] 021-zh.draft.json -> 021-zh.compact.json
+- data_jp/023/023-en.draft.json
+  [승격 완료] 023-en.draft.json -> 023-en.compact.json
+- data_jp/023/023-es.draft.json
+  [승격 완료] 023-es.draft.json -> 023-es.compact.json
+- data_jp/023/023-fr.draft.json
+  [승격 완료] 023-fr.draft.json -> 023-fr.compact.json
+- data_jp/023/023-kr.draft.json
+  [승격 완료] 023-kr.draft.json -> 023-kr.compact.json
+- data_jp/023/023-pt.draft.json
+  [승격 완료] 023-pt.draft.json -> 023-pt.compact.json
+- data_jp/023/023-ru.draft.json
+  [승격 완료] 023-ru.draft.json -> 023-ru.compact.json
+- data_jp/023/023-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/023/023-target.compact.json
+- data_jp/023/023-zh.draft.json
+  [승격 완료] 023-zh.draft.json -> 023-zh.compact.json
+- data_jp/024/024-en.draft.json
+  [승격 완료] 024-en.draft.json -> 024-en.compact.json
+- data_jp/024/024-es.draft.json
+  [승격 완료] 024-es.draft.json -> 024-es.compact.json
+- data_jp/024/024-fr.draft.json
+  [승격 완료] 024-fr.draft.json -> 024-fr.compact.json
+- data_jp/024/024-kr.draft.json
+  [승격 완료] 024-kr.draft.json -> 024-kr.compact.json
+- data_jp/024/024-pt.draft.json
+  [승격 완료] 024-pt.draft.json -> 024-pt.compact.json
+- data_jp/024/024-ru.draft.json
+  [승격 완료] 024-ru.draft.json -> 024-ru.compact.json
+- data_jp/024/024-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/024/024-target.compact.json
+- data_jp/024/024-zh.draft.json
+  [승격 완료] 024-zh.draft.json -> 024-zh.compact.json
+- data_jp/025/025-en.draft.json
+  [승격 완료] 025-en.draft.json -> 025-en.compact.json
+- data_jp/025/025-es.draft.json
+  [승격 완료] 025-es.draft.json -> 025-es.compact.json
+- data_jp/025/025-fr.draft.json
+  [승격 완료] 025-fr.draft.json -> 025-fr.compact.json
+- data_jp/025/025-kr.draft.json
+  [승격 완료] 025-kr.draft.json -> 025-kr.compact.json
+- data_jp/025/025-pt.draft.json
+  [승격 완료] 025-pt.draft.json -> 025-pt.compact.json
+- data_jp/025/025-ru.draft.json
+  [승격 완료] 025-ru.draft.json -> 025-ru.compact.json
+- data_jp/025/025-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/025/025-target.compact.json
+- data_jp/025/025-zh.draft.json
+  [승격 완료] 025-zh.draft.json -> 025-zh.compact.json
+- data_jp/026/026-en.draft.json
+  [승격 완료] 026-en.draft.json -> 026-en.compact.json
+- data_jp/026/026-es.draft.json
+  [승격 완료] 026-es.draft.json -> 026-es.compact.json
+- data_jp/026/026-fr.draft.json
+  [승격 완료] 026-fr.draft.json -> 026-fr.compact.json
+- data_jp/026/026-kr.draft.json
+  [승격 완료] 026-kr.draft.json -> 026-kr.compact.json
+- data_jp/026/026-pt.draft.json
+  [승격 완료] 026-pt.draft.json -> 026-pt.compact.json
+- data_jp/026/026-ru.draft.json
+  [승격 완료] 026-ru.draft.json -> 026-ru.compact.json
+- data_jp/026/026-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/026/026-target.compact.json
+- data_jp/026/026-zh.draft.json
+  [승격 완료] 026-zh.draft.json -> 026-zh.compact.json
+- data_jp/027/027-en.draft.json
+  [승격 완료] 027-en.draft.json -> 027-en.compact.json
+- data_jp/027/027-es.draft.json
+  [승격 완료] 027-es.draft.json -> 027-es.compact.json
+- data_jp/027/027-fr.draft.json
+  [승격 완료] 027-fr.draft.json -> 027-fr.compact.json
+- data_jp/027/027-kr.draft.json
+  [승격 완료] 027-kr.draft.json -> 027-kr.compact.json
+- data_jp/027/027-pt.draft.json
+  [승격 완료] 027-pt.draft.json -> 027-pt.compact.json
+- data_jp/027/027-ru.draft.json
+  [승격 완료] 027-ru.draft.json -> 027-ru.compact.json
+- data_jp/027/027-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/027/027-target.compact.json
+- data_jp/027/027-zh.draft.json
+  [승격 완료] 027-zh.draft.json -> 027-zh.compact.json
+- data_jp/028/028-en.draft.json
+  [승격 완료] 028-en.draft.json -> 028-en.compact.json
+- data_jp/028/028-es.draft.json
+  [승격 완료] 028-es.draft.json -> 028-es.compact.json
+- data_jp/028/028-fr.draft.json
+  [승격 완료] 028-fr.draft.json -> 028-fr.compact.json
+- data_jp/028/028-kr.draft.json
+  [승격 완료] 028-kr.draft.json -> 028-kr.compact.json
+- data_jp/028/028-pt.draft.json
+  [승격 완료] 028-pt.draft.json -> 028-pt.compact.json
+- data_jp/028/028-ru.draft.json
+  [승격 완료] 028-ru.draft.json -> 028-ru.compact.json
+- data_jp/028/028-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/028/028-target.compact.json
+- data_jp/028/028-zh.draft.json
+  [승격 완료] 028-zh.draft.json -> 028-zh.compact.json
+- data_jp/029/029-en.draft.json
+  [승격 완료] 029-en.draft.json -> 029-en.compact.json
+- data_jp/029/029-es.draft.json
+  [승격 완료] 029-es.draft.json -> 029-es.compact.json
+- data_jp/029/029-fr.draft.json
+  [승격 완료] 029-fr.draft.json -> 029-fr.compact.json
+- data_jp/029/029-kr.draft.json
+  [승격 완료] 029-kr.draft.json -> 029-kr.compact.json
+- data_jp/029/029-pt.draft.json
+  [승격 완료] 029-pt.draft.json -> 029-pt.compact.json
+- data_jp/029/029-ru.draft.json
+  [승격 완료] 029-ru.draft.json -> 029-ru.compact.json
+- data_jp/029/029-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/029/029-target.compact.json
+- data_jp/029/029-zh.draft.json
+  [승격 완료] 029-zh.draft.json -> 029-zh.compact.json
+- data_jp/030/030-en.draft.json
+  [승격 완료] 030-en.draft.json -> 030-en.compact.json
+- data_jp/030/030-es.draft.json
+  [승격 완료] 030-es.draft.json -> 030-es.compact.json
+- data_jp/030/030-fr.draft.json
+  [승격 완료] 030-fr.draft.json -> 030-fr.compact.json
+- data_jp/030/030-kr.draft.json
+  [승격 완료] 030-kr.draft.json -> 030-kr.compact.json
+- data_jp/030/030-pt.draft.json
+  [승격 완료] 030-pt.draft.json -> 030-pt.compact.json
+- data_jp/030/030-ru.draft.json
+  [승격 완료] 030-ru.draft.json -> 030-ru.compact.json
+- data_jp/030/030-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/030/030-target.compact.json
+- data_jp/030/030-zh.draft.json
+  [승격 완료] 030-zh.draft.json -> 030-zh.compact.json
+- data_jp/031/031-en.draft.json
+  [승격 완료] 031-en.draft.json -> 031-en.compact.json
+- data_jp/031/031-es.draft.json
+  [승격 완료] 031-es.draft.json -> 031-es.compact.json
+- data_jp/031/031-fr.draft.json
+  [승격 완료] 031-fr.draft.json -> 031-fr.compact.json
+- data_jp/031/031-kr.draft.json
+  [승격 완료] 031-kr.draft.json -> 031-kr.compact.json
+- data_jp/031/031-pt.draft.json
+  [승격 완료] 031-pt.draft.json -> 031-pt.compact.json
+- data_jp/031/031-ru.draft.json
+  [승격 완료] 031-ru.draft.json -> 031-ru.compact.json
+- data_jp/031/031-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/031/031-target.compact.json
+- data_jp/031/031-zh.draft.json
+  [승격 완료] 031-zh.draft.json -> 031-zh.compact.json
+- data_jp/032/032-en.draft.json
+  [승격 완료] 032-en.draft.json -> 032-en.compact.json
+- data_jp/032/032-es.draft.json
+  [승격 완료] 032-es.draft.json -> 032-es.compact.json
+- data_jp/032/032-fr.draft.json
+  [승격 완료] 032-fr.draft.json -> 032-fr.compact.json
+- data_jp/032/032-kr.draft.json
+  [승격 완료] 032-kr.draft.json -> 032-kr.compact.json
+- data_jp/032/032-pt.draft.json
+  [승격 완료] 032-pt.draft.json -> 032-pt.compact.json
+- data_jp/032/032-ru.draft.json
+  [승격 완료] 032-ru.draft.json -> 032-ru.compact.json
+- data_jp/032/032-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/032/032-target.compact.json
+- data_jp/032/032-zh.draft.json
+  [승격 완료] 032-zh.draft.json -> 032-zh.compact.json
+- data_jp/033/033-en.draft.json
+  [승격 완료] 033-en.draft.json -> 033-en.compact.json
+- data_jp/033/033-es.draft.json
+  [승격 완료] 033-es.draft.json -> 033-es.compact.json
+- data_jp/033/033-fr.draft.json
+  [승격 완료] 033-fr.draft.json -> 033-fr.compact.json
+- data_jp/033/033-kr.draft.json
+  [승격 완료] 033-kr.draft.json -> 033-kr.compact.json
+- data_jp/033/033-pt.draft.json
+  [승격 완료] 033-pt.draft.json -> 033-pt.compact.json
+- data_jp/033/033-ru.draft.json
+  [승격 완료] 033-ru.draft.json -> 033-ru.compact.json
+- data_jp/033/033-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/033/033-target.compact.json
+- data_jp/033/033-zh.draft.json
+  [승격 완료] 033-zh.draft.json -> 033-zh.compact.json
+- data_jp/034/034-en.draft.json
+  [승격 완료] 034-en.draft.json -> 034-en.compact.json
+- data_jp/034/034-es.draft.json
+  [승격 완료] 034-es.draft.json -> 034-es.compact.json
+- data_jp/034/034-fr.draft.json
+  [승격 완료] 034-fr.draft.json -> 034-fr.compact.json
+- data_jp/034/034-kr.draft.json
+  [승격 완료] 034-kr.draft.json -> 034-kr.compact.json
+- data_jp/034/034-pt.draft.json
+  [승격 완료] 034-pt.draft.json -> 034-pt.compact.json
+- data_jp/034/034-ru.draft.json
+  [승격 완료] 034-ru.draft.json -> 034-ru.compact.json
+- data_jp/034/034-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/034/034-target.compact.json
+- data_jp/034/034-zh.draft.json
+  [승격 완료] 034-zh.draft.json -> 034-zh.compact.json
+- data_jp/035/035-en.draft.json
+  [승격 완료] 035-en.draft.json -> 035-en.compact.json
+- data_jp/035/035-es.draft.json
+  [승격 완료] 035-es.draft.json -> 035-es.compact.json
+- data_jp/035/035-fr.draft.json
+  [승격 완료] 035-fr.draft.json -> 035-fr.compact.json
+- data_jp/035/035-kr.draft.json
+  [승격 완료] 035-kr.draft.json -> 035-kr.compact.json
+- data_jp/035/035-pt.draft.json
+  [승격 완료] 035-pt.draft.json -> 035-pt.compact.json
+- data_jp/035/035-ru.draft.json
+  [승격 완료] 035-ru.draft.json -> 035-ru.compact.json
+- data_jp/035/035-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/035/035-target.compact.json
+- data_jp/035/035-zh.draft.json
+  [승격 완료] 035-zh.draft.json -> 035-zh.compact.json
+- data_jp/036/036-en.draft.json
+  [승격 완료] 036-en.draft.json -> 036-en.compact.json
+- data_jp/036/036-es.draft.json
+  [승격 완료] 036-es.draft.json -> 036-es.compact.json
+- data_jp/036/036-fr.draft.json
+  [승격 완료] 036-fr.draft.json -> 036-fr.compact.json
+- data_jp/036/036-kr.draft.json
+  [승격 완료] 036-kr.draft.json -> 036-kr.compact.json
+- data_jp/036/036-pt.draft.json
+  [승격 완료] 036-pt.draft.json -> 036-pt.compact.json
+- data_jp/036/036-ru.draft.json
+  [승격 완료] 036-ru.draft.json -> 036-ru.compact.json
+- data_jp/036/036-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/036/036-target.compact.json
+- data_jp/036/036-zh.draft.json
+  [승격 완료] 036-zh.draft.json -> 036-zh.compact.json
+- data_jp/037/037-en.draft.json
+  [승격 완료] 037-en.draft.json -> 037-en.compact.json
+- data_jp/037/037-es.draft.json
+  [승격 완료] 037-es.draft.json -> 037-es.compact.json
+- data_jp/037/037-fr.draft.json
+  [승격 완료] 037-fr.draft.json -> 037-fr.compact.json
+- data_jp/037/037-kr.draft.json
+  [승격 완료] 037-kr.draft.json -> 037-kr.compact.json
+- data_jp/037/037-pt.draft.json
+  [승격 완료] 037-pt.draft.json -> 037-pt.compact.json
+- data_jp/037/037-ru.draft.json
+  [승격 완료] 037-ru.draft.json -> 037-ru.compact.json
+- data_jp/037/037-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/037/037-target.compact.json
+- data_jp/037/037-zh.draft.json
+  [승격 완료] 037-zh.draft.json -> 037-zh.compact.json
+- data_jp/038/038-en.draft.json
+  [승격 완료] 038-en.draft.json -> 038-en.compact.json
+- data_jp/038/038-es.draft.json
+  [승격 완료] 038-es.draft.json -> 038-es.compact.json
+- data_jp/038/038-fr.draft.json
+  [승격 완료] 038-fr.draft.json -> 038-fr.compact.json
+- data_jp/038/038-kr.draft.json
+  [승격 완료] 038-kr.draft.json -> 038-kr.compact.json
+- data_jp/038/038-pt.draft.json
+  [승격 완료] 038-pt.draft.json -> 038-pt.compact.json
+- data_jp/038/038-ru.draft.json
+  [승격 완료] 038-ru.draft.json -> 038-ru.compact.json
+- data_jp/038/038-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/038/038-target.compact.json
+- data_jp/038/038-zh.draft.json
+  [승격 완료] 038-zh.draft.json -> 038-zh.compact.json
+- data_jp/039/039-en.draft.json
+  [승격 완료] 039-en.draft.json -> 039-en.compact.json
+- data_jp/039/039-es.draft.json
+  [승격 완료] 039-es.draft.json -> 039-es.compact.json
+- data_jp/039/039-fr.draft.json
+  [승격 완료] 039-fr.draft.json -> 039-fr.compact.json
+- data_jp/039/039-kr.draft.json
+  [승격 완료] 039-kr.draft.json -> 039-kr.compact.json
+- data_jp/039/039-pt.draft.json
+  [승격 완료] 039-pt.draft.json -> 039-pt.compact.json
+- data_jp/039/039-ru.draft.json
+  [승격 완료] 039-ru.draft.json -> 039-ru.compact.json
+- data_jp/039/039-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/039/039-target.compact.json
+- data_jp/039/039-zh.draft.json
+  [승격 완료] 039-zh.draft.json -> 039-zh.compact.json
+- data_jp/042/042-en.draft.json
+  [승격 완료] 042-en.draft.json -> 042-en.compact.json
+- data_jp/042/042-es.draft.json
+  [승격 완료] 042-es.draft.json -> 042-es.compact.json
+- data_jp/042/042-fr.draft.json
+  [승격 완료] 042-fr.draft.json -> 042-fr.compact.json
+- data_jp/042/042-kr.draft.json
+  [승격 완료] 042-kr.draft.json -> 042-kr.compact.json
+- data_jp/042/042-pt.draft.json
+  [승격 완료] 042-pt.draft.json -> 042-pt.compact.json
+- data_jp/042/042-ru.draft.json
+  [승격 완료] 042-ru.draft.json -> 042-ru.compact.json
+- data_jp/042/042-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/042/042-target.compact.json
+- data_jp/042/042-zh.draft.json
+  [승격 완료] 042-zh.draft.json -> 042-zh.compact.json
+- data_jp/043/043-en.draft.json
+  [승격 완료] 043-en.draft.json -> 043-en.compact.json
+- data_jp/043/043-es.draft.json
+  [승격 완료] 043-es.draft.json -> 043-es.compact.json
+- data_jp/043/043-fr.draft.json
+  [승격 완료] 043-fr.draft.json -> 043-fr.compact.json
+- data_jp/043/043-kr.draft.json
+  [승격 완료] 043-kr.draft.json -> 043-kr.compact.json
+- data_jp/043/043-pt.draft.json
+  [승격 완료] 043-pt.draft.json -> 043-pt.compact.json
+- data_jp/043/043-ru.draft.json
+  [승격 완료] 043-ru.draft.json -> 043-ru.compact.json
+- data_jp/043/043-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/043/043-target.compact.json
+- data_jp/043/043-zh.draft.json
+  [승격 완료] 043-zh.draft.json -> 043-zh.compact.json
+- data_jp/044/044-en.draft.json
+  [승격 완료] 044-en.draft.json -> 044-en.compact.json
+- data_jp/044/044-es.draft.json
+  [승격 완료] 044-es.draft.json -> 044-es.compact.json
+- data_jp/044/044-fr.draft.json
+  [승격 완료] 044-fr.draft.json -> 044-fr.compact.json
+- data_jp/044/044-kr.draft.json
+  [승격 완료] 044-kr.draft.json -> 044-kr.compact.json
+- data_jp/044/044-pt.draft.json
+  [승격 완료] 044-pt.draft.json -> 044-pt.compact.json
+- data_jp/044/044-ru.draft.json
+  [승격 완료] 044-ru.draft.json -> 044-ru.compact.json
+- data_jp/044/044-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/044/044-target.compact.json
+- data_jp/044/044-zh.draft.json
+  [승격 완료] 044-zh.draft.json -> 044-zh.compact.json
+- data_jp/045/045-en.draft.json
+  [승격 완료] 045-en.draft.json -> 045-en.compact.json
+- data_jp/045/045-es.draft.json
+  [승격 완료] 045-es.draft.json -> 045-es.compact.json
+- data_jp/045/045-fr.draft.json
+  [승격 완료] 045-fr.draft.json -> 045-fr.compact.json
+- data_jp/045/045-kr.draft.json
+  [승격 완료] 045-kr.draft.json -> 045-kr.compact.json
+- data_jp/045/045-pt.draft.json
+  [승격 완료] 045-pt.draft.json -> 045-pt.compact.json
+- data_jp/045/045-ru.draft.json
+  [승격 완료] 045-ru.draft.json -> 045-ru.compact.json
+- data_jp/045/045-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/045/045-target.compact.json
+- data_jp/045/045-zh.draft.json
+  [승격 완료] 045-zh.draft.json -> 045-zh.compact.json
+- data_jp/046/046-en.draft.json
+  [승격 완료] 046-en.draft.json -> 046-en.compact.json
+- data_jp/046/046-es.draft.json
+  [승격 완료] 046-es.draft.json -> 046-es.compact.json
+- data_jp/046/046-fr.draft.json
+  [승격 완료] 046-fr.draft.json -> 046-fr.compact.json
+- data_jp/046/046-kr.draft.json
+  [승격 완료] 046-kr.draft.json -> 046-kr.compact.json
+- data_jp/046/046-pt.draft.json
+  [승격 완료] 046-pt.draft.json -> 046-pt.compact.json
+- data_jp/046/046-ru.draft.json
+  [승격 완료] 046-ru.draft.json -> 046-ru.compact.json
+- data_jp/046/046-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/046/046-target.compact.json
+- data_jp/046/046-zh.draft.json
+  [승격 완료] 046-zh.draft.json -> 046-zh.compact.json
+- data_jp/047/047-en.draft.json
+  [승격 완료] 047-en.draft.json -> 047-en.compact.json
+- data_jp/047/047-es.draft.json
+  [승격 완료] 047-es.draft.json -> 047-es.compact.json
+- data_jp/047/047-fr.draft.json
+  [승격 완료] 047-fr.draft.json -> 047-fr.compact.json
+- data_jp/047/047-kr.draft.json
+  [승격 완료] 047-kr.draft.json -> 047-kr.compact.json
+- data_jp/047/047-pt.draft.json
+  [승격 완료] 047-pt.draft.json -> 047-pt.compact.json
+- data_jp/047/047-ru.draft.json
+  [승격 완료] 047-ru.draft.json -> 047-ru.compact.json
+- data_jp/047/047-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/047/047-target.compact.json
+- data_jp/047/047-zh.draft.json
+  [승격 완료] 047-zh.draft.json -> 047-zh.compact.json
+- data_jp/048/048-en.draft.json
+  [승격 완료] 048-en.draft.json -> 048-en.compact.json
+- data_jp/048/048-es.draft.json
+  [승격 완료] 048-es.draft.json -> 048-es.compact.json
+- data_jp/048/048-fr.draft.json
+  [승격 완료] 048-fr.draft.json -> 048-fr.compact.json
+- data_jp/048/048-kr.draft.json
+  [승격 완료] 048-kr.draft.json -> 048-kr.compact.json
+- data_jp/048/048-pt.draft.json
+  [승격 완료] 048-pt.draft.json -> 048-pt.compact.json
+- data_jp/048/048-ru.draft.json
+  [승격 완료] 048-ru.draft.json -> 048-ru.compact.json
+- data_jp/048/048-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/048/048-target.compact.json
+- data_jp/048/048-zh.draft.json
+  [승격 완료] 048-zh.draft.json -> 048-zh.compact.json
+- data_jp/049/049-en.draft.json
+  [승격 완료] 049-en.draft.json -> 049-en.compact.json
+- data_jp/049/049-es.draft.json
+  [승격 완료] 049-es.draft.json -> 049-es.compact.json
+- data_jp/049/049-fr.draft.json
+  [승격 완료] 049-fr.draft.json -> 049-fr.compact.json
+- data_jp/049/049-kr.draft.json
+  [승격 완료] 049-kr.draft.json -> 049-kr.compact.json
+- data_jp/049/049-pt.draft.json
+  [승격 완료] 049-pt.draft.json -> 049-pt.compact.json
+- data_jp/049/049-ru.draft.json
+  [승격 완료] 049-ru.draft.json -> 049-ru.compact.json
+- data_jp/049/049-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/049/049-target.compact.json
+- data_jp/049/049-zh.draft.json
+  [승격 완료] 049-zh.draft.json -> 049-zh.compact.json
+- data_jp/050/050-en.draft.json
+  [승격 완료] 050-en.draft.json -> 050-en.compact.json
+- data_jp/050/050-es.draft.json
+  [승격 완료] 050-es.draft.json -> 050-es.compact.json
+- data_jp/050/050-fr.draft.json
+  [승격 완료] 050-fr.draft.json -> 050-fr.compact.json
+- data_jp/050/050-kr.draft.json
+  [승격 완료] 050-kr.draft.json -> 050-kr.compact.json
+- data_jp/050/050-pt.draft.json
+  [승격 완료] 050-pt.draft.json -> 050-pt.compact.json
+- data_jp/050/050-ru.draft.json
+  [승격 완료] 050-ru.draft.json -> 050-ru.compact.json
+- data_jp/050/050-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/050/050-target.compact.json
+- data_jp/050/050-zh.draft.json
+  [승격 완료] 050-zh.draft.json -> 050-zh.compact.json
+- data_jp/051/051-en.draft.json
+  [승격 완료] 051-en.draft.json -> 051-en.compact.json
+- data_jp/051/051-es.draft.json
+  [승격 완료] 051-es.draft.json -> 051-es.compact.json
+- data_jp/051/051-fr.draft.json
+  [승격 완료] 051-fr.draft.json -> 051-fr.compact.json
+- data_jp/051/051-kr.draft.json
+  [승격 완료] 051-kr.draft.json -> 051-kr.compact.json
+- data_jp/051/051-pt.draft.json
+  [승격 완료] 051-pt.draft.json -> 051-pt.compact.json
+- data_jp/051/051-ru.draft.json
+  [승격 완료] 051-ru.draft.json -> 051-ru.compact.json
+- data_jp/051/051-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/051/051-target.compact.json
+- data_jp/051/051-zh.draft.json
+  [승격 완료] 051-zh.draft.json -> 051-zh.compact.json
+- data_jp/052/052-en.draft.json
+  [승격 완료] 052-en.draft.json -> 052-en.compact.json
+- data_jp/052/052-es.draft.json
+  [승격 완료] 052-es.draft.json -> 052-es.compact.json
+- data_jp/052/052-fr.draft.json
+  [승격 완료] 052-fr.draft.json -> 052-fr.compact.json
+- data_jp/052/052-kr.draft.json
+  [승격 완료] 052-kr.draft.json -> 052-kr.compact.json
+- data_jp/052/052-pt.draft.json
+  [승격 완료] 052-pt.draft.json -> 052-pt.compact.json
+- data_jp/052/052-ru.draft.json
+  [승격 완료] 052-ru.draft.json -> 052-ru.compact.json
+- data_jp/052/052-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/052/052-target.compact.json
+- data_jp/052/052-zh.draft.json
+  [승격 완료] 052-zh.draft.json -> 052-zh.compact.json
+- data_jp/053/053-en.draft.json
+  [승격 완료] 053-en.draft.json -> 053-en.compact.json
+- data_jp/053/053-es.draft.json
+  [승격 완료] 053-es.draft.json -> 053-es.compact.json
+- data_jp/053/053-fr.draft.json
+  [승격 완료] 053-fr.draft.json -> 053-fr.compact.json
+- data_jp/053/053-kr.draft.json
+  [승격 완료] 053-kr.draft.json -> 053-kr.compact.json
+- data_jp/053/053-pt.draft.json
+  [승격 완료] 053-pt.draft.json -> 053-pt.compact.json
+- data_jp/053/053-ru.draft.json
+  [승격 완료] 053-ru.draft.json -> 053-ru.compact.json
+- data_jp/053/053-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/053/053-target.compact.json
+- data_jp/053/053-zh.draft.json
+  [승격 완료] 053-zh.draft.json -> 053-zh.compact.json
+- data_jp/054/054-en.draft.json
+  [승격 완료] 054-en.draft.json -> 054-en.compact.json
+- data_jp/054/054-es.draft.json
+  [승격 완료] 054-es.draft.json -> 054-es.compact.json
+- data_jp/054/054-fr.draft.json
+  [승격 완료] 054-fr.draft.json -> 054-fr.compact.json
+- data_jp/054/054-kr.draft.json
+  [승격 완료] 054-kr.draft.json -> 054-kr.compact.json
+- data_jp/054/054-pt.draft.json
+  [승격 완료] 054-pt.draft.json -> 054-pt.compact.json
+- data_jp/054/054-ru.draft.json
+  [승격 완료] 054-ru.draft.json -> 054-ru.compact.json
+- data_jp/054/054-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/054/054-target.compact.json
+- data_jp/054/054-zh.draft.json
+  [승격 완료] 054-zh.draft.json -> 054-zh.compact.json
+- data_jp/055/055-en.draft.json
+  [승격 완료] 055-en.draft.json -> 055-en.compact.json
+- data_jp/055/055-es.draft.json
+  [승격 완료] 055-es.draft.json -> 055-es.compact.json
+- data_jp/055/055-fr.draft.json
+  [승격 완료] 055-fr.draft.json -> 055-fr.compact.json
+- data_jp/055/055-kr.draft.json
+  [승격 완료] 055-kr.draft.json -> 055-kr.compact.json
+- data_jp/055/055-pt.draft.json
+  [승격 완료] 055-pt.draft.json -> 055-pt.compact.json
+- data_jp/055/055-ru.draft.json
+  [승격 완료] 055-ru.draft.json -> 055-ru.compact.json
+- data_jp/055/055-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/055/055-target.compact.json
+- data_jp/055/055-zh.draft.json
+  [승격 완료] 055-zh.draft.json -> 055-zh.compact.json
+- data_jp/056/056-en.draft.json
+  [승격 완료] 056-en.draft.json -> 056-en.compact.json
+- data_jp/056/056-es.draft.json
+  [승격 완료] 056-es.draft.json -> 056-es.compact.json
+- data_jp/056/056-fr.draft.json
+  [승격 완료] 056-fr.draft.json -> 056-fr.compact.json
+- data_jp/056/056-kr.draft.json
+  [승격 완료] 056-kr.draft.json -> 056-kr.compact.json
+- data_jp/056/056-pt.draft.json
+  [승격 완료] 056-pt.draft.json -> 056-pt.compact.json
+- data_jp/056/056-ru.draft.json
+  [승격 완료] 056-ru.draft.json -> 056-ru.compact.json
+- data_jp/056/056-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/056/056-target.compact.json
+- data_jp/056/056-zh.draft.json
+  [승격 완료] 056-zh.draft.json -> 056-zh.compact.json
+- data_jp/057/057-en.draft.json
+  [승격 완료] 057-en.draft.json -> 057-en.compact.json
+- data_jp/057/057-es.draft.json
+  [승격 완료] 057-es.draft.json -> 057-es.compact.json
+- data_jp/057/057-fr.draft.json
+  [승격 완료] 057-fr.draft.json -> 057-fr.compact.json
+- data_jp/057/057-kr.draft.json
+  [승격 완료] 057-kr.draft.json -> 057-kr.compact.json
+- data_jp/057/057-pt.draft.json
+  [승격 완료] 057-pt.draft.json -> 057-pt.compact.json
+- data_jp/057/057-ru.draft.json
+  [승격 완료] 057-ru.draft.json -> 057-ru.compact.json
+- data_jp/057/057-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/057/057-target.compact.json
+- data_jp/057/057-zh.draft.json
+  [승격 완료] 057-zh.draft.json -> 057-zh.compact.json
+- data_jp/058/058-en.draft.json
+  [승격 완료] 058-en.draft.json -> 058-en.compact.json
+- data_jp/058/058-es.draft.json
+  [승격 완료] 058-es.draft.json -> 058-es.compact.json
+- data_jp/058/058-fr.draft.json
+  [승격 완료] 058-fr.draft.json -> 058-fr.compact.json
+- data_jp/058/058-kr.draft.json
+  [승격 완료] 058-kr.draft.json -> 058-kr.compact.json
+- data_jp/058/058-pt.draft.json
+  [승격 완료] 058-pt.draft.json -> 058-pt.compact.json
+- data_jp/058/058-ru.draft.json
+  [승격 완료] 058-ru.draft.json -> 058-ru.compact.json
+- data_jp/058/058-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/058/058-target.compact.json
+- data_jp/058/058-zh.draft.json
+  [승격 완료] 058-zh.draft.json -> 058-zh.compact.json
+- data_jp/059/059-en.draft.json
+  [승격 완료] 059-en.draft.json -> 059-en.compact.json
+- data_jp/059/059-es.draft.json
+  [승격 완료] 059-es.draft.json -> 059-es.compact.json
+- data_jp/059/059-fr.draft.json
+  [승격 완료] 059-fr.draft.json -> 059-fr.compact.json
+- data_jp/059/059-kr.draft.json
+  [승격 완료] 059-kr.draft.json -> 059-kr.compact.json
+- data_jp/059/059-pt.draft.json
+  [승격 완료] 059-pt.draft.json -> 059-pt.compact.json
+- data_jp/059/059-ru.draft.json
+  [승격 완료] 059-ru.draft.json -> 059-ru.compact.json
+- data_jp/059/059-target.draft.json
+  [건너뜀] 이미 존재함 (덮어쓰려면 --force): data_jp/059/059-target.compact.json
+- data_jp/059/059-zh.draft.json
+  [승격 완료] 059-zh.draft.json -> 059-zh.compact.json
+
+총 432개 중 378개 승격, 54개 실패/건너뜀

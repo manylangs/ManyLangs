@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S014",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "mode": "monologue",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "b_gender": null,
+  "lines": [
+    {
+      "line_id": "L001",
+      "sequence": 1,
+      "speaker": "A",
+      "text": "This is my stop. I need to get off here."
+    },
+    {
+      "line_id": "L002",
+      "sequence": 2,
+      "speaker": "A",
+      "text": "Wow. The buildings are so tall. This is really Manhattan."
+    },
+    {
+      "line_id": "L003",
+      "sequence": 3,
+      "speaker": "A",
+      "text": "The skyline looks just like in the movies. It's amazing."
+    },
+    {
+      "line_id": "L004",
+      "sequence": 4,
+      "speaker": "A",
+      "text": "I'm finally here. I can't wait to see the hotel."
+    }
+  ],
+  "scene_state": {
+    "location_ref": "LOC_AIRPORT_TRANSIT_001",
+    "carry_in": [
+      "The subway train has resumed moving",
+      "Jieun feels relieved and is now watching for her stop",
+      "She is looking forward to arriving at her hotel"
+    ],
+    "carry_out": [
+      "Jieun has exited the subway station and is now on the streets of Manhattan",
+      "She is seeing the city skyline for the first time",
+      "She feels a sense of awe and excitement"
+    ],
+    "emotion": "awe and excitement"
+  },
+  "validation": {
+    "expected_line_count": 4,
+    "actual_line_count": 4
+  }
+}

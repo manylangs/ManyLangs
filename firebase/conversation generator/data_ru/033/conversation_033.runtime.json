@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b2",
+    "id": "033"
+  },
+  "title": {
+    "target": "Госучреждение",
+    "en": "Government Office",
+    "es": "Oficina gubernamental",
+    "fr": "Administration publique",
+    "pt": "Repartição pública",
+    "kr": "관공서",
+    "jp": "政府機関",
+    "zh": "政府机构",
+    "ru": "Госучреждение"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте, я хотела бы получить справку о регистрации по месту жительства.",
+            "en": "Hello, I would like to get a certificate of registration at my place of residence.",
+            "es": "Hola, quería obtener un certificado de registro en el lugar de residencia.",
+            "fr": "Bonjour, je voudrais obtenir un certificat d'enregistrement à mon lieu de résidence.",
+            "pt": "Olá, eu gostaria de obter um certificado de registro no local de residência.",
+            "kr": "안녕하세요, 저는 거주지 등록 증명서를 받고 싶습니다.",
+            "jp": "こんにちは。住民登録の証明書をいただきたいのですが。",
+            "zh": "您好，我想开一份居住登记证明。",
+            "ru": "Здравствуйте, я хотела бы получить справку о регистрации по месту жительства."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Здравствуйте, для этого нужен паспорт и заявление. Вы заполняли форму на сайте?",
+            "en": "Hello, for that you need your passport and an application. Did you fill out the form on the website?",
+            "es": "Hola, para eso necesitan su pasaporte y una solicitud. ¿Ha rellenado el formulario en la web?",
+            "fr": "Bonjour, pour cela il faut un passeport et une demande. Vous avez rempli le formulaire sur le site ?",
+            "pt": "Olá, para isso é necessário passaporte e requerimento. Você preencheu o formulário no site?",
+            "kr": "안녕하세요, 그러려면 여권과 신청서가 필요합니다. 홈페이지에서 양식을 작성하셨나요?",
+            "jp": "こんにちは。それにはパスポートと申請書が必要です。サイトでフォームはお書きになりましたか？",
+            "zh": "您好，办理这个需要护照和申请表。您在网站上填过表了吗？",
+            "ru": "Здравствуйте, для этого нужен паспорт и заявление. Вы заполняли форму на сайте?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Нет, я не знала, что можно было заполнить её онлайн.",
+            "en": "No, I didn't know you could fill it out online.",
+            "es": "No, no sabía que se podía rellenar en línea.",
+            "fr": "Non, je ne savais pas qu'on pouvait le remplir en ligne.",
+            "pt": "Não, eu não sabia que dava para preencher online.",
+            "kr": "아니요, 온라인으로 작성할 수 있는지 몰랐습니다.",
+            "jp": "いいえ、オンラインで記入できるとは知りませんでした。",
+            "zh": "没有，我不知道可以在网上填写。",
+            "ru": "Нет, я не знала, что можно было заполнить её онлайн."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ничего страшного, я дам вам бланк. Заполните его, пожалуйста.",
+            "en": "No problem, I'll give you a form. Please fill it out.",
+            "es": "No pasa nada, le daré un impreso. Rellénelo, por favor.",
+            "fr": "Ce n'est pas grave, je vais vous donner un formulaire. Remplissez-le, s'il vous plaît.",
+            "pt": "Sem problema, eu vou te dar um formulário. Preencha-o, por favor.",
+            "kr": "괜찮습니다, 제가 양식을 드릴게요. 작성해 주세요.",
+            "jp": "大丈夫ですよ。用紙をお渡ししますので、ご記入ください。",
+            "zh": "没关系，我给您一张表格。请您填一下。",
+            "ru": "Ничего страшного, я дам вам бланк. Заполните его, пожалуйста."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хорошо, а сколько времени это займёт?",
+            "en": "Okay, and how long will it take?",
+            "es": "Vale, ¿y cuánto tiempo tardará?",
+            "fr": "D'accord, et combien de temps cela prendra ?",
+            "pt": "Certo, e quanto tempo vai levar?",
+            "kr": "좋아요, 그런데 시간이 얼마나 걸릴까요?",
+            "jp": "はい、わかりました。どのくらい時間がかかりますか？",
+            "zh": "好的，那需要多长时间？",
+            "ru": "Хорошо, а сколько времени это займёт?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно справка готова в течение трёх рабочих дней.",
+            "en": "Usually the certificate is ready within three business days.",
+            "es": "Normalmente el certificado está listo en un plazo de tres días laborables.",
+            "fr": "En général, le certificat est prêt sous trois jours ouvrables.",
+            "pt": "Normalmente o certificado fica pronto em três dias úteis.",
+            "kr": "보통 증명서는 영업일 기준 3일 안에 준비됩니다.",
+            "jp": "通常、証明書は営業日三日以内に出来上がります。",
+            "zh": "通常三个工作日内证明就能办好。",
+            "ru": "Обычно справка готова в течение трёх рабочих дней."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, я потерял свой паспорт, и мне нужно срочно его восстановить.",
+            "en": "Dmitry, I lost my passport, and I need to get it replaced urgently.",
+            "es": "Dmitri, he perdido mi pasaporte y necesito recuperarlo urgentemente.",
+            "fr": "Dimitri, j'ai perdu mon passeport, et j'ai besoin de le refaire en urgence.",
+            "pt": "Dmitri, eu perdi meu passaporte e preciso restaurá-lo com urgência.",
+            "kr": "드미트리, 저 여권을 잃어버렸는데 빨리 재발급받아야 해요.",
+            "jp": "ドミトリー、パスポートをなくしてしまって、急いで再発行してもらわないといけないんだ。",
+            "zh": "德米特里，我的护照丢了，需要紧急补办。",
+            "ru": "Дмитрий, я потерял свой паспорт, и мне нужно срочно его восстановить."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вам нужно обратиться в миграционный отдел и подать заявление о потере.",
+            "en": "You need to go to the migration department and file a report about the loss.",
+            "es": "Tiene que acudir al departamento de migración y presentar una solicitud por pérdida.",
+            "fr": "Vous devez vous adresser au service des migrations et déposer une déclaration de perte.",
+            "pt": "Você precisa procurar o setor de migração e apresentar um requerimento de perda.",
+            "kr": "출입국 관리 사무소에 가서 분실 신고를 해야 합니다.",
+            "jp": "移民局に行って、紛失の申請を出す必要がありますよ。",
+            "zh": "您需要去移民部门提交一份挂失申请。",
+            "ru": "Вам нужно обратиться в миграционный отдел и подать заявление о потере."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А какие документы мне нужно взять с собой?",
+            "en": "And what documents do I need to bring with me?",
+            "es": "¿Y qué documentos tengo que llevar conmigo?",
+            "fr": "Et quels documents dois-je apporter avec moi ?",
+            "pt": "E quais documentos eu preciso levar comigo?",
+            "kr": "그럼 어떤 서류를 가져가야 하나요?",
+            "jp": "何の書類を持っていけばいいんだ？",
+            "zh": "那我需要带什么证件去？",
+            "ru": "А какие документы мне нужно взять с собой?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Возьмите свидетельство о рождении и две фотографии. И, конечно, заявление.",
+            "en": "Bring your birth certificate and two photos. And, of course, the application.",
+            "es": "Lleve el certificado de nacimiento y dos fotografías. Y, por supuesto, la solicitud.",
+            "fr": "Prenez l'acte de naissance et deux photos. Et, bien sûr, la déclaration.",
+            "pt": "Leve a certidão de nascimento e duas fotos. E, claro, o requerimento.",
+            "kr": "출생 증명서와 사진 두 장을 가져가세요. 그리고 물론 신청서도요.",
+            "jp": "出生証明書と写真を二枚持って行ってください。そしてもちろん、申請書もです。",
+            "zh": "带上出生证明和两张照片。当然，还有申请书。",
+            "ru": "Возьмите свидетельство о рождении и две фотографии. И, конечно, заявление."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно, а это займёт много времени?",
+            "en": "I see, and will it take a lot of time?",
+            "es": "Entendido, ¿y tardará mucho tiempo?",
+            "fr": "Compris, et est-ce que ça prendra beaucoup de temps ?",
+            "pt": "Entendi, e isso vai levar muito tempo?",
+            "kr": "알겠어요, 그런데 시간이 많이 걸릴까요?",
+            "jp": "わかった。時間はたくさんかかるかな？",
+            "zh": "明白了，这会花很长时间吗？",
+            "ru": "Понятно, а это займёт много времени?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Если все документы в порядке, процедура обычно занимает около двух недель.",
+            "en": "If all the documents are in order, the procedure usually takes about two weeks.",
+            "es": "Si todos los documentos están en regla, el procedimiento suele tardar unas dos semanas.",
+            "fr": "Si tous les documents sont en règle, la procédure prend généralement environ deux semaines.",
+            "pt": "Se todos os documentos estiverem em ordem, o procedimento normalmente leva cerca de duas semanas.",
+            "kr": "서류가 모두 정상이라면, 보통 2주 정도 걸립니다.",
+            "jp": "書類がすべて揃っていれば、手続きは通常二週間ほどかかります。",
+            "zh": "如果所有材料都齐全的话，手续通常需要大约两周时间。",
+            "ru": "Если все документы в порядке, процедура обычно занимает около двух недель."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте, я хотел бы продлить регистрацию по месту пребывания.",
+            "en": "Hello, I would like to extend my registration at my place of stay.",
+            "es": "Hola, quería prorrogar el registro en el lugar de estancia.",
+            "fr": "Bonjour, je voudrais prolonger mon enregistrement à mon lieu de séjour.",
+            "pt": "Olá, eu gostaria de prorrogar o registro no local de permanência.",
+            "kr": "안녕하세요, 저는 체류지 등록을 연장하고 싶습니다.",
+            "jp": "こんにちは。一時滞在の登録を延長したいのですが。",
+            "zh": "您好，我想延长临时居住登记。",
+            "ru": "Здравствуйте, я хотел бы продлить регистрацию по месту пребывания."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Здравствуйте, для этого нужен договор аренды и заявление от собственника жилья.",
+            "en": "Hello, for that you need a lease agreement and a statement from the property owner.",
+            "es": "Hola, para eso necesitan un contrato de alquiler y una solicitud del propietario de la vivienda.",
+            "fr": "Bonjour, pour cela il faut un contrat de location et une déclaration du propriétaire du logement.",
+            "pt": "Olá, para isso é necessário contrato de aluguel e requerimento do proprietário do imóvel.",
+            "kr": "안녕하세요, 그러려면 임대 계약서와 집주인의 신청서가 필요합니다.",
+            "jp": "こんにちは。それには賃貸契約書と、住居の所有者からの申請書が必要です。",
+            "zh": "您好，办理这个需要租赁合同和房主出具的证明。",
+            "ru": "Здравствуйте, для этого нужен договор аренды и заявление от собственника жилья."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "У меня есть договор, а собственник сейчас в отпуске.",
+            "en": "I have the agreement, but the owner is on vacation right now.",
+            "es": "Tengo el contrato, pero el propietario está ahora de vacaciones.",
+            "fr": "J'ai le contrat, mais le propriétaire est en vacances actuellement.",
+            "pt": "Eu tenho o contrato, mas o proprietário está de férias agora.",
+            "kr": "계약서는 있는데, 집주인이 지금 휴가 중입니다.",
+            "jp": "契約書はありますが、所有者が今休暇中なんです。",
+            "zh": "我有合同，但房主现在在休假。",
+            "ru": "У меня есть договор, а собственник сейчас в отпуске."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда нужна его нотариально заверенная доверенность на подачу документов.",
+            "en": "Then we need his notarized power of attorney for submitting documents.",
+            "es": "Entonces necesitamos su poder notarial para presentar los documentos.",
+            "fr": "Alors il faut une procuration notariée de sa part pour déposer les documents.",
+            "pt": "Então é necessária uma procuração com firma reconhecida dele para a entrega dos documentos.",
+            "kr": "그렇다면 서류 제출을 위한 공증받은 위임장이 필요합니다.",
+            "jp": "では、書類提出のための公証人による委任状が必要です。",
+            "zh": "那就需要他出具一份经过公证的代办委托书。",
+            "ru": "Тогда нужна его нотариально заверенная доверенность на подачу документов."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно, а если я принесу её завтра?",
+            "en": "I see, and what if I bring it tomorrow?",
+            "es": "Entendido, ¿y si lo traigo mañana?",
+            "fr": "Compris, et si je l'apporte demain ?",
+            "pt": "Entendi, e se eu trouxer amanhã?",
+            "kr": "알겠습니다. 그럼 내일 가져오면 될까요?",
+            "jp": "わかりました。明日持ってきたらどうですか？",
+            "zh": "明白了，那我明天拿来可以吗？",
+            "ru": "Понятно, а если я принесу её завтра?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, конечно, приносите завтра, мы вас примем без очереди.",
+            "en": "Yes, of course, bring it tomorrow, we'll see you without waiting in line.",
+            "es": "Sí, claro, tráigalo mañana, le atenderemos sin hacer cola.",
+            "fr": "Oui, bien sûr, apportez-la demain, nous vous recevrons sans faire la queue.",
+            "pt": "Sim, claro, traga amanhã, nós vamos te atender sem fila.",
+            "kr": "네, 물론입니다. 내일 가져오시면 대기 없이 접수해 드리겠습니다.",
+            "jp": "はい、もちろんです。明日お持ちください。並ばずに受け付けますよ。",
+            "zh": "当然可以，您明天拿来就行，我们不用排队直接给您办。",
+            "ru": "Да, конечно, приносите завтра, мы вас примем без очереди."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Подскажите, пожалуйста, в каком окне можно получить загранпаспорт?",
+            "en": "Could you tell me, please, which window I can get an international passport at?",
+            "es": "Por favor, ¿en qué ventanilla se puede obtener el pasaporte extranjero?",
+            "fr": "Pouvez-vous me dire, s'il vous plaît, à quel guichet on peut obtenir le passeport étranger ?",
+            "pt": "Por favor, me diga em qual guichê posso obter o passaporte internacional?",
+            "kr": "저기, 여권을 받으려면 몇 번 창구로 가야 하나요?",
+            "jp": "すみません、海外渡航用パスポートはどの窓口で受け付けていますか？",
+            "zh": "请问，在哪个窗口可以办理护照？",
+            "ru": "Подскажите, пожалуйста, в каком окне можно получить загранпаспорт?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Загранпаспорт оформляют в окнах с номерами с пятого по восьмое.",
+            "en": "International passports are processed at windows numbered five through eight.",
+            "es": "El pasaporte extranjero se tramita en las ventanillas numeradas del cinco al ocho.",
+            "fr": "Le passeport étranger se fait aux guichets numérotés de cinq à huit.",
+            "pt": "O passaporte internacional é emitido nos guichês de número cinco a oito.",
+            "kr": "해외여권은 5번부터 8번 창구에서 발급합니다.",
+            "jp": "海外渡航用パスポートは、五番から八番の窓口で手続きしています。",
+            "zh": "护照是在五号到八号窗口办理的。",
+            "ru": "Загранпаспорт оформляют в окнах с номерами с пятого по восьмое."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А мне нужно было записаться заранее через портал?",
+            "en": "And did I need to book an appointment in advance through the portal?",
+            "es": "¿Y tenía que haber pedido cita previamente a través del portal?",
+            "fr": "Et il fallait que je prenne rendez-vous à l'avance sur le portail ?",
+            "pt": "E eu precisava ter agendado antes pelo portal?",
+            "kr": "그럼 포털에서 미리 예약해야 했나요?",
+            "jp": "事前にポータルサイトで予約する必要がありましたか？",
+            "zh": "我需要提前通过网站预约吗？",
+            "ru": "А мне нужно было записаться заранее через портал?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, желательно, но если есть свободное время, мы можем принять вас сегодня.",
+            "en": "Yes, it's recommended, but if there's an available slot, we can see you today.",
+            "es": "Sí, es recomendable, pero si hay hueco libre, podemos atenderle hoy.",
+            "fr": "Oui, c'est préférable, mais s'il y a un créneau libre, nous pouvons vous recevoir aujourd'hui.",
+            "pt": "Sim, de preferência, mas se houver horário livre, podemos te atender hoje.",
+            "kr": "네, 예약하는 게 좋지만, 시간이 남는다면 오늘 바로 접수해 드릴 수 있습니다.",
+            "jp": "はい、できればそうしてください。ただ、空きがあれば今日受け付けますよ。",
+            "zh": "是的，最好是预约，但如果有空余时间的话，我们今天也可以受理您的申请。",
+            "ru": "Да, желательно, но если есть свободное время, мы можем принять вас сегодня."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, а какие документы нужны для оформления?",
+            "en": "Great, and what documents are needed for the application?",
+            "es": "Estupendo, ¿y qué documentos se necesitan para el trámite?",
+            "fr": "Parfait, et quels documents sont nécessaires pour la demande ?",
+            "pt": "Ótimo, e quais documentos são necessários para a emissão?",
+            "kr": "좋아요, 그런데 발급에 필요한 서류는 뭔가요?",
+            "jp": "それはいいですね。手続きには何の書類が必要ですか？",
+            "zh": "太好了，那办理需要什么材料？",
+            "ru": "Отлично, а какие документы нужны для оформления?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Паспорт, старая загранка, если есть, и заполненная анкета.",
+            "en": "Your passport, your old international passport if you have one, and a completed application form.",
+            "es": "El pasaporte, el pasaporte extranjero antiguo, si lo tiene, y el formulario cumplimentado.",
+            "fr": "Le passeport, l'ancien passeport étranger s'il existe, et le formulaire rempli.",
+            "pt": "Passaporte, o passaporte internacional antigo, se tiver, e o formulário preenchido.",
+            "kr": "신분증, 기존 여권(있으면), 그리고 작성한 신청서입니다.",
+            "jp": "パスポート、あれば古い海外渡航用パスポート、そして記入済みの申請書です。",
+            "zh": "护照，旧护照（如果有的话），还有填好的申请表。",
+            "ru": "Паспорт, старая загранка, если есть, и заполненная анкета."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте, я хочу подать документы на получение вида на жительство.",
+            "en": "Hello, I want to submit documents to get a residence permit.",
+            "es": "Hola, quiero presentar los documentos para obtener el permiso de residencia.",
+            "fr": "Bonjour, je veux déposer les documents pour obtenir un titre de séjour.",
+            "pt": "Olá, eu quero dar entrada nos documentos para obter a autorização de residência.",
+            "kr": "안녕하세요, 저는 거주 허가를 받기 위해 서류를 제출하려고 합니다.",
+            "jp": "こんにちは。永住許可の申請書類を提出したいのですが。",
+            "zh": "您好，我想提交申请办理居留许可。",
+            "ru": "Здравствуйте, я хочу подать документы на получение вида на жительство."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Здравствуйте, для этого нужен пакет документов, включая медицинскую страховку.",
+            "en": "Hello, for that you need a package of documents, including health insurance.",
+            "es": "Hola, para eso necesita un paquete de documentos, incluido el seguro médico.",
+            "fr": "Bonjour, pour cela il faut un dossier complet, y compris l'assurance maladie.",
+            "pt": "Olá, para isso é necessário um pacote de documentos, incluindo o seguro de saúde.",
+            "kr": "안녕하세요, 그러려면 의료 보험을 포함한 서류 묶음이 필요합니다.",
+            "jp": "こんにちは。それには医療保険を含む書類一式が必要です。",
+            "zh": "您好，办理这个需要一整套材料，包括医疗保险。",
+            "ru": "Здравствуйте, для этого нужен пакет документов, включая медицинскую страховку."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я подготовила все документы, кроме справки о доходах.",
+            "en": "I've prepared all the documents, except for the income statement.",
+            "es": "He preparado todos los documentos, excepto el certificado de ingresos.",
+            "fr": "J'ai préparé tous les documents, sauf l'attestation de revenus.",
+            "pt": "Eu preparei todos os documentos, exceto o comprovante de renda.",
+            "kr": "저는 소득 증명서를 제외한 모든 서류를 준비했습니다.",
+            "jp": "収入証明書以外はすべて準備しました。",
+            "zh": "除了收入证明，其他材料我都准备好了。",
+            "ru": "Я подготовила все документы, кроме справки о доходах."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Справку о доходах можно получить в налоговой службе, это займёт несколько дней.",
+            "en": "You can get the income statement from the tax office, it will take a few days.",
+            "es": "El certificado de ingresos se puede obtener en la agencia tributaria, tardará unos días.",
+            "fr": "L'attestation de revenus peut être obtenue auprès du service des impôts, cela prendra quelques jours.",
+            "pt": "O comprovante de renda pode ser obtido na receita federal, isso leva alguns dias.",
+            "kr": "소득 증명서는 세무서에서 받을 수 있는데, 며칠 정도 걸립니다.",
+            "jp": "収入証明書は税務署で取得できます。数日かかりますよ。",
+            "zh": "收入证明可以去税务局开具，大概需要几天时间。",
+            "ru": "Справку о доходах можно получить в налоговой службе, это займёт несколько дней."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А могу я донести её позже?",
+            "en": "And can I bring it in later?",
+            "es": "¿Y puedo entregarlo más tarde?",
+            "fr": "Et je peux l'apporter plus tard ?",
+            "pt": "E eu posso entregá-lo depois?",
+            "kr": "그럼 나중에 추가로 제출해도 될까요?",
+            "jp": "後で提出することはできますか？",
+            "zh": "那我之后补交可以吗？",
+            "ru": "А могу я донести её позже?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, вы можете донести её в течение месяца, это допустимо.",
+            "en": "Yes, you can bring it in within a month, that's acceptable.",
+            "es": "Sí, puede entregarlo en el plazo de un mes, es admisible.",
+            "fr": "Oui, vous pouvez l'apporter dans un délai d'un mois, c'est acceptable.",
+            "pt": "Sim, você pode entregá-lo no prazo de um mês, isso é permitido.",
+            "kr": "네, 한 달 이내에 제출하시면 됩니다. 허용됩니다.",
+            "jp": "はい、一か月以内であれば後で提出していただいて構いません。",
+            "zh": "可以，您可以在一个月内补交，这是允许的。",
+            "ru": "Да, вы можете донести её в течение месяца, это допустимо."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты не знаешь, как получить выписку из Единого государственного реестра недвижимости?",
+            "en": "Sergey, do you know how to get an extract from the Unified State Register of Real Estate?",
+            "es": "Serguéi, ¿sabes cómo se obtiene un extracto del Registro Único Estatal de Bienes Inmuebles?",
+            "fr": "Sergueï, tu ne sais pas comment obtenir un extrait du registre national de l'immobilier ?",
+            "pt": "Sergei, você sabe como obter a certidão do registro único de imóveis?",
+            "kr": "세르게이, 부동산 등기부 등본을 받는 방법을 아니?",
+            "jp": "セルゲイ、不動産統一登録簿の謄本の取得方法を知ってる？",
+            "zh": "谢尔盖，你知道怎么获取不动产登记簿的摘录吗？",
+            "ru": "Сергей, ты не знаешь, как получить выписку из Единого государственного реестра недвижимости?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Можно заказать её онлайн через портал государственных услуг или в этом центре.",
+            "en": "You can order it online through the government services portal or at this center.",
+            "es": "Se puede solicitar en línea a través del portal de servicios públicos o en este centro.",
+            "fr": "On peut le commander en ligne sur le portail des services publics ou dans ce centre.",
+            "pt": "Dá para pedir online pelo portal de serviços públicos ou neste centro.",
+            "kr": "정부 서비스 포털에서 온라인으로 신청하거나 이 센터에서 받을 수 있어.",
+            "jp": "政府サービスのポータルサイトか、このセンターでオンラインで注文できるよ。",
+            "zh": "可以通过国家服务网站在线申请，也可以在这个中心办理。",
+            "ru": "Можно заказать её онлайн через портал государственных услуг или в этом центре."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А если я закажу онлайн, сколько ждать?",
+            "en": "And if I order it online, how long do I wait?",
+            "es": "¿Y si lo solicito en línea, cuánto tardo en recibirlo?",
+            "fr": "Et si je le commande en ligne, combien de temps faut-il attendre ?",
+            "pt": "E se eu pedir online, quanto tempo espero?",
+            "kr": "온라인으로 신청하면 얼마나 기다려야 해?",
+            "jp": "オンラインで注文したら、どのくらい待つんだ？",
+            "zh": "那如果我在网上申请，要等多久？",
+            "ru": "А если я закажу онлайн, сколько ждать?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно выписка приходит в течение одного рабочего дня.",
+            "en": "Usually the extract arrives within one business day.",
+            "es": "Normalmente el extracto llega en un plazo de un día laborable.",
+            "fr": "En général, l'extrait arrive sous un jour ouvrable.",
+            "pt": "Normalmente a certidão chega em um dia útil.",
+            "kr": "보통 등본은 영업일 기준 하루 안에 도착해.",
+            "jp": "通常、謄本は営業日一日以内に届くよ。",
+            "zh": "通常摘录在一个工作日内就会发过来。",
+            "ru": "Обычно выписка приходит в течение одного рабочего дня."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это удобно. А в центре это займёт больше времени?",
+            "en": "That's convenient. And at the center, would it take longer?",
+            "es": "Qué cómodo. ¿Y en el centro tardará más?",
+            "fr": "C'est pratique. Et au centre, ça prend plus de temps ?",
+            "pt": "Isso é prático. E no centro vai demorar mais?",
+            "kr": "편리하네. 그럼 센터에서는 더 오래 걸려?",
+            "jp": "それは便利だね。センターだと時間がかかるの？",
+            "zh": "那很方便。在中心办理会更久吗？",
+            "ru": "Это удобно. А в центре это займёт больше времени?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, в центре обычно нужно подождать около трёх дней.",
+            "en": "Yes, at the center you usually need to wait about three days.",
+            "es": "Sí, en el centro normalmente hay que esperar unos tres días.",
+            "fr": "Oui, au centre il faut généralement attendre environ trois jours.",
+            "pt": "Sim, no centro normalmente é preciso esperar cerca de três dias.",
+            "kr": "응, 센터에서는 보통 3일 정도 기다려야 해.",
+            "jp": "うん、センターだと通常三日ほど待つ必要があるよ。",
+            "zh": "是的，在中心一般需要等大约三天。",
+            "ru": "Да, в центре обычно нужно подождать около трёх дней."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте, я хотела бы зарегистрировать брак в следующем месяце.",
+            "en": "Hello, I would like to register a marriage next month.",
+            "es": "Hola, quería registrar mi matrimonio el mes que viene.",
+            "fr": "Bonjour, je voudrais enregistrer mon mariage le mois prochain.",
+            "pt": "Olá, eu gostaria de registrar meu casamento no próximo mês.",
+            "kr": "안녕하세요, 저는 다음 달에 결혼 신고를 하고 싶습니다.",
+            "jp": "こんにちは。来月、結婚の登録をしたいのですが。",
+            "zh": "您好，我想下个月登记结婚。",
+            "ru": "Здравствуйте, я хотела бы зарегистрировать брак в следующем месяце."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Здравствуйте, для этого нужно подать совместное заявление за месяц до даты.",
+            "en": "Hello, for that you need to submit a joint application a month before the date.",
+            "es": "Hola, para eso necesitan presentar una solicitud conjunta un mes antes de la fecha.",
+            "fr": "Bonjour, pour cela il faut déposer une demande conjointe un mois avant la date.",
+            "pt": "Olá, para isso é necessário apresentar o requerimento conjunto um mês antes da data.",
+            "kr": "안녕하세요, 그러려면 날짜 한 달 전에 공동 신청서를 제출해야 합니다.",
+            "jp": "こんにちは。それには、日の一か月前までに共同申請書を提出する必要があります。",
+            "zh": "您好，办理这个需要提前一个月提交双方共同签署的申请。",
+            "ru": "Здравствуйте, для этого нужно подать совместное заявление за месяц до даты."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А можно ли выбрать конкретную дату и время?",
+            "en": "And can we choose a specific date and time?",
+            "es": "¿Y se puede elegir una fecha y hora concretas?",
+            "fr": "Et peut-on choisir une date et une heure précises ?",
+            "pt": "E dá para escolher uma data e horário específicos?",
+            "kr": "특정 날짜와 시간을 선택할 수 있나요?",
+            "jp": "特定の日時を選ぶことはできますか？",
+            "zh": "那可以选具体的日期和时间吗？",
+            "ru": "А можно ли выбрать конкретную дату и время?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, вы можете выбрать дату, если она ещё свободна в расписании.",
+            "en": "Yes, you can choose a date if it's still available in the schedule.",
+            "es": "Sí, pueden elegir fecha, si todavía está libre en la agenda.",
+            "fr": "Oui, vous pouvez choisir une date si elle est encore libre dans l'agenda.",
+            "pt": "Sim, você pode escolher a data, se ela ainda estiver livre na agenda.",
+            "kr": "네, 일정에 자리가 남아 있다면 날짜를 선택하실 수 있습니다.",
+            "jp": "はい、予定表に空きがあれば、日付を選ぶことができます。",
+            "zh": "可以，如果那个日期在安排表上还没被约满的话，您就可以选。",
+            "ru": "Да, вы можете выбрать дату, если она ещё свободна в расписании."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, а какие документы нужны для заявления?",
+            "en": "Great, and what documents are needed for the application?",
+            "es": "Estupendo, ¿y qué documentos se necesitan para la solicitud?",
+            "fr": "Parfait, et quels documents sont nécessaires pour la demande ?",
+            "pt": "Ótimo, e quais documentos são necessários para o requerimento?",
+            "kr": "좋아요, 그런데 신청에 필요한 서류는 무엇인가요?",
+            "jp": "それはいいですね。申請には何の書類が必要ですか？",
+            "zh": "太好了，那申请需要什么材料？",
+            "ru": "Отлично, а какие документы нужны для заявления?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Паспорта обоих, и если кто-то был в браке раньше, то документ о расторжении.",
+            "en": "Passports of both of you, and if either of you was married before, then the divorce certificate.",
+            "es": "Los pasaportes de ambos, y si alguien ha estado casado antes, el documento de divorcio.",
+            "fr": "Les passeports des deux, et si l'un des deux a déjà été marié, le document de divorce.",
+            "pt": "Os passaportes de ambos, e se alguém já foi casado antes, o documento de divórcio.",
+            "kr": "두 사람의 신분증, 그리고 이전에 결혼한 적이 있다면 이혼 증명서가 필요합니다.",
+            "jp": "お二人のパスポートと、以前結婚されていた方がいれば、離婚証明書です。",
+            "zh": "双方的护照，如果之前结过婚的话，还需要离婚证明。",
+            "ru": "Паспорта обоих, и если кто-то был в браке раньше, то документ о расторжении."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте, я хотел бы получить дубликат свидетельства о рождении.",
+            "en": "Hello, I would like to get a duplicate of my birth certificate.",
+            "es": "Hola, quería obtener un duplicado del certificado de nacimiento.",
+            "fr": "Bonjour, je voudrais obtenir un duplicata de l'acte de naissance.",
+            "pt": "Olá, eu gostaria de obter a segunda via da certidão de nascimento.",
+            "kr": "안녕하세요, 저는 출생 증명서 재발급을 받고 싶습니다.",
+            "jp": "こんにちは。出生証明書の再発行を受けたいのですが。",
+            "zh": "您好，我想补办一份出生证明。",
+            "ru": "Здравствуйте, я хотел бы получить дубликат свидетельства о рождении."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Здравствуйте, для этого нужно написать заявление и оплатить государственную пошлину.",
+            "en": "Hello, for that you need to write an application and pay the state fee.",
+            "es": "Hola, para eso necesita escribir una solicitud y pagar la tasa estatal.",
+            "fr": "Bonjour, pour cela il faut écrire une demande et payer les frais d'État.",
+            "pt": "Olá, para isso é necessário escrever um requerimento e pagar a taxa estatal.",
+            "kr": "안녕하세요, 그러려면 신청서를 작성하고 수수료를 내야 합니다.",
+            "jp": "こんにちは。それには申請書を書き、州手数料を支払う必要があります。",
+            "zh": "您好，办理这个需要写一份申请并缴纳国家规费。",
+            "ru": "Здравствуйте, для этого нужно написать заявление и оплатить государственную пошлину."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А можно ли заказать дубликат через интернет?",
+            "en": "And can I order the duplicate online?",
+            "es": "¿Y se puede pedir el duplicado por internet?",
+            "fr": "Et peut-on commander le duplicata par internet ?",
+            "pt": "E dá para pedir a segunda via pela internet?",
+            "kr": "인터넷으로도 재발급을 신청할 수 있나요?",
+            "jp": "インターネットで再発行を注文することはできますか？",
+            "zh": "可以通过网上申请补办吗？",
+            "ru": "А можно ли заказать дубликат через интернет?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, вы можете подать заявление онлайн, но получить документ нужно будет лично.",
+            "en": "Yes, you can submit the application online, but you'll need to pick up the document in person.",
+            "es": "Sí, puede presentar la solicitud en línea, pero tendrá que recoger el documento en persona.",
+            "fr": "Oui, vous pouvez déposer la demande en ligne, mais il faudra venir chercher le document en personne.",
+            "pt": "Sim, você pode apresentar o requerimento online, mas o documento precisará ser retirado pessoalmente.",
+            "kr": "네, 온라인으로 신청할 수 있지만, 서류는 직접 받으셔야 합니다.",
+            "jp": "はい、オンラインで申請することはできますが、書類はご本人が受け取る必要があります。",
+            "zh": "可以，您可以在网上提交申请，但领取证件时需要本人到场。",
+            "ru": "Да, вы можете подать заявление онлайн, но получить документ нужно будет лично."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно, а сколько времени это займёт?",
+            "en": "I see, and how long will it take?",
+            "es": "Entendido, ¿y cuánto tiempo tardará?",
+            "fr": "Compris, et combien de temps cela prendra ?",
+            "pt": "Entendi, e quanto tempo vai levar?",
+            "kr": "알겠습니다. 그런데 시간이 얼마나 걸릴까요?",
+            "jp": "わかりました。どのくらい時間がかかりますか？",
+            "zh": "明白了，那需要多长时间？",
+            "ru": "Понятно, а сколько времени это займёт?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно изготовление дубликата занимает около пяти рабочих дней.",
+            "en": "Usually making the duplicate takes about five business days.",
+            "es": "Normalmente la elaboración del duplicado tarda unos cinco días laborables.",
+            "fr": "En général, la fabrication du duplicata prend environ cinq jours ouvrables.",
+            "pt": "Normalmente a emissão da segunda via leva cerca de cinco dias úteis.",
+            "kr": "보통 재발급에는 영업일 기준 5일 정도 걸립니다.",
+            "jp": "通常、再発行には営業日五日ほどかかります。",
+            "zh": "通常补办大约需要五个工作日。",
+            "ru": "Обычно изготовление дубликата занимает около пяти рабочих дней."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Подскажите, я могу получить социальную карту для проезда в транспорте?",
+            "en": "Excuse me, can I get a social card for public transport?",
+            "es": "Disculpe, ¿puedo obtener la tarjeta social para viajar en transporte público?",
+            "fr": "Pouvez-vous me dire, je peux obtenir une carte sociale pour les transports en commun ?",
+            "pt": "Me diga, eu posso obter o cartão social para transporte público?",
+            "kr": "저기, 교통 이용을 위한 복지 카드를 받을 수 있을까요?",
+            "jp": "すみません、交通機関用の社会カードはもらえますか？",
+            "zh": "请问，我可以办理交通出行用的社会福利卡吗？",
+            "ru": "Подскажите, я могу получить социальную карту для проезда в транспорте?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, если у вас есть льготы, вы можете оформить её в этом окне.",
+            "en": "Yes, if you qualify for benefits, you can get it at this window.",
+            "es": "Sí, si tiene derecho a beneficios, puede tramitarla en esta ventanilla.",
+            "fr": "Oui, si vous avez droit à des réductions, vous pouvez la faire dans ce guichet.",
+            "pt": "Sim, se você tiver direito ao benefício, pode solicitar neste guichê.",
+            "kr": "네, 혜택 대상이시라면 이 창구에서 발급받으실 수 있습니다.",
+            "jp": "はい、優遇措置があれば、この窓口で手続きできますよ。",
+            "zh": "可以，如果您有优惠资格的话，可以在这个窗口办理。",
+            "ru": "Да, если у вас есть льготы, вы можете оформить её в этом окне."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "У меня есть удостоверение ветерана труда, оно подойдёт?",
+            "en": "I have a veteran of labor certificate, will that work?",
+            "es": "Tengo el carné de veterano del trabajo, ¿sirve?",
+            "fr": "J'ai une carte de vétéran du travail, est-ce que ça convient ?",
+            "pt": "Eu tenho o certificado de veterano do trabalho, serve?",
+            "kr": "저는 근로 명예 퇴직자 증명서가 있는데, 이걸로 될까요?",
+            "jp": "勤続功労者証を持っていますが、それで大丈夫ですか？",
+            "zh": "我有劳动老兵证，这个可以吗？",
+            "ru": "У меня есть удостоверение ветерана труда, оно подойдёт?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, это подходит. Заполните заявление и приложите копию удостоверения.",
+            "en": "Yes, that works. Fill out the application and attach a copy of the certificate.",
+            "es": "Sí, es válido. Rellene la solicitud y adjunte una copia del carné.",
+            "fr": "Oui, ça convient. Remplissez la demande et joignez une copie de la carte.",
+            "pt": "Sim, serve. Preencha o requerimento e anexe uma cópia do certificado.",
+            "kr": "네, 가능합니다. 신청서를 작성하시고 증명서 사본을 첨부해 주세요.",
+            "jp": "はい、それで大丈夫です。申請書に記入して、証書のコピーを添付してください。",
+            "zh": "可以，这个符合条件。请填写申请表并附上证件的复印件。",
+            "ru": "Да, это подходит. Заполните заявление и приложите копию удостоверения."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спасибо, а карта будет готова сразу?",
+            "en": "Thank you, and will the card be ready right away?",
+            "es": "Gracias, ¿y la tarjeta estará lista de inmediato?",
+            "fr": "Merci, et la carte sera prête tout de suite ?",
+            "pt": "Obrigada, e o cartão fica pronto na hora?",
+            "kr": "감사합니다. 그런데 카드는 바로 나오나요?",
+            "jp": "ありがとうございます。カードはすぐに出来上がりますか？",
+            "zh": "谢谢，那卡是当场就能拿到吗？",
+            "ru": "Спасибо, а карта будет готова сразу?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, карта будет готова через десять дней, мы сообщим вам по телефону.",
+            "en": "No, the card will be ready in ten days, we'll notify you by phone.",
+            "es": "No, la tarjeta estará lista en diez días, le avisaremos por teléfono.",
+            "fr": "Non, la carte sera prête dans dix jours, nous vous préviendrons par téléphone.",
+            "pt": "Não, o cartão fica pronto em dez dias, nós vamos te avisar por telefone.",
+            "kr": "아니요, 카드는 10일 후에 준비됩니다. 전화로 알려드리겠습니다.",
+            "jp": "いいえ、カードは十日後に出来上がります。お電話でお知らせします。",
+            "zh": "不是的，卡需要十天才能办好，我们会电话通知您。",
+            "ru": "Нет, карта будет готова через десять дней, мы сообщим вам по телефону."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте, я хотела бы получить консультацию по налоговому вычету за обучение.",
+            "en": "Hello, I would like to get a consultation on a tax deduction for education expenses.",
+            "es": "Hola, quería recibir asesoramiento sobre la deducción fiscal por estudios.",
+            "fr": "Bonjour, je voudrais obtenir une consultation sur la réduction d'impôt pour les études.",
+            "pt": "Olá, eu gostaria de obter uma consultoria sobre a dedução fiscal para educação.",
+            "kr": "안녕하세요, 저는 교육비 세액 공제에 대한 상담을 받고 싶습니다.",
+            "jp": "こんにちは。教育費の税額控除について相談したいのですが。",
+            "zh": "您好，我想咨询一下学费的税务抵扣。",
+            "ru": "Здравствуйте, я хотела бы получить консультацию по налоговому вычету за обучение."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Здравствуйте, для этого нужно предоставить договор с учебным заведением и чеки об оплате.",
+            "en": "Hello, for that you need to provide the contract with the educational institution and payment receipts.",
+            "es": "Hola, para eso necesita presentar el contrato con el centro educativo y los recibos de pago.",
+            "fr": "Bonjour, pour cela il faut fournir le contrat avec l'établissement d'enseignement et les reçus de paiement.",
+            "pt": "Olá, para isso é necessário apresentar o contrato com a instituição de ensino e os comprovantes de pagamento.",
+            "kr": "안녕하세요, 그러려면 교육 기관과의 계약서와 납부 영수증을 제출해야 합니다.",
+            "jp": "こんにちは。それには教育機関との契約書と支払いの領収書が必要です。",
+            "zh": "您好，办理这个需要提供与教育机构签订的合同和缴费收据。",
+            "ru": "Здравствуйте, для этого нужно предоставить договор с учебным заведением и чеки об оплате."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А можно ли подать документы на вычет через работодателя?",
+            "en": "And can I submit the documents for the deduction through my employer?",
+            "es": "¿Y se pueden presentar los documentos para la deducción a través del empleador?",
+            "fr": "Et peut-on déposer les documents pour la réduction par l'intermédiaire de l'employeur ?",
+            "pt": "E dá para apresentar os documentos para a dedução pelo empregador?",
+            "kr": "고용주를 통해서도 공제 서류를 제출할 수 있나요?",
+            "jp": "雇用主を通じて控除の書類を提出することはできますか？",
+            "zh": "可以通过雇主提交抵扣申请吗？",
+            "ru": "А можно ли подать документы на вычет через работодателя?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, можно, но для этого нужно получить уведомление в налоговой инспекции.",
+            "en": "Yes, you can, but for that you need to get a notice from the tax office.",
+            "es": "Sí, se puede, pero para eso necesita obtener una notificación de la inspección fiscal.",
+            "fr": "Oui, c'est possible, mais pour cela il faut obtenir une notification auprès de l'inspection des impôts.",
+            "pt": "Sim, dá, mas para isso é necessário obter uma notificação na Receita Federal.",
+            "kr": "네, 가능합니다. 하지만 그러려면 세무서에서 통지서를 받아야 합니다.",
+            "jp": "はい、できますが、そのためには税務署で通知書を取得する必要があります。",
+            "zh": "可以，但办理这个需要先去税务局领取一份通知书。",
+            "ru": "Да, можно, но для этого нужно получить уведомление в налоговой инспекции."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно, а если я подам декларацию сама, когда вернут деньги?",
+            "en": "I see, and if I file the tax return myself, when will I get the money back?",
+            "es": "Entendido, ¿y si presento la declaración yo misma, cuándo me devuelven el dinero?",
+            "fr": "Compris, et si je dépose ma déclaration moi-même, quand l'argent sera-t-il remboursé ?",
+            "pt": "Entendi, e se eu entregar a declaração eu mesma, quando devolvem o dinheiro?",
+            "kr": "알겠습니다. 그런데 제가 직접 신고서를 제출하면, 언제 환급받을 수 있나요?",
+            "jp": "わかりました。私自身で申告書を提出した場合、いつお金は戻ってきますか？",
+            "zh": "明白了，那如果我自己提交申报表的话，什么时候能退钱？",
+            "ru": "Понятно, а если я подам декларацию сама, когда вернут деньги?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно возврат происходит в течение трёх месяцев после проверки декларации.",
+            "en": "Usually the refund comes within three months after the review of the tax return.",
+            "es": "Normalmente la devolución se produce en un plazo de tres meses después de la revisión de la declaración.",
+            "fr": "En général, le remboursement se fait sous trois mois après la vérification de la déclaration.",
+            "pt": "Normalmente a devolução ocorre em até três meses após a análise da declaração.",
+            "kr": "보통 신고서 검토 후 3개월 이내에 환급이 이루어집니다.",
+            "jp": "通常、申告書の審査後、三か月以内に還付されます。",
+            "zh": "通常申报表审核通过后，退款会在三个月内到账。",
+            "ru": "Обычно возврат происходит в течение трёх месяцев после проверки декларации."
+          }
+        }
+      ]
+    }
+  ]
+}

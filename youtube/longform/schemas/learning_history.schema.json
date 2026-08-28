@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/learning_history.schema.json",
+  "title": "ManyLangs Longform Learning History",
+  "description": "Series-level memory of previously taught and exposed target-language expressions.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "series_id",
+    "target_language",
+    "cefr_level",
+    "expressions"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "content_version",
+        "revision"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "2.0"
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "series_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_language": {
+      "type": "string",
+      "enum": [
+        "en",
+        "es",
+        "fr",
+        "pt",
+        "jp",
+        "kr",
+        "zh",
+        "ru"
+      ]
+    },
+    "cefr_level": {
+      "type": "string",
+      "enum": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ]
+    },
+    "expressions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "expression_id",
+          "expression",
+          "meaning",
+          "first_episode_id",
+          "last_episode_id",
+          "teach_count",
+          "exposure_count",
+          "status"
+        ],
+        "properties": {
+          "expression_id": {
+            "type": "string",
+            "pattern": "^EXP_[0-9]{6}$"
+          },
+          "expression": {
+            "type": "string",
+            "minLength": 1
+          },
+          "meaning": {
+            "type": "string",
+            "minLength": 1
+          },
+          "first_episode_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "last_episode_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "teach_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "exposure_count": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "introduced",
+              "reinforced",
+              "established"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

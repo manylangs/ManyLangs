@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Prendre les transports",
+  "sets": {
+    "001": [
+      "Bonjour, vous savez où est l'arrêt de bus ?",
+      "Oui, c'est juste à côté de la boulangerie.",
+      "Merci. Et le bus pour aller au centre-ville ?",
+      "Vous prenez le numéro douze, il passe toutes les dix minutes.",
+      "Parfait, je vais attendre là-bas.",
+      "Bonne journée à vous."
+    ],
+    "002": [
+      "Tu as pris le métro ce matin ?",
+      "Oui, il y avait beaucoup de monde.",
+      "Ah bon ? Tu es arrivé en retard ?",
+      "Non, pas du tout, j'ai pris un train plus tôt.",
+      "C'est une bonne idée.",
+      "Oui, je préfère éviter les heures de pointe."
+    ],
+    "003": [
+      "Excusez-moi, ce train va bien à Lyon ?",
+      "Oui, il s'arrête à Lyon à quatorze heures.",
+      "Merci. Et il faut un billet spécial ?",
+      "Non, un billet normal suffit.",
+      "Très bien, je monte alors.",
+      "Bon voyage !"
+    ],
+    "004": [
+      "Tu prends le tram pour aller à l'université ?",
+      "Oui, c'est le plus rapide.",
+      "Et ça coûte combien ?",
+      "Deux euros le ticket, ou un abonnement mensuel.",
+      "Je vais peut-être prendre l'abonnement.",
+      "C'est plus économique si tu voyages souvent."
+    ],
+    "005": [
+      "Pardon, ce bus va à la gare ?",
+      "Oui, mais il faut descendre à la troisième station.",
+      "D'accord, merci beaucoup.",
+      "Attention, vous devez valider votre ticket en montant.",
+      "Ah, je ne savais pas, merci pour l'info.",
+      "Je vous en prie, bonne route."
+    ],
+    "006": [
+      "On y va à pied ou en bus ?",
+      "Prenons le bus, il fait trop chaud pour marcher.",
+      "Tu as raison, et c'est plus rapide.",
+      "Oui, on arrive en dix minutes.",
+      "Tu as de la monnaie pour le ticket ?",
+      "Oui, j'ai des pièces, pas de souci."
+    ],
+    "007": [
+      "Le train pour Paris est à l'heure ?",
+      "Oui, il part à dix heures trente du quai quatre.",
+      "Parfait. Tu sais où acheter un billet ?",
+      "Au guichet, là-bas, ou sur le téléphone.",
+      "Je vais utiliser l'application alors.",
+      "Bonne idée, c'est plus rapide."
+    ],
+    "008": [
+      "Tu as un vélo pour te déplacer ?",
+      "Oui, je l'utilise presque tous les jours.",
+      "C'est pratique en ville, non ?",
+      "Carrément, j'évite les embouteillages.",
+      "Et tu le ranges où ?",
+      "Dans la cour de ma résidence."
+    ],
+    "009": [
+      "Excusez-moi, c'est loin d'ici l'aéroport ?",
+      "Oui, comptez une heure en voiture.",
+      "Et en bus, c'est possible ?",
+      "Oui, il y a une navette toutes les trente minutes.",
+      "Je vais prendre la navette alors.",
+      "C'est une bonne option, elle est confortable."
+    ],
+    "010": [
+      "Tu as trouvé un taxi facilement hier ?",
+      "Non, j'ai attendu vingt minutes.",
+      "Ah mince, c'est long.",
+      "Oui, mais j'ai fini par en trouver un.",
+      "Tu aurais pu utiliser une application.",
+      "Tu as raison, je ferai ça la prochaine fois."
+    ]
+  },
+  "level": "a2",
+  "chapter_id": "CONV_FR_USING_TRANSPORT",
+  "id": "017",
+  "target_lang": "fr"
+}

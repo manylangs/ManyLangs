@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Detalles de una compra",
+  "sets": {
+    "001": [
+      "Quiero devolver esta camisa, pero no encuentro el ticket.",
+      "No te preocupes, puedo buscarla con el número de pedido.",
+      "¿Te vale si te doy el correo de confirmación?",
+      "Sí, con eso es suficiente. ¿Cuál es el motivo de la devolución?",
+      "Me queda pequeña y prefiero cambiar la talla.",
+      "Entendido. Te la cambio por una talla más sin problema."
+    ],
+    "002": [
+      "Esta chaqueta tiene una costura suelta en la manga.",
+      "Lo siento mucho, no habíamos detectado ese defecto.",
+      "¿Podrían arreglármela o me dan otra?",
+      "Podemos cambiártela ahora mismo si tenemos tu talla.",
+      "¿Y si no la tienen en stock?",
+      "Entonces te haríamos el reembolso completo al momento."
+    ],
+    "003": [
+      "Quería confirmar si el envío de mis zapatos ya salió.",
+      "Déjame revisar el sistema con tu número de seguimiento.",
+      "Me dijeron que llegaría entre hoy y mañana.",
+      "Así es, está previsto que llegue mañana por la tarde.",
+      "¿Necesito estar en casa para recibirlo?",
+      "No hace falta, el repartidor puede dejarlo en el portal."
+    ],
+    "004": [
+      "Esta lámpara no funciona, aunque la acabo de comprar.",
+      "Vaya, eso es raro. ¿La has probado con otra bombilla?",
+      "Sí, y tampoco enciende. Creo que viene defectuosa.",
+      "Le voy a pedir al fabricante que me envíe una nueva.",
+      "¿Cuánto tardará en llegar el reemplazo?",
+      "Calculo que en unos cinco días laborables la tendrás."
+    ],
+    "005": [
+      "Me gustaría saber si esta tienda iguala los precios online.",
+      "Sí, si nos enseñas el precio en otra web, lo igualamos.",
+      "He encontrado el mismo móvil veinte euros más barato.",
+      "Perfecto, entonces te lo dejamos al mismo precio.",
+      "¿Y me aplican también la garantía oficial?",
+      "Claro, la garantía es la misma que si lo compraras aquí."
+    ],
+    "006": [
+      "El bolso que compré tiene una mancha que no sale.",
+      "¿Nos lo traes para valorar el estado del artículo?",
+      "Sí, lo tengo aquí con la bolsa original.",
+      "Déjame verlo un momento, por favor.",
+      "¿Crees que me lo pueden cambiar?",
+      "Como tiene un defecto de fábrica, te lo cambiamos sin problema."
+    ],
+    "007": [
+      "Quiero anular mi pedido porque ya no me interesa.",
+      "Entiendo, pero el paquete ya está en reparto.",
+      "¿Entonces ya no se puede cancelar?",
+      "Lamentablemente no, pero puedes rechazarlo en la entrega.",
+      "¿Y me devuelven el dinero automáticamente?",
+      "Sí, en cuanto el paquete vuelva a nuestro almacén."
+    ],
+    "008": [
+      "¿Me podrías dar una factura con el desglose de impuestos?",
+      "Por supuesto, la genero ahora mismo desde el sistema.",
+      "La necesito para justificar el gasto en mi empresa.",
+      "Te la envío por correo en unos minutos.",
+      "¿Puede incluir también el número de identificación fiscal?",
+      "Sí, dímelo y la actualizo con ese dato."
+    ],
+    "009": [
+      "Compré dos sillas y solo me ha llegado una.",
+      "Lamento el error, voy a revisar el albarán de entrega.",
+      "En el paquete solo venía una caja.",
+      "Tienes razón, el almacén separó el pedido en dos envíos.",
+      "¿Cuándo me traerán la segunda silla?",
+      "Mañana por la mañana te la llevan sin coste adicional."
+    ],
+    "010": [
+      "Esta batidora hace un ruido muy extraño al usarla.",
+      "¿Desde cuándo notas ese ruido al funcionar?",
+      "Desde el primer día, pero pensé que era normal.",
+      "No, no debería sonar así. Te la cambiamos por una nueva.",
+      "¿Me podrían dar una de otro modelo?",
+      "Sí, puedes elegir otro modelo y solo pagas la diferencia."
+    ]
+  },
+  "level": "b2",
+  "chapter_id": "CONV_ES_SHOPPING_DETAILS",
+  "id": "038",
+  "target_lang": "es"
+}

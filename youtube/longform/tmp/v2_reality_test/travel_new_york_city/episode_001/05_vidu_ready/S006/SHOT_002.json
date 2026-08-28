@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S006",
+  "shot_id": "SHOT_002",
+  "sequence": 2,
+  "source_refs": {
+    "production_scene": "02_visual/production_scenes/S006.json",
+    "shot": "03_shots/S006/SHOT_002.json",
+    "visual_continuity": "04_visual_continuity/S006/SHOT_002.json"
+  },
+  "generation": {
+    "provider": "vidu",
+    "duration_seconds": 8.0,
+    "aspect_ratio": "16:9",
+    "resolution": "1080p",
+    "mode": "reference_guided"
+  },
+  "actors": [
+    {
+      "actor_ref": "CHAR_JIEUN_001",
+      "identity_type": "persistent",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Medium-sized travel backpack",
+        "Small crossbody bag",
+        "Smartphone",
+        "Passport",
+        "Checked suitcase"
+      ],
+      "body_state": [
+        "Standing still near the ground transportation signs",
+        "Backpack worn on back",
+        "Crossbody bag worn across body",
+        "Holding the handle of her suitcase",
+        "Looking toward the public transit sign"
+      ],
+      "emotion": "thoughtful and comparing",
+      "reference_asset_ids": [
+        "ASSET_CHAR_JIEUN_PRIMARY_000001"
+      ]
+    }
+  ],
+  "location": {
+    "location_ref": "LOC_JFK_AIRPORT_001",
+    "identity_lock": true,
+    "current_zone": "ground transportation area, near the signs for taxis, ride-sharing, and public transit, JFK International Airport",
+    "persistent_features": [
+      "Large terminal with high ceilings",
+      "Digital flight information displays",
+      "Signage for Arrivals, Immigration, and Baggage Claim",
+      "Moving walkways and escalators",
+      "Large windows with natural light"
+    ],
+    "orientation_state": [
+      "Jieun standing still near the ground transportation signs",
+      "Jieun facing the signs for taxis, ride-sharing, and public transit",
+      "Jieun looking toward the public transit sign",
+      "Ground transportation signs directly in front of Jieun",
+      "Terminal corridor behind Jieun",
+      "Other passengers walking toward the taxi and ride-sharing pickup areas in the background"
+    ],
+    "reference_asset_ids": []
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn on back",
+      "position": "on Jieun's back",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn across body",
+      "position": "across Jieun's body",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "not visible in hands, likely stored in crossbody bag or pocket",
+      "position": "not visible, likely in crossbody bag or pocket",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "not visible in hands, likely stored in crossbody bag or pocket",
+      "position": "not visible, likely in crossbody bag or pocket",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "standing beside Jieun, handle in her hand",
+      "position": "beside Jieun, handle held in her hand",
+      "visible": true,
+      "continuity_lock": true
+    }
+  ],
+  "prompt": {
+    "subject": "A young Korean woman with an oval face, soft features, natural eyebrows, dark brown eyes, and light natural makeup. She has shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears. She wears a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch. She carries a medium-sized travel backpack on her back, a small crossbody bag across her body, and holds the handle of a checked suitcase standing beside her. Her expression is thoughtful and comparing.",
+    "environment": "Inside the ground transportation area of JFK International Airport terminal, near the signs for taxis, ride-sharing, and public transit. The terminal has high ceilings, digital flight information displays, signage for Arrivals, Immigration, and Baggage Claim, moving walkways and escalators, and large windows with natural light. Bright indoor terminal lighting with natural light from large windows. Other passengers walk toward the taxi and ride-sharing pickup areas in the background, travelers check signs and directions, and airport staff assist passengers near the transportation options.",
+    "action": "Jieun looks at the taxi sign, then at the ride-sharing sign, and then glances toward the public transit sign. Her expression is thoughtful as she compares her options.",
+    "camera": "Medium shot, three-quarter angle, static locked camera.",
+    "continuity": "Jieun is standing in the ground transportation area, looking at the signs for taxis, ride-sharing, and public transit. She is pulling her suitcase behind her. Her backpack is worn on her back, crossbody bag across her body, and she holds the handle of her suitcase. She has not yet made a decision about transportation.",
+    "final_prompt": "A young Korean woman with an oval face, soft features, natural eyebrows, dark brown eyes, and light natural makeup, shoulder-length dark brown hair straight with slight natural waves tucked behind ears, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch, stands in the ground transportation area of JFK International Airport terminal near the signs for taxis, ride-sharing, and public transit. She carries a medium-sized travel backpack on her back, a small crossbody bag across her body, and holds the handle of a checked suitcase standing beside her. She looks at the taxi sign, then at the ride-sharing sign, and then glances toward the public transit sign with a thoughtful, comparing expression. The terminal has high ceilings, digital flight information displays, signage for Arrivals, Immigration, and Baggage Claim, moving walkways and escalators, and large windows with natural light. Other passengers walk toward the taxi and ride-sharing pickup areas in the background. Medium shot, three-quarter angle, static locked camera. Bright indoor terminal lighting with natural light from large windows."
+  },
+  "negative_constraints": [
+    "Do not change character identity.",
+    "Do not change canonical location identity.",
+    "Do not introduce new characters.",
+    "Do not introduce new locations.",
+    "Do not alter canonical prop state.",
+    "Do not change story events.",
+    "Do not show Jieun making a final decision about which transportation option to take.",
+    "Do not show specific prices or operational details for any transportation option.",
+    "Do not show Jieun leaving the ground transportation area.",
+    "Do not show Jieun's suitcase being lost or missing.",
+    "Do not show Jieun's passport or smartphone being dropped or lost."
+  ],
+  "continuity": {
+    "carry_in": [
+      "Jieun is standing in the ground transportation area.",
+      "She is looking at the signs for taxis, ride-sharing, and public transit."
+    ],
+    "carry_out": [
+      "Jieun is looking toward the public transit sign.",
+      "Her expression is thoughtful.",
+      "She is still considering her options."
+    ],
+    "must_match_previous_shot": true,
+    "previous_scene_id": "S006",
+    "previous_shot_id": "SHOT_001",
+    "next_scene_id": "S006",
+    "next_shot_id": "SHOT_003"
+  }
+}

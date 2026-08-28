@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S014",
+  "shot_id": "SHOT_001",
+  "sequence": 1,
+  "duration_seconds": 6.0,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun exiting the subway station and stepping onto the Manhattan street.",
+  "framing": {
+    "shot_size": "medium_wide",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "subway station exit"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "follow",
+    "stability": "smooth"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun walks out of the subway station exit, pulling her checked suitcase, and steps onto the sidewalk of the Manhattan street.",
+    "start_state": [
+      "Jieun is inside the subway station near the exit",
+      "She is carrying her backpack and crossbody bag",
+      "She is pulling her checked suitcase"
+    ],
+    "end_state": [
+      "Jieun has stepped out onto the street",
+      "She is standing on the sidewalk outside the subway station",
+      "She is still carrying her backpack, crossbody bag, and pulling her suitcase"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "anticipatory",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "state": "in hand or pocket",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "state": "in crossbody bag",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "being pulled by Jieun",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L001"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "The subway train has arrived at the station",
+      "Jieun has gotten off the train and is heading toward the exit",
+      "She is carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase"
+    ],
+    "carry_out": [
+      "Jieun is standing on the street outside the subway station",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

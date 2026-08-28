@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S017",
+  "shot_id": "SHOT_002",
+  "sequence": 2,
+  "duration_seconds": 5.0,
+  "location_ref": "LOC_MANHATTAN_HOTEL_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun placing her bags down near the bed or luggage rack.",
+  "framing": {
+    "shot_size": "medium",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "PROP_LUGGAGE_001",
+      "PROP_BACKPACK_001"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun sets down her backpack and suitcase near the bed or luggage rack.",
+    "start_state": [
+      "Jieun is standing inside the room near the bed",
+      "She is still holding her suitcase handle and wearing her backpack"
+    ],
+    "end_state": [
+      "Jieun's backpack and suitcase are placed down near the bed or luggage rack",
+      "Jieun is standing upright, free of her bags"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "settled and comfortable",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "placed near the bed or luggage rack",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "placed near the bed or luggage rack",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_ROOM_KEY_001",
+      "state": "held in Jieun's hand or placed on a nearby surface",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L002"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is standing inside her hotel room",
+      "She is still holding her suitcase handle and wearing her backpack",
+      "She has a relieved and happy expression"
+    ],
+    "carry_out": [
+      "Jieun's backpack and suitcase are placed down near the bed or luggage rack",
+      "Jieun is standing upright, free of her bags",
+      "She has a settled and comfortable expression"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

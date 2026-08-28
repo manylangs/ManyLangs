@@ -1,0 +1,28 @@
+ORDER: 040/065
+SCENE: S013
+SHOT: SHOT_001
+DURATION: 5.0 seconds
+ASPECT RATIO: 16:9
+RESOLUTION: 1080p
+
+REFERENCE IMAGE:
+- _references/jieun_primary.png
+
+PROMPT:
+Medium close shot, eye-level, static locked camera. Jieun, a young Korean woman with an oval face, soft features, natural eyebrows, dark brown eyes, and light natural makeup, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch, with shoulder-length dark brown hair tucked behind ears, stands inside a moving subway train. She wears a medium-sized travel backpack on her back, a small crossbody bag across her body, holds a smartphone in her right hand, and has a checked suitcase beside her. The train moves smoothly between stations, with bright indoor lighting and natural daylight streaming through the windows. A few passengers are seated and standing. City buildings and lights are visible through the windows. Jieun's expression changes from anxious to relieved as she relaxes her grip on the pole, looks out the window at the city lights, then turns to watch the station signs carefully for her stop. Her backpack, crossbody bag, smartphone, and suitcase remain with her throughout.
+
+NEGATIVE / DO-NOT-CHANGE NOTES:
+- Do not change Jieun's identity, appearance, hair, or clothing.
+- Do not change the canonical location identity of the subway train car.
+- Do not introduce new characters.
+- Do not introduce new locations.
+- Do not alter the canonical prop state: backpack on back, crossbody bag across body, smartphone in hand, suitcase beside her.
+- Do not show Jieun moving past the subway journey.
+- Do not show Jieun arriving at her hotel.
+- Do not introduce a new travel problem.
+- Do not show Jieun missing her stop.
+- Do not show Jieun's suitcase being lost or missing.
+- Do not show Jieun's passport or smartphone being dropped or lost.
+
+OUTPUT FILE:
+S013_SHOT_001.mp4

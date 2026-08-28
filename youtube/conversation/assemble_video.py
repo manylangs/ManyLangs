@@ -56,7 +56,7 @@ cd /Users/junghasuk/Desktop/ManyLangs/web/youtube/conversation
 
 python3 assemble_video.py
 
-  -> 언어 코드 입력
+  -> 지원 언어 번호 목록에서 번호 입력
   -> conversation/{lang}/ 아래 a1_~c2_ 로 시작하는 폴더를 번호로 보여주고 선택
   -> 선택한 폴더로 조립 진행
 
@@ -118,11 +118,17 @@ SRT_TIME_RE = re.compile(
 
 
 # ==========================================================
-# 회화 폴더 선택 (언어 코드 입력 -> 폴더 번호 선택)
+# 회화 폴더 선택 (언어 번호 선택 -> 폴더 번호 선택)
 #
-# post_facebook.py / post_instagram.py / build_x_post.py 와 동일한
-# 흐름 - assemble_video.py가 위치한 conversation/ 폴더 아래
-# {lang}/ 안의 a1_~c2_ 로 시작하는 폴더를 대상으로 한다.
+# post_facebook.py / post_instagram.py / build_x_post.py /
+# youtube_upload.py 와 동일한 흐름 - assemble_video.py가 위치한
+# conversation/ 폴더 아래 {lang}/ 안의 a1_~c2_ 로 시작하는 폴더를
+# 대상으로 한다.
+#
+# 내부 관리 코드(딕셔너리 키, 폴더명 등)는 항상 이 딕셔너리의 키를
+# 그대로 사용한다 (예: 일본어는 내부적으로 "jp"). 새 언어를
+# 추가/삭제/순서 변경하고 싶으면 이 딕셔너리만 수정하면 되고,
+# 언어 선택 메뉴의 번호는 등록된 순서대로 자동으로 매겨진다.
 # ==========================================================
 
 # assemble_video.py 자신이 conversation/ 폴더에 위치한다고 가정
@@ -131,27 +137,29 @@ CONVERSATION_DIR = Path(__file__).resolve().parent
 LANGUAGES = {
     "en": "English",
     "kr": "Korean",
-    "ja": "Japanese",
+    "jp": "Japanese",
     "zh": "Chinese",
     "es": "Spanish",
     "fr": "French",
     "pt": "Portuguese",
     "de": "German",
+    "ru": "Russian",
 }
 
 
 def prompt_language():
+    codes = list(LANGUAGES.keys())
+
     print("\n지원 언어:")
+    for i, code in enumerate(codes, start=1):
+        print(f"  {i:>2} - {code} ({LANGUAGES[code]})")
 
-    for code, name in LANGUAGES.items():
-        print(f"  {code} - {name}")
+    choice = input("번호 입력: ").strip()
 
-    lang_code = input("언어 코드 입력: ").strip().lower()
+    if not choice.isdigit() or not (1 <= int(choice) <= len(codes)):
+        raise ValueError(f"잘못된 번호: {choice}")
 
-    if lang_code not in LANGUAGES:
-        raise ValueError(f"지원하지 않는 언어 코드입니다: {lang_code}")
-
-    return lang_code
+    return codes[int(choice) - 1]
 
 
 def list_language_folders(lang_code):
@@ -836,7 +844,7 @@ def concat_clips(
 #   4) ManyLangs 태그라인 + 사이트 링크
 # ==========================================================
 
-SUBTITLE_LANGS = ["en", "es", "pt", "fr", "kr", "ja", "zh", "ru"]
+SUBTITLE_LANGS = ["en", "es", "pt", "fr", "kr", "jp", "zh", "ru"]
 
 SUBTITLE_LANG_NAMES = {
     "en": "English",
@@ -844,7 +852,7 @@ SUBTITLE_LANG_NAMES = {
     "pt": "Portuguese",
     "fr": "French",
     "kr": "Korean",
-    "ja": "Japanese",
+    "jp": "Japanese",
     "zh": "Mandarin Chinese",
     "ru": "Russian",
 }
@@ -1226,7 +1234,7 @@ def main():
     args = parser.parse_args()
 
     # 파일명 직접 입력 대신, 다른 업로더 스크립트들과 동일하게
-    # 언어 코드 입력 -> a1_~c2_ 폴더 번호 선택 방식을 사용한다.
+    # 언어 번호 선택 -> a1_~c2_ 폴더 번호 선택 방식을 사용한다.
     lang_code = prompt_language()
     folders = list_language_folders(lang_code)
     selected_dir = prompt_folder_selection(folders)

@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S007",
+  "shot_id": "SHOT_003",
+  "sequence": 3,
+  "duration_seconds": 8.0,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001",
+    "B"
+  ],
+  "visual_intent": "Show Jieun deciding to take the train and beginning to walk toward the train signs with a more confident expression.",
+  "framing": {
+    "shot_size": "medium_wide",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "B"
+    ]
+  },
+  "camera": {
+    "angle": "three_quarter",
+    "movement": "follow",
+    "stability": "smooth"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun nods, says she will take the train, looks toward the train signs, and begins walking in that direction.",
+    "start_state": [
+      "Jieun is looking toward the train signs.",
+      "The employee is still standing beside her."
+    ],
+    "end_state": [
+      "Jieun is walking toward the train signs.",
+      "She has a more confident and decided expression.",
+      "She is still holding her suitcase handle."
+    ]
+  },
+  "emotion": {
+    "primary_actor": "confident and decided",
+    "supporting": {
+      "B": "helpful and professional"
+    }
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "held by handle",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L007",
+      "L008"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "The employee has pointed toward the train signs.",
+      "Jieun is looking toward the train signs."
+    ],
+    "carry_out": [
+      "Jieun has received advice from a transit employee.",
+      "She has decided to take public transit to Manhattan.",
+      "She is now heading toward the transit station."
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

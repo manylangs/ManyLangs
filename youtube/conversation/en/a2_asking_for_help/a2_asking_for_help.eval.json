@@ -1,0 +1,71 @@
+{
+  "chapter_id": "conversation_020.runtime.json",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A와 B의 역할이 전체 대화에서 일관되게 유지됨. A는 도움을 요청하고, B는 도움을 제공하는 역할이 명확함."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "도움 요청, 수락, 위치 제안, 확인, 감사, 사례 표현 등 대화의 기능적 요소가 자연스러운 흐름으로 구성됨."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "전체적으로 자연스러운 회화체를 사용함. 'give you a hand', 'that works', 'right there' 등 구어체 표현이 잘 활용됨. 다만, 'Could you help me move this table?'은 A2 레벨에 비해 약간 격식 있는 표현일 수 있으나, 공손한 요청을 배우는 데 유용함."
+    },
+    "register_appropriateness": {
+      "score": 9,
+      "weight": 10,
+      "notes": "친근하지만 예의를 갖춘 적절한 레지스터를 유지함. 'Could you...'와 'I really appreciate...'를 사용하여 공손함을, 'Sure', 'No problem'을 사용하여 친근함을 표현함. 한국어 번역에서 '도와주시겠어요?'와 '도와드릴게요'의 존댓말 사용이 일관되게 적용됨."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "모든 언어에서 문법적 오류나 표기 오류가 발견되지 않음. 문장 부호와 대문자 사용이 올바르게 적용됨."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "가구를 옮기는 일상적인 상황을 다루어 실용성이 높음. 학습자가 실제로 겪을 수 있는 상황을 자연스럽게 구성함."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "특정 문화에 국한되지 않는 보편적인 상황을 다루어 문화적 중립성을 유지함."
+    },
+    "tts_readiness": {
+      "score": 9,
+      "weight": 5,
+      "notes": "TTS로 읽기에 적합한 명확한 문장 구조를 가짐. 다만, 'Let's move it over by the window'에서 축약형 'Let's'는 TTS가 자연스럽게 발음하지만, 학습자를 위해 'Let us'로 표기하는 것도 고려할 수 있음."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "en 필드가 target 필드와 완벽하게 일치함. 모든 문장에서 target과 en이 동일함."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "일상생활에서 자주 쓰이는 유용한 표현을 포함하고 있어 시중 교재와 비교해도 경쟁력이 있음. 다만, A2 레벨에 비해 일부 표현('Could you help me...')이 다소 높은 난이도일 수 있어, 초급 학습자에게는 약간의 어려움이 있을 수 있음."
+    }
+  },
+  "final_score": 95,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "상위 10% 수준. 일상 회화 표현의 자연스러운 구성과 다양한 언어 번역의 정확성에서 시중 주요 서비스와 견줄 만한 품질을 갖춤.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}

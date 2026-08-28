@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S002",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "mode": "dialogue",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "b_gender": "male",
+  "lines": [
+    {
+      "line_id": "L001",
+      "sequence": 1,
+      "speaker": "A",
+      "text": "Excuse me, I'm here for immigration. Which line should I join?"
+    },
+    {
+      "line_id": "L002",
+      "sequence": 2,
+      "speaker": "B",
+      "text": "Are you a visitor or a resident?"
+    },
+    {
+      "line_id": "L003",
+      "sequence": 3,
+      "speaker": "A",
+      "text": "I'm a visitor. I'm here for a trip."
+    },
+    {
+      "line_id": "L004",
+      "sequence": 4,
+      "speaker": "B",
+      "text": "Then you can join the line on the left, for visitors."
+    },
+    {
+      "line_id": "L005",
+      "sequence": 5,
+      "speaker": "A",
+      "text": "Okay. Do I need to fill out any forms?"
+    },
+    {
+      "line_id": "L006",
+      "sequence": 6,
+      "speaker": "B",
+      "text": "No, you don't need any forms. Just have your passport ready."
+    }
+  ],
+  "scene_state": {
+    "location_ref": "LOC_JFK_AIRPORT_001",
+    "carry_in": [
+      "Jieun has disembarked from the airplane",
+      "She is now inside the JFK terminal, following signs toward immigration",
+      "She feels a mix of excitement and nervousness"
+    ],
+    "carry_out": [
+      "Jieun has joined the correct immigration line after asking for help",
+      "She is waiting in line with her passport ready",
+      "She feels a bit more confident about the process"
+    ],
+    "emotion": "a bit more confident after receiving help"
+  },
+  "validation": {
+    "expected_line_count": 6,
+    "actual_line_count": 6
+  }
+}

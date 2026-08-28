@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b1",
+    "id": "019"
+  },
+  "title": {
+    "target": "Здоровье и симптомы",
+    "en": "Health and Symptoms",
+    "es": "Salud y síntomas",
+    "fr": "Santé et symptômes",
+    "pt": "Saúde e sintomas",
+    "kr": "건강과 증상",
+    "jp": "健康と症状",
+    "zh": "健康与症状",
+    "ru": "Здоровье и симптомы"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Привет, Сергей! Ты сегодня бледный. Всё в порядке?",
+            "en": "Hi, Sergey! You look pale today. Is everything okay?",
+            "es": "Hola, Serguéi. Hoy estás pálido. ¿Estás bien?",
+            "fr": "Salut, Sergueï ! Tu es pâle aujourd'hui. Tout va bien ?",
+            "pt": "Oi, Sergei! Você está pálido hoje. Tudo bem?",
+            "kr": "안녕, 세르게이! 오늘 얼굴이 창백하네. 괜찮아?",
+            "jp": "こんにちは、セルゲイ！今日は顔色が悪いよ。大丈夫？",
+            "zh": "你好，谢尔盖！你今天脸色很苍白。你没事吧？",
+            "ru": "Привет, Сергей! Ты сегодня бледный. Всё в порядке?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Привет, Анна. Честно говоря, голова раскалывается, и горло першит.",
+            "en": "Hi, Anna. To be honest, my head is splitting and my throat is scratchy.",
+            "es": "Hola, Anna. Para ser sincero, me estalla la cabeza y tengo la garganta irritada.",
+            "fr": "Salut, Anna. Pour être honnête, j'ai un mal de tête atroce et j'ai la gorge qui gratte.",
+            "pt": "Oi, Anna. Pra ser sincero, minha cabeça está explodindo e minha garganta está arranhando.",
+            "kr": "안녕, 안나. 솔직히 말하면 머리가 깨질 듯 아프고, 목도 따끔거려.",
+            "jp": "こんにちは、アンナ。正直言うと、頭が割れるように痛くて、喉もイガイガするんだ。",
+            "zh": "你好，安娜。说实话，我头疼得厉害，嗓子也疼。",
+            "ru": "Привет, Анна. Честно говоря, голова раскалывается, и горло першит."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Похоже на простуду. Температуру мерил?",
+            "en": "Sounds like a cold. Did you take your temperature?",
+            "es": "Parece un resfriado. ¿Te has tomado la temperatura?",
+            "fr": "On dirait un rhume. Tu as pris ta température ?",
+            "pt": "Parece um resfriado. Você mediu a temperatura?",
+            "kr": "감기인 것 같네. 열은 재 봤어?",
+            "jp": "風邪みたいだね。熱は測った？",
+            "zh": "看起来像感冒了。你量体温了吗？",
+            "ru": "Похоже на простуду. Температуру мерил?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, вчера вечером была тридцать семь и пять.",
+            "en": "Yes, last night it was thirty-seven point five.",
+            "es": "Sí, ayer por la noche tenía treinta y siete y cinco.",
+            "fr": "Oui, hier soir, elle était à trente-sept et cinq.",
+            "pt": "Sim, ontem à noite estava trinta e sete e cinco.",
+            "kr": "응, 어젯밤에 삼십칠도 오분이었어.",
+            "jp": "うん、昨日の夜は三十七度五分だったよ。",
+            "zh": "量了，昨天晚上是三十七度五。",
+            "ru": "Да, вчера вечером была тридцать семь и пять."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда лучше не шутить с этим. Сходи к врачу, пока не стало хуже.",
+            "en": "Then you shouldn't mess around with this. Go see a doctor before it gets worse.",
+            "es": "Entonces es mejor no tomárselo a la ligera. Ve al médico antes de que empeore.",
+            "fr": "Alors, il ne faut pas plaisanter avec ça. Va voir un médecin, avant que ça ne s'aggrave.",
+            "pt": "Então é melhor não brincar com isso. Vá ao médico antes que piore.",
+            "kr": "그럼 이걸 가볍게 넘기면 안 되겠다. 더 나빠지기 전에 병원에 가 봐.",
+            "jp": "それなら、甘く見ないほうがいいよ。悪化する前に医者に行ってきなよ。",
+            "zh": "那最好别不当回事。趁还没更严重，去看医生吧。",
+            "ru": "Тогда лучше не шутить с этим. Сходи к врачу, пока не стало хуже."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Наверное, ты права. Запишусь на приём сегодня же.",
+            "en": "You're probably right. I'll book an appointment today.",
+            "es": "Seguramente tienes razón. Pediré cita hoy mismo.",
+            "fr": "Tu as sans doute raison. Je vais prendre rendez-vous dès aujourd'hui.",
+            "pt": "Você provavelmente tem razão. Vou marcar uma consulta ainda hoje.",
+            "kr": "네 말이 맞는 것 같아. 오늘 바로 진료 예약할게.",
+            "jp": "そうだね、君の言う通りだ。今日中に予約を入れるよ。",
+            "zh": "你说得对。我今天就去预约。",
+            "ru": "Наверное, ты права. Запишусь на приём сегодня же."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты чихаешь без остановки. Аллергия?",
+            "en": "Dmitry, you're sneezing nonstop. Allergies?",
+            "es": "Dmitri, no dejas de estornudar. ¿Es alergia?",
+            "fr": "Dimitri, tu éternues sans arrêt. Une allergie ?",
+            "pt": "Dmitri, você está espirrando sem parar. É alergia?",
+            "kr": "드미트리, 너 멈추지 않고 재채기를 하네. 알레르기야?",
+            "jp": "ドミトリー、止まらずにくしゃみしてるね。アレルギー？",
+            "zh": "德米特里，你不停地打喷嚏。是过敏吗？",
+            "ru": "Дмитрий, ты чихаешь без остановки. Аллергия?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Похоже на то. Глаза слезятся, и нос заложило с самого утра.",
+            "en": "Looks like it. My eyes are watering and my nose has been stuffy since morning.",
+            "es": "Eso parece. Me lloran los ojos y tengo la nariz tapada desde primera hora de la mañana.",
+            "fr": "On dirait bien. J'ai les yeux qui larmoient et le nez bouché depuis ce matin.",
+            "pt": "Parece que sim. Meus olhos estão lacrimejando e meu nariz está entupido desde de manhã.",
+            "kr": "그런 것 같아. 눈물도 나고, 아침부터 코가 막혔어.",
+            "jp": "そうみたいだ。目は涙目だし、朝から鼻も詰まってるんだ。",
+            "zh": "好像是。眼睛流泪，而且从早上起来鼻子就堵了。",
+            "ru": "Похоже на то. Глаза слезятся, и нос заложило с самого утра."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "У меня тоже такое было весной. Ты принимаешь какие-нибудь таблетки?",
+            "en": "I had the same thing in the spring. Are you taking any pills?",
+            "es": "A mí también me pasó eso en primavera. ¿Estás tomando alguna pastilla?",
+            "fr": "J'ai eu la même chose au printemps, moi aussi. Tu prends des médicaments ?",
+            "pt": "Eu também tive isso na primavera. Você está tomando algum comprimido?",
+            "kr": "나도 봄에 그런 적 있었어. 약 같은 거 먹고 있어?",
+            "jp": "私も春にそんなことがあったよ。何か薬を飲んでるの？",
+            "zh": "我春天的时候也这样过。你吃什么药了吗？",
+            "ru": "У меня тоже такое было весной. Ты принимаешь какие-нибудь таблетки?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, всё думал, что само пройдёт.",
+            "en": "No, I kept thinking it would go away on its own.",
+            "es": "No, pensaba que se me pasaría solo.",
+            "fr": "Non, je pensais que ça passerait tout seul.",
+            "pt": "Não, fiquei achando que ia passar sozinho.",
+            "kr": "아니, 그냥 저절로 나아지겠지 하고 생각했어.",
+            "jp": "ううん、ずっと自然に治ると思ってたんだ。",
+            "zh": "没有，我一直想着它会自己好。",
+            "ru": "Нет, всё думал, что само пройдёт."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сходи в аптеку, фармацевт подскажет хорошее средство.",
+            "en": "Go to the pharmacy, the pharmacist can recommend a good remedy.",
+            "es": "Ve a la farmacia, el farmacéutico te recomendará un buen remedio.",
+            "fr": "Va à la pharmacie, le pharmacien te conseillera un bon remède.",
+            "pt": "Vá à farmácia, o farmacêutico vai te indicar um bom remédio.",
+            "kr": "약국에 가 봐. 약사가 좋은 약을 추천해 줄 거야.",
+            "jp": "薬局に行ってごらんよ。薬剤師がいい薬を教えてくれるよ。",
+            "zh": "去药店看看吧，药剂师会给你推荐好药的。",
+            "ru": "Сходи в аптеку, фармацевт подскажет хорошее средство."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо за совет. Зайду после пар.",
+            "en": "Thanks for the advice. I'll stop by after classes.",
+            "es": "Gracias por el consejo. Pasaré después de las clases.",
+            "fr": "Merci pour le conseil. J'y passerai après les cours.",
+            "pt": "Obrigado pelo conselho. Vou passar depois das aulas.",
+            "kr": "조언 고마워. 수업 끝나고 들를게.",
+            "jp": "アドバイスありがとう。講義の後で寄ってみるよ。",
+            "zh": "谢谢你的建议。我下课以后去。",
+            "ru": "Спасибо за совет. Зайду после пар."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, у тебя усталый вид. Ты хорошо спала?",
+            "en": "Olga, you look tired. Did you sleep well?",
+            "es": "Olga, tienes aspecto de cansada. ¿Has dormido bien?",
+            "fr": "Olga, tu as l'air fatiguée. Tu as bien dormi ?",
+            "pt": "Olga, você está com cara de cansada. Você dormiu bem?",
+            "kr": "올가, 너 피곤해 보인다. 잘 잤어?",
+            "jp": "オルガ、疲れた顔してるね。ちゃんと眠れた？",
+            "zh": "奥尔加，你看起来很疲惫。你睡得好吗？",
+            "ru": "Ольга, у тебя усталый вид. Ты хорошо спала?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Почти не спала. Весь бок болит, особенно когда глубоко вдыхаю.",
+            "en": "I barely slept. My whole side hurts, especially when I take a deep breath.",
+            "es": "Casi no he dormido. Me duele todo el costado, sobre todo cuando respiro hondo.",
+            "fr": "Je n'ai presque pas dormi. J'ai mal sur tout le côté, surtout quand j'inspire profondément.",
+            "pt": "Quase não dormi. Meu lado todo está doendo, principalmente quando respiro fundo.",
+            "kr": "거의 못 잤어. 옆구리가 계속 아파, 특히 깊게 숨 쉴 때.",
+            "jp": "ほとんど眠れなかったの。脇腹がずっと痛くて、特に深く息を吸うと痛いの。",
+            "zh": "几乎没睡。我整个侧身都疼，尤其是深呼吸的时候。",
+            "ru": "Почти не спала. Весь бок болит, особенно когда глубоко вдыхаю."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это серьёзно. Может, растяжение или что-то с лёгкими?",
+            "en": "That's serious. Maybe a strain or something with your lungs?",
+            "es": "Eso es serio. Puede ser un esguince o algo de los pulmones.",
+            "fr": "C'est sérieux. Peut-être une élongation ou quelque chose aux poumons ?",
+            "pt": "Isso é sério. Pode ser uma distensão ou algo com os pulmões?",
+            "kr": "그거 심각한 거야. 근육을 다쳤거나 폐에 문제가 있는 걸 수도 있어.",
+            "jp": "それは深刻だね。肉離れか、肺に何かあるのかも。",
+            "zh": "这很严重。可能是肌肉拉伤，或者肺部有什么问题？",
+            "ru": "Это серьёзно. Может, растяжение или что-то с лёгкими?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не хочу пугать себя, но боль не проходит уже два дня.",
+            "en": "I don't want to scare myself, but the pain hasn't gone away for two days.",
+            "es": "No quiero asustarme, pero el dolor no se me pasa desde hace dos días.",
+            "fr": "Je ne veux pas m'inquiéter, mais la douleur ne passe pas depuis deux jours.",
+            "pt": "Não quero me assustar, mas a dor não passa há dois dias.",
+            "kr": "겁먹고 싶진 않은데, 통증이 벌써 이틀째 안 가라앉아.",
+            "jp": "怖がりたくないけど、もう二日間痛みが治まらないの。",
+            "zh": "我不想吓自己，但疼痛已经两天没消了。",
+            "ru": "Не хочу пугать себя, но боль не проходит уже два дня."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда не откладывай. Сходи в поликлинику, сделай снимок.",
+            "en": "Then don't put it off. Go to the clinic and get an X-ray.",
+            "es": "Entonces no lo dejes pasar. Ve al centro de salud y hazte una radiografía.",
+            "fr": "Alors ne remets pas ça à plus tard. Va à la polyclinique, fais une radio.",
+            "pt": "Então não adie. Vá ao posto de saúde e faça um raio-x.",
+            "kr": "그럼 미루지 마. 병원에 가서 엑스레이 찍어 봐.",
+            "jp": "それなら先延ばしにしないで。診療所に行って、レントゲンを撮ってもらいなよ。",
+            "zh": "那就别拖了。去诊所看看吧，拍个片子。",
+            "ru": "Тогда не откладывай. Сходи в поликлинику, сделай снимок."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ты права, лучше провериться. Запишусь завтра с утра.",
+            "en": "You're right, better to get checked out. I'll book an appointment tomorrow morning.",
+            "es": "Tienes razón, es mejor hacerse una revisión. Pediré cita mañana por la mañana.",
+            "fr": "Tu as raison, il vaut mieux se faire examiner. Je vais prendre rendez-vous demain matin.",
+            "pt": "Você tem razão, é melhor verificar. Vou marcar amanhã de manhã.",
+            "kr": "네 말이 맞아. 검사받는 게 낫겠어. 내일 아침에 예약할게.",
+            "jp": "そうね、検査してもらったほうがいいわね。明日の朝に予約を入れるわ。",
+            "zh": "你说得对，最好检查一下。我明天早上去预约。",
+            "ru": "Ты права, лучше провериться. Запишусь завтра с утра."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты какой-то вялый сегодня. Не заболел?",
+            "en": "Ivan, you're kind of sluggish today. Did you get sick?",
+            "es": "Iván, hoy estás algo decaído. ¿Te has puesto enfermo?",
+            "fr": "Ivan, tu es tout mou aujourd'hui. Tu ne serais pas malade ?",
+            "pt": "Ivan, você está meio sem energia hoje. Você ficou doente?",
+            "kr": "이반, 너 오늘 좀 축 처져 보이네. 아픈 거 아니야?",
+            "jp": "イワン、今日はなんだか元気がないね。病気になったの？",
+            "zh": "伊万，你今天怎么没精打采的。生病了吗？",
+            "ru": "Иван, ты какой-то вялый сегодня. Не заболел?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Живот крутит, и в туалет бегаю чаще обычного.",
+            "en": "My stomach is churning, and I'm running to the bathroom more often than usual.",
+            "es": "Me duele la tripa y voy al baño más a menudo de lo normal.",
+            "fr": "J'ai mal au ventre, et je cours aux toilettes plus souvent que d'habitude.",
+            "pt": "Meu estômago está doendo e estou indo ao banheiro mais vezes que o normal.",
+            "kr": "배가 꼬이는 것 같고, 평소보다 화장실을 더 자주 가게 돼.",
+            "jp": "お腹がグルグルしてて、いつもよりトイレが近いんだ。",
+            "zh": "我肚子不舒服，而且去厕所比平时勤。",
+            "ru": "Живот крутит, и в туалет бегаю чаще обычного."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ой, это неприятно. Что ты ел вчера?",
+            "en": "Oh, that's unpleasant. What did you eat yesterday?",
+            "es": "Vaya, eso es desagradable. ¿Qué comiste ayer?",
+            "fr": "Oh, c'est désagréable. Qu'est-ce que tu as mangé hier ?",
+            "pt": "Nossa, isso é desagradável. O que você comeu ontem?",
+            "kr": "아이고, 그건 곤란하네. 어제 뭐 먹었어?",
+            "jp": "あら、それはつらいね。昨日は何を食べたの？",
+            "zh": "哎呀，那可真难受。你昨天吃什么了？",
+            "ru": "Ой, это неприятно. Что ты ел вчера?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Шаурму из ларька у метро. Видимо, она была несвежая.",
+            "en": "Shawarma from a stand near the metro. I guess it wasn't fresh.",
+            "es": "Un shawarma del puesto cerca del metro. Seguramente estaba en mal estado.",
+            "fr": "Un kebab d'un stand près du métro. Apparemment, il n'était pas frais.",
+            "pt": "Um sanduíche de uma barraquinha perto do metrô. Parece que estava estragado.",
+            "kr": "지하철역 앞 포장마차에서 샤우르마를 먹었어. 아무래도 신선하지 않았나 봐.",
+            "jp": "地下鉄の駅前の屋台でシャウルマを食べたんだ。どうやら傷んでたみたいだ。",
+            "zh": "地铁口小摊卖的沙威玛。看来它不新鲜。",
+            "ru": "Шаурму из ларька у метро. Видимо, она была несвежая."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ясно, пищевое отравление. Пей больше воды и прими активированный уголь.",
+            "en": "I see, food poisoning. Drink more water and take some activated charcoal.",
+            "es": "Ya veo, intoxicación alimentaria. Bebe más agua y toma carbón activado.",
+            "fr": "Je vois, une intoxication alimentaire. Bois beaucoup d'eau et prends du charbon actif.",
+            "pt": "Entendi, intoxicação alimentar. Beba bastante água e tome carvão ativado.",
+            "kr": "그렇구나, 식중독이네. 물을 많이 마시고 약먹어.",
+            "jp": "なるほど、食中毒だね。水をたくさん飲んで、活性炭を飲みなよ。",
+            "zh": "明白了，是食物中毒。多喝水，再吃点活性炭。",
+            "ru": "Ясно, пищевое отравление. Пей больше воды и прими активированный уголь."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Уже выпил две таблетки. Надеюсь, к вечеру полегчает.",
+            "en": "I already took two pills. Hopefully, I'll feel better by evening.",
+            "es": "Ya me he tomado dos pastillas. Espero que para la noche me encuentre mejor.",
+            "fr": "J'ai déjà pris deux comprimés. J'espère que ça ira mieux d'ici ce soir.",
+            "pt": "Já tomei dois comprimidos. Espero que melhore até a noite.",
+            "kr": "벌써 두 알 먹었어. 저녁쯤엔 좀 나아졌으면 좋겠어.",
+            "jp": "もう二錠飲んだよ。夕方には楽になってるといいんだけど。",
+            "zh": "我已经吃了两片了。希望晚上能好点。",
+            "ru": "Уже выпил две таблетки. Надеюсь, к вечеру полегчает."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, почему ты трёшь глаз? Что-то попало?",
+            "en": "Maria, why are you rubbing your eye? Did something get in it?",
+            "es": "María, ¿por qué te frotas el ojo? ¿Te ha entrado algo?",
+            "fr": "Maria, pourquoi tu te frottes l'œil ? Quelque chose est rentré dedans ?",
+            "pt": "Maria, por que você está esfregando o olho? Entrou alguma coisa?",
+            "kr": "마리아, 왜 눈을 비비고 있어? 뭐가 들어갔어?",
+            "jp": "マリア、なんで目をこすってるの？何か入ったの？",
+            "zh": "玛丽亚，你为什么揉眼睛？什么东西进去了吗？",
+            "ru": "Мария, почему ты трёшь глаз? Что-то попало?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не знаю, он покраснел и сильно чешется. Наверное, конъюнктивит.",
+            "en": "I don't know, it's red and really itchy. Probably conjunctivitis.",
+            "es": "No sé, se me ha puesto rojo y me pica mucho. Seguramente es conjuntivitis.",
+            "fr": "Je ne sais pas, il est rouge et il me démange beaucoup. C'est peut-être une conjonctivite.",
+            "pt": "Não sei, ele ficou vermelho e está coçando muito. Deve ser conjuntivite.",
+            "kr": "모르겠어, 눈이 빨개지고 엄청 가려워. 아마 결막염인 것 같아.",
+            "jp": "分からないんだけど、目が赤くなってすごくかゆいの。たぶん結膜炎だと思う。",
+            "zh": "不知道，它红了，而且特别痒。可能是结膜炎。",
+            "ru": "Не знаю, он покраснел и сильно чешется. Наверное, конъюнктивит."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Не три его руками, так только хуже сделаешь. Промой ромашкой.",
+            "en": "Don't rub it with your hands, that'll only make it worse. Rinse it with chamomile.",
+            "es": "No te lo frotes con las manos, así solo lo empeorarás. Lávalo con manzanilla.",
+            "fr": "Ne le frotte pas avec tes mains, tu ne ferais qu'empirer les choses. Rince-le avec de la camomille.",
+            "pt": "Não esfregue com a mão, só vai piorar. Lave com camomila.",
+            "kr": "손으로 비비지 마. 그럼 더 나빠질 뿐이야. 카모마일로 씻어 봐.",
+            "jp": "手でこすっちゃだめだよ、余計に悪くなるから。カモミールで洗いなよ。",
+            "zh": "别用手揉，那样只会更严重。用甘菊水洗洗。",
+            "ru": "Не три его руками, так только хуже сделаешь. Промой ромашкой."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пробовала, но легче не стало.",
+            "en": "I tried, but it didn't get any better.",
+            "es": "Lo he probado, pero no me ha mejorado.",
+            "fr": "J'ai essayé, mais ça ne va pas mieux.",
+            "pt": "Tentei, mas não melhorou.",
+            "kr": "해 봤는데, 나아지지 않았어.",
+            "jp": "試したんだけど、全然楽にならなかったの。",
+            "zh": "我试过了，但没见好。",
+            "ru": "Пробовала, но легче не стало."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда нужны капли. Сходи в аптеку, там есть хорошие противовоспалительные.",
+            "en": "Then you need eye drops. Go to the pharmacy, they have good anti-inflammatory ones.",
+            "es": "Entonces necesitas gotas. Ve a la farmacia, allí tienen buenas antiinflamatorias.",
+            "fr": "Alors il te faut des gouttes. Va à la pharmacie, ils ont de bons anti-inflammatoires.",
+            "pt": "Então precisa de colírio. Vá à farmácia, lá tem bons anti-inflamatórios.",
+            "kr": "그럼 안약이 필요하겠네. 약국에 가 봐. 거기에 좋은 소염 안약이 있어.",
+            "jp": "それなら目薬が必要だね。薬局に行けば、いい抗炎症薬があるよ。",
+            "zh": "那就需要眼药水了。去药店看看吧，那里有好的消炎药。",
+            "ru": "Тогда нужны капли. Сходи в аптеку, там есть хорошие противовоспалительные."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, схожу после работы. Спасибо, что подсказала.",
+            "en": "Okay, I'll go after work. Thanks for the tip.",
+            "es": "Vale, iré después del trabajo. Gracias por decírmelo.",
+            "fr": "D'accord, j'irai après le travail. Merci de me l'avoir dit.",
+            "pt": "Tá bom, vou depois do trabalho. Obrigada pela dica.",
+            "kr": "알겠어, 퇴근하고 들를게. 알려줘서 고마워.",
+            "jp": "分かったわ、仕事が終わったら行ってみる。教えてくれてありがとう。",
+            "zh": "好的，我下班以后去。谢谢你告诉我。",
+            "ru": "Хорошо, схожу после работы. Спасибо, что подсказала."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты какой-то рассеянный. Случилось что-то?",
+            "en": "Sergey, you seem distracted. Did something happen?",
+            "es": "Serguéi, estás algo distraído. ¿Ha pasado algo?",
+            "fr": "Sergueï, tu es distrait. Il s'est passé quelque chose ?",
+            "pt": "Sergei, você está meio distraído. Aconteceu alguma coisa?",
+            "kr": "세르게이, 너 오늘 좀 멍한 것 같아. 무슨 일 있어?",
+            "jp": "セルゲイ、なんだか上の空だね。何かあったの？",
+            "zh": "谢尔盖，你今天怎么心不在焉的。出什么事了吗？",
+            "ru": "Сергей, ты какой-то рассеянный. Случилось что-то?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да вот, зуб разболелся не на шутку. Щеку уже раздуло.",
+            "en": "Yeah, my tooth started hurting like crazy. My cheek is already swollen.",
+            "es": "Pues sí, me ha empezado a doler la muela en serio. Ya se me ha hinchado la mejilla.",
+            "fr": "Eh bien, j'ai un mal de dents pas possible. Ma joue a déjà enflé.",
+            "pt": "É que meu dente começou a doer feio. Minha bochecha já inchou.",
+            "kr": "있지, 이가 진짜 심하게 아프기 시작했어. 벌써 볼이 부었어.",
+            "jp": "ああ、歯がものすごく痛くなってきてさ。頬まで腫れてきたんだ。",
+            "zh": "唉，牙疼得厉害。腮帮子都肿起来了。",
+            "ru": "Да вот, зуб разболелся не на шутку. Щеку уже раздуло."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ого, это похоже на флюс. Тут без стоматолога не обойтись.",
+            "en": "Wow, that looks like a gum abscess. You can't get by without a dentist here.",
+            "es": "Vaya, eso parece una flemón. Aquí no hay más remedio que ir al dentista.",
+            "fr": "Oh là là, ça ressemble à un abcès. Là, pas moyen d'y couper, il faut un dentiste.",
+            "pt": "Nossa, isso parece um abscesso. Aqui não tem jeito sem dentista.",
+            "kr": "와, 그거 치골농양인 것 같다. 치과 선생님 없이는 안 되겠네.",
+            "jp": "わあ、それは歯槽膿漏みたいだね。これは歯医者に行かないと無理だよ。",
+            "zh": "哇，这看起来像牙槽脓肿。这可不能不看牙医。",
+            "ru": "Ого, это похоже на флюс. Тут без стоматолога не обойтись."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Знаю, но запись только через три дня.",
+            "en": "I know, but the next appointment is only in three days.",
+            "es": "Lo sé, pero solo hay cita dentro de tres días.",
+            "fr": "Je sais, mais le prochain rendez-vous n'est que dans trois jours.",
+            "pt": "Eu sei, mas a consulta só tem daqui a três dias.",
+            "kr": "알아, 그런데 예약이 사흘 뒤야.",
+            "jp": "分かってるんだけど、予約が三日後まで取れないんだ。",
+            "zh": "我知道，但预约要排到三天以后。",
+            "ru": "Знаю, но запись только через три дня."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Попробуй позвонить в платную клинику, там обычно принимают сразу.",
+            "en": "Try calling a private clinic, they usually see you right away.",
+            "es": "Prueba a llamar a una clínica privada, allí suelen atender enseguida.",
+            "fr": "Essaie d'appeler une clinique privée, là-bas ils reçoivent généralement tout de suite.",
+            "pt": "Tenta ligar para uma clínica particular, lá geralmente atendem na hora.",
+            "kr": "유료 치과에 전화해 봐. 거기는 보통 바로 봐주더라.",
+            "jp": "民間のクリニックに電話してみたら？そこはだいたいすぐに診てくれるよ。",
+            "zh": "试试给私立诊所打电话吧，那里一般都能马上看。",
+            "ru": "Попробуй позвонить в платную клинику, там обычно принимают сразу."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Верно, позвоню прямо сейчас. Спасибо, что подсказала.",
+            "en": "Right, I'll call right now. Thanks for the tip.",
+            "es": "Tienes razón, llamaré ahora mismo. Gracias por decírmelo.",
+            "fr": "C'est vrai, je vais appeler tout de suite. Merci de me l'avoir dit.",
+            "pt": "Verdade, vou ligar agora mesmo. Obrigado pela dica.",
+            "kr": "맞아, 지금 바로 전화해 볼게. 알려줘서 고마워.",
+            "jp": "そうだね、今すぐ電話してみるよ。教えてくれてありがとう。",
+            "zh": "对，我现在就打。谢谢你提醒我。",
+            "ru": "Верно, позвоню прямо сейчас. Спасибо, что подсказала."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты кашляешь уже вторую неделю. Это нормально?",
+            "en": "Dmitry, you've been coughing for two weeks now. Is that normal?",
+            "es": "Dmitri, llevas dos semanas tosiendo. ¿Es normal?",
+            "fr": "Dimitri, tu tousses depuis deux semaines maintenant. C'est normal ?",
+            "pt": "Dmitri, você está tossindo já faz duas semanas. Isso é normal?",
+            "kr": "드미트리, 너 벌써 이째 기침을 하네. 괜찮은 거야?",
+            "jp": "ドミトリー、もう二週間も咳が続いてるよ。それって普通なの？",
+            "zh": "德米特里，你已经咳嗽两个星期了。这正常吗？",
+            "ru": "Дмитрий, ты кашляешь уже вторую неделю. Это нормально?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не знаю, но кашель сухой и по ночам усиливается.",
+            "en": "I don't know, but the cough is dry and gets worse at night.",
+            "es": "No sé, pero la tos es seca y por la noche empeora.",
+            "fr": "Je ne sais pas, mais la toux est sèche et elle s'aggrave la nuit.",
+            "pt": "Não sei, mas a tosse é seca e piora à noite.",
+            "kr": "모르겠어, 그런데 마른기침이고 밤이 되면 더 심해져.",
+            "jp": "分からないけど、乾いた咳で、夜になるとひどくなるんだ。",
+            "zh": "不知道，但是是干咳，而且晚上咳得更厉害。",
+            "ru": "Не знаю, но кашель сухой и по ночам усиливается."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Может, это бронхит? Ты к врачу ходил?",
+            "en": "Maybe it's bronchitis? Did you see a doctor?",
+            "es": "¿Puede ser bronquitis? ¿Has ido al médico?",
+            "fr": "C'est peut-être une bronchite ? Tu es allé chez le médecin ?",
+            "pt": "Pode ser bronquite? Você foi ao médico?",
+            "kr": "혹시 기관지염 아냐? 병원에 다녀왔어?",
+            "jp": "もしかして気管支炎かもよ？医者には行ったの？",
+            "zh": "会不会是支气管炎？你去看医生了吗？",
+            "ru": "Может, это бронхит? Ты к врачу ходил?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, всё надеялся, что само пройдёт.",
+            "en": "No, I kept hoping it would go away on its own.",
+            "es": "No, esperaba que se me pasara solo.",
+            "fr": "Non, j'espérais toujours que ça passerait tout seul.",
+            "pt": "Não, fiquei esperando passar sozinho.",
+            "kr": "아니, 그냥 저절로 낫겠지 하고 계속 생각했어.",
+            "jp": "ううん、ずっと自然に治ると思ってたんだ。",
+            "zh": "没有，我一直盼着它能自己好。",
+            "ru": "Нет, всё надеялся, что само пройдёт."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Так нельзя. Затяжной кашель — это не шутки. Сходи, послушают лёгкие.",
+            "en": "You can't do that. A lingering cough is no joke. Go, they'll listen to your lungs.",
+            "es": "Así no puede ser. Una tos persistente no es una tontería. Ve, que te escuchen los pulmones.",
+            "fr": "Il ne faut pas faire ça. Une toux qui traîne, ce n'est pas une plaisanterie. Vas-y, qu'on t'écoute les poumons.",
+            "pt": "Não pode assim. Tosse prolongada não é brincadeira. Vai lá para ouvirem seus pulmões.",
+            "kr": "그러면 안 되지. 오래가는 기침은 가볍게 볼 일이 아니야. 가서 진찰받아 봐.",
+            "jp": "そんなのダメだよ。長引く咳は甘く見ちゃいけないよ。行って、肺の音を聞いてもらいなよ。",
+            "zh": "那可不行。咳嗽拖这么久可不是闹着玩的。去看看吧，让医生听听肺。",
+            "ru": "Так нельзя. Затяжной кашель — это не шутки. Сходи, послушают лёгкие."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ты права. Запишусь на приём к терапевту сегодня.",
+            "en": "You're right. I'll book an appointment with a general practitioner today.",
+            "es": "Tienes razón. Pediré cita con el médico de cabecera hoy.",
+            "fr": "Tu as raison. Je vais prendre rendez-vous chez le généraliste aujourd'hui.",
+            "pt": "Você tem razão. Vou marcar uma consulta com o clínico hoje.",
+            "kr": "네 말이 맞아. 오늘 내과 진료 예약할게.",
+            "jp": "君の言う通りだ。今日、内科の予約を入れるよ。",
+            "zh": "你说得对。我今天就去预约内科医生。",
+            "ru": "Ты права. Запишусь на приём к терапевту сегодня."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, у тебя голос пропадает. Простудилась?",
+            "en": "Olga, you're losing your voice. Did you catch a cold?",
+            "es": "Olga, te estás quedando sin voz. ¿Te has resfriado?",
+            "fr": "Olga, tu perds ta voix. Tu as attrapé froid ?",
+            "pt": "Olga, sua voz está sumindo. Você se resfriou?",
+            "kr": "올가, 목소리가 안 나오고 있네. 감기에 걸린 거야?",
+            "jp": "オルガ、声が出なくなってきてるよ。風邪をひいたの？",
+            "zh": "奥尔加，你的声音都哑了。着凉了吗？",
+            "ru": "Ольга, у тебя голос пропадает. Простудилась?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, вчера замёрзла на остановке, и теперь совсем не могу говорить.",
+            "en": "Yeah, I froze at the bus stop yesterday, and now I can barely speak at all.",
+            "es": "Sí, ayer pasé frío en la parada y ahora no puedo hablar nada.",
+            "fr": "Oui, hier j'ai eu froid à l'arrêt de bus, et maintenant je n'arrive plus du tout à parler.",
+            "pt": "Sim, ontem passei frio no ponto de ônibus e agora não consigo falar nada.",
+            "kr": "응, 어제 버스 정류장에서 얼어서 이제 거의 말을 할 수가 없어.",
+            "jp": "うん、昨日バス停で凍えちゃって、今は全然話せないの。",
+            "zh": "是啊，昨天在公交站冻着了，现在完全说不出话了。",
+            "ru": "Да, вчера замёрзла на остановке, и теперь совсем не могу говорить."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Пей тёплое молоко с мёдом и молчи хотя бы день.",
+            "en": "Drink warm milk with honey and stay quiet for at least a day.",
+            "es": "Bebe leche caliente con miel y no hables al menos durante un día.",
+            "fr": "Bois du lait chaud avec du miel et reste silencieuse au moins un jour.",
+            "pt": "Beba leite quente com mel e fique em silêncio pelo menos um dia.",
+            "kr": "따뜻한 우유에 꿀 타서 마시고, 하루만이라도 말을 하지 마.",
+            "jp": "はちみつ入りの温かいミルクを飲んで、少なくとも一日は黙ってなよ。",
+            "zh": "喝点加蜂蜜的热牛奶，至少安静一天。",
+            "ru": "Пей тёплое молоко с мёдом и молчи хотя бы день."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Легко сказать, а как же занятия?",
+            "en": "Easier said than done, what about my classes?",
+            "es": "Es fácil decirlo, ¿y qué pasa con las clases?",
+            "fr": "C'est plus facile à dire qu'à faire, et les cours alors ?",
+            "pt": "É fácil falar, e as aulas?",
+            "kr": "말은 쉬워, 그런데 수업은 어쩌라고?",
+            "jp": "言うのは簡単だけど、授業はどうすればいいの？",
+            "zh": "说得容易，那课怎么办？",
+            "ru": "Легко сказать, а как же занятия?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Попроси у преподавателя запись лекции. Здоровье важнее.",
+            "en": "Ask your teacher for a recording of the lecture. Your health is more important.",
+            "es": "Pídele al profesor la grabación de la clase. La salud es más importante.",
+            "fr": "Demande à ton professeur l'enregistrement du cours. La santé est plus importante.",
+            "pt": "Peça a gravação da aula para o professor. A saúde é mais importante.",
+            "kr": "교수님께 강의 녹음본을 부탁해 봐. 건강이 더 중요하지.",
+            "jp": "先生に講義の録音をもらえばいいよ。健康のほうが大事だよ。",
+            "zh": "跟老师要一下讲课录音。健康更重要。",
+            "ru": "Попроси у преподавателя запись лекции. Здоровье важнее."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Наверное, ты права. Отлежусь денёк и буду пить чай с лимоном.",
+            "en": "You're probably right. I'll rest for a day and drink tea with lemon.",
+            "es": "Seguramente tienes razón. Pasaré el día en cama y beberé té con limón.",
+            "fr": "Tu as sans doute raison. Je vais me reposer un jour et boire du thé au citron.",
+            "pt": "Você provavelmente tem razão. Vou ficar de repouso um dia e tomar chá com limão.",
+            "kr": "네 말이 맞는 것 같아. 하루 푹 쉬면서 레몬차나 마실게.",
+            "jp": "そうだね、君の言う通りだわ。一日休んで、レモンティーを飲むことにするわ。",
+            "zh": "你说得对。我躺一天，然后喝点柠檬茶。",
+            "ru": "Наверное, ты права. Отлежусь денёк и буду пить чай с лимоном."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, ты выглядишь измотанной. Всё в порядке?",
+            "en": "Anna, you look exhausted. Are you okay?",
+            "es": "Anna, tienes aspecto de agotada. ¿Estás bien?",
+            "fr": "Anna, tu as l'air épuisée. Tout va bien ?",
+            "pt": "Anna, você está com aparência exausta. Tudo bem?",
+            "kr": "안나, 너 완전히 지쳐 보여. 괜찮아?",
+            "jp": "アンナ、すごく疲れて見えるよ。大丈夫？",
+            "zh": "安娜，你看起来很疲惫。你没事吧？",
+            "ru": "Анна, ты выглядишь измотанной. Всё в порядке?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Давление скачет, и голова кружится при резких движениях.",
+            "en": "My blood pressure keeps jumping, and I get dizzy with sudden movements.",
+            "es": "Me sube y me baja la tensión, y me mareo con los movimientos bruscos.",
+            "fr": "Ma tension artérielle fluctue, et j'ai des vertiges quand je fais des mouvements brusques.",
+            "pt": "Minha pressão está oscilando e sinto tontura quando me movimento de repente.",
+            "kr": "혈압이 들쭉날쭉하고, 갑자기 움직이면 어지러워.",
+            "jp": "血圧が乱高下してて、急に動くとめまいがするの。",
+            "zh": "血压不稳定，而且猛一站起来就头晕。",
+            "ru": "Давление скачет, и голова кружится при резких движениях."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это опасно. Ты мерила давление сегодня?",
+            "en": "That's dangerous. Did you measure your blood pressure today?",
+            "es": "Eso es peligroso. ¿Te has medido la tensión hoy?",
+            "fr": "C'est dangereux. Tu as pris ta tension aujourd'hui ?",
+            "pt": "Isso é perigoso. Você mediu a pressão hoje?",
+            "kr": "그건 위험한 거야. 오늘 혈압 재 봤어?",
+            "jp": "それは危ないよ。今日、血圧は測った？",
+            "zh": "这很危险。你今天量血压了吗？",
+            "ru": "Это опасно. Ты мерила давление сегодня?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, утром было сто сорок на девяносто.",
+            "en": "Yes, this morning it was one forty over ninety.",
+            "es": "Sí, por la mañana tenía ciento cuarenta sobre noventa.",
+            "fr": "Oui, ce matin elle était à cent quarante sur quatre-vingt-dix.",
+            "pt": "Sim, de manhã estava cento e quarenta por noventa.",
+            "kr": "응, 아침에 백사십에 구십이었어.",
+            "jp": "うん、朝は百四十の九十だったの。",
+            "zh": "量了，早上是一百四十九十。",
+            "ru": "Да, утром было сто сорок на девяносто."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это многовато. Тебе нужно к врачу, возможно, скорректировать лечение.",
+            "en": "That's a bit high. You need to see a doctor, maybe adjust your treatment.",
+            "es": "Eso es algo alta. Tienes que ir al médico, quizá haya que ajustar el tratamiento.",
+            "fr": "C'est un peu élevé. Il faut que tu voies un médecin, peut-être pour ajuster ton traitement.",
+            "pt": "Isso está um pouco alto. Você precisa ir ao médico, talvez ajustar o tratamento.",
+            "kr": "그건 좀 높은 거야. 병원에 가서 치료를 조정해야 할 것 같아.",
+            "jp": "それはちょっと高いね。医者に行ったほうがいいよ、もしかしたら治療を調整する必要があるかも。",
+            "zh": "这有点高了。你需要去看医生，可能需要调整治疗方案。",
+            "ru": "Это многовато. Тебе нужно к врачу, возможно, скорректировать лечение."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я записалась на приём на завтра. Надеюсь, ничего серьёзного.",
+            "en": "I booked an appointment for tomorrow. I hope it's nothing serious.",
+            "es": "He pedido cita para mañana. Espero que no sea nada grave.",
+            "fr": "J'ai pris rendez-vous pour demain. J'espère que ce n'est rien de grave.",
+            "pt": "Já marquei uma consulta para amanhã. Espero que não seja nada sério.",
+            "kr": "내일 진료 예약해 뒀어. 별일 아니길 바라.",
+            "jp": "明日の予約はもう入れてあるの。大したことじゃないといいんだけど。",
+            "zh": "我已经预约了明天的门诊。希望没什么大问题。",
+            "ru": "Я записалась на приём на завтра. Надеюсь, ничего серьёзного."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты сегодня не в духе. Что случилось?",
+            "en": "Ivan, you're in a bad mood today. What happened?",
+            "es": "Iván, hoy estás de mal humor. ¿Qué ha pasado?",
+            "fr": "Ivan, tu n'es pas dans ton assiette aujourd'hui. Qu'est-ce qui se passe ?",
+            "pt": "Ivan, você está de mau humor hoje. O que aconteceu?",
+            "kr": "이반, 너 오늘 기분이 안 좋아 보여. 무슨 일 있어?",
+            "jp": "イワン、今日は機嫌が悪そうだね。どうしたの？",
+            "zh": "伊万，你今天心情不好。怎么了？",
+            "ru": "Иван, ты сегодня не в духе. Что случилось?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да вот, спину прихватило. Разогнуться не могу после тренировки.",
+            "en": "Yeah, my back seized up. I can't straighten up after my workout.",
+            "es": "Pues me ha dado un tirón en la espalda. No puedo enderezarme después del entrenamiento.",
+            "fr": "Eh bien, j'ai le dos coincé. Je n'arrive pas à me redresser après l'entraînement.",
+            "pt": "É que minhas costas travaram. Não consigo me endireitar depois do treino.",
+            "kr": "있지, 허리가 끊어질 듯 아파. 운동 후에 몸을 펼 수가 없어.",
+            "jp": "ああ、腰が痛くてさ。トレーニングの後から、伸びができなくなっちゃって。",
+            "zh": "唉，腰疼得厉害。健身后都直不起腰了。",
+            "ru": "Да вот, спину прихватило. Разогнуться не могу после тренировки."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Наверное, потянул мышцу. Нужен покой и мазь согревающая.",
+            "en": "Probably pulled a muscle. You need rest and a warming ointment.",
+            "es": "Seguramente te has hecho una distensión muscular. Necesitas reposo y una pomada caliente.",
+            "fr": "Tu as dû te froisser un muscle. Il te faut du repos et une pommade chauffante.",
+            "pt": "Deve ter distendido um músculo. Precisa de repouso e uma pomada de aquecimento.",
+            "kr": "아마 근육을 당긴 것 같다. 휴식을 취하고 따뜻하게 하는 연고를 발라야 해.",
+            "jp": "たぶん筋肉を痛めたんだね。安静にして、温める軟膏を塗りなよ。",
+            "zh": "可能是肌肉拉伤了。需要休息，再抹点热敷的药膏。",
+            "ru": "Наверное, потянул мышцу. Нужен покой и мазь согревающая."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пробовал, но боль только усиливается.",
+            "en": "I tried, but the pain only gets worse.",
+            "es": "Lo he probado, pero el dolor solo aumenta.",
+            "fr": "J'ai essayé, mais la douleur ne fait qu'empirer.",
+            "pt": "Tentei, mas a dor só aumenta.",
+            "kr": "해 봤는데, 통증이 더 심해지기만 해.",
+            "jp": "試したんだけど、痛みがひどくなるばかりなんだ。",
+            "zh": "我试过了，但疼痛反而更厉害了。",
+            "ru": "Пробовал, но боль только усиливается."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда обязательно сходи к врачу. Может, это что-то с позвоночником.",
+            "en": "Then you definitely need to see a doctor. Maybe it's something with your spine.",
+            "es": "Entonces tienes que ir sí o sí al médico. Puede ser algo de la columna.",
+            "fr": "Alors il faut absolument que tu ailles chez le médecin. Ça pourrait être quelque chose au niveau de la colonne vertébrale.",
+            "pt": "Então você precisa mesmo ir ao médico. Pode ser algo com a coluna.",
+            "kr": "그럼 꼭 병원에 가 봐. 혹시 척추에 문제가 있는 걸 수도 있어.",
+            "jp": "それなら絶対に医者に行きなよ。もしかしたら背骨に何かあるかもよ。",
+            "zh": "那就一定要去看医生了。可能是脊椎的问题。",
+            "ru": "Тогда обязательно сходи к врачу. Может, это что-то с позвоночником."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ты права, не буду геройствовать. Запишусь к неврологу.",
+            "en": "You're right, I won't play the hero. I'll book an appointment with a neurologist.",
+            "es": "Tienes razón, no voy a hacer de héroe. Pediré cita con el neurólogo.",
+            "fr": "Tu as raison, je ne vais pas faire le héros. Je vais prendre rendez-vous chez un neurologue.",
+            "pt": "Você tem razão, não vou bancar o herói. Vou marcar com o neurologista.",
+            "kr": "네 말이 맞아, 무리하지 않을게. 신경과에 예약할게.",
+            "jp": "君の言う通りだ、無理はしないよ。神経内科の予約を入れるよ。",
+            "zh": "你说得对，我不逞强了。我去预约神经科医生。",
+            "ru": "Ты права, не буду геройствовать. Запишусь к неврологу."
+          }
+        }
+      ]
+    }
+  ]
+}

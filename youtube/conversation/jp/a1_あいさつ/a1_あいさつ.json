@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "001"
+  },
+  "title": {
+    "target": "あいさつ",
+    "en": "Greetings",
+    "es": "Saludos",
+    "fr": "Les salutations",
+    "pt": "Cumprimentos",
+    "kr": "인사",
+    "zh": "问候",
+    "jp": "あいさつ",
+    "ru": "Приветствие"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "おはよう、元気？",
+            "en": "Good morning, how are you?",
+            "es": "Buenos días, ¿estás bien?",
+            "fr": "Bonjour, ça va ?",
+            "pt": "Bom dia, estás bem?",
+            "kr": "좋은 아침, 기분 어때?",
+            "zh": "早上好，你好吗？",
+            "jp": "おはよう、元気？",
+            "ru": "Доброе утро, как дела?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "うん、元気だよ。今日はいい天気だね。",
+            "en": "Yeah, I'm doing well. It's nice weather today, isn't it?",
+            "es": "Sí, estoy bien. Hoy hace buen tiempo, ¿verdad?",
+            "fr": "Ouais, ça va bien. Il fait beau aujourd'hui, hein ?",
+            "pt": "Sim, estou bem. Hoje está um bom dia, não está?",
+            "kr": "응, 기분 좋아. 오늘 날씨가 좋네.",
+            "zh": "嗯，我挺好的。今天天气真好啊。",
+            "jp": "うん、元気だよ。今日はいい天気だね。",
+            "ru": "Хорошо, спасибо. Сегодня хорошая погода."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "本当だね。散歩に行かない？",
+            "en": "That's true. Want to go for a walk?",
+            "es": "Es verdad. ¿Vamos a dar un paseo?",
+            "fr": "C'est vrai. On va se promener ?",
+            "pt": "É verdade. Vamos dar um passeio?",
+            "kr": "정말 그렇네. 산책하러 갈래?",
+            "zh": "是啊。要不要去散散步？",
+            "jp": "本当だね。散歩に行かない？",
+            "ru": "Правда. Пойдём на прогулку?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "いいね。公園まで行こうか。",
+            "en": "Sounds good. Want to head to the park?",
+            "es": "Me parece bien. ¿Vamos al parque?",
+            "fr": "Bonne idée. On va jusqu'au parc ?",
+            "pt": "Boa ideia. Vamos até ao parque?",
+            "kr": "좋지. 공원까지 갈까?",
+            "zh": "好啊。去公园吧。",
+            "jp": "いいね。公園まで行こうか。",
+            "ru": "Давай. Пойдём до парка."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "いいよ。楽しみだな。",
+            "en": "Sure. I'm looking forward to it.",
+            "es": "Vale. Tengo ganas.",
+            "fr": "D'accord. J'ai hâte.",
+            "pt": "Está bem. Estou ansioso por isso.",
+            "kr": "좋아. 기대되는데.",
+            "zh": "好的。真期待啊。",
+            "jp": "いいよ。楽しみだな。",
+            "ru": "Хорошо. С нетерпением жду."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "じゃあ、行こう。",
+            "en": "Alright, let's go.",
+            "es": "Entonces, vamos.",
+            "fr": "Alors, allons-y.",
+            "pt": "Então, vamos.",
+            "kr": "그럼, 가자.",
+            "zh": "那，走吧。",
+            "jp": "じゃあ、行こう。",
+            "ru": "Тогда пошли."
+          }
+        }
+      ]
+    }
+  ]
+}

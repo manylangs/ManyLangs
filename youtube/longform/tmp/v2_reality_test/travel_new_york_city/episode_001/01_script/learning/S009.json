@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S009",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "source_dialogue": {
+    "source_scene_id": "S009",
+    "source_line_ids": [
+      "L001",
+      "L002",
+      "L003",
+      "L004",
+      "L005",
+      "L006"
+    ]
+  },
+  "key_expressions": [
+    {
+      "key_expression_id": "KE001",
+      "source_line_ids": [
+        "L001"
+      ],
+      "expression": "How do I pay for it?",
+      "meaning": "지하철 요금을 어떻게 내는지 묻는 표현이다.",
+      "usage": "교통수단 요금, 입장료, 물건값 등 지불 방법을 모를 때 상대방에게 묻는 데 쓴다. 캐주얼한 상황부터 공공장소에서 직원에게 묻는 상황까지 두루 쓰인다.",
+      "context": "지하철역에 도착한 지은이 역무원에게 지하철을 타려면 요금을 어떻게 내는지 모른다고 묻는 상황이다.",
+      "communicative_function": "asking for information",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "How do I pay?",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE002",
+      "source_line_ids": [
+        "L002"
+      ],
+      "expression": "You can buy a ticket at the machine over there.",
+      "meaning": "저쪽에 있는 기계에서 표를 살 수 있다고 안내하는 표현이다.",
+      "usage": "상대방에게 특정 장소에서 무언가를 할 수 있다고 안내할 때 쓴다. 'You can ~'은 가능함을 나타내는 기본적인 표현으로, 길 안내나 서비스 안내에서 자주 쓰인다.",
+      "context": "역무원이 지은이에게 지하철 표를 어디서 사는지 알려주며 저쪽에 있는 티켓 기계를 가리키는 상황이다.",
+      "communicative_function": "giving directions",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "You can get a ticket from the machine over there.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE003",
+      "source_line_ids": [
+        "L003"
+      ],
+      "expression": "Which train should I take to go to Manhattan?",
+      "meaning": "맨해튼에 가려면 어떤 기차를 타야 하는지 묻는 표현이다.",
+      "usage": "목적지까지 가기 위해 어떤 교통수단이나 노선을 이용해야 하는지 물을 때 쓴다. 'Which ~ should I take' 패턴은 교통수단 선택뿐 아니라 다양한 선택 상황에서 활용할 수 있다.",
+      "context": "지은이가 표를 사는 방법을 안내받은 후, 이어서 맨해튼으로 가려면 어떤 기차를 타야 하는지 역무원에게 묻는 상황이다.",
+      "communicative_function": "asking for directions",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "Which train goes to Manhattan?",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE004",
+      "source_line_ids": [
+        "L004"
+      ],
+      "expression": "Take the train that says Downtown.",
+      "meaning": "'Downtown'이라고 적힌 기차를 타라는 안내 표현이다.",
+      "usage": "특정 표시나 이름이 있는 교통수단을 타라고 안내할 때 쓴다. 'the train that says ~'은 기차나 버스의 행선지 표시를 보고 판단하라는 의미로, 실제 교통 안내에서 자주 쓰이는 실용적인 표현이다.",
+      "context": "역무원이 지은이에게 맨해튼으로 가려면 'Downtown'이라고 적힌 기차를 타라고 구체적으로 안내하는 상황이다.",
+      "communicative_function": "giving directions",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "Take the Downtown train.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE005",
+      "source_line_ids": [
+        "L005"
+      ],
+      "expression": "So I buy a ticket first, and then I take that train?",
+      "meaning": "그럼 먼저 표를 사고, 그다음에 그 기차를 타면 되는지 확인하는 표현이다.",
+      "usage": "상대방의 안내를 들은 후 순서나 절차를 확인할 때 쓴다. 'So ~ first, and then ~?' 패턴은 여러 단계가 있는 일의 순서를 확인할 때 유용하다. 상대방의 말을 정리하며 확인하는 의미가 있다.",
+      "context": "지은이가 역무원의 안내를 듣고, 표를 사는 것과 기차를 타는 것의 순서를 정확히 이해했는지 확인하기 위해 되묻는 상황이다.",
+      "communicative_function": "confirming information",
+      "difficulty": "A2",
+      "priority": "useful",
+      "variation": "So I need to buy a ticket first, right?",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE006",
+      "source_line_ids": [
+        "L006"
+      ],
+      "expression": "That's right.",
+      "meaning": "상대방의 말이 맞다고 확인해 주는 표현이다.",
+      "usage": "상대방의 질문이나 확인에 대해 '맞아요', '그래요'라고 긍정할 때 쓴다. 짧고 간단하지만 일상 대화에서 매우 자주 쓰이는 핵심 표현이다.",
+      "context": "역무원이 지은이의 확인 질문에 대해 그녀의 이해가 정확하다고 긍정해 주는 상황이다.",
+      "communicative_function": "confirming information",
+      "difficulty": "A1",
+      "priority": "core",
+      "variation": "That's correct.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    }
+  ],
+  "validation": {
+    "expression_count": 6,
+    "all_expressions_exist_in_dialogue": true,
+    "source_lines_valid": true,
+    "cefr_appropriate": true
+  }
+}

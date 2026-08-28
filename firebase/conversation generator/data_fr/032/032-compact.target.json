@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Hôpital et pharmacie",
+  "sets": {
+    "001": [
+      "Bonjour, je voudrais voir un médecin, je ne me sens pas bien.",
+      "Bonjour madame, avez-vous pris rendez-vous ?",
+      "Non, pas du tout, c'est assez urgent.",
+      "Je vois. Asseyez-vous, le docteur va vous recevoir rapidement.",
+      "Merci beaucoup, je suis vraiment fatiguée.",
+      "Ne vous inquiétez pas, on va s'occuper de vous."
+    ],
+    "002": [
+      "J'ai très mal à la gorge depuis hier soir.",
+      "Ah bon ? Est-ce que vous avez de la fièvre ?",
+      "Oui, j'ai un peu de température, trente-huit degrés.",
+      "D'accord, je vais vous prescrire des antibiotiques.",
+      "Est-ce qu'il faut que je reste au lit ?",
+      "Oui, reposez-vous et buvez beaucoup d'eau."
+    ],
+    "003": [
+      "Bonjour, je viens chercher des médicaments pour ma mère.",
+      "Bonjour, puis-je voir votre ordonnance ?",
+      "La voici, elle est tombée et elle s'est fait mal au genou.",
+      "Je vois, je vous prépare ça tout de suite.",
+      "Est-ce que c'est remboursé par la sécurité sociale ?",
+      "Oui, à quatre-vingts pour cent, c'est noté sur le document."
+    ],
+    "004": [
+      "Allô, je dois annuler mon rendez-vous chez le médecin.",
+      "Pas de souci, je note l'annulation. Vous voulez le reporter ?",
+      "Oui, si possible la semaine prochaine.",
+      "Je vous propose jeudi à quatorze heures, ça vous va ?",
+      "Parfait, jeudi à quatorze heures, c'est noté.",
+      "Très bien, à jeudi et bon rétablissement."
+    ],
+    "005": [
+      "Excusez-moi, où se trouve la pharmacie la plus proche ?",
+      "Il y en a une juste au coin de la rue, à deux minutes à pied.",
+      "Parfait, j'ai besoin de quelque chose contre la toux.",
+      "Vous avez une ordonnance ou vous cherchez un médicament libre ?",
+      "Sans ordonnance, quelque chose de doux.",
+      "Je vous conseille ce sirop, il est très efficace."
+    ],
+    "006": [
+      "Docteur, j'ai des vertiges depuis ce matin.",
+      "Depuis ce matin seulement ? Est-ce que vous avez mangé ?",
+      "J'ai pris juste un café, je n'avais pas faim.",
+      "C'est peut-être une baisse de tension, il faut manger correctement.",
+      "D'accord, je vais faire attention.",
+      "Et si ça continue, revenez nous voir sans hésiter."
+    ],
+    "007": [
+      "Bonsoir, je viens chercher des médicaments pour mon fils.",
+      "Bonsoir, vous avez l'ordonnance du pédiatre ?",
+      "Oui, la voilà. Il a une otite.",
+      "Je vois, je vous donne les gouttes et le sirop.",
+      "Merci, est-ce qu'il faut le garder à la maison ?",
+      "Oui, quelques jours, et évitez les courants d'air."
+    ],
+    "008": [
+      "J'ai mal au dos depuis que j'ai déménagé.",
+      "Ah, vous avez dû faire des efforts importants ?",
+      "Oui, j'ai porté des cartons toute la journée.",
+      "Je vais vous prescrire des séances de kinésithérapie.",
+      "Combien de séances est-ce que je dois faire ?",
+      "Six séances pour commencer, et on verra l'évolution."
+    ],
+    "009": [
+      "Bonjour, je voudrais un avis sur cette crème solaire.",
+      "Bien sûr, vous l'utilisez pour quel type de peau ?",
+      "Pour ma fille, elle a la peau très sensible.",
+      "Dans ce cas, je vous recommande celle-ci, sans parfum.",
+      "Parfait, et est-ce qu'elle résiste à l'eau ?",
+      "Oui, elle est très résistante, même à la piscine."
+    ],
+    "010": [
+      "Docteur, je suis venu pour les résultats de mes analyses.",
+      "Oui, je les ai reçus, tout est normal.",
+      "Ah, quel soulagement, j'étais très inquiet.",
+      "Vous n'avez aucune raison de vous inquiéter, tout va bien.",
+      "Merci docteur, je suis vraiment rassuré.",
+      "Je vous en prie, continuez à prendre soin de vous."
+    ]
+  },
+  "level": "b2",
+  "chapter_id": "CONV_FR_HOSPITAL_PHARMACY",
+  "id": "032",
+  "target_lang": "fr"
+}

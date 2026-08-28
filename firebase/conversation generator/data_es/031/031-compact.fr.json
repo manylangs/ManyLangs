@@ -1,0 +1,87 @@
+{
+  "lang": "fr",
+  "title": "Opérations bancaires",
+  "sets": {
+    "001": [
+      "Bonjour, je souhaitais ouvrir un compte courant, s'il vous plaît.",
+      "Bien sûr, puis-je voir votre pièce d'identité et un justificatif de domicile ?",
+      "Oui, voici mon passeport et la facture d'électricité.",
+      "Parfait, tout est en règle. Souhaitez-vous aussi une carte de débit ?",
+      "Oui, s'il vous plaît, et je voulais savoir si le compte a des frais.",
+      "Non, ce compte est gratuit si vous maintenez un solde minimum de trois cents euros."
+    ],
+    "002": [
+      "Bonjour, j'ai besoin de faire un virement vers une autre banque.",
+      "D'accord, pouvez-vous me donner le montant et le numéro de compte du destinataire ?",
+      "C'est deux cent cinquante euros, et voici le numéro de compte.",
+      "Très bien, voulez-vous que le virement soit immédiat ou ordinaire ?",
+      "Je préfère qu'il soit immédiat, s'il vous plaît.",
+      "Compris, il sera effectué dans quelques secondes. Avez-vous besoin d'autre chose ?"
+    ],
+    "003": [
+      "J'ai perdu ma carte de crédit et je suis très inquiète.",
+      "Ne vous inquiétez pas, nous la bloquons tout de suite. Quand l'avez-vous vue pour la dernière fois ?",
+      "Je l'ai utilisée ce matin dans un distributeur et je crois que je l'y ai oubliée.",
+      "Elle est déjà bloquée. Nous vous en délivrerons une nouvelle dans quelques jours ouvrés.",
+      "Et puis-je continuer à utiliser l'application pour payer entre-temps ?",
+      "Oui, vous pouvez utiliser le téléphone pour payer sans aucun problème."
+    ],
+    "004": [
+      "Je souhaitais souscrire une assurance voyage pour le mois prochain.",
+      "Très bien, pouvez-vous me dire la destination et la durée du voyage ?",
+      "Je vais au Japon pendant deux semaines.",
+      "Nous avons plusieurs options. Une couverture complète avec assistance médicale vous intéresse-t-elle ?",
+      "Oui, je préfère celle qui a la meilleure couverture sanitaire.",
+      "Alors je vous recommande la formule premium, qui inclut l'annulation et les bagages."
+    ],
+    "005": [
+      "J'ai besoin de changer ces dollars en euros, s'il vous plaît.",
+      "Bien sûr, pouvez-vous me montrer votre passeport, s'il vous plaît ? C'est nécessaire pour l'opération.",
+      "Le voici. Quel est le taux de change aujourd'hui ?",
+      "Il est à zéro virgule quatre-vingt-douze. Combien de dollars voulez-vous changer ?",
+      "Cinq cents dollars, s'il vous plaît.",
+      "Parfait, cela fait quatre cent soixante euros. Voici l'argent et le reçu."
+    ],
+    "006": [
+      "Bonjour, je viens chercher une nouvelle carte que j'ai demandée la semaine dernière.",
+      "Laissez-moi vérifier avec votre pièce d'identité, s'il vous plaît. Pouvez-vous me donner votre carte d'identité ?",
+      "Oui, la voici. Est-elle déjà disponible ?",
+      "Un instant, s'il vous plaît... Oui, la voici. Voulez-vous que je vous explique comment l'activer ?",
+      "Oui, s'il vous plaît, je ne sais pas très bien comment ça fonctionne.",
+      "C'est très simple : il faut appeler le numéro qui figure sur l'autocollant."
+    ],
+    "007": [
+      "Cela fait plusieurs jours que je n'arrive pas à accéder à la banque en ligne.",
+      "Je comprends, quel message apparaît quand vous essayez de vous connecter ?",
+      "Il me dit que le mot de passe n'est pas correct, mais je suis sûre de bien l'écrire.",
+      "Cela peut être un problème de sécurité. Nous allons vous le réinitialiser tout de suite.",
+      "Et je devrai reconfigurer quelque chose sur le téléphone ?",
+      "Oui, nous vous enverrons un code par SMS pour que vous activiez le nouveau mot de passe."
+    ],
+    "008": [
+      "Je souhaitais domicilier la facture de la copropriété sur mon compte.",
+      "D'accord, pouvez-vous m'apporter le document bancaire du fournisseur du service ?",
+      "Oui, voici le formulaire rempli et signé.",
+      "Parfait, pouvez-vous me confirmer le numéro de compte où vous voulez la domicilier ?",
+      "C'est celui qui figure en bas du formulaire.",
+      "Très bien, le prélèvement automatique sera actif dans quelques jours."
+    ],
+    "009": [
+      "Je voudrais demander un prêt personnel pour rénover la cuisine.",
+      "Très bien, de quel montant avez-vous besoin et en combien d'années voulez-vous le rembourser ?",
+      "J'ai besoin de huit mille euros et je voudrais les rembourser en cinq ans.",
+      "D'accord, avec votre bulletin de salaire et votre historique, il n'y aura pas de problème. Je vous prépare la demande.",
+      "Combien de temps faudra-t-il pour avoir une réponse ?",
+      "Normalement, entre deux et trois jours ouvrés."
+    ],
+    "010": [
+      "Bonjour, je souhaitais clôturer mon compte parce que je déménage dans un autre pays.",
+      "Compris, pouvez-vous me donner le numéro de compte et me confirmer que vous n'avez aucun prélèvement en attente ?",
+      "Oui, le numéro est celui-ci et je n'ai aucun prélèvement en attente.",
+      "Parfait, souhaitez-vous que le solde restant soit transféré sur un autre compte ?",
+      "Oui, s'il vous plaît, sur mon compte à la banque en Allemagne.",
+      "D'accord, vous recevrez la confirmation de la clôture dans quelques jours."
+    ]
+  },
+  "id": "031"
+}

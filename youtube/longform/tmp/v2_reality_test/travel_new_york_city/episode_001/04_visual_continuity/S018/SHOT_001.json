@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S018",
+  "shot_id": "SHOT_001",
+  "character_states": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Small crossbody bag",
+        "Smartphone",
+        "Hotel room key"
+      ],
+      "body_state": [
+        "Standing by the window",
+        "Turning away from the window",
+        "Facing the room"
+      ],
+      "emotion": "settled and curious"
+    }
+  ],
+  "location_state": {
+    "location_ref": "LOC_MANHATTAN_HOTEL_001",
+    "identity_lock": true,
+    "persistent_features": [
+      "Hotel lobby with front desk",
+      "Elevator area",
+      "Guest room with bed, desk, and window",
+      "City view from the room window",
+      "Hotel signage and entrance"
+    ],
+    "current_zone": "Hotel guest room, by the window",
+    "orientation_state": [
+      "Jieun is turning away from the window",
+      "Jieun is facing the room",
+      "Window with city view is behind Jieun",
+      "Bed with crossbody bag is in front of Jieun",
+      "Desk with room key is to the side"
+    ]
+  },
+  "prop_states": [
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "placed on the bed",
+      "position": "on the bed",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_ROOM_KEY_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "on the desk",
+      "position": "on the desk",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "in her hand or pocket",
+      "position": "in Jieun's hand or pocket",
+      "visible": false,
+      "continuity_lock": true
+    }
+  ],
+  "environment_state": {
+    "time_of_day": "day",
+    "weather": null,
+    "lighting": "bright natural daylight coming through the hotel room window, mixed with soft indoor lighting",
+    "crowd_state": "quiet indoor atmosphere typical of an empty hotel room, faint sounds of the city from outside the window"
+  },
+  "story_visual_state": {
+    "resolved_visual_facts": [
+      "Jieun has arrived at the Manhattan Hotel",
+      "Jieun has entered the hotel lobby from the entrance",
+      "Jieun has approached the front desk",
+      "Jieun has provided her reservation details",
+      "The front desk employee has confirmed the reservation",
+      "The front desk employee has handed the room key to Jieun",
+      "Jieun is now holding the room key in her hand",
+      "Jieun has thanked the employee",
+      "Jieun has walked to the elevator and taken it to her floor",
+      "Jieun has entered her hotel room",
+      "Jieun has put down her backpack and suitcase near the bed or luggage rack",
+      "Jieun has walked to the window and is looking out at the city view",
+      "Jieun has turned away from the window and is facing the room"
+    ],
+    "unresolved_visual_facts": [],
+    "must_remain_visible": [
+      "Jieun facing the room, ready to prepare for her walk",
+      "Jieun's crossbody bag on the bed",
+      "Jieun's room key on the desk"
+    ],
+    "must_not_appear": [
+      "Jieun leaving the hotel room",
+      "Jieun's suitcase being lost or missing",
+      "Jieun's passport or smartphone being dropped or lost",
+      "A new travel problem being introduced",
+      "Jieun's backpack or suitcase being picked up again before the next shot"
+    ]
+  },
+  "continuity_links": {
+    "previous_scene_id": "S017",
+    "previous_shot_id": "SHOT_004",
+    "next_scene_id": "S018",
+    "next_shot_id": "SHOT_002",
+    "carry_in": [
+      "Jieun is standing by the window, looking out at the city view",
+      "She has a settled and comfortable expression",
+      "Her bags remain placed down near the bed or luggage rack"
+    ],
+    "carry_out": [
+      "Jieun is facing the room, ready to prepare for her walk",
+      "Her crossbody bag is on the bed",
+      "Her room key is on the desk",
+      "She has a settled and curious expression"
+    ]
+  },
+  "locks": {
+    "character_identity": true,
+    "clothing": true,
+    "location_identity": true,
+    "prop_state": true,
+    "timeline": true,
+    "weather": true,
+    "story_state": true
+  }
+}

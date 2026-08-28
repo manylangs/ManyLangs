@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Serviços bancários",
+  "sets": {
+    "001": [
+      "Bom dia! Preciso abrir uma conta corrente aqui.",
+      "Bom dia! Pode sim. A senhora trouxe seus documentos?",
+      "Trouxe o documento e o comprovante de residência.",
+      "Perfeito. Vou precisar também do seu CPF.",
+      "Claro, aqui está. Quanto tempo demora para ficar pronta?",
+      "Em geral, fica pronta em até dois dias úteis."
+    ],
+    "002": [
+      "Oi, meu cartão foi bloqueado por engano.",
+      "Que situação chata! A senhora lembra quando isso aconteceu?",
+      "Aconteceu hoje de manhã, quando tentei fazer uma compra.",
+      "Deixa eu verificar aqui no sistema. Qual é o número da conta?",
+      "É a conta poupança que termina em quatrocentos e doze.",
+      "Encontrei. Já estou desbloqueando para a senhora."
+    ],
+    "003": [
+      "Preciso fazer uma transferência para outro banco.",
+      "Sem problema. A transferência é para uma conta de qual banco?",
+      "É para o banco do meu irmão, o Banco do Brasil.",
+      "Entendi. A senhora tem os dados completos dele?",
+      "Tenho sim, a agência e a conta aqui no papel.",
+      "Ótimo. Vou fazer a transferência agora mesmo."
+    ],
+    "004": [
+      "Quero saber o saldo da minha conta.",
+      "Claro. A senhora pode consultar no aplicativo também.",
+      "Eu sei, mas o aplicativo não está abrindo no meu celular.",
+      "Entendo. Vou verificar aqui. Qual é o seu CPF?",
+      "É o que está cadastrado no sistema, o meu mesmo.",
+      "Certo. O saldo atual é de dois mil e trezentos reais."
+    ],
+    "005": [
+      "Preciso pagar uma conta de luz que vence amanhã.",
+      "Pode pagar aqui no caixa ou no aplicativo.",
+      "Prefiro pagar aqui mesmo, para garantir.",
+      "Sem problema. A senhora tem o código de barras?",
+      "Tenho sim, está no aplicativo da companhia.",
+      "Perfeito. Vou registrar o pagamento para a senhora."
+    ],
+    "006": [
+      "Meu extrato veio com uma cobrança que não reconheço.",
+      "Vamos verificar isso. A senhora tem o extrato em mãos?",
+      "Tenho, olha aqui essa tarifa de manutenção.",
+      "Essa tarifa é do pacote de serviços da conta.",
+      "Mas eu não pedi esse pacote, foi um erro.",
+      "A senhora tem razão. Vou estornar a cobrança agora."
+    ],
+    "007": [
+      "Quero aumentar o limite do meu cartão de crédito.",
+      "Vou verificar o seu perfil aqui no sistema.",
+      "Uso o cartão todos os meses e pago em dia.",
+      "Isso ajuda bastante na análise. Qual é a sua renda?",
+      "Minha renda mensal é de cinco mil reais.",
+      "Com esse valor, consigo aumentar o limite para oito mil."
+    ],
+    "008": [
+      "Esqueci minha senha do aplicativo do banco.",
+      "Sem problema, a senhora pode redefinir pelo próprio aplicativo.",
+      "Tentei, mas não recebo o código de confirmação.",
+      "Vou verificar se o número de celular está atualizado.",
+      "Está sim, é o mesmo de sempre.",
+      "Então vou enviar um novo código para a senhora agora."
+    ],
+    "009": [
+      "Preciso de um financiamento para comprar um carro.",
+      "Temos várias opções de crédito. A senhora já tem uma ideia do valor?",
+      "Preciso de uns quarenta mil reais.",
+      "E em quantas parcelas a senhora gostaria de pagar?",
+      "Se possível, em quarenta e oito vezes.",
+      "Vou simular as condições e te apresento as opções."
+    ],
+    "010": [
+      "Quero cancelar uma assinatura que fiz no cartão.",
+      "A senhora se refere a qual assinatura exatamente?",
+      "É um serviço de streaming que não uso mais.",
+      "Entendi. A senhora já tentou cancelar pelo site da empresa?",
+      "Tentei, mas o site não conclui o cancelamento.",
+      "Vou registrar uma contestação para a senhora aqui."
+    ]
+  },
+  "level": "b2",
+  "chapter_id": "CONV_PT_BANK_SERVICES",
+  "id": "031",
+  "target_lang": "pt"
+}

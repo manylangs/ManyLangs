@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "c2",
+    "id": "053"
+  },
+  "title": {
+    "target": "Подготовка презентации (деловой)",
+    "en": "Preparing a Presentation (Business)",
+    "es": "Preparación de la presentación (negocios)",
+    "fr": "Préparation de la présentation (professionnel)",
+    "pt": "Preparação da apresentação (reunião de negócios)",
+    "kr": "프레젠테이션 준비 (비즈니스)",
+    "jp": "プレゼン準備（ビジネス）",
+    "zh": "准备工作汇报（商务）",
+    "ru": "Подготовка презентации (деловой)"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты уже начал готовить презентацию для завтрашней встречи с инвесторами?",
+            "en": "Ivan, have you started preparing the presentation for tomorrow's meeting with the investors?",
+            "es": "Iván, ¿ya has empezado a preparar la presentación para la reunión de mañana con los inversores?",
+            "fr": "Ivan, tu as déjà commencé à préparer la présentation pour la réunion de demain avec les investisseurs ?",
+            "pt": "Ivan, você já começou a preparar a apresentação para a reunião de amanhã com os investidores?",
+            "kr": "이반, 내일 투자자 미팅을 위한 프레젠테이션 준비 시작했어?",
+            "jp": "イワンさん、明日の投資家とのミーティングに向けて、もうプレゼンの準備を始めましたか？",
+            "zh": "伊万，你已经开始准备明天与投资者会面的汇报了吗？",
+            "ru": "Иван, ты уже начал готовить презентацию для завтрашней встречи с инвесторами?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Анна, я собрал основные слайды, но хотел бы обсудить с тобой структуру.",
+            "en": "Yes, Anna, I've put together the main slides, but I'd like to discuss the structure with you.",
+            "es": "Sí, Ana, he reunido las diapositivas principales, pero me gustaría hablar contigo sobre la estructura.",
+            "fr": "Oui, Anna, j'ai rassemblé les diapositives principales, mais je voudrais discuter de la structure avec toi.",
+            "pt": "Sim, Anna, eu reuni os slides principais, mas gostaria de discutir a estrutura com você.",
+            "kr": "응, 안나, 주요 슬라이드는 만들었는데, 구조에 대해 너랑 상의하고 싶었어.",
+            "jp": "はい、アンナさん、主要なスライドはまとめましたが、構成についてあなたと話し合いたいです。",
+            "zh": "是的，安娜，我收集了主要幻灯片，但想和你讨论一下结构。",
+            "ru": "Да, Анна, я собрал основные слайды, но хотел бы обсудить с тобой структуру."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Конечно, давай посмотрим. Я думаю, начать стоит с обзора рынка, а не с финансовых показателей.",
+            "en": "Of course, let's take a look. I think we should start with a market overview, not with the financial figures.",
+            "es": "Claro, vamos a verla. Creo que deberíamos empezar con un análisis del mercado, y no con los indicadores financieros.",
+            "fr": "Bien sûr, regardons. Je pense qu'il vaut mieux commencer par un aperçu du marché, plutôt que par les chiffres financiers.",
+            "pt": "Claro, vamos ver. Eu acho que devemos começar com uma visão geral do mercado, e não com os indicadores financeiros.",
+            "kr": "물론이지, 한번 보자. 재무 지표보다는 시장 개요부터 시작하는 게 좋을 것 같아.",
+            "jp": "もちろん、見てみましょう。私は、財務指標ではなく、市場の概要から始めるのがいいと思います。",
+            "zh": "当然，我们来看看。我觉得应该从市场概览开始，而不是从财务指标开始。",
+            "ru": "Конечно, давай посмотрим. Я думаю, начать стоит с обзора рынка, а не с финансовых показателей."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен, так будет понятнее. А как лучше подать наши конкурентные преимущества?",
+            "en": "Agreed, that will be clearer. And what's the best way to present our competitive advantages?",
+            "es": "De acuerdo, así quedará más claro. ¿Y cuál es la mejor manera de presentar nuestras ventajas competitivas?",
+            "fr": "Je suis d'accord, ce sera plus clair. Et quelle est la meilleure façon de présenter nos avantages concurrentiels ?",
+            "pt": "Concordo, assim fica mais claro. E qual é a melhor forma de apresentar nossas vantagens competitivas?",
+            "kr": "동의해, 그게 더 이해하기 쉬울 거야. 그럼 우리의 경쟁 우위는 어떻게 제시하는 게 좋을까?",
+            "jp": "同意します、その方が分かりやすいですね。では、私たちの競争優位性はどうやって伝えるのがいいでしょうか？",
+            "zh": "同意，这样会更清楚。那我们的竞争优势怎么呈现比较好？",
+            "ru": "Согласен, так будет понятнее. А как лучше подать наши конкурентные преимущества?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я бы выделила три ключевых пункта и подкрепила их конкретными цифрами.",
+            "en": "I would highlight three key points and back them up with specific numbers.",
+            "es": "Yo destacaría tres puntos clave y los respaldaría con cifras concretas.",
+            "fr": "Je mettrais en avant trois points clés et je les appuierais avec des chiffres concrets.",
+            "pt": "Eu destacaria três pontos-chave e os apoiaria com números concretos.",
+            "kr": "핵심 포인트 세 가지를 뽑아서 구체적인 수치로 뒷받침할 것 같아.",
+            "jp": "私は、重要なポイントを三つに絞って、具体的な数字で裏付けると思います。",
+            "zh": "我会突出三个关键点，并用具体数据来支撑。",
+            "ru": "Я бы выделила три ключевых пункта и подкрепила их конкретными цифрами."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично, тогда я переработаю эту часть и покажу тебе обновлённый вариант.",
+            "en": "Great, then I'll rework that part and show you the updated version.",
+            "es": "Perfecto, entonces reelaboraré esa parte y te mostraré la versión actualizada.",
+            "fr": "Parfait, alors je vais retravailler cette partie et te montrer la version mise à jour.",
+            "pt": "Ótimo, então eu vou reformular essa parte e te mostrar a versão atualizada.",
+            "kr": "좋아, 그럼 그 부분을 다시 다듬어서 수정본을 보여줄게.",
+            "jp": "素晴らしいです。では、その部分を作り直して、更新したバージョンをお見せします。",
+            "zh": "太好了，那我就重做这部分，然后给你看更新后的版本。",
+            "ru": "Отлично, тогда я переработаю эту часть и покажу тебе обновлённый вариант."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, у тебя есть время проверить мою презентацию перед советом директоров?",
+            "en": "Dmitry, do you have time to check my presentation before the board of directors meeting?",
+            "es": "Dmitri, ¿tienes tiempo para revisar mi presentación antes del consejo de administración?",
+            "fr": "Dmitri, as-tu le temps de vérifier ma présentation avant le conseil d'administration ?",
+            "pt": "Dmitri, você tem tempo para revisar minha apresentação antes do conselho de administração?",
+            "kr": "드미트리, 이사회 앞에서 할 프레젠테이션 좀 확인해 줄 시간 있어?",
+            "jp": "ドミトリーさん、取締役会の前に私のプレゼンを見る時間はありますか？",
+            "zh": "德米特里，你有时间在董事会之前帮我检查一下汇报吗？",
+            "ru": "Дмитрий, у тебя есть время проверить мою презентацию перед советом директоров?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, Мария, давай. Только предупреждаю, что буду строг, как наш финансовый директор.",
+            "en": "Of course, Maria, let's do it. Just a heads up, I'll be strict, like our CFO.",
+            "es": "Claro, María, vamos. Solo te aviso de que seré estricto, como nuestro director financiero.",
+            "fr": "Bien sûr, Maria, allons-y. Je te préviens juste que je serai strict, comme notre directeur financier.",
+            "pt": "Claro, Maria, vamos ver. Só te avisando que serei rigoroso, como nosso diretor financeiro.",
+            "kr": "물론이지, 마리아, 보여줘. 그런데 미리 말하는데, 우리 재무이사처럼 엄격하게 볼 거야.",
+            "jp": "もちろんです、マリアさん、見ましょう。ただ、うちの財務部長みたいに厳しく言いますよ。",
+            "zh": "当然，玛丽亚，来吧。不过提前说好，我会像我们的财务总监一样严格。",
+            "ru": "Конечно, Мария, давай. Только предупреждаю, что буду строг, как наш финансовый директор."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это как раз то, что нужно. Мне важна объективная критика, а не похвала.",
+            "en": "That's exactly what I need. I value objective criticism, not praise.",
+            "es": "Eso es justo lo que necesito. Me importa la crítica objetiva, no los elogios.",
+            "fr": "C'est exactement ce qu'il me faut. Ce qui compte pour moi, c'est une critique objective, pas des éloges.",
+            "pt": "É exatamente o que eu preciso. Para mim, é importante uma crítica objetiva, e não elogios.",
+            "kr": "그게 딱 필요했어. 칭찬보다는 객관적인 비판이 중요하니까.",
+            "jp": "それがちょうどいいんです。私に必要なのは、褒め言葉ではなく、客観的な批判ですから。",
+            "zh": "这正是我需要的。对我来说重要的是客观的批评，而不是表扬。",
+            "ru": "Это как раз то, что нужно. Мне важна объективная критика, а не похвала."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда смотри: вводная часть затянута, а ключевой вывод спрятан в середине.",
+            "en": "Well, look here: the introduction drags on, and the key conclusion is buried in the middle.",
+            "es": "Entonces mira: la parte introductoria es demasiado larga y la conclusión clave está escondida en el medio.",
+            "fr": "Alors regarde : l'introduction est trop longue, et la conclusion clé est cachée au milieu.",
+            "pt": "Então olha: a introdução está arrastada, e a conclusão principal está escondida no meio.",
+            "kr": "그럼 봐봐: 도입부가 너무 길고, 핵심 결론이 중간에 숨겨져 있어.",
+            "jp": "では、言いますね。導入部分が長すぎますし、重要な結論が中盤に埋もれています。",
+            "zh": "那你听着：开头部分太拖沓了，而关键结论被藏在了中间。",
+            "ru": "Тогда смотри: вводная часть затянута, а ключевой вывод спрятан в середине."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Поняла, значит, нужно перестроить логику и вынести главное в начало.",
+            "en": "Got it, so I need to restructure the flow and put the main point at the beginning.",
+            "es": "Entendido, entonces hay que reestructurar la lógica y poner lo más importante al principio.",
+            "fr": "Compris, il faut donc restructurer la logique et mettre l'essentiel au début.",
+            "pt": "Entendi, então preciso reestruturar a lógica e trazer o essencial para o início.",
+            "kr": "알겠어, 그럼 논리를 재구성해서 중요한 걸 앞으로 빼야겠네.",
+            "jp": "分かりました。つまり、論理を組み立て直して、一番大事なことを冒頭に持ってくる必要があるんですね。",
+            "zh": "明白了，也就是说需要重新调整逻辑，把重点放到开头。",
+            "ru": "Поняла, значит, нужно перестроить логику и вынести главное в начало."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Именно. И ещё советую сократить количество текста на слайдах, оставить только тезисы.",
+            "en": "Exactly. And I also advise cutting down the amount of text on the slides, leaving only the key points.",
+            "es": "Exacto. Y además te recomiendo reducir la cantidad de texto en las diapositivas, dejar solo las ideas principales.",
+            "fr": "Exactement. Et je te conseille aussi de réduire la quantité de texte sur les diapositives, de ne garder que les idées principales.",
+            "pt": "Exatamente. E também aconselho reduzir a quantidade de texto nos slides, deixar apenas os tópicos.",
+            "kr": "바로 그거야. 그리고 슬라이드의 텍스트 양을 줄이고 핵심 요지만 남기는 걸 추천해.",
+            "jp": "その通りです。あと、スライドのテキストを減らして、要点だけにすることをお勧めします。",
+            "zh": "没错。另外我建议减少幻灯片上的文字量，只保留要点。",
+            "ru": "Именно. И ещё советую сократить количество текста на слайдах, оставить только тезисы."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, как продвигается подготовка к презентации для партнёров из Германии?",
+            "en": "Sergey, how is the preparation for the presentation for the partners from Germany going?",
+            "es": "Serguéi, ¿cómo va la preparación de la presentación para los socios de Alemania?",
+            "fr": "Sergueï, comment se passe la préparation de la présentation pour les partenaires allemands ?",
+            "pt": "Sergei, como está indo a preparação para a apresentação para os parceiros da Alemanha?",
+            "kr": "세르게이, 독일 파트너들을 위한 프레젠테이션 준비는 어떻게 되어 가고 있어?",
+            "jp": "セルゲイさん、ドイツのパートナー向けのプレゼン準備はどう進んでいますか？",
+            "zh": "谢尔盖，为德国合作伙伴准备的汇报进展怎么样了？",
+            "ru": "Сергей, как продвигается подготовка к презентации для партнёров из Германии?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Честно говоря, я немного волнуюсь, ведь они очень ценят точность и структуру.",
+            "en": "Honestly, I'm a little nervous, since they really value precision and structure.",
+            "es": "Para ser honesto, estoy un poco nervioso, ya que ellos valoran mucho la precisión y la estructura.",
+            "fr": "Honnêtement, je suis un peu nerveux, car ils attachent beaucoup d'importance à la précision et à la structure.",
+            "pt": "Para ser sincero, estou um pouco preocupado, porque eles valorizam muito a precisão e a estrutura.",
+            "kr": "솔직히 말하면 좀 긴장돼. 그들이 정확성과 구조를 정말 중요하게 여기거든.",
+            "jp": "正直に言うと、少し緊張しています。彼らは正確さと構成をとても重視しますから。",
+            "zh": "说实话，我有点紧张，因为他们非常看重精确性和条理性。",
+            "ru": "Честно говоря, я немного волнуюсь, ведь они очень ценят точность и структуру."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это не проблема, если ты заранее продумаешь все возможные вопросы.",
+            "en": "That's not a problem if you think through all the possible questions in advance.",
+            "es": "Eso no es un problema si piensas de antemano en todas las posibles preguntas.",
+            "fr": "Ce n'est pas un problème si tu anticipes toutes les questions possibles.",
+            "pt": "Isso não é um problema, se você pensar com antecedência em todas as perguntas possíveis.",
+            "kr": "가능한 질문을 미리 다 생각해 두면 문제없을 거야.",
+            "jp": "事前に考えられる質問をすべて想定しておけば、それは問題ありませんよ。",
+            "zh": "只要你提前想好所有可能的问题，这就不是问题。",
+            "ru": "Это не проблема, если ты заранее продумаешь все возможные вопросы."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я как раз составил список вероятных вопросов, но не уверен в ответах на некоторые из них.",
+            "en": "I've actually made a list of likely questions, but I'm not sure about the answers to some of them.",
+            "es": "Precisamente he hecho una lista de las preguntas probables, pero no estoy seguro de las respuestas a algunas de ellas.",
+            "fr": "J'ai justement fait une liste des questions probables, mais je ne suis pas sûr des réponses pour certaines d'entre elles.",
+            "pt": "Eu até fiz uma lista das perguntas prováveis, mas não tenho certeza das respostas para algumas delas.",
+            "kr": "나는 예상 질문 목록을 만들었는데, 그중 몇 가지 답변에 자신이 없어.",
+            "jp": "ちょうど、ありそうな質問のリストを作ったところですが、いくつかの答えに自信がありません。",
+            "zh": "我正好列了一个可能的问题清单，但对其中一些问题的答案不太确定。",
+            "ru": "Я как раз составил список вероятных вопросов, но не уверен в ответах на некоторые из них."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Давай разберём их вместе. Я помогу тебе сформулировать чёткие и убедительные ответы.",
+            "en": "Let's go through them together. I'll help you formulate clear and convincing answers.",
+            "es": "Vamos a analizarlas juntos. Te ayudaré a formular respuestas claras y convincentes.",
+            "fr": "Examinons-les ensemble. Je t'aiderai à formuler des réponses claires et convaincantes.",
+            "pt": "Vamos analisá-las juntos. Eu te ajudo a formular respostas claras e convincentes.",
+            "kr": "같이 검토해 보자. 명확하고 설득력 있는 답변을 만드는 걸 도와줄게.",
+            "jp": "一緒に検討しましょう。明確で説得力のある答えを組み立てるのを手伝いますよ。",
+            "zh": "我们一起梳理一下吧。我帮你把答案组织得清晰而有说服力。",
+            "ru": "Давай разберём их вместе. Я помогу тебе сформулировать чёткие и убедительные ответы."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо, это очень ценно. Тогда мы встретимся после обеда и всё обсудим.",
+            "en": "Thank you, that's very valuable. Then we'll meet after lunch and discuss everything.",
+            "es": "Gracias, es muy valioso. Entonces nos reuniremos después de comer y lo discutiremos todo.",
+            "fr": "Merci, c'est très précieux. Alors nous nous retrouverons après le déjeuner et nous discuterons de tout.",
+            "pt": "Obrigado, isso é muito valioso. Então nos encontramos depois do almoço e discutimos tudo.",
+            "kr": "고마워, 정말 도움이 돼. 그럼 점심 후에 만나서 다 같이 논의하자.",
+            "jp": "ありがとうございます、それはとても助かります。では、午後に会って、すべて話し合いましょう。",
+            "zh": "谢谢，这非常有帮助。那我们午饭后见面，把一切都讨论一下。",
+            "ru": "Спасибо, это очень ценно. Тогда мы встретимся после обеда и всё обсудим."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, ты не могла бы взглянуть на мою презентацию? Что-то мне кажется, что она не цепляет.",
+            "en": "Elena, could you take a look at my presentation? I feel like it doesn't quite grab people.",
+            "es": "Elena, ¿podrías echar un vistazo a mi presentación? Me parece que no engancha.",
+            "fr": "Elena, pourrais-tu jeter un œil à ma présentation ? J'ai l'impression qu'elle n'accroche pas.",
+            "pt": "Elena, você poderia dar uma olhada na minha apresentação? Estou com a impressão de que ela não cativa.",
+            "kr": "옐레나, 내 프레젠테이션 좀 봐줄 수 있어? 뭔가 사람들의 마음을 사로잡지 못하는 것 같아.",
+            "jp": "エレーナさん、私のプレゼンを見ていただけませんか？なんだか、心に響かない気がするんです。",
+            "zh": "叶莲娜，你能看一下我的汇报吗？我觉得它好像不太吸引人。",
+            "ru": "Елена, ты не могла бы взглянуть на мою презентацию? Что-то мне кажется, что она не цепляет."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ольга, я посмотрю с удовольствием. Но сразу скажу: не хватает историй успеха наших клиентов.",
+            "en": "Olga, I'd be happy to look. But I'll say right away: it's missing success stories from our clients.",
+            "es": "Olga, la veré con gusto. Pero te digo de entrada: faltan historias de éxito de nuestros clientes.",
+            "fr": "Olga, je la regarderai avec plaisir. Mais je te le dis tout de suite : il manque des histoires de réussite de nos clients.",
+            "pt": "Olga, vou olhar com prazer. Mas já vou avisando: faltam histórias de sucesso dos nossos clientes.",
+            "kr": "올가, 기꺼이 볼게. 그런데 바로 말할게: 우리 고객들의 성공 사례가 부족해.",
+            "jp": "オルガさん、喜んで見ますよ。ただ、すぐに言いますが、顧客の成功事例が足りていませんね。",
+            "zh": "奥尔加，我很乐意看。但我直接说吧：缺少我们客户的成功案例。",
+            "ru": "Ольга, я посмотрю с удовольствием. Но сразу скажу: не хватает историй успеха наших клиентов."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Думаешь, это добавит убедительности? Я боялась, что это будет выглядеть неформально.",
+            "en": "You think that would make it more convincing? I was worried it might look too informal.",
+            "es": "¿Crees que eso le dará más credibilidad? Me preocupaba que pareciera demasiado informal.",
+            "fr": "Tu penses que cela ajoutera de la crédibilité ? J'avais peur que cela paraisse trop informel.",
+            "pt": "Você acha que isso vai dar mais credibilidade? Eu tinha medo de que parecesse informal.",
+            "kr": "그게 설득력을 더해 줄 거라고 생각해? 비공식적으로 보일까 봐 걱정했거든.",
+            "jp": "それが説得力を増すと思いますか？くだけた印象になるのが心配だったんです。",
+            "zh": "你觉得这会增加说服力吗？我担心这样会显得不够正式。",
+            "ru": "Думаешь, это добавит убедительности? Я боялась, что это будет выглядеть неформально."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Наоборот, конкретные примеры всегда работают лучше, чем абстрактные обещания.",
+            "en": "On the contrary, concrete examples always work better than abstract promises.",
+            "es": "Al contrario, los ejemplos concretos siempre funcionan mejor que las promesas abstractas.",
+            "fr": "Au contraire, des exemples concrets fonctionnent toujours mieux que des promesses abstraites.",
+            "pt": "Pelo contrário, exemplos concretos sempre funcionam melhor do que promessas abstratas.",
+            "kr": "오히려 반대야. 구체적인 사례가 추상적인 약속보다 항상 더 효과적이야.",
+            "jp": "逆ですよ。具体的な事例は、抽象的な約束よりもいつも効果的です。",
+            "zh": "恰恰相反，具体的例子总是比抽象的承诺更有效。",
+            "ru": "Наоборот, конкретные примеры всегда работают лучше, чем абстрактные обещания."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда я добавлю пару кейсов и посмотрю, как изменится общее впечатление.",
+            "en": "Then I'll add a couple of case studies and see how the overall impression changes.",
+            "es": "Entonces añadiré un par de casos y veré cómo cambia la impresión general.",
+            "fr": "Alors j'ajouterai quelques études de cas et je verrai comment l'impression générale change.",
+            "pt": "Então vou adicionar alguns cases e ver como muda a impressão geral.",
+            "kr": "그럼 사례 두 개를 추가해 보고 전체적인 인상이 어떻게 바뀌는지 볼게.",
+            "jp": "では、事例をいくつか追加して、全体的な印象がどう変わるか見てみます。",
+            "zh": "那我就加上几个案例，看看整体效果会有什么变化。",
+            "ru": "Тогда я добавлю пару кейсов и посмотрю, как изменится общее впечатление."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вот и отлично. И не забудь про визуализацию данных, графики сейчас очень важны.",
+            "en": "That's great. And don't forget about data visualization; charts are really important these days.",
+            "es": "Muy bien. Y no te olvides de la visualización de datos, los gráficos son muy importantes ahora.",
+            "fr": "Et voilà, parfait. Et n'oublie pas la visualisation des données, les graphiques sont très importants de nos jours.",
+            "pt": "Perfeito. E não se esqueça da visualização dos dados, os gráficos são muito importantes hoje em dia.",
+            "kr": "잘됐네. 그리고 데이터 시각화도 잊지 마. 지금은 그래프가 정말 중요하니까.",
+            "jp": "それがいいですね。あと、データの可視化も忘れないでください。今はグラフがとても重要ですから。",
+            "zh": "太好了。还有别忘了数据可视化，图表现在非常重要。",
+            "ru": "Вот и отлично. И не забудь про визуализацию данных, графики сейчас очень важны."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, мы должны уложиться в двадцать минут на презентации. Как думаешь, реально?",
+            "en": "Ivan, we need to fit into twenty minutes for the presentation. Do you think it's realistic?",
+            "es": "Iván, tenemos que ajustarnos a veinte minutos en la presentación. ¿Crees que es posible?",
+            "fr": "Ivan, nous devons tenir en vingt minutes pour la présentation. Tu penses que c'est réaliste ?",
+            "pt": "Ivan, precisamos nos encaixar em vinte minutos na apresentação. Você acha que é possível?",
+            "kr": "이반, 우리 프레젠테이션을 이십 분 안에 끝내야 해. 가능하다고 생각해?",
+            "jp": "イワンさん、プレゼンは二十分に収めないといけません。どう思いますか、現実的ですか？",
+            "zh": "伊万，我们汇报必须控制在二十分钟以内。你觉得现实吗？",
+            "ru": "Иван, мы должны уложиться в двадцать минут на презентации. Как думаешь, реально?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Реально, если мы не будем углубляться в детали и оставим их для раздаточных материалов.",
+            "en": "It's realistic if we don't go into details and leave them for the handouts.",
+            "es": "Es posible si no entramos en detalles y los dejamos para los materiales impresos.",
+            "fr": "C'est réaliste si nous n'entrons pas dans les détails et que nous les réservons pour les documents à distribuer.",
+            "pt": "É possível, se não entrarmos em detalhes e os deixarmos para os materiais impressos.",
+            "kr": "가능하지. 세부 사항까지 깊게 들어가지 않고, 그건 유인물 자료로 남겨두면 돼.",
+            "jp": "詳細に立ち入らなければ、現実的です。詳細は配布資料に回しましょう。",
+            "zh": "现实，只要我们不深入细节，把细节留给分发材料就行。",
+            "ru": "Реально, если мы не будем углубляться в детали и оставим их для раздаточных материалов."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Согласна. Тогда давай чётко распределим, кто за какой блок отвечает.",
+            "en": "Agreed. Then let's clearly divide who is responsible for which section.",
+            "es": "De acuerdo. Entonces repartamos claramente quién se encarga de cada bloque.",
+            "fr": "Je suis d'accord. Alors répartissons clairement qui est responsable de quelle partie.",
+            "pt": "Concordo. Então vamos dividir claramente quem fica responsável por cada bloco.",
+            "kr": "동의해. 그럼 누가 어떤 부분을 맡을지 명확하게 나누자.",
+            "jp": "同意します。では、誰がどのパートを担当するか、はっきり分担しましょう。",
+            "zh": "同意。那我们明确分配一下，谁负责哪一部分。",
+            "ru": "Согласна. Тогда давай чётко распределим, кто за какой блок отвечает."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я возьму введение и обзор продукта, а ты, Анна, финансовую часть и заключение.",
+            "en": "I'll take the introduction and the product overview, and you, Anna, take the financial part and the conclusion.",
+            "es": "Yo me encargaré de la introducción y la visión general del producto, y tú, Ana, de la parte financiera y la conclusión.",
+            "fr": "Je prendrai l'introduction et la présentation du produit, et toi, Anna, la partie financière et la conclusion.",
+            "pt": "Eu fico com a introdução e a visão geral do produto, e você, Anna, fica com a parte financeira e a conclusão.",
+            "kr": "내가 도입부랑 제품 개요를 맡고, 안나, 너는 재무 부분이랑 결론을 맡는 게 어때?",
+            "jp": "私は導入と製品概要を担当します。アンナさんは、財務パートと結論をお願いします。",
+            "zh": "我负责开场和产品介绍，而你，安娜，负责财务部分和总结。",
+            "ru": "Я возьму введение и обзор продукта, а ты, Анна, финансовую часть и заключение."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Договорились. Только давай обязательно проведём репетицию, чтобы синхронизировать переходы.",
+            "en": "Deal. But let's make sure we have a rehearsal to synchronize the transitions.",
+            "es": "Trato hecho. Solo asegurémonos de hacer un ensayo para sincronizar las transiciones.",
+            "fr": "C'est convenu. Mais il faut absolument faire une répétition pour synchroniser les transitions.",
+            "pt": "Combinado. Só precisamos ensaiar, com certeza, para sincronizar as transições.",
+            "kr": "좋아. 그런데 전환 부분을 맞추기 위해 꼭 리허설을 하자.",
+            "jp": "決まりですね。ただ、遷移を合わせるために、必ずリハーサルをしましょう。",
+            "zh": "说定了。但我们一定要排练一次，以便同步各部分之间的过渡。",
+            "ru": "Договорились. Только давай обязательно проведём репетицию, чтобы синхронизировать переходы."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обязательно. Предлагаю завтра утром собраться за час до начала и всё отрепетировать.",
+            "en": "Definitely. I suggest we meet tomorrow morning an hour before the start and rehearse everything.",
+            "es": "Por supuesto. Propongo reunirnos mañana por la mañana una hora antes del inicio y ensayarlo todo.",
+            "fr": "Absolument. Je propose de nous retrouver demain matin une heure avant le début pour tout répéter.",
+            "pt": "Com certeza. Proponho nos reunirmos amanhã de manhã uma hora antes do início e ensaiar tudo.",
+            "kr": "당연하지. 내일 시작 한 시간 전에 모여서 전체적으로 리허설하는 걸 제안해.",
+            "jp": "もちろんです。明日の開始一時間前に集まって、すべてリハーサルするのはどうでしょうか。",
+            "zh": "一定。我建议明天早上提前一小时集合，把整个流程排练一遍。",
+            "ru": "Обязательно. Предлагаю завтра утром собраться за час до начала и всё отрепетировать."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, как тебе моя идея начать презентацию с проблемного вопроса к аудитории?",
+            "en": "Dmitry, what do you think of my idea to start the presentation with a problem question to the audience?",
+            "es": "Dmitri, ¿qué te parece mi idea de empezar la presentación con una pregunta problemática al público?",
+            "fr": "Dmitri, que penses-tu de mon idée de commencer la présentation par une question problématique posée au public ?",
+            "pt": "Dmitri, o que você acha da minha ideia de começar a apresentação com uma pergunta-problema para o público?",
+            "kr": "드미트리, 프레젠테이션을 청중에게 문제를 던지는 질문으로 시작하는 내 아이디어 어때?",
+            "jp": "ドミトリーさん、聴衆への問題提起からプレゼンを始めるという私のアイデアをどう思いますか？",
+            "zh": "德米特里，你觉得我用一个针对听众的问题来开场怎么样？",
+            "ru": "Дмитрий, как тебе моя идея начать презентацию с проблемного вопроса к аудитории?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мария, это сильный ход, он сразу вовлекает слушателей в размышление.",
+            "en": "Maria, that's a strong move; it immediately gets the listeners thinking.",
+            "es": "María, es un movimiento fuerte, involucra inmediatamente a los oyentes en la reflexión.",
+            "fr": "Maria, c'est une approche forte, elle implique immédiatement les auditeurs dans la réflexion.",
+            "pt": "Maria, é uma jogada forte, ela envolve os ouvintes na reflexão imediatamente.",
+            "kr": "마리아, 그건 강력한 전략이야. 청중을 바로 생각하게 만들 수 있거든.",
+            "jp": "マリアさん、それは強い手法ですね。すぐに聞き手を考えさせることができます。",
+            "zh": "玛丽亚，这是一个有力的开场方式，能立刻让听众进入思考状态。",
+            "ru": "Мария, это сильный ход, он сразу вовлекает слушателей в размышление."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я тоже так думаю. Но боюсь, что если вопрос будет слишком сложным, мы потеряем внимание.",
+            "en": "I think so too. But I'm afraid that if the question is too complex, we'll lose their attention.",
+            "es": "Eso pienso yo también. Pero me temo que si la pregunta es demasiado compleja, perderemos la atención.",
+            "fr": "Je le pense aussi. Mais j'ai peur que si la question est trop complexe, nous perdions leur attention.",
+            "pt": "Eu também acho. Mas tenho medo de que, se a pergunta for muito complexa, percamos a atenção.",
+            "kr": "나도 그렇게 생각해. 그런데 질문이 너무 어려우면 집중을 잃을까 봐 걱정돼.",
+            "jp": "私もそう思います。ただ、質問が難しすぎると、注意を失うのが怖いんです。",
+            "zh": "我也这么觉得。但我担心如果问题太难，我们会失去听众的注意力。",
+            "ru": "Я тоже так думаю. Но боюсь, что если вопрос будет слишком сложным, мы потеряем внимание."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда сформулируй его проще, но с намёком на масштаб проблемы, которую мы решаем.",
+            "en": "Then phrase it more simply, but with a hint at the scale of the problem we're solving.",
+            "es": "Entonces fórmulala de manera más sencilla, pero con una alusión a la magnitud del problema que resolvemos.",
+            "fr": "Alors formule-la plus simplement, mais avec une allusion à l'ampleur du problème que nous résolvons.",
+            "pt": "Então formule-a de forma mais simples, mas com uma alusão à dimensão do problema que estamos resolvendo.",
+            "kr": "그럼 더 간단하게 만들되, 우리가 해결하려는 문제의 규모를 암시하는 식으로 해봐.",
+            "jp": "では、もっとシンプルに、でも私たちが解決する問題の大きさを示唆する形で質問を考えてみては？",
+            "zh": "那就把问题问得简单一些，但要暗示我们要解决的问题的规模。",
+            "ru": "Тогда сформулируй его проще, но с намёком на масштаб проблемы, которую мы решаем."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хорошая мысль. Например, спросить, сколько времени компании теряют на рутинных задачах.",
+            "en": "Good point. For example, ask how much time companies lose on routine tasks.",
+            "es": "Buena idea. Por ejemplo, preguntar cuánto tiempo pierden las empresas en tareas rutinarias.",
+            "fr": "Bonne idée. Par exemple, demander combien de temps les entreprises perdent sur des tâches routinières.",
+            "pt": "Boa ideia. Por exemplo, perguntar quanto tempo as empresas perdem com tarefas rotineiras.",
+            "kr": "좋은 생각이야. 예를 들어, 기업들이 일상적인 업무에 얼마나 많은 시간을 낭비하는지 물어보는 거지.",
+            "jp": "いい考えですね。例えば、会社が定型業務にどれだけの時間を費やしているか、と聞くのはどうでしょう。",
+            "zh": "好主意。比如，问公司每天在例行任务上浪费多少时间。",
+            "ru": "Хорошая мысль. Например, спросить, сколько времени компании теряют на рутинных задачах."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вот именно. А потом показать, как наше решение сокращает эти потери в разы.",
+            "en": "Exactly. And then show how our solution cuts those losses significantly.",
+            "es": "Exacto. Y después mostrar cómo nuestra solución reduce esas pérdidas varias veces.",
+            "fr": "Exactement. Et ensuite montrer comment notre solution réduit ces pertes considérablement.",
+            "pt": "Exatamente. E depois mostrar como a nossa solução reduz essas perdas várias vezes.",
+            "kr": "바로 그거야. 그런 다음 우리 솔루션이 그 손실을 몇 배로 줄여준다는 걸 보여주는 거고.",
+            "jp": "まさにその通りです。そして、私たちの解決策がその損失を何倍も減らすことを示すんです。",
+            "zh": "正是这样。然后展示我们的解决方案如何把这些损失减少数倍。",
+            "ru": "Вот именно. А потом показать, как наше решение сокращает эти потери в разы."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты уже подготовил слайды для завтрашней презентации или всё ещё в процессе?",
+            "en": "Sergey, have you prepared the slides for tomorrow's presentation, or are you still working on them?",
+            "es": "Serguéi, ¿ya has preparado las diapositivas para la presentación de mañana o sigues en ello?",
+            "fr": "Sergueï, as-tu déjà préparé les diapositives pour la présentation de demain ou es-tu encore en train de les faire ?",
+            "pt": "Sergei, você já preparou os slides para a apresentação de amanhã ou ainda está no processo?",
+            "kr": "세르게이, 내일 프레젠테이션 슬라이드 준비 다 했어, 아니면 아직 작업 중이야?",
+            "jp": "セルゲイさん、明日のプレゼンのスライドはもう準備できましたか、それともまだ作業中ですか？",
+            "zh": "谢尔盖，你明天的汇报幻灯片准备好了，还是还在做？",
+            "ru": "Сергей, ты уже подготовил слайды для завтрашней презентации или всё ещё в процессе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Основная часть готова, но я никак не могу решить, как лучше показать динамику продаж.",
+            "en": "The main part is ready, but I can't figure out the best way to show the sales dynamics.",
+            "es": "La parte principal está lista, pero no consigo decidir cuál es la mejor manera de mostrar la dinámica de ventas.",
+            "fr": "La partie principale est prête, mais je n'arrive pas à décider comment mieux montrer la dynamique des ventes.",
+            "pt": "A parte principal está pronta, mas não consigo decidir qual é a melhor forma de mostrar a dinâmica das vendas.",
+            "kr": "주요 부분은 끝났는데, 판매 동향을 어떻게 보여주는 게 best일지 결정을 못 하겠어.",
+            "jp": "主要な部分はできていますが、売上の推移をどう見せるのが一番いいか、どうしても決められないんです。",
+            "zh": "主要部分已经完成了，但我一直拿不定主意怎么展示销售动态最好。",
+            "ru": "Основная часть готова, но я никак не могу решить, как лучше показать динамику продаж."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я бы посоветовала не перегружать слайд цифрами, а сделать акцент на тренде.",
+            "en": "I would advise not to overload the slide with numbers, but to focus on the trend.",
+            "es": "Yo te aconsejaría no sobrecargar la diapositiva con cifras, sino hacer hincapié en la tendencia.",
+            "fr": "Je te conseillerais de ne pas surcharger la diapositive avec des chiffres, mais de mettre l'accent sur la tendance.",
+            "pt": "Eu aconselharia não sobrecarregar o slide com números, mas sim dar ênfase à tendência.",
+            "kr": "슬라이드에 숫자를 너무 많이 넣지 말고, 추세에 초점을 맞추는 걸 추천할게.",
+            "jp": "スライドに数字を詰め込みすぎず、トレンドに焦点を当てるのがいいと思いますよ。",
+            "zh": "我建议不要用太多数字堆满幻灯片，而是突出趋势。",
+            "ru": "Я бы посоветовала не перегружать слайд цифрами, а сделать акцент на тренде."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "То есть, показать общий рост, а не детализацию по каждому месяцу?",
+            "en": "So, show the overall growth, not the breakdown for each month?",
+            "es": "Es decir, ¿mostrar el crecimiento general y no el desglose de cada mes?",
+            "fr": "C'est-à-dire, montrer la croissance globale, et non le détail de chaque mois ?",
+            "pt": "Ou seja, mostrar o crescimento geral, e não o detalhamento de cada mês?",
+            "kr": "그러니까 월별 세부 수치가 아니라 전체적인 성장세를 보여주라는 거지?",
+            "jp": "つまり、月ごとの詳細ではなく、全体的な成長を示すということですか？",
+            "zh": "也就是说，展示整体增长，而不是每个月的明细？",
+            "ru": "То есть, показать общий рост, а не детализацию по каждому месяцу?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Именно. Детали можно вынести в приложение, а на слайде оставить только ключевой вывод.",
+            "en": "Exactly. The details can go in the appendix, and leave only the key takeaway on the slide.",
+            "es": "Exacto. Los detalles se pueden poner en el anexo, y en la diapositiva dejar solo la conclusión clave.",
+            "fr": "Exactement. Les détails peuvent être mis en annexe, et sur la diapositive, ne garder que la conclusion clé.",
+            "pt": "Exatamente. Os detalhes podem ficar no anexo, e no slide deixar apenas a conclusão principal.",
+            "kr": "맞아. 세부 내용은 부록으로 빼고, 슬라이드에는 핵심 결론만 남기는 게 좋아.",
+            "jp": "その通りです。詳細は付録に回して、スライドには重要な結論だけを残しましょう。",
+            "zh": "没错。细节可以放到附录里，幻灯片上只保留关键结论。",
+            "ru": "Именно. Детали можно вынести в приложение, а на слайде оставить только ключевой вывод."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понял, спасибо за совет. Тогда я упрощу график и сделаю акцент на итоговом результате.",
+            "en": "Got it, thanks for the advice. Then I'll simplify the chart and emphasize the final result.",
+            "es": "Entendido, gracias por el consejo. Entonces simplificaré el gráfico y haré hincapié en el resultado final.",
+            "fr": "Compris, merci pour le conseil. Alors je vais simplifier le graphique et mettre l'accent sur le résultat final.",
+            "pt": "Entendi, obrigado pelo conselho. Então vou simplificar o gráfico e dar ênfase ao resultado final.",
+            "kr": "알겠어, 조언 고마워. 그럼 그래프를 단순화하고 최종 결과에 초점을 맞출게.",
+            "jp": "分かりました、アドバイスありがとうございます。では、グラフを簡素化して、最終的な結果に焦点を当てます。",
+            "zh": "明白了，谢谢你的建议。那我就简化图表，把重点放在最终结果上。",
+            "ru": "Понял, спасибо за совет. Тогда я упрощу график и сделаю акцент на итоговом результате."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, ты не против, если я попрошу тебя выступить с заключительной частью нашей презентации?",
+            "en": "Elena, would you mind if I asked you to deliver the concluding part of our presentation?",
+            "es": "Elena, ¿te importaría encargarte de la parte final de nuestra presentación?",
+            "fr": "Elena, ça te dérange si je te demande de présenter la partie conclusive de notre présentation ?",
+            "pt": "Elena, você se importaria se eu te pedisse para fazer a parte final da nossa apresentação?",
+            "kr": "옐레나, 우리 프레젠테이션의 마무리 부분을 네가 맡아줄 수 있을까?",
+            "jp": "エレーナさん、私たちのプレゼンの最後のパートを担当していただくのは、構いませんか？",
+            "zh": "叶莲娜，我想请你来负责我们汇报的结尾部分，你介意吗？",
+            "ru": "Елена, ты не против, если я попрошу тебя выступить с заключительной частью нашей презентации?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ольга, я не против, но хочу понять, какой акцент ты хочешь сделать в конце.",
+            "en": "Olga, I don't mind, but I want to understand what kind of emphasis you want to make at the end.",
+            "es": "Olga, no me importa, pero quiero entender qué énfasis quieres hacer al final.",
+            "fr": "Olga, ça ne me dérange pas, mais je veux comprendre quel accent tu veux mettre à la fin.",
+            "pt": "Olga, eu não me importo, mas quero entender qual ênfase você quer dar no final.",
+            "kr": "올가, 괜찮아. 그런데 마지막에 어떤 점을 강조하고 싶은지 알고 싶어.",
+            "jp": "オルガさん、構いませんよ。ただ、最後にどんな強調をしたいのか、理解したいです。",
+            "zh": "奥尔加，我不介意，但我想知道你想在结尾突出什么重点。",
+            "ru": "Ольга, я не против, но хочу понять, какой акцент ты хочешь сделать в конце."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я думаю, нужно чётко обозначить наш следующий шаг и призвать партнёров к действию.",
+            "en": "I think we need to clearly state our next step and call the partners to action.",
+            "es": "Creo que debemos indicar claramente nuestro siguiente paso y hacer un llamamiento a la acción a los socios.",
+            "fr": "Je pense qu'il faut clairement indiquer notre prochaine étape et appeler les partenaires à l'action.",
+            "pt": "Eu acho que precisamos indicar claramente nosso próximo passo e convocar os parceiros para a ação.",
+            "kr": "우리의 다음 단계를 명확히 제시하고 파트너들에게 행동을 촉구해야 한다고 생각해.",
+            "jp": "次のステップを明確に示して、パートナーに行動を促すのがいいと思います。",
+            "zh": "我觉得需要明确说明我们的下一步行动，并呼吁合作伙伴采取行动。",
+            "ru": "Я думаю, нужно чётко обозначить наш следующий шаг и призвать партнёров к действию."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда я подготовлю яркое резюме и предложу конкретные варианты дальнейшего сотрудничества.",
+            "en": "Then I'll prepare a strong summary and propose specific options for further cooperation.",
+            "es": "Entonces prepararé un resumen contundente y propondré opciones concretas para la colaboración futura.",
+            "fr": "Alors je préparerai un résumé percutant et je proposerai des options concrètes pour la poursuite de la collaboration.",
+            "pt": "Então vou preparar um resumo marcante e propor opções concretas para a continuação da parceria.",
+            "kr": "그럼 인상적인 요약을 준비하고 향후 협력 방안에 대한 구체적인 제안을 할게.",
+            "jp": "では、印象的なまとめを用意して、今後の協力の具体的な選択肢を提案しますね。",
+            "zh": "那我就准备一个精彩的总结，并提出几个具体的后续合作方案。",
+            "ru": "Тогда я подготовлю яркое резюме и предложу конкретные варианты дальнейшего сотрудничества."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это было бы идеально. И хорошо бы оставить контактные данные для вопросов.",
+            "en": "That would be perfect. And it would be good to leave contact information for questions.",
+            "es": "Sería ideal. Y también estaría bien dejar los datos de contacto para las preguntas.",
+            "fr": "Ce serait idéal. Et ce serait bien de laisser les coordonnées pour les questions.",
+            "pt": "Isso seria ideal. E seria bom deixar os dados de contato para perguntas.",
+            "kr": "그게 딱 좋겠어. 그리고 질문을 받을 수 있도록 연락처도 남겨두면 좋겠어.",
+            "jp": "それが理想的です。あと、質問用の連絡先も載せておくといいですね。",
+            "zh": "那就太理想了。另外最好留下联系方式，方便大家提问。",
+            "ru": "Это было бы идеально. И хорошо бы оставить контактные данные для вопросов."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, я добавлю их на последний слайд. Всё будет готово к завтрашнему утру.",
+            "en": "Of course, I'll add it to the last slide. Everything will be ready by tomorrow morning.",
+            "es": "Claro, los añadiré en la última diapositiva. Todo estará listo para mañana por la mañana.",
+            "fr": "Bien sûr, je les ajouterai sur la dernière diapositive. Tout sera prêt pour demain matin.",
+            "pt": "Claro, vou adicioná-los no último slide. Tudo estará pronto até amanhã de manhã.",
+            "kr": "물론이지, 마지막 슬라이드에 추가할게. 내일 아침까지 다 준비해 둘게.",
+            "jp": "もちろんです。最後のスライドに追加しておきます。明日の朝までにはすべて準備できています。",
+            "zh": "当然，我会把它们加到最后一页幻灯片上。明天早上之前一切都会准备好。",
+            "ru": "Конечно, я добавлю их на последний слайд. Всё будет готово к завтрашнему утру."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, как ты считаешь, стоит ли использовать видео в нашей презентации для иностранных гостей?",
+            "en": "Ivan, do you think we should use a video in our presentation for the foreign guests?",
+            "es": "Iván, ¿qué opinas, deberíamos usar un vídeo en nuestra presentación para los invitados extranjeros?",
+            "fr": "Ivan, que penses-tu, devrions-nous utiliser une vidéo dans notre présentation pour les invités étrangers ?",
+            "pt": "Ivan, o que você acha, devemos usar vídeo na nossa apresentação para os convidados estrangeiros?",
+            "kr": "이반, 외국 손님들을 위한 프레젠테이션에 영상을 사용하는 게 좋을까?",
+            "jp": "イワンさん、外国人ゲスト向けのプレゼンで動画を使うのはどう思いますか？",
+            "zh": "伊万，你觉得我们给外国客人的汇报里要不要用视频？",
+            "ru": "Иван, как ты считаешь, стоит ли использовать видео в нашей презентации для иностранных гостей?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я думаю, да, но только короткий ролик, чтобы не отвлекать внимание от основного доклада.",
+            "en": "I think yes, but only a short clip, so it doesn't distract from the main report.",
+            "es": "Creo que sí, pero solo un clip corto, para no desviar la atención del discurso principal.",
+            "fr": "Je pense que oui, mais seulement une courte vidéo, pour ne pas détourner l'attention du discours principal.",
+            "pt": "Eu acho que sim, mas apenas um vídeo curto, para não desviar a atenção do relatório principal.",
+            "kr": "나는 좋다고 생각해. 다만 본 발표의 주의를 흩트리지 않도록 짧은 영상이어야 해.",
+            "jp": "使うべきだと思います。ただし、本題から注意をそらさないように、短い動画だけにしましょう。",
+            "zh": "我觉得可以用，但只能是一段短视频，以免分散对主要报告的注意力。",
+            "ru": "Я думаю, да, но только короткий ролик, чтобы не отвлекать внимание от основного доклада."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Согласна. Может быть, минутный ролик с отзывом клиента будет достаточно убедительным?",
+            "en": "Agreed. Maybe a one-minute video with a client testimonial would be convincing enough?",
+            "es": "De acuerdo. Quizás un vídeo de un minuto con el testimonio de un cliente sea lo bastante convincente.",
+            "fr": "Je suis d'accord. Peut-être qu'une vidéo d'une minute avec le témoignage d'un client sera assez convaincante ?",
+            "pt": "Concordo. Talvez um vídeo de um minuto com o depoimento de um cliente seja convincente o suficiente?",
+            "kr": "동의해. 고객 인터뷰가 담긴 일 분짜리 영상이면 충분히 설득력 있을까?",
+            "jp": "同意します。顧客の声の一分間の動画なら、十分説得力があるでしょうか？",
+            "zh": "同意。也许一段一分钟的客户评价视频就足够有说服力了？",
+            "ru": "Согласна. Может быть, минутный ролик с отзывом клиента будет достаточно убедительным?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это отличная идея. Живой отзыв всегда вызывает больше доверия, чем просто цитата на слайде.",
+            "en": "That's a great idea. A live testimonial always builds more trust than just a quote on a slide.",
+            "es": "Es una idea excelente. Un testimonio real siempre genera más confianza que una simple cita en la diapositiva.",
+            "fr": "C'est une excellente idée. Un témoignage réel inspire toujours plus de confiance qu'une simple citation sur une diapositive.",
+            "pt": "É uma ótima ideia. Um depoimento real sempre gera mais confiança do que apenas uma citação no slide.",
+            "kr": "그거 정말 좋은 생각이야. 실제 인터뷰는 슬라이드에 있는 단순한 인용문보다 훨씬 더 신뢰를 주거든.",
+            "jp": "それは素晴らしいアイデアです。生の声は、スライドの引用文よりもいつも信頼を集めますから。",
+            "zh": "这是个好主意。真实的评价总是比幻灯片上的一句引文更能赢得信任。",
+            "ru": "Это отличная идея. Живой отзыв всегда вызывает больше доверия, чем просто цитата на слайде."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда я найду подходящий отрывок и вставлю его в нужное место.",
+            "en": "Then I'll find a suitable clip and insert it in the right place.",
+            "es": "Entonces buscaré un fragmento adecuado y lo insertaré en el lugar apropiado.",
+            "fr": "Alors je trouverai un extrait approprié et je l'insérerai au bon endroit.",
+            "pt": "Então vou encontrar um trecho adequado e inseri-lo no lugar certo.",
+            "kr": "그럼 적절한 영상 부분을 찾아서 필요한 위치에 넣어볼게.",
+            "jp": "では、適切な場面を見つけて、必要な場所に挿入します。",
+            "zh": "那我就找一段合适的片段，插到合适的位置。",
+            "ru": "Тогда я найду подходящий отрывок и вставлю его в нужное место."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо. Только давай проверим, что техника не подведёт, и звук будет качественным.",
+            "en": "Good. But let's make sure the equipment won't fail us and the sound quality will be good.",
+            "es": "Bien. Solo asegurémonos de que la tecnología no falle y de que el sonido sea de buena calidad.",
+            "fr": "Bien. Mais vérifions que la technique ne nous fera pas défaut et que le son sera de bonne qualité.",
+            "pt": "Ok. Só vamos verificar se a tecnologia não vai falhar e se o som terá boa qualidade.",
+            "kr": "좋아. 그런데 장비가 문제없이 작동하고 음질도 좋은지 꼭 확인하자.",
+            "jp": "いいですね。ただ、機材が問題なく動くか、音声の質が良いか、確認しておきましょう。",
+            "zh": "好的。不过我们得检查一下设备不会出问题，声音质量也要好。",
+            "ru": "Хорошо. Только давай проверим, что техника не подведёт, и звук будет качественным."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, мы готовы к презентации? Я переживаю, что мы могли упустить какую-то важную деталь.",
+            "en": "Dmitry, are we ready for the presentation? I'm worried we might have missed some important detail.",
+            "es": "Dmitri, ¿estamos listos para la presentación? Me preocupa que hayamos podido pasar por alto algún detalle importante.",
+            "fr": "Dmitri, sommes-nous prêts pour la présentation ? Je crains que nous ayons pu manquer un détail important.",
+            "pt": "Dmitri, estamos prontos para a apresentação? Estou preocupada que possamos ter deixado passar algum detalhe importante.",
+            "kr": "드미트리, 프레젠테이션 준비 다 됐어? 중요한 세부 사항을 놓친 건 아닐까 걱정돼.",
+            "jp": "ドミトリーさん、プレゼンの準備はできていますか？何か大事なことを見落としていないか、心配で。",
+            "zh": "德米特里，我们准备好汇报了吗？我担心我们可能遗漏了什么重要的细节。",
+            "ru": "Дмитрий, мы готовы к презентации? Я переживаю, что мы могли упустить какую-то важную деталь."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мария, я думаю, мы учли всё. У нас есть структура, цифры, примеры и ответы на вопросы.",
+            "en": "Maria, I think we've covered everything. We have the structure, the numbers, the examples, and the answers to questions.",
+            "es": "María, creo que lo hemos tenido todo en cuenta. Tenemos la estructura, las cifras, los ejemplos y las respuestas a las preguntas.",
+            "fr": "Maria, je pense que nous avons tout pris en compte. Nous avons la structure, les chiffres, les exemples et les réponses aux questions.",
+            "pt": "Maria, eu acho que consideramos tudo. Temos estrutura, números, exemplos e respostas para as perguntas.",
+            "kr": "마리아, 우리가 다 고려했다고 생각해. 구조도 있고, 수치도 있고, 사례도 있고, 질문에 대한 답변도 준비됐어.",
+            "jp": "マリアさん、すべて考慮したと思います。構成も、数字も、事例も、質問への答えもあります。",
+            "zh": "玛丽亚，我觉得我们都考虑到了。我们有结构、有数据、有案例，还有问题答案。",
+            "ru": "Мария, я думаю, мы учли всё. У нас есть структура, цифры, примеры и ответы на вопросы."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это правда. Но давай ещё раз пройдёмся по сценарию, чтобы убедиться, что всё логично.",
+            "en": "That's true. But let's go through the script one more time to make sure everything is logical.",
+            "es": "Es verdad. Pero repasemos el guion una vez más para asegurarnos de que todo es lógico.",
+            "fr": "C'est vrai. Mais reprenons encore une fois le scénario pour nous assurer que tout est logique.",
+            "pt": "É verdade. Mas vamos revisar o roteiro mais uma vez para garantir que tudo esteja lógico.",
+            "kr": "맞아. 그런데 모든 게 논리적인지 확인하기 위해 시나리오를 한 번 더 훑어보자.",
+            "jp": "そうですね。でも、すべてが論理的か確認するために、もう一度シナリオを確認しましょう。",
+            "zh": "这倒是真的。但我们再过一遍流程吧，确保一切逻辑顺畅。",
+            "ru": "Это правда. Но давай ещё раз пройдёмся по сценарию, чтобы убедиться, что всё логично."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Давай. Я начну с приветствия, затем ты представишь анализ рынка, а я перейду к нашему решению.",
+            "en": "Let's do it. I'll start with the greeting, then you'll present the market analysis, and I'll move on to our solution.",
+            "es": "Vamos. Yo empezaré con el saludo, luego tú presentarás el análisis del mercado y yo pasaré a nuestra solución.",
+            "fr": "Allons-y. Je commencerai par les salutations, ensuite tu présenteras l'analyse du marché, puis je passerai à notre solution.",
+            "pt": "Vamos. Eu começo com as boas-vindas, depois você apresenta a análise do mercado, e eu passo para a nossa solução.",
+            "kr": "좋아. 내가 인사말로 시작하고, 네가 시장 분석을 발표한 다음, 내가 우리 솔루션으로 넘어갈게.",
+            "jp": "いいですね。私が挨拶から始めて、あなたが市場分析を発表し、それから私が私たちの解決策に移ります。",
+            "zh": "好。我先开场问候，然后你介绍市场分析，我再过渡到我们的解决方案。",
+            "ru": "Давай. Я начну с приветствия, затем ты представишь анализ рынка, а я перейду к нашему решению."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А я подведу итоги и расскажу о финансовых прогнозах. Звучит сбалансированно.",
+            "en": "And I'll summarize and talk about the financial forecasts. Sounds balanced.",
+            "es": "Y yo haré el resumen y hablaré de las previsiones financieras. Suena equilibrado.",
+            "fr": "Et moi, je résumerai et je parlerai des prévisions financières. Ça semble équilibré.",
+            "pt": "E eu faço o resumo e falo sobre as projeções financeiras. Parece equilibrado.",
+            "kr": "그리고 내가 결론을 맺고 재무 전망에 대해 이야기할게. 균형 잡힌 구성 같아.",
+            "jp": "そして、私がまとめと財務予測について話します。バランスが取れている感じですね。",
+            "zh": "然后我总结并讲财务预测。听起来很均衡。",
+            "ru": "А я подведу итоги и расскажу о финансовых прогнозах. Звучит сбалансированно."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Абсолютно. Я уверен, что мы выступим достойно и достигнем поставленной цели.",
+            "en": "Absolutely. I'm confident we'll do a great job and achieve our goal.",
+            "es": "Totalmente. Estoy seguro de que lo haremos bien y alcanzaremos el objetivo marcado.",
+            "fr": "Absolument. Je suis sûr que nous ferons une bonne prestation et que nous atteindrons notre objectif.",
+            "pt": "Com certeza. Estou confiante de que faremos uma boa apresentação e alcançaremos o objetivo proposto.",
+            "kr": "완벽해. 우리가 훌륭하게 발표하고 목표를 달성할 거라고 확신해.",
+            "jp": "まったくその通りです。私たちが立派に発表して、設定した目標を達成できると確信しています。",
+            "zh": "完全正确。我相信我们会表现出色，达成既定目标。",
+            "ru": "Абсолютно. Я уверен, что мы выступим достойно и достигнем поставленной цели."
+          }
+        }
+      ]
+    }
+  ]
+}

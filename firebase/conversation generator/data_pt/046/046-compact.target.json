@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Atendimento ao cliente",
+  "sets": {
+    "001": [
+      "Bom dia! Falei com vocês ontem sobre a proposta. Vocês tiveram tempo de analisar?",
+      "Bom dia! Sim, analisamos. Gostamos bastante da estrutura, mas temos algumas dúvidas.",
+      "Claro, pode falar. Estou aqui justamente para esclarecer qualquer ponto.",
+      "A primeira questão é sobre o prazo de implementação. Vocês conseguem entregar em dois meses?",
+      "Dois meses é um prazo apertado, mas acredito que conseguimos. Vou confirmar com a equipe.",
+      "Perfeito. Se conseguirem, acho que fechamos o contrato ainda esta semana."
+    ],
+    "002": [
+      "Recebi seu e-mail sobre o atraso na entrega. Pode me explicar o que aconteceu?",
+      "Infelizmente, tivemos um problema com um fornecedor externo. A peça chegou com defeito.",
+      "Entendo. Mas isso já vai impactar o cronograma inteiro do nosso projeto.",
+      "Sim, eu sei. Já estamos buscando um fornecedor alternativo para minimizar o atraso.",
+      "Certo. Por favor, me mantenha informado sobre qualquer novidade.",
+      "Pode deixar. Vou te enviar uma atualização amanhã de manhã, sem falta."
+    ],
+    "003": [
+      "O senhor gostaria de adicionar mais alguma cláusula ao contrato antes de assinar?",
+      "Sim, gostaria de incluir uma multa por atraso na entrega dos relatórios mensais.",
+      "Sem problema. Posso ajustar isso agora mesmo e enviar a nova versão.",
+      "Ótimo. E também gostaria de deixar claro que as reuniões serão quinzenais.",
+      "Perfeito, vou registrar isso também. Mais algum ponto?",
+      "Não, só isso. Assim que receber a versão atualizada, eu assino na hora."
+    ],
+    "004": [
+      "Notei que o último lote veio com algumas unidades danificadas. Vocês já identificaram a causa?",
+      "Sim, foi um problema no transporte. A embalagem não suportou a umidade da rota.",
+      "Isso é preocupante. Precisamos de uma solução definitiva, não só um paliativo.",
+      "Concordo. Vamos trocar o material da embalagem e testar uma nova rota de entrega.",
+      "Ok. E quanto ao lote danificado, como vamos resolver?",
+      "Vamos repor todas as unidades afetadas em até dez dias, com frete por nossa conta."
+    ],
+    "005": [
+      "O senhor ficou satisfeito com a apresentação que fizemos ontem para a diretoria?",
+      "Sim, foi muito boa. A diretoria aprovou o projeto, mas pediu alguns ajustes no orçamento.",
+      "Que ótima notícia! Pode me dizer quais ajustes eles sugeriram?",
+      "Eles acharam o custo de manutenção um pouco alto. Precisamos de uma alternativa mais enxuta.",
+      "Entendi. Vou conversar com nossa equipe técnica para encontrar uma opção viável.",
+      "Perfeito. Se vocês conseguirem reduzir em dez por cento, fechamos o acordo."
+    ],
+    "006": [
+      "Boa tarde! Estou ligando para confirmar se o senhor recebeu a proposta revisada.",
+      "Boa tarde! Recebi sim, mas ainda não tive tempo de ler com calma.",
+      "Sem pressa. Só queria saber se ficou alguma dúvida sobre os valores apresentados.",
+      "Na verdade, fiquei com uma dúvida sobre a forma de pagamento. Pode explicar de novo?",
+      "Claro. O pagamento é dividido em três parcelas: metade na assinatura e o restante em duas etapas.",
+      "Entendi. Isso está bem claro agora. Vou analisar e te dou uma resposta até sexta-feira."
+    ],
+    "007": [
+      "Precisamos adiar a reunião de amanhã. O diretor vai viajar em cima da hora.",
+      "Sem problema. Podemos remarcar para quinta-feira, no mesmo horário?",
+      "Quinta-feira serve. Mas o senhor poderia adiantar os pontos principais por e-mail?",
+      "Claro, envio hoje mesmo um resumo com os tópicos que vamos discutir.",
+      "Agradeço. Assim o diretor já chega preparado para a reunião.",
+      "Perfeito. E se surgir qualquer outra mudança, me avise com antecedência."
+    ],
+    "008": [
+      "O senhor viu o relatório que enviei ontem sobre o andamento do projeto?",
+      "Vi sim. O trabalho está bom, mas notei que alguns prazos estão apertados.",
+      "Sim, tivemos alguns imprevistos, mas estamos conseguindo acompanhar o cronograma.",
+      "Que bom. E a equipe do senhor está dando conta da demanda?",
+      "Estão sim. Estamos até fazendo horas extras para garantir a qualidade da entrega.",
+      "Fico tranquilo em saber disso. Continuem assim que está indo muito bem."
+    ],
+    "009": [
+      "Recebemos uma reclamação de um cliente sobre o atendimento da nossa equipe.",
+      "Que situação chata. Pode me passar mais detalhes sobre o que aconteceu?",
+      "O cliente disse que não foi respondido no prazo combinado e ficou insatisfeito.",
+      "Entendi. Vou conversar com a equipe hoje mesmo para entender o que houve.",
+      "Por favor. E peça para eles reforçarem o compromisso com os prazos.",
+      "Pode deixar. Também vou ligar para o cliente para pedir desculpas pessoalmente."
+    ],
+    "010": [
+      "O senhor gostaria de renovar o contrato de suporte técnico por mais um ano?",
+      "Gostaria, sim. Mas antes preciso saber se vocês vão manter o mesmo valor.",
+      "Vamos manter o valor, mas com um pequeno reajuste de cinco por cento.",
+      "Cinco por cento é aceitável, desde que o tempo de resposta continue o mesmo.",
+      "Pode ficar tranquilo. O suporte prioritário continua com atendimento em até duas horas.",
+      "Então fechado. Pode preparar o contrato que eu assino ainda esta semana."
+    ]
+  },
+  "level": "c1",
+  "chapter_id": "CONV_PT_CLIENT_COMMUNICATION",
+  "id": "046",
+  "target_lang": "pt"
+}

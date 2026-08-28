@@ -1,0 +1,70 @@
+{
+  "chapter_id": "conversation_002.runtime.json",
+  "target_lang": "es",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "A/B 화자가 세트 내에서 자연스럽게 번갈아 등장하며, 인사-소개-출신지 질문-답변-감탄으로 이어지는 대화 흐름이 일관적이다. 화자별 역할이 명확하다."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "인사, 자기소개, 출신지 묻고 답하기, 현재 거주지 말하기, 감탄 표현 등 A1 수준의 핵심 대화 기능이 정확하게 구현되었다."
+    },
+    "spoken_naturalness": {
+      "score": 9.5,
+      "weight": 15,
+      "notes": "전체적으로 자연스러운 구어체 표현을 사용했다. '¿Y tú?', '¡Qué bien!' 등 실제 회화에서 자주 쓰이는 표현이 잘 녹아 있다. 다만 'Encantada'와 'Mucho gusto'가 연속으로 나와 약간의 반복감이 있으나, 실제 대화에서도 충분히 발생할 수 있는 표현이다."
+    },
+    "register_appropriateness": {
+      "score": 9.5,
+      "weight": 10,
+      "notes": "처음 만난 사이지만 또래로 보이는 상황에서 'tú'를 일관되게 사용하여 자연스러운 친밀감을 형성했다. 'usted'가 혼용되지 않아 격식 수준이 일관적이다. 다만 한국어 번역에서 '당신'이라는 표현이 다소 격식 있고 어색하게 느껴질 수 있다."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 오류가 없다. 'soy de', 'vivo en' 등 장소 표현의 전치사 사용이 정확하고, 성별 일치('Encantada' - 여성 화자)가 올바르게 적용되었다. 의문문의 ¿ ¿, ¡ ! 표기도 정확하다."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "첫 만남에서 자기소개를 하고 출신지를 묻는 상황은 가장 기본적이고 실용적인 회화 상황이다. 스페인 내 도시(발렌시아, 세비야, 마드리드)를 언급하여 실제 여행이나 생활에서 활용도가 높다."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "스페인 본토의 도시 이름을 사용했지만, 특정 문화적 고정관념이나 민감한 주제를 다루지 않아 문화적으로 중립적이다. 스페인어 학습자에게 유용한 지리 정보를 제공한다."
+    },
+    "tts_readiness": {
+      "score": 10,
+      "weight": 5,
+      "notes": "모든 문장이 TTS로 읽기에 적합한 길이와 구조를 가지고 있다. 축약형이나 과도한 줄임말이 없고, 감탄사('¡Qué bien!')와 의문문의 억양을 살리기 좋은 문장들로 구성되었다."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 es 필드가 모든 문장에서 완전히 일치한다. es는 target의 정확한 미러로 유지되었다."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "A1 레벨의 기초 회화 교재로서 시중 서비스와 비교해 손색없는 품질이다. SpanishPod101이나 Duolingo의 유사 레벨 콘텐츠와 견줄 만하며, 특히 스페인 본토 스페인어를 대상으로 한 점이 차별화 요소다. 다만 대화가 단순하여 Pimsleur 수준의 심화 연습에는 다소 부족할 수 있다."
+    }
+  },
+  "final_score": 96.5,
+  "market_benchmark": {
+    "comparable_services": [
+      "SpanishPod101",
+      "Duolingo Spanish Conversations",
+      "Pimsleur Spanish",
+      "Notes in Spanish (European Spanish)"
+    ],
+    "estimated_relative_position": "A1 레벨에서 시중 최상위 서비스와 동급이거나 그 이상의 품질. 특히 스페인 본토 스페인어(es-ES)를 타겟으로 한 점과 깔끔한 문장 구성이 강점이다.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}

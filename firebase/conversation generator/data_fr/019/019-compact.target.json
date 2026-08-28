@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Santé et symptômes",
+  "sets": {
+    "001": [
+      "Salut Lucas, tu as l'air fatigué aujourd'hui. Ça va ?",
+      "Pas vraiment, j'ai mal à la tête depuis ce matin.",
+      "Oh, tu as pris quelque chose pour ça ?",
+      "Oui, un comprimé, mais ça ne fait pas encore effet.",
+      "Repose-toi un peu, alors. Tu devrais boire de l'eau.",
+      "Tu as raison, je vais m'allonger un moment."
+    ],
+    "002": [
+      "Bonjour docteur, je ne me sens pas bien depuis hier.",
+      "Bonjour Camille. Qu'est-ce qui vous fait mal exactement ?",
+      "J'ai mal à la gorge et je tousse beaucoup.",
+      "Vous avez de la fièvre ? Laissez-moi vérifier.",
+      "Je ne sais pas, je n'ai pas pris ma température.",
+      "On va voir ça. Ouvrez la bouche, s'il vous plaît."
+    ],
+    "003": [
+      "Hugo, tu as l'air pâle. Tu es malade ?",
+      "J'ai mal au ventre depuis le déjeuner, c'est bizarre.",
+      "Tu as mangé quelque chose de bizarre ?",
+      "Peut-être, j'ai pris une salade au restaurant.",
+      "Tu devrais boire du thé à la menthe, ça aide.",
+      "Bonne idée, je vais essayer ça. Merci."
+    ],
+    "004": [
+      "Allô, Manon ? Je ne peux pas venir au cours aujourd'hui.",
+      "Oh, qu'est-ce qui se passe ? Tu es malade ?",
+      "Oui, j'ai de la fièvre et je suis très fatiguée.",
+      "Tu as vu un médecin ? Tu devrais y aller.",
+      "Pas encore, je vais appeler pour un rendez-vous.",
+      "Repose-toi bien et tiens-moi au courant."
+    ],
+    "005": [
+      "Aïe, je me suis tordu la cheville en courant.",
+      "Oh non, ça fait mal ? Tu peux marcher ?",
+      "Un peu, mais c'est douloureux quand je pose le pied.",
+      "Il faut mettre de la glace dessus tout de suite.",
+      "Tu as raison, et je vais la surélever.",
+      "Si ça ne va pas mieux, va voir un médecin."
+    ],
+    "006": [
+      "Bonjour, je voudrais quelque chose pour le rhume.",
+      "Bien sûr. Vous avez le nez bouché ou qui coule ?",
+      "Les deux, et j'éternue tout le temps.",
+      "D'accord, ce spray nasal devrait vous aider.",
+      "Merci. Je le prends combien de fois par jour ?",
+      "Deux fois par jour, matin et soir, pendant une semaine."
+    ],
+    "007": [
+      "Tu as l'air en forme aujourd'hui, Chloé !",
+      "Oui, je vais beaucoup mieux, merci !",
+      "Tu n'as plus mal à la gorge ?",
+      "Non, c'est fini. J'ai bien dormi et bu du miel.",
+      "Tant mieux ! Le miel, c'est super pour la gorge.",
+      "Je confirme, ça a vraiment bien marché."
+    ],
+    "008": [
+      "Thomas, tu as une drôle de voix. Tu es enrhumé ?",
+      "Oui, j'ai attrapé froid ce week-end.",
+      "Tu as toussé toute la nuit ? Tu as l'air épuisé.",
+      "Un peu, mais j'ai pris un sirop pour la toux.",
+      "Tu devrais aussi te reposer et boire chaud.",
+      "Oui, je vais me faire une tisane ce soir."
+    ],
+    "009": [
+      "Je suis allergique aux pollens, c'est terrible en ce moment.",
+      "Ah oui, je vois. Tu as les yeux qui piquent ?",
+      "Oui, et je n'arrête pas d'éternuer.",
+      "Tu as pris un antihistaminique ?",
+      "Oui, mais ça me rend un peu somnolente.",
+      "C'est normal. Essaie de rester chez toi si possible."
+    ],
+    "010": [
+      "Docteur, j'ai mal à l'oreille depuis deux jours.",
+      "Je vais regarder. Est-ce que ça vous fait mal quand vous avalez ?",
+      "Oui, un peu, et j'entends moins bien de cette oreille.",
+      "C'est une petite infection. Je vais vous prescrire des gouttes.",
+      "D'accord, je les utilise pendant combien de temps ?",
+      "Pendant cinq jours, trois fois par jour. Revenez si ça ne va pas mieux."
+    ]
+  },
+  "level": "a2",
+  "chapter_id": "CONV_FR_HEALTH_SYMPTOMS",
+  "id": "019",
+  "target_lang": "fr"
+}

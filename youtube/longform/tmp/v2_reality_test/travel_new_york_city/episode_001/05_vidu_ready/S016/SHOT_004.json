@@ -1,0 +1,179 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S016",
+  "shot_id": "SHOT_004",
+  "sequence": 4,
+  "source_refs": {
+    "production_scene": "02_visual/production_scenes/S016.json",
+    "shot": "03_shots/S016/SHOT_004.json",
+    "visual_continuity": "04_visual_continuity/S016/SHOT_004.json"
+  },
+  "generation": {
+    "provider": "vidu",
+    "duration_seconds": 5.0,
+    "aspect_ratio": "16:9",
+    "resolution": "1080p",
+    "mode": "reference_guided"
+  },
+  "actors": [
+    {
+      "actor_ref": "CHAR_JIEUN_001",
+      "identity_type": "persistent",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Medium-sized travel backpack",
+        "Small crossbody bag",
+        "Smartphone",
+        "Passport",
+        "Checked suitcase",
+        "Hotel room key"
+      ],
+      "body_state": [
+        "Walking toward the elevator",
+        "Pulling her checked suitcase",
+        "Backpack worn on back",
+        "Crossbody bag worn across body",
+        "Holding the room key in her hand"
+      ],
+      "emotion": "relieved and happy",
+      "reference_asset_ids": [
+        "ASSET_CHAR_JIEUN_PRIMARY_000001"
+      ]
+    }
+  ],
+  "location": {
+    "location_ref": "LOC_MANHATTAN_HOTEL_001",
+    "identity_lock": true,
+    "current_zone": "Hotel lobby, walking from the front desk toward the elevator",
+    "persistent_features": [
+      "Hotel lobby with front desk",
+      "Elevator area",
+      "Guest room with bed, desk, and window",
+      "City view from the room window",
+      "Hotel signage and entrance"
+    ],
+    "orientation_state": [
+      "Jieun walking away from the front desk",
+      "Jieun facing toward the elevator",
+      "Front desk behind Jieun",
+      "Elevator area ahead of Jieun",
+      "Checked suitcase being pulled beside Jieun"
+    ],
+    "reference_asset_ids": []
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn on back",
+      "position": "on Jieun's back",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn across body, closed",
+      "position": "across Jieun's body",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "stored in crossbody bag",
+      "position": "inside Jieun's crossbody bag",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "stored in crossbody bag",
+      "position": "inside Jieun's crossbody bag",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "being pulled by Jieun",
+      "position": "beside Jieun, being pulled as she walks",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_ROOM_KEY_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "held in Jieun's hand",
+      "position": "in Jieun's right hand",
+      "visible": true,
+      "continuity_lock": true
+    }
+  ],
+  "prompt": {
+    "subject": "Jieun, a young woman with an oval face, soft features, natural eyebrows, dark brown eyes, light natural makeup, and a warm friendly expression. She has shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears. She wears a white casual t-shirt, a light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch. She carries a medium-sized travel backpack on her back, a small crossbody bag across her body, and pulls a checked suitcase beside her. She holds a hotel room key in her right hand. Her expression is relieved and happy.",
+    "environment": "Inside the Manhattan Hotel lobby during the day. Bright natural daylight streams through the lobby windows, mixed with warm indoor lighting. The lobby features a front desk, an elevator area ahead, and hotel signage. A few guests walk through the lobby, with soft background music and occasional sounds of the elevator and distant conversation.",
+    "action": "Jieun smiles, thanks the front desk employee, and begins walking toward the elevator with her luggage. She pulls her checked suitcase beside her, holding the room key in her right hand, and moves away from the front desk toward the elevator area.",
+    "camera": "Medium-wide shot from a three-quarter angle, smooth tracking movement following Jieun as she walks toward the elevator.",
+    "continuity": "Jieun is holding her room key, the front desk employee has pointed toward the elevator, and Jieun is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase. Her checked suitcase is being pulled beside her. She has a relieved and happy expression.",
+    "final_prompt": "A medium-wide shot from a three-quarter angle, smooth tracking movement following Jieun as she smiles, thanks the front desk employee, and begins walking toward the elevator with her luggage. She is a young woman with an oval face, soft features, natural eyebrows, dark brown eyes, light natural makeup, and a warm friendly expression. She has shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears. She wears a white casual t-shirt, a light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch. She carries a medium-sized travel backpack on her back, a small crossbody bag across her body, and pulls a checked suitcase beside her. She holds a hotel room key in her right hand. The setting is the Manhattan Hotel lobby during the day, with bright natural daylight through the windows mixed with warm indoor lighting, a front desk behind her, and an elevator area ahead. A few guests walk through the lobby with soft background music. She moves away from the front desk toward the elevator, pulling her suitcase, with a relieved and happy expression."
+  },
+  "negative_constraints": [
+    "Do not change Jieun's character identity, appearance, hair, or clothing.",
+    "Do not change the canonical location identity of the Manhattan Hotel lobby.",
+    "Do not introduce new characters.",
+    "Do not introduce new locations.",
+    "Do not alter the canonical prop state: backpack on back, crossbody bag across body, checked suitcase being pulled, room key in right hand.",
+    "Do not show Jieun moving past the hotel lobby or leaving the hotel.",
+    "Do not show Jieun entering her room before reaching the elevator.",
+    "Do not introduce a new travel problem.",
+    "Do not show Jieun's suitcase being lost or missing.",
+    "Do not show Jieun's passport or smartphone being dropped or lost.",
+    "Do not change story events."
+  ],
+  "continuity": {
+    "carry_in": [
+      "Jieun is holding her room key",
+      "The front desk employee has pointed toward the elevator",
+      "Jieun is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase"
+    ],
+    "carry_out": [
+      "Jieun is walking toward the elevator with her luggage",
+      "She is holding her room key",
+      "She has a relieved and happy expression",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase"
+    ],
+    "must_match_previous_shot": true,
+    "previous_scene_id": "S016",
+    "previous_shot_id": "SHOT_003",
+    "next_scene_id": "S017",
+    "next_shot_id": "SHOT_001"
+  }
+}

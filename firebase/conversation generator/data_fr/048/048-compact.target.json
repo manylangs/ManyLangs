@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Résoudre un problème",
+  "sets": {
+    "001": [
+      "Lucas, on a un souci avec le client Martin.",
+      "Ah bon ? Qu'est-ce qui se passe exactement ?",
+      "Il n'a pas reçu la livraison prévue pour hier.",
+      "Je vais vérifier immédiatement auprès du transporteur.",
+      "Merci, c'est urgent. Il commence à s'impatienter.",
+      "Compris. Je vous tiens au courant dans la demi-heure."
+    ],
+    "002": [
+      "Le serveur est en panne depuis ce matin.",
+      "C'est embêtant. Avez-vous contacté le service informatique ?",
+      "Oui, mais ils ne savent pas quand ils pourront intervenir.",
+      "Dans ce cas, je propose qu'on bascule sur le système de secours.",
+      "Bonne idée. Vous pouvez vous en occuper ?",
+      "Bien sûr, je m'en charge tout de suite."
+    ],
+    "003": [
+      "Hugo, il y a une erreur dans le rapport que tu as envoyé.",
+      "Une erreur ? À quel niveau exactement ?",
+      "Les chiffres du troisième trimestre ne correspondent pas.",
+      "Je suis désolé, je vais vérifier mes sources.",
+      "Merci. Il faudrait corriger ça avant la réunion.",
+      "Pas de souci, je m'y mets maintenant."
+    ],
+    "004": [
+      "Le fournisseur nous annonce un retard de deux semaines.",
+      "Deux semaines, c'est énorme. On ne peut pas attendre.",
+      "Je sais, mais on n'a pas vraiment le choix.",
+      "Et si on cherchait un fournisseur de secours ?",
+      "C'est une option, mais ça risque de coûter plus cher.",
+      "Oui, mais ça nous permettrait de tenir les délais."
+    ],
+    "005": [
+      "Camille, il y a un conflit entre deux membres de mon équipe.",
+      "C'est délicat. De quoi s'agit-il précisément ?",
+      "Ils ne sont pas d'accord sur la répartition des tâches.",
+      "Je vous suggère d'organiser une réunion pour en discuter.",
+      "Vous avez raison. Je vais les réunir cet après-midi.",
+      "C'est une bonne approche. Tenez-moi au courant."
+    ],
+    "006": [
+      "On a un problème avec le budget du projet.",
+      "Quel genre de problème ? Un dépassement ?",
+      "Oui, on a déjà dépensé quatre-vingts pour cent du budget.",
+      "Il va falloir réduire certaines dépenses alors.",
+      "Je pense qu'on peut économiser sur la communication.",
+      "Oui, c'est une piste intéressante à explorer."
+    ],
+    "007": [
+      "Antoine, le client se plaint de la qualité du produit.",
+      "C'est grave. A-t-il précisé la nature du problème ?",
+      "Il dit que l'emballage était abîmé à la réception.",
+      "Je vais contacter le service qualité pour comprendre.",
+      "Merci. Il attend une réponse rapide.",
+      "Je m'en occupe personnellement, promis."
+    ],
+    "008": [
+      "On a perdu le contrat avec la société Dupont.",
+      "Comment ça ? On avait pourtant fait une bonne offre.",
+      "Oui, mais ils ont choisi un concurrent moins cher.",
+      "C'est dommage. Est-ce qu'on peut négocier quelque chose ?",
+      "Je ne pense pas, la décision est déjà prise.",
+      "Alors on va apprendre de cette expérience pour la suite."
+    ],
+    "009": [
+      "Le logiciel de facturation ne fonctionne plus.",
+      "Depuis quand exactement ?",
+      "Depuis ce matin, et on a des factures à envoyer.",
+      "Je vais appeler le support technique tout de suite.",
+      "Merci, c'est vraiment bloquant pour le service comptable.",
+      "Je comprends. Je fais le maximum pour régler ça vite."
+    ],
+    "010": [
+      "Hugo, la présentation de demain est annulée.",
+      "Annulée ? Pour quelle raison ?",
+      "Le directeur a un empêchement de dernière minute.",
+      "D'accord. Est-ce qu'on a une nouvelle date ?",
+      "Pas encore, mais on devrait être fixés rapidement.",
+      "Très bien. Je vais prévenir toute l'équipe."
+    ]
+  },
+  "level": "c1",
+  "chapter_id": "CONV_FR_ISSUE_SOLVING",
+  "id": "048",
+  "target_lang": "fr"
+}

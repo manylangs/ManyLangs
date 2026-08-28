@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S006",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun reaches the ground transportation area",
+      "pass": true,
+      "evidence": "L001: 'Okay, this is the ground transportation area.'"
+    },
+    {
+      "requirement": "Jieun observes the different transportation options available",
+      "pass": true,
+      "evidence": "L001: 'I can see taxis, ride-sharing, and public transit signs.'"
+    },
+    {
+      "requirement": "Jieun considers the pros and cons of each option",
+      "pass": true,
+      "evidence": "L002-L004: She evaluates taxi as 'fast and easy, but expensive', ride-sharing as 'could be cheaper, but need app and pickup spot', public transit as 'probably cheapest, but not sure if easy with luggage'."
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not have Jieun make a final decision in this scene",
+      "pass": true,
+      "evidence": "L004 ends with 'Hmm, which one should I choose?' — no decision made."
+    },
+    {
+      "requirement": "Do not introduce specific prices or operational details for any transportation option",
+      "pass": true,
+      "evidence": "No specific prices, routes, or operational details are mentioned; only general comparisons like 'expensive', 'cheaper', 'cheapest'."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

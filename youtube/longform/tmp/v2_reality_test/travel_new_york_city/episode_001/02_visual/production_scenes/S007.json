@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S007",
+  "sequence": 7,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "characters": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "local_character_id": null,
+      "role": "protagonist",
+      "gender": "female",
+      "visual_state": {
+        "appearance": [
+          "Oval face with soft features",
+          "Natural eyebrows",
+          "Dark brown eyes",
+          "Light natural makeup",
+          "Warm friendly expression",
+          "Shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears"
+        ],
+        "clothing": [
+          "White casual t-shirt",
+          "Light blue denim jacket",
+          "Dark blue skinny jeans",
+          "White sneakers",
+          "Small silver earrings",
+          "Simple wristwatch"
+        ],
+        "carried_items": [
+          "Medium-sized travel backpack",
+          "Small crossbody bag",
+          "Smartphone",
+          "Passport",
+          "Checked suitcase"
+        ]
+      },
+      "emotion": "unsure and thoughtful, then more confident and decided",
+      "screen_action": "Approaches a transit employee in the ground transportation area, asks for advice, listens to the explanation, and decides to take public transit"
+    },
+    {
+      "character_ref": null,
+      "local_character_id": "B",
+      "role": "supporting",
+      "gender": "male",
+      "visual_state": {
+        "appearance": [
+          "Male transit employee in his 30s",
+          "Neatly groomed short hair",
+          "Professional and approachable expression"
+        ],
+        "clothing": [
+          "Uniform with transit authority logo",
+          "Reflective vest over a dark polo shirt",
+          "Dark trousers",
+          "Comfortable work shoes"
+        ],
+        "carried_items": [
+          "Handheld radio"
+        ]
+      },
+      "emotion": "helpful and professional",
+      "screen_action": "Stands near the ground transportation information area, turns to Jieun, explains the transportation options, and points toward the train signs"
+    }
+  ],
+  "environment": {
+    "time_of_day": "day",
+    "weather": null,
+    "lighting": "bright indoor terminal lighting with natural light from large windows",
+    "background_activity": [
+      "Other passengers walking toward the taxi and ride-sharing pickup areas",
+      "Travelers checking signs and directions",
+      "Airport staff assisting passengers near the transportation options"
+    ]
+  },
+  "visual_goal": "The viewer must see Jieun confidently asking a transit employee for advice and then clearly deciding to take public transit, with the employee pointing her toward the train signs.",
+  "actions": [
+    {
+      "sequence": 1,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "Walks toward the transit employee standing near the ground transportation information area",
+      "object_ref": null
+    },
+    {
+      "sequence": 2,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "Stops in front of the employee and asks for advice",
+      "object_ref": null
+    },
+    {
+      "sequence": 3,
+      "actor_ref": "B",
+      "action": "Turns to face Jieun and explains the transportation options",
+      "object_ref": null
+    },
+    {
+      "sequence": 4,
+      "actor_ref": "B",
+      "action": "Points toward the train signs while recommending public transit",
+      "object_ref": null
+    },
+    {
+      "sequence": 5,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "Nods and says she will take the train",
+      "object_ref": null
+    },
+    {
+      "sequence": 6,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "Looks toward the train signs and begins walking in that direction",
+      "object_ref": null
+    }
+  ],
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "description": "Medium-sized travel backpack",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "description": "Small crossbody bag",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "description": "Smartphone",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "description": "Passport",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "description": "Jieun's checked suitcase that she retrieved from the carousel",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    }
+  ],
+  "must_show": [
+    "Jieun asks a transit employee for advice",
+    "The employee explains the transportation options",
+    "Jieun decides to take public transit to Manhattan",
+    "The employee points toward the train signs",
+    "Jieun begins heading toward the transit station"
+  ],
+  "must_not_show": [
+    "Jieun must not move past the ground transportation area",
+    "No specific prices or operational details for any transportation option",
+    "No unexplained clothing change for Jieun",
+    "No new characters or locations introduced"
+  ],
+  "visual_continuity": {
+    "carry_in": [
+      "Jieun is at the ground transportation area considering her options",
+      "She is comparing taxi, ride-sharing, and public transit",
+      "She is unsure which option is the most practical"
+    ],
+    "carry_out": [
+      "Jieun has received advice from a transit employee",
+      "She has decided to take public transit to Manhattan",
+      "She is now heading toward the transit station"
+    ],
+    "start_state": [
+      "Jieun is standing in the ground transportation area",
+      "She is holding her suitcase handle",
+      "She has a thoughtful, unsure expression"
+    ],
+    "end_state": [
+      "Jieun is walking toward the train signs",
+      "She has a more confident and decided expression",
+      "She is still holding her suitcase handle"
+    ]
+  },
+  "production_constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_story_continuity": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false
+  }
+}

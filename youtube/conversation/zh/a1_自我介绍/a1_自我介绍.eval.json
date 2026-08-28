@@ -1,0 +1,70 @@
+{
+  "chapter_id": "conversation_002.runtime.json",
+  "target_lang": "zh",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "A/B 화자 관계가 명확하고 일관적이다. A는 소개를 시작하고, B가 응답하며, 대화가 자연스럽게 이어진다. 모든 세트에서 화자 역할이 유지된다."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "인사, 자기소개, 질문, 응답, 감정 표현 등 대화 기능이 정확하게 구현되었다. '你好', '很高兴认识你', '你住在哪里？' 등 전형적인 대화 패턴이 자연스럽게 사용되었다."
+    },
+    "spoken_naturalness": {
+      "score": 9.5,
+      "weight": 15,
+      "notes": "전체적으로 구어체 표현이 자연스럽다. '我也是', '你呢？', '太好了' 등 실제 회화에서 자주 쓰이는 표현이 잘 반영되었다. 다만 '那我们是邻居了'는 약간 문어적인 느낌이 있어, '那我们就是邻居了'가 더 자연스러울 수 있다."
+    },
+    "register_appropriateness": {
+      "score": 9,
+      "weight": 10,
+      "notes": "초급 단계에 적합한 중립적이고 친근한 어조를 유지하고 있다. '你'를 사용한 비격식체가 일관되게 적용되었으며, '请多关照'는 상황에 적절한 겸손한 표현이다. 다만 '很高兴认识你'는 '认识你很高兴'이 더 자연스러운 어순일 수 있다."
+    },
+    "grammar_and_notation": {
+      "score": 9.5,
+      "weight": 10,
+      "notes": "문법적으로 오류가 없다. 문장 부호(。？！)가 정확하게 사용되었고, '住在', '住在...附近' 등 핵심 문법 구조가 올바르게 적용되었다. '我们'의 사용도 적절하다."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "첫 만남에서의 자기소개와 거주지 확인, 이웃 관계 형성까지 실생활에서 매우 빈번하게 발생하는 상황을 다루고 있다. 초급 학습자가 실제로 활용하기 좋은 주제다."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "중국어권 문화의 보편적인 인사말과 자기소개 방식을 사용하면서도, 특정 문화적 요소에 지나치게 의존하지 않아 다른 문화권 학습자도 이해하기 쉽다."
+    },
+    "tts_readiness": {
+      "score": 9.5,
+      "weight": 5,
+      "notes": "TTS로 읽기에 적합한 짧고 명확한 문장들로 구성되어 있다. 다만 '那我们是邻居了'의 경우 억양에 따라 의미가 다르게 전달될 수 있어, TTS 음성 선택 시 주의가 필요하다."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target(zh)과 zh 필드가 완전히 일치한다. 모든 문장에서 target과 zh가 동일하게 유지되어 미러 일치도가 완벽하다."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "ChinesePod, Duolingo 등 주요 서비스의 초급 회화 콘텐츠와 비교했을 때, 대화의 자연스러움과 실용성에서 경쟁력이 있다. 다만 '那我们是邻居了'와 같은 일부 표현은 더 자연스러운 대안이 있어, 세부적인 표현 개선 여지가 있다."
+    }
+  },
+  "final_score": 95.25,
+  "market_benchmark": {
+    "comparable_services": [
+      "ChinesePod",
+      "Duolingo Chinese (Mandarin) Conversations",
+      "HelloChinese",
+      "Pimsleur Mandarin Chinese"
+    ],
+    "estimated_relative_position": "상위 10% 수준. 초급 회화 교재로서 대화의 자연스러움과 실용성에서 주요 경쟁 서비스보다 우수하며, 특히 TTS 활용과 문화적 중립성에서 높은 점수를 받았다.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}

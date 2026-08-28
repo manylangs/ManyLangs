@@ -1,0 +1,26 @@
+ORDER: 013/065
+SCENE: S004
+SHOT: SHOT_002
+DURATION: 5.0 seconds
+ASPECT RATIO: 16:9
+RESOLUTION: 1080p
+
+REFERENCE IMAGE:
+- _references/jieun_primary.png
+
+PROMPT:
+Jieun, a young woman with an oval face, soft features, natural eyebrows, dark brown eyes, light natural makeup, and a warm friendly expression, with shoulder-length dark brown hair straight with slight natural waves tucked behind ears, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch, carrying a medium-sized travel backpack on her back, a small crossbody bag across her body, a smartphone in one hand lowered to her side, and a passport in her other hand, walks toward the correct baggage carousel in the baggage claim area of JFK International Airport, stops in front of it, and begins watching the carousel with a hopeful but slightly worried expression. The large terminal has high ceilings, digital flight information displays, signage for Arrivals, Immigration, and Baggage Claim, moving walkways and escalators, and large windows with natural light. The baggage carousel for flight KE081 is directly in front of her, with other passengers standing around the same carousel and luggage carts being pushed by arriving travelers. Bright indoor terminal lighting with natural light from large windows, daytime. Medium shot, three-quarter angle, static camera, locked stability. Jieun's identity, clothing, and carried items remain unchanged from the previous shot. She is standing in front of the correct baggage carousel, facing the carousel belt, with her backpack on her back, crossbody bag across her body, smartphone in her hand lowered to her side, and passport in her other hand. The baggage carousel is directly in front of her, the digital flight information display is behind her, and other passengers are around the same carousel. Her checked luggage must not appear on the carousel, and she must not leave the baggage claim area.
+
+NEGATIVE / DO-NOT-CHANGE NOTES:
+- Do not change Jieun's identity, appearance, hair, clothing, or carried items.
+- Do not change the canonical location identity of JFK Airport baggage claim area.
+- Do not introduce new characters.
+- Do not introduce new locations.
+- Do not alter the canonical prop state: backpack on back, crossbody bag across body, smartphone in hand, passport in hand.
+- Do not show Jieun's checked luggage arriving on the carousel.
+- Do not show Jieun leaving the baggage claim area.
+- Do not show Jieun putting her passport away.
+- Do not change story events or resolve unresolved story facts.
+
+OUTPUT FILE:
+S004_SHOT_002.mp4

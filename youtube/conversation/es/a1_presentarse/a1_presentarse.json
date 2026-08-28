@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "002"
+  },
+  "title": {
+    "target": "Presentarse",
+    "en": "Introducing Yourself",
+    "es": "Presentarse",
+    "fr": "Se présenter",
+    "pt": "Apresentar-se",
+    "kr": "자기소개",
+    "zh": "自我介绍",
+    "jp": "自己紹介",
+    "ru": "Знакомство"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Hola, soy Lucía. ¿Y tú?",
+            "en": "Hello, I'm Lucía. And you?",
+            "es": "Hola, soy Lucía. ¿Y tú?",
+            "fr": "Bonjour, je suis Lucía. Et toi ?",
+            "pt": "Olá, sou a Lucía. E tu?",
+            "kr": "안녕하세요, 저는 루시아예요. 당신은요?",
+            "zh": "你好，我是露西亚。你呢？",
+            "jp": "こんにちは、ルシアです。あなたは？",
+            "ru": "Привет, я Лусия. А ты?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Mucho gusto, Lucía. Yo soy Pablo.",
+            "en": "Nice to meet you, Lucía. I'm Pablo.",
+            "es": "Mucho gusto, Lucía. Yo soy Pablo.",
+            "fr": "Enchanté, Lucía. Moi, c'est Pablo.",
+            "pt": "Muito prazer, Lucía. Eu sou o Pablo.",
+            "kr": "만나서 반가워요, 루시아. 저는 파블로예요.",
+            "zh": "很高兴认识你，露西亚。我是巴勃罗。",
+            "jp": "はじめまして、ルシアさん。私はパブロです。",
+            "ru": "Очень приятно, Лусия. Я Пабло."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Encantada, Pablo. ¿De dónde eres?",
+            "en": "Nice to meet you too, Pablo. Where are you from?",
+            "es": "Encantada, Pablo. ¿De dónde eres?",
+            "fr": "Enchantée, Pablo. Tu es d'où ?",
+            "pt": "Encantada, Pablo. De onde és?",
+            "kr": "만나서 반가워요, 파블로. 어디에서 오셨어요?",
+            "zh": "我也很高兴认识你，巴勃罗。你是哪里人？",
+            "jp": "こちらこそ、はじめまして、パブロさん。どこの出身ですか？",
+            "ru": "Очень рада, Пабло. Откуда ты?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Soy de Valencia. ¿Y tú, de dónde eres?",
+            "en": "I'm from Valencia. And you, where are you from?",
+            "es": "Soy de Valencia. ¿Y tú, de dónde eres?",
+            "fr": "Je suis de Valence. Et toi, tu es d'où ?",
+            "pt": "Sou de Valência. E tu, de onde és?",
+            "kr": "저는 발렌시아에서 왔어요. 당신은 어디에서 왔어요?",
+            "zh": "我是巴伦西亚人。你呢，你是哪里人？",
+            "jp": "バレンシア出身です。あなたはどこの出身ですか？",
+            "ru": "Я из Валенсии. А ты откуда?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Yo soy de Sevilla, pero ahora vivo en Madrid.",
+            "en": "I'm from Seville, but now I live in Madrid.",
+            "es": "Yo soy de Sevilla, pero ahora vivo en Madrid.",
+            "fr": "Moi, je suis de Séville, mais maintenant je vis à Madrid.",
+            "pt": "Eu sou de Sevilha, mas agora vivo em Madrid.",
+            "kr": "저는 세비야에서 왔지만, 지금은 마드리드에 살아요.",
+            "zh": "我是塞维利亚人，不过现在住在马德里。",
+            "jp": "私はセビリア出身ですが、今はマドリードに住んでいます。",
+            "ru": "Я из Севильи, но сейчас живу в Мадриде."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "¡Qué bien! Madrid es una ciudad muy bonita.",
+            "en": "That's great! Madrid is a very beautiful city.",
+            "es": "¡Qué bien! Madrid es una ciudad muy bonita.",
+            "fr": "Super ! Madrid est une très belle ville.",
+            "pt": "Que bom! Madrid é uma cidade muito bonita.",
+            "kr": "정말 좋네요! 마드리드는 정말 아름다운 도시예요.",
+            "zh": "太好了！马德里是一座非常漂亮的城市。",
+            "jp": "いいですね！マドリードはとてもきれいな街です。",
+            "ru": "Как здорово! Мадрид — очень красивый город."
+          }
+        }
+      ]
+    }
+  ]
+}

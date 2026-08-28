@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "El hospital y la farmacia",
+  "sets": {
+    "001": [
+      "Buenos días, necesito ver a un médico, por favor.",
+      "Buenos días, ¿tiene usted cita previa?",
+      "No, no la tengo, me encuentro bastante mal desde ayer.",
+      "Entiendo, ¿me puede decir cuál es su nombre completo?",
+      "Me llamo Laura García, y tengo un dolor fuerte en la garganta.",
+      "Muy bien, Laura, tome asiento y la avisaremos en unos minutos."
+    ],
+    "002": [
+      "Perdone, ¿dónde puedo recoger mis medicamentos?",
+      "La farmacia está en la planta baja, al lado de la salida principal.",
+      "¿Y necesito traer la receta del médico para que me la den?",
+      "Sí, es imprescindible que traiga la receta firmada por el doctor.",
+      "Vale, la tengo aquí en el bolso, muchas gracias por la información.",
+      "De nada, que se mejore pronto, Laura."
+    ],
+    "003": [
+      "Me duele mucho la cabeza y tengo un poco de fiebre.",
+      "¿Desde cuándo tiene estos síntomas, Pablo?",
+      "Empezaron ayer por la noche, y hoy me he levantado peor.",
+      "¿Ha tomado algo para bajar la fiebre o para el dolor?",
+      "Sí, tomé un paracetamol, pero no me ha hecho mucho efecto.",
+      "De acuerdo, le voy a recetar un antiinflamatorio más fuerte."
+    ],
+    "004": [
+      "Buenos días, vengo a buscar los resultados de mis análisis.",
+      "Buenos días, ¿me dice su nombre y su fecha de nacimiento?",
+      "Soy Marta Ruiz, y nací el doce de mayo de mil novecientos ochenta y cinco.",
+      "Un momento, por favor, que los busco en el sistema.",
+      "Claro, no tengo prisa, espero aquí tranquilamente.",
+      "Aquí están, todo parece estar dentro de los valores normales."
+    ],
+    "005": [
+      "¿Me podría decir cómo se toma este jarabe que me han recetado?",
+      "Claro, debe tomar una cucharada cada ocho horas, después de las comidas.",
+      "¿Y tengo que guardarlo en la nevera después de abrirlo?",
+      "Sí, es recomendable conservarlo en frío una vez abierto.",
+      "Entendido, ¿y puedo tomarlo junto con otros medicamentos?",
+      "Es mejor que espere al menos dos horas entre uno y otro."
+    ],
+    "006": [
+      "Mi hijo tiene mucha tos y no para de toser desde anoche.",
+      "¿Cuántos años tiene el niño y tiene fiebre también?",
+      "Tiene cuatro años, y la temperatura le llegó a treinta y ocho grados.",
+      "¿Le ha dado algún jarabe para la tos o algo para la fiebre?",
+      "Le di un poco de ibuprofeno infantil hace un rato.",
+      "Muy bien, voy a auscultarle para ver cómo está su pecho."
+    ],
+    "007": [
+      "Perdone, ¿esta farmacia tiene servicio de guardia esta noche?",
+      "No, esta noche no estamos de guardia, pero hay una en la calle Mayor.",
+      "¿Sabe a qué hora cierra la farmacia de la calle Mayor?",
+      "Está abierta hasta las diez de la noche, y atienden urgencias.",
+      "Perfecto, entonces iré allí si mi madre necesita algo más tarde.",
+      "Sí, y si es una emergencia grave, no dude en llamar al servicio de urgencias."
+    ],
+    "008": [
+      "Me he torcido el tobillo jugando al fútbol y me duele mucho.",
+      "Vamos a ver, ¿puede apoyar el pie en el suelo sin mucho dolor?",
+      "Puedo apoyarlo, pero me duele bastante al caminar.",
+      "Le voy a hacer una radiografía para descartar una posible fractura.",
+      "¿Cuánto tiempo tendré que esperar para ver los resultados?",
+      "Los resultados estarán listos en aproximadamente media hora."
+    ],
+    "009": [
+      "Buenos días, vengo a por mi medicación para la tensión arterial.",
+      "Buenos días, ¿me enseña la receta o la tarjeta sanitaria?",
+      "Aquí tiene la receta, es para tres meses de tratamiento.",
+      "Un momento, voy a comprobar si tenemos el medicamento en stock.",
+      "Vale, y si no lo tienen, ¿me lo pueden encargar?",
+      "Sí, lo encargamos y estará disponible mañana por la mañana."
+    ],
+    "010": [
+      "Doctor, ¿cuándo podré volver a hacer ejercicio después de la operación?",
+      "Debería esperar al menos cuatro semanas antes de hacer esfuerzos.",
+      "¿Y podré nadar o solo puedo caminar durante ese tiempo?",
+      "Puede caminar a diario, pero evite la natación y los deportes de impacto.",
+      "Entendido, ¿necesitaré alguna sesión de rehabilitación después?",
+      "Sí, le derivaré a un fisioterapeuta para que le ayude en la recuperación."
+    ]
+  },
+  "level": "b2",
+  "chapter_id": "CONV_ES_HOSPITAL_PHARMACY",
+  "id": "032",
+  "target_lang": "es"
+}

@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/production_scene_final_validation.schema.json",
+  "title": "ManyLangs Longform Production Scene Final Validation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "episode_id",
+    "overall_pass",
+    "severity",
+    "scene_count_pass",
+    "master_alignment_pass",
+    "character_continuity_pass",
+    "prop_continuity_pass",
+    "environment_continuity_pass",
+    "location_continuity_pass",
+    "visual_transition_pass",
+    "production_readiness_pass",
+    "scene_checks",
+    "issues"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "common.schema.json#/$defs/document_metadata"
+    },
+    "episode_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "overall_pass": {
+      "type": "boolean"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "warning",
+        "fail"
+      ]
+    },
+    "scene_count_pass": {
+      "type": "boolean"
+    },
+    "master_alignment_pass": {
+      "type": "boolean"
+    },
+    "character_continuity_pass": {
+      "type": "boolean"
+    },
+    "prop_continuity_pass": {
+      "type": "boolean"
+    },
+    "environment_continuity_pass": {
+      "type": "boolean"
+    },
+    "location_continuity_pass": {
+      "type": "boolean"
+    },
+    "visual_transition_pass": {
+      "type": "boolean"
+    },
+    "production_readiness_pass": {
+      "type": "boolean"
+    },
+    "scene_checks": {
+      "type": "array",
+      "minItems": 20,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "scene_id",
+          "pass",
+          "master_alignment_pass",
+          "character_pass",
+          "prop_pass",
+          "environment_pass",
+          "transition_pass",
+          "notes"
+        ],
+        "properties": {
+          "scene_id": {
+            "type": "string",
+            "pattern": "^S[0-9]{3}$"
+          },
+          "pass": {
+            "type": "boolean"
+          },
+          "master_alignment_pass": {
+            "type": "boolean"
+          },
+          "character_pass": {
+            "type": "boolean"
+          },
+          "prop_pass": {
+            "type": "boolean"
+          },
+          "environment_pass": {
+            "type": "boolean"
+          },
+          "transition_pass": {
+            "type": "boolean"
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "severity",
+          "category",
+          "scene_refs",
+          "evidence",
+          "reason"
+        ],
+        "properties": {
+          "severity": {
+            "type": "string",
+            "enum": [
+              "warning",
+              "fail"
+            ]
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "scene_count",
+              "master_alignment",
+              "character_identity",
+              "wardrobe",
+              "carried_items",
+              "props",
+              "environment",
+              "time_of_day",
+              "weather",
+              "location",
+              "visual_transition",
+              "must_show",
+              "must_not_show",
+              "unsupported_visual_fact",
+              "production_readiness"
+            ]
+          },
+          "scene_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^S[0-9]{3}$"
+            }
+          },
+          "evidence": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

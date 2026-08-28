@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b2",
+    "id": "031"
+  },
+  "title": {
+    "target": "Банковские услуги",
+    "en": "Banking Services",
+    "es": "Servicios bancarios",
+    "fr": "Services bancaires",
+    "pt": "Serviços bancários",
+    "kr": "은행 업무",
+    "jp": "銀行サービス",
+    "zh": "银行服务",
+    "ru": "Банковские услуги"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте, я хотела бы открыть счёт в вашем банке.",
+            "en": "Hello, I would like to open an account at your bank.",
+            "es": "Hola, me gustaría abrir una cuenta en su banco.",
+            "fr": "Bonjour, je voudrais ouvrir un compte dans votre banque.",
+            "pt": "Olá, eu gostaria de abrir uma conta no seu banco.",
+            "kr": "안녕하세요, 저는 여러분 은행에 계좌를 개설하고 싶어요.",
+            "jp": "こんにちは、あなたの銀行で口座を開設したいのですが。",
+            "zh": "您好，我想在贵行开一个账户。",
+            "ru": "Здравствуйте, я хотела бы открыть счёт в вашем банке."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Добрый день. Конечно, какой тип счёта вас интересует?",
+            "en": "Good afternoon. Of course, what type of account are you interested in?",
+            "es": "Buenas tardes. Claro, ¿qué tipo de cuenta le interesa?",
+            "fr": "Bonjour. Bien sûr, quel type de compte vous intéresse ?",
+            "pt": "Boa tarde. Claro, que tipo de conta lhe interessa?",
+            "kr": "안녕하세요. 물론이죠, 어떤 종류의 계좌에 관심이 있으신가요?",
+            "jp": "こんにちは。かしこまりました、どのタイプの口座をご希望ですか？",
+            "zh": "您好，当然可以。您对哪种账户感兴趣？",
+            "ru": "Добрый день. Конечно, какой тип счёта вас интересует?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне нужен обычный расчётный счёт для повседневных расходов.",
+            "en": "I need a regular checking account for everyday expenses.",
+            "es": "Necesito una cuenta corriente normal para los gastos del día a día.",
+            "fr": "J'ai besoin d'un compte courant ordinaire pour les dépenses quotidiennes.",
+            "pt": "Preciso de uma conta corrente simples para despesas do dia a dia.",
+            "kr": "일상적인 지출을 위한 일반 결제 계좌가 필요해요.",
+            "jp": "日常の出費用に普通の当座預金口座が必要です。",
+            "zh": "我需要一个普通的活期账户，用于日常开销。",
+            "ru": "Мне нужен обычный расчётный счёт для повседневных расходов."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понимаю. Для этого нужен только паспорт и ИНН.",
+            "en": "I see. For that, you only need your passport and tax ID number.",
+            "es": "Entendido. Para eso solo necesita el pasaporte y el NIF.",
+            "fr": "Je comprends. Pour cela, il suffit d'un passeport et d'un numéro d'identification fiscale.",
+            "pt": "Entendo. Para isso, só precisa do passaporte e do CPF.",
+            "kr": "알겠습니다. 그 경우에는 여권과 주민등록번호만 필요합니다.",
+            "jp": "承知しました。そのためにはパスポートと納税者番号だけが必要です。",
+            "zh": "明白了。开这种账户只需要护照和税务登记号。",
+            "ru": "Понимаю. Для этого нужен только паспорт и ИНН."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, паспорт у меня с собой. А ИНН можно получить прямо здесь?",
+            "en": "Great, I have my passport with me. Can I get the tax ID number right here?",
+            "es": "Perfecto, el pasaporte lo llevo conmigo. ¿Y el NIF puedo obtenerlo aquí mismo?",
+            "fr": "Parfait, j'ai mon passeport sur moi. Et je peux obtenir le numéro d'identification fiscale ici même ?",
+            "pt": "Ótimo, o passaporte está comigo. E o CPF, posso obtê-lo aqui mesmo?",
+            "kr": "좋아요, 여권은 가지고 있어요. 그런데 주민등록번호는 여기서 바로 받을 수 있나요?",
+            "jp": "よかった、パスポートは持っています。納税者番号はこちらで取得できますか？",
+            "zh": "太好了，护照我随身带着。税务登记号可以在这里直接办吗？",
+            "ru": "Отлично, паспорт у меня с собой. А ИНН можно получить прямо здесь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, ИНН выдаёт налоговая служба, но вы можете принести его позже.",
+            "en": "No, the tax ID number is issued by the tax office, but you can bring it later.",
+            "es": "No, el NIF lo emite la agencia tributaria, pero puede traerlo más tarde.",
+            "fr": "Non, c'est le service des impôts qui le délivre, mais vous pouvez l'apporter plus tard.",
+            "pt": "Não, o CPF é emitido pela receita federal, mas você pode trazê-lo depois.",
+            "kr": "아니요, 주민등록번호는 세무서에서 발급하지만, 나중에 가져오셔도 됩니다.",
+            "jp": "いいえ、納税者番号は税務署が発行しますが、後でお持ちいただいても大丈夫です。",
+            "zh": "不行，税务登记号由税务局发放，但您可以之后带来。",
+            "ru": "Нет, ИНН выдаёт налоговая служба, но вы можете принести его позже."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Подскажите, как мне перевести деньги на карту другого банка?",
+            "en": "Could you tell me how to transfer money to a card from another bank?",
+            "es": "Dígame, ¿cómo puedo transferir dinero a una tarjeta de otro banco?",
+            "fr": "Dites-moi, comment puis-je transférer de l'argent sur une carte d'une autre banque ?",
+            "pt": "Pode me dizer como faço para transferir dinheiro para um cartão de outro banco?",
+            "kr": "다른 은행 카드로 돈을 어떻게 송금하는지 알려주시겠어요?",
+            "jp": "他の銀行のカードにお金を送金するにはどうすればいいですか？",
+            "zh": "请问，我怎么把钱转到其他银行的卡上？",
+            "ru": "Подскажите, как мне перевести деньги на карту другого банка?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это можно сделать через мобильное приложение за пару минут.",
+            "en": "You can do that through the mobile app in a couple of minutes.",
+            "es": "Se puede hacer a través de la aplicación móvil en un par de minutos.",
+            "fr": "Vous pouvez le faire via l'application mobile en quelques minutes.",
+            "pt": "Isso pode ser feito pelo aplicativo do celular em poucos minutos.",
+            "kr": "모바일 앱을 통해서 몇 분 안에 할 수 있습니다.",
+            "jp": "モバイルアプリを使えば数分でできますよ。",
+            "zh": "这可以通过手机应用操作，几分钟就能完成。",
+            "ru": "Это можно сделать через мобильное приложение за пару минут."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А есть ли комиссия за такой перевод?",
+            "en": "Is there a fee for such a transfer?",
+            "es": "¿Y hay alguna comisión por esa transferencia?",
+            "fr": "Et y a-t-il des frais pour ce transfert ?",
+            "pt": "E há alguma tarifa para essa transferência?",
+            "kr": "그런 송금에는 수수료가 있나요?",
+            "jp": "その送金には手数料がかかりますか？",
+            "zh": "这种转账收手续费吗？",
+            "ru": "А есть ли комиссия за такой перевод?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Внутри нашего банка перевод бесплатный, а в другой банк — небольшая комиссия.",
+            "en": "Transfers within our bank are free, but to another bank there is a small fee.",
+            "es": "Dentro de nuestro banco la transferencia es gratuita, y a otro banco tiene una pequeña comisión.",
+            "fr": "Au sein de notre banque, le transfert est gratuit, mais vers une autre banque, il y a de petits frais.",
+            "pt": "Dentro do nosso banco, a transferência é gratuita, mas para outro banco há uma pequena tarifa.",
+            "kr": "저희 은행 내부 송금은 무료이고, 다른 은행으로는 약간의 수수료가 있습니다.",
+            "jp": "当行内の送金は無料ですが、他行への送金は少額の手数料がかかります。",
+            "zh": "在我们银行内部转账是免费的，转到其他银行会收一点手续费。",
+            "ru": "Внутри нашего банка перевод бесплатный, а в другой банк — небольшая комиссия."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно, а какая именно комиссия?",
+            "en": "I see, and what exactly is the fee?",
+            "es": "Entendido, ¿y cuál es exactamente la comisión?",
+            "fr": "Je vois, et quels sont exactement ces frais ?",
+            "pt": "Entendi, e qual é exatamente a tarifa?",
+            "kr": "알겠어요, 그런데 수수료가 정확히 얼마인가요?",
+            "jp": "わかりました、手数料は具体的にいくらですか？",
+            "zh": "明白了，具体手续费是多少？",
+            "ru": "Понятно, а какая именно комиссия?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно один процент от суммы, но не меньше тридцати рублей.",
+            "en": "Usually one percent of the amount, but no less than thirty rubles.",
+            "es": "Normalmente el uno por ciento del importe, pero no menos de treinta rublos.",
+            "fr": "En général, un pour cent du montant, mais pas moins de trente roubles.",
+            "pt": "Normalmente um por cento do valor, mas não menos que trinta rublos.",
+            "kr": "보통 금액의 일 퍼센트인데, 삼십 루블보다 적지는 않습니다.",
+            "jp": "通常は金額の一パーセントですが、最低でも三十ルーブルです。",
+            "zh": "通常是转账金额的百分之一，但最低不少于三十卢布。",
+            "ru": "Обычно один процент от суммы, но не меньше тридцати рублей."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я хотел бы оформить кредитную карту с льготным периодом.",
+            "en": "I would like to get a credit card with a grace period.",
+            "es": "Me gustaría solicitar una tarjeta de crédito con período de carencia.",
+            "fr": "Je voudrais souscrire une carte de crédit avec une période de grâce.",
+            "pt": "Eu gostaria de solicitar um cartão de crédito com período de carência.",
+            "kr": "저는 무이자 기간이 있는 신용카드를 발급받고 싶어요.",
+            "jp": "猶予期間付きのクレジットカードを作りたいのですが。",
+            "zh": "我想办一张有免息期的信用卡。",
+            "ru": "Я хотел бы оформить кредитную карту с льготным периодом."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, какая сумма вам нужна и на какой срок?",
+            "en": "Okay, how much do you need and for how long?",
+            "es": "De acuerdo, ¿qué cantidad necesita y por cuánto tiempo?",
+            "fr": "Très bien, de quel montant avez-vous besoin et pour quelle durée ?",
+            "pt": "Certo, de quanto você precisa e por quanto tempo?",
+            "kr": "좋습니다, 얼마나 필요한데 얼마 동안 사용하실 건가요?",
+            "jp": "はい、いくらくらいの金額で、どのくらいの期間ご利用ですか？",
+            "zh": "好的，您需要多少额度，期限是多久？",
+            "ru": "Хорошо, какая сумма вам нужна и на какой срок?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Достаточно пятидесяти тысяч рублей, сроком на год.",
+            "en": "Fifty thousand rubles is enough, for a term of one year.",
+            "es": "Con cincuenta mil rublos es suficiente, por un plazo de un año.",
+            "fr": "Cinquante mille roubles suffisent, pour une durée d'un an.",
+            "pt": "Cinquenta mil rublos são suficientes, pelo prazo de um ano.",
+            "kr": "오만 루블이면 충분하고, 기간은 일 년이면 돼요.",
+            "jp": "五万ルーブルで、期間は一年で十分です。",
+            "zh": "五万卢布就够了，期限一年。",
+            "ru": "Достаточно пятидесяти тысяч рублей, сроком на год."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мы можем предложить вам карту с льготным периодом до ста дней.",
+            "en": "We can offer you a card with a grace period of up to one hundred days.",
+            "es": "Podemos ofrecerle una tarjeta con un período de carencia de hasta cien días.",
+            "fr": "Nous pouvons vous proposer une carte avec une période de grâce allant jusqu'à cent jours.",
+            "pt": "Podemos oferecer um cartão com período de carência de até cem dias.",
+            "kr": "최대 백 일까지 무이자 기간이 있는 카드를 제안해 드릴 수 있습니다.",
+            "jp": "最長百日の猶予期間付きのカードをご提案できます。",
+            "zh": "我们可以为您提供免息期长达一百天的信用卡。",
+            "ru": "Мы можем предложить вам карту с льготным периодом до ста дней."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это удобно. А какие документы для этого требуются?",
+            "en": "That's convenient. What documents are required for this?",
+            "es": "Eso es práctico. ¿Y qué documentos se requieren para ello?",
+            "fr": "C'est pratique. Et quels documents sont nécessaires pour cela ?",
+            "pt": "Isso é conveniente. E quais documentos são necessários para isso?",
+            "kr": "편리하네요. 그런데 이를 위해 필요한 서류는 무엇인가요?",
+            "jp": "それは便利ですね。それにはどのような書類が必要ですか？",
+            "zh": "那很方便。办理需要什么文件？",
+            "ru": "Это удобно. А какие документы для этого требуются?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Только паспорт и подтверждение дохода за последние три месяца.",
+            "en": "Just your passport and proof of income for the last three months.",
+            "es": "Solo el pasaporte y la confirmación de ingresos de los últimos tres meses.",
+            "fr": "Seulement un passeport et une confirmation de revenus pour les trois derniers mois.",
+            "pt": "Apenas o passaporte e a comprovação de renda dos últimos três meses.",
+            "kr": "여권과 최근 석 달 동안의 소득 확인 서류만 필요합니다.",
+            "jp": "パスポートと、過去三か月分の収入証明書だけです。",
+            "zh": "只需要护照和最近三个月的收入证明。",
+            "ru": "Только паспорт и подтверждение дохода за последние три месяца."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте, у меня не проходит оплата через интернет-банк.",
+            "en": "Hello, my payment through online banking is not going through.",
+            "es": "Hola, no me funciona el pago a través de la banca por internet.",
+            "fr": "Bonjour, mon paiement en ligne via la banque en ligne ne passe pas.",
+            "pt": "Olá, não estou conseguindo fazer um pagamento pelo internet banking.",
+            "kr": "안녕하세요, 인터넷 뱅킹으로 결제가 되지 않아요.",
+            "jp": "こんにちは、インターネットバンキングで支払いができません。",
+            "zh": "您好，我通过网上银行付款一直不成功。",
+            "ru": "Здравствуйте, у меня не проходит оплата через интернет-банк."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Давайте разберёмся. Вы пробовали перезагрузить приложение?",
+            "en": "Let's figure it out. Did you try restarting the app?",
+            "es": "Vamos a verlo. ¿Ha intentado reiniciar la aplicación?",
+            "fr": "Voyons cela. Avez-vous essayé de redémarrer l'application ?",
+            "pt": "Vamos ver. Você tentou reiniciar o aplicativo?",
+            "kr": "함께 확인해 봅시다. 앱을 다시 시작해 보셨나요?",
+            "jp": "一緒に確認しましょう。アプリを再起動してみましたか？",
+            "zh": "我们来排查一下。您试过重新启动应用吗？",
+            "ru": "Давайте разберёмся. Вы пробовали перезагрузить приложение?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, я перезагружала, но ошибка всё равно появляется.",
+            "en": "Yes, I restarted it, but the error still appears.",
+            "es": "Sí, la reinicié, pero el error sigue apareciendo.",
+            "fr": "Oui, je l'ai redémarrée, mais l'erreur apparaît quand même.",
+            "pt": "Sim, eu reiniciei, mas o erro continua aparecendo.",
+            "kr": "네, 다시 시작했는데도 오류가 계속 나타나요.",
+            "jp": "はい、再起動しましたが、それでもエラーが出ます。",
+            "zh": "是的，我重启过，但还是出现同样的错误。",
+            "ru": "Да, я перезагружала, но ошибка всё равно появляется."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понятно. Возможно, проблема с лимитом на суточные операции.",
+            "en": "I see. It might be a problem with the daily transaction limit.",
+            "es": "Entendido. Puede que el problema sea el límite de las operaciones diarias.",
+            "fr": "Je vois. Le problème vient peut-être de la limite des opérations journalières.",
+            "pt": "Entendi. Talvez o problema seja com o limite para operações diárias.",
+            "kr": "알겠습니다. 하루 거래 한도에 문제가 있을 수 있습니다.",
+            "jp": "わかりました。おそらく、一日の取引限度額に問題があるかもしれません。",
+            "zh": "明白了。可能是每日交易限额的问题。",
+            "ru": "Понятно. Возможно, проблема с лимитом на суточные операции."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А можно увеличить этот лимит прямо сейчас?",
+            "en": "Can you increase this limit right now?",
+            "es": "¿Y se puede aumentar ese límite ahora mismo?",
+            "fr": "Et je peux augmenter cette limite tout de suite ?",
+            "pt": "E dá para aumentar esse limite agora mesmo?",
+            "kr": "그럼 지금 바로 그 한도를 올릴 수 있나요?",
+            "jp": "その限度額を今すぐ引き上げることはできますか？",
+            "zh": "那现在可以提高这个限额吗？",
+            "ru": "А можно увеличить этот лимит прямо сейчас?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, конечно. Я подниму его до ста тысяч рублей, этого хватит?",
+            "en": "Yes, of course. I'll raise it to one hundred thousand rubles. Will that be enough?",
+            "es": "Sí, claro. Se lo subo hasta cien mil rublos, ¿le parece suficiente?",
+            "fr": "Oui, bien sûr. Je vais la monter à cent mille roubles, est-ce que cela suffira ?",
+            "pt": "Sim, claro. Vou aumentá-lo para cem mil rublos, isso é suficiente?",
+            "kr": "네, 물론이죠. 십만 루블까지 올려 드릴게요. 그것이면 충분한가요?",
+            "jp": "はい、もちろんです。十万ルーブルまで引き上げますが、それで足りますか？",
+            "zh": "当然可以。我把它提高到十万卢布，够用吗？",
+            "ru": "Да, конечно. Я подниму его до ста тысяч рублей, этого хватит?"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Скажите, я могу снять наличные с карты в вашем отделении?",
+            "en": "Tell me, can I withdraw cash from my card at your branch?",
+            "es": "Dígame, ¿puedo retirar efectivo de mi tarjeta en su oficina?",
+            "fr": "Dites-moi, je peux retirer de l'argent liquide avec ma carte dans votre agence ?",
+            "pt": "Pode me dizer se posso sacar dinheiro do cartão na sua agência?",
+            "kr": "말씀해 주세요, 지점에서 카드로 현금을 인출할 수 있나요?",
+            "jp": "すみません、こちらの支店でカードから現金を引き出すことはできますか？",
+            "zh": "请问，我可以在你们网点用卡取现金吗？",
+            "ru": "Скажите, я могу снять наличные с карты в вашем отделении?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, для этого подойдёт любой банкомат в зале.",
+            "en": "Of course, any ATM in the lobby will work for that.",
+            "es": "Por supuesto, para eso sirve cualquier cajero de la sala.",
+            "fr": "Bien sûr, n'importe quel distributeur dans le hall fera l'affaire.",
+            "pt": "Claro, qualquer caixa eletrônico na sala serve para isso.",
+            "kr": "물론이죠, 이를 위해서는 로비에 있는 아무 현금인출기나 사용하시면 됩니다.",
+            "jp": "もちろんです。ホールにあるどのATMでもご利用いただけます。",
+            "zh": "当然可以，大厅里任何一台取款机都可以。",
+            "ru": "Конечно, для этого подойдёт любой банкомат в зале."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А есть ли ограничение на снятие наличных в день?",
+            "en": "Is there a limit on cash withdrawals per day?",
+            "es": "¿Y hay algún límite para retirar efectivo al día?",
+            "fr": "Et y a-t-il une limite de retrait d'espèces par jour ?",
+            "pt": "E há algum limite para saque de dinheiro por dia?",
+            "kr": "하루 현금 인출에 제한이 있나요?",
+            "jp": "一日の現金引き出しに制限はありますか？",
+            "zh": "每天取现有限额吗？",
+            "ru": "А есть ли ограничение на снятие наличных в день?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, стандартный лимит составляет пятьдесят тысяч рублей в сутки.",
+            "en": "Yes, the standard limit is fifty thousand rubles per day.",
+            "es": "Sí, el límite estándar es de cincuenta mil rublos al día.",
+            "fr": "Oui, la limite standard est de cinquante mille roubles par jour.",
+            "pt": "Sim, o limite padrão é de cinquenta mil rublos por dia.",
+            "kr": "네, 표준 한도는 하루에 오만 루블입니다.",
+            "jp": "はい、標準の限度額は一日あたり五万ルーブルです。",
+            "zh": "有的，标准限额是每天五万卢布。",
+            "ru": "Да, стандартный лимит составляет пятьдесят тысяч рублей в сутки."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне нужно снять сорок тысяч, так что всё в порядке.",
+            "en": "I need to withdraw forty thousand, so that's fine.",
+            "es": "Necesito retirar cuarenta mil, así que no hay problema.",
+            "fr": "J'ai besoin de retirer quarante mille, donc tout va bien.",
+            "pt": "Preciso sacar quarenta mil, então está tudo certo.",
+            "kr": "저는 사만 루블을 인출해야 해서 괜찮아요.",
+            "jp": "四万ルーブル引き出したいので、問題ありません。",
+            "zh": "我需要取四万，所以没问题。",
+            "ru": "Мне нужно снять сорок тысяч, так что всё в порядке."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда всё просто. Вставьте карту и следуйте инструкциям на экране.",
+            "en": "Then it's simple. Insert your card and follow the instructions on the screen.",
+            "es": "Entonces es muy sencillo. Inserte la tarjeta y siga las instrucciones de la pantalla.",
+            "fr": "Alors c'est simple. Insérez votre carte et suivez les instructions à l'écran.",
+            "pt": "Então é simples. Insira o cartão e siga as instruções na tela.",
+            "kr": "그럼 간단합니다. 카드를 넣고 화면의 지시를 따르세요.",
+            "jp": "では、簡単です。カードを挿入して、画面の指示に従ってください。",
+            "zh": "那就简单了。插入卡片，按照屏幕上的提示操作就行。",
+            "ru": "Тогда всё просто. Вставьте карту и следуйте инструкциям на экране."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я хотела бы закрыть свой старый счёт и перевести деньги на новый.",
+            "en": "I would like to close my old account and transfer the money to a new one.",
+            "es": "Me gustaría cerrar mi cuenta antigua y transferir el dinero a una nueva.",
+            "fr": "Je voudrais clôturer mon ancien compte et transférer l'argent sur le nouveau.",
+            "pt": "Eu gostaria de encerrar minha conta antiga e transferir o dinheiro para uma nova.",
+            "kr": "저는 기존 계좌를 해지하고 돈을 새 계좌로 옮기고 싶어요.",
+            "jp": "古い口座を閉鎖して、新しい口座にお金を移したいのですが。",
+            "zh": "我想注销我的旧账户，并把钱转到新账户上。",
+            "ru": "Я хотела бы закрыть свой старый счёт и перевести деньги на новый."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, для этого нужно написать заявление и проверить остаток.",
+            "en": "Okay, for that you need to write an application and check the balance.",
+            "es": "De acuerdo, para eso hay que escribir una solicitud y comprobar el saldo.",
+            "fr": "Très bien, pour cela il faut rédiger une demande et vérifier le solde.",
+            "pt": "Certo, para isso é preciso preencher um requerimento e verificar o saldo.",
+            "kr": "좋습니다, 이를 위해서는 신청서를 작성하고 잔액을 확인해야 합니다.",
+            "jp": "はい、そのためには申請書を書いていただき、残高を確認する必要があります。",
+            "zh": "好的，这需要写一份申请，并确认账户余额。",
+            "ru": "Хорошо, для этого нужно написать заявление и проверить остаток."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А сколько времени занимает такая операция?",
+            "en": "How long does such an operation take?",
+            "es": "¿Y cuánto tiempo tarda esa operación?",
+            "fr": "Et combien de temps prend une telle opération ?",
+            "pt": "E quanto tempo leva essa operação?",
+            "kr": "그런 작업은 시간이 얼마나 걸리나요?",
+            "jp": "その手続きにはどのくらい時間がかかりますか？",
+            "zh": "这种业务需要多长时间？",
+            "ru": "А сколько времени занимает такая операция?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно перевод занимает один рабочий день.",
+            "en": "The transfer usually takes one business day.",
+            "es": "Normalmente la transferencia tarda un día hábil.",
+            "fr": "En général, le transfert prend un jour ouvré.",
+            "pt": "Normalmente, a transferência leva um dia útil.",
+            "kr": "보통 송금은 영업일 기준 하루가 걸립니다.",
+            "jp": "通常、送金には一営業日かかります。",
+            "zh": "转账通常需要一个工作日。",
+            "ru": "Обычно перевод занимает один рабочий день."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это меня устраивает. А нужна ли предварительная запись?",
+            "en": "That works for me. Do I need to make an appointment in advance?",
+            "es": "Eso me viene bien. ¿Y necesito pedir cita previa?",
+            "fr": "Cela me convient. Et faut-il prendre rendez-vous ?",
+            "pt": "Isso me atende. E é preciso agendar com antecedência?",
+            "kr": "그 정도면 괜찮아요. 그런데 사전 예약이 필요한가요?",
+            "jp": "それで大丈夫です。事前予約は必要ですか？",
+            "zh": "那没问题。需要提前预约吗？",
+            "ru": "Это меня устраивает. А нужна ли предварительная запись?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, вы можете сделать это прямо сейчас в любом окне.",
+            "en": "No, you can do it right now at any window.",
+            "es": "No, puede hacerlo ahora mismo en cualquier ventanilla.",
+            "fr": "Non, vous pouvez le faire tout de suite à n'importe quel guichet.",
+            "pt": "Não, você pode fazer isso agora mesmo em qualquer guichê.",
+            "kr": "아니요, 지금 바로 아무 창구에서나 하실 수 있습니다.",
+            "jp": "いいえ、どの窓口でも今すぐ手続きできますよ。",
+            "zh": "不用，您现在就可以在任何一个窗口办理。",
+            "ru": "Нет, вы можете сделать это прямо сейчас в любом окне."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Подскажите, как подключить автоплатёж за коммунальные услуги?",
+            "en": "Could you tell me how to set up automatic payments for utility bills?",
+            "es": "Dígame, ¿cómo se activa el pago automático de los servicios comunales?",
+            "fr": "Dites-moi, comment mettre en place le paiement automatique pour les factures de services publics ?",
+            "pt": "Pode me dizer como ativar o pagamento automático de contas de serviços públicos?",
+            "kr": "공공요금 자동이체를 어떻게 설정하는지 알려주시겠어요?",
+            "jp": "公共料金の自動支払いを設定するにはどうすればいいですか？",
+            "zh": "请问，怎么开通水电费的自动缴费？",
+            "ru": "Подскажите, как подключить автоплатёж за коммунальные услуги?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это очень просто. Нужно зайти в приложение и выбрать услугу.",
+            "en": "It's very simple. You need to go into the app and select the service.",
+            "es": "Es muy sencillo. Hay que entrar en la aplicación y seleccionar el servicio.",
+            "fr": "C'est très simple. Il faut aller dans l'application et choisir le service.",
+            "pt": "É bem simples. Basta entrar no aplicativo e escolher o serviço.",
+            "kr": "아주 간단합니다. 앱에 들어가서 서비스를 선택하면 됩니다.",
+            "jp": "とても簡単です。アプリに入って、サービスを選択してください。",
+            "zh": "这很简单。您需要进入应用，然后选择相应的服务。",
+            "ru": "Это очень просто. Нужно зайти в приложение и выбрать услугу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А можно настроить автоматическую оплату каждый месяц?",
+            "en": "Can I set up automatic payment every month?",
+            "es": "¿Y se puede configurar el pago automático cada mes?",
+            "fr": "Et je peux configurer le paiement automatique chaque mois ?",
+            "pt": "E dá para configurar o pagamento automático todo mês?",
+            "kr": "매달 자동 결제를 설정할 수 있나요?",
+            "jp": "毎月自動で支払うように設定できますか？",
+            "zh": "可以设置每个月自动扣费吗？",
+            "ru": "А можно настроить автоматическую оплату каждый месяц?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, вы устанавливаете дату и сумму, и платёж проходит сам.",
+            "en": "Yes, you set the date and the amount, and the payment goes through on its own.",
+            "es": "Sí, usted fija la fecha y el importe, y el pago se realiza solo.",
+            "fr": "Oui, vous définissez la date et le montant, et le paiement s'effectue tout seul.",
+            "pt": "Sim, você define a data e o valor, e o pagamento é feito sozinho.",
+            "kr": "네, 날짜와 금액을 설정하면 결제가 자동으로 진행됩니다.",
+            "jp": "はい、日付と金額を設定すれば、支払いは自動で行われます。",
+            "zh": "可以，您设定好日期和金额，付款就会自动完成。",
+            "ru": "Да, вы устанавливаете дату и сумму, и платёж проходит сам."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здорово, это очень удобно. А если сумма изменится?",
+            "en": "Great, that's very convenient. What if the amount changes?",
+            "es": "Genial, eso es muy cómodo. ¿Y si el importe cambia?",
+            "fr": "Super, c'est très pratique. Et si le montant change ?",
+            "pt": "Que ótimo, isso é muito conveniente. E se o valor mudar?",
+            "kr": "좋네요, 정말 편리하네요. 그런데 금액이 바뀌면 어떻게 하나요?",
+            "jp": "すごい、それはとても便利ですね。金額が変わったらどうしますか？",
+            "zh": "太好了，这非常方便。如果金额变了怎么办？",
+            "ru": "Здорово, это очень удобно. А если сумма изменится?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вы можете в любой момент изменить настройки или отменить платёж.",
+            "en": "You can change the settings or cancel the payment at any time.",
+            "es": "Puede modificar los ajustes o cancelar el pago en cualquier momento.",
+            "fr": "Vous pouvez modifier les paramètres ou annuler le paiement à tout moment.",
+            "pt": "Você pode alterar as configurações ou cancelar o pagamento a qualquer momento.",
+            "kr": "언제든지 설정을 변경하거나 결제를 취소할 수 있습니다.",
+            "jp": "いつでも設定を変更したり、支払いをキャンセルしたりできます。",
+            "zh": "您可以随时修改设置或者取消付款。",
+            "ru": "Вы можете в любой момент изменить настройки или отменить платёж."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте, я хотел бы положить деньги на вклад с хорошим процентом.",
+            "en": "Hello, I would like to put money into a deposit with a good interest rate.",
+            "es": "Hola, me gustaría depositar dinero en un depósito con un buen interés.",
+            "fr": "Bonjour, je voudrais déposer de l'argent sur un compte d'épargne avec un bon taux d'intérêt.",
+            "pt": "Olá, eu gostaria de depositar dinheiro em um investimento com bons juros.",
+            "kr": "안녕하세요, 좋은 이자율로 예금에 돈을 넣고 싶어요.",
+            "jp": "こんにちは、金利の良い預金にお金を預けたいのですが。",
+            "zh": "您好，我想存一笔利率不错的定期存款。",
+            "ru": "Здравствуйте, я хотел бы положить деньги на вклад с хорошим процентом."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отличный выбор. Сейчас у нас есть вклад под восемь процентов годовых.",
+            "en": "Excellent choice. Right now we have a deposit at eight percent per year.",
+            "es": "Excelente elección. Ahora tenemos un depósito al ocho por ciento anual.",
+            "fr": "Excellent choix. Actuellement, nous avons un compte d'épargne à huit pour cent par an.",
+            "pt": "Ótima escolha. Atualmente, temos um investimento com oito por cento ao ano.",
+            "kr": "좋은 선택이세요. 현재 연 팔 퍼센트 이자의 예금 상품이 있습니다.",
+            "jp": "良い選択です。現在、年率八パーセントの預金商品があります。",
+            "zh": "很好的选择。我们现在有一款年利率百分之八的存款产品。",
+            "ru": "Отличный выбор. Сейчас у нас есть вклад под восемь процентов годовых."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А какой минимальный срок размещения?",
+            "en": "What is the minimum term for the deposit?",
+            "es": "¿Y cuál es el plazo mínimo de colocación?",
+            "fr": "Et quelle est la durée de placement minimale ?",
+            "pt": "E qual é o prazo mínimo de aplicação?",
+            "kr": "최소 예치 기간은 어떻게 되나요?",
+            "jp": "最低預入期間はどのくらいですか？",
+            "zh": "最短存期是多久？",
+            "ru": "А какой минимальный срок размещения?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Минимальный срок — три месяца, но чем дольше, тем выше ставка.",
+            "en": "The minimum term is three months, but the longer the term, the higher the rate.",
+            "es": "El plazo mínimo es de tres meses, pero cuanto más largo, mayor es la tasa.",
+            "fr": "La durée minimale est de trois mois, mais plus la durée est longue, plus le taux est élevé.",
+            "pt": "O prazo mínimo é de três meses, mas quanto mais tempo, maior a taxa.",
+            "kr": "최소 기간은 석 달인데, 기간이 길수록 이율이 더 높아집니다.",
+            "jp": "最低期間は三か月ですが、期間が長いほど金利は高くなります。",
+            "zh": "最短存期是三个月，但存得越久，利率越高。",
+            "ru": "Минимальный срок — три месяца, но чем дольше, тем выше ставка."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно. А можно ли снимать проценты каждый месяц?",
+            "en": "I see. Can I withdraw the interest every month?",
+            "es": "Entendido. ¿Y se pueden retirar los intereses cada mes?",
+            "fr": "Je vois. Et je peux retirer les intérêts chaque mois ?",
+            "pt": "Entendi. E dá para retirar os juros todo mês?",
+            "kr": "알겠어요. 그런데 이자는 매달 인출할 수 있나요?",
+            "jp": "わかりました。利息は毎月引き出せますか？",
+            "zh": "明白了。可以每个月支取利息吗？",
+            "ru": "Понятно. А можно ли снимать проценты каждый месяц?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, такая опция доступна, и она не влияет на основную сумму вклада.",
+            "en": "Yes, that option is available, and it doesn't affect the principal amount of the deposit.",
+            "es": "Sí, esa opción está disponible y no afecta al importe principal del depósito.",
+            "fr": "Oui, cette option est disponible, et elle n'affecte pas le montant principal du dépôt.",
+            "pt": "Sim, essa opção está disponível e não afeta o valor principal do investimento.",
+            "kr": "네, 그런 옵션이 가능하며, 예금 원금에는 영향을 미치지 않습니다.",
+            "jp": "はい、そのオプションがあります。元本には影響しません。",
+            "zh": "可以，这个选项是支持的，而且不会影响存款本金。",
+            "ru": "Да, такая опция доступна, и она не влияет на основную сумму вклада."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "У меня возникла проблема с мобильным банком, я не могу войти в приложение.",
+            "en": "I'm having a problem with mobile banking, I can't log into the app.",
+            "es": "Tengo un problema con la banca móvil, no puedo entrar en la aplicación.",
+            "fr": "J'ai un problème avec la banque mobile, je n'arrive pas à me connecter à l'application.",
+            "pt": "Estou com um problema no banco móvel, não consigo entrar no aplicativo.",
+            "kr": "모바일 뱅킹에 문제가 생겼어요, 앱에 로그인할 수가 없어요.",
+            "jp": "モバイルバンキングに問題があって、アプリにログインできません。",
+            "zh": "我的手机银行出问题了，我无法登录应用。",
+            "ru": "У меня возникла проблема с мобильным банком, я не могу войти в приложение."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Давайте проверим. Вы точно вводите правильный пароль?",
+            "en": "Let's check. Are you sure you're entering the correct password?",
+            "es": "Vamos a comprobarlo. ¿Está segura de que introduce la contraseña correcta?",
+            "fr": "Vérifions cela. Êtes-vous sûr de saisir le bon mot de passe ?",
+            "pt": "Vamos verificar. Você tem certeza de que está digitando a senha correta?",
+            "kr": "확인해 봅시다. 비밀번호를 정확히 입력하고 계신가요?",
+            "jp": "確認しましょう。正しいパスワードを入力していますか？",
+            "zh": "我们来看看。您确定输入的密码是正确的吗？",
+            "ru": "Давайте проверим. Вы точно вводите правильный пароль?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, я уверена, но система пишет, что пароль неверный.",
+            "en": "Yes, I'm sure, but the system says the password is incorrect.",
+            "es": "Sí, estoy segura, pero el sistema dice que la contraseña es incorrecta.",
+            "fr": "Oui, j'en suis sûre, mais le système indique que le mot de passe est incorrect.",
+            "pt": "Sim, tenho certeza, mas o sistema diz que a senha está incorreta.",
+            "kr": "네, 확신하는데 시스템에서 비밀번호가 틀렸다고 나와요.",
+            "jp": "はい、間違いないと思うのですが、システムがパスワードが違うと表示します。",
+            "zh": "是的，我确定，但系统提示密码错误。",
+            "ru": "Да, я уверена, но система пишет, что пароль неверный."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда давайте восстановим доступ через SMS-код на ваш номер.",
+            "en": "Then let's restore access using an SMS code sent to your number.",
+            "es": "Entonces vamos a recuperar el acceso mediante un código SMS a su número.",
+            "fr": "Alors rétablissons l'accès grâce à un code SMS envoyé sur votre numéro.",
+            "pt": "Então vamos recuperar o acesso pelo código SMS para o seu número.",
+            "kr": "그럼 휴대폰 번호로 SMS 인증 코드를 통해 접근을 복구해 봅시다.",
+            "jp": "では、あなたの番号にSMSコードを送って、アクセスを復元しましょう。",
+            "zh": "那我们就通过短信验证码来恢复访问权限吧。",
+            "ru": "Тогда давайте восстановим доступ через SMS-код на ваш номер."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хорошо, я получила сообщение с кодом. Что делать дальше?",
+            "en": "Okay, I received the message with the code. What do I do next?",
+            "es": "Vale, he recibido el mensaje con el código. ¿Qué hago ahora?",
+            "fr": "D'accord, j'ai reçu le message avec le code. Que dois-je faire ensuite ?",
+            "pt": "Certo, recebi a mensagem com o código. O que faço agora?",
+            "kr": "좋아요, 코드가 담긴 문자를 받았어요. 다음에 무엇을 하면 되나요?",
+            "jp": "はい、コードが書かれたメッセージを受け取りました。次はどうすればいいですか？",
+            "zh": "好的，我收到了带验证码的短信。接下来怎么做？",
+            "ru": "Хорошо, я получила сообщение с кодом. Что делать дальше?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Введите код в приложении и придумайте новый надёжный пароль.",
+            "en": "Enter the code in the app and come up with a new, strong password.",
+            "es": "Introduzca el código en la aplicación y cree una contraseña nueva y segura.",
+            "fr": "Saisissez le code dans l'application et créez un nouveau mot de passe sécurisé.",
+            "pt": "Digite o código no aplicativo e crie uma nova senha segura.",
+            "kr": "앱에 코드를 입력하고 새롭고 안전한 비밀번호를 설정하세요.",
+            "jp": "アプリにコードを入力して、新しい安全なパスワードを設定してください。",
+            "zh": "在应用里输入验证码，然后设置一个新的安全密码。",
+            "ru": "Введите код в приложении и придумайте новый надёжный пароль."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Скажите, я могу оплатить обучение через ваш банк без комиссии?",
+            "en": "Tell me, can I pay for tuition through your bank without a fee?",
+            "es": "Dígame, ¿puedo pagar la matrícula a través de su banco sin comisión?",
+            "fr": "Dites-moi, je peux payer mes études via votre banque sans frais ?",
+            "pt": "Pode me dizer se posso pagar a mensalidade da faculdade pelo seu banco sem tarifa?",
+            "kr": "말씀해 주세요, 수수료 없이 여러분 은행을 통해 학비를 낼 수 있나요?",
+            "jp": "すみません、あなたの銀行を通して手数料なしで学費を支払うことはできますか？",
+            "zh": "请问，我可以通过你们银行免手续费支付学费吗？",
+            "ru": "Скажите, я могу оплатить обучение через ваш банк без комиссии?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, если университет является нашим партнёром, комиссия не взимается.",
+            "en": "Yes, if the university is our partner, no fee is charged.",
+            "es": "Sí, si la universidad es nuestra socia, no se aplica ninguna comisión.",
+            "fr": "Oui, si l'université est notre partenaire, aucun frais n'est prélevé.",
+            "pt": "Sim, se a universidade for nossa parceira, a tarifa não é cobrada.",
+            "kr": "네, 대학교가 저희 파트너라면 수수료가 부과되지 않습니다.",
+            "jp": "はい、大学が当行の提携先であれば、手数料はかかりません。",
+            "zh": "可以，如果该大学是我们的合作机构，就不收取手续费。",
+            "ru": "Да, если университет является нашим партнёром, комиссия не взимается."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А как мне узнать, есть ли университет в списке партнёров?",
+            "en": "How can I find out if the university is on the partner list?",
+            "es": "¿Y cómo puedo saber si la universidad está en la lista de socios?",
+            "fr": "Et comment savoir si l'université figure sur la liste des partenaires ?",
+            "pt": "E como faço para saber se a universidade está na lista de parceiros?",
+            "kr": "그런데 대학교가 파트너 목록에 있는지 어떻게 알 수 있나요?",
+            "jp": "大学が提携先のリストに載っているかどうかはどうやって確認できますか？",
+            "zh": "我怎么知道这所大学是否在合作名单里？",
+            "ru": "А как мне узнать, есть ли университет в списке партнёров?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вы можете проверить это в приложении или на нашем сайте.",
+            "en": "You can check that in the app or on our website.",
+            "es": "Puede comprobarlo en la aplicación o en nuestra página web.",
+            "fr": "Vous pouvez le vérifier dans l'application ou sur notre site web.",
+            "pt": "Você pode verificar no aplicativo ou no nosso site.",
+            "kr": "앱이나 저희 웹사이트에서 확인하실 수 있습니다.",
+            "jp": "アプリまたは当行のウェブサイトで確認できます。",
+            "zh": "您可以在应用里或者我们的网站上查询。",
+            "ru": "Вы можете проверить это в приложении или на нашем сайте."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, я проверю. А реквизиты для оплаты там будут?",
+            "en": "Great, I'll check. Will the payment details be there?",
+            "es": "Perfecto, lo comprobaré. ¿Y los datos bancarios para el pago estarán ahí?",
+            "fr": "Parfait, je vais vérifier. Et les coordonnées bancaires pour le paiement seront là ?",
+            "pt": "Ótimo, vou verificar. E os dados para o pagamento estarão lá?",
+            "kr": "좋아요, 확인해 볼게요. 그런데 결제를 위한 계좌 정보도 거기에 있나요?",
+            "jp": "わかりました、確認してみます。支払い用の銀行詳細もそこにありますか？",
+            "zh": "太好了，我去查一下。付款信息那里会有吗？",
+            "ru": "Отлично, я проверю. А реквизиты для оплаты там будут?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, все реквизиты подтянутся автоматически, нужно только ввести сумму.",
+            "en": "Yes, all the details will be pulled up automatically, you just need to enter the amount.",
+            "es": "Sí, todos los datos se completarán automáticamente, solo tendrá que introducir el importe.",
+            "fr": "Oui, toutes les coordonnées seront remplies automatiquement, il suffira d'indiquer le montant.",
+            "pt": "Sim, todos os dados serão preenchidos automaticamente, basta inserir o valor.",
+            "kr": "네, 모든 계좌 정보가 자동으로 불러와지며, 금액만 입력하면 됩니다.",
+            "jp": "はい、すべての銀行詳細が自動的に表示されます。金額を入力するだけで大丈夫です。",
+            "zh": "有的，所有付款信息都会自动带出来，您只需要输入金额。",
+            "ru": "Да, все реквизиты подтянутся автоматически, нужно только ввести сумму."
+          }
+        }
+      ]
+    }
+  ]
+}

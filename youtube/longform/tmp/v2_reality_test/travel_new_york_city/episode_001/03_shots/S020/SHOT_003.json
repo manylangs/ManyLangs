@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S020",
+  "shot_id": "SHOT_003",
+  "sequence": 3,
+  "duration_seconds": 5.0,
+  "location_ref": "LOC_MANHATTAN_EVENING_STREET_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun turning around and beginning to walk back toward the hotel for the night.",
+  "framing": {
+    "shot_size": "medium_wide",
+    "subject_priority": [
+      "CHAR_JIEUN_001"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "follow",
+    "stability": "smooth"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun turns around and begins walking back toward the hotel, with a soft smile still on her face.",
+    "start_state": [
+      "Jieun is smiling softly with a sense of accomplishment.",
+      "She is standing on the evening street near the hotel area."
+    ],
+    "end_state": [
+      "Jieun has turned around and is walking back toward the hotel.",
+      "She has a soft smile of accomplishment.",
+      "Her crossbody bag remains over her shoulder."
+    ]
+  },
+  "emotion": {
+    "primary_actor": "content and ready to rest",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "over Jieun's shoulder",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_ROOM_KEY_001",
+      "state": "inside crossbody bag",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "state": "in Jieun's hand or pocket",
+      "visible": false
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L004"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is smiling softly with a sense of accomplishment.",
+      "She is still standing on the evening street near the hotel area.",
+      "Her crossbody bag remains over her shoulder."
+    ],
+    "carry_out": [
+      "Jieun has seen a familiar landmark and feels a sense of accomplishment.",
+      "She is heading back to her hotel for the night.",
+      "She is ready to explore more of New York the next day.",
+      "She is still carrying her crossbody bag and room key.",
+      "She remains in the hotel area."
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

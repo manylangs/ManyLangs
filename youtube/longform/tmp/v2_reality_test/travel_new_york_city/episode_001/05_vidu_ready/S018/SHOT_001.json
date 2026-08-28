@@ -1,0 +1,152 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S018",
+  "shot_id": "SHOT_001",
+  "sequence": 1,
+  "source_refs": {
+    "production_scene": "02_visual/production_scenes/S018.json",
+    "shot": "03_shots/S018/SHOT_001.json",
+    "visual_continuity": "04_visual_continuity/S018/SHOT_001.json"
+  },
+  "generation": {
+    "provider": "vidu",
+    "duration_seconds": 6.0,
+    "aspect_ratio": "16:9",
+    "resolution": "1080p",
+    "mode": "reference_guided"
+  },
+  "actors": [
+    {
+      "actor_ref": "CHAR_JIEUN_001",
+      "identity_type": "persistent",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Small crossbody bag",
+        "Smartphone",
+        "Hotel room key"
+      ],
+      "body_state": [
+        "Standing by the window",
+        "Turning away from the window",
+        "Facing the room"
+      ],
+      "emotion": "settled and curious",
+      "reference_asset_ids": [
+        "ASSET_CHAR_JIEUN_PRIMARY_000001"
+      ]
+    }
+  ],
+  "location": {
+    "location_ref": "LOC_MANHATTAN_HOTEL_001",
+    "identity_lock": true,
+    "current_zone": "Hotel guest room, by the window",
+    "persistent_features": [
+      "Hotel lobby with front desk",
+      "Elevator area",
+      "Guest room with bed, desk, and window",
+      "City view from the room window",
+      "Hotel signage and entrance"
+    ],
+    "orientation_state": [
+      "Jieun is turning away from the window",
+      "Jieun is facing the room",
+      "Window with city view is behind Jieun",
+      "Bed with crossbody bag is in front of Jieun",
+      "Desk with room key is to the side"
+    ],
+    "reference_asset_ids": []
+  },
+  "props": [
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "placed on the bed",
+      "position": "on the bed",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_ROOM_KEY_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "on the desk",
+      "position": "on the desk",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "in her hand or pocket",
+      "position": "in Jieun's hand or pocket",
+      "visible": false,
+      "continuity_lock": true
+    }
+  ],
+  "prompt": {
+    "subject": "Jieun, a young woman with an oval face, soft features, natural eyebrows, dark brown eyes, and light natural makeup, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch, with shoulder-length dark brown hair that is straight with slight natural waves and tucked behind ears. She is standing by the window, turning away from it to face the room, with a settled and curious expression.",
+    "environment": "A hotel guest room in the Manhattan Hotel, featuring a bed, desk, and window with a city view. Bright natural daylight comes through the window, mixed with soft indoor lighting. The atmosphere is quiet, typical of an empty hotel room, with faint sounds of the city from outside.",
+    "action": "Jieun stands by the window, takes a deep breath, and turns back into the room with a settled expression, facing the room.",
+    "camera": "Medium shot, eye-level angle, static camera with locked stability.",
+    "continuity": "Jieun is in her hotel room, having seen the city view from the window. She is feeling settled and comfortable, thinking about taking a walk. Her crossbody bag is on the bed, her room key is on the desk, and her smartphone is in her hand or pocket. She is turning away from the window to face the room.",
+    "final_prompt": "Medium shot, eye-level, static camera. Jieun, a young woman with an oval face, soft features, natural eyebrows, dark brown eyes, and light natural makeup, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch, with shoulder-length dark brown hair that is straight with slight natural waves and tucked behind ears, stands by the window in a hotel guest room. She takes a deep breath and turns away from the window to face the room, with a settled and curious expression. The room has a bed, desk, and window with a city view, lit by bright natural daylight mixed with soft indoor lighting. Her crossbody bag is on the bed, her room key is on the desk, and her smartphone is in her hand or pocket."
+  },
+  "negative_constraints": [
+    "Do not change character identity.",
+    "Do not change canonical location identity.",
+    "Do not introduce new characters.",
+    "Do not introduce new locations.",
+    "Do not alter canonical prop state.",
+    "Do not change story events.",
+    "Do not show Jieun leaving the hotel room.",
+    "Do not show Jieun's suitcase being lost or missing.",
+    "Do not show Jieun's passport or smartphone being dropped or lost.",
+    "Do not introduce a new travel problem.",
+    "Do not show Jieun's backpack or suitcase being picked up again before the next shot.",
+    "Do not change Jieun's clothing or appearance."
+  ],
+  "continuity": {
+    "carry_in": [
+      "Jieun is in her hotel room and has seen the city view from the window.",
+      "She is feeling settled and comfortable.",
+      "She is thinking about taking a walk to explore the area.",
+      "Her bags are placed down in the room."
+    ],
+    "carry_out": [
+      "Jieun is facing the room, ready to prepare for her walk",
+      "Her crossbody bag is on the bed",
+      "Her room key is on the desk",
+      "She has a settled and curious expression"
+    ],
+    "must_match_previous_shot": true,
+    "previous_scene_id": "S017",
+    "previous_shot_id": "SHOT_004",
+    "next_scene_id": "S018",
+    "next_shot_id": "SHOT_002"
+  }
+}

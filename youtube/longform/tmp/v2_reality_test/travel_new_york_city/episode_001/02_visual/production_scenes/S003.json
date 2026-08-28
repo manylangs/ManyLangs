@@ -1,0 +1,205 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S003",
+  "sequence": 3,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "characters": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "local_character_id": null,
+      "role": "protagonist",
+      "gender": "female",
+      "visual_state": {
+        "appearance": [
+          "Oval face with soft features",
+          "Natural eyebrows",
+          "Dark brown eyes",
+          "Light natural makeup",
+          "Warm friendly expression",
+          "Shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears"
+        ],
+        "clothing": [
+          "White casual t-shirt",
+          "Light blue denim jacket",
+          "Dark blue skinny jeans",
+          "White sneakers",
+          "Small silver earrings",
+          "Simple wristwatch"
+        ],
+        "carried_items": [
+          "Medium-sized travel backpack",
+          "Small crossbody bag",
+          "Smartphone",
+          "Passport"
+        ]
+      },
+      "emotion": "a bit more confident but still cautious",
+      "screen_action": "Steps up to the immigration officer's booth, holding her passport, and answers the officer's questions politely"
+    },
+    {
+      "character_ref": null,
+      "local_character_id": "B",
+      "role": "supporting",
+      "gender": "male",
+      "visual_state": {
+        "appearance": [
+          "Professional immigration officer",
+          "Neatly groomed",
+          "Wearing an official uniform with a visible ID badge"
+        ],
+        "clothing": [
+          "Immigration officer uniform shirt",
+          "Dark trousers",
+          "Professional work shoes"
+        ],
+        "carried_items": []
+      },
+      "emotion": "professional and courteous",
+      "screen_action": "Sits at the immigration booth, reviews Jieun's passport, asks questions about her visit, and then welcomes her to the United States"
+    }
+  ],
+  "environment": {
+    "time_of_day": "day",
+    "weather": null,
+    "lighting": "bright indoor terminal lighting with natural light from large windows",
+    "background_activity": [
+      "Other passengers waiting in the immigration line",
+      "Immigration officers at nearby booths processing travelers",
+      "Digital flight information displays showing arrival times"
+    ]
+  },
+  "visual_goal": "The viewer sees Jieun successfully complete the immigration interview, answering the officer's questions clearly and being welcomed into the United States.",
+  "actions": [
+    {
+      "sequence": 1,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "steps forward to the immigration officer's booth and hands over her passport",
+      "object_ref": "PROP_PASSPORT_001"
+    },
+    {
+      "sequence": 2,
+      "actor_ref": "B",
+      "action": "receives the passport, reviews it, and asks about the purpose of her visit",
+      "object_ref": "PROP_PASSPORT_001"
+    },
+    {
+      "sequence": 3,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "answers that she is a tourist visiting New York City",
+      "object_ref": null
+    },
+    {
+      "sequence": 4,
+      "actor_ref": "B",
+      "action": "asks how long she will stay",
+      "object_ref": null
+    },
+    {
+      "sequence": 5,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "answers that she will stay about one week",
+      "object_ref": null
+    },
+    {
+      "sequence": 6,
+      "actor_ref": "B",
+      "action": "asks where she will stay in New York",
+      "object_ref": null
+    },
+    {
+      "sequence": 7,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "answers that she has a hotel in Manhattan",
+      "object_ref": null
+    },
+    {
+      "sequence": 8,
+      "actor_ref": "B",
+      "action": "returns the passport and welcomes her to New York",
+      "object_ref": "PROP_PASSPORT_001"
+    },
+    {
+      "sequence": 9,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "takes back her passport, nods gratefully, and steps away from the booth",
+      "object_ref": "PROP_PASSPORT_001"
+    }
+  ],
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "description": "Medium-sized travel backpack",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "description": "Small crossbody bag",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "description": "Smartphone",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "description": "Passport",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    }
+  ],
+  "must_show": [
+    "Jieun reaches the immigration officer's booth",
+    "Jieun answers the officer's questions about the purpose of her visit",
+    "Jieun is cleared to enter the United States",
+    "The officer returns Jieun's passport and welcomes her"
+  ],
+  "must_not_show": [
+    "Jieun moving past the immigration area",
+    "Any problems with Jieun's immigration status",
+    "Jieun recovering her checked luggage yet"
+  ],
+  "visual_continuity": {
+    "carry_in": [
+      "Jieun has joined the correct immigration line after asking for help",
+      "She is waiting in line with her passport ready",
+      "She feels a bit more confident about the process"
+    ],
+    "carry_out": [
+      "Jieun has completed immigration successfully",
+      "She is now heading toward baggage claim",
+      "She feels relieved that the immigration process went smoothly"
+    ],
+    "start_state": [
+      "Jieun is standing at the front of the immigration line, facing the officer's booth",
+      "She is holding her passport in her hand",
+      "She appears a bit more confident but still cautious"
+    ],
+    "end_state": [
+      "Jieun is stepping away from the immigration booth, holding her passport",
+      "She looks relieved and slightly more at ease",
+      "She begins walking toward the baggage claim area"
+    ]
+  },
+  "production_constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_story_continuity": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false
+  }
+}

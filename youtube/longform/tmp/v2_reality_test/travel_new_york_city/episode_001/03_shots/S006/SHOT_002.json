@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S006",
+  "shot_id": "SHOT_002",
+  "sequence": 2,
+  "duration_seconds": 8.0,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun comparing the taxi and ride-sharing signs, then glancing toward the public transit sign, as she thinks through her options.",
+  "framing": {
+    "shot_size": "medium",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "taxi sign",
+      "ride-sharing sign"
+    ]
+  },
+  "camera": {
+    "angle": "three_quarter",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun looks at the taxi sign, then at the ride-sharing sign, and then glances toward the public transit sign.",
+    "start_state": [
+      "Jieun is standing near the ground transportation signs.",
+      "She is looking at the taxi sign."
+    ],
+    "end_state": [
+      "Jieun is looking toward the public transit sign.",
+      "Her expression is thoughtful."
+    ]
+  },
+  "emotion": {
+    "primary_actor": "thoughtful and comparing",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on Jieun's back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "standing beside Jieun, handle in her hand",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L002",
+      "L003"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is standing in the ground transportation area.",
+      "She is looking at the signs for taxis, ride-sharing, and public transit."
+    ],
+    "carry_out": [
+      "Jieun is looking toward the public transit sign.",
+      "She is still considering her options."
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S009",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun arrives at the station to transfer to the subway",
+      "pass": true,
+      "evidence": "L001: 'Excuse me, I need to take the subway to Manhattan.' and L006: 'The ticket machine is right there, and the Downtown train is on Platform 2.' indicate she is at the subway station and about to transfer."
+    },
+    {
+      "requirement": "Jieun asks for help with paying for the subway",
+      "pass": true,
+      "evidence": "L001: 'How do I pay for it?' is a direct request for help with payment."
+    },
+    {
+      "requirement": "Jieun identifies the correct train to take toward Manhattan",
+      "pass": true,
+      "evidence": "L003: 'which train should I take to go to Manhattan?' and L004: 'Take the train that says Downtown. It will take you to Manhattan.' confirm the correct train is identified."
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the subway station",
+      "pass": true,
+      "evidence": "The dialogue ends with Jieun being directed to Platform 2, implying she is still at the station and has not boarded or left."
+    },
+    {
+      "requirement": "Do not introduce specific prices or payment method details",
+      "pass": true,
+      "evidence": "L002 and L006 only mention buying 'a ticket' at 'the machine' without specifying a price or the type of payment method (e.g., OMNY, MetroCard)."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

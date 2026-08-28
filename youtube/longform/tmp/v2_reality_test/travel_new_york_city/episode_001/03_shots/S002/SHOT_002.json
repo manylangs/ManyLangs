@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S002",
+  "shot_id": "SHOT_002",
+  "sequence": 2,
+  "duration_seconds": 8.0,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001",
+    "B"
+  ],
+  "visual_intent": "Show Jieun approaching the airport employee and asking which line to join, with the employee responding.",
+  "framing": {
+    "shot_size": "medium",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "B"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun approaches the airport employee and asks which line to join for immigration, while the employee listens and responds.",
+    "start_state": [
+      "Jieun is standing near the airport employee",
+      "The employee is standing near the immigration area assisting passengers"
+    ],
+    "end_state": [
+      "Jieun has asked her question",
+      "The employee is looking at Jieun, about to respond"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "polite and slightly nervous",
+    "supporting": {
+      "B": "helpful and professional"
+    }
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across body",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L001",
+      "L002"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is standing in the immigration area looking at the lines",
+      "She appears a bit overwhelmed"
+    ],
+    "carry_out": [
+      "Jieun is standing near the airport employee",
+      "The employee has asked if she is a visitor or resident"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

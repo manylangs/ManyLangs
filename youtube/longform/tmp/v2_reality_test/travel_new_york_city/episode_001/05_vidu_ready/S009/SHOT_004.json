@@ -1,0 +1,197 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S009",
+  "shot_id": "SHOT_004",
+  "sequence": 4,
+  "source_refs": {
+    "production_scene": "02_visual/production_scenes/S009.json",
+    "shot": "03_shots/S009/SHOT_004.json",
+    "visual_continuity": "04_visual_continuity/S009/SHOT_004.json"
+  },
+  "generation": {
+    "provider": "vidu",
+    "duration_seconds": 8.0,
+    "aspect_ratio": "16:9",
+    "resolution": "1080p",
+    "mode": "reference_guided"
+  },
+  "actors": [
+    {
+      "actor_ref": "CHAR_JIEUN_001",
+      "identity_type": "persistent",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Medium-sized travel backpack",
+        "Small crossbody bag",
+        "Smartphone",
+        "Passport",
+        "Checked suitcase"
+      ],
+      "body_state": [
+        "Standing near the ticket machine area",
+        "Backpack worn on back",
+        "Crossbody bag worn across body",
+        "Suitcase handle held in hand",
+        "Turned to face the transit employee",
+        "Head oriented toward the platform signs"
+      ],
+      "emotion": "attentive and processing the information",
+      "reference_asset_ids": [
+        "ASSET_CHAR_JIEUN_PRIMARY_000001"
+      ]
+    },
+    {
+      "actor_ref": "B",
+      "identity_type": "scene_local",
+      "identity_lock": true,
+      "appearance": [
+        "Female transit employee in her 30s",
+        "Neat professional appearance",
+        "Friendly and helpful expression"
+      ],
+      "hair": [
+        "Hair tied back neatly in a professional style"
+      ],
+      "clothing": [
+        "Transit authority uniform with visible badge",
+        "Dark-colored uniform pants",
+        "Comfortable work shoes"
+      ],
+      "carried_items": [
+        "Small handheld radio"
+      ],
+      "body_state": [
+        "Standing beside Jieun",
+        "Facing Jieun",
+        "Hand pointing toward the platform signs"
+      ],
+      "emotion": "helpful and clear",
+      "reference_asset_ids": []
+    }
+  ],
+  "location": {
+    "location_ref": "LOC_AIRPORT_TRANSIT_001",
+    "identity_lock": true,
+    "current_zone": "Subway station entrance area, near the ticket machine and platform signs",
+    "persistent_features": [
+      "Transit station platforms",
+      "Train or vehicle interior",
+      "Views of urban landscape during the journey",
+      "Signage for transit lines and stops"
+    ],
+    "orientation_state": [
+      "Jieun standing near the ticket machine area",
+      "Jieun turned to face the transit employee",
+      "Transit employee standing beside Jieun, facing her",
+      "Transit employee's hand pointing toward the platform signs",
+      "Jieun looking in the direction of the platform signs",
+      "Ticket machine beside Jieun",
+      "Platform signs visible in the background",
+      "Station entrance behind the transit employee"
+    ],
+    "reference_asset_ids": []
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn on back",
+      "position": "on Jieun's back",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn across body",
+      "position": "across Jieun's body",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "not visible in hands, likely stored in crossbody bag or pocket",
+      "position": "not visible, likely in crossbody bag or pocket",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "not visible in hands, likely stored in crossbody bag or pocket",
+      "position": "not visible, likely in crossbody bag or pocket",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "held by Jieun's hand",
+      "position": "in Jieun's hand, beside her",
+      "visible": true,
+      "continuity_lock": true
+    }
+  ],
+  "prompt": {
+    "subject": "A young Korean woman (Jieun) with shoulder-length dark brown hair tucked behind her ears, wearing a white t-shirt, light blue denim jacket, dark blue skinny jeans, and white sneakers, with a backpack on her back and a crossbody bag across her body, holding a suitcase handle in her hand. Beside her stands a female transit employee in her 30s with hair tied back, wearing a transit authority uniform with a visible badge, dark pants, and work shoes, holding a small handheld radio.",
+    "environment": "Bright indoor subway station entrance area with natural daylight coming from platform entrances. A ticket machine is beside Jieun, platform signs are visible in the background, and the station entrance is behind the transit employee. A few passengers walk toward the platforms and check departure boards.",
+    "action": "The transit employee points toward the platform signs and directs Jieun to take the Downtown train on Platform 2. Jieun listens attentively and looks in the direction of the platform signs.",
+    "camera": "Medium shot, eye-level angle, static locked camera.",
+    "continuity": "Jieun retains her backpack, crossbody bag, and suitcase. The transit employee's hand remains pointing toward the platform signs. Jieun's head turns toward the platform signs. The location remains the subway station entrance area with the ticket machine and platform signs.",
+    "final_prompt": "A medium shot at eye level with a static camera shows a young Korean woman with shoulder-length dark brown hair tucked behind her ears, wearing a white t-shirt, light blue denim jacket, dark blue skinny jeans, and white sneakers, with a backpack on her back, a crossbody bag across her body, and holding a suitcase handle. Beside her, a female transit employee in her 30s with hair tied back, wearing a transit authority uniform with a visible badge, dark pants, and work shoes, holds a small handheld radio and points toward platform signs in the background. The employee directs Jieun to take the Downtown train on Platform 2. Jieun listens attentively and looks toward the platform signs. The bright indoor station has a ticket machine beside Jieun and natural daylight from platform entrances. A few passengers walk in the background. The camera remains static and locked."
+  },
+  "negative_constraints": [
+    "Do not change character identity.",
+    "Do not change canonical location identity.",
+    "Do not introduce new characters.",
+    "Do not introduce new locations.",
+    "Do not alter canonical prop state.",
+    "Do not change story events.",
+    "Do not show Jieun moving past the subway station or boarding a train.",
+    "Do not show specific ticket prices or payment method details.",
+    "Do not show Jieun's suitcase being lost or missing.",
+    "Do not show Jieun's passport or smartphone being dropped or lost."
+  ],
+  "continuity": {
+    "carry_in": [
+      "Jieun has asked which train to take to Manhattan.",
+      "The transit employee is about to answer."
+    ],
+    "carry_out": [
+      "Jieun has been told to take the Downtown train on Platform 2.",
+      "She is looking toward the platform signs."
+    ],
+    "must_match_previous_shot": true,
+    "previous_scene_id": "S009",
+    "previous_shot_id": "SHOT_003",
+    "next_scene_id": "S009",
+    "next_shot_id": "SHOT_005"
+  }
+}

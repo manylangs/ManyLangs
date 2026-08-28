@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/dialogue_semantic_validation.schema.json",
+  "title": "ManyLangs Longform Dialogue Semantic Validation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "episode_id",
+    "scene_id",
+    "overall_pass",
+    "severity",
+    "must_happen_checks",
+    "must_not_happen_checks",
+    "continuity_pass",
+    "surprise_pass",
+    "protagonist_pass",
+    "naturalness_pass",
+    "issues"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "common.schema.json#/$defs/document_metadata"
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*_ep[0-9]{3}$"
+    },
+    "scene_id": {
+      "type": "string",
+      "pattern": "^S[0-9]{3}$"
+    },
+    "overall_pass": {
+      "type": "boolean"
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["pass", "warning", "fail"]
+    },
+    "must_happen_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["requirement", "pass", "evidence"],
+        "properties": {
+          "requirement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pass": {
+            "type": "boolean"
+          },
+          "evidence": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "must_not_happen_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["requirement", "pass", "evidence"],
+        "properties": {
+          "requirement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pass": {
+            "type": "boolean"
+          },
+          "evidence": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "continuity_pass": {
+      "type": "boolean"
+    },
+    "surprise_pass": {
+      "type": "boolean"
+    },
+    "protagonist_pass": {
+      "type": "boolean"
+    },
+    "naturalness_pass": {
+      "type": "boolean"
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "severity",
+          "category",
+          "evidence",
+          "reason"
+        ],
+        "properties": {
+          "severity": {
+            "type": "string",
+            "enum": ["warning", "fail"]
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "must_happen",
+              "must_not_happen",
+              "continuity",
+              "surprise",
+              "protagonist",
+              "naturalness",
+              "realism"
+            ]
+          },
+          "evidence": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

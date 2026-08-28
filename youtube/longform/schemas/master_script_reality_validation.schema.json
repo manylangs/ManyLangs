@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/master_script_reality_validation.schema.json",
+  "title": "ManyLangs Master Script Reality Validation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "episode_id",
+    "overall_pass",
+    "severity",
+    "scene_checks",
+    "issues"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "common.schema.json#/$defs/document_metadata"
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*_ep[0-9]{3}$"
+    },
+    "overall_pass": {
+      "type": "boolean"
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["pass", "warning", "fail"]
+    },
+    "scene_checks": {
+      "type": "array",
+      "minItems": 20,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "scene_id",
+          "pass",
+          "reality_sensitive_facts"
+        ],
+        "properties": {
+          "scene_id": {
+            "type": "string",
+            "pattern": "^S[0-9]{3}$"
+          },
+          "pass": {
+            "type": "boolean"
+          },
+          "reality_sensitive_facts": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "severity",
+          "scene_id",
+          "category",
+          "evidence",
+          "reason"
+        ],
+        "properties": {
+          "severity": {
+            "type": "string",
+            "enum": ["warning", "fail"]
+          },
+          "scene_id": {
+            "type": "string",
+            "pattern": "^S[0-9]{3}$"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "operational_fact",
+              "price",
+              "route",
+              "payment_method",
+              "schedule",
+              "named_service",
+              "location_fact",
+              "date_conflict",
+              "unsupported_specificity"
+            ]
+          },
+          "evidence": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

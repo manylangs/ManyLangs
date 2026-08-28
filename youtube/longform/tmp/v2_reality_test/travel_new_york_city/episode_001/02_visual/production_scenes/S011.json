@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S011",
+  "sequence": 11,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "characters": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "local_character_id": null,
+      "role": "protagonist",
+      "gender": "female",
+      "visual_state": {
+        "appearance": [
+          "Oval face with soft features",
+          "Natural eyebrows",
+          "Dark brown eyes",
+          "Light natural makeup",
+          "Warm friendly expression",
+          "Shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears"
+        ],
+        "clothing": [
+          "White casual t-shirt",
+          "Light blue denim jacket",
+          "Dark blue skinny jeans",
+          "White sneakers",
+          "Small silver earrings",
+          "Simple wristwatch"
+        ],
+        "carried_items": [
+          "Medium-sized travel backpack",
+          "Small crossbody bag",
+          "Smartphone",
+          "Passport",
+          "Checked suitcase"
+        ]
+      },
+      "emotion": "relieved that she is on the right track, with a lingering sense of excitement",
+      "screen_action": "Stands inside the moving subway train, holds onto a pole with one hand, checks the subway map above the seats, then compares the station names with her phone's map"
+    }
+  ],
+  "environment": {
+    "time_of_day": "day",
+    "weather": null,
+    "lighting": "bright indoor subway car lighting with natural daylight streaming through the windows",
+    "background_activity": [
+      "A few passengers seated and standing",
+      "Some passengers reading books or looking at their phones",
+      "The train moving with a rhythmic sound and slight sway"
+    ]
+  },
+  "visual_goal": "The viewer sees Jieun confidently confirm she is on the correct train toward Manhattan by checking the subway map and her phone, then visibly relax as she watches for her stop.",
+  "actions": [
+    {
+      "sequence": 1,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "looks up at the subway map displayed above the seats inside the train car",
+      "object_ref": null
+    },
+    {
+      "sequence": 2,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "takes out her smartphone and opens the map application",
+      "object_ref": "PROP_SMARTPHONE_001"
+    },
+    {
+      "sequence": 3,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "compares the station names on the subway map with the ones on her phone's map",
+      "object_ref": "PROP_SMARTPHONE_001"
+    },
+    {
+      "sequence": 4,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "nods with a relieved expression, confirming she is on the right train toward Manhattan",
+      "object_ref": null
+    },
+    {
+      "sequence": 5,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "puts her phone back into her crossbody bag and looks out the window, watching for her stop",
+      "object_ref": "PROP_CROSSBODY_BAG_001"
+    }
+  ],
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "description": "Medium-sized travel backpack",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "description": "Small crossbody bag",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "description": "Smartphone",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "description": "Passport",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "description": "Jieun's checked suitcase that she retrieved from the carousel",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    }
+  ],
+  "must_show": [
+    "Jieun checks the subway map inside the train",
+    "Jieun compares the station names with her phone's map",
+    "Jieun confirms she is going in the right direction toward Manhattan",
+    "Jieun's expression shifts from focused checking to relief"
+  ],
+  "must_not_show": [
+    "Jieun moving past the subway journey or arriving at her stop",
+    "Any problems with the subway map or her phone",
+    "Any unexplained change in Jieun's clothing or appearance"
+  ],
+  "visual_continuity": {
+    "carry_in": [
+      "Jieun is on the subway train heading toward Manhattan",
+      "She is observing the other passengers and the city through the windows",
+      "She feels a growing sense of excitement"
+    ],
+    "carry_out": [
+      "Jieun has confirmed she is on the correct train toward Manhattan",
+      "She is now watching for her stop",
+      "She feels relieved that she is on the right track"
+    ],
+    "start_state": [
+      "Jieun is standing inside the moving subway train, holding onto a pole",
+      "She is looking out the window at the city passing by",
+      "Her expression shows excitement and wonder"
+    ],
+    "end_state": [
+      "Jieun has put her phone away and is looking out the window",
+      "Her expression is calm and relieved",
+      "She is watching for her upcoming stop"
+    ]
+  },
+  "production_constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_story_continuity": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false
+  }
+}

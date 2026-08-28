@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a2",
+    "id": "016"
+  },
+  "title": {
+    "target": "Разговор о погоде",
+    "en": "Talking About the Weather",
+    "es": "Hablando sobre el clima",
+    "fr": "Parler de la météo",
+    "pt": "Conversa sobre o tempo",
+    "kr": "날씨 이야기",
+    "jp": "天気の話",
+    "zh": "聊天气",
+    "ru": "Разговор о погоде"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Какая сегодня погода? Ты не смотрел прогноз?",
+            "en": "What's the weather like today? Did you check the forecast?",
+            "es": "¿Qué tiempo hace hoy? ¿No has mirado el pronóstico?",
+            "fr": "Quel temps fait-il aujourd'hui ? Tu n'as pas regardé les prévisions ?",
+            "pt": "Como está o tempo hoje? Você não viu a previsão?",
+            "kr": "오늘 날씨 어때? 일기예보 안 봤어?",
+            "jp": "今日の天気はどう？天気予報見た？",
+            "zh": "今天天气怎么样？你没看天气预报吗？",
+            "ru": "Какая сегодня погода? Ты не смотрел прогноз?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Говорят, будет тепло и солнечно. Отлично для прогулки.",
+            "en": "They say it's going to be warm and sunny. Perfect for a walk.",
+            "es": "Dicen que hará calor y estará soleado. Perfecto para dar un paseo.",
+            "fr": "On dit qu'il va faire chaud et ensoleillé. Parfait pour une promenade.",
+            "pt": "Dizem que vai estar quente e ensolarado. Ótimo para um passeio.",
+            "kr": "따뜻하고 맑을 거래. 산책하기 딱 좋겠다.",
+            "jp": "暖かくて晴れるって言ってたよ。散歩にぴったりだね。",
+            "zh": "听说会很暖和，还有太阳。很适合散步。",
+            "ru": "Говорят, будет тепло и солнечно. Отлично для прогулки."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? Тогда можно пойти в парк после обеда.",
+            "en": "Really? Then we can go to the park after lunch.",
+            "es": "¿De verdad? Entonces podemos ir al parque después de comer.",
+            "fr": "Vraiment ? Alors on peut aller au parc après le déjeuner.",
+            "pt": "Sério? Então a gente pode ir ao parque depois do almoço.",
+            "kr": "정말? 그럼 점심 먹고 공원에 갈 수 있겠네.",
+            "jp": "本当？じゃあ、午後から公園に行けるね。",
+            "zh": "真的吗？那我们可以下午去公园。",
+            "ru": "Правда? Тогда можно пойти в парк после обеда."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я только за. Надо взять с собой воду.",
+            "en": "Yeah, I'm all for it. We should bring some water with us.",
+            "es": "Sí, yo estoy totalmente a favor. Hay que llevar agua con nosotros.",
+            "fr": "Oui, je suis partant. Il faut prendre de l'eau avec nous.",
+            "pt": "Sim, eu topo. Precisamos levar água com a gente.",
+            "kr": "응, 나는 전적으로 찬성이야. 물을 챙겨 가야겠다.",
+            "jp": "うん、大賛成。水を持って行かないとね。",
+            "zh": "好啊，我完全赞成。得带点水去。",
+            "ru": "Да, я только за. Надо взять с собой воду."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Конечно, я уже положила бутылку в сумку.",
+            "en": "Of course, I already put a bottle in my bag.",
+            "es": "Claro, ya he puesto una botella en la bolsa.",
+            "fr": "Bien sûr, j'ai déjà mis la bouteille dans mon sac.",
+            "pt": "Claro, eu já coloquei uma garrafa na bolsa.",
+            "kr": "당연하지, 벌써 물병을 가방에 넣어 뒀어.",
+            "jp": "もちろん、もうボトルをバッグに入れてあるよ。",
+            "zh": "当然，我已经把水瓶放进包里了。",
+            "ru": "Конечно, я уже положила бутылку в сумку."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Значит, договорились. Встречаемся в два часа.",
+            "en": "So, it's settled. We'll meet at two o'clock.",
+            "es": "Entonces, está decidido. Nos vemos a las dos.",
+            "fr": "Alors, c'est décidé. On se retrouve à deux heures.",
+            "pt": "Então, combinado. A gente se encontra às duas.",
+            "kr": "그럼 약속된 거야. 두 시에 만나자.",
+            "jp": "じゃあ、決まりだね。二時に会おう。",
+            "zh": "那就说定了。我们两点见。",
+            "ru": "Значит, договорились. Встречаемся в два часа."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "На улице такой сильный ветер! Ты видел?",
+            "en": "It's so windy outside! Did you see?",
+            "es": "¡Hace mucho viento en la calle! ¿Lo has visto?",
+            "fr": "Il y a un tel vent dehors ! Tu as vu ?",
+            "pt": "Que vento forte lá fora! Você viu?",
+            "kr": "밖에 바람이 엄청 불어! 너 봤어?",
+            "jp": "外はすごい風だね！見た？",
+            "zh": "外面风好大啊！你看到了吗？",
+            "ru": "На улице такой сильный ветер! Ты видел?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я чуть не потерял шапку, когда шёл сюда.",
+            "en": "Yeah, I almost lost my hat when I was walking here.",
+            "es": "Sí, por poco pierdo el gorro cuando venía hacia aquí.",
+            "fr": "Oui, j'ai failli perdre mon bonnet en venant ici.",
+            "pt": "Sim, eu quase perdi o chapéu quando estava vindo para cá.",
+            "kr": "응, 여기 오는 길에 모자를 거의 날릴 뻔했어.",
+            "jp": "うん、こっちに来る途中、帽子を飛ばされそうになったよ。",
+            "zh": "看到了，我走过来的时候差点把帽子吹跑了。",
+            "ru": "Да, я чуть не потерял шапку, когда шёл сюда."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне кажется, к вечеру начнётся дождь.",
+            "en": "I think it's going to start raining by the evening.",
+            "es": "Me parece que hacia la noche empezará a llover.",
+            "fr": "J'ai l'impression qu'il va se mettre à pleuvoir vers le soir.",
+            "pt": "Acho que vai começar a chover à noite.",
+            "kr": "저녁쯤에는 비가 올 것 같아.",
+            "jp": "夕方には雨が降り出すと思うよ。",
+            "zh": "我觉得傍晚会开始下雨。",
+            "ru": "Мне кажется, к вечеру начнётся дождь."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Возможно. Небо уже затянуло тучами.",
+            "en": "Maybe. The sky is already covered with clouds.",
+            "es": "Es posible. El cielo ya se ha cubierto de nubes.",
+            "fr": "C'est possible. Le ciel est déjà couvert de nuages.",
+            "pt": "Pode ser. O céu já está cheio de nuvens.",
+            "kr": "그럴 수도 있지. 벌써 하늘이 구름으로 덮였어.",
+            "jp": "かもね。もう空が雲に覆われてきたし。",
+            "zh": "有可能。天已经被乌云遮住了。",
+            "ru": "Возможно. Небо уже затянуло тучами."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда лучше взять зонт, если пойдёшь гулять.",
+            "en": "Then you'd better take an umbrella if you go for a walk.",
+            "es": "Entonces mejor llevar un paraguas si vas a dar un paseo.",
+            "fr": "Alors il vaut mieux prendre un parapluie si tu sors te promener.",
+            "pt": "Então é melhor levar um guarda-chuva se você for passear.",
+            "kr": "그럼 산책하러 가려면 우산을 챙기는 게 좋겠다.",
+            "jp": "それなら、散歩に行くなら傘を持って行ったほうがいいよ。",
+            "zh": "那要是去散步的话，最好带把伞。",
+            "ru": "Тогда лучше взять зонт, если пойдёшь гулять."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошая идея. Спасибо, что предупредила.",
+            "en": "Good idea. Thanks for the heads-up.",
+            "es": "Buena idea. Gracias por avisarme.",
+            "fr": "Bonne idée. Merci de m'avoir prévenu.",
+            "pt": "Boa ideia. Obrigado por me avisar.",
+            "kr": "좋은 생각이야. 미리 알려줘서 고마워.",
+            "jp": "いいアイデアだね。教えてくれてありがとう。",
+            "zh": "好主意。谢谢你提醒我。",
+            "ru": "Хорошая идея. Спасибо, что предупредила."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сегодня так холодно, прямо мороз!",
+            "en": "It's so cold today, it's freezing!",
+            "es": "Hoy hace mucho frío, ¡está helando!",
+            "fr": "Aujourd'hui il fait tellement froid, carrément glacial !",
+            "pt": "Hoje está tão frio, está congelando!",
+            "kr": "오늘 너무 추워, 완전 한파야!",
+            "jp": "今日はすごく寒いね、まさに氷点下だよ！",
+            "zh": "今天好冷啊，简直是冰天雪地！",
+            "ru": "Сегодня так холодно, прямо мороз!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, минус десять, наверное. Я замёрз, пока шёл.",
+            "en": "Yeah, minus ten, probably. I got cold on my way here.",
+            "es": "Sí, debe de haber diez grados bajo cero. Me he quedado congelado de camino.",
+            "fr": "Oui, moins dix, probablement. J'ai gelé en venant à pied.",
+            "pt": "Sim, deve estar uns dez abaixo de zero. Eu congelei enquanto caminhava.",
+            "kr": "맞아, 아마 영하 십 도일 거야. 오는 길에 얼어버렸어.",
+            "jp": "うん、たぶんマイナス十度だね。歩いてくる間に凍えちゃったよ。",
+            "zh": "是啊，估计有零下十度。我走过来的时候都冻僵了。",
+            "ru": "Да, минус десять, наверное. Я замёрз, пока шёл."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я тоже. Даже в перчатках руки замёрзли.",
+            "en": "Me too. Even with gloves on, my hands got cold.",
+            "es": "Yo también. Hasta con guantes se me han quedado las manos heladas.",
+            "fr": "Moi aussi. Même avec des gants, j'ai les mains gelées.",
+            "pt": "Eu também. Até com luvas, minhas mãos congelaram.",
+            "kr": "나도 그래. 장갑을 꼈는데도 손이 시려워.",
+            "jp": "私も。手袋をしていても手が冷たくなったよ。",
+            "zh": "我也是。就算戴着手套，手也冻僵了。",
+            "ru": "Я тоже. Даже в перчатках руки замёрзли."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Говорят, завтра будет ещё холоднее.",
+            "en": "They say tomorrow it's going to be even colder.",
+            "es": "Dicen que mañana hará aún más frío.",
+            "fr": "On dit que demain il fera encore plus froid.",
+            "pt": "Dizem que amanhã vai estar ainda mais frio.",
+            "kr": "내일은 더 추워진대.",
+            "jp": "明日はもっと寒くなるって言ってたよ。",
+            "zh": "听说明天还会更冷。",
+            "ru": "Говорят, завтра будет ещё холоднее."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Серьёзно? Тогда надо одеваться теплее.",
+            "en": "Really? Then we need to dress warmer.",
+            "es": "¿En serio? Entonces hay que abrigarse más.",
+            "fr": "Sérieusement ? Alors il faut s'habiller plus chaudement.",
+            "pt": "Sério? Então a gente precisa se agasalhar melhor.",
+            "kr": "정말? 그럼 더 따뜻하게 입어야겠네.",
+            "jp": "本当に？それなら、もっと暖かい格好をしないとね。",
+            "zh": "真的吗？那得多穿点衣服。",
+            "ru": "Серьёзно? Тогда надо одеваться теплее."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен. Лучше надеть свитер и шарф.",
+            "en": "Agreed. Better to wear a sweater and a scarf.",
+            "es": "De acuerdo. Mejor ponerse un jersey y una bufanda.",
+            "fr": "Je suis d'accord. Il vaut mieux mettre un pull et une écharpe.",
+            "pt": "Concordo. É melhor vestir um suéter e um cachecol.",
+            "kr": "맞아. 스웨터랑 목도리를 챙기는 게 좋겠어.",
+            "jp": "そうだね。セーターとマフラーを着たほうがいいよ。",
+            "zh": "同意。最好穿上毛衣，戴上围巾。",
+            "ru": "Согласен. Лучше надеть свитер и шарф."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Наконец-то выглянуло солнце! Я уже устала от дождей.",
+            "en": "Finally, the sun came out! I'm so tired of the rain.",
+            "es": "¡Por fin ha salido el sol! Ya estaba cansada de las lluvias.",
+            "fr": "Enfin le soleil est sorti ! J'en avais assez de la pluie.",
+            "pt": "Finalmente o sol apareceu! Eu já estava cansada das chuvas.",
+            "kr": "드디어 해가 났네! 비가 와서 너무 지쳤어.",
+            "jp": "やっと日が差してきたね！もう雨には飽きちゃったよ。",
+            "zh": "终于出太阳了！我真是受够了那些雨。",
+            "ru": "Наконец-то выглянуло солнце! Я уже устала от дождей."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, целая неделя была серая и мокрая.",
+            "en": "Yeah, the whole week was gray and wet.",
+            "es": "Sí, toda la semana ha estado gris y húmeda.",
+            "fr": "Oui, toute la semaine a été grise et humide.",
+            "pt": "Sim, a semana inteira foi cinzenta e molhada.",
+            "kr": "맞아, 일주일 내내 흐리고 축축했잖아.",
+            "jp": "うん、一週間ずっと曇りでじめじめしてたもんね。",
+            "zh": "是啊，整整一个星期都是阴沉沉的、湿漉漉的。",
+            "ru": "Да, целая неделя была серая и мокрая."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Теперь можно открыть окна и проветрить комнату.",
+            "en": "Now we can open the windows and air out the room.",
+            "es": "Ahora podemos abrir las ventanas y ventilar la habitación.",
+            "fr": "Maintenant on peut ouvrir les fenêtres et aérer la pièce.",
+            "pt": "Agora a gente pode abrir as janelas e arejar o quarto.",
+            "kr": "이제 창문 열고 방을 환기시킬 수 있겠다.",
+            "jp": "これで窓を開けて部屋の空気を入れ替えられるね。",
+            "zh": "现在可以打开窗户给房间通通风了。",
+            "ru": "Теперь можно открыть окна и проветрить комнату."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Точно. И погода отличная для пробежки.",
+            "en": "Exactly. And the weather is great for a jog.",
+            "es": "Cierto. Y el tiempo es perfecto para salir a correr.",
+            "fr": "Exactement. Et le temps est parfait pour un jogging.",
+            "pt": "Exato. E o tempo está ótimo para uma corrida.",
+            "kr": "그러게. 그리고 달리기 하기에도 날씨가 딱 좋아.",
+            "jp": "そうだね。それに、ジョギングにも最高の天気だよ。",
+            "zh": "没错。而且这天气特别适合跑步。",
+            "ru": "Точно. И погода отличная для пробежки."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты бегаешь по утрам? Я не знала.",
+            "en": "You run in the mornings? I didn't know that.",
+            "es": "¿Sales a correr por las mañanas? No lo sabía.",
+            "fr": "Tu cours le matin ? Je ne savais pas.",
+            "pt": "Você corre de manhã? Eu não sabia.",
+            "kr": "너 아침에 달리기를 해? 나는 몰랐어.",
+            "jp": "朝走ってるの？知らなかった。",
+            "zh": "你早上跑步吗？我都不知道。",
+            "ru": "Ты бегаешь по утрам? Я не знала."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, стараюсь два раза в неделю, если погода позволяет.",
+            "en": "Yeah, I try to go twice a week if the weather allows.",
+            "es": "Sí, intento dos veces por semana si el tiempo lo permite.",
+            "fr": "Oui, j'essaie deux fois par semaine, si le temps le permet.",
+            "pt": "Sim, eu tento duas vezes por semana, se o tempo permitir.",
+            "kr": "응, 날씨가 괜찮으면 일주일에 두 번 하려고 해.",
+            "jp": "うん、天気が良ければ週に二回は走るようにしてるんだ。",
+            "zh": "是啊，天气允许的话，我尽量一周跑两次。",
+            "ru": "Да, стараюсь два раза в неделю, если погода позволяет."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты слышал прогноз на выходные?",
+            "en": "Did you hear the forecast for the weekend?",
+            "es": "¿Has oído el pronóstico para el fin de semana?",
+            "fr": "Tu as entendu les prévisions pour le week-end ?",
+            "pt": "Você ouviu a previsão para o fim de semana?",
+            "kr": "주말 일기예보 들었어?",
+            "jp": "週末の天気予報聞いた？",
+            "zh": "你听说周末的天气预报了吗？",
+            "ru": "Ты слышал прогноз на выходные?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, обещают снег и небольшой минус.",
+            "en": "Yeah, they're promising snow and a little below zero.",
+            "es": "Sí, prometen nieve y unos grados bajo cero.",
+            "fr": "Oui, ils annoncent de la neige et un léger moins.",
+            "pt": "Sim, prometem neve e um pouco de frio.",
+            "kr": "응, 눈이 오고 영하로 좀 떨어진대.",
+            "jp": "うん、雪で少しマイナスになるって言ってたよ。",
+            "zh": "听说了，预报说有雪，还有零下几度。",
+            "ru": "Да, обещают снег и небольшой минус."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хм, а я хотела поехать за город.",
+            "en": "Hmm, but I wanted to go out of town.",
+            "es": "Mmm, y yo quería salir al campo.",
+            "fr": "Hmm, et moi je voulais aller à la campagne.",
+            "pt": "Hmm, mas eu queria ir para o interior.",
+            "kr": "흠, 나는 교외로 나가고 싶었는데.",
+            "jp": "ふーん、私は郊外に行きたかったんだけどな。",
+            "zh": "嗯，我还想开车去郊外呢。",
+            "ru": "Хм, а я хотела поехать за город."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "На машине будет нормально, дороги чистят.",
+            "en": "By car it'll be fine, they clear the roads.",
+            "es": "En coche estará bien, limpian las carreteras.",
+            "fr": "En voiture ça ira, ils déneigent les routes.",
+            "pt": "De carro vai ser tranquilo, eles limpam as estradas.",
+            "kr": "차로 가면 괜찮을 거야, 길에 제설을 하니까.",
+            "jp": "車なら大丈夫だよ、道路は除雪してあるから。",
+            "zh": "开车的话没问题，路上会清雪的。",
+            "ru": "На машине будет нормально, дороги чистят."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты прав. Но я боюсь, что будет скользко.",
+            "en": "You're right. But I'm afraid it'll be slippery.",
+            "es": "Tienes razón. Pero me da miedo que esté resbaladizo.",
+            "fr": "Tu as raison. Mais j'ai peur que ça glisse.",
+            "pt": "Você tem razão. Mas eu tenho medo de ficar escorregadio.",
+            "kr": "네 말이 맞아. 그런데 길이 미끄러울까 봐 걱정이야.",
+            "jp": "そうだね。でも、滑りやすくないか心配だな。",
+            "zh": "你说得对。但我担心会打滑。",
+            "ru": "Ты прав. Но я боюсь, что будет скользко."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не переживай, поедем аккуратно, я за рулём.",
+            "en": "Don't worry, we'll drive carefully, I'm behind the wheel.",
+            "es": "No te preocupes, iremos con cuidado, yo conduzco.",
+            "fr": "Ne t'inquiète pas, on y ira prudemment, c'est moi qui conduis.",
+            "pt": "Não se preocupe, a gente vai com cuidado, eu dirijo.",
+            "kr": "걱정 마, 내가 운전하니까 조심해서 갈게.",
+            "jp": "大丈夫だよ、慎重に運転するから、ハンドルは僕が握るし。",
+            "zh": "别担心，我来开车，我们小心点开。",
+            "ru": "Не переживай, поедем аккуратно, я за рулём."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Какая жара сегодня! Просто невозможно дышать.",
+            "en": "It's so hot today! I can barely breathe.",
+            "es": "¡Qué calor hace hoy! Es imposible respirar.",
+            "fr": "Quelle chaleur aujourd'hui ! C'est impossible de respirer.",
+            "pt": "Que calor hoje! É impossível respirar.",
+            "kr": "오늘 너무 덥다! 숨 쉬기가 힘들 정도야.",
+            "jp": "今日はすごい暑さだね！息ができないくらいだよ。",
+            "zh": "今天好热啊！简直喘不过气来。",
+            "ru": "Какая жара сегодня! Просто невозможно дышать."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, плюс тридцать, и ни одного облачка.",
+            "en": "Yeah, plus thirty, and not a single cloud.",
+            "es": "Sí, treinta grados y ni una nube.",
+            "fr": "Oui, plus trente, et pas un seul nuage.",
+            "pt": "Sim, trinta graus, e nem uma nuvem no céu.",
+            "kr": "맞아, 삼십 도에 구름 한 점 없어.",
+            "jp": "うん、三十度で、雲が一つもないね。",
+            "zh": "是啊，三十度，而且一朵云都没有。",
+            "ru": "Да, плюс тридцать, и ни одного облачка."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я уже устала от этого лета. Хочется прохлады.",
+            "en": "I'm so tired of this summer. I want some cool weather.",
+            "es": "Ya estoy harta de este verano. Quiero frescor.",
+            "fr": "J'en ai déjà assez de cet été. J'ai envie de fraîcheur.",
+            "pt": "Eu já estou cansada desse verão. Quero um pouco de frescor.",
+            "kr": "이번 여름에 벌써 지쳤어. 시원함이 그리워.",
+            "jp": "もうこの夏には飽きちゃったよ。涼しさが欲しいな。",
+            "zh": "我已经受够这个夏天了。好想凉快一点。",
+            "ru": "Я уже устала от этого лета. Хочется прохлады."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Говорят, в конце недели будет гроза.",
+            "en": "They say there's going to be a thunderstorm at the end of the week.",
+            "es": "Dicen que a finales de semana habrá tormenta.",
+            "fr": "On dit qu'il y aura un orage à la fin de la semaine.",
+            "pt": "Dizem que no fim da semana vai ter tempestade.",
+            "kr": "주말쯤에 뇌우가 온대.",
+            "jp": "週末には雷雨になるって言ってたよ。",
+            "zh": "听说周末会有雷阵雨。",
+            "ru": "Говорят, в конце недели будет гроза."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Надеюсь, это правда. Дождь бы всё освежил.",
+            "en": "I hope that's true. The rain would freshen everything up.",
+            "es": "Espero que sea verdad. La lluvia lo refrescaría todo.",
+            "fr": "J'espère que c'est vrai. La pluie rafraîchirait tout.",
+            "pt": "Espero que seja verdade. Uma chuva refrescaria tudo.",
+            "kr": "그게 사실이면 좋겠다. 비가 오면 모든 게 상쾌해질 텐데.",
+            "jp": "そうだといいな。雨が降れば全部リフレッシュされるのに。",
+            "zh": "希望是真的。下雨的话一切都会清爽一些。",
+            "ru": "Надеюсь, это правда. Дождь бы всё освежил."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен, после грозы всегда легче дышится.",
+            "en": "Agreed, it's always easier to breathe after a thunderstorm.",
+            "es": "De acuerdo, después de una tormenta siempre se respira mejor.",
+            "fr": "Je suis d'accord, après un orage on respire toujours mieux.",
+            "pt": "Concordo, depois da tempestade sempre fica mais fácil respirar.",
+            "kr": "맞아, 뇌우가 지나가면 항상 숨 쉬기가 편해지잖아.",
+            "jp": "そうだね、雷雨の後はいつも息がしやすくなるよね。",
+            "zh": "同意，雷阵雨过后总是觉得呼吸更顺畅。",
+            "ru": "Согласен, после грозы всегда легче дышится."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Смотри, какой туман на улице! Ничего не видно.",
+            "en": "Look, it's so foggy outside! You can't see anything.",
+            "es": "¡Mira qué niebla hay en la calle! No se ve nada.",
+            "fr": "Regarde quel brouillard il y a dehors ! On ne voit rien.",
+            "pt": "Olha que névoa lá fora! Não dá para ver nada.",
+            "kr": "봐봐, 밖에 안개가 엄청 껴! 아무것도 안 보여.",
+            "jp": "見て、外はすごい霧だよ！何も見えないね。",
+            "zh": "你看，外面雾好大！什么都看不见。",
+            "ru": "Смотри, какой туман на улице! Ничего не видно."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я еле нашёл дорогу до остановки.",
+            "en": "Yeah, I could barely find my way to the bus stop.",
+            "es": "Sí, apenas encontré el camino hasta la parada.",
+            "fr": "Oui, j'ai eu du mal à trouver le chemin jusqu'à l'arrêt.",
+            "pt": "Sim, eu quase não achei o caminho até o ponto de ônibus.",
+            "kr": "맞아, 나는 버스 정류장까지 오는 길도 겨우 찾았어.",
+            "jp": "うん、バス停までの道をやっと見つけたよ。",
+            "zh": "是啊，我好不容易才找到去车站的路。",
+            "ru": "Да, я еле нашёл дорогу до остановки."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Интересно, когда он рассеется?",
+            "en": "I wonder when it will clear up.",
+            "es": "Me pregunto cuándo se disipará.",
+            "fr": "Je me demande quand il va se dissiper.",
+            "pt": "Será que ela vai sumir quando?",
+            "kr": "이 안개가 언제쯤 걷힐까?",
+            "jp": "いつ晴れるのかな？",
+            "zh": "不知道这雾什么时候会散？",
+            "ru": "Интересно, когда он рассеется?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно к обеду туман уходит.",
+            "en": "Usually the fog goes away by noon.",
+            "es": "Normalmente la niebla desaparece hacia la hora de comer.",
+            "fr": "D'habitude, le brouillard se lève vers midi.",
+            "pt": "Normalmente a névoa vai embora na hora do almoço.",
+            "kr": "보통 점심때쯤이면 안개가 걷혀.",
+            "jp": "たいてい昼ごろには霧は消えるよ。",
+            "zh": "通常到中午雾就会散了。",
+            "ru": "Обычно к обеду туман уходит."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хорошо. А то я хотела сходить в магазин.",
+            "en": "Good. Because I wanted to go to the store.",
+            "es": "Bien. Porque yo quería ir a la tienda.",
+            "fr": "Bien. Parce que je voulais aller au magasin.",
+            "pt": "Que bom. É que eu queria ir ao mercado.",
+            "kr": "잘됐다. 나는 가게에 좀 가고 싶었거든.",
+            "jp": "よかった。買い物に行きたかったんだ。",
+            "zh": "那就好。我还想去趟商店呢。",
+            "ru": "Хорошо. А то я хотела сходить в магазин."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда лучше подождать до полудня, будет спокойнее.",
+            "en": "Then you'd better wait until midday, it'll be safer.",
+            "es": "Entonces mejor esperar hasta mediodía, será más tranquilo.",
+            "fr": "Alors il vaut mieux attendre midi, ce sera plus tranquille.",
+            "pt": "Então é melhor esperar até o meio-dia, vai ser mais tranquilo.",
+            "kr": "그럼 정오까지 기다렸다가 가는 게 좋겠어, 더 안전할 거야.",
+            "jp": "それなら正午まで待ったほうがいいよ、そのほうが安全だから。",
+            "zh": "那最好等到中午再出门，会安全一些。",
+            "ru": "Тогда лучше подождать до полудня, будет спокойнее."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Какая красота сегодня! Небо чистое, ни облачка.",
+            "en": "It's so beautiful today! The sky is clear, not a single cloud.",
+            "es": "¡Qué bonito está hoy todo! El cielo está despejado, sin una nube.",
+            "fr": "Quel beau temps aujourd'hui ! Le ciel est clair, pas un nuage.",
+            "pt": "Que lindo hoje! O céu está limpo, sem nenhuma nuvem.",
+            "kr": "오늘 정말 예쁘다! 하늘이 맑고 구름 한 점 없어.",
+            "jp": "今日はすごくきれいだね！空が澄んでいて、雲一つないよ。",
+            "zh": "今天天气真美！天空很晴朗，一朵云都没有。",
+            "ru": "Какая красота сегодня! Небо чистое, ни облачка."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, идеальная погода для фотосессии.",
+            "en": "Yeah, perfect weather for a photo shoot.",
+            "es": "Sí, el tiempo perfecto para una sesión de fotos.",
+            "fr": "Oui, un temps idéal pour une séance photo.",
+            "pt": "Sim, o tempo perfeito para uma sessão de fotos.",
+            "kr": "맞아, 사진 찍기에 완벽한 날씨야.",
+            "jp": "うん、写真撮影にぴったりの天気だね。",
+            "zh": "是啊，拍照的绝佳天气。",
+            "ru": "Да, идеальная погода для фотосессии."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я как раз хотела сфотографировать закат.",
+            "en": "I was just thinking of taking pictures of the sunset.",
+            "es": "Justo quería fotografiar la puesta de sol.",
+            "fr": "Je voulais justement photographier le coucher de soleil.",
+            "pt": "Eu estava mesmo querendo fotografar o pôr do sol.",
+            "kr": "나는 마침 노을을 찍고 싶었어.",
+            "jp": "ちょうど夕日を撮りたかったんだ。",
+            "zh": "我正好想拍日落呢。",
+            "ru": "Я как раз хотела сфотографировать закат."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отличная идея. Я знаю хорошее место у реки.",
+            "en": "Great idea. I know a nice spot by the river.",
+            "es": "Buena idea. Conozco un buen sitio junto al río.",
+            "fr": "Excellente idée. Je connais un bon endroit au bord de la rivière.",
+            "pt": "Ótima ideia. Eu conheço um bom lugar perto do rio.",
+            "kr": "좋은 생각이야. 강가에 좋은 장소를 알고 있어.",
+            "jp": "いいアイデアだね。川沿いにいい場所を知ってるよ。",
+            "zh": "好主意。我知道河边有个好地方。",
+            "ru": "Отличная идея. Я знаю хорошее место у реки."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? Тогда покажешь мне его?",
+            "en": "Really? Then will you show it to me?",
+            "es": "¿De verdad? ¿Entonces me lo enseñas?",
+            "fr": "Vraiment ? Alors tu me le montreras ?",
+            "pt": "Sério? Então você vai me mostrar?",
+            "kr": "정말? 그럼 나한테 보여줄 수 있어?",
+            "jp": "本当？じゃあ、その場所を見せてくれる？",
+            "zh": "真的吗？那你能带我去吗？",
+            "ru": "Правда? Тогда покажешь мне его?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, пойдём после работы, если успеем до заката.",
+            "en": "Of course, let's go after work if we make it before sunset.",
+            "es": "Claro, vamos después del trabajo, si llegamos antes de que se ponga el sol.",
+            "fr": "Bien sûr, on y va après le travail, si on arrive avant le coucher du soleil.",
+            "pt": "Claro, a gente vai depois do trabalho, se der tempo antes do pôr do sol.",
+            "kr": "물론이지, 퇴근하고 가자. 노을 지기 전에 도착할 수 있으면.",
+            "jp": "もちろん、日没までに間に合えば、仕事の後に行こう。",
+            "zh": "当然，我们下班后去，如果赶得上日落的话。",
+            "ru": "Конечно, пойдём после работы, если успеем до заката."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты заметил, как резко похолодало?",
+            "en": "Did you notice how suddenly it got cold?",
+            "es": "¿Te has dado cuenta de lo mucho que ha refrescado?",
+            "fr": "Tu as remarqué comme il a fait froid d'un coup ?",
+            "pt": "Você notou como esfriou de repente?",
+            "kr": "날씨가 확 추워진 거 눈치챘어?",
+            "jp": "急に寒くなったのに気づいた？",
+            "zh": "你注意到天气突然变冷了吗？",
+            "ru": "Ты заметил, как резко похолодало?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, вчера было плюс пятнадцать, а сегодня плюс пять.",
+            "en": "Yeah, yesterday it was plus fifteen, and today it's plus five.",
+            "es": "Sí, ayer había quince grados, y hoy cinco.",
+            "fr": "Oui, hier il faisait plus quinze, et aujourd'hui plus cinq.",
+            "pt": "Sim, ontem estava quinze graus, e hoje está cinco.",
+            "kr": "응, 어제는 영상 십오 도였는데 오늘은 영상 오 도야.",
+            "jp": "うん、昨日は十五度だったのに、今日は五度だよ。",
+            "zh": "是啊，昨天还有十五度，今天只有五度了。",
+            "ru": "Да, вчера было плюс пятнадцать, а сегодня плюс пять."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я даже не знаю, что надеть.",
+            "en": "I don't even know what to wear.",
+            "es": "Es que ni siquiera sé qué ponerme.",
+            "fr": "Je ne sais même pas quoi mettre.",
+            "pt": "Eu nem sei o que vestir.",
+            "kr": "뭘 입어야 할지 모르겠어.",
+            "jp": "何を着たらいいか分からないよ。",
+            "zh": "我都不知道穿什么好了。",
+            "ru": "Я даже не знаю, что надеть."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Лучше куртку и шарф, чтобы не замёрзнуть.",
+            "en": "Better wear a jacket and a scarf so you don't get cold.",
+            "es": "Mejor una chaqueta y una bufanda para no pasar frío.",
+            "fr": "Il vaut mieux une veste et une écharpe pour ne pas geler.",
+            "pt": "É melhor uma jaqueta e um cachecol para não congelar.",
+            "kr": "안 추우려면 자켓이랑 목도리가 좋겠어.",
+            "jp": "寒くないように、ジャケットとマフラーがいいよ。",
+            "zh": "最好穿件外套，戴条围巾，免得着凉。",
+            "ru": "Лучше куртку и шарф, чтобы не замёрзнуть."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты прав. Наверное, осень уже пришла.",
+            "en": "You're right. I guess autumn has already arrived.",
+            "es": "Tienes razón. Seguramente ya ha llegado el otoño.",
+            "fr": "Tu as raison. L'automne est sûrement déjà arrivé.",
+            "pt": "Você tem razão. Acho que o outono já chegou.",
+            "kr": "네 말이 맞아. 아마 가을이 이미 온 것 같아.",
+            "jp": "そうだね。もう秋が来たんだろうね。",
+            "zh": "你说得对。看来秋天已经来了。",
+            "ru": "Ты прав. Наверное, осень уже пришла."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Похоже на то. Готовься к дождям и ветру.",
+            "en": "Looks like it. Get ready for rain and wind.",
+            "es": "Eso parece. Prepárate para las lluvias y el viento.",
+            "fr": "On dirait bien. Prépare-toi à la pluie et au vent.",
+            "pt": "Parece que sim. Se prepare para chuvas e vento.",
+            "kr": "그런 것 같아. 비랑 바람에 대비해 둬.",
+            "jp": "そうみたいだね。雨と風に備えないとね。",
+            "zh": "看起来是这样。准备好迎接下雨和刮风吧。",
+            "ru": "Похоже на то. Готовься к дождям и ветру."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Какая погода будет завтра? Ты не знаешь?",
+            "en": "What's the weather going to be like tomorrow? Do you know?",
+            "es": "¿Qué tiempo hará mañana? ¿No lo sabes?",
+            "fr": "Quel temps fera-t-il demain ? Tu ne sais pas ?",
+            "pt": "Como vai estar o tempo amanhã? Você não sabe?",
+            "kr": "내일 날씨가 어떨까? 너 알아?",
+            "jp": "明日の天気はどうなるか知ってる？",
+            "zh": "明天天气怎么样？你知道吗？",
+            "ru": "Какая погода будет завтра? Ты не знаешь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "По прогнозу, дождь и сильный ветер.",
+            "en": "According to the forecast, rain and strong wind.",
+            "es": "Según el pronóstico, lluvia y viento fuerte.",
+            "fr": "D'après les prévisions, de la pluie et du vent fort.",
+            "pt": "Pela previsão, chuva e vento forte.",
+            "kr": "예보에 따르면 비가 오고 바람이 강하게 불 거래.",
+            "jp": "予報によると、雨で強い風が吹くって。",
+            "zh": "预报说有雨，还有大风。",
+            "ru": "По прогнозу, дождь и сильный ветер."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Жаль. Я хотела устроить пикник с друзьями.",
+            "en": "That's a shame. I wanted to have a picnic with my friends.",
+            "es": "Qué pena. Quería organizar un picnic con mis amigos.",
+            "fr": "Dommage. Je voulais organiser un pique-nique avec des amis.",
+            "pt": "Que pena. Eu queria fazer um piquenique com os amigos.",
+            "kr": "아쉽네. 나는 친구들이랑 소풍 가려고 했는데.",
+            "jp": "残念だな。友達とピクニックをしようと思ってたのに。",
+            "zh": "真可惜。我本来想和朋友去野餐的。",
+            "ru": "Жаль. Я хотела устроить пикник с друзьями."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Может, перенесёте на выходные?",
+            "en": "Maybe you can move it to the weekend?",
+            "es": "¿Quizás lo posponéis al fin de semana?",
+            "fr": "Peut-être que vous pouvez le reporter au week-end ?",
+            "pt": "Talvez vocês possam adiar para o fim de semana?",
+            "kr": "주말로 미루는 건 어때?",
+            "jp": "週末に延期したら？",
+            "zh": "也许你们可以改到周末去？",
+            "ru": "Может, перенесёте на выходные?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, наверное, так и сделаем.",
+            "en": "Yeah, I guess we'll do that.",
+            "es": "Sí, seguramente haremos eso.",
+            "fr": "Oui, on va probablement faire comme ça.",
+            "pt": "É, acho que a gente vai fazer isso.",
+            "kr": "응, 아마 그렇게 할 것 같아.",
+            "jp": "うん、たぶんそうするよ。",
+            "zh": "嗯，大概只能这样了。",
+            "ru": "Да, наверное, так и сделаем."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Правильно. В субботу обещают солнце и тепло.",
+            "en": "Good call. They're promising sun and warm weather on Saturday.",
+            "es": "Bien. El sábado prometen sol y calor.",
+            "fr": "C'est bien. Samedi, ils annoncent du soleil et de la chaleur.",
+            "pt": "Certo. No sábado prometem sol e calor.",
+            "kr": "잘됐다. 토요일에는 맑고 따뜻할 거래.",
+            "jp": "それがいいよ。土曜日は晴れて暖かいって言ってたから。",
+            "zh": "对。预报说周六有太阳，而且暖和。",
+            "ru": "Правильно. В субботу обещают солнце и тепло."
+          }
+        }
+      ]
+    }
+  ]
+}

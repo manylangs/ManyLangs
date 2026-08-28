@@ -9,11 +9,13 @@ extract_first_json_object, FLAG 스캔, ThreadPoolExecutor 병렬 번역 구조)
 TTS/SRT 단계를 새로 추가한 버전이다.
 
 전체 흐름 (확정된 설계):
-  1) 터미널: 언어 약어(2자리) 입력 -> 60개 챕터 전체를 실제 폴더명
-     (level_slug, 예: a1_ordering_at_a_cafe) 형태로 번호 매겨 한 번에 보여줌
-     -> 번호 입력으로 선택 (레벨을 따로 묻지 않음, 이미 만들어진 폴더를 같은
-     번호로 다시 고르면 그 폴더가 그대로 덮어써짐 -- 재작업/새작업 구분 없이
-     "그 폴더 작업"으로 통일)
+  1) 터미널: prompts_dir에 준비된 target 언어(GENERATOR_*.md 파일 존재 여부로
+     자동 스캔) 목록을 번호로 보여주고 번호 선택 -> 선택된 번호에 해당하는
+     언어 약어(2자리)를 그대로 target_lang으로 사용. 이어서 60개 챕터 전체를
+     실제 폴더명(level_slug, 예: a1_ordering_at_a_cafe) 형태로 번호 매겨
+     한 번에 보여줌 -> 번호 입력으로 선택 (레벨을 따로 묻지 않음, 이미
+     만들어진 폴더를 같은 번호로 다시 고르면 그 폴더가 그대로 덮어써짐 --
+     재작업/새작업 구분 없이 "그 폴더 작업"으로 통일)
   2) target 6줄 생성 (GENERATOR_KR.md/GENERATOR_EN.md, 세트 1개로 축소 호출)
   3) 경량 자체확인 통과 -> target 6줄을 텍스트 파일로 저장하고 "녹음할까요?"
      대기 (사람이 파일을 열어 수정/저장할 수 있는 마지막 검수 지점, 확정사항)
@@ -32,13 +34,16 @@ TTS/SRT 단계를 새로 추가한 버전이다.
 있음(예: en=Chirp3 HD, kr=Neural2, 청취 테스트로 확정된 값). 이 스크립트는 어떤
 엔진을 쓰는지 하드코딩하지 않고 항상 config.py의 값을 그대로 따른다.
 
-언어 약어(target_lang) 자체는 이 스크립트가 검증하지 않는다 -- 이 파일은
-공용 파일이라 어떤 약어를 넘길지는 실행하는 사람이 판단해서 입력한다.
-target 쪽 프롬프트(생성/평가/재검수)는 딕셔너리에 등록하는 게 아니라
-prompts_dir에서 파일명 패턴으로 찾는다 (find_prompt_file 참고) -- 그래서
-새 target 언어를 추가할 때 이 스크립트를 고칠 필요가 없고, 파일명 규칙에
-맞는 프롬프트 3개(생성/평가/재검수)만 넣으면 된다. 패턴에 맞는 파일이
-없으면 "이 언어는 아직 준비 안 됐다"는 신호로 FileNotFoundError가 난다.
+언어 약어(target_lang) 자체는 여전히 고정 딕셔너리로 검증하지 않는다 -- 이 파일은
+공용 파일이라 어떤 약어를 쓸지는 prompts_dir에 실제로 준비된 프롬프트 파일이
+결정한다. 터미널에서는 매번 약어를 직접 타이핑하지 않고, prompts_dir을 스캔해서
+나온 언어 목록을 번호로 보여주고 번호만 선택하면 되도록 바뀌었을 뿐, 그 뒤로는
+전부 지금처럼 약어 문자열(target_lang) 그대로 넘어간다. target 쪽 프롬프트
+(생성/평가/재검수)는 딕셔너리에 등록하는 게 아니라 prompts_dir에서 파일명
+패턴으로 찾는다 (find_prompt_file 참고) -- 그래서 새 target 언어를 추가할 때
+이 스크립트를 고칠 필요가 없고, 파일명 규칙에 맞는 프롬프트 3개(생성/평가/재검수)
+만 넣으면 자동으로 번호 목록에도 나타난다. 패턴에 맞는 파일이 없으면 "이
+언어는 아직 준비 안 됐다"는 신호로 FileNotFoundError가 난다.
 
 번역 대상 8개 언어(ALL_LANGS: en/es/fr/pt/kr/zh/jp/ru)는 이것과 다르다 -- 모든
 교재가 공유하는 고정 스키마라서 딕셔너리(TRANSLATOR_PROMPT_FILENAME)로
@@ -131,6 +136,8 @@ ALL_LANGS = list(TRANSLATOR_PROMPT_FILENAME.keys())  # en/es/fr/pt/kr/zh/jp/ru -
 #   REVIEW_{LANG}.md      예: REVIEW_PT.md
 #
 # 새 target 언어를 추가하려면 이 3개 파일만 prompts_dir에 넣으면 끝이다.
+# 터미널의 번호 선택 목록도 GENERATOR_*.md 파일을 스캔해서 자동으로 채워지므로,
+# 이 부분 역시 스크립트를 고칠 필요가 없다 (list_available_target_langs 참고).
 # ---------------------------------------------------------------------------
 
 def find_prompt_file(prompts_dir, pattern):
@@ -193,6 +200,26 @@ def load_reviewer_prompt_text(prompts_dir, target_lang):
         prompts_dir,
         f"REVIEW_{target_lang.upper()}.md"
     )
+
+
+def list_available_target_langs(prompts_dir):
+    """
+    prompts_dir에 있는 GENERATOR_*.md 파일들을 스캔해서 현재 준비된
+    target 언어 약어 목록을 얻는다 (알파벳순). 딕셔너리를 하드코딩하지
+    않으므로, 새 target 언어는 프롬프트 파일 3개(GENERATOR/EVAL/REVIEW)만
+    추가하면 다음 실행부터 이 목록에 자동으로 나타난다.
+    """
+    pattern = re.compile(r"^GENERATOR_([A-Za-z0-9]+)\.md$")
+
+    codes = []
+    for entry in sorted(Path(prompts_dir).iterdir()):
+        if not entry.is_file():
+            continue
+        match = pattern.match(unicodedata.normalize("NFC", entry.name))
+        if match:
+            codes.append(match.group(1).lower())
+
+    return codes
 
 
 # ---------------------------------------------------------------------------
@@ -293,28 +320,44 @@ def parse_chapter_table(manual_text):
 
 # ---------------------------------------------------------------------------
 # 1) 터미널 인터랙티브 선택
-#    (레벨을 따로 묻지 않는다: 언어 약어만 물어보고, 60개 챕터 전체를 실제
-#    폴더명(level_slug) 형태로 번호 매겨 한 번에 보여준 뒤 번호만 입력받는다.
-#    번호가 이미 생성된 폴더를 가리키면 그 폴더는 그대로 덮어써진다 -- 새
-#    작업이든 재작업이든 "그 폴더 작업"으로 동일하게 처리하기로 확정.)
+#    (레벨을 따로 묻지 않는다: 언어는 prompts_dir에 준비된 목록을 번호로
+#    보여주고 번호만 입력받아 그 번호에 해당하는 약어를 그대로 target_lang으로
+#    쓴다. 이어서 60개 챕터 전체를 실제 폴더명(level_slug) 형태로 번호 매겨
+#    한 번에 보여준 뒤 번호만 입력받는다. 번호가 이미 생성된 폴더를 가리키면
+#    그 폴더는 그대로 덮어써진다 -- 새 작업이든 재작업이든 "그 폴더 작업"으로
+#    동일하게 처리하기로 확정.)
 # ---------------------------------------------------------------------------
 
-def prompt_target_lang():
+def prompt_target_lang(prompts_dir):
     """
-    언어 약어(2자리)를 입력받는다.
+    prompts_dir에 실제로 준비된 target 언어(GENERATOR_*.md 파일 존재 여부로
+    판단) 목록을 번호로 보여주고, 번호를 선택받아 그 번호에 해당하는 언어
+    약어를 그대로 반환한다.
 
-    이 스크립트는 공용 파일이라 특정 언어 목록으로 값을 검증하지 않는다.
-    입력한 약어에 대응하는 TARGET_GENERATOR_FILENAME 항목이 없으면
-    (아직 그 언어의 타겟 생성 매뉴얼이 없으면) load_prompt() 단계에서
-    FileNotFoundError로 자연스럽게 멈춘다.
+    딕셔너리를 하드코딩하지 않으므로, 새 target 언어는 프롬프트 파일
+    3개(GENERATOR/EVAL/REVIEW)만 prompts_dir에 추가하면 다음 실행부터
+    이 번호 목록에 자동으로 나타난다 -- 이 함수(또는 스크립트의 다른 부분)를
+    고칠 필요가 없다. 반환값은 이전과 동일하게 2~3자리 약어 문자열이고,
+    이후 generate_target/translate_all 등은 지금과 완전히 동일하게 이
+    문자열을 그대로 받아 동작한다.
     """
-    target_lang = input("언어 약어 (2자리): ").strip().lower()
+    codes = list_available_target_langs(prompts_dir)
 
-    if not target_lang:
-        print("[오류] 언어 약어를 입력하지 않았습니다.")
+    if not codes:
+        print(f"[오류] {prompts_dir}에서 GENERATOR_*.md 파일을 찾지 못했습니다.")
         sys.exit(1)
 
-    return target_lang
+    print("\n준비된 target 언어:")
+    for i, code in enumerate(codes, start=1):
+        print(f"  {i:>2} - {code}")
+
+    choice = input("번호 선택: ").strip()
+
+    if not choice.isdigit() or not (1 <= int(choice) <= len(codes)):
+        print(f"[오류] 잘못된 번호: {choice}")
+        sys.exit(1)
+
+    return codes[int(choice) - 1]
 
 
 def prompt_chapter_selection(chapters, target_lang):
@@ -866,8 +909,9 @@ def main():
         print("[오류] DEEPSEEK_API_KEY 환경변수가 없습니다.", file=sys.stderr)
         sys.exit(1)
 
-    # 1) 언어 약어만 묻고, 60개 챕터를 폴더명으로 번호 매겨 보여준 뒤 번호로 선택
-    target_lang = prompt_target_lang()
+    # 1) prompts_dir에 준비된 target 언어를 번호로 보여주고 선택 -> 60개 챕터를
+    #    폴더명으로 번호 매겨 보여준 뒤 번호로 선택
+    target_lang = prompt_target_lang(args.prompts_dir)
     manual_text = load_target_generator_prompt(args.prompts_dir, target_lang)
     chapters = parse_chapter_table(manual_text)
     chapter = prompt_chapter_selection(chapters, target_lang)

@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a2",
+    "id": "020"
+  },
+  "title": {
+    "target": "Просьба о помощи",
+    "en": "Asking for Help",
+    "es": "Petición de ayuda",
+    "fr": "Demande d'aide",
+    "pt": "Pedido de ajuda",
+    "kr": "도움 요청",
+    "jp": "助けを求める",
+    "zh": "请求帮助",
+    "ru": "Просьба о помощи"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, привет! Ты не мог бы мне помочь? Я не могу открыть это окно.",
+            "en": "Ivan, hi! Could you help me? I can't open this window.",
+            "es": "Iván, ¡hola! ¿Podrías ayudarme? No puedo abrir esta ventana.",
+            "fr": "Ivan, salut ! Tu pourrais m'aider ? Je n'arrive pas à ouvrir cette fenêtre.",
+            "pt": "Ivan, olá! Você poderia me ajudar? Não consigo abrir esta janela.",
+            "kr": "이반, 안녕! 나 좀 도와줄 수 있어? 이 창문을 열 수가 없어.",
+            "jp": "イワン、こんにちは！手伝ってもらえない？この窓が開けられないんだ。",
+            "zh": "伊万，你好！你能帮我一下吗？我打不开这扇窗户。",
+            "ru": "Иван, привет! Ты не мог бы мне помочь? Я не могу открыть это окно."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, Анна. Сейчас попробую. Оно просто заело.",
+            "en": "Of course, Anna. Let me try. It's just stuck.",
+            "es": "Claro, Ana. Ahora mismo lo intento. Solo está atascada.",
+            "fr": "Bien sûr, Anna. Je vais essayer tout de suite. Elle est juste coincée.",
+            "pt": "Claro, Anna. Vou tentar agora. Ela só está travada.",
+            "kr": "물론이지, 안나. 지금 한번 해볼게. 그냥 끼어버렸네.",
+            "jp": "もちろん、アンナ。今やってみるよ。ただ引っかかってるだけだね。",
+            "zh": "当然可以，安娜。我现在试试。它就是卡住了。",
+            "ru": "Конечно, Анна. Сейчас попробую. Оно просто заело."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спасибо большое! Я уже полчаса с ним мучаюсь.",
+            "en": "Thank you so much! I've been struggling with it for half an hour.",
+            "es": "¡Muchas gracias! Llevo media hora peleándome con ella.",
+            "fr": "Merci beaucoup ! Ça fait une demi-heure que je me bats avec.",
+            "pt": "Muito obrigada! Já estou lutando com ela há meia hora.",
+            "kr": "정말 고마워! 벌써 삼십 분째 이거랑 씨름 중이야.",
+            "jp": "本当にありがとう！もう三十分もこれと格闘してるんだ。",
+            "zh": "太感谢了！我已经跟它较劲半个小时了。",
+            "ru": "Спасибо большое! Я уже полчаса с ним мучаюсь."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вот, готово. Теперь всё в порядке.",
+            "en": "There, done. Everything's fine now.",
+            "es": "Ahí está, listo. Ahora todo está en orden.",
+            "fr": "Voilà, c'est fait. Maintenant tout va bien.",
+            "pt": "Pronto, está feito. Agora está tudo bem.",
+            "kr": "자, 다 됐어. 이제 괜찮아.",
+            "jp": "ほら、できたよ。もう大丈夫だ。",
+            "zh": "好了，弄好了。现在没问题了。",
+            "ru": "Вот, готово. Теперь всё в порядке."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ой, отлично! Ты меня очень выручил.",
+            "en": "Oh, great! You really saved me.",
+            "es": "¡Oh, genial! Me has salvado.",
+            "fr": "Oh, super ! Tu m'as vraiment sauvée.",
+            "pt": "Ah, ótimo! Você me salvou.",
+            "kr": "오, 잘됐다! 정말 큰 도움이 됐어.",
+            "jp": "わあ、素晴らしい！本当に助かったよ。",
+            "zh": "哎呀，太好了！你可真是帮了我大忙。",
+            "ru": "Ой, отлично! Ты меня очень выручил."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не за что. Обращайся, если что-то ещё нужно.",
+            "en": "Don't mention it. Let me know if you need anything else.",
+            "es": "De nada. Avísame si necesitas algo más.",
+            "fr": "De rien. N'hésite pas si tu as besoin d'autre chose.",
+            "pt": "De nada. É só falar se precisar de mais alguma coisa.",
+            "kr": "천만에. 또 필요한 거 있으면 말해.",
+            "jp": "どういたしまして。他にも何か必要だったら言ってね。",
+            "zh": "不客气。还有什么需要的话，尽管说。",
+            "ru": "Не за что. Обращайся, если что-то ещё нужно."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, извини, что отвлекаю. У тебя есть минутка?",
+            "en": "Dmitry, sorry to bother you. Do you have a minute?",
+            "es": "Dmitri, perdona que te moleste. ¿Tienes un minuto?",
+            "fr": "Dmitri, excuse-moi de te déranger. Tu as une minute ?",
+            "pt": "Dmitri, desculpa te incomodar. Você tem um minutinho?",
+            "kr": "드미트리, 방해해서 미안한데. 잠깐 시간 괜찮아?",
+            "jp": "ドミトリー、邪魔してごめん。ちょっと時間ある？",
+            "zh": "德米特里，不好意思打扰你。你有空吗？",
+            "ru": "Дмитрий, извини, что отвлекаю. У тебя есть минутка?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, конечно. Что случилось?",
+            "en": "Yes, of course. What happened?",
+            "es": "Sí, claro. ¿Qué ha pasado?",
+            "fr": "Oui, bien sûr. Qu'est-ce qui se passe ?",
+            "pt": "Sim, claro. O que aconteceu?",
+            "kr": "응, 당연하지. 무슨 일인데?",
+            "jp": "うん、もちろん。どうしたの？",
+            "zh": "有，当然有。怎么了？",
+            "ru": "Да, конечно. Что случилось?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я не могу разобраться с этим принтером. Он всё время жуёт бумагу.",
+            "en": "I can't figure out this printer. It keeps jamming the paper.",
+            "es": "No puedo arreglármelas con esta impresora. No para de atascar el papel.",
+            "fr": "Je n'arrive pas à comprendre cette imprimante. Elle n'arrête pas de mâcher le papier.",
+            "pt": "Não consigo lidar com esta impressora. Ela fica enganchando o papel.",
+            "kr": "이 프린터를 어떻게 해야 할지 모르겠어. 자꾸 종이를 씹어.",
+            "jp": "このプリンターがうまく使えなくて。紙をいつも詰まらせちゃうんだ。",
+            "zh": "我搞不定这台打印机。它老卡纸。",
+            "ru": "Я не могу разобраться с этим принтером. Он всё время жуёт бумагу."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Давай посмотрю. А ты бумагу правильно положила?",
+            "en": "Let me take a look. Did you load the paper correctly?",
+            "es": "Déjame ver. ¿Pusiste el papel correctamente?",
+            "fr": "Laisse-moi regarder. Tu as mis le papier correctement ?",
+            "pt": "Deixa eu ver. E você colocou o papel direito?",
+            "kr": "내가 한번 볼게. 종이는 제대로 넣었어?",
+            "jp": "見せてみて。紙はちゃんと入れた？",
+            "zh": "让我看看。你纸放对了吗？",
+            "ru": "Давай посмотрю. А ты бумагу правильно положила?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я думала, что да. Но, может быть, я что-то перепутала.",
+            "en": "I thought I did. But maybe I mixed something up.",
+            "es": "Eso creía. Pero quizás lo metí mal.",
+            "fr": "Je pensais que oui. Mais peut-être que j'ai fait une erreur quelque part.",
+            "pt": "Eu achei que sim. Mas talvez eu tenha feito alguma coisa errada.",
+            "kr": "제대로 넣었다고 생각했는데. 아마 뭔가 잘못했나 봐.",
+            "jp": "入れたつもりなんだけど。でも、もしかしたら何か間違えたかもしれない。",
+            "zh": "我以为放对了。但可能我搞错了什么。",
+            "ru": "Я думала, что да. Но, может быть, я что-то перепутала."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Всё нормально. Я сейчас всё исправлю, это недолго.",
+            "en": "It's okay. I'll fix it right now, it won't take long.",
+            "es": "No pasa nada. Ahora mismo lo arreglo todo, no tarda nada.",
+            "fr": "Pas de souci. Je vais tout réparer, ça ne prendra pas longtemps.",
+            "pt": "Tudo bem. Eu vou consertar tudo agora, não demora.",
+            "kr": "괜찮아. 내가 지금 다 고칠게, 오래 안 걸려.",
+            "jp": "大丈夫だよ。今すぐ直すから、すぐ終わるよ。",
+            "zh": "没关系。我现在就给你弄好，很快的。",
+            "ru": "Всё нормально. Я сейчас всё исправлю, это недолго."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты не поможешь мне донести сумки? Они очень тяжёлые.",
+            "en": "Sergey, could you help me carry the bags? They're really heavy.",
+            "es": "Serguéi, ¿me ayudas a llevar las bolsas? Son muy pesadas.",
+            "fr": "Sergueï, tu peux m'aider à porter les sacs ? Ils sont très lourds.",
+            "pt": "Sergei, você pode me ajudar a carregar as sacolas? Elas estão muito pesadas.",
+            "kr": "세르게이, 가방 좀 들어주는 거 도와줄 수 있어? 엄청 무거워.",
+            "jp": "セルゲイ、荷物を運ぶの手伝ってくれない？すごく重いんだ。",
+            "zh": "谢尔盖，你能帮我拎一下袋子吗？它们特别重。",
+            "ru": "Сергей, ты не поможешь мне донести сумки? Они очень тяжёлые."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Без проблем, Анна. Давай сюда одну.",
+            "en": "No problem, Anna. Give me one.",
+            "es": "Sin problema, Ana. Dame una.",
+            "fr": "Pas de problème, Anna. Donne-m'en un.",
+            "pt": "Sem problema, Anna. Me dá uma delas aqui.",
+            "kr": "문제없지, 안나. 여기 하나 줘.",
+            "jp": "いいよ、アンナ。一つこっちに貸して。",
+            "zh": "没问题，安娜。给我一个。",
+            "ru": "Без проблем, Анна. Давай сюда одну."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ой, спасибо! Я не ожидала, что будет так тяжело.",
+            "en": "Oh, thanks! I didn't expect it to be this heavy.",
+            "es": "¡Oh, gracias! No esperaba que fuera tan pesado.",
+            "fr": "Oh, merci ! Je ne m'attendais pas à ce que ce soit si lourd.",
+            "pt": "Ah, obrigada! Eu não esperava que fosse tão pesado.",
+            "kr": "오, 고마워! 이렇게 무거울 줄 몰랐어.",
+            "jp": "ああ、ありがとう！こんなに重いとは思わなかったよ。",
+            "zh": "哎呀，谢谢！我没想到会这么重。",
+            "ru": "Ой, спасибо! Я не ожидала, что будет так тяжело."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ничего удивительного. Что ты туда положила? Кирпичи?",
+            "en": "No surprise there. What did you put in there? Bricks?",
+            "es": "No es de extrañar. ¿Qué has metido ahí? ¿Ladrillos?",
+            "fr": "Rien d'étonnant. Qu'est-ce que tu as mis dedans ? Des briques ?",
+            "pt": "Não é surpresa. O que você colocou aí? Tijolos?",
+            "kr": "놀랄 일도 아니지. 뭘 넣은 거야? 벽돌이야?",
+            "jp": "不思議じゃないよ。何を入れたの？レンガ？",
+            "zh": "没什么好奇怪的。你往里面放了什么？砖头吗？",
+            "ru": "Ничего удивительного. Что ты туда положила? Кирпичи?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Почти. Книги для библиотеки.",
+            "en": "Almost. Books for the library.",
+            "es": "Casi. Libros para la biblioteca.",
+            "fr": "Presque. Des livres pour la bibliothèque.",
+            "pt": "Quase. Livros para a biblioteca.",
+            "kr": "거의 맞아. 도서관에 가져갈 책들이야.",
+            "jp": "そんなところだよ。図書館の本だよ。",
+            "zh": "差不多吧。是给图书馆的书。",
+            "ru": "Почти. Книги для библиотеки."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ну, пошли. Тут идти недалеко.",
+            "en": "Well, let's go. It's not far from here.",
+            "es": "Bueno, vamos. No queda lejos.",
+            "fr": "Bon, allons-y. Ce n'est pas loin d'ici.",
+            "pt": "Bom, vamos. Não é longe daqui.",
+            "kr": "그럼 가자. 여기서 멀지 않아.",
+            "jp": "じゃあ、行こう。そんなに遠くないから。",
+            "zh": "那走吧。路不远。",
+            "ru": "Ну, пошли. Тут идти недалеко."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, привет! Ты не мог бы одолжить мне ноутбук на вечер?",
+            "en": "Alexey, hi! Could you lend me your laptop for the evening?",
+            "es": "Alekséi, ¡hola! ¿Podrías prestarme tu portátil para esta noche?",
+            "fr": "Alexeï, salut ! Tu pourrais me prêter ton ordinateur portable pour la soirée ?",
+            "pt": "Alexei, olá! Você poderia me emprestar o notebook esta noite?",
+            "kr": "알렉세이, 안녕! 오늘 밤에 노트북 좀 빌려줄 수 있을까?",
+            "jp": "アレクセイ、こんにちは！今夜ノートパソコンを貸してもらえない？",
+            "zh": "阿列克谢，你好！你今晚能把笔记本电脑借我用一下吗？",
+            "ru": "Алексей, привет! Ты не мог бы одолжить мне ноутбук на вечер?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Привет, Мария. А что с твоим?",
+            "en": "Hi, Maria. What's wrong with yours?",
+            "es": "Hola, María. ¿Qué le pasa al tuyo?",
+            "fr": "Salut, Maria. Qu'est-ce qui se passe avec le tien ?",
+            "pt": "Oi, Maria. E o seu, o que tem?",
+            "kr": "안녕, 마리아. 네 건 왜 그래?",
+            "jp": "やあ、マリア。君のはどうしたの？",
+            "zh": "你好，玛丽亚。你的电脑怎么了？",
+            "ru": "Привет, Мария. А что с твоим?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Он не включается. А мне нужно срочно отправить одно письмо.",
+            "en": "It won't turn on. And I need to send an email urgently.",
+            "es": "No enciende. Y necesito enviar un correo urgentemente.",
+            "fr": "Il ne s'allume pas. Et je dois envoyer un e-mail en urgence.",
+            "pt": "Ele não liga. E eu preciso enviar um e-mail com urgência.",
+            "kr": "켜지지가 않아. 그리고 급하게 이메일 하나를 보내야 해.",
+            "jp": "電源が入らなくて。それで急いでメールを一通送らないといけないんだ。",
+            "zh": "它开不了机。而我需要紧急发一封邮件。",
+            "ru": "Он не включается. А мне нужно срочно отправить одно письмо."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понимаю. Конечно, бери. Только аккумулятор слабый, лучше подключить зарядку.",
+            "en": "I see. Of course, take it. Just the battery is weak, so you'd better plug in the charger.",
+            "es": "Entiendo. Claro, tómalo. Solo que la batería está floja, mejor conéctalos al cargador.",
+            "fr": "Je comprends. Bien sûr, prends-le. Seulement la batterie est faible, il vaut mieux brancher le chargeur.",
+            "pt": "Entendo. Claro, pode pegar. Só que a bateria está fraca, é melhor conectar o carregador.",
+            "kr": "알겠어. 당연히 가져가. 다만 배터리가 약하니까 충전기를 연결해 두는 게 좋아.",
+            "jp": "わかったよ。もちろん、貸すよ。ただバッテリーが弱いから、充電器を繋いだほうがいいよ。",
+            "zh": "明白了。当然，你拿去吧。就是电池不太行了，最好插上充电器。",
+            "ru": "Понимаю. Конечно, бери. Только аккумулятор слабый, лучше подключить зарядку."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хорошо, я учту. Спасибо тебе огромное!",
+            "en": "Okay, I'll keep that in mind. Thank you so much!",
+            "es": "Vale, lo tendré en cuenta. ¡Muchísimas gracias!",
+            "fr": "D'accord, je m'en souviendrai. Merci énormément !",
+            "pt": "Ok, vou levar em conta. Muito obrigada!",
+            "kr": "좋아, 그렇게 할게. 정말 정말 고마워!",
+            "jp": "うん、そうするよ。本当にありがとう！",
+            "zh": "好的，我会注意的。太感谢你了！",
+            "ru": "Хорошо, я учту. Спасибо тебе огромное!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да не за что. Надеюсь, твой скоро починят.",
+            "en": "Don't mention it. I hope yours gets fixed soon.",
+            "es": "De nada. Espero que el tuyo se arregle pronto.",
+            "fr": "Mais de rien. J'espère que le tien sera bientôt réparé.",
+            "pt": "De nada. Espero que o seu seja consertado logo.",
+            "kr": "별거 아니야. 네 거 곧 고쳐지길 바라.",
+            "jp": "いいえ、どういたしまして。君のパソコンが早く直るといいね。",
+            "zh": "真不用谢。希望你的电脑很快能修好。",
+            "ru": "Да не за что. Надеюсь, твой скоро починят."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты не подскажешь, как доехать до центрального рынка?",
+            "en": "Ivan, could you tell me how to get to the central market?",
+            "es": "Iván, ¿me puedes indicar cómo llegar al mercado central?",
+            "fr": "Ivan, tu peux m'indiquer comment aller au marché central ?",
+            "pt": "Ivan, você sabe me dizer como chegar ao mercado central?",
+            "kr": "이반, 중앙 시장까지 어떻게 가는지 알려줄 수 있어?",
+            "jp": "イワン、中央市場までどうやって行くか教えてくれない？",
+            "zh": "伊万，你知道怎么去中央市场吗？",
+            "ru": "Иван, ты не подскажешь, как доехать до центрального рынка?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, Ольга. Тебе нужно сесть на автобус номер пять.",
+            "en": "Sure, Olga. You need to take bus number five.",
+            "es": "Claro, Olga. Tienes que coger el autobús número cinco.",
+            "fr": "Bien sûr, Olga. Tu dois prendre le bus numéro cinq.",
+            "pt": "Claro, Olga. Você precisa pegar o ônibus número cinco.",
+            "kr": "물론이지, 올가. 오번 버스를 타면 돼.",
+            "jp": "もちろん、オリガ。五番のバスに乗らないといけないよ。",
+            "zh": "当然知道，奥尔加。你需要坐五路公交车。",
+            "ru": "Конечно, Ольга. Тебе нужно сесть на автобус номер пять."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А на какой остановке выходить?",
+            "en": "And which stop should I get off at?",
+            "es": "¿Y en qué parada me bajo?",
+            "fr": "Et à quel arrêt dois-je descendre ?",
+            "pt": "E em qual ponto eu desço?",
+            "kr": "그럼 어느 정류장에서 내려야 해?",
+            "jp": "どの停留所で降りるの？",
+            "zh": "那在哪一站下车呢？",
+            "ru": "А на какой остановке выходить?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "На третьей. Там будет большой торговый центр, а рынок сразу за ним.",
+            "en": "The third one. There'll be a big shopping center, and the market is right behind it.",
+            "es": "En la tercera. Allí verás un gran centro comercial, y el mercado está justo detrás.",
+            "fr": "Au troisième. Il y aura un grand centre commercial, et le marché est juste derrière.",
+            "pt": "No terceiro. Vai ter um shopping grande, e o mercado é logo atrás dele.",
+            "kr": "세 번째 정류장이야. 거기에 큰 쇼핑센터가 있고, 시장은 바로 그 뒤에 있어.",
+            "jp": "三つ目だよ。そこに大きなショッピングセンターがあって、市場はそのすぐ後ろにあるよ。",
+            "zh": "第三站。那里会有一个大的购物中心，市场就在它后面。",
+            "ru": "На третьей. Там будет большой торговый центр, а рынок сразу за ним."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно. А долго ехать?",
+            "en": "Got it. And is it a long ride?",
+            "es": "Entendido. ¿Y se tarda mucho?",
+            "fr": "Compris. Et c'est long à faire ?",
+            "pt": "Entendi. E demora muito?",
+            "kr": "알겠어. 그럼 가는 데 얼마나 걸려?",
+            "jp": "なるほど。どのくらいかかるの？",
+            "zh": "明白了。那要坐很久吗？",
+            "ru": "Понятно. А долго ехать?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Минут двадцать, если без пробок.",
+            "en": "About twenty minutes, if there's no traffic.",
+            "es": "Unos veinte minutos, si no hay atascos.",
+            "fr": "Environ vingt minutes, s'il n'y a pas d'embouteillages.",
+            "pt": "Uns vinte minutos, se não tiver trânsito.",
+            "kr": "막히지 않으면 이십 분쯤 걸려.",
+            "jp": "渋滞がなければ、二十分くらいだよ。",
+            "zh": "大概二十分钟，如果不堵车的话。",
+            "ru": "Минут двадцать, если без пробок."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, у меня к тебе большая просьба.",
+            "en": "Dmitry, I have a big favor to ask you.",
+            "es": "Dmitri, tengo una gran petición que hacerte.",
+            "fr": "Dmitri, j'ai une grande faveur à te demander.",
+            "pt": "Dmitri, tenho um grande pedido para você.",
+            "kr": "드미트리, 부탁이 하나 있어.",
+            "jp": "ドミトリー、お願いしたいことがあるんだけど。",
+            "zh": "德米特里，我有件事想请你帮忙。",
+            "ru": "Дмитрий, у меня к тебе большая просьба."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Слушаю тебя внимательно, Елена.",
+            "en": "I'm listening, Elena.",
+            "es": "Te escucho con atención, Elena.",
+            "fr": "Je t'écoute attentivement, Hélène.",
+            "pt": "Estou te ouvindo com atenção, Elena.",
+            "kr": "잘 듣고 있어, 옐레나.",
+            "jp": "ちゃんと聞いてるよ、エレナ。",
+            "zh": "我认真听着呢，叶莲娜。",
+            "ru": "Слушаю тебя внимательно, Елена."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты не мог бы забрать мою посылку с почты? Я буду на работе допоздна.",
+            "en": "Could you pick up my package from the post office? I'll be at work late.",
+            "es": "¿Podrías recoger mi paquete en correos? Estaré trabajando hasta tarde.",
+            "fr": "Tu pourrais récupérer mon colis à la poste ? Je serai au travail tard.",
+            "pt": "Você poderia retirar minha encomenda no correio? Vou ficar no trabalho até tarde.",
+            "kr": "우체국에서 내 소포 좀 찾아줄 수 있을까? 나는 늦게까지 일해야 해.",
+            "jp": "郵便局から私の小包を受け取ってくれない？仕事が遅くまでだから。",
+            "zh": "你能帮我去邮局取一下包裹吗？我要在单位待到很晚。",
+            "ru": "Ты не мог бы забрать мою посылку с почты? Я буду на работе допоздна."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, без вопросов. А что нужно сказать?",
+            "en": "Sure, no problem. What do I need to say?",
+            "es": "Vale, sin problema. ¿Qué tengo que decir?",
+            "fr": "D'accord, pas de problème. Et qu'est-ce que je dois dire ?",
+            "pt": "Ok, sem problemas. E o que eu preciso dizer?",
+            "kr": "좋아, 문제없지. 뭐라고 말하면 돼?",
+            "jp": "いいよ、問題ないよ。何て言えばいいの？",
+            "zh": "好的，没问题。需要说什么呢？",
+            "ru": "Хорошо, без вопросов. А что нужно сказать?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Просто назови мою фамилию и покажи паспорт.",
+            "en": "Just give them my last name and show your passport.",
+            "es": "Solo di mi apellido y muestra el pasaporte.",
+            "fr": "Il suffit de donner mon nom de famille et de montrer ton passeport.",
+            "pt": "É só falar meu sobrenome e mostrar o documento.",
+            "kr": "그냥 내 성을 말하고 여권을 보여주면 돼.",
+            "jp": "私の名字を言って、パスポートを見せればいいよ。",
+            "zh": "就报我的姓，然后出示护照就行。",
+            "ru": "Просто назови мою фамилию и покажи паспорт."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично. Я заеду туда после работы и всё сделаю.",
+            "en": "Great. I'll stop by there after work and take care of it.",
+            "es": "Perfecto. Pasaré por allí después del trabajo y lo haré todo.",
+            "fr": "Parfait. J'y passerai après le travail et je ferai tout.",
+            "pt": "Ótimo. Vou passar lá depois do trabalho e resolver tudo.",
+            "kr": "알겠어. 퇴근 후에 들러서 다 처리할게.",
+            "jp": "オーケー。仕事帰りに寄って、全部やっておくよ。",
+            "zh": "好的。我下班后顺路去一趟，把事办了。",
+            "ru": "Отлично. Я заеду туда после работы и всё сделаю."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, помоги мне, пожалуйста, передвинуть шкаф.",
+            "en": "Sergey, help me move the wardrobe, please.",
+            "es": "Serguéi, ayúdame, por favor, a mover el armario.",
+            "fr": "Sergueï, aide-moi, s'il te plaît, à déplacer l'armoire.",
+            "pt": "Sergei, me ajuda, por favor, a mover o armário.",
+            "kr": "세르게이, 옷장 좀 옮기는 거 도와줘, 제발.",
+            "jp": "セルゲイ、クローゼットを動かすのを手伝ってくれない？",
+            "zh": "谢尔盖，请帮我挪一下柜子。",
+            "ru": "Сергей, помоги мне, пожалуйста, передвинуть шкаф."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Давай попробуем, Анна. Он, наверное, тяжёлый.",
+            "en": "Let's try, Anna. It's probably heavy.",
+            "es": "Vamos a intentarlo, Ana. Seguro que es pesado.",
+            "fr": "Essayons, Anna. Elle est probablement lourde.",
+            "pt": "Vamos tentar, Anna. Ele deve ser pesado.",
+            "kr": "한번 해보자, 안나. 아마 무거울 거야.",
+            "jp": "やってみよう、アンナ。重そうだね。",
+            "zh": "咱们试试吧，安娜。它应该挺重的。",
+            "ru": "Давай попробуем, Анна. Он, наверное, тяжёлый."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, я одна не справлюсь. А нужно убрать его в угол.",
+            "en": "Yeah, I can't do it alone. And I need to move it into the corner.",
+            "es": "Sí, yo sola no puedo. Y hay que ponerlo en el rincón.",
+            "fr": "Oui, je n'y arriverai pas toute seule. Il faut la mettre dans le coin.",
+            "pt": "Sim, sozinha eu não dou conta. E preciso colocá-lo no canto.",
+            "kr": "응, 나 혼자서는 못 하겠어. 구석으로 옮겨야 하는데.",
+            "jp": "うん、一人じゃ無理だよ。それで隅に移動させないといけないんだ。",
+            "zh": "是啊，我一个人弄不了。需要把它挪到墙角去。",
+            "ru": "Да, я одна не справлюсь. А нужно убрать его в угол."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Так, давай. Ты берись за тот край, а я за этот.",
+            "en": "Okay, let's do it. You grab that end, and I'll grab this one.",
+            "es": "Vale, vamos. Tú agárralo por ese lado y yo por este.",
+            "fr": "Allez, vas-y. Prends ce côté-là, et moi je prends celui-ci.",
+            "pt": "Então, vamos. Você pega naquela ponta, e eu nesta.",
+            "kr": "자, 가자. 너는 그쪽 끝을 잡고, 나는 이쪽을 잡을게.",
+            "jp": "よし、やろう。君はそっちの端を持って、僕はこっちを持つよ。",
+            "zh": "好，来吧。你抬那边，我抬这边。",
+            "ru": "Так, давай. Ты берись за тот край, а я за этот."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Осторожно, не поцарапай пол.",
+            "en": "Careful, don't scratch the floor.",
+            "es": "Cuidado, no rayes el suelo.",
+            "fr": "Attention, ne raye pas le sol.",
+            "pt": "Cuidado para não arranhar o chão.",
+            "kr": "조심해, 바닥에 흠집 내지 마.",
+            "jp": "気をつけて、床に傷をつけないでね。",
+            "zh": "小心点，别刮坏地板。",
+            "ru": "Осторожно, не поцарапай пол."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Всё, готово. Отлично сработали!",
+            "en": "There, done. Great job!",
+            "es": "Listo. ¡Buen trabajo!",
+            "fr": "Voilà, c'est fait. On a bien travaillé !",
+            "pt": "Pronto, está feito. Trabalhamos muito bem!",
+            "kr": "다 됐어. 잘 해냈네!",
+            "jp": "よし、できた。いい連携だったね！",
+            "zh": "好了，搞定！配合得真不错！",
+            "ru": "Всё, готово. Отлично сработали!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, ты не мог бы проверить моё сочинение? Я боюсь, что там много ошибок.",
+            "en": "Alexey, could you check my essay? I'm afraid there are a lot of mistakes.",
+            "es": "Alekséi, ¿podrías revisar mi redacción? Me da miedo que tenga muchos errores.",
+            "fr": "Alexeï, tu pourrais vérifier ma rédaction ? J'ai peur qu'il y ait beaucoup d'erreurs.",
+            "pt": "Alexei, você poderia revisar minha redação? Tenho medo de que tenha muitos erros.",
+            "kr": "알렉세이, 내 작문 좀 봐줄 수 있을까? 오류가 많을까 봐 걱정돼.",
+            "jp": "アレクセイ、私の作文をチェックしてくれない？たくさん間違いがあるんじゃないか心配で。",
+            "zh": "阿列克谢，你能帮我看看我的作文吗？我怕里面有很多错误。",
+            "ru": "Алексей, ты не мог бы проверить моё сочинение? Я боюсь, что там много ошибок."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, Мария. Давай сюда. Я быстро посмотрю.",
+            "en": "Of course, Maria. Give it here. I'll take a quick look.",
+            "es": "Claro, María. Dámela. Le echo un vistazo rápido.",
+            "fr": "Bien sûr, Maria. Donne-la-moi. Je vais y jeter un œil rapidement.",
+            "pt": "Claro, Maria. Me dá aqui. Vou dar uma olhada rápida.",
+            "kr": "물론이지, 마리아. 여기 줘. 금방 볼게.",
+            "jp": "もちろん、マリア。見せて。すぐ見るよ。",
+            "zh": "当然可以，玛丽亚。给我吧。我很快看一下。",
+            "ru": "Конечно, Мария. Давай сюда. Я быстро посмотрю."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спасибо. Мне очень важно сдать его хорошо.",
+            "en": "Thanks. It's really important for me to do well on it.",
+            "es": "Gracias. Para mí es muy importante entregarla bien.",
+            "fr": "Merci. C'est très important pour moi de bien la rendre.",
+            "pt": "Obrigada. É muito importante para mim entregá-la bem.",
+            "kr": "고마워. 좋은 성적으로 제출하는 게 정말 중요해.",
+            "jp": "ありがとう。いい成績で提出することがすごく大事なんだ。",
+            "zh": "谢谢。把这篇作文写好对我来说很重要。",
+            "ru": "Спасибо. Мне очень важно сдать его хорошо."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не переживай. Тут всё довольно неплохо, но пара мест требует исправления.",
+            "en": "Don't worry. It's all pretty good, but a couple of spots need fixing.",
+            "es": "No te preocupes. Está bastante bien, pero un par de sitios necesitan corrección.",
+            "fr": "Ne t'inquiète pas. C'est plutôt pas mal dans l'ensemble, mais quelques endroits nécessitent des corrections.",
+            "pt": "Não se preocupe. Está tudo bem razoável aqui, mas alguns lugares precisam de correção.",
+            "kr": "걱정 마. 여기 다 꽤 괜찮은데, 두어 군데 고칠 곳이 있어.",
+            "jp": "心配しないで。ここはかなりいい出来だけど、二、三箇所直すところがあるよ。",
+            "zh": "别担心。整体写得挺不错的，但有一两处需要修改。",
+            "ru": "Не переживай. Тут всё довольно неплохо, но пара мест требует исправления."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? А что именно?",
+            "en": "Really? What exactly?",
+            "es": "¿De verdad? ¿Qué exactamente?",
+            "fr": "Vraiment ? Et quoi exactement ?",
+            "pt": "Sério? E o quê exatamente?",
+            "kr": "정말? 어디인데?",
+            "jp": "本当？どこ？",
+            "zh": "真的吗？哪里呢？",
+            "ru": "Правда? А что именно?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вот здесь лучше заменить слово и исправить окончание.",
+            "en": "Right here, it's better to replace this word and fix the ending.",
+            "es": "Aquí es mejor cambiar la palabra y corregir la terminación.",
+            "fr": "Ici, il vaut mieux remplacer le mot et corriger la terminaison.",
+            "pt": "Aqui é melhor trocar a palavra e corrigir a terminação.",
+            "kr": "여기 이 단어를 바꾸고 어미를 고치는 게 좋겠어.",
+            "jp": "ここは言葉を変えたほうがいいし、語尾も直したほうがいいよ。",
+            "zh": "这里最好换个词，还有把词尾改一下。",
+            "ru": "Вот здесь лучше заменить слово и исправить окончание."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты не знаешь, где можно быстро отремонтировать обувь?",
+            "en": "Ivan, do you know where I can get my shoes repaired quickly?",
+            "es": "Iván, ¿sabes dónde puedo arreglar los zapatos rápidamente?",
+            "fr": "Ivan, tu sais où on peut faire réparer des chaussures rapidement ?",
+            "pt": "Ivan, você sabe onde posso consertar sapatos rapidamente?",
+            "kr": "이반, 신발 빨리 수선할 수 있는 곳 어디 있는지 알아?",
+            "jp": "イワン、靴を早く修理できるところを知らない？",
+            "zh": "伊万，你知道哪里能快点修鞋吗？",
+            "ru": "Иван, ты не знаешь, где можно быстро отремонтировать обувь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Знаю, Ольга. На углу есть маленькая мастерская.",
+            "en": "I do, Olga. There's a small workshop on the corner.",
+            "es": "Lo sé, Olga. En la esquina hay un pequeño taller.",
+            "fr": "Oui, Olga. Il y a un petit atelier au coin de la rue.",
+            "pt": "Sei, Olga. Tem uma oficininha na esquina.",
+            "kr": "알아, 올가. 모퉁이에 작은 수선집이 있어.",
+            "jp": "知ってるよ、オリガ。角に小さな修理屋さんがあるよ。",
+            "zh": "知道，奥尔加。街角有个小修鞋铺。",
+            "ru": "Знаю, Ольга. На углу есть маленькая мастерская."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А она сегодня работает?",
+            "en": "Are they open today?",
+            "es": "¿Y hoy está abierto?",
+            "fr": "Et il est ouvert aujourd'hui ?",
+            "pt": "E ela funciona hoje?",
+            "kr": "그럼 오늘 영업해?",
+            "jp": "今日はやってるかな？",
+            "zh": "那它今天开门吗？",
+            "ru": "А она сегодня работает?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Думаю, да. Они обычно работают до восьми вечера.",
+            "en": "I think so. They usually work until eight in the evening.",
+            "es": "Creo que sí. Suelen trabajar hasta las ocho de la tarde.",
+            "fr": "Je pense que oui. Ils travaillent généralement jusqu'à huit heures du soir.",
+            "pt": "Acho que sim. Eles costumam funcionar até as oito da noite.",
+            "kr": "아마도. 보통 저녁 여덟 시까지 해.",
+            "jp": "やってると思うよ。いつも夜の八時までやってるから。",
+            "zh": "我觉得开。他们一般营业到晚上八点。",
+            "ru": "Думаю, да. Они обычно работают до восьми вечера."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично! А то у меня каблук совсем сломался.",
+            "en": "Great! My heel completely broke.",
+            "es": "¡Genial! Es que se me ha roto el tacón por completo.",
+            "fr": "Parfait ! Parce que mon talon est complètement cassé.",
+            "pt": "Ótimo! É que o meu salto quebrou de vez.",
+            "kr": "좋아! 굽이 완전히 부러져서 말이야.",
+            "jp": "よかった！かかとが完全に壊れちゃったんだ。",
+            "zh": "太好了！我的鞋跟彻底坏了。",
+            "ru": "Отлично! А то у меня каблук совсем сломался."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда лучше сходи туда сейчас, пока не закрылись.",
+            "en": "Then you'd better go there now, before they close.",
+            "es": "Entonces será mejor que vayas ahora, antes de que cierren.",
+            "fr": "Alors tu ferais mieux d'y aller maintenant, avant qu'ils ne ferment.",
+            "pt": "Então é melhor você ir agora, antes que fechem.",
+            "kr": "그럼 닫기 전에 지금 얼른 가 보는 게 좋겠어.",
+            "jp": "それなら、閉まる前に今すぐ行ったほうがいいよ。",
+            "zh": "那你最好趁他们还没关门，现在就去。",
+            "ru": "Тогда лучше сходи туда сейчас, пока не закрылись."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты не поможешь мне настроить новый телефон?",
+            "en": "Dmitry, could you help me set up my new phone?",
+            "es": "Dmitri, ¿me ayudas a configurar el teléfono nuevo?",
+            "fr": "Dmitri, tu peux m'aider à configurer mon nouveau téléphone ?",
+            "pt": "Dmitri, você pode me ajudar a configurar o celular novo?",
+            "kr": "드미트리, 새 휴대폰 설정하는 거 좀 도와줄 수 있어?",
+            "jp": "ドミトリー、新しい電話の設定を手伝ってくれない？",
+            "zh": "德米特里，你能帮我设置一下新手机吗？",
+            "ru": "Дмитрий, ты не поможешь мне настроить новый телефон?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, Елена. Что там нужно сделать?",
+            "en": "Of course, Elena. What needs to be done?",
+            "es": "Claro, Elena. ¿Qué hay que hacer?",
+            "fr": "Bien sûr, Hélène. Qu'est-ce qu'il faut faire ?",
+            "pt": "Claro, Elena. O que precisa ser feito?",
+            "kr": "물론이지, 옐레나. 뭘 해야 하는데?",
+            "jp": "もちろん、エレナ。何をすればいいの？",
+            "zh": "当然可以，叶莲娜。需要做什么呢？",
+            "ru": "Конечно, Елена. Что там нужно сделать?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я хочу перенести контакты со старого. Я совсем в этом не разбираюсь.",
+            "en": "I want to transfer my contacts from the old one. I have no idea how to do it.",
+            "es": "Quiero pasar los contactos del antiguo. No tengo ni idea de esto.",
+            "fr": "Je veux transférer les contacts de l'ancien. Je n'y comprends vraiment rien.",
+            "pt": "Quero transferir os contatos do antigo. Não entendo nada disso.",
+            "kr": "예전 폰에서 연락처를 옮기고 싶어. 이쪽은 전혀 모르겠어.",
+            "jp": "古い方から連絡先を移したいんだ。全然詳しくなくて。",
+            "zh": "我想把旧手机里的联系人导过来。我完全不懂这个。",
+            "ru": "Я хочу перенести контакты со старого. Я совсем в этом не разбираюсь."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это несложно. Дай мне оба телефона на минутку.",
+            "en": "It's not hard. Give me both phones for a minute.",
+            "es": "No es difícil. Dame los dos teléfonos un momento.",
+            "fr": "Ce n'est pas compliqué. Donne-moi les deux téléphones une minute.",
+            "pt": "Não é difícil. Me dá os dois celulares por um minuto.",
+            "kr": "어렵지 않아. 두 폰을 잠깐만 줘 봐.",
+            "jp": "簡単だよ。ちょっと両方の電話を貸して。",
+            "zh": "这不难。把两个手机都给我一下。",
+            "ru": "Это несложно. Дай мне оба телефона на минутку."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Вот, пожалуйста. Спасибо, что согласился.",
+            "en": "Here you go. Thanks for agreeing to help.",
+            "es": "Aquí tienes. Gracias por aceptar.",
+            "fr": "Tiens, voilà. Merci d'avoir accepté.",
+            "pt": "Aqui estão. Obrigada por aceitar.",
+            "kr": "여기 있어. 도와주기로 해줘서 고마워.",
+            "jp": "はい、どうぞ。引き受けてくれてありがとう。",
+            "zh": "给你。谢谢你愿意帮忙。",
+            "ru": "Вот, пожалуйста. Спасибо, что согласился."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Готово. Все контакты на месте. Теперь всё работает.",
+            "en": "Done. All your contacts are there. Everything works now.",
+            "es": "Listo. Todos los contactos están en su sitio. Ahora todo funciona.",
+            "fr": "C'est fait. Tous les contacts sont en place. Maintenant tout fonctionne.",
+            "pt": "Pronto. Todos os contatos estão no lugar. Agora está tudo funcionando.",
+            "kr": "다 됐어. 연락처 다 옮겨졌어. 이제 다 잘 작동해.",
+            "jp": "できたよ。連絡先は全部あるよ。もう全部動いてるよ。",
+            "zh": "弄好了。所有联系人都在。现在一切都能用了。",
+            "ru": "Готово. Все контакты на месте. Теперь всё работает."
+          }
+        }
+      ]
+    }
+  ]
+}

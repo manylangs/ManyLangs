@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S002",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "source_dialogue": {
+    "source_scene_id": "S002",
+    "source_line_ids": [
+      "L001",
+      "L002",
+      "L003",
+      "L004",
+      "L005",
+      "L006"
+    ]
+  },
+  "key_expressions": [
+    {
+      "key_expression_id": "KE001",
+      "source_line_ids": [
+        "L001"
+      ],
+      "expression": "Excuse me, I'm here for immigration. Which line should I join?",
+      "meaning": "실례합니다, 저는 입국 심사를 하러 왔어요. 어떤 줄에 서야 하나요?",
+      "usage": "공항, 관공서 등에서 처음 보는 사람에게 공손하게 도움을 요청할 때 사용한다. 'Excuse me'로 주의를 끈 뒤 자신의 상황을 간단히 말하고 질문하는 패턴이다.",
+      "context": "지은이(Jieun)가 JFK 공항 입국장에 도착했지만 어떤 줄에 서야 할지 몰라 공항 직원에게 도움을 요청하는 상황이다.",
+      "communicative_function": "asking for help",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "Excuse me, which line should I stand in?",
+      "common_mistake": "Which line should I join? 대신 Which line I should join?이라고 어순을 틀리기 쉽다. 의문문에서는 조동사(should)가 주어(I) 앞에 온다.",
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE002",
+      "source_line_ids": [
+        "L002"
+      ],
+      "expression": "Are you a visitor or a resident?",
+      "meaning": "방문객이세요, 아니면 거주자세요?",
+      "usage": "상대방의 신분이나 목적을 확인할 때 쓰는 선택 질문이다. 공항, 은행, 관공서 등에서 자주 들을 수 있는 질문이다.",
+      "context": "공항 직원이 지은이에게 입국 심사 줄을 안내하기 전에 그녀가 방문객인지 거주자인지 확인하기 위해 묻는 상황이다.",
+      "communicative_function": "confirming information",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "Are you here as a tourist or a resident?",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE003",
+      "source_line_ids": [
+        "L004"
+      ],
+      "expression": "Then you can join the line on the left, for visitors.",
+      "meaning": "그럼 왼쪽에 있는 방문객용 줄에 서시면 됩니다.",
+      "usage": "상대방의 상황에 맞는 행동을 안내할 때 'Then you can ~' 패턴으로 시작한다. 길을 안내하거나 절차를 설명할 때 유용하다.",
+      "context": "지은이가 방문객이라고 답하자, 공항 직원이 왼쪽의 방문객용 줄로 가라고 구체적으로 안내하는 상황이다.",
+      "communicative_function": "giving directions",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "In that case, you can use the line on the left.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE004",
+      "source_line_ids": [
+        "L005"
+      ],
+      "expression": "Do I need to fill out any forms?",
+      "meaning": "작성해야 할 서류가 있나요?",
+      "usage": "특정 절차에서 필요한 서류나 준비물이 있는지 물을 때 사용한다. 공항, 호텔, 병원, 관공서 등 다양한 상황에서 유용하다.",
+      "context": "입국 심사 줄에 서기 전에 지은이가 별도로 작성해야 할 서류가 있는지 공항 직원에게 확인하는 상황이다.",
+      "communicative_function": "asking for information",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "Do I need to fill in any forms?",
+      "common_mistake": "'fill out' 대신 'fill'이라고만 쓰는 오류가 있다. 서류를 작성한다는 의미로는 'fill out' 또는 'fill in'이 자연스럽다.",
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE005",
+      "source_line_ids": [
+        "L006"
+      ],
+      "expression": "Just have your passport ready.",
+      "meaning": "여권만 준비해 두시면 됩니다.",
+      "usage": "필요한 것이 별로 없음을 강조하며 특정 물건만 준비하라고 안내할 때 쓴다. 'Just'를 붙여 부담을 덜어주는 표현이다.",
+      "context": "공항 직원이 지은이에게 별도 서류가 필요 없고 여권만 준비하면 된다고 안내하는 상황이다.",
+      "communicative_function": "giving instructions",
+      "difficulty": "A2",
+      "priority": "useful",
+      "variation": "All you need is your passport.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    }
+  ],
+  "validation": {
+    "expression_count": 5,
+    "all_expressions_exist_in_dialogue": true,
+    "source_lines_valid": true,
+    "cefr_appropriate": true
+  }
+}

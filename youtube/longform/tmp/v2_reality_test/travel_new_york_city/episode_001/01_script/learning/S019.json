@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S019",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "source_dialogue": {
+    "source_scene_id": "S019",
+    "source_line_ids": [
+      "L001",
+      "L002",
+      "L003",
+      "L004"
+    ]
+  },
+  "key_expressions": [
+    {
+      "key_expression_id": "KE001",
+      "source_line_ids": [
+        "L001"
+      ],
+      "expression": "All the lights make it feel alive.",
+      "meaning": "모든 불빛 덕분에 거리가 활기차게 느껴진다.",
+      "usage": "도시나 장소의 분위기를 인상적으로 표현할 때 사용한다. 'make + 목적어 + feel + 형용사' 구조로 어떤 것이 특정 감정이나 느낌을 유발함을 나타낸다.",
+      "context": "지은이(Jieun)가 저녁 거리를 걸으며 밝은 불빛을 보고 도시가 활기차다고 느끼는 내적 독백 상황.",
+      "communicative_function": "expressing internal observations",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "The lights make the city feel so alive.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE002",
+      "source_line_ids": [
+        "L002"
+      ],
+      "expression": "It's busy, but it's nice.",
+      "meaning": "번잡하지만 괜찮다/좋다.",
+      "usage": "시끄럽거나 복잡한 상황에서도 부정적인 면을 인정하면서 긍정적인 평가를 덧붙일 때 사용하는 표현. '~하지만 ~하다'의 대조 구조로 의견을 균형 있게 전달한다.",
+      "context": "지은이가 거리의 소음과 사람들로 인한 번잡함을 느끼면서도 그 분위기가 나쁘지 않다고 스스로에게 말하는 상황.",
+      "communicative_function": "expressing preference",
+      "difficulty": "A1",
+      "priority": "core",
+      "variation": "It's crowded, but I like it.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE003",
+      "source_line_ids": [
+        "L003"
+      ],
+      "expression": "Maybe I can look at it for a moment.",
+      "meaning": "잠시 그것을 구경할 수 있을 것 같다.",
+      "usage": "무언가를 잠깐 살펴보고 싶을 때 가볍게 의향을 표현하는 말. 'Maybe I can ~'은 확실하지 않지만 가능성을 열어두는 부드러운 표현이다.",
+      "context": "지은이가 눈에 띄는 가게 앞에서 잠시 멈춰 구경하고 싶다는 생각을 내적으로 표현하는 상황.",
+      "communicative_function": "making a request",
+      "difficulty": "A2",
+      "priority": "useful",
+      "variation": "Maybe I can take a quick look.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE004",
+      "source_line_ids": [
+        "L004"
+      ],
+      "expression": "I feel more comfortable now.",
+      "meaning": "이제는 더 편안함을 느낀다.",
+      "usage": "처음에는 불안하거나 어색했지만 시간이 지나면서 익숙해지고 마음이 놓일 때 사용하는 표현. 감정의 변화를 나타낼 때 유용하다.",
+      "context": "지은이가 저녁 산책을 하면서 뉴욕의 분위기에 익숙해지고 처음의 불안감이 줄어들어 편안함을 느끼는 상황.",
+      "communicative_function": "expressing internal observations",
+      "difficulty": "A1",
+      "priority": "core",
+      "variation": "I feel more at ease now.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    }
+  ],
+  "validation": {
+    "expression_count": 4,
+    "all_expressions_exist_in_dialogue": true,
+    "source_lines_valid": true,
+    "cefr_appropriate": true
+  }
+}

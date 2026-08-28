@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S008",
+  "sequence": 8,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "characters": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "local_character_id": null,
+      "role": "protagonist",
+      "gender": "female",
+      "visual_state": {
+        "appearance": [
+          "Oval face with soft features",
+          "Natural eyebrows",
+          "Dark brown eyes",
+          "Light natural makeup",
+          "Warm friendly expression",
+          "Shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears"
+        ],
+        "clothing": [
+          "White casual t-shirt",
+          "Light blue denim jacket",
+          "Dark blue skinny jeans",
+          "White sneakers",
+          "Small silver earrings",
+          "Simple wristwatch"
+        ],
+        "carried_items": [
+          "Medium-sized travel backpack",
+          "Small crossbody bag",
+          "Smartphone",
+          "Passport",
+          "Checked suitcase"
+        ]
+      },
+      "emotion": "excited and more confident, with a growing sense of anticipation",
+      "screen_action": "Boards the AirTrain, finds a seat by the window, and watches the city appear through the window as the train moves"
+    }
+  ],
+  "environment": {
+    "time_of_day": "day",
+    "weather": null,
+    "lighting": "bright natural daylight coming through the train windows, with soft interior lighting",
+    "background_activity": [
+      "A few other passengers seated or standing in the AirTrain car",
+      "Passengers looking at their phones or out the windows",
+      "Transit announcements playing over the intercom"
+    ]
+  },
+  "visual_goal": "The viewer sees Jieun comfortably seated on the AirTrain, looking out the window as the urban landscape of New York City gradually appears, conveying her growing excitement about arriving in Manhattan.",
+  "actions": [
+    {
+      "sequence": 1,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "Boards the AirTrain and moves through the car to find a seat",
+      "object_ref": null
+    },
+    {
+      "sequence": 2,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "Sits down by the window and places her suitcase beside her",
+      "object_ref": "PROP_LUGGAGE_001"
+    },
+    {
+      "sequence": 3,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "Looks out the window as the train begins to move",
+      "object_ref": null
+    },
+    {
+      "sequence": 4,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "Watches the city skyline and buildings appear through the window",
+      "object_ref": null
+    },
+    {
+      "sequence": 5,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "Smiles with excitement as she observes the approaching city",
+      "object_ref": null
+    }
+  ],
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "description": "Medium-sized travel backpack",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "description": "Small crossbody bag",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "description": "Smartphone",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "description": "Passport",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "description": "Jieun's checked suitcase that she retrieved from the carousel",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    }
+  ],
+  "must_show": [
+    "Jieun boards the AirTrain",
+    "Jieun finds a seat by the window",
+    "Jieun watches the city appear through the windows as the train moves",
+    "Jieun's expression shows excitement as she sees the city approaching"
+  ],
+  "must_not_show": [
+    "Jieun must not move past the AirTrain journey",
+    "No problems or issues with the AirTrain must be introduced",
+    "Jieun must not arrive in Manhattan yet"
+  ],
+  "visual_continuity": {
+    "carry_in": [
+      "Jieun has received advice from a transit employee",
+      "She has decided to take public transit to Manhattan",
+      "She is now heading toward the transit station"
+    ],
+    "carry_out": [
+      "Jieun is on the AirTrain heading toward the subway connection",
+      "She is watching the city appear through the windows",
+      "She feels a sense of excitement about arriving in Manhattan"
+    ],
+    "start_state": [
+      "Jieun is standing on the AirTrain platform",
+      "She is holding her suitcase handle",
+      "She has a confident and decided expression"
+    ],
+    "end_state": [
+      "Jieun is seated by the window on the AirTrain",
+      "She is looking out at the approaching city",
+      "She has an excited and happy expression"
+    ]
+  },
+  "production_constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_story_continuity": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false
+  }
+}

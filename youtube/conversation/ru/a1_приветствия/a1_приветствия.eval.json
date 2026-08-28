@@ -1,0 +1,70 @@
+{
+  "chapter_id": "conversation_001.runtime.json",
+  "target_lang": "ru",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "A/B 화자가 각 세트에서 번갈아 등장하며, 대화의 흐름이 자연스럽고 일관적입니다. A가 질문하고 B가 응답하는 구조가 명확합니다."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "인사, 안부 묻기, 기다린 시간 확인, 소개, 헤어짐 인사 등 A1 레벨에 적합한 기본적인 대화 기능이 정확하게 구현되었습니다."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "전체적으로 자연스러운 구어체 표현을 사용했습니다. 다만, 'А у вас?'와 같은 생략된 표현은 구어체로 자연스럽지만, 'Вы давно здесь ждёте?'는 문어체적인 느낌이 있어 'Вы давно здесь ждёте?' 대신 'Вы давно здесь стоите?' 또는 'Вы давно ждёте?'가 더 자연스러울 수 있습니다. (set_id=001, line=3, lang=ru)"
+    },
+    "register_appropriateness": {
+      "score": 10,
+      "weight": 10,
+      "notes": "대화 전체에서 'Вы'를 일관되게 사용하여 격식 있는 상황에 적합한 존칭을 유지하고 있습니다. 'Здравствуйте', 'познакомиться', 'До встречи' 등 격식 수준이 일관됩니다."
+    },
+    "grammar_and_notation": {
+      "score": 9,
+      "weight": 10,
+      "notes": "문법적으로 정확하며, 'я пришёл'과 같이 남성 화자의 과거시제 어미가 올바르게 사용되었습니다. 다만, 'Очень приятно познакомиться'는 문법적으로 완벽하지만, 'Очень приятно'만으로도 자연스러운 구어체 표현이 될 수 있습니다. (set_id=001, line=5, lang=ru)"
+    },
+    "situational_practicality": {
+      "score": 9,
+      "weight": 10,
+      "notes": "처음 만난 사람과의 대화 상황은 실용적이고 일상적입니다. 다만, '여기서 기다린 시간'이라는 주제는 처음 만난 상황에서 다소 구체적일 수 있어, '어디서 오셨어요?'와 같은 더 일반적인 주제가 A1 레벨에 더 적합할 수 있습니다. (set_id=001, line=3, lang=ru)"
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "특정 문화적 요소에 치우치지 않고, 보편적인 인사와 안부 표현으로 구성되어 문화적 중립성을 잘 유지하고 있습니다."
+    },
+    "tts_readiness": {
+      "score": 9,
+      "weight": 5,
+      "notes": "문장이 명확하고 TTS가 읽기에 적합한 구조입니다. 다만, 'Здравствуйте'와 같은 긴 단어는 TTS가 자연스럽게 발음하기에 다소 길 수 있으며, 'А у вас?'와 같은 짧은 문장은 TTS가 빠르게 읽을 수 있어 속도 조절이 필요할 수 있습니다. (set_id=001, line=2, lang=ru)"
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 ru 필드가 모든 문장에서 완벽하게 일치합니다."
+    },
+    "market_competitiveness": {
+      "score": 8,
+      "weight": 15,
+      "notes": "기본적인 인사 대화로 A1 레벨에서 기대할 수 있는 수준을 충족하며, RussianPod101이나 Duolingo의 초급 회화와 유사한 수준입니다. 다만, 더 높은 경쟁력을 위해 'Вы не подскажете...'와 같은 실용적인 표현이나, 'Как вас зовут?'과 같은 이름 묻기 등이 추가되면 더 좋을 것입니다."
+    }
+  },
+  "final_score": 93,
+  "market_benchmark": {
+    "comparable_services": [
+      "RussianPod101",
+      "Duolingo Russian Conversations",
+      "Pimsleur Russian",
+      "Russian with Max"
+    ],
+    "estimated_relative_position": "시중 최상위 러시아어 학습 서비스의 A1 레벨 회화 교재와 비교했을 때, 기본적인 인사와 안부 표현을 정확하고 자연스럽게 다루고 있어 상위 10% 수준에 해당합니다. 다만, 대화의 다양성과 실용적인 표현 측면에서 약간의 개선 여지가 있습니다.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "pass": true,
+  "priority_fixes": []
+}

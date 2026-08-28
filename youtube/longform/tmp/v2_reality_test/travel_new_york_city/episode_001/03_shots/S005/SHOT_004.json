@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S005",
+  "shot_id": "SHOT_004",
+  "sequence": 4,
+  "duration_seconds": 6.0,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun looking in the direction the employee pointed and nodding in understanding.",
+  "framing": {
+    "shot_size": "medium_close",
+    "subject_priority": [
+      "CHAR_JIEUN_001"
+    ]
+  },
+  "camera": {
+    "angle": "three_quarter",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun looks in the direction the employee pointed and nods in understanding.",
+    "start_state": [
+      "Jieun is looking toward the ground transportation signs"
+    ],
+    "end_state": [
+      "Jieun is looking toward the ground transportation signs",
+      "She has a relieved and focused expression"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "relieved and focused",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "held by Jieun",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L003"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "The employee has given directions",
+      "Jieun is looking toward the ground transportation signs"
+    ],
+    "carry_out": [
+      "Jieun has retrieved her luggage from the carousel",
+      "She is now following signs toward ground transportation",
+      "She is thinking about how to get to Manhattan"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

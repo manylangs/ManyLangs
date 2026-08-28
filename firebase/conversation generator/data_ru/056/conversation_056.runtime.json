@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "c2",
+    "id": "056"
+  },
+  "title": {
+    "target": "Данные и аналитика",
+    "en": "Data and Analytics",
+    "es": "Datos y análisis",
+    "fr": "Données et analyses",
+    "pt": "Dados e Análises",
+    "kr": "데이터와 분석",
+    "jp": "データと分析",
+    "zh": "数据与分析",
+    "ru": "Данные и аналитика"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты уже посмотрел новый отчёт по продажам за прошлый квартал?",
+            "en": "Ivan, have you looked at the new sales report for last quarter yet?",
+            "es": "Iván, ¿ya has visto el nuevo informe de ventas del último trimestre?",
+            "fr": "Ivan, tu as déjà regardé le nouveau rapport sur les ventes du dernier trimestre ?",
+            "pt": "Ivan, você já viu o novo relatório de vendas do último trimestre?",
+            "kr": "이반, 지난 분기 판매 실적에 대한 새 보고서는 이미 봤어?",
+            "jp": "イワンさん、先月の新しい売上レポートはもう見ましたか？",
+            "zh": "伊万，你看过上个季度的销售新报告了吗？",
+            "ru": "Иван, ты уже посмотрел новый отчёт по продажам за прошлый квартал?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Анна, я его внимательно изучил. Цифры выглядят довольно неплохо, но есть несколько моментов, которые меня смущают.",
+            "en": "Yes, Anna, I studied it carefully. The numbers look pretty good, but there are a few things that bother me.",
+            "es": "Sí, Ana, lo he estudiado con atención. Las cifras tienen bastante buena pinta, pero hay un par de cosas que me desconciertan.",
+            "fr": "Oui, Anna, je l'ai étudié attentivement. Les chiffres ont l'air plutôt bons, mais il y a quelques points qui me dérangent.",
+            "pt": "Sim, Anna, eu o estudei com atenção. Os números parecem bastante bons, mas há alguns pontos que me incomodam.",
+            "kr": "응, 안나, 꼼꼼히 살펴봤어. 수치가 꽤 괜찮아 보이긴 하는데, 몇 가지 걸리는 점이 있어.",
+            "jp": "はい、アンナさん、しっかり確認しました。数字はかなり悪くないように見えますが、いくつか気になる点があります。",
+            "zh": "看了，安娜，我仔细研究过了。数字看起来相当不错，但有几个地方让我有点困惑。",
+            "ru": "Да, Анна, я его внимательно изучил. Цифры выглядят довольно неплохо, но есть несколько моментов, которые меня смущают."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "И что же именно тебя смущает? Мне показалось, что динамика в целом положительная.",
+            "en": "And what exactly bothers you? It seemed to me that the overall trend is positive.",
+            "es": "¿Y qué es exactamente lo que te desconcierta? A mí me pareció que la dinámica era positiva en general.",
+            "fr": "Et qu'est-ce qui te dérange exactement ? Il m'a semblé que la dynamique était globalement positive.",
+            "pt": "E o que exatamente te incomoda? Para mim, a dinâmica parece positiva no geral.",
+            "kr": "뭐가 그렇게 걸리는데? 나는 전체적으로 흐름이 긍정적이라고 생각했는데.",
+            "jp": "具体的に何が気になるんですか？ 全体的な傾向は良いように思えましたが。",
+            "zh": "具体是什么让你困惑呢？我觉得整体趋势是积极的。",
+            "ru": "И что же именно тебя смущает? Мне показалось, что динамика в целом положительная."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "В целом да, но я заметил резкий скачок продаж в конце второго месяца. Это выглядит неестественно, возможно, ошибка в данных.",
+            "en": "Overall, yes, but I noticed a sharp jump in sales at the end of the second month. It looks unnatural, maybe it's an error in the data.",
+            "es": "En general sí, pero he notado un salto brusco en las ventas a finales del segundo mes. Parece poco natural, quizás sea un error en los datos.",
+            "fr": "Globalement oui, mais j'ai remarqué un bond soudain des ventes à la fin du deuxième mois. Cela semble anormal, peut-être une erreur dans les données.",
+            "pt": "No geral, sim, mas notei um salto brusco nas vendas no final do segundo mês. Isso parece estranho, talvez seja um erro nos dados.",
+            "kr": "전체적으로는 그렇지, 그런데 두 번째 달 말에 판매가 급격히 뛴 걸 발견했어. 부자연스러워 보여서, 아마 데이터에 오류가 있는 것 같아.",
+            "jp": "全体的にはそうですが、2ヶ月目の終わりに売上が急に跳ね上がっているのに気づきました。不自然に見えるので、もしかしたらデータの誤りかもしれません。",
+            "zh": "整体来说是的，但我注意到第二个月月底销售额有一个急剧的跳升。这看起来不太自然，可能是数据里有错误。",
+            "ru": "В целом да, но я заметил резкий скачок продаж в конце второго месяца. Это выглядит неестественно, возможно, ошибка в данных."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хм, интересное замечание. Я проверю исходные данные и сверю их с отчётом отдела логистики.",
+            "en": "Hmm, that's an interesting observation. I'll check the source data and cross-reference it with the logistics department's report.",
+            "es": "Mmm, es una observación interesante. Revisaré los datos originales y los contrastaré con el informe del departamento de logística.",
+            "fr": "Hmm, remarque intéressante. Je vais vérifier les données brutes et les recouper avec le rapport du service logistique.",
+            "pt": "Hmm, observação interessante. Vou verificar os dados originais e compará-los com o relatório do departamento de logística.",
+            "kr": "흠, 흥미로운 지적이네. 내가 원본 데이터를 확인해서 물류 부서 보고서와 대조해 볼게.",
+            "jp": "ふむ、興味深いご指摘ですね。元データを確認して、物流部門のレポートと照らし合わせてみます。",
+            "zh": "嗯，这个发现很有意思。我会检查原始数据，并和物流部门的报告核对一下。",
+            "ru": "Хм, интересное замечание. Я проверю исходные данные и сверю их с отчётом отдела логистики."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Было бы замечательно. Если это ошибка, нам нужно исправить её до презентации для руководства.",
+            "en": "That would be great. If it's an error, we need to fix it before the presentation for management.",
+            "es": "Sería estupendo. Si es un error, tenemos que corregirlo antes de la presentación para la dirección.",
+            "fr": "Ce serait parfait. Si c'est une erreur, nous devons la corriger avant la présentation à la direction.",
+            "pt": "Seria ótimo. Se for um erro, precisamos corrigi-lo antes da apresentação para a diretoria.",
+            "kr": "그럼 정말 좋지. 만약 오류라면, 경영진 프레젠테이션 전에 고쳐야 해.",
+            "jp": "それは助かります。もし誤りなら、上層部へのプレゼンの前に修正する必要があります。",
+            "zh": "那就太好了。如果是错误的话，我们需要在给领导层做演示之前把它修正。",
+            "ru": "Было бы замечательно. Если это ошибка, нам нужно исправить её до презентации для руководства."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты не мог бы помочь мне разобраться с дашбордом? Я никак не могу настроить нужный фильтр.",
+            "en": "Dmitry, could you help me figure out the dashboard? I just can't set up the filter I need.",
+            "es": "Dmitri, ¿podrías ayudarme con el panel de control? No consigo configurar el filtro que necesito.",
+            "fr": "Dmitri, tu pourrais m'aider à comprendre le tableau de bord ? Je n'arrive pas à configurer le filtre dont j'ai besoin.",
+            "pt": "Dmitri, você poderia me ajudar com o painel? Não consigo configurar o filtro certo de jeito nenhum.",
+            "kr": "드미트리, 대시보드 좀 도와줄 수 있어? 원하는 필터를 설정할 수가 없네.",
+            "jp": "ドミトリーさん、ダッシュボードのことで手伝ってもらえませんか？ どうしても必要なフィルターを設定できなくて。",
+            "zh": "德米特里，你能帮我看看这个仪表盘吗？我怎么都设置不好需要的筛选条件。",
+            "ru": "Дмитрий, ты не мог бы помочь мне разобраться с дашбордом? Я никак не могу настроить нужный фильтр."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, Ольга, давай посмотрим. Какой именно период ты хочешь отобразить?",
+            "en": "Of course, Olga, let's take a look. What time period exactly do you want to display?",
+            "es": "Claro, Olga, vamos a verlo. ¿Qué período exactamente quieres mostrar?",
+            "fr": "Bien sûr, Olga, regardons ça. Quelle période veux-tu afficher exactement ?",
+            "pt": "Claro, Olga, vamos ver. Qual período exatamente você quer exibir?",
+            "kr": "물론이지, 올가, 한번 보자. 어떤 기간을 표시하고 싶은 거야?",
+            "jp": "もちろんです、オルガさん、一緒に見てみましょう。どの期間を表示したいんですか？",
+            "zh": "当然可以，奥尔加，我们来看看。你想显示哪个时间段？",
+            "ru": "Конечно, Ольга, давай посмотрим. Какой именно период ты хочешь отобразить?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне нужны данные за последние полгода, но только по европейскому региону.",
+            "en": "I need the data for the last six months, but only for the European region.",
+            "es": "Necesito los datos de los últimos seis meses, pero solo de la región europea.",
+            "fr": "J'ai besoin des données des six derniers mois, mais uniquement pour la région européenne.",
+            "pt": "Preciso dos dados dos últimos seis meses, mas apenas da região europeia.",
+            "kr": "지난 6개월 데이터가 필요한데, 유럽 지역 것으로만 말이야.",
+            "jp": "直近6ヶ月のデータが必要なんですが、ヨーロッパ地域の分だけです。",
+            "zh": "我需要最近半年的数据，但只限欧洲区域。",
+            "ru": "Мне нужны данные за последние полгода, но только по европейскому региону."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понял, тут нужно изменить параметры в расширенных настройках. Сейчас покажу, это делается в два клика.",
+            "en": "Got it, you need to change the parameters in the advanced settings. I'll show you now, it's done in two clicks.",
+            "es": "Entendido, aquí hay que cambiar los parámetros en los ajustes avanzados. Ahora te enseño, se hace en dos clics.",
+            "fr": "Compris, il faut modifier les paramètres dans les réglages avancés. Je te montre, ça se fait en deux clics.",
+            "pt": "Entendi, aqui é preciso mudar os parâmetros nas configurações avançadas. Vou te mostrar agora, é só clicar duas vezes.",
+            "kr": "알겠어, 고급 설정에서 매개변수를 바꿔야 해. 지금 보여줄게, 두 번 클릭이면 돼.",
+            "jp": "わかりました。詳細設定でパラメーターを変更する必要がありますね。今お見せしますよ、2クリックでできますから。",
+            "zh": "明白了，这里需要在高级设置里修改参数。我现在演示给你看，点两下就能完成。",
+            "ru": "Понял, тут нужно изменить параметры в расширенных настройках. Сейчас покажу, это делается в два клика."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Огромное спасибо! А можно сохранить этот вид, чтобы он открывался по умолчанию?",
+            "en": "Thank you so much! And can I save this view so it opens by default?",
+            "es": "¡Muchísimas gracias! ¿Y se puede guardar esta vista para que se abra por defecto?",
+            "fr": "Merci beaucoup ! Et est-ce qu'on peut enregistrer cette vue pour qu'elle s'ouvre par défaut ?",
+            "pt": "Muito obrigada! E dá para salvar essa visualização para que ela abra por padrão?",
+            "kr": "정말 고마워! 그런데 이 화면을 기본으로 열리게 저장할 수 있을까?",
+            "jp": "本当にありがとうございます！ この表示を保存して、デフォルトで開くようにすることはできますか？",
+            "zh": "太感谢了！那这个视图能保存下来，让它默认打开吗？",
+            "ru": "Огромное спасибо! А можно сохранить этот вид, чтобы он открывался по умолчанию?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, конечно. Я сохраню этот шаблон, и он будет автоматически загружаться при открытии отчёта.",
+            "en": "Yes, of course. I'll save this template, and it will load automatically when the report is opened.",
+            "es": "Sí, claro. Guardaré esta plantilla y se cargará automáticamente al abrir el informe.",
+            "fr": "Oui, bien sûr. Je vais enregistrer ce modèle, et il se chargera automatiquement à l'ouverture du rapport.",
+            "pt": "Dá, claro. Vou salvar esse modelo, e ele vai carregar automaticamente ao abrir o relatório.",
+            "kr": "응, 당연하지. 이 템플릿을 저장해 둘게, 그러면 보고서를 열 때 자동으로 불러와질 거야.",
+            "jp": "はい、もちろんです。このテンプレートを保存しておきますね。レポートを開くときに自動的に読み込まれますよ。",
+            "zh": "可以的。我会保存这个模板，打开报告的时候它会自动加载。",
+            "ru": "Да, конечно. Я сохраню этот шаблон, и он будет автоматически загружаться при открытии отчёта."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты видел результаты анализа поведения пользователей на нашем сайте?",
+            "en": "Sergey, have you seen the results of the user behavior analysis on our website?",
+            "es": "Serguéi, ¿has visto los resultados del análisis del comportamiento de los usuarios en nuestra web?",
+            "fr": "Sergueï, tu as vu les résultats de l'analyse du comportement des utilisateurs sur notre site ?",
+            "pt": "Sergei, você viu os resultados da análise do comportamento dos usuários no nosso site?",
+            "kr": "세르게이, 우리 사이트에서 사용자 행동 분석 결과 봤어?",
+            "jp": "セルゲイさん、私たちのサイトでのユーザー行動分析の結果を見ましたか？",
+            "zh": "谢尔盖，你看到我们网站上用户行为分析的结果了吗？",
+            "ru": "Сергей, ты видел результаты анализа поведения пользователей на нашем сайте?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я как раз их изучал. Самое интересное — это время, которое люди проводят на странице с тарифами.",
+            "en": "Yes, I was just looking at them. The most interesting part is the time people spend on the pricing page.",
+            "es": "Sí, justo los estaba estudiando. Lo más interesante es el tiempo que pasa la gente en la página de tarifas.",
+            "fr": "Oui, je les étudiais justement. Le plus intéressant, c'est le temps que les gens passent sur la page des tarifs.",
+            "pt": "Vi, eu estava justamente estudando eles. O mais interessante é o tempo que as pessoas passam na página de planos.",
+            "kr": "응, 마침 지금 살펴보고 있었어. 가장 흥미로운 건 사람들이 요금제 페이지에서 보내는 시간이야.",
+            "jp": "はい、ちょうど今調べていたところです。一番興味深いのは、人々が料金プランのページで過ごす時間ですね。",
+            "zh": "看到了，我正好在看。最有趣的是人们花在价格页面上的时间。",
+            "ru": "Да, я как раз их изучал. Самое интересное — это время, которое люди проводят на странице с тарифами."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "И какие выводы ты сделал? Мне кажется, многие уходят, не дочитав до конца.",
+            "en": "And what conclusions did you draw? It seems to me that many people leave without reading to the end.",
+            "es": "¿Y qué conclusiones has sacado? Me da la sensación de que muchos se van sin llegar a leerlo todo.",
+            "fr": "Et quelles conclusions en tires-tu ? J'ai l'impression que beaucoup partent sans avoir lu jusqu'au bout.",
+            "pt": "E quais conclusões você tirou? Acho que muitos saem sem ler até o fim.",
+            "kr": "그래서 어떤 결론을 내렸어? 많은 사람들이 끝까지 읽지 않고 떠나는 것 같은데.",
+            "jp": "で、どんな結論を出しましたか？ 多くの人が最後まで読まずに離脱しているように思えるんですが。",
+            "zh": "那你得出了什么结论？我觉得很多人没看完就走了。",
+            "ru": "И какие выводы ты сделал? Мне кажется, многие уходят, не дочитав до конца."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Совершенно верно. Почти половина пользователей покидает страницу в течение первых тридцати секунд.",
+            "en": "Exactly right. Almost half of the users leave the page within the first thirty seconds.",
+            "es": "Exacto. Casi la mitad de los usuarios abandonan la página en los primeros treinta segundos.",
+            "fr": "Tout à fait. Près de la moitié des utilisateurs quittent la page dans les trente premières secondes.",
+            "pt": "Exatamente. Quase metade dos usuários sai da página nos primeiros trinta segundos.",
+            "kr": "맞아, 정확해. 거의 절반의 사용자가 처음 30초 안에 페이지를 떠나.",
+            "jp": "まったくその通りです。ほぼ半分のユーザーが最初の30秒以内にページを離れています。",
+            "zh": "完全正确。几乎一半的用户在最初的三十秒内就离开了页面。",
+            "ru": "Совершенно верно. Почти половина пользователей покидает страницу в течение первых тридцати секунд."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это серьёзная проблема. Возможно, стоит упростить описание тарифов и сделать его более наглядным.",
+            "en": "That's a serious problem. Maybe we should simplify the pricing description and make it more visual.",
+            "es": "Es un problema serio. Quizás deberíamos simplificar la descripción de las tarifas y hacerla más visual.",
+            "fr": "C'est un vrai problème. Peut-être qu'on devrait simplifier la description des tarifs et la rendre plus visuelle.",
+            "pt": "Isso é um problema sério. Talvez valha a pena simplificar a descrição dos planos e deixá-la mais visual.",
+            "kr": "그건 심각한 문제네. 요금제 설명을 단순화하고 더 알아보기 쉽게 만드는 게 좋을 것 같아.",
+            "jp": "それは深刻な問題ですね。料金プランの説明を簡素化して、もっとわかりやすくするべきかもしれません。",
+            "zh": "这是个严重的问题。也许应该简化价格方案的描述，让它更直观一些。",
+            "ru": "Это серьёзная проблема. Возможно, стоит упростить описание тарифов и сделать его более наглядным."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен. Я подготовлю предложения по изменению структуры страницы и пришлю тебе на согласование.",
+            "en": "I agree. I'll prepare proposals for changing the page structure and send them to you for approval.",
+            "es": "De acuerdo. Prepararé propuestas para cambiar la estructura de la página y te las enviaré para que las apruebes.",
+            "fr": "Je suis d'accord. Je vais préparer des propositions pour modifier la structure de la page et te les envoyer pour validation.",
+            "pt": "Concordo. Vou preparar propostas para mudar a estrutura da página e te enviar para aprovação.",
+            "kr": "동의해. 페이지 구조 변경에 대한 제안을 준비해서 검토받도록 보내줄게.",
+            "jp": "同意します。ページ構成の変更案をまとめて、承認のために送りますね。",
+            "zh": "我同意。我会准备一些关于页面结构调整的建议，然后发给你审批。",
+            "ru": "Согласен. Я подготовлю предложения по изменению структуры страницы и пришлю тебе на согласование."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, ты уже закончила анализ эффективности нашей рекламной кампании в социальных сетях?",
+            "en": "Maria, have you finished the analysis of our advertising campaign's effectiveness on social media yet?",
+            "es": "María, ¿ya has terminado el análisis de la eficacia de nuestra campaña publicitaria en redes sociales?",
+            "fr": "Maria, tu as terminé l'analyse de l'efficacité de notre campagne publicitaire sur les réseaux sociaux ?",
+            "pt": "Maria, você já terminou a análise da eficácia da nossa campanha de publicidade nas redes sociais?",
+            "kr": "마리아, 소셜 미디어 광고 캠페인 효율성 분석은 이미 끝냈어?",
+            "jp": "マリアさん、ソーシャルメディアでの広告キャンペーンの効果分析はもう終わりましたか？",
+            "zh": "玛丽亚，你完成社交媒体广告活动的效果分析了吗？",
+            "ru": "Мария, ты уже закончила анализ эффективности нашей рекламной кампании в социальных сетях?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Почти, Алексей. Я обработала основные метрики, но осталось посчитать стоимость привлечения одного клиента.",
+            "en": "Almost, Alexey. I've processed the main metrics, but I still need to calculate the customer acquisition cost.",
+            "es": "Casi, Alekséi. Ya he procesado las métricas principales, pero me falta calcular el coste de adquisición de un cliente.",
+            "fr": "Presque, Alexeï. J'ai traité les principales métriques, mais il reste à calculer le coût d'acquisition d'un client.",
+            "pt": "Quase, Alexei. Eu processei as principais métricas, mas falta calcular o custo de aquisição de um cliente.",
+            "kr": "거의 다 됐어, 알렉세이. 주요 지표는 처리했는데, 고객 한 명을 유치하는 비용을 계산하는 게 남았어.",
+            "jp": "もう少しです、アレクセイさん。主要な指標は処理しましたが、顧客獲得単価の計算が残っています。",
+            "zh": "快完成了，阿列克谢。我已经处理了主要指标，但还剩下计算获取单个客户的成本。",
+            "ru": "Почти, Алексей. Я обработала основные метрики, но осталось посчитать стоимость привлечения одного клиента."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это ключевой показатель. Без него мы не поймём, насколько кампания была рентабельной.",
+            "en": "That's a key indicator. Without it, we won't understand how profitable the campaign was.",
+            "es": "Ese es el indicador clave. Sin él no sabremos si la campaña fue rentable.",
+            "fr": "C'est l'indicateur clé. Sans lui, nous ne saurons pas si la campagne a été rentable.",
+            "pt": "Esse é o indicador-chave. Sem ele, não vamos entender se a campanha foi lucrativa.",
+            "kr": "그게 핵심 지표지. 그것 없이는 캠페인이 수익성이 있었는지 알 수 없어.",
+            "jp": "それは重要な指標ですね。それなしでは、キャンペーンがどれだけ収益性があったか分かりませんから。",
+            "zh": "这是关键指标。没有它，我们就无法判断这次活动是否划算。",
+            "ru": "Это ключевой показатель. Без него мы не поймём, насколько кампания была рентабельной."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я понимаю. По предварительным данным, конверсия выросла, но и бюджет мы потратили значительно больше.",
+            "en": "Yes, I understand. According to preliminary data, the conversion rate went up, but we also spent significantly more of the budget.",
+            "es": "Sí, lo entiendo. Según los datos preliminares, la conversión ha subido, pero también hemos gastado bastante más presupuesto.",
+            "fr": "Oui, je comprends. D'après les données préliminaires, la conversion a augmenté, mais nous avons aussi dépensé beaucoup plus que prévu.",
+            "pt": "Sim, eu entendo. Pelos dados preliminares, a conversão aumentou, mas também gastamos bem mais do orçamento.",
+            "kr": "응, 알아. 잠정 데이터로는 전환율이 올랐지만, 예산도 상당히 많이 썼어.",
+            "jp": "ええ、分かっています。暫定データによると、コンバージョンは上がりましたが、予算もかなり多く使いました。",
+            "zh": "是的，我明白。根据初步数据，转化率上升了，但我们的预算也花得比原来多得多。",
+            "ru": "Да, я понимаю. По предварительным данным, конверсия выросла, но и бюджет мы потратили значительно больше."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда особенно важно посчитать итоговую стоимость. Если она слишком высокая, нужно менять стратегию.",
+            "en": "Then it's especially important to calculate the final cost. If it's too high, we need to change the strategy.",
+            "es": "Entonces es especialmente importante calcular el coste final. Si es demasiado alto, hay que cambiar la estrategia.",
+            "fr": "Alors il est d'autant plus important de calculer le coût final. S'il est trop élevé, il faudra changer de stratégie.",
+            "pt": "Então é especialmente importante calcular o custo final. Se estiver alto demais, precisamos mudar a estratégia.",
+            "kr": "그렇다면 최종 비용을 계산하는 게 특히 중요하겠네. 너무 높으면 전략을 바꿔야 하니까.",
+            "jp": "それなら最終的なコストを計算することが特に重要ですね。高すぎるなら、戦略を変える必要があります。",
+            "zh": "那就更要算出最终成本了。如果太高的话，我们需要改变策略。",
+            "ru": "Тогда особенно важно посчитать итоговую стоимость. Если она слишком высокая, нужно менять стратегию."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я закончу расчёты к вечеру и подготовлю полный отчёт с графиками для наглядности.",
+            "en": "I'll finish the calculations by the evening and prepare a full report with charts for clarity.",
+            "es": "Terminaré los cálculos para esta tarde y prepararé un informe completo con gráficos para que quede más claro.",
+            "fr": "Je terminerai les calculs d'ici ce soir et je préparerai un rapport complet avec des graphiques pour plus de clarté.",
+            "pt": "Vou terminar os cálculos até a noite e preparar um relatório completo com gráficos para facilitar a visualização.",
+            "kr": "저녁까지 계산을 끝내고, 이해하기 쉽게 그래프가 포함된 전체 보고서를 준비할게.",
+            "jp": "夕方までに計算を終えて、わかりやすいようにグラフ付きの完全なレポートを用意します。",
+            "zh": "我今晚会完成计算，并准备一份完整的报告，附上图表以便直观展示。",
+            "ru": "Я закончу расчёты к вечеру и подготовлю полный отчёт с графиками для наглядности."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, как ты оцениваешь точность прогноза, который мы сделали в начале года?",
+            "en": "Ivan, how do you assess the accuracy of the forecast we made at the beginning of the year?",
+            "es": "Iván, ¿cómo valoras la precisión de la previsión que hicimos a principios de año?",
+            "fr": "Ivan, comment évalues-tu la précision des prévisions que nous avons faites au début de l'année ?",
+            "pt": "Ivan, como você avalia a precisão da previsão que fizemos no início do ano?",
+            "kr": "이반, 연초에 우리가 만든 예측의 정확도를 어떻게 평가해?",
+            "jp": "イワンさん、年初に立てた予測の精度をどう評価しますか？",
+            "zh": "伊万，你怎么评价我们年初做的预测的准确性？",
+            "ru": "Иван, как ты оцениваешь точность прогноза, который мы сделали в начале года?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Честно говоря, прогноз оказался довольно точным. Отклонение составило всего несколько процентов.",
+            "en": "Honestly, the forecast turned out to be quite accurate. The deviation was only a few percent.",
+            "es": "Si te soy sincero, la previsión ha sido bastante precisa. La desviación fue de solo unos pocos puntos porcentuales.",
+            "fr": "Franchement, les prévisions se sont révélées plutôt précises. L'écart n'a été que de quelques pour cent.",
+            "pt": "Sendo sincero, a previsão se mostrou bastante precisa. O desvio foi de apenas alguns por cento.",
+            "kr": "솔직히 말하면, 예측이 꽤 정확했어. 오차가 몇 퍼센트에 불과했거든.",
+            "jp": "正直に言うと、予測はかなり正確でした。誤差はわずか数パーセントだけでした。",
+            "zh": "说实话，预测相当准确。偏差只有几个百分点。",
+            "ru": "Честно говоря, прогноз оказался довольно точным. Отклонение составило всего несколько процентов."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это отличный результат! Какая модель показала себя лучше всего?",
+            "en": "That's an excellent result! Which model performed the best?",
+            "es": "¡Es un resultado excelente! ¿Qué modelo funcionó mejor?",
+            "fr": "C'est un excellent résultat ! Quel modèle a donné les meilleurs résultats ?",
+            "pt": "Esse é um ótimo resultado! Qual modelo teve o melhor desempenho?",
+            "kr": "그건 훌륭한 결과야! 어떤 모델이 가장 좋은 성과를 보였어?",
+            "jp": "それは素晴らしい結果ですね！ どのモデルが一番良い結果を出しましたか？",
+            "zh": "这是个很棒的结果！哪个模型表现最好？",
+            "ru": "Это отличный результат! Какая модель показала себя лучше всего?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Наиболее точной оказалась модель на основе временных рядов. Она учла сезонные колебания гораздо лучше остальных.",
+            "en": "The time series based model turned out to be the most accurate. It accounted for seasonal fluctuations much better than the others.",
+            "es": "El más preciso fue el modelo basado en series temporales. Tuvo en cuenta las variaciones estacionales mucho mejor que los demás.",
+            "fr": "Le modèle le plus précis a été celui basé sur les séries temporelles. Il a pris en compte les variations saisonnières bien mieux que les autres.",
+            "pt": "O modelo mais preciso foi o baseado em séries temporais. Ele considerou as variações sazonais muito melhor que os outros.",
+            "kr": "가장 정확했던 건 시계열 기반 모델이야. 계절적 변동을 다른 모델들보다 훨씬 잘 반영했어.",
+            "jp": "一番正確だったのは時系列モデルです。季節変動を他のモデルよりはるかにうまく考慮できていました。",
+            "zh": "最准确的是基于时间序列的模型。它对季节性波动的把握比其他模型好得多。",
+            "ru": "Наиболее точной оказалась модель на основе временных рядов. Она учла сезонные колебания гораздо лучше остальных."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Значит, в следующем году будем использовать именно её? Или есть идеи, как её улучшить?",
+            "en": "So, next year we'll use that one? Or do you have ideas on how to improve it?",
+            "es": "Entonces, ¿el año que viene usaremos ese? ¿O tienes ideas para mejorarlo?",
+            "fr": "Alors, l'année prochaine, on utilisera celui-là ? Ou as-tu des idées pour l'améliorer ?",
+            "pt": "Então, no próximo ano vamos usar exatamente ele? Ou há ideias de como melhorá-lo?",
+            "kr": "그럼 내년에는 그 모델을 사용하는 거야? 아니면 개선할 아이디어가 있어?",
+            "jp": "それなら、来年はそれを使うんですね？ それとも、改善するアイデアはありますか？",
+            "zh": "那明年我们就用它了？还是有改进的想法？",
+            "ru": "Значит, в следующем году будем использовать именно её? Или есть идеи, как её улучшить?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я думаю, можно добавить в модель данные о макроэкономической ситуации. Это должно повысить точность ещё на несколько процентов.",
+            "en": "I think we could add data on the macroeconomic situation to the model. That should increase the accuracy by another few percent.",
+            "es": "Creo que podríamos añadir al modelo datos sobre la situación macroeconómica. Eso debería aumentar la precisión unos puntos más.",
+            "fr": "Je pense qu'on pourrait ajouter au modèle des données sur la situation macroéconomique. Cela devrait améliorer la précision de quelques pour cent supplémentaires.",
+            "pt": "Acho que podemos adicionar ao modelo dados sobre a situação macroeconômica. Isso deve aumentar a precisão em mais alguns por cento.",
+            "kr": "모델에 거시경제 상황 데이터를 추가할 수 있을 것 같아. 그러면 정확도가 몇 퍼센트 더 올라갈 거야.",
+            "jp": "モデルにマクロ経済状況のデータを追加できると思います。それで精度がさらに数パーセント上がるはずです。",
+            "zh": "我觉得可以把宏观经济形势的数据加进模型里。这应该能把准确率再提高几个百分点。",
+            "ru": "Я думаю, можно добавить в модель данные о макроэкономической ситуации. Это должно повысить точность ещё на несколько процентов."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, ты не видела файл с данными по удовлетворённости клиентов за этот месяц?",
+            "en": "Elena, have you seen the file with the customer satisfaction data for this month?",
+            "es": "Elena, ¿has visto el archivo con los datos de satisfacción de los clientes de este mes?",
+            "fr": "Elena, tu as vu le fichier avec les données sur la satisfaction des clients de ce mois-ci ?",
+            "pt": "Elena, você viu o arquivo com os dados de satisfação dos clientes deste mês?",
+            "kr": "옐레나, 이번 달 고객 만족도 데이터 파일 못 봤어?",
+            "jp": "エレナさん、今月の顧客満足度のデータファイルを見ていませんか？",
+            "zh": "叶莲娜，你看到这个月客户满意度数据的文件了吗？",
+            "ru": "Елена, ты не видела файл с данными по удовлетворённости клиентов за этот месяц?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Ольга, я его скачала и уже начала обрабатывать. Общий показатель вырос на пять процентов.",
+            "en": "Yes, Olga, I downloaded it and have already started processing it. The overall indicator went up by five percent.",
+            "es": "Sí, Olga, lo he descargado y ya he empezado a procesarlo. El indicador general ha subido un cinco por ciento.",
+            "fr": "Oui, Olga, je l'ai téléchargé et j'ai déjà commencé à le traiter. L'indicateur global a augmenté de cinq pour cent.",
+            "pt": "Vi, Olga, eu o baixei e já comecei a processar. O indicador geral subiu cinco por cento.",
+            "kr": "응, 올가, 다운로드해서 이미 처리하기 시작했어. 전체 지표가 5퍼센트 올랐어.",
+            "jp": "はい、オルガさん、ダウンロードして処理を始めています。全体の指標は5パーセント上がりました。",
+            "zh": "看到了，奥尔加，我已经下载了，并且开始处理了。总体指标上升了五个百分点。",
+            "ru": "Да, Ольга, я его скачала и уже начала обрабатывать. Общий показатель вырос на пять процентов."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это хорошая новость! А по каким категориям был наибольший рост?",
+            "en": "That's good news! And which categories saw the biggest increase?",
+            "es": "¡Buenas noticias! ¿Y en qué categorías hubo mayor crecimiento?",
+            "fr": "C'est une bonne nouvelle ! Et dans quelles catégories la plus forte progression a-t-elle eu lieu ?",
+            "pt": "Essa é uma boa notícia! E em quais categorias houve o maior crescimento?",
+            "kr": "좋은 소식이네! 어떤 항목에서 가장 많이 올랐어?",
+            "jp": "それは良い知らせですね！ どのカテゴリーで一番伸びましたか？",
+            "zh": "这是个好消息！哪些类别的增长最大？",
+            "ru": "Это хорошая новость! А по каким категориям был наибольший рост?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Больше всего выросли оценки качества поддержки и скорости доставки. А вот удобство мобильного приложения, наоборот, немного упало.",
+            "en": "The ratings for support quality and delivery speed went up the most. But the convenience of the mobile app, on the other hand, dropped a little.",
+            "es": "Lo que más subió fueron las valoraciones de la calidad del soporte y de la velocidad de entrega. En cambio, la comodidad de la aplicación móvil bajó un poco.",
+            "fr": "Ce sont les notes sur la qualité du support et la rapidité de livraison qui ont le plus augmenté. En revanche, la commodité de l'application mobile a, au contraire, légèrement baissé.",
+            "pt": "As avaliações de qualidade do suporte e de velocidade de entrega foram as que mais cresceram. Já a facilidade de uso do aplicativo móvel, pelo contrário, caiu um pouco.",
+            "kr": "지원 품질과 배송 속도 평가가 가장 많이 올랐어. 반면에 모바일 앱 편의성은 오히려 조금 떨어졌어.",
+            "jp": "一番伸びたのは、サポートの質と配送スピードの評価です。一方、モバイルアプリの使いやすさは、逆に少し下がりました。",
+            "zh": "增长最多的是对客服质量和配送速度的评分。但手机应用的便利性反而稍微下降了一点。",
+            "ru": "Больше всего выросли оценки качества поддержки и скорости доставки. А вот удобство мобильного приложения, наоборот, немного упало."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Над приложением нужно срочно работать. Может, стоит провести дополнительное исследование, чтобы понять причины?",
+            "en": "We need to work on the app urgently. Maybe we should conduct additional research to understand the reasons?",
+            "es": "Hay que trabajar en la aplicación urgentemente. ¿Quizás deberíamos hacer una investigación adicional para entender las causas?",
+            "fr": "Il faut travailler sur l'application de toute urgence. Peut-être qu'on devrait mener une étude supplémentaire pour comprendre les raisons ?",
+            "pt": "Precisamos trabalhar no aplicativo com urgência. Talvez valha a pena fazer uma pesquisa adicional para entender os motivos?",
+            "kr": "앱은 서둘러 개선해야겠네. 원인을 파악하기 위해 추가 조사를 진행하는 게 좋을까?",
+            "jp": "アプリについては早急に取り組む必要がありますね。原因を理解するために、追加調査を実施すべきかもしれません。",
+            "zh": "应用的问题需要赶紧处理。也许应该做一次额外的调研，找出原因？",
+            "ru": "Над приложением нужно срочно работать. Может, стоит провести дополнительное исследование, чтобы понять причины?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласна. Я подготовлю список вопросов для фокус-группы и согласую с тобой.",
+            "en": "I agree. I'll prepare a list of questions for the focus group and coordinate it with you.",
+            "es": "De acuerdo. Prepararé una lista de preguntas para el grupo de discusión y la consensuaré contigo.",
+            "fr": "Je suis d'accord. Je vais préparer une liste de questions pour le groupe de discussion et je te la ferai valider.",
+            "pt": "Concordo. Vou preparar uma lista de perguntas para o grupo focal e alinhar com você.",
+            "kr": "동의해. 포커스 그룹용 질문 목록을 준비해서 너와 상의할게.",
+            "jp": "同意します。フォーカスグループ用の質問リストを準備して、あなたと調整しますね。",
+            "zh": "我同意。我会准备一份焦点小组的问题清单，然后和你确认。",
+            "ru": "Согласна. Я подготовлю список вопросов для фокус-группы и согласую с тобой."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты проверил данные по возвратам товаров за последний квартал?",
+            "en": "Dmitry, did you check the product return data for the last quarter?",
+            "es": "Dmitri, ¿has revisado los datos de devoluciones de productos del último trimestre?",
+            "fr": "Dmitri, tu as vérifié les données sur les retours de marchandises du dernier trimestre ?",
+            "pt": "Dmitri, você verificou os dados de devoluções de produtos do último trimestre?",
+            "kr": "드미트리, 지난 분기 상품 반품 데이터는 확인했어?",
+            "jp": "ドミトリーさん、前四半期の返品データを確認しましたか？",
+            "zh": "德米特里，你核对了过去一个季度的商品退货数据了吗？",
+            "ru": "Дмитрий, ты проверил данные по возвратам товаров за последний квартал?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Анна, я свёл все цифры в единую таблицу. Уровень возвратов немного снизился, но всё ещё выше целевого.",
+            "en": "Yes, Anna, I consolidated all the numbers into a single table. The return rate went down a bit, but it's still above the target.",
+            "es": "Sí, Ana, he consolidado todas las cifras en una sola tabla. El nivel de devoluciones ha bajado un poco, pero sigue estando por encima del objetivo.",
+            "fr": "Oui, Anna, j'ai rassemblé tous les chiffres dans un tableau unique. Le taux de retours a légèrement baissé, mais il reste au-dessus de l'objectif.",
+            "pt": "Verifiquei, Anna, eu consolidei todos os números em uma única tabela. O índice de devoluções caiu um pouco, mas ainda está acima da meta.",
+            "kr": "응, 안나, 모든 수치를 하나의 표로 정리했어. 반품률이 조금 줄었지만, 여전히 목표치보다는 높아.",
+            "jp": "はい、アンナさん、すべての数字を一つの表にまとめました。返品率は少し下がりましたが、それでも目標値よりは高いです。",
+            "zh": "核对了，安娜，我把所有数字都汇总到了一张表里。退货率稍微下降了一点，但还是高于目标值。",
+            "ru": "Да, Анна, я свёл все цифры в единую таблицу. Уровень возвратов немного снизился, но всё ещё выше целевого."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А есть ли какая-то закономерность? Какие товары возвращают чаще всего?",
+            "en": "And is there any pattern? Which products are returned most often?",
+            "es": "¿Y hay alguna pauta? ¿Qué productos se devuelven con más frecuencia?",
+            "fr": "Et y a-t-il une tendance particulière ? Quels articles sont retournés le plus souvent ?",
+            "pt": "E há algum padrão? Quais produtos são devolvidos com mais frequência?",
+            "kr": "그럼 어떤 규칙성이 보여? 어떤 상품이 가장 자주 반품되는데?",
+            "jp": "何か傾向はありますか？ どの商品が一番返品されていますか？",
+            "zh": "那有什么规律吗？哪些商品被退回得最多？",
+            "ru": "А есть ли какая-то закономерность? Какие товары возвращают чаще всего?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Чаще всего возвращают товары из новой коллекции, которая вышла два месяца назад. Возможно, проблема в качестве или в описании на сайте.",
+            "en": "Products from the new collection that came out two months ago are returned most often. Maybe the problem is the quality or the description on the website.",
+            "es": "Lo que más se devuelve son los productos de la nueva colección que salió hace dos meses. Quizás el problema esté en la calidad o en la descripción de la web.",
+            "fr": "Ce sont surtout les articles de la nouvelle collection, sortie il y a deux mois, qui sont retournés. Le problème vient peut-être de la qualité ou de la description sur le site.",
+            "pt": "Os produtos da nova coleção, lançada há dois meses, são os mais devolvidos. Talvez o problema esteja na qualidade ou na descrição do site.",
+            "kr": "두 달 전에 출시된 새 컬렉션 상품이 가장 자주 반품돼. 아마 품질 문제이거나 사이트의 설명 문제일 거야.",
+            "jp": "一番返品が多いのは、2ヶ月前に発売された新コレクションの商品です。品質か、サイトの説明に問題があるかもしれません。",
+            "zh": "退回最多的是两个月前推出的新系列商品。可能是质量有问题，或者是网站上的描述有问题。",
+            "ru": "Чаще всего возвращают товары из новой коллекции, которая вышла два месяца назад. Возможно, проблема в качестве или в описании на сайте."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Нужно разобраться в этом вопросе. Я свяжусь с отделом контроля качества и попрошу их провести проверку.",
+            "en": "We need to get to the bottom of this. I'll contact the quality control department and ask them to conduct a check.",
+            "es": "Tenemos que aclarar este asunto. Me pondré en contacto con el departamento de control de calidad y les pediré que hagan una verificación.",
+            "fr": "Il faut tirer cela au clair. Je vais contacter le service qualité et leur demander de faire une vérification.",
+            "pt": "Precisamos entender essa questão. Vou falar com o departamento de controle de qualidade e pedir para eles fazerem uma verificação.",
+            "kr": "이 문제를 파악해야겠어. 품질 관리 부서에 연락해서 점검을 요청할게.",
+            "jp": "この問題を調査する必要がありますね。品質管理部門に連絡して、検査を依頼します。",
+            "zh": "这个问题需要查清楚。我会联系质量控制部门，请他们做一次检查。",
+            "ru": "Нужно разобраться в этом вопросе. Я свяжусь с отделом контроля качества и попрошу их провести проверку."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично. А я пока подготовлю детальный отчёт с разбивкой по категориям и причинам возврата.",
+            "en": "Great. In the meantime, I'll prepare a detailed report with a breakdown by category and reason for return.",
+            "es": "Perfecto. Mientras tanto, yo prepararé un informe detallado con el desglose por categorías y motivos de devolución.",
+            "fr": "Parfait. Pendant ce temps, je préparerai un rapport détaillé avec une répartition par catégories et par motifs de retour.",
+            "pt": "Ótimo. E eu, enquanto isso, vou preparar um relatório detalhado com a divisão por categorias e motivos de devolução.",
+            "kr": "좋아. 나는 그동안 카테고리와 반품 사유별로 구분한 상세 보고서를 준비할게.",
+            "jp": "素晴らしい。私はその間に、カテゴリーと返品理由別の詳細なレポートを準備しておきます。",
+            "zh": "好的。我这边先准备一份详细的报告，按类别和退货原因进行分类。",
+            "ru": "Отлично. А я пока подготовлю детальный отчёт с разбивкой по категориям и причинам возврата."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты уже посмотрел данные по посещаемости нашего сайта за выходные?",
+            "en": "Sergey, have you looked at the website traffic data for the weekend yet?",
+            "es": "Serguéi, ¿ya has visto los datos de visitas de nuestra web del fin de semana?",
+            "fr": "Sergueï, tu as déjà regardé les données de fréquentation de notre site pour le week-end ?",
+            "pt": "Sergei, você já viu os dados de visitas ao nosso site no fim de semana?",
+            "kr": "세르게이, 주말 동안 우리 사이트 방문자 수 데이터는 이미 봤어?",
+            "jp": "セルゲイさん、週末のサイト訪問データはもう見ましたか？",
+            "zh": "谢尔盖，你看过周末我们网站的访问量数据了吗？",
+            "ru": "Сергей, ты уже посмотрел данные по посещаемости нашего сайта за выходные?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Мария, я заметил необычную активность. В субботу вечером был резкий всплеск трафика.",
+            "en": "Yes, Maria, I noticed some unusual activity. On Saturday evening, there was a sharp spike in traffic.",
+            "es": "Sí, María, he notado una actividad inusual. El sábado por la noche hubo un pico repentino de tráfico.",
+            "fr": "Oui, Maria, j'ai remarqué une activité inhabituelle. Samedi soir, il y a eu un pic soudain de trafic.",
+            "pt": "Vi, Maria, notei uma atividade incomum. No sábado à noite, houve um pico repentino de tráfego.",
+            "kr": "응, 마리아, 특이한 활동을 발견했어. 토요일 저녁에 트래픽이 급격히 치솟았어.",
+            "jp": "はい、マリアさん、異常なアクティビティに気づきました。土曜日の夜にトラフィックが急増していました。",
+            "zh": "看了，玛丽亚，我注意到一个不寻常的动态。周六晚上流量有一个急剧的飙升。",
+            "ru": "Да, Мария, я заметил необычную активность. В субботу вечером был резкий всплеск трафика."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это странно, обычно в выходные трафик снижается. Ты выяснил, с чем это связано?",
+            "en": "That's strange, usually traffic goes down on weekends. Did you find out what it's linked to?",
+            "es": "Qué raro, normalmente los fines de semana el tráfico baja. ¿Has averiguado a qué se debe?",
+            "fr": "C'est étrange, d'habitude le trafic diminue le week-end. Tu as découvert à quoi c'est dû ?",
+            "pt": "Isso é estranho, normalmente nos fins de semana o tráfego cai. Você descobriu com o que isso está relacionado?",
+            "kr": "이상하네, 보통 주말에는 트래픽이 줄어드는데. 그게 뭐 때문인지 알아냈어?",
+            "jp": "それは変ですね、通常は週末にトラフィックは下がりますから。何が原因か突き止めましたか？",
+            "zh": "这很奇怪，通常周末流量会下降。你查清楚是什么原因了吗？",
+            "ru": "Это странно, обычно в выходные трафик снижается. Ты выяснил, с чем это связано?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я проверил источники перехода. Оказалось, что на наш сайт дала ссылку одна популярная новостная статья.",
+            "en": "I checked the traffic sources. It turned out that a popular news article linked to our website.",
+            "es": "He revisado las fuentes de tráfico. Resulta que un artículo de noticias popular enlazaba a nuestra web.",
+            "fr": "J'ai vérifié les sources de provenance. Il s'est avéré qu'un article de presse populaire a mis un lien vers notre site.",
+            "pt": "Verifiquei as fontes de acesso. Acontece que um artigo de notícias popular colocou um link para o nosso site.",
+            "kr": "유입 경로를 확인해 봤어. 알고 보니 인기 뉴스 기사 하나가 우리 사이트로 링크를 걸어줬더라고.",
+            "jp": "遷移元を確認しました。人気のあるニュース記事が私たちのサイトへのリンクを貼っていたことがわかりました。",
+            "zh": "我检查了访问来源。结果发现，是一篇热门新闻文章给了我们网站一个链接。",
+            "ru": "Я проверил источники перехода. Оказалось, что на наш сайт дала ссылку одна популярная новостная статья."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Вот это удача! Нужно использовать этот момент и закрепить интерес аудитории.",
+            "en": "What luck! We need to use this moment and solidify the audience's interest.",
+            "es": "¡Qué suerte! Tenemos que aprovechar este momento y afianzar el interés de la audiencia.",
+            "fr": "Quelle chance ! Il faut profiter de ce moment et consolider l'intérêt du public.",
+            "pt": "Que sorte! Precisamos aproveitar esse momento e consolidar o interesse do público.",
+            "kr": "그건 행운이네! 이 기회를 활용해서 관객의 관심을 붙잡아 둬야 해.",
+            "jp": "それはラッキーでしたね！ この機会を活用して、オーディエンスの関心を定着させる必要があります。",
+            "zh": "这可真是走运！我们要利用这个机会，巩固受众的兴趣。",
+            "ru": "Вот это удача! Нужно использовать этот момент и закрепить интерес аудитории."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен. Я подготовлю анализ поведения этих новых посетителей, чтобы понять, как их удержать.",
+            "en": "I agree. I'll prepare an analysis of these new visitors' behavior to understand how to retain them.",
+            "es": "De acuerdo. Prepararé un análisis del comportamiento de estos nuevos visitantes para entender cómo retenerlos.",
+            "fr": "Je suis d'accord. Je vais préparer une analyse du comportement de ces nouveaux visiteurs pour comprendre comment les fidéliser.",
+            "pt": "Concordo. Vou preparar uma análise do comportamento desses novos visitantes para entender como retê-los.",
+            "kr": "동의해. 이 새로운 방문자들의 행동을 분석해서 어떻게 유지할 수 있을지 파악할게.",
+            "jp": "同意します。これらの新規訪問者の行動分析を準備して、どうやって維持するかを理解します。",
+            "zh": "我同意。我会准备一份对这些新访客行为的分析，看看怎么留住他们。",
+            "ru": "Согласен. Я подготовлю анализ поведения этих новых посетителей, чтобы понять, как их удержать."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, ты закончила сравнительный анализ наших показателей с конкурентами?",
+            "en": "Elena, have you finished the comparative analysis of our metrics against the competitors?",
+            "es": "Elena, ¿has terminado el análisis comparativo de nuestros indicadores con los de la competencia?",
+            "fr": "Elena, tu as terminé l'analyse comparative de nos indicateurs avec ceux des concurrents ?",
+            "pt": "Elena, você terminou a análise comparativa dos nossos indicadores com os dos concorrentes?",
+            "kr": "옐레나, 경쟁사와 우리 지표를 비교하는 분석은 끝냈어?",
+            "jp": "エレナさん、競合他社との指標の比較分析は終わりましたか？",
+            "zh": "叶莲娜，你完成我们和竞争对手的指标对比分析了吗？",
+            "ru": "Елена, ты закончила сравнительный анализ наших показателей с конкурентами?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Почти, Иван. Я собрала все данные, но осталось оформить итоговую презентацию.",
+            "en": "Almost, Ivan. I've gathered all the data, but I still need to put together the final presentation.",
+            "es": "Casi, Iván. Ya he recopilado todos los datos, pero me falta dar formato a la presentación final.",
+            "fr": "Presque, Ivan. J'ai rassemblé toutes les données, mais il reste à finaliser la présentation.",
+            "pt": "Quase, Ivan. Eu coletei todos os dados, mas falta finalizar a apresentação final.",
+            "kr": "거의 다 됐어, 이반. 모든 데이터는 모았는데, 최종 프레젠테이션을 정리하는 게 남았어.",
+            "jp": "もう少しです、イワンさん。すべてのデータは集めましたが、最終的なプレゼンテーションの作成が残っています。",
+            "zh": "快完成了，伊万。我已经收集了所有数据，就差做最终的演示文稿了。",
+            "ru": "Почти, Иван. Я собрала все данные, но осталось оформить итоговую презентацию."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Какие основные выводы можно сделать? Мы отстаём или опережаем их по ключевым метрикам?",
+            "en": "What are the main conclusions we can draw? Are we falling behind or ahead of them on the key metrics?",
+            "es": "¿Cuáles son las principales conclusiones? ¿Vamos por detrás o por delante en las métricas clave?",
+            "fr": "Quelles sont les principales conclusions ? Sommes-nous en retard ou en avance sur eux sur les métriques clés ?",
+            "pt": "Quais são as principais conclusões? Estamos atrás ou à frente deles nas métricas-chave?",
+            "kr": "주요 결론은 뭐야? 핵심 지표에서 우리가 뒤처지고 있어, 아니면 앞서고 있어?",
+            "jp": "主な結論は何ですか？ 主要な指標で、私たちは遅れていますか、それともリードしていますか？",
+            "zh": "能得出哪些主要结论？在关键指标上我们是落后还是领先？",
+            "ru": "Какие основные выводы можно сделать? Мы отстаём или опережаем их по ключевым метрикам?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "По скорости обработки заказов мы значительно опережаем. А вот по стоимости доставки мы пока проигрываем.",
+            "en": "In terms of order processing speed, we are significantly ahead. But in terms of delivery cost, we're still losing for now.",
+            "es": "En velocidad de procesamiento de pedidos vamos muy por delante. Pero en coste de entrega, de momento, vamos perdiendo.",
+            "fr": "Sur la rapidité de traitement des commandes, nous sommes nettement en avance. En revanche, sur le coût de livraison, nous sommes encore perdants.",
+            "pt": "Na velocidade de processamento de pedidos, estamos bem à frente. Já no custo de entrega, por enquanto, estamos perdendo.",
+            "kr": "주문 처리 속도에서는 우리가 훨씬 앞서 있어. 그런데 배송 비용에서는 아직 우리가 뒤지고 있어.",
+            "jp": "注文処理のスピードでは、私たちが大幅にリードしています。一方、配送コストではまだ負けています。",
+            "zh": "在订单处理速度上我们明显领先。但在配送成本上，我们目前还是落后的。",
+            "ru": "По скорости обработки заказов мы значительно опережаем. А вот по стоимости доставки мы пока проигрываем."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это важная информация для планирования. Нужно подумать, как оптимизировать логистические расходы.",
+            "en": "That's important information for planning. We need to think about how to optimize logistics expenses.",
+            "es": "Es información importante para la planificación. Tenemos que pensar cómo optimizar los gastos de logística.",
+            "fr": "C'est une information importante pour la planification. Il faut réfléchir à comment optimiser les coûts logistiques.",
+            "pt": "Essa é uma informação importante para o planejamento. Precisamos pensar em como otimizar os custos logísticos.",
+            "kr": "그건 계획 수립에 중요한 정보네. 물류 비용을 최적화할 방법을 생각해 봐야겠어.",
+            "jp": "それは計画にとって重要な情報ですね。物流コストを最適化する方法を考える必要があります。",
+            "zh": "这对规划来说是很重要的信息。我们需要想想怎么优化物流成本。",
+            "ru": "Это важная информация для планирования. Нужно подумать, как оптимизировать логистические расходы."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я уже наметила несколько направлений для оптимизации и включу их в свой отчёт.",
+            "en": "Yes, I've already outlined several directions for optimization, and I'll include them in my report.",
+            "es": "Sí, ya he esbozado varias líneas de optimización y las incluiré en mi informe.",
+            "fr": "Oui, j'ai déjà identifié plusieurs pistes d'optimisation et je les inclurai dans mon rapport.",
+            "pt": "Sim, eu já delineei algumas direções para a otimização e vou incluí-las no meu relatório.",
+            "kr": "응, 나는 이미 최적화 방향 몇 가지를 정했고, 그것들을 내 보고서에 포함시킬 거야.",
+            "jp": "ええ、最適化のためのいくつかの方向性はすでに挙げていて、レポートに含めます。",
+            "zh": "是的，我已经初步想好了几个优化方向，会写进我的报告里。",
+            "ru": "Да, я уже наметила несколько направлений для оптимизации и включу их в свой отчёт."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, ты не мог бы взглянуть на мою таблицу с прогнозом продаж? Что-то мне кажется, что там ошибка.",
+            "en": "Alexey, could you take a look at my sales forecast spreadsheet? Something tells me there's an error in it.",
+            "es": "Alekséi, ¿podrías echar un vistazo a mi tabla con la previsión de ventas? Me da la sensación de que hay un error.",
+            "fr": "Alexeï, tu pourrais jeter un œil à mon tableau de prévisions des ventes ? J'ai l'impression qu'il y a une erreur.",
+            "pt": "Alexei, você poderia dar uma olhada na minha planilha com a previsão de vendas? Acho que tem um erro ali.",
+            "kr": "알렉세이, 내 판매 예측 표 좀 봐줄 수 있어? 뭔가 오류가 있는 것 같아.",
+            "jp": "アレクセイさん、私の売上予測の表を見てもらえませんか？ どこかに誤りがあるような気がするんです。",
+            "zh": "阿列克谢，你能帮我看一下我的销售预测表格吗？我总觉得里面有错误。",
+            "ru": "Алексей, ты не мог бы взглянуть на мою таблицу с прогнозом продаж? Что-то мне кажется, что там ошибка."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, Дмитрий, давай посмотрим. А в каком именно месте ты сомневаешься?",
+            "en": "Of course, Dmitry, let's take a look. Where exactly do you have doubts?",
+            "es": "Claro, Dmitri, vamos a verla. ¿Y en qué punto exactamente tienes dudas?",
+            "fr": "Bien sûr, Dmitri, regardons ça. Et à quel endroit exactement as-tu un doute ?",
+            "pt": "Claro, Dmitri, vamos ver. E em que ponto exatamente você está com dúvida?",
+            "kr": "물론이지, 드미트리, 한번 보자. 정확히 어느 부분이 의심스러운데?",
+            "jp": "もちろんです、ドミトリーさん、見てみましょう。具体的にどの部分が疑わしいですか？",
+            "zh": "当然可以，德米特里，我们来看看。你具体怀疑哪个地方？",
+            "ru": "Конечно, Дмитрий, давай посмотрим. А в каком именно месте ты сомневаешься?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Вот здесь, в прогнозе на третий квартал. У меня получился слишком резкий рост, который не подтверждается прошлогодними данными.",
+            "en": "Right here, in the forecast for the third quarter. I got too sharp of a growth that isn't supported by last year's data.",
+            "es": "Aquí, en la previsión del tercer trimestre. Me sale un crecimiento demasiado brusco que no se confirma con los datos del año pasado.",
+            "fr": "Ici, dans les prévisions pour le troisième trimestre. J'obtiens une croissance trop forte, qui n'est pas confirmée par les données de l'année dernière.",
+            "pt": "Bem aqui, na previsão para o terceiro trimestre. Eu obtive um crescimento alto demais, que não é confirmado pelos dados do ano passado.",
+            "kr": "바로 여기, 3분기 예측 부분이야. 지난해 데이터로는 확인되지 않는 너무 급격한 성장이 나왔거든.",
+            "jp": "ここです、第3四半期の予測です。昨年のデータでは裏付けられない、急すぎる成長になってしまっているんです。",
+            "zh": "就在这里，第三季度的预测。我得出了一个过于急剧的增长，这和去年的数据对不上。",
+            "ru": "Вот здесь, в прогнозе на третий квартал. У меня получился слишком резкий рост, который не подтверждается прошлогодними данными."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Действительно, ты прав. Похоже, ты случайно использовал коэффициент из другого расчёта. Сейчас исправим.",
+            "en": "Indeed, you're right. It looks like you accidentally used a coefficient from a different calculation. We'll fix it right now.",
+            "es": "Es cierto, tienes razón. Parece que has usado por error el coeficiente de otro cálculo. Ahora lo corregimos.",
+            "fr": "Effectivement, tu as raison. On dirait que tu as utilisé par erreur un coefficient issu d'un autre calcul. On va corriger ça tout de suite.",
+            "pt": "Realmente, você tem razão. Parece que você usou sem querer um coeficiente de outro cálculo. Vamos corrigir agora.",
+            "kr": "정말, 네 말이 맞네. 아마 다른 계산에서 계수를 실수로 가져온 것 같아. 지금 고치자.",
+            "jp": "確かに、あなたの言う通りですね。どうやら、別の計算の係数を誤って使ったようですね。すぐに修正しましょう。",
+            "zh": "确实，你说得对。看起来你不小心用了另一个计算里的系数。我们现在就改过来。",
+            "ru": "Действительно, ты прав. Похоже, ты случайно использовал коэффициент из другого расчёта. Сейчас исправим."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спасибо большое! Я уже начал переживать, что придётся переделывать весь отчёт.",
+            "en": "Thank you so much! I was starting to worry that I'd have to redo the whole report.",
+            "es": "¡Muchas gracias! Ya estaba empezando a preocuparme por tener que rehacer todo el informe.",
+            "fr": "Merci beaucoup ! Je commençais à m'inquiéter à l'idée de devoir refaire tout le rapport.",
+            "pt": "Muito obrigado! Eu já estava começando a me preocupar que teria que refazer o relatório inteiro.",
+            "kr": "정말 고마워! 벌써 보고서 전체를 다시 만들어야 하나 걱정하기 시작했어.",
+            "jp": "本当にありがとうございます！ レポート全体を作り直さなければならないんじゃないかと心配し始めていました。",
+            "zh": "太感谢了！我刚才都开始担心要重做整个报告了。",
+            "ru": "Спасибо большое! Я уже начал переживать, что придётся переделывать весь отчёт."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не за что, такие ошибки случаются. Главное, что мы вовремя заметили и всё исправили.",
+            "en": "Don't mention it, these mistakes happen. The main thing is that we noticed it in time and fixed everything.",
+            "es": "De nada, estos errores pasan. Lo importante es que lo hemos detectado a tiempo y lo hemos arreglado.",
+            "fr": "De rien, ce genre d'erreurs arrive. L'essentiel, c'est qu'on l'ait remarqué à temps et qu'on ait tout corrigé.",
+            "pt": "De nada, esses erros acontecem. O importante é que percebemos a tempo e corrigimos tudo.",
+            "kr": "천만에, 이런 실수는 누구나 할 수 있어. 중요한 건 우리가 제때 발견해서 다 고쳤다는 거지.",
+            "jp": "どういたしまして、こういうミスはよくあることです。大事なのは、私たちが早く気づいて全部修正できたことです。",
+            "zh": "不客气，这种错误谁都可能犯。重要的是我们及时发现并改正了。",
+            "ru": "Не за что, такие ошибки случаются. Главное, что мы вовремя заметили и всё исправили."
+          }
+        }
+      ]
+    }
+  ]
+}

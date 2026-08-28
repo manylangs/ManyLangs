@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S001",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun gathers her belongings and prepares to disembark",
+      "pass": true,
+      "evidence": "L002: 'Okay, I have my bag. Passport, hotel reservation... everything is here.' and L003: 'Alright, let's go.'"
+    },
+    {
+      "requirement": "Jieun steps off the airplane into the terminal",
+      "pass": true,
+      "evidence": "L003: 'Alright, let's go.' implies movement to disembark, consistent with the context of the plane having landed."
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the arrival terminal area",
+      "pass": true,
+      "evidence": "Dialogue stays within the disembarkation context; no mention of immigration, baggage claim, or leaving the airport."
+    },
+    {
+      "requirement": "Do not introduce any dialogue or interaction with other characters",
+      "pass": true,
+      "evidence": "All lines are spoken by 'A' (Jieun) as a monologue; no other speakers are present."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

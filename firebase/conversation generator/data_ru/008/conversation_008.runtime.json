@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a1",
+    "id": "008"
+  },
+  "title": {
+    "target": "Описание места",
+    "en": "Describing a Place",
+    "es": "Descripción de un lugar",
+    "fr": "Description du lieu",
+    "pt": "Descrição do lugar",
+    "kr": "장소 묘사",
+    "jp": "場所の説明",
+    "zh": "描述地点",
+    "ru": "Описание места"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты был в новом парке в центре?",
+            "en": "Ivan, have you been to the new park in the center?",
+            "es": "Iván, ¿has estado en el parque nuevo del centro?",
+            "fr": "Ivan, tu es allé au nouveau parc au centre-ville ?",
+            "pt": "Ivan, você foi ao novo parque no centro?",
+            "kr": "이반, 시내에 있는 새 공원에 가 봤어?",
+            "jp": "イワン、中心部の新しい公園に行ったことある？",
+            "zh": "伊万，你去过市中心那个新公园吗？",
+            "ru": "Иван, ты был в новом парке в центре?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я был там в субботу. Там очень красиво.",
+            "en": "Yes, I was there on Saturday. It's very beautiful there.",
+            "es": "Sí, estuve allí el sábado. Es muy bonito.",
+            "fr": "Oui, j'y suis allé samedi. C'est très beau là-bas.",
+            "pt": "Sim, eu fui lá no sábado. É muito bonito lá.",
+            "kr": "응, 토요일에 거기 있었어. 거기 정말 아름다워.",
+            "jp": "うん、土曜日に行ったよ。とてもきれいだよ。",
+            "zh": "去过，我星期六去的。那里非常漂亮。",
+            "ru": "Да, я был там в субботу. Там очень красиво."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? А что там есть?",
+            "en": "Really? And what does it have?",
+            "es": "¿De verdad? ¿Y qué hay allí?",
+            "fr": "Vraiment ? Et qu'est-ce qu'il y a là-bas ?",
+            "pt": "Sério? E o que tem lá?",
+            "kr": "정말? 그런데 거기 뭐가 있어?",
+            "jp": "本当？ 何があるの？",
+            "zh": "真的吗？那里有什么？",
+            "ru": "Правда? А что там есть?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Там есть большое озеро и много деревьев.",
+            "en": "There's a big lake and lots of trees.",
+            "es": "Hay un lago grande y muchos árboles.",
+            "fr": "Il y a un grand lac et beaucoup d'arbres.",
+            "pt": "Tem um lago grande e muitas árvores.",
+            "kr": "거기 큰 호수랑 나무가 많아.",
+            "jp": "大きな湖とたくさんの木があるよ。",
+            "zh": "那里有一个大湖和很多树。",
+            "ru": "Там есть большое озеро и много деревьев."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Звучит отлично. Я хочу туда пойти.",
+            "en": "Sounds great. I want to go there.",
+            "es": "Suena genial. Quiero ir allí.",
+            "fr": "Ça a l'air super. Je veux y aller.",
+            "pt": "Parece ótimo. Eu quero ir lá.",
+            "kr": "좋겠다. 나도 거기 가고 싶어.",
+            "jp": "いいね。行ってみたいな。",
+            "zh": "听起来不错。我想去那里。",
+            "ru": "Звучит отлично. Я хочу туда пойти."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обязательно сходи. Тебе понравится.",
+            "en": "You definitely should go. You'll like it.",
+            "es": "Ve sin falta. Te gustará.",
+            "fr": "Tu devrais absolument y aller. Tu vas aimer.",
+            "pt": "Vai com certeza. Você vai gostar.",
+            "kr": "꼭 가 봐. 마음에 들 거야.",
+            "jp": "ぜひ行ってみて。気に入るよ。",
+            "zh": "你一定要去。你会喜欢的。",
+            "ru": "Обязательно сходи. Тебе понравится."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, где находится библиотека?",
+            "en": "Dmitry, where is the library?",
+            "es": "Dmitri, ¿dónde está la biblioteca?",
+            "fr": "Dmitri, où se trouve la bibliothèque ?",
+            "pt": "Dmitri, onde fica a biblioteca?",
+            "kr": "드미트리, 도서관이 어디에 있어?",
+            "jp": "ドミトリー、図書館はどこにあるの？",
+            "zh": "德米特里，图书馆在哪里？",
+            "ru": "Дмитрий, где находится библиотека?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Она на улице Пушкина, рядом с парком.",
+            "en": "It's on Pushkin Street, next to the park.",
+            "es": "Está en la calle Pushkin, al lado del parque.",
+            "fr": "Elle est rue Pouchkine, à côté du parc.",
+            "pt": "Ela fica na rua Púchkin, perto do parque.",
+            "kr": "푸시킨 거리에 있어, 공원 옆이야.",
+            "jp": "プーシキン通りにあって、公園の隣だよ。",
+            "zh": "在普希金街上，公园旁边。",
+            "ru": "Она на улице Пушкина, рядом с парком."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А она большая?",
+            "en": "And is it big?",
+            "es": "¿Y es grande?",
+            "fr": "Et elle est grande ?",
+            "pt": "E ela é grande?",
+            "kr": "그런데 도서관이 커?",
+            "jp": "大きいの？",
+            "zh": "那它大吗？",
+            "ru": "А она большая?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, она очень большая и светлая.",
+            "en": "Yes, it's very big and bright.",
+            "es": "Sí, es muy grande y luminosa.",
+            "fr": "Oui, elle est très grande et lumineuse.",
+            "pt": "Sim, ela é muito grande e clara.",
+            "kr": "응, 아주 크고 밝아.",
+            "jp": "うん、とても大きくて明るいよ。",
+            "zh": "是的，它非常大，而且很明亮。",
+            "ru": "Да, она очень большая и светлая."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Там есть читальный зал?",
+            "en": "Is there a reading room there?",
+            "es": "¿Hay sala de lectura?",
+            "fr": "Est-ce qu'il y a une salle de lecture ?",
+            "pt": "Tem sala de leitura lá?",
+            "kr": "거기 열람실이 있어?",
+            "jp": "閲覧室はあるの？",
+            "zh": "那里有阅览室吗？",
+            "ru": "Там есть читальный зал?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, там есть два читальных зала.",
+            "en": "Of course, there are two reading rooms there.",
+            "es": "Claro, hay dos salas de lectura.",
+            "fr": "Bien sûr, il y a deux salles de lecture.",
+            "pt": "Claro, tem duas salas de leitura lá.",
+            "kr": "물론이지, 열람실이 두 개 있어.",
+            "jp": "もちろん、閲覧室が二つあるよ。",
+            "zh": "当然有，那里有两个阅览室。",
+            "ru": "Конечно, там есть два читальных зала."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, тебе нравится наш университет?",
+            "en": "Sergey, do you like our university?",
+            "es": "Serguéi, ¿te gusta nuestra universidad?",
+            "fr": "Sergueï, tu aimes notre université ?",
+            "pt": "Sergei, você gosta da nossa universidade?",
+            "kr": "세르게이, 우리 대학교 마음에 들어?",
+            "jp": "セルゲイ、うちの大学は好き？",
+            "zh": "谢尔盖，你喜欢我们的大学吗？",
+            "ru": "Сергей, тебе нравится наш университет?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, мне очень нравится. Здесь уютно.",
+            "en": "Yes, I like it a lot. It's cozy here.",
+            "es": "Sí, me gusta mucho. Aquí se está a gusto.",
+            "fr": "Oui, je l'aime beaucoup. On s'y sent bien.",
+            "pt": "Sim, eu gosto muito. É aconchegante aqui.",
+            "kr": "응, 정말 마음에 들어. 여기 아늑해.",
+            "jp": "うん、とても好きだよ。ここは居心地がいいんだ。",
+            "zh": "是的，我非常喜欢。这里很舒适。",
+            "ru": "Да, мне очень нравится. Здесь уютно."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А какой твой любимый корпус?",
+            "en": "And which building is your favorite?",
+            "es": "¿Y cuál es tu edificio favorito?",
+            "fr": "Et quel est ton bâtiment préféré ?",
+            "pt": "E qual é o seu prédio favorito?",
+            "kr": "그런데 네가 가장 좋아하는 건물은 어디야?",
+            "jp": "で、どの校舎が一番好きなの？",
+            "zh": "那你最喜欢哪栋楼？",
+            "ru": "А какой твой любимый корпус?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мне нравится главный корпус. Он старый и красивый.",
+            "en": "I like the main building. It's old and beautiful.",
+            "es": "Me gusta el edificio principal. Es antiguo y bonito.",
+            "fr": "J'aime le bâtiment principal. Il est vieux et beau.",
+            "pt": "Eu gosto do prédio principal. Ele é antigo e bonito.",
+            "kr": "나는 본관이 좋아. 오래됐지만 아름다워.",
+            "jp": "本館が好きだな。古くてきれいなんだ。",
+            "zh": "我喜欢主楼。它又古老又漂亮。",
+            "ru": "Мне нравится главный корпус. Он старый и красивый."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, там очень интересная архитектура.",
+            "en": "Yes, the architecture there is very interesting.",
+            "es": "Sí, allí hay una arquitectura muy interesante.",
+            "fr": "Oui, l'architecture y est très intéressante.",
+            "pt": "Sim, a arquitetura de lá é muito interessante.",
+            "kr": "응, 거기 건축이 정말 흥미롭지.",
+            "jp": "うん、あそこはとても面白い建築だよね。",
+            "zh": "是的，那里的建筑很有意思。",
+            "ru": "Да, там очень интересная архитектура."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен, и внутри тоже всё красиво.",
+            "en": "I agree, and inside everything is beautiful too.",
+            "es": "De acuerdo, y por dentro también todo es bonito.",
+            "fr": "Je suis d'accord, et à l'intérieur aussi, tout est beau.",
+            "pt": "Concordo, e por dentro também é tudo bonito.",
+            "kr": "맞아, 그리고 안도 전부 아름다워.",
+            "jp": "同感だよ、中も全部きれいだしね。",
+            "zh": "同意，里面也都很漂亮。",
+            "ru": "Согласен, и внутри тоже всё красиво."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, ты была в новом кафе на углу?",
+            "en": "Olga, have you been to the new cafe on the corner?",
+            "es": "Olga, ¿has estado en el café nuevo de la esquina?",
+            "fr": "Olga, tu es allée au nouveau café au coin de la rue ?",
+            "pt": "Olga, você foi ao novo café na esquina?",
+            "kr": "올가, 모퉁이에 있는 새 카페에 가 봤어?",
+            "jp": "オルガ、角にある新しいカフェに行ったことある？",
+            "zh": "奥尔加，你去过拐角那家新咖啡馆吗？",
+            "ru": "Ольга, ты была в новом кафе на углу?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я была там вчера с подругой.",
+            "en": "Yes, I was there yesterday with a friend.",
+            "es": "Sí, estuve allí ayer con una amiga.",
+            "fr": "Oui, j'y suis allée hier avec une amie.",
+            "pt": "Sim, eu fui lá ontem com uma amiga.",
+            "kr": "응, 어제 친구랑 거기 있었어.",
+            "jp": "うん、昨日友達と行ったよ。",
+            "zh": "去过，我昨天和我的朋友一起去的。",
+            "ru": "Да, я была там вчера с подругой."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ну и как там? Уютно?",
+            "en": "So, how is it? Is it cozy?",
+            "es": "¿Y qué tal? ¿Es acogedor?",
+            "fr": "Alors, comment c'est là-bas ? On s'y sent bien ?",
+            "pt": "E como é lá? É aconchegante?",
+            "kr": "그런데 거기 어때? 아늑해?",
+            "jp": "で、どうだった？ 居心地よかった？",
+            "zh": "那里怎么样？舒适吗？",
+            "ru": "Ну и как там? Уютно?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Очень уютно. Там мягкие диваны и приятная музыка.",
+            "en": "Very cozy. There are soft sofas and nice music.",
+            "es": "Muy acogedor. Hay sofás suaves y música agradable.",
+            "fr": "On s'y sent très bien. Il y a des canapés moelleux et une musique agréable.",
+            "pt": "É muito aconchegante. Tem sofás macios e uma música agradável.",
+            "kr": "정말 아늑해. 거기 푹신한 소파랑 듣기 좋은 음악이 있어.",
+            "jp": "とても居心地がよかったよ。柔らかいソファと素敵な音楽があったよ。",
+            "zh": "非常舒适。那里有软沙发和好听的音乐。",
+            "ru": "Очень уютно. Там мягкие диваны и приятная музыка."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А еда вкусная?",
+            "en": "And is the food tasty?",
+            "es": "¿Y la comida es rica?",
+            "fr": "Et la nourriture est bonne ?",
+            "pt": "E a comida é gostosa?",
+            "kr": "그런데 음식은 맛있어?",
+            "jp": "料理はおいしかった？",
+            "zh": "那食物好吃吗？",
+            "ru": "А еда вкусная?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, и еда вкусная, и кофе отличный.",
+            "en": "Yes, the food is tasty, and the coffee is excellent.",
+            "es": "Sí, la comida es rica y el café es excelente.",
+            "fr": "Oui, la nourriture est bonne et le café est excellent.",
+            "pt": "Sim, a comida é gostosa e o café é ótimo.",
+            "kr": "응, 음식도 맛있고 커피도 훌륭해.",
+            "jp": "うん、料理もおいしいし、コーヒーも最高だったよ。",
+            "zh": "好吃，食物好吃，咖啡也很棒。",
+            "ru": "Да, и еда вкусная, и кофе отличный."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, где ты живёшь?",
+            "en": "Alexey, where do you live?",
+            "es": "Alekséi, ¿dónde vives?",
+            "fr": "Alexeï, où est-ce que tu habites ?",
+            "pt": "Alexei, onde você mora?",
+            "kr": "알렉세이, 너 어디 살아?",
+            "jp": "アレクセイ、どこに住んでるの？",
+            "zh": "阿列克谢，你住在哪里？",
+            "ru": "Алексей, где ты живёшь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я живу в новом районе, недалеко от реки.",
+            "en": "I live in a new neighborhood, not far from the river.",
+            "es": "Vivo en un barrio nuevo, cerca del río.",
+            "fr": "J'habite dans un nouveau quartier, pas loin de la rivière.",
+            "pt": "Eu moro em um bairro novo, perto do rio.",
+            "kr": "나는 강에서 멀지 않은 새 동네에 살아.",
+            "jp": "川の近くの新しい地区に住んでるんだ。",
+            "zh": "我住在新城区，离河不远。",
+            "ru": "Я живу в новом районе, недалеко от реки."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А какой там вид из окна?",
+            "en": "And what's the view from the window like?",
+            "es": "¿Y qué vista hay desde la ventana?",
+            "fr": "Et quelle est la vue depuis la fenêtre ?",
+            "pt": "E como é a vista da janela?",
+            "kr": "그런데 창밖으로 보이는 풍경은 어때?",
+            "jp": "で、窓からの眺めはどうなの？",
+            "zh": "那从窗户看出去的景色怎么样？",
+            "ru": "А какой там вид из окна?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Очень красивый. Я вижу реку и мост.",
+            "en": "Very beautiful. I can see the river and the bridge.",
+            "es": "Muy bonita. Veo el río y el puente.",
+            "fr": "Elle est très belle. Je vois la rivière et le pont.",
+            "pt": "É muito bonita. Eu vejo o rio e a ponte.",
+            "kr": "정말 아름다워. 강과 다리가 보여.",
+            "jp": "とてもきれいだよ。川と橋が見えるんだ。",
+            "zh": "非常漂亮。我能看到河和桥。",
+            "ru": "Очень красивый. Я вижу реку и мост."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это, наверное, здорово.",
+            "en": "That must be really nice.",
+            "es": "Eso debe ser estupendo.",
+            "fr": "Ça doit être génial.",
+            "pt": "Isso deve ser incrível.",
+            "kr": "그건 아마 굉장하겠다.",
+            "jp": "それはきっと素晴らしいね。",
+            "zh": "那大概很棒吧。",
+            "ru": "Это, наверное, здорово."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, особенно красиво вечером, когда зажигаются огни.",
+            "en": "Yes, it's especially beautiful in the evening when the lights come on.",
+            "es": "Sí, es especialmente bonito por la noche, cuando se encienden las luces.",
+            "fr": "Oui, c'est surtout beau le soir, quand les lumières s'allument.",
+            "pt": "Sim, é especialmente bonito à noite, quando as luzes se acendem.",
+            "kr": "응, 특히 불이 켜지는 저녁에 정말 아름다워.",
+            "jp": "うん、特に夜に明かりがともるときがきれいなんだ。",
+            "zh": "是的，尤其是晚上灯亮起来的时候，特别美。",
+            "ru": "Да, особенно красиво вечером, когда зажигаются огни."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, как выглядит твоя комната?",
+            "en": "Maria, what does your room look like?",
+            "es": "María, ¿cómo es tu habitación?",
+            "fr": "Maria, à quoi ressemble ta chambre ?",
+            "pt": "Maria, como é o seu quarto?",
+            "kr": "마리야, 네 방은 어떻게 생겼어?",
+            "jp": "マリア、あなたの部屋はどんな感じなの？",
+            "zh": "玛丽亚，你的房间是什么样的？",
+            "ru": "Мария, как выглядит твоя комната?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Она небольшая, но очень светлая.",
+            "en": "It's small, but very bright.",
+            "es": "Es pequeña, pero muy luminosa.",
+            "fr": "Elle est petite, mais très lumineuse.",
+            "pt": "Ele é pequeno, mas muito claro.",
+            "kr": "작지만 정말 밝아.",
+            "jp": "小さめだけど、とても明るいの。",
+            "zh": "它不大，但是非常明亮。",
+            "ru": "Она небольшая, но очень светлая."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А что там есть?",
+            "en": "And what does it have?",
+            "es": "¿Y qué hay en ella?",
+            "fr": "Et qu'est-ce qu'il y a dedans ?",
+            "pt": "E o que tem lá?",
+            "kr": "그런데 거기 뭐가 있어?",
+            "jp": "で、何があるの？",
+            "zh": "那里面有什么？",
+            "ru": "А что там есть?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Там есть кровать, стол и большой шкаф.",
+            "en": "There's a bed, a table, and a big wardrobe.",
+            "es": "Hay una cama, una mesa y un armario grande.",
+            "fr": "Il y a un lit, une table et une grande armoire.",
+            "pt": "Tem uma cama, uma mesa e um armário grande.",
+            "kr": "침대랑 책상, 그리고 큰 옷장이 있어.",
+            "jp": "ベッドと机と大きなクローゼットがあるの。",
+            "zh": "有一张床、一张桌子和一个大衣柜。",
+            "ru": "Там есть кровать, стол и большой шкаф."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А окно большое?",
+            "en": "And is the window big?",
+            "es": "¿Y la ventana es grande?",
+            "fr": "Et la fenêtre est grande ?",
+            "pt": "E a janela é grande?",
+            "kr": "그런데 창문은 커?",
+            "jp": "窓は大きいの？",
+            "zh": "那窗户大吗？",
+            "ru": "А окно большое?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, окно большое, и из него видно двор.",
+            "en": "Yes, the window is big, and you can see the courtyard from it.",
+            "es": "Sí, la ventana es grande y desde ella se ve el patio.",
+            "fr": "Oui, la fenêtre est grande, et on voit la cour à travers.",
+            "pt": "Sim, a janela é grande, e dá para ver o pátio por ela.",
+            "kr": "응, 창문이 크고, 거기서 마당이 보여.",
+            "jp": "うん、窓は大きいし、そこから中庭が見えるの。",
+            "zh": "是的，窗户很大，从窗户能看到院子。",
+            "ru": "Да, окно большое, и из него видно двор."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, ты знаешь, где находится почта?",
+            "en": "Elena, do you know where the post office is?",
+            "es": "Elena, ¿sabes dónde está el correo?",
+            "fr": "Elena, tu sais où se trouve la poste ?",
+            "pt": "Elena, você sabe onde fica o correio?",
+            "kr": "옐레나, 우체국이 어디에 있는지 알아?",
+            "jp": "エレナ、郵便局がどこにあるか知ってる？",
+            "zh": "叶莲娜，你知道邮局在哪里吗？",
+            "ru": "Елена, ты знаешь, где находится почта?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, она за углом, рядом с аптекой.",
+            "en": "Yes, it's around the corner, next to the pharmacy.",
+            "es": "Sí, está a la vuelta de la esquina, al lado de la farmacia.",
+            "fr": "Oui, elle est au coin, à côté de la pharmacie.",
+            "pt": "Sim, ele fica na esquina, perto da farmácia.",
+            "kr": "응, 약국 옆, 모퉁이에 있어.",
+            "jp": "うん、角を曲がったところで、薬局の隣だよ。",
+            "zh": "知道，就在拐角处，药店旁边。",
+            "ru": "Да, она за углом, рядом с аптекой."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А это далеко отсюда?",
+            "en": "And is it far from here?",
+            "es": "¿Y queda lejos de aquí?",
+            "fr": "Et c'est loin d'ici ?",
+            "pt": "E fica longe daqui?",
+            "kr": "그런데 여기서 멀어?",
+            "jp": "ここから遠い？",
+            "zh": "那离这里远吗？",
+            "ru": "А это далеко отсюда?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, это совсем близко. Пять минут пешком.",
+            "en": "No, it's really close. Five minutes on foot.",
+            "es": "No, está muy cerca. A cinco minutos andando.",
+            "fr": "Non, c'est tout près. Cinq minutes à pied.",
+            "pt": "Não, é bem perto. Cinco minutos a pé.",
+            "kr": "아니, 아주 가까워. 걸어서 오 분이면 돼.",
+            "jp": "ううん、すごく近いよ。歩いて五分だよ。",
+            "zh": "不远，非常近。走路五分钟。",
+            "ru": "Нет, это совсем близко. Пять минут пешком."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, спасибо.",
+            "en": "Great, thanks.",
+            "es": "Genial, gracias.",
+            "fr": "Parfait, merci.",
+            "pt": "Ótimo, obrigado.",
+            "kr": "좋아, 고마워.",
+            "jp": "よかった、ありがとう。",
+            "zh": "太好了，谢谢。",
+            "ru": "Отлично, спасибо."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не за что. Там ещё и магазин рядом.",
+            "en": "You're welcome. There's also a store nearby.",
+            "es": "De nada. Además, hay una tienda cerca.",
+            "fr": "De rien. Il y a aussi un magasin à côté.",
+            "pt": "De nada. E ainda tem uma loja perto.",
+            "kr": "천만에. 거기 옆에 상점도 있어.",
+            "jp": "どういたしまして。近くに店もあるよ。",
+            "zh": "不客气。那里附近还有一家商店。",
+            "ru": "Не за что. Там ещё и магазин рядом."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, какой твой любимый район в городе?",
+            "en": "Ivan, what's your favorite neighborhood in the city?",
+            "es": "Iván, ¿cuál es tu barrio favorito de la ciudad?",
+            "fr": "Ivan, quel est ton quartier préféré en ville ?",
+            "pt": "Ivan, qual é o seu bairro favorito na cidade?",
+            "kr": "이반, 도시에서 네가 가장 좋아하는 동네는 어디야?",
+            "jp": "イワン、町で一番好きな地区はどこ？",
+            "zh": "伊万，你最喜欢城里的哪个区？",
+            "ru": "Иван, какой твой любимый район в городе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мне нравится старый центр. Там очень красиво.",
+            "en": "I like the old center. It's very beautiful there.",
+            "es": "Me gusta el centro antiguo. Es muy bonito.",
+            "fr": "J'aime le vieux centre. C'est très beau là-bas.",
+            "pt": "Eu gosto do centro antigo. É muito bonito lá.",
+            "kr": "나는 옛 시내가 좋아. 거기 정말 아름다워.",
+            "jp": "旧市街の中心部が好きだな。そこはとてもきれいなんだ。",
+            "zh": "我喜欢老城区。那里非常漂亮。",
+            "ru": "Мне нравится старый центр. Там очень красиво."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А почему? Что там особенного?",
+            "en": "And why? What's special about it?",
+            "es": "¿Y por qué? ¿Qué tiene de especial?",
+            "fr": "Et pourquoi ? Qu'est-ce qu'il a de spécial ?",
+            "pt": "E por quê? O que tem de especial lá?",
+            "kr": "그런데 왜? 거기 뭐가 특별한데?",
+            "jp": "で、どうして？ 何が特別なの？",
+            "zh": "为什么？那里有什么特别的？",
+            "ru": "А почему? Что там особенного?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Там старые дома и тихие улицы.",
+            "en": "There are old houses and quiet streets.",
+            "es": "Hay casas antiguas y calles tranquilas.",
+            "fr": "Il y a de vieilles maisons et des rues calmes.",
+            "pt": "Tem casas antigas e ruas tranquilas.",
+            "kr": "거기 오래된 집들이랑 조용한 거리들이 있어.",
+            "jp": "古い家と静かな通りがあるんだ。",
+            "zh": "那里有老房子和安静的街道。",
+            "ru": "Там старые дома и тихие улицы."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, там приятно гулять.",
+            "en": "Yes, it's nice to take a walk there.",
+            "es": "Sí, allí se pasea a gusto.",
+            "fr": "Oui, c'est agréable de s'y promener.",
+            "pt": "Sim, é agradável passear lá.",
+            "kr": "응, 거기 걷기 좋지.",
+            "jp": "うん、そこは散歩するのに気持ちいいよね。",
+            "zh": "是的，在那里散步很舒服。",
+            "ru": "Да, там приятно гулять."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Особенно утром, когда мало людей.",
+            "en": "Especially in the morning, when there are few people.",
+            "es": "Sobre todo por la mañana, cuando hay poca gente.",
+            "fr": "Surtout le matin, quand il y a peu de monde.",
+            "pt": "Especialmente de manhã, quando tem poucas pessoas.",
+            "kr": "특히 사람이 적은 아침에 정말 좋아.",
+            "jp": "特に人が少ない朝はね。",
+            "zh": "尤其是早上的时候，人很少。",
+            "ru": "Особенно утром, когда мало людей."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, где ты обычно отдыхаешь?",
+            "en": "Anna, where do you usually relax?",
+            "es": "Ana, ¿dónde sueles descansar?",
+            "fr": "Anna, où est-ce que tu te reposes d'habitude ?",
+            "pt": "Anna, onde você costuma descansar?",
+            "kr": "안나, 너 보통 어디서 쉬어?",
+            "jp": "アンナ、普段どこで休んでるの？",
+            "zh": "安娜，你通常在哪里休息？",
+            "ru": "Анна, где ты обычно отдыхаешь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я люблю парк у озера. Там спокойно.",
+            "en": "I love the park by the lake. It's peaceful there.",
+            "es": "Me gusta el parque del lago. Allí se está tranquilo.",
+            "fr": "J'aime le parc au bord du lac. C'est tranquille là-bas.",
+            "pt": "Eu gosto do parque perto do lago. É calmo lá.",
+            "kr": "나는 호숫가 공원이 좋아. 거기 평화로워.",
+            "jp": "湖のそばの公園が好きなの。そこは静かなのよ。",
+            "zh": "我喜欢湖边的公园。那里很安静。",
+            "ru": "Я люблю парк у озера. Там спокойно."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А там есть скамейки?",
+            "en": "And are there benches there?",
+            "es": "¿Y hay bancos?",
+            "fr": "Et est-ce qu'il y a des bancs ?",
+            "pt": "E tem bancos lá?",
+            "kr": "그런데 거기 벤치가 있어?",
+            "jp": "で、ベンチはあるの？",
+            "zh": "那里有长椅吗？",
+            "ru": "А там есть скамейки?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, там много скамеек и красивые дорожки.",
+            "en": "Yes, there are lots of benches and beautiful paths.",
+            "es": "Sí, hay muchos bancos y caminos bonitos.",
+            "fr": "Oui, il y a beaucoup de bancs et de jolis chemins.",
+            "pt": "Sim, tem muitos bancos e caminhos bonitos.",
+            "kr": "응, 벤치가 많고 예쁜 산책로도 있어.",
+            "jp": "うん、ベンチがたくさんあって、きれいな小道もあるの。",
+            "zh": "有，那里有很多长椅和漂亮的小路。",
+            "ru": "Да, там много скамеек и красивые дорожки."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это хорошее место для прогулок.",
+            "en": "It's a good place for walks.",
+            "es": "Es un buen lugar para pasear.",
+            "fr": "C'est un bon endroit pour se promener.",
+            "pt": "É um bom lugar para passear.",
+            "kr": "산책하기 좋은 곳이네.",
+            "jp": "散歩にいい場所だね。",
+            "zh": "那是个散步的好地方。",
+            "ru": "Это хорошее место для прогулок."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, и там всегда свежий воздух.",
+            "en": "Yes, and the air is always fresh there.",
+            "es": "Sí, y allí siempre hay aire fresco.",
+            "fr": "Oui, et l'air y est toujours frais.",
+            "pt": "Sim, e o ar é sempre fresco lá.",
+            "kr": "응, 그리고 거기 항상 신선한 공기가 있어.",
+            "jp": "うん、それにいつも空気が新鮮なのよ。",
+            "zh": "是的，而且那里空气总是很新鲜。",
+            "ru": "Да, и там всегда свежий воздух."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, какой твой любимый магазин?",
+            "en": "Dmitry, what's your favorite store?",
+            "es": "Dmitri, ¿cuál es tu tienda favorita?",
+            "fr": "Dmitri, quel est ton magasin préféré ?",
+            "pt": "Dmitri, qual é a sua loja favorita?",
+            "kr": "드미트리, 네가 가장 좋아하는 상점은 어디야?",
+            "jp": "ドミトリー、一番好きな店はどこ？",
+            "zh": "德米特里，你最喜欢哪家商店？",
+            "ru": "Дмитрий, какой твой любимый магазин?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мне нравится книжный магазин на главной улице.",
+            "en": "I like the bookstore on the main street.",
+            "es": "Me gusta la librería de la calle principal.",
+            "fr": "J'aime la librairie sur la rue principale.",
+            "pt": "Eu gosto da livraria na rua principal.",
+            "kr": "나는 큰길에 있는 서점이 좋아.",
+            "jp": "大通りにある本屋さんが好きなんだ。",
+            "zh": "我喜欢主街上的那家书店。",
+            "ru": "Мне нравится книжный магазин на главной улице."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А какой он?",
+            "en": "And what's it like?",
+            "es": "¿Y cómo es?",
+            "fr": "Et elle est comment ?",
+            "pt": "E como ela é?",
+            "kr": "그런데 그 가게는 어때?",
+            "jp": "で、どんな店なの？",
+            "zh": "那家店是什么样的？",
+            "ru": "А какой он?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Он большой, с высокими полками и уютным залом.",
+            "en": "It's big, with tall shelves and a cozy hall.",
+            "es": "Es grande, con estanterías altas y una sala acogedora.",
+            "fr": "Elle est grande, avec de hautes étagères et une salle agréable.",
+            "pt": "Ela é grande, com prateleiras altas e uma sala aconchegante.",
+            "kr": "크고, 높은 선반들과 아늑한 공간이 있어.",
+            "jp": "大きくて、高い棚と居心地のいいホールがあるんだ。",
+            "zh": "它很大，有高高的书架和舒适的大厅。",
+            "ru": "Он большой, с высокими полками и уютным залом."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Там, наверное, много книг.",
+            "en": "There must be lots of books there.",
+            "es": "Allí debe de haber muchos libros.",
+            "fr": "Il doit y avoir beaucoup de livres là-bas.",
+            "pt": "Deve ter muitos livros lá.",
+            "kr": "거기 책이 아마 많겠다.",
+            "jp": "そこはきっと本がたくさんあるんだろうね。",
+            "zh": "那里大概有很多书吧。",
+            "ru": "Там, наверное, много книг."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, там можно найти всё что угодно.",
+            "en": "Yes, you can find anything you want there.",
+            "es": "Sí, allí se puede encontrar de todo.",
+            "fr": "Oui, on peut y trouver tout ce qu'on veut.",
+            "pt": "Sim, lá dá para encontrar de tudo.",
+            "kr": "응, 거기서 원하는 건 뭐든지 찾을 수 있어.",
+            "jp": "うん、何でも見つけられるよ。",
+            "zh": "是的，在那里什么都能找到。",
+            "ru": "Да, там можно найти всё что угодно."
+          }
+        }
+      ]
+    }
+  ]
+}

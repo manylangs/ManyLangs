@@ -4,12 +4,10 @@ deepseek_eval_pipeline.py (v3)
 
 변경점 (v2 대비)
 ----------------
-1. 채점 프롬프트 파일명을 v2로 갱신했다:
-       voca_{target_lang}_평가프롬프트_v2.md
-   (v2 프롬프트는 en/kr_voca_manual_A_target_generation_v3.md,
-   translation_prompt_common_*_v3.md를 참조하도록 버전 표기가 갱신됐고,
-   FLAG 리터럴 처리와 meaning_zone_orphan_flags의 비강제 게이트 완화가
-   반영되어 있다.)
+1. 채점 프롬프트 파일명을 버전 넘버 없는 EVAL_{TARGET-LANG 대문자}.md
+   방식으로 통일했다 (예: EVAL_KR.md). kr/en/es/fr/pt/zh/jp/ru 8개
+   target을 모두 지원하며, pt는 pt-BR 기준이다. ru가 8번째 언어
+   (target 후보 포함)로 추가됨.
 
 2. FLAG 리터럴 사전 검사를 추가했다. examples[]에 문자 그대로
    "FLAG: ..."가 남아있으면, 이는 v4 검수 단계가 누락됐다는 뜻이므로
@@ -24,9 +22,9 @@ deepseek_eval_pipeline.py (v3)
    즉 review와 eval이 같은 파일을 보고, 채점 후 review.py로 바로
    되먹임할 수 있다.
 
-2. 이 root 폴더는 한 판(KR-target 또는 EN-target)만 담는다는 전제.
-   --target-lang kr|en 을 한 번만 지정하면 전체 배치에 동일하게
-   적용된다 (배치마다 다시 추론하지 않음).
+2. 이 root 폴더는 한 판(target 언어 하나)만 담는다는 전제.
+   --target-lang kr|en|es|fr|pt|zh|jp|ru 를 한 번만 지정하면 전체
+   배치에 동일하게 적용된다 (배치마다 다시 추론하지 않음).
 
 3. 단순 PASS/FAIL·총점만 내지 않는다. score < 8.5인 도메인은
    "score_reasoning"이 채점 프롬프트 단계에서 필수로 채워지도록
@@ -39,7 +37,7 @@ deepseek_eval_pipeline.py (v3)
      - 그 아래 재검수가 필요한 배치만 상세 블록(원본 data.json 전체 +
        총점/도메인별 점수/사유/blocking_issues/priority_fixes)을 출력
    이 상세 블록을 터미널에서 그대로 복사해서 재검수프롬프트
-   (voca_kr_재검수프롬프트_v1.md / voca_en_재검수프롬프트_v1.md) 세션에
+   (REVIEW_{TARGET-LANG 대문자}.md, 예: REVIEW_KR.md) 세션에
    붙여넣고 나온 ALL_REPLACEMENTS를 voca_review.py에 넣어 돌린 뒤,
    같은 배치만 다시 이 스크립트로 재채점하면 된다.
 
@@ -53,7 +51,7 @@ deepseek_eval_pipeline.py (v3)
 
   옵션:
     --root PATH           voca generator/data 경로 (기본: 아래 DEFAULT_ROOT)
-    --target-lang kr|en   이 폴더 전체의 target 언어 (필수)
+    --target-lang kr|en|es|fr|pt|zh|jp|ru   이 폴더 전체의 target 언어 (필수)
     --prompt-dir PATH     평가 프롬프트(.md)가 있는 폴더
     --batch 001,002,010-015  특정 batch_id만 (기본: 전체 001-144, 폴더 존재하는 것만)
     --dry-run             API 호출 없이 스캔 결과만 출력
@@ -406,7 +404,7 @@ def run(root: Path, prompt_dir: Path, target_lang: str, batch_filter,
         print("DEEPSEEK_API_KEY 환경변수가 설정되어 있지 않습니다.", file=sys.stderr)
         sys.exit(1)
 
-    prompt_filename = f"voca_{target_lang}_평가프롬프트_v2.md"
+    prompt_filename = f"EVAL_{target_lang.upper()}.md"
     prompt_path = prompt_dir / prompt_filename
     if not prompt_path.is_file():
         print(f"[오류] 프롬프트 파일을 찾을 수 없음: {prompt_path}", file=sys.stderr)
@@ -483,7 +481,7 @@ def run(root: Path, prompt_dir: Path, target_lang: str, batch_filter,
     if review_batches:
         print("\n" + "=" * 80)
         print(f"재검수 필요 배치 상세 ({len(review_batches)}건) — 아래 블록을 그대로 복사해서")
-        print("재검수프롬프트(voca_kr/en_재검수프롬프트_v1.md) 세션에 붙여넣으세요.")
+        print(f"재검수프롬프트(REVIEW_{target_lang.upper()}.md) 세션에 붙여넣으세요.")
         print("=" * 80)
         for batch_id in review_batches:
             o = outcomes[batch_id]
@@ -497,7 +495,9 @@ def run(root: Path, prompt_dir: Path, target_lang: str, batch_filter,
 def parse_args():
     p = argparse.ArgumentParser(description="voca generator/data 원본 기준 DeepSeek 채점 파이프라인 (결과는 터미널 출력)")
     p.add_argument("--root", default=str(DEFAULT_ROOT), help="voca generator/data 경로")
-    p.add_argument("--target-lang", required=True, choices=["kr", "en"], help="이 root 폴더 전체의 target 언어")
+    p.add_argument("--target-lang", required=True,
+                    choices=["kr", "en", "es", "fr", "pt", "zh", "jp", "ru"],
+                    help="이 root 폴더 전체의 target 언어")
     p.add_argument("--prompt-dir", default=str(Path(__file__).parent), help="평가 프롬프트(.md) 폴더")
     p.add_argument("--batch", default="", help="예: 001,002,010-015 (기본: 전체)")
     p.add_argument("--dry-run", action="store_true", help="API 호출 없이 스캔 결과만 출력")

@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S002",
+  "shot_id": "SHOT_004",
+  "character_states": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Medium-sized travel backpack",
+        "Small crossbody bag",
+        "Smartphone",
+        "Passport"
+      ],
+      "body_state": [
+        "Walking toward the line on the left",
+        "Backpack worn on back",
+        "Crossbody bag worn across body",
+        "Holding passport in hand",
+        "Facing the direction of the left immigration line"
+      ],
+      "emotion": "a bit more confident and calm"
+    }
+  ],
+  "location_state": {
+    "location_ref": "LOC_JFK_AIRPORT_001",
+    "identity_lock": true,
+    "persistent_features": [
+      "Large terminal with high ceilings",
+      "Digital flight information displays",
+      "Signage for Arrivals, Immigration, and Baggage Claim",
+      "Moving walkways and escalators",
+      "Large windows with natural light"
+    ],
+    "current_zone": "immigration area, JFK International Airport, walking toward the left visitor line",
+    "orientation_state": [
+      "Jieun walking toward the left immigration line",
+      "Immigration lines and signage ahead of Jieun",
+      "Airport employee behind Jieun, near the immigration area",
+      "Other passengers walking toward the immigration lines"
+    ]
+  },
+  "prop_states": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn on back",
+      "position": "on Jieun's back",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn across body, opened to retrieve passport",
+      "position": "across Jieun's body, flap open",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "held in Jieun's hand",
+      "position": "in Jieun's hand, lowered to her side",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "held in Jieun's hand",
+      "position": "in Jieun's right hand, held up at chest level",
+      "visible": true,
+      "continuity_lock": true
+    }
+  ],
+  "environment_state": {
+    "time_of_day": "day",
+    "weather": null,
+    "lighting": "bright indoor terminal lighting with natural light from large windows",
+    "crowd_state": "other passengers walking toward the immigration area, airport staff guiding passengers"
+  },
+  "story_visual_state": {
+    "resolved_visual_facts": [
+      "Jieun's plane has landed at JFK Airport",
+      "Jieun has disembarked from the airplane",
+      "Jieun has arrived at the immigration area inside the JFK terminal",
+      "Jieun has approached the airport employee to ask for help",
+      "The airport employee has pointed toward the line on the left for visitors",
+      "Jieun has been told that no forms are needed and to have her passport ready",
+      "Jieun has taken her passport out from her crossbody bag",
+      "Jieun is walking toward the correct immigration line on the left"
+    ],
+    "unresolved_visual_facts": [
+      "Jieun has not yet joined the immigration line",
+      "Jieun has not yet reached her hotel in Manhattan"
+    ],
+    "must_remain_visible": [
+      "Jieun's travel backpack on her back",
+      "Jieun's crossbody bag across her body",
+      "Jieun's smartphone in her hand",
+      "Jieun's passport in her hand"
+    ],
+    "must_not_appear": [
+      "Jieun moving past the immigration area",
+      "Jieun completing the immigration process",
+      "Jieun leaving the airport",
+      "Jieun joining any immigration line yet",
+      "Jieun putting her passport away"
+    ]
+  },
+  "continuity_links": {
+    "previous_scene_id": "S002",
+    "previous_shot_id": "SHOT_003",
+    "next_scene_id": "S003",
+    "next_shot_id": "SHOT_001",
+    "carry_in": [
+      "The employee has pointed toward the left line",
+      "Jieun knows she needs to have her passport ready"
+    ],
+    "carry_out": [
+      "Jieun has joined the correct immigration line after asking for help",
+      "She is waiting in line with her passport ready",
+      "She feels a bit more confident about the process"
+    ]
+  },
+  "locks": {
+    "character_identity": true,
+    "clothing": true,
+    "location_identity": true,
+    "prop_state": true,
+    "timeline": true,
+    "weather": true,
+    "story_state": true
+  }
+}

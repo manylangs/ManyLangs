@@ -8,7 +8,8 @@ batch_id 순서대로 출력한다 (voca/real/conversation/grammar용
 eval_pipeline과 동일한 구조).
 
 idiom 시리즈는 voca처럼 domains가 **리스트**(dict 아님), target/미러
-개념 있음(kr판/en판, --target-lang 필수), weight 합계 100. 특이점:
+개념 있음(kr/en/es/fr/pt/zh/jp/ru 8개 target판, --target-lang 필수),
+weight 합계 100. 특이점:
   - 10번째 도메인(key="de_idiomatization")은 weight 20으로 별도 구조
     (violations/checked_points/violation_count 필드 보유) — 3건 이상
     위반이면 파이프라인이 강제로 blocking 처리(모델이 놓쳐도 여기서 잡음)
@@ -27,9 +28,13 @@ idiom 시리즈는 voca처럼 domains가 **리스트**(dict 아님), target/미�
 
   옵션:
     --root PATH           idiom generator/data 경로
-    --target-lang kr|en   이 폴더 전체의 target 언어 (필수)
+    --target-lang kr|en|es|fr|pt|zh|jp|ru   이 폴더 전체의 target 언어 (필수)
     --prompt-dir PATH     평가 프롬프트(.md)가 있는 폴더
-    --prompt-file NAME    평가 프롬프트 파일명 (기본: idiom_{target-lang}_평가프롬프트_v1.md)
+    --prompt-file NAME    평가 프롬프트 파일명 (기본: EVAL_{TARGET-LANG 대문자}.md, 예: EVAL_KR.md)
+
+  참고: 평가/재검수 프롬프트 파일명은 버전 넘버 없는 EVAL_{LANG}.md /
+  REVIEW_{LANG}.md 방식으로 통일되었다. pt는 pt-BR 기준이다. ru가 8번째
+  언어(target 후보 포함)로 추가됨.
     --batch 001,010-015   특정 batch_id만 (기본: 전체, 폴더 존재하는 것만)
     --dry-run              API 호출 없이 스캔 결과만 출력
     --model                DeepSeek 모델명 (기본: deepseek-chat)
@@ -345,7 +350,7 @@ def run(root: Path, prompt_dir: Path, prompt_file: str, target_lang: str, batch_
     if review_batches:
         print("\n" + "=" * 80)
         print(f"재검수 필요 배치 상세 ({len(review_batches)}건) — 아래 블록을 그대로 복사해서")
-        print("idiom_kr/en_재검수프롬프트_v1.0.md 세션에 붙여넣으세요.")
+        print(f"REVIEW_{target_lang.upper()}.md 세션에 붙여넣으세요.")
         print("=" * 80)
         for batch_id in review_batches:
             o = outcomes[batch_id]
@@ -358,9 +363,11 @@ def run(root: Path, prompt_dir: Path, prompt_file: str, target_lang: str, batch_
 def parse_args():
     p = argparse.ArgumentParser(description="idiom generator/data 원본 기준 DeepSeek 채점 파이프라인 (결과는 터미널 출력)")
     p.add_argument("--root", default=str(DEFAULT_ROOT), help="idiom generator/data 경로")
-    p.add_argument("--target-lang", required=True, choices=["kr", "en"], help="이 root 폴더 전체의 target 언어")
+    p.add_argument("--target-lang", required=True,
+                   choices=["kr", "en", "es", "fr", "pt", "zh", "jp", "ru"],
+                   help="이 root 폴더 전체의 target 언어")
     p.add_argument("--prompt-dir", default=".", help="평가 프롬프트 폴더")
-    p.add_argument("--prompt-file", default=None, help="평가 프롬프트 파일명 (기본: idiom_{target-lang}_평가프롬프트_v1.md)")
+    p.add_argument("--prompt-file", default=None, help="평가 프롬프트 파일명 (기본: EVAL_{TARGET-LANG 대문자}.md)")
     p.add_argument("--batch", default="", help="예: 001,010-015 (기본: 전체)")
     p.add_argument("--dry-run", action="store_true")
     p.add_argument("--model", default="deepseek-chat")
@@ -372,7 +379,7 @@ def parse_args():
 
 if __name__ == "__main__":
     args = parse_args()
-    prompt_file = args.prompt_file or f"idiom_{args.target_lang}_평가프롬프트_v1.md"
+    prompt_file = args.prompt_file or f"EVAL_{args.target_lang.upper()}.md"
     run(
         root=Path(args.root),
         prompt_dir=Path(args.prompt_dir),

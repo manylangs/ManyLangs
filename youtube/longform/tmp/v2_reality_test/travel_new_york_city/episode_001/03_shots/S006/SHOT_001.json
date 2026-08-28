@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S006",
+  "shot_id": "SHOT_001",
+  "sequence": 1,
+  "duration_seconds": 8.0,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun walking into the ground transportation area and stopping near the signs, taking in the available options.",
+  "framing": {
+    "shot_size": "medium_wide",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "ground transportation signs"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "follow",
+    "stability": "smooth"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun walks into the ground transportation area, pulling her suitcase, and stops near the signs for taxis, ride-sharing, and public transit.",
+    "start_state": [
+      "Jieun is walking into the ground transportation area from the terminal corridor.",
+      "She is pulling her suitcase behind her."
+    ],
+    "end_state": [
+      "Jieun is standing still near the ground transportation signs.",
+      "She is looking up at the signs."
+    ]
+  },
+  "emotion": {
+    "primary_actor": "relieved and focused",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on Jieun's back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "being pulled by Jieun",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L001"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun has retrieved her luggage from the carousel.",
+      "She is now following signs toward ground transportation.",
+      "She is thinking about how to get to Manhattan."
+    ],
+    "carry_out": [
+      "Jieun is standing in the ground transportation area.",
+      "She is looking at the signs for taxis, ride-sharing, and public transit."
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

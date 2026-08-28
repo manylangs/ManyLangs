@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/location.schema.json",
+  "title": "ManyLangs Longform Location",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "location_id",
+    "series_id",
+    "identity",
+    "story_profile",
+    "visual_identity",
+    "production"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "common.schema.json#/$defs/document_metadata"
+    },
+    "location_id": {
+      "type": "string",
+      "pattern": "^LOC_[A-Z0-9_]+_[0-9]{3}$"
+    },
+    "series_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "location_type",
+        "city"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "city": {
+          "type": "string",
+          "minLength": 1
+        },
+        "country": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parent_location_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^LOC_[A-Z0-9_]+_[0-9]{3}$"
+        }
+      }
+    },
+    "story_profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "story_function",
+        "continuity_rules"
+      ],
+      "properties": {
+        "story_function": {
+          "type": "string",
+          "minLength": 1
+        },
+        "continuity_rules": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "visual_identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "environment_summary",
+        "persistent_features",
+        "continuity_lock"
+      ],
+      "properties": {
+        "environment_summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "persistent_features": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "variable_features": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "continuity_lock": {
+          "type": "boolean"
+        }
+      }
+    },
+    "production": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "visual_provider",
+        "reference_asset_ids",
+        "prompt_rules"
+      ],
+      "properties": {
+        "visual_provider": {
+          "type": "string",
+          "enum": [
+            "vidu"
+          ]
+        },
+        "reference_asset_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^ASSET_[A-Z0-9_]+_[0-9]{6}$"
+          }
+        },
+        "prompt_rules": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

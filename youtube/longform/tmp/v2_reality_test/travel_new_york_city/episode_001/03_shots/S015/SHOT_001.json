@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S015",
+  "shot_id": "SHOT_001",
+  "sequence": 1,
+  "duration_seconds": 6.0,
+  "location_ref": "LOC_MANHATTAN_HOTEL_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun walking along the Manhattan street while checking her smartphone for directions.",
+  "framing": {
+    "shot_size": "medium_wide",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "PROP_SMARTPHONE_001"
+    ]
+  },
+  "camera": {
+    "angle": "three_quarter",
+    "movement": "tracking",
+    "stability": "smooth"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun walks along the Manhattan street, looking down at her smartphone and glancing up at the buildings around her.",
+    "start_state": [
+      "Jieun is walking along a Manhattan street, looking at her smartphone for directions",
+      "She is carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase"
+    ],
+    "end_state": [
+      "Jieun is still walking, holding her smartphone, looking around at the street and buildings"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "curious and slightly focused",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "state": "held in hand, screen visible",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "state": "stored in crossbody bag",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "being pulled by Jieun",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [],
+    "speaker_focus": null
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun has exited the subway station and is now on the streets of Manhattan",
+      "She is seeing the city skyline for the first time",
+      "She feels a sense of awe and excitement",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase"
+    ],
+    "carry_out": [
+      "Jieun is walking along the street, looking at her smartphone for directions",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

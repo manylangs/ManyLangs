@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S001",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "mode": "monologue",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "b_gender": null,
+  "lines": [
+    {
+      "line_id": "L001",
+      "sequence": 1,
+      "speaker": "A",
+      "text": "We're here. New York. I can't believe it."
+    },
+    {
+      "line_id": "L002",
+      "sequence": 2,
+      "speaker": "A",
+      "text": "Okay, I have my bag. Passport, hotel reservation... everything is here."
+    },
+    {
+      "line_id": "L003",
+      "sequence": 3,
+      "speaker": "A",
+      "text": "Alright, let's go. First, I need to find the way to my hotel."
+    }
+  ],
+  "scene_state": {
+    "location_ref": "LOC_JFK_AIRPORT_001",
+    "carry_in": [
+      "Jieun is on an airplane approaching JFK Airport",
+      "She feels excited but slightly anxious about her first visit to New York",
+      "She has her passport, luggage, and hotel reservation ready",
+      "Her main goal is to get from the airport to her hotel safely"
+    ],
+    "carry_out": [
+      "Jieun has disembarked from the airplane",
+      "She is now inside the JFK terminal, following signs toward immigration",
+      "She feels a mix of excitement and nervousness"
+    ],
+    "emotion": "excited but slightly nervous"
+  },
+  "validation": {
+    "expected_line_count": 3,
+    "actual_line_count": 3
+  }
+}

@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b2",
+    "id": "039"
+  },
+  "title": {
+    "target": "Смартфон и приложения",
+    "en": "Smartphone and Apps",
+    "es": "El teléfono inteligente y las aplicaciones",
+    "fr": "Smartphone et applications",
+    "pt": "Smartphone e aplicativos",
+    "kr": "스마트폰과 앱",
+    "jp": "スマートフォンとアプリ",
+    "zh": "智能手机和应用程序",
+    "ru": "Смартфон и приложения"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты не подскажешь, каким приложением ты пользуешься для заметок?",
+            "en": "Ivan, could you tell me which app you use for notes?",
+            "es": "Iván, ¿me podrías decir qué aplicación usas para tomar notas?",
+            "fr": "Ivan, tu ne saurais pas quelle application tu utilises pour les notes ?",
+            "pt": "Ivan, você não sabe me dizer qual aplicativo você usa para anotações?",
+            "kr": "이반 씨, 메모할 때 어떤 앱을 쓰는지 알려줄 수 있어요?",
+            "jp": "イワンさん、メモ用にどんなアプリを使っているか教えてくれませんか？",
+            "zh": "伊万，你用的什么应用记笔记，能推荐一下吗？",
+            "ru": "Иван, ты не подскажешь, каким приложением ты пользуешься для заметок?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я обычно пользуюсь обычным блокнотом на телефоне. Он простой и всегда под рукой.",
+            "en": "I usually use the regular notepad on my phone. It's simple and always at hand.",
+            "es": "Normalmente uso el bloc de notas normal del teléfono. Es sencillo y siempre lo tengo a mano.",
+            "fr": "J'utilise généralement le bloc-notes classique sur mon téléphone. Il est simple et toujours à portée de main.",
+            "pt": "Eu normalmente uso o bloco de notas do celular. Ele é simples e está sempre à mão.",
+            "kr": "저는 보통 휴대폰에 있는 기본 메모장을 써요. 간단하고 항상 바로 쓸 수 있거든요.",
+            "jp": "いつもスマホの標準のメモ帳を使っています。シンプルで、いつでも手元にあるので。",
+            "zh": "我一般用手机自带的备忘录。它很简单，而且随时都能用。",
+            "ru": "Я обычно пользуюсь обычным блокнотом на телефоне. Он простой и всегда под рукой."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А мне нужно что-то, где можно делать списки и ставить галочки.",
+            "en": "I need something where I can make lists and check things off.",
+            "es": "Pues yo necesito algo donde pueda hacer listas y marcar casillas.",
+            "fr": "Et moi, j'ai besoin de quelque chose où je peux faire des listes et cocher des cases.",
+            "pt": "E eu preciso de algo onde eu possa fazer listas e marcar os itens.",
+            "kr": "저는 목록을 만들고 체크 표시를 할 수 있는 게 필요한데요.",
+            "jp": "私はリストを作ったり、チェックを付けたりできるものが欲しいんです。",
+            "zh": "我需要一个能列清单、打勾的那种。",
+            "ru": "А мне нужно что-то, где можно делать списки и ставить галочки."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда попробуй приложение для списков дел. Оно очень удобное, и туда можно добавлять напоминания.",
+            "en": "Then try a to-do list app. It's very convenient, and you can add reminders to it.",
+            "es": "Entonces prueba una aplicación de listas de tareas. Es muy cómoda y se le pueden añadir recordatorios.",
+            "fr": "Alors essaie une application de listes de tâches. Elle est très pratique, et on peut y ajouter des rappels.",
+            "pt": "Então experimenta o aplicativo de lista de tarefas. Ele é muito prático, e dá para adicionar lembretes.",
+            "kr": "그럼 할 일 목록 앱을 써 보세요. 아주 편리하고, 거기에 알림도 추가할 수 있어요.",
+            "jp": "それなら、やることリストのアプリを試してみてください。とても便利で、リマインダーも追加できますよ。",
+            "zh": "那你试试待办事项应用吧。它很方便，还可以添加提醒。",
+            "ru": "Тогда попробуй приложение для списков дел. Оно очень удобное, и туда можно добавлять напоминания."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Звучит неплохо. А оно платное?",
+            "en": "Sounds good. Is it paid?",
+            "es": "Suena bien. ¿Y es de pago?",
+            "fr": "Ça a l'air pas mal. Et elle est payante ?",
+            "pt": "Parece bom. E ele é pago?",
+            "kr": "괜찮게 들리네요. 그런데 유료인가요?",
+            "jp": "良さそうですね。有料ですか？",
+            "zh": "听起来不错。这个收费吗？",
+            "ru": "Звучит неплохо. А оно платное?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, базовой версии вполне достаточно, и она бесплатная.",
+            "en": "No, the basic version is quite enough, and it's free.",
+            "es": "No, la versión básica es más que suficiente y es gratuita.",
+            "fr": "Non, la version de base est largement suffisante, et elle est gratuite.",
+            "pt": "Não, a versão básica já é suficiente, e ela é gratuita.",
+            "kr": "아니요, 기본 버전으로도 충분하고, 그것은 무료예요.",
+            "jp": "いいえ、基本版で十分ですし、無料ですよ。",
+            "zh": "不收费，基础版完全够用，而且是免费的。",
+            "ru": "Нет, базовой версии вполне достаточно, и она бесплатная."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, у меня на телефоне закончилась память. Что посоветуешь?",
+            "en": "Dmitry, I ran out of storage on my phone. What do you suggest?",
+            "es": "Dmitri, me he quedado sin memoria en el teléfono. ¿Qué me recomiendas?",
+            "fr": "Dimitri, la mémoire de mon téléphone est pleine. Qu'est-ce que tu me conseilles ?",
+            "pt": "Dmitri, a memória do meu celular acabou. O que você sugere?",
+            "kr": "드미트리 씨, 제 휴대폰 저장 공간이 다 찼어요. 뭐가 좋을까요?",
+            "jp": "ドミトリーさん、スマホのストレージがいっぱいになってしまったんです。何かアドバイスはありますか？",
+            "zh": "德米特里，我手机内存满了。你有什么建议吗？",
+            "ru": "Дмитрий, у меня на телефоне закончилась память. Что посоветуешь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Для начала посмотри, какие приложения ты не используешь, и удали их.",
+            "en": "First, look at which apps you don't use and delete them.",
+            "es": "Para empezar, mira qué aplicaciones no usas y bórralas.",
+            "fr": "Pour commencer, regarde quelles applications tu n'utilises pas et supprime-les.",
+            "pt": "Primeiro, olha quais aplicativos você não usa e apaga eles.",
+            "kr": "우선 사용하지 않는 앱이 뭔지 확인해서 삭제해 보세요.",
+            "jp": "まず、使っていないアプリを確認して、削除してみてください。",
+            "zh": "先看看哪些应用你不用了，把它们删掉。",
+            "ru": "Для начала посмотри, какие приложения ты не используешь, и удали их."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я уже удалил пару игр, но всё равно мало места.",
+            "en": "I already deleted a couple of games, but there's still little space.",
+            "es": "Ya he borrado un par de juegos, pero aun así tengo poco espacio.",
+            "fr": "J'ai déjà supprimé deux jeux, mais il y a toujours peu de place.",
+            "pt": "Eu já apaguei uns jogos, mas ainda assim tem pouco espaço.",
+            "kr": "게임 두 개는 이미 삭제했는데, 그래도 공간이 부족해요.",
+            "jp": "ゲームをいくつか削除したんですが、それでも容量が足りなくて。",
+            "zh": "我已经删了几个游戏了，但空间还是不够。",
+            "ru": "Я уже удалил пару игр, но всё равно мало места."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда стоит перенести фотографии в облачное хранилище. Это освободит много места.",
+            "en": "Then you should move your photos to cloud storage. That will free up a lot of space.",
+            "es": "Entonces deberías pasar las fotos al almacenamiento en la nube. Eso liberará mucho espacio.",
+            "fr": "Alors il faut transférer les photos dans le stockage cloud. Ça libérera beaucoup d'espace.",
+            "pt": "Então vale a pena transferir as fotos para o armazenamento na nuvem. Isso vai liberar bastante espaço.",
+            "kr": "그럼 사진을 클라우드 저장소로 옮기는 게 좋겠어요. 그러면 공간이 많이 확보될 거예요.",
+            "jp": "それなら、写真をクラウドストレージに移すといいですよ。かなり容量が空きますから。",
+            "zh": "那应该把照片传到云存储里。这样能腾出很多空间。",
+            "ru": "Тогда стоит перенести фотографии в облачное хранилище. Это освободит много места."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А это не сложно настроить?",
+            "en": "Is it difficult to set up?",
+            "es": "¿Y no es complicado de configurar?",
+            "fr": "Et ce n'est pas compliqué à configurer ?",
+            "pt": "E não é difícil de configurar?",
+            "kr": "그거 설정하기 어렵지 않나요?",
+            "jp": "設定は難しくないですか？",
+            "zh": "那设置起来麻烦吗？",
+            "ru": "А это не сложно настроить?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, всё делается в пару касаний, я могу показать, если хочешь.",
+            "en": "No, everything is done in a couple of taps. I can show you if you want.",
+            "es": "No, se hace en un par de toques. Puedo enseñarte si quieres.",
+            "fr": "Non, tout se fait en quelques gestes, je peux te montrer si tu veux.",
+            "pt": "Não, é tudo feito com alguns toques, eu posso te mostrar, se você quiser.",
+            "kr": "아니요, 몇 번만 누르면 다 돼요. 원하면 제가 보여드릴게요.",
+            "jp": "いいえ、数回タップするだけですよ。よければ、お見せしますよ。",
+            "zh": "不麻烦，几下就弄好了，你要是想学我可以教你。",
+            "ru": "Нет, всё делается в пару касаний, я могу показать, если хочешь."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты не знаешь, как лучше всего изучать слова на телефоне?",
+            "en": "Do you know the best way to study words on your phone?",
+            "es": "¿Sabes cuál es la mejor manera de estudiar vocabulario en el teléfono?",
+            "fr": "Tu ne sais pas quelle est la meilleure façon d'étudier le vocabulaire sur son téléphone ?",
+            "pt": "Você não sabe qual é a melhor forma de estudar palavras no celular?",
+            "kr": "휴대폰으로 단어를 공부하는 가장 좋은 방법이 뭔지 알아요?",
+            "jp": "スマホで単語を勉強するのに一番いい方法って知っていますか？",
+            "zh": "你知道怎么用手机背单词效果最好吗？",
+            "ru": "Ты не знаешь, как лучше всего изучать слова на телефоне?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я скачал приложение для изучения языков, и оно мне очень помогло.",
+            "en": "I downloaded a language learning app, and it helped me a lot.",
+            "es": "Me descargué una aplicación para aprender idiomas y me ha ayudado mucho.",
+            "fr": "J'ai téléchargé une application pour apprendre les langues, et elle m'a beaucoup aidé.",
+            "pt": "Eu baixei um aplicativo para aprender idiomas, e ele me ajudou muito.",
+            "kr": "저는 언어 학습 앱을 다운로드했는데, 정말 많은 도움이 됐어요.",
+            "jp": "語学学習アプリをダウンロードしたんですが、とても役に立ちましたよ。",
+            "zh": "我下载了一个学语言的应用，对我帮助很大。",
+            "ru": "Я скачал приложение для изучения языков, и оно мне очень помогло."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А там есть упражнения на произношение?",
+            "en": "Does it have pronunciation exercises?",
+            "es": "¿Y tiene ejercicios de pronunciación?",
+            "fr": "Et il y a des exercices de prononciation ?",
+            "pt": "E ele tem exercícios de pronúncia?",
+            "kr": "거기에 발음 연습 문제도 있어요?",
+            "jp": "発音の練習もありますか？",
+            "zh": "那里面有发音练习吗？",
+            "ru": "А там есть упражнения на произношение?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, там можно слушать, как говорят носители, и повторять за ними.",
+            "en": "Yes, you can listen to how native speakers talk and repeat after them.",
+            "es": "Sí, puedes escuchar cómo hablan los nativos y repetir después de ellos.",
+            "fr": "Oui, on peut écouter comment parlent les locuteurs natifs et répéter après eux.",
+            "pt": "Tem sim, dá para ouvir como os nativos falam e repetir depois deles.",
+            "kr": "네, 원어민이 말하는 걸 듣고 따라 할 수 있어요.",
+            "jp": "はい、ネイティブの話し方を聞いて、それに合わせて繰り返すことができます。",
+            "zh": "有，可以听母语者怎么读，然后跟着模仿。",
+            "ru": "Да, там можно слушать, как говорят носители, и повторять за ними."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, а то мне как раз этого не хватает.",
+            "en": "Great, that's exactly what I'm missing.",
+            "es": "Genial, porque justo eso es lo que me falta.",
+            "fr": "Parfait, car c'est justement ce qui me manque.",
+            "pt": "Ótimo, porque é exatamente isso que me falta.",
+            "kr": "좋네요, 사실 저한테 딱 그게 부족했거든요.",
+            "jp": "それはいいですね。ちょうどそれが足りなかったんです。",
+            "zh": "太好了，我正好缺这个。",
+            "ru": "Отлично, а то мне как раз этого не хватает."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Попробуй, мне кажется, тебе понравится.",
+            "en": "Try it, I think you'll like it.",
+            "es": "Pruébala, creo que te gustará.",
+            "fr": "Essaie, je pense que tu vas aimer.",
+            "pt": "Experimenta, eu acho que você vai gostar.",
+            "kr": "한번 써 보세요. 마음에 들 거예요.",
+            "jp": "試してみてください。気に入ると思いますよ。",
+            "zh": "你试试吧，我觉得你会喜欢的。",
+            "ru": "Попробуй, мне кажется, тебе понравится."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, как ты обычно оплачиваешь покупки в магазине?",
+            "en": "Olga, how do you usually pay for things at the store?",
+            "es": "Olga, ¿cómo sueles pagar las compras en la tienda?",
+            "fr": "Olga, comment tu paies habituellement tes achats en magasin ?",
+            "pt": "Olga, como você normalmente paga as compras na loja?",
+            "kr": "올가 씨, 평소에 가게에서 물건을 어떻게 결제해요?",
+            "jp": "オルガさん、お店での買い物は普段どうやって支払っていますか？",
+            "zh": "奥尔加，你平时在商店买东西怎么付款？",
+            "ru": "Ольга, как ты обычно оплачиваешь покупки в магазине?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я плачу с телефона. Это очень быстро и удобно.",
+            "en": "I pay with my phone. It's very fast and convenient.",
+            "es": "Pago con el teléfono. Es muy rápido y cómodo.",
+            "fr": "Je paie avec mon téléphone. C'est très rapide et pratique.",
+            "pt": "Eu pago com o celular. É muito rápido e prático.",
+            "kr": "저는 휴대폰으로 결제해요. 정말 빠르고 편리해요.",
+            "jp": "スマホで支払っています。とても速くて便利ですよ。",
+            "zh": "我用手机付。又快又方便。",
+            "ru": "Я плачу с телефона. Это очень быстро и удобно."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А это безопасно? Я немного переживаю за свои деньги.",
+            "en": "Is it safe? I'm a bit worried about my money.",
+            "es": "¿Y es seguro? Me preocupa un poco mi dinero.",
+            "fr": "Et c'est sûr ? Je m'inquiète un peu pour mon argent.",
+            "pt": "E é seguro? Eu fico um pouco preocupada com o meu dinheiro.",
+            "kr": "그거 안전한가요? 제 돈이 좀 걱정돼서요.",
+            "jp": "安全なんですか？お金のことが少し心配で。",
+            "zh": "那安全吗？我有点担心我的钱。",
+            "ru": "А это безопасно? Я немного переживаю за свои деньги."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, там есть защита по отпечатку пальца. Никто другой не сможет оплатить.",
+            "en": "Of course, it has fingerprint protection. No one else can make a payment.",
+            "es": "Claro, tiene protección con huella dactilar. Nadie más puede pagar.",
+            "fr": "Bien sûr, il y a une protection par empreinte digitale. Personne d'autre ne pourra payer.",
+            "pt": "Claro, ele tem proteção por impressão digital. Ninguém mais vai conseguir pagar.",
+            "kr": "물론이죠, 지문 인식 보호 기능이 있어서 다른 사람은 결제할 수 없어요.",
+            "jp": "もちろんですよ。指紋認証による保護がありますから。他の誰にも支払うことはできません。",
+            "zh": "当然安全，有指纹保护。别人没法替你付款。",
+            "ru": "Конечно, там есть защита по отпечатку пальца. Никто другой не сможет оплатить."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно. А везде ли принимают такую оплату?",
+            "en": "I see. Do they accept this type of payment everywhere?",
+            "es": "Entendido. ¿Y aceptan este tipo de pago en todas partes?",
+            "fr": "Je vois. Et est-ce que ce paiement est accepté partout ?",
+            "pt": "Entendi. E aceitam esse tipo de pagamento em todo lugar?",
+            "kr": "그렇군요. 그런데 어디서나 그런 결제를 받아 주나요?",
+            "jp": "なるほど。どこでもこの支払い方は使えますか？",
+            "zh": "明白了。那这种支付方式到处都能用吗？",
+            "ru": "Понятно. А везде ли принимают такую оплату?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Почти везде, в любом крупном магазине точно.",
+            "en": "Almost everywhere, definitely in any large store.",
+            "es": "En casi todas, en cualquier tienda grande seguro.",
+            "fr": "Presque partout, dans tous les grands magasins en tout cas.",
+            "pt": "Quase em todo lugar, em qualquer loja grande com certeza.",
+            "kr": "거의 어디서나 돼요. 큰 매장이면 확실히 다 돼요.",
+            "jp": "ほとんどどこでも使えますよ。大きなお店なら間違いなく使えます。",
+            "zh": "几乎哪都能用，大商店肯定都可以。",
+            "ru": "Почти везде, в любом крупном магазине точно."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты не подскажешь, каким мессенджером лучше пользоваться для работы?",
+            "en": "Sergey, could you tell me which messenger is best to use for work?",
+            "es": "Serguéi, ¿me podrías decir qué mensajero es mejor usar para el trabajo?",
+            "fr": "Sergueï, tu ne saurais pas quel messager est le mieux pour le travail ?",
+            "pt": "Sergei, você não sabe me dizer qual mensageiro é melhor para usar no trabalho?",
+            "kr": "세르게이 씨, 업무용으로는 어떤 메신저를 쓰는 게 좋을지 알려줄 수 있어요?",
+            "jp": "セルゲイさん、仕事用にはどのメッセンジャーを使うのがいいか教えてくれませんか？",
+            "zh": "谢尔盖，工作用哪个聊天软件比较好，你能推荐一下吗？",
+            "ru": "Сергей, ты не подскажешь, каким мессенджером лучше пользоваться для работы?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мы все общаемся в рабочем мессенджере. Там удобно создавать чаты для проектов.",
+            "en": "We all communicate in the work messenger. It's convenient for creating chats for projects.",
+            "es": "Todos nos comunicamos por el mensajero del trabajo. Es cómodo crear chats para los proyectos.",
+            "fr": "Nous communiquons tous sur le messager professionnel. C'est pratique pour créer des discussions pour les projets.",
+            "pt": "A gente se comunica pelo mensageiro do trabalho. Nele é fácil criar conversas para os projetos.",
+            "kr": "저희는 모두 업무용 메신저로 소통해요. 프로젝트별로 채팅방을 만들기 편리해요.",
+            "jp": "私たちはみんな仕事用のメッセンジャーで連絡を取り合っています。プロジェクトごとにチャットを作れるので便利ですよ。",
+            "zh": "我们都在工作用的聊天软件里沟通。在上面给项目建群很方便。",
+            "ru": "Мы все общаемся в рабочем мессенджере. Там удобно создавать чаты для проектов."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А можно ли там отправлять большие файлы?",
+            "en": "Can you send large files there?",
+            "es": "¿Y se pueden enviar archivos grandes?",
+            "fr": "Et peut-on y envoyer de gros fichiers ?",
+            "pt": "E dá para enviar arquivos grandes por ele?",
+            "kr": "거기서 큰 파일도 보낼 수 있나요?",
+            "jp": "大きなファイルも送れますか？",
+            "zh": "那能发大文件吗？",
+            "ru": "А можно ли там отправлять большие файлы?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, можно. Мы часто отправляем презентации и документы, всё доходит быстро.",
+            "en": "Yes, you can. We often send presentations and documents, and everything goes through quickly.",
+            "es": "Sí, se puede. Enviamos a menudo presentaciones y documentos, y todo llega rápido.",
+            "fr": "Oui, on peut. Nous envoyons souvent des présentations et des documents, tout arrive rapidement.",
+            "pt": "Dá sim. A gente sempre envia apresentações e documentos, tudo chega rápido.",
+            "kr": "네, 보낼 수 있어요. 저희는 자주 발표 자료나 문서를 보내는데, 다 빨리 전달돼요.",
+            "jp": "はい、送れますよ。私たちもよくプレゼンや書類を送りますが、すぐに届きます。",
+            "zh": "可以。我们经常发演示文稿和文档，传得很快。",
+            "ru": "Да, можно. Мы часто отправляем презентации и документы, всё доходит быстро."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это как раз то, что мне нужно.",
+            "en": "That's exactly what I need.",
+            "es": "Es justo lo que necesito.",
+            "fr": "C'est exactement ce qu'il me faut.",
+            "pt": "É exatamente o que eu preciso.",
+            "kr": "그게 딱 제가 필요한 거네요.",
+            "jp": "まさに私が求めていたものです。",
+            "zh": "这正是我需要的。",
+            "ru": "Это как раз то, что мне нужно."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда устанавливай, я тебя добавлю в общий чат.",
+            "en": "Then install it, I'll add you to the group chat.",
+            "es": "Pues instálalo, te añadiré al chat común.",
+            "fr": "Alors installe-le, je vais t'ajouter à la discussion commune.",
+            "pt": "Então instala, que eu vou te adicionar no grupo geral.",
+            "kr": "그럼 설치해요. 제가 공용 채팅방에 추가해 드릴게요.",
+            "jp": "それならインストールしてください。共通のチャットに追加しておきますね。",
+            "zh": "那你装上吧，我把你拉进群里。",
+            "ru": "Тогда устанавливай, я тебя добавлю в общий чат."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, как ты следишь за своим здоровьем с помощью телефона?",
+            "en": "Maria, how do you track your health with your phone?",
+            "es": "María, ¿cómo controlas tu salud con el teléfono?",
+            "fr": "Maria, comment tu suis ta santé avec ton téléphone ?",
+            "pt": "Maria, como você acompanha a sua saúde com o celular?",
+            "kr": "마리야 씨, 휴대폰으로 건강 관리를 어떻게 해요?",
+            "jp": "マリアさん、スマホで健康管理はどうやってしていますか？",
+            "zh": "玛丽亚，你是怎么用手机关注自己健康的？",
+            "ru": "Мария, как ты следишь за своим здоровьем с помощью телефона?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "У меня есть приложение, которое считает шаги и следит за сном.",
+            "en": "I have an app that counts steps and tracks sleep.",
+            "es": "Tengo una aplicación que cuenta los pasos y controla el sueño.",
+            "fr": "J'ai une application qui compte les pas et surveille le sommeil.",
+            "pt": "Eu tenho um aplicativo que conta os passos e monitora o sono.",
+            "kr": "저는 걸음 수를 세고 수면을 추적하는 앱이 있어요.",
+            "jp": "歩数を数えたり、睡眠を記録してくれるアプリを使っています。",
+            "zh": "我有一个应用，能记步数，还能监测睡眠。",
+            "ru": "У меня есть приложение, которое считает шаги и следит за сном."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "И как, помогает?",
+            "en": "And does it help?",
+            "es": "¿Y qué tal, te ayuda?",
+            "fr": "Et alors, ça aide ?",
+            "pt": "E aí, ajuda?",
+            "kr": "그래요? 도움이 돼요?",
+            "jp": "それで、効果はありますか？",
+            "zh": "那有用吗？",
+            "ru": "И как, помогает?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я стала больше двигаться, потому что вижу свой результат каждый день.",
+            "en": "Yes, I've started moving more because I see my results every day.",
+            "es": "Sí, me he vuelto más activa porque veo mi resultado cada día.",
+            "fr": "Oui, je me suis mise à bouger plus, parce que je vois mon résultat chaque jour.",
+            "pt": "Ajuda, eu comecei a me mexer mais, porque eu vejo o meu resultado todo dia.",
+            "kr": "네, 매일 제 결과를 보니까 더 많이 움직이게 되더라고요.",
+            "jp": "はい、毎日自分の結果が見えるので、前より体を動かすようになりました。",
+            "zh": "有用，我每天都能看到自己的运动成果，所以动得更多了。",
+            "ru": "Да, я стала больше двигаться, потому что вижу свой результат каждый день."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А оно само всё считает?",
+            "en": "Does it count everything on its own?",
+            "es": "¿Y ella sola cuenta todo?",
+            "fr": "Et elle compte tout toute seule ?",
+            "pt": "E ele conta tudo sozinho?",
+            "kr": "그런데 그게 스스로 다 계산해요?",
+            "jp": "全部自動で計算してくれるんですか？",
+            "zh": "它自己就能记录所有数据吗？",
+            "ru": "А оно само всё считает?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, телефон всегда со мной, так что данные собираются автоматически.",
+            "en": "Yes, my phone is always with me, so the data is collected automatically.",
+            "es": "Sí, el teléfono siempre está conmigo, así que los datos se recogen automáticamente.",
+            "fr": "Oui, le téléphone est toujours avec moi, donc les données sont collectées automatiquement.",
+            "pt": "Conta, o celular está sempre comigo, então os dados são coletados automaticamente.",
+            "kr": "네, 휴대폰이 항상 저와 함께 있으니까 데이터가 자동으로 수집돼요.",
+            "jp": "はい、スマホはいつも持ち歩いているので、データは自動で集まります。",
+            "zh": "对，手机一直在我身边，所以数据都是自动收集的。",
+            "ru": "Да, телефон всегда со мной, так что данные собираются автоматически."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, что за приложение у тебя на экране? Я такое не видел.",
+            "en": "Ivan, what's that app on your screen? I haven't seen that one.",
+            "es": "Iván, ¿qué es esa aplicación que tienes en la pantalla? No la había visto.",
+            "fr": "Ivan, c'est quoi cette application sur ton écran ? Je n'ai jamais vu ça.",
+            "pt": "Ivan, que aplicativo é esse na sua tela? Eu nunca vi um assim.",
+            "kr": "이반 씨, 화면에 있는 그 앱이 뭐예요? 저는 그런 걸 본 적이 없는데요.",
+            "jp": "イワンさん、画面に出ているあのアプリは何ですか？見たことがないんですが。",
+            "zh": "伊万，你屏幕上那个应用是什么？我没见过。",
+            "ru": "Иван, что за приложение у тебя на экране? Я такое не видел."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это приложение для заказа такси. Оно показывает цену сразу, до поездки.",
+            "en": "It's a taxi booking app. It shows the price right away, before the trip.",
+            "es": "Es una aplicación para pedir taxis. Muestra el precio de inmediato, antes del viaje.",
+            "fr": "C'est une application pour commander un taxi. Elle affiche le prix immédiatement, avant le trajet.",
+            "pt": "É um aplicativo para chamar táxi. Ele mostra o preço na hora, antes da viagem.",
+            "kr": "이건 택시 호출 앱이에요. 이동 전에 가격을 바로 보여줘요.",
+            "jp": "これはタクシー配車アプリです。乗る前に料金がすぐに表示されます。",
+            "zh": "这是打车的应用。出发前就能直接看到价格。",
+            "ru": "Это приложение для заказа такси. Оно показывает цену сразу, до поездки."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А если я опаздываю, можно ли вызвать машину побыстрее?",
+            "en": "What if I'm running late, can I get a car faster?",
+            "es": "¿Y si llego tarde, se puede pedir un coche más rápido?",
+            "fr": "Et si je suis en retard, est-ce qu'on peut appeler une voiture plus vite ?",
+            "pt": "E se eu estiver atrasado, dá para chamar um carro mais rápido?",
+            "kr": "그런데 제가 늦을 때 더 빨리 차를 부를 수 있나요?",
+            "jp": "もし遅刻しそうな時は、もっと早く車を呼べますか？",
+            "zh": "那如果我赶时间，能叫到快一点的车吗？",
+            "ru": "А если я опаздываю, можно ли вызвать машину побыстрее?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, там есть функция повышенного тарифа, и тогда водитель приезжает быстрее.",
+            "en": "Yes, there's a surge pricing feature, and then the driver arrives faster.",
+            "es": "Sí, tiene la función de tarifa aumentada, y entonces el conductor llega antes.",
+            "fr": "Oui, il y a une fonction de tarif majoré, et alors le conducteur arrive plus vite.",
+            "pt": "Dá, ele tem a função de tarifa dinâmica, e aí o motorista chega mais rápido.",
+            "kr": "네, 할증 요금 기능이 있어서 그렇게 하면 기사님이 더 빨리 와요.",
+            "jp": "はい、割増料金の機能があって、それを使うとドライバーがもっと早く来てくれます。",
+            "zh": "可以，有加价叫车的功能，这样司机来得更快。",
+            "ru": "Да, там есть функция повышенного тарифа, и тогда водитель приезжает быстрее."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно. А оплата тоже через приложение?",
+            "en": "I see. Is the payment also through the app?",
+            "es": "Entendido. ¿Y el pago también es a través de la aplicación?",
+            "fr": "Je vois. Et le paiement se fait aussi via l'application ?",
+            "pt": "Entendi. E o pagamento também é pelo aplicativo?",
+            "kr": "알겠어요. 결제도 앱으로 하나요?",
+            "jp": "なるほど。支払いもアプリ経由ですか？",
+            "zh": "明白了。付款也是通过应用吗？",
+            "ru": "Понятно. А оплата тоже через приложение?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, можно привязать карту и не думать о наличных.",
+            "en": "Yes, you can link your card and not worry about cash.",
+            "es": "Sí, puedes vincular una tarjeta y olvidarte del efectivo.",
+            "fr": "Oui, on peut lier sa carte et ne plus penser au liquide.",
+            "pt": "É, dá para vincular o cartão e não se preocupar com dinheiro em espécie.",
+            "kr": "네, 카드를 등록해 두면 현금을 생각할 필요가 없어요.",
+            "jp": "はい、カードを登録しておけば、現金を気にしなくて済みますよ。",
+            "zh": "对，可以绑定银行卡，就不用想着带现金了。",
+            "ru": "Да, можно привязать карту и не думать о наличных."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, посоветуй приложение для просмотра фильмов в дороге.",
+            "en": "Elena, recommend an app for watching movies on the go.",
+            "es": "Elena, recomiéndame una aplicación para ver películas de viaje.",
+            "fr": "Elena, conseille-moi une application pour regarder des films en voyage.",
+            "pt": "Elena, me recomenda um aplicativo para assistir a filmes na estrada.",
+            "kr": "옐레나 씨, 이동 중에 영화 볼 수 있는 앱을 추천해 줘요.",
+            "jp": "エレナさん、移動中に映画を見るのにおすすめのアプリはありますか？",
+            "zh": "叶莲娜，推荐一个路上看电影的应用吧。",
+            "ru": "Елена, посоветуй приложение для просмотра фильмов в дороге."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я обычно скачиваю фильмы заранее, чтобы смотреть без интернета.",
+            "en": "I usually download movies in advance to watch them without the internet.",
+            "es": "Normalmente descargo las películas con antelación para verlas sin internet.",
+            "fr": "Je télécharge généralement les films à l'avance pour les regarder sans internet.",
+            "pt": "Eu normalmente baixo os filmes antes, para assistir sem internet.",
+            "kr": "저는 보통 인터넷 없이 보려고 영화를 미리 다운로드해요.",
+            "jp": "私はいつも映画を事前にダウンロードして、オフラインで見ています。",
+            "zh": "我一般提前把电影下载好，这样没网也能看。",
+            "ru": "Я обычно скачиваю фильмы заранее, чтобы смотреть без интернета."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А в каком приложении ты это делаешь?",
+            "en": "Which app do you use for that?",
+            "es": "¿Y en qué aplicación haces eso?",
+            "fr": "Et dans quelle application tu fais ça ?",
+            "pt": "E em qual aplicativo você faz isso?",
+            "kr": "그런데 그건 어떤 앱에서 해요?",
+            "jp": "それはどのアプリでやっているんですか？",
+            "zh": "那你用哪个应用下载？",
+            "ru": "А в каком приложении ты это делаешь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "В приложении моего любимого онлайн-кинотеатра. Там большой выбор.",
+            "en": "The app of my favorite online cinema. It has a big selection.",
+            "es": "En la aplicación de mi plataforma de cine en línea favorita. Hay mucha variedad.",
+            "fr": "Dans l'application de mon service de streaming préféré. Il y a un grand choix.",
+            "pt": "No aplicativo do meu serviço de streaming favorito. Ele tem muitas opções.",
+            "kr": "제가 좋아하는 온라인 영화관 앱이에요. 거기에 선택지가 많아요.",
+            "jp": "お気に入りのオンライン動画配信サービスのアプリです。作品数が多いんですよ。",
+            "zh": "用我最喜欢的那个在线影音平台的应用。里面选择很多。",
+            "ru": "В приложении моего любимого онлайн-кинотеатра. Там большой выбор."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А подписка дорогая?",
+            "en": "Is the subscription expensive?",
+            "es": "¿Y la suscripción es cara?",
+            "fr": "Et l'abonnement est cher ?",
+            "pt": "E a assinatura é cara?",
+            "kr": "그런데 구독료가 비싸요?",
+            "jp": "サブスクリプションは高いですか？",
+            "zh": "那会员贵吗？",
+            "ru": "А подписка дорогая?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Если брать на год, то выходит совсем недорого, и фильмы можно смотреть без рекламы.",
+            "en": "If you get it for a year, it turns out to be quite cheap, and you can watch movies without ads.",
+            "es": "Si la contratas por un año, sale bastante barata y puedes ver las películas sin anuncios.",
+            "fr": "Si on prend pour un an, ça revient vraiment pas cher, et on peut regarder les films sans publicité.",
+            "pt": "Se você assinar por um ano, fica bem barato, e dá para assistir aos filmes sem anúncios.",
+            "kr": "1년 치로 하면 아주 비싸지 않고, 광고 없이 영화를 볼 수 있어요.",
+            "jp": "年間プランなら、それほど高くないですし、広告なしで映画が見られますよ。",
+            "zh": "如果包年的话，其实不贵，而且看电影还没有广告。",
+            "ru": "Если брать на год, то выходит совсем недорого, и фильмы можно смотреть без рекламы."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, у меня не открывается приложение банка. Что делать?",
+            "en": "Dmitry, my banking app won't open. What should I do?",
+            "es": "Dmitri, no me abre la aplicación del banco. ¿Qué hago?",
+            "fr": "Dimitri, l'application de ma banque ne s'ouvre pas. Qu'est-ce que je fais ?",
+            "pt": "Dmitri, o aplicativo do banco não abre aqui. O que eu faço?",
+            "kr": "드미트리 씨, 제 은행 앱이 열리지 않아요. 어떻게 해야 하죠?",
+            "jp": "ドミトリーさん、銀行のアプリが開かないんです。どうしたらいいですか？",
+            "zh": "德米特里，我的银行应用打不开了。怎么办？",
+            "ru": "Дмитрий, у меня не открывается приложение банка. Что делать?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Попробуй сначала просто перезагрузить телефон. Это часто помогает.",
+            "en": "Try just restarting your phone first. That often helps.",
+            "es": "Prueba primero a reiniciar el teléfono. Eso suele ayudar.",
+            "fr": "Essaie d'abord simplement de redémarrer ton téléphone. Ça aide souvent.",
+            "pt": "Tenta primeiro reiniciar o celular. Isso costuma resolver.",
+            "kr": "일단 휴대폰을 그냥 재부팅해 보세요. 그게 효과가 있을 때가 많아요.",
+            "jp": "まずはスマホを再起動してみてください。それで直ることがよくありますから。",
+            "zh": "你先试试重启一下手机。这招经常管用。",
+            "ru": "Попробуй сначала просто перезагрузить телефон. Это часто помогает."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Не помогло. Может, нужно обновить приложение?",
+            "en": "It didn't help. Maybe I need to update the app?",
+            "es": "No ha funcionado. ¿Quizás debería actualizar la aplicación?",
+            "fr": "Ça n'a pas aidé. Peut-être qu'il faut mettre à jour l'application ?",
+            "pt": "Não resolveu. Será que precisa atualizar o aplicativo?",
+            "kr": "효과가 없었어요. 앱을 업데이트해야 하는 걸까요?",
+            "jp": "直りませんでした。アプリを更新する必要があるんでしょうか？",
+            "zh": "没用。是不是需要更新应用？",
+            "ru": "Не помогло. Может, нужно обновить приложение?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, проверь, нет ли обновлений в магазине приложений. Иногда после обновления всё начинает работать.",
+            "en": "Yes, check if there are any updates in the app store. Sometimes everything starts working after an update.",
+            "es": "Sí, comprueba si hay actualizaciones en la tienda de aplicaciones. A veces, después de actualizar, todo empieza a funcionar.",
+            "fr": "Oui, vérifie s'il y a des mises à jour dans la boutique d'applications. Parfois après une mise à jour, tout se remet à fonctionner.",
+            "pt": "É, verifica se tem atualização na loja de aplicativos. Às vezes, depois de atualizar, tudo volta a funcionar.",
+            "kr": "네, 앱 스토어에 업데이트가 있는지 확인해 보세요. 가끔 업데이트하고 나면 모든 게 정상 작동하기 시작해요.",
+            "jp": "そうですね、アプリストアで更新がないか確認してみてください。更新したら動き出すこともありますから。",
+            "zh": "对，你去应用商店看看有没有更新。有时候更新完就正常了。",
+            "ru": "Да, проверь, нет ли обновлений в магазине приложений. Иногда после обновления всё начинает работать."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сейчас проверю. Спасибо за совет.",
+            "en": "I'll check now. Thanks for the advice.",
+            "es": "Ahora mismo lo compruebo. Gracias por el consejo.",
+            "fr": "Je vais vérifier tout de suite. Merci pour le conseil.",
+            "pt": "Vou ver agora. Obrigado pela dica.",
+            "kr": "지금 확인해 볼게요. 조언 감사해요.",
+            "jp": "今確認してみます。アドバイスありがとうございます。",
+            "zh": "我现在去看看。谢谢你的建议。",
+            "ru": "Сейчас проверю. Спасибо за совет."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не за что. Если не поможет, позвони в банк, там точно разберутся.",
+            "en": "You're welcome. If it doesn't help, call the bank, they'll definitely figure it out.",
+            "es": "De nada. Si no funciona, llama al banco, allí seguro que lo solucionan.",
+            "fr": "De rien. Si ça ne marche pas, appelle la banque, ils sauront certainement régler ça.",
+            "pt": "De nada. Se não resolver, liga para o banco, que eles com certeza resolvem.",
+            "kr": "별말씀을요. 그래도 안 되면 은행에 전화해 보세요. 거기서 분명히 해결해 줄 거예요.",
+            "jp": "どういたしまして。それでもダメなら、銀行に電話してみてください。きっと対応してくれますよ。",
+            "zh": "不客气。要是还不行，就给银行打电话，他们肯定能解决。",
+            "ru": "Не за что. Если не поможет, позвони в банк, там точно разберутся."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, как ты организуешь своё расписание на неделе?",
+            "en": "Anna, how do you organize your schedule for the week?",
+            "es": "Ana, ¿cómo organizas tu horario semanal?",
+            "fr": "Anna, comment tu organises ton emploi du temps pour la semaine ?",
+            "pt": "Anna, como você organiza a sua agenda da semana?",
+            "kr": "안나 씨, 한 주 일정을 어떻게 정리해요?",
+            "jp": "アンナさん、一週間の予定はどうやって管理していますか？",
+            "zh": "安娜，你是怎么安排一周的日程的？",
+            "ru": "Анна, как ты организуешь своё расписание на неделе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я пользуюсь приложением-календарём. Туда я записываю все встречи и дела.",
+            "en": "I use a calendar app. I write down all my meetings and tasks there.",
+            "es": "Uso una aplicación de calendario. Ahí apunto todas las reuniones y tareas.",
+            "fr": "J'utilise une application de calendrier. J'y note tous mes rendez-vous et mes tâches.",
+            "pt": "Eu uso um aplicativo de calendário. Nele eu anoto todos os compromissos e tarefas.",
+            "kr": "저는 캘린더 앱을 사용해요. 거기에 모든 약속과 할 일을 적어요.",
+            "jp": "カレンダーアプリを使っています。そこにすべての予定や用事を書き込んでいます。",
+            "zh": "我用日历应用。所有会议和事情我都记在里面。",
+            "ru": "Я пользуюсь приложением-календарём. Туда я записываю все встречи и дела."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А оно присылает напоминания?",
+            "en": "Does it send reminders?",
+            "es": "¿Y envía recordatorios?",
+            "fr": "Et elle envoie des rappels ?",
+            "pt": "E ele manda lembretes?",
+            "kr": "그런데 그게 알림을 보내 줘요?",
+            "jp": "リマインダーも届きますか？",
+            "zh": "它会发提醒吗？",
+            "ru": "А оно присылает напоминания?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я ставлю напоминания за час, чтобы успеть подготовиться.",
+            "en": "Yes, I set reminders an hour in advance so I have time to get ready.",
+            "es": "Sí, pongo recordatorios con una hora de antelación para tener tiempo de prepararme.",
+            "fr": "Oui, je mets des rappels une heure à l'avance pour avoir le temps de me préparer.",
+            "pt": "Manda, eu coloco lembretes com uma hora de antecedência para dar tempo de me preparar.",
+            "kr": "네, 준비할 시간을 갖도록 한 시간 전에 알림을 설정해요.",
+            "jp": "はい、準備ができるように、一時間前にリマインダーを設定しています。",
+            "zh": "会，我一般设提前一小时提醒，这样好有时间准备。",
+            "ru": "Да, я ставлю напоминания за час, чтобы успеть подготовиться."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это удобно. А можно ли им делиться расписанием с другими?",
+            "en": "That's convenient. Can you share your schedule with others?",
+            "es": "Qué cómodo. ¿Y se puede compartir el horario con otras personas?",
+            "fr": "C'est pratique. Et est-ce qu'on peut partager son emploi du temps avec d'autres ?",
+            "pt": "Isso é prático. E dá para compartilhar a agenda com outras pessoas?",
+            "kr": "편리하네요. 그런데 다른 사람과 일정을 공유할 수도 있나요?",
+            "jp": "便利ですね。他の人と予定を共有することもできますか？",
+            "zh": "真方便。那这个日程能分享给别人吗？",
+            "ru": "Это удобно. А можно ли им делиться расписанием с другими?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Можно, я так делюсь расписанием с коллегами по проекту.",
+            "en": "You can, I share my schedule with my project colleagues that way.",
+            "es": "Se puede, así comparto el horario con mis compañeros de proyecto.",
+            "fr": "Oui, c'est possible, je partage comme ça mon emploi du temps avec mes collègues sur le projet.",
+            "pt": "Dá, eu compartilho a agenda com os colegas do projeto assim.",
+            "kr": "공유할 수 있어요. 저는 그렇게 프로젝트 동료들과 일정을 공유해요.",
+            "jp": "できますよ。プロジェクトの同僚と予定を共有したりしています。",
+            "zh": "可以，我就是这么跟项目同事分享日程的。",
+            "ru": "Можно, я так делюсь расписанием с коллегами по проекту."
+          }
+        }
+      ]
+    }
+  ]
+}

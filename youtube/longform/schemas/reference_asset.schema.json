@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/reference_asset.schema.json",
+  "title": "ManyLangs Reference Asset",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "asset_id",
+    "asset_type",
+    "owner_ref",
+    "source",
+    "usage",
+    "provider_neutral"
+  ],
+  "properties": {
+    "asset_id": {
+      "type": "string",
+      "pattern": "^ASSET_[A-Z0-9_]+$"
+    },
+    "asset_type": {
+      "type": "string",
+      "enum": [
+        "character_reference",
+        "location_reference",
+        "prop_reference"
+      ]
+    },
+    "owner_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "value"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "local_file",
+            "public_url"
+          ]
+        },
+        "value": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "usage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "identity_reference",
+        "allow_generation_reference"
+      ],
+      "properties": {
+        "identity_reference": {
+          "type": "boolean"
+        },
+        "allow_generation_reference": {
+          "type": "boolean"
+        }
+      }
+    },
+    "provider_neutral": {
+      "const": true
+    }
+  }
+}

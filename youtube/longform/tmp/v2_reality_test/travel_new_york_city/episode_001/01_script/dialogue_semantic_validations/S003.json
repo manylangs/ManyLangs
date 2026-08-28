@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S003",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun reaches the immigration officer",
+      "pass": true,
+      "evidence": "The dialogue begins with Jieun speaking to the officer (L001: 'Hello. I'm here for a trip.') and the officer responds, establishing that she is at the immigration interview."
+    },
+    {
+      "requirement": "Jieun answers the officer's questions about her visit",
+      "pass": true,
+      "evidence": "Jieun answers questions about purpose (L003: 'I'm a tourist. I want to see New York City.'), duration (L005: 'About one week.'), and accommodation (L007: 'I have a hotel in Manhattan.')."
+    },
+    {
+      "requirement": "Jieun is cleared to enter the United States",
+      "pass": true,
+      "evidence": "The officer's final line (L008: 'Enjoy your trip. Welcome to New York.') explicitly grants entry and welcomes her, confirming clearance."
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the immigration area",
+      "pass": true,
+      "evidence": "The dialogue stays entirely within the immigration interview; no mention of moving to baggage claim or leaving the area occurs."
+    },
+    {
+      "requirement": "Do not introduce any problems with her immigration status",
+      "pass": true,
+      "evidence": "No issues, delays, or complications are raised; the officer's response is positive and welcoming."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

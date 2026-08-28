@@ -102,7 +102,14 @@ TRIAL_TRANSLATIONS = {
 
 
 # ============================================================
-# 언어 코드 -> 표시 이름 (캡션 제목 줄에 사용)
+# 언어 코드 -> 표시 이름 (캡션 제목 줄, 언어 선택 메뉴에 사용)
+#
+# 다른 파이프라인 스크립트(youtube_upload.py, assemble_video.py,
+# assemble_social.py, post_facebook.py, post_instagram.py,
+# build_x_post.py, watermark 스크립트 등)와 동일하게, 내부 관리
+# 코드는 이 딕셔너리의 키를 그대로 쓴다 (일본어는 내부적으로 "jp").
+# 새 언어를 추가/삭제/순서 변경하고 싶으면 이 딕셔너리만 수정하면
+# 되고, 언어 선택 메뉴의 번호는 등록 순서대로 자동으로 매겨진다.
 # ============================================================
 
 LANGUAGE_NAMES = {
@@ -195,6 +202,10 @@ def find_unicode_font():
 
 # ============================================================
 # 언어 입력
+#
+# 약어를 직접 타이핑하지 않고, LANGUAGE_NAMES에 등록된 순서대로
+# 번호를 매겨 보여준 뒤 번호로 선택한다. 언어를 추가/삭제/순서
+# 변경하고 싶으면 LANGUAGE_NAMES 딕셔너리만 수정하면 된다.
 # ============================================================
 
 def ask_language():
@@ -204,14 +215,21 @@ def ask_language():
     print("==========================================")
     print()
 
-    lang = input(
-        "언어 약어 입력 "
-        "(en, es, fr, pt, kr, zh, jp, ru): "
-    ).strip().lower()
+    codes = list(LANGUAGE_NAMES.keys())
 
-    if not lang:
-        print("언어가 입력되지 않았습니다.")
+    print("지원 언어:")
+    for i, code in enumerate(codes, start=1):
+        print(f"  {i:>2} - {code} ({LANGUAGE_NAMES[code]})")
+
+    print()
+
+    choice = input("번호 입력: ").strip()
+
+    if not choice.isdigit() or not (1 <= int(choice) <= len(codes)):
+        print("잘못된 번호입니다.")
         sys.exit(1)
+
+    lang = codes[int(choice) - 1]
 
     lang_dir = ROOT / lang
 

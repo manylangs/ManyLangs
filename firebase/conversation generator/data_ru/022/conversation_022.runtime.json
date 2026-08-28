@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b1",
+    "id": "022"
+  },
+  "title": {
+    "target": "Посещение занятий",
+    "en": "Attending Classes",
+    "es": "Asistencia a clases",
+    "fr": "Assister aux cours",
+    "pt": "Frequência às aulas",
+    "kr": "수업 출석",
+    "jp": "授業への出席",
+    "zh": "上课出勤",
+    "ru": "Посещение занятий"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, привет! Ты был сегодня на лекции по истории?",
+            "en": "Ivan, hi! Were you at the history lecture today?",
+            "es": "Iván, ¡hola! ¿Has estado hoy en la conferencia de historia?",
+            "fr": "Ivan, salut ! Tu étais au cours d'histoire aujourd'hui ?",
+            "pt": "Ivan, oi! Você foi hoje na palestra de história?",
+            "kr": "이반, 안녕! 오늘 역사 강의에 갔었어?",
+            "jp": "イワン、こんにちは！今日の歴史の講義には行った？",
+            "zh": "伊万，你好！你今天去上历史课了吗？",
+            "ru": "Иван, привет! Ты был сегодня на лекции по истории?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Привет, Анна! Да, я пришёл, но опоздал на десять минут.",
+            "en": "Hi, Anna! Yes, I came, but I was ten minutes late.",
+            "es": "¡Hola, Ana! Sí, vine, pero llegué diez minutos tarde.",
+            "fr": "Salut, Anna ! Oui, j'y suis allé, mais j'avais dix minutes de retard.",
+            "pt": "Oi, Anna! Sim, eu fui, mas cheguei dez minutos atrasado.",
+            "kr": "안녕, 안나! 응, 갔는데 십 분 늦었어.",
+            "jp": "こんにちは、アンナ！うん、行ったけど、十分遅刻しちゃったんだ。",
+            "zh": "你好，安娜！去了，我去了，但是迟到了十分钟。",
+            "ru": "Привет, Анна! Да, я пришёл, но опоздал на десять минут."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ой, а что случилось? Ты обычно приходишь вовремя.",
+            "en": "Oh, what happened? You usually arrive on time.",
+            "es": "Vaya, ¿y qué pasó? Normalmente llegas a tiempo.",
+            "fr": "Oh, qu'est-ce qui s'est passé ? D'habitude, tu arrives à l'heure.",
+            "pt": "Ah, e o que aconteceu? Você costuma chegar na hora.",
+            "kr": "어, 무슨 일 있었어? 보통은 제때 오잖아.",
+            "jp": "え、何があったの？いつもは時間通りに来るのに。",
+            "zh": "哦，发生什么事了？你平时都准时到的。",
+            "ru": "Ой, а что случилось? Ты обычно приходишь вовремя."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Автобус застрял в пробке, ничего не мог поделать.",
+            "en": "The bus got stuck in traffic, there was nothing I could do.",
+            "es": "El autobús se quedó atascado en un atasco, no pude hacer nada.",
+            "fr": "Le bus est resté coincé dans les embouteillages, je n'y pouvais rien.",
+            "pt": "O ônibus ficou preso no trânsito, não pude fazer nada.",
+            "kr": "버스가 교통 체증에 걸렸어, 어쩔 수가 없었어.",
+            "jp": "バスが渋滞に巻き込まれて、どうしようもなかったんだ。",
+            "zh": "公交车堵在路上了，我也没办法。",
+            "ru": "Автобус застрял в пробке, ничего не мог поделать."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно. Преподаватель, наверное, заметил, что ты опоздал?",
+            "en": "I see. The professor probably noticed that you were late, right?",
+            "es": "Entendido. El profesor seguramente notó que llegaste tarde, ¿no?",
+            "fr": "Je vois. Le professeur a dû remarquer que tu étais en retard, non ?",
+            "pt": "Entendi. O professor provavelmente notou que você se atrasou, não é?",
+            "kr": "그렇구나. 교수님이 네가 늦은 거 알아챘겠네?",
+            "jp": "そうなんだ。先生は、君が遅刻したのに気づいたと思う？",
+            "zh": "明白了。老师大概注意到你迟到了吧？",
+            "ru": "Понятно. Преподаватель, наверное, заметил, что ты опоздал?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Заметил, но ничего не сказал. Просто кивнул мне.",
+            "en": "He noticed, but he didn't say anything. He just nodded at me.",
+            "es": "Lo notó, pero no dijo nada. Solo me asintió.",
+            "fr": "Il l'a remarqué, mais il n'a rien dit. Il m'a juste fait un signe de tête.",
+            "pt": "Notou, mas não disse nada. Só acenou para mim.",
+            "kr": "알아챘지만 아무 말 안 하셨어. 그냥 나한테 고개만 끄덕이셨어.",
+            "jp": "気づいたけど、何も言わなかったよ。ただうなずいただけだった。",
+            "zh": "注意到了，但什么也没说。只是朝我点了点头。",
+            "ru": "Заметил, но ничего не сказал. Просто кивнул мне."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты идёшь на семинар по экономике?",
+            "en": "Dmitry, are you going to the economics seminar?",
+            "es": "Dmitri, ¿vas al seminario de economía?",
+            "fr": "Dmitri, tu vas au séminaire d'économie ?",
+            "pt": "Dmitri, você vai ao seminário de economia?",
+            "kr": "드미트리, 경제학 세미나 갈 거야?",
+            "jp": "ドミトリー、経済学のゼミに行く？",
+            "zh": "德米特里，你去上经济学研讨课吗？",
+            "ru": "Дмитрий, ты идёшь на семинар по экономике?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, собираюсь. А ты разве не идёшь?",
+            "en": "Yes, I'm planning to. Aren't you going?",
+            "es": "Sí, tengo pensado ir. ¿Y tú no vas?",
+            "fr": "Oui, j'y vais. Et toi, tu n'y vas pas ?",
+            "pt": "Sim, estou indo. E você, não vai?",
+            "kr": "응, 갈 생각이야. 너는 안 가?",
+            "jp": "うん、行くつもりだよ。君は行かないの？",
+            "zh": "是的，正打算去。你难道不去吗？",
+            "ru": "Да, собираюсь. А ты разве не идёшь?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иду, но мне нужно сначала зайти в библиотеку за учебником.",
+            "en": "I am, but I need to stop by the library first to get the textbook.",
+            "es": "Voy, pero primero tengo que pasar por la biblioteca a por el libro de texto.",
+            "fr": "Si, j'y vais, mais je dois d'abord passer à la bibliothèque pour prendre un manuel.",
+            "pt": "Vou, mas preciso passar primeiro na biblioteca para pegar o livro.",
+            "kr": "가지, 근데 먼저 도서관에 교재 가지러 들러야 해.",
+            "jp": "行くけど、まず図書館に教科書を取りに行かないといけないんだ。",
+            "zh": "去，但我得先去图书馆拿一下课本。",
+            "ru": "Иду, но мне нужно сначала зайти в библиотеку за учебником."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, я тебя подожду у входа в аудиторию.",
+            "en": "Okay, I'll wait for you at the entrance to the classroom.",
+            "es": "Vale, te espero en la entrada del aula.",
+            "fr": "D'accord, je t'attendrai à l'entrée de la salle de cours.",
+            "pt": "Tudo bem, eu espero você na entrada da sala de aula.",
+            "kr": "좋아, 강의실 입구에서 기다려 줄게.",
+            "jp": "わかった、教室の入り口で待ってるよ。",
+            "zh": "好的，我在教室门口等你。",
+            "ru": "Хорошо, я тебя подожду у входа в аудиторию."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, я быстро. Только возьму книгу и сразу приду.",
+            "en": "Great, I'll be quick. I'll just grab the book and come right away.",
+            "es": "Genial, voy rápido. Solo cojo el libro y vengo enseguida.",
+            "fr": "Parfait, je fais vite. Je prends juste le livre et j'arrive tout de suite.",
+            "pt": "Ótimo, eu sou rápida. Só pego o livro e volto já.",
+            "kr": "좋아, 금방 갈게. 책만 집고 바로 올게.",
+            "jp": "ありがとう、すぐに済ませるよ。本を取ったらすぐ行くから。",
+            "zh": "太好了，我很快的。拿了书就马上过来。",
+            "ru": "Отлично, я быстро. Только возьму книгу и сразу приду."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Договорились, не торопись, у нас ещё есть время.",
+            "en": "Deal, no need to rush, we still have time.",
+            "es": "De acuerdo, no te apresures, todavía tenemos tiempo.",
+            "fr": "C'est entendu, ne te presse pas, on a encore le temps.",
+            "pt": "Combinado, não precisa se apressar, ainda temos tempo.",
+            "kr": "알았어, 서두르지 마, 아직 시간 있어.",
+            "jp": "わかった、急がなくていいよ。まだ時間はあるから。",
+            "zh": "说好了，别着急，我们还有时间。",
+            "ru": "Договорились, не торопись, у нас ещё есть время."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, как тебе вчерашняя пара по философии?",
+            "en": "Sergey, how was yesterday's philosophy class?",
+            "es": "Serguéi, ¿qué te pareció la clase de filosofía de ayer?",
+            "fr": "Sergueï, comment était le cours de philo d'hier ?",
+            "pt": "Sergei, o que você achou da aula de filosofia de ontem?",
+            "kr": "세르게이, 어제 철학 수업 어땠어?",
+            "jp": "セルゲイ、昨日の哲学の授業はどうだった？",
+            "zh": "谢尔盖，你觉得昨天的哲学课怎么样？",
+            "ru": "Сергей, как тебе вчерашняя пара по философии?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Честно говоря, было немного скучно. Мы весь час читали текст.",
+            "en": "Honestly, it was a bit boring. We spent the whole hour reading a text.",
+            "es": "Siendo sincero, fue un poco aburrida. Estuvimos toda la hora leyendo un texto.",
+            "fr": "Pour être honnête, c'était un peu ennuyeux. On a lu un texte pendant toute l'heure.",
+            "pt": "Para ser sincero, foi um pouco entediante. Passamos a aula inteira lendo o texto.",
+            "kr": "솔직히 말하면 좀 지루했어. 한 시간 내내 텍스트를 읽었거든.",
+            "jp": "正直言うと、ちょっと退屈だったよ。一時間ずっとテキストを読んでたんだ。",
+            "zh": "说实话，有点无聊。我们整整一个小时都在读课文。",
+            "ru": "Честно говоря, было немного скучно. Мы весь час читали текст."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, я заметила, что ты всё время смотрел в окно.",
+            "en": "Yeah, I noticed you were looking out the window the whole time.",
+            "es": "Sí, me di cuenta de que estuviste mirando por la ventana todo el tiempo.",
+            "fr": "Oui, j'ai remarqué que tu regardais tout le temps par la fenêtre.",
+            "pt": "É, eu notei que você ficou olhando pela janela o tempo todo.",
+            "kr": "맞아, 너 계속 창밖만 보던 거 알아챘어.",
+            "jp": "うん、君がずっと窓の外を見てたのに気づいたよ。",
+            "zh": "是啊，我注意到你一直看着窗外。",
+            "ru": "Да, я заметила, что ты всё время смотрел в окно."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ты права, я отвлёкся. Но потом я всё же записал главные мысли.",
+            "en": "You're right, I got distracted. But afterwards I did write down the main points.",
+            "es": "Tienes razón, me distraje. Pero luego apunté las ideas principales.",
+            "fr": "Tu as raison, j'étais distrait. Mais après, j'ai quand même noté les idées principales.",
+            "pt": "Você tem razão, eu me distraí. Mas depois eu anotei as ideias principais.",
+            "kr": "네 말이 맞아, 딴생각했어. 그래도 나중에 핵심 내용은 다 필기했어.",
+            "jp": "その通りだね、ぼんやりしちゃってた。でも、後で大事な考えはちゃんと書き留めたよ。",
+            "zh": "你说得对，我走神了。不过后来我还是把主要观点记下来了。",
+            "ru": "Ты права, я отвлёкся. Но потом я всё же записал главные мысли."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Молодец! А я, кажется, пропустила что-то важное в начале.",
+            "en": "Good for you! And I think I missed something important at the beginning.",
+            "es": "¡Bien hecho! Y yo creo que me perdí algo importante al principio.",
+            "fr": "Bien joué ! Et moi, j'ai l'impression d'avoir raté quelque chose d'important au début.",
+            "pt": "Muito bem! E eu acho que perdi algo importante no começo.",
+            "kr": "잘했네! 나는 시작 부분에 중요한 걸 놓친 것 같아.",
+            "jp": "えらいね！私は最初の方で何か大事なことを聞き逃したみたい。",
+            "zh": "真棒！我好像在开头漏掉了什么重要的内容。",
+            "ru": "Молодец! А я, кажется, пропустила что-то важное в начале."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не переживай, я могу дать тебе свои конспекты.",
+            "en": "Don't worry, I can give you my notes.",
+            "es": "No te preocupes, puedo darte mis apuntes.",
+            "fr": "Ne t'inquiète pas, je peux te prêter mes notes.",
+            "pt": "Não se preocupe, posso te emprestar minhas anotações.",
+            "kr": "걱정 마, 내 필기 노트 줄 수 있어.",
+            "jp": "心配しないで、ノートを貸してあげるよ。",
+            "zh": "别担心，我可以把我的笔记给你。",
+            "ru": "Не переживай, я могу дать тебе свои конспекты."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, ты не знаешь, будет ли завтра практическое занятие по химии?",
+            "en": "Maria, do you know if there's a chemistry lab class tomorrow?",
+            "es": "María, ¿sabes si mañana habrá clase práctica de química?",
+            "fr": "Maria, tu ne sais pas s'il y aura un TP de chimie demain ?",
+            "pt": "Maria, você sabe se amanhã vai ter aula prática de química?",
+            "kr": "마리야, 내일 화학 실습 수업이 있는지 알아?",
+            "jp": "マリア、明日の化学の実習があるか知ってる？",
+            "zh": "玛丽亚，你知道明天有没有化学实践课吗？",
+            "ru": "Мария, ты не знаешь, будет ли завтра практическое занятие по химии?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Знаю, будет. Я видела расписание на доске объявлений.",
+            "en": "Yes, there is. I saw the schedule on the bulletin board.",
+            "es": "Sí, la habrá. Vi el horario en el tablón de anuncios.",
+            "fr": "Si, je sais, il y en aura un. J'ai vu l'emploi du temps sur le tableau d'affichage.",
+            "pt": "Sei, vai ter. Eu vi o horário no quadro de avisos.",
+            "kr": "알아, 있어. 게시판에 시간표 봤어.",
+            "jp": "あるよ、知ってる。掲示板で時間割を見たから。",
+            "zh": "知道，有的。我在公告栏上看到课程表了。",
+            "ru": "Знаю, будет. Я видела расписание на доске объявлений."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, а что нужно с собой взять?",
+            "en": "Great, and what do we need to bring?",
+            "es": "Genial, ¿y qué hay que llevar?",
+            "fr": "Parfait, et qu'est-ce qu'il faut apporter ?",
+            "pt": "Ótimo, e o que preciso levar?",
+            "kr": "좋아, 뭘 가져가야 해?",
+            "jp": "よかった。で、何を持っていけばいいの？",
+            "zh": "太好了，那需要带什么东西去呢？",
+            "ru": "Отлично, а что нужно с собой взять?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Наверное, лабораторный халат и тетрадь для отчётов.",
+            "en": "Probably a lab coat and a notebook for reports.",
+            "es": "Probablemente, la bata de laboratorio y el cuaderno para los informes.",
+            "fr": "Probablement une blouse de laboratoire et un cahier pour les comptes rendus.",
+            "pt": "Provavelmente o jaleco de laboratório e o caderno de relatórios.",
+            "kr": "아마 실험복이랑 보고서용 공책일 거야.",
+            "jp": "たぶん、実験用の白衣とレポート用のノートだよ。",
+            "zh": "大概要带实验室白大褂和写报告用的笔记本。",
+            "ru": "Наверное, лабораторный халат и тетрадь для отчётов."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спасибо! А во сколько начинается занятие?",
+            "en": "Thanks! And what time does the class start?",
+            "es": "¡Gracias! ¿Y a qué hora empieza la clase?",
+            "fr": "Merci ! Et à quelle heure commence le cours ?",
+            "pt": "Obrigada! E a que horas começa a aula?",
+            "kr": "고마워! 그럼 수업이 몇 시에 시작해?",
+            "jp": "ありがとう！で、授業は何時に始まるの？",
+            "zh": "谢谢！那课几点开始？",
+            "ru": "Спасибо! А во сколько начинается занятие?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "В десять утра, но лучше прийти минут за пять пораньше.",
+            "en": "At ten in the morning, but it's better to come about five minutes early.",
+            "es": "A las diez de la mañana, pero es mejor llegar unos cinco minutos antes.",
+            "fr": "À dix heures du matin, mais il vaut mieux arriver cinq minutes plus tôt.",
+            "pt": "Às dez da manhã, mas é melhor chegar uns cinco minutos mais cedo.",
+            "kr": "오전 열 시, 근데 오 분 정도 일찍 오는 게 좋아.",
+            "jp": "朝の十時だよ。でも、五分くらい早めに行ったほうがいいよ。",
+            "zh": "上午十点，不过最好提前五分钟左右到。",
+            "ru": "В десять утра, но лучше прийти минут за пять пораньше."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, привет! Я тебя не видела на паре по английскому.",
+            "en": "Alexey, hi! I didn't see you at the English class.",
+            "es": "Alekséi, ¡hola! No te vi en la clase de inglés.",
+            "fr": "Alexeï, salut ! Je ne t'ai pas vu au cours d'anglais.",
+            "pt": "Alexei, oi! Eu não te vi na aula de inglês.",
+            "kr": "알렉세이, 안녕! 영어 수업에서 너 못 봤어.",
+            "jp": "アレクセイ、こんにちは！英語の授業で君を見かけなかったよ。",
+            "zh": "阿列克谢，你好！我上英语课的时候没看到你。",
+            "ru": "Алексей, привет! Я тебя не видела на паре по английскому."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Привет, Ольга! Я был у врача, у меня была запись.",
+            "en": "Hi, Olga! I was at the doctor's, I had an appointment.",
+            "es": "¡Hola, Olga! Estuve en el médico, tenía cita.",
+            "fr": "Salut, Olga ! J'étais chez le médecin, j'avais rendez-vous.",
+            "pt": "Oi, Olga! Eu fui ao médico, eu tinha consulta marcada.",
+            "kr": "안녕, 올가! 병원에 갔었어, 예약이 있었거든.",
+            "jp": "こんにちは、オルガ！医者に行ってたんだ、予約があったから。",
+            "zh": "你好，奥尔加！我去看医生了，我预约了。",
+            "ru": "Привет, Ольга! Я был у врача, у меня была запись."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А, понятно. Ты уже узнал, что мы проходили?",
+            "en": "Oh, I see. Did you find out what we covered?",
+            "es": "Ah, ya veo. ¿Ya te enteraste de lo que dimos?",
+            "fr": "Ah, d'accord. Tu as déjà su ce qu'on a fait ?",
+            "pt": "Ah, entendi. Você já ficou sabendo o que a gente viu?",
+            "kr": "아, 그렇구나. 우리가 뭘 배웠는지 알아봤어?",
+            "jp": "ああ、そうなんだ。何をやったかもう聞いた？",
+            "zh": "啊，明白了。你知道我们学了什么吗？",
+            "ru": "А, понятно. Ты уже узнал, что мы проходили?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я спросил у преподавателя по электронной почте.",
+            "en": "Yes, I asked the teacher by email.",
+            "es": "Sí, se lo pregunté al profesor por correo electrónico.",
+            "fr": "Oui, j'ai demandé au professeur par e-mail.",
+            "pt": "Sim, eu perguntei ao professor por e-mail.",
+            "kr": "응, 교수님한테 이메일로 물어봤어.",
+            "jp": "うん、先生にメールで聞いたよ。",
+            "zh": "知道，我发邮件问过老师了。",
+            "ru": "Да, я спросил у преподавателя по электронной почте."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "И что он сказал? Много нового материала?",
+            "en": "And what did he say? A lot of new material?",
+            "es": "¿Y qué te dijo? ¿Mucho material nuevo?",
+            "fr": "Et qu'est-ce qu'il a dit ? Beaucoup de nouveau ?",
+            "pt": "E o que ele disse? Muito conteúdo novo?",
+            "kr": "그럼 뭐라고 하셨어? 새 내용이 많아?",
+            "jp": "で、何て言ってた？新しい教材がたくさんあった？",
+            "zh": "那老师怎么说？新内容多吗？",
+            "ru": "И что он сказал? Много нового материала?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Сказал, что мы разбирали новую грамматику. Я всё запишу у тебя.",
+            "en": "He said we went over new grammar. I'll copy all your notes.",
+            "es": "Dijo que vimos gramática nueva. Lo copiaré todo de tus apuntes.",
+            "fr": "Il a dit qu'on avait étudié une nouvelle grammaire. Je recopierai tout sur tes notes.",
+            "pt": "Ele disse que a gente viu gramática nova. Eu anoto tudo com você.",
+            "kr": "새 문법을 다뤘다고 하셨어. 네 필기로 다 옮겨 적을게.",
+            "jp": "新しい文法をやったって言ってたよ。君のノートを写させてもらうよ。",
+            "zh": "他说我们讲了新的语法。我会找你抄笔记的。",
+            "ru": "Сказал, что мы разбирали новую грамматику. Я всё запишу у тебя."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, ты уже записалась на курс по программированию?",
+            "en": "Elena, have you signed up for the programming course yet?",
+            "es": "Elena, ¿ya te has apuntado al curso de programación?",
+            "fr": "Elena, tu t'es déjà inscrite au cours de programmation ?",
+            "pt": "Elena, você já se inscreveu no curso de programação?",
+            "kr": "옐레나, 프로그래밍 강좌에 이미 등록했어?",
+            "jp": "エレナ、プログラミングのコースにもう申し込んだ？",
+            "zh": "叶连娜，你已经报名编程课了吗？",
+            "ru": "Елена, ты уже записалась на курс по программированию?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ещё нет, а ты уже записалась?",
+            "en": "Not yet, have you already signed up?",
+            "es": "Todavía no, ¿y tú ya te has apuntado?",
+            "fr": "Pas encore, et toi, tu t'es déjà inscrite ?",
+            "pt": "Ainda não, e você já se inscreveu?",
+            "kr": "아직, 너는 이미 등록했어?",
+            "jp": "まだだよ。君はもう申し込んだの？",
+            "zh": "还没有，你已经报了吗？",
+            "ru": "Ещё нет, а ты уже записалась?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, я записалась вчера. Осталось всего несколько мест.",
+            "en": "Yes, I signed up yesterday. There are only a few spots left.",
+            "es": "Sí, me apunté ayer. Solo quedan unas pocas plazas.",
+            "fr": "Oui, je me suis inscrite hier. Il ne reste que quelques places.",
+            "pt": "Sim, eu me inscrevi ontem. Só sobraram algumas vagas.",
+            "kr": "응, 어제 등록했어. 몇 자리밖에 안 남았어.",
+            "jp": "うん、昨日申し込んだよ。あと数席しか残ってないんだ。",
+            "zh": "是的，我昨天报了。只剩下几个名额了。",
+            "ru": "Да, я записалась вчера. Осталось всего несколько мест."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Правда? Тогда мне нужно поторопиться с записью.",
+            "en": "Really? Then I need to hurry up and register.",
+            "es": "¿En serio? Entonces tengo que darme prisa con la inscripción.",
+            "fr": "Vraiment ? Alors je dois me dépêcher de m'inscrire.",
+            "pt": "Sério? Então preciso me apressar para me inscrever.",
+            "kr": "정말? 그럼 서둘러 등록해야겠네.",
+            "jp": "本当？じゃあ、急いで申し込まないと。",
+            "zh": "真的吗？那我得赶紧去报名了。",
+            "ru": "Правда? Тогда мне нужно поторопиться с записью."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Точно, не откладывай. Группа маленькая, всего двенадцать человек.",
+            "en": "Exactly, don't put it off. The group is small, only twelve people.",
+            "es": "Exacto, no lo dejes para más tarde. El grupo es pequeño, solo doce personas.",
+            "fr": "Exactement, ne remets pas ça à plus tard. Le groupe est petit, seulement douze personnes.",
+            "pt": "Isso mesmo, não deixe para depois. A turma é pequena, só doze pessoas.",
+            "kr": "맞아, 미루지 마. 그룹이 작아서 총 열두 명이야.",
+            "jp": "そうだよ、先延ばしにしないで。グループは少人数で、全部で十二人だから。",
+            "zh": "没错，别拖了。班很小，一共只有十二个人。",
+            "ru": "Точно, не откладывай. Группа маленькая, всего двенадцать человек."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо, что предупредила! Я запишусь сегодня же вечером.",
+            "en": "Thanks for the heads up! I'll sign up tonight.",
+            "es": "¡Gracias por avisarme! Me apuntaré esta misma noche.",
+            "fr": "Merci de m'avoir prévenue ! Je m'inscris ce soir même.",
+            "pt": "Obrigada por me avisar! Eu me inscrevo hoje mesmo à noite.",
+            "kr": "알려줘서 고마워! 오늘 저녁에 바로 등록할게.",
+            "jp": "教えてくれてありがとう！今日の夜には申し込むよ。",
+            "zh": "谢谢你提醒我！我今天晚上就去报名。",
+            "ru": "Спасибо, что предупредила! Я запишусь сегодня же вечером."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты не знаешь, в какой аудитории будет лекция по психологии?",
+            "en": "Ivan, do you know which room the psychology lecture is in?",
+            "es": "Iván, ¿sabes en qué aula será la conferencia de psicología?",
+            "fr": "Ivan, tu ne sais pas dans quelle salle aura lieu le cours de psychologie ?",
+            "pt": "Ivan, você sabe em qual sala vai ser a palestra de psicologia?",
+            "kr": "이반, 심리학 강의가 몇 호실에서 하는지 알아?",
+            "jp": "イワン、心理学の講義がどの教室であるか知ってる？",
+            "zh": "伊万，你知道心理学课在哪个教室上吗？",
+            "ru": "Иван, ты не знаешь, в какой аудитории будет лекция по психологии?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Кажется, в триста пятой, на третьем этаже.",
+            "en": "I think it's in room three hundred five, on the third floor.",
+            "es": "Creo que en la trescientos cinco, en la tercera planta.",
+            "fr": "Je crois que c'est dans la trois cent cinq, au troisième étage.",
+            "pt": "Acho que na trezentos e cinco, no terceiro andar.",
+            "kr": "삼백오 호실인 것 같아, 삼 층에 있어.",
+            "jp": "確か、三〇五教室、三階だよ。",
+            "zh": "好像是三百零五教室，在三楼。",
+            "ru": "Кажется, в триста пятой, на третьем этаже."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спасибо! А то я впервые иду на эту пару.",
+            "en": "Thanks! It's my first time going to this class.",
+            "es": "¡Gracias! Es que es la primera vez que voy a esta clase.",
+            "fr": "Merci ! C'est que je vais à ce cours pour la première fois.",
+            "pt": "Obrigada! É que é a primeira vez que vou a essa aula.",
+            "kr": "고마워! 나는 이 수업 처음 가거든.",
+            "jp": "ありがとう！初めて行く授業だからさ。",
+            "zh": "谢谢！因为我第一次去上这门课。",
+            "ru": "Спасибо! А то я впервые иду на эту пару."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не за что. Хочешь, пойдём вместе? Я тоже туда иду.",
+            "en": "No problem. Do you want to walk together? I'm going there too.",
+            "es": "De nada. ¿Quieres que vayamos juntos? Yo también voy para allá.",
+            "fr": "De rien. Tu veux qu'on y aille ensemble ? J'y vais aussi.",
+            "pt": "De nada. Quer ir junto? Eu também vou para lá.",
+            "kr": "천만에. 같이 갈래? 나도 거기 가거든.",
+            "jp": "どういたしまして。一緒に行く？僕もそこに行くから。",
+            "zh": "不客气。要不要一起去？我也要去那儿。",
+            "ru": "Не за что. Хочешь, пойдём вместе? Я тоже туда иду."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Конечно, давай. Вместе веселее.",
+            "en": "Sure, let's go. It's more fun together.",
+            "es": "Claro, vamos. Juntos es más divertido.",
+            "fr": "Bien sûr, allons-y. C'est plus sympa à deux.",
+            "pt": "Claro, vamos. Juntos é mais divertido.",
+            "kr": "좋아, 가자. 같이 가면 더 재밌지.",
+            "jp": "もちろん、行こう。一緒のほうが楽しいね。",
+            "zh": "当然，走吧。一起走更有意思。",
+            "ru": "Конечно, давай. Вместе веселее."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда пошли, уже почти пора начинать.",
+            "en": "Then let's go, it's almost time to start.",
+            "es": "Entonces vamos, ya casi es hora de empezar.",
+            "fr": "Alors on y va, il est presque temps de commencer.",
+            "pt": "Então vamos, já está quase na hora de começar.",
+            "kr": "그럼 가자, 벌써 시작할 시간이 다 됐어.",
+            "jp": "じゃあ、行こう。もうそろそろ始まる時間だ。",
+            "zh": "那走吧，差不多该开始了。",
+            "ru": "Тогда пошли, уже почти пора начинать."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты сделал домашнее задание по математике?",
+            "en": "Dmitry, did you do the math homework?",
+            "es": "Dmitri, ¿hiciste los deberes de matemáticas?",
+            "fr": "Dmitri, tu as fait tes devoirs de maths ?",
+            "pt": "Dmitri, você fez o dever de casa de matemática?",
+            "kr": "드미트리, 수학 숙제 했어?",
+            "jp": "ドミトリー、数学の宿題やった？",
+            "zh": "德米特里，你做完数学作业了吗？",
+            "ru": "Дмитрий, ты сделал домашнее задание по математике?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Сделал, но два примера у меня не сошлись с ответом.",
+            "en": "Yes, but two problems didn't match the answer key for me.",
+            "es": "Los hice, pero dos ejercicios no me salieron con la respuesta correcta.",
+            "fr": "Oui, mais deux exercices ne correspondent pas avec la réponse.",
+            "pt": "Fiz, mas dois exercícios não bateram com a resposta.",
+            "kr": "했는데, 두 문제가 답이 안 맞았어.",
+            "jp": "やったけど、二問だけ答えが合わなかったんだ。",
+            "zh": "做完了，但是有两道例题的答案对不上。",
+            "ru": "Сделал, но два примера у меня не сошлись с ответом."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "У меня тоже! Я весь вечер мучилась с ними.",
+            "en": "Same for me! I struggled with them all evening.",
+            "es": "¡A mí también me pasó! Estuve toda la tarde sufriendo con ellos.",
+            "fr": "Moi aussi ! J'ai galéré avec eux toute la soirée.",
+            "pt": "Comigo também! Passei a noite inteira sofrendo com eles.",
+            "kr": "나도! 저녁 내내 그거 때문에 애먹었어.",
+            "jp": "私も！昨日の晩ずっとそれに悩んでたんだ。",
+            "zh": "我也是！我整个晚上都在跟它们较劲。",
+            "ru": "У меня тоже! Я весь вечер мучилась с ними."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Может, спросим у преподавателя перед началом пары?",
+            "en": "Maybe we can ask the teacher before class starts?",
+            "es": "¿Quizás se lo preguntamos al profesor antes de que empiece la clase?",
+            "fr": "Et si on demandait au professeur avant le début du cours ?",
+            "pt": "Que tal perguntarmos ao professor antes do começo da aula?",
+            "kr": "수업 시작 전에 교수님께 여쭤볼까?",
+            "jp": "授業が始まる前に先生に聞いてみない？",
+            "zh": "要不我们上课前问问老师？",
+            "ru": "Может, спросим у преподавателя перед началом пары?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хорошая идея. Он обычно приходит за пять минут до звонка.",
+            "en": "Good idea. He usually comes five minutes before the bell.",
+            "es": "Buena idea. Él suele llegar cinco minutos antes del timbre.",
+            "fr": "Bonne idée. Il arrive d'habitude cinq minutes avant la sonnerie.",
+            "pt": "Boa ideia. Ele costuma chegar cinco minutos antes do sinal.",
+            "kr": "좋은 생각이야. 교수님은 보통 종 치기 오 분 전에 오시거든.",
+            "jp": "いいアイデアだね。先生はいつもチャイムの五分前に来るから。",
+            "zh": "好主意。他通常打铃前五分钟就到。",
+            "ru": "Хорошая идея. Он обычно приходит за пять минут до звонка."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вот и отлично, успеем задать ему вопросы.",
+            "en": "Perfect, we'll have time to ask him our questions.",
+            "es": "Pues perfecto, nos dará tiempo a hacerle las preguntas.",
+            "fr": "Parfait, on aura le temps de lui poser nos questions.",
+            "pt": "Perfeito, dá tempo de fazer as perguntas para ele.",
+            "kr": "그럼 됐네, 질문 드릴 시간이 있을 거야.",
+            "jp": "じゃあ、ちょうどいいね。質問する時間はありそうだ。",
+            "zh": "那就好，我们来得及问他问题。",
+            "ru": "Вот и отлично, успеем задать ему вопросы."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, ты ходишь на все лекции по литературе?",
+            "en": "Anna, do you go to all the literature lectures?",
+            "es": "Ana, ¿vas a todas las conferencias de literatura?",
+            "fr": "Anna, tu vas à tous les cours de littérature ?",
+            "pt": "Anna, você vai a todas as palestras de literatura?",
+            "kr": "안나, 문학 강의는 다 들어?",
+            "jp": "アンナ、文学の講義は全部出てるの？",
+            "zh": "安娜，你每节文学课都去上吗？",
+            "ru": "Анна, ты ходишь на все лекции по литературе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Стараюсь не пропускать, а что?",
+            "en": "I try not to miss any, why?",
+            "es": "Intento no faltar, ¿por qué?",
+            "fr": "J'essaie de ne pas en rater, pourquoi ?",
+            "pt": "Tento não faltar, por quê?",
+            "kr": "빠지지 않으려고 노력해, 왜?",
+            "jp": "なるべく休まないようにしてるよ。どうして？",
+            "zh": "我尽量不缺课，怎么了？",
+            "ru": "Стараюсь не пропускать, а что?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Просто я пропустила прошлую, и теперь не понимаю новую тему.",
+            "en": "It's just that I missed the last one, and now I don't understand the new topic.",
+            "es": "Es que falté a la anterior y ahora no entiendo el tema nuevo.",
+            "fr": "C'est juste que j'ai raté le dernier, et maintenant je ne comprends pas le nouveau sujet.",
+            "pt": "É que eu faltei à última, e agora não estou entendendo o assunto novo.",
+            "kr": "그냥 지난 수업을 빠져서 이번 새 주제를 이해를 못 하겠어.",
+            "jp": "ただ、前回のを休んじゃって、今の新しいテーマがわからないんだ。",
+            "zh": "只是我上次课没去，现在新课的内容我听不懂了。",
+            "ru": "Просто я пропустила прошлую, и теперь не понимаю новую тему."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ничего страшного. Я могу кратко рассказать тебе, о чём говорили.",
+            "en": "No big deal. I can briefly tell you what we talked about.",
+            "es": "No pasa nada. Puedo contarte brevemente de qué hablamos.",
+            "fr": "Ce n'est pas grave. Je peux te raconter brièvement de quoi on a parlé.",
+            "pt": "Sem problema. Posso te contar resumidamente sobre o que a gente falou.",
+            "kr": "괜찮아. 뭐에 대해 이야기했는지 간단히 설명해 줄 수 있어.",
+            "jp": "大丈夫だよ。何を話したか、簡単に教えてあげられるよ。",
+            "zh": "没关系。我可以简单跟你说说讲了什么。",
+            "ru": "Ничего страшного. Я могу кратко рассказать тебе, о чём говорили."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Было бы замечательно! Может, встретимся после пар?",
+            "en": "That would be great! Maybe we can meet after classes?",
+            "es": "¡Sería estupendo! ¿Quizás quedamos después de las clases?",
+            "fr": "Ce serait génial ! On pourrait se retrouver après les cours ?",
+            "pt": "Seria ótimo! Que tal a gente se encontrar depois das aulas?",
+            "kr": "정말 좋을 것 같아! 수업 끝나고 만날래?",
+            "jp": "それは助かる！授業の後、会わない？",
+            "zh": "那太好了！要不我们下课以后见个面？",
+            "ru": "Было бы замечательно! Может, встретимся после пар?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Давай. Зайдём в кафе и всё обсудим.",
+            "en": "Sure. Let's go to a cafe and talk it all over.",
+            "es": "Vale. Entramos en un café y lo hablamos todo.",
+            "fr": "D'accord. On ira au café et on discutera de tout ça.",
+            "pt": "Vamos. A gente entra num café e conversa sobre tudo.",
+            "kr": "그래. 카페에 가서 다 이야기하자.",
+            "jp": "いいよ。カフェに寄って、全部話そう。",
+            "zh": "好啊。我们去咖啡馆里好好聊聊。",
+            "ru": "Давай. Зайдём в кафе и всё обсудим."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты не видел расписание экзаменов? Говорят, уже вывесили.",
+            "en": "Sergey, have you seen the exam schedule? They say it's been posted.",
+            "es": "Serguéi, ¿has visto el horario de exámenes? Dicen que ya lo han publicado.",
+            "fr": "Sergueï, tu n'as pas vu l'emploi du temps des examens ? On dit qu'il a été affiché.",
+            "pt": "Sergei, você viu o calendário de exames? Dizem que já divulgaram.",
+            "kr": "세르게이, 시험 시간표 못 봤어? 벌써 올렸다고 하던데.",
+            "jp": "セルゲイ、試験の時間割見た？もう発表されたって聞いたけど。",
+            "zh": "谢尔盖，你看到考试时间表了吗？听说已经贴出来了。",
+            "ru": "Сергей, ты не видел расписание экзаменов? Говорят, уже вывесили."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Видел, оно висит на сайте университета.",
+            "en": "Yes, I saw it, it's on the university website.",
+            "es": "Lo he visto, está en la página web de la universidad.",
+            "fr": "Si, je l'ai vu, il est sur le site de l'université.",
+            "pt": "Vi, está no site da universidade.",
+            "kr": "봤어, 대학교 웹사이트에 걸려 있어.",
+            "jp": "見たよ、大学のウェブサイトに載ってるよ。",
+            "zh": "看到了，挂在大学网站上了。",
+            "ru": "Видел, оно висит на сайте университета."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, а когда у нас первый экзамен?",
+            "en": "Great, and when is our first exam?",
+            "es": "Genial, ¿y cuándo tenemos el primer examen?",
+            "fr": "Parfait, et c'est quand notre premier examen ?",
+            "pt": "Ótimo, e quando é a nossa primeira prova?",
+            "kr": "좋아, 그럼 첫 시험이 언제야?",
+            "jp": "よかった。で、最初の試験はいつ？",
+            "zh": "太好了，那我们第一门考试是什么时候？",
+            "ru": "Отлично, а когда у нас первый экзамен?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Через две недели, в понедельник, по русскому языку.",
+            "en": "In two weeks, on Monday, in Russian language.",
+            "es": "En dos semanas, el lunes, de lengua rusa.",
+            "fr": "Dans deux semaines, lundi, en russe.",
+            "pt": "Daqui a duas semanas, na segunda-feira, de língua russa.",
+            "kr": "이주 후 월요일이야, 러시아어 시험이야.",
+            "jp": "二週間後、月曜日に、ロシア語だよ。",
+            "zh": "两周以后，星期一，考俄语。",
+            "ru": "Через две недели, в понедельник, по русскому языку."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно. Значит, нужно начинать готовиться уже сейчас.",
+            "en": "I see. So we need to start preparing right now.",
+            "es": "Entendido. Entonces hay que empezar a prepararse ya.",
+            "fr": "Compris. Alors, il faut commencer à se préparer dès maintenant.",
+            "pt": "Entendi. Então precisamos começar a nos preparar já.",
+            "kr": "알겠어. 그럼 벌써부터 준비를 시작해야겠네.",
+            "jp": "わかった。じゃあ、もうすぐ準備を始めないといけないね。",
+            "zh": "明白了。那我们现在就得开始准备了。",
+            "ru": "Понятно. Значит, нужно начинать готовиться уже сейчас."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен. Может, будем готовиться вместе? Так эффективнее.",
+            "en": "Agreed. Maybe we can study together? It's more effective that way.",
+            "es": "De acuerdo. ¿Quizás preparamos juntos? Así es más eficaz.",
+            "fr": "Je suis d'accord. Et si on se préparait ensemble ? C'est plus efficace.",
+            "pt": "Concordo. Que tal estudarmos juntos? Assim é mais eficiente.",
+            "kr": "동의해. 같이 준비할래? 그게 더 효율적이야.",
+            "jp": "そうだね。一緒に準備しない？そのほうが効率的だから。",
+            "zh": "同意。要不我们一起准备吧？这样效率更高。",
+            "ru": "Согласен. Может, будем готовиться вместе? Так эффективнее."
+          }
+        }
+      ]
+    }
+  ]
+}

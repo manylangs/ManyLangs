@@ -1,0 +1,28 @@
+ORDER: 006/065
+SCENE: S002
+SHOT: SHOT_003
+DURATION: 8.0 seconds
+ASPECT RATIO: 16:9
+RESOLUTION: 1080p
+
+REFERENCE IMAGE:
+- _references/jieun_primary.png
+
+PROMPT:
+Medium shot, eye-level, static locked camera. Inside the immigration area of JFK International Airport with high ceilings, digital displays, and natural light from large windows. A professional airport employee in uniform with visible ID badge, neatly groomed short hair, faces a young woman with shoulder-length dark brown hair tucked behind ears, wearing white t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, with a travel backpack on her back and crossbody bag across her body. The employee points toward the line on the left and tells her it is for visitors, then responds to her question about forms. The young woman listens attentively, smartphone in hand lowered to her side. Other passengers walk toward the immigration lines in the background.
+
+NEGATIVE / DO-NOT-CHANGE NOTES:
+- Do not change character identity.
+- Do not change canonical location identity.
+- Do not introduce new characters.
+- Do not introduce new locations.
+- Do not alter canonical prop state.
+- Do not change story events.
+- Do not show Jieun moving past the immigration area.
+- Do not show Jieun completing the immigration process.
+- Do not show Jieun leaving the airport.
+- Do not show Jieun joining any immigration line yet.
+- Do not show Jieun holding her passport yet.
+
+OUTPUT FILE:
+S002_SHOT_003.mp4

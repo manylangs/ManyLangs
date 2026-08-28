@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b2",
+    "id": "034"
+  },
+  "title": {
+    "target": "Подработка",
+    "en": "Part-time Job",
+    "es": "Trabajo a tiempo parcial",
+    "fr": "Petit boulot",
+    "pt": "Trabalho de meio período",
+    "kr": "아르바이트",
+    "jp": "アルバイト",
+    "zh": "兼职",
+    "ru": "Подработка"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, я слышала, ты нашёл подработку в кафе. Как тебе?",
+            "en": "Ivan, I heard you found a part-time job at a cafe. How do you like it?",
+            "es": "Iván, he oído que encontraste un trabajo a tiempo parcial en un café. ¿Qué tal te va?",
+            "fr": "Ivan, j'ai entendu dire que tu as trouvé un petit boulot dans un café. Comment tu trouves ?",
+            "pt": "Ivan, eu ouvi dizer que você encontrou um trabalho de meio período no café. O que você acha?",
+            "kr": "이반, 카페에서 아르바이트를 구했다고 들었어. 어때?",
+            "jp": "イワン、聞いたんだけど、カフェでアルバイトを見つけたんだって。どう？",
+            "zh": "伊万，我听说你在咖啡馆找了份兼职。感觉怎么样？",
+            "ru": "Иван, я слышала, ты нашёл подработку в кафе. Как тебе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Анна, работаю уже вторую неделю. Мне очень нравится.",
+            "en": "Yes, Anna, I've been working there for two weeks now. I really like it.",
+            "es": "Sí, Ana, llevo ya dos semanas trabajando. Me gusta mucho.",
+            "fr": "Oui, Anna, ça fait déjà deux semaines que je travaille. J'aime beaucoup ça.",
+            "pt": "Sim, Anna, já estou trabalhando há duas semanas. Estou gostando muito.",
+            "kr": "응, 안나, 벌써 둘째 주째 일하고 있어. 정말 마음에 들어.",
+            "jp": "うん、アンナ、もう二週間働いてるよ。とても気に入ってる。",
+            "zh": "是的，安娜，我已经干了第二周了。我非常喜欢。",
+            "ru": "Да, Анна, работаю уже вторую неделю. Мне очень нравится."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А что ты там делаешь?",
+            "en": "And what do you do there?",
+            "es": "¿Y qué haces allí?",
+            "fr": "Et qu'est-ce que tu fais là-bas ?",
+            "pt": "E o que você faz lá?",
+            "kr": "거기서 뭘 하는데?",
+            "jp": "そこで何をしてるの？",
+            "zh": "那你在那儿做什么？",
+            "ru": "А что ты там делаешь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "В основном принимаю заказы и разношу кофе. Иногда помогаю на кухне.",
+            "en": "Mostly I take orders and serve coffee. Sometimes I help in the kitchen.",
+            "es": "Sobre todo tomo los pedidos y sirvo los cafés. A veces ayudo en la cocina.",
+            "fr": "Principalement, je prends les commandes et je sers les cafés. Parfois, j'aide en cuisine.",
+            "pt": "Na maioria das vezes, recebo os pedidos e sirvo café. Às vezes, ajudo na cozinha.",
+            "kr": "주로 주문을 받고 커피를 나르고 있어. 가끔은 주방에서도 도와주고.",
+            "jp": "主に注文を受けて、コーヒーを運んでるよ。たまにキッチンも手伝ってる。",
+            "zh": "主要是接单和送咖啡。有时候在厨房帮忙。",
+            "ru": "В основном принимаю заказы и разношу кофе. Иногда помогаю на кухне."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Звучит неплохо. А график удобный?",
+            "en": "Sounds good. And is the schedule convenient?",
+            "es": "Suena bien. ¿Y el horario te viene bien?",
+            "fr": "Ça a l'air pas mal. Et les horaires sont pratiques ?",
+            "pt": "Parece bom. E o horário é conveniente?",
+            "kr": "괜찮아 보이네. 그래서 시간표는 편해?",
+            "jp": "いいね。シフトは都合がいいの？",
+            "zh": "听起来不错。那时间安排方便吗？",
+            "ru": "Звучит неплохо. А график удобный?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вполне. Работаю по вечерам, после занятий.",
+            "en": "It's fine. I work in the evenings, after classes.",
+            "es": "Bastante. Trabajo por las tardes, después de las clases.",
+            "fr": "Tout à fait. Je travaille le soir, après les cours.",
+            "pt": "Bastante. Trabalho à noite, depois das aulas.",
+            "kr": "아주 편해. 수업 끝나고 저녁에 일해.",
+            "jp": "まあまあだよ。授業が終わった後の夕方に働いてるんだ。",
+            "zh": "挺方便的。我都是晚上下班后去工作。",
+            "ru": "Вполне. Работаю по вечерам, после занятий."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты не знаешь, где можно найти подработку студенту?",
+            "en": "Dmitry, do you know where a student can find a part-time job?",
+            "es": "Dmitri, ¿sabes dónde puede encontrar un trabajo a tiempo parcial un estudiante?",
+            "fr": "Dmitri, tu ne saurais pas où un étudiant peut trouver un petit boulot ?",
+            "pt": "Dmitri, você sabe onde um estudante pode encontrar um trabalho de meio período?",
+            "kr": "드미트리, 학생이 할 수 있는 아르바이트 어디서 구할 수 있는지 알아?",
+            "jp": "ドミトリー、学生ができるアルバイトってどこで見つけられるか知ってる？",
+            "zh": "德米特里，你知道学生能在哪儿找到兼职吗？",
+            "ru": "Дмитрий, ты не знаешь, где можно найти подработку студенту?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Знаю, в библиотеке как раз ищут помощника. Я там вчера видел объявление.",
+            "en": "I do, the library is actually looking for an assistant. I saw a notice there yesterday.",
+            "es": "Lo sé, en la biblioteca justamente buscan a un ayudante. Ayer vi allí un anuncio.",
+            "fr": "Si, je sais, à la bibliothèque ils cherchent justement un assistant. J'ai vu l'annonce hier là-bas.",
+            "pt": "Sei, na biblioteca estão justamente procurando um assistente. Eu vi um anúncio lá ontem.",
+            "kr": "알아, 도서관에서 마침 조교를 구하고 있어. 어제 거기서 공고를 봤어.",
+            "jp": "知ってるよ、ちょうど図書館で助手を探してたよ。昨日そこで募集を見たんだ。",
+            "zh": "知道，图书馆正好在招助理。我昨天在那儿看到了招聘启事。",
+            "ru": "Знаю, в библиотеке как раз ищут помощника. Я там вчера видел объявление."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? А что нужно делать?",
+            "en": "Really? And what do you have to do?",
+            "es": "¿De verdad? ¿Y qué hay que hacer?",
+            "fr": "Vraiment ? Et qu'est-ce qu'il faut faire ?",
+            "pt": "Sério? E o que precisa fazer?",
+            "kr": "정말? 그럼 뭘 해야 하는데?",
+            "jp": "本当？何をする必要があるの？",
+            "zh": "真的吗？那需要做什么？",
+            "ru": "Правда? А что нужно делать?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Расставлять книги на полки и помогать читателям находить нужную литературу.",
+            "en": "Put books back on the shelves and help readers find the materials they need.",
+            "es": "Colocar los libros en las estanterías y ayudar a los lectores a encontrar la literatura que necesitan.",
+            "fr": "Remettre les livres sur les étagères et aider les lecteurs à trouver les ouvrages dont ils ont besoin.",
+            "pt": "Organizar os livros nas prateleiras e ajudar os leitores a encontrar a literatura necessária.",
+            "kr": "책을 책장에 정리하고, 이용자들이 필요한 자료를 찾는 걸 도와주는 거야.",
+            "jp": "本を棚に並べたり、利用者が探している本を見つけるのを手伝ったりするんだ。",
+            "zh": "把书摆上书架，帮读者找他们需要的书。",
+            "ru": "Расставлять книги на полки и помогать читателям находить нужную литературу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это, наверное, спокойная работа. А сколько платят?",
+            "en": "That's probably a calm job. And how much do they pay?",
+            "es": "Seguramente es un trabajo tranquilo. ¿Y cuánto pagan?",
+            "fr": "C'est sûrement un travail calme. Et ça paie combien ?",
+            "pt": "Isso deve ser um trabalho tranquilo. E quanto pagam?",
+            "kr": "아마 조용한 일이겠네. 그런데 얼마나 줘?",
+            "jp": "それはたぶん、落ち着いた仕事だね。時給はいくらぐらい？",
+            "zh": "那大概是个清闲的工作吧。工资多少？",
+            "ru": "Это, наверное, спокойная работа. А сколько платят?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не очень много, но зато график гибкий и можно готовиться к парам.",
+            "en": "Not very much, but the schedule is flexible and you can study for your classes.",
+            "es": "No mucho, pero el horario es flexible y puedes prepararte para las clases.",
+            "fr": "Pas énormément, mais en revanche les horaires sont flexibles et on peut préparer ses cours.",
+            "pt": "Não é muito, mas o horário é flexível e dá para se preparar para as aulas.",
+            "kr": "아주 많지는 않지만, 대신 시간표가 유연해서 수업 준비를 할 수 있어.",
+            "jp": "あまり多くはないけど、その代わりシフトが柔軟で、授業の準備もできるんだ。",
+            "zh": "不算多，但好处是时间灵活，还能准备功课。",
+            "ru": "Не очень много, но зато график гибкий и можно готовиться к парам."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты всё ещё работаешь курьером?",
+            "en": "Sergey, are you still working as a courier?",
+            "es": "Serguéi, ¿sigues trabajando de repartidor?",
+            "fr": "Sergueï, tu travailles toujours comme coursier ?",
+            "pt": "Sergei, você ainda trabalha como entregador?",
+            "kr": "세르게이, 아직도 배달 기사로 일하고 있어?",
+            "jp": "セルゲイ、まだ配達員として働いてるの？",
+            "zh": "谢尔盖，你还在当外卖员吗？",
+            "ru": "Сергей, ты всё ещё работаешь курьером?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, но хочу уйти. Зимой очень тяжело ездить по городу.",
+            "en": "Yes, but I want to quit. It's really hard to get around the city in winter.",
+            "es": "Sí, pero quiero dejarlo. En invierno es muy duro ir por la ciudad.",
+            "fr": "Oui, mais je veux arrêter. En hiver, c'est très dur de se déplacer en ville.",
+            "pt": "Sim, mas quero sair. No inverno, é muito difícil andar pela cidade.",
+            "kr": "응, 하지만 그만두고 싶어. 겨울에는 도시를 돌아다니기가 정말 힘들어.",
+            "jp": "うん、でも辞めたいと思ってるんだ。冬は街中を走るのがとても大変だから。",
+            "zh": "是的，但我想不干了。冬天在城里跑太辛苦了。",
+            "ru": "Да, но хочу уйти. Зимой очень тяжело ездить по городу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понимаю, наверное, холодно и устаёшь сильно.",
+            "en": "I understand, it must be cold and you get very tired.",
+            "es": "Lo entiendo, seguramente hace frío y te cansas mucho.",
+            "fr": "Je comprends, il doit faire froid et tu dois être très fatigué.",
+            "pt": "Entendo, deve ser frio e você deve se cansar muito.",
+            "kr": "이해해, 아마 춥고 많이 지칠 거야.",
+            "jp": "わかるよ、寒いし、すごく疲れるだろうね。",
+            "zh": "我理解，肯定又冷又累吧。",
+            "ru": "Понимаю, наверное, холодно и устаёшь сильно."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Именно. К тому же зарплата нестабильная, всё зависит от количества заказов.",
+            "en": "Exactly. Plus the pay is unstable, it all depends on the number of orders.",
+            "es": "Exacto. Además, el sueldo es inestable, todo depende del número de pedidos.",
+            "fr": "Exactement. En plus, le salaire n'est pas stable, tout dépend du nombre de commandes.",
+            "pt": "Exatamente. Além disso, o salário é instável, tudo depende da quantidade de pedidos.",
+            "kr": "맞아. 게다가 월급도 불안정해서, 전부 주문량에 달려 있어.",
+            "jp": "まさにその通りだよ。それに給料も不安定で、全部注文の数次第なんだ。",
+            "zh": "没错。而且工资也不稳定，全靠单量。",
+            "ru": "Именно. К тому же зарплата нестабильная, всё зависит от количества заказов."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А не думал найти что-то в офисе?",
+            "en": "Haven't you thought about finding something in an office?",
+            "es": "¿Y no has pensado en buscar algo en una oficina?",
+            "fr": "Et tu n'as pas pensé à trouver quelque chose dans un bureau ?",
+            "pt": "E você não pensou em encontrar algo num escritório?",
+            "kr": "사무실에서 일할 생각은 안 해 봤어?",
+            "jp": "オフィス系の仕事を探すことは考えなかったの？",
+            "zh": "你没想过找个办公室的工作吗？",
+            "ru": "А не думал найти что-то в офисе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Думал, но пока не получается совмещать с учёбой.",
+            "en": "I have, but so far I can't make it work with my studies.",
+            "es": "Lo he pensado, pero de momento no consigo compaginarlo con los estudios.",
+            "fr": "Si, j'y ai pensé, mais pour l'instant je n'arrive pas à concilier avec les études.",
+            "pt": "Pensei, mas por enquanto não consigo conciliar com os estudos.",
+            "kr": "해 봤지만, 아직은 학업과 병행하기가 잘 안 돼.",
+            "jp": "考えたけど、今のところ勉強と両立できそうにないんだ。",
+            "zh": "想过，但暂时还没法和学业兼顾。",
+            "ru": "Думал, но пока не получается совмещать с учёбой."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, я видела, ты работаешь в магазине одежды. Как успехи?",
+            "en": "Olga, I saw you work at a clothing store. How's it going?",
+            "es": "Olga, he visto que trabajas en una tienda de ropa. ¿Qué tal te va?",
+            "fr": "Olga, j'ai vu que tu travailles dans un magasin de vêtements. Comment ça se passe ?",
+            "pt": "Olga, eu vi que você trabalha numa loja de roupas. Como estão as coisas?",
+            "kr": "올가, 옷가게에서 일하는 걸 봤어. 잘 되고 있어?",
+            "jp": "オリガ、服屋で働いてるのを見たよ。調子はどう？",
+            "zh": "奥尔加，我看到你在服装店上班。干得怎么样？",
+            "ru": "Ольга, я видела, ты работаешь в магазине одежды. Как успехи?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Всё отлично, Мария! Меня даже похвалили за хорошую работу с покупателями.",
+            "en": "Everything's great, Maria! They even praised me for my good work with customers.",
+            "es": "Todo genial, ¡María! Incluso me han felicitado por mi buen trato con los clientes.",
+            "fr": "Tout va très bien, Maria ! On m'a même félicitée pour mon bon travail avec les clients.",
+            "pt": "Está tudo ótimo, Maria! Eu até fui elogiada pelo bom trabalho com os clientes.",
+            "kr": "아주 잘 되고 있어, 마리아! 손님 응대를 잘한다고 칭찬도 받았어.",
+            "jp": "すごく順調だよ、マリア！お客さんへの対応がいいって褒められたんだ。",
+            "zh": "一切都很好，玛丽亚！我还因为服务顾客好被表扬了呢。",
+            "ru": "Всё отлично, Мария! Меня даже похвалили за хорошую работу с покупателями."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это здорово! А что входит в твои обязанности?",
+            "en": "That's great! And what are your duties?",
+            "es": "¡Eso es estupendo! ¿Y qué incluyen tus tareas?",
+            "fr": "C'est super ! Et qu'est-ce que ça implique comme tâches ?",
+            "pt": "Que ótimo! E o que faz parte das suas tarefas?",
+            "kr": "정말 잘됐네! 그럼 네 업무에는 뭐가 포함되는데?",
+            "jp": "それはすごいね！仕事の内容はどんな感じなの？",
+            "zh": "那太好了！你的职责都包括什么？",
+            "ru": "Это здорово! А что входит в твои обязанности?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я консультирую клиентов, помогаю с выбором размера и оформляю покупки.",
+            "en": "I advise customers, help them pick the right size, and process their purchases.",
+            "es": "Asesoro a los clientes, les ayudo a elegir la talla y tramito las compras.",
+            "fr": "Je conseille les clients, j'aide à choisir la taille et je finalise les achats.",
+            "pt": "Eu atendo os clientes, ajudo na escolha do tamanho e finalizo as compras.",
+            "kr": "고객에게 상담해 주고, 사이즈 고르는 걸 도와주고, 구매를 처리해.",
+            "jp": "お客さんにアドバイスしたり、サイズ選びを手伝ったり、買い物の手続きをしたりしてるよ。",
+            "zh": "我给顾客提供建议，帮他们挑尺码，还有办理结账。",
+            "ru": "Я консультирую клиентов, помогаю с выбором размера и оформляю покупки."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Наверное, это интересно, но и утомительно стоять весь день.",
+            "en": "It's probably interesting, but it must be tiring to stand all day.",
+            "es": "Seguramente es interesante, pero también debe de ser agotador estar de pie todo el día.",
+            "fr": "Ça doit être intéressant, mais ça doit aussi être fatigant de rester debout toute la journée.",
+            "pt": "Deve ser interessante, mas também deve ser cansativo ficar em pé o dia todo.",
+            "kr": "아마 재미있겠지만, 하루 종일 서 있는 건 힘들겠다.",
+            "jp": "きっと面白いだろうけど、一日中立ってるのは疲れるだろうね。",
+            "zh": "那肯定很有意思，但站一整天也挺累的吧。",
+            "ru": "Наверное, это интересно, но и утомительно стоять весь день."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, к вечеру ноги гудят, но мне очень нравится общаться с людьми.",
+            "en": "Yeah, by the evening my legs ache, but I really enjoy talking to people.",
+            "es": "Sí, al final del día me duelen los pies, pero me encanta hablar con la gente.",
+            "fr": "Oui, en fin de journée j'ai les jambes lourdes, mais j'aime beaucoup parler avec les gens.",
+            "pt": "É, no fim do dia as pernas doem, mas eu gosto muito de conversar com as pessoas.",
+            "kr": "응, 저녁이 되면 다리가 아픈데, 사람들과 이야기하는 게 정말 좋아.",
+            "jp": "そうだね、夕方には足がパンパンになるけど、人と話すのはとても好きなんだ。",
+            "zh": "是啊，到了晚上腿都酸了，但我很喜欢和人打交道。",
+            "ru": "Да, к вечеру ноги гудят, но мне очень нравится общаться с людьми."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, ты говорил, что хочешь найти подработку репетитором. Получилось?",
+            "en": "Alexey, you said you wanted to find a part-time job as a tutor. Did it work out?",
+            "es": "Alekséi, dijiste que querías encontrar un trabajo a tiempo parcial como profesor particular. ¿Lo conseguiste?",
+            "fr": "Alexeï, tu disais que tu voulais trouver un petit boulot de répétiteur. Ça a marché ?",
+            "pt": "Alexei, você disse que queria encontrar um trabalho de meio período como professor particular. Conseguiu?",
+            "kr": "알렉세이, 과외 선생님 아르바이트를 찾고 싶다고 했잖아. 됐어?",
+            "jp": "アレクセイ、家庭教師のアルバイトを探したいって言ってたよね。見つかった？",
+            "zh": "阿列克谢，你说过想找份家教的兼职。找到了吗？",
+            "ru": "Алексей, ты говорил, что хочешь найти подработку репетитором. Получилось?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Елена, нашёл одного школьника. Занимаюсь с ним математикой два раза в неделю.",
+            "en": "Yes, Elena, I found a schoolboy. I do math with him twice a week.",
+            "es": "Sí, Elena, encontré a un chico del colegio. Doy clases de matemáticas con él dos veces por semana.",
+            "fr": "Oui, Hélène, j'ai trouvé un collégien. Je fais des maths avec lui deux fois par semaine.",
+            "pt": "Sim, Elena, encontrei um estudante do ensino fundamental. Dou aulas de matemática para ele duas vezes por semana.",
+            "kr": "응, 옐레나, 학생을 한 명 구했어. 일주일에 두 번 그 학생과 수학을 가르쳐.",
+            "jp": "うん、エレナ、生徒を一人見つけたよ。週に二回、その子に数学を教えてるんだ。",
+            "zh": "是的，叶莲娜，我找到了一个学生。我每周给他上两次数学课。",
+            "ru": "Да, Елена, нашёл одного школьника. Занимаюсь с ним математикой два раза в неделю."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично! А как ты его нашёл?",
+            "en": "Great! And how did you find him?",
+            "es": "¡Genial! ¿Y cómo lo encontraste?",
+            "fr": "Super ! Et comment tu l'as trouvé ?",
+            "pt": "Ótimo! E como você o encontrou?",
+            "kr": "잘됐네! 그런데 어떻게 찾았어?",
+            "jp": "すごい！どうやって見つけたの？",
+            "zh": "太好了！你是怎么找到他的？",
+            "ru": "Отлично! А как ты его нашёл?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Через знакомых, мама мальчика попросила меня помочь.",
+            "en": "Through acquaintances, the boy's mom asked me to help.",
+            "es": "A través de conocidos, la madre del chico me pidió que le ayudara.",
+            "fr": "Par des connaissances, la maman du garçon m'a demandé de l'aider.",
+            "pt": "Através de conhecidos, a mãe do menino me pediu para ajudar.",
+            "kr": "아는 사람을 통해서, 그 남자아이 엄마가 나한테 도와달라고 부탁했어.",
+            "jp": "知り合いを通じてだよ。その子のお母さんが手伝ってほしいって頼んできたんだ。",
+            "zh": "通过熟人介绍的，那个男孩的妈妈请我帮忙。",
+            "ru": "Через знакомых, мама мальчика попросила меня помочь."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "И как тебе преподавать?",
+            "en": "And how do you like teaching?",
+            "es": "¿Y qué tal te va dando clases?",
+            "fr": "Et comment tu trouves l'enseignement ?",
+            "pt": "E como é para você dar aulas?",
+            "kr": "그래서 가르치는 게 어때?",
+            "jp": "教えるのはどう？",
+            "zh": "那教书的感觉怎么样？",
+            "ru": "И как тебе преподавать?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Оказалось, это довольно сложно, но интересно. Готовлюсь к каждому занятию.",
+            "en": "Turns out it's pretty hard, but interesting. I prepare for every lesson.",
+            "es": "Resulta que es bastante difícil, pero interesante. Me preparo para cada clase.",
+            "fr": "En fait, c'est assez difficile, mais intéressant. Je prépare chaque séance.",
+            "pt": "Acabou que é bem difícil, mas interessante. Eu me preparo para cada aula.",
+            "kr": "꽤 어렵지만 재미있는 일이라는 걸 알았어. 매 수업을 준비하고 있어.",
+            "jp": "思ったより難しいけど、面白いよ。毎回の授業の準備をしてるんだ。",
+            "zh": "结果发现还挺难的，但很有意思。我每节课都会备课。",
+            "ru": "Оказалось, это довольно сложно, но интересно. Готовлюсь к каждому занятию."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, я слышала, ты устроилась в офис на полставки. Как тебе?",
+            "en": "Maria, I heard you got a half-time job at an office. How do you like it?",
+            "es": "María, he oído que has empezado a trabajar en una oficina a media jornada. ¿Qué tal te va?",
+            "fr": "Maria, j'ai entendu dire que tu as pris un mi-temps dans un bureau. Comment tu trouves ?",
+            "pt": "Maria, eu ouvi dizer que você conseguiu um emprego de meio período num escritório. O que você acha?",
+            "kr": "마리아, 사무실에 반나절 일자리로 들어갔다고 들었어. 어때?",
+            "jp": "マリア、半分の時間でオフィスに就職したって聞いたよ。どう？",
+            "zh": "玛丽亚，我听说你在办公室做半职。感觉怎么样？",
+            "ru": "Мария, я слышала, ты устроилась в офис на полставки. Как тебе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Всё хорошо, Анна. Работа несложная, но требует внимательности.",
+            "en": "Everything's good, Anna. The work isn't hard, but it requires attention to detail.",
+            "es": "Todo bien, Ana. El trabajo no es difícil, pero requiere atención.",
+            "fr": "Tout va bien, Anna. Le travail n'est pas compliqué, mais il demande de l'attention.",
+            "pt": "Está tudo bem, Anna. O trabalho não é difícil, mas exige atenção.",
+            "kr": "다 좋아, 안나. 일은 어렵지 않은데 세심함이 필요해.",
+            "jp": "順調だよ、アンナ。仕事は難しくないけど、注意力が必要なんだ。",
+            "zh": "挺好的，安娜。工作不难，但需要细心。",
+            "ru": "Всё хорошо, Анна. Работа несложная, но требует внимательности."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А чем именно ты занимаешься?",
+            "en": "And what exactly do you do?",
+            "es": "¿Y en qué te ocupas exactamente?",
+            "fr": "Et tu fais quoi exactement ?",
+            "pt": "E o que exatamente você faz?",
+            "kr": "그럼 정확히 뭘 하는데?",
+            "jp": "具体的には何をしてるの？",
+            "zh": "那你具体做什么？",
+            "ru": "А чем именно ты занимаешься?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отвечаю на звонки, печатаю документы и помогаю с отчётами.",
+            "en": "I answer calls, type up documents, and help with reports.",
+            "es": "Respondo a las llamadas, imprimo documentos y ayudo con los informes.",
+            "fr": "Je réponds au téléphone, je tape des documents et j'aide avec les rapports.",
+            "pt": "Atendo telefonemas, digito documentos e ajudo com os relatórios.",
+            "kr": "전화를 받고, 서류를 출력하고, 보고서 작성을 도와줘.",
+            "jp": "電話対応をしたり、書類を印刷したり、報告書の作成を手伝ったりしてるよ。",
+            "zh": "接电话，打印文件，还有帮忙做报表。",
+            "ru": "Отвечаю на звонки, печатаю документы и помогаю с отчётами."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Звучит серьёзно. А коллеги нормальные?",
+            "en": "Sounds serious. And are your colleagues nice?",
+            "es": "Suena serio. ¿Y los compañeros son normales?",
+            "fr": "Ça a l'air sérieux. Et les collègues sont sympas ?",
+            "pt": "Parece sério. E os colegas são legais?",
+            "kr": "꽤 진지한 일이네. 그런데 동료들은 괜찮아?",
+            "jp": "しっかりした仕事だね。同僚はいい人たち？",
+            "zh": "听起来挺正式的。同事们好相处吗？",
+            "ru": "Звучит серьёзно. А коллеги нормальные?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, очень дружелюбные. Все помогают, если я что-то не понимаю.",
+            "en": "Yes, very friendly. Everyone helps if I don't understand something.",
+            "es": "Sí, muy amables. Todos me ayudan si no entiendo algo.",
+            "fr": "Oui, très gentils. Tout le monde m'aide si je ne comprends pas quelque chose.",
+            "pt": "Sim, são muito amigáveis. Todos ajudam se eu não entendo alguma coisa.",
+            "kr": "응, 정말 친절해. 내가 뭘 모르면 모두가 도와줘.",
+            "jp": "うん、とても親切だよ。私が分からないことがあると、みんな助けてくれるんだ。",
+            "zh": "是的，都很友好。我要是有不懂的，大家都会帮我。",
+            "ru": "Да, очень дружелюбные. Все помогают, если я что-то не понимаю."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты всё ещё работаешь в выходные?",
+            "en": "Ivan, are you still working on the weekends?",
+            "es": "Iván, ¿sigues trabajando los fines de semana?",
+            "fr": "Ivan, tu travailles toujours le week-end ?",
+            "pt": "Ivan, você ainda trabalha nos fins de semana?",
+            "kr": "이반, 아직도 주말에 일하고 있어?",
+            "jp": "イワン、まだ週末も働いてるの？",
+            "zh": "伊万，你周末还在工作吗？",
+            "ru": "Иван, ты всё ещё работаешь в выходные?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Дмитрий, у меня подработка в спортклубе. Помогаю на ресепшене.",
+            "en": "Yes, Dmitry, I have a part-time job at a sports club. I help at the front desk.",
+            "es": "Sí, Dmitri, tengo un trabajo a tiempo parcial en un club deportivo. Ayudo en la recepción.",
+            "fr": "Oui, Dmitri, j'ai un petit boulot dans un club de sport. J'aide à la réception.",
+            "pt": "Sim, Dmitri, eu tenho um trabalho de meio período no clube esportivo. Ajudo na recepção.",
+            "kr": "응, 드미트리, 스포츠클럽에서 아르바이트를 하고 있어. 리셉션에서 일을 도와줘.",
+            "jp": "うん、ドミトリー、スポーツクラブでアルバイトしてるんだ。受付を手伝ってるよ。",
+            "zh": "是的，德米特里，我在健身俱乐部做兼职。在前台帮忙。",
+            "ru": "Да, Дмитрий, у меня подработка в спортклубе. Помогаю на ресепшене."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Неужели тебе не хочется отдыхать в субботу и воскресенье?",
+            "en": "Don't you want to rest on Saturday and Sunday?",
+            "es": "¿No te apetece descansar el sábado y el domingo?",
+            "fr": "Tu n'as vraiment pas envie de te reposer le samedi et le dimanche ?",
+            "pt": "Será que você não quer descansar no sábado e no domingo?",
+            "kr": "토요일과 일요일에 쉬고 싶지 않아?",
+            "jp": "土曜日と日曜日は休みたくならないの？",
+            "zh": "你难道不想在周六周日休息吗？",
+            "ru": "Неужели тебе не хочется отдыхать в субботу и воскресенье?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хочется, конечно, но деньги нужны. К тому же там можно бесплатно заниматься.",
+            "en": "Of course I do, but I need the money. Plus, I can work out there for free.",
+            "es": "Claro que me apetece, pero necesito el dinero. Además, allí puedo entrenar gratis.",
+            "fr": "Si, bien sûr, mais j'ai besoin d'argent. En plus, là-bas, on peut s'entraîner gratuitement.",
+            "pt": "Quero, claro, mas preciso de dinheiro. Além disso, lá eu posso malhar de graça.",
+            "kr": "물론 쉬고 싶지, 하지만 돈이 필요해. 게다가 거기서 무료로 운동할 수 있어.",
+            "jp": "もちろん休みたいけど、お金が必要なんだ。それに、そこで無料で運動もできるんだよ。",
+            "zh": "当然想，但我需要钱。而且在那儿还能免费锻炼。",
+            "ru": "Хочется, конечно, но деньги нужны. К тому же там можно бесплатно заниматься."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это большой плюс! А смена длинная?",
+            "en": "That's a big plus! And is the shift long?",
+            "es": "¡Eso es una gran ventaja! ¿Y el turno es largo?",
+            "fr": "C'est un gros avantage ! Et le service est long ?",
+            "pt": "Essa é uma grande vantagem! E o turno é longo?",
+            "kr": "그건 큰 장점이네! 그런데 교대 근무 시간은 길어?",
+            "jp": "それは大きなメリットだね！シフトは長いの？",
+            "zh": "这可是个大好处！班次长吗？",
+            "ru": "Это большой плюс! А смена длинная?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Шесть часов, но время пролетает быстро.",
+            "en": "Six hours, but the time flies by.",
+            "es": "Seis horas, pero el tiempo pasa volando.",
+            "fr": "Six heures, mais le temps passe très vite.",
+            "pt": "Seis horas, mas o tempo passa voando.",
+            "kr": "여섯 시간인데, 시간이 정말 빨리 지나가.",
+            "jp": "六時間だけど、あっという間に時間が過ぎるよ。",
+            "zh": "六个小时，但时间过得很快。",
+            "ru": "Шесть часов, но время пролетает быстро."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, ты говорила, что ищешь подработку с гибким графиком. Нашла?",
+            "en": "Elena, you said you were looking for a part-time job with a flexible schedule. Did you find one?",
+            "es": "Elena, dijiste que buscabas un trabajo a tiempo parcial con horario flexible. ¿Lo encontraste?",
+            "fr": "Hélène, tu disais que tu cherchais un petit boulot avec des horaires flexibles. Tu as trouvé ?",
+            "pt": "Elena, você disse que estava procurando um trabalho de meio período com horário flexível. Encontrou?",
+            "kr": "옐레나, 시간제 아르바이트를 찾고 있다고 했잖아. 찾았어?",
+            "jp": "エレナ、シフトが柔軟なアルバイトを探してるって言ってたよね。見つかった？",
+            "zh": "叶莲娜，你说过想找时间灵活的兼职。找到了吗？",
+            "ru": "Елена, ты говорила, что ищешь подработку с гибким графиком. Нашла?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Ольга, теперь работаю няней в одной семье по вечерам.",
+            "en": "Yes, Olga, now I work as a babysitter for a family in the evenings.",
+            "es": "Sí, Olga, ahora trabajo de niñera en una familia por las tardes.",
+            "fr": "Oui, Olga, maintenant je travaille comme baby-sitter dans une famille, le soir.",
+            "pt": "Sim, Olga, agora trabalho como babá numa família à noite.",
+            "kr": "응, 올가, 이제 한 가정에서 저녁에 베이비시터로 일하고 있어.",
+            "jp": "うん、オリガ、今はある家庭で夕方にベビーシッターをしてるの。",
+            "zh": "是的，奥尔加，我现在晚上去一户人家当保姆。",
+            "ru": "Да, Ольга, теперь работаю няней в одной семье по вечерам."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это удобно? Ведь вечером, наверное, хочется отдыхать.",
+            "en": "Is that convenient? I mean, in the evening you probably want to rest.",
+            "es": "¿Te viene bien? Porque por la tarde, seguramente, apetece descansar.",
+            "fr": "C'est pratique ? Parce que le soir, on a sûrement envie de se reposer.",
+            "pt": "É conveniente? Afinal, à noite, a gente deve querer descansar.",
+            "kr": "괜찮아? 저녁에는 아마 쉬고 싶을 텐데.",
+            "jp": "それは都合がいいの？だって、夕方は休みたいだろうし。",
+            "zh": "方便吗？晚上应该会想休息吧。",
+            "ru": "Это удобно? Ведь вечером, наверное, хочется отдыхать."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Иногда устаю, но дети спокойные, и платят хорошо.",
+            "en": "Sometimes I get tired, but the kids are calm and the pay is good.",
+            "es": "A veces me canso, pero los niños son tranquilos y pagan bien.",
+            "fr": "Des fois je suis fatiguée, mais les enfants sont calmes et on est bien payé.",
+            "pt": "Às vezes eu canso, mas as crianças são calmas e pagam bem.",
+            "kr": "가끔 피곤하긴 한데, 아이들이 얌전하고 월급도 좋아.",
+            "jp": "疲れることもあるけど、子どもたちはおとなしいし、給料もいいのよ。",
+            "zh": "有时候是挺累的，但孩子们很乖，而且工资也不错。",
+            "ru": "Иногда устаю, но дети спокойные, и платят хорошо."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А как ты с ними занимаешься?",
+            "en": "And what do you do with them?",
+            "es": "¿Y cómo pasas el tiempo con ellos?",
+            "fr": "Et tu fais quoi avec eux ?",
+            "pt": "E como você faz as atividades com elas?",
+            "kr": "그럼 아이들과 어떻게 시간을 보내는데?",
+            "jp": "子どもたちとはどんなことをしてるの？",
+            "zh": "那你都怎么陪他们？",
+            "ru": "А как ты с ними занимаешься?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Помогаю делать уроки, читаю им книжки и играю в настольные игры.",
+            "en": "I help with homework, read them books, and play board games.",
+            "es": "Les ayudo con los deberes, les leo cuentos y jugamos a juegos de mesa.",
+            "fr": "Je les aide à faire leurs devoirs, je leur lis des histoires et je joue à des jeux de société.",
+            "pt": "Ajudo com a lição de casa, leio livros para elas e jogo jogos de tabuleiro.",
+            "kr": "숙제를 도와주고, 책을 읽어 주고, 보드게임을 해.",
+            "jp": "宿題を手伝ったり、本を読んであげたり、ボードゲームをしたりしてるよ。",
+            "zh": "帮他们做作业，给他们读书，还一起玩桌游。",
+            "ru": "Помогаю делать уроки, читаю им книжки и играю в настольные игры."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, я узнал, что в университете есть вакансия лаборанта. Ты не пробовал?",
+            "en": "Sergey, I found out there's a lab assistant position at the university. Have you tried it?",
+            "es": "Serguéi, me he enterado de que en la universidad hay una vacante de auxiliar de laboratorio. ¿No lo has probado?",
+            "fr": "Sergueï, j'ai appris qu'il y a un poste de laborantin à l'université. Tu n'as pas essayé ?",
+            "pt": "Sergei, eu fiquei sabendo que há uma vaga de assistente de laboratório na universidade. Você não tentou?",
+            "kr": "세르게이, 대학교에 실험 조교 자리가 있다는 걸 알게 됐어. 지원해 봤어?",
+            "jp": "セルゲイ、大学に実験助手の求人があるって知ったんだけど、応募してみた？",
+            "zh": "谢尔盖，我听说大学里有个实验员的职位。你没试试吗？",
+            "ru": "Сергей, я узнал, что в университете есть вакансия лаборанта. Ты не пробовал?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, Алексей, а что там нужно делать?",
+            "en": "No, Alexey, what do you have to do there?",
+            "es": "No, Alekséi, ¿y qué hay que hacer allí?",
+            "fr": "Non, Alexeï, et qu'est-ce qu'il faut faire là-bas ?",
+            "pt": "Não, Alexei, e o que precisa fazer lá?",
+            "kr": "아니, 알렉세이, 그럼 거기서 뭘 해야 하는데?",
+            "jp": "いや、アレクセイ、まだだよ。そこで何をする必要があるの？",
+            "zh": "没有，阿列克谢，那需要做什么？",
+            "ru": "Нет, Алексей, а что там нужно делать?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Помогать преподавателям готовить материалы для занятий и проверять оборудование.",
+            "en": "Help professors prepare materials for classes and check the equipment.",
+            "es": "Ayudar a los profesores a preparar los materiales para las clases y revisar el equipo.",
+            "fr": "Aider les professeurs à préparer le matériel pour les cours et vérifier l'équipement.",
+            "pt": "Ajudar os professores a preparar os materiais para as aulas e verificar os equipamentos.",
+            "kr": "교수님들이 수업 자료를 준비하는 걸 돕고, 장비를 점검하는 거야.",
+            "jp": "教授たちが授業の教材を準備するのを手伝ったり、設備を点検したりするんだ。",
+            "zh": "帮老师准备上课用的材料，还有检查设备。",
+            "ru": "Помогать преподавателям готовить материалы для занятий и проверять оборудование."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Звучит интересно. А это оплачиваемая работа?",
+            "en": "Sounds interesting. And is it a paid job?",
+            "es": "Suena interesante. ¿Y es un trabajo remunerado?",
+            "fr": "Ça a l'air intéressant. Et c'est un travail rémunéré ?",
+            "pt": "Parece interessante. E é um trabalho remunerado?",
+            "kr": "재미있겠네. 그런데 유급 일자리야?",
+            "jp": "面白そうだね。それって給料が発生する仕事なの？",
+            "zh": "听起来很有意思。这是带薪的工作吗？",
+            "ru": "Звучит интересно. А это оплачиваемая работа?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, небольшая зарплата, но зато это полезно для будущей карьеры.",
+            "en": "Yes, a small salary, but it's good for your future career.",
+            "es": "Sí, el sueldo es pequeño, pero es útil para tu futura carrera.",
+            "fr": "Oui, un petit salaire, mais en revanche c'est utile pour la future carrière.",
+            "pt": "Sim, o salário é pequeno, mas é útil para a carreira futura.",
+            "kr": "응, 월급은 적지만, 대신 앞으로의 경력에 도움이 돼.",
+            "jp": "うん、給料は少ないけど、その代わり将来のキャリアに役立つよ。",
+            "zh": "是的，工资不高，但对将来的职业发展有好处。",
+            "ru": "Да, небольшая зарплата, но зато это полезно для будущей карьеры."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда я обязательно подам заявку. Спасибо, что сказал!",
+            "en": "Then I'll definitely submit an application. Thanks for telling me!",
+            "es": "Entonces, sin duda, presentaré mi solicitud. ¡Gracias por avisarme!",
+            "fr": "Alors je vais certainement déposer ma candidature. Merci de me l'avoir dit !",
+            "pt": "Então com certeza vou me candidatar. Obrigado por me contar!",
+            "kr": "그럼 꼭 지원할게. 알려줘서 고마워!",
+            "jp": "じゃあ、必ず応募するよ。教えてくれてありがとう！",
+            "zh": "那我一定去申请。谢谢你告诉我！",
+            "ru": "Тогда я обязательно подам заявку. Спасибо, что сказал!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, ты не жалеешь, что устроилась работать в ресторан?",
+            "en": "Anna, do you regret getting a job at the restaurant?",
+            "es": "Ana, ¿no te arrepientes de haber empezado a trabajar en el restaurante?",
+            "fr": "Anna, tu ne regrettes pas d'avoir commencé à travailler au restaurant ?",
+            "pt": "Anna, você não se arrepende de ter começado a trabalhar no restaurante?",
+            "kr": "안나, 식당에서 일하기로 한 거 후회하지 않아?",
+            "jp": "アンナ、レストランで働くことにしたのを後悔してない？",
+            "zh": "安娜，你后悔去餐厅工作吗？",
+            "ru": "Анна, ты не жалеешь, что устроилась работать в ресторан?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, Мария, ни капли. Я многому научилась за это время.",
+            "en": "No, Maria, not one bit. I've learned a lot during this time.",
+            "es": "No, María, ni un poco. He aprendido mucho durante este tiempo.",
+            "fr": "Non, Maria, pas du tout. J'ai beaucoup appris pendant ce temps.",
+            "pt": "Não, Maria, nem um pouco. Aprendi muita coisa nesse tempo.",
+            "kr": "아니, 마리아, 조금도 안 해. 이 시간 동안 많은 것을 배웠어.",
+            "jp": "ううん、マリア、全然後悔してないよ。この間にたくさんのことを学んだから。",
+            "zh": "不，玛丽亚，一点也不后悔。这段时间我学到了很多东西。",
+            "ru": "Нет, Мария, ни капли. Я многому научилась за это время."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Например, чему?",
+            "en": "Like what, for example?",
+            "es": "¿Por ejemplo, qué?",
+            "fr": "Par exemple, quoi ?",
+            "pt": "Por exemplo, o quê?",
+            "kr": "예를 들어, 뭘 배웠는데?",
+            "jp": "例えば、どんなこと？",
+            "zh": "比如说，学到了什么？",
+            "ru": "Например, чему?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я стала лучше понимать людей и научилась работать в команде.",
+            "en": "I've gotten better at understanding people and learned how to work in a team.",
+            "es": "He aprendido a entender mejor a la gente y he aprendido a trabajar en equipo.",
+            "fr": "J'ai appris à mieux comprendre les gens et j'ai appris à travailler en équipe.",
+            "pt": "Passei a entender melhor as pessoas e aprendi a trabalhar em equipe.",
+            "kr": "사람들을 더 잘 이해하게 됐고, 팀으로 일하는 법을 배웠어.",
+            "jp": "人のことをもっと理解できるようになったし、チームで働くことも学んだよ。",
+            "zh": "我更懂得理解别人了，也学会了团队合作。",
+            "ru": "Я стала лучше понимать людей и научилась работать в команде."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это очень ценно. А в будущем хочешь остаться в этой сфере?",
+            "en": "That's very valuable. And in the future, do you want to stay in this field?",
+            "es": "Eso es muy valioso. ¿Y en el futuro quieres quedarte en este sector?",
+            "fr": "C'est très précieux. Et à l'avenir, tu veux rester dans ce domaine ?",
+            "pt": "Isso é muito valioso. E no futuro, você quer continuar nessa área?",
+            "kr": "그건 정말 귀중한 거야. 그럼 앞으로도 이 분야에 남고 싶어?",
+            "jp": "それはとても貴重なことだね。将来もこの分野に残りたいと思ってるの？",
+            "zh": "这很宝贵。那你将来想留在这个行业吗？",
+            "ru": "Это очень ценно. А в будущем хочешь остаться в этой сфере?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не знаю, но пока мне нравится, и я получаю удовольствие от работы.",
+            "en": "I don't know, but for now I like it, and I enjoy my work.",
+            "es": "No lo sé, pero de momento me gusta y disfruto con mi trabajo.",
+            "fr": "Je ne sais pas, mais pour l'instant j'aime ça et je prends du plaisir à travailler.",
+            "pt": "Não sei, mas por enquanto eu gosto e sinto prazer no trabalho.",
+            "kr": "잘 모르겠어, 하지만 지금은 좋고, 일에서 즐거움을 얻고 있어.",
+            "jp": "分からないけど、今のところは好きだし、仕事を楽しめてるよ。",
+            "zh": "不知道，但目前我很喜欢，而且工作得很开心。",
+            "ru": "Не знаю, но пока мне нравится, и я получаю удовольствие от работы."
+          }
+        }
+      ]
+    }
+  ]
+}

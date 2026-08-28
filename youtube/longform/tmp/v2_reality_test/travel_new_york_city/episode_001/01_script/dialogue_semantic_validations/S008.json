@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S008",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun boards the AirTrain",
+      "pass": true,
+      "evidence": "L001: \"Okay, I'm on the AirTrain.\""
+    },
+    {
+      "requirement": "Jieun finds a seat",
+      "pass": true,
+      "evidence": "L001: \"I found a seat by the window.\""
+    },
+    {
+      "requirement": "Jieun watches the city appear through the windows",
+      "pass": true,
+      "evidence": "L002: \"Wow, look at that. The city is getting closer.\""
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the AirTrain journey",
+      "pass": true,
+      "evidence": "All lines describe being on the AirTrain and watching the city approach; no mention of reaching the subway connection or hotel."
+    },
+    {
+      "requirement": "Do not introduce any problems with the AirTrain",
+      "pass": true,
+      "evidence": "No issues or complications are mentioned in any line."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

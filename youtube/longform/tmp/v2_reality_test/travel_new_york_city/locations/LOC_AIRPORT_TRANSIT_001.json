@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "location_id": "LOC_AIRPORT_TRANSIT_001",
+  "series_id": "travel_new_york_city",
+  "identity": {
+    "name": "JFK to Manhattan Transit Route",
+    "location_type": "transit route and vehicle",
+    "city": "New York City",
+    "country": "United States",
+    "parent_location_id": "LOC_JFK_AIRPORT_001"
+  },
+  "story_profile": {
+    "story_function": "Route and vehicle for traveling from JFK Airport to Manhattan, such as AirTrain and subway or taxi",
+    "continuity_rules": [
+      "Represents the journey from JFK to Manhattan",
+      "Specific transit mode is determined by what is realistic and verifiable",
+      "The route connects JFK Airport to the hotel area in Manhattan"
+    ]
+  },
+  "visual_identity": {
+    "environment_summary": "The transit experience from JFK Airport to Manhattan, including station platforms, train interiors, and views of the city from the transit route.",
+    "persistent_features": [
+      "Transit station platforms",
+      "Train or vehicle interior",
+      "Views of urban landscape during the journey",
+      "Signage for transit lines and stops"
+    ],
+    "variable_features": [
+      "Specific transit vehicle type",
+      "Time of day affects lighting and city views",
+      "Crowd level in the vehicle"
+    ],
+    "continuity_lock": true
+  },
+  "production": {
+    "visual_provider": "vidu",
+    "reference_asset_ids": [],
+    "prompt_rules": [
+      "Maintain consistent transit vehicle design",
+      "Use realistic transit environment details",
+      "Keep the journey progression logical from airport to city"
+    ]
+  }
+}

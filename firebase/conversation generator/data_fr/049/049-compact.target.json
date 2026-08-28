@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Gestion de l'agenda",
+  "sets": {
+    "001": [
+      "Lucas, tu as un moment pour qu'on regarde mon planning de la semaine ?",
+      "Bien sûr, Camille. Je regarde ça tout de suite avec toi.",
+      "J'ai deux réunions qui se chevauchent jeudi après-midi, c'est un vrai casse-tête.",
+      "Je vois. Laquelle est la plus prioritaire pour toi ?",
+      "Celle avec l'équipe marketing, je pense qu'elle ne peut pas être déplacée.",
+      "Dans ce cas, je te conseille de reporter l'autre à vendredi matin."
+    ],
+    "002": [
+      "Hugo, tu peux m'aider à organiser ma journée de demain ?",
+      "Avec plaisir. Qu'est-ce que tu as prévu pour le moment ?",
+      "J'ai un rendez-vous client à dix heures et une visio avec l'équipe à quatorze heures.",
+      "D'accord. Tu devrais garder une plage horaire libre entre les deux pour préparer tes dossiers.",
+      "C'est une bonne idée, je vais bloquer une heure dans mon agenda.",
+      "Parfait, comme ça tu ne seras pas débordée."
+    ],
+    "003": [
+      "Antoine, je n'arrive pas à caser tous mes rendez-vous cette semaine.",
+      "Montre-moi ton agenda, on va bien trouver une solution.",
+      "J'ai déjà trois réunions lundi et deux mardi, c'est trop chargé.",
+      "Tu pourrais peut-être déléguer la réunion de mardi après-midi à un collègue.",
+      "Tu as raison, je vais demander à Manon si elle peut la remplacer.",
+      "C'est une bonne solution, elle connaît bien le sujet."
+    ],
+    "004": [
+      "Thomas, tu as pensé à planifier la réunion d'équipe pour la semaine prochaine ?",
+      "Pas encore, je n'ai pas trouvé un créneau qui convienne à tout le monde.",
+      "Qu'est-ce qui bloque exactement ?",
+      "Léa est en formation mardi et Hugo est en congé jeudi.",
+      "Dans ce cas, on pourrait la fixer mercredi matin, ça me semble raisonnable.",
+      "Très bien, je vais envoyer une invitation à toute l'équipe."
+    ],
+    "005": [
+      "Lucas, je suis complètement débordée, j'ai l'impression de courir toute la journée.",
+      "Je comprends, tu as beaucoup de projets en ce moment.",
+      "Je n'arrive plus à distinguer ce qui est urgent de ce qui peut attendre.",
+      "Tu devrais peut-être établir une liste de priorités chaque matin.",
+      "Oui, je vais essayer de m'y tenir dès demain.",
+      "Et n'oublie pas de prévoir des pauses, c'est essentiel."
+    ],
+    "006": [
+      "Hugo, tu peux me rappeler à quelle heure j'ai ma réunion avec la direction ?",
+      "Elle est prévue à quinze heures, juste après ta réunion avec l'équipe commerciale.",
+      "Merci, j'avais peur d'avoir oublié un rendez-vous important.",
+      "Tu veux que je te mette un rappel sur ton téléphone ?",
+      "Ce serait gentil, je n'ai pas confiance en ma mémoire en ce moment.",
+      "C'est fait, tu recevras une notification une demi-heure avant."
+    ],
+    "007": [
+      "Antoine, comment tu fais pour gérer un agenda aussi chargé sans stress ?",
+      "J'utilise une méthode simple : je regroupe les tâches similaires dans la journée.",
+      "C'est une bonne astuce, mais j'ai du mal à m'y tenir.",
+      "Il faut aussi savoir dire non aux réunions qui ne sont pas indispensables.",
+      "C'est vrai, j'accepte trop souvent les invitations sans réfléchir.",
+      "Essaie de te poser la question avant chaque acceptation : est-ce vraiment utile ?"
+    ],
+    "008": [
+      "Thomas, j'ai un conflit d'horaires entre deux rendez-vous importants demain.",
+      "Ah mince, c'est toujours compliqué ce genre de situation.",
+      "J'ai une réunion avec un client à neuf heures et une autre avec mon équipe à dix heures.",
+      "Tu pourrais peut-être décaler la réunion d'équipe à onze heures.",
+      "Je vais vérifier si les autres sont disponibles à ce moment-là.",
+      "Bonne idée, et préviens-moi si tu as besoin d'aide pour l'organisation."
+    ],
+    "009": [
+      "Lucas, je dois préparer un compte rendu pour la réunion de lundi, tu peux m'aider ?",
+      "Bien sûr, on peut le faire ensemble cet après-midi si tu veux.",
+      "Parfait, j'ai réservé une salle de réunion à quatorze heures.",
+      "Très bien, je note ça dans mon agenda tout de suite.",
+      "Merci, je suis contente de pouvoir compter sur toi.",
+      "Pas de souci, c'est normal de s'entraider dans l'équipe."
+    ],
+    "010": [
+      "Hugo, tu as réussi à trouver un créneau pour la réunion avec les partenaires ?",
+      "Oui, finalement ils sont disponibles jeudi en fin de matinée.",
+      "Très bien, je vais réserver la salle de conférence pour ce moment-là.",
+      "Parfait, et je préviendrai les participants par e-mail.",
+      "N'oublie pas de joindre l'ordre du jour à ton message.",
+      "C'est noté, je vais le préparer ce soir pour l'envoyer demain matin."
+    ]
+  },
+  "level": "c1",
+  "chapter_id": "CONV_FR_SCHEDULE_MANAGEMENT",
+  "id": "049",
+  "target_lang": "fr"
+}

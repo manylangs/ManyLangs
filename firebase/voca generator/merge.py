@@ -15,27 +15,9 @@ import json
 import sys
 from pathlib import Path
 
+from languages import TRANSLATE_LANGS
 
-ALL_LANGS = [
-    "target",
-    "en",
-    "es",
-    "fr",
-    "pt",
-    "kr",
-    "jp",
-    "zh",
-]
-
-TRANSLATE_LANGS = [
-    "en",
-    "es",
-    "fr",
-    "pt",
-    "kr",
-    "jp",
-    "zh",
-]
+ALL_LANGS = ["target"] + TRANSLATE_LANGS
 
 EXPECTED_BLOCK_COUNT = 5
 EXPECTED_EXAMPLES_PER_BLOCK = 3

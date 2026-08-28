@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S004",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "source_dialogue": {
+    "source_scene_id": "S004",
+    "source_line_ids": [
+      "L001",
+      "L002",
+      "L003"
+    ]
+  },
+  "key_expressions": [
+    {
+      "key_expression_id": "KE001",
+      "source_line_ids": [
+        "L001"
+      ],
+      "expression": "Now I need to find the right carousel for my flight.",
+      "meaning": "이제 내 비행기 짐을 찾을 수 있는 올바른 수하물 회전대를 찾아야 한다.",
+      "usage": "공항에서 짐을 찾기 위해 어떤 수하물 회전대(carousel)로 가야 하는지 스스로에게 말할 때 쓸 수 있다. 'need to'는 '~해야 한다'는 필요성을 나타내며, 목적지를 찾는 상황에서 유용하다.",
+      "context": "지은이 입국 수속을 마치고 수하물 찾는 곳에 도착했을 때, 자신의 비행기 짐이 나오는 회전대를 찾아야 한다는 생각을 스스로에게 말하는 상황이다.",
+      "communicative_function": "expressing internal thoughts",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "I have to find the right carousel for my flight.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE002",
+      "source_line_ids": [
+        "L002"
+      ],
+      "expression": "There it is.",
+      "meaning": "저기 있다. / 바로 그것이다.",
+      "usage": "찾고 있던 물건이나 장소를 눈으로 확인했을 때 쓰는 아주 자연스러운 표현이다. 혼잣말로도, 상대방에게도 쓸 수 있다. 'There it is.'은 '저기 있네'라는 발견의 뉘앙스를 준다.",
+      "context": "지은이가 자신의 비행기 편명(KE081)이 표시된 수하물 회전대를 찾았을 때, 그것을 확인하고 안도하며 하는 말이다.",
+      "communicative_function": "confirming information",
+      "difficulty": "A1",
+      "priority": "core",
+      "variation": "There it is! I found it.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE003",
+      "source_line_ids": [
+        "L003"
+      ],
+      "expression": "I hope my bag made it.",
+      "meaning": "내 가방이 (비행기에) 잘 실렸으면 좋겠다.",
+      "usage": "짐이 목적지에 무사히 도착했는지 걱정될 때, 'make it'이라는 표현을 써서 '도착하다', '성공하다'라는 의미를 전달할 수 있다. 'I hope'와 함께 쓰여 바람이나 걱정을 표현한다.",
+      "context": "지은이가 수하물 회전대 앞에서 기다리며, 자신의 가방이 비행기에 제대로 실렸는지, 혹시 분실되지는 않았는지 걱정하는 마음을 혼잣말로 표현하는 상황이다.",
+      "communicative_function": "expressing concern",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "I hope my bag arrived safely.",
+      "common_mistake": "I hope my bag made it on the flight. (X) - 'made it' 자체에 '도착하다'는 의미가 포함되어 있으므로 'on the flight'를 붙이면 어색할 수 있다. 'I hope my bag made it onto the flight.'는 가능하지만, 이 문맥에서는 'made it'만으로 충분하다.",
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    }
+  ],
+  "validation": {
+    "expression_count": 3,
+    "all_expressions_exist_in_dialogue": true,
+    "source_lines_valid": true,
+    "cefr_appropriate": true
+  }
+}

@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a2",
+    "id": "018"
+  },
+  "title": {
+    "target": "Увлечения",
+    "en": "Hobbies",
+    "es": "Pasatiempos",
+    "fr": "Loisirs",
+    "pt": "Passatempos",
+    "kr": "취미",
+    "jp": "趣味",
+    "zh": "兴趣爱好",
+    "ru": "Увлечения"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, чем ты любишь заниматься в свободное время?",
+            "en": "Ivan, what do you like to do in your free time?",
+            "es": "Iván, ¿qué te gusta hacer en tu tiempo libre?",
+            "fr": "Ivan, qu'est-ce que tu aimes faire pendant ton temps libre ?",
+            "pt": "Ivan, o que você gosta de fazer no seu tempo livre?",
+            "kr": "이반, 쉬는 시간에 뭐 하는 거 좋아해요?",
+            "jp": "イワン、暇なときは何をして過ごすのが好きですか？",
+            "zh": "伊万，你空闲时间喜欢做什么？",
+            "ru": "Иван, чем ты любишь заниматься в свободное время?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно я играю на гитаре или слушаю музыку.",
+            "en": "I usually play the guitar or listen to music.",
+            "es": "Normalmente toco la guitarra o escucho música.",
+            "fr": "D'habitude, je joue de la guitare ou j'écoute de la musique.",
+            "pt": "Normalmente eu toco violão ou ouço música.",
+            "kr": "보통 기타를 치거나 음악을 들어요.",
+            "jp": "たいていギターを弾いたり、音楽を聴いたりしています。",
+            "zh": "我通常弹吉他或者听音乐。",
+            "ru": "Обычно я играю на гитаре или слушаю музыку."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это здорово! А как давно ты играешь?",
+            "en": "That's great! And how long have you been playing?",
+            "es": "¡Qué bien! ¿Y desde cuándo tocas?",
+            "fr": "C'est super ! Et depuis combien de temps tu en joues ?",
+            "pt": "Que legal! E há quanto tempo você toca?",
+            "kr": "그거 좋네요! 그런데 기타는 얼마나 오래 쳤어요?",
+            "jp": "それはいいですね！ギターはどのくらい弾いているんですか？",
+            "zh": "那真好！你弹了多久了？",
+            "ru": "Это здорово! А как давно ты играешь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Уже около пяти лет, но всё ещё учусь новому.",
+            "en": "About five years now, but I'm still learning new things.",
+            "es": "Ya llevo unos cinco años, pero todavía sigo aprendiendo cosas nuevas.",
+            "fr": "Ça fait environ cinq ans, mais j'apprends encore de nouvelles choses.",
+            "pt": "Já faz uns cinco anos, mas ainda estou aprendendo coisas novas.",
+            "kr": "벌써 오 년쯤 됐는데, 아직도 새로 배우고 있어요.",
+            "jp": "もう五年ぐらいですが、まだ新しいことを学んでいます。",
+            "zh": "已经大约五年了，但还在学新东西。",
+            "ru": "Уже около пяти лет, но всё ещё учусь новому."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Наверное, это очень приятно — играть для себя.",
+            "en": "It must be really nice to play just for yourself.",
+            "es": "Seguro que es muy agradable tocar para ti mismo.",
+            "fr": "Ça doit être très agréable de jouer pour soi-même.",
+            "pt": "Deve ser muito prazeroso tocar para si mesmo.",
+            "kr": "혼자서 연주하면 정말 기분 좋겠어요.",
+            "jp": "自分のために弾くのは、きっととても楽しいでしょうね。",
+            "zh": "为自己弹奏，一定很享受吧。",
+            "ru": "Наверное, это очень приятно — играть для себя."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, для меня это лучший способ отдохнуть после работы.",
+            "en": "Yes, for me it's the best way to relax after work.",
+            "es": "Sí, para mí es la mejor manera de descansar después del trabajo.",
+            "fr": "Oui, pour moi c'est la meilleure façon de me détendre après le travail.",
+            "pt": "Sim, para mim é a melhor forma de descansar depois do trabalho.",
+            "kr": "네, 저한테는 일 끝나고 쉬는 최고의 방법이에요.",
+            "jp": "はい、私にとっては仕事の後に一番いいリラックス方法です。",
+            "zh": "是的，对我来说这是下班后放松的最佳方式。",
+            "ru": "Да, для меня это лучший способ отдохнуть после работы."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты записалась в новый спортивный зал?",
+            "en": "Did you sign up for the new gym?",
+            "es": "¿Te apuntaste al nuevo gimnasio?",
+            "fr": "Tu t'es inscrite à la nouvelle salle de sport ?",
+            "pt": "Você se matriculou na nova academia?",
+            "kr": "새 헬스장에 등록했어요?",
+            "jp": "新しいスポーツジムに入会したんですか？",
+            "zh": "你报名去新的健身房了吗？",
+            "ru": "Ты записалась в новый спортивный зал?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, хожу туда три раза в неделю после учёбы.",
+            "en": "Yes, I go there three times a week after class.",
+            "es": "Sí, voy allí tres veces por semana después de clase.",
+            "fr": "Oui, j'y vais trois fois par semaine après les cours.",
+            "pt": "Sim, vou lá três vezes por semana depois das aulas.",
+            "kr": "네, 수업 끝나고 일주일에 세 번 다녀요.",
+            "jp": "はい、放課後に週三回通っています。",
+            "zh": "是的，我放学后每周去三次。",
+            "ru": "Да, хожу туда три раза в неделю после учёбы."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "И какие занятия тебе нравятся больше всего?",
+            "en": "And which activities do you like the most?",
+            "es": "¿Y qué actividades te gustan más?",
+            "fr": "Et quels sont les exercices que tu préfères ?",
+            "pt": "E quais atividades você mais gosta?",
+            "kr": "그럼 어떤 운동을 제일 좋아해요?",
+            "jp": "どんな運動が一番好きですか？",
+            "zh": "那你最喜欢什么运动？",
+            "ru": "И какие занятия тебе нравятся больше всего?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мне очень нравится плавание, оно расслабляет.",
+            "en": "I really like swimming, it's relaxing.",
+            "es": "Me gusta mucho nadar, me relaja.",
+            "fr": "J'aime beaucoup la natation, ça détend.",
+            "pt": "Eu gosto muito de natação, ela relaxa.",
+            "kr": "저는 수영을 정말 좋아해요, 긴장이 풀리거든요.",
+            "jp": "水泳がとても好きで、リラックスできます。",
+            "zh": "我非常喜欢游泳，它让人放松。",
+            "ru": "Мне очень нравится плавание, оно расслабляет."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Плавание — это отличный выбор для здоровья.",
+            "en": "Swimming is a great choice for your health.",
+            "es": "Nadar es una excelente opción para la salud.",
+            "fr": "La natation est un excellent choix pour la santé.",
+            "pt": "Natação é uma ótima escolha para a saúde.",
+            "kr": "수영은 건강에 정말 좋은 선택이에요.",
+            "jp": "水泳は健康にとてもいい選択ですね。",
+            "zh": "游泳对健康来说是个很好的选择。",
+            "ru": "Плавание — это отличный выбор для здоровья."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласна, а ещё я нашла там несколько хороших знакомых.",
+            "en": "I agree, and I also met some nice people there.",
+            "es": "De acuerdo, y además allí he conocido a algunas buenas amistades.",
+            "fr": "Je suis d'accord, et en plus j'y ai trouvé de bonnes connaissances.",
+            "pt": "Concordo, e ainda encontrei uns bons conhecidos lá.",
+            "kr": "맞아요, 그리고 거기서 좋은 지인도 몇 명 사귀었어요.",
+            "jp": "そうですね、それにいい知り合いも何人かできました。",
+            "zh": "同意，而且我还在那里认识了几位好朋友。",
+            "ru": "Согласна, а ещё я нашла там несколько хороших знакомых."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я видела, что ты рисуешь в парке. Это твоё хобби?",
+            "en": "I saw you drawing in the park. Is that your hobby?",
+            "es": "Te vi dibujando en el parque. ¿Es tu afición?",
+            "fr": "J'ai vu que tu dessinais dans le parc. C'est ton hobby ?",
+            "pt": "Eu vi que você estava desenhando no parque. Esse é o seu hobby?",
+            "kr": "공원에서 그림 그리는 거 봤어요. 취미예요?",
+            "jp": "公園で絵を描いているのを見ましたよ。それが趣味なんですか？",
+            "zh": "我看到你在公园里画画。那是你的爱好吗？",
+            "ru": "Я видела, что ты рисуешь в парке. Это твоё хобби?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я люблю рисовать пейзажи на пленэре.",
+            "en": "Yes, I love painting landscapes outdoors.",
+            "es": "Sí, me gusta pintar paisajes al aire libre.",
+            "fr": "Oui, j'aime dessiner des paysages en plein air.",
+            "pt": "Sim, eu gosto de desenhar paisagens ao ar livre.",
+            "kr": "네, 야외에서 풍경 그리기를 좋아해요.",
+            "jp": "はい、屋外で風景画を描くのが好きです。",
+            "zh": "是的，我喜欢在户外写生画风景。",
+            "ru": "Да, я люблю рисовать пейзажи на пленэре."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это так интересно! Можно посмотреть твои работы?",
+            "en": "That's so interesting! Can I see your work?",
+            "es": "¡Qué interesante! ¿Puedo ver tus obras?",
+            "fr": "C'est tellement intéressant ! Je peux voir tes œuvres ?",
+            "pt": "Que interessante! Posso ver seus trabalhos?",
+            "kr": "정말 재미있겠네요! 그림 좀 봐도 돼요?",
+            "jp": "それはとても面白いですね！作品を見せてもらえますか？",
+            "zh": "真有意思！能看看你的作品吗？",
+            "ru": "Это так интересно! Можно посмотреть твои работы?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, я покажу тебе свой альбом в воскресенье.",
+            "en": "Of course, I'll show you my sketchbook on Sunday.",
+            "es": "Claro, te enseñaré mi álbum el domingo.",
+            "fr": "Bien sûr, je te montrerai mon album dimanche.",
+            "pt": "Claro, eu te mostro meu álbum no domingo.",
+            "kr": "물론이죠, 일요일에 제 앨범 보여드릴게요.",
+            "jp": "もちろん、日曜日にアルバムを見せますよ。",
+            "zh": "当然，我星期天给你看我的画册。",
+            "ru": "Конечно, я покажу тебе свой альбом в воскресенье."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Буду ждать с нетерпением, мне очень любопытно.",
+            "en": "I'll be looking forward to it, I'm really curious.",
+            "es": "Lo esperaré con impaciencia, tengo mucha curiosidad.",
+            "fr": "J'attendrai avec impatience, je suis très curieuse.",
+            "pt": "Vou esperar ansiosa, estou muito curiosa.",
+            "kr": "정말 기대될 거 같아요, 너무 궁금하네요.",
+            "jp": "とても楽しみにしています。すごく興味があるんです。",
+            "zh": "我会很期待的，我特别好奇。",
+            "ru": "Буду ждать с нетерпением, мне очень любопытно."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Надеюсь, тебе понравится то, что я создаю.",
+            "en": "I hope you'll like what I create.",
+            "es": "Espero que te guste lo que creo.",
+            "fr": "J'espère que tu aimeras ce que je crée.",
+            "pt": "Espero que você goste do que eu crio.",
+            "kr": "제가 그린 게 마음에 드셨으면 좋겠어요.",
+            "jp": "私が作っているものを気に入ってもらえるといいのですが。",
+            "zh": "希望你会喜欢我创作的东西。",
+            "ru": "Надеюсь, тебе понравится то, что я создаю."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Слушай, а ты увлекаешься готовкой?",
+            "en": "Hey, are you into cooking?",
+            "es": "Oye, ¿te gusta cocinar?",
+            "fr": "Dis-moi, tu t'intéresses à la cuisine ?",
+            "pt": "Escuta, você gosta de cozinhar?",
+            "kr": "저기, 요리 취미로 해요?",
+            "jp": "ねえ、料理に興味はありますか？",
+            "zh": "哎，你喜欢做饭吗？",
+            "ru": "Слушай, а ты увлекаешься готовкой?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Честно говоря, я обожаю печь пироги и кексы.",
+            "en": "Honestly, I love baking pies and muffins.",
+            "es": "Para ser sincera, me encanta hacer tartas y magdalenas.",
+            "fr": "Honnêtement, j'adore faire des tartes et des muffins.",
+            "pt": "Para ser sincera, eu adoro fazer tortas e bolinhos.",
+            "kr": "솔직히 말하면, 파이랑 머핀 굽는 걸 정말 좋아해요.",
+            "jp": "正直に言うと、パイやマフィンを焼くのが大好きです。",
+            "zh": "说实话，我特别爱烤馅饼和纸杯蛋糕。",
+            "ru": "Честно говоря, я обожаю печь пироги и кексы."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? А какой твой самый удачный рецепт?",
+            "en": "Really? And what's your best recipe?",
+            "es": "¿En serio? ¿Y cuál es tu mejor receta?",
+            "fr": "Vraiment ? Et quelle est ta meilleure recette ?",
+            "pt": "Sério? E qual é a sua melhor receita?",
+            "kr": "정말요? 그럼 제일 잘 만드는 레시피가 뭐예요?",
+            "jp": "本当ですか？一番うまくできるレシピは何ですか？",
+            "zh": "真的吗？你最拿手的食谱是什么？",
+            "ru": "Правда? А какой твой самый удачный рецепт?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Яблочный пирог по рецепту моей бабушки.",
+            "en": "Apple pie, from my grandmother's recipe.",
+            "es": "La tarta de manzana, según la receta de mi abuela.",
+            "fr": "La tarte aux pommes de ma grand-mère.",
+            "pt": "Torta de maçã, segundo a receita da minha avó.",
+            "kr": "저희 할머니 레시피로 만든 사과파이예요.",
+            "jp": "祖母のレシピによるアップルパイです。",
+            "zh": "我奶奶配方的苹果派。",
+            "ru": "Яблочный пирог по рецепту моей бабушки."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Звучит очень вкусно, угостишь меня как-нибудь?",
+            "en": "Sounds delicious, will you treat me sometime?",
+            "es": "Suena muy rico, ¿me invitarás alguna vez?",
+            "fr": "Ça a l'air délicieux, tu m'en offriras un jour ?",
+            "pt": "Parece muito gostoso, você me oferece um dia desses?",
+            "kr": "정말 맛있을 거 같아요, 언제 한번 대접해줄래요?",
+            "jp": "とてもおいしそうですね。いつかごちそうになってくれますか？",
+            "zh": "听起来很好吃，什么时候请我尝尝？",
+            "ru": "Звучит очень вкусно, угостишь меня как-нибудь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обязательно, приходи в субботу на чай с пирогом.",
+            "en": "For sure, come over on Saturday for tea and pie.",
+            "es": "Por supuesto, ven el sábado a tomar té con tarta.",
+            "fr": "Bien sûr, viens samedi pour un thé avec de la tarte.",
+            "pt": "Com certeza, vem no sábado para um chá com torta.",
+            "kr": "그럼요, 토요일에 차랑 파이 마시러 오세요.",
+            "jp": "もちろん、土曜日にパイと一緒にお茶をしに来てください。",
+            "zh": "一定，你星期六来喝茶吃派吧。",
+            "ru": "Обязательно, приходи в субботу на чай с пирогом."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты не хочешь пойти со мной на выставку фотографий?",
+            "en": "Do you want to come with me to a photography exhibition?",
+            "es": "¿No quieres venir conmigo a la exposición de fotografía?",
+            "fr": "Tu ne veux pas venir avec moi à l'exposition de photos ?",
+            "pt": "Você não quer ir comigo à exposição de fotografias?",
+            "kr": "저랑 사진전 보러 갈래요?",
+            "jp": "一緒に写真展に行きませんか？",
+            "zh": "你想不想跟我一起去看摄影展？",
+            "ru": "Ты не хочешь пойти со мной на выставку фотографий?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "С удовольствием, я как раз увлекаюсь фотографией.",
+            "en": "I'd love to, I'm actually into photography myself.",
+            "es": "Con mucho gusto, justamente me interesa la fotografía.",
+            "fr": "Avec plaisir, je m'intéresse justement à la photographie.",
+            "pt": "Com prazer, eu inclusive gosto muito de fotografia.",
+            "kr": "좋아요, 저도 마침 사진에 관심이 많거든요.",
+            "jp": "喜んで、ちょうど写真に興味があるんです。",
+            "zh": "很乐意，我正好对摄影感兴趣。",
+            "ru": "С удовольствием, я как раз увлекаюсь фотографией."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично! А ты сам много снимаешь?",
+            "en": "Great! And do you take a lot of pictures?",
+            "es": "¡Genial! ¿Y tú fotografías mucho?",
+            "fr": "Parfait ! Et tu prends beaucoup de photos toi-même ?",
+            "pt": "Ótimo! E você tira muitas fotos?",
+            "kr": "잘됐네요! 그럼 직접 사진도 많이 찍어요?",
+            "jp": "それはいいですね！あなた自身もたくさん撮るんですか？",
+            "zh": "太好了！你自己拍得多吗？",
+            "ru": "Отлично! А ты сам много снимаешь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, в основном природу и городские улицы.",
+            "en": "Yes, mostly nature and city streets.",
+            "es": "Sí, sobre todo naturaleza y calles de la ciudad.",
+            "fr": "Oui, surtout la nature et les rues de la ville.",
+            "pt": "Sim, principalmente da natureza e das ruas da cidade.",
+            "kr": "네, 주로 자연이랑 도시 거리를 찍어요.",
+            "jp": "はい、主に自然や街の通りを撮っています。",
+            "zh": "是的，主要拍大自然和城市街道。",
+            "ru": "Да, в основном природу и городские улицы."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это, наверное, помогает видеть красоту вокруг.",
+            "en": "That probably helps you see the beauty around you.",
+            "es": "Eso seguramente ayuda a ver la belleza que nos rodea.",
+            "fr": "Ça doit aider à voir la beauté autour de soi.",
+            "pt": "Isso deve ajudar a ver a beleza ao redor.",
+            "kr": "그럼 주변의 아름다움을 보는 데 도움이 되겠네요.",
+            "jp": "それはきっと、周りの美しさに気づく助けになりますね。",
+            "zh": "这大概能帮助人发现身边的美吧。",
+            "ru": "Это, наверное, помогает видеть красоту вокруг."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Именно так, фотография учит меня замечать детали.",
+            "en": "Exactly, photography teaches me to notice details.",
+            "es": "Exactamente, la fotografía me enseña a fijarme en los detalles.",
+            "fr": "Exactement, la photo m'apprend à remarquer les détails.",
+            "pt": "Exatamente, a fotografia me ensina a reparar nos detalhes.",
+            "kr": "맞아요, 사진은 제가 세부적인 걸 알아차리게 해줘요.",
+            "jp": "まさにその通りです。写真は細部に気づくことを教えてくれます。",
+            "zh": "正是如此，摄影教会我去留意细节。",
+            "ru": "Именно так, фотография учит меня замечать детали."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я слышала, ты начал ходить на танцы. Как успехи?",
+            "en": "I heard you started taking dance classes. How's it going?",
+            "es": "He oído que empezaste a bailar. ¿Cómo te va?",
+            "fr": "J'ai entendu dire que tu avais commencé la danse. Ça se passe bien ?",
+            "pt": "Eu ouvi que você começou a dançar. Como estão as coisas?",
+            "kr": "춤 배우기 시작했다고 들었어요. 잘되고 있어요?",
+            "jp": "ダンスを始めたと聞きました。調子はどうですか？",
+            "zh": "我听说你开始学跳舞了。进展怎么样？",
+            "ru": "Я слышала, ты начал ходить на танцы. Как успехи?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, хожу на современные танцы уже два месяца.",
+            "en": "Yeah, I've been doing modern dance for two months now.",
+            "es": "Sí, llevo dos meses yendo a danza moderna.",
+            "fr": "Oui, je fais de la danse moderne depuis deux mois.",
+            "pt": "Sim, faço dança moderna já faz dois meses.",
+            "kr": "네, 현대무용을 벌써 두 달째 배우고 있어요.",
+            "jp": "はい、もう二ヶ月モダンダンスに通っています。",
+            "zh": "是的，我学现代舞已经两个月了。",
+            "ru": "Да, хожу на современные танцы уже два месяца."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "И как тебе? Трудно научиться?",
+            "en": "And how do you like it? Is it hard to learn?",
+            "es": "¿Y qué tal? ¿Es difícil aprender?",
+            "fr": "Et ça te plaît ? C'est difficile à apprendre ?",
+            "pt": "E como você está achando? É difícil aprender?",
+            "kr": "어때요? 배우기 어려워요?",
+            "jp": "どうですか？習得するのは難しいですか？",
+            "zh": "你觉得怎么样？难学吗？",
+            "ru": "И как тебе? Трудно научиться?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Сначала было сложно, но сейчас мне очень нравится.",
+            "en": "It was tough at first, but now I really enjoy it.",
+            "es": "Al principio fue complicado, pero ahora me gusta mucho.",
+            "fr": "Au début c'était dur, mais maintenant j'aime beaucoup ça.",
+            "pt": "No começo foi difícil, mas agora estou gostando muito.",
+            "kr": "처음에는 어려웠는데, 지금은 정말 재미있어요.",
+            "jp": "最初は大変でしたが、今はとても楽しいです。",
+            "zh": "一开始很难，但现在我非常喜欢。",
+            "ru": "Сначала было сложно, но сейчас мне очень нравится."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Главное, что тебе нравится и ты получаешь удовольствие.",
+            "en": "The main thing is that you like it and have fun.",
+            "es": "Lo importante es que te guste y que lo disfrutes.",
+            "fr": "L'important, c'est que ça te plaise et que tu prennes du plaisir.",
+            "pt": "O importante é que você gosta e se diverte.",
+            "kr": "중요한 건 재미있고 즐거운 거잖아요.",
+            "jp": "楽しめて、喜びを感じられているのが一番ですね。",
+            "zh": "重要的是你喜欢并且享受其中。",
+            "ru": "Главное, что тебе нравится и ты получаешь удовольствие."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Точно, я даже стал чувствовать себя увереннее.",
+            "en": "Exactly, I even feel more confident now.",
+            "es": "Exacto, incluso me he vuelto más seguro de mí mismo.",
+            "fr": "Exactement, je me sens même plus confiant.",
+            "pt": "Isso mesmo, eu até me sinto mais confiante.",
+            "kr": "맞아요, 덕분에 자신감도 더 생긴 것 같아요.",
+            "jp": "本当に、前よりも自信がついた気がします。",
+            "zh": "没错，我甚至变得更自信了。",
+            "ru": "Точно, я даже стал чувствовать себя увереннее."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Чем ты занимаешься, когда идёт дождь?",
+            "en": "What do you do when it rains?",
+            "es": "¿Qué haces cuando llueve?",
+            "fr": "Qu'est-ce que tu fais quand il pleut ?",
+            "pt": "O que você faz quando está chovendo?",
+            "kr": "비 오는 날엔 뭐 하고 지내요?",
+            "jp": "雨の日は何をして過ごしますか？",
+            "zh": "下雨的时候你做什么？",
+            "ru": "Чем ты занимаешься, когда идёт дождь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно я читаю книги или смотрю старые фильмы.",
+            "en": "I usually read books or watch old movies.",
+            "es": "Normalmente leo libros o veo películas antiguas.",
+            "fr": "D'habitude, je lis des livres ou je regarde de vieux films.",
+            "pt": "Normalmente eu leio livros ou assisto a filmes antigos.",
+            "kr": "보통 책을 읽거나 옛날 영화를 봐요.",
+            "jp": "たいてい本を読んだり、古い映画を観たりしています。",
+            "zh": "我通常看书或者看老电影。",
+            "ru": "Обычно я читаю книги или смотрю старые фильмы."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А какой жанр книг тебе нравится больше всего?",
+            "en": "And what genre of books do you like the most?",
+            "es": "¿Y qué género de libros te gusta más?",
+            "fr": "Et quel genre de livres tu préfères ?",
+            "pt": "E qual gênero de livro você mais gosta?",
+            "kr": "그럼 어떤 장르 책을 제일 좋아해요?",
+            "jp": "どんなジャンルの本が一番好きですか？",
+            "zh": "那你最喜欢什么类型的书？",
+            "ru": "А какой жанр книг тебе нравится больше всего?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я предпочитаю детективы и приключенческие романы.",
+            "en": "I prefer detective stories and adventure novels.",
+            "es": "Prefiero las novelas de misterio y de aventuras.",
+            "fr": "Je préfère les romans policiers et les romans d'aventure.",
+            "pt": "Eu prefiro suspense e romances de aventura.",
+            "kr": "저는 추리소설이랑 모험 소설을 좋아해요.",
+            "jp": "推理小説と冒険小説が好きです。",
+            "zh": "我更喜欢侦探小说和冒险小说。",
+            "ru": "Я предпочитаю детективы и приключенческие романы."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне тоже нравятся детективы, особенно классические.",
+            "en": "I like detective stories too, especially the classics.",
+            "es": "A mí también me gustan las de misterio, sobre todo las clásicas.",
+            "fr": "Moi aussi j'aime les romans policiers, surtout les classiques.",
+            "pt": "Eu também gosto de suspense, principalmente os clássicos.",
+            "kr": "저도 추리소설 좋아해요, 특히 고전이요.",
+            "jp": "私も推理小説が好きです。特に古典的なものが。",
+            "zh": "我也喜欢侦探小说，尤其是经典的。",
+            "ru": "Мне тоже нравятся детективы, особенно классические."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда я могу порекомендовать тебе пару отличных авторов.",
+            "en": "Then I can recommend a couple of great authors to you.",
+            "es": "Entonces puedo recomendarte un par de autores excelentes.",
+            "fr": "Alors je peux te recommander deux ou trois excellents auteurs.",
+            "pt": "Então eu posso te recomendar uns ótimos autores.",
+            "kr": "그럼 좋은 작가 몇 명 추천해 줄 수 있어요.",
+            "jp": "それなら、いい作家を何人か紹介できますよ。",
+            "zh": "那我给你推荐几位很棒的作家吧。",
+            "ru": "Тогда я могу порекомендовать тебе пару отличных авторов."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я заметила, что ты всегда носишь с собой книгу.",
+            "en": "I noticed you always carry a book with you.",
+            "es": "Me he dado cuenta de que siempre llevas un libro contigo.",
+            "fr": "J'ai remarqué que tu emportes toujours un livre avec toi.",
+            "pt": "Eu notei que você sempre carrega um livro com você.",
+            "kr": "항상 책을 가지고 다니는 것 같아요.",
+            "jp": "いつも本を持ち歩いていますね。",
+            "zh": "我注意到你总是随身带着一本书。",
+            "ru": "Я заметила, что ты всегда носишь с собой книгу."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я стараюсь читать в метро и в перерывах.",
+            "en": "Yes, I try to read on the subway and during breaks.",
+            "es": "Sí, intento leer en el metro y en los descansos.",
+            "fr": "Oui, j'essaie de lire dans le métro et pendant les pauses.",
+            "pt": "Sim, eu tento ler no metrô e nos intervalos.",
+            "kr": "네, 지하철이나 쉬는 시간에 읽으려고요.",
+            "jp": "はい、地下鉄や休憩時間に読むようにしています。",
+            "zh": "是的，我尽量在地铁里和休息时看书。",
+            "ru": "Да, я стараюсь читать в метро и в перерывах."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это хорошая привычка. А сколько книг ты читаешь в месяц?",
+            "en": "That's a good habit. And how many books do you read a month?",
+            "es": "Es un buen hábito. ¿Y cuántos libros lees al mes?",
+            "fr": "C'est une bonne habitude. Et combien de livres tu lis par mois ?",
+            "pt": "Esse é um bom hábito. E quantos livros você lê por mês?",
+            "kr": "좋은 습관이네요. 한 달에 책을 몇 권 읽어요?",
+            "jp": "それはいい習慣ですね。一ヶ月に何冊読むんですか？",
+            "zh": "这是个好习惯。你一个月读几本书？",
+            "ru": "Это хорошая привычка. А сколько книг ты читаешь в месяц?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно две или три, если есть свободное время.",
+            "en": "Usually two or three, if I have free time.",
+            "es": "Normalmente dos o tres, si tengo tiempo libre.",
+            "fr": "D'habitude deux ou trois, si j'ai du temps libre.",
+            "pt": "Normalmente dois ou três, se eu tiver tempo livre.",
+            "kr": "시간이 있으면 보통 두세 권 읽어요.",
+            "jp": "たいてい二、三冊です。自由な時間があればですが。",
+            "zh": "通常两三本，如果有空闲时间的话。",
+            "ru": "Обычно две или три, если есть свободное время."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это впечатляет, я бы тоже хотела читать больше.",
+            "en": "That's impressive, I wish I read more too.",
+            "es": "Es impresionante, a mí también me gustaría leer más.",
+            "fr": "C'est impressionnant, j'aimerais aussi lire plus.",
+            "pt": "Impressionante, eu também gostaria de ler mais.",
+            "kr": "대단하네요, 저도 더 많이 읽고 싶어요.",
+            "jp": "すごいですね。私ももっと読みたいです。",
+            "zh": "真厉害，我也想多读点书。",
+            "ru": "Это впечатляет, я бы тоже хотела читать больше."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Начни с малого — по десять страниц каждый день.",
+            "en": "Start small — ten pages every day.",
+            "es": "Empieza poco a poco: diez páginas cada día.",
+            "fr": "Commence petit — dix pages chaque jour.",
+            "pt": "Comece aos poucos — dez páginas por dia.",
+            "kr": "작은 것부터 시작해 봐요 — 하루에 십 페이지씩이요.",
+            "jp": "小さなことから始めてみてください。毎日十ページずつ。",
+            "zh": "从小事做起——每天读十页。",
+            "ru": "Начни с малого — по десять страниц каждый день."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты не хочешь поехать со мной за город на выходные?",
+            "en": "Do you want to go out of town with me this weekend?",
+            "es": "¿No quieres ir conmigo al campo este fin de semana?",
+            "fr": "Tu ne veux pas venir avec moi à la campagne ce week-end ?",
+            "pt": "Você não quer ir comigo para o interior no fim de semana?",
+            "kr": "주말에 저랑 교외로 놀러 갈래요?",
+            "jp": "週末に一緒に郊外へ行きませんか？",
+            "zh": "你周末想不想跟我一起去郊外？",
+            "ru": "Ты не хочешь поехать со мной за город на выходные?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "С радостью, я люблю гулять по лесу и дышать воздухом.",
+            "en": "I'd love to, I enjoy walking in the woods and getting fresh air.",
+            "es": "Con gusto, me encanta pasear por el bosque y respirar aire puro.",
+            "fr": "Avec joie, j'aime me promener en forêt et respirer le grand air.",
+            "pt": "Com prazer, eu gosto de caminhar pela floresta e respirar ar puro.",
+            "kr": "좋아요, 숲속을 걷고 공기 쐬는 걸 좋아해요.",
+            "jp": "喜んで、森を散歩して空気を吸うのが好きです。",
+            "zh": "很乐意，我喜欢在森林里散步、呼吸新鲜空气。",
+            "ru": "С радостью, я люблю гулять по лесу и дышать воздухом."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А чем ты ещё занимаешься на природе?",
+            "en": "And what else do you do outdoors?",
+            "es": "¿Y qué más haces en la naturaleza?",
+            "fr": "Et qu'est-ce que tu fais d'autre dans la nature ?",
+            "pt": "E o que mais você gosta de fazer na natureza?",
+            "kr": "그럼 자연에서 또 뭐 하는 거 좋아해요?",
+            "jp": "自然の中では他に何をするのが好きですか？",
+            "zh": "你在户外还喜欢做什么？",
+            "ru": "А чем ты ещё занимаешься на природе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Люблю собирать грибы, а зимой кататься на лыжах.",
+            "en": "I like picking mushrooms, and in winter I go skiing.",
+            "es": "Me gusta recoger setas, y en invierno esquiar.",
+            "fr": "J'aime cueillir des champignons, et l'hiver faire du ski.",
+            "pt": "Gosto de colher cogumelos e, no inverno, de esquiar.",
+            "kr": "버섯 따는 걸 좋아하고, 겨울에는 스키 타러 다녀요.",
+            "jp": "きのこを採るのが好きです。冬はスキーをします。",
+            "zh": "我喜欢采蘑菇，冬天喜欢滑雪。",
+            "ru": "Люблю собирать грибы, а зимой кататься на лыжах."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Звучит замечательно, у нас будет активный отдых.",
+            "en": "Sounds wonderful, we'll have an active getaway.",
+            "es": "Suena estupendo, tendremos un descanso muy activo.",
+            "fr": "Ça a l'air merveilleux, on va avoir des vacances actives.",
+            "pt": "Parece ótimo, vamos ter um descanso bem ativo.",
+            "kr": "정말 좋겠네요, 액티브한 휴가가 될 거예요.",
+            "jp": "すばらしいですね。アクティブな休日になりそうです。",
+            "zh": "听起来很棒，我们会度过一个充实的假期。",
+            "ru": "Звучит замечательно, у нас будет активный отдых."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, и я возьму с собой термос с горячим чаем.",
+            "en": "Yes, and I'll bring a thermos with hot tea.",
+            "es": "Sí, y llevaré un termo con té caliente.",
+            "fr": "Oui, et je prendrai un thermos de thé chaud.",
+            "pt": "Sim, e eu vou levar uma garrafa térmica com chá quente.",
+            "kr": "네, 그리고 따뜻한 차 담은 보온병도 가져갈게요.",
+            "jp": "はい、それに温かいお茶の入った魔法瓶も持っていきますよ。",
+            "zh": "是的，我还会带上装满热茶的保温杯。",
+            "ru": "Да, и я возьму с собой термос с горячим чаем."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я узнала, что ты коллекционируешь марки. Это правда?",
+            "en": "I found out you collect stamps. Is that true?",
+            "es": "Me enteré de que coleccionas sellos. ¿Es verdad?",
+            "fr": "J'ai appris que tu collectionnais les timbres. C'est vrai ?",
+            "pt": "Eu fiquei sabendo que você coleciona selos. É verdade?",
+            "kr": "우표를 수집한다고 들었는데, 사실이에요?",
+            "jp": "切手を集めていると聞きましたが、本当ですか？",
+            "zh": "我听说你收集邮票。是真的吗？",
+            "ru": "Я узнала, что ты коллекционируешь марки. Это правда?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я собираю марки с изображением животных.",
+            "en": "Yes, I collect stamps with pictures of animals.",
+            "es": "Sí, colecciono sellos con imágenes de animales.",
+            "fr": "Oui, je collectionne les timbres avec des images d'animaux.",
+            "pt": "Sim, eu coleciono selos com imagens de animais.",
+            "kr": "네, 동물 그림이 있는 우표를 모아요.",
+            "jp": "はい、動物の絵が描かれた切手を集めています。",
+            "zh": "是的，我收集印有动物图案的邮票。",
+            "ru": "Да, я собираю марки с изображением животных."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Как интересно! А сколько марок у тебя уже есть?",
+            "en": "How interesting! And how many stamps do you have so far?",
+            "es": "¡Qué interesante! ¿Y cuántos sellos tienes ya?",
+            "fr": "Comme c'est intéressant ! Et combien de timbres tu as déjà ?",
+            "pt": "Que interessante! E quantos selos você já tem?",
+            "kr": "정말 재미있네요! 그럼 우표가 몇 장이나 있어요?",
+            "jp": "面白いですね！もう何枚持っているんですか？",
+            "zh": "真有意思！你现在有多少张邮票了？",
+            "ru": "Как интересно! А сколько марок у тебя уже есть?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Около трёхсот, но я мечтаю найти редкие экземпляры.",
+            "en": "About three hundred, but I dream of finding rare ones.",
+            "es": "Alrededor de trescientos, pero sueño con encontrar ejemplares raros.",
+            "fr": "Environ trois cents, mais je rêve de trouver des exemplaires rares.",
+            "pt": "Cerca de trezentos, mas eu sonho em encontrar exemplares raros.",
+            "kr": "약 삼백 장인데, 희귀한 우표를 찾는 게 꿈이에요.",
+            "jp": "三百枚ぐらいですが、珍しいものを見つけるのが夢です。",
+            "zh": "大约三百张，但我梦想找到一些稀有的。",
+            "ru": "Около трёхсот, но я мечтаю найти редкие экземпляры."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Наверное, это требует много терпения и внимания.",
+            "en": "That must take a lot of patience and attention.",
+            "es": "Seguro que requiere mucha paciencia y atención.",
+            "fr": "Ça doit demander beaucoup de patience et d'attention.",
+            "pt": "Deve exigir muita paciência e atenção.",
+            "kr": "그러려면 인내심과 세심함이 많이 필요하겠네요.",
+            "jp": "それはきっと、たくさんの忍耐と注意力が必要ですね。",
+            "zh": "那一定需要很多耐心和细心吧。",
+            "ru": "Наверное, это требует много терпения и внимания."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Зато это очень увлекательно и познавательно.",
+            "en": "But it's really fascinating and educational.",
+            "es": "Pero es muy entretenido y didáctico.",
+            "fr": "Mais c'est très passionnant et instructif.",
+            "pt": "Mas é muito envolvente e educativo.",
+            "kr": "그래도 정말 재미있고 배우는 게 많아요.",
+            "jp": "でも、とても魅力的で学びが多いんですよ。",
+            "zh": "不过这也非常有趣，而且能学到很多知识。",
+            "ru": "Зато это очень увлекательно и познавательно."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S011",
+  "shot_id": "SHOT_003",
+  "sequence": 3,
+  "duration_seconds": 7.0,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun nodding with relief, putting her phone away, and looking out the window to watch for her stop.",
+  "framing": {
+    "shot_size": "medium",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "train window with city view"
+    ]
+  },
+  "camera": {
+    "angle": "three_quarter",
+    "movement": "static",
+    "stability": "smooth"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun nods with a relieved expression, puts her phone back into her crossbody bag, and looks out the window, watching for her stop.",
+    "start_state": [
+      "Jieun has confirmed that the station names on the subway map match the ones on her phone's map",
+      "She is holding her smartphone, looking satisfied"
+    ],
+    "end_state": [
+      "Jieun has put her phone away in her crossbody bag",
+      "She is looking out the window at the city passing by",
+      "Her expression is calm and relieved"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "relieved and calm",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on Jieun's back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body, closed",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "state": "put away in Jieun's crossbody bag",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "state": "in Jieun's crossbody bag",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "stored near Jieun in the train car",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L003"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun has confirmed that the station names on the subway map match the ones on her phone's map",
+      "She is holding her smartphone, looking satisfied"
+    ],
+    "carry_out": [
+      "Jieun has confirmed she is on the correct train toward Manhattan",
+      "She is now watching for her stop",
+      "She feels relieved that she is on the right track"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

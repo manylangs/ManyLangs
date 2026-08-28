@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S011",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun checks the subway map",
+      "pass": true,
+      "evidence": "L001: 'Okay, let me check the subway map.'"
+    },
+    {
+      "requirement": "Jieun compares the station names with her phone's map",
+      "pass": true,
+      "evidence": "L002: 'This station name... and on my phone, it says the same.'"
+    },
+    {
+      "requirement": "Jieun confirms she is going in the right direction",
+      "pass": true,
+      "evidence": "L003: 'Yes, I'm on the right train toward Manhattan.'"
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the subway journey",
+      "pass": true,
+      "evidence": "The dialogue stays within the subway journey; no arrival or exit is mentioned."
+    },
+    {
+      "requirement": "Do not introduce any problems with the subway map or her phone",
+      "pass": true,
+      "evidence": "The map and phone work correctly; no issues are raised."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

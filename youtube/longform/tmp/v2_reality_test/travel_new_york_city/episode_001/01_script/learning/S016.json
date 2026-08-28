@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S016",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "source_dialogue": {
+    "source_scene_id": "S016",
+    "source_line_ids": [
+      "L001",
+      "L002",
+      "L003",
+      "L004",
+      "L005",
+      "L006",
+      "L007",
+      "L008"
+    ]
+  },
+  "key_expressions": [
+    {
+      "key_expression_id": "KE001",
+      "source_line_ids": [
+        "L001"
+      ],
+      "expression": "I have a reservation.",
+      "meaning": "예약이 있습니다. 호텔이나 식당 등에서 예약 사실을 알릴 때 쓰는 기본 표현이다.",
+      "usage": "호텔 프런트, 식당, 예약한 장소에 도착했을 때 가장 먼저 말하는 표현이다. 공식적이지만 어느 상황에서나 자연스럽게 쓸 수 있다.",
+      "context": "지은이 호텔 프런트에 도착해 직원에게 자신이 예약한 손님임을 알리는 첫 마디다.",
+      "communicative_function": "stating a fact",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "I have a booking.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE002",
+      "source_line_ids": [
+        "L002"
+      ],
+      "expression": "Can you spell your last name, please?",
+      "meaning": "성을 철자로 말씀해 주시겠어요? 상대방의 이름 철자를 확인하기 위해 묻는 정중한 요청 표현이다.",
+      "usage": "예약 확인, 전화 통화, 공식적인 자리에서 이름을 정확히 확인해야 할 때 사용한다. 'please'를 붙여 공손함을 더한다.",
+      "context": "호텔 직원이 지은이의 예약을 찾기 위해 성을 철자로 확인해 달라고 요청하는 상황이다.",
+      "communicative_function": "requesting information",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "Could you spell your last name for me?",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE003",
+      "source_line_ids": [
+        "L003"
+      ],
+      "expression": "I booked a single room for three nights.",
+      "meaning": "싱글룸을 3박으로 예약했습니다. 호텔 예약 내역을 설명할 때 쓰는 표현이다.",
+      "usage": "호텔 체크인 시 예약한 방 종류와 기간을 말할 때 사용한다. 'booked' 대신 'reserved'를 써도 된다.",
+      "context": "지은이가 호텔 직원에게 자신의 예약 상세 내역(싱글룸, 3박)을 확인시켜 주는 상황이다.",
+      "communicative_function": "providing information",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "I reserved a single room for three nights.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE004",
+      "source_line_ids": [
+        "L005"
+      ],
+      "expression": "Do I need to fill out any forms?",
+      "meaning": "작성해야 할 서류가 있나요? 호텔 체크인 시 필요한 절차가 있는지 확인하는 질문이다.",
+      "usage": "호텔, 병원, 관공서 등에서 추가로 작성해야 할 서류가 있는지 물을 때 유용하다. 'fill out'은 '작성하다'라는 뜻의 구동사다.",
+      "context": "지은이가 체크인 절차가 끝난 후 추가로 작성할 서류가 있는지 호텔 직원에게 확인하는 상황이다.",
+      "communicative_function": "asking for confirmation",
+      "difficulty": "A2",
+      "priority": "useful",
+      "variation": "Do I need to fill in any forms?",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE005",
+      "source_line_ids": [
+        "L006"
+      ],
+      "expression": "you're all set",
+      "meaning": "준비가 다 끝났습니다. 모든 절차가 완료되었음을 알리는 표현이다.",
+      "usage": "호텔 체크인, 매장 계산, 예약 확인 등 어떤 절차가 끝났을 때 상대방에게 '준비 끝'이라고 알리는 실용적인 표현이다. 캐주얼하고 친근한 느낌이다.",
+      "context": "호텔 직원이 지은이에게 체크인 절차가 모두 끝났고 방 키를 받을 준비가 되었다고 알리는 상황이다.",
+      "communicative_function": "informing completion",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "You're good to go.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE006",
+      "source_line_ids": [
+        "L007"
+      ],
+      "expression": "Which way is the elevator?",
+      "meaning": "엘리베이터가 어느 쪽인가요? 특정 장소의 방향을 물을 때 쓰는 표현이다.",
+      "usage": "호텔, 백화점, 공항 등 건물 안에서 특정 시설의 위치를 물을 때 사용한다. 'Which way is ~?' 패턴으로 다양한 장소에 응용할 수 있다.",
+      "context": "지은이가 체크인을 마친 후 방으로 가기 위해 엘리베이터의 위치를 호텔 직원에게 묻는 상황이다.",
+      "communicative_function": "asking for directions",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "Where is the elevator?",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE007",
+      "source_line_ids": [
+        "L008"
+      ],
+      "expression": "Enjoy your stay!",
+      "meaning": "즐거운 시간 되세요! 호텔 등에서 투숙객에게 건네는 친절한 인사말이다.",
+      "usage": "호텔 직원이 투숙객에게, 식당 주인이 손님에게 등 서비스 제공자가 손님에게 건네는 정중하고 따뜻한 표현이다. 'stay'는 '숙박'이라는 뜻이다.",
+      "context": "호텔 직원이 지은이에게 체크인을 마친 후 즐거운 숙박이 되길 바란다는 마음을 담아 건네는 인사말이다.",
+      "communicative_function": "expressing goodwill",
+      "difficulty": "A2",
+      "priority": "useful",
+      "variation": "Have a nice stay!",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    }
+  ],
+  "validation": {
+    "expression_count": 7,
+    "all_expressions_exist_in_dialogue": true,
+    "source_lines_valid": true,
+    "cefr_appropriate": true
+  }
+}

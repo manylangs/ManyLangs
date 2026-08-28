@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S017",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun enters her hotel room",
+      "pass": true,
+      "evidence": "L001: \"This is my room. It's nice and clean.\" — Jieun explicitly identifies the room as hers, confirming she has entered it."
+    },
+    {
+      "requirement": "Jieun puts down her bags",
+      "pass": true,
+      "evidence": "L002: \"Let me put my bags down here.\" — Jieun explicitly states her action of putting down her bags."
+    },
+    {
+      "requirement": "Jieun goes to the window to see the view",
+      "pass": true,
+      "evidence": "L003: \"Wow, the view from this window is beautiful.\" — Jieun comments on the view from the window, confirming she is at the window and observing the city."
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the hotel room",
+      "pass": true,
+      "evidence": "All lines (L001-L004) take place within the hotel room. L004 mentions a future intention to take a walk but does not depict her leaving the room."
+    },
+    {
+      "requirement": "Do not introduce any problems with the room",
+      "pass": true,
+      "evidence": "L001: \"It's nice and clean.\" — Jieun expresses satisfaction with the room. No issues or problems are mentioned."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

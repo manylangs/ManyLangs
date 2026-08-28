@@ -24,8 +24,13 @@ real 시리즈는 voca와 달리:
 
   옵션:
     --root PATH          real generator/data 경로
-    --prompt-dir PATH    real_평가프롬프트_v1.1.md가 있는 폴더
-    --prompt-file NAME   평가 프롬프트 파일명 (기본: real_평가프롬프트_v1.1.md)
+    --prompt-dir PATH    EVAL_ALL.md가 있는 폴더
+    --prompt-file NAME   평가 프롬프트 파일명 (기본: EVAL_ALL.md)
+
+  참고: 평가/재검수 프롬프트 파일명은 버전 넘버 없는 EVAL_ALL.md /
+  REVIEW_ALL.md로 통일되었다 (real은 target 개념이 없는 언어 무관 단일
+  프롬프트이므로 언어별 파일 분리가 없다). pt는 pt-BR 고정으로 전환.
+  ru가 8번째 언어로 추가됨.
     --batch 011,012,020-025   특정 batch_id만 (기본: 전체 001-120, 폴더 존재하는 것만)
     --dry-run             API 호출 없이 스캔 결과만 출력
     --model               DeepSeek 모델명 (기본: deepseek-chat)
@@ -46,7 +51,7 @@ import urllib.error
 from pathlib import Path
 
 DEEPSEEK_ENDPOINT = "https://api.deepseek.com/chat/completions"
-DEFAULT_PROMPT_FILE = "real_평가프롬프트_v1.1.md"
+DEFAULT_PROMPT_FILE = "EVAL_ALL.md"
 DEFAULT_ROOT = Path(
     "/Users/junghasuk/Desktop/ManyLangs/web/firebase/real generator/data"
 )
@@ -337,7 +342,7 @@ def run(root: Path, prompt_dir: Path, prompt_file: str, batch_filter,
     if review_batches:
         print("\n" + "=" * 80)
         print(f"재검수 필요 배치 상세 ({len(review_batches)}건) — 아래 블록을 그대로 복사해서")
-        print("real_재검수프롬프트_v1.0.md 세션에 붙여넣으세요.")
+        print("REVIEW_ALL.md 세션에 붙여넣으세요.")
         print("=" * 80)
         for batch_id in review_batches:
             o = outcomes[batch_id]

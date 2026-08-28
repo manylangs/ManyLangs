@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "001"
+  },
+  "title": {
+    "target": "问候",
+    "en": "Greetings",
+    "es": "Saludos",
+    "fr": "Salutations",
+    "pt": "Cumprimentos",
+    "kr": "인사",
+    "zh": "问候",
+    "jp": "挨拶",
+    "ru": "Приветствие"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "早上好，小美！今天天气真好。",
+            "en": "Good morning, Xiaomei! The weather is really nice today.",
+            "es": "¡Buenos días, Xiaomei! Hoy hace muy buen tiempo.",
+            "fr": "Bonjour, Xiaomei ! Il fait vraiment beau aujourd'hui.",
+            "pt": "Bom dia, Xiaomei! Hoje o tempo está mesmo bom.",
+            "kr": "안녕하세요, 샤오메이! 오늘 날씨가 정말 좋네요.",
+            "zh": "早上好，小美！今天天气真好。",
+            "jp": "おはよう、小美！今日は本当にいい天気だね。",
+            "ru": "Доброе утро, Сяомэй! Сегодня такая хорошая погода."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "早上好，浩宇！是啊，阳光暖暖的。",
+            "en": "Good morning, Haoyu! Yeah, the sun is warm and cozy.",
+            "es": "¡Buenos días, Haoyu! Sí, el sol calienta mucho.",
+            "fr": "Bonjour, Haoyu ! Oui, le soleil est tout doux.",
+            "pt": "Bom dia, Haoyu! Pois é, o sol está quentinho.",
+            "kr": "안녕하세요, 하오위! 맞아요, 햇살이 따뜻하네요.",
+            "zh": "早上好，浩宇！是啊，阳光暖暖的。",
+            "jp": "おはよう、浩宇！そうだね、日差しがぽかぽかしてるね。",
+            "ru": "Доброе утро, Хаоюй! Да, солнышко такое тёплое."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "你吃早饭了吗？我带了面包。",
+            "en": "Did you have breakfast? I brought some bread.",
+            "es": "¿Has desayunado? He traído pan.",
+            "fr": "Tu as pris ton petit-déjeuner ? J'ai apporté du pain.",
+            "pt": "Já tomaste o pequeno-almoço? Eu trouxe pão.",
+            "kr": "아침 먹었어요? 저는 빵을 가져왔어요.",
+            "zh": "你吃早饭了吗？我带了面包。",
+            "jp": "朝ごはん食べた？パンを持ってきたよ。",
+            "ru": "Ты уже позавтракала? Я принесла хлеб."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "还没吃呢，谢谢你！你真好。",
+            "en": "Not yet, thank you! You're so kind.",
+            "es": "Todavía no, ¡gracias! Eres muy amable.",
+            "fr": "Pas encore, merci ! Tu es vraiment gentille.",
+            "pt": "Ainda não comi, obrigada! És mesmo querida.",
+            "kr": "아직 안 먹었어요, 고마워요! 정말 친절하시네요.",
+            "zh": "还没吃呢，谢谢你！你真好。",
+            "jp": "まだ食べてないよ、ありがとう！君は本当に優しいね。",
+            "ru": "Ещё нет, спасибо тебе! Ты такая добрая."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "不客气，我们快吃吧，要上课了。",
+            "en": "You're welcome. Let's eat quickly, we have class soon.",
+            "es": "De nada, comamos rápido, que tenemos que ir a clase.",
+            "fr": "De rien, mangeons vite, il faut aller en cours.",
+            "pt": "De nada, vamos comer depressa, que as aulas vão começar.",
+            "kr": "천만에요, 얼른 먹어요, 수업 시간이 곧 시작돼요.",
+            "zh": "不客气，我们快吃吧，要上课了。",
+            "jp": "どういたしまして、早く食べよう、授業が始まるよ。",
+            "ru": "Не за что, давай быстро поедим, скоро урок."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "好的，我们走吧！",
+            "en": "Okay, let's go!",
+            "es": "¡Vale, vamos!",
+            "fr": "D'accord, allons-y !",
+            "pt": "Está bem, vamos!",
+            "kr": "좋아요, 갑시다!",
+            "zh": "好的，我们走吧！",
+            "jp": "うん、行こう！",
+            "ru": "Хорошо, пойдём!"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+ORDER: 008/065
+SCENE: S003
+SHOT: SHOT_001
+DURATION: 8.0 seconds
+ASPECT RATIO: 16:9
+RESOLUTION: 1080p
+
+REFERENCE IMAGE:
+- _references/jieun_primary.png
+
+PROMPT:
+A young Korean woman with an oval face, soft features, natural eyebrows, dark brown eyes, light natural makeup, and a warm friendly expression, with shoulder-length dark brown hair tucked behind ears, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch, carrying a medium-sized travel backpack on her back and a small crossbody bag across her body, with a smartphone in her hand lowered to her side, steps forward to the immigration officer's booth and hands her passport to the officer. Across the booth, a professional immigration officer, neatly groomed with short hair, wearing an official uniform shirt, dark trousers, and professional work shoes with a visible ID badge, receives the passport and holds it. The setting is a large airport terminal at JFK International Airport, in the immigration area, with high ceilings, large windows with natural light, bright indoor terminal lighting, digital flight information displays, and signage for Arrivals, Immigration, and Baggage Claim. Other passengers are waiting in the immigration line behind the woman, and immigration officers at nearby booths are processing travelers. It is daytime. The camera is a medium-wide shot at eye level, static and locked. The woman's expression is a bit more confident but still cautious, and the officer's expression is professional and courteous.
+
+NEGATIVE / DO-NOT-CHANGE NOTES:
+- Do not change character identity.
+- Do not introduce new characters.
+- Do not change canonical location identity.
+- Do not introduce new locations.
+- Do not alter canonical prop state.
+- Do not change story events.
+- Do not show Jieun moving past the immigration area.
+- Do not show Jieun completing the immigration process.
+- Do not show Jieun leaving the airport.
+- Do not show Jieun recovering her checked luggage.
+- Do not show Jieun putting her passport away.
+
+OUTPUT FILE:
+S003_SHOT_001.mp4

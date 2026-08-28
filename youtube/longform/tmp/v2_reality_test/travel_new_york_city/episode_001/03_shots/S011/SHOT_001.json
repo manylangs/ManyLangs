@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S011",
+  "shot_id": "SHOT_001",
+  "sequence": 1,
+  "duration_seconds": 8.0,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun checking the subway map inside the train to confirm her route.",
+  "framing": {
+    "shot_size": "medium",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "subway map above the seats"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "static",
+    "stability": "smooth"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun stands inside the moving subway train, holding onto a pole with one hand, and looks up at the subway map displayed above the seats.",
+    "start_state": [
+      "Jieun is standing inside the moving subway train, holding onto a pole",
+      "She is looking out the window at the city passing by",
+      "Her expression shows excitement and wonder"
+    ],
+    "end_state": [
+      "Jieun is looking up at the subway map above the seats",
+      "Her expression is focused as she begins to check the route"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "focused and curious",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on Jieun's back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "state": "in Jieun's crossbody bag",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "state": "in Jieun's crossbody bag",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "stored near Jieun in the train car",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L001"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is on the subway train heading toward Manhattan",
+      "She is observing the other passengers and the city through the windows",
+      "She feels a growing sense of excitement"
+    ],
+    "carry_out": [
+      "Jieun is looking up at the subway map inside the train",
+      "She is focused on confirming her route toward Manhattan"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

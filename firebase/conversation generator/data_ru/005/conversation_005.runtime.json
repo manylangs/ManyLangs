@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a1",
+    "id": "005"
+  },
+  "title": {
+    "target": "Рассказ о семье",
+    "en": "Talking About Family",
+    "es": "Historia sobre la familia",
+    "fr": "Parler de sa famille",
+    "pt": "Falando sobre a família",
+    "kr": "가족 이야기",
+    "jp": "家族の話",
+    "zh": "关于家庭的故事",
+    "ru": "Рассказ о семье"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Привет, Иван! Как дела?",
+            "en": "Hi, Ivan! How are you?",
+            "es": "¡Hola, Iván! ¿Qué tal?",
+            "fr": "Salut, Ivan ! Comment ça va ?",
+            "pt": "Oi, Ivan! Como vai?",
+            "kr": "안녕하세요, 이반 씨! 잘 지내세요?",
+            "jp": "こんにちは、イワンさん！元気ですか？",
+            "zh": "你好，伊万！最近怎么样？",
+            "ru": "Привет, Иван! Как дела?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Привет, Анна! Хорошо. А ты как?",
+            "en": "Hi, Anna! I'm good. And how about you?",
+            "es": "¡Hola, Ana! Bien. ¿Y tú qué tal?",
+            "fr": "Salut, Anna ! Ça va bien. Et toi ?",
+            "pt": "Oi, Anna! Bem. E você?",
+            "kr": "안녕하세요, 안나 씨! 잘 지내요. 당신은요?",
+            "jp": "こんにちは、アンナさん！元気です。あなたはどうですか？",
+            "zh": "你好，安娜！挺好的。你呢？",
+            "ru": "Привет, Анна! Хорошо. А ты как?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тоже хорошо. Расскажи о своей семье.",
+            "en": "I'm good too. Tell me about your family.",
+            "es": "También bien. Cuéntame sobre tu familia.",
+            "fr": "Ça va bien aussi. Parle-moi de ta famille.",
+            "pt": "Também estou bem. Fala sobre a sua família.",
+            "kr": "저도 잘 지내요. 가족에 대해 이야기해 주세요.",
+            "jp": "私も元気です。あなたの家族について話してください。",
+            "zh": "我也挺好的。给我讲讲你的家庭吧。",
+            "ru": "Тоже хорошо. Расскажи о своей семье."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Моя семья небольшая. Мама, папа и я.",
+            "en": "My family is small. Mom, dad, and me.",
+            "es": "Mi familia es pequeña. Mamá, papá y yo.",
+            "fr": "Ma famille est petite. Ma mère, mon père et moi.",
+            "pt": "A minha família é pequena. Minha mãe, meu pai e eu.",
+            "kr": "우리 가족은 작아요. 엄마, 아빠, 그리고 저예요.",
+            "jp": "私の家族は小さいです。母と父と私です。",
+            "zh": "我的家庭不大。妈妈、爸爸和我。",
+            "ru": "Моя семья небольшая. Мама, папа и я."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А братья или сёстры есть?",
+            "en": "Do you have any brothers or sisters?",
+            "es": "¿Y tienes hermanos o hermanas?",
+            "fr": "Et tu as des frères ou des sœurs ?",
+            "pt": "E você tem irmãos ou irmãs?",
+            "kr": "형제나 자매는 있어요?",
+            "jp": "兄弟や姉妹はいますか？",
+            "zh": "那你有兄弟姐妹吗？",
+            "ru": "А братья или сёстры есть?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, я один ребёнок в семье.",
+            "en": "No, I'm an only child in the family.",
+            "es": "No, soy hijo único en la familia.",
+            "fr": "Non, je suis enfant unique.",
+            "pt": "Não, eu sou filho único.",
+            "kr": "아니요, 저는 외동이에요.",
+            "jp": "いいえ、私は一人っ子です。",
+            "zh": "没有，我是家里的独生子。",
+            "ru": "Нет, я один ребёнок в семье."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, у тебя большая семья?",
+            "en": "Ivan, do you have a big family?",
+            "es": "Iván, ¿tu familia es grande?",
+            "fr": "Ivan, tu as une grande famille ?",
+            "pt": "Ivan, a sua família é grande?",
+            "kr": "이반 씨, 가족이 많아요?",
+            "jp": "イワンさん、あなたの家族は大きいですか？",
+            "zh": "伊万，你的家庭大吗？",
+            "ru": "Иван, у тебя большая семья?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, у нас пять человек.",
+            "en": "Yes, there are five of us.",
+            "es": "Sí, somos cinco personas.",
+            "fr": "Oui, nous sommes cinq.",
+            "pt": "Sim, somos cinco pessoas.",
+            "kr": "네, 우리는 다섯 명이에요.",
+            "jp": "はい、うちは五人です。",
+            "zh": "是的，我们家有五口人。",
+            "ru": "Да, у нас пять человек."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Кто входит в твою семью?",
+            "en": "Who is in your family?",
+            "es": "¿Quiénes forman parte de tu familia?",
+            "fr": "Qui fait partie de ta famille ?",
+            "pt": "Quem faz parte da sua família?",
+            "kr": "가족에 누가 있어요?",
+            "jp": "誰があなたの家族にいますか？",
+            "zh": "你的家庭里都有谁？",
+            "ru": "Кто входит в твою семью?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Папа, мама, старший брат, младшая сестра и я.",
+            "en": "Dad, mom, my older brother, my younger sister, and me.",
+            "es": "Papá, mamá, mi hermano mayor, mi hermana menor y yo.",
+            "fr": "Mon père, ma mère, mon grand frère, ma petite sœur et moi.",
+            "pt": "Meu pai, minha mãe, meu irmão mais velho, minha irmã mais nova e eu.",
+            "kr": "아빠, 엄마, 형, 여동생, 그리고 저예요.",
+            "jp": "父と母と兄と妹と私です。",
+            "zh": "爸爸、妈妈、哥哥、妹妹和我。",
+            "ru": "Папа, мама, старший брат, младшая сестра и я."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Как зовут твоего брата?",
+            "en": "What's your brother's name?",
+            "es": "¿Cómo se llama tu hermano?",
+            "fr": "Comment s'appelle ton frère ?",
+            "pt": "Como se chama o seu irmão?",
+            "kr": "형 이름이 뭐예요?",
+            "jp": "あなたのお兄さんの名前は何ですか？",
+            "zh": "你哥哥叫什么名字？",
+            "ru": "Как зовут твоего брата?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Его зовут Дмитрий. Он уже работает.",
+            "en": "His name is Dmitry. He already works.",
+            "es": "Se llama Dmitri. Ya trabaja.",
+            "fr": "Il s'appelle Dmitri. Il travaille déjà.",
+            "pt": "Ele se chama Dmitri. Ele já trabalha.",
+            "kr": "이름은 드미트리예요. 그는 이미 일하고 있어요.",
+            "jp": "彼の名前はドミトリーです。彼はもう働いています。",
+            "zh": "他叫德米特里。他已经工作了。",
+            "ru": "Его зовут Дмитрий. Он уже работает."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, покажи фото своей семьи.",
+            "en": "Dmitry, show me a photo of your family.",
+            "es": "Dmitri, enséñame una foto de tu familia.",
+            "fr": "Dmitri, montre-moi une photo de ta famille.",
+            "pt": "Dmitri, mostra a foto da sua família.",
+            "kr": "드미트리 씨, 가족 사진을 보여 주세요.",
+            "jp": "ドミトリーさん、家族の写真を見せてください。",
+            "zh": "德米特里，给我看看你家的照片吧。",
+            "ru": "Дмитрий, покажи фото своей семьи."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вот это моя мама, а это мой папа.",
+            "en": "This is my mom, and this is my dad.",
+            "es": "Esta es mi madre, y este es mi padre.",
+            "fr": "Voici ma mère, et voici mon père.",
+            "pt": "Esta aqui é a minha mãe, e este é o meu pai.",
+            "kr": "여기 이분이 우리 엄마이고, 이분이 우리 아빠예요.",
+            "jp": "これが私の母で、これが私の父です。",
+            "zh": "这是我妈妈，这是我爸爸。",
+            "ru": "Вот это моя мама, а это мой папа."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Какие у них профессии?",
+            "en": "What do they do for a living?",
+            "es": "¿Cuáles son sus profesiones?",
+            "fr": "Quels sont leurs métiers ?",
+            "pt": "Quais são as profissões deles?",
+            "kr": "두 분 직업이 뭐예요?",
+            "jp": "彼らの職業は何ですか？",
+            "zh": "他们是做什么工作的？",
+            "ru": "Какие у них профессии?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мама — врач, а папа — инженер.",
+            "en": "Mom is a doctor, and dad is an engineer.",
+            "es": "Mamá es médica, y papá es ingeniero.",
+            "fr": "Ma mère est médecin, et mon père est ingénieur.",
+            "pt": "Minha mãe é médica, e meu pai é engenheiro.",
+            "kr": "엄마는 의사이고, 아빠는 엔지니어예요.",
+            "jp": "母は医者で、父はエンジニアです。",
+            "zh": "妈妈是医生，爸爸是工程师。",
+            "ru": "Мама — врач, а папа — инженер."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это очень интересно!",
+            "en": "That's very interesting!",
+            "es": "¡Eso es muy interesante!",
+            "fr": "C'est très intéressant !",
+            "pt": "Isso é muito interessante!",
+            "kr": "정말 흥미로워요!",
+            "jp": "それはとても面白いですね！",
+            "zh": "真有意思！",
+            "ru": "Это очень интересно!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я горжусь своими родителями.",
+            "en": "Yes, I'm proud of my parents.",
+            "es": "Sí, estoy orgulloso de mis padres.",
+            "fr": "Oui, je suis fier de mes parents.",
+            "pt": "Sim, eu tenho orgulho dos meus pais.",
+            "kr": "네, 저는 부모님이 자랑스러워요.",
+            "jp": "はい、私は両親を誇りに思っています。",
+            "zh": "是的，我为我的父母感到骄傲。",
+            "ru": "Да, я горжусь своими родителями."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, расскажи про свою бабушку.",
+            "en": "Olga, tell me about your grandmother.",
+            "es": "Olga, cuéntame sobre tu abuela.",
+            "fr": "Olga, parle-moi de ta grand-mère.",
+            "pt": "Olga, fala sobre a sua avó.",
+            "kr": "올가 씨, 할머니에 대해 이야기해 주세요.",
+            "jp": "オリガさん、あなたのおばあさんについて話してください。",
+            "zh": "奥尔加，给我讲讲你的奶奶吧。",
+            "ru": "Ольга, расскажи про свою бабушку."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Моя бабушка живёт в деревне.",
+            "en": "My grandmother lives in the countryside.",
+            "es": "Mi abuela vive en el pueblo.",
+            "fr": "Ma grand-mère vit à la campagne.",
+            "pt": "A minha avó mora no interior.",
+            "kr": "우리 할머니는 시골에 사세요.",
+            "jp": "私の祖母は田舎に住んでいます。",
+            "zh": "我的奶奶住在乡下。",
+            "ru": "Моя бабушка живёт в деревне."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Она часто приезжает к вам?",
+            "en": "Does she often come to visit you?",
+            "es": "¿Viene a visitaros a menudo?",
+            "fr": "Est-ce qu'elle vient souvent chez vous ?",
+            "pt": "Ela vem visitar vocês com frequência?",
+            "kr": "할머니가 자주 오세요?",
+            "jp": "彼女はよくあなたのところに来ますか？",
+            "zh": "她经常来你们家吗？",
+            "ru": "Она часто приезжает к вам?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, летом она всегда у нас в гостях.",
+            "en": "Yes, in the summer she's always staying with us.",
+            "es": "Sí, en verano siempre está de visita en casa.",
+            "fr": "Oui, en été elle est toujours chez nous.",
+            "pt": "Sim, no verão ela está sempre aqui conosco.",
+            "kr": "네, 여름이면 할머니는 항상 우리 집에 오세요.",
+            "jp": "はい、夏はいつもうちに来ています。",
+            "zh": "是的，夏天她总是来我们家做客。",
+            "ru": "Да, летом она всегда у нас в гостях."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Что она любит готовить?",
+            "en": "What does she like to cook?",
+            "es": "¿Qué le gusta cocinar?",
+            "fr": "Qu'est-ce qu'elle aime cuisiner ?",
+            "pt": "O que ela gosta de cozinhar?",
+            "kr": "할머니는 무엇을 요리하는 걸 좋아하세요?",
+            "jp": "彼女は何を作るのが好きですか？",
+            "zh": "她喜欢做什么吃的？",
+            "ru": "Что она любит готовить?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Она печёт очень вкусные пироги.",
+            "en": "She bakes very tasty pies.",
+            "es": "Hace unos pasteles muy ricos.",
+            "fr": "Elle fait de très bons gâteaux.",
+            "pt": "Ela faz tortas muito gostosas.",
+            "kr": "할머니는 아주 맛있는 파이를 구우세요.",
+            "jp": "彼女はとてもおいしいパイを焼きます。",
+            "zh": "她会烤非常好吃的馅饼。",
+            "ru": "Она печёт очень вкусные пироги."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, а кто твой дедушка?",
+            "en": "Sergey, and who is your grandfather?",
+            "es": "Serguéi, ¿y quién es tu abuelo?",
+            "fr": "Sergueï, et qui est ton grand-père ?",
+            "pt": "Sergei, e quem é o seu avô?",
+            "kr": "세르게이 씨, 할아버지는 누구세요?",
+            "jp": "セルゲイさん、あなたのおじいさんは誰ですか？",
+            "zh": "谢尔盖，你爷爷是做什么的？",
+            "ru": "Сергей, а кто твой дедушка?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мой дедушка был учителем.",
+            "en": "My grandfather was a teacher.",
+            "es": "Mi abuelo era profesor.",
+            "fr": "Mon grand-père était enseignant.",
+            "pt": "O meu avô era professor.",
+            "kr": "우리 할아버지는 선생님이셨어요.",
+            "jp": "私の祖父は教師でした。",
+            "zh": "我爷爷以前是老师。",
+            "ru": "Мой дедушка был учителем."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? А какой предмет он вёл?",
+            "en": "Really? And what subject did he teach?",
+            "es": "¿De verdad? ¿Y qué asignatura daba?",
+            "fr": "Vraiment ? Et quelle matière il enseignait ?",
+            "pt": "Sério? E qual matéria ele dava?",
+            "kr": "정말요? 무슨 과목을 가르치셨어요?",
+            "jp": "本当ですか？彼は何の科目を教えていましたか？",
+            "zh": "真的吗？他教什么科目？",
+            "ru": "Правда? А какой предмет он вёл?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Он преподавал историю в школе.",
+            "en": "He taught history at school.",
+            "es": "Enseñaba historia en la escuela.",
+            "fr": "Il enseignait l'histoire à l'école.",
+            "pt": "Ele ensinava história na escola.",
+            "kr": "학교에서 역사를 가르치셨어요.",
+            "jp": "彼は学校で歴史を教えていました。",
+            "zh": "他在学校教历史。",
+            "ru": "Он преподавал историю в школе."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это, наверное, было интересно!",
+            "en": "That must have been interesting!",
+            "es": "Eso debía de ser interesante.",
+            "fr": "Ça devait être intéressant !",
+            "pt": "Isso devia ser interessante!",
+            "kr": "아마 재미있었겠네요!",
+            "jp": "それはきっと面白かったでしょうね！",
+            "zh": "那一定很有意思！",
+            "ru": "Это, наверное, было интересно!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, он очень любил свою работу.",
+            "en": "Yes, he really loved his job.",
+            "es": "Sí, amaba mucho su trabajo.",
+            "fr": "Oui, il aimait beaucoup son travail.",
+            "pt": "Sim, ele amava muito o seu trabalho.",
+            "kr": "네, 할아버지는 자신의 일을 아주 좋아하셨어요.",
+            "jp": "はい、彼は自分の仕事がとても好きでした。",
+            "zh": "是的，他非常热爱他的工作。",
+            "ru": "Да, он очень любил свою работу."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, у тебя есть двоюродные братья?",
+            "en": "Maria, do you have any cousins?",
+            "es": "María, ¿tienes primos?",
+            "fr": "Maria, tu as des cousins ?",
+            "pt": "Maria, você tem primos?",
+            "kr": "마리아 씨, 사촌이 있어요?",
+            "jp": "マリアさん、いとこはいますか？",
+            "zh": "玛丽亚，你有表兄弟吗？",
+            "ru": "Мария, у тебя есть двоюродные братья?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, у меня есть двоюродный брат.",
+            "en": "Yes, I have a male cousin.",
+            "es": "Sí, tengo un primo.",
+            "fr": "Oui, j'ai un cousin.",
+            "pt": "Sim, eu tenho um primo.",
+            "kr": "네, 사촌 오빠가 한 명 있어요.",
+            "jp": "はい、いとこの兄がいます。",
+            "zh": "有，我有一个表哥。",
+            "ru": "Да, у меня есть двоюродный брат."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сколько ему лет?",
+            "en": "How old is he?",
+            "es": "¿Cuántos años tiene?",
+            "fr": "Quel âge il a ?",
+            "pt": "Quantos anos ele tem?",
+            "kr": "몇 살이에요?",
+            "jp": "彼は何歳ですか？",
+            "zh": "他多大了？",
+            "ru": "Сколько ему лет?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ему двадцать два года. Он студент.",
+            "en": "He's twenty-two years old. He's a student.",
+            "es": "Tiene veintidós años. Es estudiante.",
+            "fr": "Il a vingt-deux ans. Il est étudiant.",
+            "pt": "Ele tem vinte e dois anos. Ele é estudante.",
+            "kr": "스물두 살이에요. 대학생이에요.",
+            "jp": "彼は二十二歳です。彼は学生です。",
+            "zh": "他二十二岁了。他是大学生。",
+            "ru": "Ему двадцать два года. Он студент."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Где он учится?",
+            "en": "Where does he study?",
+            "es": "¿Dónde estudia?",
+            "fr": "Où est-ce qu'il étudie ?",
+            "pt": "Onde ele estuda?",
+            "kr": "어디에서 공부해요?",
+            "jp": "彼はどこで勉強していますか？",
+            "zh": "他在哪里上学？",
+            "ru": "Где он учится?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Он учится в Москве, в университете.",
+            "en": "He studies in Moscow, at the university.",
+            "es": "Estudia en Moscú, en la universidad.",
+            "fr": "Il étudie à Moscou, à l'université.",
+            "pt": "Ele estuda em Moscou, na universidade.",
+            "kr": "모스크바에 있는 대학교에서 공부해요.",
+            "jp": "彼はモスクワの大学で勉強しています。",
+            "zh": "他在莫斯科上大学。",
+            "ru": "Он учится в Москве, в университете."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, ты похож на маму или на папу?",
+            "en": "Alexey, do you look like your mom or your dad?",
+            "es": "Alekséi, ¿te pareces a tu madre o a tu padre?",
+            "fr": "Alexeï, tu ressembles à ta mère ou à ton père ?",
+            "pt": "Alexei, você se parece com a sua mãe ou com o seu pai?",
+            "kr": "알렉세이 씨, 엄마를 닮았어요, 아빠를 닮았어요?",
+            "jp": "アレクセイさん、あなたはお母さんに似ていますか、それともお父さんに似ていますか？",
+            "zh": "阿列克谢，你长得像妈妈还是像爸爸？",
+            "ru": "Алексей, ты похож на маму или на папу?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Говорят, что я похож на папу.",
+            "en": "They say I look like my dad.",
+            "es": "Dicen que me parezco a mi padre.",
+            "fr": "On dit que je ressemble à mon père.",
+            "pt": "Dizem que eu me pareço com o meu pai.",
+            "kr": "사람들이 제가 아빠를 닮았다고 해요.",
+            "jp": "私は父に似ていると言われています。",
+            "zh": "大家都说我长得像爸爸。",
+            "ru": "Говорят, что я похож на папу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А характер у тебя тоже как у папы?",
+            "en": "And is your personality like your dad's too?",
+            "es": "¿Y tu carácter también es como el de tu padre?",
+            "fr": "Et tu as le même caractère que ton père ?",
+            "pt": "E o seu jeito também é igual ao do seu pai?",
+            "kr": "성격도 아빠를 닮았어요?",
+            "jp": "性格もお父さんと同じですか？",
+            "zh": "那你的性格也像爸爸吗？",
+            "ru": "А характер у тебя тоже как у папы?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Наверное, да. Мы оба спокойные.",
+            "en": "Probably, yes. We're both calm.",
+            "es": "Probablemente sí. Los dos somos tranquilos.",
+            "fr": "Probablement. Nous sommes tous les deux calmes.",
+            "pt": "Provavelmente, sim. Nós dois somos calmos.",
+            "kr": "아마도요. 우리 둘 다 차분해요.",
+            "jp": "たぶんそうだと思います。私たちは二人とも穏やかです。",
+            "zh": "可能是吧。我们俩都很沉稳。",
+            "ru": "Наверное, да. Мы оба спокойные."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это хорошая черта.",
+            "en": "That's a good trait.",
+            "es": "Eso es un buen rasgo.",
+            "fr": "C'est une bonne qualité.",
+            "pt": "Essa é uma boa qualidade.",
+            "kr": "그건 좋은 점이에요.",
+            "jp": "それは良いところですね。",
+            "zh": "这是个好品质。",
+            "ru": "Это хорошая черта."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо, я стараюсь быть похожим на него.",
+            "en": "Thanks, I try to be like him.",
+            "es": "Gracias, intento parecerme a él.",
+            "fr": "Merci, j'essaie de lui ressembler.",
+            "pt": "Obrigado, eu tento ser parecido com ele.",
+            "kr": "고마워요. 저는 아빠를 닮으려고 노력해요.",
+            "jp": "ありがとうございます。私は彼に似るように努力しています。",
+            "zh": "谢谢，我努力向他学习。",
+            "ru": "Спасибо, я стараюсь быть похожим на него."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, куда вы ездите с семьёй летом?",
+            "en": "Elena, where do you go with your family in the summer?",
+            "es": "Elena, ¿adónde viajáis con la familia en verano?",
+            "fr": "Elena, où est-ce que vous allez en famille en été ?",
+            "pt": "Elena, para onde vocês viajam com a família no verão?",
+            "kr": "옐레나 씨, 여름에 가족과 어디로 여행을 가요?",
+            "jp": "エレナさん、夏は家族とどこへ行きますか？",
+            "zh": "叶莲娜，你们夏天和家人一起去哪里玩？",
+            "ru": "Елена, куда вы ездите с семьёй летом?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мы обычно ездим на море.",
+            "en": "We usually go to the sea.",
+            "es": "Normalmente vamos al mar.",
+            "fr": "Nous allons d'habitude à la mer.",
+            "pt": "Nós geralmente viajamos para o mar.",
+            "kr": "우리는 보통 바다로 가요.",
+            "jp": "私たちはたいてい海に行きます。",
+            "zh": "我们通常去海边。",
+            "ru": "Мы обычно ездим на море."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А в этом году поедете?",
+            "en": "And will you go this year?",
+            "es": "¿Y este año iréis?",
+            "fr": "Et cette année, vous y allez ?",
+            "pt": "E neste ano vocês vão?",
+            "kr": "올해도 갈 거예요?",
+            "jp": "今年も行きますか？",
+            "zh": "那今年也会去吗？",
+            "ru": "А в этом году поедете?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, мы уже купили билеты.",
+            "en": "Yes, we already bought the tickets.",
+            "es": "Sí, ya hemos comprado los billetes.",
+            "fr": "Oui, nous avons déjà acheté les billets.",
+            "pt": "Sim, nós já compramos as passagens.",
+            "kr": "네, 우리는 이미 표를 샀어요.",
+            "jp": "はい、もうチケットを買いました。",
+            "zh": "是的，我们已经买好票了。",
+            "ru": "Да, мы уже купили билеты."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично! Хорошего вам отдыха.",
+            "en": "Great! Have a nice vacation.",
+            "es": "¡Genial! Que descanséis bien.",
+            "fr": "Super ! Bonnes vacances à vous.",
+            "pt": "Ótimo! Boas férias para vocês.",
+            "kr": "좋네요! 좋은 휴가 보내세요.",
+            "jp": "すばらしい！良い休暇を過ごしてください。",
+            "zh": "太好了！祝你们玩得开心。",
+            "ru": "Отлично! Хорошего вам отдыха."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо! А вы как отдыхаете?",
+            "en": "Thanks! And how do you relax?",
+            "es": "¡Gracias! ¿Y vosotros cómo descansáis?",
+            "fr": "Merci ! Et vous, comment vous vous reposez ?",
+            "pt": "Obrigada! E vocês, como descansam?",
+            "kr": "고마워요! 당신네는 어떻게 쉬어요?",
+            "jp": "ありがとうございます！あなたはどうやって休みますか？",
+            "zh": "谢谢！你们怎么度假呢？",
+            "ru": "Спасибо! А вы как отдыхаете?"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, что вы делаете вечером с семьёй?",
+            "en": "Ivan, what do you do with your family in the evening?",
+            "es": "Iván, ¿qué hacéis por la noche con la familia?",
+            "fr": "Ivan, qu'est-ce que vous faites le soir en famille ?",
+            "pt": "Ivan, o que vocês fazem à noite com a família?",
+            "kr": "이반 씨, 저녁에 가족과 무엇을 해요?",
+            "jp": "イワンさん、夕方は家族と何をしますか？",
+            "zh": "伊万，你们晚上和家人一起做什么？",
+            "ru": "Иван, что вы делаете вечером с семьёй?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мы часто смотрим фильмы вместе.",
+            "en": "We often watch movies together.",
+            "es": "A menudo vemos películas juntos.",
+            "fr": "Nous regardons souvent des films ensemble.",
+            "pt": "Nós costumamos assistir filmes juntos.",
+            "kr": "우리는 자주 같이 영화를 봐요.",
+            "jp": "私たちはよく一緒に映画を見ます。",
+            "zh": "我们经常一起看电影。",
+            "ru": "Мы часто смотрим фильмы вместе."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А что любит делать твоя мама?",
+            "en": "And what does your mom like to do?",
+            "es": "¿Y qué le gusta hacer a tu madre?",
+            "fr": "Et qu'est-ce que ta mère aime faire ?",
+            "pt": "E o que a sua mãe gosta de fazer?",
+            "kr": "어머니는 무엇을 하는 걸 좋아하세요?",
+            "jp": "あなたのお母さんは何をするのが好きですか？",
+            "zh": "那你妈妈喜欢做什么？",
+            "ru": "А что любит делать твоя мама?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Она любит читать книги и вязать.",
+            "en": "She likes reading books and knitting.",
+            "es": "Le gusta leer libros y hacer punto.",
+            "fr": "Elle aime lire des livres et tricoter.",
+            "pt": "Ela gosta de ler livros e tricotar.",
+            "kr": "어머니는 책 읽는 것과 뜨개질하는 것을 좋아하세요.",
+            "jp": "彼女は本を読んだり、編み物をしたりするのが好きです。",
+            "zh": "她喜欢看书和织毛衣。",
+            "ru": "Она любит читать книги и вязать."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А папа?",
+            "en": "And your dad?",
+            "es": "¿Y a tu padre?",
+            "fr": "Et ton père ?",
+            "pt": "E o seu pai?",
+            "kr": "아버지는요?",
+            "jp": "お父さんはどうですか？",
+            "zh": "那爸爸呢？",
+            "ru": "А папа?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Папа любит смотреть футбол по телевизору.",
+            "en": "Dad likes watching soccer on TV.",
+            "es": "A papá le gusta ver el fútbol por la televisión.",
+            "fr": "Papa aime regarder le foot à la télé.",
+            "pt": "Meu pai gosta de assistir futebol na televisão.",
+            "kr": "아버지는 텔레비전으로 축구 보는 것을 좋아하세요.",
+            "jp": "父はテレビでサッカーを見るのが好きです。",
+            "zh": "爸爸喜欢看电视上的足球比赛。",
+            "ru": "Папа любит смотреть футбол по телевизору."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, расскажи о своей младшей сестре.",
+            "en": "Anna, tell me about your younger sister.",
+            "es": "Ana, cuéntame sobre tu hermana menor.",
+            "fr": "Anna, parle-moi de ta petite sœur.",
+            "pt": "Anna, fala sobre a sua irmã mais nova.",
+            "kr": "안나 씨, 여동생에 대해 이야기해 주세요.",
+            "jp": "アンナさん、あなたの妹について話してください。",
+            "zh": "安娜，给我讲讲你妹妹吧。",
+            "ru": "Анна, расскажи о своей младшей сестре."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Моя сестра ещё ходит в школу.",
+            "en": "My sister is still in school.",
+            "es": "Mi hermana todavía va a la escuela.",
+            "fr": "Ma sœur va encore à l'école.",
+            "pt": "A minha irmã ainda vai para a escola.",
+            "kr": "우리 여동생은 아직 학교에 다녀요.",
+            "jp": "私の妹はまだ学校に通っています。",
+            "zh": "我妹妹还在上学。",
+            "ru": "Моя сестра ещё ходит в школу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "В каком она классе?",
+            "en": "What grade is she in?",
+            "es": "¿En qué curso está?",
+            "fr": "Elle est dans quelle classe ?",
+            "pt": "Em que série ela está?",
+            "kr": "몇 학년이에요?",
+            "jp": "彼女は何年生ですか？",
+            "zh": "她上几年级了？",
+            "ru": "В каком она классе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Она в седьмом классе.",
+            "en": "She's in the seventh grade.",
+            "es": "Está en séptimo curso.",
+            "fr": "Elle est en cinquième.",
+            "pt": "Ela está na sétima série.",
+            "kr": "일곱 학년이에요.",
+            "jp": "彼女は中学二年生です。",
+            "zh": "她上七年级。",
+            "ru": "Она в седьмом классе."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Она хорошо учится?",
+            "en": "Does she do well in school?",
+            "es": "¿Estudia bien?",
+            "fr": "Est-ce qu'elle travaille bien à l'école ?",
+            "pt": "Ela tira boas notas?",
+            "kr": "공부를 잘해요?",
+            "jp": "彼女はよく勉強していますか？",
+            "zh": "她学习好吗？",
+            "ru": "Она хорошо учится?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, она очень старательная ученица.",
+            "en": "Yes, she's a very hardworking student.",
+            "es": "Sí, es una alumna muy aplicada.",
+            "fr": "Oui, c'est une élève très appliquée.",
+            "pt": "Sim, ela é uma aluna muito dedicada.",
+            "kr": "네, 아주 성실한 학생이에요.",
+            "jp": "はい、彼女はとても勤勉な生徒です。",
+            "zh": "是的，她是一个非常用功的学生。",
+            "ru": "Да, она очень старательная ученица."
+          }
+        }
+      ]
+    }
+  ]
+}

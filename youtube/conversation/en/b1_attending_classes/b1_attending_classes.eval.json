@@ -1,0 +1,71 @@
+{
+  "chapter_id": "conversation_022.runtime.json",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A와 B의 역할이 전체 대화에서 일관되게 유지됨. A는 수업을 빼먹고 싶어하는 학생, B는 이를 말리는 친구로 역할이 명확함."
+    },
+    "dialogue_function_accuracy": {
+      "score": 9,
+      "weight": 10,
+      "notes": "제안, 경고, 반대, 감사, 제안 등 대화의 기능적 요소가 자연스럽게 연결됨. 다만 'pop quiz'에 대한 반응이 다소 평이하여, 놀람이나 당황의 감정 표현이 조금 더 있으면 대화의 기능적 깊이가 높아질 수 있음."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "전체적으로 구어체 표현이 자연스러움. 'I'm thinking about skipping', 'grab a seat' 등의 표현이 실제 대화에서 자주 쓰이는 방식으로 사용됨. 다만 'The professor mentioned a pop quiz at the end'는 다소 격식 있는 표현으로, 친구 간 대화에서는 'The professor said there's a pop quiz at the end'가 더 자연스러울 수 있음."
+    },
+    "register_appropriateness": {
+      "score": 9,
+      "weight": 10,
+      "notes": "대학생 친구 간의 대화에 적합한 캐주얼한 레지스터를 일관되게 유지함. 'Really?', 'Why not?', 'No problem' 등의 표현이 상황에 잘 어울림. 'grab a seat'은 다소 캐주얼하지만 친구 간 대화에서는 적절함."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적 오류나 표기 오류가 발견되지 않음. 모든 문장이 문법적으로 정확하며, 구두점 사용도 적절함."
+    },
+    "situational_practicality": {
+      "score": 9,
+      "weight": 10,
+      "notes": "대학생활에서 실제로 발생할 수 있는 상황을 다루고 있어 실용성이 높음. 수업 빼먹기, 쪽지 시험, 앞자리 잡기 등의 요소가 실제 대학 생활에서 자주 접할 수 있는 상황임."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "특정 문화에 국한되지 않는 보편적인 대학 생활 상황을 다루고 있어 문화적 중립성이 높음. 'pop quiz'는 여러 교육 문화에서 공통적으로 존재하는 개념임."
+    },
+    "tts_readiness": {
+      "score": 9,
+      "weight": 5,
+      "notes": "축약형과 자연스러운 구어체 표현이 TTS로 읽기에 적합함. 다만 'I'm thinking about'과 같은 진행형 표현은 TTS에서 다소 빠르게 읽힐 수 있어, 약간의 쉼표나 억양 조절이 필요할 수 있음."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "en 필드가 target 필드와 완벽하게 일치함. 모든 문장에서 target과 en이 동일한 문자열을 사용하고 있어 미러 일치도가 높음."
+    },
+    "market_competitiveness": {
+      "score": 8.5,
+      "weight": 15,
+      "notes": "B1 레벨의 회화 교재로서 시중 서비스와 비교했을 때 경쟁력 있는 수준임. 다만 대화의 길이가 짧고(6턴), 갈등이나 반전 요소가 부족하여 더 몰입감 있는 대화를 원하는 학습자에게는 다소 단조로울 수 있음. 대화의 마지막 부분에 감정적 변화나 추가적인 정보가 있으면 더 높은 경쟁력을 가질 수 있음."
+    }
+  },
+  "final_score": 92.5,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "Cambridge English Conversation 및 EBS/YBM 실용영어회화의 B1 레벨 교재와 유사한 수준. Duolingo나 Speak의 인터랙티브한 요소는 없으나, 문장의 자연스러움과 실용성은 동급 이상. Pimsleur의 반복 학습 요소는 부족하지만, 대화의 완성도는 높은 편.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}

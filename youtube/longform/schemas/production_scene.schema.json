@@ -1,0 +1,400 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/production_scene.schema.json",
+  "title": "ManyLangs Longform Production Scene",
+  "description": "Visual production source of truth for one Longform scene before shot planning and Vidu-specific generation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "episode_id",
+    "scene_id",
+    "sequence",
+    "location_ref",
+    "protagonist_ref",
+    "characters",
+    "environment",
+    "visual_goal",
+    "actions",
+    "props",
+    "must_show",
+    "must_not_show",
+    "visual_continuity",
+    "production_constraints"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "content_version",
+        "revision",
+        "generated_by"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "2.0"
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "generated_by": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type",
+            "provider",
+            "model"
+          ],
+          "properties": {
+            "type": {
+              "const": "ai"
+            },
+            "provider": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "episode_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scene_id": {
+      "type": "string",
+      "pattern": "^S[0-9]{3}$"
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 20
+    },
+    "location_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "protagonist_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "characters": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "character_ref",
+          "local_character_id",
+          "role",
+          "gender",
+          "visual_state",
+          "emotion",
+          "screen_action"
+        ],
+        "properties": {
+          "character_ref": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "protagonist",
+              "supporting"
+            ]
+          },
+          "gender": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "female",
+              "male",
+              null
+            ]
+          },
+          "visual_state": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "appearance",
+              "clothing",
+              "carried_items"
+            ],
+            "properties": {
+              "appearance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "clothing": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "carried_items": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "emotion": {
+            "type": "string",
+            "minLength": 1
+          },
+          "screen_action": {
+            "type": "string",
+            "minLength": 1
+          },
+          "local_character_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "A",
+              "B",
+              null
+            ]
+          }
+        },
+        "oneOf": [
+          {
+            "properties": {
+              "character_ref": {
+                "type": "string",
+                "minLength": 1
+              },
+              "local_character_id": {
+                "type": "null"
+              }
+            }
+          },
+          {
+            "properties": {
+              "character_ref": {
+                "type": "null"
+              },
+              "local_character_id": {
+                "type": "string",
+                "enum": [
+                  "A",
+                  "B"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "time_of_day",
+        "weather",
+        "lighting",
+        "background_activity"
+      ],
+      "properties": {
+        "time_of_day": {
+          "type": "string",
+          "minLength": 1
+        },
+        "weather": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "lighting": {
+          "type": "string",
+          "minLength": 1
+        },
+        "background_activity": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "visual_goal": {
+      "type": "string",
+      "minLength": 1
+    },
+    "actions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sequence",
+          "actor_ref",
+          "action"
+        ],
+        "properties": {
+          "sequence": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "actor_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "action": {
+            "type": "string",
+            "minLength": 1
+          },
+          "object_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "props": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "prop_id",
+          "description",
+          "owner_ref",
+          "continuity_required"
+        ],
+        "properties": {
+          "prop_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "owner_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "continuity_required": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "must_show": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "must_not_show": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "visual_continuity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "carry_in",
+        "carry_out",
+        "start_state",
+        "end_state"
+      ],
+      "properties": {
+        "carry_in": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "carry_out": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "start_state": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "end_state": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "production_constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "preserve_character_identity",
+        "preserve_location_identity",
+        "preserve_story_continuity",
+        "allow_new_characters",
+        "allow_new_locations"
+      ],
+      "properties": {
+        "preserve_character_identity": {
+          "const": true
+        },
+        "preserve_location_identity": {
+          "const": true
+        },
+        "preserve_story_continuity": {
+          "const": true
+        },
+        "allow_new_characters": {
+          "const": false
+        },
+        "allow_new_locations": {
+          "const": false
+        }
+      }
+    }
+  }
+}

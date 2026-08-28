@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a2",
+    "id": "017"
+  },
+  "title": {
+    "target": "Пользование транспортом",
+    "en": "Using Public Transportation",
+    "es": "Uso del transporte",
+    "fr": "Utiliser les transports en commun",
+    "pt": "Usando o transporte público",
+    "kr": "대중교통 이용하기",
+    "jp": "交通機関の利用",
+    "zh": "使用交通工具",
+    "ru": "Пользование транспортом"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Извините, вы не подскажете, как доехать до центра?",
+            "en": "Excuse me, could you tell me how to get to the city center?",
+            "es": "Disculpe, ¿me podría decir cómo llegar al centro?",
+            "fr": "Excusez-moi, pourriez-vous m'indiquer comment aller au centre-ville ?",
+            "pt": "Com licença, você poderia me dizer como chegar ao centro?",
+            "kr": "실례합니다, 시내 중심까지 어떻게 가는지 알려주시겠어요?",
+            "jp": "すみません、中心部までどうやって行けばいいか教えていただけますか？",
+            "zh": "不好意思，您能告诉我怎么去市中心吗？",
+            "ru": "Извините, вы не подскажете, как доехать до центра?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Можно на метро, это самый быстрый способ.",
+            "en": "You can take the metro, it's the fastest way.",
+            "es": "Puede ir en metro, es la forma más rápida.",
+            "fr": "Vous pouvez prendre le métro, c'est le moyen le plus rapide.",
+            "pt": "Dá para ir de metrô, é o jeito mais rápido.",
+            "kr": "지하철을 타시면 돼요, 그게 가장 빠른 방법이에요.",
+            "jp": "地下鉄で行けますよ、それが一番速い方法です。",
+            "zh": "可以坐地铁，这是最快的方式。",
+            "ru": "Можно на метро, это самый быстрый способ."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А какая станция мне нужна?",
+            "en": "And which station do I need?",
+            "es": "¿Y qué estación necesito?",
+            "fr": "Et de quelle station ai-je besoin ?",
+            "pt": "E qual estação eu preciso?",
+            "kr": "그럼 어떤 역에서 내려야 하나요?",
+            "jp": "どの駅で降りればいいんですか？",
+            "zh": "那我需要坐哪一站？",
+            "ru": "А какая станция мне нужна?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вам нужна станция «Театральная», это в самом центре.",
+            "en": "You need Teatralnaya station, it's right in the center.",
+            "es": "Necesita la estación «Teatralnaya», está en pleno centro.",
+            "fr": "Vous avez besoin de la station « Teatralnaïa », c'est en plein centre.",
+            "pt": "Você precisa da estação \"Teatralnaya\", fica bem no centro.",
+            "kr": "'테아트랄나야' 역에서 내리셔야 해요, 바로 시내 한복판이에요.",
+            "jp": "「劇場駅」という駅です、ちょうど中心部にあります。",
+            "zh": "您需要坐“剧院站”，那就在市中心。",
+            "ru": "Вам нужна станция «Театральная», это в самом центре."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А далеко ли идти от метро до главной улицы?",
+            "en": "And is it far to walk from the metro to the main street?",
+            "es": "¿Y está lejos andar desde el metro hasta la calle principal?",
+            "fr": "Et est-ce qu'il y a loin à pied du métro jusqu'à la rue principale ?",
+            "pt": "E é longe andar do metrô até a rua principal?",
+            "kr": "지하철역에서 주요 거리까지는 걸어서 먼가요?",
+            "jp": "地下鉄から大通りまで歩いてどのくらいかかりますか？",
+            "zh": "从地铁站到主街远吗？",
+            "ru": "А далеко ли идти от метро до главной улицы?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, всего пять минут пешком, так что не переживайте.",
+            "en": "No, it's only a five-minute walk, so don't worry.",
+            "es": "No, solo cinco minutos a pie, así que no se preocupe.",
+            "fr": "Non, seulement cinq minutes à pied, alors ne vous inquiétez pas.",
+            "pt": "Não, só cinco minutos a pé, então não se preocupe.",
+            "kr": "아니요, 걸어서 오 분밖에 안 걸려요, 그러니 걱정하지 마세요.",
+            "jp": "いいえ、歩いてたった五分ですから、心配しないでください。",
+            "zh": "不远，走路只要五分钟，所以您不用担心。",
+            "ru": "Нет, всего пять минут пешком, так что не переживайте."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты не знаешь, этот автобус идёт до вокзала?",
+            "en": "Do you know if this bus goes to the train station?",
+            "es": "¿Sabes si este autobús va a la estación de tren?",
+            "fr": "Tu ne sais pas si ce bus va à la gare ?",
+            "pt": "Você sabe se esse ônibus vai até a estação de trem?",
+            "kr": "이 버스가 기차역까지 가는지 아니?",
+            "jp": "このバス、駅まで行くか知ってる？",
+            "zh": "你知道这辆公交车去火车站吗？",
+            "ru": "Ты не знаешь, этот автобус идёт до вокзала?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, идёт, но лучше сесть на следующий, этот переполнен.",
+            "en": "Yes, it does, but you'd better take the next one, this one is packed.",
+            "es": "Sí, va, pero mejor sube al siguiente, este va lleno.",
+            "fr": "Oui, il y va, mais il vaut mieux prendre le suivant, celui-ci est bondé.",
+            "pt": "Vai, sim, mas é melhor pegar o próximo, este está lotado.",
+            "kr": "응, 가긴 가는데, 다음 버스를 타는 게 나아, 이 버스는 사람이 가득하거든.",
+            "jp": "うん、行くよ、でも次のに乗ったほうがいいよ、これ混んでるから。",
+            "zh": "去的，但最好坐下一辆，这辆太挤了。",
+            "ru": "Да, идёт, но лучше сесть на следующий, этот переполнен."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А как часто они ходят?",
+            "en": "And how often do they come?",
+            "es": "¿Y cada cuánto pasan?",
+            "fr": "Et ils passent à quelle fréquence ?",
+            "pt": "E de quanto em quanto tempo eles passam?",
+            "kr": "버스는 얼마나 자주 와?",
+            "jp": "どれくらいの間隔で来るの？",
+            "zh": "那它们多久来一趟？",
+            "ru": "А как часто они ходят?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Каждые десять минут, так что долго ждать не придётся.",
+            "en": "Every ten minutes, so you won't have to wait long.",
+            "es": "Cada diez minutos, así que no tendrás que esperar mucho.",
+            "fr": "Toutes les dix minutes, alors tu n'auras pas à attendre longtemps.",
+            "pt": "A cada dez minutos, então não vai precisar esperar muito.",
+            "kr": "십 분마다 와, 그러니 오래 기다리진 않을 거야.",
+            "jp": "十分おきだから、そんなに待たなくていいよ。",
+            "zh": "每十分钟一趟，所以不用等很久。",
+            "ru": "Каждые десять минут, так что долго ждать не придётся."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, тогда подожду следующий.",
+            "en": "Great, then I'll wait for the next one.",
+            "es": "Genial, entonces esperaré al siguiente.",
+            "fr": "Parfait, alors j'attendrai le suivant.",
+            "pt": "Ótimo, então vou esperar o próximo.",
+            "kr": "좋아, 그럼 다음 버스를 기다릴게.",
+            "jp": "よかった、じゃあ次を待つよ。",
+            "zh": "太好了，那我就等下一辆吧。",
+            "ru": "Отлично, тогда подожду следующий."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Правильное решение, так будет гораздо комфортнее.",
+            "en": "Good call, it'll be much more comfortable.",
+            "es": "Buena decisión, así será mucho más cómodo.",
+            "fr": "Bonne décision, ce sera beaucoup plus confortable.",
+            "pt": "Boa decisão, assim vai ser bem mais confortável.",
+            "kr": "잘한 결정이야, 그게 훨씬 편할 거야.",
+            "jp": "いい判断だね、そのほうがずっと快適だよ。",
+            "zh": "明智的选择，这样会舒服得多。",
+            "ru": "Правильное решение, так будет гораздо комфортнее."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Скажите, пожалуйста, где здесь ближайшая остановка трамвая?",
+            "en": "Excuse me, where's the nearest tram stop?",
+            "es": "Perdone, ¿dónde está la parada de tranvía más cercana?",
+            "fr": "Dites-moi, s'il vous plaît, où se trouve l'arrêt de tramway le plus proche ?",
+            "pt": "Por favor, você pode me dizer onde fica o ponto de bonde mais próximo?",
+            "kr": "저기요, 여기서 가장 가까운 노면전차 정류장이 어디인지 알려주시겠어요?",
+            "jp": "すみません、ここから一番近い路面電車の停留所はどこですか？",
+            "zh": "请问，这附近最近的电车站在哪里？",
+            "ru": "Скажите, пожалуйста, где здесь ближайшая остановка трамвая?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Она прямо за углом, рядом с тем жёлтым зданием.",
+            "en": "It's right around the corner, next to that yellow building.",
+            "es": "Está justo a la vuelta de la esquina, junto a ese edificio amarillo.",
+            "fr": "Il est juste au coin, à côté de ce bâtiment jaune.",
+            "pt": "Fica logo ali na esquina, perto daquele prédio amarelo.",
+            "kr": "모퉁이를 돌면 바로 있어요, 저 노란 건물 옆이에요.",
+            "jp": "あの角を曲がったところです、あの黄色い建物の隣です。",
+            "zh": "就在拐角处，在那栋黄色楼旁边。",
+            "ru": "Она прямо за углом, рядом с тем жёлтым зданием."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А на каком трамвае можно доехать до парка?",
+            "en": "And which tram can I take to get to the park?",
+            "es": "¿Y en qué tranvía puedo llegar al parque?",
+            "fr": "Et quel tramway puis-je prendre pour aller au parc ?",
+            "pt": "E qual bonde eu posso pegar para chegar ao parque?",
+            "kr": "그럼 공원까지 가려면 어떤 노면전차를 타야 하나요?",
+            "jp": "公園に行くにはどの路面電車に乗ればいいですか？",
+            "zh": "那坐哪路电车可以去公园？",
+            "ru": "А на каком трамвае можно доехать до парка?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вам подойдёт пятый или седьмой, оба идут в ту сторону.",
+            "en": "The fifth or the seventh will work, both go that way.",
+            "es": "Le sirve el cinco o el siete, los dos van en esa dirección.",
+            "fr": "Le cinq ou le sept vous conviendront, ils vont tous les deux dans cette direction.",
+            "pt": "O cinco ou o sete servem, os dois vão naquela direção.",
+            "kr": "오번이나 칠번을 타시면 돼요, 둘 다 그쪽으로 가요.",
+            "jp": "五番か七番がいいですよ、どちらもあちらの方向へ行きますから。",
+            "zh": "五路或者七路都行，两路都往那个方向去。",
+            "ru": "Вам подойдёт пятый или седьмой, оба идут в ту сторону."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А сколько стоит проезд?",
+            "en": "And how much is the fare?",
+            "es": "¿Y cuánto cuesta el billete?",
+            "fr": "Et combien coûte le trajet ?",
+            "pt": "E quanto custa a passagem?",
+            "kr": "요금은 얼마인가요?",
+            "jp": "運賃はいくらですか？",
+            "zh": "那车票多少钱？",
+            "ru": "А сколько стоит проезд?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Сорок рублей, но можно оплатить и картой.",
+            "en": "Forty rubles, but you can also pay by card.",
+            "es": "Cuarenta rublos, pero también se puede pagar con tarjeta.",
+            "fr": "Quarante roubles, mais vous pouvez aussi payer par carte.",
+            "pt": "Quarenta rublos, mas dá para pagar com cartão também.",
+            "kr": "사십 루블이에요, 그런데 카드로도 결제할 수 있어요.",
+            "jp": "四十ルーブルですが、カードでも支払えますよ。",
+            "zh": "四十卢布，不过也可以刷卡支付。",
+            "ru": "Сорок рублей, но можно оплатить и картой."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты часто ездишь на работу на метро?",
+            "en": "Do you often take the metro to work?",
+            "es": "¿Vas a menudo al trabajo en metro?",
+            "fr": "Tu prends souvent le métro pour aller au travail ?",
+            "pt": "Você costuma ir de metrô para o trabalho?",
+            "kr": "너 출근할 때 지하철 자주 타?",
+            "jp": "仕事にはよく地下鉄で行ってるの？",
+            "zh": "你经常坐地铁上班吗？",
+            "ru": "Ты часто ездишь на работу на метро?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, почти каждый день, это удобнее всего.",
+            "en": "Yes, almost every day, it's the most convenient.",
+            "es": "Sí, casi todos los días, es lo más cómodo.",
+            "fr": "Oui, presque tous les jours, c'est ce qu'il y a de plus pratique.",
+            "pt": "Sim, quase todo dia, é o mais prático.",
+            "kr": "응, 거의 매일 타, 그게 제일 편하거든.",
+            "jp": "うん、ほとんど毎日だよ、それが一番便利だから。",
+            "zh": "是的，几乎每天都坐，这样最方便。",
+            "ru": "Да, почти каждый день, это удобнее всего."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А в час пик там очень много народу?",
+            "en": "And is it really crowded during rush hour?",
+            "es": "¿Y en hora punta hay mucha gente?",
+            "fr": "Et aux heures de pointe, il y a beaucoup de monde ?",
+            "pt": "E na hora do rush é muito cheio?",
+            "kr": "그럼 출퇴근 시간에는 사람이 엄청 많아?",
+            "jp": "ラッシュアワーはすごく混むの？",
+            "zh": "那高峰时段人很多吗？",
+            "ru": "А в час пик там очень много народу?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Честно говоря, да, особенно утром, но я привыкла.",
+            "en": "Honestly, yes, especially in the morning, but I'm used to it.",
+            "es": "La verdad, sí, sobre todo por la mañana, pero ya estoy acostumbrada.",
+            "fr": "Franchement, oui, surtout le matin, mais j'ai l'habitude.",
+            "pt": "Para ser sincera, sim, principalmente de manhã, mas eu já me acostumei.",
+            "kr": "솔직히 말하면 응, 특히 아침에 그런데, 나는 이미 익숙해졌어.",
+            "jp": "正直言うと、そうだね、特に朝はね、でももう慣れてるよ。",
+            "zh": "说实话，是的，尤其是早上，但我已经习惯了。",
+            "ru": "Честно говоря, да, особенно утром, но я привыкла."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А во сколько ты обычно выходишь из дома?",
+            "en": "And what time do you usually leave the house?",
+            "es": "¿Y a qué hora sueles salir de casa?",
+            "fr": "Et à quelle heure tu sors d'habitude de chez toi ?",
+            "pt": "E a que horas você costuma sair de casa?",
+            "kr": "보통 몇 시에 집에서 나가?",
+            "jp": "普段は何時に家を出るの？",
+            "zh": "那你通常几点出门？",
+            "ru": "А во сколько ты обычно выходишь из дома?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "В восемь утра, чтобы успеть до самой толкучки.",
+            "en": "At eight in the morning, to get there before the worst of the crush.",
+            "es": "A las ocho de la mañana, para llegar antes de la hora de más aglomeración.",
+            "fr": "À huit heures du matin, pour arriver avant la grande cohue.",
+            "pt": "Às oito da manhã, para chegar antes da maior correria.",
+            "kr": "아침 여덟 시에 나가, 제일 붐비기 전에 도착하려고.",
+            "jp": "朝八時だよ、一番混む時間の前に着けるようにね。",
+            "zh": "早上八点，为了赶在人最多之前出门。",
+            "ru": "В восемь утра, чтобы успеть до самой толкучки."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Подскажите, я правильно еду в аэропорт?",
+            "en": "Excuse me, am I going the right way to the airport?",
+            "es": "Perdone, ¿voy bien para el aeropuerto?",
+            "fr": "Dites-moi, est-ce que je vais bien dans la direction de l'aéroport ?",
+            "pt": "Me diga uma coisa, estou indo certo para o aeroporto?",
+            "kr": "저기요, 제가 공항으로 가는 길이 맞나요?",
+            "jp": "すみません、空港に向かって正しく乗っていますか？",
+            "zh": "请问，我坐这趟车去机场对吗？",
+            "ru": "Подскажите, я правильно еду в аэропорт?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, всё верно, этот поезд идёт прямо до аэропорта.",
+            "en": "Yes, that's right, this train goes straight to the airport.",
+            "es": "Sí, todo correcto, este tren va directo al aeropuerto.",
+            "fr": "Oui, c'est tout à fait ça, ce train va directement à l'aéroport.",
+            "pt": "Sim, está tudo certo, esse trem vai direto para o aeroporto.",
+            "kr": "네, 맞아요, 이 기차는 공항까지 바로 가요.",
+            "jp": "はい、合っていますよ、この電車は空港まで直行しますから。",
+            "zh": "对，没错，这趟列车直达机场。",
+            "ru": "Да, всё верно, этот поезд идёт прямо до аэропорта."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А сколько времени займёт дорога?",
+            "en": "And how long will the trip take?",
+            "es": "¿Y cuánto tiempo tardará el trayecto?",
+            "fr": "Et combien de temps prendra le trajet ?",
+            "pt": "E quanto tempo vai levar a viagem?",
+            "kr": "그럼 가는 데 시간이 얼마나 걸리나요?",
+            "jp": "どのくらい時間がかかりますか？",
+            "zh": "那路上要花多长时间？",
+            "ru": "А сколько времени займёт дорога?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Около сорока минут, так что можете расслабиться.",
+            "en": "About forty minutes, so you can just relax.",
+            "es": "Unos cuarenta minutos, así que puede relajarse.",
+            "fr": "Environ quarante minutes, alors vous pouvez vous détendre.",
+            "pt": "Cerca de quarenta minutos, então pode relaxar.",
+            "kr": "약 사십 분 걸려요, 그러니 편하게 쉬셔도 돼요.",
+            "jp": "およそ四十分ですから、ゆっくりしていて大丈夫ですよ。",
+            "zh": "大约四十分钟，所以您可以放松一下。",
+            "ru": "Около сорока минут, так что можете расслабиться."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А это конечная станция?",
+            "en": "And is this the last stop?",
+            "es": "¿Y es la estación terminal?",
+            "fr": "Et c'est le terminus ?",
+            "pt": "E é a estação final?",
+            "kr": "여기가 종착역인가요?",
+            "jp": "ここは終点ですか？",
+            "zh": "这是终点站吗？",
+            "ru": "А это конечная станция?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, конечная, так что не пропустите свою остановку.",
+            "en": "Yes, it's the last stop, so you won't miss your station.",
+            "es": "Sí, es la terminal, así que no se pierda su parada.",
+            "fr": "Oui, c'est le terminus, alors ne ratez pas votre arrêt.",
+            "pt": "Sim, é a final, então não vai perder o seu ponto.",
+            "kr": "네, 종착역이에요, 그러니 내릴 역을 놓치실 일은 없어요.",
+            "jp": "はい、終点ですから、降り損ねないようにしてくださいね。",
+            "zh": "是的，是终点站，所以您不会错过下车的。",
+            "ru": "Да, конечная, так что не пропустите свою остановку."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты не знаешь, как лучше добраться до университета?",
+            "en": "Do you know the best way to get to the university?",
+            "es": "¿Sabes cuál es la mejor forma de llegar a la universidad?",
+            "fr": "Tu ne sais pas quel est le meilleur moyen pour aller à l'université ?",
+            "pt": "Você sabe qual é o melhor jeito de chegar à universidade?",
+            "kr": "대학교까지 어떻게 가는 게 제일 좋은지 아니?",
+            "jp": "大学までどうやって行くのが一番いいか知ってる？",
+            "zh": "你知道怎么去大学最方便吗？",
+            "ru": "Ты не знаешь, как лучше добраться до университета?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Можно на троллейбусе, а можно пешком, если погода хорошая.",
+            "en": "You can take the trolleybus, or you can walk if the weather's nice.",
+            "es": "Puedes ir en trolebús, o andando si hace buen tiempo.",
+            "fr": "Tu peux prendre le trolleybus, ou bien y aller à pied si le temps est beau.",
+            "pt": "Dá para ir de trólebus, ou a pé, se o tempo estiver bom.",
+            "kr": "무궤도전차를 타도 되고, 날씨가 좋으면 걸어가도 돼.",
+            "jp": "トロリーバスで行くか、天気がよければ歩いて行くかだね。",
+            "zh": "可以坐无轨电车，如果天气好的话也可以走路。",
+            "ru": "Можно на троллейбусе, а можно пешком, если погода хорошая."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А сколько остановок на троллейбусе?",
+            "en": "And how many stops is it on the trolleybus?",
+            "es": "¿Y cuántas paradas hay en trolebús?",
+            "fr": "Et il y a combien d'arrêts en trolleybus ?",
+            "pt": "E são quantos pontos de trólebus?",
+            "kr": "그럼 무궤도전차로는 몇 정거장쯤 걸려?",
+            "jp": "トロリーバスだと何駅くらい？",
+            "zh": "那坐无轨电车要坐几站？",
+            "ru": "А сколько остановок на троллейбусе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Всего четыре, это минут пятнадцать.",
+            "en": "Only four, that's about fifteen minutes.",
+            "es": "Solo cuatro, son unos quince minutos.",
+            "fr": "Seulement quatre, ça fait une quinzaine de minutes.",
+            "pt": "Só quatro, dá uns quinze minutos.",
+            "kr": "네 정거장뿐이야, 십오 분쯤 걸려.",
+            "jp": "たった四駅だよ、だいたい十五分くらい。",
+            "zh": "只要四站，大概十五分钟。",
+            "ru": "Всего четыре, это минут пятнадцать."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А пешком, наверное, дольше?",
+            "en": "And walking is probably longer, right?",
+            "es": "¿Y andando será más tiempo, supongo?",
+            "fr": "Et à pied, c'est sûrement plus long ?",
+            "pt": "E a pé, deve ser mais demorado, né?",
+            "kr": "그럼 걸어가면 아마 더 오래 걸리겠지?",
+            "jp": "歩きのほうがやっぱり時間かかる？",
+            "zh": "那走路的话，恐怕更久吧？",
+            "ru": "А пешком, наверное, дольше?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, примерно полчаса, но зато полезно для здоровья.",
+            "en": "Yes, about half an hour, but it's good for your health.",
+            "es": "Sí, más o menos media hora, pero al menos es bueno para la salud.",
+            "fr": "Oui, environ une demi-heure, mais c'est bon pour la santé.",
+            "pt": "Sim, mais ou menos meia hora, mas faz bem para a saúde.",
+            "kr": "응, 대충 삼십 분쯤 걸리는데, 그래도 건강에는 좋잖아.",
+            "jp": "うん、だいたい三十分だけど、そのぶん健康にはいいよ。",
+            "zh": "是的，大概半小时，不过对健康有好处。",
+            "ru": "Да, примерно полчаса, но зато полезно для здоровья."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Скажите, этот маршрут ходит до торгового центра?",
+            "en": "Excuse me, does this route go to the shopping mall?",
+            "es": "Perdone, ¿esta línea va al centro comercial?",
+            "fr": "Dites-moi, cette ligne va jusqu'au centre commercial ?",
+            "pt": "Por favor, esse ônibus vai até o shopping?",
+            "kr": "저기요, 이 노선이 쇼핑센터까지 가나요?",
+            "jp": "すみません、この路線はショッピングセンターまで行きますか？",
+            "zh": "请问，这路车去购物中心吗？",
+            "ru": "Скажите, этот маршрут ходит до торгового центра?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, этот маршрут туда не идёт, вам нужен другой.",
+            "en": "No, this route doesn't go there, you need a different one.",
+            "es": "No, esta línea no va para allá, necesita otra.",
+            "fr": "Non, cette ligne n'y va pas, il vous en faut une autre.",
+            "pt": "Não, essa linha não vai para lá, você precisa de outra.",
+            "kr": "아니요, 이 노선은 그쪽으로 안 가요, 다른 버스를 타셔야 해요.",
+            "jp": "いいえ、この路線はあそこへは行きませんよ、別のに乗らないといけません。",
+            "zh": "不去，这路车不去那边，您需要坐别的车。",
+            "ru": "Нет, этот маршрут туда не идёт, вам нужен другой."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А какой номер мне нужен?",
+            "en": "And which number do I need?",
+            "es": "¿Y qué número necesito?",
+            "fr": "Et quel numéro me faut-il ?",
+            "pt": "E qual número eu preciso pegar?",
+            "kr": "그럼 몇 번 버스를 타야 하나요?",
+            "jp": "何番に乗ればいいですか？",
+            "zh": "那我需要坐几路？",
+            "ru": "А какой номер мне нужен?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Садитесь на двадцать первый, он останавливается прямо у входа.",
+            "en": "Take the twenty-first, it stops right at the entrance.",
+            "es": "Coja el veintiuno, para justo en la entrada.",
+            "fr": "Prenez le vingt et un, il s'arrête juste devant l'entrée.",
+            "pt": "Pega o vinte e um, ele para bem na entrada.",
+            "kr": "이십일 번을 타세요, 입구 바로 앞에 서요.",
+            "jp": "二十一番に乗ってください、入り口のすぐ前に止まりますから。",
+            "zh": "坐二十一路，它就在入口处停。",
+            "ru": "Садитесь на двадцать первый, он останавливается прямо у входа."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А где его остановка?",
+            "en": "And where's its stop?",
+            "es": "¿Y dónde está su parada?",
+            "fr": "Et où est son arrêt ?",
+            "pt": "E onde fica o ponto dele?",
+            "kr": "그 버스 정류장은 어디에 있나요?",
+            "jp": "その停留所はどこですか？",
+            "zh": "那它的车站在哪里？",
+            "ru": "А где его остановка?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Напротив парка, через дорогу от этого здания.",
+            "en": "Across from the park, just across the road from this building.",
+            "es": "Frente al parque, cruzando la calle desde este edificio.",
+            "fr": "En face du parc, de l'autre côté de la route par rapport à ce bâtiment.",
+            "pt": "Em frente ao parque, do outro lado da rua desse prédio.",
+            "kr": "공원 맞은편이에요, 이 건물 건너편 길 건너에 있어요.",
+            "jp": "公園の向かいです、この建物の道を挟んだ反対側です。",
+            "zh": "在公园对面，过条马路就是，就在这栋楼的对面。",
+            "ru": "Напротив парка, через дорогу от этого здания."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты не знаешь, метро уже закрылось?",
+            "en": "Do you know if the metro is already closed?",
+            "es": "¿Sabes si el metro ya ha cerrado?",
+            "fr": "Tu ne sais pas si le métro est déjà fermé ?",
+            "pt": "Você sabe se o metrô já fechou?",
+            "kr": "지하철 벌써 문 닫았는지 아니?",
+            "jp": "地下鉄ってもう終わってるか知ってる？",
+            "zh": "你知道地铁已经关了吗？",
+            "ru": "Ты не знаешь, метро уже закрылось?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, ещё работает, закрывается в час ночи.",
+            "en": "No, it's still running, it closes at one in the morning.",
+            "es": "No, todavía está abierto, cierra a la una de la madrugada.",
+            "fr": "Non, il fonctionne encore, il ferme à une heure du matin.",
+            "pt": "Não, ainda está funcionando, fecha à uma da manhã.",
+            "kr": "아니, 아직 운행 중이야, 새벽 한 시에 닫아.",
+            "jp": "ううん、まだやってるよ、終電は午前一時だから。",
+            "zh": "还没有，还在运行，凌晨一点才关。",
+            "ru": "Нет, ещё работает, закрывается в час ночи."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А мы успеем на последний поезд?",
+            "en": "And will we make it for the last train?",
+            "es": "¿Y llegaremos al último tren?",
+            "fr": "Et on aura le temps d'attraper le dernier train ?",
+            "pt": "E a gente consegue pegar o último trem?",
+            "kr": "그럼 우리 막차는 탈 수 있겠지?",
+            "jp": "最終電車に間に合うかな？",
+            "zh": "那我们能赶上最后一班车吗？",
+            "ru": "А мы успеем на последний поезд?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Думаю, да, если поторопимся, у нас ещё есть время.",
+            "en": "I think so, if we hurry, we still have time.",
+            "es": "Creo que sí, si nos damos prisa, todavía tenemos tiempo.",
+            "fr": "Je pense que oui, si on se dépêche, on a encore le temps.",
+            "pt": "Acho que sim, se a gente se apressar, ainda temos tempo.",
+            "kr": "나는 될 것 같아, 서두르면 아직 시간은 있어.",
+            "jp": "大丈夫だと思うよ、急げばまだ時間はあるから。",
+            "zh": "我觉得能，如果我们抓紧的话，还有时间。",
+            "ru": "Думаю, да, если поторопимся, у нас ещё есть время."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда пойдём быстрее, не хочу вызывать такси.",
+            "en": "Then let's walk faster, I don't want to call a taxi.",
+            "es": "Entonces vamos más rápido, no quiero llamar a un taxi.",
+            "fr": "Alors allons-y plus vite, je ne veux pas appeler un taxi.",
+            "pt": "Então vamos mais rápido, não quero chamar táxi.",
+            "kr": "그럼 빨리 가자, 택시 부르고 싶지 않아.",
+            "jp": "じゃあ急ごう、タクシーは呼びたくないし。",
+            "zh": "那我们走快点吧，我不想叫出租车。",
+            "ru": "Тогда пойдём быстрее, не хочу вызывать такси."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен, на метро и быстрее, и дешевле.",
+            "en": "Agreed, the metro is both faster and cheaper.",
+            "es": "De acuerdo, en metro es más rápido y más barato.",
+            "fr": "Je suis d'accord, le métro est à la fois plus rapide et moins cher.",
+            "pt": "Concordo, de metrô é mais rápido e mais barato.",
+            "kr": "맞아, 지하철이 더 빠르기도 하고 더 싸기도 하니까.",
+            "jp": "そうだね、地下鉄のほうが速いし安いしね。",
+            "zh": "同意，坐地铁又快又便宜。",
+            "ru": "Согласен, на метро и быстрее, и дешевле."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Извините, я не местная, как мне попасть в музей?",
+            "en": "Excuse me, I'm not from around here, how do I get to the museum?",
+            "es": "Perdone, no soy de aquí, ¿cómo llego al museo?",
+            "fr": "Excusez-moi, je ne suis pas d'ici, comment faire pour aller au musée ?",
+            "pt": "Com licença, eu não sou daqui, como eu faço para chegar ao museu?",
+            "kr": "실례합니다, 저는 여기 사람이 아닌데, 박물관에 어떻게 가야 하나요?",
+            "jp": "すみません、私はよそから来たんですが、博物館へはどう行けばいいですか？",
+            "zh": "不好意思，我不是本地人，我怎么去博物馆？",
+            "ru": "Извините, я не местная, как мне попасть в музей?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Садитесь на автобус и выходите на пятой остановке.",
+            "en": "Take the bus and get off at the fifth stop.",
+            "es": "Coja el autobús y bájese en la quinta parada.",
+            "fr": "Prenez le bus et descendez au cinquième arrêt.",
+            "pt": "Pega o ônibus e desce no quinto ponto.",
+            "kr": "버스를 타시고 다섯 번째 정류장에서 내리세요.",
+            "jp": "バスに乗って、五つ目の停留所で降りてください。",
+            "zh": "坐公交车，在第五站下车。",
+            "ru": "Садитесь на автобус и выходите на пятой остановке."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А это далеко отсюда?",
+            "en": "And is it far from here?",
+            "es": "¿Y está lejos de aquí?",
+            "fr": "Et c'est loin d'ici ?",
+            "pt": "E é longe daqui?",
+            "kr": "그럼 여기서 먼가요?",
+            "jp": "ここから遠いですか？",
+            "zh": "那离这儿远吗？",
+            "ru": "А это далеко отсюда?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, минут двадцать, не больше.",
+            "en": "No, about twenty minutes, no more.",
+            "es": "No, unos veinte minutos, como mucho.",
+            "fr": "Non, une vingtaine de minutes, pas plus.",
+            "pt": "Não, uns vinte minutos, no máximo.",
+            "kr": "아니요, 이십 분쯤 걸려요, 그 이상은 아니에요.",
+            "jp": "いいえ、二十分くらいですよ、それ以上はかかりません。",
+            "zh": "不远，二十分钟左右，不会更久。",
+            "ru": "Нет, минут двадцать, не больше."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А музей легко найти от остановки?",
+            "en": "And is the museum easy to find from the stop?",
+            "es": "¿Y es fácil encontrar el museo desde la parada?",
+            "fr": "Et le musée est facile à trouver depuis l'arrêt ?",
+            "pt": "E o museu é fácil de achar do ponto?",
+            "kr": "그럼 정류장에서 박물관은 찾기 쉬운가요?",
+            "jp": "停留所から博物館はすぐわかりますか？",
+            "zh": "那从车站容易找到博物馆吗？",
+            "ru": "А музей легко найти от остановки?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, он будет прямо напротив, вы не ошибётесь.",
+            "en": "Yes, it'll be right across from you, you can't miss it.",
+            "es": "Sí, estará justo enfrente, no se equivocará.",
+            "fr": "Oui, il sera juste en face, vous ne pouvez pas vous tromper.",
+            "pt": "Sim, ele fica bem em frente, você não vai errar.",
+            "kr": "네, 바로 맞은편에 보일 거예요, 길을 잘못 들 일은 없어요.",
+            "jp": "はい、すぐ目の前にありますから、間違えませんよ。",
+            "zh": "容易，它就在正对面，您不会走错的。",
+            "ru": "Да, он будет прямо напротив, вы не ошибётесь."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты обычно ездишь на такси или на общественном транспорте?",
+            "en": "Do you usually take a taxi or public transportation?",
+            "es": "¿Sueles ir en taxi o en transporte público?",
+            "fr": "Tu prends d'habitude le taxi ou les transports en commun ?",
+            "pt": "Você costuma andar de táxi ou de transporte público?",
+            "kr": "너는 보통 택시 타고 다녀, 아니면 대중교통 이용해?",
+            "jp": "普段はタクシーに乗るの？それとも公共交通機関？",
+            "zh": "你平时坐出租车还是坐公共交通？",
+            "ru": "Ты обычно ездишь на такси или на общественном транспорте?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Стараюсь пользоваться транспортом, так дешевле.",
+            "en": "I try to use public transportation, it's cheaper.",
+            "es": "Intento usar el transporte, es más barato.",
+            "fr": "J'essaie d'utiliser les transports, c'est moins cher.",
+            "pt": "Eu tento usar o transporte público, é mais barato.",
+            "kr": "되도록이면 대중교통을 이용하려고 해, 그게 더 싸거든.",
+            "jp": "なるべく公共交通機関を使うようにしてるよ、そのほうが安いから。",
+            "zh": "我尽量坐公共交通，这样便宜一些。",
+            "ru": "Стараюсь пользоваться транспортом, так дешевле."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А если опаздываешь, тогда берёшь такси?",
+            "en": "And if you're running late, do you take a taxi then?",
+            "es": "¿Y si llegas tarde, entonces coges un taxi?",
+            "fr": "Et si tu es en retard, tu prends le taxi alors ?",
+            "pt": "E se você está atrasado, aí você pega táxi?",
+            "kr": "그럼 지각할 것 같을 때는 택시를 타?",
+            "jp": "遅刻しそうなときはタクシーに乗るの？",
+            "zh": "那如果迟到了，你就会打车吗？",
+            "ru": "А если опаздываешь, тогда берёшь такси?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, если совсем нет времени, вызываю машину через приложение.",
+            "en": "Yes, if there's absolutely no time, I order a car through an app.",
+            "es": "Sí, si no hay tiempo de nada, pido un coche por la aplicación.",
+            "fr": "Oui, si je n'ai vraiment pas le temps, je commande une voiture via l'application.",
+            "pt": "Sim, se não tiver tempo nenhum, eu chamo um carro pelo aplicativo.",
+            "kr": "응, 정말 시간이 없을 때는 앱으로 차를 불러.",
+            "jp": "うん、本当に時間がないときは、アプリで車を呼ぶよ。",
+            "zh": "是的，如果实在没时间了，我就用手机软件叫车。",
+            "ru": "Да, если совсем нет времени, вызываю машину через приложение."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понимаю, иногда это действительно спасает.",
+            "en": "I get it, sometimes it really saves you.",
+            "es": "Entiendo, a veces de verdad salva la situación.",
+            "fr": "Je comprends, parfois ça sauve vraiment.",
+            "pt": "Entendo, às vezes realmente salva.",
+            "kr": "이해해, 가끔은 그게 정말 구해주긴 하지.",
+            "jp": "わかるよ、そういうときは本当に助かるよね。",
+            "zh": "我明白，有时候这确实能救急。",
+            "ru": "Понимаю, иногда это действительно спасает."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, главное — успеть вовремя, а способ уже не важен.",
+            "en": "Of course, the main thing is to get there on time, the way doesn't matter anymore.",
+            "es": "Claro, lo importante es llegar a tiempo, la forma ya no importa.",
+            "fr": "Bien sûr, l'important c'est d'arriver à l'heure, et le moyen importe peu.",
+            "pt": "Claro, o importante é chegar na hora, o jeito já não importa.",
+            "kr": "그치, 중요한 건 제때 도착하는 거니까, 방법은 별로 중요하지 않아.",
+            "jp": "もちろん、大事なのは時間通りに着くことで、手段はもうどうでもいいんだよ。",
+            "zh": "当然，最重要的是准时到，用什么方式就不重要了。",
+            "ru": "Конечно, главное — успеть вовремя, а способ уже не важен."
+          }
+        }
+      ]
+    }
+  ]
+}

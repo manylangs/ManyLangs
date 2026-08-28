@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "002"
+  },
+  "title": {
+    "target": "Se présenter",
+    "en": "Introducing Yourself",
+    "es": "Presentarse",
+    "fr": "Se présenter",
+    "pt": "Apresentar-se",
+    "kr": "자기 소개하기",
+    "zh": "自我介绍",
+    "jp": "自己紹介",
+    "ru": "Знакомство"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Bonjour, je m'appelle Camille. Et toi, comment tu t'appelles ?",
+            "en": "Hello, my name is Camille. And you, what's your name?",
+            "es": "Hola, me llamo Camille. ¿Y tú, cómo te llamas?",
+            "fr": "Bonjour, je m'appelle Camille. Et toi, comment tu t'appelles ?",
+            "pt": "Olá, chamo-me Camille. E tu, como te chamas?",
+            "kr": "안녕하세요, 제 이름은 카미유예요. 당신은요, 이름이 뭐예요?",
+            "zh": "你好，我叫卡米尔。你呢，你叫什么名字？",
+            "jp": "ボンジュール、私はカミーユです。あなたは、お名前は何ですか？",
+            "ru": "Здравствуйте, меня зовут Камиль. А ты как тебя зовут?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Enchanté, Camille ! Moi, c'est Lucas.",
+            "en": "Nice to meet you, Camille! I'm Lucas.",
+            "es": "¡Encantado, Camille! Yo soy Lucas.",
+            "fr": "Enchanté, Camille ! Moi, c'est Lucas.",
+            "pt": "Muito prazer, Camille! Eu sou o Lucas.",
+            "kr": "만나서 반가워요, 카미유! 저는 뤼카예요.",
+            "zh": "很高兴认识你，卡米尔！我是卢卡斯。",
+            "jp": "はじめまして、カミーユ！私はリュカです。",
+            "ru": "Очень приятно, Камиль! А я Лукас."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Tu es étudiant ici, Lucas ?",
+            "en": "Are you a student here, Lucas?",
+            "es": "¿Eres estudiante aquí, Lucas?",
+            "fr": "Tu es étudiant ici, Lucas ?",
+            "pt": "És estudante aqui, Lucas?",
+            "kr": "여기서 학생이에요, 뤼카?",
+            "zh": "卢卡斯，你在这里上学吗？",
+            "jp": "リュカ、あなたはここの学生ですか？",
+            "ru": "Ты здесь студент, Лукас?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Oui, je suis en première année de droit.",
+            "en": "Yes, I'm in my first year of law.",
+            "es": "Sí, estoy en primer año de Derecho.",
+            "fr": "Oui, je suis en première année de droit.",
+            "pt": "Sim, estou no primeiro ano de Direito.",
+            "kr": "네, 저는 법학 1학년이에요.",
+            "zh": "是的，我是法律系一年级的学生。",
+            "jp": "はい、私は法学部の一年生です。",
+            "ru": "Да, я на первом курсе юриспруденции."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ah, c'est intéressant ! Moi, je suis en médecine.",
+            "en": "Oh, that's interesting! I'm in medicine.",
+            "es": "¡Ah, qué interesante! Yo estoy en Medicina.",
+            "fr": "Ah, c'est intéressant ! Moi, je suis en médecine.",
+            "pt": "Ah, que interessante! Eu estou em Medicina.",
+            "kr": "아, 재미있네요! 저는 의학을 공부해요.",
+            "zh": "啊，真有意思！我是学医的。",
+            "jp": "ああ、それは面白いですね！私は医学部です。",
+            "ru": "А, это интересно! А я на медицине."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Super ! On se reverra peut-être à la bibliothèque.",
+            "en": "Great! Maybe we'll see each other at the library.",
+            "es": "¡Genial! Quizás nos veamos en la biblioteca.",
+            "fr": "Super ! On se reverra peut-être à la bibliothèque.",
+            "pt": "Boa! Talvez nos vejamos na biblioteca.",
+            "kr": "좋아요! 아마 도서관에서 다시 만날 수 있겠네요.",
+            "zh": "太好了！我们也许会在图书馆再见面。",
+            "jp": "すごい！また図書館で会えるかもしれませんね。",
+            "ru": "Отлично! Может, ещё увидимся в библиотеке."
+          }
+        }
+      ]
+    }
+  ]
+}

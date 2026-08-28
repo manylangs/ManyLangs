@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "c2",
+    "id": "058"
+  },
+  "title": {
+    "target": "Командировки и отпуск",
+    "en": "Business Trips and Vacation",
+    "es": "Viajes de trabajo y vacaciones",
+    "fr": "Déplacements professionnels et vacances",
+    "pt": "Viagens de trabalho e férias",
+    "kr": "출장과 휴가",
+    "jp": "出張と休暇",
+    "zh": "出差和休假",
+    "ru": "Командировки и отпуск"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты уже решил, когда возьмёшь отпуск этим летом?",
+            "en": "Sergey, have you already decided when you'll take your vacation this summer?",
+            "es": "Serguéi, ¿ya has decidido cuándo te vas a tomar las vacaciones este verano?",
+            "fr": "Sergueï, tu as déjà décidé quand tu prendras tes vacances cet été ?",
+            "pt": "Sergei, você já decidiu quando vai tirar férias neste verão?",
+            "kr": "세르게이, 이번 여름에 언제 휴가를 쓸지 이미 정했어?",
+            "jp": "セルゲイ、今年の夏にいつ休暇を取るかもう決めた？",
+            "zh": "谢尔盖，你想好了今年夏天什么时候休假吗？",
+            "ru": "Сергей, ты уже решил, когда возьмёшь отпуск этим летом?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пока думаю между июлем и августом, но хочу успеть до начала большого проекта.",
+            "en": "I'm still deciding between July and August, but I want to make it before the big project starts.",
+            "es": "Todavía estoy pensando entre julio y agosto, pero quiero hacerlo antes de que empiece el gran proyecto.",
+            "fr": "J'hésite encore entre juillet et août, mais je veux y aller avant le début du grand projet.",
+            "pt": "Ainda estou em dúvida entre julho e agosto, mas quero conseguir antes do início do grande projeto.",
+            "kr": "아직 칠월과 팔월 사이에서 고민 중이야, 그런데 큰 프로젝트 시작 전에 다녀오고 싶어.",
+            "jp": "まだ七月か八月かで考えているところだけど、大きなプロジェクトが始まる前には取りたいんだ。",
+            "zh": "还在考虑七月还是八月，但我想在大项目开始之前休完。",
+            "ru": "Пока думаю между июлем и августом, но хочу успеть до начала большого проекта."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А куда планируешь поехать, если всё получится?",
+            "en": "And where are you planning to go, if it all works out?",
+            "es": "¿Y a dónde planeas ir, si todo sale bien?",
+            "fr": "Et où comptes-tu aller, si tout se passe bien ?",
+            "pt": "E para onde você planeja ir, se tudo der certo?",
+            "kr": "그럼 다 잘되면 어디로 갈 계획이야?",
+            "jp": "もしうまくいったら、どこへ行く予定なの？",
+            "zh": "那如果顺利的话，你打算去哪儿？",
+            "ru": "А куда планируешь поехать, если всё получится?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мечтаю на Байкал, но билеты сейчас очень дорогие.",
+            "en": "I'm dreaming of Lake Baikal, but the tickets are really expensive right now.",
+            "es": "Sueño con ir al Baikal, pero los billetes ahora están muy caros.",
+            "fr": "Je rêve d'aller au lac Baïkal, mais les billets sont très chers en ce moment.",
+            "pt": "Sonho em ir para o Lago Baikal, mas as passagens estão muito caras agora.",
+            "kr": "바이칼 호수에 가고 싶어, 그런데 지금 비행기 표가 너무 비싸.",
+            "jp": "バイカル湖に行きたいんだけど、今はチケットがとても高いんだ。",
+            "zh": "我梦想去贝加尔湖，但现在机票太贵了。",
+            "ru": "Мечтаю на Байкал, но билеты сейчас очень дорогие."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это правда, в высокий сезон цены всегда растут.",
+            "en": "That's true, prices always go up in the high season.",
+            "es": "Es verdad, en temporada alta los precios siempre suben.",
+            "fr": "C'est vrai, en haute saison les prix augmentent toujours.",
+            "pt": "É verdade, na alta temporada os preços sempre sobem.",
+            "kr": "맞아, 성수기에는 가격이 항상 오르지.",
+            "jp": "それは本当だね、ハイシーズンはいつも値段が上がるからね。",
+            "zh": "确实，旺季价格总是上涨。",
+            "ru": "Это правда, в высокий сезон цены всегда растут."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Поэтому я и жду, может, получится найти хороший вариант.",
+            "en": "That's why I'm waiting, maybe I'll manage to find a good deal.",
+            "es": "Por eso estoy esperando, a ver si consigo encontrar una buena opción.",
+            "fr": "C'est pour ça que j'attends, peut-être que je trouverai une bonne option.",
+            "pt": "Por isso estou esperando, talvez eu consiga encontrar uma boa opção.",
+            "kr": "그래서 나도 기다리고 있어, 어쩌면 좋은 조건을 찾을 수 있을지도 몰라.",
+            "jp": "だから待っているんだ、いいプランが見つかるかもしれないから。",
+            "zh": "所以我在等，也许能找到一个好选择。",
+            "ru": "Поэтому я и жду, может, получится найти хороший вариант."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, как прошла твоя командировка в Санкт-Петербург?",
+            "en": "Ivan, how did your business trip to Saint Petersburg go?",
+            "es": "Iván, ¿cómo fue tu viaje de trabajo a San Petersburgo?",
+            "fr": "Ivan, comment s'est passé ton déplacement professionnel à Saint-Pétersbourg ?",
+            "pt": "Ivan, como foi a sua viagem de trabalho para São Petersburgo?",
+            "kr": "이반, 상트페테르부르크 출장은 어땠어?",
+            "jp": "イワン、サンクトペテルブルクへの出張はどうだった？",
+            "zh": "伊万，你去圣彼得堡的出差怎么样？",
+            "ru": "Иван, как прошла твоя командировка в Санкт-Петербург?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Очень продуктивно, но я совершенно вымотался за эти три дня.",
+            "en": "Very productive, but I'm completely exhausted after those three days.",
+            "es": "Muy productivo, pero quedé completamente agotado en esos tres días.",
+            "fr": "Très productif, mais je suis complètement épuisé après ces trois jours.",
+            "pt": "Foi muito produtiva, mas fiquei completamente exausto nesses três dias.",
+            "kr": "아주 생산적이었어, 그런데 이 사흘 동안 완전히 지쳐버렸어.",
+            "jp": "とても有意義だったけど、この三日間で完全に疲れ果てたよ。",
+            "zh": "非常有成效，但这三天我完全累坏了。",
+            "ru": "Очень продуктивно, но я совершенно вымотался за эти три дня."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Наверное, было много встреч и мало времени на отдых?",
+            "en": "I bet there were lots of meetings and little time for rest?",
+            "es": "Supongo que hubo muchas reuniones y poco tiempo para descansar, ¿no?",
+            "fr": "Il y avait sûrement beaucoup de réunions et peu de temps pour se reposer ?",
+            "pt": "Imagino que houve muitas reuniões e pouco tempo para descansar?",
+            "kr": "아무래도 회의가 많고 쉴 시간이 별로 없었던 거지?",
+            "jp": "きっと会議が多くて、休む時間がほとんどなかったんだろうね？",
+            "zh": "大概是有很多会议，没什么时间休息吧？",
+            "ru": "Наверное, было много встреч и мало времени на отдых?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Именно так, каждый день с утра до вечера был расписан по минутам.",
+            "en": "Exactly, every day was scheduled down to the minute from morning to night.",
+            "es": "Exactamente, cada día de la mañana a la noche estaba planificado al minuto.",
+            "fr": "Exactement, chaque jour était planifié à la minute près du matin au soir.",
+            "pt": "Exatamente, todos os dias de manhã à noite estavam preenchidos minuto a minuto.",
+            "kr": "바로 그거야, 매일 아침부터 저녁까지 일정이 분 단위로 꽉 차 있었어.",
+            "jp": "まさにその通りで、毎日朝から晩まで一分単位で予定がびっしりだったよ。",
+            "zh": "正是如此，每天从早到晚都安排得满满当当。",
+            "ru": "Именно так, каждый день с утра до вечера был расписан по минутам."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Надеюсь, хотя бы удалось попробовать местную кухню.",
+            "en": "I hope you at least got to try the local cuisine.",
+            "es": "Espero que al menos hayas podido probar la gastronomía local.",
+            "fr": "J'espère qu'au moins tu as réussi à goûter la cuisine locale.",
+            "pt": "Espero que pelo menos você tenha conseguido provar a culinária local.",
+            "kr": "그래도 현지 음식은 좀 먹어볼 수 있었으면 좋겠다.",
+            "jp": "せめて現地の料理は味わえたことを願うよ。",
+            "zh": "希望至少有机会尝尝当地美食。",
+            "ru": "Надеюсь, хотя бы удалось попробовать местную кухню."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "К сожалению, почти нет, но я обязательно вернусь туда в отпуск.",
+            "en": "Unfortunately, barely any, but I'll definitely go back there on vacation.",
+            "es": "Por desgracia, casi nada, pero seguro que volveré allí en mis vacaciones.",
+            "fr": "Malheureusement, presque pas, mais je reviendrai sûrement là-bas en vacances.",
+            "pt": "Infelizmente, quase não, mas com certeza voltarei para lá nas férias.",
+            "kr": "아쉽게도 거의 못 먹었어, 그런데 휴가 때 꼭 다시 거기에 갈 거야.",
+            "jp": "残念ながら、ほとんど食べられなかったけど、休暇で必ずまた戻るつもりだよ。",
+            "zh": "很遗憾，几乎没有，但我休假时一定会再去那里。",
+            "ru": "К сожалению, почти нет, но я обязательно вернусь туда в отпуск."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты уже подал заявление на отпуск или ещё нет?",
+            "en": "Have you already submitted your vacation request or not yet?",
+            "es": "¿Ya has presentado la solicitud de vacaciones o todavía no?",
+            "fr": "Tu as déjà déposé ta demande de congé ou pas encore ?",
+            "pt": "Você já enviou o pedido de férias ou ainda não?",
+            "kr": "휴가 신청서는 이미 냈어, 아직 안 냈어?",
+            "jp": "休暇の申請書はもう出したの、それともまだ？",
+            "zh": "你提交休假申请了没有？",
+            "ru": "Ты уже подал заявление на отпуск или ещё нет?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ещё нет, жду утверждения годового графика от руководителя.",
+            "en": "Not yet, I'm waiting for the manager to approve the annual schedule.",
+            "es": "Todavía no, estoy esperando la aprobación del calendario anual por parte del jefe.",
+            "fr": "Pas encore, j'attends l'approbation du calendrier annuel par le responsable.",
+            "pt": "Ainda não, estou esperando a aprovação do cronograma anual pelo chefe.",
+            "kr": "아직 안 냈어, 부서장의 연간 일정표 승인을 기다리고 있어.",
+            "jp": "まだ出していないの、上司が年間スケジュールを承認するのを待っているところなの。",
+            "zh": "还没有，我在等领导批准年度计划。",
+            "ru": "Ещё нет, жду утверждения годового графика от руководителя."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А когда обычно утверждают график в вашем отделе?",
+            "en": "And when do they usually approve the schedule in your department?",
+            "es": "¿Y cuándo suelen aprobar el calendario en vuestro departamento?",
+            "fr": "Et quand est-ce que le calendrier est généralement approuvé dans ton service ?",
+            "pt": "E quando costumam aprovar o cronograma no seu departamento?",
+            "kr": "그럼 보통 언제 부서에서 일정표를 승인해?",
+            "jp": "あなたの部署では、いつもいつ頃スケジュールを承認するの？",
+            "zh": "你们部门通常什么时候批准计划？",
+            "ru": "А когда обычно утверждают график в вашем отделе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно в конце месяца, но в этом году всё задерживается.",
+            "en": "Usually at the end of the month, but this year everything is being delayed.",
+            "es": "Normalmente a finales de mes, pero este año todo se está retrasando.",
+            "fr": "Généralement à la fin du mois, mais cette année tout prend du retard.",
+            "pt": "Normalmente no fim do mês, mas este ano está tudo atrasado.",
+            "kr": "보통 월말에 해, 그런데 올해는 모든 게 지연되고 있어.",
+            "jp": "だいたい月末なんだけど、今年は全部遅れているの。",
+            "zh": "通常是月底，但今年一切都推迟了。",
+            "ru": "Обычно в конце месяца, но в этом году всё задерживается."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это неприятно, ведь планы на лето нужно строить заранее.",
+            "en": "That's a pain, since you need to make summer plans in advance.",
+            "es": "Qué fastidio, porque los planes para el verano hay que hacerlos con antelación.",
+            "fr": "C'est embêtant, parce qu'il faut planifier ses projets d'été à l'avance.",
+            "pt": "Isso é ruim, porque os planos para o verão precisam ser feitos com antecedência.",
+            "kr": "그거 곤란하네, 여름 계획은 미리 세워야 하니까.",
+            "jp": "それは困るね、夏の計画は早めに立てないといけないからね。",
+            "zh": "这很麻烦，因为夏天的计划得提前安排。",
+            "ru": "Это неприятно, ведь планы на лето нужно строить заранее."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласна, но я надеюсь, что всё решится на следующей неделе.",
+            "en": "I agree, but I hope everything gets settled next week.",
+            "es": "Estoy de acuerdo, pero espero que todo se resuelva la semana que viene.",
+            "fr": "Je suis d'accord, mais j'espère que tout se réglera la semaine prochaine.",
+            "pt": "Concordo, mas espero que tudo se resolva na próxima semana.",
+            "kr": "맞아, 그래도 다음 주에는 다 해결될 거라고 기대하고 있어.",
+            "jp": "そうなのよ、でも来週には全部決まることを願っているわ。",
+            "zh": "我也这么觉得，但我希望下周一切都能定下来。",
+            "ru": "Согласна, но я надеюсь, что всё решится на следующей неделе."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, слышал, ты ездил в командировку в Казань? Как впечатления?",
+            "en": "Dmitry, I heard you went on a business trip to Kazan? How was it?",
+            "es": "Dmitri, he oído que fuiste de viaje de trabajo a Kazán. ¿Qué impresiones tienes?",
+            "fr": "Dimitri, j'ai entendu dire que tu es allé en déplacement professionnel à Kazan ? Quelles impressions ?",
+            "pt": "Dmitri, ouvi dizer que você foi em viagem de trabalho para Kazan? O que achou?",
+            "kr": "드미트리, 카잔에 출장 갔다 왔다며? 느낌이 어때?",
+            "jp": "ドミトリー、カザンへ出張に行ったって聞いたけど、感想はどう？",
+            "zh": "德米特里，听说你去喀山出差了？感觉怎么样？",
+            "ru": "Дмитрий, слышал, ты ездил в командировку в Казань? Как впечатления?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Город прекрасный, но работа была очень напряжённой.",
+            "en": "The city is beautiful, but the work was very intense.",
+            "es": "La ciudad es preciosa, pero el trabajo fue muy intenso.",
+            "fr": "La ville est magnifique, mais le travail était très intense.",
+            "pt": "A cidade é linda, mas o trabalho foi muito puxado.",
+            "kr": "도시는 아름다운데, 일이 정말 빡빡했어.",
+            "jp": "街は素晴らしかったけど、仕事はとてもハードだったよ。",
+            "zh": "城市很美，但工作非常紧张。",
+            "ru": "Город прекрасный, но работа была очень напряжённой."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "И что, совсем не оставалось времени на прогулки?",
+            "en": "So there was no time left for sightseeing at all?",
+            "es": "¿Y qué, no te quedó nada de tiempo para pasear?",
+            "fr": "Et alors, il ne te restait vraiment pas de temps pour te promener ?",
+            "pt": "E então, não sobrou nenhum tempo para passear?",
+            "kr": "그럼 산책할 시간이 전혀 없었던 거야?",
+            "jp": "それで、散歩する時間は全然なかったの？",
+            "zh": "那难道一点散步的时间都没有吗？",
+            "ru": "И что, совсем не оставалось времени на прогулки?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Почему же, один вечер я специально выделил на прогулку по Кремлю.",
+            "en": "Actually, I set aside one evening specifically to walk around the Kremlin.",
+            "es": "Claro que sí, una tarde la reservé especialmente para pasear por el Kremlin.",
+            "fr": "Mais si, j'ai spécialement réservé une soirée pour me promener dans le Kremlin.",
+            "pt": "Claro que sobrou, reservei uma noite especialmente para passear pelo Kremlin.",
+            "kr": "왜 없었어, 크렘린 구경하러 일부러 저녁 한 번은 시간을 냈어.",
+            "jp": "いや、そんなことはないよ、一晩だけわざわざクレムリンを散歩する時間を作ったんだ。",
+            "zh": "怎么会，我特意留了一个晚上去克里姆林宫散步。",
+            "ru": "Почему же, один вечер я специально выделил на прогулку по Кремлю."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это отличное решение, всегда нужно находить время на новые места.",
+            "en": "That's a great decision, you should always make time for new places.",
+            "es": "Es una excelente decisión, siempre hay que encontrar tiempo para conocer sitios nuevos.",
+            "fr": "C'est une excellente décision, il faut toujours trouver du temps pour découvrir de nouveaux endroits.",
+            "pt": "Essa foi uma ótima decisão, a gente sempre precisa encontrar tempo para conhecer lugares novos.",
+            "kr": "그거 좋은 결정이었네, 새로운 곳을 볼 시간은 항상 찾아야 해.",
+            "jp": "それはいい決断だね、新しい場所のための時間はいつも作らないといけないよ。",
+            "zh": "这个决定很好，总要找时间去感受新地方。",
+            "ru": "Это отличное решение, всегда нужно находить время на новые места."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен, иначе поездка превращается в сплошную работу.",
+            "en": "I agree, otherwise the trip just turns into nonstop work.",
+            "es": "De acuerdo, si no, el viaje se convierte en puro trabajo.",
+            "fr": "Je suis d'accord, sinon le voyage se transforme en pur travail.",
+            "pt": "Concordo, senão a viagem vira só trabalho.",
+            "kr": "맞아, 그렇지 않으면 여행이 그냥 일만 하다 끝나버리니까.",
+            "jp": "そうだね、そうしないと出張がただの仕事ばかりになってしまうからね。",
+            "zh": "我也这么认为，否则出差就变成纯粹的工作了。",
+            "ru": "Согласен, иначе поездка превращается в сплошную работу."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, ты уже выбрала страну для отпуска в этом году?",
+            "en": "Maria, have you already picked a country for your vacation this year?",
+            "es": "María, ¿ya has elegido el país para tus vacaciones de este año?",
+            "fr": "Maria, tu as déjà choisi le pays pour tes vacances cette année ?",
+            "pt": "Maria, você já escolheu o país para as férias deste ano?",
+            "kr": "마리야, 올해 휴가 갈 나라는 이미 골랐어?",
+            "jp": "マリア、今年の休暇で行く国はもう選んだの？",
+            "zh": "玛丽亚，你今年选好去哪个国家休假了吗？",
+            "ru": "Мария, ты уже выбрала страну для отпуска в этом году?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я хочу поехать в Грузию, меня давно туда тянет.",
+            "en": "Yes, I want to go to Georgia, I've been drawn there for a long time.",
+            "es": "Sí, quiero ir a Georgia, hace tiempo que me tira ese destino.",
+            "fr": "Oui, je veux aller en Géorgie, ça m'attire là-bas depuis longtemps.",
+            "pt": "Sim, quero ir para a Geórgia, há muito tempo que sinto vontade de ir para lá.",
+            "kr": "응, 그루지야에 가고 싶어, 거기에 오래전부터 끌렸거든.",
+            "jp": "うん、ジョージアに行きたいの、ずっと前から惹かれていたの。",
+            "zh": "选好了，我想去格鲁吉亚，我早就向往那里了。",
+            "ru": "Да, я хочу поехать в Грузию, меня давно туда тянет."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отличный выбор, там и природа, и кухня замечательные.",
+            "en": "Great choice, the nature and the food there are wonderful.",
+            "es": "Excelente elección, allí tanto la naturaleza como la gastronomía son estupendas.",
+            "fr": "Excellent choix, la nature et la cuisine y sont merveilleuses.",
+            "pt": "Ótima escolha, lá a natureza e a culinária são maravilhosas.",
+            "kr": "좋은 선택이야, 거기는 자연도 훌륭하고 음식도 훌륭해.",
+            "jp": "いい選択だね、あそこは自然も料理も素晴らしいからね。",
+            "zh": "很好的选择，那里自然风光和美食都很棒。",
+            "ru": "Отличный выбор, там и природа, и кухня замечательные."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я слышала, что осенью там особенно красиво и не так жарко.",
+            "en": "I've heard that in autumn it's especially beautiful there and not so hot.",
+            "es": "He oído que en otoño es especialmente bonito y no hace tanto calor.",
+            "fr": "J'ai entendu dire qu'en automne c'est particulièrement beau et pas si chaud.",
+            "pt": "Ouvi dizer que no outono é especialmente bonito e não faz tanto calor.",
+            "kr": "가을에 거기가 특히 아름답고 그렇게 덥지 않다고 들었어.",
+            "jp": "秋は特にきれいで、そんなに暑くないって聞いたの。",
+            "zh": "我听说秋天那里特别美，而且没那么热。",
+            "ru": "Я слышала, что осенью там особенно красиво и не так жарко."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Точно, сентябрь считается бархатным сезоном в тех краях.",
+            "en": "Exactly, September is considered the golden season in those parts.",
+            "es": "Exacto, septiembre se considera la temporada de oro en aquellas tierras.",
+            "fr": "Exactement, septembre est considéré comme la saison dorée dans ces régions.",
+            "pt": "Isso mesmo, setembro é considerado a estação de ouro por aquelas bandas.",
+            "kr": "맞아, 구월은 그 지역에서 벨벳 시즌이라고 불려.",
+            "jp": "その通りだよ、九月はあの辺りではバーベルシーズンって言われているんだ。",
+            "zh": "没错，九月在那个地区算是黄金季节。",
+            "ru": "Точно, сентябрь считается бархатным сезоном в тех краях."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вот я и планирую взять отпуск в середине сентября.",
+            "en": "That's why I'm planning to take my vacation in the middle of September.",
+            "es": "Por eso mismo planeo tomarme las vacaciones a mediados de septiembre.",
+            "fr": "C'est pour ça que je prévois de prendre mes vacances à la mi-septembre.",
+            "pt": "Então é por isso que estou planejando tirar férias no meio de setembro.",
+            "kr": "그래서 나도 구월 중순에 휴가를 쓸 계획이야.",
+            "jp": "だから九月の中旬に休暇を取るつもりなの。",
+            "zh": "所以我正打算九月中旬休假。",
+            "ru": "Вот я и планирую взять отпуск в середине сентября."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, как тебе удаётся совмещать командировки и семью?",
+            "en": "Olga, how do you manage to balance business trips and family?",
+            "es": "Olga, ¿cómo consigues compaginar los viajes de trabajo y la familia?",
+            "fr": "Olga, comment arrives-tu à concilier les déplacements professionnels et la famille ?",
+            "pt": "Olga, como você consegue conciliar as viagens de trabalho com a família?",
+            "kr": "올가, 출장과 가족을 어떻게 병행하는 게 가능해?",
+            "jp": "オリガ、どうやって出張と家族を両立させているの？",
+            "zh": "奥尔加，你是怎么兼顾出差和家庭的？",
+            "ru": "Ольга, как тебе удаётся совмещать командировки и семью?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Честно говоря, это очень непросто, но мы стараемся планировать всё заранее.",
+            "en": "Honestly, it's really hard, but we try to plan everything in advance.",
+            "es": "Si te soy sincera, no es nada fácil, pero intentamos planificarlo todo con antelación.",
+            "fr": "Honnêtement, ce n'est pas facile, mais nous essayons de tout planifier à l'avance.",
+            "pt": "Sendo bem sincera, não é nada fácil, mas a gente tenta planejar tudo com antecedência.",
+            "kr": "솔직히 말하면 정말 쉽지 않아, 그런데 우리는 모든 걸 미리 계획하려고 노력해.",
+            "jp": "正直に言うと、とても大変なんだけど、私たちは全部を前もって計画するようにしているの。",
+            "zh": "说实话，这很不容易，但我们会尽量提前安排好一切。",
+            "ru": "Честно говоря, это очень непросто, но мы стараемся планировать всё заранее."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Наверное, дети скучают, когда тебя долго нет дома?",
+            "en": "I bet the kids miss you when you're away for a long time?",
+            "es": "Supongo que los niños te echan de menos cuando estás mucho tiempo fuera de casa, ¿no?",
+            "fr": "Les enfants doivent sûrement s'ennuyer quand tu es absente longtemps ?",
+            "pt": "Imagino que as crianças sintam sua falta quando você fica muito tempo fora de casa?",
+            "kr": "아무래도 집에 오래 없으면 아이들이 보고 싶어 하겠지?",
+            "jp": "きっと、あなたが長い間家にいないと子供たちは寂しがるんじゃない？",
+            "zh": "你长时间不在家，孩子们大概会想你吧？",
+            "ru": "Наверное, дети скучают, когда тебя долго нет дома?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, скучают, но мы каждый вечер созваниваемся по видеосвязи.",
+            "en": "Of course they do, but we video call every evening.",
+            "es": "Claro que me echan de menos, pero hablamos por videollamada todas las noches.",
+            "fr": "Bien sûr qu'ils s'ennuient, mais nous nous appelons en visio tous les soirs.",
+            "pt": "Claro que sentem, mas a gente se fala todo dia por videochamada.",
+            "kr": "물론 보고 싶어하지, 그런데 우리는 매일 저녁 화상 통화로 연락해.",
+            "jp": "もちろん寂しがるわ、でも毎晩ビデオ通話で話しているの。",
+            "zh": "当然会想，但我们每天晚上都视频通话。",
+            "ru": "Конечно, скучают, но мы каждый вечер созваниваемся по видеосвязи."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это хороший способ поддерживать связь на расстоянии.",
+            "en": "That's a good way to stay connected from a distance.",
+            "es": "Es una buena manera de mantener el contacto a distancia.",
+            "fr": "C'est un bon moyen de garder le contact à distance.",
+            "pt": "Essa é uma boa forma de manter o contato à distância.",
+            "kr": "그게 멀리 있어도 연락을 유지하는 좋은 방법이네.",
+            "jp": "それは離れていてもつながりを保ついい方法だね。",
+            "zh": "这是保持远距离联系的好办法。",
+            "ru": "Это хороший способ поддерживать связь на расстоянии."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, а ещё я всегда привожу им небольшие подарки из поездок.",
+            "en": "Yes, and I also always bring them small gifts from my trips.",
+            "es": "Sí, y además siempre les traigo pequeños regalos de los viajes.",
+            "fr": "Oui, et en plus je leur ramène toujours de petits cadeaux de mes voyages.",
+            "pt": "Sim, e eu também sempre trago uns presentinhos para elas das viagens.",
+            "kr": "응, 그리고 나는 여행에서 아이들에게 항상 작은 선물도 사 가.",
+            "jp": "そうね、それに旅行からはいつも子供たちに小さなお土産を買って帰っているの。",
+            "zh": "是的，而且我每次出差回来都会给他们带小礼物。",
+            "ru": "Да, а ещё я всегда привожу им небольшие подарки из поездок."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, ты когда-нибудь брал отпуск зимой?",
+            "en": "Alexey, have you ever taken a vacation in winter?",
+            "es": "Alekséi, ¿alguna vez te has tomado vacaciones en invierno?",
+            "fr": "Alexeï, tu as déjà pris des vacances en hiver ?",
+            "pt": "Alexei, você já tirou férias no inverno alguma vez?",
+            "kr": "알렉세이, 겨울에 휴가를 써본 적 있어?",
+            "jp": "アレクセイ、冬に休暇を取ったことはある？",
+            "zh": "阿列克谢，你冬天休过假吗？",
+            "ru": "Алексей, ты когда-нибудь брал отпуск зимой?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно нет, но в этом году думаю сделать исключение.",
+            "en": "Usually no, but this year I'm thinking of making an exception.",
+            "es": "Normalmente no, pero este año estoy pensando en hacer una excepción.",
+            "fr": "En général non, mais cette année je pense faire une exception.",
+            "pt": "Normalmente não, mas neste ano estou pensando em abrir uma exceção.",
+            "kr": "보통은 없어, 그런데 올해는 예외를 만들까 생각 중이야.",
+            "jp": "だいたいはないけど、今年は例外にしようと思っているんだ。",
+            "zh": "通常没有，但今年我想破个例。",
+            "ru": "Обычно нет, но в этом году думаю сделать исключение."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "И куда же ты хочешь поехать в холодное время года?",
+            "en": "And where do you want to go during the cold season?",
+            "es": "¿Y a dónde quieres ir en la época fría del año?",
+            "fr": "Et où veux-tu aller pendant la saison froide ?",
+            "pt": "E para onde você quer ir nessa época fria do ano?",
+            "kr": "그럼 추운 계절에 어디로 가고 싶은데?",
+            "jp": "それで、寒い季節にどこへ行きたいの？",
+            "zh": "那你想在寒冷的季节去哪儿呢？",
+            "ru": "И куда же ты хочешь поехать в холодное время года?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хочу в горы, покататься на лыжах и подышать свежим воздухом.",
+            "en": "I want to go to the mountains, go skiing and get some fresh air.",
+            "es": "Quiero ir a la montaña, a esquiar y a respirar aire puro.",
+            "fr": "Je veux aller à la montagne, faire du ski et respirer l'air frais.",
+            "pt": "Quero ir para as montanhas, esquiar e respirar ar puro.",
+            "kr": "산에 가서 스키도 타고 신선한 공기도 마시고 싶어.",
+            "jp": "山に行きたいんだ、スキーをして新鮮な空気を吸いにね。",
+            "zh": "想去山里，滑滑雪，呼吸一下新鲜空气。",
+            "ru": "Хочу в горы, покататься на лыжах и подышать свежим воздухом."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Звучит замечательно, я тоже люблю активный отдых.",
+            "en": "Sounds wonderful, I also love an active vacation.",
+            "es": "Suena estupendo, a mí también me gusta el descanso activo.",
+            "fr": "Ça a l'air génial, j'aime aussi les vacances actives.",
+            "pt": "Parece ótimo, eu também gosto de descanso ativo.",
+            "kr": "좋은 생각이네, 나도 활동적인 휴가를 좋아해.",
+            "jp": "素晴らしいね、僕もアクティブな休暇が好きなんだ。",
+            "zh": "听起来很棒，我也喜欢户外活动。",
+            "ru": "Звучит замечательно, я тоже люблю активный отдых."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда присоединяйся, вдвоём будет гораздо веселее.",
+            "en": "Then join me, it'll be much more fun together.",
+            "es": "Entonces únete, en dos será mucho más divertido.",
+            "fr": "Alors rejoins-moi, à deux ce sera beaucoup plus amusant.",
+            "pt": "Então vem junto, a dois vai ser bem mais divertido.",
+            "kr": "그럼 같이 가자, 둘이면 훨씬 더 재미있을 거야.",
+            "jp": "じゃあ一緒に来なよ、二人のほうがずっと楽しいから。",
+            "zh": "那就一起来吧，两个人会开心得多。",
+            "ru": "Тогда присоединяйся, вдвоём будет гораздо веселее."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, как прошла твоя поездка в Сочи? Ты так долго её ждала.",
+            "en": "Elena, how did your trip to Sochi go? You'd been waiting for it for so long.",
+            "es": "Elena, ¿cómo fue tu viaje a Sochi? Tanto tiempo esperándolo.",
+            "fr": "Elena, comment s'est passé ton voyage à Sotchi ? Tu l'attendais tellement.",
+            "pt": "Elena, como foi a sua viagem para Sochi? Você esperou tanto por ela.",
+            "kr": "옐레나, 소치 여행은 어땠어? 너무 오래 기다렸잖아.",
+            "jp": "エレナ、ソチへの旅行はどうだった？ずっと楽しみにしていたでしょう。",
+            "zh": "叶莲娜，你去索契的旅行怎么样？你期待了好久了。",
+            "ru": "Елена, как прошла твоя поездка в Сочи? Ты так долго её ждала."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Всё было чудесно, но, к сожалению, отпуск пролетел слишком быстро.",
+            "en": "Everything was wonderful, but unfortunately, the vacation flew by too fast.",
+            "es": "Todo fue maravilloso, pero, por desgracia, las vacaciones pasaron demasiado rápido.",
+            "fr": "Tout était merveilleux, mais malheureusement les vacances sont passées trop vite.",
+            "pt": "Foi tudo maravilhoso, mas, infelizmente, as férias passaram rápido demais.",
+            "kr": "모든 게 정말 좋았어, 그런데 아쉽게도 휴가가 너무 빨리 지나가 버렸어.",
+            "jp": "全部素晴らしかったけど、残念ながら休暇があっという間に終わってしまったの。",
+            "zh": "一切都很好，但可惜假期过得太快了。",
+            "ru": "Всё было чудесно, но, к сожалению, отпуск пролетел слишком быстро."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это всегда так, время в отпуске идёт намного быстрее.",
+            "en": "It's always like that, time goes by much faster on vacation.",
+            "es": "Siempre es así, el tiempo de vacaciones pasa mucho más deprisa.",
+            "fr": "C'est toujours comme ça, le temps passe beaucoup plus vite en vacances.",
+            "pt": "É sempre assim, o tempo nas férias passa muito mais rápido.",
+            "kr": "항상 그렇지, 휴가 때는 시간이 훨씬 빨리 가.",
+            "jp": "それはいつものことだよね、休暇中の時間はとても速く過ぎるからね。",
+            "zh": "总是这样，休假时时间过得快得多。",
+            "ru": "Это всегда так, время в отпуске идёт намного быстрее."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вот именно, не успела оглянуться, а уже пора возвращаться.",
+            "en": "Exactly, before I knew it, it was already time to go back.",
+            "es": "Exacto, no me dio tiempo ni a mirar atrás y ya había que volver.",
+            "fr": "Exactement, je n'ai pas eu le temps de m'en rendre compte qu'il était déjà temps de rentrer.",
+            "pt": "Exatamente, não deu nem tempo de piscar e já estava na hora de voltar.",
+            "kr": "바로 그거야, 눈 깜짝할 사이에 벌써 돌아갈 때가 됐더라고.",
+            "jp": "まさにその通り、振り返る間もなく、もう帰らなければならない時間だったわ。",
+            "zh": "可不是嘛，还没来得及回头，就该回去了。",
+            "ru": "Вот именно, не успела оглянуться, а уже пора возвращаться."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Зато теперь у тебя остались прекрасные воспоминания и фотографии.",
+            "en": "But at least now you have wonderful memories and photos.",
+            "es": "Pero al menos te quedan los recuerdos preciosos y las fotos.",
+            "fr": "Par contre, maintenant tu as de magnifiques souvenirs et des photos.",
+            "pt": "Mas pelo menos agora você ficou com lembranças lindas e fotos.",
+            "kr": "그래도 이제 멋진 추억과 사진이 있잖아.",
+            "jp": "でもその代わり、素敵な思い出と写真が残ったでしょう。",
+            "zh": "不过你现在有了美好的回忆和照片。",
+            "ru": "Зато теперь у тебя остались прекрасные воспоминания и фотографии."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, и я уже строю планы на следующую поездку.",
+            "en": "Yes, and I'm already making plans for the next trip.",
+            "es": "Sí, y ya estoy haciendo planes para el próximo viaje.",
+            "fr": "Oui, et je fais déjà des projets pour le prochain voyage.",
+            "pt": "Sim, e eu já estou fazendo planos para a próxima viagem.",
+            "kr": "응, 그리고 벌써 다음 여행 계획을 세우고 있어.",
+            "jp": "そうね、それに次の旅行の計画をもう立てているの。",
+            "zh": "是的，而且我已经在计划下一次旅行了。",
+            "ru": "Да, и я уже строю планы на следующую поездку."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты не жалеешь, что взял отпуск без сохранения заработной платы?",
+            "en": "Sergey, do you regret taking unpaid leave?",
+            "es": "Serguéi, ¿no te arrepientes de haberte tomado vacaciones sin sueldo?",
+            "fr": "Sergueï, tu ne regrettes pas d'avoir pris un congé sans solde ?",
+            "pt": "Sergei, você não se arrepende de ter tirado férias sem remuneração?",
+            "kr": "세르게이, 무급 휴가를 쓴 거 후회하지 않아?",
+            "jp": "セルゲイ、無給休暇を取ったことを後悔していない？",
+            "zh": "谢尔盖，你后悔请无薪假吗？",
+            "ru": "Сергей, ты не жалеешь, что взял отпуск без сохранения заработной платы?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Немного жалею, но мне было необходимо решить личные вопросы.",
+            "en": "A little, but I really needed to take care of some personal matters.",
+            "es": "Un poco me arrepiento, pero necesitaba resolver asuntos personales.",
+            "fr": "Un peu, mais j'avais besoin de régler des affaires personnelles.",
+            "pt": "Me arrependo um pouco, mas eu precisava resolver questões pessoais.",
+            "kr": "조금 후회되긴 해, 그런데 개인적인 문제를 해결해야만 했어.",
+            "jp": "少し後悔しているけど、個人的な問題を解決する必要があったんだ。",
+            "zh": "有点后悔，但我必须处理一些私人事务。",
+            "ru": "Немного жалею, но мне было необходимо решить личные вопросы."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понимаю, иногда такие вещи важнее денег.",
+            "en": "I understand, sometimes those things are more important than money.",
+            "es": "Te entiendo, a veces esas cosas son más importantes que el dinero.",
+            "fr": "Je comprends, parfois ces choses-là sont plus importantes que l'argent.",
+            "pt": "Entendo, às vezes essas coisas são mais importantes que dinheiro.",
+            "kr": "이해해, 가끔은 그런 일이 돈보다 더 중요하니까.",
+            "jp": "わかるよ、時にはそういうことがお金より大事だからね。",
+            "zh": "我理解，有时候这些事情比钱更重要。",
+            "ru": "Понимаю, иногда такие вещи важнее денег."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Именно так, здоровье и семья всегда должны быть на первом месте.",
+            "en": "Exactly, health and family should always come first.",
+            "es": "Exactamente, la salud y la familia siempre tienen que estar en primer lugar.",
+            "fr": "Exactement, la santé et la famille doivent toujours passer en premier.",
+            "pt": "Exatamente, saúde e família sempre devem vir em primeiro lugar.",
+            "kr": "바로 그거야, 건강과 가족이 항상 최우선이어야 해.",
+            "jp": "まさにその通りだよ、健康と家族はいつだって最優先であるべきだからね。",
+            "zh": "正是如此，健康和家庭永远应该放在第一位。",
+            "ru": "Именно так, здоровье и семья всегда должны быть на первом месте."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Полностью с тобой согласен, это правильный подход.",
+            "en": "I completely agree with you, that's the right approach.",
+            "es": "Estoy totalmente de acuerdo contigo, es un enfoque correcto.",
+            "fr": "Je suis tout à fait d'accord avec toi, c'est la bonne approche.",
+            "pt": "Concordo totalmente com você, essa é a postura certa.",
+            "kr": "전적으로 동의해, 그게 올바른 생각이야.",
+            "jp": "完全に同意するよ、それは正しい考え方だね。",
+            "zh": "我完全同意你的看法，这是正确的态度。",
+            "ru": "Полностью с тобой согласен, это правильный подход."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Главное, что я всё успел, и теперь могу спокойно работать дальше.",
+            "en": "The main thing is that I got everything done, and now I can calmly get back to work.",
+            "es": "Lo importante es que hice todo lo que tenía que hacer, y ahora puedo seguir trabajando tranquilo.",
+            "fr": "L'essentiel, c'est que j'ai tout réussi à faire, et maintenant je peux travailler tranquillement.",
+            "pt": "O importante é que eu resolvi tudo, e agora posso trabalhar tranquilo.",
+            "kr": "중요한 건 다 해결했다는 거야, 이제 마음 편히 계속 일할 수 있어.",
+            "jp": "大事なのは、全部やり遂げられたことだよ、これで安心してまた仕事を続けられるからね。",
+            "zh": "重要的是我把事情都办完了，现在可以安心继续工作了。",
+            "ru": "Главное, что я всё успел, и теперь могу спокойно работать дальше."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, ты уже знаешь, куда поедешь в свой следующий отпуск?",
+            "en": "Anna, do you already know where you'll go on your next vacation?",
+            "es": "Ana, ¿ya sabes a dónde irás en tus próximas vacaciones?",
+            "fr": "Anna, tu sais déjà où tu iras pour tes prochaines vacances ?",
+            "pt": "Anna, você já sabe para onde vai nas suas próximas férias?",
+            "kr": "안나, 다음 휴가에 어디로 갈지 이미 알아?",
+            "jp": "アンナ、次の休暇でどこへ行くかもう決めているの？",
+            "zh": "安娜，你知道下次休假要去哪儿了吗？",
+            "ru": "Анна, ты уже знаешь, куда поедешь в свой следующий отпуск?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я мечтаю о поездке в Калининград, но пока только собираю информацию.",
+            "en": "I'm dreaming of a trip to Kaliningrad, but I'm still just gathering information.",
+            "es": "Sueño con un viaje a Kaliningrado, pero de momento solo estoy recopilando información.",
+            "fr": "Je rêve d'un voyage à Kaliningrad, mais pour l'instant je ne fais que rassembler des informations.",
+            "pt": "Sonho em viajar para Kaliningrado, mas por enquanto só estou juntando informações.",
+            "kr": "칼리닌그라드에 가는 걸 꿈꾸고 있어, 그런데 아직 정보만 모으고 있어.",
+            "jp": "カリーニングラードへの旅行を夢見ているんだけど、今はまだ情報を集めているところなの。",
+            "zh": "我梦想去加里宁格勒，但目前还在收集信息。",
+            "ru": "Я мечтаю о поездке в Калининград, но пока только собираю информацию."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это интересное направление, там много европейской архитектуры.",
+            "en": "That's an interesting destination, there's a lot of European architecture there.",
+            "es": "Es un destino interesante, allí hay mucha arquitectura europea.",
+            "fr": "C'est une destination intéressante, il y a beaucoup d'architecture européenne.",
+            "pt": "É um destino interessante, tem muita arquitetura europeia por lá.",
+            "kr": "재미있는 곳이지, 거기에는 유럽풍 건축물이 많아.",
+            "jp": "それは面白い行き先だね、あそこにはヨーロッパ風の建築がたくさんあるからね。",
+            "zh": "那是个有意思的地方，那里有很多欧洲风格的建筑。",
+            "ru": "Это интересное направление, там много европейской архитектуры."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, меня особенно привлекает исторический центр и Балтийское море.",
+            "en": "Yes, I'm especially drawn to the historic center and the Baltic Sea.",
+            "es": "Sí, me atrae especialmente el centro histórico y el mar Báltico.",
+            "fr": "Oui, le centre historique et la mer Baltique m'attirent particulièrement.",
+            "pt": "Sim, o que mais me atrai é o centro histórico e o Mar Báltico.",
+            "kr": "맞아, 특히 역사 지구와 발트 해가 끌려.",
+            "jp": "そうなの、特に歴史的な中心部とバルト海に惹かれているの。",
+            "zh": "是的，我特别被历史中心和波罗的海吸引。",
+            "ru": "Да, меня особенно привлекает исторический центр и Балтийское море."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Думаю, тебе там очень понравится, особенно летом.",
+            "en": "I think you'll really love it there, especially in summer.",
+            "es": "Creo que te va a gustar mucho, sobre todo en verano.",
+            "fr": "Je pense que tu vas beaucoup aimer, surtout en été.",
+            "pt": "Acho que você vai gostar muito de lá, principalmente no verão.",
+            "kr": "거기 정말 좋아할 거야, 특히 여름에.",
+            "jp": "きっと気に入ると思うよ、特に夏はね。",
+            "zh": "我想你会非常喜欢那里的，尤其是夏天。",
+            "ru": "Думаю, тебе там очень понравится, особенно летом."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Надеюсь, что так и будет, уже не терпится отправиться в путь.",
+            "en": "I hope so, I can't wait to hit the road.",
+            "es": "Eso espero, ya tengo muchas ganas de ponerme en camino.",
+            "fr": "J'espère bien, j'ai déjà hâte de prendre la route.",
+            "pt": "Espero que sim, já estou ansiosa para pegar a estrada.",
+            "kr": "그렇게 되길 바라, 벌써 출발하고 싶어 못 견디겠어.",
+            "jp": "そうなるといいな、もう出発するのが待ちきれないわ。",
+            "zh": "希望如此，我已经迫不及待要出发了。",
+            "ru": "Надеюсь, что так и будет, уже не терпится отправиться в путь."
+          }
+        }
+      ]
+    }
+  ]
+}

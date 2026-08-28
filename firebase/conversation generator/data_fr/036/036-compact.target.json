@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Réserver un logement",
+  "sets": {
+    "001": [
+      "Je cherche un appartement pour le mois prochain.",
+      "Tu as une idée du quartier que tu préfères ?",
+      "J'aimerais bien être près du centre-ville.",
+      "C'est souvent plus cher, mais plus pratique.",
+      "Oui, je suis prête à payer un peu plus pour ça.",
+      "Je vais regarder les annonces avec toi."
+    ],
+    "002": [
+      "J'ai vu une annonce pour un studio sympa.",
+      "Ah bon ? Il est situé dans quel quartier ?",
+      "Il est près du parc, c'est très calme.",
+      "Et le loyer, il est raisonnable ?",
+      "Oui, six cent cinquante euros par mois.",
+      "C'est une bonne affaire, tu devrais appeler."
+    ],
+    "003": [
+      "Bonjour, je vous appelle pour l'annonce.",
+      "Oui, bonjour, vous êtes intéressé par le studio ?",
+      "Tout à fait, il est encore disponible ?",
+      "Oui, il est libre à partir du premier du mois.",
+      "Parfait, je peux venir le visiter demain ?",
+      "Bien sûr, je vous donne rendez-vous à dix-huit heures."
+    ],
+    "004": [
+      "Alors, comment s'est passée la visite ?",
+      "L'appartement est sympa, mais un peu petit.",
+      "Tu penses que ça peut le faire quand même ?",
+      "Oui, avec un bon rangement, ça peut aller.",
+      "Et le propriétaire, il a l'air sérieux ?",
+      "Oui, il était très professionnel et clair."
+    ],
+    "005": [
+      "J'ai trouvé un appartement qui me plaît beaucoup.",
+      "Super ! Tu as déjà envoyé ton dossier ?",
+      "Pas encore, il me manque un justificatif de travail.",
+      "Tu peux demander une attestation à ton employeur.",
+      "C'est vrai, je vais lui envoyer un e-mail.",
+      "Fais vite, les bons appartements partent rapidement."
+    ],
+    "006": [
+      "Le propriétaire m'a demandé une caution de deux mois.",
+      "C'est assez courant dans cette ville.",
+      "Oui, mais ça fait beaucoup d'argent à sortir.",
+      "Tu as pensé à la garantie locative ?",
+      "C'est une bonne idée, je vais me renseigner.",
+      "Ça peut vraiment t'aider à payer moins au départ."
+    ],
+    "007": [
+      "J'ai signé le bail pour l'appartement !",
+      "Félicitations ! C'est une excellente nouvelle.",
+      "Merci, je suis vraiment contente de mon choix.",
+      "Tu as pensé à souscrire une assurance habitation ?",
+      "Oui, c'est prévu pour la semaine prochaine.",
+      "Parfait, il ne te reste plus qu'à emménager."
+    ],
+    "008": [
+      "Je dois rendre mon appartement actuel à la fin du mois.",
+      "Tu as prévenu le propriétaire à temps ?",
+      "Oui, je lui ai envoyé la lettre recommandée.",
+      "Très bien, et tu as fait l'état des lieux ?",
+      "Pas encore, on a fixé une date ensemble.",
+      "Pense à bien nettoyer avant son passage."
+    ],
+    "009": [
+      "Je cherche une colocataire pour mon appartement.",
+      "Tu as déjà des candidates en vue ?",
+      "Oui, une étudiante vient visiter demain.",
+      "Tu vas lui demander quoi, exactement ?",
+      "Son rythme de vie et ses habitudes.",
+      "C'est important de bien se comprendre au départ."
+    ],
+    "010": [
+      "J'ai réservé un hôtel pour le week-end à Lyon.",
+      "Tu as trouvé une bonne offre ?",
+      "Oui, trois nuits pour deux cent quarante euros.",
+      "C'est un bon prix pour le centre-ville.",
+      "Et le petit-déjeuner est inclus.",
+      "Tu as fait une bonne affaire, profite bien !"
+    ]
+  },
+  "level": "b2",
+  "chapter_id": "CONV_FR_ACCOMMODATION_BOOKING",
+  "id": "036",
+  "target_lang": "fr"
+}

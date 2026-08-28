@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S015",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "source_dialogue": {
+    "source_scene_id": "S015",
+    "source_line_ids": [
+      "L001",
+      "L002",
+      "L003",
+      "L004"
+    ]
+  },
+  "key_expressions": [
+    {
+      "key_expression_id": "KE001",
+      "source_line_ids": [
+        "L001"
+      ],
+      "expression": "Excuse me, is this the right way to the Manhattan Hotel?",
+      "meaning": "실례합니다, 이쪽이 맨해튼 호텔로 가는 올바른 길인가요?",
+      "usage": "길을 찾거나 목적지가 맞는지 확인할 때, 낯선 사람에게 공손하게 묻는 표현입니다. 'Excuse me'로 상대의 주의를 끈 뒤 질문을 이어갑니다.",
+      "context": "지하철역을 나와 맨해튼 거리에서 호텔을 찾고 있던 지은이, 지나가는 행인에게 호텔로 가는 길이 맞는지 확인하기 위해 사용했습니다.",
+      "communicative_function": "asking for directions",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "Excuse me, is this the right way to the station?",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE002",
+      "source_line_ids": [
+        "L002"
+      ],
+      "expression": "Yes, it's just two blocks ahead.",
+      "meaning": "네, 두 블록만 앞으로 가면 됩니다.",
+      "usage": "상대방에게 목적지까지의 거리나 방향을 알려줄 때 사용하는 표현입니다. 'blocks'는 도시에서 건물과 건물 사이의 거리 단위를 의미합니다.",
+      "context": "행인이 지은이에게 호텔까지의 거리가 가깝다는 것을 알려주며, 두 블록만 더 가면 된다고 안내하는 상황입니다.",
+      "communicative_function": "giving directions",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "It's just two blocks from here.",
+      "common_mistake": "한국어 '블록'과 영어 'block'의 의미가 같다고 생각하고, 'two blocks' 대신 'two block'이라고 단수로 쓰는 실수를 할 수 있습니다. 거리 단위로 쓸 때는 항상 복수형 'blocks'를 사용합니다.",
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE003",
+      "source_line_ids": [
+        "L003"
+      ],
+      "expression": "Great, thank you so much!",
+      "meaning": "좋아요, 정말 감사합니다!",
+      "usage": "상대방의 도움이나 정보에 대해 기쁘게 감사함을 표현할 때 사용합니다. 'Great'는 만족스러운 마음을, 'thank you so much'는 강한 감사를 나타냅니다.",
+      "context": "호텔까지 가는 길을 안내받은 지은이, 안내해 준 행인에게 기쁜 마음으로 감사를 표현하는 상황입니다.",
+      "communicative_function": "thanking",
+      "difficulty": "A1",
+      "priority": "core",
+      "variation": "Perfect, thank you very much!",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE004",
+      "source_line_ids": [
+        "L004"
+      ],
+      "expression": "You're welcome. Have a nice stay.",
+      "meaning": "천만에요. 좋은 시간 보내세요.",
+      "usage": "상대방의 감사에 응답하고, 상대방의 여정이나 체류를 즐겁게 보내라는 덕담을 건넬 때 사용하는 표현입니다. 'stay'는 호텔 등에 머무는 기간을 의미합니다.",
+      "context": "지은이의 감사 인사에 행인이 정중하게 응답하며, 호텔에서의 좋은 시간을 보내라는 인사를 건네는 상황입니다.",
+      "communicative_function": "responding to thanks",
+      "difficulty": "A2",
+      "priority": "useful",
+      "variation": "No problem. Enjoy your stay.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    }
+  ],
+  "validation": {
+    "expression_count": 4,
+    "all_expressions_exist_in_dialogue": true,
+    "source_lines_valid": true,
+    "cefr_appropriate": true
+  }
+}

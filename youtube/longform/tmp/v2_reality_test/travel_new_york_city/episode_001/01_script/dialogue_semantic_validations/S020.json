@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S020",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun turns a corner",
+      "pass": true,
+      "evidence": "L001: \"Oh, I can see that tall building from here.\" — The line implies she has turned a corner and now sees something new. The prior scene (S019) had her looking at a storefront, and now she sees a building, indicating a change in position."
+    },
+    {
+      "requirement": "Jieun sees a familiar landmark in the distance",
+      "pass": true,
+      "evidence": "L001: \"I can see that tall building from here. It looks familiar.\" and L002: \"I remember seeing it on the way to the hotel.\" — The dialogue explicitly states she sees a familiar building and recalls it from her earlier route."
+    },
+    {
+      "requirement": "Jieun decides to head back to the hotel",
+      "pass": true,
+      "evidence": "L004: \"It's getting late. I think I should go back to the hotel now.\" — The dialogue explicitly states her decision to return to the hotel."
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the evening street area",
+      "pass": true,
+      "evidence": "All lines are internal monologue. There is no dialogue indicating movement to a new location. The scene_state and dialogue remain within the context of the evening street."
+    },
+    {
+      "requirement": "Do not introduce a new problem or complication in this scene",
+      "pass": true,
+      "evidence": "The dialogue is positive and reflective. L003: \"That feels good.\" and L004: \"I think I should go back to the hotel now.\" — No new problems or complications are raised."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

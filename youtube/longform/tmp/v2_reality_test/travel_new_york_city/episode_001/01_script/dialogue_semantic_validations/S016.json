@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S016",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun approaches the front desk",
+      "pass": true,
+      "evidence": "L001: \"Hello, I have a reservation. My name is Jieun.\" — This opening line, spoken at the front desk, establishes that Jieun has approached and is addressing the desk clerk."
+    },
+    {
+      "requirement": "Jieun provides her reservation details",
+      "pass": true,
+      "evidence": "L001: \"I have a reservation. My name is Jieun.\" and L003: \"It's J-I-E-U-N. I booked a single room for three nights.\" — Jieun provides her name, spells it, and gives specific booking details (room type and duration)."
+    },
+    {
+      "requirement": "Jieun receives her room key",
+      "pass": true,
+      "evidence": "L006: \"No, you're all set. Here is your room key.\" — The desk clerk explicitly hands Jieun the room key, fulfilling this requirement."
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the hotel lobby",
+      "pass": true,
+      "evidence": "The dialogue remains at the front desk. L007: \"Which way is the elevator?\" and L008: \"It's right over there.\" — Jieun asks for directions but does not physically move to the elevator within this scene."
+    },
+    {
+      "requirement": "Do not introduce any problems with the reservation",
+      "pass": true,
+      "evidence": "L004: \"Perfect, I see your reservation.\" — The clerk confirms the reservation without any issues. The dialogue flows smoothly from check-in to receiving the key without complications."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

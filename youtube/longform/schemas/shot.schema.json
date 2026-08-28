@@ -1,0 +1,348 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/shot.schema.json",
+  "title": "ManyLangs Longform Shot",
+  "description": "Provider-neutral shot specification derived from a production scene before Vidu-specific prompt generation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "episode_id",
+    "scene_id",
+    "shot_id",
+    "sequence",
+    "duration_seconds",
+    "location_ref",
+    "character_refs",
+    "visual_intent",
+    "framing",
+    "camera",
+    "action",
+    "emotion",
+    "props",
+    "continuity",
+    "constraints"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "content_version",
+        "revision",
+        "generated_by"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "2.0"
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "generated_by": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type",
+            "provider",
+            "model"
+          ],
+          "properties": {
+            "type": {
+              "const": "ai"
+            },
+            "provider": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "episode_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scene_id": {
+      "type": "string",
+      "pattern": "^S[0-9]{3}$"
+    },
+    "shot_id": {
+      "type": "string",
+      "pattern": "^SHOT_[0-9]{3}$"
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "duration_seconds": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "location_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "character_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "visual_intent": {
+      "type": "string",
+      "minLength": 1
+    },
+    "framing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "shot_size",
+        "subject_priority"
+      ],
+      "properties": {
+        "shot_size": {
+          "type": "string",
+          "enum": [
+            "extreme_wide",
+            "wide",
+            "medium_wide",
+            "medium",
+            "medium_close",
+            "close_up",
+            "extreme_close_up"
+          ]
+        },
+        "subject_priority": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "camera": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "angle",
+        "movement",
+        "stability"
+      ],
+      "properties": {
+        "angle": {
+          "type": "string",
+          "enum": [
+            "eye_level",
+            "high_angle",
+            "low_angle",
+            "over_the_shoulder",
+            "profile",
+            "three_quarter",
+            "top_down"
+          ]
+        },
+        "movement": {
+          "type": "string",
+          "enum": [
+            "static",
+            "pan",
+            "tilt",
+            "push_in",
+            "pull_out",
+            "tracking",
+            "follow",
+            "arc"
+          ]
+        },
+        "stability": {
+          "type": "string",
+          "enum": [
+            "locked",
+            "smooth",
+            "handheld_subtle"
+          ]
+        }
+      }
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primary_actor_ref",
+        "description",
+        "start_state",
+        "end_state"
+      ],
+      "properties": {
+        "primary_actor_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "start_state": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "end_state": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "emotion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primary_actor",
+        "supporting"
+      ],
+      "properties": {
+        "primary_actor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "supporting": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "props": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "prop_id",
+          "state",
+          "visible"
+        ],
+        "properties": {
+          "prop_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "state": {
+            "type": "string",
+            "minLength": 1
+          },
+          "visible": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "dialogue_alignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "line_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^L[0-9]{3}$"
+          }
+        },
+        "speaker_focus": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "A",
+            "B",
+            null
+          ]
+        }
+      }
+    },
+    "continuity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "carry_in",
+        "carry_out",
+        "must_match_previous_shot"
+      ],
+      "properties": {
+        "carry_in": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "carry_out": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "must_match_previous_shot": {
+          "type": "boolean"
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "preserve_character_identity",
+        "preserve_location_identity",
+        "preserve_prop_state",
+        "allow_new_characters",
+        "allow_new_locations",
+        "allow_story_changes"
+      ],
+      "properties": {
+        "preserve_character_identity": {
+          "const": true
+        },
+        "preserve_location_identity": {
+          "const": true
+        },
+        "preserve_prop_state": {
+          "const": true
+        },
+        "allow_new_characters": {
+          "const": false
+        },
+        "allow_new_locations": {
+          "const": false
+        },
+        "allow_story_changes": {
+          "const": false
+        }
+      }
+    }
+  }
+}

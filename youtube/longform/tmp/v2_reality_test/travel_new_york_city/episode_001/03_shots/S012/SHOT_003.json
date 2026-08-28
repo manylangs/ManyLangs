@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S012",
+  "shot_id": "SHOT_003",
+  "sequence": 3,
+  "duration_seconds": 6.0,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun looking out the window at the dark tunnel, then checking her phone for the time with growing anxiety.",
+  "framing": {
+    "shot_size": "medium_close",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "subway window with dark tunnel"
+    ]
+  },
+  "camera": {
+    "angle": "profile",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun grips the pole tighter and looks out the window at the dark tunnel, then takes out her smartphone and checks the time with an anxious expression.",
+    "start_state": [
+      "The lights have stopped flickering but the train remains stationary",
+      "Jieun is gripping the pole tighter, feeling slightly scared"
+    ],
+    "end_state": [
+      "Jieun is looking at her smartphone, her expression anxious",
+      "The train remains stopped between stations"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "anxious",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on Jieun's back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "state": "held in Jieun's hand, screen showing the time",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "state": "in Jieun's crossbody bag",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "stored near Jieun in the subway car",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L003"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "The lights have stopped flickering but the train remains stationary",
+      "Jieun is gripping the pole tighter, feeling slightly scared"
+    ],
+    "carry_out": [
+      "The subway train has stopped between stations",
+      "Jieun is feeling anxious about the delay",
+      "She is wondering if she will reach her hotel on time",
+      "The subway delay remains unresolved"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

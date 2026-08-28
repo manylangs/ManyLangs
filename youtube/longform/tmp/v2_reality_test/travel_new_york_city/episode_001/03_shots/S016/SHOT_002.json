@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S016",
+  "shot_id": "SHOT_002",
+  "sequence": 2,
+  "duration_seconds": 8.0,
+  "location_ref": "LOC_MANHATTAN_HOTEL_001",
+  "character_refs": [
+    "CHAR_JIEUN_001",
+    "B"
+  ],
+  "visual_intent": "Show the front desk employee checking the reservation system while Jieun provides her details.",
+  "framing": {
+    "shot_size": "medium",
+    "subject_priority": [
+      "B",
+      "CHAR_JIEUN_001"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "B",
+    "description": "The front desk employee looks at the computer screen, asks Jieun to spell her last name, and checks the reservation system.",
+    "start_state": [
+      "The front desk employee is facing Jieun at the front desk",
+      "Jieun is standing at the front desk with her luggage"
+    ],
+    "end_state": [
+      "The front desk employee is looking at the computer screen",
+      "Jieun is waiting and watching the employee"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "welcoming and helpful",
+    "supporting": {
+      "CHAR_JIEUN_001": "polite and attentive"
+    }
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on Jieun's back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "standing beside Jieun",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L002",
+      "L003",
+      "L004"
+    ],
+    "speaker_focus": "B"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is standing at the front desk facing the employee",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase",
+      "The front desk employee is looking at her"
+    ],
+    "carry_out": [
+      "The front desk employee has confirmed the reservation",
+      "Jieun is still standing at the front desk",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

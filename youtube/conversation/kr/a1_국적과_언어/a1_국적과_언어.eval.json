@@ -1,0 +1,70 @@
+{
+  "chapter_id": "conversation_shorts_a1_003.runtime.json",
+  "target_lang": "kr",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A/B가 한 세트 내에서 자연스럽게 번갈아 대화하며, 역할이 명확하고 일관적이다. A는 일본인, B는 한국인으로 설정이 명확하다."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "국적 묻기, 답하기, 언어 능력 표현, 의견 묻기, 격려하기 등 A1 수준의 대화 기능이 정확하게 구현되었다."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "전체적으로 자연스러운 구어체다. 다만 '일본어는 어때요?'(set=001 line=4)는 다소 생략된 표현으로, '일본어는 배우기 어때요?'가 더 명확할 수 있으나 실제 회화에서 충분히 쓰이는 표현이다."
+    },
+    "register_appropriateness": {
+      "score": 10,
+      "weight": 10,
+      "notes": "'-에요/어요' 체의 해요체를 일관되게 사용하여 예의 바르면서도 친근한 A1 수준에 적합한 격식이 유지되었다."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 오류가 없다. '금방 늘 거예요'의 미래 추측 표현, '할 수 있어요'의 능력 표현 등이 정확하게 쓰였다."
+    },
+    "situational_practicality": {
+      "score": 9,
+      "weight": 10,
+      "notes": "첫 만남에서 국적과 언어를 묻는 매우 실용적인 상황이다. 다만 한 세트만으로 구성되어 상황의 다양성이 다소 제한적이다."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "한국, 일본이라는 특정 국적을 언급하지만 문화적 고정관념이나 민감한 표현 없이 중립적이다."
+    },
+    "tts_readiness": {
+      "score": 9,
+      "weight": 5,
+      "notes": "TTS로 읽기에 적합한 명확한 문장 구조다. 다만 '아, 그래요?'(set=001 line=4)는 억양에 따라 의미가 달라질 수 있어 TTS 음성 변조 시 주의가 필요하다."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 kr이 모든 줄에서 완벽하게 일치한다."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "A1 레벨에서 국적과 언어라는 핵심 주제를 다루며, TTMIK 초급 교재나 세종한국어 1급 수준과 견줄 만한 자연스러운 대화다. 다만 단일 세트로 구성되어 분량 면에서 다소 짧다."
+    }
+  },
+  "final_score": 95,
+  "market_benchmark": {
+    "comparable_services": [
+      "Talk To Me In Korean",
+      "Duolingo Korean Conversations",
+      "세종한국어/TOPIK",
+      "Pimsleur Korean"
+    ],
+    "estimated_relative_position": "TTMIK Level 1 및 세종한국어 1급 대화문과 동등한 수준의 자연스러움과 정확성을 갖추고 있다. 다만 단일 세트로 구성되어 챕터 분량이 경쟁 서비스 대비 짧다.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}

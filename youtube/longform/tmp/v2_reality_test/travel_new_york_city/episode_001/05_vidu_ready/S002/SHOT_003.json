@@ -1,0 +1,175 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S002",
+  "shot_id": "SHOT_003",
+  "sequence": 3,
+  "source_refs": {
+    "production_scene": "02_visual/production_scenes/S002.json",
+    "shot": "03_shots/S002/SHOT_003.json",
+    "visual_continuity": "04_visual_continuity/S002/SHOT_003.json"
+  },
+  "generation": {
+    "provider": "vidu",
+    "duration_seconds": 8.0,
+    "aspect_ratio": "16:9",
+    "resolution": "1080p",
+    "mode": "reference_guided"
+  },
+  "actors": [
+    {
+      "actor_ref": "CHAR_JIEUN_001",
+      "identity_type": "persistent",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Medium-sized travel backpack",
+        "Small crossbody bag",
+        "Smartphone"
+      ],
+      "body_state": [
+        "Standing near the airport employee in the immigration area",
+        "Backpack worn on back",
+        "Crossbody bag worn across body",
+        "Facing the airport employee",
+        "Listening attentively"
+      ],
+      "emotion": "attentive and relieved",
+      "reference_asset_ids": [
+        "ASSET_CHAR_JIEUN_PRIMARY_000001"
+      ]
+    },
+    {
+      "actor_ref": "B",
+      "identity_type": "scene_local",
+      "identity_lock": true,
+      "appearance": [
+        "Professional airport employee",
+        "Neatly groomed",
+        "Wearing an airport uniform with a visible ID badge"
+      ],
+      "hair": [
+        "Neatly groomed short hair"
+      ],
+      "clothing": [
+        "Airport uniform shirt",
+        "Dark trousers",
+        "Comfortable work shoes"
+      ],
+      "carried_items": [],
+      "body_state": [
+        "Standing near the immigration area",
+        "Facing Jieun",
+        "Pointing toward the line on the left"
+      ],
+      "emotion": "helpful and professional",
+      "reference_asset_ids": []
+    }
+  ],
+  "location": {
+    "location_ref": "LOC_JFK_AIRPORT_001",
+    "identity_lock": true,
+    "current_zone": "immigration area, JFK International Airport",
+    "persistent_features": [
+      "Large terminal with high ceilings",
+      "Digital flight information displays",
+      "Signage for Arrivals, Immigration, and Baggage Claim",
+      "Moving walkways and escalators",
+      "Large windows with natural light"
+    ],
+    "orientation_state": [
+      "Jieun facing the airport employee",
+      "Airport employee facing Jieun",
+      "Airport employee's arm extended pointing toward the left line",
+      "Immigration lines and signage behind Jieun",
+      "Other passengers walking toward the immigration lines"
+    ],
+    "reference_asset_ids": []
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn on back",
+      "position": "on Jieun's back",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn across body",
+      "position": "across Jieun's body",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "held in Jieun's hand",
+      "position": "in Jieun's hand, lowered to her side",
+      "visible": true,
+      "continuity_lock": true
+    }
+  ],
+  "prompt": {
+    "subject": "A young woman with shoulder-length dark brown hair tucked behind her ears, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, and white sneakers, with a medium-sized travel backpack on her back and a small crossbody bag across her body, standing and listening attentively. A professional airport employee in uniform with a visible ID badge, neatly groomed short hair, facing her and pointing toward the line on the left.",
+    "environment": "Inside the immigration area of JFK International Airport, a large terminal with high ceilings, digital flight information displays, signage for Arrivals, Immigration, and Baggage Claim, moving walkways and escalators, large windows with natural light, bright indoor terminal lighting, other passengers walking toward the immigration lines.",
+    "action": "The airport employee points toward the line on the left and tells Jieun it is for visitors, then responds to her question about forms. Jieun listens attentively.",
+    "camera": "Medium shot, eye-level angle, static locked camera.",
+    "continuity": "Jieun remains in her default travel outfit with backpack on back and crossbody bag across body, smartphone in hand lowered to her side. The airport employee's ID badge remains visible. The employee's arm is extended pointing toward the left line. Jieun has not yet joined any immigration line and is not holding her passport.",
+    "final_prompt": "Medium shot, eye-level, static locked camera. Inside the immigration area of JFK International Airport with high ceilings, digital displays, and natural light from large windows. A professional airport employee in uniform with visible ID badge, neatly groomed short hair, faces a young woman with shoulder-length dark brown hair tucked behind ears, wearing white t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, with a travel backpack on her back and crossbody bag across her body. The employee points toward the line on the left and tells her it is for visitors, then responds to her question about forms. The young woman listens attentively, smartphone in hand lowered to her side. Other passengers walk toward the immigration lines in the background."
+  },
+  "negative_constraints": [
+    "Do not change character identity.",
+    "Do not change canonical location identity.",
+    "Do not introduce new characters.",
+    "Do not introduce new locations.",
+    "Do not alter canonical prop state.",
+    "Do not change story events.",
+    "Do not show Jieun moving past the immigration area.",
+    "Do not show Jieun completing the immigration process.",
+    "Do not show Jieun leaving the airport.",
+    "Do not show Jieun joining any immigration line yet.",
+    "Do not show Jieun holding her passport yet."
+  ],
+  "continuity": {
+    "carry_in": [
+      "Jieun is standing near the airport employee",
+      "The employee has asked if she is a visitor or resident"
+    ],
+    "carry_out": [
+      "The employee has pointed toward the left line",
+      "Jieun knows she needs to have her passport ready"
+    ],
+    "must_match_previous_shot": true,
+    "previous_scene_id": "S002",
+    "previous_shot_id": "SHOT_002",
+    "next_scene_id": "S002",
+    "next_shot_id": "SHOT_004"
+  }
+}

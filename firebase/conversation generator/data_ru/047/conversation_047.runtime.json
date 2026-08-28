@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "c1",
+    "id": "047"
+  },
+  "title": {
+    "target": "Рабочая переписка",
+    "en": "Work Correspondence",
+    "es": "Correspondencia de trabajo",
+    "fr": "Correspondance professionnelle",
+    "pt": "Correspondência de trabalho",
+    "kr": "업무 이메일",
+    "jp": "仕事のメールのやり取り",
+    "zh": "工作邮件往来",
+    "ru": "Рабочая переписка"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты видел письмо от отдела маркетинга? Они просят уточнить детали по проекту.",
+            "en": "Ivan, did you see the email from the marketing department? They're asking us to clarify details about the project.",
+            "es": "Iván, ¿has visto el correo del departamento de marketing? Piden que aclaremos los detalles del proyecto.",
+            "fr": "Ivan, tu as vu le courriel du service marketing ? Ils demandent des précisions sur le projet.",
+            "pt": "Ivan, você viu o e-mail do departamento de marketing? Eles estão pedindo para esclarecer os detalhes do projeto.",
+            "kr": "이반, 마케팅 부서에서 온 이메일 봤어? 프로젝트 관련해서 세부 사항을 확인해 달라고 하더라.",
+            "jp": "イワンさん、マーケティング部からのメールを見ましたか？プロジェクトの詳細を確認してほしいと言っています。",
+            "zh": "伊万，你看到市场部发的邮件了吗？他们要求确认项目的细节。",
+            "ru": "Иван, ты видел письмо от отдела маркетинга? Они просят уточнить детали по проекту."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Анна, я уже прочитал. Думаю, нам нужно ответить сегодня, чтобы не задерживать их.",
+            "en": "Yes, Anna, I already read it. I think we need to reply today so we don't hold them up.",
+            "es": "Sí, Ana, ya lo he leído. Creo que debemos responder hoy para no hacerles esperar.",
+            "fr": "Oui, Anna, je l'ai déjà lu. Je pense qu'on doit répondre aujourd'hui pour ne pas les faire attendre.",
+            "pt": "Sim, Anna, eu já li. Acho que precisamos responder hoje para não atrasá-los.",
+            "kr": "응, 안나, 나 이미 읽었어. 우리가 오늘 답장해야 그들이 기다리지 않을 거야.",
+            "jp": "はい、アンナさん、もう読みました。彼らを待たせないように、今日中に返信する必要があると思います。",
+            "zh": "看到了，安娜，我已经读过了。我觉得我们今天就得回复，不能耽误他们。",
+            "ru": "Да, Анна, я уже прочитал. Думаю, нам нужно ответить сегодня, чтобы не задерживать их."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Согласна. Я подготовила черновик ответа, но не уверена насчёт сроков.",
+            "en": "I agree. I prepared a draft of the reply, but I'm not sure about the deadlines.",
+            "es": "De acuerdo. He preparado un borrador de la respuesta, pero no estoy segura sobre los plazos.",
+            "fr": "Je suis d'accord. J'ai préparé un brouillon de réponse, mais je ne suis pas sûre des délais.",
+            "pt": "Concordo. Eu preparei um rascunho da resposta, mas não tenho certeza sobre os prazos.",
+            "kr": "맞아. 내가 답장 초안을 준비했는데, 기한에 대해서는 확신이 없어.",
+            "jp": "そうですね。返信の下書きを用意しましたが、締め切りについて確信が持てません。",
+            "zh": "同意。我准备了回复的草稿，但不确定截止时间。",
+            "ru": "Согласна. Я подготовила черновик ответа, но не уверена насчёт сроков."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Давай посмотрим вместе. Я как раз уточнял график у руководителя.",
+            "en": "Let's look at it together. I was just confirming the schedule with the manager.",
+            "es": "Vamos a verlo juntos. Justo estaba confirmando el calendario con el jefe.",
+            "fr": "Regardons ensemble. Je vérifiais justement le calendrier avec le responsable.",
+            "pt": "Vamos ver juntos. Eu estava justamente confirmando o cronograma com o chefe.",
+            "kr": "같이 한번 보자. 나는 마침 팀장님께 일정을 확인하고 있었어.",
+            "jp": "一緒に見ましょう。ちょうど私も上司にスケジュールを確認していたところです。",
+            "zh": "我们一起看看吧。我正好跟领导确认了一下时间安排。",
+            "ru": "Давай посмотрим вместе. Я как раз уточнял график у руководителя."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично. Тогда я отправлю финальную версию после нашего обсуждения.",
+            "en": "Great. Then I'll send the final version after our discussion.",
+            "es": "Perfecto. Entonces enviaré la versión final después de nuestra conversación.",
+            "fr": "Parfait. Alors j'enverrai la version finale après notre discussion.",
+            "pt": "Ótimo. Então eu envio a versão final depois da nossa conversa.",
+            "kr": "좋아. 그럼 우리가 논의한 후에 최종 버전을 보낼게.",
+            "jp": "わかりました。では、話し合いの後に最終版を送ります。",
+            "zh": "好的。那我们讨论完之后，我就把最终版本发出去。",
+            "ru": "Отлично. Тогда я отправлю финальную версию после нашего обсуждения."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо. Только, пожалуйста, добавь информацию о бюджете, они об этом спрашивали.",
+            "en": "Okay. Just, please, add the information about the budget, they were asking about that.",
+            "es": "Bien. Solo, por favor, añade la información sobre el presupuesto, que era lo que preguntaban.",
+            "fr": "D'accord. Seulement, s'il te plaît, ajoute les informations sur le budget, ils posaient des questions à ce sujet.",
+            "pt": "Certo. Só, por favor, adicione a informação sobre o orçamento, eles perguntaram sobre isso.",
+            "kr": "좋아. 그런데 예산 관련 정보를 꼭 추가해 줘, 그들이 그것에 대해 물어봤어.",
+            "jp": "お願いします。ただ、予算についての情報を追加してください。彼らがそのことを尋ねていました。",
+            "zh": "好。不过请你把预算的信息加上，他们问过这个。",
+            "ru": "Хорошо. Только, пожалуйста, добавь информацию о бюджете, они об этом спрашивали."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты получил моё вчерашнее письмо с отчётом?",
+            "en": "Dmitry, did you get my email from yesterday with the report?",
+            "es": "Dmitri, ¿recibiste mi correo de ayer con el informe?",
+            "fr": "Dmitri, tu as reçu mon courriel d'hier avec le rapport ?",
+            "pt": "Dmitri, você recebeu meu e-mail de ontem com o relatório?",
+            "kr": "드미트리, 내가 어제 보낸 보고서 이메일 받았어?",
+            "jp": "ドミトリーさん、昨日送った報告書のメールを受け取りましたか？",
+            "zh": "德米特里，你收到我昨天发的报告邮件了吗？",
+            "ru": "Дмитрий, ты получил моё вчерашнее письмо с отчётом?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, получил, спасибо. Я просмотрел его, но есть пара вопросов по цифрам.",
+            "en": "Yes, I got it, thanks. I looked it over, but I have a couple of questions about the numbers.",
+            "es": "Sí, lo recibí, gracias. Lo he revisado, pero tengo un par de preguntas sobre las cifras.",
+            "fr": "Oui, je l'ai reçu, merci. Je l'ai parcouru, mais j'ai quelques questions sur les chiffres.",
+            "pt": "Sim, recebi, obrigado. Eu dei uma olhada, mas tenho algumas perguntas sobre os números.",
+            "kr": "응, 받았어, 고마워. 훑어봤는데, 숫자에 관해 몇 가지 질문이 있어.",
+            "jp": "はい、受け取りました、ありがとうございます。目を通しましたが、数字についていくつか質問があります。",
+            "zh": "收到了，谢谢。我看了一下，但数字方面有几个问题。",
+            "ru": "Да, получил, спасибо. Я просмотрел его, но есть пара вопросов по цифрам."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Какие именно? Я могу объяснить или поправить, если что-то не так.",
+            "en": "Which ones exactly? I can explain or fix it if something is wrong.",
+            "es": "¿Cuáles exactamente? Puedo explicarlas o corregirlas si algo no está bien.",
+            "fr": "Lesquelles exactement ? Je peux expliquer ou corriger si quelque chose ne va pas.",
+            "pt": "Quais exatamente? Posso explicar ou corrigir, se algo estiver errado.",
+            "kr": "어떤 건데? 설명해 줄 수 있어, 아니면 뭔가 잘못됐으면 고칠 수도 있고.",
+            "jp": "どんな質問ですか？説明できますし、何か間違っていれば修正もできます。",
+            "zh": "具体是哪些？我可以解释，如果有问题也可以修改。",
+            "ru": "Какие именно? Я могу объяснить или поправить, если что-то не так."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Меня смутил показатель по продажам за третий квартал. Он кажется завышенным.",
+            "en": "The sales figure for the third quarter threw me off. It seems too high.",
+            "es": "Me ha llamado la atención el dato de ventas del tercer trimestre. Parece demasiado alto.",
+            "fr": "Ce qui m'a interpellé, c'est l'indicateur des ventes pour le troisième trimestre. Il me semble exagéré.",
+            "pt": "O indicador de vendas do terceiro trimestre me deixou em dúvida. Ele parece estar inflado.",
+            "kr": "3분기 매출 지표가 좀 걸리네. 너무 높게 잡힌 것 같아.",
+            "jp": "第三四半期の売上指標が気になりました。高すぎるように思えます。",
+            "zh": "第三季度的销售数据让我有点疑惑，看起来偏高了。",
+            "ru": "Меня смутил показатель по продажам за третий квартал. Он кажется завышенным."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Проверю данные ещё раз и пришлю уточнённую версию к вечеру.",
+            "en": "I'll check the data again and send you the revised version by the evening.",
+            "es": "Revisaré los datos otra vez y te enviaré la versión corregida para esta tarde.",
+            "fr": "Je vérifierai les données encore une fois et j'enverrai une version corrigée d'ici ce soir.",
+            "pt": "Vou verificar os dados de novo e enviar a versão corrigida até a noite.",
+            "kr": "데이터를 다시 확인해 볼게, 그리고 저녁까지 수정된 버전을 보낼게.",
+            "jp": "データをもう一度確認して、夕方までに修正版を送ります。",
+            "zh": "我再核对一下数据，晚上之前把修改后的版本发给你。",
+            "ru": "Проверю данные ещё раз и пришлю уточнённую версию к вечеру."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Буду ждать. Если что-то сложно, можем созвониться завтра утром.",
+            "en": "I'll be waiting. If it's difficult, we can have a call tomorrow morning.",
+            "es": "Estaré esperando. Si algo es complicado, podemos hablar por teléfono mañana por la mañana.",
+            "fr": "J'attendrai. Si c'est compliqué, on peut s'appeler demain matin.",
+            "pt": "Vou aguardar. Se for algo complicado, podemos ligar amanhã de manhã.",
+            "kr": "기다릴게. 어려운 부분이 있으면, 내일 아침에 전화 통화해도 돼.",
+            "jp": "待っています。もし難しければ、明日の朝に電話で話すこともできます。",
+            "zh": "我等着。如果有什么困难，我们可以明天早上打电话沟通。",
+            "ru": "Буду ждать. Если что-то сложно, можем созвониться завтра утром."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, коллеги из филиала прислали запрос на совместную презентацию.",
+            "en": "Sergey, the colleagues from the branch office sent a request for a joint presentation.",
+            "es": "Serguéi, los compañeros de la sucursal han enviado una solicitud para la presentación conjunta.",
+            "fr": "Sergueï, les collègues de la succursale ont envoyé une demande pour une présentation commune.",
+            "pt": "Sergei, os colegas da filial enviaram um pedido para a apresentação conjunta.",
+            "kr": "세르게이, 지사 동료들이 공동 프레젠테이션 요청을 보내왔어.",
+            "jp": "セルゲイさん、支店の同僚たちから共同プレゼンテーションの依頼が来ました。",
+            "zh": "谢尔盖，分公司的同事发来了联合演示的请求。",
+            "ru": "Сергей, коллеги из филиала прислали запрос на совместную презентацию."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я видел. Они хотят, чтобы мы подготовили слайды к пятнице.",
+            "en": "I saw it. They want us to prepare the slides by Friday.",
+            "es": "Lo he visto. Quieren que preparemos las diapositivas para el viernes.",
+            "fr": "J'ai vu. Ils veulent qu'on prépare les diapositives pour vendredi.",
+            "pt": "Eu vi. Eles querem que a gente prepare os slides até sexta-feira.",
+            "kr": "나 봤어. 그들은 우리가 금요일까지 슬라이드를 준비하길 원해.",
+            "jp": "見ました。彼らは金曜日までにスライドを準備してほしいと言っています。",
+            "zh": "我看到了。他们希望我们在周五之前准备好幻灯片。",
+            "ru": "Я видел. Они хотят, чтобы мы подготовили слайды к пятнице."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это реально, если мы разделим задачи. Я возьму аналитику, а ты — оформление.",
+            "en": "That's doable if we split the tasks. I'll take the analytics, and you take the design.",
+            "es": "Es posible si dividimos las tareas. Yo me encargo del análisis y tú, del diseño.",
+            "fr": "C'est faisable si on se partage les tâches. Je prends l'analyse, et toi la mise en forme.",
+            "pt": "Isso é possível se dividirmos as tarefas. Eu fico com a análise, e você com o design.",
+            "kr": "업무를 나누면 가능해. 내가 분석을 맡고, 너는 디자인을 맡으면 돼.",
+            "jp": "タスクを分担すれば可能です。私が分析を担当して、あなたがデザインを担当するのはどうですか？",
+            "zh": "如果我们分工的话，这是可行的。我负责分析部分，你负责排版。",
+            "ru": "Это реально, если мы разделим задачи. Я возьму аналитику, а ты — оформление."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Договорились. Только давай сразу решим, кто будет отправлять готовый файл.",
+            "en": "Deal. But let's decide right away who will send the final file.",
+            "es": "De acuerdo. Solo decidamos ya quién enviará el archivo final.",
+            "fr": "C'est entendu. Mais décidons tout de suite qui enverra le fichier final.",
+            "pt": "Combinado. Só vamos decidir logo quem vai enviar o arquivo final.",
+            "kr": "좋아. 그런데 최종 파일을 누가 보낼지 바로 정하자.",
+            "jp": "決まりですね。ただ、完成したファイルを誰が送るかはすぐに決めましょう。",
+            "zh": "说定了。不过我们得先决定谁把做好的文件发出去。",
+            "ru": "Договорились. Только давай сразу решим, кто будет отправлять готовый файл."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я могу отправить, но сначала ты проверишь свою часть.",
+            "en": "I can send it, but you'll check your part first.",
+            "es": "Puedo enviarlo yo, pero primero tú revisas tu parte.",
+            "fr": "Je peux l'envoyer, mais d'abord tu vérifieras ta partie.",
+            "pt": "Eu posso enviar, mas primeiro você confere a sua parte.",
+            "kr": "내가 보낼 수 있는데, 먼저 네가 네 부분을 확인해 줘야 해.",
+            "jp": "私が送れますが、まずあなたが自分の部分を確認してください。",
+            "zh": "我可以发，但你先检查一下你负责的部分。",
+            "ru": "Я могу отправить, но сначала ты проверишь свою часть."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно. Я закончу к четвергу и пришлю тебе на согласование.",
+            "en": "Of course. I'll finish by Thursday and send it to you for approval.",
+            "es": "Claro. Terminaré para el jueves y te lo enviaré para que lo apruebes.",
+            "fr": "Bien sûr. J'aurai fini d'ici jeudi et je te l'enverrai pour validation.",
+            "pt": "Claro. Eu termino até quinta-feira e te envio para aprovação.",
+            "kr": "물론이지. 목요일까지 끝내고 네게 검토받도록 보낼게.",
+            "jp": "もちろんです。木曜日までに終わらせて、確認のためあなたに送ります。",
+            "zh": "当然。我周四之前完成，然后发给你确认。",
+            "ru": "Конечно. Я закончу к четвергу и пришлю тебе на согласование."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, ты не видела письмо от нового партнёра? Они предлагают изменить условия договора.",
+            "en": "Elena, did you see the email from the new partner? They're proposing to change the terms of the contract.",
+            "es": "Elena, ¿has visto el correo del nuevo socio? Proponen cambiar las condiciones del contrato.",
+            "fr": "Elena, tu as vu le courriel du nouveau partenaire ? Ils proposent de modifier les conditions du contrat.",
+            "pt": "Elena, você viu o e-mail do novo parceiro? Eles estão propondo mudar as condições do contrato.",
+            "kr": "옐레나, 새 파트너한테서 온 이메일 못 봤어? 그들이 계약 조건을 바꾸자고 제안하더라.",
+            "jp": "エレナさん、新しいパートナーからのメールを見ましたか？契約条件の変更を提案しています。",
+            "zh": "叶连娜，你看到新合作伙伴发的邮件了吗？他们提议修改合同条款。",
+            "ru": "Елена, ты не видела письмо от нового партнёра? Они предлагают изменить условия договора."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я как раз читала его. Предложение интересное, но есть риск по срокам поставки.",
+            "en": "Yes, I was just reading it. The proposal is interesting, but there's a risk with the delivery deadlines.",
+            "es": "Sí, justo lo estaba leyendo. La propuesta es interesante, pero hay un riesgo con los plazos de entrega.",
+            "fr": "Oui, j'étais justement en train de le lire. L'offre est intéressante, mais il y a un risque sur les délais de livraison.",
+            "pt": "Sim, eu estava justamente lendo. A proposta é interessante, mas há um risco nos prazos de entrega.",
+            "kr": "응, 나 방금 읽고 있었어. 제안은 흥미로운데, 납품 기한에 위험이 있어.",
+            "jp": "はい、ちょうど読んでいたところです。提案は興味深いですが、納期にリスクがあります。",
+            "zh": "看到了，我正好在读。提议很有意思，但交货时间方面有风险。",
+            "ru": "Да, я как раз читала его. Предложение интересное, но есть риск по срокам поставки."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я тоже так думаю. Надо обсудить это с юристом до того, как отвечать.",
+            "en": "I think so too. We need to discuss this with the lawyer before we reply.",
+            "es": "Yo pienso lo mismo. Debemos hablarlo con el abogado antes de responder.",
+            "fr": "Je pense pareil. Il faut en discuter avec le juriste avant de répondre.",
+            "pt": "Eu também acho. Precisamos discutir isso com o advogado antes de responder.",
+            "kr": "나도 그렇게 생각해. 답장하기 전에 법무팀과 상의해야 해.",
+            "jp": "私もそう思います。返信する前に弁護士と話し合う必要があります。",
+            "zh": "我也这么觉得。在回复之前，我们需要跟律师商量一下。",
+            "ru": "Я тоже так думаю. Надо обсудить это с юристом до того, как отвечать."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласна. Я уже написала юристу, жду его комментарий.",
+            "en": "Agreed. I already wrote to the lawyer, I'm waiting for his comment.",
+            "es": "De acuerdo. Ya le he escrito al abogado y estoy esperando su comentario.",
+            "fr": "Je suis d'accord. J'ai déjà écrit au juriste, j'attends son commentaire.",
+            "pt": "Concordo. Eu já escrevi para o advogado, estou aguardando o comentário dele.",
+            "kr": "맞아. 나 이미 법무팀한테 이메일 보냈고, 그들의 의견을 기다리고 있어.",
+            "jp": "そうですね。もう弁護士に連絡して、コメントを待っているところです。",
+            "zh": "同意。我已经给律师写了邮件，正在等他的意见。",
+            "ru": "Согласна. Я уже написала юристу, жду его комментарий."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда подождём его ответ и подготовим совместное возражение.",
+            "en": "Then let's wait for his response and prepare a joint objection.",
+            "es": "Entonces esperaremos su respuesta y prepararemos una objeción conjunta.",
+            "fr": "Alors attendons sa réponse et préparons une objection commune.",
+            "pt": "Então vamos esperar a resposta dele e preparar uma objeção conjunta.",
+            "kr": "그럼 그들의 답변을 기다렸다가 공동 반박 의견을 준비하자.",
+            "jp": "では、彼の返答を待って、共同の反論を準備しましょう。",
+            "zh": "那我们就等他的回复，然后一起准备我们的反对意见。",
+            "ru": "Тогда подождём его ответ и подготовим совместное возражение."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично. Я составлю черновик, а ты потом проверишь формулировки.",
+            "en": "Great. I'll draft it, and you can check the wording afterwards.",
+            "es": "Perfecto. Yo redactaré el borrador y luego tú revisas la redacción.",
+            "fr": "Parfait. Je rédigerai le brouillon, et tu vérifieras ensuite les formulations.",
+            "pt": "Ótimo. Eu redijo o rascunho, e você depois revisa as formulações.",
+            "kr": "좋아. 내가 초안을 작성할게, 그러면 네가 나중에 문구를 확인해 줘.",
+            "jp": "わかりました。私が下書きを作成して、あなたが後で表現を確認してください。",
+            "zh": "好的。我来起草，然后你检查一下措辞。",
+            "ru": "Отлично. Я составлю черновик, а ты потом проверишь формулировки."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты ответил на запрос из бухгалтерии? Они ждут подтверждение по оплате.",
+            "en": "Ivan, did you reply to the request from accounting? They're waiting for confirmation of the payment.",
+            "es": "Iván, ¿has respondido a la solicitud de contabilidad? Están esperando la confirmación del pago.",
+            "fr": "Ivan, tu as répondu à la demande de la comptabilité ? Ils attendent la confirmation du paiement.",
+            "pt": "Ivan, você respondeu ao pedido da contabilidade? Eles estão esperando a confirmação do pagamento.",
+            "kr": "이반, 회계팀 요청에 답장했어? 그들은 결제 확인을 기다리고 있어.",
+            "jp": "イワンさん、経理部からの問い合わせに返信しましたか？支払いの確認を待っています。",
+            "zh": "伊万，你回复会计部的请求了吗？他们在等付款确认。",
+            "ru": "Иван, ты ответил на запрос из бухгалтерии? Они ждут подтверждение по оплате."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ещё нет, я хотел уточнить у тебя один момент перед отправкой.",
+            "en": "Not yet, I wanted to check one thing with you before sending it.",
+            "es": "Todavía no, quería consultarte algo antes de enviarla.",
+            "fr": "Pas encore, je voulais vérifier un point avec toi avant d'envoyer.",
+            "pt": "Ainda não, eu queria esclarecer um ponto com você antes de enviar.",
+            "kr": "아직, 보내기 전에 너한테 한 가지만 확인하려고 했어.",
+            "jp": "まだです。送信する前にあなたに一つ確認したいことがありました。",
+            "zh": "还没有，我想在发送之前先跟你确认一个事情。",
+            "ru": "Ещё нет, я хотел уточнить у тебя один момент перед отправкой."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Конечно, спрашивай. Что именно тебя интересует?",
+            "en": "Sure, go ahead. What exactly are you wondering about?",
+            "es": "Claro, pregunta. ¿Qué te interesa exactamente?",
+            "fr": "Bien sûr, demande. Qu'est-ce qui t'intéresse exactement ?",
+            "pt": "Claro, pode perguntar. O que exatamente te interessa?",
+            "kr": "물론이지, 물어봐. 정확히 뭐가 궁금한데?",
+            "jp": "もちろん、聞いてください。何が気になりますか？",
+            "zh": "当然，你问吧。你想了解什么？",
+            "ru": "Конечно, спрашивай. Что именно тебя интересует?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Они просят указать номер счёта, но я не нашёл его в наших документах.",
+            "en": "They're asking for the invoice number, but I couldn't find it in our documents.",
+            "es": "Piden que indique el número de cuenta, pero no lo he encontrado en nuestros documentos.",
+            "fr": "Ils demandent le numéro de compte, mais je ne l'ai pas trouvé dans nos documents.",
+            "pt": "Eles pedem para indicar o número da conta, mas eu não encontrei nos nossos documentos.",
+            "kr": "그들이 계좌 번호를 적어 달라고 하는데, 우리 서류에서 그걸 찾을 수가 없어.",
+            "jp": "口座番号を記載するよう求められているのですが、書類の中に見つけられませんでした。",
+            "zh": "他们要求填写账户号码，但我在我们的文件里没找到。",
+            "ru": "Они просят указать номер счёта, но я не нашёл его в наших документах."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сейчас поищу. Кажется, он был в прошлом письме от финансового отдела.",
+            "en": "Let me look for it now. I think it was in the last email from the finance department.",
+            "es": "Ahora lo busco. Creo que estaba en el correo anterior del departamento financiero.",
+            "fr": "Je vais chercher. Je crois qu'il était dans le dernier courriel du service financier.",
+            "pt": "Vou procurar agora. Acho que estava no e-mail anterior do departamento financeiro.",
+            "kr": "지금 찾아볼게. 재무 부서에서 온 지난 이메일에 있었던 것 같아.",
+            "jp": "今探してみます。財務部からの前回のメールにあったと思います。",
+            "zh": "我现在找找。好像是在财务部上次发的邮件里。",
+            "ru": "Сейчас поищу. Кажется, он был в прошлом письме от финансового отдела."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо. Если найдёшь, я сразу отправлю им ответ.",
+            "en": "Thanks. If you find it, I'll send them a reply right away.",
+            "es": "Gracias. Si lo encuentras, les envío la respuesta de inmediato.",
+            "fr": "Merci. Si tu le trouves, je leur enverrai la réponse tout de suite.",
+            "pt": "Obrigado. Se você encontrar, eu envio a resposta para eles imediatamente.",
+            "kr": "고마워. 찾으면 바로 답장 보낼게.",
+            "jp": "ありがとうございます。見つかったら、すぐに返信を送ります。",
+            "zh": "谢谢。如果你找到了，我马上给他们回复。",
+            "ru": "Спасибо. Если найдёшь, я сразу отправлю им ответ."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты не мог бы переслать мне письмо с расписанием встреч?",
+            "en": "Dmitry, could you forward me the email with the meeting schedule?",
+            "es": "Dmitri, ¿podrías reenviarme el correo con el horario de las reuniones?",
+            "fr": "Dmitri, tu pourrais me transférer le courriel avec le planning des réunions ?",
+            "pt": "Dmitri, você poderia me reencaminhar o e-mail com o cronograma das reuniões?",
+            "kr": "드미트리, 회의 일정이 있는 이메일 나한테 좀 전달해 줄 수 있어?",
+            "jp": "ドミトリーさん、会議のスケジュールが書かれたメールを転送してもらえますか？",
+            "zh": "德米特里，你能把会议安排的邮件转发给我吗？",
+            "ru": "Дмитрий, ты не мог бы переслать мне письмо с расписанием встреч?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, конечно. Я отправлю его тебе через пару минут.",
+            "en": "Yes, of course. I'll send it to you in a couple of minutes.",
+            "es": "Sí, claro. Te lo enviaré en un par de minutos.",
+            "fr": "Oui, bien sûr. Je te l'enverrai dans quelques minutes.",
+            "pt": "Sim, claro. Vou te enviar em alguns minutos.",
+            "kr": "응, 물론이지. 몇 분 안에 보내줄게.",
+            "jp": "はい、もちろんです。数分後に送ります。",
+            "zh": "好的，当然可以。我几分钟后发给你。",
+            "ru": "Да, конечно. Я отправлю его тебе через пару минут."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спасибо. А ты уже подтвердил участие в завтрашней конференции?",
+            "en": "Thanks. And have you already confirmed your attendance at tomorrow's conference?",
+            "es": "Gracias. ¿Ya has confirmado tu asistencia a la conferencia de mañana?",
+            "fr": "Merci. Et tu as déjà confirmé ta participation à la conférence de demain ?",
+            "pt": "Obrigada. E você já confirmou presença na conferência de amanhã?",
+            "kr": "고마워. 그런데 내일 컨퍼런스 참석은 이미 확인했어?",
+            "jp": "ありがとうございます。ところで、明日の会議への参加はもう確認しましたか？",
+            "zh": "谢谢。那你已经确认参加明天的会议了吗？",
+            "ru": "Спасибо. А ты уже подтвердил участие в завтрашней конференции?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ещё нет, я ждал уточнения по докладу от нашего руководителя.",
+            "en": "Not yet, I was waiting for clarification on the presentation from our manager.",
+            "es": "Todavía no, estaba esperando que nuestro jefe aclarara lo de la ponencia.",
+            "fr": "Pas encore, j'attendais des précisions sur l'exposé de la part de notre responsable.",
+            "pt": "Ainda não, eu estava esperando o esclarecimento sobre a palestra do nosso chefe.",
+            "kr": "아직, 팀장님한테 발표 관련 확인을 기다리고 있어.",
+            "jp": "まだです。上司からの発表についての確認を待っていました。",
+            "zh": "还没有，我在等领导对报告的指示。",
+            "ru": "Ещё нет, я ждал уточнения по докладу от нашего руководителя."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно. Тогда я пока не буду подтверждать своё участие, чтобы мы действовали вместе.",
+            "en": "I see. Then I won't confirm my attendance yet either, so we can act together.",
+            "es": "Entendido. Entonces yo tampoco confirmaré mi asistencia todavía, para actuar juntos.",
+            "fr": "Compris. Alors je ne confirmerai pas ma participation pour l'instant, comme ça on agira ensemble.",
+            "pt": "Entendi. Então eu ainda não vou confirmar a minha presença, para agirmos juntos.",
+            "kr": "알겠어. 그럼 나도 아직 참석을 확인하지 않을게, 우리가 같이 움직이도록.",
+            "jp": "わかりました。では、私も一緒に行動するために、まだ参加を確認しないでおきます。",
+            "zh": "明白了。那我先不确认参加，这样我们可以保持一致。",
+            "ru": "Понятно. Тогда я пока не буду подтверждать своё участие, чтобы мы действовали вместе."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошая идея. Как только получу информацию, сразу напишу тебе.",
+            "en": "Good idea. As soon as I get the information, I'll write to you right away.",
+            "es": "Buena idea. En cuanto reciba la información, te escribo enseguida.",
+            "fr": "Bonne idée. Dès que j'ai l'information, je t'écris tout de suite.",
+            "pt": "Boa ideia. Assim que eu receber a informação, te aviso na hora.",
+            "kr": "좋은 생각이야. 정보를 받는 대로 바로 너한테 알려줄게.",
+            "jp": "いい考えですね。情報を受け取り次第、すぐに連絡します。",
+            "zh": "好主意。我一收到消息就马上告诉你。",
+            "ru": "Хорошая идея. Как только получу информацию, сразу напишу тебе."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, ты видела, что клиент прислал претензию по качеству услуг?",
+            "en": "Olga, did you see that the client sent a complaint about the quality of our services?",
+            "es": "Olga, ¿has visto que el cliente ha enviado una reclamación sobre la calidad del servicio?",
+            "fr": "Olga, tu as vu que le client a envoyé une réclamation sur la qualité des services ?",
+            "pt": "Olga, você viu que o cliente enviou uma reclamação sobre a qualidade dos serviços?",
+            "kr": "올가, 고객이 서비스 품질에 대한 불만을 보낸 거 봤어?",
+            "jp": "オリガさん、クライアントがサービスの品質について苦情を送ってきたのを見ましたか？",
+            "zh": "奥尔加，你看到客户发来的服务质量投诉了吗？",
+            "ru": "Ольга, ты видела, что клиент прислал претензию по качеству услуг?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, видела. Это серьёзная проблема, нам нужно ответить как можно быстрее.",
+            "en": "Yes, I saw it. This is a serious problem, we need to respond as quickly as possible.",
+            "es": "Sí, la he visto. Es un problema serio, debemos responder lo antes posible.",
+            "fr": "Oui, j'ai vu. C'est un problème sérieux, on doit répondre le plus vite possible.",
+            "pt": "Sim, vi. É um problema sério, precisamos responder o mais rápido possível.",
+            "kr": "응, 봤어. 심각한 문제야, 우리는 최대한 빨리 답장해야 해.",
+            "jp": "はい、見ました。これは深刻な問題です。できるだけ早く返信する必要があります。",
+            "zh": "看到了。这是个严重的问题，我们需要尽快回复。",
+            "ru": "Да, видела. Это серьёзная проблема, нам нужно ответить как можно быстрее."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я подготовила проект ответа, но хочу, чтобы ты проверила его тон.",
+            "en": "I prepared a draft response, but I want you to check the tone of it.",
+            "es": "He preparado un borrador de respuesta, pero quiero que revises el tono.",
+            "fr": "J'ai préparé un projet de réponse, mais je veux que tu en vérifies le ton.",
+            "pt": "Eu preparei uma minuta de resposta, mas quero que você revise o tom.",
+            "kr": "내가 답장 초안을 준비했는데, 네가 어조를 확인해 줬으면 해.",
+            "jp": "返信の草案を用意しましたが、トーンを確認してほしいです。",
+            "zh": "我准备了回复的草案，但希望你能检查一下语气。",
+            "ru": "Я подготовила проект ответа, но хочу, чтобы ты проверила его тон."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Давай посмотрю. Главное, чтобы мы признали проблему, но не взяли на себя лишнюю вину.",
+            "en": "Let me take a look. The main thing is that we acknowledge the problem, but don't take on extra blame.",
+            "es": "Déjame verlo. Lo importante es que reconozcamos el problema, pero sin asumir culpas de más.",
+            "fr": "Laisse-moi regarder. L'important, c'est de reconnaître le problème sans assumer une faute excessive.",
+            "pt": "Deixa eu ver. O importante é reconhecermos o problema, mas sem assumir culpa demais.",
+            "kr": "한번 볼게. 중요한 건 우리가 문제를 인정하되, 불필요한 책임을 지지 않는 거야.",
+            "jp": "見てみます。重要なのは、問題を認めつつも、過剰な責任を負わないことです。",
+            "zh": "让我看看吧。关键是我们承认问题，但不要承担过多的责任。",
+            "ru": "Давай посмотрю. Главное, чтобы мы признали проблему, но не взяли на себя лишнюю вину."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Именно поэтому я написала нейтрально, без конкретных обещаний.",
+            "en": "That's exactly why I wrote it neutrally, without any specific promises.",
+            "es": "Por eso lo he escrito de forma neutral, sin promesas concretas.",
+            "fr": "C'est exactement pour ça que j'ai écrit de façon neutre, sans promesses concrètes.",
+            "pt": "Foi exatamente por isso que escrevi de forma neutra, sem promessas específicas.",
+            "kr": "그래서 나는 구체적인 약속 없이 중립적으로 작성했어.",
+            "jp": "だからこそ、具体的な約束なしに中立的に書きました。",
+            "zh": "所以我写得很中立，没有具体的承诺。",
+            "ru": "Именно поэтому я написала нейтрально, без конкретных обещаний."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо. Я немного поправлю формулировки и верну тебе сегодня.",
+            "en": "Good. I'll tweak the wording a bit and get it back to you today.",
+            "es": "Bien. Corregiré un poco la redacción y te lo devolveré hoy.",
+            "fr": "Bien. Je vais ajuster un peu les formulations et te le rendre aujourd'hui.",
+            "pt": "Certo. Eu ajusto um pouco as formulações e te devolvo hoje.",
+            "kr": "좋아. 내가 문구를 조금 수정해서 오늘 너한테 돌려줄게.",
+            "jp": "いいですね。表現を少し修正して、今日中に返します。",
+            "zh": "好的。我会稍微调整一下措辞，今天之内还给你。",
+            "ru": "Хорошо. Я немного поправлю формулировки и верну тебе сегодня."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты не знаешь, кто отвечает за рассылку еженедельного отчёта?",
+            "en": "Sergey, do you know who's in charge of sending out the weekly report?",
+            "es": "Serguéi, ¿sabes quién se encarga del envío del informe semanal?",
+            "fr": "Sergueï, tu ne sais pas qui s'occupe de l'envoi du rapport hebdomadaire ?",
+            "pt": "Sergei, você sabe quem é responsável pelo envio do relatório semanal?",
+            "kr": "세르게이, 주간 보고서 발송을 누가 담당하는지 알아?",
+            "jp": "セルゲイさん、毎週の報告書の配信を誰が担当しているか知っていますか？",
+            "zh": "谢尔盖，你知道谁负责发每周报告吗？",
+            "ru": "Сергей, ты не знаешь, кто отвечает за рассылку еженедельного отчёта?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Кажется, это Мария из нашего отдела. Она обычно отправляет его по пятницам.",
+            "en": "I think it's Maria from our department. She usually sends it out on Fridays.",
+            "es": "Creo que es María, de nuestro departamento. Ella suele enviarlo los viernes.",
+            "fr": "Je crois que c'est Maria de notre service. Elle l'envoie généralement le vendredi.",
+            "pt": "Acho que é a Maria do nosso departamento. Ela costuma enviar às sextas-feiras.",
+            "kr": "우리 부서의 마리아인 것 같아. 그녀가 보통 금요일에 보내.",
+            "jp": "私たちの部署のマリアだと思います。彼女は普段金曜日に送っています。",
+            "zh": "好像是我们部门的玛丽亚。她一般周五发。",
+            "ru": "Кажется, это Мария из нашего отдела. Она обычно отправляет его по пятницам."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно. Я напишу ей, чтобы она добавила меня в список получателей.",
+            "en": "I see. I'll write to her and ask her to add me to the recipient list.",
+            "es": "Entendido. Le escribiré para que me añada a la lista de destinatarios.",
+            "fr": "Compris. Je vais lui écrire pour qu'elle m'ajoute à la liste des destinataires.",
+            "pt": "Entendi. Vou escrever para ela pedindo para me adicionar à lista de destinatários.",
+            "kr": "알겠어. 그녀한테 수신자 목록에 나를 추가해 달라고 이메일 보낼게.",
+            "jp": "わかりました。受信者リストに私を追加してもらうよう、彼女に連絡します。",
+            "zh": "明白了。我给她写邮件，让她把我加进收件人列表。",
+            "ru": "Понятно. Я напишу ей, чтобы она добавила меня в список получателей."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Лучше сначала спроси у руководителя, чтобы не нарушать правила.",
+            "en": "Better to ask the manager first, so we don't break any rules.",
+            "es": "Mejor pregunta primero al jefe, para no saltarse las normas.",
+            "fr": "Il vaut mieux d'abord demander au responsable pour ne pas enfreindre les règles.",
+            "pt": "Melhor perguntar primeiro ao chefe, para não violar as regras.",
+            "kr": "규칙을 어기지 않으려면 먼저 팀장님께 물어보는 게 좋아.",
+            "jp": "ルールを破らないように、まず上司に確認したほうがいいですよ。",
+            "zh": "最好先问一下领导，免得违反规定。",
+            "ru": "Лучше сначала спроси у руководителя, чтобы не нарушать правила."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты прав, я уточню у него. Спасибо за подсказку.",
+            "en": "You're right, I'll check with him. Thanks for the tip.",
+            "es": "Tienes razón, se lo consultaré. Gracias por la sugerencia.",
+            "fr": "Tu as raison, je vais lui demander. Merci pour le conseil.",
+            "pt": "Você tem razão, vou confirmar com ele. Obrigada pela dica.",
+            "kr": "네 말이 맞아, 팀장님께 확인할게. 조언 고마워.",
+            "jp": "その通りですね、上司に確認します。アドバイスありがとうございます。",
+            "zh": "你说得对，我去跟他确认一下。谢谢你的提醒。",
+            "ru": "Ты прав, я уточню у него. Спасибо за подсказку."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не за что. Если что-то ещё нужно, обращайся.",
+            "en": "No problem. If you need anything else, just ask.",
+            "es": "De nada. Si necesitas algo más, no dudes en pedírmelo.",
+            "fr": "De rien. Si tu as besoin d'autre chose, n'hésite pas.",
+            "pt": "De nada. Se precisar de mais alguma coisa, é só falar.",
+            "kr": "별말을. 또 필요한 게 있으면 연락해.",
+            "jp": "どういたしまして。他に何か必要なことがあれば、声をかけてください。",
+            "zh": "不客气。还有什么需要的话，随时找我。",
+            "ru": "Не за что. Если что-то ещё нужно, обращайся."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, ты получила приглашение на онлайн-встречу от проектной группы?",
+            "en": "Anna, did you get the invitation to the online meeting from the project team?",
+            "es": "Ana, ¿has recibido la invitación a la reunión en línea del grupo del proyecto?",
+            "fr": "Anna, tu as reçu l'invitation à la réunion en ligne du groupe de projet ?",
+            "pt": "Anna, você recebeu o convite para a reunião online do grupo do projeto?",
+            "kr": "안나, 프로젝트 팀에서 온 온라인 회의 초대장 받았어?",
+            "jp": "アンナさん、プロジェクトチームからオンラインミーティングの招待を受け取りましたか？",
+            "zh": "安娜，你收到项目组发的线上会议邀请了吗？",
+            "ru": "Анна, ты получила приглашение на онлайн-встречу от проектной группы?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, получила. Но время встречи мне не очень удобно, у меня занятия.",
+            "en": "Yes, I got it. But the meeting time isn't very convenient for me, I have classes.",
+            "es": "Sí, la he recibido. Pero la hora no me viene muy bien, tengo clases.",
+            "fr": "Oui, je l'ai reçue. Mais l'heure de la réunion ne m'arrange pas vraiment, j'ai des cours.",
+            "pt": "Sim, recebi. Mas o horário da reunião não é muito conveniente para mim, eu tenho aula.",
+            "kr": "응, 받았어. 그런데 회의 시간이 나한테 좀 안 맞아, 수업이 있어.",
+            "jp": "はい、受け取りました。でも、会議の時間が都合が悪くて、授業があるんです。",
+            "zh": "收到了。但会议时间对我来说不太方便，我有课。",
+            "ru": "Да, получила. Но время встречи мне не очень удобно, у меня занятия."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Жаль. Может, попросим перенести её на час позже?",
+            "en": "That's too bad. Maybe we can ask to move it an hour later?",
+            "es": "Qué pena. ¿Y si pedimos que la trasladen una hora más tarde?",
+            "fr": "Dommage. Et si on demandait de la décaler d'une heure ?",
+            "pt": "Que pena. Será que podemos pedir para adiar uma hora?",
+            "kr": "아쉽네. 한 시간 늦추자고 요청해 볼까?",
+            "jp": "残念ですね。一時間遅らせてもらうようお願いしてみませんか？",
+            "zh": "那太可惜了。要不我们请他们把会议推迟一个小时？",
+            "ru": "Жаль. Может, попросим перенести её на час позже?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я могу написать организатору и предложить другое время.",
+            "en": "I can write to the organizer and suggest a different time.",
+            "es": "Puedo escribir al organizador y proponer otra hora.",
+            "fr": "Je peux écrire à l'organisateur et proposer un autre créneau.",
+            "pt": "Eu posso escrever para o organizador e sugerir outro horário.",
+            "kr": "내가 주최자한테 이메일 보내서 다른 시간을 제안할 수 있어.",
+            "jp": "主催者に連絡して、別の時間を提案してみます。",
+            "zh": "我可以给组织者写邮件，提议换个时间。",
+            "ru": "Я могу написать организатору и предложить другое время."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Было бы здорово. Только уточни, удобно ли это остальным участникам.",
+            "en": "That would be great. Just check if it works for the other participants.",
+            "es": "Sería genial. Solo confirma si les viene bien a los demás participantes.",
+            "fr": "Ce serait génial. Demande juste si ça convient aux autres participants.",
+            "pt": "Seria ótimo. Só confirme se é conveniente para os outros participantes.",
+            "kr": "그럼 좋지. 다른 참석자들한테도 괜찮은지 확인해 줘.",
+            "jp": "それはいいですね。ただ、他の参加者にとって都合がいいか確認してください。",
+            "zh": "那就太好了。不过你确认一下其他参会者是否方便。",
+            "ru": "Было бы здорово. Только уточни, удобно ли это остальным участникам."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно. Я отправлю письмо и сообщу тебе о результате.",
+            "en": "Of course. I'll send the email and let you know how it goes.",
+            "es": "Claro. Enviaré el correo y te informaré del resultado.",
+            "fr": "Bien sûr. J'enverrai le courriel et je te tiendrai au courant du résultat.",
+            "pt": "Claro. Vou enviar o e-mail e te aviso sobre o resultado.",
+            "kr": "물론이지. 이메일 보내고 결과를 너한테 알려줄게.",
+            "jp": "もちろんです。メールを送って、結果をあなたに知らせます。",
+            "zh": "当然。我发完邮件后告诉你结果。",
+            "ru": "Конечно. Я отправлю письмо и сообщу тебе о результате."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты не забыл отправить документы в архив, как просил начальник?",
+            "en": "Ivan, did you forget to send the documents to the archive, like the boss asked?",
+            "es": "Iván, ¿no olvidaste enviar los documentos al archivo, como pidió el jefe?",
+            "fr": "Ivan, tu n'as pas oublié d'envoyer les documents aux archives, comme le chef l'a demandé ?",
+            "pt": "Ivan, você não esqueceu de enviar os documentos para o arquivo, como o chefe pediu?",
+            "kr": "이반, 팀장님이 부탁한 대로 서류를 아카이브에 보내는 거 잊지 않았지?",
+            "jp": "イワンさん、上司が頼んだ書類をアーカイブに送るのを忘れていませんか？",
+            "zh": "伊万，你没忘记把文件发到档案室吧，领导交代过的？",
+            "ru": "Иван, ты не забыл отправить документы в архив, как просил начальник?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, я уже отправил их утром. Но я не получил подтверждение о получении.",
+            "en": "No, I already sent them in the morning. But I didn't get a confirmation that they received them.",
+            "es": "No, ya los envié por la mañana. Pero no he recibido confirmación de recepción.",
+            "fr": "Non, je les ai déjà envoyés ce matin. Mais je n'ai pas reçu de confirmation de réception.",
+            "pt": "Não, eu já enviei de manhã. Mas não recebi a confirmação de recebimento.",
+            "kr": "아니, 아침에 이미 보냈어. 그런데 접수 확인을 받지 못했어.",
+            "jp": "いいえ、もう朝に送りました。でも、受領の確認が来ていません。",
+            "zh": "没有，我早上已经发出去了。但我还没收到确认回执。",
+            "ru": "Нет, я уже отправил их утром. Но я не получил подтверждение о получении."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Странно. Может, стоит написать им повторно и уточнить?",
+            "en": "That's strange. Maybe we should write to them again and check?",
+            "es": "Qué raro. ¿Quizás deberías escribirles de nuevo para confirmarlo?",
+            "fr": "C'est étrange. Peut-être qu'il faudrait leur réécrire pour vérifier ?",
+            "pt": "Que estranho. Talvez valha a pena escrever para eles de novo e perguntar?",
+            "kr": "이상하네. 다시 이메일 보내서 확인해 보는 게 좋겠어?",
+            "jp": "変ですね。もう一度送って確認してみてはどうですか？",
+            "zh": "奇怪。要不要再给他们写一封邮件问一下？",
+            "ru": "Странно. Может, стоит написать им повторно и уточнить?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я как раз собирался. Напишу им сегодня после обеда.",
+            "en": "Yeah, I was just about to. I'll write to them this afternoon.",
+            "es": "Sí, justo iba a hacerlo. Les escribiré esta tarde después de comer.",
+            "fr": "Oui, j'allais justement le faire. Je leur écrirai cet après-midi.",
+            "pt": "Sim, eu estava justamente pensando nisso. Vou escrever hoje à tarde.",
+            "kr": "응, 나 막 보내려고 했어. 오늘 오후에 보낼게.",
+            "jp": "はい、ちょうど送ろうと思っていました。今日の午後に送ります。",
+            "zh": "是的，我正打算这么做。我今天下午给他们写。",
+            "ru": "Да, я как раз собирался. Напишу им сегодня после обеда."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хорошо. Если будут проблемы, скажи мне, я помогу разобраться.",
+            "en": "Okay. If there are any problems, let me know, I'll help you sort it out.",
+            "es": "Bien. Si hay algún problema, dímelo y te ayudo a resolverlo.",
+            "fr": "Bien. S'il y a un problème, dis-le-moi, je t'aiderai à y voir clair.",
+            "pt": "Certo. Se houver problemas, me avise, eu ajudo a resolver.",
+            "kr": "좋아. 문제가 생기면 말해, 내가 해결하는 데 도와줄게.",
+            "jp": "わかりました。問題があれば言ってください。一緒に解決します。",
+            "zh": "好的。如果有问题，你告诉我，我帮你解决。",
+            "ru": "Хорошо. Если будут проблемы, скажи мне, я помогу разобраться."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо, Анна. Надеюсь, всё решится быстро.",
+            "en": "Thanks, Anna. I hope it all gets resolved quickly.",
+            "es": "Gracias, Ana. Espero que todo se solucione rápido.",
+            "fr": "Merci, Anna. J'espère que tout se résoudra rapidement.",
+            "pt": "Obrigado, Anna. Espero que tudo se resolva rápido.",
+            "kr": "고마워, 안나. 모든 게 빨리 해결되길 바라.",
+            "jp": "ありがとうございます、アンナさん。すぐに解決するといいのですが。",
+            "zh": "谢谢你，安娜。希望事情能很快解决。",
+            "ru": "Спасибо, Анна. Надеюсь, всё решится быстро."
+          }
+        }
+      ]
+    }
+  ]
+}

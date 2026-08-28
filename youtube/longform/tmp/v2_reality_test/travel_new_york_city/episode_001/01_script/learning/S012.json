@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S012",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "source_dialogue": {
+    "source_scene_id": "S012",
+    "source_line_ids": [
+      "L001",
+      "L002",
+      "L003"
+    ]
+  },
+  "key_expressions": [
+    {
+      "key_expression_id": "KE001",
+      "source_line_ids": [
+        "L001"
+      ],
+      "expression": "Why is the train stopping?",
+      "meaning": "기차가 왜 멈추는지 궁금해하며 이유를 묻는 표현.",
+      "usage": "예상치 못한 상황(교통수단이 갑자기 멈추거나 지연될 때)에서 이유를 궁금해하거나 불만을 표현할 때 쓴다. 가까운 사람에게나 혼잣말로도 자연스럽게 쓸 수 있다.",
+      "context": "지하철이 역과 역 사이에서 갑자기 멈추자, 지은이 혼잣말로 왜 멈췄는지 의아해하며 묻는 상황이다.",
+      "communicative_function": "expressing concern",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "Why is the train stopping here?",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE002",
+      "source_line_ids": [
+        "L002"
+      ],
+      "expression": "That's a little scary.",
+      "meaning": "조금 무섭다, 약간 겁이 난다는 감정을 표현하는 말.",
+      "usage": "무섭거나 불안한 상황에서 자신의 감정을 솔직하게 표현할 때 쓴다. 'a little'을 써서 강도를 약하게 표현할 수 있다.",
+      "context": "지하철이 멈추고 조명이 깜빡이자, 지은이 약간 무섭다고 느끼는 감정을 혼잣말로 표현하는 상황이다.",
+      "communicative_function": "expressing concern",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "That's a bit scary.",
+      "common_mistake": "형용사 'scary'를 'scared'로 혼동하는 경우가 많다. 'scary'는 '무서운'이라는 느낌을 주는 대상이나 상황을, 'scared'는 '겁먹은' 감정 상태를 나타낸다.",
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE003",
+      "source_line_ids": [
+        "L003"
+      ],
+      "expression": "I hope this doesn't take too long.",
+      "meaning": "이 일이 너무 오래 걸리지 않았으면 좋겠다는 바람을 나타내는 표현.",
+      "usage": "지연이나 불확실한 상황에서 일이 빨리 해결되기를 바랄 때 쓴다. 'this' 대신 특정 상황을 지칭하는 다른 명사를 넣어 쓸 수 있다.",
+      "context": "지하철이 언제 다시 움직일지 모르는 상황에서, 지은이가 지연이 길어지지 않기를 바라는 마음을 혼잣말로 표현하는 상황이다.",
+      "communicative_function": "expressing concern",
+      "difficulty": "A2",
+      "priority": "useful",
+      "variation": "I hope this doesn't take long.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    }
+  ],
+  "validation": {
+    "expression_count": 3,
+    "all_expressions_exist_in_dialogue": true,
+    "source_lines_valid": true,
+    "cefr_appropriate": true
+  }
+}

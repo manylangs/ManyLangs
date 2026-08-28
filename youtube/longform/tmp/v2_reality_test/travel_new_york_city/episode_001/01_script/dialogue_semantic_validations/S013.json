@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S013",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "The subway train resumes moving",
+      "pass": true,
+      "evidence": "Line L001: \"Oh, we're moving again. That's a relief.\" explicitly confirms the train has resumed moving."
+    },
+    {
+      "requirement": "Jieun feels relieved",
+      "pass": true,
+      "evidence": "Line L001: \"That's a relief\" directly expresses her feeling of relief. Line L002: \"It looks beautiful\" shows a positive emotional shift."
+    },
+    {
+      "requirement": "Jieun continues to watch for her stop",
+      "pass": true,
+      "evidence": "Line L003: \"I need to watch for my stop. I don't want to miss it.\" explicitly states she is watching for her stop."
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the subway journey",
+      "pass": true,
+      "evidence": "All lines take place on the moving subway train, with no mention of arriving at a station or exiting the train."
+    },
+    {
+      "requirement": "Do not introduce another travel problem",
+      "pass": true,
+      "evidence": "The dialogue focuses on relief and watching for the stop, with no new problems introduced."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

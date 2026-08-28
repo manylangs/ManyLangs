@@ -1,0 +1,29 @@
+ORDER: 050/065
+SCENE: S016
+SHOT: SHOT_002
+DURATION: 8.0 seconds
+ASPECT RATIO: 16:9
+RESOLUTION: 1080p
+
+REFERENCE IMAGE:
+- _references/jieun_primary.png
+
+PROMPT:
+A medium shot at eye level with a static locked camera shows a young Korean woman with an oval face, soft features, natural eyebrows, dark brown eyes, light natural makeup, and a warm friendly expression, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch, with shoulder-length dark brown hair straight with slight natural waves tucked behind ears, carrying a medium-sized travel backpack on her back, a small crossbody bag across her body, and a checked suitcase stopped beside her, standing at the front desk facing the employee. A local woman in her 30s or 40s with a friendly and professional expression, neatly styled hair, wearing a hotel uniform or smart business attire with a name tag, stands behind the front desk facing Jieun. The front desk employee looks at the computer screen, asks Jieun to spell her last name, and checks the reservation system while Jieun stands attentively with her luggage. The hotel lobby has bright natural daylight coming through the windows mixed with warm indoor lighting, a few guests walking through the lobby, soft background music, and occasional sounds of the elevator and distant conversation. Jieun remains standing at the front desk facing the employee, still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase, with the checked suitcase stopped beside her. The front desk employee remains behind the front desk, looking at the computer screen. No change to character identity, clothing, location, or prop state.
+
+NEGATIVE / DO-NOT-CHANGE NOTES:
+- Do not change character identity.
+- Do not change canonical location identity.
+- Do not introduce new characters.
+- Do not introduce new locations.
+- Do not alter canonical prop state.
+- Do not change story events.
+- Do not show Jieun moving past the hotel lobby.
+- Do not show Jieun leaving the hotel.
+- Do not show Jieun's suitcase being lost or missing.
+- Do not show Jieun's passport or smartphone being dropped or lost.
+- Do not introduce a new travel problem.
+- Do not show Jieun receiving her room key before the check-in process is complete.
+
+OUTPUT FILE:
+S016_SHOT_002.mp4

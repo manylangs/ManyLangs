@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Pedir comida",
+  "sets": {
+    "001": [
+      "¿Me traes el menú, por favor?",
+      "Claro, enseguida. ¿Quieres ver primero las bebidas?",
+      "Sí, tráeme un agua con gas, por favor.",
+      "Muy bien. ¿Y de primero, qué te apetece?",
+      "Quiero la sopa de verduras.",
+      "Buena elección. Te la traigo en unos minutos."
+    ],
+    "002": [
+      "¿Qué me recomiendas hoy?",
+      "El pescado a la plancha está muy bueno.",
+      "Vale, pues pongo eso.",
+      "¿Lo quieres con ensalada o con patatas?",
+      "Con ensalada, por favor.",
+      "Perfecto, en seguida lo pido en la cocina."
+    ],
+    "003": [
+      "¿Está libre esta mesa?",
+      "Sí, siéntate cuando quieras. ¿Te traigo la carta?",
+      "Sí, por favor. También quiero pedir pan.",
+      "Muy bien, te traigo pan y la carta ahora mismo.",
+      "Gracias, eres muy amable.",
+      "No es nada, cualquier cosa me dices."
+    ],
+    "004": [
+      "¿Me pones otra ración de croquetas?",
+      "¿Te han gustado tanto?",
+      "Sí, están riquísimas.",
+      "Me alegro mucho. ¿Te traigo también otra bebida?",
+      "Sí, otra cerveza, por favor.",
+      "Ahora mismo te la traigo."
+    ],
+    "005": [
+      "Perdona, ¿esto es sin gluten?",
+      "Sí, todos los platos del menú lo indican.",
+      "Ah, perfecto. Entonces quiero la pasta.",
+      "Muy bien, ¿y para beber?",
+      "Un refresco de limón, por favor.",
+      "Anotado. Te aviso si hay alguna duda."
+    ],
+    "006": [
+      "¿Cuál es el plato del día?",
+      "Hoy tenemos paella de marisco.",
+      "¡Qué bien! Me encanta la paella.",
+      "Es una buena elección, sí. ¿La pido para ti?",
+      "Sí, por favor. Y una ensalada mixta.",
+      "Muy bien, en un momento te la traigo."
+    ],
+    "007": [
+      "¿Me trae la cuenta, por favor?",
+      "Claro, ¿todo ha estado bien?",
+      "Sí, todo riquísimo, muchas gracias.",
+      "Me alegro mucho. ¿Quieres pagar en efectivo?",
+      "No, con tarjeta, por favor.",
+      "Perfecto, te traigo el datáfono ahora."
+    ],
+    "008": [
+      "¿Tienen algún postre casero?",
+      "Sí, hoy tenemos tarta de manzana.",
+      "¡Qué rica! Pues una porción, por favor.",
+      "¿La quieres con helado de vainilla?",
+      "Sí, eso estaría genial.",
+      "Muy bien, te la preparo en seguida."
+    ],
+    "009": [
+      "¿Me puedes traer un poco más de agua?",
+      "Sí, claro. ¿Y algo más?",
+      "No, solo el agua, gracias.",
+      "¿Seguro que no quieres un café?",
+      "Bueno, un café solo, sí.",
+      "Ahora mismo te lo traigo."
+    ],
+    "010": [
+      "¿Este plato lleva frutos secos?",
+      "Sí, lleva almendras. ¿Eres alérgico?",
+      "Sí, soy alérgico a los frutos secos.",
+      "Entonces te recomiendo el arroz con verduras.",
+      "Vale, pues eso pido.",
+      "Perfecto, se lo digo a la cocina."
+    ]
+  },
+  "level": "a1",
+  "chapter_id": "CONV_ES_ORDERING_FOOD",
+  "id": "009",
+  "target_lang": "es"
+}

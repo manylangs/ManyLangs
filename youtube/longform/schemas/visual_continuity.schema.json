@@ -1,0 +1,386 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/visual_continuity.schema.json",
+  "title": "ManyLangs Longform Visual Continuity",
+  "description": "Episode-level visual continuity state shared across scenes and shots before provider-specific video generation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "episode_id",
+    "scene_id",
+    "shot_id",
+    "character_states",
+    "location_state",
+    "prop_states",
+    "environment_state",
+    "story_visual_state",
+    "continuity_links",
+    "locks"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "content_version",
+        "revision",
+        "generated_by"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "2.0"
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "generated_by": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type",
+            "provider",
+            "model"
+          ],
+          "properties": {
+            "type": {
+              "const": "ai"
+            },
+            "provider": {
+              "type": "string",
+              "minLength": 1
+            },
+            "model": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "episode_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scene_id": {
+      "type": "string",
+      "pattern": "^S[0-9]{3}$"
+    },
+    "shot_id": {
+      "type": "string",
+      "pattern": "^SHOT_[0-9]{3}$"
+    },
+    "character_states": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "character_ref",
+          "identity_lock",
+          "appearance",
+          "hair",
+          "clothing",
+          "carried_items",
+          "body_state",
+          "emotion"
+        ],
+        "properties": {
+          "character_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "identity_lock": {
+            "type": "boolean"
+          },
+          "appearance": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "hair": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "clothing": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "carried_items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "body_state": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "emotion": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "location_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "location_ref",
+        "identity_lock",
+        "persistent_features",
+        "current_zone",
+        "orientation_state"
+      ],
+      "properties": {
+        "location_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "identity_lock": {
+          "type": "boolean"
+        },
+        "persistent_features": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "current_zone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "orientation_state": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "prop_states": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "prop_id",
+          "owner_ref",
+          "state",
+          "position",
+          "visible",
+          "continuity_lock"
+        ],
+        "properties": {
+          "prop_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "owner_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "state": {
+            "type": "string",
+            "minLength": 1
+          },
+          "position": {
+            "type": "string",
+            "minLength": 1
+          },
+          "visible": {
+            "type": "boolean"
+          },
+          "continuity_lock": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "environment_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "time_of_day",
+        "weather",
+        "lighting",
+        "crowd_state"
+      ],
+      "properties": {
+        "time_of_day": {
+          "type": "string",
+          "minLength": 1
+        },
+        "weather": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "lighting": {
+          "type": "string",
+          "minLength": 1
+        },
+        "crowd_state": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "story_visual_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "resolved_visual_facts",
+        "unresolved_visual_facts",
+        "must_remain_visible",
+        "must_not_appear"
+      ],
+      "properties": {
+        "resolved_visual_facts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "unresolved_visual_facts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "must_remain_visible": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "must_not_appear": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "continuity_links": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "previous_scene_id",
+        "previous_shot_id",
+        "next_scene_id",
+        "next_shot_id",
+        "carry_in",
+        "carry_out"
+      ],
+      "properties": {
+        "previous_scene_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^S[0-9]{3}$"
+        },
+        "previous_shot_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^SHOT_[0-9]{3}$"
+        },
+        "next_scene_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^S[0-9]{3}$"
+        },
+        "next_shot_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^SHOT_[0-9]{3}$"
+        },
+        "carry_in": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "carry_out": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "locks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "character_identity",
+        "clothing",
+        "location_identity",
+        "prop_state",
+        "timeline",
+        "weather",
+        "story_state"
+      ],
+      "properties": {
+        "character_identity": {
+          "const": true
+        },
+        "clothing": {
+          "type": "boolean"
+        },
+        "location_identity": {
+          "const": true
+        },
+        "prop_state": {
+          "type": "boolean"
+        },
+        "timeline": {
+          "const": true
+        },
+        "weather": {
+          "type": "boolean"
+        },
+        "story_state": {
+          "const": true
+        }
+      }
+    }
+  }
+}

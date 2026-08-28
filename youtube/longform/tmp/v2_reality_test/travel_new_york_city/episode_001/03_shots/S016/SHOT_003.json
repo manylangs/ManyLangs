@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S016",
+  "shot_id": "SHOT_003",
+  "sequence": 3,
+  "duration_seconds": 6.0,
+  "location_ref": "LOC_MANHATTAN_HOTEL_001",
+  "character_refs": [
+    "CHAR_JIEUN_001",
+    "B"
+  ],
+  "visual_intent": "Show the front desk employee handing the room key to Jieun and pointing toward the elevator.",
+  "framing": {
+    "shot_size": "medium_close",
+    "subject_priority": [
+      "B",
+      "PROP_ROOM_KEY_001",
+      "CHAR_JIEUN_001"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "B",
+    "description": "The front desk employee hands the room key to Jieun, then points toward the elevator.",
+    "start_state": [
+      "The front desk employee has confirmed the reservation",
+      "Jieun is standing at the front desk"
+    ],
+    "end_state": [
+      "Jieun is holding the room key in her hand",
+      "The front desk employee is pointing toward the elevator"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "welcoming and helpful",
+    "supporting": {
+      "CHAR_JIEUN_001": "relieved and happy"
+    }
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on Jieun's back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "standing beside Jieun",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_ROOM_KEY_001",
+      "state": "being handed to Jieun by the employee",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L005",
+      "L006",
+      "L007",
+      "L008"
+    ],
+    "speaker_focus": "B"
+  },
+  "continuity": {
+    "carry_in": [
+      "The front desk employee has confirmed the reservation",
+      "Jieun is still standing at the front desk",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase"
+    ],
+    "carry_out": [
+      "Jieun is holding her room key",
+      "The front desk employee has pointed toward the elevator",
+      "Jieun is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

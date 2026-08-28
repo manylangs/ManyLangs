@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S009",
+  "sequence": 9,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "characters": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "local_character_id": null,
+      "role": "protagonist",
+      "gender": "female",
+      "visual_state": {
+        "appearance": [
+          "Oval face with soft features",
+          "Natural eyebrows",
+          "Dark brown eyes",
+          "Light natural makeup",
+          "Warm friendly expression",
+          "Shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears"
+        ],
+        "clothing": [
+          "White casual t-shirt",
+          "Light blue denim jacket",
+          "Dark blue skinny jeans",
+          "White sneakers",
+          "Small silver earrings",
+          "Simple wristwatch"
+        ],
+        "carried_items": [
+          "Medium-sized travel backpack",
+          "Small crossbody bag",
+          "Smartphone",
+          "Passport",
+          "Checked suitcase"
+        ]
+      },
+      "emotion": "excited but slightly uncertain, seeking help to understand the subway payment and train direction",
+      "screen_action": "Approaches the transit employee at the station, asks how to pay for the subway and which train to take toward Manhattan, then looks toward the ticket machine and platform signs"
+    },
+    {
+      "character_ref": null,
+      "local_character_id": "B",
+      "role": "supporting",
+      "gender": "female",
+      "visual_state": {
+        "appearance": [
+          "Female transit employee in her 30s",
+          "Neat professional appearance",
+          "Friendly and helpful expression"
+        ],
+        "clothing": [
+          "Transit authority uniform with visible badge",
+          "Dark-colored uniform pants",
+          "Comfortable work shoes"
+        ],
+        "carried_items": [
+          "Small handheld radio"
+        ]
+      },
+      "emotion": "helpful and patient",
+      "screen_action": "Stands near the station entrance, points toward the ticket machine, explains the payment process, and directs Jieun to Platform 2 for the Downtown train"
+    }
+  ],
+  "environment": {
+    "time_of_day": "day",
+    "weather": null,
+    "lighting": "bright indoor station lighting with natural daylight coming from the platform entrances",
+    "background_activity": [
+      "A few passengers walking toward the platforms",
+      "Passengers checking the departure boards",
+      "Transit announcements playing over the intercom"
+    ]
+  },
+  "visual_goal": "The viewer sees Jieun successfully get help from a transit employee, understand how to buy a subway ticket, and learn that the Downtown train on Platform 2 will take her to Manhattan.",
+  "actions": [
+    {
+      "sequence": 1,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "walks toward the transit employee near the station entrance",
+      "object_ref": null
+    },
+    {
+      "sequence": 2,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "asks how to pay for the subway to Manhattan",
+      "object_ref": null
+    },
+    {
+      "sequence": 3,
+      "actor_ref": "B",
+      "action": "points toward the ticket machine and explains how to buy a ticket",
+      "object_ref": null
+    },
+    {
+      "sequence": 4,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "looks toward the ticket machine and then asks which train to take",
+      "object_ref": null
+    },
+    {
+      "sequence": 5,
+      "actor_ref": "B",
+      "action": "points toward the platform signs and says to take the Downtown train on Platform 2",
+      "object_ref": null
+    },
+    {
+      "sequence": 6,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "nods in understanding, looks at the ticket machine and then toward Platform 2",
+      "object_ref": null
+    }
+  ],
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "description": "Medium-sized travel backpack",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "description": "Small crossbody bag",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "description": "Smartphone",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "description": "Passport",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "description": "Jieun's checked suitcase that she retrieved from the carousel",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    }
+  ],
+  "must_show": [
+    "Jieun arriving at the subway station area after the AirTrain ride",
+    "Jieun asking the transit employee for help with paying for the subway",
+    "The transit employee pointing toward the ticket machine",
+    "Jieun asking which train to take toward Manhattan",
+    "The transit employee directing Jieun to the Downtown train on Platform 2",
+    "Jieun looking toward the ticket machine and Platform 2 with understanding"
+  ],
+  "must_not_show": [
+    "Jieun moving past the subway station or boarding a train",
+    "Specific ticket prices or payment method details",
+    "Jieun resolving the payment issue without help",
+    "Any unexplained change to Jieun's clothing or carried items"
+  ],
+  "visual_continuity": {
+    "carry_in": [
+      "Jieun is on the AirTrain heading toward the subway connection",
+      "She is watching the city appear through the windows",
+      "She feels a sense of excitement about arriving in Manhattan"
+    ],
+    "carry_out": [
+      "Jieun has figured out how to pay for the subway with help",
+      "She is now waiting on the platform for the correct train toward Manhattan",
+      "She feels more confident about navigating the transit system"
+    ],
+    "start_state": [
+      "Jieun arrives at the subway station area after the AirTrain ride",
+      "She is holding her suitcase handle and wearing her backpack",
+      "She looks around with a mix of excitement and uncertainty"
+    ],
+    "end_state": [
+      "Jieun is standing near the ticket machine area, looking toward Platform 2",
+      "She has a more confident expression after receiving directions",
+      "She is preparing to buy a ticket and head to the platform"
+    ]
+  },
+  "production_constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_story_continuity": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S007",
+  "shot_id": "SHOT_001",
+  "sequence": 1,
+  "duration_seconds": 8.0,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001",
+    "B"
+  ],
+  "visual_intent": "Show Jieun approaching the transit employee and asking for advice in the ground transportation area.",
+  "framing": {
+    "shot_size": "medium_wide",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "B"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun walks toward the transit employee, stops in front of him, and asks for advice.",
+    "start_state": [
+      "Jieun is standing in the ground transportation area holding her suitcase handle.",
+      "She has a thoughtful, unsure expression."
+    ],
+    "end_state": [
+      "Jieun is standing in front of the transit employee.",
+      "The employee is facing her, ready to respond."
+    ]
+  },
+  "emotion": {
+    "primary_actor": "unsure and thoughtful",
+    "supporting": {
+      "B": "helpful and professional"
+    }
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "held by handle",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L001",
+      "L002"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is at the ground transportation area considering her options.",
+      "She is comparing taxi, ride-sharing, and public transit.",
+      "She is unsure which option is the most practical."
+    ],
+    "carry_out": [
+      "Jieun is standing in front of the transit employee.",
+      "The employee is facing her and ready to help."
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

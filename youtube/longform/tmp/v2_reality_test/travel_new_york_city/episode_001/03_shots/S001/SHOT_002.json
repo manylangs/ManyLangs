@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S001",
+  "shot_id": "SHOT_002",
+  "sequence": 2,
+  "duration_seconds": 7.0,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun gathering her backpack and crossbody bag, then checking her smartphone to confirm her belongings.",
+  "framing": {
+    "shot_size": "medium",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "PROP_BACKPACK_001",
+      "PROP_SMARTPHONE_001"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "static",
+    "stability": "smooth"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun gathers her travel backpack and crossbody bag, then checks her smartphone.",
+    "start_state": [
+      "Jieun is seated on the airplane, looking out the window",
+      "Her backpack and crossbody bag are with her"
+    ],
+    "end_state": [
+      "Jieun is holding her smartphone, having confirmed her belongings are with her"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "slightly nervous but relieved",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "held by Jieun",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "state": "held in Jieun's hand",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L002"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is seated on the airplane, looking out the window at the terminal"
+    ],
+    "carry_out": [
+      "Jieun is holding her smartphone, having confirmed her belongings are with her"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

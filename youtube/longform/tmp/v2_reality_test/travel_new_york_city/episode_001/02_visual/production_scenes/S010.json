@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S010",
+  "sequence": 10,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "characters": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "local_character_id": null,
+      "role": "protagonist",
+      "gender": "female",
+      "visual_state": {
+        "appearance": [
+          "Oval face with soft features",
+          "Natural eyebrows",
+          "Dark brown eyes",
+          "Light natural makeup",
+          "Warm friendly expression",
+          "Shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears"
+        ],
+        "clothing": [
+          "White casual t-shirt",
+          "Light blue denim jacket",
+          "Dark blue skinny jeans",
+          "White sneakers",
+          "Small silver earrings",
+          "Simple wristwatch"
+        ],
+        "carried_items": [
+          "Medium-sized travel backpack",
+          "Small crossbody bag",
+          "Smartphone",
+          "Passport",
+          "Checked suitcase"
+        ]
+      },
+      "emotion": "excited and more confident, with a growing sense of wonder as she observes the city",
+      "screen_action": "Boards the subway train, holds onto a pole with one hand, and looks around at the other passengers and out the window as the train moves"
+    }
+  ],
+  "environment": {
+    "time_of_day": "day",
+    "weather": null,
+    "lighting": "bright indoor subway car lighting with natural daylight streaming through the windows",
+    "background_activity": [
+      "A few passengers seated and standing",
+      "Some passengers reading books or looking at their phones",
+      "The train moving with a rhythmic sound and slight sway"
+    ]
+  },
+  "visual_goal": "The viewer sees Jieun confidently riding the subway, holding onto a pole, and observing the busy passengers and the city passing by outside the window, feeling the excitement of being in New York.",
+  "actions": [
+    {
+      "sequence": 1,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "boards the subway train and moves to an open spot near a pole",
+      "object_ref": null
+    },
+    {
+      "sequence": 2,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "grasps the pole with one hand to steady herself",
+      "object_ref": null
+    },
+    {
+      "sequence": 3,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "looks around at the other passengers on the train",
+      "object_ref": null
+    },
+    {
+      "sequence": 4,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "turns her gaze toward the window and watches the city pass by",
+      "object_ref": null
+    }
+  ],
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "description": "Medium-sized travel backpack",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "description": "Small crossbody bag",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "description": "Smartphone",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "description": "Passport",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "description": "Jieun's checked suitcase that she retrieved from the carousel",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    }
+  ],
+  "must_show": [
+    "Jieun boards the subway train toward Manhattan",
+    "Jieun holds onto a pole inside the train",
+    "Jieun observes the other passengers on the train",
+    "The city is visible passing by outside the train window"
+  ],
+  "must_not_show": [
+    "Jieun must not move past the subway journey",
+    "No problems or incidents with the subway ride",
+    "No unexplained changes to Jieun's clothing or appearance"
+  ],
+  "visual_continuity": {
+    "carry_in": [
+      "Jieun has figured out how to pay for the subway with help",
+      "She is now waiting on the platform for the correct train toward Manhattan",
+      "She feels more confident about navigating the transit system"
+    ],
+    "carry_out": [
+      "Jieun is on the subway train heading toward Manhattan",
+      "She is observing the other passengers and the city through the windows",
+      "She feels a growing sense of excitement"
+    ],
+    "start_state": [
+      "Jieun is standing on the subway platform as the train arrives",
+      "She is holding her suitcase handle and wearing her backpack",
+      "She looks determined and ready to board"
+    ],
+    "end_state": [
+      "Jieun is standing inside the moving subway train, holding onto a pole",
+      "She is looking out the window at the city passing by",
+      "Her expression shows excitement and wonder"
+    ]
+  },
+  "production_constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_story_continuity": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false
+  }
+}

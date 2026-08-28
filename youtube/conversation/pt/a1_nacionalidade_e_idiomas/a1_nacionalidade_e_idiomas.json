@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "003"
+  },
+  "title": {
+    "target": "Nacionalidade e Idiomas",
+    "en": "Nationality and Languages",
+    "es": "Nacionalidad e idiomas",
+    "fr": "Nationalité et langues",
+    "pt": "Nacionalidade e Idiomas",
+    "kr": "국적과 언어",
+    "zh": "国籍和语言",
+    "jp": "国籍と言語",
+    "ru": "Национальность и языки"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "De onde você é?",
+            "en": "Where are you from?",
+            "es": "¿De dónde eres?",
+            "fr": "D'où viens-tu ?",
+            "pt": "De onde você é?",
+            "kr": "어디에서 오셨어요?",
+            "zh": "你来自哪里？",
+            "jp": "ご出身はどちらですか？",
+            "ru": "Откуда ты?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Eu sou do Brasil, de São Paulo. E você?",
+            "en": "I'm from Brazil, from São Paulo. And you?",
+            "es": "Soy de Brasil, de São Paulo. ¿Y tú?",
+            "fr": "Je viens du Brésil, de São Paulo. Et toi ?",
+            "pt": "Eu sou do Brasil, de São Paulo. E você?",
+            "kr": "저는 브라질, 상파울루에서 왔어요. 당신은요?",
+            "zh": "我来自巴西，圣保罗。你呢？",
+            "jp": "ブラジルのサンパウロ出身です。あなたは？",
+            "ru": "Я из Бразилии, из Сан-Паулу. А ты?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Eu sou da Coreia, de Seul.",
+            "en": "I'm from Korea, from Seoul.",
+            "es": "Soy de Corea, de Seúl.",
+            "fr": "Je viens de Corée, de Séoul.",
+            "pt": "Eu sou da Coreia, de Seul.",
+            "kr": "저는 한국, 서울에서 왔어요.",
+            "zh": "我来自韩国，首尔。",
+            "jp": "私は韓国のソウル出身です。",
+            "ru": "Я из Кореи, из Сеула."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Que legal! Você fala coreano?",
+            "en": "That's cool! Do you speak Korean?",
+            "es": "¡Qué guay! ¿Hablas coreano?",
+            "fr": "C'est génial ! Tu parles coréen ?",
+            "pt": "Que legal! Você fala coreano?",
+            "kr": "정말요? 한국어 할 줄 아세요?",
+            "zh": "太棒了！你会说韩语吗？",
+            "jp": "すごいですね！韓国語を話しますか？",
+            "ru": "Как здорово! Ты говоришь по-корейски?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Falo, e também estudo português.",
+            "en": "I do, and I'm also studying Portuguese.",
+            "es": "Sí, y también estudio portugués.",
+            "fr": "Oui, je le parle, et j'étudie aussi le portugais.",
+            "pt": "Falo, e também estudo português.",
+            "kr": "네, 할 줄 알고, 포르투갈어도 공부하고 있어요.",
+            "zh": "我会说，而且我也在学习葡萄牙语。",
+            "jp": "話します。そして、ポルトガル語も勉強しています。",
+            "ru": "Говорю, и ещё учу португальский."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Nossa, que demais! Seu português já está muito bom.",
+            "en": "Wow, that's awesome! Your Portuguese is already really good.",
+            "es": "¡Vaya, qué pasada! Tu portugués ya está muy bien.",
+            "fr": "Waouh, c'est super ! Ton portugais est déjà très bon.",
+            "pt": "Nossa, que demais! Seu português já está muito bom.",
+            "kr": "와, 대단하네요! 당신의 포르투갈어는 이미 아주 좋아요.",
+            "zh": "哇，太厉害了！你的葡萄牙语已经非常好了。",
+            "jp": "わあ、すごいですね！もうポルトガル語がとても上手です。",
+            "ru": "Ничего себе, как круто! Твой португальский уже очень хороший."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a1",
+    "id": "001"
+  },
+  "title": {
+    "target": "Приветствия",
+    "en": "Greetings",
+    "es": "Saludos",
+    "fr": "Salutations",
+    "pt": "Saudações",
+    "kr": "인사",
+    "jp": "あいさつ",
+    "zh": "问候",
+    "ru": "Приветствия"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте! Очень приятно познакомиться.",
+            "en": "Hello! It's very nice to meet you.",
+            "es": "¡Hola! Mucho gusto en conocerte.",
+            "fr": "Bonjour ! Enchantée de faire votre connaissance.",
+            "pt": "Olá! Muito prazer em conhecê-lo.",
+            "kr": "안녕하세요! 만나서 정말 반갑습니다.",
+            "jp": "こんにちは！はじめまして、よろしくお願いします。",
+            "zh": "您好！很高兴认识您。",
+            "ru": "Здравствуйте! Очень приятно познакомиться."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Здравствуйте! Мне тоже очень приятно.",
+            "en": "Hello! It's very nice to meet you too.",
+            "es": "¡Hola! El gusto es mío también.",
+            "fr": "Bonjour ! Moi aussi, je suis très enchanté.",
+            "pt": "Olá! O prazer é meu também.",
+            "kr": "안녕하세요! 저도 정말 반갑습니다.",
+            "jp": "こんにちは！こちらこそ、よろしくお願いします。",
+            "zh": "您好！我也很高兴。",
+            "ru": "Здравствуйте! Мне тоже очень приятно."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Как у вас дела?",
+            "en": "How are you doing?",
+            "es": "¿Cómo está usted?",
+            "fr": "Comment allez-vous ?",
+            "pt": "Como você está?",
+            "kr": "어떻게 지내세요?",
+            "jp": "お元気ですか？",
+            "zh": "您最近怎么样？",
+            "ru": "Как у вас дела?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо, хорошо. А у вас?",
+            "en": "I'm fine, thank you. And you?",
+            "es": "Bien, gracias. ¿Y usted?",
+            "fr": "Merci, je vais bien. Et vous ?",
+            "pt": "Estou bem, obrigada. E você?",
+            "kr": "덕분에 잘 지내요. 그쪽은요?",
+            "jp": "おかげさまで、元気です。あなたは？",
+            "zh": "谢谢，挺好的。您呢？",
+            "ru": "Спасибо, хорошо. А у вас?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тоже неплохо. Рада нашему знакомству.",
+            "en": "Not bad either. I'm glad to meet you.",
+            "es": "También bien. Me alegro de nuestro encuentro.",
+            "fr": "Pas mal non plus. Je suis ravie de notre rencontre.",
+            "pt": "Também estou bem. Estou feliz em conhecê-lo.",
+            "kr": "저도 나쁘지 않아요. 만나서 반가워요.",
+            "jp": "私もまあまあです。お会いできてうれしいです。",
+            "zh": "也不错。很高兴认识您。",
+            "ru": "Тоже неплохо. Рада нашему знакомству."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я тоже рад. До встречи!",
+            "en": "I'm glad too. See you later!",
+            "es": "Yo también me alegro. ¡Hasta luego!",
+            "fr": "Moi aussi, je suis ravi. Au revoir !",
+            "pt": "Eu também estou feliz. Até mais!",
+            "kr": "저도 반가워요. 또 뵙겠습니다!",
+            "jp": "私もうれしいです。またお会いしましょう！",
+            "zh": "我也很高兴。再见！",
+            "ru": "Я тоже рад. До встречи!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Привет, Иван! Давно не виделись.",
+            "en": "Hi, Ivan! Long time no see.",
+            "es": "¡Hola, Iván! Cuánto tiempo sin vernos.",
+            "fr": "Salut, Ivan ! On ne s'est pas vus depuis longtemps.",
+            "pt": "Oi, Ivan! Há quanto tempo.",
+            "kr": "안녕, 이반! 오랜만이야.",
+            "jp": "こんにちは、イワンさん！お久しぶりですね。",
+            "zh": "你好，伊万！好久不见了。",
+            "ru": "Привет, Иван! Давно не виделись."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Привет, Анна! Да, очень давно. Как жизнь?",
+            "en": "Hi, Anna! Yes, it's been a long time. How's life?",
+            "es": "¡Hola, Anna! Sí, muchísimo tiempo. ¿Qué tal la vida?",
+            "fr": "Salut, Anna ! Oui, ça fait très longtemps. Comment va la vie ?",
+            "pt": "Oi, Anna! É, faz muito tempo. Como vai a vida?",
+            "kr": "안녕, 안나! 응, 정말 오랜만이네. 잘 지냈어?",
+            "jp": "こんにちは、アンナさん！本当に久しぶりですね。元気でしたか？",
+            "zh": "你好，安娜！是啊，好久不见了。最近怎么样？",
+            "ru": "Привет, Анна! Да, очень давно. Как жизнь?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Всё потихоньку. А ты как?",
+            "en": "Things are going okay. And how about you?",
+            "es": "Todo poco a poco. ¿Y tú qué tal?",
+            "fr": "Ça va doucement. Et toi, comment ça va ?",
+            "pt": "Está tudo na mesma. E você?",
+            "kr": "그럭저럭 지내. 너는 어때?",
+            "jp": "まあまあです。あなたはどう？",
+            "zh": "一切都还行。你呢？",
+            "ru": "Всё потихоньку. А ты как?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тоже нормально. Работаю, отдыхаю.",
+            "en": "I'm doing fine too. Working and relaxing.",
+            "es": "También bien. Trabajo y descanso.",
+            "fr": "Ça va aussi. Je travaille, je me repose.",
+            "pt": "Também está tudo bem. Trabalhando, descansando.",
+            "kr": "나도 괜찮아. 일하고, 쉬고 있지.",
+            "jp": "私も元気ですよ。働いたり、休んだりしています。",
+            "zh": "也不错。工作，休息。",
+            "ru": "Тоже нормально. Работаю, отдыхаю."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично! Надо как-нибудь встретиться.",
+            "en": "Great! We should get together sometime.",
+            "es": "¡Genial! Tenemos que quedar algún día.",
+            "fr": "Super ! Il faudrait qu'on se voie un de ces jours.",
+            "pt": "Ótimo! A gente precisa se encontrar um dia desses.",
+            "kr": "좋네! 언제 한번 만나야겠다.",
+            "jp": "それはよかった！いつか会いましょうね。",
+            "zh": "太好了！咱们得找时间见个面。",
+            "ru": "Отлично! Надо как-нибудь встретиться."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, давай. Позвони мне на неделе.",
+            "en": "Sure, let's do it. Give me a call this week.",
+            "es": "Claro, vamos. Llámame durante la semana.",
+            "fr": "Bien sûr, d'accord. Appelle-moi dans la semaine.",
+            "pt": "Claro, vamos. Me liga durante a semana.",
+            "kr": "그래, 그러자. 이번 주에 전화해 줘.",
+            "jp": "もちろん、いいですね。今週中に電話してください。",
+            "zh": "当然，好啊。这周给我打电话吧。",
+            "ru": "Конечно, давай. Позвони мне на неделе."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Доброе утро! Вы к доктору?",
+            "en": "Good morning! Are you here to see the doctor?",
+            "es": "¡Buenos días! ¿Viene usted al médico?",
+            "fr": "Bonjour ! Vous venez voir le docteur ?",
+            "pt": "Bom dia! Você veio ver o médico?",
+            "kr": "좋은 아침이에요! 의사 선생님 뵈러 오셨나요?",
+            "jp": "おはようございます！診察ですか？",
+            "zh": "早上好！您是来看医生的吗？",
+            "ru": "Доброе утро! Вы к доктору?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Доброе утро! Да, у меня запись на девять.",
+            "en": "Good morning! Yes, I have an appointment at nine.",
+            "es": "¡Buenos días! Sí, tengo cita a las nueve.",
+            "fr": "Bonjour ! Oui, j'ai rendez-vous à neuf heures.",
+            "pt": "Bom dia! Sim, tenho consulta marcada para as nove.",
+            "kr": "좋은 아침이에요! 네, 아홉 시에 예약이 되어 있어요.",
+            "jp": "おはようございます！はい、九時の予約です。",
+            "zh": "早上好！是的，我预约了九点。",
+            "ru": "Доброе утро! Да, у меня запись на девять."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда проходите, пожалуйста. Врач уже ждёт.",
+            "en": "Then please come in. The doctor is already waiting.",
+            "es": "Entonces pase, por favor. El doctor ya está esperando.",
+            "fr": "Alors entrez, je vous en prie. Le médecin vous attend déjà.",
+            "pt": "Então pode entrar, por favor. O médico já está esperando.",
+            "kr": "그럼 들어오세요. 의사 선생님이 이미 기다리고 계세요.",
+            "jp": "では、どうぞお入りください。先生はもう待っていますよ。",
+            "zh": "那请进吧。医生已经在等了。",
+            "ru": "Тогда проходите, пожалуйста. Врач уже ждёт."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Большое спасибо. А где кабинет?",
+            "en": "Thank you very much. And where is the office?",
+            "es": "Muchas gracias. ¿Y dónde está el consultorio?",
+            "fr": "Merci beaucoup. Et où est le cabinet ?",
+            "pt": "Muito obrigado. E onde fica o consultório?",
+            "kr": "정말 감사합니다. 진료실이 어디에 있나요?",
+            "jp": "ありがとうございます。診察室はどこですか？",
+            "zh": "非常感谢。请问诊室在哪儿？",
+            "ru": "Большое спасибо. А где кабинет?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Третий этаж, кабинет пятнадцать.",
+            "en": "Third floor, room fifteen.",
+            "es": "Tercera planta, consultorio quince.",
+            "fr": "Au troisième étage, cabinet quinze.",
+            "pt": "Terceiro andar, sala quinze.",
+            "kr": "삼 층, 십오 호실이에요.",
+            "jp": "三階の十五番の部屋です。",
+            "zh": "三楼，十五号诊室。",
+            "ru": "Третий этаж, кабинет пятнадцать."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понял, спасибо большое.",
+            "en": "Got it, thank you very much.",
+            "es": "Entendido, muchas gracias.",
+            "fr": "Compris, merci beaucoup.",
+            "pt": "Entendi, muito obrigado.",
+            "kr": "알겠습니다. 정말 감사합니다.",
+            "jp": "わかりました。ありがとうございます。",
+            "zh": "明白了，非常感谢。",
+            "ru": "Понял, спасибо большое."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Привет, Сергей! Как прошёл твой день?",
+            "en": "Hi, Sergey! How was your day?",
+            "es": "¡Hola, Serguéi! ¿Qué tal fue tu día?",
+            "fr": "Salut, Sergueï ! Comment s'est passée ta journée ?",
+            "pt": "Oi, Sergei! Como foi o seu dia?",
+            "kr": "안녕, 세르게이! 오늘 하루는 어땠어?",
+            "jp": "こんにちは、セルゲイさん！今日はどうでしたか？",
+            "zh": "你好，谢尔盖！你今天过得怎么样？",
+            "ru": "Привет, Сергей! Как прошёл твой день?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Привет, Ольга! День был хороший, но устал немного.",
+            "en": "Hi, Olga! The day was good, but I'm a bit tired.",
+            "es": "¡Hola, Olga! El día fue bueno, pero estoy un poco cansado.",
+            "fr": "Salut, Olga ! La journée était bonne, mais je suis un peu fatigué.",
+            "pt": "Oi, Olga! O dia foi bom, mas fiquei um pouco cansado.",
+            "kr": "안녕, 올가! 하루는 좋았는데, 좀 피곤하네.",
+            "jp": "こんにちは、オリガさん！いい一日でしたが、ちょっと疲れました。",
+            "zh": "你好，奥尔加！今天过得挺好的，就是有点累。",
+            "ru": "Привет, Ольга! День был хороший, но устал немного."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понимаю. Ты уже пообедал?",
+            "en": "I understand. Have you had lunch yet?",
+            "es": "Entiendo. ¿Ya has comido?",
+            "fr": "Je comprends. Tu as déjà déjeuné ?",
+            "pt": "Entendo. Você já almoçou?",
+            "kr": "이해해. 점심은 먹었어?",
+            "jp": "わかります。もう昼ごはんは食べましたか？",
+            "zh": "我理解。你吃午饭了吗？",
+            "ru": "Понимаю. Ты уже пообедал?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, ещё не успел. А что?",
+            "en": "No, I haven't had a chance yet. Why?",
+            "es": "No, todavía no he tenido tiempo. ¿Por qué?",
+            "fr": "Non, je n'ai pas encore eu le temps. Pourquoi ?",
+            "pt": "Não, ainda não deu tempo. Por quê?",
+            "kr": "아니, 아직 시간이 없었어. 왜?",
+            "jp": "いいえ、まだなんです。どうしてですか？",
+            "zh": "还没呢，没来得及。怎么了？",
+            "ru": "Нет, ещё не успел. А что?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Пойдём вместе поедим? Я знаю хорошее место рядом.",
+            "en": "Want to go grab something to eat together? I know a nice place nearby.",
+            "es": "¿Vamos a comer juntos? Conozco un buen sitio cerca.",
+            "fr": "On va manger ensemble ? Je connais un bon endroit pas loin.",
+            "pt": "Vamos comer juntos? Conheço um lugar bom perto daqui.",
+            "kr": "같이 밥 먹을래? 근처에 괜찮은 곳을 알아.",
+            "jp": "一緒に食べに行きませんか？近くにいいお店を知っていますよ。",
+            "zh": "咱们一起去吃饭吧？我知道附近有个好地方。",
+            "ru": "Пойдём вместе поедим? Я знаю хорошее место рядом."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "С удовольствием! Спасибо за приглашение.",
+            "en": "I'd love to! Thanks for the invitation.",
+            "es": "¡Con mucho gusto! Gracias por la invitación.",
+            "fr": "Avec plaisir ! Merci pour l'invitation.",
+            "pt": "Com prazer! Obrigado pelo convite.",
+            "kr": "좋지! 초대해 줘서 고마워.",
+            "jp": "喜んで！お誘いありがとうございます。",
+            "zh": "太好了！谢谢你的邀请。",
+            "ru": "С удовольствием! Спасибо за приглашение."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте! Вы новый сосед?",
+            "en": "Hello! Are you the new neighbor?",
+            "es": "¡Hola! ¿Es usted el nuevo vecino?",
+            "fr": "Bonjour ! Vous êtes le nouveau voisin ?",
+            "pt": "Olá! Você é o novo vizinho?",
+            "kr": "안녕하세요! 새로 이사 오신 이웃이신가요?",
+            "jp": "こんにちは！新しい隣人ですか？",
+            "zh": "您好！您是新搬来的邻居吗？",
+            "ru": "Здравствуйте! Вы новый сосед?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Здравствуйте! Да, я переехал вчера.",
+            "en": "Hello! Yes, I moved in yesterday.",
+            "es": "¡Hola! Sí, me mudé ayer.",
+            "fr": "Bonjour ! Oui, j'ai emménagé hier.",
+            "pt": "Olá! Sim, me mudei ontem.",
+            "kr": "안녕하세요! 네, 어제 이사 왔어요.",
+            "jp": "こんにちは！はい、昨日引っ越してきました。",
+            "zh": "您好！是的，我昨天刚搬来。",
+            "ru": "Здравствуйте! Да, я переехал вчера."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Меня зовут Елена. Я живу в квартире напротив.",
+            "en": "My name is Elena. I live in the apartment across the hall.",
+            "es": "Me llamo Elena. Vivo en el piso de enfrente.",
+            "fr": "Je m'appelle Elena. J'habite dans l'appartement d'en face.",
+            "pt": "Meu nome é Elena. Eu moro no apartamento em frente.",
+            "kr": "저는 옐레나라고 해요. 맞은편 아파트에 살아요.",
+            "jp": "私はエレーナといいます。向かいの部屋に住んでいます。",
+            "zh": "我叫叶莲娜。我住在您对门。",
+            "ru": "Меня зовут Елена. Я живу в квартире напротив."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Очень приятно, Дмитрий. Рад познакомиться.",
+            "en": "Nice to meet you, Dmitry. Glad to meet you.",
+            "es": "Mucho gusto, Dmitri. Encantado de conocerla.",
+            "fr": "Enchanté, Dmitri. Ravi de faire votre connaissance.",
+            "pt": "Muito prazer, Dmitri. Prazer em conhecê-la.",
+            "kr": "만나서 반갑습니다, 드미트리예요. 만나서 반가워요.",
+            "jp": "はじめまして、ドミトリーです。お会いできてうれしいです。",
+            "zh": "很高兴认识您，我叫德米特里。",
+            "ru": "Очень приятно, Дмитрий. Рад познакомиться."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Если нужна помощь, обращайтесь.",
+            "en": "If you need any help, just ask.",
+            "es": "Si necesita ayuda, no dude en pedirla.",
+            "fr": "Si vous avez besoin d'aide, n'hésitez pas.",
+            "pt": "Se precisar de ajuda, é só falar.",
+            "kr": "도움이 필요하시면 말씀하세요.",
+            "jp": "何か手伝いが必要なら、声をかけてくださいね。",
+            "zh": "如果需要帮忙，尽管说。",
+            "ru": "Если нужна помощь, обращайтесь."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо большое, обязательно.",
+            "en": "Thank you very much, I will.",
+            "es": "Muchas gracias, seguro que sí.",
+            "fr": "Merci beaucoup, c'est sûr.",
+            "pt": "Muito obrigado, com certeza.",
+            "kr": "정말 감사합니다. 꼭 그럴게요.",
+            "jp": "ありがとうございます。ぜひお願いします。",
+            "zh": "非常感谢，一定会的。",
+            "ru": "Спасибо большое, обязательно."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Привет, Мария! Как настроение?",
+            "en": "Hi, Maria! How's your mood?",
+            "es": "¡Hola, María! ¿Cómo estás de ánimo?",
+            "fr": "Salut, Maria ! Comment est ton humeur ?",
+            "pt": "Oi, Maria! Como está o seu humor?",
+            "kr": "안녕, 마리야! 기분은 어때?",
+            "jp": "こんにちは、マリアさん！調子はどうですか？",
+            "zh": "你好，玛丽亚！心情怎么样？",
+            "ru": "Привет, Мария! Как настроение?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Привет, Алексей! Настроение отличное, выходные были чудесные.",
+            "en": "Hi, Alexey! My mood is great, the weekend was wonderful.",
+            "es": "¡Hola, Alekséi! Estoy de muy buen humor, el fin de semana fue maravilloso.",
+            "fr": "Salut, Alexeï ! L'humeur est excellente, le week-end était merveilleux.",
+            "pt": "Oi, Alexei! Estou de ótimo humor, o fim de semana foi maravilhoso.",
+            "kr": "안녕, 알렉세이! 기분 최고야, 주말이 정말 좋았어.",
+            "jp": "こんにちは、アレクセイさん！とてもいいですよ。週末は素晴らしかったです。",
+            "zh": "你好，阿列克谢！心情特别好，周末过得太棒了。",
+            "ru": "Привет, Алексей! Настроение отличное, выходные были чудесные."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? Что ты делала?",
+            "en": "Really? What did you do?",
+            "es": "¿De verdad? ¿Qué hiciste?",
+            "fr": "Vraiment ? Qu'est-ce que tu as fait ?",
+            "pt": "Sério? O que você fez?",
+            "kr": "정말? 뭐 했어?",
+            "jp": "本当ですか？何をしていましたか？",
+            "zh": "真的吗？你都做什么了？",
+            "ru": "Правда? Что ты делала?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ездила за город, гуляла в лесу.",
+            "en": "I went out of town and took a walk in the forest.",
+            "es": "Fui al campo y paseé por el bosque.",
+            "fr": "Je suis allée à la campagne, je me suis promenée en forêt.",
+            "pt": "Fui para o interior, caminhei na floresta.",
+            "kr": "교외에 다녀왔어, 숲에서 산책했지.",
+            "jp": "郊外に行って、森を散歩しました。",
+            "zh": "去了郊外，在森林里散步。",
+            "ru": "Ездила за город, гуляла в лесу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Звучит замечательно. Может, в следующие выходные вместе?",
+            "en": "That sounds lovely. Maybe we could go together next weekend?",
+            "es": "Suena estupendo. ¿Y si el próximo fin de semana vamos juntos?",
+            "fr": "Ça a l'air super. Et si on y allait ensemble le week-end prochain ?",
+            "pt": "Parece ótimo. Que tal irmos juntos no próximo fim de semana?",
+            "kr": "정말 좋겠다. 다음 주말에 같이 갈래?",
+            "jp": "すてきですね。次の週末は一緒に行きませんか？",
+            "zh": "听起来真不错。要不咱们下个周末一起去？",
+            "ru": "Звучит замечательно. Может, в следующие выходные вместе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "С удовольствием! Договорились.",
+            "en": "I'd love to! It's a deal.",
+            "es": "¡Con mucho gusto! Trato hecho.",
+            "fr": "Avec plaisir ! C'est d'accord.",
+            "pt": "Com prazer! Combinado.",
+            "kr": "좋아! 그렇게 하자.",
+            "jp": "喜んで！決まりですね。",
+            "zh": "太好了！说定了。",
+            "ru": "С удовольствием! Договорились."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Добрый вечер! Вы впервые в нашем клубе?",
+            "en": "Good evening! Is this your first time at our club?",
+            "es": "¡Buenas tardes! ¿Es la primera vez en nuestro club?",
+            "fr": "Bonsoir ! Vous venez pour la première fois dans notre club ?",
+            "pt": "Boa noite! É a primeira vez no nosso clube?",
+            "kr": "좋은 저녁이에요! 저희 클럽에 처음 오셨나요?",
+            "jp": "こんばんは！このクラブには初めてですか？",
+            "zh": "晚上好！您是第一次来我们俱乐部吗？",
+            "ru": "Добрый вечер! Вы впервые в нашем клубе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Добрый вечер! Да, я здесь первый раз.",
+            "en": "Good evening! Yes, I'm here for the first time.",
+            "es": "¡Buenas tardes! Sí, es mi primera vez aquí.",
+            "fr": "Bonsoir ! Oui, je suis ici pour la première fois.",
+            "pt": "Boa noite! Sim, é a minha primeira vez aqui.",
+            "kr": "좋은 저녁이에요! 네, 여기는 처음이에요.",
+            "jp": "こんばんは！はい、ここは初めてです。",
+            "zh": "晚上好！是的，我是第一次来。",
+            "ru": "Добрый вечер! Да, я здесь первый раз."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда добро пожаловать! Меня зовут Ольга.",
+            "en": "Then welcome! My name is Olga.",
+            "es": "Entonces, ¡bienvenido! Me llamo Olga.",
+            "fr": "Alors bienvenue ! Je m'appelle Olga.",
+            "pt": "Então seja bem-vindo! Meu nome é Olga.",
+            "kr": "그럼 환영합니다! 저는 올가라고 해요.",
+            "jp": "では、ようこそ！私はオリガといいます。",
+            "zh": "那欢迎您！我叫奥尔加。",
+            "ru": "Тогда добро пожаловать! Меня зовут Ольга."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо, меня Иван. Очень приятно.",
+            "en": "Thank you, I'm Ivan. Very nice to meet you.",
+            "es": "Gracias, yo soy Iván. Mucho gusto.",
+            "fr": "Merci, moi c'est Ivan. Enchanté.",
+            "pt": "Obrigado, eu sou o Ivan. Muito prazer.",
+            "kr": "감사합니다, 저는 이반이에요. 만나서 반갑습니다.",
+            "jp": "ありがとうございます。私はイワンです。はじめまして。",
+            "zh": "谢谢，我叫伊万。很高兴认识您。",
+            "ru": "Спасибо, меня Иван. Очень приятно."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хотите, покажу вам зал?",
+            "en": "Would you like me to show you around the hall?",
+            "es": "¿Quiere que le enseñe la sala?",
+            "fr": "Voulez-vous que je vous montre la salle ?",
+            "pt": "Quer que eu te mostre o salão?",
+            "kr": "홀을 안내해 드릴까요?",
+            "jp": "ホールをご案内しましょうか？",
+            "zh": "需要我带您看看大厅吗？",
+            "ru": "Хотите, покажу вам зал?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, буду очень благодарен.",
+            "en": "Yes, I'd really appreciate that.",
+            "es": "Sí, se lo agradecería mucho.",
+            "fr": "Oui, je vous serais très reconnaissant.",
+            "pt": "Sim, ficaria muito grato.",
+            "kr": "네, 정말 감사하겠습니다.",
+            "jp": "はい、とてもありがたいです。",
+            "zh": "好的，那就太感谢了。",
+            "ru": "Да, буду очень благодарен."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Привет, Дмитрий! Рада тебя видеть.",
+            "en": "Hi, Dmitry! Good to see you.",
+            "es": "¡Hola, Dmitri! Me alegro de verte.",
+            "fr": "Salut, Dmitri ! Je suis ravie de te voir.",
+            "pt": "Oi, Dmitri! Que bom te ver.",
+            "kr": "안녕, 드미트리! 너 보게 되어서 반가워.",
+            "jp": "こんにちは、ドミトリーさん！会えてうれしいです。",
+            "zh": "你好，德米特里！很高兴见到你。",
+            "ru": "Привет, Дмитрий! Рада тебя видеть."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Привет, Анна! Я тоже рад. Ты давно здесь ждёшь?",
+            "en": "Hi, Anna! Good to see you too. Have you been waiting here long?",
+            "es": "¡Hola, Anna! Yo también me alegro. ¿Llevas mucho tiempo esperando aquí?",
+            "fr": "Salut, Anna ! Moi aussi, je suis ravi. Tu attends ici depuis longtemps ?",
+            "pt": "Oi, Anna! Eu também estou feliz. Você está esperando aqui há muito tempo?",
+            "kr": "안녕, 안나! 나도 반가워. 여기서 오래 기다렸어?",
+            "jp": "こんにちは、アンナさん！私もうれしいですよ。ずっと待っていましたか？",
+            "zh": "你好，安娜！我也很高兴。你在这儿等很久了吗？",
+            "ru": "Привет, Анна! Я тоже рад. Ты давно здесь ждёшь?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Нет, только пришла. Ты вовремя.",
+            "en": "No, I just got here. You're right on time.",
+            "es": "No, acabo de llegar. Has llegado puntual.",
+            "fr": "Non, je viens d'arriver. Tu es à l'heure.",
+            "pt": "Não, acabei de chegar. Você chegou na hora certa.",
+            "kr": "아니, 방금 왔어. 너 시간 잘 맞췄네.",
+            "jp": "いいえ、今来たところです。時間ぴったりですね。",
+            "zh": "没有，刚到。你很准时。",
+            "ru": "Нет, только пришла. Ты вовремя."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично. Куда пойдём?",
+            "en": "Great. Where should we go?",
+            "es": "Genial. ¿A dónde vamos?",
+            "fr": "Parfait. Où est-ce qu'on va ?",
+            "pt": "Ótimo. Para onde vamos?",
+            "kr": "좋아. 어디로 갈까?",
+            "jp": "よかった。どこに行きましょうか？",
+            "zh": "太好了。咱们去哪儿？",
+            "ru": "Отлично. Куда пойдём?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Может, в парк? Погода сегодня чудесная.",
+            "en": "How about the park? The weather is lovely today.",
+            "es": "¿Quizás al parque? El tiempo hoy está precioso.",
+            "fr": "Et si on allait au parc ? Le temps est magnifique aujourd'hui.",
+            "pt": "Que tal o parque? O tempo está maravilhoso hoje.",
+            "kr": "공원에 갈래? 오늘 날씨가 정말 좋잖아.",
+            "jp": "公園はどうですか？今日は天気がとてもいいですよ。",
+            "zh": "去公园怎么样？今天天气特别好。",
+            "ru": "Может, в парк? Погода сегодня чудесная."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошая идея! Пойдём.",
+            "en": "Good idea! Let's go.",
+            "es": "¡Buena idea! Vamos.",
+            "fr": "Bonne idée ! Allons-y.",
+            "pt": "Boa ideia! Vamos.",
+            "kr": "좋은 생각이야! 가자.",
+            "jp": "いいですね！行きましょう。",
+            "zh": "好主意！走吧。",
+            "ru": "Хорошая идея! Пойдём."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте! Подскажите, где находится библиотека?",
+            "en": "Hello! Could you tell me where the library is?",
+            "es": "¡Hola! ¿Me podría decir dónde está la biblioteca?",
+            "fr": "Bonjour ! Pouvez-vous m'indiquer où se trouve la bibliothèque ?",
+            "pt": "Olá! Pode me dizer onde fica a biblioteca?",
+            "kr": "안녕하세요! 도서관이 어디에 있는지 알려주시겠어요?",
+            "jp": "こんにちは！図書館はどこにあるか教えていただけますか？",
+            "zh": "您好！请问图书馆在哪儿？",
+            "ru": "Здравствуйте! Подскажите, где находится библиотека?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Здравствуйте! Идите прямо, потом налево.",
+            "en": "Hello! Go straight, then turn left.",
+            "es": "¡Hola! Siga recto y luego gire a la izquierda.",
+            "fr": "Bonjour ! Allez tout droit, puis tournez à gauche.",
+            "pt": "Olá! Siga em frente e depois vire à esquerda.",
+            "kr": "안녕하세요! 쭉 직진하시다가 왼쪽으로 가세요.",
+            "jp": "こんにちは！まっすぐ行って、それから左に曲がってください。",
+            "zh": "您好！一直往前走，然后左转。",
+            "ru": "Здравствуйте! Идите прямо, потом налево."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это далеко?",
+            "en": "Is it far?",
+            "es": "¿Está lejos?",
+            "fr": "C'est loin ?",
+            "pt": "É longe?",
+            "kr": "거기 멀어요?",
+            "jp": "遠いですか？",
+            "zh": "远吗？",
+            "ru": "Это далеко?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, пять минут пешком.",
+            "en": "No, it's a five-minute walk.",
+            "es": "No, a cinco minutos andando.",
+            "fr": "Non, cinq minutes à pied.",
+            "pt": "Não, são cinco minutos a pé.",
+            "kr": "아니요, 걸어서 오 분이에요.",
+            "jp": "いいえ、歩いて五分です。",
+            "zh": "不远，走路五分钟。",
+            "ru": "Нет, пять минут пешком."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Большое спасибо за помощь.",
+            "en": "Thank you very much for your help.",
+            "es": "Muchas gracias por su ayuda.",
+            "fr": "Merci beaucoup pour votre aide.",
+            "pt": "Muito obrigada pela ajuda.",
+            "kr": "도와주셔서 정말 감사합니다.",
+            "jp": "ご親切にありがとうございます。",
+            "zh": "非常感谢您的帮助。",
+            "ru": "Большое спасибо за помощь."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не за что. Хорошего дня!",
+            "en": "You're welcome. Have a nice day!",
+            "es": "De nada. ¡Que tenga un buen día!",
+            "fr": "De rien. Bonne journée !",
+            "pt": "De nada. Tenha um bom dia!",
+            "kr": "별말씀을요. 좋은 하루 보내세요!",
+            "jp": "どういたしまして。いい一日を！",
+            "zh": "不客气。祝您今天愉快！",
+            "ru": "Не за что. Хорошего дня!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Привет, Елена! Как дела на работе?",
+            "en": "Hi, Elena! How's work going?",
+            "es": "¡Hola, Elena! ¿Qué tal en el trabajo?",
+            "fr": "Salut, Elena ! Comment ça va au travail ?",
+            "pt": "Oi, Elena! Como vão as coisas no trabalho?",
+            "kr": "안녕, 옐레나! 일은 잘 돼 가?",
+            "jp": "こんにちは、エレーナさん！仕事はどうですか？",
+            "zh": "你好，叶莲娜！工作怎么样？",
+            "ru": "Привет, Елена! Как дела на работе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Привет, Сергей! Всё хорошо, но дел очень много.",
+            "en": "Hi, Sergey! Everything is fine, but I have a lot to do.",
+            "es": "¡Hola, Serguéi! Todo bien, pero hay muchísimo trabajo.",
+            "fr": "Salut, Sergueï ! Tout va bien, mais j'ai beaucoup de choses à faire.",
+            "pt": "Oi, Sergei! Está tudo bem, mas tem muita coisa para fazer.",
+            "kr": "안녕, 세르게이! 다 좋은데, 할 일이 정말 많아.",
+            "jp": "こんにちは、セルゲイさん！まあまあですが、やることがとても多いです。",
+            "zh": "你好，谢尔盖！挺好的，就是事情特别多。",
+            "ru": "Привет, Сергей! Всё хорошо, но дел очень много."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понимаю. Отдыхать когда-нибудь успеваешь?",
+            "en": "I understand. Do you ever find time to rest?",
+            "es": "Entiendo. ¿Consigues descansar alguna vez?",
+            "fr": "Je comprends. Tu arrives à te reposer de temps en temps ?",
+            "pt": "Entendo. Você consegue descansar de vez em quando?",
+            "kr": "이해해. 쉴 시간은 좀 있어?",
+            "jp": "わかります。休む時間はありますか？",
+            "zh": "我理解。你有时间休息吗？",
+            "ru": "Понимаю. Отдыхать когда-нибудь успеваешь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Стараюсь. А ты как?",
+            "en": "I try. And how about you?",
+            "es": "Lo intento. ¿Y tú qué tal?",
+            "fr": "J'essaie. Et toi, comment ça va ?",
+            "pt": "Eu tento. E você?",
+            "kr": "노력하고 있지. 너는 어때?",
+            "jp": "なんとか休んでいますよ。あなたはどうですか？",
+            "zh": "尽量吧。你呢？",
+            "ru": "Стараюсь. А ты как?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тоже работаю много. Давай как-нибудь поужинаем вместе?",
+            "en": "I've been working a lot too. How about we have dinner together sometime?",
+            "es": "También trabajo mucho. ¿Cenamos juntos algún día?",
+            "fr": "Je travaille beaucoup aussi. Et si on dînait ensemble un de ces jours ?",
+            "pt": "Também estou trabalhando muito. Que tal jantarmos juntos um dia desses?",
+            "kr": "나도 일을 많이 해. 언제 한번 같이 저녁 먹을래?",
+            "jp": "私もたくさん働いています。いつか一緒に夕食を食べませんか？",
+            "zh": "我也工作很忙。咱们哪天一起吃个晚饭吧？",
+            "ru": "Тоже работаю много. Давай как-нибудь поужинаем вместе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Давай! Я буду рада.",
+            "en": "Sounds good! I'd love that.",
+            "es": "¡Vamos! Me encantará.",
+            "fr": "D'accord ! Je serais ravie.",
+            "pt": "Vamos! Eu adoraria.",
+            "kr": "좋아! 나도 정말 반가울 거야.",
+            "jp": "いいですね！楽しみにしています。",
+            "zh": "好啊！我很乐意。",
+            "ru": "Давай! Я буду рада."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a1",
+    "id": "006"
+  },
+  "title": {
+    "target": "Числа и цены",
+    "en": "Numbers and Prices",
+    "es": "Números y precios",
+    "fr": "Les nombres et les prix",
+    "pt": "Números e preços",
+    "kr": "숫자와 가격",
+    "jp": "数字と値段",
+    "zh": "数字和价格",
+    "ru": "Числа и цены"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сколько стоит этот блокнот?",
+            "en": "How much does this notebook cost?",
+            "es": "¿Cuánto cuesta este cuaderno?",
+            "fr": "Combien coûte ce carnet ?",
+            "pt": "Quanto custa este caderno?",
+            "kr": "이 공책은 얼마예요?",
+            "jp": "このノートはいくらですか？",
+            "zh": "这个笔记本多少钱？",
+            "ru": "Сколько стоит этот блокнот?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Он стоит пятьдесят рублей.",
+            "en": "It costs fifty rubles.",
+            "es": "Cuesta cincuenta rublos.",
+            "fr": "Il coûte cinquante roubles.",
+            "pt": "Ele custa cinquenta rublos.",
+            "kr": "오십 루블이에요.",
+            "jp": "五十ルーブルです。",
+            "zh": "五十卢布。",
+            "ru": "Он стоит пятьдесят рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А этот синий, подороже?",
+            "en": "And this blue one, is it more expensive?",
+            "es": "¿Y este azul, es más caro?",
+            "fr": "Et celui-ci, en bleu, il est plus cher ?",
+            "pt": "E este azul, é mais caro?",
+            "kr": "그럼 이 파란색은 더 비싼가요?",
+            "jp": "じゃあ、この青いのはもっと高いですか？",
+            "zh": "那这个蓝色的，是不是贵一点？",
+            "ru": "А этот синий, подороже?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, синий стоит семьдесят рублей.",
+            "en": "Yes, the blue one costs seventy rubles.",
+            "es": "Sí, el azul cuesta setenta rublos.",
+            "fr": "Oui, le bleu coûte soixante-dix roubles.",
+            "pt": "Sim, o azul custa setenta rublos.",
+            "kr": "네, 파란색은 칠십 루블이에요.",
+            "jp": "はい、青いのは七十ルーブルです。",
+            "zh": "是的，蓝色的七十卢布。",
+            "ru": "Да, синий стоит семьдесят рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хорошо, я возьму синий.",
+            "en": "Okay, I'll take the blue one.",
+            "es": "Vale, me llevo el azul.",
+            "fr": "D'accord, je prends le bleu.",
+            "pt": "Tudo bem, vou levar o azul.",
+            "kr": "좋아요, 파란색으로 할게요.",
+            "jp": "わかりました。青いのにします。",
+            "zh": "好的，我拿蓝色的。",
+            "ru": "Хорошо, я возьму синий."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично, проходите к кассе.",
+            "en": "Great, please go to the cash register.",
+            "es": "Perfecto, pase a la caja.",
+            "fr": "Parfait, avancez à la caisse.",
+            "pt": "Ótimo, pode passar no caixa.",
+            "kr": "좋습니다, 계산대로 가시면 돼요.",
+            "jp": "かしこまりました。レジへどうぞ。",
+            "zh": "好的，请到收银台。",
+            "ru": "Отлично, проходите к кассе."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "У вас есть яблоки?",
+            "en": "Do you have apples?",
+            "es": "¿Tenéis manzanas?",
+            "fr": "Avez-vous des pommes ?",
+            "pt": "Vocês têm maçãs?",
+            "kr": "사과 있어요?",
+            "jp": "りんごはありますか？",
+            "zh": "你们有苹果吗？",
+            "ru": "У вас есть яблоки?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, конечно. Килограмм стоит девяносто рублей.",
+            "en": "Yes, of course. A kilogram costs ninety rubles.",
+            "es": "Sí, por supuesto. El kilo cuesta noventa rublos.",
+            "fr": "Oui, bien sûr. Le kilo coûte quatre-vingt-dix roubles.",
+            "pt": "Sim, claro. O quilo custa noventa rublos.",
+            "kr": "네, 물론이죠. 킬로그램에 구십 루블이에요.",
+            "jp": "はい、もちろんです。一キロは九十ルーブルです。",
+            "zh": "有，当然有。一公斤九十卢布。",
+            "ru": "Да, конечно. Килограмм стоит девяносто рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дайте мне два килограмма, пожалуйста.",
+            "en": "Give me two kilograms, please.",
+            "es": "Déme dos kilos, por favor.",
+            "fr": "Donnez-moi deux kilos, s'il vous plaît.",
+            "pt": "Me dê dois quilos, por favor.",
+            "kr": "이 킬로그램 주세요.",
+            "jp": "二キロください。",
+            "zh": "请给我两公斤。",
+            "ru": "Дайте мне два килограмма, пожалуйста."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "С вас сто восемьдесят рублей.",
+            "en": "That will be one hundred eighty rubles.",
+            "es": "Son ciento ochenta rublos.",
+            "fr": "Ça fait cent quatre-vingts roubles.",
+            "pt": "São cento e oitenta rublos.",
+            "kr": "백팔십 루블입니다.",
+            "jp": "百八十ルーブルになります。",
+            "zh": "一共一百八十卢布。",
+            "ru": "С вас сто восемьдесят рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Вот, возьмите.",
+            "en": "Here you go.",
+            "es": "Aquí tiene.",
+            "fr": "Voilà, tenez.",
+            "pt": "Aqui está, pode pegar.",
+            "kr": "여기 있어요.",
+            "jp": "はい、どうぞ。",
+            "zh": "给您。",
+            "ru": "Вот, возьмите."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо, хорошего дня!",
+            "en": "Thank you, have a nice day!",
+            "es": "Gracias, ¡que tenga un buen día!",
+            "fr": "Merci, bonne journée !",
+            "pt": "Obrigado, tenha um bom dia!",
+            "kr": "감사합니다, 좋은 하루 보내세요!",
+            "jp": "ありがとうございます。良い一日を！",
+            "zh": "谢谢，祝您今天愉快！",
+            "ru": "Спасибо, хорошего дня!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сколько стоит билет на автобус?",
+            "en": "How much is a bus ticket?",
+            "es": "¿Cuánto cuesta el billete de autobús?",
+            "fr": "Combien coûte le ticket de bus ?",
+            "pt": "Quanto custa a passagem de ônibus?",
+            "kr": "버스 표는 얼마예요?",
+            "jp": "バスのチケットはいくらですか？",
+            "zh": "公交车票多少钱？",
+            "ru": "Сколько стоит билет на автобус?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Один билет стоит тридцать рублей.",
+            "en": "One ticket costs thirty rubles.",
+            "es": "Un billete cuesta treinta rublos.",
+            "fr": "Un ticket coûte trente roubles.",
+            "pt": "Uma passagem custa trinta rublos.",
+            "kr": "한 장에 삼십 루블이에요.",
+            "jp": "一枚三十ルーブルです。",
+            "zh": "一张票三十卢布。",
+            "ru": "Один билет стоит тридцать рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне нужно два билета.",
+            "en": "I need two tickets.",
+            "es": "Necesito dos billetes.",
+            "fr": "J'ai besoin de deux tickets.",
+            "pt": "Eu preciso de duas passagens.",
+            "kr": "두 장 필요해요.",
+            "jp": "二枚必要です。",
+            "zh": "我需要两张票。",
+            "ru": "Мне нужно два билета."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда с вас шестьдесят рублей.",
+            "en": "Then that will be sixty rubles.",
+            "es": "Entonces son sesenta rublos.",
+            "fr": "Alors, ça fait soixante roubles.",
+            "pt": "Então são sessenta rublos.",
+            "kr": "그럼 육십 루블입니다.",
+            "jp": "では、六十ルーブルになります。",
+            "zh": "那就是六十卢布。",
+            "ru": "Тогда с вас шестьдесят рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Вот, пожалуйста.",
+            "en": "Here you are.",
+            "es": "Aquí tiene.",
+            "fr": "Voilà, s'il vous plaît.",
+            "pt": "Aqui está, por favor.",
+            "kr": "여기요.",
+            "jp": "はい、どうぞ。",
+            "zh": "给您。",
+            "ru": "Вот, пожалуйста."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо, приятной поездки!",
+            "en": "Thank you, have a good trip!",
+            "es": "Gracias, ¡buen viaje!",
+            "fr": "Merci, bon voyage !",
+            "pt": "Obrigado, boa viagem!",
+            "kr": "감사합니다, 즐거운 여행 되세요!",
+            "jp": "ありがとうございます。良い旅を！",
+            "zh": "谢谢，祝您旅途愉快！",
+            "ru": "Спасибо, приятной поездки!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сколько стоит эта книга?",
+            "en": "How much does this book cost?",
+            "es": "¿Cuánto cuesta este libro?",
+            "fr": "Combien coûte ce livre ?",
+            "pt": "Quanto custa este livro?",
+            "kr": "이 책은 얼마예요?",
+            "jp": "この本はいくらですか？",
+            "zh": "这本书多少钱？",
+            "ru": "Сколько стоит эта книга?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Эта книга стоит четыреста рублей.",
+            "en": "This book costs four hundred rubles.",
+            "es": "Este libro cuesta cuatrocientos rublos.",
+            "fr": "Ce livre coûte quatre cents roubles.",
+            "pt": "Este livro custa quatrocentos rublos.",
+            "kr": "이 책은 사백 루블이에요.",
+            "jp": "この本は四百ルーブルです。",
+            "zh": "这本书四百卢布。",
+            "ru": "Эта книга стоит четыреста рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ой, это дорого.",
+            "en": "Oh, that's expensive.",
+            "es": "Vaya, es caro.",
+            "fr": "Oh, c'est cher.",
+            "pt": "Nossa, isso é caro.",
+            "kr": "어머, 비싸네요.",
+            "jp": "えっ、高いですね。",
+            "zh": "哎呀，有点贵。",
+            "ru": "Ой, это дорого."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Но она новая и очень интересная.",
+            "en": "But it's new and very interesting.",
+            "es": "Pero es nuevo y muy interesante.",
+            "fr": "Mais il est nouveau et très intéressant.",
+            "pt": "Mas ele é novo e muito interessante.",
+            "kr": "하지만 새 책이고 아주 재미있어요.",
+            "jp": "でも、新しくてとても面白いですよ。",
+            "zh": "但是它是新的，而且非常有意思。",
+            "ru": "Но она новая и очень интересная."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ладно, я её возьму.",
+            "en": "Alright, I'll take it.",
+            "es": "De acuerdo, me lo llevo.",
+            "fr": "Bon, je le prends.",
+            "pt": "Tudo bem, vou levá-lo.",
+            "kr": "좋아요, 이걸로 할게요.",
+            "jp": "じゃあ、これにします。",
+            "zh": "好吧，我买了。",
+            "ru": "Ладно, я её возьму."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отличный выбор!",
+            "en": "Great choice!",
+            "es": "¡Excelente elección!",
+            "fr": "Excellent choix !",
+            "pt": "Ótima escolha!",
+            "kr": "훌륭한 선택이에요!",
+            "jp": "いい選択ですね！",
+            "zh": "很好的选择！",
+            "ru": "Отличный выбор!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сколько стоит чашка кофе?",
+            "en": "How much is a cup of coffee?",
+            "es": "¿Cuánto cuesta una taza de café?",
+            "fr": "Combien coûte une tasse de café ?",
+            "pt": "Quanto custa uma xícara de café?",
+            "kr": "커피 한 잔은 얼마예요?",
+            "jp": "コーヒー一杯はいくらですか？",
+            "zh": "一杯咖啡多少钱？",
+            "ru": "Сколько стоит чашка кофе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Маленькая чашка стоит сто рублей.",
+            "en": "A small cup costs one hundred rubles.",
+            "es": "La taza pequeña cuesta cien rublos.",
+            "fr": "Une petite tasse coûte cent roubles.",
+            "pt": "A xícara pequena custa cem rublos.",
+            "kr": "작은 잔은 백 루블이에요.",
+            "jp": "小さいカップは百ルーブルです。",
+            "zh": "小杯的一百卢布。",
+            "ru": "Маленькая чашка стоит сто рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А большая?",
+            "en": "And a large one?",
+            "es": "¿Y la grande?",
+            "fr": "Et une grande ?",
+            "pt": "E a grande?",
+            "kr": "그럼 큰 잔은요?",
+            "jp": "大きいのは？",
+            "zh": "那大杯的呢？",
+            "ru": "А большая?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Большая стоит сто пятьдесят рублей.",
+            "en": "A large one costs one hundred fifty rubles.",
+            "es": "La grande cuesta ciento cincuenta rublos.",
+            "fr": "Une grande coûte cent cinquante roubles.",
+            "pt": "A grande custa cento e cinquenta rublos.",
+            "kr": "큰 잔은 백오십 루블이에요.",
+            "jp": "大きいのは百五十ルーブルです。",
+            "zh": "大杯的一百五十卢布。",
+            "ru": "Большая стоит сто пятьдесят рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дайте мне большую, пожалуйста.",
+            "en": "Give me a large one, please.",
+            "es": "Déme la grande, por favor.",
+            "fr": "Donnez-moi une grande, s'il vous plaît.",
+            "pt": "Me dê uma grande, por favor.",
+            "kr": "큰 걸로 주세요.",
+            "jp": "大きいのをください。",
+            "zh": "请给我一大杯。",
+            "ru": "Дайте мне большую, пожалуйста."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, сейчас приготовлю.",
+            "en": "Okay, I'll make it right away.",
+            "es": "Vale, ahora mismo lo preparo.",
+            "fr": "D'accord, je prépare ça tout de suite.",
+            "pt": "Certo, já vou preparar.",
+            "kr": "네, 바로 준비할게요.",
+            "jp": "はい、すぐに準備します。",
+            "zh": "好的，马上给您做。",
+            "ru": "Хорошо, сейчас приготовлю."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сколько стоит этот шарф?",
+            "en": "How much does this scarf cost?",
+            "es": "¿Cuánto cuesta esta bufanda?",
+            "fr": "Combien coûte cette écharpe ?",
+            "pt": "Quanto custa este cachecol?",
+            "kr": "이 목도리는 얼마예요?",
+            "jp": "このマフラーはいくらですか？",
+            "zh": "这条围巾多少钱？",
+            "ru": "Сколько стоит этот шарф?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Он стоит триста рублей.",
+            "en": "It costs three hundred rubles.",
+            "es": "Cuesta trescientos rublos.",
+            "fr": "Elle coûte trois cents roubles.",
+            "pt": "Ele custa trezentos rublos.",
+            "kr": "삼백 루블이에요.",
+            "jp": "それは三百ルーブルです。",
+            "zh": "三百卢布。",
+            "ru": "Он стоит триста рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А есть что-нибудь дешевле?",
+            "en": "Is there anything cheaper?",
+            "es": "¿Y hay algo más barato?",
+            "fr": "Et il y a quelque chose de moins cher ?",
+            "pt": "E tem algo mais barato?",
+            "kr": "더 싼 건 없나요?",
+            "jp": "もっと安いのはありますか？",
+            "zh": "有便宜一点的吗？",
+            "ru": "А есть что-нибудь дешевле?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, вот этот шарф стоит двести рублей.",
+            "en": "Yes, this scarf here costs two hundred rubles.",
+            "es": "Sí, esta bufanda cuesta doscientos rublos.",
+            "fr": "Oui, cette écharpe-ci coûte deux cents roubles.",
+            "pt": "Sim, este cachecol aqui custa duzentos rublos.",
+            "kr": "네, 이 목도리는 이백 루블이에요.",
+            "jp": "はい、こちらのマフラーは二百ルーブルです。",
+            "zh": "有，这条围巾二百卢布。",
+            "ru": "Да, вот этот шарф стоит двести рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Он мне нравится, я его возьму.",
+            "en": "I like it, I'll take it.",
+            "es": "Me gusta, me la llevo.",
+            "fr": "Elle me plaît, je la prends.",
+            "pt": "Eu gostei dele, vou levá-lo.",
+            "kr": "마음에 들어요, 이걸로 할게요.",
+            "jp": "気に入りました。これにします。",
+            "zh": "我喜欢这条，我买了。",
+            "ru": "Он мне нравится, я его возьму."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Прекрасный выбор!",
+            "en": "Excellent choice!",
+            "es": "¡Una elección preciosa!",
+            "fr": "Très beau choix !",
+            "pt": "Ótima escolha!",
+            "kr": "훌륭한 선택이에요!",
+            "jp": "素晴らしい選択です！",
+            "zh": "很好的选择！",
+            "ru": "Прекрасный выбор!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сколько стоят эти конфеты?",
+            "en": "How much do these candies cost?",
+            "es": "¿Cuánto cuestan estos caramelos?",
+            "fr": "Combien coûtent ces bonbons ?",
+            "pt": "Quanto custam estes doces?",
+            "kr": "이 사탕은 얼마예요?",
+            "jp": "この飴はいくらですか？",
+            "zh": "这些糖果多少钱？",
+            "ru": "Сколько стоят эти конфеты?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Они стоят двести пятьдесят рублей за килограмм.",
+            "en": "They cost two hundred fifty rubles per kilogram.",
+            "es": "Cuestan doscientos cincuenta rublos el kilo.",
+            "fr": "Ils coûtent deux cent cinquante roubles le kilo.",
+            "pt": "Eles custam duzentos e cinquenta rublos o quilo.",
+            "kr": "킬로그램에 이백오십 루블이에요.",
+            "jp": "一キロ二百五十ルーブルです。",
+            "zh": "一公斤二百五十卢布。",
+            "ru": "Они стоят двести пятьдесят рублей за килограмм."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дайте мне полкилограмма.",
+            "en": "Give me half a kilogram.",
+            "es": "Déme medio kilo.",
+            "fr": "Donnez-moi un demi-kilo.",
+            "pt": "Me dê meio quilo.",
+            "kr": "반 킬로그램 주세요.",
+            "jp": "半キロください。",
+            "zh": "给我半公斤。",
+            "ru": "Дайте мне полкилограмма."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "С вас сто двадцать пять рублей.",
+            "en": "That will be one hundred twenty-five rubles.",
+            "es": "Son ciento veinticinco rublos.",
+            "fr": "Ça fait cent vingt-cinq roubles.",
+            "pt": "São cento e vinte e cinco rublos.",
+            "kr": "백이십오 루블입니다.",
+            "jp": "百二十五ルーブルになります。",
+            "zh": "一共一百二十五卢布。",
+            "ru": "С вас сто двадцать пять рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Вот, держите.",
+            "en": "Here you go.",
+            "es": "Aquí tiene.",
+            "fr": "Voilà, tenez.",
+            "pt": "Aqui está, pode pegar.",
+            "kr": "여기 있어요.",
+            "jp": "はい、どうぞ。",
+            "zh": "给您。",
+            "ru": "Вот, держите."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо, приходите ещё!",
+            "en": "Thank you, come again!",
+            "es": "Gracias, ¡vuelva pronto!",
+            "fr": "Merci, revenez nous voir !",
+            "pt": "Obrigado, volte sempre!",
+            "kr": "감사합니다, 또 오세요!",
+            "jp": "ありがとうございます。またお越しください！",
+            "zh": "谢谢，欢迎下次再来！",
+            "ru": "Спасибо, приходите ещё!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сколько стоит ручка?",
+            "en": "How much does a pen cost?",
+            "es": "¿Cuánto cuesta el bolígrafo?",
+            "fr": "Combien coûte un stylo ?",
+            "pt": "Quanto custa a caneta?",
+            "kr": "펜은 얼마예요?",
+            "jp": "ペンはいくらですか？",
+            "zh": "钢笔多少钱？",
+            "ru": "Сколько стоит ручка?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Эта ручка стоит двадцать рублей.",
+            "en": "This pen costs twenty rubles.",
+            "es": "Este bolígrafo cuesta veinte rublos.",
+            "fr": "Ce stylo coûte vingt roubles.",
+            "pt": "Esta caneta custa vinte rublos.",
+            "kr": "이 펜은 이십 루블이에요.",
+            "jp": "このペンは二十ルーブルです。",
+            "zh": "这支钢笔二十卢布。",
+            "ru": "Эта ручка стоит двадцать рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А карандаш?",
+            "en": "And a pencil?",
+            "es": "¿Y el lápiz?",
+            "fr": "Et un crayon ?",
+            "pt": "E o lápis?",
+            "kr": "그럼 연필은요?",
+            "jp": "鉛筆は？",
+            "zh": "那铅笔呢？",
+            "ru": "А карандаш?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Карандаш стоит десять рублей.",
+            "en": "A pencil costs ten rubles.",
+            "es": "El lápiz cuesta diez rublos.",
+            "fr": "Un crayon coûte dix roubles.",
+            "pt": "O lápis custa dez rublos.",
+            "kr": "연필은 십 루블이에요.",
+            "jp": "鉛筆は十ルーブルです。",
+            "zh": "铅笔十卢布。",
+            "ru": "Карандаш стоит десять рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда дайте мне ручку и два карандаша.",
+            "en": "Then give me a pen and two pencils.",
+            "es": "Entonces déme un bolígrafo y dos lápices.",
+            "fr": "Alors, donnez-moi un stylo et deux crayons.",
+            "pt": "Então me dê uma caneta e dois lápis.",
+            "kr": "그럼 펜 하나랑 연필 두 개 주세요.",
+            "jp": "では、ペン一本と鉛筆二本ください。",
+            "zh": "那给我一支钢笔和两支铅笔。",
+            "ru": "Тогда дайте мне ручку и два карандаша."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "С вас сорок рублей.",
+            "en": "That will be forty rubles.",
+            "es": "Son cuarenta rublos.",
+            "fr": "Ça fait quarante roubles.",
+            "pt": "São quarenta rublos.",
+            "kr": "사십 루블입니다.",
+            "jp": "四十ルーブルになります。",
+            "zh": "一共四十卢布。",
+            "ru": "С вас сорок рублей."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сколько стоит эта футболка?",
+            "en": "How much does this t-shirt cost?",
+            "es": "¿Cuánto cuesta esta camiseta?",
+            "fr": "Combien coûte ce t-shirt ?",
+            "pt": "Quanto custa esta camiseta?",
+            "kr": "이 티셔츠는 얼마예요?",
+            "jp": "このTシャツはいくらですか？",
+            "zh": "这件T恤多少钱？",
+            "ru": "Сколько стоит эта футболка?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Она стоит пятьсот рублей.",
+            "en": "It costs five hundred rubles.",
+            "es": "Cuesta quinientos rublos.",
+            "fr": "Il coûte cinq cents roubles.",
+            "pt": "Ela custa quinhentos rublos.",
+            "kr": "오백 루블이에요.",
+            "jp": "それは五百ルーブルです。",
+            "zh": "五百卢布。",
+            "ru": "Она стоит пятьсот рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это слишком дорого для меня.",
+            "en": "That's too expensive for me.",
+            "es": "Es demasiado cara para mí.",
+            "fr": "C'est trop cher pour moi.",
+            "pt": "Isso é caro demais para mim.",
+            "kr": "저한테는 너무 비싸네요.",
+            "jp": "私には高すぎます。",
+            "zh": "对我来说太贵了。",
+            "ru": "Это слишком дорого для меня."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда посмотрите вот эту, она стоит триста рублей.",
+            "en": "Then take a look at this one, it costs three hundred rubles.",
+            "es": "Entonces mire esta, cuesta trescientos rublos.",
+            "fr": "Alors, regardez celui-ci, il coûte trois cents roubles.",
+            "pt": "Então dê uma olhada nesta aqui, ela custa trezentos rublos.",
+            "kr": "그럼 이걸 한번 보세요, 삼백 루블이에요.",
+            "jp": "では、こちらのを見てください。これは三百ルーブルです。",
+            "zh": "那您看看这件，它三百卢布。",
+            "ru": "Тогда посмотрите вот эту, она стоит триста рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Она мне нравится. Я возьму её.",
+            "en": "I like it. I'll take it.",
+            "es": "Me gusta. Me la llevo.",
+            "fr": "Il me plaît. Je le prends.",
+            "pt": "Eu gostei dela. Vou levá-la.",
+            "kr": "마음에 들어요. 이걸로 할게요.",
+            "jp": "気に入りました。これにします。",
+            "zh": "我喜欢这件。我买了。",
+            "ru": "Она мне нравится. Я возьму её."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, проходите к кассе.",
+            "en": "Okay, please go to the cash register.",
+            "es": "Bien, pase a la caja.",
+            "fr": "D'accord, avancez à la caisse.",
+            "pt": "Certo, pode passar no caixa.",
+            "kr": "좋습니다, 계산대로 가시면 돼요.",
+            "jp": "はい、レジへどうぞ。",
+            "zh": "好的，请到收银台。",
+            "ru": "Хорошо, проходите к кассе."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сколько стоит этот торт?",
+            "en": "How much does this cake cost?",
+            "es": "¿Cuánto cuesta esta tarta?",
+            "fr": "Combien coûte ce gâteau ?",
+            "pt": "Quanto custa este bolo?",
+            "kr": "이 케이크는 얼마예요?",
+            "jp": "このケーキはいくらですか？",
+            "zh": "这个蛋糕多少钱？",
+            "ru": "Сколько стоит этот торт?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Он стоит шестьсот рублей.",
+            "en": "It costs six hundred rubles.",
+            "es": "Cuesta seiscientos rublos.",
+            "fr": "Il coûte six cents roubles.",
+            "pt": "Ele custa seiscentos rublos.",
+            "kr": "육백 루블이에요.",
+            "jp": "それは六百ルーブルです。",
+            "zh": "六百卢布。",
+            "ru": "Он стоит шестьсот рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А можно купить только кусочек?",
+            "en": "Can I buy just a piece?",
+            "es": "¿Y se puede comprar solo un trozo?",
+            "fr": "Et on peut acheter juste une part ?",
+            "pt": "E dá para comprar só um pedaço?",
+            "kr": "한 조각만 살 수 있나요?",
+            "jp": "一切れだけ買えますか？",
+            "zh": "可以只买一小块吗？",
+            "ru": "А можно купить только кусочек?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, один кусочек стоит восемьдесят рублей.",
+            "en": "Yes, one piece costs eighty rubles.",
+            "es": "Sí, un trozo cuesta ochenta rublos.",
+            "fr": "Oui, une part coûte quatre-vingts roubles.",
+            "pt": "Sim, um pedaço custa oitenta rublos.",
+            "kr": "네, 한 조각은 팔십 루블이에요.",
+            "jp": "はい、一切れは八十ルーブルです。",
+            "zh": "可以，一块八十卢布。",
+            "ru": "Да, один кусочек стоит восемьдесят рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дайте мне два кусочка, пожалуйста.",
+            "en": "Give me two pieces, please.",
+            "es": "Déme dos trozos, por favor.",
+            "fr": "Donnez-moi deux parts, s'il vous plaît.",
+            "pt": "Me dê dois pedaços, por favor.",
+            "kr": "두 조각 주세요.",
+            "jp": "二切れください。",
+            "zh": "请给我两块。",
+            "ru": "Дайте мне два кусочка, пожалуйста."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "С вас сто шестьдесят рублей.",
+            "en": "That will be one hundred sixty rubles.",
+            "es": "Son ciento sesenta rublos.",
+            "fr": "Ça fait cent soixante roubles.",
+            "pt": "São cento e sessenta rublos.",
+            "kr": "백육십 루블입니다.",
+            "jp": "百六十ルーブルになります。",
+            "zh": "一共一百六十卢布。",
+            "ru": "С вас сто шестьдесят рублей."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/scene_plan.schema.json",
+  "title": "ManyLangs Longform Scene Plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "episode_id",
+    "series_id",
+    "scene_count",
+    "protagonist_ref",
+    "scenes"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "common.schema.json#/$defs/document_metadata"
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*_ep[0-9]{3}$"
+    },
+    "series_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+    },
+    "scene_count": {
+      "type": "integer",
+      "const": 20
+    },
+    "protagonist_ref": {
+      "type": "string",
+      "pattern": "^CHAR_[A-Z0-9_]+_[0-9]{3}$"
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 20,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "scene_id",
+          "sequence",
+          "location_ref",
+          "situation",
+          "problem",
+          "monologue",
+          "b_gender",
+          "line_count",
+          "surprise",
+          "continuity"
+        ],
+        "properties": {
+          "scene_id": {
+            "type": "string",
+            "pattern": "^S[0-9]{3}$"
+          },
+          "sequence": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 20
+          },
+          "location_ref": {
+            "type": "string",
+            "pattern": "^LOC_[A-Z0-9_]+_[0-9]{3}$"
+          },
+          "situation": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "problem": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "monologue": {
+            "type": "boolean"
+          },
+          "b_gender": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "female",
+              "male",
+              null
+            ]
+          },
+          "line_count": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "surprise": {
+            "type": "boolean"
+          },
+          "continuity": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "carry_in",
+              "carry_out"
+            ],
+            "properties": {
+              "carry_in": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "carry_out": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

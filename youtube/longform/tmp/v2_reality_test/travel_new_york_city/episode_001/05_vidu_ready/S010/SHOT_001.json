@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S010",
+  "shot_id": "SHOT_001",
+  "sequence": 1,
+  "source_refs": {
+    "production_scene": "02_visual/production_scenes/S010.json",
+    "shot": "03_shots/S010/SHOT_001.json",
+    "visual_continuity": "04_visual_continuity/S010/SHOT_001.json"
+  },
+  "generation": {
+    "provider": "vidu",
+    "duration_seconds": 6.0,
+    "aspect_ratio": "16:9",
+    "resolution": "1080p",
+    "mode": "reference_guided"
+  },
+  "actors": [
+    {
+      "actor_ref": "CHAR_JIEUN_001",
+      "identity_type": "persistent",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Medium-sized travel backpack",
+        "Small crossbody bag",
+        "Smartphone",
+        "Passport",
+        "Checked suitcase"
+      ],
+      "body_state": [
+        "Standing inside the subway train",
+        "Holding onto a pole with one hand",
+        "Backpack worn on back",
+        "Crossbody bag worn across body",
+        "Suitcase beside her"
+      ],
+      "emotion": "determined and more confident, with a growing sense of excitement",
+      "reference_asset_ids": [
+        "ASSET_CHAR_JIEUN_PRIMARY_000001"
+      ]
+    }
+  ],
+  "location": {
+    "location_ref": "LOC_AIRPORT_TRANSIT_001",
+    "identity_lock": true,
+    "current_zone": "Inside the subway train car, near a pole",
+    "persistent_features": [
+      "Transit station platforms",
+      "Train or vehicle interior",
+      "Views of urban landscape during the journey",
+      "Signage for transit lines and stops"
+    ],
+    "orientation_state": [
+      "Jieun standing inside the train car",
+      "Jieun holding onto a pole with one hand",
+      "Suitcase beside Jieun",
+      "Train doors behind Jieun",
+      "Other passengers visible around Jieun",
+      "Train windows on the sides"
+    ],
+    "reference_asset_ids": []
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn on back",
+      "position": "on Jieun's back",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn across body",
+      "position": "across Jieun's body",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "not visible in hands, likely stored in crossbody bag or pocket",
+      "position": "not visible, likely in crossbody bag or pocket",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "not visible in hands, likely stored in crossbody bag or pocket",
+      "position": "not visible, likely in crossbody bag or pocket",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "beside Jieun",
+      "position": "beside Jieun, on the train floor",
+      "visible": true,
+      "continuity_lock": true
+    }
+  ],
+  "prompt": {
+    "subject": "Jieun, a young Korean woman with an oval face, soft features, natural eyebrows, dark brown eyes, and light natural makeup, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch. She has shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears. She is standing inside the subway train, holding onto a pole with one hand, with a medium-sized travel backpack on her back, a small crossbody bag across her body, and a checked suitcase beside her.",
+    "environment": "Inside a subway train car in New York City, with bright indoor lighting and natural daylight streaming through the windows. The train is moving with a rhythmic sound and slight sway. A few passengers are seated and standing, some reading books or looking at their phones. The train doors are behind Jieun, and other passengers are visible around her.",
+    "action": "Jieun steps onto the subway train, walks to an open spot near a pole, and grasps the pole with one hand to steady herself. She looks around at the other passengers and then turns her gaze toward the window, watching the city pass by.",
+    "camera": "Medium-wide shot at eye level, with smooth tracking movement following Jieun as she moves to the pole and settles.",
+    "continuity": "Jieun's identity, clothing, and appearance remain unchanged. Her travel backpack is on her back, crossbody bag across her body, and suitcase beside her. She is holding onto the pole inside the moving subway train, with the train doors behind her and windows on the sides.",
+    "final_prompt": "Jieun, a young Korean woman with an oval face, soft features, natural eyebrows, dark brown eyes, and light natural makeup, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch, with shoulder-length dark brown hair tucked behind ears, steps onto a moving subway train in New York City. She walks to an open spot near a pole, grasps it with one hand to steady herself, and looks around at the other passengers before turning to watch the city pass by outside the window. Her medium-sized travel backpack is on her back, a small crossbody bag is across her body, and her checked suitcase is beside her. The train car has bright indoor lighting with natural daylight streaming through the windows, a few passengers seated and standing, and train doors behind her. Medium-wide shot at eye level with smooth tracking movement following her as she settles by the pole."
+  },
+  "negative_constraints": [
+    "Do not change Jieun's identity, clothing, or appearance.",
+    "Do not introduce new characters.",
+    "Do not introduce new locations.",
+    "Do not move past the subway journey.",
+    "Do not show Jieun's suitcase being lost or missing.",
+    "Do not show Jieun's passport or smartphone being dropped or lost.",
+    "Do not show Jieun arriving at her hotel.",
+    "Do not show any problems or incidents with the subway ride.",
+    "Do not alter the canonical prop state."
+  ],
+  "continuity": {
+    "carry_in": [
+      "Jieun has figured out how to pay for the subway with help.",
+      "She is now waiting on the platform for the correct train toward Manhattan.",
+      "She feels more confident about navigating the transit system."
+    ],
+    "carry_out": [
+      "Jieun is standing inside the moving subway train, holding onto a pole.",
+      "Her suitcase is beside her.",
+      "She is looking around at the other passengers."
+    ],
+    "must_match_previous_shot": true,
+    "previous_scene_id": "S009",
+    "previous_shot_id": "SHOT_005",
+    "next_scene_id": "S010",
+    "next_shot_id": "SHOT_002"
+  }
+}

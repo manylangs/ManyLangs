@@ -29,6 +29,23 @@ SITE_BOX_PAD_Y_RATIO = 0.010
 
 
 # ============================================================
+# 지원 언어 (번호 목록 표시용)
+# ============================================================
+
+LANGUAGES = {
+    "en": "English",
+    "kr": "Korean",
+    "jp": "Japanese",
+    "zh": "Chinese",
+    "es": "Spanish",
+    "fr": "French",
+    "pt": "Portuguese",
+    "de": "German",
+    "ru": "Russian",
+}
+
+
+# ============================================================
 # 폰트
 # ============================================================
 
@@ -47,36 +64,65 @@ def find_font() -> str:
 
 
 # ============================================================
-# 언어 선택
+# 사용 가능한 언어 목록 (실제 conversation 폴더가 있는 언어만)
 # ============================================================
 
-def ask_language() -> str:
+def get_available_languages():
+    available = []
+    for code, name in LANGUAGES.items():
+        lang_dir = ROOT / code
+        if not lang_dir.exists():
+            continue
+        # 해당 언어 폴더 안에 LEVEL_PREFIXES로 시작하는 하위 폴더가 하나라도 있으면 사용 가능
+        has_conversation = any(
+            d.is_dir() and d.name.lower().startswith(LEVEL_PREFIXES)
+            for d in lang_dir.iterdir()
+        )
+        if has_conversation:
+            available.append((code, name))
+    return available
+
+
+# ============================================================
+# 언어 선택 (번호 목록)
+# ============================================================
+
+def prompt_language():
+    available = get_available_languages()
+
+    if not available:
+        print()
+        print(f"오류: {ROOT} 아래에 사용 가능한 언어 폴더가 없습니다.")
+        sys.exit(1)
+
     print()
     print("==========================================")
     print(" ManyLangs Watermark Generator")
     print("==========================================")
     print()
+    print("지원 언어 (실제 conversation 폴더가 있는 언어):")
+    print()
 
-    lang = input(
-        "언어 약어를 입력하세요 (예: en, kr, es, fr, pt, jp, zh): "
-    ).strip().lower()
+    for i, (code, name) in enumerate(available, start=1):
+        print(f"  {i:>2} - {code} ({name})")
 
-    if not lang:
-        print("언어가 입력되지 않았습니다.")
-        sys.exit(1)
+    print()
 
-    lang_dir = ROOT / lang
+    while True:
+        choice = input("번호를 입력하세요: ").strip()
+        if not choice.isdigit():
+            print("숫자를 입력해주세요.")
+            continue
 
-    if not lang_dir.exists():
-        print()
-        print(f"폴더가 없습니다: {lang_dir}")
-        sys.exit(1)
+        idx = int(choice) - 1
+        if 0 <= idx < len(available):
+            return available[idx][0]   # 언어 코드 반환
 
-    return lang
+        print(f"1~{len(available)} 사이의 번호를 입력해주세요.")
 
 
 # ============================================================
-# 대화 폴더 선택
+# 대화 폴더 선택 (기존과 동일)
 # ============================================================
 
 def find_conversation_folders(lang: str):
@@ -283,7 +329,7 @@ def add_watermarks(folder: Path):
 
 def main():
     try:
-        lang = ask_language()
+        lang = prompt_language()   # 번호 목록으로 언어 선택
 
         folder = choose_folder(lang)
 

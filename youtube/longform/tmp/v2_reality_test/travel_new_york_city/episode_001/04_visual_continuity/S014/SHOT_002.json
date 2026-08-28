@@ -1,0 +1,273 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S014",
+  "shot_id": "SHOT_002",
+  "character_states": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Medium-sized travel backpack",
+        "Small crossbody bag",
+        "Smartphone",
+        "Passport",
+        "Checked suitcase"
+      ],
+      "body_state": [
+        "Standing still on the sidewalk outside the subway station",
+        "Looking upward at the tall buildings",
+        "Backpack worn on back",
+        "Crossbody bag worn across body",
+        "Checked suitcase stationary beside her"
+      ],
+      "emotion": "awe and excitement at seeing the Manhattan skyline for the first time"
+    }
+  ],
+  "location_state": {
+    "location_ref": "LOC_AIRPORT_TRANSIT_001",
+    "identity_lock": true,
+    "persistent_features": [
+      "Transit station platforms",
+      "Train or vehicle interior",
+      "Views of urban landscape during the journey",
+      "Signage for transit lines and stops"
+    ],
+    "current_zone": "Sidewalk outside the subway station exit in Manhattan",
+    "orientation_state": [
+      "Jieun standing still on the sidewalk outside the subway station exit",
+      "Subway station exit behind Jieun",
+      "Manhattan street and tall buildings ahead of Jieun, above her line of sight",
+      "Jieun's head tilted upward, gazing at the skyline",
+      "Checked suitcase stationary beside Jieun on the sidewalk",
+      "Pedestrians walking past on the sidewalk"
+    ]
+  },
+  "prop_states": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn on back",
+      "position": "on Jieun's back",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn across body, closed",
+      "position": "across Jieun's body",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "in hand or pocket",
+      "position": "in Jieun's hand or pocket",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "stored in crossbody bag",
+      "position": "inside Jieun's crossbody bag",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "stationary beside Jieun",
+      "position": "beside Jieun on the sidewalk, no longer being pulled",
+      "visible": true,
+      "continuity_lock": true
+    }
+  ],
+  "environment_state": {
+    "time_of_day": "day",
+    "weather": null,
+    "lighting": "bright natural daylight, clear and open after emerging from the underground station",
+    "crowd_state": "pedestrians walking on the sidewalk, cars moving along the street, city sounds of traffic and distant chatter"
+  },
+  "story_visual_state": {
+    "resolved_visual_facts": [
+      "Jieun's plane has landed at JFK Airport",
+      "Jieun has disembarked from the airplane",
+      "Jieun has arrived at the immigration area inside the JFK terminal",
+      "Jieun has approached the airport employee to ask for help",
+      "Jieun has been told that no forms are needed and to have her passport ready",
+      "Jieun has taken her passport out from her crossbody bag",
+      "Jieun has joined the correct immigration line on the left",
+      "Jieun has reached the immigration officer's booth",
+      "Jieun has handed her passport to the immigration officer",
+      "The immigration officer has reviewed Jieun's passport",
+      "Jieun has answered the officer's questions about the purpose of her visit, how long she will stay, and where she will stay in New York",
+      "The immigration officer has returned Jieun's passport",
+      "The immigration officer has welcomed Jieun to New York",
+      "Jieun has been cleared to enter the United States",
+      "Jieun has taken back her passport from the immigration officer",
+      "Jieun has nodded gratefully to the immigration officer",
+      "Jieun has stepped away from the immigration booth",
+      "Jieun has walked into the baggage claim area",
+      "Jieun has checked the digital flight information display",
+      "Jieun has identified the correct carousel number for flight KE081",
+      "Jieun has walked to the correct baggage carousel",
+      "Jieun has spotted her suitcase on the baggage carousel",
+      "Jieun has retrieved her suitcase from the carousel",
+      "Jieun is now holding her retrieved suitcase",
+      "Jieun has approached the airport employee and asked for directions to ground transportation",
+      "The airport employee has pointed toward the ground transportation signs and given directions to Jieun",
+      "Jieun has looked in the direction the employee pointed",
+      "Jieun has nodded in understanding",
+      "Jieun has walked into the ground transportation area",
+      "Jieun has stopped near the ground transportation signs",
+      "Jieun has looked at the taxi sign",
+      "Jieun has looked at the ride-sharing sign",
+      "Jieun has looked toward the public transit sign",
+      "Jieun has glanced down at her suitcase",
+      "Jieun has looked back up at the signs with a thoughtful, unsure expression",
+      "Jieun has walked toward the transit employee",
+      "Jieun has stopped in front of the transit employee",
+      "Jieun is now standing in front of the transit employee",
+      "The transit employee is facing Jieun, ready to respond",
+      "The transit employee has explained the transportation options to Jieun",
+      "The transit employee has pointed toward the train signs",
+      "Jieun has looked toward the train signs",
+      "Jieun has nodded and said she will take the train",
+      "Jieun has decided to take public transit to Manhattan",
+      "Jieun has begun walking toward the train signs",
+      "Jieun has boarded the AirTrain",
+      "Jieun has found a seat by the window on the AirTrain",
+      "Jieun has placed her suitcase beside her seat",
+      "Jieun is seated by the window on the AirTrain",
+      "The AirTrain has begun to move",
+      "Jieun is looking out the window",
+      "Jieun is watching the city skyline and buildings appear through the window",
+      "Jieun has arrived at the subway station area after the AirTrain ride",
+      "Jieun is now standing in front of the transit employee near the station entrance",
+      "Jieun has asked the transit employee how to pay for the subway to Manhattan",
+      "The transit employee has pointed toward the ticket machine and is explaining how to buy a ticket",
+      "Jieun has turned her head to look at the ticket machine",
+      "Jieun has seen the ticket machine the employee pointed to",
+      "Jieun understands she needs to buy a ticket at the machine",
+      "Jieun has turned back to face the transit employee",
+      "Jieun has asked which train to take to Manhattan",
+      "The transit employee has pointed toward the platform signs and told Jieun to take the Downtown train on Platform 2",
+      "Jieun has been told to take the Downtown train on Platform 2",
+      "Jieun is looking toward the platform signs",
+      "Jieun has nodded in understanding",
+      "Jieun has looked at the ticket machine",
+      "Jieun has then looked toward Platform 2",
+      "Jieun has figured out how to pay for the subway with help",
+      "Jieun has bought a subway ticket",
+      "Jieun has boarded the Downtown train to Manhattan",
+      "Jieun is now standing inside the subway train, holding onto a pole",
+      "Jieun is looking around at the other passengers on the train",
+      "Jieun is now looking out the window at the city passing by",
+      "Jieun is now looking up at the subway map above the seats",
+      "Jieun has taken out her smartphone from her crossbody bag",
+      "Jieun has opened the map application on her smartphone",
+      "Jieun has confirmed that the station names on the subway map match the ones on her phone's map",
+      "Jieun has confirmed she is on the correct train toward Manhattan",
+      "Jieun has put her phone away in her crossbody bag",
+      "Jieun is now looking out the window, watching for her stop",
+      "The subway train has stopped between stations",
+      "The lights flickered briefly and have stopped flickering",
+      "Jieun is now looking around with a puzzled expression",
+      "Jieun's expression has shifted from puzzled to slightly scared",
+      "Jieun has gripped the pole tighter",
+      "Jieun has looked out the window at the dark tunnel",
+      "Jieun has taken out her smartphone from her crossbody bag",
+      "Jieun is now looking at her smartphone, checking the time",
+      "The subway train has resumed moving",
+      "Jieun's expression has changed from anxious to relieved",
+      "Jieun has relaxed her grip on the pole",
+      "Jieun is now looking out the window at the city lights",
+      "Jieun's expression is admiring and hopeful",
+      "Jieun has turned her attention from the window to the station signs",
+      "Jieun is now looking at the station signs",
+      "Jieun's expression is focused and attentive",
+      "Jieun has arrived at her subway stop in Manhattan",
+      "Jieun has exited the subway station",
+      "Jieun is now standing on the street outside the subway station",
+      "Jieun has stopped walking and is looking up at the tall buildings and the skyline",
+      "Jieun is seeing the Manhattan skyline for the first time"
+    ],
+    "unresolved_visual_facts": [
+      "Jieun has not yet reached her hotel in Manhattan",
+      "Jieun has not yet begun walking toward her hotel"
+    ],
+    "must_remain_visible": [
+      "Jieun's travel backpack on her back",
+      "Jieun's crossbody bag across her body",
+      "Jieun's checked suitcase stationary beside her on the sidewalk",
+      "Jieun standing still on the sidewalk outside the subway station, looking upward"
+    ],
+    "must_not_appear": [
+      "Jieun moving past the area around the subway station",
+      "Jieun's suitcase being lost or missing",
+      "Jieun's passport or smartphone being dropped or lost",
+      "Jieun arriving at her hotel",
+      "A new travel problem being introduced",
+      "Jieun encountering any problems with finding her hotel yet"
+    ]
+  },
+  "continuity_links": {
+    "previous_scene_id": "S014",
+    "previous_shot_id": "SHOT_001",
+    "next_scene_id": "S014",
+    "next_shot_id": "SHOT_003",
+    "carry_in": [
+      "Jieun is standing on the street outside the subway station",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase",
+      "She is pulling her checked suitcase"
+    ],
+    "carry_out": [
+      "Jieun is standing still on the sidewalk outside the subway station",
+      "She is looking up at the tall buildings and the skyline with an expression of awe and excitement",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase",
+      "Her checked suitcase is stationary beside her on the sidewalk"
+    ]
+  },
+  "locks": {
+    "character_identity": true,
+    "clothing": true,
+    "location_identity": true,
+    "prop_state": true,
+    "timeline": true,
+    "weather": true,
+    "story_state": true
+  }
+}

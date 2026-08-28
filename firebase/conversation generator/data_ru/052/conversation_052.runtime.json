@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "c2",
+    "id": "052"
+  },
+  "title": {
+    "target": "Деловые контакты",
+    "en": "Business Contacts",
+    "es": "Contactos de negocios",
+    "fr": "Contacts professionnels",
+    "pt": "Contatos de Negócios",
+    "kr": "비즈니스 인맥",
+    "jp": "ビジネスコネクション",
+    "zh": "商务人脉",
+    "ru": "Деловые контакты"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, вы были на вчерашней конференции? Говорят, там было много полезных знакомств.",
+            "en": "Ivan, were you at yesterday's conference? They say there were a lot of useful connections there.",
+            "es": "Iván, ¿estuvo usted en la conferencia de ayer? Dicen que allí hubo muchos contactos útiles.",
+            "fr": "Ivan, étiez-vous à la conférence d'hier ? On dit qu'il y avait beaucoup de contacts utiles.",
+            "pt": "Ivan, você foi à conferência de ontem? Dizem que lá havia muitos contatos úteis.",
+            "kr": "이반 씨, 어제 컨퍼런스에 가셨어요? 거기서 유용한 인맥이 많이 생겼다던데요.",
+            "jp": "イワンさん、昨日の会議には行かれましたか？ 有益な人脈がたくさんあったそうですよ。",
+            "zh": "伊万，您昨天去参加那个会议了吗？听说会上认识了不少有用的人。",
+            "ru": "Иван, вы были на вчерашней конференции? Говорят, там было много полезных знакомств."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Елена, я познакомился с представителями трёх крупных компаний. Очень полезные контакты.",
+            "en": "Yes, Elena, I met representatives from three large companies. Very useful contacts.",
+            "es": "Sí, Elena, conocí a representantes de tres grandes empresas. Contactos muy útiles.",
+            "fr": "Oui, Elena, j'ai rencontré des représentants de trois grandes entreprises. Des contacts très utiles.",
+            "pt": "Sim, Elena, eu conheci representantes de três grandes empresas. Contatos muito úteis.",
+            "kr": "네, 옐레나 씨, 저는 세 대기업 관계자들을 만났어요. 정말 유용한 인맥이에요.",
+            "jp": "はい、エレナさん。大手企業三社の担当者と知り合いました。とても有益なコネクションです。",
+            "zh": "是的，叶连娜，我认识了三家大公司的代表。都是很有用的人脉。",
+            "ru": "Да, Елена, я познакомился с представителями трёх крупных компаний. Очень полезные контакты."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это отлично! А как вам удалось с ними заговорить? Я всегда стесняюсь подойти первой.",
+            "en": "That's great! And how did you manage to start talking to them? I always feel shy about approaching people first.",
+            "es": "¡Eso es estupendo! ¿Y cómo consiguió hablar con ellos? Yo siempre me da vergüenza acercarme primero.",
+            "fr": "C'est excellent ! Et comment avez-vous réussi à leur parler ? J'ai toujours honte d'aller vers eux en premier.",
+            "pt": "Isso é ótimo! E como você conseguiu falar com eles? Eu sempre fico tímida para chegar primeiro.",
+            "kr": "잘됐네요! 그런데 어떻게 말을 걸기 시작하셨어요? 저는 항상 먼저 다가가기가 어색하거든요.",
+            "jp": "それは素晴らしいですね！ どうやって話しかけたんですか？ 私はいつも自分から近づくのが恥ずかしくて。",
+            "zh": "那太好了！您是怎么跟他们搭上话的？我总是不好意思先开口。",
+            "ru": "Это отлично! А как вам удалось с ними заговорить? Я всегда стесняюсь подойти первой."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я просто подошёл после их выступления и задал вопрос. Люди любят, когда интересуются их работой.",
+            "en": "I just went up after their presentation and asked a question. People like it when you're interested in their work.",
+            "es": "Simplemente me acerqué después de su presentación y les hice una pregunta. A la gente le gusta que se interesen por su trabajo.",
+            "fr": "J'ai simplement abordé l'un d'eux après leur présentation et j'ai posé une question. Les gens aiment qu'on s'intéresse à leur travail.",
+            "pt": "Eu simplesmente me aproximei depois da apresentação deles e fiz uma pergunta. As pessoas gostam quando nos interessamos pelo trabalho delas.",
+            "kr": "저는 그냥 발표가 끝난 후에 다가가서 질문을 했어요. 사람들은 자기 일에 관심을 가져주는 걸 좋아하거든요.",
+            "jp": "ただ彼らの発表の後に近づいて、質問をしただけです。人は自分の仕事に興味を持ってもらえるのが好きですから。",
+            "zh": "我就是等他们发言结束后走过去，问了一个问题。人们都喜欢别人对自己的工作感兴趣。",
+            "ru": "Я просто подошёл после их выступления и задал вопрос. Люди любят, когда интересуются их работой."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Наверное, мне стоит попробовать такой подход на следующей выставке.",
+            "en": "Maybe I should try that approach at the next exhibition.",
+            "es": "Quizá debería probar ese enfoque en la próxima feria.",
+            "fr": "Je devrais peut-être essayer cette approche au prochain salon.",
+            "pt": "Talvez eu deva tentar essa abordagem na próxima feira.",
+            "kr": "아마 다음 전시회에서 그 방법을 시도해 봐야겠어요.",
+            "jp": "次の展示会では、その方法を試してみるべきかもしれませんね。",
+            "zh": "看来我下次参加展会的时候也应该试试这种方法。",
+            "ru": "Наверное, мне стоит попробовать такой подход на следующей выставке."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обязательно попробуйте. Главное — быть искренним и не бояться начать разговор.",
+            "en": "You definitely should. The main thing is to be sincere and not be afraid to start a conversation.",
+            "es": "Pruébelo sin duda. Lo principal es ser sincero y no tener miedo de iniciar una conversación.",
+            "fr": "Essayez, c'est certain. L'important est d'être sincère et de ne pas avoir peur d'entamer la conversation.",
+            "pt": "Com certeza tente. O importante é ser sincero e não ter medo de começar uma conversa.",
+            "kr": "꼭 시도해 보세요. 중요한 건 진심을 담는 거고 대화를 시작하는 걸 두려워하지 않는 거예요.",
+            "jp": "ぜひ試してみてください。大切なのは、誠実であることと、会話を始めることを恐れないことです。",
+            "zh": "您一定要试试。关键是要真诚，而且不要害怕开口聊天。",
+            "ru": "Обязательно попробуйте. Главное — быть искренним и не бояться начать разговор."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, я получила приглашение на деловой ужин в пятницу. Вы не хотите присоединиться?",
+            "en": "Dmitry, I got an invitation to a business dinner on Friday. Would you like to join?",
+            "es": "Dmitri, he recibido una invitación a una cena de negocios el viernes. ¿No quiere usted unirse?",
+            "fr": "Dmitri, j'ai reçu une invitation à un dîner d'affaires vendredi. Ne voulez-vous pas vous joindre à nous ?",
+            "pt": "Dmitri, eu recebi um convite para um jantar de negócios na sexta-feira. Você não quer se juntar a mim?",
+            "kr": "드미트리 씨, 금요일에 비즈니스 만찬 초대를 받았어요. 같이 가실래요?",
+            "jp": "ドミトリーさん、金曜日のビジネスディナーのお誘いを受けたんですが、ご一緒しませんか？",
+            "zh": "德米特里，我收到了周五商务晚宴的邀请。您想一起去吗？",
+            "ru": "Дмитрий, я получила приглашение на деловой ужин в пятницу. Вы не хотите присоединиться?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "С удовольствием, Мария. А кто будет на этом ужине, если не секрет?",
+            "en": "I'd love to, Maria. And who will be at this dinner, if it's not a secret?",
+            "es": "Con mucho gusto, María. ¿Y quién estará en esa cena, si no es un secreto?",
+            "fr": "Avec plaisir, Maria. Et qui sera à ce dîner, si ce n'est pas un secret ?",
+            "pt": "Com prazer, Maria. E quem vai estar nesse jantar, se não for segredo?",
+            "kr": "기꺼이요, 마리야 씨. 그런데 비밀만 아니라면 그 자리엔 누가 오나요?",
+            "jp": "喜んで、マリアさん。ところで、そのディナーには誰が来るんですか？ 秘密でなければ。",
+            "zh": "很乐意，玛丽亚。如果不保密的话，这个晚宴上都有谁？",
+            "ru": "С удовольствием, Мария. А кто будет на этом ужине, если не секрет?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Будут наши партнёры из Санкт-Петербурга и, возможно, их новые инвесторы.",
+            "en": "Our partners from Saint Petersburg will be there, and possibly their new investors.",
+            "es": "Estarán nuestros socios de San Petersburgo y, posiblemente, sus nuevos inversores.",
+            "fr": "Il y aura nos partenaires de Saint-Pétersbourg et, peut-être, leurs nouveaux investisseurs.",
+            "pt": "Estarão os nossos parceiros de São Petersburgo e, possivelmente, os novos investidores deles.",
+            "kr": "상트페테르부르크에서 온 저희 파트너들이랑 어쩌면 그들의 새로운 투자자들도 올 거예요.",
+            "jp": "サンクトペテルブルクからのパートナーと、もしかしたら彼らの新しい投資家も来るそうです。",
+            "zh": "会有我们圣彼得堡的合作伙伴，可能还有他们的新投资人。",
+            "ru": "Будут наши партнёры из Санкт-Петербурга и, возможно, их новые инвесторы."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это отличная возможность обсудить будущее сотрудничество в неформальной обстановке.",
+            "en": "That's a great opportunity to discuss future cooperation in an informal setting.",
+            "es": "Es una oportunidad excelente para hablar del futuro de la colaboración en un ambiente informal.",
+            "fr": "C'est une excellente occasion de discuter de notre future coopération dans un cadre informel.",
+            "pt": "Essa é uma ótima oportunidade para discutir a futura cooperação em um ambiente informal.",
+            "kr": "비공식적인 자리에서 미래 협력을 논의할 좋은 기회네요.",
+            "jp": "それは非公式な場で今後の協力について話し合う絶好の機会ですね。",
+            "zh": "这是个在非正式场合讨论未来合作的好机会。",
+            "ru": "Это отличная возможность обсудить будущее сотрудничество в неформальной обстановке."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Согласна. Я уже подготовила несколько вопросов о их новых проектах.",
+            "en": "I agree. I've already prepared a few questions about their new projects.",
+            "es": "De acuerdo. Ya he preparado varias preguntas sobre sus nuevos proyectos.",
+            "fr": "Je suis d'accord. J'ai déjà préparé plusieurs questions sur leurs nouveaux projets.",
+            "pt": "Concordo. Eu já preparei algumas perguntas sobre os novos projetos deles.",
+            "kr": "맞아요. 저는 이미 그들의 새 프로젝트에 대한 질문 몇 가지를 준비했어요.",
+            "jp": "そうですね。私はもう彼らの新しいプロジェクトについていくつか質問を用意しました。",
+            "zh": "我也这么觉得。我已经准备好了一些关于他们新项目的问题。",
+            "ru": "Согласна. Я уже подготовила несколько вопросов о их новых проектах."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда я тоже подготовлюсь. Вместе мы сможем произвести хорошее впечатление.",
+            "en": "Then I'll prepare too. Together we can make a good impression.",
+            "es": "Entonces yo también me prepararé. Juntos podremos causar una buena impresión.",
+            "fr": "Alors je me préparerai aussi. Ensemble, nous pourrons faire bonne impression.",
+            "pt": "Então eu também vou me preparar. Juntos, nós conseguiremos causar uma boa impressão.",
+            "kr": "그럼 저도 준비할게요. 우리가 함께라면 좋은 인상을 남길 수 있을 거예요.",
+            "jp": "では、私も準備します。一緒に行けば、良い印象を与えられるでしょう。",
+            "zh": "那我也准备一下。我们俩一起肯定能给人留下好印象。",
+            "ru": "Тогда я тоже подготовлюсь. Вместе мы сможем произвести хорошее впечатление."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, вы не знакомы с главой отдела закупок компании «Вектор»?",
+            "en": "Alexey, do you happen to know the head of the purchasing department at the company \"Vector\"?",
+            "es": "Alekséi, ¿no conoce usted al jefe del departamento de compras de la empresa «Vector»?",
+            "fr": "Alexeï, connaissez-vous le chef du service des achats de la société « Vektor » ?",
+            "pt": "Alexei, você não conhece o chefe do departamento de compras da empresa \"Vetor\"?",
+            "kr": "알렉세이 씨, ‘벡토르’ 회사의 구매 부서장을 아시나요?",
+            "jp": "アレクセイさん、「ベクトル」社の購買部長をご存知ですか？",
+            "zh": "阿列克谢，您认识“维克托”公司的采购部负责人吗？",
+            "ru": "Алексей, вы не знакомы с главой отдела закупок компании «Вектор»?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "К сожалению, нет, Ольга. А почему вы спрашиваете?",
+            "en": "Unfortunately, no, Olga. Why do you ask?",
+            "es": "Por desgracia, no, Olga. ¿Y por qué lo pregunta?",
+            "fr": "Malheureusement non, Olga. Pourquoi demandez-vous cela ?",
+            "pt": "Infelizmente, não, Olga. E por que você está perguntando?",
+            "kr": "아쉽게도 몰라요, 올가 씨. 왜 물어보세요?",
+            "jp": "残念ながら、知りませんね、オリガさん。なぜお尋ねになるのですか？",
+            "zh": "很遗憾，不认识，奥尔加。您为什么问这个？",
+            "ru": "К сожалению, нет, Ольга. А почему вы спрашиваете?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Нам нужно обсудить с ними условия поставки, а напрямую связаться не получается.",
+            "en": "We need to discuss delivery terms with them, but we can't get in touch with them directly.",
+            "es": "Necesitamos hablar con ellos sobre las condiciones de suministro, y no conseguimos contactar directamente.",
+            "fr": "Nous devons discuter des conditions de livraison avec eux, mais nous n'arrivons pas à les joindre directement.",
+            "pt": "Nós precisamos discutir com eles as condições de entrega, e não conseguimos falar diretamente.",
+            "kr": "그들과 납품 조건을 논의해야 하는데, 직접 연락이 닿지 않거든요.",
+            "jp": "彼らと納品条件について話し合う必要があるんですが、直接連絡が取れなくて。",
+            "zh": "我们需要跟他们谈供货条件，但直接联系不上。",
+            "ru": "Нам нужно обсудить с ними условия поставки, а напрямую связаться не получается."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я могу спросить у своего коллеги, он работал с ними в прошлом году.",
+            "en": "I can ask my colleague, he worked with them last year.",
+            "es": "Puedo preguntarle a mi colega; él trabajó con ellos el año pasado.",
+            "fr": "Je peux demander à mon collègue, il a travaillé avec eux l'année dernière.",
+            "pt": "Eu posso perguntar ao meu colega, ele trabalhou com eles no ano passado.",
+            "kr": "제 동료에게 물어볼 수 있어요. 작년에 그들과 함께 일했거든요.",
+            "jp": "同僚に聞いてみますよ。彼は昨年、彼らと仕事をしていましたから。",
+            "zh": "我可以问问我的同事，他去年跟他们合作过。",
+            "ru": "Я могу спросить у своего коллеги, он работал с ними в прошлом году."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это было бы замечательно. Чем больше посредников, тем сложнее договориться.",
+            "en": "That would be wonderful. The more intermediaries there are, the harder it is to negotiate.",
+            "es": "Eso sería estupendo. Cuantos más intermediarios, más difícil es llegar a un acuerdo.",
+            "fr": "Ce serait formidable. Plus il y a d'intermédiaires, plus il est difficile de s'entendre.",
+            "pt": "Isso seria maravilhoso. Quanto mais intermediários, mais difícil é negociar.",
+            "kr": "그럼 정말 좋죠. 중간자가 많을수록 합의하기가 더 어려워지니까요.",
+            "jp": "それはありがたいです。仲介者が多ければ多いほど、交渉は難しくなりますからね。",
+            "zh": "那太好了。中间人越多，就越难谈成事。",
+            "ru": "Это было бы замечательно. Чем больше посредников, тем сложнее договориться."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понимаю. Я напишу ему сегодня же и постараюсь организовать встречу.",
+            "en": "I understand. I'll write to him today and try to arrange a meeting.",
+            "es": "Lo entiendo. Le escribiré hoy mismo e intentaré organizar una reunión.",
+            "fr": "Je comprends. Je lui écrirai dès aujourd'hui et j'essaierai d'organiser une rencontre.",
+            "pt": "Entendo. Eu vou escrever para ele ainda hoje e tentar organizar uma reunião.",
+            "kr": "이해해요. 오늘 바로 그에게 연락해서 만남을 주선해 볼게요.",
+            "jp": "おっしゃる通りです。今日中に彼に連絡して、会議を設定できるよう努めます。",
+            "zh": "我明白。我今天就给他写信，尽量安排一次会面。",
+            "ru": "Понимаю. Я напишу ему сегодня же и постараюсь организовать встречу."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, я слышала, вы идёте на отраслевой форум в конце месяца.",
+            "en": "Sergey, I heard you're going to the industry forum at the end of the month.",
+            "es": "Serguéi, he oído que usted va al foro del sector a finales de mes.",
+            "fr": "Sergueï, j'ai entendu dire que vous allez au forum de l'industrie à la fin du mois.",
+            "pt": "Sergei, eu ouvi dizer que você vai ao fórum do setor no fim do mês.",
+            "kr": "세르게이 씨, 이번 달 말에 업계 포럼에 가신다고 들었어요.",
+            "jp": "セルゲイさん、月末の業界フォーラムに行かれると聞きました。",
+            "zh": "谢尔盖，我听说您月底要去参加行业论坛。",
+            "ru": "Сергей, я слышала, вы идёте на отраслевой форум в конце месяца."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Анна, планирую. Вы тоже туда собираетесь?",
+            "en": "Yes, Anna, I'm planning to. Are you going there too?",
+            "es": "Sí, Anna, lo tengo previsto. ¿Piensa ir usted también?",
+            "fr": "Oui, Anna, c'est prévu. Vous comptez y aller aussi ?",
+            "pt": "Sim, Anna, estou planejando. Você também vai?",
+            "kr": "네, 안나 씨, 갈 계획이에요. 당신도 가실 건가요?",
+            "jp": "はい、アンナさん、そのつもりです。あなたも行かれるんですか？",
+            "zh": "是的，安娜，我是这么打算的。您也去吗？",
+            "ru": "Да, Анна, планирую. Вы тоже туда собираетесь?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, но я еду одна, и мне немного некомфортно. Не хотите поехать вместе?",
+            "en": "Yes, but I'm going alone, and I feel a bit uncomfortable. Would you like to go together?",
+            "es": "Sí, pero voy sola y me siento un poco incómoda. ¿No quiere viajar juntos?",
+            "fr": "Oui, mais j'y vais seule et je ne suis pas très à l'aise. Ne voulez-vous pas y aller ensemble ?",
+            "pt": "Sim, mas eu vou sozinha, e me sinto um pouco desconfortável. Você não quer ir junto?",
+            "kr": "네, 그런데 저 혼자 가는 거라 좀 불편하거든요. 같이 가시는 건 어때요?",
+            "jp": "はい、でも一人で行くので、少し心細いんです。一緒に行きませんか？",
+            "zh": "去，但我一个人去，感觉有点不自在。您想不想一起去？",
+            "ru": "Да, но я еду одна, и мне немного некомфортно. Не хотите поехать вместе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отличная идея. Мы сможем разделить расходы на дорогу и вместе посетить ключевые сессии.",
+            "en": "Great idea. We can split the travel expenses and attend the key sessions together.",
+            "es": "Excelente idea. Podremos compartir los gastos del viaje y asistir juntos a las sesiones clave.",
+            "fr": "Excellente idée. Nous pourrons partager les frais de déplacement et assister ensemble aux sessions clés.",
+            "pt": "Ótima ideia. Nós poderemos dividir as despesas da viagem e assistir juntos às sessões principais.",
+            "kr": "좋은 생각이에요. 교통비를 나눌 수 있고 주요 세션도 함께 들을 수 있으니까요.",
+            "jp": "いいアイデアですね。交通費を分担できますし、主要なセッションにも一緒に参加できます。",
+            "zh": "好主意。我们可以分摊路费，还可以一起去参加重要的分会场。",
+            "ru": "Отличная идея. Мы сможем разделить расходы на дорогу и вместе посетить ключевые сессии."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "И заодно познакомим друг друга со своими контактами. У меня там пара полезных знакомых.",
+            "en": "And we can also introduce each other to our contacts. I have a couple of useful acquaintances there.",
+            "es": "Y de paso nos presentaremos mutuamente a nuestros contactos. Allí tengo un par de conocidos útiles.",
+            "fr": "Et au passage, nous nous présenterons mutuellement nos contacts. J'y connais quelques personnes utiles.",
+            "pt": "E de quebra, vamos apresentar um ao outro aos nossos contatos. Eu tenho alguns conhecidos úteis lá.",
+            "kr": "그리고 서로 아는 인맥도 소개해 주고요. 저한테 거기 아는 사람이 몇 명 있어요.",
+            "jp": "それに、お互いの知り合いを紹介し合いましょう。私には役に立つ知り合いが何人かいますから。",
+            "zh": "顺便也可以把各自的人脉介绍给对方。我在那边有几个有用的熟人。",
+            "ru": "И заодно познакомим друг друга со своими контактами. У меня там пара полезных знакомых."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Взаимно. У меня тоже есть несколько человек, с которыми вас стоит познакомить.",
+            "en": "Same here. I also know a few people you should meet.",
+            "es": "Igualmente. Yo también conozco a varias personas con las que merece la pena que usted se relacione.",
+            "fr": "De même. J'ai aussi plusieurs personnes que je devrais vous présenter.",
+            "pt": "Igualmente. Eu também tenho algumas pessoas que vale a pena apresentar a você.",
+            "kr": "저도 마찬가지예요. 당신께 소개해 드리고 싶은 사람이 몇 명 있어요.",
+            "jp": "私もです。あなたに紹介したい人が何人かいます。",
+            "zh": "我也是。我也有几个人值得介绍给您认识。",
+            "ru": "Взаимно. У меня тоже есть несколько человек, с которыми вас стоит познакомить."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, вы не могли бы представить меня руководству компании «Стройинвест» на следующей неделе?",
+            "en": "Ivan, could you introduce me to the management of the company \"Stroyinvest\" next week?",
+            "es": "Iván, ¿podría usted presentarme a la dirección de la empresa «Stroinvest» la semana que viene?",
+            "fr": "Ivan, pourriez-vous me présenter à la direction de la société « Stroïinvest » la semaine prochaine ?",
+            "pt": "Ivan, você poderia me apresentar à diretoria da empresa \"Stroinvest\" na próxima semana?",
+            "kr": "이반 씨, 다음 주에 ‘스트로이인베스트’ 회사 경영진에게 저를 소개해 주실 수 있나요?",
+            "jp": "イワンさん、来週、「ストロイインベスト」社の経営陣に私を紹介していただけませんか？",
+            "zh": "伊万，您下周能把我引荐给“建筑投资”公司的领导层吗？",
+            "ru": "Иван, вы не могли бы представить меня руководству компании «Стройинвест» на следующей неделе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, Елена. Я хорошо знаком с их коммерческим директором.",
+            "en": "Of course, Elena. I know their commercial director well.",
+            "es": "Por supuesto, Elena. Conozco bien a su director comercial.",
+            "fr": "Bien sûr, Elena. Je connais bien leur directeur commercial.",
+            "pt": "Claro, Elena. Eu conheço bem o diretor comercial deles.",
+            "kr": "물론이죠, 옐레나 씨. 저는 그들의 상무이사와 잘 아는 사이예요.",
+            "jp": "もちろんです、エレナさん。私は彼らの営業部長とよく知り合いですから。",
+            "zh": "当然可以，叶连娜。我跟他们的商务总监很熟。",
+            "ru": "Конечно, Елена. Я хорошо знаком с их коммерческим директором."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? Это было бы очень ценно для нашего нового проекта.",
+            "en": "Really? That would be very valuable for our new project.",
+            "es": "¿De verdad? Eso sería muy valioso para nuestro nuevo proyecto.",
+            "fr": "Vraiment ? Ce serait très précieux pour notre nouveau projet.",
+            "pt": "Sério? Isso seria muito valioso para o nosso novo projeto.",
+            "kr": "정말요? 그럼 저희 새 프로젝트에 아주 큰 도움이 될 거예요.",
+            "jp": "本当ですか？ それは私たちの新しいプロジェクトにとって、とても貴重なことです。",
+            "zh": "真的吗？那对我们新项目来说太有价值了。",
+            "ru": "Правда? Это было бы очень ценно для нашего нового проекта."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я уверен, ему будет интересно обсудить с вами возможности сотрудничества.",
+            "en": "I'm sure he'll be interested in discussing cooperation opportunities with you.",
+            "es": "Estoy seguro de que a él le interesará hablar con usted sobre las posibilidades de colaboración.",
+            "fr": "Je suis sûr qu'il sera intéressé de discuter avec vous des possibilités de coopération.",
+            "pt": "Eu tenho certeza de que ele vai ter interesse em discutir com você as possibilidades de cooperação.",
+            "kr": "저는 그분이 당신과 협력 가능성에 대해 논의하는 걸 흥미로워할 거라고 확신해요.",
+            "jp": "彼はあなたと協力の可能性について話し合うことに興味を持つと思いますよ。",
+            "zh": "我相信他会很乐意跟您讨论合作的可能性的。",
+            "ru": "Я уверен, ему будет интересно обсудить с вами возможности сотрудничества."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда я подготовлю краткую презентацию наших последних разработок.",
+            "en": "Then I'll prepare a brief presentation of our latest developments.",
+            "es": "Entonces prepararé una breve presentación de nuestros últimos desarrollos.",
+            "fr": "Alors je préparerai une brève présentation de nos derniers développements.",
+            "pt": "Então eu vou preparar uma apresentação resumida dos nossos últimos desenvolvimentos.",
+            "kr": "그럼 저희 최근 개발 성과에 대한 간단한 프레젠테이션을 준비할게요.",
+            "jp": "では、私たちの最新の開発についての短いプレゼンテーションを準備します。",
+            "zh": "那我就准备一份我们最新研发成果的简短介绍。",
+            "ru": "Тогда я подготовлю краткую презентацию наших последних разработок."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично. Я договорюсь о встрече на среду, если вам удобно.",
+            "en": "Great. I'll arrange a meeting for Wednesday, if that works for you.",
+            "es": "Estupendo. Concertaré la reunión para el miércoles, si a usted le viene bien.",
+            "fr": "Parfait. Je fixerai la réunion à mercredi, si cela vous convient.",
+            "pt": "Ótimo. Eu vou marcar a reunião para quarta-feira, se for conveniente para você.",
+            "kr": "좋아요. 당신이 괜찮다면 수요일에 만남을 주선할게요.",
+            "jp": "素晴らしい。ご都合がよければ、水曜日に会議を設定しておきます。",
+            "zh": "太好了。如果您方便的话，我把会面约在周三。",
+            "ru": "Отлично. Я договорюсь о встрече на среду, если вам удобно."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, вы обменялись визитками с представителями делегации из Казани?",
+            "en": "Maria, did you exchange business cards with the representatives of the delegation from Kazan?",
+            "es": "María, ¿ha intercambiado usted tarjetas con los representantes de la delegación de Kazán?",
+            "fr": "Maria, avez-vous échangé vos cartes de visite avec les représentants de la délégation de Kazan ?",
+            "pt": "Maria, você trocou cartões de visita com os representantes da delegação de Kazan?",
+            "kr": "마리야 씨, 카잔에서 온 대표단 관계자들과 명함을 교환하셨어요?",
+            "jp": "マリアさん、カザンからの代表団の方々と名刺交換をされましたか？",
+            "zh": "玛丽亚，您跟喀山代表团的代表交换名片了吗？",
+            "ru": "Мария, вы обменялись визитками с представителями делегации из Казани?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Дмитрий, конечно. Я всегда собираю все контакты после таких мероприятий.",
+            "en": "Yes, Dmitry, of course. I always collect all the contacts after such events.",
+            "es": "Sí, Dmitri, por supuesto. Siempre recojo todos los contactos después de este tipo de eventos.",
+            "fr": "Oui, Dmitri, bien sûr. Je récupère toujours tous les contacts après ce genre d'événements.",
+            "pt": "Sim, Dmitri, claro. Eu sempre coleciono todos os contatos depois desses eventos.",
+            "kr": "네, 드미트리 씨, 물론이죠. 저는 그런 행사 후에는 항상 모든 연락처를 모아요.",
+            "jp": "ええ、ドミトリーさん、もちろんです。私はいつもそういったイベントの後は、すべての連絡先を集めています。",
+            "zh": "当然换了，德米特里。每次参加完这种活动，我都会把所有联系方式收集起来。",
+            "ru": "Да, Дмитрий, конечно. Я всегда собираю все контакты после таких мероприятий."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "И что вы обычно делаете с этими контактами потом? Просто храните в ящике?",
+            "en": "And what do you usually do with those contacts afterwards? Just keep them in a drawer?",
+            "es": "¿Y qué suele hacer usted con esos contactos después? ¿Simplemente los guarda en un cajón?",
+            "fr": "Et que faites-vous habituellement de ces contacts ensuite ? Vous les rangez simplement dans un tiroir ?",
+            "pt": "E o que você costuma fazer com esses contatos depois? Só guarda na gaveta?",
+            "kr": "그럼 그 연락처로 보통 뭘 하세요? 그냥 서랍에 보관만 하나요?",
+            "jp": "それで、その後、その連絡先をどうされているんですか？ ただ引き出しにしまっておくだけですか？",
+            "zh": "那您之后一般怎么处理这些联系方式？就放在抽屉里存着吗？",
+            "ru": "И что вы обычно делаете с этими контактами потом? Просто храните в ящике?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, я на следующий день отправляю каждому короткое письмо с благодарностью за знакомство.",
+            "en": "No, the next day I send each person a short email thanking them for the introduction.",
+            "es": "No, al día siguiente envío a cada uno una carta breve dándoles las gracias por el contacto.",
+            "fr": "Non, le lendemain, j'envoie à chacun un court message pour les remercier de la rencontre.",
+            "pt": "Não, no dia seguinte eu envio a cada um uma mensagem curta agradecendo pelo contato.",
+            "kr": "아니요, 다음 날 각자에게 만나서 반가웠다는 짧은 감사 이메일을 보내요.",
+            "jp": "いいえ、次の日に、知り合えたことへのお礼を書いた短いメールをそれぞれに送ります。",
+            "zh": "不是，我会在第二天给每个人发一封简短的邮件，感谢认识对方。",
+            "ru": "Нет, я на следующий день отправляю каждому короткое письмо с благодарностью за знакомство."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это очень профессиональный подход. Я обычно теряю все визитки.",
+            "en": "That's a very professional approach. I usually lose all my business cards.",
+            "es": "Es un enfoque muy profesional. Yo suelo perder todas las tarjetas.",
+            "fr": "C'est une approche très professionnelle. Moi, je perds généralement toutes mes cartes de visite.",
+            "pt": "Essa é uma abordagem muito profissional. Eu geralmente perco todos os cartões de visita.",
+            "kr": "정말 전문적인 방법이네요. 저는 보통 명함을 다 잃어버려요.",
+            "jp": "それはとてもプロフェッショナルなやり方ですね。私はいつも名刺をなくしてしまいます。",
+            "zh": "这个方法很专业。我通常会把所有名片都弄丢。",
+            "ru": "Это очень профессиональный подход. Я обычно теряю все визитки."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Попробуйте этот метод. Он действительно помогает поддерживать связь и строить доверие.",
+            "en": "Try this method. It really helps maintain the connection and build trust.",
+            "es": "Pruebe este método. De verdad ayuda a mantener la relación y a generar confianza.",
+            "fr": "Essayez cette méthode. Elle aide vraiment à entretenir le lien et à instaurer la confiance.",
+            "pt": "Tente esse método. Ele realmente ajuda a manter o contato e a construir confiança.",
+            "kr": "이 방법을 시도해 보세요. 관계를 유지하고 신뢰를 쌓는 데 정말 도움이 돼요.",
+            "jp": "この方法を試してみてください。関係を維持し、信頼を築くのに本当に役立ちますから。",
+            "zh": "您可以试试这个方法。它确实有助于保持联系和建立信任。",
+            "ru": "Попробуйте этот метод. Он действительно помогает поддерживать связь и строить доверие."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, я получил приглашение на юбилей нашего давнего партнёра. Вы тоже будете?",
+            "en": "Olga, I got an invitation to the anniversary of our long-time partner. Will you be there too?",
+            "es": "Olga, he recibido una invitación al aniversario de nuestro antiguo socio. ¿Estará usted también?",
+            "fr": "Olga, j'ai reçu une invitation à l'anniversaire de notre ancien partenaire. Vous y serez aussi ?",
+            "pt": "Olga, eu recebi um convite para o aniversário do nosso antigo parceiro. Você também vai?",
+            "kr": "올가 씨, 오랜 파트너 회사의 기념일 행사 초대를 받았어요. 당신도 가실 건가요?",
+            "jp": "オリガさん、長年のパートナーの記念パーティーの招待状を受け取りました。あなたも行かれますか？",
+            "zh": "奥尔加，我收到了我们老合作伙伴周年庆典的邀请。您也会去吗？",
+            "ru": "Ольга, я получил приглашение на юбилей нашего давнего партнёра. Вы тоже будете?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Алексей, меня тоже пригласили. Думаю, там будет много нужных людей.",
+            "en": "Yes, Alexey, I was invited as well. I think there will be a lot of important people there.",
+            "es": "Sí, Alekséi, a mí también me han invitado. Creo que allí habrá mucha gente importante.",
+            "fr": "Oui, Alexeï, j'ai été invitée aussi. Je pense qu'il y aura beaucoup de personnes importantes.",
+            "pt": "Sim, Alexei, eu também fui convidada. Acho que vai ter muita gente importante lá.",
+            "kr": "네, 알렉세이 씨, 저도 초대받았어요. 거기엔 필요한 사람들이 많이 올 거라고 생각해요.",
+            "jp": "はい、アレクセイさん、私も招待されました。そこには必要な人がたくさん来ると思います。",
+            "zh": "是的，阿列克谢，我也被邀请了。我想那里会有很多有用的人。",
+            "ru": "Да, Алексей, меня тоже пригласили. Думаю, там будет много нужных людей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда давайте договоримся, что представим друг друга нашим знакомым. Так будет проще.",
+            "en": "Then let's agree to introduce each other to our acquaintances. That will make it easier.",
+            "es": "Entonces pongámonos de acuerdo en presentarnos mutuamente a nuestros conocidos. Así será más fácil.",
+            "fr": "Alors convenons de nous présenter mutuellement à nos connaissances. Ce sera plus facile.",
+            "pt": "Então vamos combinar de nos apresentar aos nossos conhecidos. Assim será mais fácil.",
+            "kr": "그럼 서로 아는 지인들을 소개해 주기로 합시다. 그러면 더 수월할 거예요.",
+            "jp": "では、お互いの知り合いに紹介し合うことにしましょう。その方が簡単ですから。",
+            "zh": "那我们就说好了，把彼此介绍给各自认识的人。这样会更容易些。",
+            "ru": "Тогда давайте договоримся, что представим друг друга нашим знакомым. Так будет проще."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласна. Я знаю нескольких руководителей, которым будет интересно познакомиться с вами.",
+            "en": "Agreed. I know several executives who would be interested in meeting you.",
+            "es": "De acuerdo. Conozco a varios directivos a los que les interesará conocerle a usted.",
+            "fr": "Je suis d'accord. Je connais plusieurs dirigeants qui seront intéressés à faire votre connaissance.",
+            "pt": "Concordo. Eu conheço alguns diretores que vão ter interesse em conhecer você.",
+            "kr": "좋아요. 당신께 소개해 드리면 좋아할 만한 임원 몇 명을 알고 있어요.",
+            "jp": "そうしましょう。あなたに会いたがるであろう経営者の方を何人か知っています。",
+            "zh": "同意。我认识几位领导，他们会很乐意认识您的。",
+            "ru": "Согласна. Я знаю нескольких руководителей, которым будет интересно познакомиться с вами."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А я познакомлю вас с нашими потенциальными клиентами из соседнего региона.",
+            "en": "And I'll introduce you to our potential clients from the neighboring region.",
+            "es": "Y yo le presentaré a nuestros posibles clientes de la región vecina.",
+            "fr": "Et moi, je vous présenterai à nos clients potentiels de la région voisine.",
+            "pt": "E eu vou apresentar você aos nossos clientes em potencial da região vizinha.",
+            "kr": "저는 당신께 인근 지역에서 온 잠재 고객들을 소개해 드릴게요.",
+            "jp": "私はあなたを、隣の地域からの潜在的な顧客に紹介しますよ。",
+            "zh": "我也会把您介绍给我们邻地区的潜在客户。",
+            "ru": "А я познакомлю вас с нашими потенциальными клиентами из соседнего региона."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Прекрасно. Такие мероприятия — лучший способ расширить круг деловых знакомств.",
+            "en": "Perfect. Such events are the best way to expand your circle of business contacts.",
+            "es": "Perfecto. Este tipo de eventos son la mejor manera de ampliar el círculo de contactos de negocios.",
+            "fr": "Parfait. Ces événements sont le meilleur moyen d'élargir son cercle de relations d'affaires.",
+            "pt": "Perfeito. Esses eventos são a melhor maneira de ampliar o círculo de contatos de negócios.",
+            "kr": "좋아요. 이런 행사는 비즈니스 인맥을 넓히는 최고의 방법이에요.",
+            "jp": "素晴らしい。こういったイベントは、ビジネス上の人脈を広げる最良の方法ですからね。",
+            "zh": "太好了。这种活动是拓展商务人脉最好的方式。",
+            "ru": "Прекрасно. Такие мероприятия — лучший способ расширить круг деловых знакомств."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, вы не знаете, кто занимается организацией летней конференции по инновациям?",
+            "en": "Anna, do you know who's organizing the summer conference on innovations?",
+            "es": "Anna, ¿sabe usted quién se encarga de organizar la conferencia de verano sobre innovación?",
+            "fr": "Anna, savez-vous qui s'occupe de l'organisation de la conférence d'été sur l'innovation ?",
+            "pt": "Anna, você sabe quem é responsável pela organização da conferência de verão sobre inovação?",
+            "kr": "안나 씨, 여름 혁신 컨퍼런스 조직을 누가 맡고 있는지 아세요?",
+            "jp": "アンナさん、夏のイノベーション会議の運営を誰が担当しているかご存知ですか？",
+            "zh": "安娜，您知道谁负责组织夏季创新会议吗？",
+            "ru": "Анна, вы не знаете, кто занимается организацией летней конференции по инновациям?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Знаю, Сергей. Это моя давняя знакомая, она возглавляет оргкомитет.",
+            "en": "I do, Sergey. It's an old acquaintance of mine, she heads the organizing committee.",
+            "es": "Lo sé, Serguéi. Es una vieja conocida mía; ella preside el comité organizador.",
+            "fr": "Je le sais, Sergueï. C'est une de mes vieilles connaissances, elle dirige le comité d'organisation.",
+            "pt": "Sei, Sergei. É uma antiga conhecida minha, ela lidera o comitê organizador.",
+            "kr": "알아요, 세르게이 씨. 제 오랜 지인인데, 그분이 조직위원장을 맡고 있어요.",
+            "jp": "知っていますよ、セルゲイさん。私の古い知り合いで、彼女が組織委員会の委員長を務めています。",
+            "zh": "我知道，谢尔盖。那是我的一个老熟人，她是组委会的负责人。",
+            "ru": "Знаю, Сергей. Это моя давняя знакомая, она возглавляет оргкомитет."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Не могли бы вы нас познакомить? Мы хотим предложить свою площадку для проведения.",
+            "en": "Could you introduce us? We want to offer our venue for hosting it.",
+            "es": "¿Podría usted presentarnos? Queremos ofrecer nuestro propio espacio para celebrarla.",
+            "fr": "Pourriez-vous nous présenter ? Nous voulons proposer notre site pour l'accueillir.",
+            "pt": "Você poderia nos apresentar? Nós queremos oferecer o nosso espaço para o evento.",
+            "kr": "저희를 소개해 주실 수 있나요? 저희 행사 장소를 제공하고 싶거든요.",
+            "jp": "私たちを紹介していただけませんか？ 私たちは開催場所として自社の施設を提案したいのです。",
+            "zh": "您能帮我们引荐一下吗？我们想提供自己的场地来举办会议。",
+            "ru": "Не могли бы вы нас познакомить? Мы хотим предложить свою площадку для проведения."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, могу. Я уверена, ей будет интересно обсудить это предложение.",
+            "en": "Of course, I can. I'm sure she'll be interested in discussing this proposal.",
+            "es": "Claro que puedo. Estoy segura de que a ella le interesará hablar de esa propuesta.",
+            "fr": "Bien sûr, je le peux. Je suis sûre qu'elle sera intéressée de discuter de cette proposition.",
+            "pt": "Claro que posso. Eu tenho certeza de que ela vai ter interesse em discutir essa proposta.",
+            "kr": "물론이죠. 그분이 그 제안에 관심을 가질 거라고 확신해요.",
+            "jp": "もちろん、できますよ。彼女はその提案に興味を持つと思います。",
+            "zh": "当然可以。我相信她会很乐意讨论这个提议的。",
+            "ru": "Конечно, могу. Я уверена, ей будет интересно обсудить это предложение."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это было бы идеально. Прямой контакт с организаторами решает многие вопросы.",
+            "en": "That would be ideal. Direct contact with the organizers solves many issues.",
+            "es": "Sería ideal. El contacto directo con los organizadores resuelve muchas cuestiones.",
+            "fr": "Ce serait idéal. Un contact direct avec les organisateurs résout bien des problèmes.",
+            "pt": "Isso seria ideal. O contato direto com os organizadores resolve muitas questões.",
+            "kr": "그럼 정말 이상적이에요. 조직위원회와 직접 연락이 닿으면 많은 문제가 해결되거든요.",
+            "jp": "それは理想的です。主催者と直接つながりがあれば、多くの問題が解決しますから。",
+            "zh": "那就太理想了。跟组织者直接联系能解决很多问题。",
+            "ru": "Это было бы идеально. Прямой контакт с организаторами решает многие вопросы."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, личные рекомендации всегда работают лучше, чем холодные письма. Я свяжусь с ней завтра.",
+            "en": "Yes, personal recommendations always work better than cold emails. I'll get in touch with her tomorrow.",
+            "es": "Sí, las recomendaciones personales siempre funcionan mejor que las cartas frías. Me pondré en contacto con ella mañana.",
+            "fr": "Oui, les recommandations personnelles fonctionnent toujours mieux que les lettres froides. Je la contacterai demain.",
+            "pt": "Sim, as recomendações pessoais sempre funcionam melhor do que e-mails frios. Eu vou falar com ela amanhã.",
+            "kr": "맞아요. 개인적인 추천이 차가운 이메일보다 항상 더 효과적이에요. 내일 그분께 연락할게요.",
+            "jp": "ええ、個人的な推薦は、冷たいメールよりもいつも効果的ですからね。明日、彼女に連絡します。",
+            "zh": "是的，私人推荐总是比冷冰冰的邮件更管用。我明天就联系她。",
+            "ru": "Да, личные рекомендации всегда работают лучше, чем холодные письма. Я свяжусь с ней завтра."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, я узнала, что наш конкурент начал переговоры с нашим ключевым поставщиком.",
+            "en": "Dmitry, I found out that our competitor has started negotiations with our key supplier.",
+            "es": "Dmitri, me he enterado de que nuestro competidor ha empezado negociaciones con nuestro proveedor clave.",
+            "fr": "Dmitri, j'ai appris que notre concurrent a entamé des négociations avec notre fournisseur clé.",
+            "pt": "Dmitri, eu descobri que o nosso concorrente começou negociações com o nosso fornecedor principal.",
+            "kr": "드미트리 씨, 저희 경쟁사가 핵심 공급업체와 협상을 시작했다는 걸 알게 됐어요.",
+            "jp": "ドミトリーさん、競合他社が私たちの主要サプライヤーと交渉を始めたと聞きました。",
+            "zh": "德米特里，我得知我们的竞争对手开始跟我们的主要供应商谈判了。",
+            "ru": "Дмитрий, я узнала, что наш конкурент начал переговоры с нашим ключевым поставщиком."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это серьёзная новость, Елена. Нам нужно срочно укрепить наши отношения с ними.",
+            "en": "That's serious news, Elena. We need to urgently strengthen our relationship with them.",
+            "es": "Es una noticia seria, Elena. Tenemos que reforzar urgentemente nuestra relación con ellos.",
+            "fr": "C'est une nouvelle sérieuse, Elena. Nous devons rapidement renforcer nos relations avec eux.",
+            "pt": "Essa é uma notícia séria, Elena. Nós precisamos urgentemente fortalecer as nossas relações com eles.",
+            "kr": "심각한 소식이네요, 옐레나 씨. 그들과의 관계를 서둘러 강화해야 해요.",
+            "jp": "それは重大な知らせですね、エレナさん。私たちは彼らとの関係を早急に強化する必要があります。",
+            "zh": "这是个严重的情况，叶连娜。我们需要赶紧加强跟他们之间的关系。",
+            "ru": "Это серьёзная новость, Елена. Нам нужно срочно укрепить наши отношения с ними."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я предлагаю пригласить их руководство на встречу и обсудить долгосрочное сотрудничество.",
+            "en": "I suggest inviting their management to a meeting and discussing long-term cooperation.",
+            "es": "Propongo invitar a su dirección a una reunión y hablar de una colaboración a largo plazo.",
+            "fr": "Je propose d'inviter leur direction à une réunion et de discuter d'une coopération à long terme.",
+            "pt": "Eu proponho convidarmos a diretoria deles para uma reunião e discutirmos uma cooperação de longo prazo.",
+            "kr": "그들의 경영진을 만남에 초대해서 장기 협력에 대해 논의하자고 제안해요.",
+            "jp": "彼らの経営陣を会議に招いて、長期的な協力について話し合うことを提案します。",
+            "zh": "我建议邀请他们的管理层来开个会，讨论长期合作。",
+            "ru": "Я предлагаю пригласить их руководство на встречу и обсудить долгосрочное сотрудничество."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отличная идея. У меня есть хорошие отношения с их финансовым директором.",
+            "en": "Great idea. I have a good relationship with their financial director.",
+            "es": "Excelente idea. Tengo buenas relaciones con su director financiero.",
+            "fr": "Excellente idée. J'ai de bonnes relations avec leur directeur financier.",
+            "pt": "Ótima ideia. Eu tenho um bom relacionamento com o diretor financeiro deles.",
+            "kr": "좋은 생각이에요. 저는 그들의 재무이사와 좋은 관계를 맺고 있어요.",
+            "jp": "良いアイデアです。私は彼らの財務部長と良い関係を築いていますから。",
+            "zh": "好主意。我跟他们的财务总监关系不错。",
+            "ru": "Отличная идея. У меня есть хорошие отношения с их финансовым директором."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда вы могли бы организовать неформальную встречу, а я подготовлю коммерческое предложение.",
+            "en": "Then you could arrange an informal meeting, and I'll prepare a commercial proposal.",
+            "es": "Entonces usted podría organizar una reunión informal, y yo prepararé la propuesta comercial.",
+            "fr": "Alors vous pourriez organiser une rencontre informelle, et moi, je préparerai une proposition commerciale.",
+            "pt": "Então você poderia organizar um encontro informal, e eu preparo a proposta comercial.",
+            "kr": "그럼 당신이 비공식적인 만남을 주선해 주시고, 저는 사업 제안서를 준비할게요.",
+            "jp": "では、あなたが非公式な会合を設定していただけますか？ 私は商業提案書を準備します。",
+            "zh": "那您可以安排一次非正式会面，我来准备商业提案。",
+            "ru": "Тогда вы могли бы организовать неформальную встречу, а я подготовлю коммерческое предложение."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Договорились. Мы должны действовать быстро и показать, что мы надёжные партнёры.",
+            "en": "Deal. We need to act quickly and show that we are reliable partners.",
+            "es": "De acuerdo. Debemos actuar rápido y demostrar que somos socios fiables.",
+            "fr": "C'est convenu. Nous devons agir vite et montrer que nous sommes des partenaires fiables.",
+            "pt": "Combinado. Nós precisamos agir rápido e mostrar que somos parceiros confiáveis.",
+            "kr": "좋아요. 우리는 빠르게 움직여서 우리가 믿을 수 있는 파트너라는 걸 보여줘야 해요.",
+            "jp": "決まりですね。私たちは迅速に行動し、信頼できるパートナーであることを示さなければなりません。",
+            "zh": "说定了。我们必须迅速行动，让他们看到我们是可靠的合作伙伴。",
+            "ru": "Договорились. Мы должны действовать быстро и показать, что мы надёжные партнёры."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, вы поддерживаете связь с теми специалистами, с которыми мы познакомились в Москве?",
+            "en": "Alexey, are you still in touch with those specialists we met in Moscow?",
+            "es": "Alekséi, ¿mantiene usted el contacto con aquellos especialistas que conocimos en Moscú?",
+            "fr": "Alexeï, restez-vous en contact avec les spécialistes que nous avons rencontrés à Moscou ?",
+            "pt": "Alexei, você mantém contato com aqueles especialistas que conhecemos em Moscou?",
+            "kr": "알렉세이 씨, 모스크바에서 만났던 그 전문가들과 연락을 유지하고 계세요?",
+            "jp": "アレクセイさん、モスクワで知り合ったあの専門家の方々と連絡を取り合っていますか？",
+            "zh": "阿列克谢，您跟我们在莫斯科认识的那几位专家还保持联系吗？",
+            "ru": "Алексей, вы поддерживаете связь с теми специалистами, с которыми мы познакомились в Москве?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Ольга, мы переписываемся в профессиональной сети и иногда созваниваемся.",
+            "en": "Yes, Olga, we message each other on a professional network and sometimes have calls.",
+            "es": "Sí, Olga, nos escribimos en una red profesional y a veces hablamos por teléfono.",
+            "fr": "Oui, Olga, nous échangeons sur un réseau professionnel et nous nous appelons parfois.",
+            "pt": "Sim, Olga, nós trocamos mensagens em uma rede profissional e, às vezes, ligamos um para o outro.",
+            "kr": "네, 올가 씨, 전문 네트워크에서 연락을 주고받고 가끔 통화도 해요.",
+            "jp": "はい、オリガさん、専門のネットワークでやり取りしていて、時々電話もします。",
+            "zh": "是的，奥尔加，我们在专业社交网站上通信，偶尔也会通电话。",
+            "ru": "Да, Ольга, мы переписываемся в профессиональной сети и иногда созваниваемся."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это хорошо. Такие связи могут пригодиться для будущих совместных проектов.",
+            "en": "That's good. Such connections can be useful for future joint projects.",
+            "es": "Eso está bien. Esas relaciones pueden ser útiles para futuros proyectos conjuntos.",
+            "fr": "C'est bien. Ces relations peuvent être utiles pour de futurs projets communs.",
+            "pt": "Isso é bom. Esses contatos podem ser úteis para futuros projetos em conjunto.",
+            "kr": "잘하셨어요. 그런 인연은 미래 공동 프로젝트에 도움이 될 수 있으니까요.",
+            "jp": "それは良いことですね。そういったつながりは、将来の共同プロジェクトに役立つかもしれません。",
+            "zh": "那很好。这种人脉将来对合作项目可能会有用。",
+            "ru": "Это хорошо. Такие связи могут пригодиться для будущих совместных проектов."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Абсолютно согласен. Один из них уже предложил нам участвовать в тендере их компании.",
+            "en": "Absolutely agree. One of them has already offered us to participate in their company's tender.",
+            "es": "Totalmente de acuerdo. Uno de ellos ya nos ha propuesto participar en una licitación de su empresa.",
+            "fr": "Tout à fait d'accord. L'un d'eux nous a déjà proposé de participer à un appel d'offres de leur entreprise.",
+            "pt": "Concordo totalmente. Um deles já nos propôs participar de uma licitação da empresa deles.",
+            "kr": "전적으로 동의해요. 그중 한 명이 이미 우리 회사 입찰 참여를 제안했어요.",
+            "jp": "まったく同感です。そのうちの一人が、もう彼らの会社の入札に参加しないかと提案してきました。",
+            "zh": "完全同意。其中一个人已经邀请我们参加他们公司的招标了。",
+            "ru": "Абсолютно согласен. Один из них уже предложил нам участвовать в тендере их компании."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Серьёзно? Это отличная новость! Нужно обязательно рассмотреть это предложение.",
+            "en": "Seriously? That's great news! We definitely need to consider this offer.",
+            "es": "¿En serio? ¡Es una noticia estupenda! Tenemos que considerar esa propuesta sin falta.",
+            "fr": "Sérieusement ? C'est une excellente nouvelle ! Il faut absolument examiner cette proposition.",
+            "pt": "Sério? Essa é uma ótima notícia! Nós precisamos considerar essa proposta com certeza.",
+            "kr": "정말요? 그건 정말 좋은 소식이네요! 그 제안을 꼭 검토해 봐야겠어요.",
+            "jp": "本当ですか？ それは素晴らしい知らせですね！ ぜひその提案を検討すべきです。",
+            "zh": "真的吗？这可是个好消息！我们一定要认真考虑这个提议。",
+            "ru": "Серьёзно? Это отличная новость! Нужно обязательно рассмотреть это предложение."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я уже запросил подробности. Надеюсь, это станет началом долгого сотрудничества.",
+            "en": "I've already requested the details. I hope this becomes the start of a long cooperation.",
+            "es": "Ya he solicitado los detalles. Espero que sea el comienzo de una larga colaboración.",
+            "fr": "J'ai déjà demandé les détails. J'espère que ce sera le début d'une longue coopération.",
+            "pt": "Eu já solicitei os detalhes. Espero que isso se torne o início de uma longa cooperação.",
+            "kr": "저는 이미 세부 사항을 요청했어요. 이게 오랜 협력의 시작이 되길 바라요.",
+            "jp": "もう詳細を問い合わせました。これが長い協力関係の始まりになることを願っています。",
+            "zh": "我已经去要详细资料了。希望这能成为长期合作的开端。",
+            "ru": "Я уже запросил подробности. Надеюсь, это станет началом долгого сотрудничества."
+          }
+        }
+      ]
+    }
+  ]
+}

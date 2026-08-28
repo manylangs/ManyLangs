@@ -1,0 +1,1218 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "series_id": "travel_new_york_city",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "scene_count": 20,
+  "scenes": [
+    {
+      "scene_id": "S001",
+      "sequence": 1,
+      "location_ref": "LOC_JFK_AIRPORT_001",
+      "story_function": "setup",
+      "scene_goal": "Jieun prepares to disembark from the airplane, establishing her initial emotional state and her primary goal of getting to her hotel in Manhattan.",
+      "situation": "Jieun's plane has landed at JFK Airport. She gathers her belongings and prepares to disembark, feeling a mix of excitement and nervousness about her first steps in New York.",
+      "problem": null,
+      "surprise": false,
+      "monologue": true,
+      "b_gender": null,
+      "line_count": 3,
+      "protagonist_state": {
+        "emotion_before": "excited but slightly anxious about her first visit to New York",
+        "emotion_after": "a mix of excitement and nervousness as she prepares to step off the plane",
+        "knowledge_before": [
+          "She is on an airplane approaching JFK Airport",
+          "She has her passport, luggage, and hotel reservation ready",
+          "Her main goal is to get from the airport to her hotel safely"
+        ],
+        "knowledge_after": [
+          "The plane has landed and she is now at JFK Airport",
+          "She needs to follow the flow of passengers to disembark"
+        ]
+      },
+      "must_happen": [
+        "Jieun gathers her belongings and prepares to disembark",
+        "Jieun steps off the airplane into the terminal"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the arrival terminal area",
+        "Do not introduce any dialogue or interaction with other characters"
+      ],
+      "dialogue_goal": null,
+      "learning_opportunities": [
+        {
+          "function": "expressing internal feelings",
+          "context": "Jieun's internal monologue about her excitement and nervousness upon arriving in New York"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun is on an airplane approaching JFK Airport",
+          "She feels excited but slightly anxious about her first visit to New York",
+          "She has her passport, luggage, and hotel reservation ready",
+          "Her main goal is to get from the airport to her hotel safely"
+        ],
+        "carry_out": [
+          "Jieun has disembarked from the airplane",
+          "She is now inside the JFK terminal, following signs toward immigration",
+          "She feels a mix of excitement and nervousness"
+        ],
+        "unresolved_before": [],
+        "unresolved_after": []
+      }
+    },
+    {
+      "scene_id": "S002",
+      "sequence": 2,
+      "location_ref": "LOC_JFK_AIRPORT_001",
+      "story_function": "interaction",
+      "scene_goal": "Jieun asks an airport employee for help and successfully joins the correct immigration line, resolving her uncertainty about the process.",
+      "situation": "Jieun follows the signs to the immigration area. She observes the lines and tries to figure out which line to join, feeling a bit overwhelmed by the process.",
+      "problem": "Jieun is unsure which line to join for immigration and whether she needs to fill out any forms.",
+      "surprise": false,
+      "monologue": false,
+      "b_gender": "male",
+      "line_count": 6,
+      "protagonist_state": {
+        "emotion_before": "a bit overwhelmed by the immigration process",
+        "emotion_after": "a bit more confident about the process after receiving help",
+        "knowledge_before": [
+          "She has disembarked from the airplane",
+          "She is now inside the JFK terminal",
+          "She needs to go through immigration"
+        ],
+        "knowledge_after": [
+          "She has identified the correct immigration line to join",
+          "She has confirmed she does not need to fill out any additional forms"
+        ]
+      },
+      "must_happen": [
+        "Jieun observes the immigration area and the different lines",
+        "Jieun asks an airport employee for help",
+        "Jieun joins the correct immigration line"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the immigration area",
+        "Do not resolve the immigration process itself in this scene"
+      ],
+      "dialogue_goal": "Ask an airport employee which line to join for immigration and whether any forms are needed.",
+      "learning_opportunities": [
+        {
+          "function": "asking for help",
+          "context": "Jieun asks an airport employee which line to join for immigration"
+        },
+        {
+          "function": "confirming information",
+          "context": "Jieun confirms whether she needs to fill out any forms"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun has disembarked from the airplane",
+          "She is now inside the JFK terminal, following signs toward immigration",
+          "She feels a mix of excitement and nervousness"
+        ],
+        "carry_out": [
+          "Jieun has joined the correct immigration line after asking for help",
+          "She is waiting in line with her passport ready",
+          "She feels a bit more confident about the process"
+        ],
+        "unresolved_before": [
+          "Jieun is unsure which line to join for immigration"
+        ],
+        "unresolved_after": []
+      }
+    },
+    {
+      "scene_id": "S003",
+      "sequence": 3,
+      "location_ref": "LOC_JFK_AIRPORT_001",
+      "story_function": "interaction",
+      "scene_goal": "Jieun successfully completes the immigration interview by answering the officer's questions about her visit, clearing her entry into the United States.",
+      "situation": "Jieun reaches the immigration officer. She answers questions about the purpose of her visit and where she will be staying.",
+      "problem": null,
+      "surprise": false,
+      "monologue": false,
+      "b_gender": "male",
+      "line_count": 8,
+      "protagonist_state": {
+        "emotion_before": "a bit more confident about the process after receiving help",
+        "emotion_after": "relieved that the immigration process went smoothly",
+        "knowledge_before": [
+          "She has joined the correct immigration line",
+          "She has her passport ready",
+          "She is visiting New York as a tourist"
+        ],
+        "knowledge_after": [
+          "She has successfully completed immigration",
+          "She is now cleared to enter the United States"
+        ]
+      },
+      "must_happen": [
+        "Jieun reaches the immigration officer",
+        "Jieun answers the officer's questions about her visit",
+        "Jieun is cleared to enter the United States"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the immigration area",
+        "Do not introduce any problems with her immigration status"
+      ],
+      "dialogue_goal": "Answer the immigration officer's questions about the purpose of the visit and where she will be staying.",
+      "learning_opportunities": [
+        {
+          "function": "answering personal questions",
+          "context": "Jieun answers the immigration officer's questions about her trip"
+        },
+        {
+          "function": "stating purpose of visit",
+          "context": "Jieun tells the officer she is visiting as a tourist"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun has joined the correct immigration line after asking for help",
+          "She is waiting in line with her passport ready",
+          "She feels a bit more confident about the process"
+        ],
+        "carry_out": [
+          "Jieun has completed immigration successfully",
+          "She is now heading toward baggage claim",
+          "She feels relieved that the immigration process went smoothly"
+        ],
+        "unresolved_before": [],
+        "unresolved_after": []
+      }
+    },
+    {
+      "scene_id": "S004",
+      "sequence": 4,
+      "location_ref": "LOC_JFK_AIRPORT_001",
+      "story_function": "observation",
+      "scene_goal": "Jieun locates the correct baggage carousel for her flight and begins waiting for her luggage, introducing the minor concern about whether her bag arrived.",
+      "situation": "Jieun arrives at the baggage claim area. She looks for the carousel that matches her flight number and waits for her luggage.",
+      "problem": null,
+      "surprise": false,
+      "monologue": true,
+      "b_gender": null,
+      "line_count": 3,
+      "protagonist_state": {
+        "emotion_before": "relieved that the immigration process went smoothly",
+        "emotion_after": "hopeful but slightly worried that her bag might not have made it onto the flight",
+        "knowledge_before": [
+          "She has completed immigration successfully",
+          "She is now heading toward baggage claim"
+        ],
+        "knowledge_after": [
+          "She has found the correct baggage carousel for her flight",
+          "She needs to wait for her luggage to arrive"
+        ]
+      },
+      "must_happen": [
+        "Jieun arrives at the baggage claim area",
+        "Jieun identifies the correct baggage carousel for her flight",
+        "Jieun begins waiting for her luggage"
+      ],
+      "must_not_happen": [
+        "Do not resolve whether her bag arrived in this scene",
+        "Do not move Jieun past the baggage claim area"
+      ],
+      "dialogue_goal": null,
+      "learning_opportunities": [
+        {
+          "function": "reading signs and information",
+          "context": "Jieun looks for the baggage carousel matching her flight number"
+        },
+        {
+          "function": "expressing internal thoughts",
+          "context": "Jieun's internal monologue about hoping her bag made it onto the flight"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun has completed immigration successfully",
+          "She is now heading toward baggage claim",
+          "She feels relieved that the immigration process went smoothly"
+        ],
+        "carry_out": [
+          "Jieun has found the correct baggage carousel",
+          "She is waiting for her luggage to arrive",
+          "She hopes her bag made it onto the flight"
+        ],
+        "unresolved_before": [],
+        "unresolved_after": [
+          "Jieun is waiting to see if her luggage arrived on the flight"
+        ]
+      }
+    },
+    {
+      "scene_id": "S005",
+      "sequence": 5,
+      "location_ref": "LOC_JFK_AIRPORT_001",
+      "story_function": "progress",
+      "scene_goal": "Jieun retrieves her luggage from the carousel and begins following signs toward ground transportation, resolving the concern about her bag.",
+      "situation": "Jieun spots her bag on the carousel and retrieves it. She then looks for the exit and signs for ground transportation.",
+      "problem": null,
+      "surprise": false,
+      "monologue": false,
+      "b_gender": "male",
+      "line_count": 4,
+      "protagonist_state": {
+        "emotion_before": "hopeful but slightly worried that her bag might not have made it onto the flight",
+        "emotion_after": "relieved and focused on finding ground transportation",
+        "knowledge_before": [
+          "She has found the correct baggage carousel",
+          "She is waiting for her luggage to arrive"
+        ],
+        "knowledge_after": [
+          "Her luggage arrived on the flight",
+          "She needs to find ground transportation to Manhattan"
+        ]
+      },
+      "must_happen": [
+        "Jieun spots her bag on the carousel",
+        "Jieun retrieves her luggage",
+        "Jieun begins looking for signs to ground transportation"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the airport terminal",
+        "Do not introduce a problem with her luggage"
+      ],
+      "dialogue_goal": "Ask an airport employee for directions to the ground transportation area.",
+      "learning_opportunities": [
+        {
+          "function": "asking for directions",
+          "context": "Jieun asks for help finding the ground transportation area"
+        },
+        {
+          "function": "confirming location",
+          "context": "Jieun confirms she is heading the right way"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun has found the correct baggage carousel",
+          "She is waiting for her luggage to arrive",
+          "She hopes her bag made it onto the flight"
+        ],
+        "carry_out": [
+          "Jieun has retrieved her luggage from the carousel",
+          "She is now following signs toward ground transportation",
+          "She is thinking about how to get to Manhattan"
+        ],
+        "unresolved_before": [
+          "Jieun is waiting to see if her luggage arrived on the flight"
+        ],
+        "unresolved_after": []
+      }
+    },
+    {
+      "scene_id": "S006",
+      "sequence": 6,
+      "location_ref": "LOC_JFK_AIRPORT_001",
+      "story_function": "observation",
+      "scene_goal": "Jieun surveys the ground transportation options at JFK and internally weighs the pros and cons of taxi, ride-sharing, and public transit, setting up her decision.",
+      "situation": "Jieun reaches the ground transportation area. She sees options for taxis, ride-sharing, and public transit, and tries to decide which one to take.",
+      "problem": "Jieun is unsure which transportation option is best for her budget and comfort level.",
+      "surprise": false,
+      "monologue": true,
+      "b_gender": null,
+      "line_count": 4,
+      "protagonist_state": {
+        "emotion_before": "relieved and focused on finding ground transportation",
+        "emotion_after": "unsure and thoughtful as she compares the different transportation options",
+        "knowledge_before": [
+          "She has retrieved her luggage",
+          "She is now at the ground transportation area",
+          "She needs to get to her hotel in Manhattan"
+        ],
+        "knowledge_after": [
+          "There are multiple transportation options available, including taxis, ride-sharing, and public transit",
+          "She needs to decide which option is best for her"
+        ]
+      },
+      "must_happen": [
+        "Jieun reaches the ground transportation area",
+        "Jieun observes the different transportation options available",
+        "Jieun considers the pros and cons of each option"
+      ],
+      "must_not_happen": [
+        "Do not have Jieun make a final decision in this scene",
+        "Do not introduce specific prices or operational details for any transportation option"
+      ],
+      "dialogue_goal": null,
+      "learning_opportunities": [
+        {
+          "function": "expressing internal deliberation",
+          "context": "Jieun's internal monologue comparing taxi, ride-sharing, and public transit options"
+        },
+        {
+          "function": "identifying transportation options",
+          "context": "Jieun observes the different ground transportation choices at the airport"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun has retrieved her luggage from the carousel",
+          "She is now following signs toward ground transportation",
+          "She is thinking about how to get to Manhattan"
+        ],
+        "carry_out": [
+          "Jieun is at the ground transportation area considering her options",
+          "She is comparing taxi, ride-sharing, and public transit",
+          "She is unsure which option is the most practical"
+        ],
+        "unresolved_before": [
+          "Jieun is unsure which transportation option is best for her budget and comfort level"
+        ],
+        "unresolved_after": [
+          "Jieun is still unsure which transportation option to choose"
+        ]
+      }
+    },
+    {
+      "scene_id": "S007",
+      "sequence": 7,
+      "location_ref": "LOC_JFK_AIRPORT_001",
+      "story_function": "interaction",
+      "scene_goal": "Jieun asks a transit employee for advice and decides to take public transit to Manhattan, resolving her uncertainty about transportation.",
+      "situation": "Jieun decides to ask a transit employee for advice on the best way to get to her hotel in Manhattan. The employee explains the options and recommends a route.",
+      "problem": null,
+      "surprise": false,
+      "monologue": false,
+      "b_gender": "male",
+      "line_count": 8,
+      "protagonist_state": {
+        "emotion_before": "unsure and thoughtful as she compares the different transportation options",
+        "emotion_after": "more confident and decided after receiving advice",
+        "knowledge_before": [
+          "She is at the ground transportation area",
+          "There are multiple transportation options available",
+          "She needs to decide which option is best for her"
+        ],
+        "knowledge_after": [
+          "She has received advice from a transit employee",
+          "She has decided to take public transit to Manhattan"
+        ]
+      },
+      "must_happen": [
+        "Jieun asks a transit employee for advice",
+        "The employee explains the transportation options",
+        "Jieun decides to take public transit to Manhattan"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the ground transportation area",
+        "Do not introduce specific prices or operational details for any transportation option"
+      ],
+      "dialogue_goal": "Ask a transit employee for advice on the best way to get to her hotel in Manhattan.",
+      "learning_opportunities": [
+        {
+          "function": "asking for advice",
+          "context": "Jieun asks a transit employee for the best way to get to her hotel"
+        },
+        {
+          "function": "understanding options",
+          "context": "Jieun listens to the employee explain the different transportation choices"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun is at the ground transportation area considering her options",
+          "She is comparing taxi, ride-sharing, and public transit",
+          "She is unsure which option is the most practical"
+        ],
+        "carry_out": [
+          "Jieun has received advice from a transit employee",
+          "She has decided to take public transit to Manhattan",
+          "She is now heading toward the transit station"
+        ],
+        "unresolved_before": [
+          "Jieun is still unsure which transportation option to choose"
+        ],
+        "unresolved_after": []
+      }
+    },
+    {
+      "scene_id": "S008",
+      "sequence": 8,
+      "location_ref": "LOC_AIRPORT_TRANSIT_001",
+      "story_function": "transition",
+      "scene_goal": "Jieun boards the AirTrain and begins her journey toward the subway connection, experiencing her first views of the city from the transit system.",
+      "situation": "Jieun boards the AirTrain at JFK. She finds a seat and watches the city appear through the windows as the train moves toward the subway connection.",
+      "problem": null,
+      "surprise": false,
+      "monologue": true,
+      "b_gender": null,
+      "line_count": 3,
+      "protagonist_state": {
+        "emotion_before": "more confident and decided after receiving advice",
+        "emotion_after": "a sense of excitement about arriving in Manhattan",
+        "knowledge_before": [
+          "She has decided to take public transit to Manhattan",
+          "She is heading toward the transit station"
+        ],
+        "knowledge_after": [
+          "She is on the AirTrain heading toward the subway connection",
+          "She is getting closer to Manhattan"
+        ]
+      },
+      "must_happen": [
+        "Jieun boards the AirTrain",
+        "Jieun finds a seat",
+        "Jieun watches the city appear through the windows"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the AirTrain journey",
+        "Do not introduce any problems with the AirTrain"
+      ],
+      "dialogue_goal": null,
+      "learning_opportunities": [
+        {
+          "function": "expressing internal feelings",
+          "context": "Jieun's internal monologue about her excitement as she sees the city"
+        },
+        {
+          "function": "observing the environment",
+          "context": "Jieun watches the city appear through the train windows"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun has received advice from a transit employee",
+          "She has decided to take public transit to Manhattan",
+          "She is now heading toward the transit station"
+        ],
+        "carry_out": [
+          "Jieun is on the AirTrain heading toward the subway connection",
+          "She is watching the city appear through the windows",
+          "She feels a sense of excitement about arriving in Manhattan"
+        ],
+        "unresolved_before": [],
+        "unresolved_after": []
+      }
+    },
+    {
+      "scene_id": "S009",
+      "sequence": 9,
+      "location_ref": "LOC_AIRPORT_TRANSIT_001",
+      "story_function": "interaction",
+      "scene_goal": "Jieun asks for help and figures out how to pay for the subway and which train to take toward Manhattan, resolving her uncertainty about the transit system.",
+      "situation": "Jieun arrives at the station to transfer to the subway. She needs to figure out how to pay for the subway and which train to take toward Manhattan.",
+      "problem": "Jieun is not sure how to pay for the subway or which train line to take toward Manhattan.",
+      "surprise": false,
+      "monologue": false,
+      "b_gender": "female",
+      "line_count": 6,
+      "protagonist_state": {
+        "emotion_before": "a sense of excitement about arriving in Manhattan",
+        "emotion_after": "more confident about navigating the transit system",
+        "knowledge_before": [
+          "She is on the AirTrain heading toward the subway connection",
+          "She needs to transfer to the subway to get to Manhattan"
+        ],
+        "knowledge_after": [
+          "She has figured out how to pay for the subway",
+          "She knows which train to take toward Manhattan"
+        ]
+      },
+      "must_happen": [
+        "Jieun arrives at the station to transfer to the subway",
+        "Jieun asks for help with paying for the subway",
+        "Jieun identifies the correct train to take toward Manhattan"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the subway station",
+        "Do not introduce specific prices or payment method details"
+      ],
+      "dialogue_goal": "Ask a transit employee or fellow passenger how to pay for the subway and which train to take toward Manhattan.",
+      "learning_opportunities": [
+        {
+          "function": "asking for help with transit",
+          "context": "Jieun asks how to pay for the subway and which train to take"
+        },
+        {
+          "function": "understanding directions",
+          "context": "Jieun receives instructions on which train to take toward Manhattan"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun is on the AirTrain heading toward the subway connection",
+          "She is watching the city appear through the windows",
+          "She feels a sense of excitement about arriving in Manhattan"
+        ],
+        "carry_out": [
+          "Jieun has figured out how to pay for the subway with help",
+          "She is now waiting on the platform for the correct train toward Manhattan",
+          "She feels more confident about navigating the transit system"
+        ],
+        "unresolved_before": [
+          "Jieun is not sure how to pay for the subway or which train line to take toward Manhattan"
+        ],
+        "unresolved_after": []
+      }
+    },
+    {
+      "scene_id": "S010",
+      "sequence": 10,
+      "location_ref": "LOC_AIRPORT_TRANSIT_001",
+      "story_function": "observation",
+      "scene_goal": "Jieun boards the subway train and observes the other passengers and the city, deepening her sense of being in New York.",
+      "situation": "Jieun boards the subway train toward Manhattan. She holds onto a pole and looks around at the other passengers, feeling the rhythm of the city.",
+      "problem": null,
+      "surprise": false,
+      "monologue": true,
+      "b_gender": null,
+      "line_count": 3,
+      "protagonist_state": {
+        "emotion_before": "more confident about navigating the transit system",
+        "emotion_after": "a growing sense of excitement as she observes the city",
+        "knowledge_before": [
+          "She has figured out how to pay for the subway",
+          "She is waiting on the platform for the correct train toward Manhattan"
+        ],
+        "knowledge_after": [
+          "She is on the subway train heading toward Manhattan",
+          "She is observing the other passengers and the city"
+        ]
+      },
+      "must_happen": [
+        "Jieun boards the subway train toward Manhattan",
+        "Jieun holds onto a pole",
+        "Jieun observes the other passengers"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the subway journey",
+        "Do not introduce any problems with the subway ride"
+      ],
+      "dialogue_goal": null,
+      "learning_opportunities": [
+        {
+          "function": "expressing internal observations",
+          "context": "Jieun's internal monologue about the other passengers and the city"
+        },
+        {
+          "function": "describing the environment",
+          "context": "Jieun observes the rhythm of the city from the subway"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun has figured out how to pay for the subway with help",
+          "She is now waiting on the platform for the correct train toward Manhattan",
+          "She feels more confident about navigating the transit system"
+        ],
+        "carry_out": [
+          "Jieun is on the subway train heading toward Manhattan",
+          "She is observing the other passengers and the city through the windows",
+          "She feels a growing sense of excitement"
+        ],
+        "unresolved_before": [],
+        "unresolved_after": []
+      }
+    },
+    {
+      "scene_id": "S011",
+      "sequence": 11,
+      "location_ref": "LOC_AIRPORT_TRANSIT_001",
+      "story_function": "observation",
+      "scene_goal": "Jieun confirms she is on the correct train by checking the subway map against her phone, relieving her worry about getting lost.",
+      "situation": "Jieun checks the map on the subway to make sure she is going in the right direction. She compares the station names with her phone's map.",
+      "problem": null,
+      "surprise": false,
+      "monologue": true,
+      "b_gender": null,
+      "line_count": 3,
+      "protagonist_state": {
+        "emotion_before": "a growing sense of excitement as she observes the city",
+        "emotion_after": "relieved that she is on the right track",
+        "knowledge_before": [
+          "She is on the subway train heading toward Manhattan",
+          "She is observing the other passengers and the city"
+        ],
+        "knowledge_after": [
+          "She has confirmed she is on the correct train toward Manhattan",
+          "She is now watching for her stop"
+        ]
+      },
+      "must_happen": [
+        "Jieun checks the subway map",
+        "Jieun compares the station names with her phone's map",
+        "Jieun confirms she is going in the right direction"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the subway journey",
+        "Do not introduce any problems with the subway map or her phone"
+      ],
+      "dialogue_goal": null,
+      "learning_opportunities": [
+        {
+          "function": "reading maps and signs",
+          "context": "Jieun checks the subway map to confirm her direction"
+        },
+        {
+          "function": "expressing internal relief",
+          "context": "Jieun's internal monologue about being on the right track"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun is on the subway train heading toward Manhattan",
+          "She is observing the other passengers and the city through the windows",
+          "She feels a growing sense of excitement"
+        ],
+        "carry_out": [
+          "Jieun has confirmed she is on the correct train toward Manhattan",
+          "She is now watching for her stop",
+          "She feels relieved that she is on the right track"
+        ],
+        "unresolved_before": [],
+        "unresolved_after": []
+      }
+    },
+    {
+      "scene_id": "S012",
+      "sequence": 12,
+      "location_ref": "LOC_AIRPORT_TRANSIT_001",
+      "story_function": "complication",
+      "scene_goal": "Jieun experiences a sudden subway delay between stations, introducing a moment of anxiety about reaching her hotel on time.",
+      "situation": "Jieun's subway train suddenly stops between stations. The lights flicker briefly, and she feels a moment of anxiety about being delayed.",
+      "problem": null,
+      "surprise": true,
+      "monologue": true,
+      "b_gender": null,
+      "line_count": 3,
+      "protagonist_state": {
+        "emotion_before": "relieved that she is on the right track",
+        "emotion_after": "anxious about the delay and whether she will reach her hotel on time",
+        "knowledge_before": [
+          "She has confirmed she is on the correct train toward Manhattan",
+          "She is now watching for her stop"
+        ],
+        "knowledge_after": [
+          "The subway train has stopped between stations",
+          "She is uncertain about how long the delay will last"
+        ]
+      },
+      "must_happen": [
+        "The subway train stops between stations",
+        "The lights flicker briefly",
+        "Jieun feels a moment of anxiety about the delay"
+      ],
+      "must_not_happen": [
+        "Do not resolve the subway delay in this scene",
+        "Do not move Jieun past the subway journey",
+        "Do not introduce another unrelated travel problem"
+      ],
+      "dialogue_goal": null,
+      "learning_opportunities": [
+        {
+          "function": "expressing internal anxiety",
+          "context": "Jieun's internal monologue about the sudden subway delay"
+        },
+        {
+          "function": "describing unexpected events",
+          "context": "Jieun experiences the train stopping and the lights flickering"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun has confirmed she is on the correct train toward Manhattan",
+          "She is now watching for her stop",
+          "She feels relieved that she is on the right track"
+        ],
+        "carry_out": [
+          "The subway train has stopped between stations",
+          "Jieun is feeling anxious about the delay",
+          "She is wondering if she will reach her hotel on time"
+        ],
+        "unresolved_before": [],
+        "unresolved_after": [
+          "The subway train is delayed between stations"
+        ]
+      }
+    },
+    {
+      "scene_id": "S013",
+      "sequence": 13,
+      "location_ref": "LOC_AIRPORT_TRANSIT_001",
+      "story_function": "response",
+      "scene_goal": "Jieun feels relief as the subway train resumes moving, and she refocuses on watching for her stop, resolving the delay complication.",
+      "situation": "The subway train resumes moving after a few minutes. Jieun feels relieved and continues to watch for her stop, the city lights becoming more visible.",
+      "problem": null,
+      "surprise": false,
+      "monologue": true,
+      "b_gender": null,
+      "line_count": 3,
+      "protagonist_state": {
+        "emotion_before": "anxious about the delay and whether she will reach her hotel on time",
+        "emotion_after": "relieved and looking forward to arriving at her hotel",
+        "knowledge_before": [
+          "The subway train has stopped between stations",
+          "She is uncertain about how long the delay will last"
+        ],
+        "knowledge_after": [
+          "The subway train has resumed moving",
+          "She is now watching for her stop"
+        ]
+      },
+      "must_happen": [
+        "The subway train resumes moving",
+        "Jieun feels relieved",
+        "Jieun continues to watch for her stop"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the subway journey",
+        "Do not introduce another travel problem"
+      ],
+      "dialogue_goal": null,
+      "learning_opportunities": [
+        {
+          "function": "expressing internal relief",
+          "context": "Jieun's internal monologue about the train resuming and feeling relieved"
+        },
+        {
+          "function": "observing the environment",
+          "context": "Jieun notices the city lights becoming more visible"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "The subway train has stopped between stations",
+          "Jieun is feeling anxious about the delay",
+          "She is wondering if she will reach her hotel on time"
+        ],
+        "carry_out": [
+          "The subway train has resumed moving",
+          "Jieun feels relieved and is now watching for her stop",
+          "She is looking forward to arriving at her hotel"
+        ],
+        "unresolved_before": [
+          "The subway train is delayed between stations"
+        ],
+        "unresolved_after": []
+      }
+    },
+    {
+      "scene_id": "S014",
+      "sequence": 14,
+      "location_ref": "LOC_AIRPORT_TRANSIT_001",
+      "story_function": "transition",
+      "scene_goal": "Jieun exits the subway station and sees the Manhattan skyline for the first time, marking her arrival in the city.",
+      "situation": "Jieun arrives at her subway stop in Manhattan. She exits the station and emerges onto the street, seeing the city skyline for the first time.",
+      "problem": null,
+      "surprise": false,
+      "monologue": true,
+      "b_gender": null,
+      "line_count": 4,
+      "protagonist_state": {
+        "emotion_before": "relieved and looking forward to arriving at her hotel",
+        "emotion_after": "a sense of awe and excitement at seeing the city skyline",
+        "knowledge_before": [
+          "The subway train has resumed moving",
+          "She is now watching for her stop"
+        ],
+        "knowledge_after": [
+          "She has arrived at her subway stop in Manhattan",
+          "She is now on the streets of Manhattan"
+        ]
+      },
+      "must_happen": [
+        "Jieun arrives at her subway stop in Manhattan",
+        "Jieun exits the subway station",
+        "Jieun sees the city skyline for the first time"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the area around the subway station",
+        "Do not introduce any problems with finding her hotel yet"
+      ],
+      "dialogue_goal": null,
+      "learning_opportunities": [
+        {
+          "function": "expressing internal awe",
+          "context": "Jieun's internal monologue about seeing the Manhattan skyline for the first time"
+        },
+        {
+          "function": "describing a new environment",
+          "context": "Jieun observes the city streets and skyline"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "The subway train has resumed moving",
+          "Jieun feels relieved and is now watching for her stop",
+          "She is looking forward to arriving at her hotel"
+        ],
+        "carry_out": [
+          "Jieun has exited the subway station and is now on the streets of Manhattan",
+          "She is seeing the city skyline for the first time",
+          "She feels a sense of awe and excitement"
+        ],
+        "unresolved_before": [],
+        "unresolved_after": []
+      }
+    },
+    {
+      "scene_id": "S015",
+      "sequence": 15,
+      "location_ref": "LOC_MANHATTAN_HOTEL_001",
+      "story_function": "progress",
+      "scene_goal": "Jieun navigates to her hotel using her phone and arrives at the entrance, ready to check in.",
+      "situation": "Jieun walks to her hotel, checking her phone for directions. She arrives at the entrance and takes a moment to look at the building before going inside.",
+      "problem": null,
+      "surprise": false,
+      "monologue": false,
+      "b_gender": "male",
+      "line_count": 4,
+      "protagonist_state": {
+        "emotion_before": "a sense of awe and excitement at seeing the city skyline",
+        "emotion_after": "ready and slightly relieved to have found the hotel",
+        "knowledge_before": [
+          "She has exited the subway station and is now on the streets of Manhattan",
+          "She needs to find her hotel"
+        ],
+        "knowledge_after": [
+          "She has arrived at her hotel in Manhattan",
+          "She is ready to check in"
+        ]
+      },
+      "must_happen": [
+        "Jieun walks to her hotel using her phone for directions",
+        "Jieun arrives at the hotel entrance",
+        "Jieun takes a moment to look at the building"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the hotel entrance",
+        "Do not introduce any problems with finding the hotel"
+      ],
+      "dialogue_goal": "Ask for directions to the hotel if needed, or confirm the hotel location.",
+      "learning_opportunities": [
+        {
+          "function": "asking for directions",
+          "context": "Jieun may need to ask for help finding her hotel"
+        },
+        {
+          "function": "confirming location",
+          "context": "Jieun confirms she has arrived at the correct hotel"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun has exited the subway station and is now on the streets of Manhattan",
+          "She is seeing the city skyline for the first time",
+          "She feels a sense of awe and excitement"
+        ],
+        "carry_out": [
+          "Jieun has arrived at her hotel in Manhattan",
+          "She is standing at the entrance, looking at the building",
+          "She is ready to check in"
+        ],
+        "unresolved_before": [],
+        "unresolved_after": []
+      }
+    },
+    {
+      "scene_id": "S016",
+      "sequence": 16,
+      "location_ref": "LOC_MANHATTAN_HOTEL_001",
+      "story_function": "interaction",
+      "scene_goal": "Jieun successfully checks in at the front desk, providing her reservation details and receiving her room key.",
+      "situation": "Jieun approaches the front desk and checks in. She provides her reservation details and receives her room key.",
+      "problem": null,
+      "surprise": false,
+      "monologue": false,
+      "b_gender": "female",
+      "line_count": 8,
+      "protagonist_state": {
+        "emotion_before": "ready and slightly relieved to have found the hotel",
+        "emotion_after": "relieved and happy to have checked in successfully",
+        "knowledge_before": [
+          "She has arrived at her hotel in Manhattan",
+          "She is ready to check in"
+        ],
+        "knowledge_after": [
+          "She has checked in successfully",
+          "She has received her room key"
+        ]
+      },
+      "must_happen": [
+        "Jieun approaches the front desk",
+        "Jieun provides her reservation details",
+        "Jieun receives her room key"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the hotel lobby",
+        "Do not introduce any problems with the reservation"
+      ],
+      "dialogue_goal": "Check in at the hotel front desk by providing reservation details and receiving the room key.",
+      "learning_opportunities": [
+        {
+          "function": "checking in",
+          "context": "Jieun provides her reservation details at the hotel front desk"
+        },
+        {
+          "function": "confirming details",
+          "context": "Jieun confirms her reservation and receives her room key"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun has arrived at her hotel in Manhattan",
+          "She is standing at the entrance, looking at the building",
+          "She is ready to check in"
+        ],
+        "carry_out": [
+          "Jieun has checked in successfully and received her room key",
+          "She is now heading to the elevator to go to her room",
+          "She feels relieved and happy"
+        ],
+        "unresolved_before": [],
+        "unresolved_after": []
+      }
+    },
+    {
+      "scene_id": "S017",
+      "sequence": 17,
+      "location_ref": "LOC_MANHATTAN_HOTEL_001",
+      "story_function": "observation",
+      "scene_goal": "Jieun enters her hotel room, settles in, and sees the city view from the window, feeling a sense of accomplishment.",
+      "situation": "Jieun enters her hotel room. She puts down her bags, looks around the room, and goes to the window to see the view of the city.",
+      "problem": null,
+      "surprise": false,
+      "monologue": true,
+      "b_gender": null,
+      "line_count": 4,
+      "protagonist_state": {
+        "emotion_before": "relieved and happy to have checked in successfully",
+        "emotion_after": "settled and comfortable, thinking about exploring the area",
+        "knowledge_before": [
+          "She has checked in successfully",
+          "She has received her room key"
+        ],
+        "knowledge_after": [
+          "She is in her hotel room",
+          "She has seen the city view from the window"
+        ]
+      },
+      "must_happen": [
+        "Jieun enters her hotel room",
+        "Jieun puts down her bags",
+        "Jieun goes to the window to see the view"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the hotel room",
+        "Do not introduce any problems with the room"
+      ],
+      "dialogue_goal": null,
+      "learning_opportunities": [
+        {
+          "function": "expressing internal thoughts",
+          "context": "Jieun's internal monologue about her room and the city view"
+        },
+        {
+          "function": "describing a room",
+          "context": "Jieun looks around her hotel room"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun has checked in successfully and received her room key",
+          "She is now heading to the elevator to go to her room",
+          "She feels relieved and happy"
+        ],
+        "carry_out": [
+          "Jieun is in her hotel room and has seen the city view from the window",
+          "She is feeling settled and comfortable",
+          "She is thinking about taking a walk to explore the area"
+        ],
+        "unresolved_before": [],
+        "unresolved_after": []
+      }
+    },
+    {
+      "scene_id": "S018",
+      "sequence": 18,
+      "location_ref": "LOC_MANHATTAN_HOTEL_001",
+      "story_function": "transition",
+      "scene_goal": "Jieun freshens up and decides to go for a short evening walk, heading out of her room to explore the neighborhood.",
+      "situation": "Jieun freshens up and decides to go for a short walk to experience the city atmosphere. She grabs her crossbody bag and heads out of the room.",
+      "problem": null,
+      "surprise": false,
+      "monologue": true,
+      "b_gender": null,
+      "line_count": 3,
+      "protagonist_state": {
+        "emotion_before": "settled and comfortable, thinking about exploring the area",
+        "emotion_after": "curious and excited to see the neighborhood",
+        "knowledge_before": [
+          "She is in her hotel room",
+          "She has seen the city view from the window"
+        ],
+        "knowledge_after": [
+          "She has left her hotel room",
+          "She is heading out for an evening walk"
+        ]
+      },
+      "must_happen": [
+        "Jieun freshens up",
+        "Jieun decides to go for a walk",
+        "Jieun grabs her crossbody bag and heads out of the room"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the hotel",
+        "Do not introduce any problems with leaving the hotel"
+      ],
+      "dialogue_goal": null,
+      "learning_opportunities": [
+        {
+          "function": "expressing internal decision",
+          "context": "Jieun's internal monologue about deciding to go for a walk"
+        },
+        {
+          "function": "describing actions",
+          "context": "Jieun prepares to leave her hotel room"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun is in her hotel room and has seen the city view from the window",
+          "She is feeling settled and comfortable",
+          "She is thinking about taking a walk to explore the area"
+        ],
+        "carry_out": [
+          "Jieun has left her hotel room and is heading out for an evening walk",
+          "She is feeling curious and excited to see the neighborhood",
+          "She is planning to stay close to the hotel"
+        ],
+        "unresolved_before": [],
+        "unresolved_after": []
+      }
+    },
+    {
+      "scene_id": "S019",
+      "sequence": 19,
+      "location_ref": "LOC_MANHATTAN_EVENING_STREET_001",
+      "story_function": "observation",
+      "scene_goal": "Jieun experiences the evening atmosphere of New York City on her walk, observing the lights, sounds, and people, and feeling more comfortable.",
+      "situation": "Jieun walks along the evening street, taking in the lights, sounds, and energy of New York City. She pauses to look at a storefront and observes the people around her.",
+      "problem": null,
+      "surprise": false,
+      "monologue": true,
+      "b_gender": null,
+      "line_count": 4,
+      "protagonist_state": {
+        "emotion_before": "curious and excited to see the neighborhood",
+        "emotion_after": "more comfortable and less anxious, enjoying the city",
+        "knowledge_before": [
+          "She has left her hotel room",
+          "She is heading out for an evening walk"
+        ],
+        "knowledge_after": [
+          "She is walking along the evening street",
+          "She is experiencing the city atmosphere"
+        ]
+      },
+      "must_happen": [
+        "Jieun walks along the evening street",
+        "Jieun takes in the lights, sounds, and energy of the city",
+        "Jieun pauses to look at a storefront"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the evening street area",
+        "Do not introduce any problems during the walk"
+      ],
+      "dialogue_goal": null,
+      "learning_opportunities": [
+        {
+          "function": "expressing internal observations",
+          "context": "Jieun's internal monologue about the city atmosphere"
+        },
+        {
+          "function": "describing a city street",
+          "context": "Jieun observes the lights, sounds, and people on the street"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun has left her hotel room and is heading out for an evening walk",
+          "She is feeling curious and excited to see the neighborhood",
+          "She is planning to stay close to the hotel"
+        ],
+        "carry_out": [
+          "Jieun is walking along the evening street, experiencing the city atmosphere",
+          "She is feeling more comfortable and less anxious",
+          "She is enjoying the sights and sounds of New York"
+        ],
+        "unresolved_before": [],
+        "unresolved_after": []
+      }
+    },
+    {
+      "scene_id": "S020",
+      "sequence": 20,
+      "location_ref": "LOC_MANHATTAN_EVENING_STREET_001",
+      "story_function": "closing",
+      "scene_goal": "Jieun sees a familiar landmark in the distance, feels a sense of accomplishment, and decides to head back to the hotel, closing the episode on a positive note.",
+      "situation": "Jieun turns a corner and sees a familiar landmark in the distance. She smiles, feeling a sense of accomplishment, and decides to head back to the hotel for the night.",
+      "problem": null,
+      "surprise": true,
+      "monologue": true,
+      "b_gender": null,
+      "line_count": 4,
+      "protagonist_state": {
+        "emotion_before": "more comfortable and less anxious, enjoying the city",
+        "emotion_after": "a sense of accomplishment and readiness to explore more the next day",
+        "knowledge_before": [
+          "She is walking along the evening street",
+          "She is experiencing the city atmosphere"
+        ],
+        "knowledge_after": [
+          "She has seen a familiar landmark in the distance",
+          "She feels a sense of accomplishment"
+        ]
+      },
+      "must_happen": [
+        "Jieun turns a corner",
+        "Jieun sees a familiar landmark in the distance",
+        "Jieun decides to head back to the hotel"
+      ],
+      "must_not_happen": [
+        "Do not move Jieun past the evening street area",
+        "Do not introduce a new problem or complication in this scene"
+      ],
+      "dialogue_goal": null,
+      "learning_opportunities": [
+        {
+          "function": "expressing internal accomplishment",
+          "context": "Jieun's internal monologue about seeing a familiar landmark and feeling proud"
+        },
+        {
+          "function": "describing a landmark",
+          "context": "Jieun sees a familiar landmark in the distance"
+        }
+      ],
+      "continuity": {
+        "carry_in": [
+          "Jieun is walking along the evening street, experiencing the city atmosphere",
+          "She is feeling more comfortable and less anxious",
+          "She is enjoying the sights and sounds of New York"
+        ],
+        "carry_out": [
+          "Jieun has seen a familiar landmark and feels a sense of accomplishment",
+          "She is heading back to her hotel for the night",
+          "She is ready to explore more of New York the next day"
+        ],
+        "unresolved_before": [],
+        "unresolved_after": []
+      }
+    }
+  ]
+}

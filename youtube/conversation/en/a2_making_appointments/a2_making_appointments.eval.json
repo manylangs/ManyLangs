@@ -1,0 +1,71 @@
+{
+  "chapter_id": "conversation_014.runtime.json",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A와 B의 역할이 전체 대화에서 일관되게 유지됨. A는 약속을 제안하고 확인하는 역할, B는 응답하고 구체적인 조건을 제시하는 역할로 자연스럽게 구분됨."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "약속 잡기 대화의 전형적인 기능적 흐름을 정확히 따름: 시간 제안 → 응답 → 구체적 시간 합의 → 장소 합의 → 확정 → 기대 표현. 각 발화가 해당 기능을 명확히 수행함."
+    },
+    "spoken_naturalness": {
+      "score": 9.5,
+      "weight": 15,
+      "notes": "전체적으로 자연스러운 구어체 표현을 사용함. 'I do', 'Let's say', 'works for me' 등 실제 회화에서 자주 쓰이는 표현이 잘 반영됨. 다만 'Thursday works for me'는 A2 레벨 학습자에게 다소 도전적일 수 있으나, 실용성과 자연스러움을 고려하면 적절한 선택임."
+    },
+    "register_appropriateness": {
+      "score": 9.5,
+      "weight": 10,
+      "notes": "친근하지만 정중한 비즈니스/일상 회화 레지스터를 적절히 유지함. 'Do you have time', 'What time is good for you' 등 공손한 질문 형식을 사용하면서도 'Let's say', 'Perfect' 등 친근한 표현을 적절히 혼합함. A2 레벨에 적합한 레지스터."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "모든 언어에서 문법적으로 정확한 문장을 사용함. 영어 원문은 물론, 모든 번역 언어에서 오류가 발견되지 않음. 구두점, 대문자 사용, 축약형 등 표기법도 일관되고 정확함."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "주중에 만나서 시간을 정하고, 장소를 합의하는 매우 실용적이고 빈번하게 발생하는 상황을 다룸. '역 근처 카페'와 같은 구체적인 장소 설정은 학습자가 실제로 활용할 수 있는 실용적인 표현을 제공함."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "특정 문화에 국한되지 않는 보편적인 약속 잡기 상황을 다룸. 시간과 장소를 정하는 대화로 문화적 중립성을 유지함. 특정 국가나 문화를 암시하는 요소가 없음."
+    },
+    "tts_readiness": {
+      "score": 9.5,
+      "weight": 5,
+      "notes": "TTS로 읽기에 적합한 짧고 명확한 문장들로 구성됨. 축약형(I'll, Let's)이 자연스럽게 사용되어 TTS 발화 시 유창한 발음이 가능함. 다만 'Let's say two o'clock'의 경우 TTS가 강세를 자연스럽게 처리해야 하는 부분이지만, 전반적으로 TTS에 친화적인 구조임."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "en 필드가 target 필드와 완전히 일치함. 모든 문장에서 target과 en이 동일한 문자열을 가지며, 미러 구조가 정확하게 유지됨."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "Cambridge English Conversation, Duolingo 등 주요 서비스의 A2 레벨 대화 교재와 비교했을 때, 실용성과 자연스러움에서 경쟁력이 있음. 다만 대화 길이가 짧고 단일 상황만 다루어, 유사 서비스들이 제공하는 다양한 상황 연계 학습에는 다소 부족할 수 있음. 그럼에도 불구하고 핵심 표현의 밀도와 실용성은 경쟁력이 높음."
+    }
+  },
+  "final_score": 96.25,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "상위 10% 수준. 특히 실용성, 자연스러움, 문화적 중립성에서 우수한 평가를 받아 주요 서비스의 A2 레벨 교재와 비교해도 손색없는 수준. 다만 대화의 길이와 상황의 다양성 측면에서는 일부 서비스에 비해 짧은 편.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}

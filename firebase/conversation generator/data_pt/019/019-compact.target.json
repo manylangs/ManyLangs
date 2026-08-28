@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Saúde e sintomas",
+  "sets": {
+    "001": [
+      "Bom dia, Lucas. Você está com uma cara ótima hoje.",
+      "Obrigado, Ana! Eu finalmente consegui dormir bem essa noite.",
+      "Que bom! Eu não dormi nada, estou me sentindo muito cansada.",
+      "Nossa, que pena. Você está com dor de cabeça?",
+      "Estou sim, e também estou com um pouco de febre.",
+      "Talvez você precise descansar hoje e beber bastante água."
+    ],
+    "002": [
+      "Gabriel, você está com uma tosse horrível. Está gripado?",
+      "Acho que sim. Começou ontem com uma dor de garganta.",
+      "Você já tomou algum remédio para isso?",
+      "Tomei um xarope, mas não fez muito efeito ainda.",
+      "Se continuar assim, seria bom você ir ao médico.",
+      "Você tem razão. Vou marcar uma consulta para amanhã."
+    ],
+    "003": [
+      "Fernanda, você está com uma alergia? Seus olhos estão vermelhos.",
+      "Estou espirrando sem parar. Acho que é por causa do pó.",
+      "Isso acontece comigo também quando o tempo fica seco.",
+      "O que você costuma tomar para melhorar?",
+      "Eu uso um antialérgico que o médico me receitou.",
+      "Vou pedir uma receita para o meu médico também."
+    ],
+    "004": [
+      "Rafael, você está com uma dor no estômago? Você está com uma cara péssima.",
+      "Estou com uma dor muito forte. Acho que comi algo estragado.",
+      "Você consegue me dizer onde dói exatamente?",
+      "É aqui, do lado direito, perto da barriga.",
+      "Isso pode ser algo sério. Você deveria ir ao pronto-socorro.",
+      "Você pode me acompanhar? Estou com medo de dirigir assim."
+    ],
+    "005": [
+      "Camila, você está com uma dor no ombro há quanto tempo?",
+      "Já faz mais de uma semana. Está difícil até para dormir.",
+      "Você fez algum esforço repetitivo recentemente?",
+      "Passei o fim de semana inteiro carregando caixas na mudança.",
+      "Isso explica a dor. Você precisa fazer uma fisioterapia.",
+      "O médico já me indicou um bom fisioterapeuta. Vou começar semana que vem."
+    ],
+    "006": [
+      "Felipe, você está com uma tontura? Você está pálido.",
+      "Estou me sentindo meio fraco e com uma tontura leve.",
+      "Você comeu alguma coisa hoje?",
+      "Só tomei um café de manhã e não comi mais nada.",
+      "Isso é perigoso. Você precisa comer alguma coisa agora.",
+      "Vou comer uma fruta e ver se melhoro."
+    ],
+    "007": [
+      "Beatriz, você está com uma febre? Sua testa está quente.",
+      "Estou sim, e também estou com calafrios.",
+      "Você já mediu a temperatura?",
+      "Ainda não, mas estou me sentindo muito quente.",
+      "Deixa eu ver se temos um termômetro aqui.",
+      "Obrigada. Se a febre estiver alta, vou precisar ir ao médico."
+    ],
+    "008": [
+      "Lucas, você está com uma dor nas costas? Você está se mexendo estranho.",
+      "Estou sim. Fiz um movimento errado na academia ontem.",
+      "Você consegue se movimentar normalmente?",
+      "Consigo, mas dói muito quando eu me abaixo.",
+      "Você deveria aplicar gelo no local para reduzir a inflamação.",
+      "Boa ideia. Vou fazer isso assim que chegar em casa."
+    ],
+    "009": [
+      "Fernanda, você está com uma dor de ouvido? Você está colocando a mão nele.",
+      "Estou com uma dor muito forte desde ontem à noite.",
+      "Você já foi ao otorrinolaringologista?",
+      "Ainda não. Estou tentando marcar uma consulta, mas está difícil.",
+      "Se a dor estiver insuportável, vá ao pronto-socorro.",
+      "Você tem razão. Vou esperar até o fim do dia e, se não melhorar, eu vou."
+    ],
+    "010": [
+      "Gabriel, você está com uma dor no peito? Isso é preocupante.",
+      "É uma dor leve, mas que aparece quando eu faço exercício.",
+      "Você já fez algum exame do coração?",
+      "Nunca fiz. Estou com um pouco de medo de descobrir algo.",
+      "Não tenha medo. É melhor saber cedo do que descobrir tarde.",
+      "Você tem razão. Vou marcar um cardiologista o quanto antes."
+    ]
+  },
+  "level": "b1",
+  "chapter_id": "CONV_PT_HEALTH_SYMPTOMS",
+  "id": "019",
+  "target_lang": "pt"
+}

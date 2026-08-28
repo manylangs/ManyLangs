@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "character_id": "CHAR_JIEUN_001",
+  "series_id": "travel_new_york_city",
+  "identity": {
+    "role": "protagonist",
+    "name": "Jieun",
+    "gender": "female",
+    "age_range": "mid-20s",
+    "nationality": "Korean",
+    "home_base": "Seoul, South Korea"
+  },
+  "story_profile": {
+    "perspective": "First-time traveler from Korea experiencing New York City for the first time, serving as the learner's viewpoint for practical English travel situations.",
+    "personality_traits": [
+      "curious",
+      "polite",
+      "observant",
+      "slightly cautious"
+    ],
+    "speaking_style": [
+      "short and clear sentences",
+      "polite but natural",
+      "occasionally pauses to find the right word",
+      "uses simple vocabulary"
+    ],
+    "continuity_rules": [
+      "Jieun is always the learner's viewpoint character",
+      "Her level of English comfort grows gradually through the series",
+      "She remains polite and respectful in all interactions",
+      "Her curiosity drives her to explore and ask questions"
+    ]
+  },
+  "visual_identity": {
+    "appearance_summary": "A realistic modern Korean woman in her mid-20s with a natural, approachable look, dressed in practical travel clothing suitable for a city trip.",
+    "face": "Oval face with soft features, natural eyebrows, dark brown eyes, light natural makeup, warm friendly expression",
+    "hair": "Shoulder-length dark brown hair, straight with slight natural waves, often tucked behind ears",
+    "body": "Average height, slim build, natural posture",
+    "distinctive_features": [
+      "Carries a medium-sized travel backpack",
+      "Often holds a smartphone for navigation",
+      "Wears a small crossbody bag"
+    ],
+    "continuity_lock": true
+  },
+  "wardrobe": {
+    "default_outfit": "White casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers",
+    "accessories": [
+      "Small silver earrings",
+      "Simple wristwatch",
+      "Crossbody bag"
+    ],
+    "continuity_policy": "Maintain the same base outfit throughout the episode. Only outer layers may be removed or added for comfort, but the core outfit remains consistent."
+  },
+  "production": {
+    "visual_provider": "vidu",
+    "persistent_character": true,
+    "reference_asset_ids": [
+      "ASSET_CHAR_JIEUN_PRIMARY_000001"
+    ],
+    "prompt_rules": [
+      "Maintain consistent facial features across all scenes",
+      "Keep the same hairstyle and color",
+      "Preserve the default outfit for the entire episode",
+      "Ensure the character appears as a realistic modern traveler"
+    ]
+  }
+}

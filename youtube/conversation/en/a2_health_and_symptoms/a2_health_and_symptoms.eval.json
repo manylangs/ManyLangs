@@ -1,0 +1,70 @@
+{
+  "chapter_id": "conversation_019.runtime.json",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A와 B의 역할이 일관됨. A는 환자, B는 상대방으로 대화 전체에서 역할이 유지됨."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "증상 표현, 상태 묻기, 제안, 수락, 감사, 응답 등 대화의 기능적 흐름이 자연스럽고 정확함."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "전체적으로 자연스러운 회화체를 사용함. 'That sounds rough', 'I think so', 'No problem at all' 등 구어적 표현이 잘 활용됨."
+    },
+    "register_appropriateness": {
+      "score": 9,
+      "weight": 10,
+      "notes": "친근한 사이의 일상 대화에 적합한 레지스터를 유지함. 존칭과 비존칭이 혼용된 한국어 번역은 원문의 레지스터를 반영한 것으로 보이나, 일부 언어에서 일관성이 다를 수 있음."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 오류가 발견되지 않음. 구두점 및 표기법도 적절함."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "두통, 인후통, 발열 등 흔한 증상을 다루는 실용적인 상황을 제시하며, 병원 방문 제안과 같은 실제적인 후속 행동을 포함함."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "특정 문화에 국한되지 않는 보편적인 건강 문제와 일상적 반응을 다루어 문화적 중립성을 유지함."
+    },
+    "tts_readiness": {
+      "score": 9,
+      "weight": 5,
+      "notes": "문장이 비교적 짧고 명확하여 TTS로 읽기에 적합함. 다만 'I think so.'와 같은 짧은 문장은 TTS에서 자연스러운 억양을 내기 어려울 수 있음."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "en 필드가 target 필드와 완전히 일치함."
+    },
+    "market_competitiveness": {
+      "score": 8,
+      "weight": 15,
+      "notes": "A2 레벨에 적합한 실용적인 내용으로 구성되어 있으며, 경쟁 서비스와 비교해도 손색없는 수준임. 다만, 단일 세트만으로는 다양한 어휘와 표현을 보여주는 데 한계가 있어 약간의 감점 요인이 됨."
+    }
+  },
+  "final_score": 94,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "Cambridge English Conversation 및 EBS/YBM 실용영어회화와 같은 검증된 서비스의 초급~중급 수준과 유사한 품질을 제공함. Duolingo나 Speak과 같은 앱 기반 서비스와 비교했을 때, 실제 대화 맥락을 더 잘 반영하여 실용성 측면에서 우위를 점할 수 있음.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": []
+}

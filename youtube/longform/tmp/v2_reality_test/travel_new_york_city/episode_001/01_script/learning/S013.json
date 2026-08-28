@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S013",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "source_dialogue": {
+    "source_scene_id": "S013",
+    "source_line_ids": [
+      "L001",
+      "L002",
+      "L003"
+    ]
+  },
+  "key_expressions": [
+    {
+      "key_expression_id": "KE001",
+      "source_line_ids": [
+        "L001"
+      ],
+      "expression": "That's a relief.",
+      "meaning": "다행이다. 안심이 된다.",
+      "usage": "걱정이나 불안이 해소되었을 때 안도감을 표현하는 아주 자연스러운 일상 표현입니다. 가벼운 상황부터 진지한 상황까지 폭넓게 사용할 수 있습니다.",
+      "context": "지하철이 한동안 멈춰 있다가 다시 움직이기 시작하자, 지은이가 안심하며 혼잣말로 안도감을 표현하는 상황입니다.",
+      "communicative_function": "expressing relief",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "What a relief.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE002",
+      "source_line_ids": [
+        "L002"
+      ],
+      "expression": "I can see the city lights now.",
+      "meaning": "이제 도시의 불빛이 보인다.",
+      "usage": "무언가가 보이기 시작할 때 'I can see...' 패턴으로 사용합니다. 시각적으로 인식하게 된 것을 표현할 때 유용합니다.",
+      "context": "지하철이 다시 움직이기 시작하면서 지은이가 창밖으로 보이는 도시의 야경을 바라보며 감상하는 상황입니다.",
+      "communicative_function": "observing the environment",
+      "difficulty": "A2",
+      "priority": "useful",
+      "variation": null,
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE003",
+      "source_line_ids": [
+        "L003"
+      ],
+      "expression": "I need to watch for my stop.",
+      "meaning": "내가 내릴 정거장을 잘 봐야 해.",
+      "usage": "교통수단을 이용할 때 목적지나 내릴 곳을 놓치지 않기 위해 주의를 기울여야 할 때 사용하는 실용적인 표현입니다. 'watch for'은 무언가를 기다리며 눈여겨보다는 뜻입니다.",
+      "context": "지하철이 다시 운행을 시작하자, 지은이가 내릴 정거장을 놓치지 않기 위해 스스로에게 주의를 환기시키는 상황입니다.",
+      "communicative_function": "expressing intention",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "I need to keep an eye out for my stop.",
+      "common_mistake": "watch my stop이라고 하지 않도록 주의하세요. 'watch for'은 무언가를 찾거나 기다리며 주의를 기울인다는 의미로, 'watch'만 쓰면 지켜본다는 뜻이 되어 어색합니다.",
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    }
+  ],
+  "validation": {
+    "expression_count": 3,
+    "all_expressions_exist_in_dialogue": true,
+    "source_lines_valid": true,
+    "cefr_appropriate": true
+  }
+}

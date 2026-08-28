@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "location_id": "LOC_MANHATTAN_EVENING_STREET_001",
+  "series_id": "travel_new_york_city",
+  "identity": {
+    "name": "Manhattan Evening Street",
+    "location_type": "urban street",
+    "city": "New York City",
+    "country": "United States",
+    "parent_location_id": null
+  },
+  "story_profile": {
+    "story_function": "Area around the hotel for Jieun's first evening walk, experiencing the city atmosphere and nearby landmarks",
+    "continuity_rules": [
+      "Represents a safe, walkable street in Manhattan near the hotel",
+      "Shows typical New York City evening atmosphere",
+      "The street connects to the hotel location"
+    ]
+  },
+  "visual_identity": {
+    "environment_summary": "A lively Manhattan street in the evening with sidewalks, streetlights, storefronts, and city traffic, capturing the distinctive New York City atmosphere.",
+    "persistent_features": [
+      "Sidewalks and street crossings",
+      "Streetlights and building lights",
+      "Storefronts and signage",
+      "City traffic and taxis",
+      "Typical Manhattan architecture"
+    ],
+    "variable_features": [
+      "Crowd density varies",
+      "Specific storefronts may change",
+      "Weather conditions may vary",
+      "Time of evening affects lighting"
+    ],
+    "continuity_lock": true
+  },
+  "production": {
+    "visual_provider": "vidu",
+    "reference_asset_ids": [],
+    "prompt_rules": [
+      "Maintain consistent street layout and architecture style",
+      "Use realistic evening lighting conditions",
+      "Keep the New York City atmosphere consistent"
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "series_id": "travel_new_york_city",
+  "category_id": "travel",
+  "series_name": "First Trip to New York",
+  "premise": "A first-time visitor experiences New York City through realistic, everyday travel situations, learning practical English for navigation, dining, transportation, and cultural encounters.",
+  "genre": [
+    "realistic travel language learning"
+  ],
+  "tone": [
+    "warm",
+    "realistic",
+    "practical"
+  ],
+  "timeline": {
+    "model": "continuous",
+    "episode_order_is_chronological": true
+  },
+  "character_policy": {
+    "protagonist_is_persistent": true,
+    "protagonist_keeps_identity": true,
+    "protagonist_keeps_story_perspective": true,
+    "dialogue_supporting_characters_default_to_new_local_person": true,
+    "monologue_has_no_dialogue_partner": true
+  },
+  "story_rules": {
+    "preserve_continuity": true,
+    "avoid_repetitive_events": true,
+    "avoid_forced_dialogue": true,
+    "problems_may_span_multiple_scenes": true,
+    "unresolved_state_carries_forward": true
+  },
+  "episode_policy": {
+    "default_scene_count": 20,
+    "main_situation_minimum_scenes": 12,
+    "intro_travel_maximum_scenes": 3,
+    "outro_travel_maximum_scenes": 3,
+    "surprise_scene_minimum": 1,
+    "surprise_scene_maximum": 2,
+    "recommended_monologue_minimum": 3,
+    "recommended_monologue_maximum": 5
+  },
+  "learning_philosophy": {
+    "real_world_context_first": true,
+    "natural_spoken_language": true,
+    "avoid_textbook_like_dialogue": true,
+    "expressions_should_be_contextual": true
+  },
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "location_refs": [
+    "LOC_JFK_AIRPORT_001",
+    "LOC_AIRPORT_TRANSIT_001",
+    "LOC_MANHATTAN_HOTEL_001",
+    "LOC_MANHATTAN_EVENING_STREET_001"
+  ],
+  "forbidden_contradictions": [
+    "Jieun must not be portrayed as an experienced New York traveler",
+    "The series must not introduce fantasy or unrealistic elements",
+    "The protagonist's identity and visual appearance must remain consistent across all episodes",
+    "Locations must maintain consistent visual identity and spatial logic throughout the series"
+  ]
+}

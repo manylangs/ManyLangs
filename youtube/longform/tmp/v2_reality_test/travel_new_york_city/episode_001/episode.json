@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "series_id": "travel_new_york_city",
+  "episode_number": 1,
+  "story": {
+    "title": "First Trip to New York",
+    "situation": "Jieun, a first-time traveler from Korea, arrives at JFK Airport and must navigate her way to her hotel in Manhattan, completing essential travel tasks in English for the first time.",
+    "summary": "Jieun lands at JFK Airport, goes through immigration and baggage claim, finds ground transportation to Manhattan, checks into her hotel, and takes a first evening walk to experience the city atmosphere.",
+    "scene_count": 20
+  },
+  "language_context": {
+    "target_language": "en",
+    "learner_languages": [
+      "es",
+      "fr",
+      "pt",
+      "jp",
+      "zh",
+      "kr",
+      "ru"
+    ],
+    "cefr_level": "A2"
+  },
+  "reality_contract": {
+    "mode": "real_world",
+    "reference_date": "2026-08",
+    "location_context": "New York City",
+    "rules": {
+      "do_not_invent_operational_facts": true,
+      "do_not_invent_prices": true,
+      "do_not_invent_routes": true,
+      "do_not_invent_payment_methods": true,
+      "do_not_invent_schedules": true,
+      "do_not_invent_named_services": true
+    },
+    "uncertain_fact_policy": "generalize_or_flag"
+  },
+  "continuity": {
+    "character_refs": [
+      "CHAR_JIEUN_001"
+    ],
+    "location_refs": [
+      "LOC_JFK_AIRPORT_001",
+      "LOC_AIRPORT_TRANSIT_001",
+      "LOC_MANHATTAN_HOTEL_001",
+      "LOC_MANHATTAN_EVENING_STREET_001"
+    ],
+    "previous_episode_id": null,
+    "next_episode_id": null,
+    "carry_in_state": [
+      "Jieun is on an airplane approaching JFK Airport",
+      "She feels excited but slightly anxious about her first visit to New York",
+      "She has her passport, luggage, and hotel reservation ready",
+      "Her main goal is to get from the airport to her hotel safely"
+    ],
+    "carry_out_state": [
+      "Jieun has arrived at her hotel in Manhattan and checked in successfully",
+      "She has completed her first evening walk, feeling more comfortable with the city",
+      "She has used English for immigration, transportation, and hotel check-in",
+      "She is ready to explore more of New York the next day"
+    ]
+  }
+}

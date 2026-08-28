@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S014",
+  "shot_id": "SHOT_001",
+  "sequence": 1,
+  "source_refs": {
+    "production_scene": "02_visual/production_scenes/S014.json",
+    "shot": "03_shots/S014/SHOT_001.json",
+    "visual_continuity": "04_visual_continuity/S014/SHOT_001.json"
+  },
+  "generation": {
+    "provider": "vidu",
+    "duration_seconds": 6.0,
+    "aspect_ratio": "16:9",
+    "resolution": "1080p",
+    "mode": "reference_guided"
+  },
+  "actors": [
+    {
+      "actor_ref": "CHAR_JIEUN_001",
+      "identity_type": "persistent",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Medium-sized travel backpack",
+        "Small crossbody bag",
+        "Smartphone",
+        "Passport",
+        "Checked suitcase"
+      ],
+      "body_state": [
+        "Standing on the sidewalk outside the subway station",
+        "Pulling her checked suitcase behind her",
+        "Backpack worn on back",
+        "Crossbody bag worn across body"
+      ],
+      "emotion": "anticipatory, looking forward to arriving at her hotel",
+      "reference_asset_ids": [
+        "ASSET_CHAR_JIEUN_PRIMARY_000001"
+      ]
+    }
+  ],
+  "location": {
+    "location_ref": "LOC_AIRPORT_TRANSIT_001",
+    "identity_lock": true,
+    "current_zone": "Sidewalk outside the subway station exit in Manhattan",
+    "persistent_features": [
+      "Transit station platforms",
+      "Train or vehicle interior",
+      "Views of urban landscape during the journey",
+      "Signage for transit lines and stops"
+    ],
+    "orientation_state": [
+      "Jieun standing on the sidewalk outside the subway station exit",
+      "Subway station exit behind Jieun",
+      "Manhattan street and buildings ahead of Jieun",
+      "Suitcase being pulled behind Jieun",
+      "Pedestrians walking past on the sidewalk"
+    ],
+    "reference_asset_ids": []
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn on back",
+      "position": "on Jieun's back",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn across body, closed",
+      "position": "across Jieun's body",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "in hand or pocket",
+      "position": "in Jieun's hand or pocket",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "stored in crossbody bag",
+      "position": "inside Jieun's crossbody bag",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "being pulled by Jieun",
+      "position": "behind Jieun, on the sidewalk, being pulled by her hand",
+      "visible": true,
+      "continuity_lock": true
+    }
+  ],
+  "prompt": {
+    "subject": "Jieun, a young woman with an oval face, soft features, natural eyebrows, dark brown eyes, light natural makeup, and a warm friendly expression. She has shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears. She wears a white casual t-shirt, a light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch. She carries a medium-sized travel backpack on her back, a small crossbody bag across her body, and pulls a checked suitcase behind her.",
+    "environment": "The sidewalk outside a subway station exit in Manhattan during the day. Bright natural daylight, clear and open after emerging from the underground station. The subway station exit is behind Jieun, with the Manhattan street and tall buildings ahead. Pedestrians walk on the sidewalk, cars move along the street, and city sounds of traffic and distant chatter fill the air.",
+    "action": "Jieun walks out of the subway station exit, pulling her checked suitcase, and steps onto the sidewalk of the Manhattan street. She stops and looks up at the tall buildings and the skyline with an anticipatory expression, then resumes walking while looking around at the city.",
+    "camera": "Medium-wide shot at eye level, smooth follow camera movement tracking Jieun as she exits the station and walks along the sidewalk.",
+    "continuity": "Jieun retains her exact appearance, clothing, and carried items: backpack on back, crossbody bag across body, and checked suitcase being pulled behind her. The subway station exit remains behind her, and the Manhattan street and buildings are ahead. She has not yet seen the Manhattan skyline for the first time, and she has not moved past the area around the subway station.",
+    "final_prompt": "A medium-wide, eye-level smooth follow shot shows Jieun, a young woman with an oval face, soft features, dark brown eyes, and shoulder-length dark brown hair tucked behind ears, wearing a white t-shirt, light blue denim jacket, dark blue skinny jeans, and white sneakers. She carries a backpack on her back and a crossbody bag across her body, and pulls a checked suitcase behind her. She walks out of a subway station exit onto a sunlit Manhattan sidewalk, stops to look up at the tall buildings and skyline with an anticipatory expression, then resumes walking while looking around at the city. Pedestrians pass by, cars move along the street, and the station exit remains behind her. Her appearance, clothing, and carried items remain exactly consistent throughout."
+  },
+  "negative_constraints": [
+    "Do not change Jieun's identity, appearance, hair, or clothing.",
+    "Do not change the canonical location identity of the subway station exit and Manhattan street.",
+    "Do not introduce new characters.",
+    "Do not introduce new locations.",
+    "Do not alter the canonical prop state: backpack on back, crossbody bag across body, checked suitcase being pulled.",
+    "Do not show Jieun moving past the area around the subway station.",
+    "Do not show Jieun's suitcase being lost or missing.",
+    "Do not show Jieun's passport or smartphone being dropped or lost.",
+    "Do not show Jieun arriving at her hotel.",
+    "Do not introduce a new travel problem.",
+    "Do not show Jieun encountering any problems with finding her hotel yet.",
+    "Do not change story events or resolve unresolved story facts."
+  ],
+  "continuity": {
+    "carry_in": [
+      "The subway train has arrived at the station",
+      "Jieun has gotten off the train and is heading toward the exit",
+      "She is carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase"
+    ],
+    "carry_out": [
+      "Jieun is standing on the street outside the subway station",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase",
+      "She is pulling her checked suitcase",
+      "She has not yet seen the Manhattan skyline for the first time"
+    ],
+    "must_match_previous_shot": true,
+    "previous_scene_id": "S013",
+    "previous_shot_id": "SHOT_003",
+    "next_scene_id": "S014",
+    "next_shot_id": "SHOT_002"
+  }
+}

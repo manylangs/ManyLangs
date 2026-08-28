@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a2",
+    "id": "016"
+  },
+  "title": {
+    "target": "Talking About the Weather",
+    "en": "Talking About the Weather",
+    "es": "Hablando sobre el clima",
+    "fr": "Parler de la météo",
+    "pt": "A Falar sobre o Clima",
+    "kr": "날씨에 대해 이야기하기",
+    "zh": "谈论天气",
+    "jp": "天気の話",
+    "ru": "Разговор о погоде"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "It's so humid today, isn't it?",
+            "en": "It's so humid today, isn't it?",
+            "es": "Hoy hay mucha humedad, ¿verdad?",
+            "fr": "Il fait tellement humide aujourd'hui, n'est-ce pas ?",
+            "pt": "Está tão húmido hoje, não está?",
+            "kr": "오늘 너무 습하지 않아요?",
+            "zh": "今天真潮湿，是吧？",
+            "jp": "今日はすごく蒸し暑いですね。",
+            "ru": "Сегодня так влажно, правда?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "I know, I can barely breathe out there. Did you check the forecast?",
+            "en": "I know, I can barely breathe out there. Did you check the forecast?",
+            "es": "Lo sé, apenas puedo respirar ahí fuera. ¿Has visto el pronóstico?",
+            "fr": "Je sais, je peux à peine respirer dehors. Tu as vérifié les prévisions ?",
+            "pt": "Pois é, mal consigo respirar lá fora. Viste a previsão do tempo?",
+            "kr": "그러게요, 밖에 나가면 숨 쉬기 힘들 정도예요. 일기 예보 확인해 보셨어요?",
+            "zh": "我知道，在外面都快喘不过气来了。你看天气预报了吗？",
+            "jp": "本当にね。外では息ができないくらいだよ。天気予報は見た？",
+            "ru": "Знаю, я еле дышу на улице. Ты смотрел(а) прогноз погоды?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Yeah, it said there might be a thunderstorm later.",
+            "en": "Yeah, it said there might be a thunderstorm later.",
+            "es": "Sí, decía que podría haber una tormenta más tarde.",
+            "fr": "Ouais, il a dit qu'il pourrait y avoir un orage plus tard.",
+            "pt": "Vi, dizia que pode haver uma trovoada mais tarde.",
+            "kr": "네, 나중에 천둥번개를 동반한 폭풍우가 올 수도 있다고 하던데요.",
+            "zh": "看了，说晚点可能会有雷阵雨。",
+            "jp": "うん、あとで雷雨があるかもしれないって言ってたよ。",
+            "ru": "Да, там сказали, что позже может быть гроза."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Oh, really? Then I should probably leave work early.",
+            "en": "Oh, really? Then I should probably leave work early.",
+            "es": "¿Ah, sí? Entonces debería irme del trabajo temprano.",
+            "fr": "Oh, vraiment ? Alors je devrais probablement quitter le travail plus tôt.",
+            "pt": "A sério? Então devia sair do trabalho mais cedo.",
+            "kr": "아, 정말요? 그럼 아마 일찍 퇴근해야 할 것 같아요.",
+            "zh": "哦，真的吗？那我可能得早点下班。",
+            "jp": "ああ、本当？じゃあ、早めに仕事を上がったほうがいいかも。",
+            "ru": "О, правда? Тогда мне, наверное, стоит уйти с работы пораньше."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "That sounds smart. You don't want to get stuck in the rain.",
+            "en": "That sounds smart. You don't want to get stuck in the rain.",
+            "es": "Eso suena sensato. No querrás quedarte atrapado bajo la lluvia.",
+            "fr": "C'est une bonne idée. Tu ne veux pas te retrouver coincé sous la pluie.",
+            "pt": "Isso parece sensato. Não queres ficar apanhado pela chuva.",
+            "kr": "그게 현명한 선택인 것 같아요. 비에 젖고 싶지는 않잖아요.",
+            "zh": "那挺明智的。你不想被雨淋吧。",
+            "jp": "それがいいと思うよ。雨に降られて困りたくないでしょ。",
+            "ru": "Это разумно. Не хочется же попасть под дождь."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Exactly. I'll head out before it starts pouring.",
+            "en": "Exactly. I'll head out before it starts pouring.",
+            "es": "Exacto. Me iré antes de que empiece a llover a cántaros.",
+            "fr": "Exactement. Je vais y aller avant qu'il ne se mette à pleuvoir des cordes.",
+            "pt": "Exatamente. Vou-me embora antes de começar a chover a potes.",
+            "kr": "맞아요. 비가 쏟아지기 전에 출발할게요.",
+            "zh": "没错，我趁还没下大雨之前就走。",
+            "jp": "そうだね。土砂降りになる前に出発するよ。",
+            "ru": "Именно. Я выйду, пока не начался ливень."
+          }
+        }
+      ]
+    }
+  ]
+}

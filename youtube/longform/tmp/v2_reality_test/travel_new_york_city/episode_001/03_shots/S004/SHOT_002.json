@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S004",
+  "shot_id": "SHOT_002",
+  "sequence": 2,
+  "duration_seconds": 5.0,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun walking to the correct baggage carousel and beginning to wait for her luggage.",
+  "framing": {
+    "shot_size": "medium",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "baggage carousel"
+    ]
+  },
+  "camera": {
+    "angle": "three_quarter",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun walks toward the correct baggage carousel, stops in front of it, and begins watching the carousel with a hopeful but slightly worried expression.",
+    "start_state": [
+      "Jieun is walking toward the correct baggage carousel",
+      "She is carrying her backpack and crossbody bag"
+    ],
+    "end_state": [
+      "Jieun is standing in front of the correct baggage carousel",
+      "She is watching the carousel with a hopeful but slightly worried expression"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "hopeful but slightly worried",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across body",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L003"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun has identified the correct baggage carousel",
+      "She is moving toward the carousel area"
+    ],
+    "carry_out": [
+      "Jieun has found the correct baggage carousel",
+      "She is waiting for her luggage to arrive",
+      "She hopes her bag made it onto the flight"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

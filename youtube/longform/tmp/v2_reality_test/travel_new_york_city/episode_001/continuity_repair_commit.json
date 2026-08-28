@@ -1,0 +1,18 @@
+{
+  "series_id": "travel_new_york_city",
+  "episode_id": "travel_new_york_city_ep001",
+  "episode_number": 1,
+  "repair_type": "carry_out_to_known_information",
+  "carry_out_count": 4,
+  "missing_before_repair": 4,
+  "facts_added": [
+    "Jieun has arrived at her hotel in Manhattan and checked in successfully",
+    "She has completed her first evening walk, feeling more comfortable with the city",
+    "She has used English for immigration, transportation, and hotel check-in",
+    "She is ready to explore more of New York the next day"
+  ],
+  "changed": true,
+  "continuity_revision_after": 3,
+  "known_information_count_after": 14,
+  "backup": "tmp/v2_reality_test/travel_new_york_city/_history_backup/continuity_state.before_ep001_repair_20260827_145004.json"
+}

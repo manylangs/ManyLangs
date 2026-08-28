@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "b1",
+    "id": "022"
+  },
+  "title": {
+    "target": "Attending Classes",
+    "en": "Attending Classes",
+    "es": "Asistir a clases",
+    "fr": "Assister aux cours",
+    "pt": "Assistir às Aulas",
+    "kr": "수업 참석하기",
+    "zh": "上课",
+    "jp": "授業への出席",
+    "ru": "Посещение занятий"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "I'm thinking about skipping the lecture today.",
+            "en": "I'm thinking about skipping the lecture today.",
+            "es": "Estoy pensando en saltarme la clase de hoy.",
+            "fr": "Je pense à sécher le cours aujourd'hui.",
+            "pt": "Estou a pensar faltar à aula de hoje.",
+            "kr": "오늘 강의 빼먹을까 생각 중이야.",
+            "zh": "我今天在想不去上这节课了。",
+            "jp": "今日の講義、サボろうかと思ってるんだ。",
+            "ru": "Я подумываю пропустить сегодня лекцию."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Really? I wouldn't do that if I were you.",
+            "en": "Really? I wouldn't do that if I were you.",
+            "es": "¿En serio? Yo no lo haría si fuera tú.",
+            "fr": "Vraiment ? À ta place, je ne ferais pas ça.",
+            "pt": "A sério? Eu não faria isso se fosse a ti.",
+            "kr": "정말? 내가 너라면 그러지 않을 텐데.",
+            "zh": "真的吗？如果我是你，我不会这么做。",
+            "jp": "本当に？ 僕だったらやめておくけどな。",
+            "ru": "Правда? Я бы на твоём месте этого не делал."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Why not? It's just one class.",
+            "en": "Why not? It's just one class.",
+            "es": "¿Por qué no? Es solo una clase.",
+            "fr": "Pourquoi pas ? Ce n'est qu'un seul cours.",
+            "pt": "Porquê? É só uma aula.",
+            "kr": "왜? 그냥 수업 하나잖아.",
+            "zh": "为什么？就一节课而已。",
+            "jp": "どうして？ たった一コマだよ。",
+            "ru": "Почему нет? Это же всего одно занятие."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "The professor mentioned a pop quiz at the end.",
+            "en": "The professor mentioned a pop quiz at the end.",
+            "es": "El profesor mencionó un examen sorpresa al final.",
+            "fr": "Le professeur a mentionné une interrogation surprise à la fin.",
+            "pt": "O professor mencionou um teste surpresa no fim.",
+            "kr": "교수님이 마지막에 쪽지 시험 낸다고 하셨어.",
+            "zh": "教授提到下课前会有个随堂测验。",
+            "jp": "教授が最後に抜き打ちテストをするって言ってたよ。",
+            "ru": "Профессор упоминал, что в конце будет короткий тест."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Oh, I didn't know that. Thanks for telling me.",
+            "en": "Oh, I didn't know that. Thanks for telling me.",
+            "es": "Ah, no lo sabía. Gracias por decírmelo.",
+            "fr": "Oh, je ne savais pas. Merci de me l'avoir dit.",
+            "pt": "Ah, não sabia disso. Obrigada por me avisares.",
+            "kr": "아, 그건 몰랐네. 알려줘서 고마워.",
+            "zh": "哦，我不知道。谢谢你告诉我。",
+            "jp": "ああ、知らなかった。教えてくれてありがとう。",
+            "ru": "А, я этого не знал. Спасибо, что сказал."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "No problem. Let's grab a seat near the front.",
+            "en": "No problem. Let's grab a seat near the front.",
+            "es": "De nada. Vamos a sentarnos cerca del frente.",
+            "fr": "Pas de problème. Allons nous asseoir près du devant.",
+            "pt": "De nada. Vamos sentar-nos perto da frente.",
+            "kr": "천만에. 앞쪽에 자리 잡자.",
+            "zh": "不客气。我们去前面找个座位吧。",
+            "jp": "どういたしまして。前の方に席を取ろう。",
+            "ru": "Не за что. Давай сядем ближе к началу аудитории."
+          }
+        }
+      ]
+    }
+  ]
+}

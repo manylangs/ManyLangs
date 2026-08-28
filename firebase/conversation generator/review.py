@@ -1,18 +1,51 @@
 #!/usr/bin/env python3
 
+import argparse
 import copy
 import json
 import sys
 from pathlib import Path
 
+from languages import TRANSLATE_LANGS
+
 ############################################################
-# 기본 경로
+# 기본 경로 (언어별 data_{lang} 폴더, 실행 시점에 결정)
+#
+# 예전엔 DATA_DIR이 ".../conversation generator/data" 하나로
+# 고정돼 있었지만, 이제 target 언어별로 data_es/data_fr/... 처럼
+# 폴더가 분리됐으므로, 실행할 때 언어 약어를 입력받아
+# 그 언어의 data_{lang} 폴더를 가리키도록 동적으로 결정한다.
 ############################################################
 
-DATA_DIR = Path(
+PROJECT_ROOT = Path(
     "/Users/junghasuk/Desktop/ManyLangs/web/firebase/"
-    "conversation generator/data"
+    "conversation generator"
 )
+
+
+def resolve_data_dir(lang: str) -> Path:
+    """언어 약어(es, fr, pt, zh, jp, ru, kr, en, de, it 등)를 받아
+    그 언어의 data_{lang} 폴더 경로를 반환한다. 폴더가 실제로
+    존재하지 않으면 에러를 내고 종료한다 (오타로 엉뚱한 폴더를
+    새로 만들며 진행하는 사고 방지)."""
+    data_dir = PROJECT_ROOT / f"data_{lang}"
+    if not data_dir.is_dir():
+        print(f"[오류] 폴더가 없습니다: {data_dir}")
+        print("       언어 약어를 다시 확인하세요 (예: es, fr, pt, zh, jp, ru).")
+        sys.exit(1)
+    return data_dir
+
+
+def prompt_for_lang() -> str:
+    """대화형으로 언어 약어를 입력받는다."""
+    lang = input("검수할 언어 약어를 입력하세요 (예: es): ").strip().lower()
+    if not lang:
+        print("[오류] 언어 약어가 입력되지 않았습니다.")
+        sys.exit(1)
+    return lang
+
+
+DATA_DIR: Path = None  # main()에서 결정된 뒤 채워짐
 
 ############################################################
 # 수정할 항목만 입력
@@ -49,15 +82,7 @@ ALL_REPLACEMENTS = {
 TITLE_REPLACEMENTS = {}
 REPLACEMENTS = {}
 
-ALLOWED_LANGUAGES = {
-    "en",
-    "es",
-    "fr",
-    "pt",
-    "kr",
-    "jp",
-    "zh",
-}
+ALLOWED_LANGUAGES = set(TRANSLATE_LANGS)
 
 
 ############################################################
@@ -68,9 +93,12 @@ def resolve_json_file(argument: str) -> Path:
     """
     다음 입력을 모두 지원한다.
 
-    resolve_json_file("007")
-    resolve_json_file("data/007/conversation_007.runtime.json")
+    resolve_json_file("007")  -> DATA_DIR/007/conversation_007.runtime.json
+    resolve_json_file("data_es/007/conversation_007.runtime.json")
     resolve_json_file("/절대경로/conversation_007.runtime.json")
+
+    DATA_DIR은 main()에서 --lang 인자(또는 대화형 입력)로 받은
+    언어 약어에 따라 실행 시점에 data_{lang}로 결정된다.
     """
 
     candidate = Path(argument).expanduser()
@@ -467,10 +495,24 @@ def process_one(batch_id: str, replacement: dict) -> bool:
 ############################################################
 
 def main() -> None:
+    global DATA_DIR
+
     if not ALL_REPLACEMENTS:
         print("No replacements configured.")
         print("ALL_REPLACEMENTS가 비어 있습니다.")
         return
+
+    ########################################################
+    # 언어 약어 결정: --lang 인자 우선, 없으면 대화형으로 입력받음
+    ########################################################
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--lang", help="검수할 언어 약어 (예: es). 생략하면 대화형으로 물어봄")
+    args = parser.parse_args()
+
+    lang = args.lang.strip().lower() if args.lang else prompt_for_lang()
+    DATA_DIR = resolve_data_dir(lang)
+    print(f"[대상 폴더] {DATA_DIR}")
+    print()
 
     success_ids: list[str] = []
     failed_ids: list[str] = []

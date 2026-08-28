@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a1",
+    "id": "003"
+  },
+  "title": {
+    "target": "Национальность и языки",
+    "en": "Nationality and Languages",
+    "es": "Nacionalidad e idiomas",
+    "fr": "Nationalité et langues",
+    "pt": "Nacionalidade e idiomas",
+    "kr": "국적과 언어",
+    "jp": "国籍と言語",
+    "zh": "国籍和语言",
+    "ru": "Национальность и языки"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Привет! Ты откуда?",
+            "en": "Hi! Where are you from?",
+            "es": "¡Hola! ¿De dónde eres?",
+            "fr": "Salut ! Tu es d'où ?",
+            "pt": "Oi! De onde você é?",
+            "kr": "안녕! 너 어디에서 왔어?",
+            "jp": "こんにちは！あなたはどこ出身ですか？",
+            "zh": "你好！你是哪里人？",
+            "ru": "Привет! Ты откуда?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я из Кореи. А ты?",
+            "en": "I'm from Korea. And you?",
+            "es": "Soy de Corea. ¿Y tú?",
+            "fr": "Je suis de Corée. Et toi ?",
+            "pt": "Eu sou da Coreia. E você?",
+            "kr": "나는 한국에서 왔어. 너는?",
+            "jp": "私は韓国出身です。あなたは？",
+            "zh": "我是韩国人。你呢？",
+            "ru": "Я из Кореи. А ты?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я из России, из Москвы.",
+            "en": "I'm from Russia, from Moscow.",
+            "es": "Soy de Rusia, de Moscú.",
+            "fr": "Je suis de Russie, de Moscou.",
+            "pt": "Eu sou da Rússia, de Moscou.",
+            "kr": "나는 러시아, 모스크바에서 왔어.",
+            "jp": "私はロシアのモスクワ出身です。",
+            "zh": "我是俄罗斯人，来自莫斯科。",
+            "ru": "Я из России, из Москвы."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Здорово! А какой твой родной язык?",
+            "en": "Cool! And what's your native language?",
+            "es": "¡Qué bien! ¿Y cuál es tu lengua materna?",
+            "fr": "Super ! Et quelle est ta langue maternelle ?",
+            "pt": "Que legal! E qual é a sua língua materna?",
+            "kr": "좋다! 그런데 너의 모국어는 뭐야?",
+            "jp": "すごいですね！あなたの母語は何ですか？",
+            "zh": "太好了！那你的母语是什么？",
+            "ru": "Здорово! А какой твой родной язык?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мой родной язык — русский.",
+            "en": "My native language is Russian.",
+            "es": "Mi lengua materna es el ruso.",
+            "fr": "Ma langue maternelle, c'est le russe.",
+            "pt": "Minha língua materna é o russo.",
+            "kr": "내 모국어는 러시아어야.",
+            "jp": "私の母語はロシア語です。",
+            "zh": "我的母语是俄语。",
+            "ru": "Мой родной язык — русский."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понятно. А я говорю по-корейски.",
+            "en": "I see. And I speak Korean.",
+            "es": "Entendido. Y yo hablo coreano.",
+            "fr": "D'accord. Et moi, je parle coréen.",
+            "pt": "Entendi. E eu falo coreano.",
+            "kr": "그렇구나. 나는 한국어를 말해.",
+            "jp": "なるほど。私は韓国語を話します。",
+            "zh": "明白了。我说韩语。",
+            "ru": "Понятно. А я говорю по-корейски."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты говоришь по-английски?",
+            "en": "Ivan, do you speak English?",
+            "es": "Iván, ¿hablas inglés?",
+            "fr": "Ivan, tu parles anglais ?",
+            "pt": "Ivan, você fala inglês?",
+            "kr": "이반, 너 영어 할 줄 알아?",
+            "jp": "イワンさん、英語を話せますか？",
+            "zh": "伊万，你会说英语吗？",
+            "ru": "Иван, ты говоришь по-английски?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, немного говорю. А ты?",
+            "en": "Yes, I speak a little. And you?",
+            "es": "Sí, hablo un poco. ¿Y tú?",
+            "fr": "Oui, un peu. Et toi ?",
+            "pt": "Sim, falo um pouco. E você?",
+            "kr": "응, 조금 할 수 있어. 너는?",
+            "jp": "はい、少し話せます。あなたは？",
+            "zh": "会，我会说一点儿。你呢？",
+            "ru": "Да, немного говорю. А ты?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я тоже учу английский.",
+            "en": "I'm also learning English.",
+            "es": "Yo también estoy aprendiendo inglés.",
+            "fr": "J'apprends aussi l'anglais.",
+            "pt": "Eu também estou aprendendo inglês.",
+            "kr": "나도 영어를 배우고 있어.",
+            "jp": "私も英語を勉強しています。",
+            "zh": "我也在学英语。",
+            "ru": "Я тоже учу английский."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично! А какой язык ты хочешь выучить?",
+            "en": "Great! And what language do you want to learn?",
+            "es": "¡Excelente! ¿Y qué idioma quieres aprender?",
+            "fr": "Parfait ! Et quelle langue tu veux apprendre ?",
+            "pt": "Ótimo! E qual idioma você quer aprender?",
+            "kr": "좋아! 그런데 너는 어떤 언어를 배우고 싶어?",
+            "jp": "すばらしい！あなたはどの言語を学びたいですか？",
+            "zh": "太好了！那你想学什么语言？",
+            "ru": "Отлично! А какой язык ты хочешь выучить?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я хочу выучить испанский.",
+            "en": "I want to learn Spanish.",
+            "es": "Quiero aprender español.",
+            "fr": "Je veux apprendre l'espagnol.",
+            "pt": "Eu quero aprender espanhol.",
+            "kr": "나는 스페인어를 배우고 싶어.",
+            "jp": "スペイン語を学びたいです。",
+            "zh": "我想学西班牙语。",
+            "ru": "Я хочу выучить испанский."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Испанский — красивый язык!",
+            "en": "Spanish is a beautiful language!",
+            "es": "¡El español es un idioma bonito!",
+            "fr": "L'espagnol, c'est une belle langue !",
+            "pt": "Espanhol é uma língua bonita!",
+            "kr": "스페인어는 아름다운 언어야!",
+            "jp": "スペイン語はきれいな言語ですね！",
+            "zh": "西班牙语是一门很美的语言！",
+            "ru": "Испанский — красивый язык!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, откуда твоя семья?",
+            "en": "Maria, where is your family from?",
+            "es": "María, ¿de dónde es tu familia?",
+            "fr": "Maria, d'où vient ta famille ?",
+            "pt": "Maria, de onde é a sua família?",
+            "kr": "마리야, 너의 가족은 어디에서 왔어?",
+            "jp": "マリアさん、あなたの家族はどこ出身ですか？",
+            "zh": "玛丽亚，你的家人是哪里人？",
+            "ru": "Мария, откуда твоя семья?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Моя семья из Украины.",
+            "en": "My family is from Ukraine.",
+            "es": "Mi familia es de Ucrania.",
+            "fr": "Ma famille vient d'Ukraine.",
+            "pt": "Minha família é da Ucrânia.",
+            "kr": "우리 가족은 우크라이나에서 왔어.",
+            "jp": "私の家族はウクライナ出身です。",
+            "zh": "我的家人是乌克兰人。",
+            "ru": "Моя семья из Украины."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? А ты говоришь по-украински?",
+            "en": "Really? And do you speak Ukrainian?",
+            "es": "¿En serio? ¿Y hablas ucraniano?",
+            "fr": "Vraiment ? Et tu parles ukrainien ?",
+            "pt": "Sério? E você fala ucraniano?",
+            "kr": "정말? 그럼 너는 우크라이나어를 할 줄 알아?",
+            "jp": "本当ですか？ウクライナ語を話せますか？",
+            "zh": "真的吗？那你会说乌克兰语吗？",
+            "ru": "Правда? А ты говоришь по-украински?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я говорю и по-украински, и по-русски.",
+            "en": "Yes, I speak both Ukrainian and Russian.",
+            "es": "Sí, hablo ucraniano y ruso.",
+            "fr": "Oui, je parle ukrainien et russe.",
+            "pt": "Sim, eu falo ucraniano e russo.",
+            "kr": "응, 나는 우크라이나어도 하고 러시아어도 해.",
+            "jp": "はい、ウクライナ語もロシア語も話せます。",
+            "zh": "会，我乌克兰语和俄语都会说。",
+            "ru": "Да, я говорю и по-украински, и по-русски."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это здорово! А я знаю только корейский.",
+            "en": "That's great! And I only know Korean.",
+            "es": "¡Qué bien! Y yo solo sé coreano.",
+            "fr": "C'est super ! Et moi, je ne connais que le coréen.",
+            "pt": "Que ótimo! E eu só sei coreano.",
+            "kr": "정말 좋다! 나는 한국어만 알아.",
+            "jp": "それはすごいですね！私は韓国語しかできません。",
+            "zh": "那太好了！我只会韩语。",
+            "ru": "Это здорово! А я знаю только корейский."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ничего, ты быстро выучишь русский!",
+            "en": "That's okay, you'll learn Russian quickly!",
+            "es": "No pasa nada, ¡aprenderás ruso rápido!",
+            "fr": "Ce n'est pas grave, tu vas vite apprendre le russe !",
+            "pt": "Sem problema, você vai aprender russo rápido!",
+            "kr": "괜찮아, 너는 러시아어를 빨리 배울 거야!",
+            "jp": "大丈夫ですよ、あなたはすぐにロシア語を覚えられますよ！",
+            "zh": "没关系，你很快就能学会俄语的！",
+            "ru": "Ничего, ты быстро выучишь русский!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты знаешь, кто это?",
+            "en": "Dmitry, do you know who that is?",
+            "es": "Dmitri, ¿sabes quién es ese?",
+            "fr": "Dmitri, tu sais qui c'est ?",
+            "pt": "Dmitri, você sabe quem é esse?",
+            "kr": "드미트리, 저 사람이 누군지 알아?",
+            "jp": "ドミートリーさん、あの人が誰か知っていますか？",
+            "zh": "德米特里，你知道那是谁吗？",
+            "ru": "Дмитрий, ты знаешь, кто это?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это наш новый студент. Он из Китая.",
+            "en": "That's our new student. He's from China.",
+            "es": "Es nuestro nuevo estudiante. Él es de China.",
+            "fr": "C'est notre nouvel étudiant. Il vient de Chine.",
+            "pt": "É o nosso novo estudante. Ele é da China.",
+            "kr": "저 사람은 우리 새 학생이야. 중국에서 왔어.",
+            "jp": "あの人は新しい学生です。中国出身です。",
+            "zh": "那是我们的新同学。他是中国人。",
+            "ru": "Это наш новый студент. Он из Китая."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А он говорит по-русски?",
+            "en": "And does he speak Russian?",
+            "es": "¿Y habla ruso?",
+            "fr": "Et il parle russe ?",
+            "pt": "E ele fala russo?",
+            "kr": "그런데 그는 러시아어를 할 줄 알아?",
+            "jp": "彼はロシア語を話せますか？",
+            "zh": "那他会说俄语吗？",
+            "ru": "А он говорит по-русски?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ещё нет, но он учит русский язык.",
+            "en": "Not yet, but he's learning Russian.",
+            "es": "Todavía no, pero está aprendiendo ruso.",
+            "fr": "Pas encore, mais il apprend le russe.",
+            "pt": "Ainda não, mas ele está aprendendo russo.",
+            "kr": "아직은 아니지만, 러시아어를 배우고 있어.",
+            "jp": "まだ話せませんが、ロシア語を勉強しています。",
+            "zh": "还不会，但他正在学俄语。",
+            "ru": "Ещё нет, но он учит русский язык."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А мы можем говорить с ним по-английски?",
+            "en": "And can we speak to him in English?",
+            "es": "¿Y podemos hablar con él en inglés?",
+            "fr": "Et on peut lui parler en anglais ?",
+            "pt": "E a gente pode falar com ele em inglês?",
+            "kr": "그럼 우리는 그와 영어로 말할 수 있어?",
+            "jp": "じゃあ、彼と英語で話せますか？",
+            "zh": "那我们可以跟他说英语吗？",
+            "ru": "А мы можем говорить с ним по-английски?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, он хорошо говорит по-английски.",
+            "en": "Yes, he speaks English well.",
+            "es": "Sí, él habla bien inglés.",
+            "fr": "Oui, il parle bien anglais.",
+            "pt": "Sim, ele fala bem inglês.",
+            "kr": "응, 그는 영어를 잘해.",
+            "jp": "はい、彼は英語が上手です。",
+            "zh": "可以，他英语说得很好。",
+            "ru": "Да, он хорошо говорит по-английски."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, какой язык ты учишь в университете?",
+            "en": "Olga, what language are you studying at the university?",
+            "es": "Olga, ¿qué idioma estudias en la universidad?",
+            "fr": "Olga, quelle langue tu apprends à l'université ?",
+            "pt": "Olga, qual idioma você estuda na universidade?",
+            "kr": "올가, 너는 대학교에서 어떤 언어를 배워?",
+            "jp": "オリガさん、大学でどの言語を勉強していますか？",
+            "zh": "奥尔加，你在大学里学什么语言？",
+            "ru": "Ольга, какой язык ты учишь в университете?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я учу французский и немецкий.",
+            "en": "I'm studying French and German.",
+            "es": "Estudio francés y alemán.",
+            "fr": "J'apprends le français et l'allemand.",
+            "pt": "Eu estudo francês e alemão.",
+            "kr": "나는 프랑스어와 독일어를 배워.",
+            "jp": "フランス語とドイツ語を勉強しています。",
+            "zh": "我学法语和德语。",
+            "ru": "Я учу французский и немецкий."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Вау! Это трудно?",
+            "en": "Wow! Is that hard?",
+            "es": "¡Vaya! ¿Es difícil?",
+            "fr": "Waouh ! C'est difficile ?",
+            "pt": "Nossa! É difícil?",
+            "kr": "와! 그거 어려워?",
+            "jp": "わあ！それは難しいですか？",
+            "zh": "哇！那难吗？",
+            "ru": "Вау! Это трудно?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Немного трудно, но очень интересно.",
+            "en": "A little hard, but very interesting.",
+            "es": "Es un poco difícil, pero muy interesante.",
+            "fr": "Un peu difficile, mais très intéressant.",
+            "pt": "É um pouco difícil, mas muito interessante.",
+            "kr": "조금 어렵지만, 아주 재미있어.",
+            "jp": "少し難しいですが、とても面白いです。",
+            "zh": "有点儿难，但是很有意思。",
+            "ru": "Немного трудно, но очень интересно."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А я хочу учить русский язык.",
+            "en": "And I want to learn Russian.",
+            "es": "Y yo quiero estudiar ruso.",
+            "fr": "Et moi, je veux apprendre le russe.",
+            "pt": "E eu quero aprender russo.",
+            "kr": "나는 러시아어를 배우고 싶어.",
+            "jp": "私はロシア語を学びたいです。",
+            "zh": "我想学俄语。",
+            "ru": "А я хочу учить русский язык."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Русский сложный, но я помогу тебе!",
+            "en": "Russian is difficult, but I'll help you!",
+            "es": "El ruso es complicado, ¡pero yo te ayudaré!",
+            "fr": "Le russe est difficile, mais je vais t'aider !",
+            "pt": "Russo é complicado, mas eu te ajudo!",
+            "kr": "러시아어는 어렵지만, 내가 도와줄게!",
+            "jp": "ロシア語は難しいですが、私が手伝いますよ！",
+            "zh": "俄语很难，但我会帮你的！",
+            "ru": "Русский сложный, но я помогу тебе!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты был в других странах?",
+            "en": "Sergey, have you been to other countries?",
+            "es": "Serguéi, ¿has estado en otros países?",
+            "fr": "Sergueï, tu es allé dans d'autres pays ?",
+            "pt": "Sergei, você já foi para outros países?",
+            "kr": "세르게이, 너 다른 나라에 가 본 적 있어?",
+            "jp": "セルゲイさん、他の国に行ったことがありますか？",
+            "zh": "谢尔盖，你去过其他国家吗？",
+            "ru": "Сергей, ты был в других странах?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я был в Японии и во Франции.",
+            "en": "Yes, I've been to Japan and France.",
+            "es": "Sí, he estado en Japón y en Francia.",
+            "fr": "Oui, je suis allé au Japon et en France.",
+            "pt": "Sim, eu fui ao Japão e à França.",
+            "kr": "응, 나는 일본과 프랑스에 가 봤어.",
+            "jp": "はい、日本とフランスに行ったことがあります。",
+            "zh": "去过，我去过日本和法国。",
+            "ru": "Да, я был в Японии и во Франции."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здорово! А на каком языке ты говорил?",
+            "en": "Cool! And what language did you speak?",
+            "es": "¡Qué bien! ¿Y en qué idioma hablaste?",
+            "fr": "Super ! Et dans quelle langue tu parlais ?",
+            "pt": "Que legal! E em que idioma você falou?",
+            "kr": "좋다! 그런데 너는 어떤 언어로 말했어?",
+            "jp": "すごいですね！何語を話しましたか？",
+            "zh": "太好了！那你说的什么语言？",
+            "ru": "Здорово! А на каком языке ты говорил?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "В Японии я говорил по-английски.",
+            "en": "In Japan, I spoke English.",
+            "es": "En Japón hablé en inglés.",
+            "fr": "Au Japon, je parlais anglais.",
+            "pt": "No Japão, eu falei inglês.",
+            "kr": "일본에서는 영어로 말했어.",
+            "jp": "日本では英語を話しました。",
+            "zh": "在日本我说英语。",
+            "ru": "В Японии я говорил по-английски."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А во Франции?",
+            "en": "And in France?",
+            "es": "¿Y en Francia?",
+            "fr": "Et en France ?",
+            "pt": "E na França?",
+            "kr": "프랑스에서는?",
+            "jp": "フランスでは？",
+            "zh": "那在法国呢？",
+            "ru": "А во Франции?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Там я говорил немного по-французски.",
+            "en": "There, I spoke a little French.",
+            "es": "Allí hablé un poco de francés.",
+            "fr": "Là-bas, je parlais un peu français.",
+            "pt": "Lá eu falei um pouco de francês.",
+            "kr": "거기에서는 프랑스어를 조금 했어.",
+            "jp": "そこでは少しフランス語を話しました。",
+            "zh": "在那里我说了一点儿法语。",
+            "ru": "Там я говорил немного по-французски."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, твоя подруга говорит по-русски?",
+            "en": "Anna, does your friend speak Russian?",
+            "es": "Ana, ¿tu amiga habla ruso?",
+            "fr": "Anna, ton amie parle russe ?",
+            "pt": "Anna, a sua amiga fala russo?",
+            "kr": "안나, 너의 친구는 러시아어를 할 줄 알아?",
+            "jp": "アンナさん、あなたの友達はロシア語を話せますか？",
+            "zh": "安娜，你的朋友会说俄语吗？",
+            "ru": "Анна, твоя подруга говорит по-русски?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, она говорит по-русски хорошо.",
+            "en": "Yes, she speaks Russian well.",
+            "es": "Sí, ella habla ruso bien.",
+            "fr": "Oui, elle parle bien russe.",
+            "pt": "Sim, ela fala russo bem.",
+            "kr": "응, 그녀는 러시아어를 잘해.",
+            "jp": "はい、彼女はロシア語が上手です。",
+            "zh": "会，她俄语说得很好。",
+            "ru": "Да, она говорит по-русски хорошо."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А откуда она?",
+            "en": "And where is she from?",
+            "es": "¿Y de dónde es ella?",
+            "fr": "Et elle est d'où ?",
+            "pt": "E de onde ela é?",
+            "kr": "그런데 그녀는 어디에서 왔어?",
+            "jp": "彼女はどこ出身ですか？",
+            "zh": "那她是哪里人？",
+            "ru": "А откуда она?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Она из Казахстана.",
+            "en": "She's from Kazakhstan.",
+            "es": "Ella es de Kazajistán.",
+            "fr": "Elle vient du Kazakhstan.",
+            "pt": "Ela é do Cazaquistão.",
+            "kr": "그녀는 카자흐스탄에서 왔어.",
+            "jp": "彼女はカザフスタン出身です。",
+            "zh": "她是哈萨克斯坦人。",
+            "ru": "Она из Казахстана."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно. А она говорит по-казахски?",
+            "en": "I see. And does she speak Kazakh?",
+            "es": "Entendido. ¿Y ella habla kazajo?",
+            "fr": "D'accord. Et elle parle kazakh ?",
+            "pt": "Entendi. E ela fala cazaque?",
+            "kr": "그렇구나. 그럼 그녀는 카자흐어도 할 줄 알아?",
+            "jp": "なるほど。彼女はカザフ語も話せますか？",
+            "zh": "明白了。那她会说哈萨克语吗？",
+            "ru": "Понятно. А она говорит по-казахски?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, она говорит на двух языках.",
+            "en": "Yes, she speaks two languages.",
+            "es": "Sí, ella habla dos idiomas.",
+            "fr": "Oui, elle parle deux langues.",
+            "pt": "Sim, ela fala duas línguas.",
+            "kr": "응, 그녀는 두 가지 언어를 해.",
+            "jp": "はい、彼女は二つの言語を話せます。",
+            "zh": "会，她会说两种语言。",
+            "ru": "Да, она говорит на двух языках."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, какой твой родной язык?",
+            "en": "Alexey, what's your native language?",
+            "es": "Alekséi, ¿cuál es tu lengua materna?",
+            "fr": "Alexeï, quelle est ta langue maternelle ?",
+            "pt": "Alexei, qual é a sua língua materna?",
+            "kr": "알렉세이, 너의 모국어는 뭐야?",
+            "jp": "アレクセイさん、あなたの母語は何ですか？",
+            "zh": "阿列克谢，你的母语是什么？",
+            "ru": "Алексей, какой твой родной язык?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мой родной язык — русский.",
+            "en": "My native language is Russian.",
+            "es": "Mi lengua materna es el ruso.",
+            "fr": "Ma langue maternelle, c'est le russe.",
+            "pt": "Minha língua materna é o russo.",
+            "kr": "내 모국어는 러시아어야.",
+            "jp": "私の母語はロシア語です。",
+            "zh": "我的母语是俄语。",
+            "ru": "Мой родной язык — русский."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А ты говоришь на других языках?",
+            "en": "And do you speak other languages?",
+            "es": "¿Y hablas otros idiomas?",
+            "fr": "Et tu parles d'autres langues ?",
+            "pt": "E você fala outros idiomas?",
+            "kr": "그럼 너는 다른 언어도 할 줄 알아?",
+            "jp": "他の言語も話せますか？",
+            "zh": "那你还会说其他语言吗？",
+            "ru": "А ты говоришь на других языках?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я говорю по-английски и по-немецки.",
+            "en": "Yes, I speak English and German.",
+            "es": "Sí, hablo inglés y alemán.",
+            "fr": "Oui, je parle anglais et allemand.",
+            "pt": "Sim, eu falo inglês e alemão.",
+            "kr": "응, 나는 영어와 독일어를 해.",
+            "jp": "はい、英語とドイツ語を話せます。",
+            "zh": "会，我会说英语和德语。",
+            "ru": "Да, я говорю по-английски и по-немецки."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это впечатляет! А я говорю только по-корейски.",
+            "en": "That's impressive! And I only speak Korean.",
+            "es": "¡Es impresionante! Y yo solo hablo coreano.",
+            "fr": "C'est impressionnant ! Et moi, je ne parle que coréen.",
+            "pt": "Isso é impressionante! E eu só falo coreano.",
+            "kr": "정말 대단하다! 나는 한국어만 해.",
+            "jp": "それはすごいですね！私は韓国語しか話せません。",
+            "zh": "真厉害！我只会说韩语。",
+            "ru": "Это впечатляет! А я говорю только по-корейски."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ты молодец, что учишь русский!",
+            "en": "It's great that you're learning Russian!",
+            "es": "¡Qué bien que estés aprendiendo ruso!",
+            "fr": "C'est bien que tu apprennes le russe !",
+            "pt": "Que bom que você está aprendendo russo!",
+            "kr": "너는 러시아어를 배우고 있어서 정말 잘하고 있어!",
+            "jp": "ロシア語を勉強しているあなたはえらいですね！",
+            "zh": "你在学俄语，已经很棒了！",
+            "ru": "Ты молодец, что учишь русский!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, ты понимаешь, что он говорит?",
+            "en": "Elena, do you understand what he's saying?",
+            "es": "Elena, ¿entiendes lo que él dice?",
+            "fr": "Elena, tu comprends ce qu'il dit ?",
+            "pt": "Elena, você entende o que ele está dizendo?",
+            "kr": "옐레나, 너는 그가 말하는 것을 알아들어?",
+            "jp": "エレーナさん、彼が何を言っているか分かりますか？",
+            "zh": "叶莲娜，你听得懂他在说什么吗？",
+            "ru": "Елена, ты понимаешь, что он говорит?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, я не понимаю по-итальянски.",
+            "en": "No, I don't understand Italian.",
+            "es": "No, no entiendo italiano.",
+            "fr": "Non, je ne comprends pas l'italien.",
+            "pt": "Não, eu não entendo italiano.",
+            "kr": "아니, 나는 이탈리아어를 못 알아들어.",
+            "jp": "いいえ、私はイタリア語が分かりません。",
+            "zh": "听不懂，我不会意大利语。",
+            "ru": "Нет, я не понимаю по-итальянски."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А я немного понимаю.",
+            "en": "And I understand a little.",
+            "es": "Yo entiendo un poco.",
+            "fr": "Moi, j'en comprends un peu.",
+            "pt": "E eu entendo um pouco.",
+            "kr": "나는 조금 알아들어.",
+            "jp": "私は少し分かります。",
+            "zh": "我能听懂一点儿。",
+            "ru": "А я немного понимаю."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Правда? А где ты учил итальянский?",
+            "en": "Really? And where did you learn Italian?",
+            "es": "¿En serio? ¿Y dónde aprendiste italiano?",
+            "fr": "Vraiment ? Et où tu as appris l'italien ?",
+            "pt": "Sério? E onde você aprendeu italiano?",
+            "kr": "정말? 그런데 너는 어디에서 이탈리아어를 배웠어?",
+            "jp": "本当ですか？どこでイタリア語を学んだのですか？",
+            "zh": "真的吗？你在哪里学的意大利语？",
+            "ru": "Правда? А где ты учил итальянский?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я учил его в школе.",
+            "en": "I learned it at school.",
+            "es": "Lo aprendí en la escuela.",
+            "fr": "Je l'ai appris à l'école.",
+            "pt": "Eu aprendi na escola.",
+            "kr": "나는 학교에서 배웠어.",
+            "jp": "学校で学びました。",
+            "zh": "我是在学校学的。",
+            "ru": "Я учил его в школе."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Как интересно! А я хочу выучить итальянский.",
+            "en": "How interesting! And I want to learn Italian.",
+            "es": "¡Qué interesante! Y yo quiero aprender italiano.",
+            "fr": "Comme c'est intéressant ! Et moi, je veux apprendre l'italien.",
+            "pt": "Que interessante! E eu quero aprender italiano.",
+            "kr": "정말 재미있다! 나는 이탈리아어를 배우고 싶어.",
+            "jp": "面白いですね！私もイタリア語を学びたいです。",
+            "zh": "真有意思！我也想学意大利语。",
+            "ru": "Как интересно! А я хочу выучить итальянский."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты знаешь, откуда наш преподаватель?",
+            "en": "Ivan, do you know where our teacher is from?",
+            "es": "Iván, ¿sabes de dónde es nuestro profesor?",
+            "fr": "Ivan, tu sais d'où vient notre professeur ?",
+            "pt": "Ivan, você sabe de onde é o nosso professor?",
+            "kr": "이반, 너는 우리 선생님이 어디에서 오셨는지 알아?",
+            "jp": "イワンさん、私たちの先生がどこ出身か知っていますか？",
+            "zh": "伊万，你知道我们的老师是哪里人吗？",
+            "ru": "Иван, ты знаешь, откуда наш преподаватель?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Думаю, он из Беларуси.",
+            "en": "I think he's from Belarus.",
+            "es": "Creo que es de Bielorrusia.",
+            "fr": "Je pense qu'il vient de Biélorussie.",
+            "pt": "Acho que ele é da Bielorrússia.",
+            "kr": "내 생각에는 벨라루스에서 오신 것 같아.",
+            "jp": "ベラルーシ出身だと思います。",
+            "zh": "我觉得他是白俄罗斯人。",
+            "ru": "Думаю, он из Беларуси."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А он говорит по-белорусски?",
+            "en": "And does he speak Belarusian?",
+            "es": "¿Y habla bielorruso?",
+            "fr": "Et il parle biélorusse ?",
+            "pt": "E ele fala bielorrusso?",
+            "kr": "그럼 그는 벨라루스어를 할 줄 알아?",
+            "jp": "彼はベラルーシ語を話せますか？",
+            "zh": "那他会说白俄罗斯语吗？",
+            "ru": "А он говорит по-белорусски?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, он говорит и по-белорусски, и по-русски.",
+            "en": "Yes, he speaks both Belarusian and Russian.",
+            "es": "Sí, habla bielorruso y ruso.",
+            "fr": "Oui, il parle biélorusse et russe.",
+            "pt": "Sim, ele fala bielorrusso e russo.",
+            "kr": "응, 그는 벨라루스어도 하고 러시아어도 해.",
+            "jp": "はい、彼はベラルーシ語もロシア語も話せます。",
+            "zh": "会，他白俄罗斯语和俄语都会说。",
+            "ru": "Да, он говорит и по-белорусски, и по-русски."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А по-английски он говорит?",
+            "en": "And does he speak English?",
+            "es": "¿Y habla inglés?",
+            "fr": "Et il parle anglais ?",
+            "pt": "E ele fala inglês?",
+            "kr": "그런데 영어도 할 줄 알아?",
+            "jp": "彼は英語も話せますか？",
+            "zh": "那他会说英语吗？",
+            "ru": "А по-английски он говорит?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, он знает три языка!",
+            "en": "Yes, he knows three languages!",
+            "es": "Sí, ¡sabe tres idiomas!",
+            "fr": "Oui, il connaît trois langues !",
+            "pt": "Sim, ele sabe três idiomas!",
+            "kr": "응, 그는 세 가지 언어를 알아!",
+            "jp": "はい、彼は三つの言語ができます！",
+            "zh": "会，他会说三种语言！",
+            "ru": "Да, он знает три языка!"
+          }
+        }
+      ]
+    }
+  ]
+}

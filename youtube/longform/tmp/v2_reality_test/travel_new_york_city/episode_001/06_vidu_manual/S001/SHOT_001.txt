@@ -1,0 +1,26 @@
+ORDER: 001/065
+SCENE: S001
+SHOT: SHOT_001
+DURATION: 6.0 seconds
+ASPECT RATIO: 16:9
+RESOLUTION: 1080p
+
+REFERENCE IMAGE:
+- _references/jieun_primary.png
+
+PROMPT:
+A young Korean woman with an oval face, soft features, natural eyebrows, dark brown eyes, light natural makeup, and a warm friendly expression, shoulder-length dark brown hair tucked behind ears, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch, carrying a medium-sized travel backpack on her back and a small crossbody bag across her body, is seated on an airplane at JFK International Airport. She looks out the airplane window at the airport terminal with an excited expression, smiling. The airplane cabin is filled with bright natural daylight, and the terminal is visible outside with high ceilings, digital displays, and signage. Other passengers are preparing to disembark, and cabin crew are near the exit. Medium close shot, eye-level angle, static camera with locked stability. She remains seated, looking out the window, with her backpack and crossbody bag on her.
+
+NEGATIVE / DO-NOT-CHANGE NOTES:
+- Do not change character identity.
+- Do not change canonical location identity.
+- Do not introduce new characters.
+- Do not introduce new locations.
+- Do not alter canonical prop state.
+- Do not change story events.
+- Do not show Jieun moving past the arrival terminal area.
+- Do not show any dialogue or interaction with other characters.
+- Do not show Jieun recovering a missing bag (no missing bag exists yet).
+
+OUTPUT FILE:
+S001_SHOT_001.mp4

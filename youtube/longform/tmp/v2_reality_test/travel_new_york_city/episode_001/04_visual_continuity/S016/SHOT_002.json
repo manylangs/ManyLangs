@@ -1,0 +1,206 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S016",
+  "shot_id": "SHOT_002",
+  "character_states": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Medium-sized travel backpack",
+        "Small crossbody bag",
+        "Smartphone",
+        "Passport",
+        "Checked suitcase"
+      ],
+      "body_state": [
+        "Standing at the front desk",
+        "Facing the front desk employee",
+        "Backpack worn on back",
+        "Crossbody bag worn across body",
+        "Checked suitcase stopped beside her",
+        "Watching the front desk employee"
+      ],
+      "emotion": "polite and attentive"
+    },
+    {
+      "character_ref": "B",
+      "identity_lock": true,
+      "appearance": [
+        "A local woman in her 30s or 40s",
+        "Friendly and professional expression",
+        "Neat and tidy appearance appropriate for a hotel front desk employee"
+      ],
+      "hair": [
+        "Neatly styled hair appropriate for a hotel front desk employee"
+      ],
+      "clothing": [
+        "Hotel uniform or smart business attire",
+        "Name tag"
+      ],
+      "carried_items": [],
+      "body_state": [
+        "Standing behind the front desk",
+        "Facing Jieun",
+        "Looking at the computer screen",
+        "Checking the reservation system"
+      ],
+      "emotion": "welcoming and helpful"
+    }
+  ],
+  "location_state": {
+    "location_ref": "LOC_MANHATTAN_HOTEL_001",
+    "identity_lock": true,
+    "persistent_features": [
+      "Hotel lobby with front desk",
+      "Elevator area",
+      "Guest room with bed, desk, and window",
+      "City view from the room window",
+      "Hotel signage and entrance"
+    ],
+    "current_zone": "Hotel lobby, at the front desk",
+    "orientation_state": [
+      "Jieun standing at the front desk",
+      "Jieun facing the front desk employee",
+      "Front desk employee standing behind the front desk, facing Jieun",
+      "Front desk employee looking at the computer screen",
+      "Checked suitcase stopped beside Jieun",
+      "Elevator area visible behind or to the side of the front desk"
+    ]
+  },
+  "prop_states": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn on back",
+      "position": "on Jieun's back",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn across body, closed",
+      "position": "across Jieun's body",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "stored in crossbody bag",
+      "position": "inside Jieun's crossbody bag",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "stored in crossbody bag",
+      "position": "inside Jieun's crossbody bag",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "stopped beside Jieun",
+      "position": "beside Jieun at the front desk",
+      "visible": true,
+      "continuity_lock": true
+    }
+  ],
+  "environment_state": {
+    "time_of_day": "day",
+    "weather": null,
+    "lighting": "bright natural daylight coming through the hotel lobby windows, mixed with warm indoor lighting",
+    "crowd_state": "a few guests walking through the lobby, soft background music typical of a hotel lobby, occasional sounds of the elevator and distant conversation"
+  },
+  "story_visual_state": {
+    "resolved_visual_facts": [
+      "Jieun has arrived at the Manhattan Hotel",
+      "Jieun has entered the hotel lobby from the entrance",
+      "Jieun has approached the front desk",
+      "Jieun is now standing at the front desk facing the employee",
+      "The front desk employee is standing behind the front desk, looking at Jieun",
+      "The front desk employee is now checking the reservation system"
+    ],
+    "unresolved_visual_facts": [
+      "Jieun has not yet provided her reservation details",
+      "Jieun has not yet received her room key",
+      "Jieun has not yet checked in"
+    ],
+    "must_remain_visible": [
+      "Jieun's travel backpack on her back",
+      "Jieun's crossbody bag across her body",
+      "Jieun's checked suitcase stopped beside her",
+      "Jieun standing at the front desk facing the employee"
+    ],
+    "must_not_appear": [
+      "Jieun moving past the hotel lobby",
+      "Jieun leaving the hotel",
+      "Jieun's suitcase being lost or missing",
+      "Jieun's passport or smartphone being dropped or lost",
+      "A new travel problem being introduced",
+      "Jieun receiving her room key before the check-in process is complete"
+    ]
+  },
+  "continuity_links": {
+    "previous_scene_id": "S016",
+    "previous_shot_id": "SHOT_001",
+    "next_scene_id": "S016",
+    "next_shot_id": "SHOT_003",
+    "carry_in": [
+      "Jieun is standing at the front desk facing the employee",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase",
+      "Her checked suitcase is stopped beside her",
+      "The front desk employee is looking at her"
+    ],
+    "carry_out": [
+      "The front desk employee has confirmed the reservation",
+      "Jieun is still standing at the front desk",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase",
+      "Her checked suitcase is stopped beside her"
+    ]
+  },
+  "locks": {
+    "character_identity": true,
+    "clothing": true,
+    "location_identity": true,
+    "prop_state": true,
+    "timeline": true,
+    "weather": true,
+    "story_state": true
+  }
+}

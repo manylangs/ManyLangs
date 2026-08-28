@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "c2",
+    "id": "059"
+  },
+  "title": {
+    "target": "Карьера и рост",
+    "en": "Career and Growth",
+    "es": "Carrera y crecimiento",
+    "fr": "Carrière et évolution",
+    "pt": "Carreira e crescimento",
+    "kr": "경력과 성장",
+    "jp": "キャリアと成長",
+    "zh": "职业发展与成长",
+    "ru": "Карьера и рост"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, я заметила, что ты в последнее время берёшь на себя много дополнительных задач. Тебе это интересно?",
+            "en": "Ivan, I've noticed that you've been taking on a lot of extra tasks lately. Are you interested in them?",
+            "es": "Iván, he notado que últimamente estás asumiendo muchas tareas adicionales. ¿Te resulta interesante?",
+            "fr": "Ivan, j'ai remarqué que tu prends beaucoup de tâches supplémentaires ces derniers temps. Ça t'intéresse ?",
+            "pt": "Ivan, eu notei que ultimamente você tem assumido muitas tarefas extras. Isso te interessa?",
+            "kr": "이반, 요즘 네가 추가 업무를 많이 맡고 있는 걸 알아차렸어. 그게 재미있어?",
+            "jp": "イワンさん、最近あなたがたくさん追加のタスクを引き受けているのに気づきました。興味があるんですか？",
+            "zh": "伊万，我注意到你最近承担了很多额外的任务。你对这些感兴趣吗？",
+            "ru": "Иван, я заметила, что ты в последнее время берёшь на себя много дополнительных задач. Тебе это интересно?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Анна, мне хочется развиваться в сторону управления проектами, поэтому я стараюсь набираться опыта.",
+            "en": "Yes, Anna, I want to grow in the direction of project management, so I'm trying to gain experience.",
+            "es": "Sí, Ana, quiero desarrollarme hacia la gestión de proyectos, por eso intento ganar experiencia.",
+            "fr": "Oui, Anna, j'ai envie d'évoluer vers la gestion de projet, alors j'essaie d'acquérir de l'expérience.",
+            "pt": "Sim, Anna, eu quero me desenvolver na área de gestão de projetos, por isso estou tentando ganhar experiência.",
+            "kr": "네, 안나, 저는 프로젝트 관리 쪽으로 성장하고 싶어서 경험을 쌓으려고 노력하고 있어요.",
+            "jp": "はい、アンナさん、私はプロジェクト管理の方向に成長したいと思っているので、経験を積もうと頑張っています。",
+            "zh": "是的，安娜，我想向项目管理方向发展，所以我在努力积累经验。",
+            "ru": "Да, Анна, мне хочется развиваться в сторону управления проектами, поэтому я стараюсь набираться опыта."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это очень дальновидно. А ты уже обсуждал свои карьерные амбиции с руководителем?",
+            "en": "That's very forward-thinking. Have you already discussed your career ambitions with your manager?",
+            "es": "Es muy previsor. ¿Ya has hablado de tus ambiciones profesionales con tu responsable?",
+            "fr": "C'est très visionnaire. Et tu as déjà parlé de tes ambitions professionnelles avec ton responsable ?",
+            "pt": "Isso é muito visionário. E você já conversou sobre suas ambições de carreira com o seu gestor?",
+            "kr": "아주 선견지명이 있네. 상사한테는 네 경력 목표에 대해 이미 이야기해 봤어?",
+            "jp": "それはとても先見の明がありますね。もう上司と自分のキャリアの野心について話しましたか？",
+            "zh": "这很有远见。那你和领导讨论过你的职业抱负吗？",
+            "ru": "Это очень дальновидно. А ты уже обсуждал свои карьерные амбиции с руководителем?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пока нет, я хотел сначала подготовить конкретный план действий и показать результаты своей работы.",
+            "en": "Not yet, I wanted to first prepare a concrete action plan and show the results of my work.",
+            "es": "Todavía no, primero quería preparar un plan de acción concreto y mostrar los resultados de mi trabajo.",
+            "fr": "Pas encore, je voulais d'abord préparer un plan d'action concret et montrer les résultats de mon travail.",
+            "pt": "Ainda não, eu quis primeiro preparar um plano de ação concreto e mostrar os resultados do meu trabalho.",
+            "kr": "아직요, 먼저 구체적인 실행 계획을 준비하고 제 업무 성과를 보여드리고 싶었어요.",
+            "jp": "まだです。まず具体的な行動計画を準備して、自分の仕事の成果を見せたいと思っていました。",
+            "zh": "还没有，我想先准备好具体的行动计划，并展示我的工作成果。",
+            "ru": "Пока нет, я хотел сначала подготовить конкретный план действий и показать результаты своей работы."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правильный подход. Если хочешь, я могу дать тебе пару советов, как лучше структурировать этот разговор.",
+            "en": "That's the right approach. If you want, I can give you a couple of tips on how to better structure that conversation.",
+            "es": "Es el enfoque correcto. Si quieres, puedo darte un par de consejos sobre cómo estructurar mejor esa conversación.",
+            "fr": "Bonne approche. Si tu veux, je peux te donner quelques conseils pour mieux structurer cette conversation.",
+            "pt": "Abordagem correta. Se você quiser, eu posso te dar alguns conselhos sobre como estruturar melhor essa conversa.",
+            "kr": "올바른 접근 방식이야. 원하면 그 대화를 어떻게 구성하는 게 좋을지 조언을 몇 개 해줄 수 있어.",
+            "jp": "正しいアプローチですね。よかったら、その話をどう組み立てるか、いくつかアドバイスをあげられますよ。",
+            "zh": "方法很对。如果你愿意的话，我可以给你一些建议，告诉你如何更好地组织这次谈话。",
+            "ru": "Правильный подход. Если хочешь, я могу дать тебе пару советов, как лучше структурировать этот разговор."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Буду очень признателен. Твой опыт в переговорах с руководством для меня бесценен.",
+            "en": "I would really appreciate that. Your experience in negotiations with management is invaluable to me.",
+            "es": "Te lo agradecería mucho. Tu experiencia en negociaciones con la dirección es invaluable para mí.",
+            "fr": "Je t'en serais très reconnaissant. Ton expérience dans les négociations avec la direction est précieuse pour moi.",
+            "pt": "Eu ficaria muito grato. A sua experiência em negociações com a diretoria é inestimável para mim.",
+            "kr": "정말 감사하죠. 지도부와의 협상에 대한 당신의 경험은 저에게 매우 소중해요.",
+            "jp": "とてもありがたいです。あなたの経営陣との交渉経験は、私にとってとても貴重です。",
+            "zh": "那真是太感谢了。你与领导谈判的经验对我来说非常宝贵。",
+            "ru": "Буду очень признателен. Твой опыт в переговорах с руководством для меня бесценен."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, я рассматриваю предложение о переходе в другой отдел, но сомневаюсь, стоит ли.",
+            "en": "Dmitry, I'm considering an offer to move to another department, but I'm hesitating about whether I should.",
+            "es": "Dmitri, estoy considerando una oferta para cambiarme a otro departamento, pero dudo si merece la pena.",
+            "fr": "Dmitri, j'envisage une proposition de mutation dans un autre département, mais je doute de savoir si ça vaut le coup.",
+            "pt": "Dmitri, eu estou considerando uma proposta de mudança para outro departamento, mas estou em dúvida se vale a pena.",
+            "kr": "드미트리, 다른 부서로 옮기는 제안을 고려하고 있는데, 해야 할지 고민이야.",
+            "jp": "ドミトリーさん、別の部署に異動する提案を検討しているんですが、迷っています。",
+            "zh": "德米特里，我在考虑调到另一个部门，但不确定是否值得。",
+            "ru": "Дмитрий, я рассматриваю предложение о переходе в другой отдел, но сомневаюсь, стоит ли."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "А что именно тебя останавливает? Ведь это отличная возможность для роста.",
+            "en": "What exactly is holding you back? After all, it's a great opportunity for growth.",
+            "es": "¿Y qué es exactamente lo que te frena? Después de todo, es una gran oportunidad para crecer.",
+            "fr": "Qu'est-ce qui te retient exactement ? C'est pourtant une excellente opportunité de croissance.",
+            "pt": "E o que exatamente está te impedindo? Afinal, é uma ótima oportunidade de crescimento.",
+            "kr": "정확히 뭐가 널 망설이게 하는데? 성장할 수 있는 좋은 기회잖아.",
+            "jp": "何があなたをためらわせているんですか？ 成長の絶好のチャンスじゃないですか。",
+            "zh": "是什么让你犹豫呢？这可是一个很好的成长机会啊。",
+            "ru": "А что именно тебя останавливает? Ведь это отличная возможность для роста."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Меня пугает неизвестность. Я боюсь, что не справлюсь с новыми обязанностями.",
+            "en": "The unknown scares me. I'm afraid I won't be able to handle the new responsibilities.",
+            "es": "Me asusta la incertidumbre. Temo no poder con las nuevas responsabilidades.",
+            "fr": "L'inconnu me fait peur. J'ai peur de ne pas être à la hauteur de mes nouvelles responsabilités.",
+            "pt": "O desconhecido me assusta. Eu tenho medo de não dar conta das novas responsabilidades.",
+            "kr": "불확실함이 무서워. 새로운 업무를 감당하지 못할까 봐 걱정돼.",
+            "jp": "未知のことが怖いんです。新しい責任を果たせないのではないかと心配です。",
+            "zh": "未知让我感到害怕。我担心自己应付不了新的职责。",
+            "ru": "Меня пугает неизвестность. Я боюсь, что не справлюсь с новыми обязанностями."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ольга, ты себя недооцениваешь. Твои аналитические способности пригодятся где угодно.",
+            "en": "Olga, you're underestimating yourself. Your analytical skills will be useful anywhere.",
+            "es": "Olga, te estás subestimando. Tus habilidades analíticas te servirán en cualquier lugar.",
+            "fr": "Olga, tu te sous-estimes. Tes capacités analytiques seront utiles partout.",
+            "pt": "Olga, você está se subestimando. As suas habilidades analíticas seriam úteis em qualquer lugar.",
+            "kr": "올가, 넌 자신을 과소평가하고 있어. 네 분석 능력은 어디서든 유용하게 쓰일 거야.",
+            "jp": "オリガさん、あなたは自分を過小評価していますよ。あなたの分析能力はどこでも役立ちます。",
+            "zh": "奥尔加，你低估自己了。你的分析能力到哪里都用得上。",
+            "ru": "Ольга, ты себя недооцениваешь. Твои аналитические способности пригодятся где угодно."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спасибо за поддержку. Наверное, мне просто нужно было услышать это со стороны.",
+            "en": "Thanks for the support. I guess I just needed to hear that from someone else.",
+            "es": "Gracias por tu apoyo. Supongo que solo necesitaba escucharlo de otra persona.",
+            "fr": "Merci pour ton soutien. J'avais sans doute juste besoin d'entendre ça de l'extérieur.",
+            "pt": "Obrigada pelo apoio. Talvez eu só precisasse ouvir isso de outra pessoa.",
+            "kr": "지지해 줘서 고마워. 아마도 그냥 누군가에게서 이 말을 들어야 했나 봐.",
+            "jp": "応援ありがとうございます。たぶん、誰かにそう言ってもらう必要があったんだと思います。",
+            "zh": "谢谢你的支持。也许我只是需要从别人那里听到这些话。",
+            "ru": "Спасибо за поддержку. Наверное, мне просто нужно было услышать это со стороны."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Решение, конечно, за тобой, но я верю, что у тебя всё получится.",
+            "en": "The decision is, of course, up to you, but I believe you'll succeed.",
+            "es": "La decisión, por supuesto, es tuya, pero creo que todo te va a salir bien.",
+            "fr": "La décision t'appartient, bien sûr, mais je crois que tu vas y arriver.",
+            "pt": "A decisão, é claro, é sua, mas eu acredito que você vai conseguir.",
+            "kr": "결정은 물론 네 몫이지만, 난 네가 잘 해낼 거라고 믿어.",
+            "jp": "決めるのはもちろんあなたですが、きっとうまくいくと信じています。",
+            "zh": "决定当然由你来做，但我相信你一定能做好。",
+            "ru": "Решение, конечно, за тобой, но я верю, что у тебя всё получится."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, я записалась на курсы повышения квалификации по управлению данными. Как думаешь, это поможет?",
+            "en": "Sergey, I signed up for professional development courses in data management. What do you think, will it help?",
+            "es": "Serguéi, me he apuntado a unos cursos de formación en gestión de datos. ¿Crees que ayudará?",
+            "fr": "Sergueï, je me suis inscrite à des cours de perfectionnement en gestion des données. Tu penses que ça aidera ?",
+            "pt": "Sergei, eu me inscrevi num curso de aperfeiçoamento em gestão de dados. O que você acha, vai ajudar?",
+            "kr": "세르게이, 데이터 관리 관련 직무 교육 과정에 등록했어. 도움이 될 것 같아?",
+            "jp": "セルゲイさん、データ管理のスキルアップ講座に申し込みました。役に立つと思いますか？",
+            "zh": "谢尔盖，我报名参加了数据管理的高级培训课程。你觉得这会有帮助吗？",
+            "ru": "Сергей, я записалась на курсы повышения квалификации по управлению данными. Как думаешь, это поможет?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мария, это превосходная идея. Сейчас без этих навыков никуда, особенно на нашей позиции.",
+            "en": "Maria, that's an excellent idea. Nowadays you can't get anywhere without these skills, especially in our position.",
+            "es": "María, es una idea excelente. Ahora sin estas habilidades no se va a ninguna parte, especialmente en nuestro puesto.",
+            "fr": "Maria, c'est une excellente idée. De nos jours, on ne peut pas s'en passer, surtout à notre poste.",
+            "pt": "Maria, é uma ideia excelente. Hoje em dia, sem essas habilidades, a gente não vai a lugar nenhum, especialmente na nossa posição.",
+            "kr": "마리야, 정말 훌륭한 생각이야. 요즘 이런 기술 없이는 어디서도 안 돼, 특히 우리 직책에서는 더욱 그렇지.",
+            "jp": "マリアさん、それは素晴らしい考えです。今はこのスキルがないとどうにもなりませんからね、特に私たちのポジションでは。",
+            "zh": "玛丽亚，这个主意非常好。现在没有这些技能可不行，尤其是在我们的岗位上。",
+            "ru": "Мария, это превосходная идея. Сейчас без этих навыков никуда, особенно на нашей позиции."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я тоже так думаю. Правда, придётся пожертвовать частью свободного времени.",
+            "en": "I think so too. Though, I'll have to sacrifice some of my free time.",
+            "es": "Eso mismo pienso yo. Eso sí, tendré que sacrificar parte de mi tiempo libre.",
+            "fr": "Je pense aussi. Par contre, il faudra sacrifier une partie de mon temps libre.",
+            "pt": "Eu também acho. É verdade que vou ter que abrir mão de parte do meu tempo livre.",
+            "kr": "나도 그렇게 생각해. 다만, 여가 시간 일부를 포기해야 하긴 해.",
+            "jp": "私もそう思います。ただ、自由な時間の一部を犠牲にしないといけませんが。",
+            "zh": "我也这么想。不过，我得牺牲一部分空闲时间。",
+            "ru": "Я тоже так думаю. Правда, придётся пожертвовать частью свободного времени."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Инвестиции в себя всегда окупаются. Тем более, компания готова компенсировать часть расходов.",
+            "en": "Investments in yourself always pay off. Besides, the company is ready to cover part of the expenses.",
+            "es": "Invertir en uno mismo siempre da sus frutos. Además, la empresa está dispuesta a cubrir parte de los gastos.",
+            "fr": "Investir en soi est toujours rentable. D'autant plus que l'entreprise est prête à rembourser une partie des frais.",
+            "pt": "Investir em si mesmo sempre compensa. Ainda mais que a empresa está disposta a reembolsar parte dos custos.",
+            "kr": "자신에 대한 투자는 항상 보답을 받아. 게다가 회사가 비용 일부를 보전해 주기로 했잖아.",
+            "jp": "自分への投資は必ず報われますよ。それに、会社が費用の一部を負担してくれるそうですし。",
+            "zh": "对自己的投资总是会有回报的。况且，公司愿意报销一部分费用。",
+            "ru": "Инвестиции в себя всегда окупаются. Тем более, компания готова компенсировать часть расходов."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, я уже уточнила этот вопрос в отделе кадров. Это очень мотивирует.",
+            "en": "Yes, I already checked on that with HR. It's very motivating.",
+            "es": "Sí, ya lo he consultado con el departamento de recursos humanos. Es muy motivador.",
+            "fr": "Oui, j'ai déjà vérifié auprès des ressources humaines. C'est très motivant.",
+            "pt": "Sim, eu já verifiquei essa questão com o departamento de recursos humanos. Isso motiva muito.",
+            "kr": "응, 인사 부서에 이미 확인했어. 정말 동기부여가 돼.",
+            "jp": "ええ、人事部に確認済みです。とてもやる気が出ます。",
+            "zh": "是的，我已经在人事部确认过这个问题了。这很让人有动力。",
+            "ru": "Да, я уже уточнила этот вопрос в отделе кадров. Это очень мотивирует."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда дерзай. Уверен, через год ты будешь на шаг впереди многих коллег.",
+            "en": "Then go for it. I'm sure in a year you'll be a step ahead of many colleagues.",
+            "es": "Entonces, adelante. Estoy seguro de que dentro de un año estarás un paso por delante de muchos compañeros.",
+            "fr": "Alors fonce. Je suis sûr que dans un an, tu auras une longueur d'avance sur beaucoup de collègues.",
+            "pt": "Então vai em frente. Tenho certeza de que daqui a um ano você estará um passo à frente de muitos colegas.",
+            "kr": "그럼 도전해 봐. 1년 후에는 많은 동료들보다 한 발 앞서 있을 거라고 확신해.",
+            "jp": "それなら頑張ってください。一年後には多くの同僚より一歩先にいると思いますよ。",
+            "zh": "那就放手去做吧。我相信一年后你会比很多同事领先一步。",
+            "ru": "Тогда дерзай. Уверен, через год ты будешь на шаг впереди многих коллег."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, я получила приглашение на конференцию в Москве. Думаю, это хороший шанс завести полезные знакомства.",
+            "en": "Ivan, I got an invitation to a conference in Moscow. I think it's a good chance to make useful connections.",
+            "es": "Iván, he recibido una invitación para una conferencia en Moscú. Creo que es una buena oportunidad para hacer contactos útiles.",
+            "fr": "Ivan, j'ai reçu une invitation pour une conférence à Moscou. Je pense que c'est une bonne occasion de nouer des contacts utiles.",
+            "pt": "Ivan, eu recebi um convite para uma conferência em Moscou. Acho que é uma boa chance de fazer contatos úteis.",
+            "kr": "이반, 모스크바에서 열리는 컨퍼런스에 초대받았어. 유용한 인맥을 만들 좋은 기회라고 생각해.",
+            "jp": "イワンさん、モスクワでの会議に招待されました。有益な人脈を作る良い機会だと思うんです。",
+            "zh": "伊万，我收到了去莫斯科参加会议的邀请。我觉得这是一个结识有用人脉的好机会。",
+            "ru": "Иван, я получила приглашение на конференцию в Москве. Думаю, это хороший шанс завести полезные знакомства."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен, такие мероприятия отлично расширяют кругозор и помогают узнать о новых трендах.",
+            "en": "I agree, such events really broaden your horizons and help you learn about new trends.",
+            "es": "De acuerdo, este tipo de eventos amplían mucho la perspectiva y ayudan a conocer las nuevas tendencias.",
+            "fr": "Je suis d'accord, ce genre d'événements élargit vraiment les horizons et permet de découvrir les nouvelles tendances.",
+            "pt": "Concordo, esses eventos ampliam muito os horizontes e ajudam a conhecer as novas tendências.",
+            "kr": "동의해, 그런 행사는 시야를 넓히고 새로운 트렌드를 알게 해 주는 데 아주 좋아.",
+            "jp": "そうですね、そういったイベントは視野を広げてくれますし、新しいトレンドを知るのにも役立ちますからね。",
+            "zh": "同意，这类活动能很好地开阔眼界，帮助你了解新的趋势。",
+            "ru": "Согласен, такие мероприятия отлично расширяют кругозор и помогают узнать о новых трендах."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Но я немного волнуюсь, ведь там будут ведущие специалисты нашей отрасли.",
+            "en": "But I'm a little nervous, since the leading specialists in our industry will be there.",
+            "es": "Pero estoy un poco nerviosa, ya que allí estarán los principales especialistas de nuestro sector.",
+            "fr": "Mais je suis un peu nerveuse, car les plus grands spécialistes de notre secteur seront présents.",
+            "pt": "Mas estou um pouco nervosa, porque lá vão estar os principais especialistas da nossa área.",
+            "kr": "하지만 좀 긴장돼. 우리 업계의 주요 전문가들이 거기 있을 테니까.",
+            "jp": "でも少し緊張しています。業界の第一線の専門家たちが来ますから。",
+            "zh": "但我有点紧张，因为到时候我们行业的顶尖专家都会在场。",
+            "ru": "Но я немного волнуюсь, ведь там будут ведущие специалисты нашей отрасли."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не переживай, ты умеешь производить впечатление. Главное — заранее подготовь вопросы для дискуссий.",
+            "en": "Don't worry, you know how to make an impression. The main thing is to prepare questions for the discussions in advance.",
+            "es": "No te preocupes, tú sabes causar buena impresión. Lo principal es preparar las preguntas para los debates con antelación.",
+            "fr": "Ne t'inquiète pas, tu sais faire bonne impression. L'important, c'est de préparer tes questions pour les discussions à l'avance.",
+            "pt": "Não se preocupe, você sabe causar uma boa impressão. O importante é preparar as perguntas para os debates com antecedência.",
+            "kr": "걱정하지 마, 넌 좋은 인상을 주는 법을 알고 있잖아. 중요한 건 토론할 질문들을 미리 준비하는 거야.",
+            "jp": "心配しないでください。あなたは印象づけるのが上手ですよ。大切なのは、ディスカッション用の質問を事前に準備しておくことです。",
+            "zh": "别担心，你擅长给人留下好印象。关键是要提前准备好讨论的问题。",
+            "ru": "Не переживай, ты умеешь производить впечатление. Главное — заранее подготовь вопросы для дискуссий."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты прав. Я уже составила список тем, которые хочу обсудить с коллегами.",
+            "en": "You're right. I've already made a list of topics I want to discuss with colleagues.",
+            "es": "Tienes razón. Ya he hecho una lista de temas que quiero tratar con los compañeros.",
+            "fr": "Tu as raison. J'ai déjà fait une liste de sujets que je veux aborder avec mes collègues.",
+            "pt": "Você tem razão. Eu já montei uma lista de temas que quero discutir com os colegas.",
+            "kr": "맞아. 동료들과 논의하고 싶은 주제 목록을 이미 만들었어.",
+            "jp": "その通りですね。同僚と話したいトピックのリストはもう作りました。",
+            "zh": "你说得对。我已经列了一个想和同行们讨论的话题清单。",
+            "ru": "Ты прав. Я уже составила список тем, которые хочу обсудить с коллегами."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вот видишь, ты уже готова. Поезжай и покажи себя с лучшей стороны.",
+            "en": "See, you're already ready. Go and show yourself in the best light.",
+            "es": "¿Ves? Ya estás lista. Ve y muéstrate en tu mejor faceta.",
+            "fr": "Tu vois, tu es déjà prête. Vas-y et montre-toi sous ton meilleur jour.",
+            "pt": "Viu só, você já está pronta. Vá e se mostre pelo seu melhor lado.",
+            "kr": "그럼 됐잖아. 넌 이미 준비된 거야. 가서 최선의 모습을 보여줘.",
+            "jp": "ほら、もう準備はできていますよ。行って、ベストな自分を見せてきてください。",
+            "zh": "你看，你已经准备好了。去吧，展现出你最好的一面。",
+            "ru": "Вот видишь, ты уже готова. Поезжай и покажи себя с лучшей стороны."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, я думаю, что пришло время попросить у руководства повышение. Я работаю на этой должности уже три года.",
+            "en": "Elena, I think it's time to ask management for a promotion. I've been working in this position for three years already.",
+            "es": "Elena, creo que ha llegado el momento de pedir un ascenso a la dirección. Llevo ya tres años en este puesto.",
+            "fr": "Elena, je pense qu'il est temps de demander une promotion à la direction. Je travaille à ce poste depuis déjà trois ans.",
+            "pt": "Elena, eu acho que chegou a hora de pedir uma promoção à diretoria. Já estou há três anos neste cargo.",
+            "kr": "옐레나, 지도부에 승진을 요청할 때가 된 것 같아. 이 직책에서 이미 3년째 일하고 있어.",
+            "jp": "エレナさん、そろそろ上司に昇進を願い出る時だと思うんです。この役職についてもう三年になりますから。",
+            "zh": "叶莲娜，我觉得是时候向领导要求升职了。我在这个职位上已经工作三年了。",
+            "ru": "Елена, я думаю, что пришло время попросить у руководства повышение. Я работаю на этой должности уже три года."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Алексей, а ты уверен, что твои достижения достаточно заметны? Может, стоит подготовить отчёт о проделанной работе.",
+            "en": "Alexey, are you sure your achievements are visible enough? Maybe you should prepare a report on the work you've done.",
+            "es": "Alekséi, ¿estás seguro de que tus logros son lo bastante visibles? Quizás deberías preparar un informe sobre el trabajo realizado.",
+            "fr": "Alexeï, es-tu sûr que tes réalisations sont assez visibles ? Tu devrais peut-être préparer un rapport sur le travail accompli.",
+            "pt": "Alexei, você tem certeza de que as suas conquistas são visíveis o suficiente? Talvez valha a pena preparar um relatório sobre o trabalho realizado.",
+            "kr": "알렉세이, 네 성과가 충분히 눈에 띈다고 확신해? 지금까지 한 일에 대한 보고서를 준비하는 게 좋을지도 몰라.",
+            "jp": "アレクセイさん、あなたの成果が十分に目立っていると思いますか？ これまでの仕事の報告書を準備したほうがいいかもしれませんね。",
+            "zh": "阿列克谢，你确定你的成就有足够高的可见度吗？也许应该准备一份工作总结报告。",
+            "ru": "Алексей, а ты уверен, что твои достижения достаточно заметны? Может, стоит подготовить отчёт о проделанной работе."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я как раз над ним работаю. Я собрал все ключевые показатели и результаты проектов.",
+            "en": "I'm actually working on it right now. I've gathered all the key metrics and project results.",
+            "es": "Estoy justamente trabajando en ello. He recopilado todos los indicadores clave y los resultados de los proyectos.",
+            "fr": "Je travaille justement dessus. J'ai rassemblé tous les indicateurs clés et les résultats des projets.",
+            "pt": "É exatamente nisso que estou trabalhando. Eu reuni todos os indicadores-chave e os resultados dos projetos.",
+            "kr": "지금 막 그걸 작성 중이야. 모든 핵심 지표와 프로젝트 결과물을 모았어.",
+            "jp": "ちょうどそれを作っているところです。主要な指標とプロジェクトの結果を全部まとめました。",
+            "zh": "我正好在做这个。我收集了所有关键指标和项目成果。",
+            "ru": "Я как раз над ним работаю. Я собрал все ключевые показатели и результаты проектов."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это правильно. Ещё советую продумать аргументы, почему именно ты достоин этой должности.",
+            "en": "That's right. I also advise you to think through arguments for why you specifically deserve this position.",
+            "es": "Eso está bien. Además, te recomiendo que pienses en argumentos sobre por qué mereces precisamente tú este puesto.",
+            "fr": "C'est bien. Je te conseille aussi de préparer des arguments pour expliquer pourquoi tu mérites ce poste.",
+            "pt": "Isso é correto. Também sugiro pensar bem nos argumentos de por que você merece esse cargo.",
+            "kr": "잘했어. 그리고 왜 네가 그 자리에 적합한지에 대한 논거도 생각해 두는 게 좋겠어.",
+            "jp": "それはいいですね。あと、なぜあなたがこの役職にふさわしいのか、論拠を考えるのもおすすめです。",
+            "zh": "这样做很对。我还建议你想想为什么偏偏是你配得上这个职位的理由。",
+            "ru": "Это правильно. Ещё советую продумать аргументы, почему именно ты достоин этой должности."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я думаю, мой опыт управления командой и успешные проекты говорят сами за себя.",
+            "en": "I think my experience managing a team and my successful projects speak for themselves.",
+            "es": "Creo que mi experiencia dirigiendo equipos y mis proyectos exitosos hablan por sí solos.",
+            "fr": "Je pense que mon expérience en gestion d'équipe et mes projets réussis parlent d'eux-mêmes.",
+            "pt": "Eu acho que a minha experiência em liderança de equipe e os projetos de sucesso falam por si mesmos.",
+            "kr": "팀 관리 경험과 성공적인 프로젝트들이 스스로 말해 준다고 생각해.",
+            "jp": "私のチーム管理の経験と成功したプロジェクトが物語っていると思います。",
+            "zh": "我觉得我的团队管理经验和成功的项目本身就说明了一切。",
+            "ru": "Я думаю, мой опыт управления командой и успешные проекты говорят сами за себя."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда действуй. Уверена, у тебя всё получится, ты это заслужил.",
+            "en": "Then go for it. I'm sure you'll succeed, you deserve it.",
+            "es": "Entonces, actúa. Estoy segura de que todo te saldrá bien, te lo has ganado.",
+            "fr": "Alors fonce. Je suis sûre que tu vas y arriver, tu le mérites.",
+            "pt": "Então vá em frente. Tenho certeza de que você vai conseguir, você merece.",
+            "kr": "그럼 행동해. 분명 잘 될 거야, 넌 그 자격이 있어.",
+            "jp": "それなら行動してください。きっとうまくいきますよ、あなたはそれに値しますから。",
+            "zh": "那就行动吧。我相信你一定能成功，这是你应得的。",
+            "ru": "Тогда действуй. Уверена, у тебя всё получится, ты это заслужил."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, я заметил, что ты стал больше интересоваться финансовой стороной наших проектов. Планируешь сменить направление?",
+            "en": "Dmitry, I've noticed that you've become more interested in the financial side of our projects. Are you planning to change your focus?",
+            "es": "Dmitri, he notado que te interesa cada vez más el aspecto financiero de nuestros proyectos. ¿Planeas cambiar de rumbo?",
+            "fr": "Dmitri, j'ai remarqué que tu t'intéresses davantage à l'aspect financier de nos projets. Tu prévois de changer de direction ?",
+            "pt": "Dmitri, eu notei que você começou a se interessar mais pelo lado financeiro dos nossos projetos. Está planejando mudar de área?",
+            "kr": "드미트리, 요즘 네가 우리 프로젝트의 재무적인 측면에 더 관심을 갖게 된 것 같던데. 방향을 바꿀 계획이야?",
+            "jp": "ドミトリーさん、最近プロジェクトの財務面にもっと興味を持つようになりましたね。方向性を変える予定ですか？",
+            "zh": "德米特里，我注意到你开始对我们项目的财务方面更感兴趣了。你打算换方向吗？",
+            "ru": "Дмитрий, я заметил, что ты стал больше интересоваться финансовой стороной наших проектов. Планируешь сменить направление?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Сергей, я подумываю о том, чтобы перейти в финансовый департамент. Мне это всегда было близко.",
+            "en": "Yes, Sergey, I'm thinking about moving to the finance department. It's always been close to me.",
+            "es": "Sí, Serguéi, estoy pensando en pasarme al departamento financiero. Siempre me ha atraído ese campo.",
+            "fr": "Oui, Sergueï, je songe à passer au département financier. Ça m'a toujours attiré.",
+            "pt": "Sim, Sergei, estou pensando em migrar para o departamento financeiro. Isso sempre esteve próximo de mim.",
+            "kr": "응, 세르게이, 재무 부서로 옮기는 걸 고려하고 있어. 항상 그쪽에 관심이 많았거든.",
+            "jp": "はい、セルゲイさん、財務部門に移ろうかと考えています。昔から興味があったんです。",
+            "zh": "是的，谢尔盖，我在考虑转到财务部门。我一直对这方面比较亲近。",
+            "ru": "Да, Сергей, я подумываю о том, чтобы перейти в финансовый департамент. Мне это всегда было близко."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это серьёзное решение. Ты уже поговорил с кем-то из того отдела?",
+            "en": "That's a serious decision. Have you already talked to someone from that department?",
+            "es": "Es una decisión seria. ¿Ya has hablado con alguien de ese departamento?",
+            "fr": "C'est une décision importante. Tu as déjà parlé à quelqu'un de ce département ?",
+            "pt": "É uma decisão séria. Você já conversou com alguém desse departamento?",
+            "kr": "그건 진지한 결정이야. 그 부서 사람 중에 이미 이야기해 본 사람 있어?",
+            "jp": "それは重大な決断ですね。もうあちらの部署の誰かと話しましたか？",
+            "zh": "这可是个重大的决定。你和那个部门的什么人谈过了吗？",
+            "ru": "Это серьёзное решение. Ты уже поговорил с кем-то из того отдела?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пока нет, но я записался на внутреннюю стажировку, чтобы поближе познакомиться с их работой.",
+            "en": "Not yet, but I signed up for an internal internship to get a closer look at their work.",
+            "es": "Todavía no, pero me he apuntado a una pasantía interna para conocer mejor su trabajo.",
+            "fr": "Pas encore, mais je me suis inscrit à un stage interne pour mieux découvrir leur travail.",
+            "pt": "Ainda não, mas me inscrevi num estágio interno para conhecer melhor o trabalho deles.",
+            "kr": "아직은 아니지만, 그들의 업무를 더 가까이 알기 위해 사내 인턴십에 지원했어.",
+            "jp": "まだですが、社内インターンシップに申し込みました。彼らの仕事をもっと身近に知るために。",
+            "zh": "还没有，但我报名了内部实习，以便更近距离地了解他们的工作。",
+            "ru": "Пока нет, но я записался на внутреннюю стажировку, чтобы поближе познакомиться с их работой."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Умный ход. Так ты сможешь понять, твоё ли это направление, без лишних рисков.",
+            "en": "Smart move. That way you can figure out if it's the right path for you without unnecessary risks.",
+            "es": "Movimiento inteligente. Así podrás saber si es lo tuyo sin asumir riesgos innecesarios.",
+            "fr": "C'est une démarche intelligente. Comme ça, tu pourras savoir si c'est fait pour toi, sans prendre de risques inutiles.",
+            "pt": "Jogada inteligente. Assim você consegue entender se essa é a sua área, sem riscos desnecessários.",
+            "kr": "현명한 방법이야. 그렇게 하면 불필요한 위험 없이 그 방향이 네 길인지 알 수 있지.",
+            "jp": "賢いやり方ですね。そうすれば、余計なリスクを冒さずに、自分に合っているかどうか分かりますからね。",
+            "zh": "聪明的做法。这样你就能在没有任何额外风险的情况下，弄清楚这是不是适合你的方向。",
+            "ru": "Умный ход. Так ты сможешь понять, твоё ли это направление, без лишних рисков."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Именно. А потом уже буду принимать окончательное решение.",
+            "en": "Exactly. And then I'll make the final decision.",
+            "es": "Exacto. Y después ya tomaré la decisión final.",
+            "fr": "Exactement. Et ensuite, je prendrai ma décision finale.",
+            "pt": "Exatamente. E depois eu tomo a decisão final.",
+            "kr": "바로 그거야. 그리고 나중에 최종 결정을 내릴 거야.",
+            "jp": "まさにその通りです。その後で最終的な決断を下そうと思っています。",
+            "zh": "没错。之后我再做最终决定。",
+            "ru": "Именно. А потом уже буду принимать окончательное решение."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, я получил отказ на свою заявку на участие в программе для молодых руководителей. Я немного расстроен.",
+            "en": "Anna, my application for the young leaders program was rejected. I'm a little upset.",
+            "es": "Ana, me han rechazado la solicitud para el programa de jóvenes directivos. Estoy un poco decepcionado.",
+            "fr": "Anna, ma candidature pour le programme des jeunes managers a été refusée. Je suis un peu déçu.",
+            "pt": "Anna, eu recebi uma recusa na minha candidatura para o programa de jovens líderes. Estou um pouco chateado.",
+            "kr": "안나, 젊은 리더 프로그램 참가 신청이 거절됐어. 좀 실망스러워.",
+            "jp": "アンナさん、若手リーダー向けプログラムへの応募が却下されました。少し落ち込んでいます。",
+            "zh": "安娜，我申请青年管理者项目被拒绝了。我有点沮丧。",
+            "ru": "Анна, я получил отказ на свою заявку на участие в программе для молодых руководителей. Я немного расстроен."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Иван, не стоит отчаиваться. Возможно, это не последняя возможность, и ты сможешь попробовать снова.",
+            "en": "Ivan, don't lose heart. Maybe it's not the last opportunity, and you can try again.",
+            "es": "Iván, no debes desanimarte. Quizás no sea la última oportunidad y puedas intentarlo de nuevo.",
+            "fr": "Ivan, il ne faut pas désespérer. Ce n'est peut-être pas la dernière chance, et tu pourras réessayer.",
+            "pt": "Ivan, não fique desanimado. Talvez não seja a última oportunidade, e você possa tentar de novo.",
+            "kr": "이반, 낙담하지 마. 마지막 기회가 아닐 테니 다시 도전할 수 있을 거야.",
+            "jp": "イワンさん、がっかりしないでください。最後のチャンスではないかもしれませんし、また挑戦できますよ。",
+            "zh": "伊万，别灰心。也许这不是最后的机会，你还可以再试一次。",
+            "ru": "Иван, не стоит отчаиваться. Возможно, это не последняя возможность, и ты сможешь попробовать снова."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я понимаю, но мне казалось, что я идеально подхожу под требования.",
+            "en": "I understand, but I thought I fit the requirements perfectly.",
+            "es": "Lo entiendo, pero me parecía que encajaba perfectamente con los requisitos.",
+            "fr": "Je comprends, mais j'avais l'impression de correspondre parfaitement aux critères.",
+            "pt": "Eu entendo, mas eu achava que me encaixava perfeitamente nos requisitos.",
+            "kr": "이해해, 하지만 요구 사항에 완벽하게 부합한다고 생각했거든.",
+            "jp": "分かっていますが、自分は要件に完璧に合っていると思っていたんです。",
+            "zh": "我明白，但我觉得自己完全符合要求。",
+            "ru": "Я понимаю, но мне казалось, что я идеально подхожу под требования."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "А ты не думал попросить обратную связь у организаторов? Это поможет понять, над чем работать.",
+            "en": "Have you thought about asking the organizers for feedback? It could help you understand what to work on.",
+            "es": "¿Has pensado en pedir feedback a los organizadores? Eso te ayudará a saber en qué trabajar.",
+            "fr": "Tu n'as pas pensé à demander un retour aux organisateurs ? Ça t'aiderait à savoir sur quoi travailler.",
+            "pt": "E você já pensou em pedir um feedback aos organizadores? Isso ajuda a entender no que trabalhar.",
+            "kr": "주최 측에 피드백을 요청해 보는 건 어때? 무엇을 보완해야 할지 이해하는 데 도움이 될 거야.",
+            "jp": "主催者にフィードバックを求めてみてはどうですか？ 何を改善すべきか理解するのに役立ちますよ。",
+            "zh": "你有没有想过向组织者询问反馈意见？这有助于你了解该在哪些方面努力。",
+            "ru": "А ты не думал попросить обратную связь у организаторов? Это поможет понять, над чем работать."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хорошая мысль. Я как раз собирался написать им письмо с этим вопросом.",
+            "en": "Good idea. I was actually planning to write them an email with that question.",
+            "es": "Buena idea. De hecho, estaba pensando en escribirles una carta con esa pregunta.",
+            "fr": "Bonne idée. J'allais justement leur écrire un courrier pour poser la question.",
+            "pt": "Boa ideia. Eu estava mesmo pensando em escrever um e-mail para eles com essa pergunta.",
+            "kr": "좋은 생각이야. 마침 그 질문을 담아 그들에게 이메일을 보내려고 하고 있었어.",
+            "jp": "いい考えですね。ちょうどその質問のメールを書こうと思っていたところです。",
+            "zh": "好主意。我正打算给他们写封信问这个问题。",
+            "ru": "Хорошая мысль. Я как раз собирался написать им письмо с этим вопросом."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вот и отлично. Воспринимай это не как провал, а как ступеньку к будущему успеху.",
+            "en": "That's great. Don't see this as a failure, but as a stepping stone to future success.",
+            "es": "Pues perfecto. No lo veas como un fracaso, sino como un escalón hacia el éxito futuro.",
+            "fr": "Et bien, parfait. Ne vois pas ça comme un échec, mais comme une étape vers ton futur succès.",
+            "pt": "Perfeito então. Encare isso não como um fracasso, mas como um degrau para o sucesso futuro.",
+            "kr": "잘됐네. 그걸 실패로 받아들이지 말고, 미래의 성공으로 가는 디딤돌로 받아들여.",
+            "jp": "それはいいですね。失敗として捉えるのではなく、将来の成功への足がかりとして捉えてください。",
+            "zh": "那就太好了。别把这看作是失败，而是通往未来成功的一个台阶。",
+            "ru": "Вот и отлично. Воспринимай это не как провал, а как ступеньку к будущему успеху."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, я заметил, что ты отлично ладишь с новыми сотрудниками. У тебя есть секрет?",
+            "en": "Olga, I've noticed that you get along great with the new employees. Do you have a secret?",
+            "es": "Olga, he notado que te llevas muy bien con los nuevos empleados. ¿Tienes algún secreto?",
+            "fr": "Olga, j'ai remarqué que tu t'entends très bien avec les nouveaux employés. Tu as un secret ?",
+            "pt": "Olga, eu notei que você se dá muito bem com os novos funcionários. Você tem algum segredo?",
+            "kr": "올가, 너 신입사원들이랑 아주 잘 지내는 것 같던데. 비결이 있어?",
+            "jp": "オリガさん、あなたが新入社員とうまくやっているのに気づきました。何か秘訣があるんですか？",
+            "zh": "奥尔加，我注意到你和新同事相处得非常好。你有什么秘诀吗？",
+            "ru": "Ольга, я заметил, что ты отлично ладишь с новыми сотрудниками. У тебя есть секрет?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Дмитрий, я просто стараюсь быть открытой и всегда готова прийти на помощь. Это создаёт доверие.",
+            "en": "Dmitry, I just try to be open and I'm always ready to help. It builds trust.",
+            "es": "Dmitri, simplemente intento ser abierta y siempre estoy dispuesta a echar una mano. Eso genera confianza.",
+            "fr": "Dmitri, j'essaie simplement d'être ouverte et toujours prête à aider. Ça crée de la confiance.",
+            "pt": "Dmitri, eu simplesmente tento ser aberta e estou sempre pronta para ajudar. Isso cria confiança.",
+            "kr": "드미트리, 그냥 열린 마음으로 대하고 항상 도울 준비가 되어 있으려고 해. 그게 신뢰를 만들어 내거든.",
+            "jp": "ドミトリーさん、ただオープンでいるようにして、いつでも助けられるようにしているだけです。それが信頼を生みますから。",
+            "zh": "德米特里，我只是尽量保持开放，并且随时准备提供帮助。这能建立信任。",
+            "ru": "Дмитрий, я просто стараюсь быть открытой и всегда готова прийти на помощь. Это создаёт доверие."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это замечательное качество. Возможно, тебе стоит задуматься о роли наставника для новичков.",
+            "en": "That's a wonderful quality. Maybe you should think about taking on a mentoring role for newcomers.",
+            "es": "Es una cualidad estupenda. Quizás deberías plantearte el papel de mentora para los recién llegados.",
+            "fr": "C'est une très belle qualité. Tu devrais peut-être envisager un rôle de mentor pour les nouveaux.",
+            "pt": "É uma qualidade admirável. Talvez você devesse considerar o papel de mentora para os novatos.",
+            "kr": "정말 훌륭한 자질이야. 신입사원 멘토 역할을 고려해 보는 게 좋을지도 몰라.",
+            "jp": "それは素晴らしい資質ですね。新人のメンターの役割を考えてみてはどうですか？",
+            "zh": "这是很了不起的品质。也许你应该考虑担任新员工的导师角色。",
+            "ru": "Это замечательное качество. Возможно, тебе стоит задуматься о роли наставника для новичков."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я бы с удовольствием. Мне нравится делиться опытом и видеть, как люди растут.",
+            "en": "I'd love to. I enjoy sharing experience and seeing people grow.",
+            "es": "Me encantaría. Disfruto compartiendo experiencia y viendo cómo la gente crece.",
+            "fr": "J'aimerais beaucoup. J'aime partager mon expérience et voir les gens évoluer.",
+            "pt": "Eu adoraria. Eu gosto de compartilhar experiência e ver as pessoas crescerem.",
+            "kr": "그러고 싶어. 경험을 나누고 사람들이 성장하는 모습을 보는 걸 좋아해.",
+            "jp": "ぜひやりたいです。経験を共有して、人が成長していくのを見るのが好きなんです。",
+            "zh": "我很乐意。我喜欢分享经验，也喜欢看到人们成长。",
+            "ru": "Я бы с удовольствием. Мне нравится делиться опытом и видеть, как люди растут."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда поговори с руководителем, уверен, он поддержит такую инициативу.",
+            "en": "Then talk to your manager, I'm sure he'll support such an initiative.",
+            "es": "Entonces habla con tu responsable, estoy seguro de que apoyará esa iniciativa.",
+            "fr": "Alors parle-en à ton responsable, je suis sûr qu'il soutiendra une telle initiative.",
+            "pt": "Então converse com o seu gestor, tenho certeza de que ele apoiaria essa iniciativa.",
+            "kr": "그럼 상사에게 이야기해 봐. 분명 그런 제안을 지지할 거야.",
+            "jp": "それなら上司に話してみてください。きっとそのような取り組みを支持してくれると思いますよ。",
+            "zh": "那就和领导谈谈吧，我相信他会支持这样的倡议。",
+            "ru": "Тогда поговори с руководителем, уверен, он поддержит такую инициативу."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо за совет. Я обязательно это сделаю на следующей неделе.",
+            "en": "Thanks for the advice. I'll definitely do that next week.",
+            "es": "Gracias por el consejo. Sin duda lo haré la semana que viene.",
+            "fr": "Merci pour le conseil. Je vais le faire la semaine prochaine, c'est certain.",
+            "pt": "Obrigada pelo conselho. Com certeza farei isso na próxima semana.",
+            "kr": "조언 고마워. 다음 주에 꼭 그렇게 할게.",
+            "jp": "アドバイスありがとうございます。来週必ずそうします。",
+            "zh": "谢谢你的建议。我下周一定去做这件事。",
+            "ru": "Спасибо за совет. Я обязательно это сделаю на следующей неделе."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, я решила, что хочу получить степень магистра. Как думаешь, это не слишком поздно?",
+            "en": "Alexey, I've decided that I want to get a master's degree. Do you think it's too late?",
+            "es": "Alekséi, he decidido que quiero obtener un máster. ¿Crees que es demasiado tarde?",
+            "fr": "Alexeï, j'ai décidé que je veux obtenir un master. Tu penses que ce n'est pas trop tard ?",
+            "pt": "Alexei, eu decidi que quero obter um mestrado. Você acha que não é tarde demais?",
+            "kr": "알렉세이, 석사 학위를 따기로 결심했어. 너무 늦은 건 아닐까?",
+            "jp": "アレクセイさん、修士号を取りたいと決めました。もう遅すぎると思いますか？",
+            "zh": "阿列克谢，我决定想读一个硕士学位。你觉得现在会不会太晚了？",
+            "ru": "Алексей, я решила, что хочу получить степень магистра. Как думаешь, это не слишком поздно?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Елена, учиться никогда не поздно. Тем более, это может открыть новые горизонты в карьере.",
+            "en": "Elena, it's never too late to learn. Besides, it could open new horizons in your career.",
+            "es": "Elena, nunca es tarde para estudiar. Además, puede abrir nuevos horizontes en tu carrera.",
+            "fr": "Elena, il n'est jamais trop tard pour apprendre. D'autant que ça peut ouvrir de nouveaux horizons dans ta carrière.",
+            "pt": "Elena, nunca é tarde para estudar. Ainda mais que isso pode abrir novos horizontes na carreira.",
+            "kr": "옐레나, 배우는 데 너무 늦은 때란 없어. 게다가 그게 경력에 새로운 지평을 열 수도 있고.",
+            "jp": "エレナさん、学ぶのに遅すぎるということはありませんよ。それに、キャリアに新しい地平が開けるかもしれません。",
+            "zh": "叶莲娜，学习永远不会嫌晚。而且，这可能会为你的职业发展打开新的天地。",
+            "ru": "Елена, учиться никогда не поздно. Тем более, это может открыть новые горизонты в карьере."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Но мне придётся совмещать работу с учёбой, это будет непросто.",
+            "en": "But I'll have to balance work and studies, it won't be easy.",
+            "es": "Pero tendré que compaginar el trabajo con los estudios, no va a ser fácil.",
+            "fr": "Mais je vais devoir concilier travail et études, ce ne sera pas facile.",
+            "pt": "Mas vou ter que conciliar o trabalho com os estudos, não vai ser fácil.",
+            "kr": "하지만 일과 학업을 병행해야 해서 쉽지 않을 거야.",
+            "jp": "でも仕事と勉強を両立させないといけないので、大変そうです。",
+            "zh": "但我得兼顾工作和学习，这会很不容易。",
+            "ru": "Но мне придётся совмещать работу с учёбой, это будет непросто."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это потребует дисциплины, но результат того стоит. К тому же, компания ценит сотрудников, которые стремятся к развитию.",
+            "en": "It will require discipline, but the result is worth it. Besides, the company values employees who strive to grow.",
+            "es": "Requerirá disciplina, pero el resultado merecerá la pena. Además, la empresa valora a los empleados que buscan desarrollarse.",
+            "fr": "Ça demandera de la discipline, mais le jeu en vaut la chandelle. En plus, l'entreprise apprécie les employés qui cherchent à se développer.",
+            "pt": "Vai exigir disciplina, mas o resultado vale a pena. Além disso, a empresa valoriza funcionários que buscam se desenvolver.",
+            "kr": "절제력이 필요하겠지만, 그 결과는 그럴 만한 가치가 있어. 게다가 회사는 성장하려는 직원을 높이 평가하잖아.",
+            "jp": "規律が必要ですが、それだけの価値はありますよ。それに、会社は成長しようとする社員を評価しますからね。",
+            "zh": "这需要自律，但结果是值得的。而且，公司很看重那些追求发展的员工。",
+            "ru": "Это потребует дисциплины, но результат того стоит. К тому же, компания ценит сотрудников, которые стремятся к развитию."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты прав. Я уже посмотрела программу, и она выглядит очень перспективной.",
+            "en": "You're right. I've already looked at the program, and it looks very promising.",
+            "es": "Tienes razón. Ya he mirado el programa y parece muy prometedor.",
+            "fr": "Tu as raison. J'ai déjà regardé le programme, et il a l'air très prometteur.",
+            "pt": "Você tem razão. Eu já vi o programa, e ele parece muito promissor.",
+            "kr": "맞아. 이미 교육 과정을 살펴봤는데 아주 유망해 보여.",
+            "jp": "その通りですね。もうプログラムを見てみましたが、とても将来性がありそうです。",
+            "zh": "你说得对。我已经看了课程设置，看起来非常有前景。",
+            "ru": "Ты прав. Я уже посмотрела программу, и она выглядит очень перспективной."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда удачи тебе! Я уверен, у тебя всё получится.",
+            "en": "Then good luck! I'm sure you'll succeed.",
+            "es": "¡Entonces mucha suerte! Estoy seguro de que todo te saldrá bien.",
+            "fr": "Alors bonne chance ! Je suis sûr que tu vas y arriver.",
+            "pt": "Então boa sorte! Tenho certeza de que você vai conseguir.",
+            "kr": "그럼 행운을 빌어! 분명 잘 해낼 거라고 확신해.",
+            "jp": "それなら頑張ってください！ きっとうまくいきますよ。",
+            "zh": "那就祝你好运！我相信你一定能做到。",
+            "ru": "Тогда удачи тебе! Я уверен, у тебя всё получится."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, я получил предложение о работе от конкурирующей компании. Предлагают более высокую должность.",
+            "en": "Sergey, I got a job offer from a competing company. They're offering a higher position.",
+            "es": "Serguéi, he recibido una oferta de trabajo de una empresa competidora. Ofrecen un puesto más alto.",
+            "fr": "Sergueï, j'ai reçu une offre d'emploi d'une entreprise concurrente. Ils proposent un poste plus élevé.",
+            "pt": "Sergei, eu recebi uma proposta de emprego de uma empresa concorrente. Estão oferecendo um cargo mais alto.",
+            "kr": "세르게이, 경쟁 회사에서 일자리 제안을 받았어. 더 높은 직책을 제안하더군.",
+            "jp": "セルゲイさん、競合他社から仕事のオファーをもらいました。もっと高い役職を提示されています。",
+            "zh": "谢尔盖，我收到了一家竞争对手公司的工作邀请。他们提供了一个更高的职位。",
+            "ru": "Сергей, я получил предложение о работе от конкурирующей компании. Предлагают более высокую должность."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Иван, это серьёзный шаг. А ты всё хорошо обдумал? Что тебя удерживает в нашей компании?",
+            "en": "Ivan, that's a serious step. Have you thought it all through? What's keeping you at our company?",
+            "es": "Iván, es un paso serio. ¿Lo has pensado bien? ¿Qué te retiene en nuestra empresa?",
+            "fr": "Ivan, c'est un pas important. Tu as bien réfléchi à tout ? Qu'est-ce qui te retient dans notre entreprise ?",
+            "pt": "Ivan, é um passo sério. E você pensou bem em tudo? O que te mantém na nossa empresa?",
+            "kr": "이반, 그건 중요한 결정이야. 모든 걸 잘 생각해 봤어? 우리 회사에 널 붙잡는 건 뭐야?",
+            "jp": "イワンさん、それは重大な一歩ですね。よく考えましたか？ うちの会社にあなたを引き留めるものは何ですか？",
+            "zh": "伊万，这可是重要的一步。你都考虑清楚了吗？是什么让你留在我们公司呢？",
+            "ru": "Иван, это серьёзный шаг. А ты всё хорошо обдумал? Что тебя удерживает в нашей компании?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне нравится наш коллектив и проекты, но там предлагают больше возможностей для роста.",
+            "en": "I like our team and the projects, but they're offering more opportunities for growth.",
+            "es": "Me gustan nuestro equipo y nuestros proyectos, pero allí ofrecen más oportunidades de crecimiento.",
+            "fr": "J'aime notre équipe et nos projets, mais là-bas, ils offrent plus d'opportunités d'évolution.",
+            "pt": "Eu gosto do nosso time e dos projetos, mas lá oferecem mais oportunidades de crescimento.",
+            "kr": "우리 팀과 프로젝트가 마음에 들어, 하지만 거기서 더 많은 성장 기회를 제안해.",
+            "jp": "今のチームとプロジェクトは好きですが、向こうのほうが成長の機会が多いんです。",
+            "zh": "我喜欢我们的团队和项目，但那里提供了更多成长的机会。",
+            "ru": "Мне нравится наш коллектив и проекты, но там предлагают больше возможностей для роста."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понимаю. Возможно, стоит обсудить это с руководством, вдруг они предложат тебе что-то интересное.",
+            "en": "I understand. Maybe it's worth discussing this with management, maybe they'll offer you something interesting.",
+            "es": "Entiendo. Quizás deberías hablarlo con la dirección, a lo mejor te ofrecen algo interesante.",
+            "fr": "Je comprends. Tu devrais peut-être en discuter avec la direction, au cas où ils te feraient une proposition intéressante.",
+            "pt": "Entendo. Talvez valha a pena conversar com a diretoria; quem sabe eles te ofereçam algo interessante.",
+            "kr": "이해해. 아마 지도부와 상의해 보는 게 좋을 거야. 혹시 흥미로운 제안을 할지도 모르니까.",
+            "jp": "分かります。もしかしたら上司と話してみる価値があるかもしれませんよ。何か面白い条件を提示してくれるかもしれません。",
+            "zh": "我理解。也许值得和领导谈谈这件事，说不定他们会给你提供一些有意思的方案。",
+            "ru": "Понимаю. Возможно, стоит обсудить это с руководством, вдруг они предложат тебе что-то интересное."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я думал об этом, но не хочу ставить их перед фактом ультиматума.",
+            "en": "I thought about that, but I don't want to present them with an ultimatum.",
+            "es": "Lo he pensado, pero no quiero ponerlos ante un ultimátum.",
+            "fr": "J'y ai pensé, mais je ne veux pas les mettre devant un ultimatum.",
+            "pt": "Eu pensei nisso, mas não quero colocá-los diante de um ultimato.",
+            "kr": "그 생각을 해 봤지만, 최후통첩처럼 받아들이게 하고 싶지는 않아.",
+            "jp": "それも考えましたが、最後通牒を突きつけるような形にはしたくないんです。",
+            "zh": "我想过这个，但我不想用最后通牒的方式逼他们表态。",
+            "ru": "Я думал об этом, но не хочу ставить их перед фактом ультиматума."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это разумно. Но иногда открытый разговор помогает прояснить перспективы. Решать, конечно, тебе.",
+            "en": "That's reasonable. But sometimes an open conversation helps clarify your prospects. Of course, the decision is yours.",
+            "es": "Es razonable. Pero a veces una conversación abierta ayuda a aclarar las perspectivas. La decisión, por supuesto, es tuya.",
+            "fr": "C'est raisonnable. Mais parfois, une conversation franche aide à clarifier les perspectives. La décision t'appartient, bien sûr.",
+            "pt": "Isso é sensato. Mas às vezes uma conversa aberta ajuda a esclarecer as perspectivas. A decisão, é claro, é sua.",
+            "kr": "현명한 생각이야. 하지만 때로는 솔직한 대화가 전망을 명확히 하는 데 도움이 되기도 해. 결정은 물론 네 몫이야.",
+            "jp": "それは賢明ですね。でも時には、率直な話し合いが将来の見通しを明確にしてくれますからね。決めるのはもちろんあなたですが。",
+            "zh": "这很明智。但有时候，开诚布公的谈话有助于厘清前景。当然，决定权在你手里。",
+            "ru": "Это разумно. Но иногда открытый разговор помогает прояснить перспективы. Решать, конечно, тебе."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S019",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun walks along the evening street",
+      "pass": true,
+      "evidence": "L001: \"Wow, the street is so bright.\" and L002: \"I can hear cars and people talking.\" indicate she is actively walking and observing the street environment."
+    },
+    {
+      "requirement": "Jieun takes in the lights, sounds, and energy of the city",
+      "pass": true,
+      "evidence": "L001 mentions \"lights\", L002 mentions \"cars and people talking\" (sounds), and L004 \"New York is exciting\" captures the energy."
+    },
+    {
+      "requirement": "Jieun pauses to look at a storefront",
+      "pass": true,
+      "evidence": "L003: \"That storefront looks interesting. Maybe I can look at it for a moment.\" explicitly states she is pausing to look at a storefront."
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the evening street area",
+      "pass": true,
+      "evidence": "All dialogue is about observing the immediate street environment (lights, sounds, a storefront). No mention of moving to another location."
+    },
+    {
+      "requirement": "Do not introduce any problems during the walk",
+      "pass": true,
+      "evidence": "The dialogue is entirely positive and observational. There is no mention of any difficulty, confusion, or issue."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

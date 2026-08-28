@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S014",
+  "shot_id": "SHOT_003",
+  "sequence": 3,
+  "duration_seconds": 6.0,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun smiling with excitement and then resuming her walk along the Manhattan street.",
+  "framing": {
+    "shot_size": "medium_wide",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "Manhattan street"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "tracking",
+    "stability": "smooth"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun smiles with awe and excitement, then resumes walking along the street, looking around at the city as she pulls her suitcase.",
+    "start_state": [
+      "Jieun is standing still, looking up at the tall buildings",
+      "Her expression shows awe and wonder"
+    ],
+    "end_state": [
+      "Jieun is walking along the street, looking around at the city",
+      "She has a happy, excited expression",
+      "She is still carrying her backpack, crossbody bag, and pulling her suitcase"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "happy and excited",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "state": "in hand or pocket",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "state": "in crossbody bag",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "being pulled by Jieun",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L004"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is standing still, looking up at the tall buildings",
+      "Her expression is one of awe and excitement",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase"
+    ],
+    "carry_out": [
+      "Jieun is walking along the street, looking around at the city",
+      "She feels a sense of awe and excitement",
+      "She is still carrying her backpack, crossbody bag, smartphone, passport, and checked suitcase"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

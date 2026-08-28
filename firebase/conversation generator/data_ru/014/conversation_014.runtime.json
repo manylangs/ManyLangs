@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a2",
+    "id": "014"
+  },
+  "title": {
+    "target": "Договориться о встрече",
+    "en": "Arranging a Meeting",
+    "es": "Quedar para una reunión",
+    "fr": "Se mettre d'accord pour se retrouver",
+    "pt": "Combinar um encontro",
+    "kr": "약속 정하기",
+    "jp": "会う約束を決める",
+    "zh": "约定见面",
+    "ru": "Договориться о встрече"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, привет! Ты свободен завтра вечером?",
+            "en": "Ivan, hi! Are you free tomorrow evening?",
+            "es": "Iván, ¡hola! ¿Estás libre mañana por la noche?",
+            "fr": "Ivan, salut ! Tu es libre demain soir ?",
+            "pt": "Ivan, oi! Você está livre amanhã à noite?",
+            "kr": "이반, 안녕! 너 내일 저녁에 시간 돼?",
+            "jp": "イワン、こんにちは！明日の夕方、空いてる？",
+            "zh": "伊万，你好！你明天晚上有空吗？",
+            "ru": "Иван, привет! Ты свободен завтра вечером?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Привет, Анна! Завтра я занят до шести, а после шести свободен.",
+            "en": "Hi, Anna! Tomorrow I'm busy until six, and after six I'm free.",
+            "es": "¡Hola, Anna! Mañana estoy ocupado hasta las seis, y después de las seis estoy libre.",
+            "fr": "Salut, Anna ! Demain, je suis occupé jusqu'à six heures, et après six heures, je suis libre.",
+            "pt": "Oi, Anna! Amanhã eu estou ocupado até as seis, e depois das seis estou livre.",
+            "kr": "안녕, 안나! 내일은 여섯 시까지 바쁘고, 여섯 시 이후에는 시간 돼.",
+            "jp": "こんにちは、アンナ！明日は六時まで忙しいけど、六時以降は空いてるよ。",
+            "zh": "你好，安娜！明天我六点之前有事，六点以后有空。",
+            "ru": "Привет, Анна! Завтра я занят до шести, а после шести свободен."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично! Тогда давай встретимся в семь у входа в парк.",
+            "en": "Great! Then let's meet at seven at the park entrance.",
+            "es": "¡Genial! Entonces quedemos a las siete en la entrada del parque.",
+            "fr": "Parfait ! Alors retrouvons-nous à sept heures à l'entrée du parc.",
+            "pt": "Ótimo! Então vamos nos encontrar às sete na entrada do parque.",
+            "kr": "좋아! 그럼 일곱 시에 공원 입구에서 만나자.",
+            "jp": "いいね！じゃあ、七時に公園の入り口で会おう。",
+            "zh": "太好了！那我们七点在公园门口见面吧。",
+            "ru": "Отлично! Тогда давай встретимся в семь у входа в парк."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, а во сколько ты там будешь?",
+            "en": "Okay, and what time will you be there?",
+            "es": "Vale, ¿y a qué hora estarás allí?",
+            "fr": "D'accord, et à quelle heure tu y seras ?",
+            "pt": "Tudo bem, e a que horas você vai estar lá?",
+            "kr": "좋아, 그럼 너는 거기에 몇 시에 있을 거야?",
+            "jp": "いいよ、君は何時にそこに着く？",
+            "zh": "好的，你几点到那儿？",
+            "ru": "Хорошо, а во сколько ты там будешь?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я буду там без пяти семь.",
+            "en": "I'll be there at five to seven.",
+            "es": "Estaré allí a las siete menos cinco.",
+            "fr": "J'y serai à sept heures moins cinq.",
+            "pt": "Eu vou estar lá às sete menos cinco.",
+            "kr": "나는 일곱 시 오 분 전에 거기 있을 거야.",
+            "jp": "七時五分前に着くよ。",
+            "zh": "我六点五十五到。",
+            "ru": "Я буду там без пяти семь."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Договорились, до завтра!",
+            "en": "It's settled, see you tomorrow!",
+            "es": "De acuerdo, ¡hasta mañana!",
+            "fr": "C'est convenu, à demain !",
+            "pt": "Combinado, até amanhã!",
+            "kr": "알았어, 내일 보자!",
+            "jp": "わかった、また明日ね！",
+            "zh": "说定了，明天见！",
+            "ru": "Договорились, до завтра!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, нам нужно обсудить проект. Когда тебе удобно?",
+            "en": "Dmitry, we need to discuss the project. When is convenient for you?",
+            "es": "Dmitri, tenemos que hablar del proyecto. ¿Cuándo te viene bien?",
+            "fr": "Dmitri, nous devons discuter du projet. Quand est-ce que ça t'arrange ?",
+            "pt": "Dmitri, precisamos discutir o projeto. Quando é conveniente para você?",
+            "kr": "드미트리, 우리 프로젝트에 대해 얘기해야 해. 언제가 편해?",
+            "jp": "ドミトリー、プロジェクトについて話し合う必要があるんだ。いつが都合いい？",
+            "zh": "德米特里，我们需要讨论一下项目。你什么时候方便？",
+            "ru": "Дмитрий, нам нужно обсудить проект. Когда тебе удобно?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мне удобно в четверг после обеда.",
+            "en": "Thursday afternoon works for me.",
+            "es": "Me viene bien el jueves por la tarde.",
+            "fr": "Ça m'arrange jeudi après-midi.",
+            "pt": "É conveniente para mim na quinta-feira à tarde.",
+            "kr": "나는 목요일 오후가 편해.",
+            "jp": "木曜日の午後が都合いいよ。",
+            "zh": "我周四下午方便。",
+            "ru": "Мне удобно в четверг после обеда."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А в четверг утром у меня лекция, но после двух я свободна.",
+            "en": "I have a lecture on Thursday morning, but after two I'm free.",
+            "es": "Y el jueves por la mañana tengo clase, pero después de las dos estoy libre.",
+            "fr": "Et jeudi matin, j'ai un cours, mais après deux heures, je suis libre.",
+            "pt": "E na quinta-feira de manhã eu tenho aula, mas depois das duas eu estou livre.",
+            "kr": "그런데 목요일 오전에는 내가 강의가 있어서, 두 시 이후에는 시간 돼.",
+            "jp": "木曜日の午前中は講義があるんだけど、二時以降は空いてるわ。",
+            "zh": "周四上午我有课，但是两点以后我就有空了。",
+            "ru": "А в четверг утром у меня лекция, но после двух я свободна."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда давай встретимся в три в библиотеке.",
+            "en": "Then let's meet at three at the library.",
+            "es": "Entonces quedemos a las tres en la biblioteca.",
+            "fr": "Alors retrouvons-nous à trois heures à la bibliothèque.",
+            "pt": "Então vamos nos encontrar às três na biblioteca.",
+            "kr": "그럼 세 시에 도서관에서 만나자.",
+            "jp": "じゃあ、三時に図書館で会おう。",
+            "zh": "那我们三点在图书馆见面吧。",
+            "ru": "Тогда давай встретимся в три в библиотеке."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, я запишу. В три в библиотеке.",
+            "en": "Great, I'll write it down. At three at the library.",
+            "es": "Genial, lo apunto. A las tres en la biblioteca.",
+            "fr": "Parfait, je vais le noter. À trois heures à la bibliothèque.",
+            "pt": "Ótimo, eu vou anotar. Às três na biblioteca.",
+            "kr": "좋아, 내가 적어 둘게. 세 시에 도서관에서.",
+            "jp": "いいわね、メモしておくわ。三時に図書館ね。",
+            "zh": "好的，我记一下。三点在图书馆。",
+            "ru": "Отлично, я запишу. В три в библиотеке."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, буду ждать тебя там.",
+            "en": "Yes, I'll be waiting for you there.",
+            "es": "Sí, te esperaré allí.",
+            "fr": "Oui, je t'y attendrai.",
+            "pt": "Sim, vou estar esperando você lá.",
+            "kr": "응, 거기서 기다릴게.",
+            "jp": "うん、そこで待ってるよ。",
+            "zh": "好的，我会在那儿等你。",
+            "ru": "Да, буду ждать тебя там."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты не против перенести нашу встречу на час позже?",
+            "en": "Sergey, would you mind moving our meeting an hour later?",
+            "es": "Serguéi, ¿te importa retrasar nuestra reunión una hora?",
+            "fr": "Sergueï, ça te dérange si on reporte notre rendez-vous d'une heure plus tard ?",
+            "pt": "Sergei, você se importa de adiar nosso encontro para uma hora mais tarde?",
+            "kr": "세르게이, 우리 만남을 한 시간 뒤로 미루는 거 괜찮아?",
+            "jp": "セルゲイ、私たちの会議を一時間遅らせるのは構わない？",
+            "zh": "谢尔盖，你介不介意把我们的见面推迟一个小时？",
+            "ru": "Сергей, ты не против перенести нашу встречу на час позже?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, не против. А во сколько теперь?",
+            "en": "Of course, I don't mind. So what time now?",
+            "es": "Claro, no me importa. ¿Y a qué hora ahora?",
+            "fr": "Bien sûr que non, ça ne me dérange pas. Et c'est à quelle heure maintenant ?",
+            "pt": "Claro, não me importo. E a que horas agora?",
+            "kr": "물론, 괜찮지. 그럼 이제 몇 시로 할까?",
+            "jp": "もちろん、構わないよ。じゃあ、今度は何時になるの？",
+            "zh": "当然不介意。那现在几点见？",
+            "ru": "Конечно, не против. А во сколько теперь?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Давай в шесть вместо пяти.",
+            "en": "Let's do six instead of five.",
+            "es": "Quedemos a las seis en vez de a las cinco.",
+            "fr": "Disons à six heures au lieu de cinq heures.",
+            "pt": "Vamos marcar às seis em vez das cinco.",
+            "kr": "다섯 시 대신 여섯 시로 하자.",
+            "jp": "五時じゃなくて六時にしよう。",
+            "zh": "我们五点改到六点吧。",
+            "ru": "Давай в шесть вместо пяти."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, а где мы встретимся?",
+            "en": "Okay, and where will we meet?",
+            "es": "Vale, ¿y dónde nos vemos?",
+            "fr": "D'accord, et où est-ce qu'on se retrouve ?",
+            "pt": "Tudo bem, e onde vamos nos encontrar?",
+            "kr": "좋아, 그럼 어디서 만날까?",
+            "jp": "いいよ、どこで会う？",
+            "zh": "好的，那我们在哪儿见面？",
+            "ru": "Хорошо, а где мы встретимся?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Может, у кафе на углу?",
+            "en": "Maybe at the cafe on the corner?",
+            "es": "¿Quizás en el café de la esquina?",
+            "fr": "Peut-être au café au coin de la rue ?",
+            "pt": "Que tal no café na esquina?",
+            "kr": "모퉁이에 있는 카페 앞은 어때?",
+            "jp": "角のカフェの前はどう？",
+            "zh": "在拐角那家咖啡馆怎么样？",
+            "ru": "Может, у кафе на углу?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я знаю это место. В шесть буду там.",
+            "en": "Yes, I know that place. I'll be there at six.",
+            "es": "Sí, conozco ese sitio. A las seis estaré allí.",
+            "fr": "Oui, je connais cet endroit. À six heures, j'y serai.",
+            "pt": "Sim, eu conheço esse lugar. Às seis estarei lá.",
+            "kr": "응, 나 그 장소 알아. 여섯 시에 거기 있을게.",
+            "jp": "うん、その場所は知ってるよ。六時にそこにいるよ。",
+            "zh": "好的，我知道那个地方。六点我会到那儿。",
+            "ru": "Да, я знаю это место. В шесть буду там."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, ты придёшь на концерт в субботу?",
+            "en": "Olga, are you coming to the concert on Saturday?",
+            "es": "Olga, ¿vas a venir al concierto el sábado?",
+            "fr": "Olga, tu viens au concert samedi ?",
+            "pt": "Olga, você vai vir ao show no sábado?",
+            "kr": "올가, 너 토요일에 콘서트 올 거야?",
+            "jp": "オリガ、土曜日のコンサートに行く？",
+            "zh": "奥尔加，你周六会来听音乐会吗？",
+            "ru": "Ольга, ты придёшь на концерт в субботу?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я очень хочу пойти! А во сколько начало?",
+            "en": "Yes, I really want to go! And what time does it start?",
+            "es": "¡Sí, tengo muchas ganas de ir! ¿Y a qué hora empieza?",
+            "fr": "Oui, j'ai très envie d'y aller ! Et ça commence à quelle heure ?",
+            "pt": "Sim, eu quero muito ir! E a que horas começa?",
+            "kr": "응, 나 정말 가고 싶어! 그런데 몇 시에 시작해?",
+            "jp": "うん、すごく行きたい！何時に始まるの？",
+            "zh": "会，我非常想去！几点开始？",
+            "ru": "Да, я очень хочу пойти! А во сколько начало?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Начало в семь, но я предлагаю встретиться в шесть.",
+            "en": "It starts at seven, but I suggest we meet at six.",
+            "es": "Empieza a las siete, pero propongo que quedemos a las seis.",
+            "fr": "Ça commence à sept heures, mais je propose qu'on se retrouve à six heures.",
+            "pt": "Começa às sete, mas eu proponho nos encontrarmos às seis.",
+            "kr": "일곱 시에 시작하는데, 나는 여섯 시에 만나자고 제안해.",
+            "jp": "七時開始だけど、六時に会うのはどう？",
+            "zh": "七点开始，但是我建议我们六点见面。",
+            "ru": "Начало в семь, но я предлагаю встретиться в шесть."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично, тогда мы успеем спокойно дойти.",
+            "en": "Great, then we'll have time to get there without rushing.",
+            "es": "Genial, así llegaremos tranquilamente.",
+            "fr": "Parfait, comme ça on aura le temps d'y aller tranquillement.",
+            "pt": "Ótimo, então a gente vai ter tempo de chegar com calma.",
+            "kr": "좋아, 그럼 우리 여유 있게 갈 수 있겠네.",
+            "jp": "いいね、そうすればゆっくり歩いて行けるね。",
+            "zh": "太好了，那我们就能从容地走到了。",
+            "ru": "Отлично, тогда мы успеем спокойно дойти."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Давай встретимся у входа в метро.",
+            "en": "Let's meet at the metro entrance.",
+            "es": "Quedemos en la entrada del metro.",
+            "fr": "Retrouvons-nous à l'entrée du métro.",
+            "pt": "Vamos nos encontrar na entrada do metrô.",
+            "kr": "지하철 입구에서 만나자.",
+            "jp": "地下鉄の入り口で会おう。",
+            "zh": "我们在地铁站入口见面吧。",
+            "ru": "Давай встретимся у входа в метро."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, я буду там в шесть.",
+            "en": "Okay, I'll be there at six.",
+            "es": "Vale, estaré allí a las seis.",
+            "fr": "D'accord, j'y serai à six heures.",
+            "pt": "Tudo bem, eu estarei lá às seis.",
+            "kr": "좋아, 나는 여섯 시에 거기 있을게.",
+            "jp": "いいよ、六時にそこにいるわ。",
+            "zh": "好的，我六点到那儿。",
+            "ru": "Хорошо, я буду там в шесть."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, нам надо поговорить о поездке. Ты можешь сегодня вечером?",
+            "en": "Alexey, we need to talk about the trip. Can you do it tonight?",
+            "es": "Alekséi, tenemos que hablar del viaje. ¿Puedes esta noche?",
+            "fr": "Alexeï, il faut qu'on parle du voyage. Tu peux ce soir ?",
+            "pt": "Alexei, precisamos conversar sobre a viagem. Você pode hoje à noite?",
+            "kr": "알렉세이, 우리 여행에 대해 얘기해야 해. 너 오늘 저녁에 시간 돼?",
+            "jp": "アレクセイ、旅行について話さなきゃいけないんだけど、今夜はできる？",
+            "zh": "阿列克谢，我们需要谈谈旅行的事。你今天晚上可以吗？",
+            "ru": "Алексей, нам надо поговорить о поездке. Ты можешь сегодня вечером?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Сегодня я не могу, у меня тренировка.",
+            "en": "Tonight I can't, I have practice.",
+            "es": "Esta noche no puedo, tengo entrenamiento.",
+            "fr": "Ce soir, je ne peux pas, j'ai un entraînement.",
+            "pt": "Hoje eu não posso, eu tenho treino.",
+            "kr": "오늘은 안 돼, 나 운동이 있어.",
+            "jp": "今夜は無理だな、トレーニングがあるんだ。",
+            "zh": "今天不行，我有训练。",
+            "ru": "Сегодня я не могу, у меня тренировка."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А завтра утром до занятий?",
+            "en": "What about tomorrow morning before classes?",
+            "es": "¿Y mañana por la mañana antes de las clases?",
+            "fr": "Et demain matin avant les cours ?",
+            "pt": "E amanhã de manhã antes das aulas?",
+            "kr": "그럼 내일 아침 수업 전에는 어때?",
+            "jp": "じゃあ、明日の朝、授業の前は？",
+            "zh": "那明天早上上课之前呢？",
+            "ru": "А завтра утром до занятий?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Завтра утром я свободен до девяти.",
+            "en": "Tomorrow morning I'm free until nine.",
+            "es": "Mañana por la mañana estoy libre hasta las nueve.",
+            "fr": "Demain matin, je suis libre jusqu'à neuf heures.",
+            "pt": "Amanhã de manhã eu estou livre até as nove.",
+            "kr": "내일 아침에는 아홉 시까지 시간 돼.",
+            "jp": "明日の朝は九時まで空いてるよ。",
+            "zh": "明天早上我九点之前有空。",
+            "ru": "Завтра утром я свободен до девяти."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда давай встретимся в восемь у университета.",
+            "en": "Then let's meet at eight near the university.",
+            "es": "Entonces quedemos a las ocho delante de la universidad.",
+            "fr": "Alors retrouvons-nous à huit heures devant l'université.",
+            "pt": "Então vamos nos encontrar às oito perto da universidade.",
+            "kr": "그럼 여덟 시에 대학교 앞에서 만나자.",
+            "jp": "じゃあ、八時に大学の前で会おう。",
+            "zh": "那我们八点在大学门口见面吧。",
+            "ru": "Тогда давай встретимся в восемь у университета."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Договорились, в восемь у главного входа.",
+            "en": "It's settled, at eight at the main entrance.",
+            "es": "De acuerdo, a las ocho en la entrada principal.",
+            "fr": "C'est convenu, à huit heures à l'entrée principale.",
+            "pt": "Combinado, às oito na entrada principal.",
+            "kr": "알았어, 여덟 시에 정문 앞에서.",
+            "jp": "わかった、八時に正門の前でね。",
+            "zh": "说定了，八点在大门口。",
+            "ru": "Договорились, в восемь у главного входа."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, ты уже выбрала время для встречи с профессором?",
+            "en": "Maria, have you already chosen a time to meet with the professor?",
+            "es": "María, ¿ya has elegido la hora para la reunión con el profesor?",
+            "fr": "Maria, tu as déjà choisi l'heure pour ton rendez-vous avec le professeur ?",
+            "pt": "Maria, você já escolheu o horário para a reunião com o professor?",
+            "kr": "마리야, 너 교수님과의 만남 시간 이미 정했어?",
+            "jp": "マリア、教授との面会の時間はもう選んだの？",
+            "zh": "玛丽亚，你已经选好和教授见面的时间了吗？",
+            "ru": "Мария, ты уже выбрала время для встречи с профессором?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я записалась на среду в десять.",
+            "en": "Yes, I signed up for Wednesday at ten.",
+            "es": "Sí, me he apuntado para el miércoles a las diez.",
+            "fr": "Oui, je me suis inscrite pour mercredi à dix heures.",
+            "pt": "Sim, eu me inscrevi para quarta-feira às dez.",
+            "kr": "응, 나 수요일 열 시에 예약했어.",
+            "jp": "うん、水曜日の十時に予約したよ。",
+            "zh": "是的，我约了周三十点。",
+            "ru": "Да, я записалась на среду в десять."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А я ещё не записалась. Как ты это сделала?",
+            "en": "I haven't signed up yet. How did you do it?",
+            "es": "Y yo todavía no me he apuntado. ¿Cómo lo has hecho?",
+            "fr": "Et moi, je ne me suis pas encore inscrite. Comment tu as fait ?",
+            "pt": "E eu ainda não me inscrevi. Como você fez isso?",
+            "kr": "나는 아직 예약 안 했어. 너는 어떻게 한 거야?",
+            "jp": "私はまだ予約してないの。どうやってやったの？",
+            "zh": "我还没约呢。你是怎么约的？",
+            "ru": "А я ещё не записалась. Как ты это сделала?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я просто написала ему на почту.",
+            "en": "I just wrote to him by email.",
+            "es": "Simplemente le escribí un correo.",
+            "fr": "J'ai simplement écrit un e-mail à son adresse.",
+            "pt": "Eu simplesmente escrevi para ele por e-mail.",
+            "kr": "그냥 교수님께 이메일을 보냈어.",
+            "jp": "ただメールを送っただけだよ。",
+            "zh": "我就是给他发了封邮件。",
+            "ru": "Я просто написала ему на почту."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно, тогда я тоже напишу.",
+            "en": "I see, then I'll write too.",
+            "es": "Entendido, entonces yo también le escribiré.",
+            "fr": "Je vois, alors je vais écrire aussi.",
+            "pt": "Entendi, então eu também vou escrever.",
+            "kr": "알겠어, 그럼 나도 쓸게.",
+            "jp": "なるほど、じゃあ私も送ってみるわ。",
+            "zh": "明白了，那我也发一封。",
+            "ru": "Понятно, тогда я тоже напишу."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, он быстро отвечает.",
+            "en": "Yes, he replies quickly.",
+            "es": "Sí, responde rápido.",
+            "fr": "Oui, il répond vite.",
+            "pt": "Sim, ele responde rápido.",
+            "kr": "응, 교수님은 빨리 답장하셔.",
+            "jp": "うん、彼は返事が早いよ。",
+            "zh": "好的，他回复很快。",
+            "ru": "Да, он быстро отвечает."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, давай сходим в кино на этой неделе?",
+            "en": "Ivan, let's go to the movies this week?",
+            "es": "Iván, ¿vamos al cine esta semana?",
+            "fr": "Ivan, on va au cinéma cette semaine ?",
+            "pt": "Ivan, vamos ao cinema esta semana?",
+            "kr": "이반, 이번 주에 영화 보러 갈래?",
+            "jp": "イワン、今週映画に行かない？",
+            "zh": "伊万，这周我们去看电影吧？",
+            "ru": "Иван, давай сходим в кино на этой неделе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "С удовольствием! А когда тебе удобно?",
+            "en": "With pleasure! And when is convenient for you?",
+            "es": "¡Con mucho gusto! ¿Y cuándo te viene bien?",
+            "fr": "Avec plaisir ! Et quand est-ce que ça t'arrange ?",
+            "pt": "Com prazer! E quando é conveniente para você?",
+            "kr": "좋지! 그런데 언제가 편해?",
+            "jp": "いいね！いつが都合いい？",
+            "zh": "非常乐意！你什么时候方便？",
+            "ru": "С удовольствием! А когда тебе удобно?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне удобно в пятницу после работы.",
+            "en": "Friday after work works for me.",
+            "es": "Me viene bien el viernes después del trabajo.",
+            "fr": "Ça m'arrange vendredi après le travail.",
+            "pt": "É conveniente para mim na sexta-feira depois do trabalho.",
+            "kr": "나는 금요일 퇴근 후가 편해.",
+            "jp": "金曜日の仕事終わりがいいな。",
+            "zh": "我周五下班后方便。",
+            "ru": "Мне удобно в пятницу после работы."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "В пятницу я работаю до пяти, а потом свободен.",
+            "en": "On Friday I work until five, and then I'm free.",
+            "es": "El viernes trabajo hasta las cinco, y luego estoy libre.",
+            "fr": "Vendredi, je travaille jusqu'à cinq heures, et après je suis libre.",
+            "pt": "Na sexta-feira eu trabalho até as cinco, e depois estou livre.",
+            "kr": "금요일에는 다섯 시까지 일하고, 그 후에는 시간 돼.",
+            "jp": "金曜日は五時まで働いて、その後は空いてるよ。",
+            "zh": "周五我工作到五点，之后就有空了。",
+            "ru": "В пятницу я работаю до пяти, а потом свободен."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда давай встретимся в шесть у кинотеатра.",
+            "en": "Then let's meet at six at the cinema.",
+            "es": "Entonces quedemos a las seis delante del cine.",
+            "fr": "Alors retrouvons-nous à six heures devant le cinéma.",
+            "pt": "Então vamos nos encontrar às seis perto do cinema.",
+            "kr": "그럼 여섯 시에 영화관 앞에서 만나자.",
+            "jp": "じゃあ、六時に映画館の前で会おう。",
+            "zh": "那我们六点在电影院门口见面吧。",
+            "ru": "Тогда давай встретимся в шесть у кинотеатра."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично, я куплю билеты заранее.",
+            "en": "Great, I'll buy the tickets in advance.",
+            "es": "Genial, compraré las entradas con antelación.",
+            "fr": "Parfait, j'achèterai les billets à l'avance.",
+            "pt": "Ótimo, eu vou comprar os ingressos com antecedência.",
+            "kr": "좋아, 내가 미리 표를 사 둘게.",
+            "jp": "いいよ、前もってチケットを買っておくよ。",
+            "zh": "好的，我会提前买好票。",
+            "ru": "Отлично, я куплю билеты заранее."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, ты не забыла, что мы договорились встретиться сегодня?",
+            "en": "Elena, you didn't forget that we agreed to meet today, did you?",
+            "es": "Elena, ¿no has olvidado que quedamos hoy?",
+            "fr": "Elena, tu n'as pas oublié qu'on a convenu de se retrouver aujourd'hui ?",
+            "pt": "Elena, você não esqueceu que combinamos de nos encontrar hoje?",
+            "kr": "옐레나, 우리 오늘 만나기로 한 거 잊지 않았지?",
+            "jp": "エレナ、今日会う約束をしたのを忘れてないよね？",
+            "zh": "叶莲娜，你没忘记我们今天约好了见面吧？",
+            "ru": "Елена, ты не забыла, что мы договорились встретиться сегодня?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, конечно, не забыла! Я уже выхожу.",
+            "en": "No, of course I didn't forget! I'm already on my way out.",
+            "es": "No, ¡claro que no lo he olvidado! Ya estoy saliendo.",
+            "fr": "Non, bien sûr que non, je n'ai pas oublié ! Je sors déjà.",
+            "pt": "Não, claro que não esqueci! Eu já estou saindo.",
+            "kr": "아니, 당연히 안 잊었지! 나 벌써 나가고 있어.",
+            "jp": "ううん、もちろん忘れてないよ！もう出かけるところだよ。",
+            "zh": "没有，当然没忘！我已经出门了。",
+            "ru": "Нет, конечно, не забыла! Я уже выхожу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хорошо, я буду ждать тебя у кафе.",
+            "en": "Good, I'll be waiting for you at the cafe.",
+            "es": "Bien, te esperaré en el café.",
+            "fr": "Bien, je t'attendrai au café.",
+            "pt": "Tudo bem, eu vou estar esperando você no café.",
+            "kr": "좋아, 카페 앞에서 기다릴게.",
+            "jp": "よかった、カフェの前で待ってるね。",
+            "zh": "好的，我会在咖啡馆等你。",
+            "ru": "Хорошо, я буду ждать тебя у кафе."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "А во сколько ты там будешь?",
+            "en": "And what time will you be there?",
+            "es": "¿Y a qué hora estarás allí?",
+            "fr": "Et à quelle heure tu y seras ?",
+            "pt": "E a que horas você vai estar lá?",
+            "kr": "그런데 너는 거기에 몇 시에 있을 거야?",
+            "jp": "君は何時にそこに着くの？",
+            "zh": "你几点到那儿？",
+            "ru": "А во сколько ты там будешь?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я уже здесь, так что не торопись.",
+            "en": "I'm already here, so no need to rush.",
+            "es": "Ya estoy aquí, así que no tengas prisa.",
+            "fr": "Je suis déjà là, alors ne te presse pas.",
+            "pt": "Eu já estou aqui, então não precisa ter pressa.",
+            "kr": "나는 이미 여기 있어, 그러니 서두르지 마.",
+            "jp": "もう着いてるから、急がなくていいよ。",
+            "zh": "我已经到了，所以你不用着急。",
+            "ru": "Я уже здесь, так что не торопись."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо, я буду через десять минут.",
+            "en": "Thanks, I'll be there in ten minutes.",
+            "es": "Gracias, estaré allí en diez minutos.",
+            "fr": "Merci, j'arrive dans dix minutes.",
+            "pt": "Obrigada, eu estarei aí em dez minutos.",
+            "kr": "고마워, 십 분 안에 도착할게.",
+            "jp": "ありがとう、十分で着くよ。",
+            "zh": "谢谢，我十分钟后到。",
+            "ru": "Спасибо, я буду через десять минут."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, давай перенесём нашу встречу на следующую неделю?",
+            "en": "Dmitry, let's move our meeting to next week?",
+            "es": "Dmitri, ¿retrasamos nuestra reunión a la semana que viene?",
+            "fr": "Dmitri, on reporte notre rendez-vous à la semaine prochaine ?",
+            "pt": "Dmitri, vamos adiar nosso encontro para a próxima semana?",
+            "kr": "드미트리, 우리 만남을 다음 주로 미룰까?",
+            "jp": "ドミトリー、私たちの会議を来週に延期しない？",
+            "zh": "德米特里，我们把见面推迟到下个星期吧？",
+            "ru": "Дмитрий, давай перенесём нашу встречу на следующую неделю?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, а что случилось?",
+            "en": "Okay, what happened?",
+            "es": "Vale, ¿y qué ha pasado?",
+            "fr": "D'accord, et qu'est-ce qui s'est passé ?",
+            "pt": "Tudo bem, e o que aconteceu?",
+            "kr": "좋아, 그런데 무슨 일 있어?",
+            "jp": "いいよ、何かあったの？",
+            "zh": "好的，出什么事了？",
+            "ru": "Хорошо, а что случилось?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "У меня появились срочные дела.",
+            "en": "Some urgent matters came up.",
+            "es": "Me han surgido asuntos urgentes.",
+            "fr": "J'ai eu des affaires urgentes.",
+            "pt": "Eu tenho assuntos urgentes.",
+            "kr": "나한테 급한 일이 생겼어.",
+            "jp": "急用ができたんだ。",
+            "zh": "我临时有急事。",
+            "ru": "У меня появились срочные дела."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понимаю, тогда давай в понедельник в то же время.",
+            "en": "I understand, then let's do Monday at the same time.",
+            "es": "Entiendo, entonces quedemos el lunes a la misma hora.",
+            "fr": "Je comprends, alors disons lundi à la même heure.",
+            "pt": "Entendo, então vamos marcar na segunda-feira no mesmo horário.",
+            "kr": "이해해, 그럼 월요일 같은 시간에 만나자.",
+            "jp": "わかった、じゃあ月曜日の同じ時間にしよう。",
+            "zh": "明白了，那我们周一老时间见吧。",
+            "ru": "Понимаю, тогда давай в понедельник в то же время."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "В понедельник в пять мне подходит.",
+            "en": "Monday at five works for me.",
+            "es": "El lunes a las cinco me viene bien.",
+            "fr": "Lundi à cinq heures, ça me va.",
+            "pt": "Na segunda-feira às cinco me serve.",
+            "kr": "월요일 다섯 시가 나한테는 괜찮아.",
+            "jp": "月曜日の五時なら大丈夫だよ。",
+            "zh": "周一五点我可以。",
+            "ru": "В понедельник в пять мне подходит."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично, тогда до понедельника.",
+            "en": "Great, then see you on Monday.",
+            "es": "Genial, entonces hasta el lunes.",
+            "fr": "Parfait, alors à lundi.",
+            "pt": "Ótimo, então até segunda-feira.",
+            "kr": "좋아, 그럼 월요일에 보자.",
+            "jp": "いいね、じゃあ月曜日にね。",
+            "zh": "好的，那周一见。",
+            "ru": "Отлично, тогда до понедельника."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты помнишь, что завтра мы идём на выставку?",
+            "en": "Sergey, do you remember that tomorrow we're going to the exhibition?",
+            "es": "Serguéi, ¿recuerdas que mañana vamos a la exposición?",
+            "fr": "Sergueï, tu te souviens que demain on va à l'exposition ?",
+            "pt": "Sergei, você lembra que amanhã a gente vai à exposição?",
+            "kr": "세르게이, 우리 내일 전시회 가기로 한 거 기억하지?",
+            "jp": "セルゲイ、明日展覧会に行くのを覚えてる？",
+            "zh": "谢尔盖，你还记得明天我们去看展览吗？",
+            "ru": "Сергей, ты помнишь, что завтра мы идём на выставку?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, помню! А во сколько мы договорились?",
+            "en": "Yes, I remember! And what time did we agree on?",
+            "es": "¡Sí, lo recuerdo! ¿Y a qué hora quedamos?",
+            "fr": "Oui, je m'en souviens ! Et à quelle heure est-ce qu'on a convenu ?",
+            "pt": "Sim, lembro! E a que horas combinamos?",
+            "kr": "응, 기억해! 그런데 우리 몇 시에 만나기로 했지?",
+            "jp": "うん、覚えてるよ！何時に約束したっけ？",
+            "zh": "记得！我们约的几点？",
+            "ru": "Да, помню! А во сколько мы договорились?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мы договорились на два часа дня.",
+            "en": "We agreed on two in the afternoon.",
+            "es": "Quedamos a las dos de la tarde.",
+            "fr": "On a convenu de deux heures de l'après-midi.",
+            "pt": "Combinamos para as duas da tarde.",
+            "kr": "우리 오후 두 시에 만나기로 했어.",
+            "jp": "午後二時に約束したよね。",
+            "zh": "我们约的是下午两点。",
+            "ru": "Мы договорились на два часа дня."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично, а где мы встретимся?",
+            "en": "Great, and where will we meet?",
+            "es": "Genial, ¿y dónde nos vemos?",
+            "fr": "Parfait, et où est-ce qu'on se retrouve ?",
+            "pt": "Ótimo, e onde vamos nos encontrar?",
+            "kr": "좋아, 그럼 어디서 만날까?",
+            "jp": "いいよ、どこで会う？",
+            "zh": "好的，那我们在哪儿见面？",
+            "ru": "Отлично, а где мы встретимся?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Давай у входа в музей.",
+            "en": "Let's meet at the museum entrance.",
+            "es": "Quedemos en la entrada del museo.",
+            "fr": "Disons à l'entrée du musée.",
+            "pt": "Vamos nos encontrar na entrada do museu.",
+            "kr": "박물관 입구에서 만나자.",
+            "jp": "博物館の入り口で会おう。",
+            "zh": "在博物馆门口吧。",
+            "ru": "Давай у входа в музей."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, я буду там без четверти два.",
+            "en": "Okay, I'll be there at a quarter to two.",
+            "es": "Vale, estaré allí a las dos menos cuarto.",
+            "fr": "D'accord, j'y serai à deux heures moins le quart.",
+            "pt": "Tudo bem, eu estarei lá às duas menos quinze.",
+            "kr": "좋아, 나는 두 시 십오 분 전에 거기 있을게.",
+            "jp": "いいよ、二時十五分前にそこにいるよ。",
+            "zh": "好的，我一点四十五到那儿。",
+            "ru": "Хорошо, я буду там без четверти два."
+          }
+        }
+      ]
+    }
+  ]
+}

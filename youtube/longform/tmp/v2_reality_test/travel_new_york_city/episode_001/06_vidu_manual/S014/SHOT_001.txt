@@ -1,0 +1,29 @@
+ORDER: 043/065
+SCENE: S014
+SHOT: SHOT_001
+DURATION: 6.0 seconds
+ASPECT RATIO: 16:9
+RESOLUTION: 1080p
+
+REFERENCE IMAGE:
+- _references/jieun_primary.png
+
+PROMPT:
+A medium-wide, eye-level smooth follow shot shows Jieun, a young woman with an oval face, soft features, dark brown eyes, and shoulder-length dark brown hair tucked behind ears, wearing a white t-shirt, light blue denim jacket, dark blue skinny jeans, and white sneakers. She carries a backpack on her back and a crossbody bag across her body, and pulls a checked suitcase behind her. She walks out of a subway station exit onto a sunlit Manhattan sidewalk, stops to look up at the tall buildings and skyline with an anticipatory expression, then resumes walking while looking around at the city. Pedestrians pass by, cars move along the street, and the station exit remains behind her. Her appearance, clothing, and carried items remain exactly consistent throughout.
+
+NEGATIVE / DO-NOT-CHANGE NOTES:
+- Do not change Jieun's identity, appearance, hair, or clothing.
+- Do not change the canonical location identity of the subway station exit and Manhattan street.
+- Do not introduce new characters.
+- Do not introduce new locations.
+- Do not alter the canonical prop state: backpack on back, crossbody bag across body, checked suitcase being pulled.
+- Do not show Jieun moving past the area around the subway station.
+- Do not show Jieun's suitcase being lost or missing.
+- Do not show Jieun's passport or smartphone being dropped or lost.
+- Do not show Jieun arriving at her hotel.
+- Do not introduce a new travel problem.
+- Do not show Jieun encountering any problems with finding her hotel yet.
+- Do not change story events or resolve unresolved story facts.
+
+OUTPUT FILE:
+S014_SHOT_001.mp4

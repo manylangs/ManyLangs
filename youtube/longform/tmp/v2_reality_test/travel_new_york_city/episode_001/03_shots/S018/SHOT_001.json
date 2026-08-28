@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S018",
+  "shot_id": "SHOT_001",
+  "sequence": 1,
+  "duration_seconds": 6.0,
+  "location_ref": "LOC_MANHATTAN_HOTEL_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun finishing freshening up and turning from the window, deciding to go for a walk.",
+  "framing": {
+    "shot_size": "medium",
+    "subject_priority": [
+      "CHAR_JIEUN_001"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun stands by the window, takes a deep breath, and turns back into the room with a settled expression.",
+    "start_state": [
+      "Jieun is standing by the window looking out at the city view."
+    ],
+    "end_state": [
+      "Jieun has turned away from the window and is facing the room."
+    ]
+  },
+  "emotion": {
+    "primary_actor": "settled and curious",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "placed on the bed",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_ROOM_KEY_001",
+      "state": "on the desk",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "state": "in her hand or pocket",
+      "visible": false
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L001"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is in her hotel room and has seen the city view from the window.",
+      "She is feeling settled and comfortable.",
+      "She is thinking about taking a walk to explore the area.",
+      "Her bags are placed down in the room."
+    ],
+    "carry_out": [
+      "Jieun is facing the room, ready to prepare for her walk.",
+      "Her crossbody bag is on the bed.",
+      "Her room key is on the desk."
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

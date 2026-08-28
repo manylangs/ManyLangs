@@ -1,0 +1,26 @@
+ORDER: 012/065
+SCENE: S004
+SHOT: SHOT_001
+DURATION: 6.0 seconds
+ASPECT RATIO: 16:9
+RESOLUTION: 1080p
+
+REFERENCE IMAGE:
+- _references/jieun_primary.png
+
+PROMPT:
+A young woman with an oval face, soft features, natural eyebrows, dark brown eyes, light natural makeup, and a warm friendly expression, with shoulder-length dark brown hair, straight with slight natural waves, tucked behind her ears, wearing a white casual t-shirt, a light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch, carrying a medium-sized travel backpack on her back, a small crossbody bag across her body, a smartphone held in her hand lowered to her side, and a passport in her other hand, walks into the baggage claim area of JFK International Airport, a large terminal with high ceilings, digital flight information displays, signage for Arrivals, Immigration, and Baggage Claim, moving walkways and escalators, and large windows with natural light, during daytime with bright indoor terminal lighting, while other passengers gather around the baggage carousels and luggage carts are pushed by arriving travelers. She looks around, checks the digital flight information display to confirm the carousel number for flight KE081, then begins to turn toward the carousel area. Medium-wide shot, eye-level angle, smooth follow movement. She has completed immigration successfully and is now heading toward baggage claim, carrying her backpack and crossbody bag, with her smartphone and passport in her hands, having identified the correct carousel number and moving toward the carousel area.
+
+NEGATIVE / DO-NOT-CHANGE NOTES:
+- Do not change character identity.
+- Do not change canonical location identity.
+- Do not introduce new characters.
+- Do not introduce new locations.
+- Do not alter canonical prop state.
+- Do not change story events.
+- Do not show Jieun's checked luggage arriving on the carousel.
+- Do not show Jieun leaving the baggage claim area.
+- Do not show Jieun putting her passport away.
+
+OUTPUT FILE:
+S004_SHOT_001.mp4

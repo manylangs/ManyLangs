@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "001"
+  },
+  "title": {
+    "target": "Salutations",
+    "en": "Greetings",
+    "es": "Saludos",
+    "fr": "Salutations",
+    "pt": "Saudações",
+    "kr": "인사",
+    "zh": "问候",
+    "jp": "挨拶",
+    "ru": "Приветствия"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Bonjour, comment allez-vous aujourd'hui ?",
+            "en": "Hello, how are you today?",
+            "es": "Hola, ¿cómo está usted hoy?",
+            "fr": "Bonjour, comment allez-vous aujourd'hui ?",
+            "pt": "Olá, como está hoje?",
+            "kr": "안녕하세요, 오늘은 어떻게 지내세요?",
+            "zh": "你好，你今天好吗？",
+            "jp": "こんにちは、今日はお元気ですか？",
+            "ru": "Здравствуйте, как у вас сегодня дела?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Je vais très bien, merci. Et vous, ça va ?",
+            "en": "I'm doing very well, thank you. And you, how are you?",
+            "es": "Estoy muy bien, gracias. ¿Y usted, qué tal?",
+            "fr": "Je vais très bien, merci. Et vous, ça va ?",
+            "pt": "Estou muito bem, obrigada. E você, está bem?",
+            "kr": "저는 아주 잘 지내요, 감사합니다. 당신은요, 괜찮으세요?",
+            "zh": "我很好，谢谢。你呢，你好吗？",
+            "jp": "とても元気です、ありがとうございます。あなたはどうですか、大丈夫ですか？",
+            "ru": "У меня всё очень хорошо, спасибо. А у вас как дела?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ça va bien, merci. Vous êtes d'où ?",
+            "en": "I'm doing well, thanks. Where are you from?",
+            "es": "Estoy bien, gracias. ¿De dónde es usted?",
+            "fr": "Ça va bien, merci. Vous êtes d'où ?",
+            "pt": "Estou bem, obrigada. De onde você é?",
+            "kr": "저는 잘 지내요, 감사합니다. 당신은 어디 출신이세요?",
+            "zh": "我很好，谢谢。你是哪里人？",
+            "jp": "元気です、ありがとうございます。あなたはどちらの出身ですか？",
+            "ru": "У меня всё хорошо, спасибо. Вы откуда?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Je suis de Lyon, mais j'habite à Paris maintenant.",
+            "en": "I'm from Lyon, but I live in Paris now.",
+            "es": "Soy de Lyon, pero ahora vivo en París.",
+            "fr": "Je suis de Lyon, mais j'habite à Paris maintenant.",
+            "pt": "Sou de Lyon, mas moro em Paris agora.",
+            "kr": "저는 리옹 출신이에요, 하지만 지금은 파리에 살아요.",
+            "zh": "我是里昂人，但现在住在巴黎。",
+            "jp": "リヨンの出身ですが、今はパリに住んでいます。",
+            "ru": "Я из Лиона, но сейчас живу в Париже."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ah, d'accord ! Paris est une belle ville.",
+            "en": "Oh, I see! Paris is a beautiful city.",
+            "es": "¡Ah, de acuerdo! París es una ciudad hermosa.",
+            "fr": "Ah, d'accord ! Paris est une belle ville.",
+            "pt": "Ah, entendo! Paris é uma cidade bonita.",
+            "kr": "아, 그렇군요! 파리는 아름다운 도시예요.",
+            "zh": "啊，这样啊！巴黎是一座美丽的城市。",
+            "jp": "ああ、そうなんですね！パリは美しい街ですね。",
+            "ru": "А, понятно! Париж — красивый город."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Oui, j'adore cette ville. Enchanté de vous rencontrer.",
+            "en": "Yes, I love that city. Nice to meet you.",
+            "es": "Sí, me encanta esta ciudad. Encantado de conocerle.",
+            "fr": "Oui, j'adore cette ville. Enchanté de vous rencontrer.",
+            "pt": "Sim, adoro esta cidade. Prazer em conhecê-lo.",
+            "kr": "네, 저는 이 도시를 아주 좋아해요. 만나서 반가워요.",
+            "zh": "是的，我很喜欢这座城市。很高兴认识你。",
+            "jp": "はい、この街が大好きです。お会いできて嬉しいです。",
+            "ru": "Да, я обожаю этот город. Приятно познакомиться."
+          }
+        }
+      ]
+    }
+  ]
+}

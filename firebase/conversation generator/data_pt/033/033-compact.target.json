@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Repartição pública",
+  "sets": {
+    "001": [
+      "Bom dia! Eu preciso tirar a segunda via do meu documento de identidade.",
+      "Bom dia! A senhora já agendou o atendimento pelo site?",
+      "Ainda não agendei. Eu posso fazer isso aqui mesmo?",
+      "Pode sim, mas a senhora vai precisar esperar um pouco na fila.",
+      "Sem problema. Quanto tempo costuma demorar a espera?",
+      "Em média uns quarenta minutos, mas hoje está mais tranquilo."
+    ],
+    "002": [
+      "Com licença, eu vim buscar a minha certidão de nascimento.",
+      "A senhora trouxe o protocolo de solicitação?",
+      "Trouxe sim, está aqui comigo. Precisa de mais algum documento?",
+      "Só o protocolo e um documento com foto, por favor.",
+      "Certo. Eu posso retirar a certidão de outra pessoa?",
+      "Só se a senhora tiver uma procuração assinada e reconhecida em cartório."
+    ],
+    "003": [
+      "Oi, eu preciso atualizar o meu endereço no cadastro.",
+      "Olá! A senhora pode fazer isso pelo aplicativo, sem precisar vir aqui.",
+      "É que o aplicativo não está aceitando o meu comprovante.",
+      "Entendi. Então eu vou precisar ver o comprovante atual e o seu documento.",
+      "Aqui estão os dois. O comprovante está no meu nome mesmo.",
+      "Perfeito. Vou fazer a atualização agora, só um instante."
+    ],
+    "004": [
+      "Moço, eu vim resolver um problema com o meu benefício.",
+      "A senhora tem o número do processo ou o cartão do benefício?",
+      "Tenho o cartão aqui. O pagamento não caiu esse mês.",
+      "Deixa eu verificar no sistema... Aqui consta que houve um bloqueio.",
+      "Um bloqueio? Por quê? Eu não fui informada de nada.",
+      "Pode ter sido por falta de atualização cadastral. Vou verificar com o setor responsável."
+    ],
+    "005": [
+      "Bom dia! Eu gostaria de solicitar a minha aposentadoria.",
+      "Bom dia! A senhora já fez a simulação no portal da previdência?",
+      "Já fiz, mas apareceu que faltam alguns documentos.",
+      "A senhora trouxe os documentos que o portal listou?",
+      "Trouxe todos, menos a carteira de trabalho antiga.",
+      "Sem esse documento a análise vai demorar mais. A senhora pode trazer depois?"
+    ],
+    "006": [
+      "Com licença, eu preciso de uma declaração de imposto de renda.",
+      "A senhora já entregou a declaração deste ano?",
+      "Entreguei, mas perdi o recibo e preciso comprovar a entrega.",
+      "Sem problemas. Eu posso emitir uma segunda via do recibo aqui.",
+      "Isso resolve o meu problema. Tem alguma taxa para pagar?",
+      "Não, esse serviço é gratuito. Vou emitir agora para a senhora."
+    ],
+    "007": [
+      "Olá! Eu vim renovar a minha carteira de motorista.",
+      "Olá! A senhora já fez o exame médico e o exame psicológico?",
+      "Já fiz os dois, mas o resultado do psicológico ainda não saiu.",
+      "Então a senhora precisa aguardar o resultado sair no sistema.",
+      "E quanto tempo leva para sair? Eu estou com pressa.",
+      "Em geral, até cinco dias úteis. A senhora pode acompanhar pelo site."
+    ],
+    "008": [
+      "Moça, eu preciso registrar uma ocorrência por perda de documentos.",
+      "A senhora perdeu quais documentos? Todos juntos?",
+      "Perdi a identidade, o CPF e o cartão do banco.",
+      "A senhora pode registrar tudo em uma única ocorrência online.",
+      "Eu prefiro fazer aqui mesmo, para garantir que está tudo certo.",
+      "Tudo bem. Vou precisar de alguns dados pessoais e o local onde perdeu."
+    ],
+    "009": [
+      "Bom dia! Eu vim solicitar a isenção da taxa de concurso.",
+      "Bom dia! A senhora se enquadra em qual critério de isenção?",
+      "Eu sou inscrita no cadastro único de programas sociais.",
+      "A senhora trouxe o comprovante de inscrição atualizado?",
+      "Trouxe, mas está com o nome da minha mãe. Eu sou dependente.",
+      "Nesse caso, vai ser preciso apresentar também a certidão de nascimento."
+    ],
+    "010": [
+      "Com licença, eu queria saber se o meu processo já foi analisado.",
+      "A senhora tem o número do protocolo para eu consultar?",
+      "Tenho sim. O número está aqui neste papel.",
+      "Deixa eu ver... O processo está em análise no setor jurídico.",
+      "E tem previsão de quando vai sair o resultado?",
+      "Infelizmente não temos uma data exata, mas a senhora pode acompanhar pelo site."
+    ]
+  },
+  "level": "b2",
+  "chapter_id": "CONV_PT_GOVERNMENT_OFFICE",
+  "id": "033",
+  "target_lang": "pt"
+}

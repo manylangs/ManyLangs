@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "overall_pass": true,
+  "severity": "pass",
+  "scene_checks": [
+    {
+      "scene_id": "S001",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun is at JFK Airport after landing",
+        "She prepares to disembark from the airplane"
+      ]
+    },
+    {
+      "scene_id": "S002",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun is in the immigration area at JFK Airport",
+        "She asks an airport employee for help"
+      ]
+    },
+    {
+      "scene_id": "S003",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun completes the immigration interview",
+        "She answers questions about her visit"
+      ]
+    },
+    {
+      "scene_id": "S004",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun is at the baggage claim area",
+        "She looks for the carousel matching her flight number"
+      ]
+    },
+    {
+      "scene_id": "S005",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun retrieves her luggage from the carousel",
+        "She looks for signs to ground transportation"
+      ]
+    },
+    {
+      "scene_id": "S006",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun is at the ground transportation area",
+        "She observes options for taxis, ride-sharing, and public transit"
+      ]
+    },
+    {
+      "scene_id": "S007",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun asks a transit employee for advice",
+        "She decides to take public transit to Manhattan"
+      ]
+    },
+    {
+      "scene_id": "S008",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun boards the AirTrain at JFK",
+        "She is heading toward the subway connection"
+      ]
+    },
+    {
+      "scene_id": "S009",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun is at the station to transfer to the subway",
+        "She asks how to pay for the subway and which train to take toward Manhattan"
+      ]
+    },
+    {
+      "scene_id": "S010",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun boards the subway train toward Manhattan",
+        "She observes the other passengers"
+      ]
+    },
+    {
+      "scene_id": "S011",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun checks the subway map",
+        "She compares station names with her phone's map"
+      ]
+    },
+    {
+      "scene_id": "S012",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "The subway train stops between stations",
+        "The lights flicker briefly"
+      ]
+    },
+    {
+      "scene_id": "S013",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "The subway train resumes moving",
+        "Jieun continues to watch for her stop"
+      ]
+    },
+    {
+      "scene_id": "S014",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun arrives at her subway stop in Manhattan",
+        "She exits the station and sees the city skyline"
+      ]
+    },
+    {
+      "scene_id": "S015",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun walks to her hotel using her phone for directions",
+        "She arrives at the hotel entrance"
+      ]
+    },
+    {
+      "scene_id": "S016",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun checks in at the hotel front desk",
+        "She provides her reservation details and receives her room key"
+      ]
+    },
+    {
+      "scene_id": "S017",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun enters her hotel room",
+        "She sees the city view from the window"
+      ]
+    },
+    {
+      "scene_id": "S018",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun freshens up and decides to go for a walk",
+        "She grabs her crossbody bag and heads out"
+      ]
+    },
+    {
+      "scene_id": "S019",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun walks along the evening street",
+        "She observes the lights, sounds, and people"
+      ]
+    },
+    {
+      "scene_id": "S020",
+      "pass": true,
+      "reality_sensitive_facts": [
+        "Jieun sees a familiar landmark in the distance",
+        "She decides to head back to the hotel"
+      ]
+    }
+  ],
+  "issues": []
+}

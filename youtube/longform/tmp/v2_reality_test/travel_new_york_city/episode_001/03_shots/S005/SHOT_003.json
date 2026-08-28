@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S005",
+  "shot_id": "SHOT_003",
+  "sequence": 3,
+  "duration_seconds": 8.0,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001",
+    "B"
+  ],
+  "visual_intent": "Show the airport employee pointing toward the ground transportation signs and giving directions to Jieun.",
+  "framing": {
+    "shot_size": "medium",
+    "subject_priority": [
+      "B",
+      "CHAR_JIEUN_001"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "B",
+    "description": "The airport employee points toward the ground transportation signs and gives directions to Jieun.",
+    "start_state": [
+      "The airport employee is standing in front of Jieun",
+      "Jieun is listening attentively"
+    ],
+    "end_state": [
+      "The employee has finished pointing and giving directions",
+      "Jieun is looking in the direction the employee pointed"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "helpful and polite",
+    "supporting": {
+      "CHAR_JIEUN_001": "attentive and relieved"
+    }
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "held by Jieun",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L002",
+      "L004"
+    ],
+    "speaker_focus": "B"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is standing in front of the airport employee",
+      "The employee is about to respond"
+    ],
+    "carry_out": [
+      "The employee has given directions",
+      "Jieun is looking toward the ground transportation signs"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

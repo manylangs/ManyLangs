@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S017",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "source_dialogue": {
+    "source_scene_id": "S017",
+    "source_line_ids": [
+      "L001",
+      "L002",
+      "L003",
+      "L004"
+    ]
+  },
+  "key_expressions": [
+    {
+      "key_expression_id": "KE001",
+      "source_line_ids": [
+        "L001"
+      ],
+      "expression": "This is my room. It's nice and clean.",
+      "meaning": "이 방은 내 방이야. 깔끔하고 좋아.",
+      "usage": "호텔 방이나 새로 들어간 공간에 대해 만족감을 표현할 때 쓴다. 'nice and clean'은 '깔끔하고 좋은'이라는 뜻으로, 긍정적인 느낌을 줄 때 자주 쓰는 표현이다.",
+      "context": "지은이 호텔 방에 처음 들어와 방 상태를 확인하고 만족감을 표현하는 상황이다.",
+      "communicative_function": "expressing satisfaction",
+      "difficulty": "A1",
+      "priority": "core",
+      "variation": "This room is nice and clean.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE002",
+      "source_line_ids": [
+        "L002"
+      ],
+      "expression": "Let me put my bags down here.",
+      "meaning": "가방을 여기에 내려놓을게.",
+      "usage": "짐을 내려놓거나 물건을 어딘가에 두겠다고 할 때 쓰는 표현이다. 'Let me'는 '내가 ~할게'라는 뜻으로, 자신의 행동을 가볍게 알릴 때 자연스럽게 쓴다.",
+      "context": "지은이 호텔 방에 들어와서 가지고 온 가방을 바닥에 내려놓는 상황이다.",
+      "communicative_function": "expressing intention",
+      "difficulty": "A2",
+      "priority": "useful",
+      "variation": "Let me put my bags over there.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE003",
+      "source_line_ids": [
+        "L003"
+      ],
+      "expression": "Wow, the view from this window is beautiful.",
+      "meaning": "와, 이 창문에서 보이는 풍경이 정말 아름답다.",
+      "usage": "창밖 풍경이나 경치를 보고 감탄할 때 쓰는 표현이다. 'Wow'는 감탄사를 나타내며, 'the view from this window'는 '이 창문에서 보이는 풍경'이라는 뜻이다.",
+      "context": "지은이가 호텔 방 창문으로 도시의 야경을 바라보며 감탄하는 상황이다.",
+      "communicative_function": "expressing admiration",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "The view from this window is amazing.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE004",
+      "source_line_ids": [
+        "L004"
+      ],
+      "expression": "I made it to New York.",
+      "meaning": "나는 뉴욕에 도착했어.",
+      "usage": "어려운 여정이나 목표를 끝내고 도착했을 때 성취감을 담아 쓰는 표현이다. 'make it to'는 '~에 도착하다'라는 뜻으로, 여행이나 중요한 목표를 이뤘을 때 자주 쓴다.",
+      "context": "지은이가 긴 여정 끝에 뉴욕에 무사히 도착했음을 스스로에게 확인하며 성취감을 느끼는 상황이다.",
+      "communicative_function": "expressing accomplishment",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "I finally made it to New York.",
+      "common_mistake": "make it to 대신 'make to'라고 쓰는 실수를 할 수 있다. 'make it to'가 올바른 표현이다.",
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE005",
+      "source_line_ids": [
+        "L004"
+      ],
+      "expression": "I think I'll take a walk later.",
+      "meaning": "나중에 산책을 할 생각이야.",
+      "usage": "가까운 미래에 할 일에 대한 계획이나 의향을 부드럽게 표현할 때 쓴다. 'I think I'll'은 '~할 것 같아'라는 뜻으로, 확실한 계획보다는 가벼운 의향을 나타낼 때 자연스럽다.",
+      "context": "지은이가 호텔 방에 정착한 후, 주변을 탐험하기 위해 나중에 산책을 하겠다는 생각을 말하는 상황이다.",
+      "communicative_function": "expressing intention",
+      "difficulty": "A2",
+      "priority": "useful",
+      "variation": "I think I'll go for a walk later.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    }
+  ],
+  "validation": {
+    "expression_count": 5,
+    "all_expressions_exist_in_dialogue": true,
+    "source_lines_valid": true,
+    "cefr_appropriate": true
+  }
+}

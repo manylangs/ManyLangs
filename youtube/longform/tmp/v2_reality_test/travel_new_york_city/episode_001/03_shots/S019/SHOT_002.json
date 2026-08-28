@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S019",
+  "shot_id": "SHOT_002",
+  "sequence": 2,
+  "duration_seconds": 6.0,
+  "location_ref": "LOC_MANHATTAN_EVENING_STREET_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun pausing to look at an interesting storefront display.",
+  "framing": {
+    "shot_size": "medium",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "storefront display"
+    ]
+  },
+  "camera": {
+    "angle": "three_quarter",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun pauses and turns to look at a storefront with an interesting display, her expression showing curiosity.",
+    "start_state": [
+      "Jieun is walking along the evening street.",
+      "She notices a storefront with an interesting display."
+    ],
+    "end_state": [
+      "Jieun is standing still, facing the storefront display.",
+      "She is looking at it with curiosity."
+    ]
+  },
+  "emotion": {
+    "primary_actor": "curious and interested",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "over Jieun's shoulder",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_ROOM_KEY_001",
+      "state": "inside crossbody bag",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "state": "not in use",
+      "visible": false
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L003"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is walking along the evening street, experiencing the city atmosphere.",
+      "She is feeling more comfortable and less anxious.",
+      "She is enjoying the sights and sounds of New York.",
+      "She is still carrying her crossbody bag and room key.",
+      "She remains close to the hotel area."
+    ],
+    "carry_out": [
+      "Jieun is standing still, looking at a storefront display.",
+      "She is feeling curious and interested.",
+      "She is still carrying her crossbody bag and room key.",
+      "She remains close to the hotel area."
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

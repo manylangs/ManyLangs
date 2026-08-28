@@ -1,0 +1,28 @@
+ORDER: 052/065
+SCENE: S016
+SHOT: SHOT_004
+DURATION: 5.0 seconds
+ASPECT RATIO: 16:9
+RESOLUTION: 1080p
+
+REFERENCE IMAGE:
+- _references/jieun_primary.png
+
+PROMPT:
+A medium-wide shot from a three-quarter angle, smooth tracking movement following Jieun as she smiles, thanks the front desk employee, and begins walking toward the elevator with her luggage. She is a young woman with an oval face, soft features, natural eyebrows, dark brown eyes, light natural makeup, and a warm friendly expression. She has shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears. She wears a white casual t-shirt, a light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch. She carries a medium-sized travel backpack on her back, a small crossbody bag across her body, and pulls a checked suitcase beside her. She holds a hotel room key in her right hand. The setting is the Manhattan Hotel lobby during the day, with bright natural daylight through the windows mixed with warm indoor lighting, a front desk behind her, and an elevator area ahead. A few guests walk through the lobby with soft background music. She moves away from the front desk toward the elevator, pulling her suitcase, with a relieved and happy expression.
+
+NEGATIVE / DO-NOT-CHANGE NOTES:
+- Do not change Jieun's character identity, appearance, hair, or clothing.
+- Do not change the canonical location identity of the Manhattan Hotel lobby.
+- Do not introduce new characters.
+- Do not introduce new locations.
+- Do not alter the canonical prop state: backpack on back, crossbody bag across body, checked suitcase being pulled, room key in right hand.
+- Do not show Jieun moving past the hotel lobby or leaving the hotel.
+- Do not show Jieun entering her room before reaching the elevator.
+- Do not introduce a new travel problem.
+- Do not show Jieun's suitcase being lost or missing.
+- Do not show Jieun's passport or smartphone being dropped or lost.
+- Do not change story events.
+
+OUTPUT FILE:
+S016_SHOT_004.mp4

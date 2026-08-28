@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S009",
+  "shot_id": "SHOT_005",
+  "sequence": 5,
+  "duration_seconds": 8.0,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001",
+    "B"
+  ],
+  "visual_intent": "Show Jieun confirming her understanding by repeating the steps and looking toward the ticket machine and Platform 2.",
+  "framing": {
+    "shot_size": "medium_close",
+    "subject_priority": [
+      "CHAR_JIEUN_001"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun nods in understanding, looks at the ticket machine and then toward Platform 2.",
+    "start_state": [
+      "Jieun is looking toward the platform signs.",
+      "The transit employee is standing beside her."
+    ],
+    "end_state": [
+      "Jieun is looking toward the ticket machine and then toward Platform 2.",
+      "Her expression shows growing confidence."
+    ]
+  },
+  "emotion": {
+    "primary_actor": "more confident and understanding",
+    "supporting": {
+      "B": "satisfied and helpful"
+    }
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on Jieun's back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "held by Jieun's hand",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L005",
+      "L006"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun has been told to take the Downtown train on Platform 2.",
+      "She is looking toward the platform signs."
+    ],
+    "carry_out": [
+      "Jieun has figured out how to pay for the subway with help.",
+      "She is standing near the ticket machine area, looking toward Platform 2.",
+      "She has a more confident expression after receiving directions.",
+      "She is preparing to buy a ticket and head to the platform."
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S020",
+  "shot_id": "SHOT_002",
+  "sequence": 2,
+  "source_refs": {
+    "production_scene": "02_visual/production_scenes/S020.json",
+    "shot": "03_shots/S020/SHOT_002.json",
+    "visual_continuity": "04_visual_continuity/S020/SHOT_002.json"
+  },
+  "generation": {
+    "provider": "vidu",
+    "duration_seconds": 5.0,
+    "aspect_ratio": "16:9",
+    "resolution": "1080p",
+    "mode": "reference_guided"
+  },
+  "actors": [
+    {
+      "actor_ref": "CHAR_JIEUN_001",
+      "identity_type": "persistent",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Small crossbody bag",
+        "Hotel room key card",
+        "Smartphone"
+      ],
+      "body_state": [
+        "Standing still on the sidewalk",
+        "Smiling softly with a warm, satisfied expression",
+        "Crossbody bag over her shoulder"
+      ],
+      "emotion": "accomplished and content",
+      "reference_asset_ids": [
+        "ASSET_CHAR_JIEUN_PRIMARY_000001"
+      ]
+    }
+  ],
+  "location": {
+    "location_ref": "LOC_MANHATTAN_EVENING_STREET_001",
+    "identity_lock": true,
+    "current_zone": "Sidewalk corner on a lively Manhattan evening street, near the hotel area",
+    "persistent_features": [
+      "Sidewalks and street crossings",
+      "Streetlights and building lights",
+      "Storefronts and signage",
+      "City traffic and taxis",
+      "Typical Manhattan architecture"
+    ],
+    "orientation_state": [
+      "Jieun is standing still at the corner",
+      "She is facing the tall building in the distance",
+      "The street and passing traffic are beside her",
+      "The direction she came from is behind her"
+    ],
+    "reference_asset_ids": []
+  },
+  "props": [
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "over Jieun's shoulder",
+      "position": "over Jieun's shoulder",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_ROOM_KEY_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "inside crossbody bag",
+      "position": "inside crossbody bag",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "not in use",
+      "position": "in her crossbody bag or pocket",
+      "visible": false,
+      "continuity_lock": true
+    }
+  ],
+  "prompt": {
+    "subject": "Jieun, a young woman with an oval face, soft features, natural eyebrows, dark brown eyes, and light natural makeup, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch. She has shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears. She is standing still on the sidewalk with a soft smile of accomplishment, her small crossbody bag over her shoulder.",
+    "environment": "A lively Manhattan evening street corner near the hotel area. Warm evening street lighting from streetlights and storefronts, mixed with the soft glow of building lights and passing traffic. Sidewalks, street crossings, storefronts, signage, and typical Manhattan architecture. Pedestrians walking on the sidewalk, cars and taxis passing by, distant city sounds.",
+    "action": "Jieun smiles softly to herself, feeling a quiet sense of accomplishment as she recognizes the area near her hotel, looking toward a familiar tall building in the distance.",
+    "camera": "Medium close shot, three-quarter angle, static locked camera.",
+    "continuity": "Jieun is standing still on the evening street, looking at a familiar tall building in the distance. She recognizes the area near her hotel. Her crossbody bag remains over her shoulder. She is smiling softly with a sense of accomplishment.",
+    "final_prompt": "Medium close shot, static locked camera at a three-quarter angle. Jieun, a young woman with an oval face, soft features, natural eyebrows, dark brown eyes, and light natural makeup, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch, with shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears. She is standing still on a lively Manhattan evening street corner near the hotel area, her small crossbody bag over her shoulder. She smiles softly to herself with a warm, satisfied expression of accomplishment as she recognizes the area near her hotel, looking toward a familiar tall building in the distance. Warm evening street lighting from streetlights and storefronts, mixed with the soft glow of building lights and passing traffic. Pedestrians walking on the sidewalk, cars and taxis passing by, distant city sounds."
+  },
+  "negative_constraints": [
+    "Do not change character identity.",
+    "Do not change canonical location identity.",
+    "Do not introduce new characters.",
+    "Do not introduce new locations.",
+    "Do not alter canonical prop state.",
+    "Do not change story events.",
+    "Do not show Jieun moving past the evening street area.",
+    "Do not show Jieun's backpack or checked suitcase on the walk.",
+    "Do not show Jieun's passport or smartphone being dropped or lost.",
+    "Do not introduce a new travel problem."
+  ],
+  "continuity": {
+    "carry_in": [
+      "Jieun is standing still on the evening street, looking at a familiar tall building in the distance.",
+      "She recognizes the area near her hotel.",
+      "Her crossbody bag remains over her shoulder."
+    ],
+    "carry_out": [
+      "Jieun is smiling softly with a sense of accomplishment.",
+      "She is still standing on the evening street near the hotel area.",
+      "Her crossbody bag remains over her shoulder."
+    ],
+    "must_match_previous_shot": true,
+    "previous_scene_id": "S020",
+    "previous_shot_id": "SHOT_001",
+    "next_scene_id": "S020",
+    "next_shot_id": "SHOT_003"
+  }
+}

@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b2",
+    "id": "038"
+  },
+  "title": {
+    "target": "Детали покупки",
+    "en": "Purchase Details",
+    "es": "Detalles de la compra",
+    "fr": "Détails de l'achat",
+    "pt": "Detalhes da compra",
+    "kr": "구매 세부사항",
+    "jp": "購入の詳細",
+    "zh": "购买详情",
+    "ru": "Детали покупки"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты уже выбрал, что подаришь маме на день рождения?",
+            "en": "Ivan, have you already chosen what you'll give Mom for her birthday?",
+            "es": "Iván, ¿ya has elegido qué le vas a regalar a tu madre por su cumpleaños?",
+            "fr": "Ivan, tu as déjà choisi ce que tu vas offrir à ta mère pour son anniversaire ?",
+            "pt": "Ivan, você já escolheu o que vai dar para a sua mãe no aniversário dela?",
+            "kr": "이반, 엄마 생신 선물로 뭐 드릴지 이미 골랐어?",
+            "jp": "イワン、お母さんの誕生日に何を贈るかもう決めた？",
+            "zh": "伊万，你已经选好给妈妈送什么生日礼物了吗？",
+            "ru": "Иван, ты уже выбрал, что подаришь маме на день рождения?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Почти. Я смотрел на кухонный комбайн, но пока не уверен в модели.",
+            "en": "Almost. I was looking at a food processor, but I'm not sure about the model yet.",
+            "es": "Casi. He estado mirando robots de cocina, pero todavía no estoy seguro del modelo.",
+            "fr": "Presque. J'ai regardé un robot culinaire, mais je ne suis pas encore sûr du modèle.",
+            "pt": "Quase. Eu estava olhando para um processador de alimentos, mas ainda não tenho certeza do modelo.",
+            "kr": "거의 다 정했어. 푸드 프로세서를 보고 있는데, 아직 모델이 확실하지 않아.",
+            "jp": "もうすぐ決めるよ。フードプロセッサーを見ていたんだけど、まだ機種に自信がなくて。",
+            "zh": "差不多了。我看了料理机，但还没确定型号。",
+            "ru": "Почти. Я смотрел на кухонный комбайн, но пока не уверен в модели."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А какой у неё сейчас? Может, лучше взять что-то другое?",
+            "en": "And what does she have now? Maybe it's better to get something different?",
+            "es": "¿Y cuál tiene ella ahora? ¿Quizás sería mejor comprar otra cosa?",
+            "fr": "Et lequel elle a en ce moment ? Peut-être qu'il vaut mieux prendre autre chose ?",
+            "pt": "E qual é o que ela tem agora? Talvez seja melhor comprar outra coisa?",
+            "kr": "지금 쓰시는 건 어떤 건데? 다른 걸로 고르는 게 나을 수도 있지 않아?",
+            "jp": "今お母さんが使っているのはどんなの？ 別のものにした方がいいかもしれないよ。",
+            "zh": "她现在用的是什么样的？也许最好买点别的？",
+            "ru": "А какой у неё сейчас? Может, лучше взять что-то другое?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "У неё старый, ещё от бабушки. Хочется найти что-то современное и надёжное.",
+            "en": "She has an old one, still from grandma. I want to find something modern and reliable.",
+            "es": "Tiene uno viejo, todavía de su abuela. Quiero encontrar algo moderno y fiable.",
+            "fr": "Elle en a un vieux, encore de ma grand-mère. J'aimerais trouver quelque chose de moderne et de fiable.",
+            "pt": "Ela tem um antigo, ainda da avó. Quero encontrar algo moderno e confiável.",
+            "kr": "할머니한테 물려받은 오래된 거야. 뭔가 현대적이고 믿을 수 있는 걸 찾고 싶어.",
+            "jp": "おばあちゃんからもらった古いやつなんだ。何か現代的で信頼できるものを探したいんだよね。",
+            "zh": "她那个是旧的，还是外婆留下来的。想找个现代又可靠的。",
+            "ru": "У неё старый, ещё от бабушки. Хочется найти что-то современное и надёжное."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда обрати внимание на отзывы. Я недавно покупала технику онлайн и очень довольна.",
+            "en": "Then pay attention to the reviews. I recently bought electronics online and I'm very satisfied.",
+            "es": "Entonces fíjate en las opiniones. Hace poco compré tecnología por internet y estoy muy contenta.",
+            "fr": "Alors fais attention aux avis. J'ai récemment acheté de l'électronique en ligne et j'en suis très contente.",
+            "pt": "Então presta atenção nas avaliações. Eu comprei eletrônicos online recentemente e estou muito satisfeita.",
+            "kr": "그럼 후기 좀 봐 봐. 나도 최근에 온라인으로 전자제품 샀는데 아주 만족해.",
+            "jp": "それならレビューをチェックしてみて。私も最近オンラインで家電を買って、とても満足しているの。",
+            "zh": "那你要注意看评价。我最近在网上买过电器，非常满意。",
+            "ru": "Тогда обрати внимание на отзывы. Я недавно покупала технику онлайн и очень довольна."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо за совет! Посмотрю сегодня вечером, что пишут про разные модели.",
+            "en": "Thanks for the advice! I'll look tonight at what they write about different models.",
+            "es": "¡Gracias por el consejo! Esta noche miraré lo que escriben sobre los diferentes modelos.",
+            "fr": "Merci pour le conseil ! Je regarderai ce soir ce qu'ils disent des différents modèles.",
+            "pt": "Obrigado pela dica! Vou ver hoje à noite o que falam sobre os diferentes modelos.",
+            "kr": "조언 고마워! 오늘 저녁에 여러 모델에 대한 후기가 어떤지 좀 볼게.",
+            "jp": "アドバイスありがとう！ 今晩、いろんな機種について何が書いてあるか見てみるよ。",
+            "zh": "谢谢你的建议！我今晚就看看大家对不同型号的评价。",
+            "ru": "Спасибо за совет! Посмотрю сегодня вечером, что пишут про разные модели."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты не знаешь, где здесь принимают товар обратно без чека?",
+            "en": "Dmitry, do you know where they accept returns here without a receipt?",
+            "es": "Dmitri, ¿sabes si aquí aceptan devoluciones sin ticket?",
+            "fr": "Dmitri, tu ne sais pas où on peut rapporter un article ici sans ticket de caisse ?",
+            "pt": "Dmitri, você sabe onde aceitam devolução de produto aqui sem a nota fiscal?",
+            "kr": "드미트리, 여기서 영수증 없이 물건 환불받는 곳이 어디인지 알아?",
+            "jp": "ドミトリー、ここでレシートなしで商品を返品できるところを知らない？",
+            "zh": "德米特里，你知道这里哪里可以不用小票退货吗？",
+            "ru": "Дмитрий, ты не знаешь, где здесь принимают товар обратно без чека?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно в этом магазине возврат оформляют по паспорту, если есть гарантийный талон.",
+            "en": "Usually in this store, returns are processed with a passport if you have a warranty card.",
+            "es": "Normalmente en esta tienda hacen la devolución con el pasaporte, si tienes el certificado de garantía.",
+            "fr": "En général, dans ce magasin, le retour se fait avec une pièce d'identité, s'il y a le bon de garantie.",
+            "pt": "Normalmente nessa loja a devolução é feita com o passaporte, se tiver o certificado de garantia.",
+            "kr": "보통 이 매장에서는 보증서가 있으면 신분증으로 환불 처리가 돼.",
+            "jp": "たいていこの店では、保証書があればパスポートで返品を受け付けているよ。",
+            "zh": "这家店一般凭保修单和护照就能办理退货。",
+            "ru": "Обычно в этом магазине возврат оформляют по паспорту, если есть гарантийный талон."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично. А если вещь просто не подошла по размеру?",
+            "en": "Great. And what if the item just doesn't fit in size?",
+            "es": "Genial. ¿Y si la cosa simplemente no me ha venido bien de talla?",
+            "fr": "Parfait. Et si l'article ne convient tout simplement pas à cause de la taille ?",
+            "pt": "Ótimo. E se o item simplesmente não serviu no tamanho?",
+            "kr": "좋네. 그런데 그냥 사이즈가 안 맞아서 그런 거라면?",
+            "jp": "それはいいね。じゃあ、サイズが合わなかっただけの場合はどうなるの？",
+            "zh": "太好了。那如果只是尺码不合适呢？",
+            "ru": "Отлично. А если вещь просто не подошла по размеру?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда нужно, чтобы упаковка была целой, и лучше уложиться в четырнадцать дней.",
+            "en": "Then the packaging needs to be intact, and it's better to make it within fourteen days.",
+            "es": "Entonces el embalaje tiene que estar intacto, y mejor hacerlo dentro de los catorce días.",
+            "fr": "Dans ce cas, il faut que l'emballage soit intact, et il vaut mieux le faire dans les quatorze jours.",
+            "pt": "Nesse caso, a embalagem precisa estar intacta, e o ideal é fazer dentro de quatorze dias.",
+            "kr": "그럴 때는 포장이 훼손되지 않아야 하고, 가급적 십사 일 안에 하는 게 좋아.",
+            "jp": "その場合は、包装がきれいな状態であることが必要で、十四日以内に済ませた方がいいね。",
+            "zh": "那就需要包装完好，而且最好在十四天之内。",
+            "ru": "Тогда нужно, чтобы упаковка была целой, и лучше уложиться в четырнадцать дней."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно. А деньги вернут сразу на карту?",
+            "en": "I see. And will the money be returned to the card right away?",
+            "es": "Entendido. ¿Y el dinero lo devuelven directamente a la tarjeta?",
+            "fr": "Je vois. Et l'argent est remboursé directement sur la carte ?",
+            "pt": "Entendi. E o dinheiro volta direto para o cartão?",
+            "kr": "알겠어. 그럼 돈은 바로 카드로 돌려받는 거야?",
+            "jp": "わかった。お金はすぐにカードに戻るの？",
+            "zh": "明白了。钱会马上退回卡里吗？",
+            "ru": "Понятно. А деньги вернут сразу на карту?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, если платил картой. Наличными, к сожалению, уже не получится.",
+            "en": "Yes, if you paid by card. With cash, unfortunately, it won't be possible anymore.",
+            "es": "Sí, si pagaste con tarjeta. En efectivo, por desgracia, ya no se podrá.",
+            "fr": "Oui, si tu as payé par carte. En espèces, malheureusement, ce ne sera plus possible.",
+            "pt": "Sim, se você pagou com cartão. Em dinheiro, infelizmente, já não vai dar.",
+            "kr": "응, 카드로 결제했으면 그렇게 돼. 현금으로는 아쉽지만 이제 안 될 거야.",
+            "jp": "うん、カードで払ったならね。現金での返金は、残念ながらもうできないよ。",
+            "zh": "是的，如果你是刷卡付的。如果是现金付的，恐怕就不行了。",
+            "ru": "Да, если платил картой. Наличными, к сожалению, уже не получится."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Смотри, я нашла в интернете то самое платье, но цена какая-то подозрительно низкая.",
+            "en": "Look, I found that dress online, but the price is suspiciously low.",
+            "es": "Mira, he encontrado en internet ese mismo vestido, pero el precio es sospechosamente bajo.",
+            "fr": "Regarde, j'ai trouvé sur Internet cette fameuse robe, mais le prix est étrangement bas.",
+            "pt": "Olha, eu encontrei na internet aquele vestido, mas o preço está estranhamente baixo.",
+            "kr": "봐 봐, 인터넷에서 그 드레스를 찾았는데 가격이 왠지 수상할 정도로 싸.",
+            "jp": "見て、ネットであのドレスを見つけたんだけど、値段がなんだか怪しいくらい安いの。",
+            "zh": "你看，我在网上找到了那条裙子，但价格低得有点可疑。",
+            "ru": "Смотри, я нашла в интернете то самое платье, но цена какая-то подозрительно низкая."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хм, обычно это признак подделки. Проверь продавца и почитай отзывы о магазине.",
+            "en": "Hmm, that's usually a sign of a fake. Check the seller and read the store reviews.",
+            "es": "Mmm, normalmente eso es señal de que es una imitación. Comprueba al vendedor y lee las opiniones sobre la tienda.",
+            "fr": "Hmm, c'est généralement un signe de contrefaçon. Vérifie le vendeur et lis les avis sur la boutique.",
+            "pt": "Hmm, normalmente isso é sinal de falsificação. Verifica o vendedor e lê as avaliações da loja.",
+            "kr": "흠, 보통 그런 건 짝퉁이라는 신호야. 판매자 확인해 보고 매장 후기도 읽어 봐.",
+            "jp": "ふむ、それはたいてい偽物のサインだよ。販売者を確認して、お店のレビューも読んでみて。",
+            "zh": "嗯，这通常是假货的标志。查一下卖家，再看看店铺的评价。",
+            "ru": "Хм, обычно это признак подделки. Проверь продавца и почитай отзывы о магазине."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты прав. На сайте нет контактного телефона, только форма для заказа.",
+            "en": "You're right. The site doesn't have a contact phone number, only an order form.",
+            "es": "Tienes razón. En la web no hay teléfono de contacto, solo un formulario para hacer el pedido.",
+            "fr": "Tu as raison. Sur le site, il n'y a pas de numéro de téléphone, seulement un formulaire de commande.",
+            "pt": "Você tem razão. No site não tem telefone de contato, só um formulário de pedido.",
+            "kr": "맞는 말이야. 사이트에 연락처 전화번호가 없고 주문 양식만 있더라.",
+            "jp": "あなたの言う通りね。サイトに連絡先の電話番号がなくて、注文フォームしかないの。",
+            "zh": "你说得对。网站上没有联系电话，只有一个下单表格。",
+            "ru": "Ты прав. На сайте нет контактного телефона, только форма для заказа."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я бы не стал рисковать. Лучше переплатить, но купить в проверенном месте.",
+            "en": "I wouldn't risk it. Better to pay more but buy from a trusted place.",
+            "es": "Yo no me arriesgaría. Mejor pagar un poco más, pero comprar en un sitio de confianza.",
+            "fr": "Je ne prendrais pas le risque. Mieux vaut payer plus cher, mais acheter dans un endroit fiable.",
+            "pt": "Eu não arriscaria. Melhor pagar mais caro, mas comprar em um lugar confiável.",
+            "kr": "나라면 모험하지 않을 거야. 돈을 좀 더 내더라도 믿을 만한 곳에서 사는 게 나아.",
+            "jp": "僕ならリスクは冒さないな。余分に払っても、信頼できるお店で買う方がいいよ。",
+            "zh": "我是不会冒险的。宁愿多花点钱，也要在靠谱的地方买。",
+            "ru": "Я бы не стал рисковать. Лучше переплатить, но купить в проверенном месте."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, пожалуй. Тем более доставка из-за границы займёт слишком много времени.",
+            "en": "Yeah, I guess so. Besides, shipping from abroad would take way too long.",
+            "es": "Sí, quizás. Además, el envío desde el extranjero tardaría demasiado tiempo.",
+            "fr": "Oui, sans doute. D'autant plus que la livraison depuis l'étranger prendrait trop de temps.",
+            "pt": "É, talvez. Até porque a entrega do exterior demoraria tempo demais.",
+            "kr": "응, 그럴 것 같아. 게다가 해외 배송은 시간이 너무 오래 걸릴 테니까.",
+            "jp": "そうね、たぶん。それに海外からの配送は時間がかかりすぎるしね。",
+            "zh": "是啊，说得也是。而且从国外发货也要花太长时间。",
+            "ru": "Да, пожалуй. Тем более доставка из-за границы займёт слишком много времени."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вот именно. А в торговом центре ты сможешь её хотя бы примерить.",
+            "en": "Exactly. And at the mall, you could at least try it on.",
+            "es": "Exacto. Y en el centro comercial, al menos, podrás probártelo.",
+            "fr": "Exactement. Et au centre commercial, tu pourras au moins l'essayer.",
+            "pt": "Exatamente. E no shopping você pelo menos consegue experimentar.",
+            "kr": "바로 그거야. 그리고 쇼핑몰에 가면 적어도 입어볼 수는 있잖아.",
+            "jp": "まさにその通り。ショッピングモールなら、せめて試着もできるだろうしね。",
+            "zh": "就是啊。而且在商场里你至少还能试穿一下。",
+            "ru": "Вот именно. А в торговом центре ты сможешь её хотя бы примерить."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне нужно купить новый чемодан, но я не знаю, какой размер выбрать.",
+            "en": "I need to buy a new suitcase, but I don't know what size to choose.",
+            "es": "Necesito comprar una maleta nueva, pero no sé qué tamaño elegir.",
+            "fr": "Je dois acheter une nouvelle valise, mais je ne sais pas quelle taille choisir.",
+            "pt": "Preciso comprar uma mala nova, mas não sei qual tamanho escolher.",
+            "kr": "새 캐리어를 사야 하는데, 어떤 사이즈를 골라야 할지 모르겠어.",
+            "jp": "新しいスーツケースを買わなきゃいけないんだけど、どのサイズを選べばいいかわからないの。",
+            "zh": "我需要买个新行李箱，但我不知道该选多大的。",
+            "ru": "Мне нужно купить новый чемодан, но я не знаю, какой размер выбрать."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Зависит от того, куда ты собираешься. Для короткой поездки хватит маленького.",
+            "en": "It depends on where you're going. For a short trip, a small one is enough.",
+            "es": "Depende de adónde vayas a ir. Para un viaje corto, con una pequeña basta.",
+            "fr": "Ça dépend d'où tu comptes aller. Pour un court voyage, une petite suffit.",
+            "pt": "Depende de para onde você vai. Para uma viagem curta, uma pequena já resolve.",
+            "kr": "어디에 갈 건지에 따라 달라. 짧은 여행이면 작은 걸로 충분해.",
+            "jp": "どこに行く予定かによるよ。短い旅行なら小さいので十分だよ。",
+            "zh": "那要看你去哪儿了。短途旅行的话，小的就够了。",
+            "ru": "Зависит от того, куда ты собираешься. Для короткой поездки хватит маленького."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я планирую поехать на две недели, и хочу взять много вещей.",
+            "en": "I'm planning to go for two weeks, and I want to take a lot of things.",
+            "es": "Planeo irme dos semanas y quiero llevar muchas cosas.",
+            "fr": "Je prévois de partir pour deux semaines, et je veux emporter beaucoup d'affaires.",
+            "pt": "Eu estou planejando viajar por duas semanas e quero levar bastante coisa.",
+            "kr": "이 주 동안 여행 갈 계획이고, 짐을 많이 싸 가고 싶어.",
+            "jp": "二週間行く予定で、荷物をたくさん持っていきたいの。",
+            "zh": "我打算去两个星期，想带很多东西。",
+            "ru": "Я планирую поехать на две недели, и хочу взять много вещей."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда бери средний, на сорок-пятьдесят литров. Он удобнее в транспорте.",
+            "en": "Then get a medium one, around forty to fifty liters. It's more convenient on transport.",
+            "es": "Entonces coge una mediana, de cuarenta a cincuenta litros. Es más cómoda en el transporte.",
+            "fr": "Alors prends une moyenne, de quarante à cinquante litres. Elle est plus pratique dans les transports.",
+            "pt": "Então pega uma média, de quarenta a cinquenta litros. Ela é mais prática no transporte.",
+            "kr": "그럼 사십에서 오십 리터짜리 중간 사이즈로 골라. 교통수단 이용할 때 더 편해.",
+            "jp": "それなら中くらいの、四十から五十リットルのを買うといいよ。交通機関で使いやすいからね。",
+            "zh": "那就买中号的，四五十升的。在交通工具上更方便。",
+            "ru": "Тогда бери средний, на сорок-пятьдесят литров. Он удобнее в транспорте."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А есть разница между жёстким и мягким корпусом?",
+            "en": "And is there a difference between a hard and a soft shell?",
+            "es": "¿Y hay diferencia entre el cuerpo rígido y el blando?",
+            "fr": "Et il y a une différence entre une coque rigide et une coque souple ?",
+            "pt": "E tem diferença entre o casco rígido e o macio?",
+            "kr": "하드 케이스랑 소프트 케이스 차이가 있어?",
+            "jp": "ハードケースとソフトケースで違いはあるの？",
+            "zh": "那硬壳和软壳有什么区别吗？",
+            "ru": "А есть разница между жёстким и мягким корпусом?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Жёсткий надёжнее защищает вещи, но мягкий легче и в него помещается больше.",
+            "en": "A hard one protects your things better, but a soft one is lighter and fits more inside.",
+            "es": "El rígido protege mejor las cosas, pero el blando pesa menos y le cabe más.",
+            "fr": "La rigide protège mieux les affaires, mais la souple est plus légère et on peut y mettre plus de choses.",
+            "pt": "O rígido protege melhor as coisas, mas o macio é mais leve e cabe mais coisa nele.",
+            "kr": "하드 케이스가 물건을 더 안전하게 보호하지만, 소프트 케이스는 더 가볍고 더 많이 들어가.",
+            "jp": "ハードは物をしっかり守ってくれるけど、ソフトは軽くて、より多く入るよ。",
+            "zh": "硬壳能更好地保护东西，但软壳更轻，而且能装更多。",
+            "ru": "Жёсткий надёжнее защищает вещи, но мягкий легче и в него помещается больше."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты не подскажешь, где можно купить хороший кофе в зёрнах?",
+            "en": "Sergey, can you tell me where I can buy good coffee beans?",
+            "es": "Serguéi, ¿me puedes decir dónde se puede comprar buen café en grano?",
+            "fr": "Sergueï, tu ne peux pas m'indiquer où acheter du bon café en grains ?",
+            "pt": "Sergei, você sabe me dizer onde posso comprar um café em grãos bom?",
+            "kr": "세르게이, 원두 커피 좋은 거 어디서 살 수 있는지 알려줄 수 있어?",
+            "jp": "セルゲイ、いいコーヒー豆を買える場所を知らない？",
+            "zh": "谢尔盖，你能告诉我哪里能买到好的咖啡豆吗？",
+            "ru": "Сергей, ты не подскажешь, где можно купить хороший кофе в зёрнах?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Есть отличная кофейня на соседней улице, они продают свежую обжарку.",
+            "en": "There's a great coffee shop on the next street; they sell fresh roasts.",
+            "es": "Hay una cafetería estupenda en la calle de al lado, venden café recién tostado.",
+            "fr": "Il y a un excellent café dans la rue voisine, ils vendent du café fraîchement torréfié.",
+            "pt": "Tem uma cafeteria ótima na rua ao lado, eles vendem torra fresca.",
+            "kr": "옆 동네에 훌륭한 커피숍이 있는데, 갓 볶은 원두를 팔아.",
+            "jp": "隣の通りに素晴らしいコーヒーショップがあるよ。新鮮な焙煎を売っているんだ。",
+            "zh": "隔壁街有家很棒的咖啡馆，他们卖新鲜烘焙的咖啡豆。",
+            "ru": "Есть отличная кофейня на соседней улице, они продают свежую обжарку."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А по какой цене? Я готов платить за качество, но не хочу переплачивать.",
+            "en": "And what's the price? I'm willing to pay for quality, but I don't want to overpay.",
+            "es": "¿Y a qué precio? Estoy dispuesto a pagar por la calidad, pero no quiero pagar de más.",
+            "fr": "Et à quel prix ? Je suis prêt à payer pour la qualité, mais je ne veux pas payer trop cher.",
+            "pt": "E por qual preço? Eu estou disposto a pagar pela qualidade, mas não quero pagar a mais.",
+            "kr": "가격은 어때? 품질에는 기꺼이 돈을 낼 의향이 있는데, 바가지는 쓰기 싫어.",
+            "jp": "値段はどのくらい？ 品質にはお金を払うつもりだけど、払い過ぎたくはないの。",
+            "zh": "那价格怎么样？我愿意为品质付钱，但也不想花冤枉钱。",
+            "ru": "А по какой цене? Я готов платить за качество, но не хочу переплачивать."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Там вполне разумно. За полкилограмма просят около восьмисот рублей.",
+            "en": "It's quite reasonable there. They ask about eight hundred rubles for half a kilo.",
+            "es": "Allí es bastante razonable. Por medio kilo piden unos ochocientos rublos.",
+            "fr": "C'est tout à fait raisonnable là-bas. Pour un demi-kilo, ils demandent environ huit cents roubles.",
+            "pt": "Lá é bem razoável. Por meio quilo eles cobram cerca de oitocentos rublos.",
+            "kr": "거긴 꽤 합리적이야. 반 킬로그램에 팔백 루블 정도 해.",
+            "jp": "そこはかなりリーズナブルだよ。五百グラムでだいたい八百ルーブルくらいだね。",
+            "zh": "那里价格挺合理的。半公斤大概八百卢布。",
+            "ru": "Там вполне разумно. За полкилограмма просят около восьмисот рублей."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это нормально. А они могут помолоть прямо при покупке?",
+            "en": "That's fine. And can they grind it right at the purchase?",
+            "es": "Eso está bien. ¿Y te lo pueden moler en el momento de comprarlo?",
+            "fr": "C'est correct. Et ils peuvent le moudre directement à l'achat ?",
+            "pt": "Isso é normal. E eles podem moer na hora da compra?",
+            "kr": "그건 괜찮네. 그런데 구매할 때 바로 갈아줄 수 있어?",
+            "jp": "それは妥当ね。買ったその場で挽いてもらえるかしら？",
+            "zh": "那还行。他们能当场磨粉吗？",
+            "ru": "Это нормально. А они могут помолоть прямо при покупке?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, скажешь, для какого способа заваривания, и они всё сделают.",
+            "en": "Of course, you just tell them what brewing method it's for, and they'll take care of it.",
+            "es": "Claro, les dices para qué método de preparación es y te lo hacen todo.",
+            "fr": "Bien sûr, tu leur dis pour quelle méthode d'infusion, et ils font tout.",
+            "pt": "Claro, é só falar para qual método de preparo, e eles fazem tudo.",
+            "kr": "물론이지, 어떤 방식으로 우려 마실 건지 말하면 다 알아서 해줘.",
+            "jp": "もちろん。どんな淹れ方か言えば、全部やってくれるよ。",
+            "zh": "当然，你告诉他们用什么方式冲泡，他们就会帮你弄好。",
+            "ru": "Конечно, скажешь, для какого способа заваривания, и они всё сделают."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я заказала в интернете кроссовки, но они оказались на размер больше.",
+            "en": "I ordered sneakers online, but they turned out to be a size too big.",
+            "es": "Pedí por internet unas zapatillas, pero me han venido un número más grandes.",
+            "fr": "J'ai commandé des baskets sur Internet, mais elles se sont avérées être une taille au-dessus.",
+            "pt": "Eu encomendei um tênis pela internet, mas veio um número maior.",
+            "kr": "인터넷으로 운동화를 주문했는데 한 사이즈 크게 나왔어.",
+            "jp": "ネットでスニーカーを注文したんだけど、ワンサイズ大きかったの。",
+            "zh": "我在网上订了双运动鞋，但结果大了一码。",
+            "ru": "Я заказала в интернете кроссовки, но они оказались на размер больше."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это неприятно. Ты уже пробовала оформить обмен?",
+            "en": "That's annoying. Have you tried to arrange an exchange yet?",
+            "es": "Qué fastidio. ¿Ya has intentado hacer el cambio?",
+            "fr": "C'est embêtant. Tu as déjà essayé de faire un échange ?",
+            "pt": "Que chato. Você já tentou pedir a troca?",
+            "kr": "그건 좀 곤란하네. 교환 신청은 이미 해봤어?",
+            "jp": "それは残念だね。もう交換の手続きをしてみたの？",
+            "zh": "那真麻烦。你试过申请换货了吗？",
+            "ru": "Это неприятно. Ты уже пробовала оформить обмен?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, написала в поддержку. Они сказали, что обмен возможен в течение месяца.",
+            "en": "Yes, I wrote to support. They said the exchange is possible within a month.",
+            "es": "Sí, escribí al servicio de atención al cliente. Me dijeron que el cambio es posible dentro de un mes.",
+            "fr": "Oui, j'ai écrit au service client. Ils ont dit que l'échange était possible dans un délai d'un mois.",
+            "pt": "Sim, escrevi para o suporte. Eles disseram que a troca é possível dentro de um mês.",
+            "kr": "응, 고객센터에 문의했어. 한 달 이내에는 교환이 가능하다고 하더라.",
+            "jp": "うん、サポートに連絡したの。一ヶ月以内なら交換可能だって言われたわ。",
+            "zh": "试了，我给客服写了信。他们说一个月内可以换。",
+            "ru": "Да, написала в поддержку. Они сказали, что обмен возможен в течение месяца."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично. Главное, чтобы не пришлось платить за обратную доставку.",
+            "en": "Great. The main thing is that you don't have to pay for the return shipping.",
+            "es": "Genial. Lo importante es que no tengas que pagar el envío de vuelta.",
+            "fr": "Parfait. L'important, c'est de ne pas avoir à payer pour le retour.",
+            "pt": "Ótimo. O importante é não ter que pagar pelo frete de volta.",
+            "kr": "잘됐네. 중요한 건 반품 배송비를 내지 않아도 된다는 거야.",
+            "jp": "それはよかった。重要なのは、返送料を払わなくて済むことだね。",
+            "zh": "太好了。关键是别让你自己付退货运费。",
+            "ru": "Отлично. Главное, чтобы не пришлось платить за обратную доставку."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "К счастью, доставка за их счёт. Но придётся подождать ещё несколько дней.",
+            "en": "Luckily, the shipping is on them. But I'll have to wait a few more days.",
+            "es": "Por suerte, el envío corre de su cuenta. Pero tendré que esperar unos días más.",
+            "fr": "Heureusement, la livraison est à leurs frais. Mais il faudra attendre encore quelques jours.",
+            "pt": "Felizmente, o frete é por conta deles. Mas vou ter que esperar mais alguns dias.",
+            "kr": "다행히 배송비는 그쪽 부담이야. 하지만 며칠 더 기다려야 해.",
+            "jp": "幸い、送料は向こう持ちなの。でも、あと数日待たなきゃいけないけどね。",
+            "zh": "幸好运费是他们承担。但还得再等几天。",
+            "ru": "К счастью, доставка за их счёт. Но придётся подождать ещё несколько дней."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ничего страшного. Зато ты получишь именно то, что нужно.",
+            "en": "No big deal. At least you'll get exactly what you need.",
+            "es": "No pasa nada. Al menos recibirás exactamente lo que necesitas.",
+            "fr": "Ce n'est pas grave. Au moins, tu recevras exactement ce qu'il te faut.",
+            "pt": "Sem problema. Pelo menos você vai receber exatamente o que precisa.",
+            "kr": "괜찮아. 그 대신 정확히 원하는 걸 받게 될 테니까.",
+            "jp": "大したことないよ。その代わり、ちゃんと必要なものが手に入るんだから。",
+            "zh": "没关系。反正你会拿到你真正需要的东西。",
+            "ru": "Ничего страшного. Зато ты получишь именно то, что нужно."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Посмотри, какие красивые чашки! Может, купим набор в подарок коллегам?",
+            "en": "Look at these beautiful cups! Maybe we should buy a set as a gift for the colleagues?",
+            "es": "¡Mira qué tazas tan bonitas! ¿Quizás compramos un juego para regalar a los compañeros?",
+            "fr": "Regarde, quelles jolies tasses ! Et si on achetait un ensemble pour l'offrir aux collègues ?",
+            "pt": "Olha que xícaras lindas! Que tal comprarmos um conjunto de presente para os colegas?",
+            "kr": "이것 좀 봐, 예쁜 컵이야! 동료들 선물로 세트로 살까?",
+            "jp": "見て、なんて綺麗なカップなの！ 同僚へのプレゼントにセットを買わない？",
+            "zh": "你看，这些杯子多漂亮！要不要买一套送给同事当礼物？",
+            "ru": "Посмотри, какие красивые чашки! Может, купим набор в подарок коллегам?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошая идея. Но давай проверим, есть ли они в наличии в другом цвете.",
+            "en": "Good idea. But let's check if they're available in another color.",
+            "es": "Buena idea. Pero vamos a comprobar si las tienen en otro color.",
+            "fr": "Bonne idée. Mais vérifions s'ils les ont en stock dans une autre couleur.",
+            "pt": "Boa ideia. Mas vamos ver se tem disponível em outra cor.",
+            "kr": "좋은 생각이야. 그런데 다른 색상이 있는지 확인해 보자.",
+            "jp": "いいアイデアだね。でも、別の色が在庫であるか確認しようよ。",
+            "zh": "好主意。但我们先问问有没有其他颜色的。",
+            "ru": "Хорошая идея. Но давай проверим, есть ли они в наличии в другом цвете."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "В витрине только синие. Спрошу у продавца, что есть на складе.",
+            "en": "There are only blue ones in the display case. I'll ask the salesperson what's in the warehouse.",
+            "es": "En el escaparate solo están las azules. Le preguntaré al dependiente qué hay en el almacén.",
+            "fr": "En vitrine, il n'y a que les bleues. Je vais demander au vendeur ce qu'il y a en entrepôt.",
+            "pt": "Na vitrine só tem as azuis. Vou perguntar ao vendedor o que tem no estoque.",
+            "kr": "진열대에는 파란색만 있어. 창고에 뭐가 있는지 판매원한테 물어볼게.",
+            "jp": "ショーウィンドウには青だけしかないわ。店員に倉庫に何があるか聞いてみるね。",
+            "zh": "橱窗里只有蓝色的。我去问问售货员仓库里有什么。",
+            "ru": "В витрине только синие. Спрошу у продавца, что есть на складе."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, спроси. И уточни, можно ли заказать доставку в офис.",
+            "en": "Yes, ask. And find out if they can arrange delivery to the office.",
+            "es": "Sí, pregúntale. Y confirma si se puede pedir envío a la oficina.",
+            "fr": "Oui, demande. Et précise si on peut commander une livraison au bureau.",
+            "pt": "É, pergunta. E confirma se dá para pedir entrega no escritório.",
+            "kr": "응, 물어봐. 그리고 사무실로 배송 주문이 가능한지도 확인해 줘.",
+            "jp": "うん、聞いてみて。それと、オフィスへの配送を注文できるかも確認して。",
+            "zh": "好，去问问吧。顺便问一下能不能送货到办公室。",
+            "ru": "Да, спроси. И уточни, можно ли заказать доставку в офис."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сейчас узнаю. Если не будет нужного цвета, возьмём белые.",
+            "en": "I'll find out now. If they don't have the right color, we'll take the white ones.",
+            "es": "Ahora mismo me entero. Si no tienen el color que quiero, cogemos las blancas.",
+            "fr": "Je m'informe tout de suite. S'il n'y a pas la bonne couleur, on prendra les blanches.",
+            "pt": "Vou ver agora. Se não tiver a cor certa, pegamos as brancas.",
+            "kr": "지금 알아볼게. 원하는 색상이 없으면 흰색으로 사자.",
+            "jp": "今聞いてみるわ。もし希望の色がなければ、白を買おう。",
+            "zh": "我现在就去问。如果没有合适的颜色，我们就买白色的。",
+            "ru": "Сейчас узнаю. Если не будет нужного цвета, возьмём белые."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Договорились. Главное, чтобы они были из качественного фарфора.",
+            "en": "Deal. The main thing is that they're made of quality porcelain.",
+            "es": "De acuerdo. Lo importante es que sean de porcelana de calidad.",
+            "fr": "D'accord. L'important, c'est qu'elles soient en porcelaine de qualité.",
+            "pt": "Combinado. O importante é que sejam de porcelana de qualidade.",
+            "kr": "좋아. 중요한 건 품질 좋은 도자기로 만든 거였으면 좋겠어.",
+            "jp": "わかった。大事なのは、質のいい磁器でできていることだね。",
+            "zh": "行。关键是得是优质瓷器的。",
+            "ru": "Договорились. Главное, чтобы они были из качественного фарфора."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты не знаешь, в этом отделе продают подарочные сертификаты?",
+            "en": "Do you know if they sell gift certificates in this department?",
+            "es": "¿Sabes si en esta sección venden tarjetas regalo?",
+            "fr": "Tu ne sais pas si ce rayon vend des cartes cadeaux ?",
+            "pt": "Você sabe se vendem vale-presente nesta seção?",
+            "kr": "이 코너에서 선물권 파는지 알아?",
+            "jp": "この売り場でギフト券を売っているか知らない？",
+            "zh": "你知道这个部门有卖礼品卡吗？",
+            "ru": "Ты не знаешь, в этом отделе продают подарочные сертификаты?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, они есть на кассе. Можно выбрать любую сумму.",
+            "en": "Yes, they're at the checkout. You can choose any amount.",
+            "es": "Sí, las tienen en caja. Puedes elegir cualquier cantidad.",
+            "fr": "Oui, elles sont à la caisse. Tu peux choisir n'importe quel montant.",
+            "pt": "Sim, tem no caixa. Dá para escolher qualquer valor.",
+            "kr": "응, 계산대에 있어. 금액은 원하는 대로 고를 수 있어.",
+            "jp": "うん、レジにあるよ。好きな金額を選べるんだ。",
+            "zh": "有的，收银台就有。金额可以随便选。",
+            "ru": "Да, они есть на кассе. Можно выбрать любую сумму."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, это решит мою проблему с подарком для отца.",
+            "en": "Great, that solves my problem with a gift for my dad.",
+            "es": "Genial, eso me solucionará el problema del regalo para mi padre.",
+            "fr": "Parfait, ça va résoudre mon problème de cadeau pour mon père.",
+            "pt": "Ótimo, isso resolve meu problema com o presente para o meu pai.",
+            "kr": "잘됐네, 그럼 아버지 선물 문제가 해결되겠어.",
+            "jp": "それはいいわ。父へのプレゼントの問題が解決できるわ。",
+            "zh": "太好了，这解决了我给爸爸买礼物的难题。",
+            "ru": "Отлично, это решит мою проблему с подарком для отца."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "А что, не знаешь, что ему купить?",
+            "en": "What, you don't know what to get him?",
+            "es": "¿Qué pasa, no sabes qué comprarle?",
+            "fr": "Quoi, tu ne sais pas quoi lui acheter ?",
+            "pt": "Ué, você não sabe o que comprar para ele?",
+            "kr": "왜, 뭘 사 드릴지 모르겠어?",
+            "jp": "あれ、何を買えばいいかわからないの？",
+            "zh": "怎么了，不知道给他买什么吗？",
+            "ru": "А что, не знаешь, что ему купить?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Именно. Он говорит, что у него всё есть. А сертификат он сам потратит на то, что нужно.",
+            "en": "Exactly. He says he already has everything. And he'll spend the certificate on what he needs himself.",
+            "es": "Exacto. Él dice que ya tiene de todo. Y la tarjeta la gastará él mismo en lo que necesite.",
+            "fr": "Exactement. Il dit qu'il a déjà tout. Et avec une carte cadeau, il dépensera lui-même pour ce dont il a besoin.",
+            "pt": "Exatamente. Ele diz que já tem tudo. E o vale ele mesmo gasta no que precisar.",
+            "kr": "맞아. 아버지가 뭐든 다 있다고 하시거든. 선물권이면 필요할 때 직접 쓰실 수 있잖아.",
+            "jp": "そうなの。彼は何でも持っているって言うから。ギフト券なら、彼自身が必要なものに使えるわね。",
+            "zh": "是啊。他说他什么都不缺。而礼品卡他可以自己去买需要的东西。",
+            "ru": "Именно. Он говорит, что у него всё есть. А сертификат он сам потратит на то, что нужно."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Умное решение. Так и подарок не прогадаешь, и человек останется доволен.",
+            "en": "Smart move. That way you can't go wrong with the gift, and the person stays happy.",
+            "es": "Una decisión inteligente. Así no fallas con el regalo y la persona queda contenta.",
+            "fr": "Une décision intelligente. Comme ça, tu ne te trompes pas sur le cadeau, et la personne reste contente.",
+            "pt": "Decisão inteligente. Assim você não erra no presente e a pessoa fica satisfeita.",
+            "kr": "현명한 선택이야. 그렇게 하면 선물이 빗나갈 일도 없고, 받는 사람도 만족할 거야.",
+            "jp": "賢い選択だね。それならプレゼントを外すこともないし、相手も満足してくれるよ。",
+            "zh": "聪明的办法。这样礼物不会买错，收礼的人也会满意。",
+            "ru": "Умное решение. Так и подарок не прогадаешь, и человек останется доволен."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я видела в рекламе скидку на бытовую технику. Ты не в курсе, она ещё действует?",
+            "en": "I saw a discount on home appliances in an ad. Do you happen to know if it's still active?",
+            "es": "He visto en un anuncio un descuento en electrodomésticos. ¿Sabes si todavía está activo?",
+            "fr": "J'ai vu dans une publicité une remise sur l'électroménager. Tu ne sais pas si elle est toujours valable ?",
+            "pt": "Eu vi no anúncio um desconto em eletrodomésticos. Você sabe se ainda está valendo?",
+            "kr": "광고에서 가전제품 할인하는 걸 봤는데, 아직 진행 중인지 혹시 알아?",
+            "jp": "広告で家電の割引を見たんだけど、まだやってるか知ってる？",
+            "zh": "我看到广告上说家电有折扣。你知道还有效吗？",
+            "ru": "Я видела в рекламе скидку на бытовую технику. Ты не в курсе, она ещё действует?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, акция продлится до конца недели. Но скидка распространяется не на все модели.",
+            "en": "Yes, the promotion runs until the end of the week. But the discount doesn't apply to all models.",
+            "es": "Sí, la oferta dura hasta finales de semana. Pero el descuento no se aplica a todos los modelos.",
+            "fr": "Oui, la promotion dure jusqu'à la fin de la semaine. Mais la remise ne s'applique pas à tous les modèles.",
+            "pt": "Sim, a promoção vai até o fim da semana. Mas o desconto não vale para todos os modelos.",
+            "kr": "응, 행사는 주말까지 계속돼. 그런데 할인이 모든 모델에 적용되는 건 아니야.",
+            "jp": "うん、キャンペーンは週末まで続くよ。でも、割引は全機種に適用されるわけじゃないんだ。",
+            "zh": "有的，活动持续到本周末。但折扣不是所有型号都适用。",
+            "ru": "Да, акция продлится до конца недели. Но скидка распространяется не на все модели."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А на какие именно? Я присматриваю новый пылесос.",
+            "en": "And to which ones exactly? I'm looking at a new vacuum cleaner.",
+            "es": "¿Y a cuáles exactamente? Estoy mirando una aspiradora nueva.",
+            "fr": "Et sur lesquels exactement ? Je cherche un nouvel aspirateur.",
+            "pt": "E para quais exatamente? Eu estou de olho em um aspirador novo.",
+            "kr": "그럼 정확히 어떤 모델에 적용되는데? 나는 새 청소기를 알아보고 있어.",
+            "jp": "じゃあ、具体的にどの機種なの？ 新しい掃除機を探しているんだけど。",
+            "zh": "那是哪些型号呢？我在看新的吸尘器。",
+            "ru": "А на какие именно? Я присматриваю новый пылесос."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "На роботы-пылесосы скидка двадцать процентов, а на обычные — только десять.",
+            "en": "Robot vacuums have a twenty percent discount, but regular ones only have ten.",
+            "es": "En las aspiradoras robot el descuento es del veinte por ciento, y en las normales, solo del diez.",
+            "fr": "Sur les aspirateurs robots, la remise est de vingt pour cent, et sur les classiques, seulement de dix.",
+            "pt": "Nos aspiradores robô o desconto é de vinte por cento, e nos normais, só dez.",
+            "kr": "로봇 청소기는 이십 퍼센트 할인이고, 일반 청소기는 십 퍼센트만 할인이야.",
+            "jp": "ロボット掃除機は二十パーセント引きで、普通の掃除機は十パーセント引きだけだよ。",
+            "zh": "扫地机器人打八折，普通吸尘器只打九折。",
+            "ru": "На роботы-пылесосы скидка двадцать процентов, а на обычные — только десять."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда, может, стоит взять робот? Он удобнее, хотя и дороже.",
+            "en": "Then maybe it's worth getting a robot? It's more convenient, even if it's pricier.",
+            "es": "Entonces, ¿quizás merece la pena comprar la robot? Es más cómoda, aunque más cara.",
+            "fr": "Alors, peut-être qu'il vaut mieux prendre un robot ? Il est plus pratique, même s'il est plus cher.",
+            "pt": "Então talvez valha a pena pegar o robô? Ele é mais prático, embora seja mais caro.",
+            "kr": "그럼 로봇 청소기를 사는 게 나을까? 더 편하긴 한데, 더 비싸긴 해.",
+            "jp": "それなら、ロボットを買うべきかしら？ 高くても、便利だしね。",
+            "zh": "那也许该买个扫地机器人？它更方便，虽然贵一点。",
+            "ru": "Тогда, может, стоит взять робот? Он удобнее, хотя и дороже."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен. Зато сэкономишь время на уборке, а это того стоит.",
+            "en": "Agreed. You'll save time on cleaning, and that's worth it.",
+            "es": "De acuerdo. Pero ahorrarás tiempo en la limpieza, y eso merece la pena.",
+            "fr": "Je suis d'accord. En plus, tu gagneras du temps sur le ménage, et ça vaut le coup.",
+            "pt": "Concordo. Mas você economiza tempo na limpeza, e isso vale a pena.",
+            "kr": "동의해. 그 대신 청소 시간을 절약할 수 있으니까 그럴 만한 가치가 있어.",
+            "jp": "そうだね。その分、掃除の時間を節約できるし、それだけの価値はあるよ。",
+            "zh": "同意。而且还能省下打扫的时间，这很值得。",
+            "ru": "Согласен. Зато сэкономишь время на уборке, а это того стоит."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты не поможешь мне выбрать наушники? Я совсем запуталась в моделях.",
+            "en": "Dmitry, can you help me pick out headphones? I'm totally confused by all the models.",
+            "es": "Dmitri, ¿me ayudas a elegir unos auriculares? Estoy muy perdida con los modelos.",
+            "fr": "Dmitri, tu peux m'aider à choisir un casque ? Je suis complètement perdue avec les modèles.",
+            "pt": "Dmitri, você pode me ajudar a escolher um fone de ouvido? Eu estou totalmente perdida com os modelos.",
+            "kr": "드미트리, 이어폰 고르는 거 좀 도와줄 수 있어? 모델이 너무 많아서 완전 헷갈려.",
+            "jp": "ドミトリー、ヘッドホンを選ぶの手伝ってくれない？ 機種が多すぎて全然わからなくなっちゃって。",
+            "zh": "德米特里，你能帮我挑一下耳机吗？我完全被这些型号搞糊涂了。",
+            "ru": "Дмитрий, ты не поможешь мне выбрать наушники? Я совсем запуталась в моделях."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно. Сначала скажи, для чего ты их будешь использовать.",
+            "en": "Sure. First, tell me what you're going to use them for.",
+            "es": "Claro. Primero dime para qué los vas a usar.",
+            "fr": "Bien sûr. D'abord, dis-moi pour quoi tu vas l'utiliser.",
+            "pt": "Claro. Primeiro me diz para que você vai usar.",
+            "kr": "물론이지. 먼저 어디에 쓸 건지 말해 봐.",
+            "jp": "もちろん。まず、何に使うのか教えてよ。",
+            "zh": "当然。你先说说你主要用来干什么。",
+            "ru": "Конечно. Сначала скажи, для чего ты их будешь использовать."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "В основном для звонков и музыки по дороге на работу.",
+            "en": "Mostly for calls and music on my way to work.",
+            "es": "Sobre todo para llamadas y música de camino al trabajo.",
+            "fr": "Surtout pour les appels et la musique sur le chemin du travail.",
+            "pt": "Principalmente para ligações e música no caminho para o trabalho.",
+            "kr": "주로 출근길에 통화하고 음악 들을 때 써.",
+            "jp": "主に通勤中に電話と音楽を聴くのに使うの。",
+            "zh": "主要是上班路上打电话和听音乐。",
+            "ru": "В основном для звонков и музыки по дороге на работу."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда бери беспроводные с хорошим шумоподавлением. Они удобнее в метро.",
+            "en": "Then get wireless ones with good noise cancellation. They're more convenient on the subway.",
+            "es": "Entonces coge unos inalámbricos con buena cancelación de ruido. Son más cómodos en el metro.",
+            "fr": "Alors prends un casque sans fil avec une bonne réduction de bruit. Il est plus pratique dans le métro.",
+            "pt": "Então pega um sem fio com bom cancelamento de ruído. Ele é mais prático no metrô.",
+            "kr": "그럼 노이즈 캔슬링이 좋은 무선 이어폰을 골라. 지하철에서 더 편해.",
+            "jp": "それなら、ノイズキャンセリングがしっかりしたワイヤレスのを買うといいよ。地下鉄で使いやすいからね。",
+            "zh": "那就买降噪效果好的无线耳机。在地铁里用更方便。",
+            "ru": "Тогда бери беспроводные с хорошим шумоподавлением. Они удобнее в метро."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А на что ещё обратить внимание? На время работы?",
+            "en": "What else should I pay attention to? The battery life?",
+            "es": "¿Y en qué más debería fijarme? ¿En la duración de la batería?",
+            "fr": "Et à quoi d'autre faut-il faire attention ? À l'autonomie ?",
+            "pt": "E no que mais devo prestar atenção? Na duração da bateria?",
+            "kr": "그 외에 또 뭘 확인해야 해? 배터리 시간?",
+            "jp": "他には何に気をつければいい？ バッテリーの持ち時間？",
+            "zh": "那还要注意什么？续航时间吗？",
+            "ru": "А на что ещё обратить внимание? На время работы?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обязательно. Смотри, чтобы заряда хватало хотя бы на весь день.",
+            "en": "Definitely. Make sure the charge lasts at least the whole day.",
+            "es": "Por supuesto. Mira que la carga dure al menos todo el día.",
+            "fr": "Absolument. Vérifie que la batterie tienne au moins toute la journée.",
+            "pt": "Com certeza. Vê se a carga dura pelo menos o dia inteiro.",
+            "kr": "꼭 확인해야 해. 충전이 적어도 하루 종일 갈 수 있는 걸로 봐.",
+            "jp": "もちろん。少なくとも一日は持つものを選んでね。",
+            "zh": "一定要看。要确保电量至少能撑一整天。",
+            "ru": "Обязательно. Смотри, чтобы заряда хватало хотя бы на весь день."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Reservar alojamiento",
+  "sets": {
+    "001": [
+      "Necesito encontrar un hotel para la semana que viene.",
+      "¿Qué tipo de alojamiento prefieres? ¿Un hotel céntrico o algo más tranquilo?",
+      "Prefiero algo céntrico para poder ir andando a todos los sitios.",
+      "Entonces te recomiendo el Hotel Central, está muy bien situado.",
+      "¿Tienen habitaciones disponibles para el jueves?",
+      "Sí, creo que sí. Podemos llamar ahora mismo para confirmarlo."
+    ],
+    "002": [
+      "¿Me podría informar sobre el precio de la habitación doble?",
+      "Claro, la habitación doble cuesta ochenta euros la noche con desayuno incluido.",
+      "¿Y el desayuno es buffet o se sirve en la mesa?",
+      "Es buffet, y tienen mucha variedad de productos.",
+      "Me parece un buen precio. ¿Está incluido el impuesto?",
+      "Sí, el impuesto está incluido en el precio que le he indicado."
+    ],
+    "003": [
+      "He visto un anuncio de un apartamento turístico muy bonito.",
+      "¿Dónde está? ¿En el centro o en las afueras?",
+      "Está cerca de la playa, a unos diez minutos andando.",
+      "¡Qué bien! ¿Y qué servicios incluye?",
+      "Tiene wifi, aire acondicionado y una pequeña cocina equipada.",
+      "Suena perfecto para pasar unos días de descanso."
+    ],
+    "004": [
+      "Quería hacer una reserva para dos noches, por favor.",
+      "Muy bien, ¿para qué fechas sería la reserva?",
+      "Sería para el viernes y el sábado de la próxima semana.",
+      "De acuerdo. ¿Prefiere una habitación con vistas al mar?",
+      "Sí, si es posible, me encantaría tener vistas al mar.",
+      "Perfecto, le anoto una habitación con vistas. ¿Me dice su nombre?"
+    ],
+    "005": [
+      "Acabo de llegar al hotel y tengo la reserva a nombre de Laura.",
+      "Bienvenida, señorita Laura. Déjeme que busque su reserva en el sistema.",
+      "¿Podría darme una habitación tranquila, lejos del ascensor?",
+      "Sí, claro. Le doy una habitación al final del pasillo.",
+      "Muchas gracias. ¿A qué hora sirven el desayuno?",
+      "El desayuno se sirve desde las siete hasta las diez y media."
+    ],
+    "006": [
+      "¿Tienen alguna oferta especial para estancias de una semana?",
+      "Sí, si se queda siete noches, le hacemos un diez por ciento de descuento.",
+      "¡Eso me interesa! ¿Y puedo cancelar la reserva sin coste?",
+      "Puede cancelar gratis hasta cuarenta y ocho horas antes de la llegada.",
+      "Me parece una condición muy razonable.",
+      "Entonces, ¿le preparo la reserva con esa oferta?"
+    ],
+    "007": [
+      "He reservado una habitación por internet, pero no he recibido la confirmación.",
+      "No se preocupe, déjeme que lo compruebe con su nombre.",
+      "Me llamo Javier García. La reserva era para esta noche.",
+      "Sí, aquí la veo. Su habitación está lista desde las dos de la tarde.",
+      "¡Qué alivio! Pensaba que se había perdido la reserva.",
+      "No, no se preocupe, todo está en orden. ¿Necesita ayuda con el equipaje?"
+    ],
+    "008": [
+      "¿Me recomienda algún alojamiento con encanto en el casco antiguo?",
+      "Le sugiero una casa rural que está muy bien decorada y es muy acogedora.",
+      "¿Y tiene parking? Porque voy en coche.",
+      "Sí, tiene parking privado gratuito para los huéspedes.",
+      "Eso es una gran ventaja. ¿Está lejos del centro?",
+      "No, está a unos cinco minutos andando de la plaza principal."
+    ],
+    "009": [
+      "¿Podría cambiarme a una habitación más luminosa?",
+      "Déjeme ver qué opciones tengo disponibles en este momento.",
+      "La habitación actual es un poco oscura y no me siento cómoda.",
+      "Entiendo. Tengo una habitación en el tercer piso con mucha luz natural.",
+      "¿Y tiene el mismo precio que la que tengo ahora?",
+      "Sí, el precio es el mismo. Le preparo la llave nueva ahora mismo."
+    ],
+    "010": [
+      "¿A qué hora tengo que dejar la habitación el día de la salida?",
+      "La salida es a las doce del mediodía, pero puede dejar el equipaje en consigna.",
+      "Perfecto, así puedo aprovechar la mañana para dar un paseo.",
+      "Muy buena idea. ¿Quiere que le pida un taxi para esa hora?",
+      "Sí, por favor, sería de gran ayuda.",
+      "De acuerdo, le pido un taxi para las doce y media."
+    ]
+  },
+  "level": "b2",
+  "chapter_id": "CONV_ES_ACCOMMODATION_BOOKING",
+  "id": "036",
+  "target_lang": "es"
+}

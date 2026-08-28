@@ -1,0 +1,69 @@
+{
+  "chapter_id": "conversation_003.runtime.json",
+  "target_lang": "pt",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A/B 관계가 명확하고 일관적이다. A는 질문을 주도하고 B는 답변하는 자연스러운 대화 구조를 유지한다."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "질문(De onde você é?), 답변(Eu sou do Brasil...), 감탄(Que legal!), 칭찬(Nossa, que demais!) 등 대화 기능이 모두 정확하고 자연스럽게 사용되었다."
+    },
+    "spoken_naturalness": {
+      "score": 9.5,
+      "weight": 15,
+      "notes": "전체적으로 구어체 표현이 자연스럽다. 'Nossa', 'Que demais'와 같은 브라질 포르투갈어 특유의 감탄사가 잘 사용되었다. 다만, 'Falo, e também estudo português.'에서 'Falo'만으로 답하는 것은 다소 간결하지만, 구어에서 충분히 자연스러운 표현이다."
+    },
+    "register_appropriateness": {
+      "score": 10,
+      "weight": 10,
+      "notes": "비격식적인 상황에서 'você'를 일관되게 사용하여 적절한 격식 수준을 유지한다. 2인칭 대명사 사용에 일관성이 있다."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 정확하다. 'De onde você é?', 'Eu sou do Brasil', 'Você fala coreano?' 등 모든 문장이 문법적으로 올바르며, 성별 일치, 동사 활용, 표기 모두 정확하다."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "출신지와 언어 능력에 대해 묻고 답하는 실용적이고 흔한 회화 상황을 잘 다루고 있다. 초급 학습자에게 유용한 주제다."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "브라질, 한국, 서울, 상파울루 등 특정 국가와 도시를 언급하지만, 문화적으로 편향되거나 특정 문화에 대한 이해를 요구하지 않는 중립적인 내용이다."
+    },
+    "tts_readiness": {
+      "score": 9,
+      "weight": 5,
+      "notes": "TTS로 읽기에 적합한 문장들이다. 다만, 'Nossa'와 같은 감탄사는 TTS 엔진에 따라 강세나 억양이 다르게 표현될 수 있어 약간의 주의가 필요할 수 있다."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "pt 컬럼이 target 컬럼과 완벽하게 일치한다. pt는 target의 정확한 미러다."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "브라질 포르투갈어 회화 학습 콘텐츠로서 시중 서비스와 비교해도 손색없는 수준이다. 특히 'Nossa', 'Que demais'와 같은 실제 구어 표현을 포함한 점이 경쟁력 있다. 다만, 초급 단계에서 다루는 아주 기본적인 주제라는 점에서 약간의 차별성이 부족할 수 있다."
+    }
+  },
+  "final_score": 96.5,
+  "market_benchmark": {
+    "comparable_services": [
+      "PortuguesePod101 (Brazilian Portuguese)",
+      "Duolingo Portuguese (Brazilian) Conversations",
+      "Semantica Portuguese",
+      "Pimsleur Brazilian Portuguese"
+    ],
+    "estimated_relative_position": "상위 10% 수준. 특히 구어체 자연스러움과 실용성에서 시중 주요 서비스 대비 우위를 점한다.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": []
+}

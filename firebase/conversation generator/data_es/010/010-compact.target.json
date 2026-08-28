@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Pedir en la cafetería",
+  "sets": {
+    "001": [
+      "Hola, buenos días. ¿Me pone un café con leche, por favor?",
+      "Buenos días. Claro, ¿lo quiere para tomar aquí o para llevar?",
+      "Para llevar, por favor. Es que tengo prisa.",
+      "Muy bien. ¿Algo más? Tenemos croissants recién hechos.",
+      "¡Ah, sí! Póngame uno, por favor.",
+      "Estupendo. Son dos euros con cincuenta en total."
+    ],
+    "002": [
+      "Perdone, ¿qué tipo de té tienen?",
+      "Tenemos té negro, verde y de manzanilla. ¿Cuál prefiere?",
+      "Me apetece algo suave. ¿El de manzanilla es bueno?",
+      "Sí, es muy suave y relajante. Es una buena elección.",
+      "Pues entonces una infusión de manzanilla, por favor.",
+      "Muy bien. Ahora mismo se la preparo."
+    ],
+    "003": [
+      "Hola, ¿me pone un zumo de naranja natural?",
+      "Lo siento, pero la máquina del zumo está estropeada hoy.",
+      "¡Qué pena! ¿Y qué me recomienda entonces?",
+      "Tenemos batidos de fresa o de plátano muy buenos.",
+      "Vale, pues un batido de plátano, por favor.",
+      "Perfecto. En un momento lo tengo listo."
+    ],
+    "004": [
+      "Buenos días. Quería un café solo, pero no muy cargado.",
+      "Entendido. Se lo pido al camarero con poca intensidad.",
+      "Gracias. Y, oiga, ¿tienen leche sin lactosa?",
+      "Sí, tenemos leche de avena y también sin lactosa.",
+      "Pues entonces con leche de avena, por favor.",
+      "Muy bien. Se lo preparo con leche de avena."
+    ],
+    "005": [
+      "Hola, ¿me puede decir cuánto cuesta una porción de tarta?",
+      "La porción de tarta de zanahoria cuesta tres euros con veinte.",
+      "Vale, me llevo una porción. ¿Y hay mesa libre?",
+      "Sí, tiene una mesa libre junto a la ventana.",
+      "¡Genial! Me siento allí entonces.",
+      "De acuerdo. Se la llevo a la mesa en un momento."
+    ],
+    "006": [
+      "Perdone, he pedido un café con leche hace un rato.",
+      "¿Sí? ¿Me puede decir su nombre para revisar el pedido?",
+      "Me llamo Laura. Lo pedí hace unos diez minutos.",
+      "Ah, sí, Laura. Perdone la espera, ahora mismo se lo traigo.",
+      "No pasa nada, gracias por avisar.",
+      "Aquí tiene su café. Que disfrute."
+    ],
+    "007": [
+      "Hola, ¿me pone un agua con gas y una tostada?",
+      "Claro. ¿La tostada la quiere con tomate o con mantequilla?",
+      "Con tomate y un poco de aceite, por favor.",
+      "Muy bien. ¿Algo más para acompañar?",
+      "No, eso es todo, gracias.",
+      "Perfecto. Se lo traigo en seguida."
+    ],
+    "008": [
+      "Buenos días. ¿Tienen algún descuento para estudiantes?",
+      "Sí, con el carné de estudiante hay un diez por ciento de descuento.",
+      "¡Qué bien! Pues entonces un café con leche, por favor.",
+      "Muy bien. ¿Me deja ver su carné, por favor?",
+      "Claro, aquí lo tiene.",
+      "Gracias. Son un euro con ochenta con el descuento."
+    ],
+    "009": [
+      "Hola, ¿me puede recomendar algo dulce para desayunar?",
+      "Le recomiendo el bizcocho casero, está muy bueno.",
+      "¿Y es muy dulce? No me gusta demasiado dulce.",
+      "No, es suave y no empalaga. Creo que le gustará.",
+      "Pues me llevo un trozo de bizcocho, entonces.",
+      "Buena elección. ¿Quiere algo de beber con eso?"
+    ],
+    "010": [
+      "Perdone, me he equivocado y he pedido un café solo.",
+      "No se preocupe. ¿Quiere cambiarlo por otra cosa?",
+      "Sí, preferiría un cortado, si es posible.",
+      "Claro que sí. Se lo cambio sin ningún problema.",
+      "Muchas gracias, es usted muy amable.",
+      "De nada. Aquí tiene su cortado. Que lo disfrute."
+    ]
+  },
+  "level": "a1",
+  "chapter_id": "CONV_ES_ORDERING_CAFE",
+  "id": "010",
+  "target_lang": "es"
+}

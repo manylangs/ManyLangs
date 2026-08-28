@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S002",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun observes the immigration area and the different lines",
+      "pass": true,
+      "evidence": "L001: 'Excuse me, I'm here for immigration. Which line should I join?' — Jieun's question about which line to join implies she has observed the area and noticed there are multiple lines."
+    },
+    {
+      "requirement": "Jieun asks an airport employee for help",
+      "pass": true,
+      "evidence": "L001: 'Excuse me, I'm here for immigration. Which line should I join?' — Jieun directly asks an airport employee for help."
+    },
+    {
+      "requirement": "Jieun joins the correct immigration line",
+      "pass": true,
+      "evidence": "L004: 'Then you can join the line on the left, for visitors.' — The employee directs Jieun to the correct line. L005: 'Okay.' — Jieun acknowledges and accepts the direction, indicating she will join that line."
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the immigration area",
+      "pass": true,
+      "evidence": "The dialogue stays within the immigration area. No line suggests Jieun has moved past immigration or into the next stage of the airport process."
+    },
+    {
+      "requirement": "Do not resolve the immigration process itself in this scene",
+      "pass": true,
+      "evidence": "The dialogue ends with Jieun joining the line and being told to have her passport ready. There is no mention of completing immigration or being processed."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

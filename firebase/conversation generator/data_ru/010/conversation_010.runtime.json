@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a2",
+    "id": "010"
+  },
+  "title": {
+    "target": "Заказ в кафе",
+    "en": "Ordering at a Cafe",
+    "es": "Pedido en la cafetería",
+    "fr": "Commander au café",
+    "pt": "Pedido no café",
+    "kr": "카페에서 주문하기",
+    "jp": "カフェでの注文",
+    "zh": "在咖啡馆点单",
+    "ru": "Заказ в кафе"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты уже решил, что будешь заказывать?",
+            "en": "Ivan, have you decided what you're going to order yet?",
+            "es": "Iván, ¿ya has decidido qué vas a pedir?",
+            "fr": "Ivan, tu as déjà décidé ce que tu vas commander ?",
+            "pt": "Ivan, você já decidiu o que vai pedir?",
+            "kr": "이반, 뭘 주문할지 이미 정했어?",
+            "jp": "イワン、もう何を注文するか決めた？",
+            "zh": "伊万，你已经决定好要点什么了吗？",
+            "ru": "Иван, ты уже решил, что будешь заказывать?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ещё не решил. А ты что берёшь?",
+            "en": "Not yet. What are you getting?",
+            "es": "Todavía no lo he decidido. ¿Y tú qué vas a tomar?",
+            "fr": "Pas encore. Et toi, tu prends quoi ?",
+            "pt": "Ainda não decidi. E você, o que vai pegar?",
+            "kr": "아직 안 정했어. 너는 뭘 시킬 거야?",
+            "jp": "まだ決めてないよ。君は何にするの？",
+            "zh": "还没决定。你呢，你点什么？",
+            "ru": "Ещё не решил. А ты что берёшь?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я хочу капучино и, наверное, чизкейк.",
+            "en": "I want a cappuccino and, probably, a cheesecake.",
+            "es": "Yo quiero un capuchino y, seguramente, una tarta de queso.",
+            "fr": "Je veux un cappuccino et, probablement, un cheesecake.",
+            "pt": "Eu quero um cappuccino e, provavelmente, um cheesecake.",
+            "kr": "나는 카푸치노랑 치즈케이크 먹을래.",
+            "jp": "カプチーノと、たぶんチーズケーキにしようかな。",
+            "zh": "我想要卡布奇诺，可能再来一块芝士蛋糕。",
+            "ru": "Я хочу капучино и, наверное, чизкейк."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Звучит вкусно. Тогда я возьму латте и круассан.",
+            "en": "Sounds tasty. Then I'll get a latte and a croissant.",
+            "es": "Suena delicioso. Entonces yo pediré un latte y un cruasán.",
+            "fr": "Ça a l'air bon. Alors je vais prendre un latte et un croissant.",
+            "pt": "Parece gostoso. Então eu vou pegar um latte e um croissant.",
+            "kr": "맛있겠다. 그럼 나는 라테랑 크루아상 시킬게.",
+            "jp": "おいしそうだね。じゃあ、僕はラテとクロワッサンにするよ。",
+            "zh": "听起来不错。那我点拿铁和可颂。",
+            "ru": "Звучит вкусно. Тогда я возьму латте и круассан."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, давай подойдём к кассе вместе.",
+            "en": "Great, let's go up to the counter together.",
+            "es": "Genial, vamos a la caja juntos.",
+            "fr": "Parfait, allons à la caisse ensemble.",
+            "pt": "Ótimo, vamos chegar juntos ao caixa.",
+            "kr": "좋아, 같이 계산대로 가자.",
+            "jp": "いいね、一緒にレジに行こう。",
+            "zh": "太好了，我们一起去柜台点吧。",
+            "ru": "Отлично, давай подойдём к кассе вместе."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, я готов.",
+            "en": "Okay, I'm ready.",
+            "es": "Vale, estoy listo.",
+            "fr": "D'accord, je suis prêt.",
+            "pt": "Tudo bem, estou pronto.",
+            "kr": "그래, 준비됐어.",
+            "jp": "うん、準備できたよ。",
+            "zh": "好的，我准备好了。",
+            "ru": "Хорошо, я готов."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Добрый день! Можно мне большой американо?",
+            "en": "Good afternoon! Can I get a large americano?",
+            "es": "¡Buenas tardes! ¿Me pone un americano grande?",
+            "fr": "Bonjour ! Je peux avoir un grand américain ?",
+            "pt": "Boa tarde! Posso pedir um americano grande?",
+            "kr": "안녕하세요! 큰 아메리카노 한 잔 주세요.",
+            "jp": "こんにちは！大きいアメリカーノを一つください。",
+            "zh": "您好！可以给我一杯大杯美式咖啡吗？",
+            "ru": "Добрый день! Можно мне большой американо?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно. Вам что-нибудь ещё?",
+            "en": "Of course. Anything else for you?",
+            "es": "Por supuesto. ¿Algo más?",
+            "fr": "Bien sûr. Et avec ça ?",
+            "pt": "Claro. Mais alguma coisa para você?",
+            "kr": "네, 알겠습니다. 다른 것도 필요하신가요?",
+            "jp": "かしこまりました。ほかに何かありますか？",
+            "zh": "当然可以。您还需要别的吗？",
+            "ru": "Конечно. Вам что-нибудь ещё?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, ещё один эклер, пожалуйста.",
+            "en": "Yes, one more eclair, please.",
+            "es": "Sí, también un eclaire, por favor.",
+            "fr": "Oui, encore un éclair, s'il vous plaît.",
+            "pt": "Sim, mais um éclair, por favor.",
+            "kr": "네, 에클레어 하나도 주세요.",
+            "jp": "はい、エクレアをもう一つお願いします。",
+            "zh": "是的，再来一个闪电泡芙，谢谢。",
+            "ru": "Да, ещё один эклер, пожалуйста."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Эклер будет стоить двести рублей. Что-нибудь на десерт?",
+            "en": "The eclair will be two hundred rubles. Anything for dessert?",
+            "es": "El eclaire cuesta doscientos rublos. ¿Algo de postre?",
+            "fr": "L'éclair coûtera deux cents roubles. Quelque chose comme dessert ?",
+            "pt": "O éclair vai custar duzentos rublos. Algo para a sobremesa?",
+            "kr": "에클레어는 이백 루블입니다. 디저트는 더 필요 없으신가요?",
+            "jp": "エクレアは二百ルーブルになります。デザートは何かありますか？",
+            "zh": "闪电泡芙是两百卢布。需要甜点吗？",
+            "ru": "Эклер будет стоить двести рублей. Что-нибудь на десерт?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Нет, спасибо, этого достаточно.",
+            "en": "No, thank you, that's enough.",
+            "es": "No, gracias, con esto es suficiente.",
+            "fr": "Non, merci, ça suffit.",
+            "pt": "Não, obrigado, isso é suficiente.",
+            "kr": "아니요, 괜찮아요. 이것으로 충분해요.",
+            "jp": "いいえ、大丈夫です。それで十分です。",
+            "zh": "不用了，谢谢，这些就够了。",
+            "ru": "Нет, спасибо, этого достаточно."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда с вас триста пятьдесят рублей.",
+            "en": "Then that'll be three hundred fifty rubles.",
+            "es": "Entonces son trescientos cincuenta rublos.",
+            "fr": "Alors ça fera trois cent cinquante roubles.",
+            "pt": "Então são trezentos e cinquenta rublos.",
+            "kr": "그럼 삼백오십 루블입니다.",
+            "jp": "では、三百五十ルーブルになります。",
+            "zh": "那总共是三百五十卢布。",
+            "ru": "Тогда с вас триста пятьдесят рублей."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, ты уже заказала что-нибудь?",
+            "en": "Olga, have you ordered anything yet?",
+            "es": "Olga, ¿ya has pedido algo?",
+            "fr": "Olga, tu as déjà commandé quelque chose ?",
+            "pt": "Olga, você já pediu alguma coisa?",
+            "kr": "올가, 너 뭐 좀 주문했어?",
+            "jp": "オリガ、もう何か注文した？",
+            "zh": "奥尔加，你已经点了什么吗？",
+            "ru": "Ольга, ты уже заказала что-нибудь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я взяла чай с бергамотом. А ты?",
+            "en": "Yes, I got tea with bergamot. What about you?",
+            "es": "Sí, he pedido un té con bergamota. ¿Y tú?",
+            "fr": "Oui, j'ai pris un thé au bergamote. Et toi ?",
+            "pt": "Sim, eu pedi um chá com bergamota. E você?",
+            "kr": "응, 나는 베르가못 차 시켰어. 너는?",
+            "jp": "うん、ベルガモットの紅茶を頼んだよ。君は？",
+            "zh": "是的，我点了伯爵红茶。你呢？",
+            "ru": "Да, я взяла чай с бергамотом. А ты?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я думаю взять горячий шоколад.",
+            "en": "I'm thinking of getting a hot chocolate.",
+            "es": "Estoy pensando en pedir un chocolate caliente.",
+            "fr": "Je pense prendre un chocolat chaud.",
+            "pt": "Eu estou pensando em pedir um chocolate quente.",
+            "kr": "나는 핫초코 마실까 생각 중이야.",
+            "jp": "ホットチョコレートにしようと思ってる。",
+            "zh": "我在想要不要点热巧克力。",
+            "ru": "Я думаю взять горячий шоколад."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это хороший выбор, сегодня холодно.",
+            "en": "That's a good choice, it's cold today.",
+            "es": "Es una buena elección, hoy hace frío.",
+            "fr": "C'est un bon choix, il fait froid aujourd'hui.",
+            "pt": "É uma boa escolha, hoje está frio.",
+            "kr": "좋은 선택이야, 오늘 추우니까.",
+            "jp": "いい選択だね、今日は寒いから。",
+            "zh": "这是个好选择，今天很冷。",
+            "ru": "Это хороший выбор, сегодня холодно."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А ты не хочешь попробовать их новый десерт?",
+            "en": "Don't you want to try their new dessert?",
+            "es": "¿Y no quieres probar su postre nuevo?",
+            "fr": "Et tu ne veux pas goûter leur nouveau dessert ?",
+            "pt": "E você não quer experimentar a sobremesa nova deles?",
+            "kr": "그런데 너 그 새 디저트 먹어보고 싶지 않아?",
+            "jp": "新しいデザートを試してみない？",
+            "zh": "你不想尝尝他们的新甜点吗？",
+            "ru": "А ты не хочешь попробовать их новый десерт?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я бы попробовала, но я уже сыта.",
+            "en": "I would try it, but I'm already full.",
+            "es": "Me gustaría probarlo, pero ya estoy llena.",
+            "fr": "Je voudrais bien, mais je suis déjà rassasiée.",
+            "pt": "Eu experimentaria, mas já estou satisfeita.",
+            "kr": "먹어보고 싶긴 한데, 벌써 배불러.",
+            "jp": "試してみたいけど、もうお腹いっぱいなんだ。",
+            "zh": "我倒是想尝尝，但是我已经饱了。",
+            "ru": "Я бы попробовала, но я уже сыта."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Скажите, у вас есть молоко без лактозы?",
+            "en": "Excuse me, do you have lactose-free milk?",
+            "es": "Disculpe, ¿tienen leche sin lactosa?",
+            "fr": "Dites-moi, vous avez du lait sans lactose ?",
+            "pt": "Com licença, vocês têm leite sem lactose?",
+            "kr": "저기요, 락토스 프리 우유 있나요?",
+            "jp": "すみません、ラクトースフリーのミルクはありますか？",
+            "zh": "请问，你们有无乳糖的牛奶吗？",
+            "ru": "Скажите, у вас есть молоко без лактозы?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, конечно. Для капучино подойдёт?",
+            "en": "Yes, of course. Would it work for a cappuccino?",
+            "es": "Sí, claro. ¿Le sirve para el capuchino?",
+            "fr": "Oui, bien sûr. Ça ira pour un cappuccino ?",
+            "pt": "Sim, claro. Serve para o cappuccino?",
+            "kr": "네, 물론이죠. 카푸치노에 괜찮으신가요?",
+            "jp": "はい、もちろんです。カプチーノ用でよろしいですか？",
+            "zh": "有的，当然有。做卡布奇诺可以吗？",
+            "ru": "Да, конечно. Для капучино подойдёт?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, отлично. И можно мне поменьше сиропа?",
+            "en": "Yes, perfect. And can I get less syrup?",
+            "es": "Sí, perfecto. ¿Y me puede poner menos jarabe?",
+            "fr": "Oui, parfait. Et je peux avoir moins de sirop ?",
+            "pt": "Sim, ótimo. E posso pedir com menos calda?",
+            "kr": "네, 좋아요. 그리고 시럽은 적게 넣어주실 수 있나요?",
+            "jp": "はい、ちょうどいいです。あと、シロップを少なめにしてもらえますか？",
+            "zh": "可以，太好了。还有，可以少放点糖浆吗？",
+            "ru": "Да, отлично. И можно мне поменьше сиропа?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Без проблем. Какой сироп вы хотите?",
+            "en": "No problem. What syrup would you like?",
+            "es": "Sin problema. ¿Qué jarabe quiere?",
+            "fr": "Pas de problème. Quel sirop voulez-vous ?",
+            "pt": "Sem problema. Qual calda você quer?",
+            "kr": "물론이죠. 어떤 시럽으로 드릴까요?",
+            "jp": "問題ありません。どのシロップになさいますか？",
+            "zh": "没问题。您想要什么口味的糖浆？",
+            "ru": "Без проблем. Какой сироп вы хотите?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Карамельный, но совсем чуть-чуть.",
+            "en": "Caramel, but just a tiny bit.",
+            "es": "De caramelo, pero solo un poquito.",
+            "fr": "Au caramel, mais juste un tout petit peu.",
+            "pt": "De caramelo, mas bem pouquinho.",
+            "kr": "카라멜로요, 그런데 아주 조금만요.",
+            "jp": "キャラメルで、ほんの少しだけお願いします。",
+            "zh": "焦糖的，但是只要一点点。",
+            "ru": "Карамельный, но совсем чуть-чуть."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, я сделаю с половиной порции.",
+            "en": "Okay, I'll make it with half a portion.",
+            "es": "Vale, lo haré con media ración.",
+            "fr": "D'accord, je vais mettre une demi-portion.",
+            "pt": "Certo, eu vou fazer com metade da porção.",
+            "kr": "알겠습니다. 절반 양으로 넣어 드릴게요.",
+            "jp": "かしこまりました。半分量でお作りしますね。",
+            "zh": "好的，我给您放一半的量。",
+            "ru": "Хорошо, я сделаю с половиной порции."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты будешь что-нибудь есть?",
+            "en": "Sergey, are you going to eat anything?",
+            "es": "Serguéi, ¿vas a comer algo?",
+            "fr": "Sergueï, tu vas manger quelque chose ?",
+            "pt": "Sergei, você vai comer alguma coisa?",
+            "kr": "세르게이, 너 뭐 좀 먹을 거야?",
+            "jp": "セルゲイ、何か食べる？",
+            "zh": "谢尔盖，你要吃点什么东西吗？",
+            "ru": "Сергей, ты будешь что-нибудь есть?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я возьму сэндвич с курицей. А ты?",
+            "en": "Yes, I'll get the chicken sandwich. What about you?",
+            "es": "Sí, pediré un sándwich de pollo. ¿Y tú?",
+            "fr": "Oui, je vais prendre un sandwich au poulet. Et toi ?",
+            "pt": "Sim, eu vou pegar um sanduíche de frango. E você?",
+            "kr": "응, 나는 치킨 샌드위치 시킬 거야. 너는?",
+            "jp": "うん、チキンサンドイッチにするよ。君は？",
+            "zh": "是的，我要一个鸡肉三明治。你呢？",
+            "ru": "Да, я возьму сэндвич с курицей. А ты?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я хочу просто салат и стакан апельсинового сока.",
+            "en": "I just want a salad and a glass of orange juice.",
+            "es": "Yo solo quiero una ensalada y un vaso de zumo de naranja.",
+            "fr": "Je veux juste une salade et un verre de jus d'orange.",
+            "pt": "Eu quero só uma salada e um copo de suco de laranja.",
+            "kr": "나는 그냥 샐러드랑 오렌지 주스 한 잔 마실래.",
+            "jp": "サラダとオレンジジュースを一杯だけにしようかな。",
+            "zh": "我只想要一份沙拉和一杯橙汁。",
+            "ru": "Я хочу просто салат и стакан апельсинового сока."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "А покрепче ничего не хочешь? Может, кофе?",
+            "en": "Don't you want anything stronger? Maybe some coffee?",
+            "es": "¿Y no quieres algo más fuerte? ¿Quizás un café?",
+            "fr": "Et tu ne veux pas quelque chose de plus fort ? Un café, peut-être ?",
+            "pt": "E você não quer algo mais forte? Talvez um café?",
+            "kr": "좀 더 진한 건 안 마실래? 커피는 어때?",
+            "jp": "もっと強いものは欲しくないの？コーヒーとか？",
+            "zh": "你不想喝点提神的吗？比如咖啡？",
+            "ru": "А покрепче ничего не хочешь? Может, кофе?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Нет, я и так не усну сегодня.",
+            "en": "No, I won't be able to sleep as it is.",
+            "es": "No, así no voy a poder dormir esta noche.",
+            "fr": "Non, je ne dormirai déjà pas cette nuit.",
+            "pt": "Não, eu já não vou conseguir dormir hoje.",
+            "kr": "아니, 나는 오늘 어차피 잠 못 잘 거야.",
+            "jp": "いや、今夜はもう眠れなくなりそうだから。",
+            "zh": "不了，我今天反正也睡不着。",
+            "ru": "Нет, я и так не усну сегодня."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ну, как знаешь. Я всё равно возьму двойной эспрессо.",
+            "en": "Well, suit yourself. I'm still getting a double espresso.",
+            "es": "Bueno, allá tú. Yo igualmente pediré un espresso doble.",
+            "fr": "Bon, comme tu veux. Je vais quand même prendre un double espresso.",
+            "pt": "Bom, como você quiser. Eu vou pegar um espresso duplo mesmo assim.",
+            "kr": "뭐, 네 마음대로. 나는 그래도 더블 에스프레소 시킬 거야.",
+            "jp": "まあ、好きにすれば。僕はやっぱりダブルエスプレッソにするよ。",
+            "zh": "好吧，随你。我还是会点一杯双份浓缩咖啡。",
+            "ru": "Ну, как знаешь. Я всё равно возьму двойной эспрессо."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Девушка, можно вас на минуту?",
+            "en": "Excuse me, miss, can I have a minute?",
+            "es": "Perdona, ¿puedo molestarte un momento?",
+            "fr": "Mademoiselle, je peux vous parler une minute ?",
+            "pt": "Moça, posso falar com você por um minuto?",
+            "kr": "저기요, 잠시만요.",
+            "jp": "すみません、ちょっといいですか？",
+            "zh": "美女，可以打扰你一下吗？",
+            "ru": "Девушка, можно вас на минуту?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я вас слушаю.",
+            "en": "Yes, I'm listening.",
+            "es": "Sí, la escucho.",
+            "fr": "Oui, je vous écoute.",
+            "pt": "Sim, estou ouvindo.",
+            "kr": "네, 말씀하세요.",
+            "jp": "はい、お聞きします。",
+            "zh": "好的，我在听您说。",
+            "ru": "Да, я вас слушаю."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я заказывала капучино, но мне принесли латте.",
+            "en": "I ordered a cappuccino, but I was brought a latte.",
+            "es": "He pedido un capuchino, pero me han traído un latte.",
+            "fr": "J'ai commandé un cappuccino, mais on m'a apporté un latte.",
+            "pt": "Eu pedi um cappuccino, mas me trouxeram um latte.",
+            "kr": "저 카푸치노를 주문했는데 라테가 나왔어요.",
+            "jp": "カプチーノを注文したんですが、ラテが来たんですけど。",
+            "zh": "我点的是卡布奇诺，但是给我端来的是拿铁。",
+            "ru": "Я заказывала капучино, но мне принесли латте."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ой, простите, я сейчас всё исправлю.",
+            "en": "Oh, I'm so sorry, I'll fix that right away.",
+            "es": "Ay, lo siento, ahora mismo lo arreglo.",
+            "fr": "Oh, je suis désolée, je vais tout corriger tout de suite.",
+            "pt": "Ah, me desculpe, eu já vou corrigir tudo.",
+            "kr": "아, 죄송해요. 지금 바로 바꿔 드릴게요.",
+            "jp": "あっ、申し訳ございません。すぐに直します。",
+            "zh": "哎呀，对不起，我马上给您换。",
+            "ru": "Ой, простите, я сейчас всё исправлю."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спасибо большое. И ещё, можно мне салфетки?",
+            "en": "Thank you so much. And also, could I get some napkins?",
+            "es": "Muchas gracias. Y también, ¿me puede traer servilletas?",
+            "fr": "Merci beaucoup. Et aussi, je peux avoir des serviettes ?",
+            "pt": "Muito obrigada. E também, posso pedir guardanapos?",
+            "kr": "정말 감사합니다. 그리고 냅킨도 주시겠어요?",
+            "jp": "ありがとうございます。あと、ナプキンももらえますか？",
+            "zh": "非常感谢。还有，可以给我一些餐巾纸吗？",
+            "ru": "Спасибо большое. И ещё, можно мне салфетки?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, я принесу всё вместе.",
+            "en": "Of course, I'll bring everything together.",
+            "es": "Claro, lo traigo todo junto.",
+            "fr": "Bien sûr, je vais tout apporter ensemble.",
+            "pt": "Claro, eu trago tudo junto.",
+            "kr": "네, 물론이죠. 같이 가져다 드릴게요.",
+            "jp": "もちろんです。一緒にお持ちしますね。",
+            "zh": "当然可以，我一起给您拿过来。",
+            "ru": "Конечно, я принесу всё вместе."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, ты уже попробовала их фирменный напиток?",
+            "en": "Maria, have you tried their signature drink yet?",
+            "es": "María, ¿ya has probado su bebida de la casa?",
+            "fr": "Maria, tu as déjà goûté leur boisson signature ?",
+            "pt": "Maria, você já experimentou a bebida especial deles?",
+            "kr": "마리야, 너 그 시그니처 음료 마셔봤어?",
+            "jp": "マリア、もう看板ドリンクは試した？",
+            "zh": "玛丽亚，你尝过他们的招牌饮品了吗？",
+            "ru": "Мария, ты уже попробовала их фирменный напиток?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ещё нет. А что это такое?",
+            "en": "Not yet. What is it?",
+            "es": "Todavía no. ¿Qué es?",
+            "fr": "Pas encore. C'est quoi ?",
+            "pt": "Ainda não. O que é isso?",
+            "kr": "아직 안 마셔봤어. 그게 뭔데?",
+            "jp": "まだだよ。それって何なの？",
+            "zh": "还没有。那是什么呀？",
+            "ru": "Ещё нет. А что это такое?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это кофе с мёдом и корицей. Очень вкусно.",
+            "en": "It's coffee with honey and cinnamon. Very tasty.",
+            "es": "Es café con miel y canela. Está muy rico.",
+            "fr": "C'est un café au miel et à la cannelle. Très bon.",
+            "pt": "É um café com mel e canela. Muito gostoso.",
+            "kr": "꿀하고 계피 넣은 커피야. 정말 맛있어.",
+            "jp": "はちみつとシナモン入りのコーヒーだよ。すごくおいしいんだ。",
+            "zh": "是加了蜂蜜和肉桂的咖啡。非常好喝。",
+            "ru": "Это кофе с мёдом и корицей. Очень вкусно."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Правда? Тогда я тоже закажу.",
+            "en": "Really? Then I'll order it too.",
+            "es": "¿De verdad? Entonces yo también pediré uno.",
+            "fr": "Vraiment ? Alors je vais en commander aussi.",
+            "pt": "Sério? Então eu também vou pedir.",
+            "kr": "정말? 그럼 나도 시킬게.",
+            "jp": "本当？じゃあ、私も頼んでみる。",
+            "zh": "真的吗？那我也点一杯。",
+            "ru": "Правда? Тогда я тоже закажу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я думаю, тебе понравится.",
+            "en": "I think you'll like it.",
+            "es": "Creo que te va a gustar.",
+            "fr": "Je pense que tu vas aimer.",
+            "pt": "Eu acho que você vai gostar.",
+            "kr": "너도 좋아할 거야.",
+            "jp": "気に入ると思うよ。",
+            "zh": "我觉得你会喜欢的。",
+            "ru": "Я думаю, тебе понравится."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Надеюсь. А он очень сладкий?",
+            "en": "I hope so. Is it very sweet?",
+            "es": "Eso espero. ¿Y es muy dulce?",
+            "fr": "J'espère. Et c'est très sucré ?",
+            "pt": "Espero. E é bem doce?",
+            "kr": "그랬으면 좋겠네. 그런데 많이 달아?",
+            "jp": "そうだといいな。あれってすごく甘いの？",
+            "zh": "希望如此。它很甜吗？",
+            "ru": "Надеюсь. А он очень сладкий?"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "У вас есть столик на двоих у окна?",
+            "en": "Do you have a table for two by the window?",
+            "es": "¿Tienen una mesa para dos junto a la ventana?",
+            "fr": "Vous avez une table pour deux près de la fenêtre ?",
+            "pt": "Vocês têm uma mesa para dois perto da janela?",
+            "kr": "창가 쪽에 두 명 자리 있어요?",
+            "jp": "窓際の二人用のテーブルはありますか？",
+            "zh": "请问，有靠窗的两人桌吗？",
+            "ru": "У вас есть столик на двоих у окна?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, сейчас посмотрю. Минуточку.",
+            "en": "Yes, let me check. One moment.",
+            "es": "Sí, ahora mismo miro. Un momento.",
+            "fr": "Oui, je vais regarder. Un instant.",
+            "pt": "Sim, deixa eu ver. Um momento.",
+            "kr": "네, 잠시 확인해 볼게요. 잠깐만요.",
+            "jp": "はい、ちょっと確認しますね。少々お待ちください。",
+            "zh": "有的，我看看。请稍等一下。",
+            "ru": "Да, сейчас посмотрю. Минуточку."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хорошо, мы подождём.",
+            "en": "Okay, we'll wait.",
+            "es": "Vale, esperamos.",
+            "fr": "D'accord, on attend.",
+            "pt": "Certo, a gente espera.",
+            "kr": "네, 기다릴게요.",
+            "jp": "はい、待ってます。",
+            "zh": "好的，我们等着。",
+            "ru": "Хорошо, мы подождём."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "К сожалению, у окна занято. Но есть столик в углу.",
+            "en": "Unfortunately, the one by the window is taken. But there's a table in the corner.",
+            "es": "Lamentablemente, junto a la ventana está ocupado. Pero hay una mesa en el rincón.",
+            "fr": "Malheureusement, près de la fenêtre c'est occupé. Mais il y a une table dans le coin.",
+            "pt": "Infelizmente, perto da janela está ocupado. Mas tem uma mesa no canto.",
+            "kr": "죄송하지만 창가 쪽은 자리가 없어요. 그런데 구석에 자리가 있어요.",
+            "jp": "申し訳ありませんが、窓際は埋まっています。でも、角にテーブルがありますよ。",
+            "zh": "不好意思，靠窗的位置有人了。但是角落里有一张桌子。",
+            "ru": "К сожалению, у окна занято. Но есть столик в углу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ничего страшного, этот подойдёт.",
+            "en": "That's fine, that one will work.",
+            "es": "No pasa nada, esa nos vale.",
+            "fr": "Ce n'est pas grave, celle-ci ira.",
+            "pt": "Sem problema, essa serve.",
+            "kr": "괜찮아요, 그 자리면 돼요.",
+            "jp": "大丈夫です、それでいいです。",
+            "zh": "没关系，那张桌子也可以。",
+            "ru": "Ничего страшного, этот подойдёт."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда проходите, я принесу меню.",
+            "en": "Then come on in, I'll bring the menu.",
+            "es": "Entonces pasen, les traigo el menú.",
+            "fr": "Alors installez-vous, je vais apporter le menu.",
+            "pt": "Então pode entrar, eu trago o cardápio.",
+            "kr": "그럼 들어오세요, 메뉴판 가져다 드릴게요.",
+            "jp": "では、どうぞお入りください。メニューをお持ちしますね。",
+            "zh": "那请进吧，我给您拿菜单来。",
+            "ru": "Тогда проходите, я принесу меню."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты будешь заказывать десерт?",
+            "en": "Are you going to order dessert?",
+            "es": "¿Vas a pedir postre?",
+            "fr": "Tu vas commander un dessert ?",
+            "pt": "Você vai pedir uma sobremesa?",
+            "kr": "너 디저트 주문할 거야?",
+            "jp": "デザートを注文する？",
+            "zh": "你要点甜点吗？",
+            "ru": "Ты будешь заказывать десерт?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я хочу попробовать их тирамису.",
+            "en": "Yes, I want to try their tiramisu.",
+            "es": "Sí, quiero probar su tiramisú.",
+            "fr": "Oui, je veux goûter leur tiramisu.",
+            "pt": "Sim, eu quero experimentar o tiramisu deles.",
+            "kr": "응, 나는 여기 티라미수 먹어보고 싶어.",
+            "jp": "うん、ティラミスを試してみたいんだ。",
+            "zh": "是的，我想尝尝他们的提拉米苏。",
+            "ru": "Да, я хочу попробовать их тирамису."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А я возьму морковный торт.",
+            "en": "And I'll get the carrot cake.",
+            "es": "Y yo pediré tarta de zanahoria.",
+            "fr": "Et moi, je vais prendre un gâteau à la carotte.",
+            "pt": "E eu vou pegar um bolo de cenoura.",
+            "kr": "나는 당근 케이크 시킬 거야.",
+            "jp": "僕はキャロットケーキにするよ。",
+            "zh": "那我就点胡萝卜蛋糕。",
+            "ru": "А я возьму морковный торт."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отличный выбор. А кофе уже заказал?",
+            "en": "Great choice. Did you order coffee yet?",
+            "es": "Buena elección. ¿Y ya has pedido el café?",
+            "fr": "Excellent choix. Et tu as déjà commandé le café ?",
+            "pt": "Ótima escolha. E você já pediu o café?",
+            "kr": "좋은 선택이야. 그런데 커피는 이미 주문했어?",
+            "jp": "いい選択だね。コーヒーはもう注文した？",
+            "zh": "很好的选择。咖啡已经点了吗？",
+            "ru": "Отличный выбор. А кофе уже заказал?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ещё нет. Давай закажем вместе.",
+            "en": "Not yet. Let's order together.",
+            "es": "Todavía no. Pidamos juntos.",
+            "fr": "Pas encore. Commandons ensemble.",
+            "pt": "Ainda não. Vamos pedir juntos.",
+            "kr": "아직 안 했어. 같이 주문하자.",
+            "jp": "まだだよ。一緒に注文しよう。",
+            "zh": "还没有。我们一起点吧。",
+            "ru": "Ещё нет. Давай закажем вместе."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Договорились. Я возьму капучино.",
+            "en": "Deal. I'll get a cappuccino.",
+            "es": "De acuerdo. Yo pediré un capuchino.",
+            "fr": "C'est entendu. Je vais prendre un cappuccino.",
+            "pt": "Combinado. Eu vou pegar um cappuccino.",
+            "kr": "좋아. 나는 카푸치노 시킬게.",
+            "jp": "わかった。僕はカプチーノにするよ。",
+            "zh": "说好了。我要一杯卡布奇诺。",
+            "ru": "Договорились. Я возьму капучино."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Можно мне ещё один стакан воды, пожалуйста?",
+            "en": "Can I get one more glass of water, please?",
+            "es": "¿Me puede traer otro vaso de agua, por favor?",
+            "fr": "Je peux avoir encore un verre d'eau, s'il vous plaît ?",
+            "pt": "Posso pedir mais um copo de água, por favor?",
+            "kr": "물 한 잔 더 주시겠어요?",
+            "jp": "お水をもう一杯もらえますか？",
+            "zh": "可以再给我一杯水吗，谢谢？",
+            "ru": "Можно мне ещё один стакан воды, пожалуйста?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, сейчас принесу.",
+            "en": "Of course, I'll bring it right away.",
+            "es": "Claro, ahora mismo se lo traigo.",
+            "fr": "Bien sûr, je vous l'apporte tout de suite.",
+            "pt": "Claro, já vou trazer.",
+            "kr": "네, 바로 가져다 드릴게요.",
+            "jp": "もちろんです、すぐにお持ちします。",
+            "zh": "当然可以，马上给您拿来。",
+            "ru": "Конечно, сейчас принесу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "И можно счёт, пожалуйста.",
+            "en": "And can I have the check, please.",
+            "es": "¿Y me trae la cuenta, por favor?",
+            "fr": "Et l'addition, s'il vous plaît.",
+            "pt": "E pode trazer a conta, por favor.",
+            "kr": "그리고 계산서도 주세요.",
+            "jp": "あと、お会計をお願いします。",
+            "zh": "还有，麻烦买单。",
+            "ru": "И можно счёт, пожалуйста."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, одну секунду. Вам всё понравилось?",
+            "en": "Yes, one second. Did you enjoy everything?",
+            "es": "Sí, un segundo. ¿Le ha gustado todo?",
+            "fr": "Oui, une seconde. Tout vous a plu ?",
+            "pt": "Sim, um segundo. Você gostou de tudo?",
+            "kr": "네, 잠시만요. 음식은 맛있게 드셨나요?",
+            "jp": "はい、少々お待ちください。お味はいかがでしたか？",
+            "zh": "好的，请稍等一下。您觉得一切都满意吗？",
+            "ru": "Да, одну секунду. Вам всё понравилось?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, всё было очень вкусно.",
+            "en": "Yes, everything was very tasty.",
+            "es": "Sí, todo estaba muy rico.",
+            "fr": "Oui, tout était très bon.",
+            "pt": "Sim, estava tudo muito gostoso.",
+            "kr": "네, 다 정말 맛있었어요.",
+            "jp": "はい、全部とてもおいしかったです。",
+            "zh": "满意，都很好吃。",
+            "ru": "Да, всё было очень вкусно."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо! Приходите к нам ещё.",
+            "en": "Thank you! Come see us again.",
+            "es": "¡Gracias! Vuelva a visitarnos.",
+            "fr": "Merci ! Revenez nous voir !",
+            "pt": "Obrigada! Volte sempre.",
+            "kr": "감사합니다! 또 오세요.",
+            "jp": "ありがとうございます！またぜひお越しください。",
+            "zh": "谢谢！欢迎您下次再来。",
+            "ru": "Спасибо! Приходите к нам ещё."
+          }
+        }
+      ]
+    }
+  ]
+}

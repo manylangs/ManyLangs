@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S018",
+  "sequence": 18,
+  "location_ref": "LOC_MANHATTAN_HOTEL_001",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "characters": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "local_character_id": null,
+      "role": "protagonist",
+      "gender": "female",
+      "visual_state": {
+        "appearance": [
+          "Oval face with soft features",
+          "Natural eyebrows",
+          "Dark brown eyes",
+          "Light natural makeup",
+          "Warm friendly expression",
+          "Shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears"
+        ],
+        "clothing": [
+          "White casual t-shirt",
+          "Light blue denim jacket",
+          "Dark blue skinny jeans",
+          "White sneakers",
+          "Small silver earrings",
+          "Simple wristwatch"
+        ],
+        "carried_items": [
+          "Small crossbody bag",
+          "Hotel room key card",
+          "Smartphone"
+        ]
+      },
+      "emotion": "curious and excited to see the neighborhood",
+      "screen_action": "Freshens up in the hotel room, decides to go for a short walk, grabs her crossbody bag and room key, and heads out of the room"
+    }
+  ],
+  "environment": {
+    "time_of_day": "day",
+    "weather": null,
+    "lighting": "bright natural daylight coming through the hotel room window, mixed with soft indoor lighting",
+    "background_activity": [
+      "Faint sounds of the city from outside the window",
+      "Occasional distant traffic noise",
+      "Quiet indoor atmosphere typical of an empty hotel room"
+    ]
+  },
+  "visual_goal": "The viewer sees Jieun feeling settled and comfortable in her hotel room, then making the decision to go for a short evening walk, preparing herself and leaving the room with a curious and excited expression.",
+  "actions": [
+    {
+      "sequence": 1,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "freshens up by washing her face and tidying her hair",
+      "object_ref": null
+    },
+    {
+      "sequence": 2,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "walks to the window and looks out at the city view, thinking about going for a walk",
+      "object_ref": null
+    },
+    {
+      "sequence": 3,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "turns away from the window and picks up her crossbody bag from the bed",
+      "object_ref": "PROP_CROSSBODY_BAG_001"
+    },
+    {
+      "sequence": 4,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "puts the crossbody bag over her shoulder",
+      "object_ref": "PROP_CROSSBODY_BAG_001"
+    },
+    {
+      "sequence": 5,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "picks up her room key card from the desk",
+      "object_ref": "PROP_ROOM_KEY_001"
+    },
+    {
+      "sequence": 6,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "walks to the door, opens it, and steps out of the room into the hallway",
+      "object_ref": null
+    }
+  ],
+  "props": [
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "description": "Small crossbody bag",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_ROOM_KEY_001",
+      "description": "Hotel room key card given to Jieun by the front desk employee",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "description": "Smartphone",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    }
+  ],
+  "must_show": [
+    "Jieun freshens up in the hotel room",
+    "Jieun looks out the window at the city view and decides to go for a walk",
+    "Jieun grabs her crossbody bag and puts it over her shoulder",
+    "Jieun picks up her room key card",
+    "Jieun leaves the hotel room and steps into the hallway"
+  ],
+  "must_not_show": [
+    "Jieun must not move past the hotel",
+    "Jieun must not encounter any problems while leaving the hotel",
+    "Jieun must not change her clothing or appearance"
+  ],
+  "visual_continuity": {
+    "carry_in": [
+      "Jieun is in her hotel room and has seen the city view from the window",
+      "She is feeling settled and comfortable",
+      "She is thinking about taking a walk to explore the area",
+      "Her bags are placed down in the room",
+      "She still has her backpack, crossbody bag, smartphone, passport, and room key with her"
+    ],
+    "carry_out": [
+      "Jieun has left her hotel room and is heading out for an evening walk",
+      "She is feeling curious and excited to see the neighborhood",
+      "She is planning to stay close to the hotel",
+      "She is carrying her crossbody bag and room key",
+      "Her backpack, passport, and checked suitcase remain in the hotel room"
+    ],
+    "start_state": [
+      "Jieun is standing by the window looking out at the city view",
+      "Her bags are placed down near the bed or luggage rack",
+      "She has a settled and comfortable expression",
+      "She is thinking about taking a walk later"
+    ],
+    "end_state": [
+      "Jieun is standing in the hallway outside her hotel room door",
+      "She has her crossbody bag over her shoulder and her room key in her hand",
+      "She has a curious and excited expression",
+      "She is ready to go for a short walk in the neighborhood"
+    ]
+  },
+  "production_constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_story_continuity": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a2",
+    "id": "020"
+  },
+  "title": {
+    "target": "Asking for Help",
+    "en": "Asking for Help",
+    "es": "Pedir ayuda",
+    "fr": "Demander de l'aide",
+    "pt": "Pedir Ajuda",
+    "kr": "도움 요청하기",
+    "zh": "请求帮助",
+    "jp": "手伝いをお願いする",
+    "ru": "Просьба о помощи"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Could you help me move this table?",
+            "en": "Could you help me move this table?",
+            "es": "¿Podrías ayudarme a mover esta mesa?",
+            "fr": "Pourrais-tu m'aider à déplacer cette table ?",
+            "pt": "Podes ajudar-me a mover esta mesa?",
+            "kr": "이 테이블 옮기는 것 좀 도와주시겠어요?",
+            "zh": "你能帮我搬一下这张桌子吗？",
+            "jp": "このテーブルを動かすのを手伝ってもらえますか？",
+            "ru": "Не мог бы ты помочь мне передвинуть этот стол?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Sure, I can give you a hand. Where should we put it?",
+            "en": "Sure, I can give you a hand. Where should we put it?",
+            "es": "Claro, te echo una mano. ¿Dónde la ponemos?",
+            "fr": "Bien sûr, je peux te donner un coup de main. Où devrions-nous la mettre ?",
+            "pt": "Claro, posso dar-te uma mão. Onde devemos colocá-la?",
+            "kr": "물론이죠, 제가 도와드릴게요. 어디에 둘까요?",
+            "zh": "当然可以，我来帮你搭把手。我们把它放在哪儿？",
+            "jp": "いいですよ、手伝いますよ。どこに置きましょうか？",
+            "ru": "Конечно, я могу помочь. Куда мы его поставим?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Let's move it over by the window, please.",
+            "en": "Let's move it over by the window, please.",
+            "es": "Vamos a moverla junto a la ventana, por favor.",
+            "fr": "Déplaçons-la près de la fenêtre, s'il te plaît.",
+            "pt": "Vamos movê-la para junto da janela, por favor.",
+            "kr": "창가 쪽으로 옮겨 주세요.",
+            "zh": "请把它搬到窗户那边去吧。",
+            "jp": "窓のそばに動かしましょう。",
+            "ru": "Давай поставим его у окна, пожалуйста."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Okay, that works. Is this spot good?",
+            "en": "Okay, that works. Is this spot good?",
+            "es": "Vale, así está bien. ¿Te parece bien este sitio?",
+            "fr": "D'accord, ça me va. Est-ce que cet endroit est bien ?",
+            "pt": "Ok, isso funciona. Este sítio está bom?",
+            "kr": "좋아요, 그럼 됐네요. 이 자리가 괜찮은가요?",
+            "zh": "好的，没问题。这个位置可以吗？",
+            "jp": "はい、それで大丈夫です。この場所でいいですか？",
+            "ru": "Хорошо, подойдёт. Это место подходит?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Perfect, right there. I really appreciate your help.",
+            "en": "Perfect, right there. I really appreciate your help.",
+            "es": "Perfecto, justo ahí. Te agradezco mucho tu ayuda.",
+            "fr": "Parfait, juste là. J'apprécie vraiment ton aide.",
+            "pt": "Perfeito, mesmo aí. Agradeço muito a tua ajuda.",
+            "kr": "완벽해요, 바로 거기요. 도와주셔서 정말 감사해요.",
+            "zh": "完美，就放在那儿。非常感谢你的帮助。",
+            "jp": "完璧です、ちょうどそこです。本当に助かりました。",
+            "ru": "Идеально, прямо там. Я очень ценю твою помощь."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "No problem at all. Happy to help.",
+            "en": "No problem at all. Happy to help.",
+            "es": "No hay problema en absoluto. Encantado de ayudar.",
+            "fr": "Pas de problème du tout. Heureux de t'aider.",
+            "pt": "Não há problema nenhum. Com todo o gosto.",
+            "kr": "천만에요. 도와드려서 기쁘네요.",
+            "zh": "完全不用客气。很高兴能帮上忙。",
+            "jp": "全然問題ないですよ。お役に立てて嬉しいです。",
+            "ru": "Да не за что. Рад помочь."
+          }
+        }
+      ]
+    }
+  ]
+}

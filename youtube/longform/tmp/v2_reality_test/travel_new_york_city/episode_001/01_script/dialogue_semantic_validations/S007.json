@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S007",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun asks a transit employee for advice",
+      "pass": true,
+      "evidence": "L001: 'Excuse me, can I ask you something?' and L003: 'I need to get to my hotel in Manhattan. What's the best way?'"
+    },
+    {
+      "requirement": "The employee explains the transportation options",
+      "pass": true,
+      "evidence": "L004: 'You have a few options. Taxis and ride-sharing are direct, but public transit is cheaper.'"
+    },
+    {
+      "requirement": "Jieun decides to take public transit to Manhattan",
+      "pass": true,
+      "evidence": "L007: 'Okay, that sounds good. I'll take the train then.'"
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the ground transportation area",
+      "pass": true,
+      "evidence": "The dialogue stays in the ground transportation area; L008 only instructs to follow signs for the train, not actually moving."
+    },
+    {
+      "requirement": "Do not introduce specific prices or operational details for any transportation option",
+      "pass": true,
+      "evidence": "L004 mentions 'cheaper' but no specific price; L006 says 'the train has space for bags' without operational details."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

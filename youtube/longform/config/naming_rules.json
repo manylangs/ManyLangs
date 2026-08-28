@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "folder_naming": {
+    "style": "lowercase_snake_case",
+    "sequence_padding": 3
+  },
+  "ids": {
+    "category": {
+      "format": "{category}",
+      "example": "travel"
+    },
+    "series": {
+      "format": "{category}_{series}",
+      "example": "travel_new_york"
+    },
+    "episode_folder": {
+      "format": "episode_{NNN}",
+      "example": "episode_001"
+    },
+    "episode": {
+      "format": "{series_id}_ep{NNN}",
+      "example": "travel_new_york_ep001"
+    },
+    "scene": {
+      "format": "S{NNN}",
+      "example": "S001"
+    },
+    "character": {
+      "format": "CHAR_{NAME}_{NNN}",
+      "example": "CHAR_JIEUN_001"
+    },
+    "location": {
+      "format": "LOC_{PLACE}_{NNN}",
+      "example": "LOC_JFK_BAGGAGE_001"
+    },
+    "key_expression": {
+      "format": "KE{NNN}",
+      "example": "KE001"
+    },
+    "expression": {
+      "format": "EXP_{NNNNNN}",
+      "example": "EXP_000001"
+    },
+    "asset": {
+      "format": "ASSET_{TYPE}_{NNNNNN}",
+      "example": "ASSET_IMG_000001"
+    }
+  },
+  "rules": {
+    "language_is_not_a_top_level_folder": true,
+    "cefr_is_not_part_of_episode_id": true,
+    "episode_title_is_not_part_of_episode_id": true,
+    "character_ids_are_series_reusable": true,
+    "location_ids_are_series_reusable": true,
+    "key_expression_ids_are_episode_local": true
+  }
+}

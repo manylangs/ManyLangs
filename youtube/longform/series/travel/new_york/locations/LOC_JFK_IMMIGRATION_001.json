@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1
+  },
+  "location_id": "LOC_JFK_IMMIGRATION_001",
+  "series_id": "travel_new_york",
+  "identity": {
+    "name": "JFK Immigration Area",
+    "location_type": "airport_immigration",
+    "city": "New York City",
+    "country": "United States",
+    "parent_location_id": null
+  },
+  "story_profile": {
+    "story_function": "The airport immigration and entry-processing environment used during Jieun's arrival in the United States.",
+    "continuity_rules": [
+      "Keep this location visually recognizable whenever it is reused.",
+      "Preserve its functional identity across adjacent scenes.",
+      "Do not visually merge this location with another registered JFK location."
+    ]
+  },
+  "visual_identity": {
+    "environment_summary": "A realistic contemporary international airport immigration area at JFK Airport with organized passenger queues, inspection counters, directional signage, and controlled entry lanes.",
+    "persistent_features": [
+      "immigration inspection counters",
+      "organized passenger queue lanes",
+      "airport directional signage",
+      "controlled international arrival environment",
+      "realistic institutional airport lighting"
+    ],
+    "variable_features": [
+      "traveler density",
+      "camera position",
+      "background travelers",
+      "protagonist position",
+      "ambient lighting"
+    ],
+    "continuity_lock": true
+  },
+  "production": {
+    "visual_provider": "vidu",
+    "reference_asset_ids": [],
+    "prompt_rules": [
+      "Preserve the registered location identity across generated scenes.",
+      "Maintain realistic contemporary JFK Airport architecture and scale.",
+      "Allow camera framing, crowd density, protagonist action, and background activity to vary.",
+      "Do not introduce environmental features that contradict the registered location.",
+      "Do not transform this location into another airport functional area."
+    ]
+  }
+}

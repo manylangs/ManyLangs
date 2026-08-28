@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "002"
+  },
+  "title": {
+    "target": "自己紹介",
+    "en": "Self-Introduction",
+    "es": "Presentación personal",
+    "fr": "Se présenter",
+    "pt": "Apresentação pessoal",
+    "kr": "자기소개",
+    "zh": "自我介绍",
+    "jp": "自己紹介",
+    "ru": "Знакомство"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "はじめまして、由紀です。",
+            "en": "Nice to meet you, I'm Yuki.",
+            "es": "Encantada de conocerte, soy Yuki.",
+            "fr": "Enchantée, je suis Yuki.",
+            "pt": "Olá, sou a Yuki.",
+            "kr": "처음 뵙겠습니다, 유키입니다.",
+            "zh": "初次见面，我是由纪。",
+            "jp": "はじめまして、由紀です。",
+            "ru": "Приятно познакомиться, я Юки."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "翔太です。よろしくお願いします。",
+            "en": "I'm Shota. Nice to meet you too.",
+            "es": "Soy Shota. Mucho gusto.",
+            "fr": "Je suis Shota. Enchanté.",
+            "pt": "Sou o Shota. Prazer em conhecer-te.",
+            "kr": "쇼타입니다. 잘 부탁드립니다.",
+            "zh": "我是翔太。请多关照。",
+            "jp": "翔太です。よろしくお願いします。",
+            "ru": "Я Сёта. Надеюсь, мы поладим."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "大学で何を勉強しているの？",
+            "en": "What are you studying in college?",
+            "es": "¿Qué estudias en la universidad?",
+            "fr": "Qu'est-ce que tu étudies à l'université ?",
+            "pt": "O que estudas na universidade?",
+            "kr": "대학에서 뭘 공부하고 있어?",
+            "zh": "你在大学学什么？",
+            "jp": "大学で何を勉強しているの？",
+            "ru": "Что ты изучаешь в университете?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "経済学を勉強しています。",
+            "en": "I'm studying economics.",
+            "es": "Estudio Economía.",
+            "fr": "J'étudie l'économie.",
+            "pt": "Estudo Economia.",
+            "kr": "경제학을 공부하고 있어요.",
+            "zh": "我在学经济学。",
+            "jp": "経済学を勉強しています。",
+            "ru": "Я изучаю экономику."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "そうなんだ。私は日本語を勉強しているよ。",
+            "en": "Oh, I see. I'm studying Japanese.",
+            "es": "Ya veo. Yo estoy estudiando japonés.",
+            "fr": "Ah bon ? Moi, j'apprends le japonais.",
+            "pt": "Percebo. Eu estou a estudar japonês.",
+            "kr": "그렇구나. 나는 일본어를 공부하고 있어.",
+            "zh": "原来如此。我在学日语。",
+            "jp": "そうなんだ。私は日本語を勉強しているよ。",
+            "ru": "Понятно. А я учу японский язык."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "いいね。一緒に頑張ろうね。",
+            "en": "That's cool. Let's do our best together.",
+            "es": "Qué bien. ¡Esforcémonos juntos!",
+            "fr": "Super. On va s'entraider !",
+            "pt": "Boa. Vamos dar o nosso melhor juntos.",
+            "kr": "좋네. 같이 힘내자.",
+            "zh": "真好。我们一起加油吧。",
+            "jp": "いいね。一緒に頑張ろうね。",
+            "ru": "Здорово. Давай вместе стараться!"
+          }
+        }
+      ]
+    }
+  ]
+}

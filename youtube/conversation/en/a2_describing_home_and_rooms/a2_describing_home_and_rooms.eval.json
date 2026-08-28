@@ -1,0 +1,71 @@
+{
+  "chapter_id": "conversation_015.runtime.json",
+  "target_lang": "en",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A와 B의 역할이 전체 대화에서 명확하고 일관되게 유지됨. A는 자신의 집에 대해 설명하고, B는 질문과 긍정적인 반응을 보이는 구조가 자연스러움."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "대화의 기능(정보 제공, 질문, 감탄, 긍정)이 명확하게 드러나며, 각 발화가 상황에 맞게 적절히 구성됨."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "전체적으로 자연스러운 회화체를 사용함. 'That's exciting!', 'Sounds lovely.', 'That's great.' 등의 구어적 표현이 자연스럽게 쓰임. 다만, A2 레벨에 비해 일부 문장이 약간 길거나 복잡할 수 있음."
+    },
+    "register_appropriateness": {
+      "score": 9,
+      "weight": 10,
+      "notes": "친근하고 편안한 대화체로, 일상적인 주제에 적합한 톤을 유지함. 'brand new', 'pretty spacious' 등의 표현이 상황에 잘 어울림."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 오류가 발견되지 않음. 문장 부호, 대문자 사용, 축약형 사용이 모두 적절함."
+    },
+    "situational_practicality": {
+      "score": 10,
+      "weight": 10,
+      "notes": "새 집으로 이사한 후 집을 설명하는 실용적인 상황을 잘 반영함. 거실, 주방 등 구체적인 공간과 특징을 묻고 답하는 방식이 실제 회화에서 유용하게 쓰일 수 있음."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "특정 문화에 국한되지 않는 보편적인 주제와 표현을 사용하여 문화적 중립성을 잘 유지함."
+    },
+    "tts_readiness": {
+      "score": 9,
+      "weight": 5,
+      "notes": "TTS로 읽기에 적합한 문장 구조와 길이를 가짐. 다만, 'It's'와 같은 축약형이 명확히 발음되도록 처리할 필요가 있음."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "en 필드가 target 필드와 완벽하게 일치함. 모든 문장에서 오타나 누락 없이 정확히 미러링됨."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "A2 레벨의 일상 회화 학습자에게 적합한 수준으로, 실용적인 표현과 자연스러운 대화 흐름을 갖춰 시중 주요 영어 회화 서비스와 비교해도 손색없는 품질을 보임."
+    }
+  },
+  "final_score": 95,
+  "market_benchmark": {
+    "comparable_services": [
+      "Cambridge English Conversation",
+      "EBS/YBM 실용영어회화",
+      "Duolingo English Conversations",
+      "Pimsleur English",
+      "Speak"
+    ],
+    "estimated_relative_position": "Cambridge English Conversation 및 EBS/YBM 실용영어회화의 A2 레벨 교재와 유사한 수준의 품질을 보이며, Duolingo English Conversations의 실용적 접근 방식과도 견줄 만함. 전반적으로 시중 최상위 서비스 대비 상위 10% 이내에 위치할 것으로 추정됨.",
+    "disclaimer": "실시간 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}

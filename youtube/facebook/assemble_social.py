@@ -30,7 +30,7 @@ cd /Users/junghasuk/Desktop/ManyLangs/web/youtube/facebook
 
 python3 assemble_social.py
 
-  1) 언어 약어 입력 (예: en)
+  1) 지원 언어 번호 목록에서 번호 입력
   2) 시리즈 선택 (Conversation / Vocabulary / Idiom / Real Life Situations)
   3) conversation/{lang}/ 아래 a1_~c2_ 로 시작하는 하위 폴더를
      번호로 보여주고 선택
@@ -67,10 +67,16 @@ SRT_TIME_RE = re.compile(
 
 # 언어 코드 -> facebook/{Language}/ 폴더명
 # (post_facebook.py 의 LANGUAGES["name"] 과 동일하게 맞춰야 함)
+#
+# 다른 파이프라인 스크립트(youtube_upload.py, assemble_video.py,
+# watermark 스크립트 등)와 동일하게, 내부 관리 코드는 이 딕셔너리의 키를
+# 그대로 쓴다 (일본어는 내부적으로 "jp"). 새 언어를 추가/삭제/순서 변경
+# 하고 싶으면 이 딕셔너리만 수정하면 되고, 언어 선택 메뉴의 번호는 등록
+# 순서대로 자동으로 매겨진다.
 LANGUAGE_NAMES = {
     "en": "English",
     "kr": "Korean",
-    "ja": "Japanese",
+    "jp": "Japanese",
     "zh": "Chinese",
     "es": "Spanish",
     "fr": "French",
@@ -374,12 +380,18 @@ def assemble(item_dir, series_name):
 
 
 def prompt_language():
-    lang_code = input("\n언어 약어 입력 (예: en, kr, ja...): ").strip().lower()
+    codes = list(LANGUAGE_NAMES.keys())
 
-    if not lang_code:
-        raise ValueError("언어 약어가 필요합니다.")
+    print("\n지원 언어:")
+    for i, code in enumerate(codes, start=1):
+        print(f"  {i:>2} - {code} ({LANGUAGE_NAMES[code]})")
 
-    return lang_code
+    choice = input("번호 입력: ").strip()
+
+    if not choice.isdigit() or not (1 <= int(choice) <= len(codes)):
+        raise ValueError(f"잘못된 번호: {choice}")
+
+    return codes[int(choice) - 1]
 
 
 def prompt_series():

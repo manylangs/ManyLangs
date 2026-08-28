@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S005",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun spots her bag on the carousel",
+      "pass": true,
+      "evidence": "L001: 'I just got my bag.' This directly confirms she has spotted and retrieved her bag from the carousel."
+    },
+    {
+      "requirement": "Jieun retrieves her luggage",
+      "pass": true,
+      "evidence": "L001: 'I just got my bag.' The use of 'got' confirms she has physically retrieved her luggage."
+    },
+    {
+      "requirement": "Jieun begins looking for signs to ground transportation",
+      "pass": true,
+      "evidence": "L001: 'Can you tell me where to go for ground transportation?' This shows she is actively seeking the ground transportation area. L002: The employee directs her to follow the 'Ground Transportation' signs, and L003 confirms she is processing this direction ('Past the exit, okay.')."
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the airport terminal",
+      "pass": true,
+      "evidence": "The dialogue takes place inside the airport terminal, with the employee directing her to the ground transportation area 'past the exit' (L002). There is no indication she has left the terminal."
+    },
+    {
+      "requirement": "Do not introduce a problem with her luggage",
+      "pass": true,
+      "evidence": "L001: 'I just got my bag.' This confirms her luggage arrived without issue, resolving the prior concern. No new luggage problem is introduced."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

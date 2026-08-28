@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Demander son chemin",
+  "sets": {
+    "001": [
+      "Excusez-moi, où est la gare ?",
+      "La gare ? C'est tout droit.",
+      "C'est loin d'ici ?",
+      "Non, c'est à cinq minutes à pied.",
+      "D'accord, merci beaucoup !",
+      "Je vous en prie, bonne journée."
+    ],
+    "002": [
+      "Pardon, je cherche la poste.",
+      "La poste est à droite.",
+      "Après le feu rouge ?",
+      "Oui, c'est ça, après le feu.",
+      "Parfait, merci !",
+      "De rien, bonne chance."
+    ],
+    "003": [
+      "Bonjour, pour aller au musée ?",
+      "Vous allez tout droit, puis à gauche.",
+      "C'est la rue Victor Hugo ?",
+      "Oui, c'est cette rue-là.",
+      "Merci, c'est gentil.",
+      "Avec plaisir, bon après-midi."
+    ],
+    "004": [
+      "Excusez-moi, le métro est où ?",
+      "L'entrée est juste là, en face.",
+      "Ah, je ne voyais pas !",
+      "Oui, elle est derrière le kiosque.",
+      "Merci pour votre aide.",
+      "Pas de souci, bonne route."
+    ],
+    "005": [
+      "Pardon, je suis perdue.",
+      "Vous cherchez un endroit précis ?",
+      "Oui, la place du marché.",
+      "C'est simple, vous tournez à droite.",
+      "D'accord, merci beaucoup.",
+      "Je vous en prie, faites attention."
+    ],
+    "006": [
+      "Bonjour, l'hôtel de ville, s'il vous plaît ?",
+      "C'est un peu plus loin, sur la gauche.",
+      "Je continue tout droit ?",
+      "Oui, puis vous verrez un grand bâtiment.",
+      "Très bien, merci !",
+      "Avec plaisir, bonne journée."
+    ],
+    "007": [
+      "Excusez-moi, où puis-je trouver un taxi ?",
+      "Il y a une station près du parc.",
+      "C'est par où, le parc ?",
+      "Allez tout droit, puis tournez à gauche.",
+      "Merci, c'est très clair.",
+      "De rien, bonne soirée."
+    ],
+    "008": [
+      "Pardon, la bibliothèque est loin ?",
+      "Non, elle est juste à côté.",
+      "Je passe par cette petite rue ?",
+      "Oui, c'est la rue des Lilas.",
+      "Parfait, merci beaucoup.",
+      "Je vous en prie, à bientôt."
+    ],
+    "009": [
+      "Bonjour, je cherche la banque.",
+      "Elle est en face du supermarché.",
+      "Je traverse le pont ?",
+      "Non, restez sur ce trottoir.",
+      "Ah, je vois, merci !",
+      "De rien, bonne journée."
+    ],
+    "010": [
+      "Excusez-moi, c'est par ici le parc ?",
+      "Oui, c'est tout droit, au bout de la rue.",
+      "C'est à dix minutes ?",
+      "Plutôt cinq minutes, c'est tout proche.",
+      "Très bien, merci !",
+      "Avec plaisir, bonne promenade."
+    ]
+  },
+  "level": "a1",
+  "chapter_id": "CONV_FR_ASKING_DIRECTIONS",
+  "id": "007",
+  "target_lang": "fr"
+}

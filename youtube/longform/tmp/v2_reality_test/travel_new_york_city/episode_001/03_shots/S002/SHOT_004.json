@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S002",
+  "shot_id": "SHOT_004",
+  "sequence": 4,
+  "duration_seconds": 6.0,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun taking her passport out from her crossbody bag and walking toward the line on the left.",
+  "framing": {
+    "shot_size": "medium_wide",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "PROP_PASSPORT_001"
+    ]
+  },
+  "camera": {
+    "angle": "three_quarter",
+    "movement": "follow",
+    "stability": "smooth"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun nods, takes her passport out from her crossbody bag, and walks toward the line on the left.",
+    "start_state": [
+      "Jieun is standing near the airport employee",
+      "Her crossbody bag is closed"
+    ],
+    "end_state": [
+      "Jieun is walking toward the line on the left",
+      "She is holding her passport in her hand"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "a bit more confident and calm",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across body, opened to retrieve passport",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "state": "held in Jieun's hand",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [],
+    "speaker_focus": null
+  },
+  "continuity": {
+    "carry_in": [
+      "The employee has pointed toward the left line",
+      "Jieun knows she needs to have her passport ready"
+    ],
+    "carry_out": [
+      "Jieun has joined the correct immigration line after asking for help",
+      "She is waiting in line with her passport ready",
+      "She feels a bit more confident about the process"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

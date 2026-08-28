@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S005",
+  "shot_id": "SHOT_003",
+  "sequence": 3,
+  "source_refs": {
+    "production_scene": "02_visual/production_scenes/S005.json",
+    "shot": "03_shots/S005/SHOT_003.json",
+    "visual_continuity": "04_visual_continuity/S005/SHOT_003.json"
+  },
+  "generation": {
+    "provider": "vidu",
+    "duration_seconds": 8.0,
+    "aspect_ratio": "16:9",
+    "resolution": "1080p",
+    "mode": "reference_guided"
+  },
+  "actors": [
+    {
+      "actor_ref": "CHAR_JIEUN_001",
+      "identity_type": "persistent",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Medium-sized travel backpack",
+        "Small crossbody bag",
+        "Smartphone",
+        "Passport"
+      ],
+      "body_state": [
+        "Standing in front of the airport employee",
+        "Backpack worn on back",
+        "Crossbody bag worn across body",
+        "Holding her retrieved suitcase with one hand",
+        "Looking in the direction the employee is pointing"
+      ],
+      "emotion": "attentive and relieved",
+      "reference_asset_ids": [
+        "ASSET_CHAR_JIEUN_PRIMARY_000001"
+      ]
+    },
+    {
+      "actor_ref": "B",
+      "identity_type": "scene_local",
+      "identity_lock": true,
+      "appearance": [
+        "Professional airport employee appearance",
+        "Neatly groomed hair",
+        "Friendly and approachable expression"
+      ],
+      "hair": [
+        "Neatly groomed hair"
+      ],
+      "clothing": [
+        "Airport employee uniform with visible identification badge"
+      ],
+      "carried_items": [],
+      "body_state": [
+        "Standing in front of Jieun",
+        "Facing Jieun",
+        "Arm extended pointing toward the ground transportation signs"
+      ],
+      "emotion": "helpful and polite",
+      "reference_asset_ids": []
+    }
+  ],
+  "location": {
+    "location_ref": "LOC_JFK_AIRPORT_001",
+    "identity_lock": true,
+    "current_zone": "baggage claim area, near the baggage carousel for flight KE081, JFK International Airport",
+    "persistent_features": [
+      "Large terminal with high ceilings",
+      "Digital flight information displays",
+      "Signage for Arrivals, Immigration, and Baggage Claim",
+      "Moving walkways and escalators",
+      "Large windows with natural light"
+    ],
+    "orientation_state": [
+      "Jieun standing in front of the airport employee, facing the employee",
+      "Airport employee standing in front of Jieun, facing Jieun",
+      "Airport employee's arm extended pointing toward the ground transportation signs",
+      "Jieun looking in the direction the employee is pointing",
+      "Ground transportation signage visible in the direction the employee is pointing",
+      "Baggage carousel behind Jieun",
+      "Other passengers in the baggage claim area in the background"
+    ],
+    "reference_asset_ids": []
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn on back",
+      "position": "on Jieun's back",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn across body",
+      "position": "across Jieun's body",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "not visible in hands, likely stored in crossbody bag or pocket",
+      "position": "not visible, likely in crossbody bag or pocket",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "not visible in hands, likely stored in crossbody bag or pocket",
+      "position": "not visible, likely in crossbody bag or pocket",
+      "visible": false,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "retrieved from carousel, held by Jieun",
+      "position": "in Jieun's hand, beside her",
+      "visible": true,
+      "continuity_lock": true
+    }
+  ],
+  "prompt": {
+    "subject": "Jieun, a young woman with shoulder-length dark brown hair tucked behind her ears, wearing a white t-shirt, light blue denim jacket, dark blue skinny jeans, and white sneakers, stands holding her retrieved suitcase, with a travel backpack on her back and a crossbody bag across her body. In front of her, a professional airport employee in uniform with an identification badge stands facing her, arm extended pointing toward the ground transportation signs.",
+    "environment": "Inside the baggage claim area of JFK International Airport, near the baggage carousel for flight KE081. The large terminal has high ceilings, digital flight information displays, signage for Arrivals, Immigration, and Baggage Claim, moving walkways, escalators, and large windows letting in natural light. Other passengers are collecting luggage and pushing carts in the background.",
+    "action": "The airport employee points toward the ground transportation signs and gives directions to Jieun. Jieun listens attentively, then looks in the direction the employee is pointing.",
+    "camera": "Medium shot, eye-level angle, static locked camera.",
+    "continuity": "Jieun retains her backpack on her back, crossbody bag across her body, and holds her retrieved suitcase. The airport employee's arm remains extended pointing toward the ground transportation signs. The baggage carousel remains behind Jieun. Ground transportation signage is visible in the direction the employee points.",
+    "final_prompt": "Medium shot, eye-level, static camera. Inside the JFK baggage claim area, a young woman with shoulder-length dark brown hair, wearing a white t-shirt, light blue denim jacket, dark blue skinny jeans, and white sneakers, stands holding her suitcase, with a backpack on her back and crossbody bag across her body. In front of her, a professional airport employee in uniform with an identification badge points toward the ground transportation signs and gives directions. She listens attentively, then looks in the direction he points. The baggage carousel is behind her, and other passengers are in the background. Natural light from large windows illuminates the scene."
+  },
+  "negative_constraints": [
+    "Do not change character identity.",
+    "Do not change canonical location identity.",
+    "Do not introduce new characters.",
+    "Do not introduce new locations.",
+    "Do not alter canonical prop state.",
+    "Do not change story events.",
+    "Do not show Jieun leaving the baggage claim area.",
+    "Do not show Jieun's suitcase being lost or missing.",
+    "Do not show Jieun's passport or smartphone being dropped or lost."
+  ],
+  "continuity": {
+    "carry_in": [
+      "Jieun is standing in front of the airport employee",
+      "The employee is about to respond"
+    ],
+    "carry_out": [
+      "The employee has given directions",
+      "Jieun is looking toward the ground transportation signs"
+    ],
+    "must_match_previous_shot": true,
+    "previous_scene_id": "S005",
+    "previous_shot_id": "SHOT_002",
+    "next_scene_id": "S005",
+    "next_shot_id": "SHOT_004"
+  }
+}

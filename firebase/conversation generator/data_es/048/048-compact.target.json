@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Resolver un problema",
+  "sets": {
+    "001": [
+      "Carlos, tenemos un problema con el pedido del cliente.",
+      "¿En serio? ¿Qué ha pasado exactamente?",
+      "Han llegado las cajas, pero faltan dos unidades del producto principal.",
+      "Entonces lo primero es revisar el albarán para confirmarlo.",
+      "Sí, ya lo he mirado y ahí constan las dos unidades.",
+      "Vale, voy a contactar con el almacén ahora mismo."
+    ],
+    "002": [
+      "No consigo acceder al sistema desde esta mañana.",
+      "¿Te aparece algún mensaje de error en la pantalla?",
+      "Sí, me dice que la contraseña ha caducado.",
+      "Ah, entonces es un proceso sencillo de restablecer.",
+      "¿Puedes indicarme cómo hacerlo paso a paso?",
+      "Claro, te envío el enlace para que la renueves tú misma."
+    ],
+    "003": [
+      "El informe que enviamos tiene un error en los datos de ventas.",
+      "¿De qué trimestre estamos hablando y en qué página está?",
+      "Es del segundo trimestre, en la tabla de la página cinco.",
+      "Ya lo veo, la cifra total no coincide con la suma de las columnas.",
+      "Exacto, hay una diferencia de tres mil euros.",
+      "Lo corrijo ahora y te aviso en cuanto esté actualizado."
+    ],
+    "004": [
+      "El proveedor nos ha comunicado que retrasa la entrega una semana.",
+      "Eso nos afecta directamente al plan de producción.",
+      "Por eso quería proponerte buscar una alternativa urgente.",
+      "¿Tienes algún otro proveedor en mente que pueda cubrirlo?",
+      "Sí, uno con el que ya hemos trabajado antes y que es fiable.",
+      "Perfecto, hablemos con ellos esta misma tarde."
+    ],
+    "005": [
+      "Se ha estropeado la impresora y tenemos que imprimir los contratos hoy.",
+      "¿Habéis probado a reiniciarla o a cambiar el cable de conexión?",
+      "Sí, hemos hecho ambas cosas y sigue sin funcionar.",
+      "Entonces lo mejor será llamar al servicio técnico.",
+      "¿Crees que podrán venir antes de las dos?",
+      "Lo intentaré, pero si no, busco otra imprenta cercana."
+    ],
+    "006": [
+      "He detectado que dos empleados no han recibido el correo con las nuevas normas.",
+      "¿Puede ser que esté en la carpeta de spam?",
+      "No, lo hemos comprobado y tampoco aparece ahí.",
+      "Entonces puede que haya un error en sus direcciones de correo.",
+      "Tienes razón, voy a verificar los datos en el sistema.",
+      "Buena idea, así evitamos que vuelva a ocurrir."
+    ],
+    "007": [
+      "El cliente se queja de que la factura no coincide con el presupuesto.",
+      "¿Qué diferencia ha encontrado exactamente?",
+      "Dice que le hemos cobrado el envío dos veces.",
+      "Mmm, puede ser un error al introducir los datos en el sistema.",
+      "Voy a revisar el historial de la operación para confirmarlo.",
+      "Hazlo, y si es así, le emitimos una factura rectificativa."
+    ],
+    "008": [
+      "Se ha cancelado la sala para la reunión de mañana a última hora.",
+      "¿Y no hay ninguna otra sala disponible a esa hora?",
+      "No, todas están ocupadas, pero podemos usar la sala de videoconferencia.",
+      "Esa opción es válida, aunque es un poco más pequeña.",
+      "Sí, pero para ocho personas es suficiente.",
+      "De acuerdo, la reservo y aviso a todos los asistentes."
+    ],
+    "009": [
+      "El archivo que me enviaste ayer no se abre correctamente.",
+      "Qué raro, a mí me funciona sin ningún problema.",
+      "Puede que sea un problema de compatibilidad con mi versión del programa.",
+      "Ah, eso explicaría el fallo, claro.",
+      "¿Podrías enviármelo en otro formato?",
+      "Sí, te lo convierto a PDF y te lo mando en cinco minutos."
+    ],
+    "010": [
+      "Hemos detectado que el último lote de productos tiene algunas piezas defectuosas.",
+      "¿Qué porcentaje del lote está afectado aproximadamente?",
+      "Hemos encontrado fallos en un cinco por ciento de las unidades.",
+      "Eso es suficiente para detener la distribución de inmediato.",
+      "Estoy de acuerdo, es mejor prevenir que enviar un producto dañado.",
+      "Voy a redactar un informe y a convocar una reunión con el equipo de calidad."
+    ]
+  },
+  "level": "c1",
+  "chapter_id": "CONV_ES_ISSUE_SOLVING",
+  "id": "048",
+  "target_lang": "es"
+}

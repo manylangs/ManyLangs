@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b1",
+    "id": "021"
+  },
+  "title": {
+    "target": "Жизнь в общежитии",
+    "en": "Life in the Dormitory",
+    "es": "La vida en la residencia",
+    "fr": "La vie en résidence universitaire",
+    "pt": "Vida no dormitório",
+    "kr": "기숙사 생활",
+    "jp": "寮での生活",
+    "zh": "宿舍生活",
+    "ru": "Жизнь в общежитии"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, привет! Ты уже переехал в общежитие?",
+            "en": "Ivan, hi! Have you already moved into the dormitory?",
+            "es": "Iván, ¡hola! ¿Ya te mudaste a la residencia?",
+            "fr": "Ivan, salut ! Tu as déjà emménagé à la résidence ?",
+            "pt": "Ivan, oi! Você já se mudou para o dormitório?",
+            "kr": "이반, 안녕! 벌써 기숙사로 이사했어?",
+            "jp": "イワン、こんにちは！もう寮に引っ越したの？",
+            "zh": "伊万，你好！你已经搬进宿舍了吗？",
+            "ru": "Иван, привет! Ты уже переехал в общежитие?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, переехал в субботу. Комната небольшая, но уютная.",
+            "en": "Yes, I moved in on Saturday. The room is small, but cozy.",
+            "es": "Sí, me mudé el sábado. La habitación es pequeña, pero acogedora.",
+            "fr": "Oui, j'ai emménagé samedi. La chambre est petite, mais cosy.",
+            "pt": "Sim, me mudei no sábado. O quarto é pequeno, mas aconchegante.",
+            "kr": "응, 토요일에 이사했어. 방은 작은데 아늑해.",
+            "jp": "うん、土曜日に引っ越したよ。部屋は小さいけど、居心地がいいよ。",
+            "zh": "是的，星期六搬进来的。房间不大，但是很舒适。",
+            "ru": "Да, переехал в субботу. Комната небольшая, но уютная."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А сосед у тебя хороший?",
+            "en": "And is your roommate a good one?",
+            "es": "¿Y tu compañero de habitación es bueno?",
+            "fr": "Et ton colocataire, il est sympa ?",
+            "pt": "E o seu colega de quarto é legal?",
+            "kr": "룸메이트는 괜찮아?",
+            "jp": "それで、ルームメイトはいい人？",
+            "zh": "那你的室友好吗？",
+            "ru": "А сосед у тебя хороший?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Сосед спокойный, мы почти не мешаем друг другу.",
+            "en": "My roommate is calm, we hardly bother each other.",
+            "es": "El compañero es tranquilo, casi no nos molestamos el uno al otro.",
+            "fr": "Le colocataire est calme, on ne se gêne presque pas l'un l'autre.",
+            "pt": "O colega é tranquilo, a gente quase não atrapalha um ao outro.",
+            "kr": "룸메이트가 조용해서 우리는 거의 서로 방해하지 않아.",
+            "jp": "ルームメイトは穏やかな人で、ほとんどお互いに干渉しないんだ。",
+            "zh": "室友很安静，我们几乎互不打扰。",
+            "ru": "Сосед спокойный, мы почти не мешаем друг другу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это отлично. А кухня у вас общая?",
+            "en": "That's great. And is the kitchen shared?",
+            "es": "Eso es genial. ¿Y la cocina es compartida?",
+            "fr": "C'est super. Et la cuisine, elle est commune ?",
+            "pt": "Isso é ótimo. E a cozinha é compartilhada?",
+            "kr": "그거 잘됐네. 부엌은 같이 쓰는 거야?",
+            "jp": "それはいいね。それで、キッチンは共同なの？",
+            "zh": "那太好了。你们的厨房是共用的吗？",
+            "ru": "Это отлично. А кухня у вас общая?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, общая на этаже. Готовить можно в любое время.",
+            "en": "Yes, it's shared on the floor. You can cook at any time.",
+            "es": "Sí, es compartida en la planta. Se puede cocinar a cualquier hora.",
+            "fr": "Oui, elle est commune à l'étage. On peut cuisiner à n'importe quelle heure.",
+            "pt": "Sim, é compartilhada no andar. Dá para cozinhar a qualquer hora.",
+            "kr": "응, 층마다 공용이야. 아무 때나 요리할 수 있어.",
+            "jp": "うん、フロアに共同のがあるよ。いつでも料理できるよ。",
+            "zh": "是的，一层楼共用。随时都可以做饭。",
+            "ru": "Да, общая на этаже. Готовить можно в любое время."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, как тебе еда в столовой общежития?",
+            "en": "Dmitry, how do you like the food in the dormitory cafeteria?",
+            "es": "Dmitri, ¿qué te parece la comida del comedor de la residencia?",
+            "fr": "Dmitri, comment tu trouves la nourriture à la cantine de la résidence ?",
+            "pt": "Dmitri, o que você acha da comida no refeitório do dormitório?",
+            "kr": "드미트리, 기숙사 식당 음식은 어때?",
+            "jp": "ドミトリー、寮の食堂のご飯はどう？",
+            "zh": "德米特里，你觉得宿舍食堂的饭菜怎么样？",
+            "ru": "Дмитрий, как тебе еда в столовой общежития?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Честно говоря, я хожу туда редко. Готовлю сам.",
+            "en": "Honestly, I rarely go there. I cook myself.",
+            "es": "Para ser honesto, voy allí rara vez. Cocino yo mismo.",
+            "fr": "Honnêtement, j'y vais rarement. Je cuisine moi-même.",
+            "pt": "Para ser sincero, eu vou lá raramente. Eu cozinho eu mesmo.",
+            "kr": "솔직히 말하면, 나는 거기 자주 안 가. 내가 직접 요리해.",
+            "jp": "正直言うと、あんまり行ってないんだ。自分で料理してるよ。",
+            "zh": "说实话，我很少去那儿。我自己做饭。",
+            "ru": "Честно говоря, я хожу туда редко. Готовлю сам."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? А что ты обычно готовишь?",
+            "en": "Really? And what do you usually cook?",
+            "es": "¿En serio? ¿Y qué sueles cocinar?",
+            "fr": "Vraiment ? Et qu'est-ce que tu cuisines d'habitude ?",
+            "pt": "Sério? E o que você costuma cozinhar?",
+            "kr": "정말? 보통 뭘 요리하는데?",
+            "jp": "本当？それで、普段は何を作るの？",
+            "zh": "真的吗？那你通常做什么？",
+            "ru": "Правда? А что ты обычно готовишь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Чаще всего пасту или гречку с курицей. Быстро и вкусно.",
+            "en": "Most often pasta or buckwheat with chicken. It's quick and tasty.",
+            "es": "La mayoría de las veces pasta o trigo sarraceno con pollo. Rápido y rico.",
+            "fr": "Le plus souvent, des pâtes ou du sarrasin avec du poulet. C'est rapide et bon.",
+            "pt": "Na maioria das vezes, macarrão ou trigo sarraceno com frango. É rápido e gostoso.",
+            "kr": "대부분 파스타나 치킨이랑 메밀이야. 빠르고 맛있어.",
+            "jp": "だいたいパスタか、鶏肉入りのそばだよ。早くて美味しいからね。",
+            "zh": "最常做意大利面或者荞麦饭配鸡肉。又快又好吃。",
+            "ru": "Чаще всего пасту или гречку с курицей. Быстро и вкусно."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Звучит неплохо. Может, как-нибудь научишь меня?",
+            "en": "Sounds good. Maybe you could teach me sometime?",
+            "es": "Suena bien. ¿Quizás algún día me enseñas?",
+            "fr": "Ça a l'air pas mal. Tu pourrais m'apprendre, un de ces jours ?",
+            "pt": "Parece bom. Talvez um dia você me ensine?",
+            "kr": "괜찮게 들리네. 언젠가 나한테 가르쳐 줄 수 있어?",
+            "jp": "いいね。いつか教えてくれない？",
+            "zh": "听起来不错。也许哪天你教教我？",
+            "ru": "Звучит неплохо. Может, как-нибудь научишь меня?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, приходи в воскресенье, приготовим что-нибудь вместе.",
+            "en": "Sure, come on Sunday, we'll cook something together.",
+            "es": "Claro, ven el domingo, cocinaremos algo juntos.",
+            "fr": "Bien sûr, viens dimanche, on préparera quelque chose ensemble.",
+            "pt": "Claro, vem no domingo, a gente prepara alguma coisa juntos.",
+            "kr": "물론이지, 일요일에 와, 같이 뭔가 만들어 보자.",
+            "jp": "もちろん、日曜日に来てよ。一緒に何か作ろう。",
+            "zh": "当然可以，星期天来吧，我们一起做点什么。",
+            "ru": "Конечно, приходи в воскресенье, приготовим что-нибудь вместе."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты не знаешь, до скольки работает прачечная?",
+            "en": "Sergey, do you know what time the laundry room closes?",
+            "es": "Serguéi, ¿sabes hasta qué hora funciona la lavandería?",
+            "fr": "Sergueï, tu ne sais pas jusqu'à quelle heure la laverie est ouverte ?",
+            "pt": "Sergei, você sabe até que horas funciona a lavanderia?",
+            "kr": "세르게이, 세탁실이 몇 시까지 하는지 알아?",
+            "jp": "セルゲイ、コインランドリーは何時までやってるか知ってる？",
+            "zh": "谢尔盖，你知道洗衣房开到几点吗？",
+            "ru": "Сергей, ты не знаешь, до скольки работает прачечная?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Кажется, до десяти вечера. А тебе нужно постирать?",
+            "en": "I think it's open until ten in the evening. Do you need to do laundry?",
+            "es": "Creo que hasta las diez de la noche. ¿Y necesitas lavar ropa?",
+            "fr": "Je crois que c'est jusqu'à dix heures du soir. Tu as besoin de laver du linge ?",
+            "pt": "Acho que até as dez da noite. Você precisa lavar roupa?",
+            "kr": "저녁 열 시까지인 것 같아. 빨래할 게 있어?",
+            "jp": "たしか、夜の十時までだよ。洗濯する必要があるの？",
+            "zh": "好像开到晚上十点。你需要洗衣服吗？",
+            "ru": "Кажется, до десяти вечера. А тебе нужно постирать?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, накопилось много вещей после выходных.",
+            "en": "Yes, a lot of clothes piled up after the weekend.",
+            "es": "Sí, se me han acumulado muchas cosas después del fin de semana.",
+            "fr": "Oui, j'ai beaucoup de vêtements accumulés après le week-end.",
+            "pt": "Sim, acumulou muita roupa depois do fim de semana.",
+            "kr": "응, 주말 지나고 빨래가 많이 쌓였어.",
+            "jp": "うん、週末の後にたくさん溜まっちゃって。",
+            "zh": "是的，周末过后攒了很多衣服。",
+            "ru": "Да, накопилось много вещей после выходных."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда лучше сходить сейчас, пока не закрылась.",
+            "en": "Then you'd better go now, before it closes.",
+            "es": "Entonces mejor ve ahora, antes de que cierre.",
+            "fr": "Alors tu ferais mieux d'y aller maintenant, avant qu'elle ne ferme.",
+            "pt": "Então é melhor ir agora, antes que feche.",
+            "kr": "그럼 지금 가는 게 좋겠다, 문 닫기 전에.",
+            "jp": "それなら、閉まる前に今のうちに行ったほうがいいよ。",
+            "zh": "那你最好现在就去，趁它还没关门。",
+            "ru": "Тогда лучше сходить сейчас, пока не закрылась."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ты прав, пойду прямо сейчас. Спасибо!",
+            "en": "You're right, I'll go right now. Thanks!",
+            "es": "Tienes razón, iré ahora mismo. ¡Gracias!",
+            "fr": "Tu as raison, j'y vais tout de suite. Merci !",
+            "pt": "Você tem razão, vou agora mesmo. Obrigada!",
+            "kr": "맞아, 지금 바로 갈게. 고마워!",
+            "jp": "そうだね、今すぐ行くよ。ありがとう！",
+            "zh": "你说得对，我现在就去。谢谢！",
+            "ru": "Ты прав, пойду прямо сейчас. Спасибо!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не за что. Если что, попроси у вахтёра порошок.",
+            "en": "You're welcome. If anything, ask the attendant for detergent.",
+            "es": "De nada. Si acaso, pídele detergente al conserje.",
+            "fr": "De rien. Si besoin, demande de la lessive au gardien.",
+            "pt": "De nada. Se precisar, pede o sabão para o porteiro.",
+            "kr": "천만에. 필요하면 관리인한테 세제 좀 달라고 해.",
+            "jp": "どういたしまして。必要なら、管理人に洗剤をもらってみて。",
+            "zh": "不客气。如果需要的话，跟值班员要洗衣粉。",
+            "ru": "Не за что. Если что, попроси у вахтёра порошок."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, как ты добираешься до университета из общежития?",
+            "en": "Olga, how do you get to the university from the dormitory?",
+            "es": "Olga, ¿cómo llegas a la universidad desde la residencia?",
+            "fr": "Olga, comment tu te rends à l'université depuis la résidence ?",
+            "pt": "Olga, como você vai do dormitório até a universidade?",
+            "kr": "올가, 기숙사에서 대학교까지 어떻게 가?",
+            "jp": "オリガ、寮から大学までどうやって通ってるの？",
+            "zh": "奥尔加，你从宿舍怎么去大学？",
+            "ru": "Ольга, как ты добираешься до университета из общежития?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно на автобусе, это минут двадцать.",
+            "en": "Usually by bus, it takes about twenty minutes.",
+            "es": "Normalmente en autobús, son unos veinte minutos.",
+            "fr": "D'habitude en bus, ça prend environ vingt minutes.",
+            "pt": "Normalmente de ônibus, leva uns vinte minutos.",
+            "kr": "보통 버스 타고 가, 이십 분 정도 걸려.",
+            "jp": "だいたいバスだよ、だいたい二十分くらいかな。",
+            "zh": "通常坐公交车，大概二十分钟。",
+            "ru": "Обычно на автобусе, это минут двадцать."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А я вчера шла пешком, и устала очень.",
+            "en": "And yesterday I walked, and I got really tired.",
+            "es": "Y yo ayer fui caminando, y me cansé mucho.",
+            "fr": "Moi, hier je suis allée à pied, et j'étais très fatiguée.",
+            "pt": "E eu ontem fui a pé, e fiquei muito cansada.",
+            "kr": "나는 어제 걸어서 갔는데, 엄청 피곤했어.",
+            "jp": "私は昨日歩いて行ったんだけど、すごく疲れちゃった。",
+            "zh": "我昨天是走路去的，累坏了。",
+            "ru": "А я вчера шла пешком, и устала очень."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пешком долго, лучше автобусом. Или можно на велосипеде.",
+            "en": "Walking takes too long, better take the bus. Or you could ride a bike.",
+            "es": "Caminando es mucho tiempo, mejor en autobús. O se puede en bicicleta.",
+            "fr": "À pied, c'est long, le bus c'est mieux. Ou alors tu peux y aller à vélo.",
+            "pt": "A pé é demorado, é melhor de ônibus. Ou dá para ir de bicicleta.",
+            "kr": "걸어가면 멀어, 버스가 낫지. 아니면 자전거를 타도 되고.",
+            "jp": "歩きだと時間がかかるから、バスのほうがいいよ。それか自転車でもいいし。",
+            "zh": "走路太久了，最好坐公交车。或者可以骑自行车。",
+            "ru": "Пешком долго, лучше автобусом. Или можно на велосипеде."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "У меня нет велосипеда. А ты не хочешь купить?",
+            "en": "I don't have a bike. Don't you want to buy one?",
+            "es": "No tengo bicicleta. ¿Y tú no quieres comprar una?",
+            "fr": "Je n'ai pas de vélo. Et toi, tu ne veux pas en acheter un ?",
+            "pt": "Eu não tenho bicicleta. E você não quer comprar uma?",
+            "kr": "나는 자전거가 없어. 너는 안 살 거야?",
+            "jp": "私、自転車持ってないんだ。買いたいと思わない？",
+            "zh": "我没有自行车。你不想买一辆吗？",
+            "ru": "У меня нет велосипеда. А ты не хочешь купить?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Думаю об этом. Вместе было бы веселее ездить.",
+            "en": "I'm thinking about it. It would be more fun to ride together.",
+            "es": "Lo estoy pensando. Sería más divertido ir juntas.",
+            "fr": "J'y pense. Ce serait plus amusant d'y aller ensemble.",
+            "pt": "Estou pensando nisso. Seria mais divertido ir junto.",
+            "kr": "그걸 생각 중이야. 같이 타면 더 재밌을 것 같아.",
+            "jp": "考えてるところだよ。一緒に通ったら楽しいだろうね。",
+            "zh": "我正在考虑。一起骑车会更有意思。",
+            "ru": "Думаю об этом. Вместе было бы веселее ездить."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, у тебя в комнате есть интернет?",
+            "en": "Maria, do you have internet in your room?",
+            "es": "María, ¿tienes internet en tu habitación?",
+            "fr": "Maria, tu as internet dans ta chambre ?",
+            "pt": "Maria, você tem internet no seu quarto?",
+            "kr": "마리야, 네 방에 인터넷 있어?",
+            "jp": "マリア、部屋にインターネットある？",
+            "zh": "玛丽亚，你房间里有网络吗？",
+            "ru": "Мария, у тебя в комнате есть интернет?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, провели на прошлой неделе. Работает хорошо.",
+            "en": "Yes, they set it up last week. It works well.",
+            "es": "Sí, lo instalaron la semana pasada. Funciona bien.",
+            "fr": "Oui, on l'a installé la semaine dernière. Ça fonctionne bien.",
+            "pt": "Sim, instalaram na semana passada. Funciona bem.",
+            "kr": "응, 지난주에 설치했어. 잘 작동해.",
+            "jp": "うん、先週つながったよ。ちゃんと動いてるよ。",
+            "zh": "有的，上个星期接好的。用起来很好。",
+            "ru": "Да, провели на прошлой неделе. Работает хорошо."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А у нас на этаже постоянно пропадает связь.",
+            "en": "But on our floor the connection keeps dropping.",
+            "es": "Y en nuestra planta la conexión desaparece constantemente.",
+            "fr": "Nous, à notre étage, la connexion n'arrête pas de couper.",
+            "pt": "E no nosso andar a conexão vive caindo.",
+            "kr": "우리 층은 계속 인터넷이 끊겨.",
+            "jp": "うちのフロアはいつも通信が切れちゃうんだよね。",
+            "zh": "我们这层楼的网络老是断。",
+            "ru": "А у нас на этаже постоянно пропадает связь."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это проблема. Ты говорила с комендантом?",
+            "en": "That's a problem. Have you talked to the dorm manager?",
+            "es": "Eso es un problema. ¿Hablaste con el administrador?",
+            "fr": "C'est un problème. Tu en as parlé à la directrice de la résidence ?",
+            "pt": "Isso é um problema. Você falou com o administrador?",
+            "kr": "그건 문제네. 기숙사 사감한테 말해 봤어?",
+            "jp": "それは問題だね。管理人に話したの？",
+            "zh": "那是个问题。你跟宿舍管理员说了吗？",
+            "ru": "Это проблема. Ты говорила с комендантом?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ещё нет, но собираюсь завтра зайти.",
+            "en": "Not yet, but I'm planning to stop by tomorrow.",
+            "es": "Todavía no, pero pienso ir mañana.",
+            "fr": "Pas encore, mais je compte y passer demain.",
+            "pt": "Ainda não, mas pretendo ir amanhã.",
+            "kr": "아직은 아니야, 그런데 내일 가려고.",
+            "jp": "まだだけど、明日行こうと思ってる。",
+            "zh": "还没有，但我打算明天去找她。",
+            "ru": "Ещё нет, но собираюсь завтра зайти."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обязательно сходи. Скажи, что тебе нужен интернет для учёбы.",
+            "en": "You definitely should. Tell them you need internet for your studies.",
+            "es": "Ve sin falta. Dile que necesitas internet para estudiar.",
+            "fr": "Il faut absolument y aller. Dis-lui que tu as besoin d'internet pour tes études.",
+            "pt": "Vai sim, com certeza. Diz que você precisa de internet para os estudos.",
+            "kr": "꼭 가 봐. 공부하려면 인터넷이 필요하다고 말해.",
+            "jp": "絶対行ったほうがいいよ。勉強にインターネットが必要だって言えばいいよ。",
+            "zh": "一定要去。你就说学习需要网络。",
+            "ru": "Обязательно сходи. Скажи, что тебе нужен интернет для учёбы."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, ты уже привыкла к жизни в общежитии?",
+            "en": "Anna, have you gotten used to life in the dormitory yet?",
+            "es": "Ana, ¿ya te acostumbraste a la vida en la residencia?",
+            "fr": "Anna, tu t'es déjà habituée à la vie en résidence ?",
+            "pt": "Ana, você já se acostumou com a vida no dormitório?",
+            "kr": "안나, 벌써 기숙사 생활에 적응했어?",
+            "jp": "アンナ、もう寮での生活に慣れた？",
+            "zh": "安娜，你已经习惯宿舍生活了吗？",
+            "ru": "Анна, ты уже привыкла к жизни в общежитии?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Почти. Сначала было непривычно, а теперь нравится.",
+            "en": "Almost. At first it was unusual, but now I like it.",
+            "es": "Casi. Al principio era extraño, pero ahora me gusta.",
+            "fr": "Presque. Au début, c'était inhabituel, mais maintenant j'aime bien.",
+            "pt": "Quase. No começo era estranho, mas agora eu gosto.",
+            "kr": "거의 다 됐어. 처음에는 낯설었는데, 이제는 좋아.",
+            "jp": "だいたいね。最初は慣れなかったけど、今は好きだよ。",
+            "zh": "差不多吧。一开始不太习惯，现在挺喜欢的。",
+            "ru": "Почти. Сначала было непривычно, а теперь нравится."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А что тебе больше всего нравится?",
+            "en": "And what do you like the most?",
+            "es": "¿Y qué es lo que más te gusta?",
+            "fr": "Et qu'est-ce que tu aimes le plus ?",
+            "pt": "E o que você mais gosta?",
+            "kr": "뭐가 제일 좋은데?",
+            "jp": "それで、何が一番好きなの？",
+            "zh": "那你最喜欢什么？",
+            "ru": "А что тебе больше всего нравится?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Наверное, то, что всегда есть с кем поговорить.",
+            "en": "Probably the fact that there's always someone to talk to.",
+            "es": "Probablemente, que siempre hay alguien con quien hablar.",
+            "fr": "Probablement le fait qu'il y a toujours quelqu'un avec qui parler.",
+            "pt": "Provavelmente o fato de sempre ter alguém para conversar.",
+            "kr": "아마도, 항상 같이 이야기할 사람이 있다는 거야.",
+            "jp": "やっぱり、いつでも話し相手がいるってことかな。",
+            "zh": "大概是随时都有人可以聊天吧。",
+            "ru": "Наверное, то, что всегда есть с кем поговорить."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это точно. У нас очень дружный этаж.",
+            "en": "That's for sure. We have a very friendly floor.",
+            "es": "Eso seguro. Nuestra planta es muy unida.",
+            "fr": "C'est vrai. On a un étage très soudé.",
+            "pt": "Com certeza. O nosso andar é muito unido.",
+            "kr": "그건 확실해. 우리 층은 정말 친목이 돈독해.",
+            "jp": "本当にそうだね。うちのフロアはすごく仲がいいよね。",
+            "zh": "那倒是。我们这层楼的人都很友好。",
+            "ru": "Это точно. У нас очень дружный этаж."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, соседи хорошие. Мы даже вместе отмечали праздники.",
+            "en": "Yes, the neighbors are good. We even celebrated holidays together.",
+            "es": "Sí, los vecinos son buenos. Incluso celebramos las fiestas juntos.",
+            "fr": "Oui, les voisins sont gentils. On a même fêté des occasions ensemble.",
+            "pt": "Sim, os vizinhos são bons. A gente até comemorou as festas juntos.",
+            "kr": "응, 이웃들이 다 좋아. 우리 같이 명절도 보냈어.",
+            "jp": "うん、隣人もいい人たちだよ。一緒に祝い事をしたこともあるんだよ。",
+            "zh": "是的，邻居们都很好。我们甚至还一起庆祝过节日。",
+            "ru": "Да, соседи хорошие. Мы даже вместе отмечали праздники."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, у тебя в комнате есть балкон?",
+            "en": "Alexey, do you have a balcony in your room?",
+            "es": "Alekséi, ¿tienes balcón en tu habitación?",
+            "fr": "Alexeï, tu as un balcon dans ta chambre ?",
+            "pt": "Alexei, você tem varanda no seu quarto?",
+            "kr": "알렉세이, 네 방에 발코니 있어?",
+            "jp": "アレクセイ、部屋にベランダある？",
+            "zh": "阿列克谢，你房间里有阳台吗？",
+            "ru": "Алексей, у тебя в комнате есть балкон?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нет, балкона нет. Зато окна выходят во двор.",
+            "en": "No, there's no balcony. But the windows face the courtyard.",
+            "es": "No, no hay balcón. Pero las ventanas dan al patio.",
+            "fr": "Non, il n'y a pas de balcon. Par contre, les fenêtres donnent sur la cour.",
+            "pt": "Não, não tem varanda. Mas as janelas dão para o pátio.",
+            "kr": "아니, 발코니는 없어. 대신 창문이 마당 쪽으로 나 있어.",
+            "jp": "いや、ベランダはないんだ。でも、窓は中庭に面してるよ。",
+            "zh": "没有，没有阳台。不过窗户朝向院子。",
+            "ru": "Нет, балкона нет. Зато окна выходят во двор."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это даже хорошо, там тише, чем на улицу.",
+            "en": "That's actually good, it's quieter there than facing the street.",
+            "es": "Eso incluso es mejor, allí es más tranquilo que dando a la calle.",
+            "fr": "C'est même mieux, c'est plus calme que côté rue.",
+            "pt": "Isso até é bom, é mais silencioso do que para a rua.",
+            "kr": "그게 오히려 좋네, 길 쪽보다 더 조용할 테니까.",
+            "jp": "それならむしろいいね。通り側より静かだから。",
+            "zh": "那也挺好的，比朝向马路安静多了。",
+            "ru": "Это даже хорошо, там тише, чем на улицу."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен. Единственное, летом бывает жарко.",
+            "en": "I agree. The only thing is, it gets hot in the summer.",
+            "es": "De acuerdo. Lo único es que en verano hace calor.",
+            "fr": "Je suis d'accord. Le seul problème, c'est qu'il fait chaud en été.",
+            "pt": "Concordo. O único problema é que no verão faz calor.",
+            "kr": "맞아. 딱 하나, 여름에는 더울 때가 있어.",
+            "jp": "そうだね。ただ、夏は暑くなるのが難点だけど。",
+            "zh": "同意。就是夏天有时候会很热。",
+            "ru": "Согласен. Единственное, летом бывает жарко."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А вентилятор у тебя есть?",
+            "en": "Do you have a fan?",
+            "es": "¿Y tienes ventilador?",
+            "fr": "Et tu as un ventilateur ?",
+            "pt": "E você tem ventilador?",
+            "kr": "선풍기는 있어?",
+            "jp": "扇風機はあるの？",
+            "zh": "你有风扇吗？",
+            "ru": "А вентилятор у тебя есть?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, купил на прошлой неделе. Помогает, но не сильно.",
+            "en": "Yes, I bought one last week. It helps, but not much.",
+            "es": "Sí, lo compré la semana pasada. Ayuda, pero no mucho.",
+            "fr": "Oui, j'en ai acheté un la semaine dernière. Ça aide, mais pas énormément.",
+            "pt": "Sim, comprei na semana passada. Ajuda, mas não muito.",
+            "kr": "응, 지난주에 샀어. 도움은 되는데, 효과가 크진 않아.",
+            "jp": "うん、先週買ったよ。役には立つけど、あんまり効かないんだ。",
+            "zh": "有，上个星期买的。有点用，但效果不大。",
+            "ru": "Да, купил на прошлой неделе. Помогает, но не сильно."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, ты не знаешь, где здесь можно взять утюг?",
+            "en": "Elena, do you know where I can get an iron around here?",
+            "es": "Elena, ¿sabes dónde se puede conseguir una plancha aquí?",
+            "fr": "Elena, tu ne sais pas où on peut trouver un fer à repasser ici ?",
+            "pt": "Elena, você sabe onde dá para pegar um ferro de passar aqui?",
+            "kr": "옐레나, 여기서 다리미 어디서 빌릴 수 있는지 알아?",
+            "jp": "エレナ、ここでアイロンはどこで借りられるか知ってる？",
+            "zh": "叶莲娜，你知道哪里可以借到熨斗吗？",
+            "ru": "Елена, ты не знаешь, где здесь можно взять утюг?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "На первом этаже есть комната бытовых услуг.",
+            "en": "There's a utility room on the first floor.",
+            "es": "En la primera planta hay una sala de servicios domésticos.",
+            "fr": "Au premier étage, il y a une salle de services domestiques.",
+            "pt": "No primeiro andar tem uma sala de serviços domésticos.",
+            "kr": "일 층에 생활용품실이 있어.",
+            "jp": "一階に生活サービス室があるよ。",
+            "zh": "一楼有个生活服务间。",
+            "ru": "На первом этаже есть комната бытовых услуг."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, а она работает по воскресеньям?",
+            "en": "Great, and is it open on Sundays?",
+            "es": "Genial, ¿y abre los domingos?",
+            "fr": "Super, et elle est ouverte le dimanche ?",
+            "pt": "Ótimo, e ela funciona aos domingos?",
+            "kr": "좋네, 일요일에도 문을 열어?",
+            "jp": "いいね。それで、日曜日もやってるの？",
+            "zh": "太好了，那星期天开门吗？",
+            "ru": "Отлично, а она работает по воскресеньям?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Думаю, да, но лучше уточнить у вахтёра.",
+            "en": "I think so, but you'd better check with the attendant.",
+            "es": "Creo que sí, pero mejor confírmalo con el conserje.",
+            "fr": "Je pense que oui, mais il vaut mieux vérifier auprès du gardien.",
+            "pt": "Acho que sim, mas é melhor confirmar com o porteiro.",
+            "kr": "아마 열 거야, 그런데 관리인한테 확인해 보는 게 좋겠어.",
+            "jp": "たぶんやってると思うけど、管理人に確認したほうがいいよ。",
+            "zh": "我觉得开，但最好跟值班员确认一下。",
+            "ru": "Думаю, да, но лучше уточнить у вахтёра."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хорошо, спасибо за подсказку.",
+            "en": "Okay, thanks for the tip.",
+            "es": "Bien, gracias por la ayuda.",
+            "fr": "D'accord, merci pour l'info.",
+            "pt": "Certo, obrigada pela dica.",
+            "kr": "알겠어, 알려줘서 고마워.",
+            "jp": "わかった、教えてくれてありがとう。",
+            "zh": "好的，谢谢你的提醒。",
+            "ru": "Хорошо, спасибо за подсказку."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пожалуйста. Если что, у меня есть отпариватель, могу дать.",
+            "en": "You're welcome. If anything, I have a steamer, I can lend it to you.",
+            "es": "De nada. Si acaso, yo tengo un vaporizador, te lo puedo prestar.",
+            "fr": "Je t'en prie. Si besoin, j'ai un défroisseur, je peux te le prêter.",
+            "pt": "De nada. Se precisar, eu tenho um vaporizador, posso te emprestar.",
+            "kr": "천만에. 필요하면 나한테 스팀다리미가 있는데 빌려줄 수 있어.",
+            "jp": "どういたしまして。もし必要なら、私スチーマー持ってるから貸せるよ。",
+            "zh": "不客气。需要的话，我有挂烫机，可以借给你。",
+            "ru": "Пожалуйста. Если что, у меня есть отпариватель, могу дать."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты слышал, что завтра будет проверка комнат?",
+            "en": "Ivan, did you hear that there's going to be a room inspection tomorrow?",
+            "es": "Iván, ¿oíste que mañana habrá inspección de las habitaciones?",
+            "fr": "Ivan, tu as entendu qu'il y aura une inspection des chambres demain ?",
+            "pt": "Ivan, você ouviu que amanhã vai ter inspeção dos quartos?",
+            "kr": "이반, 내일 방 검사가 있다는 거 들었어?",
+            "jp": "イワン、明日部屋の検査があるって聞いた？",
+            "zh": "伊万，你听说了吗，明天要检查房间？",
+            "ru": "Иван, ты слышал, что завтра будет проверка комнат?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, слышал. Надо убраться и убрать лишние вещи.",
+            "en": "Yes, I heard. We need to clean up and put away extra things.",
+            "es": "Sí, lo oí. Hay que limpiar y guardar las cosas que sobran.",
+            "fr": "Oui, j'ai entendu. Il faut nettoyer et ranger les affaires en trop.",
+            "pt": "Sim, ouvi. A gente precisa limpar e guardar as coisas que não são necessárias.",
+            "kr": "응, 들었어. 청소하고 필요 없는 물건들 치워야 해.",
+            "jp": "うん、聞いたよ。片付けないとね。余計なものもしまわないと。",
+            "zh": "是的，听说了。得打扫一下，把多余的东西收起来。",
+            "ru": "Да, слышал. Надо убраться и убрать лишние вещи."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А что они проверяют обычно?",
+            "en": "And what do they usually check?",
+            "es": "¿Y qué suelen revisar?",
+            "fr": "Et qu'est-ce qu'ils vérifient d'habitude ?",
+            "pt": "E o que eles costumam verificar?",
+            "kr": "보통 뭘 검사하는데?",
+            "jp": "それで、いつも何をチェックするの？",
+            "zh": "他们一般都检查什么？",
+            "ru": "А что они проверяют обычно?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Чистоту, порядок и отсутствие запрещённых предметов.",
+            "en": "Cleanliness, order, and the absence of prohibited items.",
+            "es": "La limpieza, el orden y que no haya objetos prohibidos.",
+            "fr": "La propreté, l'ordre et l'absence d'objets interdits.",
+            "pt": "Limpeza, organização e a ausência de itens proibidos.",
+            "kr": "청결, 정돈, 그리고 금지된 물건이 없는지 봐.",
+            "jp": "清潔さ、整理整頓、あと禁止されてるものがないかだよ。",
+            "zh": "干净、整洁，还有有没有违禁品。",
+            "ru": "Чистоту, порядок и отсутствие запрещённых предметов."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно. Тогда сегодня вечером займусь уборкой.",
+            "en": "Got it. Then I'll take care of the cleaning tonight.",
+            "es": "Entendido. Entonces esta noche me pondré a limpiar.",
+            "fr": "Compris. Alors ce soir, je m'occuperai du ménage.",
+            "pt": "Entendi. Então hoje à noite eu vou arrumar o quarto.",
+            "kr": "알겠어. 그럼 오늘 저녁에 청소할게.",
+            "jp": "なるほど。じゃあ、今日の夜に掃除するよ。",
+            "zh": "明白了。那我今天晚上就打扫。",
+            "ru": "Понятно. Тогда сегодня вечером займусь уборкой."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я тоже. Может, уберёмся вместе, так быстрее будет?",
+            "en": "Me too. Maybe we can clean together, it'll be faster that way?",
+            "es": "Yo también. ¿Quizás limpiamos juntos, así será más rápido?",
+            "fr": "Moi aussi. On pourrait nettoyer ensemble, ça irait plus vite ?",
+            "pt": "Eu também. Que tal a gente arrumar junto, assim fica mais rápido?",
+            "kr": "나도. 같이 청소할래? 그러면 더 빨리 끝날 거야.",
+            "jp": "俺もだよ。一緒に掃除しない？そのほうが早いだろうし。",
+            "zh": "我也是。要不我们一起打扫吧，这样更快？",
+            "ru": "Я тоже. Может, уберёмся вместе, так быстрее будет?"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты не знаешь, как продлить договор на проживание?",
+            "en": "Dmitry, do you know how to extend the housing contract?",
+            "es": "Dmitri, ¿sabes cómo renovar el contrato de alojamiento?",
+            "fr": "Dmitri, tu ne sais pas comment prolonger le contrat de logement ?",
+            "pt": "Dmitri, você sabe como renovar o contrato de moradia?",
+            "kr": "드미트리, 기숙사 거주 계약을 연장하려면 어떻게 해야 하는지 알아?",
+            "jp": "ドミトリー、住居契約を更新する方法を知ってる？",
+            "zh": "德米特里，你知道怎么续签住宿合同吗？",
+            "ru": "Дмитрий, ты не знаешь, как продлить договор на проживание?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Нужно зайти в деканат и написать заявление.",
+            "en": "You need to go to the dean's office and write an application.",
+            "es": "Hay que ir a la secretaría y escribir una solicitud.",
+            "fr": "Il faut aller au secrétariat et écrire une demande.",
+            "pt": "Precisa ir na secretaria e escrever um requerimento.",
+            "kr": "교무처에 가서 신청서를 써야 해.",
+            "jp": "学部事務所に行って、申請書を書かないといけないよ。",
+            "zh": "需要去系办公室写一份申请。",
+            "ru": "Нужно зайти в деканат и написать заявление."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А какие документы для этого нужны?",
+            "en": "And what documents are needed for that?",
+            "es": "¿Y qué documentos se necesitan para eso?",
+            "fr": "Et quels documents sont nécessaires pour ça ?",
+            "pt": "E quais documentos são necessários para isso?",
+            "kr": "그러려면 서류가 뭐가 필요해?",
+            "jp": "それで、それにはどんな書類が必要なの？",
+            "zh": "那需要什么材料呢？",
+            "ru": "А какие документы для этого нужны?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Кажется, паспорт и справка о том, что ты студент.",
+            "en": "I think your passport and a certificate confirming you're a student.",
+            "es": "Creo que el pasaporte y un certificado de que eres estudiante.",
+            "fr": "Je crois que c'est le passeport et un certificat prouvant que tu es étudiant.",
+            "pt": "Acho que o passaporte e um comprovante de que você é estudante.",
+            "kr": "여권이랑 네가 학생이라는 증명서면 되는 것 같아.",
+            "jp": "たしか、パスポートと、学生だという証明書だよ。",
+            "zh": "好像需要护照和一份在读证明。",
+            "ru": "Кажется, паспорт и справка о том, что ты студент."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно, спасибо. Пойду завтра утром.",
+            "en": "Got it, thanks. I'll go tomorrow morning.",
+            "es": "Entendido, gracias. Iré mañana por la mañana.",
+            "fr": "Compris, merci. J'irai demain matin.",
+            "pt": "Entendi, obrigado. Vou amanhã de manhã.",
+            "kr": "알겠어, 고마워. 내일 아침에 갈게.",
+            "jp": "わかった、ありがとう。明日の朝行くよ。",
+            "zh": "明白了，谢谢。我明天早上去。",
+            "ru": "Понятно, спасибо. Пойду завтра утром."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Удачи! Если что, могу сходить с тобой.",
+            "en": "Good luck! If anything, I can go with you.",
+            "es": "¡Buena suerte! Si acaso, puedo ir contigo.",
+            "fr": "Bonne chance ! Si besoin, je peux t'accompagner.",
+            "pt": "Boa sorte! Se precisar, posso ir com você.",
+            "kr": "행운을 빌어! 필요하면 같이 가 줄게.",
+            "jp": "頑張ってね！もし必要なら、一緒に行ってあげるよ。",
+            "zh": "祝你好运！需要的话，我可以陪你一起去。",
+            "ru": "Удачи! Если что, могу сходить с тобой."
+          }
+        }
+      ]
+    }
+  ]
+}

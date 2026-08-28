@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b2",
+    "id": "035"
+  },
+  "title": {
+    "target": "Планирование поездки",
+    "en": "Planning a Trip",
+    "es": "Planificación del viaje",
+    "fr": "Planification du voyage",
+    "pt": "Planejamento da viagem",
+    "kr": "여행 계획",
+    "jp": "旅行の計画",
+    "zh": "旅行计划",
+    "ru": "Планирование поездки"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты уже решил, куда поедем в отпуск?",
+            "en": "Ivan, have you already decided where we'll go on vacation?",
+            "es": "Iván, ¿ya has decidido a dónde iremos de vacaciones?",
+            "fr": "Ivan, tu as déjà décidé où on va partir en vacances ?",
+            "pt": "Ivan, você já decidiu para onde vamos nas férias?",
+            "kr": "이반, 휴가 때 어디로 갈지 이미 정했어?",
+            "jp": "イワン、もう休暇にどこへ行くか決めた？",
+            "zh": "伊万，你已经决定假期去哪儿了吗？",
+            "ru": "Иван, ты уже решил, куда поедем в отпуск?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пока думаю между Петербургом и Казанью. Что тебе больше нравится?",
+            "en": "I'm still thinking between Petersburg and Kazan. Which one do you like more?",
+            "es": "Todavía estoy pensando entre San Petersburgo y Kazán. ¿Cuál te gusta más?",
+            "fr": "J'hésite encore entre Saint-Pétersbourg et Kazan. Qu'est-ce que tu préfères ?",
+            "pt": "Ainda estou pensando entre São Petersburgo e Cazã. Do que você gosta mais?",
+            "kr": "아직 상트페테르부르크랑 카잔 사이에서 고민 중이야. 너는 어느 쪽이 더 좋아?",
+            "jp": "まだピーターとカザンの間で考えているところだよ。君はどっちが好き？",
+            "zh": "还在考虑，在彼得堡和喀山之间犹豫。你更喜欢哪里？",
+            "ru": "Пока думаю между Петербургом и Казанью. Что тебе больше нравится?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я бы выбрала Казань. Говорят, там очень красиво осенью.",
+            "en": "I would choose Kazan. They say it's very beautiful there in the fall.",
+            "es": "Yo elegiría Kazán. Dicen que allí es muy bonito en otoño.",
+            "fr": "Moi, je choisirais Kazan. On dit que c'est très beau là-bas en automne.",
+            "pt": "Eu escolheria Cazã. Dizem que é muito bonito lá no outono.",
+            "kr": "나는 카잔을 고를 거야. 거기 가을에 엄청 아름답대.",
+            "jp": "私はカザンを選ぶわ。秋はすごくきれいだって言われているよ。",
+            "zh": "我会选喀山。听说那里秋天非常漂亮。",
+            "ru": "Я бы выбрала Казань. Говорят, там очень красиво осенью."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Правда? А я слышал, что в Петербурге сейчас много интересных выставок.",
+            "en": "Really? And I heard that there are a lot of interesting exhibitions in Petersburg right now.",
+            "es": "¿En serio? Y yo he oído que en San Petersburgo hay muchas exposiciones interesantes ahora.",
+            "fr": "Vraiment ? Et moi, j'ai entendu dire qu'il y a beaucoup d'expositions intéressantes à Saint-Pétersbourg en ce moment.",
+            "pt": "Sério? E eu ouvi dizer que em São Petersburgo tem muitas exposições interessantes agora.",
+            "kr": "정말? 나는 상트페테르부르크에 지금 재미있는 전시회가 많다고 들었는데.",
+            "jp": "本当？ 僕はピーターには今、面白い展覧会がたくさんあるって聞いたけど。",
+            "zh": "真的吗？我听说彼得堡现在有很多有趣的展览。",
+            "ru": "Правда? А я слышал, что в Петербурге сейчас много интересных выставок."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда давай посмотрим билеты и решим по цене.",
+            "en": "Then let's look at tickets and decide based on the price.",
+            "es": "Entonces miremos los billetes y decidamos según el precio.",
+            "fr": "Alors, regardons les billets et décidons selon le prix.",
+            "pt": "Então vamos olhar as passagens e decidir pelo preço.",
+            "kr": "그럼 표를 보고 가격으로 결정하자.",
+            "jp": "じゃあ、チケットを見て、値段で決めましょう。",
+            "zh": "那咱们看看机票，按价格来决定吧。",
+            "ru": "Тогда давай посмотрим билеты и решим по цене."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, вечером сравню варианты и напишу тебе.",
+            "en": "Okay, I'll compare the options in the evening and text you.",
+            "es": "Vale, por la noche compararé las opciones y te escribiré.",
+            "fr": "D'accord, ce soir je comparerai les options et je t'écrirai.",
+            "pt": "Ok, à noite eu comparo as opções e te aviso.",
+            "kr": "좋아, 저녁에 옵션 비교해 볼게, 그리고 너한테 알려줄게.",
+            "jp": "いいよ、夜に選択肢を比べて、君に連絡するね。",
+            "zh": "好的，晚上我比较一下选项，然后告诉你。",
+            "ru": "Хорошо, вечером сравню варианты и напишу тебе."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты уже забронировал гостиницу на майские праздники?",
+            "en": "Dmitry, have you already booked a hotel for the May holidays?",
+            "es": "Dmitri, ¿ya has reservado el hotel para las fiestas de mayo?",
+            "fr": "Dmitri, tu as déjà réservé l'hôtel pour les vacances de mai ?",
+            "pt": "Dmitri, você já reservou o hotel para o feriado de maio?",
+            "kr": "드미트리, 오월 연휴에 호텔은 이미 예약했어?",
+            "jp": "ドミトリー、もう五月の祝日にホテルを予約した？",
+            "zh": "德米特里，你已经订好五一假期的酒店了吗？",
+            "ru": "Дмитрий, ты уже забронировал гостиницу на майские праздники?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ещё нет, всё никак не выберу. Хочу что-то недалеко от центра.",
+            "en": "Not yet, I just can't pick one. I want something not far from the center.",
+            "es": "Todavía no, no consigo decidirme. Quiero algo cerca del centro.",
+            "fr": "Pas encore, j'arrive pas à me décider. Je veux quelque chose pas loin du centre.",
+            "pt": "Ainda não, não consigo escolher. Quero algo perto do centro.",
+            "kr": "아직, 계속 고르기만 하고 있어. 중심가에서 멀지 않은 곳이 좋겠어.",
+            "jp": "まだだよ、なかなか選べなくて。中心部からあまり遠くないところがいいんだ。",
+            "zh": "还没有，一直选不好。想找个离市中心不远的地方。",
+            "ru": "Ещё нет, всё никак не выберу. Хочу что-то недалеко от центра."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я видела отличный вариант рядом с набережной, там есть парковка.",
+            "en": "I saw a great option near the embankment, it has parking.",
+            "es": "Yo vi una opción excelente junto al paseo marítimo, allí hay aparcamiento.",
+            "fr": "J'ai vu une excellente option près du quai, il y a un parking.",
+            "pt": "Eu vi uma ótima opção perto da orla, lá tem estacionamento.",
+            "kr": "나는 제방 근처에 좋은 곳을 봤어, 거기 주차장도 있어.",
+            "jp": "堤防の近くに素晴らしい選択肢を見つけたわよ、駐車場もあるの。",
+            "zh": "我看到一个特别好的选择，就在河边，那里有停车场。",
+            "ru": "Я видела отличный вариант рядом с набережной, там есть парковка."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично! Скинь мне ссылку, пожалуйста, я посмотрю.",
+            "en": "Great! Send me the link, please, I'll take a look.",
+            "es": "¡Genial! Mándame el enlace, por favor, lo miraré.",
+            "fr": "Parfait ! Envoie-moi le lien, s'il te plaît, je vais regarder.",
+            "pt": "Ótimo! Me manda o link, por favor, eu vou dar uma olhada.",
+            "kr": "좋아! 링크 좀 보내줘, 내가 한번 볼게.",
+            "jp": "それはいいね！ リンクを送ってくれないか、見てみるから。",
+            "zh": "太好了！请把链接发给我，我看一下。",
+            "ru": "Отлично! Скинь мне ссылку, пожалуйста, я посмотрю."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Конечно, скину. Только учти, что цены растут с каждым днём.",
+            "en": "Of course, I'll send it. Just keep in mind that prices are going up every day.",
+            "es": "Claro, te lo mando. Solo ten en cuenta que los precios suben cada día.",
+            "fr": "Bien sûr, je te l'envoie. Mais attention, les prix augmentent chaque jour.",
+            "pt": "Claro, mando sim. Só lembra que os preços estão subindo a cada dia.",
+            "kr": "물론이지, 보내줄게. 다만 가격이 날마다 오르고 있다는 점만 알아둬.",
+            "jp": "もちろん、送るわよ。ただ、値段が日ごとに上がっていることに注意してね。",
+            "zh": "当然，我发给你。只是你要注意，价格每天都在涨。",
+            "ru": "Конечно, скину. Только учти, что цены растут с каждым днём."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понимаю, тогда решу сегодня же, чтобы не передумать.",
+            "en": "I understand, then I'll decide today so I don't change my mind.",
+            "es": "Lo entiendo, entonces decidiré hoy mismo para no cambiar de opinión.",
+            "fr": "Je comprends, alors je vais décider aujourd'hui même, pour ne pas changer d'avis.",
+            "pt": "Entendo, então vou decidir hoje mesmo, para não mudar de ideia.",
+            "kr": "알겠어, 그럼 마음이 바뀌지 않게 오늘 안에 결정할게.",
+            "jp": "わかってるよ、じゃあ気が変わらないように、今日中に決めるよ。",
+            "zh": "我明白，那我今天就定下来，免得改主意。",
+            "ru": "Понимаю, тогда решу сегодня же, чтобы не передумать."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты уже составил маршрут для нашей поездки в горы?",
+            "en": "Sergey, have you already put together the route for our trip to the mountains?",
+            "es": "Serguéi, ¿ya has hecho la ruta para nuestro viaje a la montaña?",
+            "fr": "Sergueï, tu as déjà préparé l'itinéraire pour notre voyage à la montagne ?",
+            "pt": "Sergei, você já montou o roteiro para a nossa viagem para as montanhas?",
+            "kr": "세르게이, 산으로 가는 우리 여행 코스는 이미 짰어?",
+            "jp": "セルゲイ、もう山への旅行のルートは組んだ？",
+            "zh": "谢尔盖，你已经为我们去山里的旅行制定好路线了吗？",
+            "ru": "Сергей, ты уже составил маршрут для нашей поездки в горы?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Почти. Хочу включить туда пару озёр и одну смотровую площадку.",
+            "en": "Almost. I want to include a couple of lakes and one viewpoint.",
+            "es": "Casi. Quiero incluir un par de lagos y un mirador.",
+            "fr": "Presque. Je veux y inclure deux lacs et un point de vue panoramique.",
+            "pt": "Quase. Quero incluir uns dois lagos e um mirante.",
+            "kr": "거의 다 됐어. 호수 두 개랑 전망대 하나를 넣고 싶어.",
+            "jp": "ほとんどできてるよ。湖を二つと展望台を一つ入れたいんだ。",
+            "zh": "差不多了。想加上两个湖和一个观景台。",
+            "ru": "Почти. Хочу включить туда пару озёр и одну смотровую площадку."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Звучит замечательно. А сколько дней нам понадобится?",
+            "en": "Sounds wonderful. And how many days will we need?",
+            "es": "Suena estupendo. ¿Y cuántos días necesitaremos?",
+            "fr": "Ça a l'air merveilleux. Et de combien de jours on aura besoin ?",
+            "pt": "Parece ótimo. E de quantos dias a gente vai precisar?",
+            "kr": "좋네. 그럼 며칠이나 필요할까?",
+            "jp": "素晴らしいわね。それで、何日必要かしら？",
+            "zh": "听起来很棒。那我们需要几天时间？",
+            "ru": "Звучит замечательно. А сколько дней нам понадобится?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Думаю, четыре дня будет достаточно, если выезжать рано утром.",
+            "en": "I think four days will be enough if we leave early in the morning.",
+            "es": "Creo que cuatro días serán suficientes si salimos temprano por la mañana.",
+            "fr": "Je pense que quatre jours suffiront, si on part tôt le matin.",
+            "pt": "Acho que quatro dias são suficientes, se a gente sair de manhã cedo.",
+            "kr": "아침 일찍 출발하면 사흘이면 충분할 것 같아.",
+            "jp": "早朝に出発すれば、四日で十分だと思うよ。",
+            "zh": "我觉得四天就够了，如果一大早出发的话。",
+            "ru": "Думаю, четыре дня будет достаточно, если выезжать рано утром."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда предлагаю взять машину напрокат, чтобы не зависеть от расписания.",
+            "en": "Then I suggest we rent a car so we don't depend on the schedule.",
+            "es": "Entonces propongo alquilar un coche para no depender de los horarios.",
+            "fr": "Alors je propose de prendre une voiture de location, pour ne pas dépendre des horaires.",
+            "pt": "Então proponho alugar um carro, para não depender de horário.",
+            "kr": "그럼 시간표에 얽매이지 않도록 차를 렌트하자고 제안할게.",
+            "jp": "じゃあ、時刻表に縛られないように、車をレンタルするのはどうかしら。",
+            "zh": "那我建议租一辆车，这样就不用受时刻表限制了。",
+            "ru": "Тогда предлагаю взять машину напрокат, чтобы не зависеть от расписания."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен, это будет удобнее. Я уже посмотрел цены, всё в пределах бюджета.",
+            "en": "Agreed, that will be more convenient. I already looked at the prices, everything is within the budget.",
+            "es": "De acuerdo, será más cómodo. Ya he mirado los precios, todo está dentro del presupuesto.",
+            "fr": "Je suis d'accord, ce sera plus pratique. J'ai déjà regardé les prix, tout est dans le budget.",
+            "pt": "Concordo, vai ser mais conveniente. Eu já olhei os preços, está tudo dentro do orçamento.",
+            "kr": "동의해, 그게 더 편할 거야. 나는 이미 가격을 알아봤어, 예산 안에 다 들어와.",
+            "jp": "賛成だよ、その方が便利だろうね。もう値段も調べたし、全部予算内だよ。",
+            "zh": "同意，这样会更方便。我已经看过价格了，都在预算之内。",
+            "ru": "Согласен, это будет удобнее. Я уже посмотрел цены, всё в пределах бюджета."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, ты уже купила билеты на поезд до Сочи?",
+            "en": "Olga, have you already bought the train tickets to Sochi?",
+            "es": "Olga, ¿ya has comprado los billetes de tren a Sochi?",
+            "fr": "Olga, tu as déjà acheté les billets de train pour Sotchi ?",
+            "pt": "Olga, você já comprou as passagens de trem para Sóchi?",
+            "kr": "올가, 소치 가는 기차표는 이미 샀어?",
+            "jp": "オルガ、もうソチ行きの電車のチケットは買った？",
+            "zh": "奥尔加，你已经买好去索契的火车票了吗？",
+            "ru": "Ольга, ты уже купила билеты на поезд до Сочи?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, взяла на утренний рейс, чтобы приехать засветло.",
+            "en": "Yes, I got the morning train so we arrive before dark.",
+            "es": "Sí, cogí el de la mañana para llegar con luz.",
+            "fr": "Oui, j'ai pris le train du matin, pour arriver avant la nuit.",
+            "pt": "Comprei, sim, peguei o horário da manhã, para chegar antes de escurecer.",
+            "kr": "응, 해가 지기 전에 도착하도록 아침 열차로 샀어.",
+            "jp": "うん、明るいうちに着くように、朝の便を取ったわ。",
+            "zh": "买了，买了早上的车次，这样到的时候天还亮着。",
+            "ru": "Да, взяла на утренний рейс, чтобы приехать засветло."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Умно. А обратные билеты тоже уже есть?",
+            "en": "Smart. And do you already have the return tickets too?",
+            "es": "Qué listo. ¿Y los billetes de vuelta también los tienes ya?",
+            "fr": "C'est malin. Et les billets de retour, tu les as déjà ?",
+            "pt": "Boa ideia. E as passagens de volta, você já tem?",
+            "kr": "현명하네. 그럼 돌아오는 표도 이미 있어?",
+            "jp": "賢いわね。それで、帰りのチケットはもうあるの？",
+            "zh": "真聪明。那回程票也有了？",
+            "ru": "Умно. А обратные билеты тоже уже есть?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пока нет, жду, когда подтвердится отпуск на работе.",
+            "en": "Not yet, I'm waiting for my vacation to be confirmed at work.",
+            "es": "Todavía no, estoy esperando a que confirmen las vacaciones en el trabajo.",
+            "fr": "Pas encore, j'attends que mes congés soient confirmés au travail.",
+            "pt": "Ainda não, estou esperando a confirmação das férias no trabalho.",
+            "kr": "아직 없어, 회사에서 휴가가 확정되기를 기다리고 있어.",
+            "jp": "まだなの、仕事で休暇が確定するのを待っているところよ。",
+            "zh": "还没有，我在等工作上的假期批下来。",
+            "ru": "Пока нет, жду, когда подтвердится отпуск на работе."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Надеюсь, всё получится. Кстати, я нашла недорогой отель у моря.",
+            "en": "I hope it all works out. By the way, I found an inexpensive hotel by the sea.",
+            "es": "Espero que todo salga bien. Por cierto, he encontrado un hotel económico cerca del mar.",
+            "fr": "J'espère que tout va s'arranger. Au fait, j'ai trouvé un hôtel pas cher près de la mer.",
+            "pt": "Espero que dê certo. Aliás, eu encontrei um hotel barato perto do mar.",
+            "kr": "잘 되길 바라. 참고로, 나는 바다 근처에 저렴한 호텔을 찾았어.",
+            "jp": "うまくいくといいわね。ところで、海の近くの安いホテルを見つけたのよ。",
+            "zh": "希望一切顺利。对了，我找到一家海边不贵的酒店。",
+            "ru": "Надеюсь, всё получится. Кстати, я нашла недорогой отель у моря."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично, скинь мне название, я посмотрю отзывы.",
+            "en": "Great, send me the name, I'll check the reviews.",
+            "es": "Genial, mándame el nombre, miraré las opiniones.",
+            "fr": "Super, envoie-moi le nom, je vais regarder les avis.",
+            "pt": "Ótimo, me manda o nome, eu vou olhar as avaliações.",
+            "kr": "좋아, 이름 좀 알려줘, 내가 후기를 찾아볼게.",
+            "jp": "それはいいわね、名前を送ってくれない？ 口コミを見てみるから。",
+            "zh": "太好了，把名字发给我，我去看看评价。",
+            "ru": "Отлично, скинь мне название, я посмотрю отзывы."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, ты уже решила, что возьмёшь с собой в поездку?",
+            "en": "Anna, have you already decided what you'll take with you on the trip?",
+            "es": "Ana, ¿ya has decidido qué te llevarás al viaje?",
+            "fr": "Anna, tu as déjà décidé ce que tu vas prendre pour le voyage ?",
+            "pt": "Anna, você já decidiu o que vai levar na viagem?",
+            "kr": "안나, 여행에 뭘 가져갈지 이미 정했어?",
+            "jp": "アンナ、もう旅行に何を持っていくか決めた？",
+            "zh": "安娜，你已经决定旅行带什么东西了吗？",
+            "ru": "Анна, ты уже решила, что возьмёшь с собой в поездку?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Собираюсь взять только ручную кладь, чтобы не ждать багаж.",
+            "en": "I'm planning to take only carry-on luggage so we don't have to wait for checked bags.",
+            "es": "Pienso llevar solo equipaje de mano para no esperar la maleta.",
+            "fr": "Je compte prendre seulement un bagage cabine, pour ne pas attendre les bagages.",
+            "pt": "Vou levar só bagagem de mão, para não esperar a mala.",
+            "kr": "수하물을 기다리지 않도록 기내 수하물만 가져갈 생각이야.",
+            "jp": "荷物を待たなくていいように、機内持ち込みだけにしようと思っているの。",
+            "zh": "我打算只带手提行李，这样就不用等托运行李了。",
+            "ru": "Собираюсь взять только ручную кладь, чтобы не ждать багаж."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это разумно. А как же сувениры для родственников?",
+            "en": "That's reasonable. But what about souvenirs for the relatives?",
+            "es": "Es razonable. ¿Y qué hay de los recuerdos para los familiares?",
+            "fr": "C'est raisonnable. Et les souvenirs pour la famille, alors ?",
+            "pt": "Isso é sensato. E os souvenirs para os parentes?",
+            "kr": "합리적이네. 그런데 친척들 선물은 어떻게 할 거야?",
+            "jp": "それは賢明ね。でも、親戚へのお土産はどうするの？",
+            "zh": "这很明智。那给亲戚的纪念品怎么办？",
+            "ru": "Это разумно. А как же сувениры для родственников?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Куплю что-нибудь маленькое, например магниты и местный чай.",
+            "en": "I'll buy something small, like magnets and local tea.",
+            "es": "Compraré algo pequeño, por ejemplo imanes y té local.",
+            "fr": "J'achèterai quelque chose de petit, par exemple des aimants et du thé local.",
+            "pt": "Vou comprar alguma coisa pequena, tipo ímãs e chá local.",
+            "kr": "자석이나 현지 차 같은 작은 걸로 살 거야.",
+            "jp": "何か小さいもの、例えばマグネットとか、その土地のお茶を買うわ。",
+            "zh": "我会买点小东西，比如冰箱贴和当地茶叶。",
+            "ru": "Куплю что-нибудь маленькое, например магниты и местный чай."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Точно, это всегда хороший вариант. А документы уже проверила?",
+            "en": "Right, that's always a good option. And have you already checked the documents?",
+            "es": "Claro, siempre es una buena opción. ¿Y ya has revisado los documentos?",
+            "fr": "Exactement, c'est toujours une bonne option. Et tu as déjà vérifié les documents ?",
+            "pt": "É verdade, isso é sempre uma boa opção. E os documentos, você já conferiu?",
+            "kr": "맞아, 그게 항상 좋은 선택이지. 그럼 서류는 이미 확인했어?",
+            "jp": "そうね、それはいつもいい選択よね。それで、書類はもう確認した？",
+            "zh": "没错，这总是个好选择。那证件都检查过了吗？",
+            "ru": "Точно, это всегда хороший вариант. А документы уже проверила?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, паспорт и страховку положила в отдельную папку.",
+            "en": "Yes, I put the passport and insurance in a separate folder.",
+            "es": "Sí, el pasaporte y el seguro los puse en una carpeta aparte.",
+            "fr": "Oui, j'ai mis le passeport et l'assurance dans un dossier séparé.",
+            "pt": "Sim, coloquei o passaporte e o seguro numa pasta separada.",
+            "kr": "응, 여권이랑 보험은 따로 파일에 넣어뒀어.",
+            "jp": "うん、パスポートと保険証は別のフォルダーに入れてあるわ。",
+            "zh": "检查了，护照和保险单都放在一个单独的文件夹里了。",
+            "ru": "Да, паспорт и страховку положила в отдельную папку."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, ты уже выбрал, на чём поедем во Владимир?",
+            "en": "Alexey, have you already chosen how we'll get to Vladimir?",
+            "es": "Alekséi, ¿ya has elegido en qué iremos a Vladímir?",
+            "fr": "Alexeï, tu as déjà choisi comment on va aller à Vladimir ?",
+            "pt": "Alexei, você já escolheu como a gente vai para Vladimir?",
+            "kr": "알렉세이, 블라디미르까지 뭘 타고 갈지 이미 정했어?",
+            "jp": "アレクセイ、もうウラジーミルへは何で行くか選んだ？",
+            "zh": "阿列克谢，你已经选好我们去弗拉基米尔坐什么交通工具了吗？",
+            "ru": "Алексей, ты уже выбрал, на чём поедем во Владимир?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Думаю, лучше на электричке, так быстрее и без пробок.",
+            "en": "I think it's better to take the commuter train, it's faster and no traffic jams.",
+            "es": "Creo que mejor en tren de cercanías, es más rápido y sin atascos.",
+            "fr": "Je pense que le mieux, c'est le train de banlieue, c'est plus rapide et sans embouteillages.",
+            "pt": "Acho melhor de trem elétrico, é mais rápido e sem engarrafamento.",
+            "kr": "전철이 낫지 않을까 싶어, 더 빠르고 막힐 일도 없으니까.",
+            "jp": "電車がいいと思うよ、その方が速いし、渋滞もないからね。",
+            "zh": "我觉得最好坐电气火车，这样更快，而且没有堵车。",
+            "ru": "Думаю, лучше на электричке, так быстрее и без пробок."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Согласна, а то на машине можно застрять надолго.",
+            "en": "Agreed, otherwise by car we could get stuck for a long time.",
+            "es": "De acuerdo, porque en coche podemos quedarnos atascados mucho tiempo.",
+            "fr": "Je suis d'accord, sinon en voiture on peut rester coincés longtemps.",
+            "pt": "Concordo, porque de carro a gente pode ficar preso por muito tempo.",
+            "kr": "동의해, 차로 가면 오래 갇혀 있을 수 있으니까.",
+            "jp": "そうね、車だと長いこと足止めされるかもしれないものね。",
+            "zh": "同意，不然开车可能会堵很久。",
+            "ru": "Согласна, а то на машине можно застрять надолго."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Вот и я об этом подумал. Билеты можно взять прямо на вокзале.",
+            "en": "That's exactly what I thought. Tickets can be bought right at the station.",
+            "es": "Eso mismo pensé yo. Los billetes se pueden comprar directamente en la estación.",
+            "fr": "C'est ce que je me suis dit aussi. On peut prendre les billets directement à la gare.",
+            "pt": "Foi o que eu pensei também. Dá para comprar as passagens direto na estação.",
+            "kr": "나도 그걸 생각했어. 표는 역에서 바로 살 수 있어.",
+            "jp": "まさにそれを考えていたんだ。チケットは駅で直接買えるよ。",
+            "zh": "我也是这么想的。车票可以直接在火车站买。",
+            "ru": "Вот и я об этом подумал. Билеты можно взять прямо на вокзале."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично. А во Владимире что планируешь посмотреть?",
+            "en": "Great. And what do you plan to see in Vladimir?",
+            "es": "Genial. ¿Y qué planeas ver en Vladímir?",
+            "fr": "Parfait. Et à Vladimir, tu comptes voir quoi ?",
+            "pt": "Ótimo. E em Vladimir, o que você planeja visitar?",
+            "kr": "좋아. 그럼 블라디미르에서는 뭘 볼 계획이야?",
+            "jp": "いいわね。それで、ウラジーミルでは何を見る予定なの？",
+            "zh": "太好了。那在弗拉基米尔你打算看什么？",
+            "ru": "Отлично. А во Владимире что планируешь посмотреть?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хочу сходить в Золотые ворота и в местный кремль.",
+            "en": "I want to visit the Golden Gate and the local kremlin.",
+            "es": "Quiero ir a la Puerta Dorada y al kremlin local.",
+            "fr": "Je veux visiter la Porte Dorée et le kremlin local.",
+            "pt": "Quero ir ao Portão Dourado e ao kremlin local.",
+            "kr": "황금문이랑 그쪽 크렘린에 가보고 싶어.",
+            "jp": "黄金の門と、地元のクレムリンに行きたいと思っているんだ。",
+            "zh": "我想去金门和当地的克里姆林宫看看。",
+            "ru": "Хочу сходить в Золотые ворота и в местный кремль."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, ты уже забронировала столик в ресторане на наш вечер?",
+            "en": "Maria, have you already booked a table at the restaurant for our evening?",
+            "es": "María, ¿ya has reservado mesa en el restaurante para nuestra velada?",
+            "fr": "Maria, tu as déjà réservé une table au restaurant pour notre soirée ?",
+            "pt": "Maria, você já reservou a mesa no restaurante para a nossa noite?",
+            "kr": "마리아, 우리 저녁에 식당은 이미 예약했어?",
+            "jp": "マリア、もう私たちの夜のためにレストランを予約した？",
+            "zh": "玛丽亚，你已经为我们今晚订好餐厅的位子了吗？",
+            "ru": "Мария, ты уже забронировала столик в ресторане на наш вечер?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, заказала на семь часов, окно с видом на реку.",
+            "en": "Yes, I reserved it for seven o'clock, a window table with a view of the river.",
+            "es": "Sí, la reservé para las siete, con ventana con vistas al río.",
+            "fr": "Oui, j'ai réservé pour sept heures, une table près de la fenêtre avec vue sur la rivière.",
+            "pt": "Reservei, sim, para as sete horas, numa mesa com vista para o rio.",
+            "kr": "응, 강이 보이는 창가 자리로 일곱 시에 예약했어.",
+            "jp": "うん、七時に、川の見える窓際の席を予約したわ。",
+            "zh": "订了，订了七点的，靠窗的位置，能看到河景。",
+            "ru": "Да, заказала на семь часов, окно с видом на реку."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Прекрасно! А какая там кухня, ты уже смотрела меню?",
+            "en": "Wonderful! And what kind of cuisine do they have there, have you already looked at the menu?",
+            "es": "¡Estupendo! ¿Y qué cocina tienen, ya has mirado el menú?",
+            "fr": "Magnifique ! Et quelle est la cuisine là-bas, tu as déjà regardé le menu ?",
+            "pt": "Perfeito! E qual é a culinária de lá, você já viu o cardápio?",
+            "kr": "좋아! 그런데 거기 요리는 어떤데, 메뉴는 이미 봤어?",
+            "jp": "素晴らしい！ それで、そこはどんな料理なの、もうメニューは見た？",
+            "zh": "太棒了！那里是什么菜系，你看了菜单了吗？",
+            "ru": "Прекрасно! А какая там кухня, ты уже смотрела меню?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, там в основном русская кухня, но есть и европейские блюда.",
+            "en": "Yes, they mostly have Russian cuisine, but they also have European dishes.",
+            "es": "Sí, sobre todo cocina rusa, pero también hay platos europeos.",
+            "fr": "Oui, c'est surtout de la cuisine russe, mais il y a aussi des plats européens.",
+            "pt": "Vi, sim, é principalmente culinária russa, mas também tem pratos europeus.",
+            "kr": "응, 거기는 주로 러시아 요리인데 유럽 요리도 있어.",
+            "jp": "うん、主にロシア料理だけど、ヨーロッパ料理もあるわよ。",
+            "zh": "看了，主要是俄罗斯菜，但也有欧洲菜。",
+            "ru": "Да, там в основном русская кухня, но есть и европейские блюда."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Звучит отлично. А как мы туда доберёмся?",
+            "en": "Sounds great. And how will we get there?",
+            "es": "Suena muy bien. ¿Y cómo llegaremos allí?",
+            "fr": "Ça a l'air parfait. Et comment on va y aller ?",
+            "pt": "Parece ótimo. E como a gente vai chegar lá?",
+            "kr": "좋네. 그럼 거기까지는 어떻게 갈 거야?",
+            "jp": "それはいいわね。それで、どうやってそこまで行くの？",
+            "zh": "听起来不错。那我们怎么去那里？",
+            "ru": "Звучит отлично. А как мы туда доберёмся?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Предлагаю прогуляться пешком, это всего двадцать минут от метро.",
+            "en": "I suggest we walk, it's only twenty minutes from the metro.",
+            "es": "Propongo ir andando, son solo veinte minutos desde el metro.",
+            "fr": "Je propose d'y aller à pied, c'est seulement vingt minutes depuis le métro.",
+            "pt": "Proponho irmos a pé, são só vinte minutos do metrô.",
+            "kr": "걸어서 가자고 제안할게, 지하철에서 이십 분이면 돼.",
+            "jp": "歩いて行くのはどうかしら、地下鉄からたったの二十分よ。",
+            "zh": "我建议走路过去，从地铁站走只要二十分钟。",
+            "ru": "Предлагаю прогуляться пешком, это всего двадцать минут от метро."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, ты уже решила, в какой стране мы встретим Новый год?",
+            "en": "Elena, have you already decided which country we'll celebrate the New Year in?",
+            "es": "Elena, ¿ya has decidido en qué país celebraremos el Año Nuevo?",
+            "fr": "Elena, tu as déjà décidé dans quel pays on va passer le Nouvel An ?",
+            "pt": "Elena, você já decidiu em que país a gente vai passar o Ano-Novo?",
+            "kr": "옐레나, 우리 새해를 어느 나라에서 보낼지 이미 정했어?",
+            "jp": "エレナ、もうどの国で新年を迎えるか決めた？",
+            "zh": "叶莲娜，你已经决定在哪个国家跨年了吗？",
+            "ru": "Елена, ты уже решила, в какой стране мы встретим Новый год?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Пока склоняюсь к тому, чтобы поехать в Тбилиси. Там тепло и вкусно.",
+            "en": "I'm currently leaning towards going to Tbilisi. It's warm there and the food is good.",
+            "es": "De momento me inclino por ir a Tiflis. Allí hace calor y se come bien.",
+            "fr": "Pour l'instant, je penche pour aller à Tbilissi. Il y fait chaud et on y mange bien.",
+            "pt": "Ainda estou inclinada a ir para Tbilisi. Lá é quente e a comida é boa.",
+            "kr": "아직 트빌리시로 가는 쪽으로 마음이 기울고 있어. 거기는 따뜻하고 맛있는 게 많아.",
+            "jp": "今のところ、トビリシに行こうかと思っているの。暖かいし、ご飯もおいしいから。",
+            "zh": "目前倾向于去第比利斯。那里暖和，而且东西好吃。",
+            "ru": "Пока склоняюсь к тому, чтобы поехать в Тбилиси. Там тепло и вкусно."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "О, это интересная идея. А билеты уже смотрела?",
+            "en": "Oh, that's an interesting idea. And have you already looked at tickets?",
+            "es": "Oh, es una idea interesante. ¿Y ya has mirado los billetes?",
+            "fr": "Oh, c'est une idée intéressante. Et tu as déjà regardé les billets ?",
+            "pt": "Ah, essa é uma ideia interessante. E as passagens, você já olhou?",
+            "kr": "오, 재미있는 생각이네. 그럼 표는 이미 찾아봤어?",
+            "jp": "ああ、それは面白いアイデアね。それで、チケットはもう見たの？",
+            "zh": "哦，这个想法很有意思。那机票看了吗？",
+            "ru": "О, это интересная идея. А билеты уже смотрела?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, есть недорогие варианты на двадцать восьмое декабря.",
+            "en": "Yes, there are inexpensive options for the twenty-eighth of December.",
+            "es": "Sí, hay opciones económicas para el veintiocho de diciembre.",
+            "fr": "Oui, il y a des options pas chères pour le vingt-huit décembre.",
+            "pt": "Olhei, sim, tem opções baratas para o dia vinte e oito de dezembro.",
+            "kr": "응, 십이월 이십팔일 자리에 저렴한 옵션이 있어.",
+            "jp": "うん、十二月二十八日の安い便があるわ。",
+            "zh": "看了，十二月二十八号有便宜的选项。",
+            "ru": "Да, есть недорогие варианты на двадцать восьмое декабря."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Тогда давай не тянуть и купить, пока есть места.",
+            "en": "Then let's not put it off and buy them while there are still seats.",
+            "es": "Entonces no lo dejemos y compremos mientras haya plazas.",
+            "fr": "Alors ne traînons pas et achetons-les tant qu'il y a des places.",
+            "pt": "Então vamos não enrolar e comprar enquanto ainda tem lugar.",
+            "kr": "그럼 자리가 있는 동안 망설이지 말고 사자.",
+            "jp": "じゃあ、席があるうちに、ためらわずに買いましょう。",
+            "zh": "那咱们别拖了，趁还有票赶紧买吧。",
+            "ru": "Тогда давай не тянуть и купить, пока есть места."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласна, сегодня же оформлю бронирование.",
+            "en": "Agreed, I'll make the booking today.",
+            "es": "De acuerdo, hoy mismo haré la reserva.",
+            "fr": "Je suis d'accord, je fais la réservation aujourd'hui même.",
+            "pt": "Concordo, hoje mesmo eu faço a reserva.",
+            "kr": "동의해, 오늘 안에 예약을 완료할게.",
+            "jp": "そうね、今日中に予約を済ませるわ。",
+            "zh": "同意，我今天就把预订办好。",
+            "ru": "Согласна, сегодня же оформлю бронирование."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, ты уже продумал, чем займёмся в первый день в Мурманске?",
+            "en": "Dmitry, have you already thought through what we'll do on the first day in Murmansk?",
+            "es": "Dmitri, ¿ya has pensado qué haremos el primer día en Múrmansk?",
+            "fr": "Dmitri, tu as déjà réfléchi à ce qu'on va faire le premier jour à Mourmansk ?",
+            "pt": "Dmitri, você já pensou no que a gente vai fazer no primeiro dia em Murmansk?",
+            "kr": "드미트리, 무르만스크에서 첫날 뭘 할지 이미 생각해 봤어?",
+            "jp": "ドミトリー、ムルマンスクでの初日は何をするかもう考えてある？",
+            "zh": "德米特里，你已经想好我们在摩尔曼斯克第一天做什么了吗？",
+            "ru": "Дмитрий, ты уже продумал, чем займёмся в первый день в Мурманске?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хочу сразу поехать на побережье, посмотреть на северное сияние.",
+            "en": "I want to go straight to the coast and see the northern lights.",
+            "es": "Quiero ir directamente a la costa a ver la aurora boreal.",
+            "fr": "Je veux aller directement sur la côte, pour voir les aurores boréales.",
+            "pt": "Quero ir direto para o litoral, ver a aurora boreal.",
+            "kr": "바로 해안가로 가서 오로라를 보고 싶어.",
+            "jp": "すぐに海岸に行って、オーロラを見たいと思っているんだ。",
+            "zh": "我想直接去海边，看北极光。",
+            "ru": "Хочу сразу поехать на побережье, посмотреть на северное сияние."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это было бы здорово! А гид уже найден?",
+            "en": "That would be great! And have you already found a guide?",
+            "es": "¡Eso sería genial! ¿Y ya has encontrado guía?",
+            "fr": "Ce serait génial ! Et tu as déjà trouvé un guide ?",
+            "pt": "Isso seria incrível! E o guia, você já encontrou?",
+            "kr": "그거 정말 좋겠다! 그럼 가이드는 이미 구했어?",
+            "jp": "それは素敵ね！ それで、ガイドはもう見つけたの？",
+            "zh": "那太好了！导游已经找好了吗？",
+            "ru": "Это было бы здорово! А гид уже найден?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, договорился с местным экскурсоводом, он нас встретит у отеля.",
+            "en": "Yes, I arranged it with a local tour guide, he'll meet us at the hotel.",
+            "es": "Sí, me he puesto de acuerdo con un guía local, nos recogerá en el hotel.",
+            "fr": "Oui, je me suis arrangé avec un guide local, il nous attendra à l'hôtel.",
+            "pt": "Encontrei, sim, combinei com um guia local, ele vai nos encontrar no hotel.",
+            "kr": "응, 현지 여행 가이드와 얘기했어, 호텔 앞에서 우리를 만나줄 거야.",
+            "jp": "うん、地元のガイドと手配済みだよ、ホテルで待っていてくれるんだ。",
+            "zh": "找好了，我跟当地的一个导游说好了，他会在酒店门口接我们。",
+            "ru": "Да, договорился с местным экскурсоводом, он нас встретит у отеля."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично. А что на второй день?",
+            "en": "Great. And what about the second day?",
+            "es": "Estupendo. ¿Y qué hay del segundo día?",
+            "fr": "Parfait. Et pour le deuxième jour ?",
+            "pt": "Ótimo. E no segundo dia?",
+            "kr": "좋아. 그럼 둘째 날은 뭐 할 거야?",
+            "jp": "いいわね。それで、二日目は何かあるの？",
+            "zh": "太好了。那第二天做什么？",
+            "ru": "Отлично. А что на второй день?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Планирую поездку в Териберку, если позволит погода.",
+            "en": "I'm planning a trip to Teriberka, if the weather allows.",
+            "es": "Planeo una excursión a Teriberka, si el tiempo lo permite.",
+            "fr": "Je prévois une excursion à Teriberka, si le temps le permet.",
+            "pt": "Estou planejando um passeio para Teriberka, se o tempo permitir.",
+            "kr": "날씨가 허락하면 테리베르카로 가는 여행을 계획하고 있어.",
+            "jp": "天気が許せば、テリベルカへの小旅行を計画しているよ。",
+            "zh": "我计划去捷里别尔卡，如果天气允许的话。",
+            "ru": "Планирую поездку в Териберку, если позволит погода."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты уже всё подготовил для нашей поездки в Калининград?",
+            "en": "Ivan, have you already prepared everything for our trip to Kaliningrad?",
+            "es": "Iván, ¿ya has preparado todo para nuestro viaje a Kaliningrado?",
+            "fr": "Ivan, tu as déjà tout préparé pour notre voyage à Kaliningrad ?",
+            "pt": "Ivan, você já preparou tudo para a nossa viagem para Kaliningrado?",
+            "kr": "이반, 칼리닌그라드로 가는 우리 여행 준비는 다 끝냈어?",
+            "jp": "イワン、もうカリーニングラードへの旅行の準備は全部できた？",
+            "zh": "伊万，你已经为我们的加里宁格勒之行准备好一切了吗？",
+            "ru": "Иван, ты уже всё подготовил для нашей поездки в Калининград?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Почти. Осталось только распечатать билеты и скачать карты.",
+            "en": "Almost. I just need to print the tickets and download the maps.",
+            "es": "Casi. Solo queda imprimir los billetes y descargar los mapas.",
+            "fr": "Presque. Il reste juste à imprimer les billets et à télécharger les cartes.",
+            "pt": "Quase. Só falta imprimir as passagens e baixar os mapas.",
+            "kr": "거의 다 됐어. 표를 출력하고 지도를 다운로드하는 것만 남았어.",
+            "jp": "ほとんどだよ。あとはチケットを印刷して、地図をダウンロードするだけだ。",
+            "zh": "差不多了。只剩打印车票和下载地图了。",
+            "ru": "Почти. Осталось только распечатать билеты и скачать карты."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хорошо. А ты не забыл про визу? Она ещё действует?",
+            "en": "Good. And did you forget about the visa? Is it still valid?",
+            "es": "Bien. ¿Y no te has olvidado del visado? ¿Sigue en vigor?",
+            "fr": "Bien. Et tu n'as pas oublié le visa ? Il est encore valable ?",
+            "pt": "Que bom. E você não esqueceu do visto? Ele ainda está válido?",
+            "kr": "좋아. 그런데 비자는 안 잊었지? 아직 유효해?",
+            "jp": "いいわね。それで、ビザのことは忘れてない？ まだ有効なの？",
+            "zh": "好的。你没忘记签证吧？还有效吗？",
+            "ru": "Хорошо. А ты не забыл про визу? Она ещё действует?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я проверил, виза действует до конца месяца.",
+            "en": "Yes, I checked, the visa is valid until the end of the month.",
+            "es": "Sí, lo he comprobado, el visado es válido hasta finales de mes.",
+            "fr": "Oui, j'ai vérifié, le visa est valable jusqu'à la fin du mois.",
+            "pt": "Está, eu verifiquei, o visto é válido até o fim do mês.",
+            "kr": "응, 확인했어, 비자는 이번 달 말까지 유효해.",
+            "jp": "うん、確認したよ、ビザは月末まで有効だ。",
+            "zh": "没忘，我查过了，签证有效期到这个月底。",
+            "ru": "Да, я проверил, виза действует до конца месяца."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, значит, можно ни о чём не беспокоиться.",
+            "en": "Great, so we don't have to worry about anything.",
+            "es": "Estupendo, entonces no hay nada de qué preocuparse.",
+            "fr": "Parfait, alors on peut s'inquiéter de rien.",
+            "pt": "Ótimo, então a gente não precisa se preocupar com nada.",
+            "kr": "좋아, 그럼 아무것도 걱정할 게 없네.",
+            "jp": "それはいいわね、じゃあ何も心配いらないってことね。",
+            "zh": "太好了，那就什么都不用担心了。",
+            "ru": "Отлично, значит, можно ни о чём не беспокоиться."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен. Осталось только дождаться пятницы и собрать чемодан.",
+            "en": "Agreed. We just have to wait for Friday and pack the suitcase.",
+            "es": "De acuerdo. Solo queda esperar al viernes y hacer la maleta.",
+            "fr": "Je suis d'accord. Il ne reste plus qu'à attendre vendredi et à faire la valise.",
+            "pt": "Concordo. Só falta esperar a sexta-feira e arrumar a mala.",
+            "kr": "동의해. 이제 금요일을 기다렸다가 짐만 싸면 돼.",
+            "jp": "そうだね。あとは金曜日を待って、スーツケースを詰めるだけだよ。",
+            "zh": "同意。就等着周五到来，然后收拾行李了。",
+            "ru": "Согласен. Осталось только дождаться пятницы и собрать чемодан."
+          }
+        }
+      ]
+    }
+  ]
+}

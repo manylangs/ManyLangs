@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "b1",
+    "id": "023"
+  },
+  "title": {
+    "target": "Консультация с преподавателем",
+    "en": "Consultation with the Teacher",
+    "es": "Consulta con el profesor",
+    "fr": "Consultation avec le professeur",
+    "pt": "Consulta com o professor",
+    "kr": "교수님과의 상담",
+    "jp": "教授との相談",
+    "zh": "与老师咨询",
+    "ru": "Консультация с преподавателем"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Здравствуйте, Иван Сергеевич. Можно войти?",
+            "en": "Hello, Ivan Sergeyevich. May I come in?",
+            "es": "Hola, Iván Serguéievich. ¿Puedo pasar?",
+            "fr": "Bonjour, Ivan Sergueïevitch. Je peux entrer ?",
+            "pt": "Olá, Ivan Sergeevich. Posso entrar?",
+            "kr": "안녕하세요, 이반 세르게예비치. 들어가도 될까요?",
+            "jp": "こんにちは、イワン・セルゲーエヴィチ。入ってもいいですか？",
+            "zh": "您好，伊万·谢尔盖耶维奇。可以进来吗？",
+            "ru": "Здравствуйте, Иван Сергеевич. Можно войти?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Здравствуй, Анна. Конечно, заходи. Садись.",
+            "en": "Hello, Anna. Of course, come in. Have a seat.",
+            "es": "Hola, Anna. Claro, pasa. Siéntate.",
+            "fr": "Bonjour, Anna. Bien sûr, entre. Assieds-toi.",
+            "pt": "Olá, Anna. Claro, entra. Senta.",
+            "kr": "안녕, 안나. 물론이지, 들어와. 앉아.",
+            "jp": "こんにちは、アンナ。もちろん、入って。座って。",
+            "zh": "你好，安娜。当然，进来吧。请坐。",
+            "ru": "Здравствуй, Анна. Конечно, заходи. Садись."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спасибо. Я хотела спросить про курсовую работу.",
+            "en": "Thank you. I wanted to ask about my term paper.",
+            "es": "Gracias. Quería preguntarle sobre el trabajo de curso.",
+            "fr": "Merci. Je voulais vous poser une question sur le travail de session.",
+            "pt": "Obrigada. Eu queria perguntar sobre o trabalho de conclusão de curso.",
+            "kr": "감사합니다. 학기 논문에 대해 여쭤보고 싶었어요.",
+            "jp": "ありがとうございます。学期末レポートについてお聞きしたかったんです。",
+            "zh": "谢谢。我想问一下关于课程论文的事。",
+            "ru": "Спасибо. Я хотела спросить про курсовую работу."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Слушаю тебя внимательно. Что именно тебя интересует?",
+            "en": "I'm listening carefully. What exactly are you interested in?",
+            "es": "Te escucho con atención. ¿Qué te interesa exactamente?",
+            "fr": "Je t'écoute attentivement. Qu'est-ce qui t'intéresse exactement ?",
+            "pt": "Estou te ouvindo com atenção. O que exatamente te interessa?",
+            "kr": "잘 듣고 있으니 뭐가 궁금한지 말해 보렴.",
+            "jp": "ちゃんと聞いてるよ。具体的に何が気になるんだい？",
+            "zh": "我认真听着。你具体想了解什么？",
+            "ru": "Слушаю тебя внимательно. Что именно тебя интересует?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне не совсем понятна структура второй главы.",
+            "en": "I don't quite understand the structure of the second chapter.",
+            "es": "No me queda muy clara la estructura del segundo capítulo.",
+            "fr": "Je ne comprends pas très bien la structure du deuxième chapitre.",
+            "pt": "Eu não entendi muito bem a estrutura do segundo capítulo.",
+            "kr": "2장의 구조가 잘 이해가 안 돼요.",
+            "jp": "第二章の構成がよくわからないんです。",
+            "zh": "我不太明白第二章的结构。",
+            "ru": "Мне не совсем понятна структура второй главы."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хороший вопрос. Давай посмотрим твой план вместе.",
+            "en": "Good question. Let's look at your outline together.",
+            "es": "Buena pregunta. Veamos tu plan juntos.",
+            "fr": "Bonne question. Regardons ton plan ensemble.",
+            "pt": "Boa pergunta. Vamos ver seu plano juntos.",
+            "kr": "좋은 질문이야. 네 계획서를 같이 한번 보자.",
+            "jp": "いい質問だね。一緒に君の計画を見てみよう。",
+            "zh": "问得好。我们一起看看你的提纲吧。",
+            "ru": "Хороший вопрос. Давай посмотрим твой план вместе."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, у тебя есть минутка?",
+            "en": "Dmitry, do you have a minute?",
+            "es": "Dmitri, ¿tienes un minuto?",
+            "fr": "Dmitri, tu as une minute ?",
+            "pt": "Dmitri, você tem um minutinho?",
+            "kr": "드미트리, 잠깐 시간 괜찮아?",
+            "jp": "ドミートリー、ちょっといい？",
+            "zh": "德米特里，你有空吗？",
+            "ru": "Дмитрий, у тебя есть минутка?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Мария, проходи. Я как раз закончил проверять работы.",
+            "en": "Yes, Maria, come in. I just finished grading the papers.",
+            "es": "Sí, María, pasa. Acabo de terminar de corregir los trabajos.",
+            "fr": "Oui, Maria, entre. Je viens justement de finir de corriger les travaux.",
+            "pt": "Sim, Maria, pode entrar. Eu acabei de terminar de corrigir os trabalhos.",
+            "kr": "응, 마리야, 들어와. 마침 과제 검사 끝냈어.",
+            "jp": "ああ、マリア、入って。ちょうど採点が終わったところだよ。",
+            "zh": "有，玛丽亚，进来吧。我刚好批改完作业。",
+            "ru": "Да, Мария, проходи. Я как раз закончил проверять работы."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я хотел уточнить по поводу списка литературы.",
+            "en": "I wanted to ask about the bibliography.",
+            "es": "Quería preguntar sobre la lista de referencias bibliográficas.",
+            "fr": "Je voulais vous demander quelque chose à propos de la bibliographie.",
+            "pt": "Eu queria esclarecer uma coisa sobre a lista de referências.",
+            "kr": "참고문헌 목록에 대해 확인하고 싶었어.",
+            "jp": "参考文献リストについて確認したかったんです。",
+            "zh": "我想确认一下关于参考文献的事。",
+            "ru": "Я хотел уточнить по поводу списка литературы."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично, что ты спросил. Это очень важно для оценки.",
+            "en": "I'm glad you asked. It's very important for your grade.",
+            "es": "Me alegra que lo hayas preguntado. Es muy importante para la nota.",
+            "fr": "Tant mieux que tu aies demandé. C'est très important pour la note.",
+            "pt": "Ótimo que você perguntou. Isso é muito importante para a nota.",
+            "kr": "물어봐 줘서 다행이야. 성적에 아주 중요하거든.",
+            "jp": "聞いてくれてよかった。それは評価にとても重要だからね。",
+            "zh": "你问得正好。这对成绩很重要。",
+            "ru": "Отлично, что ты спросил. Это очень важно для оценки."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сколько источников нужно указать в итоге?",
+            "en": "How many sources do I need to include in the end?",
+            "es": "¿Cuántas fuentes hay que indicar al final?",
+            "fr": "Combien de sources faut-il indiquer au final ?",
+            "pt": "Quantas fontes preciso indicar no final?",
+            "kr": "최종적으로 출처를 몇 개나 넣어야 하나요?",
+            "jp": "最終的に文献はいくつ必要ですか？",
+            "zh": "最后需要列多少个来源？",
+            "ru": "Сколько источников нужно указать в итоге?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Минимум десять, но лучше добавить ещё пару свежих статей.",
+            "en": "At least ten, but it's better to add a couple of recent articles too.",
+            "es": "Mínimo diez, pero mejor añadir un par de artículos recientes más.",
+            "fr": "Dix au minimum, mais il vaut mieux ajouter encore deux ou trois articles récents.",
+            "pt": "No mínimo dez, mas é melhor adicionar mais alguns artigos recentes.",
+            "kr": "최소 열 개, 하지만 최신 논문 두 개쯤 더 추가하는 게 좋겠어.",
+            "jp": "最低十件だね。でも、新しい論文をあと二、三本追加したほうがいいよ。",
+            "zh": "至少十个，但最好再加几篇新文章。",
+            "ru": "Минимум десять, но лучше добавить ещё пару свежих статей."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей Петрович, добрый день. Я не помешал?",
+            "en": "Alexey Petrovich, good afternoon. Am I interrupting?",
+            "es": "Alekséi Petróvich, buenas tardes. ¿No le interrumpo?",
+            "fr": "Alexeï Petrovitch, bonjour. Je ne vous dérange pas ?",
+            "pt": "Alexei Petrovich, boa tarde. Eu não atrapalhei?",
+            "kr": "알렉세이 페트로비치, 안녕하세요. 방해 안 됐나요?",
+            "jp": "アレクセイ・ペトローヴィチ、こんにちは。お邪魔じゃないですか？",
+            "zh": "阿列克谢·彼得罗维奇，下午好。我没打扰到您吧？",
+            "ru": "Алексей Петрович, добрый день. Я не помешал?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Здравствуй, Сергей. Нет, заходи, я тебя ждал.",
+            "en": "Hello, Sergey. No, come in, I was waiting for you.",
+            "es": "Hola, Serguéi. No, pasa, te estaba esperando.",
+            "fr": "Bonjour, Sergueï. Non, entre, je t'attendais.",
+            "pt": "Olá, Sergei. Não, entra, eu estava esperando você.",
+            "kr": "안녕, 세르게이. 아니야, 들어와, 기다리고 있었어.",
+            "jp": "こんにちは、セルゲイ。いや、入って、君を待っていたよ。",
+            "zh": "你好，谢尔盖。没有，进来吧，我正在等你。",
+            "ru": "Здравствуй, Сергей. Нет, заходи, я тебя ждал."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я немного волнуюсь насчёт доклада на семинаре.",
+            "en": "I'm a little nervous about my presentation at the seminar.",
+            "es": "Estoy un poco nervioso por la presentación en el seminario.",
+            "fr": "Je suis un peu inquiet pour l'exposé au séminaire.",
+            "pt": "Estou um pouco preocupado com a apresentação no seminário.",
+            "kr": "세미나 발표 때문에 좀 긴장돼요.",
+            "jp": "セミナーの発表のことで少し不安なんです。",
+            "zh": "我有点担心研讨会的报告。",
+            "ru": "Я немного волнуюсь насчёт доклада на семинаре."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не переживай так. Ты хорошо подготовился к занятию.",
+            "en": "Don't worry so much. You prepared well for the class.",
+            "es": "No te preocupes tanto. Te has preparado bien para la clase.",
+            "fr": "Ne t'inquiète pas comme ça. Tu t'es bien préparé pour le cours.",
+            "pt": "Não se preocupe tanto. Você se preparou bem para a aula.",
+            "kr": "그렇게 걱정하지 마. 수업 준비 잘했잖아.",
+            "jp": "そんなに心配しなくていいよ。君は授業の準備をしっかりしてきたからね。",
+            "zh": "别那么紧张。你课准备得很充分。",
+            "ru": "Не переживай так. Ты хорошо подготовился к занятию."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Может, посмотрите мои тезисы перед выступлением?",
+            "en": "Could you take a look at my talking points before the presentation?",
+            "es": "¿Quizás podría revisar mis tesis antes de la exposición?",
+            "fr": "Peut-être que vous pourriez regarder mes notes avant la présentation ?",
+            "pt": "O senhor poderia dar uma olhada nas minhas teses antes da apresentação?",
+            "kr": "발표 전에 제 요지를 한번 봐주시면 안 될까요?",
+            "jp": "発表の前に私の要旨を見ていただけますか？",
+            "zh": "那在我发言之前，您能看看我的提纲吗？",
+            "ru": "Может, посмотрите мои тезисы перед выступлением?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, оставь их мне, я посмотрю сегодня вечером.",
+            "en": "Of course, leave them with me, I'll look at them this evening.",
+            "es": "Claro, déjamelas, las miraré esta tarde.",
+            "fr": "Bien sûr, laisse-les-moi, je les regarderai ce soir.",
+            "pt": "Claro, deixa comigo, eu vou olhar hoje à noite.",
+            "kr": "물론이지, 나에게 맡겨 둬. 오늘 저녁에 볼게.",
+            "jp": "もちろん、私に預けてくれ。今夜見ておくよ。",
+            "zh": "当然，留给我吧，我今晚看。",
+            "ru": "Конечно, оставь их мне, я посмотрю сегодня вечером."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, можно задать вам один вопрос?",
+            "en": "Elena, may I ask you a question?",
+            "es": "Elena, ¿puedo hacerle una pregunta?",
+            "fr": "Elena, je peux vous poser une question ?",
+            "pt": "Elena, posso fazer uma pergunta para a senhora?",
+            "kr": "옐레나, 질문 하나 드려도 될까요?",
+            "jp": "エレーナ、一つ質問してもいいですか？",
+            "zh": "叶莲娜，可以问您一个问题吗？",
+            "ru": "Елена, можно задать вам один вопрос?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, Ольга. Я как раз освободилась.",
+            "en": "Of course, Olga. I just finished up.",
+            "es": "Claro, Olga. Acabo de quedar libre.",
+            "fr": "Bien sûr, Olga. Je viens justement de me libérer.",
+            "pt": "Claro, Olga. Eu acabei de ficar livre.",
+            "kr": "물론이죠, 올가. 마침 일이 끝났어요.",
+            "jp": "もちろん、オリガ。ちょうど手が空いたところよ。",
+            "zh": "当然，奥尔加。我刚好有空。",
+            "ru": "Конечно, Ольга. Я как раз освободилась."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я не поняла тему про падежи на прошлом занятии.",
+            "en": "I didn't understand the topic about cases at the last class.",
+            "es": "No entendí el tema de los casos en la clase pasada.",
+            "fr": "Je n'ai pas compris le sujet sur les cas lors du dernier cours.",
+            "pt": "Eu não entendi o assunto sobre os casos na última aula.",
+            "kr": "지난 수업에서 격(case)에 대한 내용을 이해하지 못했어요.",
+            "jp": "前回の授業で格のテーマがよくわからなかったんです。",
+            "zh": "上节课我没听懂关于格的话题。",
+            "ru": "Я не поняла тему про падежи на прошлом занятии."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это бывает. Давай разберём ещё раз вместе.",
+            "en": "That happens. Let's go over it together again.",
+            "es": "Eso pasa. Vamos a repasarlo otra vez juntas.",
+            "fr": "Ça arrive. Reprenons cela ensemble.",
+            "pt": "Isso acontece. Vamos revisar juntas mais uma vez.",
+            "kr": "그럴 수 있죠. 같이 다시 한번 살펴봐요.",
+            "jp": "そういうこともあるわね。もう一度一緒にやりましょう。",
+            "zh": "这很正常。我们一起再讲一遍。",
+            "ru": "Это бывает. Давай разберём ещё раз вместе."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Спасибо большое. Мне очень нужна ваша помощь.",
+            "en": "Thank you so much. I really need your help.",
+            "es": "Muchas gracias. Necesito mucho su ayuda.",
+            "fr": "Merci beaucoup. J'ai vraiment besoin de votre aide.",
+            "pt": "Muito obrigada. Eu preciso muito da sua ajuda.",
+            "kr": "정말 감사합니다. 선생님의 도움이 정말 필요해요.",
+            "jp": "本当にありがとうございます。あなたの助けがとても必要なのです。",
+            "zh": "非常感谢。我非常需要您的帮助。",
+            "ru": "Спасибо большое. Мне очень нужна ваша помощь."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не за что. Приходи завтра после пар, я всё объясню.",
+            "en": "You're welcome. Come by tomorrow after classes, and I'll explain everything.",
+            "es": "De nada. Ven mañana después de las clases, te lo explicaré todo.",
+            "fr": "De rien. Viens demain après les cours, je t'expliquerai tout.",
+            "pt": "De nada. Vem amanhã depois das aulas, eu explico tudo.",
+            "kr": "천만에요. 내일 수업 끝나고 오세요, 다 설명해 드릴게요.",
+            "jp": "どういたしまして。明日の授業が終わったらおいでなさい。全部説明するわ。",
+            "zh": "不客气。明天课后来吧，我全都给你解释。",
+            "ru": "Не за что. Приходи завтра после пар, я всё объясню."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван Сергеевич, извините за беспокойство.",
+            "en": "Ivan Sergeyevich, sorry to bother you.",
+            "es": "Iván Serguéievich, perdone la molestia.",
+            "fr": "Ivan Sergueïevitch, excusez-moi de vous déranger.",
+            "pt": "Ivan Sergeevich, desculpe pelo incômodo.",
+            "kr": "이반 세르게예비치, 방해해서 죄송합니다.",
+            "jp": "イワン・セルゲーエヴィチ、お手数をおかけしてすみません。",
+            "zh": "伊万·谢尔盖耶维奇，抱歉打扰您。",
+            "ru": "Иван Сергеевич, извините за беспокойство."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ничего страшного, Дмитрий. Что случилось?",
+            "en": "No problem, Dmitry. What happened?",
+            "es": "No pasa nada, Dmitri. ¿Qué ha pasado?",
+            "fr": "Ce n'est pas grave, Dmitri. Qu'est-ce qui se passe ?",
+            "pt": "Sem problema, Dmitri. O que aconteceu?",
+            "kr": "괜찮아, 드미트리. 무슨 일인데?",
+            "jp": "大丈夫だよ、ドミートリー。どうしたんだい？",
+            "zh": "没关系，德米特里。出什么事了？",
+            "ru": "Ничего страшного, Дмитрий. Что случилось?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я не смог сдать реферат вовремя, были проблемы.",
+            "en": "I couldn't turn in my essay on time, there were some issues.",
+            "es": "No pude entregar el ensayo a tiempo, tuve problemas.",
+            "fr": "Je n'ai pas pu rendre le mémoire à temps, j'ai eu des problèmes.",
+            "pt": "Eu não consegui entregar o resumo a tempo, tive problemas.",
+            "kr": "레포트를 제때 제출하지 못했어요, 문제가 있었습니다.",
+            "jp": "レポートを期限通りに提出できませんでした。問題があって。",
+            "zh": "我没能按时交摘要，遇到了一些问题。",
+            "ru": "Я не смог сдать реферат вовремя, были проблемы."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Понимаю, всякое бывает. Когда сможешь принести?",
+            "en": "I understand, these things happen. When can you bring it in?",
+            "es": "Lo entiendo, estas cosas pasan. ¿Cuándo podrás traerlo?",
+            "fr": "Je comprends, ça arrive. Quand pourras-tu l'apporter ?",
+            "pt": "Entendo, essas coisas acontecem. Quando você consegue trazer?",
+            "kr": "이해해, 다 그럴 수 있지. 언제 가져올 수 있겠어?",
+            "jp": "わかるよ、そういうこともある。いつ持ってこれる？",
+            "zh": "我理解，这种事常有。你什么时候能交来？",
+            "ru": "Понимаю, всякое бывает. Когда сможешь принести?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я закончу его к пятнице, если можно.",
+            "en": "I'll finish it by Friday, if that's okay.",
+            "es": "Lo terminaré para el viernes, si se puede.",
+            "fr": "Je le finirai d'ici vendredi, si c'est possible.",
+            "pt": "Eu termino até sexta-feira, se puder.",
+            "kr": "가능하면 금요일까지 끝내겠습니다.",
+            "jp": "金曜日までに終わらせます。よろしければ。",
+            "zh": "如果可以的话，我周五前完成。",
+            "ru": "Я закончу его к пятнице, если можно."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, жду тебя в пятницу после обеда.",
+            "en": "Alright, I'll see you Friday afternoon.",
+            "es": "Bien, te espero el viernes después de comer.",
+            "fr": "D'accord, je t'attends vendredi après midi.",
+            "pt": "Tudo bem, espero você na sexta-feira à tarde.",
+            "kr": "좋아, 금요일 오후에 기다릴게.",
+            "jp": "いいよ。金曜日の午後に待っているから。",
+            "zh": "好，我周五下午等你。",
+            "ru": "Хорошо, жду тебя в пятницу после обеда."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, здравствуйте. Вы просили зайти после пар.",
+            "en": "Maria, hello. You asked me to stop by after classes.",
+            "es": "María, hola. Me pidió que pasara después de las clases.",
+            "fr": "Maria, bonjour. Vous m'aviez demandé de passer après les cours.",
+            "pt": "Maria, olá. A senhora pediu para eu passar depois das aulas.",
+            "kr": "마리야, 안녕하세요. 수업 끝나고 오라고 하셨잖아요.",
+            "jp": "マリア、こんにちは。授業が終わったら来るように言われました。",
+            "zh": "玛丽亚，您好。您让我课后过来。",
+            "ru": "Мария, здравствуйте. Вы просили зайти после пар."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Алексей. Я хотела обсудить твою успеваемость.",
+            "en": "Yes, Alexey. I wanted to discuss your academic progress.",
+            "es": "Sí, Alekséi. Quería hablar de tu rendimiento académico.",
+            "fr": "Oui, Alexeï. Je voulais discuter de tes résultats.",
+            "pt": "Sim, Alexei. Eu queria conversar sobre o seu desempenho.",
+            "kr": "그래, 알렉세이. 네 학업 성적에 대해 이야기하고 싶었어.",
+            "jp": "そうね、アレクセイ。あなたの成績について話したかったの。",
+            "zh": "是的，阿列克谢。我想谈谈你的学业表现。",
+            "ru": "Да, Алексей. Я хотела обсудить твою успеваемость."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я знаю, что у меня есть пара долгов по практике.",
+            "en": "I know I have a couple of incomplete assignments for the practicum.",
+            "es": "Sé que tengo un par de asignaturas pendientes en las prácticas.",
+            "fr": "Je sais que j'ai quelques dettes pour les travaux pratiques.",
+            "pt": "Eu sei que tenho algumas pendências na prática.",
+            "kr": "실습 과제를 몇 개 밀린 게 있는 건 알고 있어요.",
+            "jp": "実習の課題がいくつか未提出なのはわかっています。",
+            "zh": "我知道我实践课还有几项没完成。",
+            "ru": "Я знаю, что у меня есть пара долгов по практике."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Верно. Но я вижу, что ты стараешься исправиться.",
+            "en": "That's right. But I can see that you're trying to improve.",
+            "es": "Es cierto. Pero veo que te estás esforzando por mejorar.",
+            "fr": "C'est vrai. Mais je vois que tu fais des efforts pour t'améliorer.",
+            "pt": "Isso mesmo. Mas eu vejo que você está se esforçando para melhorar.",
+            "kr": "맞아. 하지만 넌 고치려고 노력하고 있는 게 보여.",
+            "jp": "その通り。でも、あなたが改善しようと頑張っているのは見えているわ。",
+            "zh": "没错。但我看到你在努力改正。",
+            "ru": "Верно. Но я вижу, что ты стараешься исправиться."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я обязательно всё сдам до конца месяца.",
+            "en": "I'll definitely turn everything in by the end of the month.",
+            "es": "Entregaré todo sin falta antes de que acabe el mes.",
+            "fr": "Je rendrai absolument tout d'ici la fin du mois.",
+            "pt": "Eu com certeza vou entregar tudo até o fim do mês.",
+            "kr": "이번 달 말까지 반드시 다 제출할게요.",
+            "jp": "今月末までには必ず全部提出します。",
+            "zh": "我一定在月底前全部交上。",
+            "ru": "Я обязательно всё сдам до конца месяца."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Буду рада это услышать. Приходи, если нужна помощь.",
+            "en": "I'll be glad to hear that. Come by if you need help.",
+            "es": "Me alegrará oír eso. Ven si necesitas ayuda.",
+            "fr": "Je serai ravie de l'entendre. Viens si tu as besoin d'aide.",
+            "pt": "Vou ficar feliz em ouvir isso. Vem se precisar de ajuda.",
+            "kr": "그 말 들으니 기쁘구나. 도움이 필요하면 와.",
+            "jp": "それを聞けて嬉しいわ。助けが必要ならいつでもおいでなさい。",
+            "zh": "听到这个我很高兴。需要帮助就来找我。",
+            "ru": "Буду рада это услышать. Приходи, если нужна помощь."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, можно с вами посоветоваться?",
+            "en": "Sergey, may I ask for your advice?",
+            "es": "Serguéi, ¿puedo consultarle algo?",
+            "fr": "Sergueï, je peux vous demander conseil ?",
+            "pt": "Sergei, posso pedir uma orientação ao senhor?",
+            "kr": "세르게이, 상담 좀 드려도 될까요?",
+            "jp": "セルゲイ、相談してもいいですか？",
+            "zh": "谢尔盖，可以跟您商量一下吗？",
+            "ru": "Сергей, можно с вами посоветоваться?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, Анна. Проходи, присаживайся.",
+            "en": "Of course, Anna. Come in, have a seat.",
+            "es": "Claro, Anna. Pasa, siéntate.",
+            "fr": "Bien sûr, Anna. Entre, assieds-toi.",
+            "pt": "Claro, Anna. Entra, senta.",
+            "kr": "물론이죠, 안나. 들어와서 앉아요.",
+            "jp": "もちろん、アンナ。入って、座って。",
+            "zh": "当然，安娜。进来，请坐。",
+            "ru": "Конечно, Анна. Проходи, присаживайся."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я думаю над темой для научной статьи.",
+            "en": "I'm thinking about a topic for a research article.",
+            "es": "Estoy pensando en un tema para el artículo científico.",
+            "fr": "Je réfléchis à un sujet pour un article scientifique.",
+            "pt": "Estou pensando sobre um tema para o artigo científico.",
+            "kr": "학술 논문 주제에 대해 생각하고 있어요.",
+            "jp": "学術論文のテーマについて考えているんです。",
+            "zh": "我在考虑学术论文的题目。",
+            "ru": "Я думаю над темой для научной статьи."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Это замечательно. Какие у тебя есть идеи?",
+            "en": "That's wonderful. What ideas do you have?",
+            "es": "Eso es estupendo. ¿Qué ideas tienes?",
+            "fr": "C'est formidable. Quelles idées as-tu ?",
+            "pt": "Isso é ótimo. Que ideias você tem?",
+            "kr": "훌륭하네요. 어떤 아이디어가 있는데요?",
+            "jp": "それは素晴らしいね。どんなアイデアがあるんだい？",
+            "zh": "这很好。你有什么想法？",
+            "ru": "Это замечательно. Какие у тебя есть идеи?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне интересна тема современных технологий в образовании.",
+            "en": "I'm interested in the topic of modern technology in education.",
+            "es": "Me interesa el tema de las tecnologías modernas en la educación.",
+            "fr": "Le sujet des technologies modernes dans l'éducation m'intéresse.",
+            "pt": "Eu me interesso pelo tema das tecnologias modernas na educação.",
+            "kr": "교육 분야의 현대 기술이라는 주제가 흥미로워요.",
+            "jp": "教育における現代技術というテーマに興味があります。",
+            "zh": "我对教育中的现代技术这个话题很感兴趣。",
+            "ru": "Мне интересна тема современных технологий в образовании."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отличный выбор. Я могу порекомендовать тебе пару книг.",
+            "en": "Great choice. I can recommend a couple of books for you.",
+            "es": "Excelente elección. Puedo recomendarte un par de libros.",
+            "fr": "Excellent choix. Je peux te recommander deux ou trois livres.",
+            "pt": "Ótima escolha. Posso te recomendar alguns livros.",
+            "kr": "좋은 선택이에요. 책 두 권 추천해 줄게요.",
+            "jp": "いい選択だね。君に何冊か本を勧められるよ。",
+            "zh": "很好的选择。我可以给你推荐几本书。",
+            "ru": "Отличный выбор. Я могу порекомендовать тебе пару книг."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, вы просили меня зайти на консультацию.",
+            "en": "Olga, you asked me to come in for a consultation.",
+            "es": "Olga, me pidió que viniera a la consulta.",
+            "fr": "Olga, vous m'aviez demandé de passer pour la consultation.",
+            "pt": "Olga, a senhora pediu para eu passar na consulta.",
+            "kr": "올가, 상담하러 오라고 하셨잖아요.",
+            "jp": "オリガ、相談に来るように言われて来ました。",
+            "zh": "奥尔加，您让我来咨询的。",
+            "ru": "Ольга, вы просили меня зайти на консультацию."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Елена. Я хотела обсудить твою контрольную работу.",
+            "en": "Yes, Elena. I wanted to discuss your test.",
+            "es": "Sí, Elena. Quería hablar de tu examen escrito.",
+            "fr": "Oui, Elena. Je voulais discuter de ton devoir surveillé.",
+            "pt": "Sim, Elena. Eu queria conversar sobre a sua prova.",
+            "kr": "그래, 옐레나. 네 쪽지 시험에 대해 이야기하고 싶었어.",
+            "jp": "そうね、エレーナ。あなたの定期試験の答案について話したかったの。",
+            "zh": "是的，叶莲娜。我想谈谈你的测验。",
+            "ru": "Да, Елена. Я хотела обсудить твою контрольную работу."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я очень переживаю, что написала её плохо.",
+            "en": "I'm really worried that I did poorly on it.",
+            "es": "Estoy muy preocupada porque creo que lo hice mal.",
+            "fr": "Je suis très inquiète, je pense l'avoir mal écrit.",
+            "pt": "Estou muito preocupada, acho que escrevi mal.",
+            "kr": "시험을 너무 못 봐서 정말 걱정돼요.",
+            "jp": "あまり良く書けなかったんじゃないかととても心配なんです。",
+            "zh": "我很担心自己写得不好。",
+            "ru": "Я очень переживаю, что написала её плохо."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Не стоит так волноваться. Работа неплохая, но есть ошибки.",
+            "en": "Don't worry so much. The test isn't bad, but there are some mistakes.",
+            "es": "No debes preocuparte tanto. El trabajo no está mal, pero hay errores.",
+            "fr": "Ne t'inquiète pas autant. Le travail n'est pas mauvais, mais il y a des erreurs.",
+            "pt": "Não precisa se preocupar tanto. A prova não está ruim, mas tem erros.",
+            "kr": "그렇게 걱정하지 마. 성적이 나쁘진 않아, 하지만 실수가 좀 있어.",
+            "jp": "そんなに心配しないで。答案は悪くないわ。ただ、いくつか間違いがあるの。",
+            "zh": "别那么担心。写得还不错，但有一些错误。",
+            "ru": "Не стоит так волноваться. Работа неплохая, но есть ошибки."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Скажите, что мне нужно исправить?",
+            "en": "Tell me, what do I need to fix?",
+            "es": "Dígame, ¿qué tengo que corregir?",
+            "fr": "Dites-moi, qu'est-ce que je dois corriger ?",
+            "pt": "Me diga, o que eu preciso corrigir?",
+            "kr": "무엇을 고쳐야 하는지 말씀해 주시겠어요?",
+            "jp": "何を直せばいいか教えていただけますか？",
+            "zh": "您说，我需要改什么？",
+            "ru": "Скажите, что мне нужно исправить?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Давай разберём каждую ошибку по порядку.",
+            "en": "Let's go through each mistake one by one.",
+            "es": "Vamos a repasar cada error por orden.",
+            "fr": "Reprenons chaque erreur une par une.",
+            "pt": "Vamos analisar cada erro em ordem.",
+            "kr": "실수 하나씩 차례대로 같이 살펴보자.",
+            "jp": "一つずつ順番に間違いを見ていきましょう。",
+            "zh": "我们按顺序把每个错误都过一遍吧。",
+            "ru": "Давай разберём каждую ошибку по порядку."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий Алексеевич, у вас есть время?",
+            "en": "Dmitry Alexeyevich, do you have some time?",
+            "es": "Dmitri Alekséievich, ¿tiene tiempo?",
+            "fr": "Dmitri Alexeïevitch, vous avez du temps ?",
+            "pt": "Dmitri Alexeevich, o senhor tem tempo?",
+            "kr": "드미트리 알렉세예비치, 시간 괜찮으세요?",
+            "jp": "ドミートリー・アレクセーエヴィチ、お時間ありますか？",
+            "zh": "德米特里·阿列克谢耶维奇，您有时间吗？",
+            "ru": "Дмитрий Алексеевич, у вас есть время?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Мария. Заходи, я как раз собирался тебе звонить.",
+            "en": "Yes, Maria. Come in, I was just about to call you.",
+            "es": "Sí, María. Pasa, justo iba a llamarte.",
+            "fr": "Oui, Maria. Entre, j'allais justement t'appeler.",
+            "pt": "Sim, Maria. Entra, eu estava mesmo pensando em te ligar.",
+            "kr": "네, 마리야. 들어와요, 마침 전화하려던 참이었어요.",
+            "jp": "ああ、マリア。入って。ちょうど君に電話しようと思っていたところだよ。",
+            "zh": "有，玛丽亚。进来吧，我正想给你打电话呢。",
+            "ru": "Да, Мария. Заходи, я как раз собирался тебе звонить."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? А я хотела спросить про экзамен.",
+            "en": "Really? And I wanted to ask about the exam.",
+            "es": "¿De verdad? Y yo quería preguntarle sobre el examen.",
+            "fr": "Vraiment ? Et moi, je voulais vous poser une question sur l'examen.",
+            "pt": "Sério? E eu queria perguntar sobre a prova.",
+            "kr": "정말요? 저는 시험에 대해 여쭤보려고 했는데요.",
+            "jp": "本当ですか？ 実は試験のことで聞きたかったんです。",
+            "zh": "真的吗？我正想问关于考试的事。",
+            "ru": "Правда? А я хотела спросить про экзамен."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я как раз хотел сказать, что перенёс его на неделю.",
+            "en": "I actually wanted to tell you that I moved it back by a week.",
+            "es": "Justo quería decirte que lo he aplazado una semana.",
+            "fr": "Je voulais justement te dire que je l'ai reporté d'une semaine.",
+            "pt": "Eu estava querendo dizer que adiei a prova em uma semana.",
+            "kr": "마침 시험을 일주일 연기했다는 걸 알려주려고 했어요.",
+            "jp": "ちょうど伝えようと思っていたんだ。試験を一週間延期したんだよ。",
+            "zh": "我正想告诉你，我把考试推迟了一周。",
+            "ru": "Я как раз хотел сказать, что перенёс его на неделю."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично, значит, у меня будет больше времени на подготовку.",
+            "en": "Great, that means I'll have more time to prepare.",
+            "es": "Genial, entonces tendré más tiempo para prepararme.",
+            "fr": "Parfait, j'aurai donc plus de temps pour me préparer.",
+            "pt": "Ótimo, então vou ter mais tempo para me preparar.",
+            "kr": "잘됐네요, 그럼 준비할 시간이 더 생기겠네요.",
+            "jp": "それはよかった。準備する時間がもっと増えますね。",
+            "zh": "太好了，那我有更多时间准备了。",
+            "ru": "Отлично, значит, у меня будет больше времени на подготовку."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Именно. Пользуйся этим временем с умом.",
+            "en": "Exactly. Use that time wisely.",
+            "es": "Exacto. Aprovecha ese tiempo con sensatez.",
+            "fr": "Exactement. Utilise ce temps à bon escient.",
+            "pt": "Exatamente. Aproveite esse tempo com sabedoria.",
+            "kr": "바로 그거예요. 그 시간을 현명하게 활용하세요.",
+            "jp": "その通り。その時間をしっかり有効に使いなさい。",
+            "zh": "正是。好好利用这段时间。",
+            "ru": "Именно. Пользуйся этим временем с умом."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, здравствуйте. Можно задать пару вопросов?",
+            "en": "Ivan, hello. Can I ask you a couple of questions?",
+            "es": "Iván, hola. ¿Puedo hacerle un par de preguntas?",
+            "fr": "Ivan, bonjour. Je peux vous poser deux ou trois questions ?",
+            "pt": "Ivan, olá. Posso fazer algumas perguntas?",
+            "kr": "이반, 안녕하세요. 질문 몇 개 드려도 될까요?",
+            "jp": "イワン、こんにちは。いくつか質問してもいいですか？",
+            "zh": "伊万，您好。可以问几个问题吗？",
+            "ru": "Иван, здравствуйте. Можно задать пару вопросов?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, Сергей. Я слушаю тебя.",
+            "en": "Of course, Sergey. I'm listening.",
+            "es": "Claro, Serguéi. Te escucho.",
+            "fr": "Bien sûr, Sergueï. Je t'écoute.",
+            "pt": "Claro, Sergei. Estou te ouvindo.",
+            "kr": "물론이지, 세르게이. 듣고 있을게.",
+            "jp": "もちろん、セルゲイ。聞いているよ。",
+            "zh": "当然，谢尔盖。我听着呢。",
+            "ru": "Конечно, Сергей. Я слушаю тебя."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне непонятно, как оформлять графики в дипломе.",
+            "en": "I don't understand how to format the graphs in my thesis.",
+            "es": "No entiendo cómo hay que hacer los gráficos en la tesis.",
+            "fr": "Je ne comprends pas comment présenter les graphiques dans le mémoire de fin d'études.",
+            "pt": "Eu não entendi como formatar os gráficos na monografia.",
+            "kr": "졸업 논문에서 그래프를 어떻게 작성해야 할지 모르겠어요.",
+            "jp": "卒業論文でグラフをどうやって作成するのかわかりません。",
+            "zh": "我不明白毕业论文里的图表该怎么排版。",
+            "ru": "Мне непонятно, как оформлять графики в дипломе."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, что ты спросил. Это частая ошибка у студентов.",
+            "en": "Good thing you asked. That's a common mistake among students.",
+            "es": "Me alegra que lo hayas preguntado. Es un error muy común entre los estudiantes.",
+            "fr": "Tant mieux que tu aies demandé. C'est une erreur fréquente chez les étudiants.",
+            "pt": "Ainda bem que você perguntou. Isso é um erro comum entre os estudantes.",
+            "kr": "물어봐 줘서 다행이야. 학생들이 자주 하는 실수거든.",
+            "jp": "聞いてくれてよかった。それは学生によくある間違いだからね。",
+            "zh": "你问得好。这是学生常犯的错误。",
+            "ru": "Хорошо, что ты спросил. Это частая ошибка у студентов."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А где можно посмотреть пример оформления?",
+            "en": "And where can I see an example of the formatting?",
+            "es": "¿Y dónde puedo ver un ejemplo de cómo hacerlos?",
+            "fr": "Et où est-ce que je peux voir un exemple de présentation ?",
+            "pt": "E onde posso ver um exemplo de formatação?",
+            "kr": "그러면 작성 예시는 어디에서 볼 수 있나요?",
+            "jp": "作成例はどこで見られますか？",
+            "zh": "那在哪里可以看排版的示例？",
+            "ru": "А где можно посмотреть пример оформления?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Зайди на сайт кафедры, там есть методичка с примерами.",
+            "en": "Go to the department's website, there's a guide with examples there.",
+            "es": "Entra en la web del departamento, allí hay una guía con ejemplos.",
+            "fr": "Va sur le site du département, il y a un guide méthodologique avec des exemples.",
+            "pt": "Acessa o site do departamento, lá tem o manual com exemplos.",
+            "kr": "학과 홈페이지에 가 봐, 예시가 있는 지침서가 있을 거야.",
+            "jp": "学科のウェブサイトに行きなさい。そこに例が載った手引きがあるよ。",
+            "zh": "上系里的网站看看，那里有带示例的方法指南。",
+            "ru": "Зайди на сайт кафедры, там есть методичка с примерами."
+          }
+        }
+      ]
+    }
+  ]
+}

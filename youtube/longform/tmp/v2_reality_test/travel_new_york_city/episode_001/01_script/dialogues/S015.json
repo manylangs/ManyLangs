@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S015",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "mode": "dialogue",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "b_gender": "male",
+  "lines": [
+    {
+      "line_id": "L001",
+      "sequence": 1,
+      "speaker": "A",
+      "text": "Excuse me, is this the right way to the Manhattan Hotel?"
+    },
+    {
+      "line_id": "L002",
+      "sequence": 2,
+      "speaker": "B",
+      "text": "Yes, it's just two blocks ahead. You're very close."
+    },
+    {
+      "line_id": "L003",
+      "sequence": 3,
+      "speaker": "A",
+      "text": "Great, thank you so much!"
+    },
+    {
+      "line_id": "L004",
+      "sequence": 4,
+      "speaker": "B",
+      "text": "You're welcome. Have a nice stay."
+    }
+  ],
+  "scene_state": {
+    "location_ref": "LOC_MANHATTAN_HOTEL_001",
+    "carry_in": [
+      "Jieun has exited the subway station and is now on the streets of Manhattan",
+      "She is seeing the city skyline for the first time",
+      "She feels a sense of awe and excitement"
+    ],
+    "carry_out": [
+      "Jieun has arrived at her hotel in Manhattan",
+      "She is standing at the entrance, looking at the building",
+      "She is ready to check in"
+    ],
+    "emotion": "ready and slightly relieved to have found the hotel"
+  },
+  "validation": {
+    "expected_line_count": 4,
+    "actual_line_count": 4
+  }
+}

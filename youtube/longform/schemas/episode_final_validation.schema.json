@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manylangs.studio/schemas/longform/episode_final_validation.schema.json",
+  "title": "ManyLangs Longform Episode Final Validation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "episode_id",
+    "overall_pass",
+    "severity",
+    "scene_count_pass",
+    "story_arc_pass",
+    "continuity_pass",
+    "protagonist_pass",
+    "reality_pass",
+    "cefr_pass",
+    "repetition_pass",
+    "production_readiness_pass",
+    "scene_checks",
+    "issues"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "common.schema.json#/$defs/document_metadata"
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*_ep[0-9]{3}$"
+    },
+    "overall_pass": {
+      "type": "boolean"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "warning",
+        "fail"
+      ]
+    },
+    "scene_count_pass": {
+      "type": "boolean"
+    },
+    "story_arc_pass": {
+      "type": "boolean"
+    },
+    "continuity_pass": {
+      "type": "boolean"
+    },
+    "protagonist_pass": {
+      "type": "boolean"
+    },
+    "reality_pass": {
+      "type": "boolean"
+    },
+    "cefr_pass": {
+      "type": "boolean"
+    },
+    "repetition_pass": {
+      "type": "boolean"
+    },
+    "production_readiness_pass": {
+      "type": "boolean"
+    },
+    "scene_checks": {
+      "type": "array",
+      "minItems": 20,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "scene_id",
+          "pass",
+          "transition_pass",
+          "dialogue_pass",
+          "notes"
+        ],
+        "properties": {
+          "scene_id": {
+            "type": "string",
+            "pattern": "^S[0-9]{3}$"
+          },
+          "pass": {
+            "type": "boolean"
+          },
+          "transition_pass": {
+            "type": "boolean"
+          },
+          "dialogue_pass": {
+            "type": "boolean"
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "severity",
+          "category",
+          "scene_refs",
+          "evidence",
+          "reason"
+        ],
+        "properties": {
+          "severity": {
+            "type": "string",
+            "enum": [
+              "warning",
+              "fail"
+            ]
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "scene_count",
+              "story_arc",
+              "continuity",
+              "protagonist",
+              "reality",
+              "cefr",
+              "repetition",
+              "transition",
+              "production_readiness"
+            ]
+          },
+          "scene_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^S[0-9]{3}$"
+            }
+          },
+          "evidence": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S018",
+  "shot_id": "SHOT_002",
+  "sequence": 2,
+  "duration_seconds": 6.0,
+  "location_ref": "LOC_MANHATTAN_HOTEL_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun picking up her crossbody bag and putting it over her shoulder, then grabbing her room key.",
+  "framing": {
+    "shot_size": "medium_close",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "PROP_CROSSBODY_BAG_001"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "static",
+    "stability": "smooth"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun walks to the bed, picks up her crossbody bag, and puts it over her shoulder. She then steps to the desk and picks up her room key card.",
+    "start_state": [
+      "Jieun is facing the room after turning from the window.",
+      "Her crossbody bag is on the bed.",
+      "Her room key is on the desk."
+    ],
+    "end_state": [
+      "Jieun has her crossbody bag over her shoulder.",
+      "Jieun is holding her room key card in her hand."
+    ]
+  },
+  "emotion": {
+    "primary_actor": "focused and ready",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "over Jieun's shoulder",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_ROOM_KEY_001",
+      "state": "in Jieun's hand",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "state": "in her crossbody bag or pocket",
+      "visible": false
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L002"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is facing the room, ready to prepare for her walk.",
+      "Her crossbody bag is on the bed.",
+      "Her room key is on the desk."
+    ],
+    "carry_out": [
+      "Jieun has her crossbody bag over her shoulder.",
+      "Jieun is holding her room key card in her hand."
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

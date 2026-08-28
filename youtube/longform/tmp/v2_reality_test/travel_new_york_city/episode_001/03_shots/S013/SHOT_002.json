@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S013",
+  "shot_id": "SHOT_002",
+  "sequence": 2,
+  "duration_seconds": 5.0,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun looking out the window at the city lights becoming visible, expressing wonder.",
+  "framing": {
+    "shot_size": "medium",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "city lights through the window"
+    ]
+  },
+  "camera": {
+    "angle": "three_quarter",
+    "movement": "static",
+    "stability": "smooth"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun turns her head and looks out the window, seeing the city lights becoming visible, her expression becoming hopeful and admiring.",
+    "start_state": [
+      "The subway train is moving smoothly",
+      "Jieun is standing inside the train, relaxed",
+      "She is looking forward"
+    ],
+    "end_state": [
+      "The subway train continues moving",
+      "Jieun is looking out the window at the city lights",
+      "Her expression is admiring and hopeful"
+    ]
+  },
+  "emotion": {
+    "primary_actor": "hopeful",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on Jieun's back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "state": "held in Jieun's hand",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "state": "stored inside crossbody bag",
+      "visible": false
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "placed near Jieun in the train",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L002"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "The subway train has resumed moving",
+      "Jieun feels relieved",
+      "She is now looking out the window"
+    ],
+    "carry_out": [
+      "Jieun is looking out the window at the city lights",
+      "She is admiring the view",
+      "She is now turning her attention to the station signs"
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

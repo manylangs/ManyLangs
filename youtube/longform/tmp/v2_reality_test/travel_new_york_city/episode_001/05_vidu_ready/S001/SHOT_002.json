@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S001",
+  "shot_id": "SHOT_002",
+  "sequence": 2,
+  "source_refs": {
+    "production_scene": "02_visual/production_scenes/S001.json",
+    "shot": "03_shots/S001/SHOT_002.json",
+    "visual_continuity": "04_visual_continuity/S001/SHOT_002.json"
+  },
+  "generation": {
+    "provider": "vidu",
+    "duration_seconds": 7.0,
+    "aspect_ratio": "16:9",
+    "resolution": "1080p",
+    "mode": "reference_guided"
+  },
+  "actors": [
+    {
+      "actor_ref": "CHAR_JIEUN_001",
+      "identity_type": "persistent",
+      "identity_lock": true,
+      "appearance": [
+        "Oval face with soft features",
+        "Natural eyebrows",
+        "Dark brown eyes",
+        "Light natural makeup",
+        "Warm friendly expression",
+        "Average height, slim build"
+      ],
+      "hair": [
+        "Shoulder-length dark brown hair",
+        "Straight with slight natural waves",
+        "Tucked behind ears"
+      ],
+      "clothing": [
+        "White casual t-shirt",
+        "Light blue denim jacket",
+        "Dark blue skinny jeans",
+        "White sneakers",
+        "Small silver earrings",
+        "Simple wristwatch"
+      ],
+      "carried_items": [
+        "Medium-sized travel backpack",
+        "Small crossbody bag",
+        "Smartphone"
+      ],
+      "body_state": [
+        "Seated on the airplane",
+        "Holding smartphone in hand",
+        "Looking at smartphone screen"
+      ],
+      "emotion": "slightly nervous but relieved",
+      "reference_asset_ids": [
+        "ASSET_CHAR_JIEUN_PRIMARY_000001"
+      ]
+    }
+  ],
+  "location": {
+    "location_ref": "LOC_JFK_AIRPORT_001",
+    "identity_lock": true,
+    "current_zone": "airplane cabin at gate, JFK International Airport",
+    "persistent_features": [
+      "Large terminal with high ceilings",
+      "Digital flight information displays",
+      "Signage for Arrivals, Immigration, and Baggage Claim",
+      "Moving walkways and escalators",
+      "Large windows with natural light"
+    ],
+    "orientation_state": [
+      "Jieun facing the airplane window",
+      "Airplane window showing the airport terminal outside",
+      "Terminal visible through the window in front of Jieun",
+      "Smartphone held in front of Jieun's face"
+    ],
+    "reference_asset_ids": []
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "held by Jieun",
+      "position": "in Jieun's hands or on her lap",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "worn across Jieun's body",
+      "position": "across Jieun's body",
+      "visible": true,
+      "continuity_lock": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "owner_ref": "CHAR_JIEUN_001",
+      "state": "held in Jieun's hand",
+      "position": "in Jieun's right hand, in front of her",
+      "visible": true,
+      "continuity_lock": true
+    }
+  ],
+  "prompt": {
+    "subject": "A young Korean woman with an oval face, soft features, natural eyebrows, dark brown eyes, and light natural makeup, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch. She has shoulder-length dark brown hair, straight with slight natural waves, tucked behind her ears. She is seated on an airplane, holding her smartphone in her right hand, with a medium-sized travel backpack in her hands or on her lap and a small crossbody bag worn across her body. Her expression is slightly nervous but relieved.",
+    "environment": "Inside the airplane cabin at the gate of JFK International Airport, with bright natural daylight coming through the airplane windows. The airport terminal is visible through the window in front of her, featuring large windows, high ceilings, digital flight information displays, and signage for Arrivals, Immigration, and Baggage Claim. Other passengers are preparing to disembark, and cabin crew are near the exit.",
+    "action": "Jieun gathers her travel backpack and crossbody bag, then checks her smartphone to confirm her belongings are with her.",
+    "camera": "Medium shot, eye-level angle, static camera with smooth stability.",
+    "continuity": "Jieun remains seated on the airplane, facing the window, with her backpack and crossbody bag with her. She is holding her smartphone in front of her face, confirming her belongings. Her identity, clothing, and prop states remain unchanged from the previous shot.",
+    "final_prompt": "A young Korean woman with an oval face, soft features, natural eyebrows, dark brown eyes, and light natural makeup, wearing a white casual t-shirt, light blue denim jacket, dark blue skinny jeans, white sneakers, small silver earrings, and a simple wristwatch, with shoulder-length dark brown hair tucked behind her ears, is seated on an airplane at JFK International Airport. She gathers her medium-sized travel backpack and small crossbody bag, then checks her smartphone held in her right hand, her expression slightly nervous but relieved. The airplane cabin is bright with natural daylight from the windows, and the airport terminal is visible outside. Medium shot, eye-level angle, static camera with smooth stability. Her identity, clothing, and prop states remain consistent with the previous shot."
+  },
+  "negative_constraints": [
+    "Do not change character identity.",
+    "Do not change canonical location identity.",
+    "Do not introduce new characters.",
+    "Do not introduce new locations.",
+    "Do not alter canonical prop state.",
+    "Do not change story events.",
+    "Do not show Jieun moving past the arrival terminal area.",
+    "Do not show any dialogue or interaction with other characters.",
+    "Do not show Jieun recovering a missing bag."
+  ],
+  "continuity": {
+    "carry_in": [
+      "Jieun is seated on the airplane, looking out the window at the terminal"
+    ],
+    "carry_out": [
+      "Jieun is holding her smartphone, having confirmed her belongings are with her",
+      "She is seated on the airplane with her backpack and crossbody bag"
+    ],
+    "must_match_previous_shot": true,
+    "previous_scene_id": "S001",
+    "previous_shot_id": "SHOT_001",
+    "next_scene_id": "S001",
+    "next_shot_id": "SHOT_003"
+  }
+}

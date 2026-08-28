@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Resolver um problema",
+  "sets": {
+    "001": [
+      "Lucas, o sistema deu um erro e perdi o relatório que estava editando.",
+      "Calma, Fernanda. Você chegou a salvar alguma versão antes do problema?",
+      "Acho que não, e isso está me deixando bem preocupada.",
+      "Deixa eu verificar o histórico de versões para você. Pode ser que ainda dê para recuperar.",
+      "Nossa, que alívio! Se você conseguir, eu te pago um café.",
+      "Fica tranquila, é para isso que a gente trabalha em equipe."
+    ],
+    "002": [
+      "O cliente reclamou que o produto chegou com uma peça faltando.",
+      "Entendi. Você já verificou se foi um erro no envio ou na montagem?",
+      "Ainda não, mas acho que o problema pode ter sido na hora de embalar.",
+      "Vou falar com o pessoal do estoque agora para investigar isso.",
+      "Boa ideia. E eu mesma ligo para o cliente para explicar a situação.",
+      "Perfeito. Assim a gente resolve isso antes do fim do dia."
+    ],
+    "003": [
+      "Rafael, não estou conseguindo acessar a pasta compartilhada do projeto.",
+      "Estranho, porque eu acabei de acessar daqui. Você está usando o link novo?",
+      "Acho que não. Deve ser o link antigo que ficou salvo no meu navegador.",
+      "Te envio o link atualizado agora. Tenta de novo daqui a pouco.",
+      "Funcionou! Muito obrigada, você me salvou.",
+      "Imagina, qualquer coisa é só chamar."
+    ],
+    "004": [
+      "O fornecedor atrasou a entrega e agora estamos sem material para a reunião.",
+      "Isso é um problema sério. Você já entrou em contato com eles?",
+      "Sim, e eles disseram que o pedido sai hoje à noite.",
+      "Então a gente precisa de um plano B para a apresentação de amanhã.",
+      "Concordo. Posso preparar uma versão resumida com o que já temos.",
+      "Ótimo, vamos fazer isso. Assim a gente não fica na mão."
+    ],
+    "005": [
+      "Beatriz, o cliente pediu uma alteração de última hora no contrato.",
+      "Sério? Isso pode atrasar todo o nosso cronograma.",
+      "Pois é, mas acho que a mudança é pequena e dá para ajustar.",
+      "Então me manda os detalhes por e-mail que eu analiso agora.",
+      "Já enviei. Dá uma olhada quando puder, por favor.",
+      "Perfeito, vou priorizar isso. Obrigado por avisar."
+    ],
+    "006": [
+      "O elevador do prédio quebrou e estamos no décimo andar.",
+      "Que situação chata! Você já avisou a portaria?",
+      "Ainda não, liguei para você primeiro para saber o que fazer.",
+      "Vou ligar para eles agora e depois subo pelas escadas para te encontrar.",
+      "Você é um anjo, Gabriel. Eu espero aqui na sala.",
+      "Pode deixar, a gente resolve isso juntos."
+    ],
+    "007": [
+      "Camila, o resultado da pesquisa não bate com o que esperávamos.",
+      "Hmm, isso é preocupante. Você revisou a metodologia que a gente usou?",
+      "Revisei, mas talvez a amostra tenha sido pequena demais.",
+      "Faz sentido. A gente pode ampliar a coleta de dados para confirmar.",
+      "Boa ideia. Vou preparar um novo questionário ainda hoje.",
+      "Perfeito. Se precisar de ajuda, é só me chamar."
+    ],
+    "008": [
+      "O cliente não respondeu ao nosso e-mail e a proposta está prestes a vencer.",
+      "Isso é complicado. Você tentou ligar para ele?",
+      "Ainda não, mas acho que seria melhor falar por telefone mesmo.",
+      "Concordo. Liga agora e, se precisar, eu participo da conversa.",
+      "Obrigada, Rafael. Vou tentar daqui a pouco.",
+      "Boa sorte! Qualquer coisa, me avisa."
+    ],
+    "009": [
+      "O arquivo que você me enviou não abre no meu computador.",
+      "Que estranho. Você baixou a versão mais recente do programa?",
+      "Acho que sim, mas pode ser que esteja desatualizada.",
+      "Vou te enviar o arquivo em outro formato para testar.",
+      "Perfeito, obrigada. Se funcionar, a gente segue com ele.",
+      "Combinado. Me diz se der certo."
+    ],
+    "010": [
+      "A reunião foi remarcada para amanhã cedo e eu não tenho o material pronto.",
+      "Calma, a gente consegue resolver. O que falta exatamente?",
+      "Só preciso revisar os números e montar os slides finais.",
+      "Então vamos dividir as tarefas: eu reviso os dados e você monta os slides.",
+      "Fechado! Com isso, a gente termina tudo até o fim da tarde.",
+      "Exato. Juntos, a gente dá conta."
+    ]
+  },
+  "level": "c1",
+  "chapter_id": "CONV_PT_ISSUE_SOLVING",
+  "id": "048",
+  "target_lang": "pt"
+}

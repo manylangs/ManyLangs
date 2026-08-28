@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S011",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "source_dialogue": {
+    "source_scene_id": "S011",
+    "source_line_ids": [
+      "L001",
+      "L002",
+      "L003"
+    ]
+  },
+  "key_expressions": [
+    {
+      "key_expression_id": "KE001",
+      "source_line_ids": [
+        "L001"
+      ],
+      "expression": "I need to make sure I'm going the right way.",
+      "meaning": "지금 내가 가는 방향이 맞는지 확인해야 한다는 뜻으로, 스스로에게 하는 말이다.",
+      "usage": "길을 찾거나 이동 중일 때, 자신이 올바른 방향으로 가고 있는지 확인이 필요함을 나타낼 때 쓴다. 혼잣말로도, 다른 사람에게도 쓸 수 있는 실용적인 표현이다.",
+      "context": "지하철을 타고 맨해튼으로 가는 중, 지하철 노선도를 보고 자신이 제대로 가고 있는지 확인하려는 상황이다.",
+      "communicative_function": "confirming information",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "I need to check that I'm going the right way.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE002",
+      "source_line_ids": [
+        "L002"
+      ],
+      "expression": "This station name... and on my phone, it says the same.",
+      "meaning": "지하철 역 이름과 휴대폰 지도에 표시된 역 이름이 같다는 것을 확인했다는 뜻이다.",
+      "usage": "실제로 보고 있는 정보(역 이름, 표지판 등)와 휴대폰이나 다른 기기의 정보를 비교하여 일치함을 확인할 때 쓸 수 있다. '... and ... it says the same' 패턴으로 활용할 수 있다.",
+      "context": "지하철 노선도에서 현재 역 이름을 확인하고, 휴대폰 지도에 표시된 역 이름과 비교하여 같다는 것을 스스로 확인하는 상황이다.",
+      "communicative_function": "confirming information",
+      "difficulty": "A2",
+      "priority": "useful",
+      "variation": "This station name matches the one on my phone.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE003",
+      "source_line_ids": [
+        "L003"
+      ],
+      "expression": "I'm on the right train toward Manhattan.",
+      "meaning": "맨해튼으로 가는 올바른 기차(지하철)를 타고 있다는 뜻이다. 방향이 맞다는 확신을 나타낸다.",
+      "usage": "대중교통을 이용할 때, 목적지 방향으로 가는 올바른 교통수단을 탔다는 것을 확인하거나 다른 사람에게 말할 때 쓴다. 'on the right train/bus' 패턴으로 활용할 수 있다.",
+      "context": "지하철 노선도와 휴대폰 지도를 확인한 후, 자신이 맨해튼으로 향하는 올바른 지하철을 타고 있다는 사실을 스스로 확인하고 안심하는 상황이다.",
+      "communicative_function": "confirming information",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "This is the right train to Manhattan.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    }
+  ],
+  "validation": {
+    "expression_count": 3,
+    "all_expressions_exist_in_dialogue": true,
+    "source_lines_valid": true,
+    "cefr_appropriate": true
+  }
+}

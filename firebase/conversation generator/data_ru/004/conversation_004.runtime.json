@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "a1",
+    "id": "004"
+  },
+  "title": {
+    "target": "Профессии",
+    "en": "Professions",
+    "es": "Profesiones",
+    "fr": "Les métiers",
+    "pt": "Profissões",
+    "kr": "직업들",
+    "jp": "職業",
+    "zh": "职业",
+    "ru": "Профессии"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Привет, Иван! Кем ты работаешь?",
+            "en": "Hi, Ivan! What do you do for work?",
+            "es": "¡Hola, Iván! ¿En qué trabajas?",
+            "fr": "Salut Ivan ! Tu fais quoi comme métier ?",
+            "pt": "Olá, Ivan! O que você faz?",
+            "kr": "안녕, 이반! 무슨 일을 해?",
+            "jp": "こんにちは、イワンさん！お仕事は何をされていますか？",
+            "zh": "你好，伊万！你做什么工作？",
+            "ru": "Привет, Иван! Кем ты работаешь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Привет, Анна! Я работаю врачом в больнице.",
+            "en": "Hi, Anna! I work as a doctor at the hospital.",
+            "es": "¡Hola, Ana! Trabajo de médico en el hospital.",
+            "fr": "Salut Anna ! Je suis médecin à l'hôpital.",
+            "pt": "Olá, Anna! Eu trabalho como médico no hospital.",
+            "kr": "안녕, 안나! 나는 병원에서 의사로 일해.",
+            "jp": "こんにちは、アンナさん！私は病院で医者をしています。",
+            "zh": "你好，安娜！我在医院当医生。",
+            "ru": "Привет, Анна! Я работаю врачом в больнице."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это очень важная профессия. Тебе нравится?",
+            "en": "That's a very important profession. Do you like it?",
+            "es": "Es una profesión muy importante. ¿Te gusta?",
+            "fr": "C'est une profession très importante. Tu aimes ça ?",
+            "pt": "Essa é uma profissão muito importante. Você gosta?",
+            "kr": "정말 중요한 직업이야. 좋아해?",
+            "jp": "それはとても大切な職業ですね。好きですか？",
+            "zh": "这是一个非常重要的职业。你喜欢吗？",
+            "ru": "Это очень важная профессия. Тебе нравится?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, очень. Я помогаю людям каждый день.",
+            "en": "Yes, very much. I help people every day.",
+            "es": "Sí, mucho. Ayudo a la gente todos los días.",
+            "fr": "Oui, beaucoup. J'aide les gens tous les jours.",
+            "pt": "Sim, gosto muito. Eu ajudo as pessoas todos os dias.",
+            "kr": "응, 아주 좋아. 나는 매일 사람들을 도와줘.",
+            "jp": "はい、とても好きです。毎日人々を助けています。",
+            "zh": "是的，非常喜欢。我每天都在帮助别人。",
+            "ru": "Да, очень. Я помогаю людям каждый день."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это замечательно. Ты молодец!",
+            "en": "That's wonderful. Good for you!",
+            "es": "Es maravilloso. ¡Eres un gran profesional!",
+            "fr": "C'est formidable. Tu assures !",
+            "pt": "Isso é maravilhoso. Você é ótimo!",
+            "kr": "정말 대단해. 너는 훌륭해!",
+            "jp": "それは素晴らしいですね。えらいですね！",
+            "zh": "这太棒了。你真了不起！",
+            "ru": "Это замечательно. Ты молодец!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо. А ты кем работаешь?",
+            "en": "Thanks. And what do you do for work?",
+            "es": "Gracias. ¿Y tú, en qué trabajas?",
+            "fr": "Merci. Et toi, tu fais quoi comme métier ?",
+            "pt": "Obrigado. E você, o que faz?",
+            "kr": "고마워. 그런데 너는 무슨 일을 해?",
+            "jp": "ありがとうございます。あなたは何の仕事をしていますか？",
+            "zh": "谢谢。那你做什么工作呢？",
+            "ru": "Спасибо. А ты кем работаешь?"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, я слышала, ты учитель.",
+            "en": "Dmitry, I heard you're a teacher.",
+            "es": "Dmitri, he oído que eres profesor.",
+            "fr": "Dmitri, j'ai entendu dire que tu es professeur.",
+            "pt": "Dmitri, eu ouvi dizer que você é professor.",
+            "kr": "드미트리, 너 선생님이라고 들었어.",
+            "jp": "ドミトリーさん、あなたは先生だと聞きました。",
+            "zh": "德米特里，我听说你是老师。",
+            "ru": "Дмитрий, я слышала, ты учитель."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я работаю в школе. Учу детей математике.",
+            "en": "Yes, I work at a school. I teach kids math.",
+            "es": "Sí, trabajo en la escuela. Enseño matemáticas a los niños.",
+            "fr": "Oui, je travaille à l'école. J'apprends les maths aux enfants.",
+            "pt": "Sim, eu trabalho na escola. Ensino matemática para as crianças.",
+            "kr": "응, 나는 학교에서 일해. 아이들에게 수학을 가르쳐.",
+            "jp": "はい、学校で働いています。子供たちに数学を教えています。",
+            "zh": "是的，我在学校工作。教孩子们数学。",
+            "ru": "Да, я работаю в школе. Учу детей математике."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это, наверное, трудно?",
+            "en": "That must be hard, right?",
+            "es": "¿Será difícil?",
+            "fr": "C'est difficile, peut-être ?",
+            "pt": "Isso deve ser difícil, não é?",
+            "kr": "아마 힘들겠다?",
+            "jp": "それは、たぶん大変ですか？",
+            "zh": "这大概很难吧？",
+            "ru": "Это, наверное, трудно?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Иногда трудно, но мне очень нравится.",
+            "en": "Sometimes it's hard, but I really like it.",
+            "es": "A veces es difícil, pero me gusta mucho.",
+            "fr": "Parfois c'est difficile, mais j'aime beaucoup ça.",
+            "pt": "Às vezes é difícil, mas eu gosto muito.",
+            "kr": "가끔 힘들지만, 나는 정말 좋아해.",
+            "jp": "時々大変ですが、とても好きです。",
+            "zh": "有时候很难，但我非常喜欢。",
+            "ru": "Иногда трудно, но мне очень нравится."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дети тебя любят?",
+            "en": "Do the kids like you?",
+            "es": "¿Te quieren los niños?",
+            "fr": "Les enfants t'aiment bien ?",
+            "pt": "As crianças gostam de você?",
+            "kr": "아이들이 너를 좋아해?",
+            "jp": "子供たちはあなたのことが好きですか？",
+            "zh": "孩子们喜欢你吗？",
+            "ru": "Дети тебя любят?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, мы с ними хорошие друзья.",
+            "en": "Yes, we're good friends.",
+            "es": "Sí, somos buenos amigos con ellos.",
+            "fr": "Oui, nous sommes de bons amis.",
+            "pt": "Sim, nós somos bons amigos.",
+            "kr": "응, 우리는 좋은 친구야.",
+            "jp": "はい、私たちは良い友達です。",
+            "zh": "喜欢，我们是很要好的朋友。",
+            "ru": "Да, мы с ними хорошие друзья."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, а где ты работаешь?",
+            "en": "Sergey, so where do you work?",
+            "es": "Serguéi, ¿y dónde trabajas?",
+            "fr": "Sergueï, et toi, tu travailles où ?",
+            "pt": "Sergei, e onde você trabalha?",
+            "kr": "세르게이, 그런데 너는 어디서 일해?",
+            "jp": "セルゲイさん、あなたはどこで働いていますか？",
+            "zh": "谢尔盖，那你在哪里工作？",
+            "ru": "Сергей, а где ты работаешь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я работаю в кафе. Я повар.",
+            "en": "I work at a cafe. I'm a cook.",
+            "es": "Trabajo en un café. Soy cocinero.",
+            "fr": "Je travaille dans un café. Je suis cuisinier.",
+            "pt": "Eu trabalho em um café. Sou cozinheiro.",
+            "kr": "나는 카페에서 일해. 나는 요리사야.",
+            "jp": "カフェで働いています。私は料理人です。",
+            "zh": "我在咖啡馆工作。我是厨师。",
+            "ru": "Я работаю в кафе. Я повар."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ого! А что ты умеешь готовить?",
+            "en": "Wow! And what do you know how to cook?",
+            "es": "¡Vaya! ¿Y qué sabes cocinar?",
+            "fr": "Oh là là ! Et qu'est-ce que tu sais cuisiner ?",
+            "pt": "Nossa! E o que você sabe cozinhar?",
+            "kr": "와! 그런데 뭘 잘 요리해?",
+            "jp": "わあ！何を作ることができますか？",
+            "zh": "哇！那你都会做什么菜？",
+            "ru": "Ого! А что ты умеешь готовить?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я хорошо готовлю борщ и блины.",
+            "en": "I make borscht and pancakes well.",
+            "es": "Cocino bien el borscht y los blinis.",
+            "fr": "Je cuisine bien le bortsch et les crêpes.",
+            "pt": "Eu cozinho bem borscht e panquecas.",
+            "kr": "나는 보르시와 블린을 잘 만들어.",
+            "jp": "ボルシチとブリヌイを上手に作ります。",
+            "zh": "我很会做红菜汤和薄饼。",
+            "ru": "Я хорошо готовлю борщ и блины."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это мои любимые блюда!",
+            "en": "Those are my favorite dishes!",
+            "es": "¡Son mis platos favoritos!",
+            "fr": "Ce sont mes plats préférés !",
+            "pt": "Esses são meus pratos favoritos!",
+            "kr": "그건 내가 제일 좋아하는 음식이야!",
+            "jp": "それは私の大好きな料理です！",
+            "zh": "那都是我最喜欢的菜！",
+            "ru": "Это мои любимые блюда!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Приходи ко мне в гости, я приготовлю.",
+            "en": "Come over to my place, I'll make them for you.",
+            "es": "Ven a visitarme, te los prepararé.",
+            "fr": "Viens chez moi, je te préparerai ça.",
+            "pt": "Vem me visitar, eu vou cozinhar para você.",
+            "kr": "우리 집에 놀러 와, 내가 만들어 줄게.",
+            "jp": "私の家に遊びに来てください、作りますよ。",
+            "zh": "来我家做客吧，我给你做。",
+            "ru": "Приходи ко мне в гости, я приготовлю."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Ольга, ты уже нашла работу?",
+            "en": "Olga, did you find a job yet?",
+            "es": "Olga, ¿ya has encontrado trabajo?",
+            "fr": "Olga, tu as trouvé du travail ?",
+            "pt": "Olga, você já encontrou trabalho?",
+            "kr": "올가, 벌써 일자리를 찾았어?",
+            "jp": "オリガさん、もう仕事は見つかりましたか？",
+            "zh": "奥尔加，你已经找到工作了吗？",
+            "ru": "Ольга, ты уже нашла работу?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я теперь работаю в библиотеке.",
+            "en": "Yes, I work at the library now.",
+            "es": "Sí, ahora trabajo en la biblioteca.",
+            "fr": "Oui, maintenant je travaille à la bibliothèque.",
+            "pt": "Sim, agora eu trabalho na biblioteca.",
+            "kr": "응, 이제 나는 도서관에서 일해.",
+            "jp": "はい、今は図書館で働いています。",
+            "zh": "是的，我现在在图书馆工作。",
+            "ru": "Да, я теперь работаю в библиотеке."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Правда? А кем ты там работаешь?",
+            "en": "Really? And what do you do there?",
+            "es": "¿De verdad? ¿Y en qué trabajas allí?",
+            "fr": "Vraiment ? Et tu y fais quoi comme métier ?",
+            "pt": "Sério? E o que você faz lá?",
+            "kr": "정말? 그런데 거기서 무슨 일을 해?",
+            "jp": "本当ですか？そこで何をしているのですか？",
+            "zh": "真的吗？那你在那里做什么工作？",
+            "ru": "Правда? А кем ты там работаешь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я библиотекарь. Я очень люблю книги.",
+            "en": "I'm a librarian. I really love books.",
+            "es": "Soy bibliotecaria. Me encantan los libros.",
+            "fr": "Je suis bibliothécaire. J'aime beaucoup les livres.",
+            "pt": "Sou bibliotecária. Eu amo muito livros.",
+            "kr": "나는 사서야. 나는 책을 정말 좋아해.",
+            "jp": "司書です。私は本がとても好きです。",
+            "zh": "我是图书管理员。我非常喜欢书。",
+            "ru": "Я библиотекарь. Я очень люблю книги."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это спокойная работа?",
+            "en": "Is it a calm job?",
+            "es": "¿Es un trabajo tranquilo?",
+            "fr": "C'est un travail calme ?",
+            "pt": "É um trabalho tranquilo?",
+            "kr": "조용한 일이야?",
+            "jp": "それは落ち着いた仕事ですか？",
+            "zh": "这是一份清闲的工作吗？",
+            "ru": "Это спокойная работа?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, и очень интересная.",
+            "en": "Yes, and very interesting.",
+            "es": "Sí, y muy interesante.",
+            "fr": "Oui, et très intéressant.",
+            "pt": "Sim, e muito interessante.",
+            "kr": "응, 그리고 아주 재미있어.",
+            "jp": "はい、そしてとても面白いです。",
+            "zh": "是的，而且非常有意思。",
+            "ru": "Да, и очень интересная."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Алексей, кем ты хочешь стать?",
+            "en": "Alexey, what do you want to become?",
+            "es": "Alekséi, ¿qué quieres ser?",
+            "fr": "Alexeï, tu veux devenir quoi ?",
+            "pt": "Alexei, o que você quer ser?",
+            "kr": "알렉세이, 너는 뭐가 되고 싶어?",
+            "jp": "アレクセイさん、あなたは何になりたいですか？",
+            "zh": "阿列克谢，你想成为什么？",
+            "ru": "Алексей, кем ты хочешь стать?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я хочу быть инженером.",
+            "en": "I want to be an engineer.",
+            "es": "Quiero ser ingeniero.",
+            "fr": "Je veux être ingénieur.",
+            "pt": "Eu quero ser engenheiro.",
+            "kr": "나는 엔지니어가 되고 싶어.",
+            "jp": "私はエンジニアになりたいです。",
+            "zh": "我想当工程师。",
+            "ru": "Я хочу быть инженером."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это хорошая профессия. Почему?",
+            "en": "That's a good profession. Why?",
+            "es": "Es una buena profesión. ¿Por qué?",
+            "fr": "C'est un bon métier. Pourquoi ?",
+            "pt": "É uma boa profissão. Por quê?",
+            "kr": "좋은 직업이야. 왜?",
+            "jp": "それは良い職業ですね。どうしてですか？",
+            "zh": "这是个好职业。为什么？",
+            "ru": "Это хорошая профессия. Почему?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я люблю строить и придумывать новое.",
+            "en": "I like building and coming up with new things.",
+            "es": "Me gusta construir e inventar cosas nuevas.",
+            "fr": "J'aime construire et inventer des choses nouvelles.",
+            "pt": "Eu gosto de construir e inventar coisas novas.",
+            "kr": "나는 무언가를 만들고 새것을 고안하는 것을 좋아해.",
+            "jp": "物を作ることと、新しいことを考えるのが好きだからです。",
+            "zh": "我喜欢建造和发明新东西。",
+            "ru": "Я люблю строить и придумывать новое."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "У тебя получится!",
+            "en": "You'll make it happen!",
+            "es": "¡Lo conseguirás!",
+            "fr": "Tu vas y arriver !",
+            "pt": "Você vai conseguir!",
+            "kr": "너는 잘될 거야!",
+            "jp": "きっとできますよ！",
+            "zh": "你一定能做到的！",
+            "ru": "У тебя получится!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо, я буду стараться.",
+            "en": "Thanks, I'll do my best.",
+            "es": "Gracias, me esforzaré.",
+            "fr": "Merci, je vais faire de mon mieux.",
+            "pt": "Obrigado, eu vou me esforçar.",
+            "kr": "고마워, 나는 열심히 노력할게.",
+            "jp": "ありがとうございます、頑張ります。",
+            "zh": "谢谢，我会努力的。",
+            "ru": "Спасибо, я буду стараться."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, а твоя мама работает?",
+            "en": "Maria, does your mom work?",
+            "es": "María, ¿y tu madre trabaja?",
+            "fr": "Maria, et ta mère, elle travaille ?",
+            "pt": "Maria, e a sua mãe trabalha?",
+            "kr": "마리야, 너희 엄마는 일하시니?",
+            "jp": "マリアさん、あなたのお母さんは働いていますか？",
+            "zh": "玛丽亚，那你妈妈工作吗？",
+            "ru": "Мария, а твоя мама работает?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, она работает в школе.",
+            "en": "Yes, she works at a school.",
+            "es": "Sí, trabaja en la escuela.",
+            "fr": "Oui, elle travaille à l'école.",
+            "pt": "Sim, ela trabalha na escola.",
+            "kr": "응, 엄마는 학교에서 일하셔.",
+            "jp": "はい、学校で働いています。",
+            "zh": "是的，她在学校工作。",
+            "ru": "Да, она работает в школе."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А кем она работает?",
+            "en": "And what does she do there?",
+            "es": "¿Y en qué trabaja?",
+            "fr": "Et elle fait quoi comme métier ?",
+            "pt": "E o que ela faz?",
+            "kr": "그런데 무슨 일을 하셔?",
+            "jp": "何をしているのですか？",
+            "zh": "那她做什么工作呢？",
+            "ru": "А кем она работает?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Она медсестра. Помогает детям.",
+            "en": "She's a nurse. She helps kids.",
+            "es": "Es enfermera. Ayuda a los niños.",
+            "fr": "Elle est infirmière. Elle aide les enfants.",
+            "pt": "Ela é enfermeira. Ajuda as crianças.",
+            "kr": "엄마는 간호사야. 아이들을 도와주셔.",
+            "jp": "看護師です。子供たちを助けています。",
+            "zh": "她是护士。帮助孩子们。",
+            "ru": "Она медсестра. Помогает детям."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это очень нужная работа.",
+            "en": "That's a very needed job.",
+            "es": "Es un trabajo muy necesario.",
+            "fr": "C'est un travail très utile.",
+            "pt": "É um trabalho muito necessário.",
+            "kr": "정말 필요한 일이야.",
+            "jp": "それはとても必要な仕事ですね。",
+            "zh": "这是一份非常需要的工作。",
+            "ru": "Это очень нужная работа."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, мама любит свою работу.",
+            "en": "Yes, mom loves her job.",
+            "es": "Sí, mamá ama su trabajo.",
+            "fr": "Oui, maman aime son travail.",
+            "pt": "Sim, a mamãe ama o trabalho dela.",
+            "kr": "응, 엄마는 자신의 일을 사랑하셔.",
+            "jp": "はい、母は自分の仕事が大好きです。",
+            "zh": "是的，妈妈很热爱她的工作。",
+            "ru": "Да, мама любит свою работу."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты знаешь, кто такой программист?",
+            "en": "Ivan, do you know what a programmer is?",
+            "es": "Iván, ¿sabes qué es un programador?",
+            "fr": "Ivan, tu sais ce que c'est qu'un programmeur ?",
+            "pt": "Ivan, você sabe o que é um programador?",
+            "kr": "이반, 프로그래머가 뭔지 알아?",
+            "jp": "イワンさん、プログラマーが何か知っていますか？",
+            "zh": "伊万，你知道程序员是做什么的吗？",
+            "ru": "Иван, ты знаешь, кто такой программист?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно! Это человек, который работает с компьютерами.",
+            "en": "Of course! It's a person who works with computers.",
+            "es": "¡Claro! Es una persona que trabaja con ordenadores.",
+            "fr": "Bien sûr ! C'est une personne qui travaille avec les ordinateurs.",
+            "pt": "Claro! É uma pessoa que trabalha com computadores.",
+            "kr": "당연하지! 컴퓨터로 일하는 사람이야.",
+            "jp": "もちろんです！コンピューターを扱う人のことです。",
+            "zh": "当然知道！就是跟电脑打交道的人。",
+            "ru": "Конечно! Это человек, который работает с компьютерами."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А ты умеешь программировать?",
+            "en": "And do you know how to program?",
+            "es": "¿Y tú sabes programar?",
+            "fr": "Et toi, tu sais programmer ?",
+            "pt": "E você sabe programar?",
+            "kr": "그런데 너는 프로그래밍을 할 줄 알아?",
+            "jp": "あなたはプログラミングができますか？",
+            "zh": "那你会编程吗？",
+            "ru": "А ты умеешь программировать?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Немного умею. Это очень интересно.",
+            "en": "I know a little. It's very interesting.",
+            "es": "Sé un poco. Es muy interesante.",
+            "fr": "Un petit peu. C'est très intéressant.",
+            "pt": "Sei um pouco. É muito interessante.",
+            "kr": "조금 할 줄 알아. 정말 재미있어.",
+            "jp": "少しできます。とても面白いです。",
+            "zh": "会一点。这非常有意思。",
+            "ru": "Немного умею. Это очень интересно."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Научи меня, пожалуйста!",
+            "en": "Teach me, please!",
+            "es": "¡Enséñame, por favor!",
+            "fr": "Apprends-moi, s'il te plaît !",
+            "pt": "Me ensina, por favor!",
+            "kr": "나에게 가르쳐 줘, 부탁이야!",
+            "jp": "私に教えてください！",
+            "zh": "请教教我吧！",
+            "ru": "Научи меня, пожалуйста!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо, я покажу тебе.",
+            "en": "Okay, I'll show you.",
+            "es": "Bien, te lo mostraré.",
+            "fr": "D'accord, je te montrerai.",
+            "pt": "Tudo bem, eu vou te mostrar.",
+            "kr": "좋아, 내가 보여줄게.",
+            "jp": "いいですよ、見せてあげます。",
+            "zh": "好啊，我来教你。",
+            "ru": "Хорошо, я покажу тебе."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Елена, кем работает твой брат?",
+            "en": "Elena, what does your brother do for work?",
+            "es": "Elena, ¿en qué trabaja tu hermano?",
+            "fr": "Hélène, ton frère fait quoi comme métier ?",
+            "pt": "Elena, o que o seu irmão faz?",
+            "kr": "옐레나, 너희 오빠는 무슨 일을 해?",
+            "jp": "エレナさん、あなたのお兄さんは何の仕事をしていますか？",
+            "zh": "叶莲娜，你哥哥做什么工作？",
+            "ru": "Елена, кем работает твой брат?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мой брат работает водителем автобуса.",
+            "en": "My brother works as a bus driver.",
+            "es": "Mi hermano trabaja de conductor de autobús.",
+            "fr": "Mon frère est conducteur de bus.",
+            "pt": "Meu irmão trabalha como motorista de ônibus.",
+            "kr": "우리 오빠는 버스 기사로 일해.",
+            "jp": "兄はバスの運転手です。",
+            "zh": "我哥哥是公交车司机。",
+            "ru": "Мой брат работает водителем автобуса."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Он любит свою работу?",
+            "en": "Does he like his job?",
+            "es": "¿Le gusta su trabajo?",
+            "fr": "Il aime son travail ?",
+            "pt": "Ele gosta do trabalho dele?",
+            "kr": "오빠는 자신의 일을 좋아해?",
+            "jp": "自分の仕事が好きですか？",
+            "zh": "他喜欢他的工作吗？",
+            "ru": "Он любит свою работу?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, ему нравится водить машину.",
+            "en": "Yes, he likes driving.",
+            "es": "Sí, le gusta conducir.",
+            "fr": "Oui, il aime conduire.",
+            "pt": "Sim, ele gosta de dirigir.",
+            "kr": "응, 운전하는 것을 좋아하셔.",
+            "jp": "はい、車を運転するのが好きです。",
+            "zh": "喜欢，他喜欢开车。",
+            "ru": "Да, ему нравится водить машину."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это ответственная работа.",
+            "en": "That's a responsible job.",
+            "es": "Es un trabajo de responsabilidad.",
+            "fr": "C'est un travail qui demande de la responsabilité.",
+            "pt": "É um trabalho de responsabilidade.",
+            "kr": "책임감이 필요한 일이야.",
+            "jp": "それは責任のある仕事ですね。",
+            "zh": "这是一份很有责任的工作。",
+            "ru": "Это ответственная работа."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласна, он очень аккуратный водитель.",
+            "en": "I agree, he's a very careful driver.",
+            "es": "De acuerdo, es un conductor muy cuidadoso.",
+            "fr": "Je suis d'accord, c'est un conducteur très prudent.",
+            "pt": "Concordo, ele é um motorista muito cuidadoso.",
+            "kr": "맞아, 오빠는 정말 조심스러운 운전기사야.",
+            "jp": "そうですね、彼はとても慎重な運転手です。",
+            "zh": "是啊，他是一位非常细心的司机。",
+            "ru": "Согласна, он очень аккуратный водитель."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, а ты умеешь рисовать?",
+            "en": "Dmitry, do you know how to draw?",
+            "es": "Dmitri, ¿y tú sabes dibujar?",
+            "fr": "Dmitri, et toi, tu sais dessiner ?",
+            "pt": "Dmitri, e você sabe desenhar?",
+            "kr": "드미트리, 그런데 너는 그림을 그릴 줄 알아?",
+            "jp": "ドミトリーさん、あなたは絵を描けますか？",
+            "zh": "德米特里，那你会画画吗？",
+            "ru": "Дмитрий, а ты умеешь рисовать?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я художник. Я рисую картины.",
+            "en": "Yes, I'm an artist. I paint pictures.",
+            "es": "Sí, soy artista. Pinto cuadros.",
+            "fr": "Oui, je suis artiste peintre. Je peins des tableaux.",
+            "pt": "Sim, sou artista. Eu pinto quadros.",
+            "kr": "응, 나는 화가야. 나는 그림을 그려.",
+            "jp": "はい、私は画家です。絵を描いています。",
+            "zh": "会，我是画家。我画油画。",
+            "ru": "Да, я художник. Я рисую картины."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Как красиво! А где ты работаешь?",
+            "en": "How beautiful! And where do you work?",
+            "es": "¡Qué bonito! ¿Y dónde trabajas?",
+            "fr": "Comme c'est beau ! Et tu travailles où ?",
+            "pt": "Que bonito! E onde você trabalha?",
+            "kr": "정말 아름답다! 그런데 어디서 일해?",
+            "jp": "なんて素敵なんでしょう！どこで働いているのですか？",
+            "zh": "真漂亮！那你在哪里工作？",
+            "ru": "Как красиво! А где ты работаешь?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я работаю дома в своей студии.",
+            "en": "I work at home in my studio.",
+            "es": "Trabajo en casa, en mi estudio.",
+            "fr": "Je travaille à la maison, dans mon atelier.",
+            "pt": "Eu trabalho em casa, no meu estúdio.",
+            "kr": "나는 집에 있는 작업실에서 일해.",
+            "jp": "家の自分のアトリエで働いています。",
+            "zh": "我在家里自己的画室里工作。",
+            "ru": "Я работаю дома в своей студии."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Можно посмотреть твои работы?",
+            "en": "Can I see your work?",
+            "es": "¿Puedo ver tus obras?",
+            "fr": "On peut voir tes œuvres ?",
+            "pt": "Posso ver os seus trabalhos?",
+            "kr": "네 작품을 볼 수 있을까?",
+            "jp": "あなたの作品を見てもいいですか？",
+            "zh": "可以看看你的作品吗？",
+            "ru": "Можно посмотреть твои работы?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Конечно, приходи в гости!",
+            "en": "Of course, come over!",
+            "es": "¡Claro, ven a visitarme!",
+            "fr": "Bien sûr, viens me rendre visite !",
+            "pt": "Claro, vem me visitar!",
+            "kr": "물론이지, 놀러 와!",
+            "jp": "もちろん、遊びに来てください！",
+            "zh": "当然可以，来我家做客吧！",
+            "ru": "Конечно, приходи в гости!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, кем работает твоя сестра?",
+            "en": "Sergey, what does your sister do for work?",
+            "es": "Serguéi, ¿en qué trabaja tu hermana?",
+            "fr": "Sergueï, ta sœur fait quoi comme métier ?",
+            "pt": "Sergei, o que a sua irmã faz?",
+            "kr": "세르게이, 너희 누나는 무슨 일을 해?",
+            "jp": "セルゲイさん、あなたのお姉さんは何の仕事をしていますか？",
+            "zh": "谢尔盖，你妹妹做什么工作？",
+            "ru": "Сергей, кем работает твоя сестра?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Она работает в магазине. Она продавец.",
+            "en": "She works at a store. She's a salesperson.",
+            "es": "Trabaja en una tienda. Es dependienta.",
+            "fr": "Elle travaille dans un magasin. Elle est vendeuse.",
+            "pt": "Ela trabalha em uma loja. Ela é vendedora.",
+            "kr": "누나는 가게에서 일해. 누나는 판매원이야.",
+            "jp": "お店で働いています。店員です。",
+            "zh": "她在商店工作。她是售货员。",
+            "ru": "Она работает в магазине. Она продавец."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А что она продаёт?",
+            "en": "And what does she sell?",
+            "es": "¿Y qué vende?",
+            "fr": "Et qu'est-ce qu'elle vend ?",
+            "pt": "E o que ela vende?",
+            "kr": "그런데 뭘 팔아?",
+            "jp": "何を売っているのですか？",
+            "zh": "那她卖什么呢？",
+            "ru": "А что она продаёт?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Она продаёт цветы. Это очень красиво.",
+            "en": "She sells flowers. It's very beautiful.",
+            "es": "Vende flores. Es muy bonito.",
+            "fr": "Elle vend des fleurs. C'est très joli.",
+            "pt": "Ela vende flores. É muito bonito.",
+            "kr": "꽃을 팔아. 정말 아름다워.",
+            "jp": "花を売っています。とてもきれいです。",
+            "zh": "她卖花。非常漂亮。",
+            "ru": "Она продаёт цветы. Это очень красиво."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я люблю цветы!",
+            "en": "I love flowers!",
+            "es": "¡Me encantan las flores!",
+            "fr": "J'aime les fleurs !",
+            "pt": "Eu amo flores!",
+            "kr": "나는 꽃을 좋아해!",
+            "jp": "私は花が大好きです！",
+            "zh": "我喜欢花！",
+            "ru": "Я люблю цветы!"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Приходи к ней, она сделает тебе букет.",
+            "en": "Come see her, she'll make you a bouquet.",
+            "es": "Ve a verla, te hará un ramo.",
+            "fr": "Viens la voir, elle te fera un bouquet.",
+            "pt": "Vai falar com ela, ela vai fazer um buquê para você.",
+            "kr": "누나한테 가 봐, 너를 위해 꽃다발을 만들어 줄 거야.",
+            "jp": "彼女のところに来てください、花束を作ってくれますよ。",
+            "zh": "去找她吧，她会给你做一束花。",
+            "ru": "Приходи к ней, она сделает тебе букет."
+          }
+        }
+      ]
+    }
+  ]
+}

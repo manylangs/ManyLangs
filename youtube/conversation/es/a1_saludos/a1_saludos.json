@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "001"
+  },
+  "title": {
+    "target": "Saludos",
+    "en": "Greetings",
+    "es": "Saludos",
+    "fr": "Salutations",
+    "pt": "Saudações",
+    "kr": "인사",
+    "zh": "问候",
+    "jp": "あいさつ",
+    "ru": "Приветствия"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "¡Hola, buenos días! ¿Qué tal estás?",
+            "en": "Hello, good morning! How are you?",
+            "es": "¡Hola, buenos días! ¿Qué tal estás?",
+            "fr": "Bonjour, bonne journée ! Comment vas-tu ?",
+            "pt": "Olá, bom dia! Como estás?",
+            "kr": "안녕하세요, 좋은 아침이에요! 잘 지내요?",
+            "zh": "你好，早上好！你怎么样？",
+            "jp": "こんにちは、おはようございます！元気ですか？",
+            "ru": "Привет, доброе утро! Как дела?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "¡Muy buenos días! Estoy muy bien, gracias. ¿Y tú?",
+            "en": "Good morning! I'm doing very well, thanks. And you?",
+            "es": "¡Muy buenos días! Estoy muy bien, gracias. ¿Y tú?",
+            "fr": "Très bonne journée ! Je vais très bien, merci. Et toi ?",
+            "pt": "Muito bom dia! Estou muito bem, obrigada. E tu?",
+            "kr": "아주 좋은 아침이에요! 저는 아주 잘 지내요, 고마워요. 당신은요?",
+            "zh": "早上好！我很好，谢谢。你呢？",
+            "jp": "おはようございます！とても元気です、ありがとう。あなたは？",
+            "ru": "Доброе утро! У меня всё отлично, спасибо. А у тебя?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Pues muy contenta, hoy hace un día estupendo.",
+            "en": "Well, I'm very happy, today is a wonderful day.",
+            "es": "Pues muy contenta, hoy hace un día estupendo.",
+            "fr": "Eh bien, je suis très contente, aujourd'hui il fait un temps magnifique.",
+            "pt": "Pois estou muito contente, hoje está um dia esplêndido.",
+            "kr": "글쎄요, 아주 기분이 좋아요, 오늘 날씨가 정말 좋아서요.",
+            "zh": "我很开心，今天天气真好。",
+            "jp": "私はとても嬉しいです、今日は素晴らしい天気ですね。",
+            "ru": "Ну, я очень рада, сегодня чудесный день."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "¡Sí, la verdad es que sí! ¿Tienes planes para hoy?",
+            "en": "Yes, it really is! Do you have any plans for today?",
+            "es": "¡Sí, la verdad es que sí! ¿Tienes planes para hoy?",
+            "fr": "Oui, c'est vrai ! Tu as des projets pour aujourd'hui ?",
+            "pt": "Sim, realmente está! Tens planos para hoje?",
+            "kr": "네, 정말 그렇네요! 오늘 계획 있어요?",
+            "zh": "是啊，确实！你今天有什么安排吗？",
+            "jp": "はい、本当にそうですね！今日は何か予定がありますか？",
+            "ru": "Да, правда! У тебя есть планы на сегодня?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Sí, voy a quedar con una amiga para comer.",
+            "en": "Yes, I'm going to meet a friend for lunch.",
+            "es": "Sí, voy a quedar con una amiga para comer.",
+            "fr": "Oui, je vais retrouver une amie pour déjeuner.",
+            "pt": "Sim, vou encontrar-me com uma amiga para almoçar.",
+            "kr": "네, 친구 한 명 만나서 점심 먹기로 했어요.",
+            "zh": "有，我要和一个朋友去吃午饭。",
+            "jp": "はい、友達と食事に行く約束をしています。",
+            "ru": "Да, я собираюсь встретиться с подругой, чтобы пообедать."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "¡Qué bien! Pues que lo paséis muy bien. ¡Hasta luego!",
+            "en": "That's great! Well, have a great time. See you later!",
+            "es": "¡Qué bien! Pues que lo paséis muy bien. ¡Hasta luego!",
+            "fr": "Super ! Amusez-vous bien. À plus tard !",
+            "pt": "Que bom! Então divirtam-se muito. Até logo!",
+            "kr": "정말 좋네요! 그럼 재미있게 보내세요. 나중에 봐요!",
+            "zh": "太好了！祝你们玩得开心。回头见！",
+            "jp": "いいですね！楽しんでください。ではまた！",
+            "ru": "Как здорово! Ну, хорошо вам провести время. До встречи!"
+          }
+        }
+      ]
+    }
+  ]
+}

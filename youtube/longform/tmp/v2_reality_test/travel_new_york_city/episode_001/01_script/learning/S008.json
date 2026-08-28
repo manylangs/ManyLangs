@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S008",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "source_dialogue": {
+    "source_scene_id": "S008",
+    "source_line_ids": [
+      "L001",
+      "L002",
+      "L003"
+    ]
+  },
+  "key_expressions": [
+    {
+      "key_expression_id": "KE001",
+      "source_line_ids": [
+        "L001"
+      ],
+      "expression": "I'm on the AirTrain.",
+      "meaning": "지금 에어트레인을 타고 있다는 뜻으로, 이동 수단을 이용 중임을 나타내는 표현이다.",
+      "usage": "대중교통이나 특정 교통수단을 이용하고 있을 때 현재 상황을 설명할 때 쓴다. 일상적인 대화에서 자신의 위치나 상태를 알릴 때 자연스럽게 사용할 수 있다.",
+      "context": "지은이 공항에서 맨해튼으로 가기 위해 에어트레인에 탑승한 직후, 자신이 에어트레인을 타고 있다는 사실을 스스로 확인하는 상황이다.",
+      "communicative_function": "expressing current state",
+      "difficulty": "A1",
+      "priority": "core",
+      "variation": "I'm on the train.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE002",
+      "source_line_ids": [
+        "L001"
+      ],
+      "expression": "I found a seat by the window.",
+      "meaning": "창가 쪽 자리를 찾았다는 뜻으로, 특정 위치의 자리를 확보했음을 나타내는 표현이다.",
+      "usage": "대중교통이나 극장 등에서 자리를 찾았을 때 그 사실을 말할 때 쓴다. 'by the window' 대신 'by the door', 'in the front' 등으로 바꿔 쓸 수 있다.",
+      "context": "지은이가 에어트레인에 탑승한 후 창가 자리를 찾아 앉으며, 이동 중에 도시 풍경을 볼 준비를 하는 상황이다.",
+      "communicative_function": "describing location",
+      "difficulty": "A2",
+      "priority": "useful",
+      "variation": "I got a seat by the window.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE003",
+      "source_line_ids": [
+        "L002"
+      ],
+      "expression": "Look at that.",
+      "meaning": "저것 좀 봐. 라는 뜻으로, 눈에 띄는 것을 보며 감탄하거나 주의를 끌 때 쓰는 표현이다.",
+      "usage": "흥미롭거나 놀라운 것을 발견했을 때 상대방의 주의를 끌거나 혼잣말로 감탄할 때 쓴다. 'Look at that!'처럼 감탄조로 자주 사용된다.",
+      "context": "지은이가 에어트레인 창밖으로 도시가 점점 가까워지는 모습을 보고 감탄하며 혼잣말로 하는 말이다.",
+      "communicative_function": "expressing surprise",
+      "difficulty": "A1",
+      "priority": "core",
+      "variation": "Wow, look at that!",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE004",
+      "source_line_ids": [
+        "L002"
+      ],
+      "expression": "The city is getting closer.",
+      "meaning": "도시가 점점 가까워지고 있다는 뜻으로, 점진적인 변화를 나타내는 표현이다.",
+      "usage": "목적지에 점점 가까워지거나 어떤 대상이 가까이 다가오는 상황을 묘사할 때 쓴다. 'get + 비교급' 형태로 점진적인 변화를 자연스럽게 표현할 수 있다.",
+      "context": "지은이가 에어트레인을 타고 이동하면서 창밖으로 맨해튼 도시 풍경이 점점 가까워지는 것을 느끼며 말하는 상황이다.",
+      "communicative_function": "describing change",
+      "difficulty": "A2",
+      "priority": "useful",
+      "variation": "We're getting closer to the city.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE005",
+      "source_line_ids": [
+        "L003"
+      ],
+      "expression": "I'm really excited.",
+      "meaning": "정말 신난다, 정말 기대된다는 뜻으로, 강한 기대감이나 설렘을 표현하는 말이다.",
+      "usage": "무언가를 기대하거나 설레는 마음을 표현할 때 쓴다. 'really' 대신 'so', 'very' 등을 써서 강도를 조절할 수 있다. 일상생활에서 아주 자주 쓰이는 표현이다.",
+      "context": "지은이가 맨해튼에 거의 도착했다는 생각에 여행에 대한 기대감과 설렘을 느끼며 혼잣말로 표현하는 상황이다.",
+      "communicative_function": "expressing feelings",
+      "difficulty": "A1",
+      "priority": "core",
+      "variation": "I'm so excited.",
+      "common_mistake": "I'm very excite. (excited를 excite로 쓰는 오류)",
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE006",
+      "source_line_ids": [
+        "L003"
+      ],
+      "expression": "Manhattan is almost here.",
+      "meaning": "맨해튼이 거의 다 왔다, 곧 도착한다는 뜻으로, 목적지에 거의 도착했음을 나타내는 표현이다.",
+      "usage": "여행이나 이동 중에 목적지에 거의 도착했을 때 기대감을 담아 말하는 표현이다. 'almost'를 사용해 '거의 ~하다'는 의미를 자연스럽게 전달한다.",
+      "context": "지은이가 에어트레인을 타고 이동하는 동안 창밖으로 맨해튼이 가까워지는 것을 보며 곧 도착할 것이라는 기대감을 표현하는 상황이다.",
+      "communicative_function": "expressing anticipation",
+      "difficulty": "A2",
+      "priority": "useful",
+      "variation": "We're almost in Manhattan.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    }
+  ],
+  "validation": {
+    "expression_count": 6,
+    "all_expressions_exist_in_dialogue": true,
+    "source_lines_valid": true,
+    "cefr_appropriate": true
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S009",
+  "shot_id": "SHOT_001",
+  "sequence": 1,
+  "duration_seconds": 8.0,
+  "location_ref": "LOC_AIRPORT_TRANSIT_001",
+  "character_refs": [
+    "CHAR_JIEUN_001",
+    "B"
+  ],
+  "visual_intent": "Show Jieun approaching the transit employee at the station entrance to ask for help.",
+  "framing": {
+    "shot_size": "medium_wide",
+    "subject_priority": [
+      "CHAR_JIEUN_001",
+      "B"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "static",
+    "stability": "locked"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun walks toward the transit employee near the station entrance, holding her suitcase handle and wearing her backpack.",
+    "start_state": [
+      "Jieun is arriving at the subway station area after the AirTrain ride.",
+      "She is holding her suitcase handle and wearing her backpack.",
+      "She looks around with a mix of excitement and uncertainty."
+    ],
+    "end_state": [
+      "Jieun is standing in front of the transit employee near the station entrance.",
+      "She is about to ask a question."
+    ]
+  },
+  "emotion": {
+    "primary_actor": "excited but slightly uncertain",
+    "supporting": {
+      "B": "helpful and patient"
+    }
+  },
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "state": "worn on Jieun's back",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "worn across Jieun's body",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "state": "held by Jieun's hand",
+      "visible": true
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L001"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun is on the AirTrain heading toward the subway connection.",
+      "She is watching the city appear through the windows.",
+      "She feels a sense of excitement about arriving in Manhattan."
+    ],
+    "carry_out": [
+      "Jieun is standing in front of the transit employee.",
+      "She has asked how to pay for the subway to Manhattan."
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

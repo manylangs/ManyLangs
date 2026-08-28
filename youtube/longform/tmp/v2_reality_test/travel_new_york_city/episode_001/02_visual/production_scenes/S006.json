@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S006",
+  "sequence": 6,
+  "location_ref": "LOC_JFK_AIRPORT_001",
+  "protagonist_ref": "CHAR_JIEUN_001",
+  "characters": [
+    {
+      "character_ref": "CHAR_JIEUN_001",
+      "local_character_id": null,
+      "role": "protagonist",
+      "gender": "female",
+      "visual_state": {
+        "appearance": [
+          "Oval face with soft features",
+          "Natural eyebrows",
+          "Dark brown eyes",
+          "Light natural makeup",
+          "Warm friendly expression",
+          "Shoulder-length dark brown hair, straight with slight natural waves, tucked behind ears"
+        ],
+        "clothing": [
+          "White casual t-shirt",
+          "Light blue denim jacket",
+          "Dark blue skinny jeans",
+          "White sneakers",
+          "Small silver earrings",
+          "Simple wristwatch"
+        ],
+        "carried_items": [
+          "Medium-sized travel backpack",
+          "Small crossbody bag",
+          "Smartphone",
+          "Passport",
+          "Checked suitcase"
+        ]
+      },
+      "emotion": "unsure and thoughtful",
+      "screen_action": "Stands in the ground transportation area, looking at the signs for taxis, ride-sharing, and public transit, comparing her options"
+    }
+  ],
+  "environment": {
+    "time_of_day": "day",
+    "weather": null,
+    "lighting": "bright indoor terminal lighting with natural light from large windows",
+    "background_activity": [
+      "Other passengers walking toward the taxi and ride-sharing pickup areas",
+      "Travelers checking signs and directions",
+      "Airport staff assisting passengers near the transportation options"
+    ]
+  },
+  "visual_goal": "Show Jieun standing in the ground transportation area, visibly comparing the different transportation options as she thinks through which one to take.",
+  "actions": [
+    {
+      "sequence": 1,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "walks into the ground transportation area and stops near the signs",
+      "object_ref": null
+    },
+    {
+      "sequence": 2,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "looks at the taxi sign and then at the ride-sharing sign",
+      "object_ref": null
+    },
+    {
+      "sequence": 3,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "glances toward the public transit sign and then down at her suitcase",
+      "object_ref": "PROP_LUGGAGE_001"
+    },
+    {
+      "sequence": 4,
+      "actor_ref": "CHAR_JIEUN_001",
+      "action": "looks thoughtful and slightly unsure as she considers her options",
+      "object_ref": null
+    }
+  ],
+  "props": [
+    {
+      "prop_id": "PROP_BACKPACK_001",
+      "description": "Medium-sized travel backpack",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "description": "Small crossbody bag",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "description": "Smartphone",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_PASSPORT_001",
+      "description": "Passport",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    },
+    {
+      "prop_id": "PROP_LUGGAGE_001",
+      "description": "Jieun's checked suitcase that she retrieved from the carousel",
+      "owner_ref": "CHAR_JIEUN_001",
+      "continuity_required": true
+    }
+  ],
+  "must_show": [
+    "Jieun reaches the ground transportation area",
+    "Jieun observes the different transportation options available, including taxis, ride-sharing, and public transit",
+    "Jieun considers the pros and cons of each option without making a final decision"
+  ],
+  "must_not_show": [
+    "Jieun making a final decision about which transportation option to take",
+    "Specific prices or operational details for any transportation option",
+    "Jieun leaving the ground transportation area"
+  ],
+  "visual_continuity": {
+    "carry_in": [
+      "Jieun has retrieved her luggage from the carousel",
+      "She is now following signs toward ground transportation",
+      "She is thinking about how to get to Manhattan"
+    ],
+    "carry_out": [
+      "Jieun is at the ground transportation area considering her options",
+      "She is comparing taxi, ride-sharing, and public transit",
+      "She is unsure which option is the most practical"
+    ],
+    "start_state": [
+      "Jieun is standing in the ground transportation area",
+      "She is holding her suitcase handle",
+      "She has a relieved but focused expression"
+    ],
+    "end_state": [
+      "Jieun is still standing in the ground transportation area",
+      "She is looking at the signs with a thoughtful, unsure expression",
+      "She has not yet made a decision"
+    ]
+  },
+  "production_constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_story_continuity": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false
+  }
+}

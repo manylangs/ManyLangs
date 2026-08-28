@@ -1,0 +1,26 @@
+ORDER: 016/065
+SCENE: S005
+SHOT: SHOT_003
+DURATION: 8.0 seconds
+ASPECT RATIO: 16:9
+RESOLUTION: 1080p
+
+REFERENCE IMAGE:
+- _references/jieun_primary.png
+
+PROMPT:
+Medium shot, eye-level, static camera. Inside the JFK baggage claim area, a young woman with shoulder-length dark brown hair, wearing a white t-shirt, light blue denim jacket, dark blue skinny jeans, and white sneakers, stands holding her suitcase, with a backpack on her back and crossbody bag across her body. In front of her, a professional airport employee in uniform with an identification badge points toward the ground transportation signs and gives directions. She listens attentively, then looks in the direction he points. The baggage carousel is behind her, and other passengers are in the background. Natural light from large windows illuminates the scene.
+
+NEGATIVE / DO-NOT-CHANGE NOTES:
+- Do not change character identity.
+- Do not change canonical location identity.
+- Do not introduce new characters.
+- Do not introduce new locations.
+- Do not alter canonical prop state.
+- Do not change story events.
+- Do not show Jieun leaving the baggage claim area.
+- Do not show Jieun's suitcase being lost or missing.
+- Do not show Jieun's passport or smartphone being dropped or lost.
+
+OUTPUT FILE:
+S005_SHOT_003.mp4

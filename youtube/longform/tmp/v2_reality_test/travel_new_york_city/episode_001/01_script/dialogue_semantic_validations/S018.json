@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S018",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun freshens up",
+      "pass": true,
+      "evidence": "Line L001: 'Okay, I feel much better now.' implies she has freshened up and is ready to go out."
+    },
+    {
+      "requirement": "Jieun decides to go for a walk",
+      "pass": true,
+      "evidence": "Line L001: 'I think I'll go for a short walk.' explicitly states her decision to go for a walk."
+    },
+    {
+      "requirement": "Jieun grabs her crossbody bag and heads out of the room",
+      "pass": true,
+      "evidence": "Line L002: 'Let me grab my crossbody bag and my room key.' and Line L003: 'Alright, I'm ready.' confirm she has the bag and is prepared to leave."
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the hotel",
+      "pass": true,
+      "evidence": "The dialogue ends with her saying 'Let's see what the neighborhood looks like.' which indicates she is about to leave but has not yet moved past the hotel."
+    },
+    {
+      "requirement": "Do not introduce any problems with leaving the hotel",
+      "pass": true,
+      "evidence": "The dialogue contains no mention of any obstacles or issues with leaving the hotel. She simply prepares and leaves."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

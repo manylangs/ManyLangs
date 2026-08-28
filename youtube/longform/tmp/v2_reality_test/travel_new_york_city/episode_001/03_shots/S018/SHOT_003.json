@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S018",
+  "shot_id": "SHOT_003",
+  "sequence": 3,
+  "duration_seconds": 6.0,
+  "location_ref": "LOC_MANHATTAN_HOTEL_001",
+  "character_refs": [
+    "CHAR_JIEUN_001"
+  ],
+  "visual_intent": "Show Jieun walking to the door, opening it, and stepping out into the hallway with a curious and excited expression.",
+  "framing": {
+    "shot_size": "medium_wide",
+    "subject_priority": [
+      "CHAR_JIEUN_001"
+    ]
+  },
+  "camera": {
+    "angle": "eye_level",
+    "movement": "follow",
+    "stability": "smooth"
+  },
+  "action": {
+    "primary_actor_ref": "CHAR_JIEUN_001",
+    "description": "Jieun walks to the hotel room door, opens it, and steps out into the hallway, looking ahead with anticipation.",
+    "start_state": [
+      "Jieun is holding her room key card and has her crossbody bag over her shoulder.",
+      "She is near the desk, ready to leave."
+    ],
+    "end_state": [
+      "Jieun is standing in the hallway outside her hotel room door.",
+      "The door is closing behind her."
+    ]
+  },
+  "emotion": {
+    "primary_actor": "curious and excited",
+    "supporting": {}
+  },
+  "props": [
+    {
+      "prop_id": "PROP_CROSSBODY_BAG_001",
+      "state": "over Jieun's shoulder",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_ROOM_KEY_001",
+      "state": "in Jieun's hand",
+      "visible": true
+    },
+    {
+      "prop_id": "PROP_SMARTPHONE_001",
+      "state": "in her crossbody bag or pocket",
+      "visible": false
+    }
+  ],
+  "dialogue_alignment": {
+    "line_ids": [
+      "L003"
+    ],
+    "speaker_focus": "A"
+  },
+  "continuity": {
+    "carry_in": [
+      "Jieun has her crossbody bag over her shoulder.",
+      "Jieun is holding her room key card in her hand."
+    ],
+    "carry_out": [
+      "Jieun has left her hotel room and is heading out for an evening walk.",
+      "She is feeling curious and excited to see the neighborhood.",
+      "She is planning to stay close to the hotel.",
+      "She is carrying her crossbody bag and room key.",
+      "Her backpack, passport, and checked suitcase remain in the hotel room."
+    ],
+    "must_match_previous_shot": true
+  },
+  "constraints": {
+    "preserve_character_identity": true,
+    "preserve_location_identity": true,
+    "preserve_prop_state": true,
+    "allow_new_characters": false,
+    "allow_new_locations": false,
+    "allow_story_changes": false
+  }
+}

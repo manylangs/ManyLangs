@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Salud y síntomas",
+  "sets": {
+    "001": [
+      "Carlos, me duele mucho la cabeza desde esta mañana.",
+      "¿En serio? ¿Has tomado algo para el dolor?",
+      "Todavía no, quería preguntarte qué me recomiendas.",
+      "Yo tomaría un paracetamol y descansaría un rato.",
+      "Vale, gracias. Iré a la farmacia a comprarlo.",
+      "Mejor que vayas pronto y no lo dejes pasar."
+    ],
+    "002": [
+      "Buenos días, vengo porque tengo fiebre desde anoche.",
+      "¿Cuánto tiempo llevas con esa fiebre exactamente?",
+      "Empezó ayer por la tarde, sobre las seis.",
+      "¿Y has tenido tos o algún otro síntoma?",
+      "Sí, también tengo un poco de tos seca.",
+      "Te voy a recetar algo para bajarte la fiebre."
+    ],
+    "003": [
+      "Marta, me duele muchísimo la garganta al tragar.",
+      "¡Qué mala pinta! ¿Te duele desde hace mucho?",
+      "Desde ayer, y hoy me he despertado peor.",
+      "Deberías beber mucha agua y hacer gárgaras con sal.",
+      "¿Crees que con eso se me pasará?",
+      "Si mañana sigues igual, tendrás que ir al médico."
+    ],
+    "004": [
+      "Me he torcido el tobillo jugando al fútbol.",
+      "¡Vaya! ¿Puedes apoyar el pie en el suelo?",
+      "Casi no puedo, me duele bastante al moverlo.",
+      "Deberías ponerle hielo ahora mismo para la hinchazón.",
+      "¿Y crees que necesito ir a urgencias?",
+      "Si no puedes apoyarlo, mejor que te lo miren."
+    ],
+    "005": [
+      "Últimamente me siento muy cansada y sin energía.",
+      "¿Estás durmiendo bien por las noches?",
+      "Duermo más o menos, pero me despierto muy cansada.",
+      "Puede que te falte hierro o alguna vitamina.",
+      "¿Me recomiendas hacerme un análisis de sangre?",
+      "Sí, sería bueno que el médico te lo pidiera."
+    ],
+    "006": [
+      "Perdone, ¿me podría decir dónde está la farmacia más cercana?",
+      "Sí, hay una a dos calles de aquí, junto al supermercado.",
+      "Es que necesito comprar algo para la alergia.",
+      "¿Tiene usted alergia al polen, si me permite?",
+      "Sí, sobre todo en esta época del año.",
+      "Le venderán algo sin receta, pero si no, vaya al médico."
+    ],
+    "007": [
+      "Diego, me duele la barriga después de comer.",
+      "¿Qué has comido hoy? A lo mejor algo te ha sentado mal.",
+      "He comido una ensalada, pero la salsa era muy fuerte.",
+      "A mí me pasa cuando tomo comidas muy picantes.",
+      "¿Qué sueles hacer tú para aliviarlo?",
+      "Tomo una infusión de manzanilla y espero un rato."
+    ],
+    "008": [
+      "He estado estornudando todo el día, no puedo parar.",
+      "¿Tienes alergia o crees que es un resfriado?",
+      "No lo sé, pero también me pican mucho los ojos.",
+      "Eso suena más a alergia que a un resfriado.",
+      "¿Debería comprar un antihistamínico?",
+      "Sí, pero pregunta antes en la farmacia por si acaso."
+    ],
+    "009": [
+      "Me he cortado el dedo con un cuchillo y no para de sangrar.",
+      "¡Ay, cuidado! ¿Es muy profundo el corte?",
+      "No mucho, pero sangra bastante.",
+      "Lávalo con agua y jabón y presiónalo con una gasa.",
+      "¿Debería ponerme una tirita después?",
+      "Sí, y si ves que sigue sangrando, ve a urgencias."
+    ],
+    "010": [
+      "Últimamente me duele la espalda al estar mucho tiempo sentada.",
+      "¿Trabajas muchas horas delante del ordenador?",
+      "Sí, paso casi todo el día sentada en la oficina.",
+      "Deberías levantarte y estirar cada hora.",
+      "¿Y me recomiendas algún ejercicio en concreto?",
+      "Estirar la zona lumbar y caminar un poco te vendrá bien."
+    ]
+  },
+  "level": "a2",
+  "chapter_id": "CONV_ES_HEALTH_SYMPTOMS",
+  "id": "019",
+  "target_lang": "es"
+}

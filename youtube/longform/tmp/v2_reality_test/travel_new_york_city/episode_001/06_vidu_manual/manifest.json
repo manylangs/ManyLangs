@@ -1,0 +1,853 @@
+{
+  "episode": "episode_001",
+  "shot_count": 65,
+  "total_duration_seconds": 439.0,
+  "total_duration_minutes": 7.32,
+  "shots": [
+    {
+      "order": 1,
+      "scene_id": "S001",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S001/SHOT_001.txt",
+      "output_file": "S001_SHOT_001.mp4"
+    },
+    {
+      "order": 2,
+      "scene_id": "S001",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 7.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S001/SHOT_002.txt",
+      "output_file": "S001_SHOT_002.mp4"
+    },
+    {
+      "order": 3,
+      "scene_id": "S001",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S001/SHOT_003.txt",
+      "output_file": "S001_SHOT_003.mp4"
+    },
+    {
+      "order": 4,
+      "scene_id": "S002",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S002/SHOT_001.txt",
+      "output_file": "S002_SHOT_001.mp4"
+    },
+    {
+      "order": 5,
+      "scene_id": "S002",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S002/SHOT_002.txt",
+      "output_file": "S002_SHOT_002.mp4"
+    },
+    {
+      "order": 6,
+      "scene_id": "S002",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S002/SHOT_003.txt",
+      "output_file": "S002_SHOT_003.mp4"
+    },
+    {
+      "order": 7,
+      "scene_id": "S002",
+      "shot_id": "SHOT_004",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S002/SHOT_004.txt",
+      "output_file": "S002_SHOT_004.mp4"
+    },
+    {
+      "order": 8,
+      "scene_id": "S003",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S003/SHOT_001.txt",
+      "output_file": "S003_SHOT_001.mp4"
+    },
+    {
+      "order": 9,
+      "scene_id": "S003",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 12.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S003/SHOT_002.txt",
+      "output_file": "S003_SHOT_002.mp4"
+    },
+    {
+      "order": 10,
+      "scene_id": "S003",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S003/SHOT_003.txt",
+      "output_file": "S003_SHOT_003.mp4"
+    },
+    {
+      "order": 11,
+      "scene_id": "S003",
+      "shot_id": "SHOT_004",
+      "duration_seconds": 5.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S003/SHOT_004.txt",
+      "output_file": "S003_SHOT_004.mp4"
+    },
+    {
+      "order": 12,
+      "scene_id": "S004",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S004/SHOT_001.txt",
+      "output_file": "S004_SHOT_001.mp4"
+    },
+    {
+      "order": 13,
+      "scene_id": "S004",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 5.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S004/SHOT_002.txt",
+      "output_file": "S004_SHOT_002.mp4"
+    },
+    {
+      "order": 14,
+      "scene_id": "S005",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S005/SHOT_001.txt",
+      "output_file": "S005_SHOT_001.mp4"
+    },
+    {
+      "order": 15,
+      "scene_id": "S005",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S005/SHOT_002.txt",
+      "output_file": "S005_SHOT_002.mp4"
+    },
+    {
+      "order": 16,
+      "scene_id": "S005",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S005/SHOT_003.txt",
+      "output_file": "S005_SHOT_003.mp4"
+    },
+    {
+      "order": 17,
+      "scene_id": "S005",
+      "shot_id": "SHOT_004",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S005/SHOT_004.txt",
+      "output_file": "S005_SHOT_004.mp4"
+    },
+    {
+      "order": 18,
+      "scene_id": "S006",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S006/SHOT_001.txt",
+      "output_file": "S006_SHOT_001.mp4"
+    },
+    {
+      "order": 19,
+      "scene_id": "S006",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S006/SHOT_002.txt",
+      "output_file": "S006_SHOT_002.mp4"
+    },
+    {
+      "order": 20,
+      "scene_id": "S006",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S006/SHOT_003.txt",
+      "output_file": "S006_SHOT_003.mp4"
+    },
+    {
+      "order": 21,
+      "scene_id": "S007",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S007/SHOT_001.txt",
+      "output_file": "S007_SHOT_001.mp4"
+    },
+    {
+      "order": 22,
+      "scene_id": "S007",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 12.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S007/SHOT_002.txt",
+      "output_file": "S007_SHOT_002.mp4"
+    },
+    {
+      "order": 23,
+      "scene_id": "S007",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S007/SHOT_003.txt",
+      "output_file": "S007_SHOT_003.mp4"
+    },
+    {
+      "order": 24,
+      "scene_id": "S008",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S008/SHOT_001.txt",
+      "output_file": "S008_SHOT_001.mp4"
+    },
+    {
+      "order": 25,
+      "scene_id": "S008",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S008/SHOT_002.txt",
+      "output_file": "S008_SHOT_002.mp4"
+    },
+    {
+      "order": 26,
+      "scene_id": "S009",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S009/SHOT_001.txt",
+      "output_file": "S009_SHOT_001.mp4"
+    },
+    {
+      "order": 27,
+      "scene_id": "S009",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S009/SHOT_002.txt",
+      "output_file": "S009_SHOT_002.mp4"
+    },
+    {
+      "order": 28,
+      "scene_id": "S009",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S009/SHOT_003.txt",
+      "output_file": "S009_SHOT_003.mp4"
+    },
+    {
+      "order": 29,
+      "scene_id": "S009",
+      "shot_id": "SHOT_004",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S009/SHOT_004.txt",
+      "output_file": "S009_SHOT_004.mp4"
+    },
+    {
+      "order": 30,
+      "scene_id": "S009",
+      "shot_id": "SHOT_005",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S009/SHOT_005.txt",
+      "output_file": "S009_SHOT_005.mp4"
+    },
+    {
+      "order": 31,
+      "scene_id": "S010",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S010/SHOT_001.txt",
+      "output_file": "S010_SHOT_001.mp4"
+    },
+    {
+      "order": 32,
+      "scene_id": "S010",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 5.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S010/SHOT_002.txt",
+      "output_file": "S010_SHOT_002.mp4"
+    },
+    {
+      "order": 33,
+      "scene_id": "S010",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S010/SHOT_003.txt",
+      "output_file": "S010_SHOT_003.mp4"
+    },
+    {
+      "order": 34,
+      "scene_id": "S011",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S011/SHOT_001.txt",
+      "output_file": "S011_SHOT_001.mp4"
+    },
+    {
+      "order": 35,
+      "scene_id": "S011",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S011/SHOT_002.txt",
+      "output_file": "S011_SHOT_002.mp4"
+    },
+    {
+      "order": 36,
+      "scene_id": "S011",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 7.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S011/SHOT_003.txt",
+      "output_file": "S011_SHOT_003.mp4"
+    },
+    {
+      "order": 37,
+      "scene_id": "S012",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S012/SHOT_001.txt",
+      "output_file": "S012_SHOT_001.mp4"
+    },
+    {
+      "order": 38,
+      "scene_id": "S012",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 5.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S012/SHOT_002.txt",
+      "output_file": "S012_SHOT_002.mp4"
+    },
+    {
+      "order": 39,
+      "scene_id": "S012",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S012/SHOT_003.txt",
+      "output_file": "S012_SHOT_003.mp4"
+    },
+    {
+      "order": 40,
+      "scene_id": "S013",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 5.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S013/SHOT_001.txt",
+      "output_file": "S013_SHOT_001.mp4"
+    },
+    {
+      "order": 41,
+      "scene_id": "S013",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 5.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S013/SHOT_002.txt",
+      "output_file": "S013_SHOT_002.mp4"
+    },
+    {
+      "order": 42,
+      "scene_id": "S013",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 5.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S013/SHOT_003.txt",
+      "output_file": "S013_SHOT_003.mp4"
+    },
+    {
+      "order": 43,
+      "scene_id": "S014",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S014/SHOT_001.txt",
+      "output_file": "S014_SHOT_001.mp4"
+    },
+    {
+      "order": 44,
+      "scene_id": "S014",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S014/SHOT_002.txt",
+      "output_file": "S014_SHOT_002.mp4"
+    },
+    {
+      "order": 45,
+      "scene_id": "S014",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S014/SHOT_003.txt",
+      "output_file": "S014_SHOT_003.mp4"
+    },
+    {
+      "order": 46,
+      "scene_id": "S015",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S015/SHOT_001.txt",
+      "output_file": "S015_SHOT_001.mp4"
+    },
+    {
+      "order": 47,
+      "scene_id": "S015",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S015/SHOT_002.txt",
+      "output_file": "S015_SHOT_002.mp4"
+    },
+    {
+      "order": 48,
+      "scene_id": "S015",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 7.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S015/SHOT_003.txt",
+      "output_file": "S015_SHOT_003.mp4"
+    },
+    {
+      "order": 49,
+      "scene_id": "S016",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S016/SHOT_001.txt",
+      "output_file": "S016_SHOT_001.mp4"
+    },
+    {
+      "order": 50,
+      "scene_id": "S016",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S016/SHOT_002.txt",
+      "output_file": "S016_SHOT_002.mp4"
+    },
+    {
+      "order": 51,
+      "scene_id": "S016",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S016/SHOT_003.txt",
+      "output_file": "S016_SHOT_003.mp4"
+    },
+    {
+      "order": 52,
+      "scene_id": "S016",
+      "shot_id": "SHOT_004",
+      "duration_seconds": 5.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S016/SHOT_004.txt",
+      "output_file": "S016_SHOT_004.mp4"
+    },
+    {
+      "order": 53,
+      "scene_id": "S017",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S017/SHOT_001.txt",
+      "output_file": "S017_SHOT_001.mp4"
+    },
+    {
+      "order": 54,
+      "scene_id": "S017",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 5.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S017/SHOT_002.txt",
+      "output_file": "S017_SHOT_002.mp4"
+    },
+    {
+      "order": 55,
+      "scene_id": "S017",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S017/SHOT_003.txt",
+      "output_file": "S017_SHOT_003.mp4"
+    },
+    {
+      "order": 56,
+      "scene_id": "S017",
+      "shot_id": "SHOT_004",
+      "duration_seconds": 5.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S017/SHOT_004.txt",
+      "output_file": "S017_SHOT_004.mp4"
+    },
+    {
+      "order": 57,
+      "scene_id": "S018",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S018/SHOT_001.txt",
+      "output_file": "S018_SHOT_001.mp4"
+    },
+    {
+      "order": 58,
+      "scene_id": "S018",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S018/SHOT_002.txt",
+      "output_file": "S018_SHOT_002.mp4"
+    },
+    {
+      "order": 59,
+      "scene_id": "S018",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S018/SHOT_003.txt",
+      "output_file": "S018_SHOT_003.mp4"
+    },
+    {
+      "order": 60,
+      "scene_id": "S019",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S019/SHOT_001.txt",
+      "output_file": "S019_SHOT_001.mp4"
+    },
+    {
+      "order": 61,
+      "scene_id": "S019",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S019/SHOT_002.txt",
+      "output_file": "S019_SHOT_002.mp4"
+    },
+    {
+      "order": 62,
+      "scene_id": "S019",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 8.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S019/SHOT_003.txt",
+      "output_file": "S019_SHOT_003.mp4"
+    },
+    {
+      "order": 63,
+      "scene_id": "S020",
+      "shot_id": "SHOT_001",
+      "duration_seconds": 6.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S020/SHOT_001.txt",
+      "output_file": "S020_SHOT_001.mp4"
+    },
+    {
+      "order": 64,
+      "scene_id": "S020",
+      "shot_id": "SHOT_002",
+      "duration_seconds": 5.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S020/SHOT_002.txt",
+      "output_file": "S020_SHOT_002.mp4"
+    },
+    {
+      "order": 65,
+      "scene_id": "S020",
+      "shot_id": "SHOT_003",
+      "duration_seconds": 5.0,
+      "aspect_ratio": "16:9",
+      "resolution": "1080p",
+      "reference_files": [
+        "_references/jieun_primary.png"
+      ],
+      "work_file": "S020/SHOT_003.txt",
+      "output_file": "S020_SHOT_003.mp4"
+    }
+  ]
+}

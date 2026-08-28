@@ -1,0 +1,910 @@
+{
+  "meta": {
+    "series": "conversation",
+    "level": "c1",
+    "id": "050"
+  },
+  "title": {
+    "target": "Подготовка к командировке",
+    "en": "Preparing for a Business Trip",
+    "es": "Preparativos para el viaje de negocios",
+    "fr": "Préparation au voyage d'affaires",
+    "pt": "Preparação para a viagem de trabalho",
+    "kr": "출장 준비",
+    "jp": "出張の準備",
+    "zh": "出差准备",
+    "ru": "Подготовка к командировке"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, ты уже получил подтверждение на командировку в Санкт-Петербург?",
+            "en": "Ivan, have you already received confirmation for the business trip to Saint Petersburg?",
+            "es": "Iván, ¿ya recibiste la confirmación para el viaje de negocios a San Petersburgo?",
+            "fr": "Ivan, tu as déjà reçu la confirmation pour le voyage d'affaires à Saint-Pétersbourg ?",
+            "pt": "Ivan, você já recebeu a confirmação da viagem de trabalho para São Petersburgo?",
+            "kr": "이반, 상트페테르부르크 출장 승인 받았어?",
+            "jp": "イワン、サンクトペテルブルクへの出張の承認はもうもらった？",
+            "zh": "伊万，你收到去圣彼得堡出差的确认了吗？",
+            "ru": "Иван, ты уже получил подтверждение на командировку в Санкт-Петербург?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, Анна, всё в силе. Поездка со следующего понедельника по четверг.",
+            "en": "Yes, Anna, everything is still on. The trip is from next Monday through Thursday.",
+            "es": "Sí, Ana, todo está en orden. El viaje es del lunes al jueves de la próxima semana.",
+            "fr": "Oui, Anna, tout est confirmé. Le voyage est de lundi prochain à jeudi.",
+            "pt": "Sim, Anna, está tudo certo. A viagem é de segunda a quinta da próxima semana.",
+            "kr": "응, 안나, 다 확정됐어. 다음 주 월요일부터 목요일까지야.",
+            "jp": "うん、アンナ、予定通りだよ。来週の月曜日から木曜日までだ。",
+            "zh": "收到了，安娜，一切都没问题。行程是下周一至周四。",
+            "ru": "Да, Анна, всё в силе. Поездка со следующего понедельника по четверг."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично. Тебе нужно будет подготовить презентацию для встречи с партнёрами.",
+            "en": "Great. You will need to prepare a presentation for the meeting with the partners.",
+            "es": "Perfecto. Necesitarás preparar la presentación para la reunión con los socios.",
+            "fr": "Parfait. Tu devras préparer une présentation pour la réunion avec les partenaires.",
+            "pt": "Ótimo. Você vai precisar preparar a apresentação para a reunião com os parceiros.",
+            "kr": "잘됐네. 파트너사 미팅용 발표 자료를 준비해야 할 거야.",
+            "jp": "よかった。パートナーとの会議用にプレゼン資料を準備する必要があるよ。",
+            "zh": "太好了。你需要为与合作伙伴的会议准备一份演示文稿。",
+            "ru": "Отлично. Тебе нужно будет подготовить презентацию для встречи с партнёрами."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я уже начал её делать. Осталось добавить несколько слайдов с нашими новыми показателями.",
+            "en": "I have already started working on it. I just need to add a few slides with our new indicators.",
+            "es": "Ya he empezado a hacerla. Solo falta añadir unas diapositivas con nuestros nuevos indicadores.",
+            "fr": "J'ai déjà commencé à la faire. Il reste à ajouter quelques diapositives avec nos nouveaux indicateurs.",
+            "pt": "Eu já comecei a fazê-la. Só falta adicionar alguns slides com os nossos novos indicadores.",
+            "kr": "벌써 만들기 시작했어. 새로운 실적 몇 장만 더 추가하면 돼.",
+            "jp": "もう作り始めているよ。新しい業績のスライドをあと何枚か追加するだけだ。",
+            "zh": "我已经开始做了。还差几个幻灯片，要加上我们的新数据。",
+            "ru": "Я уже начал её делать. Осталось добавить несколько слайдов с нашими новыми показателями."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хорошо. Не забудь также забронировать гостиницу и билеты на поезд.",
+            "en": "Good. Also, don't forget to book the hotel and the train tickets.",
+            "es": "Bien. No olvides también reservar el hotel y los billetes de tren.",
+            "fr": "Bien. N'oublie pas aussi de réserver l'hôtel et les billets de train.",
+            "pt": "Bem. Não se esqueça também de reservar o hotel e as passagens de trem.",
+            "kr": "좋아. 호텔이랑 기차표 예약하는 것도 잊지 마.",
+            "jp": "わかった。ホテルと電車のチケットの予約も忘れないでね。",
+            "zh": "好的。别忘了订酒店和火车票。",
+            "ru": "Хорошо. Не забудь также забронировать гостиницу и билеты на поезд."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я займусь этим сегодня вечером. Спасибо, что напомнила.",
+            "en": "Yes, I will take care of that this evening. Thanks for reminding me.",
+            "es": "Sí, me encargaré de eso esta noche. Gracias por recordármelo.",
+            "fr": "Oui, je m'en occupe ce soir. Merci de me l'avoir rappelé.",
+            "pt": "Sim, eu vou cuidar disso hoje à noite. Obrigado por me lembrar.",
+            "kr": "응, 오늘 저녁에 할게. 알려줘서 고마워.",
+            "jp": "うん、今夜やるよ。言ってくれてありがとう。",
+            "zh": "好的，我今晚就处理。谢谢你提醒我。",
+            "ru": "Да, я займусь этим сегодня вечером. Спасибо, что напомнила."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "002",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, какие документы нужны для отчёта о командировке?",
+            "en": "Sergey, what documents are needed for the business trip report?",
+            "es": "Serguéi, ¿qué documentos se necesitan para el informe del viaje de negocios?",
+            "fr": "Sergueï, quels documents sont nécessaires pour le rapport de voyage d'affaires ?",
+            "pt": "Sergei, quais documentos são necessários para o relatório da viagem de trabalho?",
+            "kr": "세르게이, 출장 보고서에 필요한 서류가 뭐야?",
+            "jp": "セルゲイ、出張報告書にはどんな書類が必要なの？",
+            "zh": "谢尔盖，出差报告需要哪些文件？",
+            "ru": "Сергей, какие документы нужны для отчёта о командировке?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно нужны билеты, счета из гостиницы и программа встречи.",
+            "en": "Usually you need the tickets, the hotel bills, and the meeting agenda.",
+            "es": "Normalmente se necesitan los billetes, las facturas del hotel y el programa de la reunión.",
+            "fr": "En général, il faut les billets, les factures de l'hôtel et le programme de la réunion.",
+            "pt": "Normalmente são necessários as passagens, as contas do hotel e o programa da reunião.",
+            "kr": "보통 기차표, 호텔 영수증, 그리고 미팅 일정표가 필요해.",
+            "jp": "普通はチケットとホテルの請求書、それに会議のプログラムが必要だよ。",
+            "zh": "通常需要车票、酒店发票和会议日程。",
+            "ru": "Обычно нужны билеты, счета из гостиницы и программа встречи."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А если я еду на два дня, нужно ли согласовывать план заранее?",
+            "en": "And if I am going for two days, do I need to get the plan approved in advance?",
+            "es": "¿Y si voy por dos días, necesito acordar el plan con antelación?",
+            "fr": "Et si je pars pour deux jours, faut-il valider le plan à l'avance ?",
+            "pt": "E se eu for por dois dias, preciso aprovar o plano com antecedência?",
+            "kr": "이틀 동안 가는 거면, 계획을 미리 승인받아야 해?",
+            "jp": "もし二日間の出張だったら、事前に計画を承認してもらう必要がある？",
+            "zh": "那如果我只去两天，需要提前审批计划吗？",
+            "ru": "А если я еду на два дня, нужно ли согласовывать план заранее?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, обязательно. Начальник отдела должен подписать план до отъезда.",
+            "en": "Yes, absolutely. The department head has to sign the plan before the departure.",
+            "es": "Sí, sin duda. El jefe del departamento debe firmar el plan antes de la salida.",
+            "fr": "Oui, absolument. Le chef de service doit signer le plan avant le départ.",
+            "pt": "Sim, com certeza. O chefe do departamento precisa assinar o plano antes da partida.",
+            "kr": "응, 꼭 그래야 해. 부서장이 출발 전에 계획서에 서명해야 해.",
+            "jp": "うん、絶対に必要だよ。部長が出発前に計画に署名しなきゃいけないんだ。",
+            "zh": "是的，必须的。部门经理必须在出发前签署计划。",
+            "ru": "Да, обязательно. Начальник отдела должен подписать план до отъезда."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно. Тогда я подготовлю план и завтра покажу его на совещании.",
+            "en": "Understood. Then I will prepare the plan and show it at the meeting tomorrow.",
+            "es": "Entendido. Entonces prepararé el plan y mañana lo presentaré en la reunión.",
+            "fr": "Compris. Alors je préparerai le plan et je le montrerai demain à la réunion.",
+            "pt": "Entendi. Então eu vou preparar o plano e amanhã vou mostrá-lo na reunião.",
+            "kr": "알겠어. 그럼 계획을 준비해서 내일 회의 때 보여줄게.",
+            "jp": "わかった。じゃあ計画を準備して、明日の会議で見せるよ。",
+            "zh": "明白了。那我准备好计划，明天在会上给大家看。",
+            "ru": "Понятно. Тогда я подготовлю план и завтра покажу его на совещании."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично. Если будут вопросы, я помогу с оформлением.",
+            "en": "Great. If you have any questions, I will help you with the paperwork.",
+            "es": "Perfecto. Si tienes alguna duda, te ayudaré con los trámites.",
+            "fr": "Parfait. Si tu as des questions, je t'aiderai pour les formalités.",
+            "pt": "Ótimo. Se houver dúvidas, eu ajudo com a documentação.",
+            "kr": "좋아. 궁금한 게 있으면 서류 작성 도와줄게.",
+            "jp": "いいね。質問があったら、書類の作成を手伝うよ。",
+            "zh": "好的。如果有问题，我可以帮你办理手续。",
+            "ru": "Отлично. Если будут вопросы, я помогу с оформлением."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "003",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, ты летишь в Новосибирск в пятницу, верно?",
+            "en": "Maria, you are flying to Novosibirsk on Friday, right?",
+            "es": "María, ¿vuelas a Novosibirsk el viernes, verdad?",
+            "fr": "Maria, tu prends l'avion pour Novossibirsk vendredi, c'est bien ça ?",
+            "pt": "Maria, você vai voar para Novosibirsk na sexta-feira, certo?",
+            "kr": "마리야, 금요일에 노보시비르스크로 비행기 타는 거 맞지?",
+            "jp": "マリア、金曜日にノボシビルスクへ飛ぶんだよね？",
+            "zh": "玛丽亚，你周五飞新西伯利亚，对吗？",
+            "ru": "Мария, ты летишь в Новосибирск в пятницу, верно?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, рейс в девять утра. Я уже зарегистрировалась онлайн.",
+            "en": "Yes, the flight is at nine in the morning. I have already checked in online.",
+            "es": "Sí, el vuelo es a las nueve de la mañana. Ya me he registrado en línea.",
+            "fr": "Oui, le vol est à neuf heures du matin. Je me suis déjà enregistrée en ligne.",
+            "pt": "Sim, o voo é às nove da manhã. Eu já fiz o check-in online.",
+            "kr": "응, 아침 아홉 시 비행이야. 이미 온라인으로 체크인했어.",
+            "jp": "うん、朝九時の便だよ。もうオンラインでチェックイン済みだよ。",
+            "zh": "对，航班是早上九点的。我已经在网上值机了。",
+            "ru": "Да, рейс в девять утра. Я уже зарегистрировалась онлайн."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А что насчёт трансфера из аэропорта до офиса?",
+            "en": "And what about the transfer from the airport to the office?",
+            "es": "¿Y qué hay del traslado del aeropuerto a la oficina?",
+            "fr": "Et pour le transfert de l'aéroport jusqu'au bureau ?",
+            "pt": "E quanto ao traslado do aeroporto até o escritório?",
+            "kr": "공항에서 사무실까지 이동은 어떻게 할 거야?",
+            "jp": "空港からオフィスまでの送迎はどうするの？",
+            "zh": "那从机场到办公室的接送怎么安排？",
+            "ru": "А что насчёт трансфера из аэропорта до офиса?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Мне сказали, что нас встретит водитель от компании-партнёра.",
+            "en": "They told me that a driver from the partner company will pick us up.",
+            "es": "Me han dicho que nos recogerá un conductor de la empresa socia.",
+            "fr": "On m'a dit qu'un chauffeur de l'entreprise partenaire viendrait nous chercher.",
+            "pt": "Me disseram que um motorista da empresa parceira vai nos buscar.",
+            "kr": "파트너사에서 운전기사가 마중 나온다고 들었어.",
+            "jp": "パートナー会社の運転手が迎えに来てくれるって言われたよ。",
+            "zh": "他们告诉我，合作公司会派司机来接我们。",
+            "ru": "Мне сказали, что нас встретит водитель от компании-партнёра."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это удобно. Ты взяла все нужные материалы для переговоров?",
+            "en": "That is convenient. Did you take all the necessary materials for the negotiations?",
+            "es": "Eso es cómodo. ¿Has cogido todos los materiales necesarios para las negociaciones?",
+            "fr": "C'est pratique. Tu as pris tous les documents nécessaires pour les négociations ?",
+            "pt": "Isso é conveniente. Você pegou todos os materiais necessários para as negociações?",
+            "kr": "편하겠네. 협상에 필요한 자료는 다 챙겼어?",
+            "jp": "それは便利だね。交渉に必要な資料は全部持った？",
+            "zh": "那很方便。你带齐了谈判需要的所有材料了吗？",
+            "ru": "Это удобно. Ты взяла все нужные материалы для переговоров?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я положила в сумку ноутбук, распечатанные контракты и визитки.",
+            "en": "Yes, I put the laptop, the printed contracts, and the business cards in my bag.",
+            "es": "Sí, he puesto en la bolsa el portátil, los contratos impresos y las tarjetas de visita.",
+            "fr": "Oui, j'ai mis dans mon sac l'ordinateur portable, les contrats imprimés et les cartes de visite.",
+            "pt": "Sim, eu coloquei na bolsa o notebook, os contratos impressos e os cartões de visita.",
+            "kr": "응, 가방에 노트북이랑 인쇄한 계약서, 명함 넣었어.",
+            "jp": "うん、バッグにノートパソコンと印刷した契約書と名刺を入れたよ。",
+            "zh": "带齐了，我把笔记本电脑、打印好的合同和名片都放进包里了。",
+            "ru": "Да, я положила в сумку ноутбук, распечатанные контракты и визитки."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "004",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, у тебя есть опыт организации деловой поездки за границу?",
+            "en": "Dmitry, do you have experience organizing a business trip abroad?",
+            "es": "Dmitri, ¿tienes experiencia organizando un viaje de negocios al extranjero?",
+            "fr": "Dimitri, tu as de l'expérience dans l'organisation d'un voyage d'affaires à l'étranger ?",
+            "pt": "Dmitri, você tem experiência em organizar viagem de trabalho para o exterior?",
+            "kr": "드미트리, 해외 출장 준비해 본 경험이 있어?",
+            "jp": "ドミトリー、海外出張の手配をした経験はある？",
+            "zh": "德米特里，你有组织出国商务旅行的经验吗？",
+            "ru": "Дмитрий, у тебя есть опыт организации деловой поездки за границу?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я ездил в Минск в прошлом году. Там были свои нюансы.",
+            "en": "Yes, I went to Minsk last year. There were some specific details there.",
+            "es": "Sí, fui a Minsk el año pasado. Allí había sus propios matices.",
+            "fr": "Oui, je suis allé à Minsk l'année dernière. Il y avait des particularités.",
+            "pt": "Sim, eu fui a Minsk no ano passado. Lá tiveram os seus próprios detalhes.",
+            "kr": "응, 작년에 민스크에 다녀왔어. 거기도 신경 쓸 게 있었어.",
+            "jp": "うん、去年ミンスクに行ったよ。あっちにはあっちなりの注意点があったよ。",
+            "zh": "有，我去年去了明斯克。那边有一些特殊的地方。",
+            "ru": "Да, я ездил в Минск в прошлом году. Там были свои нюансы."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Например, какие? Нужно ли оформлять страховку заранее?",
+            "en": "Like what, for example? Do I need to get insurance arranged in advance?",
+            "es": "Por ejemplo, ¿cuáles? ¿Hay que contratar un seguro con antelación?",
+            "fr": "Par exemple, lesquelles ? Faut-il souscrire une assurance à l'avance ?",
+            "pt": "Por exemplo, quais? Preciso contratar um seguro com antecedência?",
+            "kr": "예를 들면 뭐? 보험은 미리 들어놔야 해?",
+            "jp": "例えばどんなこと？保険は事前に手続きする必要があるの？",
+            "zh": "比如什么？需要提前办保险吗？",
+            "ru": "Например, какие? Нужно ли оформлять страховку заранее?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обязательно. И ещё лучше сделать копии всех документов и оставить их в офисе.",
+            "en": "Absolutely. And it is also better to make copies of all the documents and leave them at the office.",
+            "es": "Sin duda. Y además es mejor hacer copias de todos los documentos y dejarlas en la oficina.",
+            "fr": "Absolument. Et il vaut mieux aussi faire des copies de tous les documents et les laisser au bureau.",
+            "pt": "Com certeza. E ainda é melhor fazer cópias de todos os documentos e deixá-las no escritório.",
+            "kr": "꼭 들어야 해. 그리고 서류는 전부 복사본을 만들어서 사무실에 하나 남겨두는 게 좋아.",
+            "jp": "絶対に必要だよ。それに、全書類のコピーを作ってオフィスに置いておくのもいいね。",
+            "zh": "必须的。而且最好把所有文件都复印一份，留在办公室里。",
+            "ru": "Обязательно. И ещё лучше сделать копии всех документов и оставить их в офисе."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хороший совет. А как ты решал вопрос с валютой?",
+            "en": "Good advice. And how did you handle the currency issue?",
+            "es": "Buen consejo. ¿Y cómo solucionaste el tema de la moneda?",
+            "fr": "Bon conseil. Et comment as-tu géré la question des devises ?",
+            "pt": "Bom conselho. E como você resolveu a questão da moeda estrangeira?",
+            "kr": "좋은 조언이네. 환전은 어떻게 해결했어?",
+            "jp": "いいアドバイスだね。通貨の問題はどう解決したの？",
+            "zh": "好建议。那货币问题你是怎么解决的？",
+            "ru": "Хороший совет. А как ты решал вопрос с валютой?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я поменял деньги заранее, чтобы не тратить время на месте.",
+            "en": "I exchanged the money in advance so I wouldn't waste time over there.",
+            "es": "Cambié el dinero de antemano para no perder tiempo allí.",
+            "fr": "J'ai changé l'argent à l'avance pour ne pas perdre de temps sur place.",
+            "pt": "Eu troquei o dinheiro com antecedência, para não perder tempo no local.",
+            "kr": "현지에서 시간 낭비하지 않으려고 미리 환전해 갔어.",
+            "jp": "現地で時間を無駄にしないように、事前に両替しておいたよ。",
+            "zh": "我提前换了钱，这样就不用在当地浪费时间了。",
+            "ru": "Я поменял деньги заранее, чтобы не тратить время на месте."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "005",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Анна, я уезжаю в командировку в Казань на следующей неделе.",
+            "en": "Anna, I am leaving for a business trip to Kazan next week.",
+            "es": "Ana, me voy de viaje de negocios a Kazán la próxima semana.",
+            "fr": "Anna, je pars en voyage d'affaires à Kazan la semaine prochaine.",
+            "pt": "Anna, eu vou viajar a trabalho para Kazan na próxima semana.",
+            "kr": "안나, 다음 주에 카잔으로 출장 가.",
+            "jp": "アンナ、来週カザンへ出張に行くんだ。",
+            "zh": "安娜，我下周要去喀山出差。",
+            "ru": "Анна, я уезжаю в командировку в Казань на следующей неделе."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Отлично, Иван. Ты уже составил список целей для этой поездки?",
+            "en": "Great, Ivan. Have you already made a list of goals for this trip?",
+            "es": "Perfecto, Iván. ¿Ya has hecho la lista de objetivos para este viaje?",
+            "fr": "Très bien, Ivan. Tu as déjà établi la liste des objectifs pour ce voyage ?",
+            "pt": "Ótimo, Ivan. Você já elaborou a lista de objetivos para essa viagem?",
+            "kr": "잘됐네, 이반. 이번 출장 목표는 정리했어?",
+            "jp": "いいね、イワン。今回の出張の目的リストはもう作った？",
+            "zh": "太好了，伊万。你列好这次出差的目标清单了吗？",
+            "ru": "Отлично, Иван. Ты уже составил список целей для этой поездки?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Да, основные задачи — подписание договора и осмотр нового склада.",
+            "en": "Yes, the main tasks are signing the contract and inspecting the new warehouse.",
+            "es": "Sí, las tareas principales son la firma del contrato y la visita al nuevo almacén.",
+            "fr": "Oui, les tâches principales sont la signature du contrat et la visite du nouvel entrepôt.",
+            "pt": "Sim, as principais tarefas são a assinatura do contrato e a visita ao novo armazém.",
+            "kr": "응, 주요 목표는 계약 체결이랑 새 창고 시찰이야.",
+            "jp": "うん、主な目的は契約の締結と新しい倉庫の視察だよ。",
+            "zh": "列好了，主要任务是签合同和查看新仓库。",
+            "ru": "Да, основные задачи — подписание договора и осмотр нового склада."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Хорошо. Не забудь согласовать бюджет поездки с финансовым отделом.",
+            "en": "Good. Don't forget to get the trip budget approved with the finance department.",
+            "es": "Bien. No olvides acordar el presupuesto del viaje con el departamento financiero.",
+            "fr": "Bien. N'oublie pas de faire valider le budget du voyage par le service financier.",
+            "pt": "Bem. Não se esqueça de aprovar o orçamento da viagem com o departamento financeiro.",
+            "kr": "좋아. 재무팀에 출장 예산 승인받는 것도 잊지 마.",
+            "jp": "わかった。出張の予算は経理部に承認してもらうのを忘れないでね。",
+            "zh": "好的。别忘了和财务部确认出差预算。",
+            "ru": "Хорошо. Не забудь согласовать бюджет поездки с финансовым отделом."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я уже отправил им заявку. Жду подтверждения до завтра.",
+            "en": "I have already sent them the request. I am waiting for the confirmation by tomorrow.",
+            "es": "Ya les he enviado la solicitud. Espero la confirmación para mañana.",
+            "fr": "Je leur ai déjà envoyé la demande. J'attends la confirmation pour demain.",
+            "pt": "Eu já enviei a solicitação para eles. Estou aguardando a confirmação até amanhã.",
+            "kr": "이미 신청서 보냈어. 내일까지 승인 기다리고 있어.",
+            "jp": "もう申請書を送ったよ。明日までに承認を待っているところだ。",
+            "zh": "我已经把申请发给他们了。等明天之前确认。",
+            "ru": "Я уже отправил им заявку. Жду подтверждения до завтра."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Тогда всё в порядке. Удачи тебе на переговорах!",
+            "en": "Then everything is in order. Good luck with the negotiations!",
+            "es": "Entonces todo está en orden. ¡Buena suerte en las negociaciones!",
+            "fr": "Alors tout est en ordre. Bonne chance pour les négociations !",
+            "pt": "Então está tudo certo. Boa sorte nas negociações!",
+            "kr": "그럼 다 된 거네. 협상 잘 하고 와!",
+            "jp": "じゃあ大丈夫だね。交渉、頑張ってね！",
+            "zh": "那就没问题了。祝你谈判顺利！",
+            "ru": "Тогда всё в порядке. Удачи тебе на переговорах!"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "006",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, сколько времени занимает подготовка к командировке?",
+            "en": "Sergey, how long does it take to prepare for a business trip?",
+            "es": "Serguéi, ¿cuánto tiempo se tarda en preparar un viaje de negocios?",
+            "fr": "Sergueï, combien de temps prend la préparation d'un voyage d'affaires ?",
+            "pt": "Sergei, quanto tempo leva a preparação para a viagem de trabalho?",
+            "kr": "세르게이, 출장 준비하는 데 보통 얼마나 걸려?",
+            "jp": "セルゲイ、出張の準備にはどのくらい時間がかかるの？",
+            "zh": "谢尔盖，准备一次出差需要多长时间？",
+            "ru": "Сергей, сколько времени занимает подготовка к командировке?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно я начинаю готовиться за неделю, чтобы всё успеть спокойно.",
+            "en": "I usually start getting ready a week in advance so I can do everything calmly.",
+            "es": "Normalmente empiezo a prepararme con una semana de antelación para hacer todo con calma.",
+            "fr": "En général, je commence à me préparer une semaine à l'avance pour tout faire tranquillement.",
+            "pt": "Normalmente eu começo a me preparar uma semana antes, para conseguir fazer tudo com calma.",
+            "kr": "보통 일주일 전에 준비를 시작해서 여유 있게 끝내려고 해.",
+            "jp": "だいたい一週間前から準備を始めるよ。余裕を持って全部終わらせるためにね。",
+            "zh": "我一般提前一周开始准备，这样就能从容地做完所有事情。",
+            "ru": "Обычно я начинаю готовиться за неделю, чтобы всё успеть спокойно."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А что самое сложное в этом процессе?",
+            "en": "And what is the most difficult part of that process?",
+            "es": "¿Y qué es lo más difícil de este proceso?",
+            "fr": "Et qu'est-ce qui est le plus difficile dans ce processus ?",
+            "pt": "E o que é mais difícil nesse processo?",
+            "kr": "그 과정에서 제일 어려운 게 뭐야?",
+            "jp": "その中で一番大変なことは何？",
+            "zh": "那这个过程中最难的是什么？",
+            "ru": "А что самое сложное в этом процессе?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Наверное, согласование встреч и бронирование переговорных комнат у партнёров.",
+            "en": "Probably coordinating the meetings and booking the conference rooms at the partners' offices.",
+            "es": "Probablemente, coordinar las reuniones y reservar las salas de reuniones con los socios.",
+            "fr": "Probablement, la planification des réunions et la réservation des salles de réunion chez les partenaires.",
+            "pt": "Provavelmente, agendar as reuniões e reservar as salas de reunião com os parceiros.",
+            "kr": "아무래도 파트너사랑 미팅 일정 조율하고 회의실 예약하는 거야.",
+            "jp": "たぶん、パートナー先との会議の調整と会議室の予約かな。",
+            "zh": "大概是协调会议时间，还有预订合作伙伴那边的会议室。",
+            "ru": "Наверное, согласование встреч и бронирование переговорных комнат у партнёров."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понимаю. А как ты обычно планируешь маршрут между встречами?",
+            "en": "I see. And how do you usually plan the route between the meetings?",
+            "es": "Entiendo. ¿Y cómo sueles planificar la ruta entre las reuniones?",
+            "fr": "Je comprends. Et comment planifies-tu habituellement ton itinéraire entre les réunions ?",
+            "pt": "Entendo. E como você normalmente planeja o trajeto entre as reuniões?",
+            "kr": "그렇구나. 미팅 사이 이동 동선은 보통 어떻게 짜?",
+            "jp": "なるほど。会議の間の移動ルートは普段どうやって計画してるの？",
+            "zh": "明白了。那你一般怎么安排会议之间的路线？",
+            "ru": "Понимаю. А как ты обычно планируешь маршрут между встречами?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я стараюсь группировать встречи по районам, чтобы экономить время на дорогу.",
+            "en": "I try to group the meetings by area to save time on travel.",
+            "es": "Intento agrupar las reuniones por zonas para ahorrar tiempo en los desplazamientos.",
+            "fr": "J'essaie de regrouper les réunions par quartiers pour gagner du temps sur les déplacements.",
+            "pt": "Eu tento agrupar as reuniões por regiões, para economizar tempo no deslocamento.",
+            "kr": "이동 시간을 아끼려고 같은 지역에 있는 미팅끼리 묶어서 잡으려고 해.",
+            "jp": "移動時間を節約するために、会議を地区ごとにまとめるようにしているよ。",
+            "zh": "我尽量把会议按区域分组，这样可以节省路上的时间。",
+            "ru": "Я стараюсь группировать встречи по районам, чтобы экономить время на дорогу."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "007",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мария, ты уже забронировала гостиницу для поездки в Екатеринбург?",
+            "en": "Maria, have you already booked a hotel for the trip to Yekaterinburg?",
+            "es": "María, ¿ya has reservado el hotel para el viaje a Ekaterimburgo?",
+            "fr": "Maria, tu as déjà réservé l'hôtel pour le voyage à Iekaterinbourg ?",
+            "pt": "Maria, você já reservou o hotel para a viagem a Ecaterimburgo?",
+            "kr": "마리야, 예카테린부르크 출장 호텔은 이미 예약했어?",
+            "jp": "マリア、エカテリンブルク行きのホテルはもう予約した？",
+            "zh": "玛丽亚，你订好去叶卡捷琳堡的酒店了吗？",
+            "ru": "Мария, ты уже забронировала гостиницу для поездки в Екатеринбург?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ещё нет, выбираю между двумя вариантами. Один ближе к офису, другой дешевле.",
+            "en": "Not yet, I am choosing between two options. One is closer to the office, the other is cheaper.",
+            "es": "Todavía no, estoy eligiendo entre dos opciones. Una está más cerca de la oficina, la otra es más barata.",
+            "fr": "Pas encore, je choisis entre deux options. L'une est plus proche du bureau, l'autre est moins chère.",
+            "pt": "Ainda não, estou escolhendo entre duas opções. Uma é mais perto do escritório, a outra é mais barata.",
+            "kr": "아직, 두 군데 중에 고르고 있어. 하나는 사무실에 더 가깝고, 다른 하나는 더 싸.",
+            "jp": "まだだよ、二つの候補で迷っているんだ。一つはオフィスに近くて、もう一つは安いんだ。",
+            "zh": "还没呢，我在两个选项之间犹豫。一个离办公室近，另一个更便宜。",
+            "ru": "Ещё нет, выбираю между двумя вариантами. Один ближе к офису, другой дешевле."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я бы советовала выбрать тот, что ближе, чтобы не тратить время на дорогу.",
+            "en": "I would advise choosing the one that is closer so you don't waste time on commuting.",
+            "es": "Yo te aconsejaría elegir la que está más cerca, para no perder tiempo en el camino.",
+            "fr": "Je te conseillerais de choisir celle qui est la plus proche, pour ne pas perdre de temps sur la route.",
+            "pt": "Eu aconselharia escolher a que é mais perto, para não perder tempo no deslocamento.",
+            "kr": "나라면 가까운 쪽을 고를 것 같아. 이동하는 데 시간을 쓰지 않게.",
+            "jp": "私は近い方をおすすめするよ。移動に時間をかけないようにね。",
+            "zh": "我建议你选近的那个，这样不用在路上浪费时间。",
+            "ru": "Я бы советовала выбрать тот, что ближе, чтобы не тратить время на дорогу."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Ты права, тем более у нас плотный график встреч.",
+            "en": "You are right, especially since we have a tight schedule of meetings.",
+            "es": "Tienes razón, más aún teniendo una agenda de reuniones tan apretada.",
+            "fr": "Tu as raison, d'autant plus que nous avons un emploi du temps chargé de réunions.",
+            "pt": "Você tem razão, ainda mais porque temos uma agenda apertada de reuniões.",
+            "kr": "맞는 말이야. 게다가 미팅 일정이 빡빡하니까.",
+            "jp": "そうだね、それに会議のスケジュールがぎっしりだからね。",
+            "zh": "你说得对，而且我们的会议安排很紧。",
+            "ru": "Ты права, тем более у нас плотный график встреч."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Кстати, не забудь проверить, есть ли в гостинице завтраки.",
+            "en": "By the way, don't forget to check if the hotel includes breakfast.",
+            "es": "Por cierto, no olvides comprobar si el hotel incluye desayuno.",
+            "fr": "Au fait, n'oublie pas de vérifier si l'hôtel propose des petits-déjeuners.",
+            "pt": "Aliás, não se esqueça de verificar se o hotel tem café da manhã.",
+            "kr": "참, 호텔에 조식 포함인지 확인하는 것도 잊지 마.",
+            "jp": "ところで、ホテルに朝食があるか確認するのを忘れないでね。",
+            "zh": "对了，别忘了确认酒店是否提供早餐。",
+            "ru": "Кстати, не забудь проверить, есть ли в гостинице завтраки."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я уже посмотрела. Завтраки включены в стоимость, это удобно.",
+            "en": "Yes, I have already checked. Breakfast is included in the price, which is convenient.",
+            "es": "Sí, ya lo he mirado. El desayuno está incluido en el precio, es muy cómodo.",
+            "fr": "Oui, j'ai déjà vérifié. Les petits-déjeuners sont inclus dans le prix, c'est pratique.",
+            "pt": "Sim, eu já verifiquei. O café da manhã está incluído no valor, é conveniente.",
+            "kr": "응, 이미 확인했어. 조식이 가격에 포함돼 있어서 편하더라.",
+            "jp": "うん、もう確認したよ。朝食は料金に含まれているから、便利だよ。",
+            "zh": "我已经看过了。早餐包含在房费里，很方便。",
+            "ru": "Да, я уже посмотрела. Завтраки включены в стоимость, это удобно."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "008",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Дмитрий, тебе нужна помощь с подготовкой отчёта о прошлой командировке?",
+            "en": "Dmitry, do you need any help preparing the report on the last business trip?",
+            "es": "Dmitri, ¿necesitas ayuda con la preparación del informe del último viaje de negocios?",
+            "fr": "Dimitri, as-tu besoin d'aide pour préparer le rapport sur le dernier voyage d'affaires ?",
+            "pt": "Dmitri, você precisa de ajuda com a preparação do relatório da última viagem de trabalho?",
+            "kr": "드미트리, 지난 출장 보고서 정리하는 데 도움 필요해?",
+            "jp": "ドミトリー、前回の出張報告書の作成、手伝おうか？",
+            "zh": "德米特里，需要我帮你准备上次出差的报告吗？",
+            "ru": "Дмитрий, тебе нужна помощь с подготовкой отчёта о прошлой командировке?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Спасибо, Анна, но я почти закончил. Осталось добавить финансовые результаты.",
+            "en": "Thanks, Anna, but I am almost done. I just need to add the financial results.",
+            "es": "Gracias, Ana, pero casi lo he terminado. Solo falta añadir los resultados financieros.",
+            "fr": "Merci, Anna, mais j'ai presque terminé. Il reste à ajouter les résultats financiers.",
+            "pt": "Obrigado, Anna, mas eu quase terminei. Só falta adicionar os resultados financeiros.",
+            "kr": "고마워, 안나, 그런데 거의 다 끝냈어. 재무 실적만 추가하면 돼.",
+            "jp": "ありがとう、アンナ、でももうほとんど終わったよ。財務結果を追加するだけだ。",
+            "zh": "谢谢你，安娜，但我差不多做完了。就差加上财务结果了。",
+            "ru": "Спасибо, Анна, но я почти закончил. Осталось добавить финансовые результаты."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Хорошо. А ты уже сдал все чеки и квитанции в бухгалтерию?",
+            "en": "Good. And have you already turned in all the checks and receipts to the accounting department?",
+            "es": "Bien. ¿Y ya has entregado todos los recibos y justificantes a contabilidad?",
+            "fr": "Bien. Et tu as déjà remis tous les tickets et reçus à la comptabilité ?",
+            "pt": "Bem. E você já entregou todos os comprovantes e recibos para a contabilidade?",
+            "kr": "좋아. 영수증이랑 증빙 서류는 회계팀에 다 제출했어?",
+            "jp": "わかった。経理には領収書とレシートはもう全部提出した？",
+            "zh": "好的。那你把所有发票和收据都交到财务部了吗？",
+            "ru": "Хорошо. А ты уже сдал все чеки и квитанции в бухгалтерию?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я отдал их вчера. Бухгалтер сказала, что всё в порядке.",
+            "en": "Yes, I gave them yesterday. The accountant said everything is in order.",
+            "es": "Sí, se los di ayer. La contable dijo que todo está en orden.",
+            "fr": "Oui, je les ai donnés hier. La comptable a dit que tout était en ordre.",
+            "pt": "Sim, eu os entreguei ontem. A contadora disse que está tudo certo.",
+            "kr": "응, 어제 제출했어. 회계 담당자가 다 문제없다고 했어.",
+            "jp": "うん、昨日渡したよ。経理の人が全部大丈夫だって言ってたよ。",
+            "zh": "交了，我昨天就给他们了。会计说没问题。",
+            "ru": "Да, я отдал их вчера. Бухгалтер сказала, что всё в порядке."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Отлично. Тогда осталось только подписать отчёт у руководителя.",
+            "en": "Great. Then all that's left is to get the report signed by the manager.",
+            "es": "Perfecto. Entonces solo queda que el jefe firme el informe.",
+            "fr": "Parfait. Alors il ne reste plus qu'à faire signer le rapport par le responsable.",
+            "pt": "Ótimo. Então só falta assinar o relatório com o chefe.",
+            "kr": "잘됐네. 그럼 이제 부서장한테 보고서 서명받기만 하면 되겠네.",
+            "jp": "よかった。じゃあ、あとは上司に報告書に署名してもらうだけだね。",
+            "zh": "太好了。那就只差让领导签字了。",
+            "ru": "Отлично. Тогда осталось только подписать отчёт у руководителя."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я записался к нему на завтра на одиннадцать часов.",
+            "en": "Yes, I made an appointment with him for tomorrow at eleven o'clock.",
+            "es": "Sí, tengo cita con él mañana a las once.",
+            "fr": "Oui, j'ai pris rendez-vous avec lui pour demain à onze heures.",
+            "pt": "Sim, eu marquei com ele para amanhã às onze horas.",
+            "kr": "응, 내일 열한 시에 만나기로 약속 잡아놨어.",
+            "jp": "うん、明日の十一時に上司との面談を予約してあるよ。",
+            "zh": "对，我约了他明天十一点。",
+            "ru": "Да, я записался к нему на завтра на одиннадцать часов."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "009",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Иван, какие сувениры ты обычно берёшь с собой в командировку для партнёров?",
+            "en": "Ivan, what souvenirs do you usually take with you on a business trip for the partners?",
+            "es": "Iván, ¿qué souvenirs sueles llevar a los viajes de negocios para los socios?",
+            "fr": "Ivan, quels souvenirs emportes-tu habituellement en voyage d'affaires pour les partenaires ?",
+            "pt": "Ivan, quais lembrancinhas você normalmente leva na viagem de trabalho para os parceiros?",
+            "kr": "이반, 출장 갈 때 파트너사에 줄 선물은 보통 뭘 챙겨 가?",
+            "jp": "イワン、出張のときパートナーへのお土産は普段何を持って行くの？",
+            "zh": "伊万，你出差时通常会带什么礼物给合作伙伴？",
+            "ru": "Иван, какие сувениры ты обычно берёшь с собой в командировку для партнёров?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Обычно я беру небольшие подарки с символикой нашей компании.",
+            "en": "I usually take small gifts with our company's branding.",
+            "es": "Normalmente llevo pequeños regalos con el logotipo de nuestra empresa.",
+            "fr": "En général, je prends de petits cadeaux avec le logo de notre entreprise.",
+            "pt": "Normalmente eu levo pequenos presentes com a identidade visual da nossa empresa.",
+            "kr": "보통 우리 회사 로고가 들어간 작은 선물을 가져가.",
+            "jp": "だいたい会社のロゴが入った小さな記念品を持って行くよ。",
+            "zh": "我一般会带一些带有我们公司标志的小礼品。",
+            "ru": "Обычно я беру небольшие подарки с символикой нашей компании."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Это хорошая идея. А сколько подарков нужно подготовить?",
+            "en": "That is a good idea. And how many gifts do you need to prepare?",
+            "es": "Es una buena idea. ¿Y cuántos regalos hay que preparar?",
+            "fr": "C'est une bonne idée. Et combien de cadeaux faut-il préparer ?",
+            "pt": "Essa é uma boa ideia. E quantos presentes precisam ser preparados?",
+            "kr": "좋은 생각이네. 선물은 몇 개 정도 준비해야 해?",
+            "jp": "いいアイデアだね。お土産はいくつ準備する必要があるの？",
+            "zh": "这是个好主意。那需要准备多少份礼物呢？",
+            "ru": "Это хорошая идея. А сколько подарков нужно подготовить?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Я беру с запасом — на случай, если встреч будет больше, чем планировалось.",
+            "en": "I take extra, in case there are more meetings than planned.",
+            "es": "Llevo de más, por si hay más reuniones de las previstas.",
+            "fr": "J'en prends en plus — au cas où il y aurait plus de réunions que prévu.",
+            "pt": "Eu levo com margem extra — caso haja mais reuniões do que o planejado.",
+            "kr": "계획보다 미팅이 더 늘어날 수도 있으니까 여유분을 챙겨 가.",
+            "jp": "予定より会議が多くなる場合に備えて、多めに持って行くよ。",
+            "zh": "我会多准备一些，以防会议比计划的多。",
+            "ru": "Я беру с запасом — на случай, если встреч будет больше, чем планировалось."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понятно. А нужно ли как-то по-особенному их упаковывать?",
+            "en": "Understood. And do they need to be wrapped in any special way?",
+            "es": "Entendido. ¿Y hay que envolverlos de alguna manera especial?",
+            "fr": "Compris. Et faut-il les emballer d'une manière particulière ?",
+            "pt": "Entendi. E precisa embalá-los de alguma forma especial?",
+            "kr": "그렇구나. 포장은 특별히 신경 써야 해?",
+            "jp": "なるほど。特別な包装は必要？",
+            "zh": "明白了。那需要特别包装一下吗？",
+            "ru": "Понятно. А нужно ли как-то по-особенному их упаковывать?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Желательно, чтобы упаковка выглядела аккуратно и профессионально.",
+            "en": "It is preferable for the wrapping to look neat and professional.",
+            "es": "Es recomendable que el envoltorio tenga un aspecto cuidado y profesional.",
+            "fr": "Il est préférable que l'emballage ait l'air soigné et professionnel.",
+            "pt": "É desejável que a embalagem pareça caprichada e profissional.",
+            "kr": "포장이 깔끔하고 전문적으로 보이면 좋아.",
+            "jp": "包装はきちんとしていてプロらしく見えるのが望ましいね。",
+            "zh": "最好是包装得整洁、专业一些。",
+            "ru": "Желательно, чтобы упаковка выглядела аккуратно и профессионально."
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "010",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Сергей, ты уже знаешь расписание своей командировки в Сочи?",
+            "en": "Sergey, do you already know the schedule for your business trip to Sochi?",
+            "es": "Serguéi, ¿ya conoces el programa de tu viaje de negocios a Sochi?",
+            "fr": "Sergueï, tu connais déjà le programme de ton voyage d'affaires à Sotchi ?",
+            "pt": "Sergei, você já sabe a programação da sua viagem de trabalho para Sochi?",
+            "kr": "세르게이, 소치 출장 일정은 이미 알고 있어?",
+            "jp": "セルゲイ、ソチ出張のスケジュールはもう分かってる？",
+            "zh": "谢尔盖，你知道去索契出差的日程安排了吗？",
+            "ru": "Сергей, ты уже знаешь расписание своей командировки в Сочи?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, встречи назначены на вторник и среду, а в четверг я возвращаюсь.",
+            "en": "Yes, the meetings are set for Tuesday and Wednesday, and on Thursday I am coming back.",
+            "es": "Sí, las reuniones están fijadas para el martes y el miércoles, y el jueves regreso.",
+            "fr": "Oui, les réunions sont prévues mardi et mercredi, et je reviens jeudi.",
+            "pt": "Sim, as reuniões estão marcadas para terça e quarta-feira, e na quinta eu volto.",
+            "kr": "응, 미팅은 화요일이랑 수요일에 잡혀 있고, 목요일에 돌아와.",
+            "jp": "うん、会議は火曜日と水曜日にあって、木曜日に戻る予定だよ。",
+            "zh": "知道了，会议安排在周二和周三，周四我就回来。",
+            "ru": "Да, встречи назначены на вторник и среду, а в четверг я возвращаюсь."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "А есть ли у тебя время на осмотр города или это строго рабочий визит?",
+            "en": "And do you have any time to see the city, or is it strictly a work visit?",
+            "es": "¿Y tienes tiempo para ver la ciudad o es una visita estrictamente de trabajo?",
+            "fr": "Et as-tu du temps pour visiter la ville ou est-ce une visite strictement professionnelle ?",
+            "pt": "E você tem tempo para conhecer a cidade ou é estritamente uma visita de trabalho?",
+            "kr": "도시 구경할 시간도 있어, 아니면 완전히 업무 방문이야?",
+            "jp": "街を観光する時間はあるの？それとも純粋に仕事だけの訪問？",
+            "zh": "那你有时间游览一下城市，还是这完全是纯工作访问？",
+            "ru": "А есть ли у тебя время на осмотр города или это строго рабочий визит?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "К сожалению, график очень плотный. Надеюсь, успею хотя бы на ужин у моря.",
+            "en": "Unfortunately, the schedule is very tight. I hope I will at least have time for dinner by the sea.",
+            "es": "Lamentablemente, la agenda es muy apretada. Espero tener tiempo al menos para una cena junto al mar.",
+            "fr": "Malheureusement, l'emploi du temps est très chargé. J'espère avoir au moins le temps d'un dîner au bord de la mer.",
+            "pt": "Infelizmente, a agenda está muito apertada. Espero conseguir pelo menos um jantar à beira-mar.",
+            "kr": "아쉽게도 일정이 너무 빡빡해. 바닷가에서 저녁이라도 먹을 수 있으면 좋겠어.",
+            "jp": "残念ながら、スケジュールがとても詰まっているんだ。せめて海辺で夕食を食べる時間があればいいんだけど。",
+            "zh": "很遗憾，日程排得非常满。希望至少能赶上海边的一顿晚餐。",
+            "ru": "К сожалению, график очень плотный. Надеюсь, успею хотя бы на ужин у моря."
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Понимаю. Но главное — успешно провести переговоры.",
+            "en": "I understand. But the main thing is to conduct the negotiations successfully.",
+            "es": "Lo entiendo. Pero lo principal es llevar a cabo las negociaciones con éxito.",
+            "fr": "Je comprends. Mais l'essentiel est de mener les négociations avec succès.",
+            "pt": "Entendo. Mas o principal é conduzir as negociações com sucesso.",
+            "kr": "이해해. 하지만 중요한 건 협상을 잘 마치는 거잖아.",
+            "jp": "分かるよ。でも一番大事なのは交渉を成功させることだよね。",
+            "zh": "理解。但最重要的是把谈判顺利搞定。",
+            "ru": "Понимаю. Но главное — успешно провести переговоры."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Согласен. А после возвращения я сразу подготовлю подробный отчёт.",
+            "en": "Agreed. And after I get back, I will immediately prepare a detailed report.",
+            "es": "De acuerdo. Y a mi regreso, prepararé inmediatamente un informe detallado.",
+            "fr": "Je suis d'accord. Et à mon retour, je préparerai immédiatement un rapport détaillé.",
+            "pt": "Concordo. E depois do retorno, eu imediatamente preparo um relatório detalhado.",
+            "kr": "맞아. 그리고 돌아오면 바로 상세 보고서를 작성할게.",
+            "jp": "そうだね。戻ったらすぐに詳しい報告書をまとめるよ。",
+            "zh": "同意。回来后我会马上准备一份详细的报告。",
+            "ru": "Согласен. А после возвращения я сразу подготовлю подробный отчёт."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Gestionar la agenda",
+  "sets": {
+    "001": [
+      "¿Tienes un momento para revisar mi agenda de la semana?",
+      "Claro, ahora mismo la miro contigo. ¿Qué día te preocupa?",
+      "El martes tengo tres reuniones seguidas y no sé cómo organizarme.",
+      "Entiendo, eso es demasiado. Podríamos mover la última a primera hora del jueves.",
+      "Me parece bien, así tendré tiempo para preparar los informes.",
+      "Perfecto, lo anoto y te confirmo el cambio por correo."
+    ],
+    "002": [
+      "Necesito pedirte un favor con la agenda de mañana.",
+      "Dime, ¿qué necesitas cambiar?",
+      "Tengo una cita con el cliente a las diez, pero me han citado en el médico.",
+      "Vaya, qué mala suerte. ¿Quieres que la mueva a las cuatro de la tarde?",
+      "Sí, por favor, eso me vendría genial.",
+      "De acuerdo, hablo con su secretaria y te aviso en cuanto lo confirme."
+    ],
+    "003": [
+      "¿Cómo llevas la planificación de la próxima semana?",
+      "La verdad es que está bastante apretada, tengo muchas tareas pendientes.",
+      "¿Quieres que te ayude a priorizar las más urgentes?",
+      "Te lo agradecería mucho, no sé por dónde empezar.",
+      "Podemos empezar por la presentación del lunes y dejar lo demás para después.",
+      "Tienes razón, esa es la más importante. Gracias por la ayuda."
+    ],
+    "004": [
+      "He tenido que cancelar la reunión de esta tarde, ¿te ha llegado el aviso?",
+      "Sí, lo he visto, pero no me ha llegado la nueva propuesta de fecha.",
+      "Es que aún no la he fijado. ¿Qué tal el miércoles a las nueve?",
+      "El miércoles por la mañana estoy libre, así que me viene perfecto.",
+      "Entonces lo dejo confirmado para el miércoles a las nueve.",
+      "Estupendo, lo apunto en mi agenda ahora mismo."
+    ],
+    "005": [
+      "Perdona, creo que me he equivocado con la hora de nuestra cita.",
+      "¿Ah, sí? Yo tenía anotado que era a las dos.",
+      "No, era a la una, pero he tenido un imprevisto y he llegado tarde.",
+      "No te preocupes, no he esperado mucho. ¿Empezamos ya?",
+      "Sí, gracias por tu paciencia. Te pido disculpas de nuevo.",
+      "No pasa nada, estas cosas pasan. Vamos al grano."
+    ],
+    "006": [
+      "¿Me puedes recomendar una aplicación para gestionar mejor el tiempo?",
+      "Yo uso una que se llama Agenda Fácil y me va muy bien.",
+      "¿De verdad? ¿Y es complicada de usar?",
+      "Para nada, es muy intuitiva y te avisa de cada reunión con tiempo.",
+      "Pues la voy a probar este fin de semana.",
+      "Hazlo, y si necesitas ayuda para configurarla, me dices."
+    ],
+    "007": [
+      "Se me ha acumulado el trabajo y no sé cómo organizar mis tardes.",
+      "A mí me funciona dividir las tareas en bloques de dos horas.",
+      "¿Y consigues terminarlo todo así?",
+      "Casi siempre, y además me queda tiempo para descansar.",
+      "Pues voy a probar tu método la semana que viene.",
+      "Ya verás como te ayuda, a mí me cambió la rutina por completo."
+    ],
+    "008": [
+      "¿Podemos adelantar la reunión del viernes a primera hora?",
+      "Lo siento, pero el viernes por la mañana tengo otra cita fuera de la oficina.",
+      "Entonces, ¿qué te parece el jueves por la tarde?",
+      "El jueves por la tarde sí que estoy disponible sin problema.",
+      "Perfecto, lo cambio en la agenda y aviso a los demás.",
+      "Gracias por ser tan flexible con los horarios."
+    ],
+    "009": [
+      "He reservado una sala para la presentación, pero no sé si es la adecuada.",
+      "¿Para cuántas personas la necesitas?",
+      "Seremos unas quince, y necesitamos proyector.",
+      "Entonces la sala principal es la mejor opción, tiene todo el equipo.",
+      "¿Me la puedes reservar para el martes a las once?",
+      "Claro, la dejo reservada y te envío la confirmación."
+    ],
+    "010": [
+      "Estoy un poco agobiado con los plazos de entrega de este mes.",
+      "Ya me imagino, tienes muchos proyectos entre manos.",
+      "¿Crees que debería pedir ayuda a otro compañero?",
+      "Me parece una buena idea, así repartís la carga de trabajo.",
+      "Tienes razón, hablaré con el jefe para ver si es posible.",
+      "Hazlo, seguro que te apoya si le explicas bien la situación."
+    ]
+  },
+  "level": "c1",
+  "chapter_id": "CONV_ES_SCHEDULE_MANAGEMENT",
+  "id": "049",
+  "target_lang": "es"
+}

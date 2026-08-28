@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Reservar hospedagem",
+  "sets": {
+    "001": [
+      "Preciso de um quarto para duas noites, por favor.",
+      "Claro! Você prefere um quarto com vista para a praia?",
+      "Isso seria ótimo, se não for muito mais caro.",
+      "A diferença é pequena, apenas quarenta reais por noite.",
+      "Então pode ser. O café da manhã está incluído?",
+      "Sim, o café da manhã está incluído na diária."
+    ],
+    "002": [
+      "Boa tarde! Eu tenho uma reserva para este fim de semana.",
+      "Deixe-me verificar no sistema. Qual é o seu nome?",
+      "É Fernanda Almeida, reservei pelo site.",
+      "Encontrei aqui. É um quarto de casal por três noites, certo?",
+      "Isso mesmo. Vocês têm estacionamento no hotel?",
+      "Temos, mas é preciso pagar uma taxa extra por dia."
+    ],
+    "003": [
+      "Vocês ainda têm quartos disponíveis para amanhã?",
+      "Deixe-me ver... Temos um quarto individual disponível.",
+      "Qual é o valor da diária desse quarto?",
+      "A diária custa duzentos e vinte reais.",
+      "Esse valor inclui acesso à piscina?",
+      "Sim, a piscina e a academia estão inclusas."
+    ],
+    "004": [
+      "O quarto que reservei tem ar-condicionado?",
+      "Sim, todos os nossos quartos têm ar-condicionado.",
+      "Que ótimo! E o check-out é a que horas?",
+      "O check-out é ao meio-dia, mas você pode pedir late check-out.",
+      "Como funciona esse late check-out?",
+      "Você pode sair até às quinze horas pagando metade da diária."
+    ],
+    "005": [
+      "Gostaria de fazer uma reserva para o feriado.",
+      "Para quantas pessoas e quantas noites?",
+      "Serão quatro pessoas, e ficaremos duas noites.",
+      "Nesse caso, recomendo reservar dois quartos duplos.",
+      "Vocês oferecem algum desconto para grupos?",
+      "Para quatro pessoas, posso dar dez por cento de desconto."
+    ],
+    "006": [
+      "O quarto tem Wi-Fi gratuito?",
+      "Temos Wi-Fi gratuito em todas as áreas do hotel.",
+      "E o café da manhã começa a que horas?",
+      "O café é servido das seis e meia às dez horas.",
+      "Perfeito. Posso fazer o check-in mais cedo amanhã?",
+      "Se o quarto estiver pronto, não tem problema nenhum."
+    ],
+    "007": [
+      "Preciso cancelar minha reserva para a próxima semana.",
+      "Sinto muito ouvir isso. Qual é o número da reserva?",
+      "O número é cento e vinte e três, no nome de Gabriel.",
+      "Encontrei sua reserva. O cancelamento tem taxa?",
+      "Espero que não, cancelei com uma semana de antecedência.",
+      "Você está dentro do prazo, então não terá nenhuma taxa."
+    ],
+    "008": [
+      "Vocês têm quartos com duas camas de solteiro?",
+      "Temos sim, mas só restam dois desses quartos.",
+      "Preciso de um para o próximo sábado.",
+      "Vou reservar para você agora mesmo. Alguma preferência de andar?",
+      "Prefiro um andar mais alto, se for possível.",
+      "Vou colocar você no oitavo andar, com uma vista linda."
+    ],
+    "009": [
+      "O hotel oferece transporte para o aeroporto?",
+      "Oferecemos um serviço de transfer, com custo adicional.",
+      "Quanto custa o transfer para o aeroporto?",
+      "Custa oitenta reais por pessoa, com horário flexível.",
+      "E quanto tempo leva a viagem até o aeroporto?",
+      "Em média, quarenta minutos, dependendo do trânsito."
+    ],
+    "010": [
+      "Gostaria de estender minha estadia por mais uma noite.",
+      "Sem problemas! Vou verificar se o quarto está disponível.",
+      "Se não estiver, posso mudar para outro quarto?",
+      "O quarto está disponível, então você pode ficar no mesmo.",
+      "Que ótimo! Vou fazer o pagamento da noite extra agora.",
+      "Perfeito, vou preparar a nova conta para você."
+    ]
+  },
+  "level": "b2",
+  "chapter_id": "CONV_PT_ACCOMMODATION_BOOKING",
+  "id": "036",
+  "target_lang": "pt"
+}

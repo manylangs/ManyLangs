@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Opérations bancaires",
+  "sets": {
+    "001": [
+      "Bonjour, je voudrais ouvrir un compte ici.",
+      "Bien sûr, avez-vous une pièce d'identité ?",
+      "Oui, voici mon passeport et un justificatif de domicile.",
+      "Parfait, je vais préparer le dossier.",
+      "Est-ce qu'il y a des frais pour la carte bancaire ?",
+      "Non, la carte est gratuite la première année."
+    ],
+    "002": [
+      "Je dois transférer de l'argent à un ami.",
+      "Vous pouvez le faire directement sur l'application.",
+      "Ah bon, c'est aussi simple que ça ?",
+      "Oui, il suffit d'entrer son numéro de compte.",
+      "Et l'argent arrive tout de suite ?",
+      "En général, oui, c'est immédiat."
+    ],
+    "003": [
+      "Je crois que j'ai dépassé mon découvert autorisé.",
+      "Ah mince, il faut vérifier votre solde.",
+      "Je ne comprends pas, j'avais pourtant fait attention.",
+      "Il y a peut-être un prélèvement automatique.",
+      "Vous pouvez me montrer le détail des opérations ?",
+      "Bien sûr, je vous imprime le relevé tout de suite."
+    ],
+    "004": [
+      "Je voudrais faire opposition sur ma carte.",
+      "Vous l'avez perdue ou on vous l'a volée ?",
+      "Je pense qu'on me l'a volée dans le métro.",
+      "Ne vous inquiétez pas, je la bloque immédiatement.",
+      "Et pour la nouvelle carte, ça prend combien de temps ?",
+      "Vous la recevrez sous cinq jours ouvrés."
+    ],
+    "005": [
+      "Je souhaite ouvrir un livret d'épargne.",
+      "C'est une bonne idée pour mettre de l'argent de côté.",
+      "Quel est le taux d'intérêt actuellement ?",
+      "Il est de trois pour cent par an.",
+      "C'est intéressant, je vais prendre ça.",
+      "Très bien, je m'occupe de l'ouverture."
+    ],
+    "006": [
+      "J'ai reçu un message pour un paiement suspect.",
+      "C'est peut-être une tentative de fraude.",
+      "Qu'est-ce que je dois faire alors ?",
+      "Ne cliquez sur aucun lien et appelez-nous.",
+      "Je vous appelle tout de suite alors.",
+      "C'est la bonne réaction, on vérifie ensemble."
+    ],
+    "007": [
+      "Je voudrais augmenter le plafond de ma carte.",
+      "Pour quel montant souhaitez-vous le passer ?",
+      "À deux mille euros par semaine.",
+      "C'est possible, mais il faudra justifier.",
+      "C'est pour un voyage à l'étranger.",
+      "Dans ce cas, je fais la modification tout de suite."
+    ],
+    "008": [
+      "Je n'arrive pas à me connecter à mon espace client.",
+      "Vous avez essayé de réinitialiser votre mot de passe ?",
+      "Oui, mais je ne reçois pas le code par SMS.",
+      "Vérifiez que votre numéro est bien à jour.",
+      "Ah, j'ai changé de numéro le mois dernier.",
+      "Voilà le problème, je le mets à jour dans le système."
+    ],
+    "009": [
+      "Je voudrais clôturer mon compte ici.",
+      "Puis-je vous demander la raison de cette décision ?",
+      "Je déménage à l'étranger pour le travail.",
+      "Je comprends, c'est une bonne raison.",
+      "Est-ce qu'il y a des frais pour la clôture ?",
+      "Non, c'est gratuit, mais il faut un solde à zéro."
+    ],
+    "010": [
+      "J'ai besoin d'un chéquier, s'il vous plaît.",
+      "Vous pouvez en commander sur l'application.",
+      "Je préfère le faire ici directement.",
+      "Pas de souci, je vous en commande un.",
+      "Je peux venir le chercher quand ?",
+      "Il sera disponible dans trois jours."
+    ]
+  },
+  "level": "b2",
+  "chapter_id": "CONV_FR_BANK_SERVICES",
+  "id": "031",
+  "target_lang": "fr"
+}

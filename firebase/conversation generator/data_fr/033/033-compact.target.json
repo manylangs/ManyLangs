@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Administration",
+  "sets": {
+    "001": [
+      "Bonjour, je voudrais refaire ma carte d'identité.",
+      "Bonjour madame. Avez-vous pris rendez-vous en ligne ?",
+      "Oui, j'ai un rendez-vous à dix heures trente.",
+      "Parfait. Je vais vérifier votre dossier. Vous avez votre ancienne carte ?",
+      "Oui, la voici, avec ma photo et mon justificatif de domicile.",
+      "Merci, tout est en ordre. Vous pourrez la récupérer dans trois semaines."
+    ],
+    "002": [
+      "Bonjour, je viens pour déclarer un changement d'adresse.",
+      "Très bien. Vous avez un justificatif de domicile récent ?",
+      "Oui, j'ai une facture d'électricité à mon nouveau nom.",
+      "Parfait. Je mets à jour votre dossier tout de suite.",
+      "Est-ce que je dois prévenir d'autres services moi-même ?",
+      "Oui, il faudra contacter la sécurité sociale et la banque séparément."
+    ],
+    "003": [
+      "Bonjour, je souhaite demander un extrait d'acte de naissance.",
+      "Bonjour. Pour vous-même ou pour un membre de votre famille ?",
+      "Pour moi-même, j'en ai besoin pour mon dossier de mariage.",
+      "D'accord. Vous pouvez le demander directement sur le site de la mairie.",
+      "Ah, c'est possible en ligne ? C'est plus simple.",
+      "Oui, et vous le recevrez par courrier sous huit jours."
+    ],
+    "004": [
+      "Bonjour, je viens pour faire renouveler mon passeport.",
+      "Bonjour. Avez-vous rempli le formulaire en ligne au préalable ?",
+      "Oui, j'ai reçu un numéro de dossier. Le voici.",
+      "Merci. Je vais prendre vos empreintes digitales et votre photo.",
+      "D'accord. Est-ce que le passeport sera prêt avant mon voyage ?",
+      "Comptez environ quatre semaines, c'est le délai habituel."
+    ],
+    "005": [
+      "Bonjour, je voudrais m'inscrire sur les listes électorales.",
+      "Bonjour. Êtes-vous déjà inscrite dans une autre commune ?",
+      "Non, c'est ma première inscription ici.",
+      "Très bien. Je vais remplir le formulaire avec vous. Votre état civil ?",
+      "Camille Dubois, née le quinze mars mille neuf cent quatre-vingt-dix.",
+      "Parfait. Vous recevrez votre carte d'électeur par courrier avant les élections."
+    ],
+    "006": [
+      "Bonjour, j'ai besoin d'un certificat de non-gage pour ma voiture.",
+      "Bonjour. Vous pouvez le télécharger directement sur le site de l'agence.",
+      "Ah bon ? Je pensais qu'il fallait venir ici.",
+      "Non, c'est en ligne, c'est plus rapide. Vous avez votre numéro d'immatriculation ?",
+      "Oui, je l'ai sur ma carte grise. Je vais essayer ça.",
+      "Si vous avez un souci, revenez nous voir, on vous aidera."
+    ],
+    "007": [
+      "Bonjour, je viens pour une demande de bourse pour mes études.",
+      "Bonjour. Avez-vous déjà constitué votre dossier social étudiant ?",
+      "Oui, j'ai tout rempli en ligne, mais on me demande un justificatif.",
+      "De quel justificatif s'agit-il ? Des revenus de vos parents ?",
+      "Oui, leur dernier avis d'imposition.",
+      "Il faut le joindre sur le portail avant la fin du mois."
+    ],
+    "008": [
+      "Bonjour, je voudrais faire une carte grise pour mon nouveau véhicule.",
+      "Bonjour. Vous avez le certificat de cession du vendeur ?",
+      "Oui, je l'ai ici, avec le contrôle technique et ma pièce d'identité.",
+      "Parfait. Je vais faire la demande en ligne pour vous.",
+      "Combien de temps ça prendra pour recevoir la carte ?",
+      "En général, vous la recevez sous une semaine à votre domicile."
+    ],
+    "009": [
+      "Bonjour, je viens pour un problème avec ma carte vitale.",
+      "Bonjour. Que se passe-t-il exactement ?",
+      "Elle ne fonctionne plus chez le pharmacien, il dit qu'elle est désactivée.",
+      "Je vois. Avez-vous changé de situation récemment ? Une nouvelle adresse ?",
+      "Oui, j'ai déménagé le mois dernier.",
+      "C'est pour ça. Il faut mettre à jour votre dossier auprès de la sécurité sociale."
+    ],
+    "010": [
+      "Bonjour, je souhaite obtenir un duplicata de mon permis de conduire.",
+      "Bonjour. Vous avez déclaré la perte en ligne sur le site de l'agence ?",
+      "Oui, j'ai fait la pré-déclaration et j'ai reçu un numéro.",
+      "Très bien. Je vais vérifier votre dossier et prendre une photo d'identité.",
+      "Est-ce que je dois payer quelque chose aujourd'hui ?",
+      "Non, le paiement se fait en ligne lors de la validation du dossier."
+    ]
+  },
+  "level": "b2",
+  "chapter_id": "CONV_FR_GOVERNMENT_OFFICE",
+  "id": "033",
+  "target_lang": "fr"
+}

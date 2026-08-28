@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "La oficina administrativa",
+  "sets": {
+    "001": [
+      "Buenos días, necesito empadronarme en este municipio.",
+      "Buenos días, claro. ¿Tiene usted cita previa?",
+      "No, no la tengo. ¿Es imprescindible?",
+      "Sí, lo es. Pero puede pedirla ahora para mañana por la mañana.",
+      "Vale, entonces pido la cita para mañana. Muchas gracias.",
+      "A usted. No olvide traer el contrato de alquiler y el DNI."
+    ],
+    "002": [
+      "Quería solicitar el certificado de empadronamiento.",
+      "Muy bien, ¿me deja su documento de identidad, por favor?",
+      "Aquí tiene. ¿Cuánto tiempo tarda en emitirse?",
+      "Se lo damos en el momento, sin ningún coste.",
+      "Perfecto, así me lo llevo ya. Muchas gracias.",
+      "De nada. Espere un momento mientras lo imprimo."
+    ],
+    "003": [
+      "He perdido mi tarjeta sanitaria y necesito una nueva.",
+      "Lo siento, para eso tiene que pedir cita en el centro de salud.",
+      "¿No me pueden ayudar aquí directamente?",
+      "No, este trámite se gestiona en el centro de salud de su zona.",
+      "Entendido, entonces iré allí. ¿Qué documentos necesito?",
+      "Solo el DNI y un formulario que le darán en recepción."
+    ],
+    "004": [
+      "Quiero renovar mi pasaporte, ¿qué tengo que hacer?",
+      "Primero tiene que pedir cita por internet o por teléfono.",
+      "Ya lo he intentado, pero no hay citas hasta dentro de un mes.",
+      "Le recomiendo que mire cada mañana, porque suelen salir huecos.",
+      "Vale, lo intentaré mañana temprano. ¿Cuánto cuesta la renovación?",
+      "Treinta euros, y se paga en el banco antes de venir."
+    ],
+    "005": [
+      "Necesito un certificado de antecedentes penales para un trabajo.",
+      "Puede solicitarlo aquí mismo si trae su DNI en vigor.",
+      "Sí, lo tengo aquí. ¿Cuánto tarda en llegar?",
+      "Normalmente se envía por correo en unos diez días hábiles.",
+      "¿Y no hay manera de obtenerlo antes?",
+      "Si tiene prisa, puede pedirlo en línea y lo recibe en dos días."
+    ],
+    "006": [
+      "Buenos días, vengo a recoger mi informe de vida laboral.",
+      "¿Lo solicitó usted por internet la semana pasada?",
+      "Sí, lo pedí el lunes y me dijeron que estuviera listo hoy.",
+      "Un momento, déjeme comprobarlo en el sistema.",
+      "Claro, no tengo prisa.",
+      "Aquí está, todo correcto. Que tenga un buen día."
+    ],
+    "007": [
+      "Quiero cambiar mi dirección en el padrón municipal.",
+      "De acuerdo, ¿me dice su nueva dirección, por favor?",
+      "Calle del Sol, número quince, tercero derecha.",
+      "Perfecto, ¿tiene algún documento que lo confirme?",
+      "Sí, tengo el contrato de alquiler firmado.",
+      "Muy bien, en unos minutos le doy el certificado actualizado."
+    ],
+    "008": [
+      "Necesito una cita para renovar el DNI de mi hija.",
+      "¿Es menor de edad? Entonces tiene que venir con ella.",
+      "Sí, tiene doce años. ¿Qué horario me recomienda?",
+      "Por la tarde hay menos gente, sobre las cuatro.",
+      "Perfecto, pediré la cita para el jueves a las cuatro.",
+      "Muy bien, no olviden traer una foto reciente."
+    ],
+    "009": [
+      "He recibido una multa y quiero saber cómo recurrirla.",
+      "Tiene que presentar un escrito de alegaciones en este registro.",
+      "¿Y cuál es el plazo para hacerlo?",
+      "Tiene veinte días hábiles desde la notificación.",
+      "Vale, entonces la presentaré esta semana. ¿Necesito algún formulario?",
+      "Sí, le doy el modelo oficial y le ayudo a rellenarlo."
+    ],
+    "010": [
+      "Quiero solicitar una ayuda para el alquiler de mi vivienda.",
+      "Muy bien, ¿sabe si cumple los requisitos económicos?",
+      "Creo que sí, pero no estoy segura del límite de ingresos.",
+      "Se lo compruebo ahora mismo con su declaración de la renta.",
+      "Estupendo, así salgo de dudas.",
+      "Efectivamente, cumple los requisitos. Le explico cómo presentar la solicitud."
+    ]
+  },
+  "level": "b2",
+  "chapter_id": "CONV_ES_GOVERNMENT_OFFICE",
+  "id": "033",
+  "target_lang": "es"
+}

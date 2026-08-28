@@ -1,0 +1,70 @@
+{
+  "chapter_id": "conversation_shorts_a1_001.runtime.json",
+  "target_lang": "zh",
+  "domain_scores": {
+    "speaker_consistency": {
+      "score": 10,
+      "weight": 10,
+      "notes": "화자 A/B가 세트 내에서 자연스럽게 번갈아 등장하며, 각 발화가 이전 발화에 자연스럽게 반응한다. 대화 관계(친구 사이)가 일관되게 유지된다."
+    },
+    "dialogue_function_accuracy": {
+      "score": 10,
+      "weight": 10,
+      "notes": "인사, 날씨 언급, 질문, 감사, 답례, 제안, 동의 등 대화 기능이 명확하고 자연스럽게 연결된다. 각 발화의 의도가 분명하다."
+    },
+    "spoken_naturalness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "전체적으로 구어체 표현이 자연스럽다. '是啊', '还没吃呢', '我们快吃吧' 등이 실제 중국어 회화에서 자주 쓰이는 표현이다. 다만 '阳光暖暖的'은 약간 문어적인 느낌이 있어 구어체로는 '阳光暖暖的'보다 '太阳暖暖的'가 더 자연스러울 수 있다."
+    },
+    "register_appropriateness": {
+      "score": 10,
+      "weight": 10,
+      "notes": "친구 사이의 대화에 적합한 반말체(你)를 일관되게 사용했다. 격식 수준이 상황에 맞게 적절하다."
+    },
+    "grammar_and_notation": {
+      "score": 10,
+      "weight": 10,
+      "notes": "문법적으로 오류가 없다. 문장 부호(마침표, 느낌표, 물음표)가 적절하게 사용되었다. 양사가 필요한 부분은 없지만, 사용된 부분에서 오류가 없다."
+    },
+    "situational_practicality": {
+      "score": 9,
+      "weight": 10,
+      "notes": "아침 인사, 날씨, 식사, 수업 준비 등 A1 레벨 학습자에게 매우 실용적이고 일상적인 상황을 다룬다. 다만 한 세트만으로는 상황의 다양성이 다소 제한적이다."
+    },
+    "cultural_neutrality": {
+      "score": 10,
+      "weight": 5,
+      "notes": "중국어 원문이지만, 특정 문화에 국한되지 않는 보편적인 상황(아침 인사, 날씨, 빵 나눠 먹기)을 다루고 있어 문화적 중립성을 유지한다."
+    },
+    "tts_readiness": {
+      "score": 10,
+      "weight": 5,
+      "notes": "모든 문장이 TTS로 읽기에 적합한 길이와 구조를 가지고 있다. 특수 기호나 읽기 어려운 표현이 없다."
+    },
+    "mirror_fidelity": {
+      "score": 10,
+      "weight": 10,
+      "notes": "target과 zh 필드가 모든 문장에서 완전히 일치한다. 미러 관계가 정확하게 유지된다."
+    },
+    "market_competitiveness": {
+      "score": 9,
+      "weight": 15,
+      "notes": "A1 레벨의 기초 회화 교재로서 시중 서비스와 비교해 손색없는 품질이다. 자연스러운 대화와 실용적인 주제를 갖추고 있다. 다만, 챕터 내 세트 수(1개)가 적어 다양한 상황을 접하기에는 다소 부족할 수 있다."
+    }
+  },
+  "final_score": 95,
+  "market_benchmark": {
+    "comparable_services": [
+      "ChinesePod",
+      "Duolingo Chinese (Mandarin) Conversations",
+      "HelloChinese",
+      "Pimsleur Mandarin Chinese"
+    ],
+    "estimated_relative_position": "시중 주요 중국어 회화 학습 서비스의 A1 레벨 콘텐츠와 비교했을 때, 대화의 자연스러움과 실용성, 문법적 정확성 측면에서 최상위권에 위치한다. 특히, 한국어 번역의 품질이 우수하여 한국인 학습자에게 높은 만족도를 제공할 것으로 예상된다.",
+    "disclaimer": "실시간 웹 검색 없는 학습 지식 기반 추정치"
+  },
+  "blocking_issues": [],
+  "priority_fixes": [],
+  "pass": true
+}

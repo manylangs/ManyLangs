@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S003",
+  "target_language": "en",
+  "cefr_level": "A2",
+  "source_dialogue": {
+    "source_scene_id": "S003",
+    "source_line_ids": [
+      "L001",
+      "L002",
+      "L003",
+      "L004",
+      "L005",
+      "L006",
+      "L007",
+      "L008"
+    ]
+  },
+  "key_expressions": [
+    {
+      "key_expression_id": "KE001",
+      "source_line_ids": [
+        "L002"
+      ],
+      "expression": "What is the purpose of your visit?",
+      "meaning": "방문 목적이 무엇인가요? (입국 심사 시 자주 묻는 질문)",
+      "usage": "입국 심사관이 여행자의 방문 목적을 물을 때 사용하는 공식적인 질문입니다. 주로 공항이나 국경에서 사용되며, 'Why are you visiting?'보다 격식 있는 표현입니다.",
+      "context": "입국 심사관이 지은에게 미국 방문 목적을 묻는 상황입니다.",
+      "communicative_function": "asking for information",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "What's the purpose of your trip?",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE002",
+      "source_line_ids": [
+        "L003"
+      ],
+      "expression": "I'm a tourist.",
+      "meaning": "저는 관광객입니다.",
+      "usage": "자신이 관광 목적으로 방문했음을 밝힐 때 사용하는 간단하고 직접적인 표현입니다. 입국 심사, 호텔 체크인, 관광 안내소 등에서 자주 쓰입니다.",
+      "context": "지은이 입국 심사관에게 자신이 관광객임을 밝히는 상황입니다.",
+      "communicative_function": "stating purpose of visit",
+      "difficulty": "A1",
+      "priority": "core",
+      "variation": "I'm here as a tourist.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE003",
+      "source_line_ids": [
+        "L004"
+      ],
+      "expression": "How long will you stay?",
+      "meaning": "얼마나 오래 머무를 예정인가요?",
+      "usage": "상대방의 체류 기간을 물을 때 사용하는 일반적인 질문입니다. 입국 심사, 호텔, 친구와의 대화 등 다양한 상황에서 쓸 수 있습니다.",
+      "context": "입국 심사관이 지은이의 미국 체류 기간을 묻는 상황입니다.",
+      "communicative_function": "asking about time",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "How long are you planning to stay?",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE004",
+      "source_line_ids": [
+        "L005"
+      ],
+      "expression": "About one week.",
+      "meaning": "약 일주일이요.",
+      "usage": "체류 기간을 물어봤을 때 대략적인 기간을 답할 때 사용합니다. 'About'을 붙이면 '대략'이라는 뜻으로, 정확하지 않아도 될 때 자연스럽게 쓸 수 있습니다.",
+      "context": "지은이의 미국 체류 기간이 약 일주일임을 입국 심사관에게 답하는 상황입니다.",
+      "communicative_function": "giving information",
+      "difficulty": "A1",
+      "priority": "useful",
+      "variation": null,
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE005",
+      "source_line_ids": [
+        "L006"
+      ],
+      "expression": "Where will you stay in New York?",
+      "meaning": "뉴욕에서 어디에 머무를 예정인가요?",
+      "usage": "상대방이 특정 도시에 머무는 장소를 물을 때 사용하는 질문입니다. 'Where are you staying?'과 비슷하지만, 'will'을 사용해 미래 계획을 더 명확히 묻는 느낌입니다.",
+      "context": "입국 심사관이 지은이의 뉴욕 내 숙소 위치를 묻는 상황입니다.",
+      "communicative_function": "asking for information",
+      "difficulty": "A2",
+      "priority": "core",
+      "variation": "Where are you staying in New York?",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE006",
+      "source_line_ids": [
+        "L007"
+      ],
+      "expression": "I have a hotel in Manhattan.",
+      "meaning": "맨해튼에 호텔을 예약했습니다.",
+      "usage": "숙소가 어디인지 물어봤을 때, 특정 지역에 호텔을 예약했다고 답할 때 사용합니다. 'I have a hotel'은 '호텔을 예약했다'는 의미로 자연스럽게 쓰입니다.",
+      "context": "지은이가 입국 심사관에게 맨해튼에 호텔을 예약했다고 답하는 상황입니다.",
+      "communicative_function": "giving information",
+      "difficulty": "A2",
+      "priority": "useful",
+      "variation": null,
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    },
+    {
+      "key_expression_id": "KE007",
+      "source_line_ids": [
+        "L008"
+      ],
+      "expression": "Enjoy your trip.",
+      "meaning": "즐거운 여행 되세요.",
+      "usage": "여행을 떠나는 사람에게 건네는 따뜻한 인사말입니다. 공항, 호텔, 여행사 등 다양한 곳에서 자연스럽게 사용할 수 있습니다.",
+      "context": "입국 심사가 끝난 후, 입국 심사관이 지은이에게 여행을 즐기라고 인사하는 상황입니다.",
+      "communicative_function": "expressing good wishes",
+      "difficulty": "A1",
+      "priority": "core",
+      "variation": "Have a great trip.",
+      "common_mistake": null,
+      "review": {
+        "should_review": false,
+        "review_reason": null
+      }
+    }
+  ],
+  "validation": {
+    "expression_count": 7,
+    "all_expressions_exist_in_dialogue": true,
+    "source_lines_valid": true,
+    "cefr_appropriate": true
+  }
+}

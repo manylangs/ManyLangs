@@ -1,0 +1,90 @@
+{
+  "lang": "target",
+  "title": "Atención al cliente",
+  "sets": {
+    "001": [
+      "Buenos días, llamaba porque tengo un problema con el pedido que hice la semana pasada.",
+      "Buenos días, siento las molestias. ¿Me puede dar el número de pedido para localizarlo?",
+      "Claro, el número es el cuatrocientos veinticinco. Lo recibí ayer, pero falta una pieza.",
+      "Entiendo, lamento mucho que haya llegado incompleto. Voy a revisarlo ahora mismo.",
+      "Se lo agradezco. ¿Cuánto tiempo puede tardar la solución?",
+      "En unos diez minutos le confirmo el envío de la pieza que falta."
+    ],
+    "002": [
+      "Hola, quería devolver un artículo que compré la semana pasada porque no me sirve la talla.",
+      "Hola, no se preocupe. ¿Tiene el ticket de compra o el albarán?",
+      "Sí, aquí tiene el ticket. La camisa es una talla pequeña y necesito una mediana.",
+      "Perfecto, la cambio sin problema. ¿Prefiere que se la enviemos o la recoge en tienda?",
+      "Mejor que me la envíen a casa, si es posible.",
+      "Por supuesto, la tendrá en dos o tres días laborables."
+    ],
+    "003": [
+      "Buenos días, estoy intentando cancelar mi suscripción desde hace dos días, pero la web no me lo permite.",
+      "Buenos días, lamento las dificultades. ¿Me permite acceder a su cuenta para ver qué ocurre?",
+      "Sí, claro. El correo es el que aparece en el contrato.",
+      "Ya veo el problema, hay una incidencia con el sistema de pagos. Se lo soluciono en un momento.",
+      "Muchas gracias, porque ya no sabía qué hacer.",
+      "No se preocupe, ya está todo resuelto. Recibirá la confirmación por correo."
+    ],
+    "004": [
+      "Hola, llamaba porque el servicio de internet lleva dos días sin funcionar en mi oficina.",
+      "Hola, siento mucho las molestias. ¿Ha probado a reiniciar el router?",
+      "Sí, lo he reiniciado varias veces, pero sigue sin haber conexión.",
+      "Entendido, entonces voy a abrir una incidencia con el técnico. ¿Qué día le vendría bien?",
+      "Cuanto antes, por favor. Mañana por la mañana estaría perfecto.",
+      "De acuerdo, el técnico pasará mañana entre las nueve y las once."
+    ],
+    "005": [
+      "Buenos días, he recibido una factura con un cargo que no reconozco.",
+      "Buenos días, voy a revisarlo con usted. ¿Me indica el importe que aparece?",
+      "Son cuarenta y nueve euros, pero yo no contraté ningún servicio extra.",
+      "Tiene razón, veo que se trata de un error administrativo. Procedo a anularlo.",
+      "¿Me puede confirmar que no se volverá a repetir?",
+      "Sí, lo dejo anotado en su expediente para que no vuelva a ocurrir."
+    ],
+    "006": [
+      "Hola, quería informarme sobre el estado de mi reclamación, la presenté hace dos semanas.",
+      "Hola, déme un momento y la busco en el sistema. ¿Me recuerda su nombre?",
+      "Me llamo Laura, y el número de reclamación es el trescientos ochenta.",
+      "Ya la tengo, está en proceso de revisión. Le informaremos en unos días.",
+      "¿Podría darme una fecha aproximada?",
+      "Calculamos que estará resuelta antes de que termine el mes."
+    ],
+    "007": [
+      "Buenos días, necesito cambiar la dirección de entrega de un pedido que aún no ha salido.",
+      "Buenos días, claro, dígame el número de pedido y la nueva dirección.",
+      "El pedido es el número quinientos doce, y la dirección es la calle Mayor, número veinte.",
+      "Perfecto, ya he actualizado los datos. El pedido saldrá mañana sin problema.",
+      "Me alegro mucho, gracias por la rapidez.",
+      "A usted, cualquier cosa que necesite, no dude en decírmelo."
+    ],
+    "008": [
+      "Hola, llamaba porque el producto que recibí está defectuoso y no funciona.",
+      "Hola, lo siento mucho. ¿Me puede describir cuál es el problema exactamente?",
+      "La batería no carga, aunque la he dejado enchufada toda la noche.",
+      "Entendido, eso no es normal. Le enviamos uno nuevo de inmediato.",
+      "¿Tengo que devolver el que está roto?",
+      "Sí, le enviaremos una etiqueta para que nos lo devuelva sin coste alguno."
+    ],
+    "009": [
+      "Buenos días, quería solicitar una copia de mi contrato porque no la encuentro.",
+      "Buenos días, por supuesto. Se la envío por correo electrónico en unos minutos.",
+      "Muchas gracias, la necesito para unos trámites en el banco.",
+      "No se preocupe, le llegará hoy mismo. ¿Quiere que se la envíe también por correo postal?",
+      "No hace falta, con el correo electrónico es suficiente.",
+      "Perfecto, entonces queda hecho. Que tenga un buen día."
+    ],
+    "010": [
+      "Hola, he recibido un correo suyo sobre una promoción, pero el enlace no funciona.",
+      "Hola, gracias por avisarnos. Voy a comprobar si hay alguna incidencia con el enlace.",
+      "Sí, me gustaría aprovechar la oferta antes de que termine.",
+      "Tiene razón, el enlace tenía un error. Se lo envío de nuevo actualizado.",
+      "Perfecto, así podré completar la compra sin problemas.",
+      "Disculpe las molestias, espero que disfrute de la oferta."
+    ]
+  },
+  "level": "c1",
+  "chapter_id": "CONV_ES_CLIENT_COMMUNICATION",
+  "id": "046",
+  "target_lang": "es"
+}

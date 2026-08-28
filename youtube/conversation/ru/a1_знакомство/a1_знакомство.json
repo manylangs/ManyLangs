@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "series": "conversation_shorts",
+    "level": "a1",
+    "id": "002"
+  },
+  "title": {
+    "target": "Знакомство",
+    "en": "Getting Acquainted",
+    "es": "Conocerse",
+    "fr": "Faire connaissance",
+    "pt": "Conhecimento",
+    "kr": "소개",
+    "zh": "认识",
+    "jp": "知り合い",
+    "ru": "Знакомство"
+  },
+  "blocks": [
+    {
+      "set_id": "001",
+      "lines": [
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Привет! Я Анна. А как тебя зовут?",
+            "en": "Hi! I'm Anna. And what's your name?",
+            "es": "¡Hola! Soy Anna. ¿Y tú, cómo te llamas?",
+            "fr": "Salut ! Je suis Anna. Et toi, tu t'appelles comment ?",
+            "pt": "Olá! Eu sou a Ana. E como te chamas?",
+            "kr": "안녕! 나는 안나야. 너는 이름이 뭐야?",
+            "zh": "你好！我是安娜。你呢，你叫什么名字？",
+            "jp": "こんにちは！私はアンナです。あなたの名前は何ですか？",
+            "ru": "Привет! Я Анна. А как тебя зовут?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Привет, Анна! Я Дмитрий. Очень приятно!",
+            "en": "Hi, Anna! I'm Dmitry. Nice to meet you!",
+            "es": "¡Hola, Anna! Soy Dmitri. ¡Mucho gusto!",
+            "fr": "Salut, Anna ! Je suis Dmitri. Enchanté !",
+            "pt": "Olá, Ana! Eu sou o Dmitri. Muito prazer!",
+            "kr": "안녕, 안나! 나는 드미트리야. 만나서 반가워!",
+            "zh": "你好，安娜！我是德米特里。很高兴认识你！",
+            "jp": "こんにちは、アンナ！私はドミトリーです。はじめまして！",
+            "ru": "Привет, Анна! Я Дмитрий. Очень приятно!"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Мне тоже очень приятно. Ты учишься в университете?",
+            "en": "Nice to meet you too. Do you study at the university?",
+            "es": "El gusto es mío. ¿Estudias en la universidad?",
+            "fr": "Moi aussi, enchantée. Tu étudies à l'université ?",
+            "pt": "O prazer é meu. Estudas na universidade?",
+            "kr": "나도 만나서 정말 반가워. 너 대학교에 다녀?",
+            "zh": "我也很高兴认识你。你在上大学吗？",
+            "jp": "私もはじめまして。あなたは大学で勉強していますか？",
+            "ru": "Мне тоже очень приятно. Ты учишься в университете?"
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Да, я учусь на первом курсе. А ты?",
+            "en": "Yes, I'm a first-year student. And you?",
+            "es": "Sí, estoy en primer curso. ¿Y tú?",
+            "fr": "Oui, je suis en première année. Et toi ?",
+            "pt": "Sim, estou no primeiro ano. E tu?",
+            "kr": "응, 나는 1학년이야. 너는?",
+            "zh": "是的，我上大一。你呢？",
+            "jp": "はい、私は一年生です。あなたは？",
+            "ru": "Да, я учусь на первом курсе. А ты?"
+          }
+        },
+        {
+          "speaker": "A",
+          "sentences": {
+            "target": "Я тоже студентка. Я учусь на факультете журналистики.",
+            "en": "I'm a student too. I study journalism.",
+            "es": "Yo también soy estudiante. Estudio en la facultad de periodismo.",
+            "fr": "Je suis aussi étudiante. Je suis à la faculté de journalisme.",
+            "pt": "Eu também sou estudante. Estudo na faculdade de jornalismo.",
+            "kr": "나도 학생이야. 나는 저널리즘 학부에 다녀.",
+            "zh": "我也是学生。我在新闻系学习。",
+            "jp": "私も学生です。ジャーナリズム学部で勉強しています。",
+            "ru": "Я тоже студентка. Я учусь на факультете журналистики."
+          }
+        },
+        {
+          "speaker": "B",
+          "sentences": {
+            "target": "Здорово! Может, как-нибудь пообедаем вместе?",
+            "en": "That's great! Maybe we could have lunch together sometime?",
+            "es": "¡Genial! ¿Quizás almorzamos juntos algún día?",
+            "fr": "Super ! On pourrait déjeuner ensemble un de ces jours ?",
+            "pt": "Que fixe! Talvez um dia almocemos juntos?",
+            "kr": "좋다! 언제 한번 같이 점심 먹을래?",
+            "zh": "太好了！也许哪天我们一起吃个午饭？",
+            "jp": "すごいですね！いつか一緒に昼ご飯を食べませんか？",
+            "ru": "Здорово! Может, как-нибудь пообедаем вместе?"
+          }
+        }
+      ]
+    }
+  ]
+}

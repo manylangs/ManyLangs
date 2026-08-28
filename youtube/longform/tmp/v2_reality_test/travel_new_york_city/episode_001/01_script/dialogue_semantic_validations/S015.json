@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "content_version": "1.0",
+    "revision": 1,
+    "generated_by": {
+      "type": "ai",
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "episode_id": "travel_new_york_city_ep001",
+  "scene_id": "S015",
+  "overall_pass": true,
+  "severity": "pass",
+  "must_happen_checks": [
+    {
+      "requirement": "Jieun walks to her hotel using her phone for directions",
+      "pass": true,
+      "evidence": "Jieun asks 'is this the right way to the Manhattan Hotel?' which implies she is navigating to the hotel, likely using her phone. The response 'it's just two blocks ahead' confirms she is walking."
+    },
+    {
+      "requirement": "Jieun arrives at the hotel entrance",
+      "pass": true,
+      "evidence": "The dialogue confirms she is close ('two blocks ahead') and the scene_state carry_out records 'Jieun has arrived at her hotel in Manhattan'."
+    },
+    {
+      "requirement": "Jieun takes a moment to look at the building",
+      "pass": true,
+      "evidence": "The scene_state carry_out records 'She is standing at the entrance, looking at the building'. The dialogue's final exchange ('Have a nice stay') implies she is at the hotel entrance."
+    }
+  ],
+  "must_not_happen_checks": [
+    {
+      "requirement": "Do not move Jieun past the hotel entrance",
+      "pass": true,
+      "evidence": "The dialogue ends with Jieun at the hotel entrance, receiving a welcome from the staff. There is no indication she has gone inside or past the entrance."
+    },
+    {
+      "requirement": "Do not introduce any problems with finding the hotel",
+      "pass": true,
+      "evidence": "The dialogue is straightforward. Jieun asks for directions and receives a clear, positive answer. No obstacles or difficulties are introduced."
+    }
+  ],
+  "continuity_pass": true,
+  "surprise_pass": true,
+  "protagonist_pass": true,
+  "naturalness_pass": true,
+  "issues": []
+}

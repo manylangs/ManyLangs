@@ -6,7 +6,7 @@ ManyLangs Facebook Uploader
          facebook/{Language}/{Series}/{Level}/{topic_folder}/{topic_folder}.fx.mp4
      예)  facebook/English/Conversation/A1/airport_greetings/airport_greetings.fx.mp4
           facebook/Korean/Conversation/A1/...
-  2) 언어 → 시리즈 → 레벨 → 영상(주제 폴더) 순서로 번호 선택
+  2) 언어 → 시리즈 → 레벨 → 영상(주제) 폴더 순서로 번호 선택
   3) 선택한 폴더 안의 {topic_folder}.fx.mp4 를 찾아 Facebook 페이지에 동영상 게시
   4) 캡션에는 언어/레벨별 YouTube 재생목록(Playlist) URL을 자동으로 사용
   5) 자막 안내 문구도 자동 생성 (자막 지원 8종 중 입력 언어 제외)
@@ -29,8 +29,10 @@ ManyLangs Facebook Uploader
   - 이제 이미지 앨범이 아니라 동영상 게시물이므로 Graph API의
     /{page-id}/photos 가 아니라 /{page-id}/videos 로 업로드합니다.
   - .env.local 에 FB_ACCESS_TOKEN, FB_PAGE_ID 가 필요합니다.
-  - PLAYLIST_URLS 는 PLAYLIST_URLS[lang_code][series_name] = {"A1": url, ...} 구조입니다.
-    아직 채워 넣지 않은 언어+시리즈 조합으로 게시하면 에러가 납니다.
+  - PLAYLIST_URLS 는 아래 구조를 따릅니다.
+    * 영어(en)는 A1~C2 통합 URL 1개만 가집니다 (수정됨).
+    * 그 외 언어(현재 kr, es, fr, pt, ru, jp, zh)는 A1~C2 통합 URL 1개만 가집니다.
+    * get_playlist_urls() 함수가 자동으로 구조를 감지하여 캡션에 적절히 표시합니다.
   - 게시할 .fx.mp4가 없으면(assemble_social.py를 아직 안 돌렸으면) 에러가 납니다.
     먼저 assemble_social.py로 해당 폴더의 mp4를 만들어 두세요.
   - ⚠️ assemble_social.py 쪽 출력 경로도 이 새 구조(Language/Series/Level/topic/)에
@@ -100,12 +102,16 @@ MANYLANGS_TAGLINE = (
 #
 # "name" 값이 그대로 facebook/{Language}/ 폴더명과
 # 대소문자 무시하고 매칭됩니다. (예: "English" -> facebook/English/)
+#
+# 다른 파이프라인 스크립트(youtube_upload.py, assemble_video.py,
+# assemble_social.py, watermark 스크립트 등)와 동일하게, 내부 관리
+# 코드는 이 딕셔너리의 키를 그대로 쓴다 (일본어는 내부적으로 "jp").
 # =========================================================
 
 LANGUAGES = {
     "en": {"name": "English", "native_name": "English"},
     "kr": {"name": "Korean", "native_name": "한국어"},
-    "ja": {"name": "Japanese", "native_name": "日本語"},
+    "jp": {"name": "Japanese", "native_name": "日本語"},
     "zh": {"name": "Chinese", "native_name": "简体中文"},
     "es": {"name": "Spanish", "native_name": "Español"},
     "fr": {"name": "French", "native_name": "Français"},
@@ -123,30 +129,57 @@ LANGUAGE_NAME_TO_CODE = {
 # =========================================================
 # 언어 + 시리즈별 YouTube 재생목록(Playlist) URL
 #
-# 같은 시리즈 안에서는 모든 레벨(A1~C2)을 보여주므로,
-# "언어 + 시리즈" 조합마다 A1~C2 6개 URL 세트가 하나씩 필요하다.
-# 새 시리즈나 새 언어가 추가될 때마다 이 아래에 블록을 하나 더 채워 넣으면 된다.
+# - 영어(en): A1~C2 통합 URL 1개 (수정됨)
+# - 한국어(kr): A1~C2 통합 URL 1개
+# - 스페인어(es): A1~C2 통합 URL 1개
+# - 프랑스어(fr): A1~C2 통합 URL 1개
+# - 포르투갈어(pt): A1~C2 통합 URL 1개
+# - 러시아어(ru): A1~C2 통합 URL 1개
+# - 일본어(jp): A1~C2 통합 URL 1개
+# - 중국어(zh): A1~C2 통합 URL 1개
+# 새 언어/시리즈 추가 시 이 아래에 블록을 추가하되, 통합/분할 여부는
+# 자유롭게 키를 A1~C2 또는 A1, A2, ... 으로 구성하면 됩니다.
 # =========================================================
 
 PLAYLIST_URLS = {
     "en": {
         "Conversation": {
-            "A1": "https://www.youtube.com/playlist?list=PLecujUTTw6yk",
-            "A2": "https://www.youtube.com/playlist?list=PLDiOC947h-mY",
-            "B1": "https://www.youtube.com/playlist?list=PLUBIp6lrvTpY",
-            "B2": "https://www.youtube.com/playlist?list=PLGJQm6Vja9Go",
-            "C1": "https://www.youtube.com/playlist?list=PLcD_OxkqA588",
-            "C2": "https://www.youtube.com/playlist?list=PLFGGbb1RZlZo",
+            "A1~C2": "https://www.youtube.com/playlist?list=PLecujUTTw6yk",  # 통합 URL (기존 A1 URL)
         },
     },
     "kr": {
         "Conversation": {
-            "A1": "https://www.youtube.com/playlist?list=PLNnFR8NpGgnw",
-            "A2": "https://www.youtube.com/playlist?list=PLBXERw_Zru8I",
-            "B1": "https://www.youtube.com/playlist?list=PLbINMQnNoqqk",
-            "B2": "https://www.youtube.com/playlist?list=PLSZA9rXj52n0",
-            "C1": "https://www.youtube.com/playlist?list=PLAZRUnmLKOBE",
-            "C2": "https://www.youtube.com/playlist?list=PLYoQWuBIdgfk",
+            "A1~C2": "https://www.youtube.com/playlist?list=PLAOAS_mQCTuY",
+        },
+    },
+    "es": {
+        "Conversation": {
+            "A1~C2": "https://www.youtube.com/playlist?list=PLInRA3zKhd5Y",
+        },
+    },
+    "fr": {
+        "Conversation": {
+            "A1~C2": "https://www.youtube.com/playlist?list=PLEYWsRmBW1Oc",
+        },
+    },
+    "pt": {
+        "Conversation": {
+            "A1~C2": "https://www.youtube.com/playlist?list=PLSeYsB0064BU",
+        },
+    },
+    "ru": {
+        "Conversation": {
+            "A1~C2": "https://www.youtube.com/playlist?list=PLSrrl1A3JdWg",
+        },
+    },
+    "jp": {
+        "Conversation": {
+            "A1~C2": "https://www.youtube.com/playlist?list=PLdG0jNNybANY",
+        },
+    },
+    "zh": {
+        "Conversation": {
+            "A1~C2": "https://www.youtube.com/playlist?list=PLdEtuumnlpZQ",
         },
     },
 }
@@ -158,24 +191,41 @@ LEVEL_DIR_PATTERN = re.compile(r"^(a1|a2|b1|b2|c1|c2)$", re.IGNORECASE)
 
 def get_playlist_urls(lang_code, series_name):
     """
-    해당 언어 + 시리즈 조합의 A1~C2 재생목록 URL을 전부 순서대로 반환한다.
-    (빈 값이거나 아예 없는 레벨은 건너뜀 - 아직 URL이 채워지지 않은 경우)
+    해당 언어 + 시리즈 조합의 재생목록 URL을 반환한다.
+
+    반환값: 리스트 of (레벨_표시문자열, URL)
+
+    - PLAYLIST_URLS[lang][series] 에 'A1~C2' 키가 있으면
+      -> [("A1-C2", URL)] 을 반환 (통합)
+    - 그 외에는 LEVEL_ORDER 순서대로 존재하는 키를 모아
+      -> [("A1", url_A1), ("A2", url_A2), ...] 반환 (분할)
+    - URL이 빈 문자열이면 건너뜀.
     """
 
     series_playlists = PLAYLIST_URLS.get(lang_code, {}).get(series_name, {})
 
-    entries = [
-        (level, series_playlists.get(level, "").strip())
-        for level in LEVEL_ORDER
-    ]
+    # 통합 키가 있는지 확인
+    if "A1~C2" in series_playlists:
+        url = series_playlists["A1~C2"].strip()
+        if url:
+            return [("A1-C2", url)]
+        else:
+            raise ValueError(
+                f"[플레이리스트 URL 오류] {lang_code}/{series_name} 의 A1~C2 URL이 비어 있습니다."
+            )
 
-    entries = [(level, url) for level, url in entries if url]
+    # 분할 키로 구성
+    entries = []
+    for level in LEVEL_ORDER:
+        url = series_playlists.get(level, "").strip()
+        if url:
+            entries.append((level, url))
 
     if not entries:
         raise ValueError(
-            "[플레이리스트 URL 없음] "
-            f"PLAYLIST_URLS['{lang_code}']['{series_name}'] 값이 없습니다. "
-            "채워주세요."
+            f"[플레이리스트 URL 없음] "
+            f"PLAYLIST_URLS['{lang_code}']['{series_name}'] 에 "
+            "A1~C2 또는 A1~C2 각 레벨 URL이 하나도 없습니다. 채워주세요."
         )
 
     return entries
@@ -185,7 +235,7 @@ def get_playlist_urls(lang_code, series_name):
 # 자막 지원 언어 안내 문구
 # =========================================================
 
-SUBTITLE_LANGS = ["en", "es", "pt", "fr", "kr", "ja", "zh", "ru"]
+SUBTITLE_LANGS = ["en", "es", "pt", "fr", "kr", "jp", "zh", "ru"]
 
 SUBTITLE_LANG_NAMES = {
     "en": "English",
@@ -193,7 +243,7 @@ SUBTITLE_LANG_NAMES = {
     "pt": "Portuguese",
     "fr": "French",
     "kr": "Korean",
-    "ja": "Japanese",
+    "jp": "Japanese",
     "zh": "Chinese Mandarin",
     "ru": "Russian",
 }
