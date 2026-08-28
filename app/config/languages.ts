@@ -38,7 +38,7 @@ export const RELEASED_CONTENT: Record<
   },
   // 예시: 새 목표언어를 완성된 것부터 하나씩 오픈
   es: {
-     grammar: ["a1"],
+     grammar: ["a1","a2"],
   //   conversation: ["a1"],
    },
 };
