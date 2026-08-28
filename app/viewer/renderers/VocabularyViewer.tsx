@@ -91,6 +91,7 @@ const disclaimerTexts: Record<string, string> = {
   fr: "Afin de transmettre naturellement le sens du texte original, certaines traductions ont, lorsque cela était nécessaire, été formulées sans utiliser de mots ou d'expressions correspondant directement à ceux de l'original.",
   zh: "为了自然地传达原文的含义，在必要的情况下，部分翻译没有使用与原文表达直接对应的词语或说法。",
   jp: "原文の意味を自然に伝えるため、必要に応じて、原文の表現に直接対応する単語や表現を使わずに翻訳している場合があります。",
+  ru: "Чтобы естественно передать смысл оригинального текста, в некоторых случаях перевод выполнен без использования слов или выражений, напрямую соответствующих формулировкам оригинала.",
 };
 
 export default function VocabularyViewer({
