@@ -453,7 +453,7 @@ export default function LandingPage() {
             }}
           >
             <img
-              src="/images/demo-main.png"
+              src="/images/demo-main.png?v=2"
               alt="Lesson preview"
               style={{
                 width: "100%",
