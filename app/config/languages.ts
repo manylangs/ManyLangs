@@ -1,7 +1,7 @@
 // 🔒 실제 서비스 중인 학습 대상 언어(교재/음성 완성 후에만 주석 해제)
 export const LANGUAGES = [
-  { code: "kr", label: "Korean" },
-  { code: "en", label: "English" },
+  //{ code: "kr", label: "Korean" },
+  //{ code: "en", label: "English" },
   //{ code: "es", label: "Spanish" },
   //{ code: "fr", label: "French" },
   //{ code: "pt", label: "Portuguese" },
